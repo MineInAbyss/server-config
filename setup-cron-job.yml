@@ -1,0 +1,13 @@
+- name: "Set up a cron job to run update-configs playbook"
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: "Ensure ansible is installed"
+    # TODO
+    - name: "Set up the cron job"
+      cron:
+        name: "config update"
+        minute: "0"
+        hour: "0"
+        day: "0" #TODO figure out proper time to run daily (decide specific time later"
+        job: "/opt/mineinabyss-configs/update-configs.sh" #TODO is opt the right dir to use?
