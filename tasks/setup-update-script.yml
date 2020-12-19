@@ -1,4 +1,9 @@
-- name: Allow specified groups to sudo
+- name: Add execute permissions to update script
+  file:
+    path: "{{ repo_dir }}/update-configs.sh"
+    mode: 0755
+
+- name: Allow specified groups run the update script without sudo password
   copy:
     src: config/mcservers_sudo_files
     dest: /etc/sudoers.d/mcservers_sudo_files
