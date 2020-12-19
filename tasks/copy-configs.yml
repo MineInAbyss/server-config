@@ -1,0 +1,29 @@
+- name: "Copy global configurations to each server"
+  copy:
+    src: "servers/minecraft/"
+    dest: "/home/{{ item.name }}/server" #TODO replace secrets
+    owner: "{{ item.name }}"
+    group: "{{ item.name }}" #TODO avoid repeating this stuff by moving into role?
+    mode: "{{ copy_perms }}"
+    remote_src: true
+  with_items: "{{ minecraft_servers }}"
+- name: "Copy server-specific configurations"
+  copy:
+    src: "servers/{{ item.name }}"
+    dest: "/home/{{ item.name }}/server"
+    owner: "{{ item.name }}"
+    group: "{{ item.name }}"
+    mode: "{{ copy_perms }}"
+    remote_src: true
+  with_items:
+    - "{{ minecraft_servers }}"
+    - "{{ bungee_servers }}"
+- name: "Ensure file permissions set properly for each server"
+  file:
+    path: "/home/{{ item.name }}/server"
+    owner: "{{ item.name }}"
+    group: "{{ item.name }}"
+    mode: "{{ copy_perms }}"
+  with_items:
+    - "{{ minecraft_servers }}"
+    - "{{ bungee_servers }}"

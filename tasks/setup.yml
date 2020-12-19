@@ -1,0 +1,2 @@
+#- include: setup-cron-job.yml
+- include: setup-update-script.yml

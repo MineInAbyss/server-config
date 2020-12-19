@@ -1,0 +1,11 @@
+- name:
+  hosts: localhost #TODO have an inventory that's somehow different when running on the host? (perhaps pass args in command line)
+  connection: local
+  vars:
+    copy_perms: "774"
+  vars_files: "host_vars/{{ ansible_hostname }}.yml"
+
+  tasks:
+    - include: tasks/setup.yml
+    - include: tasks/copy-configs.yml
+#    - include: tasks/restart-mc-servers.yml

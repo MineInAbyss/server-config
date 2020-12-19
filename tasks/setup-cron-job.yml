@@ -1,0 +1,7 @@
+- name: "Set up a cron job to run update-configs playbook"
+  cron:
+    name: "mc config update"
+    minute: "0"
+    hour: "0"
+    job: "{{ repo_dir }}/update-configs.sh" #TODO is opt the right dir to use?
+    state: present

@@ -1,0 +1,6 @@
+- name: Allow specified groups to sudo
+  copy:
+    src: config/mcservers_sudo_files
+    dest: /etc/sudoers.d/mcservers_sudo_files
+    validate: 'visudo -cf %s'
+    mode: 0440
