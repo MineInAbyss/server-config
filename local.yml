@@ -3,7 +3,8 @@
   connection: local
   vars:
     copy_perms: "774"
-  vars_files: "host_vars/{{ ansible_hostname }}.yml"
+  vars_files:
+    - "host_vars/{{ ansible_facts['nodename'] }}.yml"
 
   tasks:
     - include: tasks/setup.yml
