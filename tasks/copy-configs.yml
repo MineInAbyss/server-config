@@ -5,15 +5,21 @@
     owner: "{{ item.name }}"
     group: "{{ item.name }}" #TODO avoid repeating this stuff by moving into role?
     mode: "{{ copy_perms }}"
-  with_items: "{{ minecraft_servers }}"
-- name: "Copy server-specific configurations"
-  copy:
-    src: "servers/{{ item.name }}"
-    dest: "/home/{{ item.name }}/server"
-    owner: "{{ item.name }}"
-    group: "{{ item.name }}"
-    mode: "{{ copy_perms }}"
-  with_items:
+  loop: "{{ minecraft_servers }}"
+- block:
+  - name: Check whether src dir exists before copying
+    stat:
+      path: "servers/{{ item.name }}"
+    register: fileinfo
+  - name: "Copy server-specific configurations"
+    copy:
+      src: "servers/{{ item.name }}"
+      dest: "/home/{{ item.name }}/server"
+      owner: "{{ item.name }}"
+      group: "{{ item.name }}"
+      mode: "{{ copy_perms }}"
+    when: fileinfo.stat.exists
+  loop:
     - "{{ minecraft_servers }}"
     - "{{ bungee_servers }}"
 - name: "Ensure file permissions set properly for each server"
@@ -22,6 +28,6 @@
     owner: "{{ item.name }}"
     group: "{{ item.name }}"
     mode: "{{ copy_perms }}"
-  with_items:
+  loop:
     - "{{ minecraft_servers }}"
     - "{{ bungee_servers }}"
