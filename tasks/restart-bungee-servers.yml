@@ -1,4 +1,4 @@
 - service:
     name: "minecraft@{{ item.name }}"
     state: restarted
-  loop: minecraft_servers
+  with_items: "{{ bungee_servers }}"

@@ -3,5 +3,5 @@
     name: "mc config update"
     minute: "0"
     hour: "0"
-    job: "{{ repo_dir }}/update-configs.sh" #TODO is opt the right dir to use?
+    job: "{{ repo_dir }}/update-configs.sh"
     state: present
