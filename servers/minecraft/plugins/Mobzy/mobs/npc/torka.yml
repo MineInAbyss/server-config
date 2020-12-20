@@ -1,0 +1,7 @@
+baseClass: mobzy:npc
+creatureType: MISC
+staticComponents:
+  - !<mobzy:model>
+    id: 14
+    hitIdOffset: 0
+    material: DIAMOND_AXE

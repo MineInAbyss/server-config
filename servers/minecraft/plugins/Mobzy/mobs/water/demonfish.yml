@@ -1,0 +1,41 @@
+baseClass: mobzy:fish
+creatureType: WATER_CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 71
+  - !<mobzy:attributes>
+    maxHealth: 30
+    movementSpeed: 3
+    followRange: 20
+    width: 1.1
+    height: 0.3
+  - !<mobzy:death_loot>
+    minExp: 20
+    maxExp: 25
+    drops:
+      - item:
+          type: SALMON
+          display-name: §x§2§5§7§B§E§BRaw Demonfish
+          custom-model-data: 1
+          lore: |
+            §eCan be obtained by finding and
+            §ecatching a §x§2§5§7§B§E§BDemonfish §ein the 
+            §ewaters of the §aEdge of the Abyss
+            §eand the §aGoblets of Giants§e.
+            §x§1§B§5§B§A§D§oSeems like a great source for food!
+        cooked:
+          type: COOKED_SALMON
+          display-name: §x§2§5§7§B§E§BCooked Demonfish
+          custom-model-data: 1
+          lore: |
+            §eCan be obtained by finding and
+            §ecatching a §x§2§5§7§B§E§BDemonfish §ein the 
+            §ewaters of the §aEdge of the Abyss
+            §eand the §aGoblets of Giants§e.
+            §x§1§B§5§B§A§D§oSeems like a great source for food!
+goals:
+  1: !<minecraft:behavior.avoid_player>
+    radius: 10
+    speed: 10
+  2: !<minecraft:behavior.panic_on_hit>
+    speedModifier: 2

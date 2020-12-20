@@ -1,0 +1,34 @@
+baseClass: mobzy:fish
+creatureType: WATER_CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 29
+  - !<mobzy:attributes>
+    maxHealth: 5
+    followRange: 10
+    attackDamage: 0
+    width: 1
+    height: 1
+  - !<mobzy:death_loot>
+    minExp: 20
+    maxExp: 25
+    drops:
+      - item:
+          type: INK_SAC
+          display-name: §x§A§9§C§C§C§AKazura Squid Ink Sac
+          lore: |
+            §eObtainable from §fKazura Squids,
+            §ecreatures that hatch from eggs at
+            §ethe bottom of the §aGreat Fault
+            §eand fall into the §aGoblets of Giants§e.
+            §x§8§0§7§E§7§8§oWhite Sac.
+        minAmount: 1
+        maxAmount: 2
+# targets:
+#   1: !<mobzy:target.attacker> {}
+# goals:
+#   1: !<mobzy:behavior.flying_damage_target> {}
+#   2: !<mobzy:behavior.fly_towards_target> {}
+#   3: !<mobzy:behavior.idle_fly_above_ground>
+    # maxHeight: 2
+    # radius: 16

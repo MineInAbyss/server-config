@@ -1,0 +1,53 @@
+baseClass: mobzy:flying
+creatureType: MISC
+staticComponents:
+  - !<mobzy:model>
+    id: 47
+  - !<mobzy:attributes>
+    maxHealth: 35
+    followRange: 50
+    attackDamage: 6
+    attackKnockback: 1
+    knockbackResistance: 0.13
+    flyingSpeed: 10
+    width: 3
+    height: 3
+  - !<mobzy:death_loot>
+    minExp: 80
+    maxExp: 115
+    drops:
+      - item:
+          type: CHICKEN
+          display-name: §x§F§F§F§8§2§1Raw Dosetori Meat
+          lore: |
+            §rSomething
+        cooked:
+          type: COOKED_CHICKEN
+          display-name: §x§F§F§F§8§2§1Cooked Dosetori Meat
+        minAmount: 1
+        maxAmount: 2
+      - item:
+          type: LEATHER
+          display-name: §x§F§F§F§8§2§1Dosetori Wingflap
+          custom-model-data: 2
+        minAmount: 2
+        maxAmount: 4
+      - item:
+          type: BONE
+          display-name: §x§F§F§F§8§2§1Dosetori Bone
+        minAmount: 1
+        maxAmount: 3
+targets:
+  1: !<mobzy:target.attacker>
+    range: 100
+  2: !<minecraft:target.nearby_player> {}
+goals:
+  1: !<mobzy:behavior.flying_damage_target> {}
+  2: !<mobzy:behavior.flying_dive_on_target>
+    diveVelocity: -0.5
+    minHeight: 7
+    maxHeight: 10
+    startDiveDistance: 10
+    bashVelMultiplier: 0.5
+  3: !<mobzy:behavior.fly_towards_target> {}
+  4: !<mobzy:behavior.idle_fly> {}

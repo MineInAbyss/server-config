@@ -1,0 +1,47 @@
+baseClass: mobzy:flying
+creatureType: WATER_CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 14
+    small: true
+  - !<mobzy:attributes>
+    maxHealth: 10
+    flyingSpeed: 10.005
+    attackDamage: 0
+    width: 0.6
+    height: 0.6
+  - !<mobzy:death_loot>
+    minExp: 20
+    maxExp: 25
+    drops:
+      - item:
+          type: GLOWSTONE_DUST
+          display-name: §x§6§C§1§9§B§FRohana Powder
+
+          lore: |
+            §eFine powder dropped from
+            §x§A§F§2§1§C§CRohanas §edeep in the §aForest of
+            §aTemptation §or the §aGoblets of Giants§e.
+            §x§F§F§1§F§B§4§oThey glow faintly and can be
+            §x§F§F§1§F§B§4§oan impromptu light source.
+        dropChance: 0.8
+      - item:
+          type: BLAZE_ROD
+          display-name: §x§6§C§1§9§B§FRohana Tail
+          custom-model-data: 1
+          lore: |
+            §eRods rarely dropped from
+            §x§A§F§2§1§C§CRohana §edeep in the §aForest of
+            §aTemptation §eor the §aGoblets of Giants§e.
+            §x§F§F§1§F§B§4§oThey glow faintly and can
+            §x§F§F§1§F§B§4§obe used to make brewing stands
+            §x§F§F§1§F§B§4§oor other useful relics...
+        dropChance: 0.4
+targets:
+  1: !<mobzy:target.attacker> {}
+goals:
+  1: !<mobzy:behavior.flying_damage_target> {}
+  2: !<mobzy:behavior.fly_towards_target> {}
+  3: !<mobzy:behavior.idle_fly_above_ground>
+    maxHeight: 4
+    radius: 5

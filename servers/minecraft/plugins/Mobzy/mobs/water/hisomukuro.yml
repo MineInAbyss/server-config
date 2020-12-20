@@ -1,0 +1,68 @@
+baseClass: mobzy:fish
+creatureType: WATER_CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 92
+  - !<mobzy:attributes>
+    maxHealth: 75
+    movementSpeed: 5
+    attackDamage: 35
+    attackKnockback: 2
+    knockbackResistance: 0.8
+    followRange: 40
+    width: 3
+    height: 2.4
+  - !<mobzy:potion_on_attack>
+    effects:
+      - type: BLINDNESS
+        duration: 5s
+        amplifier: 1
+        ambient: true
+    applyChance: 0.4
+  - !<mobzy:death_loot>
+    minExp: 250
+    maxExp: 285
+    drops:
+      - item:
+          type: BLACKSTONE_WALL
+          display-name: §x§C§7§B§C§A§DHisomukuro Fin
+          lore: |
+            §eCan be obtained by finding 
+            §ea §x§C§7§B§C§A§DHisomukuro §ein the waters
+            §eof the §aSea of Corpses§e.
+            §x§5§2§4§D§4§7§oAlmost drowned getting this!
+            §x§5§2§4§D§4§7§oDoesn't seem very useful.. 
+            §x§5§2§4§D§4§7§oPerhaps I could sell it to a vendor?
+        minAmount: 0
+        maxAmount: 2
+        dropChance: 0.6
+      - item:
+          type: SALMON
+          display-name: §x§2§5§7§B§E§BRaw Demonfish
+          custom-model-data: 1
+          lore: |
+            §eCan be obtained by finding and
+            §ecatching a §x§2§5§7§B§E§BDemonfish §ein the 
+            §ewaters of the §aEdge of the Abyss
+            §eand the §aGoblets of Giants§e.
+            §x§1§B§5§B§A§D§oSeems like a great source for food!
+        minAmount: 1
+        maxAmount: 4
+      - item:
+          type: SALMON
+          display-name: §x§1§B§9§1§B§5Raw Hamashirama
+          custom-model-data: 2
+          lore: |
+            §eCan be obtained by finding and
+            §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the 
+            §ewaters of the §aSea of Corpses§e.
+            §x§A§7§5§9§F§FSeems like a great source for food!
+        minAmount: 1
+        maxAmount: 4
+targets:
+  1: !<minecraft:target.damager>
+    persist: true
+  2: !<minecraft:target.nearby_player> {}
+goals:
+  1: !<minecraft:behavior.melee_attack>
+      seeThroughWalls: true

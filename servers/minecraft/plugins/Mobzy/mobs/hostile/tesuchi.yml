@@ -1,0 +1,22 @@
+baseClass: mobzy:hostile
+creatureType: MONSTER
+staticComponents:
+  - !<mobzy:model>
+    id: 41
+  - !<mobzy:attributes>
+    maxHealth: 5
+    movementSpeed: 0.3
+    attackDamage: 0
+    width: 0.6
+    height: 0.6
+  - !<mobzy:death_loot>
+    minExp: 15
+    maxExp: 20
+    drops:
+      - item:
+          type: DRIED_KELP
+          display-name: §2Tesuchi Scales
+          custom-model-data: 1
+          lore: §a§oCrispy
+        minAmount: 1
+        maxAmount: 3

@@ -1,0 +1,52 @@
+baseClass: mobzy:passive
+creatureType: CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 2
+  - !<mobzy:attributes>
+    maxHealth: 7
+    movementSpeed: 0.25
+    width: 0.6
+    height: 0.6
+  - !<mobzy:death_loot>
+    minExp: 10
+    maxExp: 18
+    drops:
+      - item:
+          type: MUTTON
+          display-name: §x§B§D§B§D§B§DRaw Neritantan Meat
+          lore: |
+            §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
+            §efound §edeep in the caverns of the §aGreat Fault§e.
+            §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
+            §f§oDo not get in between a Neritantan and a Baracocha fruit!
+        cooked:
+          type: COOKED_MUTTON
+          display-name: §x§B§D§B§D§B§DCooked Neritantan Meat
+          lore: |
+            §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
+            §efound §edeep in the caverns of the §aGreat Fault§e.
+            §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
+            §f§oDo not get in between a Neritantan and a Baracocha fruit!
+        dropChance: 0.5
+      - item:
+          type: BEETROOT_SEEDS
+        maxAmount: 2
+        dropChance: 0.3
+      - item:
+          type: MELON_SEEDS
+        maxAmount: 2
+        dropChance: 0.3
+      - item:
+          type: PUMPKIN_SEEDS
+        maxAmount: 2
+        dropChance: 0.3
+      - item:
+          type: SWEET_BERRIES
+        maxAmount: 2
+        dropChance: 0.3
+goals:
+  1: !<minecraft:behavior.tempt>
+    items: [CHORUS_FRUIT]
+  2: !<minecraft:behavior.avoid_player>
+    radius: 10

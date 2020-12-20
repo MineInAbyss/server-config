@@ -1,0 +1,51 @@
+baseClass: mobzy:hostile
+creatureType: MONSTER
+staticComponents:
+  - !<mobzy:model>
+    id: 8
+  - !<mobzy:attributes>
+    maxHealth: 10
+    movementSpeed: 0.4
+    attackDamage: 8
+    attackKnockback: 1
+    knockbackResistance: 0.12
+    followRange: 64
+  - !<mobzy:death_loot>
+    minExp: 35
+    maxExp: 45
+    drops:
+      - item:
+          type: BLACK_WOOL
+          display-name: §x§3§D§3§D§3§DInbyo Fur
+          lore: |
+            §eAquired by skinning an §x§6§3§6§3§6§3Inbyo
+            §ein the §aInverted Forest§e.
+            §x§B§5§B§5§B§5§oThis stench is nauseating...
+        minAmount: 1
+        maxAmount: 3
+      - item:
+          type: BEEF
+          display-name: §x§3§D§3§D§3§DRaw Inbyo Meat
+          custom-model-data: 1
+          lore: |
+            §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
+            §ein the §aInverted Forest.
+            §x§B§5§B§5§B§5§oDoesn't look very tasty...
+        cooked:
+          type: COOKED_BEEF
+          display-name: §x§3§D§3§D§3§DCooked Inbyo Meat
+          custom-model-data: 1
+          lore: |
+            §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
+            §ewith fire in the §aInverted Forest.
+            §eCan also be prepared by cooking
+            §x§6§3§6§3§6§3Raw Inbyo Meat§e.
+            §x§B§5§B§5§B§5§0Seems more edible now, though
+            §x§B§5§B§5§B§5§ois still smells horrid...
+        maxAmount: 2
+goals:
+  1: !<mobzy:behavior.throw_items>
+    item:
+      type: SNOWBALL
+      custom-model-data: 3
+    damage: 0.5

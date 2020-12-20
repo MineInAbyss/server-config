@@ -1,0 +1,58 @@
+baseClass: mobzy:hostile
+creatureType: MONSTER
+staticComponents:
+  - !<mobzy:model>
+    id: 26
+  - !<mobzy:attributes>
+    maxHealth: 15
+    movementSpeed: 0.3
+    attackDamage: 5
+    attackKnockback: 1
+    knockbackResistance: 0.05
+    width: 2
+    height: 2
+  - !<mobzy:potion_on_attack>
+    effects:
+      - type: SLOW
+        duration: 10s
+        amplifier: 10
+        ambient: true
+    applyChance: 0.6
+  - !<mobzy:death_loot>
+    minExp: 45
+    maxExp: 57
+    drops:
+      - item:
+          type: SPIDER_EYE
+          display-name: §x§1§1§6§A§A§DSilkfang Eye
+          custom-model-data: 1
+          lore: |
+            §x§E§D§4§C§4§C§oRumor has it that a
+            §x§E§D§4§C§4§C§olarger arachnid can stare back
+            §x§E§D§4§C§4§C§oat you through this...
+        dropChance: 0.3
+        maxAmount: 2
+      - item:
+          type: STRING
+          display-name: §x§1§1§6§A§A§DSilkfang Silk
+          lore: |
+            §eObtained from §x§1§5§8§0§D§1Silkfangs §eat
+            §ethe §aEdge of the Abyss§e.
+            §x§E§D§4§C§4§C§oSomewhat fine silk with a
+            §x§E§D§4§C§4§C§olarge amount of tensile strength.
+        minAmount: 1
+        maxAmount: 3
+      - item:
+          type: COBWEB
+          display-name: §x§1§1§6§A§A§DBundle of Silkfang Silk
+          lore: |
+            §x§1§5§8§0§D§1Silkfangs about to make nests
+            §eoften drop more silk than usual.
+            §x§E§D§4§C§4§C§oA large bundle of webbing
+            §x§E§D§4§C§4§C§olike this has a lot of potential
+            §x§E§D§4§C§4§C§ofor traps.
+        maxAmount: 1
+        dropChance: 0.05
+goals:
+  1: !<minecraft:behavior.leap_at_target>
+    jumpHeight: 0.3
