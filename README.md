@@ -11,9 +11,13 @@ The playbook will:
 
 Ansible-pull also has an option to only run when changes are present in git, which we use.
 
-### Setup
+## Setup
 
 - Set the server hostname to something identifiable
 - Configure what servers run on that server under `host_vars/<hostname>.yml`
 - Install Ansible on your server
 - Run the command inside `update-configs.sh` on the appropriate server. The rest is done automatically.
+
+## License
+
+The (Ansible) automation part of this project is under the MIT license in the `LICENSE` file. Configs remain unlicensed.
