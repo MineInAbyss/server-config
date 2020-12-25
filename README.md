@@ -20,4 +20,4 @@ Ansible-pull also has an option to only run when changes are present in git, whi
 
 ## License
 
-The (Ansible) automation part of this project is under the MIT license in the `LICENSE` file. Configs remain unlicensed.
+The (Ansible) automation part of this project is under the MIT license in the `LICENSE` file. The server configs themselves (under `servers/`) remain unlicensed.
