@@ -1,16 +1,16 @@
 - name:
   # For running locally
-  hosts: mia.adventure
-  become: true
-#  hosts: localhost
-#  connection: local
+#  hosts: mia.adventure
+#  become: true
+  hosts: localhost
+  connection: local
   vars:
     copy_perms: "774"
   vars_files:
     - "host_vars/{{ ansible_facts['nodename'] }}.yml"
 
   tasks:
-#    - include: tasks/setup-cron-job.yml
-#    - include: tasks/setup-update-script.yml
+    - include: tasks/setup-cron-job.yml
+    - include: tasks/setup-update-script.yml
     - include: tasks/copy-configs.yml
-#    - include: tasks/restart-mc-servers.yml
+    - include: tasks/restart-mc-servers.yml
