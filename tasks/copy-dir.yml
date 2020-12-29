@@ -1,12 +1,12 @@
 - name: Check whether src dir exists before copying
-  stat:
-    path: "{{ src }}"
+  local_action: "stat path={{ src }}"
   register: fileinfo
 
+# TODO replace secrets
 - name: Copy source to destination
   copy:
     src: "{{ src }}"
-    dest: " {{ dest | default('/home/{{ item.name }}/server') }} " #TODO replace secrets
+    dest: "{% if dest is defined %}{{ dest }}{% else %}/home/{{ item.name }}/server{% endif %}"
     owner: "{{ item.name }}"
     group: "{{ item.name }}"
     mode: "{{ copy_perms }}"
