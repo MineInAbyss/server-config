@@ -36,3 +36,7 @@ staticComponents:
             §f§oThis should be enough food
             §f§oto last for daaaaayyss!!
         maxAmount: 10
+  - !<mobzy:sounds>
+    ambient: entity.ottobas.ambient
+    death: entity.ottobas.death
+    hurt: entity.ottobas.hurt

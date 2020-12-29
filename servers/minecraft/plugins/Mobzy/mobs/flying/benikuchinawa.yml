@@ -5,11 +5,11 @@ staticComponents:
     id: 32
   - !<mobzy:attributes>
     maxHealth: 50
-    followRange: 30
+    followRange: 25
     attackDamage: 7
     attackKnockback: 1.7
     knockbackResistance: 0.2
-    flyingSpeed: 10
+    flyingSpeed: 6
     width: 4
     height: 2
   - !<mobzy:death_loot>
@@ -54,9 +54,9 @@ staticComponents:
           type: EMERALD
         dropChance: 0.05
   - !<mobzy:sounds>
-    ambient: entity.llama.ambient
-    death: entity.llama.death
-    hurt: entity.llama.hurt
+    ambient: entity.benikuchinawa.ambient
+    death: entity.benikuchinawa.death
+    hurt: entity.benikuchinawa.hurt
 targets:
   1: !<mobzy:target.attacker>
     range: 150

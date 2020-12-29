@@ -7,6 +7,7 @@ staticComponents:
     maxHealth: 5
     followRange: 10
     attackDamage: 0
+    flyingSpeed: 2
     width: 1
     height: 1
   - !<mobzy:death_loot>

@@ -6,7 +6,7 @@ staticComponents:
   - !<mobzy:attributes>
     maxHealth: 20
     followRange: 30
-    attackDamage: 7
+    attackDamage: 4
     attackKnockback: 1
     knockbackResistance: 0.13
     flyingSpeed: 10
@@ -49,13 +49,12 @@ staticComponents:
           display-name: §x§D§1§2§B§2§6Corpse-Weeper Feather
           custom-model-data: 1
           lore: |
-            §eDropped from §x§F§F§3§4§2§ECorpse-Weepers
-            §ein the §aForest of Temptation§e.
+            §e
         minAmount: 2
         maxAmount: 4
   - !<mobzy:sounds>
-    ambient: entity.corpseweeper.snarl2
-    death: entity.corpseweeper.cry
+    ambient: entity.corpseweeper.ambient
+    death: entity.corpseweeper.death
     hurt: entity.corpseweeper.cry
 targets:
   1: !<mobzy:target.attacker>

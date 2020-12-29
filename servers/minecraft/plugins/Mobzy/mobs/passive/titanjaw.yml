@@ -1,0 +1,41 @@
+baseClass: mobzy:passive
+creatureType: CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 83
+  - !<mobzy:attributes>
+    maxHealth: 60
+    movementSpeed: 0.15
+    knockbackResistance: 0.3
+    width: 0.6
+    height: 0.6
+  - !<mobzy:death_loot>
+    minExp: 15
+    maxExp: 23
+    drops:
+      - item:
+          type: SCUTE
+          display-name: §x§3§C§3§B§4§ATitanjaw Scale
+          lore: |
+            §eCan be obtained by finding and
+            §echasing down a §x§C§7§B§C§A§DHisomukuro 
+            §ein the §aSea of Corpses§e.
+            §x§2§C§6§4§9§4Something
+        minAmount: 0
+        maxAmount: 2
+      - item:
+          type: GHAST_TEAR
+          display-name: §x§3§C§3§B§4§ATitanjaw Pearl
+          lore: |
+            §eCan be obtained by finding and
+            §echasing down a §x§C§7§B§C§A§DHisomukuro 
+            §ein the §aSea of Corpses§e.
+            §x§2§C§6§4§9§4Something
+        dropChance: 0.2
+goals:
+  1: !<minecraft:behavior.panic_on_hit>
+    speedModifier: 2
+  2: !<minecraft:behavior.avoid_player>
+    radius: 10
+    speed: 1.5
+    sprintSpeed: 2

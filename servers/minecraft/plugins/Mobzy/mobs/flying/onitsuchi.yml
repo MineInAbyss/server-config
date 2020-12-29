@@ -57,6 +57,10 @@ staticComponents:
             §x§A§9§C§C§C§A§ocombustible.
         minAmount: 1
         maxAmount: 3
+  - !<mobzy:sounds>
+    ambient: entity.onitsuchi.ambient
+    death: entity.onitsuchi.death
+    hurt: entity.onitsuchi.hurt
 targets:
   1: !<mobzy:target.attacker>
     range: 100

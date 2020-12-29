@@ -43,6 +43,10 @@ staticComponents:
             §x§B§5§B§5§B§5§0Seems more edible now, though
             §x§B§5§B§5§B§5§ois still smells horrid...
         maxAmount: 2
+  - !<mobzy:sounds>
+    ambient: entity.inbyo.ambient
+    death: entity.inbyo.death
+    hurt: entity.inbyo.hurt
 goals:
   1: !<mobzy:behavior.throw_items>
     item:

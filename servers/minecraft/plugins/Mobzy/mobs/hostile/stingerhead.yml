@@ -18,7 +18,7 @@ staticComponents:
         duration: 6s
         amplifier: 5
       - type: HARM
-        amplifier: 2
+        amplifier: 1
     applyChance: 0.8
   - !<mobzy:death_loot>
     minExp: 400
@@ -68,5 +68,10 @@ targets:
     range: 50
   2: !<minecraft:target.nearby_player> {}
 goals:
-  1: !<minecraft:behavior.leap_at_target>
+  1: !<mobzy:behavior.throw_items>
+    item:
+      type: SNOWBALL
+      custom-model-data: 100
+    damage: 5.0  
+  2: !<minecraft:behavior.leap_at_target>
     jumpHeight: 0.3    
