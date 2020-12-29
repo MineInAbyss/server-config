@@ -1,13 +1,13 @@
 - name: Copy global configurations to each server
   include: copy-dir.yml
   vars:
-    src: "servers/minecraft"
+    src: "servers/minecraft/"
   with_items: "{{ minecraft_servers }}"
 
 - name: Copy server-specific configurations
   include: copy-dir.yml
   vars:
-    src: "servers/{{ item.name }}"
+    src: "servers/{{ item.name }}/"
   with_items:
     - "{{ minecraft_servers }}"
     - "{{ bungee_servers }}"
