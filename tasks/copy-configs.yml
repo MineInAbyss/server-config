@@ -18,6 +18,7 @@
     owner: "{{ item.name }}"
     group: "{{ item.name }}"
     mode: "{{ copy_perms }}"
+    recurse: true
   with_items:
     - "{{ minecraft_servers }}"
     - "{{ bungee_servers }}"
