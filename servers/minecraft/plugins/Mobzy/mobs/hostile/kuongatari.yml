@@ -12,8 +12,8 @@ staticComponents:
     width: 0.7
     height: 0.7
   - !<mobzy:death_loot>
-    minExp: 35
-    maxExp: 50
+    minExp: 25
+    maxExp: 40
     drops:
       - item:
           type: LIME_DYE

@@ -37,6 +37,10 @@ staticComponents:
           display-name: §x§F§F§F§8§2§1Dosetori Bone
         minAmount: 1
         maxAmount: 3
+  - !<mobzy:sounds>
+    ambient: entity.dosetori.ambient
+    death: entity.dosetori.death
+    hurt: entity.dosetori.hurt
 targets:
   1: !<mobzy:target.attacker>
     range: 100

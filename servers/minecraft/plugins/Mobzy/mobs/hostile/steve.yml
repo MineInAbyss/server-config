@@ -61,3 +61,7 @@ staticComponents:
             §x§8§2§4§E§2§1§o
             §x§8§2§4§E§2§1§o
         maxAmount: 4
+  - !<mobzy:sounds>
+    ambient: entity.steve.ambient
+    death: entity.steve.death
+    hurt: entity.steve.hurt

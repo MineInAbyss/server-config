@@ -59,13 +59,11 @@ staticComponents:
             §x§F§F§3§A§2§4§oquality sweaters out of this.
         dropChance: 0.5
   - !<mobzy:sounds>
-    ambient: entity.rabbit.ambient
-    hurt: entity.rabbit.hurt
-    death: entity.rabbit.death
-
+    ambient: entity.fuwagi.ambient
+    death: entity.fuwagi.death
+    hurt: entity.fuwagi.hurt
 goals:
   1: !<minecraft:behavior.tempt>
     items: [CARROT, APPLE, BEETROOT]
   2: !<minecraft:behavior.avoid_player>
     radius: 10
-  3: !<minecraft:behavior.land_stroll> {}

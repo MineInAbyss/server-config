@@ -6,7 +6,7 @@ staticComponents:
   - !<mobzy:attributes>
     maxHealth: 35
     followRange: 25
-    attackDamage: 5
+    attackDamage: 6
     attackKnockback: 1
     knockbackResistance: 0.11
     flyingSpeed: 10
@@ -48,8 +48,8 @@ staticComponents:
             §x§3§6§9§A§F§F§oWho nose...
         cooked:
           type: FERMENTED_SPIDER_EYE
-          display-name: §x§1§C§4§3§9§ERoasted Madokajack Eye
           custom-model-data: 1
+          display-name: §x§1§C§4§3§9§ERoasted Madokajack Eye
           lore: |
             §eObtained from §x§2§2§5§2§C§2Madokajacks §ein the
             §aGreat Fault §eby killing it with fire.
@@ -71,6 +71,10 @@ staticComponents:
             §x§3§6§9§A§F§F§odroppings do not smell like feces?!
         maxAmount: 1
         dropChance: 0.3 
+  - !<mobzy:sounds>
+    ambient: entity.madokajack.ambient
+    death: entity.madokajack.death
+    hurt: entity.madokajack.hurt
 targets:
   1: !<mobzy:target.attacker>
     range: 100

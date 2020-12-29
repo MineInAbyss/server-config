@@ -45,6 +45,10 @@ staticComponents:
           type: SWEET_BERRIES
         maxAmount: 2
         dropChance: 0.3
+  - !<mobzy:sounds>
+    ambient: entity.neritantan.ambient
+    death: entity.neritantan.death
+    hurt: entity.neritantan.hurt
 goals:
   1: !<minecraft:behavior.tempt>
     items: [CHORUS_FRUIT]

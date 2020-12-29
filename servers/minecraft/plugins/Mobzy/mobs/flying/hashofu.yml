@@ -1,0 +1,65 @@
+baseClass: mobzy:flying
+creatureType: MISC
+staticComponents:
+  - !<mobzy:model>
+    id: 95
+  - !<mobzy:attributes>
+    maxHealth: 20
+    flyingSpeed: 10
+    attackDamage: 0
+    followRange: 20
+    width: 0.5
+    height: 0.5
+  - !<mobzy:death_loot>
+    minExp: 20
+    maxExp: 25
+    drops:
+      - item:
+          type: COD
+          display-name: §x§4§5§4§5§4§5Hashofu Tail
+          custom-model-data: 3
+          lore: |
+            §eObtained by cutting of the 
+            §etail of a §x§6§1§6§1§6§1Hashofu §ein 
+            §ethe §aGoblets of Giants§e and 
+            §ethe §aSea of Corpses§e.
+        cooked:
+          type: COOKED_COD
+          display-name: §x§4§5§4§5§4§5Cooked Hashofu Tail
+          custom-model-data: 3
+          lore: |
+            §eObtained by cutting of the 
+            §etail of a §x§6§1§6§1§6§1Hashofu §ein 
+            §athe Goblets of Giants§e and 
+            §ethe §aSea of Corpses§e.
+        dropChance: 0.8
+      - item:
+          type: FIRE_CHARGE
+          display-name: §x§4§5§4§5§4§5Hashofu Eye
+          lore: |
+            §eObtained by slaughtering a 
+            §x§6§1§6§1§6§1Hashofu §ein the 
+            §aGoblets of Giants§e and 
+            §ethe §aSea of Corpses§e.
+            §x§5§9§5§9§5§9
+
+        dropChance: 0.65
+        maxAmount: 2
+      - item:
+          type: POLISHED_BLACKSTONE_BUTTON
+          display-name: §x§4§5§4§5§4§5Hashofu Body
+          lore: |
+            §eObtained by slaughtering a 
+            §x§6§1§6§1§6§1Hashofu §ein the 
+            §aGoblets of Giants§e and 
+            §ethe §aSea of Corpses§e.
+            §x§5§9§5§9§5§9
+        minAmount: 1
+        maxAmount: 3
+
+targets:
+  1: !<mobzy:target.attacker>
+    range: 100
+  2: !<minecraft:target.nearby_player> {}
+goals:
+  1: !<mobzy:behavior.idle_fly> {}

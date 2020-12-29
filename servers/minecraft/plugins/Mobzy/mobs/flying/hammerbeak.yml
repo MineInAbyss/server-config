@@ -65,6 +65,10 @@ staticComponents:
             §x§A§9§C§C§C§A§ocombustible.
         minAmount: 1
         maxAmount: 3
+  - !<mobzy:sounds>
+    ambient: entity.hammerbeak.ambient
+    death: entity.hammerbeak.death
+    hurt: entity.hammerbeak.hurt
 targets:
   1: !<mobzy:target.attacker>
     range: 100

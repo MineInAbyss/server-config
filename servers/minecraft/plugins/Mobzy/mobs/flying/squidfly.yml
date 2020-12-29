@@ -1,0 +1,43 @@
+baseClass: mobzy:flying
+creatureType: MISC
+staticComponents:
+  - !<mobzy:model>
+    id: 104
+  - !<mobzy:attributes>
+    maxHealth: 15
+    followRange: 10
+    attackDamage: 5
+    flyingSpeed: 3
+    width: 1
+    height: 1
+  - !<mobzy:death_loot>
+    minExp: 20
+    maxExp: 25
+    drops:
+      - item:
+          type: POTATO
+          display-name: §x§8§5§5§1§2§ESquidfly Brain
+          custom-model-data: 1
+          lore: |
+            §e
+        cooked:
+          type: BAKED_POTATO
+          display-name: §x§8§5§5§1§2§ECooked Squidfly Brain
+          custom-model-data: 1
+          lore: |
+            §e
+        maxAmount: 1
+targets:
+  1: !<mobzy:target.attacker>
+    range: 15
+  2: !<minecraft:target.nearby_player> {}
+goals:
+  1: !<mobzy:behavior.flying_damage_target> {}
+  2: !<mobzy:behavior.flying_dive_on_target>
+    diveVelocity: -0.5
+    minHeight: 1
+    maxHeight: 3
+    startDiveDistance: 10
+    bashVelMultiplier: 0.5
+  3: !<mobzy:behavior.fly_towards_target> {}
+  4: !<mobzy:behavior.idle_fly> {}
