@@ -6,7 +6,7 @@ staticComponents:
   - !<mobzy:attributes>
     maxHealth: 20
     followRange: 30
-    attackDamage: 4
+    attackDamage: 7
     attackKnockback: 1
     knockbackResistance: 0.13
     flyingSpeed: 10
@@ -49,7 +49,8 @@ staticComponents:
           display-name: §x§D§1§2§B§2§6Corpse-Weeper Feather
           custom-model-data: 1
           lore: |
-            §e
+            §eDropped from §x§F§F§3§4§2§ECorpse-Weepers
+            §ein the §aForest of Temptation§e.
         minAmount: 2
         maxAmount: 4
   - !<mobzy:sounds>

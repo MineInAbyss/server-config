@@ -4,9 +4,9 @@ staticComponents:
   - !<mobzy:model>
     id: 20
   - !<mobzy:attributes>
-    maxHealth: 20
+    maxHealth: 35
     followRange: 25
-    attackDamage: 4
+    attackDamage: 6
     attackKnockback: 1
     knockbackResistance: 0.11
     flyingSpeed: 10
@@ -41,7 +41,11 @@ staticComponents:
           display-name: §x§1§C§4§3§9§EMadokajack Eye
           custom-model-data: 2
           lore: |
-            §e
+            §eObtained from §x§2§2§5§2§C§2Madokajacks §ein the
+            §aGreat Fault §eby killing it.
+            §eMight be useful in brewing potions.
+            §x§3§6§9§A§F§F§oWhy does it smell of shit?
+            §x§3§6§9§A§F§F§oWho nose...
         cooked:
           type: FERMENTED_SPIDER_EYE
           custom-model-data: 1

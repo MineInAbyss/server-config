@@ -4,9 +4,9 @@ staticComponents:
   - !<mobzy:model>
     id: 35
   - !<mobzy:attributes>
-    maxHealth: 7
-    movementSpeed: 0.3
-    attackDamage: 3
+    maxHealth: 10
+    movementSpeed: 0.4
+    attackDamage: 6
     attackKnockback: 1
     followRange: 10
     width: 0.7
@@ -36,8 +36,7 @@ staticComponents:
             §ein the §aSea of Corpses§e.
             §2§oA very thin, yet surprisingly tensile
             §2§ostrand of silk.
-        minAmount: 1
-        maxAmount: 3
+        dropChance: 0.7
 goals:
   1: !<minecraft:behavior.leap_at_target>
     jumpHeight: 0.6
