@@ -60,8 +60,7 @@ staticComponents:
         minAmount: 1
         maxAmount: 4
 targets:
-  1: !<minecraft:target.damager>
-    persist: true
+  1: !<minecraft:target.damager> {}
   2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<minecraft:behavior.melee_attack>
