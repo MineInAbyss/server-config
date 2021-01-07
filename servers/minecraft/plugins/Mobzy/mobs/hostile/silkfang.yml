@@ -55,10 +55,10 @@ staticComponents:
         dropChance: 0.05
 goals:
   1: !<minecraft:behavior.leap_at_target>
-    jumpHeight: 0.3
-    #Trajectory of cobweb totally of
-    #add potion effects on impact?
+    jumpHeight: 0.5
+  # TODO add potion effects on impact
   2: !<mobzy:behavior.throw_items>
+    minThrowRad: 4.0
     item:
       type: COBWEB
     damage: 5.0
