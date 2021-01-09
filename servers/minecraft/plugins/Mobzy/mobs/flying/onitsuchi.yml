@@ -67,7 +67,7 @@ goals:
     diveVelocity: -0.7
     minHeight: 7
     maxHeight: 10
-    startDiveDistance: 12
+    startDiveDistance: 20
     bashVelMultiplier: 0.6
   3: !<mobzy:behavior.fly_towards_target> {}
   4: !<mobzy:behavior.idle_fly> {}
