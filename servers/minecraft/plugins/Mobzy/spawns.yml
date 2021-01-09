@@ -9,6 +9,8 @@ regions:
         min-amount: 2
         max-amount: 3
         radius: 10.0
+        max-local-group: 3
+        local-group-radius: 40
         priority: 0.5
         min-light: 7
         block-whitelist:
@@ -27,6 +29,15 @@ regions:
         max-light: 7
         block-whitelist:
           - GRASS_BLOCK
+
+      - mob: Cyatoria
+        priority: 0.3
+        spawn-pos: AIR
+
+      - mob: Dosetori
+        priority: 0.4
+        spawn-pos: AIR
+
   - name: Orth
     spawns:
       - reuse: Template:Fuwagi
@@ -36,11 +47,14 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
           - STONE_BRICKS
+
   - name: Edge of the Abyss
     spawns:
       - reuse: Template:Fuwagi
 
       - reuse: Template:Hammerbeak
+
+      - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
         block-whitelist:
@@ -48,11 +62,14 @@ regions:
           - COBBLESTONE
 
       - reuse: Template:Silkfang
+
   - name: Forest of Temptation
     spawns:
       - reuse: Template:Fuwagi
 
       - reuse: Template:Hammerbeak
+
+      - reuse: Template:Cyatoria
 
       - mob: Corpse Weeper
         priority: 0.3
@@ -65,6 +82,8 @@ regions:
         min-amount: 1
         max-amount: 4
         radius: 40
+        max-local-group: 4
+        local-group-radius: 40
         block-whitelist:
           - WATER
 
@@ -83,21 +102,30 @@ regions:
         local-group-radius: 75
         block-whitelist:
           - WATER
+
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
-        priority: 2.0
+        priority: 0.3
 
       - mob: Inbyo
         min-amount: 4
         max-amount: 8
         radius: 5.0
         priority: 2.0
+        max-local-group: 8
+        local-group-radius: 20
         max-light: 7
         min-y: 140
+
+      - reuse: Template:Dosetori
+        max-y: 70
+
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
+
+      - reuse: Template:Dosetori
 
       - reuse: Template:Fuwagi
         mob: Neritantan
@@ -112,21 +140,31 @@ regions:
       - mob: Madokajack
         priority: 0.3
         spawn-pos: AIR
+
+      - mob: Sakuranbo
+        max-amount: 3
+        radius: 10
+        max-local-group: 12
+        local-group-radius: 40
+        min-light: 7
+        block-whitelist:
+          - GRASS_BLOCK
+
   - name: The Goblet of Giants
     spawns:
       - mob: Tamaugachi
         max-light: 7
-        max-local-group: 2
-        local-group-radius: 100.0
+        max-local-group: 1
+        local-group-radius: 150
         block-whitelist:
           - WATER
 
       - mob: Kuongatari
-        min-amount: 6
-        max-amount: 12
+        min-amount: 4
+        max-amount: 8
         radius: 10
-        local-group-radius: 100
-        max-local-group: 6
+        local-group-radius: 50
+        max-local-group: 8
         block-whitelist:
           - GRASS_BLOCK
 
@@ -137,7 +175,7 @@ regions:
       - mob: Kazura
         min-amount: 2
         max-amount: 4
-        local-group-radius: 10
+        local-group-radius: 30
         max-local-group: 10
         block-whitelist:
           - WATER
@@ -148,6 +186,11 @@ regions:
         local-group-radius: 100
         block-whitelist:
           - WATER
+
+      - mob: Onitsuchi
+        priority: 0.4
+        spawn-pos: AIR
+
   - name: Sea of Corpses
     spawns:
       - reuse: The Goblet of Giants:Kuongatari
@@ -156,12 +199,22 @@ regions:
 
       - reuse: The Goblet of Giants:Makihige
 
+      - reuse: The Goblet of Giants:Onitsuchi
+
       - mob: Ashimite
         min-amount: 1
-        max-amount: 3
+        max-amount: 5
         radius: 10
-        max-local-group: 3
+        max-local-group: 5
         local-group-radius: 50
         block-whitelist:
           - SNOW_BLOCK
           - SNOW
+
+      - mob: Demonfish
+        max-amount: 5
+        radius: 10
+        max-local-group: 20
+        local-group-radius: 50
+        block-whitelist:
+          - WATER

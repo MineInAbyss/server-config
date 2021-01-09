@@ -4,7 +4,7 @@ staticComponents:
   - !<mobzy:model>
     id: 71
   - !<mobzy:attributes>
-    maxHealth: 30
+    maxHealth: 20
     movementSpeed: 3
     followRange: 20
     width: 1.1
@@ -36,6 +36,6 @@ staticComponents:
 goals:
   1: !<minecraft:behavior.avoid_player>
     radius: 10
-    speed: 10
+    speed: 8
   2: !<minecraft:behavior.panic_on_hit>
     speedModifier: 2
