@@ -8,9 +8,9 @@ staticComponents:
     movementSpeed: 0.3
     knockbackResistance: 0.08
     attackDamage: 4
-    followRange: 20
-    width: 2
-    height: 7
+    followRange: 5
+    width: 3
+    height: 1
   - !<mobzy:death_loot>
     minExp: 20
     maxExp: 25
@@ -18,7 +18,6 @@ staticComponents:
       - item:
           type: LEATHER
           display-name: §x§D§6§3§6§2§4Chimokami Tuff
-          custom-model-data: 2
           lore: |
             §esomething
         minAmount: 1
@@ -26,16 +25,16 @@ staticComponents:
       - item:
           type: FLINT
           display-name: §x§D§6§3§6§2§4Chimokami Fang
-          custom-model-data: 2
           lore: |
             §esomething
-          maxAmount: 2
-          dropChance: 0.7
+        maxAmount: 2
+        dropChance: 0.7
+targets:
+  1: !<mobzy:target.attacker>
+    range: 30
+  2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<minecraft:behavior.tempt>
     items: [CHICKEN, COOKED_CHICKEN]
   2: !<minecraft:behavior.avoid_player>
     radius: 10
-  3: !<mobzy:target.attacker>
-    range: 30
-  4: !<minecraft:target.nearby_player> {}

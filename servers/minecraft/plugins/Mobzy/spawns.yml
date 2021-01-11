@@ -63,15 +63,15 @@ regions:
           - STONE
           - COBBLESTONE
 
-      - mob: Beniguma
-        min-amount: 3
-        max-amount: 4
-        radius: 10
-        max-local-group: 8
-        local-group-radius: 100
-        min-light: 10
-        block-whitelist:
-          - GRASS_BLOCK
+      #- mob: Beniguma
+        #min-amount: 3
+        #max-amount: 4
+        #radius: 10
+        #max-local-group: 8
+        #local-group-radius: 100
+        #min-light: 10
+        #block-whitelist:
+          #- GRASS_BLOCK
 
   - name: Forest of Temptation
     spawns:
@@ -113,14 +113,14 @@ regions:
         block-whitelist:
           - WATER
 
-      - mob: Chimokami
-        max-amount: 2
-        radius: 20
-        max-local-group: 6
-        local-group-radius: 70
-        max-light: 7
-        block-whitelist:
-          - GRASS_BLOCK
+      #- mob: Chimokami
+        #max-amount: 2
+        #radius: 20
+        #max-local-group: 6
+        #local-group-radius: 70
+        #max-light: 7
+        #block-whitelist:
+          #- GRASS_BLOCK
 
   - name: Inverted Forest
     spawns:
@@ -128,7 +128,7 @@ regions:
         priority: 0.3
 
       - reuse: Template:Dosetori
-          max-y: 70
+        max-y: 70
 
       - mob: Inbyo
         min-amount: 4
@@ -169,15 +169,15 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Squidfly
-        max-amount: 6
-        radius: 20
-        max-local-group: 18
-        local-group-radius: 100
-        min-light: 7
-        block-whitelist:
-          - GRASS_BLOCK
-          - PODZOL
+      #- mob: Squidfly
+        #max-amount: 6
+        #radius: 20
+        #max-local-group: 18
+        #local-group-radius: 100
+        #min-light: 7
+        #block-whitelist:
+          #- GRASS_BLOCK
+          #- PODZOL
 
   - name: The Goblet of Giants
     spawns:
@@ -220,15 +220,15 @@ regions:
         priority: 0.4
         spawn-pos: AIR
 
-      - mob: Shroombear
-        min-light: 5
-        min-amount: 1
-        radius: 10
-        max-amount: 3
-        max-local-group: 3
-        local-group-radius: 30
-        block-whitelist:
-          - GRASS_BLOCK
+      #- mob: Shroombear
+        #min-light: 5
+        #min-amount: 1
+        #radius: 10
+        #max-amount: 3
+        #max-local-group: 3
+        #local-group-radius: 30
+        #block-whitelist:
+          #- GRASS_BLOCK
 
 
   - name: Sea of Corpses
