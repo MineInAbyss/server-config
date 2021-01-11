@@ -41,7 +41,7 @@ staticComponents:
             §enutrients from the host, releasing 
             §ethem back when host is near death.
             §x§A§B§3§A§A§0§oSeems like a good source for healing...
-        maxAmount: 3 
+        maxAmount: 3
         dropChance: 0.5
       - item:
           type: WARPED_FUNGUS
@@ -53,7 +53,7 @@ staticComponents:
             §enutrients from the host, releasing 
             §ethem back when host is near death.
             §x§A§B§3§A§A§0§oSeems like a good source for healing...
-        maxAmount: 4 
+        maxAmount: 2
         dropChance: 0.5
   - !<mobzy:sounds>
     ambient: entity.shroombear.ambient

@@ -19,14 +19,17 @@ staticComponents:
       - item:
           type: COD
           display-name: §x§5§C§4§7§1§DRaw Onitsuchi Wing
+          custom-model-data: 2
           lore: |
             §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
             §ethe §aGoblets of Giants §e.
             §x§A§9§C§C§C§A§oThis meat seems delicious
             §x§A§9§C§C§C§A§oif cooked properly!
+
         cooked:
           type: COOKED_COD
           display-name: §x§5§C§4§7§1§DCooked Onitsuchi Wing
+          custom-model-data: 2
           lore: |
             §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
             §ethe §aGoblets of Giants §e.
@@ -38,6 +41,7 @@ staticComponents:
       - item:
           type: FLINT
           display-name: §x§5§C§4§7§1§DOnitsuchi Skull
+          custom-model-data: 1
           lore: |
             §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
             §ethe §aGoblets of Giants §e.
@@ -50,6 +54,7 @@ staticComponents:
       - item:
           type: CHARCOAL
           display-name: §x§5§C§4§7§1§DOnitsuchi Feather
+          custom-model-data: 1
           lore: |
             §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
             §ethe §aGoblets of Giants §e.

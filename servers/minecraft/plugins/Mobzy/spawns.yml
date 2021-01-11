@@ -54,6 +54,8 @@ regions:
 
       - reuse: Template:Hammerbeak
 
+      - reuse: Template:Silkfang
+
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
@@ -61,7 +63,15 @@ regions:
           - STONE
           - COBBLESTONE
 
-      - reuse: Template:Silkfang
+      #- mob: Beniguma
+        #min-amount: 3
+        #max-amount: 4
+        #radius: 10
+        #max-local-group: 8
+        #local-group-radius: 100
+        #min-light: 10
+        #block-whitelist:
+          #- GRASS_BLOCK
 
   - name: Forest of Temptation
     spawns:
@@ -70,6 +80,8 @@ regions:
       - reuse: Template:Hammerbeak
 
       - reuse: Template:Cyatoria
+
+      - reuse: Template:Silkfang
 
       - mob: Corpse Weeper
         priority: 0.3
@@ -94,8 +106,6 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - reuse: Template:Silkfang
-
       - mob: Ottobas
         priority: 0.3
         max-local-group: 2
@@ -103,10 +113,22 @@ regions:
         block-whitelist:
           - WATER
 
+      #- mob: Chimokami
+        #max-amount: 2
+        #radius: 20
+        #max-local-group: 6
+        #local-group-radius: 70
+        #max-light: 7
+        #block-whitelist:
+          #- GRASS_BLOCK
+
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
         priority: 0.3
+
+      - reuse: Template:Dosetori
+        max-y: 70
 
       - mob: Inbyo
         min-amount: 4
@@ -117,9 +139,6 @@ regions:
         local-group-radius: 20
         max-light: 7
         min-y: 140
-
-      - reuse: Template:Dosetori
-        max-y: 70
 
   - name: Great Fault
     spawns:
@@ -149,6 +168,16 @@ regions:
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
+
+      #- mob: Squidfly
+        #max-amount: 6
+        #radius: 20
+        #max-local-group: 18
+        #local-group-radius: 100
+        #min-light: 7
+        #block-whitelist:
+          #- GRASS_BLOCK
+          #- PODZOL
 
   - name: The Goblet of Giants
     spawns:
@@ -191,6 +220,17 @@ regions:
         priority: 0.4
         spawn-pos: AIR
 
+      #- mob: Shroombear
+        #min-light: 5
+        #min-amount: 1
+        #radius: 10
+        #max-amount: 3
+        #max-local-group: 3
+        #local-group-radius: 30
+        #block-whitelist:
+          #- GRASS_BLOCK
+
+
   - name: Sea of Corpses
     spawns:
       - reuse: The Goblet of Giants:Kuongatari
@@ -218,3 +258,22 @@ regions:
         local-group-radius: 50
         block-whitelist:
           - WATER
+
+      #- mob: Titanjaw
+       #min-amount: 3
+        #max-amount: 6
+        #radius: 10
+        #max-loxal-group: 6
+        #local-group-radius: 100
+        #min-light: 7
+        #block-whitelist:
+          #- GRASS_BLOCK
+
+      #- mob: Abyssal Slime
+        #max-amount: 2
+        #radius: 10
+        #max-local-group: 10
+        #local-group-radius: 200
+        #min-light: 5
+        #block-whitelist:
+          #- GRASS_BLOCK

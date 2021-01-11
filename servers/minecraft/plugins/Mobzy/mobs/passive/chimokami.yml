@@ -7,14 +7,40 @@ staticComponents:
     maxHealth: 30
     movementSpeed: 0.3
     knockbackResistance: 0.08
-    followRange: 20
-    width: 2
-    height: 7
+    attackDamage: 4
+    followRange: 5
+    width: 3
+    height: 1
   - !<mobzy:death_loot>
     minExp: 20
     maxExp: 25
+    drops:
+      - item:
+          type: LEATHER
+          display-name: §x§D§6§3§6§2§4Chimokami Tuff
+          lore: |
+            §esomething
+        minAmount: 1
+        maxAmount: 3
+      - item:
+          type: FLINT
+          display-name: §x§D§6§3§6§2§4Chimokami Fang
+          lore: |
+            §esomething
+        maxAmount: 2
+        dropChance: 0.7
+targets:
+  1: !<mobzy:target.attacker>
+    range: 30
+  2: !<minecraft:target.nearby_player> {}
 goals:
-  1: !<minecraft:behavior.tempt>
+  1: !<minecraft:behavior.melee_attack>
+    attackSpeed: 1
+    range: 2
+    seeThroughWalls: true
+  2: !<minecraft:behavior.tempt>
     items: [CHICKEN, COOKED_CHICKEN]
-  2: !<minecraft:behavior.avoid_player>
+  3: !<minecraft:behavior.avoid_player>
     radius: 10
+  4: !<minecraft:behaviour.land_stroll>
+    speedModifier: 1

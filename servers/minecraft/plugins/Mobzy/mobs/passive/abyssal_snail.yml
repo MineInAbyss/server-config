@@ -11,19 +11,21 @@ staticComponents:
     width: 3
     height: 2
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 35
+    maxExp: 50
     drops:
       - item: 
           type: NAUTILUS_SHELL
           display-name: §x§7§8§5§F§3§4Abyssal Snail Shell
           lore: |
-            §e
+            §esomething
       - item: 
           type: SLIME_BALL
           display-name: §x§7§8§5§F§3§4Abyssal Snail Slime
           lore: |
-            §e
+            §esomething
 goals:
   1: !<minecraft:behavior.avoid_player>
     radius: 15
+  2: !<minecraft:behavior.panic_on_hit>
+    speedModifier: 2
