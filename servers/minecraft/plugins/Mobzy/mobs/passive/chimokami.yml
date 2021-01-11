@@ -34,7 +34,13 @@ targets:
     range: 30
   2: !<minecraft:target.nearby_player> {}
 goals:
-  1: !<minecraft:behavior.tempt>
+  1: !<minecraft:behavior.melee_attack>
+    attackSpeed: 1
+    range: 2
+    seeThroughWalls: true
+  2: !<minecraft:behavior.tempt>
     items: [CHICKEN, COOKED_CHICKEN]
-  2: !<minecraft:behavior.avoid_player>
+  3: !<minecraft:behavior.avoid_player>
     radius: 10
+  4: !<minecraft:behaviour.land_stroll>
+    speedModifier: 1
