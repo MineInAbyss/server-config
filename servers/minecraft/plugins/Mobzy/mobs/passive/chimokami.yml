@@ -19,14 +19,21 @@ staticComponents:
           type: LEATHER
           display-name: §x§D§6§3§6§2§4Chimokami Tuff
           lore: |
-            §esomething
+            §eA tuft of fur from the rarely seen
+            §eChimokami. These foxlike beasts make
+            §etheir dens in the darker areas of
+            §eforests...
         minAmount: 1
         maxAmount: 3
       - item:
           type: FLINT
           display-name: §x§D§6§3§6§2§4Chimokami Fang
           lore: |
-            §esomething
+            §eA fang from the rare Chimokami.
+            §eIt is said that these beasts house a
+            §espiritual fire within. This has been
+            §eproven to be a hoax, however, their
+            §eteeth are excellent firestarters.
         maxAmount: 2
         dropChance: 0.7
 targets:
@@ -42,3 +49,4 @@ goals:
     items: [CHICKEN, COOKED_CHICKEN]
   3: !<minecraft:behavior.avoid_player>
     radius: 10
+
