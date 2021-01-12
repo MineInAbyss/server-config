@@ -19,28 +19,25 @@ staticComponents:
           display-name: §x§4§5§4§5§4§5Hashofu Tail
           custom-model-data: 3
           lore: |
-            §eObtained by cutting of the 
-            §etail of a §x§6§1§6§1§6§1Hashofu §ein 
-            §ethe §aGoblets of Giants§e and 
-            §ethe §aSea of Corpses§e.
+            §eObtained by cutting of the
+            §etail of a §x§6§1§6§1§6§1Hashofu §ein the
+            §aGoblets of Giants §eand §aSea of Corpses§e.
         cooked:
           type: COOKED_COD
           display-name: §x§4§5§4§5§4§5Cooked Hashofu Tail
           custom-model-data: 3
           lore: |
-            §eObtained by cutting of the 
-            §etail of a §x§6§1§6§1§6§1Hashofu §ein 
-            §athe Goblets of Giants§e and 
-            §ethe §aSea of Corpses§e.
+            §eObtained by cutting of the
+            §etail of a §x§6§1§6§1§6§1Hashofu §ein the
+            §aGoblets of Giants §eand §aSea of Corpses§e.
         dropChance: 0.8
       - item:
           type: FIRE_CHARGE
           display-name: §x§4§5§4§5§4§5Hashofu Eye
           lore: |
-            §eObtained by slaughtering a 
-            §x§6§1§6§1§6§1Hashofu §ein the 
-            §aGoblets of Giants§e and 
-            §ethe §aSea of Corpses§e.
+            §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu
+            §ein the §aGoblets of Giants
+            §eand §aSea of Corpses§e.
             §x§5§9§5§9§5§9
 
         dropChance: 0.65
@@ -49,10 +46,9 @@ staticComponents:
           type: POLISHED_BLACKSTONE_BUTTON
           display-name: §x§4§5§4§5§4§5Hashofu Body
           lore: |
-            §eObtained by slaughtering a 
-            §x§6§1§6§1§6§1Hashofu §ein the 
-            §aGoblets of Giants§e and 
-            §ethe §aSea of Corpses§e.
+            §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu
+            §ein the §aGoblets of Giants
+            §eand §aSea of Corpses§e.
             §x§5§9§5§9§5§9
         minAmount: 1
         maxAmount: 3

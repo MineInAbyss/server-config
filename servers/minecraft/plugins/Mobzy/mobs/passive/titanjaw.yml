@@ -7,20 +7,21 @@ staticComponents:
     maxHealth: 60
     movementSpeed: 0.15
     knockbackResistance: 0.3
-    width: 0.6
-    height: 0.6
+    width: 2
+    height: 1
   - !<mobzy:death_loot>
-    minExp: 15
-    maxExp: 23
+    minExp: 30
+    maxExp: 55
     drops:
       - item:
           type: SCUTE
           display-name: §x§3§C§3§B§4§ATitanjaw Scale
           lore: |
             §eCan be obtained by finding and
-            §echasing down a §x§C§7§B§C§A§DHisomukuro 
+            §echasing down a §x§3§C§3§B§4§ATitanjaw
             §ein the §aSea of Corpses§e.
-            §x§2§C§6§4§9§4Something
+            §x§0§C§7§7§8§7§oMight be useful to craft gear
+            §x§0§C§7§7§8§7§owith if I collect enough.
         minAmount: 0
         maxAmount: 2
       - item:
@@ -28,9 +29,9 @@ staticComponents:
           display-name: §x§3§C§3§B§4§ATitanjaw Pearl
           lore: |
             §eCan be obtained by finding and
-            §echasing down a §x§C§7§B§C§A§DHisomukuro 
+            §echasing down a §x§3§C§3§B§4§ATitanjaw
             §ein the §aSea of Corpses§e.
-            §x§2§C§6§4§9§4Something
+            §x§0§C§7§7§8§7§oWhy do I feel like I am haunted...
         dropChance: 0.2
 goals:
   1: !<minecraft:behavior.panic_on_hit>
