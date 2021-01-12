@@ -1,17 +1,43 @@
-baseClass: mobzy:passive
-creatureType: CREATURE
+baseClass: mobzy:hostile
+creatureType: MONSTER
 staticComponents:
   - !<mobzy:model>
     id: 89
   - !<mobzy:attributes>
-    maxHealth: 30
-    movementSpeed: 0.3
-    attackDamage: 4
-    attackKnockback: 1
-    knockbackResistance: 0.15
-    followRange: 20
-    width: 2
-    height: 7
+    maxHealth: 50
+    movementSpeed: 0.7
+    attackDamage: 13
+    attackKnockback: 2
+    knockbackResistance: 0.1
+    followRange: 30
+    width: 1.5
+    height: 1.5
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 90
+    maxExp: 135
+    drops:
+      - item:
+          type: PORKCHOP
+          display-name: §x§8§F§2§2§2§2Raw Uibuta Meat
+          custom-model-data: 3
+          lore: |
+            §eObtained by carving up the
+            §ecorpse of an §x§8§F§2§2§2§2Uibuta §ein the
+            §aGoblets of Giants §eand §aSea of Corpses§e.
+            §x§C§4§2§F§2§F§oA thick layer of fat clings to the meat.
+            §x§C§4§2§F§2§F§oCooking it should help making it edible.
+        cooked:
+          type: COOKED_PORKCHOP
+          display-name: §x§8§F§2§2§2§2Cooked Uibuta Meat
+          custom-model-data: 3
+          lore: |
+            §eDue to proper preparations,
+            §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
+            §x§C§4§2§F§2§F§oThis should be enough food
+            §x§C§4§2§F§2§F§oto last for daaaaayyss!!
+        minAmount: 4
+        maxAmount: 8
+  - !<mobzy:sounds>
+    ambient: entity.ottobas.ambient
+    death: entity.ottobas.death
+    hurt: entity.ottobas.hurt

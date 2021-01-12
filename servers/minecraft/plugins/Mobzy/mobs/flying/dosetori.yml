@@ -20,21 +20,35 @@ staticComponents:
           type: CHICKEN
           display-name: §x§F§F§F§8§2§1Raw Dosetori Meat
           lore: |
-            §rSomething
+            §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
+            §aInverted Forest §eand §aGreat Fault§e.
+            §x§F§F§E§8§1§7§oTastes like chicken?
         cooked:
           type: COOKED_CHICKEN
           display-name: §x§F§F§F§8§2§1Cooked Dosetori Meat
+          lore: |
+            §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
+            §aInverted Forest §eand §aGreat Fault§e.
+            §x§F§F§E§8§1§7§oTastes like fried chicken?
         minAmount: 1
         maxAmount: 2
       - item:
           type: LEATHER
           display-name: §x§F§F§F§8§2§1Dosetori Wingflap
           custom-model-data: 2
+          lore: |
+            §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
+            §aInverted Forest §eand §aGreat Fault§e.
+            §x§F§F§E§8§1§7§oPerhaps I can take flight with these?
         minAmount: 2
         maxAmount: 4
       - item:
           type: BONE
           display-name: §x§F§F§F§8§2§1Dosetori Bone
+          lore: |
+            §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
+            §aInverted Forest §eand §aGreat Fault§e.
+            §x§F§F§E§8§1§7§oSeems to be kind of unsturdy...
         minAmount: 1
         maxAmount: 3
   - !<mobzy:sounds>
