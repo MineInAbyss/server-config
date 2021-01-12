@@ -230,6 +230,15 @@ regions:
         #block-whitelist:
           #- GRASS_BLOCK
 
+      #- mob: Uibuta
+        #min-light: 4
+        #max-amount: 3
+        #radius: 10
+        #max-local-group: 7
+        #local-group-radius: 70
+        #block-whitelist:
+          #- WATER
+
 
   - name: Sea of Corpses
     spawns:
@@ -269,11 +278,11 @@ regions:
         #block-whitelist:
           #- GRASS_BLOCK
 
-      #- mob: Abyssal Slime
+      #- mob: Abyssal Snail
         #max-amount: 2
         #radius: 10
         #max-local-group: 10
-        #local-group-radius: 200
+        #local-group-radius: 100
         #min-light: 5
         #block-whitelist:
           #- GRASS_BLOCK
