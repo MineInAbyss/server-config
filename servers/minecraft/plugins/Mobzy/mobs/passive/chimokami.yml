@@ -49,4 +49,3 @@ goals:
     items: [CHICKEN, COOKED_CHICKEN]
   3: !<minecraft:behavior.avoid_player>
     radius: 10
-
