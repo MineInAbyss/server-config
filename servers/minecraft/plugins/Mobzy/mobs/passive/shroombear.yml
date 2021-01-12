@@ -21,14 +21,18 @@ staticComponents:
             §ea §x§8§5§5§6§2§DShroombear §ein the
             §aGoblets of Giants§e.The meat 
             §eis edible and dark in colour.
+            §x§6§9§4§6§0§0§oMight smell like excrement
+            §x§6§9§4§6§0§0§oif I don't clean it well...
         cooked:
           type: COOKED_MUTTON
           display-name: §x§8§5§5§6§2§DCooked Shroombear Meat
           lore: |
             §eObtained by chasing down 
             §ea §x§8§5§5§6§2§DShroombear §ein the
-            §aGoblets of Giants§e.The meat 
+            §aGoblets of Giants§e. The meat
             §eis edible and dark in colour.
+            §x§6§9§4§6§0§0§oMight smell like excrement
+            §x§6§9§4§6§0§0§oif I don't clean it well...
         maxAmount: 2 
         dropChance: 0.5
       - item:
@@ -40,7 +44,8 @@ staticComponents:
             §aGoblets of Giants§e. §eSucks the 
             §enutrients from the host, releasing 
             §ethem back when host is near death.
-            §x§A§B§3§A§A§0§oSeems like a good source for healing...
+            §x§A§B§3§A§A§0§oPerhaps the nutrients can be a good
+            §x§A§B§3§A§A§0§osource for antidotes and recovery...
         maxAmount: 3
         dropChance: 0.5
       - item:
@@ -52,7 +57,8 @@ staticComponents:
             §aGoblets of Giants§e. §eSucks the 
             §enutrients from the host, releasing 
             §ethem back when host is near death.
-            §x§A§B§3§A§A§0§oSeems like a good source for healing...
+            §x§A§B§3§A§A§0§oPerhaps the nutrients can be a good
+            §x§A§B§3§A§A§0§osource for antidotes and recovery...
         maxAmount: 2
         dropChance: 0.5
   - !<mobzy:sounds>

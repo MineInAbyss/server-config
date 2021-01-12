@@ -49,5 +49,4 @@ goals:
     items: [CHICKEN, COOKED_CHICKEN]
   3: !<minecraft:behavior.avoid_player>
     radius: 10
-  4: !<minecraft:behaviour.land_stroll>
-    speedModifier: 1
+
