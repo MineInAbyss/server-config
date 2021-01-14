@@ -56,3 +56,5 @@ staticComponents:
     hurt: entity.orbpiercer.hurt
   - !<mobzy:increased_water_speed>
     level: 3
+goals:
+  1: !<minecraft:behavior.float> {}

@@ -41,3 +41,5 @@ staticComponents:
     ambient: entity.ottobas.ambient
     death: entity.ottobas.death
     hurt: entity.ottobas.hurt
+goals:
+  1: !<minecraft:behavior.float> {}

@@ -5,11 +5,11 @@ staticComponents:
     id: 68
   - !<mobzy:attributes>
     maxHealth: 30
-    movementSpeed: 0.3
+    movementSpeed: 0.0
     knockbackResistance: 0.08
     attackDamage: 4
     followRange: 5
-    width: 3
+    width: 2
     height: 1
   - !<mobzy:death_loot>
     minExp: 20
@@ -44,9 +44,9 @@ targets:
 goals:
   1: !<minecraft:behavior.melee_attack>
     attackSpeed: 1
-    range: 2
+    range: 3
     seeThroughWalls: true
   2: !<minecraft:behavior.tempt>
     items: [CHICKEN, COOKED_CHICKEN]
   3: !<minecraft:behavior.avoid_player>
-    radius: 10
+    radius: 15

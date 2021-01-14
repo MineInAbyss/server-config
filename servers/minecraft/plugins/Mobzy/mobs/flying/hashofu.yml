@@ -5,7 +5,7 @@ staticComponents:
     id: 95
   - !<mobzy:attributes>
     maxHealth: 20
-    flyingSpeed: 0
+    flyingSpeed: 6
     attackDamage: 0
     followRange: 20
     height: 0.20
