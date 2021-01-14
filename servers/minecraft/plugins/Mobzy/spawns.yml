@@ -222,11 +222,10 @@ regions:
 
       #- mob: Shroombear
         #min-light: 5
-        #min-amount: 1
-        #radius: 10
         #max-amount: 3
-        #max-local-group: 3
-        #local-group-radius: 30
+        #radius: 10
+        #max-local-group: 5
+        #local-group-radius: 50
         #block-whitelist:
           #- GRASS_BLOCK
 
@@ -239,6 +238,15 @@ regions:
         #block-whitelist:
           #- WATER
 
+      #- mob: Hashofu
+        #min-light: 8
+        #max-amount: 4
+        #radius: 10
+        #max-local-group: 12
+        #local-group-radius: 70
+        #block-whitelist:
+          #- GRASS_BLOCK
+          #- PODZOL
 
   - name: Sea of Corpses
     spawns:
@@ -249,6 +257,8 @@ regions:
       - reuse: The Goblet of Giants:Makihige
 
       - reuse: The Goblet of Giants:Onitsuchi
+
+      #- reuse: The Goblet of Giants:Hashofu
 
       - mob: Ashimite
         min-amount: 1
