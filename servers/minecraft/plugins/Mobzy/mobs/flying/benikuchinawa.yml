@@ -64,7 +64,7 @@ targets:
 goals:
   1: !<mobzy:behavior.flying_damage_target> {}
   2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.05
+    diveVelocity: -0.07
     minHeight: 3
     maxHeight: 5
   3: !<mobzy:behavior.fly_towards_target> {}

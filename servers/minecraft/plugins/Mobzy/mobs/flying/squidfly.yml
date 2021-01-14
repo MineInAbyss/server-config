@@ -5,10 +5,10 @@ staticComponents:
     id: 104
   - !<mobzy:attributes>
     maxHealth: 15
-    followRange: 10
-    attackDamage: 5
+    followRange: 20
+    attackDamage: 8
     flyingSpeed: 3
-    width: 1
+    width: 0.5
     height: 1
   - !<mobzy:death_loot>
     minExp: 20
@@ -41,10 +41,10 @@ targets:
 goals:
   1: !<mobzy:behavior.flying_damage_target> {}
   2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.5
-    minHeight: 1
-    maxHeight: 3
-    startDiveDistance: 10
-    bashVelMultiplier: 0.5
+    diveVelocity: -0.4
+    minHeight: 2
+    maxHeight: 4
+    startDiveDistance: 8
+    bashVelMultiplier: 0.6
   3: !<mobzy:behavior.fly_towards_target> {}
   4: !<mobzy:behavior.idle_fly> {}

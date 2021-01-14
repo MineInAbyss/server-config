@@ -7,11 +7,11 @@ staticComponents:
     maxHealth: 35
     followRange: 50
     attackDamage: 6
-    attackKnockback: 1
+    attackKnockback: 1.3
     knockbackResistance: 0.13
     flyingSpeed: 10
-    width: 3
-    height: 3
+    width: 2
+    height: 0.5
   - !<mobzy:death_loot>
     minExp: 80
     maxExp: 115
