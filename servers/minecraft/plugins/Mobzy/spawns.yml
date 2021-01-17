@@ -15,39 +15,35 @@ regions:
         max-amount: 3
         radius: 10
         max-local-group: 3
-        local-group-radius: 60
+        local-group-radius: 50
         priority: 0.5
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
 
       - mob: Neritantan
-        min-amount: 3
-        max-amount: 5
+        min-amount: 4
+        max-amount: 6
         radius: 10
-        max-local-group: 10
-        local-group-radius: 100
+        max-local-group: 6
+        local-group-radius: 70
         block-whitelist:
           - GRASS_BLOCK
           - ANDESITE
           - WHITE_CONCRETE
 
       - mob: Hammerbeak
-        priority: 0.3
-        max-local-group: 3
-        local-group-radius: 120
+        priority: 0.2
         spawn-pos: AIR
 
       - mob: Benikuchinawa
-        priority: 0.1
-        max-local-group: 3
-        local-group-radius: 120
+        priority: 0.07
         spawn-pos: AIR
 
       - mob: Silkfang
         priority: 0.5
         max-light: 7
-        max-local-group: 4
+        max-local-group: 2
         local-group-radius: 100
         block-whitelist:
           - GRASS_BLOCK
@@ -63,7 +59,6 @@ regions:
 
       - mob: Dosetori
         priority: 0.4
-        max-local-group: 2
         spawn-pos: AIR
 
   - name: Orth
@@ -72,7 +67,6 @@ regions:
 
       - mob: Okibo
         priority: 0.1
-        max-local-group: 2
         block-whitelist:
           - GRASS_BLOCK
           - STONE_BRICKS
@@ -93,9 +87,9 @@ regions:
         min-amount: 3
         max-amount: 4
         radius: 20
-        max-local-group: 4
-        local-group-radius: 80
-        min-light: 7
+        max-local-group: 8
+        local-group-radius: 100
+        min-light: 10
         block-whitelist:
           - GRASS_BLOCK
 
@@ -111,8 +105,6 @@ regions:
 
       - mob: Corpse Weeper
         priority: 0.3
-        max-local-group: 3
-        local-group-radius: 120
         spawn-pos: AIR
 
       - reuse: Template:Fuwagi
@@ -130,7 +122,6 @@ regions:
       - mob: Tesuchi
         min-amount: 1
         max-amount: 4
-        max-local-group: 8
         radius: 15.0
         block-whitelist:
           - GRASS_BLOCK
@@ -144,7 +135,7 @@ regions:
 
       - mob: Chimokami
         max-amount: 2
-        radius: 10
+        radius: 20
         max-local-group: 6
         local-group-radius: 70
         max-light: 7
@@ -175,15 +166,14 @@ regions:
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
-
+        priority: 0.4
+        
       - reuse: Template:Dosetori
 
       - reuse: Template:Neritantan
 
       - mob: Madokajack
-        priority: 0.3
-        max-local-group: 3
-        local-group-radius: 100
+        priority: 0.5
         spawn-pos: AIR
 
       - mob: Sakuranbo
