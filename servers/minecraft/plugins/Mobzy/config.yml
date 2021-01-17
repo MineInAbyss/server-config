@@ -6,8 +6,8 @@ maxCommandSpawns: 50
 playerGroupRadius: 128.0
 spawnTaskDelay: 20
 creatureTypeCaps:
-  "CREATURE": 20
-  "MONSTER": 20
-  "WATER_CREATURE": 5
+  "CREATURE": 40
+  "MONSTER": 40
+  "WATER_CREATURE": 40
   "MISC": 5
   "AMBIENT": 0

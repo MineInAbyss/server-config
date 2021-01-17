@@ -82,19 +82,16 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
-        block-whitelist:
-          - STONE
-          - COBBLESTONE
 
-      #- mob: Beniguma
-        #min-amount: 3
-        #max-amount: 4
-        #radius: 10
-        #max-local-group: 8
-        #local-group-radius: 100
-        #min-light: 10
-        #block-whitelist:
-          #- GRASS_BLOCK
+      - mob: Beniguma
+        min-amount: 3
+        max-amount: 4
+        radius: 20
+        max-local-group: 8
+        local-group-radius: 100
+        min-light: 10
+        block-whitelist:
+          - GRASS_BLOCK
 
   - name: Forest of Temptation
     spawns:
@@ -136,14 +133,14 @@ regions:
         block-whitelist:
           - WATER
 
-      #- mob: Chimokami
-        #max-amount: 2
-        #radius: 20
-        #max-local-group: 6
-        #local-group-radius: 70
-        #max-light: 7
-        #block-whitelist:
-          #- GRASS_BLOCK
+      - mob: Chimokami
+        max-amount: 2
+        radius: 20
+        max-local-group: 6
+        local-group-radius: 70
+        max-light: 7
+        block-whitelist:
+          - GRASS_BLOCK
 
   - name: Inverted Forest
     spawns:
@@ -187,15 +184,15 @@ regions:
           - GRASS_BLOCK
           - PODZOL
 
-      #- mob: Squidfly
-        #max-amount: 6
-        #radius: 20
-        #max-local-group: 18
-        #local-group-radius: 100
-        #min-light: 7
-        #block-whitelist:
-          #- GRASS_BLOCK
-          #- PODZOL
+      - mob: Squidfly
+        max-amount: 6
+        radius: 30
+        max-local-group: 18
+        local-group-radius: 100
+        min-light: 7
+        block-whitelist:
+          - GRASS_BLOCK
+          - PODZOL
 
   - name: The Goblet of Giants
     spawns:
@@ -243,33 +240,33 @@ regions:
         local-group-radius: 150
         spawn-pos: AIR
 
-      #- mob: Shroombear
-        #min-light: 5
-        #max-amount: 3
-        #radius: 10
-        #max-local-group: 5
-        #local-group-radius: 50
-        #block-whitelist:
-          #- GRASS_BLOCK
+      - mob: Shroombear
+        min-light: 5
+        max-amount: 3
+        radius: 20
+        max-local-group: 5
+        local-group-radius: 50
+        block-whitelist:
+          - GRASS_BLOCK
 
-      #- mob: Uibuta
-        #min-light: 4
-        #max-amount: 3
-        #radius: 10
-        #max-local-group: 7
-        #local-group-radius: 70
-        #block-whitelist:
-          #- WATER
+      - mob: Uibuta
+        min-light: 4
+        max-amount: 3
+        radius: 10
+        max-local-group: 7
+        local-group-radius: 70
+        block-whitelist:
+          - WATER
 
-      #- mob: Hashofu
-        #min-light: 8
-        #max-amount: 4
-        #radius: 10
-        #max-local-group: 12
-        #local-group-radius: 70
-        #block-whitelist:
-          #- GRASS_BLOCK
-          #- PODZOL
+      - mob: Hashofu
+        min-light: 8
+        max-amount: 4
+        radius: 10
+        max-local-group: 12
+        local-group-radius: 70
+        block-whitelist:
+          - GRASS_BLOCK
+          - PODZOL
 
   - name: Sea of Corpses
     spawns:
@@ -281,7 +278,7 @@ regions:
 
       - reuse: The Goblet of Giants:Onitsuchi
 
-      #- reuse: The Goblet of Giants:Hashofu
+      - reuse: The Goblet of Giants:Hashofu
 
       - mob: Ashimite
         min-amount: 3
@@ -295,28 +292,28 @@ regions:
 
       - mob: Demonfish
         min-amount: 2
-        max-amount: 5
-        radius: 2
+        max-amount: 6
+        radius: 1
         max-local-group: 15
         local-group-radius: 50
         block-whitelist:
           - WATER
 
-      #- mob: Titanjaw
-       #min-amount: 3
-        #max-amount: 6
-        #radius: 10
-        #max-loxal-group: 6
-        #local-group-radius: 100
-        #min-light: 7
-        #block-whitelist:
-          #- GRASS_BLOCK
+      - mob: Titanjaw
+       min-amount: 3
+        max-amount: 6
+        radius: 30
+        max-loxal-group: 6
+        local-group-radius: 100
+        min-light: 7
+        block-whitelist:
+          - GRASS_BLOCK
 
-      #- mob: Abyssal Snail
-        #max-amount: 2
-        #radius: 10
-        #max-local-group: 10
-        #local-group-radius: 100
-        #min-light: 5
-        #block-whitelist:
-          #- GRASS_BLOCK
+      - mob: Abyssal Snail
+        max-amount: 3
+        radius: 20
+        max-local-group: 10
+        local-group-radius: 100
+        min-light: 5
+        block-whitelist:
+          - GRASS_BLOCK
