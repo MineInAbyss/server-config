@@ -8,7 +8,7 @@ staticComponents:
     flyingSpeed: 6
     attackDamage: 0
     followRange: 20
-    height: 0.20
+    height: 0.8
     width: 0.5
   - !<mobzy:death_loot>
     minExp: 20
