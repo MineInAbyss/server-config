@@ -55,9 +55,5 @@ staticComponents:
             §x§5§9§5§9§5§9§oPerhaps I should look for a vendor?
         minAmount: 1
         maxAmount: 3
-targets:
-  1: !<mobzy:target.attacker>
-    range: 100
-  2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<mobzy:behavior.idle_fly> {}
