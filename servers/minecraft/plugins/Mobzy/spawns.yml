@@ -1,3 +1,8 @@
+# Use templates later
+#x-night: &night
+#  min-time: 12542
+#  max-time: 23460
+
 # block-whitelist: if set, the blocks this mob can spawn on | List of Materials | ex. [GRASS_BLOCK, STONE] | default: no whitelist
 # spawn-pos: the type of position for the mob to be spawned in | AIR/GROUND/OVERHANG | ex. AIR | default: GROUND
 name: Abyssal Creatures
@@ -33,6 +38,11 @@ regions:
       - mob: Cyatoria
         priority: 0.3
         spawn-pos: AIR
+        max-local-group: 2
+        local-group-radius: 150
+#        <<: *night
+        min-time: 12542
+        max-time: 23460
 
       - mob: Dosetori
         priority: 0.4
@@ -192,7 +202,7 @@ regions:
         min-amount: 4
         max-amount: 8
         radius: 10
-        local-group-radius: 50
+        local-group-radius: 150
         max-local-group: 8
         block-whitelist:
           - GRASS_BLOCK
@@ -218,6 +228,8 @@ regions:
 
       - mob: Onitsuchi
         priority: 0.4
+        max-local-group: 2
+        local-group-radius: 150
         spawn-pos: AIR
 
       #- mob: Shroombear
@@ -265,12 +277,13 @@ regions:
         max-amount: 5
         radius: 10
         max-local-group: 5
-        local-group-radius: 50
+        local-group-radius: 100
         block-whitelist:
           - SNOW_BLOCK
           - SNOW
 
       - mob: Demonfish
+        min-amount: 2
         max-amount: 5
         radius: 10
         max-local-group: 20
