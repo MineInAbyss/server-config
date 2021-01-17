@@ -69,10 +69,10 @@ targets:
 goals:
   1: !<mobzy:behavior.flying_damage_target> {}
   2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.5
+    diveVelocity: -0.45
     minHeight: 5
     maxHeight: 7
     startDiveDistance: 15
-    bashVelMultiplier: 0.8
+    bashVelMultiplier: 0.7
   3: !<mobzy:behavior.fly_towards_target> {}
   4: !<mobzy:behavior.idle_fly> {}

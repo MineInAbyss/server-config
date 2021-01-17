@@ -44,7 +44,7 @@ staticComponents:
             §x§B§5§B§5§B§5§ois still smells horrid...
         maxAmount: 2
   - !<mobzy:sounds>
-    ambient: entity.inbyo.ambient
+#    ambient: entity.inbyo.ambient TODO make this not obnoxious
     death: entity.inbyo.death
     hurt: entity.inbyo.hurt
 goals:

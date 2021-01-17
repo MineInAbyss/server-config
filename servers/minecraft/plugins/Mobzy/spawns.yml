@@ -15,11 +15,22 @@ regions:
         max-amount: 3
         radius: 10.0
         max-local-group: 3
-        local-group-radius: 40
+        local-group-radius: 50
         priority: 0.5
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
+
+      - reuse: Template:Fuwagi
+        mob: Neritantan
+        min-amount: 4
+        max-amount: 6
+        max-local-group: 6
+        local-group-radius: 70
+        block-whitelist:
+          - GRASS_BLOCK
+          - ANDESITE
+          - WHITE_CONCRETE
 
       - mob: Hammerbeak
         priority: 0.2
@@ -32,6 +43,8 @@ regions:
       - mob: Silkfang
         priority: 0.5
         max-light: 7
+        max-local-group: 2
+        local-group-radius: 100
         block-whitelist:
           - GRASS_BLOCK
 
@@ -137,16 +150,19 @@ regions:
       - reuse: Template:Benikuchinawa
         priority: 0.3
 
+      - reuse: Template:Neritantan
+        max-y: 70
+
       - reuse: Template:Dosetori
         max-y: 70
 
       - mob: Inbyo
         min-amount: 4
         max-amount: 8
-        radius: 5.0
+        radius: 10
         priority: 2.0
         max-local-group: 8
-        local-group-radius: 20
+        local-group-radius: 120
         max-light: 7
         min-y: 140
 
@@ -156,15 +172,7 @@ regions:
 
       - reuse: Template:Dosetori
 
-      - reuse: Template:Fuwagi
-        mob: Neritantan
-        min-amount: 3
-        max-amount: 5
-        min-light: 2
-        block-whitelist:
-          - GRASS_BLOCK
-          - ANDESITE
-          - WHITE_CONCRETE
+      - reuse: Template:Neritantan
 
       - mob: Madokajack
         priority: 0.3
@@ -173,11 +181,11 @@ regions:
       - mob: Sakuranbo
         max-amount: 3
         radius: 10
-        max-local-group: 12
-        local-group-radius: 40
-        min-light: 7
+        max-local-group: 5
+        local-group-radius: 70
         block-whitelist:
           - GRASS_BLOCK
+          - PODZOL
 
       #- mob: Squidfly
         #max-amount: 6
@@ -210,19 +218,22 @@ regions:
       - reuse: Forest of Temptation:Rohana
         min-amount: 3
         max-amount: 5
+        local-group-radius: 50
+        max-local-group: 5
 
       - mob: Kazura
         min-amount: 2
         max-amount: 4
-        local-group-radius: 30
-        max-local-group: 10
+        radius: 1
+        local-group-radius: 50
+        max-local-group: 4
         block-whitelist:
           - WATER
 
       - mob: Makihige
         max-light: 7
-        max-local-group: 3
-        local-group-radius: 100
+        max-local-group: 2
+        local-group-radius: 120
         block-whitelist:
           - WATER
 
@@ -273,10 +284,10 @@ regions:
       #- reuse: The Goblet of Giants:Hashofu
 
       - mob: Ashimite
-        min-amount: 1
+        min-amount: 3
         max-amount: 5
         radius: 10
-        max-local-group: 5
+        max-local-group: 8
         local-group-radius: 100
         block-whitelist:
           - SNOW_BLOCK
@@ -285,8 +296,8 @@ regions:
       - mob: Demonfish
         min-amount: 2
         max-amount: 5
-        radius: 10
-        max-local-group: 20
+        radius: 2
+        max-local-group: 15
         local-group-radius: 50
         block-whitelist:
           - WATER
