@@ -53,7 +53,7 @@ regions:
         spawn-pos: AIR
         max-local-group: 2
         local-group-radius: 150
-#        <<: *night
+        #        <<: *night
         min-time: 12542
         max-time: 23460
 
@@ -300,10 +300,10 @@ regions:
           - WATER
 
       - mob: Titanjaw
-       min-amount: 3
+        min-amount: 3
         max-amount: 6
         radius: 30
-        max-loxal-group: 6
+        max-local-group: 6
         local-group-radius: 100
         min-light: 7
         block-whitelist:
