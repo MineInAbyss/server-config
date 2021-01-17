@@ -13,7 +13,7 @@ regions:
       - mob: Fuwagi
         min-amount: 2
         max-amount: 3
-        radius: 10.0
+        radius: 10
         max-local-group: 3
         local-group-radius: 50
         priority: 0.5
@@ -21,10 +21,10 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - reuse: Template:Fuwagi
-        mob: Neritantan
+      - mob: Neritantan
         min-amount: 4
         max-amount: 6
+        radius: 10
         max-local-group: 6
         local-group-radius: 70
         block-whitelist:
