@@ -130,8 +130,9 @@ regions:
       - mob: Tesuchi
         min-amount: 1
         max-amount: 4
-        max-local-group: 8
         radius: 15.0
+        max-local-group: 8
+        local-group-radius: 80
         block-whitelist:
           - GRASS_BLOCK
 
@@ -145,8 +146,8 @@ regions:
       - mob: Chimokami
         max-amount: 2
         radius: 10
-        max-local-group: 6
-        local-group-radius: 70
+        max-local-group: 3
+        local-group-radius: 100
         max-light: 7
         block-whitelist:
           - GRASS_BLOCK
@@ -154,6 +155,8 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
+        max-local-group: 3
+        local-group-radius: 100
         priority: 0.3
 
       - reuse: Template:Neritantan
@@ -199,8 +202,8 @@ regions:
         max-amount: 6
         radius: 30
         max-local-group: 18
-        local-group-radius: 100
-        min-light: 7
+        local-group-radius: 200
+        min-light: 4
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
@@ -247,7 +250,7 @@ regions:
 
       - mob: Onitsuchi
         priority: 0.4
-        max-local-group: 2
+        max-local-group: 3
         local-group-radius: 150
         spawn-pos: AIR
 
@@ -256,7 +259,7 @@ regions:
         max-amount: 3
         radius: 20
         max-local-group: 5
-        local-group-radius: 50
+        local-group-radius: 300
         block-whitelist:
           - GRASS_BLOCK
 
@@ -264,17 +267,17 @@ regions:
         min-light: 4
         max-amount: 3
         radius: 10
-        max-local-group: 7
-        local-group-radius: 70
+        max-local-group: 3
+        local-group-radius: 200
         block-whitelist:
           - WATER
 
       - mob: Hashofu
-        min-light: 8
+        min-light: 5
         max-amount: 4
         radius: 10
-        max-local-group: 12
-        local-group-radius: 70
+        max-local-group: 6
+        local-group-radius: 300
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
@@ -306,16 +309,16 @@ regions:
         max-amount: 6
         radius: 1
         max-local-group: 15
-        local-group-radius: 50
+        local-group-radius: 200
         block-whitelist:
           - WATER
 
       - mob: Titanjaw
-        min-amount: 3
+        min-amount: 2
         max-amount: 6
         radius: 30
         max-local-group: 6
-        local-group-radius: 100
+        local-group-radius: 300
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
@@ -323,8 +326,8 @@ regions:
       - mob: Abyssal Snail
         max-amount: 3
         radius: 20
-        max-local-group: 10
-        local-group-radius: 100
+        max-local-group: 3
+        local-group-radius: 300
         min-light: 5
         block-whitelist:
           - GRASS_BLOCK
