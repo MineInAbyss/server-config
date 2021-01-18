@@ -220,8 +220,8 @@ regions:
       - mob: Kuongatari
         min-amount: 4
         max-amount: 8
-        radius: 10
-        local-group-radius: 150
+        radius: 20
+        local-group-radius: 200
         max-local-group: 8
         block-whitelist:
           - GRASS_BLOCK

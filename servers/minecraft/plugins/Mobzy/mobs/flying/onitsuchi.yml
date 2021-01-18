@@ -49,8 +49,8 @@ staticComponents:
             §ewhen combined with a little steel.
             §x§A§9§C§C§C§A§oIt seems sharp enough
             §x§A§9§C§C§C§A§oto put an eye out.
-        maxAmount: 2
-        dropChance: 0.5
+        maxAmount: 1
+        dropChance: 0.4
       - item:
           type: CHARCOAL
           display-name: §x§5§C§4§7§1§DOnitsuchi Feather
