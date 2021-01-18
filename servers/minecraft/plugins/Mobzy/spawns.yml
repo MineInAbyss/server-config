@@ -41,7 +41,7 @@ regions:
       - mob: Benikuchinawa
         priority: 0.1
         max-local-group: 3
-        local-group-radius: 120
+        local-group-radius: 160
         spawn-pos: AIR
 
       - mob: Silkfang
@@ -88,6 +88,11 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
+        priority: 0.1
+        max-local-group: 2
+        local-group-radius: 160
+        spawn-pos: AIR
+
 
       - mob: Beniguma
         min-amount: 3
@@ -108,6 +113,8 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Silkfang
+
+      - reuse: Template:Benikuchinawa
 
       - mob: Corpse Weeper
         priority: 0.3
@@ -178,6 +185,10 @@ regions:
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
+        priority: 0.2
+        max-local-group: 4
+        local-group-radius: 100
+        spawn-pos: AIR
 
       - reuse: Template:Dosetori
 
