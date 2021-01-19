@@ -224,7 +224,7 @@ regions:
       - mob: Tamaugachi
         max-light: 7
         max-local-group: 1
-        local-group-radius: 150
+        local-group-radius: 300
         block-whitelist:
           - WATER
 
