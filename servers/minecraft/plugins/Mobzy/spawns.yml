@@ -99,10 +99,11 @@ regions:
         max-amount: 4
         radius: 20
         max-local-group: 4
-        local-group-radius: 80
-        min-light: 7
+        local-group-radius: 120
+        min-light: 3
         block-whitelist:
           - GRASS_BLOCK
+          - CRACKED_STONE_BRICKS
 
   - name: Forest of Temptation
     spawns:
