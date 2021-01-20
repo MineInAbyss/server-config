@@ -11,8 +11,8 @@ staticComponents:
     knockbackResistance: 0.12
     followRange: 64
   - !<mobzy:death_loot>
-    minExp: 35
-    maxExp: 45
+    minExp: 25
+    maxExp: 35
     drops:
       - item:
           type: BLACK_WOOL

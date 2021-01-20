@@ -10,8 +10,8 @@ staticComponents:
     width: 0.6
     height: 0.6
   - !<mobzy:death_loot>
-    minExp: 15
-    maxExp: 20
+    minExp: 10
+    maxExp: 15
     drops:
       - item:
           type: DRIED_KELP

@@ -13,8 +13,8 @@ staticComponents:
     width: 3.5
     height: 3
   - !<mobzy:death_loot>
-    minExp: 60
-    maxExp: 80
+    minExp: 40
+    maxExp: 60
     drops:
       - item:
           type: PRISMARINE_SHARD

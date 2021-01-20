@@ -13,8 +13,8 @@ staticComponents:
     width: 2
     height: 0.5
   - !<mobzy:death_loot>
-    minExp: 80
-    maxExp: 115
+    minExp: 60
+    maxExp: 100
     drops:
       - item:
           type: CHICKEN

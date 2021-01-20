@@ -20,8 +20,8 @@ staticComponents:
         ambient: true
     applyChance: 0.6
   - !<mobzy:death_loot>
-    minExp: 265
-    maxExp: 300
+    minExp: 230
+    maxExp: 260
     drops:
       - item:
           type: QUARTZ

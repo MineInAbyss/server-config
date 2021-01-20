@@ -10,7 +10,7 @@ staticComponents:
     height: 0.6
   - !<mobzy:death_loot>
     minExp: 10
-    maxExp: 18
+    maxExp: 15
     drops:
       - item:
           type: MUTTON

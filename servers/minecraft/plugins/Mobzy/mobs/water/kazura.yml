@@ -10,8 +10,8 @@ staticComponents:
     width: 1
     height: 1
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 10
+    maxExp: 15
     drops:
       - item:
           type: INK_SAC

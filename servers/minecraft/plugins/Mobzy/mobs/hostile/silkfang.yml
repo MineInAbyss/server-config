@@ -19,8 +19,8 @@ staticComponents:
         ambient: true
     applyChance: 0.6
   - !<mobzy:death_loot>
-    minExp: 45
-    maxExp: 57
+    minExp: 30
+    maxExp: 50
     drops:
       - item:
           type: SPIDER_EYE

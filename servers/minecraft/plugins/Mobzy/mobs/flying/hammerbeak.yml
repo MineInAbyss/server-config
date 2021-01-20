@@ -13,8 +13,8 @@ staticComponents:
     width: 2
     height: 2.25
   - !<mobzy:death_loot>
-    minExp: 40
-    maxExp: 65
+    minExp: 25
+    maxExp: 45
     drops:
       - item:
           type: COD

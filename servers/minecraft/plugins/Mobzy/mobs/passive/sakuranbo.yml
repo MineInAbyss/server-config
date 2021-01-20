@@ -9,8 +9,8 @@ staticComponents:
     width: 0.6
     height: 0.6
   - !<mobzy:death_loot>
-    minExp: 13
-    maxExp: 24
+    minExp: 10
+    maxExp: 20
     drops:
       - item:
           type: GUNPOWDER

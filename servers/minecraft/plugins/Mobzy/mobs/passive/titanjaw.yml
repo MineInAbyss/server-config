@@ -10,8 +10,8 @@ staticComponents:
     width: 2
     height: 1
   - !<mobzy:death_loot>
-    minExp: 30
-    maxExp: 55
+    minExp: 25
+    maxExp: 45
     drops:
       - item:
           type: SCUTE

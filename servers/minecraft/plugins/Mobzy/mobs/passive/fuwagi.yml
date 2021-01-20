@@ -9,8 +9,8 @@ staticComponents:
     width: 0.6
     height: 0.6
   - !<mobzy:death_loot>
-    minExp: 15
-    maxExp: 23
+    minExp: 10
+    maxExp: 16
     drops:
       - item:
           type: RABBIT

@@ -13,8 +13,8 @@ staticComponents:
     width: 4
     height: 2.5
   - !<mobzy:death_loot>
-    minExp: 90
-    maxExp: 135
+    minExp: 70
+    maxExp: 115
     drops:
       - item:
           type: POPPED_CHORUS_FRUIT
