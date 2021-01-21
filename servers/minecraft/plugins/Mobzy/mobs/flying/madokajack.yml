@@ -5,7 +5,7 @@ staticComponents:
     id: 20
   - !<mobzy:attributes>
     maxHealth: 35
-    followRange: 25
+    followRange: 30
     attackDamage: 6
     attackKnockback: 1
     knockbackResistance: 0.11
@@ -77,7 +77,7 @@ staticComponents:
     hurt: entity.madokajack.hurt
 targets:
   1: !<mobzy:target.attacker>
-    range: 100
+    range: 150
   2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<mobzy:behavior.flying_damage_target> {}
