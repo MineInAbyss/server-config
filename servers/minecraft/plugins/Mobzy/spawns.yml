@@ -73,9 +73,11 @@ regions:
       - mob: Okibo
         priority: 0.1
         max-local-group: 2
+        local-group-radius: 100
         block-whitelist:
-          - GRASS_BLOCK
+          - STONE
           - STONE_BRICKS
+          - COBBLESTONE
 
   - name: Edge of the Abyss
     spawns:
