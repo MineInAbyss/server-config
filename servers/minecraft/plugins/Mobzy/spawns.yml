@@ -90,7 +90,7 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
-        priority: 0.1
+        priority: 0.05
         max-local-group: 2
         local-group-radius: 160
         spawn-pos: AIR
@@ -188,7 +188,7 @@ regions:
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
-        priority: 0.2
+        priority: 0.3
         max-local-group: 4
         local-group-radius: 100
         spawn-pos: AIR
@@ -282,7 +282,7 @@ regions:
         max-amount: 3
         radius: 10
         max-local-group: 3
-        local-group-radius: 200
+        local-group-radius: 300
         block-whitelist:
           - WATER
 
