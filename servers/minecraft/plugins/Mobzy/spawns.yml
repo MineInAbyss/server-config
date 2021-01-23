@@ -167,13 +167,14 @@ regions:
       - reuse: Template:Benikuchinawa
         max-local-group: 3
         local-group-radius: 100
+        max-y: 100
         priority: 0.3
 
       - reuse: Template:Neritantan
         max-y: 45
 
       - reuse: Template:Dosetori
-        max-y: 70
+        max-y: 100
 
       - mob: Inbyo
         min-amount: 4
