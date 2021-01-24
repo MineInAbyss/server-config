@@ -5,4 +5,4 @@ staticComponents:
     id: 3
     hitIdOffset: 0
     material: DIAMOND_AXE
-  - !<mobzy:prevent_riding>
+  - !<mobzy:prevent_riding> {}
