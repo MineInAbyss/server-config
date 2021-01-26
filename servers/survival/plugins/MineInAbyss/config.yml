@@ -91,20 +91,20 @@ layers:
         iterations: 3
         offset: 5
         sounds:
-          - BLOCK_FIRE_AMBIENT
-          - BLOCK_GRASS_STEP
-          - BLOCK_LADDER_STEP
-          - BLOCK_GRAVEL_STEP
-          - ENTITY_ZOMBIE_STEP
-          - ENTITY_GENERIC_HURT
-          - ENTITY_GENERIC_SWIM
-          - ENTITY_GENERIC_SMALL_FALL
-          - ENTITY_ITEM_PICKUP
-          - BLOCK_WATER_AMBIENT
-          - ENTITY_ARROW_SHOOT
-          - ENTITY_CHICKEN_STEP
-          - ENTITY_CHICKEN_AMBIENT
-          - ENTITY_CREEPER_PRIMED
+          - block.fire.ambient
+          - block.grass.step
+          - block.ladder.step
+          - block.gravel.step
+          - entity.zombie.step
+          - entity.generic.hurt
+          - entity.generic.swim
+          - entity.generic.small.fall
+          - entity.item.pickup
+          - block.water.ambient
+          - entity.arrow.shoot
+          - entity.chicken.step
+          - entity.chicken.ambient
+          - entity.creeper.primed
     sections: [l3s1,l3s2,l3s3,l3s4,l3s5,l3s6,l3s7]
   - name: §x§9§E§1§E§8§4The Goblets of Giants
     sub: §x§7§7§2§3§7§A7000–12000 meters
@@ -130,15 +130,15 @@ layers:
         iterations: 2
         offset: 5
         sounds:
-          - ENTITY_ZOMBIE_STEP
-          - ENTITY_GENERIC_HURT
-          - ENTITY_GENERIC_SWIM
-          - ENTITY_GENERIC_SMALL_FALL
-          - ENTITY_ITEM_PICKUP
-          - BLOCK_WATER_AMBIENT
-          - ENTITY_ARROW_SHOOT
-          - AMBIENT_CAVE
-          - ENTITY_CREEPER_PRIMED
+          - entity.zombie.step
+          - entity.generic.hurt
+          - entity.generic.swim
+          - entity.generic.small.fall
+          - entity.item.pickup
+          - block.water.ambient
+          - entity.arrow.shoot
+          - ambient.cave
+          - entity.creeper.primed
     sections: [l4s1,l4s2,l4s3,l4s4,l4s5,l4s6,l4s7,l4s8]
   - name: §x§3§B§3§B§3§BSea of Corpses
     sub: §x§5§4§5§4§5§412000–13000 meters
@@ -172,7 +172,7 @@ layers:
         iterations: 1
         offset: 7
         sounds:
-          - AMBIENT_CAVE
-          - AMBIENT_UNDERWATER_LOOP_ADDITIONS_ULTRA_RARE
+          - ambient.cave
+          - ambient.underwater.loop.additions.ultra.rare
     sections: [l5s1,l5s2,l5s3,l5s4,l5s5]
 disableDeathMessagesIn: [camelot]
