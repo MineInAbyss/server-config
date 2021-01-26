@@ -33,12 +33,14 @@ regions:
           - WHITE_CONCRETE
 
       - mob: Hammerbeak
+        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
 
       - mob: Benikuchinawa
+        min-y: 20
         priority: 0.1
         max-local-group: 3
         local-group-radius: 160
@@ -53,6 +55,7 @@ regions:
           - GRASS_BLOCK
 
       - mob: Cyatoria
+        min-y: 20
         priority: 0.3
         spawn-pos: AIR
         max-local-group: 2
@@ -62,6 +65,7 @@ regions:
         max-time: 23460
 
       - mob: Dosetori
+        min-y: 20
         priority: 0.4
         max-local-group: 2
         spawn-pos: AIR
@@ -120,6 +124,7 @@ regions:
       - reuse: Template:Benikuchinawa
 
       - mob: Corpse Weeper
+        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
@@ -199,6 +204,7 @@ regions:
       - reuse: Template:Neritantan
 
       - mob: Madokajack
+        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 100
@@ -264,6 +270,7 @@ regions:
           - WATER
 
       - mob: Onitsuchi
+        min-y: 20
         priority: 0.2
         max-local-group: 2
         local-group-radius: 200
