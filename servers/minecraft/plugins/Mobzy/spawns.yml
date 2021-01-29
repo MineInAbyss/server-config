@@ -42,8 +42,8 @@ regions:
       - mob: Benikuchinawa
         min-y: 20
         priority: 0.1
-        max-local-group: 3
-        local-group-radius: 160
+        max-local-group: 2
+        local-group-radius: 300
         spawn-pos: AIR
 
       - mob: Silkfang
@@ -95,8 +95,8 @@ regions:
 
       - reuse: Template:Benikuchinawa
         priority: 0.05
-        max-local-group: 2
-        local-group-radius: 160
+        max-local-group: 1
+        local-group-radius: 350
         spawn-pos: AIR
 
 
@@ -170,8 +170,8 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
-        max-local-group: 3
-        local-group-radius: 100
+        max-local-group: 2
+        local-group-radius: 200
         max-y: 100
         priority: 0.3
 
