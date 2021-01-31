@@ -3,7 +3,7 @@ alert_user: true
 list_drops: true
 debug: false
 map_save_active: false
-ignore_silktouch: false
+ignore_silktouch: true
 caveOres: false
 transform_attempt_multiplier: 6
 # We don't want to lock discovery behind a tool type
