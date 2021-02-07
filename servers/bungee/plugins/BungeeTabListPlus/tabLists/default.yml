@@ -1,0 +1,94 @@
+# This is the default configuration file of BungeeTabListPlus.
+#
+# Since the configuration of the plugin is quite complex you
+# might want to have a look at the wiki from time to time.
+#
+# Wiki: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki
+#  Placeholders: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Placeholders
+#  Examples: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples
+#
+
+# Configure who can see the tab lists
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/MultipleTablists
+showTo: all
+priority: 0
+
+showHeaderFooter: true
+header:
+- |-
+  &aMine In Abyss
+headerAnimationUpdateInterval: 0.2
+
+footer:
+- |-
+  Ping: ${viewer_colored_ping}ms &r${viewer spark_tps_10s}tps
+footerAnimationUpdateInterval: 1.0
+
+# Configure whether hidden players appear on the tab list
+# see https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Hidden-Players
+hiddenPlayers: VISIBLE_TO_ADMINS
+
+# Player sets are required to display players and player counts on the tab list.
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Configuration-Basics-Part-4---Player-sets
+# playerSets:
+  # all_players: all
+
+# We want a dynamic size tab list
+type: DYNAMIC_SIZE
+
+customPlaceholders:
+  other_server_prefix: # makes players on other servers gray
+    !conditional
+    condition: '${viewer server} == ${player server}'
+    true: ''
+    false: '&7'
+  afk_prefix:
+    !conditional
+    condition: '${player essentials_afk}'
+    true: '&c[AFK]&8 '
+    false: ''
+  viewer_colored_ping0:
+    !conditional
+    condition: "${viewer ping} < 50"
+    true: "&a${viewer ping}"
+    false: "&e${viewer ping}"
+  viewer_colored_ping:
+    !conditional
+    condition: "${viewer ping} < 150"
+    true: ${viewer_colored_ping0}
+    false: "&c${viewer ping}"
+  # custom_prefix:
+  #   !conditional
+  #   condition: ${spigot_prefix} != ""
+  #   true: ${spigot_prefix}
+  #   false: ${bungee_prefix}
+  spigot_prefix:
+    !switch
+    parameters: 1
+    expression: ${player vault_primary_group}
+    replacements:
+      "admin": "§x§e§9§1§e§6§3[A] &r"
+      "moderator": "§x§f§1§c§4§0§f[M] &r"
+      "juniorbuilder": "§x§5§7§e§7§f§f[Jr. B] &r"
+      "builder": "§x§2§5§a§5§f§f[B] &r"
+      "seniorbuilder": "§x§0§6§6§9§f§f[Sr. B] &r"
+      "patreon": "§x§f§9§6§8§5§4[P] &r"
+    defaultReplacement: ""
+  # bungee_prefix:
+  #   !switch
+  #   parameters: 1
+  #   expression: ${player luckpermsbungee_primary_group}
+  #   replacements:
+  #     "patreon": "&6[P] &r"
+  #   defaultReplacement: ""
+
+playerSets:
+  global:
+    filter: "true"
+    hiddenPlayers: "VISIBLE" # Hidden players show up on the tab list, avoids gliches
+
+playerSet: global
+
+playerOrder: "server viewer-first,vault_primary_group_weight desc,name"
+
+playerComponent: {text: "${spigot_prefix}${other_server_prefix}${afk_prefix}${player name}", icon: "${player skin}", ping: "${player player_colored_ping}"}
