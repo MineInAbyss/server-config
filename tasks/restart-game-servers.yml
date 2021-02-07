@@ -5,3 +5,4 @@
     - "{{ minecraft_servers }}"
     - "{{ bungee_servers }}"
   async: 60
+  poll: 0
