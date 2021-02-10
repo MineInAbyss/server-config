@@ -4,17 +4,17 @@ staticComponents:
   - !<mobzy:model>
     id: 77
   - !<mobzy:attributes>
-    maxHealth: 55
+    maxHealth: 50
     followRange: 50
-    attackDamage: 6.5
-    attackKnockback: 2.4
+    attackDamage: 6
+    attackKnockback: 2
     knockbackResistance: 0.16
-    flyingSpeed: 16
+    flyingSpeed: 13
     width: 2.25
     height: 0.5
   - !<mobzy:death_loot>
-    minExp: 40
-    maxExp: 60
+    minExp: 60
+    maxExp: 80
     drops:
       - item:
           type: COD
@@ -70,10 +70,10 @@ goals:
   1: !<minecraft:behavior.float> {}
   2: !<mobzy:behavior.flying_damage_target> {}
   3: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.45
-    minHeight: 5
-    maxHeight: 7
+    diveVelocity: 0.5
+    minHeight: 3
+    maxHeight: 6
     startDiveDistance: 15
-    bashVelMultiplier: 0.7
+    bashVelMultiplier: 0.5
   4: !<mobzy:behavior.fly_towards_target> {}
   5: !<mobzy:behavior.idle_fly> {}
