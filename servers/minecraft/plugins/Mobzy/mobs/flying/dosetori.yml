@@ -51,7 +51,6 @@ staticComponents:
             §x§F§F§E§8§1§7§oSeems to be kind of unsturdy...
         minAmount: 1
         maxAmount: 3
-  - !<mobzy:rideable> {}
   - !<mobzy:sounds>
     ambient: entity.dosetori.ambient
     death: entity.dosetori.death

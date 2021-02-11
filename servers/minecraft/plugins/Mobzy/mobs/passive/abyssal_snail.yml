@@ -30,7 +30,7 @@ staticComponents:
             §ein the §aSea of Corpses§e.
             §x§A§6§8§3§4§8§oMany delvers feel strangely compelled
             §x§A§6§8§3§4§8§oto lick slime such as this. Well, §lDON'T!
-  - !<mobzy:rideable> {}
+  #- !<mobzy:rideable> {}
 goals:
   1: !<minecraft:behavior.avoid_player>
     radius: 15

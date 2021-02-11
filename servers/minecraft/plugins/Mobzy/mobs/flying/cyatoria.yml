@@ -53,7 +53,6 @@ staticComponents:
         minAmount: 1
         maxAmount: 4
         dropChance: 0.7
-  - !<mobzy:rideable> {}
 targets:
   1: !<mobzy:target.attacker>
     range: 100
