@@ -68,6 +68,7 @@ regions:
         min-y: 20
         priority: 0.4
         max-local-group: 2
+        local-group-radius: 100
         spawn-pos: AIR
 
   - name: Orth
