@@ -97,7 +97,7 @@ regions:
       - reuse: Template:Benikuchinawa
         priority: 0.05
         max-local-group: 1
-        local-group-radius: 350
+        local-group-radius: 400
         spawn-pos: AIR
 
 
