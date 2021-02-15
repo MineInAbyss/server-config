@@ -10,6 +10,8 @@ staticComponents:
     attackKnockback: 1
     knockbackResistance: 0.12
     followRange: 64
+    width: 1
+    height: 3
   - !<mobzy:death_loot>
     minExp: 25
     maxExp: 35
