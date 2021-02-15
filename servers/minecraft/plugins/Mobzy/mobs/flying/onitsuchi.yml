@@ -11,7 +11,7 @@ staticComponents:
     knockbackResistance: 0.16
     flyingSpeed: 13
     width: 2.25
-    height: 1
+    height: 1.5
   - !<mobzy:death_loot>
     minExp: 60
     maxExp: 80
