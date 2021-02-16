@@ -37,6 +37,24 @@ staticComponents:
             §2§oA very thin, yet surprisingly tensile
             §2§ostrand of silk.
         dropChance: 0.7
+         - item:
+          type: KELP
+          display-name: §x§1§F§B§5§3§DKuongatari Abodmen
+          lore: |
+            §eDropped by §x§2§5§D§6§4§8Kuongataris §e
+            §einfesting the §aGoblets of Giants §eand
+            §elower layers.
+            §2§oMaybe this could be
+            §2§ocooked.
+        dropChance: 0.8
+        cooked:
+         type: DRIED_KELP
+          display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+          lore: |
+            §eDropped by §x§2§5§D§6§4§8Kuongataris §e
+            §einfesting the §aGoblets of Giants §eand
+            §elower layers.
+            §2§oSurprisingly tasty
 goals:
   1: !<minecraft:behavior.leap_at_target>
     jumpHeight: 0.6
