@@ -1,0 +1,26 @@
+item:
+  type: OAK_LEAVES
+staticComponents:
+  - !<geary:events>
+    leftClick:
+      - !<cancel> {}
+      - !<cooldown> 
+        name: Blow
+        length: 2s
+        run:
+          - !<on.parent>
+            - !<geary:particle>
+              at: !<player.target_block>
+                maxDist: 5
+              type: CLOUD
+              count: 10
+              speed: 0.2
+            - !<geary:sound>
+              sound: entity.generic.extinguish_fire 
+            - !<on.nearby>
+              radius: 10
+              run:
+                - !<geary:push>
+                  source: !<source.location> {}
+                  force: 1.5
+                  yOffset: 0.5

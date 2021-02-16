@@ -1,0 +1,30 @@
+item:
+  type: DIAMOND_HOE
+  custom-model-data: 3
+staticComponents:
+  - !<geary:events>
+    leftClick:
+      - !<cancel> {}
+      - !<cooldown> 
+        name: Freeze Enemies
+        length: 2s
+        run:
+          - !<on.parent>
+            - !<on.nearby>
+              at: !<player.target_block>
+                maxDist: 5
+              radius: 20
+              max: 3
+              run:
+                - !<geary:apply_potion_effects>
+                  effects:
+                    - type: SLOW
+                      duration: 10s
+                      amplifier: 100
+                - !<geary:particle>
+                  type: CLOUD
+                  count: 10
+                  speed: 0.3
+    rightClick:
+      - !<cancel> {}
+

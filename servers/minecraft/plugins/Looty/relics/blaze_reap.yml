@@ -1,0 +1,20 @@
+item:
+  type: DIAMOND_HOE
+  custom-model-data: 4
+staticComponents:
+  - !<geary:events>
+    leftClick:
+      - !<cancel> {}
+      - !<cooldown>
+        name: Explosion
+        length: 2s
+        run:
+          - !<on.parent>
+            - !<looty:explode>
+              power: 3
+              breakBlocks: true
+              at: !<player.target_block>
+                maxDist: 5
+    rightClick:
+      - !<cancel> {}
+
