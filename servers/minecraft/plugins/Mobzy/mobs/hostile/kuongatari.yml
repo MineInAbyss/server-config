@@ -44,11 +44,11 @@ staticComponents:
             §x§1§6§7§D§2§A§oPerhaps this could be cooked...
         cooked:
           type: DRIED_KELP
-            display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
-            lore: |
-              §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-              §aGoblets of Giants §eand the §aSea of Corpses§e.
-              §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
+          display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+          lore: |
+            §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
+            §aGoblets of Giants §eand the §aSea of Corpses§e.
+            §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
         dropChance: 0.8
 goals:
   1: !<minecraft:behavior.leap_at_target>
