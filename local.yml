@@ -13,4 +13,4 @@
     - include: tasks/setup-cron-job.yml
     - include: tasks/setup-update-script.yml
     - include: tasks/copy-configs.yml
-    - include: tasks/restart-mc-servers.yml
+    - include: tasks/restart-game-servers.yml

@@ -1,0 +1,8 @@
+- service:
+    name: "minecraft@{{ item.name }}"
+    state: restarted
+  with_items:
+    - "{{ minecraft_servers }}"
+    - "{{ bungee_servers }}"
+  async: 60
+  poll: 0

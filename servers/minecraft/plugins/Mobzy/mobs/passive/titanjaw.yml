@@ -10,8 +10,8 @@ staticComponents:
     width: 2
     height: 1
   - !<mobzy:death_loot>
-    minExp: 30
-    maxExp: 55
+    minExp: 25
+    maxExp: 45
     drops:
       - item:
           type: SCUTE
@@ -33,7 +33,7 @@ staticComponents:
             §ein the §aSea of Corpses§e.
             §x§0§C§7§7§8§7§oWhy do I feel like I am haunted...
         dropChance: 0.2
-  - !<mobzy:rideable> {}
+  #- !<mobzy:rideable> {}
 goals:
   1: !<minecraft:behavior.panic_on_hit>
     speedModifier: 2

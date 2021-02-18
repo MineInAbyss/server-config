@@ -15,40 +15,47 @@ regions:
         max-amount: 3
         radius: 10
         max-local-group: 3
-        local-group-radius: 50
+        local-group-radius: 60
         priority: 0.5
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
 
       - mob: Neritantan
-        min-amount: 4
-        max-amount: 6
+        min-amount: 3
+        max-amount: 5
         radius: 10
-        max-local-group: 6
-        local-group-radius: 70
+        max-local-group: 10
+        local-group-radius: 100
         block-whitelist:
           - GRASS_BLOCK
           - ANDESITE
           - WHITE_CONCRETE
 
       - mob: Hammerbeak
-        priority: 0.2
+        min-y: 20
+        priority: 0.3
+        max-local-group: 3
+        local-group-radius: 120
         spawn-pos: AIR
 
       - mob: Benikuchinawa
-        priority: 0.2
+        min-y: 20
+        priority: 0.1
+        max-local-group: 2
+        local-group-radius: 300
         spawn-pos: AIR
 
       - mob: Silkfang
         priority: 0.5
         max-light: 7
-        max-local-group: 2
+        max-local-group: 4
         local-group-radius: 100
         block-whitelist:
           - GRASS_BLOCK
 
       - mob: Cyatoria
+        min-y: 20
         priority: 0.3
         spawn-pos: AIR
         max-local-group: 2
@@ -58,7 +65,10 @@ regions:
         max-time: 23460
 
       - mob: Dosetori
+        min-y: 20
         priority: 0.4
+        max-local-group: 2
+        local-group-radius: 150
         spawn-pos: AIR
 
   - name: Orth
@@ -67,9 +77,12 @@ regions:
 
       - mob: Okibo
         priority: 0.1
+        max-local-group: 2
+        local-group-radius: 100
         block-whitelist:
-          - GRASS_BLOCK
+          - STONE
           - STONE_BRICKS
+          - COBBLESTONE
 
   - name: Edge of the Abyss
     spawns:
@@ -82,16 +95,22 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
+        priority: 0.05
+        max-local-group: 1
+        local-group-radius: 400
+        spawn-pos: AIR
+
 
       - mob: Beniguma
         min-amount: 3
         max-amount: 4
         radius: 20
-        max-local-group: 8
-        local-group-radius: 100
-        min-light: 10
+        max-local-group: 4
+        local-group-radius: 120
+        min-light: 3
         block-whitelist:
           - GRASS_BLOCK
+          - CRACKED_STONE_BRICKS
 
   - name: Forest of Temptation
     spawns:
@@ -103,8 +122,13 @@ regions:
 
       - reuse: Template:Silkfang
 
+      - reuse: Template:Benikuchinawa
+
       - mob: Corpse Weeper
+        min-y: 20
         priority: 0.3
+        max-local-group: 3
+        local-group-radius: 120
         spawn-pos: AIR
 
       - reuse: Template:Fuwagi
@@ -124,6 +148,8 @@ regions:
         min-amount: 1
         max-amount: 4
         radius: 15.0
+        max-local-group: 8
+        local-group-radius: 80
         block-whitelist:
           - GRASS_BLOCK
 
@@ -136,9 +162,9 @@ regions:
 
       - mob: Chimokami
         max-amount: 2
-        radius: 20
-        max-local-group: 6
-        local-group-radius: 70
+        radius: 10
+        max-local-group: 3
+        local-group-radius: 100
         max-light: 7
         block-whitelist:
           - GRASS_BLOCK
@@ -146,13 +172,16 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
+        max-local-group: 2
+        local-group-radius: 200
+        max-y: 100
         priority: 0.3
 
       - reuse: Template:Neritantan
         max-y: 45
 
       - reuse: Template:Dosetori
-        max-y: 70
+        max-y: 100
 
       - mob: Inbyo
         min-amount: 4
@@ -167,13 +196,20 @@ regions:
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
+        priority: 0.3
+        max-local-group: 4
+        local-group-radius: 100
+        spawn-pos: AIR
 
       - reuse: Template:Dosetori
 
       - reuse: Template:Neritantan
 
       - mob: Madokajack
+        min-y: 20
         priority: 0.3
+        max-local-group: 3
+        local-group-radius: 100
         spawn-pos: AIR
 
       - mob: Sakuranbo
@@ -189,8 +225,8 @@ regions:
         max-amount: 6
         radius: 30
         max-local-group: 18
-        local-group-radius: 100
-        min-light: 7
+        local-group-radius: 200
+        min-light: 4
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
@@ -200,15 +236,15 @@ regions:
       - mob: Tamaugachi
         max-light: 7
         max-local-group: 1
-        local-group-radius: 150
+        local-group-radius: 300
         block-whitelist:
           - WATER
 
       - mob: Kuongatari
         min-amount: 4
         max-amount: 8
-        radius: 10
-        local-group-radius: 150
+        radius: 20
+        local-group-radius: 200
         max-local-group: 8
         block-whitelist:
           - GRASS_BLOCK
@@ -223,7 +259,7 @@ regions:
         min-amount: 2
         max-amount: 4
         radius: 1
-        local-group-radius: 50
+        local-group-radius: 100
         max-local-group: 4
         block-whitelist:
           - WATER
@@ -231,40 +267,41 @@ regions:
       - mob: Makihige
         max-light: 7
         max-local-group: 2
-        local-group-radius: 120
+        local-group-radius: 200
         block-whitelist:
           - WATER
 
       - mob: Onitsuchi
-        priority: 0.4
+        min-y: 20
+        priority: 0.2
         max-local-group: 2
-        local-group-radius: 150
+        local-group-radius: 200
         spawn-pos: AIR
 
       - mob: Shroombear
         min-light: 5
-        max-amount: 3
-        radius: 20
-        max-local-group: 5
-        local-group-radius: 50
+        max-amount: 2
+        radius: 10
+        max-local-group: 6
+        local-group-radius: 300
         block-whitelist:
           - GRASS_BLOCK
 
       - mob: Uibuta
         min-light: 4
-        max-amount: 3
+        max-amount: 2
         radius: 10
-        max-local-group: 6
-        local-group-radius: 100
+        max-local-group: 4
+        local-group-radius: 300
         block-whitelist:
           - WATER
 
       - mob: Hashofu
-        min-light: 8
-        max-amount: 4
+        min-light: 5
+        max-amount:4
         radius: 10
-        max-local-group: 12
-        local-group-radius: 70
+        max-local-group: 6
+        local-group-radius: 300
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
@@ -286,7 +323,7 @@ regions:
         max-amount: 5
         radius: 10
         max-local-group: 8
-        local-group-radius: 100
+        local-group-radius: 150
         block-whitelist:
           - SNOW_BLOCK
           - SNOW
@@ -296,25 +333,25 @@ regions:
         max-amount: 6
         radius: 1
         max-local-group: 15
-        local-group-radius: 50
+        local-group-radius: 200
         block-whitelist:
           - WATER
 
       - mob: Titanjaw
-        min-amount: 3
-        max-amount: 6
-        radius: 30
-        max-local-group: 6
-        local-group-radius: 100
+        min-amount: 1
+        max-amount: 2
+        radius: 20
+        max-local-group: 5
+        local-group-radius: 300
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
 
       - mob: Abyssal Snail
-        max-amount: 3
-        radius: 20
-        max-local-group: 10
-        local-group-radius: 100
+        max-amount: 1
+        radius: 10
+        max-local-group: 3
+        local-group-radius: 300
         min-light: 5
         block-whitelist:
           - GRASS_BLOCK

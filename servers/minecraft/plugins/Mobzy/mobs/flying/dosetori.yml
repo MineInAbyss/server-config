@@ -13,12 +13,13 @@ staticComponents:
     width: 2
     height: 0.5
   - !<mobzy:death_loot>
-    minExp: 80
-    maxExp: 115
+    minExp: 60
+    maxExp: 100
     drops:
       - item:
           type: CHICKEN
           display-name: §x§F§F§F§8§2§1Raw Dosetori Meat
+          custom-model-data: 2
           lore: |
             §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
             §aInverted Forest §eand §aGreat Fault§e.
@@ -26,6 +27,7 @@ staticComponents:
         cooked:
           type: COOKED_CHICKEN
           display-name: §x§F§F§F§8§2§1Cooked Dosetori Meat
+          custom-model-data: 2
           lore: |
             §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
             §aInverted Forest §eand §aGreat Fault§e.
@@ -40,6 +42,7 @@ staticComponents:
             §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
             §aInverted Forest §eand §aGreat Fault§e.
             §x§F§F§E§8§1§7§oPerhaps I can take flight with these?
+            §x§F§F§E§8§1§7§o(No this is not related to membrane or elytras)
         minAmount: 2
         maxAmount: 4
       - item:
@@ -51,7 +54,6 @@ staticComponents:
             §x§F§F§E§8§1§7§oSeems to be kind of unsturdy...
         minAmount: 1
         maxAmount: 3
-  - !<mobzy:rideable> {}
   - !<mobzy:sounds>
     ambient: entity.dosetori.ambient
     death: entity.dosetori.death

@@ -9,8 +9,8 @@ staticComponents:
     width: 0.6
     height: 0.6
   - !<mobzy:death_loot>
-    minExp: 15
-    maxExp: 23
+    minExp: 10
+    maxExp: 16
     drops:
       - item:
           type: RABBIT
@@ -32,7 +32,7 @@ staticComponents:
             §aAbyss §eand the §aForest of Temptation§e.
             §x§F§F§3§A§2§4§oGamey with a hint of carrot and
             §x§F§F§3§A§2§4§oapple. Mostly carrot though.
-            §x§F§F§3§A§2§4§oA Lot of carrots.
+            §x§F§F§3§A§2§4§oA lot of carrots.
           custom-model-data: 1
         dropChance: 0.8
       - item:

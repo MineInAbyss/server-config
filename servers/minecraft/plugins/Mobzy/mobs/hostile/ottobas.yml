@@ -13,8 +13,8 @@ staticComponents:
     width: 1.9
     height: 2
   - !<mobzy:death_loot>
-    minExp: 70
-    maxExp: 105
+    minExp: 55
+    maxExp: 90
     drops:
       - item:
           type: PORKCHOP

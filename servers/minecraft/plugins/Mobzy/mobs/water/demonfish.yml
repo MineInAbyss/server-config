@@ -10,8 +10,8 @@ staticComponents:
     width: 1.1
     height: 0.3
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 15
+    maxExp: 20
     drops:
       - item:
           type: SALMON

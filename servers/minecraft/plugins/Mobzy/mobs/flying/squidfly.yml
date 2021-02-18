@@ -11,8 +11,8 @@ staticComponents:
     width: 0.5
     height: 1
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 12
+    maxExp: 18
     drops:
       - item:
           type: POTATO

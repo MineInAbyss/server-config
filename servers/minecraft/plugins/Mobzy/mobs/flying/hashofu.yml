@@ -8,11 +8,11 @@ staticComponents:
     flyingSpeed: 6
     attackDamage: 0
     followRange: 20
-    height: 0.20
+    height: 0.8
     width: 0.5
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 12
+    maxExp: 18
     drops:
       - item:
           type: COD
@@ -55,9 +55,5 @@ staticComponents:
             §x§5§9§5§9§5§9§oPerhaps I should look for a vendor?
         minAmount: 1
         maxAmount: 3
-targets:
-  1: !<mobzy:target.attacker>
-    range: 100
-  2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<mobzy:behavior.idle_fly> {}

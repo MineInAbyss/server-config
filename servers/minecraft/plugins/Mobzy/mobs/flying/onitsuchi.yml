@@ -4,16 +4,16 @@ staticComponents:
   - !<mobzy:model>
     id: 77
   - !<mobzy:attributes>
-    maxHealth: 55
+    maxHealth: 40
     followRange: 50
-    attackDamage: 6.5
-    attackKnockback: 2.4
+    attackDamage: 4.5
+    attackKnockback: 2
     knockbackResistance: 0.16
-    flyingSpeed: 16
+    flyingSpeed: 13
     width: 2.25
-    height: 0.5
+    height: 1.5
   - !<mobzy:death_loot>
-    minExp: 55
+    minExp: 60
     maxExp: 80
     drops:
       - item:
@@ -49,8 +49,8 @@ staticComponents:
             §ewhen combined with a little steel.
             §x§A§9§C§C§C§A§oIt seems sharp enough
             §x§A§9§C§C§C§A§oto put an eye out.
-        maxAmount: 2
-        dropChance: 0.5
+        maxAmount: 1
+        dropChance: 0.4
       - item:
           type: CHARCOAL
           display-name: §x§5§C§4§7§1§DOnitsuchi Feather
@@ -67,12 +67,13 @@ targets:
     range: 100
   2: !<minecraft:target.nearby_player> {}
 goals:
-  1: !<mobzy:behavior.flying_damage_target> {}
-  2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.45
-    minHeight: 5
-    maxHeight: 7
+  1: !<minecraft:behavior.float> {}
+  2: !<mobzy:behavior.flying_damage_target> {}
+  3: !<mobzy:behavior.flying_dive_on_target>
+    diveVelocity: 0.5
+    minHeight: 3
+    maxHeight: 6
     startDiveDistance: 15
-    bashVelMultiplier: 0.7
-  3: !<mobzy:behavior.fly_towards_target> {}
-  4: !<mobzy:behavior.idle_fly> {}
+    bashVelMultiplier: 0.5
+  4: !<mobzy:behavior.fly_towards_target> {}
+  5: !<mobzy:behavior.idle_fly> {}

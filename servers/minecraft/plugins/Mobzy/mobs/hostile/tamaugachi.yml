@@ -6,7 +6,7 @@ staticComponents:
   - !<mobzy:attributes>
     maxHealth: 100
     movementSpeed: 0.5
-    attackDamage: 30
+    attackDamage: 25
     attackKnockback: 5
     knockbackResistance: 0.8
     followRange: 40
@@ -20,8 +20,8 @@ staticComponents:
         ambient: true
     applyChance: 0.6
   - !<mobzy:death_loot>
-    minExp: 265
-    maxExp: 300
+    minExp: 230
+    maxExp: 260
     drops:
       - item:
           type: QUARTZ

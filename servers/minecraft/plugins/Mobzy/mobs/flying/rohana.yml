@@ -11,8 +11,8 @@ staticComponents:
     width: 0.6
     height: 0.6
   - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
+    minExp: 12
+    maxExp: 18
     drops:
       - item:
           type: GLOWSTONE_DUST

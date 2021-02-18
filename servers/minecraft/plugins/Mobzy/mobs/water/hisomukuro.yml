@@ -20,8 +20,8 @@ staticComponents:
         ambient: true
     applyChance: 0.4
   - !<mobzy:death_loot>
-    minExp: 250
-    maxExp: 285
+    minExp: 200
+    maxExp: 250
     drops:
       - item:
           type: BLACKSTONE_WALL
