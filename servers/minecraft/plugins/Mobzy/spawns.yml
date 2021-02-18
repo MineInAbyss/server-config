@@ -297,7 +297,7 @@ regions:
 
       - mob: Hashofu
         min-light: 5
-        max-amount:4
+        max-amount: 4
         radius: 10
         max-local-group: 6
         local-group-radius: 300
