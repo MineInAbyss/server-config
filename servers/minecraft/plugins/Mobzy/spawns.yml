@@ -140,7 +140,6 @@ regions:
         radius: 40
         max-local-group: 4
         local-group-radius: 80
-        priority: 0.3
         block-whitelist:
           - WATER
 
