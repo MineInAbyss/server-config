@@ -18,7 +18,7 @@ staticComponents:
         duration: 2s
         amplifier: 3
         ambient: true
-    applyChance: 0.4
+    applyChance: 0.2
   - !<mobzy:death_loot>
     minExp: 70
     maxExp: 115
