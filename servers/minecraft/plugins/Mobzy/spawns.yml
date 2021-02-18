@@ -232,6 +232,18 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
+          
+      - mob: Kakatsumuri
+        max-amount: 10
+        radius: 30
+        max-local-group: 30
+        local-group-radius: 200
+        max-light: 6
+        block-whitelist:
+          - WHITE_CONCRETE
+          - DIORITE
+          - GRASS_BLOCK
+          - PODZOL
 
   - name: The Goblet of Giants
     spawns:
