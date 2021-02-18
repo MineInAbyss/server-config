@@ -9,9 +9,16 @@ staticComponents:
     attackDamage: 7
     attackKnockback: 1.7
     knockbackResistance: 0.2
-    flyingSpeed: 10
+    flyingSpeed: 12
     width: 4
     height: 2.5
+  - !<mobzy:potion_on_attack>
+    effects:
+      - type: POISON
+        duration: 2s
+        amplifier: 3
+        ambient: true
+    applyChance: 0.4
   - !<mobzy:death_loot>
     minExp: 90
     maxExp: 135
