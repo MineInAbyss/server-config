@@ -1,0 +1,32 @@
+baseClass: mobzy:passive
+creatureType: CREATURE
+staticComponents:
+  - !<mobzy:model>
+    id: 110
+  - !<mobzy:attributes>
+    maxHealth: 5
+    movementSpeed: 0.1
+    knockbackResistance: 0
+    followRange: 20
+    width: 0.2
+    height: 0.2
+  - !<mobzy:death_loot>
+    minExp: 5
+    maxExp: 15
+    drops:
+      - item: 
+          type: PRISMARINE_CRYSTALS
+          display-name: §x§7§D§9§3§F§FKakatsumuri Shell
+          lore: |
+            §eDropped by §x§7§D§9§3§F§FKakatsumuri 
+            §ein the §aGreat Fault§e.
+            §x§B§8§F§F§B§A§oEven after death the shell
+            §x§B§8§F§F§B§A§ostill keeps it bright glow.
+goals:
+  1: !<minecraft:behavior.tempt>
+    items: [PRISMARINE_CRYSTALS]
+    losesInterest: false
+  2: !<minecraft:behavior.avoid_player>
+    radius: 15
+  3: !<minecraft:behavior.panic_on_hit>
+    speedModifier: 4
