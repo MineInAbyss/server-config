@@ -172,7 +172,7 @@ regions:
     spawns:
       - reuse: Template:Benikuchinawa
         max-local-group: 2
-        local-group-radius: 125
+        local-group-radius: 200
         max-y: 100
         priority: 0.3
 
