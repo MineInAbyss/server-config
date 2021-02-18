@@ -254,8 +254,8 @@ regions:
         min-light: 4
         max-amount: 3
         radius: 10
-        max-local-group: 7
-        local-group-radius: 70
+        max-local-group: 6
+        local-group-radius: 100
         block-whitelist:
           - WATER
 
