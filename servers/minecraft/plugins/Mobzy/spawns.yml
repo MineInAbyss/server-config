@@ -171,7 +171,7 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template:Benikuchinawa
-        max-local-group: 4
+        max-local-group: 2
         local-group-radius: 125
         max-y: 100
         priority: 0.3
