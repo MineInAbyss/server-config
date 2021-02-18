@@ -5,10 +5,10 @@ staticComponents:
     id: 89
   - !<mobzy:attributes>
     maxHealth: 50
-    movementSpeed: 0.7
-    attackDamage: 13
+    movementSpeed: 0.6
+    attackDamage: 9.5
     attackKnockback: 2
-    knockbackResistance: 0.1
+    knockbackResistance: 0.15
     followRange: 30
     width: 1.5
     height: 1.5
