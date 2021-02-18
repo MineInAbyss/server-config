@@ -5,16 +5,16 @@ staticComponents:
     id: 89
   - !<mobzy:attributes>
     maxHealth: 50
-    movementSpeed: 0.6
+    movementSpeed: 0.4
     attackDamage: 9.5
     attackKnockback: 2
-    knockbackResistance: 0.15
+    knockbackResistance: 0.1
     followRange: 30
     width: 1.5
     height: 1.5
   - !<mobzy:death_loot>
-    minExp: 90
-    maxExp: 135
+    minExp: 65
+    maxExp: 95
     drops:
       - item:
           type: PORKCHOP
