@@ -244,6 +244,26 @@ regions:
           - DIORITE
           - GRASS_BLOCK
           - PODZOL
+          
+      - mob: Rinsipede
+        max-amount: 5
+        radius: 30
+        max-local-group: 15
+        local-group-radius: 200
+        max-light: 3
+        block-whitelist:
+          - WHITE_CONCRETE
+          - DIORITE
+          
+      - mob: Rinsipede
+        max-amount: 3
+        radius: 30
+        max-local-group: 9
+        local-group-radius: 200
+        max-light: 3
+        block-whitelist:
+          - WHITE_CONCRETE
+          - DIORITE
 
   - name: The Goblet of Giants
     spawns:
@@ -369,3 +389,11 @@ regions:
         min-light: 5
         block-whitelist:
           - GRASS_BLOCK
+          
+      - mob: Kagi Tachikiri
+        max-amount: 8
+        radius: 30
+        max-local-group: 20
+        local-group-radius: 200
+        block-whitelist:
+          - SAND
