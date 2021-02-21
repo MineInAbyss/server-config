@@ -1,0 +1,40 @@
+baseClass: mobzy:hostile
+creatureType: MONSTER
+staticComponents:
+  - !<mobzy:model>
+    id: 116
+  - !<mobzy:attributes>
+    maxHealth: 20
+    movementSpeed: 0.4
+    attackDamage: 8
+    attackKnockback: 1
+    followRange: 10
+    width: 0.2
+    height: 0.2
+  - !<mobzy:death_loot>
+    minExp: 15
+    maxExp: 25
+    drops:
+      - item:
+          type: BONE_MEAL
+          display-name: §x§C§4§2§D§2§DVirinsipede Segments
+          lore: |
+            §eDropped by §x§C§4§2§D§2§DVirinsipede 
+            §ein the §aGreat Fault§e.
+            §x§8§F§4§2§5§B§oI've heard their body makes
+            §x§8§F§4§2§5§B§ofor a great fertiliser.
+        dropChance: 0.8
+      - item:
+          type: BLAZE_ROD
+          display-name: §x§C§4§2§D§2§DVirinsipede Antlers
+          lore: |
+            §eObtained from §x§C§4§2§D§2§DVirinsipede §ein
+            §ethe §aGreat Fault §eand
+            §ein the §aSea of Corpses§e.
+            §x§F§F§C§8§4§7§oBlazing hot, just like
+            §x§F§F§C§8§4§7§othe Virinsipede's rage.
+        dropChance: 0.2
+
+goals:
+  1: !<minecraft:behavior.leap_at_target>
+    jumpHeight: 0.2
