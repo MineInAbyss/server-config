@@ -5,8 +5,8 @@ staticComponents:
     id: 116
   - !<mobzy:attributes>
     maxHealth: 20
-    movementSpeed: 0.4
-    attackDamage: 8
+    movementSpeed: 0.3
+    attackDamage: 6
     attackKnockback: 1
     followRange: 10
     width: 0.2
