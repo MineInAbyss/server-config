@@ -9,7 +9,7 @@ staticComponents:
     attackDamage: 6
     attackKnockback: 1
     followRange: 10
-    width: 0.2
+    width: 1
     height: 0.2
   - !<mobzy:death_loot>
     minExp: 15
@@ -34,7 +34,6 @@ staticComponents:
             §x§F§F§C§8§4§7§oBlazing hot, just like
             §x§F§F§C§8§4§7§othe Virinsipede's rage.
         dropChance: 0.2
-
 goals:
   1: !<minecraft:behavior.leap_at_target>
     jumpHeight: 0.2

@@ -115,6 +115,7 @@ regions:
   - name: Forest of Temptation
     spawns:
       - reuse: Template:Fuwagi
+      - reuse: Template:Fuwagi
 
       - reuse: Template:Hammerbeak
 

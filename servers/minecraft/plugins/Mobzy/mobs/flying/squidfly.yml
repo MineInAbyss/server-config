@@ -6,7 +6,7 @@ staticComponents:
   - !<mobzy:attributes>
     maxHealth: 15
     followRange: 20
-    attackDamage: 6
+    attackDamage: 5
     flyingSpeed: 3
     width: 0.5
     height: 1
@@ -44,7 +44,7 @@ goals:
     diveVelocity: -0.4
     minHeight: 2
     maxHeight: 4
-    startDiveDistance: 8
+    startDiveDistance: 5
     bashVelMultiplier: 0.6
   3: !<mobzy:behavior.fly_towards_target> {}
   4: !<mobzy:behavior.idle_fly> {}
