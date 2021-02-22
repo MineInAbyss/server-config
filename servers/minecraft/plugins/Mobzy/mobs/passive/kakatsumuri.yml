@@ -24,7 +24,7 @@ staticComponents:
             §x§B§8§F§F§B§A§ostill keeps it bright glow.
 goals:
   1: !<minecraft:behavior.tempt>
-    items: [PRISMARINE_CRYSTALS]
+    items: [PRISMARINE_SHARD]
     losesInterest: false
   2: !<minecraft:behavior.avoid_player>
     radius: 15
