@@ -12,14 +12,17 @@ staticComponents:
     followRange: 25
     width: 2
     height: 3
-  - !<mobzy:potion_on_attack>
-    effects:
-      - type: POISON
-        duration: 6s
-        amplifier: 5
-      - type: HARM
-        amplifier: 1
-    applyChance: 0.8
+  - !<geary:events>
+    onTargetHit:
+      - !<on.target>
+        - !<geary:apply_potion_effects>
+          effects:
+            - type: POISON
+              duration: 6s
+              amplifier: 5
+            - type: HARM
+              amplifier: 1
+          applyChance: 0.8
   - !<mobzy:death_loot>
     minExp: 400
     maxExp: 500
@@ -58,7 +61,7 @@ staticComponents:
             §enests in the §aSea of Corpses§e,
             §eand plucking its eye out.
         maxAmount: 2
-        dropChance: 0.4  
+        dropChance: 0.4
   - !<mobzy:sounds>
     ambient: entity.stingerhead.ambient
     death: entity.stingerhead.death
@@ -69,9 +72,22 @@ targets:
   2: !<minecraft:target.nearby_player> {}
 goals:
   1: !<mobzy:behavior.throw_items>
-    item:
+    spawn:
       type: SNOWBALL
-      custom-model-data: 100
-    damage: 5.0  
+      components:
+        - !<mobzy:item_model>
+          item:
+            type: SNOWBALL
+            custom-model-data: 100
+        - !<geary:events>
+          projectileHit:
+            - !<on.target>
+              - !<geary:deal_damage>
+                damage: 5.0
+              - !<geary:apply_potion_effects>
+                effects:
+                  - type: POISON
+                    duration: 6s
+                    amplifier: 5
   2: !<minecraft:behavior.leap_at_target>
-    jumpHeight: 0.3    
+    jumpHeight: 0.3

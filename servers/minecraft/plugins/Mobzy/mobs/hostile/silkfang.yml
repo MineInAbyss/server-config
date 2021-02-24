@@ -11,13 +11,16 @@ staticComponents:
     knockbackResistance: 0.05
     width: 2
     height: 2
-  - !<mobzy:potion_on_attack>
-    effects:
-      - type: SLOW
-        duration: 10s
-        amplifier: 10
-        ambient: true
-    applyChance: 0.6
+  - !<geary:events>
+    onTargetHit:
+      - !<on.target>
+        - !<geary:apply_potion_effects>
+          effects:
+            - type: SLOW
+              duration: 10s
+              amplifier: 10
+              ambient: true
+          applyChance: 0.6
   - !<mobzy:death_loot>
     minExp: 30
     maxExp: 50
@@ -59,6 +62,24 @@ goals:
   # TODO add potion effects on impact
   2: !<mobzy:behavior.throw_items>
     minThrowRad: 4.0
-    item:
-      type: COBWEB
-    damage: 5.0
+    spawn:
+      type: SNOWBALL
+      components:
+        - !<mobzy:item_model>
+          item:
+            type: COBWEB
+        - !<geary:events>
+          projectileHit:
+            - !<on.target>
+              - !<geary:deal_damage>
+                damage: 5.0
+              - !<geary:apply_potion_effects>
+                effects:
+                  - type: SLOW
+                    duration: 6s
+                    amplifier: 5
+  # 2: !<mobzy:behavior.throw_items>
+  #   minThrowRad: 4.0
+  #   item:
+  #     type: COBWEB
+  #   damage: 5.0

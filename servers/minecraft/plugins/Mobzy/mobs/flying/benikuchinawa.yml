@@ -12,13 +12,16 @@ staticComponents:
     flyingSpeed: 12
     width: 4
     height: 2.5
-  - !<mobzy:potion_on_attack>
-    effects:
-      - type: POISON
-        duration: 2s
-        amplifier: 3
-        ambient: true
-    applyChance: 0.2
+  - !<geary:events>
+    onTargetHit:
+      - !<on.target>
+        - !<geary:apply_potion_effects>
+          effects:
+            - type: POISON
+              duration: 2s
+              amplifier: 3
+              ambient: true
+          applyChance: 0.2
   - !<mobzy:death_loot>
     minExp: 70
     maxExp: 115
