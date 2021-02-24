@@ -1,0 +1,30 @@
+hurtBlocks:
+  - LAVA
+  - SLIME_BLOCK
+  - WATER
+  - HAY_BLOCK
+  - COBWEB
+  - LADDER
+  - VINE
+  - SWEET_BERRY_BUSH
+  - HONEY_BLOCK
+  - WHITE_BED
+  - ORANGE_BED
+  - MAGENTA_BED
+  - LIGHT_BLUE_BED
+  - YELLOW_BED
+  - LIME_BED
+  - PINK_BED
+  - GRAY_BED
+  - LIGHT_GRAY_BED
+  - CYAN_BED
+  - BLUE_BED
+  - PURPLE_BED
+  - GREEN_BED
+  - BROWN_BED
+  - RED_BED
+  - BLACK_BED
+  - SCAFFOLDING
+damageMultiplier: 0.5
+minFallDist: 3
+waterfallDamageMultiplier: 0.5
