@@ -1,0 +1,15 @@
+item:
+  type: POTION
+  display-name: Black Flask
+staticComponents:
+  - !<geary:events>
+    consume:
+      - !<on.parent>
+        - !<geary:apply_potion_effects>
+          effects:
+            - type: SPEED
+              duration: 7s
+              amplifier: 10
+        - !<geary:deal_damage>
+          damage: 10
+          minHealth: 1

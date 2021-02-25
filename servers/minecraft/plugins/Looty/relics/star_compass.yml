@@ -1,0 +1,17 @@
+item:
+  type: COMPASS
+  custom-model-data: 1
+staticComponents:
+  - !<mineinabyss:depthmeter>
+    accuracy: 1
+  - !<geary:events>
+    leftClick:
+      - !<cancel> {}
+      - !<cooldown>
+        name: Read Depth
+        length: 1m
+        run:
+          - !<mineinabyss:show_depth> {}
+    rightClick:
+      - !<cancel> {}
+

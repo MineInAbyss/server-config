@@ -1,0 +1,20 @@
+item:
+  type: STICK
+  display-name: Ghost Seek
+staticComponents:
+  - !<geary:events>
+    leftClick:
+      - !<cancel> {}
+      - !<cooldown> 
+        name: Ghost Seek
+        length: 20s
+        run:
+          - !<on.parent>
+            - !<on.nearby>
+              radius: 15
+              run:
+                - !<geary:apply_potion_effects>
+                  effects:
+                    - type: GLOWING
+                      duration: 5s
+
