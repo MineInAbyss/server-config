@@ -78,8 +78,3 @@ goals:
                   - type: SLOW
                     duration: 6s
                     amplifier: 5
-  # 2: !<mobzy:behavior.throw_items>
-  #   minThrowRad: 4.0
-  #   item:
-  #     type: COBWEB
-  #   damage: 5.0
