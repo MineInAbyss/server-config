@@ -5,7 +5,7 @@ staticComponents:
     id: 77
   - !<mobzy:attributes>
     maxHealth: 40
-    followRange: 50
+    followRange: 40
     attackDamage: 4.5
     attackKnockback: 2
     knockbackResistance: 0.16
