@@ -61,3 +61,25 @@ staticComponents:
     level: 3
 goals:
   1: !<minecraft:behavior.float> { }
+  2: !<mobzy:behavior.throw_items>
+    minThrowRad: 15.0
+    projectileSpeed: 1.0f
+    projectileAngularDiameter: 3.0
+    cooldown: 500
+    spawn:
+      type: SNOWBALL
+      components:
+        - !<mobzy:item_model>
+          item:
+            type: QUARTZ
+            custom-model-data: 1
+        - !<geary:events>
+          projectileHit:
+            - !<on.target>
+              - !<geary:deal_damage>
+                  damage: 3.0
+              - !<geary:apply_potion_effects>
+                effects:
+                  - type: POISON
+                    duration: 6s
+                    amplifier: 5

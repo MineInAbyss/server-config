@@ -4,11 +4,21 @@ staticComponents:
   - !<mobzy:model>
     id: 80
   - !<mobzy:attributes>
-    maxHealth: 35
-    movementSpeed: 0.2
+    maxHealth: 25
+    movementSpeed: 0
     knockbackResistance: 0.05
     width: 0.6
     height: 0.6
+  - !<geary:events>
+    onDamaged:
+      - !<cooldown>
+        length: 20s
+        run:
+          - !<geary:apply_potion_effects>
+            effects:
+              - type: REGENERATION
+                duration: 6s
+                amplifier: 2
   - !<mobzy:death_loot>
     minExp: 15
     maxExp: 20
@@ -54,7 +64,7 @@ staticComponents:
     hurt: entity.shroombear.hurt
 goals:
   1: !<minecraft:behavior.tempt>
-    items: [WARPED_FUNGUS,CRIMSON_FUNGUS]
+    items: [WARPED_FUNGUS]
     losesInterest: false
   2: !<minecraft:behavior.panic_on_hit>
     speedModifier: 2
@@ -63,4 +73,3 @@ goals:
     speed: 1.5
     sprintSpeed: 2.5
     #Doesnt work, cuz not hostile and targeting an entity?
-  
