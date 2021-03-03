@@ -25,6 +25,6 @@ hurtBlocks:
   - RED_BED
   - BLACK_BED
   - SCAFFOLDING
-damageMultiplier: 0.5
+damageMultiplier: 1
 minFallDist: 3
-waterfallDamageMultiplier: 0.5
+waterfallDamageMultiplier: 1
