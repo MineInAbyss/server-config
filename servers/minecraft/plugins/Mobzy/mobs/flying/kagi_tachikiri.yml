@@ -1,5 +1,5 @@
 baseClass: mobzy:flying
-creatureType: MISC
+creatureType: HOSTILE
 staticComponents:
   - !<mobzy:model>
     id: 107
