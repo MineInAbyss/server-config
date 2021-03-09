@@ -33,14 +33,14 @@ regions:
 
       - mob: Hammerbeak
         min-y: 20
-        #priority: 0.3
+        priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
 
       - mob: Benikuchinawa
         min-y: 20
-        #priority: 0.05
+        priority: 0.05
         max-local-group: 2
         local-group-radius: 300
         spawn-pos: AIR
@@ -54,7 +54,7 @@ regions:
 
       - mob: Cyatoria
         min-y: 20
-        #priority: 0.3
+        priority: 0.3
         spawn-pos: AIR
         max-local-group: 2
         local-group-radius: 150
@@ -64,7 +64,7 @@ regions:
 
       - mob: Dosetori
         min-y: 20
-        #priority: 0.4
+        priority: 0.4
         max-local-group: 2
         local-group-radius: 150
         spawn-pos: AIR
@@ -92,7 +92,7 @@ regions:
       - reuse: Template:Cyatoria
 
       - reuse: Template:Benikuchinawa
-        #priority: 0.05
+        priority: 0.05
         max-local-group: 1
         local-group-radius: 500
         spawn-pos: AIR
@@ -124,7 +124,7 @@ regions:
 
       - mob: Corpse Weeper
         min-y: 20
-        #priority: 0.3
+        priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
@@ -184,7 +184,7 @@ regions:
         min-amount: 4
         max-amount: 8
         radius: 10
-        #priority: 2.0
+        priority: 2.0
         max-local-group: 8
         local-group-radius: 120
         max-light: 7
@@ -193,7 +193,7 @@ regions:
   - name: Great Fault
     spawns:
       - reuse: Template:Benikuchinawa
-        #priority: 0.3
+        priority: 0.3
         max-local-group: 3
         local-group-radius: 150
         spawn-pos: AIR
@@ -204,7 +204,7 @@ regions:
 
       - mob: Madokajack
         min-y: 20
-        #priority: 0.3
+        priority: 0.3
         max-local-group: 3
         local-group-radius: 150
         spawn-pos: AIR
