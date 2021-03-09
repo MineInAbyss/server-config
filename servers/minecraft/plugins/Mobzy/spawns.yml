@@ -16,6 +16,7 @@ regions:
         radius: 10
         max-local-group: 3
         local-group-radius: 60
+        priority: 0.5
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
@@ -47,6 +48,7 @@ regions:
 
       - mob: Silkfang
         max-light: 7
+        priority: 0.5
         max-local-group: 4
         local-group-radius: 100
         block-whitelist:
@@ -74,6 +76,7 @@ regions:
       - reuse: Template:Fuwagi
 
       - mob: Okibo
+        priority: 0.1
         max-local-group: 2
         local-group-radius: 100
         block-whitelist:
