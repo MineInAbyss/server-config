@@ -19,8 +19,7 @@ staticComponents:
           display-name: §x§2§5§9§7§D§9Raw Ashimite Meat
           lore: |
             §eCan be obtained by hunting down an
-            §x§2§5§9§7§D§9Ashimite §ein the §aGoblets of Giants
-            §eand the §aSea of Corpses§e.
+            §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses§e.
             §x§8§2§4§E§2§1§oSeems like a great source for food.
         cooked:
           type: COOKED_PORKCHOP
@@ -28,8 +27,8 @@ staticComponents:
           custom-model-data: 1
           lore: |
             §eCan be obtained by hunting down an
-            §x§2§5§9§7§D§9Ashimite §ein the §aGoblets of Giants
-            §eand the §aSea of Corpses§eand cooking its meat.
+            §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses
+            §eand cooking its meat.
             §x§8§2§4§E§2§1§oVery tasty and rich in nutrients!
         dropChance: 0.5
         minAmount: 1
@@ -39,8 +38,7 @@ staticComponents:
           display-name: §x§2§5§9§7§D§9Ashimite Hoof
           lore: |
             §eCan be obtained by hunting down an
-            §x§2§5§9§7§D§9Ashimite §ein the §aGoblets of Giants
-            §eand the §aSea of Corpses§e.
+            §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses§e.
             §x§8§2§4§E§2§1§oExcellent for starting fires!
         dropChance: 0.3
         minAmount: 0
@@ -51,8 +49,7 @@ staticComponents:
           custom-model-data: 1
           lore: |
             §eCan be obtained by hunting down an
-            §x§2§5§9§7§D§9Ashimite §ein the §aGoblets of Giants
-            §eand the §aSea of Corpses§e.
+            §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses§e.
             §x§8§2§4§E§2§1§oThey use these to assert dominance.
             §x§8§2§4§E§2§1§oYet they run off when you get close...
         dropChance: 0.2
