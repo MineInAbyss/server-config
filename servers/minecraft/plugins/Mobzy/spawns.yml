@@ -61,8 +61,8 @@ regions:
         max-local-group: 2
         local-group-radius: 150
         #        <<: *night
-        #min-time: 12542
-        #max-time: 23460
+        min-time: 12542
+        max-time: 23460
 
       - mob: Dosetori
         min-y: 20
@@ -115,7 +115,6 @@ regions:
   - name: Forest of Temptation
     spawns:
       - reuse: Template:Fuwagi
-      - reuse: Template:Fuwagi
 
       - reuse: Template:Hammerbeak
 
@@ -132,8 +131,7 @@ regions:
         local-group-radius: 120
         spawn-pos: AIR
 
-      - reuse: Template:Fuwagi
-        mob: Rohana
+      - mob: Rohana
         max-light: 7
         max-amount: 4
         radius: 40
@@ -175,9 +173,9 @@ regions:
         priority: 0.3
 
       - reuse: Template:Neritantan
-        radius: 100
+        radius: 20
         max-local-group: 6
-        local-group-radius: 100
+        local-group-radius: 150
         max-y: 45
 
       - reuse: Template:Dosetori
@@ -224,8 +222,8 @@ regions:
       - mob: Squidfly
         max-amount: 6
         radius: 30
-        max-local-group: 18
-        local-group-radius: 200
+        max-local-group: 8
+        local-group-radius: 100
         min-light: 4
         block-whitelist:
           - GRASS_BLOCK
@@ -234,9 +232,9 @@ regions:
       - mob: Kakatsumuri
         max-amount: 10
         radius: 30
-        max-local-group: 20
-        local-group-radius: 250
-        min-light: 4
+        max-local-group: 10
+        local-group-radius: 150
+        max-light: 10
         block-whitelist:
           - WHITE_CONCRETE
           - DIORITE
@@ -284,7 +282,7 @@ regions:
       - reuse: Forest of Temptation:Rohana
         min-amount: 3
         max-amount: 5
-        local-group-radius: 50
+        local-group-radius: 150
         max-local-group: 5
 
       - mob: Kazura
@@ -306,7 +304,7 @@ regions:
       - mob: Onitsuchi
         min-y: 20
         priority: 0.2
-        max-local-group: 2
+        max-local-group: 3
         local-group-radius: 200
         spawn-pos: AIR
 
@@ -374,7 +372,7 @@ regions:
         max-amount: 2
         radius: 20
         max-local-group: 4
-        local-group-radius: 500
+        local-group-radius: 250
         min-light: 7
         block-whitelist:
           - GRASS_BLOCK
@@ -383,7 +381,7 @@ regions:
         max-amount: 1
         radius: 10
         max-local-group: 3
-        local-group-radius: 500
+        local-group-radius: 250
         min-light: 5
         block-whitelist:
           - GRASS_BLOCK
