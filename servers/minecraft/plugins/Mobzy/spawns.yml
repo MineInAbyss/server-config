@@ -386,9 +386,9 @@ regions:
           - GRASS_BLOCK
           
       - mob: Kagi Tachikiri
-        max-amount: 5
+        max-amount: 4
         radius: 10
-        max-local-group: 10
+        max-local-group: 6
         local-group-radius: 300
         block-whitelist:
           - SAND
