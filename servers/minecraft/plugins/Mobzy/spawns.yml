@@ -159,7 +159,8 @@ regions:
         radius: 10
         max-local-group: 3
         local-group-radius: 100
-        max-light: 7
+        min-Time: 13000
+        max-Time: 23000
         block-whitelist:
           - GRASS_BLOCK
 
@@ -170,12 +171,6 @@ regions:
         local-group-radius: 200
         max-y: 100
         priority: 0.3
-
-      - reuse: Template:Neritantan
-        radius: 100
-        max-local-group: 6
-        local-group-radius: 100
-        max-y: 45
 
       - reuse: Template:Dosetori
         max-y: 100
@@ -200,7 +195,12 @@ regions:
 
       - reuse: Template:Dosetori
 
-      - reuse: Template:Neritantan
+      - mob: Template:Neritantan
+        radius: 100
+        max-local-group: 6
+        local-group-radius: 100
+        max-light: 7
+        max-y: 45
 
       - mob: Madokajack
         min-y: 20
@@ -265,8 +265,8 @@ regions:
       - mob: Tamaugachi
         max-local-group: 1
         local-group-radius: 300 
-        min-Time: 6000
-        max-Time: 9000
+        min-Time: 18000
+        max-Time: 23000
         block-whitelist:
           - WATER
 
