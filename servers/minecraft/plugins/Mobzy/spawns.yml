@@ -266,7 +266,7 @@ regions:
         max-local-group: 1
         local-group-radius: 300 
         min-Time: 6000
-        max-Time: 13000
+        max-Time: 9000
         block-whitelist:
           - WATER
 
