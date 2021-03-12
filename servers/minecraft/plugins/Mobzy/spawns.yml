@@ -263,11 +263,10 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: Tamaugachi
-        max-light: 7
         max-local-group: 1
         local-group-radius: 300 
-        min-Time: 17843
-        max-Time: 18000
+        min-Time: 6000
+        max-Time: 13000
         block-whitelist:
           - WATER
 
