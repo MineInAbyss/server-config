@@ -160,7 +160,8 @@ regions:
         radius: 10
         max-local-group: 3
         local-group-radius: 100
-        max-light: 7
+        min-Time: 13000
+        max-Time: 23000
         block-whitelist:
           - GRASS_BLOCK
 
@@ -264,9 +265,10 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: Tamaugachi
-        max-light: 7
         max-local-group: 1
-        local-group-radius: 300
+        local-group-radius: 300 
+        min-Time: 18000
+        max-Time: 23000
         block-whitelist:
           - WATER
 
@@ -387,9 +389,9 @@ regions:
           - GRASS_BLOCK
           
       - mob: Kagi Tachikiri
-        max-amount: 5
+        max-amount: 4
         radius: 10
-        max-local-group: 10
+        max-local-group: 6
         local-group-radius: 300
         block-whitelist:
           - SAND
