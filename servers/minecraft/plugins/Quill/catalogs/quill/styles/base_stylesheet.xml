@@ -1,0 +1,52 @@
+<stylesheet id="base_stylesheet">
+  <styles>
+    <style id="h1">
+      <formatting>
+        <format type="bold">true</format>
+        <format type="underline">true</format>
+      </formatting>
+    </style>
+    <style id="h2">
+      <formatting>
+        <format type="bold">true</format>
+      </formatting>
+    </style>
+    <style id="h3">
+      <formatting>
+        <format type="underline">true</format>
+      </formatting>
+    </style>
+    <style id="h4">
+      <formatting>
+        <format type="italic">true</format>
+      </formatting>
+    </style>
+    <style id="quote">
+      <formatting>
+        <format type="italic">true</format>
+      </formatting>
+    </style>
+    <style id="bestiary_text">
+      <formatting>
+        <format type="bold">false</format>
+        <format type="underline">false</format>
+        <format type="italic">false</format>
+      </formatting>
+    </style>
+    <style id="mobname">
+      <formatting>
+        <format type="bold">true</format>
+        <format type="underline">false</format>
+        <format type="italic">false</format>
+      </formatting>
+    </style>
+    <style id="bestiary_image">
+      <formatting>
+        <format type="bold">false</format>
+        <format type="underline">false</format>
+        <format type="italic">false</format>
+        <format type="font">bestiary</format>
+      </formatting>
+    </style>
+  </styles>
+</stylesheet>

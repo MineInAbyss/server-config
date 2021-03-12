@@ -1,6 +1,10 @@
+[![Discord](https://badgen.net/discord/members/QXPCk2y)](https://discord.gg/QXPCk2y)
+![Size](https://img.shields.io/github/repo-size/MineInAbyss/server-config)
+[![Contribute](https://shields.io/badge/Contribute-e57be5?logo=github%20sponsors&style=flat&logoColor=white)](https://mineinabyss.com/config)
+
 # Mine In Abyss Server Config
 
-We use this repo to keep track of our servers' configuration files.
+We use this repo to keep track of our servers' configuration files. Anyone can request to make changes by following the guide in the `Contribute` badge above!
 
 We use ansible to set up a cron job that runs `ansible-pull` daily, which will run the `local.yml` playbook as it is on GitHub. 
 

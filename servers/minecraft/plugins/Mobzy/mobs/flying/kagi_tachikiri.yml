@@ -1,5 +1,5 @@
 baseClass: mobzy:flying
-creatureType: HOSTILE
+creatureType: MONSTER
 staticComponents:
   - !<mobzy:model>
     id: 107
