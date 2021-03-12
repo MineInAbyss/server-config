@@ -1,0 +1,19 @@
+<component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:
+</component>
+<color v="#000000"><div>The <hover component="hover_orbpiercer"><color v="#C74040"><div styles="mobname">Orb Piercer</div></color></hover> is a most dangerous creature which roams the waters of the  <hover component="hover_orbpiercer_layer"><color v="#7B168A"><div styles="mobname">4th Layer</div></color></hover>. It mainly appears during night time, to easily hunt unweary pray. It considers the <hover component="hover_orbpiercer_flatcreeper"><color v="#389e21"><div styles="mobname">Flat Creepers</div></color></hover> as its territory, so be weary when traversing them.
+<component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:
+</component>
+<color v="#C74040"><div styles="mobname">Orb Piercers</div></color> are known to be ferocious creatures that uses its long spikes to inject poison into its target. If it cannot reach its target, it will also attempt to shoot a cluster of its spikes at the target.
+
+
+<component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:
+</component>
+If you manage to slay one, be sure to harvest parts from its corpse.
+We currently know that its <hover component="hover_orbpiercer_spike"><color v="#C74040"><div styles="mobname">spikes</div></color></hover> and <hover component="hover_orbpiercer_face"><color v="#C74040"><div styles="mobname">face fragments</div></color></hover> can be considered useful.
+</div></color>
+
+
+
+<component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>

@@ -1,0 +1,30 @@
+<!-- Stylesheets require an id which is used by books to include it. -->
+<stylesheet id="bestiary_stylesheet">
+  <!-- Stylesheets can also include other stylesheets, but not books-->
+  <includes>
+    <include type="stylesheet">base_stylesheet</include>
+  </includes>
+  <styles>
+    <!-- Styles here require an id, and can extend other styles -->
+    <style id="mob_orbpiercer" extends="mobname">
+      <formatting>
+        <format type="color">#C74040</format>
+      </formatting>
+    </style>
+    <style id="h2_purple" extends="h2">
+      <formatting>
+        <format type="color">0x830087</format>
+      </formatting>
+    </style>
+     <style id="h2_blue" extends="h2">
+      <formatting>
+        <format type="color">0x3333cc</format>
+      </formatting>
+    </style>
+    <style id="footer" extends="h2">
+      <formatting>
+        <format type="color">0x8080FF</format>
+      </formatting>
+    </style>
+  </styles>
+</stylesheet>

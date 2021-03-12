@@ -1,0 +1,16 @@
+########################
+##  The Quill Config  ##
+########################
+
+# The location of the resource pack relative to the plugin directory
+resource-pack: resource-pack.zip
+
+# The cache of components, books and stylesheets
+cache:
+  auto-update: true
+  # Time in ms
+  update-interval: 10000
+
+# Messages that show up occasionally...
+messages:
+  cannot-read: §cThe book appears to be washed out!
