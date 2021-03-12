@@ -160,8 +160,8 @@ regions:
         radius: 10
         max-local-group: 3
         local-group-radius: 100
-        min-Time: 13000
-        max-Time: 23000
+        min-time: 13000
+        max-time: 23000
         block-whitelist:
           - GRASS_BLOCK
 
@@ -267,8 +267,8 @@ regions:
       - mob: Tamaugachi
         max-local-group: 1
         local-group-radius: 300 
-        min-Time: 18000
-        max-Time: 23000
+        min-time: 18000
+        max-time: 23000
         block-whitelist:
           - WATER
 
