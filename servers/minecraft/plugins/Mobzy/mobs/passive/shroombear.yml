@@ -26,6 +26,7 @@ staticComponents:
       - item:
           type: MUTTON
           display-name: §x§8§5§5§6§2§DShroombear Meat
+          custom-model-data: 2
           lore: |
             §eObtained by chasing down 
             §ea §x§8§5§5§6§2§DShroombear §ein the
@@ -36,6 +37,7 @@ staticComponents:
         cooked:
           type: COOKED_MUTTON
           display-name: §x§8§5§5§6§2§DCooked Shroombear Meat
+          custom-model-data: 2
           lore: |
             §eObtained by chasing down 
             §ea §x§8§5§5§6§2§DShroombear §ein the

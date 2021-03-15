@@ -25,6 +25,7 @@ staticComponents:
       - item: 
           type: SLIME_BALL
           display-name: §x§7§8§5§F§3§4Abyssal Snail Slime
+          custom-model-data: 1
           lore: |
             §eSticky slime dropped by §x§7§8§5§F§3§4Abyssal Snails
             §ein the §aSea of Corpses§e.
