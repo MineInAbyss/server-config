@@ -1,55 +1,56 @@
-baseClass: mobzy:hostile
-creatureType: MONSTER
-staticComponents:
-  - !<mobzy:model>
-    id: 35
-  - !<mobzy:attributes>
-    maxHealth: 10
-    movementSpeed: 0.4
-    attackDamage: 6
-    attackKnockback: 1
-    followRange: 10
-    width: 0.9
-    height: 0.9
-  - !<mobzy:death_loot>
-    minExp: 15
-    maxExp: 25
-    drops:
-      - item:
-          type: LIME_DYE
-          display-name: §x§1§F§B§5§3§DKuongatari Juice
-          custom-model-data: 1
-          lore: |
-            §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-            §aGoblets of Giants §eand the §aSea of Corpses§e.
-            §x§1§6§7§D§2§A§oSome call these bugs Amarathine-Deceptors
-        dropChance: 0.4
-      - item:
-          type: STRING
-          display-name: §x§1§F§B§5§3§DKuongatari Silk
-          custom-model-data: 1
-          lore: |
-            §eObtained from §x§2§5§D§6§4§8Kuongataris §ein
-            §ethe §aGoblets of Giants §eand
-            §ein the §aSea of Corpses§e.
-            §x§1§6§7§D§2§A§oA very thin, yet surprisingly
-            §x§1§6§7§D§2§A§otensile strand of silk.
-        dropChance: 0.7
-      - item:
-          type: KELP
-          display-name: §x§1§F§B§5§3§DKuongatari Abdomen
-          lore: |
-            §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-            §aGoblets of Giants §eand the §aSea of Corpses§e.
-            §x§1§6§7§D§2§A§oPerhaps this could be cooked...
-        cooked:
-          type: DRIED_KELP
-          display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
-          lore: |
-            §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-            §aGoblets of Giants §eand the §aSea of Corpses§e.
-            §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
-        dropChance: 0.8
-goals:
-  1: !<minecraft:behavior.leap_at_target>
-    jumpHeight: 0.6
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 35
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.4
+  attackDamage: 6
+  attackKnockback: 1
+  followRange: 10
+  width: 0.9
+  height: 0.9
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 25
+  drops:
+    - item:
+        type: LIME_DYE
+        display-name: §x§1§F§B§5§3§DKuongatari Juice
+        custom-model-data: 1
+        lore: |
+          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
+          §aGoblets of Giants §eand the §aSea of Corpses§e.
+          §x§1§6§7§D§2§A§oSome call these bugs Amarathine-Deceptors
+      dropChance: 0.4
+    - item:
+        type: STRING
+        display-name: §x§1§F§B§5§3§DKuongatari Silk
+        custom-model-data: 1
+        lore: |
+          §eObtained from §x§2§5§D§6§4§8Kuongataris §ein
+          §ethe §aGoblets of Giants §eand
+          §ein the §aSea of Corpses§e.
+          §x§1§6§7§D§2§A§oA very thin, yet surprisingly
+          §x§1§6§7§D§2§A§otensile strand of silk.
+      dropChance: 0.7
+    - item:
+        type: KELP
+        display-name: §x§1§F§B§5§3§DKuongatari Abdomen
+        lore: |
+          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
+          §aGoblets of Giants §eand the §aSea of Corpses§e.
+          §x§1§6§7§D§2§A§oPerhaps this could be cooked...
+      cooked:
+        type: DRIED_KELP
+        display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+        lore: |
+          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
+          §aGoblets of Giants §eand the §aSea of Corpses§e.
+          §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
+      dropChance: 0.8
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.leap_at_target>
+      jumpHeight: 0.6

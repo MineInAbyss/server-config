@@ -1,20 +1,21 @@
-baseClass: mobzy:hostile
-creatureType: MONSTER
-staticComponents:
-  - !<mobzy:model>
-    material: NETHERITE_HOE
-    id: 1
-  - !<mobzy:attributes>
-    maxHealth: 1000
-    movementSpeed: 0.6
-    attackDamage: 80
-    followRange: 40
-    width: 2
-    height: 4
-  - !<mobzy:death_loot>
-    minExp: 1000
-    maxExp: 1000
-targets:
-  1: !<mobzy:target.attacker>
-    range: 50
-  2: !<minecraft:target.nearby_player> {}
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  material: NETHERITE_HOE
+  id: 1
+- !<mobzy:attributes>
+  maxHealth: 1000
+  movementSpeed: 0.6
+  attackDamage: 80
+  followRange: 40
+  width: 2
+  height: 4
+- !<mobzy:death_loot>
+  minExp: 1000
+  maxExp: 1000
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 50
+    2: !<minecraft:target.nearby_player> {}

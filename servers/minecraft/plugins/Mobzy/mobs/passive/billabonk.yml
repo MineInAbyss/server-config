@@ -1,54 +1,55 @@
-baseClass: mobzy:passive
-creatureType: WATER_CREATURE
-staticComponents:
-  - !<mobzy:model>
-    id: 65
-  - !<mobzy:attributes>
-    maxHealth: 12
-    movementSpeed: 0.1
-    width: 0.6
-    height: 0.6
-  - !<mobzy:death_loot>
-    minExp: 10
-    maxExp: 15
-    drops:
-      - item:
-          type: COD
-          display-name: §x§0§3§5§7§A§BRaw Billabonk Leg
-          lore: |
-            §eDropped by §x§0§3§5§7§A§BBillabonks §ein
-            §ethe §aForest of Temptation§e.
-            §x§0§3§5§7§A§B§oDo the stanky leg
-          custom-model-data: 1
-        cooked:
-          type: COOKED_COD
-          display-name: §x§0§3§5§7§A§BCooked Billabonk Leg
-          lore: |
-            §eDropped by §x§0§3§5§7§A§BBillabonks §ein
-            §ethe §aForest of Temptation§e.
-            §eCan also be obtained by cooking
-            §ea §x§0§3§5§7§A§BRaw Billabonk Leg§e.
-            §x§0§3§5§7§A§B§oDo the stanky leg
-          custom-model-data: 1
-        maxAmount: 2
-      - item:
-          type: PUFFERFISH
-          display-name: §x§0§3§5§7§A§BBillabonk Sac
-          custom-model-data: 1
-          lore: |
-            §eDropped by §x§0§3§5§7§A§BBillabonks §ein
-            §ethe §aForest of Temptation§e.
-            §eSeems to be poisonous, I best not eat it...
-        dropChance: 0.15
-  - !<mobzy:sounds>
-    ambient: entity.billabonk.ambient
-    death: entity.billabonk.death
-    hurt: entity.billabonk.hurt
-goals:
-  1: !<minecraft:behavior.float> {}
-  2: !<minecraft:behavior.avoid_player>
-    radius: 3
-    sprintSpeed: 2.5
-  3: !<minecraft:behavior.land_stroll>
-    frequency: 1
-    speedModifier: 0.6
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: WATER_CREATURE
+- !<mobzy:model>
+  id: 65
+- !<mobzy:attributes>
+  maxHealth: 12
+  movementSpeed: 0.1
+  width: 0.6
+  height: 0.6
+- !<mobzy:death_loot>
+  minExp: 10
+  maxExp: 15
+  drops:
+    - item:
+        type: COD
+        display-name: §x§0§3§5§7§A§BRaw Billabonk Leg
+        lore: |
+          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §ethe §aForest of Temptation§e.
+          §x§0§3§5§7§A§B§oDo the stanky leg
+        custom-model-data: 1
+      cooked:
+        type: COOKED_COD
+        display-name: §x§0§3§5§7§A§BCooked Billabonk Leg
+        lore: |
+          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §ethe §aForest of Temptation§e.
+          §eCan also be obtained by cooking
+          §ea §x§0§3§5§7§A§BRaw Billabonk Leg§e.
+          §x§0§3§5§7§A§B§oDo the stanky leg
+        custom-model-data: 1
+      maxAmount: 2
+    - item:
+        type: PUFFERFISH
+        display-name: §x§0§3§5§7§A§BBillabonk Sac
+        custom-model-data: 1
+        lore: |
+          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §ethe §aForest of Temptation§e.
+          §eSeems to be poisonous, I best not eat it...
+      dropChance: 0.15
+- !<mobzy:sounds>
+  ambient: entity.billabonk.ambient
+  death: entity.billabonk.death
+  hurt: entity.billabonk.hurt
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> {}
+    2: !<minecraft:behavior.avoid_player>
+      radius: 3
+      sprintSpeed: 2.5
+    3: !<minecraft:behavior.land_stroll>
+      frequency: 1
+      speedModifier: 0.6

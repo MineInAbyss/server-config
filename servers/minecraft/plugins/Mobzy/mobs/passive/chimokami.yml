@@ -1,52 +1,53 @@
-baseClass: mobzy:passive
-creatureType: CREATURE
-staticComponents:
-  - !<mobzy:model>
-    id: 68
-  - !<mobzy:attributes>
-    maxHealth: 30
-    movementSpeed: 0.0
-    knockbackResistance: 0.08
-    attackDamage: 4
-    followRange: 5
-    width: 2
-    height: 1
-  - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
-    drops:
-      - item:
-          type: LEATHER
-          display-name: §x§D§6§3§6§2§4Chimokami Tuff
-          lore: |
-            §eA tuft of fur from the rarely seen
-            §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts make
-            §etheir dens in the darker areas of
-            §ethe §aForest of Temptation§e.
-        minAmount: 1
-        maxAmount: 3
-      - item:
-          type: FLINT
-          display-name: §x§D§6§3§6§2§4Chimokami Fang
-          lore: |
-            §eA fang dropped from the rare
-            §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.
-            §x§A§8§2§A§1§CIt is said that these beasts house a
-            §x§A§8§2§A§1§Cspiritual fire within. This has been
-            §x§A§8§2§A§1§Cproven to be a hoax, however, their
-            §x§A§8§2§A§1§Cteeth are excellent firestarters.
-        maxAmount: 2
-        dropChance: 0.7
-targets:
-  1: !<mobzy:target.attacker>
-    range: 30
-  2: !<minecraft:target.nearby_player> {}
-goals:
-  1: !<minecraft:behavior.melee_attack>
-    attackSpeed: 1
-    range: 3
-    seeThroughWalls: true
-  2: !<minecraft:behavior.tempt>
-    items: [CHICKEN, COOKED_CHICKEN]
-  3: !<minecraft:behavior.avoid_player>
-    radius: 15
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 68
+- !<mobzy:attributes>
+  maxHealth: 30
+  movementSpeed: 0.0
+  knockbackResistance: 0.08
+  attackDamage: 4
+  followRange: 5
+  width: 2
+  height: 1
+- !<mobzy:death_loot>
+  minExp: 20
+  maxExp: 25
+  drops:
+    - item:
+        type: LEATHER
+        display-name: §x§D§6§3§6§2§4Chimokami Tuff
+        lore: |
+          §eA tuft of fur from the rarely seen
+          §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts make
+          §etheir dens in the darker areas of
+          §ethe §aForest of Temptation§e.
+      minAmount: 1
+      maxAmount: 3
+    - item:
+        type: FLINT
+        display-name: §x§D§6§3§6§2§4Chimokami Fang
+        lore: |
+          §eA fang dropped from the rare
+          §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.
+          §x§A§8§2§A§1§CIt is said that these beasts house a
+          §x§A§8§2§A§1§Cspiritual fire within. This has been
+          §x§A§8§2§A§1§Cproven to be a hoax, however, their
+          §x§A§8§2§A§1§Cteeth are excellent firestarters.
+      maxAmount: 2
+      dropChance: 0.7
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 30
+    2: !<minecraft:target.nearby_player> {}
+  goals:
+    1: !<minecraft:behavior.melee_attack>
+      attackSpeed: 1
+      range: 3
+      seeThroughWalls: true
+    2: !<minecraft:behavior.tempt>
+      items: [CHICKEN, COOKED_CHICKEN]
+    3: !<minecraft:behavior.avoid_player>
+      radius: 15

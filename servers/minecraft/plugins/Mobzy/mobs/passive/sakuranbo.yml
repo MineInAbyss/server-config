@@ -1,25 +1,26 @@
-baseClass: mobzy:passive
-creatureType: CREATURE
-staticComponents:
-  - !<mobzy:model>
-    id: 74
-  - !<mobzy:attributes>
-    maxHealth: 10
-    movementSpeed: 0.3
-    width: 0.6
-    height: 0.6
-  - !<mobzy:death_loot>
-    minExp: 10
-    maxExp: 20
-    drops:
-      - item:
-          type: GUNPOWDER
-          display-name: §6Sakuranbo Dust
-          lore: |
-            §eExplosive powder obtained from
-            §6Sakuranbo §ein the §aGreat Fault§e.
-            §6§oSniffing it is probably a bad idea...        
-goals:
-  1: !<minecraft:behavior.avoid_player>
-    radius: 10
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 74
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.3
+  width: 0.6
+  height: 0.6
+- !<mobzy:death_loot>
+  minExp: 10
+  maxExp: 20
+  drops:
+    - item:
+        type: GUNPOWDER
+        display-name: §6Sakuranbo Dust
+        lore: |
+          §eExplosive powder obtained from
+          §6Sakuranbo §ein the §aGreat Fault§e.
+          §6§oSniffing it is probably a bad idea...
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.avoid_player>
+      radius: 10
     

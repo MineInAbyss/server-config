@@ -1,8 +1,8 @@
-baseClass: mobzy:npc
-creatureType: MISC
-staticComponents:
-  - !<mobzy:model>
-    id: 5
-    hitIdOffset: 0
-    material: DIAMOND_AXE
-  - !<mobzy:prevent_riding> {}
+- !<mobzy:type>
+  baseClass: mobzy:npc
+  creatureType: MISC
+- !<mobzy:model>
+  id: 5
+  hitIdOffset: 0
+  material: DIAMOND_AXE
+- !<mobzy:prevent_riding> {}
