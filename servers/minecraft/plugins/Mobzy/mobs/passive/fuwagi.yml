@@ -1,69 +1,75 @@
-baseClass: mobzy:passive
-creatureType: CREATURE
-staticComponents:
-  - !<mobzy:model>
-    id: 5
-  - !<mobzy:attributes>
-    maxHealth: 10
-    movementSpeed: 0.25
-    width: 0.6
-    height: 0.6
-  - !<mobzy:death_loot>
-    minExp: 10
-    maxExp: 16
-    drops:
-      - item:
-          type: RABBIT
-          display-name: §x§E§0§E§0§E§0Raw Fuwagi Meat
-          lore: |
-            §eDropped from the fast and the curious
-            §fFuwagi §edeep in the §aEdge of the
-            §aAbyss §eand the §aForest of Temptation§e.
-            §x§F§F§3§A§2§4§oGamey with a hint of carrot and
-            §x§F§F§3§A§2§4§oapple. Mostly carrot though.
-            §x§F§F§3§A§2§4§oA Lot of carrots.
-          custom-model-data: 1
-        cooked:
-          type: COOKED_RABBIT
-          display-name: §x§E§0§E§0§E§0Cooked Fuwagi Meat
-          lore: |
-            §eDropped from the fast and the curious
-            §fFuwagi §edeep in the §aEdge of the
-            §aAbyss §eand the §aForest of Temptation§e.
-            §x§F§F§3§A§2§4§oGamey with a hint of carrot and
-            §x§F§F§3§A§2§4§oapple. Mostly carrot though.
-            §x§F§F§3§A§2§4§oA lot of carrots.
-          custom-model-data: 1
-        dropChance: 0.8
-      - item:
-          type: RABBIT_FOOT
-          display-name: §x§E§0§E§0§E§0Fuwagi Foot
-          custom-model-data: 1
-          lore: |
-            §eDropped from the fast and the curious
-            §fFuwagi §edeep in the §aEdge of the
-            §aAbyss §eand the §aForest of Temptation§e.
-            §x§F§F§3§A§2§4§oRumor has it if you have a fuwagi
-            §x§F§F§3§A§2§4§ofoot in your inventory, you will
-            §x§F§F§3§A§2§4§ohave good luck.
-        dropChance: 0.2
-      - item:
-          type: RABBIT_HIDE
-          display-name: §x§E§0§E§0§E§0Fuwagi Hide
-          custom-model-data: 1
-          lore: |
-            §eDropped from the fast and the curious
-            §fFuwagi §edeep in the §aEdge of the
-            §aAbyss §eand the §aForest of Temptation§e.
-            §x§F§F§3§A§2§4§oSoft and cozy. You can make some
-            §x§F§F§3§A§2§4§oquality sweaters out of this.
-        dropChance: 0.5
-  - !<mobzy:sounds>
-    ambient: entity.fuwagi.ambient
-    death: entity.fuwagi.death
-    hurt: entity.fuwagi.hurt
-goals:
-  1: !<minecraft:behavior.tempt>
-    items: [CARROT, APPLE, BEETROOT]
-  2: !<minecraft:behavior.avoid_player>
-    radius: 10
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 5
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.25
+  width: 0.6
+  height: 0.6
+- !<mobzy:death_loot>
+  minExp: 10
+  maxExp: 16
+  drops:
+    - item:
+        type: RABBIT
+        display-name: §x§E§0§E§0§E§0Raw Fuwagi Meat
+        lore: |
+          §eDropped from the fast and the curious
+          §fFuwagi §edeep in the §aEdge of the
+          §aAbyss §eand the §aForest of Temptation§e.
+          §x§F§F§3§A§2§4§oGamey with a hint of carrot and
+          §x§F§F§3§A§2§4§oapple. Mostly carrot though.
+          §x§F§F§3§A§2§4§oA Lot of carrots.
+        custom-model-data: 1
+      cooked:
+        type: COOKED_RABBIT
+        display-name: §x§E§0§E§0§E§0Cooked Fuwagi Meat
+        lore: |
+          §eDropped from the fast and the curious
+          §fFuwagi §edeep in the §aEdge of the
+          §aAbyss §eand the §aForest of Temptation§e.
+          §x§F§F§3§A§2§4§oGamey with a hint of carrot and
+          §x§F§F§3§A§2§4§oapple. Mostly carrot though.
+          §x§F§F§3§A§2§4§oA lot of carrots.
+        custom-model-data: 1
+      dropChance: 0.8
+    - item:
+        type: RABBIT_FOOT
+        display-name: §x§E§0§E§0§E§0Fuwagi Foot
+        custom-model-data: 1
+        lore: |
+          §eDropped from the fast and the curious
+          §fFuwagi §edeep in the §aEdge of the
+          §aAbyss §eand the §aForest of Temptation§e.
+          §x§F§F§3§A§2§4§oRumor has it if you have a fuwagi
+          §x§F§F§3§A§2§4§ofoot in your inventory, you will
+          §x§F§F§3§A§2§4§ohave good luck.
+      dropChance: 0.2
+    - item:
+        type: RABBIT_HIDE
+        display-name: §x§E§0§E§0§E§0Fuwagi Hide
+        custom-model-data: 1
+        lore: |
+          §eDropped from the fast and the curious
+          §fFuwagi §edeep in the §aEdge of the
+          §aAbyss §eand the §aForest of Temptation§e.
+          §x§F§F§3§A§2§4§oSoft and cozy. You can make some
+          §x§F§F§3§A§2§4§oquality sweaters out of this.
+      dropChance: 0.5
+- !<mobzy:sounds>
+  ambient: entity.fuwagi.ambient
+  death: entity.fuwagi.death
+  hurt: entity.fuwagi.hurt
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.tempt>
+      items: [CARROT, APPLE, BEETROOT]
+    2: !<minecraft:behavior.avoid_player>
+      radius: 10
+- !<mobzy:rideable> {}
+- !<geary:copy_to_instances>
+  persisting:
+    - !<geary:debug>
+      message: "Test persisting"

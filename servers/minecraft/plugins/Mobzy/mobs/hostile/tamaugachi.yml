@@ -1,75 +1,76 @@
-baseClass: mobzy:hostile
-creatureType: MONSTER
-staticComponents:
-  - !<mobzy:model>
-    id: 17
-  - !<mobzy:attributes>
-    maxHealth: 100
-    movementSpeed: 0.5
-    attackDamage: 25
-    attackKnockback: 5
-    knockbackResistance: 0.8
-    followRange: 40
-    width: 1.9
-    height: 2.5
-  - !<geary:events>
-    onTargetHit:
-      - !<on.target>
-        - !<geary:apply_potion_effects>
-          effects:
-            - type: POISON
-              duration: 5s
-              amplifier: 5
-              ambient: true
-          applyChance: 0.6
-  - !<mobzy:death_loot>
-    minExp: 230
-    maxExp: 260
-    drops:
-      - item:
-          type: QUARTZ
-          display-name: §x§A§6§3§5§3§5Orb Piercer Spike
-          lore: |
-            §eObtained from slaying an §x§C§7§4§0§4§0Orb Piercer
-            §eand collecting the spikes it sheds.
-            §eFiercely territorial, they claim the nearby
-            §ewaters and §aFlat-Creepers §ein the
-            §aGoblets of Giants§e as their own.
-            §eAvoid them at all cost!
-            §x§D§9§D§9§D§9§oTheir spines contain a very
-            §x§D§9§D§9§D§9§opotent venom, so take caution!
-          custom-model-data: 1
-        minAmount: 4
-        maxAmount: 7
-      - item:
-          type: NETHER_WART
-          display-name: §x§C§7§4§0§4§0Orb Piercer Face Fragments
-          lore: |
-            §eApparently the red orb on the
-            §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them 
-            §eto see the §aCurse of the Abyss§e.
-            §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
-            §x§D§9§D§9§D§9§obe able to see it as well?
-            §x§D§9§D§9§D§9§oProbably just wishful thinking...
-        minAmount: 1
-        maxAmount: 3
-  - !<mobzy:sounds>
-    ambient: entity.orbpiercer.ambient
-    death: entity.orbpiercer.death
-    hurt: entity.orbpiercer.hurt
-  - !<mobzy:increased_water_speed>
-    level: 3
-goals:
-  1: !<minecraft:behavior.float> {}
-  2: !<mobzy:behavior.throw_items>
-    minThrowRad: 10.0
-    projectileSpeed: 1.5f
-    projectileAngularDiameter: 8.0
-    projectileCountPerThrow: 10
-    cooldown: 4000
-    spawn:
-      type: SNOWBALL
-      components:
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 17
+- !<mobzy:attributes>
+  maxHealth: 100
+  movementSpeed: 0.5
+  attackDamage: 25
+  attackKnockback: 5
+  knockbackResistance: 0.8
+  followRange: 40
+  width: 1.9
+  height: 2.5
+- !<geary:events>
+  onTargetHit:
+    - !<on.target>
+      - !<geary:apply_potion_effects>
+        effects:
+          - type: POISON
+            duration: 5s
+            amplifier: 5
+            ambient: true
+        applyChance: 0.6
+- !<mobzy:death_loot>
+  minExp: 230
+  maxExp: 260
+  drops:
+    - item:
+        type: QUARTZ
+        display-name: §x§A§6§3§5§3§5Orb Piercer Spike
+        lore: |
+          §eObtained from slaying an §x§C§7§4§0§4§0Orb Piercer
+          §eand collecting the spikes it sheds.
+          §eFiercely territorial, they claim the nearby
+          §ewaters and §aFlat-Creepers §ein the
+          §aGoblets of Giants§e as their own.
+          §eAvoid them at all cost!
+          §x§D§9§D§9§D§9§oTheir spines contain a very
+          §x§D§9§D§9§D§9§opotent venom, so take caution!
+        custom-model-data: 1
+      minAmount: 4
+      maxAmount: 7
+    - item:
+        type: NETHER_WART
+        display-name: §x§C§7§4§0§4§0Orb Piercer Face Fragments
+        lore: |
+          §eApparently the red orb on the
+          §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them
+          §eto see the §aCurse of the Abyss§e.
+          §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
+          §x§D§9§D§9§D§9§obe able to see it as well?
+          §x§D§9§D§9§D§9§oProbably just wishful thinking...
+      minAmount: 1
+      maxAmount: 3
+- !<mobzy:sounds>
+  ambient: entity.orbpiercer.ambient
+  death: entity.orbpiercer.death
+  hurt: entity.orbpiercer.hurt
+- !<mobzy:increased_water_speed>
+  level: 3
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<mobzy:behavior.throw_items>
+      minThrowRad: 10.0
+#      projectileSpeed: 1.5f
+#      projectileAngularDiameter: 8.0
+#      projectileCountPerThrow: 10
+      cooldown: 4000
+      spawn:
+        - !<minecraft:entity_type>
+          type: SNOWBALL
         - !<mobzy:item_model>
           item:
             type: QUARTZ
@@ -78,7 +79,7 @@ goals:
           projectileHit:
             - !<on.target>
               - !<geary:deal_damage>
-                  damage: 3.0
+                damage: 3.0
               - !<geary:apply_potion_effects>
                 effects:
                   - type: POISON
