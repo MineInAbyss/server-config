@@ -12,16 +12,16 @@
   followRange: 40
   width: 3
   height: 2.4
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: BLINDNESS
-            duration: 5s
-            amplifier: 1
-            ambient: true
-        applyChance: 0.4
+# - !<geary:events>
+#   onTargetHit:
+#     - !<on.target>
+#       - !<geary:apply_potion_effects>
+#         effects:
+#           - type: BLINDNESS
+#             duration: 5s
+#             amplifier: 1
+#             ambient: true
+#         applyChance: 0.4
 - !<mobzy:death_loot>
   minExp: 200
   maxExp: 250
