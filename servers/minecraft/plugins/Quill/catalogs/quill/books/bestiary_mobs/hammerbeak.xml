@@ -1,11 +1,13 @@
-<book id="hammerbeak" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+<book id="hammerbeak" title="§6§lHammerbeak" author="§2Guild HQ" >
   <content header="header" styles="body"><insert id="bestiary_mobs/hammerbeak_content.xml"/></content>
   <components>
-    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§__Creature List:__
-</component>
-    <component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
-    <component id="hover_mob"><div styles="bestiary_image">:amogus:</div></component>
+    <component id="hover_hammerbeak"><div styles="bestiary_image">:hammerbeak:</div></component>
+    <component id="hover_hammerbeak_wing"><div styles="bestiary_image">:hammerbeak_wing::hammerbeak_wing_cooked:</div></component>
+    <component id="hover_hammerbeak_feather"><div styles="bestiary_image">:hammerbeak_feather:</div></component>
+    <component id="hover_hammerbeak_beak"><div styles="bestiary_image">:shroombear_shroom:</div></component>
+    <component id="hover_hammerbeak_layer"><div styles="bestiary_image">:layerone:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:hammerbeak:</div></component>
   </components>
   <styles>
     <style id="body">
