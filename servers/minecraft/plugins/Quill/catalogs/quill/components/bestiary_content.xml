@@ -25,7 +25,8 @@
 <component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read uibuta"><color v="0xC74040">Uibuta</color></click></hover></component>
 <component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read virinsipede"><color v="0xC74040">Virinsipede</color></click></hover></component>
 
-<component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read corpse_weeper"><color v="0x6800b3">Corpse Weeper</color></click></hover></component>
+<br/><component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND"
+                                                                          value="/book read corpse_weeper"><color v="0x6800b3">Corpse Weeper</color></click></hover></component>
 <component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read cyatoria"><color v="0x6800b3">Cyatoria</color></click></hover></component>
 <component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read dosetori"><color v="0x6800b3">Dosetori</color></click></hover></component>
 <component styles="mobname"><hover component="hover_mob_redirect"><click action="RUN_COMMAND" value="/book read hammerbeak"><color v="0x6800b3">Hammerbeak</color></click></hover></component>

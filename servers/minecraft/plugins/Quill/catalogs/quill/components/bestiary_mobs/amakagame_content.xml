@@ -1,1 +1,15 @@
-<hover component="hover_mob"><color v="#5"><div styles="mobname">Amakagame</div></color></hover>
+<component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:</component>
+<color v="#000000"><div>The <hover component="hover_mob"><color v="#910370"><div styles="mobname">Amakagame</div></color></hover> are in essence just huge stomachs. Their bodies are covered in veins, that they use to attach themselves to the cave walls of the <hover component="hover_amakagame_layerthree"><color v="#D428B1"><div styles="mobname">3rd Layer</div></color></hover>. As they are immobile they need to establish a symbiotic relationship with Neritantans.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
+Since <color v="#910370">Amakagame</color> are immobile they do not pose much danger for Delvers. They use the
+stench of
+<color v="#A8208D">Baracocha fruit</color> to lure unsuspecting prey through a hole in the top of their
+bodies, drawing them near, before swallowing them whole.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
+The parts of an <color v="#910370">Amakagame</color> are not the most useful. Its <hover
+component="hover_amakagame_whiskers"><color v="#910370"><div styles="mobname">whiskers</div></color></hover> can be
+sold to vendors, as they are seen as a delicacy to Orths higher class. <hover
+component="hover_baracocha_fruit"><color v="#910370"><div styles="mobname">Baracocha fruit</div></color></hover> can also be found growing around their caves.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component></div></color>
