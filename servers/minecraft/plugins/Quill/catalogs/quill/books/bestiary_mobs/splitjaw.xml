@@ -1,11 +1,15 @@
 <book id="splitjaw" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
   <content header="header" styles="body"><insert id="bestiary_mobs/splitjaw_content.xml"/></content>
   <components>
-    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Splitjaw
-</component>
-    <component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
-    <component id="hover_mob"><div styles="bestiary_image">:amogus:</div></component>
+    <component id="hover_splitjaw_gunk"><div styles="bestiary_image">:splitjaw_gunk:</div></component>
+    <component id="hover_splitjaw_scale"><div styles="bestiary_image">:splitjaw_scale:</div></component>
+    <component id="hover_splitjaw_shell"><div styles="bestiary_image">:splitjaw_shell:</div></component>
+    <component id="hover_splitjaw_ore"><div styles="bestiary_image">:splitjaw_ore:</div></component>
+    <component id="hover_splitjaw_layerone"><div styles="bestiary_image">:layerone:</div></component>
+    <component id="hover_splitjaw_layertwo"><div styles="bestiary_image">:layertwo:</div></component>
+    <component id="hover_splitjaw_layerthree"><div styles="bestiary_image">:layerthree:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:splitjaw:</div></component>
   </components>
   <styles>
     <style id="body">

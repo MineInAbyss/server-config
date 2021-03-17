@@ -1,11 +1,11 @@
 <book id="corpse_weeper" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
   <content header="header" styles="body"><insert id="bestiary_mobs/corpse_weeper_content.xml"/></content>
   <components>
-    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§__Creature List:__
-</component>
-    <component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
-    <component id="hover_mob"><div styles="bestiary_image">:amogus:</div></component>
+    <component id="hover_corpse_weeper_eye"><div styles="bestiary_image">:corpse_weeper_eye:</div></component>
+    <component id="hover_corpse_weeper_feather"><div styles="bestiary_image">:corpse_weeper_feather:</div></component>
+    <component id="hover_corpse_weeper_layertwo"><div styles="bestiary_image">:layertwo:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:corpse_weeper:</div></component>
   </components>
   <styles>
     <style id="body">

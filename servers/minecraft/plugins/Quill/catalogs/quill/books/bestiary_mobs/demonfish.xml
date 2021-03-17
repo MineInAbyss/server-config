@@ -1,11 +1,11 @@
 <book id="demonfish" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
   <content header="header" styles="body"><insert id="bestiary_mobs/demonfish_content.xml"/></content>
   <components>
-    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Demonfish:
-</component>
-    <component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
-    <component id="hover_mob"><div styles="bestiary_image">:amogus:</div></component>
+    <component id="hover_demonfish_meat"><div styles="bestiary_image">:demonfish_raw::demonfish_cooked:</div></component>
+    <component id="hover_demonfish_layerfour"><div styles="bestiary_image">:layerfour:</div></component>
+    <component id="hover_demonfish_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:demonfish:</div></component>
   </components>
   <styles>
     <style id="body">

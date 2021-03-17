@@ -1,12 +1,12 @@
 <book id="neritantan" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
   <content header="header" styles="body"><insert id="bestiary_mobs/neritantan_content.xml"/></content>
   <components>
-    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§__Creature List:__
-</component>
-    <component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
-    <component id="hover_mob_redirect">Click to visit the <div styles="footer">Mob</div>. :michirusmug:</component>
-    <component id="hover_mob"><div styles="bestiary_image">:amogus:</div></component>
+    <component id="hover_baracocha_fruit"><div styles="bestiary_image">:baracocha_fruit:</div></component>
+    <component id="hover_neritantan_meat"><div styles="bestiary_image">:neritantan_meat::neritantan_meat_cooked:</div></component>
+    <component id="hover_neritantan_seed"><div styles="bestiary_image">:neritantan_seed1::neritantan_seed2::neritantan_seed3::neritantan_berry:</div></component>
+    <component id="hover_neritantan_layerthree"><div styles="bestiary_image">:layerthree:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:neritantan:</div></component>
   </components>
   <styles>
     <style id="body">
