@@ -1,1 +1,11 @@
-<hover component="hover_mob"><color v="#785F34"><div styles="mobname">Abyssal Snail</div></color></hover>
+<component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:</component>
+<color v="#000000"><div>The <hover component="hover_mob"><color v="#785F34"><div styles="mobname">Abyssal Snails</div></color></hover> are ancient creatures originating from times long past. They have only recently resurfaces in the grassy plains of the <hover component="hover_abyssal_snail_layerfive"><color v="#404040"><div styles="mobname">5th Layer</div></color></hover>. They keep to the bright and grassy areas, due to them not being able to escape predators.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
+Since <color v="#785F34">Abyssal Snails</color> are herbivores, they love to stay in the flower fields found throughout the <color v="#404040">5th Layer</color>. They can also be ridden, though since they are snails, they are naturally not the most useful and quick transport for Delvers.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
+The <color v="#785F34">Abyssal Snails</color> do not have much use for Delvers. Its <hover
+component="hover_abyssal_snail_gunk"><color v="#785F34"><div styles="mobname">gunk</div></color></hover> can be sold to vendors, as they are thought to be useful in anti-aging potions. Their <hover
+component="hover_abyssal_snail_shell"><color v="#785F34"><div styles="mobname">shells</div></color></hover> are mainly sold as decor, as there has not been a known use case for them just yet.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component></div></color>
