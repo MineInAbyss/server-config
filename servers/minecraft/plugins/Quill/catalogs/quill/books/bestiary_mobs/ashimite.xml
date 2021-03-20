@@ -4,7 +4,8 @@
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
     <component id="hover_ashimite_hoof"><div styles="bestiary_image">:ashimite_hoof:</div></component>
     <component id="hover_ashimite_antler"><div styles="bestiary_image">:ashimite_antler:</div></component>
-    <component id="hover_abyssal_snail_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
+    <component id="hover_ashimite_meat"><div styles="bestiary_image">:ashimite_meat::ashimite_meat_cooked:</div></component>
+    <component id="hover_ashimite_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
     <component id="hover_mob"><div styles="bestiary_image">:ashimite:</div></component>
   </components>
   <styles>
