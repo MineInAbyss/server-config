@@ -4,7 +4,9 @@
     <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
     <component id="hover_corpse_weeper_eye"><div styles="bestiary_image">:corpse_weeper_eye:</div></component>
     <component id="hover_corpse_weeper_feather"><div styles="bestiary_image">:corpse_weeper_feather:</div></component>
+    <component id="hover_corpse_weeper_meat"><div styles="bestiary_image">:hover_corpse_weeper_meat:</div></component>
     <component id="hover_corpse_weeper_layertwo"><div styles="bestiary_image">:layertwo:</div></component>
+    <component id="hover_corpse_weeper_nest"><div styles="bestiary_image">:corpse_weeper_nest:</div></component>
     <component id="hover_mob"><div styles="bestiary_image">:corpse_weeper:</div></component>
   </components>
   <styles>

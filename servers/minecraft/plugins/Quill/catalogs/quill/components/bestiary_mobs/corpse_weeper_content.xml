@@ -1,9 +1,10 @@
 <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:</component>
-<color v="#000000"><div><hover component="hover_mob"><color v="#D12B26"><div styles="mobname">Corpse-Weeper</div></color></hover>
+<color v="#000000"><div><hover component="hover_mob"><color v="#D12B26"><div styles="mobname">Corpse-Weepers</div></color></hover> are large birds that live in the ruthless <hover component="hover_corpse_weeper_layertwo"><color v="#175ABF"><div styles="mobname">2nd Layer</div></color></hover> of the <color v="#2D610B">Abyss</color>. They are usually found in the near vicinity of their <hover component="hover_corpse_weeper_nest"><color v="#D12B26"><div styles="mobname">nests</div></color></hover>. They live with their chicks, which they feed until they can fly on their own.
+
 <_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
 <br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
-
+<color v="#D12B26">Corpse-Weepers</color> are carnivorous and are notorious for their sound mimicing capabilities to lure prey near. Despite this they are very affectionate creatures, with them being tamable if raised by people from the time they are chicks.
 <_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
 <br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
-
+If one slays a <color v="#D12B26">Corpse-Weeper</color>, be sure to collect its various parts. Their <hover component="hover_corpse_weeper_feather"><color v="#D12B26"><div styles="mobname">feathers</div></color></hover> and <hover component="hover_corpse_weeper_eye"><color v="#D12B26"><div styles="mobname">eyes</div></color></hover> can be used in certain recipies, or sold to vendors in <color v="#FFA812">Orths</color> for a very high price. Their <hover component="hover_corpse_weeper_meat"><color v="#D12B26"><div styles="mobname">meat</div></color></hover> reeks but tastes really good when cooked.
 <_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component></div></color>
