@@ -6,11 +6,11 @@ They are usually only found during the day, as this is when they hunt for prey b
 
 <_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
 <br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
-The main food source of <color v="#BD0010">Benigumas</color> are the <color v="#FFFFFF">Fuwagis</color> and <color v="#DB4040">Sweet Berries</color>. They are not hostile towards Delvers and will try to flee when one approaches. One can however tempt them with said berries and get them closer.
+The main food source of <color v="#BD0010">Benigumas</color> are the <color v="#E0E0E0">Fuwagis</color> and <color v="#DB4040">Sweet Berries</color>. They are not hostile towards Delvers and will try to flee when one approaches. One can however tempt them with said berries and get them closer.
 
 <_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
 <br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
-They do not seem to have much of value. The only usable part of their body is the parts of <hover component="hover_fuwagi_parts"><div styles="mobname"><color v="#FFFFFF">Fuwagis</color></div></hover> and <hover component="hover_beniguma_berry"><div styles="mobname"><color v="#DB4040">Sweet Berries</color></div></hover> that can be found in their stomachs.
+They do not seem to have much of value. The only usable part of their body is the parts of <hover component="hover_fuwagi_parts"><div styles="mobname"><color v="#E0E0E0">Fuwagis</color></div></hover> and <hover component="hover_beniguma_berry"><div styles="mobname"><color v="#DB4040">Sweet Berries</color></div></hover> that can be found in their stomachs.
 
 
 
