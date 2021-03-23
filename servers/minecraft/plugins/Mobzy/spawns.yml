@@ -107,7 +107,7 @@ regions:
         radius: 20
         max-local-group: 4
         local-group-radius: 200
-        min-light: 3
+        min-light: 7
         block-whitelist:
           - GRASS_BLOCK
           - CRACKED_STONE_BRICKS
