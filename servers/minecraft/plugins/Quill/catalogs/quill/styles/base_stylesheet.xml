@@ -48,5 +48,13 @@
         <format type="font">bestiary</format>
       </formatting>
     </style>
+    <style id="patreongif">
+      <formatting>
+        <format type="bold">false</format>
+        <format type="italic">false</format>
+        <format type="obfuscated">true</format>
+        <format type="color">#FFFFFF</format>
+      </formatting>
+    </style>
   </styles>
 </stylesheet>

@@ -1,0 +1,17 @@
+<book id="patreongif" title="§c§lPatreon GIF Catalogue" author="§6Boy">
+<content header="header" styles="body"><insert id="patreongif_content.xml"/></content>
+<components>
+    <component id="header" styles="h2">§#1fab44-#fcc82b-#423924§GIF List:
+    </component>
+</components>
+    <styles>
+        <style id="body">
+            <formatting>
+                <format type="color">0xFFFFFF</format>
+            </formatting>
+        </style>
+    </styles>
+    <includes>
+        <include type="stylesheet">patreongif_stylesheet</include>
+    </includes>
+</book>
