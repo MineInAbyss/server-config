@@ -41,5 +41,10 @@
                 <format type="font">ratshake</format>
             </formatting>
         </style>
+        <style id="gif_yepcat" extends="patreongif">
+            <formatting>
+                <format type="font">yepcat</format>
+            </formatting>
+        </style>
     </styles>
 </stylesheet>
