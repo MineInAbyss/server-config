@@ -21,6 +21,7 @@
           §6§oSniffing it is probably a bad idea...
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.avoid_player>
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.avoid_player>
       radius: 10
-    
+    3: !<minecraft:behavior.random_stroll_land> { }

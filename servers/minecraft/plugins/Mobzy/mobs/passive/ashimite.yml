@@ -54,8 +54,11 @@
           §x§8§2§4§E§2§1§oThey use these to assert dominance.
           §x§8§2§4§E§2§1§oYet they run off when you get close...
       dropChance: 0.2
-- !<mobzy:rideable> {}
+- !<mobzy:rideable> { }
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.avoid_player>
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.panic> { }
+    3: !<minecraft:behavior.avoid_player>
       radius: 10
+    4: !<minecraft:behavior.random_stroll_land> { }

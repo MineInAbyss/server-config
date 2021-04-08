@@ -36,9 +36,11 @@
 #- !<mobzy:rideable> {}
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.panic_on_hit>
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.panic>
       speedModifier: 2
-    2: !<minecraft:behavior.avoid_player>
+    3: !<minecraft:behavior.avoid_player>
       radius: 10
       speed: 1.5
       sprintSpeed: 2
+    4: !<minecraft:behavior.random_stroll_land> { }

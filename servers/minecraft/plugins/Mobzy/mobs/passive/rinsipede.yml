@@ -24,7 +24,9 @@
           §x§8§F§4§2§5§B§ofor a great fertiliser.
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.avoid_player>
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.avoid_player>
       radius: 15
-    2: !<minecraft:behavior.panic_on_hit>
+    3: !<minecraft:behavior.panic>
       speedModifier: 4
+    4: !<minecraft:behavior.random_stroll_land> { }

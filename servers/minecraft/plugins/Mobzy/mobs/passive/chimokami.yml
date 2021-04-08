@@ -41,13 +41,14 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 30
-    2: !<minecraft:target.nearby_player> {}
+    2: !<minecraft:target.nearby_player> { }
   goals:
     1: !<minecraft:behavior.melee_attack>
       attackSpeed: 1
       range: 3
       seeThroughWalls: true
     2: !<minecraft:behavior.tempt>
-      items: [CHICKEN, COOKED_CHICKEN]
+      items: [ CHICKEN, COOKED_CHICKEN ]
     3: !<minecraft:behavior.avoid_player>
       radius: 15
+    4: !<minecraft:behavior.random_stroll_land> { }

@@ -46,10 +46,10 @@
   hurt: entity.billabonk.hurt
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.float> {}
+    1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.avoid_player>
       radius: 3
       sprintSpeed: 2.5
-    3: !<minecraft:behavior.land_stroll>
+    3: !<minecraft:behavior.random_stroll_land>
       frequency: 1
       speedModifier: 0.6

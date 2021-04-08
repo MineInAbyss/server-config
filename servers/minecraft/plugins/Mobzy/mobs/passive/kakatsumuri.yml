@@ -24,10 +24,12 @@
           §x§B§8§F§F§B§A§ostill keeps it bright glow.
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.tempt>
-      items: [PRISMARINE_SHARD]
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.tempt>
+      items: [ PRISMARINE_SHARD ]
       losesInterest: false
-    2: !<minecraft:behavior.avoid_player>
+    3: !<minecraft:behavior.avoid_player>
       radius: 15
-    3: !<minecraft:behavior.panic_on_hit>
+    4: !<minecraft:behavior.panic>
       speedModifier: 4
+    5: !<minecraft:behavior.random_stroll_land> { }

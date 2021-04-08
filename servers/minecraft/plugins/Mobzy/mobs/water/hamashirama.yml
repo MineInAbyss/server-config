@@ -36,5 +36,5 @@
     1: !<minecraft:behavior.avoid_player>
       radius: 10
       speed: 10
-    2: !<minecraft:behavior.panic_on_hit>
+    2: !<minecraft:behavior.panic>
       speedModifier: 2

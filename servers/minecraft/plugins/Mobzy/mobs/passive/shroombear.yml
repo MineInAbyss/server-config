@@ -66,13 +66,15 @@
   hurt: entity.shroombear.hurt
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.tempt>
-      items: [WARPED_FUNGUS]
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.tempt>
+      items: [ WARPED_FUNGUS ]
       losesInterest: false
-    2: !<minecraft:behavior.panic_on_hit>
+    3: !<minecraft:behavior.panic>
       speedModifier: 2
-    3: !<minecraft:behavior.avoid_player>
+    4: !<minecraft:behavior.avoid_player>
       radius: 10
       speed: 1.5
       sprintSpeed: 2.5
       #Doesnt work, cuz not hostile and targeting an entity?
+    5: !<minecraft:behavior.random_stroll_land> { }
