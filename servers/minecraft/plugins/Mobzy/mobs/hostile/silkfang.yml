@@ -55,7 +55,7 @@
           §x§E§D§4§C§4§C§olike this has a lot of potential
           §x§E§D§4§C§4§C§ofor traps.
       maxAmount: 1
-      dropChance: 0.05
+      dropChance: 0.10
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.leap_at_target>

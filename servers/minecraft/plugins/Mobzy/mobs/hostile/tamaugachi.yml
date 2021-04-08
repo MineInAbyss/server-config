@@ -64,9 +64,9 @@
     1: !<minecraft:behavior.float> { }
     2: !<mobzy:behavior.throw_items>
       minThrowRad: 10.0
-#      projectileSpeed: 1.5f
-#      projectileAngularDiameter: 8.0
-#      projectileCountPerThrow: 10
+      projectileSpeed: 1.5
+      projectileAngularDiameter: 8.0
+      projectileCountPerThrow: 10
       cooldown: 4000
       spawn:
         - !<minecraft:entity_type>

@@ -64,12 +64,12 @@
   hurt: entity.fuwagi.hurt
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.tempt>
-      items: [CARROT, APPLE, BEETROOT]
-    2: !<minecraft:behavior.avoid_player>
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.panic_on_hit> { }
+    3: !<minecraft:behavior.tempt>
+      items: [ CARROT, APPLE, BEETROOT ]
+    4: !<minecraft:behavior.avoid_player>
       radius: 10
-- !<mobzy:rideable> {}
-- !<geary:copy_to_instances>
-  persisting:
-    - !<geary:debug>
-      message: "Test persisting"
+    5: !<minecraft:behavior.land_stroll> { }
+    6: !<minecraft:behavior.look_at_player> { }
+- !<mobzy:rideable> { }
