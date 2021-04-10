@@ -10,7 +10,7 @@ icon: DIAMOND_BLOCK
 regions:
   - name: Template
     spawns:
-      - mob: Fuwagi
+      - mob: mobzy:fuwagi
         min-amount: 2
         max-amount: 3
         radius: 10
@@ -21,7 +21,7 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Neritantan
+      - mob: mobzy:neritantan
         min-amount: 3
         max-amount: 5
         radius: 10
@@ -32,21 +32,21 @@ regions:
           - ANDESITE
           - WHITE_CONCRETE
 
-      - mob: Hammerbeak
+      - mob: mobzy:hammerbeak
         min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
 
-      - mob: Benikuchinawa
+      - mob: mobzy:benikuchinawa
         min-y: 20
         priority: 0.05
         max-local-group: 2
         local-group-radius: 300
         spawn-pos: AIR
 
-      - mob: Silkfang
+      - mob: mobzy:silkfang
         max-light: 7
         priority: 0.5
         max-local-group: 4
@@ -54,7 +54,7 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Cyatoria
+      - mob: mobzy:cyatoria
         min-y: 20
         priority: 0.3
         spawn-pos: AIR
@@ -64,7 +64,7 @@ regions:
         min-time: 12542
         max-time: 23460
 
-      - mob: Dosetori
+      - mob: mobzy:dosetori
         min-y: 20
         priority: 0.4
         max-local-group: 2
@@ -73,9 +73,9 @@ regions:
 
   - name: Orth
     spawns:
-      - reuse: Template:Fuwagi
+      - reuse: Template.mobzy:fuwagi
 
-      - mob: Okibo
+      - mob: mobzy:okibo
         priority: 0.1
         max-local-group: 2
         local-group-radius: 100
@@ -86,22 +86,22 @@ regions:
 
   - name: Edge of the Abyss
     spawns:
-      - reuse: Template:Fuwagi
+      - reuse: Template.mobzy:fuwagi
 
-      - reuse: Template:Hammerbeak
+      - reuse: Template.mobzy:hammerbeak
 
-      - reuse: Template:Silkfang
+      - reuse: Template.mobzy:silkfang
 
-      - reuse: Template:Cyatoria
+      - reuse: Template.mobzy:cyatoria
 
-      - reuse: Template:Benikuchinawa
+      - reuse: Template.mobzy:benikuchinawa
         priority: 0.05
         max-local-group: 1
         local-group-radius: 500
         spawn-pos: AIR
 
 
-      - mob: Beniguma
+      - mob: mobzy:beniguma
         min-amount: 2
         max-amount: 4
         radius: 20
@@ -114,24 +114,24 @@ regions:
 
   - name: Forest of Temptation
     spawns:
-      - reuse: Template:Fuwagi
+      - reuse: Template.mobzy:fuwagi
 
-      - reuse: Template:Hammerbeak
+      - reuse: Template.mobzy:hammerbeak
 
-      - reuse: Template:Cyatoria
+      - reuse: Template.mobzy:cyatoria
 
-      - reuse: Template:Silkfang
+      - reuse: Template.mobzy:silkfang
 
-      - reuse: Template:Benikuchinawa
+      - reuse: Template.mobzy:benikuchinawa
 
-      - mob: Corpse Weeper
+      - mob: mobzy:corpse_weeper
         min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
 
-      - mob: Rohana
+      - mob: mobzy:rohana
         max-light: 7
         max-amount: 4
         radius: 40
@@ -140,7 +140,7 @@ regions:
         block-whitelist:
           - WATER
 
-      - mob: Tesuchi
+      - mob: mobzy:tesuchi
         max-amount: 4
         radius: 15.0
         max-local-group: 8
@@ -148,14 +148,14 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Ottobas
+      - mob: mobzy:ottobas
         max-amount: 1
         max-local-group: 2
         local-group-radius: 75
         block-whitelist:
           - WATER
 
-      - mob: Chimokami
+      - mob: mobzy:chimokami
         max-amount: 2
         radius: 10
         max-local-group: 3
@@ -167,22 +167,22 @@ regions:
 
   - name: Inverted Forest
     spawns:
-      - reuse: Template:Benikuchinawa
+      - reuse: Template.mobzy:benikuchinawa
         max-local-group: 2
         local-group-radius: 200
         max-y: 100
         priority: 0.3
 
-      - reuse: Template:Neritantan
+      - reuse: Template.mobzy:neritantan
         radius: 20
         max-local-group: 6
         local-group-radius: 150
         max-y: 45
 
-      - reuse: Template:Dosetori
+      - reuse: Template.mobzy:dosetori
         max-y: 100
 
-      - mob: Inbyo
+      - mob: mobzy:inbyo
         min-amount: 4
         max-amount: 8
         radius: 10
@@ -194,24 +194,24 @@ regions:
 
   - name: Great Fault
     spawns:
-      - reuse: Template:Benikuchinawa
+      - reuse: Template.mobzy:benikuchinawa
         priority: 0.3
         max-local-group: 3
         local-group-radius: 150
         spawn-pos: AIR
 
-      - reuse: Template:Dosetori
+      - reuse: Template.mobzy:dosetori
 
-      - reuse: Template:Neritantan
+      - reuse: Template.mobzy:neritantan
 
-      - mob: Madokajack
+      - mob: mobzy:madokajack
         min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 150
         spawn-pos: AIR
 
-      - mob: Sakuranbo
+      - mob: mobzy:sakuranbo
         max-amount: 3
         radius: 10
         max-local-group: 6
@@ -220,7 +220,7 @@ regions:
           - GRASS_BLOCK
           - PODZOL
 
-      - mob: Squidfly
+      - mob: mobzy:squidfly
         max-amount: 6
         radius: 30
         max-local-group: 8
@@ -229,8 +229,8 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
           - PODZOL
-          
-      - mob: Kakatsumuri
+
+      - mob: mobzy:kakatsumuri
         max-amount: 10
         radius: 30
         max-local-group: 10
@@ -241,8 +241,8 @@ regions:
           - DIORITE
           - GRASS_BLOCK
           - PODZOL
-          
-      - mob: Rinsipede
+
+      - mob: mobzy:rinsipede
         max-amount: 5
         radius: 30
         max-local-group: 10
@@ -251,8 +251,8 @@ regions:
         block-whitelist:
           - WHITE_CONCRETE
           - DIORITE
-          
-      - mob: Virinsipede
+
+      - mob: mobzy:virinsipede
         max-amount: 3
         radius: 30
         max-local-group: 7
@@ -264,15 +264,15 @@ regions:
 
   - name: The Goblet of Giants
     spawns:
-      - mob: Tamaugachi
+      - mob: mobzy:tamaugachi
         max-local-group: 1
-        local-group-radius: 300 
+        local-group-radius: 300
         min-time: 18000
         max-time: 23000
         block-whitelist:
           - WATER
 
-      - mob: Kuongatari
+      - mob: mobzy:kuongatari
         min-amount: 4
         max-amount: 8
         radius: 20
@@ -281,13 +281,13 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - reuse: Forest of Temptation:Rohana
+      - reuse: Forest of Temptation.mobzy:rohana
         min-amount: 3
         max-amount: 5
         local-group-radius: 150
         max-local-group: 5
 
-      - mob: Kazura
+      - mob: mobzy:kazura
         min-amount: 2
         max-amount: 4
         radius: 1
@@ -296,21 +296,21 @@ regions:
         block-whitelist:
           - WATER
 
-      - mob: Makihige
+      - mob: mobzy:makihige
         max-light: 7
         max-local-group: 2
         local-group-radius: 200
         block-whitelist:
           - WATER
 
-      - mob: Onitsuchi
+      - mob: mobzy:onitsuchi
         min-y: 20
         priority: 0.2
         max-local-group: 3
         local-group-radius: 200
         spawn-pos: AIR
 
-      - mob: Shroombear
+      - mob: mobzy:shroombear
         min-light: 5
         max-amount: 2
         radius: 10
@@ -319,7 +319,7 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Uibuta
+      - mob: mobzy:uibuta
         min-light: 4
         max-amount: 2
         radius: 10
@@ -328,7 +328,7 @@ regions:
         block-whitelist:
           - WATER
 
-      - mob: Hashofu
+      - mob: mobzy:hashofu
         min-light: 5
         max-amount: 3
         radius: 10
@@ -340,17 +340,17 @@ regions:
 
   - name: Sea of Corpses
     spawns:
-      - reuse: The Goblet of Giants:Kuongatari
+      - reuse: The Goblet of Giants.mobzy:kuongatari
 
-      - reuse: The Goblet of Giants:Kazura
+      - reuse: The Goblet of Giants.mobzy:kazura
 
-      - reuse: The Goblet of Giants:Makihige
+      - reuse: The Goblet of Giants.mobzy:makihige
 
-      - reuse: The Goblet of Giants:Onitsuchi
+      - reuse: The Goblet of Giants.mobzy:onitsuchi
 
-      - reuse: The Goblet of Giants:Hashofu
+      - reuse: The Goblet of Giants.mobzy:hashofu
 
-      - mob: Ashimite
+      - mob: mobzy:ashimite
         min-amount: 3
         max-amount: 5
         radius: 10
@@ -360,7 +360,7 @@ regions:
           - SNOW_BLOCK
           - SNOW
 
-      - mob: Demonfish
+      - mob: mobzy:demonfish
         min-amount: 2
         max-amount: 6
         radius: 1
@@ -369,7 +369,7 @@ regions:
         block-whitelist:
           - WATER
 
-      - mob: Titanjaw
+      - mob: mobzy:titanjaw
         min-amount: 1
         max-amount: 2
         radius: 20
@@ -379,7 +379,7 @@ regions:
         block-whitelist:
           - GRASS_BLOCK
 
-      - mob: Abyssal Snail
+      - mob: mobzy:abyssal_snail
         max-amount: 1
         radius: 10
         max-local-group: 3
@@ -387,8 +387,8 @@ regions:
         min-light: 5
         block-whitelist:
           - GRASS_BLOCK
-          
-      - mob: Kagi Tachikiri
+
+      - mob: mobzy:kagi_tachikiri
         max-amount: 4
         radius: 10
         max-local-group: 6

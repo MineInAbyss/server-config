@@ -1,20 +1,20 @@
-item:
-  type: DIAMOND_HOE
-  custom-model-data: 3
-staticComponents:
-  - !<geary:events>
-    leftClick:
-      - !<cooldown>
-        name: Explosion
-        length: 2s
-        run:
-          - !<on.parent>
-            - !<looty:meteor>
-              events:
-                projectileLand:
-                  - !<looty:explode>
-                    power: 2
-                    breakBlocks: true
-                    at: !<entity.location> {}
-              at: !<player.target_block>
-                maxDist: 25
+- !<looty:type>
+  item:
+    type: DIAMOND_HOE
+    custom-model-data: 3
+- !<geary:events>
+  leftClick:
+    - !<cooldown>
+      name: Explosion
+      length: 2s
+      run:
+        - !<on.parent>
+          - !<looty:meteor>
+            events:
+              projectileLand:
+                - !<looty:explode>
+                  power: 2
+                  breakBlocks: true
+                  at: !<entity.location> {}
+            at: !<player.target_block>
+              maxDist: 25
