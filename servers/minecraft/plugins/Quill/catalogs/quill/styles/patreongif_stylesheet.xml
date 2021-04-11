@@ -16,6 +16,11 @@
                 <format type="font">amogusdumpy</format>
             </formatting>
         </style>
+        <style id="gif_catjam" extends="patreongif">
+            <formatting>
+                <format type="font">catjam</format>
+            </formatting>
+        </style>
         <style id="gif_doggopunch" extends="patreongif">
             <formatting>
                 <format type="font">doggopunch</format>
@@ -26,11 +31,6 @@
                 <format type="font">oripat</format>
             </formatting>
         </style>
-        <style id="gif_ozensmug" extends="patreongif">
-            <formatting>
-                <format type="font">ozensmug</format>
-            </formatting>
-        </style>
         <style id="gif_pruskhapat" extends="patreongif">
             <formatting>
                 <format type="font">pruskhapat</format>
@@ -39,6 +39,16 @@
         <style id="gif_ratshake" extends="patreongif">
             <formatting>
                 <format type="font">ratshake</format>
+            </formatting>
+        </style>
+        <style id="gif_regangry" extends="patreongif">
+            <formatting>
+                <format type="font">regangry</format>
+            </formatting>
+        </style>
+        <style id="gif_rikopew" extends="patreongif">
+            <formatting>
+                <format type="font">rikopew</format>
             </formatting>
         </style>
         <style id="gif_yepcat" extends="patreongif">
