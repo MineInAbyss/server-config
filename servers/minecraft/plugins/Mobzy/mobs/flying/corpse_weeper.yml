@@ -1,73 +1,74 @@
-baseClass: mobzy:flying
-creatureType: MISC
-staticComponents:
-  - !<mobzy:model>
-    id: 11
-  - !<mobzy:attributes>
-    maxHealth: 20
-    followRange: 30
-    attackDamage: 7
-    attackKnockback: 1
-    knockbackResistance: 0.13
-    flyingSpeed: 10
-    width: 3
-    height: 3
-  - !<mobzy:death_loot>
-    minExp: 70
-    maxExp: 90
-    drops:
-      - item:
-          type: PORKCHOP
-          display-name: §x§D§1§2§B§2§6Raw Corpse-Weeper Meat
-          lore: |
-            §eDropped by §4Corpse-Weepers §ein
-            §ethe §aForest of Temptation§e.
-            §c§oIt both smells and tastes horrible...
-            §c§oWill cooking this help?
-          custom-model-data: 2
-        cooked:
-          type: COOKED_PORKCHOP
-          display-name: §x§D§1§2§B§2§6Cooked Corpse-Weeper Meat
-          lore: |
-            §eThe incinerated flesh of §x§F§F§3§4§2§ECorpse-Weepers
-            §efrom the §aForest of Temptation§e.
-            §c§oThis stench is awful but it tastes so good...
-          custom-model-data: 2
-        minAmount: 1
-        maxAmount: 2
-      - item:
-          type: ENDER_EYE
-          display-name: §x§D§1§2§B§2§6Corpse-Weeper Eye
-          lore: |
-            §eRarely dropped from §x§F§F§3§4§2§ECorpse-Weepers
-            §ein the §aForest of Temptation§e.
-            §c§oIt feels like it's staring into your soul...
-        maxAmount: 2
-        dropChance: 0.3
-      - item:
-          type: FEATHER
-          display-name: §x§D§1§2§B§2§6Corpse-Weeper Feather
-          custom-model-data: 1
-          lore: |
-            §eDropped from §x§F§F§3§4§2§ECorpse-Weepers
-            §ein the §aForest of Temptation§e.
-        minAmount: 2
-        maxAmount: 4
-  - !<mobzy:sounds>
-    ambient: entity.corpseweeper.ambient
-    death: entity.corpseweeper.death
-    hurt: entity.corpseweeper.cry
-targets:
-  1: !<mobzy:target.attacker>
-    range: 100
-  2: !<minecraft:target.nearby_player> {}
-goals:
-  1: !<mobzy:behavior.flying_damage_target> { }
-  2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.6
-    minHeight: 3
-    maxHeight: 6
-    startDiveDistance: 15
-    bashVelMultiplier: 0.5
-  3: !<mobzy:behavior.fly_towards_target> { }
-  4: !<mobzy:behavior.idle_fly> { }
+- !<mobzy:type>
+  baseClass: mobzy:flying
+  creatureType: MISC
+- !<mobzy:model>
+  id: 11
+- !<mobzy:attributes>
+  maxHealth: 20
+  followRange: 30
+  attackDamage: 7
+  attackKnockback: 1
+  knockbackResistance: 0.13
+  flyingSpeed: 10
+  width: 3
+  height: 3
+- !<mobzy:death_loot>
+  minExp: 70
+  maxExp: 90
+  drops:
+    - item:
+        type: PORKCHOP
+        display-name: §x§D§1§2§B§2§6Raw Corpse-Weeper Meat
+        lore: |
+          §eDropped by §4Corpse-Weepers §ein
+          §ethe §aForest of Temptation§e.
+          §c§oIt both smells and tastes horrible...
+          §c§oWill cooking this help?
+        custom-model-data: 2
+      cooked:
+        type: COOKED_PORKCHOP
+        display-name: §x§D§1§2§B§2§6Cooked Corpse-Weeper Meat
+        lore: |
+          §eThe incinerated flesh of §x§F§F§3§4§2§ECorpse-Weepers
+          §efrom the §aForest of Temptation§e.
+          §c§oThis stench is awful but it tastes so good...
+        custom-model-data: 2
+      minAmount: 1
+      maxAmount: 2
+    - item:
+        type: ENDER_EYE
+        display-name: §x§D§1§2§B§2§6Corpse-Weeper Eye
+        lore: |
+          §eRarely dropped from §x§F§F§3§4§2§ECorpse-Weepers
+          §ein the §aForest of Temptation§e.
+          §c§oIt feels like it's staring into your soul...
+      maxAmount: 2
+      dropChance: 0.3
+    - item:
+        type: FEATHER
+        display-name: §x§D§1§2§B§2§6Corpse-Weeper Feather
+        custom-model-data: 1
+        lore: |
+          §eDropped from §x§F§F§3§4§2§ECorpse-Weepers
+          §ein the §aForest of Temptation§e.
+      minAmount: 2
+      maxAmount: 4
+- !<mobzy:sounds>
+  ambient: entity.corpseweeper.ambient
+  death: entity.corpseweeper.death
+  hurt: entity.corpseweeper.cry
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 100
+    2: !<minecraft:target.nearby_player> {}
+  goals:
+    1: !<mobzy:behavior.flying_damage_target> { }
+    2: !<mobzy:behavior.flying_dive_on_target>
+      diveVelocity: -0.6
+      minHeight: 3
+      maxHeight: 6
+      startDiveDistance: 15
+      bashVelMultiplier: 0.5
+    3: !<mobzy:behavior.fly_towards_target> { }
+    4: !<mobzy:behavior.idle_fly> { }

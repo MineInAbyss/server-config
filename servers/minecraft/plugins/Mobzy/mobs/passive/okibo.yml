@@ -1,47 +1,53 @@
-baseClass: mobzy:passive
-creatureType: CREATURE
-staticComponents:
-  - !<mobzy:model>
-    id: 38
-  - !<mobzy:attributes>
-    maxHealth: 50
-    movementSpeed: 0.2
-    knockbackResistance: 0.2
-    width: 2.5
-    height: 3
-  - !<mobzy:death_loot>
-    minExp: 20
-    maxExp: 25
-    drops:
-      - item:
-          type: PORKCHOP
-          display-name: §x§1§0§D§E§A§7Raw Okibo Meat
-          custom-model-data: 3
-          lore: |
-            §eUsually found in §aOrth as a source of
-            §etransportation of goods, §x§1§1§E§8§A§FOkibos
-            §eare also a great source of food 
-            §edue to their large size.
-        cooked:
-          type: COOKED_PORKCHOP
-          display-name: §x§1§0§D§E§A§7Cooked Okibo Meat
-          custom-model-data: 3
-          lore: |
-            §eTastes excellent when prepared well. 
-            §eThere is a ritual in §aOrth§e, for whenever
-            §ea §8Black Whistle §eor §fWhite Whistle  
-            §§ereturn from their plunge into the §aAbyss§e. 
-            §eThe §6GuildHQ Head Chef §ebutchers 
-            §ethe §x§1§1§E§8§A§FOkibo §ethey arrive on
-            §eand prepare a giant feast for all.
-        minAmount: 6
-        maxAmount: 10
-      - item:
-          type: LEATHER
-          display-name: §x§1§0§D§E§A§7Okibo Fur
-          lore: |
-            §x§B§D§B§D§B§D§oLooks like it will keep me warm
-            §x§B§D§B§D§B§D§othrough the entire winter if needed.
-        minAmount: 3
-        maxAmount: 6
-  - !<mobzy:rideable> {}
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 38
+- !<mobzy:attributes>
+  maxHealth: 50
+  movementSpeed: 0.2
+  knockbackResistance: 0.2
+  width: 2.5
+  height: 3
+- !<mobzy:death_loot>
+  minExp: 20
+  maxExp: 25
+  drops:
+    - item:
+        type: PORKCHOP
+        display-name: §x§1§0§D§E§A§7Raw Okibo Meat
+        custom-model-data: 3
+        lore: |
+          §eUsually found in §aOrth as a source of
+          §etransportation of goods, §x§1§1§E§8§A§FOkibos
+          §eare also a great source of food
+          §edue to their large size.
+      cooked:
+        type: COOKED_PORKCHOP
+        display-name: §x§1§0§D§E§A§7Cooked Okibo Meat
+        custom-model-data: 3
+        lore: |
+          §eTastes excellent when prepared well.
+          §eThere is a ritual in §aOrth§e, for whenever
+          §ea §8Black Whistle §eor §fWhite Whistle
+          §§ereturn from their plunge into the §aAbyss§e.
+          §eThe §6GuildHQ Head Chef §ebutchers
+          §ethe §x§1§1§E§8§A§FOkibo §ethey arrive on
+          §eand prepare a giant feast for all.
+      minAmount: 6
+      maxAmount: 10
+    - item:
+        type: LEATHER
+        display-name: §x§1§0§D§E§A§7Okibo Fur
+        lore: |
+          §x§B§D§B§D§B§D§oLooks like it will keep me warm
+          §x§B§D§B§D§B§D§othrough the entire winter if needed.
+      minAmount: 3
+      maxAmount: 6
+- !<mobzy:rideable> { }
+
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.random_stroll_land> { }
+    3: !<minecraft:behavior.look_at_player> { }

@@ -1,69 +1,70 @@
-baseClass: mobzy:flying
-creatureType: MISC
-staticComponents:
-  - !<mobzy:model>
-    id: 50
-  - !<mobzy:attributes>
-    maxHealth: 35
-    followRange: 50
-    attackDamage: 5
-    attackKnockback: 1.5
-    knockbackResistance: 0.1
-    flyingSpeed: 10
-    width: 2
-    height: 0.5
-  - !<mobzy:death_loot>
-    minExp: 35
-    maxExp: 45
-    drops:
-      - item:
-          type: CHICKEN
-          display-name: §x§3§D§D§F§F§FRaw Cyatoria Meat
-          lore: |
-            §eDropped by §x§3§D§D§F§F§FCyatoria §eat 
-            §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
-            §eSaid to be the offspring of a
-            §erare creature originating from
-            §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
-            §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
-          custom-model-data: 1
-        cooked:
-          type: COOKED_CHICKEN
-          display-name: §x§3§D§D§F§F§FCooked Cyatoria Meat
-          lore: |
-            §eDropped by §x§3§D§D§F§F§FCyatoria §eat 
-            §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
-            §eSaid to be the offspring of a
-            §erare creature originating from
-            §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
-            §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
-          custom-model-data: 1
-        minAmount: 1
-        maxAmount: 2
-      - item:
-          type: FEATHER
-          display-name: §x§3§D§D§F§F§FCyatoria Feather
-          custom-model-data: 2
-          lore: |
-            §eDropped by §x§3§D§D§F§F§FCyatoria §eat 
-            §ethe §aEdge of the Abyss
-            §eand in §aForest of Temptation§e.
-            §x§5§4§F§F§A§4§oIt resembles the feathers
-            §x§5§4§F§F§A§4§oof a §x§3§D§D§F§F§FSakawatari§x§5§4§F§F§A§4§o...
-        minAmount: 1
-        maxAmount: 4
-        dropChance: 0.7
-targets:
-  1: !<mobzy:target.attacker>
-    range: 100
-  2: !<minecraft:target.nearby_player> {}
-goals:
-  1: !<mobzy:behavior.flying_damage_target> {}
-  2: !<mobzy:behavior.flying_dive_on_target>
-    diveVelocity: -0.3
-    minHeight: 7
-    maxHeight: 10
-    startDiveDistance: 20
-    bashVelMultiplier: 0.4
-  3: !<mobzy:behavior.fly_towards_target> {}
-  4: !<mobzy:behavior.idle_fly> {}
+- !<mobzy:type>
+  baseClass: mobzy:flying
+  creatureType: MISC
+- !<mobzy:model>
+  id: 50
+- !<mobzy:attributes>
+  maxHealth: 35
+  followRange: 50
+  attackDamage: 5
+  attackKnockback: 1.5
+  knockbackResistance: 0.1
+  flyingSpeed: 10
+  width: 2
+  height: 0.5
+- !<mobzy:death_loot>
+  minExp: 35
+  maxExp: 45
+  drops:
+    - item:
+        type: CHICKEN
+        display-name: §x§3§D§D§F§F§FRaw Cyatoria Meat
+        lore: |
+          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
+          §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
+          §eSaid to be the offspring of a
+          §erare creature originating from
+          §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
+          §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
+        custom-model-data: 1
+      cooked:
+        type: COOKED_CHICKEN
+        display-name: §x§3§D§D§F§F§FCooked Cyatoria Meat
+        lore: |
+          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
+          §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
+          §eSaid to be the offspring of a
+          §erare creature originating from
+          §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
+          §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
+        custom-model-data: 1
+      minAmount: 1
+      maxAmount: 2
+    - item:
+        type: FEATHER
+        display-name: §x§3§D§D§F§F§FCyatoria Feather
+        custom-model-data: 2
+        lore: |
+          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
+          §ethe §aEdge of the Abyss
+          §eand in §aForest of Temptation§e.
+          §x§5§4§F§F§A§4§oIt resembles the feathers
+          §x§5§4§F§F§A§4§oof a §x§3§D§D§F§F§FSakawatari§x§5§4§F§F§A§4§o...
+      minAmount: 1
+      maxAmount: 4
+      dropChance: 0.7
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 100
+    2: !<minecraft:target.nearby_player> {}
+  goals:
+    1: !<mobzy:behavior.flying_damage_target> {}
+    2: !<mobzy:behavior.flying_dive_on_target>
+      diveVelocity: -0.3
+      minHeight: 7
+      maxHeight: 10
+      startDiveDistance: 20
+      bashVelMultiplier: 0.4
+    3: !<mobzy:behavior.fly_towards_target> {}
+    4: !<mobzy:behavior.idle_fly> {}

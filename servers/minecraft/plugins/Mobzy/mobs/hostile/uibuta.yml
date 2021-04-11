@@ -1,45 +1,46 @@
-baseClass: mobzy:hostile
-creatureType: MONSTER
-staticComponents:
-  - !<mobzy:model>
-    id: 89
-  - !<mobzy:attributes>
-    maxHealth: 50
-    movementSpeed: 0.4
-    attackDamage: 9.5
-    attackKnockback: 2
-    knockbackResistance: 0.1
-    followRange: 30
-    width: 1.5
-    height: 1.5
-  - !<mobzy:death_loot>
-    minExp: 65
-    maxExp: 95
-    drops:
-      - item:
-          type: PORKCHOP
-          display-name: §x§8§F§2§2§2§2Raw Uibuta Meat
-          custom-model-data: 3
-          lore: |
-            §eObtained by carving up the
-            §ecorpse of an §x§8§F§2§2§2§2Uibuta §ein the
-            §aGoblets of Giants §eand §aSea of Corpses§e.
-            §x§C§4§2§F§2§F§oA thick layer of fat clings to the meat.
-            §x§C§4§2§F§2§F§oCooking it should help making it edible.
-        cooked:
-          type: COOKED_PORKCHOP
-          display-name: §x§8§F§2§2§2§2Cooked Uibuta Meat
-          custom-model-data: 3
-          lore: |
-            §eDue to proper preparations,
-            §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
-            §x§C§4§2§F§2§F§oThis should be enough food
-            §x§C§4§2§F§2§F§oto last for daaaaayyss!!
-        minAmount: 4
-        maxAmount: 8
-  - !<mobzy:sounds>
-    ambient: entity.ottobas.ambient
-    death: entity.ottobas.death
-    hurt: entity.ottobas.hurt
-goals:
-  1: !<minecraft:behavior.float> {}
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 89
+- !<mobzy:attributes>
+  maxHealth: 50
+  movementSpeed: 0.4
+  attackDamage: 9.5
+  attackKnockback: 2
+  knockbackResistance: 0.1
+  followRange: 30
+  width: 1.5
+  height: 1.5
+- !<mobzy:death_loot>
+  minExp: 65
+  maxExp: 95
+  drops:
+    - item:
+        type: PORKCHOP
+        display-name: §x§8§F§2§2§2§2Raw Uibuta Meat
+        custom-model-data: 3
+        lore: |
+          §eObtained by carving up the
+          §ecorpse of an §x§8§F§2§2§2§2Uibuta §ein the
+          §aGoblets of Giants §eand §aSea of Corpses§e.
+          §x§C§4§2§F§2§F§oA thick layer of fat clings to the meat.
+          §x§C§4§2§F§2§F§oCooking it should help making it edible.
+      cooked:
+        type: COOKED_PORKCHOP
+        display-name: §x§8§F§2§2§2§2Cooked Uibuta Meat
+        custom-model-data: 3
+        lore: |
+          §eDue to proper preparations,
+          §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
+          §x§C§4§2§F§2§F§oThis should be enough food
+          §x§C§4§2§F§2§F§oto last for daaaaayyss!!
+      minAmount: 4
+      maxAmount: 8
+- !<mobzy:sounds>
+  ambient: entity.ottobas.ambient
+  death: entity.ottobas.death
+  hurt: entity.ottobas.hurt
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> {}
