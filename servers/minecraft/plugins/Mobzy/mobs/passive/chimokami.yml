@@ -17,9 +17,10 @@
   drops:
     - item:
         type: LEATHER
-        display-name: §x§D§6§3§6§2§4Chimokami Tuff
+        display-name: §x§D§6§3§6§2§4Chimokami Tail
+        custom-model-data: 1
         lore: |
-          §eA tuft of fur from the rarely seen
+          §eA tuft of fur from the tail of the rarely seen
           §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts make
           §etheir dens in the darker areas of
           §ethe §aForest of Temptation§e.
