@@ -41,6 +41,8 @@
   ambient: entity.ottobas.ambient
   death: entity.ottobas.death
   hurt: entity.ottobas.hurt
+- !<mobzy:increased_water_speed>
+  level: 3
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> {}
