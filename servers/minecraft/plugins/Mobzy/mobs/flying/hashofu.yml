@@ -38,6 +38,7 @@
     - item:
         type: FIRE_CHARGE
         display-name: §x§4§5§4§5§4§5Hashofu Eye
+        custom-model-data: 1
         lore: |
           §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
           §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
@@ -48,6 +49,7 @@
     - item:
         type: POLISHED_BLACKSTONE_BUTTON
         display-name: §x§4§5§4§5§4§5Hashofu Body
+        custom-model-data: 1
         lore: |
           §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
           §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
