@@ -33,14 +33,12 @@ regions:
           - WHITE_CONCRETE
 
       - mob: mobzy:hammerbeak
-        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
         spawn-pos: AIR
 
       - mob: mobzy:benikuchinawa
-        min-y: 20
         priority: 0.05
         max-local-group: 2
         local-group-radius: 300
@@ -55,7 +53,6 @@ regions:
           - GRASS_BLOCK
 
       - mob: mobzy:cyatoria
-        min-y: 20
         priority: 0.3
         spawn-pos: AIR
         max-local-group: 2
@@ -65,7 +62,6 @@ regions:
         max-time: 23460
 
       - mob: mobzy:dosetori
-        min-y: 20
         priority: 0.4
         max-local-group: 2
         local-group-radius: 150
@@ -125,7 +121,6 @@ regions:
       - reuse: Template.mobzy:benikuchinawa
 
       - mob: mobzy:corpse_weeper
-        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 120
@@ -170,17 +165,14 @@ regions:
       - reuse: Template.mobzy:benikuchinawa
         max-local-group: 2
         local-group-radius: 200
-        max-y: 100
         priority: 0.3
 
       - reuse: Template.mobzy:neritantan
         radius: 20
         max-local-group: 6
         local-group-radius: 150
-        max-y: 45
 
       - reuse: Template.mobzy:dosetori
-        max-y: 100
 
       - mob: mobzy:inbyo
         min-amount: 4
@@ -190,7 +182,8 @@ regions:
         max-local-group: 8
         local-group-radius: 120
         max-light: 7
-        min-y: 140
+        block-whitelist:
+          - OAK_LEAVES
 
   - name: Great Fault
     spawns:
@@ -205,7 +198,6 @@ regions:
       - reuse: Template.mobzy:neritantan
 
       - mob: mobzy:madokajack
-        min-y: 20
         priority: 0.3
         max-local-group: 3
         local-group-radius: 150
@@ -304,7 +296,6 @@ regions:
           - WATER
 
       - mob: mobzy:onitsuchi
-        min-y: 20
         priority: 0.2
         max-local-group: 3
         local-group-radius: 200
