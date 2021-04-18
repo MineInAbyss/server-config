@@ -12,7 +12,7 @@
         - !<on.parent>
           - !<geary:smite>
             at: !<player.target_block>
-              maxDist: 15
+              maxDist: 60
               allowAir: false
           - !<geary:particle>
             type: CLOUD

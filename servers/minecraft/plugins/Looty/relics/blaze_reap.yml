@@ -20,6 +20,6 @@
             power: 3
             breakBlocks: true
             at: !<player.target_block>
-              maxDist: 5
+              maxDist: 10
   rightClick:
     - !<cancel> {}
