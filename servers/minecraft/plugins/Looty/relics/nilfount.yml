@@ -14,10 +14,10 @@
       run:
         - !<on.parent>
           - !<geary:placeblock>
-            block: WATER
+            blockType: WATER
             at: !<player.target_block>
-              maxDist: 10
-              allowAir: true
+              maxDist: 3
+              allowAir: false
           - !<geary:particle>
             type: WATER_SPLASH
             count: 10
