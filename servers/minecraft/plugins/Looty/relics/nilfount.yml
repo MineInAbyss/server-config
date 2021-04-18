@@ -1,0 +1,27 @@
+- !<looty:type>
+  item:
+    display-name: §l§x§2§2§B§8§e§6Nil Fount
+    lore: |
+      §
+    type: STICK
+    custom-model-data: 1
+- !<geary:events>
+  leftClick:
+    - !<cancel> {}
+    - !<cooldown>
+      name: Nil Fount
+      length: 2s
+      run:
+        - !<on.parent>
+          - !<geary:placeblock>
+            block: WATER
+            at: !<player.target_block>
+              maxDist: 10
+              allowAir: true
+          - !<geary:particle>
+            type: WATER_SPLASH
+            count: 10
+            speed: 0.2
+            at: !<player.target_block>
+              maxDist: 10
+              allowAir: false
