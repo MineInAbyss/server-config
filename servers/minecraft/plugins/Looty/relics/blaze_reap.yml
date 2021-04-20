@@ -12,7 +12,7 @@
   leftClick:
     - !<cancel> {}
     - !<cooldown>
-      name: Explosion
+      name: §x§6§1§7§B§9§4§lExplosion
       length: 2s
       run:
         - !<on.parent>
