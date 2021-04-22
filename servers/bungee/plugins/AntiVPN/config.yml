@@ -1,0 +1,363 @@
+# How the plugin stores long-term data
+# Note that you must configure at least one storage engine
+storage:
+  engines:
+    # Engine name. Can be anything
+    engine1:
+      # Engine type. Can be "mysql", "old_mysql", "mariadb", "postgresql", "h2", or "sqlite"
+      # "mysql" is for MySQL versions > 5.5, "old_mysql" is for MySQL versions <= 5.5
+      # https://mariadb.org/
+      # https://www.postgresql.org/
+      # https://www.h2database.com/html/main.html
+      # https://www.sqlite.org/index.html
+      type: 'mysql'
+      # Whether or not to use this engine
+      enabled: false
+      connection:
+        # Address and port (MySQL, MariaDB, PostgreSQL only)
+        address: '127.0.0.1:3306'
+        # The name of the database the plugin will store data in (MySQL only)
+        # This must be created beforehand
+        database: 'anti_vpn'
+        # Credentials
+        username: ''
+        password: ''
+        # Extra options to use with this storage engine
+        # These values will override any others
+        options: 'useSSL=false&useUnicode=true&characterEncoding=utf8'
+    # Engine name. Can be anything
+    engine2:
+      # Engine type. Can be "mysql", "old_mysql", "mariadb", "postgresql", "h2", or "sqlite"
+      # "mysql" is for MySQL versions > 5.5, "old_mysql" is for MySQL versions <= 5.5
+      # https://mariadb.org/
+      # https://www.postgresql.org/
+      # https://www.h2database.com/html/main.html
+      # https://www.sqlite.org/index.html
+      type: 'h2'
+      # Whether or not to use this engine
+      enabled: true
+      connection:
+        # File name (SQLite, H2 only)
+        file: 'anti_vpn'
+        # Extra options to use with this storage engine
+        # These values will override any others
+        options: 'useUnicode=true&characterEncoding=utf8'
+  settings:
+    # The maximum size of the storage engine connection pool
+    # Determines the max number of connections to storage engines
+    max-pool-size: 4
+    # The minimum size of the storage engine connection pool
+    # Determines the min number of connections kept alive to storage engines
+    min-idle: 4
+    # The maximum lifetime of a connection in the pool
+    # Should be at least 30 seconds less than any storage engine or infrastructure-imposed connection time limit
+    max-lifetime: '30minutes'
+    # The maximum amount of time that the plugin will wait for a new connection from the pool before timing out
+    timeout: '5seconds'
+  # The order in which the storage engines will be used
+  # The first available engine will be considered the "master" and will be the authoritative data source
+  # Keep in mind that, for redundancy, ALL defined and enabled storage engines will be used
+  order:
+    - 'engine1'
+    - 'engine2'
+
+# How the plugin rapidly shares information with other servers along the network
+messaging:
+  engines:
+    # Engine name. Can be anything
+    engine1:
+      # Engine type. Can be "rabbitmq" or "redis"
+      # https://www.rabbitmq.com/
+      # https://redis.io/
+      type: 'rabbitmq'
+      # Whether or not to use this engine
+      enabled: false
+      connection:
+        # Address and port
+        address: '127.0.0.1:5672'
+        # Virtual host (RabbitMQ only)
+        v-host: '/'
+        # Credentials
+        username: 'guest'
+        password: 'guest'
+    # Engine name. Can be anything
+    engine2:
+      # Engine type. Can be "rabbitmq" or "redis"
+      # https://www.rabbitmq.com/
+      # https://redis.io/
+      type: 'redis'
+      # Whether or not to use this engine
+      enabled: false
+      connection:
+        # Address and port
+        address: '127.0.0.1:6379'
+        # Credentials
+        password: ''
+  settings:
+    # The maximum size of the messaging engine connection pool
+    # Determines the max number of connections to messaging engines
+    max-pool-size: 5 # + 1 for the receiver
+    # The minimum size of the messaging engine connection pool
+    # Determines the min number of connections kept alive to messaging engines
+    min-idle: 5 # + 1 for the receiver
+    # The maximum lifetime of a connection in the pool
+    # Should be at least 30 seconds less than any messaging engine or infrastructure-imposed connection time limit
+    max-lifetime: '30minutes'
+    # The maximum amount of time that the plugin will wait for a new connection from the pool before timing out
+    timeout: '5seconds'
+
+# Where VPN-checking sources are defined
+# Beware the more sources that are included (and fail) the worse the performance and the more the lag
+sources:
+  # The amount of time to globally cache results across all sources
+  # This should be as high as possible to avoid rate-limits but as low as possible to ensure results are always up-to-date and accurate
+  cache-time: '6hours'
+
+  # The order to try results in
+  order:
+    - 'proxycheck'
+    - 'iptrooper'
+    - 'getipintel'
+    - 'ipqualityscore'
+    - 'iphub'
+    - 'iphunter'
+    - 'vpnblocker'
+    - 'ip2proxy'
+    - 'shodan'
+    - 'ipinfo'
+    - 'teoh'
+
+  # https://proxycheck.io
+  # Results updated Jan 19, 2020
+  # Error rate:                     0.00%
+  # NordVPN detection rate:       100.00%
+  # Cryptostorm detection rate:   100.00%
+  # False-flagged homes:            0.00%
+  proxycheck:
+    enabled: true
+    # Optional API key to use
+    key: ''
+
+  # https://iptrooper.net/
+  # Results updated Jan 19, 2020
+  # Error rate:                     0.00%
+  # NordVPN detection rate:        96.00%
+  # Cryptostorm detection rate:   100.00%
+  # False-flagged homes:            0.00%
+  iptrooper:
+    enabled: true
+
+  # https://www.getipintel.net/
+  # Results updated Jan 19, 2020
+  # Error rate:                     0.00%
+  # NordVPN detection rate:        86.00%
+  # Cryptostorm detection rate:   100.00%
+  # False-flagged homes:            0.00%
+  getipintel:
+    enabled: true
+    # Contact e-mail in case things go wrong. Required
+    contact: 'admin@yoursite.com'
+    # Threshold above which an IP is considered "bad"
+    threshold: 0.98
+    # Subdomains for business customers. Contact getipintel@gmail.com if you'd like one
+    subdomain: 'check'
+
+  # https://www.ipqualityscore.com/
+  # Results updated Feb 9, 2020
+  # Error rate:                    0.00%
+  # NordVPN detection rate:       86.00%
+  # Cryptostorm detection rate:   96.43%
+  # False-flagged homes:           0.00%
+  ipqualityscore:
+    enabled: false
+    # API key to use (Required for this service, free one available at https://www.ipqualityscore.com/create-account )
+    # This plugin would benefit from a premium account/API key, but does not require it
+    key: ''
+    # Whether or not to detect proxies as VPNs
+    proxy: false
+    # Whether or not to score IPs as a mobile device (less strict)
+    mobile: true
+    # Strictness setting to use (0-3)
+    strictness: 0
+    # Whether or not to flag IPs with recent abuse (such as malware, compromised devices, etc) as "bad"
+    recent-abuse: false
+    # Threshold above which an IP is considered "bad"
+    threshold: 0.98
+
+  # https://iphub.info/
+  # Results updated Jan 19, 2020
+  # Error rate:                    0.00%
+  # NordVPN detection rate:       84.00%
+  # Cryptostorm detection rate:   96.43%
+  # False-flagged homes:           0.00%
+  iphub:
+    enabled: false
+    # API key to use (Required for this service, free one available at https://iphub.info/apiKey/newFree )
+    key: ''
+    # The block type at which an IP is considered "bad"
+    block: 1
+
+  # https://www.iphunter.info/
+  # Results updated Jan 19, 2020
+  # Error rate:                    0.00%
+  # NordVPN detection rate:       60.00%
+  # Cryptostorm detection rate:   92.86%
+  # False-flagged homes:           0.00%
+  iphunter:
+    enabled: false
+    # API key to use (Required for this service, free one available at https://www.iphunter.info/user/register )
+    key: ''
+    # The block type at which an IP is considered "bad"
+    block: 1
+
+  # https://vpnblocker.net/usage
+  # Results updated Jan 19, 2020
+  # Error rate:                    0.00%
+  # NordVPN detection rate:       64.00%
+  # Cryptostorm detection rate:   82.14%
+  # False-flagged homes:           0.00%
+  vpnblocker:
+    enabled: true
+    # Optional API key to use
+    key: ''
+
+  # https://www.ip2location.com/web-service/ip2proxy
+  # NOTE: This info is old
+  # Results updated Jul 18, 2019
+  # Error rate: 0%
+  # NordVPN detection rate: 100%
+  # Cryptostorm detection rate: 60%
+  # False-flagged homes: 0%
+  ip2proxy:
+    enabled: true
+    # API key to use (Required for this service, free one available using 'demo' or at https://www.ip2location.com/register?id=1006 )
+    key: 'demo'
+
+  # https://www.shodan.io/
+  # Results updated Jan 19, 2020
+  # Error rate:                  55.15%
+  # NordVPN detection rate:      90.00%
+  # Cryptostorm detection rate:   0.00%
+  # False-flagged homes:          0.00%
+  shodan:
+    enabled: false
+    # API key to use (Required for this service)
+    key: ''
+
+  # https://ipinfo.io/
+  # Results updated Jul 20, 2020
+  # Error rate:                    0.00%
+  # NordVPN detection rate:       84.00%
+  # Cryptostorm detection rate:    0.00%
+  # False-flagged homes:           0.00%
+  ipinfo:
+    enabled: false
+    # API key to use (Required for this service, free one available at https://ipinfo.io/signup using the "free trial" option under "Privacy Detection API")
+    key: ''
+    # Whether or not to detect proxies as VPNs
+    proxy: true
+
+  # https://ip.teoh.io/vpn-detection
+  # NOTE: This info is old
+  # Results updated Jul 7, 2019
+  # Error rate: 10%
+  # NordVPN detection rate: 61.90%
+  # Cryptostorm detection rate: 100%
+  # False-flagged homes: 0%
+  teoh:
+    enabled: true
+
+mcleaks:
+  # The amount of time to globally cache results
+  # This should be as high as possible to avoid rate-limits but as low as possible to ensure results are always up-to-date and accurate
+  cache-time: '1day'
+  # Optional API key to use (e-mail API author, following instructions from "I'm frequently hitting your rate limit/my server has large influxes of players" at https://github.com/TheMrGong/MCLeaksApiClient#faq )
+  key: ''
+
+action:
+  vpn:
+    # The kick message to display to players who are using VPNs
+    # If left blank, will not kick the player
+    kick-message: '&cPlease disconnect from your proxy or VPN before re-joining!'
+    # The commands that CONSOLE will run for players who are using VPNs
+    # Use %player% as a placeholder for the player's (real) name
+    # Use %uuid% as a placeholder for the player's uuid
+    # Use %ip% as a placeholder for the player's IP
+    # If left blank, will not run anything
+    commands:
+      - ''
+
+    algorithm:
+      # The algorithm method
+      #
+      # Options:
+      # - Cascade
+      #   The plugin will go down the "sources" list, sequentially, until a valid source is found
+      #   It will then query that source and return the result
+      #   This will result in essentially "the first valid result" being returned
+      # - Consensus
+      #   The plugin will try every source in the "sources" list at once
+      #   It will then strip invalid results, and calculate the ratio of results from the remaining sources
+      #   This will result in essentially "the ratio of valid results" being returned
+      method: 'cascade'
+
+      # Only used for "consensus" mode
+      # The minimum ratio of APIs that must agree before a player is kicked
+      # For example, if set to "0.6" then at least 60% of sources must agree that the IP is a VPN
+      # The value can range from 0 to 1, and will be clipped at those values
+      min-consensus: 0.6
+  mcleaks:
+    # The kick message to display to players who are using MCLeaks accounts
+    # If left blank, will not kick the player
+    kick-message: '&cYou were kicked because you connected with an MCLeaks account. If you think this is a mistake, make a ticket in #staff-contact on the Discord Server'
+    # The commands that CONSOLE will run for players who are using MCLeaks accounts
+    # Use %player% as a placeholder for the player's (real) name
+    # Use %uuid% as a placeholder for the player's uuid
+    # Use %ip% as a placeholder for the player's IP
+    # If left blank, will not run anything
+    commands:
+      - ''
+
+  # IP addresses and ranges to ignore when checking for VPNs and/or MCLeaks accounts
+  ignore:
+    - '127.0.0.0/8'
+    - '10.0.0.0/8'
+    - '172.16.0.0/12'
+    - '192.168.0.0/16'
+    - '::1/128'
+    - 'fd00::/8'
+
+connection:
+  # The amount of time to cache lookups in-memory
+  # Higher values require slightly more memory
+  # Lower values will hit Storage/APIs more frequently
+  # Generally the default is good enough to prevent many sequential lookups from choking resources, but still keep memory usage low
+  cache-time: '1minute'
+  # The number of threads to use for web operations
+  threads: 4
+  # The maximum amount of time that the plugin will wait for an API to respond before timing out
+  timeout: '5seconds'
+
+# When true, logs some extra output to the console so you can see if/why things might be failing
+debug: false
+# Default language (affects console output)
+lang: 'en'
+
+stats:
+  # Whether or not to send anonymous usage statistics to bStats
+  # True: Send anonymous stats; let the author know how well the plugin is doing and how it's used!
+  # False: Do not send stats and make the author sad :(
+  usage: true
+  # Whether or not to send anonymous errors to the author
+  # True: Send errors anonymously to Rollbar and/or GameAnalytics so the author can fix them!
+  # False: Do not send errors and wonder why any bugs you encounter haven't been fixed
+  errors: true
+
+update:
+  # Whether or not to automatically check for updates and notify the console if found
+  check: true
+  # Whether or not to notify players with the avpn.admin permission node
+  notify: true
+
+# Config version, no touchy plz
+version: 5.1
