@@ -35,8 +35,8 @@
           §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
           §x§C§4§2§F§2§F§oThis should be enough food
           §x§C§4§2§F§2§F§oto last for daaaaayyss!!
-      minAmount: 4
-      maxAmount: 8
+      minAmount: 2
+      maxAmount: 6
 - !<mobzy:sounds>
   ambient: entity.ottobas.ambient
   death: entity.ottobas.death

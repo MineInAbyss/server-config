@@ -29,6 +29,7 @@
     - item:
         type: QUARTZ
         display-name: §x§A§6§3§5§3§5Orb Piercer Spike
+        custom-model-data: 1
         lore: |
           §eObtained from slaying an §x§C§7§4§0§4§0Orb Piercer
           §eand collecting the spikes it sheds.
@@ -38,12 +39,12 @@
           §eAvoid them at all cost!
           §x§D§9§D§9§D§9§oTheir spines contain a very
           §x§D§9§D§9§D§9§opotent venom, so take caution!
-        custom-model-data: 1
       minAmount: 4
       maxAmount: 7
     - item:
         type: NETHER_WART
         display-name: §x§C§7§4§0§4§0Orb Piercer Face Fragments
+        custom-model-data: 1
         lore: |
           §eApparently the red orb on the
           §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them
