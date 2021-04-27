@@ -1,8 +1,8 @@
 - !<looty:type>
   item:
-    display-name: §3Star Compass
+    display-name: §3Depth Meter
     type: COMPASS
-    custom-model-data: 1
+    custom-model-data: 2
 - !<looty:recipes>
   - items:
       G:

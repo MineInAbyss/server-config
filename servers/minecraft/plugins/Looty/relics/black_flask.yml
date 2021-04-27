@@ -1,7 +1,9 @@
 - !<looty:type>
   item:
     type: POTION
-    display-name: Black Flask
+    display-name: §6Black Flask
+    lore: |
+      §aplaceholder
 - !<geary:events>
   consume:
     - !<on.parent>
@@ -10,6 +12,9 @@
           - type: SPEED
             duration: 7s
             amplifier: 10
+          - type: JUMP
+            duration: 7s
+            amplifier: 3
       - !<geary:deal_damage>
         damage: 10
         minHealth: 1
