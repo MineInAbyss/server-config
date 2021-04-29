@@ -38,7 +38,7 @@ regions:
         local-group-radius: 120
         spawn-pos: AIR
 
-      - mob: mobzy:benikuchinawa
+      - mob: mobzy:splitjaw
         priority: 0.05
         max-local-group: 2
         local-group-radius: 300
@@ -90,7 +90,7 @@ regions:
 
       - reuse: Template.mobzy:cyatoria
 
-      - reuse: Template.mobzy:benikuchinawa
+      - reuse: Template.mobzy:splitjaw
         priority: 0.05
         max-local-group: 1
         local-group-radius: 500
@@ -118,7 +118,7 @@ regions:
 
       - reuse: Template.mobzy:silkfang
 
-      - reuse: Template.mobzy:benikuchinawa
+      - reuse: Template.mobzy:splitjaw
 
       - mob: mobzy:corpse_weeper
         priority: 0.3
@@ -162,7 +162,7 @@ regions:
 
   - name: Inverted Forest
     spawns:
-      - reuse: Template.mobzy:benikuchinawa
+      - reuse: Template.mobzy:splitjaw
         max-local-group: 2
         local-group-radius: 200
         priority: 0.3
@@ -187,7 +187,7 @@ regions:
 
   - name: Great Fault
     spawns:
-      - reuse: Template.mobzy:benikuchinawa
+      - reuse: Template.mobzy:splitjaw
         priority: 0.3
         max-local-group: 3
         local-group-radius: 150
@@ -256,7 +256,7 @@ regions:
 
   - name: The Goblet of Giants
     spawns:
-      - mob: mobzy:tamaugachi
+      - mob: mobzy:orbpiercer
         max-local-group: 1
         local-group-radius: 300
         min-time: 18000
