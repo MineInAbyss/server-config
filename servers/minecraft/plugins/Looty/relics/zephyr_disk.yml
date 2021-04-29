@@ -1,6 +1,8 @@
 - !<looty:type>
   item:
-    type: OAK_LEAVES
+    type: DIAMOND_HOE
+    display-name: §3Zephyr Disk
+    custom-model-data: 5
 - !<geary:events>
   leftClick:
     - !<cancel> {}

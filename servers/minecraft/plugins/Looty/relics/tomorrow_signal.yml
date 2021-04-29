@@ -1,6 +1,7 @@
 - !<looty:type>
   item:
     type: STICK
+    display-name: §8Tomorrow Signal
     custom-model-data: 102
 - !<geary:events>
   leftClick:
