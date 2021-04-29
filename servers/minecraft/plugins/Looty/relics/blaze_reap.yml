@@ -1,12 +1,18 @@
 - !<looty:type>
   item:
     type: DIAMOND_HOE
-    custom-model-data: 4
+    custom-model-data: 2
+    display-name: §x§6§1§7§B§9§4§lBlaze Reap
+    lore: |
+      §x§C§6§C§C§8§AContains §fEverlasting Gunpowder§x§C§6§C§C§8§A,
+      §x§C§6§C§C§8§Awhich causes ongoing explosions
+      §x§C§6§C§C§8§Aon whatever it is struck on.
+      §x§9§4§8§E§6§1§oUsed to create powerful explosions.
 - !<geary:events>
   leftClick:
     - !<cancel> {}
     - !<cooldown>
-      name: Explosion
+      name: §x§6§1§7§B§9§4§lExplosion
       length: 2s
       run:
         - !<on.parent>
@@ -14,6 +20,6 @@
             power: 3
             breakBlocks: true
             at: !<player.target_block>
-              maxDist: 5
+              maxDist: 10
   rightClick:
     - !<cancel> {}

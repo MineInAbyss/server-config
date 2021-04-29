@@ -17,4 +17,4 @@
                   breakBlocks: true
                   at: !<entity.location> {}
             at: !<player.target_block>
-              maxDist: 25
+              maxDist: 60
