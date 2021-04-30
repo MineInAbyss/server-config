@@ -1,13 +1,13 @@
 debug: false
 doMobSpawns: true
 minChunkSpawnRad: 2
-maxChunkSpawnRad: 8
+maxChunkSpawnRad: 6
 maxCommandSpawns: 50
 playerGroupRadius: 128.0
 spawnTaskDelay: 20
 creatureTypeCaps:
-  "CREATURE": 50
-  "MONSTER": 50
-  "WATER_CREATURE": 30
-  "MISC": 20
+  "CREATURE": 60
+  "MONSTER": 60
+  "WATER_CREATURE": 40
+  "MISC": 30
   "AMBIENT": 0
