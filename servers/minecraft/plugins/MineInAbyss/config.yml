@@ -151,6 +151,7 @@ layers:
         duration: 30s
         iterations: 1
         addMaxHealth: -2.0
+        minHealth: 3.0
       - !<potion>
         strength: 2
         duration: 6s
