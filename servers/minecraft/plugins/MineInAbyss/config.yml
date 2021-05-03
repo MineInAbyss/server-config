@@ -147,6 +147,10 @@ layers:
       start: 12000
       end: 13000
     effects:
+      - !<maxHealth>
+        duration: 30s
+        iterations: 1
+        addMaxHealth: -1.0
       - !<potion>
         strength: 2
         duration: 6s
