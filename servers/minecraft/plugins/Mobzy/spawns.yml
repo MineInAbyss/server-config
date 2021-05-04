@@ -264,6 +264,7 @@ regions:
             range: 1..9
           - !<geary:block_type>
             allow:
+              - BIRCH_LEAVES
               - OAK_LEAVES
 
   - name: Great Fault
