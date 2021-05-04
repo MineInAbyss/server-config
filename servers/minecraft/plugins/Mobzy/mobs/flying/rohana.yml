@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: mobzy:flying
-  creatureType: MISC
+  mobCategory: WATER_CREATURE
+  creatureType: WATER_CREATURE
 - !<mobzy:model>
   id: 14
   small: true

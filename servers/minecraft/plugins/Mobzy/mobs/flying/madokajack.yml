@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: mobzy:flying
-  creatureType: MISC
+  mobCategory: FLYING
+  creatureType: MONSTER
 - !<mobzy:model>
   id: 20
 - !<mobzy:attributes>

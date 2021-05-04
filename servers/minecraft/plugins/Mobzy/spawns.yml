@@ -85,8 +85,8 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..15
           - !<geary:time>
-            min: 12542
-            max: 23460
+            min: 13000
+            max: 23000
 
       - mob: mobzy:dosetori
         priority: 0.4
@@ -379,7 +379,7 @@ regions:
             max: 1
             radius: 300
           - !<geary:time>
-            min: 18000
+            min: 13000
             max: 23000
           - !<mobzy:spawn.gap>
             range: 8..256
