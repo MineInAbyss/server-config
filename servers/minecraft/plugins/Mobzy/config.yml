@@ -1,7 +1,6 @@
 debug: false
 doMobSpawns: true
-minChunkSpawnRad: 2
-maxChunkSpawnRad: 6
+chunkSpawnRad: 2..6
 maxCommandSpawns: 50
 playerGroupRadius: 128.0
 spawnTaskDelay: 20t
