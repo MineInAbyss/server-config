@@ -276,12 +276,12 @@ regions:
       - reuse: Template.mobzy:neritantan
 
       - reuse: Template.mobzy:splitjaw
-          priority: 0.3
-          spawnPos: AIR
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 3
-              radius: 150
+        priority: 0.3
+        spawnPos: AIR
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 3
+            radius: 150
 
       - mob: mobzy:madokajack
         priority: 0.3
