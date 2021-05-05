@@ -20,8 +20,6 @@ regions:
             radius: 60
           - !<geary:light>
             range: 7..15
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<mobzy:spawn.gap>
             range: 2..256
           - !<geary:block_type>
@@ -37,8 +35,6 @@ regions:
             radius: 60
           - !<mobzy:spawn.gap>
             range: 2..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -62,8 +58,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 2
             radius: 300
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<mobzy:spawn.gap>
             range: 10..256
 
@@ -149,8 +143,6 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 15s
           - !<geary:light>
             range: 7..15
           - !<geary:block_type>
@@ -177,8 +169,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 3
             radius: 120
-          - !<mobzy:spawn.delay>
-            attemptEvery: 5s
           - !<mobzy:spawn.gap>
             range: 10..256
 
@@ -206,8 +196,6 @@ regions:
             radius: 150
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 15s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -233,8 +221,6 @@ regions:
             radius: 100
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 20s
           - !<geary:time>
             min: 13000
             max: 23000
@@ -316,8 +302,6 @@ regions:
             radius: 100
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -334,8 +318,6 @@ regions:
             range: 4..15
           - !<mobzy:spawn.gap>
             range: 5..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -352,8 +334,6 @@ regions:
             range: 1..10
           - !<mobzy:spawn.gap>
             range: 2..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 20s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -372,8 +352,6 @@ regions:
             range: 1..7
           - !<mobzy:spawn.gap>
             range: 2..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 5s
           - !<geary:block_type>
             allow:
               - WHITE_CONCRETE
@@ -390,8 +368,6 @@ regions:
             range: 1..7
           - !<mobzy:spawn.gap>
             range: 2..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 5s
           - !<geary:block_type>
             allow:
               - WHITE_CONCRETE
@@ -425,7 +401,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 3..256
           - !<mobzy:spawn.delay>
-            attemptEvery: 15s
+            attemptEvery: 10s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -446,8 +422,6 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 20s
           - !<geary:block_type>
             allow:
               - WATER
@@ -544,8 +518,6 @@ regions:
             radius: 300
           - !<mobzy:spawn.gap>
             range: 5..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
           - !<geary:block_type>
             allow:
               - SNOW_BLOCK
@@ -573,8 +545,6 @@ regions:
             range: 7..15
           - !<mobzy:spawn.gap>
             range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 20s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -590,8 +560,6 @@ regions:
             range: 5..15
           - !<mobzy:spawn.gap>
             range: 4..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 20s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -606,7 +574,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 4..256
           - !<mobzy:spawn.delay>
-            attemptEvery: 20s
+            attemptEvery: 15s
           - !<geary:block_type>
             allow:
               - SAND
