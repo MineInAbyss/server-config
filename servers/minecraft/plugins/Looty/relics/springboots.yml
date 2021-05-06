@@ -10,7 +10,7 @@
 - !<geary:passive>
   - !<if>
     conditions:
-      - !<entity>
+      - !<geary:entity>
         has:
           - looty:slot.equipped
     run:

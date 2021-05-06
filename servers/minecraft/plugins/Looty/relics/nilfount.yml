@@ -13,11 +13,11 @@
       length: 2s
       run:
         - !<on.parent>
-          - !<geary:placeblock>
+          - !<geary:place_block>
             blockType: WATER
             at: !<player.target_block>
               maxDist: 3
-              allowAir: false
+              onFace: true
           - !<geary:particle>
             type: WATER_SPLASH
             count: 10

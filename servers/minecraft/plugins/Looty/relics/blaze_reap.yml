@@ -16,10 +16,11 @@
       length: 2s
       run:
         - !<on.parent>
-          - !<looty:explode>
+          - !<geary:explode>
             power: 3
             breakBlocks: true
             at: !<player.target_block>
+              allowAir: true
               maxDist: 10
   rightClick:
     - !<cancel> {}

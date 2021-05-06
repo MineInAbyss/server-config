@@ -7,7 +7,7 @@
   - !<on.parent>
     - !<if>
       conditions:
-        - !<health>
+        - !<geary:health>
           withinPercent: 0..0.4
       run:
         - !<geary:particle>

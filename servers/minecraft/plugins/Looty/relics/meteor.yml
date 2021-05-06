@@ -9,10 +9,10 @@
       length: 2s
       run:
         - !<on.parent>
-          - !<looty:meteor>
+          - !<geary:meteor>
             events:
               projectileLand:
-                - !<looty:explode>
+                - !<geary:explode>
                   power: 2
                   breakBlocks: true
                   at: !<entity.location> {}
