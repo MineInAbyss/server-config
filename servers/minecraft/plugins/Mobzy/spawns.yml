@@ -31,8 +31,8 @@ regions:
         radius: 10
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 3
-            radius: 60
+            max: 6
+            radius: 200
           - !<mobzy:spawn.gap>
             range: 2..256
           - !<geary:block_type>
@@ -393,7 +393,7 @@ regions:
 
       - mob: mobzy:kuongatari
         amount: 4..8
-        radius: 20
+        radius: 10
         conditions:
           - !<mobzy:spawn.local_group>
             max: 8
@@ -401,7 +401,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 3..256
           - !<mobzy:spawn.delay>
-            attemptEvery: 10s
+            attemptEvery: 5s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -528,7 +528,7 @@ regions:
         radius: 1
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 15
+            max: 8
             radius: 200
           - !<geary:block_type>
             allow:
