@@ -324,11 +324,11 @@ regions:
               - PODZOL
 
       - mob: mobzy:kakatsumuri
-        amount: 1..7
-        radius: 30
+        amount: 1..5
+        radius: 20
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 10
+            max: 6
             radius: 200
           - !<geary:light>
             range: 1..10
