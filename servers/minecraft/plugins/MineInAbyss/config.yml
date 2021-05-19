@@ -160,12 +160,12 @@ layers:
           - SLOW
           - SLOW_DIGGING
           - BLINDNESS
+          - WEAKNESS
       - !<potion>
-        strength: 1
+        strength: 0
         duration: 10s
         effects:
           - WITHER
-          - WEAKNESS
       - !<particles>
         <<: *blood
       - !<sound>
