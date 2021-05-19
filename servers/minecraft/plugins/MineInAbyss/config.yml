@@ -115,14 +115,18 @@ layers:
     effects:
       - !<potion>
         strength: 1
-        duration: 6s
+        duration: 8s
         offset: 4t
         effects:
           - HUNGER
           - SLOW
           - SLOW_DIGGING
-          - WITHER
           - WEAKNESS
+      - !<potion>
+        strength: 0
+        duration: 10s
+        effects:
+          - WITHER
       - !<particles>
         <<: *blood
       - !<sound>
@@ -148,13 +152,13 @@ layers:
       end: 13000
     effects:
       - !<maxHealth>
-        duration: 30s
+        duration: 45s
         iterations: 1
         addMaxHealth: -2.0
-        minHealth: 3.0
+        minHealth: 8.0
       - !<potion>
         strength: 2
-        duration: 6s
+        duration: 8s
         effects:
           - HUNGER
           - SLOW
@@ -162,7 +166,7 @@ layers:
           - BLINDNESS
           - WEAKNESS
       - !<potion>
-        strength: 0
+        strength: 1
         duration: 10s
         effects:
           - WITHER
