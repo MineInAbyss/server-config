@@ -75,9 +75,9 @@
       maxAmount: 1
       dropChance: 0.3
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.madokajack.ambient
-  death: mineinabyss:entity.madokajack.death
-  hurt: mineinabyss:entity.madokajack.hurt
+  ambient: entity.madokajack.ambient
+  death: entity.madokajack.death
+  hurt: entity.madokajack.hurt
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

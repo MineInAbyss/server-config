@@ -62,6 +62,6 @@
           §x§8§2§4§E§2§1§o
       maxAmount: 4
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.steve.ambient
-  death: mineinabyss:entity.steve.death
-  hurt: mineinabyss:entity.steve.hurt
+  ambient: entity.steve.ambient
+  death: entity.steve.death
+  hurt: entity.steve.hurt

@@ -38,9 +38,9 @@
       minAmount: 2
       maxAmount: 6
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.ottobas.ambient
-  death: mineinabyss:entity.ottobas.death
-  hurt: mineinabyss:entity.ottobas.hurt
+  ambient: entity.ottobas.ambient
+  death: entity.ottobas.death
+  hurt: entity.ottobas.hurt
 - !<mobzy:increased_water_speed>
   level: 3
 - !<mobzy:pathfinders>

@@ -55,9 +55,9 @@
       minAmount: 1
       maxAmount: 3
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.orbpiercer.ambient
-  death: mineinabyss:entity.orbpiercer.death
-  hurt: mineinabyss:entity.orbpiercer.hurt
+  ambient: entity.orbpiercer.ambient
+  death: entity.orbpiercer.death
+  hurt: entity.orbpiercer.hurt
 - !<mobzy:increased_water_speed>
   level: 3
 - !<mobzy:pathfinders>
