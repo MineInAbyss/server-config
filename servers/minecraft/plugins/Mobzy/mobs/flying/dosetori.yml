@@ -57,9 +57,9 @@
       minAmount: 1
       maxAmount: 3
 - !<mobzy:sounds>
-  ambient: entity.dosetori.ambient
-  death: entity.dosetori.death
-  hurt: entity.dosetori.hurt
+  ambient: mineinabyss:entity.dosetori.ambient
+  death: mineinabyss:entity.dosetori.death
+  hurt: mineinabyss:entity.dosetori.hurt
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
