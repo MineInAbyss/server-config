@@ -65,9 +65,9 @@
       maxAmount: 2
       dropChance: 0.4
 - !<mobzy:sounds>
-  ambient: entity.stingerhead.ambient
-  death: entity.stingerhead.death
-  hurt: entity.stingerhead.hurt
+  ambient: mineinabyss:entity.stingerhead.ambient
+  death: mineinabyss:entity.stingerhead.death
+  hurt: mineinabyss:entity.stingerhead.hurt
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

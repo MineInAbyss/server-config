@@ -65,9 +65,9 @@
         type: EMERALD
       dropChance: 0.05
 - !<mobzy:sounds>
-  ambient: entity.benikuchinawa.ambient
-  death: entity.benikuchinawa.death
-  hurt: entity.benikuchinawa.hurt
+  ambient: mineinabyss:entity.splitjaw.ambient
+  death: mineinabyss:entity.splitjaw.death
+  hurt: mineinabyss:entity.splitjaw.hurt
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

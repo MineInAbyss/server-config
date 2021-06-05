@@ -41,9 +41,9 @@
           §eSeems to be poisonous, I best not eat it...
       dropChance: 0.15
 - !<mobzy:sounds>
-  ambient: entity.billabonk.ambient
-  death: entity.billabonk.death
-  hurt: entity.billabonk.hurt
+  ambient: mineinabyss:entity.billabonk.ambient
+  death: mineinabyss:entity.billabonk.death
+  hurt: mineinabyss:entity.billabonk.hurt
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

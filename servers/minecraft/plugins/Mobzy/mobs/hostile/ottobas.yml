@@ -38,9 +38,9 @@
       minAmount: 8
       maxAmount: 20
 - !<mobzy:sounds>
-  ambient: entity.ottobas.ambient
-  death: entity.ottobas.death
-  hurt: entity.ottobas.hurt
+  ambient: mineinabyss:entity.ottobas.ambient
+  death: mineinabyss:entity.ottobas.death
+  hurt: mineinabyss:entity.ottobas.hurt
 - !<mobzy:rideable> {}
 - !<mobzy:pathfinders>
   goals:
