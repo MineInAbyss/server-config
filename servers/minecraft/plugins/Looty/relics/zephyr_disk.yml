@@ -4,18 +4,18 @@
     display-name: §3Zephyr Disk
     custom-model-data: 5
 - !<geary:events>
-  leftClick:
+  rightClick:
     - !<cancel> {}
     - !<cooldown>
       name: Blow
-      length: 2s
+      length: 20s
       run:
         - !<on.parent>
           - !<geary:particle>
-            at: !<player.target_block>
-              maxDist: 5
+            at: !<player.location> {}
+              #maxDist: 5
             type: CLOUD
-            count: 10
+            count: 100
             speed: 0.2
           - !<geary:sound>
             sound: entity.generic.extinguish_fire
