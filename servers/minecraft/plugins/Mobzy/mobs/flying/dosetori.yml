@@ -22,17 +22,19 @@
         display-name: §x§F§F§F§8§2§1Raw Dosetori Meat
         custom-model-data: 2
         lore: |
-          §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
-          §aInverted Forest §eand §aGreat Fault§e.
-          §x§F§F§E§8§1§7§oTastes like chicken?
+          §eObtained from §x§F§F§F§8§2§1Dosetori §eat
+          §ethe §x§1§7§5§A§B§FInverted Forest §eand in the §x§D§4§2§8§B§1Great Fault§e.
+          §x§F§F§E§8§1§7§oA tough piece of meat.
+          §x§F§F§F§8§2§1§oA tender roast would be perfect.
       cooked:
         type: COOKED_CHICKEN
         display-name: §x§F§F§F§8§2§1Cooked Dosetori Meat
         custom-model-data: 2
         lore: |
-          §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
-          §aInverted Forest §eand §aGreat Fault§e.
-          §x§F§F§E§8§1§7§oTastes like fried chicken?
+          §eCooked meat of the §x§F§F§F§8§2§1Dosetori §efrom
+          §ethe §x§1§7§5§A§B§FInverted Forest §eand the §x§D§4§2§8§B§1Great Fault§e.
+          §x§F§F§E§8§1§7§oAn exceptional roast.
+          §x§F§F§F§8§2§1§oTastes a lot like gamey chicken.
       minAmount: 1
       maxAmount: 2
     - item:
@@ -40,10 +42,10 @@
         display-name: §x§F§F§F§8§2§1Dosetori Wingflap
         custom-model-data: 2
         lore: |
-          §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
-          §aInverted Forest §eand §aGreat Fault§e.
-          §x§F§F§E§8§1§7§oPerhaps I can take flight with these?
-          §x§F§F§E§8§1§7§o(No this is not related to membrane or elytras)
+          §eObtained from §x§F§F§F§8§2§1Dosetori §eat
+          §ethe §x§1§7§5§A§B§FInverted Forest §eand in the §x§D§4§2§8§B§1Great Fault§e.
+          §x§F§F§E§8§1§7§oA leathery piece of hide.
+          §x§F§F§F§8§2§1§oHow do they manage to fly with these?
       minAmount: 2
       maxAmount: 4
     - item:
@@ -51,9 +53,10 @@
         display-name: §x§F§F§F§8§2§1Dosetori Bone
         custom-model-data: 1
         lore: |
-          §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
-          §aInverted Forest §eand §aGreat Fault§e.
-          §x§F§F§E§8§1§7§oSeems to be kind of unsturdy...
+          §eObtained from §x§F§F§F§8§2§1Dosetori §eat
+          §ethe §x§1§7§5§A§B§FInverted Forest §eand in the §x§D§4§2§8§B§1Great Fault§e.
+          §x§F§F§E§8§1§7§oVery light and fragile.
+          §x§F§F§F§8§2§1§oA perfect source of calcium... for plants.
       minAmount: 1
       maxAmount: 3
 - !<mobzy:sounds>
