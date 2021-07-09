@@ -17,34 +17,32 @@
   drops:
     - item:
         type: COD
-        display-name: §x§4§5§4§5§4§5Hashofu Tail
+        display-name: §x§6§1§6§1§6§1Hashofu Tail
         custom-model-data: 3
         lore: |
-          §eObtained by cutting of the
-          §etail of a §x§6§1§6§1§6§1Hashofu §ein the
-          §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§5§9§5§9§5§9§oIt is said it tastes like sushi.
-          §x§5§9§5§9§5§9§oThough by it's smell I doubt it...
+          §eObtained from §x§6§1§6§1§6§1Hashofu §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§6§1§6§1§6§1§oSlimy firm tail, almost like an eel.
+          §x§6§1§6§1§6§1§oIt's like sashimi but the smell is unbearable.
       cooked:
         type: COOKED_COD
         display-name: §x§4§5§4§5§4§5Cooked Hashofu Tail
         custom-model-data: 3
         lore: |
-          §eObtained by cutting of the tail
-          §eof a §x§Hashofu §ein the
-          §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§5§9§5§9§5§9§oIt is said it tastes like sushi.
-          §x§5§9§5§9§5§9§oSmell isn't so unbearable anymore!
+          §eCooked meat of the §x§6§1§6§1§6§1Hashofu §efrom
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§6§1§6§1§6§1§oLooks fairly appetizing.
+          §x§6§1§6§1§6§1§oPerfectly fine seafood, smells way better now.
       dropChance: 0.8
     - item:
         type: FIRE_CHARGE
         display-name: §x§4§5§4§5§4§5Hashofu Eye
         custom-model-data: 1
         lore: |
-          §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§5§9§5§9§5§9§oThere is a fire in his eyes.
-
+          §eObtained from §x§6§1§6§1§6§1Hashofu §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§6§1§6§1§6§1§oScalding hot.
+          §x§6§1§6§1§6§1§oYou can probably start a fire with this.
       dropChance: 0.65
       maxAmount: 2
     - item:
@@ -52,10 +50,10 @@
         display-name: §x§4§5§4§5§4§5Hashofu Body
         custom-model-data: 1
         lore: |
-          §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§5§9§5§9§5§9§oSeems useless by itself.
-          §x§5§9§5§9§5§9§oPerhaps I should look for a vendor?
+          §eObtained from §x§6§1§6§1§6§1Hashofu §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§6§1§6§1§6§1§oSeems useless.
+          §x§6§1§6§1§6§1§oTraders in §x§F§F§A§8§1§2Orth §x§6§1§6§1§6§1§omight have more use for this.
       minAmount: 1
       maxAmount: 3
 - !<mobzy:pathfinders>
