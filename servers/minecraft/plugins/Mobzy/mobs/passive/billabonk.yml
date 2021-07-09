@@ -16,19 +16,19 @@
         type: COD
         display-name: §x§0§3§5§7§A§BRaw Billabonk Leg
         lore: |
-          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §eObtained from §x§0§3§5§7§A§BBillabonks §ein
           §ethe §aForest of Temptation§e.
-          §x§0§3§5§7§A§B§oDo the stanky leg
+          §x§0§3§5§7§A§B§oA step down from thighs.
+          §x§0§3§5§7§A§B§oDo the stanky leg.
         custom-model-data: 1
       cooked:
         type: COOKED_COD
         display-name: §x§0§3§5§7§A§BCooked Billabonk Leg
         lore: |
-          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §eCooked meat of the §x§0§3§5§7§A§BBillabonks §ein
           §ethe §aForest of Temptation§e.
-          §eCan also be obtained by cooking
-          §ea §x§0§3§5§7§A§BRaw Billabonk Leg§e.
-          §x§0§3§5§7§A§B§oDo the stanky leg
+          §x§0§3§5§7§A§B§oA step down from thighs.
+          §x§0§3§5§7§A§B§oDo the stanky leg.
         custom-model-data: 1
       maxAmount: 2
     - item:
@@ -36,9 +36,10 @@
         display-name: §x§0§3§5§7§A§BBillabonk Sac
         custom-model-data: 1
         lore: |
-          §eDropped by §x§0§3§5§7§A§BBillabonks §ein
+          §eObtained from §x§0§3§5§7§A§BBillabonks §ein
           §ethe §aForest of Temptation§e.
-          §eSeems to be poisonous, I best not eat it...
+          §x§0§3§5§7§A§B§oStretchy and translucent.
+          §x§0§3§5§7§A§B§oSeems to be poisonous.
       dropChance: 0.15
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.billabonk.ambient
