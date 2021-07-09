@@ -20,10 +20,10 @@
         display-name: §x§D§6§3§6§2§4Chimokami Tail
         custom-model-data: 1
         lore: |
-          §eA tuft of fur from the tail of the rarely
-          §eseen §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts
-          §emake their dens in the darker areas of
-          §ethe §aForest of Temptation§e.
+          §eObtained from §x§D§6§3§6§2§4Chimokami §in
+          §ethe §x§1§7§5§A§B§FForest of Temptation
+          §x§D§6§3§6§2§4§oA tuft of very comfortable fur
+          §x§D§6§3§6§2§4§oThis is probably the most comfortable material in the Abyss.
       minAmount: 1
       maxAmount: 3
     - item:
@@ -31,12 +31,10 @@
         display-name: §x§D§6§3§6§2§4Chimokami Fang
         custom-model-data: 2
         lore: |
-          §eA fang dropped from the rare
-          §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.
-          §x§A§8§2§A§1§CIt is said that these beasts house a
-          §x§A§8§2§A§1§Cspiritual fire within. This has been
-          §x§A§8§2§A§1§Cproven to be a hoax, however, their
-          §x§A§8§2§A§1§Cteeth are excellent firestarters.
+          §eObtained from §x§D§6§3§6§2§4Chimokami §in
+          §ethe §x§1§7§5§A§B§FForest of Temptation
+          §x§D§6§3§6§2§4§oVery sharp, great for ripping apart meat.
+          §x§D§6§3§6§2§4§oSaid to summon the spiritual fire within, an overstatement though.
       maxAmount: 2
       dropChance: 0.7
 - !<mobzy:pathfinders>
