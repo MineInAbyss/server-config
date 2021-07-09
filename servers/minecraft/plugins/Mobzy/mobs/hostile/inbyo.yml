@@ -18,32 +18,32 @@
   drops:
     - item:
         type: BLACK_WOOL
-        display-name: §x§3§D§3§D§3§DInbyo Fur
+        display-name: §x§6§3§6§3§6§3Inbyo Fur
         lore: |
-          §eAquired by skinning an §x§6§3§6§3§6§3Inbyo
-          §ein the §aInverted Forest§e.
-          §x§B§5§B§5§B§5§oThis stench is nauseating...
+          §eObtained from §x§6§3§6§3§6§3Inbyo §eat
+          §ethe §x§1§7§5§A§B§FInverted Forest§e.
+          §x§6§3§6§3§6§3§oRelatively comfortable, smells really bad though.
+          §x§6§3§6§3§6§3§oReminds me of sheep wool.
       minAmount: 1
       maxAmount: 3
     - item:
         type: BEEF
-        display-name: §x§3§D§3§D§3§DRaw Inbyo Meat
+        display-name: §x§6§3§6§3§6§3Raw Inbyo Meat
         custom-model-data: 1
         lore: |
-          §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-          §ein the §aInverted Forest.
-          §x§B§5§B§5§B§5§oDoesn't look very tasty...
+          §eObtained from §x§6§3§6§3§6§3Inbyo §ein
+          §ethe §x§1§7§5§A§B§FInverted Forest§e.
+          §x§6§3§6§3§6§3§oVery firm and smells really bad
+          §x§6§3§6§3§6§3§oDoesn't really look appetizing.
       cooked:
         type: COOKED_BEEF
-        display-name: §x§3§D§3§D§3§DCooked Inbyo Meat
+        display-name: §x§6§3§6§3§6§3Cooked Inbyo Meat
         custom-model-data: 1
         lore: |
-          §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-          §ewith fire in the §aInverted Forest.
-          §eCan also be prepared by cooking
-          §x§6§3§6§3§6§3Raw Inbyo Meat§e.
-          §x§B§5§B§5§B§5§0Seems more edible now, though
-          §x§B§5§B§5§B§5§ois still smells horrid...
+          §eCooked meat of §x§6§3§6§3§6§3Inbyo §efrom
+          §ethe §x§1§7§5§A§B§FInverted Forest§e.
+          §x§6§3§6§3§6§3§oVery gamey, almost like bear meat.
+          §x§6§3§6§3§6§3§oStill smells horrible.
       maxAmount: 2
 - !<mobzy:sounds>
 #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
