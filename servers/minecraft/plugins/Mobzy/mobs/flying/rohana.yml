@@ -17,26 +17,23 @@
   drops:
     - item:
         type: GLOWSTONE_DUST
-        display-name: §x§6§C§1§9§B§FRohana Powder
+        display-name: §x§A§F§2§1§C§CRohana Powder
         custom-model-data: 1
         lore: |
-          §eFine powder dropped from
-          §x§A§F§2§1§C§CRohanas §edeep in the §aForest of
-          §aTemptation §eor the §aGoblets of Giants§e.
-          §x§F§F§1§F§B§4§oThey glow faintly and can be
-          §x§F§F§1§F§B§4§oan impromptu light source.
+          §eObtained from §x§A§F§2§1§C§CRohanas §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants§e.
+          §x§A§F§2§1§C§C§oA fine luminous powder.
+          §x§A§F§2§1§C§C§oMight be used for light or potions.
       dropChance: 0.8
     - item:
         type: BLAZE_ROD
-        display-name: §x§6§C§1§9§B§FRohana Tail
+        display-name: §x§A§F§2§1§C§CRohana Tail
         custom-model-data: 1
         lore: |
-          §eRods rarely dropped from
-          §x§A§F§2§1§C§CRohana §edeep in the §aForest of
-          §aTemptation §eor the §aGoblets of Giants§e.
-          §x§F§F§1§F§B§4§oThey glow faintly and can
-          §x§F§F§1§F§B§4§obe used to make brewing stands
-          §x§F§F§1§F§B§4§oor other useful relics...
+          §eObtained from §x§A§F§2§1§C§CRohanas §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants§e.
+          §x§A§F§2§1§C§C§oA faintly luminous rod.
+          §x§A§F§2§1§C§C§oPerfect for a brewing stand.
       dropChance: 0.4
 - !<mobzy:pathfinders>
   targets:
