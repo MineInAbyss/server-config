@@ -32,24 +32,20 @@
         display-name: §x§9§C§0§F§2§CStingerhead Scale
         custom-model-data: 2
         lore: |
-          §eObtained from slaying
-          §ea §x§9§C§0§F§2§CStingerhead §efound in
-          §enests in the §aSea of Corpses§e.
-          §eIt is said to be the toughest
-          §ematerial in the §aAbyss§e.
-          §x§E§B§1§7§4§2§oPerhaps I can upgrade my
-          §x§E§B§1§7§4§2§oarmour with this?
+          §eObtained from §x§9§C§0§F§2§CStingerheads §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§9§C§0§F§2§C§oThe hardest and sturdiest material in the Abyss.
+          §x§9§C§0§F§2§C§oYou can use this to strengthen armor.
       maxAmount: 1
       dropChance: 0.25
     - item:
         type: ROTTEN_FLESH
         display-name: §x§9§C§0§F§2§CStingerhead Flesh
         lore: |
-          §eObtained from slaying a §x§9§C§0§F§2§CStingerhead
-          §efound in nests in the §aSea of Corpses§e.
-          §x§E§B§1§7§4§2§oThis is definetly not edible!
-          §x§E§B§1§7§4§2§oIt reeks of burned dried vomit, much
-          §x§E§B§1§7§4§2§olike Nanachi's Netherworld Stew.
+          §eObtained from §x§9§C§0§F§2§CStingerheads §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§9§C§0§F§2§C§oReeks of dried vomit, definitely not edible.
+          §x§9§C§0§F§2§C§oSmells like Nanachi's netherworld stew.
       minAmount: 1
       maxAmount: 2
       dropChance: 1.0
@@ -58,10 +54,10 @@
         display-name: §x§9§C§0§F§2§CStingerhead Eye
         custom-model-data: 2
         lore: |
-          §eObtained from slaying
-          §ea §x§9§C§0§F§2§CStingerhead §efound in
-          §enests in the §aSea of Corpses§e,
-          §eand plucking its eye out.
+          §eObtained from §x§9§C§0§F§2§CStingerheads §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§9§C§0§F§2§C§oStares right back at you.
+          §x§F§F§A§8§1§2Orth §x§C§7§4§0§4§0§otraders can refine these.
       maxAmount: 2
       dropChance: 0.4
 - !<mobzy:sounds>
