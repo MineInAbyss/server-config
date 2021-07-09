@@ -15,14 +15,13 @@
   drops:
     - item:
         type: INK_SAC
-        display-name: §x§A§9§C§C§C§AKazura Squid Ink Sac
+        display-name: §x§4§0§E§0§D§4Kazura Squid Ink Sac
         custom-model-data: 1
         lore: |
-          §eObtainable from §fKazura Squids,
-          §ecreatures that hatch from eggs at
-          §ethe bottom of the §aGreat Fault
-          §eand fall into the §aGoblets of Giants§e.
-          §x§8§0§7§E§7§8§oWhite Sac.
+          §eObtained from §§x§4§0§E§0§D§40Kazura Squids §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants§e.
+          §x§4§0§E§0§D§4§oDyes quite nicely.
+          §x§F§F§A§8§1§2Orth §x§4§0§E§0§D§4§otraders might be interested.
       minAmount: 1
       maxAmount: 2
 #- !<mobzy:pathfinders>
