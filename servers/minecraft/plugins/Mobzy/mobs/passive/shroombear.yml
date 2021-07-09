@@ -28,36 +28,29 @@
         display-name: §x§8§5§5§6§2§DShroombear Meat
         custom-model-data: 2
         lore: |
-          §eObtained by chasing down
-          §ea §x§8§5§5§6§2§DShroombear §ein the
-          §aGoblets of Giants§e.The meat
-          §eis edible and dark in colour.
-          §x§6§9§4§6§0§0§oMight smell like excrement
-          §x§6§9§4§6§0§0§oif I don't clean it well...
+          §eObtained from §x§8§5§5§6§2§DShroombears §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants.
+          §x§2§5§9§7§D§9§oSmells like excrement.
+          §x§2§5§9§7§D§9§oI doubt this is edible.
       cooked:
         type: COOKED_MUTTON
         display-name: §x§8§5§5§6§2§DCooked Shroombear Meat
         custom-model-data: 2
         lore: |
-          §eObtained by chasing down
-          §ea §x§8§5§5§6§2§DShroombear §ein the
-          §aGoblets of Giants§e. The meat
-          §eis edible and dark in colour.
-          §x§6§9§4§6§0§0§oMight smell like excrement
-          §x§6§9§4§6§0§0§oif I don't clean it well...
+          §eCooked meat of the §x§8§5§5§6§2§DShroombears §efrom
+          §ethe §x§9§E§1§E§8§4Goblets of Giants.
+          §x§2§5§9§7§D§9§oA gamey but hearty roast.
+          §x§2§5§9§7§D§9§oA bit more edible but still stinks.
       maxAmount: 2
       dropChance: 0.85
     - item:
         type: WARPED_FUNGUS
         display-name: §x§9§1§3§1§8§8Parasitic Watershrooms
         lore: |
-          §eMost commonly found growing
-          §eon §x§8§5§5§6§2§DShroombears §ein the
-          §aGoblets of Giants§e. §eSucks the
-          §enutrients from the host, releasing
-          §ethem back when host is near death.
-          §x§A§B§3§A§A§0§oPerhaps the nutrients can be a good
-          §x§A§B§3§A§A§0§osource for antidotes and recovery...
+          §eObtained from §x§8§5§5§6§2§DShroombears §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants.
+          §x§2§5§9§7§D§9§oA clump of fungus, seems useless.
+          §x§2§5§9§7§D§9§oYou can't seem to make use of it. Better to sell it instead.
       maxAmount: 2
       dropChance: 0.5
 - !<mobzy:sounds>
