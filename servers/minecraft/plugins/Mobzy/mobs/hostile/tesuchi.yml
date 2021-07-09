@@ -15,9 +15,13 @@
   drops:
     - item:
         type: DRIED_KELP
-        display-name: §2Tesuchi Scales
+        display-name: §x§4§C§B§B§1§7Tesuchi Scales
         custom-model-data: 1
-        lore: §a§oCrispy
+        lore: |
+          §eObtained from §x§4§C§B§B§1§7Tesuchi §ein
+          §ethe §x§1§7§5§A§B§FForest of Temptation§e.
+          §x§4§C§B§B§1§7§oCrispy and pretty useless.
+          §x§4§C§B§B§1§7§oTraders in §x§F§F§A§8§1§2Orth §x§4§C§B§B§1§7§omight have a use for these.
       minAmount: 1
       maxAmount: 3
       dropChance: 0.5
