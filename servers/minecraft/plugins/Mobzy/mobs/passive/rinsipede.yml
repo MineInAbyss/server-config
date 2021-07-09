@@ -18,10 +18,10 @@
         type: BONE_MEAL
         display-name: §x§F§F§F§F§9§9Rinsipede Segments
         lore: |
-          §eDropped by §x§F§F§F§F§9§9Rinsipede
-          §ein the §aGreat Fault§e.
-          §x§8§F§4§2§5§B§oI've heard their body makes
-          §x§8§F§4§2§5§B§ofor a great fertiliser.
+          §eObtained from §x§F§F§F§F§9§9Rinsipedes §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§C§4§2§D§2§D§oChopped-up parts of an insect.
+          §x§C§4§2§D§2§D§oA perfect fertilizer.
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
