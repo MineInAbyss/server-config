@@ -19,14 +19,13 @@
   drops:
     - item:
         type: PRISMARINE_SHARD
-        display-name: §x§1§C§4§3§9§EMadokajack Scales
+        display-name: §x§2§2§5§2§C§2Madokajack Scales
         custom-model-data: 1
         lore: |
-          §eDropped by §x§2§2§5§2§C§2Madokajacks §ein
-          §ethe §aGreat Fault§e. They don't
-          §eappear to have much of a purpose.
-          §x§3§6§9§A§F§F§oThough hard, these scales are
-          §x§3§6§9§A§F§F§oslimy and smell of feces?!
+          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§2§2§5§2§C§2§oSlimy and smells like excrement.
+          §x§2§2§5§2§C§2§oSeems useless, traders in §x§F§F§A§8§1§2Orth §x§2§2§5§2§C§2§omight be interested though.
       minAmount: 2
       maxAmount: 5
     - item:
@@ -34,9 +33,10 @@
         display-name: §x§1§C§4§3§9§EMadokajack Bone
         custom-model-data: 2
         lore: |
-          §eDropped by §x§2§2§5§2§C§2Madokajacks
-          §ein the §aGreat Fault§e.
-          §x§3§6§9§A§F§F§oEven their bones smell rancid.
+          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§2§2§5§2§C§2§oSlimy and rancid, disgusting.
+          §x§2§2§5§2§C§2§oTraders in §x§F§F§A§8§1§2Orth §x§2§2§5§2§C§2§omight want this.
       minAmount: 1
       maxAmount: 3
     - item:
@@ -44,34 +44,30 @@
         display-name: §x§1§C§4§3§9§EMadokajack Eye
         custom-model-data: 2
         lore: |
-          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein the
-          §aGreat Fault §eby killing it.
-          §eMight be useful in brewing potions.
-          §x§3§6§9§A§F§F§oWhy does it smell of shit?
-          §x§3§6§9§A§F§F§oWho nose...
+          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§2§2§5§2§C§2§oJust like the creature it came from, disgusting.
+          §x§2§2§5§2§C§2§oMight be useful in potion brewing.
       cooked:
         type: FERMENTED_SPIDER_EYE
         custom-model-data: 1
         display-name: §x§1§C§4§3§9§ERoasted Madokajack Eye
         lore: |
-          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein the
-          §aGreat Fault §eby killing it with fire.
-          §eMight be useful in brewing potions.
-          §x§3§6§9§A§F§F§oWhy did fermenting it remove the smell?
-          §x§3§6§9§A§F§F§oNo one nose...
+          §eObtained from burning §x§2§2§5§2§C§2Madokajacks §ealive in
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§2§2§5§2§C§2§oStrangely doesn't smell bad or feel disgusting.
+          §x§2§2§5§2§C§2§oWhy did fermenting get rid of the smell?
       maxAmount: 2
       dropChance: 0.3
     - item:
         type: PRISMARINE_CRYSTALS
-        display-name: §x§1§C§4§3§9§EMadokajack Poop
+        display-name: §x§1§C§4§3§9§EMadokajack Excrement
         custom-model-data: 1
         lore: |
-          §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
-          §ethe §aGreat Fault§e. They don't
-          §eappear to have much of a purpose.
-          §x§3§6§9§A§F§F§oSeems the Madokajack shat itself
-          §x§3§6§9§A§F§F§obefore it died. Strangely its
-          §x§3§6§9§A§F§F§odroppings do not smell like feces?!
+          §eObtained from burning §x§2§2§5§2§C§2Madokajacks §ealive in
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§2§2§5§2§C§2§oSurprisingly doesn't even smell like feces?
+          §x§2§2§5§2§C§2§oSeems useless, traders in §x§F§F§A§8§1§2Orth §x§2§2§5§2§C§2§omight be interested though.
       maxAmount: 1
       dropChance: 0.3
 - !<mobzy:sounds>
