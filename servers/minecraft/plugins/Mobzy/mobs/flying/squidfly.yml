@@ -20,21 +20,19 @@
         display-name: §x§8§5§5§1§2§ESquidfly Brain
         custom-model-data: 1
         lore: |
-          §eDropped by §x§8§5§5§1§2§ESquidflies
-          §ein the §aGreat Fault§e.
-          §x§C§2§7§6§4§3§oEating it raw might not
-          §x§C§2§7§6§4§3§obe the brighest idea
-          §x§C§2§7§6§4§3§oI've come up with...
+          §eObtained from §x§8§5§5§1§2§E9Squidfly §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§B§3§2§1§C§9§oSmooth but a bit slimy.
+          §x§B§3§2§1§C§9§oEating this raw might not be the best idea.
       cooked:
         type: BAKED_POTATO
         display-name: §x§8§5§5§1§2§ECooked Squidfly Brain
         custom-model-data: 1
         lore: |
-          §eDropped by §x§8§5§5§1§2§ESquidflies
-          §ein the §aGreat Fault§e.
-          §x§C§2§7§6§4§3§oPerhaps I will become smarter
-          §x§C§2§7§6§4§3§oif I consume this brain?
-      maxAmount: 1
+          §eCooked brain of the§x§8§5§5§1§2§E9Squidfly §efrom
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§B§3§2§1§C§9§oTexture is still the same, not as slimy now though.
+          §x§B§3§2§1§C§9§oWould I become smarter if I eat this? Probably not.
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
