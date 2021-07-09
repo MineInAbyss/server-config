@@ -19,19 +19,19 @@
         type: BONE_MEAL
         display-name: §x§C§4§2§D§2§DVirinsipede Segments
         lore: |
-          §eDropped by §x§C§4§2§D§2§DVirinsipede
-          §ein the §aGreat Fault§e.
-          §x§8§F§4§2§5§B§oI've heard their body makes
-          §x§8§F§4§2§5§B§ofor a great fertiliser.
+          §eObtained from §x§C§4§2§D§2§DVirinsipedes §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§C§4§2§D§2§D§oChopped-up parts of an insect.
+          §x§C§4§2§D§2§D§oPerfect fertilizer
       dropChance: 0.8
     - item:
         type: BLAZE_ROD
         display-name: §x§C§4§2§D§2§DVirinsipede Antlers
         lore: |
-          §eDropped by §x§C§4§2§D§2§DVirinsipede
-          §ein the §aGreat Fault.
-          §x§F§F§C§8§4§7§oBlazing hot, just like
-          §x§F§F§C§8§4§7§othe Virinsipede's rage.
+          §eObtained from §x§C§4§2§D§2§DVirinsipedes §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§C§4§2§D§2§D§oChopped-up parts of an insect.
+          §x§C§4§2§D§2§D§oPerfect fertilizer
       dropChance: 0.2
 - !<mobzy:pathfinders>
   goals:
