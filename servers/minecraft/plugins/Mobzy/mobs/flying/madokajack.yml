@@ -30,7 +30,7 @@
       maxAmount: 5
     - item:
         type: BONE
-        display-name: §x§1§C§4§3§9§EMadokajack Bone
+        display-name: §x§2§2§5§2§C§2Madokajack Bone
         custom-model-data: 2
         lore: |
           §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
@@ -41,7 +41,7 @@
       maxAmount: 3
     - item:
         type: SPIDER_EYE
-        display-name: §x§1§C§4§3§9§EMadokajack Eye
+        display-name: §x§2§2§5§2§C§2Madokajack Eye
         custom-model-data: 2
         lore: |
           §eObtained from §x§2§2§5§2§C§2Madokajacks §ein
@@ -51,7 +51,7 @@
       cooked:
         type: FERMENTED_SPIDER_EYE
         custom-model-data: 1
-        display-name: §x§1§C§4§3§9§ERoasted Madokajack Eye
+        display-name: §x§2§2§5§2§C§2Roasted Madokajack Eye
         lore: |
           §eObtained from burning §x§2§2§5§2§C§2Madokajacks §ealive in
           §ethe §x§D§4§2§8§B§1Great Fault§e.
@@ -61,7 +61,7 @@
       dropChance: 0.3
     - item:
         type: PRISMARINE_CRYSTALS
-        display-name: §x§1§C§4§3§9§EMadokajack Excrement
+        display-name: §x§2§2§5§2§C§2Madokajack Excrement
         custom-model-data: 1
         lore: |
           §eObtained from burning §x§2§2§5§2§C§2Madokajacks §ealive in
