@@ -29,32 +29,34 @@
   drops:
     - item:
         type: POPPED_CHORUS_FRUIT
-        display-name: §x§9§A§1§C§A§DSplitjaw Scales
+        display-name: §x§B§3§2§1§C§9Splitjaw Scales
         custom-model-data: 1
         lore: |
-          §eOccasionally dropped by §x§B§3§2§1§C§9Splitjaws
-          §r§ein the §aForest of Temptation
-          §r§eand the §aGreat Fault§e.
-          §r§d§oCan be used to
-          §r§d§omake certain blocks.
+          §eObtained from §x§B§3§2§1§C§9Splitjaws §ein
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss§e, the §x§1§7§5§A§B§FForest of Temptation §eand the §x§D§4§2§8§B§1Great Fault§e.
+          §x§B§3§2§1§C§9§oHard and sturdy
+          §x§B§3§2§1§C§9§oGiven enough of these, you can make a purple block.
       minAmount: 1
       maxAmount: 2
       dropChance: 0.7
     - item:
         type: SHULKER_SHELL
-        display-name: §x§9§A§1§C§A§DSplitjaw Shell
+        display-name: §x§B§3§2§1§C§9Splitjaw Shell
         lore: |
-          §eA very rare drop from §5Splitjaws
-          §ein the §aForest of
-          §aTemptation §eand the §aGreat Fault§e.
-          §x§C§8§2§5§E§0§oThey seem very sturdy and are
-          §x§C§8§2§5§E§0§ouseful as storage containers.
+          §eObtained from §x§B§3§2§1§C§9Splitjaws §ein
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss§e, the §x§1§7§5§A§B§FForest of Temptation §eand the §x§D§4§2§8§B§1Great Fault§e.
+          §x§B§3§2§1§C§9§oVery sturdy and waterproof.
+          §x§B§3§2§1§C§9§oYou can make a really good box out of this.
       dropChance: 0.1
     - item:
         type: SLIME_BALL
-        display-name: §x§3§8§E§0§1§6Splitjaw Gunk
+        display-name: §x§B§3§2§1§C§9Splitjaw Gunk
         custom-model-data: 2
-        lore: §x§4§0§F§F§1§9Yucky.
+        lore: |
+          §eObtained from §x§B§3§2§1§C§9Splitjaws §ein
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss§e, the §x§1§7§5§A§B§FForest of Temptation §eand the §x§D§4§2§8§B§1Great Fault§e.
+          §x§B§3§2§1§C§9§oSlimy, sticky, and yucky.
+          §x§B§3§2§1§C§9§oMight make for good glue.
       dropChance: 0.5
     - item:
         type: DIAMOND

@@ -14,11 +14,12 @@
   drops:
     - item:
         type: GUNPOWDER
-        display-name: §6Sakuranbo Dust
+        display-name: §x§F§F§A§A§0§0Sakuranbo Dust
         lore: |
-          §eExplosive powder obtained from
-          §6Sakuranbo §ein the §aGreat Fault§e.
-          §6§oSniffing it is probably a bad idea...
+          §eObtained from §x§F§F§A§A§0§0Sakuranbo §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§F§F§A§A§0§0§oExplosive powder.
+          §x§C§4§2§D§2§D§oBest not to inhale this.
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

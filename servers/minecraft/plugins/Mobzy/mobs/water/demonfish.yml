@@ -18,19 +18,19 @@
         display-name: §x§2§5§7§B§E§BRaw Demonfish
         custom-model-data: 1
         lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§2§5§7§B§E§BDemonfish §ein the
-          §ewaters of the §aSea of Corpses§e.
-          §x§1§B§5§B§A§D§oSeems like a great source for food!
+          §eObtained from §x§2§5§7§B§E§BDemonfish §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses.
+          §x§2§5§9§7§D§9§oFishy and meaty.
+          §x§2§5§9§7§D§9§oSeems like a great source of food.
       cooked:
         type: COOKED_SALMON
         display-name: §x§2§5§7§B§E§BCooked Demonfish
         custom-model-data: 1
         lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§2§5§7§B§E§BDemonfish §ein the
-          §ewaters of the §aSea of Corpses§e.
-          §x§1§B§5§B§A§D§oSeems like a great source for food!
+          §eCooked meat of the §x§2§5§7§B§E§BDemonfish §efrom
+          §ethe §x§3§B§3§B§3§BSea of Corpses.
+          §x§2§5§9§7§D§9§oAromatic and mouth-watering.
+          §x§2§5§9§7§D§9§oTastes great, grilling might be even better.
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.avoid_player>

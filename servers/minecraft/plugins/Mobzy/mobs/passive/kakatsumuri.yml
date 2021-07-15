@@ -19,10 +19,10 @@
         display-name: §x§7§D§9§3§F§FKakatsumuri Shell
         custom-model-data: 2
         lore: |
-          §eDropped by §x§7§D§9§3§F§FKakatsumuri
-          §ein the §aGreat Fault§e.
-          §x§B§8§F§F§B§A§oEven after death the shell
-          §x§B§8§F§F§B§A§ostill keeps it bright glow.
+          §eObtained from §x§7§D§9§3§F§FKakatsumuri §ein
+          §ethe §aGreat Fault§e.
+          §x§7§D§9§3§F§F§oSeems useless by itself.
+          §x§7§D§9§3§F§F§oEven after death, it still glows brightly.
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

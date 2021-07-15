@@ -18,19 +18,19 @@
         display-name: §x§1§B§9§1§B§5Raw Hamashirama
         custom-model-data: 2
         lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the
-          §ewaters of the §aSea of Corpses§e.
-          §x§A§7§5§9§F§FSeems like a great source for food!
+          §eObtained from §x§1§B§9§1§B§5Hamashirama §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses.
+          §x§1§B§9§1§B§5§oPacks a decent amount of meat.
+          §x§1§B§9§1§B§5§oThis makes for great sashimi.
       cooked:
         type: COOKED_SALMON
         display-name: §x§1§B§9§1§B§5Cooked Hamashirama
         custom-model-data: 2
         lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the
-          §ewaters of the §aSea of Corpses§e.
-          §x§A§7§5§9§F§FSeems like a great source for food!
+          §eCooked meat of the §x§1§B§9§1§B§5Hamashirama §efrom
+          §ethe §x§3§B§3§B§3§BSea of Corpses.
+          §x§1§B§9§1§B§5§oSavory and mouth-watering.
+          §x§1§B§9§1§B§5§oGrilling was a good call.
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.avoid_player>

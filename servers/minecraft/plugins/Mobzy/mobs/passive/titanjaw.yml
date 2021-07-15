@@ -18,11 +18,10 @@
         display-name: §x§3§C§3§B§4§ATitanjaw Scale
         custom-model-data: 1
         lore: |
-          §eCan be obtained by finding and
-          §echasing down a §x§3§C§3§B§4§ATitanjaw
-          §ein the §aSea of Corpses§e.
-          §x§0§C§7§7§8§7§oMight be useful to craft gear
-          §x§0§C§7§7§8§7§owith if I collect enough.
+          §eObtained from §x§3§C§3§B§4§ATitanjaws §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses
+          §x§2§5§9§7§D§9§oHard and sturdy.
+          §x§2§5§9§7§D§9§oYou can probably make a helmet out of this.
       minAmount: 0
       maxAmount: 2
     - item:
@@ -30,10 +29,10 @@
         display-name: §x§3§C§3§B§4§ATitanjaw Pearl
         custom-model-data: 1
         lore: |
-          §eCan be obtained by finding and
-          §echasing down a §x§3§C§3§B§4§ATitanjaw
-          §ein the §aSea of Corpses§e.
-          §x§0§C§7§7§8§7§oWhy do I feel like I am haunted...
+          §eObtained from §x§3§C§3§B§4§ATitanjaws §ein
+          §ethe §x§3§B§3§B§3§BSea of Corpses
+          §x§2§5§9§7§D§9§oA precious material.
+          §x§2§5§9§7§D§9§oIt feels haunted. §x§F§F§A§8§1§2Orth §x§2§5§9§7§D§9§otraders might be able to use it.
       dropChance: 0.2
 #- !<mobzy:rideable> {}
 - !<mobzy:pathfinders>

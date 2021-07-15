@@ -17,40 +17,42 @@
   drops:
     - item:
         type: LIME_DYE
-        display-name: §x§1§F§B§5§3§DKuongatari Juice
+        display-name: §x§2§5§D§6§4§8Kuongatari Juice
         custom-model-data: 1
         lore: |
-          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-          §aGoblets of Giants §eand the §aSea of Corpses§e.
-          §x§1§6§7§D§2§A§oSome call these bugs Amarathine-Deceptors
+          §eObtained from §x§2§5§D§6§4§8Kuongatari §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§2§5§D§6§4§8§oAcidic and stains a lot.
+          §x§2§5§D§6§4§8§oTraders in §x§F§F§A§8§1§2Orth §x§2§5§D§6§4§8o might need this.
       dropChance: 0.4
     - item:
         type: STRING
-        display-name: §x§1§F§B§5§3§DKuongatari Silk
+        display-name: §x§2§5§D§6§4§8Kuongatari Silk
         custom-model-data: 1
         lore: |
-          §eObtained from §x§2§5§D§6§4§8Kuongataris §ein
-          §ethe §aGoblets of Giants §eand
-          §ein the §aSea of Corpses§e.
-          §x§1§6§7§D§2§A§oA very thin, yet surprisingly
-          §x§1§6§7§D§2§A§otensile strand of silk.
+          §eObtained from §x§2§5§D§6§4§8Kuongatari §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§2§5§D§6§4§8§oA thin but tensile strand of silk.
+          §x§2§5§D§6§4§8§oVery strong and stretchy.
       dropChance: 0.7
     - item:
         type: KELP
-        display-name: §x§1§F§B§5§3§DKuongatari Abdomen
+        display-name: §x§2§5§D§6§4§8Kuongatari Abdomen
         custom-model-data: 1
         lore: |
-          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-          §aGoblets of Giants §eand the §aSea of Corpses§e.
-          §x§1§6§7§D§2§A§oPerhaps this could be cooked...
+          §eObtained from §x§2§5§D§6§4§8Kuongatari §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§2§5§D§6§4§8§oNot a lot of meat inside.
+          §x§2§5§D§6§4§8§oInsects are apparently a good source of protein.
       cooked:
         type: DRIED_KELP
-        display-name: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+        display-name: §x§2§5§D§6§4§8Cooked Kuongatari Abdomen
         custom-model-data: 2
         lore: |
-          §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-          §aGoblets of Giants §eand the §aSea of Corpses§e.
-          §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
+          §eCooked meat of the §x§2§5§D§6§4§8Kuongatari §efrom
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§2§5§D§6§4§8§oVery juicy and crispy.
+          §x§2§5§D§6§4§8§oTastes surprisingly good.
       dropChance: 0.8
 - !<mobzy:pathfinders>
   goals:

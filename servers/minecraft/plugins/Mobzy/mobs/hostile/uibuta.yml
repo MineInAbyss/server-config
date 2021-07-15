@@ -21,20 +21,19 @@
         display-name: §x§8§F§2§2§2§2Raw Uibuta Meat
         custom-model-data: 3
         lore: |
-          §eObtained by carving up the
-          §ecorpse of an §x§8§F§2§2§2§2Uibuta §ein the
-          §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§C§4§2§F§2§F§oA thick layer of fat clings to the meat.
-          §x§C§4§2§F§2§F§oCooking it should help making it edible.
+          §eObtained from §x§8§F§2§2§2§2Uibuta §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants§e.
+          §x§8§F§2§2§2§2§oCovered by a thick layer of fat. 
+          §x§8§F§2§2§2§2§oRoasting might help make this more edible.
       cooked:
         type: COOKED_PORKCHOP
         display-name: §x§8§F§2§2§2§2Cooked Uibuta Meat
         custom-model-data: 3
         lore: |
-          §eDue to proper preparations,
-          §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
-          §x§C§4§2§F§2§F§oThis should be enough food
-          §x§C§4§2§F§2§F§oto last for daaaaayyss!!
+          §eObtained from §x§8§F§2§2§2§2Uibuta §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants§e.
+          §x§8§F§2§2§2§2§oA hearty meal.
+          §x§8§F§2§2§2§2§oEnough calories to help you kill another §x§8§F§2§2§2§2Uibuta §x§8§F§2§2§2§2§ofor food.
       minAmount: 2
       maxAmount: 6
 - !<mobzy:sounds>

@@ -22,21 +22,20 @@
         display-name: §x§5§C§4§7§1§DRaw Onitsuchi Wing
         custom-model-data: 2
         lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§A§9§C§C§C§A§oThis meat seems delicious
-          §x§A§9§C§C§C§A§oif cooked properly!
+          §eObtained from §x§5§C§4§7§1§DOnitsuchis §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§5§C§4§7§1§D§oA fine cut of meat.
+          §x§5§C§4§7§1§D§oThis meat seems delicious if cooked properly.
 
       cooked:
         type: COOKED_COD
         display-name: §x§5§C§4§7§1§DCooked Onitsuchi Wing
         custom-model-data: 2
         lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §eCan also be acquired from cooking
-          §x§7§0§5§7§2§3Raw Onitsuchi Meat§e.
-          §x§A§9§C§C§C§A§oThis tastes delicious!
+          §eObtained from §x§5§C§4§7§1§DOnitsuchis §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§5§C§4§7§1§D§oFinely roasted.
+          §x§5§C§4§7§1§D§oSavory and delicious.
       minAmount: 1
       maxAmount: 3
     - item:
@@ -44,12 +43,10 @@
         display-name: §x§5§C§4§7§1§DOnitsuchi Skull
         custom-model-data: 5
         lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §eCan be used as a fire starter
-          §ewhen combined with a little steel.
-          §x§A§9§C§C§C§A§oIt seems sharp enough
-          §x§A§9§C§C§C§A§oto put an eye out.
+          §eObtained from §x§5§C§4§7§1§DOnitsuchis §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§5§C§4§7§1§D§oInsanely sharp.
+          §x§5§C§4§7§1§D§oGives off sparks when hit.
       maxAmount: 1
       dropChance: 0.4
     - item:
@@ -57,10 +54,10 @@
         display-name: §x§5§C§4§7§1§DOnitsuchi Feather
         custom-model-data: 2
         lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§A§9§C§C§C§A§oIt looks very
-          §x§A§9§C§C§C§A§ocombustible.
+          §eObtained from §x§5§C§4§7§1§DOnitsuchis §ein
+          §ethe §x§9§E§1§E§8§4Goblets of Giants §eand the §x§3§B§3§B§3§BSea of Corpses§e.
+          §x§5§C§4§7§1§D§oVery dry and stiff.
+          §x§5§C§4§7§1§D§oNot usable for anything, might as use it as fuel.
       minAmount: 1
       maxAmount: 3
 - !<mobzy:pathfinders>

@@ -14,12 +14,12 @@
   drops:
     - item:
         type: MUTTON
-        display-name: §x§B§D§B§D§B§DRaw Neritantan Meat
+        display-name: §x§E§B§E§B§E§BRaw Neritantan Meat
         lore: |
-          §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
-          §efound §edeep in the caverns of the §aGreat Fault§e.
-          §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
-          §f§oDo not get in between a Neritantan and a Baracocha fruit!
+          §eObtained from §x§E§B§E§B§E§BNeritantans §ein
+          §ethe §x§D§4§2§8§B§1Great Fault§e.
+          §x§E§B§E§B§E§B§oVery tasty as they mostly eat §x§3§3§0§0§3§3Baracocha fruit.
+          §x§E§B§E§B§E§B§oDon't get in-between a Neritantan and a §x§3§3§0§0§3§3Baracocha fruit!
       cooked:
         type: COOKED_MUTTON
         display-name: §x§B§D§B§D§B§DCooked Neritantan Meat

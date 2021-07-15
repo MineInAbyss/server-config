@@ -21,23 +21,19 @@
         type: CHICKEN
         display-name: §x§3§D§D§F§F§FRaw Cyatoria Meat
         lore: |
-          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
-          §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
-          §eSaid to be the offspring of a
-          §erare creature originating from
-          §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
-          §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
+          §eObtained from §x§3§D§D§F§F§FCyatoria §ein
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss §eand the §x§1§7§5§A§B§FForest of Temptation§e.
+          §x§3§D§D§F§F§F§oLooks like a normal cut of bird meat.
+          §x§3§D§D§F§F§F§oI have a feeling that this tastes like chicken.
         custom-model-data: 1
       cooked:
         type: COOKED_CHICKEN
         display-name: §x§3§D§D§F§F§FCooked Cyatoria Meat
         lore: |
-          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
-          §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
-          §eSaid to be the offspring of a
-          §erare creature originating from
-          §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
-          §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
+          §eCooked meat of the §x§3§D§D§F§F§FCyatoria §efrom
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss §eand the §x§1§7§5§A§B§FForest of Temptation§e.
+          §x§3§D§D§F§F§F§oA well-roasted hearty cut of bird meat.
+          §x§3§D§D§F§F§F§oTastes quite similar to chicken.
         custom-model-data: 1
       minAmount: 1
       maxAmount: 2
@@ -46,11 +42,10 @@
         display-name: §x§3§D§D§F§F§FCyatoria Feather
         custom-model-data: 2
         lore: |
-          §eDropped by §x§3§D§D§F§F§FCyatoria §eat
-          §ethe §aEdge of the Abyss
-          §eand in §aForest of Temptation§e.
-          §x§5§4§F§F§A§4§oIt resembles the feathers
-          §x§5§4§F§F§A§4§oof a §x§3§D§D§F§F§FSakawatari§x§5§4§F§F§A§4§o...
+          §eObtained from §x§3§D§D§F§F§FCyatoria §ein
+          §ethe §x§D§B§4§0§4§0Edge of the Abyss §eand the §x§1§7§5§A§B§FForest of Temptation§e.
+          §x§3§D§D§F§F§F§oResembles the feathers of a §x§4§0§E§0§D§40Sakawatari§x§3§D§D§F§F§F. 
+          §x§3§D§D§F§F§F§oMight be perfect for a quill.
       minAmount: 1
       maxAmount: 4
       dropChance: 0.7
