@@ -1,0 +1,30 @@
+bonfireRecipe:
+  key: 'bonfire:bonfire'
+  ingredients:
+    items:
+      S:
+        type: STICK
+      C:
+        type: CAMPFIRE
+      F:
+        type: FLINT_AND_STEEL
+    configuration: |-
+      SSS
+      SFS
+      SCS
+  result:
+    type: CAMPFIRE
+    amount: 1
+    custom-model-data: 1
+    display-name: §x§f§f§9§d§2§6Bonfire
+maxPlayerCount: 4
+bonfireExpirationTime: 1m
+expirationCheckInterval: 10s
+respawnSetSound:
+  sound: block.ladder.step
+  volume: 1f
+  pitch: 1.5f
+respawnUnsetSound:
+  sound: block.ladder.step
+  volume: 1f
+  pitch: 0.5f
