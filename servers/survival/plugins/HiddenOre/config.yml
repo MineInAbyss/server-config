@@ -15,8 +15,8 @@ tools:
       dropChance: 1.0
       minAmount: 0.0
       maxAmount: 0.0
-worlds:
-  LayerOneLower:
+regions:
+  layerone:
     blocks:
       default:
         materials:
@@ -117,7 +117,7 @@ worlds:
             chance: 0.0005
             minAmount: 1
             maxAmount: 4
-  LayerTwo:
+  layertwo:
     blocks:
       default:
         materials:
@@ -211,7 +211,7 @@ worlds:
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
-  LayerThree:
+  layerthree:
     blocks:
       default:
         materials:
@@ -327,7 +327,7 @@ worlds:
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
-  LayerFour:
+  layerfour:
     blocks:
       # flowers:
       #   materials:
@@ -482,7 +482,7 @@ worlds:
             chance: 0.0005
             minAmount: 1
             maxAmount: 4
-  LayerFive:
+  layerfive:
     blocks:
       ice:
         materials:
