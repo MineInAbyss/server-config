@@ -22,6 +22,8 @@ layers:
       start: -1
       end: 0
     sections: [city]
+    blockBlacklist:
+      - LADDER
   - name: §x§D§B§4§0§4§0Edge of the Abyss
     sub: §x§B§A§1§E§1§E0-1350 meters
     deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f :redw:§f
@@ -36,6 +38,8 @@ layers:
       - !<particles>
         <<: *vomit
     sections: [l1s1,l1s2,l1s3,l1s4,l1s5,l1s6]
+    blockBlacklist:
+      - LADDER
   - name: §x§1§7§5§A§B§FForest of Temptation
     deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
     sub: §x§2§8§6§F§B§F1350-2600 meters
@@ -58,6 +62,8 @@ layers:
       - !<particles>
         <<: *vomit
     sections: [l2s1,l2s2,l2s3,l2s4,l2s5]
+    blockBlacklist:
+      - LADDER
   - name: §x§D§4§2§8§B§1Great Fault
     sub: §x§E§8§2§C§C§22600–7000 meters
     deathMessage: in the §x§D§4§2§8§B§1Great Fault§f :moonw:§f
