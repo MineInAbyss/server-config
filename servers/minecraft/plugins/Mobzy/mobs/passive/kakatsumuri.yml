@@ -23,6 +23,17 @@
           §ein the §aGreat Fault§e.
           §x§B§8§F§F§B§A§oEven after death the shell
           §x§B§8§F§F§B§A§ostill keeps it bright glow.
+    - item:
+        type: GLOW_INK_SAC
+        display-name: §x§7§D§9§3§F§FKakatsumuri Glowing Tip
+        custom-model-data: 2
+        lore: |
+          §eDropped by §x§7§D§9§3§F§FKakatsumuri
+          §ein the §aGreat Fault§e.
+          §x§B§8§F§F§B§A§oThe very tip of the shell, it seems
+          §x§B§8§F§F§B§A§oto leak a glowing sticky substance.
+      maxAmount: 1
+      dropChance: 0.3
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
