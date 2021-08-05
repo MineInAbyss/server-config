@@ -24,7 +24,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -41,7 +41,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -52,7 +52,7 @@ regions:
           green_terracotta:
             material: GREEN_TERRACOTTA
           blue_terracotta:
-            material: BLUE_TERRACOTTA 
+            material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
           coal_ore:
@@ -72,9 +72,9 @@ regions:
               type: IRON_ORE
             tools:
             - anything
-            chance: 0.01
+            chance: 0.015
             minAmount: 1
-            maxAmount: 8
+            maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
           gold_ore:
@@ -83,40 +83,11 @@ regions:
               type: GOLD_ORE
             tools:
             - anything
-            chance: 0.001437
+            chance: 0.001
             minAmount: 1
-            maxAmount: 4
+            maxAmount: 3
             transformIfAble: true
             transformDropIfFails: false
-          sand:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: SAND
-            tools:
-            - anything
-            chance: 0.005
-            minAmount: 3
-            maxAmount: 12
-            transformIfAble: false
-            transformDropIfFails: false
-          melon_seed:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: MELON_SEEDS
-            tools:
-            - anything
-            chance: 0.0005
-            minAmount: 1
-            maxAmount: 4
-          pumpkin_seed:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: PUMPKIN_SEEDS
-            tools:
-            - anything
-            chance: 0.0005
-            minAmount: 1
-            maxAmount: 4
   layertwo:
     blocks:
       default:
@@ -125,7 +96,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -142,7 +113,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -153,7 +124,7 @@ regions:
           green_terracotta:
             material: GREEN_TERRACOTTA
           blue_terracotta:
-            material: BLUE_TERRACOTTA 
+            material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
           coal_ore:
@@ -173,10 +144,21 @@ regions:
               type: IRON_ORE
             tools:
             - anything
-            chance: 0.01
+            chance: 0.015
             minAmount: 3
             maxAmount: 8
             transformIfAble: true
+            transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: COPPER_ORE
+            tools:
+              - anything
+            chance: 0.0015
+            minAmount: 1
+            maxAmount: 4
+            tansformIfAble: true
             transformDropIfFails: false
           gold_ore:
             package:
@@ -184,7 +166,7 @@ regions:
               type: GOLD_ORE
             tools:
             - anything
-            chance: 0.001437
+            chance: 0.0015
             minAmount: 2
             maxAmount: 6
             transformIfAble: true
@@ -219,7 +201,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -236,7 +218,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -247,7 +229,7 @@ regions:
           green_terracotta:
             material: GREEN_TERRACOTTA
           blue_terracotta:
-            material: BLUE_TERRACOTTA 
+            material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
           coal_ore:
@@ -272,13 +254,33 @@ regions:
             maxAmount: 8
             transformIfAble: true
             transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: COPPER_ORE
+            tools:
+              - anything
+            chance: 0.001
+            minAmount: 1
+            maxAmount: 4
+            tansformIfAble: true
+            transformDropIfFails: false
+          amethyst_shard:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_SHARD
+            tools:
+              - anything
+            chance: 0.0001
+            minAmount: 1
+            maxAmount: 4
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
               type: GOLD_ORE
             tools:
             - anything
-            chance: 0.001437
+            chance: 0.0015
             minAmount: 2
             maxAmount: 6
             transformIfAble: true
@@ -343,7 +345,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -360,7 +362,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -371,7 +373,7 @@ regions:
           green_terracotta:
             material: GREEN_TERRACOTTA
           blue_terracotta:
-            material: BLUE_TERRACOTTA 
+            material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
           coal_ore:
@@ -396,13 +398,33 @@ regions:
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: COPPER_ORE
+            tools:
+              - anything
+            chance: 0.015
+            minAmount: 1
+            maxAmount: 4
+            tansformIfAble: true
+            transformDropIfFails: false
+          amethyst_shard:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_SHARD
+            tools:
+              - anything
+            chance: 0.005
+            minAmount: 2
+            maxAmount: 6
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
               type: GOLD_ORE
             tools:
             - anything
-            chance: 0.001437
+            chance: 0.0015
             minAmount: 2
             maxAmount: 6
             transformIfAble: true
@@ -486,11 +508,11 @@ regions:
     blocks:
       ice:
         materials:
-          ice: 
+          ice:
             material: ICE
-          packed_ice: 
+          packed_ice:
             material: PACKED_ICE
-          blue_ice: 
+          blue_ice:
             material: BLUE_ICE
         dropMultiple: false
         drops:
@@ -509,7 +531,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -526,7 +548,7 @@ regions:
             material: ANDESITE
           diorite:
             material: DIORITE
-          granite: 
+          granite:
             material: GRANITE
           stone:
             material: STONE
@@ -537,7 +559,7 @@ regions:
           green_terracotta:
             material: GREEN_TERRACOTTA
           blue_terracotta:
-            material: BLUE_TERRACOTTA 
+            material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
           coal_ore:
@@ -562,6 +584,26 @@ regions:
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: COPPER_ORE
+            tools:
+              - anything
+            chance: 0.02
+            minAmount: 1
+            maxAmount: 4
+            tansformIfAble: true
+            transformDropIfFails: false
+          amethyst_shard:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_SHARD
+            tools:
+              - anything
+            chance: 0.01
+            minAmount: 2
+            maxAmount: 8
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
