@@ -1,6 +1,7 @@
 bungee_servers:
   - name: bungee
 minecraft_servers:
-  - name: survival
-  - name: build
+# TODO Disabled while we test config updates with new plugin versions
+#   - name: survival
+#   - name: build
   - name: adventure
