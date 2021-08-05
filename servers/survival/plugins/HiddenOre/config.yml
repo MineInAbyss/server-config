@@ -92,6 +92,8 @@ regions:
     blocks:
       default:
         materials:
+          calcite:
+            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -153,6 +155,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: COPPER_ORE
+                v: 0
             tools:
               - anything
             chance: 0.0015
@@ -197,6 +200,8 @@ regions:
     blocks:
       default:
         materials:
+          calcite:
+            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -258,6 +263,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: COPPER_ORE
+                v: 0
             tools:
               - anything
             chance: 0.001
@@ -269,6 +275,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: AMETHYST_SHARD
+                v: 0
             tools:
               - anything
             chance: 0.0001
@@ -341,6 +348,8 @@ regions:
       #       command: 'mz spawn kuongatari'
       default:
         materials:
+          calcite:
+            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -402,6 +411,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: COPPER_ORE
+                v: 0
             tools:
               - anything
             chance: 0.015
@@ -413,6 +423,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: AMETHYST_SHARD
+                v: 0
             tools:
               - anything
             chance: 0.005
@@ -506,25 +517,6 @@ regions:
             maxAmount: 4
   layerfive:
     blocks:
-      ice:
-        materials:
-          ice:
-            material: ICE
-          packed_ice:
-            material: PACKED_ICE
-          blue_ice:
-            material: BLUE_ICE
-        dropMultiple: false
-        drops:
-          eye_of_ender:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: ENDER_PEARL
-            tools:
-            - anything
-            chance: 0.01
-            minAmount: 1
-            maxAmount: 1
       default:
         materials:
           andesite:
@@ -588,6 +580,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: COPPER_ORE
+                v: 0
             tools:
               - anything
             chance: 0.02
@@ -599,6 +592,7 @@ regions:
             package:
               - ==: org.bukkit.inventory.ItemStack
                 type: AMETHYST_SHARD
+                v: 0
             tools:
               - anything
             chance: 0.01
