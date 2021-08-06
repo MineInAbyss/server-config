@@ -88,6 +88,17 @@ regions:
             maxAmount: 3
             transformIfAble: true
             transformDropIfFails: false
+          redstone_ore:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: REDSTONE_ORE
+            tools:
+            - anything
+            chance: 0.001
+            minAmount: 1
+            maxAmount: 4
+            transformIfAble: true
+            transformDropIfFails: false
   layertwo:
     blocks:
       default:
@@ -195,6 +206,17 @@ regions:
             minAmount: 3
             maxAmount: 12
             transformIfAble: false
+            transformDropIfFails: false
+          redstone_ore:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: REDSTONE_ORE
+            tools:
+            - anything
+            chance: 0.0012
+            minAmount: 1
+            maxAmount: 4
+            transformIfAble: true
             transformDropIfFails: false
   layerthree:
     blocks:
