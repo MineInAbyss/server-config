@@ -18,7 +18,7 @@ bonfireRecipe:
     custom-model-data: 1
     display-name: §x§f§f§9§d§2§6Bonfire
 maxPlayerCount: 4
-bonfireExpirationTime: 1m
+bonfireExpirationTime: 1w
 expirationCheckInterval: 10s
 respawnSetSound:
   sound: block.ladder.step
