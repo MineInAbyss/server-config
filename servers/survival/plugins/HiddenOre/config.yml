@@ -55,6 +55,17 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
+          gravel:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: GRAVEL
+            tools:
+            - anything
+            chance: 0.001
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
+            transformDropIfFails: false
           coal_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -140,6 +151,29 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
+          gravel:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: GRAVEL
+            tools:
+            - anything
+            chance: 0.0005
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
+            transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: COPPER_ORE
+                v: 0
+            tools:
+              - anything
+            chance: 0.015
+            minAmount: 1
+            maxAmount: 4
+            tansformIfAble: true
+            transformDropIfFails: false
           coal_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -161,18 +195,6 @@ regions:
             minAmount: 3
             maxAmount: 8
             transformIfAble: true
-            transformDropIfFails: false
-          copper_ore:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: COPPER_ORE
-                v: 0
-            tools:
-              - anything
-            chance: 0.0015
-            minAmount: 1
-            maxAmount: 4
-            tansformIfAble: true
             transformDropIfFails: false
           gold_ore:
             package:
@@ -259,6 +281,26 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
+          amethyst_shard:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_SHARD
+                v: 0
+            tools:
+              - anything
+            chance: 0.005
+            minAmount: 2
+            maxAmount: 6
+          amethyst_cluster:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_CLUSTER
+                v: 0
+            tools:
+              - anything
+            chance: 0.002
+            minAmount: 2
+            maxAmount: 4
           coal_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -281,28 +323,6 @@ regions:
             maxAmount: 8
             transformIfAble: true
             transformDropIfFails: false
-          copper_ore:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: COPPER_ORE
-                v: 0
-            tools:
-              - anything
-            chance: 0.001
-            minAmount: 1
-            maxAmount: 4
-            tansformIfAble: true
-            transformDropIfFails: false
-          amethyst_shard:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: AMETHYST_SHARD
-                v: 0
-            tools:
-              - anything
-            chance: 0.0001
-            minAmount: 1
-            maxAmount: 4
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -429,28 +449,6 @@ regions:
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
-          copper_ore:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: COPPER_ORE
-                v: 0
-            tools:
-              - anything
-            chance: 0.015
-            minAmount: 1
-            maxAmount: 4
-            tansformIfAble: true
-            transformDropIfFails: false
-          amethyst_shard:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: AMETHYST_SHARD
-                v: 0
-            tools:
-              - anything
-            chance: 0.005
-            minAmount: 2
-            maxAmount: 6
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -598,28 +596,6 @@ regions:
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
-          copper_ore:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: COPPER_ORE
-                v: 0
-            tools:
-              - anything
-            chance: 0.02
-            minAmount: 1
-            maxAmount: 4
-            tansformIfAble: true
-            transformDropIfFails: false
-          amethyst_shard:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: AMETHYST_SHARD
-                v: 0
-            tools:
-              - anything
-            chance: 0.01
-            minAmount: 2
-            maxAmount: 8
           gold_ore:
             package:
             - ==: org.bukkit.inventory.ItemStack
