@@ -55,23 +55,12 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
-          gravel:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GRAVEL
-            tools:
-            - anything
-            chance: 0.001
-            minAmount: 3
-            maxAmount: 12
-            transformIfAble: false
-            transformDropIfFails: false
           coal_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: COAL_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: COAL_ORE
             tools:
-            - anything
+              - anything
             chance: 0.01
             minAmount: 3
             maxAmount: 10
@@ -79,10 +68,10 @@ regions:
             transformDropIfFails: false
           iron_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: IRON_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: IRON_ORE
             tools:
-            - anything
+              - anything
             chance: 0.015
             minAmount: 1
             maxAmount: 4
@@ -90,32 +79,19 @@ regions:
             transformDropIfFails: false
           gold_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GOLD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GOLD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.001
             minAmount: 1
             maxAmount: 3
-            transformIfAble: true
-            transformDropIfFails: false
-          redstone_ore:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: REDSTONE_ORE
-            tools:
-            - anything
-            chance: 0.001
-            minAmount: 1
-            maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
   layertwo:
     blocks:
       default:
         materials:
-          calcite:
-            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -151,35 +127,12 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
-          gravel:
-            package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GRAVEL
-            tools:
-            - anything
-            chance: 0.0005
-            minAmount: 3
-            maxAmount: 12
-            transformIfAble: false
-            transformDropIfFails: false
-          copper_ore:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: COPPER_ORE
-                v: 0
-            tools:
-              - anything
-            chance: 0.015
-            minAmount: 1
-            maxAmount: 4
-            tansformIfAble: true
-            transformDropIfFails: false
           coal_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: COAL_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: COAL_ORE
             tools:
-            - anything
+              - anything
             chance: 0.01
             minAmount: 3
             maxAmount: 10
@@ -187,21 +140,33 @@ regions:
             transformDropIfFails: false
           iron_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: IRON_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: IRON_ORE
             tools:
-            - anything
+              - anything
             chance: 0.015
             minAmount: 3
             maxAmount: 8
             transformIfAble: true
             transformDropIfFails: false
+          copper_ore:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: RAW_COPPER
+                v: 0
+            tools:
+              - anything
+            chance: 0.015
+            minAmount: 1
+            maxAmount: 6
+            tansformIfAble: false
+            transformDropIfFails: false
           gold_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GOLD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GOLD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.0015
             minAmount: 2
             maxAmount: 6
@@ -209,10 +174,10 @@ regions:
             transformDropIfFails: false
           emerald_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: EMERALD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: EMERALD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.000300
             minAmount: 1
             maxAmount: 2
@@ -220,32 +185,30 @@ regions:
             transformDropIfFails: false
           sand:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: SAND
+              - ==: org.bukkit.inventory.ItemStack
+                type: SAND
             tools:
-            - anything
+              - anything
             chance: 0.005
             minAmount: 3
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
-          redstone_ore:
+          gravel:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: REDSTONE_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GRAVEL
             tools:
-            - anything
-            chance: 0.0012
-            minAmount: 1
-            maxAmount: 4
-            transformIfAble: true
+              - anything
+            chance: 0.001
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
             transformDropIfFails: false
   layerthree:
     blocks:
       default:
         materials:
-          calcite:
-            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -281,32 +244,12 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
-          amethyst_shard:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: AMETHYST_SHARD
-                v: 0
-            tools:
-              - anything
-            chance: 0.005
-            minAmount: 2
-            maxAmount: 6
-          amethyst_cluster:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: AMETHYST_CLUSTER
-                v: 0
-            tools:
-              - anything
-            chance: 0.002
-            minAmount: 2
-            maxAmount: 4
           coal_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: COAL_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: COAL_ORE
             tools:
-            - anything
+              - anything
             chance: 0.04
             minAmount: 3
             maxAmount: 5
@@ -314,21 +257,31 @@ regions:
             transformDropIfFails: false
           iron_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: IRON_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: IRON_ORE
             tools:
-            - anything
+              - anything
             chance: 0.015
             minAmount: 3
             maxAmount: 8
             transformIfAble: true
             transformDropIfFails: false
+          amethyst_shard:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: AMETHYST_SHARD
+                v: 0
+            tools:
+              - anything
+            chance: 0.0015
+            minAmount: 1
+            maxAmount: 4
           gold_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GOLD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GOLD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.0015
             minAmount: 2
             maxAmount: 6
@@ -336,10 +289,10 @@ regions:
             transformDropIfFails: false
           redstone_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: REDSTONE_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: REDSTONE_ORE
             tools:
-            - anything
+              - anything
             chance: 0.001425
             minAmount: 1
             maxAmount: 4
@@ -347,10 +300,10 @@ regions:
             transformDropIfFails: false
           lapis_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: LAPIS_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: LAPIS_ORE
             tools:
-            - anything
+              - anything
             chance: 0.000597
             minAmount: 1
             maxAmount: 3
@@ -358,10 +311,10 @@ regions:
             transformDropIfFails: false
           diamond_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: DIAMOND_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: DIAMOND_ORE
             tools:
-            - anything
+              - anything
             chance: 0.0005427
             minAmount: 1
             maxAmount: 3
@@ -369,10 +322,10 @@ regions:
             transformDropIfFails: false
           gravel:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GRAVEL
+              - ==: org.bukkit.inventory.ItemStack
+                type: GRAVEL
             tools:
-            - anything
+              - anything
             chance: 0.005
             minAmount: 3
             maxAmount: 12
@@ -390,8 +343,6 @@ regions:
       #       command: 'mz spawn kuongatari'
       default:
         materials:
-          calcite:
-            material: CALCITE
           andesite:
             material: ANDESITE
           diorite:
@@ -429,10 +380,10 @@ regions:
         drops:
           coal_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: COAL_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: COAL_ORE
             tools:
-            - anything
+              - anything
             chance: 0.02
             minAmount: 3
             maxAmount: 5
@@ -440,10 +391,10 @@ regions:
             transformDropIfFails: false
           iron_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: IRON_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: IRON_ORE
             tools:
-            - anything
+              - anything
             chance: 0.03
             minAmount: 2
             maxAmount: 4
@@ -451,10 +402,10 @@ regions:
             transformDropIfFails: false
           gold_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GOLD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GOLD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.0015
             minAmount: 2
             maxAmount: 6
@@ -462,10 +413,10 @@ regions:
             transformDropIfFails: false
           redstone_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: REDSTONE_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: REDSTONE_ORE
             tools:
-            - anything
+              - anything
             chance: 0.002425
             minAmount: 2
             maxAmount: 6
@@ -473,10 +424,10 @@ regions:
             transformDropIfFails: false
           emerald_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: EMERALD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: EMERALD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.000600
             minAmount: 2
             maxAmount: 6
@@ -484,10 +435,10 @@ regions:
             transformDropIfFails: false
           lapis_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: LAPIS_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: LAPIS_ORE
             tools:
-            - anything
+              - anything
             chance: 0.000597
             minAmount: 2
             maxAmount: 7
@@ -495,10 +446,10 @@ regions:
             transformDropIfFails: false
           diamond_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: DIAMOND_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: DIAMOND_ORE
             tools:
-            - anything
+              - anything
             chance: 0.0011427
             minAmount: 1
             maxAmount: 3
@@ -506,10 +457,10 @@ regions:
             transformDropIfFails: false
           gravel:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GRAVEL
+              - ==: org.bukkit.inventory.ItemStack
+                type: GRAVEL
             tools:
-            - anything
+              - anything
             chance: 0.005
             minAmount: 3
             maxAmount: 12
@@ -517,10 +468,10 @@ regions:
             transformDropIfFails: false
           sand:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: SAND
+              - ==: org.bukkit.inventory.ItemStack
+                type: SAND
             tools:
-            - anything
+              - anything
             chance: 0.005
             minAmount: 3
             maxAmount: 12
@@ -528,15 +479,34 @@ regions:
             transformDropIfFails: false
           prismarine:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: PRISMARINE_CRYSTALS
+              - ==: org.bukkit.inventory.ItemStack
+                type: PRISMARINE_CRYSTALS
             tools:
-            - anything
+              - anything
             chance: 0.0005
             minAmount: 1
             maxAmount: 4
   layerfive:
     blocks:
+      ice:
+        materials:
+          ice:
+            material: ICE
+          packed_ice:
+            material: PACKED_ICE
+          blue_ice:
+            material: BLUE_ICE
+        dropMultiple: false
+        drops:
+          eye_of_ender:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: ENDER_PEARL
+            tools:
+              - anything
+            chance: 0.01
+            minAmount: 1
+            maxAmount: 1
       default:
         materials:
           andesite:
@@ -576,10 +546,10 @@ regions:
         drops:
           coal_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: COAL_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: COAL_ORE
             tools:
-            - anything
+              - anything
             chance: 0.01
             minAmount: 2
             maxAmount: 5
@@ -587,21 +557,21 @@ regions:
             transformDropIfFails: false
           iron_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: IRON_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: IRON_ORE
             tools:
-            - anything
-            chance: 0.01
+              - anything
+            chance: 0.02
             minAmount: 1
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
           gold_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: GOLD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: GOLD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.001437
             minAmount: 1
             maxAmount: 4
@@ -609,21 +579,21 @@ regions:
             transformDropIfFails: false
           redstone_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: REDSTONE_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: REDSTONE_ORE
             tools:
-            - anything
-            chance: 0.001425
+              - anything
+            chance: 0.0015
             minAmount: 1
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
           emerald_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: EMERALD_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: EMERALD_ORE
             tools:
-            - anything
+              - anything
             chance: 0.000300
             minAmount: 1
             maxAmount: 3
@@ -631,39 +601,50 @@ regions:
             transformDropIfFails: false
           lapis_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: LAPIS_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: LAPIS_ORE
             tools:
-            - anything
-            chance: 0.003000
+              - anything
+            chance: 0.003
             minAmount: 2
             maxAmount: 6
             transformIfAble: true
           diamond_ore:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: DIAMOND_ORE
+              - ==: org.bukkit.inventory.ItemStack
+                type: DIAMOND_ORE
             tools:
-            - anything
-            chance: 0.0022
+              - anything
+            chance: 0.0025
             minAmount: 2
             maxAmount: 4
             transformIfAble: true
           quartz:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: QUARTZ
+              - ==: org.bukkit.inventory.ItemStack
+                type: QUARTZ
             tools:
-            - anything
+              - anything
             chance: 0.0009
             minAmount: 1
             maxAmount: 4
           soul_sand:
             package:
-            - ==: org.bukkit.inventory.ItemStack
-              type: SOUL_SAND
+              - ==: org.bukkit.inventory.ItemStack
+                type: SOUL_SAND
             tools:
-            - anything
+              - anything
             chance: 0.0003
             minAmount: 1
             maxAmount: 4
+          gravel:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: GRAVEL
+            tools:
+              - anything
+            chance: 0.004
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
+            transformDropIfFails: false
