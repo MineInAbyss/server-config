@@ -55,6 +55,17 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
+          gravel:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: GRAVEL
+            tools:
+            - anything
+            chance: 0.001
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
+            transformDropIfFails: false
           coal_ore:
             package:
               - ==: org.bukkit.inventory.ItemStack
@@ -86,6 +97,17 @@ regions:
             chance: 0.001
             minAmount: 1
             maxAmount: 3
+            transformIfAble: true
+            transformDropIfFails: false
+          redstone_ore:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: REDSTONE_ORE
+            tools:
+            - anything
+            chance: 0.001
+            minAmount: 1
+            maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
   layertwo:
@@ -170,6 +192,17 @@ regions:
             chance: 0.0015
             minAmount: 2
             maxAmount: 6
+            transformIfAble: true
+            transformDropIfFails: false
+          redstone_ore:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: REDSTONE_ORE
+            tools:
+            - anything
+            chance: 0.001
+            minAmount: 1
+            maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
           emerald_ore:
