@@ -48,7 +48,7 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 50
-    2: !<minecraft:target.nearby_player> {}
+    2: !<minecraft:target.nearby_player> { }
   goals:
     1: !<mobzy:behavior.throw_items>
       spawn:

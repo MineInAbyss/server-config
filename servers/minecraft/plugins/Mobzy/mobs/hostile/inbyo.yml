@@ -26,7 +26,7 @@
         prefab: looty:inbyo_meat_cooked
       maxAmount: 2
 - !<mobzy:sounds>
-#    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
+  #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
 - !<mobzy:pathfinders>

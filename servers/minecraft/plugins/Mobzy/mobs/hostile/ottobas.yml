@@ -26,7 +26,7 @@
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death
   hurt: mineinabyss:entity.ottobas.hurt
-- !<mobzy:rideable> {}
+- !<mobzy:rideable> { }
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

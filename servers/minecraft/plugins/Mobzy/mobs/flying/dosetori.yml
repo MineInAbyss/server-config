@@ -39,14 +39,14 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 100
-    2: !<minecraft:target.nearby_player> {}
+    2: !<minecraft:target.nearby_player> { }
   goals:
-    1: !<mobzy:behavior.flying_damage_target> {}
+    1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.flying_dive_on_target>
       diveVelocity: -0.5000
       minHeight: 7
       maxHeight: 10
       startDiveDistance: 10
       bashVelMultiplier: 0.5000
-    3: !<mobzy:behavior.fly_towards_target> {}
-    4: !<mobzy:behavior.idle_fly> {}
+    3: !<mobzy:behavior.fly_towards_target> { }
+    4: !<mobzy:behavior.idle_fly> { }

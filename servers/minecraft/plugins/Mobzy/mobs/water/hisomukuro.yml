@@ -11,16 +11,16 @@
   knockbackResistance: 0.8000
   followRange: 40
   width: 3
-# - !<geary:events>
-#   onTargetHit:
-#     - !<on.target>
-#       - !<geary:apply_potion_effects>
-#         effects:
-#           - type: BLINDNESS
-#             duration: 5s
-#             amplifier: 1
-#             ambient: true
-#         applyChance: 0.4
+  # - !<geary:events>
+  #   onTargetHit:
+  #     - !<on.target>
+  #       - !<geary:apply_potion_effects>
+  #         effects:
+  #           - type: BLINDNESS
+  #             duration: 5s
+  #             amplifier: 1
+  #             ambient: true
+  #         applyChance: 0.4
   height: 2.4000
 - !<mobzy:death_loot>
   minExp: 200
@@ -41,8 +41,8 @@
       maxAmount: 4
 - !<mobzy:pathfinders>
   targets:
-    1: !<minecraft:target.damager> {}
-    2: !<minecraft:target.nearby_player> {}
+    1: !<minecraft:target.damager> { }
+    2: !<minecraft:target.nearby_player> { }
   goals:
     1: !<minecraft:behavior.melee_attack>
-        seeThroughWalls: true
+      seeThroughWalls: true

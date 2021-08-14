@@ -23,10 +23,10 @@
       dropChance: 0.4000
 - !<mobzy:pathfinders>
   targets:
-    1: !<mobzy:target.attacker>
+    1: !<mobzy:target.attacker> { }
   goals:
-    1: !<mobzy:behavior.flying_damage_target> {}
-    2: !<mobzy:behavior.fly_towards_target> {}
+    1: !<mobzy:behavior.flying_damage_target> { }
+    2: !<mobzy:behavior.fly_towards_target> { }
     3: !<mobzy:behavior.idle_fly_above_ground>
       maxHeight: 4
       radius: 5
