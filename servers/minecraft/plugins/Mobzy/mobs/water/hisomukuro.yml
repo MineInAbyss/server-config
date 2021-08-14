@@ -8,10 +8,9 @@
   movementSpeed: 5
   attackDamage: 35
   attackKnockback: 2
-  knockbackResistance: 0.8
+  knockbackResistance: 0.8000
   followRange: 40
   width: 3
-  height: 2.4
 # - !<geary:events>
 #   onTargetHit:
 #     - !<on.target>
@@ -22,45 +21,22 @@
 #             amplifier: 1
 #             ambient: true
 #         applyChance: 0.4
+  height: 2.4000
 - !<mobzy:death_loot>
   minExp: 200
   maxExp: 250
   drops:
     - item:
-        type: BLACKSTONE_WALL
-        display-name: §x§C§7§B§C§A§DHisomukuro Fin
-        custom-model-data: 1
-        lore: |
-          §eCan be obtained by finding
-          §ea §x§C§7§B§C§A§DHisomukuro §ein the waters
-          §eof the §aSea of Corpses§e.
-          §x§5§2§4§D§4§7§oAlmost drowned getting this!
-          §x§5§2§4§D§4§7§oDoesn't seem very useful..
-          §x§5§2§4§D§4§7§oPerhaps I could sell it to a vendor?
-      minAmount: 0
+        prefab: looty:hisomukuro_fin
+      minAmount:
       maxAmount: 2
-      dropChance: 0.6
+      dropChance: 0.6000
     - item:
-        type: SALMON
-        display-name: §x§2§5§7§B§E§BRaw Demonfish
-        custom-model-data: 1
-        lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§2§5§7§B§E§BDemonfish §ein the
-          §ewaters of the §aEdge of the Abyss
-          §eand the §aGoblets of Giants§e.
-          §x§1§B§5§B§A§D§oSeems like a great source for food!
+        prefab: looty:demonfish_raw
       minAmount: 1
       maxAmount: 4
     - item:
-        type: SALMON
-        display-name: §x§1§B§9§1§B§5Raw Hamashirama
-        custom-model-data: 2
-        lore: |
-          §eCan be obtained by finding and
-          §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the
-          §ewaters of the §aSea of Corpses§e.
-          §x§A§7§5§9§F§FSeems like a great source for food!
+        prefab: looty:hamashirama_raw
       minAmount: 1
       maxAmount: 4
 - !<mobzy:pathfinders>

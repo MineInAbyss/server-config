@@ -5,10 +5,10 @@
   id: 86
 - !<mobzy:attributes>
   maxHealth: 200
-  movementSpeed: 0.5
+  movementSpeed: 0.5000
   attackDamage: 40
   attackKnockback: 2
-  knockbackResistance: 0.5
+  knockbackResistance: 0.5000
   followRange: 25
   width: 2
   height: 3
@@ -22,48 +22,24 @@
             amplifier: 5
           - type: HARM
             amplifier: 1
-        applyChance: 0.8
+        applyChance: 0.8000
 - !<mobzy:death_loot>
   minExp: 400
   maxExp: 500
   drops:
     - item:
-        type: NETHERITE_SCRAP
-        display-name: §x§9§C§0§F§2§CStingerhead Scale
-        custom-model-data: 2
-        lore: |
-          §eObtained from slaying
-          §ea §x§9§C§0§F§2§CStingerhead §efound in
-          §enests in the §aSea of Corpses§e.
-          §eIt is said to be the toughest
-          §ematerial in the §aAbyss§e.
-          §x§E§B§1§7§4§2§oPerhaps I can upgrade my
-          §x§E§B§1§7§4§2§oarmour with this?
+        prefab: looty:stingerhead_scale
       maxAmount: 1
-      dropChance: 0.25
+      dropChance: 0.2500
     - item:
-        type: ROTTEN_FLESH
-        display-name: §x§9§C§0§F§2§CStingerhead Flesh
-        lore: |
-          §eObtained from slaying a §x§9§C§0§F§2§CStingerhead
-          §efound in nests in the §aSea of Corpses§e.
-          §x§E§B§1§7§4§2§oThis is definetly not edible!
-          §x§E§B§1§7§4§2§oIt reeks of burned dried vomit, much
-          §x§E§B§1§7§4§2§olike Nanachi's Netherworld Stew.
+        prefab: looty:stingerhead_flesh
       minAmount: 1
       maxAmount: 2
-      dropChance: 1.0
+      dropChance: 1.0000
     - item:
-        type: FERMENTED_SPIDER_EYE
-        display-name: §x§9§C§0§F§2§CStingerhead Eye
-        custom-model-data: 2
-        lore: |
-          §eObtained from slaying
-          §ea §x§9§C§0§F§2§CStingerhead §efound in
-          §enests in the §aSea of Corpses§e,
-          §eand plucking its eye out.
+        prefab: looty:stingerhead_eye
       maxAmount: 2
-      dropChance: 0.4
+      dropChance: 0.4000
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.stingerhead.ambient
   death: mineinabyss:entity.stingerhead.death
@@ -93,4 +69,4 @@
                     duration: 6s
                     amplifier: 5
     2: !<minecraft:behavior.leap_at_target>
-      jumpHeight: 0.3
+      jumpHeight: 0.3000

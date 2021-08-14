@@ -5,8 +5,8 @@
   id: 56
 - !<mobzy:attributes>
   maxHealth: 10
-  movementSpeed: 0.2
-  knockbackResistance: 0.2
+  movementSpeed: 0.2000
+  knockbackResistance: 0.2000
   width: 2
   height: 2
 - !<mobzy:death_loot>
@@ -14,37 +14,14 @@
   maxExp: 30
   drops:
     - item:
-        type: INK_SAC
-        display-name: §x§F§F§7§7§1§CMakihige Ink Sac
-        custom-model-data: 2
-        lore: |
-          §eDropped from the passive and
-          §eone-eyed §x§F§F§9§7§2§1Makihige§e.
-          §x§5§2§2§1§A§6§oWith this you might be able to
-          §x§5§2§2§1§A§6§odo something. Probably not though
+        prefab: looty:makihige_ink_sac
       minAmount: 1
       maxAmount: 2
     - item:
-        type: OBSIDIAN
-        display-name: §x§F§F§7§7§1§CMakihige Shell
-        lore: |
-          §eCan be obtained from slaughtering an
-          §einnocent and friendly §x§F§F§9§7§2§1Makihige
-          §ein the §aGoblets of Giants §eor
-          §ein the §aSea of Corpses§e.
-          §x§5§2§2§1§A§6§oIt used to be the home to a
-          §x§5§2§2§1§A§6§oMakihige. Not anymore...
-      dropChance: 0.2
+        prefab: looty:makihige_shell
+      dropChance: 0.2000
     - item:
-        type: LEATHER
-        display-name: §x§F§F§7§7§1§CMakihige Tentacle
-        custom-model-data: 1
-        lore: |
-          §eObtained by cutting it of an
-          §einnocent §x§F§F§9§7§2§1Makihige§e.
-          §eThis friendly creature can be found in the
-          §aGoblets of Giants §eand the §aSea of Corpses§e.
-          §x§5§2§2§1§A§6§oNot sure what this would be useful for...
+        prefab: looty:makihige_tentacle
       minAmount: 1
       maxAmount: 2
 - !<mobzy:increased_water_speed>

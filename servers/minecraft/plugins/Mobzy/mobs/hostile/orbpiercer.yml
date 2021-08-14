@@ -5,13 +5,13 @@
   id: 17
 - !<mobzy:attributes>
   maxHealth: 100
-  movementSpeed: 0.5
+  movementSpeed: 0.5000
   attackDamage: 25
   attackKnockback: 5
-  knockbackResistance: 0.8
+  knockbackResistance: 0.8000
   followRange: 40
-  width: 1.9
-  height: 2.5
+  width: 1.9000
+  height: 2.5000
 - !<geary:events>
   onTargetHit:
     - !<on.target>
@@ -21,37 +21,17 @@
             duration: 5s
             amplifier: 5
             ambient: true
-        applyChance: 0.6
+        applyChance: 0.6000
 - !<mobzy:death_loot>
   minExp: 230
   maxExp: 260
   drops:
     - item:
-        type: QUARTZ
-        display-name: §x§A§6§3§5§3§5Orb Piercer Spike
-        custom-model-data: 1
-        lore: |
-          §eObtained from slaying an §x§C§7§4§0§4§0Orb Piercer
-          §eand collecting the spikes it sheds.
-          §eFiercely territorial, they claim the nearby
-          §ewaters and §aFlat-Creepers §ein the
-          §aGoblets of Giants§e as their own.
-          §eAvoid them at all cost!
-          §x§D§9§D§9§D§9§oTheir spines contain a very
-          §x§D§9§D§9§D§9§opotent venom, so take caution!
+        prefab: looty:orb_piercer_spike
       minAmount: 4
       maxAmount: 7
     - item:
-        type: NETHER_WART
-        display-name: §x§C§7§4§0§4§0Orb Piercer Face Fragments
-        custom-model-data: 1
-        lore: |
-          §eApparently the red orb on the
-          §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them
-          §eto see the §aCurse of the Abyss§e.
-          §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
-          §x§D§9§D§9§D§9§obe able to see it as well?
-          §x§D§9§D§9§D§9§oProbably just wishful thinking...
+        prefab: looty:orb_piercer_face_fragments
       minAmount: 1
       maxAmount: 3
 - !<mobzy:sounds>
@@ -64,9 +44,9 @@
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<mobzy:behavior.throw_items>
-      minThrowRad: 10.0
-      projectileSpeed: 1.5
-      projectileAngularDiameter: 8.0
+      minThrowRad: 10.0000
+      projectileSpeed: 1.5000
+      projectileAngularDiameter: 8.0000
       projectileCountPerThrow: 10
       cooldown: 4000
       spawn:

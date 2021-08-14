@@ -9,58 +9,26 @@
   followRange: 40
   attackDamage: 5
   attackKnockback: 2
-  knockbackResistance: 0.16
+  knockbackResistance: 0.1600
   flyingSpeed: 13
-  width: 2.25
-  height: 1.5
+  width: 2.2500
+  height: 1.5000
 - !<mobzy:death_loot>
   minExp: 60
   maxExp: 80
   drops:
     - item:
-        type: COD
-        display-name: §x§5§C§4§7§1§DRaw Onitsuchi Wing
-        custom-model-data: 2
-        lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§A§9§C§C§C§A§oThis meat seems delicious
-          §x§A§9§C§C§C§A§oif cooked properly!
-
+        prefab: looty:onitsuchi_wing_raw
       cooked:
-        type: COOKED_COD
-        display-name: §x§5§C§4§7§1§DCooked Onitsuchi Wing
-        custom-model-data: 2
-        lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §eCan also be acquired from cooking
-          §x§7§0§5§7§2§3Raw Onitsuchi Meat§e.
-          §x§A§9§C§C§C§A§oThis tastes delicious!
+        prefab: looty:onitsuchi_wing_cooked
       minAmount: 1
       maxAmount: 3
     - item:
-        type: FLINT
-        display-name: §x§5§C§4§7§1§DOnitsuchi Skull
-        custom-model-data: 5
-        lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §eCan be used as a fire starter
-          §ewhen combined with a little steel.
-          §x§A§9§C§C§C§A§oIt seems sharp enough
-          §x§A§9§C§C§C§A§oto put an eye out.
+        prefab: looty:onitsuchi_skull
       maxAmount: 1
-      dropChance: 0.4
+      dropChance: 0.4000
     - item:
-        type: CHARCOAL
-        display-name: §x§5§C§4§7§1§DOnitsuchi Feather
-        custom-model-data: 2
-        lore: |
-          §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-          §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-          §x§A§9§C§C§C§A§oIt looks very
-          §x§A§9§C§C§C§A§ocombustible.
+        prefab: looty:onitsuchi_feather
       minAmount: 1
       maxAmount: 3
 - !<mobzy:pathfinders>
@@ -72,10 +40,10 @@
     1: !<minecraft:behavior.float> {}
     2: !<mobzy:behavior.flying_damage_target> {}
     3: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: 0.5
+      diveVelocity: 0.5000
       minHeight: 3
       maxHeight: 6
       startDiveDistance: 15
-      bashVelMultiplier: 0.5
+      bashVelMultiplier: 0.5000
     4: !<mobzy:behavior.fly_towards_target> {}
     5: !<mobzy:behavior.idle_fly> {}

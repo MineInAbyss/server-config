@@ -6,7 +6,7 @@
   id: 1
 - !<mobzy:attributes>
   maxHealth: 500000
-  movementSpeed: 0
+  movementSpeed:
   attackDamage: 60
   followRange: 10
   width: 2

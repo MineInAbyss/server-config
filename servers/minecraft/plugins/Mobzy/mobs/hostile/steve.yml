@@ -5,10 +5,10 @@
   id: 59
 - !<mobzy:attributes>
   maxHealth: 30
-  movementSpeed: 0.3
+  movementSpeed: 0.3000
   attackDamage: 14
   attackKnockback: 2
-  knockbackResistance: 0.5
+  knockbackResistance: 0.5000
   followRange: 20
   width: 2
   height: 7
@@ -17,49 +17,19 @@
   maxExp: 25
   drops:
     - item:
-        type: HEART_OF_THE_SEA
-        display-name: §x§2§5§9§7§D§9Steve Eye
-        lore: |
-          §eCan be obtained by hunting down
-          §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.
-          §x§8§2§4§E§2§1§o
-          §x§8§2§4§E§2§1§o
-      dropChance: 0.1
+        prefab: looty:steve_eye
+      dropChance: 0.1000
     - item:
-        type: DRAGON_BREATH
-        display-name: §x§2§5§9§7§D§9Steve Piss
-        lore: |
-          §eCan be obtained by hunting down
-          §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.
-          §x§8§2§4§E§2§1§o
-          §x§8§2§4§E§2§1§o
-      dropChance: 0.2
+        prefab: looty:steve_piss
+      dropChance: 0.2000
     - item:
-        type: DEAD_HORN_CORAL
-        display-name: §x§2§5§9§7§D§9Steve Antlers
-        lore: |
-          §eCan be obtained by hunting down
-          §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.
-          §x§8§2§4§E§2§1§o
-          §x§8§2§4§E§2§1§o
+        prefab: looty:steve_antlers
       maxAmount: 4
     - item:
-        type: DEAD_BRAIN_CORAL
-        display-name: §x§2§5§9§7§D§9Steve Antlers
-        lore: |
-          §eCan be obtained by hunting down
-          §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.
-          §x§8§2§4§E§2§1§o
-          §x§8§2§4§E§2§1§o
+        prefab: looty:steve_antlers
       maxAmount: 4
     - item:
-        type: DEAD_FIRE_CORAL
-        display-name: §x§2§5§9§7§D§9Steve Antlers
-        lore: |
-          §eCan be obtained by hunting down
-          §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.
-          §x§8§2§4§E§2§1§o
-          §x§8§2§4§E§2§1§o
+        prefab: looty:steve_antlers
       maxAmount: 4
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.steve.ambient
