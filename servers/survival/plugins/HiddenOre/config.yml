@@ -110,6 +110,17 @@ regions:
             maxAmount: 4
             transformIfAble: true
             transformDropIfFails: false
+           nether_star:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: NETHER_STAR
+            tools:
+            - anything
+            chance: 0.0000000000000000000000000000000000000000000000001
+            minAmount: 1
+            maxAmount: 1
+            
+            
   layertwo:
     blocks:
       default:
@@ -238,6 +249,15 @@ regions:
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
+           nether_star:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: NETHER_STAR
+            tools:
+            - anything
+            chance: 0.0000000000000000000000000000000000000000000000001
+            minAmount: 1
+            maxAmount: 1
   layerthree:
     blocks:
       default:
@@ -364,6 +384,15 @@ regions:
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
+           nether_star:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: NETHER_STAR
+            tools:
+            - anything
+            chance: 0.0000000000000000000000000000000000000000000000001
+            minAmount: 1
+            maxAmount: 1
   layerfour:
     blocks:
       # flowers:
@@ -519,6 +548,15 @@ regions:
             chance: 0.0005
             minAmount: 1
             maxAmount: 4
+           nether_star:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: NETHER_STAR
+            tools:
+            - anything
+            chance: 0.0000000000000000000000000000000000000000000000001
+            minAmount: 1
+            maxAmount: 1
   layerfive:
     blocks:
       ice:
@@ -681,3 +719,12 @@ regions:
             maxAmount: 12
             transformIfAble: false
             transformDropIfFails: false
+           nether_star:
+            package:
+            - ==: org.bukkit.inventory.ItemStack
+              type: NETHER_STAR
+            tools:
+            - anything
+            chance: 0.0000000000000000000000000000000000000000000000001
+            minAmount: 1
+            maxAmount: 1
