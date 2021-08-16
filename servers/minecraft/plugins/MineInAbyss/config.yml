@@ -21,7 +21,7 @@ layers:
     depth:
       start: -1
       end: 0
-    sections: [city]
+    sections: [orth]
     blockBlacklist:
       - LADDER
   - name: §x§D§B§4§0§4§0Edge of the Abyss
@@ -37,7 +37,7 @@ layers:
         effects: [HUNGER]
       - !<particles>
         <<: *vomit
-    sections: [l1s1,l1s2,l1s3,l1s4,l1s5,l1s6]
+    sections: [l1s1,l1s2,l1s3]
     blockBlacklist:
       - LADDER
   - name: §x§1§7§5§A§B§FForest of Temptation
@@ -61,7 +61,7 @@ layers:
           - POISON
       - !<particles>
         <<: *vomit
-    sections: [l2s1,l2s2,l2s3,l2s4,l2s5]
+    sections: [l2s1,l2s2]
     blockBlacklist:
       - LADDER
   - name: §x§D§4§2§8§B§1Great Fault
@@ -111,7 +111,7 @@ layers:
           - entity.chicken.step
           - entity.chicken.ambient
           - entity.creeper.primed
-    sections: [l3s1,l3s2,l3s3,l3s4,l3s5,l3s6,l3s7]
+    sections: [l3s1,l3s2]
   - name: §x§9§E§1§E§8§4The Goblets of Giants
     sub: §x§7§7§2§3§7§A7000–12000 meters
     deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
@@ -149,7 +149,7 @@ layers:
           - entity.arrow.shoot
           - ambient.cave
           - entity.creeper.primed
-    sections: [l4s1,l4s2,l4s3,l4s4,l4s5,l4s6,l4s7,l4s8]
+    sections: [l4s1,l4s2,l4s3,l4s4]
   - name: §x§3§B§3§B§3§BSea of Corpses
     sub: §x§5§4§5§4§5§412000–13000 meters
     deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
@@ -185,4 +185,4 @@ layers:
         sounds:
           - ambient.cave
           - ambient.underwater.loop.additions.ultra.rare
-    sections: [l5s1,l5s2,l5s3,l5s4,l5s5]
+    sections: [l5s1,l5s2,l5s3]
