@@ -766,7 +766,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -777,13 +777,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: MAGMA_CREAM
-        amount: 10
+        amount: 4
     '2':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -794,7 +794,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: RABBIT_FOOT
-        amount: 16
+        amount: 4
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -839,7 +839,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -850,7 +850,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: SPIDER_EYE
-        amount: 9
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -906,7 +906,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -938,7 +938,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -949,7 +949,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: GHAST_TEAR
-        amount: 6
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1088,7 +1088,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 2
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1148,7 +1148,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: NETHER_QUARTZ_ORE
-        amount: 10
+        amount: 12
     '5':
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -1165,7 +1165,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: MAGMA_BLOCK
-        amount: 15
+        amount: 12
     '6':
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -1199,7 +1199,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: NETHER_GOLD_ORE
-        amount: 29
+        amount: 24
 '23':
   uniqueId: 296e610c-3c7e-4cd3-909c-6b647ccc3c78
   name: '&c&lNorah The Warped'
@@ -1401,7 +1401,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1418,7 +1418,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1435,7 +1435,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1452,7 +1452,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1469,7 +1469,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1486,7 +1486,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1503,7 +1503,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1520,7 +1520,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1537,7 +1537,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1554,7 +1554,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1571,7 +1571,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1588,7 +1588,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1605,7 +1605,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1622,7 +1622,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1639,7 +1639,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1656,7 +1656,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 2
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1703,7 +1703,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1714,13 +1714,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: OAK_SAPLING
-        amount: 64
+        amount: 24
     '2':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1731,13 +1731,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: SPRUCE_SAPLING
-        amount: 64
+        amount: 24
     '3':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1748,13 +1748,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: BIRCH_SAPLING
-        amount: 64
+        amount: 24
     '4':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1765,13 +1765,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: JUNGLE_SAPLING
-        amount: 64
+        amount: 24
     '5':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1782,13 +1782,13 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: ACACIA_SAPLING
-        amount: 64
+        amount: 24
     '6':
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -1799,7 +1799,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: DARK_OAK_SAPLING
-        amount: 64
+        amount: 24
     '7':
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -1965,7 +1965,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: WHEAT_SEEDS
-        amount: 34
+        amount: 36
     '4':
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -2309,7 +2309,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: HONEY_BLOCK
-        amount: 34
+        amount: 40
     '6':
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -2481,7 +2481,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 16
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -2502,7 +2502,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 18
+        amount: 9
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -2523,7 +2523,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 16
+        amount: 7
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -2544,7 +2544,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 14
+        amount: 5
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -2565,7 +2565,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 20
+        amount: 9
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -3483,7 +3483,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 8
+        amount: 16
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -3545,7 +3545,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -3835,7 +3835,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 9
+        amount: 5
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -3852,7 +3852,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 7
+        amount: 4
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -3981,6 +3981,8 @@ data-version: 2|2730
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 2730
+        
+        
         type: NETHER_QUARTZ_ORE
         amount: 16
 '67':
@@ -4235,7 +4237,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 10
+        amount: 4
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -4269,7 +4271,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 10
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -4286,7 +4288,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 12
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -6719,7 +6721,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: POPPED_CHORUS_FRUIT
-        amount: 10
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -6752,7 +6754,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: SLIME_BALL
-        amount: 9
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -6862,7 +6864,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: FEATHER
-        amount: 10
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -6897,7 +6899,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: BLAZE_ROD
-        amount: 10
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -6935,7 +6937,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: GLOWSTONE_DUST
-        amount: 20
+        amount: 10
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7005,7 +7007,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: BONE
-        amount: 10
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7037,7 +7039,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: ENDER_EYE
-        amount: 8
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7067,7 +7069,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: FEATHER
-        amount: 10
+        amount: 7
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7095,7 +7097,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: FLINT
-        amount: 8
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7134,7 +7136,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: CHARCOAL
-        amount: 10
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7168,7 +7170,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: FLINT
-        amount: 9
+        amount: 5
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7206,7 +7208,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: CHARCOAL
-        amount: 13
+        amount: 7
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7239,7 +7241,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: LIME_DYE
-        amount: 13
+        amount: 10
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7271,7 +7273,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: KELP
-        amount: 13
+        amount: 10
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7303,7 +7305,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: PRISMARINE_SHARD
-        amount: 14
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7339,7 +7341,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: BONE
-        amount: 14
+        amount: 8
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7712,7 +7714,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: PRISMARINE_CRYSTALS
-        amount: 13
+        amount: 7
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7775,7 +7777,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: GHAST_TEAR
-        amount: 6
+        amount: 4
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7841,7 +7843,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: LEATHER
-        amount: 10
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7876,7 +7878,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: INK_SAC
-        amount: 11
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -7908,7 +7910,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: INK_SAC
-        amount: 13
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8242,7 +8244,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 2
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8259,7 +8261,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 3
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8308,7 +8310,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 10
+        amount: 2
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8324,7 +8326,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 5
+        amount: 2
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8340,7 +8342,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 10
+        amount: 2
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8372,7 +8374,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 3
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8388,7 +8390,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 10
+        amount: 6
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8531,7 +8533,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8548,7 +8550,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8565,7 +8567,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8582,7 +8584,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8599,7 +8601,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8616,7 +8618,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8633,7 +8635,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8650,7 +8652,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8667,7 +8669,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8684,7 +8686,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8701,7 +8703,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8718,7 +8720,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8735,7 +8737,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8752,7 +8754,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8769,7 +8771,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -8786,7 +8788,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 4
+        amount: 1
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
@@ -10467,7 +10469,7 @@ data-version: 2|2730
         ==: org.bukkit.inventory.ItemStack
         v: 2730
         type: EMERALD
-        amount: 20
+        amount: 24
         meta:
           ==: ItemMeta
           meta-type: UNSPECIFIC
