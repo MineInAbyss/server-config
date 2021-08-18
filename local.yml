@@ -9,7 +9,7 @@
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
     bungee_server: "{{ lookup('env', 'BUNGEE_SERVER') | default('false') }}"
     localhash: "{{ lookup('file', '/home/container/mia-githash') | default('none') }}"
-    githash: "{{ lookup('file', '.git/refs/heads/pterodactyl') | default('none') }}"
+    githash: "{{ lookup('file', '.git/refs/heads/master') | default('none') }}"
 #  vars_files: # future perhaps
 #    - "host_vars/{{ server_name }}.yml"
 
