@@ -2,7 +2,7 @@
   include: copy-dir.yml
   vars:
     src: "servers/minecraft/"
-  when: "{{ bungee_server }}" != "true"
+  when: bungee_server != "true"
 
 - name: Copy server-specific configurations
   include: copy-dir.yml
