@@ -54,12 +54,12 @@ regions:
             range: 10..4096
 
       - mob: mobzy:splitjaw
-        priority: 0.05
+        priority: 0.15
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
             max: 2
-            radius: 300
+            radius: 150
           - !<mobzy:spawn.gap>
             range: 10..4096
 
@@ -233,11 +233,11 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template.mobzy:splitjaw
-        priority: 0.3
+        priority: 0.5
         conditions:
           - !<mobzy:spawn.local_group>
             max: 2
-            radius: 200
+            radius: 150
 
       - reuse: Template.mobzy:neritantan
         radius: 20
@@ -278,7 +278,7 @@ regions:
       - reuse: Template.mobzy:neritantan
 
       - reuse: Template.mobzy:splitjaw
-        priority: 0.3
+        priority: 0.5
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
