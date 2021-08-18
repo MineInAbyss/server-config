@@ -2,23 +2,20 @@
   include: copy-dir.yml
   vars:
     src: "servers/minecraft/"
-  with_items: "{{ minecraft_servers }}"
+  when: "{{ bungee_server }}" != "true"
 
 - name: Copy server-specific configurations
   include: copy-dir.yml
   vars:
-    src: "servers/{{ item.name }}/"
-  with_items:
-    - "{{ minecraft_servers }}"
-    - "{{ bungee_servers }}"
+    src: "servers/{{ server_name }}/"
 
-- name: Ensure file permissions set properly for each server
-  file:
-    path: "/home/{{ item.name }}/server"
-    owner: "{{ item.name }}"
-    group: "{{ item.name }}"
-    mode: "{{ copy_perms }}"
-    recurse: true
-  with_items:
-    - "{{ minecraft_servers }}"
-    - "{{ bungee_servers }}"
+#- name: Ensure file permissions set properly for each server
+#  file:
+#    path: "/home/{{ item.name }}/server"
+##    owner: "{{ item.name }}"
+##    group: "{{ item.name }}"
+#    mode: "{{ copy_perms }}"
+#    recurse: true
+#  with_items:
+#    - "{{ minecraft_servers }}"
+#    - "{{ bungee_servers }}"
