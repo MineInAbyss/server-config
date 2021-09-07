@@ -26,6 +26,7 @@ layers:
       - LADDER
       - RAIL
       - POWERED_RAIL
+      - VINE
   - name: §x§D§B§4§0§4§0Edge of the Abyss
     sub: §x§B§A§1§E§1§E0-1350 meters
     deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f :redw:§f
@@ -44,6 +45,7 @@ layers:
       - LADDER
       - RAIL
       - POWERED_RAIL
+      - VINE
   - name: §x§1§7§5§A§B§FForest of Temptation
     deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
     sub: §x§2§8§6§F§B§F1350-2600 meters
@@ -70,6 +72,7 @@ layers:
       - LADDER
       - RAIL
       - POWERED_RAIL
+      - VINE
   - name: §x§D§4§2§8§B§1Great Fault
     sub: §x§E§8§2§C§C§22600–7000 meters
     deathMessage: in the §x§D§4§2§8§B§1Great Fault§f :moonw:§f
@@ -122,6 +125,7 @@ layers:
       - LADDER
       - RAIL
       - POWERED_RAIL
+      - VINE
     sections: [l3s1,l3s2]
   - name: §x§9§E§1§E§8§4The Goblets of Giants
     sub: §x§7§7§2§3§7§A7000–12000 meters
@@ -160,6 +164,7 @@ layers:
           - entity.arrow.shoot
           - ambient.cave
           - entity.creeper.primed
+          - mineinabyss:entity.orbpiercer.ambient
     sections: [l4s1,l4s2,l4s3,l4s4]
   - name: §x§3§B§3§B§3§BSea of Corpses
     sub: §x§5§4§5§4§5§412000–13000 meters
