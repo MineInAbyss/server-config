@@ -1,0 +1,25 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §8StoneSickle
+    #    lore: |
+    #      §bA
+    type: STONE_HOE
+    custom-model-data: 1000
+- !<looty:recipes>
+  - items:
+      C:
+        type: COBBLESTONE
+      S:
+        type: STICK
+    configuration: |-
+      | CC|
+      | SC|
+      |S  |
+- !<mineinabyss:sickle>
+  radius: 1
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }
+

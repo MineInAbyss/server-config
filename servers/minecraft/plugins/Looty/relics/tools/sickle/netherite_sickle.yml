@@ -1,0 +1,25 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §x§1§7§2§9§2§9Netherite Sickle
+    #    lore: |
+    #      §bA
+    type: NETHERITE_HOE
+    custom-model-data: 1000
+- !<looty:recipes>
+  - items:
+      N:
+        type: NETHERITE_INGOT
+      S:
+        type: STICK
+    configuration: |-
+      | NN|
+      | SN|
+      |S  |
+- !<mineinabyss:sickle>
+  radius: 4
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }
+
