@@ -36,6 +36,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         validTransforms:
           andesite:
             material: ANDESITE
@@ -53,6 +55,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         dropMultiple: false
         drops:
           gravel:
@@ -130,6 +134,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         validTransforms:
           andesite:
             material: ANDESITE
@@ -147,6 +153,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         dropMultiple: false
         drops:
           coal_ore:
@@ -258,6 +266,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         validTransforms:
           andesite:
             material: ANDESITE
@@ -275,6 +285,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         dropMultiple: false
         drops:
           coal_ore:
@@ -392,6 +404,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         validTransforms:
           andesite:
             material: ANDESITE
@@ -409,6 +423,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         dropMultiple: false
         drops:
           coal_ore:
@@ -558,6 +574,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         validTransforms:
           andesite:
             material: ANDESITE
@@ -575,6 +593,8 @@ regions:
             material: GREEN_TERRACOTTA
           blue_terracotta:
             material: BLUE_TERRACOTTA
+          calcite:
+            material: CALCITE
         dropMultiple: false
         drops:
           coal_ore:
