@@ -1,0 +1,40 @@
+- !<mobzy:type>
+  baseClass: mobzy:fish
+  creatureType: WATER_CREATURE
+- !<mobzy:model>
+  id: 71 #Change when we have an actual model for it
+- !<mobzy:attributes>
+  maxHealth: 20
+  movementSpeed: 3
+  followRange: 20
+  width: 1.1
+  height: 0.3
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 20
+  drops:
+    - item:
+        type: SALMON
+        display-name: §x§6§C§E§5§F§5Raw Spiralsquid
+        custom-model-data: 3
+        lore: |
+          §eCan be obtained by finding and
+          §ecatching a §x§6§C§E§5§F§Spiralsquid §ein the
+          §ewaters of the §aSea of Corpses§e.
+          §x§3§5§A§D§B§D§oSeems like a great source for food!
+      cooked:
+        type: COOKED_SALMON
+        display-name: §x§6§C§E§5§F§5Cooked Spiralsquid
+        custom-model-data: 3
+        lore: |
+          §eCan be obtained by finding and
+          §ecatching a §x§6§C§E§5§F§Spiralsquid §ein the
+          §ewaters of the §aSea of Corpses§e.
+          §x§3§5§A§D§B§D§oSeems like a great source for food!
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.avoid_player>
+      radius: 10
+      speed: 8
+    2: !<minecraft:behavior.panic>
+      speedModifier: 2
