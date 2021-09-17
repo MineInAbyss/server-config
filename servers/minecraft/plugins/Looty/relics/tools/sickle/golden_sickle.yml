@@ -1,0 +1,25 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §6Golden Sickle
+    #    lore: |
+    #      §bA
+    type: GOLDEN_HOE
+    custom-model-data: 100
+- !<looty:recipes>
+  - items:
+      G:
+        type: GOLD_INGOT
+      S:
+        type: STICK
+    configuration: |-
+      | GG|
+      | SG|
+      |S  |
+- !<mineinabyss:sickle>
+  radius: 3
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }
+
