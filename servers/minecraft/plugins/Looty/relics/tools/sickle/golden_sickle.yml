@@ -7,7 +7,8 @@
     type: GOLDEN_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - items:
+  - discoverRecipe: true
+      items:
       G:
         type: GOLD_INGOT
       S:

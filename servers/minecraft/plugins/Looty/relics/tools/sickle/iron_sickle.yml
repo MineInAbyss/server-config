@@ -7,7 +7,8 @@
     type: IRON_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - items:
+  - discoverRecipe: true
+      items:
       I:
         type: IRON_INGOT
       S:
