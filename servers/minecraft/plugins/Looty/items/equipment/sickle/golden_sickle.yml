@@ -7,20 +7,21 @@
     type: GOLDEN_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - discoverRecipe: true
-    items:
-      G:
-        type: GOLD_INGOT
-      S:
-        type: STICK
-    configuration: |-
-      | GG|
-      | SG|
-      |S  |
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: GOLD_INGOT
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
 - !<mineinabyss:sickle>
   radius: 3
 - !<geary:events>
   rightClick:
     - !<cancel> { }
     - !<mineinabyss:harvest> { }
-

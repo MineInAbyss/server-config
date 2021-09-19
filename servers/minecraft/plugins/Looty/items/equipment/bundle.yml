@@ -6,12 +6,25 @@
     #      §bA
     type: BUNDLE
 - !<looty:recipes>
-  - items:
-      H:
-        prefab: looty:fuwagi_hide
-      S:
-        prefab: looty:silkfang_silk
-    configuration: |-
-      |SHS|
-      |H H|
-      |HHH|
+  group: "looty:bundle"
+  recipes:
+    - !<shaped>
+      items:
+        H:
+          prefab: looty:fuwagi_hide
+        S:
+          prefab: looty:silkfang_silk
+      configuration: |-
+        |SHS|
+        |H H|
+        |HHH|
+    - !<shaped>
+      items:
+        F:
+          prefab: looty:okibo_fur
+        S:
+          prefab: looty:silkfang_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|

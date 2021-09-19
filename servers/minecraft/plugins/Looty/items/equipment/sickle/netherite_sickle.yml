@@ -7,20 +7,23 @@
     type: NETHERITE_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - discoverRecipe: true
-    items:
-      N:
-        type: NETHERITE_INGOT
-      S:
-        type: STICK
-    configuration: |-
-      | NN|
-      | SN|
-      |S  |
+  discoverRecipes: true
+  removeRecipes:
+    - minecraft:netherite_hoe_smithing
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: NETHERITE_INGOT
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
 - !<mineinabyss:sickle>
   radius: 4
 - !<geary:events>
   rightClick:
     - !<cancel> { }
     - !<mineinabyss:harvest> { }
-

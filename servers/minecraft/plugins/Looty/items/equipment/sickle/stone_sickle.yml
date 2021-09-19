@@ -7,20 +7,21 @@
     type: STONE_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - discoverRecipe: true
-    items:
-      C:
-        type: COBBLESTONE
-      S:
-        type: STICK
-    configuration: |-
-      | CC|
-      | SC|
-      |S  |
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: COBBLESTONE
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
 - !<mineinabyss:sickle>
   radius: 1
 - !<geary:events>
   rightClick:
     - !<cancel> { }
     - !<mineinabyss:harvest> { }
-

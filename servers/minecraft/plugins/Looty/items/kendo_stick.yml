@@ -7,14 +7,16 @@
     type: WOODEN_SWORD
     custom-model-data: 2
 - !<looty:recipes>
-  - items:
-      S:
-        type: STICK
-      B:
-        type: BAMBOO
-      T:
-        type: STRING
-    configuration: |-
-      | B |
-      |TBT|
-      | S |
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          type: STICK
+        B:
+          type: BAMBOO
+        T:
+          type: STRING
+      configuration: |-
+        | B |
+        |TBT|
+        | S |

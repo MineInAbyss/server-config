@@ -7,20 +7,21 @@
     type: IRON_HOE
     custom-model-data: 100
 - !<looty:recipes>
-  - discoverRecipe: true
-    items:
-      I:
-        type: IRON_INGOT
-      S:
-        type: STICK
-    configuration: |-
-      | II|
-      | SI|
-      |S  |
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: IRON_INGOT
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
 - !<mineinabyss:sickle>
   radius: 2
 - !<geary:events>
   rightClick:
     - !<cancel> { }
     - !<mineinabyss:harvest> { }
-
