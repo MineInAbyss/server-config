@@ -18,7 +18,7 @@
       | SD|
       |S  |
 - !<mineinabyss:sickle>
-  radius: 3
+  radius: 2
 - !<geary:events>
   rightClick:
     - !<cancel> { }
