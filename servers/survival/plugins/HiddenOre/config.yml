@@ -174,7 +174,7 @@ regions:
           copper_ore:
             package:
               - ==: org.bukkit.inventory.ItemStack
-                type: RAW_COPPER
+                type: COPPER_ORE
                 v: 0
             tools:
               - anything

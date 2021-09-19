@@ -1,6 +1,0 @@
-- name: Allow specified groups run the update script without sudo password
-  copy:
-    src: config/mcservers_sudo_files
-    dest: /etc/sudoers.d/mcservers_sudo_files
-    validate: 'visudo -cf %s'
-    mode: 0440

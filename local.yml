@@ -6,11 +6,13 @@
   connection: local
   vars:
     copy_perms: "774"
-  vars_files:
-    - "host_vars/{{ ansible_facts['nodename'] }}.yml"
+    server_name: "{{ lookup('env', 'SERVER_NAME') }}"
+    bungee_server: "{{ lookup('env', 'BUNGEE_SERVER') | default('false') }}"
+    localhash: "{{ lookup('file', '/home/container/mia-githash') | default('none') }}"
+    githash: "{{ lookup('file', '.git/refs/heads/master') | default('none') }}"
+#  vars_files: # future perhaps
+#    - "host_vars/{{ server_name }}.yml"
 
   tasks:
-    - include: tasks/setup-cron-job.yml
-    - include: tasks/setup-update-script.yml
     - include: tasks/copy-configs.yml
-    - include: tasks/restart-game-servers.yml
+      when: localhash != githash
