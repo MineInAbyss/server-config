@@ -8,7 +8,7 @@
     custom-model-data: 100
 - !<looty:recipes>
   - discoverRecipe: true
-      items:
+    items:
       C:
         type: COBBLESTONE
       S:
