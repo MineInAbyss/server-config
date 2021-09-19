@@ -18,9 +18,9 @@
   maxExp: 45
   drops:
     - item:
-        prefab: looty:cyatoria_meat_raw
+        prefab: looty:cyatoria_drumstick_raw
       cooked:
-        prefab: looty:cyatoria_meat_cooked
+        prefab: looty:cyatoria_drumstick_cooked
       minAmount: 1
       maxAmount: 2
     - item:

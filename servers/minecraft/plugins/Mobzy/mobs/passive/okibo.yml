@@ -24,7 +24,6 @@
       minAmount: 3
       maxAmount: 6
 - !<mobzy:rideable> { }
-
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

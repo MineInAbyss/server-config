@@ -16,10 +16,12 @@
   drops:
     - item:
         prefab: looty:kakatsumuri_shell
+      maxAmount: 1
+      dropChance: 0.6000
     - item:
         prefab: looty:kakatsumuri_glowing_tip
       maxAmount: 1
-      dropChance: 0.3000
+      dropChance: 0.4000
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

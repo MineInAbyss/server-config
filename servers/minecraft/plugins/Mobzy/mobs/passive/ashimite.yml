@@ -17,14 +17,14 @@
         prefab: looty:ashimite_meat_raw
       cooked:
         prefab: looty:ashimite_meat_cooked
-      dropChance: 0.5000
+      dropChance: 0.7000
       minAmount: 1
       maxAmount: 4
     - item:
         prefab: looty:ashimite_hoof
       dropChance: 0.3000
-      minAmount:
-      maxAmount: 4
+      minAmount: 1
+      maxAmount: 3
     - item:
         prefab: looty:ashimite_antlers
       dropChance: 0.2000

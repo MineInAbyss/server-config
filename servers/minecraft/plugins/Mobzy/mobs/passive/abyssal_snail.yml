@@ -17,7 +17,7 @@
     - item:
         prefab: looty:abyssal_snail_shell
     - item:
-        prefab: looty:abyssal_snail_slime
+        prefab: looty:abyssal_snail_gunk
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
