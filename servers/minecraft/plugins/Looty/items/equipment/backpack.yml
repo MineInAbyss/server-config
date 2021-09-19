@@ -3,6 +3,7 @@
   item:
     type: SHULKER_BOX
 - !<looty:recipes>
+  discoverRecipes: true
   removeRecipes:
     - minecraft:shulker_box
   recipes:
