@@ -6,6 +6,7 @@
     #      §bA
     type: BUNDLE
 - !<looty:recipes>
+  discoverRecipes: true
   group: "looty:bundle"
   recipes:
     - !<shaped>
