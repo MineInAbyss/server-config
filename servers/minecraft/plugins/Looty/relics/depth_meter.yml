@@ -7,7 +7,8 @@
     type: COMPASS
     custom-model-data: 2
 - !<looty:recipes>
-  - items:
+  - discoverRecipe: true
+      items:
       G:
         type: GLASS
       C:
