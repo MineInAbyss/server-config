@@ -1,0 +1,21 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §x§f§f§9§d§2§6Bonfire
+    type: CAMPFIRE
+    custom-model-data: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          type: STICK
+        C:
+          type: CAMPFIRE
+        F:
+          type: FLINT_AND_STEEL
+        configuration: |-
+          |SSS|
+          |SFS|
+          |SCS|
