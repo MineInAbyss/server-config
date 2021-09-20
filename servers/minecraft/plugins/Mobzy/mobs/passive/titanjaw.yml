@@ -15,7 +15,7 @@
   drops:
     - item:
         prefab: looty:titanjaw_scale
-      minAmount:
+      minAmount: 1
       maxAmount: 2
     - item:
         prefab: looty:titanjaw_pearl

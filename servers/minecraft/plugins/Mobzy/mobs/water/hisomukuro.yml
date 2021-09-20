@@ -11,16 +11,6 @@
   knockbackResistance: 0.8000
   followRange: 40
   width: 3
-  # - !<geary:events>
-  #   onTargetHit:
-  #     - !<on.target>
-  #       - !<geary:apply_potion_effects>
-  #         effects:
-  #           - type: BLINDNESS
-  #             duration: 5s
-  #             amplifier: 1
-  #             ambient: true
-  #         applyChance: 0.4
   height: 2.4000
 - !<mobzy:death_loot>
   minExp: 200
@@ -28,7 +18,7 @@
   drops:
     - item:
         prefab: looty:hisomukuro_fin
-      minAmount:
+      minAmount: 1
       maxAmount: 2
       dropChance: 0.6000
     - item:

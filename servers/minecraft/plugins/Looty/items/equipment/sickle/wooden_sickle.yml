@@ -13,57 +13,7 @@
     - !<shaped>
       items:
         M:
-          type: OAK_PLANKS
-        S:
-          type: STICK
-      configuration: |-
-        | MM|
-        | SM|
-        |S  |
-    - !<shaped>
-      items:
-        M:
-          type: SPRUCE_PLANKS
-        S:
-          type: STICK
-      configuration: |-
-        | MM|
-        | SM|
-        |S  |
-    - !<shaped>
-      items:
-        M:
-          type: DARK_OAK_PLANKS
-        S:
-          type: STICK
-      configuration: |-
-        | MM|
-        | SM|
-        |S  |
-    - !<shaped>
-      items:
-        M:
-          type: BIRCH_PLANKS
-        S:
-          type: STICK
-      configuration: |-
-        | MM|
-        | SM|
-        |S  |
-    - !<shaped>
-      items:
-        M:
-          type: JUNGLE_PLANKS
-        S:
-          type: STICK
-      configuration: |-
-        | MM|
-        | SM|
-        |S  |
-    - !<shaped>
-      items:
-        M:
-          type: ACACIA_PLANKS
+          tag: planks
         S:
           type: STICK
       configuration: |-

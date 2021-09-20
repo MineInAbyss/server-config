@@ -29,6 +29,6 @@
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.panic>
+    2: !<minecraft:behavior.panic> { }
     3: !<minecraft:behavior.avoid_player>
       radius: 5
