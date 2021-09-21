@@ -33,7 +33,8 @@
     - item:
         prefab: looty:orb_piercer_face_fragments
       minAmount: 1
-      maxAmount: 3
+      maxAmount: 2
+      dropChance: 0.5000
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.orbpiercer.ambient
   death: mineinabyss:entity.orbpiercer.death
@@ -44,7 +45,7 @@
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<mobzy:behavior.throw_items>
-      minThrowRad: 10.0000
+      minThrowRad: 6.0000
       projectileSpeed: 1.5000
       projectileAngularDiameter: 8.0000
       projectileCountPerThrow: 10
