@@ -5,7 +5,7 @@
 - !<looty:recipes>
   discoverRecipes: true
   removeRecipes:
-    - minecraft:shulker_box
+    - minecraft:gray_shulker_box
   recipes:
     - !<shaped>
       items:
