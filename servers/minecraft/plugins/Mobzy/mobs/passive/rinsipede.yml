@@ -16,6 +16,7 @@
   drops:
     - item:
         prefab: looty:rinsipede_segments
+        dropChance: 0.8000
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

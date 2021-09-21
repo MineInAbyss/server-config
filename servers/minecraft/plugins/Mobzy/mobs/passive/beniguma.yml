@@ -15,17 +15,6 @@
   maxExp: 20
   drops:
     - item:
-        prefab: looty:fuwagi_meat_raw
-      cooked:
-        prefab: looty:fuwagi_meat_cooked
-      dropChance: 0.6000
-    - item:
-        prefab: looty:fuwagi_foot
-      dropChance: 0.3000
-    - item:
-        prefab: looty:fuwagi_hide
-      dropChance: 0.3000
-    - item:
         type: SWEET_BERRIES
       maxAmount: 3
       dropChance: 0.5000

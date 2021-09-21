@@ -30,20 +30,18 @@
     - item:
         prefab: looty:splitjaw_scales
       minAmount: 1
-      maxAmount: 2
+      maxAmount: 3
       dropChance: 0.7000
     - item:
-        prefab: looty:splitjaw_shell
-      dropChance: 0.1000
-    - item:
         prefab: looty:splitjaw_gunk
+      maxAmount: 2
       dropChance: 0.5000
     - item:
         type: DIAMOND
       dropChance: 0.0500
     - item:
         type: GOLD_INGOT
-      dropChance: 0.0500
+      dropChance: 0.0700
     - item:
         type: EMERALD
       dropChance: 0.0500

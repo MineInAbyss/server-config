@@ -17,10 +17,11 @@
   drops:
     - item:
         prefab: looty:virinsipede_segments
+      maxAmount: 3
       dropChance: 0.8000
     - item:
         prefab: looty:virinsipede_antlers
-      dropChance: 0.2000
+      dropChance: 0.3000
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.leap_at_target>

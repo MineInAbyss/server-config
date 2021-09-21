@@ -31,7 +31,7 @@
         prefab: looty:kagi_tachikiri_pincer
       minAmount: 1
       maxAmount: 2
-      dropChance: 0.5000
+      dropChance: 0.7000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

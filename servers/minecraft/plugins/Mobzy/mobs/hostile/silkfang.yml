@@ -27,12 +27,13 @@
   drops:
     - item:
         prefab: looty:silkfang_eye
-      dropChance: 0.3000
-      maxAmount: 2
+      maxAmount: 3
+      dropChance: 0.6000
     - item:
         prefab: looty:silkfang_silk
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.8500
     - item:
         prefab: looty:bundle_of_silkfang_silk
       minAmount: 1

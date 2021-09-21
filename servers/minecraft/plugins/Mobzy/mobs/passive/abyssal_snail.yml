@@ -16,8 +16,10 @@
   drops:
     - item:
         prefab: looty:abyssal_snail_shell
+      dropChance: 0.7000
     - item:
         prefab: looty:abyssal_snail_gunk
+      maxAmount: 2
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

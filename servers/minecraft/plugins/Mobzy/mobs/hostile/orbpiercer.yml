@@ -28,7 +28,7 @@
   drops:
     - item:
         prefab: looty:orb_piercer_spike
-      minAmount: 4
+      minAmount: 3
       maxAmount: 7
     - item:
         prefab: looty:orb_piercer_face_fragments

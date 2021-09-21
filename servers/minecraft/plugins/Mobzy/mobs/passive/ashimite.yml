@@ -22,9 +22,9 @@
       maxAmount: 4
     - item:
         prefab: looty:ashimite_hoof
-      dropChance: 0.3000
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.3000
     - item:
         prefab: looty:ashimite_antlers
       dropChance: 0.2000

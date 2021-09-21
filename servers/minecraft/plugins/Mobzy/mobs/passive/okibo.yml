@@ -21,8 +21,9 @@
       maxAmount: 10
     - item:
         prefab: looty:okibo_fur
-      minAmount: 3
-      maxAmount: 6
+      minAmount: 2
+      maxAmount: 4
+      dropChance: 0.8000
 - !<mobzy:rideable> { }
 - !<mobzy:pathfinders>
   goals:

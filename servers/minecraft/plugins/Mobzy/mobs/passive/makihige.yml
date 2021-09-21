@@ -19,11 +19,12 @@
       maxAmount: 2
     - item:
         prefab: looty:makihige_shell
-      dropChance: 0.2000
+      dropChance: 0.3000
     - item:
         prefab: looty:makihige_tentacle
       minAmount: 1
       maxAmount: 2
+      dropChance: 0.4000
 - !<mobzy:increased_water_speed>
   level: 20
 - !<mobzy:pathfinders>

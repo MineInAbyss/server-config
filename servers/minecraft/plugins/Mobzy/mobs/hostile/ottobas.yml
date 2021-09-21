@@ -20,8 +20,8 @@
         prefab: looty:ottobas_meat_raw
       cooked:
         prefab: looty:ottobas_meat_cooked
-      minAmount: 8
-      maxAmount: 20
+      minAmount: 4
+      maxAmount: 15
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death

@@ -19,6 +19,7 @@
         prefab: looty:chimokami_tail
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.8000
     - item:
         prefab: looty:chimokami_fang
       maxAmount: 2

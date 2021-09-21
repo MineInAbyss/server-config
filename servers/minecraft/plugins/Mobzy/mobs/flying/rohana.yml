@@ -17,9 +17,11 @@
   drops:
     - item:
         prefab: looty:rohana_powder
+      maxAmount: 2
       dropChance: 0.8000
     - item:
         prefab: looty:rohana_tail
+      maxAmount: 2
       dropChance: 0.4000
 - !<mobzy:pathfinders>
   targets:

@@ -26,11 +26,12 @@
     - item:
         prefab: looty:hammerbeak_beak
       maxAmount: 2
-      dropChance: 0.4000
+      dropChance: 0.6000
     - item:
         prefab: looty:hammerbeak_feather
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.7000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

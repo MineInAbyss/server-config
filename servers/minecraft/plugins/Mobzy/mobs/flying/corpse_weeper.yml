@@ -29,8 +29,9 @@
       dropChance: 0.3000
     - item:
         prefab: looty:corpse_weeper_feather
-      minAmount: 2
-      maxAmount: 4
+      minAmount: 1
+      maxAmount: 3
+      dropChance: 0.9000
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.corpseweeper.ambient
   death: mineinabyss:entity.corpseweeper.death

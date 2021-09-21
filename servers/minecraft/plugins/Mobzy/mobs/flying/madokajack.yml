@@ -19,12 +19,14 @@
   drops:
     - item:
         prefab: looty:madokajack_scales
-      minAmount: 2
-      maxAmount: 5
+      minAmount: 1
+      maxAmount: 4
+      dropChance: 0.7000
     - item:
         prefab: looty:madokajack_bone
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.8000
     - item:
         prefab: looty:madokajack_eye
       cooked:

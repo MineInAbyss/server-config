@@ -20,6 +20,7 @@
       cooked:
         prefab: looty:squidfly_brain_cooked
       maxAmount: 1
+      dropChance: 0.8000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
