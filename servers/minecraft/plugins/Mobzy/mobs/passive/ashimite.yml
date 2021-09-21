@@ -28,7 +28,7 @@
     - item:
         prefab: looty:ashimite_antlers
       dropChance: 0.2000
-- !<mobzy:rideable>
+- !<mobzy:rideable> { }
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

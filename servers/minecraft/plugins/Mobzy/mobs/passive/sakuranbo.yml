@@ -14,7 +14,7 @@
   drops:
     - item:
         prefab: looty:sakuranbo_dust
-        maxAmount: 3
+      maxAmount: 3
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
