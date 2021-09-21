@@ -35,8 +35,9 @@
       maxAmount: 3
     - item:
         prefab: looty:bundle_of_silkfang_silk
-      maxAmount: 1
-      dropChance: 0.1000
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 0.2000
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.leap_at_target>

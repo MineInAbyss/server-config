@@ -13,12 +13,11 @@
   width: 1
   height: 3
 - !<mobzy:death_loot>
-  minExp: 25
-  maxExp: 35
+  minExp: 35
+  maxExp: 45
   drops:
     - item:
         prefab: looty:inbyo_fur
-      minAmount: 1
       maxAmount: 3
     - item:
         prefab: looty:inbyo_meat_raw
