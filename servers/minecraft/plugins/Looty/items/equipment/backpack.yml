@@ -1,11 +1,11 @@
 - !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: SHULKER_BOX
+    type: GRAY_SHULKER_BOX
 - !<looty:recipes>
   discoverRecipes: true
   removeRecipes:
-    - minecraft:gray_shulker_box
+    - minecraft:shulker_box
   recipes:
     - !<shaped>
       items:
