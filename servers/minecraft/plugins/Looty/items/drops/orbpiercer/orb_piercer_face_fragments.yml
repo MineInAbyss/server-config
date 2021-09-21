@@ -11,3 +11,6 @@
       §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
       §x§D§9§D§9§D§9§obe able to see it as well?
       §x§D§9§D§9§D§9§oProbably just wishful thinking...
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }

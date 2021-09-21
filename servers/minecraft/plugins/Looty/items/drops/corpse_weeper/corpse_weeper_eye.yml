@@ -8,3 +8,6 @@
       §eRarely dropped from §x§F§F§3§4§2§ECorpse-Weepers
       §ein the §aForest of Temptation§e.
       §c§oIt feels like it's staring into your soul...
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }

@@ -9,3 +9,6 @@
       §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
       §x§5§9§5§9§5§9§oSeems useless by itself.
       §x§5§9§5§9§5§9§oPerhaps I should look for a vendor?
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
