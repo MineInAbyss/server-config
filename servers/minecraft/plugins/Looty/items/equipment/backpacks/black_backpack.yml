@@ -1,0 +1,14 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: BLACK_SHULKER_BOX
+- !<looty:recipes>
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: looty:makihige_ink_sac
+        - tag: shulker_boxes
+    - !<shapeless>
+      items:
+        - prefab: looty:inbyo_fur
+        - tag: shulker_boxes

@@ -1,0 +1,10 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: WHITE_SHULKER_BOX
+- !<looty:recipes>
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: looty:kazura_squid_ink_sac
+        - tag: shulker_boxes
