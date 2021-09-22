@@ -1,0 +1,10 @@
+- !<looty:type>
+  item:
+    type: WHITE_DYE
+- !<looty:recipes>
+  removeRecipes:
+    - minecraft:white_tulip
+  recipes:
+    - !<shapeless>
+      items:
+        - type: WHITE_TULIP
