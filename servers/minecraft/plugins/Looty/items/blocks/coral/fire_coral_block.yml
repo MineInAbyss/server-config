@@ -1,0 +1,16 @@
+- !<looty:type>
+  item:
+    type: FIRE_CORAL_BLOCK
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: looty:ashimite_antlers
+        R:
+          type: RED_DYE
+      configuration: |-
+        |AAA|
+        |ARA|
+        |AAA|

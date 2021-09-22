@@ -1,0 +1,16 @@
+- !<looty:type>
+  item:
+    type: HORN_CORAL_BLOCK
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: looty:ashimite_antlers
+        Y:
+          type: YELLOW_DYE
+      configuration: |-
+        |AAA|
+        |AYA|
+        |AAA|

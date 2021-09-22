@@ -1,0 +1,10 @@
+- !<looty:type>
+  item:
+    type: FIRE_CORAL
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: looty:ashimite_antlers
+        - type: RED_DYE

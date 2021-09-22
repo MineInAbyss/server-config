@@ -1,0 +1,16 @@
+- !<looty:type>
+  item:
+    type: BRAIN_CORAL_BLOCK
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: looty:ashimite_antlers
+        P:
+          type: PINK_DYE
+      configuration: |-
+        |AAA|
+        |APA|
+        |AAA|

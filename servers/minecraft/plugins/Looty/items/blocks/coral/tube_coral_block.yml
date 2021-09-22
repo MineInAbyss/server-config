@@ -1,0 +1,26 @@
+- !<looty:type>
+  item:
+    type: TUBE_CORAL_BLOCK
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: looty:ashimite_antlers
+        B:
+          type: BLUE_DYE
+      configuration: |-
+        |AAA|
+        |ABA|
+        |AAA|
+    - !<shaped>
+      items:
+        A:
+          prefab: looty:ashimite_antlers
+        C:
+          type: CYAN_DYE
+      configuration: |-
+        |AAA|
+        |ACA|
+        |AAA|
