@@ -5,48 +5,27 @@
   id: 8
 - !<mobzy:attributes>
   maxHealth: 10
-  movementSpeed: 0.4
+  movementSpeed: 0.4000
   attackDamage: 8
   attackKnockback: 1
-  knockbackResistance: 0.12
+  knockbackResistance: 0.1200
   followRange: 64
   width: 1
   height: 3
 - !<mobzy:death_loot>
-  minExp: 25
-  maxExp: 35
+  minExp: 35
+  maxExp: 45
   drops:
     - item:
-        type: BLACK_WOOL
-        display-name: §x§3§D§3§D§3§DInbyo Fur
-        lore: |
-          §eAquired by skinning an §x§6§3§6§3§6§3Inbyo
-          §ein the §aInverted Forest§e.
-          §x§B§5§B§5§B§5§oThis stench is nauseating...
-      minAmount: 1
+        prefab: looty:inbyo_fur
       maxAmount: 3
     - item:
-        type: BEEF
-        display-name: §x§3§D§3§D§3§DRaw Inbyo Meat
-        custom-model-data: 1
-        lore: |
-          §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-          §ein the §aInverted Forest.
-          §x§B§5§B§5§B§5§oDoesn't look very tasty...
+        prefab: looty:inbyo_meat_raw
       cooked:
-        type: COOKED_BEEF
-        display-name: §x§3§D§3§D§3§DCooked Inbyo Meat
-        custom-model-data: 1
-        lore: |
-          §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-          §ewith fire in the §aInverted Forest.
-          §eCan also be prepared by cooking
-          §x§6§3§6§3§6§3Raw Inbyo Meat§e.
-          §x§B§5§B§5§B§5§0Seems more edible now, though
-          §x§B§5§B§5§B§5§ois still smells horrid...
+        prefab: looty:inbyo_meat_cooked
       maxAmount: 2
 - !<mobzy:sounds>
-#    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
+  #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
 - !<mobzy:pathfinders>

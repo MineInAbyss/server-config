@@ -5,20 +5,17 @@
   id: 74
 - !<mobzy:attributes>
   maxHealth: 10
-  movementSpeed: 0.3
-  width: 0.6
-  height: 0.6
+  movementSpeed: 0.3000
+  width: 0.6000
+  height: 0.6000
 - !<mobzy:death_loot>
   minExp: 10
   maxExp: 20
   drops:
     - item:
-        type: GUNPOWDER
-        display-name: §6Sakuranbo Dust
-        lore: |
-          §eExplosive powder obtained from
-          §6Sakuranbo §ein the §aGreat Fault§e.
-          §6§oSniffing it is probably a bad idea...
+        prefab: looty:sakuranbo_dust
+      maxAmount: 3
+      dropChance: 0.9000
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

@@ -5,8 +5,8 @@
   id: 68
 - !<mobzy:attributes>
   maxHealth: 30
-  movementSpeed: 0.3
-  knockbackResistance: 0.08
+  movementSpeed: 0.3000
+  knockbackResistance: 0.0800
   attackDamage: 4
   followRange: 5
   width: 2
@@ -16,29 +16,14 @@
   maxExp: 25
   drops:
     - item:
-        type: RED_WOOL
-        display-name: §x§D§6§3§6§2§4Chimokami Tail
-        custom-model-data: 1
-        lore: |
-          §eA tuft of fur from the tail of the rarely
-          §eseen §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts
-          §emake their dens in the darker areas of
-          §ethe §aForest of Temptation§e.
+        prefab: looty:chimokami_tail
       minAmount: 1
       maxAmount: 3
+      dropChance: 0.8000
     - item:
-        type: FLINT
-        display-name: §x§D§6§3§6§2§4Chimokami Fang
-        custom-model-data: 2
-        lore: |
-          §eA fang dropped from the rare
-          §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.
-          §x§A§8§2§A§1§CIt is said that these beasts house a
-          §x§A§8§2§A§1§Cspiritual fire within. This has been
-          §x§A§8§2§A§1§Cproven to be a hoax, however, their
-          §x§A§8§2§A§1§Cteeth are excellent firestarters.
+        prefab: looty:chimokami_fang
       maxAmount: 2
-      dropChance: 0.7
+      dropChance: 0.7000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
@@ -50,7 +35,7 @@
       range: 3
       seeThroughWalls: true
     2: !<minecraft:behavior.tempt>
-      items: [ CHICKEN, COOKED_CHICKEN , RABBIT, COOKED_RABBIT ]
+      items: [ CHICKEN, COOKED_CHICKEN, RABBIT, COOKED_RABBIT ]
     3: !<minecraft:behavior.avoid_player>
       radius: 15
     4: !<minecraft:behavior.random_stroll_land> { }

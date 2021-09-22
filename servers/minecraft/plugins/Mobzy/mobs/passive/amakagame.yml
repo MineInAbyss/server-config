@@ -14,19 +14,8 @@
   maxExp: 25
   drops:
     - item:
-        type: CRIMSON_ROOTS
-        display-name: §5Amakagame Whiskers
-        custom-model-data: 1
-        lore: |
-          §dAn §5Amakagame §dis almost all stomach,
-          §dso they have few salvageable body parts
+        prefab: looty:amakagame_whiskers
       maxAmount: 2
     - item:
-        type: CHORUS_FRUIT
-        display-name: §5Baracocha Fruit
-        custom-model-data: 1
-        lore: |
-          §dNeritantans love eating these. Fittingly,
-          §5Amakagame §dsmell just like them to lure
-          §din their prey.
+        prefab: looty:baracocha_fruit
       maxAmount: 5

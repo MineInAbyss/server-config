@@ -1,0 +1,27 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §7Iron Sickle
+    #    lore: |
+    #      §bA
+    type: IRON_HOE
+    custom-model-data: 100
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: IRON_INGOT
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+- !<mineinabyss:sickle>
+  radius: 2
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }

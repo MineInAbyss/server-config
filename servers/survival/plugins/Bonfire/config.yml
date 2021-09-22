@@ -1,25 +1,11 @@
-bonfireRecipe:
-  key: 'bonfire:bonfire'
-  ingredients:
-    items:
-      S:
-        type: STICK
-      C:
-        type: CAMPFIRE
-      F:
-        type: FLINT_AND_STEEL
-    configuration: |-
-      SSS
-      SFS
-      SCS
-  result:
-    type: CAMPFIRE
-    amount: 1
-    custom-model-data: 1
-    display-name: §x§f§f§9§d§2§6Bonfire
+bonfireItem:
+  prefab: looty:bonfire
+modelItem:
+  type: WOODEN_SHOVEL
+  custom-model-data: 1
 maxPlayerCount: 4
 bonfireExpirationTime: 1w
-expirationCheckInterval: 10s
+expirationCheckInterval: 10m
 respawnSetSound:
   sound: block.ladder.step
   volume: 1f
@@ -29,3 +15,6 @@ respawnUnsetSound:
   volume: 1f
   pitch: 0.5f
 minFallDist: 3
+effectRadius: 3.0 #distance from bonfire
+effectStrength: 10f #saturation amount
+effectRegenRate: 7 #default mc 10

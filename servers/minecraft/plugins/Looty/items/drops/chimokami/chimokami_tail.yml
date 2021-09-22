@@ -1,0 +1,14 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: RED_WOOL
+    display-name: §x§D§6§3§6§2§4Chimokami Tail
+    custom-model-data: 1
+    lore: |
+      §eA tuft of fur from the tail of the rarely
+      §eseen §x§D§6§3§6§2§4Chimokami§e. These foxlike beasts
+      §emake their dens in the darker areas of
+      §ethe §aForest of Temptation§e.
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }

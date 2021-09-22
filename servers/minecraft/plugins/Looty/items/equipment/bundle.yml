@@ -1,0 +1,31 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §3Bundle
+    #    lore: |
+    #      §bA
+    type: BUNDLE
+- !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:bundle"
+  recipes:
+    - !<shaped>
+      items:
+        H:
+          prefab: looty:fuwagi_hide
+        S:
+          prefab: looty:silkfang_silk
+      configuration: |-
+        |SHS|
+        |H H|
+        |HHH|
+    - !<shaped>
+      items:
+        F:
+          prefab: looty:okibo_fur
+        S:
+          prefab: looty:silkfang_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|

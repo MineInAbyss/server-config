@@ -6,7 +6,7 @@
   id: 1
 - !<mobzy:attributes>
   maxHealth: 1000
-  movementSpeed: 0.6
+  movementSpeed: 0.6000
   attackDamage: 80
   followRange: 40
   width: 2
@@ -18,4 +18,4 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 50
-    2: !<minecraft:target.nearby_player> {}
+    2: !<minecraft:target.nearby_player> { }

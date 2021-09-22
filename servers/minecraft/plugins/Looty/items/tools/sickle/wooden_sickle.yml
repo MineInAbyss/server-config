@@ -1,0 +1,28 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §x§6§3§6§1§4§EWooden Sickle
+    #    lore: |
+    #      §bA
+    type: WOODEN_HOE
+    custom-model-data: 100
+- !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:wooden_sickle"
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          tag: planks
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+- !<mineinabyss:sickle>
+  radius: 1
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }

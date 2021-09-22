@@ -8,8 +8,8 @@
   maxHealth: 15
   followRange: 45
   attackDamage: 4
-  attackKnockback: 0.5
-  knockbackResistance: 0.1
+  attackKnockback: 0.5000
+  knockbackResistance: 0.1000
   flyingSpeed: 12
   width: 1
   height: 1
@@ -22,32 +22,26 @@
             duration: 2s
             amplifier: 2
             ambient: true
-        applyChance: 0.8
+        applyChance: 0.8000
 - !<mobzy:death_loot>
   minExp: 20
   maxExp: 40
   drops:
     - item:
-        type: FLINT
-        display-name: §x§5§4§6§8§A§8Kagi Tachikiri Pincer
-        custom-model-data: 4
-        lore: |
-          §eOccasionally dropped by §x§5§4§6§8§A§8Kagi Tachikiri
-          §ein the §aSea of Corpses§e.
-          §x§3§7§6§B§3§6§oExtremely sharp, watch your fingers!
+        prefab: looty:kagi_tachikiri_pincer
       minAmount: 1
       maxAmount: 2
-      dropChance: 0.5
+      dropChance: 0.7000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
       range: 150
-    2: !<minecraft:target.nearby_player> {}
+    2: !<minecraft:target.nearby_player> { }
   goals:
-    1: !<mobzy:behavior.flying_damage_target> {}
+    1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.08
+      diveVelocity: -0.0800
       minHeight: 3
       maxHeight: 5
-    3: !<mobzy:behavior.fly_towards_target> {}
-    4: !<mobzy:behavior.idle_fly> {}
+    3: !<mobzy:behavior.fly_towards_target> { }
+    4: !<mobzy:behavior.idle_fly> { }

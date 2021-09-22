@@ -5,34 +5,21 @@
   id: 98
 - !<mobzy:attributes>
   maxHealth: 30
-  movementSpeed: 0.1
-  knockbackResistance: 0.15
+  movementSpeed: 0.1000
+  knockbackResistance: 0.1500
   followRange: 20
-  width: 2.5
+  width: 2.5000
   height: 2
 - !<mobzy:death_loot>
   minExp: 25
   maxExp: 40
   drops:
     - item:
-        type: NAUTILUS_SHELL
-        display-name: §x§7§8§5§F§3§4Abyssal Snail Shell
-        custom-model-data: 1
-        lore: |
-          §eDropped by §x§7§8§5§F§3§4Abyssal Snails §ein
-          §ethe §aSea of Corpses§e.
-          §x§A§6§8§3§4§8§oIf you put it to your ear, you might hear
-          §x§A§6§8§3§4§8§othe wailing of the souls lost to the sea.
+        prefab: looty:abyssal_snail_shell
+      dropChance: 0.7000
     - item:
-        type: SLIME_BALL
-        display-name: §x§7§8§5§F§3§4Abyssal Snail Gunk
-        custom-model-data: 1
-        lore: |
-          §eSticky slime dropped by §x§7§8§5§F§3§4Abyssal Snails
-          §ein the §aSea of Corpses§e.
-          §x§A§6§8§3§4§8§oMany delvers feel strangely compelled
-          §x§A§6§8§3§4§8§oto lick slime such as this. Well, §lDON'T!
-#- !<mobzy:rideable> {}
+        prefab: looty:abyssal_snail_gunk
+      maxAmount: 2
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
@@ -40,4 +27,3 @@
       speedModifier: 3
     3: !<minecraft:behavior.random_stroll_land> { }
     4: !<minecraft:behavior.look_at_player> { }
-
