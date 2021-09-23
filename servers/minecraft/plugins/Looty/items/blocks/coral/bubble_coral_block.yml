@@ -3,6 +3,7 @@
     type: BUBBLE_CORAL_BLOCK
 - !<looty:recipes>
   discoverRecipes: true
+  group: "looty:bubble_coral_block"
   recipes:
     - !<shaped>
       items:

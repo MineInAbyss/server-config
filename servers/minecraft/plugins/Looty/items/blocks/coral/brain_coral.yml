@@ -3,6 +3,7 @@
     type: BRAIN_CORAL
 - !<looty:recipes>
   discoverRecipes: true
+  group: "looty:brain_coral"
   recipes:
     - !<shapeless>
       items:
