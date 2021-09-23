@@ -1,0 +1,8 @@
+- !<looty:type>
+  item:
+    display-name: §f§lHorns of Albedo
+    type: STONE_HOE
+    custom-model-data: 10
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
