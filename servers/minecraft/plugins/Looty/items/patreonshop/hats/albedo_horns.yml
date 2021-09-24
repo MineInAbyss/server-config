@@ -3,6 +3,7 @@
     display-name: §f§lHorns of Albedo
     type: STONE_HOE
     custom-model-data: 10
+- !<looty:hat> { }
 - !<geary:events>
   rightClick:
     - !<cancel> { }

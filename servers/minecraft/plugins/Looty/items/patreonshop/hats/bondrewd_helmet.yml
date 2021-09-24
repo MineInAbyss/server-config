@@ -5,6 +5,7 @@
       §x§6§F§1§9§D§1§oHelmet worn by #1 dad
     type: STONE_HOE
     custom-model-data: 1
+- !<looty:hat> { }
 - !<geary:events>
   rightClick:
     - !<cancel> { }

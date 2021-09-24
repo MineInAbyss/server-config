@@ -5,6 +5,7 @@
       §x§E§D§E§1§3§lEHelmet worn by §r§f§lThe Annihilator
     type: STONE_HOE
     custom-model-data: 3
+- !<looty:hat> { }
 - !<geary:events>
   rightClick:
     - !<cancel> { }
