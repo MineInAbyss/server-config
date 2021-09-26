@@ -1,0 +1,57 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: NAME_TAG
+- !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:name_tag"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:silkfang_silk
+        I:
+          prefab: looty:makihige_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | SS|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:silkfang_silk
+        I:
+          prefab: looty:kazura_squid_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | SS|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        K:
+          prefab: looty:kuongatari_silk
+        I:
+          prefab: looty:makihige_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | KK|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        K:
+          prefab: looty:kuongatari_silk
+        I:
+          prefab: looty:kazura_squid_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | KK|
+        |PIP|
+        |PPP|
+
