@@ -1,0 +1,22 @@
+   
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: BLUE_SHULKER_BOX
+- !<looty:recipes>
+  discoverRecipes: true
+  removeRecipes:
+    - minecraft:shulker_box
+  recipes:
+    - !<shaped>
+      items:
+        T:
+          prefab: looty:splitjaw_scale
+        O:
+          prefab: looty:orb_piercer_face_fragments
+        M:
+          prefab: looty:makihige_tentacle
+      configuration: |-
+        |MTM|
+        |TOT|
+        |TTT|
