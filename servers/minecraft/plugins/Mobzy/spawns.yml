@@ -387,8 +387,8 @@ regions:
           - !<geary:time>
             min: 13000
             max: 23000
-           - !<mobzy:spawn.delay>
-             attemptEvery: 5s
+          - !<mobzy:spawn.delay>
+            attemptEvery: 5s
           - !<mobzy:spawn.gap>
             range: 8..4096
           - !<geary:block_type>
@@ -404,8 +404,8 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..4096
-           - !<mobzy:spawn.delay>
-             attemptEvery: 1s
+          - !<mobzy:spawn.delay>
+            attemptEvery: 1s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
