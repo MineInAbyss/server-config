@@ -13,7 +13,7 @@ regions:
       - mob: mobzy:fuwagi
         amount: 2..3
         radius: 10
-        priority: 0.5
+        #priority: 0.5
         conditions:
           - !<mobzy:spawn.local_group>
             max: 3
@@ -44,7 +44,7 @@ regions:
               - WHITE_CONCRETE
 
       - mob: mobzy:hammerbeak
-        priority: 0.3
+        #priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -54,7 +54,7 @@ regions:
             range: 10..4096
 
       - mob: mobzy:splitjaw
-        priority: 0.05
+        #priority: 0.05
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -64,7 +64,7 @@ regions:
             range: 10..4096
 
       - mob: mobzy:silkfang
-        priority: 2
+        #priority: 2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -78,7 +78,7 @@ regions:
               - GRASS_BLOCK
 
       - mob: mobzy:cyatoria
-        priority: 0.3
+        #priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -91,7 +91,7 @@ regions:
         #     max: 23000
 
       - mob: mobzy:dosetori
-        priority: 0.4
+        #priority: 0.4
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -105,7 +105,7 @@ regions:
       - reuse: Template.mobzy:fuwagi
 
       - mob: mobzy:okibo
-        priority: 0.1
+        #priority: 0.1
         conditions:
           - !<mobzy:spawn.local_group>
             max: 2
@@ -129,7 +129,7 @@ regions:
       - reuse: Template.mobzy:cyatoria
 
       - reuse: Template.mobzy:splitjaw
-        priority: 0.05
+        #priority: 0.05
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -165,7 +165,7 @@ regions:
       - reuse: Template.mobzy:splitjaw
 
       - mob: mobzy:corpse_weeper
-        priority: 0.3
+        #priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -233,7 +233,7 @@ regions:
   - name: Inverted Forest
     spawns:
       - reuse: Template.mobzy:splitjaw
-        priority: 0.3
+        #priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 2
@@ -253,7 +253,7 @@ regions:
       - mob: mobzy:inbyo
         amount: 4..8
         radius: 10
-        priority: 2.0
+        #priority: 2.0
         conditions:
           - !<mobzy:spawn.local_group>
             max: 8
@@ -278,7 +278,7 @@ regions:
       - reuse: Template.mobzy:neritantan
 
       - reuse: Template.mobzy:splitjaw
-        priority: 0.3
+        #priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -286,7 +286,7 @@ regions:
             radius: 150
 
       - mob: mobzy:madokajack
-        priority: 0.3
+        #priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -387,8 +387,8 @@ regions:
           - !<geary:time>
             min: 13000
             max: 23000
-          # - !<mobzy:spawn.delay>
-          #   attemptEvery: 10s
+          - !<mobzy:spawn.delay>
+            attemptEvery: 5s
           - !<mobzy:spawn.gap>
             range: 8..4096
           - !<geary:block_type>
@@ -404,8 +404,8 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..4096
-          # - !<mobzy:spawn.delay>
-          #   attemptEvery: 1s
+          - !<mobzy:spawn.delay>
+            attemptEvery: 1s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -444,7 +444,7 @@ regions:
               - WATER
 
       - mob: mobzy:onitsuchi
-        priority: 0.2
+        #priority: 0.2
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
