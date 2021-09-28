@@ -253,7 +253,7 @@ regions:
       - mob: mobzy:inbyo
         amount: 4..8
         radius: 10
-        priority: 0.1
+        priority: 0.6
         conditions:
           - !<mobzy:spawn.local_group>
             max: 8
@@ -386,11 +386,11 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: mobzy:orbpiercer
-        priority: 0.5
+        priority: 0.1
         conditions:
           - !<mobzy:spawn.local_group>
             max: 1
-            radius: 300
+            radius: 400
           - !<geary:time>
             min: 13000
             max: 23000
@@ -409,11 +409,11 @@ regions:
         conditions:
           - !<mobzy:spawn.local_group>
             max: 12
-            radius: 300
+            radius: 800
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<mobzy:spawn.delay>
-            attemptEvery: 1s
+            attemptEvery: 2s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -429,11 +429,11 @@ regions:
       - mob: mobzy:kazura
         amount: 1..3
         radius: 1
-        priority: 0.6
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 5
-            radius: 300
+            max: 4
+            radius: 400
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -444,8 +444,8 @@ regions:
         priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 2
-            radius: 200
+            max: 3
+            radius: 300
           - !<geary:light>
             range: 1..8
           - !<mobzy:spawn.gap>
@@ -455,12 +455,12 @@ regions:
               - WATER
 
       - mob: mobzy:onitsuchi
-        priority: 0.3
+        priority: 0.2
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 3
-            radius: 200
+            max: 4
+            radius: 400
           - !<mobzy:spawn.gap>
             range: 10..4096
           # - !<mobzy:spawn.delay>
@@ -469,7 +469,7 @@ regions:
       - mob: mobzy:shroombear
         amount: 1..3
         radius: 10
-        priority: 0.3
+        priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -501,7 +501,7 @@ regions:
       - mob: mobzy:hashofu
         amount: 1..3
         radius: 10
-        priority: 0.6
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -530,7 +530,7 @@ regions:
       - mob: mobzy:ashimite
         amount: 3..5
         radius: 10
-        priority: 0.2
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -545,7 +545,7 @@ regions:
       - mob: mobzy:demonfish
         amount: 2..4
         radius: 1
-        priority: 0.6
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -557,7 +557,7 @@ regions:
       - mob: mobzy:titanjaw
         amount: 1..2
         radius: 20
-        priority: 0.3
+        priority: 0.5
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -589,7 +589,7 @@ regions:
       - mob: mobzy:kagi_tachikiri
         amount: 1..4
         radius: 10
-        priority: 0.2
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
