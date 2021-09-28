@@ -18,8 +18,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 5
             radius: 60
-          - !<geary:light>
-            range: 7..15
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<geary:block_type>
@@ -69,8 +67,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 4
             radius: 100
-          - !<geary:light>
-            range: 4..15
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -142,8 +138,6 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..4096
-          - !<geary:light>
-            range: 7..15
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -178,8 +172,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 4
             radius: 200
-          - !<geary:light>
-            range: 4..10
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -319,8 +311,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 6
             radius: 200
-          - !<geary:light>
-            range: 4..15
           - !<mobzy:spawn.gap>
             range: 5..4096
           - !<geary:block_type>
@@ -336,8 +326,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 6
             radius: 300
-          - !<geary:light>
-            range: 1..10
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<geary:block_type>
@@ -355,8 +343,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 10
             radius: 250
-          - !<geary:light>
-            range: 1..7
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<geary:block_type>
@@ -372,8 +358,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 7
             radius: 250
-          - !<geary:light>
-            range: 1..7
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<geary:block_type>
@@ -444,8 +428,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 3
             radius: 300
-          - !<geary:light>
-            range: 1..8
           - !<mobzy:spawn.gap>
             range: 5..4096
           - !<geary:block_type>
@@ -472,8 +454,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 6
             radius: 300
-          - !<geary:light>
-            range: 4..15
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -488,8 +468,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 3
             radius: 250
-          - !<geary:light>
-            range: 4..15
           - !<mobzy:spawn.gap>
             range: 4..4096
           - !<geary:block_type>
@@ -504,8 +482,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 6
             radius: 400
-          - !<geary:light>
-            range: 5..15
           - !<mobzy:spawn.gap>
             range: 5..4096
           - !<geary:block_type>
@@ -560,8 +536,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 4
             radius: 250
-          - !<geary:light>
-            range: 7..15
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -576,8 +550,6 @@ regions:
           - !<mobzy:spawn.local_group>
             max: 4
             radius: 250
-          - !<geary:light>
-            range: 5..15
           - !<mobzy:spawn.gap>
             range: 4..4096
           - !<geary:block_type>
