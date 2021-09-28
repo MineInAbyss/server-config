@@ -3,7 +3,7 @@
   item:
     type: WHITE_DYE
 - !<looty:recipes>
-  disoverRecipes: true
+  discoverRecipes: true
   removeRecipes:
     - minecraft:light_gray_dye
   recipes:
