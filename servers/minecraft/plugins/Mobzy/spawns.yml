@@ -262,8 +262,6 @@ regions:
             range: 3..4096
           - !<geary:height>
             min: 140
-          - !<geary:light>
-            range: 1..10
           # - !<mobzy:spawn.delay>
           #   attemptEvery: 15s
           - !<geary:block_type>
