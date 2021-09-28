@@ -1,9 +1,11 @@
+- !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
     type: WHITE_DYE
 - !<looty:recipes>
+  disoverRecipes: true
   removeRecipes:
-    - minecraft:white_tulip
+    - minecraft:light_gray_dye
   recipes:
     - !<shapeless>
       items:
