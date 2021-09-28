@@ -1,0 +1,13 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: GLOW_ITEM_FRAME
+- !<looty:recipes>
+  discoverRecipes: true
+  removeRecipes:
+    - minecraft:glow_item_frame
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: looty:kakatsumuri_glowing_tip
+        - type: ITEM_FRAME

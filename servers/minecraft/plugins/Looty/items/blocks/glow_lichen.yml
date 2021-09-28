@@ -1,0 +1,11 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: GLOW_LICHEN
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: looty:kakatsumuri_glowing_tip
+        - type: VINE
