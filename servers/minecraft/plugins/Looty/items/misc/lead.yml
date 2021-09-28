@@ -1,0 +1,50 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: LEAD
+- !<looty:recipes>
+  discoverRecipes: true
+  removeRecipes:
+    - minecraft:lead
+  group: "looty:lead"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:silkfang_silk
+        Z:
+          prefab: looty:abyssal_snail_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:silkfang_silk
+        Z:
+          prefab: looty:splitjaw_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:kuongatari_silk
+        Z:
+          prefab: looty:abyssal_snail_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: looty:kuongatari_silk
+        Z:
+          prefab: looty:splitjaw_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
