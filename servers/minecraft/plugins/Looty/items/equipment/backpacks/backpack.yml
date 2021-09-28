@@ -4,6 +4,7 @@
     type: GRAY_SHULKER_BOX
 - !<looty:recipes>
   discoverRecipes: true
+  group: "looty:backpack"
   removeRecipes:
     - minecraft:shulker_box
   recipes:

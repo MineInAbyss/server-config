@@ -1,8 +1,10 @@
 - !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: BLACK_SHULKER_BOX
+    type: RED_SHULKER_BOX
 - !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:backpack"
   recipes:
     - !<shapeless>
       items:

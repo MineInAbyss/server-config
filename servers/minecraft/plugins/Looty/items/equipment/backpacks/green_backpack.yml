@@ -1,16 +1,16 @@
 - !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: BLACK_SHULKER_BOX
+    type: GREEN_SHULKER_BOX
 - !<looty:recipes>
   discoverRecipes: true
   group: "looty:backpack"
   recipes:
     - !<shapeless>
       items:
-        - prefab: looty:makihige_ink_sac
+        - prefab: looty:okibo_fur
         - tag: shulker_boxes
     - !<shapeless>
       items:
-        - prefab: looty:inbyo_fur
+        - prefab: looty:splitjaw_gunk
         - tag: shulker_boxes

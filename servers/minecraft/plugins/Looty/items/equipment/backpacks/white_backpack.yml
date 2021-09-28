@@ -3,6 +3,8 @@
   item:
     type: WHITE_SHULKER_BOX
 - !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:backpack"
   recipes:
     - !<shapeless>
       items:

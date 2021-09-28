@@ -1,16 +1,12 @@
 - !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: BLACK_SHULKER_BOX
+    type: MAGENTA_SHULKER_BOX
 - !<looty:recipes>
   discoverRecipes: true
   group: "looty:backpack"
   recipes:
     - !<shapeless>
       items:
-        - prefab: looty:makihige_ink_sac
-        - tag: shulker_boxes
-    - !<shapeless>
-      items:
-        - prefab: looty:inbyo_fur
+        - prefab: looty:rohana_powder
         - tag: shulker_boxes
