@@ -1,0 +1,11 @@
+- !<looty:type>
+  item:
+    display-name: §x§2§D§2§B§4§F§lBondrewd's Helmet
+    lore: |
+      §x§4§6§4§3§7§A§oBest Robotboi
+    type: STONE_HOE
+    custom-model-data: 8
+- !<looty:hat> { }
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }

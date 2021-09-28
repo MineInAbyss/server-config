@@ -1,0 +1,11 @@
+- !<looty:type>
+  item:
+    display-name: §x§F§F§C§D§6§9§lNanachi's Hat
+    lore: |
+      §x§F§F§E§A§9§6§oThe "I am not a furry but.." Cosplay
+    type: STONE_HOE
+    custom-model-data: 5
+- !<looty:hat> { }
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
