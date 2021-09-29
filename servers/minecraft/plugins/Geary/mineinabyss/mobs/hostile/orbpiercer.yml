@@ -1,0 +1,69 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 17
+- !<mobzy:attributes>
+  maxHealth: 100
+  movementSpeed: 0.5000
+  attackDamage: 25
+  attackKnockback: 5
+  knockbackResistance: 0.8000
+  followRange: 40
+  width: 1.9000
+  height: 2.5000
+- !<geary:events>
+  onTargetHit:
+    - !<on.target>
+      - !<geary:apply_potion_effects>
+        effects:
+          - type: POISON
+            duration: 5s
+            amplifier: 5
+            ambient: true
+        applyChance: 0.6000
+- !<mobzy:death_loot>
+  minExp: 230
+  maxExp: 260
+  drops:
+    - item:
+        prefab: mineinabyss:orb_piercer_spike
+      minAmount: 3
+      maxAmount: 7
+    - item:
+        prefab: mineinabyss:orb_piercer_face_fragments
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 0.5000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.orbpiercer.ambient
+  death: mineinabyss:entity.orbpiercer.death
+  hurt: mineinabyss:entity.orbpiercer.hurt
+- !<mobzy:increased_water_speed>
+  level: 3
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<mobzy:behavior.throw_items>
+      minThrowRad: 6.0000
+      projectileSpeed: 1.5000
+      projectileAngularDiameter: 8.0000
+      projectileCountPerThrow: 10
+      cooldown: 4000
+      spawn:
+        - !<minecraft:entity_type>
+          type: SNOWBALL
+        - !<mobzy:item_model>
+          item:
+            type: QUARTZ
+            custom-model-data: 1
+        - !<geary:events>
+          projectileHit:
+            - !<on.target>
+              - !<geary:deal_damage>
+                damage: 3.0
+              - !<geary:apply_potion_effects>
+                effects:
+                  - type: POISON
+                    duration: 6s
+                    amplifier: 5

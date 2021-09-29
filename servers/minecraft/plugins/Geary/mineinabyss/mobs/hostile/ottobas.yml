@@ -1,0 +1,32 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 44
+- !<mobzy:attributes>
+  maxHealth: 90
+  movementSpeed: 0.3000
+  attackDamage: 10
+  attackKnockback: 5
+  knockbackResistance: 0.3000
+  followRange: 20
+  width: 1.9000
+  height: 2
+- !<mobzy:death_loot>
+  minExp: 55
+  maxExp: 90
+  drops:
+    - item:
+        prefab: mineinabyss:ottobas_meat_raw
+      cooked:
+        prefab: mineinabyss:ottobas_meat_cooked
+      minAmount: 4
+      maxAmount: 15
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.ottobas.ambient
+  death: mineinabyss:entity.ottobas.death
+  hurt: mineinabyss:entity.ottobas.hurt
+- !<mobzy:rideable> { }
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }

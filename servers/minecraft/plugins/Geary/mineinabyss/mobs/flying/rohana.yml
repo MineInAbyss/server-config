@@ -1,0 +1,34 @@
+- !<mobzy:type>
+  baseClass: mobzy:flying
+  mobCategory: WATER_CREATURE
+  creatureType: WATER_CREATURE
+- !<mobzy:model>
+  id: 14
+  small: true
+- !<mobzy:attributes>
+  maxHealth: 10
+  flyingSpeed: 10.0050
+  attackDamage:
+  width: 0.6000
+  height: 0.6000
+- !<mobzy:death_loot>
+  minExp: 12
+  maxExp: 18
+  drops:
+    - item:
+        prefab: mineinabyss:rohana_powder
+      maxAmount: 2
+      dropChance: 0.8000
+    - item:
+        prefab: mineinabyss:rohana_tail
+      maxAmount: 2
+      dropChance: 0.4000
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker> { }
+  goals:
+    1: !<mobzy:behavior.flying_damage_target> { }
+    2: !<mobzy:behavior.fly_towards_target> { }
+    3: !<mobzy:behavior.idle_fly_above_ground>
+      maxHeight: 4
+      radius: 5

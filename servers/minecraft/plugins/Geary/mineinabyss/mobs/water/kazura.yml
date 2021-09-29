@@ -1,0 +1,20 @@
+- !<mobzy:type>
+  baseClass: mobzy:fish
+  creatureType: WATER_CREATURE
+- !<mobzy:model>
+  id: 29
+- !<mobzy:attributes>
+  maxHealth: 5
+  followRange: 10
+  attackDamage: 0
+  width: 1
+  height: 1
+- !<mobzy:death_loot>
+  minExp: 10
+  maxExp: 15
+  drops:
+    - item:
+        prefab: mineinabyss:kazura_squid_ink_sac
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 0.8000

@@ -1,0 +1,27 @@
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 113
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.3000
+  knockbackResistance:
+  followRange: 20
+  width: 0.2000
+  height: 0.2000
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 25
+  drops:
+    - item:
+        prefab: mineinabyss:rinsipede_segments
+      dropChance: 0.8000
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.avoid_player>
+      radius: 15
+    3: !<minecraft:behavior.panic>
+      speedModifier: 4
+    4: !<minecraft:behavior.random_stroll_land> { }

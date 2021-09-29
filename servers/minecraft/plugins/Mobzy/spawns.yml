@@ -10,7 +10,7 @@ icon: DIAMOND_BLOCK
 regions:
   - name: Template
     spawns:
-      - mob: mobzy:fuwagi
+      - mob: mineinabyss:fuwagi
         amount: 2..3
         radius: 10
         priority: 0.4
@@ -24,7 +24,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:neritantan
+      - mob: mineinabyss:neritantan
         amount: 3..5
         radius: 10
         conditions:
@@ -41,7 +41,7 @@ regions:
               - DIORITE
               - WHITE_CONCRETE
 
-      - mob: mobzy:hammerbeak
+      - mob: mineinabyss:hammerbeak
         priority: 0.3
         spawnPos: AIR
         conditions:
@@ -51,7 +51,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..4096
 
-      - mob: mobzy:splitjaw
+      - mob: mineinabyss:splitjaw
         priority: 0.5
         spawnPos: AIR
         conditions:
@@ -61,7 +61,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..4096
 
-      - mob: mobzy:silkfang
+      - mob: mineinabyss:silkfang
         priority: 0.02
         conditions:
           - !<mobzy:spawn.local_group>
@@ -73,7 +73,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:cyatoria
+      - mob: mineinabyss:cyatoria
         priority: 0.3
         spawnPos: AIR
         conditions:
@@ -83,7 +83,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..4096
 
-      - mob: mobzy:dosetori
+      - mob: mineinabyss:dosetori
         priority: 0.4
         spawnPos: AIR
         conditions:
@@ -97,7 +97,7 @@ regions:
     spawns:
       - reuse: Template.mobzy:fuwagi
 
-      - mob: mobzy:okibo
+      - mob: mineinabyss:okibo
         priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
@@ -129,7 +129,7 @@ regions:
             max: 1
             radius: 500
 
-      - mob: mobzy:beniguma
+      - mob: mineinabyss:beniguma
         amount: 2..4
         radius: 20
         conditions:
@@ -155,7 +155,7 @@ regions:
 
       - reuse: Template.mobzy:splitjaw
 
-      - mob: mobzy:corpse_weeper
+      - mob: mineinabyss:corpse_weeper
         priority: 0.3
         spawnPos: AIR
         conditions:
@@ -165,7 +165,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..4096
 
-      - mob: mobzy:rohana
+      - mob: mineinabyss:rohana
         amount: 1..4
         radius: 20
         conditions:
@@ -178,7 +178,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:tesuchi
+      - mob: mineinabyss:tesuchi
         amount: 1..4
         radius: 15
         conditions:
@@ -191,7 +191,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:ottobas
+      - mob: mineinabyss:ottobas
         amount: 1..2
         radius: 6
         conditions:
@@ -204,7 +204,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:chimokami
+      - mob: mineinabyss:chimokami
         amount: 1..2
         radius: 10
         priority: 0.3
@@ -242,7 +242,7 @@ regions:
 
       - reuse: Template.mobzy:dosetori
 
-      - mob: mobzy:inbyo
+      - mob: mineinabyss:inbyo
         amount: 4..8
         radius: 10
         priority: 0.6
@@ -276,7 +276,7 @@ regions:
             max: 3
             radius: 150
 
-      - mob: mobzy:madokajack
+      - mob: mineinabyss:madokajack
         priority: 0.2
         spawnPos: AIR
         conditions:
@@ -286,7 +286,7 @@ regions:
           - !<mobzy:spawn.gap>
             range: 10..4096
 
-      - mob: mobzy:sakuranbo
+      - mob: mineinabyss:sakuranbo
         amount: 1..3
         radius: 10
         priority: 0.2
@@ -303,7 +303,7 @@ regions:
               - GRASS_BLOCK
               - PODZOL
 
-      - mob: mobzy:squidfly
+      - mob: mineinabyss:squidfly
         amount: 1..5
         radius: 30
         priority: 0.3
@@ -318,7 +318,7 @@ regions:
               - GRASS_BLOCK
               - PODZOL
 
-      - mob: mobzy:kakatsumuri
+      - mob: mineinabyss:kakatsumuri
         amount: 1..5
         radius: 20
         priority: 0.3
@@ -335,7 +335,7 @@ regions:
               - DIORITE
               - WHITE_CONCRETE
 
-      - mob: mobzy:rinsipede
+      - mob: mineinabyss:rinsipede
         amount: 1..5
         radius: 30
         priority: 0.3
@@ -350,7 +350,7 @@ regions:
               - WHITE_CONCRETE
               - DIORITE
 
-      - mob: mobzy:virinsipede
+      - mob: mineinabyss:virinsipede
         amount: 1..3
         radius: 30
         priority: 0.4
@@ -367,7 +367,7 @@ regions:
 
   - name: The Goblet of Giants
     spawns:
-      - mob: mobzy:orbpiercer
+      - mob: mineinabyss:orbpiercer
         priority: 0.1
         conditions:
           - !<mobzy:spawn.local_group>
@@ -384,7 +384,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:kuongatari
+      - mob: mineinabyss:kuongatari
         amount: 4..8
         radius: 10
         priority: 0.2
@@ -408,7 +408,7 @@ regions:
             max: 5
             radius: 200
 
-      - mob: mobzy:kazura
+      - mob: mineinabyss:kazura
         amount: 1..3
         radius: 1
         priority: 0.2
@@ -422,7 +422,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:makihige
+      - mob: mineinabyss:makihige
         priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
@@ -434,7 +434,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:onitsuchi
+      - mob: mineinabyss:onitsuchi
         priority: 0.2
         spawnPos: AIR
         conditions:
@@ -446,7 +446,7 @@ regions:
           # - !<mobzy:spawn.delay>
           #   attemptEvery: 15s
 
-      - mob: mobzy:shroombear
+      - mob: mineinabyss:shroombear
         amount: 1..3
         radius: 10
         priority: 0.4
@@ -460,7 +460,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:uibuta
+      - mob: mineinabyss:uibuta
         amount: 1..2
         radius: 10
         priority: 0.3
@@ -474,7 +474,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:hashofu
+      - mob: mineinabyss:hashofu
         amount: 1..3
         radius: 10
         priority: 0.3
@@ -501,7 +501,7 @@ regions:
 
       - reuse: The Goblet of Giants.mobzy:hashofu
 
-      - mob: mobzy:ashimite
+      - mob: mineinabyss:ashimite
         amount: 3..5
         radius: 10
         priority: 0.3
@@ -516,7 +516,7 @@ regions:
               - SNOW_BLOCK
               - SNOW
 
-      - mob: mobzy:demonfish
+      - mob: mineinabyss:demonfish
         amount: 2..4
         radius: 1
         priority: 0.2
@@ -528,7 +528,7 @@ regions:
             allow:
               - WATER
 
-      - mob: mobzy:titanjaw
+      - mob: mineinabyss:titanjaw
         amount: 1..2
         radius: 20
         priority: 0.5
@@ -542,7 +542,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:abyssal_snail
+      - mob: mineinabyss:abyssal_snail
         amount: 1..2
         radius: 10
         priority: 0.4
@@ -556,7 +556,7 @@ regions:
             allow:
               - GRASS_BLOCK
 
-      - mob: mobzy:kagi_tachikiri
+      - mob: mineinabyss:kagi_tachikiri
         amount: 1..4
         radius: 10
         priority: 0.3

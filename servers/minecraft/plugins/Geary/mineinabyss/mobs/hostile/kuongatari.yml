@@ -1,0 +1,32 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 35
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.4000
+  attackDamage: 6
+  attackKnockback: 1
+  followRange: 10
+  width: 0.9000
+  height: 0.9000
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 25
+  drops:
+    - item:
+        prefab: mineinabyss:kuongatari_juice
+      dropChance: 0.4000
+    - item:
+        prefab: mineinabyss:kuongatari_silk
+      dropChance: 0.6000
+    - item:
+        prefab: mineinabyss:kuongatari_abdomen
+      cooked:
+        prefab: mineinabyss:kuongatari_abdomen_cooked
+      dropChance: 0.8000
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.leap_at_target>
+      jumpHeight: 0.6000

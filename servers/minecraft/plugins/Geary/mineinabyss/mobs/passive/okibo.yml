@@ -1,0 +1,32 @@
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 38
+- !<mobzy:attributes>
+  maxHealth: 50
+  movementSpeed: 0.2000
+  knockbackResistance: 0.2000
+  width: 2.5000
+  height: 3
+- !<mobzy:death_loot>
+  minExp: 20
+  maxExp: 25
+  drops:
+    - item:
+        prefab: mineinabyss:okibo_meat_raw
+      cooked:
+        prefab: mineinabyss:okibo_meat_cooked
+      minAmount: 6
+      maxAmount: 10
+    - item:
+        prefab: mineinabyss:okibo_fur
+      minAmount: 2
+      maxAmount: 4
+      dropChance: 0.8000
+- !<mobzy:rideable> { }
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.random_stroll_land> { }
+    3: !<minecraft:behavior.look_at_player> { }
