@@ -1,0 +1,62 @@
+name: Recipe Suggestion
+description: Suggest a recipe idea
+body:
+  - type: dropdown
+    id: recipeType
+    attributes:
+      label: Type of recipe
+      description: How should the recipe be crafted?
+      options:
+        - Crafting Table
+        - Furance
+        - Blast Furnace
+        - Smoker
+        - Campfire / Bonfire
+        - Smithing Table
+        - Brewing Stand
+        - Stonecutter
+
+  - type: textarea
+    attributes:
+      label: Recipe shape
+      description: For crafting table recipes
+      placeholder: |
+        |XXX|
+        |XZX|
+        | Z |
+      value: |
+        |   |
+        |   |
+        |   |
+      render: bash
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Ingredients for the recipe
+      description: What items are used in this recipe?
+      placeholder: |
+        X: Charcoal sand ingot
+        Z: Stick
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Result
+      description: What does this recipe produce?
+      placeholder: Scaled Umbrella
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn't already an open issue regarding this.
+          required: true
+        - label: I have ensured the recipe I'm requesting isn't already in the server.
+          required: true
+
