@@ -24,10 +24,6 @@ body:
         |XXX|
         |XZX|
         | Z |
-      value: |
-        |   |
-        |   |
-        |   |
       render: bash
     validations:
       required: false
