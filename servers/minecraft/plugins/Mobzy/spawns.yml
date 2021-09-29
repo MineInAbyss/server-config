@@ -387,7 +387,7 @@ regions:
       - mob: mobzy:kuongatari
         amount: 4..8
         radius: 10
-        priority: 0.4
+        priority: 0.5
         conditions:
           - !<mobzy:spawn.local_group>
             max: 12
@@ -465,11 +465,11 @@ regions:
       - mob: mobzy:uibuta
         amount: 1..2
         radius: 10
-        priority: 0.3
+        priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
             max: 3
-            radius: 250
+            radius: 300
           - !<mobzy:spawn.gap>
             range: 4..4096
           - !<geary:block_type>
@@ -533,11 +533,11 @@ regions:
       - mob: mobzy:titanjaw
         amount: 1..2
         radius: 20
-        priority: 0.5
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 4
-            radius: 250
+            max: 3
+            radius: 500
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:block_type>
@@ -547,11 +547,11 @@ regions:
       - mob: mobzy:abyssal_snail
         amount: 1..2
         radius: 10
-        priority: 0.4
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 4
-            radius: 250
+            max: 2
+            radius: 500
           - !<mobzy:spawn.gap>
             range: 4..4096
           - !<geary:block_type>
