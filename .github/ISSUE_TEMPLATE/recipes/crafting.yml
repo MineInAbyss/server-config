@@ -1,0 +1,65 @@
+name: Crafting Recipe Suggestion
+description: Suggest a crafting recipe idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
+
+  - type: dropdown
+    id: recipeType
+    attributes:
+      label: Type
+      description: How strict is this recipe?
+      options:
+        - Shapeless
+        - Shaped
+
+  - type: textarea
+    attributes:
+      label: Ingredients for the recipe
+      description: What items are used in this recipe?
+      placeholder: |
+        X: Charcoal sand ingot
+        Z: Stick
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Result
+      description: What does this recipe produce?
+      placeholder: Scaled Umbrella
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Crafting table recipe shape
+      description: |
+        (ignore if not using shaped type)
+        Please use the following format:
+        Spaces represent an empty slot
+        ```bash
+        |   |
+        |   |
+        |   |
+        ```
+      placeholder: |
+        |XXX|
+        |XZX|
+        | Z |
+      render: bash
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn't already an open issue regarding this.
+          required: true
+        - label: I have ensured the recipe I'm requesting isn't already in the server.
+          required: true
+
