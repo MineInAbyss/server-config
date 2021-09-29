@@ -18,18 +18,6 @@ body:
 
   - type: textarea
     attributes:
-      label: Recipe shape
-      description: For crafting table recipes
-      placeholder: |
-        |XXX|
-        |XZX|
-        | Z |
-      render: bash
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
       label: Ingredients for the recipe
       description: What items are used in this recipe?
       placeholder: |
@@ -45,6 +33,30 @@ body:
       placeholder: Scaled Umbrella
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        !(Crafting Table)[https://i.imgur.com/pdRqvRj.png]
+
+  - type: textarea
+    attributes:
+      label: Crafting table recipe shape
+      description: |
+        (ignore if not using crafting table recipe)
+        Please use the following format:
+        |   |
+        |   |
+        |   |
+      placeholder: |
+        |XXX|
+        |XZX|
+        | Z |
+      render: bash
+    validations:
+      required: false
+
+
 
   - type: checkboxes
     attributes:
