@@ -26,6 +26,13 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: If you feel like additional information would be helpful add it here.
+    validations:
+      required: false
+
   - type: checkboxes
     attributes:
       label: Agreements
