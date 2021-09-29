@@ -1,20 +1,19 @@
-name: Recipe Suggestion
-description: Suggest a recipe idea
+name: Crafting Recipe Suggestion
+description: Suggest a crafting recipe idea
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
+
   - type: dropdown
     id: recipeType
     attributes:
-      label: Type of recipe
-      description: How should the recipe be crafted?
+      label: Type
+      description: How strict is this recipe?
       options:
-        - Crafting Table
-        - Furance
-        - Blast Furnace
-        - Smoker
-        - Campfire / Bonfire
-        - Smithing Table
-        - Brewing Stand
-        - Stonecutter
+        - Shapeless
+        - Shaped
 
   - type: textarea
     attributes:
@@ -26,7 +25,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     attributes:
       label: Result
       description: What does this recipe produce?
@@ -38,8 +37,7 @@ body:
     attributes:
       label: Crafting table recipe shape
       description: |
-        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
-        (ignore if not using crafting table recipe)
+        (ignore if not using shaped type)
         Please use the following format:
         Spaces represent an empty slot
         ```bash
@@ -54,8 +52,6 @@ body:
       render: bash
     validations:
       required: false
-
-
 
   - type: checkboxes
     attributes:
