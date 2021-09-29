@@ -17,7 +17,7 @@ regions:
         conditions:
           - !<mobzy:spawn.local_group>
             max: 5
-            radius: 60
+            radius: 200
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<geary:block_type>
@@ -30,7 +30,7 @@ regions:
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
-            radius: 200
+            radius: 300
           - !<mobzy:spawn.gap>
             range: 2..4096
           - !<mobzy:spawn.delay>
@@ -245,15 +245,15 @@ regions:
       - mob: mobzy:inbyo
         amount: 4..8
         radius: 10
-        priority: 0.6
+        priority: 0.8
         conditions:
           - !<mobzy:spawn.local_group>
             max: 8
             radius: 120
           - !<mobzy:spawn.gap>
             range: 3..4096
-          - !<geary:height>
-            min: 140
+#          - !<geary:height>
+#            min: 140
           # - !<mobzy:spawn.delay>
           #   attemptEvery: 15s
           - !<geary:block_type>
@@ -341,7 +341,7 @@ regions:
         priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 10
+            max: 6
             radius: 250
           - !<mobzy:spawn.gap>
             range: 2..4096
@@ -356,7 +356,7 @@ regions:
         priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 7
+            max: 5
             radius: 250
           - !<mobzy:spawn.gap>
             range: 2..4096
@@ -368,7 +368,7 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: mobzy:orbpiercer
-        priority: 0.1
+        priority: 0.15
         conditions:
           - !<mobzy:spawn.local_group>
             max: 1
@@ -387,11 +387,11 @@ regions:
       - mob: mobzy:kuongatari
         amount: 4..8
         radius: 10
-        priority: 0.2
+        priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
             max: 12
-            radius: 800
+            radius: 600
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<mobzy:spawn.delay>
@@ -423,6 +423,8 @@ regions:
               - WATER
 
       - mob: mobzy:makihige
+        amount: 1..3
+        radius: 20
         priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
