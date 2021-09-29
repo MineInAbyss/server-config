@@ -34,18 +34,15 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
-
   - type: textarea
     attributes:
       label: Crafting table recipe shape
       description: |
+        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
         (ignore if not using crafting table recipe)
         Please use the following format:
-        ```
+        Spaces represent an empty slot
+        ```bash
         |   |
         |   |
         |   |
