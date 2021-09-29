@@ -37,7 +37,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        !(Crafting Table)[https://i.imgur.com/pdRqvRj.png]
+        ![Crafting Table](https://i.imgur.com/pdRqvRj.png)
 
   - type: textarea
     attributes:
@@ -45,9 +45,11 @@ body:
       description: |
         (ignore if not using crafting table recipe)
         Please use the following format:
+        ```
         |   |
         |   |
         |   |
+        ```
       placeholder: |
         |XXX|
         |XZX|
