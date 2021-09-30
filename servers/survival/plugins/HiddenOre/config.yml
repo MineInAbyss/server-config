@@ -94,7 +94,7 @@ regions:
                 type: GOLD_ORE
             tools:
               - anything
-            chance: 0.03
+            chance: 0.003
             minAmount: 1
             maxAmount: 3
             transformIfAble: true
@@ -189,7 +189,7 @@ regions:
                 type: GOLD_ORE
             tools:
               - anything
-            chance: 0.0015
+            chance: 0.002
             minAmount: 2
             maxAmount: 6
             transformIfAble: true
