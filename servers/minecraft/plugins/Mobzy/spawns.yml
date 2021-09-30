@@ -516,7 +516,7 @@ regions:
           - !<geary:block_type>
             allow:
               - SNOW_BLOCK
-              - POWDERED_SNOW
+              - POWDER_SNOW
 
       - mob: mobzy:demonfish
         amount: 2..4
