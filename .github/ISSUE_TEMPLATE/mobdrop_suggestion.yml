@@ -30,7 +30,7 @@ body:
       label: Mobdrop Texture
       description: |
         Do you have a custom texture, or ideas for one?
-        If so you can drop an image below, or add details in the form of text.
+        If so you can drop/link an image below, or add details in the form of text.
     validations:
       required: false
 

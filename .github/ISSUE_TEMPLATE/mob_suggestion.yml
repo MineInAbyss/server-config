@@ -1,5 +1,5 @@
 name: Mob Suggestion
-description: Suggest a mob related idea for MineInAbyss
+description: Suggest a mob for MineInAbyss
 body:
   - type: input
     attributes:
@@ -28,13 +28,14 @@ body:
         - Flying
         - Water / Fish
 
-  - type: input
+  - type: textarea
     attributes:
-      label: Mob name
-      description: What is the name of the mob?
-      placeholder: Splitjaw
+      label: Mob Info
+      description: |
+        Please add a description and general information about the mob below.
+        For example difficulty, specific spawnconditions, special attacks etc.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
