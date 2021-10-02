@@ -41,8 +41,8 @@ body:
     attributes:
       label: Mob Model/Texture
       description: |
-        Do you have a custom texture/model? If so you can drop an image/file below
-        If not, please provide some form of description in terms of concept images/ideas.
+        Do you have a custom texture/model? If so you can drop an image/file below.
+        If not, please provide some form of description via either images or text.
     validations:
       required: true
 
@@ -50,8 +50,8 @@ body:
     attributes:
       label: Related mobdrop ideas
       description: |
-        Are there any mobdrop suggestions related to this mob?
-        If so mention them with '#ISSUE_NUMBER' below.
+        Are there any mobdrop suggestions related to this mob? If so mention them with '#ISSUE_NUMBER' below.
+        If you have an idea, but it isn't submitted. Please do so via the Mobdrop form and link it below.
       placeholder: '#10 and #12'
     validations:
       required: false
@@ -72,5 +72,5 @@ body:
       options:
         - label: I have searched for and ensured there isn't already an open suggestion similar to this.
           required: true
-        - label: I have ensured the mobdrop I'm requesting isn't already in the server.
+        - label: I have ensured the mob I'm suggesting isn't already on the server.
           required: true
