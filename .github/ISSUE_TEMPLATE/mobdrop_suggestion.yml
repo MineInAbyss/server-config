@@ -25,7 +25,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     attributes:
       label: Mobdrop Texture
       description: |
@@ -34,11 +34,11 @@ body:
     validations:
       required: false
 
-  - type: textarea
+  - type: input
     attributes:
       label: Related recipe ideas
       description: |
-        Are there any suggested recipes relating to this drop?
+        Are there any suggested recipes related to this drop?
         If so mention them with '#ISSUE_NUMBER' below
       placeholder: '#10 and #12'
     validations:

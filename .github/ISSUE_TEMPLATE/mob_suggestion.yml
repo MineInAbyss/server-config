@@ -1,0 +1,75 @@
+name: Mob Suggestion
+description: Suggest a mob related idea for MineInAbyss
+body:
+  - type: input
+    attributes:
+      label: Mob name
+      description: What is the name of the mob?
+      placeholder: Splitjaw
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Spawn Locations
+      description: Where would the mob spawn?
+      placeholder: Layer 1 and Layer 4.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mobType
+    attributes:
+      label: Mob-type
+      description: What type of mob is this?
+      options:
+        - Hostile
+        - Passive
+        - Flying
+        - Water / Fish
+
+  - type: input
+    attributes:
+      label: Mob name
+      description: What is the name of the mob?
+      placeholder: Splitjaw
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Mob Model/Texture
+      description: |
+        Do you have a custom texture/model? If so you can drop an image/file below
+        If not, please provide some form of description in terms of concept images/ideas.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Related mobdrop ideas
+      description: |
+        Are there any mobdrop suggestions related to this mob?
+        If so mention them with '#ISSUE_NUMBER' below.
+      placeholder: '#10 and #12'
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: |
+        If you feel like additional information would be helpful add it here.
+        Could be wiki-pages or something not fitting in any of the boxes above.
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn't already an open suggestion similar to this.
+          required: true
+        - label: I have ensured the mobdrop I'm requesting isn't already in the server.
+          required: true
