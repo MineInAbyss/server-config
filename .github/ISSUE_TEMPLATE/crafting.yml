@@ -1,5 +1,7 @@
 name: Crafting Recipe Suggestion
 description: Suggest a crafting recipe idea
+assignees: Boy0000
+labels: [recipe]
 body:
   - type: markdown
     attributes:

@@ -1,5 +1,7 @@
 name: Smithing Recipe Suggestion
 description: Suggest a smithing recipe idea
+assignees: Boy0000
+labels: [recipe]
 body:
   - type: input
     attributes:

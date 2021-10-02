@@ -1,32 +1,23 @@
-name: Cooking Recipe Suggestion
-description: Suggest a cooking recipe idea
+name: Stonecutter Recipe Suggestion
+description: Suggest a stonecutter recipe idea
 assignees: Boy0000
 labels: [recipe]
 body:
-  - type: checkboxes
-    id: cooking-types
-    attributes:
-      label: Where should this recipe be applied?
-      description: You may select more than one.
-      options:
-        - label: Furnace
-        - label: Blast Furnace
-        - label: Smoker
-        - label: Campfire
-
   - type: input
     attributes:
       label: Input Item
       description: What item is used as the input?
-      placeholder: Raw Charcoal Sand
+      placeholder: Blackstone
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Result
-      description: What does this recipe produce?
-      placeholder: Charcoal Sand Ingot
+      label: Group / Tag
+      description: |
+        What group of blocks/items does this recipe return?
+        Groups are defined within each items file, but it does also support vanilla options like 'planks'
+      placeholder: looty:blackstone
     validations:
       required: true
 
