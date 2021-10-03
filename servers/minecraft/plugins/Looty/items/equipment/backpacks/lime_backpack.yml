@@ -2,11 +2,11 @@
 - !<looty:type>
   item:
     type: LIME_SHULKER_BOX
-- !<looty:recipes>
-  discoverRecipes: true
-  group: "looty:dyed_backpack"
-  recipes:
-    - !<shapeless>
-      items:
-        - prefab: looty:kuongatari_juice
-        - tag: shulker_boxes
+#- !<looty:recipes>
+#  discoverRecipes: true
+#  group: "looty:dyed_backpack"
+#  recipes:
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:kuongatari_juice
+#        - tag: shulker_boxes

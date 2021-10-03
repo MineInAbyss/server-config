@@ -2,15 +2,15 @@
 - !<looty:type>
   item:
     type: BROWN_SHULKER_BOX
-- !<looty:recipes>
-  discoverRecipes: true
-  group: "looty:dyed_backpack"
-  recipes:
-    - !<shapeless>
-      items:
-        - prefab: looty:madokajack_poop
-        - tag: shulker_boxes
-    - !<shapeless>
-      items:
-        - prefab: looty:abyssal_snail_gunk
-        - tag: shulker_boxes
+#- !<looty:recipes>
+#  discoverRecipes: true
+#  group: "looty:dyed_backpack"
+#  recipes:
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:madokajack_poop
+#        - tag: shulker_boxes
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:abyssal_snail_gunk
+#        - tag: shulker_boxes
