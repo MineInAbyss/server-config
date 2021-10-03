@@ -1,50 +1,39 @@
-name: Relic Suggestion
-description: Suggest a relic idea for MineInAbyss
+name: General Item Suggestion
+description: Suggest an item idea for MineInAbyss
 assignees: Boy0000
-labels: [relic]
+labels: [tool/equipment]
 body:
-  - type: input
-    attributes:
-      label: Relicname
-      description: What is the name of the relic?
-      placeholder: Scaled Umbrella
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Relic Location
-      description: Where would the relic be found?
-      placeholder: Layer 1 / Craftable via recipe.
-    validations:
-      required: true
-
   - type: dropdown
-    id: relicTier
+    id: itemType
     attributes:
-      label: Relic Tier
-      description: |
-        What tier is this relic in?
-        Would detail the rarity of said relic.
+      label: Item Type
+      description: What type of item is this?
       options:
-        - Special Grade
-        - First Grade
-        - Second Grade
-        - Third Grade
-        - Fourth Grade
+        - Tool
+        - Weapon
+        - Armor
+        - Other
+
+  - type: input
+    attributes:
+      label: Item name
+      description: What is the name of the item?
+      placeholder: Sickle
+    validations:
+      required: true
 
   - type: textarea
     attributes:
-      label: Relic Info
+      label: Item Info
       description: |
-        Please add a description and general information about the relic below.
+        Please add a description and general information about the item below.
         For example ability, functionality, amount of uses or durability etc.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Relic Model/Texture
+      label: Item Model/Texture
       description: |
         Do you have a custom texture/model? If so you can drop an image/file below.
         If not, please provide some form of description via either images or text.
@@ -53,9 +42,17 @@ body:
 
   - type: input
     attributes:
+      label: Obtainability
+      description: How would the item be found?
+      placeholder: Craftable via recipe / Bought from Orth Merchants.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
       label: Related recipe ideas
       description: |
-        Are there any suggested recipes related to this relic?
+        Are there any suggested recipes related to this item?
         If so mention them with '#ISSUE_NUMBER' below
       placeholder: '#10 and #12'
     validations:
