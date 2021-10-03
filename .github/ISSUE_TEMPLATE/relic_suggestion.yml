@@ -1,59 +1,62 @@
-name: Mob Suggestion
-description: Suggest a mob for MineInAbyss
+name: Relic Request
+description: Suggest a relic idea for MineInAbyss
 assignees: Boy0000
-labels: [mob]
+labels: [relic]
 body:
   - type: input
     attributes:
-      label: Mob name
-      description: What is the name of the mob?
-      placeholder: Splitjaw
+      label: Relicname
+      description: What is the name of the relic?
+      placeholder: Scaled Umbrella
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Spawn Locations
-      description: Where would the mob spawn?
-      placeholder: Layer 1 and Layer 4.
+      label: Relic Location
+      description: Where would the relic be found?
+      placeholder: Layer 1 / Craftable via recipe.
     validations:
       required: true
 
   - type: dropdown
-    id: mobType
+    id: relicTier
     attributes:
-      label: Mob-type
-      description: What type of mob is this?
+      label: Relic Tier
+      description: |
+        What tier is this relic in?
+        Would detail the rarity of said relic.
       options:
-        - Hostile
-        - Passive
-        - Flying
-        - Water / Fish
+        - Special Grade
+        - First Grade
+        - Second Grade
+        - Third Grade
+        - Fourth Grade
 
   - type: textarea
     attributes:
-      label: Mob Info
+      label: Relic Info
       description: |
-        Please add a description and general information about the mob below.
-        For example difficulty, specific spawnconditions, special attacks etc.
+        Please add a description and general information about the relic below.
+        For example ability, functionality, amount of uses or durability etc.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Mob Model/Texture
+      label: Relic Model/Texture
       description: |
         Do you have a custom texture/model? If so you can drop an image/file below.
         If not, please provide some form of description via either images or text.
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     attributes:
-      label: Related mobdrop ideas
+      label: Related recipe ideas
       description: |
-        Are there any mobdrop suggestions related to this mob? If so mention them with '#ISSUE_NUMBER' below.
-        If you have an idea, but it isn't submitted. Please do so via the Mobdrop form and link it below.
+        Are there any suggested recipes related to this relic?
+        If so mention them with '#ISSUE_NUMBER' below
       placeholder: '#10 and #12'
     validations:
       required: false
@@ -74,5 +77,5 @@ body:
       options:
         - label: I have searched for and ensured there isn't already an open suggestion similar to this.
           required: true
-        - label: I have ensured the mob I'm suggesting isn't already on the server.
+        - label: I have ensured the relic I'm suggesting isn't already on the server.
           required: true
