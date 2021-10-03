@@ -1,7 +1,7 @@
 name: General Item Suggestion
 description: Suggest an item idea for MineInAbyss
 assignees: Boy0000
-labels: [tool/equipment]
+labels: [item]
 body:
   - type: dropdown
     id: itemType
@@ -12,13 +12,14 @@ body:
         - Tool
         - Weapon
         - Armor
+        - Equipment
         - Other
 
   - type: input
     attributes:
       label: Item name
       description: What is the name of the item?
-      placeholder: Sickle
+      placeholder: Cave Raider Helmet
     validations:
       required: true
 
@@ -28,6 +29,7 @@ body:
       description: |
         Please add a description and general information about the item below.
         For example ability, functionality, amount of uses or durability etc.
+      placeholder: Used to light up dark caves when exploring.
     validations:
       required: true
 
