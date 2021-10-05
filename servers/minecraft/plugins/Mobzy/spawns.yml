@@ -342,7 +342,7 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: mobzy:orbpiercer
-        priority: 0.25
+        priority: 0.1
         conditions:
           - !<mobzy:spawn.local_group>
             max: 1
@@ -350,8 +350,6 @@ regions:
           - !<geary:time>
             min: 13000
             max: 23000
-          - !<mobzy:spawn.delay>
-            attemptEvery: 5s
           - !<mobzy:spawn.gap>
             range: 5..4096
           - !<geary:block_type>
