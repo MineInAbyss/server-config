@@ -104,14 +104,14 @@ regions:
       - reuse: Orth.mobzy:fuwagi
         priority: 0.2
 
-      - reuse: Edge Of The Abyss.mobzy:hammerbeak
+      - reuse: Edge of the Abyss.mobzy:hammerbeak
 
-      - reuse: Edge Of The Abyss.mobzy:cyatoria
+      - reuse: Edge of the Abyss.mobzy:cyatoria
 
-      - reuse: Edge Of The Abyss.mobzy:silkfang
+      - reuse: Edge of the Abyss.mobzy:silkfang
         priority: 0.4
 
-      - reuse: Edge Of The Abyss.mobzy:splitjaw
+      - reuse: Edge of the Abyss.mobzy:splitjaw
 
       - mob: mobzy:corpse_weeper
         priority: 0.4
@@ -186,7 +186,7 @@ regions:
     spawns:
       - reuse: Forest of Temptation.mobzy:ottobas
 
-      - reuse: Edge Of The Abyss.mobzy:splitjaw
+      - reuse: Edge of the Abyss.mobzy:splitjaw
         priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
@@ -244,7 +244,7 @@ regions:
           - !<mobzy:spawn.delay>
             attemptEvery: 1s
 
-      - reuse: Edge Of The Abyss.mobzy:splitjaw
+      - reuse: Edge of the Abyss.mobzy:splitjaw
         priority: 0.3
         spawnPos: AIR
         conditions:
