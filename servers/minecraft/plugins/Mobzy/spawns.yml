@@ -8,100 +8,27 @@
 name: Abyssal Creatures
 icon: DIAMOND_BLOCK
 regions:
-  - name: Template
-    spawns:
-      - mob: mobzy:fuwagi
-        amount: 2..3
-        radius: 10
-        priority: 0.4
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 5
-            radius: 200
-          - !<mobzy:spawn.gap>
-            range: 2..4096
-          - !<geary:block_type>
-            allow:
-              - GRASS_BLOCK
-
-      - mob: mobzy:neritantan
-        amount: 3..5
-        radius: 10
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 6
-            radius: 300
-          - !<mobzy:spawn.gap>
-            range: 2..4096
-          - !<mobzy:spawn.delay>
-            attemptEvery: 2s
-          - !<geary:block_type>
-            allow:
-              - GRASS_BLOCK
-              - DIORITE
-              - WHITE_CONCRETE
-
-      - mob: mobzy:hammerbeak
-        priority: 0.3
-        spawnPos: AIR
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 3
-            radius: 120
-          - !<mobzy:spawn.gap>
-            range: 10..4096
-
-      - mob: mobzy:splitjaw
-        priority: 0.5
-        spawnPos: AIR
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 2
-            radius: 300
-          - !<mobzy:spawn.gap>
-            range: 10..4096
-
-      - mob: mobzy:silkfang
-        priority: 0.02
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 4
-            radius: 100
-          - !<mobzy:spawn.gap>
-            range: 3..4096
-          - !<geary:block_type>
-            allow:
-              - GRASS_BLOCK
-
-      - mob: mobzy:cyatoria
-        priority: 0.3
-        spawnPos: AIR
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 2
-            radius: 150
-          - !<mobzy:spawn.gap>
-            range: 10..4096
-
-      - mob: mobzy:dosetori
-        priority: 0.4
-        spawnPos: AIR
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 3
-            radius: 200
-          - !<mobzy:spawn.gap>
-            range: 10..4096
-
   - name: Orth
     spawns:
-      - reuse: Template.mobzy:fuwagi
+      - mob: mobzy:fuwagi
+          amount: 2..3
+          radius: 10
+          priority: 0.2
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 5
+              radius: 200
+            - !<mobzy:spawn.gap>
+              range: 2..4096
+            - !<geary:block_type>
+              allow:
+                - GRASS_BLOCK
 
       - mob: mobzy:okibo
         priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
-            max: 3
+            max: 2
             radius: 200
           - !<mobzy:spawn.gap>
             range: 4..4096
@@ -113,25 +40,54 @@ regions:
 
   - name: Edge of the Abyss
     spawns:
-      - reuse: Template.mobzy:fuwagi
+      - reuse: Orth.mobzy:fuwagi
 
-      - reuse: Template.mobzy:hammerbeak
+      - mob: mobzy:hammerbeak
+          priority: 0.3
+          spawnPos: AIR
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 3
+              radius: 120
+            - !<mobzy:spawn.gap>
+              range: 10..4096
 
-      - reuse: Template.mobzy:silkfang
+      - mob: mobzy:silkfang
+          priority: 0.4
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 4
+              radius: 200
+            - !<mobzy:spawn.gap>
+              range: 3..4096
+            - !<geary:block_type>
+              allow:
+                - GRASS_BLOCK
 
-      - reuse: Template.mobzy:cyatoria
+      - mob: mobzy:cyatoria
+          priority: 0.3
+          spawnPos: AIR
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 2
+              radius: 150
+            - !<mobzy:spawn.gap>
+              range: 10..4096
 
-      - reuse: Template.mobzy:splitjaw
-        priority: 0.5
-        spawnPos: AIR
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 1
-            radius: 500
+      - mob: mobzy:splitjaw
+          priority: 0.05
+          spawnPos: AIR
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 1
+              radius: 500
+            - !<mobzy:spawn.gap>
+              range: 10..4096
 
       - mob: mobzy:beniguma
         amount: 2..4
         radius: 20
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -145,18 +101,20 @@ regions:
 
   - name: Forest of Temptation
     spawns:
-      - reuse: Template.mobzy:fuwagi
+      - reuse: Orth.mobzy:fuwagi
+        priority: 0.2
 
-      - reuse: Template.mobzy:hammerbeak
+      - reuse: Edge Of The Abyss.mobzy:hammerbeak
 
-      - reuse: Template.mobzy:cyatoria
+      - reuse: Edge Of The Abyss.mobzy:cyatoria
 
-      - reuse: Template.mobzy:silkfang
+      - reuse: Edge Of The Abyss.mobzy:silkfang
+        priority: 0.4
 
-      - reuse: Template.mobzy:splitjaw
+      - reuse: Edge Of The Abyss.mobzy:splitjaw
 
       - mob: mobzy:corpse_weeper
-        priority: 0.3
+        priority: 0.4
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -168,6 +126,7 @@ regions:
       - mob: mobzy:rohana
         amount: 1..4
         radius: 20
+        priority: 0.4
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -179,8 +138,9 @@ regions:
               - WATER
 
       - mob: mobzy:tesuchi
-        amount: 1..4
+        amount: 1..3
         radius: 15
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 5
@@ -194,6 +154,7 @@ regions:
       - mob: mobzy:ottobas
         amount: 1..2
         radius: 6
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 3
@@ -211,7 +172,7 @@ regions:
         conditions:
           - !<mobzy:spawn.local_group>
             max: 3
-            radius: 200
+            radius: 400
           - !<mobzy:spawn.gap>
             range: 3..4096
           - !<geary:time>
@@ -223,39 +184,51 @@ regions:
 
   - name: Inverted Forest
     spawns:
-      - reuse: Template.mobzy:splitjaw
-        priority: 0.5
+      - reuse: Forest of Temptation.mobzy:ottobas
+
+      - reuse: Edge Of The Abyss.mobzy:splitjaw
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 2
-            radius: 200
+            radius: 400
 
-      - reuse: Template.mobzy:neritantan
-        radius: 20
-        priority: 0.4
-        conditions:
-          - !<mobzy:spawn.local_group>
-            max: 6
-            radius: 200
-          - !<geary:height>
-            max: 40
+      - mob: mobzy:neritantan
+          amount: 1..3
+          radius: 10
+          priority: 0.3
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 6
+              radius: 200
+            - !<mobzy:spawn.gap>
+              range: 2..4096
+            - !<geary:block_type>
+              allow:
+                - GRASS_BLOCK
+                - DIORITE
+                - WHITE_CONCRETE
 
-      - reuse: Template.mobzy:dosetori
+      - mob: mobzy:dosetori
+          priority: 0.4
+          spawnPos: AIR
+          conditions:
+            - !<mobzy:spawn.local_group>
+              max: 3
+              radius: 200
+            - !<mobzy:spawn.gap>
+              range: 10..4096
 
       - mob: mobzy:inbyo
         amount: 4..8
         radius: 10
-        priority: 0.8
+        priority: 0.6
         conditions:
           - !<mobzy:spawn.local_group>
             max: 8
             radius: 120
           - !<mobzy:spawn.gap>
             range: 3..4096
-#          - !<geary:height>
-#            min: 140
-          # - !<mobzy:spawn.delay>
-          #   attemptEvery: 15s
           - !<geary:block_type>
             allow:
               - BIRCH_LEAVES
@@ -264,11 +237,13 @@ regions:
 
   - name: Great Fault
     spawns:
-      - reuse: Template.mobzy:dosetori
+      - reuse: Inverted Forest.mobzy:dosetori
 
-      - reuse: Template.mobzy:neritantan
+      - reuse: Inverted Forest.mobzy:neritantan
+        - !<mobzy:spawn.delay>
+          attemptEvery: 1s
 
-      - reuse: Template.mobzy:splitjaw
+      - reuse: Edge Of The Abyss.mobzy:splitjaw
         priority: 0.3
         spawnPos: AIR
         conditions:
@@ -277,7 +252,7 @@ regions:
             radius: 150
 
       - mob: mobzy:madokajack
-        priority: 0.2
+        priority: 0.4
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -296,8 +271,6 @@ regions:
             radius: 200
           - !<mobzy:spawn.gap>
             range: 3..4096
-          # - !<mobzy:spawn.delay>
-          #   attemptEvery: 1s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -306,7 +279,7 @@ regions:
       - mob: mobzy:squidfly
         amount: 1..5
         radius: 30
-        priority: 0.3
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -319,9 +292,9 @@ regions:
               - PODZOL
 
       - mob: mobzy:kakatsumuri
-        amount: 1..5
+        amount: 1..3
         radius: 20
-        priority: 0.3
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -336,8 +309,8 @@ regions:
               - WHITE_CONCRETE
 
       - mob: mobzy:rinsipede
-        amount: 1..5
-        radius: 30
+        amount: 1..3
+        radius: 10
         priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
@@ -352,8 +325,8 @@ regions:
 
       - mob: mobzy:virinsipede
         amount: 1..3
-        radius: 30
-        priority: 0.4
+        radius: 10
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 5
@@ -368,7 +341,7 @@ regions:
   - name: The Goblet of Giants
     spawns:
       - mob: mobzy:orbpiercer
-        priority: 0.15
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 1
@@ -379,7 +352,7 @@ regions:
           - !<mobzy:spawn.delay>
             attemptEvery: 10s
           - !<mobzy:spawn.gap>
-            range: 8..4096
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -402,7 +375,8 @@ regions:
 
       - reuse: Forest of Temptation.mobzy:rohana
         amount: 3..5
-        priority: 0.4
+        radius: 1
+        priority: 0.5
         conditions:
           - !<mobzy:spawn.local_group>
             max: 5
@@ -411,7 +385,7 @@ regions:
       - mob: mobzy:kazura
         amount: 1..3
         radius: 1
-        priority: 0.1
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -437,7 +411,7 @@ regions:
               - WATER
 
       - mob: mobzy:onitsuchi
-        priority: 0.2
+        priority: 0.3
         spawnPos: AIR
         conditions:
           - !<mobzy:spawn.local_group>
@@ -451,7 +425,7 @@ regions:
       - mob: mobzy:shroombear
         amount: 1..3
         radius: 10
-        priority: 0.4
+        priority: 0.3
         conditions:
           - !<mobzy:spawn.local_group>
             max: 6
@@ -465,7 +439,7 @@ regions:
       - mob: mobzy:uibuta
         amount: 1..2
         radius: 10
-        priority: 0.4
+        priority: 0.2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 3
@@ -568,8 +542,6 @@ regions:
             radius: 300
           - !<mobzy:spawn.gap>
             range: 4..4096
-          # - !<mobzy:spawn.delay>
-          #   attemptEvery: 8s
           - !<geary:block_type>
             allow:
               - SAND
