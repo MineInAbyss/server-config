@@ -11,18 +11,18 @@ regions:
   - name: Orth
     spawns:
       - mob: mobzy:fuwagi
-          amount: 2..3
-          radius: 10
-          priority: 0.2
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 5
-              radius: 200
-            - !<mobzy:spawn.gap>
-              range: 2..4096
-            - !<geary:block_type>
-              allow:
-                - GRASS_BLOCK
+        amount: 2..3
+        radius: 10
+        priority: 0.2
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 5
+            radius: 200
+          - !<mobzy:spawn.gap>
+            range: 2..4096
+          - !<geary:block_type>
+            allow:
+              - GRASS_BLOCK
 
       - mob: mobzy:okibo
         priority: 0.3
@@ -43,46 +43,46 @@ regions:
       - reuse: Orth.mobzy:fuwagi
 
       - mob: mobzy:hammerbeak
-          priority: 0.3
-          spawnPos: AIR
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 3
-              radius: 120
-            - !<mobzy:spawn.gap>
-              range: 10..4096
+        priority: 0.3
+        spawnPos: AIR
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 3
+            radius: 120
+          - !<mobzy:spawn.gap>
+            range: 10..4096
 
       - mob: mobzy:silkfang
-          priority: 0.4
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 4
-              radius: 200
-            - !<mobzy:spawn.gap>
-              range: 3..4096
-            - !<geary:block_type>
-              allow:
-                - GRASS_BLOCK
+        priority: 0.4
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 4
+            radius: 200
+          - !<mobzy:spawn.gap>
+            range: 3..4096
+          - !<geary:block_type>
+            allow:
+              - GRASS_BLOCK
 
       - mob: mobzy:cyatoria
-          priority: 0.3
-          spawnPos: AIR
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 2
-              radius: 150
-            - !<mobzy:spawn.gap>
-              range: 10..4096
+        priority: 0.3
+        spawnPos: AIR
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 2
+            radius: 150
+          - !<mobzy:spawn.gap>
+            range: 10..4096
 
       - mob: mobzy:splitjaw
-          priority: 0.05
-          spawnPos: AIR
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 1
-              radius: 500
-            - !<mobzy:spawn.gap>
-              range: 10..4096
+        priority: 0.05
+        spawnPos: AIR
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 1
+            radius: 500
+          - !<mobzy:spawn.gap>
+            range: 10..4096
 
       - mob: mobzy:beniguma
         amount: 2..4
@@ -194,20 +194,20 @@ regions:
             radius: 400
 
       - mob: mobzy:neritantan
-          amount: 1..3
-          radius: 10
-          priority: 0.3
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 6
-              radius: 200
-            - !<mobzy:spawn.gap>
-              range: 2..4096
-            - !<geary:block_type>
-              allow:
-                - GRASS_BLOCK
-                - DIORITE
-                - WHITE_CONCRETE
+        amount: 1..3
+        radius: 10
+        priority: 0.3
+        conditions:
+          - !<mobzy:spawn.local_group>
+            max: 6
+            radius: 200
+          - !<mobzy:spawn.gap>
+            range: 2..4096
+          - !<geary:block_type>
+            allow:
+              - GRASS_BLOCK
+              - DIORITE
+              - WHITE_CONCRETE
 
       - mob: mobzy:dosetori
           priority: 0.4
