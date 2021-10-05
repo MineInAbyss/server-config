@@ -34,6 +34,19 @@ body:
       description: If you feel like additional information would be helpful add it here.
     validations:
       required: false
+  
+  - type: checkboxes
+    attributes:
+      label: Copy NBT
+      description: |
+        Should the NBT of the input item be copied over.
+        Keep in mind that this does not work for looty items.
+        Example being Diamond Sickle -> Netherite Sickle needs to not copy NBT.
+      options:
+        - label: Yes the NBT data should be copied over
+          required: false
+        - label: No the NBT data should not be copied over
+          required: false
 
   - type: checkboxes
     attributes:
