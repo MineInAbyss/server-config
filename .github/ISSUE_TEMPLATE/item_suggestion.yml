@@ -13,6 +13,7 @@ body:
         - Weapon
         - Armor
         - Equipment
+        - Material
         - Other
 
   - type: input
