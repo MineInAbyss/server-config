@@ -240,8 +240,9 @@ regions:
       - reuse: Inverted Forest.mobzy:dosetori
 
       - reuse: Inverted Forest.mobzy:neritantan
-        - !<mobzy:spawn.delay>
-          attemptEvery: 1s
+        conditions:
+          - !<mobzy:spawn.delay>
+            attemptEvery: 1s
 
       - reuse: Edge Of The Abyss.mobzy:splitjaw
         priority: 0.3
