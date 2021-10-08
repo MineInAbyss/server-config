@@ -29,3 +29,24 @@
         |SFS|
         |F F|
         |FFF|
+    - !<shaped>
+      items:
+        F:
+          prefab: looty:okibo_fur
+        S:
+          prefab: looty:kuongatari_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|
+    - !<shaped>
+      items:
+        F:
+          prefab: looty:fuwagi_hide
+        S:
+          prefab: looty:kuongatari_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|
+

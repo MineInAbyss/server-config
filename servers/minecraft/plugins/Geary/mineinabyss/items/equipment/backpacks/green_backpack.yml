@@ -2,15 +2,15 @@
 - !<looty:type>
   item:
     type: GREEN_SHULKER_BOX
-- !<looty:recipes>
-  discoverRecipes: true
-  group: "looty:dyed_backpack"
-  recipes:
-    - !<shapeless>
-      items:
-        - prefab: looty:okibo_fur
-        - tag: shulker_boxes
-    - !<shapeless>
-      items:
-        - prefab: looty:splitjaw_gunk
-        - tag: shulker_boxes
+#- !<looty:recipes>
+#  discoverRecipes: true
+#  group: "looty:dyed_backpack"
+#  recipes:
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:okibo_fur
+#        - tag: shulker_boxes
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:splitjaw_gunk
+#        - tag: shulker_boxes

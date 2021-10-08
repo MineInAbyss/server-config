@@ -1,0 +1,60 @@
+name: Smithing Recipe Suggestion
+description: Suggest a smithing recipe idea
+assignees: Boy0000
+labels: [recipe]
+body:
+  - type: input
+    attributes:
+      label: Input Item
+      description: What item is used as the input?
+      placeholder: Diamond Pickaxe
+    validations:
+      required: true
+
+
+  - type: input
+    attributes:
+      label: Upgrade Item
+      description: What item is used to upgrade the input item?
+      placeholder: Netherite Ingot
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Result
+      description: What does this recipe produce?
+      placeholder: Netherite Pickaxe
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: If you feel like additional information would be helpful add it here.
+    validations:
+      required: false
+  
+  - type: checkboxes
+    attributes:
+      label: Copy NBT
+      description: |
+        Should the NBT of the input item be copied over.
+        Keep in mind that this does not work for looty items.
+        Example being Diamond Sickle -> Netherite Sickle needs to not copy NBT.
+      options:
+        - label: Yes the NBT data should be copied over
+          required: false
+        - label: No the NBT data should not be copied over
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn't already an open issue regarding this.
+          required: true
+        - label: I have ensured the recipe I'm requesting isn't already in the server.
+          required: true
+

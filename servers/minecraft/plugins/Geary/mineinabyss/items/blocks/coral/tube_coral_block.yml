@@ -13,9 +13,9 @@
         B:
           type: BLUE_DYE
       configuration: |-
-        |AAA|
+        | A |
         |ABA|
-        |AAA|
+        | A |
     - !<shaped>
       items:
         A:
@@ -23,6 +23,6 @@
         C:
           type: CYAN_DYE
       configuration: |-
-        |AAA|
+        | A |
         |ACA|
-        |AAA|
+        | A |

@@ -13,9 +13,9 @@
         P:
           type: PURPLE_DYE
       configuration: |-
-        |AAA|
+        | A |
         |APA|
-        |AAA|
+        | A |
     - !<shaped>
       items:
         A:
@@ -23,6 +23,6 @@
         M:
           type: MAGENTA_DYE
       configuration: |-
-        |AAA|
+        | A |
         |AMA|
-        |AAA|
+        | A |

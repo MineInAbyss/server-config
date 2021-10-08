@@ -1,0 +1,49 @@
+name: Cooking Recipe Suggestion
+description: Suggest a cooking recipe idea
+assignees: Boy0000
+labels: [recipe]
+body:
+  - type: checkboxes
+    id: cooking-types
+    attributes:
+      label: Where should this recipe be applied?
+      description: You may select more than one.
+      options:
+        - label: Furnace
+        - label: Blast Furnace
+        - label: Smoker
+        - label: Campfire
+
+  - type: input
+    attributes:
+      label: Input Item
+      description: What item is used as the input?
+      placeholder: Raw Charcoal Sand
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Result
+      description: What does this recipe produce?
+      placeholder: Charcoal Sand Ingot
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: If you feel like additional information would be helpful add it here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn't already an open issue regarding this.
+          required: true
+        - label: I have ensured the recipe I'm requesting isn't already in the server.
+          required: true
+

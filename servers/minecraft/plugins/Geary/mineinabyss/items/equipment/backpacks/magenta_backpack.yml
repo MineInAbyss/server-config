@@ -2,11 +2,11 @@
 - !<looty:type>
   item:
     type: MAGENTA_SHULKER_BOX
-- !<looty:recipes>
-  discoverRecipes: true
-  group: "looty:dyed_backpack"
-  recipes:
-    - !<shapeless>
-      items:
-        - prefab: looty:rohana_powder
-        - tag: shulker_boxes
+#- !<looty:recipes>
+#  discoverRecipes: true
+#  group: "looty:dyed_backpack"
+#  recipes:
+#    - !<shapeless>
+#      items:
+#        - prefab: looty:rohana_powder
+#        - tag: shulker_boxes
