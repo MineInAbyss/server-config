@@ -8,8 +8,6 @@
     custom-model-data: 100
 - !<looty:recipes>
   discoverRecipes: true
-  removeRecipes:
-    - minecraft:netherite_hoe_smithing
   recipes:
     - !<smithing>
       input:
