@@ -34,7 +34,7 @@
 
     - name: Edge of the Abyss
       spawns:
-        - reuse: Orth.mobzy:fuwagi
+        - reuse: Orth.mineinabyss:fuwagi
 
         - mob: mineinabyss:hammerbeak
           priority: 0.3
@@ -95,17 +95,17 @@
 
     - name: Forest of Temptation
       spawns:
-        - reuse: Orth.mobzy:fuwagi
+        - reuse: Orth.mineinabyss:fuwagi
           priority: 0.2
 
-        - reuse: Edge of the Abyss.mobzy:hammerbeak
+        - reuse: Edge of the Abyss.mineinabyss:hammerbeak
 
-        - reuse: Edge of the Abyss.mobzy:cyatoria
+        - reuse: Edge of the Abyss.mineinabyss:cyatoria
 
-        - reuse: Edge of the Abyss.mobzy:silkfang
+        - reuse: Edge of the Abyss.mineinabyss:silkfang
           priority: 0.4
 
-        - reuse: Edge of the Abyss.mobzy:splitjaw
+        - reuse: Edge of the Abyss.mineinabyss:splitjaw
 
         - mob: mineinabyss:corpse_weeper
           priority: 0.4
@@ -178,9 +178,9 @@
 
     - name: Inverted Forest
       spawns:
-        - reuse: Forest of Temptation.mobzy:ottobas
+        - reuse: Forest of Temptation.mineinabyss:ottobas
 
-        - reuse: Edge of the Abyss.mobzy:splitjaw
+        - reuse: Edge of the Abyss.mineinabyss:splitjaw
           priority: 0.2
           conditions:
             - !<mobzy:spawn.local_group>
@@ -231,14 +231,14 @@
 
     - name: Great Fault
       spawns:
-        - reuse: Inverted Forest.mobzy:dosetori
+        - reuse: Inverted Forest.mineinabyss:dosetori
 
-        - reuse: Inverted Forest.mobzy:neritantan
+        - reuse: Inverted Forest.mineinabyss:neritantan
           conditions:
             - !<mobzy:spawn.delay>
               attemptEvery: 1s
 
-        - reuse: Edge of the Abyss.mobzy:splitjaw
+        - reuse: Edge of the Abyss.mineinabyss:splitjaw
           priority: 0.3
           spawnPos: AIR
           conditions:
@@ -366,7 +366,7 @@
               allow:
                 - GRASS_BLOCK
 
-        - reuse: Forest of Temptation.mobzy:rohana
+        - reuse: Forest of Temptation.mineinabyss:rohana
           amount: 3..5
           radius: 1
           priority: 0.5
@@ -460,15 +460,15 @@
 
     - name: Sea of Corpses
       spawns:
-        - reuse: The Goblet of Giants.mobzy:kuongatari
+        - reuse: The Goblet of Giants.mineinabyss:kuongatari
 
-        - reuse: The Goblet of Giants.mobzy:kazura
+        - reuse: The Goblet of Giants.mineinabyss:kazura
 
-        - reuse: The Goblet of Giants.mobzy:makihige
+        - reuse: The Goblet of Giants.mineinabyss:makihige
 
-        - reuse: The Goblet of Giants.mobzy:onitsuchi
+        - reuse: The Goblet of Giants.mineinabyss:onitsuchi
 
-        - reuse: The Goblet of Giants.mobzy:hashofu
+        - reuse: The Goblet of Giants.mineinabyss:hashofu
 
         - mob: mineinabyss:ashimite
           amount: 3..5
