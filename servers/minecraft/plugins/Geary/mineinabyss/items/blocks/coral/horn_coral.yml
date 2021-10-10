@@ -7,5 +7,5 @@
   recipes:
     - !<shapeless>
       items:
-        - prefab: looty:ashimite_antlers
+        - prefab: mineinabyss:ashimite_antlers
         - type: YELLOW_DYE

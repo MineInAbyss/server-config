@@ -9,7 +9,7 @@
     - !<shaped>
       items:
         A:
-          prefab: looty:ashimite_antlers
+          prefab: mineinabyss:ashimite_antlers
         B:
           type: BLUE_DYE
       configuration: |-
@@ -19,7 +19,7 @@
     - !<shaped>
       items:
         A:
-          prefab: looty:ashimite_antlers
+          prefab: mineinabyss:ashimite_antlers
         C:
           type: CYAN_DYE
       configuration: |-

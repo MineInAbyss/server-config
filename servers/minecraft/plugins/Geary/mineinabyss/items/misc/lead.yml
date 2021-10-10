@@ -11,9 +11,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
         Z:
-          prefab: looty:abyssal_snail_gunk
+          prefab: mineinabyss:abyssal_snail_gunk
       configuration: |-
         |ZZ |
         |ZS |
@@ -21,9 +21,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
         Z:
-          prefab: looty:splitjaw_gunk
+          prefab: mineinabyss:splitjaw_gunk
       configuration: |-
         |ZZ |
         |ZS |
@@ -31,9 +31,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
         Z:
-          prefab: looty:abyssal_snail_gunk
+          prefab: mineinabyss:abyssal_snail_gunk
       configuration: |-
         |ZZ |
         |ZS |
@@ -41,9 +41,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
         Z:
-          prefab: looty:splitjaw_gunk
+          prefab: mineinabyss:splitjaw_gunk
       configuration: |-
         |ZZ |
         |ZS |

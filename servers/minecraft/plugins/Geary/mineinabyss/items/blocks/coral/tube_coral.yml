@@ -8,9 +8,9 @@
   recipes:
     - !<shapeless>
       items:
-        - prefab: looty:ashimite_antlers
+        - prefab: mineinabyss:ashimite_antlers
         - type: BLUE_DYE
     - !<shapeless>
       items:
-        - prefab: looty:ashimite_antlers
+        - prefab: mineinabyss:ashimite_antlers
         - type: CYAN_DYE

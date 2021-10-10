@@ -12,9 +12,9 @@
     - !<shaped>
       items:
         H:
-          prefab: looty:fuwagi_hide
+          prefab: mineinabyss:fuwagi_hide
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
       configuration: |-
         |SHS|
         |H H|
@@ -22,9 +22,9 @@
     - !<shaped>
       items:
         F:
-          prefab: looty:okibo_fur
+          prefab: mineinabyss:okibo_fur
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
       configuration: |-
         |SFS|
         |F F|
@@ -32,9 +32,9 @@
     - !<shaped>
       items:
         F:
-          prefab: looty:okibo_fur
+          prefab: mineinabyss:okibo_fur
         S:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
       configuration: |-
         |SFS|
         |F F|
@@ -42,9 +42,9 @@
     - !<shaped>
       items:
         F:
-          prefab: looty:fuwagi_hide
+          prefab: mineinabyss:fuwagi_hide
         S:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
       configuration: |-
         |SFS|
         |F F|

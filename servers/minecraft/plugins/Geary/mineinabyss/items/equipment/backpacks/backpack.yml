@@ -11,11 +11,11 @@
     - !<shaped>
       items:
         T:
-          prefab: looty:titanjaw_scale
+          prefab: mineinabyss:titanjaw_scale
         O:
-          prefab: looty:orb_piercer_face_fragments
+          prefab: mineinabyss:orb_piercer_face_fragments
         M:
-          prefab: looty:makihige_tentacle
+          prefab: mineinabyss:makihige_tentacle
       configuration: |-
         |MTM|
         |TOT|

@@ -9,5 +9,5 @@
   recipes:
     - !<shapeless>
       items:
-        - prefab: looty:kakatsumuri_glowing_tip
+        - prefab: mineinabyss:kakatsumuri_glowing_tip
         - type: ITEM_FRAME

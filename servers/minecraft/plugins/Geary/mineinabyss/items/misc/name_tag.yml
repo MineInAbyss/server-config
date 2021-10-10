@@ -9,9 +9,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
         I:
-          prefab: looty:makihige_ink_sac
+          prefab: mineinabyss:makihige_ink_sac
         P:
           type: PAPER
       configuration: |-
@@ -21,9 +21,9 @@
     - !<shaped>
       items:
         S:
-          prefab: looty:silkfang_silk
+          prefab: mineinabyss:silkfang_silk
         I:
-          prefab: looty:kazura_squid_ink_sac
+          prefab: mineinabyss:kazura_squid_ink_sac
         P:
           type: PAPER
       configuration: |-
@@ -33,9 +33,9 @@
     - !<shaped>
       items:
         K:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
         I:
-          prefab: looty:makihige_ink_sac
+          prefab: mineinabyss:makihige_ink_sac
         P:
           type: PAPER
       configuration: |-
@@ -45,9 +45,9 @@
     - !<shaped>
       items:
         K:
-          prefab: looty:kuongatari_silk
+          prefab: mineinabyss:kuongatari_silk
         I:
-          prefab: looty:kazura_squid_ink_sac
+          prefab: mineinabyss:kazura_squid_ink_sac
         P:
           type: PAPER
       configuration: |-
