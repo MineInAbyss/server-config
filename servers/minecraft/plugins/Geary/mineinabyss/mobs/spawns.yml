@@ -187,7 +187,7 @@
               max: 2
               radius: 400
 
-        - mob: mobzy:neritantan
+        - mob: mineinabyss:neritantan
           amount: 1..3
           radius: 10
           priority: 0.3
@@ -203,7 +203,7 @@
                 - DIORITE
                 - WHITE_CONCRETE
 
-        - mob: mobzy:dosetori
+        - mob: mineinabyss:dosetori
           priority: 0.4
           spawnPos: AIR
           conditions:
