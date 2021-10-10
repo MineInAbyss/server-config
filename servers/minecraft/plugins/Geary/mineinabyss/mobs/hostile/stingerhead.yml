@@ -1,0 +1,72 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 86
+- !<mobzy:attributes>
+  maxHealth: 200
+  movementSpeed: 0.5000
+  attackDamage: 40
+  attackKnockback: 2
+  knockbackResistance: 0.5000
+  followRange: 25
+  width: 2
+  height: 3
+- !<geary:events>
+  onTargetHit:
+    - !<on.target>
+      - !<geary:apply_potion_effects>
+        effects:
+          - type: POISON
+            duration: 6s
+            amplifier: 5
+          - type: HARM
+            amplifier: 1
+        applyChance: 0.8000
+- !<mobzy:death_loot>
+  minExp: 400
+  maxExp: 500
+  drops:
+    - item:
+        prefab: mineinabyss:stingerhead_scale
+      maxAmount: 1
+      dropChance: 0.2500
+    - item:
+        prefab: mineinabyss:stingerhead_flesh
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 1.0000
+    - item:
+        prefab: mineinabyss:stingerhead_eye
+      maxAmount: 2
+      dropChance: 0.4000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.stingerhead.ambient
+  death: mineinabyss:entity.stingerhead.death
+  hurt: mineinabyss:entity.stingerhead.hurt
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 50
+    2: !<minecraft:target.nearby_player> { }
+  goals:
+    1: !<mobzy:behavior.throw_items>
+      spawn:
+        - !<minecraft:entity_type>
+          type: SNOWBALL
+        - !<mobzy:item_model>
+          item:
+            type: SNOWBALL
+            custom-model-data: 100
+        - !<geary:events>
+          projectileHit:
+            - !<on.target>
+              - !<geary:deal_damage>
+                damage: 5.0
+              - !<geary:apply_potion_effects>
+                effects:
+                  - type: POISON
+                    duration: 6s
+                    amplifier: 5
+    2: !<minecraft:behavior.leap_at_target>
+      jumpHeight: 0.3000

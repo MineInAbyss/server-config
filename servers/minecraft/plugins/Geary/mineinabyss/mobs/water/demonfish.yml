@@ -1,0 +1,26 @@
+- !<mobzy:type>
+  baseClass: mobzy:fish
+  creatureType: WATER_CREATURE
+- !<mobzy:model>
+  id: 71
+- !<mobzy:attributes>
+  maxHealth: 20
+  movementSpeed: 3
+  followRange: 20
+  width: 1.1000
+  height: 0.3000
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 20
+  drops:
+    - item:
+        prefab: mineinabyss:demonfish_raw
+      cooked:
+        prefab: mineinabyss:demonfish_cooked
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.avoid_player>
+      radius: 10
+      speed: 8
+    2: !<minecraft:behavior.panic>
+      speedModifier: 2

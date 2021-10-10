@@ -1,0 +1,11 @@
+- !<looty:type>
+  item:
+    display-name: §x§2§6§2§6§2§6§lOzen's Hat
+    lore: |
+      :ozensmug:
+    type: STONE_HOE
+    custom-model-data: 6
+- !<geary:hat> { }
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }

@@ -1,0 +1,45 @@
+- !<mobzy:type>
+  baseClass: mobzy:flying
+  mobCategory: FLYING
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 50
+- !<mobzy:attributes>
+  maxHealth: 35
+  followRange: 50
+  attackDamage: 5
+  attackKnockback: 1.5000
+  knockbackResistance: 0.1000
+  flyingSpeed: 10
+  width: 2
+  height: 0.5000
+- !<mobzy:death_loot>
+  minExp: 35
+  maxExp: 45
+  drops:
+    - item:
+        prefab: mineinabyss:cyatoria_drumstick_raw
+      cooked:
+        prefab: mineinabyss:cyatoria_drumstick_cooked
+      minAmount: 1
+      maxAmount: 2
+    - item:
+        prefab: mineinabyss:cyatoria_feather
+      minAmount: 1
+      maxAmount: 4
+      dropChance: 0.7000
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 100
+    2: !<minecraft:target.nearby_player> { }
+  goals:
+    1: !<mobzy:behavior.flying_damage_target> { }
+    2: !<mobzy:behavior.flying_dive_on_target>
+      diveVelocity: -0.3000
+      minHeight: 7
+      maxHeight: 10
+      startDiveDistance: 20
+      bashVelMultiplier: 0.4000
+    3: !<mobzy:behavior.fly_towards_target> { }
+    4: !<mobzy:behavior.idle_fly> { }

@@ -1,0 +1,24 @@
+- !<geary:player_instanced_item> { }
+- !<looty:type>
+  item:
+    display-name: §x§1§7§2§9§2§9Netherite Sickle
+    #    lore: |
+    #      §bA
+    type: NETHERITE_HOE
+    custom-model-data: 100
+- !<looty:recipes>
+  discoverRecipes: true
+  removeRecipes:
+    - minecraft:netherite_hoe_smithing
+  recipes:
+    - !<smithing>
+      input:
+        prefab: mineinabyss:diamond_sickle
+      addition:
+        type: NETHERITE_INGOT
+- !<mineinabyss:sickle>
+  radius: 4
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
+    - !<mineinabyss:harvest> { }

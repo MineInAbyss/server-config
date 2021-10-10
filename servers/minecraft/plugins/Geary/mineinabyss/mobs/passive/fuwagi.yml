@@ -1,0 +1,40 @@
+- !<mobzy:type>
+  baseClass: mobzy:passive
+  creatureType: CREATURE
+- !<mobzy:model>
+  id: 5
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.2500
+  width: 0.6000
+  height: 0.6000
+- !<mobzy:death_loot>
+  minExp: 10
+  maxExp: 16
+  drops:
+    - item:
+        prefab: mineinabyss:fuwagi_meat_raw
+      cooked:
+        prefab: mineinabyss:fuwagi_meat_cooked
+      dropChance: 0.8000
+    - item:
+        prefab: mineinabyss:fuwagi_foot
+      maxAmount: 2
+      dropChance: 0.3000
+    - item:
+        prefab: mineinabyss:fuwagi_hide
+      dropChance: 0.4000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.fuwagi.ambient
+  death: mineinabyss:entity.fuwagi.death
+  hurt: mineinabyss:entity.fuwagi.hurt
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.panic> { }
+    3: !<minecraft:behavior.tempt>
+      items: [ CARROT, APPLE, BEETROOT ]
+    4: !<minecraft:behavior.avoid_player>
+      radius: 10
+    5: !<minecraft:behavior.random_stroll_land> { }
+- !<mobzy:rideable> { }
