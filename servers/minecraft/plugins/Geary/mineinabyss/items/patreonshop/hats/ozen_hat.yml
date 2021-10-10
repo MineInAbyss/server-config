@@ -5,7 +5,7 @@
       :ozensmug:
     type: STONE_HOE
     custom-model-data: 6
-- !<looty:hat> { }
+- !<geary:hat> { }
 - !<geary:events>
   rightClick:
     - !<cancel> { }
