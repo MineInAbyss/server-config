@@ -7,6 +7,7 @@
   group: "looty:backpack"
   removeRecipes:
     - minecraft:shulker_box
+    - minecraft:shulker_box_coloring
   recipes:
     - !<shaped>
       items:
