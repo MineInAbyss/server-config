@@ -1,17 +1,6 @@
 - !<looty:type>
   item:
     type: STICK
-- !<looty:recipes>
-  recipes:
-    - !<shaped>
-      items:
-        S:
-          type: STICK
-        U:
-          type: SUGAR
-      configuration: |-
-        U
-        S
 - !<geary:passive>
   - !<if>
     conditions:
