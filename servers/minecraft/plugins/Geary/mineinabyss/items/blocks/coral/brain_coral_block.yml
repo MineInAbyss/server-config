@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: BRAIN_CORAL_BLOCK
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: BRAIN_CORAL_BLOCK
   group: "looty:brain_coral_block"
   recipes:
     - !<shaped>

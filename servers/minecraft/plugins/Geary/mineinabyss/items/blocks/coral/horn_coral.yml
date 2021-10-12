@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: HORN_CORAL
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: HORN_CORAL
   recipes:
     - !<shapeless>
       items:

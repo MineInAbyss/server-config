@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: NAME_TAG
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: NAME_TAG
   group: "looty:name_tag"
   recipes:
     - !<shaped>

@@ -1,9 +1,8 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: LEAD
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: LEAD
+    amount: 2
   removeRecipes:
     - minecraft:lead
   group: "looty:lead"

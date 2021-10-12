@@ -1,12 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    display-name: §3Bundle
-    #    lore: |
-    #      §bA
-    type: BUNDLE
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: BUNDLE
   group: "looty:bundle"
   recipes:
     - !<shaped>
