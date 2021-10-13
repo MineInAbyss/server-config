@@ -18,11 +18,10 @@
             at: !<player.target_block>
               maxDist: 5
               onFace: true
-              allowAir: true
+              allowAir: false
           - !<geary:particle>
             type: WATER_SPLASH
             count: 10
             speed: 0.2
             at: !<player.target_block>
-              maxDist: 10
-              allowAir: false
+              maxDist: 3
