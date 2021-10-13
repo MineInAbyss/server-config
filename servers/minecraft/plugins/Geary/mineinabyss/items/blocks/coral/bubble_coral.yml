@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: BUBBLE_CORAL
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: BUBBLE_CORAL
   group: "looty:bubble_coral"
   recipes:
     - !<shapeless>

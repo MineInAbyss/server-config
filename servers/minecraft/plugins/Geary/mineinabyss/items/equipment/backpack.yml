@@ -1,13 +1,10 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: GRAY_SHULKER_BOX
 - !<looty:recipes>
+  result:
+    type: GRAY_SHULKER_BOX
   discoverRecipes: true
   group: "looty:backpack"
   removeRecipes:
     - minecraft:shulker_box
-    - minecraft:shulker_box_coloring
   recipes:
     - !<shaped>
       items:
