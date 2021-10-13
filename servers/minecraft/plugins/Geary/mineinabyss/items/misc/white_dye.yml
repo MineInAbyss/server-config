@@ -1,9 +1,8 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: WHITE_DYE
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: WHITE_DYE
+  group: "white_dye"
   removeRecipes:
     - minecraft:light_gray_dye
   recipes:

@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: GLOW_ITEM_FRAME
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: GLOW_ITEM_FRAME
   removeRecipes:
     - minecraft:glow_item_frame
   recipes:

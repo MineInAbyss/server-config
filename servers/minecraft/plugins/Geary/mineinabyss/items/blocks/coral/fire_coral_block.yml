@@ -1,9 +1,7 @@
-- !<geary:player_instanced_item> { }
-- !<looty:type>
-  item:
-    type: FIRE_CORAL_BLOCK
 - !<looty:recipes>
   discoverRecipes: true
+  result:
+    type: FIRE_CORAL_BLOCK
   recipes:
     - !<shaped>
       items:
