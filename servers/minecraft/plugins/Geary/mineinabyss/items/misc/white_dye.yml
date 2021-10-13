@@ -4,8 +4,11 @@
     type: WHITE_DYE
   group: "white_dye"
   removeRecipes:
-    - minecraft:light_gray_dye
+    - minecraft:light_gray_dye_from_white_tulip
   recipes:
     - !<shapeless>
       items:
         - type: WHITE_TULIP
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:kazura_squid_ink_sac

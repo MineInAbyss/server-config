@@ -1,4 +1,4 @@
-- !<geary:player_instanced_item> { }
+#- !<geary:player_instanced_item> { }
 - !<looty:type>
   item:
     type: SLIME_BALL
@@ -9,3 +9,5 @@
       §ein the §aSea of Corpses§e.
       §x§A§6§8§3§4§8§oMany delvers feel strangely compelled
       §x§A§6§8§3§4§8§oto lick slime such as this. Well, §lDON'T!
+- !<geary:stack_size>
+  maxSize: 10

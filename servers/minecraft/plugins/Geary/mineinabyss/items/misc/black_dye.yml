@@ -1,0 +1,12 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: BLACK_DYE
+  group: "black_dye"
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:makihige_ink_sac
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:inbyo_fur
