@@ -404,7 +404,7 @@
                 - WATER
 
         - mob: mineinabyss:onitsuchi
-          priority: 0.3
+          priority: 0.1
           spawnPos: AIR
           conditions:
             - !<mobzy:spawn.local_group>
@@ -412,8 +412,8 @@
               radius: 500
             - !<mobzy:spawn.gap>
               range: 10..4096
-            # - !<mobzy:spawn.delay>
-            #   attemptEvery: 15s
+            - !<mobzy:spawn.delay>
+              attemptEvery: 10s
 
         - mob: mineinabyss:shroombear
           amount: 1..3
