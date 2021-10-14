@@ -408,7 +408,7 @@
           spawnPos: AIR
           conditions:
             - !<mobzy:spawn.local_group>
-              max: 4
+              max: 2
               radius: 500
             - !<mobzy:spawn.gap>
               range: 10..4096
