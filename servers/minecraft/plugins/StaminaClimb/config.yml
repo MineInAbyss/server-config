@@ -3,8 +3,12 @@ staminaRegen: 0.01
 staminaRegenInAir: 0.003
 staminaRemovePerTick: 0.005
 staminaRemoveWhileMoving: 0.005
-staminaRemoveWhileOnLadder: 0.008
+staminaRemoveWhileOnLadder: 0.08
 barRed: 0.02
+barBlink1: 0.3
+barBlink2: 0.15
+barBlinkSpeed1: 200
+barBlinkSpeed2: 50
 maxFallDist: 5
 jumpCooldown: 300
 walljumpCooldown: 300
