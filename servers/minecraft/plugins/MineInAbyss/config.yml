@@ -32,7 +32,7 @@ layers:
     deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f :redw:§f
     depth:
       start: 0
-      end: 1520 #1522
+      end: 1510 #1513
     effects:
       - !<potion>
         strength: 2
@@ -50,7 +50,7 @@ layers:
     deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
     sub: §x§2§8§6§F§B§F1350-2600 meters
     depth:
-      start: 1521 #1523
+      start: 1511 #1514
       end: 2580 #2578
     effects:
       - !<potion>

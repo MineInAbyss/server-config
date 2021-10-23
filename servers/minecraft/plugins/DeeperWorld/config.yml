@@ -3,13 +3,13 @@ sections:
     name: orth
     refTop: [0, 0, 0]
     refBottom: [0, -256, 0]
-    region: [-1536, 255, -1536, 1534, 10, 1534]
+    region: [-1536, 255, -1536, 1534, 1, 1534]
     world: world
   -
     name: l1s0
     refTop: [0, 0, 0]
     refBottom: [0, -256, 0]
-    region: [-768, 9, -768, 767, -256, 767]
+    region: [-768, 0, -768, 767, -256, 767]
     world: world
   -
     name: l1s1
