@@ -15,37 +15,36 @@ priority: 0
 
 showHeaderFooter: true
 header:
-- |-
-  &aMine In Abyss
+  - "\n\n\n\uEC88\uEC89\uF812\uEC8A"
 headerAnimationUpdateInterval: 0.2
 
 footer:
-- |-
-  Ping: ${viewer_colored_ping}ms &r${viewer spark_tps_10s}tps
+  - |-
+    Ping: ${viewer_colored_ping}ms &r${viewer spark_tps_10s}tps
 footerAnimationUpdateInterval: 1.0
 
 # Configure whether hidden players appear on the tab list
 # see https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Hidden-Players
 hiddenPlayers: VISIBLE_TO_ADMINS
 
-# Player sets are required to display players and player counts on the tab list.
-# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Configuration-Basics-Part-4---Player-sets
-# playerSets:
-  # all_players: all
+  # Player sets are required to display players and player counts on the tab list.
+  # See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Configuration-Basics-Part-4---Player-sets
+  # playerSets:
+# all_players: all
 
 # We want a dynamic size tab list
 type: DYNAMIC_SIZE
 
 customPlaceholders:
-  other_server_prefix: # makes players on other servers gray
-    !conditional
-    condition: '${viewer server} == ${player server}'
-    true: ''
-    false: '&7'
   afk_prefix:
     !conditional
-    condition: '${player essentials_afk}'
-    true: '&c[AFK]&8 '
+    condition: '${player essentials_afk} && ${player vault_primary_group} == "default"'
+    true: "\uF808\uEC78&8 "
+    false: ''
+  afk_prefix_ranked:
+    !conditional
+    condition: '${player essentials_afk} && ${player vault_primary_group} != "default"'
+    true: "\uF805\uEC78&8 "
     false: ''
   viewer_colored_ping0:
     !conditional
@@ -67,21 +66,31 @@ customPlaceholders:
     parameters: 1
     expression: ${player vault_primary_group}
     replacements:
-      "admin": "§x§e§9§1§e§6§3[A] &r"
-      "moderator": "§x§f§1§c§4§0§f[M] &r"
-      "helper": "§x§F§F§7§C§4§D[H] &r"
-      "juniorbuilder": "§x§5§7§e§7§f§f[Jr. B] &r"
-      "builder": "§x§2§5§a§5§f§f[B] &r"
-      "buildlead": "§x§1§b§5§e§e§e[B. Lead] §r"
-      "seniorbuilder": "§x§0§b§3§d§a§7[Sr. B] &r"
-      "seniordesigner": "§x§5§8§2§8§B§4[Sr. D] &r"
-      "designer": "§x§7§8§3§3§F§F[D] &r"
-      "juniordesigner": "§x§9§8§6§F§E§F[Jr. D] &r"
-      "seniordeveloper": "§x§0§0§e§6§7§6[Sr. Dev] &r"
-      "developer": "§x§4§c§a§f§5§0[Dev] &r"
-      "juniordeveloper": "§x§8§b§f§7§9§9[Jr. Dev] &r"
-      "patreon": "§x§f§9§6§8§5§4[P] &r"
-    defaultReplacement: ""
+      "admin": "\uEC69"
+      "moderator": "\uEC6A"
+      "helper": "\uEC6B"
+      "juniorbuilder": "\uEC75"
+      "builder": "\uEC74"
+      "buildlead": "\uEC73"
+      "seniorbuilder": "\uEC72"
+      "seniordesigner": "\uEC6F"
+      "designer": "\uEC70"
+      "juniordesigner": "\uEC71"
+      "seniordeveloper": "\uEC6C"
+      "developer": "\uEC6D"
+      "juniordeveloper": "\uEC6E"
+      "patreonplus": "\uEC76"
+      "patreon": "\uEC77"
+    defaultReplacement: "\uF827"
+  server_prefix:
+    !switch
+    parameters: 1
+    expression: ${player server}
+    replacements:
+      "survival": "\uEC7A\uF805"
+      "build": "\uEC7B\uF805"
+      "adventure": "\uEC7C\uF805"
+      "test": "\uEC7D\uF805"
   # bungee_prefix:
   #   !switch
   #   parameters: 1
@@ -97,6 +106,6 @@ playerSets:
 
 playerSet: global
 
-playerOrder: "server viewer-first,vault_primary_group_weight desc,name"
+playerOrder: "server viewer-first,server,vault_primary_group_weight desc,name"
 
-playerComponent: {text: "${spigot_prefix}${other_server_prefix}${afk_prefix}${player name}", icon: "${player skin}", ping: "${player player_colored_ping}"}
+playerComponent: {text: "${server_prefix}${spigot_prefix}${other_server_prefix}${afk_prefix}${afk_prefix_ranked}${player name}", icon: "${player skin}", ping: "${player player_colored_ping}"}
