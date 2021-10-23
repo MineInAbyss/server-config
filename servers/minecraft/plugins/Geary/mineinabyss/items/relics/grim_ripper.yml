@@ -1,8 +1,8 @@
 - !<looty:type>
   item:
     display-name: §8Grim Ripper
-    type: STICK
-    custom-model-data: 1
+    type: KNOWLEDGE_BOOK
+    custom-model-data: 6
 - !<geary:events>
   leftClick:
     - !<cancel> {}
