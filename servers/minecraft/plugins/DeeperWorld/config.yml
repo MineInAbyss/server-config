@@ -67,8 +67,8 @@ sections:
     world: world
   -
     name: l3s3
-    refTop: []
-    refBottom: []
+    refTop: [ 131072, 224, 0 ]
+    refBottom: [ 131072, -256, 0 ]
     region: [130688, 255, -384, 131454, 7, 383]
     world: world
   -
