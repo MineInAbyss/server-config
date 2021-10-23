@@ -3,12 +3,16 @@
     display-name: §6Ghost Seek
     type: CARVED_PUMPKIN
     custom-model-data: 8
+- !<geary:hat> { }
+- !<geary:events>
+  rightClick:
+    - !<cancel> { }
 - !<geary:passive>
   - !<if>
     conditions:
       - !<geary:entity>
         has:
-          - looty:slot.held
+          - looty:slot.equipped
     run:
       - !<on.parent>
         - !<on.nearby>
