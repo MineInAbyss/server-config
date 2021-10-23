@@ -1,0 +1,146 @@
+sections:
+  -
+    name: orth
+    refTop: [0, 0, 0]
+    refBottom: [0, -256, 0]
+    region: [-1536, 255, -1536, 1534, 10, 1534]
+    world: world
+  -
+    name: l1s0
+    refTop: [0, 0, 0]
+    refBottom: [0, -256, 0]
+    region: [-768, 9, -768, 767, -256, 767]
+    world: world
+  -
+    name: l1s1
+    refTop: [16384, 224, 0]
+    refBottom: [16384, -256, 0]
+    region: [15617, 255, -767, 17150, -256, 766]
+    world: world
+  -
+    name: l1s2
+    refTop: [32768, 224, 0]
+    refBottom: [32768, -256, 0]
+    region: [32001, 255, -767, 33534, -256, 766]
+    world: world
+  -
+    name: l1s3
+    refTop: [49152, 224, 0]
+    refBottom: [49152, -256, 0]
+    region: [48385, 255, -767, 49918, 73, 766]
+    world: world
+  -
+    name: l2s0
+    refTop: [49152, 224, 0]
+    refBottom: [49152, -256, 0]
+    region: [48385, 72, -767, 49918, -256, 766]
+    world: world
+  -
+    name: l2s1
+    refTop: [65536, 224, 0]
+    refBottom: [65536, -256, 0]
+    region: [64769, 255, -767, 66302, -256, 766]
+    world: world
+  -
+    name: l2s2
+    refTop: [81920, 224, 0]
+    refBottom: [81920, -256, 0]
+    region: [80513, 255, -1407, 83326, -23, 1405]
+    world: world
+  -
+    name: l3s0
+    refTop: [81920, 224, 0]
+    refBottom: [81920, -256, 0]
+    region: [81537, -22, -383, 82301, -256, 382]
+    world: world
+  -
+    name: l3s1
+    refTop: [98304, 224, 0]
+    refBottom: [98304, -256, 0]
+    region: [97921, 255, -383, 98686, -256, 382]
+    world: world
+  -
+    name: l3s2
+    refTop: [114688, 224, 0]
+    refBottom: [114688, -256, 0]
+    region: [114305, 255, -383, 115070, -256, 382]
+    world: world
+  -
+    name: l3s3
+    refTop: []
+    refBottom: []
+    region: [130688, 255, -384, 131454, 7, 383]
+    world: world
+  -
+    name: l4s1
+    refTop: [131072, 224, 0]
+    refBottom: [131072, -256, 0]
+    region: [130177, 6, -895, 131966, -256, 894]
+    world: world
+  -
+    name: l4s2
+    refTop: [147456, 224, 0]
+    refBottom: [147456, -256, 0]
+    region: [146561, 255, -895, 148350, -256, 894]
+    world: world
+  -
+    name: l4s3
+    refTop: [163840, 224, 0]
+    refBottom: [163840, -256, 0]
+    region: [162945, 255, -895, 164735, -256, 894]
+    world: world
+  -
+    name: l4s4
+    refTop: [180224, 224, 0]
+    refBottom: [180224, -256, 0]
+    region: [178689, 255, -1535, 181758, -256, 1534]
+    world: world
+  -
+    name: l4s5
+    refTop: [196608, 224, 0]
+    refBottom: [196608, -256, 0]
+    region: [193921, 255, -2687, 199422, 132, 2814]
+    world: world
+  -
+    name: l5s1
+    refTop: [196608, 224, 0]
+    refBottom: [196608, -256, 0]
+    region: [193921, 131, -2687, 199422, -256, 2814]
+    world: world
+  -
+    name: l5s2
+    refTop: [212992, 224, 0]
+    refBottom: [212992, -256, 0]
+    region: [210305, 255, -2431, 215934, -256, 2814]
+    world: world
+  -
+    name: l5s3
+    refTop: [229376, 224, 0]
+    refBottom: [229376, -256, 0]
+    region: [227329, 255, -2175, 232318, -256, 2558]
+    world: world
+damageOutsideSections: 3.5
+  # damageExcludedWorlds:
+# - camelot
+# time:
+#   mainWorld: world
+#   syncedWorlds:
+#     LayerOneLower: 0
+#     LayerTwo: 0
+#     LayerThree: 0
+#     LayerFour: 0
+
+fall:
+  # The maximum safe falling distance, after which players will start taking damage. Set to -1 to disable falling damage
+  maxSafeDist: 40
+  # The multiplier for damage taken while falling. Set to 0 to deal consistent damage.
+  fallDistanceDamageScaler: 0.02
+  # The minimum damage to deal.
+  startingDamage: 1
+  # How often to damage players in ticks
+  hitDelay: 10t
+  # Whether to spawn cloud particles when the player is being damaged.
+  spawnParticles: true
+
+# Sends an additional remount packet after this delay to prevent client-side mount bugs when moving between sections.
+remountPacketDelay: 70t
