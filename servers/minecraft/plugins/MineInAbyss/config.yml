@@ -130,7 +130,7 @@ layers:
   - name: §x§9§E§1§E§8§4The Goblets of Giants
     sub: §x§7§7§2§3§7§A7000–12000 meters
     deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
-    hasPvPDefault: true
+    #hasPvPDefault: true
     depth:
       start: 4020
       end: 5850 #5851
@@ -170,7 +170,7 @@ layers:
   - name: §x§3§B§3§B§3§BSea of Corpses
     sub: §x§5§4§5§4§5§412000–13000 meters
     deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
-    hasPvPDefault: true
+    #hasPvPDefault: true
     depth:
       start: 5851
       end: 7200 #7198
