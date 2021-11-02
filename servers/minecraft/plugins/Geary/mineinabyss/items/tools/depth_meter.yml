@@ -19,13 +19,12 @@
         | G |
         |GCG|
         | G |
-- !<mineinabyss:depthmeter>
-  accuracy: 1
+- !<mineinabyss:depthmeter> { }
 - !<geary:events>
   rightClick:
     - !<cancel> { }
     - !<cooldown>
       name: Read Depth
-      length: 10s
+      length: 1s
       run:
         - !<mineinabyss:show_depth> { }
