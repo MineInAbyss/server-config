@@ -6,8 +6,8 @@ playerGroupRadius: 96.0
 spawnTaskDelay: 4t
 creatureTypeCaps:
   "CREATURE": 40
-  "MONSTER": 30
+  "MONSTER": 40
   "WATER_CREATURE": 30
-  "FLYING": 10
+  "FLYING": 25
   "AMBIENT": 0
 spawnHeightRange: 30
