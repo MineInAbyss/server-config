@@ -6,7 +6,7 @@
 - !<mobzy:attributes>
   maxHealth: 5
   movementSpeed: 0.3000
-  attackDamage:
+  attackDamage: 0
   width: 0.6000
   height: 0.6000
 - !<mobzy:death_loot>
