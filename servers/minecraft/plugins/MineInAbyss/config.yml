@@ -48,7 +48,7 @@ layers:
       - VINE
   - name: §x§1§7§5§A§B§FForest of Temptation
     deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
-    sub: §x§2§8§6§F§B§F1350-2600 meters
+    sub: §x§2§8§6§F§B§F1511-2580 meters
     depth:
       start: 1511 #1514
       end: 2580 #2578
@@ -74,7 +74,7 @@ layers:
       - POWERED_RAIL
       - VINE
   - name: §x§D§4§2§8§B§1Great Fault
-    sub: §x§E§8§2§C§C§22600–7000 meters
+    sub: §x§E§8§2§C§C§2581–4020 meters
     deathMessage: in the §x§D§4§2§8§B§1Great Fault§f :moonw:§f
     depth:
       start: 2581 #2578
@@ -128,11 +128,11 @@ layers:
       - VINE
     sections: [l3s0,l3s1,l3s2,l3s3]
   - name: §x§9§E§1§E§8§4The Goblets of Giants
-    sub: §x§7§7§2§3§7§A7000–12000 meters
+    sub: §x§7§7§2§3§7§A4021–5850 meters
     deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
     #hasPvPDefault: true
     depth:
-      start: 4020
+      start: 4021
       end: 5850 #5851
     effects:
       - !<potion>
@@ -168,7 +168,7 @@ layers:
           - mineinabyss:entity.orbpiercer.ambient
     sections: [l4s1,l4s2,l4s3,l4s4,l4s5]
   - name: §x§3§B§3§B§3§BSea of Corpses
-    sub: §x§5§4§5§4§5§412000–13000 meters
+    sub: §x§5§4§5§4§5§45851–7200 meters
     deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
     #hasPvPDefault: true
     depth:
