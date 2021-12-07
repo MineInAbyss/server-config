@@ -1,0 +1,18 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:kuongatari
+- !<mobzy:spawn.amount>
+  amount: 4..8
+- !<mobzy:spawn.spread>
+  radius: 10
+- !<mobzy:spawn.priority>
+  priority: 0.5
+- !<mobzy:check.spawn.local_group>
+  max: 12
+  radius: 400
+- !<mobzy:check.spawn.gap>
+  range: 3..4096
+- !<mobzy:spawn.delay>
+  attemptEvery: 1s
+- !<geary:check.block_type>
+  allow:
+    - GRASS_BLOCK

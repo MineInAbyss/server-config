@@ -1,0 +1,21 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:chimokami
+- !<mobzy:spawn.amount>
+  amount: 1..2
+- !<mobzy:spawn_regions>
+  keys: [ layertwo ]
+- !<mobzy:spawn.spread>
+  radius: 10
+- !<mobzy:spawn.priority>
+  priority: 0.3
+- !<mobzy:check.spawn.local_group>
+  max: 3
+  radius: 400
+- !<mobzy:check.spawn.gap>
+  range: 3..4096
+#- !<geary:time>
+#  min: 13000
+#  max: 23000
+- !<geary:check.block_type>
+  allow:
+    - GRASS_BLOCK

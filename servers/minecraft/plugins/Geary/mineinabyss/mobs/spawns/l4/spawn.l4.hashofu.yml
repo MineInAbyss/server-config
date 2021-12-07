@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.hashofu ]
+- !<mobzy:spawn_regions>
+  keys: [ layerfour ]

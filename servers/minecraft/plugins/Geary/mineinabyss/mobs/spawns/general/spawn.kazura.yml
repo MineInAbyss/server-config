@@ -1,0 +1,16 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:kazura
+- !<mobzy:spawn.amount>
+  amount: 1..3
+- !<mobzy:spawn.spread>
+  radius: 1
+- !<mobzy:spawn.priority>
+  priority: 0.3
+- !<mobzy:check.spawn.local_group>
+  max: 4
+  radius: 400
+- !<mobzy:check.spawn.gap>
+  range: 3..4096
+- !<geary:check.block_type>
+  allow:
+    - WATER
