@@ -2,22 +2,6 @@
   name: Abyssal Creatures
   icon: DIAMOND_BLOCK
   regions:
-    - name: Orth
-      spawns:
-        - mob: mineinabyss:fuwagi
-          amount: 2..3
-          radius: 10
-          priority: 0.2
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 4
-              radius: 500
-            - !<mobzy:spawn.gap>
-              range: 2..4096
-            - !<geary:block_type>
-              allow:
-                - GRASS_BLOCK
-
         - mob: mineinabyss:okibo
           priority: 0.3
           conditions:
@@ -34,18 +18,6 @@
 
     - name: Edge of the Abyss
       spawns:
-        - reuse: Orth.mineinabyss:fuwagi
-
-        - mob: mineinabyss:hammerbeak
-          priority: 0.4
-          spawnPos: AIR
-          conditions:
-            - !<mobzy:spawn.local_group>
-              max: 3
-              radius: 120
-            - !<mobzy:spawn.gap>
-              range: 10..4096
-
         - mob: mineinabyss:silkfang
           priority: 0.4
           conditions:
