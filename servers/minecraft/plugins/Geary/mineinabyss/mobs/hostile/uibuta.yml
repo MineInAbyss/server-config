@@ -22,6 +22,11 @@
         prefab: mineinabyss:uibuta_meat_cooked
       minAmount: 2
       maxAmount: 6
+    - item:
+        prefab: mineinabyss:uibuta_tooth
+      minAmount: 1
+      maxAmount: 3
+      dropChance: 0.7500
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death

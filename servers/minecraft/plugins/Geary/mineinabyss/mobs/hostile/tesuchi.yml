@@ -18,6 +18,9 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.8000
+    - item:
+        prefab: mineinabyss:tesuchi_tail
+      maxAmount: 1
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
