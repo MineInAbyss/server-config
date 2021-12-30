@@ -15,9 +15,9 @@
       input:
         prefab: mineinabyss:kuongatari_abdomen_raw
       experience: 1f
-      cookingTime: 10
+      cookingTime: 200
     - !<campfire>
       input:
         prefab: mineinabyss:kuongatari_abdomen_meat_raw
       experience: 2f
-      cookingTime: 10
+      cookingTime: 200
