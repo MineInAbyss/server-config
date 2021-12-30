@@ -10,3 +10,16 @@
       §ea §x§0§3§5§7§A§BRaw Billabonk Leg§e.
       §x§0§3§5§7§A§B§oDo the stanky leg
     custom-model-data: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:billabonk_leg_raw
+      experience: 1f
+      cookingTime: 10
+    - !<campfire>
+      input:
+        prefab: mineinabyss:billabonk_leg_raw
+      experience: 2f
+      cookingTime: 10

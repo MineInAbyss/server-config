@@ -11,3 +11,16 @@
       §eis edible and dark in colour.
       §x§6§9§4§6§0§0§oMight smell like excrement
       §x§6§9§4§6§0§0§oif I don't clean it well...
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:shroombear_meat_raw
+      experience: 1f
+      cookingTime: 10
+    - !<campfire>
+      input:
+        prefab: mineinabyss:shroombear_meat_raw
+      experience: 2f
+      cookingTime: 10
