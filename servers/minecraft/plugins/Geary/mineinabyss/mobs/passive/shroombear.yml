@@ -14,7 +14,7 @@
   maxExp: 20
   drops:
     - item:
-        prefab: mineinabyss:shroombear_meat_raw
+        prefab: mineinabyss:shroombear_meat
       cooked:
         prefab: mineinabyss:shroombear_meat_cooked
       maxAmount: 2

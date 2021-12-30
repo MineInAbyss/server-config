@@ -8,16 +8,3 @@
       §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
       §aGoblets of Giants §eand the §aSea of Corpses§e.
       §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
-- !<looty:recipes>
-  discoverRecipes: true
-  recipes:
-    - !<furnace>
-      input:
-        prefab: mineinabyss:kuongatari_abdomen_raw
-      experience: 1f
-      cookingTime: 200
-    - !<campfire>
-      input:
-        prefab: mineinabyss:kuongatari_abdomen_meat_raw
-      experience: 2f
-      cookingTime: 200

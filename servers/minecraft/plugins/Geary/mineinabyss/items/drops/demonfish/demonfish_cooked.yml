@@ -9,16 +9,3 @@
       §ecatching a §x§2§5§7§B§E§BDemonfish §ein the
       §ewaters of the §aSea of Corpses§e.
       §x§1§B§5§B§A§D§oSeems like a great source for food!
-- !<looty:recipes>
-  discoverRecipes: true
-  recipes:
-    - !<furnace>
-      input:
-        prefab: mineinabyss:demonfish_raw
-      experience: 1f
-      cookingTime: 200
-    - !<campfire>
-      input:
-        prefab: mineinabyss:demonfish_raw
-      experience: 2f
-      cookingTime: 200

@@ -11,16 +11,3 @@
       §x§6§3§6§3§6§3Raw Inbyo Meat§e.
       §x§B§5§B§5§B§5§0Seems more edible now, though
       §x§B§5§B§5§B§5§ois still smells horrid...
-- !<looty:recipes>
-  discoverRecipes: true
-  recipes:
-    - !<furnace>
-      input:
-        prefab: mineinabyss:inbyo_meat_raw
-      experience: 1f
-      cookingTime: 200
-    - !<campfire>
-      input:
-        prefab: mineinabyss:inbyo_meat_raw
-      experience: 2f
-      cookingTime: 200
