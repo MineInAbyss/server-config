@@ -11,3 +11,11 @@
       §x§F§F§3§A§2§4§oapple. Mostly carrot though.
       §x§F§F§3§A§2§4§oA lot of carrots.
     custom-model-data: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:fuwagi_meat_raw
+      experience: 1f
+      cookingTime: 100

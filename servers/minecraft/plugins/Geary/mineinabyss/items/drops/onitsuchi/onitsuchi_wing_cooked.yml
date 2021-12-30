@@ -10,3 +10,11 @@
       §eCan also be acquired from cooking
       §x§7§0§5§7§2§3Raw Onitsuchi Meat§e.
       §x§A§9§C§C§C§A§oThis tastes delicious!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:onitsuchi_wing_raw
+      experience: 1f
+      cookingTime: 100
