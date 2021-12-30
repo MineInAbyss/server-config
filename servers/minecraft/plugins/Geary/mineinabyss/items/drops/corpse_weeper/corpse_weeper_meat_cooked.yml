@@ -8,3 +8,16 @@
       §efrom the §aForest of Temptation§e.
       §c§oThis stench is awful but it tastes so good...
     custom-model-data: 2
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:corpse_weeper_meat_raw
+      experience: 1f
+      cookingTime: 200
+    - !<campfire>
+      input:
+        prefab: mineinabyss:corpse_weeper_meat_raw
+      experience: 2f
+      cookingTime: 200

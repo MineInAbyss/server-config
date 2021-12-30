@@ -9,3 +9,16 @@
       §x§D§4§D§4§D§4Ottobas §eflesh is now edible.
       §f§oThis should be enough food
       §f§oto last for daaaaayyss!!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:ottobas_meat_raw
+      experience: 1f
+      cookingTime: 200
+    - !<campfire>
+      input:
+        prefab: mineinabyss:ottobas_meat_raw
+      experience: 2f
+      cookingTime: 200

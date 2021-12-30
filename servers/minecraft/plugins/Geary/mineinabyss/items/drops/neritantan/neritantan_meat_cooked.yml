@@ -9,3 +9,16 @@
       §efound §edeep in the caverns of the §aGreat Fault§e.
       §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
       §f§oDo not get in between a Neritantan and a Baracocha fruit!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:neritantan_meat_raw
+      experience: 1f
+      cookingTime: 200
+    - !<campfire>
+      input:
+        prefab: mineinabyss:neritantan_meat_raw
+      experience: 2f
+      cookingTime: 200
