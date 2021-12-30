@@ -16,7 +16,7 @@
   maxExp: 18
   drops:
     - item:
-        prefab: mineinabyss:squidfly_brain_raw
+        prefab: mineinabyss:squidfly_brain
       cooked:
         prefab: mineinabyss:squidfly_brain_cooked
       maxAmount: 1
