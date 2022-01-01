@@ -16,3 +16,8 @@
         prefab: mineinabyss:kuongatari_abdomen_raw
       experience: 1f
       cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:kuongatari_abdomen_raw
+      experience: 2f
+      cookingTime: 50

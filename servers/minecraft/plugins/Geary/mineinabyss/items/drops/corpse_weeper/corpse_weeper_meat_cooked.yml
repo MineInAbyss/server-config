@@ -16,3 +16,8 @@
         prefab: mineinabyss:corpse_weeper_meat_raw
       experience: 1f
       cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:corpse_weeper_meat_raw
+      experience: 2f
+      cookingTime: 50
