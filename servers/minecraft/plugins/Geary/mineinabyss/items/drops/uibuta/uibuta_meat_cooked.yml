@@ -16,4 +16,9 @@
       input:
         prefab: mineinabyss:uibuta_meat_raw
       experience: 1f
-      cookingTime: 200
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:uibuta_meat_raw
+      experience: 2f
+      cookingTime: 50

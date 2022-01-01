@@ -18,3 +18,8 @@
         prefab: mineinabyss:onitsuchi_wing_raw
       experience: 1f
       cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:onitsuchi_wing_raw
+      experience: 2f
+      cookingTime: 50
