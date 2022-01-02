@@ -16,7 +16,7 @@
   maxExp: 18
   drops:
     - item:
-        prefab: mineinabyss:hashofu_tail
+        prefab: mineinabyss:hashofu_tail_raw
       cooked:
         prefab: mineinabyss:hashofu_tail_cooked
       dropChance: 0.8000
