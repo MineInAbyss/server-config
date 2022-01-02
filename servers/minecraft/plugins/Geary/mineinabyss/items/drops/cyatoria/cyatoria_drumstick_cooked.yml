@@ -11,3 +11,16 @@
       §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
       §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
     custom-model-data: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:cyatoria_drumstick_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:cyatoria_drumstick_raw
+      experience: 2f
+      cookingTime: 50

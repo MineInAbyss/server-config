@@ -12,3 +12,16 @@
       §eThe §6GuildHQ Head Chef §ebutchers
       §ethe §x§1§1§E§8§A§FOkibo §ethey arrive on
       §eand prepare a giant feast for all.
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:okibo_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:okibo_meat_raw
+      experience: 2f
+      cookingTime: 50

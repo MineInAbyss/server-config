@@ -1,11 +1,24 @@
 - !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: COOKED_PORKCHOP
+    type: COOKED_BEEF
     display-name: §x§8§F§2§2§2§2Cooked Uibuta Meat
-    custom-model-data: 3
+    custom-model-data: 2
     lore: |
       §eDue to proper preparations,
       §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
       §x§C§4§2§F§2§F§oThis should be enough food
       §x§C§4§2§F§2§F§oto last for daaaaayyss!!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:uibuta_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:uibuta_meat_raw
+      experience: 2f
+      cookingTime: 50

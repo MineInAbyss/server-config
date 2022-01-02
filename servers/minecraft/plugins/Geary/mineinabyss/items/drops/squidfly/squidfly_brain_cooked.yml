@@ -9,3 +9,16 @@
       §ein the §aGreat Fault§e.
       §x§C§2§7§6§4§3§oPerhaps I will become smarter
       §x§C§2§7§6§4§3§oif I consume this brain?
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:squidfly_brain_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:squidfly_brain_raw
+      experience: 2f
+      cookingTime: 50

@@ -31,6 +31,11 @@
         prefab: mineinabyss:onitsuchi_feather
       minAmount: 1
       maxAmount: 3
+    - item:
+        prefab: mineinabyss:onitsuchi_egg
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 0.5000
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
