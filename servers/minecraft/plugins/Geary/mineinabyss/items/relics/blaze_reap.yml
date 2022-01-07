@@ -1,26 +1,29 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    custom-model-data: 2
-    display-name: §x§6§1§7§B§9§4§lBlaze Reap
+    customModelData: 2
+    displayName: §x§6§1§7§B§9§4§lBlaze Reap
     lore: |
       §x§C§6§C§C§8§AContains §fEverlasting Gunpowder§x§C§6§C§C§8§A,
       §x§C§6§C§C§8§Awhich causes ongoing explosions
       §x§C§6§C§C§8§Aon whatever it is struck on.
       §x§9§4§8§E§6§1§oUsed to create powerful explosions.
+- !<geary:no_vanilla_interactions> { }
+- !<geary:explosion_resistant> { }
+- !<relation>
+  data: !<geary:cooldown>
+    name: §x§6§1§7§B§9§4§lExplosion
+    length: 2s
+  to: geary:explodable
+- !<geary:explodable>
+  size: 10
+  breakBlocks: true
+- !<geary:strength>
+  amount: 3
 - !<geary:events>
-  leftClick:
-    - !<cancel> {}
-    - !<cooldown>
-      name: §x§6§1§7§B§9§4§lExplosion
-      length: 2s
-      run:
-        - !<on.parent>
-          - !<geary:explode>
-            power: 3
-            breakBlocks: true
-            at: !<player.target_block>
-              allowAir: true
-              maxDist: 10
-  rightClick:
-    - !<cancel> {}
+  geary:item_left_click:
+    - - !<geary:explode> { }
+      - !<geary:find_location>
+        at: !<player.target_block>
+          allowAir: true
+          maxDist: 10

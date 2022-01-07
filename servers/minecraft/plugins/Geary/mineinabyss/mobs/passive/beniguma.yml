@@ -8,8 +8,8 @@
   movementSpeed: 0.3000
   attackDamage: 4
   followRange: 20
-  width: 2
-  height: 7
+  width: 0.9
+  height: 0.9
 - !<mobzy:death_loot>
   minExp: 13
   maxExp: 20

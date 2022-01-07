@@ -1,8 +1,8 @@
 - !<looty:type>
   item:
     type: GLASS
-    display-name: Fear Flight
-    # custom-model-data: 102
+    displayName: Fear Flight
+    # customModelData: 102
 - !<geary:passive>
   - !<on.parent>
     - !<if>

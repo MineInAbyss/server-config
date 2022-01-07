@@ -54,7 +54,7 @@
         - !<mobzy:item_model>
           item:
             type: QUARTZ
-            custom-model-data: 1
+            customModelData: 1
         - !<geary:events>
           projectileHit:
             - !<on.target>

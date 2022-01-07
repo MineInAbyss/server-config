@@ -1,11 +1,11 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    display-name: §3Zephyr Disk
-    custom-model-data: 5
+    displayName: §3Zephyr Disk
+    customModelData: 5
+- !<geary:no_vanilla_interactions> {}
 - !<geary:events>
   rightClick:
-    - !<cancel> {}
     - !<cooldown>
       name: Blow
       length: 20s

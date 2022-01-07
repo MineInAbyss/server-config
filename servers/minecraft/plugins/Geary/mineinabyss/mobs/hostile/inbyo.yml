@@ -37,7 +37,7 @@
         - !<mobzy:item_model>
           item:
             type: SNOWBALL
-            custom-model-data: 3
+            customModelData: 3
         - !<geary:events>
           projectileHit:
             - !<on.target>

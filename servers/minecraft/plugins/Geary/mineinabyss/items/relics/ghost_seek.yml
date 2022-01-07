@@ -1,12 +1,10 @@
 - !<looty:type>
   item:
-    display-name: §6Ghost Seek
+    displayName: §6Ghost Seek
     type: CARVED_PUMPKIN
-    custom-model-data: 8
+    customModelData: 8
 - !<geary:hat> { }
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}
 - !<geary:passive>
   - !<if>
     conditions:

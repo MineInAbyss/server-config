@@ -12,17 +12,17 @@
   followRange: 25
   width: 2
   height: 3
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: POISON
-            duration: 6s
-            amplifier: 5
-          - type: HARM
-            amplifier: 1
-        applyChance: 0.8000
+- !<geary:effects>
+  effects:
+    - type: POISON
+      duration: 6s
+      amplifier: 5
+    - type: HARM
+      amplifier: 1
+  applyChance: 0.8000
+- !<relation>
+  key: geary:effects
+  value: !<geary:touch> {}
 - !<mobzy:death_loot>
   minExp: 400
   maxExp: 500
@@ -57,16 +57,14 @@
         - !<mobzy:item_model>
           item:
             type: SNOWBALL
-            custom-model-data: 100
-        - !<geary:events>
-          projectileHit:
-            - !<on.target>
-              - !<geary:deal_damage>
-                damage: 5.0
-              - !<geary:apply_potion_effects>
-                effects:
-                  - type: POISON
-                    duration: 6s
-                    amplifier: 5
+            customModelData: 100
+        - !<geary:strength>
+          amount: 5.0
+        - !<relations>
+          geary:effects: geary:touch
+        - !<geary:effects>
+          - type: POISON
+            duration: 6s
+            amplifier: 5
     2: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.3000

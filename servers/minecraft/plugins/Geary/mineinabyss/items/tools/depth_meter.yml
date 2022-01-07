@@ -1,11 +1,11 @@
 - !<looty:type>
   item:
-    display-name: §3Depth Meter
+    displayName: §3Depth Meter
     lore: |
       §bUsed to check your §aLayer §band
       §bdepth by §lright-clicking.
     type: COMPASS
-    custom-model-data: 2
+    customModelData: 2
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
@@ -20,9 +20,9 @@
         |GCG|
         | G |
 - !<mineinabyss:depthmeter> { }
+- !<geary:no_vanilla_interactions> {}
 - !<geary:events>
   rightClick:
-    - !<cancel> { }
     - !<cooldown>
       name: Read Depth
       length: 1s

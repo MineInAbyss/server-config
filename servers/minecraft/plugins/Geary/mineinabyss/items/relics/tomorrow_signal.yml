@@ -1,11 +1,10 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    display-name: §8Tomorrow Signal
-    custom-model-data: 12
+    displayName: §8Tomorrow Signal
+    customModelData: 12
 - !<geary:events>
   leftClick:
-    - !<cancel> {}
     - !<cooldown>
       name: Lightning Strike
       length: 2s
@@ -23,7 +22,6 @@
               maxDist: 15
               allowAir: false
   rightClick:
-    - !<cancel> { }
     - !<cooldown>
       name: Lightning Strike
       length: 2s
@@ -31,3 +29,4 @@
         - !<on.parent>
           - !<geary:toggle_storm>
             at: !<player.location> { }
+- !<geary:no_vanilla_interactions> {}

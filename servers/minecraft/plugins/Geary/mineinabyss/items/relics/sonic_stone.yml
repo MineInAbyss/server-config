@@ -1,10 +1,10 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    custom-model-data: 3
+    customModelData: 3
+- !<geary:no_vanilla_interactions> {}
 - !<geary:events>
   leftClick:
-    - !<cancel> {}
     - !<cooldown>
       name: Freeze Enemies
       length: 2s
@@ -25,5 +25,3 @@
                 type: CLOUD
                 count: 10
                 speed: 0.3
-  rightClick:
-    - !<cancel> {}

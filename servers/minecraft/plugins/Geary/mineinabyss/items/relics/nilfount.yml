@@ -1,13 +1,13 @@
 - !<looty:type>
   item:
-    display-name: §l§x§2§2§B§8§e§6Nil Fount
+    displayName: §l§x§2§2§B§8§e§6Nil Fount
     lore: |
       §
     type: STICK
-    custom-model-data: 1
+    customModelData: 1
+- !<geary:no_vanilla_interactions> {}
 - !<geary:events>
   leftClick:
-    - !<cancel> {}
     - !<cooldown>
       name: Nil Fount
       length: 2s
