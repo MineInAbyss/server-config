@@ -2,19 +2,19 @@
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 3
-- !<geary:events>
-  leftClick:
-    - !<cooldown>
-      name: Explosion
-      length: 2s
-      run:
-        - !<on.parent>
-          - !<geary:meteor>
-            events:
-              projectileLand:
-                - !<geary:explode>
-                  power: 2
-                  breakBlocks: true
-                  at: !<entity.location> {}
-            at: !<player.target_block>
-              maxDist: 60
+#- !<geary:events>
+#  leftClick:
+#    - !<cooldown>
+#      name: Explosion
+#      length: 2s
+#      run:
+#        - !<on.parent>
+#          - !<geary:meteor>
+#            events:
+#              projectileLand:
+#                - !<geary:explode>
+#                  power: 2
+#                  breakBlocks: true
+#                  at: !<entity.location> {}
+#            at: !<player.target_block>
+#              maxDist: 60

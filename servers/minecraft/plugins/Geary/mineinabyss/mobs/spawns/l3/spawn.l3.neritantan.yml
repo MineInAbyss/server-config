@@ -2,5 +2,5 @@
   from: [ mineinabyss:spawn.neritantan ]
 - !<mobzy:spawn_regions>
   keys: [ layerthree ]
-- !<mobzy:spawn.delay>
+- !<mobzy:check.spawn.delay>
   attemptEvery: 1s

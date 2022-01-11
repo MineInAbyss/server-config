@@ -29,22 +29,22 @@
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
 - !<mobzy:pathfinders>
-  goals:
-    1: !<mobzy:behavior.throw_items>
-      spawn:
-        - !<minecraft:entity_type>
-          type: SNOWBALL
-        - !<mobzy:item_model>
-          item:
-            type: SNOWBALL
-            customModelData: 3
-        - !<geary:events>
-          projectileHit:
-            - !<on.target>
-              - !<geary:deal_damage>
-                damage: 0.5
-              - !<geary:apply_potion_effects>
-                effects:
-                  - type: POISON
-                    duration: 1s
-                    amplifier: 1
+#  goals:
+#    1: !<mobzy:behavior.throw_items>
+#      spawn:
+#        - !<minecraft:entity_type>
+#          type: SNOWBALL
+#        - !<mobzy:item_model>
+#          item:
+#            type: SNOWBALL
+#            customModelData: 3
+#        - !<geary:events>
+#          projectileHit:
+#            - !<on.target>
+#              - !<geary:deal_damage>
+#                damage: 0.5
+#              - !<geary:apply_potion_effects>
+#                effects:
+#                  - type: POISON
+#                    duration: 1s
+#                    amplifier: 1

@@ -7,17 +7,17 @@
       §x§9§6§E§5§4§Ba new light-hearted spirit.
       §x§C§2§E§7§9§E§oMay help add a leap to your step.
 
-- !<geary:passive>
-  - !<if>
-    conditions:
-      - !<geary:entity>
-        has:
-          - looty:slot.equipped
-    run:
-      - !<on.parent>
-        - !<geary:apply_potion_effects>
-          effects:
-            - type: JUMP
-              duration: 2s
-              amplifier: 2
-              ambient: true
+#- !<geary:passive>
+#  - !<if>
+#    conditions:
+#      - !<geary:entity>
+#        has:
+#          - looty:slot.equipped
+#    run:
+#      - !<on.parent>
+#        - !<geary:apply_potion_effects>
+#          effects:
+#            - type: JUMP
+#              duration: 2s
+#              amplifier: 2
+#              ambient: true

@@ -12,16 +12,33 @@
   followRange: 40
   width: 1.9000
   height: 2.5000
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: POISON
-            duration: 5s
-            amplifier: 5
-            ambient: true
-        applyChance: 0.6000
+- !<geary:children>
+  poison:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:potion_effects>
+      - type: POISON
+        duration: 6s
+        amplifier: 5
+      - type: HARM
+        amplifier: 1
+  poisonCondition:
+    - !<geary:condition.chance>
+      percentage: 0.5
+  projectile:
+    - !<geary:event.triggers>
+      - geary:event.touched -> parent.child(poison)
+    - !<minecraft:entity_type>
+      type: SNOWBALL
+    - !<mobzy:item_model>
+      item:
+        type: QUARTZ
+        customModelData: 1
+    - !<geary:deal_damage>
+      damage: 10.0
+- !<geary:event.triggers>
+  - geary:event.touched -> child(poison)
+- !<geary:event.conditions>
+  - any -> child(poisonCondition) -> child(poison)
 - !<mobzy:death_loot>
   minExp: 180
   maxExp: 210
@@ -41,27 +58,11 @@
   level: 3
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<mobzy:behavior.throw_items>
-      minThrowRad: 6.0000
-      projectileSpeed: 1.5000
-      projectileAngularDiameter: 8.0000
+    1: !<mobzy:behavior.throw_items>
+      minThrowRad: 6
+      projectileSpeed: 1.5
+      projectileAngularDiameter: 8
       projectileCountPerThrow: 10
-      cooldown: 4000
-      spawn:
-        - !<minecraft:entity_type>
-          type: SNOWBALL
-        - !<mobzy:item_model>
-          item:
-            type: QUARTZ
-            customModelData: 1
-        - !<geary:events>
-          projectileHit:
-            - !<on.target>
-              - !<geary:deal_damage>
-                damage: 3.0
-              - !<geary:apply_potion_effects>
-                effects:
-                  - type: POISON
-                    duration: 6s
-                    amplifier: 5
+      spawn: child(projectile)
+      cooldown: 4s
+    2: !<minecraft:behavior.float> { }

@@ -11,7 +11,7 @@
   radius: 400
 - !<mobzy:check.spawn.gap>
   range: 3..4096
-- !<mobzy:spawn.delay>
+- !<mobzy:check.spawn.delay>
   attemptEvery: 1s
 - !<geary:check.block_type>
   allow:

@@ -10,19 +10,19 @@
       §x§D§2§D§4§8§9pressure is applied to it.
       §x§E§D§E§E§B§9§oCan be used to give you
       §x§E§D§E§E§B§9§othat extra energy boost.
-- !<geary:events>
-  leftClick:
-    - !<cooldown>
-      name: Princess Bosom
-      length: 10s
-      run:
-        - !<on.parent>
-          - !<geary:apply_potion_effects>
-            effects:
-            - type: SPEED
-              duration: 5s
-              amplifier: 2
-            - type: JUMP
-              duration: 5s
-              amplifier: 2
 - !<geary:no_vanilla_interactions> {}
+#- !<geary:events>
+#  leftClick:
+#    - !<cooldown>
+#      name: Princess Bosom
+#      length: 10s
+#      run:
+#        - !<on.parent>
+#          - !<geary:apply_potion_effects>
+#            effects:
+#            - type: SPEED
+#              duration: 5s
+#              amplifier: 2
+#            - type: JUMP
+#              duration: 5s
+#              amplifier: 2
