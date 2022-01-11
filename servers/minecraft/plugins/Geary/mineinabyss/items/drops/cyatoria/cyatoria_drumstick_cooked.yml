@@ -3,6 +3,7 @@
   item:
     type: COOKED_CHICKEN
     displayName: §x§3§D§D§F§F§FCooked Cyatoria Drumstick
+    customModelData: 1
     lore: |
       §eDropped by §x§3§D§D§F§F§FCyatoria §eat
       §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
@@ -10,7 +11,6 @@
       §erare creature originating from
       §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
       §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
-    customModelData: 1
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

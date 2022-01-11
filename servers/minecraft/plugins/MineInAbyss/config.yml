@@ -11,9 +11,17 @@ x-particles-vomit: &vomit
   iterations: 6
   offset: 3s
   particles: [SLIME]
-
-storage:
-  relicpath: "relics/"
+features:
+  #- !<chat> { }
+  - !<orth_banking> { }
+  - !<guilds> { }
+  #- !<adventure_pvp> { }
+  #- !<anticheese> { }
+  - !<curse> { }
+  #- !<keepinv> { }
+  #- !<relics> { }
+  #- !<enchants> { }
+  #- !<cookingpot> { }
 layers:
   - name: §x§F§F§A§8§1§2Orth
     sub: §x§F§F§C§4§2§1City of the Great Pit
