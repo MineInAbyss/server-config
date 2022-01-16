@@ -1,9 +1,9 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:okibo
-- !<mobzy:spawn.amount>
-  amount: 1..2
 - !<mobzy:spawn_regions>
   keys: [ orth ]
+- !<mobzy:spawn.amount>
+  amount: 1..2
 - !<mobzy:spawn.spread>
   radius: 10
 - !<mobzy:spawn.priority>

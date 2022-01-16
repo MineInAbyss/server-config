@@ -5,13 +5,13 @@
   id: 17
 - !<mobzy:attributes>
   maxHealth: 100
-  movementSpeed: 0.5000
+  movementSpeed: 0.5
   attackDamage: 25
   attackKnockback: 5
-  knockbackResistance: 0.8000
+  knockbackResistance: 0.8
   followRange: 40
-  width: 1.9000
-  height: 2.5000
+  width: 1.9
+  height: 2.75
 - !<geary:children>
   poison:
     - !<geary:apply> geary:potion_effects

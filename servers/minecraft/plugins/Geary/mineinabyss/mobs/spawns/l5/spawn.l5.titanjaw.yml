@@ -7,7 +7,7 @@
 - !<mobzy:spawn.priority>
   priority: 0.3
 - !<mobzy:check.spawn.local_group>
-  max: 3
+  max: 4
   radius: 500
 - !<mobzy:check.spawn.gap>
   range: 3..4096

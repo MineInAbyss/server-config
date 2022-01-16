@@ -10,7 +10,7 @@
   flyingSpeed: 10.0050
   attackDamage:
   width: 0.6000
-  height: 0.6000
+  height: 1.6 #TODO revert this when model is lwoered
 - !<mobzy:death_loot>
   minExp: 12
   maxExp: 18

@@ -11,8 +11,8 @@
   attackKnockback: 1.5000
   knockbackResistance: 0.1000
   flyingSpeed: 10
-  width: 2
-  height: 0.5000
+  width: 2.5
+  height: 3
 - !<mobzy:death_loot>
   minExp: 35
   maxExp: 45
