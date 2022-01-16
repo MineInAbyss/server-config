@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: DEAD_FIRE_CORAL
-    display-name: §x§2§5§9§7§D§9Steve Antlers
-    custom-model-data: 1
+    displayName: §x§2§5§9§7§D§9Steve Antlers
+    customModelData: 1
     lore: |
       §eCan be obtained by hunting down
       §x§2§5§9§7§D§9Steve §ein the §aGoblets of Giants§e.

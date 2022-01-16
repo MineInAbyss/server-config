@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.dosetori ]
+- !<mobzy:spawn_regions>
+  keys: [ inverted_forest ]

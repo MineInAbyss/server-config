@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: COOKED_PORKCHOP
-    display-name: §x§D§8§D§8§D§8Cooked Ottobas Meat
-    custom-model-data: 4
+    displayName: §x§D§8§D§8§D§8Cooked Ottobas Meat
+    customModelData: 4
     lore: |
       §eDue to proper preparations, the
       §x§D§4§D§4§D§4Ottobas §eflesh is now edible.

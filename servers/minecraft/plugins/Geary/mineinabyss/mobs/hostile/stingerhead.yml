@@ -12,17 +12,36 @@
   followRange: 25
   width: 2
   height: 3
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: POISON
-            duration: 6s
-            amplifier: 5
-          - type: HARM
-            amplifier: 1
-        applyChance: 0.8000
+- !<geary:bossbar>
+  title: Stingerhead
+  color: RED
+  style: NOTCHED_10
+  range: 100
+- !<geary:children>
+  poison:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:potion_effects>
+      - type: POISON
+        duration: 6s
+        amplifier: 5
+      - type: HARM
+        amplifier: 1
+  poisonCondition:
+    - !<geary:condition.chance>
+      percentage: 0.5
+  projectile:
+    - !<geary:event.triggers>
+      - geary:event.touched -> parent.child(poison)
+    - !<minecraft:entity_type>
+      type: SNOWBALL
+    - !<mobzy:item_model>
+      item:
+        type: SNOWBALL
+        customModelData: 100
+- !<geary:event.triggers>
+  - geary:event.touched -> child(poison)
+- !<geary:event.conditions>
+  - any -> child(poisonCondition) -> child(poison)
 - !<mobzy:death_loot>
   minExp: 400
   maxExp: 500
@@ -51,22 +70,9 @@
     2: !<minecraft:target.nearby_player> { }
   goals:
     1: !<mobzy:behavior.throw_items>
-      spawn:
-        - !<minecraft:entity_type>
-          type: SNOWBALL
-        - !<mobzy:item_model>
-          item:
-            type: SNOWBALL
-            custom-model-data: 100
-        - !<geary:events>
-          projectileHit:
-            - !<on.target>
-              - !<geary:deal_damage>
-                damage: 5.0
-              - !<geary:apply_potion_effects>
-                effects:
-                  - type: POISON
-                    duration: 6s
-                    amplifier: 5
+      projectileAngularDiameter: 3
+      projectileCountPerThrow: 3
+      spawn: child(projectile)
+      cooldown: 6s
     2: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.3000

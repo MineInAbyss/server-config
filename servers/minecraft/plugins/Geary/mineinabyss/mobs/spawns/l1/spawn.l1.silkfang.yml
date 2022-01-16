@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.neritantan ]
+- !<mobzy:spawn_regions>
+  keys: [ layerone ]

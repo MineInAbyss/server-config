@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: FEATHER
-    display-name: §x§3§D§D§F§F§FCyatoria Feather
-    custom-model-data: 2
+    displayName: §x§3§D§D§F§F§FCyatoria Feather
+    customModelData: 2
     lore: |
       §eDropped by §x§3§D§D§F§F§FCyatoria §eat
       §ethe §aEdge of the Abyss

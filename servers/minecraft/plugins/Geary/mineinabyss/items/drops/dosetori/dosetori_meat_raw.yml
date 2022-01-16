@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: CHICKEN
-    display-name: §x§F§F§F§8§2§1Raw Dosetori Meat
-    custom-model-data: 2
+    displayName: §x§F§F§F§8§2§1Raw Dosetori Meat
+    customModelData: 2
     lore: |
       §eDropped by the §x§F§F§F§8§2§1Dosetori §ein the
       §aInverted Forest §eand §aGreat Fault§e.

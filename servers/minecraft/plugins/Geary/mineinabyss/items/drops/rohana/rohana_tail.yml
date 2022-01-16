@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: BLAZE_ROD
-    display-name: §x§6§C§1§9§B§FRohana Tail
-    custom-model-data: 1
+    displayName: §x§6§C§1§9§B§FRohana Tail
+    customModelData: 1
     lore: |
       §eRods rarely dropped from
       §x§A§F§2§1§C§CRohana §edeep in the §aForest of

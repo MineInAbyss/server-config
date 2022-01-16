@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: SALMON
-    display-name: §x§1§B§9§1§B§5Raw Hamashirama
-    custom-model-data: 2
+    displayName: §x§1§B§9§1§B§5Raw Hamashirama
+    customModelData: 2
     lore: |
       §eCan be obtained by finding and
       §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the

@@ -1,24 +1,22 @@
 - !<looty:type>
   item:
-    display-name: §6Ghost Seek
+    displayName: §6Ghost Seek
     type: CARVED_PUMPKIN
-    custom-model-data: 8
+    customModelData: 8
 - !<geary:hat> { }
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
-- !<geary:passive>
-  - !<if>
-    conditions:
-      - !<geary:entity>
-        has:
-          - looty:slot.equipped
-    run:
-      - !<on.parent>
-        - !<on.nearby>
-          radius: 15
-          run:
-            - !<geary:apply_potion_effects>
-              effects:
-                - type: GLOWING
-                  duration: 5s
+- !<geary:no_vanilla_interactions> {}
+#- !<geary:passive>
+#  - !<if>
+#    conditions:
+#      - !<geary:entity>
+#        has:
+#          - looty:slot.equipped
+#    run:
+#      - !<on.parent>
+#        - !<on.nearby>
+#          radius: 15
+#          run:
+#            - !<geary:apply_potion_effects>
+#              effects:
+#                - type: GLOWING
+#                  duration: 5s

@@ -1,11 +1,9 @@
 - !<looty:type>
   item:
-    display-name: §f§lBenner Cat Ears
+    displayName: §f§lBenner Cat Ears
     lore: |
       §7Hey babe :siggy:
     type: STONE_HOE
-    custom-model-data: 12
+    customModelData: 12
 - !<geary:hat> { }
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

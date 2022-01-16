@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: NETHER_WART
-    display-name: §x§C§7§4§0§4§0Orb Piercer Face Fragments
-    custom-model-data: 1
+    displayName: §x§C§7§4§0§4§0Orb Piercer Face Fragments
+    customModelData: 1
     lore: |
       §eApparently the red orb on the
       §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them
@@ -11,6 +11,4 @@
       §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
       §x§D§9§D§9§D§9§obe able to see it as well?
       §x§D§9§D§9§D§9§oProbably just wishful thinking...
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

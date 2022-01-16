@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: POPPED_CHORUS_FRUIT
-    display-name: §x§9§A§1§C§A§DSplitjaw Scales
-    custom-model-data: 1
+    displayName: §x§9§A§1§C§A§DSplitjaw Scales
+    customModelData: 1
     lore: |
       §eOccasionally dropped by §x§B§3§2§1§C§9Splitjaws
       §r§ein the §aForest of Temptation

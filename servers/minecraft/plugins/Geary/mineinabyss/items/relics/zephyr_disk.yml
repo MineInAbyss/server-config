@@ -1,28 +1,28 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    display-name: §3Zephyr Disk
-    custom-model-data: 5
-- !<geary:events>
-  rightClick:
-    - !<cancel> {}
-    - !<cooldown>
-      name: Blow
-      length: 20s
-      run:
-        - !<on.parent>
-          - !<geary:particle>
-            at: !<player.location> {}
-              #maxDist: 5
-            type: CLOUD
-            count: 100
-            speed: 0.2
-          - !<geary:sound>
-            sound: entity.generic.extinguish_fire
-          - !<on.nearby>
-            radius: 10
-            run:
-              - !<geary:push>
-                source: !<source.location> {}
-                force: 1.5
-                yOffset: 0.5
+    displayName: §3Zephyr Disk
+    customModelData: 5
+- !<geary:no_vanilla_interactions> {}
+#- !<geary:events>
+#  rightClick:
+#    - !<cooldown>
+#      name: Blow
+#      length: 20s
+#      run:
+#        - !<on.parent>
+#          - !<geary:particle>
+#            at: !<player.location> {}
+#              #maxDist: 5
+#            type: CLOUD
+#            count: 100
+#            speed: 0.2
+#          - !<geary:sound>
+#            sound: entity.generic.extinguish_fire
+#          - !<on.nearby>
+#            radius: 10
+#            run:
+#              - !<geary:push>
+#                source: !<source.location> {}
+#                force: 1.5
+#                yOffset: 0.5

@@ -1,11 +1,9 @@
 - !<looty:type>
   item:
-    display-name: §x§2§6§2§6§2§6§lOzen's Hat
+    displayName: §x§2§6§2§6§2§6§lOzen's Hat
     lore: |
       §7:ozensmug:
     type: STONE_HOE
-    custom-model-data: 7
+    customModelData: 7
 - !<geary:hat> { }
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

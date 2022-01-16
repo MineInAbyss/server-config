@@ -1,8 +1,8 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: ROTTEN_FLESH
-    display-name: §2Tesuchi Tail
-    custom-model-data: 1
+    displayName: §2Tesuchi Tail
+    customModelData: 1
     lore: |
       §a§oYummy

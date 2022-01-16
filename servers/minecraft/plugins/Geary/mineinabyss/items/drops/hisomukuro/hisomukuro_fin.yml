@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: BLACKSTONE_WALL
-    display-name: §x§C§7§B§C§A§DHisomukuro Fin
-    custom-model-data: 1
+    displayName: §x§C§7§B§C§A§DHisomukuro Fin
+    customModelData: 1
     lore: |
       §eCan be obtained by finding
       §ea §x§C§7§B§C§A§DHisomukuro §ein the waters
@@ -11,6 +11,4 @@
       §x§5§2§4§D§4§7§oAlmost drowned getting this!
       §x§5§2§4§D§4§7§oDoesn't seem very useful..
       §x§5§2§4§D§4§7§oPerhaps I could sell it to a vendor?
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

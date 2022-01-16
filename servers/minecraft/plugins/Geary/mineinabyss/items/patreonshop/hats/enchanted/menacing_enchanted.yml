@@ -1,9 +1,7 @@
 - !<looty:type>
   item:
-    display-name: §x§8§F§0§0§D§6ゴゴゴMenacingゴゴゴ
+    displayName: §x§8§F§0§0§D§6ゴゴゴMenacingゴゴゴ
     type: STONE_HOE
-    custom-model-data: 10
+    customModelData: 10
 - !<geary:hat> { }
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

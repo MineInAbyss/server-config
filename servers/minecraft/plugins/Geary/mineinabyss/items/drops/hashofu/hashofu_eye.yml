@@ -1,10 +1,11 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: FIRE_CHARGE
-    display-name: §x§4§5§4§5§4§5Hashofu Eye
-    custom-model-data: 1
+    displayName: §x§4§5§4§5§4§5Hashofu Eye
+    customModelData: 1
     lore: |
       §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
       §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
       §x§5§9§5§9§5§9§oThere is a fire in his eyes.
+- !<geary:no_vanilla_interactions> {}

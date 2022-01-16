@@ -6,8 +6,8 @@
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.2500
-  width: 0.6000
-  height: 0.6000
+  width: 0.9
+  height: 0.9
 - !<mobzy:death_loot>
   minExp: 10
   maxExp: 16

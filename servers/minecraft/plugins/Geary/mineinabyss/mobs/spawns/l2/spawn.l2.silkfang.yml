@@ -1,0 +1,6 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.silkfang ]
+- !<mobzy:spawn_regions>
+  keys: [ layertwo ]
+- !<mobzy:spawn.priority>
+  priority: 0.4

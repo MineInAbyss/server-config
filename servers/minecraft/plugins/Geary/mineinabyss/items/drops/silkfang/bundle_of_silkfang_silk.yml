@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: COBWEB
-    display-name: §x§1§1§6§A§A§DBundle of Silkfang Silk
-    custom-model-data: 1
+    displayName: §x§1§1§6§A§A§DBundle of Silkfang Silk
+    customModelData: 1
     lore: |
       §x§1§5§8§0§D§1Silkfangs about to make nests
       §eoften drop more silk than usual.

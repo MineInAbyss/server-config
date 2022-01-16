@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: MUTTON
-    display-name: §x§B§D§B§D§B§DRaw Neritantan Meat
-    custom-model-data: 1
+    displayName: §x§B§D§B§D§B§DRaw Neritantan Meat
+    customModelData: 1
     lore: |
       §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
       §efound §edeep in the caverns of the §aGreat Fault§e.

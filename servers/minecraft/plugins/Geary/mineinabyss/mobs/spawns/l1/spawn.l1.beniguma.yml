@@ -1,0 +1,19 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:beniguuma
+- !<mobzy:spawn.amount>
+  amount: 2..4
+- !<mobzy:spawn_regions>
+  keys: [ layerone ]
+- !<mobzy:spawn.spread>
+  radius: 20
+- !<mobzy:spawn.priority>
+  priority: 0.2
+- !<mobzy:check.spawn.local_group>
+  max: 4
+  radius: 400
+- !<mobzy:check.spawn.gap>
+  range: 3..4096
+- !<geary:check.block_type>
+  allow:
+    - GRASS_BLOCK
+    - CRACKED_STONE_BRICKS

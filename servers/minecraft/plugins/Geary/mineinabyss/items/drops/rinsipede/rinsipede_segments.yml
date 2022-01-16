@@ -1,8 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: BONE_MEAL
-    display-name: §x§F§F§F§F§9§9Rinsipede Segments
+    displayName: §x§F§F§F§F§9§9Rinsipede Segments
+    customModelData: 1
     lore: |
       §eDropped by §x§F§F§F§F§9§9Rinsipede
       §ein the §aGreat Fault§e.

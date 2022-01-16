@@ -1,35 +1,35 @@
 - !<looty:type>
   item:
-    display-name: §8Grim Ripper
+    displayName: §8Grim Ripper
     type: KNOWLEDGE_BOOK
-    custom-model-data: 6
-- !<geary:events>
-  leftClick:
-    - !<cancel> {}
-    - !<cooldown>
-      name: Grim Ripper
-      length: 2s
-      run:
-        - !<on.parent>
-          - !<on.nearby>
-            radius: 3
-            max: 1
-            run:
-            - !<geary:apply_potion_effects>
-              effects:
-                - type: WEAKNESS
-                  duration: 6s
-                  amplifier: 1
-                  ambient: true
-                - type: SLOW
-                  duration: 6s
-                  amplifier: 2
-                  ambient: true
-                - type: SLOW_DIGGING
-                  duration: 6s
-                  amplifier: 1
-                  ambient: true
-                - type: HUNGER
-                  duration: 6s
-                  amplifier: 3
-                  ambient: true
+    customModelData: 6
+- !<geary:no_vanilla_interactions> {}
+#- !<geary:events>
+#  leftClick:
+#    - !<cooldown>
+#      name: Grim Ripper
+#      length: 2s
+#      run:
+#        - !<on.parent>
+#          - !<on.nearby>
+#            radius: 3
+#            max: 1
+#            run:
+#            - !<geary:apply_potion_effects>
+#              effects:
+#                - type: WEAKNESS
+#                  duration: 6s
+#                  amplifier: 1
+#                  ambient: true
+#                - type: SLOW
+#                  duration: 6s
+#                  amplifier: 2
+#                  ambient: true
+#                - type: SLOW_DIGGING
+#                  duration: 6s
+#                  amplifier: 1
+#                  ambient: true
+#                - type: HUNGER
+#                  duration: 6s
+#                  amplifier: 3
+#                  ambient: true

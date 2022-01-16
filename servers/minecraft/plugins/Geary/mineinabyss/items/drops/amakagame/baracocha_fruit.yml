@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: CHORUS_FRUIT
-    display-name: §5Baracocha Fruit
-    custom-model-data: 1
+    displayName: §5Baracocha Fruit
+    customModelData: 1
     lore: |
       §dNeritantans love eating these. Fittingly,
       §5Amakagame §dsmell just like them to lure

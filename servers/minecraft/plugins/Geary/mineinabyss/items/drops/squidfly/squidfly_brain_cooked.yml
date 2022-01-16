@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: BAKED_POTATO
-    display-name: §x§8§5§5§1§2§ECooked Squidfly Brain
-    custom-model-data: 1
+    displayName: §x§8§5§5§1§2§ECooked Squidfly Brain
+    customModelData: 1
     lore: |
       §eDropped by §x§8§5§5§1§2§ESquidflies
       §ein the §aGreat Fault§e.

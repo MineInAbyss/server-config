@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
-    display-name: §x§f§f§9§d§2§6Bonfire
+    displayName: §x§f§f§9§d§2§6Bonfire
     type: CAMPFIRE
-    custom-model-data: 1
+    customModelData: 1
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

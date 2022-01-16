@@ -1,11 +1,12 @@
-- !<geary:player_instanced_item> { }
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    display-name: §7Iron Sickle
+    displayName: §7Iron Sickle
     #    lore: |
     #      §bA
     type: IRON_HOE
-    custom-model-data: 1
+    customModelData: 1
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
@@ -21,7 +22,3 @@
         |S  |
 - !<mineinabyss:sickle>
   radius: 2
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
-    - !<mineinabyss:harvest> { }

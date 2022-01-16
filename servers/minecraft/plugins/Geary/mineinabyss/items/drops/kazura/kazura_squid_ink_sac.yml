@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: INK_SAC
-    display-name: §x§A§9§C§C§C§AKazura Squid Ink Sac
-    custom-model-data: 1
+    displayName: §x§A§9§C§C§C§AKazura Squid Ink Sac
+    customModelData: 1
     lore: |
       §eObtainable from §fKazura Squids,
       §ecreatures that hatch from eggs at

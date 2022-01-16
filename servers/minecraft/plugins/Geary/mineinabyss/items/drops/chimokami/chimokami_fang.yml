@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: FLINT
-    display-name: §x§D§6§3§6§2§4Chimokami Fang
-    custom-model-data: 2
+    displayName: §x§D§6§3§6§2§4Chimokami Fang
+    customModelData: 2
     lore: |
       §eA fang dropped from the rare
       §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.

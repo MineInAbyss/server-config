@@ -11,16 +11,29 @@
   knockbackResistance: 0.0500
   width: 2
   height: 2
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: SLOW
-            duration: 10s
-            amplifier: 10
-            ambient: true
-        applyChance: 0.6000
+#- !<geary:children>
+#  slow:
+#    - !<geary:apply> geary:potion_effects
+#    - !<geary:potion_effects>
+#      - type: SLOW
+#        duration: 10s
+#        amplifier: 10
+#  slowCondition:
+#    - !<geary:condition.chance>
+#      percentage: 0.6
+#  projectile:
+#    - !<geary:event.triggers>
+#      - geary:event.touched -> parent.child(slow)
+#    - !<minecraft:entity_type>
+#      type: SNOWBALL
+#    - !<mobzy:item_model>
+#      item:
+#        type: SNOWBALL
+#        customModelData: 100
+#- !<geary:event.triggers>
+#  - geary:event.touched -> child(slow)
+#- !<geary:event.conditions>
+#  - any -> child(slowCondition) -> child(slow)
 - !<mobzy:death_loot>
   minExp: 30
   maxExp: 50
@@ -43,21 +56,21 @@
   goals:
     1: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.5000
-    2: !<mobzy:behavior.throw_items>
-      minThrowRad: 4.0000
-      spawn:
-        - !<minecraft:entity_type>
-          type: SNOWBALL
-        - !<mobzy:item_model>
-          item:
-            type: COBWEB
-        - !<geary:events>
-          projectileHit:
-            - !<on.target>
-              - !<geary:deal_damage>
-                damage: 3.0
-              - !<geary:apply_potion_effects>
-                effects:
-                  - type: SLOW
-                    duration: 6s
-                    amplifier: 5
+#    2: !<mobzy:behavior.throw_items>
+#      minThrowRad: 4.0000
+#      spawn:
+#        - !<minecraft:entity_type>
+#          type: SNOWBALL
+#        - !<mobzy:item_model>
+#          item:
+#            type: COBWEB
+#        - !<geary:events>
+#          projectileHit:
+#            - !<on.target>
+#              - !<geary:deal_damage>
+#                damage: 3.0
+#              - !<geary:apply_potion_effects>
+#                effects:
+#                  - type: SLOW
+#                    duration: 6s
+#                    amplifier: 5

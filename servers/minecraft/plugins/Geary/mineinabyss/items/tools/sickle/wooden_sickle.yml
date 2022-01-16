@@ -1,11 +1,12 @@
-- !<geary:player_instanced_item> { }
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    display-name: §x§6§3§6§1§4§EWooden Sickle
+    displayName: §x§6§3§6§1§4§EWooden Sickle
     #    lore: |
     #      §bA
     type: WOODEN_HOE
-    custom-model-data: 1
+    customModelData: 1
 - !<looty:recipes>
   discoverRecipes: true
   group: "looty:wooden_sickle"
@@ -22,7 +23,3 @@
         |S  |
 - !<mineinabyss:sickle>
   radius: 1
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
-    - !<mineinabyss:harvest> { }

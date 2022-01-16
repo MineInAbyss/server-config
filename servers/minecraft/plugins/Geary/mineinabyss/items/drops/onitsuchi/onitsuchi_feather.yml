@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: CHARCOAL
-    display-name: §x§5§C§4§7§1§DOnitsuchi Feather
-    custom-model-data: 2
+    displayName: §x§5§C§4§7§1§DOnitsuchi Feather
+    customModelData: 2
     lore: |
       §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
       §ethe §aGoblets of Giants §eand §aSea of Corpses§e.

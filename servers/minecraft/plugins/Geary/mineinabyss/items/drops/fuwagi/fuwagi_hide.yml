@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: RABBIT_HIDE
-    display-name: §x§E§0§E§0§E§0Fuwagi Hide
-    custom-model-data: 1
+    displayName: §x§E§0§E§0§E§0Fuwagi Hide
+    customModelData: 1
     lore: |
       §eDropped from the fast and the curious
       §fFuwagi §edeep in the §aEdge of the

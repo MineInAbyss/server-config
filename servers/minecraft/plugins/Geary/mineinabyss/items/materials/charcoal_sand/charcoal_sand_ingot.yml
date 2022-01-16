@@ -1,6 +1,6 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
-    display-name: §3Charcoal Sand Ingot
+    displayName: §3Charcoal Sand Ingot
     type: IRON_INGOT
-    custom-model-data: 1
+    customModelData: 1

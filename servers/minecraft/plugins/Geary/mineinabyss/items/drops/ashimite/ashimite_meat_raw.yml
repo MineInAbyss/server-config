@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: PORKCHOP
-    custom-model-data: 1
-    display-name: §x§2§5§9§7§D§9Raw Ashimite Meat
+    displayName: §x§2§5§9§7§D§9Raw Ashimite Meat
+    customModelData: 1
     lore: |
       §eCan be obtained by hunting down
       §ean §3Ashimite §ein the §aSea of Corpses§e.

@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: LEATHER
-    display-name: §x§F§F§7§7§1§CMakihige Tentacle
-    custom-model-data: 1
+    displayName: §x§F§F§7§7§1§CMakihige Tentacle
+    customModelData: 1
     lore: |
       §eObtained by cutting it of an
       §einnocent §x§F§F§9§7§2§1Makihige§e.

@@ -1,9 +1,9 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: GUNPOWDER
-    display-name: §6Sakuranbo Dust
-    custom-model-data: 1
+    displayName: §6Sakuranbo Dust
+    customModelData: 1
     lore: |
       §eExplosive powder obtained from
       §6Sakuranbo §ein the §aGreat Fault§e.

@@ -1,33 +1,32 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    display-name: §8Tomorrow Signal
-    custom-model-data: 12
-- !<geary:events>
-  leftClick:
-    - !<cancel> {}
-    - !<cooldown>
-      name: Lightning Strike
-      length: 2s
-      run:
-        - !<on.parent>
-          - !<geary:smite>
-            at: !<player.target_block>
-              maxDist: 15
-              allowAir: false
-          - !<geary:particle>
-            type: CLOUD
-            count: 10
-            speed: 0.2
-            at: !<player.target_block>
-              maxDist: 15
-              allowAir: false
-  rightClick:
-    - !<cancel> { }
-    - !<cooldown>
-      name: Lightning Strike
-      length: 2s
-      run:
-        - !<on.parent>
-          - !<geary:toggle_storm>
-            at: !<player.location> { }
+    displayName: §8Tomorrow Signal
+    customModelData: 12
+#- !<geary:events>
+#  leftClick:
+#    - !<cooldown>
+#      name: Lightning Strike
+#      length: 2s
+#      run:
+#        - !<on.parent>
+#          - !<geary:smite>
+#            at: !<player.target_block>
+#              maxDist: 15
+#              allowAir: false
+#          - !<geary:particle>
+#            type: CLOUD
+#            count: 10
+#            speed: 0.2
+#            at: !<player.target_block>
+#              maxDist: 15
+#              allowAir: false
+#  rightClick:
+#    - !<cooldown>
+#      name: Lightning Strike
+#      length: 2s
+#      run:
+#        - !<on.parent>
+#          - !<geary:toggle_storm>
+#            at: !<player.location> { }
+- !<geary:no_vanilla_interactions> {}

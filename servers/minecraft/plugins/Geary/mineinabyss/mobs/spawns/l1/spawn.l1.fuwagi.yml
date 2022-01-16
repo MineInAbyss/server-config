@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.fuwagi ]
+- !<mobzy:spawn_regions>
+  keys: [ layerone ]

@@ -1,13 +1,11 @@
-- !<geary:player_instanced_item> { }
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: ENDER_EYE
-    display-name: §x§D§1§2§B§2§6Corpse-Weeper Eye
-    custom-model-data: 1
+    displayName: §x§D§1§2§B§2§6Corpse-Weeper Eye
+    customModelData: 1
     lore: |
       §eRarely dropped from §x§F§F§3§4§2§ECorpse-Weepers
       §ein the §aForest of Temptation§e.
       §c§oIt feels like it's staring into your soul...
-- !<geary:events>
-  rightClick:
-    - !<cancel> { }
+- !<geary:no_vanilla_interactions> {}

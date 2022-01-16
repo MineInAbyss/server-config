@@ -13,16 +13,16 @@
   flyingSpeed: 12
   width: 1
   height: 1
-- !<geary:events>
-  onTargetHit:
-    - !<on.target>
-      - !<geary:apply_potion_effects>
-        effects:
-          - type: POISON
-            duration: 2s
-            amplifier: 2
-            ambient: true
-        applyChance: 0.8000
+#- !<geary:events>
+#  onTargetHit:
+#    - !<on.target>
+#      - !<geary:apply_potion_effects>
+#        effects:
+#          - type: POISON
+#            duration: 2s
+#            amplifier: 2
+#            ambient: true
+#        applyChance: 0.8000
 - !<mobzy:death_loot>
   minExp: 20
   maxExp: 40

@@ -1,0 +1,13 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.rohana ]
+- !<mobzy:spawn_regions>
+  keys: [ layerfour ]
+- !<mobzy:spawn.amount>
+  amount: 3..5
+- !<mobzy:spawn.spread>
+  radius: 1
+- !<mobzy:spawn.priority>
+  priority: 0.5
+- !<mobzy:check.spawn.local_group>
+  max: 5
+  radius: 200
