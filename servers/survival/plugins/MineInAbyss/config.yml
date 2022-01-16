@@ -141,7 +141,7 @@ layers:
   - name: §x§9§E§1§E§8§4The Goblets of Giants
     sub: §x§7§7§2§3§7§A4020–5850 blocks
     deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
-    hasPvPDefault: true
+    hasPvpDefault: true
     depth:
       start: 4020
       end: 5850
@@ -181,7 +181,7 @@ layers:
   - name: §x§3§B§3§B§3§BSea of Corpses
     sub: §x§5§4§5§4§5§45850–7200 blocks
     deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
-    hasPvPDefault: true
+    hasPvpDefault: true
     depth:
       start: 5850
       end: 7200
