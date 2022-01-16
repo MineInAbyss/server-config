@@ -13,15 +13,16 @@ x-particles-vomit: &vomit
   particles: [SLIME]
 features:
   #- !<chat> { }
-  - !<orth_banking> { }
-  - !<guilds> { }
+  #- !<orth_banking> { }
+  #- !<guilds> { }
   #- !<adventure_pvp> { }
-  #- !<anticheese> { }
+  - !<survival_pvp> { }
+  - !<anticheese> { }
   - !<curse> { }
-  #- !<keepinv> { }
-  #- !<relics> { }
+  - !<keepinv> { }
+  - !<relics> { }
+  - !<exp> { }
   #- !<enchants> { }
-  #- !<cookingpot> { }
 layers:
   - name: §x§F§F§A§8§1§2Orth
     sub: §x§F§F§C§4§2§1City of the Great Pit
