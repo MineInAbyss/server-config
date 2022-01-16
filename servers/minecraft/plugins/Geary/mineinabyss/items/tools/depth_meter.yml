@@ -20,6 +20,11 @@
         |GCG|
         | G |
 - !<mineinabyss:depthmeter> { }
+- !<geary:children>
+  showDepth:
+    - !<mineinabyss:show_depth> {}
+- !<geary:event.triggers>
+  - geary:event.right_clicked this -> child(showDepth)
 - !<geary:no_vanilla_interactions> {}
 #- !<geary:events>
 #  rightClick:

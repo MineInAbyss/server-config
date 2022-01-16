@@ -1,4 +1,5 @@
-- !<looty:player_instanced_item> { }
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
 - !<looty:type>
   item:
     displayName: §6Golden Sickle
@@ -21,7 +22,3 @@
         |S  |
 - !<mineinabyss:sickle>
   radius: 3
-- !<geary:no_vanilla_interactions> {}
-- !<geary:events>
-  rightClick:
-    - !<mineinabyss:harvest> { }
