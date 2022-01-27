@@ -2,7 +2,6 @@
   discoverRecipes: true
   result:
     type: BEETROOT_SEEDS
-  group: "beetroot_seeds"
   recipes:
     - !<shapeless>
       items:
