@@ -1,0 +1,24 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: COOKED_SALMON
+    displayName: §x§2§5§7§B§E§BCooked Demonfish
+    customModelData: 1
+    lore: |
+      §eCan be obtained by finding and
+      §ecatching a §x§2§5§7§B§E§BDemonfish §ein the
+      §ewaters of the §aSea of Corpses§e.
+      §x§1§B§5§B§A§D§oSeems like a great source for food!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:demonfish_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:demonfish_raw
+      experience: 2f
+      cookingTime: 50

@@ -1,0 +1,28 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 116
+- !<mobzy:attributes>
+  maxHealth: 20
+  movementSpeed: 0.3000
+  attackDamage: 6
+  attackKnockback: 1
+  followRange: 10
+  width: 1.2
+  height: 0.2000
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 25
+  drops:
+    - item:
+        prefab: mineinabyss:virinsipede_segments
+      maxAmount: 3
+      dropChance: 0.8000
+    - item:
+        prefab: mineinabyss:virinsipede_antlers
+      dropChance: 0.3000
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.leap_at_target>
+      jumpHeight: 0.2000

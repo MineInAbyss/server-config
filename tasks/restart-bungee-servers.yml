@@ -1,4 +1,0 @@
-- service:
-    name: "minecraft@{{ item.name }}"
-    state: restarted
-  with_items: "{{ bungee_servers }}"

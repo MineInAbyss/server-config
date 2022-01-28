@@ -1,0 +1,47 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: BUNDLE
+  group: "looty:bundle"
+  recipes:
+    - !<shaped>
+      items:
+        H:
+          prefab: mineinabyss:fuwagi_hide
+        S:
+          prefab: mineinabyss:silkfang_silk
+      configuration: |-
+        |SHS|
+        |H H|
+        |HHH|
+    - !<shaped>
+      items:
+        F:
+          prefab: mineinabyss:okibo_fur
+        S:
+          prefab: mineinabyss:silkfang_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|
+    - !<shaped>
+      items:
+        F:
+          prefab: mineinabyss:okibo_fur
+        S:
+          prefab: mineinabyss:kuongatari_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|
+    - !<shaped>
+      items:
+        F:
+          prefab: mineinabyss:fuwagi_hide
+        S:
+          prefab: mineinabyss:kuongatari_silk
+      configuration: |-
+        |SFS|
+        |F F|
+        |FFF|
+

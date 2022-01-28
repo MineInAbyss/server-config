@@ -1,0 +1,21 @@
+<book id="hamashirama" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/hamashirama_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_hamashirama_raw"><div styles="bestiary_image">:hamashirama_raw:</div></component>
+    <component id="hover_hamashirama_cooked"><div styles="bestiary_image">:hamashirama_cooked:</div></component>
+    <component id="hover_hamashirama_layerfour"><div styles="bestiary_image">:layerfour:</div></component>
+    <component id="hover_hamashirama_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:hamashirama:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>

@@ -1,0 +1,9 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: GLOW_LICHEN
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:kakatsumuri_glowing_tip
+        - type: VINE

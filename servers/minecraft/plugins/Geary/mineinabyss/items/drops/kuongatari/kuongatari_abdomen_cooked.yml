@@ -1,0 +1,23 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: DRIED_KELP
+    displayName: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+    customModelData: 2
+    lore: |
+      §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
+      §aGoblets of Giants §eand the §aSea of Corpses§e.
+      §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:kuongatari_abdomen_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:kuongatari_abdomen_raw
+      experience: 2f
+      cookingTime: 50

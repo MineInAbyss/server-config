@@ -1,0 +1,26 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: COOKED_MUTTON
+    displayName: §x§8§5§5§6§2§DCooked Shroombear Meat
+    customModelData: 2
+    lore: |
+      §eObtained by chasing down
+      §ea §x§8§5§5§6§2§DShroombear §ein the
+      §aGoblets of Giants§e. The meat
+      §eis edible and dark in colour.
+      §x§6§9§4§6§0§0§oMight smell like excrement
+      §x§6§9§4§6§0§0§oif I don't clean it well...
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:shroombear_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:shroombear_meat_raw
+      experience: 2f
+      cookingTime: 50

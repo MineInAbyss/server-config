@@ -1,0 +1,68 @@
+- !<mobzy:type>
+  baseClass: mobzy:hostile
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 17
+- !<mobzy:attributes>
+  maxHealth: 100
+  movementSpeed: 0.5
+  attackDamage: 25
+  attackKnockback: 5
+  knockbackResistance: 0.8
+  followRange: 40
+  width: 1.9
+  height: 2.75
+- !<geary:children>
+  poison:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:potion_effects>
+      - type: POISON
+        duration: 6s
+        amplifier: 5
+      - type: HARM
+        amplifier: 1
+  poisonCondition:
+    - !<geary:condition.chance>
+      percentage: 0.5
+  projectile:
+    - !<geary:event.triggers>
+      - geary:event.touched -> parent.child(poison)
+    - !<minecraft:entity_type>
+      type: SNOWBALL
+    - !<mobzy:item_model>
+      item:
+        type: QUARTZ
+        customModelData: 1
+    - !<geary:deal_damage>
+      damage: 10.0
+- !<geary:event.triggers>
+  - geary:event.touched -> child(poison)
+- !<geary:event.conditions>
+  - any -> child(poisonCondition) -> child(poison)
+- !<mobzy:death_loot>
+  minExp: 180
+  maxExp: 210
+  drops:
+    - item:
+        prefab: mineinabyss:orb_piercer_spike
+      minAmount: 3
+      maxAmount: 6
+    - item:
+        prefab: mineinabyss:orb_piercer_face_fragments
+      dropChance: 0.4000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.orbpiercer.ambient
+  death: mineinabyss:entity.orbpiercer.death
+  hurt: mineinabyss:entity.orbpiercer.hurt
+- !<mobzy:increased_water_speed>
+  level: 3
+- !<mobzy:pathfinders>
+  goals:
+    1: !<mobzy:behavior.throw_items>
+      minThrowRad: 6
+      projectileSpeed: 1.5
+      projectileAngularDiameter: 8
+      projectileCountPerThrow: 10
+      spawn: child(projectile)
+      cooldown: 4s
+    2: !<minecraft:behavior.float> { }

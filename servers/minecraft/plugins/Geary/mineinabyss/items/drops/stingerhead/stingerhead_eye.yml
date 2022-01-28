@@ -1,0 +1,11 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: FERMENTED_SPIDER_EYE
+    displayName: §x§9§C§0§F§2§CStingerhead Eye
+    customModelData: 2
+    lore: |
+      §eObtained from slaying
+      §ea §x§9§C§0§F§2§CStingerhead §efound in
+      §enests in the §aSea of Corpses§e,
+      §eand plucking its eye out.

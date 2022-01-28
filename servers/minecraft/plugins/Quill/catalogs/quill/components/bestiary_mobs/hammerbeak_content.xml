@@ -1,0 +1,15 @@
+<component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:</component>
+<color v="#000000"><div><hover component="hover_hammerbeak"><color v="#705723"><div styles="mobname">Hammerbeaks</div></color></hover> are avian creatures who inhabit the airspace of the <hover component="hover_hammerbeak_layerone"><color v="#DB4040"><div styles="mobname">1st Layer</div></color></hover> and the <hover component="hover_hammerbeak_layertwo"><color v="#175ABF"><div styles="mobname">2nd Layer</div></color></hover>. They usually hunt in small packs and are attracted to shiny things.
+
+
+
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
+<color v="705723"><div styles="mobname">Hammerbeaks</div></color> are simplistic creatures. Their main form of attacking is by bashing into its target with the hard beack infused in their skull. They will also take advantage of prey with severe wounds, even if its weaker.
+
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
+
+<color v="705723">Hammerbeaks</color> are a great resource for Delvers as most of its parts are useful for descending the <color v="6CC439">Abyss</color>. Their <hover component="hover_hammerbeak_beak"><color v="613F0C"><div styles="mobname">beaks</div></color></hover> can be used as flint.
+Their <hover component="hover_hammerbeak_feather"><color v="613F0C"><div styles="mobname">feathers</div></color></hover> are flammable and work as coal and is useful too cook its <hover component="hover_hammerbeak_wing"><color v="613F0C"><div styles="mobname">meat</div></color></hover>.
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component></div></color>

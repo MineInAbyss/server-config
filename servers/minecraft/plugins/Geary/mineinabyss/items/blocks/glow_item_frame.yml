@@ -1,0 +1,11 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: GLOW_ITEM_FRAME
+  removeRecipes:
+    - minecraft:glow_item_frame
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:kakatsumuri_glowing_tip
+        - type: ITEM_FRAME

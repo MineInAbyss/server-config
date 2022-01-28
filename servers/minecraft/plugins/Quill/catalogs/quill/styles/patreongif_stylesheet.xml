@@ -1,0 +1,60 @@
+<!-- Stylesheets require an id which is used by books to include it. -->
+<stylesheet id="patreongif_stylesheet">
+    <!-- Stylesheets can also include other stylesheets, but not books-->
+    <includes>
+        <include type="stylesheet">base_stylesheet</include>
+    </includes>
+    <styles>
+        <!-- Styles here require an id, and can extend other styles -->
+        <style id="gif_amepat" extends="patreongif">
+            <formatting>
+                <format type="font">amepat</format>
+            </formatting>
+        </style>
+        <style id="gif_amogusdumpy" extends="patreongif">
+            <formatting>
+                <format type="font">amogusdumpy</format>
+            </formatting>
+        </style>
+        <style id="gif_catjam" extends="patreongif">
+            <formatting>
+                <format type="font">catjam</format>
+            </formatting>
+        </style>
+        <style id="gif_doggopunch" extends="patreongif">
+            <formatting>
+                <format type="font">doggopunch</format>
+            </formatting>
+        </style>
+        <style id="gif_oripat" extends="patreongif">
+            <formatting>
+                <format type="font">oripat</format>
+            </formatting>
+        </style>
+        <style id="gif_pruskhapat" extends="patreongif">
+            <formatting>
+                <format type="font">pruskhapat</format>
+            </formatting>
+        </style>
+        <style id="gif_ratshake" extends="patreongif">
+            <formatting>
+                <format type="font">ratshake</format>
+            </formatting>
+        </style>
+        <style id="gif_regangry" extends="patreongif">
+            <formatting>
+                <format type="font">regangry</format>
+            </formatting>
+        </style>
+        <style id="gif_rikopew" extends="patreongif">
+            <formatting>
+                <format type="font">rikopew</format>
+            </formatting>
+        </style>
+        <style id="gif_yepcat" extends="patreongif">
+            <formatting>
+                <format type="font">yepcat</format>
+            </formatting>
+        </style>
+    </styles>
+</stylesheet>

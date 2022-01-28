@@ -1,0 +1,20 @@
+<book id="titanjaw" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/titanjaw_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_titanjaw_pearl"><div styles="bestiary_image">:titanjaw_pearl:</div></component>
+    <component id="hover_titanjaw_scale"><div styles="bestiary_image">:titanjaw_scale:</div></component>
+    <component id="hover_titanjaw_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:titanjaw:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>

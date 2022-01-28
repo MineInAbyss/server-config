@@ -1,0 +1,25 @@
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
+- !<looty:type>
+  item:
+    displayName: §x§6§3§6§1§4§EWooden Sickle
+    #    lore: |
+    #      §bA
+    type: WOODEN_HOE
+    customModelData: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  group: "looty:wooden_sickle"
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          tag: planks
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+- !<mineinabyss:sickle>
+  radius: 1

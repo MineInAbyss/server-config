@@ -1,0 +1,9 @@
+<component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Location Info:</component>
+<color v="#000000"><div><hover component="hover_mob"><color v="#E0E0E0"><div styles="mobname">Fuwagi</div></color></hover>
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Behaviour Details:</component>
+
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component>
+<br/><component id="header" styles="h2">§#1fab44-#fcc82b-#423924§Item Drops:</component>
+
+<_add50/><component id="footer" styles="footer"><hover component="hover_return_creaturelist"><click action="RUN_COMMAND" value="/book read bestiary">:hypers:</click></hover></component></div></color>

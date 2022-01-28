@@ -1,0 +1,55 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: NAME_TAG
+  group: "looty:name_tag"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_silk
+        I:
+          prefab: mineinabyss:makihige_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | SS|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_silk
+        I:
+          prefab: mineinabyss:kazura_squid_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | SS|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        K:
+          prefab: mineinabyss:kuongatari_silk
+        I:
+          prefab: mineinabyss:makihige_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | KK|
+        |PIP|
+        |PPP|
+    - !<shaped>
+      items:
+        K:
+          prefab: mineinabyss:kuongatari_silk
+        I:
+          prefab: mineinabyss:kazura_squid_ink_sac
+        P:
+          type: PAPER
+      configuration: |-
+        | KK|
+        |PIP|
+        |PPP|
+

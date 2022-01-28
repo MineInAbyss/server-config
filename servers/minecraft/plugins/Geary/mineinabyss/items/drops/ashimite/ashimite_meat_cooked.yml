@@ -1,0 +1,24 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: COOKED_PORKCHOP
+    displayName: §x§2§5§9§7§D§9Cooked Ashimite Meat
+    customModelData: 1
+    lore: |
+      §eCan be obtained by hunting down an
+      §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses
+      §eand cooking its meat.
+      §x§8§2§4§E§2§1§oVery tasty and rich in nutrients!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:ashimite_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:ashimite_meat_raw
+      experience: 2f
+      cookingTime: 50

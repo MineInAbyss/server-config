@@ -1,0 +1,8 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: BEETROOT_SEEDS
+  recipes:
+    - !<shapeless>
+      items:
+        - type: BEETROOT

@@ -1,0 +1,20 @@
+- !<looty:recipes>
+  result:
+    type: GRAY_SHULKER_BOX
+  discoverRecipes: true
+  group: "looty:backpack"
+  removeRecipes:
+    - minecraft:shulker_box
+  recipes:
+    - !<shaped>
+      items:
+        T:
+          prefab: mineinabyss:titanjaw_scale
+        O:
+          prefab: mineinabyss:orb_piercer_face_fragments
+        M:
+          prefab: mineinabyss:makihige_tentacle
+      configuration: |-
+        |MTM|
+        |TOT|
+        |TTT|

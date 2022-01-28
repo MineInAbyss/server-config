@@ -1,0 +1,35 @@
+- !<looty:type>
+  item:
+    type: COMPASS
+    displayName: §3Depth Meter
+    customModelData: 2
+    lore: |
+      §bUsed to check your §aLayer §band
+      §bdepth by §lright-clicking.
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        G:
+          type: GLASS
+        C:
+          type: COMPASS
+      configuration: |-
+        | G |
+        |GCG|
+        | G |
+- !<mineinabyss:depthmeter> { }
+- !<geary:children>
+  showDepth:
+    - !<mineinabyss:show_depth> {}
+- !<geary:event.triggers>
+  - geary:event.right_clicked this -> child(showDepth)
+- !<geary:no_vanilla_interactions> {}
+#- !<geary:events>
+#  rightClick:
+#    - !<cooldown>
+#      name: Read Depth
+#      length: 1s
+#      run:
+#        - !<mineinabyss:show_depth> { }

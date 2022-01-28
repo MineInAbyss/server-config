@@ -1,0 +1,54 @@
+- !<mobzy:type>
+  baseClass: mobzy:flying
+  mobCategory: FLYING
+  creatureType: MONSTER
+- !<mobzy:model>
+  id: 23
+- !<mobzy:attributes>
+  maxHealth: 20
+  followRange: 17
+  attackDamage: 3
+  attackKnockback: 1.4000
+  knockbackResistance: 0.1300
+  flyingSpeed: 10
+  width: 2
+  height: 2.2500
+- !<mobzy:death_loot>
+  minExp: 25
+  maxExp: 45
+  drops:
+    - item:
+        prefab: mineinabyss:hammerbeak_wing_raw
+      cooked:
+        prefab: mineinabyss:hammerbeak_wing_cooked
+      minAmount: 1
+      maxAmount: 3
+    - item:
+        prefab: mineinabyss:hammerbeak_beak
+      maxAmount: 2
+      dropChance: 0.6000
+    - item:
+        prefab: mineinabyss:hammerbeak_feather
+      minAmount: 1
+      maxAmount: 3
+      dropChance: 0.7000
+    - item:
+        prefab: mineinabyss:hammerbeak_egg
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 0.5000
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 100
+    2: !<minecraft:target.nearby_player> { }
+  goals:
+    1: !<mobzy:behavior.flying_damage_target> { }
+    2: !<mobzy:behavior.flying_dive_on_target>
+      diveVelocity: -0.5000
+      minHeight: 7
+      maxHeight: 10
+      startDiveDistance: 10
+      bashVelMultiplier: 0.5000
+    3: !<mobzy:behavior.fly_towards_target> { }
+    4: !<mobzy:behavior.idle_fly> { }

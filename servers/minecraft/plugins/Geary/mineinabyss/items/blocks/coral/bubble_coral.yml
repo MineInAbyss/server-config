@@ -1,0 +1,14 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: BUBBLE_CORAL
+  group: "looty:bubble_coral"
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:ashimite_antlers
+        - type: PURPLE_DYE
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:ashimite_antlers
+        - type: MAGENTA_DYE

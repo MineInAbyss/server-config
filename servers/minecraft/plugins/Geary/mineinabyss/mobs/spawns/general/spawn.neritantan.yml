@@ -1,0 +1,18 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:neritantan
+- !<mobzy:spawn.amount>
+  amount: 1..3
+- !<mobzy:spawn.spread>
+  radius: 10
+- !<mobzy:spawn.priority>
+  priority: 0.3
+- !<mobzy:check.spawn.local_group>
+  max: 5
+  radius: 500
+- !<mobzy:check.spawn.gap>
+  range: 2..4096
+- !<geary:check.block_type>
+  allow:
+    - GRASS_BLOCK
+    - DIORITE
+    - WHITE_CONCRETE

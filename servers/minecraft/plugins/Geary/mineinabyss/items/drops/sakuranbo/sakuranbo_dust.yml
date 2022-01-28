@@ -1,0 +1,10 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: GUNPOWDER
+    displayName: §6Sakuranbo Dust
+    customModelData: 1
+    lore: |
+      §eExplosive powder obtained from
+      §6Sakuranbo §ein the §aGreat Fault§e.
+      §6§oSniffing it is probably a bad idea...

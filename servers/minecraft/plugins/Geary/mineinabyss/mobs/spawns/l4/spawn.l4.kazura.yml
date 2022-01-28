@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.kazura ]
+- !<mobzy:spawn_regions>
+  keys: [ layerfour ]

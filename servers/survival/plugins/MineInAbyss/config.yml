@@ -1,47 +1,68 @@
 x-particles-blood: &blood
   count: 10
   duration: 2s
-  offset: 1
+  offset: 1t
   iterations: 4
   particles:
     - REDSTONE
 x-particles-vomit: &vomit
   count: 25
-  duration: 10
-  iterations: 5
-  offset: 2s
+  duration: 10t
+  iterations: 6
+  offset: 3s
   particles: [SLIME]
-
-storage:
-  relicpath: "relics/"
+features:
+  #- !<chat> { }
+  #- !<orth_banking> { }
+  #- !<guilds> { }
+  #- !<adventure_pvp> { }
+  - !<hub_storage> { }
+  - !<layers> { }
+  - !<survival_pvp> { }
+  - !<anticheese> { }
+  - !<curse> { }
+  - !<keepinv> { }
+  - !<relics> { }
+  - !<exp> { }
+  #- !<enchants> { }
 layers:
   - name: §x§F§F§A§8§1§2Orth
     sub: §x§F§F§C§4§2§1City of the Great Pit
-    deathMessage: in the city of §x§F§F§A§8§1§2Orth§f
+    deathMessage: in the city of §x§F§F§A§8§1§2Orth§f :bell:§f
     depth:
       start: -1
       end: 0
-    sections: [city]
+    sections: [orth]
+    blockBlacklist:
+      - LADDER
+      - RAIL
+      - POWERED_RAIL
+      - VINE
   - name: §x§D§B§4§0§4§0Edge of the Abyss
-    sub: §x§B§A§1§E§1§E0-1350 meters
-    deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f
+    sub: §x§B§A§1§E§1§E0-1510 blocks
+    deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f :redw:§f
     depth:
       start: 0
-      end: 1350
+      end: 1510
     effects:
       - !<potion>
         strength: 2
-        duration: 3s
+        duration: 5s
         effects: [HUNGER]
       - !<particles>
         <<: *vomit
-    sections: [l1s1,l1s2,l1s3,l1s4,l1s5,l1s6]
+    sections: [l1s0,l1s1,l1s2,l1s3]
+    blockBlacklist:
+      - LADDER
+      - RAIL
+      - POWERED_RAIL
+      - VINE
   - name: §x§1§7§5§A§B§FForest of Temptation
-    deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f
-    sub: §x§2§8§6§F§B§F1350-2600 meters
+    deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
+    sub: §x§2§8§6§F§B§F1510-2580 blocks
     depth:
-      start: 1350
-      end: 2600
+      start: 1510
+      end: 2580
     effects:
       - !<potion>
         strength: 2
@@ -49,7 +70,7 @@ layers:
         effects: [HUNGER]
       - !<potion>
         strength: 1
-        duration: 2s
+        duration: 4s
         effects:
           - SLOW
           - SLOW_DIGGING
@@ -57,29 +78,34 @@ layers:
           - POISON
       - !<particles>
         <<: *vomit
-    sections: [l2s1,l2s2,l2s3,l2s4,l2s5]
+    sections: [l2s0,l2s1,l2s2]
+    blockBlacklist:
+      - LADDER
+      - RAIL
+      - POWERED_RAIL
+      - VINE
   - name: §x§D§4§2§8§B§1Great Fault
-    sub: §x§E§8§2§C§C§22600–7000 meters
-    deathMessage: in the §x§D§4§2§8§B§1Great Fault§f
+    sub: §x§E§8§2§C§C§22580–4020 blocks
+    deathMessage: in the §x§D§4§2§8§B§1Great Fault§f :moonw:§f
     depth:
-      start: 2600
-      end: 7000
+      start: 2580
+      end: 4020
     effects:
       - !<potion>
         strength: 3
-        duration: 6s
+        duration: 8s
         effects: [HUNGER]
       - !<potion>
         strength: 1
-        duration: 6s
-        offset: 8
+        duration: 10s
+        offset: 8t
         effects:
           - SLOW
           - SLOW_DIGGING
       - !<potion>
         strength: 1
-        duration: 6s
-        offset: 8
+        duration: 8s
+        offset: 8t
         effects: [WEAKNESS]
       - !<particles>
         <<: *vomit
@@ -89,90 +115,104 @@ layers:
       - !<sound>
         duration: 4s
         iterations: 3
-        offset: 5
+        offset: 5t
         sounds:
-          - BLOCK_FIRE_AMBIENT
-          - BLOCK_GRASS_STEP
-          - BLOCK_LADDER_STEP
-          - BLOCK_GRAVEL_STEP
-          - ENTITY_ZOMBIE_STEP
-          - ENTITY_GENERIC_HURT
-          - ENTITY_GENERIC_SWIM
-          - ENTITY_GENERIC_SMALL_FALL
-          - ENTITY_ITEM_PICKUP
-          - BLOCK_WATER_AMBIENT
-          - ENTITY_ARROW_SHOOT
-          - ENTITY_CHICKEN_STEP
-          - ENTITY_CHICKEN_AMBIENT
-          - ENTITY_CREEPER_PRIMED
-    sections: [l3s1,l3s2,l3s3,l3s4,l3s5,l3s6,l3s7]
+          - block.fire.ambient
+          - block.grass.step
+          - block.ladder.step
+          - block.gravel.step
+          - entity.zombie.step
+          - entity.generic.hurt
+          - entity.generic.swim
+          - entity.generic.small.fall
+          - entity.item.pickup
+          - block.water.ambient
+          - entity.arrow.shoot
+          - entity.chicken.step
+          - entity.chicken.ambient
+          - entity.creeper.primed
+          - mineinabyss:entity.splitjaw.ambient
+    blockBlacklist:
+      - LADDER
+      - RAIL
+      - POWERED_RAIL
+      - VINE
+    sections: [l3s0,l3s1,l3s2,l3s3]
   - name: §x§9§E§1§E§8§4The Goblets of Giants
-    sub: §x§7§7§2§3§7§A7000–12000 meters
-    deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f
+    sub: §x§7§7§2§3§7§A4020–5850 blocks
+    deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
+    hasPvpDefault: true
     depth:
-      start: 7000
-      end: 12000
+      start: 4020
+      end: 5850
     effects:
       - !<potion>
         strength: 1
-        duration: 6s
-        offset: 4
+        duration: 12s
+        offset: 4t
         effects:
           - HUNGER
           - SLOW
           - SLOW_DIGGING
-          - WITHER
           - WEAKNESS
+      - !<potion>
+        strength: 0
+        duration: 10s
+        effects:
+          - WITHER
       - !<particles>
         <<: *blood
       - !<sound>
         duration: 4s
         iterations: 2
-        offset: 5
+        offset: 5t
         sounds:
-          - ENTITY_ZOMBIE_STEP
-          - ENTITY_GENERIC_HURT
-          - ENTITY_GENERIC_SWIM
-          - ENTITY_GENERIC_SMALL_FALL
-          - ENTITY_ITEM_PICKUP
-          - BLOCK_WATER_AMBIENT
-          - ENTITY_ARROW_SHOOT
-          - AMBIENT_CAVE
-          - ENTITY_CREEPER_PRIMED
-    sections: [l4s1,l4s2,l4s3,l4s4,l4s5,l4s6,l4s7,l4s8]
+          - entity.zombie.step
+          - entity.generic.hurt
+          - entity.generic.swim
+          - entity.generic.small.fall
+          - entity.item.pickup
+          - block.water.ambient
+          - entity.arrow.shoot
+          - ambient.cave
+          - entity.creeper.primed
+          - mineinabyss:entity.orbpiercer.ambient
+    sections: [l4s1,l4s2,l4s3,l4s4,l4s5]
   - name: §x§3§B§3§B§3§BSea of Corpses
-    sub: §x§5§4§5§4§5§412000–13000 meters
-    deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f
+    sub: §x§5§4§5§4§5§45850–7200 blocks
+    deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
+    hasPvpDefault: true
     depth:
-      start: 12000
-      end: 13000
+      start: 5850
+      end: 7200
     effects:
       - !<maxHealth>
-        addMaxHealth: -2
-        minHealth: 14
-        duration: 30s
+        duration: 45s
+        iterations: 1
+        addMaxHealth: -2.0
+        minHealth: 8.0
       - !<potion>
         strength: 2
-        duration: 6s
+        duration: 12s
         effects:
           - HUNGER
           - SLOW
           - SLOW_DIGGING
           - BLINDNESS
+          - WEAKNESS
       - !<potion>
         strength: 1
         duration: 10s
         effects:
           - WITHER
-          - WEAKNESS
       - !<particles>
         <<: *blood
       - !<sound>
         duration: 4s
         iterations: 1
-        offset: 7
+        offset: 7t
         sounds:
-          - AMBIENT_CAVE
-          - AMBIENT_UNDERWATER_LOOP_ADDITIONS_ULTRA_RARE
-    sections: [l5s1,l5s2,l5s3,l5s4,l5s5]
-disableDeathMessagesIn: [camelot]
+          - ambient.cave
+          - ambient.underwater.loop.additions.ultra.rare
+          - mineinabyss:entity.steve.hurt
+    sections: [l5s1,l5s2,l5s3]

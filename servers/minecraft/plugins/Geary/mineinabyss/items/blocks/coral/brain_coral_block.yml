@@ -1,0 +1,16 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: BRAIN_CORAL_BLOCK
+  group: "looty:brain_coral_block"
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: mineinabyss:ashimite_antlers
+        P:
+          type: PINK_DYE
+      configuration: |-
+        | A |
+        |APA|
+        | A |

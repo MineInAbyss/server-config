@@ -1,0 +1,24 @@
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
+- !<looty:type>
+  item:
+    displayName: §8Stone Sickle
+    #    lore: |
+    #      §bA
+    type: STONE_HOE
+    customModelData: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: COBBLESTONE
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+- !<mineinabyss:sickle>
+  radius: 1

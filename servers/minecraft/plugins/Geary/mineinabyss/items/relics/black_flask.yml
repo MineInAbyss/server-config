@@ -1,0 +1,27 @@
+- !<looty:type>
+  item:
+    type: POTION
+    displayName: §6Black Flask
+    customModelData: 1
+    lore: |
+      §aplaceholder..
+- !<geary:children>
+  flask:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:apply> geary:deal_damage
+    - !<geary:potion_effects>
+      - type: SPEED
+        duration: 7s
+        amplifier: 10
+      - type: JUMP
+        duration: 7s
+        amplifier: 3
+      - type: HARM
+        amplifier: 2
+  flaskCondition:
+    - !<geary:check.health>
+      within: 2.0..200.0
+- !<geary:event.triggers>
+  - geary:event.ingested -> child(flask)
+- !<geary:event.conditions>
+  - any -> child(flaskCondition) -> child(flask)

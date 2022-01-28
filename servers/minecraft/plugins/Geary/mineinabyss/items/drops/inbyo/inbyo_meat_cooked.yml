@@ -1,0 +1,26 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: COOKED_BEEF
+    displayName: §x§3§D§3§D§3§DCooked Inbyo Meat
+    customModelData: 1
+    lore: |
+      §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
+      §ewith fire in the §aInverted Forest.
+      §eCan also be prepared by cooking
+      §x§6§3§6§3§6§3Raw Inbyo Meat§e.
+      §x§B§5§B§5§B§5§0Seems more edible now, though
+      §x§B§5§B§5§B§5§ois still smells horrid...
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:inbyo_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:inbyo_meat_raw
+      experience: 2f
+      cookingTime: 50

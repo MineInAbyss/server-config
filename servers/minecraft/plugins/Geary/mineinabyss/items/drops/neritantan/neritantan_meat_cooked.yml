@@ -1,0 +1,24 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: COOKED_MUTTON
+    displayName: §x§B§D§B§D§B§DCooked Neritantan Meat
+    customModelData: 1
+    lore: |
+      §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
+      §efound §edeep in the caverns of the §aGreat Fault§e.
+      §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
+      §f§oDo not get in between a Neritantan and a Baracocha fruit!
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:neritantan_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input:
+        prefab: mineinabyss:neritantan_meat_raw
+      experience: 2f
+      cookingTime: 50

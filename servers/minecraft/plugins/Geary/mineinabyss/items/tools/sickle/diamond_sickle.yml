@@ -1,0 +1,24 @@
+- !<geary:inherit>
+  from: [mineinabyss:sickle]
+- !<looty:type>
+  item:
+    displayName: §3Diamond Sickle
+    #    lore: |
+    #      §bA
+    type: DIAMOND_HOE
+    customModelData: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M:
+          type: DIAMOND
+        S:
+          type: STICK
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+- !<mineinabyss:sickle>
+  radius: 2
