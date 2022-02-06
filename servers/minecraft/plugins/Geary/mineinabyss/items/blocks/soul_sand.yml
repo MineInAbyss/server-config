@@ -1,0 +1,9 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: SOUL_SAND
+  recipes:
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - type: BONE
