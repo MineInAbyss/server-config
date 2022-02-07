@@ -14,8 +14,14 @@ x-particles-vomit: &vomit
 features:
   #- !<chat> { }
   #- !<orth_banking> { }
-  #- !<guilds> { }
   #- !<adventure_pvp> { }
+  - !<guilds>
+    maxLength: 30
+    bannedWords:
+      - ([^a-zA-Z\s])
+      - (n[i1]gg?[e3]r[s\$]?)
+      - (.?fai*g+[oei1]*t*[sz]*)
+      - ([nN]+[aA4@]+[sSzZ]+[iI1l])
   - !<hub_storage> { }
   - !<layers> { }
   - !<survival_pvp> { }
