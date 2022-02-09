@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 26
+- !<mobzy:modelengine>
+  modelId: silkfang
 - !<mobzy:attributes>
   maxHealth: 15
   movementSpeed: 0.3000

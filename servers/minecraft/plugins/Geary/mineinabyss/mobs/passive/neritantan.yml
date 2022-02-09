@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 2
+- !<mobzy:modelengine>
+  modelId: neritantan
 - !<mobzy:attributes>
   maxHealth: 7
   movementSpeed: 0.2500

@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 20
+- !<mobzy:modelengine>
+  modelId: madokajack
 - !<mobzy:attributes>
   maxHealth: 35
   followRange: 30

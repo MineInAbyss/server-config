@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 83
+- !<mobzy:modelengine>
+  modelId: titanjaw
 - !<mobzy:attributes>
   maxHealth: 20
   movementSpeed: 0.1500

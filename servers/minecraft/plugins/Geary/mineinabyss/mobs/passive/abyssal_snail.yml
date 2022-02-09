@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 98
+- !<mobzy:modelengine>
+  modelId: abyssal_snail
 - !<mobzy:attributes>
   maxHealth: 40
   movementSpeed: 0.1000

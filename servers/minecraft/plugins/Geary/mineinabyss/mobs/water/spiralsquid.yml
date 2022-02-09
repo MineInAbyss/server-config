@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:fish
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 71 #Change when we have an actual model for it
+- !<mobzy:modelengine>
+  modelId: spiralsquid
 - !<mobzy:attributes>
   maxHealth: 20
   movementSpeed: 3

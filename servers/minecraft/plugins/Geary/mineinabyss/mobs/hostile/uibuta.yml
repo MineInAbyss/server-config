@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 89
+- !<mobzy:modelengine>
+  modelId: uibuta
 - !<mobzy:attributes>
   maxHealth: 50
   movementSpeed: 0.4000

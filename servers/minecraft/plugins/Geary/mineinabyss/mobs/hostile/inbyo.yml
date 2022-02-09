@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 8
+- !<mobzy:modelengine>
+  modelId: inbyo
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.4000

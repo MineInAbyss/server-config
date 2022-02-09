@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 68
+- !<mobzy:modelengine>
+  modelId: chimokami
 - !<mobzy:attributes>
   maxHealth: 30
   movementSpeed: 0.3000

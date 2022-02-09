@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 23
+- !<mobzy:modelengine>
+  modelId: hammerbeak
 - !<mobzy:attributes>
   maxHealth: 20
   followRange: 17

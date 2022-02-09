@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 95
+- !<mobzy:modelengine>
+  modelId: hashofu
 - !<mobzy:attributes>
   maxHealth: 20
   flyingSpeed: 6

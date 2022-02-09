@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 50
+- !<mobzy:modelengine>
+  modelId: cyatoria
 - !<mobzy:attributes>
   maxHealth: 35
   followRange: 50

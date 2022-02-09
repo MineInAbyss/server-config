@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 53
+- !<mobzy:modelengine>
+  modelId: ashimite
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.5000
