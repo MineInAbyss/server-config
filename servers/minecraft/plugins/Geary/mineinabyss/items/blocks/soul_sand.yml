@@ -6,4 +6,12 @@
     - !<shapeless>
       items:
         - type: NETHERRACK
-        - type: BONE
+        - type: BONE  
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - prefab: mineinabyss:dosetori_bone
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - prefab: mineinabyss:madokajack_bone
