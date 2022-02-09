@@ -2,7 +2,7 @@
   discoverRecipes: true
   result:
     type: SOUL_SAND
-  group: "soul_sand"
+  group: "looty:soul_sand"
   recipes:
     - !<shapeless>
       items:
