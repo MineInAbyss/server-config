@@ -45,7 +45,8 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 150
-    2: !<minecraft:target.nearby_player> { }
+    2: !<mobzy:target.nearby_player>
+      range: 40
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.flying_dive_on_target>
