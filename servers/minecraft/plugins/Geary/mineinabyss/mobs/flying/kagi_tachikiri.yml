@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 107
+- !<mobzy:modelengine>
+  modelId: kagi_tachikiri
 - !<mobzy:attributes>
   maxHealth: 15
   followRange: 45

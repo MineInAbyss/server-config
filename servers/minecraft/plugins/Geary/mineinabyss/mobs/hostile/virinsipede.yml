@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 116
+- !<mobzy:modelengine>
+  modelId: virinsipede
 - !<mobzy:attributes>
   maxHealth: 20
   movementSpeed: 0.3000

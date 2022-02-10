@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 47
+- !<mobzy:modelengine>
+  modelId: dosetori
 - !<mobzy:attributes>
   maxHealth: 35
   followRange: 50

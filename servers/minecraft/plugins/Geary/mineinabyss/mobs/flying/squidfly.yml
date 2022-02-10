@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 104
+- !<mobzy:modelengine>
+  modelId: squidfly
 - !<mobzy:attributes>
   maxHealth: 15
   followRange: 20

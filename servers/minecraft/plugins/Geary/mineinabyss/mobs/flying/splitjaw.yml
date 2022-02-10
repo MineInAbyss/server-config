@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 32
+- !<mobzy:modelengine>
+  modelId: splitjaw
 - !<mobzy:attributes>
   maxHealth: 50
   followRange: 45

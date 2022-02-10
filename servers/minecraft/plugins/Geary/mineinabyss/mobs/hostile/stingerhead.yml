@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 86
+- !<mobzy:modelengine>
+  modelId: stingerhead
 - !<mobzy:attributes>
   maxHealth: 200
   movementSpeed: 0.5000

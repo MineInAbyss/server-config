@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 5
+- !<mobzy:modelengine>
+  modelId: fuwagi
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.2500
@@ -37,4 +37,3 @@
     4: !<minecraft:behavior.avoid_player>
       radius: 10
     5: !<minecraft:behavior.random_stroll_land> { }
-- !<mobzy:rideable> { }

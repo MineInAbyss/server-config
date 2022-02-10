@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:fish
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 71
+- !<mobzy:modelengine>
+  modelId: demonfish
 - !<mobzy:attributes>
   maxHealth: 20
   movementSpeed: 0.2

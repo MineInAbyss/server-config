@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 56
+- !<mobzy:modelengine>
+  modelId: makihige
 - !<mobzy:attributes>
   maxHealth: 60
   movementSpeed: 0.2000

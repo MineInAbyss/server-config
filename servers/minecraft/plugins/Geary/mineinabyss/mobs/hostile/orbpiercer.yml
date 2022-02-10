@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 17
+- !<mobzy:modelengine>
+  modelId: orbpiercer
 - !<mobzy:attributes>
   maxHealth: 100
   movementSpeed: 0.5

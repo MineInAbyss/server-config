@@ -2,9 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: WATER_CREATURE
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 14
-  small: true
+- !<mobzy:modelengine>
+  modelId: rohana
 - !<mobzy:attributes>
   maxHealth: 10
   flyingSpeed: 10.0050

@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:fish
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 29
+- !<mobzy:modelengine>
+  modelId: kazura
 - !<mobzy:attributes>
   maxHealth: 5
   followRange: 10

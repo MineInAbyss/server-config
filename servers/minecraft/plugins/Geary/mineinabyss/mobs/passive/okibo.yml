@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 38
+- !<mobzy:modelengine>
+  modelId: okibo
 - !<mobzy:attributes>
   maxHealth: 50
   movementSpeed: 0.2000

@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 44
+- !<mobzy:modelengine>
+  modelId: ottobas
 - !<mobzy:attributes>
   maxHealth: 90
   movementSpeed: 0.3000
@@ -26,7 +26,6 @@
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death
   hurt: mineinabyss:entity.ottobas.hurt
-- !<mobzy:rideable> { }
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }

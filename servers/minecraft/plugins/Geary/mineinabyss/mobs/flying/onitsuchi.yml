@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 77
+- !<mobzy:modelengine>
+  modelId: onitsuchi
 - !<mobzy:attributes>
   maxHealth: 40
   followRange: 40

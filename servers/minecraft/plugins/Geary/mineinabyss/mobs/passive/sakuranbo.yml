@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 74
+- !<mobzy:modelengine>
+  modelId: sakuranbo
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.3000

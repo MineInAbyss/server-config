@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 110
+- !<mobzy:modelengine>
+  modelId: kakatsumuri
 - !<mobzy:attributes>
   maxHealth: 5
   movementSpeed: 0.2000

@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 35
+- !<mobzy:modelengine>
+  modelId: kuongatari
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.4000
