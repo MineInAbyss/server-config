@@ -29,6 +29,11 @@
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
 - !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 40
 #  goals:
 #    1: !<mobzy:behavior.throw_items>
 #      spawn:

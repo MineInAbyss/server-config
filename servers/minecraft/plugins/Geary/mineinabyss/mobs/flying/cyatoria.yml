@@ -31,9 +31,9 @@
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 100
+      range: 200
     2: !<mobzy:target.nearby_player>
-      range: 40
+      range: 50
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.flying_dive_on_target>

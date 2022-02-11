@@ -6,7 +6,7 @@
   modelId: squidfly
 - !<mobzy:attributes>
   maxHealth: 15
-  followRange: 20
+  followRange: 30
   attackDamage: 5
   flyingSpeed: 3
   width: 0.5000
@@ -24,16 +24,16 @@
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 15
+      range: 30
     2: !<mobzy:target.nearby_player>
-      range: 40
+      range: 30
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.4000
-      minHeight: 2
-      maxHeight: 4
-      startDiveDistance: 5
-      bashVelMultiplier: 0.6000
+    2: !<mobzy:behavior.flying_dive_on_target> { }
+      #diveVelocity: -0.4000
+      #minHeight: 2
+      #maxHeight: 4
+      #startDiveDistance: 5
+      #bashVelMultiplier: 0.6000
     3: !<mobzy:behavior.fly_towards_target> { }
     4: !<mobzy:behavior.idle_fly> { }

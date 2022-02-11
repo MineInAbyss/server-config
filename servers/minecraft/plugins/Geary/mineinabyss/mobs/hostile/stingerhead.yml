@@ -9,7 +9,7 @@
   attackDamage: 40
   attackKnockback: 2
   knockbackResistance: 0.5000
-  followRange: 25
+  followRange: 50
   width: 2
   height: 3
 - !<geary:bossbar>
@@ -66,8 +66,9 @@
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
       range: 50
-    2: !<minecraft:target.nearby_player> { }
   goals:
     1: !<mobzy:behavior.throw_items>
       projectileAngularDiameter: 3

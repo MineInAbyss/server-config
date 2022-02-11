@@ -23,8 +23,6 @@
       maxAmount: 2
       dropChance: 0.4000
 - !<mobzy:pathfinders>
-  targets:
-    1: !<mobzy:target.attacker> { }
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.fly_towards_target> { }
