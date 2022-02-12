@@ -16,8 +16,9 @@ features:
   #- !<orth_banking> { }
   #- !<adventure_pvp> { }
   - !<guilds>
-    maxLength: 30
-    bannedWords:
+    guildChatPrefix: ":survival::guildchat: "
+    guildNameMaxLength: 30
+    guildNameBannedWords:
       - ([^a-zA-Z\s])
       - (n[i1]gg?[e3]r[s\$]?)
       - (.?fai*g+[oei1]*t*[sz]*)
