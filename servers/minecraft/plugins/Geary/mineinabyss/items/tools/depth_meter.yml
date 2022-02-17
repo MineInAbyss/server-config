@@ -1,3 +1,4 @@
+- !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: COMPASS
@@ -26,10 +27,3 @@
 - !<geary:event.triggers>
   - geary:event.right_clicked this -> child(showDepth)
 - !<geary:no_vanilla_interactions> {}
-#- !<geary:events>
-#  rightClick:
-#    - !<cooldown>
-#      name: Read Depth
-#      length: 1s
-#      run:
-#        - !<mineinabyss:show_depth> { }
