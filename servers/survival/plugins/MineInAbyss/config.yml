@@ -12,20 +12,20 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [SLIME]
 features:
-  #- !<chat> { }
-  #- !<orth_banking> { }
-  #- !<guilds> { }
-  #- !<adventure_pvp> { }
-  - !<hub_storage> { }
-  - !<layers> { }
-  - !<survival_pvp> { }
-  - !<anticheese> { }
-  - !<curse> { }
-  - !<keepinv> { }
-  - !<relics> { }
-  - !<exp> { }
-  - !<lock_armorstand> { }
-  #- !<enchants> { }
+  #- !<enchants>
+  #- !<orth_banking>
+  #- !<guilds>
+  - !<hub_storage>
+  - !<layers>
+  - !<survival_pvp>
+  - !<anticheese>
+  - !<curse>
+  - !<keepinv>
+  - !<relics>
+  - !<exp>
+  - !<lock_armorstand>
+  - !<patreon>
+  - !<shopkeeper>
 layers:
   - name: §x§F§F§A§8§1§2Orth
     sub: §x§F§F§C§4§2§1City of the Great Pit
