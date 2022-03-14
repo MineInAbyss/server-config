@@ -18,4 +18,5 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 50
-    2: !<minecraft:target.nearby_player> { }
+    2: !<mobzy:target.nearby_player>
+      range: 40

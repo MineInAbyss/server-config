@@ -1,14 +1,15 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 26
+- !<mobzy:modelengine>
+  modelId: silkfang
 - !<mobzy:attributes>
   maxHealth: 15
   movementSpeed: 0.3000
   attackDamage: 5
   attackKnockback: 1
   knockbackResistance: 0.0500
+  followRange: 40
   width: 2
   height: 2
 #- !<geary:children>
@@ -53,6 +54,11 @@
       maxAmount: 2
       dropChance: 0.2000
 - !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 40
   goals:
     1: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.5000

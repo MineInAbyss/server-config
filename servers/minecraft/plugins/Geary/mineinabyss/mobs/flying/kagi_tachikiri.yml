@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 107
+- !<mobzy:modelengine>
+  modelId: kagi_tachikiri
 - !<mobzy:attributes>
   maxHealth: 15
   followRange: 45
@@ -36,12 +36,13 @@
   targets:
     1: !<mobzy:target.attacker>
       range: 150
-    2: !<minecraft:target.nearby_player> { }
+    2: !<mobzy:target.nearby_player>
+      range: 45
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.0800
-      minHeight: 3
-      maxHeight: 5
+    2: !<mobzy:behavior.flying_dive_on_target> { }
+      #diveVelocity: -0.0800
+      #minHeight: 3
+      #maxHeight: 5
     3: !<mobzy:behavior.fly_towards_target> { }
     4: !<mobzy:behavior.idle_fly> { }

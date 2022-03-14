@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 113
+- !<mobzy:modelengine>
+  modelId: rinsipede
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.3000

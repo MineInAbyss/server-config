@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 17
+- !<mobzy:modelengine>
+  modelId: orbpiercer
 - !<mobzy:attributes>
   maxHealth: 100
   movementSpeed: 0.5
@@ -57,6 +57,11 @@
 - !<mobzy:increased_water_speed>
   level: 3
 - !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 40
   goals:
     1: !<mobzy:behavior.throw_items>
       minThrowRad: 6

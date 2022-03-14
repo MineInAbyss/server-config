@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:hostile
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 35
+- !<mobzy:modelengine>
+  modelId: kuongatari
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.4000
@@ -27,6 +27,11 @@
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
 - !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 10
   goals:
     1: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.6000

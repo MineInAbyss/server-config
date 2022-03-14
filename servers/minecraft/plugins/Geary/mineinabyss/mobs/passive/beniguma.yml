@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 101
+- !<mobzy:modelengine>
+  modelId: beniguma
 - !<mobzy:attributes>
   maxHealth: 30
   movementSpeed: 0.3000

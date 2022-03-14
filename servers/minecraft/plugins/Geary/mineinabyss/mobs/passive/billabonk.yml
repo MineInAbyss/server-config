@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 65
+- !<mobzy:modelengine>
+  modelId: billabonk
 - !<mobzy:attributes>
   maxHealth: 12
   movementSpeed: 0.1000

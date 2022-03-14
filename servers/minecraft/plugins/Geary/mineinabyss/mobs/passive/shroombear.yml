@@ -1,8 +1,8 @@
 - !<mobzy:type>
   baseClass: mobzy:passive
   creatureType: CREATURE
-- !<mobzy:model>
-  id: 80
+- !<mobzy:modelengine>
+  modelId: shroombear
 - !<mobzy:attributes>
   maxHealth: 25
   movementSpeed: 0.2000

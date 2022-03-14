@@ -2,8 +2,8 @@
   baseClass: mobzy:flying
   mobCategory: FLYING
   creatureType: MONSTER
-- !<mobzy:model>
-  id: 77
+- !<mobzy:modelengine>
+  modelId: onitsuchi
 - !<mobzy:attributes>
   maxHealth: 40
   followRange: 40
@@ -39,16 +39,17 @@
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 100
-    2: !<minecraft:target.nearby_player> { }
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 40
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<mobzy:behavior.flying_damage_target> { }
-    3: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: 0.5000
-      minHeight: 3
-      maxHeight: 6
-      startDiveDistance: 15
-      bashVelMultiplier: 0.5000
+    3: !<mobzy:behavior.flying_dive_on_target> { }
+      #diveVelocity: 0.5000
+      #minHeight: 3
+      #maxHeight: 6
+      #startDiveDistance: 15
+      #bashVelMultiplier: 0.5000
     4: !<mobzy:behavior.fly_towards_target> { }
     5: !<mobzy:behavior.idle_fly> { }
