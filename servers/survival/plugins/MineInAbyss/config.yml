@@ -12,9 +12,6 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [SLIME]
 features:
-  #- !<chat> { }
-  #- !<orth_banking> { }
-  #- !<adventure_pvp> { }
   - !<guilds>
     guildChatPrefix: ":survival::guildchat: "
     guildNameMaxLength: 30
@@ -23,16 +20,17 @@ features:
       - (n[i1]gg?[e3]r[s\$]?)
       - (.?fai*g+[oei1]*t*[sz]*)
       - ([nN]+[aA4@]+[sSzZ]+[iI1l])
-  - !<hub_storage> { }
-  - !<layers> { }
-  - !<survival_pvp> { }
-  - !<anticheese> { }
-  - !<curse> { }
-  - !<keepinv> { }
-  - !<relics> { }
-  - !<exp> { }
-  - !<lock_armorstand> { }
-  #- !<enchants> { }
+  - !<hub_storage>
+  - !<layers>
+  - !<survival_pvp>
+  - !<anticheese>
+  - !<curse>
+  - !<keepinv>
+  - !<relics>
+  - !<exp>
+  - !<lock_armorstand>
+  - !<patreon>
+  - !<shopkeeper>
 layers:
   - name: §x§F§F§A§8§1§2Orth
     sub: §x§F§F§C§4§2§1City of the Great Pit
