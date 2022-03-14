@@ -1,22 +1,19 @@
 - !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: PAPER
+    type: COMPASS
+    customModelData: 1
     displayName: §3Star Compass
     lore: |
-      §bUsed to find the center of the §aAbyss
+      §bPoints towards the center of the §aAbyss
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - !<shapeless>
       items:
-        G:
-          type: GLASS
-        D:
-          prefab: mineinabyss:depth_meter
-      configuration: |-
-        | G |
-        |GDG|
-        | G |
+        N:
+          prefab: mineinabyss:star_compass_needle
+        P:
+          prefab: mineinabyss:titanjaw_pearl
 - !<mineinabyss:starcompass> { }
 - !<geary:no_vanilla_interactions> {}
