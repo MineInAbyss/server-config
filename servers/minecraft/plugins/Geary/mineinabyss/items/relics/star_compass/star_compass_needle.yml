@@ -11,8 +11,6 @@
   recipes:
     - !<shapeless>
       items:
-        M:
-          prefab: mineinabyss:madokajack_scale
-        K:
-          prefab: mineinabyss:kakatsumuri_glowing_tip
+        - prefab: mineinabyss:madokajack_scale
+        - prefab: mineinabyss:kakatsumuri_glowing_tip
 - !<geary:no_vanilla_interactions> {}
