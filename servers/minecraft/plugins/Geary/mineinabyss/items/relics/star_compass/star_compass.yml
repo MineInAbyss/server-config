@@ -1,0 +1,17 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    customModelData: 125
+    displayName: §3Star Compass
+    lore: |
+      §bPoints towards the center of the §aAbyss
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:star_compass_needle
+        - prefab: mineinabyss:titanjaw_pearl
+- !<mineinabyss:starcompass> { }
+- !<geary:no_vanilla_interactions> {}

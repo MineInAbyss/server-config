@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
-    type: COMPASS
+    type: PAPER
     displayName: §3Depth Meter
-    customModelData: 2
+    customModelData: 126
     lore: |
       §bUsed to check your §aLayer §band
       §bdepth by §lright-clicking.
