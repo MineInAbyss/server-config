@@ -1,11 +1,9 @@
-- !<mobzy:type>
-  baseClass: mobzy:npc
-  creatureType: MISC
+- !<inherit>
+  from: [mineinabyss:npc]
 - !<mobzy:model>
   id: 12
   hitIdOffset: 0
   material: DIAMOND_AXE
-- !<mobzy:prevent_riding> { }
 - !<mobzy:attributes>
   width: 0.6000
   height: 0.6000

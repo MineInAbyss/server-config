@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:passive
+  baseClass: minecraft:pig
   creatureType: CREATURE
 - !<mobzy:modelengine>
   modelId: abyssal_snail
@@ -20,6 +20,10 @@
     - item:
         prefab: mineinabyss:abyssal_snail_gunk
       maxAmount: 2
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.billabonk.ambient
+  death: mineinabyss:entity.billabonk.death
+  hurt: mineinabyss:entity.billabonk.hurt
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float> { }
