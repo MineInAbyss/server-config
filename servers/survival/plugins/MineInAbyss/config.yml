@@ -12,9 +12,14 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [SLIME]
 features:
-  #- !<enchants>
-  #- !<orth_banking>
-  #- !<guilds>
+  - !<guilds>
+    guildChatPrefix: ":survival::guildchat: "
+    guildNameMaxLength: 30
+    guildNameBannedWords:
+      - ([^a-zA-Z\s])
+      - (n[i1]gg?[e3]r[s\$]?)
+      - (.?fai*g+[oei1]*t*[sz]*)
+      - ([nN]+[aA4@]+[sSzZ]+[iI1l])
   - !<hub_storage>
   - !<layers>
   - !<survival_pvp>
