@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:hostile
+  baseClass: minecraft:zombie
   creatureType: MONSTER
 - !<mobzy:modelengine>
   modelId: orbpiercer
