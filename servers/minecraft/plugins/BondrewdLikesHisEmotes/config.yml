@@ -1,6 +1,6 @@
 # Default height and ascent for emotes
-default-height: 10
-default-ascent: 9
+default-height: 224
+default-ascent: 16
 
 
 # Default namespace for the emotes, normally the path is <namespace>:<folder><emote>.png
@@ -322,5 +322,8 @@ emotes:
   - "guilds|guild_search_menu mineinabyss:ui/guilds/guild_search_menu.png"
   - "guilds|guild_name_menu mineinabyss:ui/guilds/guild_name_menu.png"
   - "guilds|guild_list_menu mineinabyss:ui/guilds/guild_list_menu.png"
+  - "guilds|guild_lookup_members1 mineinabyss:ui/guilds/guild_lookup_members1.png"
+  - "guilds|guild_lookup_members2 mineinabyss:ui/guilds/guild_lookup_members2.png"
+  - "guilds|guild_lookup_members3 mineinabyss:ui/guilds/guild_lookup_members3.png"
 
   - "playerprofile|player_profile mineinabyss:ui/player_profiles/player_profile.png"
