@@ -1,0 +1,7 @@
+- !<mobzy:type>
+  baseClass: mobzy:npc
+  creatureType: MISC
+- !<mobzy:modelengine>
+  modelId: guild_master
+- !<mobzy:prevent_riding> { }
+- !<mineinabyss:guildmaster> { }

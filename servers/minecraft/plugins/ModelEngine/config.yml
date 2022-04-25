@@ -57,25 +57,21 @@
 #     Includes Root folder.
 
 Model-Engine:
-  Active-Range: 64.0
+  Detection-Range: 64.0
   Marker-Tick: 3
   Strict-Raytrace: true
   Use-Slerp: false
   Animation:
-    Idle: idle
-    Walk: walk
-    Jump: jump
-    Death: death
+    LAND: land
+    JUMP: jump
     DEATH: death
     SPAWN: spawn
     WALK: walk
-    LAND: land
     IDLE: idle
-    JUMP: jump
   Mode:
-    Animation: A
+    Animation: B
     Movement: A
-  Detection-Range: 160.0
+  Movement-Resolution: 0.001
 Model-Generator:
   Generate-On-Start: true
   Enable-Error: true
@@ -84,6 +80,7 @@ Model-Generator:
   Compartment-Size: 1000
   Auto-Clear-Cache: true
   Create-Zip: true
+  Item-Model: leather_horse_armor
 Model-Calibrator:
   Use-Calibration: true
   Body-Rotation: 0.33
@@ -91,4 +88,3 @@ Model-Calibrator:
   Animation-Sync-B: 0.68
 Experimental-Features:
   Use-Async: false
-  See-OBB: false
