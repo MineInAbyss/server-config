@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive_flying]
+- !<geary:display_name> "§x§4§5§4§5§4§5Hashofu"
 - !<mobzy:modelengine>
   modelId: hashofu
 - !<mobzy:attributes>
@@ -29,5 +28,6 @@
       minAmount: 1
       maxAmount: 3
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<mobzy:behavior.idle_fly> { }

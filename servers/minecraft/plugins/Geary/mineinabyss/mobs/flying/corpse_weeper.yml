@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§D§1§2§B§2§6Corpse-Weeper"
 - !<mobzy:modelengine>
   modelId: corpse_weeper
 - !<mobzy:attributes>
@@ -37,6 +36,7 @@
   death: mineinabyss:entity.corpseweeper.death
   hurt: mineinabyss:entity.corpseweeper.cry
 - !<mobzy:pathfinders>
+  override: true
   targets:
     1: !<mobzy:target.attacker>
       range: 200

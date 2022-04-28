@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:pig
   creatureType: CREATURE
+- !<geary:display_name> "§x§F§F§F§F§9§9Rinsipede"
 - !<mobzy:modelengine>
   modelId: rinsipede
 - !<mobzy:attributes>
@@ -18,6 +19,7 @@
         prefab: mineinabyss:rinsipede_segments
       dropChance: 0.8000
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.avoid_player>

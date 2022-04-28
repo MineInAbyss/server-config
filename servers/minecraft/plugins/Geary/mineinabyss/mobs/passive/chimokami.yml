@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:pig
   creatureType: CREATURE
+- !<geary:display_name> "§x§D§6§3§6§2§4Chimokami"
 - !<mobzy:modelengine>
   modelId: chimokami
 - !<mobzy:attributes>
@@ -25,6 +26,7 @@
       maxAmount: 2
       dropChance: 0.7000
 - !<mobzy:pathfinders>
+  override: false
 #  targets:
 #    1: !<mobzy:target.attacker>
 #      range: 30

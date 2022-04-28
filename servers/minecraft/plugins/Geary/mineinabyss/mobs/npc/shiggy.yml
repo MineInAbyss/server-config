@@ -1,6 +1,4 @@
-- !<inherit>
+- !<geary:inherit>
   from: [mineinabyss:npc]
-- !<mobzy:model>
-  id: 13
-  hitIdOffset: 0
-  material: DIAMOND_AXE
+- !<mobzy:modelengine>
+  modelId: shiggy

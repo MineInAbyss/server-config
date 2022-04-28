@@ -1,6 +1,4 @@
-- !<inherit>
-  from: [mineinabyss:npc]
-- !<mobzy:model>
-  id: 3
-  hitIdOffset: 0
-  material: DIAMOND_AXE
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<mobzy:modelengine>
+  modelId: bondrewd

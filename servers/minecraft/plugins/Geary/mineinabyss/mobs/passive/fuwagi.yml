@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:pig
   creatureType: CREATURE
+- !<geary:display_name> "§x§E§0§E§0§E§0Fuwagi"
 - !<mobzy:modelengine>
   modelId: fuwagi
 - !<mobzy:attributes>
@@ -29,6 +30,7 @@
   death: mineinabyss:entity.fuwagi.death
   hurt: mineinabyss:entity.fuwagi.hurt
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.panic> { }

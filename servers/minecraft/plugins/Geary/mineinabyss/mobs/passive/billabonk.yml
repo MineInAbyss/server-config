@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:pig
   creatureType: WATER_CREATURE
+- !<geary:display_name> "§x§0§3§5§7§A§BBillabonk"
 - !<mobzy:modelengine>
   modelId: billabonk
 - !<mobzy:attributes>
@@ -25,6 +26,7 @@
   death: mineinabyss:entity.billabonk.death
   hurt: mineinabyss:entity.billabonk.hurt
 - !<mobzy:pathfinders>
+  override: true
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.avoid_player>

@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§1§C§4§3§9§EMadokajack"
 - !<mobzy:modelengine>
   modelId: madokajack
 - !<mobzy:attributes>
@@ -42,6 +41,7 @@
   death: mineinabyss:entity.madokajack.death
   hurt: mineinabyss:entity.madokajack.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

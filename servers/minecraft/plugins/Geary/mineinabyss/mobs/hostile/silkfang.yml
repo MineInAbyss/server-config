@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "§x§1§1§6§A§A§DSilkfang"
 - !<mobzy:modelengine>
   modelId: silkfang
 - !<mobzy:attributes>
@@ -54,6 +54,7 @@
       maxAmount: 2
       dropChance: 0.2000
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

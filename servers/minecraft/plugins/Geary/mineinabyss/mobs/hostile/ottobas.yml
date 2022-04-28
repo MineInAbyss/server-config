@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "§x§D§8§D§8§D§8Ottobas"
 - !<mobzy:modelengine>
   modelId: ottobas
 - !<mobzy:attributes>
@@ -27,6 +27,7 @@
   death: mineinabyss:entity.ottobas.death
   hurt: mineinabyss:entity.ottobas.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

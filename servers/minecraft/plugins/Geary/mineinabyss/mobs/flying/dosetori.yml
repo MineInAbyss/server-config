@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§F§F§F§8§2§1Dosetori"
 - !<mobzy:modelengine>
   modelId: dosetori
 - !<mobzy:attributes>
@@ -38,6 +37,7 @@
   death: mineinabyss:entity.dosetori.death
   hurt: mineinabyss:entity.dosetori.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

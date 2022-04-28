@@ -1,6 +1,7 @@
 - !<mobzy:type>
-  baseClass: minecraft:pig
+  baseClass: minecraft:armor_stand
   creatureType: CREATURE
+- !<geary:display_name> "§5Amakagame"
 - !<mobzy:modelengine>
   modelId: amakagame
 - !<mobzy:attributes>

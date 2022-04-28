@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§8§5§5§1§2§ESquidfly"
 - !<mobzy:modelengine>
   modelId: squidfly
 - !<mobzy:attributes>
@@ -22,6 +21,7 @@
       maxAmount: 1
       dropChance: 0.8000
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 30

@@ -17,6 +17,7 @@
       maxAmount: 3
       dropChance: 0.9000
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.avoid_player>

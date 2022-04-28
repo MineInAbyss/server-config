@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§5§C§4§7§1§DOnitsuchi"
 - !<mobzy:modelengine>
   modelId: onitsuchi
 - !<mobzy:attributes>
@@ -37,6 +36,7 @@
       maxAmount: 2
       dropChance: 0.5000
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

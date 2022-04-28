@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:pig
   creatureType: CREATURE
+- !<geary:display_name> "§x§2§5§9§7§D§9Ashimite"
 - !<mobzy:modelengine>
   modelId: ashimite
 - !<mobzy:attributes>
@@ -28,8 +29,9 @@
     - item:
         prefab: mineinabyss:ashimite_antlers
       dropChance: 0.2000
-- !<mobzy:rideable> { }
+- !<mobzy:rideable>
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<minecraft:behavior.float> { }
     2: !<minecraft:behavior.panic> { }

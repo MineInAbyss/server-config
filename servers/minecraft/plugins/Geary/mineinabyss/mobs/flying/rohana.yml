@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:flying
+  baseClass: minecraft:parrot
   mobCategory: WATER_CREATURE
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
@@ -23,6 +23,7 @@
       maxAmount: 2
       dropChance: 0.4000
 - !<mobzy:pathfinders>
+  override: false
   goals:
     1: !<mobzy:behavior.flying_damage_target> { }
     2: !<mobzy:behavior.fly_towards_target> { }

@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:fish
+  baseClass: minecraft:fish
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
   modelId: edusan
@@ -15,10 +15,3 @@
         prefab: mineinabyss:demonfish_raw
       cooked:
         prefab: mineinabyss:demonfish_cooked
-- !<mobzy:pathfinders>
-  goals:
-    1: !<minecraft:behavior.avoid_player>
-      radius: 10
-      speed: 8
-    2: !<minecraft:behavior.panic>
-      speedModifier: 2

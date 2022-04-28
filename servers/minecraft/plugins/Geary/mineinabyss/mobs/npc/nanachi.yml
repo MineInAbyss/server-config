@@ -1,6 +1,4 @@
-- !<inherit>
+- !<geary:inherit>
   from: [mineinabyss:npc]
-- !<mobzy:model>
-  id: 2
-  hitIdOffset: 0
-  material: DIAMOND_AXE
+- !<mobzy:modelengine>
+  modelId: nanachi

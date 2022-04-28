@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "§x§9§C§0§F§2§CStingerhead"
 - !<mobzy:modelengine>
   modelId: stingerhead
 - !<mobzy:attributes>
@@ -64,6 +64,7 @@
   death: mineinabyss:entity.stingerhead.death
   hurt: mineinabyss:entity.stingerhead.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

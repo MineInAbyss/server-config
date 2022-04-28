@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: minecraft:zombie
-  creatureType: MONSTER
-- !<geary:display_name> "Kuongatari"
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "§x§1§F§B§5§3§DKuongatari"
 - !<mobzy:modelengine>
   modelId: kuongatari
 - !<mobzy:attributes>

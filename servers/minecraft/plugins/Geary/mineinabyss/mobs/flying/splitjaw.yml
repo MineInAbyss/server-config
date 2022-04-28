@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "§x§9§A§1§C§A§DSplitjaw"
 - !<mobzy:modelengine>
   modelId: splitjaw
 - !<mobzy:attributes>
@@ -50,6 +49,7 @@
   death: mineinabyss:entity.splitjaw.death
   hurt: mineinabyss:entity.splitjaw.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: minecraft:zombie
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "§x§8§F§2§2§2§2Uibuta"
 - !<mobzy:modelengine>
   modelId: uibuta
 - !<mobzy:attributes>
@@ -34,6 +34,7 @@
 - !<mobzy:increased_water_speed>
   level: 3
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

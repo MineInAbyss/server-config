@@ -1,9 +1,4 @@
-- !<inherit>
+- !<geary:inherit>
   from: [mineinabyss:npc]
-- !<mobzy:model>
-  id: 12
-  hitIdOffset: 0
-  material: DIAMOND_AXE
-- !<mobzy:attributes>
-  width: 0.6000
-  height: 0.6000
+- !<mobzy:modelengine>
+  modelId: riko

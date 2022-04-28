@@ -1,9 +1,7 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
-- !<mobzy:model>
-  material: NETHERITE_HOE
-  id: 1
+- !<geary:inherit>
+  from: [mineinabyss:npc]
+- !<mobzy:modelengine>
+  modelId: deathknight
 - !<mobzy:attributes>
   maxHealth: 500000
   movementSpeed: 0

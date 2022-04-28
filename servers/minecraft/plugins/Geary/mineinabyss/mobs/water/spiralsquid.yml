@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:fish
+  baseClass: minecraft:squid
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
   modelId: spiralsquid
@@ -17,10 +17,3 @@
         prefab: mineinabyss:spiralsquid_raw
       cooked:
         prefab: mineinabyss:spiralsquid_cooked
-- !<mobzy:pathfinders>
-  goals:
-    1: !<minecraft:behavior.avoid_player>
-      radius: 10
-      speed: 8
-    2: !<minecraft:behavior.panic>
-      speedModifier: 2
