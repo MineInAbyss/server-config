@@ -15,8 +15,8 @@
     - !<geary:apply> geary:potion_effects
     - !<geary:potion_effects>
       - type: BLINDNESS
-        duration: 5s
-        amplifier: 1
+        duration: 4s
+        amplifier: 0
   blindnessCondition:
     - !<geary:condition.chance>
       percentage: 0.6

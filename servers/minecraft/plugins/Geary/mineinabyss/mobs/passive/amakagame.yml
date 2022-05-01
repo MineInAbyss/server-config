@@ -20,3 +20,5 @@
     - item:
         prefab: mineinabyss:baracocha_fruit
       maxAmount: 5
+- !<mobzy:pathfinders>
+  override: false

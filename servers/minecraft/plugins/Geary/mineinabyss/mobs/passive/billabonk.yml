@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: minecraft:pig
+  baseClass: minecraft:slime
   creatureType: WATER_CREATURE
 - !<geary:display_name> "§x§0§3§5§7§A§BBillabonk"
 - !<mobzy:modelengine>
@@ -26,12 +26,4 @@
   death: mineinabyss:entity.billabonk.death
   hurt: mineinabyss:entity.billabonk.hurt
 - !<mobzy:pathfinders>
-  override: true
-  goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.avoid_player>
-      radius: 3
-      sprintSpeed: 2.5000
-    3: !<minecraft:behavior.random_stroll_land>
-      frequency: 1
-      speedModifier: 0.6000
+  override: false

@@ -1,6 +1,5 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
 - !<geary:display_name> "§x§7§8§5§F§3§4Abyssal Snail"
 - !<mobzy:modelengine>
   modelId: abyssal_snail
@@ -28,8 +27,8 @@
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.panic>
       speedModifier: 3
-    3: !<minecraft:behavior.random_stroll_land> { }
-    4: !<minecraft:behavior.look_at_player> { }
+    3: !<minecraft:behavior.random_stroll_land>
+    4: !<minecraft:behavior.look_at_player>

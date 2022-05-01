@@ -36,7 +36,7 @@
   death: mineinabyss:entity.corpseweeper.death
   hurt: mineinabyss:entity.corpseweeper.cry
 - !<mobzy:pathfinders>
-  override: true
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

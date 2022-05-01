@@ -1,6 +1,5 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
 - !<geary:display_name> "§x§E§0§E§0§E§0Fuwagi"
 - !<mobzy:modelengine>
   modelId: fuwagi
@@ -31,11 +30,3 @@
   hurt: mineinabyss:entity.fuwagi.hurt
 - !<mobzy:pathfinders>
   override: false
-  goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.panic> { }
-    3: !<minecraft:behavior.tempt>
-      items: [ CARROT, APPLE, BEETROOT ]
-    4: !<minecraft:behavior.avoid_player>
-      radius: 10
-    5: !<minecraft:behavior.random_stroll_land> { }
