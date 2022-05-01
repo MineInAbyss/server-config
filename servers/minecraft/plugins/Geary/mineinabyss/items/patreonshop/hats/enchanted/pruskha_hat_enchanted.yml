@@ -1,9 +1,9 @@
 - !<looty:type>
   item:
     displayName: <#008211><b>Pruskha's Hat
-    lore: |
-      <#6F19D1><i>
-      <reset>:pruskha: <#22E03B><i>*Loli spilling noises*<reset> :pruskha:
+    lore:
+      - <#6F19D1><i>
+      - "<reset>:pruskha: <#22E03B><i>*Loli spilling noises*<reset> :pruskha:"
     type: STONE_HOE
     customModelData: 8
 - !<geary:hat> { }

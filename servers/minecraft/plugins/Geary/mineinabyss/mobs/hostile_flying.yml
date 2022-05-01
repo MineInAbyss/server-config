@@ -1,4 +1,5 @@
 - !<mobzy:type>
-  baseClass: minecraft:bee
+  baseClass: minecraft:phantom
   mobCategory: FLYING
   creatureType: MONSTER
+- !<geary:dont_burn_in_day>

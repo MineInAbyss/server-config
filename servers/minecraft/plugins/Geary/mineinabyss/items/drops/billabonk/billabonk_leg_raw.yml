@@ -4,7 +4,7 @@
     type: COD
     displayName: <#0357AB>Raw Billabonk Leg
     customModelData: 1
-    lore: |
-      <yellow>Dropped by <#0357AB>Billabonks <yellow>in
-      <yellow>the <green>Forest of Temptation<yellow>.
-      <#0357AB><i>Do the stanky leg
+    lore:
+      - <yellow>Dropped by <#0357AB>Billabonks <yellow>in
+      - <yellow>the <green>Forest of Temptation<yellow>.
+      - <#0357AB><i>Do the stanky leg

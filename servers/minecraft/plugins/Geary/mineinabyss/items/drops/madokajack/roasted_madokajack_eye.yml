@@ -4,9 +4,9 @@
     type: FERMENTED_SPIDER_EYE
     displayName: <#1C439E>Roasted Madokajack Eye
     customModelData: 1
-    lore: |
-      <yellow>Obtained from <#2252C2>Madokajacks <yellow>in the
-      <green>Great Fault <yellow>by killing it with fire.
-      <yellow>Might be useful in brewing potions.
-      <#369AFF><i>Why did fermenting it remove the smell?
-      <#369AFF><i>No one nose...
+    lore:
+      - <yellow>Obtained from <#2252C2>Madokajacks <yellow>in the
+      - <green>Great Fault <yellow>by killing it with fire.
+      - <yellow>Might be useful in brewing potions.
+      - <#369AFF><i>Why did fermenting it remove the smell?
+      - <#369AFF><i>No one nose...

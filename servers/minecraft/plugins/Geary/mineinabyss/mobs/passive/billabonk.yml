@@ -2,6 +2,7 @@
   baseClass: minecraft:slime
   creatureType: WATER_CREATURE
 - !<geary:display_name> "<#0357AB>Billabonk"
+- !<geary:set_slime_size> 1
 - !<mobzy:modelengine>
   modelId: billabonk
 - !<mobzy:attributes>

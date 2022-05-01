@@ -4,8 +4,8 @@
     type: PAPER
     customModelData: 124
     displayName: <dark_aqua>Star Compass Needle
-    lore: |
-      <dark_green>Used to craft a <#447881>Star Compass
+    lore:
+      - <dark_green>Used to craft a <#447881>Star Compass
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

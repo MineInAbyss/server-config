@@ -3,8 +3,8 @@
     type: POTION
     displayName: <gold>Black Flask
     customModelData: 1
-    lore: |
-      <green>placeholder..
+    lore:
+      - <green>placeholder..
 - !<geary:children>
   flask:
     - !<geary:apply> geary:potion_effects

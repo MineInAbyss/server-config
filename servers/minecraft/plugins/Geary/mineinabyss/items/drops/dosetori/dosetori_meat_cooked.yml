@@ -4,10 +4,10 @@
     type: COOKED_CHICKEN
     displayName: "<#FFF821>Cooked Dosetori Meat"
     customModelData: 2
-    lore: |
-      <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
-      <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
-      <#FFE817><i>Tastes like fried chicken?
+    lore:
+      - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
+      - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
+      - <#FFE817><i>Tastes like fried chicken?
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

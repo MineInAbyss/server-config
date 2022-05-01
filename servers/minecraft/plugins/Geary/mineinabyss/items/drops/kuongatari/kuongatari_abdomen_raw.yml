@@ -4,7 +4,7 @@
     type: KELP
     displayName: <#1FB53D>Kuongatari Abdomen
     customModelData: 1
-    lore: |
-      <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
-      <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
-      <#167D2A><i>Perhaps this could be cooked...
+    lore:
+      - <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
+      - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
+      - <#167D2A><i>Perhaps this could be cooked...

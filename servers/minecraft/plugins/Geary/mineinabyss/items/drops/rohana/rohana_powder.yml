@@ -4,9 +4,9 @@
     type: GLOWSTONE_DUST
     displayName: <#6C19BF>Rohana Powder
     customModelData: 1
-    lore: |
-      <yellow>Fine powder dropped from
-      <#AF21CC>Rohanas <yellow>deep in the <green>Forest of
-      <green>Temptation <yellow>or the <green>Goblets of Giants<yellow>.
-      <#FF1FB4><i>They glow faintly and can be
-      <#FF1FB4><i>an impromptu light source.
+    lore:
+      - <yellow>Fine powder dropped from
+      - <#AF21CC>Rohanas <yellow>deep in the <green>Forest of
+      - <green>Temptation <yellow>or the <green>Goblets of Giants<yellow>.
+      - <#FF1FB4><i>They glow faintly and can be
+      - <#FF1FB4><i>an impromptu light source.

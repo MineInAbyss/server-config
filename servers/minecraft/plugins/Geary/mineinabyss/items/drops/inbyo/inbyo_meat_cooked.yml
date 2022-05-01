@@ -4,13 +4,13 @@
     type: COOKED_BEEF
     displayName: <#3D3D3D>Cooked Inbyo Meat
     customModelData: 1
-    lore: |
-      <yellow>Obtained from slaying an <#636363>Inbyo
-      <yellow>with fire in the <green>Inverted Forest.
-      <yellow>Can also be prepared by cooking
-      <#636363>Raw Inbyo Meat<yellow>.
-      <#B5B5B5><i>Seems more edible now, though
-      <#B5B5B5><i>is still smells horrid...
+    lore:
+      - <yellow>Obtained from slaying an <#636363>Inbyo
+      - <yellow>with fire in the <green>Inverted Forest.
+      - <yellow>Can also be prepared by cooking
+      - <#636363>Raw Inbyo Meat<yellow>.
+      - <#B5B5B5><i>Seems more edible now, though
+      - <#B5B5B5><i>is still smells horrid...
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

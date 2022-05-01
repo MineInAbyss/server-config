@@ -4,8 +4,8 @@
     type: GLOW_INK_SAC
     displayName: <#7D93FF>Kakatsumuri Glowing Tip
     customModelData: 1
-    lore: |
-      <yellow>Dropped by <#7D93FF>Kakatsumuri
-      <yellow>in the <green>Great Fault<yellow>.
-      <#B8FFBA><i>The very tip of the shell, it seems
-      <#B8FFBA><i>to leak a glowing sticky substance.
+    lore:
+      - <yellow>Dropped by <#7D93FF>Kakatsumuri
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#B8FFBA><i>The very tip of the shell, it seems
+      - <#B8FFBA><i>to leak a glowing sticky substance.

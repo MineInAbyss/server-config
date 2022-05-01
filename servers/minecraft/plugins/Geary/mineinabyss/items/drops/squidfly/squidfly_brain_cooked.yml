@@ -4,11 +4,11 @@
     type: BAKED_POTATO
     displayName: <#85512E>Cooked Squidfly Brain
     customModelData: 1
-    lore: |
-      <yellow>Dropped by <#85512E>Squidflies
-      <yellow>in the <green>Great Fault<yellow>.
-      <#C27643><i>Perhaps I will become smarter
-      <#C27643><i>if I consume this brain?
+    lore:
+      - <yellow>Dropped by <#85512E>Squidflies
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#C27643><i>Perhaps I will become smarter
+      - <#C27643><i>if I consume this brain?
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

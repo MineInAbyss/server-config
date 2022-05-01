@@ -4,8 +4,8 @@
     type: BONE_MEAL
     displayName: <#FFFF99>Rinsipede Segments
     customModelData: 1
-    lore: |
-      <yellow>Dropped by <#FFFF99>Rinsipede
-      <yellow>in the <green>Great Fault<yellow>.
-      <#8F425B><i>I've heard their body makes
-      <#8F425B><i>for a great fertiliser.
+    lore:
+      - <yellow>Dropped by <#FFFF99>Rinsipede
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#8F425B><i>I've heard their body makes
+      - <#8F425B><i>for a great fertiliser.

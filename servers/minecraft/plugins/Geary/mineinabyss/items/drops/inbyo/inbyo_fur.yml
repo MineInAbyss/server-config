@@ -4,8 +4,8 @@
     type: BLACK_WOOL
     displayName: <#3D3D3D>Inbyo Fur
     customModelData: 1
-    lore: |
-      <yellow>Aquired by skinning an <#636363>Inbyo
-      <yellow>in the <green>Inverted Forest<yellow>.
-      <#B5B5B5><i>This stench is nauseating...
+    lore:
+      - <yellow>Aquired by skinning an <#636363>Inbyo
+      - <yellow>in the <green>Inverted Forest<yellow>.
+      - <#B5B5B5><i>This stench is nauseating...
 - !<geary:no_vanilla_interactions> {}

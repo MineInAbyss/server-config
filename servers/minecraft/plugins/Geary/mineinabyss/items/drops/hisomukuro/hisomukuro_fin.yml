@@ -4,11 +4,11 @@
     type: BLACKSTONE_WALL
     displayName: <#5C7BCAD>Hisomukuro Fin
     customModelData: 1
-    lore: |
-      <yellow>Can be obtained by finding
-      <yellow>a <#5C7BCAD>Hisomukuro <yellow>in the waters
-      <yellow>of the <green>Sea of Corpses<yellow>.
-      <#524D47><i>Almost drowned getting this!
-      <#524D47><i>Doesn't seem very useful..
-      <#524D47><i>Perhaps I could sell it to a vendor?
+    lore:
+      - <yellow>Can be obtained by finding
+      - <yellow>a <#5C7BCAD>Hisomukuro <yellow>in the waters
+      - <yellow>of the <green>Sea of Corpses<yellow>.
+      - <#524D47><i>Almost drowned getting this!
+      - <#524D47><i>Doesn't seem very useful..
+      - <#524D47><i>Perhaps I could sell it to a vendor?
 - !<geary:no_vanilla_interactions> {}

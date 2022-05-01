@@ -4,11 +4,11 @@
     type: COOKED_PORKCHOP
     displayName: <#D8D8D8>Cooked Ottobas Meat
     customModelData: 4
-    lore: |
-      <yellow>Due to proper preparations, the
-      <#D4D4D4>Ottobas <yellow>flesh is now edible.
-      <white><i>This should be enough food
-      <white><i>to last for daaaaayyss!!
+    lore:
+      - <yellow>Due to proper preparations, the
+      - <#D4D4D4>Ottobas <yellow>flesh is now edible.
+      - <white><i>This should be enough food
+      - <white><i>to last for daaaaayyss!!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

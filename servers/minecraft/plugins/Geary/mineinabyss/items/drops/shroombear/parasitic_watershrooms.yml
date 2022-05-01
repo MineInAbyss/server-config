@@ -3,11 +3,11 @@
   item:
     type: WARPED_FUNGUS
     displayName: <#913188>Parasitic Watershrooms
-    lore: |
-      <yellow>Most commonly found growing
-      <yellow>on <#85562D>Shroombears <yellow>in the
-      <green>Goblets of Giants<yellow>. <yellow>Sucks the
-      <yellow>nutrients from the host, releasing
-      <yellow>them back when host is near death.
-      <#AB3AA0><i>Perhaps the nutrients can be a good
-      <#AB3AA0><i>source for antidotes and recovery...
+    lore:
+      - <yellow>Most commonly found growing
+      - <yellow>on <#85562D>Shroombears <yellow>in the
+      - <green>Goblets of Giants<yellow>. <yellow>Sucks the
+      - <yellow>nutrients from the host, releasing
+      - <yellow>them back when host is near death.
+      - <#AB3AA0><i>Perhaps the nutrients can be a good
+      - <#AB3AA0><i>source for antidotes and recovery...

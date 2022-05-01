@@ -4,10 +4,10 @@
     type: COOKED_PORKCHOP
     displayName: "<#D12B26>Cooked Corpse-Weeper Meat"
     customModelData: 2
-    lore: |
-      <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers
-      <yellow>from the <green>Forest of Temptation<yellow>.
-      <red><i>This stench is awful but it tastes so good...
+    lore:
+      - <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers
+      - <yellow>from the <green>Forest of Temptation<yellow>.
+      - <red><i>This stench is awful but it tastes so good...
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

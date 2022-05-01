@@ -4,7 +4,7 @@
     type: PORKCHOP
     displayName: "<#2597D9>Raw Ashimite Meat"
     customModelData: 1
-    lore: |
-      <yellow>Can be obtained by hunting down
-      <yellow>an <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
-      <#824E21><i>Seems like a great source for food.
+    lore:
+      - <yellow>Can be obtained by hunting down
+      - <yellow>an <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#824E21><i>Seems like a great source for food.

@@ -4,8 +4,8 @@
     type: PAPER
     customModelData: 125
     displayName: <dark_aqua>Star Compass
-    lore: |
-      <aqua>Points towards the center of the <green>Abyss
+    lore:
+      - <aqua>Points towards the center of the <green>Abyss
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

@@ -4,7 +4,7 @@
     type: GUNPOWDER
     displayName: <gold>Sakuranbo Dust
     customModelData: 1
-    lore: |
-      <yellow>Explosive powder obtained from
-      <gold>Sakuranbo <yellow>in the <green>Great Fault<yellow>.
-      <gold><i>Sniffing it is probably a bad idea...
+    lore:
+      - <yellow>Explosive powder obtained from
+      - <gold>Sakuranbo <yellow>in the <green>Great Fault<yellow>.
+      - <gold><i>Sniffing it is probably a bad idea...

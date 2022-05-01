@@ -3,13 +3,13 @@
     displayName: <#C13523><b>Princess Bosom
     type: KNOWLEDGE_BOOK
     customModelData: 1
-    lore: |
-      <#D2D489>It is an egg-shaped Relic with
-      <#D2D489>patterns on its surface and has
-      <#D2D489>a soft texture that squishes when
-      <#D2D489>pressure is applied to it.
-      <#EDEEB9><i>Can be used to give you
-      <#EDEEB9><i>that extra energy boost.
+    lore:
+      - <#D2D489>It is an egg-shaped Relic with
+      - <#D2D489>patterns on its surface and has
+      - <#D2D489>a soft texture that squishes when
+      - <#D2D489>pressure is applied to it.
+      - <#EDEEB9><i>Can be used to give you
+      - <#EDEEB9><i>that extra energy boost.
 - !<geary:no_vanilla_interactions> {}
 #- !<geary:events>
 #  leftClick:

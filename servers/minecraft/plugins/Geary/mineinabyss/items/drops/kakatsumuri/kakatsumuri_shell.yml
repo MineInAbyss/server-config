@@ -4,8 +4,8 @@
     type: PRISMARINE_CRYSTALS
     displayName: <#7D93FF>Kakatsumuri Shell
     customModelData: 2
-    lore: |
-      <yellow>Dropped by <#7D93FF>Kakatsumuri
-      <yellow>in the <green>Great Fault<yellow>.
-      <#B8FFBA><i>Even after death the shell
-      <#B8FFBA><i>still keeps it bright glow.
+    lore:
+      - <yellow>Dropped by <#7D93FF>Kakatsumuri
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#B8FFBA><i>Even after death the shell
+      - <#B8FFBA><i>still keeps it bright glow.

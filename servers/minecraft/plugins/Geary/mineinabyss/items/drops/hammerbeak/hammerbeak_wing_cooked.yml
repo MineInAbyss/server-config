@@ -4,13 +4,13 @@
     type: COOKED_COD
     displayName: <#613F0C>Cooked Hammerbeak Wing
     customModelData: 2
-    lore: |
-      <yellow>Obtained by incinerating <#705723>Hammerbeaks
-      <yellow> in the <green>Edge of the Abyss <yellow>or
-      <yellow> the <green>Forest of Temptation<yellow>.
-      <yellow>Can also be acquired from cooking
-      <#705723>Raw Hammerbeak Meat<yellow>.
-      <#A9CCCA><i>This tastes delicious!
+    lore:
+      - <yellow>Obtained by incinerating <#705723>Hammerbeaks
+      - <yellow> in the <green>Edge of the Abyss <yellow>or
+      - <yellow> the <green>Forest of Temptation<yellow>.
+      - <yellow>Can also be acquired from cooking
+      - <#705723>Raw Hammerbeak Meat<yellow>.
+      - <#A9CCCA><i>This tastes delicious!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

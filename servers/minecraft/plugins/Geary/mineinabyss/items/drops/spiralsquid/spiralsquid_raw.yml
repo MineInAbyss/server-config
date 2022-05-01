@@ -4,8 +4,8 @@
     type: SALMON
     displayName: <#6CE5F5>Raw Spiralsquid
     customModelData: 3
-    lore: |
-      <yellow>Can be obtained by finding and
-      <yellow>catching a <#6CE5F5>Spiralsquid <yellow>in the
-      <yellow>waters of the <green>Sea of Corpses<yellow>.
-      <#35ADBD><i>Seems like a great source for food!
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#6CE5F5>Spiralsquid <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#35ADBD><i>Seems like a great source for food!

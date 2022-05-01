@@ -4,8 +4,8 @@
     type: ENDER_EYE
     displayName: "<#D12B26>Corpse-Weeper Eye"
     customModelData: 1
-    lore: |
-      <yellow>Rarely dropped from <#FFF34E>Corpse-Weepers
-      <yellow>in the <green>Forest of Temptation<yellow>.
-      <red><i>It feels like it's staring into your soul...
+    lore:
+      - <yellow>Rarely dropped from <#FFF34E>Corpse-Weepers
+      - <yellow>in the <green>Forest of Temptation<yellow>.
+      - <red><i>It feels like it's staring into your soul...
 - !<geary:no_vanilla_interactions> {}

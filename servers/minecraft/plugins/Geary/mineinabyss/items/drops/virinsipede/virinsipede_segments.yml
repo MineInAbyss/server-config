@@ -4,8 +4,8 @@
     type: BONE_MEAL
     displayName: <#C42D2D>Virinsipede Segments
     customModelData: 2
-    lore: |
-      <yellow>Dropped by <#C42D2D>Virinsipede
-      <yellow>in the <green>Great Fault<yellow>.
-      <#8F425B><i>I've heard their body makes
-      <#8F425B><i>for a great fertiliser.
+    lore:
+      - <yellow>Dropped by <#C42D2D>Virinsipede
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#8F425B><i>I've heard their body makes
+      - <#8F425B><i>for a great fertiliser.

@@ -4,9 +4,9 @@
     type: RED_WOOL
     displayName: "<#D63624>Chimokami Tail"
     customModelData: 1
-    lore: |
-      <yellow>A tuft of fur from the tail of the rarely
-      <yellow>seen <#D63624>Chimokami<yellow>. These foxlike beasts
-      <yellow>make their dens in the darker areas of
-      <yellow>the <green>Forest of Temptation<yellow>.
+    lore:
+      - <yellow>A tuft of fur from the tail of the rarely
+      - <yellow>seen <#D63624>Chimokami<yellow>. These foxlike beasts
+      - <yellow>make their dens in the darker areas of
+      - <yellow>the <green>Forest of Temptation<yellow>.
 - !<geary:no_vanilla_interactions>

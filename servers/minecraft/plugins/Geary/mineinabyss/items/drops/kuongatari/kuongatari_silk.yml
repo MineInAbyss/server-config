@@ -4,9 +4,9 @@
     type: STRING
     displayName: <#1FB53D>Kuongatari Silk
     customModelData: 1
-    lore: |
-      <yellow>Obtained from <#25D648>Kuongataris <yellow>in
-      <yellow>the <green>Goblets of Giants <yellow>and
-      <yellow>in the <green>Sea of Corpses<yellow>.
-      <#167D2A><i>A very thin, yet surprisingly
-      <#167D2A><i>tensile strand of silk.
+    lore:
+      - <yellow>Obtained from <#25D648>Kuongataris <yellow>in
+      - <yellow>the <green>Goblets of Giants <yellow>and
+      - <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#167D2A><i>A very thin, yet surprisingly
+      - <#167D2A><i>tensile strand of silk.

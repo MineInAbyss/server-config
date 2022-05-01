@@ -4,6 +4,6 @@
     type: FEATHER
     displayName: "<#D12B26>Corpse-Weeper Feather"
     customModelData: 1
-    lore: |
-      <yellow>Dropped from <#FFF34E>Corpse-Weepers
-      <yellow>in the <green>Forest of Temptation<yellow>.
+    lore:
+      - <yellow>Dropped from <#FFF34E>Corpse-Weepers
+      - <yellow>in the <green>Forest of Temptation<yellow>.

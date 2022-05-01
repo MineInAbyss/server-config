@@ -4,12 +4,12 @@
     type: QUARTZ
     displayName: <#A63535>Orb Piercer Spike
     customModelData: 1
-    lore: |
-      <yellow>Obtained from slaying an <#C74040>Orb Piercer
-      <yellow>and collecting the spikes it sheds.
-      <yellow>Fiercely territorial, they claim the nearby
-      <yellow>waters and <green>Flat-Creepers <yellow>in the
-      <green>Goblets of Giants<yellow> as their own.
-      <yellow>Avoid them at all cost!
-      <#D9D9D9><i>Their spines contain a very
-      <#D9D9D9><i>potent venom, so take caution!
+    lore:
+      - <yellow>Obtained from slaying an <#C74040>Orb Piercer
+      - <yellow>and collecting the spikes it sheds.
+      - <yellow>Fiercely territorial, they claim the nearby
+      - <yellow>waters and <green>Flat-Creepers <yellow>in the
+      - <green>Goblets of Giants<yellow> as their own.
+      - <yellow>Avoid them at all cost!
+      - <#D9D9D9><i>Their spines contain a very
+      - <#D9D9D9><i>potent venom, so take caution!

@@ -4,11 +4,11 @@
     type: NETHER_WART
     displayName: <#C74040>Orb Piercer Face Fragments
     customModelData: 1
-    lore: |
-      <yellow>Apparently the red orb on the
-      <yellow>face of an <#C74040>Orb Piercer <yellow>allows them
-      <yellow>to see the <green>Curse of the Abyss<yellow>.
-      <#D9D9D9><i>I wonder if I collect enough, will I
-      <#D9D9D9><i>be able to see it as well?
-      <#D9D9D9><i>Probably just wishful thinking...
+    lore:
+      - <yellow>Apparently the red orb on the
+      - <yellow>face of an <#C74040>Orb Piercer <yellow>allows them
+      - <yellow>to see the <green>Curse of the Abyss<yellow>.
+      - <#D9D9D9><i>I wonder if I collect enough, will I
+      - <#D9D9D9><i>be able to see it as well?
+      - <#D9D9D9><i>Probably just wishful thinking...
 - !<geary:no_vanilla_interactions> {}

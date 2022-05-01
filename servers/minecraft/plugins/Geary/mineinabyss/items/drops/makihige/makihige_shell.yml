@@ -4,11 +4,11 @@
     type: OBSIDIAN
     displayName: <#FF771C>Makihige Shell
     customModelData: 1
-    lore: |
-      <yellow>Can be obtained from slaughtering an
-      <yellow>innocent and friendly <#FF9721>Makihige
-      <yellow>in the <green>Goblets of Giants <yellow>or
-      <yellow>in the <green>Sea of Corpses<yellow>.
-      <#5221A6><i>It used to be the home to a
-      <#5221A6><i>Makihige. Not anymore...
+    lore:
+      - <yellow>Can be obtained from slaughtering an
+      - <yellow>innocent and friendly <#FF9721>Makihige
+      - <yellow>in the <green>Goblets of Giants <yellow>or
+      - <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#5221A6><i>It used to be the home to a
+      - <#5221A6><i>Makihige. Not anymore...
 - !<geary:no_vanilla_interactions> {}

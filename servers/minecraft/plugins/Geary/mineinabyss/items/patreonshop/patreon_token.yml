@@ -2,11 +2,11 @@
 - !<looty:type>
   item:
     displayName: <#2693FF><b>Boy's Clout Token
-    lore: |
-      <#065FC4>
-      <#065FC4>Bestowed upon those
-      <#065FC4>who fund the server
-      <#065FC4>to buy random shit
+    lore:
+      - <#065FC4>
+      - <#065FC4>Bestowed upon those
+      - <#065FC4>who fund the server
+      - <#065FC4>to buy random shit
     type: EMERALD
     customModelData: 2
 - !<geary:hat> { }

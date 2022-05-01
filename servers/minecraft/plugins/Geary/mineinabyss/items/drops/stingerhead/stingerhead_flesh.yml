@@ -3,9 +3,9 @@
   item:
     type: ROTTEN_FLESH
     displayName: <#9C0F2C>Stingerhead Flesh
-    lore: |
-      <yellow>Obtained from slaying a <#9C0F2C>Stingerhead
-      <yellow>found in nests in the <green>Sea of Corpses<yellow>.
-      <#EB1742><i>This is definetly not edible!
-      <#EB1742><i>It reeks of burned dried vomit, much
-      <#EB1742><i>like Nanachi's Netherworld Stew.
+    lore:
+      - <yellow>Obtained from slaying a <#9C0F2C>Stingerhead
+      - <yellow>found in nests in the <green>Sea of Corpses<yellow>.
+      - <#EB1742><i>This is definetly not edible!
+      - <#EB1742><i>It reeks of burned dried vomit, much
+      - <#EB1742><i>like Nanachi's Netherworld Stew.

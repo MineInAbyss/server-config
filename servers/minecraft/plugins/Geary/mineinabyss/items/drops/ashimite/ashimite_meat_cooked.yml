@@ -4,11 +4,11 @@
     type: COOKED_PORKCHOP
     displayName: "<#2597D9>Cooked Ashimite Meat"
     customModelData: 1
-    lore: |
-      <yellow>Can be obtained by hunting down an
-      <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
-      <yellow>and cooking its meat.
-      <#824E21><i>Very tasty and rich in nutrients!
+    lore:
+      - <yellow>Can be obtained by hunting down an
+      - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
+      - <yellow>and cooking its meat.
+      - <#824E21><i>Very tasty and rich in nutrients!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

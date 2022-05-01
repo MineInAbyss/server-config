@@ -4,9 +4,9 @@
     type: INK_SAC
     displayName: <#A9CCCA>Kazura Squid Ink Sac
     customModelData: 1
-    lore: |
-      <yellow>Obtainable from <white>Kazura Squids,
-      <yellow>creatures that hatch from eggs at
-      <yellow>the bottom of the <green>Great Fault
-      <yellow>and fall into the <green>Goblets of Giants<yellow>.
-      <#807E78><i>White Sac.
+    lore:
+      - <yellow>Obtainable from <white>Kazura Squids,
+      - <yellow>creatures that hatch from eggs at
+      - <yellow>the bottom of the <green>Great Fault
+      - <yellow>and fall into the <green>Goblets of Giants<yellow>.
+      - <#807E78><i>White Sac.

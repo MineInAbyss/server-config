@@ -2,10 +2,10 @@
   item:
     type: LEATHER_BOOTS
     displayName: <#623A14><b>Springboots
-    lore: |
-      <#96E54B>Is said to fill the wearer with
-      <#96E54B>a new light-hearted spirit.
-      <#C2E79E><i>May help add a leap to your step.
+    lore:
+      - <#96E54B>Is said to fill the wearer with
+      - <#96E54B>a new light-hearted spirit.
+      - <#C2E79E><i>May help add a leap to your step.
 
 #- !<geary:passive>
 #  - !<if>

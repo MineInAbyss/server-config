@@ -4,7 +4,7 @@
     type: BONE
     displayName: <#1C439E>Madokajack Bone
     customModelData: 2
-    lore: |
-      <yellow>Dropped by <#2252C2>Madokajacks
-      <yellow>in the <green>Great Fault<yellow>.
-      <#369AFF><i>Even their bones smell rancid.
+    lore:
+      - <yellow>Dropped by <#2252C2>Madokajacks
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#369AFF><i>Even their bones smell rancid.

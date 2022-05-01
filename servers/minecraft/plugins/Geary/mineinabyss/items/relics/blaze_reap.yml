@@ -3,11 +3,11 @@
     type: KNOWLEDGE_BOOK
     customModelData: 2
     displayName: <#617B94><b>Blaze Reap
-    lore: |
-      <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
-      <#C6CC8A>which causes ongoing explosions
-      <#C6CC8A>on whatever it is struck on.
-      <#948E61><i>Used to create powerful explosions.
+    lore:
+      - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
+      - <#C6CC8A>which causes ongoing explosions
+      - <#C6CC8A>on whatever it is struck on.
+      - <#948E61><i>Used to create powerful explosions.
 - !<geary:no_vanilla_interactions> { }
 #- !<geary:explosion_resistant> { }
 #- !<relation>

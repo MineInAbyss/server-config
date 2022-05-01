@@ -4,8 +4,8 @@
     type: SALMON
     displayName: <#1B91B5>Raw Hamashirama
     customModelData: 2
-    lore: |
-      <yellow>Can be obtained by finding and
-      <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
-      <yellow>waters of the <green>Sea of Corpses<yellow>.
-      <#A759FF>Seems like a great source for food!
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Seems like a great source for food!

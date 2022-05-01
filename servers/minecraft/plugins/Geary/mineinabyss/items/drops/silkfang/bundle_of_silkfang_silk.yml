@@ -4,9 +4,9 @@
     type: COBWEB
     displayName: <#116AAD>Bundle of Silkfang Silk
     customModelData: 1
-    lore: |
-      <#1580D1>Silkfangs about to make nests
-      <yellow>often drop more silk than usual.
-      <#ED4C4C><i>A large bundle of webbing
-      <#ED4C4C><i>like this has a lot of potential
-      <#ED4C4C><i>for traps.
+    lore:
+      - <#1580D1>Silkfangs about to make nests
+      - <yellow>often drop more silk than usual.
+      - <#ED4C4C><i>A large bundle of webbing
+      - <#ED4C4C><i>like this has a lot of potential
+      - <#ED4C4C><i>for traps.
