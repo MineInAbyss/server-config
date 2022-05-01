@@ -1,7 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:squid
   creatureType: WATER_CREATURE
-- !<geary:display_name> "§x§1§B§9§1§B§5Hamashirama"
+- !<geary:display_name> "<#1B91B5>Hamashirama"
 - !<mobzy:modelengine>
   modelId: hamashirama
 - !<mobzy:attributes>

@@ -2,12 +2,12 @@
 - !<looty:type>
   item:
     type: DRIED_KELP
-    displayName: §x§1§F§B§5§3§DCooked Kuongatari Abdomen
+    displayName: <#1FB53D>Cooked Kuongatari Abdomen
     customModelData: 2
     lore: |
-      §eDropped by §x§2§5§D§6§4§8Kuongataris §einfesting the
-      §aGoblets of Giants §eand the §aSea of Corpses§e.
-      §x§1§6§7§D§2§A§oTastes suprisingly tasty for such a small bug..
+      <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
+      <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
+      <#167D2A><i>Tastes suprisingly tasty for such a small bug..
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

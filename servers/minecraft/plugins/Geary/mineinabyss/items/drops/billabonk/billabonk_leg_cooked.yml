@@ -2,14 +2,14 @@
 - !<looty:type>
   item:
     type: COOKED_COD
-    displayName: §x§0§3§5§7§A§BCooked Billabonk Leg
+    displayName: "<#0357AB>Cooked Billabonk Leg"
     customModelData: 1
     lore: |
-      §eDropped by §x§0§3§5§7§A§BBillabonks §ein
-      §ethe §aForest of Temptation§e.
-      §eCan also be obtained by cooking
-      §ea §x§0§3§5§7§A§BRaw Billabonk Leg§e.
-      §x§0§3§5§7§A§B§oDo the stanky leg
+      <yellow>Dropped by <#0357AB>Billabonks <yellow>in
+      <yellow>the <green>Forest of Temptation<yellow>.
+      <yellow>Can also be obtained by cooking
+      <yellow>a <#0357AB>Raw Billabonk Leg<yellow>.
+      <#0357AB><i>Do the stanky leg
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

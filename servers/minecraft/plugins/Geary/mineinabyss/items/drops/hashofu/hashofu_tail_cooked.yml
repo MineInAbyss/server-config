@@ -2,14 +2,14 @@
 - !<looty:type>
   item:
     type: COOKED_COD
-    displayName: §x§4§5§4§5§4§5Cooked Hashofu Tail
+    displayName: <#454545>Cooked Hashofu Tail
     customModelData: 3
     lore: |
-      §eObtained by cutting of the tail
-      §eof a §x§Hashofu §ein the
-      §aGoblets of Giants §eand §aSea of Corpses§e.
-      §x§5§9§5§9§5§9§oIt is said it tastes like sushi.
-      §x§5§9§5§9§5§9§oSmell isn't so unbearable anymore!
+      <yellow>Obtained by cutting of the tail
+      <yellow>of a <#454545>Hashofu <yellow>in the
+      <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      <#595959><i>It is said it tastes like sushi.
+      <#595959><i>Smell isn't so unbearable anymore!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

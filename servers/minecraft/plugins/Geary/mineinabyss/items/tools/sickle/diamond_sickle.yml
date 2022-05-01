@@ -2,9 +2,7 @@
   from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    displayName: §3Diamond Sickle
-    #    lore: |
-    #      §bA
+    displayName: <dark_aqua>Diamond Sickle
     type: DIAMOND_HOE
     customModelData: 1
 - !<looty:recipes>

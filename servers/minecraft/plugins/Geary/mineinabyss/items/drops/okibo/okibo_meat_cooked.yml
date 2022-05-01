@@ -2,16 +2,16 @@
 - !<looty:type>
   item:
     type: COOKED_PORKCHOP
-    displayName: §x§1§0§D§E§A§7Cooked Okibo Meat
+    displayName: <#10DEA7>Cooked Okibo Meat
     customModelData: 3
     lore: |
-      §eTastes excellent when prepared well.
-      §eThere is a ritual in §aOrth§e, for whenever
-      §ea §8Black Whistle §eor §fWhite Whistle
-      §§ereturn from their plunge into the §aAbyss§e.
-      §eThe §6GuildHQ Head Chef §ebutchers
-      §ethe §x§1§1§E§8§A§FOkibo §ethey arrive on
-      §eand prepare a giant feast for all.
+      <yellow>Tastes excellent when prepared well.
+      <yellow>There is a ritual in <green>Orth<yellow>, for whenever
+      <yellow>a <dark_gray>Black Whistle <yellow>or <white>White Whistle
+      <yellow>return from their plunge into the <green>Abyss<yellow>.
+      <yellow>The <gold>GuildHQ Head Chef <yellow>butchers
+      <yellow>the <#11E8AF>Okibo <yellow>they arrive on
+      <yellow>and prepare a giant feast for all.
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

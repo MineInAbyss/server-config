@@ -2,9 +2,7 @@
   from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    displayName: §x§1§7§2§9§2§9Netherite Sickle
-    #    lore: |
-    #      §bA
+    displayName: <#172929>Netherite Sickle
     type: NETHERITE_HOE
     customModelData: 1
 - !<looty:recipes>

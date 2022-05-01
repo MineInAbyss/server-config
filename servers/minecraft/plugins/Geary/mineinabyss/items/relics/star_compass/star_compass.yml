@@ -3,9 +3,9 @@
   item:
     type: PAPER
     customModelData: 125
-    displayName: §3Star Compass
+    displayName: <dark_aqua>Star Compass
     lore: |
-      §bPoints towards the center of the §aAbyss
+      <aqua>Points towards the center of the <green>Abyss
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

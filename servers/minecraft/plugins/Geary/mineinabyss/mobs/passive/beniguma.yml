@@ -1,5 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
+- !<geary:display_name> "<red>Beniguma"
 - !<mobzy:modelengine>
   modelId: beniguma
 - !<mobzy:attributes>

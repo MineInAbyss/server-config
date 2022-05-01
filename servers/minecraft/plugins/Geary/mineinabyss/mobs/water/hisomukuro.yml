@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:axolotl
   creatureType: WATER_CREATURE
+- !<geary:display_name> "<#C8C8C8>Hisomukuro"
 - !<mobzy:modelengine>
   modelId: hisomukuro
 - !<mobzy:attributes>

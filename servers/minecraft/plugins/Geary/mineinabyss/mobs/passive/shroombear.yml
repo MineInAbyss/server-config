@@ -1,6 +1,7 @@
 - !<mobzy:type>
   baseClass: minecraft:cat
   creatureType: CREATURE
+- !<geary:display_name> "<#85562D>Shroombear"
 - !<mobzy:modelengine>
   modelId: shroombear
 - !<mobzy:attributes>

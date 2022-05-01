@@ -2,14 +2,14 @@
 - !<looty:type>
   item:
     type: COOKED_COD
-    displayName: §x§5§C§4§7§1§DCooked Onitsuchi Wing
+    displayName: <#5C471D>Cooked Onitsuchi Wing
     customModelData: 4
     lore: |
-      §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-      §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-      §eCan also be acquired from cooking
-      §x§7§0§5§7§2§3Raw Onitsuchi Meat§e.
-      §x§A§9§C§C§C§A§oThis tastes delicious!
+      <yellow>Dropped from <#5C471D>Onitsuchis <yellow>in
+      <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      <yellow>Can also be acquired from cooking
+      <#705723>Raw Onitsuchi Meat<yellow>.
+      <#A9CCCA><i>This tastes delicious!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

@@ -2,11 +2,11 @@
 - !<looty:type>
   item:
     type: PAPER
-    displayName: §3Depth Meter
+    displayName: <dark_aqua>Depth Meter
     customModelData: 126
     lore: |
-      §bUsed to check your §aLayer §band
-      §bdepth by §lright-clicking.
+      <aqua>Used to check your <green>Layer <aqua>and
+      <aqua>depth by <b>right-clicking.
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

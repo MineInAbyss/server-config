@@ -2,13 +2,13 @@
 - !<looty:type>
   item:
     type: NETHER_WART
-    displayName: §x§C§7§4§0§4§0Orb Piercer Face Fragments
+    displayName: <#C74040>Orb Piercer Face Fragments
     customModelData: 1
     lore: |
-      §eApparently the red orb on the
-      §eface of an §x§C§7§4§0§4§0Orb Piercer §eallows them
-      §eto see the §aCurse of the Abyss§e.
-      §x§D§9§D§9§D§9§oI wonder if I collect enough, will I
-      §x§D§9§D§9§D§9§obe able to see it as well?
-      §x§D§9§D§9§D§9§oProbably just wishful thinking...
+      <yellow>Apparently the red orb on the
+      <yellow>face of an <#C74040>Orb Piercer <yellow>allows them
+      <yellow>to see the <green>Curse of the Abyss<yellow>.
+      <#D9D9D9><i>I wonder if I collect enough, will I
+      <#D9D9D9><i>be able to see it as well?
+      <#D9D9D9><i>Probably just wishful thinking...
 - !<geary:no_vanilla_interactions> {}
