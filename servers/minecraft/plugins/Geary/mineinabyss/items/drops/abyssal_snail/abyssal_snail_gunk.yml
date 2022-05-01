@@ -2,10 +2,10 @@
 - !<looty:type>
   item:
     type: SLIME_BALL
-    displayName: §x§7§8§5§F§3§4Abyssal Snail Gunk
+    displayName: <reset><#785F34>Abyssal Snail Gunk
     customModelData: 1
-    lore: |
-      §eSticky slime dropped by §x§7§8§5§F§3§4Abyssal Snails
-      §ein the §aSea of Corpses§e.
-      §x§A§6§8§3§4§8§oMany delvers feel strangely compelled
-      §x§A§6§8§3§4§8§oto lick slime such as this. Well, §lDON'T!
+    lore:
+      - <yellow>Sticky slime dropped by <#785F34>Abyssal Snails
+      - <yellow>in the <green>Sea of Corpses</green>.
+      - <#A68348><i>Many delvers feel strangely compelled
+      - <#A68348><i>to lick slime such as this. Well, <b>DON'T</b>!
