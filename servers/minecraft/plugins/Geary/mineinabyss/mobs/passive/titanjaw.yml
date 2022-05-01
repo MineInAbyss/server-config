@@ -1,6 +1,5 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
 - !<geary:display_name> "§x§3§C§3§B§4§ATitanjaw"
 - !<mobzy:modelengine>
   modelId: titanjaw

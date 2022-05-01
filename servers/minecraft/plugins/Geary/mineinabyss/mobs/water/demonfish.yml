@@ -6,10 +6,8 @@
   modelId: demonfish
 - !<mobzy:attributes>
   maxHealth: 20
-  movementSpeed: 0.2
+  movementSpeed: 1.2
   followRange: 20
-  width: 1.1000
-  height: 0.3000
 - !<mobzy:death_loot>
   minExp: 15
   maxExp: 20
@@ -20,9 +18,3 @@
         prefab: mineinabyss:demonfish_cooked
 - !<mobzy:pathfinders>
   override: false
-  goals:
-    1: !<minecraft:behavior.avoid_player>
-      radius: 10
-      speed: 8
-    2: !<minecraft:behavior.panic>
-      speedModifier: 2

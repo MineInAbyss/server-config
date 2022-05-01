@@ -1,6 +1,5 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
 - !<mobzy:modelengine>
   modelId: beniguma
 - !<mobzy:attributes>
@@ -27,3 +26,5 @@
     3: !<minecraft:behavior.avoid_player>
       radius: 10
     4: !<minecraft:behavior.random_stroll_land> { }
+- !<mobzy:pathfinders>
+  override: false
