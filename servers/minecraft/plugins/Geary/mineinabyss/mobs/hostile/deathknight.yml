@@ -12,6 +12,7 @@
 - !<mobzy:death_loot>
   minExp: 1000
   maxExp: 1000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:

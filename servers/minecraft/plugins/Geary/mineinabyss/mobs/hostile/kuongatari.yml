@@ -26,6 +26,7 @@
       cooked:
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:

@@ -35,6 +35,7 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.5000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:
@@ -43,13 +44,13 @@
     2: !<mobzy:target.nearby_player>
       range: 40
   goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<mobzy:behavior.flying_damage_target> { }
-    3: !<mobzy:behavior.flying_dive_on_target> { }
+    1: !<minecraft:behavior.float>
+    2: !<mobzy:behavior.flying_damage_target>
+    3: !<mobzy:behavior.flying_dive_on_target>
       #diveVelocity: 0.5000
       #minHeight: 3
       #maxHeight: 6
       #startDiveDistance: 15
       #bashVelMultiplier: 0.5000
-    4: !<mobzy:behavior.fly_towards_target> { }
-    5: !<mobzy:behavior.idle_fly> { }
+    4: !<mobzy:behavior.fly_towards_target>
+    5: !<mobzy:behavior.idle_fly>

@@ -71,4 +71,4 @@
       projectileCountPerThrow: 10
       spawn: child(projectile)
       cooldown: 4s
-    2: !<minecraft:behavior.float> { }
+    2: !<minecraft:behavior.float>

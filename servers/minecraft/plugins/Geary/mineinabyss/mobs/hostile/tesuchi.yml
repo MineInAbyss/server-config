@@ -21,6 +21,7 @@
     - item:
         prefab: mineinabyss:tesuchi_tail
       maxAmount: 1
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:
@@ -29,4 +30,4 @@
     2: !<mobzy:target.nearby_player>
       range: 20
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>

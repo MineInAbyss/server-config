@@ -35,6 +35,7 @@
   ambient: mineinabyss:entity.corpseweeper.ambient
   death: mineinabyss:entity.corpseweeper.death
   hurt: mineinabyss:entity.corpseweeper.cry
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:
@@ -43,12 +44,12 @@
     2: !<mobzy:target.nearby_player>
       range: 50
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target> { }
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.flying_dive_on_target>
       #diveVelocity: -0.6000
       #minHeight: 3
       #maxHeight: 6
       #startDiveDistance: 15
       #bashVelMultiplier: 0.2000
-    3: !<mobzy:behavior.fly_towards_target> { }
-    4: !<mobzy:behavior.idle_fly> { }
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>

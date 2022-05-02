@@ -40,9 +40,9 @@
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
       items: [ CHORUS_FRUIT ]
     3: !<minecraft:behavior.avoid_player>
       radius: 10
-    4: !<minecraft:behavior.random_stroll_land> { }
+    4: !<minecraft:behavior.random_stroll_land>

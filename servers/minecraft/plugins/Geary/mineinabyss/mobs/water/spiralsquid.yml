@@ -15,5 +15,6 @@
         prefab: mineinabyss:spiralsquid_raw
       cooked:
         prefab: mineinabyss:spiralsquid_cooked
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false

@@ -40,6 +40,7 @@
   ambient: mineinabyss:entity.madokajack.ambient
   death: mineinabyss:entity.madokajack.death
   hurt: mineinabyss:entity.madokajack.hurt
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:
@@ -48,11 +49,11 @@
     2: !<mobzy:target.nearby_player>
       range: 30
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target> { }
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.flying_dive_on_target>
       #minHeight: 6
       #maxHeight: 10
       #startDiveDistance: 14
       #bashVelMultiplier: 0.6000
-    3: !<mobzy:behavior.fly_towards_target> { }
-    4: !<mobzy:behavior.idle_fly> { }
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>

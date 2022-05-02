@@ -29,11 +29,12 @@
         prefab: mineinabyss:ashimite_antlers
       dropChance: 0.2000
 - !<mobzy:rideable>
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.panic> { }
+    1: !<minecraft:behavior.float>
+    2: !<minecraft:behavior.panic>
     3: !<minecraft:behavior.avoid_player>
       radius: 10
-    4: !<minecraft:behavior.random_stroll_land> { }
+    4: !<minecraft:behavior.random_stroll_land>

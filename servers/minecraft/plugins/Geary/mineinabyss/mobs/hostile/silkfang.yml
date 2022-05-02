@@ -10,8 +10,6 @@
   attackKnockback: 1
   knockbackResistance: 0.0500
   followRange: 40
-  width: 2
-  height: 2
 #- !<geary:children>
 #  slow:
 #    - !<geary:apply> geary:potion_effects
@@ -53,6 +51,7 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.2000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:

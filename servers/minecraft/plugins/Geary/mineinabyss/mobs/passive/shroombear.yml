@@ -31,7 +31,7 @@
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
       items: [ WARPED_FUNGUS ]
       losesInterest: false

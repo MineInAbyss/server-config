@@ -24,12 +24,13 @@
         prefab: mineinabyss:chimokami_fang
       maxAmount: 2
       dropChance: 0.7000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
 #  targets:
 #    1: !<mobzy:target.attacker>
 #      range: 30
-#    2: !<minecraft:target.nearby_player> { }
+#    2: !<minecraft:target.nearby_player>
   goals:
 #    1: !<minecraft:behavior.melee_attack>
 #      attackSpeed: 1
@@ -39,4 +40,4 @@
       items: [ CHICKEN, COOKED_CHICKEN, RABBIT, COOKED_RABBIT ]
     2: !<minecraft:behavior.avoid_player>
       radius: 15
-    3: !<minecraft:behavior.random_stroll_land> { }
+    3: !<minecraft:behavior.random_stroll_land>

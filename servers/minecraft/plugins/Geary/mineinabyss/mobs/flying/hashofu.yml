@@ -27,7 +27,8 @@
         prefab: mineinabyss:hashofu_body
       minAmount: 1
       maxAmount: 3
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<mobzy:behavior.idle_fly> { }
+    1: !<mobzy:behavior.idle_fly>

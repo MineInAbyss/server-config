@@ -18,5 +18,6 @@
         prefab: mineinabyss:hamashirama_raw
       cooked:
         prefab: mineinabyss:hamashirama_cooked
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false

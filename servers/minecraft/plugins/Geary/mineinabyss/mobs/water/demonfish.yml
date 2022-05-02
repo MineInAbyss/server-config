@@ -16,5 +16,6 @@
         prefab: mineinabyss:demonfish_raw
       cooked:
         prefab: mineinabyss:demonfish_cooked
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false

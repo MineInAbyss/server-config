@@ -24,10 +24,11 @@
       minAmount: 2
       maxAmount: 4
       dropChance: 0.8000
-- !<mobzy:rideable> { }
+- !<mobzy:rideable>
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.random_stroll_land> { }
-    3: !<minecraft:behavior.look_at_player> { }
+    1: !<minecraft:behavior.float>
+    2: !<minecraft:behavior.random_stroll_land>
+    3: !<minecraft:behavior.look_at_player>

@@ -42,6 +42,7 @@
         prefab: mineinabyss:hamashirama_raw
       minAmount: 1
       maxAmount: 4
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

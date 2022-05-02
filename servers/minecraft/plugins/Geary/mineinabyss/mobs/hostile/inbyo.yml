@@ -46,6 +46,7 @@
       item:
         type: SNOWBALL
         customModelData: 3
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   override: false
   targets:

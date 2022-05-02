@@ -9,6 +9,8 @@
   followRange: 10
   width: 2
   height: 4
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
 - !<mobzy:death_loot>
   minExp: 1000
   maxExp: 1000
