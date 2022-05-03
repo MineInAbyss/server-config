@@ -6,10 +6,10 @@
   modelId: shroombear
 - !<mobzy:attributes>
   maxHealth: 25
-  movementSpeed: 0.2000
-  knockbackResistance: 0.0500
-  width: 0.6000
-  height: 0.6000
+  movementSpeed: 0.2
+  knockbackResistance: 0.05
+  width: 0.7
+  height: 0.7
 - !<mobzy:death_loot>
   minExp: 15
   maxExp: 20

@@ -10,8 +10,8 @@
   attackKnockback: 1
   knockbackResistance: 0.1100
   flyingSpeed: 10
-  width: 3.5000
-  height: 3
+  width: 2
+  height: 1.5
 - !<mobzy:death_loot>
   minExp: 40
   maxExp: 60
@@ -42,7 +42,6 @@
   hurt: mineinabyss:entity.madokajack.hurt
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200
@@ -55,5 +54,6 @@
       #maxHeight: 10
       #startDiveDistance: 14
       #bashVelMultiplier: 0.6000
+      bashDuration: 5
     3: !<mobzy:behavior.fly_towards_target>
     4: !<mobzy:behavior.idle_fly>

@@ -33,7 +33,6 @@
       dropChance: 0.7000
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 150

@@ -10,7 +10,7 @@
   attackKnockback: 1.5000
   knockbackResistance: 0.1000
   flyingSpeed: 10
-  width: 2.5
+  width: 2
   height: 2
 - !<mobzy:death_loot>
   minExp: 35
@@ -29,7 +29,6 @@
       dropChance: 0.7000
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

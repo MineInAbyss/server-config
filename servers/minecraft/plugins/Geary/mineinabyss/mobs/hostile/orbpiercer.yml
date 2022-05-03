@@ -1,6 +1,11 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<#C74040>Orb-Piercer"
+- !<geary:display_name> "<#C74040>Orb Piercer"
+- !<geary:bossbar>
+  title: "<#C74040>Orb Piercer"
+  color: RED
+  style: NOTCHED_10
+  range: 100
 - !<mobzy:modelengine>
   modelId: orbpiercer
 - !<mobzy:attributes>
@@ -71,4 +76,4 @@
       projectileCountPerThrow: 10
       spawn: child(projectile)
       cooldown: 4s
-    2: !<minecraft:behavior.float>
+    3: !<minecraft:behavior.float>

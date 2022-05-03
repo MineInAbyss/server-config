@@ -10,6 +10,8 @@
   attackKnockback: 1
   knockbackResistance: 0.0500
   followRange: 40
+  width: 1.3
+  height: 1.3
 #- !<geary:children>
 #  slow:
 #    - !<geary:apply> geary:potion_effects

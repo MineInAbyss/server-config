@@ -49,7 +49,6 @@
   death: mineinabyss:entity.splitjaw.death
   hurt: mineinabyss:entity.splitjaw.hurt
 - !<mobzy:pathfinders>
-  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

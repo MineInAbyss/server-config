@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: minecraft:parrot
+  baseClass: minecraft:ghast
   mobCategory: WATER_CREATURE
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
@@ -24,7 +24,6 @@
       dropChance: 0.4000
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.fly_towards_target>

@@ -29,6 +29,5 @@
       maxAmount: 3
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
   goals:
     1: !<mobzy:behavior.idle_fly>

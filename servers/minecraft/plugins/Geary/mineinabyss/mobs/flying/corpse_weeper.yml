@@ -10,8 +10,8 @@
   attackKnockback: 1
   knockbackResistance: 0.1300
   flyingSpeed: 10
-  width: 3
-  height: 3
+  width: 2
+  height: 2
 - !<mobzy:death_loot>
   minExp: 70
   maxExp: 90
@@ -37,7 +37,7 @@
   hurt: mineinabyss:entity.corpseweeper.cry
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
+  override: true
   targets:
     1: !<mobzy:target.attacker>
       range: 200
@@ -46,10 +46,11 @@
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.flying_dive_on_target>
-      #diveVelocity: -0.6000
-      #minHeight: 3
-      #maxHeight: 6
-      #startDiveDistance: 15
-      #bashVelMultiplier: 0.2000
+      diveVelocity: -0.3000
+      minHeight: 3
+      maxHeight: 6
+      startDiveDistance: 15
+      bashVelMultiplier: 0.5000
+      bashDuration: 20
     3: !<mobzy:behavior.fly_towards_target>
     4: !<mobzy:behavior.idle_fly>
