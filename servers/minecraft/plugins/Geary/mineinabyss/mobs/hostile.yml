@@ -1,3 +1,4 @@
 - !<mobzy:type>
-  baseClass: minecraft:husk
+  baseClass: minecraft:zombie
   creatureType: MONSTER
+- !<geary:dont_burn_in_day>
