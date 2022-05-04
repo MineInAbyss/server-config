@@ -28,5 +28,5 @@
 #      run:
 #        - !<on.parent>
 #          - !<geary:toggle_storm>
-#            at: !<player.location> { }
-- !<geary:no_vanilla_interactions> {}
+#            at: !<player.location>
+- !<geary:no_vanilla_interactions>

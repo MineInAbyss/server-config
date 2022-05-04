@@ -1,4 +1,4 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: PAPER
@@ -13,5 +13,5 @@
       items:
         - prefab: mineinabyss:star_compass_needle
         - prefab: mineinabyss:titanjaw_pearl
-- !<mineinabyss:starcompass> { }
-- !<geary:no_vanilla_interactions> {}
+- !<mineinabyss:starcompass>
+- !<geary:no_vanilla_interactions>

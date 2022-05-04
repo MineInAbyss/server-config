@@ -1,4 +1,4 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: PAPER
@@ -13,4 +13,4 @@
       items:
         - prefab: mineinabyss:madokajack_scales
         - prefab: mineinabyss:kakatsumuri_glowing_tip
-- !<geary:no_vanilla_interactions> {}
+- !<geary:no_vanilla_interactions>

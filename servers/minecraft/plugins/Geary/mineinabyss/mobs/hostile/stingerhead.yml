@@ -32,8 +32,8 @@
   projectile:
     - !<geary:event.triggers>
       - geary:event.touched -> parent.child(poison)
-    - !<minecraft:entity_type>
-      type: SNOWBALL
+    - !<mobzy:type>
+      baseClass: minecraft:snowball
     - !<mobzy:item_model>
       item:
         type: SNOWBALL

@@ -8,8 +8,8 @@
       - <#C6CC8A>which causes ongoing explosions
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
-- !<geary:no_vanilla_interactions> { }
-#- !<geary:explosion_resistant> { }
+- !<geary:no_vanilla_interactions>
+#- !<geary:explosion_resistant>
 #- !<relation>
 #  data: !<geary:cooldown>
 #    name: <#617B94><b>Explosion
@@ -22,7 +22,7 @@
 #  amount: 3
 #- !<geary:events>
 #  geary:item_left_click:
-#    - - !<geary:explode> { }
+#    - - !<geary:explode>
 #      - !<geary:find_location>
 #        at: !<player.target_block>
 #          allowAir: true

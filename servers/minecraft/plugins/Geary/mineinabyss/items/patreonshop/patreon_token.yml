@@ -1,4 +1,4 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     displayName: <#2693FF><b>Boy's Clout Token
@@ -9,5 +9,5 @@
       - <#065FC4>to buy random shit
     type: EMERALD
     customModelData: 2
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

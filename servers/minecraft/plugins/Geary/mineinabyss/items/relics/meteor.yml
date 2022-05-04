@@ -15,6 +15,6 @@
 #                - !<geary:explode>
 #                  power: 2
 #                  breakBlocks: true
-#                  at: !<entity.location> {}
+#                  at: !<entity.location>
 #            at: !<player.target_block>
 #              maxDist: 60
