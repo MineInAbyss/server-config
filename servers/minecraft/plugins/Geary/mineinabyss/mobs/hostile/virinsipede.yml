@@ -31,5 +31,11 @@
     2: !<mobzy:target.nearby_player>
       range: 20
   goals:
-    1: !<minecraft:behavior.leap_at_target>
+    1: !<minecraft:behavior.melee_attack>
+      seeThroughWalls: true
+    2: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.2000
+    4: !<minecraft:behavior.random_stroll_land>
+    8: !<minecraft:behavior.look_at_player>
+    9: !<minecraft:behavior.random_look_around>
+    10: !<minecraft:behavior.float>
