@@ -26,7 +26,6 @@
   death: minecraft:entity.axolotl.death
   hurt: minecraft:entity.axolotl.hurt
 - !<mobzy:pathfinders>
-  override: false
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.panic>
