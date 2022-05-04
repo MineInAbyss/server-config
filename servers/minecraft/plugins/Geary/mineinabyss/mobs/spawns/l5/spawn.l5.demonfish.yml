@@ -12,3 +12,6 @@
 - !<geary:check.block_type>
   allow:
     - WATER
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]
+

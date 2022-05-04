@@ -14,3 +14,5 @@
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]

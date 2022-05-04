@@ -15,3 +15,6 @@
   allow:
     - SAND
     - RED_SAND
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]
+
