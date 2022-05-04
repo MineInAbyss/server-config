@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:passive
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#FFFF99>Rinsipede"
 - !<mobzy:modelengine>
   modelId: rinsipede
 - !<mobzy:attributes>
@@ -17,11 +17,13 @@
     - item:
         prefab: mineinabyss:rinsipede_segments
       dropChance: 0.8000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.avoid_player>
       radius: 15
     3: !<minecraft:behavior.panic>
       speedModifier: 4
-    4: !<minecraft:behavior.random_stroll_land> { }
+    4: !<minecraft:behavior.random_stroll_land>

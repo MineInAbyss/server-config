@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COBWEB
-    displayName: §x§1§1§6§A§A§DBundle of Silkfang Silk
+    displayName: <#116AAD>Bundle of Silkfang Silk
     customModelData: 1
-    lore: |
-      §x§1§5§8§0§D§1Silkfangs about to make nests
-      §eoften drop more silk than usual.
-      §x§E§D§4§C§4§C§oA large bundle of webbing
-      §x§E§D§4§C§4§C§olike this has a lot of potential
-      §x§E§D§4§C§4§C§ofor traps.
+    lore:
+      - <#1580D1>Silkfangs about to make nests
+      - <yellow>often drop more silk than usual.
+      - <#ED4C4C><i>A large bundle of webbing
+      - <#ED4C4C><i>like this has a lot of potential
+      - <#ED4C4C><i>for traps.

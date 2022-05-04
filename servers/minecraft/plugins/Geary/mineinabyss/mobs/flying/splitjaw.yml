@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "<#9A1CAD>Splitjaw"
 - !<mobzy:modelengine>
   modelId: splitjaw
 - !<mobzy:attributes>
@@ -56,10 +55,10 @@
     2: !<mobzy:target.nearby_player>
       range: 50
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
+    1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.flying_dive_on_target>
       diveVelocity: -0.0800
       minHeight: 3
       maxHeight: 5
-    3: !<mobzy:behavior.fly_towards_target> { }
-    4: !<mobzy:behavior.idle_fly> { }
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>

@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#9C0F2C>Stingerhead"
 - !<mobzy:modelengine>
   modelId: stingerhead
 - !<mobzy:attributes>
@@ -32,8 +32,8 @@
   projectile:
     - !<geary:event.triggers>
       - geary:event.touched -> parent.child(poison)
-    - !<minecraft:entity_type>
-      type: SNOWBALL
+    - !<mobzy:type>
+      baseClass: minecraft:snowball
     - !<mobzy:item_model>
       item:
         type: SNOWBALL
@@ -64,6 +64,7 @@
   death: mineinabyss:entity.stingerhead.death
   hurt: mineinabyss:entity.stingerhead.hurt
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

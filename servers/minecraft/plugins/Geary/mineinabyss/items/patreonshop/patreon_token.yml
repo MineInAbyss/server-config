@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    displayName: §x§2§6§9§3§F§F§lBoy's Clout Token
-    lore: |
-      §x§0§6§5§F§C§4
-      §x§0§6§5§F§C§4Bestowed upon those
-      §x§0§6§5§F§C§4who fund the server
-      §x§0§6§5§F§C§4to buy random shit
+    displayName: <#2693FF><b>Boy's Clout Token
+    lore:
+      - <#065FC4>
+      - <#065FC4>Bestowed upon those
+      - <#065FC4>who fund the server
+      - <#065FC4>to buy random shit
     type: EMERALD
     customModelData: 2
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

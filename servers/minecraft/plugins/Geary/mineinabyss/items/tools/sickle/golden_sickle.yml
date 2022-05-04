@@ -2,9 +2,7 @@
   from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    displayName: §6Golden Sickle
-    #    lore: |
-    #      §bA
+    displayName: <gold>Golden Sickle
     type: GOLDEN_HOE
     customModelData: 1
 - !<looty:recipes>

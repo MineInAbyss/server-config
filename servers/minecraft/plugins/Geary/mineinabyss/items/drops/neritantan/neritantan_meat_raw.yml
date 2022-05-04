@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: MUTTON
-    displayName: §x§B§D§B§D§B§DRaw Neritantan Meat
+    displayName: <#BDBDBD>Raw Neritantan Meat
     customModelData: 1
-    lore: |
-      §eDropped from the small and flexible §x§E§B§E§B§E§BNeritantans
-      §efound §edeep in the caverns of the §aGreat Fault§e.
-      §f§oVery tasty as they mostly eat §x§B§8§2§D§E§B§oBaracocha fruit.
-      §f§oDo not get in between a Neritantan and a Baracocha fruit!
+    lore:
+      - <yellow>Dropped from the small and flexible <#EBEBEB>Neritantans
+      - <yellow>found <yellow>deep in the caverns of the <green>Great Fault<yellow>.
+      - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
+      - <white><i>Do not get in between a Neritantan and a Baracocha fruit!

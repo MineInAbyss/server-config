@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: CHICKEN
-    displayName: §x§3§D§D§F§F§FRaw Cyatoria Drumstick
+    displayName: "<#3DDFFF>Raw Cyatoria Drumstick"
     customModelData: 1
-    lore: |
-      §eDropped by §x§3§D§D§F§F§FCyatoria §eat
-      §ethe §aEdge of the Abyss §eand in §aForest of Temptation§e.
-      §eSaid to be the offspring of a
-      §erare creature originating from
-      §ethe §x§4§0§4§0§4§07th Layer, The Final Maelstrom§e.
-      §x§5§4§F§F§A§4§oI assure you, it tastes just like chicken...
+    lore:
+      - <yellow>Dropped by <#3DDFFF>Cyatoria <yellow>at
+      - <yellow>the <green>Edge of the Abyss <yellow>and in <green>Forest of Temptation<yellow>.
+      - <yellow>Said to be the offspring of a
+      - <yellow>rare creature originating from
+      - <yellow>the <#404040>7th Layer, The Final Maelstrom<yellow>.
+      - <#54FFA4><i>I assure you, it tastes just like chicken...

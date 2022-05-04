@@ -1,5 +1,5 @@
 - !<mobzy:type>
-  baseClass: mobzy:flying
+  baseClass: minecraft:ghast
   mobCategory: WATER_CREATURE
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
@@ -22,10 +22,11 @@
         prefab: mineinabyss:rohana_tail
       maxAmount: 2
       dropChance: 0.4000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.fly_towards_target> { }
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.fly_towards_target>
     3: !<mobzy:behavior.idle_fly_above_ground>
       maxHeight: 4
       radius: 5

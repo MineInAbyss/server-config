@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: POLISHED_BLACKSTONE_BUTTON
-    displayName: §x§4§5§4§5§4§5Hashofu Body
+    displayName: <#454545>Hashofu Body
     customModelData: 1
-    lore: |
-      §eObtained by slaughtering a §x§6§1§6§1§6§1Hashofu §ein
-      §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-      §x§5§9§5§9§5§9§oSeems useless by itself.
-      §x§5§9§5§9§5§9§oPerhaps I should look for a vendor?
-- !<geary:no_vanilla_interactions> {}
+    lore:
+      - <yellow>Obtained by slaughtering a <#616161>Hashofu <yellow>in
+      - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      - <#595959><i>Seems useless by itself.
+      - <#595959><i>Perhaps I should look for a vendor?
+- !<geary:no_vanilla_interactions>

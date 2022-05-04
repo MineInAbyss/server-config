@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#C42D2D>Virinsipede"
 - !<mobzy:modelengine>
   modelId: virinsipede
 - !<mobzy:attributes>
@@ -22,7 +22,9 @@
     - item:
         prefab: mineinabyss:virinsipede_antlers
       dropChance: 0.3000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#1FB53D>Kuongatari"
 - !<mobzy:modelengine>
   modelId: kuongatari
 - !<mobzy:attributes>
@@ -26,7 +26,9 @@
       cooked:
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200

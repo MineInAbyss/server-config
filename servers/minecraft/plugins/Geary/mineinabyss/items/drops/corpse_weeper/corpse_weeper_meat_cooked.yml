@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COOKED_PORKCHOP
-    displayName: §x§D§1§2§B§2§6Cooked Corpse-Weeper Meat
+    displayName: "<#D12B26>Cooked Corpse-Weeper Meat"
     customModelData: 2
-    lore: |
-      §eThe incinerated flesh of §x§F§F§3§4§2§ECorpse-Weepers
-      §efrom the §aForest of Temptation§e.
-      §c§oThis stench is awful but it tastes so good...
+    lore:
+      - <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers
+      - <yellow>from the <green>Forest of Temptation<yellow>.
+      - <red><i>This stench is awful but it tastes so good...
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

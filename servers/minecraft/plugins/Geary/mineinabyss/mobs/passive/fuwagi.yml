@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:passive
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#E0E0E0>Fuwagi"
 - !<mobzy:modelengine>
   modelId: fuwagi
 - !<mobzy:attributes>
@@ -29,11 +29,4 @@
   death: mineinabyss:entity.fuwagi.death
   hurt: mineinabyss:entity.fuwagi.hurt
 - !<mobzy:pathfinders>
-  goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.panic> { }
-    3: !<minecraft:behavior.tempt>
-      items: [ CARROT, APPLE, BEETROOT ]
-    4: !<minecraft:behavior.avoid_player>
-      radius: 10
-    5: !<minecraft:behavior.random_stroll_land> { }
+  override: false

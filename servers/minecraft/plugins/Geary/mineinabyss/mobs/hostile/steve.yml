@@ -1,8 +1,8 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
-- !<mobzy:model>
-  id: 59
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#2597D9>Steve"
+- !<mobzy:modelengine>
+  modelId: steve
 - !<mobzy:attributes>
   maxHealth: 30
   movementSpeed: 0.3000

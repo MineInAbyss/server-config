@@ -1,10 +1,10 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: FLINT
-    displayName: §x§2§5§9§7§D§9Ashimite Hoof
+    displayName: "<#2597D9>Ashimite Hoof"
     customModelData: 3
-    lore: |
-      §eCan be obtained by hunting down an
-      §x§2§5§9§7§D§9Ashimite §ein the §aSea of Corpses§e.
-      §x§8§2§4§E§2§1§oExcellent for starting fires!
+    lore:
+      - <yellow>Can be obtained by hunting down an
+      - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#824E21><i>Excellent for starting fires!

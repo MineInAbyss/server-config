@@ -1,8 +1,4 @@
-- !<mobzy:type>
-  baseClass: mobzy:npc
-  creatureType: MISC
-- !<mobzy:model>
-  id: 17
-  hitIdOffset: 0
-  material: DIAMOND_AXE
-- !<mobzy:prevent_riding> { }
+- !<geary:inherit>
+  from: [mineinabyss:npc]
+- !<mobzy:modelengine>
+  modelId: faputa

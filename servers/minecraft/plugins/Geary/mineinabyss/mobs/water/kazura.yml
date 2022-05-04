@@ -1,15 +1,13 @@
 - !<mobzy:type>
-  baseClass: mobzy:fish
+  baseClass: minecraft:squid
   creatureType: WATER_CREATURE
+- !<geary:display_name> "<#A9CCCA>Kazura"
 - !<mobzy:modelengine>
   modelId: kazura
 - !<mobzy:attributes>
   maxHealth: 5
   followRange: 10
-  movementSpeed: 0.1
-  attackDamage: 0
-  width: 1
-  height: 1
+  movementSpeed: 0.2
 - !<mobzy:death_loot>
   minExp: 10
   maxExp: 15
@@ -19,3 +17,6 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.8000
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  override: false

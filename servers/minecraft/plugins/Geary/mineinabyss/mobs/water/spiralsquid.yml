@@ -1,14 +1,12 @@
 - !<mobzy:type>
-  baseClass: mobzy:fish
+  baseClass: minecraft:squid
   creatureType: WATER_CREATURE
 - !<mobzy:modelengine>
   modelId: spiralsquid
 - !<mobzy:attributes>
   maxHealth: 20
-  movementSpeed: 0.2
+  movementSpeed: 0.6
   followRange: 20
-  width: 1.1000
-  height: 0.3000
 - !<mobzy:death_loot>
   minExp: 15
   maxExp: 20
@@ -17,10 +15,6 @@
         prefab: mineinabyss:spiralsquid_raw
       cooked:
         prefab: mineinabyss:spiralsquid_cooked
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  goals:
-    1: !<minecraft:behavior.avoid_player>
-      radius: 10
-      speed: 8
-    2: !<minecraft:behavior.panic>
-      speedModifier: 2
+  override: false

@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "<#D12B26>Corpse-Weeper"
 - !<mobzy:modelengine>
   modelId: corpse_weeper
 - !<mobzy:attributes>
@@ -11,8 +10,8 @@
   attackKnockback: 1
   knockbackResistance: 0.1300
   flyingSpeed: 10
-  width: 3
-  height: 3
+  width: 2
+  height: 2
 - !<mobzy:death_loot>
   minExp: 70
   maxExp: 90
@@ -36,19 +35,22 @@
   ambient: mineinabyss:entity.corpseweeper.ambient
   death: mineinabyss:entity.corpseweeper.death
   hurt: mineinabyss:entity.corpseweeper.cry
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: true
   targets:
     1: !<mobzy:target.attacker>
       range: 200
     2: !<mobzy:target.nearby_player>
       range: 50
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target> { }
-      #diveVelocity: -0.6000
-      #minHeight: 3
-      #maxHeight: 6
-      #startDiveDistance: 15
-      #bashVelMultiplier: 0.2000
-    3: !<mobzy:behavior.fly_towards_target> { }
-    4: !<mobzy:behavior.idle_fly> { }
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.flying_dive_on_target>
+      diveVelocity: -0.3000
+      minHeight: 3
+      maxHeight: 6
+      startDiveDistance: 15
+      bashVelMultiplier: 0.5000
+      bashDuration: 20
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>

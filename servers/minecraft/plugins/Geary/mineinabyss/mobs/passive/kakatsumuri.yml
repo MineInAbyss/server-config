@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:passive
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#7D93FF>Kakatsumuri"
 - !<mobzy:modelengine>
   modelId: kakatsumuri
 - !<mobzy:attributes>
@@ -22,9 +22,11 @@
         prefab: mineinabyss:kakatsumuri_glowing_tip
       maxAmount: 1
       dropChance: 0.9000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
       items: [ PRISMARINE_SHARD ]
       losesInterest: false
@@ -32,4 +34,4 @@
       radius: 15
     4: !<minecraft:behavior.panic>
       speedModifier: 4
-    5: !<minecraft:behavior.random_stroll_land> { }
+    5: !<minecraft:behavior.random_stroll_land>

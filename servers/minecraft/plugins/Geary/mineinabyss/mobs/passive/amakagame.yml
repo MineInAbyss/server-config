@@ -1,6 +1,7 @@
 - !<mobzy:type>
-  baseClass: mobzy:passive
+  baseClass: minecraft:armor_stand
   creatureType: CREATURE
+- !<geary:display_name> "<dark_purple>Amakagame"
 - !<mobzy:modelengine>
   modelId: amakagame
 - !<mobzy:attributes>
@@ -19,3 +20,6 @@
     - item:
         prefab: mineinabyss:baracocha_fruit
       maxAmount: 5
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  override: false

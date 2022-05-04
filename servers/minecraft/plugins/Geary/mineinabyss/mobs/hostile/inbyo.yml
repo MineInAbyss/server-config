@@ -1,6 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [ mineinabyss:hostile ]
+- !<geary:display_name> "<#3D3D3D>Inbyo"
 - !<mobzy:modelengine>
   modelId: inbyo
 - !<mobzy:attributes>
@@ -28,28 +28,35 @@
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
+- !<geary:children>
+  poison:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:potion_effects>
+      - type: POISON
+        duration: 1s
+        amplifier: 1
+      - type: HARM
+        amplifier: 1
+  projectile:
+    - !<geary:event.triggers>
+      - geary:event.touched -> parent.child(poison)
+    - !<mobzy:type>
+      baseClass: minecraft:snowball
+    - !<mobzy:item_model>
+      item:
+        type: SNOWBALL
+        customModelData: 3
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 200
     2: !<mobzy:target.nearby_player>
       range: 40
-#  goals:
-#    1: !<mobzy:behavior.throw_items>
-#      spawn:
-#        - !<minecraft:entity_type>
-#          type: SNOWBALL
-#        - !<mobzy:item_model>
-#          item:
-#            type: SNOWBALL
-#            customModelData: 3
-#        - !<geary:events>
-#          projectileHit:
-#            - !<on.target>
-#              - !<geary:deal_damage>
-#                damage: 0.5
-#              - !<geary:apply_potion_effects>
-#                effects:
-#                  - type: POISON
-#                    duration: 1s
-#                    amplifier: 1
+  goals:
+    1: !<mobzy:behavior.throw_items>
+      spawn: child(projectile)
+      cooldown: 6s
+      projectileAngularDiameter: 2
+

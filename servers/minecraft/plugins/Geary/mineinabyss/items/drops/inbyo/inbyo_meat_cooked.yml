@@ -1,16 +1,16 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COOKED_BEEF
-    displayName: §x§3§D§3§D§3§DCooked Inbyo Meat
+    displayName: <#3D3D3D>Cooked Inbyo Meat
     customModelData: 1
-    lore: |
-      §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-      §ewith fire in the §aInverted Forest.
-      §eCan also be prepared by cooking
-      §x§6§3§6§3§6§3Raw Inbyo Meat§e.
-      §x§B§5§B§5§B§5§0Seems more edible now, though
-      §x§B§5§B§5§B§5§ois still smells horrid...
+    lore:
+      - <yellow>Obtained from slaying an <#636363>Inbyo
+      - <yellow>with fire in the <green>Inverted Forest.
+      - <yellow>Can also be prepared by cooking
+      - <#636363>Raw Inbyo Meat<yellow>.
+      - <#B5B5B5><i>Seems more edible now, though
+      - <#B5B5B5><i>is still smells horrid...
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

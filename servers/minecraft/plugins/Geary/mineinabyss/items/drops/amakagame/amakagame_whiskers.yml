@@ -1,9 +1,9 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: CRIMSON_ROOTS
-    displayName: §5Amakagame Whiskers
+    displayName: "<dark_purple>Amakagame Whiskers"
     customModelData: 1
-    lore: |
-      §dAn §5Amakagame §dis almost all stomach,
-      §dso they have few salvageable body parts
+    lore:
+      - <light_purple>An <dark_purple>Amakagame <light_purple>is almost all stomach,
+      - <light_purple>so they have few salvageable body parts

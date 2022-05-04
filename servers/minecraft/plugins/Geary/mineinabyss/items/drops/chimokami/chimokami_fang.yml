@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: FLINT
-    displayName: §x§D§6§3§6§2§4Chimokami Fang
+    displayName: "<#D63624>Chimokami Fang"
     customModelData: 2
-    lore: |
-      §eA fang dropped from the rare
-      §x§D§6§3§6§2§4Chimokami §ein the §aForest of Temptation§e.
-      §x§A§8§2§A§1§CIt is said that these beasts house a
-      §x§A§8§2§A§1§Cspiritual fire within. This has been
-      §x§A§8§2§A§1§Cproven to be a hoax, however, their
-      §x§A§8§2§A§1§Cteeth are excellent firestarters.
+    lore:
+      - <yellow>A fang dropped from the rare
+      - <#D63624>Chimokami <yellow>in the <green>Forest of Temptation<yellow>.
+      - <#A82A1C>It is said that these beasts house a
+      - <#A82A1C>spiritual fire within. This has been
+      - <#A82A1C>proven to be a hoax, however, their
+      - <#A82A1C>teeth are excellent firestarters.

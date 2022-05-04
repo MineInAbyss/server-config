@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COD
-    displayName: §x§6§1§3§F§0§CRaw Hammerbeak Wing
+    displayName: <#613F0C>Raw Hammerbeak Wing
     customModelData: 2
-    lore: |
-      §eDropped by §x§7§0§5§7§2§3Hammerbeaks §ein
-      §ethe §aEdge of the Abyss §eand
-      §ethe §aForest of Temptation§e.
-      §x§A§9§C§C§C§A§oThis meat seems delicious
-      §x§A§9§C§C§C§A§oif cooked properly!
+    lore:
+      - <yellow>Dropped by <#705723>Hammerbeaks <yellow>in
+      - <yellow>the <green>Edge of the Abyss <yellow>and
+      - <yellow>the <green>Forest of Temptation<yellow>.
+      - <#A9CCCA><i>This meat seems delicious
+      - <#A9CCCA><i>if cooked properly!

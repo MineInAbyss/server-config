@@ -1,22 +1,25 @@
 - !<mobzy:type>
-  baseClass: mobzy:hostile_water
+  baseClass: minecraft:axolotl
   creatureType: WATER_CREATURE
+- !<geary:display_name> "<#C8C8C8>Hisomukuro"
 - !<mobzy:modelengine>
   modelId: hisomukuro
 - !<mobzy:attributes>
   maxHealth: 50
-  movementSpeed: 1.2
+  movementSpeed: 0.6
   attackDamage: 35
   attackKnockback: 2
   knockbackResistance: 0.8000
   followRange: 40
+  width: 2
+  height: 2
 - !<geary:children>
   blindness:
     - !<geary:apply> geary:potion_effects
     - !<geary:potion_effects>
       - type: BLINDNESS
-        duration: 5s
-        amplifier: 1
+        duration: 4s
+        amplifier: 0
   blindnessCondition:
     - !<geary:condition.chance>
       percentage: 0.6
@@ -41,6 +44,7 @@
         prefab: mineinabyss:hamashirama_raw
       minAmount: 1
       maxAmount: 4
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>

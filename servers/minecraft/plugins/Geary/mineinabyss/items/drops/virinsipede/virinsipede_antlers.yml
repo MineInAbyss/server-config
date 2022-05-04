@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BLAZE_ROD
-    displayName: §x§C§4§2§D§2§DVirinsipede Antlers
+    displayName: <#C42D2D>Virinsipede Antlers
     customModelData: 2
-    lore: |
-      §eDropped by §x§C§4§2§D§2§DVirinsipede
-      §ein the §aGreat Fault.
-      §x§F§F§C§8§4§7§oBlazing hot, just like
-      §x§F§F§C§8§4§7§othe Virinsipede's rage.
+    lore:
+      - <yellow>Dropped by <#C42D2D>Virinsipede
+      - <yellow>in the <green>Great Fault.
+      - <#FFC847><i>Blazing hot, just like
+      - <#FFC847><i>the Virinsipede's rage.

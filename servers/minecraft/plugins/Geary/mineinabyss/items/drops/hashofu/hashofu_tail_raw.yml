@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COD
-    displayName: §x§4§5§4§5§4§5Hashofu Tail
+    displayName: <#454545>Hashofu Tail
     customModelData: 3
-    lore: |
-      §eObtained by cutting of the
-      §etail of a §x§6§1§6§1§6§1Hashofu §ein the
-      §aGoblets of Giants §eand §aSea of Corpses§e.
-      §x§5§9§5§9§5§9§oIt is said it tastes like sushi.
-      §x§5§9§5§9§5§9§oThough by it's smell I doubt it...
+    lore:
+      - <yellow>Obtained by cutting of the
+      - <yellow>tail of a <#616161>Hashofu <yellow>in the
+      - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      - <#595959><i>It is said it tastes like sushi.
+      - <#595959><i>Though by it's smell I doubt it...

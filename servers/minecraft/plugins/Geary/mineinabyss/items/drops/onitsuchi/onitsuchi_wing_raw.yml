@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COD
-    displayName: §x§5§C§4§7§1§DRaw Onitsuchi Wing
+    displayName: <#5C471D>Raw Onitsuchi Wing
     customModelData: 4
-    lore: |
-      §eDropped from §x§5§C§4§7§1§DOnitsuchis §ein
-      §ethe §aGoblets of Giants §eand §aSea of Corpses§e.
-      §x§A§9§C§C§C§A§oThis meat seems delicious
-      §x§A§9§C§C§C§A§oif cooked properly!
+    lore:
+      - <yellow>Dropped from <#5C471D>Onitsuchis <yellow>in
+      - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      - <#A9CCCA><i>This meat seems delicious
+      - <#A9CCCA><i>if cooked properly!

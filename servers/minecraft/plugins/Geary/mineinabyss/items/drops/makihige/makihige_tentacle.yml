@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: LEATHER
-    displayName: §x§F§F§7§7§1§CMakihige Tentacle
+    displayName: <#FF771C>Makihige Tentacle
     customModelData: 1
-    lore: |
-      §eObtained by cutting it of an
-      §einnocent §x§F§F§9§7§2§1Makihige§e.
-      §eThis friendly creature can be found in the
-      §aGoblets of Giants §eand the §aSea of Corpses§e.
-      §x§5§2§2§1§A§6§oNot sure what this would be useful for...
+    lore:
+      - <yellow>Obtained by cutting it of an
+      - <yellow>innocent <#FF9721>Makihige<yellow>.
+      - <yellow>This friendly creature can be found in the
+      - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
+      - <#5221A6><i>Not sure what this would be useful for...

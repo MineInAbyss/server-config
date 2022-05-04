@@ -1,9 +1,9 @@
 - !<looty:type>
   item:
-    displayName: §f§lBenner Cat Ears
-    lore: |
-      §7Hey babe :siggy:
+    displayName: <white><b>Benner Cat Ears
+    lore:
+      - "<gray>Hey babe :siggy:"
     type: STONE_HOE
     customModelData: 12
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

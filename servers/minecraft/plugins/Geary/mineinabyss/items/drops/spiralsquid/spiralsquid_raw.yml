@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: SALMON
-    displayName: §x§6§C§E§5§F§5Raw Spiralsquid
+    displayName: <#6CE5F5>Raw Spiralsquid
     customModelData: 3
-    lore: |
-      §eCan be obtained by finding and
-      §ecatching a §x§6§C§E§5§F§Spiralsquid §ein the
-      §ewaters of the §aSea of Corpses§e.
-      §x§3§5§A§D§B§D§oSeems like a great source for food!
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#6CE5F5>Spiralsquid <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#35ADBD><i>Seems like a great source for food!

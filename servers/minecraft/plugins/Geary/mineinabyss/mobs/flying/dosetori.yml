@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: mobzy:flying
-  mobCategory: FLYING
-  creatureType: MONSTER
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "<#FFF821>Dosetori"
 - !<mobzy:modelengine>
   modelId: dosetori
 - !<mobzy:attributes>
@@ -37,6 +36,7 @@
   ambient: mineinabyss:entity.dosetori.ambient
   death: mineinabyss:entity.dosetori.death
   hurt: mineinabyss:entity.dosetori.hurt
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:
     1: !<mobzy:target.attacker>
@@ -44,12 +44,13 @@
     2: !<mobzy:target.nearby_player>
       range: 50
   goals:
-    1: !<mobzy:behavior.flying_damage_target> { }
-    2: !<mobzy:behavior.flying_dive_on_target> { }
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.flying_dive_on_target>
       #diveVelocity: -0.5000
       #minHeight: 7
       #maxHeight: 10
       #startDiveDistance: 10
       #bashVelMultiplier: 0.5000
-    3: !<mobzy:behavior.fly_towards_target> { }
-    4: !<mobzy:behavior.idle_fly> { }
+      bashDuration: 20
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>
