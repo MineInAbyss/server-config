@@ -1,6 +1,6 @@
 # Default height and ascent for emotes
-default-height: 9
-default-ascent: 9
+default-height: 7
+default-ascent: 7
 
 
 # Default namespace for the emotes, normally the path is <namespace>:<folder><emote>.png
@@ -442,3 +442,19 @@ emotes:
   - "playerprofile|player_profile_X mineinabyss:ui/misc/uppercase/X.png"
   - "playerprofile|player_profile_Y mineinabyss:ui/misc/uppercase/Y.png"
   - "playerprofile|player_profile_Z mineinabyss:ui/misc/uppercase/Z.png"
+  - "playerprofile|player_profile_rank_admin mineinabyss:ui/roles/admin.png"
+  - "playerprofile|player_profile_rank_moderator mineinabyss:ui/roles/moderator.png"
+  - "playerprofile|player_profile_rank_helper mineinabyss:ui/roles/helper.png"
+  - "playerprofile|player_profile_rank_srdeveloper mineinabyss:ui/roles/srdev.png"
+  - "playerprofile|player_profile_rank_developer mineinabyss:ui/roles/dev.png"
+  - "playerprofile|player_profile_rank_jrdeveloper mineinabyss:ui/roles/jrdev.png"
+  - "playerprofile|player_profile_rank_srdesigner mineinabyss:ui/roles/srdesigner.png"
+  - "playerprofile|player_profile_rank_designer mineinabyss:ui/roles/designer.png"
+  - "playerprofile|player_profile_rank_jrdesigner mineinabyss:ui/roles/jrdesigner.png"
+  - "playerprofile|player_profile_rank_srbuilder mineinabyss:ui/roles/srbuilder.png"
+  - "playerprofile|player_profile_rank_buildlead mineinabyss:ui/roles/buildlead.png"
+  - "playerprofile|player_profile_rank_builder mineinabyss:ui/roles/builder.png"
+  - "playerprofile|player_profile_rank_jrbuilder mineinabyss:ui/roles/jrbuilder.png"
+  - "playerprofile|player_profile_rank_patreonplus mineinabyss:ui/roles/patreonplus.png"
+  - "playerprofile|player_profile_rank_patreon mineinabyss:ui/roles/patreon.png"
+  - "playerprofile|player_profile_rank_communitymanager mineinabyss:ui/roles/communitymanager.png"
