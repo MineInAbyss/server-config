@@ -1,0 +1,90 @@
+# Model-Engine:
+#   Settings for the plugin.
+# 
+#   Active-Range:
+#     How close to the model in blocks should the player be to 
+#     activate the model. Setting to 0 disable this function.
+# 
+#   Marker-Tick:
+#     How long in ticks would the armor stand take before changing
+#     back to marker when out of ground. If you experience weird
+#     behaviours or constant darkening, set option to 0.
+# 
+#   Strict-Raytrace:
+#     If set to false, default entities have a higher priority on
+#     hit and click detection, even when the modeled entity is in
+#     front of them.
+# 
+#   Use-Slerp:
+#     If set to true, all rotations would take the shortest path.
+#     Otherwise, normal linear interpolation would be used.
+# 
+#   Animation:
+#     The animation name for the default states.
+# 
+#   Mode:
+#     Change the algorithm used to handle certain functions. It is
+#     recommended to keep both modes at Mode A.
+#     Animation:
+#       A: Smoother, but less accurate.
+#       B: More accurate, but will cause slight delay to Movement A
+#     Movement:
+#       A: Smoother
+#       B: More accurate, but movement of model runs at 20 fps
+# 
+# 
+# Model-Generator:
+#   Settings for the model generator.
+# 
+#   Generate-On-Start:
+#     Disable this option if you don't want the generator to run
+#     every time you restart.
+#     If you want to update the files, do /meg reload models.
+# 
+#   Enable-Error:
+#     If disabled, no error logs would be shown.
+# 
+#   Overwrite:
+#     If set to false, you can only update models by deleting
+#     files in the model folder under resource pack.
+# 
+#   Namespace:
+#     Namespace used when generating the resource pack. Usually,
+#     it will be the name of your server.
+# 
+#   Compartment-Size:
+#     How many custom model data can one folder contains.
+#     Includes Root folder.
+
+Model-Engine:
+  Detection-Range: 64.0
+  Marker-Tick: 3
+  Strict-Raytrace: true
+  Use-Slerp: false
+  Animation:
+    LAND: land
+    JUMP: jump
+    DEATH: death
+    SPAWN: spawn
+    WALK: walk
+    IDLE: idle
+  Mode:
+    Animation: B
+    Movement: A
+  Movement-Resolution: 0.001
+Model-Generator:
+  Generate-On-Start: true
+  Enable-Error: true
+  Overwrite: true
+  Namespace: modelengine
+  Compartment-Size: 1000
+  Auto-Clear-Cache: true
+  Create-Zip: true
+  Item-Model: leather_horse_armor
+Model-Calibrator:
+  Use-Calibration: true
+  Body-Rotation: 0.33
+  Animation-Sync-A: 0.33
+  Animation-Sync-B: 0.68
+Experimental-Features:
+  Use-Async: false

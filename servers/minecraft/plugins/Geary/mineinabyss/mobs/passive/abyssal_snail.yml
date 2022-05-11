@@ -1,8 +1,8 @@
-- !<mobzy:type>
-  baseClass: mobzy:passive
-  creatureType: CREATURE
-- !<mobzy:model>
-  id: 98
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#785F34>Abyssal Snail"
+- !<mobzy:modelengine>
+  modelId: abyssal_snail
 - !<mobzy:attributes>
   maxHealth: 40
   movementSpeed: 0.1000
@@ -20,10 +20,15 @@
     - item:
         prefab: mineinabyss:abyssal_snail_gunk
       maxAmount: 2
+- !<mobzy:sounds>
+  pitch: 0.2
+  ambient: minecraft:entity.axolotl.idle_air
+  death: minecraft:entity.axolotl.death
+  hurt: minecraft:entity.axolotl.hurt
 - !<mobzy:pathfinders>
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.panic>
       speedModifier: 3
-    3: !<minecraft:behavior.random_stroll_land> { }
-    4: !<minecraft:behavior.look_at_player> { }
+    3: !<minecraft:behavior.random_stroll_land>
+    4: !<minecraft:behavior.look_at_player>

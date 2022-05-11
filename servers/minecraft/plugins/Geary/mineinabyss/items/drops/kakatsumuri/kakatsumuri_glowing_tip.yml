@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: GLOW_INK_SAC
-    displayName: §x§7§D§9§3§F§FKakatsumuri Glowing Tip
+    displayName: <#7D93FF>Kakatsumuri Glowing Tip
     customModelData: 1
-    lore: |
-      §eDropped by §x§7§D§9§3§F§FKakatsumuri
-      §ein the §aGreat Fault§e.
-      §x§B§8§F§F§B§A§oThe very tip of the shell, it seems
-      §x§B§8§F§F§B§A§oto leak a glowing sticky substance.
+    lore:
+      - <yellow>Dropped by <#7D93FF>Kakatsumuri
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#B8FFBA><i>The very tip of the shell, it seems
+      - <#B8FFBA><i>to leak a glowing sticky substance.

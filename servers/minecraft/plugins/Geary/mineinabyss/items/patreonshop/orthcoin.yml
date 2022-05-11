@@ -1,6 +1,7 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
+    displayName: <#ffbb1c><b>Orth Coin
     type: EMERALD
     customModelData: 1
-- !<mineinabyss:orthcoin> { }
+- !<mineinabyss:orthcoin>

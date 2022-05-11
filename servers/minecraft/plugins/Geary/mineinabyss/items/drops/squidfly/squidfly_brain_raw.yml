@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: POTATO
-    displayName: §x§8§5§5§1§2§ESquidfly Brain
+    displayName: <#85512E>Squidfly Brain
     customModelData: 1
-    lore: |
-      §eDropped by §x§8§5§5§1§2§ESquidflies
-      §ein the §aGreat Fault§e.
-      §x§C§2§7§6§4§3§oEating it raw might not
-      §x§C§2§7§6§4§3§obe the brighest idea
-      §x§C§2§7§6§4§3§oI've come up with...
+    lore:
+      - <yellow>Dropped by <#85512E>Squidflies
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#C27643><i>Eating it raw might not
+      - <#C27643><i>be the brighest idea
+      - <#C27643><i>I've come up with...

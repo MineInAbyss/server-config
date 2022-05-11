@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: SALMON
-    displayName: §x§1§B§9§1§B§5Raw Hamashirama
+    displayName: <#1B91B5>Raw Hamashirama
     customModelData: 2
-    lore: |
-      §eCan be obtained by finding and
-      §ecatching a §x§1§B§9§1§B§5Hamashirama §ein the
-      §ewaters of the §aSea of Corpses§e.
-      §x§A§7§5§9§F§FSeems like a great source for food!
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Seems like a great source for food!

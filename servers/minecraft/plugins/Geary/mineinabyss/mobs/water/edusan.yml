@@ -1,0 +1,20 @@
+- !<mobzy:type>
+  baseClass: minecraft:cod
+  creatureType: WATER_CREATURE
+- !<mobzy:modelengine>
+  modelId: edusan
+- !<mobzy:attributes>
+  maxHealth: 20
+  movementSpeed: 0.3
+  followRange: 20
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 20
+  drops:
+    - item:
+        prefab: mineinabyss:demonfish_raw
+      cooked:
+        prefab: mineinabyss:demonfish_cooked
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  override: false

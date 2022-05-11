@@ -1,10 +1,10 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BEEF
-    displayName: §x§3§D§3§D§3§DRaw Inbyo Meat
+    displayName: <#3D3D3D>Raw Inbyo Meat
     customModelData: 1
-    lore: |
-      §eObtained from slaying an §x§6§3§6§3§6§3Inbyo
-      §ein the §aInverted Forest.
-      §x§B§5§B§5§B§5§oDoesn't look very tasty...
+    lore:
+      - <yellow>Obtained from slaying an <#636363>Inbyo
+      - <yellow>in the <green>Inverted Forest.
+      - <#B5B5B5><i>Doesn't look very tasty...

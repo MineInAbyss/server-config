@@ -1,9 +1,9 @@
 - !<looty:type>
   item:
-    displayName: §fKendo Stick
-    lore: |
-      §7A Soft And Lightweight Bamboo
-      §7Blade Used For Practice.
+    displayName: <white>Kendo Stick
+    lore:
+      - <gray>A Soft And Lightweight Bamboo
+      - <gray>Blade Used For Practice.
     type: WOODEN_SWORD
     customModelData: 2
 - !<looty:recipes>

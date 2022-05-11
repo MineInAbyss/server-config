@@ -1,8 +1,8 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
-- !<mobzy:model>
-  id: 35
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#1FB53D>Kuongatari"
+- !<mobzy:modelengine>
+  modelId: kuongatari
 - !<mobzy:attributes>
   maxHealth: 10
   movementSpeed: 0.4000
@@ -26,7 +26,19 @@
       cooked:
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 10
   goals:
-    1: !<minecraft:behavior.leap_at_target>
+    1: !<minecraft:behavior.melee_attack>
+      seeThroughWalls: true
+    2: !<minecraft:behavior.leap_at_target>
       jumpHeight: 0.6000
+    4: !<minecraft:behavior.random_stroll_land>
+    8: !<minecraft:behavior.look_at_player>
+    9: !<minecraft:behavior.random_look_around>
+    10: !<minecraft:behavior.float>

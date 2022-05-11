@@ -1,14 +1,14 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: COOKED_BEEF
-    displayName: §x§8§F§2§2§2§2Cooked Uibuta Meat
+    displayName: <#8F2222>Cooked Uibuta Meat
     customModelData: 2
-    lore: |
-      §eDue to proper preparations,
-      §ethe §x§8§F§2§2§2§2Uibuta §eflesh is now edible.
-      §x§C§4§2§F§2§F§oThis should be enough food
-      §x§C§4§2§F§2§F§oto last for daaaaayyss!!
+    lore:
+      - <yellow>Due to proper preparations,
+      - <yellow>the <#8F2222>Uibuta <yellow>flesh is now edible.
+      - <#C42F2F><i>This should be enough food
+      - <#C42F2F><i>to last for daaaaayyss!!
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

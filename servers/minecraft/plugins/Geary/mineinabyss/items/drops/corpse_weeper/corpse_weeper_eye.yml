@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: ENDER_EYE
-    displayName: §x§D§1§2§B§2§6Corpse-Weeper Eye
+    displayName: "<#D12B26>Corpse-Weeper Eye"
     customModelData: 1
-    lore: |
-      §eRarely dropped from §x§F§F§3§4§2§ECorpse-Weepers
-      §ein the §aForest of Temptation§e.
-      §c§oIt feels like it's staring into your soul...
-- !<geary:no_vanilla_interactions> {}
+    lore:
+      - <yellow>Rarely dropped from <#FFF34E>Corpse-Weepers
+      - <yellow>in the <green>Forest of Temptation<yellow>.
+      - <red><i>It feels like it's staring into your soul...
+- !<geary:no_vanilla_interactions>

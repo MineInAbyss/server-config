@@ -1,10 +1,10 @@
 - !<looty:type>
   item:
-    displayName: §x§1§9§0§0§F§F§lMarulk's Cap
-    lore: |
-      §x§6§F§1§9§D§1§o
-      §x§0§2§6§8§E§D§oCap worn by #1 femboy maid
+    displayName: <#1900FF><b>Marulk's Cap
+    lore:
+      - <#6F19D1><i>
+      - <#0268ED><i>Cap worn by #1 femboy maid
     type: STONE_HOE
     customModelData: 5
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

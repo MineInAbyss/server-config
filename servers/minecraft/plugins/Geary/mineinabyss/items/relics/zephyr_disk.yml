@@ -1,9 +1,9 @@
 - !<looty:type>
   item:
     type: KNOWLEDGE_BOOK
-    displayName: §3Zephyr Disk
+    displayName: <dark_aqua>Zephyr Disk
     customModelData: 5
-- !<geary:no_vanilla_interactions> {}
+- !<geary:no_vanilla_interactions>
 #- !<geary:events>
 #  rightClick:
 #    - !<cooldown>
@@ -12,7 +12,7 @@
 #      run:
 #        - !<on.parent>
 #          - !<geary:particle>
-#            at: !<player.location> {}
+#            at: !<player.location>
 #              #maxDist: 5
 #            type: CLOUD
 #            count: 100
@@ -23,6 +23,6 @@
 #            radius: 10
 #            run:
 #              - !<geary:push>
-#                source: !<source.location> {}
+#                source: !<source.location>
 #                force: 1.5
 #                yOffset: 0.5

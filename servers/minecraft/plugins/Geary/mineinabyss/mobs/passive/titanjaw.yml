@@ -1,8 +1,8 @@
-- !<mobzy:type>
-  baseClass: mobzy:passive
-  creatureType: CREATURE
-- !<mobzy:model>
-  id: 83
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#3C3B4A>Titanjaw"
+- !<mobzy:modelengine>
+  modelId: titanjaw
 - !<mobzy:attributes>
   maxHealth: 20
   movementSpeed: 0.1500
@@ -21,13 +21,15 @@
     - item:
         prefab: mineinabyss:titanjaw_pearl
       dropChance: 0.2000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   goals:
-    1: !<minecraft:behavior.float> { }
+    1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.panic>
       speedModifier: 2
     3: !<minecraft:behavior.avoid_player>
       radius: 10
       speed: 1.5000
       sprintSpeed: 2
-    4: !<minecraft:behavior.random_stroll_land> { }
+    4: !<minecraft:behavior.random_stroll_land>

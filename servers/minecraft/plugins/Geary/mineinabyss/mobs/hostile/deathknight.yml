@@ -1,9 +1,7 @@
-- !<mobzy:type>
-  baseClass: mobzy:hostile
-  creatureType: MONSTER
-- !<mobzy:model>
-  material: NETHERITE_HOE
-  id: 1
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<mobzy:modelengine>
+  modelId: deathknight
 - !<mobzy:attributes>
   maxHealth: 1000
   movementSpeed: 0.6000
@@ -14,8 +12,11 @@
 - !<mobzy:death_loot>
   minExp: 1000
   maxExp: 1000
+- !<mobzy:sounds>
 - !<mobzy:pathfinders>
+  override: false
   targets:
     1: !<mobzy:target.attacker>
       range: 50
-    2: !<minecraft:target.nearby_player> { }
+    2: !<mobzy:target.nearby_player>
+      range: 40

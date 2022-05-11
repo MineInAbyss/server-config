@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: ROTTEN_FLESH
-    displayName: §x§9§C§0§F§2§CStingerhead Flesh
-    lore: |
-      §eObtained from slaying a §x§9§C§0§F§2§CStingerhead
-      §efound in nests in the §aSea of Corpses§e.
-      §x§E§B§1§7§4§2§oThis is definetly not edible!
-      §x§E§B§1§7§4§2§oIt reeks of burned dried vomit, much
-      §x§E§B§1§7§4§2§olike Nanachi's Netherworld Stew.
+    displayName: <#9C0F2C>Stingerhead Flesh
+    lore:
+      - <yellow>Obtained from slaying a <#9C0F2C>Stingerhead
+      - <yellow>found in nests in the <green>Sea of Corpses<yellow>.
+      - <#EB1742><i>This is definetly not edible!
+      - <#EB1742><i>It reeks of burned dried vomit, much
+      - <#EB1742><i>like Nanachi's Netherworld Stew.

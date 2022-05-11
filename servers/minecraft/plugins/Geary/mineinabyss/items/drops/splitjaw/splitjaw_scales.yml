@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: POPPED_CHORUS_FRUIT
-    displayName: §x§9§A§1§C§A§DSplitjaw Scales
+    displayName: <#9A1CAD>Splitjaw Scales
     customModelData: 1
-    lore: |
-      §eOccasionally dropped by §x§B§3§2§1§C§9Splitjaws
-      §r§ein the §aForest of Temptation
-      §r§eand the §aGreat Fault§e.
-      §r§d§oCan be used to
-      §r§d§omake certain blocks.
+    lore:
+      - <yellow>Occasionally dropped by <#B321C9>Splitjaws
+      - <reset><yellow>in the <green>Forest of Temptation
+      - <reset><yellow>and the <green>Great Fault<yellow>.
+      - <reset><light_purple><i>Can be used to
+      - <reset><light_purple><i>make certain blocks.

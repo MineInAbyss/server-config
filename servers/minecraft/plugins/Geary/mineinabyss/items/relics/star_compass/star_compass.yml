@@ -1,0 +1,17 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    customModelData: 125
+    displayName: <dark_aqua>Star Compass
+    lore:
+      - <aqua>Points towards the center of the <green>Abyss
+- !<looty:recipes>
+  discoverRecipes: true
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:star_compass_needle
+        - prefab: mineinabyss:titanjaw_pearl
+- !<mineinabyss:starcompass>
+- !<geary:no_vanilla_interactions>

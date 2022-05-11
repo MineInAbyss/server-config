@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BLAZE_ROD
-    displayName: §x§6§C§1§9§B§FRohana Tail
+    displayName: <#6C19BF>Rohana Tail
     customModelData: 1
-    lore: |
-      §eRods rarely dropped from
-      §x§A§F§2§1§C§CRohana §edeep in the §aForest of
-      §aTemptation §eor the §aGoblets of Giants§e.
-      §x§F§F§1§F§B§4§oThey glow faintly and can
-      §x§F§F§1§F§B§4§obe used to make brewing stands
-      §x§F§F§1§F§B§4§oor other useful relics...
+    lore:
+      - <yellow>Rods rarely dropped from
+      - <#AF21CC>Rohana <yellow>deep in the <green>Forest of
+      - <green>Temptation <yellow>or the <green>Goblets of Giants<yellow>.
+      - <#FF1FB4><i>They glow faintly and can
+      - <#FF1FB4><i>be used to make brewing stands
+      - <#FF1FB4><i>or other useful relics...

@@ -12,24 +12,29 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [SLIME]
 features:
-  #- !<chat> { }
-  #- !<orth_banking> { }
-  #- !<guilds> { }
-  #- !<adventure_pvp> { }
-  - !<hub_storage> { }
-  - !<layers> { }
-  - !<survival_pvp> { }
-  - !<anticheese> { }
-  - !<curse> { }
-  - !<keepinv> { }
-  - !<relics> { }
-  - !<exp> { }
-  - !<lock_armorstand> { }
-  #- !<enchants> { }
+  - !<guilds>
+    guildChatPrefix: ":survival::guildchat: "
+    guildNameMaxLength: 30
+    guildNameBannedWords:
+      - ([^a-zA-Z\s])
+      - (n[i1]gg?[e3]r[s\$]?)
+      - (.?fai*g+[oei1]*t*[sz]*)
+      - ([nN]+[aA4@]+[sSzZ]+[iI1l])
+  - !<hub_storage>
+  - !<layers>
+  - !<survival_pvp>
+  - !<anticheese>
+  - !<curse>
+  - !<keepinv>
+  - !<relics>
+  - !<exp>
+  - !<lock_armorstand>
+  - !<patreon>
+  - !<shopkeeper>
 layers:
-  - name: §x§F§F§A§8§1§2Orth
-    sub: §x§F§F§C§4§2§1City of the Great Pit
-    deathMessage: in the city of §x§F§F§A§8§1§2Orth§f :bell:§f
+  - name: <#FFA812>Orth
+    sub: <#FFC421>City of the Great Pit
+    deathMessage: in the city of <#FFA812>Orth<white> :bell:<white>
     depth:
       start: -1
       end: 0
@@ -39,9 +44,9 @@ layers:
       - RAIL
       - POWERED_RAIL
       - VINE
-  - name: §x§D§B§4§0§4§0Edge of the Abyss
-    sub: §x§B§A§1§E§1§E0-1510 blocks
-    deathMessage: at the §x§D§B§4§0§4§0Edge of the Abyss§f :redw:§f
+  - name: <#DB4040>Edge of the Abyss
+    sub: <#BA1E1E>0-1510 blocks
+    deathMessage: at the <#DB4040>Edge of the Abyss<white> :redw:<white>
     depth:
       start: 0
       end: 1510
@@ -58,9 +63,9 @@ layers:
       - RAIL
       - POWERED_RAIL
       - VINE
-  - name: §x§1§7§5§A§B§FForest of Temptation
-    deathMessage: in the §x§1§7§5§A§B§FForest of Temptation§f :bluew:§f
-    sub: §x§2§8§6§F§B§F1510-2580 blocks
+  - name: <#175ABF>Forest of Temptation
+    deathMessage: in the <#175ABF>Forest of Temptation<white> :bluew:<white>
+    sub: <#286FBF>1510-2580 blocks
     depth:
       start: 1510
       end: 2580
@@ -85,9 +90,9 @@ layers:
       - RAIL
       - POWERED_RAIL
       - VINE
-  - name: §x§D§4§2§8§B§1Great Fault
-    sub: §x§E§8§2§C§C§22580–4020 blocks
-    deathMessage: in the §x§D§4§2§8§B§1Great Fault§f :moonw:§f
+  - name: <#D428B1>Great Fault
+    sub: <#E82CC2>2580–4020 blocks
+    deathMessage: in the <#D428B1>Great Fault<white> :moonw:<white>
     depth:
       start: 2580
       end: 4020
@@ -139,9 +144,9 @@ layers:
       - POWERED_RAIL
       - VINE
     sections: [l3s0,l3s1,l3s2,l3s3]
-  - name: §x§9§E§1§E§8§4The Goblets of Giants
-    sub: §x§7§7§2§3§7§A4020–5850 blocks
-    deathMessage: in the §x§9§E§1§E§8§4Goblets of Giants§f :moonw:§f
+  - name: <#9E1E84>The Goblets of Giants
+    sub: <#77237A>4020–5850 blocks
+    deathMessage: in the <#9E1E84>Goblets of Giants<white> :moonw:<white>
     hasPvpDefault: true
     depth:
       start: 4020
@@ -179,9 +184,9 @@ layers:
           - entity.creeper.primed
           - mineinabyss:entity.orbpiercer.ambient
     sections: [l4s1,l4s2,l4s3,l4s4,l4s5]
-  - name: §x§3§B§3§B§3§BSea of Corpses
-    sub: §x§5§4§5§4§5§45850–7200 blocks
-    deathMessage: in the §x§3§B§3§B§3§BSea of Corpses§f :blackw:§f
+  - name: <#3B3B3B>Sea of Corpses
+    sub: <#545454>5850–7200 blocks
+    deathMessage: in the <#3B3B3B>Sea of Corpses<white> :blackw:<white>
     hasPvpDefault: true
     depth:
       start: 5850

@@ -1,11 +1,12 @@
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COMPASS
-    displayName: §3Depth Meter
-    customModelData: 2
-    lore: |
-      §bUsed to check your §aLayer §band
-      §bdepth by §lright-clicking.
+    type: PAPER
+    displayName: <dark_aqua>Depth Meter
+    customModelData: 126
+    lore:
+      - <aqua>Used to check your <green>Layer <aqua>and
+      - <aqua>depth by <b>right-clicking.
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
@@ -19,17 +20,10 @@
         | G |
         |GCG|
         | G |
-- !<mineinabyss:depthmeter> { }
+- !<mineinabyss:depthmeter>
 - !<geary:children>
   showDepth:
-    - !<mineinabyss:show_depth> {}
+    - !<mineinabyss:show_depth>
 - !<geary:event.triggers>
   - geary:event.right_clicked this -> child(showDepth)
-- !<geary:no_vanilla_interactions> {}
-#- !<geary:events>
-#  rightClick:
-#    - !<cooldown>
-#      name: Read Depth
-#      length: 1s
-#      run:
-#        - !<mineinabyss:show_depth> { }
+- !<geary:no_vanilla_interactions>

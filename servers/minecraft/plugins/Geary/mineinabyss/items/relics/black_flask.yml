@@ -1,10 +1,10 @@
 - !<looty:type>
   item:
     type: POTION
-    displayName: §6Black Flask
+    displayName: <gold>Black Flask
     customModelData: 1
-    lore: |
-      §aplaceholder..
+    lore:
+      - <green>placeholder..
 - !<geary:children>
   flask:
     - !<geary:apply> geary:potion_effects

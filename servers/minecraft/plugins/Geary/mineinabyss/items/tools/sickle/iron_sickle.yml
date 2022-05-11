@@ -2,9 +2,7 @@
   from: [mineinabyss:sickle]
 - !<looty:type>
   item:
-    displayName: §7Iron Sickle
-    #    lore: |
-    #      §bA
+    displayName: <gray>Iron Sickle
     type: IRON_HOE
     customModelData: 1
 - !<looty:recipes>

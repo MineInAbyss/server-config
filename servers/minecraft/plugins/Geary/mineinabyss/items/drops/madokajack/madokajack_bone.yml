@@ -1,10 +1,10 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BONE
-    displayName: §x§1§C§4§3§9§EMadokajack Bone
+    displayName: <#1C439E>Madokajack Bone
     customModelData: 2
-    lore: |
-      §eDropped by §x§2§2§5§2§C§2Madokajacks
-      §ein the §aGreat Fault§e.
-      §x§3§6§9§A§F§F§oEven their bones smell rancid.
+    lore:
+      - <yellow>Dropped by <#2252C2>Madokajacks
+      - <yellow>in the <green>Great Fault<yellow>.
+      - <#369AFF><i>Even their bones smell rancid.

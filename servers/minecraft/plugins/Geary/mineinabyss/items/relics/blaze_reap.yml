@@ -2,17 +2,17 @@
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 2
-    displayName: §x§6§1§7§B§9§4§lBlaze Reap
-    lore: |
-      §x§C§6§C§C§8§AContains §fEverlasting Gunpowder§x§C§6§C§C§8§A,
-      §x§C§6§C§C§8§Awhich causes ongoing explosions
-      §x§C§6§C§C§8§Aon whatever it is struck on.
-      §x§9§4§8§E§6§1§oUsed to create powerful explosions.
-- !<geary:no_vanilla_interactions> { }
-#- !<geary:explosion_resistant> { }
+    displayName: <#617B94><b>Blaze Reap
+    lore:
+      - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
+      - <#C6CC8A>which causes ongoing explosions
+      - <#C6CC8A>on whatever it is struck on.
+      - <#948E61><i>Used to create powerful explosions.
+- !<geary:no_vanilla_interactions>
+#- !<geary:explosion_resistant>
 #- !<relation>
 #  data: !<geary:cooldown>
-#    name: §x§6§1§7§B§9§4§lExplosion
+#    name: <#617B94><b>Explosion
 #    length: 2s
 #  to: geary:explodable
 #- !<geary:explodable>
@@ -22,7 +22,7 @@
 #  amount: 3
 #- !<geary:events>
 #  geary:item_left_click:
-#    - - !<geary:explode> { }
+#    - - !<geary:explode>
 #      - !<geary:find_location>
 #        at: !<player.target_block>
 #          allowAir: true

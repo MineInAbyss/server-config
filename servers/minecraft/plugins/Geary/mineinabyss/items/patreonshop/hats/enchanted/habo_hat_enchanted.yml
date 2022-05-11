@@ -1,10 +1,10 @@
 - !<looty:type>
   item:
-    displayName: §x§8§2§5§7§1§1§lHabo's Hat
-    lore: |
-      §x§6§F§1§9§D§1§o
-      §x§E§D§9§1§3§4§lHelmet worn by #1 uncle
+    displayName: <#825711><b>Habo's Hat
+    lore:
+      - <#6F19D1><i>
+      - <#ED9134><b>Helmet worn by #1 uncle
     type: STONE_HOE
     customModelData: 3
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

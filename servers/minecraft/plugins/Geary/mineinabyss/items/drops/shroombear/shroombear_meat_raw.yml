@@ -1,13 +1,13 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: MUTTON
-    displayName: §x§8§5§5§6§2§DShroombear Meat
+    displayName: <#85562D>Shroombear Meat
     customModelData: 2
-    lore: |
-      §eObtained by chasing down
-      §ea §x§8§5§5§6§2§DShroombear §ein the
-      §aGoblets of Giants§e.The meat
-      §eis edible and dark in colour.
-      §x§6§9§4§6§0§0§oMight smell like excrement
-      §x§6§9§4§6§0§0§oif I don't clean it well...
+    lore:
+      - <yellow>Obtained by chasing down
+      - <yellow>a <#85562D>Shroombear <yellow>in the
+      - <green>Goblets of Giants<yellow>.The meat
+      - <yellow>is edible and dark in colour.
+      - <#694600><i>Might smell like excrement
+      - <#694600><i>if I don't clean it well...

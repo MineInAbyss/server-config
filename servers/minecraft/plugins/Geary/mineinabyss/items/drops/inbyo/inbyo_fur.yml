@@ -1,11 +1,11 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BLACK_WOOL
-    displayName: §x§3§D§3§D§3§DInbyo Fur
+    displayName: <#3D3D3D>Inbyo Fur
     customModelData: 1
-    lore: |
-      §eAquired by skinning an §x§6§3§6§3§6§3Inbyo
-      §ein the §aInverted Forest§e.
-      §x§B§5§B§5§B§5§oThis stench is nauseating...
-- !<geary:no_vanilla_interactions> {}
+    lore:
+      - <yellow>Aquired by skinning an <#636363>Inbyo
+      - <yellow>in the <green>Inverted Forest<yellow>.
+      - <#B5B5B5><i>This stench is nauseating...
+- !<geary:no_vanilla_interactions>

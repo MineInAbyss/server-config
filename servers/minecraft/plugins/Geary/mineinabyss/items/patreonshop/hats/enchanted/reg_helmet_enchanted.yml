@@ -1,10 +1,10 @@
 - !<looty:type>
   item:
-    displayName: §x§2§D§2§B§4§F§lReg's Helmet
-    lore: |
-      §x§6§F§1§9§D§1§o
-      §x§4§6§4§3§7§A§oBest Robotboi
+    displayName: <#2D2B4F><b>Reg's Helmet
+    lore:
+      - <#6F19D1><i>
+      - <#46437A><i>Best Robotboi
     type: STONE_HOE
     customModelData: 9
-- !<geary:hat> { }
-- !<geary:no_vanilla_interactions> {}
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

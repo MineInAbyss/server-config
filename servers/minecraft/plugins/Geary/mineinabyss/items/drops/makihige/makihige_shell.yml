@@ -1,14 +1,14 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: OBSIDIAN
-    displayName: §x§F§F§7§7§1§CMakihige Shell
+    displayName: <#FF771C>Makihige Shell
     customModelData: 1
-    lore: |
-      §eCan be obtained from slaughtering an
-      §einnocent and friendly §x§F§F§9§7§2§1Makihige
-      §ein the §aGoblets of Giants §eor
-      §ein the §aSea of Corpses§e.
-      §x§5§2§2§1§A§6§oIt used to be the home to a
-      §x§5§2§2§1§A§6§oMakihige. Not anymore...
-- !<geary:no_vanilla_interactions> {}
+    lore:
+      - <yellow>Can be obtained from slaughtering an
+      - <yellow>innocent and friendly <#FF9721>Makihige
+      - <yellow>in the <green>Goblets of Giants <yellow>or
+      - <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#5221A6><i>It used to be the home to a
+      - <#5221A6><i>Makihige. Not anymore...
+- !<geary:no_vanilla_interactions>

@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: BEEF
-    displayName: §x§8§F§2§2§2§2Raw Uibuta Meat
+    displayName: <#8F2222>Raw Uibuta Meat
     customModelData: 2
-    lore: |
-      §eObtained by carving up the
-      §ecorpse of an §x§8§F§2§2§2§2Uibuta §ein the
-      §aGoblets of Giants §eand §aSea of Corpses§e.
-      §x§C§4§2§F§2§F§oA thick layer of fat clings to the meat.
-      §x§C§4§2§F§2§F§oCooking it should help making it edible.
+    lore:
+      - <yellow>Obtained by carving up the
+      - <yellow>corpse of an <#8F2222>Uibuta <yellow>in the
+      - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
+      - <#C42F2F><i>A thick layer of fat clings to the meat.
+      - <#C42F2F><i>Cooking it should help making it edible.

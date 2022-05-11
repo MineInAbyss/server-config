@@ -1,14 +1,16 @@
 - !<mobzy:type>
-  baseClass: mobzy:passive
+  baseClass: minecraft:pig
   creatureType: WATER_CREATURE
-- !<mobzy:model>
-  id: 56
+- !<geary:display_name> "<#FF771C>Makihige"
+- !<mobzy:modelengine>
+  modelId: makihige
 - !<mobzy:attributes>
   maxHealth: 60
   movementSpeed: 0.2000
   knockbackResistance: 0.2000
   width: 2
   height: 2
+- !<mobzy:sounds>
 - !<mobzy:death_loot>
   minExp: 15
   maxExp: 30
@@ -28,8 +30,9 @@
 - !<mobzy:increased_water_speed>
   level: 20
 - !<mobzy:pathfinders>
+  override: false
   goals:
-    1: !<minecraft:behavior.float> { }
-    2: !<minecraft:behavior.panic> { }
+    1: !<minecraft:behavior.float>
+    2: !<minecraft:behavior.panic>
     3: !<minecraft:behavior.avoid_player>
       radius: 5
