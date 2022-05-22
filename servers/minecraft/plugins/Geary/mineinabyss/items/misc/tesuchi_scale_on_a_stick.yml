@@ -1,0 +1,18 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    displayName: Tesuchi Scale on a Stick
+    lore:
+      - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
+    type: CARROT_ON_A_STICK
+    customModelData: 2
+- !<geary:no_vanilla_interactions>
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    prefab: tesuchi_scale_on_a_stick
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:tesuchi_scales
+        - type: FISHING_ROD

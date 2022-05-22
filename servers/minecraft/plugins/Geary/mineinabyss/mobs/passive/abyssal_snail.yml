@@ -20,6 +20,10 @@
     - item:
         prefab: mineinabyss:abyssal_snail_gunk
       maxAmount: 2
+- !<mobzy:rideable>
+  requiresItemToSteer: true
+  steerItem:
+    prefab: mineinabyss:tesuchi_scale_on_a_stick
 - !<mobzy:sounds>
   pitch: 0.2
   ambient: minecraft:entity.axolotl.idle_air

@@ -4,7 +4,7 @@
 - !<mobzy:modelengine>
   modelId: ashimite
 - !<mobzy:attributes>
-  maxHealth: 10
+  maxHealth: 16
   movementSpeed: 0.5000
   knockbackResistance: 0.0700
   width: 2
@@ -29,11 +29,17 @@
         prefab: mineinabyss:ashimite_antlers
       dropChance: 0.2000
 - !<mobzy:rideable>
+  requiresItemToSteer: true
+  steerItem:
+    prefab: mineinabyss:demonfish_on_a_stick
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
   goals:
     1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.panic>
-    3: !<minecraft:behavior.avoid_player>
+    2: !<minecraft:behavior.tempt>
+      items: [ SALMON ]
+      losesInterest: false
+    3: !<minecraft:behavior.panic>
+    4: !<minecraft:behavior.avoid_player>
       radius: 10
-    4: !<minecraft:behavior.random_stroll_land>
+    5: !<minecraft:behavior.random_stroll_land>

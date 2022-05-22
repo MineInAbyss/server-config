@@ -1,0 +1,19 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    displayName: Demonfish on a Stick
+    lore:
+      - <yellow>Useful in order to steer an <#2597D9>Ashimite<yellow>.
+      - <yellow>That is if you can manage to sneak up on one
+    type: CARROT_ON_A_STICK
+    customModelData: 1
+- !<geary:no_vanilla_interactions>
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    prefab: demonfish_on_a_stick
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:demonfish_raw
+        - type: FISHING_ROD
