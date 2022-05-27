@@ -1,0 +1,43 @@
+title: "<white>" # GUI Title
+rows: 5 # Rows in the GUI 
+items:
+  10:
+    material: STONE_HOE
+    name: "<rainbow>Hats"
+    amount: 1
+    model-data: 2
+    action:
+      any:
+        open-menu: hat-menu
+  12:
+    material: YELLOW_SHULKER_BOX
+    name: "<rainbow>Backpacks"
+    amount: 1
+    model-data: 0
+    action:
+      any:
+        open-menu: backpack-menu
+  37:
+    material: PAPER
+    name: "<#40B7D6>Previous Page"
+    amount: 1
+    model-data: 1
+    action:
+      any:
+        open-menu: menu-2
+  40:
+    material: PAPER
+    name: "<rainbow>Customization Menu</rainbow>"
+    amount: 1
+    model-data: 3
+    action:
+      any:
+        open-menu: dye-menu
+  43:
+    material: PAPER
+    name: "<#40B7D6>Next Page"
+    amount: 1
+    model-data: 2
+    action:
+      any:
+        open-menu: menu-2
