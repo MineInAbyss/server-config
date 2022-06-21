@@ -5,6 +5,7 @@ modelItem:
   customModelData: 1
 maxPlayerCount: 4
 bonfireExpirationTime: 1w
+bonfireInteractCooldown: 2s
 respawnSetSound:
   sound: block.ladder.step
   volume: 1f
