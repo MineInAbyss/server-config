@@ -3,6 +3,7 @@
 - !<geary:display_name> "<#2597D9>Ashimite"
 - !<mobzy:modelengine>
   modelId: ashimite
+  leashable: true
 - !<mobzy:attributes>
   maxHealth: 16
   movementSpeed: 0.5000
