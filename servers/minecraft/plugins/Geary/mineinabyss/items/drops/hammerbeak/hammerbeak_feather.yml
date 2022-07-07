@@ -1,12 +1,11 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: CHARCOAL
+    type: FEATHER
     displayName: <#613F0C>Hammerbeak Feather
-    customModelData: 1
+    customModelData: 3
     lore:
       - <yellow>Dropped from <#705723>Hammerbeaks <yellow>at
       - <yellow>the <green>Edge of the Abyss <yellow>and
       - <yellow>in the <green>Forest of Temptation<yellow>.
-      - <#A9CCCA><i>It looks very
-      - <#A9CCCA><i>combustible.
+      - <#A9CCCA><i>It looks very combustible.
