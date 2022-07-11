@@ -3,7 +3,7 @@
 - !<mobzy:spawn.amount>
   amount: 4..8
 - !<mobzy:spawn_regions>
-  keys: [ inverted_forest ]
+  keys: [ l2s2 ]
 - !<mobzy:spawn.spread>
   radius: 10
 - !<mobzy:spawn.priority>
@@ -18,3 +18,4 @@
     - BIRCH_LEAVES
     - OAK_LEAVES
     - DARK_OAK_LEAVES
+    - OAK_WOOD
