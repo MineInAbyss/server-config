@@ -319,8 +319,10 @@ emotes:
   - "guilds|guild_lookup_members2 mineinabyss:ui/guilds/guild_lookup_members2.png"
   - "guilds|guild_lookup_members3 mineinabyss:ui/guilds/guild_lookup_members3.png"
 
-  - "playerprofile|player_profile mineinabyss:ui/player_profiles/player_profile.png"
-  - "playerprofile|player_profile_patreon mineinabyss:ui/player_profiles/player_profile_patreon.png"
+  - "playerprofile|player_profile_armor_visible mineinabyss:ui/player_profiles/player_profile_armor_visible.png"
+  - "playerprofile|player_profile_patreon_armor_visible mineinabyss:ui/player_profiles/player_profile_patreon_armor_visible.png"
+  - "playerprofile|player_profile_armor_hidden mineinabyss:ui/player_profiles/player_profile_armor_hidden.png"
+  - "playerprofile|player_profile_patreon_armor_hidden mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png"
   - "playerprofile|player_profile_rank_admin mineinabyss:ui/roles/admin.png"
   - "playerprofile|player_profile_rank_moderator mineinabyss:ui/roles/moderator.png"
   - "playerprofile|player_profile_rank_helper mineinabyss:ui/roles/helper.png"
