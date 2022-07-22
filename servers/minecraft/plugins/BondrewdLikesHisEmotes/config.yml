@@ -1,6 +1,6 @@
 # Default height and ascent for emotes
-default-height: 7
-default-ascent: 7
+default-height: 10
+default-ascent: 9
 
 
 # Default namespace for the emotes, normally the path is <namespace>:<folder><emote>.png
@@ -174,6 +174,11 @@ emotes:
   - "hjonk"
   - "okaynerd"
   - "guracard"
+  - "gutmoment"
+  - "technopepe"
+  - "huh"
+  - "faputahappy"
+  - "chad"
 
   - "gifs/amepat|amepat&k emotes:gifs/amepat/1.png"
   - "gifs/amevibe|amevibe&k emotes:gifs/amevibe/1.png"
@@ -221,6 +226,7 @@ emotes:
   - "whistles|gunsmithw mineinabyss:whistles/gunsmithw.png"
   - "whistles|hadenw mineinabyss:whistles/hadenw.png"
   - "whistles|awaiw mineinabyss:whistles/awaiw.png"
+  - "whistles|lumiw mineinabyss:whistles/lumiw.png"
 
   - "default|admin mineinabyss:ui/roles/admin.png"
   - "default|moderator mineinabyss:ui/roles/moderator.png"
@@ -315,8 +321,10 @@ emotes:
   - "guilds|guild_lookup_members2 mineinabyss:ui/guilds/guild_lookup_members2.png"
   - "guilds|guild_lookup_members3 mineinabyss:ui/guilds/guild_lookup_members3.png"
 
-  - "playerprofile|player_profile mineinabyss:ui/player_profiles/player_profile.png"
-  - "playerprofile|player_profile_patreon mineinabyss:ui/player_profiles/player_profile_patreon.png"
+  - "playerprofile|player_profile_armor_visible mineinabyss:ui/player_profiles/player_profile_armor_visible.png"
+  - "playerprofile|player_profile_patreon_armor_visible mineinabyss:ui/player_profiles/player_profile_patreon_armor_visible.png"
+  - "playerprofile|player_profile_armor_hidden mineinabyss:ui/player_profiles/player_profile_armor_hidden.png"
+  - "playerprofile|player_profile_patreon_armor_hidden mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png"
   - "playerprofile|player_profile_rank_admin mineinabyss:ui/roles/admin.png"
   - "playerprofile|player_profile_rank_moderator mineinabyss:ui/roles/moderator.png"
   - "playerprofile|player_profile_rank_helper mineinabyss:ui/roles/helper.png"

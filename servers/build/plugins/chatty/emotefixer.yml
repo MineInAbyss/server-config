@@ -1,3 +1,11 @@
+# This file is meant to be used to translate emotes from
+# BondrewdLikesHisEmotes to discord correctly through DiscordSRV.
+# You need to set the emoteId which is :emoteId: ingame
+# and the emote it should translate to.
+# You get these by typing your emote in discord and adding a \ before
+# It should look something like this <123456789>
+# This is a unique code for said emote that can then be used by DiscordSRV's bot to translate
+
 emotes:
   5head: "<:5head:853756699277000714>"
   adarnice: "<:adarnice:853756698933067778>"
@@ -192,3 +200,5 @@ emotes:
   ozenisfine: "<:ozenisfine:909544299396476988>"
   necoflap: "<a:necoflap:909543503514722334>"
   nynagree: "<a:nynyagree:909543503359537164>"
+  faputahappy: "<:faputahappy:999957619756257320>"
+  chad: "<:chad:999957618485375098>"

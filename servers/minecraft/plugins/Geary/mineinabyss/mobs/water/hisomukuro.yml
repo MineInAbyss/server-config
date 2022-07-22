@@ -54,3 +54,4 @@
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true
+- !<geary:no_breeding>
