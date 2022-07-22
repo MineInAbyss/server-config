@@ -1,0 +1,151 @@
+# Used for displaying playerheads in chat.
+# This is the default font that comes with the plugin
+# %chatty_playerhead% will be replaced with the playerhead of the player who sent the message
+# Please note: This is not the most performance friendly feature so use the placeholder sparingly.
+playerHeadFont: "minecraft:chatty_heads"
+useChattyCommandPrefix: true
+
+privateMessages:
+  enabled: true
+  proxy: true           # Not currently supported
+  messageSendFormat: "<gold>You -> %player_displayname%:<yellow> "
+  messageReceiveFormat: "<gold>%player_displayname% -> You:<yellow> "
+  messageSendSound: ""      # Empty for no sound
+  messageReceiveSound: ""   # Empty for no sound
+
+chat:
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+book:
+  useDisplayNameForAuthor: false
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+sign:
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+nicknames:
+  permission: "chatty.nickname"
+  nickOtherPermission: "chatty.nickname.other"
+  bypassFormatPermission: "chatty.nickname.bypassformat" #Permission to bypass all format checks
+  maxLength: 32
+  countTagsInLength: false    # Should [maxLength] take tags into account?
+  nickNameOtherPrefix: '@'    # Prefix to specify you wanna nickname another player: [/chatty nickname @player nickname]
+  allowedTags:                # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+join:
+  enabled: false
+  firstJoin:
+    enabled: false
+
+leave:
+  enabled: false
+
+proxy:
+  enableProxySwitchMessages: false
+
+ping:
+  enabledChannels:          # channelIds to enable pings for
+    - "all"              # "all" or "*" for all channels
+  pingVolume: 1.0
+  pingPitch: 1.0
+  pingPrefix: '@'
+  clickToReply: true
+  pingReceiveFormat: "<gold><b>"  # Default format the ping-message is marked with for pinged
+  pingSendFormat: "<i>"     # Default format the ping-message is marked with for sender
+  defaultPingSound: "block.amethyst_block.place"
+  alternativePingSounds:    # "all" to let people choose any sound
+    - "all"
+
+
+channels:
+  global:
+    channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
+    isDefaultChannel: true
+    discordsrv: true
+    format:
+      usePlayerDisplayName: true
+      prefix: ":build:%luckperms_prefix%"
+      suffix: ": "
+      messageFormat: ""
+    channelAliases:         # Shortcut commandalias to switch
+      - "g"
+
+  playerhead:
+    channelType: GLOBAL
+    permission: "chatty.channel.playerhead"
+    isDefaultChannel: false
+    discordsrv: true
+    format:
+      usePlayerDisplayName: true
+      prefix: "%chatty_player_head%"  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
+      suffix: ": "                    # Keep in mind it is performance heavy so use sparingly.
+      messageFormat: ""               # Format of the message itself. Can change color and font for example
+    channelAliases:
+      - "head"
+
+  local:
+    channelType: RADIUS
+    isDefaultChannel: false
+    discordsrv: false
+    format:
+      usePlayerDisplayName: true
+      prefix: ":build::local:"
+      suffix: ": "
+      messageFormat: "<yellow>"
+    channelRadius: 500
+    channelAliases:
+      - "l"
+
+  admin:
+    channelType: PERMISSION
+    permission: "chatty.channel.admin"
+    requireEffectivePermission: false
+    isDefaultChannel: false
+    isStaffChannel: true
+    discordsrv: false
+    proxy: true
+    format:
+      usePlayerDisplayName: true
+      prefix: ":build::admin:"
+      suffix: ": "
+      messageFormat: "<red>"
+    channelAliases:
+      - "a"
