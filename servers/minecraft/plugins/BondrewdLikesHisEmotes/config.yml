@@ -1,6 +1,6 @@
 # Default height and ascent for emotes
-default-height: 7
-default-ascent: 7
+default-height: 10
+default-ascent: 9
 
 
 # Default namespace for the emotes, normally the path is <namespace>:<folder><emote>.png
@@ -178,6 +178,7 @@ emotes:
   - "technopepe"
   - "huh"
   - "faputahappy"
+  - "chad"
 
   - "gifs/amepat|amepat&k emotes:gifs/amepat/1.png"
   - "gifs/amevibe|amevibe&k emotes:gifs/amevibe/1.png"
