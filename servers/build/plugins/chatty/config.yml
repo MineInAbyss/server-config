@@ -102,7 +102,7 @@ channels:
     discordsrv: true
     format:
       usePlayerDisplayName: true
-      prefix: ":build: %luckperms_prefix%"
+      prefix: ":build: %luckperms_prefix% "
       suffix: ": "
       messageFormat: ""
     channelAliases:         # Shortcut commandalias to switch
@@ -115,7 +115,7 @@ channels:
     discordsrv: true
     format:
       usePlayerDisplayName: true
-      prefix: "%chatty_player_head%"  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
+      prefix: "%chatty_player_head% "  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
       suffix: ": "                    # Keep in mind it is performance heavy so use sparingly.
       messageFormat: ""               # Format of the message itself. Can change color and font for example
     channelAliases:

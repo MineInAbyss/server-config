@@ -30,10 +30,11 @@ features:
   - !<exp>
   - !<lock_display_item>
   - !<patreon>
-  - !<shopkeeper>
-  #- !<cosmetics>
+  - !<orth_banking>
   - !<playerprofile>
   #- !<misc>
+  #- !<shopkeeper>
+  #- !<cosmetics>
 layers:
   - name: <#FFA812>Orth
     sub: <#FFC421>City of the Great Pit
