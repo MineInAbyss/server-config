@@ -3,7 +3,7 @@
 - !<mobzy:modelengine>
   modelId: deathknight
 - !<mobzy:attributes>
-  maxHealth: 500000
+  maxHealth: 2048
   movementSpeed: 0
   attackDamage: 60
   followRange: 10

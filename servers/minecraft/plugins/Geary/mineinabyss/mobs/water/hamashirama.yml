@@ -3,7 +3,7 @@
   creatureType: WATER_CREATURE
 - !<geary:display_name> "<#1B91B5>Hamashirama"
 - !<mobzy:modelengine>
-  modelId: hamashirama
+  modelId: demonfish
 - !<mobzy:attributes>
   maxHealth: 30
   movementSpeed: 0.2
