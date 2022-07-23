@@ -3,7 +3,6 @@
 # %chatty_playerhead% will be replaced with the playerhead of the player who sent the message
 # Please note: This is not the most performance friendly feature so use the placeholder sparingly.
 playerHeadFont: "minecraft:chatty_heads"
-useChattyCommandPrefix: true
 
 privateMessages:
   enabled: true
