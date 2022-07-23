@@ -7,11 +7,12 @@ useChattyCommandPrefix: true
 
 privateMessages:
   enabled: true
-  proxy: true           # Not currently supported
-  messageSendFormat: "<gold>You -> %player_displayname%:<yellow> "
-  messageReceiveFormat: "<gold>%player_displayname% -> You:<yellow> "
-  messageSendSound: ""      # Empty for no sound
-  messageReceiveSound: ""   # Empty for no sound
+  proxy: true                       # Not currently supported
+  messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
+  messageSendFormat: "<gold>You -> %chatty_player_displayname%: "
+  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You: "
+  messageSendSound: ""              # Empty for no sound
+  messageReceiveSound: ""           # Empty for no sound
 
 chat:
   bypassFormatPermission: "chatty.chat.bypassformat"
@@ -115,7 +116,7 @@ channels:
     discordsrv: true
     format:
       usePlayerDisplayName: true
-      prefix: "%chatty_player_head %"  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
+      prefix: "%chatty_player_head% "  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
       suffix: ": "                    # Keep in mind it is performance heavy so use sparingly.
       messageFormat: ""               # Format of the message itself. Can change color and font for example
     channelAliases:

@@ -1,8 +1,8 @@
 nicknames:
-  selfSuccess: "<green>You changed your nickname to <i>%player_displayname%</i>!"
+  selfSuccess: "<green>You changed your nickname to <i>%chatty_player_displayname%</i>!"
   selfDenied: "<red>You can't change your nickname!"
   selfEmpty: "<yellow>Removed nickname!"
-  otherSuccess: "<green>You changed %player_name%'s nickname to <i>%player_displayname%</i>!"
+  otherSuccess: "<green>You changed %player_name%'s nickname to <i>%chatty_player_displayname%</i>!"
   otherDenied: "<red>You can't change %player_name%'s nickname!"
   otherEmpty: "<yellow>Removed nickname for %player_name%!"
   invalidPlayer: "<red>That player doesn't exist!"
@@ -11,8 +11,9 @@ nicknames:
   tooLong: "<red>The nickname was too long!"
 
 privateMessages:
-  disabled: "<red>Private messages are disabled."
-  invalidPlayer: "<red>This player is not online or does not exist."
+  disabled: "<red>Private messages are disabled"
+  invalidPlayer: "<red>This player is not online or does not exist"
+  emptyReply: "<red>You have noone to reply to"
 
 ping:
   toggledPingSound: "Ping sound is now <i>%chatty_player_ping_toggle%</i>."
@@ -34,10 +35,10 @@ joinLeave:
 other:
   configReloaded: "<green>Chatty config reloaded."
   messagesReloaded: "<green>Chatty messages reloaded."
-  nickNameChanged: "Nickname set to <white><i>%player_displayname%</i></white>."
+  nickNameChanged: "Nickname set to <white><i>%chatty_player_displayname%</i></white>."
 
 proxies:
-  proxyJoin: "<green>+ <white>| <aqua>%player_displayname%%player_server%)"
-  proxyLeave: "<red>- <white>| <aqua>%player_displayname%"
-  proxySwitchToMessage: "<gray>↑<white> ┃ <aqua>%player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."
-  proxySwitchFromMessage: "<gray>↑<white> ┃ <aqua>%player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."
+  proxyJoin: "<green>+ <white>| <aqua>%chatty_player_displayname%%player_server%)"
+  proxyLeave: "<red>- <white>| <aqua>%chatty_player_displayname%"
+  proxySwitchToMessage: "<gray>↑<white> ┃ <aqua>%chatty_player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."
+  proxySwitchFromMessage: "<gray>↑<white> ┃ <aqua>%chatty_player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."

@@ -7,11 +7,12 @@ useChattyCommandPrefix: true
 
 privateMessages:
   enabled: true
-  proxy: true           # Not currently supported
-  messageSendFormat: "<gold>You -> %player_displayname%:<yellow> "
-  messageReceiveFormat: "<gold>%player_displayname% -> You:<yellow> "
-  messageSendSound: ""      # Empty for no sound
-  messageReceiveSound: ""   # Empty for no sound
+  proxy: true                       # Not currently supported
+  messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
+  messageSendFormat: "<gold>You -> %chatty_player_displayname%: "
+  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You: "
+  messageSendSound: ""              # Empty for no sound
+  messageReceiveSound: ""           # Empty for no sound
 
 chat:
   bypassFormatPermission: "chatty.chat.bypassformat"
