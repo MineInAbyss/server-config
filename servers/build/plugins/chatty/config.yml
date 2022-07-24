@@ -100,12 +100,8 @@ channels:
     channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
     isDefaultChannel: true
     discordsrv: true
-    format:
-      usePlayerDisplayName: true
-      prefix: ":build: %luckperms_prefix% "
-      suffix: ": "
-      messageFormat: ""
-    channelAliases:         # Shortcut commandalias to switch
+    format: ":build: %luckperms_prefix% %chatty_player_displayname%: "
+    channelAliases:
       - "g"
 
   playerhead:
@@ -113,11 +109,7 @@ channels:
     permission: "chatty.channel.playerhead"
     isDefaultChannel: false
     discordsrv: true
-    format:
-      usePlayerDisplayName: true
-      prefix: "%chatty_player_head% "  # %chatty_player_head% will be replaced with the playerhead of the player who sent the message
-      suffix: ": "                    # Keep in mind it is performance heavy so use sparingly.
-      messageFormat: ""               # Format of the message itself. Can change color and font for example
+    format: "%chatty_player_head% %luckperms_prefix %chatty_player_displayname%: "
     channelAliases:
       - "head"
 
@@ -125,11 +117,7 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    format:
-      usePlayerDisplayName: true
-      prefix: ":build::local:"
-      suffix: ": "
-      messageFormat: "<yellow>"
+    format: ":build:%chatty_shift_-4%%chatty_shift_-4%:local: <yellow>%chatty_player_displayname%:<yellow> "
     channelRadius: 500
     channelAliases:
       - "l"
@@ -142,10 +130,6 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    format:
-      usePlayerDisplayName: true
-      prefix: ":build::admin:"
-      suffix: ": "
-      messageFormat: "<red>"
+    format: ":build:%chatty_shift_-4%%chatty_shift_-4%:admin:%chatty_player_displayname%:<red> "
     channelAliases:
       - "a"

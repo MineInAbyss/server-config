@@ -10,10 +10,18 @@ x-particles-vomit: &vomit
   duration: 10t
   iterations: 6
   offset: 3s
-  particles: [SLIME]
+  particles: [ SLIME ]
 features:
   - !<guilds>
-    guildChatPrefix: ":survival::guildchat: "
+    guildChattyChannel:
+      channelType: PRIVATE
+      proxy: false
+      discordsrv: false
+      isDefaultChannel: false
+      isStaffChannel: false
+      format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:guildchat: %chatty_player_displayname%:<gold> "
+      channelRadius: 0
+      channelAliases: [ "guild" ]
     guildNameMaxLength: 30
     guildNameBannedWords:
       - ([^a-zA-Z\s])
@@ -32,8 +40,8 @@ features:
   - !<patreon>
   - !<orth_banking>
   - !<playerprofile>
-  #- !<misc>
-  #- !<shopkeeper>
+    #- !<misc>
+    #- !<shopkeeper>
   #- !<cosmetics>
 layers:
   - name: <#FFA812>Orth
@@ -42,7 +50,7 @@ layers:
     depth:
       start: -1
       end: 0
-    sections: [orth]
+    sections: [ orth ]
     blockBlacklist:
       - LADDER
       - RAIL
@@ -58,10 +66,10 @@ layers:
       - !<potion>
         strength: 2
         duration: 5s
-        effects: [HUNGER]
+        effects: [ HUNGER ]
       - !<particles>
         <<: *vomit
-    sections: [l1s0,l1s1,l1s2,l1s3]
+    sections: [ l1s0,l1s1,l1s2,l1s3 ]
     blockBlacklist:
       - LADDER
       - RAIL
@@ -77,7 +85,7 @@ layers:
       - !<potion>
         strength: 2
         duration: 6s
-        effects: [HUNGER]
+        effects: [ HUNGER ]
       - !<potion>
         strength: 1
         duration: 4s
@@ -88,7 +96,7 @@ layers:
           - POISON
       - !<particles>
         <<: *vomit
-    sections: [l2s0,l2s1,l2s2]
+    sections: [ l2s0,l2s1,l2s2 ]
     blockBlacklist:
       - LADDER
       - RAIL
@@ -104,7 +112,7 @@ layers:
       - !<potion>
         strength: 3
         duration: 8s
-        effects: [HUNGER]
+        effects: [ HUNGER ]
       - !<potion>
         strength: 1
         duration: 10s
@@ -116,7 +124,7 @@ layers:
         strength: 1
         duration: 8s
         offset: 8t
-        effects: [WEAKNESS]
+        effects: [ WEAKNESS ]
       - !<particles>
         <<: *vomit
       # - !<hallucinations>
@@ -147,7 +155,7 @@ layers:
       - RAIL
       - POWERED_RAIL
       - VINE
-    sections: [l3s0,l3s1,l3s2,l3s3]
+    sections: [ l3s0,l3s1,l3s2,l3s3 ]
   - name: <#9E1E84>The Goblets of Giants
     sub: <#77237A>4020–5850 blocks
     deathMessage: in the <#9E1E84>Goblets of Giants<white> :moonw:<white>
@@ -187,7 +195,7 @@ layers:
           - ambient.cave
           - entity.creeper.primed
           - mineinabyss:entity.orbpiercer.ambient
-    sections: [l4s1,l4s2,l4s3,l4s4,l4s5]
+    sections: [ l4s1,l4s2,l4s3,l4s4,l4s5 ]
   - name: <#3B3B3B>Sea of Corpses
     sub: <#545454>5850–7200 blocks
     deathMessage: in the <#3B3B3B>Sea of Corpses<white> :blackw:<white>
@@ -225,4 +233,4 @@ layers:
           - ambient.cave
           - ambient.underwater.loop.additions.ultra.rare
           - mineinabyss:entity.steve.hurt
-    sections: [l5s1,l5s2,l5s3]
+    sections: [ l5s1,l5s2,l5s3 ]
