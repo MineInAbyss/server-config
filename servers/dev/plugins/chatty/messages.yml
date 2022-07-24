@@ -1,8 +1,8 @@
 nicknames:
-  selfSuccess: "<green>You changed your nickname to <i>%chatty_player_displayname%</i>!"
+  selfSuccess: "<green>You changed your nickname to <i>%chatty_player_displayname%!"
   selfDenied: "<red>You can't change your nickname!"
   selfEmpty: "<yellow>Removed nickname!"
-  otherSuccess: "<green>You changed %player_name%'s nickname to <i>%chatty_player_displayname%</i>!"
+  otherSuccess: "<green>You changed %player_name%'s nickname to <i>%chatty_player_displayname%!"
   otherDenied: "<red>You can't change %player_name%'s nickname!"
   otherEmpty: "<yellow>Removed nickname for %player_name%!"
   invalidPlayer: "<red>That player doesn't exist!"
@@ -35,7 +35,7 @@ joinLeave:
 other:
   configReloaded: "<green>Chatty config reloaded."
   messagesReloaded: "<green>Chatty messages reloaded."
-  nickNameChanged: "Nickname set to <white><i>%chatty_player_displayname%</i></white>."
+  nickNameChanged: "Nickname set to <white><i>%chatty_player_displayname%."
 
 proxies:
   proxyJoin: "<green>+ <white>| <aqua>%chatty_player_displayname%%player_server%)"
