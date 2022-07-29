@@ -137,8 +137,8 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    format: "<hover:show_text:':dev:%chatty_shift_-4%%chatty_shift_-4%:local: 
-    <light_purple><b>%chatty_player_displayname%<newline>
+    format: ":dev:%chatty_shift_-4%%chatty_shift_-4%:local: %luckperms_prefix%
+    <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
@@ -155,7 +155,7 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    format: ":dev:%chatty_shift_-4%%chatty_shift_-4%:admin: 
+    format: ":dev:%chatty_shift_-4%%chatty_shift_-4%:admin: %luckperms_prefix% 
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
