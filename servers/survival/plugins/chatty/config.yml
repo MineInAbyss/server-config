@@ -109,7 +109,11 @@ channels:
     isDefaultChannel: true
     proxy: true
     discordsrv: true
-    format: ":survival: %luckperms_prefix% %chatty_player_displayname%: "
+    format: "<hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%>:survival: %luckperms_prefix% %chatty_player_displayname%: "
     channelAliases:
       - "g"
 
@@ -119,7 +123,11 @@ channels:
     isDefaultChannel: false
     proxy: true
     discordsrv: true
-    format: "%chatty_player_head% %luckperms_prefix %chatty_player_displayname%: "
+    format: "<hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%>%chatty_player_head% %luckperms_prefix %chatty_player_displayname%: "
     channelAliases:
       - "head"
 
@@ -127,7 +135,11 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:local: <yellow>%chatty_player_displayname%:<yellow> "
+    format: "<hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%>:survival:%chatty_shift_-4%%chatty_shift_-4%:local: <yellow>%chatty_player_displayname%:<yellow> "
     channelRadius: 500
     channelAliases:
       - "l"
@@ -140,6 +152,10 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:admin:%chatty_player_displayname%:<red> "
+    format: "<hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%>:survival:%chatty_shift_-4%%chatty_shift_-4%:admin:%chatty_player_displayname%:<red> "
     channelAliases:
       - "a"
