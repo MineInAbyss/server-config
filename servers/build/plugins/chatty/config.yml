@@ -112,7 +112,7 @@ channels:
     format: ":build: %luckperms_prefix% 
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%h'><newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
     <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
     channelAliases:
       - "g"
