@@ -112,7 +112,7 @@ channels:
     format: ":survival: %luckperms_prefix%
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
     channelAliases:
@@ -127,7 +127,7 @@ channels:
     format: "%chatty_player_head% %luckperms_prefix% 
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
     channelAliases:
@@ -140,7 +140,7 @@ channels:
     format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:local: 
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%><yellow>%chatty_player_displayname%:<yellow> "
     channelRadius: 500
@@ -158,7 +158,7 @@ channels:
     format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:admin: 
     <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%>%chatty_player_displayname%:<red> "
     channelAliases:
