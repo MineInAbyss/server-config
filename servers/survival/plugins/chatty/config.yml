@@ -114,7 +114,7 @@ channels:
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%> %chatty_player_displayname%: "
+    <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
     channelAliases:
       - "g"
 
