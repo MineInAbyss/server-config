@@ -15,6 +15,14 @@ privateMessages:
   invalidPlayer: "<red>This player is not online or does not exist"
   emptyReply: "<red>You have noone to reply to"
 
+spying:
+  commandSpyOn: "<green>You are now spying on commands"
+  commandSpyOff: "<red>You are no longer spying on commands"
+  startSpyingOnChannel: "<gold>Started spying on <italic>%chatty_player_spy_last%"
+  stopSpyingOnChannel: "<gold>Stopped spying on <italic>%chatty_player_spy_last%"
+  cannotSpyOnChannel: "<red>You cannot spy on <italic>%chatty_player_spy_last%"
+  noChannelWithName: "<red>No channel by this name exists."
+
 ping:
   toggledPingSound: "Ping sound is now <i>%chatty_player_ping_toggle%</i>."
   changedPingSound: "Ping sound set to <i>%chatty_player_ping_sound%</i>"

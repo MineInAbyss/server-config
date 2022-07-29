@@ -4,17 +4,24 @@
 # Please note: This is not the most performance friendly feature so use the placeholder sparingly.
 playerHeadFont: "minecraft:chatty_heads"
 
+# Keep in mind this needs to also be enabled in your [server.properties] file
+# It will warn all your players when they first join
+# that the server can read all their messages before they are sent.
+# Chatty does not do anything with it outside the [ChatPreview.kt] file.
+enableChatPreviews: true
+
 privateMessages:
   enabled: true
   proxy: true                       # Not currently supported
   messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
-  messageSendFormat: "<gold>You -> %chatty_player_displayname%: "
-  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You: "
+  messageSendFormat: "<gold>You -> %chatty_player_displayname%</gold><gold>: "
+  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You</gold><gold>: "
   messageSendSound: ""              # Empty for no sound
   messageReceiveSound: ""           # Empty for no sound
 
 chat:
   bypassFormatPermission: "chatty.chat.bypassformat"
+  commandSpyFormat: "<gold>%chatty_player_displayname%</gold><yellow>: "
   allowedTags: # Available formats are:
     - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
     - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
@@ -80,6 +87,7 @@ leave:
 
 proxy:
   enableProxySwitchMessages: false
+  discordSrvChannelID: "Global"
 
 ping:
   enabledChannels:          # channelIds to enable pings for
