@@ -14,5 +14,8 @@
 #    - "host_vars/{{ server_name }}.yml"
 
   tasks:
+    - apt:
+        name: rsync
+        state: present
     - include: tasks/copy-configs.yml
       when: localhash != githash
