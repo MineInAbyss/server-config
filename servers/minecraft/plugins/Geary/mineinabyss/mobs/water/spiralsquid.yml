@@ -18,7 +18,8 @@
 - !<mobzy:sounds>
 - !<geary:bucketable>
   bucketLiquidRequired: WATER
-  bucketItem: mineinabyss:spiralsquid_bucket
+  bucketItem:
+    prefab: mineinabyss:spiralsquid_bucket
   bucketMob: mineinabyss:spiralsquid
 - !<mobzy:pathfinders>
   override: false

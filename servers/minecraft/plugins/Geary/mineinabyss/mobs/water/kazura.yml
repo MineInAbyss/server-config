@@ -20,7 +20,8 @@
 - !<mobzy:sounds>
 - !<geary:bucketable>
   bucketLiquidRequired: WATER
-  bucketItem: mineinabyss:kazura_bucket
+  bucketItem:
+    prefab: mineinabyss:kazura_bucket
   bucketMob: mineinabyss:kazura
 - !<mobzy:pathfinders>
   override: false

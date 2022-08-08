@@ -21,7 +21,8 @@
 - !<mobzy:sounds>
 - !<geary:bucketable>
   bucketLiquidRequired: WATER
-  bucketItem: mineinabyss:hamashirama_bucket
+  bucketItem:
+    prefab: mineinabyss:hamashirama_bucket
   bucketMob: mineinabyss:hamashirama
 - !<mobzy:pathfinders>
   override: false

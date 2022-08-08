@@ -19,7 +19,8 @@
 - !<mobzy:sounds>
 - !<geary:bucketable>
   bucketLiquidRequired: WATER
-  bucketItem: mineinabyss:demonfish_bucket
+  bucketItem:
+    prefab: mineinabyss:demonfish_bucket
   bucketMob: mineinabyss:demonfish
 - !<mobzy:pathfinders>
   override: false
