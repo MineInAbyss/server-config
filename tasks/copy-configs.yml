@@ -10,7 +10,7 @@
     src: "servers/{{ server_name }}/"
 
 - name: Update local hash
-  copy:
+  synchronize:
     src: ".git/refs/heads/master"
     dest: "/home/container/mia-githash"
 

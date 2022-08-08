@@ -4,7 +4,7 @@
 
 # TODO replace secrets
 - name: Copy source to destination
-  copy:
+  synchronize:
     src: "{{ src }}"
     dest: "{% if dest is defined %}{{ dest }}{% else %}/home/container{% endif %}"
 #    owner: "{{ item.name }}"
