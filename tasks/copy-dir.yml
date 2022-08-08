@@ -9,5 +9,4 @@
     dest: "{% if dest is defined %}{{ dest }}{% else %}/home/container{% endif %}"
 #    owner: "{{ item.name }}"
 #    group: "{{ item.name }}"
-    mode: "{{ copy_perms }}"
   when: fileinfo.stat.exists
