@@ -8,11 +8,13 @@
     copy_perms: "774"
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
     bungee_server: "{{ lookup('env', 'BUNGEE_SERVER') | default('false') }}"
-    localhash: "{{ lookup('file', '/home/container/mia-githash') | default('none') }}"
-    githash: "{{ lookup('file', '.git/refs/heads/master') | default('none') }}"
+    localhash: "{{ lookup('file', '.git/refs/heads/master') }}"
 #  vars_files: # future perhaps
 #    - "host_vars/{{ server_name }}.yml"
 
   tasks:
-    - include: tasks/copy-configs.yml
-      when: localhash != githash
+    - command: "git rev-parse HEAD"
+      register: githash
+
+    - include_tasks: tasks/copy-configs.yml
+      when: localhash != githash.stdout_lines[0]
