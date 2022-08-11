@@ -24,7 +24,7 @@
     - !<geary:condition.chance>
       percentage: 0.6
 - !<geary:event.triggers>
-  - geary:event.touched -> child(blindness)
+  - other geary:event.touched this -> this child(blindness) other
 - !<geary:event.conditions>
   - any -> child(blindnessCondition) -> child(blindness)
 - !<mobzy:death_loot>

@@ -25,5 +25,5 @@
   showDepth:
     - !<mineinabyss:show_depth>
 - !<geary:event.triggers>
-  - geary:event.right_clicked this -> child(showDepth)
+  - other geary:event.right_clicked this -> this child(showDepth) other
 - !<geary:no_vanilla_interactions>

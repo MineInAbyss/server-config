@@ -22,6 +22,6 @@
     - !<geary:check.health>
       within: 2.0..200.0
 - !<geary:event.triggers>
-  - geary:event.ingested -> child(flask)
+  - other geary:event.ingested this -> this child(flask) other
 - !<geary:event.conditions>
   - any -> child(flaskCondition) -> child(flask)

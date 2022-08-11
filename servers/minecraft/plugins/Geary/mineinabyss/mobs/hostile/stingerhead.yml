@@ -31,7 +31,7 @@
       percentage: 0.5
   projectile:
     - !<geary:event.triggers>
-      - geary:event.touched -> parent.child(poison)
+      - other geary:event.touched this -> this parent.child(poison) other
     - !<mobzy:type>
       baseClass: minecraft:snowball
     - !<mobzy:item_model>
@@ -39,7 +39,7 @@
         type: SNOWBALL
         customModelData: 100
 - !<geary:event.triggers>
-  - geary:event.touched -> child(poison)
+  - other geary:event.touched this -> this child(poison) other
 - !<geary:event.conditions>
   - any -> child(poisonCondition) -> child(poison)
 - !<mobzy:death_loot>
