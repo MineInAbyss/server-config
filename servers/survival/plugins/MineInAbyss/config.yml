@@ -216,7 +216,7 @@ layers:
           - HUNGER
           - SLOW
           - SLOW_DIGGING
-          - BLINDNESS
+          - DARKNESS
           - WEAKNESS
       - !<potion>
         strength: 1
