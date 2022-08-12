@@ -7,6 +7,6 @@
   synchronize:
     src: "{{ src }}"
     dest: "{% if dest is defined %}{{ dest }}{% else %}/home/container{% endif %}"
-#    owner: "{{ item.name }}"
-#    group: "{{ item.name }}"
+  #    owner: "{{ item.name }}"
+  #    group: "{{ item.name }}"
   when: fileinfo.stat.exists
