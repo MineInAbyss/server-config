@@ -8,7 +8,7 @@
     copy_perms: "774"
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
     bungee_server: "{{ lookup('env', 'BUNGEE_SERVER') | default('false') }}"
-    localhash: "{{ lookup('file', '.git/refs/heads/master') }}"
+    localhash: "{{ lookup('file', '/home/container/mia-githash') | default('none') }}"
 #  vars_files: # future perhaps
 #    - "host_vars/{{ server_name }}.yml"
 
@@ -17,4 +17,4 @@
       register: githash
 
     - include_tasks: tasks/copy-configs.yml
-      when: localhash != githash.stdout_lines[0]
+      when: localhash != githash.stdout
