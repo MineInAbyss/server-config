@@ -8,3 +8,16 @@
       - <yellow>Can be obtained by hunting down
       - <yellow>an <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
       - <#824E21><i>Seems like a great source for food.
+- !<geary:food>
+  saturation: 4
+  hunger: 3
+  replacement:
+    prefab: mineinabyss:ashimite_meat_bone
+  effectChance: 0.35
+  effectList:
+    - type: HUNGER
+      duration: 10s
+      amplifier: 2
+      isAmbient: true
+      hasParticles: true
+      hasIcon: true
