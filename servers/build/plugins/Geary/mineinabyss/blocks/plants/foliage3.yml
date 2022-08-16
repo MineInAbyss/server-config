@@ -1,0 +1,15 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <#7a4e48>Foliage 3
+    customModelData: 3003
+- !<blocky:block>
+  blockType: GROUND
+  blockId: 3
+- !<blocky:info>
+  blockBreakTime: 2
+  blockDrop:
+    - item:
+        prefab: mineinabyss:foliage3
+      minAmount: 1
