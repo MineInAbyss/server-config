@@ -1,0 +1,24 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: LEATHER_BOOTS
+    displayName: "<#c67355>Copper Boots"
+    customModelData: 1
+    color:
+      red: 255
+      green: 102
+      blue: 0
+    itemFlags:
+      - HIDE_DYE
+      - HIDE_ATTRIBUTES
+    attributeModifiers:
+      - attribute: GENERIC_ARMOR
+        modifier:
+          name: generic.armor
+          operation: ADD_NUMBER
+          amount: 10
+      - attribute: GENERIC_ARMOR_TOUGHNESS
+        modifier:
+          name: generic.armorToughness
+          operation: ADD_NUMBER
+          amount: 3
