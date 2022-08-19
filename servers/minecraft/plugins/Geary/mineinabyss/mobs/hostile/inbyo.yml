@@ -35,8 +35,15 @@
       - type: POISON
         duration: 1s
         amplifier: 1
+        isAmbient: true
+        hasParticles: true
+        hasIcon: true
       - type: HARM
+        duration: 1t
         amplifier: 1
+        isAmbient: true
+        hasParticles: true
+        hasIcon: true
   projectile:
     - !<geary:event.triggers>
       - other geary:event.touched this -> this parent.child(poison) other

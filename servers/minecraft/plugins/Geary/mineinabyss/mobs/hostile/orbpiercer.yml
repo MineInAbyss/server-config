@@ -25,6 +25,7 @@
         duration: 6s
         amplifier: 5
       - type: HARM
+        duration: 1t
         amplifier: 1
   poisonCondition:
     - !<geary:condition.chance>
