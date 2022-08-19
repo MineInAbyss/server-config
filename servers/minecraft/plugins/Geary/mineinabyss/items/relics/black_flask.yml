@@ -17,6 +17,7 @@
         duration: 7s
         amplifier: 3
       - type: HARM
+        duration: 1t
         amplifier: 2
   flaskCondition:
     - !<geary:check.health>
