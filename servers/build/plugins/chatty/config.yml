@@ -142,7 +142,7 @@ channels:
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%><yellow>%chatty_player_displayname%:<yellow> "
-    channelRadius: 500
+    channelRadius: 0
     channelAliases:
       - "l"
 

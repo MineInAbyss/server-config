@@ -9,12 +9,17 @@
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
       - <yellow>and cooking its meat.
       - <#824E21><i>Very tasty and rich in nutrients!
+#- !<geary:food>
+#  saturation: 8
+#  hunger: 10
+#  replacement:
+#    prefab: mineinabyss:ashimite_meat_bone
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
     - !<furnace>
       input:
-        prefab: mineinabyss:ashimite_meat_raw
+        prefab: mineinabyss:ashimite_meat_bone
       experience: 1f
       cookingTime: 100
     - !<smoking>
