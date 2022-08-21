@@ -33,5 +33,6 @@
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
-      items: [ WARPED_FUNGUS ]
+      items:
+        - type: WARPED_FUNGUS
       losesInterest: false

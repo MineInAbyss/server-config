@@ -24,7 +24,8 @@
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
-      items: [ SWEET_BERRIES ]
+      items:
+        - type: SWEET_BERRIES
     3: !<minecraft:behavior.avoid_player>
       radius: 10
     4: !<minecraft:behavior.random_stroll_land>

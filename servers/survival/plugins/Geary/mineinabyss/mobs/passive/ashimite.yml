@@ -38,7 +38,8 @@
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
-      items: [ SALMON ]
+      items:
+        - type: CHORUS_FRUIT
       losesInterest: false
     3: !<minecraft:behavior.panic>
     4: !<minecraft:behavior.avoid_player>

@@ -24,11 +24,12 @@
       dropChance: 0.9000
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
-  override: false
+  override: true
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>
-      items: [ PRISMARINE_SHARD ]
+      items:
+        - prefab: mineinabyss:kakatsumuri_shell
       losesInterest: false
     3: !<minecraft:behavior.avoid_player>
       radius: 15
