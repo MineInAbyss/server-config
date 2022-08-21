@@ -1,0 +1,21 @@
+# HappyHud by Ehhthan
+generate-default-files: true
+
+layout:
+  default: 'test-layout'
+
+check-update: 5
+
+decimal-format: '#.##'
+
+action-bar:
+  font: default
+  position:
+    x: 0.0
+    y: 0.0
+  offset:
+    x: 0
+    y: 0
+
+# Do not change this.
+config-version: 1

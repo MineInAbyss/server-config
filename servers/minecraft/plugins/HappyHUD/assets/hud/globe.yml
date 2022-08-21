@@ -1,0 +1,17 @@
+globe:
+  layers:
+    mana:
+      texture:
+        path: assets/globe/fill.png
+      color: blue
+      offset:
+        x: 2
+        y: -2
+      function:
+        listener: air
+        increment: 22
+        orientation: vertical
+        reversed: false
+    outline:
+      texture:
+        path: assets/globe/outline.png

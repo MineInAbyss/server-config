@@ -1,0 +1,45 @@
+mineinabyss-curse-bleeding:
+  layers:
+    text:
+      text: "%fill-value%/%fill-max%"
+      font: "default"
+      offset:
+        x: 10
+        y: 2
+    icon:
+      texture:
+        path:
+          assets/mineinabyss/bleeding.png
+        offset:
+          x: -5
+          y: 2
+    fill:
+      texture:
+        path: assets/vanilla/exp_bar_short_fill.png
+      color: "#f23a3a"
+      offset:
+        x: 0
+        y: 0
+      function:
+        listener: health
+        increment: 13
+        orientation: horizontal
+      outline:
+        texture:
+          path: assets/vanilla/exp_bar_short_outline.png
+mineinabyss-orthbanking-coins:
+  layers:
+    text:
+      text: "%mineinabyss_orthbanking_coins%"
+      font: "orthbanking"
+      offset:
+        x: 0
+        y: 0
+mineinabyss-orthbanking-tokens:
+  layers:
+    text:
+      text: "%mineinabyss_orthbanking_tokens%"
+      font: "orthbanking"
+      offset:
+        x: 0
+        y: 0

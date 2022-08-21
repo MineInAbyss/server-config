@@ -1,0 +1,6 @@
+mana:
+  value: '%mmocore_mana%'
+  max: '%mmocore_stat_max_mana%'
+test:
+  value: '%player_health%'
+  max: '%player_max_health%'

@@ -1,0 +1,94 @@
+vanilla-health:
+  layers:
+    text:
+      text: "%fill-value%/%fill-max%"
+      font: "default"
+      offset:
+        x: 10
+        y: 2
+    icon:
+      texture:
+        path: assets/vanilla/heart.png
+      offset:
+        x: -5
+        y: 2
+    fill:
+      texture:
+        path: assets/vanilla/exp_bar_short_fill.png
+      color: "#f23a3a"
+      offset:
+        x: 0
+        y: 0
+      function:
+        listener: health
+        increment: 13
+        orientation: horizontal
+    outline:
+      texture:
+        path: assets/vanilla/exp_bar_short_outline.png
+vanilla-hunger:
+  layers:
+    icon:
+      texture:
+        path: assets/vanilla/food.png
+      offset:
+        x: -5
+        y: 2
+    fill:
+      texture:
+        path: assets/vanilla/exp_bar_short_fill.png
+      color: "#8c7965"
+      offset:
+        x: 0
+        y: 0
+      function:
+        listener: food
+        increment: 10
+        orientation: horizontal
+    outline:
+      texture:
+        path: assets/vanilla/exp_bar_short_outline.png
+vanilla-armor:
+  layers:
+    icon:
+      texture:
+        path: assets/vanilla/armor.png
+      offset:
+        x: -5
+        y: 2
+    fill:
+      texture:
+        path: assets/vanilla/exp_bar_short_fill.png
+      color: "#a1acbf"
+      offset:
+        x: 0
+        y: 0
+      function:
+        listener: armor
+        increment: 13
+        orientation: horizontal
+    outline:
+      texture:
+        path: assets/vanilla/exp_bar_short_outline.png
+vanilla-air:
+  layers:
+    icon:
+      texture:
+        path: assets/vanilla/air.png
+      offset:
+        x: -5
+        y: 2
+    fill:
+      texture:
+        path: assets/vanilla/exp_bar_short_fill.png
+      color: "#525aff"
+      offset:
+        x: 0
+        y: 0
+      function:
+        listener: air
+        increment: 13
+        orientation: horizontal
+    outline:
+      texture:
+        path: assets/vanilla/exp_bar_short_outline.png

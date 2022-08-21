@@ -1,0 +1,39 @@
+sword:
+  layers:
+    health-text:
+      text: "Health"
+      font: "default-outline"
+      offset:
+        x: 2
+        y: -3
+    health-bar:
+      texture:
+        path: assets/sword/fill_health.png
+      color: white
+      offset:
+        x: 2
+        y: -6
+      function:
+        listener: health
+        increment: 15
+        orientation: horizontal
+    mana-text:
+      text: "Mana"
+      font: "default-outline"
+      offset:
+        x: 2
+        y: -12
+    mana-bar:
+      texture:
+        path: assets/sword/fill_mana.png
+      color: white
+      offset:
+        x: 2
+        y: -12
+      function:
+        listener: exp
+        increment: 15
+        orientation: horizontal
+    outline:
+      texture:
+        path: assets/sword/outline.png
