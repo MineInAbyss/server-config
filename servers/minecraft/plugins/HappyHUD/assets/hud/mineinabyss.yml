@@ -27,6 +27,7 @@ mineinabyss-curse-bleeding:
       outline:
         texture:
           path: assets/vanilla/exp_bar_short_outline.png
+
 mineinabyss-orthbanking-coins:
   layers:
     text:
@@ -35,6 +36,7 @@ mineinabyss-orthbanking-coins:
       offset:
         x: 0
         y: 0
+
 mineinabyss-orthbanking-tokens:
   layers:
     text:
@@ -43,3 +45,60 @@ mineinabyss-orthbanking-tokens:
       offset:
         x: 0
         y: 0
+
+mineinabyss-temperature:
+  layers:
+    text:
+      text: "%mineinabyss_temperature%"
+      font: "default"
+      offset:
+        x: 0
+        y: 0
+
+mineinabyss-humidity:
+  layers:
+    text:
+      text: "%mineinabyss_humidity%"
+      font: "default"
+      offset:
+        x: 0
+        y: 0
+
+mineinabyss-depth:
+  layers:
+    text:
+      text: "%mineinabyss_depth%"
+      font: "default"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/depth_meter.png
+        offset:
+          x: 100
+          y: 50
+
+mineinabyss-starcompass:
+  layers:
+    text:
+      text: "%mineinabyss_starcompass_needle%"
+      font: "default"
+      offset:
+        x: 0
+        y: 0
+
+mineinabyss-layer:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "default"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/star_compass.png
+        offset:
+          x: -100
+          y: -50

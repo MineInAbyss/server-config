@@ -1,0 +1,30 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: POTION
+    displayName: "<#b5955f>Haste Potion"
+    potionData:
+      type: HASTE
+      extended: true
+      upgraded: false
+    color:
+      red: 181
+      green: 149
+      blue: 95
+- !<geary:food>
+  hunger: 0
+  saturation: 0
+  replacement:
+    type: GLASS_BOTTLE
+  effectList:
+    - type: fast_digging
+      duration: 6m
+- !<looty:potion_mixes>
+  result:
+    prefab: mineinabyss:haste_potion_extended
+  potionmixes:
+    - !<potionmix>
+      ingredient:
+        type: REDSTONE
+      input:
+        prefab: mineinabyss:haste_potion

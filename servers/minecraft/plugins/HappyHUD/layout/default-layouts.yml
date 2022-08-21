@@ -1,18 +1,35 @@
 test-layout:
   elements:
-    coins:
-      asset: 'mineinabyss-orthbanking-coins'
+    health:
+      asset: 'vanilla-health'
       position:
-        x: 50
+        x: 50.0
         y: 0
       offset:
-        x: 105.0
-        y: 10.0
-    tokens:
-      asset: 'mineinabyss-orthbanking-tokens'
+        x: -60
+        y: 50
+    food:
+      type: 'asset'
+      asset: 'vanilla-hunger'
       position:
-        x: 50
-        y: 0
+        x: 50.0
+        y: 0.0
       offset:
-        x: 100.0
-        y: 24.0
+        x: -60
+        y: 60
+    armor:
+      asset: 'vanilla-armor'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 60
+        y: 50
+    air:
+      asset: 'vanilla-air'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 60
+        y: 60

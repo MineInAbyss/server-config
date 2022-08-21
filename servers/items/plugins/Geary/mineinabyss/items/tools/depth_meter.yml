@@ -24,6 +24,9 @@
 - !<geary:children>
   showDepth:
     - !<mineinabyss:show_depth>
+  toggleDepthHud:
+    - !<mineinabyss:toggle_depth_hud>
 - !<geary:event.triggers>
+  - other geary:event.left_clicked this -> this child(toggleDepthHud) other
   - other geary:event.right_clicked this -> this child(showDepth) other
 - !<geary:no_vanilla_interactions>

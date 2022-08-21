@@ -1,0 +1,36 @@
+balance:
+  elements:
+    coins:
+      asset: 'mineinabyss-orthbanking-coins'
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: 105.0
+        y: 10.0
+    tokens:
+      asset: 'mineinabyss-orthbanking-tokens'
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: 100.0
+        y: 24.0
+depth:
+  elements:
+    depth:
+      asset: 'mineinabyss-depth'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: 60
+        y: -12.0
+    layer:
+      asset: 'mineinabyss-layer'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -60
+        y: -12.0

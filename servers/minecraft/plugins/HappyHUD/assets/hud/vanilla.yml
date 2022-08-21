@@ -43,7 +43,7 @@ vanilla-hunger:
         y: 0
       function:
         listener: food
-        increment: 10
+        increment: 13
         orientation: horizontal
     outline:
       texture:
