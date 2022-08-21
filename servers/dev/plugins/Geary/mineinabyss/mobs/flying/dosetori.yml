@@ -1,0 +1,56 @@
+- !<geary:inherit>
+  from: [mineinabyss:hostile_flying]
+- !<geary:display_name> "<#FFF821>Dosetori"
+- !<mobzy:modelengine>
+  modelId: dosetori
+- !<mobzy:attributes>
+  maxHealth: 35
+  followRange: 50
+  attackDamage: 6
+  attackKnockback: 1.3000
+  knockbackResistance: 0.1300
+  flyingSpeed: 10
+  width: 2
+  height: 0.5000
+- !<mobzy:death_loot>
+  minExp: 60
+  maxExp: 100
+  drops:
+    - item:
+        prefab: mineinabyss:dosetori_meat_raw
+      cooked:
+        prefab: mineinabyss:dosetori_meat_cooked
+      minAmount: 1
+      maxAmount: 2
+    - item:
+        prefab: mineinabyss:dosetori_wingflap
+      minAmount: 1
+      maxAmount: 3
+      dropChance: 0.7000
+    - item:
+        prefab: mineinabyss:dosetori_bone
+      minAmount: 1
+      maxAmount: 3
+      dropChance: 0.8000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.dosetori.ambient
+  death: mineinabyss:entity.dosetori.death
+  hurt: mineinabyss:entity.dosetori.hurt
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 50
+  goals:
+    1: !<mobzy:behavior.flying_damage_target>
+    2: !<mobzy:behavior.flying_dive_on_target>
+      #diveVelocity: -0.5000
+      #minHeight: 7
+      #maxHeight: 10
+      #startDiveDistance: 10
+      #bashVelMultiplier: 0.5000
+      bashDuration: 20
+    3: !<mobzy:behavior.fly_towards_target>
+    4: !<mobzy:behavior.idle_fly>

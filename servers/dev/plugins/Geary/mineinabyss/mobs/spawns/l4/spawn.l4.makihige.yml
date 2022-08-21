@@ -1,0 +1,4 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.makihige ]
+- !<mobzy:spawn_regions>
+  keys: [ layerfour ]

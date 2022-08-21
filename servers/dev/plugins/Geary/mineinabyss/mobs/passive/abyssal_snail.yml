@@ -1,0 +1,38 @@
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#785F34>Abyssal Snail"
+- !<mobzy:modelengine>
+  modelId: abyssal_snail
+- !<mobzy:attributes>
+  maxHealth: 40
+  movementSpeed: 0.1000
+  knockbackResistance: 0.1500
+  followRange: 20
+  width: 2.5000
+  height: 2
+- !<mobzy:death_loot>
+  minExp: 25
+  maxExp: 40
+  drops:
+    - item:
+        prefab: mineinabyss:abyssal_snail_shell
+      dropChance: 0.7000
+    - item:
+        prefab: mineinabyss:abyssal_snail_gunk
+      maxAmount: 2
+- !<mobzy:rideable>
+  requiresItemToSteer: true
+  steerItem:
+    prefab: mineinabyss:tesuchi_scale_on_a_stick
+- !<mobzy:sounds>
+  pitch: 0.2
+  ambient: minecraft:entity.axolotl.idle_air
+  death: minecraft:entity.axolotl.death
+  hurt: minecraft:entity.axolotl.hurt
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.float>
+    2: !<minecraft:behavior.panic>
+      speedModifier: 3
+    3: !<minecraft:behavior.random_stroll_land>
+    4: !<minecraft:behavior.look_at_player>

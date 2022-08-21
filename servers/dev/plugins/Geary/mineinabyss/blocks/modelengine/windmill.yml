@@ -1,0 +1,11 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <#33404d>Windmill
+    customModelData: 1002
+- !<blocky:modelengine>
+- !<geary:inherit>
+  from: [mineinabyss:block]
+- !<mobzy:modelengine>
+  modelId: windmill

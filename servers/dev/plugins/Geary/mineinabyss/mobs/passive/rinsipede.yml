@@ -1,0 +1,29 @@
+- !<geary:inherit>
+  from: [mineinabyss:passive]
+- !<geary:display_name> "<#FFFF99>Rinsipede"
+- !<mobzy:modelengine>
+  modelId: rinsipede
+- !<mobzy:attributes>
+  maxHealth: 10
+  movementSpeed: 0.3000
+  knockbackResistance:
+  followRange: 20
+  width: 0.6
+  height: 0.25
+- !<mobzy:death_loot>
+  minExp: 15
+  maxExp: 25
+  drops:
+    - item:
+        prefab: mineinabyss:rinsipede_segments
+      dropChance: 0.8000
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  override: false
+  goals:
+    1: !<minecraft:behavior.float>
+    2: !<minecraft:behavior.avoid_player>
+      radius: 15
+    3: !<minecraft:behavior.panic>
+      speedModifier: 4
+    4: !<minecraft:behavior.random_stroll_land>

@@ -1,0 +1,86 @@
+- !<geary:inherit>
+  from: [mineinabyss:hostile]
+- !<geary:display_name> "<#9C0F2C>Stingerhead"
+- !<mobzy:modelengine>
+  modelId: stingerhead
+- !<mobzy:attributes>
+  maxHealth: 200
+  movementSpeed: 0.5000
+  attackDamage: 40
+  attackKnockback: 2
+  knockbackResistance: 0.5000
+  followRange: 50
+  width: 2
+  height: 3
+- !<geary:bossbar>
+  title: Stingerhead
+  color: RED
+  style: NOTCHED_10
+  range: 100
+- !<geary:children>
+  poison:
+    - !<geary:apply> geary:potion_effects
+    - !<geary:potion_effects>
+      - type: POISON
+        duration: 6s
+        amplifier: 5
+      - type: HARM
+        duration: 1t
+        amplifier: 1
+  poisonCondition:
+    - !<geary:condition.chance>
+      percentage: 0.5
+  projectile:
+    - !<geary:event.triggers>
+      - other geary:event.touched this -> this parent.child(poison) other
+    - !<mobzy:type>
+      baseClass: minecraft:snowball
+    - !<mobzy:item_model>
+      item:
+        type: SNOWBALL
+        customModelData: 100
+- !<geary:event.triggers>
+  - other geary:event.touched this -> this child(poison) other
+- !<geary:event.conditions>
+  - any -> child(poisonCondition) -> child(poison)
+- !<mobzy:death_loot>
+  minExp: 400
+  maxExp: 500
+  drops:
+    - item:
+        prefab: mineinabyss:stingerhead_scale
+      maxAmount: 1
+      dropChance: 0.2500
+    - item:
+        prefab: mineinabyss:stingerhead_flesh
+      minAmount: 1
+      maxAmount: 2
+      dropChance: 1.0000
+    - item:
+        prefab: mineinabyss:stingerhead_eye
+      maxAmount: 2
+      dropChance: 0.4000
+- !<mobzy:sounds>
+  ambient: mineinabyss:entity.stingerhead.ambient
+  death: mineinabyss:entity.stingerhead.death
+  hurt: mineinabyss:entity.stingerhead.hurt
+- !<mobzy:pathfinders>
+  targets:
+    1: !<mobzy:target.attacker>
+      range: 200
+    2: !<mobzy:target.nearby_player>
+      range: 50
+  goals:
+    1: !<minecraft:behavior.melee_attack>
+      seeThroughWalls: true
+    2: !<mobzy:behavior.throw_items>
+      projectileAngularDiameter: 3
+      projectileCountPerThrow: 3
+      spawn: child(projectile)
+      cooldown: 6s
+    3: !<minecraft:behavior.leap_at_target>
+      jumpHeight: 0.3000
+    4: !<minecraft:behavior.random_stroll_land>
+    8: !<minecraft:behavior.look_at_player>
+    9: !<minecraft:behavior.random_look_around>
+    10: !<minecraft:behavior.float>

@@ -1,0 +1,19 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:squidfly
+- !<mobzy:spawn_regions>
+  keys: [ layerthree ]
+- !<mobzy:spawn.amount>
+  amount: 1..5
+- !<mobzy:spawn.spread>
+  radius: 30
+- !<mobzy:spawn.priority>
+  priority: 0.4
+- !<mobzy:check.spawn.local_group>
+  max: 6
+  radius: 200
+- !<mobzy:check.spawn.gap>
+  range: 5..4096
+- !<geary:check.block_type>
+  allow:
+    - GRASS_BLOCK
+    - PODZOL

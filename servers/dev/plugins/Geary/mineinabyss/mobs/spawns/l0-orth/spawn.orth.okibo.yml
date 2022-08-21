@@ -1,0 +1,20 @@
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:okibo
+- !<mobzy:spawn_regions>
+  keys: [ orth ]
+- !<mobzy:spawn.amount>
+  amount: 1..2
+- !<mobzy:spawn.spread>
+  radius: 10
+- !<mobzy:spawn.priority>
+  priority: 0.3
+- !<mobzy:check.spawn.local_group>
+  max: 2
+  radius: 300
+- !<mobzy:check.spawn.gap>
+  range: 4..4096
+- !<geary:check.block_type>
+  allow:
+    - STONE
+    - STONE_BRICKS
+    - COBBLESTONE

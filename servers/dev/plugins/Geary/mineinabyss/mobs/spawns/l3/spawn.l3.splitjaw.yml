@@ -1,0 +1,9 @@
+- !<geary:inherit>
+  from: [ mineinabyss:spawn.splitjaw ]
+- !<mobzy:spawn_regions>
+  keys: [ layerthree ]
+- !<mobzy:spawn.priority>
+  priority: 0.2
+- !<mobzy:check.spawn.local_group>
+  max: 2
+  radius: 300

@@ -1,0 +1,16 @@
+- !<geary:inherit>
+  from: [mineinabyss:npc]
+- !<mobzy:modelengine>
+  modelId: deathknight
+- !<mobzy:attributes>
+  maxHealth: 2048
+  movementSpeed: 0
+  attackDamage: 60
+  followRange: 10
+  width: 2
+  height: 4
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+- !<mobzy:death_loot>
+  minExp: 1000
+  maxExp: 1000
