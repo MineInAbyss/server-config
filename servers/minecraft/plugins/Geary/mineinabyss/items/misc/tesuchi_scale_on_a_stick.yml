@@ -10,7 +10,7 @@
 - !<looty:recipes>
   discoverRecipes: true
   result:
-    prefab: tesuchi_scale_on_a_stick
+    prefab: mineinabyss:tesuchi_scale_on_a_stick
   recipes:
     - !<shapeless>
       items:

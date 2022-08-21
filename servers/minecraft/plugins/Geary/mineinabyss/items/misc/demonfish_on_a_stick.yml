@@ -11,7 +11,7 @@
 - !<looty:recipes>
   discoverRecipes: true
   result:
-    prefab: demonfish_on_a_stick
+    prefab: mineinabyss:demonfish_on_a_stick
   recipes:
     - !<shapeless>
       items:
