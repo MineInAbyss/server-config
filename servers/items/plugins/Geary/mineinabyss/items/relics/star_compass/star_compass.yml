@@ -14,4 +14,9 @@
         - prefab: mineinabyss:star_compass_needle
         - prefab: mineinabyss:titanjaw_pearl
 - !<mineinabyss:starcompass>
+- !<geary:children>
+  toggleStarCompassHud:
+    - !<mineinabyss:toggle_starcompass_hud>
+- !<geary:event.triggers>
+  - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
 - !<geary:no_vanilla_interactions>
