@@ -68,16 +68,16 @@ mineinabyss-depth:
   layers:
     text:
       text: "%mineinabyss_depth%"
-      font: "default"
+      font: "default-outline"
       offset:
         x: 0
         y: 0
     icon:
       texture:
         path: assets/mineinabyss/depth_meter.png
-        offset:
-          x: 100
-          y: 50
+      offset:
+        x: -20
+        y: 6
 
 mineinabyss-starcompass:
   layers:
@@ -91,8 +91,8 @@ mineinabyss-starcompass:
 mineinabyss-layer:
   layers:
     text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss"
+      text: "%mineinabyss_whistle% %mineinabyss_layer%"
+      font: "mineinabyss-outline"
       offset:
-        x: 0
+        x: -10
         y: 0

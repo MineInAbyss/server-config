@@ -284,26 +284,30 @@ void main() {
                 xOffset = int(guiSize.x * (-50.0/100))+50;
                 break;
             case 59:
+                yOffset = int(guiSize.y * (100.0/100))-6;
+                xOffset = int(guiSize.x * (-50.0/100))-40;
+                break;
+            case 60:
                 yOffset = int(guiSize.y * (100.0/100))-12;
                 xOffset = int(guiSize.x * (-50.0/100))-60;
                 break;
-            case 60:
+            case 61:
                 yOffset = int(guiSize.y * (0.0/100))+24;
                 xOffset = int(guiSize.x * (-50.0/100))-105;
                 break;
-            case 61:
+            case 62:
                 yOffset = int(guiSize.y * (0.0/100))+10;
                 xOffset = int(guiSize.x * (-50.0/100))-110;
                 break;
-            case 62:
-                yOffset = int(guiSize.y * (100.0/100))-12;
-                xOffset = int(guiSize.x * (-50.0/100))+60;
-                break;
             case 63:
-                yOffset = int(guiSize.y * (100.0/100));
-                xOffset = int(guiSize.x * (-50.0/100));
+                yOffset = int(guiSize.y * (100.0/100))-12;
+                xOffset = int(guiSize.x * (-50.0/100))+70;
                 break;
             case 64:
+                yOffset = int(guiSize.y * (100.0/100))-10;
+                xOffset = int(guiSize.x * (-50.0/100));
+                break;
+            case 65:
                 yOffset = int(guiSize.y * (0.0/100))+70;
                 xOffset = int(guiSize.x * (-50.0/100));
                 break;

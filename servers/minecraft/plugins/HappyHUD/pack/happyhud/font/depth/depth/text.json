@@ -9,17 +9,8 @@
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-depth/text/redw.png",
-      "height": 9,
-      "chars": [
-        ""
-      ],
-      "ascent": -59500
-    },
-    {
-      "type": "bitmap",
       "file": "happyhud:font/mineinabyss-depth/text/nonlatin-european.png",
-      "height": 8,
+      "height": 10,
       "chars": [
         "¡‰­·₴≠¿×ØÞһðøþΑΒ",
         "ΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣ",
@@ -89,12 +80,12 @@
         "₦₩₫₭₮₰₱₲₳₵₶₷₸₹₺₻",
         "₼₿\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
       ],
-      "ascent": -59500
+      "ascent": -60500
     },
     {
       "type": "bitmap",
       "file": "happyhud:font/mineinabyss-depth/text/accented.png",
-      "height": 12,
+      "height": 14,
       "chars": [
         "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ",
         "ÐÑÒÓÔÕÖÙÚÛÜÝàáâã",
@@ -172,12 +163,12 @@
         "ᶋᶌᶍꟆᶎᶏᶐᶒᶓᶔᶕᶖᶗᶘᶙᶚ",
         "ẚ⅒⅘₨₯\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
       ],
-      "ascent": -59500
+      "ascent": -60500
     },
     {
       "type": "bitmap",
       "file": "happyhud:font/mineinabyss-depth/text/ascii.png",
-      "height": 8,
+      "height": 10,
       "chars": [
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
@@ -196,7 +187,7 @@
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000∅∈\u0000",
         "≡±≥≤⌠⌡÷≈°∙\u0000√ⁿ²■\u0000"
       ],
-      "ascent": -59500
+      "ascent": -60500
     }
   ]
 }
