@@ -23,5 +23,7 @@
         type: POTION
         potionData:
           type: WATER
+          extended: false
+          upgraded: false
       ingredient:
         prefab: mineinabyss:haste_paste
