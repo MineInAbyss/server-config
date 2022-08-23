@@ -3,22 +3,25 @@
   item:
     type: POTION
     displayName: "<#b5955f>Haste Potion"
-    color:
-      red: 181
-      green: 149
-      blue: 95
+    color: 233,177,21
+    lore:
+      - <light_purple>Haste</light_purple> <blue>(03:00)</blue>
+    enchantments: # For Glint Effect
+        - enchant: minecraft:infinity
 - !<geary:food>
   hunger: 0
   saturation: 0
   replacement:
     type: GLASS_BOTTLE
   effectList:
-    - type: fast_digging
+    - type: FAST_DIGGING
       duration: 3m
 - !<looty:potion_mixes>
-  result:
-    prefab: mineinabyss:haste_potion
   potionmixes:
     - !<potionmix>
+      input:
+        type: POTION
+        potionData:
+          type: WATER
       ingredient:
         prefab: mineinabyss:haste_paste

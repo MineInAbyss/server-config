@@ -1,0 +1,15 @@
+- !<looty:type>
+  item:
+    type: POTION
+    potionData:
+      type: NIGHT_VISION
+      extended: false
+      upgraded: false
+- !<looty:potion_mixes>
+  potionmixes:
+    - !<potionmix>
+      ingredient:
+        prefab: mineinabyss:hashofu_eye
+    - !<potionmix>
+      ingredient:
+        prefab: mineinabyss:kakatsumuri_glowing_tip

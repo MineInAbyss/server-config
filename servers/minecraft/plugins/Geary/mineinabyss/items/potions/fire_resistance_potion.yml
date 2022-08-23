@@ -1,0 +1,12 @@
+- !<looty:type>
+  item:
+    type: POTION
+    potionData:
+      type: FIRE_RESISTANCE
+      extended: false
+      upgraded: false
+- !<looty:potion_mixes>
+  potionmixes:
+    - !<potionmix>
+      ingredient:
+        prefab: mineinabyss:virinsipede_antlers

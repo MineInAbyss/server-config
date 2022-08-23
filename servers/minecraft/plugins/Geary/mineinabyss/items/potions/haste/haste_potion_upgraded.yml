@@ -3,11 +3,11 @@
   item:
     type: POTION
     displayName: "<#b5955f>Haste Potion"
-    color: 233,177,21
     lore:
-      - <light_purple>Haste</light_purple> <blue>(6:00)</blue>
+      - <light_purple>Haste II</light_purple> <blue>(3:00)</blue>
     enchantments: # For Glint Effect
-      - enchant: minecraft:infinity
+        - enchant: minecraft:infinity
+    color: 233,177,21
 - !<geary:food>
   hunger: 0
   saturation: 0
@@ -15,7 +15,8 @@
     type: GLASS_BOTTLE
   effectList:
     - type: FAST_DIGGING
-      duration: 8m
+      duration: 3m
+      amplifier: 1
 - !<looty:potion_mixes>
   potionmixes:
     - !<potionmix>
