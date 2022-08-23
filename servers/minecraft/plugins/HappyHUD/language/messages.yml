@@ -1,4 +1,12 @@
-prefix: "<gray>[</gray><rainbow>HappyHud</rainbow><gray>]</gray>"
+prefix: "<gray>[</gray><rainbow>HappyHud</rainbow><gray>]</gray> "
 reload:
   - "<green> HappyHud has been successfully reloaded."
   - "<bold><red> MAKE SURE TO RELOAD YOUR RESOURCE PACK!"
+
+layout-add-success: "<green>Successfully added layout '<layout>' to <holder>."
+layout-add-fail: "<red>Could not add layout '<layout>' to <holder>."
+
+layout-remove-success: "<green>Successfully removed layout '<layout>' from <holder>."
+layout-remove-fail: "<red>Could not remove layout '<layout>' from <holder>."
+
+layout-invalid-option: "<red>That option is not valid."

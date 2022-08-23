@@ -4,6 +4,11 @@ default:
     "\u200c": 0
   # Define characters and textures.
   providers:
+    redw:
+      texture: font/mineinabyss/redw.png
+      height: 9
+      chars:
+        - ""
     nonlatin-european:
       texture: font/default/nonlatin_european.png
       height: 8

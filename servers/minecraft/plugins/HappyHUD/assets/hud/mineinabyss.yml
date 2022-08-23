@@ -82,8 +82,8 @@ mineinabyss-depth:
 mineinabyss-starcompass:
   layers:
     text:
-      text: "%mineinabyss_starcompass_needle%"
-      font: "default"
+      text: "%mineinabyss_starcompass%"
+      font: "starcompass"
       offset:
         x: 0
         y: 0
@@ -91,14 +91,8 @@ mineinabyss-starcompass:
 mineinabyss-layer:
   layers:
     text:
-      text: "%mineinabyss_layer%"
-      font: "default"
+      text: "%mineinabyss_whistle%%mineinabyss_layer%"
+      font: "mineinabyss"
       offset:
         x: 0
         y: 0
-    icon:
-      texture:
-        path: assets/mineinabyss/star_compass.png
-        offset:
-          x: -100
-          y: -50

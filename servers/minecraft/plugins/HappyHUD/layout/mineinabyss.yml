@@ -6,7 +6,7 @@ balance:
         x: 50
         y: 0
       offset:
-        x: 105.0
+        x: 110.0
         y: 10.0
     tokens:
       asset: 'mineinabyss-orthbanking-tokens'
@@ -14,7 +14,7 @@ balance:
         x: 50
         y: 0
       offset:
-        x: 100.0
+        x: 105.0
         y: 24.0
 depth:
   elements:
@@ -26,6 +26,8 @@ depth:
       offset:
         x: 60
         y: -12.0
+layer:
+  elements:
     layer:
       asset: 'mineinabyss-layer'
       position:
@@ -34,3 +36,10 @@ depth:
       offset:
         x: -60
         y: -12.0
+starcompass:
+  elements:
+    starcompass:
+      asset: 'mineinabyss-starcompass'
+      position:
+          x: 50
+          y: 100
