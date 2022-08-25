@@ -1,0 +1,30 @@
+bleeding-layout:
+  elements:
+    bleeding:
+      asset: 'effect-bleeding'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 40
+extra-hearts-layout:
+  elements:
+    bleeding:
+      asset: 'effect-extra-hearts'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 50
+hunger-layout:
+  elements:
+    hunger:
+      asset: 'effect-hunger'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 60
+        y: 40

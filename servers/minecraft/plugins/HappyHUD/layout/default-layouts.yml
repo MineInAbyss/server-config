@@ -4,32 +4,40 @@ test-layout:
       asset: 'vanilla-health'
       position:
         x: 50.0
-        y: 0
+        y: 0.0
       offset:
-        x: -60
-        y: 50
+        x: -30.0
+        y: 40.0
     food:
-      type: 'asset'
-      asset: 'vanilla-hunger'
+      asset: 'vanilla-food'
       position:
         x: 50.0
         y: 0.0
       offset:
-        x: -60
-        y: 60
+        x: 57.0
+        y: 40.0
+    exp:
+      asset: 'vanilla-exp'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -3.0
+        y: 40
     armor:
       asset: 'vanilla-armor'
       position:
-        x: 50.0
+        x: 100.0
         y: 0.0
       offset:
-        x: 60
-        y: 50
+        x: -6
+        y: 100
     air:
       asset: 'vanilla-air'
       position:
-        x: 50.0
+        x: 100.0
         y: 0.0
       offset:
-        x: 60
-        y: 60
+        x: -20
+        y: 100
+
