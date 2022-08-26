@@ -7,22 +7,22 @@ effect-bleeding:
       offset:
         x: 8
         y: 4
-        function:
-          listener: health
-          increment: 20
-          orientation: horizontal
-        icon:
-          texture:
-            path: assets/mineinabyss/bleeding_icon.png
-          offset:
-            x: -10
-            y: 0
-        outline:
-          texture:
-            path: assets/mineinabyss/bar_outline.png
-          offset:
-            x: 8
-            y: -3
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/bleeding_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
 effect-wither:
   layers:
     fill:
@@ -32,22 +32,72 @@ effect-wither:
       offset:
         x: 8
         y: 4
-        function:
-          listener: health
-          increment: 20
-          orientation: horizontal
-        icon:
-          texture:
-            path: assets/mineinabyss/wither_icon.png
-          offset:
-            x: -10
-            y: 0
-        outline:
-          texture:
-            path: assets/mineinabyss/bar_outline.png
-          offset:
-            x: 8
-            y: -3
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/wither_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
+effect-poison:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/poison_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: 4
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/poison_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
+effect-freezing:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/freezing_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: 4
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/freezing_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
 effect-extra-hearts:
   layers:
     fill:
@@ -57,22 +107,22 @@ effect-extra-hearts:
       offset:
         x: 8
         y: 4
-        function:
-          listener: health
-          increment: 20
-          orientation: horizontal
-        icon:
-          texture:
-            path: assets/mineinabyss/extra_hearts_icon.png
-          offset:
-            x: -10
-            y: 0
-        outline:
-          texture:
-            path: assets/mineinabyss/bar_outline.png
-          offset:
-            x: 8
-            y: -3
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/extra_hearts_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
 effect-hunger:
   layers:
     fill:
@@ -80,7 +130,7 @@ effect-hunger:
         path: assets/mineinabyss/hunger_bar.png
       color: "#FFFFFF"
       offset:
-        x: 8
+        x: -4
         y: 4
       function:
         reversed: true
@@ -97,5 +147,5 @@ effect-hunger:
       texture:
         path: assets/mineinabyss/bar_outline.png
       offset:
-        x: 8
+        x: -4
         y: -3

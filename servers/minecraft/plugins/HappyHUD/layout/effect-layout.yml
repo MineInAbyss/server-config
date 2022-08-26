@@ -1,4 +1,14 @@
-bleeding-layout:
+wither:
+  elements:
+    bleeding:
+      asset: 'effect-wither'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 40
+bleeding:
   elements:
     bleeding:
       asset: 'effect-bleeding'
@@ -8,7 +18,37 @@ bleeding-layout:
       offset:
         x: -30
         y: 40
-extra-hearts-layout:
+poison:
+  elements:
+    poison:
+      asset: 'effect-poison'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 40
+freezing:
+  elements:
+    poison:
+      asset: 'effect-freezing'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 40
+hunger:
+  elements:
+    hunger:
+      asset: 'effect-hunger'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 57
+        y: 40
+extra-hearts:
   elements:
     bleeding:
       asset: 'effect-extra-hearts'
@@ -18,13 +58,3 @@ extra-hearts-layout:
       offset:
         x: -30
         y: 50
-hunger-layout:
-  elements:
-    hunger:
-      asset: 'effect-hunger'
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: 60
-        y: 40

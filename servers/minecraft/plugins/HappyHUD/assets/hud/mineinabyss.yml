@@ -1,34 +1,4 @@
-mineinabyss-curse-bleeding:
-  layers:
-    text:
-      text: "%fill-value%/%fill-max%"
-      font: "default"
-      offset:
-        x: 10
-        y: 2
-    icon:
-      texture:
-        path:
-          assets/mineinabyss/bleeding.png
-        offset:
-          x: -5
-          y: 2
-    fill:
-      texture:
-        path: assets/vanilla/exp_bar_short_fill.png
-      color: "#f23a3a"
-      offset:
-        x: 0
-        y: 0
-      function:
-        listener: health
-        increment: 13
-        orientation: horizontal
-      outline:
-        texture:
-          path: assets/vanilla/exp_bar_short_outline.png
-
-mineinabyss-orthbanking-coins:
+mineinabyss-orthcoins:
   layers:
     text:
       text: "%mineinabyss_orthbanking_coins%"
@@ -36,33 +6,46 @@ mineinabyss-orthbanking-coins:
       offset:
         x: 0
         y: 0
+    icon:
+      texture:
+        path:
+          assets/mineinabyss/orthcoin.png
+        offset:
+          x: 0
+          y: 0
 
-mineinabyss-orthbanking-tokens:
+mineinabyss-tokens:
   layers:
     text:
-      text: "%mineinabyss_orthbanking_tokens%"
+      text: "%mineinabyss_orthbanking_tokens%"
       font: "orthbanking"
       offset:
         x: 0
         y: 0
-
-mineinabyss-temperature:
-  layers:
-    text:
-      text: "%mineinabyss_temperature%"
-      font: "default"
-      offset:
-        x: 0
-        y: 0
-
-mineinabyss-humidity:
-  layers:
-    text:
-      text: "%mineinabyss_humidity%"
-      font: "default"
-      offset:
-        x: 0
-        y: 0
+    icon:
+      texture:
+        path:
+          assets/mineinabyss/mittytoken.png
+        offset:
+          x: 0
+          y: 0
+#mineinabyss-temperature:
+#  layers:
+#    text:
+#      text: "%mineinabyss_temperature%"
+#      font: "default"
+#      offset:
+#        x: 0
+#        y: 0
+#
+#mineinabyss-humidity:
+#  layers:
+#    text:
+#      text: "%mineinabyss_humidity%"
+#      font: "default"
+#      offset:
+#        x: 0
+#        y: 0
 
 mineinabyss-depth:
   layers:
@@ -87,12 +70,87 @@ mineinabyss-starcompass:
       offset:
         x: 0
         y: 0
-
-mineinabyss-layer:
+mineinabyss-orth:
   layers:
     text:
-      text: "%mineinabyss_whistle% %mineinabyss_layer%"
+      text: "%mineinabyss_layer%"
       font: "mineinabyss-outline"
       offset:
-        x: -10
+        x: 0
         y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/bell.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-edge_of_the_abyss:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-outline"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/redw.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-forest_of_temptation:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-outline"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/bluew.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-great_fault:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-outline"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/moonw.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-goblets_of_giants:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-outline"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/moonw.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-sea_of_corpses:
+  layers:
+    text:
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-outline"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/blackw.png
+      offset:
+        x: -20
+        y: 6

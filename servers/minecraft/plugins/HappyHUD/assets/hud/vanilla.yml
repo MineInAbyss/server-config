@@ -30,7 +30,7 @@ vanilla-food:
         path: assets/mineinabyss/food_bar.png
       color: "#FFFFFF"
       offset:
-        x: 8
+        x: -4
         y: 4
       function:
         reversed: true
@@ -47,7 +47,7 @@ vanilla-food:
       texture:
         path: assets/mineinabyss/bar_outline.png
       offset:
-        x: 8
+        x: -4
         y: -3
 vanilla-exp:
   layers:
@@ -109,20 +109,20 @@ vanilla-air:
       offset:
         x: -2
         y: -17
-        function:
-          listener: air
-          increment: 10
-          orientation: vertical
-          reversed: true
-        icon:
-          texture:
-            path: assets/mineinabyss/air_icon.png
-          offset:
-            x: -4
-            y: 2
-        outline:
-          texture:
-            path: assets/mineinabyss/vertical_bar_outline.png
-          offset:
-            x: -2
-            y: -17
+      function:
+        listener: air
+        increment: 10
+        orientation: vertical
+        reversed: true
+    icon:
+      texture:
+        path: assets/mineinabyss/air_icon.png
+      offset:
+        x: -4
+        y: 2
+    outline:
+      texture:
+        path: assets/mineinabyss/vertical_bar_outline.png
+      offset:
+        x: -2
+        y: -17

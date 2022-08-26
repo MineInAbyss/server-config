@@ -9,25 +9,25 @@
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-orthbanking-tokens/text/orthcoin.png",
+      "file": "happyhud:font/mineinabyss-tokens/text/orthcoin.png",
       "height": 10,
       "chars": [
         ""
       ],
-      "ascent": -114500
+      "ascent": -135500
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-orthbanking-tokens/text/mittytoken.png",
+      "file": "happyhud:font/mineinabyss-tokens/text/mittytoken.png",
       "height": 12,
       "chars": [
         ""
       ],
-      "ascent": -114500
+      "ascent": -135500
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-orthbanking-tokens/text/nonlatin-european.png",
+      "file": "happyhud:font/mineinabyss-tokens/text/nonlatin-european.png",
       "height": 8,
       "chars": [
         "¡‰­·₴≠¿×ØÞһðøþΑΒ",
@@ -98,11 +98,11 @@
         "₦₩₫₭₮₰₱₲₳₵₶₷₸₹₺₻",
         "₼₿\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
       ],
-      "ascent": -114500
+      "ascent": -135500
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-orthbanking-tokens/text/accented.png",
+      "file": "happyhud:font/mineinabyss-tokens/text/accented.png",
       "height": 12,
       "chars": [
         "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ",
@@ -181,11 +181,11 @@
         "ᶋᶌᶍꟆᶎᶏᶐᶒᶓᶔᶕᶖᶗᶘᶙᶚ",
         "ẚ⅒⅘₨₯\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
       ],
-      "ascent": -114500
+      "ascent": -135500
     },
     {
       "type": "bitmap",
-      "file": "happyhud:font/mineinabyss-orthbanking-tokens/text/ascii.png",
+      "file": "happyhud:font/mineinabyss-tokens/text/ascii.png",
       "height": 8,
       "chars": [
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
@@ -205,7 +205,7 @@
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000∅∈\u0000",
         "≡±≥≤⌠⌡÷≈°∙\u0000√ⁿ²■\u0000"
       ],
-      "ascent": -114500
+      "ascent": -135500
     }
   ]
 }
