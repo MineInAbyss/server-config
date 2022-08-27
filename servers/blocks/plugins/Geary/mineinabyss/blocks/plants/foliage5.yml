@@ -7,6 +7,7 @@
 - !<blocky:block>
   blockType: GROUND
   blockId: 5
+  blockModel: mineinabyss:block/nature/foliage5
 - !<blocky:info>
   blockBreakTime: 2
   blockDrop:

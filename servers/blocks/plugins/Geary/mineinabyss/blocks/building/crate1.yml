@@ -1,4 +1,4 @@
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: PAPER
@@ -7,6 +7,7 @@
 - !<blocky:block>
   blockType: CUBE
   blockId: 22
+  blockModel: "mineinabyss:block/building/crate1"
 - !<blocky:sound>
   placeSound: block.stone.place
   breakSound: block.stone.break
