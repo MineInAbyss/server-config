@@ -4,3 +4,6 @@ mana:
 test:
   value: '%player_health%'
   max: '%player_max_health%'
+absorption:
+  value: '%player_absorption%'
+  max: '20.0'

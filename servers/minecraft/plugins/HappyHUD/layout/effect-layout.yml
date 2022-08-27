@@ -48,10 +48,10 @@ hunger:
       offset:
         x: 57
         y: 40
-extra-hearts:
+absorption:
   elements:
-    bleeding:
-      asset: 'effect-extra-hearts'
+    absorption:
+      asset: 'effect-absorption'
       position:
         x: 50.0
         y: 0

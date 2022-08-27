@@ -98,22 +98,22 @@ effect-freezing:
       offset:
         x: 8
         y: -3
-effect-extra-hearts:
+effect-absorption:
   layers:
     fill:
       texture:
-        path: assets/mineinabyss/extra_hearts_bar.png
+        path: assets/mineinabyss/absorption_bar.png
       color: "#FFFFFF"
       offset:
         x: 8
         y: 4
       function:
-        listener: health
+        listener: absorption
         increment: 20
         orientation: horizontal
     icon:
       texture:
-        path: assets/mineinabyss/extra_hearts_icon.png
+        path: assets/mineinabyss/absorption_icon.png
       offset:
         x: -10
         y: 0
