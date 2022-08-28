@@ -10,6 +10,9 @@ check-update: 5
 # The way that numbers are displayed.
 decimal-format: '#.##'
 
+# Should the layouts only be displayed to the user if they accepted the resource pack.
+display-only-accepted: false
+
 # The settings of the default action bar messages.
 action-bar:
   font: default
