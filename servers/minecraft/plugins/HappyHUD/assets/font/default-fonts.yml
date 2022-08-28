@@ -5,7 +5,7 @@ default:
   # Define characters and textures.
   providers:
     redw:
-      texture: font/mineinabyss/redw.png
+      texture: assets/mineinabyss/redw.png
       height: 9
       chars:
         - ""

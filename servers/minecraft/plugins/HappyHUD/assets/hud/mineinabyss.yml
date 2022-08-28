@@ -73,8 +73,8 @@ mineinabyss-starcompass:
 mineinabyss-orth:
   layers:
     text:
-      text: "%mineinabyss_layer%"
-      font: "mineinabyss-outline"
+      text: "%mineinabyss_whistle%%mineinabyss_layer%"
+      font: "mineinabyss"
       offset:
         x: 0
         y: 0
