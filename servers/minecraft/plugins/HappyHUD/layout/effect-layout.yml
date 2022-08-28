@@ -1,0 +1,60 @@
+wither:
+  elements:
+    bleeding:
+      asset: 'effect-wither'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 40
+bleeding:
+  elements:
+    bleeding:
+      asset: 'effect-bleeding'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 40
+poison:
+  elements:
+    poison:
+      asset: 'effect-poison'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 40
+freezing:
+  elements:
+    poison:
+      asset: 'effect-freezing'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 40
+hunger:
+  elements:
+    hunger:
+      asset: 'effect-hunger'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 57
+        y: 40
+absorption:
+  elements:
+    absorption:
+      asset: 'effect-absorption'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 50

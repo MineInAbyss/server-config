@@ -1,0 +1,24 @@
+# HappyHud by Ehhthan
+
+layout:
+  # The layout that every user starts with.
+  default: 'vanilla'
+
+# The default value for how often placeholders should check for an update.
+check-update: 5
+
+# The way that numbers are displayed.
+decimal-format: '#.##'
+
+# The settings of the default action bar messages.
+action-bar:
+  font: default
+  position:
+    x: 50.0
+    y: 0.0
+  offset:
+    x: 0
+    y: 70
+
+# Do not change this.
+config-version: 1

@@ -1,0 +1,128 @@
+vanilla-health:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/health_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: 4
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/health_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -3
+vanilla-food:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/food_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: -4
+        y: 4
+      function:
+        reversed: true
+        listener: food
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/food_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: -4
+        y: -3
+vanilla-exp:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/exp_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 12
+        y: -13
+      function:
+        listener: exp
+        increment: 26
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/exp_icon.png
+      offset:
+        x: 0
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/exp_outline.png
+      offset:
+        x: 12
+        y: -13
+vanilla-armor:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/armor_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 1
+        y: -17
+      function:
+        listener: armor
+        increment: 20
+        orientation: vertical
+        reversed: true
+    icon:
+      texture:
+        path: assets/mineinabyss/armor_icon.png
+      offset:
+        x: -1
+        y: 2
+    outline:
+      texture:
+        path: assets/mineinabyss/vertical_bar_outline.png
+      offset:
+        x: 1
+        y: -17
+vanilla-air:
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/air_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: -2
+        y: -17
+      function:
+        listener: air
+        increment: 10
+        orientation: vertical
+        reversed: true
+    icon:
+      texture:
+        path: assets/mineinabyss/air_icon.png
+      offset:
+        x: -4
+        y: 2
+    outline:
+      texture:
+        path: assets/mineinabyss/vertical_bar_outline.png
+      offset:
+        x: -2
+        y: -17
