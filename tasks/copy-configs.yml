@@ -13,14 +13,3 @@
   copy:
     content: "{{ githash.stdout }}"
     dest: "/home/container/mia-githash"
-
-#- name: Ensure file permissions set properly for each server
-#  file:
-#    path: "/home/{{ item.name }}/server"
-##    owner: "{{ item.name }}"
-##    group: "{{ item.name }}"
-#    mode: "{{ copy_perms }}"
-#    recurse: true
-#  with_items:
-#    - "{{ minecraft_servers }}"
-#    - "{{ bungee_servers }}"
