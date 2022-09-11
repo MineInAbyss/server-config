@@ -20,6 +20,7 @@ privateMessages:
   messageReceiveSound: ""           # Empty for no sound
 
 chat:
+  enableChatSigning: false           # Enable chat signing and reporting
   bypassFormatPermission: "chatty.chat.bypassformat"
   commandSpyFormat: "<gold>%chatty_player_displayname%<yellow>: "
   allowedTags: # Available formats are:
