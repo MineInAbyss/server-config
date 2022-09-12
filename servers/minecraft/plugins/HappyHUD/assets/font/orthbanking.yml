@@ -184,12 +184,22 @@ orthbanking:
         - "\u2568\u2564\u2565\u2559\u2558\u2552\u2553\u256b\u256a\u2518\u250c\u2588\u2584\u258c\u2590\u2580"
         - "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u2205\u2208\u0000"
         - "\u2261\u00b1\u2265\u2264\u2320\u2321\u00f7\u2248\u00b0\u2219\u0000\u221a\u207f\u00b2\u25a0\u0000"
-default-outline:
+orthbanking-outline:
   advances:
     " ": 4
     "\u200c": 0
   # Define characters and textures.
   providers:
+    orthcoin:
+      texture: assets/mineinabyss/orthcoin.png
+      height: 10
+      chars:
+        - ""
+    mittytoken:
+      texture: assets/mineinabyss/mittytoken.png
+      height: 12
+      chars:
+        - ""
     nonlatin-european:
       texture: font/default-outline/nonlatin_european.png
       height: 10
@@ -360,12 +370,22 @@ default-outline:
         - "\u2568\u2564\u2565\u2559\u2558\u2552\u2553\u256b\u256a\u2518\u250c\u2588\u2584\u258c\u2590\u2580"
         - "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u2205\u2208\u0000"
         - "\u2261\u00b1\u2265\u2264\u2320\u2321\u00f7\u2248\u00b0\u2219\u0000\u221a\u207f\u00b2\u25a0\u0000"
-default-drop-shadow:
+orthbanking-drop-shadow:
   advances:
     " ": 4
     "\u200c": 0
   # Define characters and textures.
   providers:
+    orthcoin:
+      texture: assets/mineinabyss/orthcoin.png
+      height: 10
+      chars:
+        - ""
+    mittytoken:
+      texture: assets/mineinabyss/mittytoken.png
+      height: 12
+      chars:
+        - ""
     nonlatin-european:
       texture: font/default-drop-shadow/nonlatin_european.png
       height: 9

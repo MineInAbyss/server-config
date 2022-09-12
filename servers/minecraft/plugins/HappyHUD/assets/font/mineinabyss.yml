@@ -406,6 +406,31 @@ mineinabyss-drop-shadow:
     "\u200c": 0
   # Define characters and textures.
   providers:
+    bell:
+      texture: assets/mineinabyss/bell.png
+      height: 9
+      chars:
+        - ""
+    redw:
+      texture: assets/mineinabyss/redw.png
+      height: 9
+      chars:
+        - ""
+    bluew:
+      texture: assets/mineinabyss/bluew.png
+      height: 9
+      chars:
+        - ""
+    moonw:
+      texture: assets/mineinabyss/moonw.png
+      height: 9
+      chars:
+        - ""
+    blackw:
+      texture: assets/mineinabyss/blackw.png
+      height: 9
+      chars:
+        - ""
     nonlatin-european:
       texture: font/default-drop-shadow/nonlatin_european.png
       height: 9

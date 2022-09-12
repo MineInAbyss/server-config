@@ -1,4 +1,4 @@
-vanilla:
+health:
   elements:
     health:
       asset: 'vanilla-health'
@@ -8,6 +8,8 @@ vanilla:
       offset:
         x: -30.0
         y: 40.0
+food:
+  elements:
     food:
       asset: 'vanilla-food'
       position:
@@ -16,6 +18,8 @@ vanilla:
       offset:
         x: 57.0
         y: 40.0
+exp:
+  elements:
     exp:
       asset: 'vanilla-exp'
       position:

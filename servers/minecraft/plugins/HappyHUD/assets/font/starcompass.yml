@@ -6,87 +6,87 @@ starcompass:
   providers:
     arrow_s:
       texture: assets/mineinabyss/arrow_s.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_sse:
       texture: assets/mineinabyss/arrow_sse.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_se:
       texture: assets/mineinabyss/arrow_se.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_ese:
       texture: assets/mineinabyss/arrow_ese.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_e:
       texture: assets/mineinabyss/arrow_e.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_ene:
       texture: assets/mineinabyss/arrow_ene.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_ne:
       texture: assets/mineinabyss/arrow_ne.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_nne:
       texture: assets/mineinabyss/arrow_nne.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_n:
       texture: assets/mineinabyss/arrow_n.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_nnw:
       texture: assets/mineinabyss/arrow_nnw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_nw:
       texture: assets/mineinabyss/arrow_nw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_wnw:
       texture: assets/mineinabyss/arrow_wnw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_w:
       texture: assets/mineinabyss/arrow_w.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_wsw:
       texture: assets/mineinabyss/arrow_wsw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_sw:
       texture: assets/mineinabyss/arrow_sw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_ssw:
       texture: assets/mineinabyss/arrow_ssw.png
-      height: 16
+      height: 20
       chars:
         - ""
     arrow_null:
       texture: assets/mineinabyss/arrow_null.png
-      height: 16
+      height: 20
       chars:
         - ""
     nonlatin-european:

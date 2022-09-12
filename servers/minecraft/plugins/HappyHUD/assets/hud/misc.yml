@@ -9,7 +9,7 @@ misc-mounted:
         y: 4
       function:
         reversed: true
-        listener: food
+        listener: mount
         increment: 20
         orientation: horizontal
     icon:
