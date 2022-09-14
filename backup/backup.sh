@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Loads any secrets from a file as environment variables
 source /home/container/secrets-backup
 
