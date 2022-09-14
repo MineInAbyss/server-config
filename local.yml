@@ -1,20 +1,12 @@
 - name:
-  # For running locally
-#  hosts: mia.adventure
-#  become: true
   hosts: localhost
   connection: local
   vars:
     copy_perms: "774"
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
-    bungee_server: "{{ lookup('env', 'BUNGEE_SERVER') | default('false') }}"
-    localhash: "{{ lookup('file', '/home/container/mia-githash') | default('none') }}"
-#  vars_files: # future perhaps
-#    - "host_vars/{{ server_name }}.yml"
 
   tasks:
-#    - command: "git rev-parse HEAD"
-#      register: githash
-
     - include_tasks: tasks/copy-configs.yml
-#      when: localhash != githash.stdout
+    - include_vars:
+        file: "servers/servers.yml"
+        name: servers

@@ -1,15 +1,5 @@
-- name: Copy global configurations to each server
-  include: copy-dir.yml
-  vars:
-    src: "servers/minecraft/"
-  when: bungee_server != "true"
-
 - name: Copy server-specific configurations
   include: copy-dir.yml
   vars:
-    src: "servers/{{ server_name }}/"
-
-#- name: Update local hash
-#  copy:
-#    content: "{{ githash.stdout }}"
-#    dest: "/home/container/mia-githash"
+    src: "servers/{{ item }}"
+  loop: "{{ servers.server_name }}"
