@@ -1,5 +1,5 @@
 - name: Copy server-specific configurations
   include: copy-dir.yml
   vars:
-    src: "servers/{{ item }}"
+    src: "servers/{{ item }}/"
   loop: "{{ servers[server_name] }}"
