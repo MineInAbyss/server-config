@@ -13,8 +13,8 @@
 #    - "host_vars/{{ server_name }}.yml"
 
   tasks:
-    - command: "git rev-parse HEAD"
-      register: githash
+#    - command: "git rev-parse HEAD"
+#      register: githash
 
     - include_tasks: tasks/copy-configs.yml
-      when: localhash != githash.stdout
+#      when: localhash != githash.stdout
