@@ -6,7 +6,7 @@
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
 
   tasks:
-    - include_tasks: tasks/copy-configs.yml
     - include_vars:
         file: "servers/servers.yml"
         name: servers
+    - include_tasks: tasks/copy-configs.yml
