@@ -62,6 +62,12 @@ vanilla-exp:
         listener: exp
         increment: 26
         orientation: horizontal
+    text:
+      text: "<green>%player_level%"
+      font: "default-drop-shadow"
+      offset:
+        x: 2
+        y: -4
     icon:
       texture:
         path: assets/mineinabyss/exp_icon.png
