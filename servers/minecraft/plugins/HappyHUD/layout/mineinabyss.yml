@@ -1,4 +1,4 @@
-balance:
+balance_empty_offhand:
   elements:
     coins:
       asset: 'mineinabyss-orthcoins'
@@ -15,6 +15,24 @@ balance:
         y: 0
       offset:
         x: -105.0
+        y: 24.0
+balance_offhand:
+  elements:
+    coins:
+      asset: 'mineinabyss-orthcoins'
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: -135.0
+        y: 10.0
+    tokens:
+      asset: 'mineinabyss-tokens'
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: -135.0
         y: 24.0
 depth:
   elements:
