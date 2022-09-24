@@ -9,7 +9,7 @@
   blockId: 3
   blockModel: mineinabyss:block/nature/foliage3
 - !<blocky:info>
-  blockBreakTime: 2
+  blockBreakTime: 2s
   blockDrop:
     - item:
         prefab: mineinabyss:foliage3

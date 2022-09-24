@@ -17,7 +17,7 @@
     - { x: 1, y: 0, z: 0 }
 - !<blocky:info>
   isUnbreakable: true
-  blockBreakTime: 2
+  blockBreakTime: 2s
   blockDrop:
     - item:
         prefab: mineinabyss:stone_bench

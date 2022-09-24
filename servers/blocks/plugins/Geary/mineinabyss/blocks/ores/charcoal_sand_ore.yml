@@ -16,7 +16,7 @@
   fallSound: block.stone.fall
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10
+  blockBreakTime: 10s
   blockDrop:
     - item:
         prefab: mineinabyss:abyssal_snail_gunk
