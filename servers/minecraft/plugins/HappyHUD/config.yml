@@ -1,0 +1,46 @@
+# HappyHud by Ehhthan
+
+layout:
+  # The layout that every user starts with.
+  default:
+    - 'health'
+    - 'food'
+    - 'exp'
+translation:
+  # What language the plugin should display when resolving translations.
+  locale: en_us
+  
+# The default value for how often placeholders should check for an update.
+check-update: 5
+
+# The way that numbers are displayed.
+decimal-format: '#.##'
+
+# Should the layouts only be displayed to the user if they accepted the resource pack.
+display-only-accepted: false
+
+# The settings of the default action bar messages.
+action-bar:
+  font: default
+  # Amount of time in ticks for the action bar message to last.
+  last-for: 40
+  position:
+    x: 50.0
+    y: 0.0
+  offset:
+    x: 0
+    y: 75
+    
+# What unicode provider should fonts use.
+# Do not touch this unless you know what you're doing.
+font:
+  fallback-unicode:
+    sizes: glyph_sizes.bin
+    template: minecraft:font/unicode_page_%s.png
+    
+# Enable this if your server supports both 1.18 and 1.19.
+# This will add a drop shadow to newer clients.
+compatibility-mode: false
+
+# Do not change this.
+config-version: 2

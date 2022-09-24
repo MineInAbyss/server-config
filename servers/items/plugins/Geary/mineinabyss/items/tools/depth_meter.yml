@@ -5,8 +5,10 @@
     displayName: <dark_aqua>Depth Meter
     customModelData: 126
     lore:
-      - <aqua>Used to check your <green>Layer <aqua>and
-      - <aqua>depth by <b>right-clicking.
+      - <aqua>Used by delvers to keep
+      - <aqua>track of their depth..
+      - <#3f536c><i>Toggle between HUD
+      - <#3f536c><i>and item based with right-click.
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
@@ -24,6 +26,9 @@
 - !<geary:children>
   showDepth:
     - !<mineinabyss:show_depth>
+  toggleDepthHud:
+    - !<mineinabyss:toggle_depth_hud>
 - !<geary:event.triggers>
-  - other geary:event.right_clicked this -> this child(showDepth) other
+  - other geary:event.left_clicked this -> this child(showDepth) other
+  - other geary:event.right_clicked this -> this child(toggleDepthHud) other
 - !<geary:no_vanilla_interactions>

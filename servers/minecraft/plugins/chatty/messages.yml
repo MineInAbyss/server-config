@@ -41,6 +41,7 @@ joinLeave:
   leaveMessage: "<red>%player_name%<white> has left the server."
 
 other:
+  disallowedStyling: "<red>Your message contains formatting you cannot use!"
   configReloaded: "<green>Chatty config reloaded."
   messagesReloaded: "<green>Chatty messages reloaded."
   nickNameChanged: "Nickname set to <white><i>%chatty_player_displayname%."

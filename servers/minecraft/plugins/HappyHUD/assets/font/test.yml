@@ -1,0 +1,11 @@
+test:
+  advances:
+    " ": 4
+    "\u200c": 0
+  # Define characters and textures.
+  providers:
+    test:
+      texture: font/test.png
+      height: 12
+      chars:
+        - "X"
