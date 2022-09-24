@@ -11,7 +11,7 @@ translation:
   locale: en_us
   
 # The default value for how often placeholders should check for an update.
-check-update: 5
+check-update: 10
 
 # The way that numbers are displayed.
 decimal-format: '#.##'
