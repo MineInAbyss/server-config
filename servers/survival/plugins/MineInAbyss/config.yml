@@ -41,8 +41,8 @@ features:
   - !<orth_banking>
   - !<playerprofile>
   - !<misc>
-  - !<custom_hud>
-    #- !<shopkeeper>
+  #- !<custom_hud>
+  #- !<shopkeeper>
   #- !<cosmetics>
 layers:
   - name: <#FFA812>Orth
