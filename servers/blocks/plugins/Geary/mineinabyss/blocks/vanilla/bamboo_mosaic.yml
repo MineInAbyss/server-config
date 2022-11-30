@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Bamboo Mosaic
+    customModelData: 2031
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 36
+  blockModel: "minecraft:block/bamboo_mosaic"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:bamboo_mosaic

@@ -5,13 +5,16 @@
     displayName: <#33404d>Stone Bench
     customModelData: 1000
 - !<blocky:seat>
-  yaw: 0F
   heightOffset: 0.5
-- !<blocky:entity>
-  entityType: ITEM_FRAME
-  itemFrameId: 1000
-  canBeInAir: true
-  canBeRotated: true
+- !<blocky:sound>
+  placeSound: block.amethyst_cluster.place
+  breakSound: block.amethyst_cluster.break
+  stepSound: block.amethyst_cluster.step
+  hitSound: block.amethyst_cluster.hit
+  fallSound: block.amethyst_cluster.fall
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  rotationType: VERY_STRICT
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
     - { x: 1, y: 0, z: 0 }

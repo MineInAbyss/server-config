@@ -1,0 +1,20 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: WAXED_CUT_COPPER_STAIRS
+- !<blocky:block>
+  blockType: STAIR
+  blockId: 1
+  blockModel: "minecraft:block/acacia_stairs"
+- !<blocky:stair>
+  innerModel: minecraft:block/acacia_stairs_inner
+  outerModel: minecraft:block/acacia_stairs_outer
+  straightModel: minecraft:block/acacia_stairs
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:stair

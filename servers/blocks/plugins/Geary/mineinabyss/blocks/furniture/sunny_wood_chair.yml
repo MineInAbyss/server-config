@@ -1,0 +1,32 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <#6f4536>Sunny Wood Chair
+    customModelData: 1001
+- !<blocky:seat>
+  heightOffset: 0.5
+- !<blocky:sound>
+  placeSound: block.amethyst_cluster.place
+  breakSound: block.amethyst_cluster.break
+  stepSound: block.amethyst_cluster.step
+  hitSound: block.amethyst_cluster.hit
+  fallSound: block.amethyst_cluster.fall
+- !<blocky:placable_on>
+  floor: true
+  ceiling: true
+  wall: false
+  blocks:
+    - STONE
+- !<blocky:furniture>
+  furnitureType: ARMOR_STAND
+  rotationType: STRICT
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:sunny_wood_chair
+

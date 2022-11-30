@@ -4,8 +4,6 @@
     type: PAPER
     displayName: <#33404d>Windmill
     customModelData: 1002
+- !<geary:no_vanilla_interactions>
 - !<blocky:modelengine>
-- !<geary:inherit>
-  from: [mineinabyss:block]
-- !<mobzy:modelengine>
   modelId: windmill

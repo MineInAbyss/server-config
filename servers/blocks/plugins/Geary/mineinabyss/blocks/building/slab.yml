@@ -1,0 +1,20 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: WAXED_CUT_COPPER_SLAB
+- !<blocky:block>
+  blockType: SLAB
+  blockId: 1
+  blockModel: "minecraft:block/acacia_slab"
+- !<blocky:slab>
+  topModel: minecraft:block/acacia_slab_top
+  bottomModel: minecraft:block/acacia_slab
+  doubleModel: minecraft:block/acacia_planks
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:slab

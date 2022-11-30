@@ -5,7 +5,7 @@
     displayName: <#7a4e48>Foliage 4
     customModelData: 3004
 - !<blocky:block>
-  blockType: GROUND
+  blockType: WIRE
   blockId: 4
   blockModel: mineinabyss:block/nature/foliage4
 - !<blocky:info>
@@ -13,4 +13,3 @@
   blockDrop:
     - item:
         prefab: mineinabyss:foliage4
-      minAmount: 1

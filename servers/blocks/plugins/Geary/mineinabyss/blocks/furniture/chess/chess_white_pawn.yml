@@ -1,0 +1,20 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>White Pawn
+    customModelData: 1016
+- !<blocky:sound>
+  placeSound: block.amethyst_cluster.place
+  breakSound: block.amethyst_cluster.break
+  stepSound: block.amethyst_cluster.step
+  hitSound: block.amethyst_cluster.hit
+  fallSound: block.amethyst_cluster.fall
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+- !<blocky:info>
+  blockBreakTime: 2s  
+  blockDrop:
+    - item:
+        prefab: mineinabyss:chess_white_pawn
+

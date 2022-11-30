@@ -1,0 +1,17 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Bamboo Mirror
+    customModelData: 1004
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:bamboo_mirror
+

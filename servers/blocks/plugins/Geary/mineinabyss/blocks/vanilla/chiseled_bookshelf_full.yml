@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Chiseled Bookshelf Full
+    customModelData: 2033
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 38
+  blockModel: "minecraft:block/chiseled_bookshelf_full"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:chiseled_bookshelf_full

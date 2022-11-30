@@ -1,0 +1,19 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Sculk Chair
+    customModelData: 1023
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+- !<blocky:seat>
+  heightOffset: 0.0
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:sculk_chair
+

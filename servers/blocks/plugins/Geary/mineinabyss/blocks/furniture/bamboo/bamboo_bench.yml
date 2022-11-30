@@ -1,0 +1,25 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: LEATHER_HORSE_ARMOR
+    displayName: <white>Bamboo Bench
+    customModelData: 1
+    color: 255, 255, 255
+- !<blocky:seat>
+  heightOffset: 0.1
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  rotationType: VERY_STRICT
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+    - { x: -1, y: 0, z: 0 }
+    - { x: -2, y: 0, z: 0 }
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:bamboo_bench
+

@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Carved Crimson Stem
+    customModelData: 2022
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 8
+  blockModel: mineinabyss:blocks/logs/carved_crimson_stem
+- !<blocky:directional>
+  yBlock: mineinabyss:carved_crimson_stem_y
+  xBlock: mineinabyss:carved_crimson_stem_x
+  zBlock: mineinabyss:carved_crimson_stem_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:carved_crimson_stem

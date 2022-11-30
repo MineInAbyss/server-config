@@ -1,0 +1,6 @@
+- !<blocky:sound>
+  placeSound: blocky.stone.place
+  breakSound: blocky.stone.break
+  stepSound: blocky.stone.step
+  hitSound: blocky.stone.hit
+  fallSound: blocky.stone.fall

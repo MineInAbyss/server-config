@@ -1,0 +1,7 @@
+- !<blocky:sound>
+  placeSound: blocky.wood.place
+  breakSound: blocky.wood.break
+  stepSound: blocky.wood.step
+  hitSound: blocky.wood.hit
+  fallSound: blocky.wood.fall
+- !<blocky:burnable>

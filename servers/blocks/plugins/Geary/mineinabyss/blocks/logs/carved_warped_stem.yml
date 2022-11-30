@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Carved Warped Stem
+    customModelData: 2028
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 26
+  blockModel: mineinabyss:blocks/logs/carved_warped_stem
+- !<blocky:directional>
+  yBlock: mineinabyss:carved_warped_stem_y
+  xBlock: mineinabyss:carved_warped_stem_x
+  zBlock: mineinabyss:carved_warped_stem_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:carved_warped_stem

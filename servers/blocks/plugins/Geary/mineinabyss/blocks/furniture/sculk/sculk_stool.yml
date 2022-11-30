@@ -1,0 +1,27 @@
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Sculk Stool
+    customModelData: 1028
+- !<blocky:sound>
+  placeSound: block.amethyst_cluster.place
+  breakSound: block.amethyst_cluster.break
+  stepSound: block.amethyst_cluster.step
+  hitSound: block.amethyst_cluster.hit
+  fallSound: block.amethyst_cluster.fall
+- !<blocky:seat>
+  heightOffset: -0.3
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+- !<blocky:seat>
+  heightOffset: 0.1
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:sculk_stool
+
