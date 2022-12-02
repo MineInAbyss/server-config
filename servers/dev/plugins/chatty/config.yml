@@ -1,42 +1,83 @@
-playerHeadFont: minecraft:chatty_heads
+# Used for displaying playerheads in chat.
+# This is the default font that comes with the plugin
+# %chatty_playerhead% will be replaced with the playerhead of the player who sent the message
+# Please note: This is not the most performance friendly feature so use the placeholder sparingly.
+playerHeadFont: "minecraft:chatty_heads"
+
+# [proxy]: Currently not supported
+# [messageReplyTime]: Duration a reply should be active for; t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
+# [messageSendFormat]: Format of the message sent by the messenger
+# [messageReceiveFormat]: Format of the message received by the receiver
+# [messageSendSound]: Sound to play when sending a message, "" to disable
+# [messageReceiveSound]: Sound to play when receiving a message, "" to disable
 privateMessages:
   enabled: true
-  proxy: true # Not currently supported
-  messageReplyTime: 20s # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
-  messageSendFormat: '<gold>You -> %chatty_player_displayname%</gold><gold>: '
-  messageReceiveFormat: '<gold>%chatty_player_displayname% -> You</gold><gold>: '
-  messageSendSound: '' # Empty for no sound
-  messageReceiveSound: '' # Empty for no sound
+  proxy: true
+  messageReplyTime: 2m
+  messageSendFormat: "<gold>You -> %chatty_player_displayname%</gold><gold>: "
+  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You</gold><gold>: "
+  messageSendSound: ""
+  messageReceiveSound: ""
+
+# [disableChatSigning]: Sends messages with valid signatures to support 1.19.1+ chat reporting. Disabling this will disable reporting
+# [commandSpyFormat]: Format for the command spy message
 chat:
   disableChatSigning: true
-  commandSpyFormat: '<gold>%chatty_player_displayname%</gold><yellow>: '
+  commandSpyFormat: "<gold>%chatty_player_displayname%</gold><yellow>: "
+
+# [useDisplayName]: Stores the chatty nickname in players displayname aswell
+# [maxLength]: The max length a nickname can be, with or without tags, depending on [countTagsInLength]
+# [countTagsInLength]: If true, tags will be taken into account in [maxLength].
+# [nickNameOtherPrefix]: Prefix to specify you want to nickname another player: [/chatty nickname @player nickname]
 nicknames:
   useDisplayName: true
   maxLength: 32
   countTagsInLength: false
   nickNameOtherPrefix: '@'
+
 join:
   enabled: false
   firstJoin:
     enabled: false
+
 leave:
   enabled: false
+
+# [enableProxySwitchMessages]: If true, will send a message to all servers when a player switched servers
+# [discordSrvChannelID]: The channel ID to send the message to as set in DiscordSRV's config.yml
+# [sendProxyMessagesToDiscord]: Enable if you have DiscordSRV on 1 server, Disable if you have it on more than 1 server.
 proxy:
   enableProxySwitchMessages: false
-  discordSrvChannelID: Global
+  discordSrvChannelID: "Global"
   sendProxyMessagesToDiscord: false
+
+# [enabledChannels]: List of all channelIds to enable pings for ("all" or "*" for all channels)
+# [clickToReply]: Whether shift+clicking a ping should reply for a player
+# [pingReceiveFormat]: Default format the ping-message is marked with for pinged
+# [pingSendFormat]: Default format the ping-message is marked with for sender
+# [defaultPingSound]: The default ping sound to play for a player when they are pinged
+# [alternativePingSounds]: List of sounds a player can choose between for their pings ("all" for all sounds in minecarft)
 ping:
   enabledChannels:
-    - all
+    - "all"
   pingVolume: 1.0
   pingPitch: 1.0
   pingPrefix: '@'
   clickToReply: true
-  pingReceiveFormat: <gold><b>
-  pingSendFormat: <i>
-  defaultPingSound: block.amethyst_block.place
+  pingReceiveFormat: "<gold><b>"
+  pingSendFormat: "<i>"
+  defaultPingSound: "block.amethyst_block.place"
   alternativePingSounds:
-    - all
+    - "all"
+
+# [channelType]: The type this channel is, GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
+# [isDefaultChannel]: Specify if this is the channel players should be put in by default
+# [proxy]: Specify if messages sent in this channel should be sent across a proxy network (BungeeCord / Velocity)
+# [logToConsole]: Specify if messages in this channel should be sent to the console
+# [discordsrv]: Specify if messages sent in this channel should also be sent to Discord via DiscordSRV
+# [format]: The format to use for this channel, this is what is added before the message itself
+# [messageColor]: The color to use for the message itself, white by default
+# [channelAliases]: List of aliases for this channel, these can be used to switch to this channel
 channels:
   global:
     channelType: GLOBAL
@@ -44,42 +85,43 @@ channels:
     proxy: true
     logToConsole: true
     discordsrv: true
-    format: ':dev: %luckperms_prefix% %chatty_player_displayname%<white>: '
+    format: ":dev: %luckperms_prefix% %chatty_player_displayname%<white>: "
     channelAliases:
-      - g
+      - "g"
 
   playerhead:
     channelType: GLOBAL
-    permission: chatty.channel.playerhead
+    permission: "chatty.channel.playerhead"
     isDefaultChannel: false
     proxy: true
     logToConsole: true
     discordsrv: true
-    format: '%chatty_player_head% %luckperms_prefix% %chatty_player_displayname%<white>: '
+    format: "%chatty_player_head% %luckperms_prefix% %chatty_player_displayname%<white>: "
+    messageColor: white
     channelAliases:
-      - head
+      - "head"
 
   local:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
     logToConsole: true
-    format: ':dev:%chatty_shift_-8%:local: <yellow>%chatty_player_displayname%<yellow>: '
+    format: ":dev:%chatty_shift_-8%:local: <yellow>%chatty_player_displayname%<yellow>: "
     messageColor: yellow
     channelRadius: 500
     channelAliases:
-      - l
+      - "l"
 
   admin:
     channelType: PERMISSION
-    permission: chatty.channel.admin
+    permission: "chatty.channel.admin"
     requireEffectivePermission: false
     isDefaultChannel: false
     isStaffChannel: true
     discordsrv: false
     proxy: true
     logToConsole: false
-    format: ':dev:%chatty_shift_-8%:admin:%chatty_player_displayname%<red>: '
+    format: ":dev:%chatty_shift_-8%:admin:%chatty_player_displayname%<red>: "
     messageColor: red
     channelAliases:
-      - a
+      - "a"
