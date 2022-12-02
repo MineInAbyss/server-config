@@ -1,3 +1,5 @@
+- !<geary:inherit>
+  from: [mineinabyss:ground_furniture]
 - !<looty:player_instanced_item> { }
 - !<looty:type>
   item:

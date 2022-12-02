@@ -10,15 +10,9 @@
   blockType: NOTEBLOCK
   blockId: 1
   blockModel: mineinabyss:blocks/ores/charcoal_sand_ore
-- !<blocky:placable_on>
-  floor: true
-  ceiling: true
-  wall: false
-  blocks:
-    - STONE
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10s
+  blockBreakTime: 3s
   blockDrop:
     - item:
         prefab: mineinabyss:charcoal_sand_raw
