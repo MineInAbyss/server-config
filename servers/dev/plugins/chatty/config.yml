@@ -14,8 +14,8 @@ privateMessages:
   enabled: true
   proxy: true
   messageReplyTime: 2m
-  messageSendFormat: "<gold>You -> %chatty_player_displayname%</gold><gold>: "
-  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You</gold><gold>: "
+  messageSendFormat: "<gold>You -> <chatty_nickname></gold><gold>: "
+  messageReceiveFormat: "<gold><chatty_nickname> -> You</gold><gold>: "
   messageSendSound: ""
   messageReceiveSound: ""
 
@@ -23,7 +23,7 @@ privateMessages:
 # [commandSpyFormat]: Format for the command spy message
 chat:
   disableChatSigning: true
-  commandSpyFormat: "<gold>%chatty_player_displayname%</gold><yellow>: "
+  commandSpyFormat: "<gold><chatty_nickname></gold><yellow>: "
 
 # [useDisplayName]: Stores the chatty nickname in players displayname aswell
 # [maxLength]: The max length a nickname can be, with or without tags, depending on [countTagsInLength]
@@ -85,7 +85,7 @@ channels:
     proxy: true
     logToConsole: true
     discordsrv: true
-    format: ":dev: %luckperms_prefix% %chatty_player_displayname%<white>: "
+    format: ":dev: %luckperms_prefix% <chatty_nickname><white>: "
     channelAliases:
       - "g"
 
@@ -96,7 +96,7 @@ channels:
     proxy: true
     logToConsole: true
     discordsrv: true
-    format: "%chatty_player_head% %luckperms_prefix% %chatty_player_displayname%<white>: "
+    format: "%chatty_player_head% %luckperms_prefix% <chatty_nickname><white>: "
     messageColor: white
     channelAliases:
       - "head"
@@ -106,7 +106,7 @@ channels:
     isDefaultChannel: false
     discordsrv: false
     logToConsole: true
-    format: ":dev:%chatty_shift_-8%:local: <yellow>%chatty_player_displayname%<yellow>: "
+    format: ":dev:%chatty_shift_-8%:local: <yellow><chatty_nickname><yellow>: "
     messageColor: yellow
     channelRadius: 500
     channelAliases:
@@ -121,7 +121,7 @@ channels:
     discordsrv: false
     proxy: true
     logToConsole: false
-    format: ":dev:%chatty_shift_-8%:admin:%chatty_player_displayname%<red>: "
+    format: ":dev:%chatty_shift_-8%:admin:<chatty_nickname><red>: "
     messageColor: red
     channelAliases:
       - "a"
