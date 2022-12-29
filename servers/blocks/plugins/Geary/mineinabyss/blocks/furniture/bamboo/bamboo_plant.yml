@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Bamboo Plant
+    customModelData: 1005
+- !<blocky:furniture>
+  furnitureType: ARMOR_STAND
+  rotationType: NONE
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:bamboo_plant
+

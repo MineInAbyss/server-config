@@ -4,13 +4,19 @@
     type: PAPER
     displayName: <#7a4e48>Foliage 1
     customModelData: 3001
+- !<blocky:placable_on>
+  floor: true
+  ceiling: true
+  wall: false
+  blocks:
+    - STONE
 - !<blocky:block>
-  blockType: GROUND
+  blockType: WIRE
   blockId: 1
   blockModel: mineinabyss:block/nature/foliage1
+- !<blocky:tall_wire>
 - !<blocky:info>
   blockBreakTime: 2s
   blockDrop:
     - item:
         prefab: mineinabyss:foliage1
-      minAmount: 1

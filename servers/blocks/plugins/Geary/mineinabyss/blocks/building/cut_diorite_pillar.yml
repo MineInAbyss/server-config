@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:stone]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Cut Diorite Pillar
+    customModelData: 2034
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 29
+  blockModel: mineinabyss:blocks/building/cut_diorite_pillar
+- !<blocky:directional>
+  yBlock: mineinabyss:cut_diorite_pillar_y
+  xBlock: mineinabyss:cut_diorite_pillar_x
+  zBlock: mineinabyss:cut_diorite_pillar_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:cut_diorite_pillar

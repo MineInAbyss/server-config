@@ -4,8 +4,10 @@
     type: PAPER
     displayName: <#33404d>Windmill
     customModelData: 1002
+- !<geary:no_vanilla_interactions>
 - !<blocky:modelengine>
-- !<geary:inherit>
-  from: [mineinabyss:block]
-- !<mobzy:modelengine>
   modelId: windmill
+- !<blocky:furniture>
+  furnitureType: ARMOR_STAND
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }

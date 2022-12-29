@@ -1,0 +1,8 @@
+- !<geary:inherit>
+  from: [mineinabyss:carved_dark_oak_log]
+- !<blocky:directional>
+  parentBlock: mineinabyss:carved_dark_oak_log
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 12
+  blockModel: mineinabyss:blocks/logs/carved_dark_oak_log

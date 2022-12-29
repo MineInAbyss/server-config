@@ -1,0 +1,23 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood, mineinabyss:ground_furniture]
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: LEATHER_HORSE_ARMOR
+    displayName: <white>Bamboo Chair
+    customModelData: 2
+    color: 255, 255, 255
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  rotationType: STRICT
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+- !<blocky:seat>
+  heightOffset: 0.1
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:bamboo_chair
+

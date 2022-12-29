@@ -1,30 +1,25 @@
+- !<geary:inherit>
+  from: [mineinabyss:stone]
 - !<looty:player_instanced_item> { }
 - !<looty:type>
   item:
     type: PAPER
-    displayName: <#785F34>Charcoal Sand Ore
+    displayName: <white>Charcoal Sand Ore
     customModelData: 2001
 - !<blocky:block>
-  blockType: CUBE
+  blockType: NOTEBLOCK
   blockId: 1
-  blockModel: mineinabyss:block/ores/charcoal_sand_ore
-- !<blocky:sound>
-  placeSound: block.stone.place
-  breakSound: block.stone.break
-  stepSound: block.stone.step
-  hitSound: block.stone.hit
-  fallSound: block.stone.fall
+  blockModel: mineinabyss:blocks/ores/charcoal_sand_ore
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10s
+  blockBreakTime: 3s
   blockDrop:
     - item:
-        prefab: mineinabyss:abyssal_snail_gunk
-      minAmount: 1
-      maxAmount: 3
+        prefab: mineinabyss:charcoal_sand_raw
+      amount: 1..3
       exp: 100
       affectedByFortune: false
       affectedBySilkTouch: true
       silkTouchedDrop:
-        prefab: mineinabyss:abyssal_snail_shell
+        prefab: mineinabyss:charcoal_sand_ore
 

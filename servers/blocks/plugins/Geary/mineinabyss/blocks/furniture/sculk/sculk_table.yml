@@ -1,0 +1,25 @@
+- !<geary:inherit>
+  from: [mineinabyss:ground_furniture]
+- !<looty:player_instanced_item> { }
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Sculk Table
+    customModelData: 1029
+- !<blocky:sound>
+  placeSound: block.amethyst_cluster.place
+  breakSound: block.amethyst_cluster.break
+  stepSound: block.amethyst_cluster.step
+  hitSound: block.amethyst_cluster.hit
+  fallSound: block.amethyst_cluster.fall
+- !<blocky:furniture>
+  furnitureType: ITEM_FRAME
+  collisionHitbox:
+    - { x: 0, y: 0, z: 0 }
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:sculk_table
+

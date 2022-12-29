@@ -1,0 +1,7 @@
+- !<geary:inherit>
+  from: [mineinabyss:bamboo_block]
+- !<blocky:directional>
+  parentBlock: mineinabyss:bamboo_block
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 34

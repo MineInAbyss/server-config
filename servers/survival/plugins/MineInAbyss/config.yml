@@ -33,7 +33,7 @@ features:
   - !<survival_pvp>
   - !<anticheese>
   - !<curse>
-  - !<keepinv>
+  #- !<keepinv> Temp disabled until issue fixed
   - !<relics>
   - !<exp>
   - !<lock_display_item>

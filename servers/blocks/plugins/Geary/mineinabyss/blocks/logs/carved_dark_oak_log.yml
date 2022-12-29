@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Carved Dark Oak Log
+    customModelData: 2023
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 11
+  blockModel: mineinabyss:blocks/logs/carved_dark_oak_log
+- !<blocky:directional>
+  yBlock: mineinabyss:carved_dark_oak_log_y
+  xBlock: mineinabyss:carved_dark_oak_log_x
+  zBlock: mineinabyss:carved_dark_oak_log_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:carved_dark_oak_log

@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: <white>Carved Spruce Log
+    customModelData: 2027
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 23
+  blockModel: mineinabyss:blocks/logs/carved_spruce_log
+- !<blocky:directional>
+  yBlock: mineinabyss:carved_spruce_log_y
+  xBlock: mineinabyss:carved_spruce_log_x
+  zBlock: mineinabyss:carved_spruce_log_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:carved_spruce_log
