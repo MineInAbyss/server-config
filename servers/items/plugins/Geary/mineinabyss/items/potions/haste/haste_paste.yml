@@ -1,0 +1,24 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: "<#b5955f>Haste Paste"
+    customModelData: 127
+    lore:
+      - <yellow>Compact with nutrients fit for a miner,
+      - <yellow>but odours a vile raw smell and has
+      - <yellow>an awfully mushy texture.
+      - <yellow>If you think this tastes like a rotting brain,
+      - <yellow> that's because it is....
+      - <#b5955f><i>It's mushy, but why is it also crunchy?
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:haste_paste
+    amount: 3
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:kagi_tachikiri_pincer
+        - prefab: mineinabyss:squidfly_brain_raw
+        - prefab: mineinabyss:sakuranbo_dust
