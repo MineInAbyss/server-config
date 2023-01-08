@@ -10,6 +10,9 @@
     - !<shapeless>
       items:
         - prefab: mineinabyss:inbyo_fur
-    #- !<shapeless>
-    #  items:
-    #    - tag: coals
+    - !<shapeless>
+      items:
+        - type: COAL
+    - !<shapeless>
+      items:
+        - type: CHARCOAL
