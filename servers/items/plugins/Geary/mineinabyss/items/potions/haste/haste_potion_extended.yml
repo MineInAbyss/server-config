@@ -23,6 +23,6 @@
   potionmixes:
     - !<potionmix>
       ingredient:
-        type: GLOWSTONE_DUST
+        type: REDSTONE
       input:
         prefab: mineinabyss:haste_potion
