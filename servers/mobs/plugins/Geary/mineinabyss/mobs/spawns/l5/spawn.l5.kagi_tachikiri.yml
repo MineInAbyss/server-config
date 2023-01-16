@@ -1,3 +1,5 @@
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]
 - !<mobzy:spawn.type>
   prefab: mineinabyss:kagi_tachikiri
 - !<mobzy:spawn.amount>
@@ -10,11 +12,9 @@
   max: 6
   radius: 300
 - !<mobzy:check.spawn.gap>
-  range: 4..4096
+  range: 4..40
 - !<geary:check.block_type>
   allow:
     - SAND
     - RED_SAND
-- !<mobzy:spawn_regions>
-  keys: [ layerfive ]
 

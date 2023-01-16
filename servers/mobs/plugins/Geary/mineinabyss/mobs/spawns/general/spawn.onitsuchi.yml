@@ -5,7 +5,7 @@
 - !<mobzy:spawn.position>
   AIR
 - !<mobzy:check.spawn.local_group>
-  max: 2
-  radius: 500
+  max: 6
+  radius: 250
 - !<mobzy:check.spawn.gap>
   range: 30..4096

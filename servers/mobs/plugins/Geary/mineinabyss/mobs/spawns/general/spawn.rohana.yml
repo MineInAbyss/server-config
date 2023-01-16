@@ -7,10 +7,10 @@
 - !<mobzy:spawn.priority>
   priority: 0.4
 - !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 300
+  max: 12
+  radius: 200
 - !<mobzy:check.spawn.gap>
-  range: 3..4096
+  range: 3..20
 - !<geary:check.block_type>
   allow:
     - WATER

@@ -1,5 +1,12 @@
 - !<mobzy:type>
-  baseClass: minecraft:armor_stand
+  baseClass: minecraft:pig
   creatureType: MISC
-- !<geary:no_vanilla_interactions>
+- !<mobzy:attributes>
+  followRange: 10
+  movementSpeed: 0.0
+#- !<geary:no_vanilla_interactions>
 - !<mobzy:important>
+- !<mobzy:sounds>
+- !<mobzy:pathfinders>
+  goals:
+    1: !<minecraft:behavior.look_at_player>

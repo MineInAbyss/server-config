@@ -4,11 +4,8 @@
   amount: 1..3
 - !<mobzy:spawn.spread>
   radius: 10
-- !<mobzy:spawn.priority>
-  priority: 0.3
-- !<mobzy:check.spawn.local_group>
-  max: 6
-  radius: 300
+
+
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<geary:check.block_type>

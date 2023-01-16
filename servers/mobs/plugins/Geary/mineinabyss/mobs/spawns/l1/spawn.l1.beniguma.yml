@@ -5,14 +5,14 @@
 - !<mobzy:spawn_regions>
   keys: [ layerone ]
 - !<mobzy:spawn.spread>
-  radius: 20
+  radius: 10
 - !<mobzy:spawn.priority>
   priority: 0.2
 - !<mobzy:check.spawn.local_group>
   max: 4
-  radius: 400
+  radius: 150
 - !<mobzy:check.spawn.gap>
-  range: 3..4096
+  range: 4..4096
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK

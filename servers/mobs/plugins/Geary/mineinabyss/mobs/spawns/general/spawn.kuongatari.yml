@@ -12,7 +12,7 @@
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<mobzy:check.spawn.delay>
-  attemptEvery: 1s
+  attemptEvery: 2S
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK

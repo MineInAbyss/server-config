@@ -1,3 +1,5 @@
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]
 - !<mobzy:spawn.type>
   prefab: mineinabyss:ashimite
 - !<mobzy:spawn.amount>
@@ -7,14 +9,12 @@
 - !<mobzy:spawn.priority>
   priority: 0.3
 - !<mobzy:check.spawn.local_group>
-  max: 6
-  radius: 500
+  max: 8
+  radius: 200
 - !<mobzy:check.spawn.gap>
   range: 5..4096
 - !<geary:check.block_type>
   allow:
     - SNOW_BLOCK
     - POWDER_SNOW
-- !<mobzy:spawn_regions>
-  keys: [ layerfive ]
 

@@ -5,7 +5,7 @@
   modelId: hashofu
 - !<mobzy:attributes>
   maxHealth: 20
-  flyingSpeed: 6
+  flyingSpeed: 0.5
   attackDamage: 0
   followRange: 20
   height: 0.8000

@@ -1,19 +1,19 @@
+- !<mobzy:spawn_regions>
+  keys: [ layerfive ]
 - !<mobzy:spawn.type>
   prefab: mineinabyss:abyssal_snail
 - !<mobzy:spawn.amount>
-  amount: 1..2
+  amount: 1..3
 - !<mobzy:spawn.spread>
   radius: 10
 - !<mobzy:spawn.priority>
   priority: 0.3
 - !<mobzy:check.spawn.local_group>
-  max: 2
-  radius: 500
+  max: 4
+  radius: 150
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK
-- !<mobzy:spawn_regions>
-  keys: [ layerfive ]
 

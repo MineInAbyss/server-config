@@ -9,7 +9,7 @@
   attackDamage: 5
   attackKnockback: 1.5000
   knockbackResistance: 0.1000
-  flyingSpeed: 10
+  flyingSpeed: 0.5
   width: 2
   height: 2
 - !<mobzy:death_loot>

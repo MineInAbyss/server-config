@@ -7,7 +7,7 @@
   maxHealth: 15
   followRange: 30
   attackDamage: 5
-  flyingSpeed: 3
+  flyingSpeed: 0.7
   width: 0.5000
   height: 1
 - !<mobzy:death_loot>
