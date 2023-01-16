@@ -7,7 +7,7 @@
 - !<mobzy:spawn.spread>
   radius: 1
 - !<mobzy:spawn.priority>
-  priority: 0.2
+  priority: 0.6
 - !<mobzy:check.spawn.local_group>
   max: 6
   radius: 200

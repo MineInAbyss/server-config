@@ -3,17 +3,17 @@
 - !<mobzy:spawn_regions>
   keys: [ layerfour ]
 - !<mobzy:spawn.priority>
-  priority: 0.6
+  priority: 0.9
 - !<mobzy:check.spawn.local_group>
   max: 1
-  radius: 300
+  radius: 400
 - !<mobzy:check.spawn.gap>
   range: 10..4096
 #- !<geary:time>
 #  min: 13000
 #  max: 23000
 - !<mobzy:check.spawn.delay>
-  attemptEvery: 2S
+  attemptEvery: 4S
 - !<geary:check.block_type>
   allow:
     - WATER

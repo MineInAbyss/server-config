@@ -1,15 +1,16 @@
+- !<mobzy:spawn_regions>
+  keys: [ layerfour ]
 - !<mobzy:spawn.type>
   prefab: mineinabyss:shroombear
 - !<mobzy:spawn.amount>
   amount: 1..3
 - !<mobzy:spawn.spread>
   radius: 10
-
-
+- !<mobzy:check.spawn.local_group>
+  max: 7
+  radius: 220
 - !<mobzy:check.spawn.gap>
-  range: 3..4096
+  range: 5..4096
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK
-- !<mobzy:spawn_regions>
-  keys: [ layerfour ]

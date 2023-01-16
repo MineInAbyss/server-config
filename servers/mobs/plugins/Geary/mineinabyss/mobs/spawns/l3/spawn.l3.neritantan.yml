@@ -3,4 +3,4 @@
 - !<mobzy:spawn_regions>
   keys: [ layerthree ]
 - !<mobzy:check.spawn.delay>
-  attemptEvery: 1s
+  attemptEvery: 12t

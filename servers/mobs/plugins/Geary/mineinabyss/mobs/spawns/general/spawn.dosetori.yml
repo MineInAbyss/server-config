@@ -1,9 +1,7 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:dosetori
 - !<mobzy:spawn.priority>
-  priority: 0.2
-- !<mobzy:spawn.position>
-  AIR
+  priority: 0.4
 - !<mobzy:check.spawn.local_group>
   max: 4
   radius: 150

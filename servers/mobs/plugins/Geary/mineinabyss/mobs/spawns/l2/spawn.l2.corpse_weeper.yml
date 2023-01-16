@@ -1,10 +1,11 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:corpse_weeper
-
 - !<mobzy:spawn_regions>
   keys: [ layertwo ]
-- !<mobzy:spawn.position>
-  AIR
-
 - !<mobzy:check.spawn.gap>
-  range: 10..4096
+  range: 15..4096
+- !<mobzy:check.spawn.local_group>
+  max: 4
+  radius: 250
+- !<mobzy:spawn.priority>
+  priority: 0.6

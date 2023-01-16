@@ -4,7 +4,5 @@
   amount: 3..5
 - !<mobzy:spawn.spread>
   radius: 1
-
-
 - !<mobzy:spawn_regions>
   keys: [ layerfour ]

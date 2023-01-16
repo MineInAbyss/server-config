@@ -5,10 +5,10 @@
 - !<mobzy:spawn.spread>
   radius: 10
 - !<mobzy:spawn.priority>
-  priority: 0.5
+  priority: 0.6
 - !<mobzy:check.spawn.local_group>
   max: 12
-  radius: 400
+  radius: 300
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<mobzy:check.spawn.delay>

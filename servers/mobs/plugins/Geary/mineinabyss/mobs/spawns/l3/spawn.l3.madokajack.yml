@@ -1,8 +1,5 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:madokajack
-
-- !<mobzy:spawn.position>
-  AIR
 - !<mobzy:check.spawn.local_group>
   max: 3
   radius: 150

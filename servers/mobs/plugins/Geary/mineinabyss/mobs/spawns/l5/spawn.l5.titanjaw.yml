@@ -10,7 +10,7 @@
   max: 7
   radius: 200
 - !<mobzy:check.spawn.gap>
-  range: 3..4096
+  range: 5..4096
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK

@@ -1,11 +1,9 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:splitjaw
 - !<mobzy:spawn.priority>
-  priority: 0.05
-- !<mobzy:spawn.position>
-  AIR
+  priority: 0.8
 - !<mobzy:check.spawn.local_group>
-  max: 50
-  radius: 500
+  max: 4
+  radius: 250
 - !<mobzy:check.spawn.gap>
   range: 10..4096
