@@ -13,7 +13,7 @@
 #  min: 13000
 #  max: 23000
 - !<mobzy:check.spawn.delay>
-  attemptEvery: 4S
+  attemptEvery: 4s
 - !<geary:check.block_type>
   allow:
     - WATER
