@@ -1,10 +1,13 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: CHICKEN
+    type: APPLE
     displayName: "<#FFF821>Raw Dosetori Meat"
-    customModelData: 2
+    customModelData: 4
     lore:
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Tastes like chicken?
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

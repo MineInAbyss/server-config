@@ -1,15 +1,18 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_COD
+    type: APPLE
     displayName: <#454545>Cooked Hashofu Tail
-    customModelData: 3
+    customModelData: 107
     lore:
       - <yellow>Obtained by cutting of the tail
       - <yellow>of a <#454545>Hashofu <yellow>in the
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>It is said it tastes like sushi.
       - <#595959><i>Smell isn't so unbearable anymore!
+- !<geary:food>
+  saturation: 6
+  hunger: 5
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

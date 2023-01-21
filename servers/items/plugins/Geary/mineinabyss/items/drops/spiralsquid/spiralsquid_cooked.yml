@@ -1,14 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_SALMON
+    type: APPLE
     displayName: <#6CE5F5>Cooked Spiralsquid
-    customModelData: 3
+    customModelData: 118
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>catching a <#6CE5F5>Spiralsquid <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#35ADBD><i>Seems like a great source for food!
+- !<geary:food>
+  saturation: 6
+  hunger: 5
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

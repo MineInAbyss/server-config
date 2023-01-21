@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: RABBIT
+    type: APPLE
     displayName: <#E0E0E0>Raw Fuwagi Meat
-    customModelData: 1
+    customModelData: 15
     lore:
       - <yellow>Dropped from the fast and the curious
       - <white>Fuwagi <yellow>deep in the <green>Edge of the
@@ -11,3 +11,6 @@
       - <#FF3A24><i>Gamey with a hint of carrot and
       - <#FF3A24><i>apple. Mostly carrot though.
       - <#FF3A24><i>A Lot of carrots.
+- !<geary:food>
+  saturation: 1.8
+  hunger: 3

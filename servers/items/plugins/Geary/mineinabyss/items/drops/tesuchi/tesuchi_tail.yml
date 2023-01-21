@@ -1,8 +1,11 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: ROTTEN_FLESH
+    type: APPLE
     displayName: <dark_green>Tesuchi Tail
-    customModelData: 1
+    customModelData: 20
     lore:
       - <green><i>Yummy
+- !<geary:food>
+  saturation: 1.5
+  hunger: 3

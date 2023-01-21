@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_PORKCHOP
+    type: APPLE
     displayName: <#10DEA7>Cooked Okibo Meat
-    customModelData: 3
+    customModelData: 113
     lore:
       - <yellow>Tastes excellent when prepared well.
       - <yellow>There is a ritual in <green>Orth<yellow>, for whenever
@@ -12,6 +12,9 @@
       - <yellow>The <gold>GuildHQ Head Chef <yellow>butchers
       - <yellow>the <#11E8AF>Okibo <yellow>they arrive on
       - <yellow>and prepare a giant feast for all.
+- !<geary:food>
+  saturation: 12.8
+  hunger: 8
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

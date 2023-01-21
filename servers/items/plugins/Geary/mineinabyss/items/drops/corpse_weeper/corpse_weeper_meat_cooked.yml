@@ -1,13 +1,16 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_PORKCHOP
+    type: APPLE
     displayName: "<#D12B26>Cooked Corpse-Weeper Meat"
-    customModelData: 2
+    customModelData: 112
     lore:
       - <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers
       - <yellow>from the <green>Forest of Temptation<yellow>.
       - <red><i>This stench is awful but it tastes so good...
+- !<geary:food>
+  saturation: 12.8
+  hunger: 8
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

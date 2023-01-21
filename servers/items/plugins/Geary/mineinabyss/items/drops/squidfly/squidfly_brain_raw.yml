@@ -1,12 +1,15 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: POTATO
+    type: APPLE
     displayName: <#85512E>Squidfly Brain
-    customModelData: 1
+    customModelData: 19
     lore:
       - <yellow>Dropped by <#85512E>Squidflies
       - <yellow>in the <green>Great Fault<yellow>.
       - <#C27643><i>Eating it raw might not
       - <#C27643><i>be the brighest idea
       - <#C27643><i>I've come up with...
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

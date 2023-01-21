@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_COD
+    type: APPLE
     displayName: <#613F0C>Cooked Hammerbeak Wing
-    customModelData: 2
+    customModelData: 106
     lore:
       - <yellow>Obtained by incinerating <#705723>Hammerbeaks
       - <yellow> in the <green>Edge of the Abyss <yellow>or
@@ -11,6 +11,9 @@
       - <yellow>Can also be acquired from cooking
       - <#705723>Raw Hammerbeak Meat<yellow>.
       - <#A9CCCA><i>This tastes delicious!
+- !<geary:food>
+  saturation: 7.2
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

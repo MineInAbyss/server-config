@@ -1,17 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_PORKCHOP
+    type: APPLE
     displayName: "<#2597D9>Cooked Ashimite Meat"
-    customModelData: 1
+    customModelData: 111
     lore:
       - <yellow>Can be obtained by hunting down an
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
       - <yellow>and cooking its meat.
       - <#824E21><i>Very tasty and rich in nutrients!
 - !<geary:food>
-  saturation: 8
-  hunger: 10
+  saturation: 12.8
+  hunger: 8
   replacement:
     prefab: mineinabyss:ashimite_meat_bone
 - !<looty:recipes>

@@ -1,14 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_SALMON
+    type: APPLE
     displayName: "<#257BEB>Cooked Demonfish"
-    customModelData: 1
+    customModelData: 116
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>catching a <#257BEB>Demonfish <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#1B5BAD><i>Seems like a great source for food!
+- !<geary:food>
+  saturation: 9.6
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

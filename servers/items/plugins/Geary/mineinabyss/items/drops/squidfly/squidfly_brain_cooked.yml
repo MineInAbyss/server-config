@@ -1,14 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: BAKED_POTATO
+    type: APPLE
     displayName: <#85512E>Cooked Squidfly Brain
-    customModelData: 1
+    customModelData: 119
     lore:
       - <yellow>Dropped by <#85512E>Squidflies
       - <yellow>in the <green>Great Fault<yellow>.
       - <#C27643><i>Perhaps I will become smarter
       - <#C27643><i>if I consume this brain?
+- !<geary:food>
+  saturation: 6
+  hunger: 5
 - !<looty:recipes>
   discoverRecipes: true
   recipes:
