@@ -1,0 +1,14 @@
+- !<looty:recipes>
+  discoverRecipes: true
+  result:
+    type: GLOW_INK_SAC
+  group: "glow_ink_sac"
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:rohana_powder
+        - prefab: mineinabyss:kazura_squid_ink_sac
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:rohana_powder
+        - prefab: mineinabyss:makihige_ink_sac
