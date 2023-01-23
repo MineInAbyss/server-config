@@ -1,12 +1,15 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COD
+    type: APPLE
     displayName: <#454545>Hashofu Tail
-    customModelData: 3
+    customModelData: 7
     lore:
       - <yellow>Obtained by cutting of the
       - <yellow>tail of a <#616161>Hashofu <yellow>in the
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>It is said it tastes like sushi.
       - <#595959><i>Though by it's smell I doubt it...
+- !<geary:food>
+  saturation: 0.4
+  hunger: 2

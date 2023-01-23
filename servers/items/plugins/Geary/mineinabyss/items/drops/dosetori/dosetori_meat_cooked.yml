@@ -1,13 +1,16 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_CHICKEN
+    type: APPLE
     displayName: "<#FFF821>Cooked Dosetori Meat"
-    customModelData: 2
+    customModelData: 104
     lore:
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Tastes like fried chicken?
+- !<geary:food>
+  saturation: 7.2
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

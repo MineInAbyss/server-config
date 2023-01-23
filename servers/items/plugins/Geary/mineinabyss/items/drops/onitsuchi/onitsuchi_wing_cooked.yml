@@ -1,15 +1,18 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_COD
+    type: APPLE
     displayName: <#5C471D>Cooked Onitsuchi Wing
-    customModelData: 4
+    customModelData: 108
     lore:
       - <yellow>Dropped from <#5C471D>Onitsuchis <yellow>in
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <yellow>Can also be acquired from cooking
       - <#705723>Raw Onitsuchi Meat<yellow>.
       - <#A9CCCA><i>This tastes delicious!
+- !<geary:food>
+  saturation: 7.2
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

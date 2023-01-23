@@ -1,14 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_SALMON
+    type: APPLE
     displayName: <#1B91B5>Cooked Hamashirama
-    customModelData: 2
+    customModelData: 117
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>Seems like a great source for food!
+- !<geary:food>
+  saturation: 9.6
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

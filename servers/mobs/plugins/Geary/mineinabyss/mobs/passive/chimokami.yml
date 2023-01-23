@@ -38,10 +38,8 @@
 #      seeThroughWalls: true
     1: !<minecraft:behavior.tempt>
       items:
-        - type: CHICKEN
-        - type: COOKED_CHICKEN
-        - type: RABBIT
-        - type: COOKED_RABBIT
+        - type: APPLE
+        - type: APPLE
     2: !<minecraft:behavior.avoid_player>
       radius: 15
     3: !<minecraft:behavior.random_stroll_land>

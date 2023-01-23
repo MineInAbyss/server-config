@@ -1,14 +1,17 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_PORKCHOP
+    type: APPLE
     displayName: <#D8D8D8>Cooked Ottobas Meat
-    customModelData: 4
+    customModelData: 114
     lore:
       - <yellow>Due to proper preparations, the
       - <#D4D4D4>Ottobas <yellow>flesh is now edible.
       - <white><i>This should be enough food
       - <white><i>to last for daaaaayyss!!
+- !<geary:food>
+  saturation: 12.8
+  hunger: 8
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

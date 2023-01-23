@@ -1,7 +1,7 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_BEEF
+    type: APPLE
     displayName: <#8F2222>Cooked Uibuta Meat
     customModelData: 2
     lore:
@@ -9,6 +9,9 @@
       - <yellow>the <#8F2222>Uibuta <yellow>flesh is now edible.
       - <#C42F2F><i>This should be enough food
       - <#C42F2F><i>to last for daaaaayyss!!
+- !<geary:food>
+  saturation: 7.2
+  hunger: 6
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

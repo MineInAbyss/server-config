@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: CHICKEN
+    type: APPLE
     displayName: "<#3DDFFF>Raw Cyatoria Drumstick"
-    customModelData: 1
+    customModelData: 3
     lore:
       - <yellow>Dropped by <#3DDFFF>Cyatoria <yellow>at
       - <yellow>the <green>Edge of the Abyss <yellow>and in <green>Forest of Temptation<yellow>.
@@ -11,3 +11,6 @@
       - <yellow>rare creature originating from
       - <yellow>the <#404040>7th Layer, The Final Maelstrom<yellow>.
       - <#54FFA4><i>I assure you, it tastes just like chicken...
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

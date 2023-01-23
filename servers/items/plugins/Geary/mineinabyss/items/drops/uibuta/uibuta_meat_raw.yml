@@ -1,7 +1,7 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: BEEF
+    type: APPLE
     displayName: <#8F2222>Raw Uibuta Meat
     customModelData: 2
     lore:
@@ -10,3 +10,6 @@
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#C42F2F><i>A thick layer of fat clings to the meat.
       - <#C42F2F><i>Cooking it should help making it edible.
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

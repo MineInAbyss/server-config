@@ -1,12 +1,15 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COD
+    type: APPLE
     displayName: <#613F0C>Raw Hammerbeak Wing
-    customModelData: 2
+    customModelData: 6
     lore:
       - <yellow>Dropped by <#705723>Hammerbeaks <yellow>in
       - <yellow>the <green>Edge of the Abyss <yellow>and
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <#A9CCCA><i>This meat seems delicious
       - <#A9CCCA><i>if cooked properly!
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

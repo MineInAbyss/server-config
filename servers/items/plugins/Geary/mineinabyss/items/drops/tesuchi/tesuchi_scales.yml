@@ -1,8 +1,11 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: DRIED_KELP
+    type: APPLE
     displayName: <dark_green>Tesuchi Scales
-    customModelData: 1
+    customModelData: 120
     lore:
       - <green><i>Crispy
+- !<geary:food>
+  saturation: 1.2
+  hunger: 2

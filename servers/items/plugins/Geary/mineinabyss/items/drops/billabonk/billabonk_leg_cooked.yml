@@ -1,15 +1,18 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: COOKED_COD
+    type: APPLE
     displayName: "<#0357AB>Cooked Billabonk Leg"
-    customModelData: 1
+    customModelData: 105
     lore:
       - <yellow>Dropped by <#0357AB>Billabonks <yellow>in
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <yellow>Can also be obtained by cooking
       - <yellow>a <#0357AB>Raw Billabonk Leg<yellow>.
       - <#0357AB><i>Do the stanky leg
+- !<geary:food>
+  saturation: 6
+  hunger: 5
 - !<looty:recipes>
   discoverRecipes: true
   recipes:

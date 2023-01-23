@@ -1,11 +1,14 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: PORKCHOP
+    type: APPLE
     displayName: <#10DEA7>Raw Okibo Meat
-    customModelData: 3
+    customModelData: 13
     lore:
       - <yellow>Usually found in <green>Orth as a source of
       - <yellow>transportation of goods, <#11E8AF>Okibos
       - <yellow>are also a great source of food
       - <yellow>due to their large size.
+- !<geary:food>
+  saturation: 1.8
+  hunger: 3

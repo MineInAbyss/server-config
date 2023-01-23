@@ -1,11 +1,14 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    type: PORKCHOP
+    type: APPLE
     displayName: "<#D12B26>Raw Corpse-Weeper Meat"
-    customModelData: 2
+    customModelData: 12
     lore:
       - <yellow>Dropped by <dark_red>Corpse-Weepers <yellow>in
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <red><i>It both smells and tastes horrible...
       - <red><i>Will cooking this help?
+- !<geary:food>
+  saturation: 1.8
+  hunger: 3
