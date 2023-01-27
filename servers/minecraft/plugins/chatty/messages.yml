@@ -1,8 +1,8 @@
 nicknames:
-  selfSuccess: "<green>You changed your nickname to <i>%chatty_player_displayname%!"
+  selfSuccess: "<green>You changed your nickname to <i><chatty_nickname>!"
   selfDenied: "<red>You can't change your nickname!"
   selfEmpty: "<yellow>Removed nickname!"
-  otherSuccess: "<green>You changed %player_name%'s nickname to <i>%chatty_player_displayname%!"
+  otherSuccess: "<green>You changed %player_name%'s nickname to <i><chatty_nickname>!"
   otherDenied: "<red>You can't change %player_name%'s nickname!"
   otherEmpty: "<yellow>Removed nickname for %player_name%!"
   invalidPlayer: "<red>That player doesn't exist!"
@@ -44,10 +44,10 @@ other:
   disallowedStyling: "<red>Your message contains formatting you cannot use!"
   configReloaded: "<green>Chatty config reloaded."
   messagesReloaded: "<green>Chatty messages reloaded."
-  nickNameChanged: "Nickname set to <white><i>%chatty_player_displayname%."
+  nickNameChanged: "Nickname set to <white><i><chatty_nickname>."
 
 proxies:
-  proxyJoin: "<green>+ <white>| <aqua>%chatty_player_displayname%%player_server%)"
-  proxyLeave: "<red>- <white>| <aqua>%chatty_player_displayname%"
-  proxySwitchToMessage: "<gray>↑<white> ┃ <aqua>%chatty_player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."
-  proxySwitchFromMessage: "<gray>↑<white> ┃ <aqua>%chatty_player_displayname% <gray>left to <aqua>%player_proxy_new_server% server."
+  proxyJoin: "<green>+ <white>| <aqua><chatty_nickname>%player_server%)"
+  proxyLeave: "<red>- <white>| <aqua><chatty_nickname>"
+  proxySwitchToMessage: "<gray>↑<white> ┃ <aqua><chatty_nickname> <gray>left to <aqua>%player_proxy_new_server% server."
+  proxySwitchFromMessage: "<gray>↑<white> ┃ <aqua><chatty_nickname> <gray>left to <aqua>%player_proxy_new_server% server."

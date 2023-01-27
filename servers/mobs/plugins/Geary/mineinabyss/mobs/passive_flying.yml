@@ -2,5 +2,6 @@
   baseClass: minecraft:ghast
   mobCategory: FLYING
   creatureType: CREATURE
+- !<geary:dont_burn_in_day>
 - !<mobzy:spawn.position>
   AIR
