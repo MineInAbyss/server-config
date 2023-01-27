@@ -14,15 +14,15 @@ privateMessages:
   enabled: true
   proxy: true                       # Not currently supported
   messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
-  messageSendFormat: "<gold>You -> %chatty_player_displayname%<gold>: "
-  messageReceiveFormat: "<gold>%chatty_player_displayname% -> You<gold>: "
+  messageSendFormat: "<gold>You -> <chatty_nickname><gold>: "
+  messageReceiveFormat: "<gold><chatty_nickname> -> You<gold>: "
   messageSendSound: ""              # Empty for no sound
   messageReceiveSound: ""           # Empty for no sound
 
 chat:
   enableChatSigning: false           # Enable chat signing and reporting
   bypassFormatPermission: "chatty.chat.bypassformat"
-  commandSpyFormat: "<gold>%chatty_player_displayname%<yellow>: "
+  commandSpyFormat: "<gold><chatty_nickname><yellow>: "
   allowedTags: # Available formats are:
     - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
     - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
@@ -112,11 +112,11 @@ channels:
     proxy: true
     discordsrv: true
     format: ":survival: %luckperms_prefix%
-    <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
     channelAliases:
       - "g"
 
@@ -127,11 +127,11 @@ channels:
     proxy: true
     discordsrv: true
     format: "%chatty_player_head% %luckperms_prefix% 
-    <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%chatty_player_displayname%: "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
     channelAliases:
       - "head"
 
@@ -139,12 +139,12 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:local: 
-    <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    format: ":survival:<shift:-8>:local: 
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><yellow>%chatty_player_displayname%:<yellow> "
+    <click:run_command:/mia profile %player_name%><yellow><chatty_nickname>:<yellow> "
     channelRadius: 500
     channelAliases:
       - "l"
@@ -157,11 +157,11 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:admin: 
-    <hover:show_text:' <light_purple><b>%chatty_player_displayname%<newline>
+    format: ":survival:<shift:-8>:admin: 
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%chatty_player_displayname%:<red> "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>:<red> "
     channelAliases:
       - "a"
