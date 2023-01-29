@@ -1,11 +1,12 @@
 - !<looty:type>
   item:
-    displayName: <#1900FF><b>Marulk's Cap
+    displayName: <#370391><b>Bondrewd's Helmet
     lore:
       - <#6F19D1><i>
-      - <#0268ED><i>Cap worn by #1 femboy maid
+      - <#6F19D1><i>Helmet worn by #1 dad
     type: POTION
-    customModelData: 5
+    color: "255, 255, 255"
+    customModelData: 201
     itemFlags:
       - HIDE_POTION_EFFECTS
 - !<geary:hat>

@@ -9,4 +9,9 @@ satchel:
   permission: "hmccosmetics.satchel"
   dyeable: true
   item:
-    material: looty:mineinabyss:satchel
+    material: looty:cosmetics:satchel
+miner_backpack:
+  slot: BACKPACK
+  dyeable: true
+  item:
+    material: looty:cosmetics:miner_backpack

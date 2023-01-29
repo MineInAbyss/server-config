@@ -3,70 +3,87 @@ bondrewd_helmet:
   permission: "hmccosmetics.bondrewd_helmet"
   dyeable: true
   item:
-    material: looty:mineinabyss:bondrewd_helmet
+    material: looty:cosmetics:bondrewd_helmet
+    color:
+      red: 255
+      blue: 255
+      green: 255
 habo_hat:
   slot: HELMET
   permission: "hmccosmetics.habo_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:habo_hat
+    material: looty:cosmetics:habo_hat
 lyza_hat:
   slot: HELMET
   permission: "hmccosmetics.lyza_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:lyza_hat
+    material: looty:cosmetics:lyza_hat
 marulk_hat:
   slot: HELMET
   permission: "hmccosmetics.marulk_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:marulk_cap
+    material: looty:cosmetics:marulk_cap
 nanachi_hat:
   slot: HELMET
   permission: "hmccosmetics.nanachi_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:nanachi_hat
+    material: looty:cosmetics:nanachi_hat
 ozen_hat:
   slot: HELMET
   permission: "hmccosmetics.ozen_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:ozen_hat
+    material: looty:cosmetics:ozen_hat
 pruskha_hat:
   slot: HELMET
   permission: "hmccosmetics.pruskha_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:pruskha_hat
+    material: looty:cosmetics:pruskha_hat
 reg_hat:
   slot: HELMET
   permission: "hmccosmetics.reg_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:reg_helmet
+    material: looty:cosmetics:reg_helmet
 menacing:
   slot: HELMET
   permission: "hmccosmetics.menacing"
   dyeable: false
   item:
-    material: looty:mineinabyss:menacing
+    material: looty:cosmetics:menacing
 albedo_horns:
   slot: HELMET
   permission: "hmccosmetics.albedo_horns"
   dyeable: false
   item:
-    material: looty:mineinabyss:albedo_horns
+    material: looty:cosmetics:albedo_horns
 benner_cosplay:
   slot: HELMET
   permission: "hmccosmetics.benner_cosplay"
   dyeable: false
   item:
-    material: looty:mineinabyss:benner_cat_ears
+    material: looty:cosmetics:benner_cat_ears
 faputa_hat:
   slot: HELMET
   permission: "hmccosmetics.faputa_hat"
   dyeable: false
   item:
-    material: looty:mineinabyss:faputa_hat
+    material: looty:cosmetics:faputa_hat
+deadmau5_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.deadmau5_helmet"
+  dyeable: true
+  item:
+    material: POTION
+    color:
+      red: 255
+      blue: 255
+      green: 255
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 216

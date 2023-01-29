@@ -23,6 +23,17 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_satchel%"
     type: cosmetic
     cosmetic: satchel
+  miner_backpack:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_miner_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_miner_backpack%"
+    type: cosmetic
+    cosmetic: miner_backpack
 
 
 

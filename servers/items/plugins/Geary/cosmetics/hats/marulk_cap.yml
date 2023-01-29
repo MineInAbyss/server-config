@@ -1,11 +1,11 @@
 - !<looty:type>
   item:
-    displayName: <#FFD503><b>Lyza's Hat
+    displayName: <#1900FF><b>Marulk's Cap
     lore:
       - <#6F19D1><i>
-      - <#EDE134><b>EHelmet worn by <reset><white><b>The Annihilator
+      - <#0268ED><i>Cap worn by #1 femboy maid
     type: POTION
-    customModelData: 4
+    customModelData: 205
     itemFlags:
       - HIDE_POTION_EFFECTS
 - !<geary:hat>

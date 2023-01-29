@@ -1,8 +1,8 @@
 - !<looty:type>
   item:
-    displayName: <#8F00D6>ゴゴゴMenacingゴゴゴ
+    displayName: <white><b>Horns of Albedo
     type: POTION
-    customModelData: 10
+    customModelData: 210
     itemFlags:
       - HIDE_POTION_EFFECTS
 - !<geary:hat>

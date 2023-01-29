@@ -1,11 +1,10 @@
 - !<looty:type>
   item:
-    displayName: <#825711><b>Habo's Hat
+    displayName: <white><b>Benner Cat Ears
     lore:
-      - <#6F19D1><i>
-      - <#ED9134><b>Helmet worn by #1 uncle
+      - "<gray>Hey babe :siggy:"
     type: POTION
-    customModelData: 15
+    customModelData: 212
     itemFlags:
       - HIDE_POTION_EFFECTS
 - !<geary:hat>

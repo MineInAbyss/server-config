@@ -12,9 +12,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_bondrewd_helmet%"
     type: cosmetic
     cosmetic: bondrewd_helmet
-    actions:
-      on-equip:
-        - "[CLOSE]"
   habo_hat:
     slots:
       - 1
@@ -26,9 +23,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_habo_hat%"
     type: cosmetic
     cosmetic: habo_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   lyza_hat:
     slots:
       - 2
@@ -40,9 +34,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_lyza_hat%"
     type: cosmetic
     cosmetic: lyza_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   marulk_hat:
     slots:
       - 3
@@ -54,9 +45,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_marulk_hat%"
     type: cosmetic
     cosmetic: marulk_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   nanachi_hat:
     slots:
       - 4
@@ -68,9 +56,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_nanachi_hat%"
     type: cosmetic
     cosmetic: nanachi_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   ozen_hat:
     slots:
       - 5
@@ -82,9 +67,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_ozen_hat%"
     type: cosmetic
     cosmetic: ozen_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   pruskha_hat:
     slots:
       - 6
@@ -96,9 +78,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_pruskha_hat%"
     type: cosmetic
     cosmetic: pruskha_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   reg_hat:
     slots:
       - 7
@@ -110,9 +89,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_reg_hat%"
     type: cosmetic
     cosmetic: reg_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
   menacing:
     slots:
       - 8
@@ -124,9 +100,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_menacing%"
     type: cosmetic
     cosmetic: menacing
-    actions:
-      on-equip:
-        - "[CLOSE]"
   albedo_horns:
     slots:
       - 9
@@ -138,9 +111,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_albedo_horns%"
     type: cosmetic
     cosmetic: albedo_horns
-    actions:
-      on-equip:
-        - "[CLOSE]"
   benner_cosplay:
     slots:
       - 10
@@ -152,9 +122,6 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_benner_cosplay%"
     type: cosmetic
     cosmetic: benner_cosplay
-    actions:
-      on-equip:
-        - "[CLOSE]"
   faputa_hat:
     slots:
       - 11
@@ -166,9 +133,18 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_faputa_hat%"
     type: cosmetic
     cosmetic: faputa_hat
-    actions:
-      on-equip:
-        - "[CLOSE]"
+  deadmau5_helmet:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:deadmau5_helmet
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_deadmau5_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_deadmau5_helmet%"
+    type: cosmetic
+    cosmetic: deadmau5_helmet
+
   
 
 

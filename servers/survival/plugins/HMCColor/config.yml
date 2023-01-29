@@ -4,7 +4,7 @@ buttons:
   #crucible_item: something
   #itemsadder_item: something:something
   default_type: POTION #Can also be POTION to avoid conflicts with ModelEngine
-  custom_model_data: 100 #Only important if using default_type
+  custom_model_data: 1000 #Only important if using default_type
 blacklistedItems:
   oraxen_items:
     - banned_oraxen_id
