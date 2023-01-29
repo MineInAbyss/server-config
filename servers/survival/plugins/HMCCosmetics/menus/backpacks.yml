@@ -1,0 +1,39 @@
+title: ":cosmetics_menu:"
+rows: 6
+items:
+  backpack:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_backpack%"
+    type: cosmetic
+    cosmetic: backpack
+  satchel:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_satchel%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_satchel%"
+    type: cosmetic
+    cosmetic: satchel
+
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      displayname: "<red>To Main Menu"
+      model-data: 0
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

@@ -1,0 +1,185 @@
+title: ":cosmetics_menu:"
+rows: 6
+items:
+  bondrewd_helmet:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_bondrewd_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_bondrewd_helmet%"
+    type: cosmetic
+    cosmetic: bondrewd_helmet
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  habo_hat:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:habo_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_habo_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_habo_hat%"
+    type: cosmetic
+    cosmetic: habo_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  lyza_hat:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:lyza_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_lyza_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_lyza_hat%"
+    type: cosmetic
+    cosmetic: lyza_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  marulk_hat:
+    slots:
+      - 3
+    item:
+      material: hmccosmetics:marulk_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_marulk_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_marulk_hat%"
+    type: cosmetic
+    cosmetic: marulk_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  nanachi_hat:
+    slots:
+      - 4
+    item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_nanachi_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_nanachi_hat%"
+    type: cosmetic
+    cosmetic: nanachi_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  ozen_hat:
+    slots:
+      - 5
+    item:
+      material: hmccosmetics:ozen_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_ozen_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_ozen_hat%"
+    type: cosmetic
+    cosmetic: ozen_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  pruskha_hat:
+    slots:
+      - 6
+    item:
+      material: hmccosmetics:pruskha_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_pruskha_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_pruskha_hat%"
+    type: cosmetic
+    cosmetic: pruskha_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  reg_hat:
+    slots:
+      - 7
+    item:
+      material: hmccosmetics:reg_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_reg_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_reg_hat%"
+    type: cosmetic
+    cosmetic: reg_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  menacing:
+    slots:
+      - 8
+    item:
+      material: hmccosmetics:menacing
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_menacing%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_menacing%"
+    type: cosmetic
+    cosmetic: menacing
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  albedo_horns:
+    slots:
+      - 9
+    item:
+      material: hmccosmetics:albedo_horns
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_albedo_horns%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_albedo_horns%"
+    type: cosmetic
+    cosmetic: albedo_horns
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  benner_cosplay:
+    slots:
+      - 10
+    item:
+      material: hmccosmetics:benner_cosplay
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_benner_cosplay%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_benner_cosplay%"
+    type: cosmetic
+    cosmetic: benner_cosplay
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  faputa_hat:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:faputa_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_faputa_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_faputa_hat%"
+    type: cosmetic
+    cosmetic: faputa_hat
+    actions:
+      on-equip:
+        - "[CLOSE]"
+  
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      displayname: "<red>To Main Menu"
+      model-data: 0
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

@@ -3,7 +3,9 @@
     displayName: <white><b>Benner Cat Ears
     lore:
       - "<gray>Hey babe :siggy:"
-    type: STONE_HOE
+    type: POTION
     customModelData: 12
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

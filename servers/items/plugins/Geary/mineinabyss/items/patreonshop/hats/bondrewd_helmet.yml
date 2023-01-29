@@ -4,7 +4,10 @@
     lore:
       - <#6F19D1><i>
       - <#6F19D1><i>Helmet worn by #1 dad
-    type: STONE_HOE
-    customModelData: 2
+    type: POTION
+    color: "255, 255, 255"
+    customModelData: 14
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

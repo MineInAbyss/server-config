@@ -4,7 +4,9 @@
     lore:
       - <#6F19D1><i>
       - <#0268ED><i>Cap worn by #1 femboy maid
-    type: STONE_HOE
+    type: POTION
     customModelData: 5
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

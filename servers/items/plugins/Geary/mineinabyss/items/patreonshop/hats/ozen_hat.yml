@@ -3,7 +3,9 @@
     displayName: <#262626><b>Ozen's Hat
     lore:
       - "<gray>:ozensmug:"
-    type: STONE_HOE
+    type: POTION
     customModelData: 7
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

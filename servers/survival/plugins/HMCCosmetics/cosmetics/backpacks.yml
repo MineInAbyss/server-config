@@ -1,0 +1,12 @@
+backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack"
+  dyeable: false
+  item:
+    material: YELLOW_SHULKER_BOX
+satchel:
+  slot: BACKPACK
+  permission: "hmccosmetics.satchel"
+  dyeable: true
+  item:
+    material: looty:mineinabyss:satchel

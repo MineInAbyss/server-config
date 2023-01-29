@@ -1,7 +1,9 @@
 - !<looty:type>
   item:
     displayName: <#536b92><b>Faputa Hat
-    type: STONE_HOE
+    type: POTION
     customModelData: 13
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

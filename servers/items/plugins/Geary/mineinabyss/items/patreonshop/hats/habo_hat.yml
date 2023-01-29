@@ -4,7 +4,9 @@
     lore:
       - <#6F19D1><i>
       - <#ED9134><b>Helmet worn by #1 uncle
-    type: STONE_HOE
-    customModelData: 3
+    type: POTION
+    customModelData: 15
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>

@@ -1,0 +1,21 @@
+title: ":cosmetics_main:"
+rows: 3
+items:
+  hats:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:bondrewd_helmet
+    type: empty
+    actions:
+      any:
+        - "[MENU] hats"
+  backpack:
+    slots:
+      - 25
+    item:
+      material: hmccosmetics:satchel
+    type: empty
+    actions:
+      any:
+        - "[MENU] backpacks"

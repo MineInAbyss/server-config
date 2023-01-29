@@ -4,7 +4,9 @@
     lore:
       - <#6F19D1><i>
       - <#EDE134><b>EHelmet worn by <reset><white><b>The Annihilator
-    type: STONE_HOE
+    type: POTION
     customModelData: 4
+    itemFlags:
+      - HIDE_POTION_EFFECTS
 - !<geary:hat>
 - !<geary:no_vanilla_interactions>
