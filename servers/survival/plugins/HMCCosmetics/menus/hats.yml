@@ -138,13 +138,25 @@ items:
       - 11
     item:
       material: hmccosmetics:deadmau5_helmet
+      name: "<gray><b>Deadmau5's Hat"
       lore:
         - ""
         - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_deadmau5_helmet%"
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_deadmau5_helmet%"
     type: cosmetic
     cosmetic: deadmau5_helmet
-
+  mining_helmet:
+    slots:
+      - 12
+    item:
+      material: hmccosmetics:mining_helmet
+      name: "<yellow><b>Mining Helmet"
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_mining_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_mining_helmet%"
+    type: cosmetic
+    cosmetic: mining_helmet
   
 
 

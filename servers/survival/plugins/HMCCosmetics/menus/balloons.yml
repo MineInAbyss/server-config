@@ -1,0 +1,29 @@
+title: ":cosmetics_menu:"
+rows: 6
+items:
+  splitjaw_balloon:
+    slots:
+      - 0
+    model: splitjaw
+    item:
+      material: hmccosmetics:splitjaw_balloon
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_backpack%"
+    type: cosmetic
+    cosmetic: splitjaw_balloon
+
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      displayname: "<red>To Main Menu"
+      model-data: 0
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

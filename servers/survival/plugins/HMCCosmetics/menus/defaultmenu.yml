@@ -19,3 +19,12 @@ items:
     actions:
       any:
         - "[MENU] backpacks"
+  balloon:
+    slots:
+      - 21
+    item:
+      material: hmccosmetics:satchel
+    type: empty
+    actions:
+      any:
+        - "[MENU] balloons"

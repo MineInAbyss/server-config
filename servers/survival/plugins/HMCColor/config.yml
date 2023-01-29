@@ -240,3 +240,22 @@ colors:
       7:
         name: "<#99FFFF>Ice Blue"
         color: "#99FFFF"
+enable_effects_menu: true
+effect_item:
+  #oraxen_item: something
+  #crucible_item: something
+  #itemsadder_item: something:something
+  type: PAPER
+  name: "Effect Toggle"
+  color: "#FFFCFC"
+  custom_model_data: 1
+effects:
+  space_effect:
+    name: "Space Effect"
+    color: "#FCFC00"
+  icon_effect:
+    name: "Icon Effect"
+    color: "#FCFC01"
+  mario_kart_effect:
+    name: "Mario Kart Effect"
+    color: "#FCFC02"

@@ -87,3 +87,16 @@ deadmau5_helmet:
     item-flags:
       - HIDE_POTION_EFFECTS
     model-data: 216
+mining_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.mining_helmet"
+  dyeable: false
+  item:
+    material: POTION
+    color:
+      red: 255
+      blue: 255
+      green: 255
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 217
