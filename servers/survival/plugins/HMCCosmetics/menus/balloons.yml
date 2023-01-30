@@ -9,11 +9,23 @@ items:
       material: hmccosmetics:splitjaw_balloon
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_backpack%"
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_splitjaw_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_splitjaw_balloon%"
     type: cosmetic
     cosmetic: splitjaw_balloon
-
+  neritantan_balloon:
+    slots:
+      - 1
+    model: neritantan_balloon
+    dyeable: true
+    item:
+      material: hmccosmetics:neritantan_balloon
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_neritantan_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_neritantan_balloon%"
+    type: cosmetic
+    cosmetic: neritantan_balloon
 
 
   back_button:

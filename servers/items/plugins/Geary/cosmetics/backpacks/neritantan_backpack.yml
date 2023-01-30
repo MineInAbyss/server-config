@@ -1,9 +1,9 @@
 - !<looty:player_instanced_item>
 - !<looty:type>
   item:
-    displayName: <#FF9D26>Miner Backpack
+    displayName: <gray>Neritantan Backpack
     type: POTION
-    color: "220, 192, 105"
-    customModelData: 102
+    color: "255, 255, 255"
+    customModelData: 103
     itemFlags:
       - HIDE_POTION_EFFECTS

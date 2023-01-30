@@ -34,6 +34,17 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_miner_backpack%"
     type: cosmetic
     cosmetic: miner_backpack
+  neritantan_backpack:
+    slots:
+      - 3
+    item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_neritantan_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_neritantan_backpack%"
+    type: cosmetic
+    cosmetic: neritantan_backpack
 
 
 

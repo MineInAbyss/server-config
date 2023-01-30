@@ -4,4 +4,18 @@ splitjaw_balloon:
   dyeable: false
   model: splitjaw
   item:
-    material: looty:cosmetics:bondrewd_helmet
+    display-name: "<red>Orb Piercer"
+    material: NETHER_WART
+    model-data: 1
+neritantan_balloon:
+  slot: BALLOON
+  permission: "hmccosmetics.neritantan_balloon"
+  dyeable: true
+  item:
+    material: POTION
+    display-name: "<gray>Neritantan Balloon"
+    model-data: 301
+    color:
+      red: 255
+      blue: 255
+      green: 255
