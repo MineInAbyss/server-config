@@ -6,7 +6,7 @@ config-version: 1
 default-menu: defaultmenu
 debug-mode: false
 database-settings:
-  type: sqlite #MYSQL, SQLite, INTERNAL (not recommended!)
+  type: sqlite # MYSQL, SQLite, INTERNAL (not recommended!)
   mysql:
     database: database
     password: cherryBomb
@@ -21,7 +21,7 @@ cosmetic-settings:
   # Ticking periods is something that ensures new players near a player get the packets to actually apply to the user.
 
   unapply-on-death: false # If when a player dies, their cosmetics should be unapplied. If this is true, use hmccosmetics.unapplydeath.bypass to bypass
-
+  
   # view distance in blocks that other players will see the backpack cosmetic
   # setting this to lower than the server player view distance should fix the
   # bug where players see random backpacks. Put -1 to ignore and send packets to everyone.
@@ -32,7 +32,7 @@ cosmetic-settings:
     y: 3
     z: 0.5
 dye-menu:
-  title: ":painter_menu:"
+  title: ':painter_menu:'
 wardrobe:
   # spawn static wardrobe if in this radius of wardrobe-location
   static-radius: 80
@@ -45,35 +45,35 @@ wardrobe:
   # Bossbar that shows when a player is in a wardrobe.
   bossbar:
     enabled: true
-    text: "Left-Click to open the menu!"
+    text: Left-Click to open the menu!
     progress: 1.0 # Goes between 0.0 -> 1.0
     overlay: PROGRESS
     color: WHITE
   transition:
     enabled: true
-    text: "<black>:wardrobe_transition:"
+    text: '<black>:wardrobe_transition:'
     delay: 40
     title-fade-in: 1000 # milliseconds
     title-stay: 500 # milliseconds
     title-fade-out: 1000 # milliseconds
   wardrobe-location:
-    world: "world"
-    x: -120
-    y: 113
-    z: -534
-    yaw: -180
-    pitch: 0
+    world: world
+    x: -120.0
+    y: 113.0
+    z: -534.0
+    yaw: -180.0
+    pitch: 0.0
   viewer-location:
-    world: "world"
-    x: -120
-    y: 113
-    z: -540
-    yaw: 0
-    pitch: 0
+    world: world
+    x: -120.0
+    y: 113.0
+    z: -540.0
+    yaw: 0.0
+    pitch: 0.0
   leave-location:
-    world: "world"
-    x: -120
-    y: 113
-    z: -548
-    yaw: -180
-    pitch: 0
+    world: world
+    x: -120.0
+    y: 113.0
+    z: -548.0
+    yaw: -180.0
+    pitch: 0.0
