@@ -138,7 +138,6 @@ items:
       - 11
     item:
       material: hmccosmetics:deadmau5_helmet
-      name: "<gray><b>Deadmau5's Hat"
       lore:
         - ""
         - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_deadmau5_helmet%"
@@ -150,7 +149,6 @@ items:
       - 12
     item:
       material: hmccosmetics:mining_helmet
-      name: "<yellow><b>Mining Helmet"
       lore:
         - ""
         - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_mining_helmet%"

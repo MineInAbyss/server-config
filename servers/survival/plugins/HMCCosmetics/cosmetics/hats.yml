@@ -79,11 +79,9 @@ deadmau5_helmet:
   permission: "hmccosmetics.deadmau5_helmet"
   dyeable: true
   item:
+    name: "<gray>Deadmau5's Hat"
     material: POTION
-    color:
-      red: 255
-      blue: 255
-      green: 255
+    color: "#FFFFFF"
     item-flags:
       - HIDE_POTION_EFFECTS
     model-data: 216
@@ -92,11 +90,9 @@ mining_helmet:
   permission: "hmccosmetics.mining_helmet"
   dyeable: false
   item:
+    name: "<yellow>Mining Helmet"
     material: POTION
-    color:
-      red: 255
-      blue: 255
-      green: 255
+    color: "#FFFFFF"
     item-flags:
       - HIDE_POTION_EFFECTS
     model-data: 217

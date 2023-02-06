@@ -34,6 +34,7 @@ cosmetic-settings:
 dye-menu:
   title: ':painter_menu:'
 wardrobe:
+  allow-trying-on: true
   # spawn static wardrobe if in this radius of wardrobe-location
   static-radius: 80
   # how much yaw should change per tick, set to 0 for none

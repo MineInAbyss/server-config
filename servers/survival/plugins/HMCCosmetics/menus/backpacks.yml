@@ -45,6 +45,28 @@ items:
         - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_neritantan_backpack%"
     type: cosmetic
     cosmetic: neritantan_backpack
+  camper_backpack:
+      slots:
+        - 4
+      item:
+        material: hmccosmetics:camper_backpack
+        lore:
+          - ""
+          - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_camper_backpack%"
+          - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_camper_backpack%"
+      type: cosmetic
+      cosmetic: camper_backpack
+  generic_backpack:
+    slots:
+      - 5
+    item:
+      material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_generic_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_generic_backpack%"
+    type: cosmetic
+    cosmetic: generic_backpack
 
 
 
