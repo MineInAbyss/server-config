@@ -1,6 +1,6 @@
 splitjaw_balloon:
   slot: BALLOON
-  permission: "hmccosmetics.splitjaw_balloon"
+  permission: "hmccosmetics.ballons.splitjaw_balloon"
   dyeable: false
   model: splitjaw
   item:
@@ -9,7 +9,7 @@ splitjaw_balloon:
     model-data: 1
 neritantan_balloon:
   slot: BALLOON
-  permission: "hmccosmetics.neritantan_balloon"
+  permission: "hmccosmetics.ballons.neritantan_balloon"
   dyeable: true
   item:
     material: POTION

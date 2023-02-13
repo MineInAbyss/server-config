@@ -1,0 +1,87 @@
+- !<geary:inherit>
+  from: [mineinabyss:npc]
+- !<mobzy:modelengine>
+  modelId: guildmaster
+- !<mineinabyss:shopkeeper>
+  name: "Hat Vendor"
+  menu: "Hat Vendor"
+  selling:
+    - item:
+        prefab: cosmetics:mining_helmet
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.mining_helmet"
+    - item:
+        prefab: cosmetics:habo_hat
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.habo_hat"
+    - item:
+        prefab: cosmetics:marulk_hat
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.marulk_hat"
+    - item:
+        prefab: cosmetics:pruskha_hat
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.pruskha_hat"
+    - item:
+        prefab: cosmetics:reg_hat
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.reg_hat"
+    - item:
+        prefab: cosmetics:albedo_horns
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.albedo_horns"
+    - item:
+        prefab: cosmetics:benner_cat_ears
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.benner_cat_ears"
+
+
+    - item:
+        prefab: cosmetics:faputa_hat
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.faputa_hat"
+    - item:
+        prefab: cosmetics:menacing
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.menacing"
+    - item:
+        prefab: cosmetics:lyza_hat
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.lyza_hat"
+    - item:
+        prefab: cosmetics:bondrewd_helmet
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.hat.bondrewd_helmet"

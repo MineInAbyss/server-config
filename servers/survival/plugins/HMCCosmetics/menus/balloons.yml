@@ -9,8 +9,8 @@ items:
       material: hmccosmetics:splitjaw_balloon
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_splitjaw_balloon%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_splitjaw_balloon%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_splitjaw_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_splitjaw_balloon%"
     type: cosmetic
     cosmetic: splitjaw_balloon
   neritantan_balloon:
@@ -22,8 +22,8 @@ items:
       material: hmccosmetics:neritantan_balloon
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_neritantan_balloon%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_neritantan_balloon%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_balloon%"
     type: cosmetic
     cosmetic: neritantan_balloon
 

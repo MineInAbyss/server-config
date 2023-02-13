@@ -8,10 +8,15 @@ items:
       material: hmccosmetics:backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_backpack%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_backpack%"
     type: cosmetic
     cosmetic: backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
   satchel:
     slots:
       - 1
@@ -19,10 +24,15 @@ items:
       material: hmccosmetics:satchel
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_satchel%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_satchel%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_satchel%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_satchel%"
     type: cosmetic
     cosmetic: satchel
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
   miner_backpack:
     slots:
       - 2
@@ -30,10 +40,15 @@ items:
       material: hmccosmetics:miner_backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_miner_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_miner_backpack%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_miner_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_miner_backpack%"
     type: cosmetic
     cosmetic: miner_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
   neritantan_backpack:
     slots:
       - 3
@@ -41,21 +56,31 @@ items:
       material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_neritantan_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_neritantan_backpack%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_backpack%"
     type: cosmetic
     cosmetic: neritantan_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
   camper_backpack:
-      slots:
-        - 4
-      item:
-        material: hmccosmetics:camper_backpack
-        lore:
-          - ""
-          - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_camper_backpack%"
-          - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_camper_backpack%"
-      type: cosmetic
-      cosmetic: camper_backpack
+    slots:
+      - 4
+    item:
+      material: hmccosmetics:camper_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_camper_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_camper_backpack%"
+    type: cosmetic
+    cosmetic: camper_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
   generic_backpack:
     slots:
       - 5
@@ -63,10 +88,15 @@ items:
       material: hmccosmetics:generic_backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_generic_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_generic_backpack%"
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_generic_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_generic_backpack%"
     type: cosmetic
     cosmetic: generic_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
 
 
 
