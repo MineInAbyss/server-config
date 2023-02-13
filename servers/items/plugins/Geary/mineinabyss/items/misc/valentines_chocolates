@@ -1,0 +1,12 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: APPLE
+    displayName: <#c90076>Valentine's Chocolates
+    customModelData: 150
+    lore:
+      - <white>Obtained during the <#c90076>Valentine's Day <white>event.
+      - <white>Can be traded at <green>Orth <white>or eaten.
+- !<geary:food>
+  saturation: 3
+  hunger: 4
