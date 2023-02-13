@@ -24,6 +24,10 @@
       cooked:
         prefab: mineinabyss:inbyo_meat_cooked
       maxAmount: 2
+    - item:
+        prefab: mineinabyss:valentines_chocolates
+      maxAmount: 1
+      dropChance: 1
 - !<mobzy:sounds>
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death: mineinabyss:entity.inbyo.death
