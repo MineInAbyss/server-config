@@ -53,6 +53,10 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.2000
+    - item:
+        prefab: mineinabyss:valentines_chocolates
+      maxAmount: 1
+      dropChance: 1
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:
