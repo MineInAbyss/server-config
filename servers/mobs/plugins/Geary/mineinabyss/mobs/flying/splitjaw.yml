@@ -36,6 +36,10 @@
       maxAmount: 2
       dropChance: 0.5000
     - item:
+        prefab: mineinabyss:valentines_chocolates
+      maxAmount: 1
+      dropChance: 1
+    - item:
         type: DIAMOND
       dropChance: 0.0500
     - item:
