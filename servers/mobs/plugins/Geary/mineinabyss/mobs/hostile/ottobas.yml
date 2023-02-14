@@ -22,6 +22,10 @@
         prefab: mineinabyss:ottobas_meat_cooked
       minAmount: 4
       maxAmount: 15
+    - item:
+        prefab: mineinabyss:valentines_chocolates
+      maxAmount: 1
+      dropChance: 1
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death
