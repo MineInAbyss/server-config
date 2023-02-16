@@ -14,9 +14,9 @@ items:
     cosmetic: backpack
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   satchel:
     slots:
       - 1
@@ -30,9 +30,9 @@ items:
     cosmetic: satchel
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   miner_backpack:
     slots:
       - 2
@@ -46,9 +46,9 @@ items:
     cosmetic: miner_backpack
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   neritantan_backpack:
     slots:
       - 3
@@ -62,9 +62,9 @@ items:
     cosmetic: neritantan_backpack
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   camper_backpack:
     slots:
       - 4
@@ -78,9 +78,9 @@ items:
     cosmetic: camper_backpack
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   generic_backpack:
     slots:
       - 5
@@ -94,9 +94,9 @@ items:
     cosmetic: generic_backpack
     actions:
       on-equip:
-        - "[SOUND] minecraft:minecraft:item.armor.equip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
-        - "[SOUND] minecraft:minecraft:item.armor.unequip_generic 1.0 1.0"
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
 
 
