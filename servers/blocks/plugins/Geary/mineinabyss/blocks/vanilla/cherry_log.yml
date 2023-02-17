@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Cherry Log
+    customModelData: 2037
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 101
+  blockModel: "minecraft:block/cherry_log"
+- !<blocky:directional>
+  yBlock: mineinabyss:cherry_log_y
+  xBlock: mineinabyss:cherry_log_x
+  zBlock: mineinabyss:cherry_log_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:cherry_log

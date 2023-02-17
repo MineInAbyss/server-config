@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:wood]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Cherry Planks
+    customModelData: 2036
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 100
+  blockModel: "minecraft:block/cherry_planks"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 10s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:cherry_planks
