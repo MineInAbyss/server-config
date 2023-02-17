@@ -1,0 +1,15 @@
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Cherry Sapling
+    customModelData: 3009
+- !<blocky:block>
+  blockType: WIRE
+  blockId: 64
+  blockModel: minecraft:block/cherry_sapling
+- !<blocky:info>
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:cherry_sapling

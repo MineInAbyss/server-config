@@ -1,6 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:wood, mineinabyss:ground_furniture]
-- !<looty:player_instanced_item> { }
+- !<looty:player_instanced_item>
 - !<looty:type>
   item:
     type: LEATHER_HORSE_ARMOR
