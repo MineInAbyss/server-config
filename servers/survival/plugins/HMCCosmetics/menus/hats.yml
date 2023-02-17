@@ -1,4 +1,4 @@
-title: ":cosmetics_menu:"
+title: ":cosmetic_grid_menu:"
 rows: 6
 items:
   bondrewd_helmet:
@@ -164,7 +164,7 @@ items:
     item:
       material: PAPER
       displayname: "<red>To Main Menu"
-      model-data: 0
+      model-data: 1
     type: empty
     actions:
       any:
