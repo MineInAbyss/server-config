@@ -7,8 +7,8 @@
     displayName: Stripped Cherry Log
     customModelData: 2039
 - !<blocky:block>
-  blockType: d
-  blockId: 105
+  blockType: NOTEBLOCK
+  blockId: 103
   blockModel: "minecraft:block/stripped_cherry_log"
 - !<blocky:directional>
   yBlock: mineinabyss:stripped_cherry_log_y

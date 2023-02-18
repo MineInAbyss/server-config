@@ -8,7 +8,7 @@
     customModelData: 2037
 - !<blocky:block>
   blockType: NOTEBLOCK
-  blockId: 101
+  blockId: 100
   blockModel: "minecraft:block/cherry_log"
 - !<blocky:directional>
   yBlock: mineinabyss:cherry_log_y

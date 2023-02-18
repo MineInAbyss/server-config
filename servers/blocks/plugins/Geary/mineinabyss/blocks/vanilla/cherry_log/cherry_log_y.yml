@@ -1,7 +1,5 @@
-- !<geary:inherit>
-  from: [mineinabyss:cherry_log]
 - !<blocky:directional>
   parentBlock: mineinabyss:cherry_log
 - !<blocky:block>
   blockType: NOTEBLOCK
-  blockId: 101
+  blockId: 100
