@@ -12,6 +12,7 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [ SLIME ]
 features:
+  - !<core>
   - !<guilds>
     guildChattyChannel:
       channelType: PRIVATE
