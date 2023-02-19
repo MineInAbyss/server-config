@@ -355,7 +355,10 @@ emotes:
   - "playerprofile|player_profile_background_1 mineinabyss:ui/player_profiles/player_profile_background_1.png 224 15"
   - "playerprofile|player_profile_background_2 mineinabyss:ui/player_profiles/player_profile_background_2.png 224 15"
 
-  - "cosmetics|cosmetic_dye_menu cosmetics:ui/menus/cosmetic_dye_menu.png 224 15"
-  - "cosmetics|cosmetic_main_menu cosmetics:ui/menus/cosmetic_main_menu.png 224 15"
-  - "cosmetics|cosmetic_grid_menu cosmetics:ui/menus/cosmetic_grid_menu.png 224 15"
+  - "cosmetics|cosmetic_dye_menu cosmetics:ui/menus/cosmetic_dye_menu.png 256 14"
+  - "cosmetics|cosmetic_main_menu cosmetics:ui/menus/cosmetic_main_menu.png 256 14"
+  - "cosmetics|cosmetic_grid_menu cosmetics:ui/menus/cosmetic_grid_menu.png 256 14"
   - "cosmetics|wardrobe_transition cosmetics:ui/wardrobe_transition.png 256 50"
+
+  - "blocky|blocky_default_menu mineinabyss:ui/blocky/default_menu.png 256 14"
+  - "blocky|blocky_grid_menu mineinabyss:ui/blocky/grid_menu.png 256 14"
