@@ -9,7 +9,7 @@
 - !<blocky:block>
   blockType: NOTEBLOCK
   blockId: 1
-  blockModel: mineinabyss:blocks/ores/charcoal_sand_ore
+  blockModel: mineinabyss:block/ores/charcoal_sand_ore
 - !<blocky:info>
   isUnbreakable: false
   blockBreakTime: 3s

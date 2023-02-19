@@ -9,7 +9,7 @@
 - !<blocky:block>
   blockType: NOTEBLOCK
   blockId: 23
-  blockModel: mineinabyss:blocks/logs/carved_spruce_log
+  blockModel: mineinabyss:block/logs/carved_spruce_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_spruce_log_y
   xBlock: mineinabyss:carved_spruce_log_x

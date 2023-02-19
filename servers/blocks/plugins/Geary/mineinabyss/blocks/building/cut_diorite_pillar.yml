@@ -9,7 +9,7 @@
 - !<blocky:block>
   blockType: NOTEBLOCK
   blockId: 29
-  blockModel: mineinabyss:blocks/building/cut_diorite_pillar
+  blockModel: mineinabyss:block/building/cut_diorite_pillar
 - !<blocky:directional>
   yBlock: mineinabyss:cut_diorite_pillar_y
   xBlock: mineinabyss:cut_diorite_pillar_x

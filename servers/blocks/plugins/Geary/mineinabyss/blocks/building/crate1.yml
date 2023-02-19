@@ -9,7 +9,7 @@
 - !<blocky:block>
   blockType: NOTEBLOCK
   blockId: 39
-  blockModel: "mineinabyss:blocks/building/crate1"
+  blockModel: "mineinabyss:block/building/crate1"
 - !<blocky:info>
   isUnbreakable: false
   blockBreakTime: 10s

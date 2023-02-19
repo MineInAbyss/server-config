@@ -9,7 +9,7 @@
 - !<blocky:block>
   blockType: NOTEBLOCK
   blockId: 11
-  blockModel: mineinabyss:blocks/logs/carved_dark_oak_log
+  blockModel: mineinabyss:block/logs/carved_dark_oak_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_dark_oak_log_y
   xBlock: mineinabyss:carved_dark_oak_log_x
