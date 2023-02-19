@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Chiseled Packed Ice
+    customModelData: 2041
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 34
+  blockModel: "mineinabyss:block/snow/chiseled_packed_ice"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:chiseled_packed_ice

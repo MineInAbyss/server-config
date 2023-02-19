@@ -1,0 +1,22 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Ice Pillar
+    customModelData: 2044
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 37
+  blockModel: "mineinabyss:block/snow/ice_pillar"
+- !<blocky:directional>
+  yBlock: mineinabyss:ice_pillar_y
+  xBlock: mineinabyss:ice_pillar_x
+  zBlock: mineinabyss:ice_pillar_z
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:ice_pillar

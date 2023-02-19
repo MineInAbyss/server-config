@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Cryosol
+    customModelData: 2042
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 35
+  blockModel: "mineinabyss:block/snow/cryosol"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:cryosol

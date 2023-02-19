@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Polished Packed Ice
+    customModelData: 2048
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 45
+  blockModel: "mineinabyss:block/snow/polished_packed_ice"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:polished_packed_ice

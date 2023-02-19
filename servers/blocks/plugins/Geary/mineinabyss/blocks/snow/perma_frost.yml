@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Perma Frost
+    customModelData: 2047
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 44
+  blockModel: "mineinabyss:block/snow/perma_frost"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:perma_frost

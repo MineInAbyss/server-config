@@ -1,0 +1,18 @@
+- !<geary:inherit>
+  from: [mineinabyss:snow]
+- !<looty:player_instanced_item>
+- !<looty:type>
+  item:
+    type: PAPER
+    displayName: Ice Bricks
+    customModelData: 2043
+- !<blocky:block>
+  blockType: NOTEBLOCK
+  blockId: 36
+  blockModel: "mineinabyss:block/snow/ice_bricks"
+- !<blocky:info>
+  isUnbreakable: false
+  blockBreakTime: 2s
+  blockDrop:
+    - item:
+        prefab: mineinabyss:ice_bricks
