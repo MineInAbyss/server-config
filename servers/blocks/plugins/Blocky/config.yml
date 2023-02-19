@@ -1,0 +1,51 @@
+# If you wish to use vanilla sounds, set this to true
+# Keep in mind it disables all custom sounds from place/break/hit etc
+disableCustomSounds: false
+
+# This is for generating the Json files needed for MoreCreativeTabs.
+# A mod that lets you customize the creative tabs in Minecraft.
+# This will generate a resource-pack that will include tabs for all Blocky Blocks and Furniture
+MoreCreativeTabsMod:
+  generateJsonForMod: false
+
+# [restoreFunctionality]: Restores redstone and vanilla note functionality for noteblocks
+# NOTE: This reduces the total amount of custom block slots from 799 to 750
+noteBlocks:
+  isEnabled: true
+  restoreFunctionality: false
+
+tripWires:
+  isEnabled: true
+
+slabBlocks:
+  isEnabled: true
+
+stairBlocks:
+  isEnabled: true
+
+# This is experimental and should not be used
+# A rework is planned to allow for a much better functionality
+leafBlocks:
+  isEnabled: false
+  disableBurnForBlockyLeaves: false
+  disableAllLeafDecay: false
+  shouldReserveOnePersistentLeafPerType: true
+
+# You will need to disable these in world-generation if you wanna use it
+# It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
+caveVineBlocks:
+  isEnabled: false
+
+menus:
+  defaultMenu:
+    title: ':blocky_default_menu:'
+    height: 3
+  blockMenu:
+    title: ':blocky_grid_menu:'
+    height: 6
+  wireMenu:
+    title: ':blocky_grid_menu:'
+    height: 6
+  furnitureMenu:
+    title: ':blocky_grid_menu:'
+    height: 6
