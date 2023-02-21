@@ -86,7 +86,7 @@ channels:
     logToConsole: true
     discordsrv: true
     format: ":dev: %luckperms_prefix%<chatty_nickname>: "
-    messageColor: gray
+    messageColor: white
     channelAliases:
       - "g"
 
@@ -98,7 +98,7 @@ channels:
     logToConsole: true
     discordsrv: true
     format: "<chatty_player_head> %luckperms_prefix%<chatty_nickname>: "
-    messageColor: gray
+    messageColor: white
     channelAliases:
       - "head"
 
@@ -107,7 +107,7 @@ channels:
     isDefaultChannel: false
     discordsrv: false
     logToConsole: true
-    format: ":dev:<shift:-5>:local: <yellow><chatty_nickname>: "
+    format: ":dev:<shift:-5>:local: <gold><chatty_nickname>: "
     messageColor: yellow
     channelRadius: 500
     channelAliases:

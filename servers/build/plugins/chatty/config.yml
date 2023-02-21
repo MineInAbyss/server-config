@@ -116,7 +116,7 @@ channels:
     </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
     <click:run_command:/mia profile %player_name%><chatty_nickname>: "
-    messageColor: gray
+    messageColor: white
     channelAliases:
       - "g"
 
@@ -132,7 +132,7 @@ channels:
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
     <click:run_command:/mia profile %player_name%><chatty_nickname>: "
-    messageColor: gray
+    messageColor: white
     channelAliases:
       - "head"
 
@@ -145,8 +145,8 @@ channels:
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><yellow><chatty_nickname>: "
-    messageColor: gold
+    <click:run_command:/mia profile %player_name%><gold><chatty_nickname>: "
+    messageColor: yellow
     channelRadius: 0
     channelAliases:
       - "l"
