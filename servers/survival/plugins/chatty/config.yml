@@ -129,7 +129,7 @@ channels:
     proxy: true
     discordsrv: true
     messageColor: white
-    format: "<chatty_player_head>:<shift:-4>
+    format: "<chatty_player_head><shift:-4>
     <hover:show_text:' <light_purple><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
