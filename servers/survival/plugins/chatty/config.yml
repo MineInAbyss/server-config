@@ -108,17 +108,17 @@ ping:
 
 channels:
   global:
-    channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
+    channelType: GLOBAL
     isDefaultChannel: true
     proxy: true
     discordsrv: true
     messageColor: white
-    format: ":survival: %luckperms_prefix%
-    <hover:show_text:' <light_purple><chatty_nickname><newline>
+    format: ":survival:<shift:-4>
+    <hover:show_text:'<light_purple><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix%<chatty_nickname>: "
     channelAliases:
       - "g"
 
@@ -129,12 +129,12 @@ channels:
     proxy: true
     discordsrv: true
     messageColor: white
-    format: "<chatty_player_head> %luckperms_prefix% 
+    format: "<chatty_player_head>:<shift:-4>
     <hover:show_text:' <light_purple><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix%<chatty_nickname>: "
     channelAliases:
       - "head"
 
