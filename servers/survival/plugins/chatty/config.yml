@@ -118,7 +118,7 @@ channels:
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%luckperms_prefix%<chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
     channelAliases:
       - "g"
 
@@ -134,7 +134,7 @@ channels:
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%luckperms_prefix%<chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
     channelAliases:
       - "head"
 
@@ -167,6 +167,6 @@ channels:
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><red><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%><#e51e62><chatty_nickname>: "
     channelAliases:
       - "a"
