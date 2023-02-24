@@ -36,10 +36,6 @@
         prefab: mineinabyss:madokajack_poop
       maxAmount: 1
       dropChance: 0.3000
-    - item:
-        prefab: mineinabyss:valentines_chocolates
-      maxAmount: 1
-      dropChance: 1
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.madokajack.ambient
   death: mineinabyss:entity.madokajack.death

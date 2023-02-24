@@ -32,10 +32,6 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:valentines_chocolates
-      maxAmount: 1
-      dropChance: 1
 - !<mobzy:sounds>
   ambient: mineinabyss:entity.dosetori.ambient
   death: mineinabyss:entity.dosetori.death

@@ -22,10 +22,6 @@
     - item:
         prefab: mineinabyss:virinsipede_antlers
       dropChance: 0.3000
-    - item:
-        prefab: mineinabyss:valentines_chocolates
-      maxAmount: 1
-      dropChance: 1
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:

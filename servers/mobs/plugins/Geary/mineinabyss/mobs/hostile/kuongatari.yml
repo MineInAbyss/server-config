@@ -26,10 +26,6 @@
       cooked:
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:valentines_chocolates
-      maxAmount: 1
-      dropChance: 0.75
 - !<mobzy:sounds>
 - !<mobzy:pathfinders>
   targets:
