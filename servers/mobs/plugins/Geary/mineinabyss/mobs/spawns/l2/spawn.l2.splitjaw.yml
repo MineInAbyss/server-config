@@ -2,6 +2,6 @@
   from: [ mineinabyss:spawn.splitjaw ]
 - !<mobzy:spawn_regions>
   keys: [ layertwo ]
-- !<mobzy:check.spawn.local_group>
-  max: 2
-  radius: 300
+#- !<mobzy:check.spawn.local_group>
+#  max: .*
+#  radius: .*

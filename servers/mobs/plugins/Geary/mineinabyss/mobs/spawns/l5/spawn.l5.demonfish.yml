@@ -8,9 +8,9 @@
   radius: 1
 - !<mobzy:spawn.priority>
   priority: 0.6
-- !<mobzy:check.spawn.local_group>
-  max: 6
-  radius: 200
+#- !<mobzy:check.spawn.local_group>
+#  max: .*
+#  radius: .*
 - !<geary:check.block_type>
   allow:
     - WATER

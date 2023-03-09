@@ -2,8 +2,8 @@
   prefab: mineinabyss:hammerbeak
 - !<mobzy:spawn.priority>
   priority: 0.6
-- !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 200
+#- !<mobzy:check.spawn.local_group>
+#  max: .*
+#  radius: .*
 - !<mobzy:check.spawn.gap>
   range: 25..4096

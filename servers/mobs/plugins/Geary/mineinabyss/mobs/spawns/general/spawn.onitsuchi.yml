@@ -2,8 +2,8 @@
   prefab: mineinabyss:onitsuchi
 - !<mobzy:spawn.priority>
   priority: 0.1
-- !<mobzy:check.spawn.local_group>
-  max: 3
-  radius: 250
+#- !<mobzy:check.spawn.local_group>
+#  max: .*
+#  radius: .*
 - !<mobzy:check.spawn.gap>
   range: 30..4096

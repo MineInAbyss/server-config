@@ -6,9 +6,9 @@
   keys: [ layertwo ]
 - !<mobzy:spawn.spread>
   radius: 10
-- !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 250
+#- !<mobzy:check.spawn.local_group>
+#  max: .*
+#  radius: .*
 - !<mobzy:check.spawn.gap>
   range: 5..4096
 #- !<geary:time>
