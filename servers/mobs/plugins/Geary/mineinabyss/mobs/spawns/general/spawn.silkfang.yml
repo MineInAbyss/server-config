@@ -2,9 +2,9 @@
   prefab: mineinabyss:silkfang
 - !<mobzy:spawn.priority>
   priority: 0.3
-#- !<mobzy:check.spawn.local_group>
-#  max: .*
-#  radius: .*
+- !<mobzy:check.spawn.local_group>
+  max: 3
+  radius: 200
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<geary:check.block_type>

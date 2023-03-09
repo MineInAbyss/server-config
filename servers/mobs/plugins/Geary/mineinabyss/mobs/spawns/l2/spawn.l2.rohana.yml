@@ -2,6 +2,6 @@
   from: [ mineinabyss:spawn.rohana ]
 - !<mobzy:spawn_regions>
   keys: [ layertwo ]
-#- !<mobzy:check.spawn.local_group>
-#  max: .*
-#  radius: .*
+- !<mobzy:check.spawn.local_group>
+  max: 3
+  radius: 350

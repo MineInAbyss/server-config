@@ -4,9 +4,9 @@
   keys: [ layerfour ]
 - !<mobzy:spawn.priority>
   priority: 0.9
-#- !<mobzy:check.spawn.local_group>
-#  max: .*
-#  radius: .*
+- !<mobzy:check.spawn.local_group>
+  max: 1
+  radius: 400
 - !<mobzy:check.spawn.gap>
   range: 10..4096
 #- !<geary:time>

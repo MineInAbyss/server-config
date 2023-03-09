@@ -1,8 +1,8 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:madokajack
-#- !<mobzy:check.spawn.local_group>
-#  max: .*
-#  radius: .*
+- !<mobzy:check.spawn.local_group>
+  max: 3
+  radius: 150
 - !<mobzy:check.spawn.gap>
   range: 10..4096
 - !<mobzy:spawn_regions>

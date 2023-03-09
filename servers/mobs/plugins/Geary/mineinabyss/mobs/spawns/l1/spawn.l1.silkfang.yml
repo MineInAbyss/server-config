@@ -2,6 +2,6 @@
   from: [ mineinabyss:spawn.silkfang ]
 - !<mobzy:spawn_regions>
   keys: [ layerone ]
-#- !<mobzy:check.spawn.local_group>
-#  max: .*
-#  radius: .*
+- !<mobzy:check.spawn.local_group>
+  max: 2
+  radius: 250
