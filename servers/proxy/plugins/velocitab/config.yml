@@ -8,14 +8,17 @@ headers:
 footers:
   default: 'Ping: %ping%ms %server_tps_5_colored%'
 formats:
-  default: '%changeoutput_equals_input:%server%_matcher:survival_ifmatch:_else:%%changeoutput_equals_input:%server%_matcher:build_ifmatch:_else:%%changeoutput_equals_input:%server%_matcher:archive_ifmatch:_else:%%changeoutput_equals_input:%server%_matcher:dev_ifmatch:_else:%%changeoutput_equals_input:%server%_matcher:test_ifmatch:_else:%%prefix%%username%'
+  default: '%changeoutput_equals_input:%server%_matcher:survival_ifmatch:_else:{changeoutput_equals_input:%server%_matcher:build_ifmatch:_else:}%%changeoutput_equals_input:%server%_matcher:dev_ifmatch:_else:{changeoutput_equals_input:%server%_matcher:test_ifmatch:_else:}%%prefix%%username%'
 # Which text formatter to use (MINEDOWN or MINIMESSAGE)
 formatting_type: MINEDOWN
 # The servers in each group of servers
 server_groups:
   default:
-  - build
-  - survival
+    - survival
+    - build
+    - dev
+    - archive
+    - test
 # All servers which are not in other groups will be put in the fallback group.
 # "false" will exclude them from Velocitab.
 fallback_enabled: true
