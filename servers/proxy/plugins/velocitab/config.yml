@@ -1,0 +1,29 @@
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃       Velocitab Config       ┃
+# ┃    Developed by William278   ┃
+# ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+# ┗╸ Placeholders: %players_online%, %max_players_online%, %local_players_online%, %current_date%, %current_time%, %username%, %server%, %ping%, %prefix%, %suffix%, %role%
+headers:
+  default: '\n\n\n'
+footers:
+  default: 'Ping: %ping%ms %server_tps_5_colored%'
+formats:
+  default: '%changeoutput_equals_input:%server%_matcher:survival_ifmatch:_else:{changeoutput_equals_input:%server%_matcher:build_ifmatch:_else:}%%changeoutput_equals_input:%server%_matcher:dev_ifmatch:_else:{changeoutput_equals_input:%server%_matcher:test_ifmatch:_else:}%%prefix%%username%'
+# Which text formatter to use (MINEDOWN or MINIMESSAGE)
+formatting_type: MINEDOWN
+# The servers in each group of servers
+server_groups:
+  default:
+  - build
+  - survival
+# All servers which are not in other groups will be put in the fallback group.
+# "false" will exclude them from Velocitab.
+fallback_enabled: true
+# The formats to use for the fallback group.
+fallback_group: default
+enable_papi_hook: true
+# If you are using MINIMESSAGE formatting, enable this to support MiniPlaceholders in formatting.
+enable_miniplaceholders_hook: true
+# How often to periodically update the TAB list, including header and footer, for all users.
+# Will only update on player join/leave if set to 0.
+update_rate: 0
