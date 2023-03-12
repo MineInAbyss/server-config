@@ -29,4 +29,4 @@ enable_papi_hook: true
 enable_miniplaceholders_hook: true
 # How often to periodically update the TAB list, including header and footer, for all users.
 # Will only update on player join/leave if set to 0.
-update_rate: 0
+update_rate: 5000
