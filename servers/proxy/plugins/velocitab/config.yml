@@ -30,7 +30,7 @@ enable_papi_hook: true
 enable_miniplaceholders_hook: true
 # Ordered list of elements by which players should be sorted. (ROLE_WEIGHT, ROLE_NAME and SERVER are supported)
 sort_players_by:
-  - SERVER
+  - SERVER_NAME
   - ROLE_WEIGHT
 # How often to periodically update the TAB list, including header and footer, for all users.
 # Will only update on player join/leave if set to 0.
