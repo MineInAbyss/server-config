@@ -87,9 +87,13 @@ items:
     item:
       material: hmccosmetics:generic_backpack
       lore:
-        - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_generic_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_generic_backpack%"
+        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
+        - ''
+        - '<white>௰ <#F7DCFA>Click to apply!'
+      locked-lore:
+        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
+        - ''
+        - '<white>௱ <#E63946>You have not unlocked this item!'
     type: cosmetic
     cosmetic: generic_backpack
     actions:
@@ -105,7 +109,7 @@ items:
       - 49
     item:
       material: PAPER
-      displayname: "<red>To Main Menu"
+      name: "<red>To Main Menu"
       model-data: 1
     type: empty
     actions:

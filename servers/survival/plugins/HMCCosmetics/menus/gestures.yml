@@ -8,7 +8,7 @@ items:
       - 49
     item:
       material: PAPER
-      displayname: "<red>To Main Menu"
+      name: "<red>To Main Menu"
       model-data: 1
     type: empty
     actions:
