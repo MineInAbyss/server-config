@@ -1,6 +1,5 @@
-- !<mobzy:type>
-  baseClass: minecraft:cat
-  creatureType: CREATURE
+- !<geary:inherit>
+  from: [mineinabyss:passive]
 - !<geary:display_name> "<#85562D>Shroombear"
 - !<mobzy:modelengine>
   modelId: shroombear
