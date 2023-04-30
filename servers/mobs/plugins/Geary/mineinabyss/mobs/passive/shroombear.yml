@@ -31,7 +31,6 @@
   override: false
   goals:
     1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.tempt>
-      items:
-        - type: WARPED_FUNGUS
-      losesInterest: false
+    2: !<minecraft:behavior.avoid_player>
+      radius: 10
+    3: !<minecraft:behavior.random_stroll_land>
