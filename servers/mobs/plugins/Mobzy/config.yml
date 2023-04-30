@@ -3,7 +3,7 @@ doMobSpawns: true
 chunkSpawnRad: 2..4
 maxCommandSpawns: 20
 playerGroupRadius: 96.0
-spawnTaskDelay: 8t
+spawnTaskDelay: 40t
 creatureTypeCaps:
   "CREATURE": 60
   "MONSTER": 55
