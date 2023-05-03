@@ -3,16 +3,16 @@ buttons:
   #oraxenItem: paintbrush
   #crucibleItem: something
   #itemsadderItem: hmccosmetics:paintbrush
-  defaultType: LEATHER_HORSE_ARMOR #Can also be POTION to avoid conflicts with ModelEngine
-  customModelData: 1 #Only important if using defaultType
+  defaultType: POTION #Can also be POTION to avoid conflicts with ModelEngine
+  customModelData: 1000 #Only important if using defaultType
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:
-    first: 12..14
-    second: 21..23
-    third: 30..32
+    first: 3..5
+    second: 12..14
+    third: 21..23
   subColorRow: 46..52
-  effectButton: 41
+  effectButton: 31
 
 blacklistedItems:
   oraxenItems:
@@ -24,19 +24,19 @@ blacklistedItems:
   types:
     - LEATHER_CHESTPLATE
 
-enableEffectsMenu: false
+enableEffectsMenu: true
 effectItem:
   #oraxen_item: something
   #crucible_item: something
   #itemsadder_item: something:something
-  type: LEATHER_HORSE_ARMOR
-  name: "Effect Toggle"
+  type: PAPER
+  name: "<gradient:gold:yellow>Effect Toggle"
   color: "#FFFCFC"
-  customModelData: 11
+  customModelData: 1
 effects:
   space_effect:
     name: "Space Effect"
-    color: "#FCFC00"
+    color: "#FCFC02"
     permission: "hmccolor.effect.space"
 
 colors:
