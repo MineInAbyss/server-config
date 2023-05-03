@@ -6,7 +6,7 @@ config-version: 1
 default-menu: defaultmenu
 debug-mode: false
 database-settings:
-  type: sqlite # MYSQL, SQLite, INTERNAL (not recommended!)
+  type: sqlite #MYSQL, SQLite, INTERNAL (not recommended!)
   mysql:
     database: database
     password: cherryBomb
@@ -21,7 +21,22 @@ cosmetic-settings:
   # Ticking periods is something that ensures new players near a player get the packets to actually apply to the user.
 
   unapply-on-death: false # If when a player dies, their cosmetics should be unapplied. If this is true, use hmccosmetics.unapplydeath.bypass to bypass
-  
+  force-permission-join: true # Checks a player permission if they can have a cosmetic when they join the server.
+
+  emote-distance: -3 # This shows how far away the camera should be while a player is doing an emote. Negative is behind player.
+  emote-block-check: true # If the server should check if the block is open where the camera is placed (prevents players viewing through blocks)
+  emote-damage-leave: true # If the player should leave the emote when they take damage
+  emote-invincible: false # If the player should not take damage while doing an emote
+
+  helmet-add-enchantments: false # If the plugin should keep enchants on helmets. This is useful as some enchantments are client side only.
+  chest-add-enchantments: false # If the plugin should keep enchants on chestplate. This is useful as some enchantments are client side only.
+  leggings-add-enchantments: false # If the plugin should keep enchants on leggings. This is useful as some enchantments are client side only.
+  boots-add-enchantments: false # If the plugin should keep enchants on boots. This is useful as some enchantments are client side only.
+
+  # This attempts to destroy cosmetics that get loose in the wild, such as through a player entering creative mode.
+  # Most servers who don't use creative mode and have properly set up the plugin should have no need for this and can leave it disabled.
+  destroy-loose-cosmetics: false
+
   # view distance in blocks that other players will see the backpack cosmetic
   # setting this to lower than the server player view distance should fix the
   # bug where players see random backpacks. Put -1 to ignore and send packets to everyone.
@@ -35,16 +50,23 @@ dye-menu:
   title: ':cosmetic_dye_menu:'
   input-slot: 10
   output-slot: 16
+hook-settings:
+  itemsadder:
+    reload-on-change: false
+  worldguard:
+    player-move-check: true
 wardrobe:
-  allow-trying-on: true
-  # spawn static wardrobe if in this radius of wardrobe-location
-  static-radius: 80
-  # how much yaw should change per tick, set to 0 for none
+  static-radius: 10
   rotation-speed: 3
   # Applies a pumpkin for an overlay of the player while in the wardrobe.
   equip-pumpkin: false
   # Rather than having a set exit location, this will send the player back to where they entered the wardrobe. Not recommended for WG regions
   return-last-location: false
+
+  gamemode-options:
+    exit-gamemode-enabled: true # Setting this to false will set the gamemode the player came in as. True sets to exit-gamemode gamemode
+    exit-gamemode: "SURVIVAL" # Only activates if force-exit-gamemode is true, find gamemodes here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/GameMode.html
+
   # Bossbar that shows when a player is in a wardrobe.
   bossbar:
     enabled: true
