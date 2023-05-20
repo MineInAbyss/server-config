@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <white><b>Benner Cat Ears
     lore:
@@ -6,4 +6,4 @@
     type: STONE_HOE
     customModelData: 12
 - !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

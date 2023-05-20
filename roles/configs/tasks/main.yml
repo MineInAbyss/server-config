@@ -1,5 +1,5 @@
 - name: Copy server-specific configurations
-  include: copy-dir.yml
+  include_tasks: copy-dir.yml
   vars:
     src: "servers/{{ item }}/"
   loop: "{{ servers[server_name] }}"

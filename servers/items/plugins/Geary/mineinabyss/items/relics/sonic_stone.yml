@@ -1,8 +1,8 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 3
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 #- !<geary:events>
 #  leftClick:
 #    - !<cooldown>

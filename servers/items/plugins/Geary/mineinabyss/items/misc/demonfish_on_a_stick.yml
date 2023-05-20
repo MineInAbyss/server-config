@@ -1,5 +1,5 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     displayName: Demonfish on a Stick
     lore:
@@ -7,7 +7,7 @@
       - <yellow>That is if you can manage to sneak up on one
     type: CARROT_ON_A_STICK
     customModelData: 1
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 - !<looty:recipes>
   discoverRecipes: true
   result:

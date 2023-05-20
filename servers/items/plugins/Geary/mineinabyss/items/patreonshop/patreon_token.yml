@@ -1,5 +1,5 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     displayName: <#b74b4d><b>Mitty Token
     lore:
@@ -9,5 +9,5 @@
       - <#ff686b>to buy random shit
     type: EMERALD
     customModelData: 2
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 - !<mineinabyss:mittytoken>

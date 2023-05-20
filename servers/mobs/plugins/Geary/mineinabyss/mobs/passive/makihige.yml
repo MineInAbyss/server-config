@@ -1,10 +1,10 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: WATER_CREATURE
-- !<geary:display_name> "<#FF771C>Makihige"
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:pig
+ # creatureType: WATER_CREATURE
+- !<mobzy:display_name> "<#FF771C>Makihige"
+- !<mobzy:set.modelengine-model>
   modelId: makihige
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 60
   movementSpeed: 0.2000
   knockbackResistance: 0.2000
@@ -29,7 +29,7 @@
       dropChance: 0.4000
 - !<mobzy:increased_water_speed>
   level: 20
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>

@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<red>Beniguma"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<red>Beniguma"
+- !<mobzy:set.modelengine-model>
   modelId: beniguma
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 30
   movementSpeed: 0.3000
   attackDamage: 4
@@ -19,7 +19,7 @@
       maxAmount: 3
       dropChance: 0.5000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>
@@ -29,5 +29,5 @@
     3: !<minecraft:behavior.avoid_player>
       radius: 10
     4: !<minecraft:behavior.random_stroll_land>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

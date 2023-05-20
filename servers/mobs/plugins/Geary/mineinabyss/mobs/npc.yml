@@ -1,12 +1,12 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: MISC
-- !<mobzy:attributes>
+- !<geary:set.entity_type>
+  key: minecraft:pig
+ # creatureType: MISC
+- !<mobzy:set.attributes>
   followRange: 10
   movementSpeed: 0.0
 #- !<geary:no_vanilla_interactions>
 - !<mobzy:important>
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   goals:
     1: !<minecraft:behavior.look_at_player>

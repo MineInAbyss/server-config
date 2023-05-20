@@ -1,4 +1,4 @@
-- !<mobzy:type>
-  baseClass: minecraft:iron_golem
-  creatureType: MONSTER
-- !<geary:dont_burn_in_day>
+- !<geary:set.entity_type>
+  key: minecraft:iron_golem
+ # creatureType: MONSTER
+- !<mobzy:set.burn_in_day> false

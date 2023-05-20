@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<gold>Sakuranbo"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<gold>Sakuranbo"
+- !<mobzy:set.modelengine-model>
   modelId: sakuranbo
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   movementSpeed: 0.3000
   width: 0.6000
@@ -17,7 +17,7 @@
       maxAmount: 3
       dropChance: 0.9000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>

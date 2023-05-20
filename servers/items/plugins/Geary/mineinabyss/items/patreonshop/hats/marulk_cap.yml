@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#1900FF><b>Marulk's Cap
     lore:
@@ -7,4 +7,4 @@
     type: STONE_HOE
     customModelData: 5
 - !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

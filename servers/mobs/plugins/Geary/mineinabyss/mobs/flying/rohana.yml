@@ -1,10 +1,10 @@
-- !<mobzy:type>
-  baseClass: minecraft:ghast
-  mobCategory: WATER_CREATURE
-  creatureType: WATER_CREATURE
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:ghast
+  #mobCategory: WATER_CREATURE
+ # creatureType: WATER_CREATURE
+- !<mobzy:set.modelengine-model>
   modelId: rohana
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   flyingSpeed: 0.2
   attackDamage:
@@ -23,7 +23,7 @@
       maxAmount: 2
       dropChance: 0.4000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.fly_towards_target>

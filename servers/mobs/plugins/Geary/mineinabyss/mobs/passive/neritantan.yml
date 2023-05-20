@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#BDBDBD>Neritantan"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#BDBDBD>Neritantan"
+- !<mobzy:set.modelengine-model>
   modelId: neritantan
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 7
   movementSpeed: 0.2500
   width: 0.6000
@@ -37,7 +37,7 @@
   ambient: mineinabyss:entity.neritantan.ambient
   death: mineinabyss:entity.neritantan.death
   hurt: mineinabyss:entity.neritantan.hurt
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>

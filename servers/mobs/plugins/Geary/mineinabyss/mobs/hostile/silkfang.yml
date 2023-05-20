@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<#116AAD>Silkfang"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#116AAD>Silkfang"
+- !<mobzy:set.modelengine-model>
   modelId: silkfang
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 15
   movementSpeed: 0.3
   attackDamage: 5
@@ -54,12 +54,10 @@
       maxAmount: 2
       dropChance: 0.2000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 40
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true

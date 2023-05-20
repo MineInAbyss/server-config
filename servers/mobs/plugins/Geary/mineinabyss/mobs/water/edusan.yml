@@ -1,9 +1,9 @@
-- !<mobzy:type>
-  baseClass: minecraft:cod
-  creatureType: WATER_CREATURE
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:cod
+ # creatureType: WATER_CREATURE
+- !<mobzy:set.modelengine-model>
   modelId: edusan
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 20
   movementSpeed: 0.3
   followRange: 20
@@ -16,5 +16,5 @@
       cooked:
         prefab: mineinabyss:demonfish_cooked
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<dark_green>Tesuchi"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<dark_green>Tesuchi"
+- !<mobzy:set.modelengine-model>
   modelId: tesuchi
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 5
   movementSpeed: 0.1500
   attackDamage: 0
@@ -22,12 +22,10 @@
         prefab: mineinabyss:tesuchi_tail
       maxAmount: 1
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 20
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true

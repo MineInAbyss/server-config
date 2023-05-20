@@ -1,5 +1,5 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     type: POLISHED_BLACKSTONE_BUTTON
     displayName: <#454545>Hashofu Body
@@ -9,4 +9,4 @@
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>Seems useless by itself.
       - <#595959><i>Perhaps I should look for a vendor?
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

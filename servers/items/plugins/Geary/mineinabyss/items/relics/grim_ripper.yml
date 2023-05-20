@@ -1,9 +1,9 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <dark_gray>Grim Ripper
     type: KNOWLEDGE_BOOK
     customModelData: 6
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 #- !<geary:events>
 #  leftClick:
 #    - !<cooldown>

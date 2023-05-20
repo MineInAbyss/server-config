@@ -1,6 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:sickle]
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <dark_gray>Stone Sickle
     type: STONE_HOE

@@ -1,10 +1,10 @@
-- !<mobzy:type>
-  baseClass: minecraft:axolotl
-  creatureType: WATER_CREATURE
-- !<geary:display_name> "<#257BEB>Demonfish"
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:axolotl
+ # creatureType: WATER_CREATURE
+- !<mobzy:display_name> "<#257BEB>Demonfish"
+- !<mobzy:set.modelengine-model>
   modelId: demonfish
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 20
   movementSpeed: 1.2
   followRange: 20
@@ -22,6 +22,6 @@
   bucketItem:
     prefab: mineinabyss:demonfish_bucket
   bucketMob: mineinabyss:demonfish
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
 - !<geary:no_breeding>

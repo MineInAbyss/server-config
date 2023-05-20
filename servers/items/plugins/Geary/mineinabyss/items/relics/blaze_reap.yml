@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 2
@@ -8,7 +8,7 @@
       - <#C6CC8A>which causes ongoing explosions
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 #- !<geary:explosion_resistant>
 #- !<relation>
 #  data: !<geary:cooldown>

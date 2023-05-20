@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<#1FB53D>Kuongatari"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#1FB53D>Kuongatari"
+- !<mobzy:set.modelengine-model>
   modelId: kuongatari
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   movementSpeed: 0.6000
   attackDamage: 6
@@ -27,12 +27,10 @@
         prefab: mineinabyss:kuongatari_abdomen_cooked
       dropChance: 0.8000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 10
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true

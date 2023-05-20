@@ -1,5 +1,5 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     type: PAPER
     customModelData: 125
@@ -19,4 +19,4 @@
     - !<mineinabyss:toggle_starcompass_hud>
 - !<geary:event.triggers>
   - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

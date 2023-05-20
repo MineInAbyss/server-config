@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
-- !<geary:display_name> "<#FFF821>Dosetori"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#FFF821>Dosetori"
+- !<mobzy:set.modelengine-model>
   modelId: dosetori
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 35
   followRange: 50
   attackDamage: 6
@@ -37,12 +37,10 @@
   death: mineinabyss:entity.dosetori.death
   hurt: mineinabyss:entity.dosetori.hurt
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 50
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.flying_dive_on_target>

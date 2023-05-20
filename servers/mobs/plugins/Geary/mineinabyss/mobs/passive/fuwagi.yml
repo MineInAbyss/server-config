@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#E0E0E0>Fuwagi"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#E0E0E0>Fuwagi"
+- !<mobzy:set.modelengine-model>
   modelId: fuwagi
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   movementSpeed: 0.2500
   width: 1
@@ -28,5 +28,5 @@
   ambient: mineinabyss:entity.fuwagi.ambient
   death: mineinabyss:entity.fuwagi.death
   hurt: mineinabyss:entity.fuwagi.hurt
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

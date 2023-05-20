@@ -1,4 +1,4 @@
-- !<mobzy:type>
-  baseClass: minecraft:pig
-  creatureType: CREATURE
+- !<geary:set.entity_type>
+  key: minecraft:pig
+ # creatureType: CREATURE
 - !<geary:no_breeding>

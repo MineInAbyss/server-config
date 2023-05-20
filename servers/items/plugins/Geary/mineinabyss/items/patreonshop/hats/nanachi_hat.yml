@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#FFCD69><b>Nanachi's Hat
     lore:
@@ -7,4 +7,4 @@
     type: STONE_HOE
     customModelData: 6
 - !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

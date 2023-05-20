@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     type: KNOWLEDGE_BOOK
     displayName: <dark_gray>Tomorrow Signal
@@ -29,4 +29,4 @@
 #        - !<on.parent>
 #          - !<geary:toggle_storm>
 #            at: !<player.location>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

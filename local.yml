@@ -4,9 +4,8 @@
   vars:
     copy_perms: "774"
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
+  vars_files:
+    - "servers/servers.yml"
 
-  tasks:
-    - include_vars:
-        file: "servers/servers.yml"
-        name: servers
-    - include_tasks: tasks/copy-configs.yml
+  roles:
+    - role: configs

@@ -1,7 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:wood]
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     type: PAPER
     displayName: <white>Bamboo Wind Chime

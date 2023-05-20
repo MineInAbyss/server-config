@@ -1,9 +1,9 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     type: KNOWLEDGE_BOOK
     displayName: <dark_aqua>Zephyr Disk
     customModelData: 5
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 #- !<geary:events>
 #  rightClick:
 #    - !<cooldown>

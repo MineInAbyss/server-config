@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<#2597D9>Steve"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#2597D9>Steve"
+- !<mobzy:set.modelengine-model>
   modelId: deathknight
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 30
   movementSpeed: 0.3000
   attackDamage: 14

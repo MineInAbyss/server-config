@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#3C3B4A>Titanjaw"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#3C3B4A>Titanjaw"
+- !<mobzy:set.modelengine-model>
   modelId: titanjaw
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 20
   movementSpeed: 0.1500
   knockbackResistance: 0.3000
@@ -22,7 +22,7 @@
         prefab: mineinabyss:titanjaw_pearl
       dropChance: 0.2000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>

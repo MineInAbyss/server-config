@@ -1,12 +1,12 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     displayName: Tesuchi Scale on a Stick
     lore:
       - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
     type: CARROT_ON_A_STICK
     customModelData: 2
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 - !<looty:recipes>
   discoverRecipes: true
   result:

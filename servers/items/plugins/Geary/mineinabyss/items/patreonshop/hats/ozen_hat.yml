@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#262626><b>Ozen's Hat
     lore:
@@ -6,4 +6,4 @@
     type: STONE_HOE
     customModelData: 7
 - !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

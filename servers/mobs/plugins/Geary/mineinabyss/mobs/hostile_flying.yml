@@ -1,7 +1,6 @@
-- !<mobzy:type>
-  baseClass: minecraft:ghast
-  mobCategory: FLYING
-  creatureType: MONSTER
-- !<geary:dont_burn_in_day>
+- !<geary:set.entity_type>
+  key: minecraft:ghast
+  #mobCategory: FLYING
+ # creatureType: MONSTER
 - !<mobzy:spawn.position>
   AIR

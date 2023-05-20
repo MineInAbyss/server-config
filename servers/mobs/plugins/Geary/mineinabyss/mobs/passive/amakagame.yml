@@ -1,10 +1,10 @@
-- !<mobzy:type>
-  baseClass: minecraft:armor_stand
-  creatureType: CREATURE
-- !<geary:display_name> "<dark_purple>Amakagame"
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:armor_stand
+ # creatureType: CREATURE
+- !<mobzy:display_name> "<dark_purple>Amakagame"
+- !<mobzy:set.modelengine-model>
   modelId: amakagame
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 50
   movementSpeed: 0
   knockbackResistance: 1
@@ -21,5 +21,5 @@
         prefab: mineinabyss:baracocha_fruit
       maxAmount: 5
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

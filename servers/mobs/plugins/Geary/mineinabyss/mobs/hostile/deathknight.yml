@@ -1,8 +1,8 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<mobzy:modelengine>
+- !<mobzy:set.modelengine-model>
   modelId: deathknight
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 1000
   movementSpeed: 0.6000
   attackDamage: 80
@@ -13,10 +13,8 @@
   minExp: 1000
   maxExp: 1000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   targets:
     1: !<mobzy:target.attacker>
-      range: 50
-    2: !<mobzy:target.nearby_player>
-      range: 40
+    2: !<mobzy:target.nearest_player>

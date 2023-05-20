@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
-- !<geary:display_name> "<#1C439E>Madokajack"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#1C439E>Madokajack"
+- !<mobzy:set.modelengine-model>
   modelId: madokajack
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 35
   followRange: 30
   attackDamage: 6
@@ -41,12 +41,10 @@
   death: mineinabyss:entity.madokajack.death
   hurt: mineinabyss:entity.madokajack.hurt
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 30
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.flying_dive_on_target>

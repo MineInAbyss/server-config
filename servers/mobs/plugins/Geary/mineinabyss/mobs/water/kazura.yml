@@ -1,10 +1,10 @@
-- !<mobzy:type>
-  baseClass: minecraft:squid
-  creatureType: WATER_CREATURE
-- !<geary:display_name> "<#A9CCCA>Kazura"
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:squid
+ # creatureType: WATER_CREATURE
+- !<mobzy:display_name> "<#A9CCCA>Kazura"
+- !<mobzy:set.modelengine-model>
   modelId: kazura
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 5
   followRange: 10
   movementSpeed: 0.2
@@ -23,5 +23,5 @@
   bucketItem:
     prefab: mineinabyss:kazura_bucket
   bucketMob: mineinabyss:kazura
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

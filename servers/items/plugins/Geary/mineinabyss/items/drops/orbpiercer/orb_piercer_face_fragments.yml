@@ -1,5 +1,5 @@
-- !<looty:player_instanced_item>
-- !<looty:type>
+- !<geary:player_instanced_item>
+- !<geary:set.item>
   item:
     type: NETHER_WART
     displayName: <#C74040>Orb Piercer Face Fragments
@@ -11,4 +11,4 @@
       - <#D9D9D9><i>I wonder if I collect enough, will I
       - <#D9D9D9><i>be able to see it as well?
       - <#D9D9D9><i>Probably just wishful thinking...
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

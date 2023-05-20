@@ -1,6 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:sickle]
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#172929>Netherite Sickle
     type: NETHERITE_HOE

@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile]
-- !<geary:display_name> "<#8F2222>Uibuta"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#8F2222>Uibuta"
+- !<mobzy:set.modelengine-model>
   modelId: uibuta
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 50
   movementSpeed: 0.35
   attackDamage: 9.5000
@@ -33,12 +33,10 @@
   hurt: mineinabyss:entity.ottobas.hurt
 - !<mobzy:increased_water_speed>
   level: 3
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 30
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true

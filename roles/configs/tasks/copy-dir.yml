@@ -1,0 +1,5 @@
+# TODO replace secrets
+- name: "Copy from {{ src }} to destination"
+  synchronize:
+    src: "{{ src }}"
+    dest: "{% if dest is defined %}{{ dest }}{% else %}/home/container{% endif %}"

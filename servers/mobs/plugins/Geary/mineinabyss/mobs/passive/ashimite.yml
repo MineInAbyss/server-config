@@ -1,10 +1,10 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#2597D9>Ashimite"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#2597D9>Ashimite"
+- !<mobzy:set.modelengine-model>
   modelId: ashimite
-  leashable: true
-- !<mobzy:attributes>
+#  leashable: true
+- !<mobzy:set.attributes>
   maxHealth: 16
   movementSpeed: 0.5000
   knockbackResistance: 0.0700
@@ -29,12 +29,12 @@
     - item:
         prefab: mineinabyss:ashimite_antlers
       dropChance: 0.2000
-- !<mobzy:rideable>
+- !<mobzy:modelengine.rideable>
   requiresItemToSteer: true
   steerItem:
     prefab: mineinabyss:demonfish_on_a_stick
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   goals:
     1: !<minecraft:behavior.float>
     2: !<minecraft:behavior.tempt>

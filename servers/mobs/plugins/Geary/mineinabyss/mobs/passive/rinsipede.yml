@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#FFFF99>Rinsipede"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#FFFF99>Rinsipede"
+- !<mobzy:set.modelengine-model>
   modelId: rinsipede
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   movementSpeed: 0.3000
   knockbackResistance:
@@ -18,7 +18,7 @@
         prefab: mineinabyss:rinsipede_segments
       dropChance: 0.8000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false
   goals:
     1: !<minecraft:behavior.float>

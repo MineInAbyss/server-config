@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [ mineinabyss:hostile ]
-- !<geary:display_name> "<#3D3D3D>Inbyo"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#3D3D3D>Inbyo"
+- !<mobzy:set.modelengine-model>
   modelId: inbyo
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 10
   movementSpeed: 0.4
   attackDamage: 8
@@ -47,19 +47,17 @@
   projectile:
     - !<geary:event.triggers>
       - other geary:event.touched this -> this parent.child(poison) other
-    - !<mobzy:type>
-      baseClass: minecraft:snowball
+    - !<geary:set.entity_type>
+      key: minecraft:snowball
     - !<mobzy:item_model>
       item:
         type: SNOWBALL
         customModelData: 3
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 200
-    2: !<mobzy:target.nearby_player>
-      range: 40
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true

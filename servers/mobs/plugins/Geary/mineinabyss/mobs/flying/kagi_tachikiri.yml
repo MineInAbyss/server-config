@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
-- !<geary:display_name> "<#5468A8>Kagi-Tachikiri"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#5468A8>Kagi-Tachikiri"
+- !<mobzy:set.modelengine-model>
   modelId: kagi_tachikiri
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 15
   followRange: 45
   attackDamage: 4
@@ -32,12 +32,10 @@
       maxAmount: 2
       dropChance: 0.7000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>
-      range: 150
-    2: !<mobzy:target.nearby_player>
-      range: 45
+    2: !<mobzy:target.nearest_player>
   goals:
     1: !<mobzy:behavior.flying_damage_target>
     2: !<mobzy:behavior.flying_dive_on_target>

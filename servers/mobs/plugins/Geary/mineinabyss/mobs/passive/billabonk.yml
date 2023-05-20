@@ -1,11 +1,11 @@
-- !<mobzy:type>
-  baseClass: minecraft:slime
-  creatureType: WATER_CREATURE
-- !<geary:display_name> "<#0357AB>Billabonk"
-- !<geary:set_slime_size> 1
-- !<mobzy:modelengine>
+- !<geary:set.entity_type>
+  key: minecraft:slime
+ # creatureType: WATER_CREATURE
+- !<mobzy:display_name> "<#0357AB>Billabonk"
+- !<mobzy:set.slime_size> 1
+- !<mobzy:set.modelengine-model>
   modelId: billabonk
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 12
   movementSpeed: 0.7
   width: 0.6000
@@ -26,5 +26,5 @@
   ambient: mineinabyss:entity.billabonk.ambient
   death: mineinabyss:entity.billabonk.death
   hurt: mineinabyss:entity.billabonk.hurt
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: false

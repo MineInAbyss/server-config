@@ -1,7 +1,7 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <white><b>Horns of Albedo
     type: STONE_HOE
     customModelData: 11
 - !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>

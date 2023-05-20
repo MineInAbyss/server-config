@@ -1,9 +1,9 @@
 - !<geary:inherit>
   from: [mineinabyss:passive]
-- !<geary:display_name> "<#7D93FF>Kakatsumuri"
-- !<mobzy:modelengine>
+- !<mobzy:display_name> "<#7D93FF>Kakatsumuri"
+- !<mobzy:set.modelengine-model>
   modelId: kakatsumuri
-- !<mobzy:attributes>
+- !<mobzy:set.attributes>
   maxHealth: 5
   movementSpeed: 0.2000
   knockbackResistance:
@@ -23,7 +23,7 @@
       maxAmount: 1
       dropChance: 0.9000
 - !<mobzy:sounds>
-- !<mobzy:pathfinders>
+- !<mobzy:set.pathfinders>
   override: true
   goals:
     1: !<minecraft:behavior.float>
