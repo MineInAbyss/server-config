@@ -1,0 +1,9 @@
+- !<looty:type>
+  item:
+    displayName: <white>Horns of Albedo
+    type: POTION
+    customModelData: 210
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<geary:hat>
+- !<geary:no_vanilla_interactions>

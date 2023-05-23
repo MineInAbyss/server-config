@@ -1,0 +1,16 @@
+title: ":cosmetic_grid_menu:"
+rows: 6
+items:
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

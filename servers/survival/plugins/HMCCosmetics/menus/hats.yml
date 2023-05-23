@@ -1,0 +1,171 @@
+title: ":cosmetic_grid_menu:"
+rows: 6
+items:
+  bondrewd_helmet:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_bondrewd_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_bondrewd_helmet%"
+    type: cosmetic
+    cosmetic: bondrewd_helmet
+  habo_hat:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:habo_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_habo_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_habo_hat%"
+    type: cosmetic
+    cosmetic: habo_hat
+  lyza_hat:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:lyza_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_lyza_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_lyza_hat%"
+    type: cosmetic
+    cosmetic: lyza_hat
+  marulk_hat:
+    slots:
+      - 3
+    item:
+      material: hmccosmetics:marulk_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_marulk_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_marulk_hat%"
+    type: cosmetic
+    cosmetic: marulk_hat
+  nanachi_hat:
+    slots:
+      - 4
+    item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_nanachi_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_nanachi_hat%"
+    type: cosmetic
+    cosmetic: nanachi_hat
+  ozen_hat:
+    slots:
+      - 5
+    item:
+      material: hmccosmetics:ozen_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_ozen_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_ozen_hat%"
+    type: cosmetic
+    cosmetic: ozen_hat
+  pruskha_hat:
+    slots:
+      - 6
+    item:
+      material: hmccosmetics:pruskha_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_pruskha_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_pruskha_hat%"
+    type: cosmetic
+    cosmetic: pruskha_hat
+  reg_hat:
+    slots:
+      - 7
+    item:
+      material: hmccosmetics:reg_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_reg_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_reg_hat%"
+    type: cosmetic
+    cosmetic: reg_hat
+  menacing:
+    slots:
+      - 8
+    item:
+      material: hmccosmetics:menacing
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_menacing%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_menacing%"
+    type: cosmetic
+    cosmetic: menacing
+  albedo_horns:
+    slots:
+      - 9
+    item:
+      material: hmccosmetics:albedo_horns
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_albedo_horns%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_albedo_horns%"
+    type: cosmetic
+    cosmetic: albedo_horns
+  benner_cosplay:
+    slots:
+      - 10
+    item:
+      material: hmccosmetics:benner_cosplay
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_benner_cosplay%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_benner_cosplay%"
+    type: cosmetic
+    cosmetic: benner_cosplay
+  faputa_hat:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:faputa_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_faputa_hat%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_faputa_hat%"
+    type: cosmetic
+    cosmetic: faputa_hat
+  deadmau5_helmet:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:deadmau5_helmet
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_deadmau5_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_deadmau5_helmet%"
+    type: cosmetic
+    cosmetic: deadmau5_helmet
+  mining_helmet:
+    slots:
+      - 12
+    item:
+      material: hmccosmetics:mining_helmet
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_mining_helmet%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_mining_helmet%"
+    type: cosmetic
+    cosmetic: mining_helmet
+  
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

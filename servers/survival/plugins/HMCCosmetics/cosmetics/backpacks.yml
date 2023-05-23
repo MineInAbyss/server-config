@@ -1,0 +1,41 @@
+backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack.backpack"
+  dyeable: false
+  item:
+    material: YELLOW_SHULKER_BOX
+satchel:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack.satchel"
+  dyeable: true
+  item:
+    material: looty:cosmetics:satchel
+miner_backpack:
+  permission: "hmccosmetics.backpack.miner_backpack"
+  slot: BACKPACK
+  dyeable: true
+  item:
+    material: looty:cosmetics:miner_backpack
+neritantan_backpack:
+  permission: "hmccosmetics.backpack.neritantan_backpack"
+  slot: BACKPACK
+  dyeable: false
+  item:
+    material: looty:cosmetics:neritantan_backpack
+camper_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack.camper_backpack"
+  dyeable: false
+  item:
+    material: looty:cosmetics:camper_backpack
+generic_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack.generic_backpack"
+  dyeable: false
+  item:
+    name: "<#7e481d>Generic Backpack"
+    material: POTION
+    color: "#ffffff"
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 105

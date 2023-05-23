@@ -1,0 +1,11 @@
+- !<looty:type>
+  item:
+    displayName: Cosmetic Voucher - Satchel
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetic:voucher>
+  permission: hmccosmetics.backpack.satchel

@@ -1,0 +1,47 @@
+title: ":cosmetic_main_menu:"
+rows: 3
+items:
+  hats:
+    slots:
+      - 3
+    item:
+      name: "<gold>Hats"
+      material: PAPER
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] hats"
+  backpacks:
+    slots:
+      - 5
+    item:
+      name: "<dark_green>Backpacks"
+      material: PAPER
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] backpacks"
+  balloons:
+    slots:
+      - 21
+    item:
+      name: "<aqua>Balloons"
+      material: PAPER
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] balloons"
+  gestures:
+    slots:
+      - 23
+    item:
+      name: "<dark_purple>Gestures"
+      material: PAPER
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] gestures"

@@ -1,0 +1,41 @@
+title: ":cosmetic_grid_menu:"
+rows: 6
+items:
+  splitjaw_balloon:
+    slots:
+      - 0
+    model: splitjaw
+    item:
+      material: hmccosmetics:splitjaw_balloon
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_splitjaw_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_splitjaw_balloon%"
+    type: cosmetic
+    cosmetic: splitjaw_balloon
+  neritantan_balloon:
+    slots:
+      - 1
+    model: neritantan_balloon
+    dyeable: true
+    item:
+      material: hmccosmetics:neritantan_balloon
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_balloon%"
+    type: cosmetic
+    cosmetic: neritantan_balloon
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"
