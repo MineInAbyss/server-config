@@ -13,7 +13,6 @@
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
 - !<blocky:furniture>
-  furnitureType: ITEM_FRAME
 - !<blocky:info>
   blockBreakTime: 2s
   blockDrop:

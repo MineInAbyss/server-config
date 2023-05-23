@@ -7,7 +7,6 @@
     displayName: <white>Bamboo Drawer
     customModelData: 1002
 - !<blocky:furniture>
-  furnitureType: ITEM_FRAME
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
     - { x: -1, y: 0, z: 0 }

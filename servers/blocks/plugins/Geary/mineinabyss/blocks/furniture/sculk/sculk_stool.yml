@@ -15,7 +15,6 @@
 - !<blocky:seat>
   heightOffset: -0.3
 - !<blocky:furniture>
-  furnitureType: ITEM_FRAME
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
 - !<blocky:seat>

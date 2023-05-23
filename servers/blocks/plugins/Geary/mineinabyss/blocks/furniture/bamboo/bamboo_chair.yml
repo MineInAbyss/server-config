@@ -8,7 +8,6 @@
     customModelData: 2
     color: 255, 255, 255
 - !<blocky:furniture>
-  furnitureType: ITEM_FRAME
   rotationType: STRICT
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }

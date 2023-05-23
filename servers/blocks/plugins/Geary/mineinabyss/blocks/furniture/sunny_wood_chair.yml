@@ -21,7 +21,6 @@
   blocks:
     - STONE
 - !<blocky:furniture>
-  furnitureType: ARMOR_STAND
   rotationType: STRICT
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }

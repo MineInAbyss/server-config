@@ -90,7 +90,6 @@ leave:
 proxy:
   enableProxySwitchMessages: false
   discordSrvChannelID: "Global"
-  sendProxyMessagesToDiscord: true
 
 ping:
   enabledChannels:          # channelIds to enable pings for
@@ -108,17 +107,16 @@ ping:
 
 channels:
   global:
-    channelType: GLOBAL
+    channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
     isDefaultChannel: true
     proxy: true
     discordsrv: true
-    messageColor: white
-    format: ":survival:<shift:-4>
-    <hover:show_text:'<light_purple><chatty_nickname><newline>
+    format: ":survival: %luckperms_prefix%
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
     channelAliases:
       - "g"
 
@@ -128,13 +126,12 @@ channels:
     isDefaultChannel: false
     proxy: true
     discordsrv: true
-    messageColor: white
-    format: "<chatty_player_head><shift:-4>
-    <hover:show_text:' <light_purple><chatty_nickname><newline>
+    format: "%chatty_player_head% %luckperms_prefix% 
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
     channelAliases:
       - "head"
 
@@ -142,13 +139,12 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    messageColor: yellow
-    format: ":survival:<shift:-5>:local: 
-    <hover:show_text:' <light_purple><chatty_nickname><newline>
+    format: ":survival:<shift:-8>:local: 
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><gold><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%><yellow><chatty_nickname>:<yellow> "
     channelRadius: 500
     channelAliases:
       - "l"
@@ -161,12 +157,11 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    messageColor: red
-    format: ":survival:<shift:-5>:admin: 
-    <hover:show_text:' <light_purple><chatty_nickname><newline>
+    format: ":survival:<shift:-8>:admin: 
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><#e51e62><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%><chatty_nickname>:<red> "
     channelAliases:
       - "a"
