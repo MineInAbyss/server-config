@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: Cosmetic Voucher - Faputa's Hat
     lore:
@@ -7,5 +7,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetic:voucher>
+- !<cosmetics:voucher>
   permission: hmccosmetics.hat.faputa_hat
+  originalItem:
+    prefab:  cosmetics:faputa_hat

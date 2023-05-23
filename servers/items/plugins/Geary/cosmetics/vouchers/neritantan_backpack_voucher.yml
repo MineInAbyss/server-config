@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: Cosmetic Voucher - Neritantan Backpack
     lore:
@@ -7,5 +7,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetic:voucher>
+- !<cosmetics:voucher>
   permission: hmccosmetics.backpack.neritantan_backpack
+  originalItem:
+    prefab:  cosmetics:neritantan_backpack

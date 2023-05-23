@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#262626>Ozen's Hat
     lore:
@@ -7,5 +7,5 @@
     customModelData: 207
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:hat>
+- !<looty:disable_item_interactions>

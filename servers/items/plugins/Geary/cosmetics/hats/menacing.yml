@@ -1,9 +1,9 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#8F00D6>ゴゴゴMenacingゴゴゴ
     type: POTION
     customModelData: 211
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:hat>
+- !<looty:disable_item_interactions>

@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#1900FF>Marulk's Cap
     lore:
@@ -8,5 +8,5 @@
     customModelData: 205
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:hat>
+- !<looty:disable_item_interactions>

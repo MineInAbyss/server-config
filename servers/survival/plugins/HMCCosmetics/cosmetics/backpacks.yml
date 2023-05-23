@@ -9,25 +9,25 @@ satchel:
   permission: "hmccosmetics.backpack.satchel"
   dyeable: true
   item:
-    material: looty:cosmetics:satchel
+    material: geary:cosmetics:satchel
 miner_backpack:
   permission: "hmccosmetics.backpack.miner_backpack"
   slot: BACKPACK
   dyeable: true
   item:
-    material: looty:cosmetics:miner_backpack
+    material: geary:cosmetics:miner_backpack
 neritantan_backpack:
   permission: "hmccosmetics.backpack.neritantan_backpack"
   slot: BACKPACK
   dyeable: false
   item:
-    material: looty:cosmetics:neritantan_backpack
+    material: geary:cosmetics:neritantan_backpack
 camper_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
   dyeable: false
   item:
-    material: looty:cosmetics:camper_backpack
+    material: geary:cosmetics:camper_backpack
 generic_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.generic_backpack"

@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: Cosmetic Voucher - Bondrewd's Helmet
     lore:
@@ -7,5 +7,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetic:voucher>
+- !<cosmetics:voucher>
   permission: hmccosmetics.hat.bondrewd_helmet
+  originalItem:
+    prefab:  cosmetics:bondrewd_helmet

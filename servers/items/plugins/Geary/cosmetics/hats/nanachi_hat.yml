@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: <#FFCD69>Nanachi's Hat
     lore:
@@ -8,5 +8,5 @@
     customModelData: 206
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<geary:hat>
-- !<geary:no_vanilla_interactions>
+- !<looty:hat>
+- !<looty:disable_item_interactions>

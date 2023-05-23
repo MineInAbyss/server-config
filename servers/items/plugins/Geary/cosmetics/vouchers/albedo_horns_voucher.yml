@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: Cosmetic Voucher - Albedo's Horns
     lore:
@@ -7,5 +7,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetic:voucher>
+- !<cosmetics:voucher>
   permission: hmccosmetics.hat.nanachi_hat
+  originalItem:
+    prefab:  cosmetics:albedo_horns

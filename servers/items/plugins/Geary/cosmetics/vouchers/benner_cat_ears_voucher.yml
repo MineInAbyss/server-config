@@ -1,4 +1,4 @@
-- !<looty:type>
+- !<geary:set.item>
   item:
     displayName: Cosmetic Voucher - Benner's Cat Ears
     lore:
@@ -7,5 +7,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetic:voucher>
+- !<cosmetics:voucher>
   permission: hmccosmetics.hat.benner_cat_ears
+  originalItem:
+    prefab:  cosmetics:benner_cat_ears
