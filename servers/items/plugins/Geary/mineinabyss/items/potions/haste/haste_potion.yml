@@ -11,7 +11,7 @@
     itemFlags:
       - HIDE_POTION_EFFECTS
       - HIDE_ENCHANTS
-- !<geary:food>
+- !<looty:food>
   hunger: 0
   saturation: 0
   replacement:

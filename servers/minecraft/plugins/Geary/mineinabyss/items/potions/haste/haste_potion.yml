@@ -8,7 +8,7 @@
       - <light_purple>Haste</light_purple> <blue>(03:00)</blue>
     enchantments: # For Glint Effect
         - enchant: minecraft:infinity
-- !<geary:food>
+- !<looty:food>
   hunger: 0
   saturation: 0
   replacement:

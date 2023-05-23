@@ -27,8 +27,12 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.4000
-- !<mobzy:increased_water_speed>
-  level: 20
+- !<mobzy:set.equipment>
+  boots:
+    type: STONE
+    enchantments:
+      - enchant: depth_strider
+        level: 20
 - !<mobzy:set.pathfinders>
   override: false
   goals:

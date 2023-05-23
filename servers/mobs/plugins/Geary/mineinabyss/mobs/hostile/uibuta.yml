@@ -1,5 +1,5 @@
 - !<geary:inherit>
-  from: [mineinabyss:hostile]
+  from: [ mineinabyss:hostile ]
 - !<mobzy:display_name> "<#8F2222>Uibuta"
 - !<mobzy:set.modelengine-model>
   modelId: uibuta
@@ -31,8 +31,12 @@
   ambient: mineinabyss:entity.ottobas.ambient
   death: mineinabyss:entity.ottobas.death
   hurt: mineinabyss:entity.ottobas.hurt
-- !<mobzy:increased_water_speed>
-  level: 3
+- !<mobzy:set.equipment>
+  boots:
+    type: STONE
+    enchantments:
+      - enchant: depth_strider
+        level: 3
 - !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>

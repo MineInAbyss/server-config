@@ -1,6 +1,6 @@
 - !<geary:set.entity_type>
   key: minecraft:axolotl
- # creatureType: WATER_CREATURE
+  # creatureType: WATER_CREATURE
 - !<mobzy:display_name> "<#C8C8C8>Hisomukuro"
 - !<mobzy:set.modelengine-model>
   modelId: hisomukuro
@@ -14,19 +14,23 @@
   width: 2
   height: 2
 - !<geary:children>
-  blindness:
-    - !<geary:apply> geary:potion_effects
-    - !<geary:potion_effects>
-      - type: BLINDNESS
-        duration: 4s
-        amplifier: 0
-  blindnessCondition:
-    - !<geary:condition.chance>
-      percentage: 0.6
+  nameToComponents:
+    blindness:
+      - !<geary:apply> geary:potion_effects
+      - !<geary:potion_effects>
+        effects:
+          - type: BLINDNESS
+            duration: 4s
+            amplifier: 0
+    blindnessCondition:
+      - !<geary:condition.chance>
+        percentage: 0.6
 - !<geary:event.triggers>
-  - other geary:event.touched this -> this child(blindness) other
+  expressions:
+    - other geary:event.touched this -> this child(blindness) other
 - !<geary:event.conditions>
-  - any -> child(blindnessCondition) -> child(blindness)
+  expressions:
+    - any -> child(blindnessCondition) -> child(blindness)
 - !<mobzy:death_loot>
   minExp: 200
   maxExp: 250
@@ -52,4 +56,4 @@
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true
-- !<geary:no_breeding>
+- !<mobzy:prevent_breeding>

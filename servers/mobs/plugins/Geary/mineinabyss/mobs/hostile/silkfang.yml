@@ -27,7 +27,7 @@
 #      - geary:event.touched -> parent.child(slow)
 #    - !<minecraft:entity_type>
 #      type: SNOWBALL
-#    - !<mobzy:item_model>
+#    - !<mobzy:set.projectile_item>
 #      item:
 #        type: SNOWBALL
 #        customModelData: 100
@@ -72,7 +72,7 @@
 #      spawn:
 #        - !<minecraft:entity_type>
 #          type: SNOWBALL
-#        - !<mobzy:item_model>
+#        - !<mobzy:set.projectile_item>
 #          item:
 #            type: COBWEB
 #        - !<geary:events>

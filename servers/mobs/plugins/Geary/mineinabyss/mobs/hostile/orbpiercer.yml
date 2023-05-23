@@ -18,33 +18,38 @@
   width: 2.1
   height: 3.7
 - !<geary:children>
-  poison:
-    - !<geary:apply> geary:potion_effects
-    - !<geary:potion_effects>
-      - type: POISON
-        duration: 6s
-        amplifier: 5
-      - type: HARM
-        duration: 1t
-        amplifier: 1
-  poisonCondition:
-    - !<geary:condition.chance>
-      percentage: 0.5
-  projectile:
-    - !<geary:event.triggers>
-      - other geary:event.touched this -> this parent.child(poison) other
-    - !<geary:set.entity_type>
-      key: minecraft:snowball
-    - !<mobzy:item_model>
-      item:
-        type: QUARTZ
-        customModelData: 1
-    - !<geary:deal_damage>
-      damage: 10.0
+  nameToComponents:
+    poison:
+      - !<geary:apply> geary:potion_effects
+      - !<geary:potion_effects>
+        effects:
+          - type: POISON
+            duration: 6s
+            amplifier: 5
+          - type: HARM
+            duration: 1t
+            amplifier: 1
+    poisonCondition:
+      - !<geary:condition.chance>
+        percentage: 0.5
+    projectile:
+      - !<geary:event.triggers>
+        expressions:
+          - other geary:event.touched this -> this parent.child(poison) other
+      - !<geary:set.entity_type>
+        key: minecraft:snowball
+      - !<mobzy:set.projectile_item>
+        item:
+          type: QUARTZ
+          customModelData: 1
+      - !<geary:deal_damage>
+        damage: 10.0
 - !<geary:event.triggers>
-  - other geary:event.touched this -> this child(poison) other
+  expressions:
+    - other geary:event.touched this -> this child(poison) other
 - !<geary:event.conditions>
-  - any -> child(poisonCondition) -> child(poison)
+  expressions:
+    - any -> child(poisonCondition) -> child(poison)
 - !<mobzy:death_loot>
   minExp: 180
   maxExp: 210
@@ -60,8 +65,12 @@
   ambient: mineinabyss:entity.orbpiercer.ambient
   death: mineinabyss:entity.orbpiercer.death
   hurt: mineinabyss:entity.orbpiercer.hurt
-- !<mobzy:increased_water_speed>
-  level: 3
+- !<mobzy:set.equipment>
+  boots:
+    type: STONE
+    enchantments:
+      - enchant: depth_strider
+        level: 3
 - !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>

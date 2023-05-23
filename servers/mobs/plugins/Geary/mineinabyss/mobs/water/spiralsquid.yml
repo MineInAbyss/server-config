@@ -16,10 +16,9 @@
       cooked:
         prefab: mineinabyss:spiralsquid_cooked
 - !<mobzy:sounds>
-- !<geary:bucketable>
+- !<mobzy:bucketable>
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:spiralsquid_bucket
-  bucketMob: mineinabyss:spiralsquid
 - !<mobzy:set.pathfinders>
   override: false

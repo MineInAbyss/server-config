@@ -17,11 +17,10 @@
       cooked:
         prefab: mineinabyss:demonfish_cooked
 - !<mobzy:sounds>
-- !<geary:bucketable>
+- !<mobzy:bucketable>
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:demonfish_bucket
-  bucketMob: mineinabyss:demonfish
 - !<mobzy:set.pathfinders>
   override: false
-- !<geary:no_breeding>
+- !<mobzy:prevent_breeding>

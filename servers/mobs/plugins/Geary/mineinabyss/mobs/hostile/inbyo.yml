@@ -29,30 +29,33 @@
   death: mineinabyss:entity.inbyo.death
   hurt: mineinabyss:entity.inbyo.hurt
 - !<geary:children>
-  poison:
-    - !<geary:apply> geary:potion_effects
-    - !<geary:potion_effects>
-      - type: POISON
-        duration: 1s
-        amplifier: 1
-        isAmbient: true
-        hasParticles: true
-        hasIcon: true
-      - type: HARM
-        duration: 1t
-        amplifier: 1
-        isAmbient: true
-        hasParticles: true
-        hasIcon: true
-  projectile:
-    - !<geary:event.triggers>
-      - other geary:event.touched this -> this parent.child(poison) other
-    - !<geary:set.entity_type>
-      key: minecraft:snowball
-    - !<mobzy:item_model>
-      item:
-        type: SNOWBALL
-        customModelData: 3
+  nameToComponents:
+    poison:
+      - !<geary:apply> geary:potion_effects
+      - !<geary:potion_effects>
+        effects:
+          - type: POISON
+            duration: 1s
+            amplifier: 1
+            isAmbient: true
+            hasParticles: true
+            hasIcon: true
+          - type: HARM
+            duration: 1t
+            amplifier: 1
+            isAmbient: true
+            hasParticles: true
+            hasIcon: true
+    projectile:
+      - !<geary:event.triggers>
+        expressions:
+          - other geary:event.touched this -> this parent.child(poison) other
+      - !<geary:set.entity_type>
+        key: minecraft:snowball
+      - !<mobzy:set.projectile_item>
+        item:
+          type: SNOWBALL
+          customModelData: 3
 - !<mobzy:sounds>
 - !<mobzy:set.pathfinders>
   targets:

@@ -3,3 +3,8 @@
   synchronize:
     src: "{{ src }}"
     dest: "{% if dest is defined %}{{ dest }}{% else %}/home/container{% endif %}"
+    rsync_opts: ["-i", "--size-only"]
+    archive: false
+    recursive: true
+  register: files
+- debug: var=files.stdout_lines

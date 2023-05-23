@@ -4,7 +4,7 @@
     type: PAPER
     displayName: <#33404d>Windmill
     customModelData: 1002
-- !<geary:no_vanilla_interactions>
+- !<looty:disable_item_interactions>
 - !<blocky:modelengine>
   modelId: windmill
 - !<blocky:furniture>

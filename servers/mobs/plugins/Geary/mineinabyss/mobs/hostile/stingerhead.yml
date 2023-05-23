@@ -1,5 +1,5 @@
 - !<geary:inherit>
-  from: [mineinabyss:hostile]
+  from: [ mineinabyss:hostile ]
 - !<mobzy:display_name> "<#9C0F2C>Stingerhead"
 - !<mobzy:set.modelengine-model>
   modelId: stingerhead
@@ -12,37 +12,42 @@
   followRange: 50
   width: 2
   height: 3
-- !<geary:bossbar>
+- !<mobzy:bossbar>
   title: Stingerhead
   color: RED
   style: NOTCHED_10
   range: 100
 - !<geary:children>
-  poison:
-    - !<geary:apply> geary:potion_effects
-    - !<geary:potion_effects>
-      - type: POISON
-        duration: 6s
-        amplifier: 5
-      - type: HARM
-        duration: 1t
-        amplifier: 1
-  poisonCondition:
-    - !<geary:condition.chance>
-      percentage: 0.5
-  projectile:
-    - !<geary:event.triggers>
-      - other geary:event.touched this -> this parent.child(poison) other
-    - !<geary:set.entity_type>
-      key: minecraft:snowball
-    - !<mobzy:item_model>
-      item:
-        type: SNOWBALL
-        customModelData: 100
+  nameToComponents:
+    poison:
+      - !<geary:apply> geary:potion_effects
+      - !<geary:potion_effects>
+        effects:
+          - type: POISON
+            duration: 6s
+            amplifier: 5
+          - type: HARM
+            duration: 1t
+            amplifier: 1
+    poisonCondition:
+      - !<geary:condition.chance>
+        percentage: 0.5
+    projectile:
+      - !<geary:event.triggers>
+        expressions:
+          - other geary:event.touched this -> this parent.child(poison) other
+      - !<geary:set.entity_type>
+        key: minecraft:snowball
+      - !<mobzy:set.projectile_item>
+        item:
+          type: SNOWBALL
+          customModelData: 100
 - !<geary:event.triggers>
-  - other geary:event.touched this -> this child(poison) other
+  expressions:
+    - other geary:event.touched this -> this child(poison) other
 - !<geary:event.conditions>
-  - any -> child(poisonCondition) -> child(poison)
+  expressions:
+    - any -> child(poisonCondition) -> child(poison)
 - !<mobzy:death_loot>
   minExp: 400
   maxExp: 500

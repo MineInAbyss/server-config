@@ -19,10 +19,9 @@
       cooked:
         prefab: mineinabyss:hamashirama_cooked
 - !<mobzy:sounds>
-- !<geary:bucketable>
+- !<mobzy:bucketable>
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:hamashirama_bucket
-  bucketMob: mineinabyss:hamashirama
 - !<mobzy:set.pathfinders>
   override: false

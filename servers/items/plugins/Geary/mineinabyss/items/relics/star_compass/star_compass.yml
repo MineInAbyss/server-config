@@ -15,8 +15,10 @@
         - prefab: mineinabyss:titanjaw_pearl
 - !<mineinabyss:starcompass>
 - !<geary:children>
-  toggleStarCompassHud:
-    - !<mineinabyss:toggle_starcompass_hud>
+  nameToComponents:
+    toggleStarCompassHud:
+      - !<mineinabyss:toggle_starcompass_hud>
 - !<geary:event.triggers>
-  - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
+  expressions:
+    - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
 - !<looty:disable_item_interactions>

@@ -1,4 +1,4 @@
 - !<geary:set.entity_type>
   key: minecraft:pig
  # creatureType: CREATURE
-- !<geary:no_breeding>
+- !<mobzy:prevent_breeding>
