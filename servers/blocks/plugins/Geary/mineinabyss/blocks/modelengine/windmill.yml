@@ -8,6 +8,5 @@
 - !<blocky:modelengine>
   modelId: windmill
 - !<blocky:furniture>
-  furnitureType: ARMOR_STAND
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
