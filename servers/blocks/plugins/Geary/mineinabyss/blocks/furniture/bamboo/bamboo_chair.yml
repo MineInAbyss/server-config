@@ -7,10 +7,14 @@
     displayName: <white>Bamboo Chair
     customModelData: 2
     color: 255, 255, 255
+    itemFlags:
+      - HIDE_DYE
 - !<blocky:furniture>
   rotationType: STRICT
-  collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
+  interactionHitbox:
+    width: 1.0
+    height: 2.0
+
 - !<blocky:seat>
   heightOffset: 0.1
 - !<blocky:info>
