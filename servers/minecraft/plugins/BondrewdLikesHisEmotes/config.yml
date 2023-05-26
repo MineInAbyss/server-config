@@ -8,6 +8,12 @@ default-namespace: "emotes"
 default-folder: "emotes"
 default-font: "emotes"
 
+# Recommended to switch this to MODERN on 1.19+ servers
+# Allowed types are: LEGACY, MODERN, BOTH
+negative-space-type: MODERN
+negative-space-font: "space"
+negative-space-texture: "space:font/space.png"
+
 messages:
   no-emote: ""
   no-gif: "&cGIFs are reserved for the server's Patreon supporters."

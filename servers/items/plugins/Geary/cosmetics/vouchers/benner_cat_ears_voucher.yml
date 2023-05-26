@@ -1,0 +1,13 @@
+- !<geary:set.item>
+  item:
+    displayName: Cosmetic Voucher - Benner's Cat Ears
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetics:voucher>
+  permission: hmccosmetics.hat.benner_cat_ears
+  originalItem:
+    prefab:  cosmetics:benner_cat_ears

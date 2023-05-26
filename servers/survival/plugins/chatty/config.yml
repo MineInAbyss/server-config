@@ -4,12 +4,6 @@
 # Please note: This is not the most performance friendly feature so use the placeholder sparingly.
 playerHeadFont: "minecraft:chatty_heads"
 
-# Keep in mind this needs to also be enabled in your [server.properties] file
-# It will warn all your players when they first join
-# that the server can read all their messages before they are sent.
-# Chatty does not do anything with it outside the [ChatPreview.kt] file.
-enableChatPreviews: true
-
 privateMessages:
   enabled: true
   proxy: true                       # Not currently supported
@@ -19,8 +13,10 @@ privateMessages:
   messageSendSound: ""              # Empty for no sound
   messageReceiveSound: ""           # Empty for no sound
 
+# [disableChatSigning]: Sends messages with valid signatures to support 1.19.1+ chat reporting. Disabling this will disable reporting
+# [commandSpyFormat]: Format for the command spy message
 chat:
-  enableChatSigning: false           # Enable chat signing and reporting
+  disableChatSigning: true
   bypassFormatPermission: "chatty.chat.bypassformat"
   commandSpyFormat: "<gold><chatty_nickname><yellow>: "
   allowedTags: # Available formats are:
@@ -60,24 +56,15 @@ sign:
     - RAINBOW
     - GRADIENT
 
+# [useDisplayName]: Stores the chatty nickname in players displayname aswell
+# [maxLength]: The max length a nickname can be, with or without tags, depending on [countTagsInLength]
+# [countTagsInLength]: If true, tags will be taken into account in [maxLength].
+# [nickNameOtherPrefix]: Prefix to specify you want to nickname another player: [/chatty nickname @player nickname]
 nicknames:
-  permission: "chatty.nickname"
-  nickOtherPermission: "chatty.nickname.other"
-  bypassFormatPermission: "chatty.nickname.bypassformat" #Permission to bypass all format checks
+  useDisplayName: true
   maxLength: 32
-  countTagsInLength: false    # Should [maxLength] take tags into account?
-  nickNameOtherPrefix: '@'    # Prefix to specify you wanna nickname another player: [/chatty nickname @player nickname]
-  allowedTags:                # Available formats are:
-    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
-    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
-    - UNDERLINE
-    - ITALIC
-    - OBFUSCATED
-    - TEXTCOLOR
-    - HEXCOLOR
-    - RAINBOW
-    - GRADIENT
-    - CLICK
+  countTagsInLength: false
+  nickNameOtherPrefix: '@'
 
 join:
   enabled: false
@@ -87,9 +74,13 @@ join:
 leave:
   enabled: false
 
+# [enableProxySwitchMessages]: If true, will send a message to all servers when a player switched servers
+# [discordSrvChannelID]: The channel ID to send the message to as set in DiscordSRV's config.yml
+# [sendProxyMessagesToDiscord]: Enable if you have DiscordSRV on 1 server, Disable if you have it on more than 1 server.
 proxy:
   enableProxySwitchMessages: false
   discordSrvChannelID: "Global"
+  sendProxyMessagesToDiscord: true
 
 ping:
   enabledChannels:          # channelIds to enable pings for
@@ -110,9 +101,11 @@ channels:
     channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
     isDefaultChannel: true
     proxy: true
+    logToConsole: true
+    simpleConsoleMessages: false
     discordsrv: true
     format: ":survival: %luckperms_prefix%
-    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
+    <hover:show_text:'<light_purple><b><chatty_nickname><newline></b>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
@@ -125,6 +118,8 @@ channels:
     permission: "chatty.channel.playerhead"
     isDefaultChannel: false
     proxy: true
+    logToConsole: true
+    simpleConsoleMessages: true
     discordsrv: true
     format: "%chatty_player_head% %luckperms_prefix% 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
@@ -139,6 +134,8 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
+    logToConsole: true
+    simpleConsoleMessages: false
     format: ":survival:<shift:-8>:local: 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
@@ -157,6 +154,8 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
+    logToConsole: true
+    simpleConsoleMessages: false
     format: ":survival:<shift:-8>:admin: 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>

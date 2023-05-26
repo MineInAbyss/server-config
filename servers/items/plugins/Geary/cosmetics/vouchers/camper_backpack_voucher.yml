@@ -1,0 +1,13 @@
+- !<geary:set.item>
+  item:
+    displayName: Cosmetic Voucher - Camper Backpack
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetics:voucher>
+  permission: hmccosmetics.backpack.camper_backpack
+  originalItem:
+    prefab:  cosmetics:camper_backpack

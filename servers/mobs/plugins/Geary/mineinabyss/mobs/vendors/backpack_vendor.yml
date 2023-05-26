@@ -1,0 +1,57 @@
+- !<geary:inherit>
+  from: [mineinabyss:npc]
+- !<mobzy:modelengine>
+  modelId: guildmaster
+- !<mineinabyss:shopkeeper>
+  name: "Backpack Vendor"
+  menu: "Backpack Vendor"
+  selling:
+    - item:
+        displayName:
+        type: YELLOW_SHULKER_BOX
+      currencyType: ORTH_COIN
+      price: 4
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.backpack"
+    - item:
+        prefab: cosmetics:satchel
+      currencyType: ORTH_COIN
+      price: 6
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.satchel"
+    - item:
+        prefab: cosmetics:neritantan_backpack
+      currencyType: ORTH_COIN
+      price: 7
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.neritantan_backpack"
+    - item:
+        displayName: "<#7e481d>Generic Backpack"
+        type: POTION
+        color: "255, 255, 255"
+        itemFlags:
+          - HIDE_POTION_EFFECTS
+        customModelData: 105
+      currencyType: ORTH_COIN
+      price: 3
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.generic_backpack"
+
+    - item:
+        prefab: cosmetics:camper_backpack
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.camper_backpack"
+    - item:
+        prefab: cosmetics:miner_backpack
+      currencyType: MITTY_TOKEN
+      price: 1
+      tradeAction:
+        action: GRANT_PERMISSION
+        value: "hmccosmetics.backpack.miner_backpack"

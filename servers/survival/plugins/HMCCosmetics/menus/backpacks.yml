@@ -1,0 +1,117 @@
+title: ":cosmetic_grid_menu:"
+rows: 6
+items:
+  backpack:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_backpack%"
+    type: cosmetic
+    cosmetic: backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  satchel:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_satchel%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_satchel%"
+    type: cosmetic
+    cosmetic: satchel
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  miner_backpack:
+    slots:
+      - 19
+    item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_miner_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_miner_backpack%"
+    type: cosmetic
+    cosmetic: miner_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  neritantan_backpack:
+    slots:
+      - 3
+    item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_backpack%"
+    type: cosmetic
+    cosmetic: neritantan_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  camper_backpack:
+    slots:
+      - 18
+    item:
+      material: hmccosmetics:camper_backpack
+      lore:
+        - ""
+        - "<gray><i>Patreon-Exclusive"
+        - "<rainbow>Dyeable"
+    type: cosmetic
+    cosmetic: camper_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  generic_backpack:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:generic_backpack
+      lore:
+        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
+        - ''
+        - '<white>௰ <#F7DCFA>Click to apply!'
+      locked-lore:
+        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
+        - ''
+        - '<white>௱ <#E63946>You have not unlocked this item!'
+    type: cosmetic
+    cosmetic: generic_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+
+
+
+  back_button:
+    slots:
+      - 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-data: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] defaultmenu"

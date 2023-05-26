@@ -1,0 +1,9 @@
+- !<geary:player_instanced_item>
+- !<geary:set.item>
+  item:
+    displayName: <gray>Neritantan Backpack
+    type: POTION
+    color: "255, 255, 255"
+    customModelData: 103
+    itemFlags:
+      - HIDE_POTION_EFFECTS

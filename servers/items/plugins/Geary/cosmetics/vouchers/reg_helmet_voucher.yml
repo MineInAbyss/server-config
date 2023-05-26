@@ -1,0 +1,13 @@
+- !<geary:set.item>
+  item:
+    displayName: Cosmetic Voucher - Reg's Helmet
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetics:voucher>
+  permission: hmccosmetics.hat.reg_helmet
+  originalItem:
+    prefab:  cosmetics:reg_helmet

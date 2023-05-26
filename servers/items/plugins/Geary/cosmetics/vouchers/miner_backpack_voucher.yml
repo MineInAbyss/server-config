@@ -1,0 +1,13 @@
+- !<geary:set.item>
+  item:
+    displayName: Cosmetic Voucher - Miner Backpack
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetics:voucher>
+  permission: hmccosmetics.backpack.miner_backpack
+  originalItem:
+    prefab:  cosmetics:miner_backpack

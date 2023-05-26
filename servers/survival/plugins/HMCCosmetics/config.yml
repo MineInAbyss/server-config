@@ -1,0 +1,115 @@
+#
+# HMCCosmetics Configuration (Remapped)
+#
+config-version: 1
+default-menu: defaultmenu
+debug-mode: false
+database-settings:
+  type: sqlite
+  mysql:
+    database: database
+    password: cherryBomb
+    port: 3306
+    host: localhost
+    user: username
+  delay:
+    enabled: false
+    delay: 20
+cosmetic-settings:
+  tick-period: 20
+  # Ticking periods is something that ensures new players near a player get the packets to actually apply to the user.
+
+  unapply-on-death: false
+  force-permission-join: true
+  emote-distance: -3
+  emote-block-check: true
+  emote-air-check: true
+  emote-damage-leave: true
+  emote-invincible: false
+  helmet-add-enchantments: false
+  chest-add-enchantments: false
+  leggings-add-enchantments: false
+  boots-add-enchantments: false
+
+  # This attempts to destroy cosmetics that get loose in the wild, such as through a player entering creative mode.
+  # Most servers who don't use creative mode and have properly set up the plugin should have no need for this and can leave it disabled.
+  destroy-loose-cosmetics: false
+
+  # view distance in blocks that other players will see the backpack cosmetic
+  # setting this to lower than the server player view distance should fix the
+  # bug where players see random backpacks. Put -1 to ignore and send packets to everyone.
+  view-distance: 32
+  # how the balloon should be positioned relative to the player
+  balloon-offset:
+    x: 0.5
+    y: 3
+    z: 0.5
+dye-menu:
+  # If you use ItemsAdder, set this to "§f:offset_-8::dye_menu:"
+  # If you use Oraxen, set this to "<glyph:neg_shift_8><glyph:dye_menu>"
+  title: ':cosmetic_dye_menu:'
+  input-slot: 10
+  output-slot: 16
+hook-settings:
+  itemsadder:
+    # This causes the plugin to reload itself after any ItemsAdder change. This keeps the plugin fully up to date with IA, but
+    # could cause console spam as HMCCosmetics has to reload itself as well.
+    reload-on-change: false
+  worldguard:
+    # Checks worldguard regions for HMCC flags. If set to false, flags will not work properly.
+    # Requires restart to apply changes.
+    player-move-check: true
+wardrobe:
+  # spawn static wardrobe if in this radius of wardrobe-location
+  static-radius: 10
+  # how much yaw should change per tick, set to 0 for none
+  rotation-speed: 3
+  # Applies a pumpkin for an overlay of the player while in the wardrobe.
+  equip-pumpkin: false
+  # Rather than having a set exit location, this will send the player back to where they entered the wardrobe. Not recommended for WG regions
+  return-last-location: false
+  # If players in wardrobes should be able to equip any cosmetic, regardless of permission (Cosmetics they do not have access to will be removed when they leave the wardrobe)
+  unchecked-wardrobe-cosmetics: false
+  gamemode-options:
+    exit-gamemode-enabled: true
+    exit-gamemode: SURVIVAL
+
+  # Bossbar that shows when a player is in a wardrobe.
+  bossbar:
+    enabled: true
+    text: Left-Click to open the menu!
+    progress: 1.0
+    overlay: PROGRESS
+    color: WHITE
+  transition:
+    enabled: true
+    # If you use ItemsAdder, set this to "<black>%img_title%
+    # If you use Oraxen, set this to "<black><glyph:title>"
+    text: '<black>:wardrobe_transition:'
+    delay: 40
+    title-fade-in: 1000
+    title-stay: 500
+    title-fade-out: 1000
+  wardrobes:
+    default:
+      npc-location:
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        yaw: 0
+        pitch: 0
+      viewer-location:
+        world: world
+        x: 5
+        y: 0
+        z: 5
+        yaw: 0
+        pitch: 0
+      leave-location:
+        world: world
+        x: 5
+        y: 5
+        z: 5
+        yaw: 0
+        pitch: 0

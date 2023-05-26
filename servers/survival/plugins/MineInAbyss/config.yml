@@ -12,6 +12,7 @@ x-particles-vomit: &vomit
   offset: 3s
   particles: [ SLIME ]
 features:
+  - !<core>
   - !<guilds>
     guildChattyChannel:
       channelType: PRIVATE
@@ -44,7 +45,7 @@ features:
   #- !<helper>
   #- !<custom_hud>
   #- !<shopkeeper>
-  #- !<cosmetics>
+  - !<cosmetics>
 layers:
   - name: <#FFA812>Orth
     sub: <#FFC421>City of the Great Pit

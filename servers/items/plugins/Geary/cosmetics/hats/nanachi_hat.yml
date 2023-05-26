@@ -1,0 +1,12 @@
+- !<geary:set.item>
+  item:
+    displayName: <#FFCD69>Nanachi's Hat
+    lore:
+      - <#6F19D1><i>
+      - <#FFEA96><i>The "I am not a furry but.." Cosplay
+    type: POTION
+    customModelData: 206
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<looty:hat>
+- !<looty:disable_item_interactions>

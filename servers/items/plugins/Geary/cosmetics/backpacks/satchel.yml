@@ -1,0 +1,11 @@
+- !<geary:player_instanced_item>
+- !<geary:set.item>
+  item:
+    displayName: <#FF9D26>Satchel
+    type: POTION
+    color: "220, 192, 105"
+    customModelData: 101
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<looty:disable_item_interactions>
+- !<looty:backpack>

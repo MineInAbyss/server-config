@@ -1,0 +1,13 @@
+- !<geary:set.item>
+  item:
+    displayName: Cosmetic Voucher - Ozen's Hat
+    lore:
+      - Right-Click to redeem
+    type: POTION
+    customModelData: 1000
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<cosmetics:voucher>
+  permission: hmccosmetics.hat.ozen_hat
+  originalItem:
+    prefab:  cosmetics:ozen_hat

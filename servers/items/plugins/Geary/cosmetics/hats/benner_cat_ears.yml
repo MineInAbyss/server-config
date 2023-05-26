@@ -1,0 +1,11 @@
+- !<geary:set.item>
+  item:
+    displayName: <white>Benner Cat Ears
+    lore:
+      - "<gray>Hey babe :siggy:"
+    type: POTION
+    customModelData: 212
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<looty:hat>
+- !<looty:disable_item_interactions>

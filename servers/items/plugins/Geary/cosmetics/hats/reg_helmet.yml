@@ -1,0 +1,12 @@
+- !<geary:set.item>
+  item:
+    displayName: <#2D2B4F>Reg's Helmet
+    lore:
+      - <#6F19D1><i>
+      - <#46437A><i>Best Robotboi
+    type: POTION
+    customModelData: 209
+    itemFlags:
+      - HIDE_POTION_EFFECTS
+- !<looty:hat>
+- !<looty:disable_item_interactions>
