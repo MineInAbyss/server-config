@@ -35,7 +35,7 @@ items:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   miner_backpack:
     slots:
-      - 2
+      - 19
     item:
       material: hmccosmetics:miner_backpack
       lore:
@@ -67,13 +67,13 @@ items:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   camper_backpack:
     slots:
-      - 4
+      - 18
     item:
       material: hmccosmetics:camper_backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_camper_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_camper_backpack%"
+        - "<gray><i>Patreon-Exclusive"
+        - "<rainbow>Dyeable"
     type: cosmetic
     cosmetic: camper_backpack
     actions:
@@ -83,7 +83,7 @@ items:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   generic_backpack:
     slots:
-      - 5
+      - 2
     item:
       material: hmccosmetics:generic_backpack
       lore:
