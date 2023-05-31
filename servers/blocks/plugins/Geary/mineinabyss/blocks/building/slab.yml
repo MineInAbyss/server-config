@@ -14,7 +14,7 @@
   doubleModel: minecraft:block/acacia_planks
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:slab

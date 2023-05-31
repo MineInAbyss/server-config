@@ -4,3 +4,19 @@
   stepSound: blocky.stone.step
   hitSound: blocky.stone.hit
   fallSound: blocky.stone.fall
+- !<blocky:breaking>
+  baseDuration: 7s
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_AXE
+        value: 6s
+      - item:
+          type: DIAMOND_AXE
+        value: 5s
+      - item:
+          type: IRON_AXE
+        value: 4s
+    heldTypes:
+      - toolType: PICKAXE
+        value: 3s

@@ -16,7 +16,9 @@
   zBlock: mineinabyss:snow_pillar_z
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  acceptedToolTypes: [ SHOVEL ]
+  onlyDropWithCorrectTool: true
+  drops:
     - item:
         prefab: mineinabyss:snow_pillar

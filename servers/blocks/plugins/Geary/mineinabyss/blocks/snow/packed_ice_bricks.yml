@@ -10,9 +10,7 @@
   blockType: NOTEBLOCK
   blockId: 40
   blockModel: "mineinabyss:block/snow/packed_ice_bricks"
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:packed_ice_bricks

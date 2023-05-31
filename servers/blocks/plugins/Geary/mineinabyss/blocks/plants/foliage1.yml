@@ -15,8 +15,7 @@
   blockId: 1
   blockModel: mineinabyss:block/nature/foliage1
 - !<blocky:tall_wire>
-- !<blocky:info>
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:foliage1

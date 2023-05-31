@@ -10,9 +10,7 @@
   blockType: NOTEBLOCK
   blockId: 44
   blockModel: "mineinabyss:block/snow/perma_frost"
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:perma_frost

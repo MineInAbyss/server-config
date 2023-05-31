@@ -15,10 +15,8 @@
 - !<blocky:furniture>
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:sculk_table
 

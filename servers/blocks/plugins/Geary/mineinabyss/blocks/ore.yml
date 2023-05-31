@@ -1,0 +1,12 @@
+- !<blocky:breaking>
+  baseDuration: 10s
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_PICKAXE
+        value: 4s
+    heldTypes:
+      - toolType: AXE
+        value: 10t
+      - toolType: PICKAXE
+        value: 20t

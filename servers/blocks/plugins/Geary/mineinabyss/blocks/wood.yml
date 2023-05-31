@@ -5,3 +5,19 @@
   hitSound: blocky.wood.hit
   fallSound: blocky.wood.fall
 - !<blocky:burnable>
+- !<blocky:breaking>
+  baseDuration: 3s
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_AXE
+        value: 2.5s
+      - item:
+          type: DIAMOND_AXE
+        value: 2s
+      - item:
+          type: IRON_AXE
+        value: 1.5s
+    heldTypes:
+      - toolType: AXE
+        value: 1s

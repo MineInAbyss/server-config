@@ -14,9 +14,7 @@
   yBlock: mineinabyss:carved_spruce_log_y
   xBlock: mineinabyss:carved_spruce_log_x
   zBlock: mineinabyss:carved_spruce_log_z
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 10s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:carved_spruce_log

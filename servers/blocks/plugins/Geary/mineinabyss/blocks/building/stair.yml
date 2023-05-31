@@ -14,7 +14,7 @@
   straightModel: minecraft:block/acacia_stairs
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:stair

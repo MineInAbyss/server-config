@@ -10,9 +10,7 @@
   blockType: NOTEBLOCK
   blockId: 35
   blockModel: "mineinabyss:block/snow/cryosol"
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:cryosol

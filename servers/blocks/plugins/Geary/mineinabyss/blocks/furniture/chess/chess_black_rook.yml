@@ -13,9 +13,8 @@
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
 - !<blocky:furniture>
-- !<blocky:info>
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:chess_black_rook
 

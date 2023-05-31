@@ -12,8 +12,8 @@
     - { x: 0, y: 1, z: 0 }
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:bamboo_rack
 

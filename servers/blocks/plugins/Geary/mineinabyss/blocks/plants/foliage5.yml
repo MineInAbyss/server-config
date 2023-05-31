@@ -8,8 +8,7 @@
   blockType: WIRE
   blockId: 5
   blockModel: mineinabyss:block/nature/foliage5
-- !<blocky:info>
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:foliage5

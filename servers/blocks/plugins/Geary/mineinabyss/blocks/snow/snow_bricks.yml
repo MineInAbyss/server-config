@@ -10,9 +10,9 @@
   blockType: NOTEBLOCK
   blockId: 46
   blockModel: "mineinabyss:block/snow/snow_bricks"
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  acceptedToolTypes: [ SHOVEL ]
+  onlyDropWithCorrectTool: true
+  drops:
     - item:
         prefab: mineinabyss:snow_bricks

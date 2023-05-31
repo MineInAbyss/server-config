@@ -14,9 +14,7 @@
   yBlock: mineinabyss:carved_warped_stem_y
   xBlock: mineinabyss:carved_warped_stem_x
   zBlock: mineinabyss:carved_warped_stem_z
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 10s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:carved_warped_stem

@@ -12,7 +12,7 @@
   blockModel: "mineinabyss:block/building/crate1"
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 10s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:crate1

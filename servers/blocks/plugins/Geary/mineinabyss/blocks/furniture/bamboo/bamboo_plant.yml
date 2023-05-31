@@ -10,8 +10,8 @@
   rotationType: NONE
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:bamboo_plant
 

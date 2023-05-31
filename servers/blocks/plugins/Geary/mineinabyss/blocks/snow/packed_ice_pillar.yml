@@ -14,9 +14,7 @@
   yBlock: mineinabyss:packed_ice_pillar_y
   xBlock: mineinabyss:packed_ice_pillar_x
   zBlock: mineinabyss:packed_ice_pillar_z
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:packed_ice_pillar

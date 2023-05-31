@@ -1,5 +1,5 @@
 - !<geary:inherit>
-  from: [mineinabyss:stone]
+  from: [mineinabyss:stone, mineinabyss:ore]
 - !<geary:player_instanced_item>
 - !<geary:set.item>
   item:
@@ -11,15 +11,14 @@
   blockId: 1
   blockModel: mineinabyss:block/ores/charcoal_sand_ore
 - !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 3s
-  blockDrop:
+  isUnbreakable: true
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:charcoal_sand_raw
       amount: 1..3
       exp: 100
       affectedByFortune: false
-      affectedBySilkTouch: true
       silkTouchedDrop:
         prefab: mineinabyss:charcoal_sand_ore
 

@@ -12,7 +12,9 @@
   blockModel: "mineinabyss:block/snow/snow_tiles"
 - !<blocky:info>
   isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  acceptedToolTypes: [ SHOVEL ]
+  onlyDropWithCorrectTool: true
+  drops:
     - item:
         prefab: mineinabyss:snow_tiles

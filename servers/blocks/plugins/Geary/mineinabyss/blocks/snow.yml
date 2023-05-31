@@ -1,6 +1,16 @@
 - !<blocky:sound>
-  placeSound: blocky.snow.place
-  breakSound: blocky.snow.break
-  stepSound: blocky.snow.step
-  hitSound: blocky.snow.hit
-  fallSound: blocky.snow.fall
+  placeSound: block.snow.place
+  breakSound: block.snow.break
+  stepSound: block.snow.step
+  hitSound: block.snow.hit
+  fallSound: block.snow.fall
+- !<blocky:breaking>
+  baseDuration: 3s
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_SHOVEL
+        value: 2.6s
+    heldTypes:
+      - toolType: SHOVEL
+        value: 2s

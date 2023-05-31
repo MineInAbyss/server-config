@@ -10,9 +10,7 @@
   blockType: NOTEBLOCK
   blockId: 34
   blockModel: "mineinabyss:block/snow/chiseled_packed_ice"
-- !<blocky:info>
-  isUnbreakable: false
-  blockBreakTime: 2s
-  blockDrop:
+- !<blocky:drops>
+  drops:
     - item:
         prefab: mineinabyss:chiseled_packed_ice
