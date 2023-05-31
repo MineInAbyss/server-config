@@ -1,12 +1,22 @@
 - !<blocky:breaking>
-  baseDuration: 10s
+  baseDuration: 15s
   modifiers:
     heldItems:
       - item:
           type: NETHERITE_PICKAXE
-        value: 4s
+        value: 14.9s
+      - item:
+          type: DIAMOND_PICKAXE
+        value: 14.8s
+      - item:
+          type: GOLDEN_PICKAXE
+        value: 14s
+      - item:
+          type: IRON_PICKAXE
+        value: 14.6s
+      - item:
+          type: STONE_PICKAXE
+        value: 14s
     heldTypes:
-      - toolType: AXE
-        value: 10t
       - toolType: PICKAXE
-        value: 20t
+        value: 7.5s
