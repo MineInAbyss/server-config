@@ -4,3 +4,27 @@
     displayName: <dark_aqua>Charcoal Sand Ingot
     type: IRON_INGOT
     customModelData: 1
+- !<looty:recipes>
+  discoverRecipes: true
+  group: "charcoal_sand_ingot"
+  recipes:
+    - !<furnace>
+      input:
+        prefab: mineinabyss:charcoal_sand_raw
+      experience: 1f
+      cookingTime: 100
+    - !<blasting>
+      input:
+        prefab: mineinabyss:charcoal_sand_raw
+      experience: 2f
+      cookingTime: 50
+    - !<furnace>
+      input:
+        prefab: mineinabyss:charcoal_sand_ore
+      experience: 1f
+      cookingTime: 100
+    - !<blasting>
+      input:
+        prefab: mineinabyss:charcoal_sand_ore
+      experience: 2f
+      cookingTime: 50

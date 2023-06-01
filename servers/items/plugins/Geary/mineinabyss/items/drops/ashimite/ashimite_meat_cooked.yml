@@ -19,7 +19,7 @@
   recipes:
     - !<furnace>
       input:
-        prefab: mineinabyss:ashimite_meat_bone
+        prefab: mineinabyss:ashimite_meat_raw
       experience: 1f
       cookingTime: 100
     - !<smoking>
