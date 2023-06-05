@@ -16,6 +16,9 @@
   fallSound: block.amethyst_cluster.fall
 - !<blocky:furniture>
   rotationType: VERY_STRICT
+  interactionHitbox:
+    width: 1.5
+    height: 2.0
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
     - { x: 1, y: 0, z: 0 }

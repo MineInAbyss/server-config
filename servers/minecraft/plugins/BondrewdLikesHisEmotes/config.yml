@@ -14,6 +14,11 @@ negative-space-type: MODERN
 negative-space-font: "space"
 negative-space-texture: "space:font/space.png"
 
+tabcompleting-emotes: []
+tabcompleting-gifs: []
+tabcompleting-fonts:
+  - emotes
+
 messages:
   no-emote: ""
   no-gif: "&cGIFs are reserved for the server's Patreon supporters."
