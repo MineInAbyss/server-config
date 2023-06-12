@@ -10,7 +10,7 @@
   removeRecipes:
     - minecraft:netherite_hoe_smithing
   recipes:
-    - !<smithing>
+    - !<smithing_transform>
       input:
         prefab: mineinabyss:diamond_sickle
       addition:
