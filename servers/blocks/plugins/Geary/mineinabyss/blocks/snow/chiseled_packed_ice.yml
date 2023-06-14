@@ -6,9 +6,11 @@
     type: PAPER
     displayName: Chiseled Packed Ice
     customModelData: 2041
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 34
+
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/chiseled_packed_ice"
 - !<blocky:drops>
   drops:

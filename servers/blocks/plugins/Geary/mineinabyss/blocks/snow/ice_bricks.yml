@@ -6,9 +6,11 @@
     type: PAPER
     displayName: Ice Bricks
     customModelData: 2043
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 36
+
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/ice_bricks"
 - !<blocky:drops>
   drops:

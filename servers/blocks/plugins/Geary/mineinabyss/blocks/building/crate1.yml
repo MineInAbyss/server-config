@@ -6,12 +6,13 @@
     type: PAPER
     displayName: <#e6c186>Crate 1
     customModelData: 2018
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 32
-  blockModel: "mineinabyss:block/building/crate1"
+
 - !<blocky:info>
-  isUnbreakable: false
+  blockModel: "mineinabyss:block/building/crate1"
+
 - !<blocky:drops>
   drops:
     - item:

@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Birch Log
     customModelData: 2021
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 5
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_birch_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_birch_log_y

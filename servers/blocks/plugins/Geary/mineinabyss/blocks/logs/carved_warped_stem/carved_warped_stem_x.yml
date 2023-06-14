@@ -1,6 +1,7 @@
 - !<blocky:directional>
   parentBlock: mineinabyss:carved_warped_stem
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 27
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_warped_stem

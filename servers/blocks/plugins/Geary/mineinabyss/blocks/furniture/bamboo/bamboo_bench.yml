@@ -17,8 +17,6 @@
     - { x: 0, y: 0, z: 0 }
     - { x: -1, y: 0, z: 0 }
     - { x: 1, y: 0, z: 0 }
-- !<blocky:info>
-  isUnbreakable: false
 - !<blocky:drops>
   drops:
     - item:

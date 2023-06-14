@@ -4,9 +4,10 @@
     type: PAPER
     displayName: <#7a4e48>Foliage 5
     customModelData: 3005
-- !<blocky:block>
+- !<geary:set.block>
   blockType: WIRE
   blockId: 5
+- !<blocky:info>
   blockModel: mineinabyss:block/nature/foliage5
 - !<blocky:drops>
   drops:

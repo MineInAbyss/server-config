@@ -2,7 +2,8 @@
   from: [mineinabyss:snow_pillar]
 - !<blocky:directional>
   parentBlock: mineinabyss:snow_pillar
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 47
+- !<blocky:info>
   blockModel: mineinabyss:block/snow/snow_pillar

@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Dark Oak Log
     customModelData: 2023
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 11
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_dark_oak_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_dark_oak_log_y

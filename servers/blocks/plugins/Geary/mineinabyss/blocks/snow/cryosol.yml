@@ -6,9 +6,10 @@
     type: PAPER
     displayName: Cryosol
     customModelData: 2042
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 35
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/cryosol"
 - !<blocky:drops>
   drops:

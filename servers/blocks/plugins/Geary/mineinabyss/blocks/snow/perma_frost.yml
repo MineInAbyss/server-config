@@ -6,9 +6,11 @@
     type: PAPER
     displayName: Perma Frost
     customModelData: 2047
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 44
+
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/perma_frost"
 - !<blocky:drops>
   drops:
