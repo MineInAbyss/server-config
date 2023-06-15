@@ -5,6 +5,9 @@
   movementSpeed: 0.0
 - !<mobzy:important>
 - !<mobzy:sounds>
+- !<mobzy:disable_mob_interactions>
+- !<mobzy:prevent_riding>
 - !<mobzy:set.pathfinders>
   goals:
     1: !<minecraft:behavior.look_at_player>
+      startChance: 1.0
