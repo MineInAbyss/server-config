@@ -5,7 +5,7 @@ spawnTaskDelay: 40t
 creatureTypeCaps:
   "ANIMAL": 60
   "MONSTER": 55
-  "WATER_CREATURE": 30
+  "WATER_ANIMAL": 30
 #  "FLYING": 10
   "AMBIENT": 0
 spawnHeightRange: 40
