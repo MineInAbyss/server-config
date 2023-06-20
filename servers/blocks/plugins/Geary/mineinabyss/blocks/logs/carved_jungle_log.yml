@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Jungle Log
     customModelData: 2021
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 14
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_jungle_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_jungle_log_y

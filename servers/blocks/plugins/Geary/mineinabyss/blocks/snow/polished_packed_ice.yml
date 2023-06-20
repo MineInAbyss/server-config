@@ -6,9 +6,10 @@
     type: PAPER
     displayName: Polished Packed Ice
     customModelData: 2048
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 45
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/polished_packed_ice"
 - !<blocky:drops>
   drops:

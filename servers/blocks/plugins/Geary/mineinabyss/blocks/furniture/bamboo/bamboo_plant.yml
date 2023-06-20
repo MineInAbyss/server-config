@@ -8,8 +8,7 @@
     customModelData: 1005
 - !<blocky:furniture>
   rotationType: NONE
-- !<blocky:info>
-  isUnbreakable: false
+
 - !<blocky:drops>
   drops:
     - item:

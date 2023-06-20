@@ -6,9 +6,11 @@
     type: PAPER
     displayName: Ice Pillar
     customModelData: 2044
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 37
+
+- !<blocky:info>
   blockModel: "mineinabyss:block/snow/ice_pillar"
 - !<blocky:directional>
   yBlock: mineinabyss:ice_pillar_y

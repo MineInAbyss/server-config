@@ -1,6 +1,7 @@
 - !<blocky:directional>
   parentBlock: mineinabyss:packed_ice_pillar
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 42
+- !<blocky:info>
   blockModel: mineinabyss:block/snow/packed_ice_pillar

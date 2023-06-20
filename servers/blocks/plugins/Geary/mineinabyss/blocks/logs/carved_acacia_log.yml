@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Acacia Log
     customModelData: 2020
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 2
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_acacia_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_acacia_log_y

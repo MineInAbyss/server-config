@@ -6,9 +6,11 @@
     type: PAPER
     displayName: <white>Carved Spruce Log
     customModelData: 2027
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 23
+
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_spruce_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_spruce_log_y

@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Mangrove Log
     customModelData: 2025
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 17
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_mangrove_log
 - !<blocky:directional>
   yBlock: mineinabyss:carved_mangrove_log_y

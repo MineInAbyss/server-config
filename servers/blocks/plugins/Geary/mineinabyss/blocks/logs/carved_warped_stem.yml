@@ -6,9 +6,10 @@
     type: PAPER
     displayName: <white>Carved Warped Stem
     customModelData: 2028
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 26
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_warped_stem
 - !<blocky:directional>
   yBlock: mineinabyss:carved_warped_stem_y

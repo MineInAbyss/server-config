@@ -6,12 +6,12 @@
     type: PAPER
     displayName: Snow Tiles
     customModelData: 2051
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 50
-  blockModel: "mineinabyss:block/snow/snow_tiles"
 - !<blocky:info>
-  isUnbreakable: false
+  blockModel: "mineinabyss:block/snow/snow_tiles"
+
 - !<blocky:drops>
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true

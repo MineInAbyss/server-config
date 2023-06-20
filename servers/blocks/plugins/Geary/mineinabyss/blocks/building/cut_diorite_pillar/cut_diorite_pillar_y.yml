@@ -2,7 +2,9 @@
   from: [mineinabyss:cut_diorite_pillar]
 - !<blocky:directional>
   parentBlock: mineinabyss:cut_diorite_pillar
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 29
+
+- !<blocky:info>
   blockModel: mineinabyss:block/building/cut_diorite_pillar

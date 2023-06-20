@@ -6,16 +6,16 @@
     type: PAPER
     displayName: <white>Cut Diorite Pillar
     customModelData: 2034
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 29
+- !<blocky:info>
   blockModel: mineinabyss:block/building/cut_diorite_pillar
 - !<blocky:directional>
   yBlock: mineinabyss:cut_diorite_pillar_y
   xBlock: mineinabyss:cut_diorite_pillar_x
   zBlock: mineinabyss:cut_diorite_pillar_z
-- !<blocky:info>
-  isUnbreakable: false
+
 - !<blocky:drops>
   drops:
     - item:

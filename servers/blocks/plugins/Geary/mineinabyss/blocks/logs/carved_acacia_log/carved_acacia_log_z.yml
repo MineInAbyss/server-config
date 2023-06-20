@@ -1,6 +1,7 @@
 - !<blocky:directional>
   parentBlock: mineinabyss:carved_acacia_log
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 4
+- !<blocky:info>
   blockModel: mineinabyss:block/logs/carved_acacia_log

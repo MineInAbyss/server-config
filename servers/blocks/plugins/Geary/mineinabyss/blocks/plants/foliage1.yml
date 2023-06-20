@@ -10,9 +10,10 @@
   wall: false
   blocks:
     - STONE
-- !<blocky:block>
+- !<geary:set.block>
   blockType: WIRE
   blockId: 1
+- !<blocky:info>
   blockModel: mineinabyss:block/nature/foliage1
 - !<blocky:tall_wire>
 - !<blocky:drops>

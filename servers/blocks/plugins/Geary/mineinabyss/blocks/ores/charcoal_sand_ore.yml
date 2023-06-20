@@ -6,14 +6,36 @@
     type: PAPER
     displayName: <white>Charcoal Sand Ore
     customModelData: 2001
-- !<blocky:block>
+- !<geary:set.block>
   blockType: NOTEBLOCK
   blockId: 1
-  blockModel: mineinabyss:block/ores/charcoal_sand_ore
 - !<blocky:info>
-  isUnbreakable: false
+  blockModel: mineinabyss:block/ores/charcoal_sand_ore
+- !<geary:set.block>
+  blockType: NOTEBLOCK
+  blockId: 1
+- !<blocky:info>
+  blockModel: mineinabyss:block/ores/charcoal_sand_ore
+
 - !<blocky:drops>
   acceptedToolTypes: [ PICKAXE ]
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   onlyDropWithCorrectTool: true
   drops:
     - item:
