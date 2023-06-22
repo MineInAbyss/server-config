@@ -4,7 +4,7 @@
     displayName: <dark_aqua>Charcoal Sand Ingot
     type: IRON_INGOT
     customModelData: 1
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   group: "charcoal_sand_ingot"
   recipes:

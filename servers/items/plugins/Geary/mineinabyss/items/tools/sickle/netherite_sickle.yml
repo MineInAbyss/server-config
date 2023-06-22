@@ -5,7 +5,7 @@
     displayName: <#172929>Netherite Sickle
     type: NETHERITE_HOE
     customModelData: 1
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   removeRecipes:
     - minecraft:netherite_hoe_smithing

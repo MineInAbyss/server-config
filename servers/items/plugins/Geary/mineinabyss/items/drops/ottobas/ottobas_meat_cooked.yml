@@ -12,7 +12,7 @@
 - !<looty:food>
   saturation: 12.8
   hunger: 8
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<furnace>

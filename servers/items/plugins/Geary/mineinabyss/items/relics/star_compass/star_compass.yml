@@ -6,7 +6,7 @@
     displayName: <dark_aqua>Star Compass
     lore:
       - <aqua>Points towards the center of the <green>Abyss
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<shapeless>

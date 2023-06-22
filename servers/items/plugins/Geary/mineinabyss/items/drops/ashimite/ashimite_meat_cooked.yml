@@ -14,7 +14,7 @@
   hunger: 8
   replacement:
     prefab: mineinabyss:ashimite_meat_bone
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<furnace>

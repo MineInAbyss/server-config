@@ -5,7 +5,7 @@
     displayName: <dark_aqua>Diamond Sickle
     type: DIAMOND_HOE
     customModelData: 1
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<shaped>

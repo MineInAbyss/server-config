@@ -19,7 +19,7 @@
   effectList:
     - type: FAST_DIGGING
       duration: 3m
-- !<looty:potion_mixes>
+- !<looty:set.potion_mixes>
   potionmixes:
     - !<potionmix>
       input:

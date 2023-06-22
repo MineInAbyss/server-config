@@ -5,7 +5,7 @@
       type: FIRE_RESISTANCE
       extended: false
       upgraded: false
-- !<looty:potion_mixes>
+- !<looty:set.potion_mixes>
   potionmixes:
     - !<potionmix>
       ingredient:

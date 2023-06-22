@@ -6,7 +6,7 @@
       - <gray>Blade Used For Practice.
     type: WOODEN_SWORD
     customModelData: 2
-- !<looty:recipes>
+- !<looty:set.recipes>
   recipes:
     - !<shaped>
       items:

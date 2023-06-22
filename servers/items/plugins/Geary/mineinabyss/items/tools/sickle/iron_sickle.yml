@@ -5,7 +5,7 @@
     displayName: <gray>Iron Sickle
     type: IRON_HOE
     customModelData: 1
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<shaped>

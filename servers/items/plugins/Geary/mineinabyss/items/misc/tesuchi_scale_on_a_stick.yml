@@ -7,7 +7,7 @@
     type: CARROT_ON_A_STICK
     customModelData: 2
 - !<looty:disable_item_interactions>
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   result:
     prefab: mineinabyss:tesuchi_scale_on_a_stick

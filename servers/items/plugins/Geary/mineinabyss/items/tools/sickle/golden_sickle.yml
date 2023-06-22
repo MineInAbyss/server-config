@@ -5,7 +5,7 @@
     displayName: <gold>Golden Sickle
     type: GOLDEN_HOE
     customModelData: 1
-- !<looty:recipes>
+- !<looty:set.recipes>
   discoverRecipes: true
   recipes:
     - !<shaped>
