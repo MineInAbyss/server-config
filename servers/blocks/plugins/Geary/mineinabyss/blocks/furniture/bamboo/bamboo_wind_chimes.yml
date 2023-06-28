@@ -7,7 +7,13 @@
     displayName: <white>Bamboo Wind Chime
     customModelData: 1009
 - !<blocky:furniture>
-
+  interactionHitbox:
+    width: 0.4
+    height: 1.0
+- !<blocky:placable_on>
+  floor: false
+  ceiling: true
+  wall: false
 - !<blocky:drops>
   drops:
     - item:

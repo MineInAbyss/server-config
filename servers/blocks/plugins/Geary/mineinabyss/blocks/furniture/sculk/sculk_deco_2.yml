@@ -13,6 +13,9 @@
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
 - !<blocky:furniture>
+  interactionHitbox:
+    width: 1.0
+    height: 0.5
 - !<blocky:drops>
   drops:
     - item:

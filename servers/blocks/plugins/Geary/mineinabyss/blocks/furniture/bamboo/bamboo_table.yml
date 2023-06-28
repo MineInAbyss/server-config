@@ -7,7 +7,9 @@
     displayName: <white>Bamboo Table
     customModelData: 1008
 - !<blocky:furniture>
-
+  interactionHitbox:
+    width: 1.2
+    height: 1.0
 - !<blocky:drops>
   drops:
     - item:
