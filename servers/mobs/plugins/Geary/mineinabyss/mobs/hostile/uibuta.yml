@@ -28,9 +28,15 @@
       maxAmount: 3
       dropChance: 0.7500
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.ottobas.ambient
-  death: mineinabyss:entity.ottobas.death
-  hurt: mineinabyss:entity.ottobas.hurt
+  ambient:
+    sound: mineinabyss:entity.ottobas.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.ottobas.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.ottobas.hurt
+    category: HOSTILE
 - !<mobzy:set.equipment>
   boots:
     type: STONE

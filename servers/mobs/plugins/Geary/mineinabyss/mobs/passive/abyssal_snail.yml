@@ -25,10 +25,18 @@
   steerItem:
     prefab: mineinabyss:tesuchi_scale_on_a_stick
 - !<mobzy:sounds>
-  pitch: 0.2
-  ambient: minecraft:entity.axolotl.idle_air
-  death: minecraft:entity.axolotl.death
-  hurt: minecraft:entity.axolotl.hurt
+  ambient:
+    sound: minecraft:entity.axolotl.idle_air
+    category: NEUTRAL
+    pitch: 0.2
+  death:
+    sound: minecraft:entity.axolotl.death
+    category: NEUTRAL
+    pitch: 0.2
+  hurt:
+    sound: minecraft:entity.axolotl.hurt
+    category: NEUTRAL
+    pitch: 0.2
 - !<mobzy:set.pathfinders>
   goals:
     1: !<minecraft:behavior.float>

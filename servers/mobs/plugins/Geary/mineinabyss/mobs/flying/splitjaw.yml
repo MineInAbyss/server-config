@@ -45,9 +45,15 @@
         type: EMERALD
       dropChance: 0.0500
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.splitjaw.ambient
-  death: mineinabyss:entity.splitjaw.death
-  hurt: mineinabyss:entity.splitjaw.hurt
+  ambient:
+    sound: mineinabyss:entity.splitjaw.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.splitjaw.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.splitjaw.hurt
+    category: HOSTILE
 - !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>

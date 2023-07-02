@@ -25,8 +25,14 @@
         prefab: mineinabyss:fuwagi_hide
       dropChance: 0.4000
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.fuwagi.ambient
-  death: mineinabyss:entity.fuwagi.death
-  hurt: mineinabyss:entity.fuwagi.hurt
+  ambient:
+    sound: mineinabyss:entity.fuwagi.ambient
+    category: NEUTRAL
+  death:
+    sound: mineinabyss:entity.fuwagi.death
+    category: NEUTRAL
+  hurt:
+    sound: mineinabyss:entity.fuwagi.hurt
+    category: NEUTRAL
 - !<mobzy:set.pathfinders>
   override: false

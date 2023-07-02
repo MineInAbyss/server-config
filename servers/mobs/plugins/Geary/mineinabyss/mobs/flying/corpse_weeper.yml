@@ -31,10 +31,16 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.9000
-#- !<mobzy:sounds>
-#  ambient: mineinabyss:entity.corpseweeper.ambient
-#  death: mineinabyss:entity.corpseweeper.death
-#  hurt: mineinabyss:entity.corpseweeper.cry
+- !<mobzy:sounds>
+  ambient:
+    sound: mineinabyss:entity.corpseweeper.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.corpseweeper.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.corpseweeper.cry
+    category: HOSTILE
 - !<mobzy:set.pathfinders>
   override: true
   targets:

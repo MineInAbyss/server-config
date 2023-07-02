@@ -62,9 +62,15 @@
         prefab: mineinabyss:orb_piercer_face_fragments
       dropChance: 0.4000
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.orbpiercer.ambient
-  death: mineinabyss:entity.orbpiercer.death
-  hurt: mineinabyss:entity.orbpiercer.hurt
+  ambient:
+    sound: mineinabyss:entity.orbpiercer.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.orbpiercer.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.orbpiercer.hurt
+    category: HOSTILE
 - !<mobzy:set.equipment>
   boots:
     type: STONE

@@ -32,6 +32,12 @@
         prefab: mineinabyss:steve_antlers
       maxAmount: 4
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.steve.ambient
-  death: mineinabyss:entity.steve.death
-  hurt: mineinabyss:entity.steve.hurt
+  ambient:
+    sound: mineinabyss:entity.steve.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.steve.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.steve.hurt
+    category: HOSTILE

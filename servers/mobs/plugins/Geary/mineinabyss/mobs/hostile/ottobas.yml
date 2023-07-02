@@ -23,9 +23,15 @@
       minAmount: 4
       maxAmount: 15
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.ottobas.ambient
-  death: mineinabyss:entity.ottobas.death
-  hurt: mineinabyss:entity.ottobas.hurt
+  ambient:
+    sound: mineinabyss:entity.ottobas.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.ottobas.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.ottobas.hurt
+    category: HOSTILE
 - !<mobzy:set.pathfinders>
   targets:
     1: !<mobzy:target.attacker>

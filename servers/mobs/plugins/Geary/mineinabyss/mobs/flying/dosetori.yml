@@ -33,9 +33,15 @@
       maxAmount: 3
       dropChance: 0.8000
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.dosetori.ambient
-  death: mineinabyss:entity.dosetori.death
-  hurt: mineinabyss:entity.dosetori.hurt
+  ambient:
+    sound: mineinabyss:entity.dosetori.ambient
+    category: HOSTILE
+  death:
+    sound: mineinabyss:entity.dosetori.death
+    category: HOSTILE
+  hurt:
+    sound: mineinabyss:entity.dosetori.hurt
+    category: HOSTILE
 - !<mobzy:sounds>
 - !<mobzy:set.pathfinders>
   targets:

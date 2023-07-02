@@ -34,9 +34,15 @@
       maxAmount: 2
       dropChance: 0.3000
 - !<mobzy:sounds>
-  ambient: mineinabyss:entity.neritantan.ambient
-  death: mineinabyss:entity.neritantan.death
-  hurt: mineinabyss:entity.neritantan.hurt
+  ambient:
+    sound: mineinabyss:entity.neritantan.ambient
+    category: NEUTRAL
+  death:
+    sound: mineinabyss:entity.neritantan.death
+    category: NEUTRAL
+  hurt:
+    sound: mineinabyss:entity.neritantan.hurt
+    category: NEUTRAL
 - !<mobzy:set.pathfinders>
   override: false
   goals:
