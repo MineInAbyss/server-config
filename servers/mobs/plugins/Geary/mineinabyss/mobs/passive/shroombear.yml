@@ -31,6 +31,11 @@
   override: false
   goals:
     1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.avoid_player>
+    2: !<minecraft:behavior.tempt>
+      items:
+        - prefab: mineinabyss:parasitic_watershrooms
+      losesInterest: false
+      speed: 1.0
+    3: !<minecraft:behavior.avoid_player>
       radius: 10
-    3: !<minecraft:behavior.random_stroll_land>
+    4: !<minecraft:behavior.random_stroll_land>
