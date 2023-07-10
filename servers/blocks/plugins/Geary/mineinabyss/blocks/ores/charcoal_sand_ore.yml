@@ -1,6 +1,5 @@
 - !<geary:inherit>
   from: [mineinabyss:ore, mineinabyss:stone]
-- !<geary:player_instanced_item>
 - !<geary:set.item>
   item:
     type: PAPER

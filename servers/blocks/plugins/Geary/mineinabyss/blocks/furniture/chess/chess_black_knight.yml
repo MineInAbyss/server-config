@@ -1,6 +1,5 @@
 - !<geary:inherit>
   from: [mineinabyss:ground_furniture]
-- !<geary:player_instanced_item>
 - !<geary:set.item>
   item:
     type: PAPER
