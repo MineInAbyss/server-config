@@ -25,7 +25,6 @@
       maxAmount: 4
       dropChance: 0.8000
 - !<mobzy:modelengine.rideable>
-  requiresItemToSteer: false
 - !<mobzy:sounds>
 - !<mobzy:set.pathfinders>
   override: false

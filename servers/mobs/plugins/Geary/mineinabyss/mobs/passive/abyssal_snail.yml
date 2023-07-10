@@ -21,7 +21,6 @@
         prefab: mineinabyss:abyssal_snail_gunk
       maxAmount: 2
 - !<mobzy:modelengine.rideable>
-  requiresItemToSteer: true
   steerItem:
     prefab: mineinabyss:tesuchi_scale_on_a_stick
 - !<mobzy:sounds>

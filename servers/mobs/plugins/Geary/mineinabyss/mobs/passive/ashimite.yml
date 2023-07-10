@@ -30,7 +30,6 @@
         prefab: mineinabyss:ashimite_antlers
       dropChance: 0.2000
 - !<mobzy:modelengine.rideable>
-  requiresItemToSteer: true
   steerItem:
     prefab: mineinabyss:demonfish_on_a_stick
 - !<mobzy:sounds>
