@@ -46,6 +46,7 @@ features:
   #- !<custom_hud>
   #- !<shopkeeper>
   - !<cosmetics>
+  - !<tutorial>
 layers:
   - name: <#FFA812>Orth
     sub: <#FFC421>City of the Great Pit

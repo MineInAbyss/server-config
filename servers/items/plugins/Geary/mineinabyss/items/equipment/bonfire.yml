@@ -18,3 +18,18 @@
         |SSS|
         |SFS|
         |SCS|
+- !<bonfire:bonfire>
+  maxPlayerCount: 1
+  bonfireExpirationTime: 5s
+  states:
+    unlit: mineinabyss:bonfire
+    lit: mineinabyss:bamboo_bench
+    set: mineinabyss:sculk_chair
+- !<blocky:furniture>
+  interactionHitbox:
+    width: 1.0
+    height: 1.8
+- !<blocky:drops>
+  drops:
+    - item:
+        prefab: mineinabyss:bonfire
