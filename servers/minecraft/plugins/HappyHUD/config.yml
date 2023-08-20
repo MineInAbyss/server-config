@@ -12,8 +12,12 @@ allow-shader-update: true
 layout:
   # The layouts that every user starts with.
   default:
-    - "default-layout"
-    - "mineinabyss"
+    - "vanilla"
+    - "orthbanking"
+    - "layers"
+    - "relics_and_tools"
+    - "misc-layout"
+    - "effect-layout"
 
 # The default value for how often placeholders should check for an update.
 check-update: 5

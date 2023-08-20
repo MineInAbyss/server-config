@@ -1,50 +1,50 @@
-default-layout:
-  elements:
-    health:
-      asset: 'vanilla-health'
-      align: left
-      position:
-        x: 50.0
-        y: 0
-      offset:
-        x: -10
-        y: 55
-    food:
-      type: 'asset'
-      asset: 'vanilla-hunger'
-      align: right
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: 10
-        y: 55
-    armor:
-      asset: 'vanilla-armor'
-      align: left
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: -10
-        y: 65
-    air:
-      asset: 'vanilla-air'
-      align: right
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: 10
-        y: 65
-sword-layout:
-  elements:
-    sword:
-      asset: 'sword'
-      align: right
-      position:
-        x: 0.0
-        y: 100.0
-      offset:
-        x: 25
-        y: -25
+#default-layout:
+#  elements:
+#    health:
+#      asset: 'vanilla-health'
+#      align: left
+#      position:
+#        x: 50.0
+#        y: 0
+#      offset:
+#        x: -10
+#        y: 55
+#    food:
+#      type: 'asset'
+#      asset: 'vanilla-hunger'
+#      align: right
+#      position:
+#        x: 50.0
+#        y: 0.0
+#      offset:
+#        x: 10
+#        y: 55
+#    armor:
+#      asset: 'vanilla-armor'
+#      align: left
+#      position:
+#        x: 50.0
+#        y: 0.0
+#      offset:
+#        x: -10
+#        y: 65
+#    air:
+#      asset: 'vanilla-air'
+#      align: right
+#      position:
+#        x: 50.0
+#        y: 0.0
+#      offset:
+#        x: 10
+#        y: 65
+#sword-layout:
+#  elements:
+#    sword:
+#      asset: 'sword'
+#      align: right
+#      position:
+#        x: 0.0
+#        y: 100.0
+#      offset:
+#        x: 25
+#        y: -25

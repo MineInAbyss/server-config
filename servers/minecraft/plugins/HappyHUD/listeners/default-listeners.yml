@@ -1,3 +1,9 @@
 mana:
   value: '%mmocore_mana%'
   max: '%mmocore_stat_max_mana%'
+absorption:
+  value: '%player_absorption%'
+  max: '20.0'
+mount:
+  value: '%mineinabyss_mount_health%'
+  max: '%mineinabyss_mount_health_max%'

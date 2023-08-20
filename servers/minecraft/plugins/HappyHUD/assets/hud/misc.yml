@@ -1,0 +1,28 @@
+misc-mounted:
+  conditions:
+    - placeholder{ph=%mineinabyss_mount_health%;v=null} true hide
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/mounted_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: -4
+        y: 4
+      function:
+        reversed: true
+        listener: mount
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/mounted_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: -4
+        y: -3

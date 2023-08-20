@@ -1,0 +1,47 @@
+effects:
+  elements:
+    bleeding:
+      align: center
+      asset: 'effect-bleeding'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 40
+    poison:
+      align: center
+      asset: 'effect-poison'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 40
+#    freezing:
+#      align: center
+#      asset: 'effect-freezing'
+#      position:
+#        x: 50.0
+#        y: 0.0
+#      offset:
+#        x: -30
+#        y: 40
+    hunger:
+      align: center
+      asset: 'effect-hunger'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 57
+        y: 40
+    absorption:
+      align: center
+      asset: 'effect-absorption'
+      position:
+        x: 50.0
+        y: 0
+      offset:
+        x: -30
+        y: 50

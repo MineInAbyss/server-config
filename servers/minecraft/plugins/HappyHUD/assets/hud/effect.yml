@@ -1,0 +1,141 @@
+effect-bleeding:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+    - effect{e=wither} true hide
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/bleeding_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: -2
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/bleeding_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -2
+effect-poison:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+    - effect{e=poison} true hide
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/poison_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: -2
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/poison_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -2
+#effect-freezing:
+#  conditions:
+#    - gamemode{gm=survival,adventure} true hide
+#    #- effect{e=freezing} false hide
+#  layers:
+#    fill:
+#      texture:
+#        path: assets/mineinabyss/freezing_bar.png
+#      color: "#FFFFFF"
+#      offset:
+#        x: 8
+#        y: -2
+#      function:
+#        listener: health
+#        increment: 20
+#        orientation: horizontal
+#    icon:
+#      texture:
+#        path: assets/mineinabyss/freezing_icon.png
+#      offset:
+#        x: -10
+#        y: 0
+#    outline:
+#      texture:
+#        path: assets/mineinabyss/bar_outline.png
+#      offset:
+#        x: 8
+#        y: -2
+effect-absorption:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+    - effect{e=absorption} true hide
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/absorption_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 8
+        y: -2
+      function:
+        listener: absorption
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/absorption_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: 8
+        y: -2
+effect-hunger:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+    - effect{e=hunger} true hide
+  layers:
+    fill:
+      texture:
+        path: assets/mineinabyss/hunger_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: -4
+        y: -2
+      function:
+        reversed: true
+        listener: food
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: assets/mineinabyss/hunger_icon.png
+      offset:
+        x: -10
+        y: 0
+    outline:
+      texture:
+        path: assets/mineinabyss/bar_outline.png
+      offset:
+        x: -4
+        y: -2
