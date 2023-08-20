@@ -1,7 +1,7 @@
 mineinabyss-orthcoins:
   conditions:
-  - placeholder{ph=%checkitem_inhand:off_mat:air;v=yes} false hide
-  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
   layers:
     text:
       align: left
@@ -13,22 +13,22 @@ mineinabyss-orthcoins:
 
 mineinabyss-orthcoins-offhand:
   conditions:
-  - placeholder{ph=%checkitem_inhand:off_mat:air;v=no} false hide
-  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
   layers:
     text:
       align: left
       text: "%mineinabyss_orthbanking_coins%"
       font: "orthbanking-drop-shadow"
       offset:
-        x: -115
+        x: -120
         y: 10
 
 
 mineinabyss-tokens:  
   conditions:
-  - placeholder{ph=%checkitem_inhand:off_mat:air;v=yes} false hide
-  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
   layers:
     text:
       align: left
@@ -40,13 +40,13 @@ mineinabyss-tokens:
 
 mineinabyss-tokens-offhand:
   conditions:
-  - placeholder{ph=%checkitem_inhand:off_mat:air;v=no} false hide
-  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
   layers:
     text:
       align: left
       text: "%mineinabyss_orthbanking_tokens%"
       font: "orthbanking-drop-shadow"
       offset:
-        x: -115
+        x: -120
         y: 24

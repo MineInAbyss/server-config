@@ -13,6 +13,7 @@ layout:
   # The layouts that every user starts with.
   default:
     - "default-layout"
+    - "mineinabyss"
 
 # The default value for how often placeholders should check for an update.
 check-update: 5
