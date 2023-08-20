@@ -21,6 +21,7 @@ cosmetic-settings:
 
   unapply-on-death: false
   force-permission-join: true
+  force-show-join: false
   emote-distance: -3
   emote-block-check: true
   emote-air-check: true
@@ -44,6 +45,24 @@ cosmetic-settings:
     x: 0.5
     y: 3
     z: 0.5
+menu-settings:
+  shading:
+    # Below is the shading mechanism behind cosmetic items. This is a bit complicated, but it allows for a lot of customization.
+    # The shading is done through the title and by shifting textures around. This is done by offsets.
+    # Vanilla, ItemsAdder, and Oraxen are supported **BUT** requires some manual work. Default values are Vanilla. See below.
+    enabled: false
+    first-row-shift: <s:-169>
+    sequent-row-shift: ' <s:-169>'
+    individual-column-shift: <s:-3>
+    background: '<g:shade_row_<row>:colorable> '
+    #These use MiniMessage for color! https://docs.advntr.dev/minimessage/format.html#color
+    equipped-cosmetic-color: <yellow>
+    equipable-cosmetic-color: <green>
+    locked-cosmetic-color: <red>
+  cosmetic-type:
+    # This allows you to specify if it should require a special click type for the interaction to work.
+    equip-click: ANY
+    unequip-click: ANY
 dye-menu:
   # If you use ItemsAdder, set this to "§f:offset_-8::dye_menu:"
   # If you use Oraxen, set this to "<glyph:neg_shift_8><glyph:dye_menu>"
@@ -70,6 +89,8 @@ wardrobe:
   return-last-location: false
   # If players in wardrobes should be able to equip any cosmetic, regardless of permission (Cosmetics they do not have access to will be removed when they leave the wardrobe)
   unchecked-wardrobe-cosmetics: false
+  menu-options:
+    enter-open-menu: false
   gamemode-options:
     exit-gamemode-enabled: true
     exit-gamemode: SURVIVAL
