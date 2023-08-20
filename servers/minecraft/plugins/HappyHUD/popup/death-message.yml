@@ -1,0 +1,47 @@
+death-message:
+  elements:
+    kill-1:
+      asset: death-message
+      align: left
+      position:
+        x: 100.0
+        y: 100.0
+      offset:
+        x: -20
+        y: -20
+    kill-2:
+      asset: death-message
+      align: left
+      position:
+        x: 100.0
+        y: 100.0
+      offset:
+        x: -20
+        y: -40
+    kill-3:
+      asset: death-message
+      align: left
+      position:
+        x: 100.0
+        y: 100.0
+      offset:
+        x: -20
+        y: -60
+    kill-4:
+      asset: death-message
+      align: left
+      position:
+        x: 100.0
+        y: 100.0
+      offset:
+        x: -20
+        y: -80
+    kill-5:
+      asset: death-message
+      align: left
+      position:
+        x: 100.0
+        y: 100.0
+      offset:
+        x: -20
+        y: -100

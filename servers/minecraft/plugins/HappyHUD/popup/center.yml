@@ -1,0 +1,27 @@
+center-popup:
+  require-unique: true
+  elements:
+    slot-1:
+      asset: text-popup
+      position:
+        x: 50.0
+        y: 50.0
+      offset:
+        x: 0
+        y: -10
+    slot-2:
+      asset: text-popup
+      position:
+        x: 50.0
+        y: 50.0
+      offset:
+        x: 0
+        y: -20
+    slot-3:
+      asset: text-popup
+      position:
+        x: 50.0
+        y: 50.0
+      offset:
+        x: 0
+        y: -30
