@@ -1,156 +1,52 @@
 mineinabyss-orthcoins:
+  conditions:
+  - placeholder{ph=%checkitem_inhand:off_mat:air;v=yes} false hide
+  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
   layers:
     text:
+      align: left
       text: "%mineinabyss_orthbanking_coins%"
       font: "orthbanking-drop-shadow"
       offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path:
-    #      assets/mineinabyss/orthcoin.png
-    #    offset:
-    #      x: 0
-    #      y: 0
+        x: -95
+        y: 10
 
-mineinabyss-tokens:
+mineinabyss-orthcoins-offhand:
+  conditions:
+  - placeholder{ph=%checkitem_inhand:off_mat:air;v=no} false hide
+  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
   layers:
     text:
+      align: left
+      text: "%mineinabyss_orthbanking_coins%"
+      font: "orthbanking-drop-shadow"
+      offset:
+        x: -115
+        y: 10
+
+
+mineinabyss-tokens:  
+  conditions:
+  - placeholder{ph=%checkitem_inhand:off_mat:air;v=yes} false hide
+  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
+  layers:
+    text:
+      align: left
       text: "%mineinabyss_orthbanking_tokens%"
       font: "orthbanking-drop-shadow"
       offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path:
-    #      assets/mineinabyss/mittytoken.png
-    #    offset:
-    #      x: 0
-    #      y: 0
-#mineinabyss-temperature:
-#  layers:
-#    text:
-#      text: "%mineinabyss_temperature%"
-#      font: "default"
-#      offset:
-#        x: 0
-#        y: 0
-#
-#mineinabyss-humidity:
-#  layers:
-#    text:
-#      text: "%mineinabyss_humidity%"
-#      font: "default"
-#      offset:
-#        x: 0
-#        y: 0
+        x: -95
+        y: 24
 
-mineinabyss-depth:
+mineinabyss-tokens-offhand:
+  conditions:
+  - placeholder{ph=%checkitem_inhand:off_mat:air;v=no} false hide
+  - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=yes} false hide
   layers:
     text:
-      text: "%mineinabyss_depth%"
-      font: "default-drop-shadow"
+      align: left
+      text: "%mineinabyss_orthbanking_tokens%"
+      font: "orthbanking-drop-shadow"
       offset:
-        x: 0
-        y: 0
-    icon:
-      texture:
-        path: assets/mineinabyss/depth_meter.png
-      offset:
-        x: -20
-        y: 4
-
-mineinabyss-starcompass:
-  layers:
-    text:
-      text: "%mineinabyss_starcompass%"
-      font: "starcompass"
-      offset:
-        x: 0
-        y: 4
-mineinabyss-orth:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/bell.png
-    #  offset:
-    #    x: -20
-    #    y: 6
-mineinabyss-edge_of_the_abyss:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/redw.png
-    #  offset:
-    #    x: -20
-    #    y: 6
-mineinabyss-forest_of_temptation:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: -20
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/bluew.png
-    #  offset:
-    #    x: -20
-    #    y: 6
-mineinabyss-great_fault:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/moonw.png
-    #  offset:
-    #    x: -20
-    #    y: 6
-mineinabyss-goblets_of_giants:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/moonw.png
-    #  offset:
-    #    x: -20
-    #    y: 6
-mineinabyss-sea_of_corpses:
-  layers:
-    text:
-      text: "%mineinabyss_whistle%%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
-      offset:
-        x: 0
-        y: 0
-    #icon:
-    #  texture:
-    #    path: assets/mineinabyss/blackw.png
-    #  offset:
-    #    x: -20
-    #    y: 6
+        x: -115
+        y: 24

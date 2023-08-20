@@ -2,10 +2,12 @@ sword:
   layers:
     health-text:
       text: "<green>Health: <white>%health-bar-value%/%health-bar-max%"
-      font: "default-outline"
+      font: "default"
+      outlined: true
+      align: right
       offset:
-        x: 2
-        y: -3
+        x: 3
+        y: 4
     health-bar:
       texture:
         path: assets/sword/fill_health.png
@@ -19,10 +21,12 @@ sword:
         orientation: horizontal
     mana-text:
       text: "<blue>Mana: <white>%mana-bar-value%/%mana-bar-max%"
-      font: "default-outline"
+      font: "default"
+      outlined: true
+      align: right
       offset:
-        x: 2
-        y: -12
+        x: 3
+        y: -20
     mana-bar:
       texture:
         path: assets/sword/fill_mana.png

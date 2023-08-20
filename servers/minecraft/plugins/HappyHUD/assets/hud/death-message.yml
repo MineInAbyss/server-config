@@ -1,0 +1,28 @@
+death-message:
+  layers:
+    icon:
+      texture:
+        scale: 0.5
+        path: assets/death-message/icon.png
+      offset:
+        x: 86
+        y: -2
+    killer:
+      text: "%arg-1%"
+      font: "default"
+      outlined: true
+      align: left
+      offset:
+        x: 80
+        y: -2
+    victim:
+      text: "%arg-2%"
+      font: "default"
+      outlined: true
+      align: right
+      offset:
+        x: 100
+        y: -2
+    outline:
+      texture:
+        path: assets/death-message/outline.png
