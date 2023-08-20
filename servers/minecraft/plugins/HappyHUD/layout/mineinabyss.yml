@@ -1,3 +1,4 @@
+## OrthBanking
 balance_empty_offhand:
   elements:
     coins:
@@ -22,3 +23,87 @@ balance_offhand:
       position:
         x: 50
         y: 0
+
+## Abyss-Layers
+orth:
+  elements:
+    orth:
+      asset: 'mineinabyss-orth'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+edge_of_the_abyss:
+  elements:
+    edge_of_the_abyss:
+      asset: 'mineinabyss-edge_of_the_abyss'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+forest_of_temptation:
+  elements:
+    forest_of_temptation:
+      asset: 'mineinabyss-forest_of_temptation'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+great_fault:
+  elements:
+    great_fault:
+      asset: 'mineinabyss-great_fault'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+goblets_of_giants:
+  elements:
+    goblets_of_giants:
+      asset: 'mineinabyss-goblets_of_giants'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+sea_of_corpses:
+  elements:
+    sea_of_corpses:
+      asset: 'mineinabyss-sea_of_corpses'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -100
+        y: -12.0
+
+## Relics & Tools
+depth:
+  elements:
+    depth:
+      asset: 'mineinabyss-depth'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: 85
+        y: -12.0
+starcompass:
+  elements:
+    starcompass:
+      asset: 'mineinabyss-starcompass'
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: 0
+        y: -10.0

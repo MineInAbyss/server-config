@@ -1,3 +1,4 @@
+## OrthBanking
 mineinabyss-orthcoins:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
@@ -10,7 +11,6 @@ mineinabyss-orthcoins:
       offset:
         x: -95
         y: 10
-
 mineinabyss-orthcoins-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
@@ -23,8 +23,6 @@ mineinabyss-orthcoins-offhand:
       offset:
         x: -120
         y: 10
-
-
 mineinabyss-tokens:  
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
@@ -37,7 +35,6 @@ mineinabyss-tokens:
       offset:
         x: -95
         y: 24
-
 mineinabyss-tokens-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
@@ -50,3 +47,131 @@ mineinabyss-tokens-offhand:
       offset:
         x: -120
         y: 24
+
+# Abyss-Layers
+mineinabyss-orth:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=orth} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/bell.png
+      offset:
+        x: 0
+        y: 6
+mineinabyss-edge_of_the_abyss:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=edge_of_the_abyss} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+    icon:
+      texture:
+        path: assets/mineinabyss/redw.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-forest_of_temptation:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=forest_of_temptation} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+    icon:
+      texture:
+        path: assets/mineinabyss/bluew.png
+      offset:
+        x: 0
+        y: 6
+mineinabyss-great_fault:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=great_fault} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+    icon:
+      texture:
+        path: assets/mineinabyss/moonw.png
+      offset:
+        x: 0
+        y: 6
+mineinabyss-goblets_of_giants:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=the_goblets_of_giants} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+    icon:
+      texture:
+        path: assets/mineinabyss/moonw.png
+      offset:
+        x: -20
+        y: 6
+mineinabyss-sea_of_corpses:
+  conditions:
+    - placeholder{ph=%mineinabyss_layer_simple%;v=sea_of_corpses} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      align: left
+      text: "%mineinabyss_layer%"
+      font: "mineinabyss-drop-shadow"
+    icon:
+      texture:
+        path: assets/mineinabyss/blackw.png
+      offset:
+        x: 0
+        y: 6
+
+
+
+# Relics & Tools
+mineinabyss-depth:
+  conditions:
+    #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+  layers:
+    text:
+      text: "%mineinabyss_depth%"
+      font: "default-drop-shadow"
+      offset:
+        x: 0
+        y: 0
+    icon:
+      texture:
+        path: assets/mineinabyss/depth_meter.png
+      offset:
+        x: -20
+        y: 4
+
+mineinabyss-starcompass:
+  conditions:
+    #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%mineinabyss_starcompass_hud_state%;v=false} false hide
+  layers:
+    text:
+      text: "%mineinabyss_starcompass%"
+      font: "starcompass"
+      offset:
+        x: 0
+        y: 4
