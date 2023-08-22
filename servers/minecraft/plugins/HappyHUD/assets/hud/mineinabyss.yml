@@ -52,7 +52,7 @@ mineinabyss-tokens-offhand:
 mineinabyss-orth:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=orth} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -70,7 +70,7 @@ mineinabyss-orth:
 mineinabyss-edge_of_the_abyss:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=edge_of_the_abyss} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -85,7 +85,7 @@ mineinabyss-edge_of_the_abyss:
 mineinabyss-forest_of_temptation:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=forest_of_temptation} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -100,7 +100,7 @@ mineinabyss-forest_of_temptation:
 mineinabyss-great_fault:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=great_fault} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -115,7 +115,7 @@ mineinabyss-great_fault:
 mineinabyss-goblets_of_giants:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=the_goblets_of_giants} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -130,7 +130,7 @@ mineinabyss-goblets_of_giants:
 mineinabyss-sea_of_corpses:
   conditions:
     - placeholder{ph=%mineinabyss_layer_simple%;v=sea_of_corpses} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       align: left
@@ -148,8 +148,7 @@ mineinabyss-sea_of_corpses:
 # Relics & Tools
 mineinabyss-depth:
   conditions:
-    #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
-    - placeholder{ph=%mineinabyss_depth_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
       text: "%mineinabyss_depth%"
@@ -167,7 +166,7 @@ mineinabyss-depth:
 mineinabyss-starcompass:
   conditions:
     #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
-    #- placeholder{ph=%mineinabyss_starcompass_hud_state%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_starcompass%;v=false} false hide
     #- placeholder{ph=%mineinabyss_starcompass_angle%;v=null} true hide
     - placeholder{ph=%mineinabyss_starcompass_angle%;v=N} true texture assets/mineinabyss/arrow_n.png
     - placeholder{ph=%mineinabyss_starcompass_angle%;v=NNE} true texture assets/mineinabyss/arrow_nne.png
