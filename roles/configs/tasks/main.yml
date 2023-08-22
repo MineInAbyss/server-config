@@ -1,3 +1,17 @@
+- name: Set velocity secret if minecraft server
+  lineinfile:
+    path: "lookup('ansible.builtin.env', 'HOME')/config/paper-global.yml"
+    regexp: "^.*secret: (.*)$"
+    line: "    secret: {{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret') }}"
+  when: "'minecraft' in servers[server_name]"
+
+- name: Enable velocity if minecraft server
+  lineinfile:
+    path: "lookup('ansible.builtin.env', 'HOME')/config/paper-global.yml"
+    regexp: "velocity:\\s*enabled"
+    line: "    enabled: true"
+  when: "'minecraft' in servers[server_name]"
+
 - name: Copy server-specific configurations
   include_tasks: copy-dir.yml
   vars:
