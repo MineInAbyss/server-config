@@ -20,7 +20,7 @@ out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
-#define HH_VERSION 2
+#define HH_VERSION 3
 #define HH_OFFSET %BOSSBAR_OFFSET%
 
 // Function to convert a vertical ascent into a ID.
@@ -64,6 +64,10 @@ void main() {
             pos.y *= scale.y;
 
             pos.y += guiSize.y;
+            // force align guiScale 3
+            if (guiScale == 3) {
+                pos.x += 1.45;
+            }
 
             pos -= vec3(xOffset, yOffset, 0.0);
             pos.z += layer;

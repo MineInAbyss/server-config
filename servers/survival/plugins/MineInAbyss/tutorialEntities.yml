@@ -97,7 +97,7 @@
   scale: [0.6, 0.6, 0.6]
   alignment: LEFT
   text: |2
-                  <gray><lang:mineinabyss.tutorial.general_info></gray>
+                  <lang:mineinabyss.tutorial.general_info>
     <gray>*</gray> <lang:mineinabyss.tutorial.general_info.1></lang>
     <gray>*</gray> <lang:mineinabyss.tutorial.general_info.2></lang>
     <gray>*</gray> <lang:mineinabyss.tutorial.general_info.3></lang>
@@ -125,4 +125,3 @@
     4. <lang:mineinabyss.tutorial.rules.4></lang>
     5. <lang:mineinabyss.tutorial.rules.5></lang>
     6. <lang:mineinabyss.tutorial.rules.6></lang>
-  
