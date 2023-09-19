@@ -26,11 +26,1129 @@ supportedLanguages:
 # [height]: The height of your emote
 # [ascent]: The ascent of your emote
 emotes:
+  - id: bonegun
+    #texture: "emotes:emotes/bonegun.png"
+    #font: "emotes"
+    #height: 8
+    #ascent: 8
   - id: pog
-    texture: "emotes:emotes/pog.png"
-    font: "emotes"
-    height: 8
+  - id: aqua_chibi
+  - id: aqua
+  - id: bk
+  - id: bonegun
+  - id: bonethink
+  - id: emoji_38
+  - id: fork
+  - id: nikounamused
+  - id: ozensmug
+  - id: pepehands
+  - id: pepejam
+  - id: pepega
+  - id: poggers
+  - id: regg
+  - id: mittysweat
+  - id: rikoangry
+  - id: rikoeyes
+  - id: shrugsmug
+  - id: siggy
+  - id: yeeko
+    texture: emotes:emotes/yeekonormal.png
+  - id: YeEkO
+    texture: emotes:emotes/yeekoscuffed.png
+  - id: omegalul
+  - id: natlikethis
+  - id: gachibass
+  - id: kekw
+  - id: sanswink
+  - id: subarashii
+  - id: nanahug
+  - id: mitty
+  - id: feelsbunman
+  - id: woh
+  - id: kappa
+  - id: nanalewd
+  - id: jackieohok
+  - id: sadcat
+  - id: smudge
+  - id: kika
+  - id: nanaya
+  - id: meinyaaaa
+  - id: nanashy
+  - id: galaxybrain
+  - id: pensive
+  - id: harold
+  - id: rikoup
+  - id: regcry
+  - id: rikolamo
+  - id: okhand
+  - id: thinking
+  - id: flushed
+  - id: nanawaaaa
+  - id: rikoeyesdrawn
+  - id: michirusmug
+  - id: nanashrug
+  - id: pogchamp
+  - id: lewd
+  - id: hypers
+  - id: osuhow
+  - id: rikopray
+  - id: smilew
+  - id: ayaya
+  - id: pogyou
+  - id: fapushock
+  - id: pogo
+  - id: pog
+  - id: rikoblep
+  - id: doubt
+  - id: habowide
+  - id: habowidest
+  - id: steveflushed
+  - id: flooshed
+  - id: bruh
+  - id: yeepensive
+  - id: temeyes
+  - id: bonenani
+  - id: isforme
+  - id: boneshrug
+  - id: pepesit
+  - id: yep
+  - id: 5head
+  - id: pain
+  - id: sadge
+  - id: boneblushed
+  - id: habohotel
+  - id: walterbruh
+  - id: pepebusiness
+  - id: gura
+  - id: rikothumb
+  - id: monke
+  - id: booba
+  - id: pepelaugh
+  - id: guraflushed
+  - id: beep
+  - id: pepegun
+  - id: pepothink
+  - id: pepehmm
+  - id: pogjaw
+  - id: gurashark
+  - id: prayge
+  - id: widepeepohappy
+  - id: D
+    texture: emotes:emotes/d.png
+  - id: sus
+  - id: callipog
+  - id: guradum
+  - id: gurasalute
+  - id: habosleep
+  - id: habowoke
+  - id: notlikegura
+  - id: regflushed
+  - id: rikoyep
+  - id: sadangry
+  - id: thonk
+  - id: watsoncry
+  - id: widepanda
+  - id: aaaa
+  - id: flatboi
+  - id: tora
+  - id: senkow
+  - id: guradoki
+  - id: faputaborga
+  - id: adarnice
+  - id: faputayaya
+  - id: smilechamp
+  - id: oriw
+  - id: monkaw
+  - id: gurawide
+  - id: peeporage
+  - id: habochonk
+  - id: glacesip
+  - id: wazupog
+  - id: wazuwhat
+  - id: habosus
+  - id: bonesus
+  - id: nanasus
+  - id: sam
+  - id: inapain
+  - id: inasmug
+  - id: inabye
+  - id: floppa
+  - id: gurapray
+  - id: amebrain
+  - id: troll
+  - id: callipray
+  - id: wingtree
+  - id: nikibread
+  - id: fubkerhappy
+  - id: fubkersad
+  - id: stfu
+  - id: siggycool
+  - id: mogicrazy
+  - id: ozenisfine
+  - id: ozendrool
+  - id: orifacepalm
+  - id: katyusha
+  - id: hjonk
+  - id: okaynerd
+  - id: guracard
+  - id: gutmoment
+  - id: technopepe
+  - id: huh
+  - id: faputahappy
+  - id: chad
+  - id: f
+  - id: stonks
+  - id: notstonks
+  - id: cursed
+  - id: doge
+  - id: skull
+  - id: sheesh
+  - id: thumbsup
+  - id: thumbsdown
+  - id: nou
+  - id: knuckles
+  - id: know
+  - id: dontknow
+
+  - id: bell
+    font: whistles
+    texture: mineinabyss:whistles/bell.png
+  - id: redw
+    font: whistles
+    texture: mineinabyss:whistles/redw.png
+  - id: bluew
+    font: whistles
+    texture: mineinabyss:whistles/bluew.png
+  - id: moonw
+    font: whistles
+    texture: mineinabyss:whistles/moonw.png
+  - id: blackw
+    font: whistles
+    texture: mineinabyss:whistles/blackw.png
+  - id: whitew
+    font: whistles
+    texture: mineinabyss:whistles/whitew.png
+  - id: bondrewdw
+    font: whistles
+    texture: mineinabyss:whistles/bondrewdw.png
+  - id: lyzaw
+    font: whistles
+    texture: mineinabyss:whistles/lyzaw.png
+  - id: rikow
+    font: whistles
+    texture: mineinabyss:whistles/rikow.png
+  - id: ozenw
+    font: whistles
+    texture: mineinabyss:whistles/ozenw.png
+  - id: lifereverbw
+    font: whistles
+    texture: mineinabyss:whistles/lifereverbw.png
+  - id: wakunaw
+    font: whistles
+    texture: mineinabyss:whistles/wakunaw.png
+  - id: srajow
+    font: whistles
+    texture: mineinabyss:whistles/srajow.png
+  - id: owlw
+    font: whistles
+    texture: mineinabyss:whistles/owlw.png
+  - id: painw
+    font: whistles
+    texture: mineinabyss:whistles/painw.png
+  - id: boyw
+    font: whistles
+    texture: mineinabyss:whistles/boyw.png
+  - id: gunsmithw
+    font: whistles
+    texture: mineinabyss:whistles/gunsmithw.png
+  - id: hadenw
+    font: whistles
+    texture: mineinabyss:whistles/hadenw.png
+  - id: awaiw
+    font: whistles
+    texture: mineinabyss:whistles/awaiw.png
+  - id: lumiw
+    font: whistles
+    texture: mineinabyss:whistles/lumiw.png
+  - id: davidusw
+    font: whistles
+    texture: mineinabyss:whistles/davidusw.png
+  - id: fauxw
+    font: whistles
+    texture: mineinabyss:whistles/fauxw.png
+  - id: frailew
+    font: whistles
+    texture: mineinabyss:whistles/frailew.png
+
+  - id: admin
+    font: default
+    texture: mineinabyss:ui/roles/admin.png
+    height: 7
+    ascent: 7
+  - id: moderator
+    font: default
+    texture: mineinabyss:ui/roles/moderator.png
+    height: 7
+    ascent: 7
+  - id: helper
+    font: default
+    texture: mineinabyss:ui/roles/helper.png
+    height: 7
+    ascent: 7
+  - id: srdeveloper
+    font: default
+    texture: mineinabyss:ui/roles/srdev.png
+    height: 7
+    ascent: 7
+  - id: developer
+    font: default
+    texture: mineinabyss:ui/roles/dev.png
+    height: 7
+    ascent: 7
+  - id: jrdeveloper
+    font: default
+    texture: mineinabyss:ui/roles/jrdev.png
+    height: 7
+    ascent: 7
+  - id: srdesigner
+    font: default
+    texture: mineinabyss:ui/roles/srdesigner.png
+    height: 7
+    ascent: 7
+  - id: designer
+    font: default
+    texture: mineinabyss:ui/roles/designer.png
+    height: 7
+    ascent: 7
+  - id: jrdesigner
+    font: default
+    texture: mineinabyss:ui/roles/jrdesigner.png
+    height: 7
+    ascent: 7
+  - id: srbuilder
+    font: default
+    texture: mineinabyss:ui/roles/srbuilder.png
+    height: 7
+    ascent: 7
+  - id: buildlead
+    font: default
+    texture: mineinabyss:ui/roles/buildlead.png
+    height: 7
+    ascent: 7
+  - id: builder
+    font: default
+    texture: mineinabyss:ui/roles/builder.png
+    height: 7
+    ascent: 7
+  - id: jrbuilder
+    font: default
+    texture: mineinabyss:ui/roles/jrbuilder.png
+    height: 7
+    ascent: 7
+  - id: patreonplus
+    font: default
+    texture: mineinabyss:ui/roles/patreonplus.png
+    height: 7
+    ascent: 7
+  - id: patreon
+    font: default
+    texture: mineinabyss:ui/roles/patreon.png
+    height: 7
+    ascent: 7
+  - id: afk
+    font: default
+    texture: mineinabyss:ui/roles/afk.png
+    height: 7
+    ascent: 7
+  - id: survival
+    font: default
+    texture: mineinabyss:ui/icons/survival.png
+    height: 7
+    ascent: 7
+  - id: build
+    font: default
+    texture: mineinabyss:ui/icons/build.png
+    height: 7
+    ascent: 7
+  - id: adventure
+    font: default
+    texture: mineinabyss:ui/icons/adventure.png
+    height: 7
+    ascent: 7
+  - id: test
+    font: default
+    texture: mineinabyss:ui/icons/test.png
+    height: 7
+    ascent: 7
+  - id: discord
+    font: default
+    texture: mineinabyss:ui/icons/discord.png
+    height: 7
+    ascent: 7
+  - id: patreonlogo
+    font: default
+    texture: mineinabyss:ui/icons/patreonlogo.png
+    height: 7
+    ascent: 7
+  - id: party
+    font: default
+    texture: mineinabyss:ui/icons/party.png
+    height: 7
+    ascent: 7
+  - id: local
+    font: default
+    texture: mineinabyss:ui/icons/local.png
+    height: 7
+    ascent: 7
+  - id: guildchat
+    font: default
+    texture: mineinabyss:ui/icons/guildchat.png
+    height: 7
+    ascent: 7
+  - id: communitymanager
+    font: default
+    texture: mineinabyss:ui/roles/communitymanager.png
+    height: 7
+    ascent: 7
+  - id: dev
+    font: default
+    texture: mineinabyss:ui/icons/dev.png
+    height: 7
+    ascent: 7
+  - id: logo1
+    font: default
+    texture: mineinabyss:ui/icons/logo/logo1.png
+    height: 30
+    ascent: 30
+  - id: logo2
+    font: default
+    texture: mineinabyss:ui/icons/logo/logo2.png
+    height: 30
+    ascent: 30
+  - id: logo3
+    font: default
+    texture: mineinabyss:ui/icons/logo/logo3.png
+    height: 30
+    ascent: 30
+  - id: projectmanager
+    font: default
+    texture: mineinabyss:ui/roles/projectmanager.png
+    height: 7
+    ascent: 7
+
+  - id: vanilla_chest_1
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_1.png
+    height: 256
+    ascent: 13
+  - id: vanilla_chest_2
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_2.png
+    height: 256
+    ascent: 13
+  - id: vanilla_chest_3
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_3.png
+    height: 256
+    ascent: 13
+  - id: vanilla_chest_4
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_4.png
+    height: 256
+    ascent: 13
+  - id: vanilla_chest_5
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_5.png
+    height: 256
+    ascent: 13
+  - id: vanilla_chest_6
+    font: vanilla
+    texture: minecraft:gui/container/overrides/chest_6.png
+    height: 256
+    ascent: 13
+
+  - id: arrow_s
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_s.png
+    height: 24
     ascent: 8
+  - id: arrow_sse
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_sse.png
+    height: 24
+    ascent: 8
+  - id: arrow_se
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_se.png
+    height: 24
+    ascent: 8
+  - id: arrow_ese
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_ese.png
+    height: 24
+    ascent: 8
+  - id: arrow_e
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_e.png
+    height: 24
+    ascent: 8
+  - id: arrow_ene
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_ene.png
+    height: 24
+    ascent: 8
+  - id: arrow_ne
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_ne.png
+    height: 24
+    ascent: 8
+  - id: arrow_nne
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_nne.png
+    height: 24
+    ascent: 8
+  - id: arrow_n
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_n.png
+    height: 24
+    ascent: 8
+  - id: arrow_nnw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_nnw.png
+    height: 24
+    ascent: 8
+  - id: arrow_nw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_nw.png
+    height: 24
+    ascent: 8
+  - id: arrow_wnw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_wnw.png
+    height: 24
+    ascent: 8
+  - id: arrow_w
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_w.png
+    height: 24
+    ascent: 8
+  - id: arrow_wsw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_wsw.png
+    height: 24
+    ascent: 8
+  - id: arrow_sw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_sw.png
+    height: 24
+    ascent: 8
+  - id: arrow_ssw
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_ssw.png
+    height: 24
+    ascent: 8
+  - id: arrow_null
+    font: hud
+    texture: mineinabyss:ui/compass/arrow_null.png
+    height: 24
+    ascent: 8
+
+  - id: orthcoin
+    font: orthbanking
+    texture: mineinabyss:ui/orthbanking/orthcoin.png
+    height: 10
+    ascent: -12
+  - id: mittytoken
+    font: orthbanking
+    texture: mineinabyss:ui/orthbanking/mittytoken.png
+    height: 12
+    ascent: -11
+
+  - id: pvp_menu
+    font: pvp
+    texture: mineinabyss:ui/pvp/pvp_menu.png
+    height: 196
+    ascent: 23
+  - id: pvp_menu_toggle
+    font: pvp
+    texture: mineinabyss:ui/pvp/pvp_menu_toggle.png
+    height: 196
+    ascent: 23
+
+  - id: guild_main_menu_has_guild_and_has_invites
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_has_guild_and_has_invites.png
+    height: 224
+    ascent: 16
+  - id: guild_main_menu_has_guild_and_no_invites
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_has_guild_and_no_invites.png
+    height: 224
+    ascent: 16
+  - id: guild_main_menu_no_guild_and_has_invites
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_no_guild_and_has_invites.png
+    height: 224
+    ascent: 16
+  - id: guild_main_menu_no_guild_and_no_invites
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_no_guild_and_no_invites.png
+    height: 224
+    ascent: 16
+  - id: guild_disband_or_leave_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_disband_or_leave_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_member_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_owner_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_owner_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_invites_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_invites_menu.png
+    height: 224
+    ascent: 16
+  - id: handle_guild_invites
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/handle_guild_invites.png
+    height: 224
+    ascent: 16
+  - id: guild_join_requests_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_join_requests_menu.png
+    height: 224
+    ascent: 16
+  - id: handle_guild_join_requests
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/handle_guild_join_requests.png
+    height: 224
+    ascent: 16
+  - id: guild_member_action_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_action_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_1_has_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_1_has_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_2_has_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_2_has_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_3_has_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_3_has_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_4_has_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_4_has_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_1_no_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_1_no_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_2_no_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_2_no_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_3_no_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_3_no_request.png
+    height: 224
+    ascent: 16
+  - id: guild_member_management_menu_4_no_request
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_4_no_request.png
+    height: 224
+    ascent: 16
+  - id: guild_search_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_search_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_name_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_name_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_list_menu
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_list_menu.png
+    height: 224
+    ascent: 16
+  - id: guild_lookup_members1
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_lookup_members1.png
+    height: 224
+    ascent: 16
+  - id: guild_lookup_members2
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_lookup_members2.png
+    height: 224
+    ascent: 16
+  - id: guild_lookup_members3
+    font: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_lookup_members3.png
+    height: 224
+    ascent: 16
+
+  - id: player_profile_armor_visible
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_armor_visible.png
+    height: 224
+    ascent: 15
+  - id: player_profile_patreon_armor_visible
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_patreon_armor_visible.png
+    height: 224
+    ascent: 15
+  - id: player_profile_armor_hidden
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_armor_hidden.png
+    height: 224
+    ascent: 15
+  - id: player_profile_patreon_armor_hidden
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png
+    height: 224
+    ascent: 15
+  - id: player_profile_rank_admin
+    font: playerprofile
+    texture: mineinabyss:ui/roles/admin.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_moderator
+    font: playerprofile
+    texture: mineinabyss:ui/roles/moderator.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_helper
+    font: playerprofile
+    texture: mineinabyss:ui/roles/helper.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_seniordeveloper
+    font: playerprofile
+    texture: mineinabyss:ui/roles/srdev.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_developer
+    font: playerprofile
+    texture: mineinabyss:ui/roles/dev.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_juniordeveloper
+    font: playerprofile
+    texture: mineinabyss:ui/roles/jrdev.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_seniordesigner
+    font: playerprofile
+    texture: mineinabyss:ui/roles/srdesigner.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_designer
+    font: playerprofile
+    texture: mineinabyss:ui/roles/designer.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_juniordesigner
+    font: playerprofile
+    texture: mineinabyss:ui/roles/jrdesigner.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_seniorbuilder
+    font: playerprofile
+    texture: mineinabyss:ui/roles/srbuilder.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_buildlead
+    font: playerprofile
+    texture: mineinabyss:ui/roles/buildlead.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_builder
+    font: playerprofile
+    texture: mineinabyss:ui/roles/builder.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_juniorbuilder
+    font: playerprofile
+    texture: mineinabyss:ui/roles/jrbuilder.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_patreonplus
+    font: playerprofile
+    texture: mineinabyss:ui/roles/patreonplus.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_patreon
+    font: playerprofile
+    texture: mineinabyss:ui/roles/patreon.png
+    height: 7
+    ascent: 7
+  - id: player_profile_rank_communitymanager
+    font: playerprofile
+    texture: mineinabyss:ui/roles/communitymanager.png
+    height: 7
+    ascent: 7
+  - id: player_profile_background_1
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_background_1.png
+    height: 224
+    ascent: 15
+  - id: player_profile_background_2
+    font: playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
+    height: 224
+    ascent: 15
+
+  - id: cosmetic_dye_menu
+    font: cosmetics
+    texture: cosmetics:ui/menus/cosmetic_dye_menu.png
+    height: 256
+    ascent: 14
+  - id: cosmetic_main_menu
+    font: cosmetics
+    texture: cosmetics:ui/menus/cosmetic_main_menu.png
+    height: 256
+    ascent: 14
+  - id: cosmetic_grid_menu
+    font: cosmetics
+    texture: cosmetics:ui/menus/cosmetic_grid_menu.png
+    height: 256
+    ascent: 14
+  - id: wardrobe_transition
+    font: cosmetics
+    texture: cosmetics:ui/wardrobe_transition.png
+    height: 256
+    ascent: 50
+
+  - id: blocky_default_menu
+    font: blocky
+    texture: mineinabyss:ui/blocky/default_menu.png
+    height: 256
+    ascent: 14
+  - id: blocky_grid_menu
+    font: blocky
+    texture: mineinabyss:ui/blocky/grid_menu.png
+    height: 256
+    ascent: 14
+
+  - id: orth_1
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_2
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_3
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_4
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_5
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_6
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_7
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_8
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_9
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_10
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_11
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_12
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_13
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_14
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_15
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_16
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_17
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_18
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_19
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_20
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_21
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_22
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_23
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_24
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_25
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_26
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_27
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_28
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_29
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_30
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_31
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_32
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_33
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_34
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_35
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_36
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_37
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_38
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_39
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_40
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_41
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_42
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_43
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_44
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_45
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_46
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_47
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_48
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_49
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_50
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_51
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_52
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_53
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_54
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_55
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_56
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_57
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_58
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_59
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_60
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_61
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_62
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_63
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_64
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_65
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_66
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_67
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_68
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_69
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_70
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_71
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_72
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_73
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_74
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_75
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_76
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_77
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_78
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_79
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_80
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_81
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_82
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_83
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_84
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_85
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_86
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_87
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_88
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_89
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_90
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_91
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_92
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_93
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_94
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_95
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_96
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_97
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_98
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_99
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
+  - id: orth_100
+    font: orth_map
+    texture: mineinabyss:ui/orth_map.png"
 
 # [id]: The id of your gif, used for replacing :id:
 # [frameCount]: The amount of frames your GIF should have, 0 or below uses the gifs actual framecount
@@ -38,9 +1156,159 @@ emotes:
 # [ascent]: The height of your gif
 # [height]: The ascent of your gif
 gifs:
+  - id: amepat
+    frameCount: 0
+    framePath: "emotes:gifs/amepat"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: amevibe
+    frameCount: 0
+    framePath: "emotes:gifs/amevibe"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: amogusdance
+    frameCount: 0
+    framePath: "emotes:gifs/amogusdance"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: amogusdumpy
+    frameCount: 0
+    framePath: "emotes:gifs/amogusdumpy"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: amogusdumpywide
+    frameCount: 0
+    framePath: "emotes:gifs/amogusdumpywide"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: bonedance
+    frameCount: 0
+    framePath: "emotes:gifs/bonedance"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: catjam
+    frameCount: 0
+    framePath: "emotes:gifs/catjam"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: doggopunch
+    frameCount: 0
+    framePath: "emotes:gifs/doggopunch"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: elmoburn
+    frameCount: 0
+    framePath: "emotes:gifs/elmoburn"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: gurafalling
+    frameCount: 0
+    framePath: "emotes:gifs/gurafalling"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: gurajam
+    frameCount: 0
+    framePath: "emotes:gifs/gurajam"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: gurawave
+    frameCount: 0
+    framePath: "emotes:gifs/gurawave"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: koronebonk
+    frameCount: 0
+    framePath: "emotes:gifs/koronebonk"
+    ascent: 9
+    height: 11
+    type: SHADER
   - id: necoflap
     frameCount: 0
-    framePath: "emotes:gifs/necoflap/"
+    framePath: "emotes:gifs/necoflap"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: nynagree
+    frameCount: 0
+    framePath: "emotes:gifs/nynagree"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: oribongo
+    frameCount: 0
+    framePath: "emotes:gifs/oribongo"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: oribonko
+    frameCount: 0
+    framePath: "emotes:gifs/oribonko"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: oripat
+    frameCount: 0
+    framePath: "emotes:gifs/oripat"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: pepedance
+    frameCount: 0
+    framePath: "emotes:gifs/pepedance"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: pruskhapat
+    frameCount: 0
+    framePath: "emotes:gifs/pruskhapat"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: ratshake
+    frameCount: 0
+    framePath: "emotes:gifs/ratshake"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: regangry
+    frameCount: 0
+    framePath: "emotes:gifs/regangry"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: rikopew
+    frameCount: 0
+    framePath: "emotes:gifs/rikopew"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: widesteve
+    frameCount: 0
+    framePath: "emotes:gifs/widesteve"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: yepcat
+    frameCount: 0
+    framePath: "emotes:gifs/yepcat"
+    ascent: 9
+    height: 11
+    type: SHADER
+  - id: tsumiki
+    frameCount: 0
+    framePath: "emotes:gifs/tsumiki"
     ascent: 9
     height: 11
     type: SHADER
