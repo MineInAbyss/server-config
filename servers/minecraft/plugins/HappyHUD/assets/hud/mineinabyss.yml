@@ -73,9 +73,8 @@ mineinabyss-edge_of_the_abyss:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
-      align: left
       text: "%mineinabyss_layer%"
-      font: "mineinabyss-drop-shadow"
+      #font: "mineinabyss-drop-shadow" # This breaks it
     icon:
       texture:
         path: assets/mineinabyss/redw.png
@@ -153,9 +152,6 @@ mineinabyss-depth:
     text:
       text: "%mineinabyss_depth%"
       font: "default-drop-shadow"
-      offset:
-        x: 0
-        y: 0
     icon:
       texture:
         path: assets/mineinabyss/depth_meter.png
@@ -166,36 +162,36 @@ mineinabyss-depth:
 mineinabyss-starcompass:
   conditions:
     #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
-    - placeholder{ph=%mineinabyss_hud_starcompass%;v=false} false hide
-    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=null} true hide
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=N} true texture assets/mineinabyss/arrow_n.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=NNE} true texture assets/mineinabyss/arrow_nne.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=NE} true texture assets/mineinabyss/arrow_ne.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=ENE} true texture assets/mineinabyss/arrow_ene.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=E} true texture assets/mineinabyss/arrow_e.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=ESE} true texture assets/mineinabyss/arrow_ese.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=SE} true texture assets/mineinabyss/arrow_se.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=SSE} true texture assets/mineinabyss/arrow_sse.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=S} true texture assets/mineinabyss/arrow_s.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=SSW} true texture assets/mineinabyss/arrow_ssw.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=SW} true texture assets/mineinabyss/arrow_sw.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=WSW} true texture assets/mineinabyss/arrow_wsw.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=W} true texture assets/mineinabyss/arrow_w.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=WNW} true texture assets/mineinabyss/arrow_wnw.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=NW} true texture assets/mineinabyss/arrow_nw.png
-    - placeholder{ph=%mineinabyss_starcompass_angle%;v=NNW} true texture assets/mineinabyss/arrow_nnw.png
+    - placeholder{ph=%mineinabyss_hud_starcompass%} true hide
+    - placeholder{ph=%mineinabyss_starcompass_angle%;v=null} false hide
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=N} true texture assets/mineinabyss/arrow_n.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=NNE} true texture assets/mineinabyss/arrow_nne.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=NE} true texture assets/mineinabyss/arrow_ne.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=ENE} true texture assets/mineinabyss/arrow_ene.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=E} true texture assets/mineinabyss/arrow_e.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=ESE} true texture assets/mineinabyss/arrow_ese.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=SE} true texture assets/mineinabyss/arrow_se.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=SSE} true texture assets/mineinabyss/arrow_sse.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=S} true texture assets/mineinabyss/arrow_s.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=SSW} true texture assets/mineinabyss/arrow_ssw.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=SW} true texture assets/mineinabyss/arrow_sw.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=WSW} true texture assets/mineinabyss/arrow_wsw.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=W} true texture assets/mineinabyss/arrow_w.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=WNW} true texture assets/mineinabyss/arrow_wnw.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=NW} true texture assets/mineinabyss/arrow_nw.png
+    #- placeholder{ph=%mineinabyss_starcompass_angle%;v=NNW} true texture assets/mineinabyss/arrow_nnw.png
   layers:
-    compass:
-      texture:
-        path: assets/mineinabyss/arrow_null.png
-      color: white
-      scale: 1.5
-      offset:
-        x: 0
-        y: 0
-    #text:
-    #  text: "%mineinabyss_starcompass%"
-    #  font: "starcompass"
+    #compass:
+    #  texture:
+    #    path: assets/mineinabyss/arrow_null.png
+    #    color: white
+    #  scale: 1.5
     #  offset:
     #    x: 0
-    #    y: 4
+    #    y: 0
+    text:
+      text: "%mineinabyss_starcompass_unicode%"
+      font: "starcompass"
+      offset:
+        x: 0
+        y: 4

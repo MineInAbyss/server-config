@@ -1,6 +1,6 @@
 vanilla-health:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_vanilla%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=poison,wither} false hide
   layers:
@@ -29,7 +29,7 @@ vanilla-health:
         y: -2
 vanilla-food:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_vanilla%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=hunger} false hide
   layers:
@@ -59,7 +59,7 @@ vanilla-food:
         y: -2
 vanilla-exp:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_vanilla%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     fill:
@@ -93,7 +93,7 @@ vanilla-exp:
         y: -13
 vanilla-armor:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_vanilla%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     fill:
@@ -122,7 +122,7 @@ vanilla-armor:
         y: -17
 vanilla-air:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_vanilla%;v=false} false hide
+    - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     fill:
