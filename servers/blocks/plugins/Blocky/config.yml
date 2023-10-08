@@ -32,6 +32,18 @@ menus:
   defaultMenu:
     title: ":space_-11::blocky_default_menu:"
     height: 3
+    blockButton:
+      type: PAPER
+      customModelData: 1
+      displayName: "<gradient:gold:yellow>Block Menu"
+    wireButton:
+      type: PAPER
+      customModelData: 1
+      displayName: "<gradient:gold:yellow>Wire Menu"
+    furnitureButton:
+      type: PAPER
+      customModelData: 1
+      displayName: "<gradient:gold:yellow>Furniture Menu"
   blockMenu:
     title: ":space_-11::blocky_grid_menu:"
     height: 6
