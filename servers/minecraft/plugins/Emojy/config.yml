@@ -15,10 +15,25 @@ defaultHeight: 8
 defaultAscent: 8
 requirePermission: true
 generateResourcePack: true
-debug: true
-listType: BOOK2
+debug: false
 supportedLanguages:
   - "en_US"
+
+emojyList:
+  type: CHAT
+  ignoredFonts:
+    - "guilds"
+    - "blocky"
+    - "hud"
+    - "pvp"
+    - "uniform"
+    - "orthbanking"
+    - "cosmetics"
+    - "orth_map"
+    - "playerprofile"
+    - "default"
+  ignoredEmoteIds: []
+  ignoredGifIds: []
 
 # [id]: The id of your emote, used for replacing :id:
 # [texture]: The path to your textures image (defaultNamespace:defaultFolder/id.png)
@@ -436,37 +451,6 @@ emotes:
     height: 7
     ascent: 7
 
-  - id: vanilla_chest_1
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_1.png
-    height: 256
-    ascent: 13
-  - id: vanilla_chest_2
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_2.png
-    height: 256
-    ascent: 13
-  - id: vanilla_chest_3
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_3.png
-    height: 256
-    ascent: 13
-  - id: vanilla_chest_4
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_4.png
-    height: 256
-    ascent: 13
-  - id: vanilla_chest_5
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_5.png
-    height: 256
-    ascent: 13
-  - id: vanilla_chest_6
-    font: vanilla
-    texture: minecraft:gui/container/overrides/chest_6.png
-    height: 256
-    ascent: 13
-
   - id: arrow_s
     font: hud
     texture: mineinabyss:ui/compass/arrow_s.png
@@ -851,304 +835,304 @@ emotes:
 
   - id: orth_1
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_2
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_3
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_4
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_5
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_6
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_7
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_8
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_9
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_10
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_11
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_12
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_13
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_14
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_15
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_16
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_17
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_18
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_19
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_20
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_21
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_22
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_23
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_24
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_25
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_26
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_27
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_28
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_29
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_30
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_31
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_32
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_33
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_34
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_35
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_36
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_37
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_38
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_39
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_40
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_41
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_42
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_43
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_44
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_45
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_46
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_47
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_48
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_49
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_50
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_51
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_52
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_53
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_54
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_55
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_56
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_57
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_58
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_59
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_60
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_61
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_62
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_63
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_64
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_65
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_66
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_67
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_68
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_69
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_70
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_71
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_72
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_73
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_74
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_75
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_76
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_77
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_78
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_79
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_80
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_81
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_82
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_83
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_84
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_85
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_86
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_87
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_88
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_89
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_90
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_91
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_92
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_93
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_94
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_95
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_96
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_97
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_98
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_99
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
   - id: orth_100
     font: orth_map
-    texture: mineinabyss:ui/orth_map.png"
+    texture: mineinabyss:ui/orth_map.png
 
 # [id]: The id of your gif, used for replacing :id:
 # [frameCount]: The amount of frames your GIF should have, 0 or below uses the gifs actual framecount
