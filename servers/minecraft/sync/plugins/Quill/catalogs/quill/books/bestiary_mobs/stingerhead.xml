@@ -1,0 +1,21 @@
+<book id="stingerhead" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/stingerhead_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_stingerhead_flesh"><div styles="bestiary_image">:stingerhead_flesh:</div></component>
+    <component id="hover_stingerhead_eye"><div styles="bestiary_image">:stingerhead_eye:</div></component>
+    <component id="hover_stingerhead_scale"><div styles="bestiary_image">:stingerhead_scale:</div></component>
+    <component id="hover_stingerhead_layerfive"><div styles="bestiary_image">:layerfive:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:stingerhead:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>

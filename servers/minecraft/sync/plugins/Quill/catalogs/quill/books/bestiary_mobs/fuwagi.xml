@@ -1,0 +1,23 @@
+<book id="fuwagi" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/fuwagi_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_fuwagi_meat"><div styles="bestiary_image">:fuwagi_meat::fuwagi_meat_cooked:</div></component>
+    <component id="hover_fuwagi_hide"><div styles="bestiary_image">:fuwagi_hide:</div></component>
+    <component id="hover_fuwagi_foot"><div styles="bestiary_image">:fuwagi_foot:</div></component>
+    <component id="hover_fuwagi_orth"><div styles="bestiary_image">:orth:</div></component>
+    <component id="hover_fuwagi_layerone"><div styles="bestiary_image">:layerone:</div></component>
+    <component id="hover_fuwagi_layertwo"><div styles="bestiary_image">:layertwo:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:fuwagi:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>

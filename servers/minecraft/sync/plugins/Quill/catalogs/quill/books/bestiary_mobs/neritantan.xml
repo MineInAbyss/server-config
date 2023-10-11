@@ -1,0 +1,21 @@
+<book id="neritantan" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/neritantan_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_baracocha_fruit"><div styles="bestiary_image">:baracocha_fruit:</div></component>
+    <component id="hover_neritantan_meat"><div styles="bestiary_image">:neritantan_meat::neritantan_meat_cooked:</div></component>
+    <component id="hover_neritantan_seed"><div styles="bestiary_image">:neritantan_seed1::neritantan_seed2::neritantan_seed3::neritantan_berry:</div></component>
+    <component id="hover_neritantan_layerthree"><div styles="bestiary_image">:layerthree:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:neritantan:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>

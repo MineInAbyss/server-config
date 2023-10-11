@@ -1,0 +1,20 @@
+<book id="okibo" title="§6§lMine in Abyss Bestiary" author="§2Guild HQ" >
+  <content header="header" styles="body"><insert id="bestiary_mobs/okibo_content.xml"/></content>
+  <components>
+    <component id="hover_return_creaturelist">Click to return to the <div styles="footer">Bestiary Creature List</div>. :subarashii:</component>
+    <component id="hover_okibo_fur"><div styles="bestiary_image">:okibo_fur:</div></component>
+    <component id="hover_okibo_meat"><div styles="bestiary_image">:okibo_meat::okibo_meat_cooked:</div></component>
+    <component id="hover_okibo_orth"><div styles="bestiary_image">:orth:</div></component>
+    <component id="hover_mob"><div styles="bestiary_image">:okibo:</div></component>
+  </components>
+  <styles>
+    <style id="body">
+      <formatting>
+        <format type="color">0xFF3030</format>
+      </formatting>
+    </style>
+  </styles>
+  <includes>
+    <include type="stylesheet">bestiary_stylesheet</include>
+  </includes>
+</book>
