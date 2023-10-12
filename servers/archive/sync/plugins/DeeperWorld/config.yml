@@ -1,0 +1,249 @@
+sections:
+  - name: city
+    refBottom: -494,15,121
+    refTop: 0,0,0
+    region:
+      end: 1535,0,1535
+      start: -1536,255,-1536
+    world: world
+  - name: l1s1
+    refBottom: -410,17,106
+    refTop: -494,235,121
+    region:
+      end: 767,0,767
+      start: -768,255,-768
+    world: LayerOneLower
+  - name: l1s2
+    refBottom: 1102,13,-93
+    refTop: 1094,237,90
+    region:
+      end: 2143,0,623
+      start: 864,255,-656
+    world: LayerOneLower
+  - name: l1s3
+    refBottom: 2433,9,-77
+    refTop: 2350,233,-93
+    region:
+      end: 3263,0,495
+      start: 2240,255,-528
+    world: LayerOneLower
+  - name: l1s4
+    refBottom: 3602,11,70
+    refTop: 3537,229,-77
+    region:
+      end: 4367,0,495
+      start: 3344,255,-528
+    world: LayerOneLower
+  - name: l1s5
+    refBottom: 4799,17,-204
+    refTop: 4594,231,54
+    region:
+      end: 5231,0,351
+      start: 4464,255,-416
+    world: LayerOneLower
+  - name: l1s6
+    refBottom: 5663,9,-157
+    refTop: 5663,237,-204
+    region:
+      end: 6095,0,351
+      start: 5328,255,-416
+    world: LayerOneLower
+  - name: l2s1
+    refBottom: -11,17,-272
+    refTop: -49,229,-125
+    region:
+      end: 511,0,511
+      start: -512,255,-512
+    world: LayerTwo
+  - name: l2s2
+    refBottom: 1281,18,-333
+    refTop: 1109,237,-272
+    region:
+      end: 1631,0,511
+      start: 608,255,-512
+    world: LayerTwo
+  - name: l2s3
+    refBottom: 2304,18,-258
+    refTop: 2401,238,-333
+    region:
+      end: 2751,0,511
+      start: 1728,255,-512
+    world: LayerTwo
+  - name: l2s4
+    refBottom: 3228,25,-90
+    refTop: 3296,238,-258
+    region:
+      end: 3615,0,383
+      start: 2848,255,-384
+    world: LayerTwo
+  - name: l2s5
+    refBottom: 5120,18,-196
+    refTop: 5116,245,-138
+    region:
+      end: 6527,0,1359
+      start: 3712,255,-1456
+    world: LayerTwo
+  - name: l3s1
+    refBottom: 0,25,-149
+    refTop: 0,238,-149
+    region:
+      end: 383,0,383
+      start: -384,255,-384
+    world: LayerThree
+  - name: l3s2
+    refBottom: 832,25,-149
+    refTop: 832,232,-149
+    region:
+      end: 1215,0,383
+      start: 448,255,-384
+    world: LayerThree
+  - name: l3s3
+    refBottom: 1664,25,-149
+    refTop: 1664,232,-149
+    region:
+      end: 2047,0,383
+      start: 1280,255,-384
+    world: LayerThree
+  - name: l3s4
+    refBottom: 2505,25,-150
+    refTop: 2496,232,-149
+    region:
+      end: 2879,0,383
+      start: 2112,255,-384
+    world: LayerThree
+  - name: l3s5
+    refBottom: 3223,25,92
+    refTop: 3337,232,-150
+    region:
+      end: 3711,0,383
+      start: 2944,255,-384
+    world: LayerThree
+  - name: l3s6
+    refBottom: 4160,25,-149
+    refTop: 4055,232,92
+    region:
+      end: 4543,0,383
+      start: 3776,255,-384
+    world: LayerThree
+  - name: l3s7
+    refBottom: 4992,25,-149
+    refTop: 4992,232,-149
+    region:
+      end: 5375,0,383
+      start: 4608,255,-384
+    world: LayerThree
+  - name: l4s1
+    refBottom: -176,13,-513
+    refTop: 0,232,-148
+    region:
+      end: 895,0,895
+      start: -896,255,-896
+    world: LayerFour
+  - name: l4s2
+    refBottom: 1550,19,-409
+    refTop: 1536,233,-497
+    region:
+      end: 2478,0,782
+      start: 945,255,-751
+    world: LayerFour
+  - name: l4s3
+    refBottom: 3307,9,-360
+    refTop: 3134,239,-409
+    region:
+      end: 4062,0,782
+      start: 2529,255,-751
+    world: LayerFour
+  - name: l4s4
+    refBottom: 5082,33,-253
+    refTop: 4891,229,-360
+    region:
+      end: 5647,0,783
+      start: 4112,255,-752
+    world: LayerFour
+  - name: l4s5
+    refBottom: 6866,11,-391
+    refTop: 7114,253,-253
+    region:
+      end: 7551,0,655
+      start: 6272,255,-624
+    world: LayerFour
+  - name: l4s6
+    refBottom: 8846,8,-570
+    refTop: 9090,231,-391
+    region:
+      end: 10031,0,911
+      start: 8240,255,-880
+    world: LayerFour
+  - name: l4s7
+    refBottom: 12043,17,-884
+    refTop: 11742,228,-586
+    region:
+      end: 13055,0,1023
+      start: 11008,255,-1024
+    world: LayerFour
+  - name: l4s8
+    refBottom: 15509,25,-1264
+    refTop: 15579,237,-868
+    region:
+      end: 17103,0,-1520
+      start: 14032,255,1551
+    world: LayerFour
+  - name: l5s1
+    refBottom: 925,25,1363
+    refTop: -58,245,-1280
+    region:
+      end: -2688,0,-2688
+      start: 2815,255,2815
+    world: LayerFive
+  - name: l5s2
+    refBottom: 5195,25,-1702
+    refTop: 6525,245,1299
+    region:
+      end: 8159,0,-2496
+      start: 2912,255,2623
+    world: LayerFive
+  - name: l5s3
+    refBottom: 10592,25,1364
+    refTop: 10011,245,-1750
+    region:
+      end: 13231,0,2703
+      start: 8240,255,-2544
+    world: LayerFive
+  - name: l5s4
+    refBottom: 15688,25,784
+    refTop: 15552,245,1348
+    region:
+      end: 18319,0,-2304
+      start: 13328,255,2431
+    world: LayerFive
+  - name: l5s5
+    refBottom: 0,0,0
+    refTop: 20504,245,960
+    region:
+      end: 21983,0,1839
+      start: 18400,255,-1744
+    world: LayerFive
+damageOutsideSections: 3.5
+
+time:
+  mainWorld: world
+  syncedWorlds:
+    LayerOneLower: 0
+    LayerTwo: 0
+    LayerThree: 0
+    LayerFour: 0
+
+fall:
+  # The maximum safe falling distance, after which players will start taking damage. Set to -1 to disable falling damage
+  maxSafeDist: -1
+  # The multiplier for damage taken while falling. Set to 0 to deal consistent damage.
+  fallDistanceDamageScaler: 0.02
+  # The minimum damage to deal.
+  startingDamage: 1
+  # How often to damage players in ticks
+  hitDelay: 10t
+  # Whether to spawn cloud particles when the player is being damaged.
+  spawnParticles: true
+
+# Sends an additional remount packet after this delay to prevent client-side mount bugs when moving between sections.
+remountPacketDelay: 70t

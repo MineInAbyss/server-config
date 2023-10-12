@@ -17,4 +17,6 @@ servers:
     - items
     - mobs
     - dev
+  archive:
+    - archive
   empty: []
