@@ -1,0 +1,170 @@
+# Used for displaying playerheads in chat.
+# This is the default font that comes with the plugin
+# %chatty_playerhead% will be replaced with the playerhead of the player who sent the message
+# Please note: This is not the most performance friendly feature so use the placeholder sparingly.
+playerHeadFont: "minecraft:chatty_heads"
+
+# Keep in mind this needs to also be enabled in your [server.properties] file
+# It will warn all your players when they first join
+# that the server can read all their messages before they are sent.
+# Chatty does not do anything with it outside the [ChatPreview.kt] file.
+enableChatPreviews: true
+
+privateMessages:
+  enabled: true
+  proxy: true                       # Not currently supported
+  messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
+  messageSendFormat: "<gold>You -> <chatty_nickname><gold>: "
+  messageReceiveFormat: "<gold><chatty_nickname> -> You<gold>: "
+  messageSendSound: ""              # Empty for no sound
+  messageReceiveSound: ""           # Empty for no sound
+
+chat:
+  enableChatSigning: false           # Enable chat signing and reporting
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  commandSpyFormat: "<gold><chatty_nickname><yellow>: "
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+book:
+  useDisplayNameForAuthor: false
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+sign:
+  bypassFormatPermission: "chatty.chat.bypassformat"
+  allowedTags: # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+nicknames:
+  permission: "chatty.nickname"
+  nickOtherPermission: "chatty.nickname.other"
+  bypassFormatPermission: "chatty.nickname.bypassformat" #Permission to bypass all format checks
+  maxLength: 32
+  countTagsInLength: false    # Should [maxLength] take tags into account?
+  nickNameOtherPrefix: '@'    # Prefix to specify you wanna nickname another player: [/chatty nickname @player nickname]
+  allowedTags:                # Available formats are:
+    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
+    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
+    - UNDERLINE
+    - ITALIC
+    - OBFUSCATED
+    - TEXTCOLOR
+    - HEXCOLOR
+    - RAINBOW
+    - GRADIENT
+
+join:
+  enabled: false
+  firstJoin:
+    enabled: false
+
+leave:
+  enabled: false
+
+proxy:
+  enableProxySwitchMessages: false
+  discordSrvChannelID: "Global"
+  sendProxyMessagesToDiscord: true
+
+ping:
+  enabledChannels:          # channelIds to enable pings for
+    - "all"              # "all" or "*" for all channels
+  pingVolume: 1.0
+  pingPitch: 1.0
+  pingPrefix: '@'
+  clickToReply: true
+  pingReceiveFormat: "<gold><b>"  # Default format the ping-message is marked with for pinged
+  pingSendFormat: "<i>"     # Default format the ping-message is marked with for sender
+  defaultPingSound: "block.amethyst_block.place"
+  alternativePingSounds:    # "all" to let people choose any sound
+    - "all"
+
+
+channels:
+  global:
+    channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
+    isDefaultChannel: true
+    proxy: true
+    discordsrv: true
+    format: ":archive:<shift:-12>
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
+    </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
+    messageColor: white
+    channelAliases:
+      - "g"
+
+  playerhead:
+    channelType: GLOBAL
+    permission: "chatty.channel.playerhead"
+    isDefaultChannel: false
+    proxy: true
+    discordsrv: true
+    format: "<chatty_player_head><shift:-4>
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
+    messageColor: white
+    channelAliases:
+      - "head"
+
+  local:
+    channelType: RADIUS
+    isDefaultChannel: false
+    discordsrv: false
+    format: ":archive:<shift:-4>:local:
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%><shift:-4><#FFCA28><chatty_nickname>: "
+    messageColor: "#FFECB3"
+    channelRadius: 0
+    channelAliases:
+      - "l"
+
+  admin:
+    channelType: PERMISSION
+    permission: "chatty.channel.admin"
+    requireEffectivePermission: false
+    isDefaultChannel: false
+    isStaffChannel: true
+    discordsrv: false
+    proxy: true
+    format: ":archive:<shift:-4>:admin:
+    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
+    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
+    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+    <click:run_command:/mia profile %player_name%><#e51e62><chatty_nickname>: "
+    messageColor: red
+    channelAliases:
+      - "a"

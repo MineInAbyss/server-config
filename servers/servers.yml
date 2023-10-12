@@ -18,5 +18,6 @@ servers:
     - mobs
     - dev
   archive:
+    - minecraft
     - archive
   empty: []
