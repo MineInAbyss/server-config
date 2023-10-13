@@ -1,0 +1,37 @@
+ashimite:
+  Type: STRIDER
+  Display: 'Ashimite'
+  Health: 16
+  AIGoalSelectors:
+    - clear
+    - fleeplayers{distance=5;speed=2;safespeed=2;conditions=[ - inlineofsight true ]}
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    PreventOtherDrops: true
+    KnockbackResistance: 0.07
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    #MovementSpeed: 0.25
+  Drops:
+    - exp 18-35
+    - geary mineinabyss:ashimite_meat_raw 1 0.25
+    - geary mineinabyss:ashimite_hoof 1-2 1.0
+    - geary mineinabyss:ashimite_antlers 1-2 0.4
+  Model:
+    Id: ashimite
+    ViewRadius: 64
+    #Drive: true
+    DamageTint: true
+  Skills:
+    - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
+    - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+    - setspeed{type=walking;speed=2.0} @self ~onSpawn
+    #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+    #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
+    #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400

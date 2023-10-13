@@ -1,0 +1,27 @@
+orbpiercer_speed:
+  Skills:
+    - setspeed{type=walking;speed=0} @self
+
+orbpiercer_spike_volley:
+  Cooldown: 60
+  Conditions:
+    - incombat true
+    - offgcd true
+    - targetwithin{d=10} false
+  Skills:
+    #- skill{s=voras_idle} @self
+    - gcd{ticks=50}
+    - state{s=spit} @self
+    - setspeed{type=walking;speed=0} @self
+    - delay 20
+    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=0.0;lockpitch=false}
+    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=-1.0;lockpitch=false}
+    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=1.0;lockpitch=false}
+    - delay 20
+    - skill{s=orbpiercer_speed} @self
+
+orbpiercer_spike_impact:
+  Skills:
+    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
+    - potion{type=POISON;duration=60;level=1}
+    - potion{type=BLINDNESS;duration=60;level=1}

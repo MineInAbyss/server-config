@@ -1,0 +1,40 @@
+orbpiercer:
+  Type: IRON_GOLEM
+  Display: 'OrbPiercer'
+  Health: 100
+  AIGoalSelectors:
+    - clear
+    - float
+    - meleeattack
+    - randomstroll
+    - randomlookaround
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players
+  Options:
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Damage: 25
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    #MovementSpeed: 0.5
+  Drops:
+    - exp 180-210
+    - geary mineinabyss:orb_piercer_spike 3-6
+    - geary mineinabyss:orb_piercer_face_fragments 1 0.4
+  Model:
+    Id: orbpiercer
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+    - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
+    - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+    - skill{s=orbpiercer_speed} @self ~onSpawn
+    #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+    - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
+    - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+    - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
+    - skill{s=orbpiercer_spike_volley} @target ~onTimer:45
