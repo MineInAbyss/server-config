@@ -1,0 +1,12 @@
+- !<looty:disable_item_interactions>
+- !<geary:set.item>
+  item:
+    displayName: Grappling Hook
+    type: GOLDEN_HOE
+    customModelData: 1
+- !<mineinabyss:grappling_hook>
+  range: 200
+  hookSpeed: 2.0
+  pullSpeed: 2.0
+  pullStrength: 4.0
+  type: MECHANICAL
