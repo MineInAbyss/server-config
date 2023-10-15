@@ -2,21 +2,28 @@
 # ┃       Velocitab Config       ┃
 # ┃    Developed by William278   ┃
 # ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-# ┗╸ Placeholders: %players_online%, %max_players_online%, %local_players_online%, %current_date%, %current_time%, %username%, %server%, %ping%, %prefix%, %suffix%, %role%
+# ┣╸ Information: https://william278.net/project/velocitab
+# ┗╸ Documentation: https://william278.net/docs/velocitab
+# Check for updates on startup
+check_for_updates: true
 # Header(s) to display above the TAB list for each server group.
 # List multiple headers and set update_rate to the number of ticks between frames for basic animations
 headers:
   default:
-    - '\n\n\n'
+    - ' \n\n\n'
 # Footer(s) to display below the TAB list for each server group, same as headers.
 footers:
   default:
     - 'Ping: %ping%ms %server_tps_5_colored%'
 formats:
   default: '%server%%prefix%%username%'
+# Nametag(s) to display above players' heads for each server group. Set to empty to disable.
+# Nametag formats must contain a %username%. Docs: https://william278.net/docs/velocitab/nametags
+nametags:
+  default: '&f%prefix%%username%&f%suffix%'
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
 formatting_type: MINEDOWN
-# The servers in each group of servers
+# The servers in each group of servers. The order of groups is important when sorting by SERVER_GROUP.
 server_groups:
   default:
     - survival
@@ -37,18 +44,24 @@ server_display_names:
   survival: 
   build: 
   dev: 
-  archive: 
   test: 
+# Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
+# How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)
+papi_cache_time: 0
 # If you are using MINIMESSAGE formatting, enable this to support MiniPlaceholders in formatting.
 enable_miniplaceholders_hook: true
-# Whether to sort players in the TAB list. Requires Protocolize to be installed.
+# Whether to send scoreboard teams packets. Required for player list sorting and nametag formatting.
+# Turn this off if you're using scoreboard teams on backend servers.
+send_scoreboard_packets: true
+# Whether to sort players in the TAB list.
 sort_players: true
-# Ordered list of elements by which players should be sorted. (ROLE_WEIGHT, ROLE_NAME and SERVER are supported)
-sort_players_by:
-  - SERVER_NAME
-  - ROLE_WEIGHT
-  - ROLE_NAME
+# Ordered list of elements by which players should be sorted. (Correct values are both internal placeholders and, if enabled, PAPI placeholders)
+sorting_placeholders:
+  - '%role_weight%'
+  - '%username%'
+  - '%server%'
 # How often in milliseconds to periodically update the TAB list, including header and footer, for all users.
 # If set to 0, TAB will be updated on player join/leave instead. (1s = 1000ms)
+# The minimal update rate is 200ms, anything lower will automatically be set to 200ms.
 update_rate: 5000
