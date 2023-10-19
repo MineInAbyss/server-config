@@ -1,127 +1,182 @@
-- location: #Mining Info
-    world: world
+- location:
+    world: "world"
     x: -576.0
     y: 98.0
     z: -76.0
-  text: |
-    <lang:mineinabyss.tutorial.ores.1></lang>
-    <lang:mineinabyss.tutorial.ores.2></lang>
-    <lang:mineinabyss.tutorial.ores.3></lang>
-
-- location: # Tutorial beginning
-    world: world
+  text: "<lang:mineinabyss.tutorial.ores.1></lang>\n<lang:mineinabyss.tutorial.ores.2></lang>\n\
+    <lang:mineinabyss.tutorial.ores.3></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -559.0
     y: 130.0
     z: -39.0
-  text: <lang:mineinabyss:tutorial.start></lang>
-
-- location: # Bonfire info
-    world: world
+  text: "<lang:mineinabyss:tutorial.start></lang>"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -575.0
     y: 99.0
     z: -120.0
-  text: |
-    <lang:mineinabyss.tutorial.bonfire.1></lang>
-    <lang:mineinabyss.tutorial.bonfire.2></lang>
-    <lang:mineinabyss.tutorial.bonfire.3></lang>
-    <lang:mineinabyss.tutorial.bonfire.4></lang>
-
-- location: # Crops info
-    world: world
+  text: "<lang:mineinabyss.tutorial.bonfire.1></lang>\n<lang:mineinabyss.tutorial.bonfire.2></lang>\n\
+    <lang:mineinabyss.tutorial.bonfire.3></lang>\n<lang:mineinabyss.tutorial.bonfire.4></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -572.0
     y: 98.0
     z: -91.0
-  text: |
-    <lang:mineinabyss.tutorial.crops.1></lang>
-    <lang:mineinabyss.tutorial.crops.2></lang>
-    <lang:mineinabyss.tutorial.crops.3></lang>
-
-- location: # Custom recipes info
-    world: world
+  text: "<lang:mineinabyss.tutorial.crops.1></lang>\n<lang:mineinabyss.tutorial.crops.2></lang>\n\
+    <lang:mineinabyss.tutorial.crops.3></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -567.0
     y: 97.0
     z: -72.0
-  text: |
-    <lang:mineinabyss.tutorial.recipes.1></lang>
-    <lang:mineinabyss.tutorial.recipes.2></lang>
-    <lang:mineinabyss.tutorial.recipes.3></lang>
-
-- location: # Emotes info
-    world: world
+  text: "<lang:mineinabyss.tutorial.recipes.1></lang>\n<lang:mineinabyss.tutorial.recipes.2></lang>\n\
+    <lang:mineinabyss.tutorial.recipes.3></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -560.0
     y: 99.0
     z: -107.0
-  text: |
-    <lang:mineinabyss.tutorial.emotes.1></lang>
-    <lang:mineinabyss.tutorial.emotes.2></lang>
-    <lang:mineinabyss.tutorial.emotes.3></lang>
-    <lang:mineinabyss.tutorial.emotes.4></lang>
-
-- location: # End of tutorial
-    world: world
+  text: "<lang:mineinabyss.tutorial.emotes.1></lang>\n<lang:mineinabyss.tutorial.emotes.2></lang>\n\
+    <lang:mineinabyss.tutorial.emotes.3></lang>\n<lang:mineinabyss.tutorial.emotes.4></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -571.0
     y: 99.0
     z: -146.0
-  text: |
-    <lang:mineinabyss.tutorial.end.1></lang>
-    <lang:mineinabyss.tutorial.end.2></lang>
-
-- location: # Water info
-    world: world
+  text: "<lang:mineinabyss.tutorial.end.1></lang>\n<lang:mineinabyss.tutorial.end.2></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -569.0
     y: 96.0
     z: -63.0
-  text: |
-    <lang:mineinabyss.tutorial.water.1></lang>
-    <lang:mineinabyss.tutorial.water.2></lang>
-    <lang:mineinabyss.tutorial.water.3></lang>
-    <lang:mineinabyss.tutorial.water.4></lang>
-
-- location: # Welcome
-    world: world
+  text: "<lang:mineinabyss.tutorial.water.1></lang>\n<lang:mineinabyss.tutorial.water.2></lang>\n\
+    <lang:mineinabyss.tutorial.water.3></lang>\n<lang:mineinabyss.tutorial.water.4></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -556.0
     y: 129.0
     z: -30.0
-  text: |2
-    <lang:mineinabyss.tutorial.welcome.1></lang>
-    <lang:mineinabyss.tutorial.welcome.2></lang>
-
-    <lang:mineinabyss.tutorial.welcome.3></lang>
-    <lang:mineinabyss.tutorial.welcome.4></lang>
-
-- location: # General information
-    world: world
+  text: "<lang:mineinabyss.tutorial.welcome.1></lang>\n<lang:mineinabyss.tutorial.welcome.2></lang>\n\
+    \n<lang:mineinabyss.tutorial.welcome.3></lang>\n<lang:mineinabyss.tutorial.welcome.4></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "CENTER"
+  billboard: "VERTICAL"
+  scale:
+  - 1.0
+  - 1.0
+  - 1.0
+  viewRange: null
+- location:
+    world: "world"
     x: -557.0
     y: 129.0
     z: -34.0
-  scale: [0.6, 0.6, 0.6]
-  alignment: LEFT
-  text: |2
-                  <lang:mineinabyss.tutorial.general_info>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.1></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.2></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.3></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.4></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.5></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.6></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.7></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.8></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.9></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.10></lang>
-    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.11></lang>
-
-- location: # Rules
-    world: world
+  text: "              <lang:mineinabyss.tutorial.general_info>\n<gray>*</gray> <lang:mineinabyss.tutorial.general_info.1></lang>\n\
+    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.2></lang>\n<gray>*</gray>\
+    \ <lang:mineinabyss.tutorial.general_info.3></lang>\n<gray>*</gray> <lang:mineinabyss.tutorial.general_info.4></lang>\n\
+    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.5></lang>\n<gray>*</gray>\
+    \ <lang:mineinabyss.tutorial.general_info.6></lang>\n<gray>*</gray> <lang:mineinabyss.tutorial.general_info.7></lang>\n\
+    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.8></lang>\n<gray>*</gray>\
+    \ <lang:mineinabyss.tutorial.general_info.9></lang>\n<gray>*</gray> <lang:mineinabyss.tutorial.general_info.10></lang>\n\
+    <gray>*</gray> <lang:mineinabyss.tutorial.general_info.11></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "LEFT"
+  billboard: "VERTICAL"
+  scale:
+  - 0.6
+  - 0.6
+  - 0.6
+  viewRange: null
+- location:
+    world: "world"
     x: -557.0
     y: 129.0
     z: -26.5
-  scale: [0.5, 0.5, 0.5]
-  alignment: LEFT
-  text: |2
-                            <lang:mineinabyss.tutorial.rules></lang>
-    1. <lang:mineinabyss.tutorial.rules.1></lang>
-    2. <lang:mineinabyss.tutorial.rules.2></lang>
-    3. <lang:mineinabyss.tutorial.rules.3></lang>
-    4. <lang:mineinabyss.tutorial.rules.4></lang>
-    5. <lang:mineinabyss.tutorial.rules.5></lang>
-    6. <lang:mineinabyss.tutorial.rules.6></lang>
+  text: "                        <lang:mineinabyss.tutorial.rules></lang>\n1. <lang:mineinabyss.tutorial.rules.1></lang>\n\
+    2. <lang:mineinabyss.tutorial.rules.2></lang>\n3. <lang:mineinabyss.tutorial.rules.3></lang>\n\
+    4. <lang:mineinabyss.tutorial.rules.4></lang>\n5. <lang:mineinabyss.tutorial.rules.5></lang>\n\
+    6. <lang:mineinabyss.tutorial.rules.6></lang>\n"
+  backgroundColor: "Color:[argb0x0]"
+  shadow: true
+  alignment: "LEFT"
+  billboard: "VERTICAL"
+  scale:
+  - 0.5
+  - 0.5
+  - 0.5
+  viewRange: null

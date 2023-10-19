@@ -1,241 +1,65 @@
-x-particles-blood: &blood
-  count: 10
-  duration: 2s
-  offset: 1t
-  iterations: 4
-  particles:
-    - REDSTONE
-x-particles-vomit: &vomit
-  count: 25
-  duration: 10t
-  iterations: 6
-  offset: 3s
-  particles: [ SLIME ]
 features:
-  - !<core>
-  - !<guilds>
-    guildChattyChannel:
-      channelType: PRIVATE
-      proxy: false
-      discordsrv: false
-      isDefaultChannel: false
-      isStaffChannel: false
-      format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:guildchat: <chatty_nickname>:<gold> "
-      channelRadius: 0
-      channelAliases: [ "guild" ]
-    guildNameMaxLength: 30
-    guildNameBannedWords:
-      - ([^a-zA-Z\s])
-      - (n[i1]gg?[e3]r[s\$]?)
-      - (.?fai*g+[oei1]*t*[sz]*)
-      - ([nN]+[aA4@]+[sSzZ]+[iI1l])
-  - !<hub_storage>
-  - !<layers>
-  - !<survival_pvp>
-  - !<anticheese>
-  - !<curse>
-  #- !<keepinv> Temp disabled until issue fixed
-  - !<relics>
-  - !<exp>
-  - !<lock_display_item>
-  - !<patreon>
-  - !<orth_banking>
-  - !<playerprofile>
-  - !<misc>
-  #- !<helper>
-  - !<tools>
-  #- !<shopkeeper>
-  - !<cosmetics>
-  - !<tutorial>
-  - !<okibotravel>
-layers:
-  - name: <#FFA812>Orth
-    sub: <#FFC421>City of the Great Pit
-    deathMessage: in the city of <#FFA812>Orth<white> :bell:<white>
-    depth:
-      start: -1
-      end: 0
-    sections: [ orth ]
-    blockBlacklist:
-      - LADDER
-      - RAIL
-      - POWERED_RAIL
-      - VINE
-  - name: <#DB4040>Edge of the Abyss
-    sub: <#BA1E1E>0-1510 blocks
-    deathMessage: at the <#DB4040>Edge of the Abyss<white> :redw:<white>
-    depth:
-      start: 0
-      end: 1510
-    effects:
-      - !<potion>
-        strength: 2
-        duration: 5s
-        effects: [ HUNGER ]
-      - !<particles>
-        <<: *vomit
-    sections: [ l1s0,l1s1,l1s2,l1s3 ]
-    blockBlacklist:
-      - LADDER
-      - RAIL
-      - POWERED_RAIL
-      - VINE
-  - name: <#175ABF>Forest of Temptation
-    deathMessage: in the <#175ABF>Forest of Temptation<white> :bluew:<white>
-    sub: <#286FBF>1510-2580 blocks
-    depth:
-      start: 1510
-      end: 2580
-    effects:
-      - !<potion>
-        strength: 2
-        duration: 6s
-        effects: [ HUNGER ]
-      - !<potion>
-        strength: 1
-        duration: 4s
-        effects:
-          - SLOW
-          - SLOW_DIGGING
-          - WEAKNESS
-          - POISON
-      - !<particles>
-        <<: *vomit
-    sections: [ l2s0,l2s1,l2s2 ]
-    blockBlacklist:
-      - LADDER
-      - RAIL
-      - POWERED_RAIL
-      - VINE
-  - name: <#D428B1>Great Fault
-    sub: <#E82CC2>2580–4020 blocks
-    deathMessage: in the <#D428B1>Great Fault<white> :moonw:<white>
-    depth:
-      start: 2580
-      end: 4020
-    effects:
-      - !<potion>
-        strength: 3
-        duration: 8s
-        effects: [ HUNGER ]
-      - !<potion>
-        strength: 1
-        duration: 10s
-        offset: 8t
-        effects:
-          - SLOW
-          - SLOW_DIGGING
-      - !<potion>
-        strength: 1
-        duration: 8s
-        offset: 8t
-        effects: [ WEAKNESS ]
-      - !<particles>
-        <<: *vomit
-      # - !<hallucinations>
-      #   strength: 4
-      #   durationRemaining: 30
-      - !<sound>
-        duration: 4s
-        iterations: 3
-        offset: 5t
-        sounds:
-          - block.fire.ambient
-          - block.grass.step
-          - block.ladder.step
-          - block.gravel.step
-          - entity.zombie.step
-          - entity.generic.hurt
-          - entity.generic.swim
-          - entity.generic.small.fall
-          - entity.item.pickup
-          - block.water.ambient
-          - entity.arrow.shoot
-          - entity.chicken.step
-          - entity.chicken.ambient
-          - entity.creeper.primed
-          - mineinabyss:entity.splitjaw.ambient
-    blockBlacklist:
-      - LADDER
-      - RAIL
-      - POWERED_RAIL
-      - VINE
-    sections: [ l3s0,l3s1,l3s2,l3s3 ]
-  - name: <#9E1E84>The Goblets of Giants
-    sub: <#77237A>4020–5850 blocks
-    deathMessage: in the <#9E1E84>Goblets of Giants<white> :moonw:<white>
-    hasPvpDefault: true
-    depth:
-      start: 4020
-      end: 5850
-    effects:
-      - !<potion>
-        strength: 1
-        duration: 12s
-        offset: 4t
-        effects:
-          - HUNGER
-          - SLOW
-          - SLOW_DIGGING
-          - WEAKNESS
-      - !<potion>
-        strength: 0
-        duration: 10s
-        effects:
-          - WITHER
-      - !<particles>
-        <<: *blood
-      - !<sound>
-        duration: 4s
-        iterations: 2
-        offset: 5t
-        sounds:
-          - entity.zombie.step
-          - entity.generic.hurt
-          - entity.generic.swim
-          - entity.generic.small.fall
-          - entity.item.pickup
-          - block.water.ambient
-          - entity.arrow.shoot
-          - ambient.cave
-          - entity.creeper.primed
-          - mineinabyss:entity.orbpiercer.ambient
-    sections: [ l4s1,l4s2,l4s3,l4s4,l4s5 ]
-  - name: <#3B3B3B>Sea of Corpses
-    sub: <#545454>5850–7200 blocks
-    deathMessage: in the <#3B3B3B>Sea of Corpses<white> :blackw:<white>
-    hasPvpDefault: true
-    depth:
-      start: 5850
-      end: 7200
-    effects:
-      - !<maxHealth>
-        duration: 45s
-        iterations: 1
-        addMaxHealth: -2.0
-        minHealth: 8.0
-      - !<potion>
-        strength: 2
-        duration: 12s
-        effects:
-          - HUNGER
-          - SLOW
-          - SLOW_DIGGING
-          - DARKNESS
-          - WEAKNESS
-      - !<potion>
-        strength: 1
-        duration: 10s
-        effects:
-          - WITHER
-      - !<particles>
-        <<: *blood
-      - !<sound>
-        duration: 4s
-        iterations: 1
-        offset: 7t
-        sounds:
-          - ambient.cave
-          - ambient.underwater.loop.additions.ultra.rare
-          - mineinabyss:entity.steve.hurt
-    sections: [ l5s1,l5s2,l5s3 ]
+- !<core> {}
+- !<guilds>
+  guildChattyChannel:
+    channelType: "PRIVATE"
+    permission: ""
+    logToConsole: true
+    simpleConsoleMessages: false
+    proxy: false
+    discordsrv: false
+    isDefaultChannel: false
+    isStaffChannel: false
+    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:guildchat: <chatty_nickname>:<gold> "
+    messageColor: "white"
+    channelRadius: 0
+    channelAliases:
+    - "guild"
+  guildNameMaxLength: 30
+  guildNameBannedWords:
+  - "([^a-zA-Z\\s])"
+  - "(n[i1]gg?[e3]r[s\\$]?)"
+  - "(.?fai*g+[oei1]*t*[sz]*)"
+  - "([nN]+[aA4@]+[sSzZ]+[iI1l])"
+  canOpenGuildMemberGraves: true
+- !<hub_storage> {}
+- !<layers> {}
+- !<survival_pvp> {}
+- !<anticheese> {}
+- !<curse> {}
+- !<relics> {}
+- !<exp> {}
+- !<lock_display_item>
+  bypassPermission: "mineinabyss.lockdisplay.bypass"
+- !<patreon>
+  token: "i:\n  v: 3465\n  type: EMERALD\n  meta:\n    ==: ItemMeta\n    meta-type:\
+    \ UNSPECIFIC\n    display-name: '{\"italic\":false,\"extra\":[{\"bold\":true,\"\
+    color\":\"#B74B4D\",\"text\":\"Mitty\n      Token\"}],\"text\":\"\"}'\n    lore:\n\
+    \    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\":\"\"}],\"\
+    text\":\"\"}'\n    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\"\
+    :\"Bestowed upon those\"}],\"text\":\"\"}'\n    - '{\"italic\":false,\"extra\"\
+    :[{\"color\":\"#FF686B\",\"text\":\"who fund the server\"}],\"text\":\"\"}'\n\
+    \    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\":\"to buy\
+    \ random shit\"}],\"text\":\"\"}'\n    custom-model-data: 2\n    PublicBukkitValues:\n\
+    \      geary:prefabs: '[B;-97B,120B,25B,109B,105B,110B,101B,105B,110B,97B,98B,121B,115B,115B,58B,112B,97B,116B,114B,101B,111B,110B,95B,116B,111B,107B,101B,110B,-1B]'\n\
+    \      geary:components: 1b\n"
+- !<orth_banking>
+  balanceHudId: "balance_empty_offhand"
+  balanceHudOffhandId: "balance_offhand"
+- !<playerprofile> {}
+- !<misc> {}
+- !<tools>
+  dependsOn:
+  - "DeeperWorld"
+- !<cosmetics>
+  equipBackpacks: false
+  defaultBackpack: "backpack"
+  dependsOn:
+  - "HMCCosmetics"
+- !<tutorial> {}
+- !<okibotravel>
+  dependsOn:
+  - "Train_Carts"
+  - "TCCoasters"
+- !<config_reloads> {}
+- !<music> {}
