@@ -64,14 +64,6 @@ okiboStations:
   subStations: []
 okiboMaps:
 - station: "GoldenBridge"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -82,74 +74,42 @@ okiboMaps:
     - 0.5
     - 3.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.2
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 2.4
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 3.2
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "GuildHQ"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -160,74 +120,42 @@ okiboMaps:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "TowerDistrict"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -238,74 +166,42 @@ okiboMaps:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "DocksEast"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -316,74 +212,42 @@ okiboMaps:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "VillageDistrict"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -394,74 +258,42 @@ okiboMaps:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "CliffDistrict"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -472,74 +304,42 @@ okiboMaps:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "Orphanage"
     offset:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "SlumDistrict"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -550,66 +350,37 @@ okiboMaps:
     - -0.9
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "DocksWest"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -620,74 +391,42 @@ okiboMaps:
     - -0.9
     - 3.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GoldenBridge"
     offset:
     - -0.4
     - 3.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 - station: "Orphanage"
-  offset:
-  - 0.0
-  - 0.0
-  - 0.0
-  text: "\n\n\n\
-    \n\n\n\n\
-    \n\n"
-  font: "orth_map"
   scale:
   - 2.0
   - 2.0
@@ -698,63 +437,39 @@ okiboMaps:
     - -0.4
     - 3.5
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "GuildHQ"
     offset:
     - 0.5
     - 3.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "TowerDistrict"
     offset:
     - 1.0
     - 2.6
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksEast"
     offset:
     - 1.7
     - 2.0
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "VillageDistrict"
     offset:
     - 0.6
     - 2.1
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "CliffDistrict"
     offset:
     - 0.1
     - 1.9
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "SlumDistrict"
     offset:
     - -0.9
     - 2.3
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
   - destStation: "DocksWest"
     offset:
     - -1.8
     - 2.7
     - 0.0
-    hitbox:
-      width: 0.3
-      height: 0.3
 costPerKM: 2.0

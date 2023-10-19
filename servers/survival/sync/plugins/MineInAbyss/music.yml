@@ -2,68 +2,50 @@
 # Default is 10-20 minutes in Minecraft.
 minSongWaitTime: "10m"
 maxSongWaitTime: "20m"
+# How long to wait before playing a song after a player logs in
+minWaitTimeOnLogin: "2m"
+maxWaitTimeOnLogin: "5m"
 # A list of song definitions
 songs:
-  "orth_waltz":
-    key: "mineinabyss:music.custom.orth.orth_waltz"
-    duration: "1m 41s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "orth"
-  "deep_in_abyss":
-    key: "mineinabyss:music.custom.orth.deep_in_abyss"
-    duration: "1m 30s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "orth"
-  "inverted_forest":
-    key: "mineinabyss:music.custom.layer2.inverted_forest"
-    duration: "3m 54s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "layer2"
-  "the_great_fault":
-    key: "mineinabyss:music.custom.layer3.the_great_fault"
-    duration: "3m 45s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "layer3"
-  "beneath_the_ice":
-    key: "mineinabyss:music.custom.layer5.beneath_the_ice"
-    duration: "4m"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "layerfive"
-  "blizzard_theme":
-    key: "mineinabyss:music.custom.layer5.blizzard_theme"
-    duration: "3m 38s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "layerfive"
-  "uncertain_surroundings":
-    key: "mineinabyss:music.custom.layer5.uncertain_surroundings"
-    duration: "4m 13s"
-    category: "AMBIENT"
-    volume: 1.0
-    pitch: 1.0
-    # WorldGuard regions this song can play in (can play anywhere if emtpy)
-    regions:
-    - "layerfive"
+- key: "mineinabyss:music.custom.orth.orth_waltz"
+  duration: "1m 41s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "orth"
+- key: "mineinabyss:music.custom.orth.deep_in_abyss"
+  duration: "1m 30s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "orth"
+- key: "mineinabyss:music.custom.layer2.inverted_forest"
+  duration: "3m 54s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "layer2"
+- key: "mineinabyss:music.custom.layer3.the_great_fault"
+  duration: "3m 45s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "layer3"
+- key: "mineinabyss:music.custom.layer5.beneath_the_ice"
+  duration: "4m"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "layerfive"
+- key: "mineinabyss:music.custom.layer5.blizzard_theme"
+  duration: "3m 38s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "layerfive"
+- key: "mineinabyss:music.custom.layer5.uncertain_surroundings"
+  duration: "4m 13s"
+  category: "AMBIENT"
+  # WorldGuard regions this song can play in (can play anywhere if emtpy)
+  regions:
+  - "layerfive"

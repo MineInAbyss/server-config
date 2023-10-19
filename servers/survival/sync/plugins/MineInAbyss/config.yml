@@ -1,65 +1,30 @@
-features:
-- !<core> {}
-- !<guilds>
-  guildChattyChannel:
-    channelType: "PRIVATE"
-    permission: ""
-    logToConsole: true
-    simpleConsoleMessages: false
-    proxy: false
-    discordsrv: false
-    isDefaultChannel: false
-    isStaffChannel: false
-    format: ":survival:%chatty_shift_-4%%chatty_shift_-4%:guildchat: <chatty_nickname>:<gold> "
-    messageColor: "white"
-    channelRadius: 0
-    channelAliases:
-    - "guild"
-  guildNameMaxLength: 30
-  guildNameBannedWords:
-  - "([^a-zA-Z\\s])"
-  - "(n[i1]gg?[e3]r[s\\$]?)"
-  - "(.?fai*g+[oei1]*t*[sz]*)"
-  - "([nN]+[aA4@]+[sSzZ]+[iI1l])"
-  canOpenGuildMemberGraves: true
-- !<hub_storage> {}
-- !<layers> {}
-- !<survival_pvp> {}
-- !<anticheese> {}
-- !<curse> {}
-- !<relics> {}
-- !<exp> {}
-- !<lock_display_item>
-  bypassPermission: "mineinabyss.lockdisplay.bypass"
-- !<patreon>
-  token: "i:\n  v: 3465\n  type: EMERALD\n  meta:\n    ==: ItemMeta\n    meta-type:\
-    \ UNSPECIFIC\n    display-name: '{\"italic\":false,\"extra\":[{\"bold\":true,\"\
-    color\":\"#B74B4D\",\"text\":\"Mitty\n      Token\"}],\"text\":\"\"}'\n    lore:\n\
-    \    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\":\"\"}],\"\
-    text\":\"\"}'\n    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\"\
-    :\"Bestowed upon those\"}],\"text\":\"\"}'\n    - '{\"italic\":false,\"extra\"\
-    :[{\"color\":\"#FF686B\",\"text\":\"who fund the server\"}],\"text\":\"\"}'\n\
-    \    - '{\"italic\":false,\"extra\":[{\"color\":\"#FF686B\",\"text\":\"to buy\
-    \ random shit\"}],\"text\":\"\"}'\n    custom-model-data: 2\n    PublicBukkitValues:\n\
-    \      geary:prefabs: '[B;-97B,120B,25B,109B,105B,110B,101B,105B,110B,97B,98B,121B,115B,115B,58B,112B,97B,116B,114B,101B,111B,110B,95B,116B,111B,107B,101B,110B,-1B]'\n\
-    \      geary:components: 1b\n"
-- !<orth_banking>
-  balanceHudId: "balance_empty_offhand"
-  balanceHudOffhandId: "balance_offhand"
-- !<playerprofile> {}
-- !<misc> {}
-- !<tools>
-  dependsOn:
-  - "DeeperWorld"
-- !<cosmetics>
-  equipBackpacks: false
-  defaultBackpack: "backpack"
-  dependsOn:
-  - "HMCCosmetics"
-- !<tutorial> {}
-- !<okibotravel>
-  dependsOn:
-  - "Train_Carts"
-  - "TCCoasters"
-- !<config_reloads> {}
-- !<music> {}
+# Ignore following options, enable all features
+enableAll: false
+# Choose which features to enable with true/false
+antiCheese: true
+configManagement: true
+core: true
+cosmetics: true
+curse: true
+descent: true
+displayLocker: true
+enchants: true
+exp: true
+gondolas: true
+guilds: true
+hubstorage: true
+keepInventory: true
+layers: true
+misc: true
+music: true
+shopkeeping: true
+okiboTravel: true
+orthBanking: true
+patreons: true
+pins: true
+playerProfile: true
+survivalPvp: true
+adventurePvp: false
+relics: true
+tools: true
+tutorial: true
