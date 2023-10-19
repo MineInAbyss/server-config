@@ -1,0 +1,51 @@
+templates:
+  "common":
+    default: true
+    forced: true
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/common"
+  "2d_tools":
+    default: true
+    forced: false
+    conflictsWith:
+    - "3d_tools"
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/2d_tools"
+  "new_armor":
+    default: true
+    forced: false
+    conflictsWith:
+    - "old_armor"
+    - "vanilla_armor"
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/new_armor"
+  "3d_tools":
+    default: false
+    forced: false
+    conflictsWith:
+    - "2d_tools"
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/3d_tools"
+  "old_armor":
+    default: false
+    forced: false
+    conflictsWith:
+    - "new_armor"
+    - "vanilla_armor"
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/old_armor"
+  "custom_hud":
+    default: true
+    forced: false
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/custom_hud"
+  "custom_music":
+    default: false
+    forced: false
+    githubUrl: "https://github.com/MineInAbyss/OST/tree/master"
+  "vanilla_armor":
+    default: false
+    forced: false
+    conflictsWith:
+    - "new_armor"
+    - "old_armor"
+  "vanilla_tools":
+    default: false
+    forced: false
+    conflictsWith:
+    - "2d_tools"
+    - "3d_tools"
