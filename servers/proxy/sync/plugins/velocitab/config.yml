@@ -16,13 +16,13 @@ footers:
   default:
     - 'Ping: %ping%ms %server_tps_5_colored%'
 formats:
-  default: '%server%%prefix%%username%'
+  default: '%server%%prefix% %username%'
 # Nametag(s) to display above players' heads for each server group. Set to empty to disable.
 # Nametag formats must contain a %username%. Docs: https://william278.net/docs/velocitab/nametags
 nametags:
-  default: '&f%prefix%%username%&f%suffix%'
+  default: '&f%prefix% %username%&f%suffix%'
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
-formatting_type: MINEDOWN
+formatting_type: MINIMESSAGE
 # The servers in each group of servers. The order of groups is important when sorting by SERVER_GROUP.
 server_groups:
   default:
