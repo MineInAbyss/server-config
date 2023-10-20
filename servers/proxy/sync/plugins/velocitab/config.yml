@@ -22,7 +22,7 @@ formats:
 nametags:
   default: '&f%prefix% %username%&f%suffix%'
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
-formatting_type: MINIMESSAGE
+formatting_type: MINEDOWN
 # The servers in each group of servers. The order of groups is important when sorting by SERVER_GROUP.
 server_groups:
   default:
