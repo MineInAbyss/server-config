@@ -16,7 +16,7 @@ vanilla:
         x: 50.0
         y: 0.0
       offset:
-        x: 37.0
+        x: 34.0
         y: 41.0
     exp:
       asset: 'vanilla-exp'
@@ -25,7 +25,7 @@ vanilla:
         x: 50.0
         y: 0.0
       offset:
-        x: 0.0
+        x: 2.0
         y: 32
     armor:
       asset: 'vanilla-armor'
@@ -34,7 +34,7 @@ vanilla:
         x: 100.0
         y: 0.0
       offset:
-        x: -8
+        x: -10
         y: 100
     air:
       asset: 'vanilla-air'
@@ -43,5 +43,32 @@ vanilla:
         x: 100.0
         y: 0.0
       offset:
-        x: -20
+        x: -22
         y: 100
+    background:
+      asset: 'background'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -10.0
+        y: 43
+    #background_cogs:
+    #  asset: 'background_cogs'
+    #  align: center
+    #  position:
+    #    x: 50.0
+    #    y: 0.0
+    #  offset:
+    #    x: 1
+    #    y: 49
+    armor_air_background:
+      asset: 'armor_air_background'
+      align: right
+      position:
+        x: 100.0
+        y: 0.0
+      offset:
+        x: -26.0
+        y: 104

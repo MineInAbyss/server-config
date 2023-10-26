@@ -57,7 +57,7 @@ mineinabyss-orth:
     text:
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow"
+      font: "default-drop-shadow"
       offset:
         x: 0
         y: 0
@@ -134,7 +134,7 @@ mineinabyss-sea_of_corpses:
     text:
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow"
+      font: "default-drop-shadow"
     icon:
       texture:
         path: assets/mineinabyss/blackw.png
@@ -142,6 +142,17 @@ mineinabyss-sea_of_corpses:
         x: 0
         y: 6
 
+top_background:
+  conditions:
+    - placeholder{ph=%mineinabyss_hud_depthmeter%,%mineinabyss_hud_starcompass%;v=true} false hide
+  layers:
+    icon:
+      scale:
+        y: 1.4
+        x: 2.0
+      texture:
+        path: assets/mineinabyss/top_background.png
+      color: "#FFFFFF"
 
 
 # Relics & Tools

@@ -109,3 +109,27 @@ vanilla-air:
       offset:
         x: 0
         y: 2
+background:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+  layers:
+    icon:
+      texture:
+        path: assets/mineinabyss/main_background.png
+      color: "#FFFFFF"
+background_cogs:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+  layers:
+    icon:
+      texture:
+        path: assets/mineinabyss/main_background_cogs.png
+      color: "#FFFFFF"
+armor_air_background:
+  conditions:
+    - gamemode{gm=survival,adventure} true hide
+  layers:
+    icon:
+      texture:
+        path: assets/mineinabyss/armor_air_background.png
+      color: "#FFFFFF"
