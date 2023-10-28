@@ -49,3 +49,11 @@ templates:
     conflictsWith:
     - "2d_tools"
     - "3d_tools"
+  "build":
+    default: true
+    forced: false
+    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/build"
+  "premium_content":
+    default: true
+    forced: true
+    githubUrl: "https://github.com/MineInAbyss/ResourcePack-Premium-Content/tree/master"
