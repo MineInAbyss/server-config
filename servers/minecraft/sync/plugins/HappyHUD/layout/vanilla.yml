@@ -45,30 +45,3 @@ vanilla:
       offset:
         x: -22
         y: 100
-    background:
-      asset: 'background'
-      align: center
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: -10.0
-        y: 43
-    #background_cogs:
-    #  asset: 'background_cogs'
-    #  align: center
-    #  position:
-    #    x: 50.0
-    #    y: 0.0
-    #  offset:
-    #    x: 1
-    #    y: 49
-    armor_air_background:
-      asset: 'armor_air_background'
-      align: right
-      position:
-        x: 100.0
-        y: 0.0
-      offset:
-        x: -26.0
-        y: 104

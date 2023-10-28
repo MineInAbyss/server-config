@@ -7,11 +7,13 @@ orthbanking:
     orthcoin:
       texture: assets/mineinabyss/orthcoin.png
       height: 10
+      ascent: 2
       chars:
         - ""
     mittytoken:
       texture: assets/mineinabyss/mittytoken.png
       height: 12
+      ascent: 3
       chars:
         - ""
     nonlatin-european:

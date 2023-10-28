@@ -96,15 +96,3 @@ relics_and_tools:
       offset:
         x: 0
         y: -6
-
-top_background:
-  elements:
-    top_background:
-      asset: 'top_background'
-      align: center
-      position:
-        x: 50.0
-        y: 100.0
-      offset:
-        x: 0.0
-        y: 0

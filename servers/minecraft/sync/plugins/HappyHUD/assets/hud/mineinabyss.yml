@@ -7,7 +7,7 @@ mineinabyss-orthcoins:
     text:
       align: left
       text: "%mineinabyss_orthbanking_coins%"
-      font: "orthbanking-drop-shadow"
+      font: "orthbanking"
       offset:
         x: -95
         y: 10
@@ -19,7 +19,7 @@ mineinabyss-orthcoins-offhand:
     text:
       align: left
       text: "%mineinabyss_orthbanking_coins%"
-      font: "orthbanking-drop-shadow"
+      font: "orthbanking"
       offset:
         x: -120
         y: 10
@@ -31,7 +31,7 @@ mineinabyss-tokens:
     text:
       align: left
       text: "%mineinabyss_orthbanking_tokens%"
-      font: "orthbanking-drop-shadow"
+      font: "orthbanking"
       offset:
         x: -95
         y: 24
@@ -43,7 +43,7 @@ mineinabyss-tokens-offhand:
     text:
       align: left
       text: "%mineinabyss_orthbanking_tokens%"
-      font: "orthbanking-drop-shadow"
+      font: "orthbanking"
       offset:
         x: -120
         y: 24

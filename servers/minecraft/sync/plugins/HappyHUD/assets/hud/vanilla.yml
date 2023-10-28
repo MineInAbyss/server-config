@@ -3,6 +3,7 @@ vanilla-health:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=poison,wither} false hide
+    #- placeholder{ph=%player_absorption%;v=0;o=>} false hide
   layers:
     fill:
       texture:
@@ -73,7 +74,7 @@ vanilla-armor:
         path: assets/mineinabyss/armor_bar.png
       color: "#FFFFFF"
       offset:
-        x: 2
+        x: 7
         y: -17
       function:
         listener: armor
@@ -109,27 +110,3 @@ vanilla-air:
       offset:
         x: 0
         y: 2
-background:
-  conditions:
-    - gamemode{gm=survival,adventure} true hide
-  layers:
-    icon:
-      texture:
-        path: assets/mineinabyss/main_background.png
-      color: "#FFFFFF"
-background_cogs:
-  conditions:
-    - gamemode{gm=survival,adventure} true hide
-  layers:
-    icon:
-      texture:
-        path: assets/mineinabyss/main_background_cogs.png
-      color: "#FFFFFF"
-armor_air_background:
-  conditions:
-    - gamemode{gm=survival,adventure} true hide
-  layers:
-    icon:
-      texture:
-        path: assets/mineinabyss/armor_air_background.png
-      color: "#FFFFFF"
