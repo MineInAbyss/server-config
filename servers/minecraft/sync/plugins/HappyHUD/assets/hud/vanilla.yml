@@ -68,19 +68,20 @@ vanilla-armor:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
+    - progress{l=fill;o=>;v=0} true hide
   layers:
     fill:
       texture:
         path: assets/mineinabyss/armor_bar.png
       color: "#FFFFFF"
       offset:
-        x: 7
+        x: 2
         y: -17
       function:
         listener: armor
         increment: 20
         orientation: vertical
-        reversed: true
+        reversed: false
     icon:
       texture:
         path: assets/mineinabyss/armor_icon.png
@@ -91,6 +92,7 @@ vanilla-air:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
+    - progress{l=fill;o=<;v=100%} true hide
   layers:
     fill:
       texture:
@@ -103,7 +105,7 @@ vanilla-air:
         listener: air
         increment: 10
         orientation: vertical
-        reversed: true
+        reversed: false
     icon:
       texture:
         path: assets/mineinabyss/air_icon.png

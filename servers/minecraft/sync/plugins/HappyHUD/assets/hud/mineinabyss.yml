@@ -144,7 +144,7 @@ mineinabyss-sea_of_corpses:
 
 top_background:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_depthmeter%,%mineinabyss_hud_starcompass%;v=true} false hide
+    - placeholder{ph=%mineinabyss_hud_show_top_bar%} true hide
   layers:
     icon:
       scale:
@@ -173,7 +173,7 @@ mineinabyss-depth:
 mineinabyss-starcompass:
   conditions:
     #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
-    - placeholder{ph=%mineinabyss_hud_starcompass%} true hide
+    - placeholder{ph=%mineinabyss_hud_starcompass%} false hide
     - placeholder{ph=%mineinabyss_starcompass_angle%;v=null} false hide
     #- placeholder{ph=%mineinabyss_starcompass_angle%;v=N} true texture assets/mineinabyss/arrow_n.png
     #- placeholder{ph=%mineinabyss_starcompass_angle%;v=NNE} true texture assets/mineinabyss/arrow_nne.png
