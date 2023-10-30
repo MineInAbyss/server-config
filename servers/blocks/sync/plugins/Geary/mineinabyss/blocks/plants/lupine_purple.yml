@@ -1,0 +1,14 @@
+- !<geary:set.item>
+  item:
+    type: PAPER
+    displayName: Lupine Purple
+    customModelData: 3017
+- !<geary:set.block>
+  blockType: WIRE
+  blockId: 16
+- !<blocky:info>
+  blockModel: hmcmodels:block/nature/lupine_purple
+- !<blocky:drops>
+  drops:
+    - item:
+        prefab: mineinabyss:lupine_purple
