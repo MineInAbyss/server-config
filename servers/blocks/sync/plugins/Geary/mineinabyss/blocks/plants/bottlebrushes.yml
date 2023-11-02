@@ -1,0 +1,14 @@
+- !<geary:set.item>
+  item:
+    type: PAPER
+    displayName: bottlebrushes
+    customModelData: 3009
+- !<geary:set.block>
+  blockType: WIRE
+  blockId: 9
+- !<blocky:info>
+  blockModel: hmcmodels:block/nature/bottlebrushes
+- !<blocky:drops>
+  drops:
+    - item:
+        prefab: mineinabyss:bottlebrushes

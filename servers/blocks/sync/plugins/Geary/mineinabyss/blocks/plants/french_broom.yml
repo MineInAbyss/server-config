@@ -1,0 +1,14 @@
+- !<geary:set.item>
+  item:
+    type: PAPER
+    displayName: French Broom
+    customModelData: 3016
+- !<geary:set.block>
+  blockType: WIRE
+  blockId: 15
+- !<blocky:info>
+  blockModel: hmcmodels:block/nature/french_broom
+- !<blocky:drops>
+  drops:
+    - item:
+        prefab: mineinabyss:french_broom

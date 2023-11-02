@@ -1,55 +1,45 @@
-# If you wish to use vanilla sounds, set this to true
-# Keep in mind it disables all custom sounds from place/break/hit etc
-disableCustomSounds: false
-
-# This is for generating the Json files needed for MoreCreativeTabs.
-# A mod that lets you customize the creative tabs in Minecraft.
-# This will generate a resource-pack that will include tabs for all Blocky Blocks and Furniture
-MoreCreativeTabsMod:
-  generateJsonForMod: true
-
+menus:
+  defaultMenu:
+    title: ":space_-8::blocky_default_menu:"
+    height: 3
+    blockButton:
+      type: "PAPER"
+      customModelData: 1
+    wireButton:
+      type: "PAPER"
+      customModelData: 1
+    furnitureButton:
+      type: "PAPER"
+      customModelData: 1
+  blockMenu:
+    title: ":space_-8::blocky_grid_menu:"
+    height: 6
+  wireMenu:
+    title: ":space_-8::blocky_grid_menu:"
+    height: 6
+  furnitureMenu:
+    title: ":space_-8::blocky_grid_menu:"
+    height: 6
 # [restoreFunctionality]: Restores redstone and vanilla note functionality for noteblocks
 # NOTE: This reduces the total amount of custom block slots from 799 to 750
 noteBlocks:
   isEnabled: true
   restoreFunctionality: false
-
 tripWires:
   isEnabled: true
-
-slabBlocks:
-  isEnabled: true
-
-stairBlocks:
-  isEnabled: true
-
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
 caveVineBlocks:
   isEnabled: false
-
-menus:
-  defaultMenu:
-    title: ":space_-11::blocky_default_menu:"
-    height: 3
-    blockButton:
-      type: PAPER
-      customModelData: 1
-      displayName: "<gradient:gold:yellow>Block Menu"
-    wireButton:
-      type: PAPER
-      customModelData: 1
-      displayName: "<gradient:gold:yellow>Wire Menu"
-    furnitureButton:
-      type: PAPER
-      customModelData: 1
-      displayName: "<gradient:gold:yellow>Furniture Menu"
-  blockMenu:
-    title: ":space_-11::blocky_grid_menu:"
-    height: 6
-  wireMenu:
-    title: ":space_-11::blocky_grid_menu:"
-    height: 6
-  furnitureMenu:
-    title: ":space_-11::blocky_grid_menu:"
-    height: 6
+slabBlocks:
+  isEnabled: true
+stairBlocks:
+  isEnabled: true
+# If you wish to use vanilla sounds, set this to true
+# Keep in mind it disables all custom sounds from place/break/hit etc
+disableCustomSounds: false
+# This is for generating the Json files needed for MoreCreativeTabs
+# A mod that lets you customize the creative tabs in Minecraft
+# This will generate a resource-pack that will include tabs for all Blocky Blocks and Furniture
+MoreCreativeTabsMod:
+  generateJsonForMod: false

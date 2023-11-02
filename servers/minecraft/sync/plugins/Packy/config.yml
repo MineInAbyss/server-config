@@ -20,7 +20,7 @@ menu:
       modifiers:
         offset:
           x: 4
-          y: 4
+          y: 5
         size:
           width: 1
           height: 1
@@ -37,6 +37,23 @@ menu:
         offset:
           x: 4
           y: 1
+        size:
+          width: 1
+          height: 1
+      type: "MENU"
+      packs:
+        "custom_music": {}
+    "build":
+      title: "Build"
+      height: 6
+      button:
+        type: "NOTE_BLOCK"
+        customModelData: 1
+        displayName: "<gold>Build"
+      modifiers:
+        offset:
+          x: 4
+          y: 3
         size:
           width: 1
           height: 1
@@ -74,7 +91,6 @@ menu:
       title: "Packy Pack Picker2"
       height: 6
       button:
-        type: "DIAMOND_SWORD"
         displayName: "<gold>Tools"
         itemFlags:
         - "HIDE_ATTRIBUTES"

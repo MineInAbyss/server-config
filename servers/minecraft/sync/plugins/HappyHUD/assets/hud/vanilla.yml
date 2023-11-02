@@ -3,14 +3,15 @@ vanilla-health:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=poison,wither} false hide
+    #- placeholder{ph=%player_absorption%;v=0;o=>} false hide
   layers:
     fill:
       texture:
         path: assets/mineinabyss/health_bar.png
       color: "#FFFFFF"
       offset:
-        x: 8
-        y: -2
+        x: 17
+        y: -3
       function:
         listener: health
         increment: 20
@@ -18,15 +19,6 @@ vanilla-health:
     icon:
       texture:
         path: assets/mineinabyss/health_icon.png
-      offset:
-        x: -10
-        y: 0
-    outline:
-      texture:
-        path: assets/mineinabyss/bar_outline.png
-      offset:
-        x: 8
-        y: -2
 vanilla-food:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
@@ -38,25 +30,15 @@ vanilla-food:
         path: assets/mineinabyss/food_bar.png
       color: "#FFFFFF"
       offset:
-        x: -4
-        y: -2
+        x: 17
+        y: -3
       function:
-        reversed: true
         listener: food
         increment: 20
         orientation: horizontal
     icon:
       texture:
         path: assets/mineinabyss/food_icon.png
-      offset:
-        x: -10
-        y: 0
-    outline:
-      texture:
-        path: assets/mineinabyss/bar_outline.png
-      offset:
-        x: -4
-        y: -2
 vanilla-exp:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
@@ -67,8 +49,8 @@ vanilla-exp:
         path: assets/mineinabyss/exp_bar.png
       color: "#FFFFFF"
       offset:
-        x: 12
-        y: -13
+        x: 6
+        y: -3
       function:
         listener: exp
         increment: 26
@@ -77,75 +59,56 @@ vanilla-exp:
       text: "<green>%player_level%"
       font: "default-drop-shadow"
       offset:
-        x: 2
-        y: -4
+        x: 180
+        y: 6
     icon:
       texture:
         path: assets/mineinabyss/exp_icon.png
-      offset:
-        x: 0
-        y: 0
-    outline:
-      texture:
-        path: assets/mineinabyss/exp_outline.png
-      offset:
-        x: 12
-        y: -13
 vanilla-armor:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
+    - progress{l=fill;o=>;v=0} true hide
   layers:
     fill:
       texture:
         path: assets/mineinabyss/armor_bar.png
       color: "#FFFFFF"
       offset:
-        x: 1
+        x: 2
         y: -17
       function:
         listener: armor
         increment: 20
         orientation: vertical
-        reversed: true
+        reversed: false
     icon:
       texture:
         path: assets/mineinabyss/armor_icon.png
       offset:
-        x: -1
+        x: 0
         y: 2
-    outline:
-      texture:
-        path: assets/mineinabyss/vertical_bar_outline.png
-      offset:
-        x: 1
-        y: -17
 vanilla-air:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
+    - progress{l=fill;o=<;v=100%} true hide
   layers:
     fill:
       texture:
         path: assets/mineinabyss/air_bar.png
       color: "#FFFFFF"
       offset:
-        x: -2
+        x: 2
         y: -17
       function:
         listener: air
         increment: 10
         orientation: vertical
-        reversed: true
+        reversed: false
     icon:
       texture:
         path: assets/mineinabyss/air_icon.png
       offset:
-        x: -4
+        x: 0
         y: 2
-    outline:
-      texture:
-        path: assets/mineinabyss/vertical_bar_outline.png
-      offset:
-        x: -2
-        y: -17

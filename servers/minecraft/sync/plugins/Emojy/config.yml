@@ -790,16 +790,16 @@ emotes:
     texture: mineinabyss:ui/roles/communitymanager.png
     height: 7
     ascent: 7
-  - id: player_profile_background_1
-    font: playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background_1.png
-    height: 224
-    ascent: 15
-  - id: player_profile_background_2
-    font: playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
-    height: 224
-    ascent: 15
+  #- id: player_profile_background_1
+  #  font: playerprofile
+  #  texture: mineinabyss:ui/player_profiles/player_profile_background_1.png
+  #  height: 224
+  #  ascent: 15
+  #- id: player_profile_background_2
+  #  font: playerprofile
+  #  texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
+  #  height: 224
+  #  ascent: 15
 
   - id: cosmetic_dye_menu
     font: cosmetics
@@ -1140,159 +1140,107 @@ emotes:
 # [ascent]: The height of your gif
 # [height]: The ascent of your gif
 gifs:
-  - id: amepat
-    frameCount: 0
-    framePath: "emotes:gifs/amepat"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: amevibe
-    frameCount: 0
-    framePath: "emotes:gifs/amevibe"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: amogusdance
-    frameCount: 0
-    framePath: "emotes:gifs/amogusdance"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: amogusdumpy
-    frameCount: 0
-    framePath: "emotes:gifs/amogusdumpy"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: amogusdumpywide
-    frameCount: 0
-    framePath: "emotes:gifs/amogusdumpywide"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: bonedance
-    frameCount: 0
-    framePath: "emotes:gifs/bonedance"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: catjam
-    frameCount: 0
-    framePath: "emotes:gifs/catjam"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: doggopunch
-    frameCount: 0
-    framePath: "emotes:gifs/doggopunch"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: elmoburn
-    frameCount: 0
-    framePath: "emotes:gifs/elmoburn"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: gurafalling
-    frameCount: 0
-    framePath: "emotes:gifs/gurafalling"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: gurajam
-    frameCount: 0
-    framePath: "emotes:gifs/gurajam"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: gurawave
-    frameCount: 0
-    framePath: "emotes:gifs/gurawave"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: koronebonk
-    frameCount: 0
-    framePath: "emotes:gifs/koronebonk"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: necoflap
-    frameCount: 0
-    framePath: "emotes:gifs/necoflap"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: nynagree
-    frameCount: 0
-    framePath: "emotes:gifs/nynagree"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: oribongo
-    frameCount: 0
-    framePath: "emotes:gifs/oribongo"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: oribonko
-    frameCount: 0
-    framePath: "emotes:gifs/oribonko"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: oripat
-    frameCount: 0
-    framePath: "emotes:gifs/oripat"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: pepedance
-    frameCount: 0
-    framePath: "emotes:gifs/pepedance"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: pruskhapat
-    frameCount: 0
-    framePath: "emotes:gifs/pruskhapat"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: ratshake
-    frameCount: 0
-    framePath: "emotes:gifs/ratshake"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: regangry
-    frameCount: 0
-    framePath: "emotes:gifs/regangry"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: rikopew
-    frameCount: 0
-    framePath: "emotes:gifs/rikopew"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: widesteve
-    frameCount: 0
-    framePath: "emotes:gifs/widesteve"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: yepcat
-    frameCount: 0
-    framePath: "emotes:gifs/yepcat"
-    ascent: 9
-    height: 11
-    type: SHADER
-  - id: tsumiki
-    frameCount: 0
-    framePath: "emotes:gifs/tsumiki"
-    ascent: 9
-    height: 11
-    type: SHADER
+- id: "amepat"
+  framePath: "emotes:gifs/amepat"
+  ascent: 9
+  height: 11
+- id: "amevibe"
+  framePath: "emotes:gifs/amevibe"
+  ascent: 9
+  height: 11
+- id: "amogusdance"
+  framePath: "emotes:gifs/amogusdance"
+  ascent: 9
+  height: 11
+- id: "amogusdumpy"
+  framePath: "emotes:gifs/amogusdumpy"
+  ascent: 9
+  height: 11
+- id: "amogusdumpywide"
+  framePath: "emotes:gifs/amogusdumpywide"
+  ascent: 9
+  height: 11
+- id: "bonedance"
+  framePath: "emotes:gifs/bonedance"
+  ascent: 9
+  height: 11
+- id: "catjam"
+  framePath: "emotes:gifs/catjam"
+  ascent: 9
+  height: 11
+- id: "doggopunch"
+  framePath: "emotes:gifs/doggopunch"
+  ascent: 9
+  height: 11
+- id: "elmoburn"
+  framePath: "emotes:gifs/elmoburn"
+  ascent: 9
+  height: 11
+- id: "gurafalling"
+  framePath: "emotes:gifs/gurafalling"
+  ascent: 9
+  height: 11
+- id: "gurajam"
+  framePath: "emotes:gifs/gurajam"
+  ascent: 9
+  height: 11
+- id: "gurawave"
+  framePath: "emotes:gifs/gurawave"
+  ascent: 9
+  height: 11
+- id: "koronebonk"
+  framePath: "emotes:gifs/koronebonk"
+  ascent: 9
+  height: 11
+- id: "necoflap"
+  framePath: "emotes:gifs/necoflap"
+  ascent: 9
+  height: 11
+- id: "nynagree"
+  framePath: "emotes:gifs/nynagree"
+  ascent: 9
+  height: 11
+- id: "oribongo"
+  framePath: "emotes:gifs/oribongo"
+  ascent: 9
+  height: 11
+- id: "oribonko"
+  framePath: "emotes:gifs/oribonko"
+  ascent: 9
+  height: 11
+- id: "oripat"
+  framePath: "emotes:gifs/oripat"
+  ascent: 9
+  height: 11
+- id: "pepedance"
+  framePath: "emotes:gifs/pepedance"
+  ascent: 9
+  height: 11
+- id: "pruskhapat"
+  framePath: "emotes:gifs/pruskhapat"
+  ascent: 9
+  height: 11
+- id: "ratshake"
+  framePath: "emotes:gifs/ratshake"
+  ascent: 9
+  height: 11
+- id: "regangry"
+  framePath: "emotes:gifs/regangry"
+  ascent: 9
+  height: 11
+- id: "rikopew"
+  framePath: "emotes:gifs/rikopew"
+  ascent: 9
+  height: 11
+- id: "widesteve"
+  framePath: "emotes:gifs/widesteve"
+  ascent: 9
+  height: 11
+- id: "yepcat"
+  framePath: "emotes:gifs/yepcat"
+  ascent: 9
+  height: 11
+- id: "tsumiki"
+  framePath: "emotes:gifs/tsumiki"
+  ascent: 9
+  height: 11

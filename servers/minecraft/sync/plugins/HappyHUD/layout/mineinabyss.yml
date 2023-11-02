@@ -32,15 +32,15 @@ layers:
         y: 100
       offset:
         x: -100
-        y: -12.0
+        y: -6.0
     edge_of_the_abyss:
       asset: 'mineinabyss-edge_of_the_abyss'
       position:
         x: 50
         y: 100
       offset:
-        x: -100
-        y: -12.0
+        x: -130
+        y: -6.0
     forest_of_temptation:
       asset: 'mineinabyss-forest_of_temptation'
       position:
@@ -48,7 +48,7 @@ layers:
         y: 100
       offset:
         x: -100
-        y: -12.0
+        y: -6.0
     great_fault:
       asset: 'mineinabyss-great_fault'
       position:
@@ -56,7 +56,7 @@ layers:
         y: 100
       offset:
         x: -100
-        y: -12.0
+        y: -6.0
     goblets_of_giants:
       asset: 'mineinabyss-goblets_of_giants'
       position:
@@ -64,7 +64,7 @@ layers:
         y: 100
       offset:
         x: -100
-        y: -12.0
+        y: -6.0
     sea_of_corpses:
       asset: 'mineinabyss-sea_of_corpses'
       position:
@@ -72,7 +72,7 @@ layers:
         y: 100
       offset:
         x: -100
-        y: -12.0
+        y: -6.0
 
 
 ## Relics & Tools
@@ -80,17 +80,19 @@ relics_and_tools:
   elements:
     depth:
       asset: 'mineinabyss-depth'
+      align: center
       position:
         x: 50
         y: 100
       offset:
         x: 85
-        y: -12.0
+        y: -6.0
     starcompass:
+      align: center
       asset: 'mineinabyss-starcompass'
       position:
         x: 50
         y: 100
       offset:
         x: 0
-        y: -30.0
+        y: -6

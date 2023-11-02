@@ -1,0 +1,65 @@
+backgrounds:
+  elements:
+    offhand_background:
+      asset: 'offhand_background'
+      align: center
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: -123
+        y: 31
+    empty_offhand_background:
+      asset: 'empty_offhand_background'
+      align: center
+      position:
+        x: 50
+        y: 0
+      offset:
+        x: -110
+        y: 31
+    extra_background:
+      asset: 'extra_background'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -52
+        y: 54
+    #background:
+    #  asset: 'background'
+    #  align: center
+    #  position:
+    #    x: 50.0
+    #    y: 0.0
+    #  offset:
+    #    x: -10.0
+    #    y: 43
+    background_cogs:
+      asset: 'background_cogs'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 13
+        y: 49
+    armor_air_background:
+      asset: 'armor_air_background'
+      align: right
+      position:
+        x: 100.0
+        y: 0.0
+      offset:
+        x: -26.0
+        y: 104
+    top_background:
+      asset: 'top_background'
+      align: center
+      position:
+        x: 50.0
+        y: 100.0
+      offset:
+        x: 0.0
+        y: 0

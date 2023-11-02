@@ -1,0 +1,14 @@
+- !<geary:set.item>
+  item:
+    type: PAPER
+    displayName: Cosmos Pink
+    customModelData: 3011
+- !<geary:set.block>
+  blockType: WIRE
+  blockId: 11
+- !<blocky:info>
+  blockModel: hmcmodels:block/nature/cosmos_pink
+- !<blocky:drops>
+  drops:
+    - item:
+        prefab: mineinabyss:cosmos_pink
