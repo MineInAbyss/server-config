@@ -8,15 +8,38 @@
 
 We use this repo to keep track of our servers' configuration files. Anyone can request to make changes by following the guide in the `Contribute` badge above!
 
-We use ansible to download and upate config files on server startup, running the `local.yml` playbook as it is on GitHub. 
+We use ansible to download and update config files on server startup, running `local.yml` from GitHub using ansible-pull.
 
-The playbook will:
-- Copy files appropriate to each server as defined in `host_vars`
-- (in the future) merge yaml files and replace secrets using jinja2 templates
+## Usage
 
-Ansible-pull also has an option to only run when changes are present in git, which we use.
+### Folder structure
 
-## Setup
+`/servers` contains subfolders defining configs for different servers, in it, `servers.yml` defines which configs to copy based on the `SERVER_NAME` env variable.
+
+`plugin-versions.conf` stores plugin versions which don't get installed by this playbook, but using Keepup.
+
+### Per-server config
+
+Each server subfolder contains subfolders that get treated differently.
+
+#### `sync`
+
+Uses rsync to simply copy files over to dest as quickly as possible.
+
+#### `templates`
+
+Copies files and templates them using [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/templates/) with Ansible. Add `.j2` to the file extension to indicate that it's a Jinja2 template.
+
+You can often look up how to do templating for Ansible specifically (ex. "read environment variable ansible") to get an idea for these configs, since it templates them in the same way.
+
+##### Examples
+
+Reading a secret via env variable:
+```yaml
+secret_api_key: "{{ lookup('ansible.builtin.env', 'MY_SECRET_KEY') }}"
+``` 
+
+### Setup
 - Install Ansible on your server
 - Set the server name as an env variable called `SERVER_NAME` (set `BUNGEE_SERVER` to true/false to decide whether to ignore the `server/minecraft` directory.)
 - Configure what servers run on that server under `host_vars/<hostname>.yml
