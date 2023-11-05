@@ -1,0 +1,40 @@
+# The min/max amount of time to wait before playing a song after once finishes
+# Default is 10-20 minutes in Minecraft.
+minSongWaitTime: "10m"
+maxSongWaitTime: "20m"
+# How long to wait before playing a song after a player logs in
+minWaitTimeOnLogin: "2m"
+maxWaitTimeOnLogin: "5m"
+# A list of song definitions, options are:
+# key: The resourcepack key for this song
+# duration: How long the song lasts
+# category: The sound category to play the song in (default is MUSIC)
+# volume: The volume of the song (default is 1)
+# pitch: The pitch of the song (default is 1)
+# regions: WorldGuard regions this song can play in (can play anywhere if emtpy)
+songs:
+- key: "mineinabyss:music.custom.layer2.inverted_forest"
+  duration: "3m 54s"
+  category: "AMBIENT"
+  regions:
+  - "layertwo"
+- key: "mineinabyss:music.custom.layer3.the_great_fault"
+  duration: "3m 45s"
+  category: "AMBIENT"
+  regions:
+  - "layerthree"
+- key: "mineinabyss:music.custom.layer5.beneath_the_ice"
+  duration: "3m 33s"
+  category: "AMBIENT"
+  regions:
+  - "layerfive"
+- key: "mineinabyss:music.custom.layer5.uncertain_surroundings"
+  duration: "4m 13s"
+  category: "AMBIENT"
+  regions:
+  - "layerfive"
+- key: "mineinabyss:music.custom.layer5.blizard_theme"
+  duration: "3m 38s"
+  category: "AMBIENT"
+  regions:
+  - "layerfive"
