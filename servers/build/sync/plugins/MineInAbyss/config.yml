@@ -14,7 +14,7 @@ cosmetics:
 curse:
   enabled: false
 custom_hud:
-  enabled: true
+  enabled: false
 descent:
   enabled: false
 displayLocker:
@@ -27,7 +27,7 @@ exp:
 gondolas:
   enabled: false
 guilds:
-  enabled: true
+  enabled: false
 hubstorage:
   enabled: false
 keepInventory:
@@ -40,7 +40,7 @@ lootCrates:
 misc:
   enabled: false
 music:
-  enabled: true
+  enabled: false
 shopkeeping:
   enabled: false
 okiboTravel:
