@@ -1,0 +1,10 @@
+- !<mineinabyss:loot_table>
+  rolls: !<minecraft:uniform>
+    min: 4
+    max: 5
+  pools:
+    - entries:
+        - !<mineinabyss:item>
+          item:
+            prefab: mineinabyss:abyssal_snail_shell
+      weight: 1
