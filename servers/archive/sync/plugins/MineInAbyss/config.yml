@@ -1,0 +1,68 @@
+# Ignore following options, enable all features
+enableAll: false
+# Choose which features to enable with true/false
+antiCheese:
+  enabled: false
+configManagement:
+  enabled: true
+core:
+  enabled: true
+cosmetics:
+  enabled: false
+  equipBackpacks: false
+  defaultBackpack: "backpack"
+curse:
+  enabled: false
+custom_hud:
+  enabled: false
+descent:
+  enabled: false
+displayLocker:
+  enabled: false
+  bypassPermission: "mineinabyss.lockdisplay.bypass"
+enchants:
+  enabled: false
+exp:
+  enabled: false
+gondolas:
+  enabled: false
+guilds:
+  enabled: false
+hubstorage:
+  enabled: false
+keepInventory:
+  enabled: false
+  keepInvInVoid: true
+layers:
+  enabled: true
+lootCrates:
+  enabled: false
+misc:
+  enabled: false
+music:
+  enabled: false
+shopkeeping:
+  enabled: false
+okiboTravel:
+  enabled: false
+orthBanking:
+  enabled: false
+  balanceHudId: "balance_empty_offhand"
+  balanceHudOffhandId: "balance_offhand"
+patreon:
+  enabled: false
+  token: null
+pins:
+  enabled: false
+playerProfile:
+  enabled: false
+survivalPvp:
+  enabled: false
+adventurePvp:
+  enabled: false
+relics:
+  enabled: false
+tools:
+  enabled: false
+tutorial:
+  enabled: false
