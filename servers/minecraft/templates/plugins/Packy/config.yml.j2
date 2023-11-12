@@ -3,8 +3,9 @@ mcmeta:
   description: "Packy Resourcepack"
 icon: "pack.png"
 server:
-  ip: "127.0.0.1"
+  ip: "0.0.0.0"
   port: 8082
+  publicAddress: "https://{{ lookup('env', 'SERVER_NAME', default='unknown') }}.pack.mineinabyss.com"
 prompt: ""
 force: false
 menu:
