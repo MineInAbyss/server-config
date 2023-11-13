@@ -1,0 +1,17 @@
+enabled: false
+guildChattyChannel:
+  channelType: "PRIVATE"
+  permission: ""
+  logToConsole: true
+  simpleConsoleMessages: false
+  proxy: false
+  discordsrv: false
+  isDefaultChannel: false
+  isStaffChannel: false
+  format: ":survival:<shift:-8>:guildchat: <chatty_nickname>: "
+  messageColor: "gold"
+  channelRadius: 0
+  channelAliases: []
+guildNameMaxLength: 20
+guildNameBannedWords: []
+canOpenGuildMemberGraves: true

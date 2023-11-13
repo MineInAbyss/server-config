@@ -1,0 +1,5 @@
+messages:
+  tableNotFound: "Could not find loot table %s. Please let an administrator know!"
+  alreadyLooted: "You already looted this chest on %s"
+  noPermissionToEdit: "You don't have permission to edit loot crates"
+  noPermissionToOpen: "You don't have permission to open loot crates"
