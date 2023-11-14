@@ -1,6 +1,27 @@
 - !<mineinabyss:loot_table>
   pools:
-    - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+    # Monster food
+    - rolls: !<minecraft:uniform> { min: 0, max: 2 }
+      entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:fuwagi_meat_cooked }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:hammerbeak_wing_cooked }
+          functions:
+            - !<minecraft:set_count>
+              count: !<minecraft:uniform> { min: 1, max: 2 }
+    # Seeds
+    - rolls: !<minecraft:uniform> { min: 0, max: 2 }
+      entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<minecraft:item> { name: minecraft:wheat_seeds }
+            - !<minecraft:item> { name: minecraft:beetroot_seeds }
+            - !<minecraft:item> { name: minecraft:carrot_seeds }
+          functions:
+            - !<minecraft:set_count>
+              count: !<minecraft:uniform> { min: 1, max: 4 }

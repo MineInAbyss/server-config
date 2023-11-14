@@ -1,6 +1,15 @@
 - !<mineinabyss:loot_table>
   pools:
-    - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+    # Money
+    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+      entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:orth_coin
+              functions:
+                - !<minecraft:set_count>
+                  count: !<minecraft:uniform> { min: 1, max: 3 }
+

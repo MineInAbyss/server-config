@@ -1,6 +1,13 @@
 - !<mineinabyss:loot_table>
   pools:
     - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+        # Relics
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:star_compass }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:depth_meter }
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.5 }
