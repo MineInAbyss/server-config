@@ -1,2 +1,17 @@
 - !<mineinabyss:loot_table>
-  pools: []
+  pools:
+    # Monster loot
+    - rolls: !<minecraft:uniform> { min: 0, max: 2 }
+      entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:silkfang_silk }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:bundle_of_silkfang_silk }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:inbyo_fur }
+          functions:
+            - !<minecraft:set_count>
+              count: !<minecraft:uniform> { min: 1, max: 4 }

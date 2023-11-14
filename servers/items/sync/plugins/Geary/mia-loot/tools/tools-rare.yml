@@ -1,7 +1,31 @@
 - !<mineinabyss:loot_table>
   pools:
+    # Tools
     - entries:
-        # Relics
+        # Iron tools
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:iron_sickle
+            - !<minecraft:item>
+              name: minecraft:iron_axe
+            - !<minecraft:item>
+              name: minecraft:iron_pickaxe
+        # Diamond tools
+        - !<minecraft:group>
+          weight: 1
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:diamond_sickle
+            - !<minecraft:item>
+              name: minecraft:diamond_axe
+            - !<minecraft:item>
+              name: minecraft:diamond_pickaxe
+    # Relics
+    - entries:
         - !<minecraft:group>
           weight: 3
           children:
