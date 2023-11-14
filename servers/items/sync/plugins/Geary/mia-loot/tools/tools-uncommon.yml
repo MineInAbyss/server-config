@@ -1,6 +1,14 @@
 - !<mineinabyss:loot_table>
   pools:
     - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:demonfish_on_a_stick
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:tesuchi_scale_on_a_stick
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.75 }

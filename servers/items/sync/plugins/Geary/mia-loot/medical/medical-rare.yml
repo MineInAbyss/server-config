@@ -4,3 +4,21 @@
       entries:
         - !<minecraft:item>
           name: minecraft:golden_apple
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.5 }
+    - entries:
+        - !<mineinabyss:item>
+          item:
+            type: POTION
+            potionData:
+              type: REGEN
+              extended: false
+              upgraded: false
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.75 }
+    - entries:
+        - !<mineinabyss:item>
+          item:
+            prefab: mineinabyss:parasitic_watershrooms
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.75 }

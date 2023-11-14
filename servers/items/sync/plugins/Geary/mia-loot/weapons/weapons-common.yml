@@ -1,6 +1,14 @@
 - !<mineinabyss:loot_table>
   pools:
+    # Swords
     - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+        # Wooden swords
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<minecraft:item> { name: minecraft:wooden_sword }
+        # Stone swords
+        - !<minecraft:group>
+          weight: 1
+          children:
+            - !<minecraft:item> { name: minecraft:stone_sword }

@@ -5,5 +5,4 @@
           item:
             prefab: mineinabyss:bonfire
       conditions:
-        - !<minecraft:random_chance>
-          chance: 0.2
+        - !<minecraft:random_chance> { chance: 0.2 }
