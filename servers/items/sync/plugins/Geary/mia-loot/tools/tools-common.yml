@@ -1,10 +1,26 @@
 - !<mineinabyss:loot_table>
-  rolls: !<minecraft:uniform>
-    min: 4
-    max: 5
   pools:
+    # Tools
     - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
-      weight: 1
+        # Wooden tools
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:wooden_sickle
+            - !<minecraft:item>
+              name: minecraft:wooden_axe
+            - !<minecraft:item>
+              name: minecraft:wooden_pickaxe
+        # Stone tools
+        - !<minecraft:group>
+          weight: 1
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:stone_sickle
+            - !<minecraft:item>
+              name: minecraft:stone_axe
+            - !<minecraft:item>
+              name: minecraft:stone_pickaxe
