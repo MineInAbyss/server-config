@@ -1,7 +1,7 @@
 - !<mineinabyss:loot_table>
   pools:
     # Monster loot
-    - rolls: !<minecraft:uniform> { min: 0, max: 2 }
+    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
       entries:
         - !<minecraft:group>
           weight: 3
@@ -15,3 +15,15 @@
           functions:
             - !<minecraft:set_count>
               count: !<minecraft:uniform> { min: 1, max: 4 }
+    # Ores
+    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+      entries:
+        - !<minecraft:group>
+          children:
+            - !<minecraft:item> { name: minecraft:iron_ingot }
+            - !<minecraft:item> { name: minecraft:gold_ingot }
+            - !<minecraft:item> { name: minecraft:copper_ingot }
+            - !<minecraft:item> { name: minecraft:emerald_ingot }
+          functions:
+            - !<minecraft:set_count>
+              count: !<minecraft:uniform> { min: 1, max: 6 }

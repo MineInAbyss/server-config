@@ -3,4 +3,9 @@
     - entries:
         - !<mineinabyss:item>
           item:
-            prefab: mineinabyss:abyssal_snail_shell
+            prefab: mineinabyss:parasitic_watershrooms
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.75 }
+      functions:
+        - !<minecraft:set_count>
+          count: !<minecraft:uniform> { min: 1, max: 4 }

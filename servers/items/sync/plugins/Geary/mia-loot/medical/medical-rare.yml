@@ -22,3 +22,6 @@
             prefab: mineinabyss:parasitic_watershrooms
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }
+      functions:
+        - !<minecraft:set_count>
+          count: !<minecraft:uniform> { min: 2, max: 6 }
