@@ -1,22 +1,22 @@
 templates:
-- id: "example_emplate"
-  texture: "example_namespace:example/texture"
-  font: "example_font"
-  ascent: 8
-  height: 8
 - id: "role_template"
   font: "minecraft:default"
   ascent: 7
   height: 7
 - id: "starcompass"
-  font: "hud"
+  font: "mineinabyss:hud"
   ascent: 8
   height: 24
 - id: "guilds"
-  font: "guilds"
+  font: "mineinabyss:guilds"
   ascent: 16
   height: 224
 - id: "role_template"
-  font: "playerprofile"
+  font: "mineinabyss:playerprofile"
   ascent: 7
   height: 7
+- id: "orth_map"
+  texture: "mineinabyss:ui/orth_map2.png"
+  font: "mineinabyss:orth_map"
+  bitmapWidth: 5
+  bitmapHeight: 5
