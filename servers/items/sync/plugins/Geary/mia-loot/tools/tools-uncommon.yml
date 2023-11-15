@@ -19,11 +19,11 @@
           children:
             - !<mineinabyss:item>
               item:
-                prefab: mineinabyss:gold_sickle
+                prefab: mineinabyss:golden_sickle
             - !<minecraft:item>
-              name: minecraft:gold_axe
+              name: minecraft:golden_axe
             - !<minecraft:item>
-              name: minecraft:gold_pickaxe
+              name: minecraft:golden_pickaxe
     # Funnies
     - entries:
         - !<minecraft:group>

@@ -1,7 +1,7 @@
 - !<mineinabyss:loot_table>
   pools:
     # Monster food
-    - rolls: !<minecraft:uniform> { min: 0, max: 3 }
+    - rolls: !<minecraft:uniform> { min: 1, max: 3 }
       entries:
         - !<minecraft:group>
           weight: 3
