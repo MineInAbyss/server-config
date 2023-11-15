@@ -25,20 +25,23 @@ check-update: 5
 # The way that numbers are displayed.
 decimal-format: '#.##'
 
-# Should the layouts only be displayed to the user if they accepted the resource pack.
-display-only-accepted: false
-
 # If you would like to copy the built-resource pack to a different location.
 copy-resource-pack:
-  enabled: false
+  enabled: true
   # The location to copy each namespace to. The parent path is your plugins directory.
   namespaces:
-    minecraft: "Oraxen/pack/assets"
-    happyhud: "Oraxen/pack/assets"
+    minecraft: "Packy/templates/custom_hud/assets"
+    happyhud: "Packy/templates/custom_hud/assets"
 
 boss-bar:
+  # The maximum amount of shown boss bars a player can hold.
+  max: 7
+  # Which bossbar the huds display on.
   hud-position: 4
   color: white
 
+# Disable the huds for any players connected through geyser.
+disable-geyser-players: true
+
 # Do not change this.
-config-version: 5
+config-version: 6

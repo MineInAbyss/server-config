@@ -2,41 +2,67 @@ templates:
   "common":
     default: true
     forced: true
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/common"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "MineInAbyss-resourcepack"
+      branch: "develop"
+      subFolder: "common"
+  "modelengine":
+    default: true
+    forced: true
+    filePath: "ModelEngine/resource pack.zip"
+  "custom_hud":
+    default: true
+    forced: false
   "2d_tools":
     default: true
     forced: false
     conflictsWith:
     - "3d_tools"
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/2d_tools"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "MineInAbyss-resourcepack"
+      branch: "develop"
+      subFolder: "2d_tools"
   "new_armor":
     default: true
     forced: false
     conflictsWith:
     - "old_armor"
     - "vanilla_armor"
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/new_armor"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "MineInAbyss-resourcepack"
+      branch: "develop"
+      subFolder: "new_armor"
   "3d_tools":
     default: false
     forced: false
     conflictsWith:
     - "2d_tools"
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/3d_tools"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "MineInAbyss-resourcepack"
+      branch: "develop"
+      subFolder: "3d_tools"
   "old_armor":
     default: false
     forced: false
     conflictsWith:
     - "new_armor"
     - "vanilla_armor"
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/old_armor"
-  "custom_hud":
-    default: true
-    forced: false
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/custom_hud"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "MineInAbyss-resourcepack"
+      branch: "develop"
+      subFolder: "old_armor"
   "custom_music":
     default: false
     forced: false
-    githubUrl: "https://github.com/MineInAbyss/OST/tree/master"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "OST"
+      branch: "master"
   "vanilla_armor":
     default: false
     forced: false
@@ -52,8 +78,10 @@ templates:
   "build":
     default: true
     forced: false
-    githubUrl: "https://github.com/MineInAbyss/MineInAbyss-resourcepack/tree/develop/build"
   "premium_content":
     default: true
     forced: true
-    githubUrl: "https://github.com/MineInAbyss/ResourcePack-Premium-Content/tree/master"
+    githubDownload:
+      org: "MineInAbyss"
+      repo: "ResourcePack-Premium-Content"
+      branch: "master"
