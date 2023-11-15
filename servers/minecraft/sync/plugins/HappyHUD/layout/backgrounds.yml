@@ -7,8 +7,8 @@ backgrounds:
         x: 50
         y: 0
       offset:
-        x: -123
-        y: 31
+        x: -118
+        y: 43
     empty_offhand_background:
       asset: 'empty_offhand_background'
       align: center
@@ -16,8 +16,8 @@ backgrounds:
         x: 50
         y: 0
       offset:
-        x: -110
-        y: 31
+        x: -108
+        y: 43
     extra_background:
       asset: 'extra_background'
       align: center
@@ -25,8 +25,8 @@ backgrounds:
         x: 50.0
         y: 0.0
       offset:
-        x: -52
-        y: 54
+        x: -53
+        y: 53
     #background:
     #  asset: 'background'
     #  align: center

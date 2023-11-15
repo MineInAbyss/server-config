@@ -10,7 +10,7 @@ mineinabyss-orthcoins:
       font: "orthbanking"
       offset:
         x: -95
-        y: 10
+        y: 9
 mineinabyss-orthcoins-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
@@ -22,7 +22,7 @@ mineinabyss-orthcoins-offhand:
       font: "orthbanking"
       offset:
         x: -120
-        y: 10
+        y: 9
 mineinabyss-tokens:  
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
@@ -33,8 +33,8 @@ mineinabyss-tokens:
       text: "%mineinabyss_orthbanking_tokens%"
       font: "orthbanking"
       offset:
-        x: -95
-        y: 24
+        x: -94
+        y: 22
 mineinabyss-tokens-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
@@ -45,8 +45,8 @@ mineinabyss-tokens-offhand:
       text: "%mineinabyss_orthbanking_tokens%"
       font: "orthbanking"
       offset:
-        x: -120
-        y: 24
+        x: -119
+        y: 22
 
 # Abyss-Layers
 mineinabyss-orth:

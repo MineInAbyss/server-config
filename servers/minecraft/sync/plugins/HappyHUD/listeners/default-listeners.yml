@@ -1,6 +1,6 @@
-absorption:
-  value: '%player_absorption%'
-  max: '20.0'
 mount:
   value: '%mineinabyss_mount_health%'
   max: '%mineinabyss_mount_health_max%'
+absorption:
+  value: '%player_absorption%'
+  max: '20.0'
