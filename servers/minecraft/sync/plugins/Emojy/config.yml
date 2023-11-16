@@ -1,28 +1,28 @@
-defaultNamespace: "emotes"
-defaultFolder: "emotes"
-defaultFont: "emotes:emotes"
+defaultNamespace: emotes
+defaultFolder: emotes
+defaultFont: emotes:emotes
 defaultHeight: 8
 defaultAscent: 8
-spaceFont: "minecraft:space"
+spaceFont: minecraft:space
 requirePermissions: true
 generateResourcePack: true
 supportForceUnicode: true
 debug: true
 emojyList:
-  type: "CHAT"
+  type: CHAT
   ignoredEmoteIds: []
   ignoredGifIds: []
   ignoredFonts:
-  - "mineinabyss:guilds"
-  - "mineinabyss:blocky"
-  - "mineinabyss:hud"
-  - "mineinabyss:pvp"
-  - "minecraft:uniform"
-  - "mineinabyss:orthbanking"
-  - "mineinabyss:cosmetics"
-  - "mineinabyss:orth_map"
-  - "mineinabyss:orth_map2"
-  - "mineinabyss:playerprofile"
-  - "minecraft:default"
+    - mineinabyss:guilds
+    - mineinabyss:blocky
+    - mineinabyss:hud
+    - mineinabyss:pvp
+    - minecraft:uniform
+    - mineinabyss:orthbanking
+    - mineinabyss:cosmetics
+    - mineinabyss:orth_map
+    - mineinabyss:orth_map2
+    - mineinabyss:playerprofile
+    - minecraft:default
 supportedLanguages:
-- "en_US"
+  - en_US
