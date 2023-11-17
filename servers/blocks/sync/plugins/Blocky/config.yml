@@ -1,6 +1,6 @@
 menus:
   defaultMenu:
-    title: ":space_-8::blocky_default_menu:"
+    title: ':space_-8::blocky_default_menu:'
     height: 3
     blockButton:
       type: PAPER
@@ -12,13 +12,13 @@ menus:
       type: PAPER
       customModelData: 1
   blockMenu:
-    title: ":space_-8::blocky_grid_menu:"
+    title: ':space_-8::blocky_grid_menu:'
     height: 6
   wireMenu:
-    title: ":space_-8::blocky_grid_menu:"
+    title: ':space_-8::blocky_grid_menu:'
     height: 6
   furnitureMenu:
-    title: ":space_-8::blocky_grid_menu:"
+    title: ':space_-8::blocky_grid_menu:'
     height: 6
 # [restoreFunctionality]: Restores redstone and vanilla note functionality for noteblocks
 # NOTE: This reduces the total amount of custom block slots from 799 to 750
