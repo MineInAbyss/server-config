@@ -5,7 +5,6 @@ defaultHeight: 8
 defaultAscent: 8
 spaceFont: minecraft:space
 requirePermissions: true
-generateResourcePack: true
 supportForceUnicode: true
 debug: true
 emojyList:
@@ -21,7 +20,6 @@ emojyList:
     - mineinabyss:orthbanking
     - mineinabyss:cosmetics
     - mineinabyss:orth_map
-    - mineinabyss:orth_map2
     - mineinabyss:playerprofile
     - minecraft:default
 supportedLanguages:

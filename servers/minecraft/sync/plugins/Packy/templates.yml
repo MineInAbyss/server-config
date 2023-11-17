@@ -1,87 +1,91 @@
 templates:
-  "common":
+  common:
     default: true
     forced: true
     githubDownload:
-      org: "MineInAbyss"
-      repo: "MineInAbyss-resourcepack"
-      branch: "develop"
-      subFolder: "common"
-  "modelengine":
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: common
+  modelengine:
     default: true
     forced: true
-    filePath: "ModelEngine/resource pack.zip"
-  "custom_hud":
+    filePath: ModelEngine/resource pack.zip
+  custom_hud:
     default: true
     forced: false
-  "2d_tools":
+  emotes:
     default: true
-    forced: false
-    conflictsWith:
-    - "3d_tools"
-    githubDownload:
-      org: "MineInAbyss"
-      repo: "MineInAbyss-resourcepack"
-      branch: "develop"
-      subFolder: "2d_tools"
-  "new_armor":
+    forced: true
+    filePath: Emojy/pack.zip
+  2d_tools:
     default: true
     forced: false
     conflictsWith:
-    - "old_armor"
-    - "vanilla_armor"
+      - 3d_tools
     githubDownload:
-      org: "MineInAbyss"
-      repo: "MineInAbyss-resourcepack"
-      branch: "develop"
-      subFolder: "new_armor"
-  "3d_tools":
-    default: false
-    forced: false
-    conflictsWith:
-    - "2d_tools"
-    githubDownload:
-      org: "MineInAbyss"
-      repo: "MineInAbyss-resourcepack"
-      branch: "develop"
-      subFolder: "3d_tools"
-  "old_armor":
-    default: false
-    forced: false
-    conflictsWith:
-    - "new_armor"
-    - "vanilla_armor"
-    githubDownload:
-      org: "MineInAbyss"
-      repo: "MineInAbyss-resourcepack"
-      branch: "develop"
-      subFolder: "old_armor"
-  "custom_music":
-    default: false
-    forced: false
-    githubDownload:
-      org: "MineInAbyss"
-      repo: "OST"
-      branch: "master"
-  "vanilla_armor":
-    default: false
-    forced: false
-    conflictsWith:
-    - "new_armor"
-    - "old_armor"
-  "vanilla_tools":
-    default: false
-    forced: false
-    conflictsWith:
-    - "2d_tools"
-    - "3d_tools"
-  "build":
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: 2d_tools
+  new_armor:
     default: true
     forced: false
-  "premium_content":
+    conflictsWith:
+      - old_armor
+      - vanilla_armor
+    githubDownload:
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: new_armor
+  3d_tools:
+    default: false
+    forced: false
+    conflictsWith:
+      - 2d_tools
+    githubDownload:
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: 3d_tools
+  old_armor:
+    default: false
+    forced: false
+    conflictsWith:
+      - new_armor
+      - vanilla_armor
+    githubDownload:
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: old_armor
+  custom_music:
+    default: false
+    forced: false
+    githubDownload:
+      org: MineInAbyss
+      repo: OST
+      branch: master
+  vanilla_armor:
+    default: false
+    forced: false
+    conflictsWith:
+      - new_armor
+      - old_armor
+  vanilla_tools:
+    default: false
+    forced: false
+    conflictsWith:
+      - 2d_tools
+      - 3d_tools
+  build:
+    default: true
+    forced: false
+  premium_content:
     default: true
     forced: true
     githubDownload:
-      org: "MineInAbyss"
-      repo: "ResourcePack-Premium-Content"
-      branch: "master"
+      org: MineInAbyss
+      repo: ResourcePack-Premium-Content
+      branch: master

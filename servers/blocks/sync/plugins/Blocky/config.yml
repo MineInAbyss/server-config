@@ -3,13 +3,13 @@ menus:
     title: ":space_-8::blocky_default_menu:"
     height: 3
     blockButton:
-      type: "PAPER"
+      type: PAPER
       customModelData: 1
     wireButton:
-      type: "PAPER"
+      type: PAPER
       customModelData: 1
     furnitureButton:
-      type: "PAPER"
+      type: PAPER
       customModelData: 1
   blockMenu:
     title: ":space_-8::blocky_grid_menu:"
