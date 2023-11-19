@@ -1,5 +1,5 @@
 mcmeta:
-  format: 15
+  format: 18
   description: "Packy Resourcepack"
 icon: "pack.png"
 server:
@@ -8,32 +8,33 @@ server:
   publicAddress: "https://{{ lookup('env', 'SERVER_NAME', default='unknown') }}.pack.mineinabyss.com"
 prompt: ""
 force: false
+obfuscate: false
 cachedPackAmount: 18
 menu:
   title: "Packy Pack Picker"
   height: 6
   subMenus:
-    "hud":
+    hud:
       title: "Custom Hud"
       height: 6
       button:
-        type: "COMPASS"
+        type: COMPASS
         displayName: "<gold>Custom Hud"
       modifiers:
         offset:
           x: 4
-          y: 5
+          y: 4
         size:
           width: 1
           height: 1
-      type: "MENU"
+      type: MENU
       packs:
-        "custom_hud": {}
-    "music":
+        custom_hud: {}
+    music:
       title: "Music"
       height: 6
       button:
-        type: "JUKEBOX"
+        type: JUKEBOX
         displayName: "<gold>Music"
       modifiers:
         offset:
@@ -42,32 +43,15 @@ menu:
         size:
           width: 1
           height: 1
-      type: "MENU"
+      type: MENU
       packs:
-        "custom_music": {}
-    "build":
-      title: "Build"
-      height: 6
-      button:
-        type: "NOTE_BLOCK"
-        customModelData: 1
-        displayName: "<gold>Build"
-      modifiers:
-        offset:
-          x: 4
-          y: 3
-        size:
-          width: 1
-          height: 1
-      type: "MENU"
-      packs:
-        "custom_music": {}
-    "armor":
+        custom_music: {}
+    armor:
       title: "Armor Picker"
       height: 6
       button:
         itemFlags:
-        - "HIDE_ATTRIBUTES"
+        - HIDE_ATTRIBUTES
       modifiers:
         offset:
           x: 1
@@ -77,19 +61,19 @@ menu:
           height: 4
       type: "CYCLING"
       packs:
-        "new_armor":
+        new_armor:
           button:
-            type: "NETHERITE_HELMET"
+            type: NETHERITE_HELMET
             displayName: "<gold>New Armor"
-        "old_armor":
+        old_armor:
           button:
-            type: "DIAMOND_HELMET"
+            type: DIAMOND_HELMET
             displayName: "<gold>Old Armor"
-        "vanilla_armor":
+        vanilla_armor:
           button:
-            type: "IRON_HELMET"
+            type: IRON_HELMET
             displayName: "<gold>Vanilla"
-    "tools":
+    tools:
       title: "Packy Pack Picker2"
       height: 6
       button:
@@ -103,17 +87,17 @@ menu:
         size:
           width: 2
           height: 4
-      type: "CYCLING"
+      type: CYCLING
       packs:
-        "2d_tools":
+        2d_tools:
           button:
-            type: "NETHERITE_SWORD"
+            type: NETHERITE_SWORD
             displayName: "<gold>2D Tools"
-        "3d_tools":
+        3d_tools:
           button:
-            type: "DIAMOND_SWORD"
+            type: DIAMOND_SWORD
             displayName: "<gold>3D Tools"
-        "vanilla_tools":
+        vanilla_tools:
           button:
-            type: "IRON_SWORD"
+            type: IRON_SWORD
             displayName: "<gold>Vanilla Tools"
