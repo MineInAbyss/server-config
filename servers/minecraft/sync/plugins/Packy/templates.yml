@@ -18,6 +18,14 @@ templates:
     default: true
     forced: true
     filePath: Emojy/pack.zip
+  build:
+    default: true
+    forced: false
+    githubDownload:
+      org: MineInAbyss
+      repo: MineInAbyss-resourcepack
+      branch: develop
+      subFolder: build
   2d_tools:
     default: true
     forced: false
@@ -79,9 +87,6 @@ templates:
     conflictsWith:
       - 2d_tools
       - 3d_tools
-  build:
-    default: true
-    forced: false
   premium_content:
     default: true
     forced: true
