@@ -23,7 +23,7 @@ mineinabyss-orthcoins-offhand:
       offset:
         x: -120
         y: 9
-mineinabyss-tokens:  
+mineinabyss-tokens:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
     - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
@@ -73,13 +73,17 @@ mineinabyss-edge_of_the_abyss:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      align: left
       text: "%mineinabyss_layer%"
       #font: "mineinabyss-drop-shadow" # This breaks it
+      offset:
+        x: 0
+        y: 0
     icon:
       texture:
         path: assets/mineinabyss/redw.png
       offset:
-        x: -20
+        x: 0
         y: 6
 mineinabyss-forest_of_temptation:
   conditions:
@@ -124,7 +128,7 @@ mineinabyss-goblets_of_giants:
       texture:
         path: assets/mineinabyss/moonw.png
       offset:
-        x: -20
+        x: 0
         y: 6
 mineinabyss-sea_of_corpses:
   conditions:
@@ -135,6 +139,9 @@ mineinabyss-sea_of_corpses:
       align: left
       text: "%mineinabyss_layer%"
       font: "default-drop-shadow"
+      offset:
+        x: 14
+        y: 0
     icon:
       texture:
         path: assets/mineinabyss/blackw.png
@@ -144,12 +151,12 @@ mineinabyss-sea_of_corpses:
 
 top_background:
   conditions:
-    - placeholder{ph=%mineinabyss_hud_show_top_bar%} true hide
+    - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     icon:
       scale:
-        y: 1.4
-        x: 2.0
+        y: 1.2
+        x: 1.6
       texture:
         path: assets/mineinabyss/top_background.png
       color: "#FFFFFF"
