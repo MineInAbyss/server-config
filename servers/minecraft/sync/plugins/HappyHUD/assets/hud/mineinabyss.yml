@@ -154,9 +154,6 @@ top_background:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     icon:
-      scale:
-        y: 1.2
-        x: 1.7
       texture:
         path: assets/mineinabyss/top_background.png
       color: "#FFFFFF"
