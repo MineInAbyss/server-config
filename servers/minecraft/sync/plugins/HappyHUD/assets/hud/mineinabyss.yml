@@ -117,7 +117,7 @@ mineinabyss-great_fault:
         y: 6
 mineinabyss-goblets_of_giants:
   conditions:
-    - placeholder{ph=%mineinabyss_layer_simple%;v=the_goblets_of_giants} true hide
+    - placeholder{ph=%mineinabyss_layer_simple%;v=goblets_of_giants} true hide
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
