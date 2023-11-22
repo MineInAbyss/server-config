@@ -57,7 +57,7 @@ mineinabyss-orth:
     text:
       align: left
       text: "%mineinabyss_layer%"
-      font: "default-drop-shadow"
+      #font: "default-drop-shadow"
       offset:
         x: 0
         y: 0
@@ -138,9 +138,9 @@ mineinabyss-sea_of_corpses:
     text:
       align: left
       text: "%mineinabyss_layer%"
-      font: "default-drop-shadow"
+      #font: "default-drop-shadow"
       offset:
-        x: 14
+        x: 0
         y: 0
     icon:
       texture:
@@ -156,7 +156,7 @@ top_background:
     icon:
       scale:
         y: 1.2
-        x: 1.6
+        x: 1.7
       texture:
         path: assets/mineinabyss/top_background.png
       color: "#FFFFFF"
@@ -175,7 +175,7 @@ mineinabyss-depth:
         path: assets/mineinabyss/depth_meter.png
       offset:
         x: -20
-        y: 4
+        y: 6
 
 mineinabyss-starcompass:
   conditions:
