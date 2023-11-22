@@ -55,9 +55,10 @@ mineinabyss-orth:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "default-drop-shadow"
+      font: "default-outline"
       offset:
         x: 0
         y: 0
@@ -73,9 +74,10 @@ mineinabyss-edge_of_the_abyss:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow" # This breaks it
+      font: "default-outline"
       offset:
         x: 0
         y: 0
@@ -91,9 +93,10 @@ mineinabyss-forest_of_temptation:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow"
+      font: "default-outline"
     icon:
       texture:
         path: assets/mineinabyss/bluew.png
@@ -106,9 +109,10 @@ mineinabyss-great_fault:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow"
+      font: "default-outline"
     icon:
       texture:
         path: assets/mineinabyss/moonw.png
@@ -121,9 +125,10 @@ mineinabyss-goblets_of_giants:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "mineinabyss-drop-shadow"
+      font: "default-outline"
     icon:
       texture:
         path: assets/mineinabyss/moonw.png
@@ -136,9 +141,10 @@ mineinabyss-sea_of_corpses:
     - placeholder{ph=%mineinabyss_hud_depthmeter%;v=false} false hide
   layers:
     text:
+      outlined: false
       align: left
       text: "%mineinabyss_layer%"
-      #font: "default-drop-shadow"
+      font: "default-outline"
       offset:
         x: 0
         y: 0

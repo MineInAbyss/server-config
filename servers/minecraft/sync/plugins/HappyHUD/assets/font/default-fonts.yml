@@ -186,7 +186,7 @@ default-outline:
     spaces:
       type: "space"
       advances:
-        " ": 4
+        " ": 3
         "\u200c": 0
     nonlatin-european:
       type: "bitmap"
