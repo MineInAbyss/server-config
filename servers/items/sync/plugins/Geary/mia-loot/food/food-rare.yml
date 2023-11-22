@@ -1,6 +1,19 @@
 - !<mineinabyss:loot_table>
   pools:
-    - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+    # Monster food
+    - rolls: !<minecraft:uniform> { min: 1, max: 3 }
+      entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:corpse_weeper_meat_cooked }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:inbyo_meat_cooked }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:neritantan_meat_cooked }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:onitsuchi_wing_cooked }
+          functions:
+            - !<minecraft:set_count>
+              count: !<minecraft:uniform> { min: 1, max: 4 }

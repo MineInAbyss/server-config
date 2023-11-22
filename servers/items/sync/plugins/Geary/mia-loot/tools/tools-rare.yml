@@ -1,6 +1,37 @@
 - !<mineinabyss:loot_table>
   pools:
+    # Tools
     - entries:
-        - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+        # Iron tools
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:iron_sickle
+            - !<minecraft:item>
+              name: minecraft:iron_axe
+            - !<minecraft:item>
+              name: minecraft:iron_pickaxe
+        # Diamond tools
+        - !<minecraft:group>
+          weight: 1
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:diamond_sickle
+            - !<minecraft:item>
+              name: minecraft:diamond_axe
+            - !<minecraft:item>
+              name: minecraft:diamond_pickaxe
+    # Relics
+    - entries:
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:star_compass }
+            - !<mineinabyss:item>
+              item: { prefab: mineinabyss:depth_meter }
+      conditions:
+        - !<minecraft:random_chance> { chance: 0.5 }

@@ -1,5 +1,30 @@
 - !<mineinabyss:loot_table>
   pools:
+    # Tools
+    - entries:
+        # Iron tools
+        - !<minecraft:group>
+          weight: 3
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:iron_sickle
+            - !<minecraft:item>
+              name: minecraft:iron_axe
+            - !<minecraft:item>
+              name: minecraft:iron_pickaxe
+        # Stone tools
+        - !<minecraft:group>
+          weight: 1
+          children:
+            - !<mineinabyss:item>
+              item:
+                prefab: mineinabyss:golden_sickle
+            - !<minecraft:item>
+              name: minecraft:golden_axe
+            - !<minecraft:item>
+              name: minecraft:golden_pickaxe
+    # Funnies
     - entries:
         - !<minecraft:group>
           weight: 3
