@@ -1,4 +1,3 @@
-{% set secret_file = lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) %}
 # This is the global configuration file for Paper.
 # As you can see, there's a lot to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
@@ -13,18 +12,12 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 28
-chunk-loading:
-  autoconfig-send-distance: true
-  enable-frustum-priority: false
-  global-max-chunk-load-rate: -1.0
-  global-max-chunk-send-rate: -1.0
-  global-max-concurrent-loads: 500.0
-  max-concurrent-sends: 2
-  min-load-radius: 2
-  player-max-chunk-load-rate: -1.0
-  player-max-concurrent-loads: 20.0
-  target-player-chunk-send-rate: 100.0
+_version: 29
+block-updates:
+  disable-chorus-plant-updates: false
+  disable-mushroom-block-updates: false
+  disable-noteblock-updates: true
+  disable-tripwire-updates: true
 chunk-loading-advanced:
   auto-config-send-distance: true
   player-max-concurrent-chunk-generates: 0
@@ -61,7 +54,6 @@ item-validation:
   resolve-selectors-in-books: false
 logging:
   deobfuscate-stacktraces: true
-  log-player-ip-addresses: true
 messages:
   kick:
     authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
@@ -75,8 +67,8 @@ misc:
   chat-threads:
     chat-executor-core-size: -1
     chat-executor-max-size: -1
+  compression-level: default
   fix-entity-position-desync: true
-  lag-compensate-block-breaking: true
   load-permissions-yml-before-plugins: true
   max-joins-per-tick: 3
   region-file-cache-size: 256
@@ -102,9 +94,9 @@ proxies:
     online-mode: true
   proxy-protocol: false
   velocity:
-    enabled: {{ secret_file | length > 0 }}
-    online-mode: true
-    secret: {{ secret_file if secret_file | length > 0 else 'N/A' }}
+    enabled: false
+    online-mode: false
+    secret: ''
 scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false
@@ -118,9 +110,9 @@ timings:
   enabled: true
   hidden-config-entries:
     - database
+    - proxies.velocity.secret
     - settings.bungeecord-addresses
     - settings.velocity-support.secret
-    - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
   server-name: Unknown Server
@@ -132,6 +124,7 @@ unsupported-settings:
   allow-headless-pistons: false
   allow-permanent-block-break-exploits: false
   allow-piston-duplication: false
+  compression-format: ZLIB
   perform-username-validation: true
 watchdog:
   early-warning-delay: 10000
