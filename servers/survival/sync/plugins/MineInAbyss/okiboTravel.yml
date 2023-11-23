@@ -1,476 +1,476 @@
 okiboStations:
-- name: "GoldenBridge"
-  location:
-    world: "world"
-    x: -617.0
-    y: 147.0
-    z: -68.0
-  subStations: []
-- name: "GuildHQ"
-  location:
-    world: "world"
-    x: -121.0
-    y: 130.0
-    z: -571.0
-  subStations: []
-- name: "TowerDistrict"
-  location:
-    world: "world"
-    x: 422.0
-    y: 136.0
-    z: -345.0
-  subStations: []
-- name: "DocksEast"
-  location:
-    world: "world"
-    x: 1010.0
-    y: 32.0
-    z: -405.0
-  subStations: []
-- name: "VillageDistrict"
-  location:
-    world: "world"
-    x: 580.0
-    y: 128.0
-    z: 130.0
-  subStations: []
-- name: "CliffDistrict"
-  location:
-    world: "world"
-    x: 422.0
-    y: 128.0
-    z: 450.0
-  subStations: []
-- name: "SlumDistrict"
-  location:
-    world: "world"
-    x: -67.0
-    y: 131.0
-    z: 647.0
-  subStations: []
-- name: "Orphanage"
-  location:
-    world: "world"
-    x: -643.0
-    y: 145.0
-    z: 177.0
-  subStations: []
-- name: "DocksWest"
-  location:
-    world: "world"
-    x: -985.0
-    y: 34.0
-    z: 665.0
-  subStations: []
+  - name: GoldenBridge
+    location:
+      world: world
+      x: -617.0
+      y: 147.0
+      z: -68.0
+    subStations: []
+  - name: GuildHQ
+    location:
+      world: world
+      x: -121.0
+      y: 130.0
+      z: -571.0
+    subStations: []
+  - name: TowerDistrict
+    location:
+      world: world
+      x: 422.0
+      y: 136.0
+      z: -345.0
+    subStations: []
+  - name: DocksEast
+    location:
+      world: world
+      x: 1010.0
+      y: 32.0
+      z: -405.0
+    subStations: []
+  - name: VillageDistrict
+    location:
+      world: world
+      x: 580.0
+      y: 128.0
+      z: 130.0
+    subStations: []
+  - name: CliffDistrict
+    location:
+      world: world
+      x: 422.0
+      y: 128.0
+      z: 450.0
+    subStations: []
+  - name: SlumDistrict
+    location:
+      world: world
+      x: -67.0
+      y: 131.0
+      z: 647.0
+    subStations: []
+  - name: Orphanage
+    location:
+      world: world
+      x: -643.0
+      y: 145.0
+      z: 177.0
+    subStations: []
+  - name: DocksWest
+    location:
+      world: world
+      x: -985.0
+      y: 34.0
+      z: 665.0
+    subStations: []
 okiboMaps:
-- station: "GoldenBridge"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.6
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 3.1
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.2
-      y: 2.7
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.6
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 2.4
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.7
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 3.2
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-- station: "GuildHQ"
-  text: ":orth_1::orth_2::orth_3::orth_4::orth_5::orth_6::orth_7::orth_8::orth_9::orth_10:"
-  scale:
-    x: 0.65
-    y: 0.65
-    z: 0.65
-  hitboxes:
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+  - station: GoldenBridge
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.0
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.0
-      z: 0.0
-- station: "TowerDistrict"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.6
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 3.1
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.2
+          y: 2.7
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.6
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 2.4
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.7
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 3.2
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+  - station: GuildHQ
+    text: ':orth_1::orth_2::orth_3::orth_4::orth_5::orth_6::orth_7::orth_8::orth_9::orth_10:'
+    scale:
+      x: 0.65
+      y: 0.65
+      z: 0.65
+    hitboxes:
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.0
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.0
+          z: 0.0
+  - station: TowerDistrict
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-- station: "DocksEast"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-- station: "VillageDistrict"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+  - station: DocksEast
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-- station: "CliffDistrict"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+  - station: VillageDistrict
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-- station: "SlumDistrict"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.5
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+  - station: CliffDistrict
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-- station: "DocksWest"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "Orphanage"
-    offset:
-      x: -0.9
-      y: 3.0
-      z: 0.0
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.0
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+  - station: SlumDistrict
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-- station: "Orphanage"
-  scale:
-    x: 2.0
-    y: 2.0
-    z: 2.0
-  hitboxes:
-  - destStation: "GoldenBridge"
-    offset:
-      x: -0.4
-      y: 3.5
-      z: 0.0
-  - destStation: "GuildHQ"
-    offset:
-      x: 0.5
-      y: 3.1
-      z: 0.0
-  - destStation: "TowerDistrict"
-    offset:
-      x: 1.0
-      y: 2.6
-      z: 0.0
-  - destStation: "DocksEast"
-    offset:
-      x: 1.7
+      z: 2.0
+    hitboxes:
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.5
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+  - station: DocksWest
+    scale:
+      x: 2.0
       y: 2.0
-      z: 0.0
-  - destStation: "VillageDistrict"
-    offset:
-      x: 0.6
-      y: 2.1
-      z: 0.0
-  - destStation: "CliffDistrict"
-    offset:
-      x: 0.1
-      y: 1.9
-      z: 0.0
-  - destStation: "SlumDistrict"
-    offset:
-      x: -0.9
-      y: 2.3
-      z: 0.0
-  - destStation: "DocksWest"
-    offset:
-      x: -1.8
-      y: 2.7
-      z: 0.0
+      z: 2.0
+    hitboxes:
+      - destStation: Orphanage
+        offset:
+          x: -0.9
+          y: 3.0
+          z: 0.0
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.0
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+  - station: Orphanage
+    scale:
+      x: 2.0
+      y: 2.0
+      z: 2.0
+    hitboxes:
+      - destStation: GoldenBridge
+        offset:
+          x: -0.4
+          y: 3.5
+          z: 0.0
+      - destStation: GuildHQ
+        offset:
+          x: 0.5
+          y: 3.1
+          z: 0.0
+      - destStation: TowerDistrict
+        offset:
+          x: 1.0
+          y: 2.6
+          z: 0.0
+      - destStation: DocksEast
+        offset:
+          x: 1.7
+          y: 2.0
+          z: 0.0
+      - destStation: VillageDistrict
+        offset:
+          x: 0.6
+          y: 2.1
+          z: 0.0
+      - destStation: CliffDistrict
+        offset:
+          x: 0.1
+          y: 1.9
+          z: 0.0
+      - destStation: SlumDistrict
+        offset:
+          x: -0.9
+          y: 2.3
+          z: 0.0
+      - destStation: DocksWest
+        offset:
+          x: -1.8
+          y: 2.7
+          z: 0.0
 costPerKM: 2.0

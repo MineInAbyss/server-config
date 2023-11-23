@@ -1,6 +1,6 @@
 enabled: false
 guildChattyChannel:
-  channelType: "PRIVATE"
+  channelType: PRIVATE
   permission: ""
   logToConsole: true
   simpleConsoleMessages: false
@@ -8,8 +8,8 @@ guildChattyChannel:
   discordsrv: false
   isDefaultChannel: false
   isStaffChannel: false
-  format: ":survival:<shift:-8>:guildchat: <chatty_nickname>: "
-  messageColor: "gold"
+  format: ':survival:<shift:-8>:guildchat: <chatty_nickname>: '
+  messageColor: gold
   channelRadius: 0
   channelAliases: []
 guildNameMaxLength: 20

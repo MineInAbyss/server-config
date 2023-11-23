@@ -1,5 +1,8 @@
 messages:
-  tableNotFound: "Could not find loot table %s. Please let an administrator know!"
-  alreadyLooted: "You already looted this chest on %s"
-  noPermissionToEdit: "You don't have permission to edit loot crates"
-  noPermissionToOpen: "You don't have permission to open loot crates"
+  tableNotFound: Could not find loot table %s. Please let an administrator know!
+  alreadyLooted: You already looted this chest on %s
+  noPermissionToEdit: You don't have permission to edit loot crates
+  noPermissionToOpen: You don't have permission to open loot crates
+  noPermissionToBreak: You don't have permission to break loot crates, ask a member
+    of staff if you need one removed.
+  lootTableItemTitle: '<green>Loot Crate: <gold>%s<yellow>:%s'
