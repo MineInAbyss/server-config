@@ -325,21 +325,12 @@ emotes:
   - id: dev
     template: role_template
     texture: mineinabyss:ui/icons/dev.png
-  - id: logo1
+  - id: logo
     font: minecraft:default
-    texture: mineinabyss:ui/icons/logo/logo1.png
+    texture: mineinabyss:ui/icons/logo/full_logo.png
     height: 30
     ascent: 30
-  - id: logo2
-    font: minecraft:default
-    texture: mineinabyss:ui/icons/logo/logo2.png
-    height: 30
-    ascent: 30
-  - id: logo3
-    font: minecraft:default
-    texture: mineinabyss:ui/icons/logo/logo3.png
-    height: 30
-    ascent: 30
+    bitmapWidth: 3
   - id: projectmanager
     template: role_template
     texture: mineinabyss:ui/roles/projectmanager.png
