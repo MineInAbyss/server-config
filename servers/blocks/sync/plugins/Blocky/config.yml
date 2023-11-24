@@ -5,12 +5,15 @@ menus:
     blockButton:
       type: PAPER
       customModelData: 1
+      displayName: "<gradient:blue:aqua>Block Menu"
     wireButton:
       type: PAPER
       customModelData: 1
+      displayName: "<gradient:dark_green:green>Wire Menu"
     furnitureButton:
       type: PAPER
       customModelData: 1
+      displayName: "<gradient:gold:yellow>Furniture Menu"
   blockMenu:
     title: ':space_-8::blocky_grid_menu:'
     height: 6
@@ -24,7 +27,6 @@ menus:
 # NOTE: This reduces the total amount of custom block slots from 799 to 750
 noteBlocks:
   isEnabled: true
-  restoreFunctionality: false
 tripWires:
   isEnabled: true
 # You will need to disable these in world-generation if you wanna use it
