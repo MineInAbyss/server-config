@@ -94,9 +94,9 @@ proxies:
     online-mode: true
   proxy-protocol: false
   velocity:
-    enabled: false
-    online-mode: false
-    secret: ''
+    enabled: {{ secret_file | length > 0 }}
+    online-mode: true
+    secret: {{ secret_file if secret_file | length > 0 else 'N/A' }}
 scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false
