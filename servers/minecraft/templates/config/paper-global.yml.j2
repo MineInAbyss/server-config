@@ -1,3 +1,4 @@
+{% set secret_file = lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) %}
 # This is the global configuration file for Paper.
 # As you can see, there's a lot to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
