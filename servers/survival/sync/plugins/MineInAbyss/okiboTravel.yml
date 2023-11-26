@@ -110,11 +110,11 @@ okiboMaps:
           y: 3.5
           z: 0.0
   - station: GuildHQ
-    text: ':orth_1::orth_2::orth_3::orth_4::orth_5::orth_6::orth_7::orth_8::orth_9::orth_10:'
+    text: ':orth2:'
     scale:
-      x: 0.65
-      y: 0.65
-      z: 0.65
+      x: 2.0
+      y: 2.0
+      z: 2.0
     hitboxes:
       - destStation: TowerDistrict
         offset:

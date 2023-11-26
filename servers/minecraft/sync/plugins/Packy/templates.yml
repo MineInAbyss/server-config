@@ -26,6 +26,13 @@ templates:
       repo: MineInAbyss-resourcepack
       branch: develop
       subFolder: build
+  premium_content:
+    default: true
+    forced: true
+    githubDownload:
+      org: MineInAbyss
+      repo: ResourcePack-Premium-Content
+      branch: master
   2d_tools:
     default: true
     forced: false
@@ -87,10 +94,3 @@ templates:
     conflictsWith:
       - 2d_tools
       - 3d_tools
-  premium_content:
-    default: true
-    forced: true
-    githubDownload:
-      org: MineInAbyss
-      repo: ResourcePack-Premium-Content
-      branch: master

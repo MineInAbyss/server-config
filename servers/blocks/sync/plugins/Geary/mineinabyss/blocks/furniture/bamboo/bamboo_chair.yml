@@ -2,12 +2,12 @@
   from: [mineinabyss:wood, mineinabyss:ground_furniture]
 - !<geary:set.item>
   item:
-    type: LEATHER_HORSE_ARMOR
+    type: TIPPED_ARROW
     displayName: <white>Bamboo Chair
     customModelData: 2
     color: 255, 255, 255
     itemFlags:
-      - HIDE_DYE
+      - HIDE_POTION_EFFECTS
 - !<blocky:furniture>
   rotationType: STRICT
   interactionHitbox:
