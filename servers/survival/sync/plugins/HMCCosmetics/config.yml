@@ -26,7 +26,7 @@ cosmetic-settings:
     enabled: true
     # Which gamemodes should cosmetics be disabled for. This is useful for servers that have a creative world. All options are here, https://hub.spigotmc.org/javadocs/spigot/org/bukkit/GameMode.html
     gamemodes:
-    - SPECTATOR
+      - SPECTATOR
 
   # This disables the entire internal emote system within the plugin. This option requires a restart.
   emote-enable: false
@@ -87,7 +87,7 @@ menu-settings:
 dye-menu:
   # If you use ItemsAdder, set this to "§f:offset_-8::dye_menu:"
   # If you use Oraxen, set this to "<glyph:neg_shift_8><glyph:dye_menu>"
-  title: ':cosmetic_dye_menu:'
+  title: ':space_-8::cosmetic_dye_menu:'
   input-slot: 10
   output-slot: 16
 hook-settings:
