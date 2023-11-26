@@ -54,12 +54,12 @@ backgrounds:
       offset:
         x: -26.0
         y: 104
-    top_background:
-      asset: 'top_background'
-      align: center
-      position:
-        x: 50.0
-        y: 100.0
-      offset:
-        x: 0.0
-        y: 0
+    #top_background:
+    #  asset: 'top_background'
+    #  align: center
+    #  position:
+    #    x: 50.0
+    #    y: 100.0
+    #  offset:
+    #    x: 0.0
+    #    y: 0

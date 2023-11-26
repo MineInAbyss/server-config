@@ -15,12 +15,12 @@ layout:
     - "vanilla"
     - "orthbanking"
     - "layers"
-    - "relics_and_tools"
+    #- "relics_and_tools"
     - "misc-layout"
     - "effect-layout"
 
 # The default value for how often placeholders should check for an update.
-check-update: 5
+check-update: 20
 
 # The way that numbers are displayed.
 decimal-format: '#.##'
