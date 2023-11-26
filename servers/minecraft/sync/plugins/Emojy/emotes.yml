@@ -581,11 +581,5 @@ emotes:
     texture: mineinabyss:ui/blocky/grid_menu.png
     height: 256
     ascent: 14
-  - id: orth1
-    template: orth_map
-  - id: orth2
-    template: orth_map
-  - id: orth3
-    template: orth_map
-  - id: orth4
+  - id: orth
     template: orth_map

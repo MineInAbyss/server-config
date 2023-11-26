@@ -18,7 +18,7 @@ templates:
   - id: orth_map
     texture: mineinabyss:ui/orth_map.png
     font: mineinabyss:orth_map
-    height: 7
-    ascent: 7
+    height: 30
+    ascent: 30
     bitmapWidth: 2
     bitmapHeight: 2
