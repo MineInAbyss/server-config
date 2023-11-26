@@ -25,7 +25,7 @@ neritantan_backpack:
 camper_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
-  dyeable: false
+  dyeable: true
   item:
     material: geary:cosmetics:camper_backpack
 generic_backpack:
@@ -39,3 +39,9 @@ generic_backpack:
     item-flags:
       - HIDE_POTION_EFFECTS
     model-data: 105
+explorer_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.backpack.explorer_backpack"
+  dyeable: true
+  item:
+    material: geary:cosmetics:explorer_backpack

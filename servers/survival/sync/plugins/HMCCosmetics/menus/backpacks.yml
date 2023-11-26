@@ -33,22 +33,6 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-  miner_backpack:
-    slots:
-      - 19
-    item:
-      material: hmccosmetics:miner_backpack
-      lore:
-        - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_miner_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_miner_backpack%"
-    type: cosmetic
-    cosmetic: miner_backpack
-    actions:
-      on-equip:
-        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
-      on-unequip:
-        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   neritantan_backpack:
     slots:
       - 3
@@ -65,6 +49,11 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+
+
+
+
+
   camper_backpack:
     slots:
       - 18
@@ -76,6 +65,38 @@ items:
         - "<rainbow>Dyeable"
     type: cosmetic
     cosmetic: camper_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  miner_backpack:
+    slots:
+      - 19
+    item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<gray><i>Patreon-Exclusive"
+        - "<rainbow>Dyeable"
+    type: cosmetic
+    cosmetic: miner_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  explorer_backpack:
+    slots:
+      - 20
+    item:
+      material: hmccosmetics:explorer_backpack
+      lore:
+        - ""
+        - "<gray><i>Patreon-Exclusive"
+        - "<rainbow>Dyeable"
+    type: cosmetic
+    cosmetic: explorer_backpack
     actions:
       on-equip:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
