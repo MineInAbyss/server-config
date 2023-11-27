@@ -109,8 +109,13 @@ okiboMaps:
           x: -0.9
           y: 3.5
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: GuildHQ
-    text: ':orth2:'
     scale:
       x: 2.0
       y: 2.0
@@ -156,6 +161,12 @@ okiboMaps:
           x: -0.4
           y: 3.0
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.2
   - station: TowerDistrict
     scale:
       x: 2.0
@@ -202,6 +213,12 @@ okiboMaps:
           x: 0.5
           y: 3.1
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: DocksEast
     scale:
       x: 2.0
@@ -248,6 +265,12 @@ okiboMaps:
           x: 1.0
           y: 2.6
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: VillageDistrict
     scale:
       x: 2.0
@@ -294,6 +317,12 @@ okiboMaps:
           x: 1.7
           y: 2.0
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: CliffDistrict
     scale:
       x: 2.0
@@ -340,6 +369,12 @@ okiboMaps:
           x: 0.6
           y: 2.1
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: SlumDistrict
     scale:
       x: 2.0
@@ -381,6 +416,12 @@ okiboMaps:
           x: 0.1
           y: 1.9
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: DocksWest
     scale:
       x: 2.0
@@ -427,6 +468,12 @@ okiboMaps:
           x: -0.9
           y: 2.3
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.1
+        y: 0.0
+        z: 0.0
   - station: Orphanage
     scale:
       x: 2.0
@@ -473,4 +520,10 @@ okiboMaps:
           x: -1.8
           y: 2.7
           z: 0.0
+    icon:
+      text: ':orthmap_icon:'
+      offset:
+        x: 0.3
+        y: 0.0
+        z: 0.0
 costPerKM: 2.0

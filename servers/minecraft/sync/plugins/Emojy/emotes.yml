@@ -581,5 +581,10 @@ emotes:
     texture: mineinabyss:ui/blocky/grid_menu.png
     height: 256
     ascent: 14
-  - id: orth
+  - id: orthmap_icon
+    font: mineinabyss:orth_map2
+    texture: minecraft:gui/sprites/icon/accessibility.png
+    height: 7
+    ascent: 7
+  - id: orthmap
     template: orth_map
