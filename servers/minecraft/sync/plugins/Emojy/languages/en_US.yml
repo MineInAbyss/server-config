@@ -1,47 +1,67 @@
-mineinabyss.tutorial.general_info: "<gray>General Info</gray>"
-mineinabyss.tutorial.general_info.1: "The abyss goes down to Layer 5"
-mineinabyss.tutorial.general_info.2: "The curse exists in the Abyss"
-mineinabyss.tutorial.general_info.3: "The rank you have is determined by what layer you are on"
-mineinabyss.tutorial.general_info.4: "Going down water will damage you"
-mineinabyss.tutorial.general_info.5: "There is no way to negate fall damage"
-mineinabyss.tutorial.general_info.6: "Layer 6 is not in development yet"
-mineinabyss.tutorial.general_info.7: "Server is anime-only, discussing manga-content is not allowed"
-mineinabyss.tutorial.general_info.8: "Ores spawn in as you mine, do not expect to see any in walls"
-mineinabyss.tutorial.general_info.9: "You can climb a wall by right-clicking it."
-mineinabyss.tutorial.general_info.10: "Holding Space whilst climbing will make you climb up"
-mineinabyss.tutorial.general_info.11: "Holding Sneak whilst climbing will make you climb down"
-mineinabyss.tutorial.rules: "<red>Rules</red>"
-mineinabyss.tutorial.rules.1: "<#e91e63>No griefing of other people's builds</#e91e63>"
-mineinabyss.tutorial.rules.2: "<#e91e63>Hacks that give the player an unfair advantage are not allowed</#e91e63>"
-mineinabyss.tutorial.rules.3: "<#e91e63>Be nice and don't annoy people</#e91e63>"
-mineinabyss.tutorial.rules.4: "<#e91e63>No spamming the chat. Arguments should happen outside of global chat</#e91e63>"
-mineinabyss.tutorial.rules.5: "<#e91e63>Laddershafts, rails, and staircases are <b>not allowed</b> above Layer 4</#e91e63>"
-mineinabyss.tutorial.rules.6: "<#e91e63>You are not allowed to take advantage of any bug or exploit you may come across.</#e91e63>"
-mineinabyss.tutorial.welcome.1: "<yellow>Welcome to <gradient:#ff7043:#ffca28:#ff7043>Mine In Abyss!"
-mineinabyss.tutorial.welcome.2: "<yellow>Here are some tips to get you started."
-mineinabyss.tutorial.welcome.3: "<dark_aqua>Do <aqua>/discord</aqua> to get an invite to our Discord"
-mineinabyss.tutorial.welcome.4: "<dark_aqua>Visit <light_purple>#information</light_purple> for general server info"
-mineinabyss.tutorial.start: "<light_purple>Follow the purple arrows"
-mineinabyss.tutorial.bonfire.1: "<red>Bonfires are used to set Respawn Points"
-mineinabyss.tutorial.bonfire.2: "<red>You can find the recipe for them in"
-mineinabyss.tutorial.bonfire.3: "<red>your recipe book in <dark_red>Crafting Tables"
-mineinabyss.tutorial.bonfire.4: "<red>To set a spawnpoint do <dark_red>Crouch + Right Click"
-mineinabyss.tutorial.crops.1: "<gold>Right-clicking <yellow>crops will harvest and replant it"
-mineinabyss.tutorial.crops.2: "<gold>Sickles <yellow>are tools used to harvest <yellow>large areas at once."
-mineinabyss.tutorial.crops.3: "<yellow>Recipe is found in your recipe book"
-mineinabyss.tutorial.water.1: "<aqua>Water, like every other block,"
-mineinabyss.tutorial.water.2: "<aqua> does not negate fall damage."
-mineinabyss.tutorial.water.3: "<aqua>Swimming down or walking under"
-mineinabyss.tutorial.water.4: "<aqua>waterfalls will damage you."
-mineinabyss.tutorial.emotes.1: "<green>Emotes can be used by typing <dark_green><bold>:emtename: :siggy:"
-mineinabyss.tutorial.emotes.2: "<green>You can find all the emotes in <dark_green><bold>/emote list"
-mineinabyss.tutorial.emotes.3: "<gold>Patreon <yellow>and <gold>Ko-Fi <yellow>supporters have access"
-mineinabyss.tutorial.emotes.4: "<yellow>to using GIFs like <white>:gurawave:"
-mineinabyss.tutorial.recipes.1: "<green>All custom recipes can be found"
-mineinabyss.tutorial.recipes.2: "<green>within the <dark_green>Recipe Book <green>in your"
-mineinabyss.tutorial.recipes.3: "<green>inventory, crafting table, and furnaces"
-mineinabyss.tutorial.ores.1: "<yellow>Ores generate as you mine,"
-mineinabyss.tutorial.ores.2: "and different <gold>Layers <yellow>have different ores and %."
-mineinabyss.tutorial.ores.3: "<yellow>You can get a list of spawns from <gold>/orespawns"
-mineinabyss.tutorial.end.1: "<dark_aqua>You are on your own now!"
-mineinabyss.tutorial.end.2: "<dark_aqua>Got to find or make your own"
+mineinabyss.tutorial.general_info: <gray>General Info</gray>
+mineinabyss.tutorial.general_info.1: The abyss goes down to Layer 5
+mineinabyss.tutorial.general_info.2: The curse exists in the Abyss
+mineinabyss.tutorial.general_info.3: The rank you have is determined by what layer
+  you are on
+mineinabyss.tutorial.general_info.4: Going down water will damage you
+mineinabyss.tutorial.general_info.5: There is no way to negate fall damage
+mineinabyss.tutorial.general_info.6: Layer 6 is not in development yet
+mineinabyss.tutorial.general_info.7: Server is anime-only, discussing manga-content
+  is not allowed
+mineinabyss.tutorial.general_info.8: Ores spawn in as you mine, do not expect to see
+  any in walls
+mineinabyss.tutorial.general_info.9: You can climb a wall by right-clicking it.
+mineinabyss.tutorial.general_info.10: Holding Space whilst climbing will make you
+  climb up
+mineinabyss.tutorial.general_info.11: Holding Sneak whilst climbing will make you
+  climb down
+mineinabyss.tutorial.rules: <red>Rules</red>
+mineinabyss.tutorial.rules.1: <#e91e63>No griefing of other people's builds</#e91e63>
+mineinabyss.tutorial.rules.2: <#e91e63>Hacks that give the player an unfair advantage
+  are not allowed</#e91e63>
+mineinabyss.tutorial.rules.3: <#e91e63>Be nice and don't annoy people</#e91e63>
+mineinabyss.tutorial.rules.4: <#e91e63>No spamming the chat. Arguments should happen
+  outside of global chat</#e91e63>
+mineinabyss.tutorial.rules.5: <#e91e63>Laddershafts, rails, and staircases are <b>not
+  allowed</b> above Layer 4</#e91e63>
+mineinabyss.tutorial.rules.6: <#e91e63>You are not allowed to take advantage of any
+  bug or exploit you may come across.</#e91e63>
+mineinabyss.tutorial.welcome.1: <yellow>Welcome to <gradient:#ff7043:#ffca28:#ff7043>Mine
+  In Abyss!
+mineinabyss.tutorial.welcome.2: <yellow>Here are some tips to get you started.
+mineinabyss.tutorial.welcome.3: <dark_aqua>Do <aqua>/discord</aqua> to get an invite
+  to our Discord
+mineinabyss.tutorial.welcome.4: <dark_aqua>Visit <light_purple>#information</light_purple>
+  for general server info
+mineinabyss.tutorial.start: <#dcd1a5>Follow the path into the Abyss...
+mineinabyss.tutorial.bonfire.1: <red>Bonfires are used to set Respawn Points
+mineinabyss.tutorial.bonfire.2: <red>You can find the recipe for them in
+mineinabyss.tutorial.bonfire.3: <red>your recipe book in <dark_red>Crafting Tables
+mineinabyss.tutorial.bonfire.4: <red>To set a spawnpoint do <dark_red>Crouch + Right
+  Click
+mineinabyss.tutorial.crops.1: <gold>Right-clicking <yellow>crops will harvest and
+  replant it
+mineinabyss.tutorial.crops.2: <gold>Sickles <yellow>are tools used to harvest <yellow>large
+  areas at once.
+mineinabyss.tutorial.crops.3: <yellow>Recipe is found in your recipe book
+mineinabyss.tutorial.water.1: <aqua>Water, like every other block,
+mineinabyss.tutorial.water.2: <aqua> does not negate fall damage.
+mineinabyss.tutorial.water.3: <aqua>Swimming down or walking under
+mineinabyss.tutorial.water.4: <aqua>waterfalls will damage you.
+mineinabyss.tutorial.emotes.1: '<green>Emotes can be used by typing <dark_green><underlined>:emotename:
+  :siggy:'
+mineinabyss.tutorial.emotes.2: <green>You can find all the emotes in <dark_green><bold>/emote
+  list
+mineinabyss.tutorial.emotes.3: <gold>Patreon <yellow>and <gold>Ko-Fi <yellow>supporters
+  have access
+mineinabyss.tutorial.emotes.4: '<yellow>to using GIFs like <white>:gurawave:'
+mineinabyss.tutorial.recipes.1: <green>All custom recipes can be found
+mineinabyss.tutorial.recipes.2: <green>within the <dark_green>Recipe Book <green>in
+  your
+mineinabyss.tutorial.recipes.3: <green>inventory, crafting table, and furnaces
+mineinabyss.tutorial.ores.1: <yellow>Ores generate as you mine,
+mineinabyss.tutorial.ores.2: and different <gold>Layers <yellow>have different ores
+  and %.
+mineinabyss.tutorial.ores.3: <yellow>You can get a list of spawns from <gold>/orespawns
+mineinabyss.tutorial.end.1: <dark_aqua>You are on your own now!
+mineinabyss.tutorial.end.2: <dark_aqua>Got to find or make your own

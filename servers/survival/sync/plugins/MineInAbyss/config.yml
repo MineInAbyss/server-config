@@ -18,16 +18,16 @@ curse:
 custom_hud:
   enabled: true
 descent:
-  enabled: true
+  enabled: false
 displayLocker:
   enabled: true
   bypassPermission: "mineinabyss.lockdisplay.bypass"
 enchants:
-  enabled: true
+  enabled: false
 exp:
   enabled: true
 gondolas:
-  enabled: true
+  enabled: false
 guilds:
   enabled: true
 hubstorage:
@@ -53,9 +53,9 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: true
-  token: null
+  token: "mineinabyss:mitty_token"
 pins:
-  enabled: true
+  enabled: false
 playerProfile:
   enabled: true
 survivalPvp:

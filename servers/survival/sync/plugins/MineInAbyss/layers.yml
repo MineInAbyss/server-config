@@ -11,6 +11,8 @@ layers:
   - "LADDER"
   - "RAIL"
   - "POWERED_RAIL"
+  - DETECTOR_RAIL
+  - ACTIVATOR_RAIL
   - "VINE"
   songs: []
   sections:
@@ -38,10 +40,12 @@ layers:
     - "SLIME"
   hasPvpDefault: false
   blockBlacklist:
-  - "LADDER"
-  - "RAIL"
-  - "POWERED_RAIL"
-  - "VINE"
+    - "LADDER"
+    - "RAIL"
+    - "POWERED_RAIL"
+    - DETECTOR_RAIL
+    - ACTIVATOR_RAIL
+    - "VINE"
   songs: []
   sections:
   - "l1s0"
@@ -81,10 +85,12 @@ layers:
     - "SLIME"
   hasPvpDefault: false
   blockBlacklist:
-  - "LADDER"
-  - "RAIL"
-  - "POWERED_RAIL"
-  - "VINE"
+    - "LADDER"
+    - "RAIL"
+    - "POWERED_RAIL"
+    - DETECTOR_RAIL
+    - ACTIVATOR_RAIL
+    - "VINE"
   songs: []
   sections:
   - "l2s0"
@@ -148,10 +154,12 @@ layers:
     duration: "4s"
   hasPvpDefault: false
   blockBlacklist:
-  - "LADDER"
-  - "RAIL"
-  - "POWERED_RAIL"
-  - "VINE"
+    - "LADDER"
+    - "RAIL"
+    - "POWERED_RAIL"
+    - DETECTOR_RAIL
+    - ACTIVATOR_RAIL
+    - "VINE"
   songs: []
   sections:
   - "l3s0"

@@ -1,20 +1,18 @@
-bonfireItem:
-  prefab: mineinabyss:bonfire
-modelItem:
-  type: WOODEN_SHOVEL
-  customModelData: 1
 maxPlayerCount: 4
 bonfireExpirationTime: 1w
 bonfireInteractCooldown: 2s
 respawnSetSound:
   sound: block.ladder.step
-  volume: 1f
-  pitch: 1.5f
+  volume: 1.0
+  pitch: 1.5
+  category: BLOCKS
 respawnUnsetSound:
   sound: block.ladder.step
-  volume: 1f
-  pitch: 0.5f
+  volume: 1.0
+  pitch: 0.5
+  category: BLOCKS
 minFallDist: 3
-effectRadius: 3.0 #distance from bonfire
-effectStrength: 10f #saturation amount
-effectRegenRate: 7 #default mc 10
+effectRadius: 3.0
+effectStrength: 10.0
+effectRegenRate: 7
+allowSettingBedRespawns: false
