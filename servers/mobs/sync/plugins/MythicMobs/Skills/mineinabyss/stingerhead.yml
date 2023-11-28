@@ -1,3 +1,27 @@
+
+SH_Attack:
+  Conditions:
+    - offgcd
+    - targetwithin{d=3} true
+  Skills:
+    - gcd{ticks=40}
+    - state{s=attack} @self
+  #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 5
+    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+    - skill{s=Bleeding} @forward{f=1}
+#will bleed once every 5 seconds for 5 seconds
+SH_Attack_DAMAGE:
+  TargetConditions:
+    - isblocking false
+  Skills:
+    - damage{a=10;pkb=false;hnp=true;hp=true}
+  
+SH_Hit:
+  Cooldown: 1
+  Skills:
+ # - effect:sound{s=;volume=0.65;pitch=1.2} @self
+  
 ## Stingerhead skills
 stingerhead_start_spawn:
   Skills:
@@ -16,7 +40,7 @@ stingerhead_finish_spawn:
 
 stingerhead_speed:
   Skills:
-    - setspeed{type=walking;speed=0} @self
+    - setspeed{type=walking;speed=2} @self
 
 stingerhead_death:
   Skills:
@@ -31,14 +55,28 @@ stingerhead_clear_players:
     - damage{a=<skill.damage>} @PIR{r=<skill.radius>}
     - throw{velocity=10;velocityY=3} @PlayersInRadius{a>=<skill.min_amount>;r=<skill.radius>}
 
-stingerhead_leap_attack:
+stingerhead_bigleap:
+  Cooldown: 30
   Conditions:
-    - playerwithin{d=12} false
-    - playerwithin{d=24} true
     - targetinlineofsight{} true
+    - offgcd true
+  TargetConditions:
+  - distance{d=12to24} true
   Skills:
-    - state{mid=stingerhead;s=leap_attack} @self
-
+    - gcd{ticks=50}
+    - potion{t=SLOW;d=20;l=7} @self
+    - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=15;amount=50;hS=1;vS=1} @Self 
+    - delay 2
+    - setai{ai=false}
+    - state{s=launch_attack;li=0;lo=0} 
+    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - delay 1
+    - leap{velocity=1200} @Target
+    - delay 14
+    - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
+    - delay 16
+    - state{s=launch_attack;remove=true} 
+    - setai{ai=true}
 
 ### Stingerhead Stun States
 stingerhead_stun50:
@@ -50,7 +88,7 @@ stingerhead_stun50:
     - state{m=stingerhead;s=stun} @self
     - delay 30
     - setstance{stance=stun} @self
-
+    - setai{ai=true}
 stingerhead_stun25:
   Conditions:
     - variableisset{var=target.stun25} false
@@ -59,7 +97,7 @@ stingerhead_stun25:
     - setAI{ai=false} @self
     - state{s=stun} @self
     - setstance{s=stun} @self
-
+    - setai{ai=true}
 stingerhead_stun_end:
   Skills:
     - setstance{s=default} @self
@@ -111,22 +149,21 @@ stingerhead_hit_stinger:
 
 
 stingerhead_venom:
-  Cooldown: 60
+  Cooldown: 8
   Conditions:
     - incombat true
     - offgcd true
     - targetwithin{d=6} false
-    - targetinlineofsight{} true
+    #- targetinlineofsight{} true
   Skills:
     - gcd{ticks=50}
     - state{s=spit} @self
-    - setspeed{type=walking;speed=0} @self
+    - potion{type=SLOW;duration=40;level=8;p=false;force=true} @Self
     - delay 20
-    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1}
-    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1}
-    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1}
+    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=stingerhead_venom_tick;onHit=stingerhead_venom_impact;v=25;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
     - delay 20
-    - skill{s=stingerhead_speed} @self
 
 
 stingerhead_venom_tick:
@@ -138,8 +175,70 @@ stingerhead_venom_impact:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
     - potion{type=POISON;duration=20;level=2}
     - potion{type=BLINDNESS;duration=15;level=1}
-
+    - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
-  - message{msg="a"} @World
-  - message{msg=<caster.stingerhead_stinger_count>} @World
-  - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
+    - message{msg="a"} @World
+    - message{msg=<caster.stingerhead_stinger_count>} @World
+    - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
+
+stingerhead_spin:
+  Cooldown: 8
+  Conditions:
+    - offgcd
+  TargetConditions:
+  - distance{d=<5} true
+  Skills:
+    - gcd{ticks=50} 
+    - setai{ai=false} 
+    - state{s=spin_attack;li=0;lo=0} 
+    - skill{s=[
+        - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
+        - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
+        - damage{amount=10} @PIR{r=5}
+        - throw{v=10;vy=4} @PIR{r=5}
+      ]} @EIR{r=5;ignore=faction}
+    - delay 20
+    - setai{ai=true}
+    - state{s=spin_attack;remove=true}
+
+stingerhead_leap:
+  Cooldown: 15
+  Conditions:
+    - offgcd true
+    - targetinlineofsight
+  TargetConditions:
+  - distance{d=6to12} true
+  Skills:
+    - gcd{ticks=50}
+    - potion{t=SLOW;d=20;l=4} @self
+    - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self 
+    - delay 20
+    - setai{ai=false}
+    - state{s=launch_attack;li=0;lo=0} 
+    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - leap{velocity=350} @Target
+    - delay 14
+    - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
+    - delay 16
+    - state{s=launch_attack;remove=true} 
+    - setai{ai=true}
+stingerhead_leapa:
+  Cooldown: 1
+  Conditions:
+    - targetwithin 3
+  Skills:
+    - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
+    - damage{a=3} @target
+    - skill{s=Bleeding} @target
+    - skill{s=stingerhead_venom_impact} @target
+    - potion{t=SLOW;d=20;l=7}
+
+Bleeding:
+  Cooldown: 5
+  Conditions:
+    - targetinlineofsight true
+  Skills:
+    - message{msg="&e<target.name> is bleeding."} @PlayersInRadius{r=15}
+    - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
+    - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
+    - damage{a=2;repeat=5;repeatInterval=20} @target
