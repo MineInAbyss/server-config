@@ -19,8 +19,6 @@
         |SFS|
         |SCS|
 - !<bonfire:bonfire>
-  maxPlayerCount: 1
-  bonfireExpirationTime: 5s
   states:
     unlit: mineinabyss:bonfire
     lit: mineinabyss:bamboo_bench
