@@ -4,6 +4,7 @@ servers:
   survival:
     - minecraft
     - items
+    - blocks
     - mobs
     - survival
   build:
