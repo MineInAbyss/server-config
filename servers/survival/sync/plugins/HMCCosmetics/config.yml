@@ -109,7 +109,7 @@ wardrobe:
   # Rather than having a set exit location, this will send the player back to where they entered the wardrobe. Not recommended for WG regions
   return-last-location: false
   # If players in wardrobes should be able to equip any cosmetic, regardless of permission (Cosmetics they do not have access to will be removed when they leave the wardrobe)
-  unchecked-wardrobe-cosmetics: false
+  unchecked-wardrobe-cosmetics: true
   menu-options:
     enter-open-menu: false
   gamemode-options:
@@ -127,31 +127,31 @@ wardrobe:
     enabled: true
     # If you use ItemsAdder, set this to "<black>%img_title%
     # If you use Oraxen, set this to "<black><glyph:title>"
-    text: '<black>:wardrobe_transition:'
+    text: '<black>:wardrobe_transition|c:'
     delay: 40
     title-fade-in: 1000
     title-stay: 500
     title-fade-out: 1000
   wardrobes:
     default:
-      npc-location:
+      wardrobe-location:
         world: world
-        x: 0
-        y: 0
-        z: 0
-        yaw: 0
-        pitch: 0
+        x: -120.0
+        y: 113.0
+        z: -534.0
+        yaw: -180.0
+        pitch: 0.0
       viewer-location:
         world: world
-        x: 5
-        y: 0
-        z: 5
-        yaw: 0
-        pitch: 0
+        x: -120.0
+        y: 113.0
+        z: -540.0
+        yaw: 0.0
+        pitch: 0.0
       leave-location:
         world: world
-        x: 5
-        y: 5
-        z: 5
-        yaw: 0
-        pitch: 0
+        x: -120.0
+        y: 113.0
+        z: -548.0
+        yaw: -180.0
+        pitch: 0.0
