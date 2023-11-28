@@ -1,0 +1,460 @@
+#> Below are the default permissions set for plugin 'Train_Carts'.
+#> These permissions are ignored if the permission is set for a group or player.
+#> Use the defaults as a base to keep the permissions file small
+#> Need help with this file? Please visit:
+#> https://wiki.traincarts.net/p/BKCommonLib/PermissionDefaults
+train:
+  command:
+    globalproperties:
+      default: op
+      description: The player can edit the properties of all carts
+    properties:
+      default: true
+      description: The player can edit the properties of owned carts
+    targetnear:
+      default: true
+      description: The player can use the --near selector to target owned carts
+    destroy:
+      default: op
+      description: The player can destroy owned carts through commands
+    destroyall:
+      default: op
+      description: The player can destroy all trains on the server
+    fixbugged:
+      default: op
+      description: The player can destroy all bugged minecarts on the server
+    upgradesavedtrains:
+      default: op
+      description: The player can upgrade all saved trains model positions to the new TC
+        version
+    reroute:
+      default: op
+      description: The player can force path finding to re-calculate
+    reload:
+      default: op
+      description: The player can reload the configuration
+    default:
+      default: op
+      description: The player can apply default settings to his owned trains
+    saveall:
+      default: op
+      description: Whether the player can save all TrainCarts stored information to file
+    message:
+      default: op
+      description: Whether the player can add message shortcuts
+    pathinfo:
+      default: op
+      description: Whether the player can view the route the train is following to reach
+        the destination
+    teleport:
+      default: op
+      description: Whether the player can teleport to where trains are
+    changeblock:
+      default: op
+      description: Whether the player can alter the type of block displayed in a minecart
+    changetick:
+      default: op
+      description: Whether the player can alter the global update tick rate of TrainCarts
+        (debug!)
+    issue:
+      default: true
+      description: Whether the player can report problems with TrainCarts
+    editor:
+      default: op
+      description: Whether the player can use in-game editors for trains (models) and signs
+    chest:
+      use:
+        default: op
+        description: Whether the player can use a chest item to suck up trains or spawn the
+          train stored within
+      create:
+        default: op
+        description: Whether the player can create and modify a chest item that can store
+          and spawn trains
+    save:
+      default: op
+      description: Whether the player can use a command to save a train under a name
+    route:
+      save:
+        default: op
+        description: Whether the player can save a train or cart route to name to a global
+          store
+    savedtrain:
+      list:
+        default: true
+        description: Whether the player can view saved trains and modules and use the /savedtrain
+          command at all
+      reverse:
+        default: op
+        description: Whether the player can reverse a saved train, so that back becomes front
+          when spawning
+      rename:
+        default: op
+        description: Whether the player can rename a saved train to a new name
+      copy:
+        default: op
+        description: Whether the player can copy an existing saved train configuration and
+          save it as a new name
+      delete:
+        default: op
+        description: Whether the player can delete a previously saved train
+      claim:
+        default: op
+        description: Whether the player can change who has claimed a saved train
+      global:
+        default: op
+        description: Whether the player can modify, delete or claim saved trains claimed by
+          other players
+      import:
+        default: op
+        description: Whether the player can import (saved) trains from online using hastebin
+      export:
+        default: op
+        description: Whether the player can export (paste) (saved) trains to online using
+          hastebin
+    enter:
+      default: op
+      description: Whether the player can use a command to enter the train/cart being edited
+    eject:
+      default: op
+      description: Whether the player can use a command to eject players from the train/cart
+        being edited
+    launch:
+      default: op
+      description: Whether the player can use a command to launch the train being edited
+    animate:
+      default: op
+      description: Whether the player can use a command to play an animation
+    locate:
+      default: op
+      description: Whether the player can locate trains, which shows a line from player
+        to trains
+    flip:
+      default: op
+      description: Whether the player can use a command to flip a cart or train around 180
+        degrees
+    model:
+      search:
+        default: op
+        description: Whether the player can use a command to list and show all item models
+          of the server resource pack
+      config:
+        list:
+          default: true
+          description: Whether the player can view saved attachment models and modules and use
+            the /train model config command at all
+        rename:
+          default: op
+          description: Whether the player can rename a saved attachment model to a new name
+        copy:
+          default: op
+          description: Whether the player can copy an existing saved attachment model and save
+            it as a new name
+        delete:
+          default: op
+          description: Whether the player can delete a previously saved attachment model
+        claim:
+          default: op
+          description: Whether the player can change who has claimed a saved attachment model
+        global:
+          default: op
+          description: Whether the player can modify, delete or claim saved attachment models
+            claimed by other players
+        import:
+          default: op
+          description: Whether the player can import (saved) attachment models from online using
+            hastebin
+        export:
+          default: op
+          description: Whether the player can export (paste) (saved) attachment models to online
+            using hastebin
+    selector:
+      use:
+        default: true
+        description: The player can use @train and @ptrain selectors to run commands for multiple
+          trains
+      unlimited:
+        default: op
+        description: The player can use @train and @ptrain selectors with an unlimited number
+          of targeted players/trains
+    effect:
+      default: op
+      description: Whether the player can use a command to play a sound, particle or other
+        effect
+  property:
+    applydefaults:
+      default: op
+      description: The player can apply defaults from DefaultTrainProperties.yml to trains
+    name:
+      default: true
+      description: The player can change the name of the train
+    owners:
+      default: true
+      description: The player can change who has ownership of carts and can edit them
+    maxspeed:
+      default: true
+      description: The player can alter the maximum speed of trains
+    slowdown:
+      default: true
+      description: The player can change whether trains slow down due to gravity or friction
+    collision:
+      default: true
+      description: The player can change what happens when trains collide with entities
+        or blocks
+    playerenter:
+      default: true
+      description: The player can change whether players can enter carts or not
+    playerexit:
+      default: true
+      description: The player can change whether players can exit from carts or not
+    keepchunksloaded:
+      default: op
+      description: The player can change whether the train keeps nearby chunks and itself
+        loaded
+    gravity:
+      default: true
+      description: The player can change the gravity multiplier of the train
+    friction:
+      default: true
+      description: The player can change the friction multiplier of the train
+    banking:
+      default: true
+      description: The player can change the way trains bank in curves
+    destination:
+      default: true
+      description: The player can change what destination a train is path-finding to
+    route:
+      default: true
+      description: The player can change what sequence of destinations a train follows
+    tags:
+      default: true
+      description: The player can add or remove tags to trains or carts, used by switchers
+        and detectors
+    onlyownerscanenter:
+      default: true
+      description: The player can change whether only owners or all players can enter a
+        train
+    pickupitems:
+      default: true
+      description: The player can change whether storage carts pick up items off the ground
+    soundenabled:
+      default: true
+      description: The player can change whether a train makes sound while moving, or is
+        quiet
+    invincible:
+      default: true
+      description: The player can change whether a train is invincible to damage or can
+        be destroyed
+    allowplayertake:
+      default: true
+      description: The player can change whether the players take carts with them when they
+        leave the server
+    spawnitemdrops:
+      default: true
+      description: The player can change whether carts drop items when destroyed
+    requirepoweredcart:
+      default: true
+      description: The player can change whether a train must have a furnace minecart to
+        exist, or unlink
+    displayname:
+      default: true
+      description: The player can change the display name of a train, which is used with
+        the trigger sign
+    allowmobmanualmovement:
+      default: true
+      description: The player can allow a train to be set in motion by mob passengers
+    allowplayermanualmovement:
+      default: true
+      description: The player can allow player passengers to control the train using steering
+        controls
+    breakblocks:
+      normal:
+        default: true
+        description: The player can configure a train to automatically break blocks from a
+          whitelist for farming setups.
+      admin:
+        default: op
+        description: The player can configure a train to break any type of block at all
+    realtime:
+      default: op
+      description: The player can configure that a train updates in realtime, adjusting
+        for server tick lag and jitter
+    tickets:
+      default: true
+      description: The player can assign tickets required for entering the train
+    viewdistance:
+      default: op
+      description: The player can change the player view distance set for passengers of
+        a train
+    entermessage:
+      default: true
+      description: The player can change the message displayed to players when they enter
+        the train
+    exitoffset:
+      default: op
+      description: The player can change where players are ejected relative to the train
+    trackingrange:
+      default: op
+      description: The player can change the range from which the train is visible to players
+    wait:
+      default: true
+      description: The player can change the wait distance, acceleration and deceleration
+        of trains
+  spawner:
+    automatic:
+      default: true
+      description: The player can build spawners which automatically create carts
+    regular:
+      default: true
+      description: The player can build spawners which create regular minecarts
+    powered:
+      default: true
+      description: The player can build spawners which create powered minecarts
+    storage:
+      default: true
+      description: The player can build spawners which create minecarts with chests
+    tnt:
+      default: true
+      description: The player can build spawners which create minecarts with TNT
+    hopper:
+      default: true
+      description: The player can build spawners which create minecarts with hoppers
+    command:
+      default: false
+      description: The player can build spawners which create minecarts with command blocks
+    spawner:
+      default: true
+      description: The player can build spawners which create minecarts with spawners
+    inventoryitems:
+      default: op
+      description: The player can build spawners that spawn carts with pre-existing inventory
+        items
+  build:
+    station:
+      default: op
+      description: The player can build train stations
+    spawner:
+      default: op
+      description: The player can build train spawners
+    trigger:
+      default: op
+      description: The player can build train triggers
+    destination:
+      default: op
+      description: The player can build destinations
+    switcher:
+      default: op
+      description: The player can build track switchers
+    destructor:
+      default: op
+      description: The player can build train destructors
+    detector:
+      default: op
+      description: The player can build train detectors
+    ejector:
+      default: op
+      description: The player can build train ejectors
+      absolute:
+        default: op
+        description: The player can build train ejectors that teleport to absolute world coordinates
+    property:
+      default: op
+      description: The player can build train property setters
+    collector:
+      default: op
+      description: The player can build systems to let trains collect from storage blocks
+    depositor:
+      default: op
+      description: The player can build systems to fill storage blocks with items from trains
+    elevator:
+      default: op
+      description: The player can build systems to teleport trains vertically
+    teleporter:
+      default: op
+      description: The player can build train teleporters (portals)
+    blocker:
+      default: op
+      description: The player can build train blockers
+    wait:
+      default: op
+      description: The player can build train wait signs
+    crafter:
+      default: op
+      description: The player can build item crafter signs
+    ticket:
+      default: op
+      description: The player can build a sign that will charge money or ejects players
+        that can't pay
+    announcer:
+      default: op
+      description: The player can build a sign that sends a message to all the players in
+        a train
+    effect:
+      default: op
+      description: The player can build a sign that can play an effect
+    sound:
+      default: op
+      description: The player can build a sign that can play a sound
+    blockchanger:
+      default: op
+      description: The player can build a sign that alters the block displayed in minecarts
+    jumper:
+      default: op
+      description: The player can build a sign that can cause a train to jump in a certain
+        direction
+    launcher:
+      default: op
+      description: The player can build a sign that can launch trains
+    enter:
+      default: op
+      description: The player can build a sign that can make nearby players/mobs enter a
+        train
+    skipper:
+      default: op
+      description: The player can build a sign that can tell a train or minecart to skip
+        upcoming signs
+    mutex:
+      default: op
+      description: The player can build a sign that defines a mutual exclusion zone, where
+        only one train can be at
+    flip:
+      default: op
+      description: The player can build a sign that flips the orientation of a Minecart
+        180 degrees
+    animator:
+      default: op
+      description: The player can build a sign that plays train animations
+    title:
+      default: op
+      description: The player can build a sign that sends a title to all the players in
+        a train
+  place:
+    minecart:
+      default: true
+      description: The player can place minecarts
+    traincart:
+      default: true
+      description: The player can place TrainCarts minecarts
+  properties:
+    admin:
+      default: op
+      description: Carts placed by this player get the admin properties
+  break:
+    self:
+      default: true
+      description: The player can break their own minecarts
+    any:
+      default: false
+      description: The player can break all carts in the game
+  ticket:
+    manage:
+      default: op
+      description: The player can edit the details of existing tickets or create new tickets
+  debug:
+    default: op
+    description: The player can use special commands useful for debugging the plugin
+  attachments:
+    schematic:
+      use:
+        default: op
+        description: The player can create and modify SCHEMATIC attachments

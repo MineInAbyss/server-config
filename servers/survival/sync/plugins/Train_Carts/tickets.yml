@@ -1,0 +1,20 @@
+Orphanage_Ticket:
+  ticketRealm: ''
+  playerBound: false
+  maxNumberOfUses: 1
+  expirationTimeMillis: -1
+  backgroundImagePath: ''
+  properties:
+    destination: Orphanage
+    tags:
+      - paid
+GuildHQ_Ticket:
+  ticketRealm: ''
+  playerBound: false
+  maxNumberOfUses: 1
+  expirationTimeMillis: -1
+  backgroundImagePath: ''
+  properties:
+    destination: GuildHQ
+    tags:
+      - paid

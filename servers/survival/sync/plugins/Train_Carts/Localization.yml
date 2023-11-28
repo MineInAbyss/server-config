@@ -1,0 +1,171 @@
+#> Below are the localization nodes set for plugin 'Train_Carts'.
+#> For colors, use the & character followed up by 0 - F
+#> Need help with this file? Please visit:
+#> https://wiki.traincarts.net/p/BKCommonLib/Localization
+commands: {}
+command:
+  usage: &aSee [&f&nthe WIKI](https://wiki.traincarts.net/p/TrainCarts)&r&a for more
+    information, or use /train help
+  noperm: &cYou do not have permission, ask an admin to do this for you.
+  savedtrain:
+    claimed: &cSaved train with name %0% is claimed by someone else, you can not access
+      it!
+    global:
+      noperm: &cYou do not have permission to force access to saved trains by others, ask
+        an admin to do this for you.
+    notfound: &cSaved train with name %0% does not exist!
+    force: &cSaved train with name %0% is claimed by someone else, you can access it anyway
+      with --force
+    claim:
+      invalid: '&cInvalid player name specified: %0%'
+    name:
+      invalid: '&cInvalid train name: %0%'
+  ticket:
+    notfound: &cTicket with name %0% does not exist
+    notediting: |-
+      &cYou are not editing any tickets right now
+      &cTo create a new train ticket, use /train ticket create
+      &cTo edit an existing train ticket, use /train ticket edit [name]
+  input:
+    train:
+      notfound: &cTrain with name %0% does not exist
+    cart:
+      notintrain: &cCart '%0%' does not exist in the selected train
+      uuidnotfound: &cCart with unique ID %0% does not exist
+      notnearby: &cNo cart was found near the specified coordinates
+    speed:
+      invalid: &cInput value %0% is not a valid number or speed expression
+    acceleration:
+      invalid: &cInput value %0% is not a valid number or acceleration expression
+    direction:
+      invalid: &cInput value %0% is not a valid direction
+    name:
+      empty: &cInput train name is empty!
+      invalid: &cInput train name '%0%' contains invalid characters!
+    selector:
+      invalid: &c[TrainCarts] Selector condition contains syntax errors!
+      noperm: &c[TrainCarts] You do not have permission to use TrainCarts command selectors!
+      exceededlimit: &c[TrainCarts] Selector expression matched too many results!
+    attachments:
+      noseats: &cNo seats with name '%0%' found!
+      noeffects: &cNo effects with name '%0%' found!
+  animate:
+    success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
+    failure: &cFailed to find animation &e%0%&c!
+  model:
+    config:
+      claimed: &cSaved model configuration with name %0% is claimed by someone else, you
+        can not access it!
+      global:
+        noperm: &cYou do not have permission to force access to saved model configurations
+          by others, ask an admin to do this for you.
+      notfound: &cSaved model configuration with name %0% does not exist!
+      force: &cSaved model configuration with name %0% is claimed by someone else, you can
+        access it anyway with --force
+      name:
+        invalid: '&cInvalid model configuration name: %0%'
+        empty: &cInput model name is empty!
+      edit:
+        existing: &aYou are now editing the model configuration '&e%0%&a'!
+        new: &aYou are now editing the &9NEW&a model configuration '&e%0%&a'!
+  import:
+    models:
+      missing: &eThe imported train configuration includes model configurations [&f%0%&e],
+        import them by specifying --import-models
+      updated: '&aImported model configurations: %0%'
+    nocarts: &cImported configuration does not include any carts!
+    error: '&cAn error occurred trying to import the train configuration: %0%'
+    forbiddencontents: &cThe train configuration could not be imported because it contains
+      things you have no permission to use or spawn
+  save:
+    new: &aThe train was saved as %0%
+    overwritten: &aThe train was saved as %0%, a previous train was overwritten
+    lockorientation: |-
+      &eTrain orientation is now locked to the current forward direction!
+      &eFuture saves without --lockorientation passed will remember this orientation.
+      &eThis can be turned off using &f/savedtrain %0% lockorientation false
+    forbiddencontents: &cThe train configuration could not be saved because the train
+      contains things you have no permission to use or spawn
+  effect:
+    play: &aPlaying effect &e%0%
+    stop: &eStopping effect &f%0%
+    replay: &aRe-playing effect &e%0%
+property:
+  notfound: &cProperty with name '%0%' does not exist
+  error: &cAn internal error occurred while parsing value '%1%' for property '%0%'
+  invalidinput: '&cValue ''%1%'' for property ''%0%'' is invalid: %2%'
+  nopermissionany: &cYou do not have permission to modify train properties
+  nopermission: &cYou do not have permission to modify the property with name '%0%'
+edit:
+  success: &aYou are now editing train '&e%0%&a'!
+  noselect: &eYou haven't selected a train to edit yet!
+  notallowed: &cYou are not allowed to own trains!
+  nonefound: &cYou do not own any trains you can edit.
+  notfound: &cCould not find a valid train named '%0%'!
+  notowned: &cYou do not own this train!
+  notloaded: &cThe selected train is not loaded right now!
+spawn:
+  type:
+    notallowed: &cYou do not have permission to create minecarts of type %0%
+  inventoryitems:
+    notallowed: &cYou do not have permission to create minecarts with pre-existing inventory
+      items
+  forbiddencontents: &cThe train configuration cannot be spawned because the train contains
+    things you have no permission to use or spawn
+select:
+  destination: &eYou have selected &f%0%&e as your destination!
+ticket:
+  expired: &cYour ticket for %0% is expired
+  required: &cYou do not own a ticket for this train!
+  used: &aYou have used your &e%0%&a ticket!
+  conflict: &cYou own multiple tickets that can be used for this train. Please hold
+    the right ticket in your hand!
+  ownerconflict: &cThe train ticket %0% is not yours, it belongs to %1%!
+  typeconflict: &cThe train ticket %0% can not be used for this train!
+  add: &f[Ticket System]&e You received %0% in your bank account!
+  check: &f[Ticket System]&e You currently have %0% in your bank account!
+  buyfail: &f[Ticket System]&c You can't afford a Ticket for %0%, sorry.
+  buy: &f[Ticket System]&e You bought a Ticket for %0%.
+  buyowner: &f[Ticket System]&e %0% &ebought a Ticket for %1% on &f%2%&e.
+  map:
+    invalid: Invalid Ticket
+    expired: EXPIRED
+    uses:
+      '1': Single use
+      '-1': Unlimited uses
+      default: '%1%/%0% uses'
+waiter:
+  notfound: &cDidn't find a &e%0%&c sign on the track!
+pathfinding:
+  busy: &eLooking for a way to reach the destination...
+  failed: &cDestination &e%0%&c could not be reached from here!
+chest:
+  noperm: &cYou do not have permission to use the train storage chest!
+  noitem: &cYou are not currently holding a train storage chest item!
+  give: &aYou have been given a train storage chest item. Use it to store and spawn
+    trains
+  giveto: &aGave a train storage chest item to player %0%
+  update: &aYour train storage chest item has been updated
+  locked: &cYour train storage chest item is locked and can not pick up the train
+  pickup: &aTrain picked up and stored inside the item!
+  full: &cYour train storage chest item is full and can not pick up the train
+  imported: &aThe train was imported into the chest item
+  spawn:
+    success: &aTrain stored inside the item has been spawned on the rails
+    empty: &cTrain can not be spawned, no train is stored in the item
+    norail: &cTrain can not be spawned, clicked block is not a known rail
+    noraillook: &cTrain can not be spawned, not looking at any rail or too far away
+    railtooshort: &cTrain can not be spawned, rails not long enough to fit the train
+    blocked: &cTrain can not be spawned, no space on rails because another train is in
+      the way
+sign:
+  noperm: &cYou do not have permission to use this sign
+attachments:
+  load:
+    clipboard: &aAttachment loaded from your clipboard!
+    modelstore: &aAttachment '%0%' loaded from the model store!
+    pasteserver: &aAttachment imported from paste server!
+  save:
+    clipboard: &aAttachment saved to your clipboard!
+    modelstore: &aAttachment saved to the model store as %0%!
+    pasteserver: '&aAttachment exported to paste server: &f&n%0%'
