@@ -15,13 +15,13 @@
       blockLight: 15
     displayTransform: NONE
     scale:
-      x: 2.0
-      y: 2.0
-      z: 2.0
+      x: 2.5
+      y: 2.5
+      z: 2.5
   rotationType: VERY_STRICT
   interactionHitbox:
     width: 2
-    height: 2
+    height: 0.5
 - !<blocky:drops>
   drops:
     - item:
