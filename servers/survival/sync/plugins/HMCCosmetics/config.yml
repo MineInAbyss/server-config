@@ -100,8 +100,6 @@ hook-settings:
     # Requires restart to apply changes.
     player-move-check: true
 wardrobe:
-  # spawn static wardrobe if in this radius of wardrobe-location
-  static-radius: 10
   # how much yaw should change per tick, set to 0 for none
   rotation-speed: 3
   # Applies a pumpkin for an overlay of the player while in the wardrobe.
@@ -128,32 +126,56 @@ wardrobe:
     # If you use ItemsAdder, set this to "<black>%img_title%
     # If you use Oraxen, set this to "<black><glyph:title>"
     text: '<black>:wardrobe_transition|c:'
-    delay: 40
+    delay: 20
     title-fade-in: 1000
     title-stay: 500
     title-fade-out: 1000
   wardrobes:
-    default:
+    guildhq1:
       distance: -1 # Distance in blocks that a player can interact with the wardrobe. -1 to ignore.
       permission: "hmccosmetics.wardrobe.default" # Permission required to use the wardrobe.
-      wardrobe-location:
+      npc-location:
         world: world
         x: 2.0
         y: 141.0
-        z: -513.5
+        z: -512.5
         yaw: -180.0
         pitch: 0.0
       viewer-location:
         world: world
         x: -2.0
-        y: 141.0
-        z: -513.5
+        y: 142.5
+        z: -512.5
         yaw: -90.0
         pitch: 0.0
       leave-location:
         world: world
         x: -4.0
         y: 139.0
-        z: -513.0
+        z: -512.5
+        yaw: 90.0
+        pitch: 0.0
+    guildhq2:
+      distance: -1 # Distance in blocks that a player can interact with the wardrobe. -1 to ignore.
+      permission: "hmccosmetics.wardrobe.default" # Permission required to use the wardrobe.
+      npc-location:
+        world: world
+        x: 2.0
+        y: 141.0
+        z: -524.5
+        yaw: -180.0
+        pitch: 0.0
+      viewer-location:
+        world: world
+        x: -2.0
+        y: 142.5
+        z: -524.5
+        yaw: -90.0
+        pitch: 0.0
+      leave-location:
+        world: world
+        x: -4.0
+        y: 139.0
+        z: -524.5
         yaw: 90.0
         pitch: 0.0
