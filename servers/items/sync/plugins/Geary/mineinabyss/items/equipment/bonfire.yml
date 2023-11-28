@@ -21,8 +21,8 @@
 - !<bonfire:bonfire>
   states:
     unlit: mineinabyss:bonfire
-    lit: mineinabyss:bamboo_bench
-    set: mineinabyss:sculk_chair
+    lit: mineinabyss:bonfire_lit
+    set: mineinabyss:bonfire_self_lit
 - !<blocky:furniture>
   interactionHitbox:
     width: 1.0
