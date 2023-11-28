@@ -1,0 +1,25 @@
+# BLACKLIST AUCTION INVENTORIES HERE
+# blacklist works as follows:
+# if you include the word "a" in the blacklist, every inventory with the letter "a" will be blocked.
+# because of this, try to be as precise as possible.
+# If your inventory contains extra characters, such as "Auction Page 8", simply blacklisting "Auction Page" will block every page
+blacklistedInventories: ["&4&lMineXChange", "test inventory"]
+
+canOpenInAir: true            #false will prevent users from opening shulkerboxes by clicking the air
+canOpenInInventory: true      #false will prevent users from opening shulkerboxes in their inventory
+canOpenInChests: true         #false will prevent users from opening shulkerboxes in chests
+canOpenInEnderChest: true     #false will prevent users from opening shulkerboxes in enderchests
+canOpenInBarrels: true        #false will prevent users from opening shulkerboxes in barrels
+canPlaceShulker: false         #false will prevent users from placing shulkerboxes by accident
+
+#true will prevent users from opening shulkerboxes within 7 seconds of being hit by a player
+disableInCombat: false
+
+defaultName: "<blue>Shulker Pack"
+shiftClickToOpen: false
+shulkerVolume: 1              #0.1 is quiet, 1 is loud
+shulkerOpenSound: "mineinabyss:equipment.backpack.open"
+shulkerCloseSound: "mineinabyss:equipment.backpack.close"
+#shift click to open applies to both ingame and in inventory
+
+open-previous-inventory: false
