@@ -111,7 +111,7 @@ channels:
     isDefaultChannel: true
     proxy: true
     discordsrv: true
-    format: ":test:<shift:-12>
+    format: ":test::space_-4:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
@@ -126,7 +126,7 @@ channels:
     isDefaultChannel: false
     proxy: true
     discordsrv: true
-    format: "<chatty_player_head><shift:-4>
+    format: "<chatty_player_head>:space_-4:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
@@ -140,12 +140,12 @@ channels:
     channelType: RADIUS
     isDefaultChannel: false
     discordsrv: false
-    format: ":test:<shift:-4>:local:
+    format: ":test::space_-4::local:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
     <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><shift:-4><#FFCA28><chatty_nickname>: "
+    <click:run_command:/mia profile %player_name%>:space_-4:<#FFCA28><chatty_nickname>: "
     messageColor: "#FFECB3"
     channelRadius: 0
     channelAliases:
@@ -159,7 +159,7 @@ channels:
     isStaffChannel: true
     discordsrv: false
     proxy: true
-    format: ":test:<shift:-4>:admin:
+    format: ":test::space_-4::admin:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>

@@ -107,7 +107,7 @@ channels:
     isDefaultChannel: false
     discordsrv: false
     logToConsole: true
-    format: ":dev:<shift:-5>:local: <gold><chatty_nickname>: "
+    format: ":dev::space_-4::local: <gold><chatty_nickname>: "
     messageColor: yellow
     channelRadius: 500
     channelAliases:
@@ -122,7 +122,7 @@ channels:
     discordsrv: false
     proxy: true
     logToConsole: false
-    format: ":dev:<shift_-5>:admin:<#e51e62><chatty_nickname>: "
+    format: ":dev::space_-4::admin:<#e51e62><chatty_nickname>: "
     messageColor: red
     channelAliases:
       - "a"

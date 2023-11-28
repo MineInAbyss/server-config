@@ -136,7 +136,7 @@ channels:
     discordsrv: false
     logToConsole: true
     simpleConsoleMessages: false
-    format: ":survival:<shift:-8>:local: 
+    format: ":survival::space_-4::local: 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
@@ -156,7 +156,7 @@ channels:
     proxy: true
     logToConsole: true
     simpleConsoleMessages: false
-    format: ":survival:<shift:-8>:admin: 
+    format: ":survival::space_-4::admin: 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
