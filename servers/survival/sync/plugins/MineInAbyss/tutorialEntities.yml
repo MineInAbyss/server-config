@@ -1,8 +1,8 @@
   - location:
       world: world
-      x: -576.0
+      x: -168.5
       y: 98.0
-      z: -76.0
+      z: -517.5
     text: '<lang:mineinabyss.tutorial.ores.1></lang>
 
       <lang:mineinabyss.tutorial.ores.2></lang>
@@ -18,9 +18,9 @@
     text: <lang:mineinabyss.tutorial.start></lang>
   - location:
       world: world
-      x: -575.0
-      y: 99.0
-      z: -120.0
+      x: -150.5
+      y: 125.0
+      z: -555.0
     text: '<lang:mineinabyss.tutorial.bonfire.1></lang>
 
       <lang:mineinabyss.tutorial.bonfire.2></lang>
@@ -32,9 +32,9 @@
       '
   - location:
       world: world
-      x: -572.0
-      y: 98.0
-      z: -91.0
+      x: -171.0
+      y: 55.0
+      z: -485.0
     text: '<lang:mineinabyss.tutorial.crops.1></lang>
 
       <lang:mineinabyss.tutorial.crops.2></lang>
@@ -44,9 +44,9 @@
       '
   - location:
       world: world
-      x: -567.0
-      y: 97.0
-      z: -72.0
+      x: -161.0
+      y: 118.0
+      z: -549.0
     text: '<lang:mineinabyss.tutorial.recipes.1></lang>
 
       <lang:mineinabyss.tutorial.recipes.2></lang>
@@ -70,9 +70,9 @@
       '
   - location:
       world: world
-      x: -571.0
-      y: 99.0
-      z: -146.0
+      x: -183.0
+      y: 53.0
+      z: -472.0
     text: '<lang:mineinabyss.tutorial.end.1></lang>
 
       <lang:mineinabyss.tutorial.end.2></lang>
