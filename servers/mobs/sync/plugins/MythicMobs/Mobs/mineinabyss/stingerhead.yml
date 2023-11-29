@@ -14,7 +14,7 @@ Stingerhead:
   Options:
     PreventOtherDrops: true
     KnockbackResistance: 1
-    Damage: 0
+    Damage: 30
     Collidable: true
     Silent: true
     FollowRange: 48

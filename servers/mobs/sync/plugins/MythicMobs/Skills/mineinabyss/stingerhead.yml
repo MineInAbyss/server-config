@@ -61,7 +61,6 @@ stingerhead_clear_players:
   Conditions:
     - playersinradius{r=64;a>=2}
   Skills:
-    - message{msg="a':' <skill.min_amount> r':' <skill.radius> d':' <skill.damage>"} @World
     - damage{a=<skill.damage>} @PIR{r=<skill.radius>}
     - throw{velocity=10;velocityY=3} @PlayersInRadius{a>=<skill.min_amount>;r=<skill.radius>}
 
@@ -217,8 +216,6 @@ stingerhead_venom_impact:
     - potion{type=BLINDNESS;duration=15;level=1}
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
-  - message{msg="a"} @World
-  - message{msg=<caster.stingerhead_stinger_count>} @World
   - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
 
 stingerhead_spin:
@@ -247,7 +244,6 @@ Bleeding:
   Conditions:
     - targetinlineofsight true
   Skills:
-    - message{msg="&e<target.name> is bleeding."} @PlayersInRadius{r=15}
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
     - damage{a=2;repeat=5;repeatInterval=20} @target
