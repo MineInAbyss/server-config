@@ -103,7 +103,7 @@ channels:
     logToConsole: true
     simpleConsoleMessages: false
     proxy: true
-    discordsrv: true
+    discordsrv: false
     isDefaultChannel: true
     isStaffChannel: false
     format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''<light_purple><b><chatty_nickname><newline></b>
@@ -122,7 +122,7 @@ channels:
     proxy: true
     logToConsole: true
     simpleConsoleMessages: true
-    discordsrv: true
+    discordsrv: false
     format: "%chatty_player_head% %luckperms_prefix% 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
