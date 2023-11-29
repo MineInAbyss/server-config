@@ -1,7 +1,7 @@
-orbpiercer:
-  Type: IRON_GOLEM
+OrbPiercer:
+  Type: ZOMBIE
   Display: 'OrbPiercer'
-  Health: 100
+  Health: 150
   AIGoalSelectors:
     - clear
     - float
@@ -9,9 +9,9 @@ orbpiercer:
     - randomstroll
     - randomlookaround
   AITargetSelectors:
-  - clear
-  - attacker
-  - players
+    - clear
+    - attacker
+    - players
   Options:
     PreventOtherDrops: true
     KnockbackResistance: 1
@@ -36,5 +36,26 @@ orbpiercer:
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+
+
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
-    - skill{s=orbpiercer_spike_volley} @target ~onTimer:45
+    - skill{s=orbyspear} @target ~onTimer:20
+    - skill{s=orby_impale} @target ~onTimer:40
+    - skill{s=orby_shout} @target ~oncombat
+    - skill{s=orby_shout} @target ~onDamaged 0.1
+    - skill{s=orby_spike_eject} @target ~onDamaged <40%
+orbpiercer_projectile:
+  Type: CAT
+  Display: meteor
+  Equipment:
+    - glowstone:0
+  Options:
+    NoAI: true
+    Silent: true
+    Despawn: false
+    Invincible: true
+    PreventBlockInfection: true
+  Skills:
+    - skill{s=meteorONSPAWN} @self ~onSpawn
+    - model{mid=orbpiercer_projectile;n=false;d=false;i=false} @self ~onSpawn
+    - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn

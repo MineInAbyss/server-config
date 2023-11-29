@@ -1,27 +1,231 @@
-orbpiercer_speed:
+Changetarget:
+  Cooldown: 0
   Skills:
-    - setspeed{type=walking;speed=0} @self
+    - runaitargetselector{target=clear}
+    - runaitargetselector{target=players}
 
-orbpiercer_spike_volley:
-  Cooldown: 60
+Cancelattack:
+  Skills:
+    - CancelEvent
+
+meteorONSPAWN:
+  Skills:
+    - delay 1
+    - potion{type=INVISIBILITY;duration=480;level=0;p=false} @self
+
+#debug skills ^
+
+###orby projectiles
+orbyspear:
   Conditions:
-    - incombat true
-    - offgcd true
-    - targetwithin{d=10} false
+    - offgcd
+    - stance{s=spikeless;str=true} false
+  Cooldown: 5
   Skills:
-    #- skill{s=voras_idle} @self
-    - gcd{ticks=50}
-    - state{s=spit} @self
-    - setspeed{type=walking;speed=0} @self
-    - delay 20
-    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=0.0;lockpitch=false}
-    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=-1.0;lockpitch=false}
-    - volley{onhitskill=orbpiercer_spike_impact;hspread=1;vspread=2;type=arrow;damage=10;amount=4;source=REGULAR;radius=4;velocity=1.4} @Forward{f=5;y=2.0;sideOffset=1.0;lockpitch=false}
-    - delay 20
-    - skill{s=orbpiercer_speed} @self
+    - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self
+    - delay 5
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=1} @Target
+    - delay 8
+    - state{mid=orbpiercer;s=normal_shot;r=true} @self
+orbyt:
+  Conditions:
+  Cooldown:
+  Skills:
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=5;hS=.1;vS=.1;speed=1.25}
 
-orbpiercer_spike_impact:
+orbyhit:
+  Conditions:
+  Cooldown:
   Skills:
-    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
-    - potion{type=POISON;duration=60;level=1}
-    - potion{type=BLINDNESS;duration=60;level=1}
+    - damage{amount=5}
+    - potion{type=POISON;duration=150;level=5}
+    - potion{type=WITHER;duration=150;level=5}
+    - skill{s=Bleeding} @target
+
+orbyend:
+  Conditions:
+  Cooldown:
+  Skills:
+    - damage{amount=5}
+    - potion{type=POISON;duration=100;level=5}
+    - potion{type=WITHER;duration=30;level=1}
+    - skill{s=Bleeding} @target
+###### orby shout
+
+orby_shout:
+  Conditions:
+    - offgcd
+    - stance{s=spikeless;str=true} false
+  Cooldown: 40
+  Skills:
+    - gcd{ticks=300} @self
+    - setAI{ai=false} @self
+    - state{s=roar;li=0;lo=0} @self
+    - delay 10
+    - skill{s=orby_knockback} @PIR{r=10}
+    - skill{s=orby_screenshake;repeat=16;repeatInterval=8} @pir{r=20}
+    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
+    - delay 1
+    - potion{t=WEAKNESS;d=200;l=1} @PIR{r=30}
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=1} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.9} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.8} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.7} @self
+    - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
+    - delay 41
+    - state{s=roar;remove=true} @self
+    - setAI{ai=true} @self
+orby_knockback:
+  Skills:
+    - delay 1
+    - throw{v=25;vy=4}
+orby_screenshake:
+  Skills:
+    - recoil{r=15;pitch=-.5} @pir{r=12}
+    - delay 2
+    - recoil{r=15;pitch=.4} @pir{r=12}
+    - delay 2
+    - recoil{r=15;pitch=-.3} @pir{r=12}
+    - delay 2
+    - recoil{r=15;pitch=.2} @pir{r=12}
+orby_knockback2:
+  Skills:
+    - delay 1
+    - throw{v=30;vy=5}
+
+### orby spike eject
+orby_spike_eject:
+  Cooldown: 500
+  Conditions:
+    - offgcd
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - setAI{ai=false} @self
+    - state{s=roar;li=0;lo=0} @self
+    - delay 10
+    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=10}
+    - skill{s=orby_knockback2} @PIR{r=10}
+    - skill{s=orby_screenshake;repeat=16;repeatInterval=8} @pir{r=20}
+    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
+    - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
+    - delay 1
+    - delay 2
+    - skill{s=orbyspikespin} @target
+    - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=1} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.9} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.8} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=5;p=0.7} @self
+    - delay 2
+    - state{s=spikeless_state;li=0;lo=0} @self
+    - setstance{stance=spikeless} @self
+    - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
+    - delay 41
+    - state{s=launch_attack;remove=true} @self
+    - setAI{ai=true} @self
+
+orbyspikespin:
+  Conditions:
+  Cooldown: 25
+  Skills:
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=360;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - delay 2
+
+
+orby_impale:
+  Cooldown: 13
+  Conditions:
+    - offgcd true
+    - targetinlineofsight
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - gcd{ticks=50}
+    - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
+    - setai{ai=false}
+    - state{s=dash_charge;li=0;lo=0} @self
+    - look{headOnly=false;immediately=false;repeat=50;repeatinterval=1} @target
+    - delay 15
+    - leap{velocity=600} @Target
+    - state{s=dash_charge;r=true} @self
+    - state{s=dash_land_and_impale;li=0;lo=0} @self
+    - delay 8
+    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - totem{md=2;c=1;oH=orby_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=3}
+    - delay 34
+    - state{s=dash_land_and_impale;remove=true} @self
+    - setai{ai=true}
+orby_leapa:
+  Cooldown: 3
+  Conditions:
+    - targetwithin 3
+  Skills:
+    - sound{s=item.trident.thunder} @PIR{r=30}
+    - stun{d=60;f=true} @PIR{r=3}
+    - damage{a=15} @PIR{r=3}
+    - potion{type=POISON;duration=100;level=5} @PIR{r=3}
+    - potion{type=WITHER;duration=30;level=1} @PIR{r=3}
+    - potion{t=SLOWNESS;d=100;l=2} @PIR{r=3}
+    - potion{t=BLINDNESS;d=50;l=2} @PIR{r=3}
