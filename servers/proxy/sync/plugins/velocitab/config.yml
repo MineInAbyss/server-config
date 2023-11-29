@@ -10,7 +10,7 @@ check_for_updates: true
 # List multiple headers and set update_rate to the number of ticks between frames for basic animations
 headers:
   default:
-    - '\n\n\n'
+    - '\n\n\n'
 # Footer(s) to display below the TAB list for each server group, same as headers.
 footers:
   default:
