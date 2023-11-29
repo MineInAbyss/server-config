@@ -4,14 +4,12 @@
 - !<mobzy:set.modelengine-model>
   modelId: onitsuchi
 - !<mobzy:set.attributes>
-  maxHealth: 40
+  maxHealth: 35
   followRange: 40
   attackDamage: 5
   attackKnockback: 2
   knockbackResistance: 0.1600
-  flyingSpeed: 0.8
-  width: 2.2500
-  height: 1.5000
+  flyingSpeed: 0.1
 - !<mobzy:death_loot>
   minExp: 60
   maxExp: 80
@@ -44,10 +42,11 @@
     1: !<minecraft:behavior.float>
     2: !<mobzy:behavior.flying_damage_target>
     3: !<mobzy:behavior.flying_dive_on_target>
-      #diveVelocity: 0.5000
-      #minHeight: 3
-      #maxHeight: 6
-      #startDiveDistance: 15
-      #bashVelMultiplier: 0.5000
+      diveVelocity: -0.1
+      minHeight: 5
+      maxHeight: 6
+      startDiveDistance: 16
+      bashVelMultiplier: 0.13
+      bashDuration: 30
     4: !<mobzy:behavior.fly_towards_target>
     5: !<mobzy:behavior.idle_fly>
