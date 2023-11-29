@@ -76,7 +76,7 @@ templates:
       branch: develop
       subFolder: old_armor
   custom_music:
-    default: false
+    default: true
     forced: false
     githubDownload:
       org: MineInAbyss
