@@ -1,0 +1,49 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: LEAD
+    amount: 2
+  removeRecipes:
+    - minecraft:lead
+  group: "looty:lead"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_silk
+        Z:
+          prefab: mineinabyss:abyssal_snail_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_silk
+        Z:
+          prefab: mineinabyss:splitjaw_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:kuongatari_silk
+        Z:
+          prefab: mineinabyss:abyssal_snail_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:kuongatari_silk
+        Z:
+          prefab: mineinabyss:splitjaw_gunk
+      configuration: |-
+        |ZZ |
+        |ZS |
+        |  Z|

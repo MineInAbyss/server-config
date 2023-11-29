@@ -1,0 +1,8 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: WHEAT_SEEDS
+  recipes:
+    - !<shapeless>
+      items:
+        - type: WHEAT

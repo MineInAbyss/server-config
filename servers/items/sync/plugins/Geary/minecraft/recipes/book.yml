@@ -1,0 +1,26 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: BOOK
+  group: "looty:book"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_silk
+        P:
+          type: PAPER
+      configuration: |-
+        |SP |
+        |SP |
+        |SP |
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:kuongatari_silk
+        P:
+          type: PAPER
+      configuration: |-
+        |SP |
+        |SP |
+        |SP |

@@ -1,0 +1,9 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: GREEN_DYE
+  group: "green_dye"
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:splitjaw_gunkk

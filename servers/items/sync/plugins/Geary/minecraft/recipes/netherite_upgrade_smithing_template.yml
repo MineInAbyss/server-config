@@ -1,0 +1,22 @@
+- !<looty:set.recipes>
+  result:
+    type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+  discoverRecipes: true
+  group: "netherite_upgrade_smithing_template"
+  recipes:
+    - !<shaped>
+      items:
+        S:
+          prefab: mineinabyss:silkfang_eye
+        Z:
+          prefab: mineinabyss:stingerhead_eye
+        H:
+          prefab: mineinabyss:hashofu_eye
+        C:
+          prefab: mineinabyss:corpse_weeper_eye
+        R:
+          prefab: mineinabyss:blank_template_rune
+      configuration: |-
+        | S |
+        |HRC|
+        | Z |

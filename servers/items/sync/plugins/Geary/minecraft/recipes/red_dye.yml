@@ -1,0 +1,9 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: RED_DYE
+  group: "red_dye"
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:chimokami_tail
