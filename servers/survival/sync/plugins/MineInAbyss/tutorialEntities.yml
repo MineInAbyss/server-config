@@ -104,7 +104,40 @@
 
       <lang:mineinabyss.tutorial.welcome.3></lang>
 
-      <lang:mineinabyss.tutorial.welcome.4></lang>
+      <lang:mineinabyss.tutorial.welcome.4></lang>'
+
+  - location:
+      world: world
+      x: -162.0
+      y: 99.0
+      z: -521.0
+    text: '<lang:mineinabyss.tutorial.climb.1></lang>
+
+      <lang:mineinabyss.tutorial.climb.2></lang>
+
+      <lang:mineinabyss.tutorial.climb.3></lang>
+
+      '
+      
+  - location:
+      world: world
+      x: -155.0
+      y: 100.0
+      z: -524.0
+    text: '<lang:mineinabyss.tutorial.loot.1></lang>
+
+      <lang:mineinabyss.tutorial.loot.2></lang>
+
+      '
+      
+  - location:
+      world: world
+      x: -168.0
+      y: 114.0
+      z: -539.0
+    text: '<lang:mineinabyss.tutorial.villagers.1></lang>
+
+      <lang:mineinabyss.tutorial.villagers.2></lang>
 
       '
   - location:
