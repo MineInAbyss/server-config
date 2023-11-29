@@ -97,15 +97,14 @@
       x: -113.0
       y: 135.0
       z: -533.5
-    text: '<lang:mineinabyss.tutorial.welcome.1></lang>
+    text: <lang:mineinabyss.tutorial.welcome.1></lang>
 
       <lang:mineinabyss.tutorial.welcome.2></lang>
 
 
       <lang:mineinabyss.tutorial.welcome.3></lang>
 
-      <lang:mineinabyss.tutorial.welcome.4></lang>'
-
+      <lang:mineinabyss.tutorial.welcome.4></lang>
   - location:
       world: world
       x: -162.0
@@ -118,7 +117,6 @@
       <lang:mineinabyss.tutorial.climb.3></lang>
 
       '
-      
   - location:
       world: world
       x: -155.0
@@ -129,7 +127,6 @@
       <lang:mineinabyss.tutorial.loot.2></lang>
 
       '
-      
   - location:
       world: world
       x: -168.0

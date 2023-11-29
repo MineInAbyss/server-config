@@ -214,10 +214,10 @@ layers:
     duration: "4s"
   hasPvpDefault: true
   blockBlacklist:
-    - "RAIL"
-    - "POWERED_RAIL"
-    - "DETECTOR_RAIL"
-    - "ACTIVATOR_RAIL"
+  - "RAIL"
+  - "POWERED_RAIL"
+  - "DETECTOR_RAIL"
+  - "ACTIVATOR_RAIL"
   songs: []
   sections:
   - "l4s1"
@@ -273,10 +273,10 @@ layers:
     duration: "4s"
   hasPvpDefault: true
   blockBlacklist:
-    - "RAIL"
-    - "POWERED_RAIL"
-    - "DETECTOR_RAIL"
-    - "ACTIVATOR_RAIL"
+  - "RAIL"
+  - "POWERED_RAIL"
+  - "DETECTOR_RAIL"
+  - "ACTIVATOR_RAIL"
   songs: []
   sections:
   - "l5s1"
