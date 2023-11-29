@@ -2,6 +2,8 @@
   result:
     type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
   discoverRecipes: true
+  removeRecipes:
+    - "minecraft:netherite_upgrade_smithing_template"
   group: "netherite_upgrade_smithing_template"
   recipes:
     - !<shaped>
