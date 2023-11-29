@@ -225,72 +225,77 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: TowerDistrict
+    offset:
+      x: -5.76
+      y: 0.95
+      z: -1.41
+    yaw: -90.0
     scale:
-      x: 2.0
-      y: 2.0
-      z: 2.0
+      x: 1.3
+      y: 1.3
+      z: 1.3
     hitboxes:
       - destStation: DocksEast
         offset:
-          x: 0.65
+          x: 0.01
           y: 0.8
-          z: 0.0
+          z: 0.65
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: VillageDistrict
         offset:
-          x: 0.26
+          x: 0.01
           y: 0.85
-          z: 0.0
+          z: 0.26
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: CliffDistrict
         offset:
-          x: 0.1
+          x: 0.01
           y: 0.7
-          z: 0.0
+          z: 0.1
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: SlumDistrict
         offset:
-          x: -0.33
+          x: 0.01
           y: 0.9
-          z: 0.0
+          z: -0.33
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: DocksWest
         offset:
-          x: -0.66
+          x: 0.01
           y: 1.15
-          z: 0.0
+          z: -0.66
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: Orphanage
         offset:
-          x: -0.33
+          x: 0.01
           y: 1.19
-          z: 0.0
+          z: -0.33
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: GoldenBridge
         offset:
-          x: -0.16
+          x: 0.01
           y: 1.19
-          z: 0.03
+          z: -0.16
         hitbox:
           width: 0.15
           height: 0.15
       - destStation: GuildHQ
         offset:
-          x: 0.24
+          x: 0.01
           y: 1.26
-          z: 0.0
+          z: 0.24
         hitbox:
           width: 0.15
           height: 0.15
@@ -301,14 +306,19 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: DocksEast
+    offset:
+      x: -0.42
+      y: 0.95
+      z: 3.8
+    yaw: 180.0
     scale:
-      x: 2.0
-      y: 2.0
-      z: 2.0
+      x: 1.3
+      y: 1.3
+      z: 1.3
     hitboxes:
       - destStation: VillageDistrict
         offset:
-          x: 0.26
+          x: -0.26
           y: 0.85
           z: 0.0
         hitbox:
@@ -316,7 +326,7 @@ okiboMaps:
           height: 0.15
       - destStation: CliffDistrict
         offset:
-          x: 0.1
+          x: -0.1
           y: 0.7
           z: 0.0
         hitbox:
@@ -324,7 +334,7 @@ okiboMaps:
           height: 0.15
       - destStation: SlumDistrict
         offset:
-          x: -0.33
+          x: 0.33
           y: 0.9
           z: 0.0
         hitbox:
@@ -332,7 +342,7 @@ okiboMaps:
           height: 0.15
       - destStation: DocksWest
         offset:
-          x: -0.66
+          x: 0.66
           y: 1.15
           z: 0.0
         hitbox:
@@ -340,7 +350,7 @@ okiboMaps:
           height: 0.15
       - destStation: Orphanage
         offset:
-          x: -0.33
+          x: 0.33
           y: 1.19
           z: 0.0
         hitbox:
@@ -348,7 +358,7 @@ okiboMaps:
           height: 0.15
       - destStation: GoldenBridge
         offset:
-          x: -0.16
+          x: 0.16
           y: 1.19
           z: 0.03
         hitbox:
@@ -356,7 +366,7 @@ okiboMaps:
           height: 0.15
       - destStation: GuildHQ
         offset:
-          x: 0.24
+          x: -0.24
           y: 1.26
           z: 0.0
         hitbox:
@@ -364,7 +374,7 @@ okiboMaps:
           height: 0.15
       - destStation: TowerDistrict
         offset:
-          x: 0.35
+          x: -0.35
           y: 1.05
           z: 0.0
         hitbox:
@@ -375,12 +385,12 @@ okiboMaps:
       offset:
         x: 0.0
         y: -0.08
-        z: 0.01
+        z: -0.01
   - station: VillageDistrict
     scale:
-      x: 2.0
-      y: 2.0
-      z: 2.0
+      x: 1.3
+      y: 1.3
+      z: 1.3
     hitboxes:
       - destStation: CliffDistrict
         offset:
