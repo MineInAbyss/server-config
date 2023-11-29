@@ -98,20 +98,22 @@ ping:
 
 channels:
   global:
-    channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
-    isDefaultChannel: true
-    proxy: true
+    channelType: GLOBAL
+    permission: ""
     logToConsole: true
     simpleConsoleMessages: false
+    proxy: true
     discordsrv: true
-    format: ":survival: %luckperms_prefix%
-    <hover:show_text:'<light_purple><b><chatty_nickname><newline></b>
-    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
-    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
+    isDefaultChannel: true
+    isStaffChannel: false
+    format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''<light_purple><b><chatty_nickname><newline></b>
+      <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
+      <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
+      <aqua>%statistic_hours_since_death%h''><click:run_command:/mia profile %player_name%><chatty_nickname>: '
+    messageColor: white
+    channelRadius: 0
     channelAliases:
-      - "g"
+      - g
 
   playerhead:
     channelType: GLOBAL
