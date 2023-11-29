@@ -3,12 +3,11 @@
 - !<mobzy:display_name> "<#10DEA7>Okibo"
 - !<mobzy:set.modelengine-model>
   modelId: okibo
+  scale: 2.75
 - !<mobzy:set.attributes>
   maxHealth: 50
   movementSpeed: 0.2000
   knockbackResistance: 0.2000
-  width: 2.5000
-  height: 3
 - !<mobzy:death_loot>
   minExp: 20
   maxExp: 25

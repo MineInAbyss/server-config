@@ -1,0 +1,15 @@
+- !<mobzy:spawn_regions>
+  keys: [ stingerheadsanddesert ]
+- !<mobzy:spawn.type>
+  prefab: mineinabyss:stingerhead
+- !<mobzy:spawn.amount>
+  amount: 1
+- !<mobzy:check.spawn.local_group>
+  max: 5
+  radius: 150
+- !<mobzy:check.spawn.gap>
+  range: 3..4096
+- !<geary:check.block_type>
+  allow:
+    - SOUL_SOIL
+
