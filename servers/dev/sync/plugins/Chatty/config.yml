@@ -108,7 +108,7 @@ channels:
     discordsrv: false
     logToConsole: true
     format: ":dev::space_-4::local: <gold><chatty_nickname>: "
-    messageColor: yellow
+    messageColor: "#FFECB3"
     channelRadius: 500
     channelAliases:
       - "l"

@@ -145,7 +145,7 @@ channels:
       <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
       <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
       <aqua>%statistic_hours_since_death%h''> <click:run_command:/mia profile %player_name%><yellow><chatty_nickname>:<yellow> '
-    messageColor: white
+    messageColor: "#FFECB3"
     channelRadius: 500
     channelAliases:
       - l
