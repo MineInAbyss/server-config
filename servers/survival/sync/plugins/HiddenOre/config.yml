@@ -1,7 +1,7 @@
 prefix: You found a hidden vein!
 alert_user: true
 list_drops: true
-debug: false
+debug: true
 map_save_active: false
 ignore_silktouch: true
 caveOres: false
