@@ -55,15 +55,6 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
-          charcoal_sand_ore:
-            prefab: mineinabyss:charcoal_sand_ore
-            tools:
-              - anything
-            chance: 0.5
-            minAmount: 1
-            maxAmount: 6
-            transformIfAble: true
-            transformDropIfFails: false
           gravel:
             package:
             - ==: org.bukkit.inventory.ItemStack
@@ -568,8 +559,6 @@ regions:
           blue_terracotta:
             material: BLUE_TERRACOTTA
         validTransforms:
-          charcoal_sand_ore:
-            blocky: mineinabyss:charcoal_sand_ore
           andesite:
             material: ANDESITE
           diorite:
@@ -588,15 +577,6 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
-          charcoal_sand_ore:
-            prefab: mineinabyss:charcoal_sand_ore
-            tools:
-              - anything
-            chance: 0.001
-            minAmount: 1
-            maxAmount: 2
-            transformIfAble: true
-            transformDropIfFails: false
           coal_ore:
             package:
               - ==: org.bukkit.inventory.ItemStack
