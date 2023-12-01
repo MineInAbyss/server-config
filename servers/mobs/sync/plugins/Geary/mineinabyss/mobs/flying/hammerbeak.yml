@@ -1,6 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> Hammerbeak
+- !<geary:set.mythic_mob> hammerbeak
 - !<mobzy:display_name> "<#613F0C>Hammerbeak"
 - !<mobzy:death_loot>
   minExp: 25

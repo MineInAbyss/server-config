@@ -1,0 +1,31 @@
+corpse_weeper:
+  Type: ALLAY
+  Health: 20
+  AIGoalSelectors:
+    - clear
+    - meleeattack{speed=1.5;range=1.5}
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    PreventOtherDrops: false
+    KnockbackResistance: 1
+    Damage: 3
+    Collidable: true
+    Silent: true
+    FollowRange: 17
+    #MovementSpeed: 0.2
+  Model:
+    Id: corpse_weeper
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+    - bodyclamp{m=corpse_weeper;c=15} @self ~onSpawn
+    - bodyclamp{m=corpse_weeper;c=15} @self ~onLoad
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - state{mid=corpse_weeper;s=attack} @self ~onAttack

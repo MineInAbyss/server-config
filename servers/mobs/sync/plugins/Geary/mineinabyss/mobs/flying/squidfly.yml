@@ -1,15 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> squidfly
 - !<mobzy:display_name> "<#85512E>Squidfly"
-- !<mobzy:set.modelengine-model>
-  modelId: squidfly
-- !<mobzy:set.attributes>
-  maxHealth: 15
-  followRange: 30
-  attackDamage: 5
-  flyingSpeed: 0.7
-  width: 0.5000
-  height: 1
 - !<mobzy:death_loot>
   minExp: 12
   maxExp: 18
@@ -21,17 +13,3 @@
       maxAmount: 1
       dropChance: 0.8000
 - !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      #diveVelocity: -0.4000
-      #minHeight: 2
-      #maxHeight: 4
-      #startDiveDistance: 5
-      #bashVelMultiplier: 0.6000
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

@@ -1,27 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> onitsuchi
 - !<mobzy:display_name> "<#5468A8>Kagi-Tachikiri"
-- !<mobzy:set.modelengine-model>
-  modelId: kagi_tachikiri
-- !<mobzy:set.attributes>
-  maxHealth: 15
-  followRange: 45
-  attackDamage: 4
-  attackKnockback: 0.5000
-  knockbackResistance: 0.1000
-  flyingSpeed: 0.7
-  width: 1
-  height: 1
-#- !<geary:events>
-#  onTargetHit:
-#    - !<on.target>
-#      - !<geary:apply_potion_effects>
-#        effects:
-#          - type: POISON
-#            duration: 2s
-#            amplifier: 2
-#            ambient: true
-#        applyChance: 0.8000
 - !<mobzy:death_loot>
   minExp: 20
   maxExp: 40
@@ -32,15 +12,3 @@
       maxAmount: 2
       dropChance: 0.7000
 - !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      #diveVelocity: -0.0800
-      #minHeight: 3
-      #maxHeight: 5
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

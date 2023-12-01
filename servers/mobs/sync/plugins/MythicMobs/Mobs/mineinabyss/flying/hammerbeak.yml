@@ -1,6 +1,5 @@
 hammerbeak:
-  Type: ALLAY
-  Display: 'Hammerbeak'
+  Type: PHANTOM
   Health: 20
   AIGoalSelectors:
     - clear
@@ -13,19 +12,13 @@ hammerbeak:
     - attacker
     - players
   Options:
-    PreventOtherDrops: true
+    PreventOtherDrops: false
     KnockbackResistance: 1
     Damage: 3
     Collidable: true
     Silent: true
     FollowRange: 17
     #MovementSpeed: 0.2
-#  Drops:
-#    - exp 25-45
-#    - geary mineinabyss:hammerbeak_wing_raw 1-3
-#    - geary mineinabyss:hammerbeak_beak 1-2 0.6
-#    - geary mineinabyss:hammerbeak_feather 1-3 0.7
-#    - geary mineinabyss:hammerbeak_egg 1-2 0.5
   Model:
     Id: hammerbeak
     ViewRadius: 64
@@ -34,7 +27,7 @@ hammerbeak:
   Skills:
     - bodyclamp{m=hammerbeak;c=15} @self ~onSpawn
     - bodyclamp{m=hammerbeak;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=hammerbeak;s=attack} @self ~onAttack
     #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath

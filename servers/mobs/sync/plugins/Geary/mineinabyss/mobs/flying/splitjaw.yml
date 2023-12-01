@@ -1,27 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> splitjaw
 - !<mobzy:display_name> "<#9A1CAD>Splitjaw"
-- !<mobzy:set.modelengine-model>
-  modelId: splitjaw
-- !<mobzy:set.attributes>
-  maxHealth: 50
-  followRange: 50
-  attackDamage: 9
-  attackKnockback: 2
-  knockbackResistance: 0.2000
-  flyingSpeed: 0.3
-  width: 4
-  height: 2.5000
-#- !<geary:events>
-#  onTargetHit:
-#    - !<on.target>
-#      - !<geary:apply_potion_effects>
-#        effects:
-#          - type: POISON
-#            duration: 2s
-#            amplifier: 3
-#            ambient: true
-#        applyChance: 0.2000
 - !<mobzy:death_loot>
   minExp: 70
   maxExp: 115
@@ -54,15 +34,3 @@
   hurt:
     sound: mineinabyss:entity.splitjaw.hurt
     category: HOSTILE
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.0800
-      minHeight: 3
-      maxHeight: 5
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

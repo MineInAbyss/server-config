@@ -1,17 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> madokajack
 - !<mobzy:display_name> "<#1C439E>Madokajack"
-- !<mobzy:set.modelengine-model>
-  modelId: madokajack
-- !<mobzy:set.attributes>
-  maxHealth: 35
-  followRange: 30
-  attackDamage: 6
-  attackKnockback: 1
-  knockbackResistance: 0.1100
-  flyingSpeed: 0.3
-  width: 2
-  height: 1.5
 - !<mobzy:death_loot>
   minExp: 40
   maxExp: 60
@@ -46,18 +36,3 @@
   hurt:
     sound: mineinabyss:entity.madokajack.hurt
     category: HOSTILE
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      #minHeight: 6
-      #maxHeight: 10
-      #startDiveDistance: 14
-      #bashVelMultiplier: 0.6000
-      bashDuration: 5
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

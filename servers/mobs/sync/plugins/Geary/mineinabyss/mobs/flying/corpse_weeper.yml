@@ -1,17 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> corpse_weeper
 - !<mobzy:display_name> "<#D12B26>Corpse-Weeper"
-- !<mobzy:set.modelengine-model>
-  modelId: corpse_weeper
-- !<mobzy:set.attributes>
-  maxHealth: 20
-  followRange: 30
-  attackDamage: 7
-  attackKnockback: 1
-  knockbackResistance: 0.1300
-  flyingSpeed: 0.4
-  width: 2
-  height: 2
 - !<mobzy:death_loot>
   minExp: 70
   maxExp: 90
@@ -41,19 +31,3 @@
   hurt:
     sound: mineinabyss:entity.corpseweeper.cry
     category: HOSTILE
-- !<mobzy:set.pathfinders>
-  override: true
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.3000
-      minHeight: 3
-      maxHeight: 6
-      startDiveDistance: 15
-      bashVelMultiplier: 0.5000
-      bashDuration: 20
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

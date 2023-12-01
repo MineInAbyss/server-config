@@ -1,17 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> cyatoria
 - !<mobzy:display_name> "<#3DDFFF>Cyatoria"
-- !<mobzy:set.modelengine-model>
-  modelId: cyatoria
-- !<mobzy:set.attributes>
-  maxHealth: 35
-  followRange: 50
-  attackDamage: 5
-  attackKnockback: 1.5000
-  knockbackResistance: 0.1000
-  flyingSpeed: 0.5
-  width: 2
-  height: 2
 - !<mobzy:death_loot>
   minExp: 35
   maxExp: 45
@@ -28,17 +18,3 @@
       maxAmount: 4
       dropChance: 0.7000
 - !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      diveVelocity: -0.3000
-      minHeight: 7
-      maxHeight: 10
-      startDiveDistance: 20
-      bashVelMultiplier: 0.4000
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>

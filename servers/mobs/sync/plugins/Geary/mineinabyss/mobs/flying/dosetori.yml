@@ -1,17 +1,7 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
+- !<geary:set.mythic_mob> dosetori
 - !<mobzy:display_name> "<#FFF821>Dosetori"
-- !<mobzy:set.modelengine-model>
-  modelId: dosetori
-- !<mobzy:set.attributes>
-  maxHealth: 35
-  followRange: 50
-  attackDamage: 6
-  attackKnockback: 1.3000
-  knockbackResistance: 0.1300
-  flyingSpeed: 0.4
-  width: 2
-  height: 0.5000
 - !<mobzy:death_loot>
   minExp: 60
   maxExp: 100
@@ -42,19 +32,3 @@
   hurt:
     sound: mineinabyss:entity.dosetori.hurt
     category: HOSTILE
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<mobzy:behavior.flying_damage_target>
-    2: !<mobzy:behavior.flying_dive_on_target>
-      #diveVelocity: -0.5000
-      #minHeight: 7
-      #maxHeight: 10
-      #startDiveDistance: 10
-      #bashVelMultiplier: 0.5000
-      bashDuration: 20
-    3: !<mobzy:behavior.fly_towards_target>
-    4: !<mobzy:behavior.idle_fly>
