@@ -1,3 +1,6 @@
+- !<geary:inherit>
+  from: [mineinabyss:passive_flying]
+- !<mobzy:spawn.position> GROUND
 - !<geary:set.mythic_mob> rohana
 - !<mobzy:display_name> "Rohana"
 - !<mobzy:set.attributes>
