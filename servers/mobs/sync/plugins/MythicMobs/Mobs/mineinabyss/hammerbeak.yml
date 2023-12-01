@@ -20,12 +20,12 @@ hammerbeak:
     Silent: true
     FollowRange: 17
     #MovementSpeed: 0.2
-  Drops:
-    - exp 25-45
-    - geary mineinabyss:hammerbeak_wing_raw 1-3
-    - geary mineinabyss:hammerbeak_beak 1-2 0.6
-    - geary mineinabyss:hammerbeak_feather 1-3 0.7
-    - geary mineinabyss:hammerbeak_egg 1-2 0.5
+#  Drops:
+#    - exp 25-45
+#    - geary mineinabyss:hammerbeak_wing_raw 1-3
+#    - geary mineinabyss:hammerbeak_beak 1-2 0.6
+#    - geary mineinabyss:hammerbeak_feather 1-3 0.7
+#    - geary mineinabyss:hammerbeak_egg 1-2 0.5
   Model:
     Id: hammerbeak
     ViewRadius: 64
