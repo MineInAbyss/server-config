@@ -34,8 +34,8 @@ Stingerhead:
   DamageModifiers:
     - PROJECTILE 0.25
   Skills:
-    # - state{s=burrow_out} @self ~onSpawn
-    # - state{s=burrow_in} @self ~onDespawn
+    - skill{s=burrow_out} @self ~onSpawn
+    # - skill{s=burrow_in} @self ~onDespawn
     
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=Cancelattack;sync=true} ~onAttack
