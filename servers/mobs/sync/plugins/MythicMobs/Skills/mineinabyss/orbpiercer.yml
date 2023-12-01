@@ -15,6 +15,42 @@ meteorONSPAWN:
 
 #debug skills ^
 
+orbyATTACK:
+  Skills:
+  - CancelEvent
+  - skill{s=orbyATTACKskill} @self
+
+orbyATTACKskill:
+  Conditions:
+  Cooldown: 3
+  Skills:
+  - state{s=attack;li=3;lo=2} @self
+  - delay 20
+  - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @Forward{f=1.0;y=0.0}
+  - delay 40
+  
+
+
+orbyATTACKDamage:
+  Skills:
+  - damage{amount=7} @target
+  - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+  - skill{s=Bleeding} @target
+  - throw{velocity=4;velocityY=2} @target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###orby projectiles
 orbyspear:
   Conditions:
@@ -37,7 +73,7 @@ orbyhit:
   Conditions:
   Cooldown:
   Skills:
-    - damage{amount=8}
+    - damage{amount=5} @target
     - potion{type=POISON;duration=150;level=5}
     - potion{type=WITHER;duration=150;level=5}
     - skill{s=Bleeding} @target
@@ -61,9 +97,10 @@ orby_shout:
     - gcd{ticks=300} @self
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
+    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
     - delay 10
     - skill{s=orby_knockback} @PIR{r=10}
-    - skill{s=orby_screenshake;repeat=16;repeatInterval=8} @pir{r=20}
+    - skill{s=orby_screenshake;repeat=12;repeatInterval=8} @pir{r=20}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
     - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
@@ -82,20 +119,20 @@ orby_shout:
 orby_knockback:
   Skills:
     - delay 1
-    - throw{v=25;vy=4}
+    - throw{v=25;vy=4} @pir{r=12}
 orby_screenshake:
   Skills:
-    - recoil{r=15;pitch=-.5} @pir{r=12}
+    - recoil{r=15;pitch=-0.3}
     - delay 2
-    - recoil{r=15;pitch=.4} @pir{r=12}
+    - recoil{r=15;pitch=.2}
     - delay 2
-    - recoil{r=15;pitch=-.3} @pir{r=12}
+    - recoil{r=15;pitch=-0.1}
     - delay 2
-    - recoil{r=15;pitch=.2} @pir{r=12}
+    - recoil{r=15;pitch=.1}
 orby_knockback2:
   Skills:
     - delay 1
-    - throw{v=30;vy=5}
+    - throw{v=30;vy=5} @pir{r=12}
 
 ### orby spike eject
 orby_spike_eject:
@@ -107,9 +144,9 @@ orby_spike_eject:
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - delay 10
-    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=10}
+    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
     - skill{s=orby_knockback2} @PIR{r=10}
-    - skill{s=orby_screenshake;repeat=16;repeatInterval=8} @pir{r=20}
+    - skill{s=orby_screenshake;repeat=12;repeatInterval=8} @pir{r=20}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
     - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
@@ -129,7 +166,7 @@ orby_spike_eject:
     - setstance{stance=spikeless} @self
     - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
     - delay 41
-    - state{s=launch_attack;remove=true} @self
+    - state{s=roar;remove=true} @self
     - setAI{ai=true} @self
 
 orbyspikespin:
@@ -200,7 +237,7 @@ orby_impale:
   Conditions:
     - offgcd true
     - targetinlineofsight
-    - heightabove{h=5} false
+    - heightabove{h=10} false
   #- stance{s=spikeless;str=true} false
   Skills:
     - gcd{ticks=50}
