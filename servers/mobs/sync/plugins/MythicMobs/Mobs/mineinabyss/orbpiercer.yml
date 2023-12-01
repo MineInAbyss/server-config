@@ -33,7 +33,7 @@ OrbPiercer:
   Skills:
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
-    - skill{s=orbpiercer_speed} @self ~onSpawn
+#    - skill{s=orbpiercer_speed} @self ~onSpawn
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400

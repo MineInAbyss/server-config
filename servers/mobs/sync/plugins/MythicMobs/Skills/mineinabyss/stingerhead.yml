@@ -214,8 +214,8 @@ stingerhead_venom_tick:
 stingerhead_venom_impact:
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
-    - potion{type=POISON;duration=20;level=2}
-    - potion{type=BLINDNESS;duration=15;level=1}
+    - potion{type=POISON;duration=20;level=2} @target
+    - potion{type=BLINDNESS;duration=15;level=1} @target
     - damage{a=8} @target
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
