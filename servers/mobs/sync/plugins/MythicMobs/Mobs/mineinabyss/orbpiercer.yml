@@ -2,6 +2,7 @@ OrbPiercer:
   Type: ZOMBIE
   Display: 'OrbPiercer'
   Health: 150
+  Damage: 7
   AIGoalSelectors:
     - clear
     - float
@@ -15,7 +16,7 @@ OrbPiercer:
   Options:
     PreventOtherDrops: true
     KnockbackResistance: 1
-    Damage: 25
+    DigOutOfGround: true
     Collidable: true
     Silent: true
     FollowRange: 48

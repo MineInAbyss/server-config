@@ -1,6 +1,7 @@
 splitjaw:
   Type: ALLAY
-  Health: 20
+  Health: 60
+  Damage: 7
   AIGoalSelectors:
     - clear
     - meleeattack{speed=1.5;range=1.5}
@@ -13,11 +14,11 @@ splitjaw:
     - players
   Options:
     PreventOtherDrops: false
-    KnockbackResistance: 1
-    Damage: 3
+    # KnockbackResistance: 0.5
     Collidable: true
-    Silent: true
-    FollowRange: 17
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
     #MovementSpeed: 0.2
   Model:
     Id: splitjaw
@@ -27,5 +28,5 @@ splitjaw:
   Skills:
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=splitjaw;s=attack} @self ~onAttack

@@ -1,6 +1,6 @@
 - !<geary:inherit>
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> onitsuchi
+- !<geary:set.mythic_mob> kagi_tachikiri
 - !<mobzy:display_name> "<#5468A8>Kagi-Tachikiri"
 - !<mobzy:death_loot>
   minExp: 20

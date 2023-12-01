@@ -77,7 +77,7 @@ stingerhead_bigleap:
     - potion{t=SLOW;d=20;l=7} @self
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=15;amount=50;hS=1;vS=1} @Self
     - delay 20
-    - setai{ai=false}
+    - setai{ai=false} @self
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 1
@@ -99,14 +99,14 @@ stingerhead_leap:
     - potion{t=SLOW;d=20;l=4} @self
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
     - delay 20
-    - setai{ai=false}
+    - setai{ai=false} @self
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - leap{velocity=500} @Target
     - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
     - delay 26
     - state{s=launch_attack;remove=true} @self
-    - setai{ai=true}
+    - setai{ai=true} @self
 stingerhead_leapa:
   Cooldown: 1
   Conditions:
@@ -129,7 +129,7 @@ stingerhead_stun50:
     - state{m=stingerhead;s=stun} @self
     - delay 30
     - setstance{stance=stun} @self
-    - setai{ai=true}
+    - setai{ai=true} @self
 stingerhead_stun25:
   Conditions:
     - variableisset{var=target.stun25} false
@@ -138,7 +138,7 @@ stingerhead_stun25:
     - setAI{ai=false} @self
     - state{s=stun} @self
     - setstance{s=stun} @self
-    - setai{ai=true}
+    - setai{ai=true} @self
 stingerhead_stun_end:
   Skills:
     - setstance{s=default} @self
@@ -229,7 +229,7 @@ stingerhead_spin:
     - distance{d=<5} true
   Skills:
     - gcd{ticks=50}
-    - setai{ai=false}
+    - setai{ai=false} @self
     - state{s=spin_attack;li=0;lo=0}
     - skill{s=[
       - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
@@ -238,7 +238,7 @@ stingerhead_spin:
       - throw{v=10;vy=4} @PIR{r=5}
       ]} @EIR{r=5;ignore=faction}
     - delay 20
-    - setai{ai=true}
+    - setai{ai=true} @self
     - state{s=spin_attack;remove=true}
 
 

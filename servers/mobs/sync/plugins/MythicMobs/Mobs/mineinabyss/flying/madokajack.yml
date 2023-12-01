@@ -1,6 +1,7 @@
 madokajack:
   Type: ALLAY
-  Health: 20
+  Health: 28
+  Damage: 5
   AIGoalSelectors:
     - clear
     - meleeattack{speed=1.5;range=1.5}
@@ -13,11 +14,11 @@ madokajack:
     - players
   Options:
     PreventOtherDrops: false
-    KnockbackResistance: 1
-    Damage: 3
+    # KnockbackResistance: 0.5
     Collidable: true
-    Silent: true
-    FollowRange: 17
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
     #MovementSpeed: 0.2
   Model:
     Id: madokajack
@@ -27,5 +28,5 @@ madokajack:
   Skills:
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn
     - bodyclamp{m=madokajack;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - setspeed{type=flying;speed=1.3} @self ~onSpawn
     - state{mid=madokajack;s=attack} @self ~onAttack

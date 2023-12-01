@@ -1,0 +1,26 @@
+kagi_venom:
+  Cooldown: 8
+  Conditions:
+    - incombat true
+    - offgcd true
+    - targetwithin{d=10} true
+    #- targetinlineofsight{} true
+  Skills:
+    - gcd{ticks=50}
+    - state{s=spit} @self
+    - potion{type=SLOW;duration=15;level=2;p=false;force=true} @Self
+    - delay 10
+    - projectile{onTick=kagi_venom_tick;onHit=kagi_venom_impact;v=20;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - delay 20
+
+
+kagi_venom_tick:
+  Skills:
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=15;hS=.25;vS=.25;speed=1.25}
+
+kagi_venom_impact:
+  Skills:
+    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
+    - potion{type=POISON;duration=20;level=2}
+    - potion{type=BLINDNESS;duration=15;level=1}
+    - damage{a=8} @target
