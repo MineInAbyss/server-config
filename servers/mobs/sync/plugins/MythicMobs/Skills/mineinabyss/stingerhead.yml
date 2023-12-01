@@ -8,7 +8,13 @@ Cancelattack:
   Skills:
     - CancelEvent
 
-
+burrow_out:
+  Skills:
+    - setai{ai=false} @self
+    - state{s=burrow_out;li=0;lo=0} @self
+    - delay 30
+    - state{s=burrow_out;remove=true} @self
+    - setai{ai=true} @self
 SH_Attack:
   Conditions:
     - offgcd
@@ -18,8 +24,8 @@ SH_Attack:
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 5
-    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
-    - skill{s=Bleeding} @forward{f=1}
+    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3}
+    - skill{s=Bleeding} @forward{f=3}
 #will bleed once every 5 seconds for 5 seconds
 SH_Attack_DAMAGE:
   TargetConditions:
