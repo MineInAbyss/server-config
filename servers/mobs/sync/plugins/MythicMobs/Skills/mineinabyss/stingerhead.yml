@@ -117,7 +117,7 @@ stingerhead_leapa:
     - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
     - damage{a=7} @target
     - skill{s=Bleeding} @target
-    - skill{s=stinger_venom_impact} @target
+    - skill{s=stingerhead_venom_impact} @target
     - potion{t=SLOW;d=20;l=7}
 ### Stingerhead Stun States
 stingerhead_stun50:
