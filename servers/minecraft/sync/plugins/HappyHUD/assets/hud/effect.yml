@@ -28,7 +28,7 @@ effect-poison:
       color: "#FFFFFF"
       offset:
         x: 17
-        y: -3
+        y: 1
       function:
         listener: health
         increment: 20
@@ -94,7 +94,7 @@ effect-hunger:
       color: "#FFFFFF"
       offset:
         x: 17
-        y: -3
+        y: 1
       function:
         reversed: true
         listener: food
