@@ -3,7 +3,7 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:stingerhead
 - !<mobzy:spawn.amount>
-  amount: 1
+  amount: 1..2
 - !<mobzy:check.spawn.local_group>
   max: 5
   radius: 150
