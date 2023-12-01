@@ -58,4 +58,4 @@ orbpiercer_projectile:
   Skills:
     - skill{s=meteorONSPAWN} @self ~onSpawn
     - model{mid=orbpiercer_projectile;n=false;d=false;i=false} @self ~onSpawn
-    - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn
+   # - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn
