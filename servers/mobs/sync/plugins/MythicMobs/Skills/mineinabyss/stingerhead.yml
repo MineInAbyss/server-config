@@ -69,6 +69,7 @@ stingerhead_bigleap:
   Conditions:
     - targetinlineofsight{} true
     - offgcd true
+    - heightabove{h=5} false
   TargetConditions:
     - distance{d=12to24} true
   Skills:
@@ -80,7 +81,7 @@ stingerhead_bigleap:
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 1
-    - leap{velocity=1500} @Target
+    - leap{velocity=1000} @Target
     - skill{s=stingerhead_leapa;repeat=20;repeatinterval=1} @Self
     - delay 30
     - state{s=launch_attack;remove=true} @self
@@ -90,6 +91,7 @@ stingerhead_leap:
   Conditions:
     - offgcd true
     - targetinlineofsight
+    - heightabove{h=5} false
   TargetConditions:
     - distance{d=6to12} true
   Skills:
@@ -100,7 +102,7 @@ stingerhead_leap:
     - setai{ai=false}
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
-    - leap{velocity=800} @Target
+    - leap{velocity=500} @Target
     - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
     - delay 26
     - state{s=launch_attack;remove=true} @self
@@ -192,7 +194,7 @@ stingerhead_venom:
   Conditions:
     - incombat true
     - offgcd true
-    - targetwithin{d=8} true
+    - targetwithin{d=10} true
     #- targetinlineofsight{} true
   Skills:
     - gcd{ticks=50}
@@ -214,6 +216,7 @@ stingerhead_venom_impact:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
     - potion{type=POISON;duration=20;level=2}
     - potion{type=BLINDNESS;duration=15;level=1}
+    - damage{a=8} @target
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
   - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
