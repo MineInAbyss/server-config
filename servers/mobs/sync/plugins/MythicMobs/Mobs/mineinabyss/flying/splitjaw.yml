@@ -1,12 +1,7 @@
 splitjaw:
-  Type: GHAST
+  Type: PHANTOM
   Health: 60
   Damage: 7
-    - clear
-    - meleeattack
-    - float
-    - randomFly
-    - randomlookaround
   AITargetSelectors:
     - clear
     - attacker
@@ -19,6 +14,7 @@ splitjaw:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
+    MovementSpeed: 0.2
 
     PreventSunburn: true
   Model:
@@ -29,8 +25,7 @@ splitjaw:
   Skills:
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.2} @self ~onSpawn
-
+    #- setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=splitjaw;s=attack} @self ~onAttack
 
     - DefaultState{m=splitjaw;t=WALK;s=walk_aggro} @self ~onEnterCombat
