@@ -8,12 +8,6 @@ Cancelattack:
   Skills:
     - CancelEvent
 
-burrow_out:
-  Skills:
-    - state{s=burrow_out;li=0;lo=0} @self
-    - delay 30
-    - state{s=burrow_out;remove=true} @self
-
 SH_Attack:
   Conditions:
     - offgcd
@@ -29,7 +23,7 @@ SH_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
   Skills:
-    - damage{a=7;pkb=false;hnp=true;hp=true} @target
+    - damage{a=7;pkb=true;hnp=true;hp=true} @target
     - skill{s=Bleeding} @target
 SH_Hit:
   Cooldown: 1
@@ -106,6 +100,7 @@ stingerhead_leap:
     - setai{ai=false} @self
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - delay 1
     - leap{velocity=500} @Target
     - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
     - delay 26

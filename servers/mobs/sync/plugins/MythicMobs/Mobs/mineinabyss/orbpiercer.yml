@@ -1,7 +1,7 @@
 OrbPiercer:
   Type: ZOMBIE
   Display: 'OrbPiercer'
-  Health: 150
+  Health: 125
   Damage: 7
   AIGoalSelectors:
     - clear
@@ -21,6 +21,8 @@ OrbPiercer:
     Silent: true
     FollowRange: 48
     #MovementSpeed: 0.5
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} 1 1
   Drops:
     - exp 180-210
     - geary mineinabyss:orb_piercer_spike 3-6
@@ -45,7 +47,7 @@ OrbPiercer:
     - skill{s=orby_impale} @target ~onTimer:40
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
-    - skill{s=orby_spike_eject} @target ~onDamaged <40%
+    - skill{s=orby_spike_eject} @target ~onDamaged <60%
 orbpiercer_projectile:
   Type: CAT
   Display: meteor
