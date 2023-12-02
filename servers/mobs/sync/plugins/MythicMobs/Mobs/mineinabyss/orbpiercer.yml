@@ -20,7 +20,9 @@ OrbPiercer:
     Collidable: true
     Silent: true
     FollowRange: 48
-    #MovementSpeed: 0.5
+
+    MovementSpeed: 0.3
+
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} 1 1
   Drops:
@@ -40,7 +42,7 @@ OrbPiercer:
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
 
-    - skill{s=orbyATTACK;sync=true} @self ~onAttack
+    - skill{s=orbyATTACK} ~onTimer:10 0.65 
 
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear} @target ~onTimer:20

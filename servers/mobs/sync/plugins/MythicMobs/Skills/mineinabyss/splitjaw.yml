@@ -29,9 +29,10 @@ SJ_dash:
     - targetinlineofsight
   #- stance{s=spikeless;str=true} false
   Skills:
-    - gcd{ticks=200}
+    - gcd{ticks=400}
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
     - setai{ai=false}
+    - delay 20
     - state{s=dash_charge;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 35
@@ -59,7 +60,7 @@ SJ_dashhit:
 SJ_dashmiss:
   Cooldown: 
   Conditions:
-    - stance{s=dashhit;str=true} false
+    - stance{s=dashhit} false
   Skills:
     - stun{d=80;f=true} @self
     - state{s=dash_ground_slam;li=0;lo=0} @self
@@ -95,4 +96,4 @@ sj_shake:
     - delay 2
     - recoil{r=15;pitch=-0.1}
     - delay 2
-    - recoil{r=15;pitch=.1}
+    - recoil{r=15;pitch=.1} 
