@@ -27,7 +27,7 @@ orbyATTACKskill:
   Conditions:
   Cooldown: 2
   Skills:
-    - state{s=attack;li=3;lo=2} @self
+    - state{s=attack;li=3;lo=2} @self 
     - delay 10
     - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @Forward{f=1.0;y=0.0}
     - delay 30

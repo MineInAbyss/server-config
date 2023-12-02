@@ -95,4 +95,4 @@ sj_shake:
     - delay 2
     - recoil{r=15;pitch=-0.1}
     - delay 2
-    - recoil{r=15;pitch=.1}
+    - recoil{r=15;pitch=.1} 

@@ -33,7 +33,7 @@ Stingerhead:
     DamageTint: true
   DamageModifiers:
     - PROJECTILE 0.25
-  Skills:
+  Skills: 
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
     

@@ -33,7 +33,7 @@ SH_Hit:
 ## Stingerhead skills
 stingerhead_start_spawn:
   Skills:
-    - model{mid=stingerhead;d=true} @self
+    - model{mid=stingerhead;d=true} @self 
     #- setAI{a=0} @self
     - effect:particles{particle=large_smoke;amount=50;hS=1;vS=1;speed=0;d=true;dir=0,1,0} @self
     - bodyclamp{m=stingerhead;c=15} @self
