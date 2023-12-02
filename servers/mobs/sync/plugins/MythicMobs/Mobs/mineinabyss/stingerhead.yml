@@ -34,7 +34,7 @@ Stingerhead:
   DamageModifiers:
     - PROJECTILE 0.25
   Skills:
-    - skill{s=burrow_out} @self ~onSpawn
+    #- skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
     
     - skill{s=Changetarget} ~onTimer:160 <99%
@@ -46,8 +46,8 @@ Stingerhead:
     - skill{s=stingerhead_venom} @target ~onTimer:45
 
 
-    - skill{s=stingerhead_bigleap} @target ~onTimer:300   
-    - skill{s=stingerhead_leap} @target ~onTimer:150    
+    - skill{s=stingerhead_bigleap} @target ~onTimer:20
+    - skill{s=stingerhead_leap} @target ~onTimer:20    
     - skill{s=stingerhead_spin} @self ~onDamaged 0.1
     #- state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
     #- skill{s=stingerhead_leap_attack} @self ~onTimer:20
