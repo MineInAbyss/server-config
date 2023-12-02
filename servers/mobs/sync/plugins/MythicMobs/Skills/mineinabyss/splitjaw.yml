@@ -45,6 +45,7 @@ SJ_dash:
     - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=3}
     - delay 1
     - skill{s=SJ_dashmiss} @self
+    - delay 60
     - setai{ai=true}
 SJ_dashhit:
   Cooldown: 3

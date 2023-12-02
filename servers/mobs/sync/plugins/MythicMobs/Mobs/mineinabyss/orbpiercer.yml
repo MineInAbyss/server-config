@@ -20,7 +20,9 @@ OrbPiercer:
     Collidable: true
     Silent: true
     FollowRange: 48
+
     MovementSpeed: 0.3
+
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} 1 1
   Drops:
