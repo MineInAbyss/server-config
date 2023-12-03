@@ -1,20 +1,21 @@
 
 SJ_Attack:
+  Cooldown: 3
   Conditions:
     - offgcd
-    - targetwithin{d=3} true
+    - targetwithin{d=5} true
   Skills:
     - gcd{ticks=40}
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
-    - delay 5
+    - delay 20
     - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=3}
 #will bleed once every 5 seconds for 5 seconds
 SJ_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
   Skills:
-    - damage{a=5;pkb=true;hnp=true;hp=true} @target
+    - damage{a=8;pkb=true;hnp=true;hp=true} @target
 
 SJ_Hit:
   Cooldown: 1
