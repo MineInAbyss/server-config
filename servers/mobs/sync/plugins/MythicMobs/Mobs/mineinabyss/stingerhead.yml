@@ -37,7 +37,6 @@ Stingerhead:
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
     - skill{s=Changetarget} ~onTimer:160 <99%
-
     - skill{s=SH_Attack;sync=true} @self ~onAttack
   
     - skill{s=SH_Hit} ~onDamaged
