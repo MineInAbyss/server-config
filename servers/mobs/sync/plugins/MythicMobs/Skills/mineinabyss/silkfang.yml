@@ -1,6 +1,7 @@
 sfSpiderWebShot:
   Skills:
-  - potion{type=SLOW;lvl=10;duration=100} @self
+  - potion{type=SLOW;lvl=10;duration=10} @self
+  - delay 1
   - projectile{bulletType=ITEM;material=STRING;onTick=sfSpiderWebShot-Tick;onHit=sfSpiderWebShot-Hit;v=10;i=1;hR=1;vR=1} @target
   
 sfSpiderWebShot-Tick:
@@ -10,6 +11,5 @@ sfSpiderWebShot-Hit:
   Skills:
   - prison{material=WEB;duration=30;breakable=true} @target
   - damage{a=2;pk=true} @target
-  - potion{type=POISON;lvl=1;duration=100} @target 0.4
-  - potion{type=HUNGER;lvl=1;duration=100} @target 0.4
-  - ignite{ticks=100} @target
+  - potion{type=POISON;lvl=1;duration=100} @target 0.2
+  - potion{type=HUNGER;lvl=1;duration=100} @target 0.2

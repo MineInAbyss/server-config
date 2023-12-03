@@ -24,8 +24,13 @@ silkfang:
   - DROWNING 0
   - CONTACT 0
   - FALLING 0
+  Model:
+    Id: silkfang
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Skills:
-  - skill{s=sfSpiderWebShot} @RTT ~onTimer:100
+  - skill{s=sfSpiderWebShot} @Target ~onTimer:220
   - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
   - dismount ~onDamaged
