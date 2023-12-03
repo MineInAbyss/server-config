@@ -1,5 +1,5 @@
 OrbPiercer:
-  Type: ZOMBIE
+  Type: DROWNED
   Display: 'OrbPiercer'
   Health: 125
   Damage: 7
@@ -24,7 +24,7 @@ OrbPiercer:
     MovementSpeed: 0.3
 
   Equipment:
-    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} 1 1
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
   Drops:
     - exp 180-210
     - geary mineinabyss:orb_piercer_spike 3-6
@@ -41,8 +41,7 @@ OrbPiercer:
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
-
-    - skill{s=orbyATTACK} ~onTimer:10 0.65 
+    - skill{s=orbyATTACK} @self ~onAttack
 
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear} @target ~onTimer:20

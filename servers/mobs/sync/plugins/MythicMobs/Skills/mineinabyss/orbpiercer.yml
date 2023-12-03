@@ -18,7 +18,7 @@ meteorONSPAWN:
 orbyATTACK:
   Conditions:
     - offgcd
-    - targetwithin{d=3} true
+    - targetwithin{d=5} true
   Skills:
     - CancelEvent
     - skill{s=orbyATTACKskill} @self
@@ -29,14 +29,14 @@ orbyATTACKskill:
   Skills:
     - state{s=attack;li=3;lo=2} @self 
     - delay 10
-    - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @Forward{f=1.0;y=0.0}
+    - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @Forward{f=4.0}
     - delay 30
 
 orbyATTACKDamage:
   Skills:
-    - damage{amount=7} @target
+    - damage{amount=8} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
-    - skill{s=Bleeding} @target
+    #- skill{s=Bleeding} @target
     - throw{velocity=4;velocityY=2} @target
 
 

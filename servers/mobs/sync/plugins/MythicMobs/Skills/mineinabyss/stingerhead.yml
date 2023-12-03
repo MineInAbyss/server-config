@@ -9,9 +9,10 @@ Cancelattack:
     - CancelEvent
 
 SH_Attack:
+  Cooldown: 1
   Conditions:
     - offgcd
-    - targetwithin{d=3} true
+    - targetwithin{d=4} true
   Skills:
     - gcd{ticks=40}
     - state{s=attack} @self
@@ -248,4 +249,4 @@ Bleeding:
   Skills:
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
-    - damage{a=2;repeat=5;repeatInterval=20} @target
+    - damage{a=2;repeat=5;repeatInterval=20;pkb=false} @target
