@@ -84,7 +84,7 @@ channels:
     isDefaultChannel: true
     proxy: true
     logToConsole: true
-    discordsrv: true
+    discordsrv: false
     format: ":dev: %luckperms_prefix% <chatty_nickname>: "
     messageColor: white
     channelAliases:
@@ -96,7 +96,7 @@ channels:
     isDefaultChannel: false
     proxy: true
     logToConsole: true
-    discordsrv: true
+    discordsrv: false
     format: "<chatty_player_head> %luckperms_prefix% <chatty_nickname>: "
     messageColor: white
     channelAliases:
