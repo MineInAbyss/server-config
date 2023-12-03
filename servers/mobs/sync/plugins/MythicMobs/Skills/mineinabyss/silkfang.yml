@@ -2,6 +2,7 @@ sfSpiderWebShot:
   Skills:
   - potion{type=SLOW;lvl=10;duration=10} @self
   - delay 1
+
   - projectile{bulletType=ITEM;material=STRING;onTick=sfSpiderWebShot-Tick;onHit=sfSpiderWebShot-Hit;v=10;i=1;hR=1;vR=1} @target
   
 sfSpiderWebShot-Tick:
