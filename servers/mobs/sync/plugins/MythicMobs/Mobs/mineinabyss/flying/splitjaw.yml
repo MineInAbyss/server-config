@@ -1,5 +1,5 @@
 splitjaw:
-  Type: GHAST
+  Type: ALLAY
   Health: 60
   Damage: 7
     - clear
@@ -39,4 +39,4 @@ splitjaw:
 
     - skill{s=sj_roar} @target ~oncombat
     - skill{s=SJ_dash} @target ~onTimer:40
-    - skill{s=SJ_Attack} ~onTimer:10 0.65
+    - skill{s=SJ_Attack} @self ~onAttack
