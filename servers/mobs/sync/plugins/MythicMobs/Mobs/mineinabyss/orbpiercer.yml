@@ -20,7 +20,6 @@ OrbPiercer:
     Collidable: true
     Silent: true
     FollowRange: 48
-
     MovementSpeed: 0.3
 
   Equipment:
@@ -41,8 +40,8 @@ OrbPiercer:
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
-    
     - skill{s=orbyATTACK} @self ~onAttack
+    - skill{s=Changetarget} ~onTimer:160 <99%
 
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear} @target ~onTimer:20
