@@ -244,6 +244,18 @@ emotes:
   - id: frailew
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/frailew.png
+  - id: lamew
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/lamew.png
+  - id: marblew
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/marblew.png
+  - id: frailew
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/frailew.png
+  - id: cassiow
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/cassiow.png
   - id: admin
     template: role_template
     texture: mineinabyss:ui/roles/admin.png
