@@ -7,7 +7,7 @@ playerHeadFont: "minecraft:chatty_heads"
 privateMessages:
   enabled: true
   proxy: true                       # Not currently supported
-  messageReplyTime: 20s              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
+  messageReplyTime: 5m              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
   messageSendFormat: "<gold>You -> <chatty_nickname><gold>: "
   messageReceiveFormat: "<gold><chatty_nickname> -> You<gold>: "
   messageSendSound: ""              # Empty for no sound
