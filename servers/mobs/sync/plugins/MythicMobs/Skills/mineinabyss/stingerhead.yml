@@ -116,6 +116,7 @@ stingerhead_leapa:
     - gcd{ticks=20}
     - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
     - damage{a=7} @target
+    - shieldbreak{duration=300} @target
     - skill{s=Bleeding} @target
     - skill{s=stingerhead_venom_impact} @target
     - potion{t=SLOW;d=20;l=7}
@@ -127,17 +128,21 @@ stingerhead_stun50:
     - setvariable{var=target.stun25;value=1;save=true} @self
     - setAI{ai=false} @self
     - state{m=stingerhead;s=stun} @self
+    - setstance{stance=stun} @self
     - delay 30
     - setstance{stance=stun} @self
     - setai{ai=true} @self
+    - setstance{stance=nostun} @self
 stingerhead_stun25:
   Conditions:
-    - variableisset{var=target.stun25} false
+   # - variableisset{var=target.stun25} false
   Skills:
-    - setvariable{var=target.stun25;value=1;save=true} @self
+    #- setvariable{var=target.stun25;value=1;save=true} @self
     - setAI{ai=false} @self
-    - state{s=stun} @self
-    - setstance{s=stun} @self
+    - state{m=stingerhead;s=stun} @self
+    - setstance{stance=stun} @self
+    - delay 50
+    - setstance{stance=nostun} @self
     - setai{ai=true} @self
 stingerhead_stun_end:
   Skills:
@@ -148,7 +153,7 @@ stingerhead_stun_hit:
   Conditions:
     - stance stun
   Skills:
-  #- state{m=stingerhead;s=stun_hit} @self
+    - state{m=stingerhead;s=stun_hit} @self
 
 ## Stingerhead Stinger skills
 stingerhead_stinger_detached_spawn:
@@ -172,6 +177,7 @@ stingerhead_detach_stinger:
   Skills:
     - variablesubtract{var=target.stingerhead_stinger_count;amount=1}
     - submodel{mid=stingerhead;subpart=stinger<skill.stinger_part>_secondary;remove=true} @parent
+    - skill{s=stingerhead_stun25} @self
     - summon{t=Stingerhead_Stinger_Detached} @self
     - throw{v=7;vy=2;delay=1} @MobsInRadius{r=5;types=Stingerhead_Stinger_Detached}
 
@@ -222,7 +228,7 @@ stingerhead_venom_stinger:
   - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
 
 stingerhead_spin:
-  Cooldown: 8
+  Cooldown: 4
   Conditions:
     - offgcd
   TargetConditions:
@@ -235,6 +241,7 @@ stingerhead_spin:
       - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
       - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
       - damage{amount=10} @PIR{r=5}
+      - shieldbreak{duration=200} @target
       - throw{v=10;vy=4} @PIR{r=5}
       ]} @EIR{r=5;ignore=faction}
     - delay 20
@@ -249,4 +256,4 @@ Bleeding:
   Skills:
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
-    - damage{a=2;repeat=5;repeatInterval=20;pkb=false} @target
+    - damage{a=3;repeat=5;repeatInterval=20;pkb=false} @target

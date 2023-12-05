@@ -39,7 +39,13 @@ orbyATTACKDamage:
     #- skill{s=Bleeding} @target
     - throw{velocity=4;velocityY=2} @target
 
-
+orbyswim:
+  Conditions:
+  - inblock{b=WATER} true
+  Skills:
+  - look{headOnly=false;immediately=true;repeat=10;repeatInterval=2} @Target
+  - delay 10
+  - lunge{velocity=0.6;velocityY=0} @forward
 
 
 
@@ -247,23 +253,24 @@ orby_impale:
     - state{s=dash_charge;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 15
-    - leap{velocity=400} @Target
+    - leap{velocity=350} @Target
     - state{s=dash_charge;r=true} @self
     - state{s=dash_land_and_impale;li=0;lo=0} @self
-    - delay 8
+    - delay 3
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
-    - totem{md=2;c=1;oH=orby_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=3}
+    - totem{md=2;c=1;oH=orby_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=5}
     - delay 34
     - state{s=dash_land_and_impale;remove=true} @self
     - setai{ai=true}
 orby_leapa:
   Cooldown: 3
   Conditions:
-    - targetwithin 3
+    - targetwithin 5
   Skills:
+    - shieldbreak{duration=300} @target
     - sound{s=item.trident.thunder} @PIR{r=30}
-    - stun{d=60;f=true} @PIR{r=3}
-    - damage{a=7} @PIR{r=3}
+    - stun{d=60;f=true} @PIR{r=4}
+    - damage{a=7} @PIR{r=4}
     - potion{type=POISON;duration=100;level=5} @PIR{r=3}
     - potion{type=WITHER;duration=30;level=1} @PIR{r=3}
     #- potion{t=SLOWNESS;d=100;l=2} @PIR{r=3}
