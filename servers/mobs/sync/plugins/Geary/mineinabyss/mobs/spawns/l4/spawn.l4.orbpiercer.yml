@@ -15,5 +15,5 @@
 - !<mobzy:check.spawn.delay>
   attemptEvery: 4s
 - !<geary:check.block_type>
-  allow:
-    - WATER
+  #allow:
+   # - WATER
