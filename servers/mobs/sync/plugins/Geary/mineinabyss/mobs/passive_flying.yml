@@ -1,7 +1,3 @@
-- !<geary:set.entity_type>
-  key: minecraft:allay
-  #mobCategory: FLYING
- # creatureType: CREATURE
 - !<mobzy:set.burn_in_day> false
 - !<mobzy:spawn.position> AIR
 - !<mobzy:disable_right_click>

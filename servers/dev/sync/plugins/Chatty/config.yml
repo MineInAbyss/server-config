@@ -85,7 +85,7 @@ channels:
     proxy: true
     logToConsole: true
     discordsrv: false
-    format: ":dev: %luckperms_prefix% <chatty_nickname>: "
+    format: ":dev::space_-4:%luckperms_prefix% <chatty_nickname>: "
     messageColor: white
     channelAliases:
       - "g"
