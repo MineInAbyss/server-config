@@ -1,7 +1,7 @@
 Stingerhead:
   Type: SPIDER
   Display: 'StingerHead'
-  Health: 150
+  Health: 250
   Damage: 9
   AIGoalSelectors:
     - clear
@@ -19,8 +19,9 @@ Stingerhead:
     Collidable: true
     Silent: true
     FollowRange: 48
-    # MovementSpeed: 0.5
-    MaxCombatDistance: 30
+    MaxCombatDistance: 20
+    MovementSpeed: 0.25
+    MaxCombatDistance: 25
   Drops:
     - exp 400-500
     - geary mineinabyss:stingerhead_scale 1 0.25
@@ -50,8 +51,8 @@ Stingerhead:
     #- state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
     #- skill{s=stingerhead_leap_attack} @self ~onTimer:20
 
-    - skill{s=stingerhead_stun50} @self ~onDamaged <50%
-    - skill{s=stingerhead_stun25} @self ~onDamaged <25% 0.1
+    #- skill{s=stingerhead_stun50} @self ~onDamaged <50%
+    #- skill{s=stingerhead_stun25} @self ~onDamaged <25% 0.1
     - skill{s=stingerhead_stun_hit} @self ~onDamaged
 
     # Bind a new MM entity to each stinger
@@ -109,7 +110,7 @@ Stingerhead_Stinger7:
 
 Stingerhead_Stinger_Template:
   Type: VEX
-  Health: 40
+  Health: 27
   Options:
     PreventOtherDrops: true
     Silent: true

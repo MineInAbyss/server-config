@@ -37,7 +37,7 @@ SJ_dash:
     - state{s=dash_charge;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 35
-    - leap{velocity=200} @Target
+    - leap{velocity=500} @Target
     - state{s=dash_charge;r=true} @self
     - state{s=dash_state;li=0;lo=0} @self
     - delay 4
@@ -51,9 +51,10 @@ SJ_dash:
 SJ_dashhit:
   Cooldown: 3
   Conditions:
-    - targetwithin5
+    - targetwithin 5
   Skills:
     - setstance{stance=dashhit} @self
+    - shieldbreak{duration=200} @target
     - damage{a=10} @PIR{r=3}
 
     - delay 100

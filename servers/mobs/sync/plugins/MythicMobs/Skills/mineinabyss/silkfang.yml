@@ -12,4 +12,3 @@ sfSpiderWebShot-Hit:
   - damage{a=2;pk=true} @target
   - potion{type=POISON;lvl=1;duration=100} @target 0.4
   - potion{type=HUNGER;lvl=1;duration=100} @target 0.4
-  - ignite{ticks=100} @target
