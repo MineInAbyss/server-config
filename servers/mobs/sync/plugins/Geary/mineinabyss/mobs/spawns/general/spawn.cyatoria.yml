@@ -1,5 +1,6 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:cyatoria
+- !<mobzy:spawn.position> AIR
 - !<mobzy:spawn.amount>
   amount: 1..3
 - !<mobzy:spawn.spread>
@@ -7,7 +8,7 @@
 - !<mobzy:spawn.priority>
   priority: 0.8
 - !<mobzy:check.spawn.local_group>
-  max: 6
-  radius: 200
+  max: 2
+  radius: 160
 - !<mobzy:check.spawn.gap>
   range: 20..4096

@@ -3,7 +3,8 @@
 - !<mobzy:spawn_regions>
   keys: [ layerthree ]
 - !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 250
+
+  max: 3
+  radius: 192
 
 

@@ -3,9 +3,9 @@
 - !<mobzy:spawn_regions>
   keys: [ layertwo ]
 - !<mobzy:check.spawn.gap>
-  range: 15..4096
+  range: 20..4096
 - !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 250
+  max: 2
+  radius: 192
 - !<mobzy:spawn.priority>
   priority: 0.6

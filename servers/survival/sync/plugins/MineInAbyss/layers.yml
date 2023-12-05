@@ -152,7 +152,7 @@ layers:
     offset: "250ms"
     iterations: 3
     duration: "4s"
-  hasPvpDefault: false
+  hasPvpDefault: true
   blockBlacklist:
   - "LADDER"
   - "RAIL"
