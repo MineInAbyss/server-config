@@ -1,5 +1,6 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:splitjaw
+- !<mobzy:spawn.position> AIR
 - !<mobzy:spawn.priority>
   priority: 0.8
 - !<mobzy:check.spawn.local_group>

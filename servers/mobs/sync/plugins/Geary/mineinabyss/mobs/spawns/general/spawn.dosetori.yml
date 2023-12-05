@@ -1,5 +1,6 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:dosetori
+- !<mobzy:spawn.position> AIR
 - !<mobzy:spawn.priority>
   priority: 0.4
 - !<mobzy:check.spawn.local_group>

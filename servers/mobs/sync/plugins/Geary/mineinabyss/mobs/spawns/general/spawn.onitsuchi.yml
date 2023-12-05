@@ -1,5 +1,6 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:onitsuchi
+- !<mobzy:spawn.position> AIR
 - !<mobzy:spawn.priority>
   priority: 0.1
 - !<mobzy:check.spawn.local_group>
