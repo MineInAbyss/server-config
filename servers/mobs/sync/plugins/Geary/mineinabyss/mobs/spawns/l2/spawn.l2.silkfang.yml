@@ -2,4 +2,6 @@
   from: [ mineinabyss:spawn.silkfang ]
 - !<mobzy:spawn_regions>
   keys: [ layertwo ]
+  max: 3
+  radius: 250
 

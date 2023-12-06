@@ -20,7 +20,7 @@ OrbPiercer:
     Collidable: true
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.3
+    MovementSpeed: 0.32
     MaxCombatDistance: 40
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET

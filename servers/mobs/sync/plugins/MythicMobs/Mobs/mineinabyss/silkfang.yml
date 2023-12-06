@@ -5,7 +5,7 @@ silkfang:
   Damage: 4
   Options:
     Despawn: true
-    MovementSpeed: 0.25
+    MovementSpeed: 0.3
     PreventMobKillDrops: true
     MaxCombatDistance: 40
     DigOutOfGround: true
@@ -24,8 +24,18 @@ silkfang:
   - DROWNING 0
   - CONTACT 0
   - FALLING 0
+  Drops:
+    - exp 20-50
+    - geary mineinabyss:silkfang_eye 0-2 0.6
+    - geary mineinabyss:silkfang_silk 1-3 0.85
+    - geary mineinabyss:bundle_of_silkfang_silk 1-2 0.2
+  Model:
+    Id: silkfang
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Skills:
-  - skill{s=sfSpiderWebShot} @RTT ~onTimer:100
+  - skill{s=sfSpiderWebShot} @Target ~onTimer:220
   - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
   - dismount ~onDamaged
