@@ -5,7 +5,7 @@
 - !<mobzy:spawn.spread>
   radius: 10
 - !<mobzy:check.spawn.local_group>
-  max: 3
+  max: 2
   radius: 192
 - !<mobzy:check.spawn.gap>
   range: 5..4096
