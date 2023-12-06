@@ -96,7 +96,7 @@ orby_shout:
     - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
     - delay 10
     - skill{s=orby_knockback} @PIR{r=10}
-    - skill{s=orby_screenshake;repeat=12;repeatInterval=8} @pir{r=20}
+    - skill{s=orby_screenshake;repeat=6;repeatInterval=8} @pir{r=20}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
     - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
@@ -118,13 +118,13 @@ orby_knockback:
     - throw{v=25;vy=4} @pir{r=12}
 orby_screenshake:
   Skills:
-    - recoil{r=15;pitch=-0.3}
+    - recoil{r=15;pitch=-0.2}
     - delay 2
-    - recoil{r=15;pitch=.2}
+    - recoil{r=15;pitch=.1}
     - delay 2
     - recoil{r=15;pitch=-0.1}
     - delay 2
-    - recoil{r=15;pitch=.1}
+    - recoil{r=15;pitch=0.1}
 orby_knockback2:
   Skills:
     - delay 1
@@ -142,7 +142,7 @@ orby_spike_eject:
     - delay 10
     - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
     - skill{s=orby_knockback2} @PIR{r=10}
-    - skill{s=orby_screenshake;repeat=12;repeatInterval=8} @pir{r=20}
+    - skill{s=orby_screenshake;repeat=6;repeatInterval=8} @pir{r=20}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
     - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
