@@ -44,7 +44,7 @@ OrbPiercer:
     - skill{s=Changetarget} ~onTimer:160 <99%
 
 
-    - skill{s=orby_swim} @self ~onTimer:20
+    - skill{s=orbyswim} @self ~onTimer:20
 
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear} @target ~onTimer:20
