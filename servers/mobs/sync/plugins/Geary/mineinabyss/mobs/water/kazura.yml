@@ -4,6 +4,7 @@
 - !<mobzy:display_name> "<#A9CCCA>Kazura"
 - !<mobzy:set.modelengine-model>
   modelId: kazura
+  scale: 2
 - !<mobzy:set.attributes>
   maxHealth: 5
   followRange: 10
