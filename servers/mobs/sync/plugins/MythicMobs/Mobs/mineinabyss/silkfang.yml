@@ -5,7 +5,7 @@ silkfang:
   Options:
     Despawn: true
     MovementSpeed: 0.3
-    PreventMobKillDrops: true
+    PreventOtherDrops: true
     MaxCombatDistance: 40
     DigOutOfGround: true
   AIGoalSelectors:
