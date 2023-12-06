@@ -93,7 +93,7 @@ orby_shout:
     - gcd{ticks=300} @self
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
-    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
+    - potion{type=SLOW;duration=40;level=5} @PIR{r=20}
     - delay 10
     - skill{s=orby_knockback} @PIR{r=10}
     - skill{s=orby_screenshake;repeat=6;repeatInterval=8} @pir{r=20}
@@ -140,7 +140,7 @@ orby_spike_eject:
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - delay 10
-    - potion{type=SLOWNESS;duration=40;level=5} @PIR{r=20}
+    - potion{type=SLOW;duration=40;level=5} @PIR{r=20}
     - skill{s=orby_knockback2} @PIR{r=10}
     - skill{s=orby_screenshake;repeat=6;repeatInterval=8} @pir{r=20}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
