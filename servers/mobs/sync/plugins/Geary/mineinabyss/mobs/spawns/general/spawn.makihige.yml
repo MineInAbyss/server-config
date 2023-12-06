@@ -5,8 +5,8 @@
 - !<mobzy:spawn.spread>
   radius: 20
 - !<mobzy:check.spawn.local_group>
-  max: 4
-  radius: 192
+  max: 3
+  radius: 256
 - !<mobzy:check.spawn.gap>
   range: 5..4096
 - !<geary:check.block_type>
