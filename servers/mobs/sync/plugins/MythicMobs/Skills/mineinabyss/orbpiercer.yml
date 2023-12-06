@@ -39,17 +39,6 @@ orbyATTACKDamage:
     #- skill{s=Bleeding} @target
     - throw{velocity=4;velocityY=2} @target
 
-orbyswim:
-  Conditions:
-  - inblock{b=WATER} true
-  Skills:
-  - look{headOnly=false;immediately=true;repeat=10;repeatInterval=2} @Target
-  - delay 10
-  - lunge{velocity=0.6;velocityY=0} @forward
-
-
-
-
 
 
 
@@ -253,7 +242,7 @@ orby_impale:
     - state{s=dash_charge;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 15
-    - leap{velocity=350} @Target
+    - leap{velocity=450} @Target
     - state{s=dash_charge;r=true} @self
     - state{s=dash_land_and_impale;li=0;lo=0} @self
     - delay 3
