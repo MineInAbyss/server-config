@@ -25,6 +25,7 @@ madokajack:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+    Scale: 2
   Skills:
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn
     - bodyclamp{m=madokajack;c=15} @self ~onLoad

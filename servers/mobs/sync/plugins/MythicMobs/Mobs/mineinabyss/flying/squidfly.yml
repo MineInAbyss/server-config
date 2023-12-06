@@ -28,5 +28,5 @@ squidfly:
   Skills:
     - bodyclamp{m=squidfly;c=15} @self ~onSpawn
     - bodyclamp{m=squidfly;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.7} @self ~onSpawn
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=squidfly;s=attack} @self ~onAttack

@@ -1,6 +1,6 @@
 rohana:
   Type: ALLAY
-  Health: 20
+  Health: 10
   AIGoalSelectors:
     - clear
     - float
