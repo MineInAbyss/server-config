@@ -1,6 +1,6 @@
 hammerbeak:
-  Type: ALLAY
-  Health: 20
+  Type: PARROT
+  Health: 18
   Damage: 3
   AIGoalSelectors:
     - clear
@@ -16,6 +16,7 @@ hammerbeak:
     PreventOtherDrops: false
     # KnockbackResistance: 0.5
     Collidable: true
+    Tameable: false
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
@@ -28,7 +29,7 @@ hammerbeak:
   Skills:
     - bodyclamp{m=hammerbeak;c=15} @self ~onSpawn
     - bodyclamp{m=hammerbeak;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.1} @self ~onSpawn
+    - setspeed{type=flying;speed=1.0} @self ~onSpawn
     - state{mid=hammerbeak;s=attack} @self ~onAttack
     #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath

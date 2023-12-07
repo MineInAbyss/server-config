@@ -1,7 +1,7 @@
 splitjaw:
   Type: ALLAY
   Health: 60
-  Damage: 7
+  Damage: 6
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -27,6 +27,8 @@ splitjaw:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.5
   Skills:
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
