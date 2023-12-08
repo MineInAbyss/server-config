@@ -17,14 +17,15 @@ OrbPiercer:
     PreventSunBurn: true
     PreventOtherDrops: true
     KnockbackResistance: 1
-    DigOutOfGround: true
+    #DigOutOfGround: true
     Collidable: true
     Silent: true
     FollowRange: 48
     MovementSpeed: 0.32
-    MaxCombatDistance: 40
+    MaxCombatDistance: 35
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+    - TORCH HAND
   Drops:
     - exp 180-210
     - geary mineinabyss:orb_piercer_spike 3-6
@@ -34,6 +35,9 @@ OrbPiercer:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.50
+    - ENTITY_ATTACK 1.5
   Skills:
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
@@ -44,7 +48,7 @@ OrbPiercer:
     - skill{s=orbyATTACK} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%
 
-
+    - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear} @target ~onTimer:20
     - skill{s=orby_impale} @target ~onTimer:40

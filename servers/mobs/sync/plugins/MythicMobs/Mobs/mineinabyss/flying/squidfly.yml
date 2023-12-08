@@ -1,5 +1,5 @@
 squidfly:
-  Type: ALLAY
+  Type: BEE
   Health: 16
   Damage: 5
   AIGoalSelectors:
@@ -26,6 +26,9 @@ squidfly:
     Drive: false
     DamageTint: true
   Skills:
+    - CancelEvent{sync=true} ~onAttack
+    - skill{s=Damage_5} @self ~onAttack
+
     - bodyclamp{m=squidfly;c=15} @self ~onSpawn
     - bodyclamp{m=squidfly;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.5} @self ~onSpawn

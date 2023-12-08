@@ -1,5 +1,5 @@
 hammerbeak:
-  Type: PARROT
+  Type: BEE
   Health: 18
   Damage: 3
   AIGoalSelectors:
@@ -27,6 +27,8 @@ hammerbeak:
     Drive: false
     DamageTint: true
   Skills:
+    - CancelEvent{sync=true} ~onAttack
+    - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=hammerbeak;c=15} @self ~onSpawn
     - bodyclamp{m=hammerbeak;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.0} @self ~onSpawn
