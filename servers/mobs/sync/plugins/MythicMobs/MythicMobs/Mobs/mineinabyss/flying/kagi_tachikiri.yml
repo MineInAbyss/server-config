@@ -1,0 +1,34 @@
+kagi_tachikiri:
+  Type: ALLAY
+  Health: 40
+  Damage: 6
+  AIGoalSelectors:
+    - clear
+    - meleeattack{speed=1.5;range=1.5}
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    PreventOtherDrops: false
+    # KnockbackResistance: 0.5
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    #MovementSpeed: 0.2
+  Model:
+    Id: kagi_tachikiri
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+    - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawn
+    - bodyclamp{m=kagi_tachikiri;c=15} @self ~onLoad
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
+    
+    - skill{s=kagi_venom} @target ~onTimer:10

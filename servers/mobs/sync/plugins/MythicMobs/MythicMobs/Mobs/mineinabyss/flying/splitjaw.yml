@@ -1,0 +1,43 @@
+splitjaw:
+  Type: ALLAY
+  Health: 60
+  Damage: 7
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    PreventOtherDrops: false
+    KnockbackResistance: 1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+
+    PreventSunburn: true
+  Model:
+    Id: splitjaw
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+    - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
+    - bodyclamp{m=splitjaw;c=15} @self ~onLoad
+    - setspeed{type=flying;speed=1.2} @self ~onSpawn
+
+    - state{mid=splitjaw;s=attack} @self ~onAttack
+
+    - DefaultState{m=splitjaw;t=WALK;s=walk_aggro} @self ~onEnterCombat
+    - DefaultState{m=splitjaw;t=WALK;s=walk} @self ~onDropCombat
+    - skill{s=Changetarget} ~onTimer:160 <99%
+
+    - skill{s=sj_roar} @target ~oncombat
+    - skill{s=SJ_dash} @target ~onTimer:40
+    - skill{s=SJ_Attack} @self ~onAttack

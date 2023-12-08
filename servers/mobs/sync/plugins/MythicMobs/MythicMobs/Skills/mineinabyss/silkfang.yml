@@ -1,0 +1,15 @@
+sfSpiderWebShot:
+  Skills:
+  - potion{type=SLOW;lvl=10;duration=100} @self
+  - projectile{bulletType=ITEM;material=STRING;onTick=sfSpiderWebShot-Tick;onHit=sfSpiderWebShot-Hit;v=10;i=1;hR=1;vR=1} @target
+  
+sfSpiderWebShot-Tick:
+  Skills:
+  - effect:particles{particle=reddust;color=#FFFFFF;amount=4;radius=1;yOffset=0.5} @origin
+sfSpiderWebShot-Hit:
+  Skills:
+  - prison{material=WEB;duration=30;breakable=true} @target
+  - damage{a=2;pk=true} @target
+  - potion{type=POISON;lvl=1;duration=100} @target 0.4
+  - potion{type=HUNGER;lvl=1;duration=100} @target 0.4
+  - ignite{ticks=100} @target
