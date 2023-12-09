@@ -1,0 +1,19 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: BELL
+  recipes:
+    - !<shaped>
+      items:
+        G:
+          type: GOLD_BLOCK
+        S:
+          tag: wooden_fences
+        I:
+          type: IRON_NUGGET
+        O:
+          tag: wooden_slabs
+      configuration: |-
+        |OOO|
+        |SGS|
+        |SIS|

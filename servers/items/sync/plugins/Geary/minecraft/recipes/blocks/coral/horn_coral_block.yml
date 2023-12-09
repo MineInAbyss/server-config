@@ -1,0 +1,15 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: HORN_CORAL_BLOCK
+  recipes:
+    - !<shaped>
+      items:
+        A:
+          prefab: mineinabyss:ashimite_antlers
+        Y:
+          type: YELLOW_DYE
+      configuration: |-
+        | A |
+        |AYA|
+        | A |

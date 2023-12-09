@@ -1,0 +1,18 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: SOUL_SAND
+  group: "looty:soul_sand"
+  recipes:
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - type: BONE
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - prefab: mineinabyss:dosetori_bone
+    - !<shapeless>
+      items:
+        - type: NETHERRACK
+        - prefab: mineinabyss:madokajack_bone
