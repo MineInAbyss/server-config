@@ -20,7 +20,7 @@ onitsuchi:
     FollowRange: 32
     MaxCombatDistance: 128
 
-    MovementSpeed: 0.2
+    MovementSpeed: 0.4
   Model:
     Id: onitsuchi
     ViewRadius: 64

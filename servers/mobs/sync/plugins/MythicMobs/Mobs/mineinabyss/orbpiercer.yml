@@ -37,7 +37,7 @@ OrbPiercer:
     DamageTint: true
   DamageModifiers:
     - DROWNING -1
-    - PROJECTILE 0.50
+    - PROJECTILE 0.25
     - ENTITY_ATTACK 1.5
   Skills:
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn

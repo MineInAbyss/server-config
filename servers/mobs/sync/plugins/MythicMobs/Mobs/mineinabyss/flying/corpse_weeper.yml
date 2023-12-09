@@ -20,7 +20,7 @@ corpse_weeper:
     FollowRange: 32
     MaxCombatDistance: 128
 
-    MovementSpeed: 0.5
+    MovementSpeed: 0.4
   Model:
     Id: corpse_weeper
     ViewRadius: 64

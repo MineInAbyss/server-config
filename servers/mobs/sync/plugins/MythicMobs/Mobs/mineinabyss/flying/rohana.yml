@@ -13,7 +13,7 @@ rohana:
     Collidable: true
     Silent: true
     FollowRange: 17
-    MovementSpeed: 0.25
+    MovementSpeed: 0.3
   DamageModifiers:
   - DROWNING -1
   Model:
