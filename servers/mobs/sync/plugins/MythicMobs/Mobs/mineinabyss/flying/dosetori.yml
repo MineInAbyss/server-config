@@ -1,5 +1,5 @@
 dosetori:
-  Type: ALLAY
+  Type: BEE
   Health: 30
   Damage: 5
   AIGoalSelectors:
@@ -27,7 +27,7 @@ dosetori:
     DamageTint: true
   Skills:
     - CancelEvent{sync=true} ~onAttack
-    - skill{s=Damage_5} @self ~onAttack
+    - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=dosetori;c=15} @self ~onSpawn
     - bodyclamp{m=dosetori;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.3} @self ~onSpawn
