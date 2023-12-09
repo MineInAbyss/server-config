@@ -12,7 +12,8 @@ hashofu:
     KnockbackResistance: 1
     Collidable: true
     FollowRange: 17
-    MovementSpeed: 0.2
+    MovementSpeed: 0.4
+
   Model:
     Id: hashofu
     ViewRadius: 64
