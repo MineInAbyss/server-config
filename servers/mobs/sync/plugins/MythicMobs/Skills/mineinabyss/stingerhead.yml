@@ -115,8 +115,9 @@ stingerhead_leapa:
   Skills:
     - gcd{ticks=20}
     - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
-    - damage{a=7} @target
     - shieldbreak{duration=300} @target
+    - damage{a=8} @target
+
     - skill{s=Bleeding} @target
     - skill{s=stingerhead_venom_impact} @target
     - potion{t=SLOW;d=20;l=7}

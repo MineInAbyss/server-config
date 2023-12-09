@@ -12,7 +12,7 @@ hashofu:
     KnockbackResistance: 1
     Collidable: true
     FollowRange: 17
-    #MovementSpeed: 0.2
+    MovementSpeed: 0.2
   Model:
     Id: hashofu
     ViewRadius: 64
@@ -21,4 +21,4 @@ hashofu:
   Skills:
     - bodyclamp{m=hashofu;c=15} @self ~onSpawn
     - bodyclamp{m=hashofu;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.2} @self ~onSpawn
+   # - setspeed{type=flying;speed=1.2} @self ~onSpawn

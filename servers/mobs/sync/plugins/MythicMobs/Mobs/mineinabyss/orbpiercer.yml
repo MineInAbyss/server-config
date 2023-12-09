@@ -5,8 +5,8 @@ OrbPiercer:
   Damage: 7
   AIGoalSelectors:
     - clear
-    - float
     - meleeattack
+    - float
     - randomstroll
     - randomlookaround
   AITargetSelectors:
@@ -36,6 +36,7 @@ OrbPiercer:
     Drive: false
     DamageTint: true
   DamageModifiers:
+    - DROWNING -1
     - PROJECTILE 0.50
     - ENTITY_ATTACK 1.5
   Skills:
@@ -46,7 +47,7 @@ OrbPiercer:
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
     - skill{s=orbyATTACK} @self ~onAttack
-    - skill{s=Changetarget} ~onTimer:160 <99%
+    #- skill{s=Changetarget} ~onTimer:160 <99%
 
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack

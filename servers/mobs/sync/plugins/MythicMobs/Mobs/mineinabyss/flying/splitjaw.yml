@@ -22,6 +22,7 @@ splitjaw:
     LockPitch: true
     Interactable: false
 
+    MovementSpeed: 0.5
     PreventSunburn: true
   Model:
     Id: splitjaw
@@ -36,12 +37,13 @@ splitjaw:
 
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.2} @self ~onSpawn
+   # - setspeed{type=flying;speed=1.2} @self ~onSpawn
 
     - state{mid=splitjaw;s=attack} @self ~onAttack
 
-    - DefaultState{m=splitjaw;t=WALK;s=walk_aggro} @self ~onEnterCombat
-    - DefaultState{m=splitjaw;t=WALK;s=walk} @self ~onDropCombat
+    - DefaultState{m=splitjaw;t=walk;s=walk_aggro} @self ~onEnterCombat
+    - DefaultState{m=splitjaw;t=walk;s=walk} @self ~onDropCombat
+
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     - skill{s=sj_roar} @target ~oncombat
