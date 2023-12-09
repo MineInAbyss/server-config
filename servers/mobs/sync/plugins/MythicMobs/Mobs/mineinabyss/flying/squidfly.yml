@@ -19,7 +19,7 @@ squidfly:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-    MovementSpeed: 0.75
+    MovementSpeed: 0.7
   Model:
     Id: squidfly
     ViewRadius: 64

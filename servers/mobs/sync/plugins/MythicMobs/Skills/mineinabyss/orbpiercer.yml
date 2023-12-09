@@ -29,7 +29,7 @@ orbyATTACKskill:
   Skills:
     - state{s=attack;li=3;lo=2} @self 
     - delay 10
-    - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @Forward{f=4.0}
+    - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @PIR{r=4}
     - delay 30
 
 orbyATTACKDamage:
@@ -237,21 +237,21 @@ orby_impale:
     - heightabove{h=10} false
   #- stance{s=spikeless;str=true} false
   Skills:
-    - gcd{ticks=50}
+    - gcd{ticks=150}
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
-    - setai{ai=false}
+   # - setai{ai=false}
     - state{s=dash_charge;li=0;lo=0} @self
-    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    #- look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 15
     - leap{velocity=450} @Target
     - state{s=dash_charge;r=true} @self
     - state{s=dash_land_and_impale;li=0;lo=0} @self
     - delay 3
-    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+   # - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - totem{md=2;c=1;oH=orby_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=5}
     - delay 34
     - state{s=dash_land_and_impale;remove=true} @self
-    - setai{ai=true}
+   # - setai{ai=true}
 orby_leapa:
   Cooldown: 3
   Conditions:

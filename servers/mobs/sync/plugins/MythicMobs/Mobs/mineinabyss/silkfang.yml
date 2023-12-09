@@ -1,6 +1,6 @@
 silkfang:
   Type: CAVE_SPIDER
-  Health: 20
+  Health: 22
   Damage: 4
   Options:
     Despawn: true
@@ -18,8 +18,7 @@ silkfang:
   - 2 attacker
   DamageModifiers:
   - ENTITY_ATTACK 1
-  - PROJECTILE 1
-  - WITHER 1
+  - PROJECTILE 0.7
   - DROWNING 0
   - CONTACT 0
   - FALLING 0

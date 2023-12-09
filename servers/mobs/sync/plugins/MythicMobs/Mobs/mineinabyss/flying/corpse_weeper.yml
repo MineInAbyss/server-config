@@ -21,6 +21,7 @@ corpse_weeper:
     MaxCombatDistance: 128
 
     MovementSpeed: 0.5
+
   Model:
     Id: corpse_weeper
     ViewRadius: 64

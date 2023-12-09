@@ -92,7 +92,7 @@ stingerhead_leap:
     - targetinlineofsight
     - heightabove{h=5} false
   TargetConditions:
-    - distance{d=6to12} true
+    - distance{d=2to12} true
   Skills:
     - gcd{ticks=50}
     - potion{t=SLOW;d=20;l=4} @self
@@ -102,7 +102,7 @@ stingerhead_leap:
     - state{s=launch_attack;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 1
-    - leap{velocity=500} @Target
+    - leap{velocity=400} @Target
     - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
     - delay 26
     - state{s=launch_attack;remove=true} @self

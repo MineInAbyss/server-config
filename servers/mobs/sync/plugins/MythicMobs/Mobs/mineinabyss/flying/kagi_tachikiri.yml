@@ -19,7 +19,8 @@ kagi_tachikiri:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-    MovementSpeed: 0.4
+    MovementSpeed: 0.5
+
   Model:
     Id: kagi_tachikiri
     ViewRadius: 64

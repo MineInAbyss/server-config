@@ -19,7 +19,7 @@ Stingerhead:
     Collidable: true
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.26
+    MovementSpeed: 0.28
     MaxCombatDistance: 25
   Drops:
     - exp 400-500
