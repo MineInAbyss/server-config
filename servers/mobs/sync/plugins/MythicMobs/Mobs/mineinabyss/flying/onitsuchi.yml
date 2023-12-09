@@ -1,5 +1,5 @@
 onitsuchi:
-  Type: ALLAY
+  Type: BEE
   Health: 30
   Damage: 5
   AIGoalSelectors:
@@ -26,6 +26,10 @@ onitsuchi:
     Drive: false
     DamageTint: true
   Skills:
+
+    - CancelEvent{sync=true} ~onAttack
+    - skill{s=Damage_5} @self ~onAttack
+
     - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
     - bodyclamp{m=onitsuchi;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.1} @self ~onSpawn

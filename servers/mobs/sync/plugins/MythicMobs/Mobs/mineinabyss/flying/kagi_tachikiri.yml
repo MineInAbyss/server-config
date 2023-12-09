@@ -1,5 +1,5 @@
 kagi_tachikiri:
-  Type: ALLAY
+  Type: BEE
   Health: 40
   Damage: 6
   AIGoalSelectors:
@@ -26,6 +26,8 @@ kagi_tachikiri:
     Drive: false
     DamageTint: true
   Skills:
+    - CancelEvent{sync=true} ~onAttack
+    - skill{s=Damage_6} @self ~onAttack
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawn
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.4} @self ~onSpawn
