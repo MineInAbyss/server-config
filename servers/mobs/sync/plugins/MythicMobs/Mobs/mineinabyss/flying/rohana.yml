@@ -13,7 +13,7 @@ rohana:
     Collidable: true
     Silent: true
     FollowRange: 17
-    #MovementSpeed: 0.2
+    MovementSpeed: 0.25
   DamageModifiers:
   - DROWNING -1
   Model:
@@ -24,5 +24,5 @@ rohana:
   Skills:
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
     - bodyclamp{m=rohana;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1} @self ~onSpawn
+  #  - setspeed{type=flying;speed=1} @self ~onSpawn
     - state{mid=rohana;s=attack} @self ~onAttack
