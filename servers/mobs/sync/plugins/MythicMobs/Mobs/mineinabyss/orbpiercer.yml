@@ -36,7 +36,7 @@ OrbPiercer:
     Drive: false
     DamageTint: true
   DamageModifiers:
-    - DROWNING -1
+    - DROWNING 0
     - PROJECTILE 0.25
     - ENTITY_ATTACK 1.5
   Skills:

@@ -20,6 +20,7 @@ kagi_tachikiri:
     FollowRange: 32
     MaxCombatDistance: 128
     MovementSpeed: 0.5
+
   Model:
     Id: kagi_tachikiri
     ViewRadius: 64
