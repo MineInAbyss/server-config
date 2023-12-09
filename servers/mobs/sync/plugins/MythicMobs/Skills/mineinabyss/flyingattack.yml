@@ -1,0 +1,30 @@
+Damage_3:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=3} @target
+Damage_4:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=4} @target
+Damage_5:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=5} @target
+Damage_6:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=6} @target
+Damage_7:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=7} @target

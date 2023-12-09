@@ -1,5 +1,5 @@
 madokajack:
-  Type: ALLAY
+  Type: BEE
   Health: 28
   Damage: 5
   AIGoalSelectors:
@@ -27,6 +27,8 @@ madokajack:
     DamageTint: true
     Scale: 2
   Skills:
+    - CancelEvent{sync=true} ~onAttack
+    - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn
     - bodyclamp{m=madokajack;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.3} @self ~onSpawn

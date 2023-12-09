@@ -1,5 +1,5 @@
 splitjaw:
-  Type: ALLAY
+  Type: BEE
   Health: 60
   Damage: 6
   AIGoalSelectors:
@@ -20,6 +20,7 @@ splitjaw:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
+    Interactable: false
 
     PreventSunburn: true
   Model:
@@ -30,6 +31,9 @@ splitjaw:
   DamageModifiers:
     - PROJECTILE 0.5
   Skills:
+
+    - CancelEvent{sync=true} ~onAttack
+
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.2} @self ~onSpawn
