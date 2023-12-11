@@ -16,7 +16,7 @@ footers:
   default:
     - 'Ping: %ping%ms %server_tps_5_colored%'
 formats:
-  default: '%server%%prefix% %username%'
+  default: '%server%%prefix%%mineinabyss_afk% %username%'
 # Nametag(s) to display above players' heads for each server group. Set to empty to disable.
 # Nametag formats must contain a %username%. Docs: https://william278.net/docs/velocitab/nametags
 nametags:
