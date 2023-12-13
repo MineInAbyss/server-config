@@ -68,7 +68,7 @@ vanilla-armor:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
-    #- progress{l=fill;o=>;v=0} true hide
+    - progress{l=fill;o=>;v=0} true hide
   layers:
     fill:
       texture:
@@ -92,7 +92,7 @@ vanilla-air:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
     - gamemode{gm=survival,adventure} true hide
-    #- progress{l=fill;o=<;v=100%} true hide
+    - progress{l=fill;o=<;v=100%} true hide
   layers:
     fill:
       texture:
