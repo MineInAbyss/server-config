@@ -24,7 +24,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: prod-survival
+      branch: develop
       subFolder: build
   - name: premium_content
     default: true
@@ -41,7 +41,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: prod-survival
+      branch: develop
       subFolder: 2d_tools
   - name: new_armor
     default: true
@@ -52,7 +52,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: prod-survival
+      branch: develop
       subFolder: new_armor
   - name: 3d_tools
     default: false
@@ -62,7 +62,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: prod-survival
+      branch: develop
       subFolder: 3d_tools
   - name: old_armor
     default: false
@@ -73,7 +73,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: prod-survival
+      branch: develop
       subFolder: old_armor
   - name: custom_music
     default: true
