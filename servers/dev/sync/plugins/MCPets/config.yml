@@ -1,0 +1,41 @@
+Prefix: '§8[§6MCPets§8] » '
+DefaultName: §9Pet of %player%
+OverrideDefaultName: true
+EnableClickBackToMenu: true
+UseDefaultMythicMobsNames: false
+RightClickToOpenMenu: true
+LeftClickToOpenMenu: true
+DisableInventoryWhileHoldingSignalStick: true
+DismountOnDamaged: true
+SpawnPetOnReconnect: true
+SneakMode: false
+Nameable: true
+Mountable: true
+DistanceTeleport: 30
+MaxNameLenght: 16
+InventorySize: -1
+PercentHealthOnRespawn: 0.2
+ActivateBackMenuIcon: true
+AutoSaveDelay: 3600
+GlobalRespawnCooldown: false
+DefaultRespawnCooldown: 0
+AutoRespawn: false
+Experience:
+  BarSize: 40
+  Symbol: '|'
+  ColorDone: §a
+  ColorLeft: §f
+Taming:
+  AnnouncementType: CHAT
+  BarSize: 40
+  Symbol: '|'
+  ColorDone: §a
+  ColorLeft: §f
+MySQL:
+  Prefix: ''
+  User: user
+  Password: password
+  Host: localhost
+  Port: '2560'
+  Database: mcpets_db
+BlackListedWorlds: []

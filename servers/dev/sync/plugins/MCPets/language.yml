@@ -1,0 +1,112 @@
+inventory_pets_menu: §0☀ §4Pets §0☀
+inventory_pets_menu_interactions: §0☀ §4Pet §0☀
+mount_item_name: §6Mount
+mount_item_description: §7Click to mount your pet
+rename_item_name: §6Rename
+rename_item_description: §7Click to rename your pet
+back_to_petmenu_item_name: §cBack to menu
+back_to_petmenu_item_description: §7Click to get back to the menu
+inventory_item_name: §6Inventory
+inventory_item_description: §7Click to open the pet's inventory
+skins_item_name: §6Skins
+skins_item_description: §7Click to change your pet's skin
+equipment_item_name: §6Equipment
+equipment_description: §7Click to open your pet's equipment
+turnpage_item_name: §6Next page §7(§e%currentPage%§8/§7%maxPage%)
+turnpage_item_description: "§eRight click§7 to go forward \n§aLeft click§7 to go backward"
+nickname: '§9Nickname : §7%nickname%'
+nickname_item_lore: §cClick here to revoke your pet
+summoned: §7A pet has been summoned !
+revoked: §7Your pet was revoked.
+revoked_for_new_one: §7Your previous pet was revoked to summon the new one.
+revoked_unknown: |-
+  §cThe pet could not be spawned due to one of the following reasons :
+  §7- The provided §cMythicMob in the pet config doesn't exist§7 (try to spawn it through /mm m spawn)§7.
+  §7- The world is on §cpeaceful or easy mode§7.
+  §7- A region §cprevents the mob from spawning§7 (the anchor is an aggressive mob most likely).
+  §7- You have a §cspawn protector plugin§7, try to spawn the mob in another world or far from spawn.
+  §7- There exist other pets with the §csame id§7. Make sure you have unique ids.
+mythicmob_null: §cThis pet could not be summoned. The associated mythicMob entity
+  or file is null or was removed.
+no_mob_match: §cThis pet could not be summoned. The associated mythicmob isn't registered
+  in MythicMobs.
+not_allowed: §cYou're not allowed to summon this pet.
+owner_not_found: §cThis pet could not be summoned. The summoner couldn't be found.
+revoked_before_changes: §cYour pet was revoked before the modifications could take
+  place.
+not_mountable: §cThis pet has no mounting point.
+already_mounting: §cYou are already riding something. Please dismount before you attempt
+  again.
+not_mountable_here: §cYou can't ride a pet in this area.
+cant_mount_pet_yet: §cYou do not have the permission to ride that pet.
+cant_follow_here: §cYour pet can't follow you in this area.
+type_name_in_chat: §aWrite down in the chat the name of your pet.
+if_wish_to_remove_name: §aIf you wish to remove it, write §c%tag%§a in the chat.
+nickname_changed_successfuly: §aNickname successfully changed !
+nickname_not_changed: §cNickname could not be changed due to it being an empty string.
+  Please try again.
+tag_to_remove_name: None
+already_inside_vehicule: §7You're already mounting something. Please dismount your
+  current mount to use this feature.
+pet_doesnt_exist: §cThis pet doesn't exist. Please check the id.
+player_not_connected: §cThe player §6%player%§c isn't connected.
+blacklisted_word: §cRename operation has been cancelled. The word %word% is not allowed
+  in a pet name.
+no_active_pet: §cYou have no active pet.
+signal_stick_given: §aYou've received an order stick. Right click to cast an order,
+  left click to switch orders.
+signal_stick_signal: '§6Active order : §e%signal%'
+loop_spawn: §cYour pet was revoked because it seems to struggle with numerous teleportations.
+requires_item_in_hand: §cYou must holding an item in your hand it update it in the
+  config.
+item_updated: '§aItem updated successful with the key : §e%key%'
+item_doesnt_exist: §aThe item with the key §e%key%§c doesn't exist. If you want to
+  add it you can use the §eadd§c argument instead.
+key_doesnt_exist: §cThe specified key is not registered.
+key_removed: §aThe key item was removed succesfully.
+key_already_exists: §cThis key is already registered. Use it to replace the current
+  item.
+key_added: §aKey added successfully with the corresponding item.
+key_list: '§aAvailable keys :'
+reload_success: §aReloaded successfully.
+how_many_pets_loaded: §a%numberofpets% were registered successfully
+requires_modelengine: §cThis plugin requires ModelEngine r2.3.1. It seems that this
+  requirement is not satisfied.
+usage: "§cThis command doesn't exist. \n§7Check out the wiki: §nhttps://alexandre-chaussard.gitbook.io/mcpets/tutorials/plugin-features/commands"
+no_perm: §cYou're not allowed to use this command.
+blacklisted_world: §cMCPets is disabled in this world.
+category_menu_title: §0☀ §4Pets §8- Pick a category §0☀
+category_doesnt_exist: §cThis category does not exist.
+pet_inventory_title: §0☀ §4%pet% §8- §0Inventory §0☀§
+pet_inventory_couldnot_open: §cThis inventory can not be opened as it may not exist.
+pet_skins_title: §0☀ §4%pet% §8- §0Skins §0☀§
+skin_could_not_apply: §cThe skin could not be applied to the pet.
+skin_applied: §aSkin changed successfully !
+global_respawn_timer_running: §cThis pet could not be spawned. You need to wait %timeLeft%s/%cooldown%s.
+respawn_timer_running: §cThis pet could not be spawned. It's still recovering from
+  its wounds. You need to wait %timeLeft%s/%cooldown%s.
+revoke_timer_running: §cThis pet could not be spawned. It's still recovering from
+  its wounds. You need to wait %timeLeft%s/%cooldown%s.
+player_or_pet_doesnt_exist: §cThis pet doesn't exist, or this player has never played
+  on your server.
+stats_cleared: §aAll stats have been cleared successfully !
+stats_cleared_for_pet_for_player: §aAll stats have been cleared successfully for the
+  pet %petId% for the player %player%.
+stats_cleared_for_pet: §aAll stats have been cleared successfully for the pet %petId%
+pet_taming_progress: §7Taming progress §a%progress%% §7- %progressbar%
+pet_could_not_evolve: §7Your pet could not evolve because §cyou already own the evolution§7.
+petfood_doesnt_exist: §cThis pet food doesn't exist.
+petunlock_noperm: §cYou are not allowed to use this item to unlock the pet.
+petunlocked: §aYou've unlocked the pet %petName%, congratulations !
+petunlocked_already: §cYou already own the pet §6%petName%§c.
+pet_already_tamed: §cThis pet is already tamed.
+pet_doesnt_eat: §cThis pet can not eat that food.
+pet_status_alive: §aAvailable
+pet_status_revoked: §cUnavailable §7(%timeleft%s left)
+pet_status_dead: §cDead §7(%timeleft%s left)
+pet_stats: "§6✦ Pet's Information ✦\n§7Status: %status%\n§6Level §7- §6%levelname%\n\
+  \ \n§f%health%§7/§f%maxhealth% §c❤\n§7Regeneration: %regeneration% ❤/s\n§7Damage\
+  \ Modifier: §f%damagemodifier%%\n§7Resistance Modifier: §f%resistancemodifier%%\n\
+  §7Power: §f%power%%\n \n§7Experience: §a%experience%/%threshold% xp\n%progressbar%"
+debugger_joining: §aDebugger is enabled. You are now listening to it.
+debugger_leave: §aDebugger is §7disabled§a. You will not be listening to it anymore.

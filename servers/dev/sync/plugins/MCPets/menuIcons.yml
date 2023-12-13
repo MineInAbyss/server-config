@@ -1,0 +1,74 @@
+mount:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: SADDLE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mount"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;mount"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to mount your pet"}],"text":""}'
+rename:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: NAME_TAG
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Rename"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;rename"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to rename your pet"}],"text":""}'
+inventory:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: CHEST
+  meta:
+    ==: ItemMeta
+    meta-type: TILE_ENTITY
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Inventory"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;inventory"}],"text":""}'
+    blockMaterial: CHEST
+petmenu:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: PAPER
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Back
+      to menu"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;petmenu"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to get back to the menu"}],"text":""}'
+skins:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: MAGMA_CREAM
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Skins"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;skins"}],"text":""}'
+equipment:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: LEATHER_HORSE_ARMOR
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Equipment"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;equipment"}],"text":""}'
+page_selector:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3578
+  type: PAPER
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    loc-name: '{"extra":[{"text":"MCPetsMenu;page_selector"}],"text":""}'
+    custom-model-data: 9660
