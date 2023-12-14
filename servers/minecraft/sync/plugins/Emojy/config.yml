@@ -8,7 +8,6 @@ requirePermissions: true
 supportForceUnicode: true
 debug: true
 emojyList:
-  type: CHAT
   ignoredEmoteIds: []
   ignoredGifIds: []
   ignoredFonts:

@@ -1,0 +1,10 @@
+- !<looty:set.recipes>
+  discoverRecipes: true
+  result:
+    type: NETHERRACK
+  recipes:
+    - !<blasting>
+      input:
+        type: DIRT
+      experience: 1f
+      cookingTime: 100

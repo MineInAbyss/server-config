@@ -10,17 +10,17 @@ check_for_updates: true
 # List multiple headers and set update_rate to the number of ticks between frames for basic animations
 headers:
   default:
-    - ' \n\n\n'
+    - ' <newline><newline><newline>:logo:'
 # Footer(s) to display below the TAB list for each server group, same as headers.
 footers:
   default:
     - 'Ping: %ping%ms %server_tps_5_colored%'
 formats:
-  default: '%server%%prefix% %username%'
+  default: '%server%%prefix%%extracommands_afk% %username%'
 # Nametag(s) to display above players' heads for each server group. Set to empty to disable.
 # Nametag formats must contain a %username%. Docs: https://william278.net/docs/velocitab/nametags
 nametags:
-  default: '&f%prefix% %username%&f%suffix%'
+  default: ''
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
 formatting_type: MINEDOWN
 # The servers in each group of servers. The order of groups is important when sorting by SERVER_GROUP.
@@ -41,10 +41,10 @@ only_list_players_in_same_group: true
 # Define custom names to be shown in the TAB list for specific server names.
 # If no custom display name is provided for a server, its original name will be used.
 server_display_names:
-  survival: 
-  build: 
-  dev: 
-  test: 
+  survival: ":survival::space_-4:"
+  build: ":build::space_-4:"
+  dev: ":dev::space_-4:"
+  test: ":test::space_-4:"
 # Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
 # How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)

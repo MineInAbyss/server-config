@@ -96,7 +96,6 @@ effect-hunger:
         x: 17
         y: 1
       function:
-        reversed: true
         listener: food
         increment: 20
         orientation: horizontal
