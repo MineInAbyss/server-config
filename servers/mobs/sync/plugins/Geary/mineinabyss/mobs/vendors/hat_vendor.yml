@@ -7,13 +7,6 @@
   menu: "Hat Vendor"
   selling:
     - item:
-        prefab: cosmetics:mining_helmet
-      currencyType: ORTH_COIN
-      price: 4
-      tradeAction:
-        action: GRANT_PERMISSION
-        value: "hmccosmetics.hat.mining_helmet"
-    - item:
         prefab: cosmetics:habo_hat
       currencyType: ORTH_COIN
       price: 4
