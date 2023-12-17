@@ -1,6 +1,5 @@
 ashimite:
   Type: STRIDER
-  Display: 'Ashimite'
   Health: 16
   AIGoalSelectors:
     - clear
