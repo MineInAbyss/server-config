@@ -4,7 +4,7 @@ OverrideDefaultName: true
 EnableClickBackToMenu: true
 UseDefaultMythicMobsNames: false
 RightClickToOpenMenu: true
-LeftClickToOpenMenu: true
+LeftClickToOpenMenu: false
 DisableInventoryWhileHoldingSignalStick: true
 DismountOnDamaged: true
 SpawnPetOnReconnect: true
