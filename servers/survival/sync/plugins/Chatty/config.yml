@@ -103,7 +103,7 @@ channels:
     logToConsole: true
     simpleConsoleMessages: false
     proxy: true
-    discordsrv: false
+    discordsrv: true
     isDefaultChannel: true
     isStaffChannel: false
     format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''<light_purple><b><chatty_nickname><newline></b>
