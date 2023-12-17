@@ -8,17 +8,25 @@ Cancelattack:
   Skills:
     - CancelEvent
 
+
+stingerhead_unstuck:
+  Cooldown: 30
+  Conditions:
+   - damagecause{cause=SUFFOCATION} true
+  Skills:
+   - teleport{spreadh=5;spreadv=3} @self
+
 SH_Attack:
   Cooldown: 1
   Conditions:
     - offgcd
-    - targetwithin{d=4} true
+    - targetwithin{d=5} true
   Skills:
     - gcd{ticks=40}
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 5
-    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=3}
+    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=5}
 #will bleed once every 5 seconds for 5 seconds
 SH_Attack_DAMAGE:
   TargetConditions:
@@ -241,10 +249,10 @@ stingerhead_spin:
     - skill{s=[
       - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
       - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
-      - damage{amount=10} @PIR{r=5}
+      - damage{amount=12} @PIR{r=7}
       - shieldbreak{duration=200} @target
-      - throw{v=10;vy=4} @PIR{r=5}
-      ]} @EIR{r=5;ignore=faction}
+      - throw{v=10;vy=4} @PIR{r=7}
+      ]} @EIR{r=8;ignore=faction}
     - delay 20
     - setai{ai=true} @self
     - state{s=spin_attack;remove=true}
