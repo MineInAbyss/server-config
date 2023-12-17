@@ -1,0 +1,18 @@
+EXP_Gain:
+  Conditions:
+  - incombat true
+  Skills:
+  - petExperience{exp=1} @self
+  
+Pet_Look:
+  Conditions:
+  - incombat castinstead Pet_Look_TARGET
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{immediately=true} @PetOwner
+  
+Pet_Look_TARGET:
+  Conditions:
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{immediately=true} @target

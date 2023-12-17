@@ -1,0 +1,24 @@
+Fire_Shield:
+  Cooldown: 10
+  Conditions:
+  - isburning{} true
+  Skills:
+  - sound{s=flamos_sounds:samus.flamos_fire_orb} @Self
+  - potion{type=FIRE_RESISTANCE;duration=160;level=1} @self
+  - potion{type=INCREASE_DAMAGE;duration=160;level=1} @self
+
+Penetration_Proof:
+  Cooldown: 60
+  Conditions:
+  - health{h=<20} true
+  Skills:
+  - potion{type=ABSORPTION;duration=200;level=48} @self
+
+Symbiotic_Relationship:
+  Cooldown: 120
+  Conditions:
+  - health{h=<20} true
+  Skills:
+  - potion{type=REGENERATION;duration=60;level=10} @self
+  - effect:particles{p=reddust;color=#5C3356;speed=0.1;a=25;hs=.75;vs=.75;size=3} @self
+  - sound{s=littleroom_glume:littleroom.glume.shakesong;v=.25} @self
