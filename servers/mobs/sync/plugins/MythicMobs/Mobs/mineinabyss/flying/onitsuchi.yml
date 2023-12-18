@@ -17,7 +17,7 @@ onitsuchi:
     # KnockbackResistance: 0.5
     Collidable: true
     DigOutOfGround: true
-    FollowRange: 32
+    FollowRange: 20
     MaxCombatDistance: 128
 
     MovementSpeed: 0.4
