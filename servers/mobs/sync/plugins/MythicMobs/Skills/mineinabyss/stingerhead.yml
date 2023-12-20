@@ -32,7 +32,7 @@ SH_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
   Skills:
-    - damage{a=7;pkb=true;hnp=true;hp=true} @target
+    - damage{a=8;pkb=true;hnp=true;hp=true} @target
     - skill{s=Bleeding} @target
 SH_Hit:
   Cooldown: 1
@@ -124,7 +124,7 @@ stingerhead_leapa:
     - gcd{ticks=20}
     - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
     - shieldbreak{duration=300} @target
-    - damage{a=8} @target
+    - damage{a=14} @target
 
     - skill{s=Bleeding} @target
     - skill{s=stingerhead_venom_impact} @target
@@ -229,9 +229,9 @@ stingerhead_venom_tick:
 stingerhead_venom_impact:
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
-    - potion{type=POISON;duration=20;level=2} @target
-    - potion{type=BLINDNESS;duration=15;level=1} @target
-    - damage{a=8} @target
+    - potion{type=POISON;duration=40;level=2} @target
+    - potion{type=BLINDNESS;duration=40;level=1} @target
+    - damage{a=10} @target
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
   - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
@@ -247,10 +247,12 @@ stingerhead_spin:
     - setai{ai=false} @self
     - state{s=spin_attack;li=0;lo=0}
     - skill{s=[
+      - shieldbreak{duration=200} @target
+      - delay 1
       - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
       - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
-      - damage{amount=12} @PIR{r=7}
-      - shieldbreak{duration=200} @target
+      - damage{amount=8} @PIR{r=7}
+      - damage{amount=4;pk=false;ia=true} @PIR{r=7}
       - throw{v=10;vy=4} @PIR{r=7}
       ]} @EIR{r=8;ignore=faction}
     - delay 20
@@ -261,8 +263,7 @@ stingerhead_spin:
 Bleeding:
   Cooldown: 5
   Conditions:
-    - targetinlineofsight true
   Skills:
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
-    - damage{a=3;repeat=5;repeatInterval=20;pkb=false} @target
+    - damage{a=1;repeat=5;repeatInterval=20;pkb=false;ia=true} @target
