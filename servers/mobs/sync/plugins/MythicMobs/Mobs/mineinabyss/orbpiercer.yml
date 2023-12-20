@@ -16,7 +16,7 @@ OrbPiercer:
     PreventSunBurn: true
     PreventOtherDrops: true
     KnockbackResistance: 1
-    #DigOutOfGround: true
+    DigOutOfGround: true
     Collidable: true
     Silent: true
     FollowRange: 48
@@ -26,7 +26,7 @@ OrbPiercer:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
   Drops:
-    - exp 180-210
+    - exp 80-210
     - geary mineinabyss:orb_piercer_spike 3-6
     - geary mineinabyss:orb_piercer_face_fragments 1 0.4
   Model:

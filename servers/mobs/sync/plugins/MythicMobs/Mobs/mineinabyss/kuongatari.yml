@@ -16,6 +16,7 @@ Kuongatari:
     FollowRange: 48
     MovementSpeed: 0.3
     MaxCombatDistance: 35
+    DigOutOfGround: true
   Drops:
     - exp 15-25
     - geary mineinabyss:kuongatari_juice 1 0.4

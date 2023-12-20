@@ -20,8 +20,9 @@ Stingerhead:
     FollowRange: 48
     MovementSpeed: 0.4
     MaxCombatDistance: 24
+    DigOutOfGround: true
   Drops:
-    - exp 400-500
+    - exp 80-210
     - geary mineinabyss:stingerhead_scale 1-2 1
     - geary mineinabyss:stingerhead_flesh 1-2 1
     - geary mineinabyss:stingerhead_eye 1-2 0.4
@@ -34,7 +35,8 @@ Stingerhead:
     Drive: false
     DamageTint: true
   DamageModifiers:
-    - PROJECTILE 0.20
+    - PROJECTILE 0.10
+    - SUFFOCATION 0.05
   Skills: 
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
@@ -43,7 +45,7 @@ Stingerhead:
 
     - heal{amount=50} @self ~onkill
     - skill{s=SH_Hit} ~onDamaged
-    - skill{s=stingerhead_unstuck} @self ~onspawn
+    - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
 
