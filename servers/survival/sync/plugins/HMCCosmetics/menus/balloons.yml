@@ -1,18 +1,6 @@
 title: ":space_-8::cosmetic_grid_menu:"
 rows: 6
 items:
-  splitjaw_balloon:
-    slots:
-      - 0
-    model: splitjaw
-    item:
-      material: hmccosmetics:splitjaw_balloon
-      lore:
-        - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_splitjaw_balloon%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_splitjaw_balloon%"
-    type: cosmetic
-    cosmetic: splitjaw_balloon
   neritantan_balloon:
     slots:
       - 1
@@ -24,7 +12,9 @@ items:
         - ""
         - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_balloon%"
         - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_balloon%"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
     cosmetic: neritantan_balloon
 
 
