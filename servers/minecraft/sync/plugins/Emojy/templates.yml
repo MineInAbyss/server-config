@@ -22,3 +22,11 @@ templates:
     ascent: 30
     bitmapWidth: 2
     bitmapHeight: 2
+  - id: cosmetic_shade
+    texture: minecraft:hmccosmetics/shade.png
+    font: mineinabyss:cosmetics
+    height: 16
+  - id: cosmetic_clear
+    texture: minecraft:hmccosmetics/clear_image.png
+    font: mineinabyss:cosmetics
+    height: 16

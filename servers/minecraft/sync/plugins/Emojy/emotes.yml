@@ -583,6 +583,42 @@ emotes:
     texture: cosmetics:ui/wardrobe_transition.png
     height: 256
     ascent: 50
+  - id: shade_row_1
+    template: cosmetic_shade
+    ascent: -4
+  - id: shade_row_2
+    template: cosmetic_shade
+    ascent: -22
+  - id: shade_row_3
+    template: cosmetic_shade
+    ascent: -40
+  - id: shade_row_4
+    template: cosmetic_shade
+    ascent: -58
+  - id: shade_row_5
+    template: cosmetic_shade
+    ascent: -76
+  - id: shade_row_6
+    template: cosmetic_shade
+    ascent: -94
+  - id: clear_row_1
+    template: cosmetic_clear
+    ascent: -4
+  - id: clear_row_2
+    template: cosmetic_clear
+    ascent: -22
+  - id: clear_row_3
+    template: cosmetic_clear
+    ascent: -40
+  - id: clear_row_4
+    template: cosmetic_clear
+    ascent: -58
+  - id: clear_row_5
+    template: cosmetic_clear
+    ascent: -76
+  - id: clear_row_6
+    template: cosmetic_clear
+    ascent: -94
   - id: blocky_default_menu
     font: mineinabyss:blocky
     texture: mineinabyss:ui/blocky/default_menu.png

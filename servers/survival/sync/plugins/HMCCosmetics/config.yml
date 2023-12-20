@@ -70,12 +70,12 @@ menu-settings:
     # Below is the shading mechanism behind cosmetic items. This is a bit complicated, but it allows for a lot of customization.
     # The shading is done through the title and by shifting textures around. This is done by offsets.
     # Only Oraxen is support by default. Vanilla can't properly handle it without a lot of unicodes and ItemsAdder adds weird offsets and decolors it. (This is why it is disabled by default)
-    enabled: false
-    first-row-shift: <s:-169>
-    sequent-row-shift: ' <s:-169>'
-    individual-column-shift: <s:-3>
-    background: '<g:shade_row_<row>:colorable> '
-    clear-background: '<g:clear_row_<row>:colorable> '
+    enabled: true
+    first-row-shift: ':space_-169:'
+    sequent-row-shift: ':space_-165:'
+    individual-column-shift: ':space_-3:'
+    background: ':shade_row_<row>|colorable: '
+    clear-background: ':clear_row_<row>|colorable: '
     #These use MiniMessage for color! https://docs.advntr.dev/minimessage/format.html#color
     equipped-cosmetic-color: <yellow>
     equipable-cosmetic-color: <green>
@@ -131,6 +131,32 @@ wardrobe:
     title-stay: 500
     title-fade-out: 1000
   wardrobes:
+    test:
+      distance: -1 # Distance in blocks that a player can interact with the wardrobe. -1 to ignore.
+      permission: "hmccosmetics.wardrobe.default" # Permission required to use the wardrobe.
+      distance: -1 # Distance in blocks that a player can interact with the wardrobe. -1 to ignore.
+      permission: "hmccosmetics.wardrobe.default" # Permission required to use the wardrobe.
+      npc-location:
+        world: world
+        x: -3.0
+        y: 139.0
+        z: -513.5
+        yaw: -180.0
+        pitch: 0.0
+      viewer-location:
+        world: world
+        x: -7.0
+        y: 139.5
+        z: -513.5
+        yaw: -90.0
+        pitch: 0.0
+      leave-location:
+        world: world
+        x: -9.0
+        y: 139.0
+        z: -513.5
+        yaw: 90.0
+        pitch: 0.0
     guildhq1:
       distance: -1 # Distance in blocks that a player can interact with the wardrobe. -1 to ignore.
       permission: "hmccosmetics.wardrobe.default" # Permission required to use the wardrobe.
