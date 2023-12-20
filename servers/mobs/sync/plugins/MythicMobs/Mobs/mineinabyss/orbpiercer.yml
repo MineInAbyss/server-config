@@ -37,7 +37,7 @@ OrbPiercer:
   DamageModifiers:
     - DROWNING 0
     - PROJECTILE 0.25
-    - ENTITY_ATTACK 1.5
+    - SUFFOCATION 0
   Skills:
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
