@@ -30,7 +30,7 @@ Kuongatari:
   DamageModifiers:
     - DROWNING 0
   Skills:
-    - skill{s=Kuon_Summon} @target ~onDamaged <50% 0.5
+    - skill{s=Kuon_Summon} @target ~onDamaged <50% 0.2
     - shieldbreak{duration=100} @target ~onattack 0.1
 Kuongatari_summon:
   Type: CAVE_SPIDER
