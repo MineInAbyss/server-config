@@ -11,7 +11,7 @@ Cancelattack:
 meteorONSPAWN:
   Skills:
     - delay 1
-    - potion{type=INVISIBILITY;duration=480;level=0;p=false} @self
+    - potion{type=INVISIBILITY;duration=480;level=1;p=false} @self
 
 #debug skills ^
 
@@ -56,7 +56,20 @@ orbyspear:
   Skills:
     - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self
     - delay 5
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=1} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5} @Target
+    - delay 8
+    - state{mid=orbpiercer;s=normal_shot;r=true} @self
+orbyspear2:
+  Conditions:
+    - offgcd
+  Cooldown: 5
+  Skills:
+    - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self
+    - delay 5
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
     - delay 8
     - state{mid=orbpiercer;s=normal_shot;r=true} @self
 orbyt:
@@ -95,6 +108,7 @@ orby_shout:
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - potion{type=SLOW;duration=40;level=5} @PIR{r=20}
+    - potion{type=RESISTANCE;duration=480;level=1;p=false} @self
     - delay 10
     - skill{s=orby_knockback} @PIR{r=10}
     - skill{s=orby_screenshake;repeat=6;repeatInterval=8} @pir{r=20}

@@ -81,18 +81,17 @@ stingerhead_bigleap:
     - distance{d=10to24} true
   Skills:
     - gcd{ticks=50}
-    - potion{t=SLOW;d=20;l=7} @self
+    - potion{t=SLOW;d=20;l=32} @self
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=15;amount=50;hS=1;vS=1} @Self
     - delay 20
     - setai{ai=false} @self
     - state{s=launch_attack;li=0;lo=0} @self
-    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 1
-    - leap{velocity=1000} @Target
+    - leap{velocity=650} @Target
     - skill{s=stingerhead_leapa;repeat=20;repeatinterval=1} @Self
     - delay 30
     - state{s=launch_attack;remove=true} @self
-
+    - setai{ai=true} @self
 stingerhead_leap:
   Cooldown: 10
   Conditions:
@@ -103,15 +102,14 @@ stingerhead_leap:
     - distance{d=2to10} true
   Skills:
     - gcd{ticks=50}
-    - potion{t=SLOW;d=20;l=4} @self
+    - potion{t=SLOW;d=20;l=2} @self
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
     - delay 20
     - setai{ai=false} @self
     - state{s=launch_attack;li=0;lo=0} @self
-    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 1
-    - leap{velocity=400} @Target
-    - skill{s=stingerhead_leapa;repeat=10;repeatinterval=1} @Self
+    - leap{velocity=450} @Target
+    - skill{s=stingerhead_leapa;repeat=20;repeatinterval=1} @Self
     - delay 26
     - state{s=launch_attack;remove=true} @self
     - setai{ai=true} @self
@@ -124,7 +122,7 @@ stingerhead_leapa:
     - gcd{ticks=20}
     - effect:sound{s=entity.fox.bite;v=1;p=1;} @target
     - shieldbreak{duration=300} @target
-
+    - delay 1
     - damage{a=14} @target
     - skill{s=Bleeding} @target
     - skill{s=stingerhead_venom_impact} @target
