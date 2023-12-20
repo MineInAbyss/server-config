@@ -1,11 +1,13 @@
 - !<mobzy:spawn.type>
   prefab: mineinabyss:stingerhead
 - !<mobzy:spawn.amount>
-  amount: 2..4
+  amount: 1..3
 - !<mobzy:spawn.spread>
   radius: 6
 - !<mobzy:check.spawn.local_group>
-  max: 6
+  max: 3
   radius: 128
 - !<mobzy:check.spawn.gap>
   range: 3..4096
+- !<mobzy:check.spawn.delay>
+  attemptEvery: 60s

@@ -32,7 +32,7 @@ SH_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
   Skills:
-    - damage{a=8;pkb=true;hnp=true;hp=true} @target
+    - damage{a=12;pkb=true;hnp=false;hp=true} @target
     - skill{s=Bleeding} @target
 SH_Hit:
   Cooldown: 1
@@ -76,9 +76,9 @@ stingerhead_bigleap:
   Conditions:
     - targetinlineofsight{} true
     - offgcd true
-    - heightabove{h=5} false
+    - heightabove{h=8} false
   TargetConditions:
-    - distance{d=12to24} true
+    - distance{d=10to24} true
   Skills:
     - gcd{ticks=50}
     - potion{t=SLOW;d=20;l=7} @self
@@ -94,13 +94,13 @@ stingerhead_bigleap:
     - state{s=launch_attack;remove=true} @self
 
 stingerhead_leap:
-  Cooldown: 15
+  Cooldown: 10
   Conditions:
     - offgcd true
     - targetinlineofsight
-    - heightabove{h=5} false
+    - heightabove{h=7} false
   TargetConditions:
-    - distance{d=2to12} true
+    - distance{d=2to10} true
   Skills:
     - gcd{ticks=50}
     - potion{t=SLOW;d=20;l=4} @self
@@ -261,9 +261,9 @@ stingerhead_spin:
 
 
 Bleeding:
-  Cooldown: 5
+  Cooldown: 2
   Conditions:
   Skills:
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
-    - damage{a=1;repeat=5;repeatInterval=20;pkb=false;ia=true} @target
+    - damage{a=1;repeat=4;repeatInterval=20;pkb=false;ia=true} @target

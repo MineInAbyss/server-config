@@ -7,12 +7,12 @@
 - !<mobzy:spawn.priority>
   priority: 0.6
 - !<mobzy:check.spawn.local_group>
-  max: 8
-  radius: 320
+  max: 4
+  radius: 200
 - !<mobzy:check.spawn.gap>
   range: 3..4096
 - !<mobzy:check.spawn.delay>
-  attemptEvery: 2s
+  attemptEvery: 30s
 - !<geary:check.block_type>
   allow:
     - GRASS_BLOCK

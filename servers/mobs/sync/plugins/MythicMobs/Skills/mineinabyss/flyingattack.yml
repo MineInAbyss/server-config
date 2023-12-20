@@ -28,3 +28,9 @@ Damage_7:
   Skills:
     - state{s=attack;li=0;lo=0} @self
     - damage{a=7} @target
+Damage_8:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - state{s=attack;li=0;lo=0} @self
+    - damage{a=8} @target

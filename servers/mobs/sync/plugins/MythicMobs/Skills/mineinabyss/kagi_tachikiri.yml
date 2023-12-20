@@ -21,6 +21,7 @@ kagi_venom_tick:
 kagi_venom_impact:
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
-    - potion{type=POISON;duration=20;level=2}
-    - potion{type=BLINDNESS;duration=15;level=1}
-    - damage{a=7} @target
+    - potion{type=POISON;duration=80;level=2}
+    - potion{type=BLINDNESS;duration=30;level=1}
+    - damage{a=10} @target
+    - shieldbreak{duration=150} @target

@@ -1,0 +1,9 @@
+Kuon_Summon:
+  Cooldown: 300
+  Conditions:
+    - offgcd
+    - targetwithin{d=5} true
+    - incombat true
+  Skills:
+    - gcd{ticks=500}
+    - summon{type=WITHER_SKELETON;amount=2;radius=4} @self
