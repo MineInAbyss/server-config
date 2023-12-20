@@ -1,7 +1,7 @@
 Kuongatari:
   Type: CAVE_SPIDER
-  Health: 25
-  Damage: 6
+  Health: 30
+  Damage: 8
   AITargetSelectors:
     - clear
     - attacker
@@ -30,13 +30,13 @@ Kuongatari:
   DamageModifiers:
     - DROWNING 0
   Skills:
-    - skill{s=Kuon_Summon} @target ~onDamaged <50% 0.2
+    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
     - shieldbreak{duration=100} @target ~onattack 0.1
 Kuongatari_summon:
   Type: CAVE_SPIDER
   Display: Kuongatari_Summon
   Health: 10
-  Damage: 5
+  Damage: 7
   AITargetSelectors:
     - clear
     - attacker
@@ -55,9 +55,9 @@ Kuongatari_summon:
     - TORCH HAND
   Drops:
     - exp 15-25
-    - geary mineinabyss:kuongatari_juice 1 0.1
-    - geary mineinabyss:kuongatari_silk 1 0.5
-    - geary mineinabyss:kuongatari_abdomen_raw 1 0.2
+    - geary mineinabyss:kuongatari_juice 1 0.05
+    - geary mineinabyss:kuongatari_silk 1 0.2
+    - geary mineinabyss:kuongatari_abdomen_raw 1 0.1
   Model:
     Id: kuongatari
     ViewRadius: 64
