@@ -1,6 +1,6 @@
 OrbPiercer:
   Type: ZOMBIE
-  Health: 125
+  Health: 100
   Damage: 7
   AIGoalSelectors:
     - clear
@@ -16,17 +16,17 @@ OrbPiercer:
     PreventSunBurn: true
     PreventOtherDrops: true
     KnockbackResistance: 1
-    #DigOutOfGround: true
+    DigOutOfGround: true
     Collidable: true
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.32
+    MovementSpeed: 0.4
     MaxCombatDistance: 35
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
   Drops:
-    - exp 180-210
+    - exp 80-210
     - geary mineinabyss:orb_piercer_spike 3-6
     - geary mineinabyss:orb_piercer_face_fragments 1 0.4
   Model:
@@ -37,7 +37,7 @@ OrbPiercer:
   DamageModifiers:
     - DROWNING 0
     - PROJECTILE 0.25
-    - ENTITY_ATTACK 1.5
+    - SUFFOCATION 0
   Skills:
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
@@ -50,7 +50,8 @@ OrbPiercer:
 
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
-    - skill{s=orbyspear} @target ~onTimer:20
+    - skill{s=orbyspear2} @target ~onTimer:20 <50%
+    - skill{s=orbyspear} @target ~onTimer:20 >50%
     - skill{s=orby_impale} @target ~onTimer:40
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
@@ -69,4 +70,5 @@ orbpiercer_projectile:
   Skills:
     - skill{s=meteorONSPAWN} @self ~onSpawn
     - model{mid=orbpiercer_projectile;n=false;d=false;i=false} @self ~onSpawn
+    - remove{delay=200} @self ~onSpawn
    # - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn

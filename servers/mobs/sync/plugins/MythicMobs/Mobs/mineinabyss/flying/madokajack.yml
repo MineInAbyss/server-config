@@ -25,7 +25,7 @@ madokajack:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 2
+    Scale: 2.5
   Skills:
     - CancelEvent{sync=true} ~onAttack
     - skill{s=Damage_5} @self ~onAttack
