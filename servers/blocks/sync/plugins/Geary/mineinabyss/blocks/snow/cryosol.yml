@@ -1,16 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:snow]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: Cryosol
     customModelData: 2042
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 35
-- !<blocky:info>
+info:
   blockModel: "mineinabyss:block/snow/cryosol"
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:cryosol

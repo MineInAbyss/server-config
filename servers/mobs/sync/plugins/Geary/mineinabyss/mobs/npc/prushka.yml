@@ -1,4 +1,5 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:npc]
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: prushka

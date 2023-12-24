@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#454545>Cooked Hashofu Tail
@@ -9,10 +10,10 @@
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>It is said it tastes like sushi.
       - <#595959><i>Smell isn't so unbearable anymore!
-- !<looty:food>
+food:
   saturation: 6
   hunger: 5
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

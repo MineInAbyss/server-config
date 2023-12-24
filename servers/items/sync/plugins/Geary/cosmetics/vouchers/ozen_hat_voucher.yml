@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, cosmetics]
+set.item:
   item:
     displayName: Cosmetic Voucher - Ozen's Hat
     lore:
@@ -7,7 +8,7 @@
     customModelData: 1000
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<cosmetics:voucher>
+voucher:
   permission: hmccosmetics.hat.ozen_hat
   originalItem:
     prefab:  cosmetics:ozen_hat

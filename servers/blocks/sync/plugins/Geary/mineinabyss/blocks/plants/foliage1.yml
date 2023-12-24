@@ -1,21 +1,22 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: <#7a4e48>Foliage 1
     customModelData: 3001
-- !<blocky:placable_on>
+placable_on:
   floor: true
   ceiling: true
   wall: false
   blocks:
     - STONE
-- !<geary:set.block>
+set.block:
   blockType: WIRE
   blockId: 1
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/nature/foliage1
-- !<blocky:tall_wire>
-- !<blocky:drops>
+tall_wire: {}
+drops:
   drops:
     - item:
         prefab: mineinabyss:foliage1

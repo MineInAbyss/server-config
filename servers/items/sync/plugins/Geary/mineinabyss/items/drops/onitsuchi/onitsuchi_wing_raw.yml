@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#5C471D>Raw Onitsuchi Wing
@@ -8,6 +9,6 @@
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#A9CCCA><i>This meat seems delicious
       - <#A9CCCA><i>if cooked properly!
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

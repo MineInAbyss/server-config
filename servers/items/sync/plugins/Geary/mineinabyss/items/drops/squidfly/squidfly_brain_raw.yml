@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#85512E>Squidfly Brain
@@ -9,6 +10,6 @@
       - <#C27643><i>Eating it raw might not
       - <#C27643><i>be the brighest idea
       - <#C27643><i>I've come up with...
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

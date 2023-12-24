@@ -1,9 +1,10 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 3
-- !<looty:disable_item_interactions>
-#- !<geary:events>
+disable_item_interactions: {}
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Freeze Enemies
@@ -16,12 +17,12 @@
 #            radius: 20
 #            max: 3
 #            run:
-#              - !<geary:apply_potion_effects>
+#              apply_potion_effects:
 #                effects:
 #                  - type: SLOW
 #                    duration: 10s
 #                    amplifier: 100
-#              - !<geary:particle>
+#              particle:
 #                type: CLOUD
 #                count: 10
 #                speed: 0.3

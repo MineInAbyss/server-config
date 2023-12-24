@@ -1,12 +1,13 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: Tesuchi Scale on a Stick
     lore:
       - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
     type: CARROT_ON_A_STICK
     customModelData: 2
-- !<looty:disable_item_interactions>
-- !<looty:set.recipes>
+disable_item_interactions: {}
+set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:tesuchi_scale_on_a_stick

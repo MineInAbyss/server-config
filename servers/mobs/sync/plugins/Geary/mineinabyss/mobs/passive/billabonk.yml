@@ -1,16 +1,17 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:slime
  # creatureType: WATER_CREATURE
-- !<mobzy:display_name> "<#0357AB>Billabonk"
-- !<mobzy:set.slime_size> 1
-- !<mobzy:set.modelengine-model>
+display_name: "<#0357AB>Billabonk"
+set.slime_size: 1
+set.modelengine-model:
   modelId: billabonk
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 12
   movementSpeed: 0.7
   width: 0.6000
   height: 0.6000
-- !<mobzy:death_loot>
+death_loot:
   minExp: 10
   maxExp: 15
   drops:
@@ -22,7 +23,7 @@
     - item:
         prefab: mineinabyss:billabonk_sac
       dropChance: 0.1500
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.billabonk.ambient
     category: NEUTRAL
@@ -32,5 +33,5 @@
   hurt:
     sound: mineinabyss:entity.billabonk.hurt
     category: NEUTRAL
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false

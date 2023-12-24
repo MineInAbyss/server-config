@@ -1,14 +1,15 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: <#7a4e48>Foliage 8
     customModelData: 3008
-- !<geary:set.block>
+set.block:
   blockType: WIRE
   blockId: 8
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/nature/foliage8
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:foliage8

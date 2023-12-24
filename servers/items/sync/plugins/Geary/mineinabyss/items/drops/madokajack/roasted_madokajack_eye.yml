@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: FERMENTED_SPIDER_EYE
     displayName: <#1C439E>Roasted Madokajack Eye

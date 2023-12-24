@@ -1,14 +1,15 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Bamboo Plant
     customModelData: 1005
-- !<blocky:furniture>
+furniture:
   rotationType: NONE
 
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:bamboo_plant

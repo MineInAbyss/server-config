@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: STRING
     displayName: <#116AAD>Silkfang Silk
@@ -8,4 +9,4 @@
       - <yellow>the <green>Edge of the Abyss<yellow>.
       - <#ED4C4C><i>Somewhat fine silk with a
       - <#ED4C4C><i>large amount of tensile strength.
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

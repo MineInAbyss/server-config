@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: "<#257BEB>Cooked Demonfish"
@@ -8,10 +9,10 @@
       - <yellow>catching a <#257BEB>Demonfish <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#1B5BAD><i>Seems like a great source for food!
-- !<looty:food>
+food:
   saturation: 9.6
   hunger: 6
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

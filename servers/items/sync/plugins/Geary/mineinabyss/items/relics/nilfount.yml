@@ -1,25 +1,26 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     displayName: <#22B866><b>Nil Fount
     lore:
       - <white>
     type: STICK
     customModelData: 1
-- !<looty:disable_item_interactions>
-#- !<geary:events>
+disable_item_interactions: {}
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Nil Fount
 #      length: 2s
 #      run:
 #        - !<on.parent>
-#          - !<geary:place_block>
+#          place_block:
 #            blockType: WATER
 #            at: !<player.target_block>
 #              maxDist: 5
 #              onFace: true
 #              allowAir: false
-#          - !<geary:particle>
+#          particle:
 #            type: WATER_SPLASH
 #            count: 10
 #            speed: 0.2

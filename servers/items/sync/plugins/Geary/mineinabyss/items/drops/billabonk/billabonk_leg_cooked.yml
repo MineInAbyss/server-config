@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: "<#0357AB>Cooked Billabonk Leg"
@@ -9,10 +10,10 @@
       - <yellow>Can also be obtained by cooking
       - <yellow>a <#0357AB>Raw Billabonk Leg<yellow>.
       - <#0357AB><i>Do the stanky leg
-- !<looty:food>
+food:
   saturation: 6
   hunger: 5
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

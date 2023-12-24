@@ -1,11 +1,12 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: POTION
     potionData:
       type: FIRE_RESISTANCE
       extended: false
       upgraded: false
-- !<looty:set.potion_mixes>
+set.potion_mixes:
   potionmixes:
     - !<potionmix>
       ingredient:

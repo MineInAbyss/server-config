@@ -1,9 +1,10 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive]
-- !<mobzy:display_name> "<#D63624>Chimokami"
-- !<mobzy:set.modelengine-model>
+display_name: "<#D63624>Chimokami"
+set.modelengine-model:
   modelId: chimokami
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 30
   movementSpeed: 0.3000
   knockbackResistance: 0.0800
@@ -11,7 +12,7 @@
   followRange: 5
   width: 2
   height: 1
-- !<mobzy:death_loot>
+death_loot:
   minExp: 20
   maxExp: 25
   drops:
@@ -24,8 +25,8 @@
         prefab: mineinabyss:chimokami_fang
       maxAmount: 2
       dropChance: 0.7000
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+sounds: {}
+set.pathfinders:
   override: false
 #  targets:
 #    1: !<mobzy:target.attacker>

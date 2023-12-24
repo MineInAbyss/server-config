@@ -1,5 +1,6 @@
-- !<geary:inherit>
-  from: [mineinabyss:npc]
-- !<mobzy:set.modelengine-model>
+namespaces: [ geary, mobzy, looty, mineinabyss ]
+inherit:
+  from: [ mineinabyss:npc ]
+set.modelengine-model:
   modelId: guildmaster
-- !<mineinabyss:okibotravel>
+okibotravel: { }

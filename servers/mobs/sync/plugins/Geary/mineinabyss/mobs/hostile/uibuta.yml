@@ -1,10 +1,11 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:hostile ]
-- !<mobzy:display_name> "<#8F2222>Uibuta"
-- !<mobzy:set.modelengine-model>
+display_name: "<#8F2222>Uibuta"
+set.modelengine-model:
   modelId: uibuta
   scale: '1.5..2.0'
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 50
   movementSpeed: 0.35
   attackDamage: 9.5000
@@ -13,7 +14,7 @@
   followRange: 30
   width: 1.5000
   height: 1.5000
-- !<mobzy:death_loot>
+death_loot:
   minExp: 65
   maxExp: 95
   drops:
@@ -28,7 +29,7 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.7500
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.ottobas.ambient
     category: HOSTILE
@@ -38,13 +39,13 @@
   hurt:
     sound: mineinabyss:entity.ottobas.hurt
     category: HOSTILE
-- !<mobzy:set.equipment>
+set.equipment:
   boots:
     type: STONE
     enchantments:
       - enchant: depth_strider
         level: 3
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   targets:
     1: !<mobzy:target.attacker>
     2: !<mobzy:target.nearest_player>

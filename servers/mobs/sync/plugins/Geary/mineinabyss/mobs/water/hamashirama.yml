@@ -1,16 +1,17 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:squid
  # creatureType: WATER_CREATURE
-- !<mobzy:display_name> "<#1B91B5>Hamashirama"
-- !<mobzy:set.modelengine-model>
+display_name: "<#1B91B5>Hamashirama"
+set.modelengine-model:
   modelId: demonfish
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 30
   movementSpeed: 0.2
   followRange: 20
   width: 1
   height: 1
-- !<mobzy:death_loot>
+death_loot:
   minExp: 20
   maxExp: 25
   drops:
@@ -18,10 +19,10 @@
         prefab: mineinabyss:hamashirama_raw
       cooked:
         prefab: mineinabyss:hamashirama_cooked
-- !<mobzy:sounds>
-- !<mobzy:bucketable>
+sounds: {}
+bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:hamashirama_bucket
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false

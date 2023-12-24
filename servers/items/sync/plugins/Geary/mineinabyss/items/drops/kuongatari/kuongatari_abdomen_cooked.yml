@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#1FB53D>Cooked Kuongatari Abdomen
@@ -7,10 +8,10 @@
       - <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>Tastes suprisingly tasty for such a small bug..
-- !<looty:food>
+food:
   saturation: 0.6
   hunger: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

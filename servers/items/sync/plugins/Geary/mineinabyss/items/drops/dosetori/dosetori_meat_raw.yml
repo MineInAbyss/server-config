@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: "<#FFF821>Raw Dosetori Meat"
@@ -7,6 +8,6 @@
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Tastes like chicken?
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

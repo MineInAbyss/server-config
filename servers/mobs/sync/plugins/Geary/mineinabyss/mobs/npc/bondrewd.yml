@@ -1,5 +1,6 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile]
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: bondrewd
-- !<mobzy:sounds>
+sounds: {}

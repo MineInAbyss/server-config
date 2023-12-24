@@ -1,10 +1,11 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     displayName: <dark_gray>Grim Ripper
     type: KNOWLEDGE_BOOK
     customModelData: 6
-- !<looty:disable_item_interactions>
-#- !<geary:events>
+disable_item_interactions: {}
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Grim Ripper
@@ -15,7 +16,7 @@
 #            radius: 3
 #            max: 1
 #            run:
-#            - !<geary:apply_potion_effects>
+#            apply_potion_effects:
 #              effects:
 #                - type: WEAKNESS
 #                  duration: 6s

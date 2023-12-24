@@ -1,4 +1,5 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:spawn.fuwagi ]
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ orth ]

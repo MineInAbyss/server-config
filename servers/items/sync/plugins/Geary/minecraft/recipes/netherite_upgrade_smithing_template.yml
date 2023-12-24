@@ -1,4 +1,5 @@
-- !<looty:set.recipes>
+namespaces: [geary, mobzy, looty]
+set.recipes:
   result:
     type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
   discoverRecipes: true

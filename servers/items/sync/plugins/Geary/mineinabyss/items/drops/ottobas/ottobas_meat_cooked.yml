@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#D8D8D8>Cooked Ottobas Meat
@@ -8,10 +9,10 @@
       - <#D4D4D4>Ottobas <yellow>flesh is now edible.
       - <white><i>This should be enough food
       - <white><i>to last for daaaaayyss!!
-- !<looty:food>
+food:
   saturation: 12.8
   hunger: 8
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

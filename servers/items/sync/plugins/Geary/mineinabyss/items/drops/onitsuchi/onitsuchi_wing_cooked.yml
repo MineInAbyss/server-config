@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#5C471D>Cooked Onitsuchi Wing
@@ -9,10 +10,10 @@
       - <yellow>Can also be acquired from cooking
       - <#705723>Raw Onitsuchi Meat<yellow>.
       - <#A9CCCA><i>This tastes delicious!
-- !<looty:food>
+food:
   saturation: 7.2
   hunger: 6
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

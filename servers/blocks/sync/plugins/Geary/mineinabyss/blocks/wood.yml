@@ -1,11 +1,12 @@
-- !<blocky:sound>
+namespaces: [geary, blocky, looty]
+sound:
   placeSound: blocky.wood.place
   breakSound: blocky.wood.break
   stepSound: blocky.wood.step
   hitSound: blocky.wood.hit
   fallSound: blocky.wood.fall
-- !<blocky:burnable>
-- !<blocky:breaking>
+burnable: {}
+breaking:
   baseDuration: 3s
   modifiers:
     heldItems:

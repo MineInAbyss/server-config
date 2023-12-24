@@ -1,11 +1,12 @@
-- !<geary:inherit>
+namespaces: [geary, mineinabyss, looty]
+inherit:
   from: [mineinabyss:sickle]
-- !<geary:set.item>
+set.item:
   item:
     displayName: <#63614E>Wooden Sickle
     type: WOODEN_HOE
     customModelData: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   group: "looty:wooden_sickle"
   recipes:
@@ -19,5 +20,5 @@
         | MM|
         | SM|
         |S  |
-- !<mineinabyss:sickle>
+sickle:
   radius: 1

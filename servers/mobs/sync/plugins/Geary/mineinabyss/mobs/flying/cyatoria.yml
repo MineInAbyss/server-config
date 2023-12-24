@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> cyatoria
-- !<mobzy:display_name> "<#3DDFFF>Cyatoria"
-- !<mobzy:death_loot>
+set.mythic_mob: cyatoria
+display_name: "<#3DDFFF>Cyatoria"
+death_loot:
   minExp: 35
   maxExp: 45
   drops:
@@ -17,4 +18,4 @@
       minAmount: 1
       maxAmount: 4
       dropChance: 0.7000
-- !<mobzy:sounds>
+sounds: {}

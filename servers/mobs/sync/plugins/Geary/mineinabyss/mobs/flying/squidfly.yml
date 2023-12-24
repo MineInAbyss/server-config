@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> squidfly
-- !<mobzy:display_name> "<#85512E>Squidfly"
-- !<mobzy:death_loot>
+set.mythic_mob: squidfly
+display_name: "<#85512E>Squidfly"
+death_loot:
   minExp: 12
   maxExp: 18
   drops:
@@ -12,4 +13,4 @@
         prefab: mineinabyss:squidfly_brain_cooked
       maxAmount: 1
       dropChance: 0.8000
-- !<mobzy:sounds>
+sounds: {}

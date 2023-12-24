@@ -1,11 +1,12 @@
-- !<geary:inherit>
+namespaces: [geary, mineinabyss, looty]
+inherit:
   from: [mineinabyss:sickle]
-- !<geary:set.item>
+set.item:
   item:
     displayName: <gray>Iron Sickle
     type: IRON_HOE
     customModelData: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<shaped>
@@ -18,5 +19,5 @@
         | MM|
         | SM|
         |S  |
-- !<mineinabyss:sickle>
+sickle:
   radius: 2

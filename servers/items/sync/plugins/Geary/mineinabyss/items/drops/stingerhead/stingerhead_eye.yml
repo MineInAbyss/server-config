@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: FERMENTED_SPIDER_EYE
     displayName: <#9C0F2C>Stingerhead Eye

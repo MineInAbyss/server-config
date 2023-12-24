@@ -1,10 +1,11 @@
-- !<looty:disable_item_interactions>
-- !<geary:set.item>
+namespaces: [geary, mineinabyss, looty]
+disable_item_interactions: {}
+set.item:
   item:
     displayName: Grappling Hook
     type: GOLDEN_HOE
     customModelData: 1
-- !<mineinabyss:grappling_hook>
+grappling_hook:
   range: 200
   hookSpeed: 2.0
   pullSpeed: 2.0

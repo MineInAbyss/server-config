@@ -1,10 +1,11 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:axolotl
   # creatureType: WATER_CREATURE
-- !<mobzy:display_name> "<#C8C8C8>Hisomukuro"
-- !<mobzy:set.modelengine-model>
+display_name: "<#C8C8C8>Hisomukuro"
+set.modelengine-model:
   modelId: hisomukuro
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 50
   movementSpeed: 0.6
   attackDamage: 35
@@ -13,7 +14,7 @@
   followRange: 40
   width: 2
   height: 2
-- !<geary:children>
+children:
   nameToComponents:
     blindness:
       - !<geary:apply> geary:potion_effects
@@ -25,13 +26,13 @@
     blindnessCondition:
       - !<geary:condition.chance>
         percentage: 0.6
-- !<geary:event.triggers>
+event.triggers:
   expressions:
     - other geary:event.touched this -> this child(blindness) other
-- !<geary:event.conditions>
+event.conditions:
   expressions:
     - any -> child(blindnessCondition) -> child(blindness)
-- !<mobzy:death_loot>
+death_loot:
   minExp: 200
   maxExp: 250
   drops:
@@ -48,12 +49,12 @@
         prefab: mineinabyss:hamashirama_raw
       minAmount: 1
       maxAmount: 4
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+sounds: {}
+set.pathfinders:
   targets:
     1: !<mobzy:target.attacker>
     2: !<mobzy:target.nearest_player>
   goals:
     1: !<minecraft:behavior.melee_attack>
       seeThroughWalls: true
-- !<mobzy:prevent_breeding>
+prevent_breeding: {}

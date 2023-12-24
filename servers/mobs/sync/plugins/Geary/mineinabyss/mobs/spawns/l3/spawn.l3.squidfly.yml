@@ -1,17 +1,18 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:squidfly
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerthree ]
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..5
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 30
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 6
   radius: 160
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 5..80
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - GRASS_BLOCK
     - PODZOL

@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: HEART_OF_THE_SEA
     displayName: <#2597D9>Steve Eye

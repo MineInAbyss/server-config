@@ -1,19 +1,20 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:inbyo
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 4..8
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ l2s2 ]
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 10
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.4
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 8
   radius: 160
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 4..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - BIRCH_LEAVES
     - OAK_LEAVES

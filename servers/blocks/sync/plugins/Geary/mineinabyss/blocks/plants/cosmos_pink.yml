@@ -1,14 +1,15 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: Cosmos Pink
     customModelData: 3011
-- !<geary:set.block>
+set.block:
   blockType: WIRE
   blockId: 11
-- !<blocky:info>
+info:
   blockModel: hmcmodels:block/nature/cosmos_pink
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:cosmos_pink

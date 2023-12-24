@@ -1,15 +1,16 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood, mineinabyss:ground_furniture]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Bamboo Table
     customModelData: 1008
-- !<blocky:furniture>
+furniture:
   interactionHitbox:
     width: 1.2
     height: 1.0
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:bamboo_table

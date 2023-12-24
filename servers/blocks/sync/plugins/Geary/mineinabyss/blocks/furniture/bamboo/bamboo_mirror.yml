@@ -1,13 +1,14 @@
-- !<geary:inherit>
-  from: [mineinabyss:wood, mineinabyss:ground_furniture]
-- !<geary:set.item>
+namespaces: [ geary, blocky, looty ]
+inherit:
+  from: [ mineinabyss:wood, mineinabyss:ground_furniture ]
+set.item:
   item:
     type: PAPER
     displayName: <white>Bamboo Mirror
     customModelData: 1004
-- !<blocky:furniture>
+furniture: { }
 
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:bamboo_mirror

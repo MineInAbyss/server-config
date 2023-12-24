@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: PAPER
     displayName: "<#b5955f>Haste Paste"
@@ -10,7 +11,7 @@
       - <yellow>If you think this tastes like a rotting brain,
       - <yellow> that's because it is....
       - <#b5955f><i>It's mushy, but why is it also crunchy?
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:haste_paste

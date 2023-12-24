@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: PUFFERFISH
     displayName: <#0357AB>Billabonk Sac

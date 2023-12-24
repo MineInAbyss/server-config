@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: POTION
     displayName: "<#b5955f>Haste Potion"
@@ -10,7 +11,7 @@
     itemFlags:
       - HIDE_POTION_EFFECTS
       - HIDE_ENCHANTS
-- !<looty:food>
+food:
   hunger: 0
   saturation: 0
   replacement:
@@ -18,7 +19,7 @@
   effectList:
     - type: FAST_DIGGING
       duration: 8m
-- !<looty:set.potion_mixes>
+set.potion_mixes:
   potionmixes:
     - !<potionmix>
       ingredient:

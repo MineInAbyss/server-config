@@ -1,14 +1,15 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:axolotl
  # creatureType: WATER_CREATURE
-- !<mobzy:display_name> "<#257BEB>Demonfish"
-- !<mobzy:set.modelengine-model>
+display_name: "<#257BEB>Demonfish"
+set.modelengine-model:
   modelId: demonfish
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 20
   movementSpeed: 1.2
   followRange: 20
-- !<mobzy:death_loot>
+death_loot:
   minExp: 15
   maxExp: 20
   drops:
@@ -16,11 +17,11 @@
         prefab: mineinabyss:demonfish_raw
       cooked:
         prefab: mineinabyss:demonfish_cooked
-- !<mobzy:sounds>
-- !<mobzy:bucketable>
+sounds: {}
+bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:demonfish_bucket
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false
-- !<mobzy:prevent_breeding>
+prevent_breeding: {}

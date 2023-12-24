@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <#825711>Habo's Hat
     lore:
@@ -8,5 +9,5 @@
     customModelData: 203
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<looty:hat>
-- !<looty:disable_item_interactions>
+hat: {}
+disable_item_interactions: {}

@@ -1,15 +1,16 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: <#33404d>Noticeboard Okibo
     customModelData: 1032
-- !<blocky:sound>
+sound:
   placeSound: block.wood.place
   breakSound: block.wood.break
   stepSound: block.wood.step
   hitSound: block.wood.hit
   fallSound: block.wood.fall
-- !<blocky:furniture>
+furniture:
   properties:
     brightness:
       blockLight: 15
@@ -22,7 +23,7 @@
   interactionHitbox:
     width: 2
     height: 0.5
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:noticeboard_okibo

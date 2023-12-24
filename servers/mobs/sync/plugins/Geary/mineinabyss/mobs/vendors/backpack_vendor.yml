@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty, mineinabyss]
+inherit:
   from: [mineinabyss:npc]
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: guildmaster
-- !<mineinabyss:shopkeeper>
+shopkeeper:
   name: "Backpack Vendor"
   menu: "Backpack Vendor"
   selling:

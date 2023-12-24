@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: INK_SAC
     displayName: <#A9CCCA>Kazura Squid Ink Sac

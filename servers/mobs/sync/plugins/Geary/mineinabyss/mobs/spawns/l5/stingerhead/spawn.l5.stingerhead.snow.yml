@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:spawn.stingerhead.base ]
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ stingerheadsnow, stingerheadnestcave ]
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - DEAD_BRAIN_CORAL_BLOCK
     - DEAD_FIRE_CORAL_BLOCK

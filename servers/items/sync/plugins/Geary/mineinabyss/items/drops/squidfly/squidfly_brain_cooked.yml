@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#85512E>Cooked Squidfly Brain
@@ -8,10 +9,10 @@
       - <yellow>in the <green>Great Fault<yellow>.
       - <#C27643><i>Perhaps I will become smarter
       - <#C27643><i>if I consume this brain?
-- !<looty:food>
+food:
   saturation: 6
   hunger: 5
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

@@ -1,16 +1,17 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:uibuta
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..2
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 10
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 2
   radius: 192
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 5..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - WATER
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerfour ]

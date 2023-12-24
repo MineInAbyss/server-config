@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: POLISHED_BLACKSTONE_BUTTON
     displayName: <#454545>Hashofu Body
@@ -8,4 +9,4 @@
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>Seems useless by itself.
       - <#595959><i>Perhaps I should look for a vendor?
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

@@ -1,4 +1,5 @@
-- !<blocky:breaking>
+namespaces: [geary, blocky, looty]
+breaking:
   baseDuration: 15s
   modifiers:
     heldItems:

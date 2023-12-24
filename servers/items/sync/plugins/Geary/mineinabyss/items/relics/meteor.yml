@@ -1,18 +1,19 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 3
-#- !<geary:events>
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Explosion
 #      length: 2s
 #      run:
 #        - !<on.parent>
-#          - !<geary:meteor>
+#          meteor:
 #            events:
 #              projectileLand:
-#                - !<geary:explode>
+#                explode:
 #                  power: 2
 #                  breakBlocks: true
 #                  at: !<entity.location>

@@ -1,17 +1,18 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:snow]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: Snow Tiles
     customModelData: 2051
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 50
-- !<blocky:info>
+info:
   blockModel: "mineinabyss:block/snow/snow_tiles"
 
-- !<blocky:drops>
+drops:
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true
   drops:

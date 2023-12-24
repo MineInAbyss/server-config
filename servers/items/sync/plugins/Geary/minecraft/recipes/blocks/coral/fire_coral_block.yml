@@ -1,4 +1,5 @@
-- !<looty:set.recipes>
+namespaces: [geary, mobzy, looty]
+set.recipes:
   discoverRecipes: true
   result:
     type: FIRE_CORAL_BLOCK

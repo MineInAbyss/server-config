@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: BLACK_WOOL
     displayName: <#3D3D3D>Inbyo Fur
@@ -7,4 +8,4 @@
       - <yellow>Aquired by skinning an <#636363>Inbyo
       - <yellow>in the <green>Inverted Forest<yellow>.
       - <#B5B5B5><i>This stench is nauseating...
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

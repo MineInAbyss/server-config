@@ -1,16 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:npc]
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: deathknight
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 2048
   movementSpeed: 0
   attackDamage: 60
   followRange: 10
   width: 2
   height: 4
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
-- !<mobzy:death_loot>
+sounds: {}
+set.pathfinders: {}
+death_loot:
   minExp: 1000
   maxExp: 1000

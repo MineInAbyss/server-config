@@ -1,19 +1,20 @@
-- !<mobzy:spawn_regions>
+namespaces: [geary, mobzy, looty]
+spawn_regions:
   keys: [ layerfive ]
-- !<mobzy:spawn.type>
+spawn.type:
   prefab: mineinabyss:ashimite
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 3..5
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 10
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.3
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 4
   radius: 128
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 5..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - SNOW_BLOCK
     - POWDER_SNOW

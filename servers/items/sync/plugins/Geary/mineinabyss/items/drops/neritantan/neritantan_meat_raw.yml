@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#BDBDBD>Raw Neritantan Meat
@@ -8,6 +9,6 @@
       - <yellow>found <yellow>deep in the caverns of the <green>Great Fault<yellow>.
       - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
       - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

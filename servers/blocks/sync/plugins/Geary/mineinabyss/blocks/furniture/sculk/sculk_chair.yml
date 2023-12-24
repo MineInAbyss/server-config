@@ -1,16 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:ground_furniture]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Sculk Chair
     customModelData: 1023
-- !<blocky:furniture>
+furniture:
   collisionHitbox:
     - location: { x: 0, y: 0, z: 0 }
-- !<blocky:seat>
+seat:
   heightOffset: 0.0
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:sculk_chair

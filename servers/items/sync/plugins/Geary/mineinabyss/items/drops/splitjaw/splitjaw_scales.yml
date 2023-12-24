@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: POPPED_CHORUS_FRUIT
     displayName: <#9A1CAD>Splitjaw Scales

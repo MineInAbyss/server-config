@@ -1,9 +1,10 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <dark_aqua>Charcoal Sand Ingot
     type: IRON_INGOT
     customModelData: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   group: "charcoal_sand_ingot"
   recipes:

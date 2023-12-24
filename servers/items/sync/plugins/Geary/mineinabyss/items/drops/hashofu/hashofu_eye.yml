@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: FIRE_CHARGE
     displayName: <#454545>Hashofu Eye
@@ -7,4 +8,4 @@
       - <yellow>Obtained by slaughtering a <#616161>Hashofu <yellow>in
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>There is a fire in his eyes.
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

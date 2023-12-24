@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: "<#D12B26>Raw Corpse-Weeper Meat"
@@ -8,6 +9,6 @@
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <red><i>It both smells and tastes horrible...
       - <red><i>Will cooking this help?
-- !<looty:food>
+food:
   saturation: 1.8
   hunger: 3

@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: GLOW_INK_SAC
     displayName: <#7D93FF>Kakatsumuri Glowing Tip

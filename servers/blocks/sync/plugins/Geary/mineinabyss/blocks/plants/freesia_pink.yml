@@ -1,14 +1,15 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: Freesia Pink
     customModelData: 3014
-- !<geary:set.block>
+set.block:
   blockType: WIRE
   blockId: 14
-- !<blocky:info>
+info:
   blockModel: hmcmodels:block/nature/freesia_pink
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:freesia_pink

@@ -1,6 +1,7 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:spawn.neritantan ]
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerthree ]
-- !<mobzy:check.spawn.delay>
+check.spawn.delay:
   attemptEvery: 12t

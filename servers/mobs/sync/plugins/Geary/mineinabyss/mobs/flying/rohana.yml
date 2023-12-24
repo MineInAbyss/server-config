@@ -1,15 +1,16 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive_flying]
-- !<mobzy:spawn.position> GROUND
-- !<geary:set.mythic_mob> rohana
-- !<mobzy:display_name> "Rohana"
-- !<mobzy:set.attributes>
+spawn.position: GROUND
+set.mythic_mob: rohana
+display_name: "Rohana"
+set.attributes:
   maxHealth: 10
   flyingSpeed: 0.2
   attackDamage:
   width: 0.8000
   height: 0.9
-- !<mobzy:death_loot>
+death_loot:
   minExp: 12
   maxExp: 18
   drops:
@@ -21,4 +22,4 @@
         prefab: mineinabyss:rohana_tail
       maxAmount: 2
       dropChance: 0.4000
-- !<mobzy:sounds>
+sounds: {}

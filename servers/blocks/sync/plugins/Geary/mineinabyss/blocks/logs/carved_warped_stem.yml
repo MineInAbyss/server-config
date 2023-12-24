@@ -1,20 +1,21 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Carved Warped Stem
     customModelData: 2028
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 26
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/logs/carved_warped_stem
-- !<blocky:directional>
+directional:
   yBlock: mineinabyss:carved_warped_stem_y
   xBlock: mineinabyss:carved_warped_stem_x
   zBlock: mineinabyss:carved_warped_stem_z
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:carved_warped_stem

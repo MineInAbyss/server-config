@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: RABBIT_FOOT
     displayName: "<#E0E0E0>Fuwagi Foot"

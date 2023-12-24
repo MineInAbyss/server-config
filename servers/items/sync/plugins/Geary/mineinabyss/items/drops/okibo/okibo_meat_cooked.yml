@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#10DEA7>Cooked Okibo Meat
@@ -11,10 +12,10 @@
       - <yellow>The <gold>GuildHQ Head Chef <yellow>butchers
       - <yellow>the <#11E8AF>Okibo <yellow>they arrive on
       - <yellow>and prepare a giant feast for all.
-- !<looty:food>
+food:
   saturation: 12.8
   hunger: 8
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

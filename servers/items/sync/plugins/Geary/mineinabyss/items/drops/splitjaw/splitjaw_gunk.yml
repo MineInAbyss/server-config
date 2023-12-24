@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: SLIME_BALL
     displayName: <#38E016>Splitjaw Gunk

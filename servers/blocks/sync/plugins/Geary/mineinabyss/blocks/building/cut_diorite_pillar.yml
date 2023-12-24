@@ -1,21 +1,22 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:stone]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Cut Diorite Pillar
     customModelData: 2034
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 29
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/building/cut_diorite_pillar
-- !<blocky:directional>
+directional:
   yBlock: mineinabyss:cut_diorite_pillar_y
   xBlock: mineinabyss:cut_diorite_pillar_x
   zBlock: mineinabyss:cut_diorite_pillar_z
 
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:cut_diorite_pillar

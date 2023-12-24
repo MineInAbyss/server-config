@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: ENDER_EYE
     displayName: "<#D12B26>Corpse-Weeper Eye"
@@ -7,4 +8,4 @@
       - <yellow>Rarely dropped from <#FFF34E>Corpse-Weepers
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <red><i>It feels like it's staring into your soul...
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

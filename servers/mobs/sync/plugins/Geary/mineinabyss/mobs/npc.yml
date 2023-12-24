@@ -1,13 +1,14 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:pig
-- !<mobzy:set.attributes>
+set.attributes:
   followRange: 10
   movementSpeed: 0.0
-- !<mobzy:important>
-- !<mobzy:sounds>
-- !<mobzy:disable_mob_interactions>
-- !<mobzy:prevent_riding>
-- !<mobzy:set.pathfinders>
+important: {}
+sounds: {}
+disable_mob_interactions: {}
+prevent_riding: {}
+set.pathfinders:
   goals:
     1: !<minecraft:behavior.look_at_player>
       startChance: 1.0

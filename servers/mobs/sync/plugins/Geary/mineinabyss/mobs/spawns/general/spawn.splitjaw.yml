@@ -1,10 +1,11 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:splitjaw
-- !<mobzy:spawn.position> AIR
-- !<mobzy:spawn.priority>
+spawn.position: AIR
+spawn.priority:
   priority: 0.8
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 1
   radius: 256
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 10..4096

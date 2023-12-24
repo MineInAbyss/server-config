@@ -1,16 +1,17 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:kazura
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..3
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 1
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.6
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 6
   radius: 256
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 3..50
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - WATER

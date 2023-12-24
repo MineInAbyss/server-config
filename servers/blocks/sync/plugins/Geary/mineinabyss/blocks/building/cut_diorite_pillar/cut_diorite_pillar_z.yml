@@ -1,9 +1,10 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:cut_diorite_pillar]
-- !<blocky:directional>
+directional:
   parentBlock: mineinabyss:cut_diorite_pillar
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 31
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/building/cut_diorite_pillar

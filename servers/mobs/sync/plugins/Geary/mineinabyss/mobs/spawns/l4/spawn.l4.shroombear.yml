@@ -1,16 +1,17 @@
-- !<mobzy:spawn_regions>
+namespaces: [geary, mobzy, looty]
+spawn_regions:
   keys: [ layerfour ]
-- !<mobzy:spawn.type>
+spawn.type:
   prefab: mineinabyss:shroombear
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..3
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 10
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 6
   radius: 128
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 5..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - GRASS_BLOCK

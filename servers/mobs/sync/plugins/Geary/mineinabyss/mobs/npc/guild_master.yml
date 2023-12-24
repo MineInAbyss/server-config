@@ -1,5 +1,6 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, mineinabyss]
+inherit:
   from: [mineinabyss:npc]
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: guildmaster
-- !<mineinabyss:guildmaster>
+guildmaster: {}

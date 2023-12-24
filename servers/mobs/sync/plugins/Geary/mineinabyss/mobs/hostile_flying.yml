@@ -1,2 +1,3 @@
-- !<mobzy:set.burn_in_day> false
-- !<mobzy:disable_right_click>
+namespaces: [geary, mobzy, looty]
+set.burn_in_day: false
+disable_right_click: {}

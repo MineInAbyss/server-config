@@ -1,15 +1,16 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: PAPER
     customModelData: 124
     displayName: <dark_aqua>Star Compass Needle
     lore:
       - <dark_green>Used to craft a <#447881>Star Compass
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<shapeless>
       items:
         - prefab: mineinabyss:madokajack_scales
         - prefab: mineinabyss:kakatsumuri_glowing_tip
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

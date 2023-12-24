@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: EGG
     displayName: <#613F0C>Hammerbeak Egg

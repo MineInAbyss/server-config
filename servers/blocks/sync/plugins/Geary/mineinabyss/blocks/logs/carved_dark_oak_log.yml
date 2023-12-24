@@ -1,20 +1,21 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Carved Dark Oak Log
     customModelData: 2023
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 11
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/logs/carved_dark_oak_log
-- !<blocky:directional>
+directional:
   yBlock: mineinabyss:carved_dark_oak_log_y
   xBlock: mineinabyss:carved_dark_oak_log_x
   zBlock: mineinabyss:carved_dark_oak_log_z
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:carved_dark_oak_log

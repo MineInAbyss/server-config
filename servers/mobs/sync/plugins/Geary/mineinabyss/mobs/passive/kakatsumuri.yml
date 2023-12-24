@@ -1,16 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive]
-- !<mobzy:display_name> "<#7D93FF>Kakatsumuri"
-- !<mobzy:set.modelengine-model>
+display_name: "<#7D93FF>Kakatsumuri"
+set.modelengine-model:
   modelId: kakatsumuri
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 5
   movementSpeed: 0.2000
   knockbackResistance:
   followRange: 20
   width: 0.6000
   height: 0.4000
-- !<mobzy:death_loot>
+death_loot:
   minExp: 5
   maxExp: 15
   drops:
@@ -22,8 +23,8 @@
         prefab: mineinabyss:kakatsumuri_glowing_tip
       maxAmount: 1
       dropChance: 0.9000
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+sounds: {}
+set.pathfinders:
   override: true
   goals:
     1: !<minecraft:behavior.float>

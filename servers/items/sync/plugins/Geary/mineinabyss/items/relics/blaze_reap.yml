@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 2
@@ -8,22 +9,22 @@
       - <#C6CC8A>which causes ongoing explosions
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
-- !<looty:disable_item_interactions>
-#- !<geary:explosion_resistant>
+disable_item_interactions: {}
+#explosion_resistant:
 #- !<relation>
 #  data: !<geary:cooldown>
 #    name: <#617B94><b>Explosion
 #    length: 2s
 #  to: geary:explodable
-#- !<geary:explodable>
+#explodable:
 #  size: 10
 #  breakBlocks: true
-#- !<geary:strength>
+#strength:
 #  amount: 3
-#- !<geary:events>
+#events:
 #  geary:item_left_click:
-#    - - !<geary:explode>
-#      - !<geary:find_location>
+#    - explode:
+#      find_location:
 #        at: !<player.target_block>
 #          allowAir: true
 #          maxDist: 10

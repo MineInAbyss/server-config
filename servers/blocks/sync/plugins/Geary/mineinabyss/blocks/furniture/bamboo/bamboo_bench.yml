@@ -1,6 +1,7 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood, mineinabyss:ground_furniture]
-- !<geary:set.item>
+set.item:
   item:
     type: TIPPED_ARROW
     displayName: <white>Bamboo Bench
@@ -8,15 +9,15 @@
     color: 255, 255, 255
     itemFlags:
       - HIDE_DYE
-- !<blocky:seat>
+seat:
   heightOffset: 0.1
-- !<blocky:furniture>
+furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
     - location: { x: 0, y: 0, z: 0 }
     - location: { x: -1, y: 0, z: 0 }
     - location: { x: 1, y: 0, z: 0 }
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:bamboo_bench

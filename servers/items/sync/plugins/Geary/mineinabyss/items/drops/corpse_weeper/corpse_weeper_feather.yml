@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: FEATHER
     displayName: "<#D12B26>Corpse-Weeper Feather"

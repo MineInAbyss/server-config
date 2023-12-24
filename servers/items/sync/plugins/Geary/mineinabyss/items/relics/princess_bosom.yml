@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     displayName: <#C13523><b>Princess Bosom
     type: KNOWLEDGE_BOOK
@@ -10,15 +11,15 @@
       - <#D2D489>pressure is applied to it.
       - <#EDEEB9><i>Can be used to give you
       - <#EDEEB9><i>that extra energy boost.
-- !<looty:disable_item_interactions>
-#- !<geary:events>
+disable_item_interactions: {}
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Princess Bosom
 #      length: 10s
 #      run:
 #        - !<on.parent>
-#          - !<geary:apply_potion_effects>
+#          apply_potion_effects:
 #            effects:
 #            - type: SPEED
 #              duration: 5s

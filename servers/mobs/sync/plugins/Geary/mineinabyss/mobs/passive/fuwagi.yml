@@ -1,14 +1,15 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive]
-- !<mobzy:display_name> "<#E0E0E0>Fuwagi"
-- !<mobzy:set.modelengine-model>
+display_name: "<#E0E0E0>Fuwagi"
+set.modelengine-model:
   modelId: fuwagi
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 10
   movementSpeed: 0.2500
   width: 1
   height: 1
-- !<mobzy:death_loot>
+death_loot:
   minExp: 10
   maxExp: 16
   drops:
@@ -24,7 +25,7 @@
     - item:
         prefab: mineinabyss:fuwagi_hide
       dropChance: 0.4000
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.fuwagi.ambient
     category: NEUTRAL
@@ -34,5 +35,5 @@
   hurt:
     sound: mineinabyss:entity.fuwagi.hurt
     category: NEUTRAL
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false

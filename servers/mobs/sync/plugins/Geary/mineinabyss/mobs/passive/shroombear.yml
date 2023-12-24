@@ -1,15 +1,16 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive]
-- !<mobzy:display_name> "<#85562D>Shroombear"
-- !<mobzy:set.modelengine-model>
+display_name: "<#85562D>Shroombear"
+set.modelengine-model:
   modelId: shroombear
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 25
   movementSpeed: 0.2
   knockbackResistance: 0.05
   width: 0.7
   height: 0.7
-- !<mobzy:death_loot>
+death_loot:
   minExp: 15
   maxExp: 20
   drops:
@@ -23,7 +24,7 @@
         prefab: mineinabyss:parasitic_watershrooms
       maxAmount: 2
       dropChance: 0.5000
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.shroombear.ambient
     category: NEUTRAL
@@ -33,7 +34,7 @@
   hurt:
     sound: mineinabyss:entity.shroombear.hurt
     category: NEUTRAL
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false
   goals:
     1: !<minecraft:behavior.float>

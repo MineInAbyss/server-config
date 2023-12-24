@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: BLAZE_ROD
     displayName: <#C42D2D>Virinsipede Antlers

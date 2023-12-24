@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive_flying]
-- !<geary:set.mythic_mob> hashofu
-- !<mobzy:display_name> "<#454545>Hashofu"
-- !<mobzy:death_loot>
+set.mythic_mob: hashofu
+display_name: "<#454545>Hashofu"
+death_loot:
   minExp: 12
   maxExp: 18
   drops:
@@ -19,4 +20,4 @@
         prefab: mineinabyss:hashofu_body
       minAmount: 1
       maxAmount: 3
-- !<mobzy:sounds>
+sounds: {}

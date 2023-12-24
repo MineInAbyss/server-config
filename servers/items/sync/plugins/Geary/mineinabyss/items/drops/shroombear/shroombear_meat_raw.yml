@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#85562D>Shroombear Meat
@@ -10,6 +11,6 @@
       - <yellow>is edible and dark in colour.
       - <#694600><i>Might smell like excrement
       - <#694600><i>if I don't clean it well...
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

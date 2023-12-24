@@ -1,11 +1,12 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: <#33404d>Windmill
     customModelData: 1002
-- !<looty:disable_item_interactions>
-- !<blocky:modelengine>
+disable_item_interactions: {}
+modelengine:
   modelId: windmill
-- !<blocky:furniture>
+furniture:
   collisionHitbox:
     - location: { x: 0, y: 0, z: 0 }

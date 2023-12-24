@@ -1,23 +1,24 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:ground_furniture]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Sculk Big Table
     customModelData: 1022
-- !<blocky:sound>
+sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-- !<blocky:furniture>
+furniture:
   collisionHitbox:
     - location: { x: -1, y: 0, z: 0 }
     - location: { x: 1, y: 0, z: 0 }
     - location: { x: 0, y: 0, z: 1 }
     - location: { x: -1, y: 0, z: 1 }
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:sculk_big_table

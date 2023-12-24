@@ -1,15 +1,16 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: <#33404d>Grave
     customModelData: 1033
-- !<blocky:sound>
+sound:
   placeSound: block.stone.place
   breakSound: block.stone.break
   stepSound: block.stone.step
   hitSound: block.stone.hit
   fallSound: block.stone.fall
-- !<blocky:furniture>
+furniture:
   properties:
     brightness:
       blockLight: 15

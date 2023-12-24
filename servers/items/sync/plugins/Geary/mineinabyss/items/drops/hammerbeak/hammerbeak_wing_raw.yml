@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#613F0C>Raw Hammerbeak Wing
@@ -9,6 +10,6 @@
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <#A9CCCA><i>This meat seems delicious
       - <#A9CCCA><i>if cooked properly!
-- !<looty:food>
+food:
   saturation: 1.2
   hunger: 2

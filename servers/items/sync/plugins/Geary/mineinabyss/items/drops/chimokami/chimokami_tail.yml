@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: RED_WOOL
     displayName: "<#D63624>Chimokami Tail"
@@ -8,4 +9,4 @@
       - <yellow>seen <#D63624>Chimokami<yellow>. These foxlike beasts
       - <yellow>make their dens in the darker areas of
       - <yellow>the <green>Forest of Temptation<yellow>.
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

@@ -1,7 +1,8 @@
-- !<blocky:directional>
+namespaces: [geary, blocky, looty]
+directional:
   parentBlock: mineinabyss:carved_jungle_log
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 14
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/logs/carved_jungle_log

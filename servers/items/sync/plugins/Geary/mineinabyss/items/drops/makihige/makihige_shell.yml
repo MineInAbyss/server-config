@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: OBSIDIAN
     displayName: <#FF771C>Makihige Shell
@@ -10,4 +11,4 @@
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#5221A6><i>It used to be the home to a
       - <#5221A6><i>Makihige. Not anymore...
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

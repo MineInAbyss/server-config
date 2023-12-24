@@ -1,9 +1,10 @@
-- !<geary:set.item>
+namespaces: [geary, looty, blocky, bonfire, mobzy]
+set.item:
   item:
     displayName: <#FF9D26>Bonfire
     type: CAMPFIRE
     customModelData: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<shaped>
@@ -18,16 +19,17 @@
         |SSS|
         |SFS|
         |SCS|
-- !<bonfire:bonfire>
+important: {}
+bonfire:
   states:
     unlit: mineinabyss:bonfire
     lit: mineinabyss:bonfire_lit
     set: mineinabyss:bonfire_self_lit
-- !<blocky:furniture>
+furniture:
   interactionHitbox:
     width: 1.0
     height: 1.8
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:bonfire

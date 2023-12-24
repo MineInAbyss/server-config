@@ -1,8 +1,9 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     displayName: <gold>Ghost Seek
     type: CARVED_PUMPKIN
     customModelData: 8
-#- !<mineinabyss:ghost_seek>
-- !<looty:hat>
-- !<looty:disable_item_interactions>
+#ghost_seek:
+hat: {}
+disable_item_interactions: {}

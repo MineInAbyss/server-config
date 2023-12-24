@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> corpse_weeper
-- !<mobzy:display_name> "<#D12B26>Corpse-Weeper"
-- !<mobzy:death_loot>
+set.mythic_mob: corpse_weeper
+display_name: "<#D12B26>Corpse-Weeper"
+death_loot:
   minExp: 70
   maxExp: 90
   drops:
@@ -21,7 +22,7 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.9000
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.corpseweeper.ambient
     category: HOSTILE

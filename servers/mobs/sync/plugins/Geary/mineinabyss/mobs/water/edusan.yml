@@ -1,13 +1,14 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:cod
  # creatureType: WATER_CREATURE
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: edusan
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 20
   movementSpeed: 0.3
   followRange: 20
-- !<mobzy:death_loot>
+death_loot:
   minExp: 15
   maxExp: 20
   drops:
@@ -15,6 +16,6 @@
         prefab: mineinabyss:demonfish_raw
       cooked:
         prefab: mineinabyss:demonfish_cooked
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+sounds: {}
+set.pathfinders:
   override: false

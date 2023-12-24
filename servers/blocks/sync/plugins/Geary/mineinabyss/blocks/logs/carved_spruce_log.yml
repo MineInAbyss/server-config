@@ -1,21 +1,22 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Carved Spruce Log
     customModelData: 2027
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 23
 
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/logs/carved_spruce_log
-- !<blocky:directional>
+directional:
   yBlock: mineinabyss:carved_spruce_log_y
   xBlock: mineinabyss:carved_spruce_log_x
   zBlock: mineinabyss:carved_spruce_log_z
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:carved_spruce_log

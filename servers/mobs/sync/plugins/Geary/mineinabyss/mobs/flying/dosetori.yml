@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> dosetori
-- !<mobzy:display_name> "<#FFF821>Dosetori"
-- !<mobzy:death_loot>
+set.mythic_mob: dosetori
+display_name: "<#FFF821>Dosetori"
+death_loot:
   minExp: 60
   maxExp: 100
   drops:
@@ -22,7 +23,7 @@
       minAmount: 1
       maxAmount: 3
       dropChance: 0.8000
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.dosetori.ambient
     category: HOSTILE

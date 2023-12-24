@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [ geary, looty, mineinabyss ]
+set.item:
   item:
     displayName: <#b74b4d><b>Mitty Token
     lore:
@@ -8,5 +9,5 @@
       - <#ff686b>to buy random shit
     type: EMERALD
     customModelData: 2
-- !<looty:disable_item_interactions>
-- !<mineinabyss:mittytoken>
+disable_item_interactions: { }
+mittytoken: { }

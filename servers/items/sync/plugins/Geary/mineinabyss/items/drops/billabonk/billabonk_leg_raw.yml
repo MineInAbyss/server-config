@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#0357AB>Raw Billabonk Leg
@@ -7,6 +8,6 @@
       - <yellow>Dropped by <#0357AB>Billabonks <yellow>in
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <#0357AB><i>Do the stanky leg
-- !<looty:food>
+food:
   saturation: 0.4
   hunger: 2

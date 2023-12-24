@@ -1,16 +1,17 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:rohana
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..4
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 20
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.4
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 12
   radius: 128
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 3..20
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - WATER

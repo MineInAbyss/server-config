@@ -1,28 +1,29 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: KNOWLEDGE_BOOK
     displayName: <dark_aqua>Zephyr Disk
     customModelData: 5
-- !<looty:disable_item_interactions>
-#- !<geary:events>
+disable_item_interactions: {}
+#events:
 #  rightClick:
 #    - !<cooldown>
 #      name: Blow
 #      length: 20s
 #      run:
 #        - !<on.parent>
-#          - !<geary:particle>
+#          particle:
 #            at: !<player.location>
 #              #maxDist: 5
 #            type: CLOUD
 #            count: 100
 #            speed: 0.2
-#          - !<geary:sound>
+#          sound:
 #            sound: entity.generic.extinguish_fire
 #          - !<on.nearby>
 #            radius: 10
 #            run:
-#              - !<geary:push>
+#              push:
 #                source: !<source.location>
 #                force: 1.5
 #                yOffset: 0.5

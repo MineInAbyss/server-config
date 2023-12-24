@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#3D3D3D>Raw Inbyo Meat
@@ -7,6 +8,6 @@
       - <yellow>Obtained from slaying an <#636363>Inbyo
       - <yellow>in the <green>Inverted Forest.
       - <#B5B5B5><i>Doesn't look very tasty...
-- !<looty:food>
+food:
   saturation: 1.8
   hunger: 3

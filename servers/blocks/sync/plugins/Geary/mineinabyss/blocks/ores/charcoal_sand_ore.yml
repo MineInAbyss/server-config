@@ -1,22 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:ore, mineinabyss:stone]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Charcoal Sand Ore
     customModelData: 2001
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 1
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/ores/charcoal_sand_ore
-- !<geary:set.block>
-  blockType: NOTEBLOCK
-  blockId: 1
-- !<blocky:info>
-  blockModel: mineinabyss:block/ores/charcoal_sand_ore
-
-- !<blocky:drops>
+drops:
   acceptedToolTypes: [ PICKAXE ]
   
   

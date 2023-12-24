@@ -1,20 +1,21 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <white>Carved Birch Log
     customModelData: 2021
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 5
-- !<blocky:info>
+info:
   blockModel: mineinabyss:block/logs/carved_birch_log
-- !<blocky:directional>
+directional:
   yBlock: mineinabyss:carved_birch_log_y
   xBlock: mineinabyss:carved_birch_log_x
   zBlock: mineinabyss:carved_birch_log_z
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:carved_birch_log

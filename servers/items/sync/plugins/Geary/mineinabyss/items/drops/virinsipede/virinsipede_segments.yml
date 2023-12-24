@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: BONE_MEAL
     displayName: <#C42D2D>Virinsipede Segments

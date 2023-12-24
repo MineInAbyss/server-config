@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: "<#D12B26>Cooked Corpse-Weeper Meat"
@@ -7,10 +8,10 @@
       - <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers
       - <yellow>from the <green>Forest of Temptation<yellow>.
       - <red><i>This stench is awful but it tastes so good...
-- !<looty:food>
+food:
   saturation: 12.8
   hunger: 8
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

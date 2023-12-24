@@ -1,11 +1,12 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: POTION
     displayName: <gold>Black Flask
     customModelData: 1
     lore:
       - <green>placeholder..
-- !<geary:children>
+children:
   nameToComponents:
     flask:
       - !<geary:apply> geary:potion_effects
@@ -24,9 +25,9 @@
     flaskCondition:
       - !<geary:check.health>
         within: 2.0..200.0
-- !<geary:event.triggers>
+event.triggers:
   expressions:
     - other geary:event.ingested this -> this child(flask) other
-- !<geary:event.conditions>
+event.conditions:
   expressions:
     - any -> child(flaskCondition) -> child(flask)

@@ -1,9 +1,10 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <white>Horns of Albedo
     type: POTION
     customModelData: 210
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<looty:hat>
-- !<looty:disable_item_interactions>
+hat: {}
+disable_item_interactions: {}

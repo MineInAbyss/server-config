@@ -1,20 +1,21 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: KNOWLEDGE_BOOK
     displayName: <dark_gray>Tomorrow Signal
     customModelData: 12
-#- !<geary:events>
+#events:
 #  leftClick:
 #    - !<cooldown>
 #      name: Lightning Strike
 #      length: 2s
 #      run:
 #        - !<on.parent>
-#          - !<geary:smite>
+#          smite:
 #            at: !<player.target_block>
 #              maxDist: 15
 #              allowAir: false
-#          - !<geary:particle>
+#          particle:
 #            type: CLOUD
 #            count: 10
 #            speed: 0.2
@@ -27,6 +28,6 @@
 #      length: 2s
 #      run:
 #        - !<on.parent>
-#          - !<geary:toggle_storm>
+#          toggle_storm:
 #            at: !<player.location>
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

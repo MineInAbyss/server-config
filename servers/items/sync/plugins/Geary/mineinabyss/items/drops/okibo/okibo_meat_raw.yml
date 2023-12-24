@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#10DEA7>Raw Okibo Meat
@@ -8,6 +9,6 @@
       - <yellow>transportation of goods, <#11E8AF>Okibos
       - <yellow>are also a great source of food
       - <yellow>due to their large size.
-- !<looty:food>
+food:
   saturation: 1.8
   hunger: 3

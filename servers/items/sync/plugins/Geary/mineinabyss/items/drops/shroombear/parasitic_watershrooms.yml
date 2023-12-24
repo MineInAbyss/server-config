@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: WARPED_FUNGUS
     displayName: <#913188>Parasitic Watershrooms

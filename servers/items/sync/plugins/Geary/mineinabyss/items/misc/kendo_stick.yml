@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <white>Kendo Stick
     lore:
@@ -6,7 +7,7 @@
       - <gray>Blade Used For Practice.
     type: WOODEN_SWORD
     customModelData: 2
-- !<looty:set.recipes>
+set.recipes:
   recipes:
     - !<shaped>
       items:

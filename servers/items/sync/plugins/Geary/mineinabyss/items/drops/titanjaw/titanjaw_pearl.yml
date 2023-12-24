@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: GHAST_TEAR
     displayName: <#3C3B4A>Titanjaw Pearl

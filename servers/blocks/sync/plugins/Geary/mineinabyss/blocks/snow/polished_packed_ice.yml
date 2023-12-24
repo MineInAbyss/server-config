@@ -1,16 +1,17 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:snow]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: Polished Packed Ice
     customModelData: 2048
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 45
-- !<blocky:info>
+info:
   blockModel: "mineinabyss:block/snow/polished_packed_ice"
-- !<blocky:drops>
+drops:
   drops:
     - silkTouchedDrop:
         prefab: mineinabyss:charcoal_sand_ore

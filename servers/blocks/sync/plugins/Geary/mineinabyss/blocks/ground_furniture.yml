@@ -1,4 +1,5 @@
-- !<blocky:placable_on>
+namespaces: [geary, blocky, looty]
+placable_on:
   floor: true
   ceiling: false
   wall: false

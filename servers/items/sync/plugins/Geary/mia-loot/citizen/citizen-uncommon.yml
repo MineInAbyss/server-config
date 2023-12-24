@@ -1,4 +1,5 @@
-- !<mineinabyss:loot_table>
+namespaces: [ mineinabyss ]
+loot_table:
   pools:
     # Monster loot
     - rolls: !<minecraft:uniform> { min: 1, max: 2 }

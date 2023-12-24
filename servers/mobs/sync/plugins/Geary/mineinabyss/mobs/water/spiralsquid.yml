@@ -1,13 +1,14 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:squid
  # creatureType: WATER_CREATURE
-- !<mobzy:set.modelengine-model>
+set.modelengine-model:
   modelId: spiralsquid
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 20
   movementSpeed: 0.6
   followRange: 20
-- !<mobzy:death_loot>
+death_loot:
   minExp: 15
   maxExp: 20
   drops:
@@ -15,10 +16,10 @@
         prefab: mineinabyss:spiralsquid_raw
       cooked:
         prefab: mineinabyss:spiralsquid_cooked
-- !<mobzy:sounds>
-- !<mobzy:bucketable>
+sounds: {}
+bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:spiralsquid_bucket
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false

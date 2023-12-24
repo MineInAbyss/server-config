@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#c90076>Valentine's Chocolates
@@ -6,6 +7,6 @@
     lore:
       - <white>Obtained during the <#c90076>Valentine's Day <white>event.
       - <white>Can be traded at <green>Orth <white>or eaten.
-- !<looty:food>
+food:
   saturation: 3
   hunger: 4

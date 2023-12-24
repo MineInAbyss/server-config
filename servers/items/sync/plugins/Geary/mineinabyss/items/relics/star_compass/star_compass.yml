@@ -1,23 +1,24 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: PAPER
     customModelData: 125
     displayName: <dark_aqua>Star Compass
     lore:
       - <aqua>Points towards the center of the <green>Abyss
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<shapeless>
       items:
         - prefab: mineinabyss:star_compass_needle
         - prefab: mineinabyss:titanjaw_pearl
-- !<mineinabyss:starcompass>
-- !<geary:children>
+starcompass: {}
+children:
   nameToComponents:
     toggleStarCompassHud:
       - !<mineinabyss:toggle_starcompass_hud>
-- !<geary:event.triggers>
+event.triggers:
   expressions:
     - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

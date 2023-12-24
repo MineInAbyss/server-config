@@ -1,9 +1,10 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:spawn.splitjaw ]
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.3
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerone ]
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 1
   radius: 350

@@ -1,4 +1,5 @@
-- !<mineinabyss:loot_table>
+namespaces: [ mineinabyss ]
+loot_table:
   pools:
     - entries:
         - !<mineinabyss:item>

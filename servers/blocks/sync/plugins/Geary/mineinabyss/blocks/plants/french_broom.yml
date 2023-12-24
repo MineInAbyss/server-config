@@ -1,14 +1,15 @@
-- !<geary:set.item>
+namespaces: [geary, blocky, looty]
+set.item:
   item:
     type: PAPER
     displayName: French Broom
     customModelData: 3016
-- !<geary:set.block>
+set.block:
   blockType: WIRE
   blockId: 15
-- !<blocky:info>
+info:
   blockModel: hmcmodels:block/nature/french_broom
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:french_broom

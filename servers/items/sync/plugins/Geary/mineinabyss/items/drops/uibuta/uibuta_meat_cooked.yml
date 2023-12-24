@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#8F2222>Cooked Uibuta Meat
@@ -8,10 +9,10 @@
       - <yellow>the <#8F2222>Uibuta <yellow>flesh is now edible.
       - <#C42F2F><i>This should be enough food
       - <#C42F2F><i>to last for daaaaayyss!!
-- !<looty:food>
+food:
   saturation: 7.2
   hunger: 6
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>

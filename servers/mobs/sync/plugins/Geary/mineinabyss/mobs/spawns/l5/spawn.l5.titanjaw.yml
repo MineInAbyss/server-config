@@ -1,18 +1,19 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:titanjaw
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 1..2
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 20
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.3
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 5
   radius: 128
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 5..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - GRASS_BLOCK
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerfive ]

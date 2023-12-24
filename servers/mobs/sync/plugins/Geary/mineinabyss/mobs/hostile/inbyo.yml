@@ -1,9 +1,10 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [ mineinabyss:hostile ]
-- !<mobzy:display_name> "<#3D3D3D>Inbyo"
-- !<mobzy:set.modelengine-model>
+display_name: "<#3D3D3D>Inbyo"
+set.modelengine-model:
   modelId: inbyo
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 10
   movementSpeed: 0.4
   attackDamage: 8
@@ -12,7 +13,7 @@
   followRange: 64
   width: 1
   height: 3
-- !<mobzy:death_loot>
+death_loot:
   minExp: 35
   maxExp: 45
   drops:
@@ -24,7 +25,7 @@
       cooked:
         prefab: mineinabyss:inbyo_meat_cooked
       maxAmount: 2
-- !<mobzy:sounds>
+sounds:
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death:
     sound: mineinabyss:entity.inbyo.death
@@ -32,7 +33,7 @@
   hurt:
     sound: mineinabyss:entity.inbyo.hurt
     category: HOSTILE
-- !<geary:children>
+children:
   nameToComponents:
     poison:
       - !<geary:apply> geary:potion_effects
@@ -60,8 +61,7 @@
         item:
           type: SNOWBALL
           customModelData: 3
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   targets:
     1: !<mobzy:target.attacker>
     2: !<mobzy:target.nearest_player>

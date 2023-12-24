@@ -1,8 +1,9 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile_flying]
-- !<geary:set.mythic_mob> onitsuchi
-- !<mobzy:display_name> "<#5C471D>Onitsuchi"
-- !<mobzy:death_loot>
+set.mythic_mob: onitsuchi
+display_name: "<#5C471D>Onitsuchi"
+death_loot:
   minExp: 60
   maxExp: 80
   drops:
@@ -25,4 +26,4 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.5000
-- !<mobzy:sounds>
+sounds: {}

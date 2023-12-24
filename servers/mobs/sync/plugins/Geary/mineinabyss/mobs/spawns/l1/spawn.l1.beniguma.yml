@@ -1,19 +1,20 @@
-- !<mobzy:spawn.type>
+namespaces: [geary, mobzy, looty]
+spawn.type:
   prefab: mineinabyss:beniguma
-- !<mobzy:spawn.amount>
+spawn.amount:
   amount: 2..4
-- !<mobzy:spawn_regions>
+spawn_regions:
   keys: [ layerone ]
-- !<mobzy:spawn.spread>
+spawn.spread:
   radius: 10
-- !<mobzy:spawn.priority>
+spawn.priority:
   priority: 0.2
-- !<mobzy:check.spawn.local_group>
+check.spawn.local_group:
   max: 4
   radius: 150
-- !<mobzy:check.spawn.gap>
+check.spawn.gap:
   range: 4..4096
-- !<geary:check.block_type>
+check.block_type:
   allow:
     - GRASS_BLOCK
     - CRACKED_STONE_BRICKS

@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <#370391>Bondrewd's Helmet
     lore:
@@ -9,5 +10,5 @@
     customModelData: 201
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<looty:hat>
-- !<looty:disable_item_interactions>
+hat: {}
+disable_item_interactions: {}

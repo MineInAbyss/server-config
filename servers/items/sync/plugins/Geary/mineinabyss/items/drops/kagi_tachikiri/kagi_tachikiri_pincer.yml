@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: FLINT
     displayName: <#5468A8>Kagi Tachikiri Pincer

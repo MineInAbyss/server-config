@@ -1,21 +1,22 @@
-- !<geary:set.item>
+namespaces: [geary, looty, mineinabyss]
+set.item:
   item:
     type: GLASS
     displayName: Fear Flight
     # customModelData: 102
-#- !<geary:passive>
+#passive:
 #  - !<on.parent>
 #    - !<if>
 #      conditions:
-#        - !<geary:health>
+#        health:
 #          withinPercent: 0..0.4
 #      run:
-#        - !<geary:particle>
+#        particle:
 #          type: CLOUD
 #          offsetY: 1
 #          count: 3
 #          speed: 0
-#        - !<geary:apply_potion_effects>
+#        apply_potion_effects:
 #          effects:
 #            - type: SPEED
 #              duration: 3s

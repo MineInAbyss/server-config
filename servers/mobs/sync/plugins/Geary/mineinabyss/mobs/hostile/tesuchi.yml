@@ -1,15 +1,16 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:hostile]
-- !<mobzy:display_name> "<dark_green>Tesuchi"
-- !<mobzy:set.modelengine-model>
+display_name: "<dark_green>Tesuchi"
+set.modelengine-model:
   modelId: tesuchi
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 5
   movementSpeed: 0.1500
   attackDamage: 0
   width: 0.6000
   height: 0.6000
-- !<mobzy:death_loot>
+death_loot:
   minExp: 10
   maxExp: 15
   drops:
@@ -21,8 +22,8 @@
     - item:
         prefab: mineinabyss:tesuchi_tail
       maxAmount: 1
-- !<mobzy:sounds>
-- !<mobzy:set.pathfinders>
+sounds: {}
+set.pathfinders:
   targets:
     1: !<mobzy:target.attacker>
     2: !<mobzy:target.nearest_player>

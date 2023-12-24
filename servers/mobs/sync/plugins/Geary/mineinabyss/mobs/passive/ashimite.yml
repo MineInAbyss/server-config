@@ -1,6 +1,7 @@
-- !<geary:set.mythic_mob> ashimite
-- !<mobzy:display_name> "<#2597D9>Ashimite"
-- !<mobzy:modelengine.rideable>
+namespaces: [geary, mobzy, looty]
+set.mythic_mob: ashimite
+display_name: "<#2597D9>Ashimite"
+modelengine.rideable:
   steerItem:
     prefab: mineinabyss:demonfish_on_a_stick
-- !<mobzy:sounds>
+sounds: {}

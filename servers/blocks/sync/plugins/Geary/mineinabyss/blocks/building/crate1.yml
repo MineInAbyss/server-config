@@ -1,18 +1,19 @@
-- !<geary:inherit>
+namespaces: [geary, blocky, looty]
+inherit:
   from: [mineinabyss:wood]
-- !<geary:set.item>
+set.item:
   item:
     type: PAPER
     displayName: <#e6c186>Crate 1
     customModelData: 2018
-- !<geary:set.block>
+set.block:
   blockType: NOTEBLOCK
   blockId: 32
 
-- !<blocky:info>
+info:
   blockModel: "mineinabyss:block/building/crate1"
 
-- !<blocky:drops>
+drops:
   drops:
     - item:
         prefab: mineinabyss:crate1

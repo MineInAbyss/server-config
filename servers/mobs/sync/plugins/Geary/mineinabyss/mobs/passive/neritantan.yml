@@ -1,14 +1,15 @@
-- !<geary:inherit>
+namespaces: [geary, mobzy, looty]
+inherit:
   from: [mineinabyss:passive]
-- !<mobzy:display_name> "<#BDBDBD>Neritantan"
-- !<mobzy:set.modelengine-model>
+display_name: "<#BDBDBD>Neritantan"
+set.modelengine-model:
   modelId: neritantan
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 7
   movementSpeed: 0.2500
   width: 0.6000
   height: 0.6000
-- !<mobzy:death_loot>
+death_loot:
   minExp: 10
   maxExp: 15
   drops:
@@ -33,7 +34,7 @@
         type: SWEET_BERRIES
       maxAmount: 2
       dropChance: 0.3000
-- !<mobzy:sounds>
+sounds:
   ambient:
     sound: mineinabyss:entity.neritantan.ambient
     category: NEUTRAL
@@ -43,7 +44,7 @@
   hurt:
     sound: mineinabyss:entity.neritantan.hurt
     category: NEUTRAL
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false
   goals:
     1: !<minecraft:behavior.float>

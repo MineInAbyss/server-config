@@ -1,15 +1,16 @@
-- !<geary:set.entity_type>
+namespaces: [geary, mobzy, looty]
+set.entity_type:
   key: minecraft:squid
  # creatureType: WATER_CREATURE
-- !<mobzy:display_name> "<#A9CCCA>Kazura"
-- !<mobzy:set.modelengine-model>
+display_name: "<#A9CCCA>Kazura"
+set.modelengine-model:
   modelId: kazura
   scale: 2
-- !<mobzy:set.attributes>
+set.attributes:
   maxHealth: 5
   followRange: 10
   movementSpeed: 0.2
-- !<mobzy:death_loot>
+death_loot:
   minExp: 10
   maxExp: 15
   drops:
@@ -18,10 +19,10 @@
       minAmount: 1
       maxAmount: 2
       dropChance: 0.8000
-- !<mobzy:sounds>
-- !<mobzy:bucketable>
+sounds: {}
+bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:kazura_bucket
-- !<mobzy:set.pathfinders>
+set.pathfinders:
   override: false

@@ -1,10 +1,11 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <dark_green>Tesuchi Tail
     customModelData: 20
     lore:
       - <green><i>Yummy
-- !<looty:food>
+food:
   saturation: 1.5
   hunger: 3

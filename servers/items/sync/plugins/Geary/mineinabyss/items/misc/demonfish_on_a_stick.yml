@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: Demonfish on a Stick
     lore:
@@ -6,8 +7,8 @@
       - <yellow>That is if you can manage to sneak up on one
     type: CARROT_ON_A_STICK
     customModelData: 1
-- !<looty:disable_item_interactions>
-- !<looty:set.recipes>
+disable_item_interactions: {}
+set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:demonfish_on_a_stick

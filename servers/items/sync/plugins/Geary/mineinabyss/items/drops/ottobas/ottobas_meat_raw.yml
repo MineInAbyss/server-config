@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     type: APPLE
     displayName: <#D8D8D8>Raw Ottobas Meat
@@ -9,6 +10,6 @@
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <white><i>A thick layer of fat clings to the meat.
       - <white><i>Cooking it should help making it edible.
-- !<looty:food>
+food:
   saturation: 1.8
   hunger: 3

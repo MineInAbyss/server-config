@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mineinabyss, looty]
+set.item:
   item:
     type: PAPER
     displayName: <dark_aqua>Depth Meter
@@ -8,7 +9,7 @@
       - <aqua>track of their depth..
       - <#3f536c><i>Toggle between HUD
       - <#3f536c><i>and item based with right-click.
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<shaped>
@@ -21,15 +22,15 @@
         | G |
         |GCG|
         | G |
-- !<mineinabyss:depthmeter>
-- !<geary:children>
+depthmeter: {}
+children:
   nameToComponents:
     showDepth:
       - !<mineinabyss:show_depth>
     toggleDepthHud:
       - !<mineinabyss:toggle_depth_hud>
-- !<geary:event.triggers>
+event.triggers:
   expressions:
     - other geary:event.left_clicked this -> this child(showDepth) other
     - other geary:event.right_clicked this -> this child(toggleDepthHud) other
-- !<looty:disable_item_interactions>
+disable_item_interactions: {}

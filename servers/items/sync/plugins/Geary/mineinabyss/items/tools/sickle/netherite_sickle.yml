@@ -1,11 +1,12 @@
-- !<geary:inherit>
+namespaces: [geary, mineinabyss, looty]
+inherit:
   from: [mineinabyss:sickle]
-- !<geary:set.item>
+set.item:
   item:
     displayName: <#172929>Netherite Sickle
     type: NETHERITE_HOE
     customModelData: 1
-- !<looty:set.recipes>
+set.recipes:
   discoverRecipes: true
   recipes:
     - !<smithing_transform>
@@ -15,5 +16,5 @@
         prefab: mineinabyss:diamond_sickle
       addition:
         type: NETHERITE_INGOT
-- !<mineinabyss:sickle>
+sickle:
   radius: 4

@@ -1,9 +1,10 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: Blank Template Rune
     type: PAPER
     customModelData: 128
-- !<looty:set.recipes>
+set.recipes:
   result:
     prefab: mineinabyss:blank_template_rune
   discoverRecipes: true

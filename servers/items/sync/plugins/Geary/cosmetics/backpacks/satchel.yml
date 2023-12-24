@@ -1,4 +1,5 @@
-- !<geary:set.item>
+namespaces: [geary, mobzy, looty]
+set.item:
   item:
     displayName: <#FF9D26>Satchel
     type: POTION
@@ -6,5 +7,5 @@
     customModelData: 101
     itemFlags:
       - HIDE_POTION_EFFECTS
-- !<looty:disable_item_interactions>
-- !<looty:backpack>
+disable_item_interactions: {}
+backpack: {}
