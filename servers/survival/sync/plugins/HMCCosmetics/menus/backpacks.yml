@@ -10,7 +10,9 @@ items:
         - ""
         - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_backpack%"
         - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_backpack%"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
     cosmetic: backpack
     actions:
       on-equip:
@@ -26,7 +28,9 @@ items:
         - ""
         - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_satchel%"
         - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_satchel%"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
     cosmetic: satchel
     actions:
       on-equip:
@@ -42,7 +46,9 @@ items:
         - ""
         - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_backpack%"
         - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_backpack%"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
     cosmetic: neritantan_backpack
     actions:
       on-equip:
@@ -63,7 +69,9 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
     cosmetic: camper_backpack
     actions:
       on-equip:
@@ -79,7 +87,9 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
     cosmetic: miner_backpack
     actions:
       on-equip:
@@ -95,7 +105,9 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
-    type: cosmetic
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
     cosmetic: explorer_backpack
     actions:
       on-equip:
@@ -115,7 +127,9 @@ items:
         - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
         - ''
         - '<white>௱ <#E63946>You have not unlocked this item!'
-    type: cosmetic
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
     cosmetic: generic_backpack
     actions:
       on-equip:

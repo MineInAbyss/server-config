@@ -397,12 +397,12 @@ emotes:
   - id: arrow_null
     template: starcompass
     texture: mineinabyss:ui/compass/arrow_null.png
-  - id: orthcoin
+  - id: bank_orthcoin
     font: mineinabyss:orthbanking
     texture: mineinabyss:ui/orthbanking/orthcoin.png
     height: 10
     ascent: -12
-  - id: mittytoken
+  - id: bank_mittytoken
     font: mineinabyss:orthbanking
     texture: mineinabyss:ui/orthbanking/mittytoken.png
     height: 12
@@ -563,6 +563,16 @@ emotes:
   - id: player_profile_rank_communitymanager
     template: playerprofile
     texture: mineinabyss:ui/roles/communitymanager.png
+  - id: cosmetic_orth_coin
+    font: mineinabyss:cosmetics
+    texture: mineinabyss:ui/orthbanking/orthcoin.png
+    height: 10
+    ascent: 10
+  - id: cosmetic_mitty_token
+    font: mineinabyss:cosmetics
+    texture: mineinabyss:ui/orthbanking/mittytoken.png
+    height: 10
+    ascent: 10
   - id: cosmetic_dye_menu
     font: mineinabyss:cosmetics
     texture: cosmetics:ui/menus/cosmetic_dye_menu.png
