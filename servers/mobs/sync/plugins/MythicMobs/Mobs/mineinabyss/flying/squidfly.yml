@@ -26,8 +26,8 @@ squidfly:
     Drive: false
     DamageTint: true
   Skills:
-    - CancelEvent{sync=true} ~onAttack
-    - skill{s=Damage_5} @self ~onAttack
+   # - CancelEvent{sync=true} ~onAttack
+    #- skill{s=Damage_5} @self ~onAttack
 
     - bodyclamp{m=squidfly;c=15} @self ~onSpawn
     - bodyclamp{m=squidfly;c=15} @self ~onLoad

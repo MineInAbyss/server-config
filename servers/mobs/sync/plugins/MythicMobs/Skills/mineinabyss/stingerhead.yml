@@ -26,7 +26,7 @@ SH_Attack:
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 5
-    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=5}
+    - totem{md=2;c=1;oH=SH_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1} @forward{f=5}
 #will bleed once every 5 seconds for 5 seconds
 SH_Attack_DAMAGE:
   TargetConditions:
@@ -232,7 +232,7 @@ stingerhead_venom_impact:
     - damage{a=10} @target
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
-  - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
+    - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
 
 stingerhead_spin:
   Cooldown: 4

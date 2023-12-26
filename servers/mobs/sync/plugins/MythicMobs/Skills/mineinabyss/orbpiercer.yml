@@ -29,7 +29,7 @@ orbyATTACKskill:
   Skills:
     - state{s=attack;li=3;lo=2} @self 
     - delay 10
-    - totem{ch=3;onStart=orbyATTACKDamage;int=1;hR=3;md=1} @PIR{r=4}
+    - totem{ch=3;onStart=orbyATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
     - delay 30
 
 orbyATTACKDamage:
@@ -66,8 +66,12 @@ orbyspear2:
   Skills:
     - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self
     - delay 5
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.4} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.4} @Target
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5;a=.5} @Target
     - delay 8

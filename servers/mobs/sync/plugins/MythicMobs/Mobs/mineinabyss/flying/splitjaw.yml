@@ -34,7 +34,7 @@ splitjaw:
     - PROJECTILE 0.5
   Skills:
 
-    - CancelEvent{sync=true} ~onAttack
+  #  - CancelEvent{sync=true} ~onAttack
 
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad

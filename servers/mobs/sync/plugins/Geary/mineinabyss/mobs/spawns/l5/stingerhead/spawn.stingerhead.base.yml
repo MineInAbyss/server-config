@@ -13,4 +13,4 @@ check.spawn.*:
   gap:
     range: 3..4096
   delay:
-    attemptEvery: 10s
+    attemptEvery: 5s

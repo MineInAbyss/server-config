@@ -9,7 +9,7 @@ SJ_Attack:
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=3}
+    - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=5;vR=5;i=1;repeat=20;repeatinterval=1} @forward{f=1}
 #will bleed once every 5 seconds for 5 seconds
 SJ_Attack_DAMAGE:
   TargetConditions:
@@ -43,7 +43,7 @@ SJ_dash:
     - delay 4
     - state{s=dash_state;remove=true} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
-    - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=3}
+    - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=2}
     - delay 1
     - skill{s=SJ_dashmiss} @self
     - delay 60
