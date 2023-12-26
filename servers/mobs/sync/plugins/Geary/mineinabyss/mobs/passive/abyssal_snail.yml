@@ -1,17 +1,25 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:passive]
-display_name: "<#785F34>Abyssal Snail"
-set.modelengine-model:
-  modelId: abyssal_snail
-set.attributes:
-  maxHealth: 40
-  movementSpeed: 0.1000
-  knockbackResistance: 0.1500
-  followRange: 20
-  width: 2.5000
-  height: 2
-death_loot:
+  from: [ mineinabyss:passive ]
+displayName: "<#785F34>Abyssal Snail"
+set.*:
+  modelengineModel:
+    modelId: abyssal_snail
+  attributes:
+    maxHealth: 40
+    movementSpeed: 0.1000
+    knockbackResistance: 0.1500
+    followRange: 20
+    width: 2.5000
+    height: 2
+  pathfinders:
+    goals:
+      1: !<minecraft:behavior.float>
+      2: !<minecraft:behavior.panic>
+        speedModifier: 3
+      3: !<minecraft:behavior.random_stroll_land>
+      4: !<minecraft:behavior.look_at_player>
+deathLoot:
   minExp: 25
   maxExp: 40
   drops:
@@ -37,10 +45,3 @@ sounds:
     sound: minecraft:entity.axolotl.hurt
     category: NEUTRAL
     pitch: 0.2
-set.pathfinders:
-  goals:
-    1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.panic>
-      speedModifier: 3
-    3: !<minecraft:behavior.random_stroll_land>
-    4: !<minecraft:behavior.look_at_player>

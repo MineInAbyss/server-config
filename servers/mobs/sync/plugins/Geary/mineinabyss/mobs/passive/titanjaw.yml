@@ -1,8 +1,8 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#3C3B4A>Titanjaw"
-set.modelengine-model:
+displayName: "<#3C3B4A>Titanjaw"
+set.modelengineModel:
   modelId: titanjaw
 set.attributes:
   maxHealth: 20
@@ -10,7 +10,7 @@ set.attributes:
   knockbackResistance: 0.3000
   width: 2
   height: 1
-death_loot:
+deathLoot:
   minExp: 25
   maxExp: 45
   drops:

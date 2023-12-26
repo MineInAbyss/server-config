@@ -1,14 +1,12 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:cod
- # creatureType: WATER_CREATURE
-set.modelengine-model:
+set.entityType: minecraft:cod
+set.modelengineModel:
   modelId: edusan
 set.attributes:
   maxHealth: 20
   movementSpeed: 0.3
   followRange: 20
-death_loot:
+deathLoot:
   minExp: 15
   maxExp: 20
   drops:

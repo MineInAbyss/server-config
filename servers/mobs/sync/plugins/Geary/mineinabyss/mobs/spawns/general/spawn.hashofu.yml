@@ -10,7 +10,7 @@ check.spawn.local_group:
   radius: 160
 check.spawn.gap:
   range: 15..100
-check.block_type:
+check.blockType:
   allow:
     - GRASS_BLOCK
     - PODZOL

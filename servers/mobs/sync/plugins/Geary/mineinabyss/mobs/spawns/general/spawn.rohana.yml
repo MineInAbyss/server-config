@@ -12,6 +12,6 @@ check.spawn.local_group:
   radius: 128
 check.spawn.gap:
   range: 3..20
-check.block_type:
+check.blockType:
   allow:
     - WATER

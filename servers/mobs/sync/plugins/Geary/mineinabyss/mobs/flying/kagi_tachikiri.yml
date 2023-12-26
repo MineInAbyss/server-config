@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: kagi_tachikiri
-display_name: "<#5468A8>Kagi-Tachikiri"
-death_loot:
+set.mythicMob: kagi_tachikiri
+displayName: "<#5468A8>Kagi-Tachikiri"
+deathLoot:
   minExp: 20
   maxExp: 40
   drops:

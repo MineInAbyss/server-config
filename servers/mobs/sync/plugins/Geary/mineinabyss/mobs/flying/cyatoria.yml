@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: cyatoria
-display_name: "<#3DDFFF>Cyatoria"
-death_loot:
+set.mythicMob: cyatoria
+displayName: "<#3DDFFF>Cyatoria"
+deathLoot:
   minExp: 35
   maxExp: 45
   drops:

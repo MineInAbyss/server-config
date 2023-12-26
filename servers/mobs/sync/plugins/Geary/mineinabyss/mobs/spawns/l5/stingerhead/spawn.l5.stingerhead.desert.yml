@@ -3,7 +3,7 @@ inherit:
   from: [ mineinabyss:spawn.stingerhead.base ]
 spawn_regions:
   keys: [ stingerheadsanddesert ]
-check.block_type:
+check.blockType:
   allow:
     - SOUL_SOIL
 

@@ -1,7 +1,7 @@
 namespaces: [geary, mobzy, looty, mineinabyss]
 inherit:
   from: [mineinabyss:npc]
-set.modelengine-model:
+set.modelengineModel:
   modelId: guildmaster
 shopkeeper:
   name: "Hat Vendor"

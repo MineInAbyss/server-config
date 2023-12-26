@@ -1,8 +1,8 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:hostile ]
-display_name: "<#8F2222>Uibuta"
-set.modelengine-model:
+displayName: "<#8F2222>Uibuta"
+set.modelengineModel:
   modelId: uibuta
   scale: '1.5..2.0'
 set.attributes:
@@ -14,7 +14,7 @@ set.attributes:
   followRange: 30
   width: 1.5000
   height: 1.5000
-death_loot:
+deathLoot:
   minExp: 65
   maxExp: 95
   drops:

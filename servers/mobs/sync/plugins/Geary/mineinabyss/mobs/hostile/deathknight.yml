@@ -1,7 +1,7 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile]
-set.modelengine-model:
+set.modelengineModel:
   modelId: deathknight
 set.attributes:
   maxHealth: 1000
@@ -10,7 +10,7 @@ set.attributes:
   followRange: 40
   width: 2
   height: 4
-death_loot:
+deathLoot:
   minExp: 1000
   maxExp: 1000
 sounds: {}

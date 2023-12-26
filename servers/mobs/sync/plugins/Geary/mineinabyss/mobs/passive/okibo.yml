@@ -1,15 +1,15 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#10DEA7>Okibo"
-set.modelengine-model:
+displayName: "<#10DEA7>Okibo"
+set.modelengineModel:
   modelId: okibo
   scale: 2.75
 set.attributes:
   maxHealth: 50
   movementSpeed: 0.2000
   knockbackResistance: 0.2000
-death_loot:
+deathLoot:
   minExp: 20
   maxExp: 25
   drops:

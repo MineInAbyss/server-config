@@ -1,6 +1,6 @@
 namespaces: [geary, mobzy, looty]
-set.mythic_mob: ashimite
-display_name: "<#2597D9>Ashimite"
+set.mythicMob: ashimite
+displayName: "<#2597D9>Ashimite"
 modelengine.rideable:
   steerItem:
     prefab: mineinabyss:demonfish_on_a_stick

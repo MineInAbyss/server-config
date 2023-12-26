@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:iron_golem
+set.entityType: minecraft:iron_golem
  # creatureType: MONSTER
-set.burn_in_day: false
+set.burnInDay: false

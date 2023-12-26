@@ -1,15 +1,15 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#BDBDBD>Neritantan"
-set.modelengine-model:
+displayName: "<#BDBDBD>Neritantan"
+set.modelengineModel:
   modelId: neritantan
 set.attributes:
   maxHealth: 7
   movementSpeed: 0.2500
   width: 0.6000
   height: 0.6000
-death_loot:
+deathLoot:
   minExp: 10
   maxExp: 15
   drops:

@@ -1,5 +1,5 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:npc]
-set.modelengine-model:
+set.modelengineModel:
   modelId: lyza

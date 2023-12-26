@@ -1,14 +1,15 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:pig
-set.attributes:
-  followRange: 10
-  movementSpeed: 0.0
+set.*:
+  entityType: minecraft:pig
+  attributes:
+    followRange: 10
+    movementSpeed: 0.0
+  pathfinders:
+    goals:
+      1: !<minecraft:behavior.look_at_player>
+        startChance: 1.0
 important: {}
 sounds: {}
-disable_mob_interactions: {}
-prevent_riding: {}
-set.pathfinders:
-  goals:
-    1: !<minecraft:behavior.look_at_player>
-      startChance: 1.0
+prevent.*:
+  interaction: {}
+  riding: {}

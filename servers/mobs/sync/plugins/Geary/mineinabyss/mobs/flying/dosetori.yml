@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: dosetori
-display_name: "<#FFF821>Dosetori"
-death_loot:
+set.mythicMob: dosetori
+displayName: "<#FFF821>Dosetori"
+deathLoot:
   minExp: 60
   maxExp: 100
   drops:

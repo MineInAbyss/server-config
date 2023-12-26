@@ -1,5 +1,3 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:pig
- # creatureType: CREATURE
-prevent_breeding: {}
+set.entityType: minecraft:pig
+prevent.breeding: {}

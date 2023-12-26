@@ -14,7 +14,7 @@ check.spawn.local_group:
   radius: 192
 check.spawn.gap:
   range: 8..4096
-check.block_type:
+check.blockType:
   allow:
     - STONE
     - STONE_BRICKS

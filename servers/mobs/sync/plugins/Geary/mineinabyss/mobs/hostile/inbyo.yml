@@ -1,8 +1,8 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:hostile ]
-display_name: "<#3D3D3D>Inbyo"
-set.modelengine-model:
+displayName: "<#3D3D3D>Inbyo"
+set.modelengineModel:
   modelId: inbyo
 set.attributes:
   maxHealth: 10
@@ -11,9 +11,7 @@ set.attributes:
   attackKnockback: 1
   knockbackResistance: 0.1200
   followRange: 64
-  width: 1
-  height: 3
-death_loot:
+deathLoot:
   minExp: 35
   maxExp: 45
   drops:
@@ -55,8 +53,7 @@ children:
       - !<geary:event.triggers>
         expressions:
           - other geary:event.touched this -> this parent.child(poison) other
-      - !<geary:set.entity_type>
-        key: minecraft:snowball
+      - !<geary:set.entity_type> minecraft:snowball
       - !<mobzy:set.projectile_item>
         item:
           type: SNOWBALL
@@ -76,4 +73,3 @@ set.pathfinders:
     8: !<minecraft:behavior.look_at_player>
     9: !<minecraft:behavior.random_look_around>
     10: !<minecraft:behavior.float>
-

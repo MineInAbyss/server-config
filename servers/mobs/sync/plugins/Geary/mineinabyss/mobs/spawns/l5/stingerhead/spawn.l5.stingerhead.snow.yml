@@ -3,7 +3,7 @@ inherit:
   from: [ mineinabyss:spawn.stingerhead.base ]
 spawn_regions:
   keys: [ stingerheadsnow, stingerheadnestcave ]
-check.block_type:
+check.blockType:
   allow:
     - DEAD_BRAIN_CORAL_BLOCK
     - DEAD_FIRE_CORAL_BLOCK

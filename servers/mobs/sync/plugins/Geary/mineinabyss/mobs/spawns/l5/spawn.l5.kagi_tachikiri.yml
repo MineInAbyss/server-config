@@ -14,7 +14,7 @@ check.spawn.local_group:
   radius: 128
 check.spawn.gap:
   range: 4..40
-check.block_type:
+check.blockType:
   allow:
     - SAND
     - RED_SAND

@@ -1,15 +1,15 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<gold>Sakuranbo"
-set.modelengine-model:
+displayName: "<gold>Sakuranbo"
+set.modelengineModel:
   modelId: sakuranbo
 set.attributes:
   maxHealth: 10
   movementSpeed: 0.3000
   width: 0.6000
   height: 0.6000
-death_loot:
+deathLoot:
   minExp: 10
   maxExp: 20
   drops:

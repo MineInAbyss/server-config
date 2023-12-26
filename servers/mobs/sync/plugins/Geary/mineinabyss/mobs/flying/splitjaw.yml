@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: splitjaw
-display_name: "<#9A1CAD>Splitjaw"
-death_loot:
+set.mythicMob: splitjaw
+displayName: "<#9A1CAD>Splitjaw"
+deathLoot:
   minExp: 70
   maxExp: 115
   drops:

@@ -1,8 +1,8 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#D63624>Chimokami"
-set.modelengine-model:
+displayName: "<#D63624>Chimokami"
+set.modelengineModel:
   modelId: chimokami
 set.attributes:
   maxHealth: 30
@@ -12,7 +12,7 @@ set.attributes:
   followRange: 5
   width: 2
   height: 1
-death_loot:
+deathLoot:
   minExp: 20
   maxExp: 25
   drops:

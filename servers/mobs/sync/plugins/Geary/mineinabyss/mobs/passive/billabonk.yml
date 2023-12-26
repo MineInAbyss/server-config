@@ -1,17 +1,15 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:slime
- # creatureType: WATER_CREATURE
-display_name: "<#0357AB>Billabonk"
-set.slime_size: 1
-set.modelengine-model:
+set.entityType: minecraft:slime
+displayName: "<#0357AB>Billabonk"
+set.slimeSize: 1
+set.modelengineModel:
   modelId: billabonk
 set.attributes:
   maxHealth: 12
   movementSpeed: 0.7
   width: 0.6000
   height: 0.6000
-death_loot:
+deathLoot:
   minExp: 10
   maxExp: 15
   drops:

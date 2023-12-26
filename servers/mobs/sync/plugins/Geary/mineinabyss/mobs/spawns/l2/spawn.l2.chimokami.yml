@@ -15,7 +15,7 @@ check.spawn.gap:
 #time:
 #  min: 13000
 #  max: 23000
-check.block_type:
+check.blockType:
   allow:
     - GRASS_BLOCK
     - DIRT

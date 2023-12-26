@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: squidfly
-display_name: "<#85512E>Squidfly"
-death_loot:
+set.mythicMob: squidfly
+displayName: "<#85512E>Squidfly"
+deathLoot:
   minExp: 12
   maxExp: 18
   drops:

@@ -1,9 +1,7 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:pig
- # creatureType: WATER_CREATURE
-display_name: "<#FF771C>Makihige"
-set.modelengine-model:
+set.entityType: minecraft:pig
+displayName: "<#FF771C>Makihige"
+set.modelengineModel:
   modelId: makihige
 set.attributes:
   maxHealth: 60
@@ -12,7 +10,7 @@ set.attributes:
   width: 2
   height: 2
 sounds: {}
-death_loot:
+deathLoot:
   minExp: 15
   maxExp: 30
   drops:

@@ -1,15 +1,15 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#E0E0E0>Fuwagi"
-set.modelengine-model:
+displayName: "<#E0E0E0>Fuwagi"
+set.modelengineModel:
   modelId: fuwagi
 set.attributes:
   maxHealth: 10
   movementSpeed: 0.2500
   width: 1
   height: 1
-death_loot:
+deathLoot:
   minExp: 10
   maxExp: 16
   drops:

@@ -1,3 +1,7 @@
-namespaces: [geary, mobzy, looty]
-set.burn_in_day: false
-disable_right_click: {}
+namespaces: [ geary, mobzy, looty ]
+set.burnInDay: false
+prevent.*:
+  interaction:
+    type: [ RIGHT_CLICK ]
+  regeneration:
+    reason: [ REGEN ]

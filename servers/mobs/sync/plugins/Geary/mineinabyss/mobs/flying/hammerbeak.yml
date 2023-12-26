@@ -1,9 +1,9 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:hostile_flying]
-set.mythic_mob: hammerbeak
-display_name: "<#613F0C>Hammerbeak"
-death_loot:
+set.mythicMob: hammerbeak
+displayName: "<#613F0C>Hammerbeak"
+deathLoot:
   minExp: 25
   maxExp: 45
   drops:

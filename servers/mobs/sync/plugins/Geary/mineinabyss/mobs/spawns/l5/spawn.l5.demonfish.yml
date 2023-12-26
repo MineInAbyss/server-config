@@ -12,7 +12,7 @@ spawn.priority:
 check.spawn.local_group:
   max: 6
   radius: 128
-check.block_type:
+check.blockType:
   allow:
     - WATER
 

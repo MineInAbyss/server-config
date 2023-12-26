@@ -1,8 +1,8 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
-display_name: "<#FFFF99>Rinsipede"
-set.modelengine-model:
+displayName: "<#FFFF99>Rinsipede"
+set.modelengineModel:
   modelId: rinsipede
 set.attributes:
   maxHealth: 10
@@ -11,7 +11,7 @@ set.attributes:
   followRange: 20
   width: 0.6
   height: 0.25
-death_loot:
+deathLoot:
   minExp: 15
   maxExp: 25
   drops:

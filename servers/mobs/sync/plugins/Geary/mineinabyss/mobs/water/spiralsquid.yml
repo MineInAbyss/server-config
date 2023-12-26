@@ -1,14 +1,15 @@
 namespaces: [geary, mobzy, looty]
-set.entity_type:
-  key: minecraft:squid
- # creatureType: WATER_CREATURE
-set.modelengine-model:
-  modelId: spiralsquid
-set.attributes:
-  maxHealth: 20
-  movementSpeed: 0.6
-  followRange: 20
-death_loot:
+set.*:
+  entityType: minecraft:squid
+  modelengineModel:
+    modelId: spiralsquid
+  attributes:
+    maxHealth: 20
+    movementSpeed: 0.6
+    followRange: 20
+  pathfinders:
+    override: false
+deathLoot:
   minExp: 15
   maxExp: 20
   drops:
@@ -21,5 +22,3 @@ bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:spiralsquid_bucket
-set.pathfinders:
-  override: false

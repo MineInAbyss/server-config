@@ -12,7 +12,7 @@ check.spawn.local_group:
   radius: 128
 check.spawn.gap:
   range: 2..4096
-check.block_type:
+check.blockType:
   allow:
     - WHITE_CONCRETE
     - DIORITE
