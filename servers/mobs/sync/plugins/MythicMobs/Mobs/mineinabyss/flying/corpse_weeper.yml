@@ -1,5 +1,5 @@
 corpse_weeper:
-  Type: BEE
+  Type: ALLAY
   Health: 25
   Damage: 5
   AIGoalSelectors:
@@ -13,7 +13,6 @@ corpse_weeper:
     - attacker
     - players
   Options:
-    PreventOtherDrops: false
     # KnockbackResistance: 0.5
     Collidable: true
     DigOutOfGround: true
