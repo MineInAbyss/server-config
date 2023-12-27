@@ -1,5 +1,7 @@
 namespaces: [geary, mobzy, looty]
-set.mythicMob: ashimite
+set.*:
+  mythicMob: ashimite
+  woolColor: LIGHT_BLUE
 displayName: "<#2597D9>Ashimite"
 modelengine.rideable:
   steerItem:
