@@ -13,7 +13,6 @@ Stingerhead:
     - attacker
     - players
   Options:
-    PreventOtherDrops: true
     KnockbackResistance: 1
     Collidable: false
     Silent: true
@@ -21,11 +20,6 @@ Stingerhead:
     MovementSpeed: 0.4
     MaxCombatDistance: 24
     DigOutOfGround: true
-  Drops:
-    - exp 80-210
-    - geary mineinabyss:stingerhead_scale 1-2 1
-    - geary mineinabyss:stingerhead_flesh 1-2 1
-    - geary mineinabyss:stingerhead_eye 1-2 0.4
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND

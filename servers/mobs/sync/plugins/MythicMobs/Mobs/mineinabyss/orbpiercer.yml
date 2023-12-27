@@ -14,7 +14,6 @@ OrbPiercer:
     - players
   Options:
     PreventSunBurn: true
-    PreventOtherDrops: true
     KnockbackResistance: 1
     DigOutOfGround: true
     Collidable: true
@@ -25,10 +24,6 @@ OrbPiercer:
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
-  Drops:
-    - exp 80-210
-    - geary mineinabyss:orb_piercer_spike 3-6
-    - geary mineinabyss:orb_piercer_face_fragments 1 0.4
   Model:
     Id: orbpiercer
     ViewRadius: 64

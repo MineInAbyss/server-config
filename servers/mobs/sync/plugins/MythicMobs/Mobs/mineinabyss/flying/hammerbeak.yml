@@ -13,8 +13,6 @@ hammerbeak:
     - attacker
     - players
   Options:
-    PreventOtherDrops: false
-    # KnockbackResistance: 0.5
     Collidable: true
     Tameable: false
     DigOutOfGround: true

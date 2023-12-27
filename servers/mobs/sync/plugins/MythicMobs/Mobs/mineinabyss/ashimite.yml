@@ -11,19 +11,12 @@ ashimite:
     - clear
     - players
   Options:
-    PreventOtherDrops: true
     KnockbackResistance: 0.07
     Collidable: true
     Silent: true
     FollowRange: 48
     interactable: true
     #MovementSpeed: 0.25
-  Drops:
-    - exp 18-35
-    - geary mineinabyss:ashimite_meat_raw 1 0.25
-    - geary mineinabyss:ashimite_hoof 1-2 1.0
-    - geary mineinabyss:ashimite_antlers 1-2 0.4
-    - wool 1-3
   Model:
     Id: ashimite
     ViewRadius: 64

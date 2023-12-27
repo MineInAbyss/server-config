@@ -1,3 +1,13 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.mythicMob: Stingerhead
 displayName: "<#9C0F2C>Stingerhead"
+deathLoot:
+  exp: 80..210
+  drops:
+    - item: { prefab: mineinabyss:stingerhead_scale }
+      amount: 1..2
+    - item: { prefab: mineinabyss:stingerhead_flesh }
+      amount: 1..2
+    - item: { prefab: mineinabyss:stingerhead_eye }
+      amount: 1..2
+      dropChance: 0.4

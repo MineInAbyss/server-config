@@ -13,8 +13,6 @@ cyatoria:
     - attacker
     - players
   Options:
-    PreventOtherDrops: false
-    # KnockbackResistance: 0.5
     Collidable: true
     DigOutOfGround: true
     FollowRange: 28
