@@ -17,5 +17,5 @@ deathLoot:
     - item: { prefab: mineinabyss:ashimite_antlers }
       amount: 1..2
       dropChance: 0.4
-    - item: { type: wool }
+    - item: { type: blue_wool }
       amount: 1..3
