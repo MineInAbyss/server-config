@@ -32,8 +32,7 @@ deathLoot:
         prefab: mineinabyss:ottobas_meat_raw
       cooked:
         prefab: mineinabyss:ottobas_meat_cooked
-      minAmount: 4
-      maxAmount: 15
+      amount: 4..15
 sounds:
   ambient:
     sound: mineinabyss:entity.ottobas.ambient

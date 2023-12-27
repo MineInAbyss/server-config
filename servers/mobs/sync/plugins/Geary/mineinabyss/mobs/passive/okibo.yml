@@ -16,12 +16,10 @@ deathLoot:
         prefab: mineinabyss:okibo_meat_raw
       cooked:
         prefab: mineinabyss:okibo_meat_cooked
-      minAmount: 6
-      maxAmount: 10
+      amount: 6..10
     - item:
         prefab: mineinabyss:okibo_fur
-      minAmount: 2
-      maxAmount: 4
+      amount: 2..4
       dropChance: 0.8000
 modelengine.rideable: {}
 sounds: {}

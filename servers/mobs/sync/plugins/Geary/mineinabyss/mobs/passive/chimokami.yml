@@ -34,11 +34,10 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:chimokami_tail
-      minAmount: 1
-      maxAmount: 3
+      amount: 1..3
       dropChance: 0.8000
     - item:
         prefab: mineinabyss:chimokami_fang
-      maxAmount: 2
+      amount: 2
       dropChance: 0.7000
 sounds: { }

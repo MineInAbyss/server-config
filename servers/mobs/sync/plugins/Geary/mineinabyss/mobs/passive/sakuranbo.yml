@@ -23,6 +23,6 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:sakuranbo_dust
-      maxAmount: 3
+      amount: 3
       dropChance: 0.9000
 sounds: { }

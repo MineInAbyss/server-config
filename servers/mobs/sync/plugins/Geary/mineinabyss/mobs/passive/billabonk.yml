@@ -14,7 +14,7 @@ deathLoot:
         prefab: mineinabyss:billabonk_leg_raw
       cooked:
         prefab: mineinabyss:billabonk_leg_cooked
-      maxAmount: 2
+      amount: 2
     - item:
         prefab: mineinabyss:billabonk_sac
       dropChance: 0.1500

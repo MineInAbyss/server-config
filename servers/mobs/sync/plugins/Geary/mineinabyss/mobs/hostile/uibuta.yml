@@ -39,12 +39,10 @@ deathLoot:
         prefab: mineinabyss:uibuta_meat_raw
       cooked:
         prefab: mineinabyss:uibuta_meat_cooked
-      minAmount: 2
-      maxAmount: 6
+      amount: 2..6
     - item:
         prefab: mineinabyss:uibuta_tooth
-      minAmount: 1
-      maxAmount: 3
+      amount: 1..3
       dropChance: 0.7500
 sounds:
   ambient:

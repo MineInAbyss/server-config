@@ -29,10 +29,10 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:kakatsumuri_shell
-      maxAmount: 1
+      amount: 1
       dropChance: 0.8000
     - item:
         prefab: mineinabyss:kakatsumuri_glowing_tip
-      maxAmount: 1
+      amount: 1
       dropChance: 0.9000
 sounds: { }

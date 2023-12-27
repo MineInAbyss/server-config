@@ -26,6 +26,6 @@ deathLoot:
   drops:
     - item:
         type: SWEET_BERRIES
-      maxAmount: 3
+      amount: 3
       dropChance: 0.5000
 sounds: {}

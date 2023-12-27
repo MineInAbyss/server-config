@@ -15,10 +15,10 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:rohana_powder
-      maxAmount: 2
+      amount: 2
       dropChance: 0.8000
     - item:
         prefab: mineinabyss:rohana_tail
-      maxAmount: 2
+      amount: 2
       dropChance: 0.4000
 sounds: {}

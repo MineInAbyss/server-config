@@ -10,6 +10,6 @@ deathLoot:
         prefab: mineinabyss:squidfly_brain_raw
       cooked:
         prefab: mineinabyss:squidfly_brain_cooked
-      maxAmount: 1
+      amount: 1
       dropChance: 0.8000
 sounds: {}

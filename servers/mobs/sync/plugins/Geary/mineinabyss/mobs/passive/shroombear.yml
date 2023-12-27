@@ -30,11 +30,11 @@ deathLoot:
         prefab: mineinabyss:shroombear_meat_raw
       cooked:
         prefab: mineinabyss:shroombear_meat_cooked
-      maxAmount: 2
+      amount: 2
       dropChance: 0.8500
     - item:
         prefab: mineinabyss:parasitic_watershrooms
-      maxAmount: 2
+      amount: 2
       dropChance: 0.5000
 sounds:
   ambient:

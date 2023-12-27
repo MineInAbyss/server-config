@@ -30,13 +30,11 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:makihige_ink_sac
-      minAmount: 1
-      maxAmount: 2
+      amount: 1..2
     - item:
         prefab: mineinabyss:makihige_shell
       dropChance: 0.3000
     - item:
         prefab: mineinabyss:makihige_tentacle
-      minAmount: 1
-      maxAmount: 2
+      amount: 1..2
       dropChance: 0.4000

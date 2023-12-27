@@ -31,7 +31,7 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:virinsipede_segments
-      maxAmount: 3
+      amount: 3
       dropChance: 0.8000
     - item:
         prefab: mineinabyss:virinsipede_antlers

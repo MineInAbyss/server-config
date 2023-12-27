@@ -13,8 +13,8 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:amakagame_whiskers
-      maxAmount: 2
+      amount: 2
     - item:
         prefab: mineinabyss:baracocha_fruit
-      maxAmount: 5
+      amount: 5
 sounds: {}

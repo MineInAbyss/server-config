@@ -29,19 +29,19 @@ deathLoot:
       dropChance: 0.5000
     - item:
         type: BEETROOT_SEEDS
-      maxAmount: 2
+      amount: 2
       dropChance: 0.3000
     - item:
         type: MELON_SEEDS
-      maxAmount: 2
+      amount: 2
       dropChance: 0.3000
     - item:
         type: PUMPKIN_SEEDS
-      maxAmount: 2
+      amount: 2
       dropChance: 0.3000
     - item:
         type: SWEET_BERRIES
-      maxAmount: 2
+      amount: 2
       dropChance: 0.3000
 sounds:
   ambient:

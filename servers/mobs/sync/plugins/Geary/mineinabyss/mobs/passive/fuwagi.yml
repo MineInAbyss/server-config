@@ -17,7 +17,7 @@ deathLoot:
       dropChance: 0.8000
     - item:
         prefab: mineinabyss:fuwagi_foot
-      maxAmount: 2
+      amount: 2
       dropChance: 0.3000
     - item:
         prefab: mineinabyss:fuwagi_hide

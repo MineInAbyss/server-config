@@ -43,16 +43,13 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:hisomukuro_fin
-      minAmount: 1
-      maxAmount: 2
+      amount: 1..2
       dropChance: 0.6000
     - item:
         prefab: mineinabyss:demonfish_raw
-      minAmount: 1
-      maxAmount: 4
+      amount: 1..4
     - item:
         prefab: mineinabyss:hamashirama_raw
-      minAmount: 1
-      maxAmount: 4
+      amount: 1..4
 sounds: {}
 prevent.breeding: {}

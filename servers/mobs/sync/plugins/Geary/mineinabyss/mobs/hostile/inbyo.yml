@@ -35,12 +35,12 @@ deathLoot:
   drops:
     - item:
         prefab: mineinabyss:inbyo_fur
-      maxAmount: 3
+      amount: 3
     - item:
         prefab: mineinabyss:inbyo_meat_raw
       cooked:
         prefab: mineinabyss:inbyo_meat_cooked
-      maxAmount: 2
+      amount: 2
 sounds:
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death:

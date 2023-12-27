@@ -23,13 +23,13 @@ deathLoot:
       dropChance: 0.2000
     - item:
         prefab: mineinabyss:steve_antlers
-      maxAmount: 4
+      amount: 4
     - item:
         prefab: mineinabyss:steve_antlers
-      maxAmount: 4
+      amount: 4
     - item:
         prefab: mineinabyss:steve_antlers
-      maxAmount: 4
+      amount: 4
 sounds:
   ambient:
     sound: mineinabyss:entity.steve.ambient
