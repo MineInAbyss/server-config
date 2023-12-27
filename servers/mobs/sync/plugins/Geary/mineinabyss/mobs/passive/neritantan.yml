@@ -22,10 +22,8 @@ set.*:
 deathLoot:
   exp: 10..15
   drops:
-    - item:
-        prefab: mineinabyss:neritantan_meat_raw
-      cooked:
-        prefab: mineinabyss:neritantan_meat_cooked
+    - item: { prefab: mineinabyss:neritantan_meat_raw }
+      cooked: { prefab: mineinabyss:neritantan_meat_cooked }
       dropChance: 0.5000
     - item:
         type: BEETROOT_SEEDS

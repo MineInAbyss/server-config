@@ -6,13 +6,10 @@ displayName: "<#3DDFFF>Cyatoria"
 deathLoot:
   exp: 35..45
   drops:
-    - item:
-        prefab: mineinabyss:cyatoria_drumstick_raw
-      cooked:
-        prefab: mineinabyss:cyatoria_drumstick_cooked
+    - item: { prefab: mineinabyss:cyatoria_drumstick_raw }
+      cooked: { prefab: mineinabyss:cyatoria_drumstick_cooked }
       amount: 1..2
-    - item:
-        prefab: mineinabyss:cyatoria_feather
+    - item: { prefab: mineinabyss:cyatoria_feather }
       amount: 1..4
       dropChance: 0.7000
 sounds: {}

@@ -18,5 +18,4 @@ info:
 tall_wire: {}
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:foliage1
+    - item: { prefab: mineinabyss:foliage1 }

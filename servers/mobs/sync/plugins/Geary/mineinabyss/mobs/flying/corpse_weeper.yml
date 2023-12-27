@@ -6,17 +6,13 @@ displayName: "<#D12B26>Corpse-Weeper"
 deathLoot:
   exp: 70..90
   drops:
-    - item:
-        prefab: mineinabyss:corpse_weeper_meat_raw
-      cooked:
-        prefab: mineinabyss:corpse_weeper_meat_cooked
+    - item: { prefab: mineinabyss:corpse_weeper_meat_raw }
+      cooked: { prefab: mineinabyss:corpse_weeper_meat_cooked }
       amount: 1..2
-    - item:
-        prefab: mineinabyss:corpse_weeper_eye
+    - item: { prefab: mineinabyss:corpse_weeper_eye }
       amount: 2
       dropChance: 0.3000
-    - item:
-        prefab: mineinabyss:corpse_weeper_feather
+    - item: { prefab: mineinabyss:corpse_weeper_feather }
       amount: 1..3
       dropChance: 0.9000
 sounds:

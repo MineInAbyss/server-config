@@ -19,6 +19,5 @@ seat:
 
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bamboo_chair
+    - item: { prefab: mineinabyss:bamboo_chair }
 

@@ -6,16 +6,12 @@ displayName: "<#454545>Hashofu"
 deathLoot:
   exp: 12..18
   drops:
-    - item:
-        prefab: mineinabyss:hashofu_tail_raw
-      cooked:
-        prefab: mineinabyss:hashofu_tail_cooked
+    - item: { prefab: mineinabyss:hashofu_tail_raw }
+      cooked: { prefab: mineinabyss:hashofu_tail_cooked }
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:hashofu_eye
+    - item: { prefab: mineinabyss:hashofu_eye }
       dropChance: 0.6500
       amount: 2
-    - item:
-        prefab: mineinabyss:hashofu_body
+    - item: { prefab: mineinabyss:hashofu_body }
       amount: 1..3
 sounds: {}

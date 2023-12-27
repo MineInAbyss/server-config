@@ -11,5 +11,4 @@ info:
   blockModel: hmcmodels:block/nature/cosmos_red
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:cosmos_red
+    - item: { prefab: mineinabyss:cosmos_red }

@@ -1,22 +1,20 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.entityType: minecraft:slime
 displayName: "<#0357AB>Billabonk"
 set.slimeSize: 1
-set.modelengineModel:
-  modelId: billabonk
-set.attributes:
-  maxHealth: 12
-  movementSpeed: 0.7
+set.*:
+  modelengineModel:
+    modelId: billabonk
+  attributes:
+    maxHealth: 12
+    movementSpeed: 0.7
 deathLoot:
   exp: 10..15
   drops:
-    - item:
-        prefab: mineinabyss:billabonk_leg_raw
-      cooked:
-        prefab: mineinabyss:billabonk_leg_cooked
+    - item: { prefab: mineinabyss:billabonk_leg_raw }
+      cooked: { prefab: mineinabyss:billabonk_leg_cooked }
       amount: 2
-    - item:
-        prefab: mineinabyss:billabonk_sac
+    - item: { prefab: mineinabyss:billabonk_sac }
       dropChance: 0.1500
 sounds:
   ambient:
@@ -28,5 +26,3 @@ sounds:
   hurt:
     sound: mineinabyss:entity.billabonk.hurt
     category: NEUTRAL
-set.pathfinders:
-  override: false

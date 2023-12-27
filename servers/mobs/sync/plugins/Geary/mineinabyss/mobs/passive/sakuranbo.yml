@@ -2,27 +2,27 @@ namespaces: [ geary, mobzy, looty ]
 inherit:
   from: [ mineinabyss:passive ]
 displayName: "<gold>Sakuranbo"
-set.modelengineModel:
-  modelId: sakuranbo
-set.attributes:
-  maxHealth: 10
-  movementSpeed: 0.3000
-  width: 0.6000
-  height: 0.6000
-set.pathfinders:
-  override: false
-  goals:
-    minecraft:behavior.*:
-      float: { }
-      avoid_player:
-        radius: 10
-      random_stroll_land:
-        priority: 10
+set.*:
+  modelengineModel:
+    modelId: sakuranbo
+  attributes:
+    maxHealth: 10
+    movementSpeed: 0.3000
+    width: 0.6000
+    height: 0.6000
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        avoid_player:
+          radius: 10
+        random_stroll_land:
+          priority: 10
 deathLoot:
   exp: 10..20
   drops:
-    - item:
-        prefab: mineinabyss:sakuranbo_dust
+    - item: { prefab: mineinabyss:sakuranbo_dust }
       amount: 3
       dropChance: 0.9000
 sounds: { }

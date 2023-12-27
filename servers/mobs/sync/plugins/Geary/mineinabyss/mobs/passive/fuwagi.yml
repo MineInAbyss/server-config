@@ -2,25 +2,22 @@ namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
 displayName: "<#E0E0E0>Fuwagi"
-set.modelengineModel:
-  modelId: fuwagi
-set.attributes:
-  maxHealth: 10
-  movementSpeed: 0.2500
+set.*:
+  modelengineModel:
+    modelId: fuwagi
+  attributes:
+    maxHealth: 10
+    movementSpeed: 0.2500
 deathLoot:
   exp: 10..16
   drops:
-    - item:
-        prefab: mineinabyss:fuwagi_meat_raw
-      cooked:
-        prefab: mineinabyss:fuwagi_meat_cooked
+    - item: { prefab: mineinabyss:fuwagi_meat_raw }
+      cooked: { prefab: mineinabyss:fuwagi_meat_cooked }
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:fuwagi_foot
+    - item: { prefab: mineinabyss:fuwagi_foot }
       amount: 2
       dropChance: 0.3000
-    - item:
-        prefab: mineinabyss:fuwagi_hide
+    - item: { prefab: mineinabyss:fuwagi_hide }
       dropChance: 0.4000
 sounds:
   ambient:
@@ -32,5 +29,3 @@ sounds:
   hurt:
     sound: mineinabyss:entity.fuwagi.hurt
     category: NEUTRAL
-set.pathfinders:
-  override: false

@@ -17,5 +17,4 @@ directional:
   zBlock: mineinabyss:carved_jungle_log_z
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:carved_jungle_log
+    - item: { prefab: mineinabyss:carved_jungle_log }

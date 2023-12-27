@@ -11,6 +11,5 @@ furniture:
 
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bamboo_plant
+    - item: { prefab: mineinabyss:bamboo_plant }
 

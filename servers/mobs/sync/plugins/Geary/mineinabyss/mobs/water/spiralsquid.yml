@@ -10,10 +10,8 @@ set.*:
 deathLoot:
   exp: 15..20
   drops:
-    - item:
-        prefab: mineinabyss:spiralsquid_raw
-      cooked:
-        prefab: mineinabyss:spiralsquid_cooked
+    - item: { prefab: mineinabyss:spiralsquid_raw }
+      cooked: { prefab: mineinabyss:spiralsquid_cooked }
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

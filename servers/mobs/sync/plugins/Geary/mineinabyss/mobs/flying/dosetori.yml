@@ -6,17 +6,13 @@ displayName: "<#FFF821>Dosetori"
 deathLoot:
   exp: 60..100
   drops:
-    - item:
-        prefab: mineinabyss:dosetori_meat_raw
-      cooked:
-        prefab: mineinabyss:dosetori_meat_cooked
+    - item: { prefab: mineinabyss:dosetori_meat_raw }
+      cooked: { prefab: mineinabyss:dosetori_meat_cooked }
       amount: 1..2
-    - item:
-        prefab: mineinabyss:dosetori_wingflap
+    - item: { prefab: mineinabyss:dosetori_wingflap }
       amount: 1..3
       dropChance: 0.7000
-    - item:
-        prefab: mineinabyss:dosetori_bone
+    - item: { prefab: mineinabyss:dosetori_bone }
       amount: 1..3
       dropChance: 0.8000
 sounds:

@@ -11,10 +11,8 @@ set.*:
 deathLoot:
   exp: 15..20
   drops:
-    - item:
-        prefab: mineinabyss:demonfish_raw
-      cooked:
-        prefab: mineinabyss:demonfish_cooked
+    - item: { prefab: mineinabyss:demonfish_raw }
+      cooked: { prefab: mineinabyss:demonfish_cooked }
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

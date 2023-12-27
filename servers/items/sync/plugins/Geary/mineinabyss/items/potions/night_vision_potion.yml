@@ -8,9 +8,7 @@ set.item:
       upgraded: false
 set.potion_mixes:
   potionmixes:
-    - !<potionmix>
-      ingredient:
+    - ingredient:
         prefab: mineinabyss:hashofu_eye
-    - !<potionmix>
-      ingredient:
+    - ingredient:
         prefab: mineinabyss:kakatsumuri_glowing_tip

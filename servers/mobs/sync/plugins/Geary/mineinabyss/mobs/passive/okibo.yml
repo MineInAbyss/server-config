@@ -2,31 +2,29 @@ namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
 displayName: "<#10DEA7>Okibo"
-set.modelengineModel:
-  modelId: okibo
-  scale: 2.75
-set.attributes:
-  maxHealth: 50
-  movementSpeed: 0.2000
-  knockbackResistance: 0.2000
+set.*:
+  modelengineModel:
+    modelId: okibo
+    scale: 2.75
+  attributes:
+    maxHealth: 50
+    movementSpeed: 0.2000
+    knockbackResistance: 0.2000
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        random_stroll_land: { }
+        look_at_player: { }
 deathLoot:
   exp: 20..25
   drops:
-    - item:
-        prefab: mineinabyss:okibo_meat_raw
-      cooked:
-        prefab: mineinabyss:okibo_meat_cooked
+    - item: { prefab: mineinabyss:okibo_meat_raw }
+      cooked: { prefab: mineinabyss:okibo_meat_cooked }
       amount: 6..10
-    - item:
-        prefab: mineinabyss:okibo_fur
+    - item: { prefab: mineinabyss:okibo_fur }
       amount: 2..4
       dropChance: 0.8000
 modelengine.rideable: {}
 sounds: {}
-set.pathfinders:
-  override: false
-  goals:
-    minecraft:behavior.*:
-      float: { }
-      random_stroll_land: { }
-      look_at_player: { }

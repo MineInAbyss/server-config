@@ -13,6 +13,5 @@ seat:
   heightOffset: 0.0
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:sculk_chair
+    - item: { prefab: mineinabyss:sculk_chair }
 

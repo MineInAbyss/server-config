@@ -14,6 +14,5 @@ furniture:
 
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bamboo_rack
+    - item: { prefab: mineinabyss:bamboo_rack }
 

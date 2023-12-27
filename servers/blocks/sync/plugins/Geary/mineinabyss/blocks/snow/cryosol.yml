@@ -13,5 +13,4 @@ info:
   blockModel: "mineinabyss:block/snow/cryosol"
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:cryosol
+    - item: { prefab: mineinabyss:cryosol }

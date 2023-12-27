@@ -13,12 +13,10 @@ set.attributes:
 deathLoot:
   exp: 12..18
   drops:
-    - item:
-        prefab: mineinabyss:rohana_powder
+    - item: { prefab: mineinabyss:rohana_powder }
       amount: 2
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:rohana_tail
+    - item: { prefab: mineinabyss:rohana_tail }
       amount: 2
       dropChance: 0.4000
 sounds: {}

@@ -11,10 +11,8 @@ displayName: "<dark_purple>Amakagame"
 deathLoot:
   exp: 20..25
   drops:
-    - item:
-        prefab: mineinabyss:amakagame_whiskers
+    - item: { prefab: mineinabyss:amakagame_whiskers }
       amount: 2
-    - item:
-        prefab: mineinabyss:baracocha_fruit
+    - item: { prefab: mineinabyss:baracocha_fruit }
       amount: 5
 sounds: {}

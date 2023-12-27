@@ -10,6 +10,5 @@ furniture: { }
 
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bamboo_mirror
+    - item: { prefab: mineinabyss:bamboo_mirror }
 

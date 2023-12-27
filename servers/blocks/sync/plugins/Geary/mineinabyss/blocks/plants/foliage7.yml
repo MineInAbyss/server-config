@@ -11,5 +11,4 @@ info:
   blockModel: mineinabyss:block/nature/foliage7
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:foliage7
+    - item: { prefab: mineinabyss:foliage7 }

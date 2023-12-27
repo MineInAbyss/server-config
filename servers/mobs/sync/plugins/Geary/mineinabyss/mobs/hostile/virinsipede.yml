@@ -29,11 +29,9 @@ set.*:
 deathLoot:
   exp: 15..25
   drops:
-    - item:
-        prefab: mineinabyss:virinsipede_segments
+    - item: { prefab: mineinabyss:virinsipede_segments }
       amount: 3
       dropChance: 0.8000
-    - item:
-        prefab: mineinabyss:virinsipede_antlers
+    - item: { prefab: mineinabyss:virinsipede_antlers }
       dropChance: 0.3000
 sounds: { }

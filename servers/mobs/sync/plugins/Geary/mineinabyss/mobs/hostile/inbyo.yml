@@ -10,7 +10,7 @@ set.*:
     movementSpeed: 0.4
     attackDamage: 8
     attackKnockback: 1
-    knockbackResistance: 0.1200
+    knockbackResistance: 0.12
     followRange: 64
   pathfinders:
     targets:
@@ -33,13 +33,10 @@ set.*:
 deathLoot:
   exp: 35..45
   drops:
-    - item:
-        prefab: mineinabyss:inbyo_fur
+    - item: { prefab: mineinabyss:inbyo_fur }
       amount: 3
-    - item:
-        prefab: mineinabyss:inbyo_meat_raw
-      cooked:
-        prefab: mineinabyss:inbyo_meat_cooked
+    - item: { prefab: mineinabyss:inbyo_meat_raw }
+      cooked: { prefab: mineinabyss:inbyo_meat_cooked }
       amount: 2
 sounds:
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious

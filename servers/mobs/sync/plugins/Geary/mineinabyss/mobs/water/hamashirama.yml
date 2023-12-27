@@ -11,10 +11,8 @@ displayName: "<#1B91B5>Hamashirama"
 deathLoot:
   exp: 20..25
   drops:
-    - item:
-        prefab: mineinabyss:hamashirama_raw
-      cooked:
-        prefab: mineinabyss:hamashirama_cooked
+    - item: { prefab: mineinabyss:hamashirama_raw }
+      cooked: { prefab: mineinabyss:hamashirama_cooked }
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

@@ -41,15 +41,12 @@ event.conditions:
 deathLoot:
   exp: 200..250
   drops:
-    - item:
-        prefab: mineinabyss:hisomukuro_fin
+    - item: { prefab: mineinabyss:hisomukuro_fin }
       amount: 1..2
       dropChance: 0.6000
-    - item:
-        prefab: mineinabyss:demonfish_raw
+    - item: { prefab: mineinabyss:demonfish_raw }
       amount: 1..4
-    - item:
-        prefab: mineinabyss:hamashirama_raw
+    - item: { prefab: mineinabyss:hamashirama_raw }
       amount: 1..4
 sounds: {}
 prevent.breeding: {}

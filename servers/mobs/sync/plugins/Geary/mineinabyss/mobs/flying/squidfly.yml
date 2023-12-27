@@ -6,10 +6,8 @@ displayName: "<#85512E>Squidfly"
 deathLoot:
   exp: 12..18
   drops:
-    - item:
-        prefab: mineinabyss:squidfly_brain_raw
-      cooked:
-        prefab: mineinabyss:squidfly_brain_cooked
+    - item: { prefab: mineinabyss:squidfly_brain_raw }
+      cooked: { prefab: mineinabyss:squidfly_brain_cooked }
       amount: 1
       dropChance: 0.8000
 sounds: {}

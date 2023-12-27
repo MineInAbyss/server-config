@@ -9,6 +9,5 @@ set.item:
 furniture: {}
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bamboo_flower
+    - item: { prefab: mineinabyss:bamboo_flower }
 

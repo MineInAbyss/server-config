@@ -31,5 +31,4 @@ furniture:
     height: 1.8
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:bonfire
+    - item: { prefab: mineinabyss:bonfire }

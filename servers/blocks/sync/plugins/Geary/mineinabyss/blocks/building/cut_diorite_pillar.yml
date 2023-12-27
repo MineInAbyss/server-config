@@ -18,5 +18,4 @@ directional:
 
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:cut_diorite_pillar
+    - item: { prefab: mineinabyss:cut_diorite_pillar }

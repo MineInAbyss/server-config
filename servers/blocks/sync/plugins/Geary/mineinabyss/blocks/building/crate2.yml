@@ -19,5 +19,4 @@ sound:
   fallSound: block.amethyst_cluster.fall
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:crate2
+    - item: { prefab: mineinabyss:crate2 }

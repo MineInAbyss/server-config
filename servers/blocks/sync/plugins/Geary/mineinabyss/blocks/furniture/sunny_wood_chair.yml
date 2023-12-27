@@ -29,6 +29,5 @@ furniture:
     - location: { x: 0, y: 0, z: 0 }
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:sunny_wood_chair
+    - item: { prefab: mineinabyss:sunny_wood_chair }
 

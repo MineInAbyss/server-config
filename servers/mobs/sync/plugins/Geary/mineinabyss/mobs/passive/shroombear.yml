@@ -2,38 +2,36 @@ namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
 displayName: "<#85562D>Shroombear"
-set.modelengineModel:
-  modelId: shroombear
-set.attributes:
-  maxHealth: 25
-  movementSpeed: 0.2
-  knockbackResistance: 0.05
-  width: 0.7
-  height: 0.7
-set.pathfinders:
-  override: false
-  goals:
-    minecraft:behavior.*:
-      float: { }
-      tempt:
-        items:
-          - prefab: mineinabyss:parasitic_watershrooms
-        losesInterest: false
-        speed: 1.0
-      avoid_player:
-        radius: 10
-      random_stroll_land: { }
+set.*:
+  modelengineModel:
+    modelId: shroombear
+  attributes:
+    maxHealth: 25
+    movementSpeed: 0.2
+    knockbackResistance: 0.05
+    width: 0.7
+    height: 0.7
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        tempt:
+          items:
+            - prefab: mineinabyss:parasitic_watershrooms
+          losesInterest: false
+          speed: 1.0
+        avoid_player:
+          radius: 10
+        random_stroll_land: { }
 deathLoot:
   exp: 15..20
   drops:
-    - item:
-        prefab: mineinabyss:shroombear_meat_raw
-      cooked:
-        prefab: mineinabyss:shroombear_meat_cooked
+    - item: { prefab: mineinabyss:shroombear_meat_raw }
+      cooked: { prefab: mineinabyss:shroombear_meat_cooked }
       amount: 2
       dropChance: 0.8500
-    - item:
-        prefab: mineinabyss:parasitic_watershrooms
+    - item: { prefab: mineinabyss:parasitic_watershrooms }
       amount: 2
       dropChance: 0.5000
 sounds:

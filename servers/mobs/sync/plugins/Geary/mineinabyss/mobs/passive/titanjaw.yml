@@ -2,34 +2,33 @@ namespaces: [ geary, mobzy, looty ]
 inherit:
   from: [ mineinabyss:passive ]
 displayName: "<#3C3B4A>Titanjaw"
-set.modelengineModel:
-  modelId: titanjaw
-set.attributes:
-  maxHealth: 20
-  movementSpeed: 0.1500
-  knockbackResistance: 0.3000
-  width: 2
-  height: 1
-set.pathfinders:
-  override: false
-  goals:
-    minecraft:behavior.*:
-      float: { }
-      panic:
-        speedModifier: 2
-      avoid_player:
-        radius: 10
-        speed: 1.5000
-        sprintSpeed: 2
-      random_stroll_land: { }
+set.*:
+  modelengineModel:
+    modelId: titanjaw
+  attributes:
+    maxHealth: 20
+    movementSpeed: 0.1500
+    knockbackResistance: 0.3000
+    width: 2
+    height: 1
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        panic:
+          speedModifier: 2
+        avoid_player:
+          radius: 10
+          speed: 1.5000
+          sprintSpeed: 2
+        random_stroll_land: { }
 deathLoot:
   exp: 25..45
   drops:
-    - item:
-        prefab: mineinabyss:titanjaw_scale
+    - item: { prefab: mineinabyss:titanjaw_scale }
       amount: 1..2
       dropChance: 0.7000
-    - item:
-        prefab: mineinabyss:titanjaw_pearl
+    - item: { prefab: mineinabyss:titanjaw_pearl }
       dropChance: 0.2000
 sounds: { }

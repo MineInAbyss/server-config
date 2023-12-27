@@ -12,5 +12,4 @@ info:
   blockModel: mineinabyss:block/nature/foliage2
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:foliage2
+    - item: { prefab: mineinabyss:foliage2 }

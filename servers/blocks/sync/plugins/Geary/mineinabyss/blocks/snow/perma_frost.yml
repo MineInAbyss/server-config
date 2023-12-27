@@ -14,5 +14,4 @@ info:
   blockModel: "mineinabyss:block/snow/perma_frost"
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:perma_frost
+    - item: { prefab: mineinabyss:perma_frost }

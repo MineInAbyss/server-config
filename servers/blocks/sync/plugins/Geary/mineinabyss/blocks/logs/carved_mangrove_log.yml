@@ -17,5 +17,4 @@ directional:
   zBlock: mineinabyss:carved_mangrove_log_z
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:carved_mangrove_log
+    - item: { prefab: mineinabyss:carved_mangrove_log }

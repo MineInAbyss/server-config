@@ -28,10 +28,8 @@ set.*:
 deathLoot:
   exp: 55..90
   drops:
-    - item:
-        prefab: mineinabyss:ottobas_meat_raw
-      cooked:
-        prefab: mineinabyss:ottobas_meat_cooked
+    - item: { prefab: mineinabyss:ottobas_meat_raw }
+      cooked: { prefab: mineinabyss:ottobas_meat_cooked }
       amount: 4..15
 sounds:
   ambient:

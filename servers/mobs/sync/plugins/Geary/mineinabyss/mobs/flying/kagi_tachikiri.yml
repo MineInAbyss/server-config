@@ -6,8 +6,7 @@ displayName: "<#5468A8>Kagi-Tachikiri"
 deathLoot:
   exp: 20..40
   drops:
-    - item:
-        prefab: mineinabyss:kagi_tachikiri_pincer
+    - item: { prefab: mineinabyss:kagi_tachikiri_pincer }
       amount: 1..2
       dropChance: 0.7000
 sounds: {}

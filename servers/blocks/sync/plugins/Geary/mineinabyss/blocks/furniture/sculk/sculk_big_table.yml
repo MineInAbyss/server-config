@@ -20,6 +20,5 @@ furniture:
     - location: { x: -1, y: 0, z: 1 }
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:sculk_big_table
+    - item: { prefab: mineinabyss:sculk_big_table }
 

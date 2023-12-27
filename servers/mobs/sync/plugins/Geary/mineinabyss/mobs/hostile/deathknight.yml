@@ -6,7 +6,7 @@ set.*:
     modelId: deathknight
   attributes:
     maxHealth: 1000
-    movementSpeed: 0.6000
+    movementSpeed: 0.6
     attackDamage: 80
     followRange: 40
   pathfinders:

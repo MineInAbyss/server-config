@@ -16,7 +16,6 @@ set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>
-      input:
-        prefab: mineinabyss:spiralsquid_raw
+      input: { prefab: mineinabyss:spiralsquid_raw }
       experience: 1f
       cookingTime: 100

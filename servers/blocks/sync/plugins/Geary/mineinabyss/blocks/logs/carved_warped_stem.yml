@@ -17,5 +17,4 @@ directional:
   zBlock: mineinabyss:carved_warped_stem_z
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:carved_warped_stem
+    - item: { prefab: mineinabyss:carved_warped_stem }

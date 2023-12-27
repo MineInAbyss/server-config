@@ -13,5 +13,4 @@ info:
   blockModel: "mineinabyss:block/snow/packed_ice_bricks"
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:packed_ice_bricks
+    - item: { prefab: mineinabyss:packed_ice_bricks }

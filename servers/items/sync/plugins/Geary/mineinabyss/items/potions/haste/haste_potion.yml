@@ -21,8 +21,7 @@ food:
       duration: 3m
 set.potion_mixes:
   potionmixes:
-    - !<potionmix>
-      input:
+    - input:
         type: POTION
         potionData:
           type: WATER

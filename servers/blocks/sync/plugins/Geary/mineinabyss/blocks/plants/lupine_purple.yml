@@ -11,5 +11,4 @@ info:
   blockModel: hmcmodels:block/nature/lupine_purple
 drops:
   drops:
-    - item:
-        prefab: mineinabyss:lupine_purple
+    - item: { prefab: mineinabyss:lupine_purple }

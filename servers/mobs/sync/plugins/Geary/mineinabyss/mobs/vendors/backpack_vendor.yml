@@ -15,15 +15,13 @@ shopkeeper:
       tradeAction:
         action: GRANT_PERMISSION
         value: "hmccosmetics.backpack.backpack"
-    - item:
-        prefab: cosmetics:satchel
+    - item: { prefab: cosmetics:satchel }
       currencyType: ORTH_COIN
       price: 6
       tradeAction:
         action: GRANT_PERMISSION
         value: "hmccosmetics.backpack.satchel"
-    - item:
-        prefab: cosmetics:neritantan_backpack
+    - item: { prefab: cosmetics:neritantan_backpack }
       currencyType: ORTH_COIN
       price: 7
       tradeAction:
@@ -42,15 +40,13 @@ shopkeeper:
         action: GRANT_PERMISSION
         value: "hmccosmetics.backpack.generic_backpack"
 
-    - item:
-        prefab: cosmetics:camper_backpack
+    - item: { prefab: cosmetics:camper_backpack }
       currencyType: MITTY_TOKEN
       price: 1
       tradeAction:
         action: GRANT_PERMISSION
         value: "hmccosmetics.backpack.camper_backpack"
-    - item:
-        prefab: cosmetics:miner_backpack
+    - item: { prefab: cosmetics:miner_backpack }
       currencyType: MITTY_TOKEN
       price: 1
       tradeAction:

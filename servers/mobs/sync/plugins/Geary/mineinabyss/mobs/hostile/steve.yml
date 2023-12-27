@@ -15,20 +15,15 @@ set.*:
 deathLoot:
   exp: 20..25
   drops:
-    - item:
-        prefab: mineinabyss:steve_eye
+    - item: { prefab: mineinabyss:steve_eye }
       dropChance: 0.1000
-    - item:
-        prefab: mineinabyss:steve_piss
+    - item: { prefab: mineinabyss:steve_piss }
       dropChance: 0.2000
-    - item:
-        prefab: mineinabyss:steve_antlers
+    - item: { prefab: mineinabyss:steve_antlers }
       amount: 4
-    - item:
-        prefab: mineinabyss:steve_antlers
+    - item: { prefab: mineinabyss:steve_antlers }
       amount: 4
-    - item:
-        prefab: mineinabyss:steve_antlers
+    - item: { prefab: mineinabyss:steve_antlers }
       amount: 4
 sounds:
   ambient:

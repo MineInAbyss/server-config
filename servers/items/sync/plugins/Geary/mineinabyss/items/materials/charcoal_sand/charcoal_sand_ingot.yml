@@ -9,22 +9,18 @@ set.recipes:
   group: "charcoal_sand_ingot"
   recipes:
     - !<furnace>
-      input:
-        prefab: mineinabyss:charcoal_sand_raw
+      input: { prefab: mineinabyss:charcoal_sand_raw }
       experience: 1f
       cookingTime: 100
     - !<blasting>
-      input:
-        prefab: mineinabyss:charcoal_sand_raw
+      input: { prefab: mineinabyss:charcoal_sand_raw }
       experience: 2f
       cookingTime: 50
     - !<furnace>
-      input:
-        prefab: mineinabyss:charcoal_sand_ore
+      input: { prefab: mineinabyss:charcoal_sand_ore }
       experience: 1f
       cookingTime: 100
     - !<blasting>
-      input:
-        prefab: mineinabyss:charcoal_sand_ore
+      input: { prefab: mineinabyss:charcoal_sand_ore }
       experience: 2f
       cookingTime: 50

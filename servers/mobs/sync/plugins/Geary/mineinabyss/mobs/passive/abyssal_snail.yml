@@ -21,11 +21,9 @@ set.*:
 deathLoot:
   exp: 25..40
   drops:
-    - item:
-        prefab: mineinabyss:abyssal_snail_shell
+    - item: { prefab: mineinabyss:abyssal_snail_shell }
       dropChance: 0.7000
-    - item:
-        prefab: mineinabyss:abyssal_snail_gunk
+    - item: { prefab: mineinabyss:abyssal_snail_gunk }
       amount: 2
 modelengine.rideable:
   steerItem:
