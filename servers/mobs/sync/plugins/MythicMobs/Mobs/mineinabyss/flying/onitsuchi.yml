@@ -18,7 +18,7 @@ onitsuchi:
     FollowRange: 20
     MaxCombatDistance: 128
 
-    MovementSpeed: 0.4
+  #  MovementSpeed: 0.4
 
   Model:
     Id: onitsuchi
@@ -32,5 +32,5 @@ onitsuchi:
 
     - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
     - bodyclamp{m=onitsuchi;c=15} @self ~onLoad
-  #  - setspeed{type=flying;speed=1.1} @self ~onSpawn
+    - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=onitsuchi;s=attack} @self ~onAttack

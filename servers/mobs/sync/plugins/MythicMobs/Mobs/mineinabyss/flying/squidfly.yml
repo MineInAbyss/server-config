@@ -17,7 +17,7 @@ squidfly:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-    MovementSpeed: 0.7
+   # MovementSpeed: 0.7
   Model:
     Id: squidfly
     ViewRadius: 64
@@ -29,5 +29,5 @@ squidfly:
 
     - bodyclamp{m=squidfly;c=15} @self ~onSpawn
     - bodyclamp{m=squidfly;c=15} @self ~onLoad
-    #- setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=squidfly;s=attack} @self ~onAttack

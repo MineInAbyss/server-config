@@ -17,7 +17,7 @@ madokajack:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-    MovementSpeed: 0.35
+   # MovementSpeed: 0.35
   Model:
     Id: madokajack
     ViewRadius: 64
@@ -29,5 +29,5 @@ madokajack:
    # - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn
     - bodyclamp{m=madokajack;c=15} @self ~onLoad
-   # - setspeed{type=flying;speed=1.3} @self ~onSpawn
+    - setspeed{type=flying;speed=1.3} @self ~onSpawn
     - state{mid=madokajack;s=attack} @self ~onAttack

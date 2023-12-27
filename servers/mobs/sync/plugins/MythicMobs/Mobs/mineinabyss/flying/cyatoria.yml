@@ -19,7 +19,7 @@ cyatoria:
     MaxCombatDistance: 128
 
 
-    MovementSpeed: 0.35
+   # MovementSpeed: 0.35
   Model:
     Id: cyatoria
     ViewRadius: 64
@@ -30,5 +30,5 @@ cyatoria:
     #- skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=cyatoria;c=15} @self ~onSpawn
     - bodyclamp{m=cyatoria;c=15} @self ~onLoad
- #   - setspeed{type=flying;speed=1.1} @self ~onSpawn
+    - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=cyatoria;s=attack} @self ~onAttack

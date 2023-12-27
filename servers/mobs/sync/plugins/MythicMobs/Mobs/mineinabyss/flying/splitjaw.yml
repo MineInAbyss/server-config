@@ -21,7 +21,7 @@ splitjaw:
     LockPitch: true
     Interactable: false
 
-    MovementSpeed: 0.6
+    #MovementSpeed: 0.6
 
     PreventSunburn: true
   Model:
@@ -37,7 +37,7 @@ splitjaw:
 
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
-   # - setspeed{type=flying;speed=1.2} @self ~onSpawn
+    - setspeed{type=flying;speed=1.2} @self ~onSpawn
 
     - state{mid=splitjaw;s=attack} @self ~onAttack
 

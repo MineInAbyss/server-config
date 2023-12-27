@@ -18,7 +18,7 @@ corpse_weeper:
     FollowRange: 32
     MaxCombatDistance: 128
 
-    MovementSpeed: 0.5
+   # MovementSpeed: 0.5
 
   Model:
     Id: corpse_weeper
@@ -30,5 +30,5 @@ corpse_weeper:
    # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=corpse_weeper;c=15} @self ~onSpawn
     - bodyclamp{m=corpse_weeper;c=15} @self ~onLoad
-   # - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=corpse_weeper;s=attack} @self ~onAttack
