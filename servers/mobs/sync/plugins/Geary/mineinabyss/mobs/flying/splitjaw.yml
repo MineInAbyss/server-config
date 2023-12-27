@@ -4,8 +4,7 @@ inherit:
 set.mythicMob: splitjaw
 displayName: "<#9A1CAD>Splitjaw"
 deathLoot:
-  minExp: 70
-  maxExp: 115
+  exp: 70..115
   drops:
     - item:
         prefab: mineinabyss:splitjaw_scales

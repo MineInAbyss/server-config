@@ -7,14 +7,9 @@ set.*:
     maxHealth: 30
     movementSpeed: 0.2
     followRange: 20
-    width: 1
-    height: 1
-  pathfinders:
-    override: false
 displayName: "<#1B91B5>Hamashirama"
 deathLoot:
-  minExp: 20
-  maxExp: 25
+  exp: 20..25
   drops:
     - item:
         prefab: mineinabyss:hamashirama_raw

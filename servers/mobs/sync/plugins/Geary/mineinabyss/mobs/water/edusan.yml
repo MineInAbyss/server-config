@@ -7,13 +7,10 @@ set.attributes:
   movementSpeed: 0.3
   followRange: 20
 deathLoot:
-  minExp: 15
-  maxExp: 20
+  exp: 15..20
   drops:
     - item:
         prefab: mineinabyss:demonfish_raw
       cooked:
         prefab: mineinabyss:demonfish_cooked
 sounds: {}
-set.pathfinders:
-  override: false

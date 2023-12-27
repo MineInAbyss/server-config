@@ -1,21 +1,20 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:hostile]
-set.modelengineModel:
-  modelId: deathknight
-set.attributes:
-  maxHealth: 1000
-  movementSpeed: 0.6000
-  attackDamage: 80
-  followRange: 40
-  width: 2
-  height: 4
+  from: [ mineinabyss:hostile ]
+set.*:
+  modelengineModel:
+    modelId: deathknight
+  attributes:
+    maxHealth: 1000
+    movementSpeed: 0.6000
+    attackDamage: 80
+    followRange: 40
+  pathfinders:
+    override: false
+    targets:
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
 deathLoot:
-  minExp: 1000
-  maxExp: 1000
-sounds: {}
-set.pathfinders:
-  override: false
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
+  exp: 100
+sounds: { }

@@ -1,19 +1,37 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
   from: [ mineinabyss:hostile ]
 displayName: "<#3D3D3D>Inbyo"
-set.modelengineModel:
-  modelId: inbyo
-set.attributes:
-  maxHealth: 10
-  movementSpeed: 0.4
-  attackDamage: 8
-  attackKnockback: 1
-  knockbackResistance: 0.1200
-  followRange: 64
+set.*:
+  modelengineModel:
+    modelId: inbyo
+  attributes:
+    maxHealth: 10
+    movementSpeed: 0.4
+    attackDamage: 8
+    attackKnockback: 1
+    knockbackResistance: 0.1200
+    followRange: 64
+  pathfinders:
+    targets:
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
+    goals:
+      minecraft:behavior.*:
+        melee_attack:
+          seeThroughWalls: true
+        random_stroll_land: { }
+        look_at_player: { }
+        random_look_around: { }
+        float: { }
+      mobzy:behavior.*:
+        throw_items:
+          spawn: child(projectile)
+          cooldown: 6s
+          projectileAngularDiameter: 2
 deathLoot:
-  minExp: 35
-  maxExp: 45
+  exp: 35..45
   drops:
     - item:
         prefab: mineinabyss:inbyo_fur
@@ -58,18 +76,3 @@ children:
         item:
           type: SNOWBALL
           customModelData: 3
-set.pathfinders:
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<minecraft:behavior.melee_attack>
-      seeThroughWalls: true
-    2: !<mobzy:behavior.throw_items>
-      spawn: child(projectile)
-      cooldown: 6s
-      projectileAngularDiameter: 2
-    4: !<minecraft:behavior.random_stroll_land>
-    8: !<minecraft:behavior.look_at_player>
-    9: !<minecraft:behavior.random_look_around>
-    10: !<minecraft:behavior.float>

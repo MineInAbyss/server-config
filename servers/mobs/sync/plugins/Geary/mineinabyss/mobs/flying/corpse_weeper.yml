@@ -1,11 +1,10 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [geary, mobzy, looty]
 inherit:
-  from: [ mineinabyss:hostile_flying ]
+  from: [mineinabyss:hostile_flying]
 set.mythicMob: corpse_weeper
 displayName: "<#D12B26>Corpse-Weeper"
 deathLoot:
-  minExp: 70
-  maxExp: 90
+  exp: 70..90
   drops:
     - item:
         prefab: mineinabyss:corpse_weeper_meat_raw

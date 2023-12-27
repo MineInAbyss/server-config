@@ -1,11 +1,10 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [geary, mobzy, looty]
 inherit:
-  from: [ mineinabyss:hostile_flying ]
+  from: [mineinabyss:hostile_flying]
 set.mythicMob: dosetori
 displayName: "<#FFF821>Dosetori"
 deathLoot:
-  minExp: 60
-  maxExp: 100
+  exp: 60..100
   drops:
     - item:
         prefab: mineinabyss:dosetori_meat_raw

@@ -7,11 +7,8 @@ set.*:
     maxHealth: 20
     movementSpeed: 0.6
     followRange: 20
-  pathfinders:
-    override: false
 deathLoot:
-  minExp: 15
-  maxExp: 20
+  exp: 15..20
   drops:
     - item:
         prefab: mineinabyss:spiralsquid_raw

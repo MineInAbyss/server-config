@@ -7,11 +7,8 @@ set.modelengineModel:
 set.attributes:
   maxHealth: 12
   movementSpeed: 0.7
-  width: 0.6000
-  height: 0.6000
 deathLoot:
-  minExp: 10
-  maxExp: 15
+  exp: 10..15
   drops:
     - item:
         prefab: mineinabyss:billabonk_leg_raw

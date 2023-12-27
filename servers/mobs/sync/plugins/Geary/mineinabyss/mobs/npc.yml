@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.*:
   entityType: minecraft:pig
   attributes:
@@ -6,10 +6,11 @@ set.*:
     movementSpeed: 0.0
   pathfinders:
     goals:
-      1: !<minecraft:behavior.look_at_player>
-        startChance: 1.0
-important: {}
-sounds: {}
+      minecraft:behavior.*:
+        look_at_player:
+          startChance: 1.0
+important: { }
+sounds: { }
 prevent.*:
-  interaction: {}
-  riding: {}
+  interaction: { }
+  riding: { }

@@ -1,21 +1,19 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:hostile]
+  from: [ mineinabyss:hostile ]
 displayName: "<#2597D9>Steve"
-set.modelengineModel:
-  modelId: deathknight
-set.attributes:
-  maxHealth: 30
-  movementSpeed: 0.3000
-  attackDamage: 14
-  attackKnockback: 2
-  knockbackResistance: 0.5000
-  followRange: 20
-  width: 2
-  height: 7
+set.*:
+  modelengineModel:
+    modelId: deathknight
+  attributes:
+    maxHealth: 30
+    movementSpeed: 0.3000
+    attackDamage: 14
+    attackKnockback: 2
+    knockbackResistance: 0.5000
+    followRange: 20
 deathLoot:
-  minExp: 20
-  maxExp: 25
+  exp: 20..25
   drops:
     - item:
         prefab: mineinabyss:steve_eye

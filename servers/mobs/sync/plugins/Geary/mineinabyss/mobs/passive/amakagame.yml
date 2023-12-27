@@ -7,14 +7,9 @@ set.*:
     maxHealth: 50
     movementSpeed: 0
     knockbackResistance: 1
-    width: 4.5
-    height: 5
-  pathfinders:
-    override: false
 displayName: "<dark_purple>Amakagame"
 deathLoot:
-  minExp: 20
-  maxExp: 25
+  exp: 20..25
   drops:
     - item:
         prefab: mineinabyss:amakagame_whiskers

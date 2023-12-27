@@ -1,20 +1,33 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:hostile]
+  from: [ mineinabyss:hostile ]
 displayName: "<#C42D2D>Virinsipede"
-set.modelengineModel:
-  modelId: virinsipede
-set.attributes:
-  maxHealth: 20
-  movementSpeed: 0.3
-  attackDamage: 6
-  attackKnockback: 1
-  followRange: 20
-  width: 1.2
-  height: 0.2000
+set.*:
+  modelengineModel:
+    modelId: virinsipede
+  attributes:
+    maxHealth: 20
+    movementSpeed: 0.3
+    attackDamage: 6
+    attackKnockback: 1
+    followRange: 20
+  pathfinders:
+    targets:
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
+    goals:
+      minecraft:behavior.*:
+        melee_attack:
+          seeThroughWalls: true
+        leap_at_target:
+          jumpHeight: 0.2000
+        random_stroll_land: { }
+        look_at_player: { }
+        random_look_around: { }
+        float: { }
 deathLoot:
-  minExp: 15
-  maxExp: 25
+  exp: 15..25
   drops:
     - item:
         prefab: mineinabyss:virinsipede_segments
@@ -23,17 +36,4 @@ deathLoot:
     - item:
         prefab: mineinabyss:virinsipede_antlers
       dropChance: 0.3000
-sounds: {}
-set.pathfinders:
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<minecraft:behavior.melee_attack>
-      seeThroughWalls: true
-    2: !<minecraft:behavior.leap_at_target>
-      jumpHeight: 0.2000
-    4: !<minecraft:behavior.random_stroll_land>
-    8: !<minecraft:behavior.look_at_player>
-    9: !<minecraft:behavior.random_look_around>
-    10: !<minecraft:behavior.float>
+sounds: { }

@@ -1,17 +1,26 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:passive]
+  from: [ mineinabyss:passive ]
 displayName: "<#BDBDBD>Neritantan"
-set.modelengineModel:
-  modelId: neritantan
-set.attributes:
-  maxHealth: 7
-  movementSpeed: 0.2500
-  width: 0.6000
-  height: 0.6000
+set.*:
+  modelengineModel:
+    modelId: neritantan
+  attributes:
+    maxHealth: 7
+    movementSpeed: 0.2500
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        tempt:
+          items:
+            - type: CHORUS_FRUIT
+        avoid_player:
+          radius: 10
+        random_stroll_land: { }
 deathLoot:
-  minExp: 10
-  maxExp: 15
+  exp: 10..15
   drops:
     - item:
         prefab: mineinabyss:neritantan_meat_raw
@@ -44,13 +53,3 @@ sounds:
   hurt:
     sound: mineinabyss:entity.neritantan.hurt
     category: NEUTRAL
-set.pathfinders:
-  override: false
-  goals:
-    1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.tempt>
-      items:
-        - type: CHORUS_FRUIT
-    3: !<minecraft:behavior.avoid_player>
-      radius: 10
-    4: !<minecraft:behavior.random_stroll_land>

@@ -1,20 +1,36 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:passive]
+  from: [ mineinabyss:passive ]
 displayName: "<#D63624>Chimokami"
-set.modelengineModel:
-  modelId: chimokami
-set.attributes:
-  maxHealth: 30
-  movementSpeed: 0.3000
-  knockbackResistance: 0.0800
-  attackDamage: 4
-  followRange: 5
-  width: 2
-  height: 1
+set.*:
+  modelengineModel:
+    modelId: chimokami
+  attributes:
+    maxHealth: 30
+    movementSpeed: 0.3000
+    knockbackResistance: 0.0800
+    attackDamage: 4
+    followRange: 5
+  pathfinders:
+    override: false
+    #  targets:
+    #    mobzy:target.attacker: { }
+    #    2: !<minecraft:target.nearest_player>
+    goals:
+      #    melee_attack:
+      #      attackSpeed: 1
+      #      range: 3
+      #      seeThroughWalls: true
+      minecraft:behavior.*:
+        tempt:
+          items:
+            - type: APPLE
+            - type: APPLE
+        avoid_player:
+          radius: 15
+        random_stroll_land: { }
 deathLoot:
-  minExp: 20
-  maxExp: 25
+  exp: 20..25
   drops:
     - item:
         prefab: mineinabyss:chimokami_tail
@@ -25,21 +41,4 @@ deathLoot:
         prefab: mineinabyss:chimokami_fang
       maxAmount: 2
       dropChance: 0.7000
-sounds: {}
-set.pathfinders:
-  override: false
-#  targets:
-#    1: !<mobzy:target.attacker>
-#    2: !<minecraft:target.nearest_player>
-  goals:
-#    1: !<minecraft:behavior.melee_attack>
-#      attackSpeed: 1
-#      range: 3
-#      seeThroughWalls: true
-    1: !<minecraft:behavior.tempt>
-      items:
-        - type: APPLE
-        - type: APPLE
-    2: !<minecraft:behavior.avoid_player>
-      radius: 15
-    3: !<minecraft:behavior.random_stroll_land>
+sounds: { }

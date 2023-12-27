@@ -1,22 +1,39 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
   from: [ mineinabyss:hostile ]
 displayName: "<#8F2222>Uibuta"
-set.modelengineModel:
-  modelId: uibuta
-  scale: '1.5..2.0'
-set.attributes:
-  maxHealth: 50
-  movementSpeed: 0.35
-  attackDamage: 9.5000
-  attackKnockback: 2
-  knockbackResistance: 0.1000
-  followRange: 30
-  width: 1.5000
-  height: 1.5000
+set.*:
+  modelengineModel:
+    modelId: uibuta
+    scale: '1.5..2.0'
+  attributes:
+    maxHealth: 50
+    movementSpeed: 0.35
+    attackDamage: 9.5000
+    attackKnockback: 2
+    knockbackResistance: 0.1000
+    followRange: 30
+  equipment:
+    boots:
+      type: STONE
+      enchantments:
+        - enchant: depth_strider
+          level: 3
+  pathfinders:
+    targets:
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
+    goals:
+      minecraft:behavior.*:
+        melee_attack:
+          seeThroughWalls: true
+        random_stroll_land: { }
+        look_at_player: { }
+        random_look_around: { }
+        float: { }
 deathLoot:
-  minExp: 65
-  maxExp: 95
+  exp: 65..95
   drops:
     - item:
         prefab: mineinabyss:uibuta_meat_raw
@@ -39,20 +56,3 @@ sounds:
   hurt:
     sound: mineinabyss:entity.ottobas.hurt
     category: HOSTILE
-set.equipment:
-  boots:
-    type: STONE
-    enchantments:
-      - enchant: depth_strider
-        level: 3
-set.pathfinders:
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<minecraft:behavior.melee_attack>
-      seeThroughWalls: true
-    4: !<minecraft:behavior.random_stroll_land>
-    8: !<minecraft:behavior.look_at_player>
-    9: !<minecraft:behavior.random_look_around>
-    10: !<minecraft:behavior.float>

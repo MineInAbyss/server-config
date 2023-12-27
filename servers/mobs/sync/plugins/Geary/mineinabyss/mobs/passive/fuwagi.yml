@@ -7,11 +7,8 @@ set.modelengineModel:
 set.attributes:
   maxHealth: 10
   movementSpeed: 0.2500
-  width: 1
-  height: 1
 deathLoot:
-  minExp: 10
-  maxExp: 16
+  exp: 10..16
   drops:
     - item:
         prefab: mineinabyss:fuwagi_meat_raw

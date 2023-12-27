@@ -10,18 +10,16 @@ set.*:
     movementSpeed: 0.1000
     knockbackResistance: 0.1500
     followRange: 20
-    width: 2.5000
-    height: 2
   pathfinders:
     goals:
-      1: !<minecraft:behavior.float>
-      2: !<minecraft:behavior.panic>
-        speedModifier: 3
-      3: !<minecraft:behavior.random_stroll_land>
-      4: !<minecraft:behavior.look_at_player>
+      minecraft:behavior.*:
+        float: { }
+        panic:
+          speedModifier: 3
+        random_stroll_land: { }
+        look_at_player: { }
 deathLoot:
-  minExp: 25
-  maxExp: 40
+  exp: 25..40
   drops:
     - item:
         prefab: mineinabyss:abyssal_snail_shell

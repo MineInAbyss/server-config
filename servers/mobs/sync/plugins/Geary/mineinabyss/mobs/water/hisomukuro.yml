@@ -10,15 +10,15 @@ set.*:
     attackKnockback: 2
     knockbackResistance: 0.8000
     followRange: 40
-    width: 2
-    height: 2
   pathfinders:
     targets:
-      1: !<mobzy:target.attacker>
-      2: !<mobzy:target.nearest_player>
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
     goals:
-      1: !<minecraft:behavior.melee_attack>
-        seeThroughWalls: true
+      minecraft:behavior.*:
+        melee_attack:
+          seeThroughWalls: true
 displayName: "<#C8C8C8>Hisomukuro"
 children:
   nameToComponents:
@@ -39,8 +39,7 @@ event.conditions:
   expressions:
     - any -> child(blindnessCondition) -> child(blindness)
 deathLoot:
-  minExp: 200
-  maxExp: 250
+  exp: 200..250
   drops:
     - item:
         prefab: mineinabyss:hisomukuro_fin

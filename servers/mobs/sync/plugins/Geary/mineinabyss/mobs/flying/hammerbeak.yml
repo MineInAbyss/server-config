@@ -1,11 +1,10 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [geary, mobzy, looty]
 inherit:
-  from: [ mineinabyss:hostile_flying ]
+  from: [mineinabyss:hostile_flying]
 set.mythicMob: hammerbeak
 displayName: "<#613F0C>Hammerbeak"
 deathLoot:
-  minExp: 25
-  maxExp: 45
+  exp: 25..45
   drops:
     - item:
         prefab: mineinabyss:hammerbeak_wing_raw
@@ -27,4 +26,4 @@ deathLoot:
       minAmount: 1
       maxAmount: 2
       dropChance: 0.5000
-sounds: { }
+sounds: {}

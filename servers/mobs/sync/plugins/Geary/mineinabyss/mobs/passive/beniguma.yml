@@ -2,31 +2,30 @@ namespaces: [geary, mobzy, looty]
 inherit:
   from: [mineinabyss:passive]
 displayName: "<red>Beniguma"
-set.modelengineModel:
-  modelId: beniguma
-set.attributes:
-  maxHealth: 30
-  movementSpeed: 0.3000
-  attackDamage: 4
-  followRange: 20
-  width: 0.9
-  height: 0.9
+set.*:
+  modelengineModel:
+    modelId: beniguma
+  attributes:
+    maxHealth: 30
+    movementSpeed: 0.3000
+    attackDamage: 4
+    followRange: 20
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        tempt:
+          items:
+            - type: SWEET_BERRIES
+        avoid_player:
+          radius: 10
+        random_stroll_land: { }
 deathLoot:
-  minExp: 13
-  maxExp: 20
+  exp: 13..20
   drops:
     - item:
         type: SWEET_BERRIES
       maxAmount: 3
       dropChance: 0.5000
 sounds: {}
-set.pathfinders:
-  override: false
-  goals:
-    1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.tempt>
-      items:
-        - type: SWEET_BERRIES
-    3: !<minecraft:behavior.avoid_player>
-      radius: 10
-    4: !<minecraft:behavior.random_stroll_land>

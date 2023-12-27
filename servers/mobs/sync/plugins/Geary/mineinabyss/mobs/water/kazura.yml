@@ -8,11 +8,8 @@ set.*:
     maxHealth: 5
     followRange: 10
     movementSpeed: 0.2
-  pathfinders:
-    override: false
 deathLoot:
-  minExp: 10
-  maxExp: 15
+  exp: 10..15
   drops:
     - item:
         prefab: mineinabyss:kazura_squid_ink_sac

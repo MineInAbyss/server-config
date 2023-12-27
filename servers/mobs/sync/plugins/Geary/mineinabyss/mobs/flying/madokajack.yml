@@ -1,11 +1,10 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [geary, mobzy, looty]
 inherit:
-  from: [ mineinabyss:hostile_flying ]
+  from: [mineinabyss:hostile_flying]
 set.mythicMob: madokajack
 displayName: "<#1C439E>Madokajack"
 deathLoot:
-  minExp: 40
-  maxExp: 60
+  exp: 40..60
   drops:
     - item:
         prefab: mineinabyss:madokajack_scales

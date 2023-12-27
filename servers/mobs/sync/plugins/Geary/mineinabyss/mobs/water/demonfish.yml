@@ -1,15 +1,15 @@
 namespaces: [geary, mobzy, looty]
 set.entityType: minecraft:axolotl
 displayName: "<#257BEB>Demonfish"
-set.modelengineModel:
-  modelId: demonfish
-set.attributes:
-  maxHealth: 20
-  movementSpeed: 1.2
-  followRange: 20
+set.*:
+  modelengineModel:
+    modelId: demonfish
+  attributes:
+    maxHealth: 20
+    movementSpeed: 1.2
+    followRange: 20
 deathLoot:
-  minExp: 15
-  maxExp: 20
+  exp: 15..20
   drops:
     - item:
         prefab: mineinabyss:demonfish_raw
@@ -20,6 +20,4 @@ bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:demonfish_bucket
-set.pathfinders:
-  override: false
 prevent.breeding: {}

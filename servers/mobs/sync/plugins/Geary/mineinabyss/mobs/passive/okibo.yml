@@ -10,8 +10,7 @@ set.attributes:
   movementSpeed: 0.2000
   knockbackResistance: 0.2000
 deathLoot:
-  minExp: 20
-  maxExp: 25
+  exp: 20..25
   drops:
     - item:
         prefab: mineinabyss:okibo_meat_raw
@@ -29,6 +28,7 @@ sounds: {}
 set.pathfinders:
   override: false
   goals:
-    1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.random_stroll_land>
-    3: !<minecraft:behavior.look_at_player>
+    minecraft:behavior.*:
+      float: { }
+      random_stroll_land: { }
+      look_at_player: { }

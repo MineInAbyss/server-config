@@ -1,18 +1,32 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.entityType: minecraft:pig
 displayName: "<#FF771C>Makihige"
-set.modelengineModel:
-  modelId: makihige
-set.attributes:
-  maxHealth: 60
-  movementSpeed: 0.2000
-  knockbackResistance: 0.2000
-  width: 2
-  height: 2
-sounds: {}
+set.*:
+  modelengineModel:
+    modelId: makihige
+  attributes:
+    maxHealth: 60
+    movementSpeed: 0.2000
+    knockbackResistance: 0.2000
+    width: 2
+    height: 2
+  equipment:
+    boots:
+      type: STONE
+      enchantments:
+        - enchant: depth_strider
+          level: 20
+  pathfinders:
+    override: false
+    goals:
+      minecraft:behavior.*:
+        float: { }
+        panic: { }
+        avoid_player:
+          radius: 5
+sounds: { }
 deathLoot:
-  minExp: 15
-  maxExp: 30
+  exp: 15..30
   drops:
     - item:
         prefab: mineinabyss:makihige_ink_sac
@@ -26,16 +40,3 @@ deathLoot:
       minAmount: 1
       maxAmount: 2
       dropChance: 0.4000
-set.equipment:
-  boots:
-    type: STONE
-    enchantments:
-      - enchant: depth_strider
-        level: 20
-set.pathfinders:
-  override: false
-  goals:
-    1: !<minecraft:behavior.float>
-    2: !<minecraft:behavior.panic>
-    3: !<minecraft:behavior.avoid_player>
-      radius: 5

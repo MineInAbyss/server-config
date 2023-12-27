@@ -1,18 +1,29 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:hostile]
+  from: [ mineinabyss:hostile ]
 displayName: "<dark_green>Tesuchi"
-set.modelengineModel:
-  modelId: tesuchi
-set.attributes:
-  maxHealth: 5
-  movementSpeed: 0.1500
-  attackDamage: 0
-  width: 0.6000
-  height: 0.6000
+set.*:
+  modelengineModel:
+    modelId: tesuchi
+  attributes:
+    maxHealth: 5
+    movementSpeed: 0.1500
+    attackDamage: 0
+  pathfinders:
+    targets:
+      mobzy:target.*:
+        attacker: { }
+        nearest_player: { }
+    goals:
+      minecraft:behavior.*:
+        melee_attack:
+          seeThroughWalls: true
+        random_stroll_land: { }
+        look_at_player: { }
+        random_look_around: { }
+        float: { }
 deathLoot:
-  minExp: 10
-  maxExp: 15
+  exp: 10..15
   drops:
     - item:
         prefab: mineinabyss:tesuchi_scales
@@ -22,15 +33,4 @@ deathLoot:
     - item:
         prefab: mineinabyss:tesuchi_tail
       maxAmount: 1
-sounds: {}
-set.pathfinders:
-  targets:
-    1: !<mobzy:target.attacker>
-    2: !<mobzy:target.nearest_player>
-  goals:
-    1: !<minecraft:behavior.melee_attack>
-      seeThroughWalls: true
-    4: !<minecraft:behavior.random_stroll_land>
-    8: !<minecraft:behavior.look_at_player>
-    9: !<minecraft:behavior.random_look_around>
-    10: !<minecraft:behavior.float>
+sounds: { }
