@@ -104,6 +104,11 @@ channels:
     simpleConsoleMessages: false
     proxy: true
     discordsrv: true
+    messageDeletion:
+      enabled: true
+      position: SUFFIX
+      format: ' <gray>[<red>X</red>]</gray>'
+      notifyStaff: true
     isDefaultChannel: true
     isStaffChannel: false
     format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''<light_purple><b><chatty_nickname><newline></b>
@@ -123,6 +128,11 @@ channels:
     logToConsole: true
     simpleConsoleMessages: true
     discordsrv: false
+    messageDeletion:
+      enabled: true
+      position: SUFFIX
+      format: ' <gray>[<red>X</red>]</gray>'
+      notifyStaff: true
     format: "%chatty_player_head% %luckperms_prefix% 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
@@ -141,6 +151,11 @@ channels:
     discordsrv: false
     isDefaultChannel: false
     isStaffChannel: false
+    messageDeletion:
+      enabled: true
+      position: SUFFIX
+      format: ' <gray>[<red>X</red>]</gray>'
+      notifyStaff: true
     format: ':survival::space_-4::local:<hover:show_text:'' <light_purple><b><chatty_nickname><newline>
       <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
       <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
