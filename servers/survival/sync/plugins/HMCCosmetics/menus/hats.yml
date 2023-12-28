@@ -1,32 +1,17 @@
 title: ":space_-8::cosmetic_grid_menu:"
 rows: 6
 items:
-  bondrewd_helmet:
+  habo_hat:
     slots:
       - 0
     item:
-      material: hmccosmetics:bondrewd_helmet
-    locked-item:
-      material: hmccosmetics:bondrewd_helmet
-      lore:
-        - ""
-        - "<red>1 :cosmetic_orth_coin:"
-        - "<green>[Left Click - <i>Try</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 1
-    cosmetic: bondrewd_helmet
-  habo_hat:
-    slots:
-      - 1
-    item:
       material: hmccosmetics:habo_hat
+      lore: []
     locked-item:
       material: hmccosmetics:habo_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -35,14 +20,15 @@ items:
     cosmetic: habo_hat
   lyza_hat:
     slots:
-      - 2
+      - 1
     item:
       material: hmccosmetics:lyza_hat
+      lore: []
     locked-item:
       material: hmccosmetics:lyza_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -51,14 +37,15 @@ items:
     cosmetic: lyza_hat
   marulk_hat:
     slots:
-      - 3
+      - 2
     item:
       material: hmccosmetics:marulk_hat
+      lore: []
     locked-item:
       material: hmccosmetics:marulk_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -67,14 +54,15 @@ items:
     cosmetic: marulk_hat
   nanachi_hat:
     slots:
-      - 4
+      - 3
     item:
       material: hmccosmetics:nanachi_hat
+      lore: []
     locked-item:
       material: hmccosmetics:nanachi_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -83,14 +71,15 @@ items:
     cosmetic: nanachi_hat
   ozen_hat:
     slots:
-      - 5
+      - 4
     item:
       material: hmccosmetics:ozen_hat
+      lore: []
     locked-item:
       material: hmccosmetics:ozen_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -99,14 +88,15 @@ items:
     cosmetic: ozen_hat
   pruskha_hat:
     slots:
-      - 6
+      - 5
     item:
       material: hmccosmetics:pruskha_hat
+      lore: []
     locked-item:
       material: hmccosmetics:pruskha_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
@@ -115,118 +105,129 @@ items:
     cosmetic: pruskha_hat
   reg_hat:
     slots:
-      - 7
+      - 6
     item:
       material: hmccosmetics:reg_hat
+      lore: []
     locked-item:
       material: hmccosmetics:reg_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
     cosmetic: reg_hat
-  menacing:
-    slots:
-      - 8
-    item:
-      material: hmccosmetics:menacing
-    locked-item:
-      material: hmccosmetics:menacing
-      lore:
-        - ""
-        - "<red>1 :cosmetic_orth_coin:"
-        - "<green>[Left Click - <i>Try</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 1
-    cosmetic: menacing
-  albedo_horns:
-    slots:
-      - 9
-    item:
-      material: hmccosmetics:albedo_horns
-    locked-item:
-      material: hmccosmetics:albedo_horns
-      lore:
-        - ""
-        - "<red>1 :cosmetic_orth_coin:"
-        - "<green>[Left Click - <i>Try</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 1
-    cosmetic: albedo_horns
-  benner_cosplay:
-    slots:
-      - 10
-    item:
-      material: hmccosmetics:benner_cosplay
-    locked-item:
-      material: hmccosmetics:benner_cosplay
-      lore:
-        - ""
-        - "<red>1 :cosmetic_orth_coin:"
-        - "<green>[Left Click - <i>Try</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 1
-    cosmetic: benner_cosplay
   faputa_hat:
     slots:
-      - 11
+      - 7
     item:
       material: hmccosmetics:faputa_hat
+      lore: [ ]
     locked-item:
       material: hmccosmetics:faputa_hat
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
     cosmetic: faputa_hat
-  deadmau5_helmet:
+  menacing:
     slots:
-      - 11
+      - 9
     item:
-      material: hmccosmetics:deadmau5_helmet
+      material: hmccosmetics:menacing
+      lore: []
     locked-item:
-      material: hmccosmetics:deadmau5_helmet
+      material: hmccosmetics:menacing
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
-    cosmetic: deadmau5_helmet
+    cosmetic: menacing
+  benner_cosplay:
+    slots:
+      - 10
+    item:
+      material: hmccosmetics:benner_cosplay
+      lore: []
+    locked-item:
+      material: hmccosmetics:benner_cosplay
+      lore:
+        - ""
+        - "<gold>1:cosmetic_orth_coin:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
+    cosmetic: benner_cosplay
   mining_helmet:
     slots:
-      - 12
+      - 11
     item:
       material: hmccosmetics:mining_helmet
+      lore: []
     locked-item:
       material: hmccosmetics:mining_helmet
       lore:
         - ""
-        - "<red>1 :cosmetic_orth_coin:"
+        - "<gold>1:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
     cosmetic: mining_helmet
-  
 
+
+  bondrewd_helmet:
+    slots:
+      - 18
+    item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<rainbow>Dyeable"
+    locked-item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: bondrewd_helmet
+  deadmau5_helmet:
+    slots:
+      - 19
+    item:
+      material: hmccosmetics:deadmau5_helmet
+      lore:
+        - ""
+        - "<rainbow>Dyeable"
+    locked-item:
+      material: hmccosmetics:deadmau5_helmet
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: deadmau5_helmet
 
   back_button:
     slots:
