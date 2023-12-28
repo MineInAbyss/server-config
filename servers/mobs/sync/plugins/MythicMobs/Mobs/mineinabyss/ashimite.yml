@@ -13,6 +13,7 @@ ashimite:
   Options:
     KnockbackResistance: 0.07
     Collidable: true
+    Color: LIGHT_BLUE
     Silent: true
     FollowRange: 48
     interactable: true
