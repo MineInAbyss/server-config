@@ -6,10 +6,13 @@ items:
       - 0
     item:
       material: hmccosmetics:backpack
+    locked-item:
+      material: hmccosmetics:backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_backpack%"
+        - "<gold>1:cosmetic_orth_coin:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
@@ -24,14 +27,38 @@ items:
       - 1
     item:
       material: hmccosmetics:satchel
+    locked-item:
+      material: hmccosmetics:satchel
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_satchel%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_satchel%"
+        - "<gold>1:cosmetic_orth_coin:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
     cosmetic: satchel
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  generic_backpack:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:generic_backpack
+    locked-item:
+      material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<gold>1:cosmetic_orth_coin:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 1
+    cosmetic: generic_backpack
     actions:
       on-equip:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
@@ -42,10 +69,13 @@ items:
       - 3
     item:
       material: hmccosmetics:neritantan_backpack
+    locked-item:
+      material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_backpack%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_backpack%"
+        - "<gold>1:cosmetic_orth_coin:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
     cost: 1
@@ -69,6 +99,13 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
+    locked-item:
+      material: hmccosmetics:camper_backpack
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
     cost: 1
@@ -87,6 +124,13 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
+    locked-item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
     cost: 1
@@ -105,6 +149,13 @@ items:
         - ""
         - "<gray><i>Patreon-Exclusive"
         - "<rainbow>Dyeable"
+    locked-item:
+      material: hmccosmetics:explorer_backpack
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
     cost: 1
@@ -114,29 +165,6 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-  generic_backpack:
-    slots:
-      - 2
-    item:
-      material: hmccosmetics:generic_backpack
-      lore:
-        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
-        - ''
-        - '<white>௰ <#F7DCFA>Click to apply!'
-      locked-lore:
-        - '<#F7DCFA>Available at the <#D24C9F>Backpack Vendor<#F7DCFA>.'
-        - ''
-        - '<white>௱ <#E63946>You have not unlocked this item!'
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 1
-    cosmetic: generic_backpack
-    actions:
-      on-equip:
-        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
-      on-unequip:
-        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-
 
 
   back_button:
