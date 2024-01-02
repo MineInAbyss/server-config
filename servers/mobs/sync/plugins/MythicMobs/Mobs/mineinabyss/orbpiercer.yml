@@ -42,7 +42,7 @@ OrbPiercer:
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
     - skill{s=orbyATTACK} @self ~onAttack
     #- skill{s=Changetarget} ~onTimer:160 <99%
-
+    - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear2} @target ~onTimer:20 <50%

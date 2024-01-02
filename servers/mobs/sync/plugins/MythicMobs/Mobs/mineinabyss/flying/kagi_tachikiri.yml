@@ -1,6 +1,6 @@
 kagi_tachikiri:
   Type: ALLAY
-  Health: 45
+  Health: 50
   Damage: 6
   AIGoalSelectors:
     - clear
