@@ -13,3 +13,33 @@ sfSpiderWebShot-Hit:
   - damage{a=2;pk=true} @target
   - potion{type=POISON;lvl=1;duration=100} @target 0.2
   - potion{type=HUNGER;lvl=1;duration=100} @target 0.2
+
+silkfangAmbient:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.ambient;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.phantom.ambient;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
+
+silkfangHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.hurt;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.silverfish.hurt;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.phantom.hurt;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
+  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+
+silkfangDeath:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.death;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.silverfish.death;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.phantom.death;sc=master;p=<random.float.1.45to1.55>;v=0.3} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=20;repeatInterval=1} @self

@@ -3,27 +3,7 @@ inherit:
   from: [mineinabyss:passive]
 displayName: "<#85562D>Shroombear"
 set.*:
-  modelengineModel:
-    modelId: shroombear
-  attributes:
-    maxHealth: 25
-    movementSpeed: 0.2
-    knockbackResistance: 0.05
-    width: 0.7
-    height: 0.7
-  pathfinders:
-    override: false
-    goals:
-      minecraft:behavior.*:
-        float: { }
-        tempt:
-          items:
-            - prefab: mineinabyss:parasitic_watershrooms
-          losesInterest: false
-          speed: 1.0
-        avoid_player:
-          radius: 10
-        random_stroll_land: { }
+  mythicMob: shroombear
 deathLoot:
   exp: 15..20
   drops:

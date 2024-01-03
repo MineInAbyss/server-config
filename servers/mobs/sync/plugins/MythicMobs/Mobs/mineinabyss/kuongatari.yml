@@ -1,7 +1,7 @@
 Kuongatari:
   Type: CAVE_SPIDER
   Health: 40
-  Damage: 8
+  Damage: 9
   AITargetSelectors:
     - clear
     - attacker
@@ -12,7 +12,7 @@ Kuongatari:
     KnockbackResistance: 1
     #DigOutOfGround: true
     Collidable: true
-    Silent: true
+    #Silent: false
     FollowRange: 48
     MovementSpeed: 0.32
     MaxCombatDistance: 35
@@ -22,16 +22,16 @@ Kuongatari:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 1.3
+    Scale: 1.2
   DamageModifiers:
     - DROWNING 0
   Skills:
-    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
-    - shieldbreak{duration=100} @target ~onattack 0.1
+    - skill{s=Kuon_Summon} @target ~onDamaged <50% 0.3
+    - shieldbreak{duration=100} @target ~onattack 0.25
 Kuongatari_summon:
   Type: CAVE_SPIDER
   Display: Kuongatari_Summon
-  Health: 15
+  Health: 16
   Damage: 7
   AITargetSelectors:
     - clear
@@ -43,14 +43,14 @@ Kuongatari_summon:
     KnockbackResistance: 1
     #DigOutOfGround: true
     Collidable: true
-    Silent: true
+   # Silent: true
     FollowRange: 48
     MovementSpeed: 0.4
     MaxCombatDistance: 35
   Equipment:
     - TORCH HAND
   Drops:
-    - exp 15-25
+    - exp 5-15
     - geary mineinabyss:kuongatari_juice 1 0.05
     - geary mineinabyss:kuongatari_silk 1 0.2
   Model:
@@ -58,7 +58,7 @@ Kuongatari_summon:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 0.8
+    Scale: 0.6
   DamageModifiers:
     - DROWNING 0
   Skills:

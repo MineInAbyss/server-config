@@ -1,7 +1,7 @@
 Stingerhead:
   Type: SPIDER
   Health: 250
-  Damage: 9
+  Damage: 11
   AIGoalSelectors:
     - clear
     - spiderattack
