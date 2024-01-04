@@ -1,0 +1,82 @@
+############ Shroombear #############
+
+# Misc #
+qmob_shroombearstep:
+  Cooldown: 0
+  Conditions:
+  - onground{} true
+  Skills:
+  - sound{s=entity.camel.step;sc=master;p=<random.float.1.5to1.6>;v=0.3} @self
+  - sound{s=block.wool.step;sc=master;p=<random.float.1.5to1.6>;v=0.1} @self
+
+bloodEffectShroombear:
+  Cooldown: 0.1
+  Skills:
+  - effect:particles{particle=block;m=red_concrete_powder;a=3;hs=0.4;vs=0.1;s=0} #
+  - effect:particles{particle=block;m=red_nether_bricks;a=3;hs=0.35;vs=0.1;s=0}    # Simple blood effect
+  - effect:particles{particle=block;m=nether_wart_block;a=5;hs=0.35;vs=0.1;s=0}    # Remove if there are
+  - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.35;vs=0.15;s=0}       # children or otherwise.
+
+shroombearAmbient:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.camel.ambient;sc=master;p=<random.float.1.65to1.75>;v=1.1} @self
+  - sound{s=entity.llama.ambient;sc=master;p=<random.float.0.85to0.95>;v=0.7} @self
+
+shroombearHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.llama.hurt;sc=master;p=<random.float.0.8to0.9>;v=1.1} @self
+  - sound{s=entity.camel.hurt;sc=master;p=<random.float.1.5to1.6>;v=1.1} @self
+  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+
+shroombearDeath:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.camel.sit;sc=master;p=<random.float.1.7to1.8>;v=1.1} @self
+  - sound{s=entity.llama.death;sc=master;p=<random.float.0.8to0.9>;v=1.1} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=5;repeatInterval=1} @self
+
+shroombearHarvest: # for harvesting the mob's corpse
+  Cooldown: 30
+  Skills:
+  - effect:particles{particle=block;m=red_concrete_powder;a=6;hs=0.45;vs=0.3;s=0;repeat=2;repeatInterval=10} #
+  - effect:particles{particle=block;m=red_nether_bricks;a=6;hs=0.35;vs=0.3;s=0;repeat=2;repeatInterval=10}    # Simple blood effect
+  - effect:particles{particle=block;m=nether_wart_block;a=8;hs=0.35;vs=0.3;s=0;repeat=2;repeatInterval=10}    # Remove if there are
+  - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.35;vs=0.35;s=0;repeat=2;repeatInterval=10}       # children or otherwise.
+  - effect:itemspray{item=PORKCHOP;ap=true;amount=1;velocity=0.75;vy=0.75;d=200;repeat=<random.0to2>;repeatInterval=10} @self # change this to whatever drops you want, mushrooms etc.
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=entity.sheep.shear;p=1.6;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - delay 20
+  - effect:particles{particle=white_ash;a=10;hs=0.5;vs=0.1;y=0.1;repeat=4;repeatInterval=1} @self
+  - effect:particles{particle=cloud;a=20;hs=0.5;vs=0.1;y=0.2;repeat=4;repeatInterval=1} @self
+  - sound{s=block.honey_block.break;p=1.4;v=0.95;sc=master} @self
+  - delay 1
+  - remove @self
+
+# Abilities #
+
+shroombearHeal:
+  Cooldown: 10
+  Conditions:
+  Skills:
+  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master} @self
+  - effect:particles{particle=block;m=magenta_candle;a=6;hs=0.4;vs=0.1;s=0;y=1;repeat=10;repeatInterval=2}
+  - effect:particles{particle=block;m=purple_glazed_terracotta;a=6;hs=0.4;vs=0.1;y=1;s=0;repeat=10;repeatInterval=2}
+  - potion{t=REGENERATION;l=1;force=true;p=false;d=120} @self
