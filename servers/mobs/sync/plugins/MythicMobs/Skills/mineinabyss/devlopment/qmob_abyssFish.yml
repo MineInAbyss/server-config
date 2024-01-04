@@ -1,0 +1,103 @@
+qmob_ikenosuke:
+  Type: COD
+  Display: 'Ikenosuke'  # change this
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - fleeplayers
+  - randomlookaround
+  - movetowater
+  AITargetSelectors:
+  - clear
+  Faction: fish
+  Health: 12 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Despawn: false
+    Silent: false
+    PreventOtherDrops: true
+    FollowRange: 25
+    MovementSpeed: 0.25
+    KnockbackResistance: 0.0
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  ####### Misc
+  - model{mid=qmob_ikenosuke} @self ~onSpawn
+  - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}
+  - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}
+  - effect:particles{particle=bubble;a=1;hs=0.1;vs=0.05;s=0;y=0} @self ~onTimer:2 ?inBlock{b=WATER} ?inCombat{} ?isMoving{}
+
+qmob_demonfish:
+  Type: SALMON
+  Display: 'Demonfish'  # change this
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - movetowater
+  - meleeattack
+  - movetowardstarget
+  - fleeplayers
+  - randomlookaround
+  - randomfly
+  AITargetSelectors:
+  - clear
+  - attacker
+  Faction: fish
+  Health: 18 # change this
+  Damage: 0.2
+  Options:
+    Despawn: false
+    Silent: false
+    PreventOtherDrops: true
+    FollowRange: 25
+    MovementSpeed: 0.22
+    KnockbackResistance: 0.0
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  ####### Misc
+  - model{mid=qmob_demonfish} @self ~onSpawn
+  - look{immediately=true} @targetLocation ~onTimer:10
+  - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
+
+qmob_swarmshocker:
+  Type: COD
+  Display: 'Swarmshocker'  # change this
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - fleeplayers
+  - randomlookaround
+  - randomfly
+  - movetowater
+  AITargetSelectors:
+  - clear
+  Faction: swarmshockers
+  Health: 10 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Despawn: false
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 10
+    MovementSpeed: 0.25
+    KnockbackResistance: 1.0
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  ####### Misc
+  - model{mid=qmob_swarmshocker} @self ~onSpawn
+  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%
+  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onTimer:165 ?inCombat{} ?inBlock{b=WATER}
+  - sound{s=entity.glow_squid.hurt;sc=master;p=1.95;v=0.65;cd=0.5} @self ~onHurt 0.8
+  - sound{s=entity.glow_squid.ambient;sc=master;p=1.95;v=0.45;cd=0.5;delay=<random.0to13>} @self ~onTimer:137 0.55
+  - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath
+  - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
+  - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
