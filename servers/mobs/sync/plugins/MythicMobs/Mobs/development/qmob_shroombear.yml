@@ -20,7 +20,7 @@ qmob_shroombear:
     FollowRange: 10
     MovementSpeed: 0.25
     KnockbackResistance: 1.0
-  Drops: # put stuff here
+
   DamageModifiers:
 
   Skills:
@@ -36,39 +36,3 @@ qmob_shroombear:
   - skill{s=shroombearHurt} @self ~onHurt
   - skill{s=shroombearDeath} @self ~onDeath
   - skill{s=bloodEffectShroombear} @self ~onHurt <100%
-  - summon{type=qmob_shroombearCorpse;amount=1;radius=0;delay=20} @self ~onDeath
-
-qmob_shroombearCorpse:
-  Type: ARMOR_STAND
-  Display: 'Shroombear Corpse'
-  Options:
-    Interactable: false
-    NoGravity: false
-    HasGravity: true
-    KnockbackResistance: 1.0
-    Invisible: true
-    Small: true
-  Skills:
-  - model{mid=qmob_shroombearcorpse;lp=true;ly=true;rad=50} @self ~onSpawn
-  - velocity{m=add;x=0;y=-0.6;z=0} @self ~onTimer:5
-  - remove{delay=1200} @self ~onSpawn
-  - effect:particlesphere{particle=cloud;r=1.3;a=60;hs=0.25;vs=0.25;y=0.25;delay=16} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=torso} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=head} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=tail} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=frontlegl} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=frontlegr} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=rearlegl} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=false;p=rearlegr} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=torso;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=head;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=tail;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=frontlegl;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=frontlegr;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=rearlegl;delay=20} @self ~onSpawn
-  - partvisibility{m=qmob_shroombearcorpse;v=true;p=rearlegr;delay=20} @self ~onSpawn
-  - effect:particles{particle=white_ash;a=10;hs=0.5;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - effect:particles{particle=cloud;a=20;hs=0.5;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - sound{s=block.candle.extinguish;sc=master;p=<random.float.1.9to2.0>;v=1.1;delay=1195} @self ~onSpawn
-  - sound{s=block.fire.extinguish;sc=master;p=<random.float.0.6to0.7>;v=0.8;delay=1195} @self ~onSpawn
-  - skill{s=shroombearHarvest} @self ~onInteract ?~holding{m=SHEARS}

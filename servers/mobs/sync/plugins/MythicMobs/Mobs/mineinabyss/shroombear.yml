@@ -21,11 +21,11 @@ shroombear:
     MovementSpeed: 0.22
   DamageModifiers:
   Model:
-    Id: shroombear
+    Id: qmob_shroombear
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 1
+    Scale: 0.8
   Skills:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack
@@ -56,11 +56,11 @@ baby_shroombear:
     MovementSpeed: 0.18
   DamageModifiers:
   Model:
-    Id: shroombear
+    Id: qmob_shroombear
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 0.5
+    Scale: 0.3
   Skills:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack

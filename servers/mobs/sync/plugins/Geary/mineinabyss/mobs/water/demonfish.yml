@@ -1,13 +1,7 @@
 namespaces: [geary, mobzy, looty]
-set.entityType: minecraft:axolotl
 displayName: "<#257BEB>Demonfish"
 set.*:
-  modelengineModel:
-    modelId: demonfish
-  attributes:
-    maxHealth: 20
-    movementSpeed: 1.2
-    followRange: 20
+  mythicMob: demonfish
 deathLoot:
   exp: 15..20
   drops:

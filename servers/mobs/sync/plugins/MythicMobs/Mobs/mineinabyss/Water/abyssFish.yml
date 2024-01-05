@@ -1,6 +1,5 @@
-qmob_ikenosuke:
+ikenosuke:
   Type: COD
-  Display: 'Ikenosuke'  # change this
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -30,9 +29,8 @@ qmob_ikenosuke:
   - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}
   - effect:particles{particle=bubble;a=1;hs=0.1;vs=0.05;s=0;y=0} @self ~onTimer:2 ?inBlock{b=WATER} ?inCombat{} ?isMoving{}
 
-qmob_demonfish:
+demonfish:
   Type: SALMON
-  Display: 'Demonfish'  # change this
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -65,9 +63,8 @@ qmob_demonfish:
   - look{immediately=true} @targetLocation ~onTimer:10
   - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
 
-qmob_swarmshocker:
+swarmshocker:
   Type: COD
-  Display: 'Swarmshocker'  # change this
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -87,7 +84,7 @@ qmob_swarmshocker:
     PreventOtherDrops: true
     FollowRange: 10
     MovementSpeed: 0.25
-    KnockbackResistance: 1.0
+    KnockbackResistance: 0.0
   Drops: # put stuff here
   DamageModifiers:
 

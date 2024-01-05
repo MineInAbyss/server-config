@@ -1,0 +1,11 @@
+namespaces: [geary, mobzy, looty]
+displayName: "<#257BEB>Swarm shocker"
+set.*:
+  mythicMob: swarmshocker
+deathLoot:
+  exp: 15..20
+  drops:
+    - item: { prefab: mineinabyss:swarmshocker_raw }
+      dropChance: 0.6000
+sounds: {}
+prevent.breeding: {}

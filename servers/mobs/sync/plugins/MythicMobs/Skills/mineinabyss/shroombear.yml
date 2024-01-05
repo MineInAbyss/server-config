@@ -1,3 +1,10 @@
+qmob_shroombearstep:
+  Cooldown: 0
+  Conditions:
+  - onground{} true
+  Skills:
+  - sound{s=entity.camel.step;sc=master;p=<random.float.1.5to1.6>;v=0.3} @self
+  - sound{s=block.wool.step;sc=master;p=<random.float.1.5to1.6>;v=0.1} @self
 
 shroombearAmbient:
   Cooldown: 0.3
