@@ -8,12 +8,11 @@ set.*:
     maxHealth: 5
     followRange: 10
     movementSpeed: 0.2
-deathLoot:
-  exp: 10..15
-  drops:
-    - item: { prefab: mineinabyss:kazura_squid_ink_sac }
-      amount: 1..2
-      dropChance: 0.8000
+drop:
+  - exp: 10..15
+  - item: mineinabyss:kazura_squid_ink_sac
+    amount: 1..2
+    dropChance: 0.8000
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

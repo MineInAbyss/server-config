@@ -2,11 +2,10 @@ namespaces: [geary, mobzy, looty]
 displayName: "<#257BEB>Demonfish"
 set.*:
   mythicMob: demonfish
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:demonfish_raw }
-      cooked: { prefab: mineinabyss:demonfish_cooked }
+drop:
+  - exp: 15..20
+  - item: mineinabyss:demonfish_raw
+    cooked: mineinabyss:demonfish_cooked
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

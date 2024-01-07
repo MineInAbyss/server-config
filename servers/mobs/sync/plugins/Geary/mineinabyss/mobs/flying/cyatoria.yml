@@ -3,13 +3,12 @@ inherit:
   from: [mineinabyss:hostile_flying]
 set.mythicMob: cyatoria
 displayName: "<#3DDFFF>Cyatoria"
-deathLoot:
-  exp: 35..45
-  drops:
-    - item: { prefab: mineinabyss:cyatoria_drumstick_raw }
-      cooked: { prefab: mineinabyss:cyatoria_drumstick_cooked }
-      amount: 1..2
-    - item: { prefab: mineinabyss:cyatoria_feather }
-      amount: 1..4
-      dropChance: 0.7000
+drop:
+  - exp: 35..45
+  - item: mineinabyss:cyatoria_drumstick_raw
+    cooked: mineinabyss:cyatoria_drumstick_cooked
+    amount: 1..2
+  - item: mineinabyss:cyatoria_feather
+    amount: 1..4
+    dropChance: 0.7000
 sounds: {}

@@ -27,17 +27,16 @@ set.*:
         float: { }
       mobzy:behavior.*:
         throw_items:
-          spawn: child(projectile)
+          spawn: lookup(projectile)
           cooldown: 6s
           projectileAngularDiameter: 2
-deathLoot:
-  exp: 35..45
-  drops:
-    - item: { prefab: mineinabyss:inbyo_fur }
-      amount: 3
-    - item: { prefab: mineinabyss:inbyo_meat_raw }
-      cooked: { prefab: mineinabyss:inbyo_meat_cooked }
-      amount: 2
+drop:
+  - exp: 35..45
+  - item: mineinabyss:inbyo_fur
+    amount: 3
+  - item: mineinabyss:inbyo_meat_raw
+    cooked: mineinabyss:inbyo_meat_cooked
+    amount: 2
 sounds:
   #    ambient: mineinabyss:entity.inbyo.ambient TODO make this not obnoxious
   death:
@@ -47,11 +46,16 @@ sounds:
     sound: mineinabyss:entity.inbyo.hurt
     category: HOSTILE
 children:
-  nameToComponents:
-    poison:
-      - !<geary:apply> geary:potion_effects
-      - !<geary:potion_effects>
-        effects:
+  projectile:
+    set.*:
+      entityType: minecraft:snowball
+      projectile_item:
+        item:
+          type: SNOWBALL
+          customModelData: 3
+    skills:
+      - event: on.damageOther
+        set.potionEffects:
           - type: POISON
             duration: 1s
             amplifier: 1
@@ -64,12 +68,3 @@ children:
             isAmbient: true
             hasParticles: true
             hasIcon: true
-    projectile:
-      - !<geary:event.triggers>
-        expressions:
-          - other geary:event.touched this -> this parent.child(poison) other
-      - !<geary:set.entity_type> minecraft:snowball
-      - !<mobzy:set.projectile_item>
-        item:
-          type: SNOWBALL
-          customModelData: 3

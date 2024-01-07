@@ -4,16 +4,15 @@ inherit:
 displayName: "<#85562D>Shroombear"
 set.*:
   mythicMob: shroombear
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:shroombear_meat_raw }
-      cooked: { prefab: mineinabyss:shroombear_meat_cooked }
-      amount: 2
-      dropChance: 0.8500
-    - item: { prefab: mineinabyss:parasitic_watershrooms }
-      amount: 2
-      dropChance: 0.5000
+drop:
+  - exp: 15..20
+  - item: mineinabyss:shroombear_meat_raw
+    cooked: mineinabyss:shroombear_meat_cooked
+    amount: 2
+    dropChance: 0.8500
+  - item: mineinabyss:parasitic_watershrooms
+    amount: 2
+    dropChance: 0.5000
 sounds:
   ambient:
     sound: mineinabyss:entity.shroombear.ambient

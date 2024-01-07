@@ -1,6 +1,6 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:passive]
+  from: [ mineinabyss:passive ]
 displayName: "<#FFFF99>Rinsipede"
 set.*:
   modelengineModel:
@@ -22,9 +22,8 @@ set.*:
         panic:
           speedModifier: 4
         random_stroll_land: { }
-sounds: {}
-deathLoot:
-  exp: 15..25
-  drops:
-    - item: { prefab: mineinabyss:rinsipede_segments }
-      dropChance: 0.8000
+sounds: { }
+drop:
+  - exp: 15..25
+  - item: mineinabyss:rinsipede_segments
+    dropChance: 0.8000

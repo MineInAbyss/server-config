@@ -8,11 +8,10 @@ set.*:
     movementSpeed: 0.2
     followRange: 20
 displayName: "<#1B91B5>Hamashirama"
-deathLoot:
-  exp: 20..25
-  drops:
-    - item: { prefab: mineinabyss:hamashirama_raw }
-      cooked: { prefab: mineinabyss:hamashirama_cooked }
+drop:
+  - exp: 20..25
+  - item: mineinabyss:hamashirama_raw
+    cooked: mineinabyss:hamashirama_cooked
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

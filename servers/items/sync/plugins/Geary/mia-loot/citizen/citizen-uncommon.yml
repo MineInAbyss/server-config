@@ -8,11 +8,11 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:silkfang_silk }
+              item: mineinabyss:silkfang_silk
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:bundle_of_silkfang_silk }
+              item: mineinabyss:bundle_of_silkfang_silk
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:inbyo_fur }
+              item: mineinabyss:inbyo_fur
           functions:
             - !<minecraft:set_count>
               count: !<minecraft:uniform> { min: 1, max: 4 }

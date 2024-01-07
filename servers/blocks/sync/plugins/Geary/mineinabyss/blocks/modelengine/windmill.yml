@@ -4,7 +4,7 @@ set.item:
     type: PAPER
     displayName: <#33404d>Windmill
     customModelData: 1002
-disable_item_interactions: {}
+disableItemInteractions: {}
 modelengine:
   modelId: windmill
 furniture:

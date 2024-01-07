@@ -18,13 +18,12 @@ set.*:
           speedModifier: 3
         random_stroll_land: { }
         look_at_player: { }
-deathLoot:
-  exp: 25..40
-  drops:
-    - item: { prefab: mineinabyss:abyssal_snail_shell }
-      dropChance: 0.7000
-    - item: { prefab: mineinabyss:abyssal_snail_gunk }
-      amount: 2
+drop:
+  - exp: 25..40
+  - item: mineinabyss:abyssal_snail_shell
+    dropChance: 0.7000
+  - item: mineinabyss:abyssal_snail_gunk
+    amount: 2
 modelengine.rideable:
   steerItem:
     prefab: mineinabyss:tesuchi_scale_on_a_stick

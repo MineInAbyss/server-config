@@ -11,7 +11,7 @@ set.item:
       - <#D2D489>pressure is applied to it.
       - <#EDEEB9><i>Can be used to give you
       - <#EDEEB9><i>that extra energy boost.
-disable_item_interactions: {}
+disableItemInteractions: {}
 #events:
 #  leftClick:
 #    - !<cooldown>

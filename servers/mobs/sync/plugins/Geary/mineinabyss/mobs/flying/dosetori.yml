@@ -1,20 +1,19 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [mineinabyss:hostile_flying]
+  from: [ mineinabyss:hostile_flying ]
 set.mythicMob: dosetori
 displayName: "<#FFF821>Dosetori"
-deathLoot:
-  exp: 60..100
-  drops:
-    - item: { prefab: mineinabyss:dosetori_meat_raw }
-      cooked: { prefab: mineinabyss:dosetori_meat_cooked }
-      amount: 1..2
-    - item: { prefab: mineinabyss:dosetori_wingflap }
-      amount: 1..3
-      dropChance: 0.7000
-    - item: { prefab: mineinabyss:dosetori_bone }
-      amount: 1..3
-      dropChance: 0.8000
+drop:
+  - exp: 60..100
+  - item: mineinabyss:dosetori_meat_raw
+    cooked: mineinabyss:dosetori_meat_cooked
+    amount: 1..2
+  - item: mineinabyss:dosetori_wingflap
+    amount: 1..3
+    dropChance: 0.7000
+  - item: mineinabyss:dosetori_bone
+    amount: 1..3
+    dropChance: 0.8000
 sounds:
   ambient:
     sound: mineinabyss:entity.dosetori.ambient

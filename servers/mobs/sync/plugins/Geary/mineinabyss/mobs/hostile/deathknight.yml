@@ -15,6 +15,6 @@ set.*:
       mobzy:target.*:
         attacker: { }
         nearest_player: { }
-deathLoot:
-  exp: 100
+drop:
+  - exp: 100
 sounds: { }

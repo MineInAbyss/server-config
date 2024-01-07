@@ -6,9 +6,8 @@ set.attributes:
   maxHealth: 20
   movementSpeed: 0.3
   followRange: 20
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:demonfish_raw }
-      cooked: { prefab: mineinabyss:demonfish_cooked }
+drop:
+  - exp: 15..20
+  - item: mineinabyss:demonfish_raw
+    cooked: mineinabyss:demonfish_cooked
 sounds: {}

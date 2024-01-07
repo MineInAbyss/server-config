@@ -4,16 +4,14 @@ inherit:
 displayName: "<#3C3B4A>Titanjaw"
 set.*:
   mythicMob: shroombear
-deathLoot:
-  exp: 25..45
-  drops:
-    - item: { prefab: mineinabyss:titanjaw_scale }
-      amount: 1..2
-      dropChance: 0.5000
-  drops:
-    - item: { prefab: mineinabyss:titanjaw_jaw }
-      amount: 1..2
-      dropChance: 0.5000
-    - item: { prefab: mineinabyss:titanjaw_pearl }
-      dropChance: 0.1500
+drop:
+  - exp: 25..45
+  - item: mineinabyss:titanjaw_scale
+    amount: 1..2
+    dropChance: 0.7000
+  - item: mineinabyss:titanjaw_jaw
+    amount: 1..2
+    dropChance: 0.5000
+  - item: mineinabyss:titanjaw_pearl
+    dropChance: 0.2000
 sounds: { }

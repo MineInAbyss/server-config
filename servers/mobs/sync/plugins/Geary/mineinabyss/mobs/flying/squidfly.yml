@@ -3,11 +3,10 @@ inherit:
   from: [mineinabyss:hostile_flying]
 set.mythicMob: squidfly
 displayName: "<#85512E>Squidfly"
-deathLoot:
-  exp: 12..18
-  drops:
-    - item: { prefab: mineinabyss:squidfly_brain_raw }
-      cooked: { prefab: mineinabyss:squidfly_brain_cooked }
-      amount: 1
-      dropChance: 0.8000
+drop:
+  - exp: 12..18
+  - item: mineinabyss:squidfly_brain_raw
+    cooked: mineinabyss:squidfly_brain_cooked
+    amount: 1
+    dropChance: 0.8000
 sounds: {}

@@ -31,8 +31,8 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:star_compass }
+              item: mineinabyss:star_compass
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:depth_meter }
+              item: mineinabyss:depth_meter
       conditions:
         - !<minecraft:random_chance> { chance: 0.5 }

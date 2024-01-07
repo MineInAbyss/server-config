@@ -1,4 +1,4 @@
-namespaces: [geary, mineinabyss, looty]
+namespaces: [ geary, mineinabyss, looty ]
 set.item:
   item:
     type: PAPER
@@ -22,15 +22,15 @@ set.recipes:
         | G |
         |GCG|
         | G |
-depthmeter: {}
-children:
-  nameToComponents:
-    showDepth:
-      - !<mineinabyss:show_depth>
-    toggleDepthHud:
-      - !<mineinabyss:toggle_depth_hud>
-event.triggers:
-  expressions:
-    - other geary:event.left_clicked this -> this child(showDepth) other
-    - other geary:event.right_clicked this -> this child(toggleDepthHud) other
-disable_item_interactions: {}
+depthmeter: { }
+skills:
+  - event:
+      on.itemInteract: { leftClicked: true }
+    set.target: trigger
+    showDepth: { }
+  - event:
+      on.itemInteract: { rightClicked: true }
+    set.target: trigger
+    toggleDepthHud: { }
+
+disableItemInteractions: { }

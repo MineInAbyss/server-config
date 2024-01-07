@@ -18,10 +18,10 @@ set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>
-      input: { prefab: mineinabyss:inbyo_meat_raw }
+      input: mineinabyss:inbyo_meat_raw
       experience: 1f
       cookingTime: 100
     - !<smoking>
-      input: { prefab: mineinabyss:inbyo_meat_raw }
+      input: mineinabyss:inbyo_meat_raw
       experience: 2f
       cookingTime: 50

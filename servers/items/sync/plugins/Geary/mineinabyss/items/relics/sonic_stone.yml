@@ -3,7 +3,7 @@ set.item:
   item:
     type: KNOWLEDGE_BOOK
     customModelData: 3
-disable_item_interactions: {}
+disableItemInteractions: {}
 #events:
 #  leftClick:
 #    - !<cooldown>

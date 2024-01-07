@@ -29,13 +29,12 @@ set.*:
         avoid_player:
           radius: 15
         random_stroll_land: { }
-deathLoot:
-  exp: 20..25
-  drops:
-    - item: { prefab: mineinabyss:chimokami_tail }
-      amount: 1..3
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:chimokami_fang }
-      amount: 2
-      dropChance: 0.7000
+drop:
+  - exp: 20..25
+  - item: mineinabyss:chimokami_tail
+    amount: 1..3
+    dropChance: 0.8000
+  - item: mineinabyss:chimokami_fang
+    amount: 2
+    dropChance: 0.7000
 sounds: { }

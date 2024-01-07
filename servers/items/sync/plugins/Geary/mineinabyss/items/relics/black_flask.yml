@@ -6,28 +6,16 @@ set.item:
     customModelData: 1
     lore:
       - <green>placeholder..
-children:
-  nameToComponents:
-    flask:
-      - !<geary:apply> geary:potion_effects
-      - !<geary:apply> geary:deal_damage
-      - !<geary:potion_effects>
-        effects:
-          - type: SPEED
-            duration: 7s
-            amplifier: 10
-          - type: JUMP
-            duration: 7s
-            amplifier: 3
-          - type: HARM
-            duration: 1t
-            amplifier: 2
-    flaskCondition:
-      - !<geary:check.health>
-        within: 2.0..200.0
-event.triggers:
-  expressions:
-    - other geary:event.ingested this -> this child(flask) other
-event.conditions:
-  expressions:
-    - any -> child(flaskCondition) -> child(flask)
+skills:
+  - event: on.itemConsumed
+    set.target: consumer
+    set.potionEffects:
+      - type: SPEED
+        duration: 7s
+        amplifier: 10
+      - type: JUMP
+        duration: 7s
+        amplifier: 3
+      - type: HARM
+        duration: 1t
+        amplifier: 1

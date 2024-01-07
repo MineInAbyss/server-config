@@ -6,7 +6,7 @@ set.item:
       - <white>
     type: STICK
     customModelData: 1
-disable_item_interactions: {}
+disableItemInteractions: {}
 #events:
 #  leftClick:
 #    - !<cooldown>

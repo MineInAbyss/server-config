@@ -18,10 +18,10 @@ set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>
-      input: { prefab: mineinabyss:cyatoria_drumstick_raw }
+      input: mineinabyss:cyatoria_drumstick_raw
       experience: 1f
       cookingTime: 100
     - !<smoking>
-      input: { prefab: mineinabyss:cyatoria_drumstick_raw }
+      input: mineinabyss:cyatoria_drumstick_raw
       experience: 2f
       cookingTime: 50

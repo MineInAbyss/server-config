@@ -12,7 +12,7 @@ set.recipes:
     - !<smithing_transform>
       template:
         type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
-      input: { prefab: mineinabyss:diamond_sickle }
+      input: mineinabyss:diamond_sickle
       addition:
         type: NETHERITE_INGOT
 sickle:

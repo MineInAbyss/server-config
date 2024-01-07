@@ -1,7 +1,7 @@
 namespaces: [geary, mobzy, looty]
 set.item:
   item:
-    type: RAW_COD
+    type: minecraft:cod
     displayName: "<#257BEB>Cooked Ikenosuke"
     customModelData: 0
     lore:
@@ -16,10 +16,10 @@ set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>
-      input: { prefab: mineinabyss:ikenosuke_raw }
+      input: mineinabyss:ikenosuke_raw
       experience: 1f
       cookingTime: 100
     - !<smoking>
-      input: { prefab: mineinabyss:ikenosuke_raw }
+      input: mineinabyss:ikenosuke_raw
       experience: 2f
       cookingTime: 50

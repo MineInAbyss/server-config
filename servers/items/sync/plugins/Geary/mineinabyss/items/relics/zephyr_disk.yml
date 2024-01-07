@@ -4,7 +4,7 @@ set.item:
     type: KNOWLEDGE_BOOK
     displayName: <dark_aqua>Zephyr Disk
     customModelData: 5
-disable_item_interactions: {}
+disableItemInteractions: {}
 #events:
 #  rightClick:
 #    - !<cooldown>

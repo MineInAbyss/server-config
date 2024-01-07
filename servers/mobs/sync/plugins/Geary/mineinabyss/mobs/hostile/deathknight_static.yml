@@ -10,5 +10,5 @@ set.*:
     attackDamage: 60
     followRange: 10
 sounds: { }
-deathLoot:
-  exp: 100
+drop:
+  - exp: 100

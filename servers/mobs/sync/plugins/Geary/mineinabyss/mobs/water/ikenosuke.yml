@@ -2,9 +2,8 @@ namespaces: [geary, mobzy, looty]
 displayName: "<#257BEB>Ikenosuke"
 set.*:
   mythicMob: ikenosuke
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:ikenosuke_raw }
-      cooked: { prefab: mineinabyss:ikenosuke_cooked }
+drop:
+  - exp: 15..20
+  - item: mineinabyss:ikenosuke_raw
+    cooked: mineinabyss:ikenosuke_cooked
 sounds: {}

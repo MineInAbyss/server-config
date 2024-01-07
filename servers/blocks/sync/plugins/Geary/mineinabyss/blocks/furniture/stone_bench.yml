@@ -22,5 +22,5 @@ furniture:
     - location: { x: 1, y: 0, z: 0 }
 drops:
   drops:
-    - item: { prefab: mineinabyss:stone_bench }
+    - item: mineinabyss:stone_bench
 

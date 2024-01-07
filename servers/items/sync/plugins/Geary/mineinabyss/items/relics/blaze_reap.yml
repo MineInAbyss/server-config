@@ -1,4 +1,4 @@
-namespaces: [geary, looty, mineinabyss]
+namespaces: [ geary, looty, mineinabyss ]
 set.item:
   item:
     type: KNOWLEDGE_BOOK
@@ -9,7 +9,7 @@ set.item:
       - <#C6CC8A>which causes ongoing explosions
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
-disable_item_interactions: {}
+disableItemInteractions: { }
 #explosion_resistant:
 #- !<relation>
 #  data: !<geary:cooldown>
@@ -28,3 +28,20 @@ disable_item_interactions: {}
 #        at: !<player.target_block>
 #          allowAir: true
 #          maxDist: 10
+skills:
+  - event:
+      on.itemInteract:
+        leftClicked: true
+    set.target: trigger
+    variables:
+      derived location spawnAt:
+        read.targetBlock:
+          maxDistance: 10
+    conditions:
+      cooldown:
+        length: 2s
+      check.player:
+        isSneaking: true
+    explode:
+      breakBlocks: false
+      location: $spawnAt
