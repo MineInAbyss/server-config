@@ -1,5 +1,5 @@
 enabled: false
-guildChattyChannel:
+guildChannelTemplate:
   channelType: PRIVATE
   permission: ""
   logToConsole: true
@@ -10,7 +10,6 @@ guildChattyChannel:
     position: PREFIX
     format: <gray>[<red>X</red>]</gray>
     notifyStaff: true
-    staffDeletionFormat: STRIKE
     logDeletedMessages: true
   isDefaultChannel: false
   isStaffChannel: false
