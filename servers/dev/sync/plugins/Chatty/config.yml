@@ -44,7 +44,7 @@ channels:
     logToConsole: true
     simpleConsoleMessages: false
     proxy: true
-    discordsrv: false
+    discordsrv: true
     isDefaultChannel: true
     isStaffChannel: false
     format: ':dev::space_-4:%luckperms_prefix% <chatty_nickname>: '
@@ -58,7 +58,7 @@ channels:
     logToConsole: true
     simpleConsoleMessages: false
     proxy: true
-    discordsrv: false
+    discordsrv: true
     isDefaultChannel: false
     isStaffChannel: false
     format: '<chatty_player_head> %luckperms_prefix% <chatty_nickname>: '

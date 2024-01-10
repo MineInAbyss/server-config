@@ -110,7 +110,7 @@ channels:
     channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
     isDefaultChannel: true
     proxy: true
-    discordsrv: false
+    discordsrv: true
     messageDeletion:
       enabled: true
       position: SUFFIX
@@ -130,7 +130,7 @@ channels:
     permission: "chatty.channel.playerhead"
     isDefaultChannel: false
     proxy: true
-    discordsrv: false
+    discordsrv: true
     messageDeletion:
       enabled: true
       position: SUFFIX

@@ -110,7 +110,7 @@ channels:
     channelType: GLOBAL       # GLOBAL, LOCAL, PRIVATE (Currently does nothing), PERMISSION
     isDefaultChannel: true
     proxy: true
-    discordsrv: false
+    discordsrv: true
     format: ":test::space_-4:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
@@ -125,7 +125,7 @@ channels:
     permission: "chatty.channel.playerhead"
     isDefaultChannel: false
     proxy: true
-    discordsrv: false
+    discordsrv: true
     format: "<chatty_player_head>:space_-4:
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
     <light_purple>Deaths: <aqua>%statistic_deaths%<newline>

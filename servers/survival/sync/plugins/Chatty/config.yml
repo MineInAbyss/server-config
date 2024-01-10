@@ -127,7 +127,7 @@ channels:
     proxy: true
     logToConsole: true
     simpleConsoleMessages: true
-    discordsrv: false
+    discordsrv: true
     messageDeletion:
       enabled: true
       position: SUFFIX
