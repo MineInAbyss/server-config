@@ -34,7 +34,7 @@ orbyATTACKskill:
 
 orbyATTACKDamage:
   Skills:
-    - damage{amount=8} @target
+    - damage{amount=10} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     #- skill{s=Bleeding} @target
     - throw{v=4;vy=2} @target

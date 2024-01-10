@@ -73,13 +73,13 @@ SJ_dashmiss:
 sj_roar:
   Conditions:
     - offgcd
-  Cooldown: 40
+  Cooldown: 20
   Skills:
     - gcd{ticks=300} @self
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - delay 10
-    - skill{s=sj_shake;repeat=6;repeatInterval=8} @pir{r=20}
+    - skill{s=sj_shake;repeat=6;repeatInterval=8} @pir{r=25}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
     - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self

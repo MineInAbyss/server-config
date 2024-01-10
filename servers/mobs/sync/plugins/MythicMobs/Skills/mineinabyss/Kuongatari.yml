@@ -1,9 +1,9 @@
 Kuon_Summon:
-  Cooldown: 3000
+  Cooldown: 9999999
   Conditions:
     - offgcd
-    - targetwithin{d=5} true
+    - targetwithin{d=30} true
     - incombat true
   Skills:
-    - gcd{ticks=500}
-    - summon{type=Kuongatari_summon;amount=3;radius=4} @self
+    - gcd{ticks=99999}
+    - summon{type=Kuongatari_summon;amount=4;radius=4} @self
