@@ -31,4 +31,5 @@ silkfang:
   - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
   - dismount ~onDamaged
+  - skill{s=stingerhead_unstuck} @self ~onTimer:20
   - skill{s=Changetarget} ~onTimer:160 <99%

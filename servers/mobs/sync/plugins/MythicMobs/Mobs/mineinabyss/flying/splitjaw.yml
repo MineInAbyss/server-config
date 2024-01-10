@@ -47,5 +47,6 @@ splitjaw:
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     - skill{s=sj_roar} @target ~oncombat
+    - skill{s=sj_roar} @target ~onTimer:100
     - skill{s=SJ_dash} @target ~onTimer:40
     - skill{s=SJ_Attack} @self ~onAttack
