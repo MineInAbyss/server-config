@@ -256,6 +256,9 @@ emotes:
   - id: saimow
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/saimow.png
+  - id: khazw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/khazw.png
   - id: admin
     template: role_template
     texture: mineinabyss:ui/roles/admin.png
