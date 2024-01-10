@@ -1,7 +1,7 @@
 Kuongatari:
   Type: CAVE_SPIDER
   Health: 40
-  Damage: 8
+  Damage: 9
   AITargetSelectors:
     - clear
     - attacker
@@ -33,7 +33,7 @@ Kuongatari:
     - dismount ~onTimer:20
 Kuongatari_summon:
   Type: CAVE_SPIDER
-  Display: Kuongatari_Summon
+  Display: <#1FB53D>Kuongatari Summon
   Health: 20
   Damage: 7
   AITargetSelectors:

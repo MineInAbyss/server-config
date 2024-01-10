@@ -18,12 +18,30 @@ Penetration_Proof:
   Skills:
   - potion{type=ABSORPTION;duration=200;level=48} @PetOwner
 
-Symbiotic_Relationship:
+
+#shroombear
+baby_Shroom_Harvest:
   Cooldown: 120
+  Conditions:
+  - holding{m=shears} true
+  Skills:
+  - dropitem{i=shroombeardrops} @self
+  - petExperience{exp=1} @trigger
+Shroom_Harvest:
+  Cooldown: 120
+  Conditions:
+  - holding{m=shears} true
+  Skills:
+  - dropitem{i=shroombeardrops} @self
+  - petExperience{exp=1} @trigger
+
+
+Symbiotic_Relationship:
+  Cooldown: 600
   Conditions:
   - health{h=<20} true
   Skills:
-  - potion{type=REGENERATION;duration=60;level=10} @PetOwner
+  - potion{type=REGENERATION;duration=30;level=6} @PetOwner
   - effect:particles{p=reddust;color=#5C3356;speed=0.1;a=25;hs=.75;vs=.75;size=3} @PetOwner
  # - sound{s=;v=.25} @self
 
