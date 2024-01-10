@@ -10,7 +10,7 @@ Cancelattack:
 
 
 stingerhead_unstuck:
-  Cooldown: 30
+  Cooldown: 5
   Conditions:
    - damagecause{cause=SUFFOCATION} true
   Skills:

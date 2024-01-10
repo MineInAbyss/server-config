@@ -28,7 +28,6 @@ onitsuchi:
   Skills:
 
     - CancelEvent{sync=true} ~onAttack
-    - skill{s=Damage_5} @self ~onAttack
 
     - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
     - bodyclamp{m=onitsuchi;c=15} @self ~onLoad
