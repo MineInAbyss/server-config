@@ -14,6 +14,7 @@ titanjaw:
     MaxCombatDistance: 35
   AIGoalSelectors:
     - clear
+    - meleeattack
     - randomstroll
     - lookatplayers
     - randomlookaround
@@ -26,7 +27,7 @@ titanjaw:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 1.5
+    Scale: 2.5
   Skills:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack
@@ -68,7 +69,7 @@ baby_titanjaw:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 0.8
+    Scale: 1
   Skills:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack
