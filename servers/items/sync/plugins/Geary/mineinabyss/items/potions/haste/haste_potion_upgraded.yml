@@ -22,5 +22,5 @@ food:
       amplifier: 1
 set.potion_mixes:
   potionmixes:
-    - ingredient: { type: glowstone_dust }
+    - ingredient: { type: GLOWSTONE_DUST }
       input: { prefab: mineinabyss:haste_potion }

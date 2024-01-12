@@ -21,5 +21,5 @@ food:
       duration: 8m
 set.potion_mixes:
   potionmixes:
-    - ingredient: { type: redstone }
+    - ingredient: { type: REDSTONE }
       input: { prefab: mineinabyss:haste_potion }
