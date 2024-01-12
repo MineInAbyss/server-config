@@ -106,8 +106,8 @@ channels:
     discordsrv: true
     messageDeletion:
       enabled: true
-      position: SUFFIX
-      format: ' <gray>[<red>X</red>]</gray>'
+      position: PREFIX
+      format: '<gray>[<red>❌</red>]</gray>'
       notifyStaff: true
     isDefaultChannel: true
     isStaffChannel: false
@@ -130,8 +130,8 @@ channels:
     discordsrv: true
     messageDeletion:
       enabled: true
-      position: SUFFIX
-      format: ' <gray>[<red>X</red>]</gray>'
+      position: PREFIX
+      format: '<gray>[<red>❌</red>]</gray>'
       notifyStaff: true
     format: "%chatty_player_head% %luckperms_prefix% 
     <hover:show_text:' <light_purple><b><chatty_nickname><newline>
@@ -153,8 +153,8 @@ channels:
     isStaffChannel: false
     messageDeletion:
       enabled: true
-      position: SUFFIX
-      format: ' <gray>[<red>X</red>]</gray>'
+      position: PREFIX
+      format: '<gray>[<red>❌</red>]</gray>'
       notifyStaff: true
     format: ':survival::space_-4::local:<hover:show_text:'' <light_purple><b><chatty_nickname><newline>
       <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
