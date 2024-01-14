@@ -11,10 +11,8 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        M:
-          type: GOLD_INGOT
-        S:
-          type: STICK
+        M: minecraft:gold_ingot
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|

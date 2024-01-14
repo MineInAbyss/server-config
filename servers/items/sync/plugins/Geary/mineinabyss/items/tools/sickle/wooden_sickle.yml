@@ -14,8 +14,7 @@ set.recipes:
       items:
         M:
           tag: planks
-        S:
-          type: STICK
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|

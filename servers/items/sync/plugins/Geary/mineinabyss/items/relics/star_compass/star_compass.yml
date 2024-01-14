@@ -11,13 +11,12 @@ set.recipes:
   recipes:
     - !<shapeless>
       items:
-        - prefab: mineinabyss:star_compass_needle
-        - prefab: mineinabyss:titanjaw_pearl
+        - mineinabyss:star_compass_needle
+        - mineinabyss:titanjaw_pearl
 starcompass: { }
 disableItemInteractions: { }
 skills:
-  - event:
-      on.itemInteract:
-        rightClicked: true
-    set.target: trigger
-    toggleStarcompassHud: { }
+  - event: on.itemRightClick
+    using: itemHolder
+    run:
+      - toggleStarcompassHud: { }

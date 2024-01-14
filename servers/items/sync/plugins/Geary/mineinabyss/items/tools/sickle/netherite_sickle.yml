@@ -13,7 +13,6 @@ set.recipes:
       template:
         type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
       input: mineinabyss:diamond_sickle
-      addition:
-        type: NETHERITE_INGOT
+      addition: minecraft:netherite_ingot
 sickle:
   radius: 4

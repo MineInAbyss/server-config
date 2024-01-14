@@ -11,10 +11,8 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        M:
-          type: DIAMOND
-        S:
-          type: STICK
+        M: minecraft:diamond
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|

@@ -14,23 +14,23 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        G:
-          type: GLASS
-        C:
-          type: COMPASS
+        G: minecraft:glass
+        C: minecraft:compass
       configuration: |-
         | G |
         |GCG|
         | G |
 depthmeter: { }
 skills:
-  - event:
-      on.itemInteract: { leftClicked: true }
-    set.target: trigger
-    showDepth: { }
-  - event:
-      on.itemInteract: { rightClicked: true }
-    set.target: trigger
-    toggleDepthHud: { }
+  - event: on.itemLeftClick
+    using: itemHolder
+    conditions:
+      - cooldown: 1s
+    run:
+      - showDepth: { }
+  - event: on.itemRightClick
+    using: itemHolder
+    run:
+      - toggleDepthHud: { }
 
 disableItemInteractions: { }

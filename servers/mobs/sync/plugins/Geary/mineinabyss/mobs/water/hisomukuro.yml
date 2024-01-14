@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.*:
   entityType: minecraft:axolotl
   modelengineModel:
@@ -22,13 +22,14 @@ set.*:
 displayName: "<#C8C8C8>Hisomukuro"
 skills:
   - event: on.damaged
-    set.target: trigger
+    using: damager
     conditions:
-      chance: 0.6
-    set.potionEffects:
-      - type: BLINDNESS
-        duration: 4s
-        amplifier: 0
+      - chance: 0.6
+    run:
+      - set.potionEffects:
+          - type: BLINDNESS
+            duration: 4s
+            amplifier: 0
 drop:
   - exp: 200..250
   - item: mineinabyss:hisomukuro_fin
@@ -38,5 +39,5 @@ drop:
     amount: 1..4
   - item: mineinabyss:hamashirama_raw
     amount: 1..4
-sounds: {}
-prevent.breeding: {}
+sounds: { }
+prevent.breeding: { }

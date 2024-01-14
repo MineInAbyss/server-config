@@ -5,17 +5,19 @@ set.item:
     displayName: <gold>Black Flask
     customModelData: 1
     lore:
-      - <green>placeholder..
+      - <yellow>A fleshy bottle filled with a thick, black, oily substance.
+      - <yellow>Drinking it gives the user a jolt of energy, at a price...
 skills:
   - event: on.itemConsumed
-    set.target: consumer
-    set.potionEffects:
-      - type: SPEED
-        duration: 7s
-        amplifier: 10
-      - type: JUMP
-        duration: 7s
-        amplifier: 3
-      - type: HARM
-        duration: 1t
-        amplifier: 1
+    using: consumer
+    run:
+      - set.potionEffects:
+          - type: SPEED
+            duration: 7s
+            amplifier: 10
+          - type: JUMP
+            duration: 7s
+            amplifier: 3
+          - type: HARM
+            duration: 1t
+            amplifier: 1

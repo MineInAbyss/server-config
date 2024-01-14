@@ -11,10 +11,8 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        M:
-          type: COBBLESTONE
-        S:
-          type: STICK
+        M: minecraft:cobblestone
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|
