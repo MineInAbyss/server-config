@@ -1,6 +1,6 @@
 Kuongatari:
   Type: CAVE_SPIDER
-  Health: 43
+  Health: 50
   Damage: 8
   AITargetSelectors:
     - clear
@@ -8,14 +8,13 @@ Kuongatari:
     - players
   Options:
     PreventSunBurn: true
-    PreventOtherDrops: true
     KnockbackResistance: 1
     #DigOutOfGround: true
     Collidable: true
     #Silent: false
     FollowRange: 20
     MovementSpeed: 0.32
-    MaxCombatDistance: 35
+    MaxCombatDistance: 20
     DigOutOfGround: true
   Model:
     Id: kuongatari
@@ -25,17 +24,17 @@ Kuongatari:
     Scale: 1.2
   DamageModifiers:
     - DROWNING 0
-    - FIRE 5
-    - FIRE_TICK 2
+    - FIRE 15
+    - FIRE_TICK 3
   Skills:
-    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
-    - shieldbreak{duration=100} @target ~onattack 0.35
+    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.1
+    - shieldbreak{duration=100} @target ~onattack 0.5
     - dismount ~onTimer:20
 Kuongatari_summon:
-  Type: CAVE_SPIDER
-  Display: Kuongatari_Summon
-  Health: 20
-  Damage: 7
+  Type: SPIDER
+  Display: "Baby Kuongatari"
+  Health: 16
+  Damage: 6
   AITargetSelectors:
     - clear
     - attacker
@@ -47,25 +46,25 @@ Kuongatari_summon:
     #DigOutOfGround: true
     Collidable: true
    # Silent: true
-    FollowRange: 48
+    FollowRange: 30
     MovementSpeed: 0.4
-    MaxCombatDistance: 35
+    MaxCombatDistance: 20
   Equipment:
     - TORCH HAND
   Drops:
     - exp 5-15
-    - geary mineinabyss:kuongatari_juice 1 0.025
-    - geary mineinabyss:kuongatari_silk 1 0.1
+    - geary mineinabyss:kuongatari_juice 1 0.04
+    - geary mineinabyss:kuongatari_silk 1-2 0.2
   Model:
     Id: kuongatari
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 0.5
+    Scale: 0.7
   DamageModifiers:
     - DROWNING 0
-    - FIRE 5
-    - FIRE_TICK 2
+    - FIRE 15
+    - FIRE_TICK 3
   Skills:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
