@@ -28,7 +28,7 @@ ikenosuke:
   - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}
   - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}
   - effect:particles{particle=bubble;a=1;hs=0.1;vs=0.05;s=0;y=0} @self ~onTimer:2 ?inBlock{b=WATER} ?inCombat{} ?isMoving{}
-
+  - skill{s=mia_XP} @ENO{r=30} ~onDeath
 demonfish:
   Type: SALMON
   Modules:
@@ -62,7 +62,7 @@ demonfish:
   - model{mid=qmob_demonfish} @self ~onSpawn
   - look{immediately=true} @targetLocation ~onTimer:10
   - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
-
+  - skill{s=mia_XP} @ENO{r=30} ~onDeath
 swarmshocker:
   Type: COD
   Modules:
@@ -98,3 +98,4 @@ swarmshocker:
   - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath
   - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
   - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
+  - skill{s=mia_XP} @ENO{r=30} ~onDeath

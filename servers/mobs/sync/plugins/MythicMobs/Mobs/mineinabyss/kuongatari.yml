@@ -31,6 +31,7 @@ Kuongatari:
     - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
+    - skill{s=mia_XP} @ENO{r=30} ~onDeath
 Kuongatari_summon:
   Type: CAVE_SPIDER
   Display: <#1FB53D>Kuongatari Summon
@@ -69,3 +70,4 @@ Kuongatari_summon:
   Skills:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
+    - skill{s=mia_XP} @ENO{r=30} ~onDeath

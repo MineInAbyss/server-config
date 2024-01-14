@@ -52,6 +52,7 @@ OrbPiercer:
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
     - skill{s=orby_spike_eject} @target ~onDamaged <60%
+    - skill{s=mia_XP} @ENO{r=30} ~onDeath
 orbpiercer_projectile:
   Type: CAT
   Display: meteor

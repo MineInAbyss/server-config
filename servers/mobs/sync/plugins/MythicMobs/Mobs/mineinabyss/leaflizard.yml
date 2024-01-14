@@ -38,3 +38,4 @@ leaflizard:
   - summon{type=qmob_leaflizardCorpse;amount=1;radius=0;delay=16} @self ~onDeath
   - skill{s=leaflizardDisguise;delay=<random.0to20>} @self ~onTimer:20
   - skill{s=leaflizardInvis} @self ~onTimer:10
+  - skill{s=mia_XP} @ENO{r=30} ~onDeath
