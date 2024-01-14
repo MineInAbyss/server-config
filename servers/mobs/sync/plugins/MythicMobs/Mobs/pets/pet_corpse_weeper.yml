@@ -17,7 +17,7 @@ mia_baby_corpse_weeper:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 0.5
+    Scale: 0.3
   Skills:
   - skill{s=brawlpets_death} @self ~onDeath
   - skill{s=brawlpets_spawn} @self ~onSpawn
