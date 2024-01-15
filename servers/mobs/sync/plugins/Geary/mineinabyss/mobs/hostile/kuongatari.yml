@@ -1,14 +1,15 @@
 namespaces: [geary, mobzy, looty]
 set.mythicMob: Kuongatari
 displayName: "<#1FB53D>Kuongatari"
-drop:
-  - exp: 10..25
-  - item: mineinabyss:kuongatari_juice
-    amount: 1..2
-    dropChance: 0.6
-  - item: mineinabyss:kuongatari_silk
-    amount: 1..3
-    dropChance: 0.65
-  - item: mineinabyss:kuongatari_abdomen_raw
-    cooked: mineinabyss:kuongatari_abdomen_cooked
-    dropChance: 0.75
+deathLoot:
+  exp: 10..25
+  drops:
+    - item: { prefab: mineinabyss:kuongatari_juice }
+      amount: 1..2
+      dropChance: 0.6
+    - item: { prefab: mineinabyss:kuongatari_silk }
+      amount: 1..3
+      dropChance: 0.65
+    - item: { prefab: mineinabyss:kuongatari_abdomen_raw }
+      cooked: { prefab: mineinabyss:kuongatari_abdomen_cooked }
+      dropChance: 0.75
