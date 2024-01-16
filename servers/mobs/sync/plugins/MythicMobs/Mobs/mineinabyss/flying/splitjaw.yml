@@ -49,4 +49,4 @@ splitjaw:
     - skill{s=sj_roar} @target ~oncombat
     - skill{s=SJ_dash} @target ~onTimer:40
     - skill{s=SJ_Attack} @self ~onAttack
-    - skill{s=mia_XP} @ENO{r=30} ~onDeath
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

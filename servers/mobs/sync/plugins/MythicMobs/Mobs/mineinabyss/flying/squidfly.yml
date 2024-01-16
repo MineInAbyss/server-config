@@ -31,4 +31,4 @@ squidfly:
     - bodyclamp{m=squidfly;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=squidfly;s=attack} @self ~onAttack
-    - skill{s=mia_XP} @ENO{r=30} ~onDeath
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

@@ -19,7 +19,7 @@ Icon:
   - Careful! it bites
 Levels:
   Lvl_1:
-    Name: ∀
+    Name: 1
     ExperienceThreshold: 0
     MaxHealth: 40
     Regeneration: 0.5
@@ -33,7 +33,7 @@ Levels:
     Announcement:
       Skill: mia_levelup
   Lvl_2:
-    Name: ∁
+    Name: 2
     ExperienceThreshold: 10
     MaxHealth: 60
     Regeneration: 0.5

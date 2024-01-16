@@ -33,4 +33,4 @@ kagi_tachikiri:
     - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
     
     - skill{s=kagi_venom} @target ~onTimer:20
-    - skill{s=mia_XP} @ENO{r=30} ~onDeath
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

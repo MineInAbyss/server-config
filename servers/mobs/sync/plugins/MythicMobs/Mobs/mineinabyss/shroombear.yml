@@ -72,4 +72,4 @@ baby_shroombear:
   - skill{s=shroombearHurt} @self ~onHurt
   - skill{s=shroombearDeath} @self ~onDeath
   - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
-  - skill{s=mia_XP} @ENO{r=30} ~onDeath
+  - petExperience{exp=1} @ENO{r=30} ~onDeath

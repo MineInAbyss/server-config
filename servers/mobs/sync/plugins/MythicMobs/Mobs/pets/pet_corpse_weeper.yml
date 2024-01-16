@@ -53,10 +53,16 @@ mia_corpse_weeper:
     ThreatTable: true
   FACTION: BATTLEPET
   AIGoalSelectors:
-  -  meleeattack
+  - clear
+  - meleeattack
+  - movetowardstarget
+  - randomstroll
+  - lookatplayers
   AITargetSelectors:
-  -  ownerattacker
-  -  ownertarget
+  - clear
+  - ownertarget
+  - ownerattacker
+  - monsters
   Drops: []
   Equipment: []
   Model:
@@ -75,7 +81,6 @@ mia_corpse_weeper:
   - skill{s=mia_spawn} @self ~onSpawn
   - skill{s=mia_corpseweeper_spell} @ring{r=4;p=6} ~onTimer:20
   - skill{s=mia_corpseweeper_attack_1_sync;sync=true} @target ~onAttack
-  - petExperience{exp=1} @ENO{r=10} ~onDeath
 
   - setspeed{type=flying;speed=1.5} @self ~onSpawn
   - state{mid=corpse_weeper;s=attack} @self ~onAttack 
