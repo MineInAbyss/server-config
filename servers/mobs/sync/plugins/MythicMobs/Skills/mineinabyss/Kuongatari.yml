@@ -6,4 +6,4 @@ Kuon_Summon:
     - incombat true
   Skills:
     - gcd{ticks=99999}
-    - summon{type=Kuongatari_summon;amount=4;radius=4} @self
+    - summon{type=Kuongatari_summon;amount=4;radius=3} @self
