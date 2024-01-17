@@ -114,33 +114,11 @@ channels:
     format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''<light_purple><b><chatty_nickname><newline></b>
       <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
       <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
-      <aqua>%statistic_hours_since_death%h''><click:run_command:/mia profile %player_name%><chatty_nickname>: '
+      <aqua>%statistic_hours_since_death%h''><chatty_nickname>: '
     messageColor: white
     channelRadius: 0
     channelAliases:
       - g
-
-  playerhead:
-    channelType: GLOBAL
-    permission: "chatty.channel.playerhead"
-    isDefaultChannel: false
-    proxy: true
-    logToConsole: true
-    simpleConsoleMessages: true
-    discordsrv: true
-    messageDeletion:
-      enabled: true
-      position: PREFIX
-      format: '<gray>[<red>❌</red>]</gray>'
-      notifyStaff: true
-    format: "%chatty_player_head% %luckperms_prefix% 
-    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
-    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
-    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><chatty_nickname>: "
-    channelAliases:
-      - "head"
 
   local:
     channelType: RADIUS
