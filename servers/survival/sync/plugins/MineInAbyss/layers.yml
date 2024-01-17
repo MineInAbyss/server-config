@@ -7,6 +7,7 @@ layers:
     end: 0
   effects: []
   hasPvpDefault: false
+  liquidFlowLimit: -1
   blockBlacklist:
   - "LADDER"
   - "RAIL"
@@ -39,6 +40,7 @@ layers:
     particles:
     - "SLIME"
   hasPvpDefault: false
+  liquidFlowLimit: -1
   blockBlacklist:
   - "LADDER"
   - "RAIL"
@@ -84,6 +86,7 @@ layers:
     particles:
     - "SLIME"
   hasPvpDefault: false
+  liquidFlowLimit: -1
   blockBlacklist:
   - "LADDER"
   - "RAIL"
@@ -153,6 +156,7 @@ layers:
     iterations: 3
     duration: "4s"
   hasPvpDefault: true
+  liquidFlowLimit: -1
   blockBlacklist:
   - "LADDER"
   - "RAIL"
@@ -213,6 +217,7 @@ layers:
     iterations: 2
     duration: "4s"
   hasPvpDefault: true
+  liquidFlowLimit: -1
   blockBlacklist:
   - "RAIL"
   - "POWERED_RAIL"
@@ -272,6 +277,7 @@ layers:
     iterations: 1
     duration: "4s"
   hasPvpDefault: true
+  liquidFlowLimit: -1
   blockBlacklist:
   - "RAIL"
   - "POWERED_RAIL"

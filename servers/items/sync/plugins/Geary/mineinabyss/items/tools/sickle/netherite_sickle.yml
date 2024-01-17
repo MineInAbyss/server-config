@@ -7,6 +7,8 @@ set.item:
     type: NETHERITE_HOE
     customModelData: 1
 set.recipes:
+  result:
+    prefab: mineinabyss:netherite_sickle
   discoverRecipes: true
   recipes:
     - !<smithing_transform>
