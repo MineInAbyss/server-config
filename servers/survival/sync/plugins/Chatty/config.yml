@@ -16,7 +16,7 @@ privateMessages:
 # [disableChatSigning]: Sends messages with valid signatures to support 1.19.1+ chat reporting. Disabling this will disable reporting
 # [commandSpyFormat]: Format for the command spy message
 chat:
-  disableChatSigning: true
+  disableChatSigning: false
   bypassFormatPermission: "chatty.chat.bypassformat"
   commandSpyFormat: "<gold><chatty_nickname><yellow>: "
   allowedTags: # Available formats are:
