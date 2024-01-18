@@ -14,7 +14,7 @@ set.*:
     boots:
       type: STONE
       enchantments:
-        - enchant: depth_strider
+        - enchant: minecraft:depth_strider
           level: 20
   pathfinders:
     override: false

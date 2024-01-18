@@ -56,13 +56,13 @@ children:
     skills:
       - event: on.damageOther
         set.potionEffects:
-          - type: POISON
+          - type: minecraft:poison
             duration: 1s
             amplifier: 1
             isAmbient: true
             hasParticles: true
             hasIcon: true
-          - type: HARM
+          - type: minecraft:instant_damage
             duration: 1t
             amplifier: 1
             isAmbient: true

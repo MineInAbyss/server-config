@@ -2,10 +2,7 @@ namespaces: [geary, mobzy, looty]
 set.item:
   item:
     type: POTION
-    potionData:
-      type: FIRE_RESISTANCE
-      extended: false
-      upgraded: false
+    potionType: minecraft:fire_resistance
 set.potion_mixes:
   potionmixes:
     - ingredient:

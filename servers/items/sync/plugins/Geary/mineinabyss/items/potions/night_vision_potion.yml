@@ -2,10 +2,7 @@ namespaces: [geary, mobzy, looty]
 set.item:
   item:
     type: POTION
-    potionData:
-      type: NIGHT_VISION
-      extended: false
-      upgraded: false
+    potionType: minecraft:night_vision
 set.potion_mixes:
   potionmixes:
     - ingredient:

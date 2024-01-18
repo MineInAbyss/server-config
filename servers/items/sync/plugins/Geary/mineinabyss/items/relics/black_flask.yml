@@ -12,12 +12,12 @@ skills:
     using: consumer
     run:
       - set.potionEffects:
-          - type: SPEED
+          - type: minecraft:speed
             duration: 7s
             amplifier: 10
-          - type: JUMP
+          - type: minecraft:jump_boost
             duration: 7s
             amplifier: 3
-          - type: HARM
+          - type: minecraft:instant_damage
             duration: 1t
             amplifier: 1

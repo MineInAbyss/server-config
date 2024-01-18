@@ -27,7 +27,7 @@ skills:
       - chance: 0.6
     run:
       - set.potionEffects:
-          - type: BLINDNESS
+          - type: minecraft:blindness
             duration: 4s
             amplifier: 0
 drop:

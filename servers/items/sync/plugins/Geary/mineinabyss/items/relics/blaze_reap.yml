@@ -13,7 +13,7 @@ disableItemInteractions: { }
 skills:
   - event: on.itemRightClick
     using: itemHolder
-    variables:
+    vars:
       - derived location spawnAt:
           read.targetBlock:
             maxDistance: 10

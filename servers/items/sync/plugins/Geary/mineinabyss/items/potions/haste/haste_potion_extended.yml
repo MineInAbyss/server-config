@@ -17,7 +17,7 @@ food:
   replacement:
     type: GLASS_BOTTLE
   effectList:
-    - type: FAST_DIGGING
+    - type: minecraft:haste
       duration: 8m
 set.potion_mixes:
   potionmixes:
