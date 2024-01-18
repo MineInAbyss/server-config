@@ -1,0 +1,25 @@
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃      Velocitab TabGroups     ┃
+# ┃    Developed by William278   ┃
+# ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+# ┣╸ Information: https://william278.net/project/velocitab
+# ┗╸ Documentation: https://william278.net/docs/velocitab
+
+groups:
+  - name: default
+    headers:
+      - \n\n\n
+    footers:
+      - 'Ping: %ping%ms %server_tps_5_colored%'
+    format: '%server%%prefix% %username%'
+    servers:
+      - survival
+      - build
+      - dev
+      - archive
+    sorting_placeholders:
+      - '%server%'
+      - '%role_weight%'
+      - '%username%'
+    header_footer_update_rate: 1000
+    placeholder_update_rate: 5000

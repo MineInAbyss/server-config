@@ -4,33 +4,13 @@
 # ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 # ┣╸ Information: https://william278.net/project/velocitab
 # ┗╸ Documentation: https://william278.net/docs/velocitab
+
 # Check for updates on startup
 check_for_updates: true
-# Header(s) to display above the TAB list for each server group.
-# List multiple headers and set update_rate to the number of ticks between frames for basic animations
-headers:
-  default:
-    - ' \n\n\n'
-# Footer(s) to display below the TAB list for each server group, same as headers.
-footers:
-  default:
-    - 'Ping: %ping%ms %server_tps_5_colored%'
-formats:
-  default: '%server%%prefix% %username%'
-# Nametag(s) to display above players' heads for each server group. Set to empty to disable.
-# Nametag formats must contain a %username%. Docs: https://william278.net/docs/velocitab/nametags
-nametags:
-  default: ''
+# Whether to remove nametag from players' heads if the nametag associated with their server group is empty.
+remove_nametags: false
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
-formatting_type: MINEDOWN
-# The servers in each group of servers. The order of groups is important when sorting by SERVER_GROUP.
-server_groups:
-  default:
-    - survival
-    - build
-    - dev
-    - archive
-    - test
+formatter: MINEDOWN
 # All servers which are not in other groups will be put in the fallback group.
 # "false" will exclude them from Velocitab.
 fallback_enabled: true
@@ -48,20 +28,13 @@ server_display_names:
 # Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
 # How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)
-papi_cache_time: 0
+papi_cache_time: 1000
 # If you are using MINIMESSAGE formatting, enable this to support MiniPlaceholders in formatting.
-enable_miniplaceholders_hook: true
+enable_mini_placeholders_hook: true
 # Whether to send scoreboard teams packets. Required for player list sorting and nametag formatting.
 # Turn this off if you're using scoreboard teams on backend servers.
 send_scoreboard_packets: true
 # Whether to sort players in the TAB list.
 sort_players: true
-# Ordered list of elements by which players should be sorted. (Correct values are both internal placeholders and, if enabled, PAPI placeholders)
-sorting_placeholders:
-  - '%role_weight%'
-  - '%username%'
-  - '%server%'
-# How often in milliseconds to periodically update the TAB list, including header and footer, for all users.
-# If set to 0, TAB will be updated on player join/leave instead. (1s = 1000ms)
-# The minimal update rate is 200ms, anything lower will automatically be set to 200ms.
-update_rate: 5000
+# Remove gamemode spectator effect for other players in the TAB list.
+remove_spectator_effect: true
