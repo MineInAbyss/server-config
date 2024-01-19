@@ -12,6 +12,9 @@ groups:
     footers:
       - 'Ping: %ping%ms %server_tps_5_colored%'
     format: '%server%%prefix% %username%'
+    nametag:
+      prefix: ''
+      suffix: ''
     servers:
       - survival
       - build
