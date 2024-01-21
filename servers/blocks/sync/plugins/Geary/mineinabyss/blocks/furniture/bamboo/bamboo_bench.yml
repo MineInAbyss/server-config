@@ -14,9 +14,22 @@ seat:
 furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
-    - location: { x: 0, y: 0, z: 0 }
-    - location: { x: -1, y: 0, z: 0 }
-    - location: { x: 1, y: 0, z: 0 }
+    - { x: 0, y: 0, z: 0 }
+    - { x: -1, y: 0, z: 0 }
+    - { x: 1, y: 0, z: 0 }
+  interactionHitbox:
+    - width: 1.0
+      height: 2.0
+    - width: 1.0
+      height: 2.0
+      originOffset: { x: -1, y: 0, z: 0 }
+    - width: 1.0
+      height: 2.0
+      originOffset: { x: 1, y: 0, z: 0 }
+placableOn:
+  floor: true
+  ceiling: false
+  wall: false
 drops:
   drops:
     - item: { prefab: mineinabyss:bamboo_bench }

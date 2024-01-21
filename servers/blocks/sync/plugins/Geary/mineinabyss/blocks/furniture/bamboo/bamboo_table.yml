@@ -8,8 +8,12 @@ set.item:
     customModelData: 1008
 furniture:
   interactionHitbox:
-    width: 1.2
-    height: 1.0
+    - width: 1.2
+      height: 1.0
+placableOn:
+  floor: true
+  ceiling: false
+  wall: false
 drops:
   drops:
     - item: { prefab: mineinabyss:bamboo_table }

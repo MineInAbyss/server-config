@@ -17,6 +17,6 @@ furniture:
     displayTransform: NONE
   rotationType: VERY_STRICT
   interactionHitbox:
-    width: 1
-    height: 1
+    - width: 1
+      height: 1
 

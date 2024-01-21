@@ -4,7 +4,7 @@ set.item:
     type: PAPER
     displayName: <#7a4e48>Foliage 1
     customModelData: 3001
-placable_on:
+placableOn:
   floor: true
   ceiling: true
   wall: false

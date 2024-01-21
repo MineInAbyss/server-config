@@ -8,15 +8,15 @@ set.item:
     customModelData: 1002
 furniture:
   collisionHitbox:
-    - location: { x: 0, y: 0, z: 0 }
-      type: FULL
-    - location: { x: -1, y: 0, z: 0 }
-      type: FULL
-    - location: { x: 0, y: 1, z: 0 }
-      type: HALF
-    - location: { x: -1, y: 1, z: 0 }
-      type: HALF
+    - { x: 0, y: 0, z: 0 }
+    - { x: -1, y: 0, z: 0 }
+    - { x: 0, y: 1, z: 0 }
+    - { x: -1, y: 1, z: 0 }
 
+placableOn:
+  floor: true
+  ceiling: false
+  wall: false
 drops:
   drops:
     - item: { prefab: mineinabyss:bamboo_drawer }
