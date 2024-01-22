@@ -25,7 +25,9 @@ skills:
   - event: on.itemLeftClick
     using: itemHolder
     conditions:
-      - cooldown: 1s
+      - cooldown:
+          length: 1s
+          displayName: <dark_aqua>Depth Meter
     run:
       - showDepth: { }
   - event: on.itemRightClick
