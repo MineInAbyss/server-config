@@ -116,35 +116,14 @@ channels:
       position: SUFFIX
       format: ' <gray>[<red>X</red>]</gray>'
       notifyStaff: true
-    format: ":build::space_-12:
-    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
-    </light_purple><light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
+    format: ":build::space_-12:<hover:show_text:'
+    <light_purple>%player_name%<newline>
+    <light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
     <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
     messageColor: white
     channelAliases:
       - "g"
-
-  playerhead:
-    channelType: GLOBAL
-    permission: "chatty.channel.playerhead"
-    isDefaultChannel: false
-    proxy: true
-    discordsrv: true
-    messageDeletion:
-      enabled: true
-      position: SUFFIX
-      format: ' <gray>[<red>X</red>]</gray>'
-      notifyStaff: true
-    format: "<chatty_player_head>:space_-4:
-    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
-    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
-    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%>%luckperms_prefix% <chatty_nickname>: "
-    messageColor: white
-    channelAliases:
-      - "head"
 
   local:
     channelType: RADIUS
