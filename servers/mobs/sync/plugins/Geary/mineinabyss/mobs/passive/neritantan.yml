@@ -24,20 +24,16 @@ drop:
   - item: mineinabyss:neritantan_meat_raw
     cooked: mineinabyss:neritantan_meat_cooked
     dropChance: 0.5000
-  - item:
-      type: BEETROOT_SEEDS
+  - item: minecraft:beetroot_seeds
     amount: 2
     dropChance: 0.3000
-  - item:
-      type: MELON_SEEDS
+  - item: minecraft:melon_seeds
     amount: 2
     dropChance: 0.3000
-  - item:
-      type: PUMPKIN_SEEDS
+  - item: minecraft:pumpkin_seeds
     amount: 2
     dropChance: 0.3000
-  - item:
-      type: SWEET_BERRIES
+  - item: minecraft:sweet_berries
     amount: 2
     dropChance: 0.3000
 sounds:

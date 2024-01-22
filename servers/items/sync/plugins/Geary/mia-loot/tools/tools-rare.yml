@@ -8,8 +8,7 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:iron_sickle
+              item: mineinabyss:iron_sickle
             - !<minecraft:item>
               name: minecraft:iron_axe
             - !<minecraft:item>
@@ -19,8 +18,7 @@ loot_table:
           weight: 1
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:diamond_sickle
+              item: mineinabyss:diamond_sickle
             - !<minecraft:item>
               name: minecraft:diamond_axe
             - !<minecraft:item>

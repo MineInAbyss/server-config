@@ -23,8 +23,7 @@ set.*:
         random_stroll_land: { }
 drop:
   - exp: 13..20
-  - item:
-      type: SWEET_BERRIES
+  - item: minecraft:sweet_berries
     amount: 3
     dropChance: 0.5000
 sounds: {}
