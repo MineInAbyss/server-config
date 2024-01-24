@@ -1,9 +1,10 @@
 namespaces: [ geary, looty, mineinabyss ]
 set.item:
   item:
-    type: minecraft:paper
+    type: minecraft:knowledge_book
     displayName: <dark_aqua>Flamethrower
-# TODO    customModelData:
+    customModelData: 9
+    # TODO add lore
 disableItemInteractions: { }
 skills:
   - event: on.itemRightClick
@@ -19,4 +20,4 @@ skills:
           - chance: 0.2 # Consume slightly slower
         consumeItem:
           type: mineinabyss:flamethrower_fuel
-      - mythicSkill: flamethrower # TODO create skill with particle effects
+      - mythicSkill: pflamethrower
