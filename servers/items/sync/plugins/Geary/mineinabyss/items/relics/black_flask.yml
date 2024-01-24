@@ -18,6 +18,7 @@ skills:
           - type: minecraft:jump_boost
             duration: 7s
             amplifier: 3
-          - type: minecraft:instant_damage
-            duration: 1t
-            amplifier: 1
+      - damage:
+          damage: 10
+          minHealth: 1
+          ignoreArmor: true
