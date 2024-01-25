@@ -64,6 +64,13 @@ okiboStations:
     subStations: []
 okiboMaps:
   - station: GoldenBridge
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: 5.76
       y: 0.95
@@ -145,6 +152,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: GuildHQ
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: -5.6
       y: 0.9
@@ -225,6 +239,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: TowerDistrict
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: -5.76
       y: 0.95
@@ -306,6 +327,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: DocksEast
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: -0.42
       y: 0.95
@@ -387,6 +415,13 @@ okiboMaps:
         y: -0.08
         z: -0.01
   - station: VillageDistrict
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: 2.8
       y: 0.95
@@ -468,6 +503,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: CliffDistrict
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: 4.76
       y: 0.95
@@ -549,6 +591,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: SlumDistrict
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: -4.76
       y: 0.95
@@ -630,6 +679,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: DocksWest
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: -6.76
       y: 0.95
@@ -719,6 +775,13 @@ okiboMaps:
         y: -0.08
         z: 0.01
   - station: Orphanage
+    noticeBoardFurniture:
+      prefab: mineinabyss:noticeboard_okibo
+      offset:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      yaw: 0.0
     offset:
       x: 3.76
       y: 0.95

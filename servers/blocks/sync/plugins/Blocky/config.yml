@@ -32,6 +32,9 @@ noteBlocks:
   isEnabled: true
 tripWires:
   isEnabled: true
+furniture:
+  showHitboxOutline: false
+  worldEdit: false
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
 caveVineBlocks:
