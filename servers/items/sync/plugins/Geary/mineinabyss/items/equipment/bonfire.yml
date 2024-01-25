@@ -29,6 +29,10 @@ furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.8
+placableOn:
+  floor: true
+  ceiling: false
+  wall: false
 drops:
   drops:
-    - item: { prefab: mineinabyss:bonfire }
+    - item: mineinabyss:bonfire
