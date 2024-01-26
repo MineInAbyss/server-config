@@ -10,3 +10,43 @@ pflamethrowert:
   - projectile{bulletType=MOB;mob=FX_medium;v=14;i=1;hR=1;vR=1;mr=32;syo=1.5;ac=.95;hp=false;tyo=1;sfo=-1} @targetlocation
   - projectile{bulletType=MOB;mob=FX_medium;v=14;i=1;hR=1;vR=1;mr=32;syo=1.5;ac=.95;hp=false;tyo=1;sfo=-1} @targetlocation
   #- projectile{bulletType=MOB;mob=FX_xlarge;v=14;i=1;hR=1;vR=1;mr=64;syo=1.5;ac=.95;hp=false;tyo=1;sfo=-1} @targetlocation
+FLAMETHROWERblockfire:
+  TargetConditions:
+  - blocktype{m=air} false
+  Skills:
+  #- effect:blockmask{m=MAGMA;r=1;d=60} @self
+  #- effect:geyser{type=LAVA;height=.25;speed=10} @self
+  #- effect:blockmask{m=FIRE;r=1;d=2;oa=true} @self
+  - shootfireball{y=0;v=4;i=true;small=true;ft=1} @forward{f=4;y=-2} .25
+
+FLAMETHROWERFXSPAWN_small:
+  Skills:
+  - delay 1
+  - ignite{ticks=32} @self
+  - delay 15
+  - remove @self
+  
+FLAMETHROWERFXSPAWN_medium:
+  Skills:
+  - delay 15
+  - ignite{ticks=32} @self
+  - delay 15
+  - remove @self
+  
+FLAMETHROWERFXSPAWN_large:
+  Skills:
+  - delay 24
+  - ignite{ticks=14} @self
+  - delay 15
+  - remove @self
+  
+FLAMETHROWERFXSPAWN_xlarge:
+  Skills:
+  - delay 28
+  - ignite{ticks=60} @self
+  - delay 15
+  - remove @self
+
+FLAMETHROWER-Tick:
+  Skills:
+  - ignite{ticks=80} @PIR{r=4}
