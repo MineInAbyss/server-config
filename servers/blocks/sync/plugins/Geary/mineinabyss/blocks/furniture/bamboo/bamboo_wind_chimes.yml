@@ -8,8 +8,8 @@ set.item:
     customModelData: 1009
 furniture:
   interactionHitbox:
-    width: 0.4
-    height: 1.0
+    - width: 0.4
+      height: 1.0
 placable_on:
   floor: false
   ceiling: true

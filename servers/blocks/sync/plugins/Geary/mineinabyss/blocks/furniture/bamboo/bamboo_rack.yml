@@ -8,7 +8,7 @@ set.item:
     customModelData: 1006
 furniture:
   collisionHitbox:
-    - location: { x: 0, y: 0, z: 0 }
+    - { x: 0, y: 0, z: 0 }
     - location: { x: 0, y: 1, z: 0 }
       type: HALF
 

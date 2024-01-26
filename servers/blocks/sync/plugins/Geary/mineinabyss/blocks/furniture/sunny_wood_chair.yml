@@ -23,10 +23,10 @@ placable_on:
 furniture:
   rotationType: STRICT
   interactionHitbox:
-    width: 1
-    height: 2.0
+    - width: 1
+      height: 2.0
   collisionHitbox:
-    - location: { x: 0, y: 0, z: 0 }
+    - { x: 0, y: 0, z: 0 }
 drops:
   drops:
     - item: mineinabyss:sunny_wood_chair

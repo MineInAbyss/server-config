@@ -14,8 +14,8 @@ sound:
   fallSound: block.amethyst_cluster.fall
 furniture:
   interactionHitbox:
-    width: 1.2
-    height: 1.0
+    - width: 1.2
+      height: 1.0
 drops:
   drops:
     - item: mineinabyss:sculk_shelf

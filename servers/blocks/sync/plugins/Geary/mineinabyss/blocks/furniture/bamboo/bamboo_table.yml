@@ -8,8 +8,8 @@ set.item:
     customModelData: 1008
 furniture:
   interactionHitbox:
-    width: 1.2
-    height: 1.0
+    - width: 1.2
+      height: 1.0
 drops:
   drops:
     - item: mineinabyss:bamboo_table

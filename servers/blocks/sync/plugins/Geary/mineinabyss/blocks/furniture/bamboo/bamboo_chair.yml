@@ -12,8 +12,8 @@ set.item:
 furniture:
   rotationType: STRICT
   interactionHitbox:
-    width: 1.0
-    height: 2.0
+    - width: 1.0
+      height: 2.0
 seat:
   heightOffset: 0.1
 
