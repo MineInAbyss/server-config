@@ -45,7 +45,7 @@ music:
 shopkeeping:
   enabled: true
 okiboTravel:
-  enabled: true
+  enabled: false
 orthBanking:
   enabled: true
   balanceHudId: "balance_empty_offhand"
