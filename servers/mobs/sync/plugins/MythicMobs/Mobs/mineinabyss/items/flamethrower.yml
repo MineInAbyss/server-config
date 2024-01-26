@@ -41,3 +41,12 @@ FX_large:
   - damage{a=10} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
   - ignite{ticks=60} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
   - skill{s=FLAMETHROWERFXSPAWN_large} @self ~onSpawn
+
+FLAMETHROWERblockfire:
+  TargetConditions:
+  - blocktype{m=air} false
+  Skills:
+  #- effect:blockmask{m=MAGMA;r=1;d=60} @self
+  #- effect:geyser{type=LAVA;height=.25;speed=10} @self
+  #- effect:blockmask{m=FIRE;r=1;d=2;oa=true} @self
+  - shootfireball{y=0;v=4;i=true;small=true;ft=1} @forward{f=4;y=-2} .25
