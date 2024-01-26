@@ -18,11 +18,11 @@ skills:
           read.targetBlock:
             maxDistance: 10
     conditions:
+      - check.player:
+          isSneaking: true
       - cooldown:
           length: 2s
           displayName: <#617B94>Blaze Reap
-      - check.player:
-          isSneaking: true
     run:
       - explode:
           breakBlocks: false
