@@ -1,43 +1,43 @@
 FX_small:
   Display: 'Flamethrower'
   Type: ARMOR_STAND
-  Disguise: SILVERFISH setInvisible
+  Disguise: SILVERFISH
   Options:
     Collidable: false
     Invisible: true
     Marker: true
     #ApplyInvisibility: true
   Skills:
-  - skill{s=FLAMETHROWERblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
+  - skill{s=pblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
   - damage{a=10} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
   - ignite{ticks=60} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
-  - skill{s=FLAMETHROWERFXSPAWN_small} @self ~onSpawn
+  - skill{s=FXSPAWN_small} @self ~onSpawn
 
 FX_medium:
   Display: 'Flamethrower'
   Type: ARMOR_STAND
-  Disguise: PIG setInvisible
+  Disguise: PIG
   Options:
     Collidable: false
     Invisible: true
     Marker: true
     #ApplyInvisibility: true
   Skills:
-  - skill{s=FLAMETHROWERblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
+  - skill{s=pblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
   - damage{a=10} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
   - ignite{ticks=60} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
-  - skill{s=FLAMETHROWERXSPAWN_medium} @self ~onSpawn
+  - skill{s=FXSPAWN_medium} @self ~onSpawn
   
 FX_large:
   Display: 'Flamethrower'
   Type: ARMOR_STAND
-  Disguise: HORSE setInvisible
+  Disguise: HORSE
   Options:
     Collidable: false
     Invisible: true
     Marker: true
   Skills:
-  - skill{s=FLAMETHROWERblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
+  - skill{s=pblockfire} @BlocksNearOrigin{radius=1;radiusy=0;noise=0;shape=cube;onlyair=false;noair=true} ~onTimer:2
   - damage{a=10} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
   - ignite{ticks=60} @EntitiesInRadius{r=3;ignore=players} ~onTimer:1
-  - skill{s=FLAMETHROWERFXSPAWN_large} @self ~onSpawn
+  - skill{s=FXSPAWN_large} @self ~onSpawn
