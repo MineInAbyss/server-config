@@ -16,10 +16,9 @@ sound:
   fallSound: block.amethyst_cluster.fall
 furniture:
   rotationType: VERY_STRICT
-
   collisionHitbox:
     - { x: 0, y: 0, z: 0 }
-    - location: { x: 1, y: 0, z: 0 }
+    - { x: 1, y: 0, z: 0 }
 drops:
   drops:
     - item: mineinabyss:stone_bench
