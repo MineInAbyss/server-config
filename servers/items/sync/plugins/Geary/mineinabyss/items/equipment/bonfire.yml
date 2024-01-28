@@ -29,6 +29,7 @@ furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.8
+prevent_itemstack_update: {}
 placableOn:
   floor: true
   ceiling: false
