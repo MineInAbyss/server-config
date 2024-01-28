@@ -31,7 +31,7 @@ layers:
     iterations: 1
     duration: "5s"
     effects:
-    - "HUNGER"
+    - "minecraft:hunger"
   - !<particles>
     count: 25
     offset: "3s"
@@ -67,17 +67,17 @@ layers:
     iterations: 1
     duration: "6s"
     effects:
-    - "HUNGER"
+    - "minecraft:hunger"
   - !<potion>
     strength: 1
     offset: "0s"
     iterations: 1
     duration: "4s"
     effects:
-    - "SLOW"
-    - "SLOW_DIGGING"
-    - "WEAKNESS"
-    - "POISON"
+    - "minecraft:slowness"
+    - "minecraft:mining_fatigue"
+    - "minecraft:weakness"
+    - "minecraft:poison"
   - !<particles>
     count: 25
     offset: "3s"
@@ -112,22 +112,22 @@ layers:
     iterations: 1
     duration: "8s"
     effects:
-    - "HUNGER"
+    - "minecraft:hunger"
   - !<potion>
     strength: 1
     offset: "400ms"
     iterations: 1
     duration: "10s"
     effects:
-    - "SLOW"
-    - "SLOW_DIGGING"
+    - "minecraft:slowness"
+    - "minecraft:mining_fatigue"
   - !<potion>
     strength: 1
     offset: "400ms"
     iterations: 1
     duration: "8s"
     effects:
-    - "WEAKNESS"
+    - "minecraft:weakness"
   - !<particles>
     count: 25
     offset: "3s"
@@ -183,17 +183,17 @@ layers:
     iterations: 1
     duration: "12s"
     effects:
-    - "HUNGER"
-    - "SLOW"
-    - "SLOW_DIGGING"
-    - "WEAKNESS"
+    - "minecraft:hunger"
+    - "minecraft:slowness"
+    - "minecraft:mining_fatigue"
+    - "minecraft:weakness"
   - !<potion>
     strength: 0
     offset: "0s"
     iterations: 1
     duration: "10s"
     effects:
-    - "WITHER"
+    - "minecraft:wither"
   - !<particles>
     count: 10
     offset: "50ms"
@@ -249,18 +249,18 @@ layers:
     iterations: 1
     duration: "12s"
     effects:
-    - "HUNGER"
-    - "SLOW"
-    - "SLOW_DIGGING"
-    - "DARKNESS"
-    - "WEAKNESS"
+    - "minecraft:hunger"
+    - "minecraft:slowness"
+    - "minecraft:mining_fatigue"
+    - "minecraft:weakness"
+    - "minecraft:darkness"
   - !<potion>
     strength: 1
     offset: "0s"
     iterations: 1
     duration: "10s"
     effects:
-    - "WITHER"
+    - "minecraft:wither"
   - !<particles>
     count: 10
     offset: "50ms"
