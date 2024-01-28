@@ -27,12 +27,8 @@ skills:
     conditions:
       - cooldown:
           length: 1s
-          displayName: <dark_aqua>Depth Meter
-    run:
-      - showDepth: { }
+    showDepth: { }
   - event: on.itemRightClick
-    using: itemHolder
-    run:
-      - toggleDepthHud: { }
+    toggleDepthHud: { }
 
 disableItemInteractions: { }

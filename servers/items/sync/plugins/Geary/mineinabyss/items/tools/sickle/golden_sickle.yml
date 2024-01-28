@@ -17,5 +17,8 @@ set.recipes:
         | MM|
         | SM|
         |S  |
-sickle:
-  radius: 3
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    sickle:
+      radius: 3

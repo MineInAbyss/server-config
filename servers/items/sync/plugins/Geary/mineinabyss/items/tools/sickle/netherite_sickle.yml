@@ -14,5 +14,8 @@ set.recipes:
         type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
       input: mineinabyss:diamond_sickle
       addition: minecraft:netherite_ingot
-sickle:
-  radius: 4
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    sickle:
+      radius: 4

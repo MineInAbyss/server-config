@@ -17,6 +17,5 @@ starcompass: { }
 disableItemInteractions: { }
 skills:
   - event: on.itemRightClick
-    using: itemHolder
     run:
       - toggleStarcompassHud: { }
