@@ -4,8 +4,8 @@ silkfang:
   Damage: 4
   Options:
     Despawn: true
-    MovementSpeed: 0.3
-    MaxCombatDistance: 40
+    MovementSpeed: 0.36
+    MaxCombatDistance: 30
     DigOutOfGround: true
   AIGoalSelectors:
   - 0 clear
@@ -33,3 +33,8 @@ silkfang:
   - dismount ~onDamaged
   - skill{s=stingerhead_unstuck} @self ~onTimer:20
   - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=stingerhead_unstuck} @self ~onTimer:20
+  - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
+  - skill{s=silkfangHurt} @self ~onHurt
+  - skill{s=silkfangDeath} @self ~onDeath
+  - petExperience{exp=1} @ENO{r=30} ~onDeath

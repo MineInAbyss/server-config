@@ -1,11 +1,10 @@
 namespaces: [geary, mobzy, looty]
 set.mythicMob: OrbPiercer
 displayName: "<#C74040>Orb Piercer"
-deathLoot:
-  exp: 80..210
-  drops:
-    - item: { prefab: mineinabyss:orb_piercer_spike }
-      amount: 3..6
-    - item: { prefab: mineinabyss:orb_piercer_face_fragments }
-      amount: 1
-      dropChance: 0.4
+drop:
+  - exp: 80..210
+  - item: mineinabyss:orb_piercer_spike
+    amount: 3..6
+  - item: mineinabyss:orb_piercer_face_fragments
+    amount: 1
+    dropChance: 0.4

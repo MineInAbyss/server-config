@@ -24,13 +24,12 @@ set.*:
         panic:
           speedModifier: 4
         random_stroll_land: { }
-deathLoot:
-  exp: 5..15
-  drops:
-    - item: { prefab: mineinabyss:kakatsumuri_shell }
-      amount: 1
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:kakatsumuri_glowing_tip }
-      amount: 1
-      dropChance: 0.9000
+drop:
+  - exp: 5..15
+  - item: mineinabyss:kakatsumuri_shell
+    amount: 1
+    dropChance: 0.8000
+  - item: mineinabyss:kakatsumuri_glowing_tip
+    amount: 1
+    dropChance: 0.9000
 sounds: { }

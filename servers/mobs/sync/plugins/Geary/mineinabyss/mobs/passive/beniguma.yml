@@ -21,11 +21,9 @@ set.*:
         avoid_player:
           radius: 10
         random_stroll_land: { }
-deathLoot:
-  exp: 13..20
-  drops:
-    - item:
-        type: SWEET_BERRIES
-      amount: 3
-      dropChance: 0.5000
+drop:
+  - exp: 13..20
+  - item: minecraft:sweet_berries
+    amount: 3
+    dropChance: 0.5000
 sounds: {}

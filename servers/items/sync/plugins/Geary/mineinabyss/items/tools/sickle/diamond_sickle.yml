@@ -11,13 +11,14 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        M:
-          type: DIAMOND
-        S:
-          type: STICK
+        M: minecraft:diamond
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|
         |S  |
-sickle:
-  radius: 2
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    sickle:
+      radius: 2

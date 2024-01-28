@@ -6,5 +6,4 @@ set.recipes:
   group: "green_dye"
   recipes:
     - !<shapeless>
-      items:
-        - prefab: mineinabyss:splitjaw_gunk
+      items: [ mineinabyss:splitjaw_gunk ]

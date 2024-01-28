@@ -6,7 +6,7 @@ set.item:
       - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
     type: CARROT_ON_A_STICK
     customModelData: 2
-disable_item_interactions: {}
+disableItemInteractions: {}
 set.recipes:
   discoverRecipes: true
   result:

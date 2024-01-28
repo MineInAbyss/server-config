@@ -12,19 +12,18 @@ set.*:
     attackKnockback: 2
     knockbackResistance: 0.5000
     followRange: 20
-deathLoot:
-  exp: 20..25
-  drops:
-    - item: { prefab: mineinabyss:steve_eye }
-      dropChance: 0.1000
-    - item: { prefab: mineinabyss:steve_piss }
-      dropChance: 0.2000
-    - item: { prefab: mineinabyss:steve_antlers }
-      amount: 4
-    - item: { prefab: mineinabyss:steve_antlers }
-      amount: 4
-    - item: { prefab: mineinabyss:steve_antlers }
-      amount: 4
+drop:
+  - exp: 20..25
+  - item: mineinabyss:steve_eye
+    dropChance: 0.1000
+  - item: mineinabyss:steve_piss
+    dropChance: 0.2000
+  - item: mineinabyss:steve_antlers
+    amount: 4
+  - item: mineinabyss:steve_antlers
+    amount: 4
+  - item: mineinabyss:steve_antlers
+    amount: 4
 sounds:
   ambient:
     sound: mineinabyss:entity.steve.ambient

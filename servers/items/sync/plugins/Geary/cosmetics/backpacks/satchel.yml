@@ -7,5 +7,5 @@ set.item:
     customModelData: 101
     itemFlags:
       - HIDE_POTION_EFFECTS
-disable_item_interactions: {}
+disableItemInteractions: {}
 backpack: {}

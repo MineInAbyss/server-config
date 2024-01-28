@@ -26,12 +26,11 @@ set.*:
         look_at_player: { }
         random_look_around: { }
         float: { }
-deathLoot:
-  exp: 15..25
-  drops:
-    - item: { prefab: mineinabyss:virinsipede_segments }
-      amount: 3
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:virinsipede_antlers }
-      dropChance: 0.3000
+drop:
+  - exp: 15..25
+  - item: mineinabyss:virinsipede_segments
+    amount: 3
+    dropChance: 0.8000
+  - item: mineinabyss:virinsipede_antlers
+    dropChance: 0.3000
 sounds: { }

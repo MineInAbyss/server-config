@@ -3,15 +3,14 @@ inherit:
   from: [mineinabyss:passive_flying]
 set.mythicMob: hashofu
 displayName: "<#454545>Hashofu"
-deathLoot:
-  exp: 12..18
-  drops:
-    - item: { prefab: mineinabyss:hashofu_tail_raw }
-      cooked: { prefab: mineinabyss:hashofu_tail_cooked }
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:hashofu_eye }
-      dropChance: 0.6500
-      amount: 2
-    - item: { prefab: mineinabyss:hashofu_body }
-      amount: 1..3
+drop:
+  - exp: 12..18
+  - item: mineinabyss:hashofu_tail_raw
+    cooked: mineinabyss:hashofu_tail_cooked
+    dropChance: 0.8000
+  - item: mineinabyss:hashofu_eye
+    dropChance: 0.6500
+    amount: 2
+  - item: mineinabyss:hashofu_body
+    amount: 1..3
 sounds: {}

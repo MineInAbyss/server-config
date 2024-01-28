@@ -50,3 +50,4 @@ splitjaw:
     - skill{s=sj_roar} @target ~onTimer:100
     - skill{s=SJ_dash} @target ~onTimer:40
     - skill{s=SJ_Attack} @self ~onAttack
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

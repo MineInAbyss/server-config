@@ -8,8 +8,7 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:orthcoin
+              item: mineinabyss:orthcoin
               functions:
                 - !<minecraft:set_count>
                   count: !<minecraft:uniform> { min: 1, max: 3 }

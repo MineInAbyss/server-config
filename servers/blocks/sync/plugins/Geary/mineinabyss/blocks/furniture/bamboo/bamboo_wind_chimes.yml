@@ -10,11 +10,11 @@ furniture:
   interactionHitbox:
     - width: 0.4
       height: 1.0
-placableOn:
+placable_on:
   floor: false
   ceiling: true
   wall: false
 drops:
   drops:
-    - item: { prefab: mineinabyss:bamboo_wind_chime }
+    - item: mineinabyss:bamboo_wind_chime
 

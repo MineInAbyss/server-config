@@ -5,29 +5,20 @@ set.item:
     displayName: <gold>Black Flask
     customModelData: 1
     lore:
-      - <green>placeholder..
-children:
-  nameToComponents:
-    flask:
-      - !<geary:apply> geary:potion_effects
-      - !<geary:apply> geary:deal_damage
-      - !<geary:potion_effects>
-        effects:
-          - type: SPEED
+      - <yellow>A fleshy bottle filled with a thick, black, oily substance.
+      - <yellow>Drinking it gives the user a jolt of energy, at a price...
+skills:
+  - event: on.itemConsumed
+    using: consumer
+    run:
+      - set.potionEffects:
+          - type: minecraft:speed
             duration: 7s
             amplifier: 10
-          - type: JUMP
+          - type: minecraft:jump_boost
             duration: 7s
             amplifier: 3
-          - type: HARM
-            duration: 1t
-            amplifier: 2
-    flaskCondition:
-      - !<geary:check.health>
-        within: 2.0..200.0
-event.triggers:
-  expressions:
-    - other geary:event.ingested this -> this child(flask) other
-event.conditions:
-  expressions:
-    - any -> child(flaskCondition) -> child(flask)
+      - damage:
+          damage: 10
+          minHealth: 1
+          ignoreArmor: true

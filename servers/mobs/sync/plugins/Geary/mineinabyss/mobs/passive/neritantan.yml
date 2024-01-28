@@ -19,28 +19,23 @@ set.*:
         avoid_player:
           radius: 10
         random_stroll_land: { }
-deathLoot:
-  exp: 10..15
-  drops:
-    - item: { prefab: mineinabyss:neritantan_meat_raw }
-      cooked: { prefab: mineinabyss:neritantan_meat_cooked }
-      dropChance: 0.5000
-    - item:
-        type: BEETROOT_SEEDS
-      amount: 2
-      dropChance: 0.3000
-    - item:
-        type: MELON_SEEDS
-      amount: 2
-      dropChance: 0.3000
-    - item:
-        type: PUMPKIN_SEEDS
-      amount: 2
-      dropChance: 0.3000
-    - item:
-        type: SWEET_BERRIES
-      amount: 2
-      dropChance: 0.3000
+drop:
+  - exp: 10..15
+  - item: mineinabyss:neritantan_meat_raw
+    cooked: mineinabyss:neritantan_meat_cooked
+    dropChance: 0.5000
+  - item: minecraft:beetroot_seeds
+    amount: 2
+    dropChance: 0.3000
+  - item: minecraft:melon_seeds
+    amount: 2
+    dropChance: 0.3000
+  - item: minecraft:pumpkin_seeds
+    amount: 2
+    dropChance: 0.3000
+  - item: minecraft:sweet_berries
+    amount: 2
+    dropChance: 0.3000
 sounds:
   ambient:
     sound: mineinabyss:entity.neritantan.ambient

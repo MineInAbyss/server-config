@@ -19,9 +19,9 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:fuwagi_meat_cooked }
+              item: mineinabyss:fuwagi_meat_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:hammerbeak_wing_cooked }
+              item: mineinabyss:hammerbeak_wing_cooked
           functions:
             - !<minecraft:set_count>
               count: !<minecraft:uniform> { min: 1, max: 2 }

@@ -54,8 +54,8 @@ SJ_dashhit:
     - targetwithin 5
   Skills:
     - setstance{stance=dashhit} @self
-    - shieldbreak{duration=200} @target
-    - damage{a=10} @PIR{r=3}
+   # - shieldbreak{duration=200} @target
+    - damage{a=8;ia=true} @PIR{r=3}
 
     - delay 100
 

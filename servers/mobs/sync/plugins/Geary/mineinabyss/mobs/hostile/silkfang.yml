@@ -2,15 +2,14 @@ namespaces: [ geary, mobzy, looty ]
 set.mythicMob: silkfang
 display_name: "<#116AAD>Silkfang"
 sounds: { }
-deathLoot:
-  exp: 20..50
-  drops:
-    - item: { prefab: mineinabyss:silkfang_eye }
-      amount: 3
-      dropChance: 0.6
-    - item: { prefab: mineinabyss:silkfang_silk }
-      amount: 1..3
-      dropChance: 0.85
-    - item: { prefab: mineinabyss:bundle_of_silkfang_silk }
-      amount: 1..2
-      dropChance: 0.2
+drop:
+  - exp: 10..25
+  - item: mineinabyss:silkfang_eye
+    amount: 1..2
+    dropChance: 0.6
+  - item: mineinabyss:silkfang_silk
+    amount: 1..2
+    dropChance: 0.85
+  - item: mineinabyss:bundle_of_silkfang_silk
+    amount: 1..2
+    dropChance: 0.1

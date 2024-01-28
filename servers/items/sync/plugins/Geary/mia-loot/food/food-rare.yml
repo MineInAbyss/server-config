@@ -8,13 +8,13 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:corpse_weeper_meat_cooked }
+              item: mineinabyss:corpse_weeper_meat_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:inbyo_meat_cooked }
+              item: mineinabyss:inbyo_meat_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:neritantan_meat_cooked }
+              item: mineinabyss:neritantan_meat_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:onitsuchi_wing_cooked }
+              item: mineinabyss:onitsuchi_wing_cooked
           functions:
             - !<minecraft:set_count>
               count: !<minecraft:uniform> { min: 1, max: 4 }

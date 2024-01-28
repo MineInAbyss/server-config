@@ -1,23 +1,21 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.*:
   mythicMob: ashimite
   woolColor: LIGHT_BLUE
+drop:
+  - exp: 18..35
+  - item: mineinabyss:ashimite_meat_raw
+    cooked: mineinabyss:ashimite_meat_cooked
+    dropChance: 0.75
+    amount: 1
+  - item: mineinabyss:ashimite_hoof
+    amount: 1..2
+  - item: mineinabyss:ashimite_antlers
+    amount: 1..2
+    dropChance: 0.4
+  - item: minecraft:light_blue_wool
+    amount: 1..2
 displayName: "<#2597D9>Ashimite"
 modelengine.rideable:
-  steerItem:
-    prefab: mineinabyss:demonfish_on_a_stick
-sounds: {}
-deathLoot:
-  exp: 18..35
-  drops:
-    - item: { prefab: mineinabyss:ashimite_meat_raw }
-      cooked: { prefab: mineinabyss:ashimite_meat_cooked }
-      dropChance: 0.75
-      amount: 1
-    - item: { prefab: mineinabyss:ashimite_hoof }
-      amount: 1..2
-    - item: { prefab: mineinabyss:ashimite_antlers }
-      amount: 1..2
-      dropChance: 0.4
-    - item: { type: LIGHT_BLUE_WOOL }
-      amount: 1..3
+  steerItem: mineinabyss:demonfish_on_a_stick
+sounds: { }

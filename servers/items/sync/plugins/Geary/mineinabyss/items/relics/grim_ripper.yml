@@ -4,7 +4,7 @@ set.item:
     displayName: <dark_gray>Grim Ripper
     type: KNOWLEDGE_BOOK
     customModelData: 6
-disable_item_interactions: {}
+disableItemInteractions: {}
 #events:
 #  leftClick:
 #    - !<cooldown>

@@ -1,7 +1,7 @@
-namespaces: [geary, looty, mineinabyss]
+namespaces: [ geary, looty, mineinabyss ]
 set.item:
   item:
-    type: KNOWLEDGE_BOOK
+    type: minecraft:knowledge_book
     customModelData: 2
     displayName: <#617B94><b>Blaze Reap
     lore:
@@ -9,22 +9,21 @@ set.item:
       - <#C6CC8A>which causes ongoing explosions
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
-disable_item_interactions: {}
-#explosion_resistant:
-#- !<relation>
-#  data: !<geary:cooldown>
-#    name: <#617B94><b>Explosion
-#    length: 2s
-#  to: geary:explodable
-#explodable:
-#  size: 10
-#  breakBlocks: true
-#strength:
-#  amount: 3
-#events:
-#  geary:item_left_click:
-#    - explode:
-#      find_location:
-#        at: !<player.target_block>
-#          allowAir: true
-#          maxDist: 10
+disableItemInteractions: { }
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    vars:
+      - derived location spawnAt:
+          read.targetBlock:
+            maxDistance: 10
+    conditions:
+      - check.player:
+          isSneaking: true
+      - cooldown:
+          length: 2s
+          displayName: <#617B94>Blaze Reap
+    run:
+      - explode:
+          breakBlocks: false
+          location: $spawnAt

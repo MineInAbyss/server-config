@@ -3,8 +3,7 @@ loot_table:
   pools:
     - entries:
         - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:parasitic_watershrooms
+          item: mineinabyss:parasitic_watershrooms
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }
       functions:

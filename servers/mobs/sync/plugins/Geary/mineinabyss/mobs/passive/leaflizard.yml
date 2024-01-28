@@ -1,0 +1,15 @@
+namespaces: [ geary, mobzy, looty ]
+inherit:
+  from: [ mineinabyss:passive ]
+displayName: "<#3BB143>Leaflizard"
+set.*:
+  mythicMob: leaflizard
+drop:
+  - exp: 12..18
+  - item: mineinabyss:leaflizard_raw
+    cooked: mineinabyss:leaflizard_cooked
+    dropChance: 0.6
+  - item: mineinabyss:leaflizard_scale
+    dropChance: 0.6
+    amount: 2
+sounds: { }

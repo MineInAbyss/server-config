@@ -1,0 +1,26 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: APPLE
+    displayName: <#454545>Cooked Leaflizard Tail
+    customModelData: 107
+    lore:
+      - <yellow>Obtained by cutting of the tail
+      - <yellow>of a <#454545>Hashofu <yellow>in the
+      - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
+      - <#595959><i>tastes more like chicken now.
+      - <#595959><i>it's not so squishy anymore...
+food:
+  saturation: 6
+  hunger: 5
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input: { prefab: mineinabyss:leaflizard_raw }
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input: { prefab: mineinabyss:leaflizard_raw }
+      experience: 2f
+      cookingTime: 50

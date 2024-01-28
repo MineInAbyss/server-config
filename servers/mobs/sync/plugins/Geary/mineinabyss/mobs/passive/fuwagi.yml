@@ -8,17 +8,16 @@ set.*:
   attributes:
     maxHealth: 10
     movementSpeed: 0.2500
-deathLoot:
-  exp: 10..16
-  drops:
-    - item: { prefab: mineinabyss:fuwagi_meat_raw }
-      cooked: { prefab: mineinabyss:fuwagi_meat_cooked }
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:fuwagi_foot }
-      amount: 2
-      dropChance: 0.3000
-    - item: { prefab: mineinabyss:fuwagi_hide }
-      dropChance: 0.4000
+drop:
+  - exp: 10..16
+  - item: mineinabyss:fuwagi_meat_raw
+    cooked: mineinabyss:fuwagi_meat_cooked
+    dropChance: 0.8000
+  - item: mineinabyss:fuwagi_foot
+    amount: 2
+    dropChance: 0.3000
+  - item: mineinabyss:fuwagi_hide
+    dropChance: 0.4000
 sounds:
   ambient:
     sound: mineinabyss:entity.fuwagi.ambient

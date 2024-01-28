@@ -32,3 +32,4 @@ corpse_weeper:
     - bodyclamp{m=corpse_weeper;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=corpse_weeper;s=attack} @self ~onAttack
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

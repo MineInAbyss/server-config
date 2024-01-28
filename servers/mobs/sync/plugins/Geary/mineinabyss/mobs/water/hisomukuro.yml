@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
 set.*:
   entityType: minecraft:axolotl
   modelengineModel:
@@ -20,33 +20,24 @@ set.*:
         melee_attack:
           seeThroughWalls: true
 displayName: "<#C8C8C8>Hisomukuro"
-children:
-  nameToComponents:
-    blindness:
-      - !<geary:apply> geary:potion_effects
-      - !<geary:potion_effects>
-        effects:
-          - type: BLINDNESS
+skills:
+  - event: on.damaged
+    using: damager
+    conditions:
+      - chance: 0.6
+    run:
+      - set.potionEffects:
+          - type: minecraft:blindness
             duration: 4s
             amplifier: 0
-    blindnessCondition:
-      - !<geary:condition.chance>
-        percentage: 0.6
-event.triggers:
-  expressions:
-    - other geary:event.touched this -> this child(blindness) other
-event.conditions:
-  expressions:
-    - any -> child(blindnessCondition) -> child(blindness)
-deathLoot:
-  exp: 200..250
-  drops:
-    - item: { prefab: mineinabyss:hisomukuro_fin }
-      amount: 1..2
-      dropChance: 0.6000
-    - item: { prefab: mineinabyss:demonfish_raw }
-      amount: 1..4
-    - item: { prefab: mineinabyss:hamashirama_raw }
-      amount: 1..4
-sounds: {}
-prevent.breeding: {}
+drop:
+  - exp: 200..250
+  - item: mineinabyss:hisomukuro_fin
+    amount: 1..2
+    dropChance: 0.6000
+  - item: mineinabyss:demonfish_raw
+    amount: 1..4
+  - item: mineinabyss:hamashirama_raw
+    amount: 1..4
+sounds: { }
+prevent.breeding: { }

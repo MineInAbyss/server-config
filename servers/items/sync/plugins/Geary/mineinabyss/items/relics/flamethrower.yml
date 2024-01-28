@@ -1,0 +1,24 @@
+namespaces: [ geary, looty, mineinabyss ]
+set.item:
+  item:
+    type: minecraft:knowledge_book
+    displayName: <dark_aqua>Flamethrower
+    customModelData: 9
+    # TODO add lore
+disableItemInteractions: { }
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    conditions:
+      - requiresConsumable:
+          type: mineinabyss:flamethrower_fuel
+      - cooldown:
+          length: 2s
+          displayName: <dark_aqua>Flamethrower
+    run:
+      - conditions:
+          - chance: 0.2 # Consume slightly slower
+        consumeItem:
+          type: mineinabyss:flamethrower_fuel
+      - mythicSkill:
+          name: pflamethrower

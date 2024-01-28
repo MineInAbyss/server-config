@@ -1,4 +1,4 @@
-namespaces: [geary, looty, mineinabyss]
+namespaces: [ geary, looty, mineinabyss ]
 set.item:
   item:
     type: PAPER
@@ -11,14 +11,11 @@ set.recipes:
   recipes:
     - !<shapeless>
       items:
-        - prefab: mineinabyss:star_compass_needle
-        - prefab: mineinabyss:titanjaw_pearl
-starcompass: {}
-children:
-  nameToComponents:
-    toggleStarCompassHud:
-      - !<mineinabyss:toggle_starcompass_hud>
-event.triggers:
-  expressions:
-    - other geary:event.right_clicked this -> this child(toggleStarCompassHud) other
-disable_item_interactions: {}
+        - mineinabyss:star_compass_needle
+        - mineinabyss:titanjaw_pearl
+starcompass: { }
+disableItemInteractions: { }
+skills:
+  - event: on.itemRightClick
+    run:
+      - toggleStarcompassHud: { }

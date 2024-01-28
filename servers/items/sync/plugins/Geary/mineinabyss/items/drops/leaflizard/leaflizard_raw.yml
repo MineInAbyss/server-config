@@ -1,0 +1,15 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: APPLE
+    displayName: <#454545>Leaflizard Tail
+    customModelData: 7
+    lore:
+      - <yellow>Obtained by cutting of the
+      - <yellow>tail of a <#616161>Tail<yellow>in the
+      - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
+      - <#595959><i>It is said it tastes like rubber.
+      - <#595959><i>is strangely very squishy!...
+food:
+  saturation: 0.4
+  hunger: 2

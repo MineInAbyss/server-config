@@ -8,8 +8,7 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:iron_sickle
+              item: mineinabyss:iron_sickle
             - !<minecraft:item>
               name: minecraft:iron_axe
             - !<minecraft:item>
@@ -19,8 +18,7 @@ loot_table:
           weight: 1
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:golden_sickle
+              item: mineinabyss:golden_sickle
             - !<minecraft:item>
               name: minecraft:golden_axe
             - !<minecraft:item>
@@ -31,10 +29,8 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:demonfish_on_a_stick
+              item: mineinabyss:demonfish_on_a_stick
             - !<mineinabyss:item>
-              item:
-                prefab: mineinabyss:tesuchi_scale_on_a_stick
+              item: mineinabyss:tesuchi_scale_on_a_stick
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }

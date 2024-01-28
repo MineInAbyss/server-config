@@ -1,0 +1,160 @@
+Id: corpse_weeper
+MythicMob: mia_corpse_weeper
+Permission: #mia.corpse_weeper
+Mountable: false
+MountType: flying_v16
+DespawnOnDismount: false
+AutoRide: false
+MountPermission: mcpets.mount_mypet
+DespawnSkill: mia_despawn
+Distance: 5
+SpawnRange: 1
+ComingBackRange: 3
+InventorySize: 9
+Icon:
+  Name: corpse_weeper
+  Material: INK_SAC
+  CustomModelData: 41
+  Description:
+  - Don't take to playgrounds!
+Levels:
+  Lvl_11:
+    Name: ∊
+    ExperienceThreshold: 0
+    MaxHealth: 520
+    Regeneration: 1.2
+    ResistanceModifier: 1.2
+    DamageModifier: 3.2
+    Power: 11
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_12:
+    Name: ∋
+    ExperienceThreshold: 100
+    MaxHealth: 600
+    Regeneration: 1.4
+    ResistanceModifier: 1.4
+    DamageModifier: 3.4
+    Power: 12
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_13:
+    Name: ∌
+    ExperienceThreshold: 210
+    MaxHealth: 650
+    Regeneration: 1.6
+    ResistanceModifier: 1.6
+    DamageModifier: 3.6
+    Power: 13
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_14:
+    Name: ∍
+    ExperienceThreshold: 330
+    MaxHealth: 700
+    Regeneration: 1.8
+    ResistanceModifier: 1.8
+    DamageModifier: 3.8
+    Power: 14
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_15:
+    Name: ∎
+    ExperienceThreshold: 460
+    MaxHealth: 750
+    Regeneration: 2
+    ResistanceModifier: 2
+    DamageModifier: 4
+    Power: 15
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_learn_spell
+  Lvl_16:
+    Name: ∏
+    ExperienceThreshold: 500
+    MaxHealth: 800
+    Regeneration: 1.1
+    ResistanceModifier: 3.2
+    DamageModifier: 4.2
+    Power: 16
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_17:
+    Name: ∐
+    ExperienceThreshold: 650
+    MaxHealth: 850
+    Regeneration: 1.2
+    ResistanceModifier: 3.4
+    DamageModifier: 4.4
+    Power: 16
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_18:
+    Name: ∑
+    ExperienceThreshold: 710
+    MaxHealth: 900
+    Regeneration: 1.3
+    ResistanceModifier: 3.6
+    DamageModifier: 4.6
+    Power: 18
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_19:
+    Name: ∓
+    ExperienceThreshold: 880
+    MaxHealth: 950
+    Regeneration: 1.4
+    ResistanceModifier: 3.8
+    DamageModifier: 4.8
+    Power: 19
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup
+  Lvl_20:
+    Name: ∔
+    ExperienceThreshold: 1060
+    MaxHealth: 1000
+    Regeneration: 1.5
+    ResistanceModifier: 4
+    DamageModifier: 5
+    Power: 20
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Skill: mia_levelup

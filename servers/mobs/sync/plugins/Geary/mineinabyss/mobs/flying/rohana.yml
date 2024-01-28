@@ -10,13 +10,12 @@ set.attributes:
   attackDamage:
   width: 0.8000
   height: 0.9
-deathLoot:
-  exp: 12..18
-  drops:
-    - item: { prefab: mineinabyss:rohana_powder }
-      amount: 2
-      dropChance: 0.8000
-    - item: { prefab: mineinabyss:rohana_tail }
-      amount: 2
-      dropChance: 0.4000
+drop:
+  - exp: 12..18
+  - item: mineinabyss:rohana_powder
+    amount: 2
+    dropChance: 0.8000
+  - item: mineinabyss:rohana_tail
+    amount: 2
+    dropChance: 0.4000
 sounds: {}

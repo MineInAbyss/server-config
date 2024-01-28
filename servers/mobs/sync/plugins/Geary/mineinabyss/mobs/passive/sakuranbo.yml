@@ -19,10 +19,9 @@ set.*:
           radius: 10
         random_stroll_land:
           priority: 10
-deathLoot:
-  exp: 10..20
-  drops:
-    - item: { prefab: mineinabyss:sakuranbo_dust }
-      amount: 3
-      dropChance: 0.9000
+drop:
+  - exp: 10..20
+  - item: mineinabyss:sakuranbo_dust
+    amount: 3
+    dropChance: 0.9000
 sounds: { }

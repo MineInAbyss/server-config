@@ -1,18 +1,11 @@
 namespaces: [geary, mobzy, looty]
-set.entityType: minecraft:axolotl
 displayName: "<#257BEB>Demonfish"
 set.*:
-  modelengineModel:
-    modelId: demonfish
-  attributes:
-    maxHealth: 20
-    movementSpeed: 1.2
-    followRange: 20
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:demonfish_raw }
-      cooked: { prefab: mineinabyss:demonfish_cooked }
+  mythicMob: demonfish
+drop:
+  - exp: 15..20
+  - item: mineinabyss:demonfish_raw
+    cooked: mineinabyss:demonfish_cooked
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

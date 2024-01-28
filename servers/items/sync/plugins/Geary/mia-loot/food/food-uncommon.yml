@@ -8,13 +8,13 @@ loot_table:
           weight: 3
           children:
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:neritantan_meat_cooked }
+              item: mineinabyss:neritantan_meat_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:onitsuchi_wing_cooked }
+              item: mineinabyss:onitsuchi_wing_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:demonfish_cooked }
+              item: mineinabyss:demonfish_cooked
             - !<mineinabyss:item>
-              item: { prefab: mineinabyss:billabonk_leg_cooked }
+              item: mineinabyss:billabonk_leg_cooked
           functions:
             - !<minecraft:set_count>
               count: !<minecraft:uniform> { min: 2, max: 6 }

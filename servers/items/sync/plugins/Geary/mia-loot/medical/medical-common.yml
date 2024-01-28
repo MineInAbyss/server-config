@@ -3,5 +3,4 @@ loot_table:
   pools:
     - entries:
         - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:abyssal_snail_shell
+          item: mineinabyss:abyssal_snail_shell

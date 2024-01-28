@@ -7,11 +7,10 @@ set.*:
     maxHealth: 20
     movementSpeed: 0.6
     followRange: 20
-deathLoot:
-  exp: 15..20
-  drops:
-    - item: { prefab: mineinabyss:spiralsquid_raw }
-      cooked: { prefab: mineinabyss:spiralsquid_cooked }
+drop:
+  - exp: 15..20
+  - item: mineinabyss:spiralsquid_raw
+    cooked: mineinabyss:spiralsquid_cooked
 sounds: {}
 bucketable:
   bucketLiquidRequired: WATER

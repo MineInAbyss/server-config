@@ -17,14 +17,13 @@ set.*:
         float: { }
         random_stroll_land: { }
         look_at_player: { }
-deathLoot:
-  exp: 20..25
-  drops:
-    - item: { prefab: mineinabyss:okibo_meat_raw }
-      cooked: { prefab: mineinabyss:okibo_meat_cooked }
-      amount: 6..10
-    - item: { prefab: mineinabyss:okibo_fur }
-      amount: 2..4
-      dropChance: 0.8000
+drop:
+  - exp: 20..25
+  - item: mineinabyss:okibo_meat_raw
+    cooked: mineinabyss:okibo_meat_cooked
+    amount: 6..10
+  - item: mineinabyss:okibo_fur
+    amount: 2..4
+    dropChance: 0.8000
 modelengine.rideable: {}
 sounds: {}

@@ -1,0 +1,77 @@
+mia_baby_shroombear:
+  Type: wolf
+  Display: '&2Shroombear'
+  health: 150
+  Damage: 2
+  Options:
+    MovementSpeed: 0.29
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  Model:
+    Id: qmob_shroombear
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.3
+  Skills:
+  - skill{s=shroombearheal} @self ~onTimer:10
+  - skill{s=Baby_Shroom_Harvest} @self ~oninteract
+  - skill{s=shroombearAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  - skill{s=shroombearHurt} @self ~onHurt
+  - skill{s=shroombearDeath} @self ~onDeath
+
+mia_shroombear:
+  Type: wolf
+  Display: '&2Shroombear'
+  health: 150
+  Damage: 2
+  Options:
+    MovementSpeed: 0.29
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  Model:
+    Id: qmob_shroombear
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.8
+  Skills:
+  - skill{s=shroombearheal2} @self ~onTimer:10
+  - skill{s=Shroom_Harvest} @self ~oninteract
+  - skill{s=shroombearAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  - skill{s=shroombearHurt} @self ~onHurt
+  - skill{s=shroombearDeath} @self ~onDeath

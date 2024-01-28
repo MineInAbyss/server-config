@@ -16,10 +16,10 @@ set.recipes:
   discoverRecipes: true
   recipes:
     - !<furnace>
-      input: { prefab: mineinabyss:hamashirama_raw }
+      input: mineinabyss:hamashirama_raw
       experience: 1f
       cookingTime: 100
     - !<smoking>
-      input: { prefab: mineinabyss:hamashirama_raw }
+      input: mineinabyss:hamashirama_raw
       experience: 2f
       cookingTime: 50

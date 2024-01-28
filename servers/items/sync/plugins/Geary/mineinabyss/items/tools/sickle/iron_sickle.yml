@@ -11,13 +11,14 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        M:
-          type: IRON_INGOT
-        S:
-          type: STICK
+        M: minecraft:iron_ingot
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|
         |S  |
-sickle:
-  radius: 2
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    sickle:
+      radius: 2

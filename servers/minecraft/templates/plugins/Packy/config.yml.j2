@@ -1,3 +1,5 @@
+{% set server_name = lookup('env', 'SERVER_NAME', errors='ignore') %}
+{% set publicAddress = lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') %}
 mcmeta:
   format: 18
   description: <gradient:#ff7043:#ffca28:#ff7043>MineInAbyss <white>- <gradient:#fff906:#fffb46>Server
@@ -6,7 +8,7 @@ icon: pack.png
 server:
   ip: "0.0.0.0"
   port: 8082
-  publicAddress: "https://{{ lookup('env', 'SERVER_NAME', default='unknown') }}.pack.mineinabyss.com"
+  publicAddress: {{ publicAddress or "https://" + server_name + ".pack.mineinabyss.com" }}
 prompt: ""
 force: false
 obfuscate: false
@@ -30,7 +32,7 @@ menu:
           height: 1
       type: MENU
       packs:
-        custom_hud: {}
+        custom_hud: { }
     music:
       title: Music
       height: 6
@@ -46,7 +48,7 @@ menu:
           height: 1
       type: MENU
       packs:
-        custom_music: {}
+        custom_music: { }
     armor:
       title: Armor Picker
       height: 6

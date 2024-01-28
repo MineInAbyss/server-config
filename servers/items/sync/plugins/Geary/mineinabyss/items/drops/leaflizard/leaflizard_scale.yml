@@ -1,0 +1,11 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: SCUTE
+    displayName: <#454545>Leaflizard Scale
+    customModelData: 0
+    lore:
+      - <yellow>Obtained by slaughtering a <#616161>Leaflizard <yellow>in
+      - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
+      - <#595959><i>It changes colour even in your hand.
+disableItemInteractions: {}

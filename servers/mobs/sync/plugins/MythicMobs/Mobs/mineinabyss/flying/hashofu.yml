@@ -22,3 +22,4 @@ hashofu:
     - bodyclamp{m=hashofu;c=15} @self ~onSpawn
     - bodyclamp{m=hashofu;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.2} @self ~onSpawn
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

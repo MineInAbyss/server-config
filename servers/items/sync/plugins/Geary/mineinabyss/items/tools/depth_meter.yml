@@ -1,4 +1,4 @@
-namespaces: [geary, mineinabyss, looty]
+namespaces: [ geary, mineinabyss, looty ]
 set.item:
   item:
     type: PAPER
@@ -14,23 +14,21 @@ set.recipes:
   recipes:
     - !<shaped>
       items:
-        G:
-          type: GLASS
-        C:
-          type: COMPASS
+        G: minecraft:glass
+        C: minecraft:compass
       configuration: |-
         | G |
         |GCG|
         | G |
-depthmeter: {}
-children:
-  nameToComponents:
-    showDepth:
-      - !<mineinabyss:show_depth>
-    toggleDepthHud:
-      - !<mineinabyss:toggle_depth_hud>
-event.triggers:
-  expressions:
-    - other geary:event.left_clicked this -> this child(showDepth) other
-    - other geary:event.right_clicked this -> this child(toggleDepthHud) other
-disable_item_interactions: {}
+depthmeter: { }
+skills:
+  - event: on.itemLeftClick
+    using: itemHolder
+    conditions:
+      - cooldown:
+          length: 1s
+    showDepth: { }
+  - event: on.itemRightClick
+    toggleDepthHud: { }
+
+disableItemInteractions: { }

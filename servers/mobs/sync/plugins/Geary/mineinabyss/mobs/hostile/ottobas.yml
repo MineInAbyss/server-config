@@ -25,12 +25,11 @@ set.*:
         look_at_player: { }
         random_look_around: { }
         float: { }
-deathLoot:
-  exp: 55..90
-  drops:
-    - item: { prefab: mineinabyss:ottobas_meat_raw }
-      cooked: { prefab: mineinabyss:ottobas_meat_cooked }
-      amount: 4..15
+drop:
+  - exp: 55..90
+  - item: mineinabyss:ottobas_meat_raw
+    cooked: mineinabyss:ottobas_meat_cooked
+    amount: 4..15
 sounds:
   ambient:
     sound: mineinabyss:entity.ottobas.ambient

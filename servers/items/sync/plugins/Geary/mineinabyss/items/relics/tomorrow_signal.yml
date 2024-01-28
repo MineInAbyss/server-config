@@ -30,4 +30,4 @@ set.item:
 #        - !<on.parent>
 #          toggle_storm:
 #            at: !<player.location>
-disable_item_interactions: {}
+disableItemInteractions: {}

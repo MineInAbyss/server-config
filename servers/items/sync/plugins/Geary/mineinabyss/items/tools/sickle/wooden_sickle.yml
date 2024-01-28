@@ -14,11 +14,13 @@ set.recipes:
       items:
         M:
           tag: planks
-        S:
-          type: STICK
+        S: minecraft:stick
       configuration: |-
         | MM|
         | SM|
         |S  |
-sickle:
-  radius: 1
+skills:
+  - event: on.itemRightClick
+    using: itemHolder
+    sickle:
+      radius: 1

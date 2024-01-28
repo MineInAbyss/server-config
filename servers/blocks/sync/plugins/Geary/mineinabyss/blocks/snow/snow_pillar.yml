@@ -20,4 +20,4 @@ drops:
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true
   drops:
-    - item: { prefab: mineinabyss:snow_pillar }
+    - item: mineinabyss:snow_pillar

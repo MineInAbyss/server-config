@@ -11,16 +11,12 @@ loot_table:
         - !<mineinabyss:item>
           item:
             type: POTION
-            potionData:
-              type: REGEN
-              extended: false
-              upgraded: false
+            potionType: minecraft:regeneration
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }
     - entries:
         - !<mineinabyss:item>
-          item:
-            prefab: mineinabyss:parasitic_watershrooms
+          item: mineinabyss:parasitic_watershrooms
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }
       functions:
