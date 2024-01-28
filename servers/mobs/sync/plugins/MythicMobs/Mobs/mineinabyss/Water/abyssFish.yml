@@ -15,7 +15,6 @@ ikenosuke:
   Options:
     Despawn: false
     Silent: false
-    PreventOtherDrops: true
     FollowRange: 25
     MovementSpeed: 0.25
     KnockbackResistance: 0.0
@@ -50,7 +49,6 @@ demonfish:
   Options:
     Despawn: false
     Silent: false
-    PreventOtherDrops: true
     FollowRange: 25
     MovementSpeed: 0.22
     KnockbackResistance: 0.0
@@ -81,7 +79,6 @@ swarmshocker:
   Options:
     Despawn: false
     Silent: true
-    PreventOtherDrops: true
     FollowRange: 10
     MovementSpeed: 0.25
     KnockbackResistance: 0.0
