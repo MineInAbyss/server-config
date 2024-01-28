@@ -278,11 +278,6 @@ layers:
     duration: "4s"
   hasPvpDefault: true
   liquidFlowLimit: -1
-  blockBlacklist:
-  - "RAIL"
-  - "POWERED_RAIL"
-  - "DETECTOR_RAIL"
-  - "ACTIVATOR_RAIL"
   songs: []
   sections:
   - "l5s1"
