@@ -30,6 +30,12 @@ messageDeletion:
   format: <gray>[<red>X</red>]</gray>
   deletionSuccess: <green><i>Message deleted
   deletionFailed: <red>Could not delete message...
+chatFilter:
+  blockMessage: <yellow>⚠<gray>Your message contained blocked words:<i>
+  deleteWordsEmptyMessage: <yellow>⚠<gray>Your message was not sent as it contained
+    only blocked words.
+  notifyStaff: <yellow>⚠<gray><chatty_nickname> sent a message containing blocked
+    words:<i>
 channels:
   availableChannels: <gold>Available channels are:<newline><yellow><chatty_player_available_channels>
   channelChanged: <red>You have changed to channel <yellow><chatty_player_channel><red>.

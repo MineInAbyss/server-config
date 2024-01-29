@@ -278,6 +278,7 @@ layers:
     duration: "4s"
   hasPvpDefault: true
   liquidFlowLimit: -1
+  blockBlacklist: []
   songs: []
   sections:
   - "l5s1"

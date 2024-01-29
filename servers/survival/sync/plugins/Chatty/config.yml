@@ -1,139 +1,93 @@
-# Used for displaying playerheads in chat.
-# This is the default font that comes with the plugin
-# %chatty_playerhead% will be replaced with the playerhead of the player who sent the message
-# Please note: This is not the most performance friendly feature so use the placeholder sparingly.
-playerHeadFont: "minecraft:chatty_heads"
-
-privateMessages:
-  enabled: true
-  proxy: true                       # Not currently supported
-  messageReplyTime: 5m              # t: Ticks, s: Seconds, m: Minutes, h: Hours, d: Days, w: Weeks, mo: Months
-  messageSendFormat: "<gold>You -> <chatty_nickname><gold>: "
-  messageReceiveFormat: "<gold><chatty_nickname> -> You<gold>: "
-  messageSendSound: ""              # Empty for no sound
-  messageReceiveSound: ""           # Empty for no sound
-
-# [disableChatSigning]: Sends messages with valid signatures to support 1.19.1+ chat reporting. Disabling this will disable reporting
-# [commandSpyFormat]: Format for the command spy message
-chat:
-  disableChatSigning: false
-  bypassFormatPermission: "chatty.chat.bypassformat"
-  commandSpyFormat: "<gold><chatty_nickname><yellow>: "
-  allowedTags: # Available formats are:
-    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
-    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
-    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
-    - ITALIC
-    - TEXTCOLOR
-    - HEXCOLOR
-    - RAINBOW
-    - GRADIENT
-
-book:
-  useDisplayNameForAuthor: false
-  bypassFormatPermission: "chatty.chat.bypassformat"
-  allowedTags: # Available formats are:
-    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
-    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
-    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
-    - ITALIC
-    - OBFUSCATED
-    - TEXTCOLOR
-    - HEXCOLOR
-    - RAINBOW
-    - GRADIENT
-
-sign:
-  bypassFormatPermission: "chatty.chat.bypassformat"
-  allowedTags: # Available formats are:
-    - BOLD                    # [TEXTCOLOR, HEXCOLOR, GRADIENT, RAINBOW, UNDERLINE, STRIKETHROUGH, BOLD, ITALIC, OBFUSCATED]
-    - STRIKETHROUGH           # [HOVER, CLICK, FONT, SPACES, INSERTION, RESET, TRANSITION, KEYBIND, TRANSLATABLE]
-    - UNDERLINE               # https://docs.adventure.kyori.net/minimessage/format.html
-    - ITALIC
-    - OBFUSCATED
-    - TEXTCOLOR
-    - HEXCOLOR
-    - RAINBOW
-    - GRADIENT
-
-# [useDisplayName]: Stores the chatty nickname in players displayname aswell
-# [maxLength]: The max length a nickname can be, with or without tags, depending on [countTagsInLength]
-# [countTagsInLength]: If true, tags will be taken into account in [maxLength].
-# [nickNameOtherPrefix]: Prefix to specify you want to nickname another player: [/chatty nickname @player nickname]
+playerHeadFont: minecraft:chatty_heads
 nicknames:
   useDisplayName: true
   maxLength: 32
   countTagsInLength: false
   nickNameOtherPrefix: '@'
-
-join:
-  enabled: false
-  firstJoin:
-    enabled: false
-
-leave:
-  enabled: false
-
-# [enableProxySwitchMessages]: If true, will send a message to all servers when a player switched servers
-# [discordSrvChannelID]: The channel ID to send the message to as set in DiscordSRV's config.yml
-# [sendProxyMessagesToDiscord]: Enable if you have DiscordSRV on 1 server, Disable if you have it on more than 1 server.
-proxy:
-  enableProxySwitchMessages: false
-  discordSrvChannelID: "Global"
-  sendProxyMessagesToDiscord: true
-
+chat:
+  disableChatSigning: false
+  commandSpyFormat: '<gold><chatty_nickname><yellow>: '
+  # Valid formats: STRIKETHROUGH, CENSOR, DELETE, BLOCK
+  # STRIKETHROUGH: Replaces filtered words with a strikethrough
+  # CENSOR: Replaces filtered words with a censor
+  # DELETE: Deletes filtered words
+  # BLOCK: Blocks filtered words from being sent
+  filterFormat: CENSOR
+  filters: []
+  formatURLs: true
+  urlReplacements:
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.png\?.*$
+      replacement: '[Discord Image]'
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.mp4\?.*$
+      replacement: '[Discord Video]'
+    - pattern: youtube.com
+      replacement: '[YouTube]'
 ping:
-  enabledChannels:          # channelIds to enable pings for
-    - "all"              # "all" or "*" for all channels
+  enabledChannels:
+    - all
+  defaultPingSound: block.amethyst_block.place
+  alternativePingSounds:
+    - all
   pingVolume: 1.0
   pingPitch: 1.0
   pingPrefix: '@'
   clickToReply: true
-  pingReceiveFormat: "<gold><b>"  # Default format the ping-message is marked with for pinged
-  pingSendFormat: "<i>"     # Default format the ping-message is marked with for sender
-  defaultPingSound: "block.amethyst_block.place"
-  alternativePingSounds:    # "all" to let people choose any sound
-    - "all"
-
-
+  pingReceiveFormat: <gold><b>
+  pingSendFormat: <i>
+join:
+  enabled: false
+  firstJoin:
+    enabled: false
+leave:
+  enabled: false
+proxy:
+  enableProxySwitchMessages: false
+  discordSrvChannelID: Global
+  sendProxyMessagesToDiscord: true
+privateMessages:
+  enabled: true
+  proxy: true
+  messageReplyTime: 5m
+  messageSendFormat: '<gold>You -> <chatty_nickname><gold>: '
+  messageReceiveFormat: '<gold><chatty_nickname> -> You<gold>: '
+  messageSendSound: ""
+  messageReceivedSound: ""
 channels:
   global:
     channelType: GLOBAL
     permission: ""
     logToConsole: true
-    simpleConsoleMessages: false
     proxy: true
     discordsrv: true
     messageDeletion:
       enabled: true
       position: PREFIX
-      format: '<gray>[<red>❌</red>]</gray>'
+      format: <gray>[<red>❌</red>]</gray>
       notifyStaff: true
+      logDeletedMessages: true
     isDefaultChannel: true
     isStaffChannel: false
-    format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:''
-      <light_purple>%player_name%<newline>
-      Deaths: <aqua>%statistic_deaths%</aqua><newline>
-      Time Played: <aqua>%statistic_hours_played%h</aqua><newline>
+    format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:'' <light_purple>%player_name%<newline>
+      Deaths: <aqua>%statistic_deaths%</aqua><newline> Time Played: <aqua>%statistic_hours_played%h</aqua><newline>
       Time since last death: <aqua>%statistic_hours_since_death%h</aqua>''><chatty_nickname>: '
     messageColor: white
+    channelRadius: 0
     channelAliases:
       - g
-
   local:
     channelType: RADIUS
     permission: ""
     logToConsole: true
-    simpleConsoleMessages: false
     proxy: false
     discordsrv: false
-    isDefaultChannel: false
-    isStaffChannel: false
     messageDeletion:
       enabled: true
       position: PREFIX
-      format: '<gray>[<red>❌</red>]</gray>'
+      format: <gray>[<red>❌</red>]</gray>
       notifyStaff: true
+      logDeletedMessages: true
+    isDefaultChannel: false
+    isStaffChannel: false
     format: ':survival::space_-4::local:<hover:show_text:'' <light_purple><b><chatty_nickname><newline>
       <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
       <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
@@ -142,23 +96,25 @@ channels:
     channelRadius: 500
     channelAliases:
       - l
-
   admin:
     channelType: PERMISSION
-    permission: "chatty.channel.admin"
-    requireEffectivePermission: false
+    permission: chatty.channel.admin
+    logToConsole: true
+    proxy: true
+    discordsrv: false
+    messageDeletion:
+      enabled: false
+      position: PREFIX
+      format: <gray>[<red>X</red>]</gray>
+      notifyStaff: true
+      logDeletedMessages: true
     isDefaultChannel: false
     isStaffChannel: true
-    discordsrv: false
-    proxy: true
-    logToConsole: true
-    simpleConsoleMessages: false
-    format: ":survival::space_-4::admin: 
-    <hover:show_text:' <light_purple><b><chatty_nickname><newline>
-    <light_purple>Deaths: <aqua>%statistic_deaths%<newline>
-    <light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
-    <light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
-    <click:run_command:/mia profile %player_name%><#e51e62><chatty_nickname>: "
+    format: ':survival::space_-4::admin: <hover:show_text:'' <light_purple><b><chatty_nickname><newline>
+      <light_purple>Deaths: <aqua>%statistic_deaths%<newline> <light_purple>Time Played:
+      <aqua>%statistic_hours_played%h<newline> <light_purple>Time since last death:
+      <aqua>%statistic_hours_since_death%h''> <click:run_command:/mia profile %player_name%><#e51e62><chatty_nickname>: '
     messageColor: red
+    channelRadius: 0
     channelAliases:
-      - "a"
+      - a

@@ -1,5 +1,5 @@
 maxPlayerCount: 4
-bonfireExpirationTime: 1w
+bonfireExpirationTime: "7d"
 bonfireInteractCooldown: 2s
 respawnSetSound:
   sound: block.ladder.step
@@ -16,3 +16,7 @@ effectRadius: 3.0
 effectStrength: 10.0
 effectRegenRate: 7
 allowSettingBedRespawns: false
+debugTextOffset:
+  x: 0.0
+  y: 1.7
+  z: 0.0
