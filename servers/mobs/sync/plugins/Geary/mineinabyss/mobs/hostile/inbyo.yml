@@ -25,11 +25,11 @@ set.*:
         look_at_player: { }
         random_look_around: { }
         float: { }
-      mobzy:behavior.*:
-        throw_items:
-          spawn: lookup(projectile)
-          cooldown: 6s
-          projectileAngularDiameter: 2
+#      mobzy:behavior.*:
+#        throw_items:
+#          spawn: lookup(projectile)
+#          cooldown: 6s
+#          projectileAngularDiameter: 2
 drop:
   - exp: 35..45
   - item: mineinabyss:inbyo_fur
