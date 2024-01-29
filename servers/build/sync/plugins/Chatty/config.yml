@@ -116,7 +116,7 @@ channels:
       position: SUFFIX
       format: ' <gray>[<red>X</red>]</gray>'
       notifyStaff: true
-    format: ":build::space_-12:<hover:show_text:'
+    format: ":build::space_-4:<hover:show_text:'
     <light_purple>%player_name%<newline>
     <light_purple>Blocks Mined: <aqua>%statistic_mine_block%<newline>
     <light_purple>Time Played: <aqua>%statistic_hours_played%h'>
