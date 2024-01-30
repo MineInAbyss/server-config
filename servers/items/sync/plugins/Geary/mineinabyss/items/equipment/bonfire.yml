@@ -2,8 +2,8 @@ namespaces: [geary, looty, blocky, bonfire, mobzy]
 set.item:
   item:
     displayName: <#FF9D26>Bonfire
-    type: CAMPFIRE
-    customModelData: 1
+    type: PAPER
+    customModelData: 1034
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -29,7 +29,8 @@ furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.8
-prevent_itemstack_update: {}
+prevent_itemstack_update:
+  forceWhenDifferentMaterial: true
 placableOn:
   floor: true
   ceiling: false
