@@ -1,6 +1,4 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:passive ]
 displayName: "<#3BB143>Leaflizard"
 set.*:
   mythicMob: leaflizard
