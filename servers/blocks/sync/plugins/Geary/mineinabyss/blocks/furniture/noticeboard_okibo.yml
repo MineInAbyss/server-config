@@ -12,6 +12,7 @@ sound:
   fallSound: block.wood.fall
 furniture:
   properties:
+    persistent: false
     brightness:
       blockLight: 15
     displayTransform: NONE
