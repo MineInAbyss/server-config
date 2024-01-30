@@ -6,9 +6,9 @@ EXP_Gain:
 
 
 mia_XP:
-  Cooldown: 1
+  Cooldown: 0
   Skills:  
-  - petExperience{exp=1} @trigger
+  - petExperience{exp=5} @ENO{r=30}
 
 Pet_Look:
   Conditions:

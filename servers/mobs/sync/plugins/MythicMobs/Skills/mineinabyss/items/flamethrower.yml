@@ -69,7 +69,7 @@ Flame-Torrent:
       onHit=[
         - damage{amount=5}
         - ignite{ticks=100}
-      ]} 
+      ]} @targetlocation
   - delay 10
   - projectile{
       i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=0;hitself=false;se=false;
@@ -80,7 +80,7 @@ Flame-Torrent:
       onHit=[
         - damage{amount=5}
         - ignite{ticks=100}
-      ]} 
+      ]} @targetlocation
   - delay 10
   - projectile{
       i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=10;hitself=false;se=false;
@@ -91,4 +91,4 @@ Flame-Torrent:
       onHit=[
         - damage{amount=5}
         - ignite{ticks=100}
-      ]} 
+      ]} @targetlocation
