@@ -15,10 +15,10 @@ skills:
       - cooldown:
           length: 2s
           displayName: <dark_aqua>Flamethrower
+    runMythicSkills:
+      - pflamethrower
     run:
       - conditions:
           - chance: 0.2 # Consume slightly slower
         consumeItem:
           type: mineinabyss:flamethrower_fuel
-      - mythicSkill:
-          name: pflamethrower
