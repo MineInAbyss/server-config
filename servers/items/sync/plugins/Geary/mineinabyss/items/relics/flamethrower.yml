@@ -16,7 +16,7 @@ skills:
           length: 2s
           displayName: <dark_aqua>Flamethrower
     runMythicSkills:
-      - pflamethrower
+      - "vskill{s=pflamethrower} @self"
     run:
       - conditions:
           - chance: 0.2 # Consume slightly slower
