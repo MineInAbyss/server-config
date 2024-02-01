@@ -20,16 +20,11 @@ set.recipes:
         |SFS|
         |SCS|
 important: {}
-bonfire:
-  states:
-    unlit: mineinabyss:bonfire
-    lit: mineinabyss:bonfire_lit
-    set: mineinabyss:bonfire_self_lit
 furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.8
-prevent_itemstack_update:
+preventItemstackUpdate:
   forceWhenDifferentMaterial: true
 placableOn:
   floor: true
@@ -38,3 +33,10 @@ placableOn:
 drops:
   drops:
     - item: mineinabyss:bonfire
+copyToInstances:
+  persisting:
+    bonfire:
+      states:
+        unlit: mineinabyss:bonfire
+        lit: mineinabyss:bonfire_lit
+        set: mineinabyss:bonfire_self_lit

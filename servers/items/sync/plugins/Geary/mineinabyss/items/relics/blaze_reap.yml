@@ -26,4 +26,4 @@ skills:
     run:
       - explode:
           breakBlocks: false
-          location: $spawnAt
+          at: $spawnAt
