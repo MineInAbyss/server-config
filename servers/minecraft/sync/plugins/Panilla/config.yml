@@ -12,7 +12,7 @@ language: en
 # Logging options
 logging:
   console: false
-  chat: false
+  chat: true
 
 # Strictness of how much you wish to enforce
 #   lenient - Only prevent game-breaking things or crashes
@@ -48,6 +48,8 @@ no-block-entity-tag: false
 nbt-whitelist:
   - Enchantments
   - PublicBukkitValues
+  - CustomModelData
+  - display
 
 # Prevent Panilla from checking NBT in certain worlds
 # Effectively sets the world to the lenient strictness (to prevent crash exploits)
