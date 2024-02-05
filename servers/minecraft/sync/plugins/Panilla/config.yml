@@ -35,7 +35,7 @@ prevent-fawe-brush-nbt: true
 
 # This can help with ensuring custom GUI's in plugins don't get flagged
 # This may also marginally improve performance
-ignore-non-player-inventories: false
+ignore-non-player-inventories: true
 
 # When true, this will prevent any BlockEntityTag NBT regardless of strictness
 # This will break things like ShulkerBoxes
@@ -47,6 +47,7 @@ no-block-entity-tag: false
 #     (eg: ench on 1.12 vs Enchantments on 1.13)
 nbt-whitelist:
   - Enchantments
+  - PublicBukkitValues
 
 # Prevent Panilla from checking NBT in certain worlds
 # Effectively sets the world to the lenient strictness (to prevent crash exploits)
