@@ -2,13 +2,13 @@ EXP_Gain:
   Conditions:
   - incombat true
   Skills:
-  - petExperience{exp=1} @self
+  #- petExperience{exp=1} @self
 
 
 mia_XP:
   Cooldown: 1
   Skills:  
-  - petExperience{exp=1} @trigger
+  #- petExperience{exp=1} @trigger
 
 Pet_Look:
   Conditions:
@@ -50,7 +50,7 @@ mia_feed:
   - look{headOnly=true;immediately=true;repeat=20;repeatInterval=1} @Trigger
   - effect:particles{particle=heart;amount=1;hS=.5;vS=.5;speed=1;dir=0,1,0;d=true;repeat=2;repeatInterval=5;y=1} @self
   - consumeslot{} @trigger
-  - petExperience{exp=25} @self
+  #- petExperience{exp=25} @self
   #- heal{amount=20} @self
 
 

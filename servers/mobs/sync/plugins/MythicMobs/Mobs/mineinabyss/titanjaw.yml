@@ -35,7 +35,7 @@ titanjaw:
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
   - skill{s=tjDeath} @self ~onDeath
-  - petExperience{exp=1} @ENO{r=30} ~onDeath
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath
 baby_titanjaw:
   Type: RAVAGER
   Modules:
@@ -78,4 +78,4 @@ baby_titanjaw:
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
   - skill{s=tjDeath} @self ~onDeath
-  - petExperience{exp=1} @ENO{r=30} ~onDeath
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath

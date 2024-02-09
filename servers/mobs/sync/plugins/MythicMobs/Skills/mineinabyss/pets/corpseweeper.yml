@@ -74,7 +74,7 @@ mia_corpseweeper_spell:
   - incombat true
   - offgcd true
   - targetwithin{d=2} true
-  - petExperience{exp=>480} true
+  #- petExperience{exp=>480} true
   Skills:
   #- petfollow{follow=false} @self
   - gcd{ticks=40}

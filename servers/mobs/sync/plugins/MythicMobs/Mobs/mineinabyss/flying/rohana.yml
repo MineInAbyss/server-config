@@ -26,4 +26,4 @@ rohana:
     - bodyclamp{m=rohana;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1} @self ~onSpawn
     - state{mid=rohana;s=attack} @self ~onAttack
-    - petExperience{exp=1} @ENO{r=30} ~onDeath
+    #- petExperience{exp=1} @ENO{r=30} ~onDeath
