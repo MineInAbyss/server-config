@@ -1,0 +1,17 @@
+Common_Pet_Food:
+  ItemId: common_pet_food
+  Type: EXP
+  Power: 10
+  Operator: ADD
+
+Rare_Pet_Food:
+  ItemId: rare_pet_food
+  Type: EXP
+  Power: 25
+  Operator: ADD
+
+Epic_Pet_Food:
+  ItemId: epic_pet_food
+  Type: EXP
+  Power: 50
+  Operator: ADD
