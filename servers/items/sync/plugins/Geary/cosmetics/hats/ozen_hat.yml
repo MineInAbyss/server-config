@@ -5,6 +5,7 @@ set.item:
     lore:
       - "<gray>:ozensmug:"
     type: POTION
+    color: "#FFFFFF"
     customModelData: 207
     itemFlags:
       - HIDE_POTION_EFFECTS

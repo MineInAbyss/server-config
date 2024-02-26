@@ -17,7 +17,7 @@ habo_hat:
 lyza_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.lyza_hat"
-  dyeable: false
+  dyeable: true
   item:
     material: geary:cosmetics:lyza_hat
 marulk_hat:
@@ -35,7 +35,7 @@ nanachi_hat:
 ozen_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.ozen_hat"
-  dyeable: false
+  dyeable: true
   item:
     material: geary:cosmetics:ozen_hat
 pruskha_hat:

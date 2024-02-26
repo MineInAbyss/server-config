@@ -10,12 +10,12 @@ items:
       material: hmccosmetics:backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>4:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 4
     cosmetic: backpack
     actions:
       on-equip:
@@ -31,12 +31,12 @@ items:
       material: hmccosmetics:satchel
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>6:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 6
     cosmetic: satchel
     actions:
       on-equip:
@@ -52,12 +52,12 @@ items:
       material: hmccosmetics:generic_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>6:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 6
     cosmetic: generic_backpack
     actions:
       on-equip:
@@ -73,12 +73,12 @@ items:
       material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>6:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 6
     cosmetic: neritantan_backpack
     actions:
       on-equip:
@@ -128,12 +128,12 @@ items:
       material: hmccosmetics:miner_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_mitty_token:"
+        - "<gold>2:cosmetic_mitty_token:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: miner_backpack
     actions:
       on-equip:
@@ -153,12 +153,12 @@ items:
       material: hmccosmetics:explorer_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_mitty_token:"
+        - "<gold>2:cosmetic_mitty_token:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: explorer_backpack
     actions:
       on-equip:

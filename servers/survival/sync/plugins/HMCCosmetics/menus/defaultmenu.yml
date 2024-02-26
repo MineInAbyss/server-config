@@ -39,9 +39,8 @@ items:
       - 23
     item:
       name: "<dark_purple>Gestures"
+      lore:
+        - "<red>Coming Soon!"
       material: PAPER
       model-data: 1
     type: empty
-    actions:
-      any:
-        - "[MENU] gestures"

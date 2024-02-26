@@ -3,6 +3,7 @@ backpack:
   permission: "hmccosmetics.backpack.backpack"
   dyeable: false
   item:
+    name: "<#7e481d>Backpack"
     material: YELLOW_SHULKER_BOX
 satchel:
   slot: BACKPACK
