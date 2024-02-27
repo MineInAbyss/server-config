@@ -6,6 +6,14 @@ items:
       - 0
     item:
       material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:backpack
       lore:
@@ -27,6 +35,14 @@ items:
       - 1
     item:
       material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:satchel
       lore:
@@ -48,6 +64,14 @@ items:
       - 2
     item:
       material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:generic_backpack
       lore:
@@ -69,6 +93,14 @@ items:
       - 3
     item:
       material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:neritantan_backpack
       lore:
@@ -97,8 +129,14 @@ items:
       material: hmccosmetics:camper_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:camper_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:camper_backpack
       lore:
@@ -122,8 +160,14 @@ items:
       material: hmccosmetics:miner_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:miner_backpack
       lore:
@@ -147,8 +191,14 @@ items:
       material: hmccosmetics:explorer_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:explorer_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:explorer_backpack
       lore:

@@ -31,9 +31,9 @@ items:
       material: PAPER
       model-data: 1
     type: empty
-    actions:
-      any:
-        - "[MENU] balloons"
+    #actions:
+    #  any:
+    #    - "[MENU] balloons"
   gestures:
     slots:
       - 23
