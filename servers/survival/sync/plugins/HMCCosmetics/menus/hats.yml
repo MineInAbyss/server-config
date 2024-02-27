@@ -146,7 +146,14 @@ items:
       material: hmccosmetics:bondrewd_helmet
       lore:
         - ""
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:bondrewd_helmet
       lore:
@@ -163,7 +170,16 @@ items:
       - 28
     item:
       material: hmccosmetics:ozen_hat
-      lore: [ ]
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:ozen_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:ozen_hat
       lore:
@@ -180,7 +196,16 @@ items:
       - 29
     item:
       material: hmccosmetics:lyza_hat
-      lore: [ ]
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:lyza_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:lyza_hat
       lore:

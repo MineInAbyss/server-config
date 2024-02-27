@@ -39,11 +39,11 @@ buttons:
       # Whether or not to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
       autoFillColorGradient: false
       rows:
-        - 37..43
+        - 46..52
     scrollingGrid:
       row: 46..52
-      backwardsSlot: 36
-      forwardsSlot: 45
+      backwardsSlot: 45
+      forwardsSlot: 53
       backwardsItem:
         type: minecraft:arrow
         customModelData: 1
