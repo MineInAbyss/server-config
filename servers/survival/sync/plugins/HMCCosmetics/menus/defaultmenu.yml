@@ -28,6 +28,8 @@ items:
       - 21
     item:
       name: "<aqua>Balloons"
+      lore:
+        - "<red>Coming Soon!"
       material: PAPER
       model-data: 1
     type: empty
