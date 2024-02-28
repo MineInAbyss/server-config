@@ -1,3 +1,10 @@
+empty_backpack:
+  slot: CUSTOM
+  slot-parent: MIA_BACKPACK
+  dyeable: false
+  item:
+    material: AIR
+    #model-data: 1
 backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
@@ -5,13 +12,17 @@ backpack:
   dyeable: false
   item:
     name: "<#7e481d>Backpack"
-    material: YELLOW_SHULKER_BOX
+    material: geary:cosmetics:default_backpack
+  firstperson-item:
+    material: geary:cosmetics:default_backpack
 satchel:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
   permission: "hmccosmetics.backpack.satchel"
   dyeable: true
   item:
+    material: geary:cosmetics:satchel
+  firstperson-item:
     material: geary:cosmetics:satchel
 miner_backpack:
   permission: "hmccosmetics.backpack.miner_backpack"
@@ -20,6 +31,8 @@ miner_backpack:
   dyeable: true
   item:
     material: geary:cosmetics:miner_backpack
+  firstperson-item:
+    material: geary:cosmetics:miner_backpack
 neritantan_backpack:
   permission: "hmccosmetics.backpack.neritantan_backpack"
   slot: CUSTOM
@@ -27,12 +40,16 @@ neritantan_backpack:
   dyeable: false
   item:
     material: geary:cosmetics:neritantan_backpack
+  firstperson-item:
+    material: geary:cosmetics:neritantan_backpack
 camper_backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
   dyeable: true
   item:
+    material: geary:cosmetics:camper_backpack
+  firstperson-item:
     material: geary:cosmetics:camper_backpack
 generic_backpack:
   slot: CUSTOM
@@ -46,10 +63,19 @@ generic_backpack:
     item-flags:
       - HIDE_POTION_EFFECTS
     model-data: 105
+  firstperson-item:
+    name: "<#7e481d>Generic Backpack"
+    material: POTION
+    color: "#ffffff"
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 115
 explorer_backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
   permission: "hmccosmetics.backpack.explorer_backpack"
   dyeable: true
   item:
+    material: geary:cosmetics:explorer_backpack
+  firstperson-item:
     material: geary:cosmetics:explorer_backpack

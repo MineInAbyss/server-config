@@ -2,5 +2,6 @@ namespaces: [geary]
 set.item:
   item:
     displayName: <#FFFFFF>White Whistle
-    type: PAPER
-    customModelData: 305
+    type: POTION
+    color: "#FFFFFF"
+    customModelData: 205

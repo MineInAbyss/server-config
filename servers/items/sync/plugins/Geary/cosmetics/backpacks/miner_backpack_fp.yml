@@ -1,10 +1,9 @@
 namespaces: [geary, mobzy, looty]
 set.item:
   item:
-    displayName: <white>Horns of Albedo
+    displayName: <#FF9D26>Miner Backpack
     type: POTION
-    customModelData: 210
+    color: "220, 192, 105"
+    customModelData: 113
     itemFlags:
       - HIDE_POTION_EFFECTS
-hat: {}
-disableItemInteractions: {}

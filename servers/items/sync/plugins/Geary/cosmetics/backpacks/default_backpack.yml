@@ -1,12 +1,11 @@
 namespaces: [geary, mobzy, looty]
 set.item:
   item:
-    displayName: <white>Benner Cat Ears
-    lore:
-      - "<gray>Hey babe :siggy:"
+    displayName: <#FF9D26>Backpack
     type: POTION
-    customModelData: 212
+    color: "220, 192, 105"
+    customModelData: 100
     itemFlags:
       - HIDE_POTION_EFFECTS
-hat: {}
 disableItemInteractions: {}
+backpack: {}
