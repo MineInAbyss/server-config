@@ -36,7 +36,7 @@ buttons:
     # Valid types are: NORMAL, SCROLLING
     type: NORMAL
     normalGrid:
-      # Whether or not to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
+      # Whether to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
       autoFillColorGradient: false
       rows:
         - 46..52
@@ -54,16 +54,11 @@ buttons:
         displayName: Scroll sub-colors forward
   effectButton: 31
 blacklistedItems:
-  oraxenItems:
-    - banned_oraxen_id
-  crucibleItems:
-    - banned_crucible_id
-  itemsadderItems:
-    - banned_itemsadder_id
-  gearyItems:
-    - banned_geary_id
-  types:
-    - minecraft:leather_chestplate
+  oraxenItems: []
+  crucibleItems: []
+  itemsadderItems: []
+  gearyItems: []
+  types: []
 enableEffectsMenu: true
 # Can also be: 
 # oraxenItem: something
@@ -78,9 +73,13 @@ effectItem:
   color: "#FFFCFC"
 effects:
   space_effect:
-    name: Space Effect
+    name: "<#d24c9f>Space Effect"
+    color: "#fcfc00"
+    permission: hmccolor.effect
+  mario_effect:
+    name: "<#d24c9f>Rainbow Glimmer Effect"
     color: "#FCFC02"
-    permission: hmccolor.effect.space
+    permission: hmccolor.effect
 colorPermission: hmccolor.dye
 colors:
   red:
