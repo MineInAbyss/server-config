@@ -14,7 +14,7 @@ backpack:
     name: "<#7e481d>Backpack"
     material: geary:cosmetics:default_backpack
   firstperson-item:
-    material: geary:cosmetics:default_backpack
+    material: geary:cosmetics:default_backpack_fp
 satchel:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
@@ -23,7 +23,7 @@ satchel:
   item:
     material: geary:cosmetics:satchel
   firstperson-item:
-    material: geary:cosmetics:satchel
+    material: geary:cosmetics:satchel_fp
 miner_backpack:
   permission: "hmccosmetics.backpack.miner_backpack"
   slot: CUSTOM
@@ -32,7 +32,7 @@ miner_backpack:
   item:
     material: geary:cosmetics:miner_backpack
   firstperson-item:
-    material: geary:cosmetics:miner_backpack
+    material: geary:cosmetics:miner_backpack_fp
 neritantan_backpack:
   permission: "hmccosmetics.backpack.neritantan_backpack"
   slot: CUSTOM
@@ -41,7 +41,7 @@ neritantan_backpack:
   item:
     material: geary:cosmetics:neritantan_backpack
   firstperson-item:
-    material: geary:cosmetics:neritantan_backpack
+    material: geary:cosmetics:neritantan_backpack_fp
 camper_backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
@@ -50,7 +50,7 @@ camper_backpack:
   item:
     material: geary:cosmetics:camper_backpack
   firstperson-item:
-    material: geary:cosmetics:camper_backpack
+    material: geary:cosmetics:camper_backpack_fp
 generic_backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
@@ -78,4 +78,4 @@ explorer_backpack:
   item:
     material: geary:cosmetics:explorer_backpack
   firstperson-item:
-    material: geary:cosmetics:explorer_backpack
+    material: geary:cosmetics:explorer_backpack_fp
