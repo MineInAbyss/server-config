@@ -1,29 +1,31 @@
 # Ignore following options, enable all features
 enableAll: false
 # Choose which features to enable with true/false
-antiCheese:
+advancement:
   enabled: false
+antiCheese:
+  enabled: true
 configManagement:
   enabled: true
 core:
   enabled: true
 cosmetics:
-  enabled: false
+  enabled: true
+  equipWhistleCosmetic: false
   equipBackpacks: false
   defaultBackpack: "backpack"
 curse:
-  enabled: false
+  enabled: true
 custom_hud:
-  enabled: false
+  enabled: true
 descent:
   enabled: false
 displayLocker:
-  enabled: false
-  bypassPermission: "mineinabyss.lockdisplay.bypass"
+  enabled: true
 enchants:
   enabled: false
 exp:
-  enabled: false
+  enabled: true
 gondolas:
   enabled: false
 guilds:
@@ -40,7 +42,7 @@ lootCrates:
 misc:
   enabled: false
 music:
-  enabled: false
+  enabled: true
 shopkeeping:
   enabled: false
 okiboTravel:
@@ -55,7 +57,7 @@ patreon:
 pins:
   enabled: false
 playerProfile:
-  enabled: false
+  enabled: true
 survivalPvp:
   enabled: false
 adventurePvp:
@@ -65,4 +67,4 @@ relics:
 tools:
   enabled: false
 tutorial:
-  enabled: false
+  enabled: true

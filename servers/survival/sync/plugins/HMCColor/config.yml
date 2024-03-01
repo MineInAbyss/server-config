@@ -73,11 +73,11 @@ effectItem:
   color: "#FFFCFC"
 effects:
   space_effect:
-    name: "<#d24c9f>Space Effect"
-    color: "#fcfc00"
+    name: <#d24c9f>Space Effect
+    color: "#FCFC00"
     permission: hmccolor.effect
   mario_effect:
-    name: "<#d24c9f>Rainbow Glimmer Effect"
+    name: <#d24c9f>Rainbow Glimmer Effect
     color: "#FCFC02"
     permission: hmccolor.effect
 colorPermission: hmccolor.dye
