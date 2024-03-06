@@ -1,6 +1,7 @@
 background:
   conditions:
     - gamemode{gm=survival,adventure} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     icon:
       texture:
@@ -9,6 +10,7 @@ background:
 background_cogs:
   conditions:
     - gamemode{gm=survival,adventure} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     icon:
       texture:
@@ -18,6 +20,7 @@ armor_air_background:
   conditions:
     - gamemode{gm=survival,adventure} true hide
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - placeholder{ph=%mineinabyss_hud_hide_armor_air_background%} true hide
   layers:
     icon:
@@ -28,6 +31,7 @@ extra_background:
   conditions:
     - gamemode{gm=survival,adventure} true hide
     - placeholder{ph=%player_absorption%;v=0;o=>} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     icon:
       texture:
@@ -35,8 +39,9 @@ extra_background:
       color: "#FFFFFF"
 offhand_background:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
     - gamemode{gm=survival,adventure} true hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     icon:
       texture:
@@ -44,8 +49,9 @@ offhand_background:
       color: "#FFFFFF"
 empty_offhand_background:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
     - gamemode{gm=survival,adventure} true hide
+    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     icon:
       texture:

@@ -2,6 +2,7 @@ effect-bleeding:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
     - effect{e=wither;v=false} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     fill:
       texture:
@@ -21,6 +22,7 @@ effect-poison:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
     - effect{e=poison;v=false} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     fill:
       texture:
@@ -68,6 +70,7 @@ effect-absorption:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
     - placeholder{ph=%player_absorption%;v=0;o=>} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     fill:
       texture:
@@ -87,6 +90,7 @@ effect-hunger:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
     - effect{e=hunger;v=false} true hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     fill:
       texture:

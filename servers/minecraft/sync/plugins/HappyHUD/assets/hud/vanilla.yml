@@ -1,6 +1,7 @@
 vanilla-health:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=poison,wither} false hide
     #- placeholder{ph=%player_absorption%;v=0;o=>} false hide
@@ -22,6 +23,7 @@ vanilla-health:
 vanilla-food:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=hunger} false hide
   layers:
@@ -42,6 +44,7 @@ vanilla-food:
 vanilla-exp:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     fill:
@@ -67,6 +70,7 @@ vanilla-exp:
 vanilla-armor:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
     - progress{l=fill;o=>;v=0} true hide
   layers:
@@ -91,6 +95,7 @@ vanilla-armor:
 vanilla-air:
   conditions:
     - placeholder{ph=%mineinabyss_hud_vanilla%} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
     - progress{l=fill;o=<;v=100%} true hide
   layers:
