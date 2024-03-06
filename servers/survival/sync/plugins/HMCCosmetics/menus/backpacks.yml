@@ -18,12 +18,12 @@ items:
       material: hmccosmetics:backpack
       lore:
         - ""
-        - "<gold>4:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 4
+    cost: 30
     cosmetic: backpack
     actions:
       on-equip:
@@ -38,21 +38,23 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:satchel
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:satchel
       lore:
         - ""
-        - "<gold>6:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 6
+    cost: 30
     cosmetic: satchel
     actions:
       on-equip:
@@ -76,12 +78,12 @@ items:
       material: hmccosmetics:generic_backpack
       lore:
         - ""
-        - "<gold>6:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 6
+    cost: 30
     cosmetic: generic_backpack
     actions:
       on-equip:
@@ -105,12 +107,12 @@ items:
       material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<gold>6:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 6
+    cost: 30
     cosmetic: neritantan_backpack
     actions:
       on-equip:
