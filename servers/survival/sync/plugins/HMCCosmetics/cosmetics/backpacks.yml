@@ -3,8 +3,8 @@ empty_backpack:
   slot-parent: MIA_BACKPACK
   dyeable: false
   item:
-    material: AIR
-    #model-data: 1
+    material: PAPER
+    model-data: 1
 backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK

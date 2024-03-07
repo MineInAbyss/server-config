@@ -6,7 +6,21 @@ items:
       - 0
     item:
       material: hmccosmetics:habo_hat
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:habo_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:habo_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:habo_hat
       lore:
@@ -23,7 +37,21 @@ items:
       - 1
     item:
       material: hmccosmetics:marulk_hat
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:marulk_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:marulk_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:marulk_hat
       lore:
@@ -40,7 +68,21 @@ items:
       - 2
     item:
       material: hmccosmetics:nanachi_hat
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:nanachi_hat
       lore:
@@ -57,7 +99,21 @@ items:
       - 3
     item:
       material: hmccosmetics:pruskha_hat
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:pruskha_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:pruskha_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:pruskha_hat
       lore:
@@ -74,7 +130,21 @@ items:
       - 4
     item:
       material: hmccosmetics:reg_hat
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:reg_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:reg_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:reg_hat
       lore:
@@ -91,7 +161,21 @@ items:
       - 5
     item:
       material: hmccosmetics:faputa_hat
-      lore: [ ]
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:faputa_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:faputa_hat
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:faputa_hat
       lore:
@@ -108,7 +192,21 @@ items:
       - 9
     item:
       material: hmccosmetics:menacing
-      lore: [ ]
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:menacing
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:menacing
+      lore:
+        - ""
+        - "<gold>2:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:menacing
       lore:
@@ -125,7 +223,21 @@ items:
       - 10
     item:
       material: hmccosmetics:mining_helmet
-      lore: []
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:mining_helmet
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:mining_helmet
+      lore:
+        - ""
+        - "<gold>20:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:mining_helmet
       lore:
@@ -154,6 +266,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<gold>2:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:bondrewd_helmet
       lore:
@@ -180,6 +299,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:ozen_hat
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:ozen_hat
       lore:
@@ -206,6 +332,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:lyza_hat
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       material: hmccosmetics:lyza_hat
       lore:
