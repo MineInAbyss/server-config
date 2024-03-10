@@ -68,4 +68,37 @@ mining_helmet:
     color: "#FFFFFF"
     item-flags:
       - HIDE_POTION_EFFECTS
-    model-data: 317
+    model-data: 312
+goggles:
+  slot: HELMET
+  permission: "hmccosmetics.hat.goggles"
+  dyeable: true
+  item:
+    name: "Goggles"
+    material: POTION
+    color: "#FFFFFF"
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 313
+double_flower:
+  slot: HELMET
+  permission: "hmccosmetics.hat.double_flower"
+  dyeable: true
+  item:
+    name: "Double Flower"
+    material: POTION
+    color: "#F26AEB"
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 314
+side_flower:
+  slot: HELMET
+  permission: "hmccosmetics.hat.side_flower"
+  dyeable: true
+  item:
+    name: "Side Flower"
+    material: POTION
+    color: "#F26AEB"
+    item-flags:
+      - HIDE_POTION_EFFECTS
+    model-data: 315

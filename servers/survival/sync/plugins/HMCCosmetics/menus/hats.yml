@@ -249,7 +249,99 @@ items:
     currency: orth_coin
     cost: 20
     cosmetic: mining_helmet
-
+  goggles:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:goggles
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:goggles
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:goggles
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:goggles
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: goggles
+  double_flower:
+    slots:
+      - 12
+    item:
+      material: hmccosmetics:double_flower
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:double_flower
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:double_flower
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:double_flower
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: double_flower
+  side_flower:
+    slots:
+      - 13
+    item:
+      material: hmccosmetics:side_flower
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:side_flower
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:side_flower
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:side_flower
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: side_flower
 
   bondrewd_helmet:
     slots:
