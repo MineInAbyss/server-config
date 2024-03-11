@@ -36,9 +36,9 @@ Stingerhead:
     # - skill{s=burrow_in} @self ~onDespawn
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
-    - dismount ~onDamaged
     - heal{amount=50} @self ~onkill
     - skill{s=SH_Hit} ~onDamaged
+    - dismount ~onDamaged
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45

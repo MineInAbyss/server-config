@@ -32,6 +32,7 @@ ashimite:
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=2.0} @self ~onSpawn
     - summon{type=baby_ashimite;amount=1;radius=3} @self ~onSpawn 0.2
+    - skill{s=stingerhead_unstuck} @self ~onTimer:20
     #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
