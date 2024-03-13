@@ -2,8 +2,8 @@ titanjaw:
   Type: RAVAGER
   Modules:
     ThreatTable: true
-  Health: 50 # change this
-  Damage: 8 
+  Health: 60 # change this
+  Damage: 10 
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
