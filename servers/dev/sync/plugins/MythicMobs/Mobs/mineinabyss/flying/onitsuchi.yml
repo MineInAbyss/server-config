@@ -1,0 +1,36 @@
+onitsuchi:
+  Type: ALLAY
+  Health: 40
+  Damage: 7
+  AIGoalSelectors:
+    - clear
+    - meleeattack{speed=1.5;range=1.5}
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 20
+    MaxCombatDistance: 128
+
+  #  MovementSpeed: 0.4
+
+  Model:
+    Id: onitsuchi
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+
+    #- CancelEvent{sync=true} ~onAttack
+
+    - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
+    - bodyclamp{m=onitsuchi;c=15} @self ~onLoad
+    - setspeed{type=flying;speed=1.1} @self ~onSpawn
+    - state{mid=onitsuchi;s=attack} @self ~onAttack
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

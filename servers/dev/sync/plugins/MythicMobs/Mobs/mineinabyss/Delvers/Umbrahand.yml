@@ -1,0 +1,40 @@
+umbrahand:
+  Mobtype: zombie
+  Display: '&9Umbra Hand'
+  Health: 140
+  Damage: 16
+  Options:
+    FollowRange: 30
+    AlwaysShowName: false
+    MovementSpeed: 0.26
+    PreventOtherDrops: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Faction: Idofront
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  - 3 float
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Drops:
+  - exp 15
+  Model:
+    Id: Umbrahand
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1.5
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged 
+  - state{mid=Umbrahand;s=attack2} @self ~onAttack
+  - state{mid=Umbrahand;s=hurt} @self ~onDamaged
+  - skill{s=Randomcrit} @self ~onTimer:50 0.2
+  - skill{s=Charge} @target ~onTimer:300
+  - skill{s=Bash} @trigger ~onAttack >0 0.25
+  - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
+  - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
+  - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

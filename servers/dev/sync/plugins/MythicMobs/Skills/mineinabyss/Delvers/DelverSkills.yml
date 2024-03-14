@@ -1,0 +1,130 @@
+maarcherShoot:
+  Cooldown: 3
+  Conditions:
+  - incombat true
+  TargetConditions:
+  - lineofsight true
+  - fieldofview{angle=90} true
+  - distance{d=<18}
+  Skills:
+  - state{mid=mayanarcher;s=attack;li=3;lo=2} @Self
+  - potion{t=SLOW;l=7;d=20;p=false} @Self
+  - delay 20
+  - sound{s=item.crossbow.shoot} @Self
+  - projectile{bulletType=ARROW;oT=maShootTick;oH=maShootHit;a=1;i=1;v=18;mr=25;hp=true;hR=0.2;vR=0.2} @Target
+
+maShootTick:
+  Skills:
+  - delay 3
+  - effect:particles{p=reddust;c=#ffffff;a=1;hs=0;vs=0}
+
+maShootHit:
+  Skills:
+  - damage{a=20}
+Charge:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 20
+  - targetinlineofsight true
+  Skills:
+  - effect:particles{p=crit;vs=1;hs=1;a=250;s=2;} @self
+  - potion{t=SPEED;d=20;l=2} @self
+
+Bash:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 5
+  - targetinlineofsight true
+  Skills:
+  - effect:sound{s=block.anvil.land;v=1;p=1;} @target
+  - damage{a=3} @target
+  - potion{t=SLOW;d=20;l=7}
+
+pirategun:
+  Conditions:
+  - offgcd true
+  Cooldown: 3
+  Skills:
+  - GCD{ticks=50} @Self
+  - potion{type=SLOW;duration=40;lvl=2} @self
+  - effect:sound{s=item.crossbow.loading_start;v=1;p=1;}
+  - delay 20
+  - state{s=attack2;li=3;lo=2;r=false} @Self
+  - delay 20
+  - projectile{bulletType=ITEM;material=stone_button;onTick=gunTick;onHit=gunHit;i=3;v=9;mr=20;hR=1} @target
+  - state{s=attack2;li=3;lo=2;r=true} @Self
+gunTick:
+  Conditions:
+  Skills:
+  - effect:particles{particle=smoke_medium;a=1;s=0.1;hs=0.1;vs=0.1} @origin
+gunHit:
+  Conditions:
+  Cooldown:
+  Skills:
+  - damage{a=15}
+  - effect:sound{s=entity.armor_stand.break;v=1;p=1;}
+piratesword:
+  Cooldown: 3
+  TargetConditions:
+  - targetwithin{d=7} true
+  - targetnotwithin{d=3} true
+  - offgcd true
+  Cooldown:
+  Skills:
+  - GCD{ticks=100} @Self
+  - potion{t=SPEED;d=35;l=1} @self
+  - state{mid=piratecaptain;s=run;li=3;lo=2;r=false} @Self
+  - delay 20
+  - state{mid=piratecaptain;s=run;li=3;lo=2;r=true} @Self
+  - state{mid=piratecaptain;s=spin;li=3;lo=2;r=false} @Self
+  - projectile{oT=PCOT;oH=PCOH;d=40;hnp=true}
+  - delay 28
+  - state{mid=piratecaptain;s=spin;li=3;lo=2;r=true} @Self
+  - sound{s=entity.armor_stand.break;p=0.8;v=1} @Self
+
+pirateballs:
+  Conditions:
+  - offgcd true
+  Cooldown:
+  Skills:
+  - GCD{ticks=200} @Self
+  - state{s=attack4;li=3;lo=2;r=false} @Self
+  - delay 15
+  - projectile{onTick=PCTick;onHit=PCHit;onEnd=PCEnd;i=1;v=20;mr=20;g=0.5;type=meteor;hfs=14;sE=false} @RLNTE{r=15;a=12;s=3;minr=0}
+  - delay 30
+  - projectile{onTick=PCTick;onHit=PCHit;onEnd=PCEnd;i=1;v=20;mr=20;g=0.5;type=meteor;hfs=14;sE=false} @RLNTE{r=8;a=6;s=3;minr=0}
+  - delay 15
+  - state{s=attack4;li=3;lo=2;r=true} @Self
+  - delay 15
+  - projectile{onTick=PCTick;onHit=PCHit;onEnd=PCEnd;i=1;v=20;mr=20;g=0.5;type=meteor;hfs=14;sE=false} @RLNTE{r=4;a=4;s=3;minr=0}
+PCTick:
+  Conditions:
+  Cooldown:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;a=15;s=0.05;hR=0.5;vR=0.5} @origin
+  - effect:particles{particle=smoke_medium;a=15;s=0.05;hs=0.5;vs=0.5} @origin
+PCHit:
+  Conditions:
+  Skills:
+PCEnd:
+  Skills:
+  - aura{auraname=PCCharge;onStart=PCChargeS;onTick=PCChargeT;onEnd=PCChargeE;i=1;duration=50} @origin
+PCChargeS:
+  Skills:
+  - sound{s=entity.tnt.primed}
+PCChargeT:
+  Skills: 
+  - effect:particlering{p=reddust;color=#000000;a=1;y=-0.3;r=2;points=24} ~onTimer:5
+PCChargeE:
+  Skills:
+  - damage{amount=25} @PlayersNearTargetLocation{radius=2}
+  - effect:sound{s=entity.generic.explode;v=1;p=1;}
+
+Randomcrit:
+  Conditions:
+  Cooldown:
+  Skills:
+  - onAttack{auraName=Crit;onTick=CritTick;duration=100;charges=1;multiplier=2.5;i=20} @self
+CritTick:
+  Skills:
+  - effect:particles{particle=crit;a=30;hs=0.5;vs=0.5;speed=1} @origin

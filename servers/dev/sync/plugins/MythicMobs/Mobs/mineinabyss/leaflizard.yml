@@ -1,0 +1,41 @@
+leaflizard:
+  Type: OCELOT
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - fleeplayers
+  - randomlookaround
+  - float
+  AITargetSelectors:
+  - clear
+  Faction: leaflizards
+  Health: 18 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Despawn: false
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.6
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  ####### Misc
+  - model{mid=qmob_leafLizard;step=0.8} @self ~onSpawn
+  - look{} @target ~onTimer:20
+  - defaultstate{t=walk;s=walk;sp=2.2} @self ~onSpawn
+  - CancelEvent{sync=true} @self ~onAttack
+  - CancelEvent{sync=true} @self ~onInteract
+  ####### Stances/AI
+
+  ########### FX
+  - skill{s=bloodEffectSmall} @self ~onHurt <100%
+  - skill{s=leaflizardHurt} @self ~onHurt
+  - skill{s=leaflizardDeath} @self ~onDeath
+  - summon{type=qmob_leaflizardCorpse;amount=1;radius=0;delay=16} @self ~onDeath
+  - skill{s=leaflizardDisguise;delay=<random.0to20>} @self ~onTimer:20
+  - skill{s=leaflizardInvis} @self ~onTimer:10
+  - petExperience{exp=1} @ENO{r=30} ~onDeath

@@ -1,0 +1,34 @@
+squidfly:
+  Type: ALLAY
+  Health: 16
+  Damage: 5
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+   # MovementSpeed: 0.7
+  Model:
+    Id: squidfly
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+   # - CancelEvent{sync=true} ~onAttack
+    #- skill{s=Damage_5} @self ~onAttack
+
+    - bodyclamp{m=squidfly;c=15} @self ~onSpawn
+    - bodyclamp{m=squidfly;c=15} @self ~onLoad
+    - setspeed{type=flying;speed=1.5} @self ~onSpawn
+    - state{mid=squidfly;s=attack} @self ~onAttack
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

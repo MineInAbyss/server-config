@@ -1,0 +1,72 @@
+Kuongatari:
+  Type: CAVE_SPIDER
+  Health: 50
+  Damage: 8
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    PreventSunBurn: true
+    KnockbackResistance: 1
+    #DigOutOfGround: true
+    Collidable: true
+    #Silent: false
+    FollowRange: 20
+    MovementSpeed: 0.32
+    MaxCombatDistance: 20
+    DigOutOfGround: true
+  Model:
+    Id: kuongatari
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1.2
+  DamageModifiers:
+    - DROWNING 0
+    - FIRE 15
+    - FIRE_TICK 3
+  Skills:
+    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
+    - shieldbreak{duration=100} @target ~onattack 0.35
+    - dismount ~onTimer:20
+    - petExperience{exp=1} @ENO{r=30} ~onDeath
+Kuongatari_summon:
+  Type: SPIDER
+  Display: "<#1FB53D>Baby Kuongatari"
+  Health: 16
+  Damage: 6
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    PreventSunBurn: true
+    PreventOtherDrops: true
+    KnockbackResistance: 0
+    #DigOutOfGround: true
+    Collidable: true
+   # Silent: true
+    FollowRange: 30
+    MovementSpeed: 0.4
+    MaxCombatDistance: 20
+  Equipment:
+    - TORCH HAND
+  Drops:
+    - exp 5-15
+    - geary mineinabyss:kuongatari_juice 1 0.04
+    - geary mineinabyss:kuongatari_silk 1-2 0.2
+  Model:
+    Id: kuongatari
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.7
+  DamageModifiers:
+    - DROWNING 0
+    - FIRE 15
+    - FIRE_TICK 3
+  Skills:
+    - dismount ~onTimer:20
+    - shieldbreak{duration=100} @target ~onattack 0.35
+    - petExperience{exp=1} @ENO{r=30} ~onDeath

@@ -1,0 +1,19 @@
+parastic_watershroom:
+  Id: WARPED_FUNGUS
+  DISPLAY: "<#913188>High Quality Watershrooms"
+  Lore:
+      - <yellow>Most commonly found growing
+      - <yellow>on <#85562D>Shroombears <yellow>in the
+      - <green>Goblets of Giants<yellow>. <yellow>Sucks the
+      - <yellow>nutrients from the host, releasing
+      - <yellow>them back when host is near death.
+      - <#AB3AA0><i>These are in good condition!
+      - <#AB3AA0><i>i wonder what i can tame with this...
+  Unbreakable: true
+
+mia_candy:
+  Id: INK_SAC
+  Model: 39
+  Display: 'Candy'
+  Lore:
+  - '&6Packed with XP!'
