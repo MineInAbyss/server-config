@@ -11,7 +11,6 @@ octoliar:
   AITargetSelectors:
   - clear
   - players
-  Faction: octoliars
   Health: 80 # change this
   Damage: 0 # keep this 0
   Options:
@@ -21,7 +20,12 @@ octoliar:
     FollowRange: 15
     MovementSpeed: 0.22   # replaced with skills
     KnockbackResistance: 1.0
-
+  Model:
+    Id: octoliar
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2
   Skills:
   ####### Misc
   - model{mid=octoliar} @self ~onSpawn

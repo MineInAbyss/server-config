@@ -20,7 +20,7 @@ yomotsubi_tick:
 
 yomotsubi_impact:
   Skills:
-    - effect:particles{particle=cloud;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
+    - effect:particles{particle=cloud;amount=20;hS=0.75;vS=0.75;y=.5;repeat=30;repeatInterval=2}
     - throw{velocity=5;velocityY=3} @target
     - damage{a=10} @target
     - shieldbreak{duration=150} @target

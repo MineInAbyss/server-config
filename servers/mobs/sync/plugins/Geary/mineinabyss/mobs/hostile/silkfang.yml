@@ -5,11 +5,11 @@ sounds: { }
 drop:
   - exp: 10..25
   - item: mineinabyss:silkfang_eye
-    amount: 1..2
-    dropChance: 0.6
+    amount: 1
+    dropChance: 0.5
   - item: mineinabyss:silkfang_silk
     amount: 1..2
-    dropChance: 0.85
+    dropChance: 0.5
   - item: mineinabyss:bundle_of_silkfang_silk
-    amount: 1..2
+    amount: 1
     dropChance: 0.1
