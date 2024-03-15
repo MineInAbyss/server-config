@@ -1,0 +1,11 @@
+namespaces: [geary, mobzy, looty]
+set.mythicMob: Yomotsubi
+displayName: "<#FF0000>Yomotsubi"
+drop:
+  - exp: 10..25
+  - item: mineinabyss:yomotsubi_wing
+    amount: 1..2
+    dropChance: 0.65
+  - item: mineinabyss:yomotsubi_abdomen_raw
+    cooked: mineinabyss:yomotsubi_abdomen_cooked
+    dropChance: 0.75

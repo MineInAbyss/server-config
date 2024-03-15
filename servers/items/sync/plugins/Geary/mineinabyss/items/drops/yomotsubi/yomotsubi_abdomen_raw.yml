@@ -1,0 +1,13 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: APPLE
+    displayName: <#1FB53D>Yomotsubi Abdomen
+    customModelData: 21
+    lore:
+      - <yellow>Dropped by <#25D648>Yomotsubi's <yellow>infesting the
+      - <green>Goblets of Giants <yellow>and the <green>Great Fault <yellow>.
+      - <#167D2A><i>Perhaps this could be cooked...
+food:
+  saturation: 0.2
+  hunger: 1
