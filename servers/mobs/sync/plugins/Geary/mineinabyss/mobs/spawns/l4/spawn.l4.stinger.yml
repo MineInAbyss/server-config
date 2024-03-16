@@ -1,0 +1,18 @@
+namespaces: [geary, mobzy, looty]
+spawn.type:
+  prefab: mineinabyss:stinger
+spawn.amount:
+  amount: 5..10
+spawn_regions:
+  keys: [ layerfour ]
+spawn.spread:
+  radius: 5
+spawn.priority:
+  priority: 0.7
+check.spawn.local_group:
+  max: 25
+  radius: 160
+check.spawn.gap:
+  range: 4..4096
+check.spawn.delay:
+  attemptEvery: 2s
