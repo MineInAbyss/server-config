@@ -1,0 +1,14 @@
+namespaces: [geary, mobzy, looty]
+set.mythicMob: Stinger
+displayName: "<#03AC13>Stinger"
+drop:
+  - exp: 10..25
+  - item: mineinabyss:stinger_horn
+    amount: 1..2
+    dropChance: 0.4
+  - item: mineinabyss:stinger_wing
+    amount: 1..2
+    dropChance: 0.4
+  - item: mineinabyss:stinger_raw
+    cooked: mineinabyss:stinger_cooked
+    dropChance: 0.65

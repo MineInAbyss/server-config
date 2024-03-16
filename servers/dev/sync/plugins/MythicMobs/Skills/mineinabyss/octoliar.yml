@@ -78,7 +78,7 @@ octoliarSpit:   # melee attack
   Cooldown: 2.0
   Conditions:
   - stance{s=attacking} false
-  - targetnotwithin{d=5} true
+  - targetnotwithin{d=3} true
   Skills:
   - CancelEvent @self
   - stance{s=attacking} @self

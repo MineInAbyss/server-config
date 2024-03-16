@@ -45,7 +45,7 @@ demonfish:
   - attacker
   Faction: fish
   Health: 18 # change this
-  Damage: 0.2
+  Damage: 3
   Options:
     Despawn: false
     Silent: false
