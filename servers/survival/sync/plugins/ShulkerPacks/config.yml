@@ -6,10 +6,10 @@
 blacklistedInventories: ["&4&lMineXChange", "test inventory"]
 
 canOpenInAir: true            #false will prevent users from opening shulkerboxes by clicking the air
-canOpenInInventory: true      #false will prevent users from opening shulkerboxes in their inventory
-canOpenInChests: true         #false will prevent users from opening shulkerboxes in chests
-canOpenInEnderChest: true     #false will prevent users from opening shulkerboxes in enderchests
-canOpenInBarrels: true        #false will prevent users from opening shulkerboxes in barrels
+canOpenInInventory: false      #false will prevent users from opening shulkerboxes in their inventory
+canOpenInChests: false         #false will prevent users from opening shulkerboxes in chests
+canOpenInEnderChest: false     #false will prevent users from opening shulkerboxes in enderchests
+canOpenInBarrels: false        #false will prevent users from opening shulkerboxes in barrels
 canPlaceShulker: false         #false will prevent users from placing shulkerboxes by accident
 
 #true will prevent users from opening shulkerboxes within 7 seconds of being hit by a player
