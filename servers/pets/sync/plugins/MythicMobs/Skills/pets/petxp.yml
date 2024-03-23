@@ -8,7 +8,7 @@ EXP_Gain:
 mia_XP:
   Cooldown: 0
   Skills:  
-  - petExperience{exp=5} @ENO{r=30}
+  - MIAPetExpNearby{exp=5;radius=30}
 
 Pet_Look:
   Conditions:

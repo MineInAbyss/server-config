@@ -42,7 +42,7 @@ Stingerhead:
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
+    #- MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>20}
 
     - skill{s=stingerhead_bigleap} @target ~onTimer:150   

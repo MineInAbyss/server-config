@@ -30,7 +30,7 @@ Kuongatari:
     - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
+    #- MIAPetExpNearby{exp=1} ~onDeath
 Kuongatari_summon:
   Type: SPIDER
   Display: "<#1FB53D>Baby Kuongatari"
@@ -69,4 +69,4 @@ Kuongatari_summon:
   Skills:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
+    #- MIAPetExpNearby{exp=1} ~onDeath
