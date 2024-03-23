@@ -1,5 +1,5 @@
 # TODO replace secrets
-- name: "Copy from {{ src }} to destination"
+- name: "Copy from {{ src }} to {{ home }}"
   synchronize:
     src: "{{ src }}"
     dest: "{{ home }}"

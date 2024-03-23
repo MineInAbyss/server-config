@@ -64,8 +64,7 @@ build = "minecraft-build:25565"
 survival = "minecraft-survival:25565"
 archive = "minecraft-archive:25565"
 # In what order we should try servers when a player logs in or is kicked from aserver.
-# try = ["survival", "build"]
-try = ["survival", "build"]
+try = ["survival", "build", "dev"]
 
 # factions = "127.0.0.1:30067"
 [forced-hosts]
