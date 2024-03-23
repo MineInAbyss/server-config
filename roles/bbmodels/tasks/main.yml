@@ -3,6 +3,12 @@
     path: "/run/secrets/bbmodels_ssh_key"
   register: p
 
+- name: Ensure we ignore ownership of repo being different
+  community.general.git_config:
+    name: safe.directory
+    scope: global
+    value: "{{ home }}/mineinabyss/bbmodels"
+
 - name: Pull latest BBModels from our repo
   ansible.builtin.git:
     repo: git@github.com:MineInAbyss/BBModel-Files.git
@@ -13,7 +19,6 @@
     depth: 1
     version: "master"
   when: p.stat.exists
-  remote_user: "{{ minecraft_uid }}"
 
 - name: Ensure blueprints directory exists
   file:
