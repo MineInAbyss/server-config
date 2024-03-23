@@ -38,4 +38,4 @@ yomotsubi:
     - state{mid=yomotsubi;s=attack} @self ~onAttack
     
     - skill{s=yomotsubi_airball} @target ~onTimer:20
-    - MIAPetExpNearby{exp=1} ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

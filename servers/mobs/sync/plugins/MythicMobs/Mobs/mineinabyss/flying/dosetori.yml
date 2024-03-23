@@ -32,4 +32,4 @@ dosetori:
     - bodyclamp{m=dosetori;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.3} @self ~onSpawn
     - state{mid=dosetori;s=attack} @self ~onAttack
-    #- MIAPetExpNearby{exp=1} ~onDeath
+    #- skill:MIAPetExpNearby{exp=1} ~onDeath

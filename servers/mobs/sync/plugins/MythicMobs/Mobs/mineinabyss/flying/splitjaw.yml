@@ -50,4 +50,4 @@ splitjaw:
     - skill{s=sj_roar} @target ~onTimer:100
     - skill{s=SJ_dash} @target ~onTimer:40
     - skill{s=SJ_Attack} @self ~onAttack
-    #- MIAPetExpNearby{exp=1} ~onDeath
+    #- skill:MIAPetExpNearby{exp=1} ~onDeath

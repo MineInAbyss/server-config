@@ -37,4 +37,4 @@ silkfang:
   - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
   - skill{s=silkfangHurt} @self ~onHurt
   - skill{s=silkfangDeath} @self ~onDeath
-  #- MIAPetExpNearby{exp=1} ~onDeath
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath

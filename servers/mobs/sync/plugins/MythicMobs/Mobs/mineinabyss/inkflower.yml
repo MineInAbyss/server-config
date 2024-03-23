@@ -38,4 +38,4 @@ inkflower:
     - state{mid=inkflower;s=attack} @self ~onAttack
     
     - skill{s=inkflower_airball} @target ~onTimer:20
-    - MIAPetExpNearby{exp=1} ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -26,4 +26,4 @@ rohana:
     - bodyclamp{m=rohana;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1} @self ~onSpawn
     - state{mid=rohana;s=attack} @self ~onAttack
-    #- MIAPetExpNearby{exp=1} ~onDeath
+    #- skill:MIAPetExpNearby{exp=1} ~onDeath

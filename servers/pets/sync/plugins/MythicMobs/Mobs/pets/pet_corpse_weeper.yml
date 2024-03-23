@@ -23,7 +23,7 @@ mia_baby_corpse_weeper:
   - skill{s=mia_spawn} @self ~onSpawn
   - skill{s=mia_baby_corpse_weeper_spell} @target ~onTimer:20
 
-  #- MIAPetExpNearby{exp=1;radius=10} ~onDeath
+  #- skill:MIAPetExpNearby{exp=1;radius=10} ~onDeath
   - skill{s=mia_feed} @self ~onInteract
 
   - bodyclamp{mh=10;mb=10;s=0} @self ~onSpawn

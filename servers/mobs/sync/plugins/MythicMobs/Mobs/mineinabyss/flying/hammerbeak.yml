@@ -47,7 +47,7 @@ hammerbeak:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-  - skill:miaPetXP{exp=1} @ENO{r=30} ~onDeath
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 qmob_hammerbeakLarge:
   Type: VINDICATOR
