@@ -64,6 +64,9 @@ cosmetic-settings:
   # setting this to lower than the server player view distance should fix the
   # bug where players see random backpacks. Put -1 to ignore and send packets to everyone.
   view-distance: 32
+  # If the plugin should set the pitch of balloons to always be 0, to prevent players looking up affecting the balloon.
+  # This only applies to models that have a "head" section to them. THIS DOES NOT IMPACT THE REST OF THE ENTITY.
+  balloon-head-unmoving: false
   # how the balloon should be positioned relative to the player
   balloon-offset:
     x: 0.5
@@ -112,6 +115,10 @@ wardrobe:
   return-last-location: false
   # If players in wardrobes should be able to equip any cosmetic, regardless of permission (Cosmetics they do not have access to will be removed when they leave the wardrobe)
   unchecked-wardrobe-cosmetics: true
+  # If HMCC should prevent a player from being damaged while being in the wardrobe
+  prevent-damage: true
+  # If a player is damaged in a wardrobe, and if it's set to true, it'll kick them from the wardrobe (prevent-damage must be false)
+  damage-kicked: false
   menu-options:
     enter-open-menu: false
   gamemode-options:

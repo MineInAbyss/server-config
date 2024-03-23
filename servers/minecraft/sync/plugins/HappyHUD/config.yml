@@ -17,7 +17,7 @@ layout:
     - "layers"
     #- "relics_and_tools"
     - "misc-layout"
-    - "effect-layout"
+    - "effects"
 
 # The default value for how often placeholders should check for an update.
 check-update: 20

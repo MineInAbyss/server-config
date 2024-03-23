@@ -1,219 +1,255 @@
-title: "<gradient:#aa3159:#8c0c0c>HMCColor"
+title: <gradient:#aa3159:#8c0c0c>HMCColor
+rows: 6
 buttons:
+  # Can also be: 
+  # oraxenItem: paintbrush
+  # crucibleItem: something
+  # itemsadderItem: hmccosmetics:paintbrush
+  # prefab: namespace:something
   item:
-    #oraxenItem: paintbrush
-    #crucibleItem: something
-    #itemsadderItem: hmccosmetics:paintbrush
-    type: POTION #Can also be POTION to avoid conflicts with ModelEngine
-    customModelData: 1000 #Only important if using defaultType
+    type: minecraft:potion
+    customModelData: 1000
     itemFlags:
-    - HIDE_POTION_EFFECTS
+      - HIDE_POTION_EFFECTS
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:
-    first: 3..5
-    second: 12..14
-    third: 21..23
-  subColorRow: 46..52
+    # Valid types are: NORMAL, SCROLLING
+    type: NORMAL
+    normalGrid:
+      first: 3..5
+      second: 12..14
+      third: 21..23
+    scrollingGrid:
+      row: 19..25
+      left: 8
+      right: 17
+      leftItem:
+        type: minecraft:arrow
+        customModelData: 1
+        displayName: Scroll base-colors backwards
+      rightItem:
+        type: minecraft:arrow
+        customModelData: 2
+        displayName: Scroll base-colors forward
+  subColorGrid:
+    # Valid types are: NORMAL, SCROLLING
+    type: NORMAL
+    normalGrid:
+      # Whether to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
+      autoFillColorGradient: false
+      rows:
+        - 46..52
+    scrollingGrid:
+      row: 46..52
+      backwardsSlot: 45
+      forwardsSlot: 53
+      backwardsItem:
+        type: minecraft:arrow
+        customModelData: 1
+        displayName: Scroll sub-colors backwards
+      forwardsItem:
+        type: minecraft:arrow
+        customModelData: 2
+        displayName: Scroll sub-colors forward
   effectButton: 31
-
 blacklistedItems:
-  oraxenItems:
-    - banned_oraxen_id
-  crucibleItems:
-    - banned_crucible_id
-  itemsadderItems:
-    - banned_itemsadder_id
-  gearyItems:
-    - banned_geary_id
-  types:
-    - LEATHER_CHESTPLATE
-
+  oraxenItems: []
+  crucibleItems: []
+  itemsadderItems: []
+  gearyItems: []
+  types: []
 enableEffectsMenu: true
+# Can also be: 
+# oraxenItem: something
+# crucibleItem: something
+# itemsadderItem: hmccosmetics:something
+# prefab: namespace:something
 effectItem:
-  #oraxen_item: something
-  #crucible_item: something
-  #itemsadder_item: something:something
-  type: PAPER
-  displayName: "<gradient:gold:yellow>Effect Toggle"
-  color: "#FFFCFC"
+  type: minecraft:paper
   customModelData: 1
+  displayName: <gold>E</gold><#ffb107>f</#ffb107><#ffb80e>f</#ffb80e><#ffbf15>e</#ffbf15><#ffc61c>c</#ffc61c><#ffcd23>t</#ffcd23><#ffd52b>
+    </#ffd52b><#ffdc32>T</#ffdc32><#ffe339>o</#ffe339><#ffea40>g</#ffea40><#fff147>g</#fff147><#fff84e>l</#fff84e><yellow>e
+  color: "#FFFCFC"
 effects:
   space_effect:
-    name: "Space Effect"
+    name: <#d24c9f>Space Effect
+    color: "#FCFC00"
+    permission: hmccolor.effect
+  mario_effect:
+    name: <#d24c9f>Rainbow Glimmer Effect
     color: "#FCFC02"
-    permission: "hmccolor.effect.space"
-
-colorPermission: "hmccolor.dye"
+    permission: hmccolor.effect
+colorPermission: hmccolor.dye
 colors:
   red:
     baseColor:
-      name: "<#D23635>Red"
-      color: 210,54,53
+      name: <#D23635>Red
+      color: "#D23635"
     subColors:
-      - name: "<#ff0000>Light Red"
+      - name: <#ff0000>Light Red
         color: "#FF0000"
-      - name: "<#CE2029>Fire Engine Red"
+      - name: <#CE2029>Fire Engine Red
         color: "#CE2029"
-      - name: "<#66023C>Tyrian Red"
+      - name: <#66023C>Tyrian Red
         color: "#66023C"
-      - name: "<#C71585>Red Violet"
+      - name: <#C71585>Red Violet
         color: "#C71585"
-      - name: "<B3446C>Raspberry Red"
+      - name: <B3446C>Raspberry Red
         color: "#B3446C"
-      - name: "<DE3163>Cerise Red"
+      - name: <DE3163>Cerise Red
         color: "#DE3163"
-      - name: "Neon Red"
+      - name: Neon Red
         color: "#FF6961"
   orange:
     baseColor:
-      name: "<#EA5C2B>Orange"
-      color: 234,92,43
+      name: <#EA5C2B>Orange
+      color: "#EA5C2B"
     subColors:
-      - name: "<#ff9f00>Orange Peel"
+      - name: <#ff9f00>Orange Peel
         color: "#FF9F00"
-      - name: "<#ffa500>Light Orange"
+      - name: <#ffa500>Light Orange
         color: "#FFA500"
-      - name: "<#f28500>Tangerine Orange"
+      - name: <#f28500>Tangerine Orange
         color: "#F28500"
-      - name: "<#ffb347>Pastel Orange"
+      - name: <#ffb347>Pastel Orange
         color: "#FFB347"
-      - name: "<#e24c00>Bright Orange"
+      - name: <#e24c00>Bright Orange
         color: "#E24C00"
-      - name: "<#EC5800>Persimmon Orange"
+      - name: <#EC5800>Persimmon Orange
         color: "#EC5800"
-      - name: "<#ffa500>Orange"
+      - name: <#ffa500>Orange
         color: "#FFA500"
   yellow:
     baseColor:
-      name: "<#FFC900>Yellow"
-      color: 255,201,0
+      name: <#FFC900>Yellow
+      color: "#FFC900"
     subColors:
-      - name: "<#FDDE6C>Golden Rod"
+      - name: <#FDDE6C>Golden Rod
         color: "#FDDE6C"
-      - name: "<#FFF44F>Lemon Yellow"
+      - name: <#FFF44F>Lemon Yellow
         color: "#FFF44F"
-      - name: "<#FFEF00>Canary Yellow"
+      - name: <#FFEF00>Canary Yellow
         color: "#FFEF00"
-      - name: "<#FFD00A>Citrine Yellow"
+      - name: <#FFD00A>Citrine Yellow
         color: "#FFD00A"
-      - name: "<#F1FF62>Lazer Lemon Yellow"
+      - name: <#F1FF62>Lazer Lemon Yellow
         color: "#F1FF62"
-      - name: "<#E8DE2A>Sunflower Yellow"
+      - name: <#E8DE2A>Sunflower Yellow
         color: "#E8DE2A"
-      - name: "<#FFD800>School Bus Yellow"
+      - name: <#FFD800>School Bus Yellow
         color: "#FFD800"
   pink:
     baseColor:
-      name: "<#FC35FA>Pink"
+      name: <#FC35FA>Pink
       color: "#FC35FA"
     subColors:
-      - name: "<#fc8eac>Flamingo Pink"
+      - name: <#fc8eac>Flamingo Pink
         color: "#FC8EAC"
-      - name: "<#fc6c85>Watermelon Color"
+      - name: <#fc6c85>Watermelon Color
         color: "#FC6C85"
-      - name: "<#ff77ff>Fuchsia Pink"
+      - name: <#ff77ff>Fuchsia Pink
         color: "#FF77FF"
-      - name: "<#ff69b4>Hot Pink"
+      - name: <#ff69b4>Hot Pink
         color: "#FF69B4"
-      - name: "<#e75480>Dark Pink"
+      - name: <#e75480>Dark Pink
         color: "#E75480"
-      - name: "<#ffd1dc>Pastel Pink"
+      - name: <#ffd1dc>Pastel Pink
         color: "#FFD1DC"
-      - name: "<#de5d83>Blush Pink"
-        color: "#8c0c1c"
+      - name: <#de5d83>Blush Pink
+        color: "#8C0C1C"
   white:
     baseColor:
-      name: "<#FFFFFF>White"
-      color: 255,255,255
+      name: <#FFFFFF>White
+      color: "#FFFFFF"
     subColors:
-      - name: "<#FFFFFF>White"
+      - name: <#FFFFFF>White
         color: "#FFFFFF"
-      - name: "<#fdf5e6>Old Lace White"
+      - name: <#fdf5e6>Old Lace White
         color: "#FDF5E6"
-      - name: "<#faf0e6>Linen White"
+      - name: <#faf0e6>Linen White
         color: "#FAF0E6"
-      - name: "<#f5f5f5>White Smoke"
+      - name: <#f5f5f5>White Smoke
         color: "#F5F5F5"
-      - name: "<#808080>Light Grey"
+      - name: <#808080>Light Grey
         color: "#808080"
-      - name: "<#2a2727>Dark Grey"
+      - name: <#2a2727>Dark Grey
         color: "#2A2727"
-      - name: "<#000000>Black"
+      - name: <#000000>Black
         color: "#000000"
   green:
     baseColor:
-      name: "<#A3DA8D>Green"
-      color: 163,218,141
+      name: <#A3DA8D>Green
+      color: "#A3DA8D"
     subColors:
-      - name: "<#32cd32>Lime Green"
+      - name: <#32cd32>Lime Green
         color: "#32CD32"
-      - name: "<#4cbb17>Kelly Green"
+      - name: <#4cbb17>Kelly Green
         color: "#4CBB17"
-      - name: "<#7fff00>Chartreuse Green"
+      - name: <#7fff00>Chartreuse Green
         color: "#7FFF00"
-      - name: "<#006400>Dark Green"
+      - name: <#006400>Dark Green
         color: "#006400"
-      - name: "<#228b22>Forest Green"
+      - name: <#228b22>Forest Green
         color: "#228B22"
-      - name: "<#39ff14>Neon Green"
+      - name: <#39ff14>Neon Green
         color: "#39FF14"
-      - name: "<#4f7942>Fern Green"
+      - name: <#4f7942>Fern Green
         color: "#4F7942"
   purple:
     baseColor:
-      name: "<#8946A6>Purple"
-      color: 137,70,166
+      name: <#8946A6>Purple
+      color: "#8946A6"
     subColors:
-      - name: "<#9966cc>Amethyst Purple"
+      - name: <#9966cc>Amethyst Purple
         color: "#9966CC"
-      - name: "<#4B0082>Indigo Purple"
+      - name: <#4B0082>Indigo Purple
         color: "#4B0082"
-      - name: "<#551a8b>Dark Purple"
+      - name: <#551a8b>Dark Purple
         color: "#551A8B"
-      - name: "<#6f2da8>Grape Purple"
+      - name: <#6f2da8>Grape Purple
         color: "#6F2DA8"
-      - name: "<#bf00ff>Electric Purple"
+      - name: <#bf00ff>Electric Purple
         color: "#BF00FF"
-      - name: "<#7851a9>Royal Purple"
+      - name: <#7851a9>Royal Purple
         color: "#7851A9"
-      - name: "<#6f2da8>Lilac Purple"
+      - name: <#6f2da8>Lilac Purple
         color: "#B666D2"
   blue:
     baseColor:
-      name: "<#3731B5>Blue"
-      color: 55,49,181
+      name: <#3731B5>Blue
+      color: "#3731B5"
     subColors:
-      - name: "<#318CE7>France Blue"
+      - name: <#318CE7>France Blue
         color: "#318CE7"
-      - name: "<#034694>Chelsea Blue"
+      - name: <#034694>Chelsea Blue
         color: "#034694"
-      - name: "<#007FFF>Azure Blue"
+      - name: <#007FFF>Azure Blue
         color: "#007FFF"
-      - name: "<#0000FF>Blue"
+      - name: <#0000FF>Blue
         color: "#0000FF"
-      - name: "<#13274F>Braves Navy"
+      - name: <#13274F>Braves Navy
         color: "#13274F"
-      - name: "<#00008B>Dark Blue"
+      - name: <#00008B>Dark Blue
         color: "#00008B"
-      - name: "<#6495ED>Cornflower Blue"
+      - name: <#6495ED>Cornflower Blue
         color: "#6495ED"
   light_blue:
     baseColor:
-      name: "<#32ECE8>Light Blue"
+      name: <#32ECE8>Light Blue
       color: "#99FFFF"
     subColors:
-      - name: "<#0CAFFF>Chlorine Blue"
+      - name: <#0CAFFF>Chlorine Blue
         color: "#0CAFFF"
-      - name: "<#00BFFF>Deep Sky Blue"
+      - name: <#00BFFF>Deep Sky Blue
         color: "#0CBFFF"
-      - name: "<#7DF9FF>Eletric Blue"
+      - name: <#7DF9FF>Eletric Blue
         color: "#7DF9FF"
-      - name: "<#87CEFA>Light Sky Blue"
+      - name: <#87CEFA>Light Sky Blue
         color: "#87CEFA"
-      - name: "<#73C2FB>Maya Blue"
+      - name: <#73C2FB>Maya Blue
         color: "#73C2FB"
-      - name: "<#7CB9E8>Aero Blue"
+      - name: <#7CB9E8>Aero Blue
         color: "#7CB9E8"
-      - name: "<#99FFFF>Ice Blue"
+      - name: <#99FFFF>Ice Blue
         color: "#99FFFF"

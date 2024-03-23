@@ -9,7 +9,7 @@ servers:
     - survival
   build:
     - minecraft
-#    - blocks
+    - blocks
     - items
     - build
   dev:

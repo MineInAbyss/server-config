@@ -26,7 +26,7 @@ Baby_Shroom_Harvest:
   - holding{m=shears} true
   Skills:
   - dropitem{i=shroombeardrops} @self
-  - petExperience{exp=1} @trigger
+  #- petExperience{exp=1} @trigger
 Shroom_Harvest:
   Cooldown: 120
   Conditions:
@@ -41,7 +41,7 @@ Shroom_Harvest:
   - effect:particles{particle=block;m=magenta_candle;a=6;hs=0.4;vs=0.1;s=0;y=1;repeat=10;repeatInterval=2}
   - effect:particles{particle=block;m=purple_glazed_terracotta;a=6;hs=0.4;vs=0.1;y=1;s=0;repeat=10;repeatInterval=2}
   - dropitem{i=shroombeardrops2} @self
-  - petExperience{exp=1} @trigger
+  #- petExperience{exp=1} @trigger
 
 
 Symbiotic_Relationship:
@@ -61,7 +61,7 @@ shroombearheal:
   - incombat true
   - offgcd true
   #- targetwithin{d=2} true
-  - petExperience{exp=>100} true
+  #- petExperience{exp=>100} true
   Skills:
   - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
   - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
@@ -82,7 +82,7 @@ shroombearheal2:
   - incombat true
   - offgcd true
   #- targetwithin{d=2} true
-  - petExperience{exp=>460} true
+  #- petExperience{exp=>460} true
   Skills:
   - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
   - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self

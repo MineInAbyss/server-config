@@ -6,16 +6,24 @@ items:
       - 0
     item:
       material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 30
     cosmetic: backpack
     actions:
       on-equip:
@@ -27,16 +35,26 @@ items:
       - 1
     item:
       material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:satchel
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:satchel
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 30
     cosmetic: satchel
     actions:
       on-equip:
@@ -48,16 +66,24 @@ items:
       - 2
     item:
       material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:generic_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:generic_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 30
     cosmetic: generic_backpack
     actions:
       on-equip:
@@ -69,16 +95,24 @@ items:
       - 3
     item:
       material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_orth_coin:"
+        - "<gold>30:cosmetic_orth_coin:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: orth_coin
-    cost: 1
+    cost: 30
     cosmetic: neritantan_backpack
     actions:
       on-equip:
@@ -97,8 +131,14 @@ items:
       material: hmccosmetics:camper_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:camper_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:camper_backpack
       lore:
@@ -122,18 +162,24 @@ items:
       material: hmccosmetics:miner_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:miner_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:miner_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_mitty_token:"
+        - "<gold>2:cosmetic_mitty_token:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: miner_backpack
     actions:
       on-equip:
@@ -147,18 +193,24 @@ items:
       material: hmccosmetics:explorer_backpack
       lore:
         - ""
-        - "<gray><i>Patreon-Exclusive"
-        - "<rainbow>Dyeable"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:explorer_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       material: hmccosmetics:explorer_backpack
       lore:
         - ""
-        - "<gold>1:cosmetic_mitty_token:"
+        - "<gold>2:cosmetic_mitty_token:"
         - "<green>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: explorer_backpack
     actions:
       on-equip:

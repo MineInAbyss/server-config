@@ -2,9 +2,10 @@ splitjaw_balloon:
   slot: BALLOON
   permission: "hmccosmetics.ballons.splitjaw_balloon"
   dyeable: false
-  model: splitjaw
+  model: splitjaw_balloon
+  show-lead: false
   item:
-    display-name: "<red>Orb Piercer"
+    name: "<red>Splitjaw"
     material: NETHER_WART
     model-data: 1
 neritantan_balloon:
@@ -13,8 +14,10 @@ neritantan_balloon:
   dyeable: true
   item:
     material: POTION
-    display-name: "<gray>Neritantan Balloon"
+    name: "<gray>Neritantan Balloon"
     model-data: 301
+    item-flags:
+      - HIDE_POTION_EFFECTS
     color:
       red: 255
       blue: 255

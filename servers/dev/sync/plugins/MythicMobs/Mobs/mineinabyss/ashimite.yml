@@ -70,4 +70,4 @@ baby_ashimite:
     #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
-    - petExperience{exp=1} @ENO{r=30} ~onDeath
+    #- petExperience{exp=1} @ENO{r=30} ~onDeath

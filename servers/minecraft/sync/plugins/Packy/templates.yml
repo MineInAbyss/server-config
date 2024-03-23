@@ -7,6 +7,9 @@ templates:
       repo: MineInAbyss-resourcepack
       branch: develop
       subFolder: common
+  - name: trims
+    default: true
+    forced: true
   - name: modelengine
     default: true
     forced: true

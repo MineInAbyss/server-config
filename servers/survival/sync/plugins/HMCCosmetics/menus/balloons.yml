@@ -3,20 +3,40 @@ rows: 6
 items:
   neritantan_balloon:
     slots:
-      - 1
+      - 0
     model: neritantan_balloon
     dyeable: true
     item:
       material: hmccosmetics:neritantan_balloon
+    locked-item:
+      material: hmccosmetics:neritantan_balloon
       lore:
         - ""
-        - "<gray>Enabled: <#6D9DC5>%hmccosmetics_equipped_neritantan_balloon%"
-        - "<gray>Allowed: <#6D9DC5>%hmccosmetics_unlocked_neritantan_balloon%"
+        - "<gold>2:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: neritantan_balloon
-
+  splitjaw_balloon:
+    slots:
+      - 1
+    model: splitjaw_balloon
+    dyeable: false
+    item:
+      material: hmccosmetics:splitjaw_balloon
+    locked-item:
+      material: hmccosmetics:splitjaw_balloon
+      lore:
+        - ""
+        - "<gold>4:cosmetic_mitty_token:"
+        - "<green>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 4
+    cosmetic: splitjaw_balloon
 
   back_button:
     slots:

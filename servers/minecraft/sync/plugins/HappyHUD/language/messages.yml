@@ -1,7 +1,7 @@
 prefix: "<gray>[</gray><gradient:#c65077:#aa3159>HappyHud</gradient><gray>]</gray> "
 reload:
   - "<#157537> HappyHud has been successfully reloaded."
-  - "<bold><gradient:#c65077:#c22b2b> MAKE SURE TO RELOAD YOUR RESOURCE PACK!"
+  - "<bold><gradient:#c65077:#c22b2b> Make sure to reload Packy!"
 
 layout-add-success: "<green>Successfully added layout '<layout>' to <holder>."
 layout-add-fail: "<red>Could not add layout '<layout>' to <holder>."
@@ -9,4 +9,10 @@ layout-add-fail: "<red>Could not add layout '<layout>' to <holder>."
 layout-remove-success: "<green>Successfully removed layout '<layout>' from <holder>."
 layout-remove-fail: "<red>Could not remove layout '<layout>' from <holder>."
 
+layout-reset-success: "<green>Successfully reset layout '<layout>' on <holder>."
+
 layout-invalid-option: "<red>That option is not valid."
+
+error-hud-holder: "<red>Could not set hud for <holder>."
+enabled-hud-holder: "<green>Enabled huds for <holder>."
+disabled-hud-holder: "<red>Disabled huds for <holder>"

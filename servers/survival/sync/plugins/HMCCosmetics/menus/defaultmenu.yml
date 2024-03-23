@@ -28,20 +28,21 @@ items:
       - 21
     item:
       name: "<aqua>Balloons"
+      lore:
+        - "<red>Coming Soon!"
       material: PAPER
       model-data: 1
     type: empty
-    actions:
-      any:
-        - "[MENU] balloons"
+    #actions:
+    #  any:
+    #    - "[MENU] balloons"
   gestures:
     slots:
       - 23
     item:
       name: "<dark_purple>Gestures"
+      lore:
+        - "<red>Coming Soon!"
       material: PAPER
       model-data: 1
     type: empty
-    actions:
-      any:
-        - "[MENU] gestures"
