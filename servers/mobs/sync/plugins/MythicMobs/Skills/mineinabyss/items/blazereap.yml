@@ -1,0 +1,7 @@
+BlazeReap:
+  Conditions:
+  - triggerblocktype{mat=STONE,DIRT} true
+  Cooldown: 10
+  Skills:
+  - Aura{auraName=Blazereap;onTick=Blazekaboom;interval=10;duration=240} @self
+

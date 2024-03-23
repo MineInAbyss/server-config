@@ -1,0 +1,106 @@
+
+mia_corpseweeper_attack_1_sync:
+  Skills:
+  - CancelEvent
+  - randomskill{skills=mia_corpseweeper_attack_1} @target
+  
+mia_corpseweeper_attack_1:
+  Cooldown: 1
+  TargetConditions:
+  - stance{s=catch} false
+  Conditions:
+  - offgcd true
+  Skills:
+  #- petfollow{follow=false} @self
+  - gcd{ticks=5}
+  - state{s=attack} @self
+  #- lockmodel{l=true} @self
+  #- lunge{v=.25;vy=.1} @target
+  #- skill{s=mia_sound_swing} @self
+  - delay 5
+  - totem{md=2;oH=mia_corpseweeper_attack_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
+  - delay 5
+  - lockmodel{l=false} @self
+  
+### ATTACK 2 ###
+
+mia_corpseweeper_attack_2_sync:
+  Skills:
+  - CancelEvent
+  - randomskill{skills=mia_corpseweeper_attack_2} @target
+  
+mia_corpseweeper_attack_2:
+  Cooldown: 1
+  TargetConditions:
+  - stance{s=catch} false
+  Conditions:
+  - offgcd true
+  Skills:
+  #- petfollow{follow=false} @self
+  - gcd{ticks=5}
+  - state{s=attack} @self
+  #- lockmodel{l=true} @self
+  #- lunge{v=.25;vy=.1} @target
+  #- skill{s=mia_sound_swing} @self
+  - delay 5
+  - totem{md=2;oH=mia_corpseweeper_attack_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
+  - delay 5
+  - lockmodel{l=false} @self
+
+### ATTACK DAMAGE ###
+  
+mia_corpseweeper_attack_damage:
+  TargetConditions:
+  - score{objective=dodge;value=1} false
+  Skills:
+  - skill{s=mia_sound_impact} @self
+  - sudoskill{s=mia_XP;cat=true}
+  - damage{a=<pet.power>*2}
+  
+  
+### SPELL ###
+
+mia_corpseweeper_learn_spell:
+  Conditions:
+  - mythicmobtype{t=mia_corpseweeper} true
+  Skills:
+  - message{m="&f<caster.name> learned &6Triple Peck!"} @Owner
+  
+mia_corpseweeper_spell:
+  Cooldown: 10
+  TargetConditions:
+  - stance{s=catch} false
+  Conditions:
+  - incombat true
+  - offgcd true
+  - targetwithin{d=2} true
+  #- petExperience{exp=>480} true
+  Skills:
+  #- petfollow{follow=false} @self
+  - gcd{ticks=40}
+  - setspeed{type=walking;speed=0} @self
+  - state{s=spell} @self
+  #- lockmodel{l=true} @self
+  - delay 10
+  - totem{md=2;oH=mia_corpseweeper_spell_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
+  - delay 10
+  - totem{md=2;oH=mia_corpseweeper_spell_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
+  - delay 10
+  - totem{md=2;oH=mia_corpseweeper_spell_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
+  - message{m="&a<caster.display>&f used &6Triple Peck!"} @owner
+  - skill{s=mia_corpseweeper_spell_cast} @Sphere{radius=6;points=12;yoffset=1}
+  #- totem{md=2;oH=mia_corpseweeper_spell_damage;hS=5;vS=5;hnp=true;hp=false} @self 
+  - delay 20
+  - setspeed{type=walking;speed=1.35} @self
+  - lockmodel{l=false} @self
+  
+
+  
+mia_corpseweeper_spell_damage:
+  TargetConditions:
+  - score{objective=dodge;value=1} false
+  Skills:
+  - throw{v=4;vy=3}
+  - skill{s=mia_sound_impact} @self
+  - sudoskill{s=mia_XP;cat=true}
+  - damage{a=<pet.power>*4}

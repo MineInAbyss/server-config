@@ -17,6 +17,8 @@ servers:
     - blocks
     - items
     - mobs
+    - pets
+    - delvers
     - dev
   archive:
     - minecraft

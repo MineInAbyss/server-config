@@ -1,0 +1,159 @@
+############ octoliar #############
+
+# Misc #
+qmob_octoliarStep:
+  Cooldown: 0
+  Conditions:
+  - onground{} true
+  Skills:
+  - sound{s=entity.chicken.step;sc=master;p=<random.float.0.75to0.85>;v=0.05;repeat=1;repeatInterval=5} @self
+
+bloodEffectoctoliar:
+  Cooldown: 0.1
+  Skills:
+  - effect:particles{particle=block;m=slime_block;a=3;hs=0.4;vs=0.25;s=0;y=1.2} #
+  - effect:particles{particle=block;m=mangrove_propagule;a=3;hs=0.35;vs=0.25;s=0;y=1.2}    # Simple blood effect
+  - effect:particles{particle=block;m=green_glazed_terracotta;a=5;hs=0.35;vs=0.25;s=0;y=1.2}    # Remove if there are
+  - effect:particles{particle=totem;a=5;hs=0.35;vs=0.25;s=0;y=1.2}       # children or otherwise.
+
+octoliarAmbient:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.ambient;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.phantom.ambient;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
+
+octoliarHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.hurt;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.silverfish.hurt;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.phantom.hurt;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
+  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+
+octoliarDeath:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.spider.death;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
+  - sound{s=entity.silverfish.death;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
+  - sound{s=entity.phantom.death;sc=master;p=<random.float.1.45to1.55>;v=0.3} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=20;repeatInterval=1} @self
+
+
+
+
+# Stances #
+
+
+# Attacks #
+
+octoliarBite:   # melee attack
+  Cooldown: 2.0
+  Conditions:
+  - stance{s=attacking} false
+  Skills:
+  - CancelEvent @self
+  - stance{s=attacking} @self
+  - setspeed{speed=0;type=walking}
+  - state{state=attack;li=4;lo=4;speed=1.0} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=0.85;v=2.1} @self
+  - delay 10
+  - sound{s=entity.fox.bite;sc=master;p=0.85;v=1.1} @self
+  - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
+  - delay 2
+  - potion{t=POISON;l=0;force=true;p=true;d=<random.120to180>} @EIC{a=175.0;r=2.9;rot=0.0}
+  - damage{a=<random.5to7>;pi=true} @EIC{a=175.0;r=2.9;rot=0.0}
+  - delay <random.10to30>
+  - stance{s=idle} @self
+  - setspeed{speed=1;type=walking}
+
+octoliarSpit:   # melee attack
+  Cooldown: 2.0
+  Conditions:
+  - stance{s=attacking} false
+  - targetnotwithin{d=3} true
+  Skills:
+  - CancelEvent @self
+  - stance{s=attacking} @self
+  - setspeed{speed=0;type=walking}
+  - state{state=attack;li=4;lo=4;speed=1.0} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=0.85;v=2.1} @self
+  - delay 10
+  - sound{s=entity.cat.hiss;sc=master;p=2.0;v=1.1} @self
+  - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
+  - sound{s=entity.llama.spit;sc=master;p=2.0;v=1.1} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=1.46;sc=master} @self
+  - sound{s=block.honey_block.place;p=0.8;sc=master} @self
+  - projectile{hft=true;onTick=octoliarSpitTick;onHit=octoliarSpitHit;v=<random.14to16>;i=1;hR=0.65;vr=0.75;g=0.25;hnp=true;syo=0.65;sfo=0.25;tyo=2.5} @forward{f=16.0}
+  - delay <random.10to30>
+  - stance{s=idle} @self
+  - setspeed{speed=1;type=walking}
+octoliarSpitTick:
+  Cooldown: 0.0
+  Skills:
+  - effect:particlesphere{particle=squid_ink;a=2;hs=0.05;vs=0.05;r=0.2} @origin
+octoliarSpitHit:
+  Cooldown: 0.0
+  Skills:
+  - damage{a=<random.1to2>;pi=true;pk=true}
+  - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
+  - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
+  - potion{t=POISON;l=0;force=true;p=true;d=<random.120to180>}
+
+octoliarWeb:   # web attack
+  Cooldown: 10
+  Conditions:
+  - stance{s=attacking} false
+  - targetnotwithin{d=2} true
+  Skills:
+  - stance{s=attacking} @self
+  - setspeed{speed=0;type=walking}
+  - state{state=spray;li=4;lo=4;speed=1.0} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=0.85;v=2.1} @self
+  - sound{s=entity.spider.hurt;sc=master;p=0.85;v=2.1} @self
+  - delay 10
+  - sound{s=block.snow.break;sc=master;p=1.45;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.55;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.65;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.75;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.85;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.95;v=1.1} @self
+  - delay 9
+  - sound{s=entity.bat.takeoff;sc=master;p=1.95;v=1.1} @self
+  - sound{s=item.dye.use;sc=master;p=1.85;v=1.1} @self
+  - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
+  - sound{s=entity.cat.hiss;sc=master;p=1.75;v=2.1} @self
+  - sound{s=entity.squid.squirt;sc=master;p=2.0;v=1.1} @self
+  - projectile{hft=true;onTick=octoliarWebTick;onEnd=octoliarWebEnd;onHit=octoliarWebHit;v=12;i=1;hR=0.65;vr=0.75;g=0.5;hnp=true;fromorigin=true;origin=@ModelPart{p=cap};syo=1.25;sfo=0;repeat=2;repeatInterval=1} @Cone{angle=90;p=16;range=16;rotation=0} #change this
+  - delay <random.20to50>
+  - stance{s=idle} @self
+  - setspeed{speed=1;type=walking}
+octoliarWebTick:
+  Cooldown: 0.0
+  Skills:
+  - particles{p=squid_ink;a=1;hs=0.01;vs=0.01;size=4} @origin
+  - modifyProjectile{trait=GRAVITY;action=MULTIPLY;value=2.0;delay=7}
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.95;delay=12}
+octoliarWebEnd:
+  Cooldown: 0.0
+  Skills:
+  - particles{p=squid_ink;a=1;hs=0.2;vs=0.0;y=-0.05;repeat=60;repeatInterval=1} @origin
+octoliarWebHit:
+  Cooldown: 0.0
+  Skills:
+  - damage{a=<random.1to2>;pi=true;pk=true}
+  - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
+  - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
+  - potion{t=SLOW;l=4;force=true;p=true;d=<random.120to180>}

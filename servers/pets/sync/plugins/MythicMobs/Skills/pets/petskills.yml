@@ -1,0 +1,96 @@
+Flame_Strengthen:
+  Cooldown: 10
+  Conditions:
+  - isburning{} true
+  Skills:
+  #- sound{s=} @Self
+  - potion{type=FIRE_RESISTANCE;duration=160;level=1} @PetOwner
+  - potion{type=INCREASE_DAMAGE;duration=160;level=1} @PetOwner
+Meinyas_guidance:
+  Cooldown: 300
+  Conditions:
+  Skills:
+  - potionclear @PetOwner
+Penetration_Proof:
+  Cooldown: 60
+  Conditions:
+  - health{h=<5} true
+  Skills:
+  - potion{type=ABSORPTION;duration=200;level=48} @PetOwner
+
+
+#shroombear
+Baby_Shroom_Harvest:
+  Cooldown: 120
+  Conditions:
+  - holding{m=shears} true
+  Skills:
+  - dropitem{i=shroombeardrops} @self
+  #- petExperience{exp=1} @trigger
+Shroom_Harvest:
+  Cooldown: 120
+  Conditions:
+  - holding{m=shears} true
+  Skills:
+  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master} @self
+  - effect:particles{particle=block;m=magenta_candle;a=6;hs=0.4;vs=0.1;s=0;y=1;repeat=10;repeatInterval=2}
+  - effect:particles{particle=block;m=purple_glazed_terracotta;a=6;hs=0.4;vs=0.1;y=1;s=0;repeat=10;repeatInterval=2}
+  - dropitem{i=shroombeardrops2} @self
+  #- petExperience{exp=1} @trigger
+
+
+Symbiotic_Relationship:
+  Cooldown: 600
+  Conditions:
+  - health{h=<20} true
+  Skills:
+  - potion{type=REGENERATION;duration=30;level=6} @PetOwner
+  - effect:particles{p=reddust;color=#5C3356;speed=0.1;a=25;hs=.75;vs=.75;size=3} @PetOwner
+ # - sound{s=;v=.25} @self
+
+shroombearheal:
+  TargetConditions:
+  - stance{s=catch} false
+  Cooldown: 30
+  Conditions:
+  - incombat true
+  - offgcd true
+  #- targetwithin{d=2} true
+  #- petExperience{exp=>100} true
+  Skills:
+  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master} @self
+  - effect:particles{particle=block;m=magenta_candle;a=6;hs=0.4;vs=0.1;s=0;y=1;repeat=10;repeatInterval=2}
+  - effect:particles{particle=block;m=purple_glazed_terracotta;a=6;hs=0.4;vs=0.1;y=1;s=0;repeat=10;repeatInterval=2}
+  - potion{t=REGENERATION;l=1;force=true;p=false;d=120} @parent
+  - message{m="&a<caster.display>&f used &6Heal I!"} @owner
+
+shroombearheal2:
+  TargetConditions:
+  - stance{s=catch} false
+  Cooldown: 30
+  Conditions:
+  - incombat true
+  - offgcd true
+  #- targetwithin{d=2} true
+  #- petExperience{exp=>460} true
+  Skills:
+  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=master;repeat=2;repeatInterval=10} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master} @self
+  - effect:particles{particle=block;m=magenta_candle;a=6;hs=0.4;vs=0.1;s=0;y=1;repeat=10;repeatInterval=2}
+  - effect:particles{particle=block;m=purple_glazed_terracotta;a=6;hs=0.4;vs=0.1;y=1;s=0;repeat=10;repeatInterval=2}
+  - potion{t=REGENERATION;l=1;force=true;p=false;d=120} @parent
+  - message{m="&a<caster.display>&f used &6Heal II!"} @owner

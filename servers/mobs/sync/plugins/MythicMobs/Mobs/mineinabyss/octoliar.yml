@@ -1,0 +1,46 @@
+octoliar:
+  Type: SPIDER
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget
+  - randomlookaround
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Health: 80 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Despawn: false
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0.22   # replaced with skills
+    KnockbackResistance: 1.0
+  Model:
+    Id: octoliar
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2
+  Skills:
+  ####### Misc
+  - model{mid=octoliar} @self ~onSpawn
+  - defaultstate{t=walk;s=walk;sp=1.5} @self ~onSpawn
+  - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
+  - potion{t=JUMP;l=1;force=true;p=true;d=12} @self ~onTimer:10
+  - look{} @target ~onTimer:20
+  ####### Stances/AI/Abilities
+  - skill{s=octoliarBite} @self ~onAttack # meleeattack
+  - skill{s=octoliarWeb;delay=<random.0to20>} @self ~onTimer:220 0.65
+  - skill{s=octoliarSpit;delay=<random.0to20>} @self ~onTimer:65 0.55
+  ########### FX
+  - skill{s=octoliarAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
+  - skill{s=octoliarHurt} @self ~onHurt
+  - skill{s=octoliarDeath} @self ~onDeath
+  - skill{s=bloodEffectoctoliar} @self ~onHurt 0.65 >50%
+  - skill{s=bloodEffectoctoliar} @self ~onHurt 0.9 =50%
+  - skill{s=bloodEffectoctoliar} @self ~onHurt 0.85 <50%

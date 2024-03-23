@@ -1,0 +1,75 @@
+shroombear:
+  Type: PIG
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - fleeplayers{distance=5;speed=1;safespeed=1;conditions=[ - inlineofsight true ]}
+    - panicWhenOnFire
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 25 # change this
+  Damage: 0 
+  Options:
+    Despawn: false
+    Silent: true
+    FollowRange: 10
+    MovementSpeed: 0.22
+  DamageModifiers:
+  Model:
+    Id: qmob_shroombear
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.8
+  Skills:
+  ####### Misc
+  - CancelEvent{sync=true} @self ~onAttack
+  - CancelEvent{sync=true} @self ~onInteract
+  - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawn
+  - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
+  - skill{s=Shroom_Harvest} @self ~oninteract
+  - summon{type=baby_shroombear;amount=1;radius=3} @self ~onSpawn 0.1
+
+baby_shroombear:
+  Type: PIG
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - gotoparent
+    - randomstroll
+    - panicWhenOnFire
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 12 # change this
+  Damage: 0 
+  Options:
+    Despawn: false
+    Silent: true
+    FollowRange: 10
+    MovementSpeed: 0.18
+  DamageModifiers:
+  Model:
+    Id: qmob_shroombear
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.3
+  Skills:
+  ####### Misc
+  - CancelEvent{sync=true} @self ~onAttack
+  - CancelEvent{sync=true} @self ~onInteract
+  - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawn
+  - skill{s=shroombearAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  - skill{s=shroombearHurt} @self ~onHurt
+  - skill{s=shroombearDeath} @self ~onDeath
+  - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath
