@@ -2,10 +2,15 @@
 - name: "Copy from {{ src }} to destination"
   synchronize:
     src: "{{ src }}"
-    dest: "{% if dest is defined %}{{ dest }}{% else %}{{ lookup('ansible.builtin.env', 'HOME') }}{% endif %}"
-    rsync_opts: ["-i", "--size-only", "--chmod=774"]
+    dest: "{{ home }}"
     archive: false
     recursive: true
+    checksum: true
+    group: false
+    owner: false
+    perms: false
   register: files
 
-- debug: var=files.stdout_lines
+- name: Listing files copied
+  debug: var=files.stdout_lines
+  when: files.changed

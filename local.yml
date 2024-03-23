@@ -2,10 +2,11 @@
   hosts: localhost
   connection: local
   vars:
-    copy_perms: "774"
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
+    home: "{% if dest is defined %}{{ dest }}{% else %}{{ lookup('ansible.builtin.env', 'HOME') }}{% endif %}"
   vars_files:
     - "servers/servers.yml"
 
   roles:
+    - role: bbmodels
     - role: configs

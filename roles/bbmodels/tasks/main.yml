@@ -1,0 +1,29 @@
+- name: Check if BBModels SSH key exists
+  stat:
+    path: "/run/secrets/bbmodels_ssh_key"
+  register: p
+
+- name: Pull latest BBModels from our repo
+  ansible.builtin.git:
+    repo: git@github.com:MineInAbyss/BBModel-Files.git
+    dest: "{{ home }}/mineinabyss/bbmodels"
+    key_file: "/run/secrets/bbmodels_ssh_key"
+    accept_hostkey: yes
+#    single_branch: yes
+    depth: 1
+    version: "master"
+  when: p.stat.exists
+
+- name: Ensure blueprints directory exists
+  file:
+    path: "{{ home }}/plugins/ModelEngine/blueprints"
+    state: directory
+  when: p.stat.exists
+
+- name: Ensure symlink exists to the blueprints directory
+  file:
+    src: "../../mineinabyss/bbmodels/blueprints"
+    dest: "{{ home }}/plugins/ModelEngine/blueprints"
+    state: link
+    force: yes
+  when: p.stat.exists
