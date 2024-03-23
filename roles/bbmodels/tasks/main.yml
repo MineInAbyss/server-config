@@ -15,6 +15,7 @@
     dest: "{{ home }}/mineinabyss/bbmodels"
     key_file: "/run/secrets/bbmodels_ssh_key"
     accept_hostkey: yes
+    force: true
 #    single_branch: yes
     depth: 1
     version: "master"
