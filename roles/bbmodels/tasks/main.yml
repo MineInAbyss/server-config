@@ -13,6 +13,7 @@
     depth: 1
     version: "master"
   when: p.stat.exists
+  remote_user: "{{ minecraft_uid }}"
 
 - name: Ensure blueprints directory exists
   file:

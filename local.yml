@@ -3,6 +3,7 @@
   connection: local
   vars:
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
+    minecraft_uid: "{{ lookup('env', 'UID', '1000') }}"
     home: "{% if dest is defined %}{{ dest }}{% else %}{{ lookup('ansible.builtin.env', 'HOME') }}{% endif %}"
   vars_files:
     - "servers/servers.yml"
