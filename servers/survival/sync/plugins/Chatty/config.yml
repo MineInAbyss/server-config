@@ -70,7 +70,7 @@ channels:
     format: ':survival::space_-4:%luckperms_prefix% <hover:show_text:'' <light_purple>%player_name%<newline>
       Deaths: <aqua>%statistic_deaths%</aqua><newline> Time Played: <aqua>%statistic_hours_played%h</aqua><newline>
       Time since last death: <aqua>%statistic_hours_since_death%h</aqua>''><chatty_nickname>: '
-    messageColor: white
+    messageColor: "#fefefe"
     channelRadius: 0
     channelAliases:
       - g
