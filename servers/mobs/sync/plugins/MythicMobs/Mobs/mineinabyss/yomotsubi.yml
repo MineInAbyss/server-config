@@ -17,7 +17,7 @@ yomotsubi:
     Collidable: false
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.4
+    MovementSpeed: 0.25
     MaxCombatDistance: 24
     DigOutOfGround: true
   Equipment:
@@ -34,7 +34,6 @@ yomotsubi:
    # - skill{s=Damage_8} @self ~onAttack
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawn
     - bodyclamp{m=yomotsubi;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.4} @self ~onSpawn
     - state{mid=yomotsubi;s=attack} @self ~onAttack
     
     - skill{s=yomotsubi_airball} @target ~onTimer:20
