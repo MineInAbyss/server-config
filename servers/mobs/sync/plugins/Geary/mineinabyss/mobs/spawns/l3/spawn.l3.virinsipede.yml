@@ -1,13 +1,13 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:virinsipede
-spawn.regions: [ layerthree ]
-spawn.amount: 1..2
-spawn.spread: 10
+spawn.*:
+  type: mineinabyss:virinsipede
+  regions: [ layerthree ]
+  amount: 1..2
+  spread: 10
 check.spawn.local_group:
   max: 3
   radius: 128
-check.spawn.gap:
-  range: 2..4096
+check.spawn.gap: 2..4096
 check.blockType:
   allow:
     - WHITE_CONCRETE

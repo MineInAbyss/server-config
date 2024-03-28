@@ -1,9 +1,10 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:onitsuchi
-spawn.position: AIR
-spawn.priority: 0.1
-check.spawn.local_group:
-  max: 2
-  radius: 256
-check.spawn.gap:
-  range: 30..4096
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:onitsuchi
+  position: AIR
+  priority: 0.1
+check.*:
+  spawn.local_group:
+    max: 2
+    radius: 256
+  spawn.gap: 30..4096

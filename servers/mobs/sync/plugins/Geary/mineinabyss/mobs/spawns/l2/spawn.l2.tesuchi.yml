@@ -1,14 +1,14 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:tesuchi
-spawn.amount: 1..3
-spawn.regions: [ layertwo ]
-spawn.spread: 15
-spawn.priority: 0.2
+spawn.*:
+  type: mineinabyss:tesuchi
+  amount: 1..3
+  regions: [ layertwo ]
+  spread: 15
+  priority: 0.2
 check.spawn.local_group:
   max: 6
   radius: 120
-check.spawn.gap:
-  range: 3..4096
+check.spawn.gap: 3..4096
 check.blockType:
   allow:
     - GRASS_BLOCK

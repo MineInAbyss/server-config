@@ -6,8 +6,7 @@ spawn.spread: 30
 check.spawn.local_group:
   max: 6
   radius: 160
-check.spawn.gap:
-  range: 5..80
+check.spawn.gap: 5..80
 check.blockType:
   allow:
     - GRASS_BLOCK

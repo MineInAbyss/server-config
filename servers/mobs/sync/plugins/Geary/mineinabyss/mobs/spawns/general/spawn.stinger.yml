@@ -1,15 +1,16 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:hashofu
-spawn.amount: 3..8
-spawn.spread: 5
-check.spawn.local_group:
-  max: 615
-  radius: 160
-check.spawn.gap:
-  range: 15..100
-check.spawn.delay:
-  attemptEvery: 1s
-check.blockType:
-  allow:
-    - GRASS_BLOCK
-    - PODZOL
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:hashofu
+  amount: 3..8
+  spread: 5
+check.*:
+  spawn.local_group:
+    max: 615
+    radius: 160
+  spawn.gap: 15..100
+  spawn.delay:
+    attemptEvery: 1s
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - PODZOL

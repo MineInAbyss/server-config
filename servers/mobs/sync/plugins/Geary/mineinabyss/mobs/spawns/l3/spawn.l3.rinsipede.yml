@@ -1,13 +1,13 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:rinsipede
-spawn.regions: [ layerthree ]
-spawn.amount: 1..3
-spawn.spread: 10
+spawn.*:
+  type: mineinabyss:rinsipede
+  regions: [ layerthree ]
+  amount: 1..3
+  spread: 10
 check.spawn.local_group:
   max: 4
   radius: 128
-check.spawn.gap:
-  range: 4..4096
+check.spawn.gap: 4..4096
 check.blockType:
   allow:
     - WHITE_CONCRETE

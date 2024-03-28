@@ -1,13 +1,13 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:chimokami
-spawn.amount: 1..2
-spawn.regions: [ layertwo ]
-spawn.spread: 10
+spawn.*:
+  type: mineinabyss:chimokami
+  amount: 1..2
+  regions: [ layertwo ]
+  spread: 10
 check.spawn.local_group:
   max: 4
   radius: 128
-check.spawn.gap:
-  range: 5..4096
+check.spawn.gap: 5..4096
 #time:
 #  min: 13000
 #  max: 23000

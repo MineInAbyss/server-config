@@ -1,13 +1,14 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:rohana
-spawn.amount: 1..4
-spawn.spread: 20
-spawn.priority: 0.4
-check.spawn.local_group:
-  max: 12
-  radius: 128
-check.spawn.gap:
-  range: 3..20
-check.blockType:
-  allow:
-    - WATER
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:rohana
+  amount: 1..4
+  spread: 20
+  priority: 0.4
+check.*:
+  spawn.local_group:
+    max: 12
+    radius: 128
+  spawn.gap: 3..20
+  blockType:
+    allow:
+      - WATER

@@ -1,9 +1,10 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:dosetori
-spawn.position: AIR
-spawn.priority: 0.4
-check.spawn.local_group:
-  max: 4
-  radius: 160
-check.spawn.gap:
-  range: 20..4096
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:dosetori
+  position: AIR
+  priority: 0.4
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 160
+  spawn.gap: 20..4096

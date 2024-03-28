@@ -1,12 +1,13 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:yomotsubi
-spawn.amount: 1
-spawn.spread: 4
-spawn.priority: 0.6
-check.spawn.local_group:
-  max: 4
-  radius: 200
-check.spawn.gap:
-  range: 3..4096
-check.spawn.delay:
-  attemptEvery: 5s
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:yomotsubi
+  amount: 1
+  spread: 4
+  priority: 0.6
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 200
+  spawn.gap: 3..4096
+  spawn.delay:
+    attemptEvery: 5s

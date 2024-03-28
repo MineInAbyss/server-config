@@ -1,13 +1,14 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:fuwagi
-spawn.amount: 2..3
-spawn.spread: 10
-spawn.priority: 0.3
-check.spawn.local_group:
-  max: 4
-  radius: 128
-check.spawn.gap:
-  range: 2..4096
-check.blockType:
-  allow:
-    - GRASS_BLOCK
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:fuwagi
+  amount: 2..3
+  spread: 10
+  priority: 0.3
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 128
+  spawn.gap: 2..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK

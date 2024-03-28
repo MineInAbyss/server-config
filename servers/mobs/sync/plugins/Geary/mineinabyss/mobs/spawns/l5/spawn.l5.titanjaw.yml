@@ -6,8 +6,7 @@ spawn.priority: 0.3
 check.spawn.local_group:
   max: 5
   radius: 128
-check.spawn.gap:
-  range: 5..4096
+check.spawn.gap: 5..4096
 check.blockType:
   allow:
     - GRASS_BLOCK

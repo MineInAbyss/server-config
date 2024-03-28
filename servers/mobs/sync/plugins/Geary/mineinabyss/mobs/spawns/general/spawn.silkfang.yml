@@ -1,13 +1,14 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:silkfang
-spawn.priority: 0.3
-check.spawn.local_group:
-  max: 3
-  radius: 128
-check.spawn.gap:
-  range: 3..4096
-check.spawn.delay:
-  attemptEvery: 4s
-check.blockType:
-  allow:
-    - GRASS_BLOCK
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:silkfang
+  priority: 0.3
+check.*:
+  spawn.local_group:
+    max: 3
+    radius: 128
+  spawn.gap: 3..4096
+  spawn.delay:
+    attemptEvery: 4s
+  blockType:
+    allow:
+      - GRASS_BLOCK

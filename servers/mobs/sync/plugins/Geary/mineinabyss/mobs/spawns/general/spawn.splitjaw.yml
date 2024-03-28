@@ -1,9 +1,10 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:splitjaw
-spawn.position: AIR
-spawn.priority: 0.8
-check.spawn.local_group:
-  max: 1
-  radius: 256
-check.spawn.gap:
-  range: 10..4096
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:splitjaw
+  position: AIR
+  priority: 0.8
+check.*:
+  spawn.local_group:
+    max: 1
+    radius: 256
+  spawn.gap: 10..4096

@@ -1,9 +1,10 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:hammerbeak
-spawn.position: AIR
-spawn.priority: 0.6
-check.spawn.local_group:
-  max: 2
-  radius: 192
-check.spawn.gap:
-  range: 25..4096
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:hammerbeak
+  position: AIR
+  priority: 0.6
+check.*:
+  spawn.local_group:
+    max: 2
+    radius: 192
+  spawn.gap: 25..4096

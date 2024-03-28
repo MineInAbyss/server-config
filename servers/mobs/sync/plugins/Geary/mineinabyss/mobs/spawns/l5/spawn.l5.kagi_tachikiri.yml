@@ -7,8 +7,7 @@ spawn.priority: 0.4
 check.spawn.local_group:
   max: 4
   radius: 128
-check.spawn.gap:
-  range: 4..40
+check.spawn.gap: 4..40
 check.blockType:
   allow:
     - SAND

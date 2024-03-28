@@ -1,13 +1,14 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:kazura
-spawn.amount: 1..3
-spawn.spread: 1
-spawn.priority: 0.6
-check.spawn.local_group:
-  max: 6
-  radius: 256
-check.spawn.gap:
-  range: 3..50
-check.blockType:
-  allow:
-    - WATER
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:kazura
+  amount: 1..3
+  spread: 1
+  priority: 0.6
+check.*:
+  spawn.local_group:
+    max: 6
+    radius: 256
+  spawn.gap: 3..50
+  blockType:
+    allow:
+      - WATER

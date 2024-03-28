@@ -1,14 +1,14 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:beniguma
-spawn.amount: 2..4
-spawn.regions: [ layerone ]
-spawn.spread: 10
-spawn.priority: 0.2
+spawn.*:
+  type: mineinabyss:beniguma
+  amount: 2..4
+  regions: [ layerone ]
+  spread: 10
+  priority: 0.2
 check.spawn.local_group:
   max: 4
   radius: 150
-check.spawn.gap:
-  range: 4..4096
+check.spawn.gap: 4..4096
 check.blockType:
   allow:
     - GRASS_BLOCK

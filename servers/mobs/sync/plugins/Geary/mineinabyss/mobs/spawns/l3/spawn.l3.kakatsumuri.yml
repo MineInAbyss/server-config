@@ -1,13 +1,13 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:kakatsumuri
-spawn.regions: [ layerthree ]
-spawn.amount: 1..3
-spawn.spread: 20
+spawn.*:
+  type: mineinabyss:kakatsumuri
+  regions: [ layerthree ]
+  amount: 1..3
+  spread: 20
 check.spawn.local_group:
   max: 8
   radius: 128
-check.spawn.gap:
-  range: 3..4096
+check.spawn.gap: 3..4096
 check.blockType:
   allow:
     - GRASS_BLOCK

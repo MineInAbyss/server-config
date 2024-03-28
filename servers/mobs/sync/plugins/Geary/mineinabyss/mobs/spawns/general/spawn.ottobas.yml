@@ -1,12 +1,13 @@
-namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:ottobas
-spawn.amount: 1..2
-spawn.spread: 6
-check.spawn.local_group:
-  max: 2
-  radius: 160
-check.spawn.gap:
-  range: 5..4096
-check.blockType:
-  allow:
-    - WATER
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:ottobas
+  amount: 1..2
+  spread: 6
+check.*:
+  spawn.local_group:
+    max: 2
+    radius: 160
+  spawn.gap: 5..4096
+  blockType:
+    allow:
+      - WATER
