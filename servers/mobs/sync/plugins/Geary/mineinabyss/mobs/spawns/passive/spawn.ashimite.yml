@@ -1,0 +1,16 @@
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  regions: [ layerfive ]
+  type: mineinabyss:ashimite
+  amount: 3..5
+  spread: 10
+  priority: 0.3
+check.spawn.local_group:
+  max: 4
+  radius: 128
+check.spawn.gap: 5..4096
+check.blockType:
+  allow:
+    - SNOW_BLOCK
+    - POWDER_SNOW
+

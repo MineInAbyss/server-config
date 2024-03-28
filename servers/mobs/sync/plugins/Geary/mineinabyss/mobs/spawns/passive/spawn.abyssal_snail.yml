@@ -1,0 +1,15 @@
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  regions: [ layerfive ]
+  type: mineinabyss:abyssal_snail
+  amount: 1..3
+  spread: 10
+  priority: 0.3
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 150
+  spawn.gap: 3..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK

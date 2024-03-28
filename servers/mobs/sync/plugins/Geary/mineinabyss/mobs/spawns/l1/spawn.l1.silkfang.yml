@@ -1,6 +1,0 @@
-namespaces: [geary, mobzy, looty]
-inherit: [ mineinabyss:spawn.silkfang ]
-spawn.regions: [ layerone ]
-check.spawn.local_group:
-  max: 2
-  radius: 128

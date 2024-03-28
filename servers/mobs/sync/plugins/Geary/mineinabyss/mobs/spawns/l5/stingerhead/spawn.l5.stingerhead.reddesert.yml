@@ -1,8 +1,0 @@
-namespaces: [geary, mobzy, looty]
-inherit: [ mineinabyss:spawn.stingerhead.base ]
-spawn.regions: [ stingerheaddesert ]
-check.blockType:
-  allow:
-    - SOUL_SOIL
-    - BROWN_TERRACOTTA
-

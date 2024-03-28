@@ -1,6 +1,0 @@
-namespaces: [geary, mobzy, looty]
-inherit: [ mineinabyss:spawn.splitjaw ]
-spawn.regions: [ layerthree ]
-check.spawn.local_group:
-  max: 3
-  radius: 280

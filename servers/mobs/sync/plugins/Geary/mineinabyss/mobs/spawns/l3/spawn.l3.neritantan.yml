@@ -1,5 +1,0 @@
-namespaces: [geary, mobzy, looty]
-inherit: [ mineinabyss:spawn.neritantan ]
-spawn.regions: [ layerthree ]
-check.spawn.delay:
-  attemptEvery: 12t
