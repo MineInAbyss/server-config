@@ -5,11 +5,12 @@ spawn.*:
   spread: 10
   priority: 0.2
   regions: [ layerone ]
-check.spawn.local_group:
-  max: 4
-  radius: 150
-check.spawn.gap: 4..4096
-check.blockType:
-  allow:
-    - GRASS_BLOCK
-    - CRACKED_STONE_BRICKS
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 150
+  spawn.gap: 4..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - CRACKED_STONE_BRICKS

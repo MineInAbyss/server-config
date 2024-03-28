@@ -5,12 +5,13 @@ spawn.*:
   spread: 6
   priority: 0.2
   regions: [ orth ]
-check.spawn.local_group:
-  max: 3
-  radius: 192
-check.spawn.gap: 8..4096
-check.blockType:
-  allow:
-    - STONE
-    - STONE_BRICKS
-    - COBBLESTONE
+check.*:
+  spawn.local_group:
+    max: 3
+    radius: 192
+  spawn.gap: 8..4096
+  blockType:
+    allow:
+      - STONE
+      - STONE_BRICKS
+      - COBBLESTONE

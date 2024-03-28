@@ -5,10 +5,11 @@ spawn.*:
   regions: [ layertwo ]
   spread: 15
   priority: 0.2
-check.spawn.local_group:
-  max: 6
-  radius: 120
-check.spawn.gap: 3..4096
-check.blockType:
-  allow:
-    - GRASS_BLOCK
+check.*:
+  spawn.local_group:
+    max: 6
+    radius: 120
+  spawn.gap: 3..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK

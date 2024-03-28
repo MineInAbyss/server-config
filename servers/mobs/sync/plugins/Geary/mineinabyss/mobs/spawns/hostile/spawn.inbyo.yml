@@ -5,16 +5,17 @@ spawn.*:
   regions: [ l2s2 ] # inverted forest
   spread: 10
   priority: 0.4
-check.spawn.local_group:
-  max: 8
-  radius: 160
-check.spawn.gap: 4..4096
-check.blockType:
-  allow:
-    - BIRCH_LEAVES
-    - OAK_LEAVES
-    - OAK_SLAB
-    - COBBLESTONE_SLAB
-    - DARK_OAK_LEAVES
-    - SPRUCE_LEAVES
-    - OAK_WOOD
+check.*:
+  spawn.local_group:
+    max: 8
+    radius: 160
+  spawn.gap: 4..4096
+  blockType:
+    allow:
+      - BIRCH_LEAVES
+      - OAK_LEAVES
+      - OAK_SLAB
+      - COBBLESTONE_SLAB
+      - DARK_OAK_LEAVES
+      - SPRUCE_LEAVES
+      - OAK_WOOD

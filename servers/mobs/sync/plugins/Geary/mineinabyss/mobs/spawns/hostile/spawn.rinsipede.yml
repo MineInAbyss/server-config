@@ -4,12 +4,13 @@ spawn.*:
   regions: [ layerthree ]
   amount: 1..3
   spread: 10
-check.spawn.local_group:
-  max: 4
-  radius: 128
-check.spawn.gap: 4..4096
-check.blockType:
-  allow:
-    - WHITE_CONCRETE
-    - DIORITE
-    - CALCITE
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 128
+  spawn.gap: 4..4096
+  blockType:
+    allow:
+      - WHITE_CONCRETE
+      - DIORITE
+      - CALCITE

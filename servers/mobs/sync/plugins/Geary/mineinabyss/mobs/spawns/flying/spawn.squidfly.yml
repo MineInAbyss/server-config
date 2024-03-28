@@ -1,13 +1,15 @@
 namespaces: [geary, mobzy, looty]
-spawn.type: mineinabyss:squidfly
-spawn.regions: [ layerthree ]
-spawn.amount: 1..5
-spawn.spread: 30
-check.spawn.local_group:
-  max: 6
-  radius: 160
-check.spawn.gap: 5..80
-check.blockType:
-  allow:
-    - GRASS_BLOCK
-    - PODZOL
+spawn.*:
+  type: mineinabyss:squidfly
+  regions: [ layerthree ]
+  amount: 1..5
+  spread: 30
+check.*:
+  spawn.local_group:
+    max: 6
+    radius: 160
+  spawn.gap: 5..80
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - PODZOL

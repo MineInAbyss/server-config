@@ -4,14 +4,15 @@ spawn.*:
   amount: 1..2
   regions: [ layertwo ]
   spread: 10
-check.spawn.local_group:
-  max: 4
-  radius: 128
-check.spawn.gap: 5..4096
-#time:
-#  min: 13000
-#  max: 23000
-check.blockType:
-  allow:
-    - GRASS_BLOCK
-    - DIRT
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 128
+  spawn.gap: 5..4096
+  #time:
+  #  min: 13000
+  #  max: 23000
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - DIRT

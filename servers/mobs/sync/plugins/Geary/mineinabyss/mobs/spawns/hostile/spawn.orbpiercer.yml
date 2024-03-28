@@ -3,12 +3,13 @@ spawn.*:
   type: mineinabyss:orbpiercer
   regions: [ layerfour ]
   priority: 0.9
-check.spawn.local_group:
-  max: 1
-  radius: 320
-check.spawn.gap: 10..4096
-check.spawn.delay:
-  attemptEvery: 4s
-check.blockType:
-  allow:
-    - WATER
+check.*:
+  spawn.local_group:
+    max: 1
+    radius: 320
+  spawn.gap: 10..4096
+  spawn.delay:
+    attemptEvery: 4s
+  blockType:
+    allow:
+      - WATER

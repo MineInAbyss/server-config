@@ -2,8 +2,9 @@ namespaces: [geary, mobzy, looty]
 spawn.*:
   type: mineinabyss:corpse_weeper
   regions: [ layertwo ]
-check.spawn.gap: 20..4096
-check.spawn.local_group:
-  max: 2
-  radius: 192
-spawn.priority: 0.6
+  priority: 0.6
+check.*:
+  spawn.gap: 20..4096
+  spawn.local_group:
+    max: 2
+    radius: 192
