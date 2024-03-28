@@ -10,3 +10,10 @@ check.*:
     max: 1
     radius: 192
   spawn.gap: 20..4096
+
+instances:
+  spawn.cyatoria.l1:
+    spawn.regions: [ layerone ]
+
+  spawn.cyatoria.l2:
+    spawn.regions: [ layertwo ]

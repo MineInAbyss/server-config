@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:hostile_flying ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: splitjaw
 displayName: "<#9A1CAD>Splitjaw"
 drop:

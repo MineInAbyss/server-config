@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:npc ]
+inherit: [ mineinabyss:npc ]
 set.*:
   modelengineModel:
     modelId: deathknight

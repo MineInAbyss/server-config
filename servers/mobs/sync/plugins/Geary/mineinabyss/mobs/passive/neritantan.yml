@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:passive ]
+inherit: [ mineinabyss:passive ]
 displayName: "<#BDBDBD>Neritantan"
 set.*:
   modelengineModel:

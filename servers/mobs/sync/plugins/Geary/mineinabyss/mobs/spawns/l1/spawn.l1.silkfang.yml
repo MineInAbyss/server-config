@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.silkfang ]
+inherit: [ mineinabyss:spawn.silkfang ]
 spawn.regions: [ layerone ]
 check.spawn.local_group:
   max: 2

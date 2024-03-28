@@ -1,6 +1,5 @@
 namespaces: [geary, blocky, looty]
-inherit:
-  from: [mineinabyss:ground_furniture]
+inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER

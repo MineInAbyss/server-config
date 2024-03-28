@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.stingerhead.base ]
+inherit: [ mineinabyss:spawn.stingerhead.base ]
 spawn.regions: [ stingerheadsnow, stingerheadnestcave ]
 check.blockType:
   allow:

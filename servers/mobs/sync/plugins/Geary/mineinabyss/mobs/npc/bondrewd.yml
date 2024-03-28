@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [mineinabyss:hostile]
+inherit: [mineinabyss:hostile]
 set.modelengineModel:
   modelId: bondrewd
 sounds: {}

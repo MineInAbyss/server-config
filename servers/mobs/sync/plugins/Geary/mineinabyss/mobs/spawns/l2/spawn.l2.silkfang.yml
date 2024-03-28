@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.silkfang ]
+inherit: [ mineinabyss:spawn.silkfang ]
 spawn.regions: [ layertwo ]
 

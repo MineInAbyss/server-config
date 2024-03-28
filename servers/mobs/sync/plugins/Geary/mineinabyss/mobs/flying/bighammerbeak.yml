@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [mineinabyss:hostile_flying]
+inherit: [mineinabyss:hostile_flying]
 set.mythicMob: bighammerbeak
 displayName: "<#613F0C>Big Hammerbeak"
 drop:

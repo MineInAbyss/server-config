@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:hostile ]
+inherit: [ mineinabyss:hostile ]
 displayName: "<dark_green>Tesuchi"
 set.*:
   modelengineModel:

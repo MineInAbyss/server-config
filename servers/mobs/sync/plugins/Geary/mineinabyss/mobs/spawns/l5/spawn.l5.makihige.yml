@@ -1,4 +1,3 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.makihige ]
+inherit: [ mineinabyss:spawn.makihige ]
 spawn.regions: [ layerfive ]

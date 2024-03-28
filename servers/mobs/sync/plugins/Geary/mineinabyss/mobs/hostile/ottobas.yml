@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:hostile ]
+inherit: [ mineinabyss:hostile ]
 displayName: "<#D8D8D8>Ottobas"
 set.*:
   modelengineModel:

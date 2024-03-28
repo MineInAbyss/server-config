@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.splitjaw ]
+inherit: [ mineinabyss:spawn.splitjaw ]
 spawn.*:
   priority: 0.3
   regions: [ layerone ]

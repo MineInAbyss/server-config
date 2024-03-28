@@ -1,4 +1,3 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.onitsuchi ]
+inherit: [ mineinabyss:spawn.onitsuchi ]
 spawn.regions: [ layerfive ]

@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.fuwagi ]
+inherit: [ mineinabyss:spawn.fuwagi ]
 spawn.regions: [ layertwo ]
 

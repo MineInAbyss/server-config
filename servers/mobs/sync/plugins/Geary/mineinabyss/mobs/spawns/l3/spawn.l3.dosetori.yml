@@ -1,4 +1,3 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.dosetori ]
+inherit: [ mineinabyss:spawn.dosetori ]
 spawn.regions: [ layerthree ]

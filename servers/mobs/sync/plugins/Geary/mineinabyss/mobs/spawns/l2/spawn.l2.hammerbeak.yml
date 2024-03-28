@@ -1,4 +1,3 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.bighammerbeak ]
+inherit: [ mineinabyss:spawn.bighammerbeak ]
 spawn.regions: [ layertwo ]

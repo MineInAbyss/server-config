@@ -1,6 +1,5 @@
 namespaces: [geary, mineinabyss, looty]
-inherit:
-  from: [mineinabyss:sickle]
+inherit: [mineinabyss:sickle]
 set.item:
   item:
     displayName: <#63614E>Wooden Sickle

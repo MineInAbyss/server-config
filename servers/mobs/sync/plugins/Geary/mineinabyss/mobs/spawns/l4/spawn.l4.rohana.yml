@@ -1,6 +1,5 @@
 namespaces: [geary, mobzy, looty]
-inherit:
-  from: [ mineinabyss:spawn.rohana ]
+inherit: [ mineinabyss:spawn.rohana ]
 spawn.*:
   amount: 3..5
   spread: 1

@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit:
-  from: [ mineinabyss:passive ]
+inherit: [ mineinabyss:passive ]
 displayName: "<#D63624>Chimokami"
 set.*:
   modelengineModel:
