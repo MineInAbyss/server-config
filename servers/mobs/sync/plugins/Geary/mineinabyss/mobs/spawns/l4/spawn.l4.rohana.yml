@@ -1,9 +1,7 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.rohana ]
-spawn.amount:
-  amount: 3..5
-spawn.spread:
-  radius: 1
+spawn.amount: 3..5
+spawn.spread: 1
 spawn_regions:
   keys: [ layerfour ]

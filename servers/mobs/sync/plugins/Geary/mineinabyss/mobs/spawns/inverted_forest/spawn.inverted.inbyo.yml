@@ -1,12 +1,10 @@
 namespaces: [geary, mobzy, looty]
 spawn.type:
   prefab: mineinabyss:inbyo
-spawn.amount:
-  amount: 4..8
+spawn.amount: 4..8
 spawn_regions:
   keys: [ l2s2 ]
-spawn.spread:
-  radius: 10
+spawn.spread: 10
 spawn.priority:
   priority: 0.4
 check.spawn.local_group:

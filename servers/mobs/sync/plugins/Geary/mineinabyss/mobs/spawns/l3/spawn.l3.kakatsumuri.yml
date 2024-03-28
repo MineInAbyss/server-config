@@ -3,10 +3,8 @@ spawn.type:
   prefab: mineinabyss:kakatsumuri
 spawn_regions:
   keys: [ layerthree ]
-spawn.amount:
-  amount: 1..3
-spawn.spread:
-  radius: 20
+spawn.amount: 1..3
+spawn.spread: 20
 check.spawn.local_group:
   max: 8
   radius: 128

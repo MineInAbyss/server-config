@@ -3,10 +3,8 @@ spawn_regions:
   keys: [ layerfive ]
 spawn.type:
   prefab: mineinabyss:abyssal_snail
-spawn.amount:
-  amount: 1..3
-spawn.spread:
-  radius: 10
+spawn.amount: 1..3
+spawn.spread: 10
 spawn.priority:
   priority: 0.3
 check.spawn.local_group:

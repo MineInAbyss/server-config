@@ -3,10 +3,8 @@ spawn.type:
   prefab: mineinabyss:okibo
 spawn_regions:
   keys: [ orth ]
-spawn.amount:
-  amount: 1..2
-spawn.spread:
-  radius: 6
+spawn.amount: 1..2
+spawn.spread: 6
 spawn.priority:
   priority: 0.2
 check.spawn.local_group:

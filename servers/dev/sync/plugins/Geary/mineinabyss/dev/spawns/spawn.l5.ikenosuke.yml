@@ -3,10 +3,8 @@ spawn_regions:
   keys: [ layerfive ]
 spawn.type:
   prefab: mineinabyss:ikenosuke
-spawn.amount:
-  amount: 1..4
-spawn.spread:
-  radius: 1
+spawn.amount: 1..4
+spawn.spread: 1
 spawn.priority:
   priority: 0.6
 check.spawn.local_group:

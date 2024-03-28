@@ -3,10 +3,8 @@ spawn_regions:
   keys: [ layerfive ]
 spawn.type:
   prefab: mineinabyss:ashimite
-spawn.amount:
-  amount: 3..5
-spawn.spread:
-  radius: 10
+spawn.amount: 3..5
+spawn.spread: 10
 spawn.priority:
   priority: 0.3
 check.spawn.local_group:
