@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.cyatoria ]
-spawn_regions:
-  keys: [ layerone ]
+spawn.regions: [ layerone ]

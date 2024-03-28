@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.leaflizard ]
-spawn_regions:
-  keys: [ layertwo ]
+spawn.regions: [ layertwo ]

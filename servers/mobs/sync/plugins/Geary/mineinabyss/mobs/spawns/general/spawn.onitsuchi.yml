@@ -1,9 +1,7 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:onitsuchi
+spawn.type: mineinabyss:onitsuchi
 spawn.position: AIR
-spawn.priority:
-  priority: 0.1
+spawn.priority: 0.1
 check.spawn.local_group:
   max: 2
   radius: 256

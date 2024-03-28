@@ -1,10 +1,8 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:rohana
+spawn.type: mineinabyss:rohana
 spawn.amount: 1..4
 spawn.spread: 20
-spawn.priority:
-  priority: 0.4
+spawn.priority: 0.4
 check.spawn.local_group:
   max: 12
   radius: 128

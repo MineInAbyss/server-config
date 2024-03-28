@@ -1,11 +1,9 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:madokajack
+spawn.type: mineinabyss:madokajack
 spawn.position: AIR
 check.spawn.local_group:
   max: 2
   radius: 192
 check.spawn.gap:
   range: 10..4096
-spawn_regions:
-  keys: [ layerthree ]
+spawn.regions: [ layerthree ]

@@ -3,5 +3,4 @@ inherit:
   from: [ mineinabyss:spawn.rohana ]
 spawn.amount: 3..5
 spawn.spread: 1
-spawn_regions:
-  keys: [ layerfour ]
+spawn.regions: [ layerfour ]

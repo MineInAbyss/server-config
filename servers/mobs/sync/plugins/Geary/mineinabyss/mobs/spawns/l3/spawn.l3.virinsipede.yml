@@ -1,8 +1,6 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:virinsipede
-spawn_regions:
-  keys: [ layerthree ]
+spawn.type: mineinabyss:virinsipede
+spawn.regions: [ layerthree ]
 spawn.amount: 1..2
 spawn.spread: 10
 check.spawn.local_group:

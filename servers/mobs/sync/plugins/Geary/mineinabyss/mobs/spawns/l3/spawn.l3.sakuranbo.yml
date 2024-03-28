@@ -1,8 +1,6 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:sakuranbo
-spawn_regions:
-  keys: [ layerthree ]
+spawn.type: mineinabyss:sakuranbo
+spawn.regions: [ layerthree ]
 spawn.amount: 1..3
 spawn.spread: 10
 check.spawn.local_group:

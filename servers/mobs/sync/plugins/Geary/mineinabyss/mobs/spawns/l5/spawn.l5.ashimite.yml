@@ -1,12 +1,9 @@
 namespaces: [geary, mobzy, looty]
-spawn_regions:
-  keys: [ layerfive ]
-spawn.type:
-  prefab: mineinabyss:ashimite
+spawn.regions: [ layerfive ]
+spawn.type: mineinabyss:ashimite
 spawn.amount: 3..5
 spawn.spread: 10
-spawn.priority:
-  priority: 0.3
+spawn.priority: 0.3
 check.spawn.local_group:
   max: 4
   radius: 128

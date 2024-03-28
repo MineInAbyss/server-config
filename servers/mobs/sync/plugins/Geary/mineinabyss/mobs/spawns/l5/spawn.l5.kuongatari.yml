@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.kuongatari ]
-spawn_regions:
-  keys: [ layerfive ]
+spawn.regions: [ layerfive ]

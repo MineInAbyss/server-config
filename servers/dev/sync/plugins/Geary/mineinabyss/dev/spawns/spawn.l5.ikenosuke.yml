@@ -1,12 +1,9 @@
 namespaces: [geary, mobzy, looty]
-spawn_regions:
-  keys: [ layerfive ]
-spawn.type:
-  prefab: mineinabyss:ikenosuke
+spawn.regions: [ layerfive ]
+spawn.type: mineinabyss:ikenosuke
 spawn.amount: 1..4
 spawn.spread: 1
-spawn.priority:
-  priority: 0.6
+spawn.priority: 0.6
 check.spawn.local_group:
   max: 6
   radius: 128

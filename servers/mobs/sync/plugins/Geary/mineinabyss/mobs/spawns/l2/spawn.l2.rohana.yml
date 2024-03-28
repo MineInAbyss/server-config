@@ -1,8 +1,7 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.rohana ]
-spawn_regions:
-  keys: [ layertwo ]
+spawn.regions: [ layertwo ]
 check.spawn.local_group:
   max: 3
   radius: 128

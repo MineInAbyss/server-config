@@ -1,8 +1,7 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.yomotsubi ]
-spawn_regions:
-  keys: [ layertwo ]
+spawn.regions: [ layertwo ]
 check.spawn.local_group:
   max: 2
   radius: 180

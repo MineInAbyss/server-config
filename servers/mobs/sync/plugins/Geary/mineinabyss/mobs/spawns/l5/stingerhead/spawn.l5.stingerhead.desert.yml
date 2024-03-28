@@ -1,8 +1,7 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.stingerhead.base ]
-spawn_regions:
-  keys: [ stingerheadsanddesert ]
+spawn.regions: [ stingerheadsanddesert ]
 check.blockType:
   allow:
     - SOUL_SOIL

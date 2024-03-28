@@ -1,5 +1,4 @@
 namespaces: [geary, mobzy, looty]
 inherit:
   from: [ mineinabyss:spawn.kazura ]
-spawn_regions:
-  keys: [ layerfour ]
+spawn.regions: [ layerfour ]

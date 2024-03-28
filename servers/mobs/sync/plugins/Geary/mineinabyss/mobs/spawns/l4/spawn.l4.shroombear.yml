@@ -1,8 +1,6 @@
 namespaces: [geary, mobzy, looty]
-spawn_regions:
-  keys: [ layerfour ]
-spawn.type:
-  prefab: mineinabyss:shroombear
+spawn.regions: [ layerfour ]
+spawn.type: mineinabyss:shroombear
 spawn.amount: 1..3
 spawn.spread: 10
 check.spawn.local_group:

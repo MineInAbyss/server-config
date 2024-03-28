@@ -1,12 +1,9 @@
 namespaces: [geary, mobzy, looty]
-spawn_regions:
-  keys: [ layerfive ]
-spawn.type:
-  prefab: mineinabyss:swamshocker
+spawn.regions: [ layerfive ]
+spawn.type: mineinabyss:swamshocker
 spawn.amount: 4..8
 spawn.spread: 1
-spawn.priority:
-  priority: 0.6
+spawn.priority: 0.6
 check.spawn.local_group:
   max: 8
   radius: 128

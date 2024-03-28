@@ -1,12 +1,9 @@
 namespaces: [geary, mobzy, looty]
-spawn.type:
-  prefab: mineinabyss:beniguma
+spawn.type: mineinabyss:beniguma
 spawn.amount: 2..4
-spawn_regions:
-  keys: [ layerone ]
+spawn.regions: [ layerone ]
 spawn.spread: 10
-spawn.priority:
-  priority: 0.2
+spawn.priority: 0.2
 check.spawn.local_group:
   max: 4
   radius: 150
