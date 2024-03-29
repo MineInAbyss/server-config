@@ -1,5 +1,5 @@
 yomotsubi_airball:
-  Cooldown: 6
+  Cooldown: 8
   Conditions:
     - incombat true
     - offgcd true
@@ -10,7 +10,7 @@ yomotsubi_airball:
     - state{s=wingsbrrr} @self
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
-    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=7;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
     - delay 20
 
 
@@ -20,7 +20,7 @@ yomotsubi_tick:
 
 yomotsubi_impact:
   Skills:
-    - effect:particles{p=hugeexplode;a=3;vs=0.5;hs=0.5;s=0;y=1} @Self
+    - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
     - throw{velocity=20;velocityY=5} @target
     - damage{a=10} @target
     - shieldbreak{duration=150} @target
