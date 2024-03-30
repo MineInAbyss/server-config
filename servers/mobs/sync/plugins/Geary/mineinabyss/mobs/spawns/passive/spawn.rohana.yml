@@ -3,7 +3,6 @@ spawn.*:
   type: mineinabyss:rohana
   amount: 1..4
   spread: 20
-  priority: 0.4
 check.*:
   spawn.local_group:
     max: 12

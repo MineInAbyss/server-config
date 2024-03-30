@@ -3,7 +3,7 @@ spawn.*:
   type: mineinabyss:okibo
   amount: 1..2
   spread: 6
-  priority: 0.2
+  # priority: 0.2
   regions: [ orth ]
 check.*:
   spawn.local_group:

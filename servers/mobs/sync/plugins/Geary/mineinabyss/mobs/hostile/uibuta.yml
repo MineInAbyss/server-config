@@ -1,5 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit: [ mineinabyss:hostile ]
+set.entityType: minecraft:iron_golem
 displayName: "<#8F2222>Uibuta"
 set.*:
   modelengineModel:

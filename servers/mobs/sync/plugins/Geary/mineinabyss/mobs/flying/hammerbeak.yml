@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:hostile_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: hammerbeak
 displayName: "<#613F0C>Hammerbeak"
 drop:
@@ -16,4 +16,4 @@ drop:
   - item: mineinabyss:hammerbeak_egg
     amount: 1..2
     dropChance: 0.4000
-sounds: {}
+sounds: { }

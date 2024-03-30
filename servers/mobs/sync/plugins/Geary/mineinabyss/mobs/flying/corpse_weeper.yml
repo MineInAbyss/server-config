@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:hostile_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: corpse_weeper
 displayName: "<#D12B26>Corpse-Weeper"
 drop:

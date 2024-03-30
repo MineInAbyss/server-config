@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:water_mob ]
 set.*:
   entityType: minecraft:squid
   modelengineModel:
@@ -11,7 +12,7 @@ drop:
   - exp: 15..20
   - item: mineinabyss:spiralsquid_raw
     cooked: mineinabyss:spiralsquid_cooked
-sounds: {}
+sounds: { }
 bucketable:
   bucketLiquidRequired: WATER
   bucketItem:

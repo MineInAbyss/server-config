@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: Stinger
 displayName: "<#03AC13>Stinger"
 drop:

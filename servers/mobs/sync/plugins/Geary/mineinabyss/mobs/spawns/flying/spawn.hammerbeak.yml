@@ -2,7 +2,7 @@ namespaces: [ geary, mobzy, looty ]
 spawn.*:
   type: mineinabyss:hammerbeak
   position: AIR
-  priority: 0.6
+  # priority: 0.6
   regions: [ layerone, layertwo ]
 check.*:
   spawn.local_group:

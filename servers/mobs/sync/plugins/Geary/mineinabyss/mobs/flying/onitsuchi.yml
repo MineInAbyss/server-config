@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:hostile_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: onitsuchi
 displayName: "<#5C471D>Onitsuchi"
 drop:
@@ -15,4 +15,4 @@ drop:
   - item: mineinabyss:onitsuchi_egg
     amount: 1..2
     dropChance: 0.5000
-sounds: {}
+sounds: { }

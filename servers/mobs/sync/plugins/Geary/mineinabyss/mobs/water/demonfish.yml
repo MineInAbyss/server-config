@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:water_mob ]
 displayName: "<#257BEB>Demonfish"
 set.*:
   mythicMob: demonfish
@@ -6,9 +7,9 @@ drop:
   - exp: 15..20
   - item: mineinabyss:demonfish_raw
     cooked: mineinabyss:demonfish_cooked
-sounds: {}
+sounds: { }
 bucketable:
   bucketLiquidRequired: WATER
   bucketItem:
     prefab: mineinabyss:demonfish_bucket
-prevent.breeding: {}
+prevent.breeding: { }

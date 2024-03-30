@@ -1,5 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-inherit: [ mineinabyss:passive ]
+inherit: [ mineinabyss:passive, mineinabyss:pig_base ]
 displayName: "<gold>Sakuranbo"
 set.*:
   modelengineModel:
@@ -17,7 +17,7 @@ set.*:
         avoid_player:
           radius: 10
         random_stroll_land:
-          priority: 10
+        # priority: 10
 drop:
   - exp: 10..20
   - item: mineinabyss:sakuranbo_dust

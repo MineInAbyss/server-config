@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:passive_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive, mineinabyss:allay_base ]
 spawn.position: GROUND
 set.mythicMob: rohana
 displayName: "Rohana"
@@ -17,4 +17,4 @@ drop:
   - item: mineinabyss:rohana_tail
     amount: 2
     dropChance: 0.4000
-sounds: {}
+sounds: { }

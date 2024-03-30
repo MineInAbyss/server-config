@@ -1,5 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
-set.entityType: minecraft:pig
+inherit: [ mineinabyss:passive, mineinabyss:pig_base ]
 displayName: "<#FF771C>Makihige"
 set.*:
   modelengineModel:

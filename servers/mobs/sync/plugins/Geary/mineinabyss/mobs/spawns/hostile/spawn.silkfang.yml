@@ -1,10 +1,12 @@
 namespaces: [ geary, mobzy, looty ]
 spawn.*:
   type: mineinabyss:silkfang
-  priority: 0.3
+  amount: 1..2
+  spread: 12
+  # priority: 0.3
 check.*:
   spawn.local_group:
-    max: 3
+    max: 4
     radius: 128
   spawn.gap: 3..4096
   spawn.delay:

@@ -1,15 +1,14 @@
 namespaces: [ geary, mobzy, looty ]
 spawn.*:
-  type: mineinabyss:kazura
-  amount: 1..3
+  regions: [ layerfive ]
+  type: mineinabyss:demonfish
+  amount: 2..4
   spread: 1
-  priority: 0.6
-  regions: [ layerfour, layerfive ]
+  # priority: 0.6
 check.*:
   spawn.local_group:
     max: 6
-    radius: 256
-  spawn.gap: 3..50
+    radius: 128
   blockType:
     allow:
       - WATER

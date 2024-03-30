@@ -1,6 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
 set.*:
-  entityType: minecraft:pig
   attributes:
     followRange: 10
     movementSpeed: 0.0

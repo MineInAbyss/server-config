@@ -1,8 +1,9 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive ]
 displayName: "<#85562D>Shroombear"
 set.*:
   mythicMob: shroombear
-prevent.breeding: {}
+prevent.breeding: { }
 drop:
   - exp: 15..20
   - item: mineinabyss:shroombear_meat_raw

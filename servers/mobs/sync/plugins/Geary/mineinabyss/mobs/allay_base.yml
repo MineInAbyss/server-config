@@ -1,0 +1,7 @@
+namespaces: [geary, mobzy, looty]
+set.burnInDay: false
+prevent.*:
+  interaction:
+    type: [ RIGHT_CLICK ]
+  regeneration:
+    reason: [ REGEN ]

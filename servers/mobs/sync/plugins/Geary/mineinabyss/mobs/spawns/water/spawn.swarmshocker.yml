@@ -1,13 +1,12 @@
 namespaces: [geary, mobzy, looty]
 spawn.*:
   regions: [ layerfive ]
-  type: mineinabyss:demonfish
-  amount: 2..4
+  type: mineinabyss:swamshocker
+  amount: 4..8
   spread: 1
-  priority: 0.6
 check.*:
   spawn.local_group:
-    max: 6
+    max: 8
     radius: 128
   blockType:
     allow:

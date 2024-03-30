@@ -2,7 +2,7 @@ namespaces: [geary, mobzy, looty]
 spawn.*:
   type: mineinabyss:stinger
   spread: 5
-  priority: 0.7
+  # priority: 0.7
 check.*:
   spawn.gap: 4..4096
   spawn.delay:

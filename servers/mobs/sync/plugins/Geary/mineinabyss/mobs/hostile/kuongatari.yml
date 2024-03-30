@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
 set.mythicMob: Kuongatari
 displayName: "<#1FB53D>Kuongatari"
 drop:

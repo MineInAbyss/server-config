@@ -1,6 +1,7 @@
 namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive ]
 displayName: "<#3C3B4A>Titanjaw"
-prevent.breeding: {}
+prevent.breeding: { }
 set.*:
   mythicMob: titanjaw
 drop:

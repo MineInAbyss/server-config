@@ -5,9 +5,9 @@ spawn.*:
   amount: 1..2
   spread: 10
 check.*:
-  spawn.local_group:
-    max: 3
-    radius: 128
+#  spawn.local_group:
+#    max: 3
+#    radius: 128
   spawn.gap: 2..4096
   blockType:
     allow:

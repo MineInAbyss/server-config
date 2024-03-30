@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:passive]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive, mineinabyss:pig_base ]
 displayName: "<red>Beniguma"
 set.*:
   modelengineModel:
@@ -25,4 +25,4 @@ drop:
   - item: minecraft:sweet_berries
     amount: 3
     dropChance: 0.5000
-sounds: {}
+sounds: { }

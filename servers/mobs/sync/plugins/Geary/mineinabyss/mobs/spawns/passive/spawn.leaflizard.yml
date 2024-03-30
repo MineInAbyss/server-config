@@ -1,3 +1,10 @@
 namespaces: [geary, mobzy, looty]
-# TODO this was missing a base mob
-spawn.regions: [ layerone, layertwo ]
+spawn.*:
+  regions: [ layerone, layertwo ]
+  type: mineinabyss:leaflizard
+  amount: 3
+  spread: 12
+check.*:
+  blockType:
+    allow:
+      - GRASS_BLOCK

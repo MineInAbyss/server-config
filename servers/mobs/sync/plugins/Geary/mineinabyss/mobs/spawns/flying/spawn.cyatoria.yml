@@ -4,7 +4,7 @@ spawn.*:
   position: AIR
   amount: 1..3
   spread: 10
-  priority: 0.8
+  priority: 0.3
   regions: [ layerone, layertwo ]
 check.*:
   spawn.local_group:

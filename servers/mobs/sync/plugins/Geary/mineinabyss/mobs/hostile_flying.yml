@@ -1,7 +1,4 @@
 namespaces: [ geary, mobzy, looty ]
-set.burnInDay: false
-prevent.*:
-  interaction:
-    type: [ RIGHT_CLICK ]
-  regeneration:
-    reason: [ REGEN ]
+inherit: [ mineinabyss:allay_base ]
+set.*:
+  remove_when_far_away: true

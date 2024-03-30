@@ -3,7 +3,7 @@ spawn.*:
   type: mineinabyss:yomotsubi
   amount: 1
   spread: 4
-  priority: 0.6
+  priority: 15
 check.*:
   spawn.local_group:
     max: 4
@@ -11,6 +11,9 @@ check.*:
   spawn.gap: 3..4096
   spawn.delay:
     attemptEvery: 5s
+  blockType:
+    allow: [ GRASS_BLOCK ]
+
 
 instances:
   spawn.yomotsubi.l2:

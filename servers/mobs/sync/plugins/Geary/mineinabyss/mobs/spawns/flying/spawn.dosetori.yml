@@ -2,7 +2,7 @@ namespaces: [ geary, mobzy, looty ]
 spawn.*:
   type: mineinabyss:dosetori
   position: AIR
-  priority: 0.4
+  # priority: 0.4
   regions: [ layerthree ]
 check.*:
   spawn.local_group:

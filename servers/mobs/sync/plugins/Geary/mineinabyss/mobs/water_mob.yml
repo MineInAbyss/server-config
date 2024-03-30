@@ -1,4 +1,3 @@
 namespaces: [geary, mobzy, looty]
 set.*:
-  burnInDay: false
   remove_when_far_away: true

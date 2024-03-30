@@ -3,7 +3,7 @@ spawn.*:
   type: mineinabyss:beniguma
   amount: 2..4
   spread: 10
-  priority: 0.2
+  # priority: 0.2
   regions: [ layerone ]
 check.*:
   spawn.local_group:

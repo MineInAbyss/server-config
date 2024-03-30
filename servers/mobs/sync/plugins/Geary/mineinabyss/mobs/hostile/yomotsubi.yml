@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
 set.mythicMob: yomotsubi
 displayName: "<#FF0000>Yomotsubi"
 drop:

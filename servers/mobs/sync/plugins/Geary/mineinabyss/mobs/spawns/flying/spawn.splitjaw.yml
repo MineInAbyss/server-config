@@ -2,7 +2,7 @@ namespaces: [ geary, mobzy, looty ]
 spawn.*:
   type: mineinabyss:splitjaw
   position: AIR
-  priority: 0.8
+  priority: 5
 check.*:
   spawn.local_group:
     max: 1
@@ -12,7 +12,6 @@ check.*:
 instances:
   spawn.splitjaw.l1:
     spawn.*:
-      priority: 0.3
       regions: [ layerone ]
     check.spawn.local_group:
       max: 1

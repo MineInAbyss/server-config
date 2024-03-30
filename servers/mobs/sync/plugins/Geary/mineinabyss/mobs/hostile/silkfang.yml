@@ -1,4 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
 set.mythicMob: silkfang
 display_name: "<#116AAD>Silkfang"
 sounds: { }

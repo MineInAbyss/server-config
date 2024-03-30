@@ -4,11 +4,11 @@ spawn.*:
   amount: 4..8
   regions: [ l2s2 ] # inverted forest
   spread: 10
-  priority: 0.4
+  # priority: 0.4
 check.*:
-  spawn.local_group:
-    max: 8
-    radius: 160
+#  spawn.local_group:
+#    max: 8
+#    radius: 160
   spawn.gap: 4..4096
   blockType:
     allow:

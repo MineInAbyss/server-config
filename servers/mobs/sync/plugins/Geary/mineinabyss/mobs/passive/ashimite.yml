@@ -1,4 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive, mineinabyss:pig_base ]
 set.*:
   mythicMob: ashimite
   woolColor: LIGHT_BLUE

@@ -2,7 +2,7 @@ namespaces: [geary, mobzy, looty]
 spawn.*:
   type: mineinabyss:corpse_weeper
   regions: [ layertwo ]
-  priority: 0.6
+  priority: 0.1
 check.*:
   spawn.gap: 20..4096
   spawn.local_group:

@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive, mineinabyss:pig_base ]
 set.*:
   entityType: minecraft:armor_stand
   modelengineModel:
@@ -14,4 +15,4 @@ drop:
     amount: 2
   - item: mineinabyss:baracocha_fruit
     amount: 5
-sounds: {}
+sounds: { }

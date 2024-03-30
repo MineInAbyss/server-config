@@ -2,14 +2,14 @@ namespaces: [geary, mobzy, looty]
 spawn.*:
   type: mineinabyss:orbpiercer
   regions: [ layerfour ]
-  priority: 0.9
+  priority: 1
 check.*:
   spawn.local_group:
     max: 1
     radius: 320
   spawn.gap: 10..4096
   spawn.delay:
-    attemptEvery: 4s
+    perPlayer: 4s
   blockType:
     allow:
       - WATER

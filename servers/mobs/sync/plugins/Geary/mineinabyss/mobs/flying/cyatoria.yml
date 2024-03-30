@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:hostile_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile_flying ]
 set.mythicMob: cyatoria
 displayName: "<#3DDFFF>Cyatoria"
 drop:
@@ -10,4 +10,4 @@ drop:
   - item: mineinabyss:cyatoria_feather
     amount: 1..4
     dropChance: 0.7000
-sounds: {}
+sounds: { }

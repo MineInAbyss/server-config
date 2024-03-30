@@ -1,4 +1,5 @@
 namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
 set.mythicMob: Stingerhead
 displayName: "<#9C0F2C>Stingerhead"
 drop:

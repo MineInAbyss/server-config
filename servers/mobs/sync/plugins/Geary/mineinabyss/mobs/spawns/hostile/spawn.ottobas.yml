@@ -5,9 +5,9 @@ spawn.*:
   spread: 6
   regions: [ layertwo ]
 check.*:
-  spawn.local_group:
-    max: 2
-    radius: 160
+#  spawn.local_group:
+#    max: 2
+#    radius: 160
   spawn.gap: 5..4096
   blockType:
     allow:

@@ -1,5 +1,5 @@
-namespaces: [geary, mobzy, looty]
-inherit: [mineinabyss:passive_flying]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:passive, mineinabyss:allay_base ]
 set.mythicMob: hashofu
 displayName: "<#454545>Hashofu"
 drop:
@@ -12,4 +12,4 @@ drop:
     amount: 2
   - item: mineinabyss:hashofu_body
     amount: 1..3
-sounds: {}
+sounds: { }

@@ -1,4 +1,5 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
 set.mythicMob: OrbPiercer
 displayName: "<#C74040>Orb Piercer"
 drop:
