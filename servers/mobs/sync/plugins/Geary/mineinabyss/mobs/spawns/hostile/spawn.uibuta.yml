@@ -1,12 +1,13 @@
 namespaces: [geary, mobzy, looty]
+inherit: [ mineinabyss:spawn.hostile_base ]
 spawn.*:
   type: mineinabyss:uibuta
-  amount: 1..2
-  spread: 10
+  amount: 1
+  priority: 10
   regions: [ layerfour ]
 check.*:
   spawn.local_group:
-    max: 2
+    max: 4
     radius: 192
   spawn.gap: 5..4096
   blockType:

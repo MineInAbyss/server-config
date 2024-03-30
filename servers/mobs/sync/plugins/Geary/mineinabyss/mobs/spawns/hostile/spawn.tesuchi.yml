@@ -1,4 +1,5 @@
 namespaces: [geary, mobzy, looty]
+inherit: [ mineinabyss:spawn.hostile_base ]
 spawn.*:
   type: mineinabyss:tesuchi
   amount: 1..3

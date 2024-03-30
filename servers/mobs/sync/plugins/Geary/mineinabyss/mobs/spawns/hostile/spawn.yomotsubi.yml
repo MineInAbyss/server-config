@@ -1,9 +1,10 @@
 namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:spawn.hostile_base ]
 spawn.*:
   type: mineinabyss:yomotsubi
   amount: 1
   spread: 4
-  priority: 15
+  priority: 20
 check.*:
   spawn.local_group:
     max: 4
