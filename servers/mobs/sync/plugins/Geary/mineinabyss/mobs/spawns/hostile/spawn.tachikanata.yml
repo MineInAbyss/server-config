@@ -1,0 +1,16 @@
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:spawn.hostile_base ]
+spawn.*:
+  type: mineinabyss:tachikanata
+  amount: 1
+  regions: [ layerfour, layerfive ]
+check.*:
+#  spawn.local_group:
+#    max: 4
+#    radius: 200
+  spawn.gap: 3..4096
+  spawn.delay:
+    attemptEvery: 5s
+  blockType:
+    allow:
+      - GRASS_BLOCK
