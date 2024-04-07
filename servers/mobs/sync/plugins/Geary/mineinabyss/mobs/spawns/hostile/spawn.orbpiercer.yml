@@ -10,7 +10,7 @@ check.*:
     radius: 320
   spawn.gap: 10..4096
   spawn.delay:
-    perPlayer: 4s
+    attemptEvery: 4s
   blockType:
     allow:
       - WATER

@@ -17,7 +17,7 @@ set.*:
         avoid_player:
           radius: 10
         random_stroll_land:
-        # priority: 10
+          priority: 10
 drop:
   - exp: 10..20
   - item: mineinabyss:sakuranbo_dust

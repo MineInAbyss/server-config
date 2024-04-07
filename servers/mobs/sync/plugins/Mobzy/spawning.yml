@@ -3,6 +3,7 @@ spawnCategories:
   mineinabyss:hostile:
     localMax: 30
     position: GROUND
+    minDistanceFromPlayer: 32
   mineinabyss:passive:
     localMax: 20
     every: 10t
