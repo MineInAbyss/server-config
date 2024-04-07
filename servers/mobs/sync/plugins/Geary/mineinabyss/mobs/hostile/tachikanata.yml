@@ -1,0 +1,14 @@
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:hostile ]
+set.mythicMob: tachikanata
+displayName: "<#00FFFF>tachikanata"
+drop:
+  - exp: 80..150
+  - item: mineinabyss:tachikanata_scale
+    amount: 1..2
+    dropChance: 0.6
+  - item: mineinabyss:tachikanata_leg
+    amount: 1..2
+  - item: mineinabyss:tachikanata_claw
+    amount: 1..2
+    dropChance: 0.4

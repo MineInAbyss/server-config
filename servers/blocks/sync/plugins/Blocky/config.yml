@@ -3,17 +3,17 @@ menus:
     title: ':space_-8::blocky_default_menu:'
     height: 3
     blockButton:
-      type: PAPER
+      type: minecraft:paper
       customModelData: 1
       displayName: <blue>B</blue><#5568ff>l</#5568ff><#557bff>o</#557bff><#558eff>c</#558eff><#55a1ff>k</#55a1ff><#55b3ff>
         </#55b3ff><#55c6ff>M</#55c6ff><#55d9ff>e</#55d9ff><#55ecff>n</#55ecff><aqua>u
     wireButton:
-      type: PAPER
+      type: minecraft:paper
       customModelData: 1
       displayName: <dark_green>W</dark_green><#0bb50b>i</#0bb50b><#15bf15>r</#15bf15><#20ca20>e</#20ca20><#2bd52b>
         </#2bd52b><#35df35>M</#35df35><#40ea40>e</#40ea40><#4af44a>n</#4af44a><green>u
     furnitureButton:
-      type: PAPER
+      type: minecraft:paper
       customModelData: 1
       displayName: <gold>F</gold><#ffb107>u</#ffb107><#ffb70d>r</#ffb70d><#ffbe14>n</#ffbe14><#ffc41a>i</#ffc41a><#ffcb21>t</#ffcb21><#ffd127>u</#ffd127><#ffd82e>r</#ffd82e><#ffde34>e</#ffde34><#ffe53b>
         </#ffe53b><#ffeb41>M</#ffeb41><#fff248>e</#fff248><#fff84e>n</#fff84e><yellow>u
@@ -33,7 +33,10 @@ noteBlocks:
 tripWires:
   isEnabled: true
 furniture:
-  showHitboxOutline: false
+  hitboxOutlines:
+    type: ITEM
+    item:
+      type: minecraft:glass
   worldEdit: false
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
@@ -46,8 +49,3 @@ stairBlocks:
 # If you wish to use vanilla sounds, set this to true
 # Keep in mind it disables all custom sounds from place/break/hit etc
 disableCustomSounds: false
-# This is for generating the Json files needed for MoreCreativeTabs
-# A mod that lets you customize the creative tabs in Minecraft
-# This will generate a resource-pack that will include tabs for all Blocky Blocks and Furniture
-MoreCreativeTabsMod:
-  generateJsonForMod: false

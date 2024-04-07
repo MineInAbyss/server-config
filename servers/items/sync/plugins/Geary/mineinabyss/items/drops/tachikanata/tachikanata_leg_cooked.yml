@@ -1,0 +1,26 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: PRISMARINE
+    displayName: <#00FFFF>tachikanata Claw
+    customModelData: 1
+    lore:
+      - <yellow>Obtained from slaying
+      - <yellow>a <#00FFFF>tachikanata <yellow>found in
+      - <yellow>nests in the <green>Sea of Corpses<yellow>.
+      - <yellow>Tastes like crab!
+      - <yellow>I should probably cook this...
+food:
+  saturation: 9.6
+  hunger: 8
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input: mineinabyss:tachikanata_leg
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input: mineinabyss:tachikanata_leg
+      experience: 2f
+      cookingTime: 50

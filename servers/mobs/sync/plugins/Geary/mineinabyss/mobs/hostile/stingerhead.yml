@@ -3,11 +3,13 @@ inherit: [ mineinabyss:hostile ]
 set.mythicMob: Stingerhead
 displayName: "<#9C0F2C>Stingerhead"
 drop:
-  - exp: 80..210
+  - exp: 80..150
   - item: mineinabyss:stingerhead_scale
     amount: 1..2
+    dropChance: 0.8
   - item: mineinabyss:stingerhead_flesh
     amount: 1..2
+    dropChance: 0.8
   - item: mineinabyss:stingerhead_eye
     amount: 1..2
     dropChance: 0.4

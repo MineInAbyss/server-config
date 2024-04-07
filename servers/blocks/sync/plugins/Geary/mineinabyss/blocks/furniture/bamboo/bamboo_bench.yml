@@ -21,10 +21,10 @@ furniture:
       height: 2.0
     - width: 1.0
       height: 2.0
-      originOffset: { x: -1, y: 0, z: 0 }
+      origin: { x: -1, y: 0, z: 0 }
     - width: 1.0
       height: 2.0
-      originOffset: { x: 1, y: 0, z: 0 }
+      origin: { x: 1, y: 0, z: 0 }
 placableOn:
   floor: true
   ceiling: false
