@@ -1,8 +1,7 @@
 namespaces: [ geary, mobzy, looty ]
 spawn.*:
   type: mineinabyss:makihige
-  amount: 1..3
-  spread: 20
+  amount: 1
   regions: [ layerfour, layerfive ]
 check.*:
   spawn.local_group:

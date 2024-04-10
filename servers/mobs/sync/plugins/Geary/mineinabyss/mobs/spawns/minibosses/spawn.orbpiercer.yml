@@ -3,7 +3,7 @@ inherit: [ mineinabyss:spawn.hostile_base ]
 spawn.*:
   type: mineinabyss:orbpiercer
   regions: [ layerfour ]
-  priority: 1
+  priority: 2
 check.*:
   spawn.local_group:
     max: 1

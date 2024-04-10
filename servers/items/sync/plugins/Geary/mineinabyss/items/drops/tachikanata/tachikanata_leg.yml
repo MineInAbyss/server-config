@@ -13,9 +13,6 @@ set.item:
 food:
   saturation: 3
   hunger: 3
-food:
-  saturation: 9.6
-  hunger: 6
 set.recipes:
   discoverRecipes: true
   recipes:

@@ -4,6 +4,7 @@ spawn.*:
   type: mineinabyss:uibuta
   amount: 1
   priority: 10
+  spread: 20 # We want it to spawn near water, not just in it
   regions: [ layerfour ]
 check.*:
   spawn.local_group:
