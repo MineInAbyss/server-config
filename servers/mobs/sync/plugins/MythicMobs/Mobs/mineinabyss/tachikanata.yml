@@ -42,7 +42,7 @@ tachikatana:
     #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
 
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-    - skill{s=tachiATTACK} @self ~onAttack
+    - skill{s=tachiATTACK;sync=true} @self ~onAttack
     - skill{s=tachi_PROJ} @target ~onTimer:20
     - skill{s=tachishockwave} @target ~onTimer:20
     - skill{s=tachiAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

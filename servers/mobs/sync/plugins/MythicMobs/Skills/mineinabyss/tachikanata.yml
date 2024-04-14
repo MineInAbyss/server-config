@@ -53,6 +53,7 @@ tachi_PROJ:
   Skills:
     - gcd{ticks=200}
     - state{s=proj_attack} @self
+    - setAI{ai=false} @self
     - potion{type=SLOW;duration=60;level=5;p=false;force=true} @Self
     - delay 20
     - projectile{onTick=warden_proj;onHit=tachi_impact;v=15;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1;origin=@modelpart{mid=tachikatana;pid=l_claw_hinge;location=0,1,0};fromorigin=true} @target
@@ -60,6 +61,7 @@ tachi_PROJ:
     - delay 10
     - projectile{onTick=warden_proj;onHit=tachi_impact;v=15;i=3;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1;origin=@modelpart{mid=tachikatana;pid=r_claw_hinge;location=0,1,0};fromorigin=true} @target
     - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.1.9to2.0>;v=1.5} @self
+    - setAI{ai=true} @self
 warden_proj:
   Skills:
     - effect:particles{particle=sonic_boom;amount=15}
@@ -82,12 +84,12 @@ tachishockwave:
   - delay 5
   - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
   - delay 20
+  - setAI{ai=false} @self
   - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
   - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
 
   #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
   - potion{type=DAMAGE_RESISTANCE;duration=130;level=1;p=false} @self
-  - setAI{ai=false} @self
   - skill{s=tachicircle;repeat=20;repeati=4} @Self
   - delay 36
   - skill{s=tachishock} @Self
