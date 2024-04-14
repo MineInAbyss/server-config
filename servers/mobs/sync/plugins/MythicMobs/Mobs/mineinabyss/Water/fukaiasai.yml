@@ -1,4 +1,4 @@
-hisoishi:
+fukaiasai:
   Type: COD
   Modules:
     ThreatTable: true
@@ -23,7 +23,7 @@ hisoishi:
 
   Skills:
   ####### Misc
-  - model{mid=hisoishi} @self ~onSpawn
+  - model{mid=fukaiasai} @self ~onSpawn
   - sound{s=entity.glow_squid.hurt;sc=master;p=1.95;v=0.65;cd=0.5} @self ~onHurt 0.8
   - sound{s=entity.glow_squid.ambient;sc=master;p=1.95;v=0.45;cd=0.5;delay=<random.0to13>} @self ~onTimer:137 0.55
   - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath

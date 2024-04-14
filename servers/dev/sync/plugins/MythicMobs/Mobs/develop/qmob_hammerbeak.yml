@@ -1,4 +1,4 @@
-qmob_hammerbeakLarge:
+bighammerbeak:
   Type: VINDICATOR
   Display: 'Giant Hammerbeak'  # change this
   Modules:
@@ -13,7 +13,7 @@ qmob_hammerbeakLarge:
   AITargetSelectors:
   - clear
   - players
-  - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
+ # - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
   Faction: hammerbeaks
   Health: 50 # change this
   Damage: 0 # keep this 0
@@ -51,7 +51,7 @@ qmob_hammerbeakLarge:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
 
-qmob_hammerbeak:
+smallhammerbeak:
   Type: VINDICATOR
   Display: 'Hammerbeak'  # change this
   Modules:
@@ -66,7 +66,7 @@ qmob_hammerbeak:
   AITargetSelectors:
   - clear
   - players
-  - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
+ # - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
   Faction: hammerbeaks
   Health: 30 # change this
   Damage: 0 # keep this 0
@@ -105,46 +105,3 @@ qmob_hammerbeak:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
 
-qmob_hammerbeakCorpse:
-  Type: ARMOR_STAND
-  Display: 'Hammerbeak Corpse'
-  Options:
-    Interactable: false
-    NoGravity: false
-    HasGravity: true
-    KnockbackResistance: 1.0
-    Invisible: true
-    Small: true
-  Skills:
-  - model{mid=qmob_hammerbeakCorpse} @self ~onSpawn
-  - remove{delay=1200} @self ~onSpawn
-  - effect:particles{particle=white_ash;a=30;hs=0.9;vs=0.5;repeat=1;repeatInterval=5} @self ~onSpawn
-  - effect:particles{particle=cloud;a=50;hs=0.9;vs=0.5;repeat=1;repeatInterval=5} @self ~onSpawn
-  - effect:particles{particle=white_ash;a=10;hs=0.5;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - effect:particles{particle=cloud;a=20;hs=0.5;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - sound{s=block.candle.extinguish;sc=master;p=<random.float.1.9to2.0>;v=1.1;delay=1195} @self ~onSpawn
-  - sound{s=block.fire.extinguish;sc=master;p=<random.float.0.6to0.7>;v=0.8;delay=1195} @self ~onSpawn
-  - skill{s=hammerbeakHarvest} @self ~onInteract ?~holding{m=SHEARS}
-  - state{s=death;lo=0;li=0;speed=10.0} @self ~onSpawn
-
-qmob_hammerbeakSmallCorpse:
-  Type: ARMOR_STAND
-  Display: 'Hammerbeak Corpse'
-  Options:
-    Interactable: false
-    NoGravity: false
-    HasGravity: true
-    KnockbackResistance: 1.0
-    Invisible: true
-    Small: true
-  Skills:
-  - model{mid=qmob_hammerbeakSmallCorpse} @self ~onSpawn
-  - remove{delay=1200} @self ~onSpawn
-  - effect:particles{particle=white_ash;a=10;hs=0.2;vs=0.2} @self ~onSpawn
-  - effect:particles{particle=cloud;a=20;hs=0.2;vs=0.2} @self ~onSpawn
-  - effect:particles{particle=white_ash;a=10;hs=0.2;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - effect:particles{particle=cloud;a=20;hs=0.2;vs=0.1;delay=1195;repeat=4;repeatInterval=1} @self ~onSpawn
-  - sound{s=block.candle.extinguish;sc=master;p=<random.float.1.9to2.0>;v=1.1;delay=1195} @self ~onSpawn
-  - sound{s=block.fire.extinguish;sc=master;p=<random.float.0.6to0.7>;v=0.8;delay=1195} @self ~onSpawn
-  - skill{s=hammerbeakHarvestSmall} @self ~onInteract ?~holding{m=SHEARS}
-  - state{s=death;lo=0;li=0;speed=10.0} @self ~onSpawn

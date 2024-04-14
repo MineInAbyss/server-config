@@ -1,14 +1,14 @@
 namespaces: [ geary, mobzy, looty ]
 inherit: [ mineinabyss:hostile_flying ]
-set.mythicMob: bighammerbeak
-displayName: "<#613F0C>Big Hammerbeak"
+set.mythicMob: qmob_hammerbeak
+displayName: "<#613F0C>Giant Hammerbeak"
 drop:
   - exp: 25..45
   - item: mineinabyss:hammerbeak_wing_raw
     cooked: mineinabyss:hammerbeak_wing_cooked
     amount: 1..3
   - item: mineinabyss:hammerbeak_beak
-    amount: 2
+    amount: 1
     dropChance: 0.6000
   - item: mineinabyss:hammerbeak_feather
     amount: 1..3

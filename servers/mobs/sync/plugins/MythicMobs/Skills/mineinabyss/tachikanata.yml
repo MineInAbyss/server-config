@@ -1,16 +1,11 @@
 tachiATTACK:
-  Cooldown: 2.5
   Conditions:
-      - offgcd
-      - targetwithin{d=5} true
   Skills:
-      - gcd{ticks=50} @self
       - CancelEvent
       - skill{s=tachiATTACKskill} @self
-
 tachiATTACKskill:
   Conditions:
-  Cooldown: 0
+  Cooldown: 3
   Skills:
     - state{s=swipe_attack;li=3;lo=2} @self 
     - delay 20

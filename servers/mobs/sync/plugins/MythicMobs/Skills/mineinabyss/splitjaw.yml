@@ -72,6 +72,7 @@ SJ_dashmiss:
 
 sj_roar:
   Conditions:
+    - incombat true
     - offgcd
   Cooldown: 20
   Skills:
@@ -81,10 +82,10 @@ sj_roar:
     - delay 10
     - skill{s=sj_shake;repeat=6;repeatInterval=8} @pir{r=25}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
+    - effect:sound{s=entity.polar_bear.warning;v=1.2;p=1} @self
+    - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.7} @self
     - delay 1
     - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
     - delay 55
