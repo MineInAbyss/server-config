@@ -25,7 +25,7 @@ tachikatana:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
   Model:
-    Id: orbpiercer
+    Id: tachikatana
     ViewRadius: 64
     Drive: false
     DamageTint: true
@@ -34,15 +34,17 @@ tachikatana:
     - PROJECTILE 0.25
     - SUFFOCATION 0
   Skills:
-    - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
-    - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+   # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
+    #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
 #    - skill{s=orbpiercer_speed} @self ~onSpawn
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
-    - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
-    - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+    #- sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
+    #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
     - skill{s=tachiATTACK} @self ~onAttack
     - skill{s=tachi_PROJ} @target ~onTimer:20
     - skill{s=tachishockwave} @target ~onTimer:20
+    - skill{s=tachiAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tachiHurt} @self ~onHurt
     #- skill{s=Changetarget} ~onTimer:160 <99%
     - dismount ~onDamaged
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
