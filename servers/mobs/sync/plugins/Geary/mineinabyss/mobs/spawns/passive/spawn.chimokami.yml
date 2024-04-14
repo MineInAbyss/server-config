@@ -5,9 +5,6 @@ spawn.*:
   regions: [ layertwo ]
   spread: 10
 check.*:
-  spawn.local_group:
-    max: 4
-    radius: 128
   spawn.gap: 5..4096
   #time:
   #  min: 13000

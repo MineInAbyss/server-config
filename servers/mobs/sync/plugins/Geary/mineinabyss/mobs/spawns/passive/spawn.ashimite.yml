@@ -4,11 +4,8 @@ spawn.*:
   type: mineinabyss:ashimite
   amount: 3..5
   spread: 10
-  # priority: 0.3
+  priority: 50
 check.*:
-  spawn.local_group:
-    max: 4
-    radius: 128
   spawn.gap: 5..4096
   blockType:
     allow:

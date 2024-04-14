@@ -4,6 +4,7 @@ spawn.*:
   type: mineinabyss:leaflizard
   amount: 3
   spread: 12
+  priority: 50
 check.*:
   blockType:
     allow:

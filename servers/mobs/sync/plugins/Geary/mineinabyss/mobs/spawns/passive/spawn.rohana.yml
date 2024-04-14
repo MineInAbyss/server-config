@@ -14,7 +14,9 @@ check.*:
 
 instances:
   spawn.rohana.l2:
-    spawn.regions: [ layertwo ]
+    spawn.*:
+      regions: [ layertwo ]
+      priority: 50
     check.spawn.local_group:
       max: 3
       radius: 128

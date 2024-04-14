@@ -6,9 +6,6 @@ spawn.*:
   # priority: 0.2
   regions: [ layerone ]
 check.*:
-  spawn.local_group:
-    max: 4
-    radius: 150
   spawn.gap: 4..4096
   blockType:
     allow:

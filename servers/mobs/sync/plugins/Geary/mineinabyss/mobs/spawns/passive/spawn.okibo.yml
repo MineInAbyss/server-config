@@ -3,12 +3,9 @@ spawn.*:
   type: mineinabyss:okibo
   amount: 1..2
   spread: 6
-  # priority: 0.2
   regions: [ orth ]
+  priority: 5
 check.*:
-  spawn.local_group:
-    max: 3
-    radius: 192
   spawn.gap: 8..4096
   blockType:
     allow:

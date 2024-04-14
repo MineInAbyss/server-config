@@ -3,6 +3,7 @@ spawn.*:
   type: mineinabyss:makihige
   amount: 1
   regions: [ layerfour, layerfive ]
+  priority: 50
 check.*:
   spawn.local_group:
     max: 3
