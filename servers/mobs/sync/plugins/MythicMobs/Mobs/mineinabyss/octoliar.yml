@@ -28,6 +28,8 @@ octoliar:
     Scale: 2
   Skills:
   ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
   - model{mid=octoliar} @self ~onSpawn
   - defaultstate{t=walk;s=walk;sp=1.5} @self ~onSpawn
   - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10

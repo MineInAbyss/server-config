@@ -27,6 +27,8 @@ silkfang:
     Drive: false
     DamageTint: true
   Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
   - skill{s=sfSpiderWebShot} @Target ~onTimer:220
   - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
