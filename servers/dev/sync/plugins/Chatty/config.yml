@@ -48,7 +48,7 @@ channels:
     isDefaultChannel: true
     isStaffChannel: false
     format: ':dev::space_-4:%luckperms_prefix% <chatty_nickname>: '
-    messageColor: "#fefefe"
+    messageColor: "#fafafa"
     channelRadius: 0
     channelAliases:
       - g

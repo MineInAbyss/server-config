@@ -11,7 +11,7 @@ groups:
       - \n\n\n
     footers:
       - 'Ping: %ping%ms %server_tps_5_colored%'
-    format: '%server%%prefix% %username%'
+    format: '%server%%prefix% &#fafafa&%username%'
     nametag:
       prefix: ''
       suffix: ''
