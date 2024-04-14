@@ -1,6 +1,6 @@
 tachikatana:
   Type: ZOMBIE
-  Health: 100
+  Health: 150
   Damage: 7
   AIGoalSelectors:
     - clear
@@ -19,7 +19,7 @@ tachikatana:
     Collidable: true
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.4
+    MovementSpeed: 0.2
     MaxCombatDistance: 35
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
@@ -40,6 +40,8 @@ tachikatana:
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill{s=tachiATTACK} @self ~onAttack
     - skill{s=tachi_PROJ} @target ~onTimer:20
     - skill{s=tachishockwave} @target ~onTimer:20
