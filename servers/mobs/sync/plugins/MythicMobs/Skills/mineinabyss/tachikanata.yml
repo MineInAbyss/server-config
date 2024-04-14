@@ -1,4 +1,5 @@
 tachiATTACK:
+  Cooldown: 2.5
   Conditions:
     - offgcd
     - targetwithin{d=5} true
@@ -8,7 +9,7 @@ tachiATTACK:
 
 tachiATTACKskill:
   Conditions:
-  Cooldown: 5
+  Cooldown: 0
   Skills:
     - state{s=swipe_attack;li=3;lo=2} @self 
     - delay 20
@@ -22,16 +23,16 @@ tachiATTACKDamage:
   Skills:
     - shieldbreak{duration=50} @target
     - delay 1
-    - damage{amount=15} @target
+    - damage{amount=20} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     #- skill{s=Bleeding} @target
-    - recoil{r=15;pitch=-0.2}
+    - recoil{r=15;pitch=-0.2} @target
     - delay 2
-    - recoil{r=15;pitch=.1}
+    - recoil{r=15;pitch=.1} @target
     - delay 2
-    - recoil{r=15;pitch=-0.1}
+    - recoil{r=15;pitch=-0.1} @target
     - delay 2
-    - recoil{r=15;pitch=0.1}
+    - recoil{r=15;pitch=0.1} @target
 tachiHurt:
   Cooldown: 0.3
   Skills:
