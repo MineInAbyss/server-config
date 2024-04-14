@@ -1,11 +1,12 @@
 tachiATTACK:
-  Cooldown: 2.5
+  Cooldown: 3
   Conditions:
-    - offgcd
-    - targetwithin{d=5} true
+      - offgcd
+      - targetwithin{d=5} true
   Skills:
-    - CancelEvent
-    - skill{s=tachiATTACKskill} @self
+      - gcd{ticks=50} @self
+      - CancelEvent
+      - skill{s=tachiATTACKskill} @self
 
 tachiATTACKskill:
   Conditions:
@@ -18,7 +19,7 @@ tachiATTACKskill:
     - delay 15
     - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
     - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
-    - delay 30
+    - delay 10
 tachiATTACKDamage:
   Skills:
     - shieldbreak{duration=50} @target
@@ -36,12 +37,12 @@ tachiATTACKDamage:
 tachiHurt:
   Cooldown: 0.3
   Skills:
-  - sound{s=entity.guardian.ambient;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - sound{s=entity.guardian.ambient;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
 
 tachiAmbient:
   Cooldown: 0.3
   Skills:
-  - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+    - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
 
 tachi_PROJ:
   Cooldown: 8
@@ -77,45 +78,51 @@ tachi_impact:
 
 tachishockwave:
   Cooldown: 30
+  Conditions:
+    - incombat true
+    - offgcd true
+    - targetwithin{d=4} false
+    #- targetinlineofsight{} true
   Skills:
-  - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
-  - delay 5
-  - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
-  - delay 5
-  - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
-  - delay 20
-  - setAI{ai=false} @self
-  - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
-  - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
+    - gcd{ticks=300} @self
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
+    - delay 20
+    - setAI{ai=false} @self
+    - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
+    - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
 
   #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
-  - potion{type=DAMAGE_RESISTANCE;duration=130;level=1;p=false} @self
-  - skill{s=tachicircle;repeat=20;repeati=4} @Self
-  - delay 36
-  - skill{s=tachishock} @Self
-  - delay 25
-  - setAI{ai=true} @self
+    - potion{type=DAMAGE_RESISTANCE;duration=130;level=1;p=false} @self
+    - skill{s=tachicircle;repeat=20;repeati=4} @Self
+    - delay 36
+    - skill{s=tachishock} @Self
+    - delay 25
+    - setAI{ai=true} @self
 tachicircle:
   Conditions:
   Cooldown:
   Skills:
-  - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=6;points=50}
+    - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=8;points=50}
 
 tachishock:
   Skills:
-  - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
-  - throw{velocity=20;velocityY=5} @PlayersInRadius{r=6}
-  - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=6}
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=1;points=15;amount=40;hS=1;vS=1} @Self 
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=2;points=15;amount=50;hS=1;vS=1} @Self 
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=3;points=15;amount=60;hS=1;vS=1} @Self 
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=4;points=15;amount=70;hS=1;vS=1} @Self 
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=5;points=15;amount=80;hS=1;vS=1} @Self 
-  - delay 2
-  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=6;points=15;amount=90;hS=1;vS=1} @Self 
+    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
+    - throw{velocity=20;velocityY=5} @PlayersInRadius{r=8}
+    - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=8}
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=20;hS=1;vS=1} @Self 
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=2;points=15;amount=30;hS=1;vS=1} @Self 
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=3;points=15;amount=40;hS=1;vS=1} @Self 
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=4;points=15;amount=50;hS=1;vS=1} @Self 
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=5;points=15;amount=60;hS=1;vS=1} @Self 
+    - delay 2
+    - effect:particlering{particle=sonic_boom;radius=6;points=15;amount=70;hS=1;vS=1} @Self 
 
