@@ -39,6 +39,6 @@ dosetori:
     - setspeed{type=flying;speed=1.3} @self ~onSpawn
     - state{mid=dosetori;s=attack} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - effect:sound{s_mineinabyss:entity.dosetori.ambient;v=6;p=0.8} @self ~onAmbient
-    - effect:sound{s_mineinabyss:entity.dosetori.death;v=6;p=0.8} @self ~onDeath
-    - effect:sound{s_mineinabyss:entity.dosetori.hurt;v=6;p=0.8} @self ~onDamaged
+    - effect:sound{s=mineinabyss:entity.dosetori.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.dosetori.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.dosetori.hurt;v=6;p=0.8} @self ~onDamaged

@@ -38,6 +38,6 @@ corpse_weeper:
     - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=corpse_weeper;s=attack} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - effect:sound{s_mineinabyss:entity.corpseweeper.ambient;v=6;p=0.8} @self ~onAmbient
-    - effect:sound{s_mineinabyss:entity.corpseweeper.death;v=6;p=0.8} @self ~onDeath
-    - effect:sound{s_mineinabyss:entity.corpseweeper.cry;v=6;p=0.8} @self ~onCry
+    - effect:sound{s=mineinabyss:entity.corpseweeper.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.corpseweeper.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.corpseweeper.cry;v=6;p=0.8} @self ~onCry
