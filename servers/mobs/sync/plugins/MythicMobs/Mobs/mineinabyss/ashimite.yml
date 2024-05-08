@@ -28,6 +28,8 @@ ashimite:
     - PROJECTILE 5.0
     - SUFFOCATION 0.05
   Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=2.0} @self ~onSpawn
@@ -64,6 +66,8 @@ baby_ashimite:
     DamageTint: true
     Scale: 0.5
   Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=1.8} @self ~onSpawn 0.2

@@ -1,0 +1,31 @@
+billabonk:
+  Type: FROG
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - fleeplayers{distance=5;speed=1;safespeed=1;conditions=[ - inlineofsight true ]}
+    - panicWhenOnFire
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Drops:
+    - exp 5-10
+    - geary mineinabyss:billabonk_leg 1 0.6
+    - geary mineinabyss:billabonk_sac 1-2 0.4
+    - lily_pad 1-2 0.4
+  Health: 20 # change this
+  Damage: 0 
+  Options:
+    Despawn: false
+  DamageModifiers:
+  Model:
+    Id: billabonk
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
