@@ -1,5 +1,6 @@
 splitjaw:
   Type: ALLAY
+  Display: "<#9A1CAD>Splitjaw"
   Health: 60
   Damage: 6
   AIGoalSelectors:
@@ -20,9 +21,7 @@ splitjaw:
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-
-    #MovementSpeed: 0.6
-
+  # MovementSpeed: 0.6
     PreventSunburn: true
   Model:
     Id: splitjaw
@@ -31,23 +30,29 @@ splitjaw:
     DamageTint: true
   DamageModifiers:
     - PROJECTILE 0.5
+  Drops:
+    - 70-115
+    - geary mineinabyss:splitjaw_scales 1-3 0.7
+    - geary mineinabyss:splitjaw_gunk 2 0.5
+    - minecraft:diamond 1 0.05
+    - minecraft:gold_ingot 1 0.07
+    - minecraft:emerald 1 0.05
+
   Skills:
-
-  #  - CancelEvent{sync=true} ~onAttack
-
+  # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.2} @self ~onSpawn
-
     - state{mid=splitjaw;s=attack} @self ~onAttack
-
     - DefaultState{m=splitjaw;t=walk;s=walk_aggro} @self ~onEnterCombat
     - DefaultState{m=splitjaw;t=walk;s=walk} @self ~onDropCombat
-
     - skill{s=Changetarget} ~onTimer:160 <99%
-
     - skill{s=sj_roar} @target ~oncombat
     - skill{s=sj_roar} @target ~onTimer:100
     - skill{s=SJ_dash} @target ~onTimer:40
     - skill{s=SJ_Attack} @self ~onAttack
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - effect:sound{s_mineinabyss:entity.splitjaw.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s_mineinabyss:entity.splitjaw.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s_mineinabyss:entity.splitjaw.hurt;v=6;p=0.8} @self ~onDamaged
+

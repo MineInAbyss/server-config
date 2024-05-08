@@ -1,5 +1,6 @@
 squidfly:
   Type: ALLAY
+  Display: "<#85512E>Squidfly"
   Health: 16
   Damage: 5
   AIGoalSelectors:
@@ -17,18 +18,21 @@ squidfly:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-   # MovementSpeed: 0.7
+  # MovementSpeed: 0.7
   Model:
     Id: squidfly
     ViewRadius: 64
     Drive: false
     DamageTint: true
-  Skills:
-   # - CancelEvent{sync=true} ~onAttack
-    #- skill{s=Damage_5} @self ~onAttack
+  Drops:
+    - exp 12-18
+    - geary mineinabyss:squidfly_brain_raw 1 0.8
 
+  Skills:
+  # - CancelEvent{sync=true} ~onAttack
+  # - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=squidfly;c=15} @self ~onSpawn
     - bodyclamp{m=squidfly;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=squidfly;s=attack} @self ~onAttack
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,5 +1,6 @@
 corpse_weeper:
   Type: ALLAY
+  Display: '<#D12B26>Corpse-Weeper'
   Health: 25
   Damage: 5
   AIGoalSelectors:
@@ -17,19 +18,26 @@ corpse_weeper:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-
    # MovementSpeed: 0.5
-
   Model:
     Id: corpse_weeper
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 70-90
+    - geary mineinabyss:corpse_weeper_meat_raw 1-2
+    - geary mineinabyss:corpse_weeper_eye 2 0.3
+    - geary mineinabyss:corpse_weeper_feather 1-3 0.9
+
   Skills:
-    #- CancelEvent{sync=true} ~onAttack
-   # - skill{s=Damage_3} @self ~onAttack
+  # - CancelEvent{sync=true} ~onAttack
+  # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=corpse_weeper;c=15} @self ~onSpawn
     - bodyclamp{m=corpse_weeper;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.5} @self ~onSpawn
     - state{mid=corpse_weeper;s=attack} @self ~onAttack
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - effect:sound{s_mineinabyss:entity.corpseweeper.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s_mineinabyss:entity.corpseweeper.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s_mineinabyss:entity.corpseweeper.cry;v=6;p=0.8} @self ~onCry

@@ -1,5 +1,6 @@
-hammerbeak:
+hammerbeaksmall:
   Type: ALLAY
+  Display: "<#613F0C>Small Hammerbeak"
   Health: 18
   Damage: 3
   AIGoalSelectors:
@@ -24,6 +25,12 @@ hammerbeak:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 25-45
+    - geary mineinabyss:hammerbeak_wing_raw 1-2
+    - geary mineinabyss:hammerbeak_beak 1 0.6
+    - geary mineinabyss:hammerbeak_feather 1-2 0.5
+
   Skills:
   # Misc
   - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
@@ -48,7 +55,7 @@ hammerbeak:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-qmob_hammerbeakLarge:
+hammerbeakLarge:
   Type: VINDICATOR
   Display: '<#613F0C>Giant Hammerbeak'
   Modules:
@@ -102,64 +109,6 @@ qmob_hammerbeakLarge:
   - skill{s=hammerbeakAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=hammerbeakHurt} @self ~onHurt
   - skill{s=hammerbeakDeath} @self ~onDeath
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-
-qmob_hammerbeak:
-  Type: VINDICATOR
-  Display: '<#613F0C>Hammerbeak'
-  Modules:
-    ThreatTable: true
-  AIGoalSelectors:
-  - clear
-  - meleeattack
-  - movetowardstarget
-  - randomlookaround
-  - randomfly
-  - lookatplayers
-  AITargetSelectors:
-  - clear
-  - players
-  - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
-  Faction: hammerbeaks
-  Health: 30
-  Damage: 0
-  Options:
-    Despawn: false
-    Silent: true
-    PreventOtherDrops: true
-    FollowRange: 45
-    MovementSpeed: 0.0
-    KnockbackResistance: 1.0
-  Drops:
-    - exp 5-25
-    - geary mineinabyss:hammerbeak_wing_raw 1-2
-    - geary mineinabyss:hammerbeak_beak 2 0.5
-    - geary mineinabyss:hammerbeak_feather 1-2 0.5
-    - geary mineinabyss:hammerbeak_egg 1-2 0.4
-  DamageModifiers:
-
-  Skills:
-  # Misc
-  - model{mid=qmob_hammerbeakSmall} @self ~onSpawn
-  - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
-  - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
-  - look{} @target ~onTimer:20
-  - CancelEvent{sync=true} @self ~onAttack
-  - summon{type=qmob_hammerbeakSmallCorpse;amount=1;radius=0;delay=42} @self ~onDeath
-  - velocity{m=add;x=0;y=-0.4;z=0;repeat=120;repeatInterval=1} @self ~onDeath
-  # Stances/AI
-  - stance{s=landed} @self ~onSpawn
-  - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=10}
-  - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
-  - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
-  - skill{s=hammerbeakLand} @self ~onDropCombat
-  - skill{s=hammerbeakLand} @self ~onTimer:100
-  # FX
-  - skill{s=hammerbeakAmbientSmall;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=hammerbeakHurtSmall} @self ~onHurt
-  - skill{s=hammerbeakDeathSmall} @self ~onDeath
   - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
