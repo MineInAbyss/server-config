@@ -51,7 +51,7 @@ hammerbeak:
 
 qmob_hammerbeakLarge:
   Type: VINDICATOR
-  Display: 'Giant Hammerbeak'  # change this
+  Display: '<#613F0C>Giant Hammerbeak'  # change this
   Modules:
     ThreatTable: true
   AIGoalSelectors:

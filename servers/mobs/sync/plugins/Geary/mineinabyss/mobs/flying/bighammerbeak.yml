@@ -1,7 +1,4 @@
-namespaces: [ geary, mobzy, looty ]
-inherit: [ mineinabyss:hostile_flying ]
-set.mythicMob: qmob_hammerbeak
-displayName: "<#613F0C>Giant Hammerbeak"
+
 drop:
   - exp: 25..45
   - item: mineinabyss:hammerbeak_wing_raw
