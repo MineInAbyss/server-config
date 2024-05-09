@@ -4,6 +4,8 @@ daikonchu:
   Damage: 0
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
   - model{mid=daikonchu;n=false} @Self ~onSpawn
   - skill:DaikonchuAttack @Self ~onAttack
 #  - skill:DwellingBugTame @Self ~onInteract COMING SOON!!!!!!!

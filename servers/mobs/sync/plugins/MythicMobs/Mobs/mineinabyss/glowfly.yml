@@ -27,6 +27,8 @@ glowFly:
   - clear
   - attacker
   Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+
   - skill:GlowFlySpawn @self ~onSpawn
   - skill:GlowFlyDamaged @self ~onDamaged
   - skill:GlowFlyTick @self ~onTimer:20

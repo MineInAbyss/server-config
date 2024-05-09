@@ -7,5 +7,7 @@ Reflectdamage:
         ];
         damageMods="ENTITY_ATTACK 0.2, PROJECTILE 0.2"} @self
 damageResist:
+  Conditions:
+   - hasaura{aura=damageResist} true
   Skills:
-   - damagepercent{percent=0.1} @Target
+   - damagepercent{percent=0.1} @target

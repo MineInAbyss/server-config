@@ -9,10 +9,10 @@ tachiATTACKskill:
   Skills:
     - state{s=swipe_attack;li=3;lo=2} @self 
     - delay 20
-    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
+    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
     - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
     - delay 15
-    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
+    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
     - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
 tachiATTACKDamage:
   Skills:

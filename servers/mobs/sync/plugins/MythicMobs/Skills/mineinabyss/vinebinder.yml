@@ -1,0 +1,43 @@
+vinebinderATTACK:
+  Conditions:
+  Skills:
+    - CancelEvent
+    - skill{s=vinebinderATTACKskill} @self
+vinebinderATTACKskill:
+  Conditions:
+  Cooldown: 3
+  Skills:
+    - state{s=attack;li=3;lo=2} @self 
+    - delay 10
+    - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=false;hp=true;hR=3;vR=4;i=1} @forward{f=4}
+    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - delay 15
+    - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=false;hp=true;hR=3;vR=4;i=1} @forward{f=4}
+    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+vinebinderATTACKDamage:
+  Skills:
+    - shieldbreak{duration=30} @target
+    - delay 1
+    - damage{amount=5} @target
+vinebinderATTACKDamage2:
+  Skills:
+    - shieldbreak{duration=30} @target
+    - delay 1
+    - damage{amount=5} @target
+
+vinebinderswing:
+  Cooldown: 15
+  Skills:
+    - state{s=swing;li=3;lo=2} @self 
+    - delay 15
+    - skill{s=[- totem{md=2;c=1;oH=vinebinderATTACKDamage2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @LivingNearTargetLocation{r=1}  ]} @modelpart{mid=vinebinder;pid=tonque1}
+
+vinebinderHurt:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.guardian.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+
+vinebinderAmbient:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
