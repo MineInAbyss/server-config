@@ -1,5 +1,6 @@
 kagi_tachikiri:
   Type: ALLAY
+  Display: "<#5468A8>Kagi-Tachikiri"
   Health: 50
   Damage: 6
   AIGoalSelectors:
@@ -17,20 +18,22 @@ kagi_tachikiri:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-   # MovementSpeed: 0.5
-
+  # MovementSpeed: 0.5
   Model:
     Id: kagi_tachikiri
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 20-40
+    - geary mineinabyss:kagi_tachikiri_pincer 1-2 0.7
+
   Skills:
-   # - CancelEvent{sync=true} ~onAttack
-   # - skill{s=Damage_8} @self ~onAttack
+  # - CancelEvent{sync=true} ~onAttack
+  # - skill{s=Damage_8} @self ~onAttack
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawn
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.4} @self ~onSpawn
     - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
-    
     - skill{s=kagi_venom} @target ~onTimer:20
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath

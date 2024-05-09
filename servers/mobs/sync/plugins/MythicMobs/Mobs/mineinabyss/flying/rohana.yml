@@ -1,5 +1,6 @@
 rohana:
   Type: ALLAY
+  Display: "Rohana"
   Health: 10
   AIGoalSelectors:
     - clear
@@ -12,18 +13,22 @@ rohana:
     Collidable: true
     Silent: true
     FollowRange: 17
-   # MovementSpeed: 0.3
-
+  # MovementSpeed: 0.3
   DamageModifiers:
-  - DROWNING -1
+    - DROWNING -1
   Model:
     Id: rohana
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 12-18
+    - geary mineinabyss:rohana_powder 2 0.8
+    - geary mineinabyss:rohana_tail 2 0.4
+
   Skills:
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
     - bodyclamp{m=rohana;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1} @self ~onSpawn
     - state{mid=rohana;s=attack} @self ~onAttack
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,5 +1,6 @@
 onitsuchi:
   Type: ALLAY
+  Display: "<#5C471D>Onitsuchi"
   Health: 40
   Damage: 7
   AIGoalSelectors:
@@ -17,20 +18,23 @@ onitsuchi:
     DigOutOfGround: true
     FollowRange: 20
     MaxCombatDistance: 128
-
-  #  MovementSpeed: 0.4
-
-  Model:
+  # MovementSpeed: 0.4
+ Model:
     Id: onitsuchi
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 60-80
+    - geary mineinabyss:onitsuchi_wing_raw 1-3
+    - geary mineinabyss:onitsuchi_skull 1 0.6
+    - geary mineinabyss:onitsuchi_feather 1-3
+    - geary mineinabyss:onitsuchi_egg 1-2 0.5
+
   Skills:
-
-    #- CancelEvent{sync=true} ~onAttack
-
+  # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
     - bodyclamp{m=onitsuchi;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=onitsuchi;s=attack} @self ~onAttack
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
