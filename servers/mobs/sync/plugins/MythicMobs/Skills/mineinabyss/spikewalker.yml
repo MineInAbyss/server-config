@@ -6,7 +6,7 @@ Reflectdamage:
           - particles{p=crit;amount=10;hS=0.4}
         ];
         damageMods="ENTITY_ATTACK 0.2, PROJECTILE 0.2"} @self
-damageResist:
+damagereflect:
   Conditions:
    - hasaura{aura=damageResist} true
   Skills:

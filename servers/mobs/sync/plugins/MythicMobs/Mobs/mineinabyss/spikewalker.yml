@@ -34,4 +34,4 @@ spikewalker:
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill{s=Reflectdamage} ~onTimer:150 <99%
-    - skill{s=Reflectdamage} ~onDamaged
+    - skill{s=damagereflect} ~onDamaged

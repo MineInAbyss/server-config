@@ -10,7 +10,6 @@ yomotsubi:
     - float
   AITargetSelectors:
     - clear
-    - attacker
     - players
   Options:
     KnockbackResistance: 1
