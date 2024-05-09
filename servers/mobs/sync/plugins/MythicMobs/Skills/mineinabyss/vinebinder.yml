@@ -5,8 +5,11 @@ vinebinderATTACK:
     - skill{s=vinebinderATTACKskill} @self
 vinebinderATTACKskill:
   Conditions:
+    - offgcd
+    - targetwithin{d=4} true
   Cooldown: 3
   Skills:
+    - gcd{ticks=40}
     - state{s=attack;li=3;lo=2} @self 
     - delay 10
     - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=false;hp=true;hR=3;vR=4;i=1} @forward{f=4}
@@ -25,9 +28,12 @@ vinebinderATTACKDamage2:
     - delay 1
     - damage{amount=5} @target
 
-vinebinderswing:
+vinebinderwave:
   Cooldown: 15
+  Conditions:
+    - offgcd
   Skills:
+    - gcd{ticks=200}
     - state{s=swing;li=3;lo=2} @self 
     - delay 15
     - skill{s=[- totem{md=2;c=1;oH=vinebinderATTACKDamage2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @LivingNearTargetLocation{r=1}  ]} @modelpart{mid=vinebinder;pid=tonque1}

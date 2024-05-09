@@ -9,10 +9,10 @@ vinebinder:
   AITargetSelectors:
   - clear
   - players
-  Health: 40 # change this
+  Health: 30 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
+    Preventsunburn: true
     Silent: true
     PreventOtherDrops: true
     FollowRange: 15
@@ -23,9 +23,9 @@ vinebinder:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 2
+    Scale: 1
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill{s=vinebinderATTACK} @self ~onAttack
+  - skill{s=vinebinderATTACK} @self ~onTimer:20
   - skill{s=vinebinderwave} @target ~onTimer:20
