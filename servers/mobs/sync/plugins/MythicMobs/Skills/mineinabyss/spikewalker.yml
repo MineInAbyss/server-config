@@ -1,7 +1,7 @@
 Reflectdamage:
   Skills:
     - onDamaged{
-        auraName=damageResist;d=80;
+        auraName=damageResist;d=60;
         onTick=[
           - particles{p=crit;amount=10;hS=0.4}
         ];
@@ -10,4 +10,4 @@ damagereflect:
   Conditions:
    - hasaura{aura=damageResist} true
   Skills:
-   - damagepercent{percent=0.1} @target
+   - damagepercent{percent=0.15} @target
