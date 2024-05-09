@@ -23,8 +23,8 @@ rohana:
     DamageTint: true
   Drops:
     - exp 12-18
-    - geary mineinabyss:rohana_powder 2 0.8
-    - geary mineinabyss:rohana_tail 2 0.4
+    - geary mineinabyss:rohana_powder 1-2 0.8
+    - geary mineinabyss:rohana_tail 1-2 0.4
 
   Skills:
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
