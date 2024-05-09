@@ -1,0 +1,173 @@
+SpittleshrubSpawn:
+  Skills:
+  - model{m=spittleshrub;invisible=false;n=false;s=1}
+  - state{s=plant} 
+  - potion{type=INVISIBILITY;d=999999;particles=false}
+  - bodyclamp{angle=0}
+  - setai{ai=false} @self
+  - gcd{ticks=30}
+  - setstance{stance=hidden}
+  - setspeed{speed=0} 
+
+SpittleshrubMelee:
+  Skills:
+  - cancelevent
+  - skill:SpittleshrubMeleeSwing
+
+SpittleshrubMeleeSwing:
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  - incombat
+  - stance attacking
+  TargetConditions:
+  - distance <3
+  Skills:
+  - state{s=bite;li=3;lo=2;speed=1} @self
+  - gcd{ticks=20} @self
+  - setai{ai=false} @self
+  - delay 8
+  - effect:sound{cd=5;s=entity.llama.swag;v=1;p=1.6} @self
+  - delay 2
+  - totem{ch=3;
+      onStart=[
+        - particles{p=crit;a=1;s=1.5} @origin
+        - skill:SpittleshrubMeleeDamage @ENO{r=3}
+      ];int=1;hR=3;md=1} @Forward{f=1.5}
+  - delay 10
+  - setai{ai=true} @self
+  
+SpittleshrubMeleeDamage:
+  Skills:
+  - effect:sound{s=entity.player.attack.strong;v=1;p=0.8} @self
+  - effect:particles{p=crit;a=55;hS=0.4;vS=0.4;y=1.5}
+  - effect:particles{p=reddust;size=5;color=#32CE32;a=5;hS=0.2;vS=0.2;y=1.5}
+  - basedamage{m=1.2}
+  - potion{type=POISON;d=100;level=3;ow=true}
+  - throw{v=4;vy=2}
+  
+SpittleshrubDamaged:
+  Cooldown: 0.5
+  Conditions:
+  - stance attacking
+  - burning cast SpittleshrubBurned
+  Skills:
+  - sound{s=block.shroomlight.break;p=0.75;v=1}
+  - sound{s=block.scaffolding.break;p=1.85;v=0.25}
+  
+SpittleshrubSpit:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - incombat
+  - stance attacking
+  TargetConditions:
+  - distance <16
+  Skills:
+  - state{s=shoot;li=3;lo=2;speed=1} @self
+  - gcd{ticks=30} @self
+  - setai{ai=false} @self
+  - delay 22
+  - missile{v=32;vo=0.5;inertia=1;
+      onStart=[
+        - sound{s=entity.llama.spit;p=1.5}
+        - particles{p=spit;directional=true;speed=1} @target
+        - delay 10
+        - modifyProjectile{trait=INERTIA;value=9999}
+      ];
+      onTick=[
+        - particles{p=spit;a=1}
+      ];
+      onHit=[
+        - effect:sound{s=entity.bee.sting;p=1.5;v=1}
+        - potion{type=SLOW;d=100;p=1}
+        - potion{type=POISON;d=100;level=2;ow=true}
+      ];
+      onEnd=[
+        - effect:particles{p=wax_off;a=40;hS=0.2;vS=0.2}
+      ]} @target
+  - delay 6
+  - setai{ai=true} @self
+  
+SpittleshrubScan:
+  Conditions:
+  - offgcd
+  Skills:
+  - threat{a=1} @PIR{r=16}
+  - skill:SpittleshrubScanAICheck
+  
+SpittleshrubScanAICheck:
+  Conditions:
+  - incombat
+  - offgcd
+  - playersInRadius{amount=>0;r=8} castInstead SpittleshrubScan_AIBurrow
+  - stance attacking false
+  Skills:
+  - skill:SpittleshrubScan_AIAggro @self
+  
+SpittleshrubHiddenDamaged:
+  Conditions:
+  - stance hidden
+  - damagecause ENTITY_ATTACK cast SpittleshrubHiddenDamagedCancel
+  - damagecause ENTITY_SWEEP_ATTACK cast SpittleshrubHiddenDamagedCancel
+  - damagecause PROJECTILE cast SpittleshrubHiddenDamagedCancel
+  Skills:
+  - sound{s=block.azalea_leaves.hit;p=0.85;v=1}
+  
+SpittleshrubHiddenDamagedCancel:
+  Skills:
+  - cancelevent
+  
+SpittleshrubScan_AIAggro:
+  Skills:
+  - state{s=plant;remove=true}
+  - state{s=spawn}
+  - gcd{ticks=30} 
+  - runAIGoalSelector{goal=meleeattack}
+  - setstance{stance=attacking}
+  - effect:particles{p=blockcrack;material=DRIPSTONE_BLOCK;a=20;hS=1;vS=0.05;y=0.05;repeat=20;repeati=1}
+  - sound{s=block.azalea_leaves.break;p=1.5;v=0.1;repeat=20;repeati=1}
+  - sound{s=entity.turtle.lay_egg;p=1.5;v=0.1}
+  - delay 30
+  - setai{state=true}
+  - setcollidable{state=true}
+  
+SpittleshrubScan_AIBurrow:
+  Skills:
+  - skill:SpittleshrubBurrow @self
+  
+SpittleshrubBurrow:
+  Conditions:
+  - stance attacking
+  - burning false
+  Skills:
+  - state{s=burrow}
+  - gcd{ticks=30}
+  - setai{state=false}
+  - setcollidable{state=false}
+  - runAIGoalSelector{goal=clear}
+  - setstance{stance=hidden}
+  - setspeed{speed=0} 
+  - sound{s=block.azalea_leaves.break;p=1.75;v=0.1;repeat=10;repeati=1}
+  - delay 10
+  - state{s=plant}
+
+SpittleshrubPlantedAura:
+  Conditions:
+  - stance hidden
+  Skills:
+  - aura{auraname=planted;duration=20;maxstacks=1;ma=true;rd=true;r=0.5;y=0.4;i=1;
+      damageMods=ENTITY_ATTACK 0.01,ENTITY_SWEEP_ATTACK 0.01,PROJECTILE 0.01}
+      
+SpittleshrubInteract:
+  TriggerConditions:
+  - holding FLINT_AND_STEEL
+  Skills:
+  - sound{s=item.flintandsteel.use}
+  - ignite{ticks=200} @self
+  - skill:SpittleshrubScan_AIAggro @self
+  - skill:SpittleshrubBurned
+  
+SpittleshrubBurned:
+  Skills:
+  - setspeed{speed=1} @self

@@ -1,0 +1,9 @@
+daikonchu:
+  Type: SILVERFISH
+  Health: 40
+  Damage: 0
+  Skills:
+  - cancelevent{sync=true} @Self ~onAttack
+  - model{mid=daikonchu;n=false} @Self ~onSpawn
+  - skill:DaikonchuAttack @Self ~onAttack
+#  - skill:DwellingBugTame @Self ~onInteract COMING SOON!!!!!!!
