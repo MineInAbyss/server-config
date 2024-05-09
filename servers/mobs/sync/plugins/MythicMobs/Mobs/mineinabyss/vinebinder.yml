@@ -27,5 +27,6 @@ vinebinder:
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill{s=vinebinderATTACK} @self ~onTimer:20
+  - skill:vinebinderattack @Self ~onAttack
   - skill{s=vinebinderwave} @target ~onTimer:20
+  - cancelevent{sync=true} @Self ~onAttack

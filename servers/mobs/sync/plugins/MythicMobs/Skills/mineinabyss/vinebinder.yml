@@ -1,32 +1,31 @@
-vinebinderATTACK:
+vinebinderattack:
   Conditions:
+  - offgcd
+  - incombat
+  - targetwithin{d=4} true
   Skills:
-    - CancelEvent
-    - skill{s=vinebinderATTACKskill} @self
-vinebinderATTACKskill:
-  Conditions:
-    - offgcd
-    - targetwithin{d=4} true
-  Cooldown: 3
-  Skills:
-    - gcd{ticks=40}
-    - state{s=attack;li=3;lo=2} @self 
+  - cancelevent{sync=true} @Self
+  - skill{s=[
+    - state{s=attack} @Self
+    - setai{ai=false} @Self
+    - delay 22
+    - effect:sound{s=entity.shulker.ambient;p=1.3} @Self
+    - totem{ch=3;
+        onStart=[
+          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+          - skill:vinebinderATTACKDamage @ENO{r=3}  ];int=1;hR=3;md=1} @Forward{f=3}
     - delay 10
-    - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=false;hp=true;hR=3;vR=4;i=1} @forward{f=4}
-    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
-    - delay 15
-    - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=false;hp=true;hR=3;vR=4;i=1} @forward{f=4}
-    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
+    - totem{ch=3;
+        onStart=[
+          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+          - skill:vinebinderATTACKDamage @ENO{r=3}  ];int=1;hR=3;md=1} @Forward{f=3}
+    - setai{ai=true} @Self
+    - state{s=attack;remove=true} @Self    ]}
+
 vinebinderATTACKDamage:
   Skills:
-    - shieldbreak{duration=30} @target
-    - delay 1
-    - damage{amount=5} @target
-vinebinderATTACKDamage2:
-  Skills:
-    - shieldbreak{duration=30} @target
-    - delay 1
-    - damage{amount=5} @target
+    - damage{amount=5}
 
 vinebinderwave:
   Cooldown: 15
@@ -37,16 +36,16 @@ vinebinderwave:
     - gcd{ticks=200}
     - state{s=swing;li=3;lo=2} @self 
     - delay 15
-    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=40;repeatInterval=1} @modelpart{mid=vinebinder;pid=tonque1}
+    - particles{p=crit_magic;a=25;speed=2;hs=0.1;vs=0.1;repeat=40;repeatInterval=1} @modelpart{mid=vinebinder;pid=tonque1}
     - skill{s=[- totem{md=2;c=1;oH=vinebinderATTACKDamage2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=50;repeatinterval=1} @LivingNearTargetLocation{r=1}  ]} @modelpart{mid=vinebinder;pid=tonque1}
     - delay 45
     - state{s=swing;li=3;lo=2;r=true} @self 
 vinebinderHurt:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.guardian.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+    - sound{s=entity.shulker.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
 
 vinebinderAmbient:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+    - sound{s=entity.shulker.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
