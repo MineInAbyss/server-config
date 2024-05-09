@@ -1,0 +1,44 @@
+uibuta:
+  Type: RAVAGER
+  Display: "<#8F2222>Uibuta"
+  Health: 50
+  Damage: 9.5
+  Options:
+    KnockbackResistance: 0.1
+    Collidable: true
+    Silent: true
+    FollowRange: 30
+    MaxCombatDistance: 35
+    MovementSpeed: 0.35
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - STONE_BOOTS{enchants=DEPTH_STRIDER:3}
+  DamageModifiers:
+    - KNOCKBACK 2
+  Model:
+    Id: uibuta
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2.0
+  Drops:
+    - exp 65-95
+    - geary mineinabyss:uibuta_meat_raw 2-6
+    - geary mineinabyss:uibuta_tooth 1-3 0.75
+
+  Skills:
+    - effect:sound{s=mineinabyss:entity.uibuta.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.uibuta.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.uibuta.hurt;v=6;p=0.8} @self ~onDamaged
+    
+

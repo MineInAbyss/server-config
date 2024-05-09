@@ -1,0 +1,32 @@
+okibo:
+  Type: MONKEY
+  Display: "<#10DEA7>Okibo"
+  Health: 50
+  Damage: 2
+  Options:
+    KnockbackResistance: 0.2
+    Collidable: true
+    Silent: true
+    FollowRange: 45
+    MaxCombatDistance: 35
+    MovementSpeed: 0.2
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - attacker
+  Model:
+    Id: okibo
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2.75
+  Drops:
+    - exp 20-25
+    - geary mineinabyss:okibo_meat_raw 6-10
+    - geary mineinabyss:okibo_fur 2-4 0.8
+    
