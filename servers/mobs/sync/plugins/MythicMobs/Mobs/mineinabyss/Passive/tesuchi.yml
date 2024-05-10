@@ -20,6 +20,9 @@ tesuchi:
     MovementSpeed: 0.2
     KnockbackResistance: 0.6
   Drops: # put stuff here
+  - exp 10-15
+  - geary mineinabyss:tesuchi_tail 1
+  - geary mineinabyss:tesuchi_scales 1-3 0.8
   DamageModifiers:
 
   Skills:

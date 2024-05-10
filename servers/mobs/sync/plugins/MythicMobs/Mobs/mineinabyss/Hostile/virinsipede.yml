@@ -1,0 +1,34 @@
+virinsipede:
+  Type: OCELOT
+  Display: "<#C42D2D>Virinsipede"
+  Health: 20
+  Damage: 6
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+    - leapattarget{s=4}
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Options:
+    attackKnockback: 1
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    MovementSpeed: 0.3
+  Model:
+    Id: virinsipede
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 15-25
+    - geary mineinabyss:virinsipede_segments 1-3 0.8
+    - geary mineinabyss:virinsipede 1 0.3
+  Skills:
+   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+   - skill:MIAPetExpNearby{exp=1} ~onDeath
