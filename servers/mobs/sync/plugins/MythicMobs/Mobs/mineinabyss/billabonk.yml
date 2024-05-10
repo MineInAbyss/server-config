@@ -28,5 +28,5 @@ billabonk:
     Drive: false
     DamageTint: true
   Skills:
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
