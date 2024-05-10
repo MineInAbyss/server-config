@@ -1,0 +1,31 @@
+sakuranbo:
+  Type: PIG
+  Display: "<gold>Sakuranbo"
+  Health: 10
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+    - fleeplayers{d=10;s=3;ss=1}
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    interactable: true
+    MovementSpeed: 0.3
+    KnockbackRessistance: 0.2
+  Model:
+    Id: sakuranbo
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 10-20
+    - geary mineinabyss:sakuranbo_dust 1-3 0.9
+
+  Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
