@@ -34,8 +34,8 @@ OrbPiercer:
     - PROJECTILE 0.25
     - SUFFOCATION 0
   Skills:
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
 #    - skill{s=orbpiercer_speed} @self ~onSpawn
@@ -54,7 +54,6 @@ OrbPiercer:
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
     - skill{s=orby_spike_eject} @target ~onDamaged <60%
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
 orbpiercer_projectile:
   Type: CAT
   Display: meteor

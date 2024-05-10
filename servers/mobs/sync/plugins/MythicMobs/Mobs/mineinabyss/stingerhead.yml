@@ -35,7 +35,7 @@ Stingerhead:
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
     - heal{amount=50} @self ~onkill

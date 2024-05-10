@@ -1,4 +1,4 @@
-leaflizard:
+tesuchi:
   Type: OCELOT
   Modules:
     ThreatTable: true
@@ -24,6 +24,9 @@ leaflizard:
 
   Skills:
   ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
   - model{mid=qmob_leafLizard;step=0.8} @self ~onSpawn
   - look{} @target ~onTimer:20
   - defaultstate{t=walk;s=walk;sp=2.2} @self ~onSpawn
@@ -38,4 +41,3 @@ leaflizard:
   - summon{type=qmob_leaflizardCorpse;amount=1;radius=0;delay=16} @self ~onDeath
   - skill{s=leaflizardDisguise;delay=<random.0to20>} @self ~onTimer:20
   - skill{s=leaflizardInvis} @self ~onTimer:10
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath

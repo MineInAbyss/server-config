@@ -27,6 +27,9 @@ vinebinder:
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+
   - skill:vinebinderattack @Self ~onAttack
   - skill{s=vinebinderwave} @target ~onTimer:20
 
@@ -59,6 +62,8 @@ vineblaster:
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
   - skill:vineblasterattack @Self ~onTimer:60
  # - skill{s=vineblastermortar} @target ~onTimer:20
   - cancelevent{sync=true} @Self ~onAttack
@@ -92,6 +97,8 @@ vinepoofer:
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
   - skill:vinepooferattack @Self ~onTimer:60
  # - skill{s=vinebinderwave} @target ~onTimer:20
   - cancelevent{sync=true} @Self ~onAttack

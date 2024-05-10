@@ -32,7 +32,9 @@ hisoishi:
   Skills:
   ####### Misc
 #  - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.2
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
   - skill{s=hs_backup} @self ~ondamaged
   - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=hsHurt} @self ~onHurt
@@ -74,7 +76,6 @@ baby_hisoishi:
   Skills:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack
-  - CancelEvent{sync=true} @self ~onInteract
   - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.1
   - skill{s=tj_backup} @self ~ondamaged
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

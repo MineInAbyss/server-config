@@ -1,4 +1,4 @@
-hammerbeaksmall:
+hammerbeak:
   Type: ALLAY
   Display: "<#613F0C>Small Hammerbeak"
   Health: 18
@@ -53,8 +53,8 @@ hammerbeaksmall:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
-
 hammerbeakLarge:
   Type: VINDICATOR
   Display: '<#613F0C>Giant Hammerbeak'
@@ -112,3 +112,5 @@ hammerbeakLarge:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath

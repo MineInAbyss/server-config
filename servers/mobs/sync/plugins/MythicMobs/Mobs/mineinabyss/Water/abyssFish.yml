@@ -23,6 +23,8 @@ ikenosuke:
 
   Skills:
   ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=qmob_ikenosuke} @self ~onSpawn
   - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}
   - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}
@@ -57,6 +59,8 @@ demonfish:
 
   Skills:
   ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=qmob_demonfish} @self ~onSpawn
   - look{immediately=true} @targetLocation ~onTimer:10
   - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
@@ -87,6 +91,8 @@ swarmshocker:
 
   Skills:
   ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=qmob_swarmshocker} @self ~onSpawn
   - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%
   - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onTimer:165 ?inCombat{} ?inBlock{b=WATER}
@@ -95,4 +101,40 @@ swarmshocker:
   - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath
   - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
   - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+hagamizukin:
+  Type: SALMON
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - movetowater
+  - meleeattack
+  - movetowardstarget
+  - fleeplayers
+  - randomlookaround
+  - randomfly
+  AITargetSelectors:
+  - clear
+  - attacker
+  Faction: fish
+  Health: 18 # change this
+  Damage: 3
+  Options:
+    Despawn: false
+    Silent: false
+    FollowRange: 25
+    MovementSpeed: 0.22
+    KnockbackResistance: 0.0
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - state{mid=hagamizukin;s=attack} @self ~onAttack
+  ####### Misc
+  - model{mid=hagamizukin} @self ~onSpawn
+  - look{immediately=true} @targetLocation ~onTimer:10
+  - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
   #- skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -30,7 +30,7 @@ spittleshrub:
   - players
   Skills:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
   - skill:SpittleshrubSpawn @self ~onSpawn
   - skill:SpittleshrubDamaged @self ~onDamaged
   - skill:SpittleshrubHiddenDamaged{sync=true} @self ~onDamaged

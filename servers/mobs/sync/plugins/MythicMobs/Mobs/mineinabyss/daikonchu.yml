@@ -5,6 +5,7 @@ daikonchu:
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
 
   - model{mid=daikonchu;n=false} @Self ~onSpawn
   - skill:DaikonchuAttack @Self ~onAttack

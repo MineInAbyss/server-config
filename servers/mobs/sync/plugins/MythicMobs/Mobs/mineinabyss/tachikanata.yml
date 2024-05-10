@@ -34,6 +34,8 @@ tachikatana:
     - PROJECTILE 0.25
     - SUFFOCATION 0
   Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
    # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
 #    - skill{s=orbpiercer_speed} @self ~onSpawn

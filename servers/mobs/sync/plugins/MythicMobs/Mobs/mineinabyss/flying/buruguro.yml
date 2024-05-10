@@ -28,7 +28,7 @@ buruguro:
   - attacker
   Skills:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
   - skill:buruguroSpawn @self ~onSpawn
   - skill:buruguroDamaged @self ~onDamaged
   - skill:buruguroTick @self ~onTimer:20

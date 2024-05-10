@@ -37,3 +37,5 @@ kagi_tachikiri:
     - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
     - skill{s=kagi_venom} @target ~onTimer:20
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

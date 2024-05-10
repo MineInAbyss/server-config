@@ -34,6 +34,7 @@ inkflower:
    # - skill{s=Damage_8} @self ~onAttack
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
 
+
     - bodyclamp{m=inkflower;c=15} @self ~onSpawn
     - bodyclamp{m=inkflower;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.4} @self ~onSpawn

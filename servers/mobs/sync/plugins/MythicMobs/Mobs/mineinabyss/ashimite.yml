@@ -67,7 +67,7 @@ baby_ashimite:
     Scale: 0.5
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=1.8} @self ~onSpawn 0.2
