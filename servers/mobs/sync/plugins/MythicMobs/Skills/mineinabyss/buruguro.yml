@@ -1,6 +1,6 @@
 buroguroSpawn:
   Skills:
-  - model{m=buroguro;n=false;s=1}
+  - model{m=glowfly;n=false;s=1}
   - bodyclamp{angle=0}
   - gcd{ticks=20}
 
@@ -9,7 +9,7 @@ buroguroMelee:
   - cancelevent
   - skill:buroguroMeleeSwing
 
-buroguroMeleeSwing:
+buroguroMeleeSwing
   Cooldown: 1
   Conditions:
   - offgcd
