@@ -1,5 +1,6 @@
 yomotsubi:
   Type: SPIDER
+  Display: "<#FF0000>Yomotsubi"
   Health: 50
   Damage: 11
   AIGoalSelectors:
@@ -29,14 +30,17 @@ yomotsubi:
     Drive: false
     DamageTint: true
     Scale: 3
-  Skills:
-   # - CancelEvent{sync=true} ~onAttack
-   # - skill{s=Damage_8} @self ~onAttack
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  Drops: 
+    - exp 10-25
+    - geary mineinabyss:yomotsubi_abdomen_raw 1 0.55
+    - geary mineinabyss:yomotsubi_wing 1-2 0.65
 
+  Skills:
+  # - CancelEvent{sync=true} ~onAttack
+  # - skill{s=Damage_8} @self ~onAttack
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawn
     - bodyclamp{m=yomotsubi;c=15} @self ~onLoad
     - state{mid=yomotsubi;s=attack} @self ~onAttack
-    
     - skill{s=yomotsubi_airball} @target ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,5 +1,6 @@
 silkfang:
   Type: CAVE_SPIDER
+  Display: "<#116AAD>Silkfang"
   Health: 22
   Damage: 4
   Options:
@@ -26,9 +27,14 @@ silkfang:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 10-25
+    - geary mineinabyss:silkfang_eye 1 0.5
+    - geary mineinabyss:silkfang_silk 1-2 0.5
+    - geary mineinabyss:bundle_of_silkfang_silk 1 0.1
+
   Skills:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
   - skill{s=sfSpiderWebShot} @Target ~onTimer:220
   - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
@@ -39,4 +45,4 @@ silkfang:
   - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
   - skill{s=silkfangHurt} @self ~onHurt
   - skill{s=silkfangDeath} @self ~onDeath
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+# - skill:MIAPetExpNearby{exp=1} ~onDeath

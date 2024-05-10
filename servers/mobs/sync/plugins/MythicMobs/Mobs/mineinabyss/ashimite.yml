@@ -1,5 +1,6 @@
 ashimite:
   Type: SHEEP
+  Display: "<#2597D9>Ashimite"
   Health: 35
   AIGoalSelectors:
     - clear
@@ -18,7 +19,7 @@ ashimite:
     Silent: true
     FollowRange: 48
     interactable: true
-    #MovementSpeed: 0.25
+  # MovementSpeed: 0.25
   Model:
     Id: ashimite
     ViewRadius: 64
@@ -27,17 +28,26 @@ ashimite:
   DamageModifiers:
     - PROJECTILE 5.0
     - SUFFOCATION 0.05
+  Drops:
+    - exp 18-35
+    - geary mineinabyss:ashimite_meat_raw 1 0.75
+    - geary mineinabyss:ashimite_hoof 1-2
+    - geary mineinabyss:ashimite_antlers 1-2 0.4
+    - geary minecraft:light_blue_wool 1-2
+
   Skills:
-    #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
-    #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+  # - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
+  # - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=2.0} @self ~onSpawn
     - summon{type=baby_ashimite;amount=1;radius=3} @self ~onSpawn 0.2
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
-    #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
-    #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
-    #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+  # - sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+  # - sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
+  # - sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+
 baby_ashimite:
   Type: SHEEP
+  Display: "<#2597D9>Baby_Ashimite"
   Health: 12
   AIGoalSelectors:
     - clear
@@ -56,18 +66,23 @@ baby_ashimite:
     Silent: true
     FollowRange: 48
     interactable: false
-    #MovementSpeed: 0.25
+  # MovementSpeed: 0.25
   Model:
     Id: ashimite
     ViewRadius: 64
-    #Drive: true
+  # Drive: true
     DamageTint: true
     Scale: 0.5
+  Drops:
+    - exp 18-35
+    - geary mineinabyss:ashimite_meat_raw 1 0.75
+    - geary minecraft:light_blue_wool 1-2
+
   Skills:
-    #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
-    #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+  # - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
+  # - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
     - setspeed{type=walking;speed=1.8} @self ~onSpawn 0.2
-    #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
-    #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
-    #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+  # - sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
+  # - sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath

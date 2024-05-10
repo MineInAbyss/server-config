@@ -1,5 +1,6 @@
 Stingerhead:
   Type: SPIDER
+  Display: "<#9C0F2C>Stingerhead"
   Health: 250
   Damage: 11
   AIGoalSelectors:
@@ -31,11 +32,16 @@ Stingerhead:
   DamageModifiers:
     - PROJECTILE 0.10
     - SUFFOCATION 0.05
-  Skills: 
-    # - skill{s=burrow_out} @self ~onSpawn
-    # - skill{s=burrow_in} @self ~onDespawn
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  Drops:
+    - exp 80-150
+    - geary mineinabyss:stingerhead_flesh 1-2 0.8
+    - geary mineinabyss:stingerhead_scale 1-2 0.8
+    - geary mineinabyss:stingerhead_eye 1-2 0.4
 
+  Skills: 
+  # - skill{s=burrow_out} @self ~onSpawn
+  # - skill{s=burrow_in} @self ~onDespawn
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
     - heal{amount=50} @self ~onkill
@@ -44,17 +50,15 @@ Stingerhead:
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>20}
-
     - skill{s=stingerhead_bigleap} @target ~onTimer:150   
     - skill{s=stingerhead_leap} @target ~onTimer:100    
     - skill{s=stingerhead_spin} @self ~onDamaged 0.15
-    #- state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
-    #- skill{s=stingerhead_leap_attack} @self ~onTimer:20
-
-    #- skill{s=stingerhead_stun50} @self ~onDamaged <50%
-    #- skill{s=stingerhead_stun25} @self ~onDamaged <25% 0.1
+  # - state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
+  # - skill{s=stingerhead_leap_attack} @self ~onTimer:20
+  # - skill{s=stingerhead_stun50} @self ~onDamaged <50%
+  # - skill{s=stingerhead_stun25} @self ~onDamaged <25% 0.1
     - skill{s=stingerhead_stun_hit} @self ~onDamaged
 
     # Bind a new MM entity to each stinger
@@ -67,7 +71,7 @@ Stingerhead:
     - bindhitbox{m=stingerhead;p=ob_stinger6;t=Stingerhead_Stinger6;delay=1} @self ~onSpawn
     - bindhitbox{m=stingerhead;p=ob_stinger7;t=Stingerhead_Stinger7;delay=1} @self ~onSpawn
 
-## Stingers
+# Stingers
 Stingerhead_Stinger1:
   Template: Stingerhead_Stinger_Template
   Skills:
@@ -119,7 +123,7 @@ Stingerhead_Stinger_Template:
   Skills:
     - skill{s=stingerhead_cancel_stinger_damage;sync=true} @self ~onDamaged
 
-### Detached Stinger Entity
+# Detached Stinger Entity
 Stingerhead_Stinger_Detached:
   Type: SPIDER
   Display: 'Stingerhead Stinger'
@@ -142,6 +146,7 @@ Stingerhead_Stinger_Detached:
   Drops:
     - exp 40-50
     - geary mineinabyss:stingerhead_scale 0-1 0.1
+    
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=5;hS=.25;vS=.25} @modelpart{m=stingerhead_stinger;offset=LOCAL;x=-1} ~onTimer:1
     - skill{s=stingerhead_stinger_detached_spawn} @self ~onSpawn

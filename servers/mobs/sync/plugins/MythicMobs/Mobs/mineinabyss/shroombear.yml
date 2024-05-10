@@ -1,5 +1,6 @@
 shroombear:
   Type: PIG
+  Display: 
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -12,7 +13,7 @@ shroombear:
   AITargetSelectors:
     - clear
     - players
-  Health: 25 # change this
+  Health: 25
   Damage: 0 
   Options:
     Despawn: false
@@ -26,14 +27,22 @@ shroombear:
     Drive: false
     DamageTint: true
     Scale: 0.8
+  Drops:
+    - exp 15-20
+    - geary mineinabyss:shroombear_meat_raw 1-3 0.75
+    - geary mineinabyss:parasitic_watershrooms 1-2 0.4
+
   Skills:
-  ####### Misc
+  # Misc
   - CancelEvent{sync=true} @self ~onAttack
   - CancelEvent{sync=true} @self ~onInteract
   - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawn
   - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
   - skill{s=Shroom_Harvest} @self ~oninteract
   - summon{type=baby_shroombear;amount=1;radius=3} @self ~onSpawn 0.1
+  - effect:sound{s=mineinabyss:entity.shroombear.ambient;v=6;p=0.8} @self ~onAmbient
+  - effect:sound{s=mineinabyss:entity.shroombear.death;v=6;p=0.8} @self ~onDeath
+  - effect:sound{s=mineinabyss:entity.shroombear.hurt;v=6;p=0.8} @self ~onDamaged
 
 baby_shroombear:
   Type: PIG
@@ -49,7 +58,7 @@ baby_shroombear:
   AITargetSelectors:
     - clear
     - players
-  Health: 12 # change this
+  Health: 12
   Damage: 0 
   Options:
     Despawn: false
@@ -63,8 +72,9 @@ baby_shroombear:
     Drive: false
     DamageTint: true
     Scale: 0.3
+  
   Skills:
-  ####### Misc
+  # Misc
   - CancelEvent{sync=true} @self ~onAttack
   - CancelEvent{sync=true} @self ~onInteract
   - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawn
@@ -72,4 +82,4 @@ baby_shroombear:
   - skill{s=shroombearHurt} @self ~onHurt
   - skill{s=shroombearDeath} @self ~onDeath
   - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+# - skill:MIAPetExpNearby{exp=1} ~onDeath

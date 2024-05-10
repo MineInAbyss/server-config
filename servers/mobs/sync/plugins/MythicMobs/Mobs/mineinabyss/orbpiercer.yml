@@ -1,5 +1,6 @@
 OrbPiercer:
   Type: ZOMBIE
+  Display: "<#C74040>Orb Piercer"
   Health: 100
   Damage: 7
   AIGoalSelectors:
@@ -33,17 +34,21 @@ OrbPiercer:
     - DROWNING 0
     - PROJECTILE 0.25
     - SUFFOCATION 0
+  Drops:
+    - exp 80-210
+    - geary mineinabyss:orb_piercer_spike 3-6
+    - geary mineinabyss:orb_piercer_face_fragments 1 0.4
+
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawn
     - bodyclamp{m=orbpiercer;c=15} @self ~onLoad
-#    - skill{s=orbpiercer_speed} @self ~onSpawn
-    #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+  # - skill{s=orbpiercer_speed} @self ~onSpawn
+  # - sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     - sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
     - skill{s=orbyATTACK} @self ~onAttack
-    #- skill{s=Changetarget} ~onTimer:160 <99%
+  # - skill{s=Changetarget} ~onTimer:160 <99%
     - dismount ~onDamaged
     - skill{s=stingerhead_unstuck} @self ~onTimer:20
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
@@ -54,7 +59,8 @@ OrbPiercer:
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
     - skill{s=orby_spike_eject} @target ~onDamaged <60%
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+
 orbpiercer_projectile:
   Type: CAT
   Display: meteor
@@ -70,4 +76,4 @@ orbpiercer_projectile:
     - skill{s=meteorONSPAWN} @self ~onSpawn
     - model{mid=orbpiercer_projectile;n=false;d=false;i=false} @self ~onSpawn
     - remove{delay=200} @self ~onSpawn
-   # - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn
+  # - state{mid=orbpiercer_projectile;s=fist_flying;li=3;lo=2;r=false} @Self ~onSpawn

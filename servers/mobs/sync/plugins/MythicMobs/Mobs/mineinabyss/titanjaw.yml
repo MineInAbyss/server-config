@@ -1,8 +1,9 @@
 titanjaw:
   Type: RAVAGER
+  Display: "<#3C3B4A>Titanjaw"
   Modules:
     ThreatTable: true
-  Health: 60 # change this
+  Health: 60
   Damage: 10 
   Options:
     PreventSunBurn: true
@@ -28,20 +29,28 @@ titanjaw:
     Drive: false
     DamageTint: true
     Scale: 2.5
+  Drops: 
+    - exp 25-45
+    - geary mineinabyss:titanjaw_scale 1-2 0.7
+    - geary mineinabyss:titanjaw_jaw 1-2 0.5
+    - geary mineinabyss:titanjaw_pearl 1 0.2
+
   Skills:
-  ####### Misc
-#  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
-  - skill{s=tj_backup} @self ~ondamaged
-  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=tjHurt} @self ~onHurt
-  - skill{s=tjDeath} @self ~onDeath
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  # Misc
+  # - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+
 baby_titanjaw:
   Type: RAVAGER
+  Display: "<#3C3B4A>Baby_Titanjaw"
   Modules:
     ThreatTable: true
-  Health: 25 # change this
+  Health: 25
   Damage: 4 
   Options:
     PreventSunBurn: true
@@ -69,8 +78,10 @@ baby_titanjaw:
     Drive: false
     DamageTint: true
     Scale: 1
+
+
   Skills:
-  ####### Misc
+  # Misc
   - CancelEvent{sync=true} @self ~onAttack
   - CancelEvent{sync=true} @self ~onInteract
   - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.1
@@ -78,4 +89,4 @@ baby_titanjaw:
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
   - skill{s=tjDeath} @self ~onDeath
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+# - skill:MIAPetExpNearby{exp=1} ~onDeath
