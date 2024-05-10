@@ -1,0 +1,27 @@
+tesuchi:
+  Type: OCELOT
+  Display: "<dark_green>Tesuchi"
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 32
+    MovementSpeed: 0.15
+  Model:
+    Id: tesuchi
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:tesuchi_tail 1
+    - geary mineinabyss:tesuchi_scales 1-3 0.8

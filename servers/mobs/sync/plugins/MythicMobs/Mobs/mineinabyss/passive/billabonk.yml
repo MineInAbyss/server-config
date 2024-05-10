@@ -1,0 +1,31 @@
+billabonk:
+  Type: SLIME
+  Display: "<#0357AB>Billabonk"
+  Health: 12
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    interactable: true
+    MovementSpeed: 0.1
+  Model:
+    Id: billabonk
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:billabonk_leg_raw 1-2 0.7
+    - geary mineinabyss:billabonk_sac 1 0.15
+
+  Skills:
+    - effect:sound{s=mineinabyss:billabonk;v=6;p=0.2} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.billabonk.death;v=6;p=0.2} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.billabonk.hurt;v=6;p=0.2} @self ~onDamaged

@@ -23,7 +23,7 @@ ashimite:
   Model:
     Id: ashimite
     ViewRadius: 64
-    #Drive: true
+  # Drive: true
     DamageTint: true
   DamageModifiers:
     - PROJECTILE 5.0
