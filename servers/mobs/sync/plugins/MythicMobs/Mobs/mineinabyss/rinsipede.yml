@@ -1,0 +1,40 @@
+rinsipede:
+  Type: spider
+  Modules:
+    ThreatTable: true
+  Health: 30 # change this
+  Damage: 5
+  Options:
+    PreventSunBurn: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  DamageModifiers:
+  Model:
+    Id: rinsipede
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1.3
+  Skills:
+  ####### Misc
+#  - summon{type=baby_rinsipede;amount=1;radius=3} @self ~onSpawn 0.2
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - state{mid=rinsipede;s=attack} @self ~onAttack
+  #- skill{s=tj_backup} @self ~ondamaged
+ # - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  #- skill{s=tjHurt} @self ~onHurt
+ # - skill{s=tjDeath} @self ~onDeath
+  - skill:MIAPetExpNearby{exp=1} ~onDeath

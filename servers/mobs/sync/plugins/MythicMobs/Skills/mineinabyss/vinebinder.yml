@@ -78,7 +78,7 @@ vineblaster_impact:
   Skills:
     - damage{a=5} @target
     - potion{type=POISON;duration=100;level=2} @target
-    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
+    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target
 
 vinepooferattack:
   Cooldown: 7
