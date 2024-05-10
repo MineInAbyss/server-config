@@ -1,6 +1,6 @@
-glowFly:
+buruguro:
   Type: BEE
-  Display: 'Glow Fly'
+  Display: 'Buro Guro'
   Damage: 8
   Health: 32
   Drops:
@@ -10,7 +10,7 @@ glowFly:
     Despawn: true
     Silent: true
     ShowName: false
-    MovementSpeed: 0.35
+    MovementSpeed: 0.46
     KnockbackResistance: 1
     FollowRange: 32
     MaxCombatDistance: 64
@@ -29,8 +29,8 @@ glowFly:
   Skills:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
 
-  - skill:GlowFlySpawn @self ~onSpawn
-  - skill:GlowFlyDamaged @self ~onDamaged
-  - skill:GlowFlyTick @self ~onTimer:20
-  - skill:GlowFlyMelee @trigger ~onAttack
+  - skill:buruguroSpawn @self ~onSpawn
+  - skill:buruguroDamaged @self ~onDamaged
+  - skill:buruguroTick @self ~onTimer:20
+  - skill:buruguroMelee @trigger ~onAttack
   
