@@ -29,7 +29,6 @@ vinebinder:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
   - skill:vinebinderattack @Self ~onAttack
   - skill{s=vinebinderwave} @target ~onTimer:20
-  - cancelevent{sync=true} @Self ~onAttack
 
 vineblaster:
   Type: ZOMBIE
@@ -93,6 +92,6 @@ vinepoofer:
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill:vinepooferattack @Self ~onAttack
+  - skill:vinepooferattack @Self ~onTimer:60
  # - skill{s=vinebinderwave} @target ~onTimer:20
   - cancelevent{sync=true} @Self ~onAttack
