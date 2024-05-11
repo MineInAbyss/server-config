@@ -9,7 +9,7 @@ buroguroMelee:
   - cancelevent
   - skill:buroguroMeleeSwing
 
-buroguroMeleeSwing
+buroguroMeleeSwing:
   Cooldown: 1
   Conditions:
   - offgcd
