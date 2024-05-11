@@ -1,25 +1,23 @@
 beniguma:
-  Type: 
+  Type: beniguma
   Action: ADD
   Worlds: world
   Chance: 0.05
   Priority: 1
   UseWorldScaling: true
-  PositionType: GROUND
   Conditions:
-  - region{r=layerone} true
+  #- region{r=layerone} true
 
 okibo:
   Type: 
   Action: ADD
   Worlds: world
-  Chance: 5
+  Chance: 0.005
   Priority: 1
   UseWorldScaling: true
-  PositionType: GROUND
   Conditions:
   - region{r=layerone} true
-  - onblock{m=DIRT,GRASS_BLOCK} true
+
 
 
 
