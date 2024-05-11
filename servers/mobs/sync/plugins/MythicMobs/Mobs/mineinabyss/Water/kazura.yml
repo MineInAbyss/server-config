@@ -1,0 +1,31 @@
+kazura:
+  Type: SQUID
+  Display: "<#A9CCCA>Kazura"
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    interactable: true
+    followRange: 10
+    MovementSpeed: 0.2
+  Model:
+    Id: kazura
+    ViewRadius: 64
+    DamageTint: true
+    Scale: 2.0
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:kazura_squid_ink_sac 1-2 0.8
+  Skill: 
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

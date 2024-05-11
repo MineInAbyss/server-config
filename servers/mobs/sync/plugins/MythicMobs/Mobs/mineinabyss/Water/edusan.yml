@@ -1,0 +1,29 @@
+edusan:
+  Type: COD
+  Display: "Edusan"
+  Health: 20
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    interactable: true
+    MovementSpeed: 0.3
+  Model:
+    Id: edusan
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 15-20
+    - geary mineinabyss:demonfish_raw 1 
+  Skill: 
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
