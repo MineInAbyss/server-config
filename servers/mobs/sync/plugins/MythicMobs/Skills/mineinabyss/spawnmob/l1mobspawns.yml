@@ -1,0 +1,69 @@
+benigumaspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=beniguma;amount=0-3;radius=3} @self
+
+okibospawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=okibo;amount=0-1;radius=6} @self
+
+fuwagispawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=fuwagi;amount=0-2;radius=3} @self
+
+spiralsquidspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=spiralsquid;amount=0-1;radius=3} @self
+
+hammerbeakspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=hammerbeak;amount=0-2;radius=3} @self
+
+cyatoria:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=cyatoria;amount=0-1;radius=3} @self
+
+bighammerbeakspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=hammerbeak;amount=2;radius=3} @self

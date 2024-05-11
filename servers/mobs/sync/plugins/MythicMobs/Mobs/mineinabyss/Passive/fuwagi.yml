@@ -33,3 +33,4 @@ fuwagi:
     - effect:sound{s=mineinabyss:entity.fuwagi.hurt;v=6;p=0.2} @self ~onDamaged
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=fuwagispawn} @self ~onspawn

@@ -21,7 +21,7 @@ hammerbeak:
     MaxCombatDistance: 128
     MovementSpeed: 0.32
   Model:
-    Id: qmob_hammerbeakSmall
+    Id: qmob_hammerbeaksmall
     ViewRadius: 64
     Drive: false
     DamageTint: true
@@ -32,6 +32,7 @@ hammerbeak:
     - geary mineinabyss:hammerbeak_feather 1-2 0.5
 
   Skills:
+  - skill{s=hammerbeakspawn} @self ~onspawn
   # Misc
   - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
   - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
@@ -90,6 +91,7 @@ hammerbeakLarge:
   DamageModifiers:
 
   Skills:
+  - skill{s=bighammerbeakspawn} @self ~onspawn
   # Misc
   - model{mid=qmob_hammerbeak} @self ~onSpawn
   - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
