@@ -13,9 +13,14 @@ okibo:
   Type: 
   Action: ADD
   Worlds: world
-  Chance: 0.005
+  Chance: 5
   Priority: 1
   UseWorldScaling: true
   PositionType: GROUND
   Conditions:
   - region{r=layerone} true
+  - onblock{m=DIRT,GRASS_BLOCK} true
+
+
+
+
