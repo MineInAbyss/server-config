@@ -1,0 +1,20 @@
+benigumaspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=beniguma;amount=1-3;radius=3} @self
+
+okibospawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=okibo;amount=0-1;radius=6} @self
+

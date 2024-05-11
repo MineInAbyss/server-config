@@ -1,7 +1,5 @@
 vinebinderattack:
   Conditions:
-  - offgcd
-  - incombat
   - targetwithin{d=4} true
   Skills:
   - cancelevent{sync=true} @Self
@@ -26,6 +24,10 @@ vinebinderattack:
 vinebinderATTACKDamage:
   Skills:
     - damage{amount=5}
+vinebinderATTACKDamage2:
+  Cooldown: 1
+  Skills:
+    - damage{amount=5}
 
 vinebinderwave:
   Cooldown: 15
@@ -36,7 +38,7 @@ vinebinderwave:
     - gcd{ticks=200}
     - state{s=swing;li=3;lo=2} @self 
     - delay 15
-    - particles{p=crit_magic;a=25;speed=2;hs=0.1;vs=0.1;repeat=40;repeatInterval=1} @modelpart{mid=vinebinder;pid=tonque1}
+    - particles{p=crit_magic;a=2;hs=0.1;vs=0.1;repeat=40;repeatInterval=1} @modelpart{mid=vinebinder;pid=tonque1}
     - skill{s=[- totem{md=2;c=1;oH=vinebinderATTACKDamage2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=50;repeatinterval=1} @LivingNearTargetLocation{r=1}  ]} @modelpart{mid=vinebinder;pid=tonque1}
     - delay 45
     - state{s=swing;li=3;lo=2;r=true} @self 

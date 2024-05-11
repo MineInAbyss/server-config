@@ -30,7 +30,7 @@ vinebinder:
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
-  - skill:vinebinderattack @Self ~onAttack
+  - skill{s=vinebinderattack} @Self ~onAttack
   - skill{s=vinebinderwave} @target ~onTimer:20
 
 vineblaster:
@@ -58,7 +58,7 @@ vineblaster:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 1
+    Scale: 0.3
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  

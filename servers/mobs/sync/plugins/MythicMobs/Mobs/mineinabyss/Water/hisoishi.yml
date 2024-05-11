@@ -1,16 +1,15 @@
 hisoishi:
-  Type: RAVAGER
+  Type: DROWNED
   Modules:
     ThreatTable: true
-  Health: 80 # change this
-  Damage: 10 
+  Health: 25 # change this
+  Damage: 4 
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
-    DigOutOfGround: true
     Collidable: true
     Silent: true
-    FollowRange: 48
+    FollowRange: 20
     MaxCombatDistance: 35
   AIGoalSelectors:
     - clear
@@ -22,7 +21,7 @@ hisoishi:
     - clear
     - attacker
   Equipment:
-  - diamond_axe HAND
+    - diamond_axe HAND
   DamageModifiers:
   Model:
     Id: hisoishi
@@ -32,14 +31,14 @@ hisoishi:
   Skills:
   ####### Misc
 #  - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.2
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-  - skill{s=hs_backup} @self ~ondamaged
-  - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=hsHurt} @self ~onHurt
-  - skill{s=hsDeath} @self ~onDeath
-  - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
+    - skill{s=hs_backup} @self ~ondamaged
+    - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hsHurt} @self ~onHurt
+    - skill{s=hsDeath} @self ~onDeath
+    - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
 baby_hisoishi:
   Type: RAVAGER
@@ -65,7 +64,7 @@ baby_hisoishi:
     - clear
     - attacker
   Equipment:
-  - diamond_axe HAND
+    - diamond_axe HAND
   DamageModifiers:
   Model:
     Id: hisoishi
@@ -75,11 +74,11 @@ baby_hisoishi:
     Scale: 0.4
   Skills:
   ####### Misc
-  - CancelEvent{sync=true} @self ~onAttack
-  - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.1
-  - skill{s=tj_backup} @self ~ondamaged
-  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=tjHurt} @self ~onHurt
-  - skill{s=tjDeath} @self ~onDeath
-  - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
+    - CancelEvent{sync=true} @self ~onAttack
+    - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.1
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
   #- skill:MIAPetExpNearby{exp=1} ~onDeath

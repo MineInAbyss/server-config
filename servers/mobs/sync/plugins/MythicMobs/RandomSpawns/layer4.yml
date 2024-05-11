@@ -1,0 +1,59 @@
+MSO_AmethystGolem:
+  Type: MSO_AmethystGolem
+  Action: REPLACE
+  Reason: NATURAL
+  Worlds: world
+  Biomes: LUSH_CAVES
+  Chance: 0.05
+  Priority: 1
+  UseWorldScaling: true
+  PositionType: GROUND
+  Conditions:
+  - onblock 10
+
+MSO_DwellingBug:
+  Type: MSO_DwellingBug
+  Action: REPLACE
+  Reason: NATURAL
+  Worlds: world
+  Chance: 0.025
+  Priority: 1
+  UseWorldScaling: true
+  PositionType: GROUND
+  Conditions:
+  - heightbelow 0
+
+MSO_GlowFly:
+  Type: MSO_GlowFly
+  Action: REPLACE
+  Worlds: world
+  Chance: 0.05
+  Priority: 1
+  UseWorldScaling: true
+  PositionType: GROUND
+  Conditions:
+  - heightbelow 10
+
+MSO_MinerDwarf:
+  Type: MSO_MinerDwarf
+  Action: REPLACE
+  Reason: NATURAL
+  Worlds: world
+  Chance: 0.01
+  Priority: 1
+  UseWorldScaling: true
+  PositionType: GROUND
+  Conditions:
+  - heightbelow 0
+
+MSO_Spittleshrub:
+  Type: MSO_Spittleshrub
+  Action: REPLACE
+  Worlds: world
+  Biome: LUSH_CAVES
+  Chance: 0.05
+  Priority: 1
+  UseWorldScaling: true
+  PositionType: GROUND
+  Conditions:
+  - heightbelow 0
