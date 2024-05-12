@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: RABBIT_FOOT
-    displayName: "<#E0E0E0>Fuwagi Foot"
+    itemName: "<#E0E0E0>Fuwagi Foot"
     customModelData: 1
     lore:
       - <yellow>Dropped from the fast and the curious

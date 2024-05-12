@@ -1,7 +1,7 @@
 namespaces: [geary, looty, mineinabyss]
 set.item:
   item:
-    displayName: <dark_gray>Grim Ripper
+    itemName: <dark_gray>Grim Ripper
     type: KNOWLEDGE_BOOK
     customModelData: 6
 disableItemInteractions: {}

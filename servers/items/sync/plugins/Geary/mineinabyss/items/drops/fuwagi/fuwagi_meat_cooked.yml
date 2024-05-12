@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: APPLE
-    displayName: <#E0E0E0>Cooked Fuwagi Meat
+    itemName: <#E0E0E0>Cooked Fuwagi Meat
     customModelData: 115
     lore:
       - <yellow>Dropped from the fast and the curious

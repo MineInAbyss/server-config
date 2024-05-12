@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: BLACK_WOOL
-    displayName: <#3D3D3D>Inbyo Fur
+    itemName: <#3D3D3D>Inbyo Fur
     customModelData: 1
     lore:
       - <yellow>Aquired by skinning an <#636363>Inbyo

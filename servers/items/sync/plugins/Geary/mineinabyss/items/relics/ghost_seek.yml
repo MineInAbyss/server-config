@@ -1,7 +1,7 @@
 namespaces: [geary, looty, mineinabyss]
 set.item:
   item:
-    displayName: <gold>Ghost Seek
+    itemName: <gold>Ghost Seek
     type: CARVED_PUMPKIN
     customModelData: 8
 #ghost_seek:

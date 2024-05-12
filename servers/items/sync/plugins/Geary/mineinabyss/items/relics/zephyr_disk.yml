@@ -2,7 +2,7 @@ namespaces: [ geary, looty, mineinabyss ]
 set.item:
   item:
     type: KNOWLEDGE_BOOK
-    displayName: <dark_aqua>Zephyr Disk
+    itemName: <dark_aqua>Zephyr Disk
     customModelData: 5
 disableItemInteractions: { }
 skills:

@@ -1,7 +1,7 @@
 namespaces: [geary, looty, blocky, bonfire, mobzy]
 set.item:
   item:
-    displayName: <#FF9D26>Bonfire
+    itemName: <#FF9D26>Bonfire
     type: PAPER
     customModelData: 1034
 set.recipes:

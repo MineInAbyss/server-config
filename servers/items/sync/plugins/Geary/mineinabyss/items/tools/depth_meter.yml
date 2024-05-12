@@ -2,7 +2,7 @@ namespaces: [ geary, mineinabyss, looty ]
 set.item:
   item:
     type: PAPER
-    displayName: <dark_aqua>Depth Meter
+    itemName: <dark_aqua>Depth Meter
     customModelData: 126
     lore:
       - <aqua>Used by delvers to keep

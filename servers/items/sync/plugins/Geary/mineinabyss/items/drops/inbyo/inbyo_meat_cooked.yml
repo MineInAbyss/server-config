@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: APPLE
-    displayName: <#3D3D3D>Cooked Inbyo Meat
+    itemName: <#3D3D3D>Cooked Inbyo Meat
     customModelData: 101
     lore:
       - <yellow>Obtained from slaying an <#636363>Inbyo

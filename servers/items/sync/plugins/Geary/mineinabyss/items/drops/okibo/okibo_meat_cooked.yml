@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: APPLE
-    displayName: <#10DEA7>Cooked Okibo Meat
+    itemName: <#10DEA7>Cooked Okibo Meat
     customModelData: 113
     lore:
       - <yellow>Tastes excellent when prepared well.

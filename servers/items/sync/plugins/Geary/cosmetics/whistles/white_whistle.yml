@@ -1,7 +1,7 @@
 namespaces: [geary]
 set.item:
   item:
-    displayName: <#FFFFFF>White Whistle
+    itemName: <#FFFFFF>White Whistle
     type: POTION
     color: "#FFFFFF"
     customModelData: 205

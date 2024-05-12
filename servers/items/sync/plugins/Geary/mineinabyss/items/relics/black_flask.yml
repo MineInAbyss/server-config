@@ -2,7 +2,7 @@ namespaces: [geary, looty, mineinabyss]
 set.item:
   item:
     type: POTION
-    displayName: <gold>Black Flask
+    itemName: <gold>Black Flask
     customModelData: 1
     lore:
       - <yellow>A fleshy bottle filled with a thick, black, oily substance.

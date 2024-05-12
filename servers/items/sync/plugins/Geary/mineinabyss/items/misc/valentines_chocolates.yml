@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: APPLE
-    displayName: <#c90076>Valentine's Chocolates
+    itemName: <#c90076>Valentine's Chocolates
     customModelData: 150
     lore:
       - <white>Obtained during the <#c90076>Valentine's Day <white>event.

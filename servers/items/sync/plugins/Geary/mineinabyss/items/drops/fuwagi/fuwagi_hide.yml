@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: RABBIT_HIDE
-    displayName: <#E0E0E0>Fuwagi Hide
+    itemName: <#E0E0E0>Fuwagi Hide
     customModelData: 1
     lore:
       - <yellow>Dropped from the fast and the curious

@@ -1,7 +1,7 @@
 namespaces: [geary]
 set.item:
   item:
-    displayName: <#FF9D26>Backpack
+    itemName: <#FF9D26>Backpack
     type: POTION
     color: "220, 192, 105"
     customModelData: 110

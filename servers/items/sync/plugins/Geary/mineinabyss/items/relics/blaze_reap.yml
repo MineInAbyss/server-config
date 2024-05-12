@@ -3,7 +3,7 @@ set.item:
   item:
     type: minecraft:knowledge_book
     customModelData: 2
-    displayName: <#617B94><b>Blaze Reap
+    itemName: <#617B94><b>Blaze Reap
     lore:
       - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
       - <#C6CC8A>which causes ongoing explosions
@@ -22,7 +22,7 @@ skills:
           isSneaking: true
       - cooldown:
           length: 2s
-          displayName: <#617B94>Blaze Reap
+          itemName: <#617B94>Blaze Reap
     run:
       - explode:
           breakBlocks: false
