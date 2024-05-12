@@ -25,7 +25,6 @@ set.*:
         tempt:
           items:
             - type: APPLE
-            - type: APPLE
         avoid_player:
           radius: 15
         random_stroll_land: { }
