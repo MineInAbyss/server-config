@@ -1,6 +1,5 @@
-namespaces: [geary, blocky, looty]
-inherit:
-  from: [mineinabyss:wood, mineinabyss:ground_furniture]
+namespaces: [geary, blocky]
+inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
     type: TIPPED_ARROW
@@ -22,10 +21,10 @@ furniture:
       height: 2.0
     - width: 1.0
       height: 2.0
-      originOffset: { x: -1, y: 0, z: 0 }
+      offset: { x: -1, y: 0, z: 0 }
     - width: 1.0
       height: 2.0
-      originOffset: { x: 1, y: 0, z: 0 }
+      offset: { x: 1, y: 0, z: 0 }
 placableOn:
   floor: true
   ceiling: false

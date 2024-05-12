@@ -13,11 +13,12 @@ set.item:
       nutrition: 3
       #replacement:
       #  prefab: mineinabyss:ashimite_meat_bone
-  effectChance: 0.35
-  effectList:
-    - type: minecraft:hunger
-      duration: 10s
-      amplifier: 2
-      isAmbient: true
-      hasParticles: true
-      hasIcon: true
+      effects:
+        - effect:
+            type: minecraft:hunger
+            duration: 10s
+            amplifier: 2
+            isAmbient: true
+            hasParticles: true
+            hasIcon: true
+          probability: 0.35

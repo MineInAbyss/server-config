@@ -1,6 +1,5 @@
-namespaces: [geary, blocky, looty]
-inherit:
-  from: [mineinabyss:cut_diorite_pillar]
+namespaces: [geary, blocky]
+inherit: [mineinabyss:cut_diorite_pillar]
 directional:
   parentBlock: mineinabyss:cut_diorite_pillar
 set.block:

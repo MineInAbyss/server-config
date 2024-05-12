@@ -1,4 +1,4 @@
-namespaces: [ geary, mobzy, looty, mineinabyss ]
+namespaces: [ geary, mobzy, mineinabyss ]
 inherit:
   -  mineinabyss:npc
 set.modelengineModel:

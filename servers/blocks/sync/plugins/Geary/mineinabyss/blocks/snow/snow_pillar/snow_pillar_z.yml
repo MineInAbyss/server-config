@@ -1,6 +1,5 @@
-namespaces: [geary, blocky, looty]
-inherit:
-  from: [mineinabyss:snow_pillar]
+namespaces: [geary, blocky]
+inherit: [mineinabyss:snow_pillar]
 directional:
   parentBlock: mineinabyss:snow_pillar
 set.block:

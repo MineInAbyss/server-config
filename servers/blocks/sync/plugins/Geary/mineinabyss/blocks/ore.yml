@@ -1,4 +1,4 @@
-namespaces: [geary, blocky, looty]
+namespaces: [geary, blocky]
 breaking:
   baseDuration: 15s
   modifiers:
