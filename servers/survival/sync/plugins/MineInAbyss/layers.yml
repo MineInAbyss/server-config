@@ -38,7 +38,7 @@ layers:
     duration: "500ms"
     iterations: 6
     particles:
-    - "SLIME"
+    - "ITEM_SLIME"
   hasPvpDefault: false
   liquidFlowLimit: -1
   blockBlacklist:
@@ -90,7 +90,7 @@ layers:
     duration: "500ms"
     iterations: 6
     particles:
-    - "SLIME"
+    - "ITEM_SLIME"
   hasPvpDefault: false
   liquidFlowLimit: -1
   blockBlacklist:
@@ -140,7 +140,7 @@ layers:
     duration: "500ms"
     iterations: 6
     particles:
-    - "SLIME"
+    - "ITEM_SLIME"
   - !<sound>
     sounds:
     - "block.fire.ambient"
@@ -206,7 +206,7 @@ layers:
     duration: "2s"
     iterations: 4
     particles:
-    - "REDSTONE"
+    - "DUST"
   - !<sound>
     sounds:
     - "entity.zombie.step"
@@ -273,7 +273,7 @@ layers:
     duration: "2s"
     iterations: 4
     particles:
-    - "REDSTONE"
+    - "DUST"
   - !<sound>
     sounds:
     - "ambient.cave"
