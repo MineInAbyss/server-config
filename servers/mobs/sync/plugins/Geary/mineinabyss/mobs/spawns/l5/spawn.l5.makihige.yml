@@ -1,5 +1,5 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.makihige ]
+  -  mineinabyss:spawn.makihige
 spawn_regions:
   keys: [ layerfive ]

@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:passive]
+  - mineinabyss:passive
 displayName: "<red>Beniguma"
 set.*:
   modelengineModel:

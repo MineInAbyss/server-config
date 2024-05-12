@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:hostile_flying]
+  - mineinabyss:hostile_flying
 set.mythicMob: kagi_tachikiri
 displayName: "<#5468A8>Kagi-Tachikiri"
 drop:

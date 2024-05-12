@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.splitjaw ]
+  -  mineinabyss:spawn.splitjaw
 spawn_regions:
   keys: [ layertwo ]
 check.spawn.local_group:

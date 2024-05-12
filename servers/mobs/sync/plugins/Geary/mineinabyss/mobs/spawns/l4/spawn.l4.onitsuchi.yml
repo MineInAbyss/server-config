@@ -1,5 +1,5 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.onitsuchi ]
+  -  mineinabyss:spawn.onitsuchi
 spawn_regions:
   keys: [ layerfour ]

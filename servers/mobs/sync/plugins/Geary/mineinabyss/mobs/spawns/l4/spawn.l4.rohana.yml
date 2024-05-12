@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.rohana ]
+  -  mineinabyss:spawn.rohana
 spawn.amount:
   amount: 3..5
 spawn.spread:

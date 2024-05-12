@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty, mineinabyss ]
 inherit:
-  from: [ mineinabyss:npc ]
+  -  mineinabyss:npc
 set.modelengineModel:
   modelId: guildmaster
 okibotravel: { }

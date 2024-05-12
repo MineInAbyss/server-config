@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:hostile ]
+  -  mineinabyss:hostile
 displayName: "<#3D3D3D>Inbyo"
 set.*:
   modelengineModel:

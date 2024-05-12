@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:hostile_flying]
+  - mineinabyss:hostile_flying
 set.mythicMob: madokajack
 displayName: "<#1C439E>Madokajack"
 drop:

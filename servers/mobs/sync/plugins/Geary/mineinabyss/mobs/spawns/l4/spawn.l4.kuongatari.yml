@@ -1,5 +1,5 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.kuongatari ]
+  -  mineinabyss:spawn.kuongatari
 spawn_regions:
   keys: [ layerfour ]

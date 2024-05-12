@@ -1,5 +1,5 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.dosetori ]
+  -  mineinabyss:spawn.dosetori
 spawn_regions:
   keys: [ layerthree ]

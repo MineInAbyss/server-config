@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:passive ]
+  -  mineinabyss:passive
 displayName: "<#FFFF99>Rinsipede"
 set.*:
   modelengineModel:

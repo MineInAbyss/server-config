@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:passive]
+  - mineinabyss:passive
 displayName: "<#E0E0E0>Fuwagi"
 set.*:
   modelengineModel:

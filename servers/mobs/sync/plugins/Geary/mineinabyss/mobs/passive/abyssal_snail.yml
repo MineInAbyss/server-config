@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:passive ]
+  -  mineinabyss:passive
 displayName: "<#785F34>Abyssal Snail"
 set.*:
   modelengineModel:

@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:hostile_flying]
+  - mineinabyss:hostile_flying
 set.mythicMob: corpse_weeper
 displayName: "<#D12B26>Corpse-Weeper"
 drop:

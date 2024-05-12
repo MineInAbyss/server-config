@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.silkfang ]
+  -  mineinabyss:spawn.silkfang
 spawn_regions:
   keys: [ layertwo ]
 

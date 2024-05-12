@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:hostile ]
+  -  mineinabyss:hostile
 set.*:
   modelengineModel:
     modelId: deathknight

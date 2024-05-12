@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:passive ]
+  -  mineinabyss:passive
 displayName: "<#7D93FF>Kakatsumuri"
 set.*:
   modelengineModel:

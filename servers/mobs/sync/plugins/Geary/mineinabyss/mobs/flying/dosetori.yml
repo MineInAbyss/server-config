@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:hostile_flying ]
+  -  mineinabyss:hostile_flying
 set.mythicMob: dosetori
 displayName: "<#FFF821>Dosetori"
 drop:

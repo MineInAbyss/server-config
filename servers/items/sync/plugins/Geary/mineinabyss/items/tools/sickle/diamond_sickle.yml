@@ -1,6 +1,6 @@
 namespaces: [geary, mineinabyss, looty]
 inherit:
-  from: [mineinabyss:sickle]
+  - mineinabyss:sickle
 set.item:
   item:
     displayName: <dark_aqua>Diamond Sickle

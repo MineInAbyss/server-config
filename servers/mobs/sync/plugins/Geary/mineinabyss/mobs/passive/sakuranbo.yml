@@ -1,6 +1,6 @@
 namespaces: [ geary, mobzy, looty ]
 inherit:
-  from: [ mineinabyss:passive ]
+  -  mineinabyss:passive
 displayName: "<gold>Sakuranbo"
 set.*:
   modelengineModel:

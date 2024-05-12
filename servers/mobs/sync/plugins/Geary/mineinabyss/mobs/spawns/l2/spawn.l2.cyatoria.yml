@@ -1,5 +1,5 @@
 namespaces: [geary]
 inherit:
-  from: [ mineinabyss:spawn.cyatoria ]
+  -  mineinabyss:spawn.cyatoria
 spawn_regions:
   keys: [ layertwo ]

@@ -1,6 +1,6 @@
 namespaces: [geary]
 inherit:
-  from: [mineinabyss:hostile_flying]
+  - mineinabyss:hostile_flying
 set.mythicMob: onitsuchi
 displayName: "<#5C471D>Onitsuchi"
 drop:
