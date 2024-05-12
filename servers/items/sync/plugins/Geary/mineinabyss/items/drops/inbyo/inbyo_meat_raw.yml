@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -8,6 +8,6 @@ set.item:
       - <yellow>Obtained from slaying an <#636363>Inbyo
       - <yellow>in the <green>Inverted Forest.
       - <#B5B5B5><i>Doesn't look very tasty...
-food:
-  saturation: 1.8
-  hunger: 3
+    food:
+      saturation: 1.8
+      nutrition: 3

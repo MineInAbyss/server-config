@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -6,6 +6,6 @@ set.item:
     customModelData: 20
     lore:
       - <green><i>Yummy
-food:
-  saturation: 1.5
-  hunger: 3
+    food:
+      saturation: 1.5
+      nutrition: 3

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -11,9 +11,9 @@ set.item:
       - <yellow>rare creature originating from
       - <yellow>the <#404040>7th Layer, The Final Maelstrom<yellow>.
       - <#54FFA4><i>I assure you, it tastes just like chicken...
-food:
-  saturation: 7.2
-  hunger: 6
+    food:
+      saturation: 7.2
+      nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:

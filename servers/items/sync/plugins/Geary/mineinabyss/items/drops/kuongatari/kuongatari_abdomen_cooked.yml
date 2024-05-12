@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -8,9 +8,9 @@ set.item:
       - <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>Tastes suprisingly tasty for such a small bug..
-food:
-  saturation: 0.6
-  hunger: 1
+    food:
+      saturation: 0.6
+      nutrition: 1
 set.recipes:
   discoverRecipes: true
   recipes:

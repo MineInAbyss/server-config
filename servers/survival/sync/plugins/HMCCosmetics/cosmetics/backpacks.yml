@@ -61,14 +61,14 @@ generic_backpack:
     material: POTION
     color: "#ffffff"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 105
   firstperson-item:
     name: "<#7e481d>Generic Backpack"
     material: POTION
     color: "#ffffff"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 115
 explorer_backpack:
   slot: CUSTOM

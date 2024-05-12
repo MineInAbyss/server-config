@@ -67,7 +67,7 @@ mining_helmet:
     material: POTION
     color: "#FFFFFF"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 312
 goggles:
   slot: HELMET
@@ -78,7 +78,7 @@ goggles:
     material: POTION
     color: "#FFFFFF"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 313
 double_flower:
   slot: HELMET
@@ -89,7 +89,7 @@ double_flower:
     material: POTION
     color: "#F26AEB"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 314
 side_flower:
   slot: HELMET
@@ -100,5 +100,5 @@ side_flower:
     material: POTION
     color: "#F26AEB"
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     model-data: 315

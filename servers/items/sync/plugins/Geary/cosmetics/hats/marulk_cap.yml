@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     displayName: <#1900FF>Marulk's Cap
@@ -8,6 +8,6 @@ set.item:
     type: POTION
     customModelData: 305
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

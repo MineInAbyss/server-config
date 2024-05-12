@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,11 +9,11 @@ set.item:
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
       - <yellow>and cooking its meat.
       - <#824E21><i>Very tasty and rich in nutrients!
-food:
-  saturation: 12.8
-  hunger: 8
-  replacement:
-    prefab: mineinabyss:ashimite_meat_bone
+    food:
+      nutrition: 8
+      saturation: 12.8
+      #replacement:
+      #  prefab: mineinabyss:ashimite_meat_bone
 set.recipes:
   discoverRecipes: true
   recipes:

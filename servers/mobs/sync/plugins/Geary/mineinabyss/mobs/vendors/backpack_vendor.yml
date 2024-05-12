@@ -32,7 +32,7 @@ shopkeeper:
         type: POTION
         color: "255, 255, 255"
         itemFlags:
-          - HIDE_POTION_EFFECTS
+          - HIDE_ADDITIONAL_TOOLTIP
         customModelData: 105
       currencyType: ORTH_COIN
       price: 3

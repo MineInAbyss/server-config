@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     displayName: <#FFD503>Lyza's Hat
@@ -9,6 +9,6 @@ set.item:
     color: "#FFFFFF"
     customModelData: 304
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

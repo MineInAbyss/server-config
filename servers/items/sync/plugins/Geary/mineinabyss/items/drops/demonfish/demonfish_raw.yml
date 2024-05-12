@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,6 +9,6 @@ set.item:
       - <yellow>catching a <#257BEB>Demonfish <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#1B5BAD><i>Seems like a great source for food!
-food:
-  saturation: 0.4
-  hunger: 2
+    food:
+      saturation: 0.4
+      nutrition: 2

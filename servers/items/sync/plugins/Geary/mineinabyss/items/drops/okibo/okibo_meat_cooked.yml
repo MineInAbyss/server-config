@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -12,9 +12,9 @@ set.item:
       - <yellow>The <gold>GuildHQ Head Chef <yellow>butchers
       - <yellow>the <#11E8AF>Okibo <yellow>they arrive on
       - <yellow>and prepare a giant feast for all.
-food:
-  saturation: 12.8
-  hunger: 8
+    food:
+      saturation: 12.8
+      nutrition: 8
 set.recipes:
   discoverRecipes: true
   recipes:

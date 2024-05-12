@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,9 +9,9 @@ set.item:
       - <yellow>in the <green>Great Fault<yellow>.
       - <#C27643><i>Perhaps I will become smarter
       - <#C27643><i>if I consume this brain?
-food:
-  saturation: 6
-  hunger: 5
+    food:
+      saturation: 6
+      nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:

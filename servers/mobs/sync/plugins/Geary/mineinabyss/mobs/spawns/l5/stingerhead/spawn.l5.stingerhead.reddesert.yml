@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 inherit:
   from: [ mineinabyss:spawn.stingerhead.base ]
 spawn_regions:

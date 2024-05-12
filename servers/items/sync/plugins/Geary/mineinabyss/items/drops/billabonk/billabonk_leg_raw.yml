@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -8,6 +8,6 @@ set.item:
       - <yellow>Dropped by <#0357AB>Billabonks <yellow>in
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <#0357AB><i>Do the stanky leg
-food:
-  saturation: 0.4
-  hunger: 2
+    food:
+      saturation: 0.4
+      nutrition: 2

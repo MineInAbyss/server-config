@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,6 +10,6 @@ set.item:
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <white><i>A thick layer of fat clings to the meat.
       - <white><i>Cooking it should help making it edible.
-food:
-  saturation: 1.8
-  hunger: 3
+    food:
+      saturation: 1.8
+      nutrition: 3

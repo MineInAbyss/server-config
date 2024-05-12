@@ -10,7 +10,7 @@ buttons:
     type: minecraft:potion
     customModelData: 1000
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:

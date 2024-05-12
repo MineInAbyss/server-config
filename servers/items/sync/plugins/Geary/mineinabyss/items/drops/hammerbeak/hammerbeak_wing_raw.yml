@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,6 +10,6 @@ set.item:
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <#A9CCCA><i>This meat seems delicious
       - <#A9CCCA><i>if cooked properly!
-food:
-  saturation: 1.2
-  hunger: 2
+    food:
+      saturation: 1.2
+      nutrition: 2

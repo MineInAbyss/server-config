@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,9 +10,9 @@ set.item:
       - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
       - <#595959><i>tastes more like chicken now.
       - <#595959><i>it's not so squishy anymore...
-food:
-  saturation: 6
-  hunger: 5
+    food:
+      saturation: 6
+      nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:

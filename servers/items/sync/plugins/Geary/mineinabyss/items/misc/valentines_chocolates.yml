@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -7,6 +7,6 @@ set.item:
     lore:
       - <white>Obtained during the <#c90076>Valentine's Day <white>event.
       - <white>Can be traded at <green>Orth <white>or eaten.
-food:
-  saturation: 3
-  hunger: 4
+    food:
+      saturation: 3
+      nutrition: 4

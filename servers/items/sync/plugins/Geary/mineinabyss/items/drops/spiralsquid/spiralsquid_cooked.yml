@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,9 +9,9 @@ set.item:
       - <yellow>catching a <#6CE5F5>Spiralsquid <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#35ADBD><i>Seems like a great source for food!
-food:
-  saturation: 6
-  hunger: 5
+    food:
+      saturation: 6
+      nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:

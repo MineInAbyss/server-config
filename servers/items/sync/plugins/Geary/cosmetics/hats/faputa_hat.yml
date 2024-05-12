@@ -1,10 +1,10 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     displayName: <#536b92>Faputa Hat
     type: POTION
     customModelData: 302
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

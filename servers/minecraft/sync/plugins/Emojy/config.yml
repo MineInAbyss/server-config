@@ -6,7 +6,7 @@ defaultAscent: 8
 spaceFont: minecraft:space
 requirePermissions: true
 supportForceUnicode: true
-debug: true
+logLevel: Debug
 emojyList:
   ignoredEmoteIds: []
   ignoredGifIds: []

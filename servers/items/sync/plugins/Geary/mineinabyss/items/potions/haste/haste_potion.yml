@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: POTION
@@ -9,16 +9,18 @@ set.item:
     enchantments: # For Glint Effect
         - enchant: minecraft:infinity
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
       - HIDE_ENCHANTS
-food:
-  hunger: 0
-  saturation: 0
-  replacement:
-    type: GLASS_BOTTLE
-  effectList:
-    - type: minecraft:haste
-      duration: 3m
+    food:
+      nutrition: 0
+      saturation: 0
+      #replacement:
+      #  type: GLASS_BOTTLE
+      effects:
+        - effect:
+            type: minecraft:haste
+            duration: 3m
+          probability: 1.0
 set.potion_mixes:
   potionmixes:
     - input:

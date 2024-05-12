@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,6 +10,6 @@ set.item:
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#595959><i>It is said it tastes like sushi.
       - <#595959><i>Though by it's smell I doubt it...
-food:
-  saturation: 0.4
-  hunger: 2
+    food:
+      saturation: 0.4
+      nutrition: 2

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,9 +9,9 @@ set.item:
       - <yellow>the <#8F2222>Uibuta <yellow>flesh is now edible.
       - <#C42F2F><i>This should be enough food
       - <#C42F2F><i>to last for daaaaayyss!!
-food:
-  saturation: 7.2
-  hunger: 6
+    food:
+      saturation: 7.2
+      nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:

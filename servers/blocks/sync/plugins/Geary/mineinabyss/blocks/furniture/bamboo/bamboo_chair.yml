@@ -8,7 +8,7 @@ set.item:
     customModelData: 2
     color: 255, 255, 255
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 furniture:
   rotationType: STRICT
   interactionHitbox:

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,6 +9,6 @@ set.item:
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <red><i>It both smells and tastes horrible...
       - <red><i>Will cooking this help?
-food:
-  saturation: 1.8
-  hunger: 3
+    food:
+      saturation: 1.8
+      nutrition: 3

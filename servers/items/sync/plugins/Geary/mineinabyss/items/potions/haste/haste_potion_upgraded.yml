@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: POTION
@@ -9,17 +9,20 @@ set.item:
         - enchant: minecraft:infinity
     color: 233,177,21
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
       - HIDE_ENCHANTS
-food:
-  hunger: 0
-  saturation: 0
-  replacement:
-    type: GLASS_BOTTLE
-  effectList:
-    - type: minecraft:haste
-      duration: 3m
-      amplifier: 1
+    food:
+      nutrition: 0
+      saturation: 0
+      #replacement:
+      #  type: GLASS_BOTTLE
+      effects:
+        - effect:
+            type: minecraft:haste
+            duration: 3m
+            amplifier: 1
+          probability: 1.0
+
 set.potion_mixes:
   potionmixes:
     - ingredient: minecraft:glowstone_dust

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,9 +10,9 @@ set.item:
       - <yellow>Can also be obtained by cooking
       - <yellow>a <#0357AB>Raw Billabonk Leg<yellow>.
       - <#0357AB><i>Do the stanky leg
-food:
-  saturation: 6
-  hunger: 5
+    food:
+      saturation: 6
+      nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:

@@ -1,7 +1,7 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
-    type: SCUTE
+    type: TURTLE_SCUTE
     displayName: <#3C3B4A>Titanjaw Scale
     customModelData: 1
     lore:

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,9 +9,9 @@ set.item:
       - <yellow>found <yellow>deep in the caverns of the <green>Great Fault<yellow>.
       - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
       - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
-food:
-  saturation: 9.6
-  hunger: 6
+    food:
+      saturation: 9.6
+      nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:

@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -10,9 +10,9 @@ set.item:
       - <yellow>Can also be acquired from cooking
       - <#705723>Raw Onitsuchi Meat<yellow>.
       - <#A9CCCA><i>This tastes delicious!
-food:
-  saturation: 7.2
-  hunger: 6
+    food:
+      saturation: 7.2
+      nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:

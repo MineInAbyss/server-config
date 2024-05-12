@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     displayName: <#262626>Ozen's Hat
@@ -8,6 +8,6 @@ set.item:
     color: "#FFFFFF"
     customModelData: 307
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

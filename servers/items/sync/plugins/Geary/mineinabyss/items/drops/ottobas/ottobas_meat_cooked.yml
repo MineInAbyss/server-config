@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -9,9 +9,9 @@ set.item:
       - <#D4D4D4>Ottobas <yellow>flesh is now edible.
       - <white><i>This should be enough food
       - <white><i>to last for daaaaayyss!!
-food:
-  saturation: 12.8
-  hunger: 8
+    food:
+      saturation: 12.8
+      nutrition: 8
 set.recipes:
   discoverRecipes: true
   recipes:

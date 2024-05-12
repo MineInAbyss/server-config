@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [geary]
 set.item:
   item:
     type: APPLE
@@ -8,9 +8,9 @@ set.item:
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Tastes like fried chicken?
-food:
-  saturation: 7.2
-  hunger: 6
+    food:
+      saturation: 7.2
+      nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:

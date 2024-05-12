@@ -17,7 +17,7 @@ neritantan_balloon:
     name: "<gray>Neritantan Balloon"
     model-data: 301
     item-flags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
     color:
       red: 255
       blue: 255
