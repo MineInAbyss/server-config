@@ -3,7 +3,7 @@ inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Sculk Table
+    itemName: <white>Sculk Table
     customModelData: 1029
 blocky:sound:
   placeSound: block.amethyst_cluster.place

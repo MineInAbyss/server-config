@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: <#33404d>Noticeboard Okibo
+    itemName: <#33404d>Noticeboard Okibo
     customModelData: 1032
 blocky:sound:
   placeSound: block.wood.place

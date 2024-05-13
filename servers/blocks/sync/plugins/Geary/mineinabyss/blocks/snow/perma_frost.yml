@@ -4,7 +4,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: Perma Frost
+    itemName: Perma Frost
     customModelData: 2047
 set.block:
   blockType: NOTEBLOCK

@@ -2,7 +2,7 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: KNOWLEDGE_BOOK
-    displayName: <dark_gray>Tomorrow Signal
+    itemName: <dark_gray>Tomorrow Signal
     customModelData: 12
 #events:
 #  leftClick:

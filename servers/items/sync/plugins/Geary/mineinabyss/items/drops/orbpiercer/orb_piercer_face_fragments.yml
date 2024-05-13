@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: NETHER_WART
-    displayName: <#C74040>Orb Piercer Face Fragments
+    itemName: <#C74040>Orb Piercer Face Fragments
     customModelData: 1
     lore:
       - <yellow>Apparently the red orb on the

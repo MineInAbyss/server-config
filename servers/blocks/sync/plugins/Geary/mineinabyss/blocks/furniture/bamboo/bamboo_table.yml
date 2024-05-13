@@ -3,7 +3,7 @@ inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Bamboo Table
+    itemName: <white>Bamboo Table
     customModelData: 1008
 furniture:
   interactionHitbox:

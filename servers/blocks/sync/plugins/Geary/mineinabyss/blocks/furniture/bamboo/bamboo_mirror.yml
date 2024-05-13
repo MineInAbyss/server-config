@@ -3,7 +3,7 @@ inherit: [ mineinabyss:wood, mineinabyss:ground_furniture ]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Bamboo Mirror
+    itemName: <white>Bamboo Mirror
     customModelData: 1004
 furniture: { }
 

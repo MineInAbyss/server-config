@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#BDBDBD>Cooked Neritantan Meat
+    itemName: <#BDBDBD>Cooked Neritantan Meat
     customModelData: 109
     lore:
       - <yellow>Dropped from the small and flexible <#EBEBEB>Neritantans

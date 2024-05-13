@@ -3,7 +3,7 @@ inherit: [mineinabyss:stone]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Cut Diorite Pillar
+    itemName: <white>Cut Diorite Pillar
     customModelData: 2034
 set.block:
   blockType: NOTEBLOCK

@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: BONE_MEAL
-    displayName: <#FFFF99>Rinsipede Segments
+    itemName: <#FFFF99>Rinsipede Segments
     customModelData: 1
     lore:
       - <yellow>Dropped by <#FFFF99>Rinsipede

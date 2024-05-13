@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#85512E>Cooked Squidfly Brain
+    itemName: <#85512E>Cooked Squidfly Brain
     customModelData: 119
     lore:
       - <yellow>Dropped by <#85512E>Squidflies

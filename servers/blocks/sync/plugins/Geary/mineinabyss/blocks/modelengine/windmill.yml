@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: <#33404d>Windmill
+    itemName: <#33404d>Windmill
     customModelData: 1002
 disableItemInteractions: {}
 modelengine:

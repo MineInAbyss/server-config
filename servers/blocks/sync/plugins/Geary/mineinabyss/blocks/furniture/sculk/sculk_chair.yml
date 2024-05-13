@@ -3,7 +3,7 @@ inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Sculk Chair
+    itemName: <white>Sculk Chair
     customModelData: 1023
 furniture:
   collisionHitbox:

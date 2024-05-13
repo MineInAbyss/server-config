@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: NETHERITE_SCRAP
-    displayName: <#9C0F2C>Stingerhead Scale
+    itemName: <#9C0F2C>Stingerhead Scale
     customModelData: 1
     lore:
       - <yellow>Obtained from slaying

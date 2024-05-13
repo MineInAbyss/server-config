@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: BONE_MEAL
-    displayName: <#C42D2D>Virinsipede Segments
+    itemName: <#C42D2D>Virinsipede Segments
     customModelData: 2
     lore:
       - <yellow>Dropped by <#C42D2D>Virinsipede

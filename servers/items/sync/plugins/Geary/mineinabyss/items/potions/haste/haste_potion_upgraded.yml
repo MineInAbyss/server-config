@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POTION
-    displayName: "<#b5955f>Haste Potion"
+    itemName: "<#b5955f>Haste Potion"
     lore:
       - <light_purple>Haste II</light_purple> <blue>(3:00)</blue>
     enchantments: # For Glint Effect

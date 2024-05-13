@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: Freesia Purple
+    itemName: Freesia Purple
     customModelData: 3015
 set.block:
   blockType: WIRE

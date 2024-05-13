@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#8F2222>Raw Uibuta Meat
+    itemName: <#8F2222>Raw Uibuta Meat
     customModelData: 2
     lore:
       - <yellow>Obtained by carving up the

@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POPPED_CHORUS_FRUIT
-    displayName: <#9A1CAD>Splitjaw Scales
+    itemName: <#9A1CAD>Splitjaw Scales
     customModelData: 1
     lore:
       - <yellow>Occasionally dropped by <#B321C9>Splitjaws

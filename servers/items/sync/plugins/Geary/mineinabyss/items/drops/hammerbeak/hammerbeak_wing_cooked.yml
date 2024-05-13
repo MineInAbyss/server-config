@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#613F0C>Cooked Hammerbeak Wing
+    itemName: <#613F0C>Cooked Hammerbeak Wing
     customModelData: 106
     lore:
       - <yellow>Obtained by incinerating <#705723>Hammerbeaks

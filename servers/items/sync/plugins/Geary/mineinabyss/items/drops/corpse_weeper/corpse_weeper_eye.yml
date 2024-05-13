@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: ENDER_EYE
-    displayName: "<#D12B26>Corpse-Weeper Eye"
+    itemName: "<#D12B26>Corpse-Weeper Eye"
     customModelData: 1
     lore:
       - <yellow>Rarely dropped from <#FFF34E>Corpse-Weepers

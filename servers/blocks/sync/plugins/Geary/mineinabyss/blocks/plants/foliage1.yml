@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: <#7a4e48>Foliage 1
+    itemName: <#7a4e48>Foliage 1
     customModelData: 3001
 placableOn:
   floor: true

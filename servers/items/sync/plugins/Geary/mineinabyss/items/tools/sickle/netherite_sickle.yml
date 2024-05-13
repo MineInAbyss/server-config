@@ -3,7 +3,7 @@ inherit:
   - mineinabyss:sickle
 set.item:
   item:
-    displayName: <#172929>Netherite Sickle
+    itemName: <#172929>Netherite Sickle
     type: NETHERITE_HOE
     customModelData: 1
 set.recipes:

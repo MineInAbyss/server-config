@@ -2,7 +2,7 @@ namespaces: [geary, mineinabyss]
 disableItemInteractions: {}
 set.item:
   item:
-    displayName: Grappling Hook
+    itemName: Grappling Hook
     type: GOLDEN_HOE
     customModelData: 1
 grappling_hook:

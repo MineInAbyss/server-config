@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: FLINT
-    displayName: "<#D63624>Chimokami Fang"
+    itemName: "<#D63624>Chimokami Fang"
     customModelData: 2
     lore:
       - <yellow>A fang dropped from the rare

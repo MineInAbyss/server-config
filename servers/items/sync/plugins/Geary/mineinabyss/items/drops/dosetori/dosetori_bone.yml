@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: BONE
-    displayName: "<#FFF821>Dosetori Bone"
+    itemName: "<#FFF821>Dosetori Bone"
     customModelData: 1
     lore:
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the

@@ -3,7 +3,7 @@ inherit: [mineinabyss:wood]
 set.item:
   item:
     type: PAPER
-    displayName: <#e6c186>Crate 2
+    itemName: <#e6c186>Crate 2
     customModelData: 2019
 set.block:
   blockType: NOTEBLOCK

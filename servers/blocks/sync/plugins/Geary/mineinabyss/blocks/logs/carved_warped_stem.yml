@@ -4,7 +4,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: <white>Carved Warped Stem
+    itemName: <white>Carved Warped Stem
     customModelData: 2028
 set.block:
   blockType: NOTEBLOCK

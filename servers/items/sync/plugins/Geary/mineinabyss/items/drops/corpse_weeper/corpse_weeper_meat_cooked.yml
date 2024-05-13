@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: "<#D12B26>Cooked Corpse-Weeper Meat"
+    itemName: "<#D12B26>Cooked Corpse-Weeper Meat"
     customModelData: 112
     lore:
       - <yellow>The incinerated flesh of <#FFF34E>Corpse-Weepers

@@ -3,7 +3,7 @@ inherit: [mineinabyss:wood]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Bamboo Plant
+    itemName: <white>Bamboo Plant
     customModelData: 1005
 furniture:
   rotationType: NONE

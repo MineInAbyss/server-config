@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: FERMENTED_SPIDER_EYE
-    displayName: <#9C0F2C>Stingerhead Eye
+    itemName: <#9C0F2C>Stingerhead Eye
     customModelData: 2
     lore:
       - <yellow>Obtained from slaying

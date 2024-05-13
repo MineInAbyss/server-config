@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: "<#b5955f>Haste Paste"
+    itemName: "<#b5955f>Haste Paste"
     customModelData: 127
     lore:
       - <yellow>Compact with nutrients fit for a miner,

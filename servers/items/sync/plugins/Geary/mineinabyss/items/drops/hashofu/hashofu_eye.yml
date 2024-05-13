@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: FIRE_CHARGE
-    displayName: <#454545>Hashofu Eye
+    itemName: <#454545>Hashofu Eye
     customModelData: 1
     lore:
       - <yellow>Obtained by slaughtering a <#616161>Hashofu <yellow>in

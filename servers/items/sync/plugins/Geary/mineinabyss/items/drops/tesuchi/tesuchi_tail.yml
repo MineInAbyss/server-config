@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <dark_green>Tesuchi Tail
+    itemName: <dark_green>Tesuchi Tail
     customModelData: 20
     lore:
       - <green><i>Yummy

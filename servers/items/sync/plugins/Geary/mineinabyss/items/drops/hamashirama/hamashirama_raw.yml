@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#1B91B5>Raw Hamashirama
+    itemName: <#1B91B5>Raw Hamashirama
     customModelData: 17
     lore:
       - <yellow>Can be obtained by finding and

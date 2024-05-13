@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: <#D8D8D8>Raw Ottobas Meat
+    itemName: <#D8D8D8>Raw Ottobas Meat
     customModelData: 14
     lore:
       - <yellow>Obtained by carving up the

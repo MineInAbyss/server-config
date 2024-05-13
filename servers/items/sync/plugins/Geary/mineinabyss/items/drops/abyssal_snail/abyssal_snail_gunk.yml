@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: SLIME_BALL
-    displayName: <reset><#785F34>Abyssal Snail Gunk
+    itemName: <reset><#785F34>Abyssal Snail Gunk
     customModelData: 1
     lore:
       - <yellow>Sticky slime dropped by <#785F34>Abyssal Snails

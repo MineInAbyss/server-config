@@ -1,7 +1,7 @@
 namespaces: [geary, mineinabyss]
 set.item:
   item:
-    displayName: <#ffbb1c><b>Orth Coin
+    itemName: <#ffbb1c><b>Orth Coin
     type: EMERALD
     customModelData: 1
 orthcoin: {}

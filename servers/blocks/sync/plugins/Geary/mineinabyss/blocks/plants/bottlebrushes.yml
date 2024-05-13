@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: bottlebrushes
+    itemName: bottlebrushes
     customModelData: 3009
 set.block:
   blockType: WIRE

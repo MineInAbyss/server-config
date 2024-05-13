@@ -4,7 +4,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: Ice Pillar
+    itemName: Ice Pillar
     customModelData: 2044
 set.block:
   blockType: NOTEBLOCK

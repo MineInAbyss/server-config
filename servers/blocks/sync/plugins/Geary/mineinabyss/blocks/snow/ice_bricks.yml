@@ -3,7 +3,7 @@ inherit: [mineinabyss:snow]
 set.item:
   item:
     type: PAPER
-    displayName: Ice Bricks
+    itemName: Ice Bricks
     customModelData: 2043
 set.block:
   blockType: NOTEBLOCK

@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: COOKED_COD
-    displayName: "<#257BEB>Raw Ikenosuke"
+    itemName: "<#257BEB>Raw Ikenosuke"
     customModelData: 0
     lore:
       - <yellow>Can be obtained by finding and

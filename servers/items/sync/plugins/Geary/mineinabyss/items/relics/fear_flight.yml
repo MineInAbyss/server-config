@@ -2,7 +2,7 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: GLASS
-    displayName: Fear Flight
+    itemName: Fear Flight
     # customModelData: 102
 #passive:
 #  - !<on.parent>

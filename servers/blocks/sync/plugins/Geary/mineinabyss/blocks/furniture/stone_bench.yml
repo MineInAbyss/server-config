@@ -3,7 +3,7 @@ inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
-    displayName: <#33404d>Stone Bench
+    itemName: <#33404d>Stone Bench
     customModelData: 1000
 seat:
   heightOffset: 0.5

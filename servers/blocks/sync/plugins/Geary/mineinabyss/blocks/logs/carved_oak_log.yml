@@ -4,7 +4,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: <white>Carved Oak Log
+    itemName: <white>Carved Oak Log
     customModelData: 2026
 set.block:
   blockType: NOTEBLOCK

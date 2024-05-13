@@ -3,7 +3,7 @@ inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
-    displayName: <#6f4536>Sunny Wood Chair
+    itemName: <#6f4536>Sunny Wood Chair
     customModelData: 1001
 seat:
   heightOffset: 0.5

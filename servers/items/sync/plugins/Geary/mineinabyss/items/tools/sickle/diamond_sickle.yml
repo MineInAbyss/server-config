@@ -3,7 +3,7 @@ inherit:
   - mineinabyss:sickle
 set.item:
   item:
-    displayName: <dark_aqua>Diamond Sickle
+    itemName: <dark_aqua>Diamond Sickle
     type: DIAMOND_HOE
     customModelData: 1
 set.recipes:

@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: Cosmos Chocolate
+    itemName: Cosmos Chocolate
     customModelData: 3010
 set.block:
   blockType: WIRE

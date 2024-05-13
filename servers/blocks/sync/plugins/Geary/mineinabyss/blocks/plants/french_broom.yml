@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: French Broom
+    itemName: French Broom
     customModelData: 3016
 set.block:
   blockType: WIRE

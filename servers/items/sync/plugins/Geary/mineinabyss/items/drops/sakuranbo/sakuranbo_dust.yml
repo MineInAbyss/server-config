@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: GUNPOWDER
-    displayName: <gold>Sakuranbo Dust
+    itemName: <gold>Sakuranbo Dust
     customModelData: 1
     lore:
       - <yellow>Explosive powder obtained from

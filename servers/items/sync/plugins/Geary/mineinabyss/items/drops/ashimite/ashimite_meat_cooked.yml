@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: "<#2597D9>Cooked Ashimite Meat"
+    itemName: "<#2597D9>Cooked Ashimite Meat"
     customModelData: 111
     lore:
       - <yellow>Can be obtained by hunting down an

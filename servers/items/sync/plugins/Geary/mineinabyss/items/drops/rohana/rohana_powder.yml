@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: GLOWSTONE_DUST
-    displayName: <#6C19BF>Rohana Powder
+    itemName: <#6C19BF>Rohana Powder
     customModelData: 1
     lore:
       - <yellow>Fine powder dropped from

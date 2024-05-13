@@ -3,7 +3,7 @@ inherit: [mineinabyss:snow]
 set.item:
   item:
     type: PAPER
-    displayName: Cryosol
+    itemName: Cryosol
     customModelData: 2042
 set.block:
   blockType: NOTEBLOCK

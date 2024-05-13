@@ -1,7 +1,7 @@
 namespaces: [geary]
 set.item:
   item:
-    displayName: <dark_aqua>Charcoal Sand Ingot
+    itemName: <dark_aqua>Charcoal Sand Ingot
     type: IRON_INGOT
     customModelData: 1
 set.recipes:

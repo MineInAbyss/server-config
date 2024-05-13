@@ -5,7 +5,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: <white>Charcoal Sand Ore
+    itemName: <white>Charcoal Sand Ore
     customModelData: 2001
 set.block:
   blockType: NOTEBLOCK

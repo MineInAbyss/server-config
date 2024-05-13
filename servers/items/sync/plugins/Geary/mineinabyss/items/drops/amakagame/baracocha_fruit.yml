@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: CHORUS_FRUIT
-    displayName: "<dark_purple>Baracocha Fruit"
+    itemName: "<dark_purple>Baracocha Fruit"
     customModelData: 1
     lore:
       - <light_purple>Neritantans love eating these. Fittingly,

@@ -3,7 +3,7 @@ inherit:
   - mineinabyss:sickle
 set.item:
   item:
-    displayName: <gold>Golden Sickle
+    itemName: <gold>Golden Sickle
     type: GOLDEN_HOE
     customModelData: 1
 set.recipes:

@@ -4,7 +4,7 @@ inherit:
 set.item:
   item:
     type: PAPER
-    displayName: Snow Tiles
+    itemName: Snow Tiles
     customModelData: 2051
 set.block:
   blockType: NOTEBLOCK

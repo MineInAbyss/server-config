@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: EGG
-    displayName: <#613F0C>Hammerbeak Egg
+    itemName: <#613F0C>Hammerbeak Egg
     customModelData: 1
     lore:
       - <yellow>Dropped from <#705723>Hammerbeaks <yellow>in

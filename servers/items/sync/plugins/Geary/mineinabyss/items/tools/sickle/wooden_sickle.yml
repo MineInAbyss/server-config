@@ -3,7 +3,7 @@ inherit:
   - mineinabyss:sickle
 set.item:
   item:
-    displayName: <#63614E>Wooden Sickle
+    itemName: <#63614E>Wooden Sickle
     type: WOODEN_HOE
     customModelData: 1
 set.recipes:

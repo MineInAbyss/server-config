@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: <#7a4e48>Foliage 7
+    itemName: <#7a4e48>Foliage 7
     customModelData: 3007
 set.block:
   blockType: WIRE

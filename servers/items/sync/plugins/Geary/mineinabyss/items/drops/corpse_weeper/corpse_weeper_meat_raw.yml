@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: "<#D12B26>Raw Corpse-Weeper Meat"
+    itemName: "<#D12B26>Raw Corpse-Weeper Meat"
     customModelData: 12
     lore:
       - <yellow>Dropped by <dark_red>Corpse-Weepers <yellow>in

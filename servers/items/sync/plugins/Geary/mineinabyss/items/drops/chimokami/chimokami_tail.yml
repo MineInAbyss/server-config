@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: RED_WOOL
-    displayName: "<#D63624>Chimokami Tail"
+    itemName: "<#D63624>Chimokami Tail"
     customModelData: 1
     lore:
       - <yellow>A tuft of fur from the tail of the rarely

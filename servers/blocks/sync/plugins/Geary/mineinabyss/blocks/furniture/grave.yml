@@ -2,7 +2,7 @@ namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
-    displayName: <#33404d>Grave
+    itemName: <#33404d>Grave
     customModelData: 1033
 blocky:sound:
   placeSound: block.stone.place

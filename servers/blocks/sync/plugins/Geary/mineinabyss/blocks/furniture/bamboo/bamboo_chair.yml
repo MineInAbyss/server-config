@@ -3,7 +3,7 @@ inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
     type: TIPPED_ARROW
-    displayName: <white>Bamboo Chair
+    itemName: <white>Bamboo Chair
     customModelData: 2
     color: 255, 255, 255
     itemFlags:

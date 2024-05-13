@@ -3,7 +3,7 @@ inherit: [mineinabyss:wood]
 set.item:
   item:
     type: PAPER
-    displayName: <white>Bamboo Wind Chime
+    itemName: <white>Bamboo Wind Chime
     customModelData: 1009
 furniture:
   interactionHitbox:

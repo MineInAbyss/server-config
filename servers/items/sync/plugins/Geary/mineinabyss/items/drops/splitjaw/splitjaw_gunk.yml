@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: SLIME_BALL
-    displayName: <#38E016>Splitjaw Gunk
+    itemName: <#38E016>Splitjaw Gunk
     customModelData: 2
     lore:
       - <#40FF19>Yucky.

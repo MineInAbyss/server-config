@@ -3,7 +3,7 @@ inherit:
   - mineinabyss:sickle
 set.item:
   item:
-    displayName: <dark_gray>Stone Sickle
+    itemName: <dark_gray>Stone Sickle
     type: STONE_HOE
     customModelData: 1
 set.recipes:

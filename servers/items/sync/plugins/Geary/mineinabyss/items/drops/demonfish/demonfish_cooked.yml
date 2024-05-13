@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: PAPER
-    displayName: "<#257BEB>Cooked Demonfish"
+    itemName: "<#257BEB>Cooked Demonfish"
     customModelData: 116
     lore:
       - <yellow>Can be obtained by finding and
