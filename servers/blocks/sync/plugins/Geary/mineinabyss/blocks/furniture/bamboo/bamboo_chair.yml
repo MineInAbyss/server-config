@@ -17,9 +17,8 @@ placableOn:
   floor: true
   ceiling: false
   wall: false
-seat:
-  offset:
-    y: 1.1
+seats:
+  - y: 0.1
 
 drops:
   drops:

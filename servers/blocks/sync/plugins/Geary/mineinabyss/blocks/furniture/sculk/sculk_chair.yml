@@ -8,9 +8,8 @@ set.item:
 furniture:
   collisionHitbox:
     - x: 0
-seat:
-  offset:
-    y: 0.0
+seats:
+  - y: 0.0
 drops:
   drops:
     - item: mineinabyss:sculk_chair

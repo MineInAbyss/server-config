@@ -11,9 +11,8 @@ blocky:sound:
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-seat:
-  offset:
-    y: -0.3
+seats:
+  - y: -0.3
 furniture:
   collisionHitbox:
     - x: 0

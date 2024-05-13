@@ -8,9 +8,8 @@ set.item:
     color: 255, 255, 255
     itemFlags:
       - HIDE_ADDITIONAL_TOOLTIP
-seat:
-  offset:
-    y: 0.1
+seats:
+  - y: 0.1
 furniture:
   rotationType: VERY_STRICT
   collisionHitbox:

@@ -5,9 +5,8 @@ set.item:
     type: PAPER
     itemName: <#6f4536>Sunny Wood Chair
     customModelData: 1001
-seat:
-  offset:
-    y: 0.5
+seats:
+  - y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
