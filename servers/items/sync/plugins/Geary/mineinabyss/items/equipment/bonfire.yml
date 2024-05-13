@@ -1,4 +1,4 @@
-namespaces: [geary, blocky, bonfire, mobzy]
+namespaces: [geary, blocky, bonfire]
 set.item:
   item:
     itemName: <#FF9D26>Bonfire
@@ -19,7 +19,6 @@ set.recipes:
         |SSS|
         |SFS|
         |SCS|
-important: {}
 furniture:
   interactionHitbox:
     - width: 1.0
