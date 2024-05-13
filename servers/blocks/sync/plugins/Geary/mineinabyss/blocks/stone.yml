@@ -1,5 +1,5 @@
 namespaces: [geary, blocky]
-sound:
+blocky:sound:
   placeSound: blocky.stone.place
   breakSound: blocky.stone.break
   stepSound: blocky.stone.step

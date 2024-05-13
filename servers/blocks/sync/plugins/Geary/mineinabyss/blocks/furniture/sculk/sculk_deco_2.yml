@@ -5,7 +5,7 @@ set.item:
     type: PAPER
     displayName: <white>Sculk Deco 2
     customModelData: 1025
-sound:
+blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
   stepSound: block.amethyst_cluster.step

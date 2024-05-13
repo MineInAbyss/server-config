@@ -4,7 +4,7 @@ set.item:
     type: PAPER
     displayName: <#33404d>Noticeboard Okibo
     customModelData: 1032
-sound:
+blocky:sound:
   placeSound: block.wood.place
   breakSound: block.wood.break
   stepSound: block.wood.step

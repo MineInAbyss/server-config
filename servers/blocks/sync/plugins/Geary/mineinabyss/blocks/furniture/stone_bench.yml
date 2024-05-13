@@ -7,7 +7,7 @@ set.item:
     customModelData: 1000
 seat:
   heightOffset: 0.5
-sound:
+blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
   stepSound: block.amethyst_cluster.step

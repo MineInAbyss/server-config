@@ -5,7 +5,7 @@ set.item:
     type: PAPER
     displayName: <white>Sculk Big Table
     customModelData: 1022
-sound:
+blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
   stepSound: block.amethyst_cluster.step

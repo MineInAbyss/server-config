@@ -10,7 +10,7 @@ set.block:
   blockId: 33
 info:
   blockModel: mineinabyss:block/building/crate2
-sound:
+blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
   stepSound: block.amethyst_cluster.step
