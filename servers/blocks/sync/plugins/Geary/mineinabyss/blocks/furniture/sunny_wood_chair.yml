@@ -6,7 +6,8 @@ set.item:
     itemName: <#6f4536>Sunny Wood Chair
     customModelData: 1001
 seat:
-  heightOffset: 0.5
+  offset:
+    y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -25,7 +26,7 @@ furniture:
     - width: 1
       height: 2.0
   collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
+    - x: 0
 drops:
   drops:
     - item: mineinabyss:sunny_wood_chair

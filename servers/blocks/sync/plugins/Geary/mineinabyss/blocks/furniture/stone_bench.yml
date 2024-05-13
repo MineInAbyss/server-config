@@ -6,7 +6,8 @@ set.item:
     itemName: <#33404d>Stone Bench
     customModelData: 1000
 seat:
-  heightOffset: 0.5
+  offset:
+    y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -16,8 +17,8 @@ blocky:sound:
 furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
-    - { x: 1, y: 0, z: 0 }
+    - x: 0
+    - x: 1
 drops:
   drops:
     - item: mineinabyss:stone_bench

@@ -13,7 +13,7 @@ blocky:sound:
   fallSound: block.amethyst_cluster.fall
 furniture:
   collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
+    - x: 0
 drops:
   drops:
     - item: mineinabyss:sculk_table

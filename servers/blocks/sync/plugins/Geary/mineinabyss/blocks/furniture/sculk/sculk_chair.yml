@@ -7,9 +7,10 @@ set.item:
     customModelData: 1023
 furniture:
   collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
+    - x: 0
 seat:
-  heightOffset: 0.0
+  offset:
+    y: 0.0
 drops:
   drops:
     - item: mineinabyss:sculk_chair

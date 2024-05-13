@@ -9,22 +9,25 @@ set.item:
     itemFlags:
       - HIDE_ADDITIONAL_TOOLTIP
 seat:
-  heightOffset: 0.1
+  offset:
+    y: 0.1
 furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
-    - { x: 0, y: 0, z: 0 }
-    - { x: -1, y: 0, z: 0 }
-    - { x: 1, y: 0, z: 0 }
+    - x: 0
+    - x: -1
+    - x: 1
   interactionHitbox:
     - width: 1.0
       height: 2.0
     - width: 1.0
       height: 2.0
-      offset: { x: -1, y: 0, z: 0 }
+      offset:
+        x: -1
     - width: 1.0
       height: 2.0
-      offset: { x: 1, y: 0, z: 0 }
+      offset:
+        x: 1
 placableOn:
   floor: true
   ceiling: false
