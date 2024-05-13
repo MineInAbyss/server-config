@@ -2,7 +2,7 @@ cyatoria:
   Type: ALLAY
   Display: "<#3DDFFF>Cyatoria"
   Health: 25
-  Damage: 3
+  Damage: 4
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -24,8 +24,9 @@ cyatoria:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+    Scale: 0.8
   Drops: 
-    - exp 35-45
+    - exp 25-45
     - geary mineinabyss:cyatoria_drumstick_raw 1-2
     - geary mineinabyss:cyatoria_feather 1-4 0.7
 

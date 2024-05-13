@@ -1,7 +1,7 @@
 beniguma:
   Type: PIG
   Display: "<red>Beniguma"
-  Health: 30
+  Health: 20
   Damage: 4
   AIGoalSelectors:
     - clear
@@ -9,7 +9,7 @@ beniguma:
     - lookatplayers
     - randomlookaround
     - float
-    - fleeplayers{d=10;s=2;ss=1}
+    #- fleeplayers{d=10;s=2;ss=1}
   AITargetSelectors:
     - clear
     - attacker
@@ -25,7 +25,7 @@ beniguma:
     DamageTint: true
   Drops:
     - exp 5
-    - minecraft:sweet_berries 1-3 0.5
+    - sweet_berries 1-3 0.5
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

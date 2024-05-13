@@ -1,0 +1,27 @@
+l2s2tree:
+  Type: stinger,inbyo
+  Action: ADD
+  Worlds: world
+  Chance: 0.002
+  Priority: 0.1
+  Cooldown: 10
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=BIRCH_LEAVES,OAK_WOOD,OAK_PLANKS,OAK_SLAB,OAK_LEAVES,COBBLESTONE_SLAB} true
+  - region{r=l2s2} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+l2s2floor:
+  Type: hisoishi,rockwalker
+  Action: ADD
+  Worlds: world
+  Chance: 0.002
+  Priority: 0.1
+  Cooldown: 10
+  UseWorldScaling: false
+  Conditions:
+  - region{r=l2s2} true
+  - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+

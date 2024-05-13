@@ -49,7 +49,7 @@ qmob_stingerDamager:
   Cooldown: 0
   Conditions:
   Skills:
-  - damage{a=2;pk=true;cd=0.5} @EIR{r=1.25;ignore=samefaction} # make this what you want
+  - damage{a=3;pk=true;cd=0.5} @EIR{r=1.25;ignore=samefaction} # make this what you want
   - sound{s=entity.bee.sting;sc=master;p=<random.float.1.35to1.45>;v=1.85;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;cd=0.5} @self ?targetwithin{d=1.2}

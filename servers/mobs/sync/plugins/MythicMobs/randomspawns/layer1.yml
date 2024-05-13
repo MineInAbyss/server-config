@@ -2,12 +2,24 @@ l1p:
   Type: beniguma,fuwagi,okibo
   Action: ADD
   Worlds: world
-  Chance: 0.004
+  Chance: 0.003
   Priority: 0.5
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - region{r=layerone} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+l1d:
+  Type: vinebinder,vinepoofer
+  Action: ADD
+  Worlds: world
+  Chance: 0.002
+  Priority: 0.1
   Cooldown: 10
   UseWorldScaling: false
   Conditions:
-  #- region{r=layerone} true
+  - region{r=layerone} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 l1w:
@@ -20,7 +32,7 @@ l1w:
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
-  #- region{r=layerone} true
+  - region{r=layerone} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
@@ -33,7 +45,7 @@ l1f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  #- region{r=layerone} true
+  - region{r=layerone} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
 l1fa:
@@ -45,7 +57,7 @@ l1fa:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  #- region{r=layerone} true
+  - region{r=layerone} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -58,6 +70,6 @@ l1fr:
   Cooldown: 30
   UseWorldScaling: false
   Conditions:
-  #- region{r=layerone} true
+  - region{r=layerone} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false

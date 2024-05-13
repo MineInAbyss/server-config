@@ -6,7 +6,7 @@ benigumaspawn:
     - hasparent false
   Skills:
     - gcd{ticks=20}
-    - summon{type=beniguma;amount=0-3;radius=3} @self
+    - summon{type=beniguma;amount=0-2;radius=3} @self
 
 okibospawn:
   Cooldown: 9999999
@@ -48,15 +48,6 @@ hammerbeakspawn:
     - gcd{ticks=20}
     - summon{type=hammerbeak;amount=0-2;radius=3} @self
 
-cyatoria:
-  Cooldown: 9999999
-  Conditions:
-    - offgcd
-    - isChild false
-    - hasparent false
-  Skills:
-    - gcd{ticks=20}
-    - summon{type=cyatoria;amount=0-1;radius=3} @self
 
 bighammerbeakspawn:
   Cooldown: 9999999
@@ -67,3 +58,69 @@ bighammerbeakspawn:
   Skills:
     - gcd{ticks=20}
     - summon{type=hammerbeak;amount=2;radius=3} @self
+stingerspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=stinger;amount=2-6;radius=5} @self
+inbyospawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=inbyo;amount=2-7;radius=7} @self
+
+billabonk:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=billabonk;amount=0-2;radius=3} @self
+
+corpseweeper:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=;amount=1-3;radius=4} @self
+
+rohana:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=rohana;amount=0-3;radius=3} @self
+silkfang:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=;amount=0-1;radius=7} @self
+:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=;amount=;radius=7} @self

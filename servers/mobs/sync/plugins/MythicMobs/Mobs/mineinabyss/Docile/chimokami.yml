@@ -8,7 +8,7 @@ chimokami:
     - randomstroll
     - lookatplayers
     - randomlookaround
-    - fleeplayers{d=15;s=2;ss=1}
+   # - fleeplayers{d=15;s=2;ss=1}
   AITargetSelectors:
     - clear
     - attackers

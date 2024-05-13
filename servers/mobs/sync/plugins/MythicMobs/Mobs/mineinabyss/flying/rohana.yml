@@ -27,6 +27,8 @@ rohana:
     - geary mineinabyss:rohana_tail 2 0.4
 
   Skills:
+    - skill{s=rohanaspawn} @self ~onspawn
+
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
     - bodyclamp{m=rohana;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1} @self ~onSpawn

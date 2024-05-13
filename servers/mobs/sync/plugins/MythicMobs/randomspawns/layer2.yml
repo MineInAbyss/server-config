@@ -1,0 +1,78 @@
+l2p:
+  Type: chimokami,tesuchi
+  Action: ADD
+  Worlds: world
+  Chance: 0.003
+  Priority: 0.5
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=GRASS_BLOCK,DIRT} true
+  - region{r=layertwo} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+l1d:
+  Type: vinebinder,vinepoofer,vineblaster,spikewalker
+  Action: ADD
+  Worlds: world
+  Chance: 0.002
+  Priority: 0.1
+  Cooldown: 10
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=GRASS_BLOCK,DIRT} true
+  - region{r=layertwo} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+
+l2w:
+  Type: billabonk,ikenosuke,rohana
+  Action: ADD
+  Worlds: world
+  Chance: 0.005
+  Priority: 0.5
+  Cooldown: 2
+  Positiontype: SEA
+  UseWorldScaling: false
+  Conditions:
+  - region{r=layertwo} true
+  - mobsinchunk{a=<2} true
+  - inblock{b=WATER} true
+
+l2f:
+  Type: silkfang,cyatoria,dosetori,hammerbeak
+  Action: ADD
+  Worlds: world
+  Chance: 0.001
+  Priority: 0.5
+  Cooldown: 2
+  UseWorldScaling: false
+  Conditions:
+  - region{r=layertwo} true
+  - mobsinchunk{a=<5} true
+  - inblock{b=WATER} false
+l2fa:
+  Type: corpseweeper,hammerbeakLarge
+  Action: ADD
+  Worlds: world
+  Chance: 0.00035
+  Priority: 1
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - region{r=layertwo} true
+  #- mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+
+l2fr:
+  Type: splitjaw
+  Action: ADD
+  Worlds: world
+  Chance: 0.0001
+  Priority: 0.5
+  Cooldown: 30
+  UseWorldScaling: false
+  Conditions:
+  - region{r=layerone} true
+  #- mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
