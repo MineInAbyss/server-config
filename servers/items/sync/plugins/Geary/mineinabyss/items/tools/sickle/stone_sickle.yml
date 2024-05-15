@@ -4,8 +4,9 @@ inherit:
 set.item:
   item:
     itemName: <dark_gray>Stone Sickle
-    type: STONE_HOE
-    customModelData: 1
+    type: PAPER
+    customModelData: 301
+    durability: 131
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -17,8 +18,9 @@ set.recipes:
         | MM|
         | SM|
         |S  |
-skills:
-  - event: on.itemRightClick
-    using: itemHolder
-    sickle:
-      radius: 1
+observe:
+  - event: onItemRightClick
+    using: childOf
+    emit:
+      - sickle:
+          radius: 1

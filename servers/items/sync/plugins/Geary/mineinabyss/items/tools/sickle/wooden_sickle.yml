@@ -4,11 +4,11 @@ inherit:
 set.item:
   item:
     itemName: <#63614E>Wooden Sickle
-    type: WOODEN_HOE
-    customModelData: 1
+    type: PAPER
+    customModelData: 300
+    durability: 59
 set.recipes:
   discoverRecipes: true
-  group: "looty:wooden_sickle"
   recipes:
     - !<shaped>
       items:
@@ -19,8 +19,9 @@ set.recipes:
         | MM|
         | SM|
         |S  |
-skills:
-  - event: on.itemRightClick
-    using: itemHolder
-    sickle:
-      radius: 1
+observe:
+  - event: onItemRightClick
+    using: childOf
+    emit:
+      - sickle:
+          radius: 1

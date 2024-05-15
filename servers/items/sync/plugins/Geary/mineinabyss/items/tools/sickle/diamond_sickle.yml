@@ -4,8 +4,9 @@ inherit:
 set.item:
   item:
     itemName: <dark_aqua>Diamond Sickle
-    type: DIAMOND_HOE
-    customModelData: 1
+    type: PAPER
+    customModelData: 304
+    durability: 1561
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -17,8 +18,9 @@ set.recipes:
         | MM|
         | SM|
         |S  |
-skills:
-  - event: on.itemRightClick
-    using: itemHolder
-    sickle:
-      radius: 2
+observe:
+  - event: onItemRightClick
+    using: childOf
+    emit:
+      - sickle:
+          radius: 2

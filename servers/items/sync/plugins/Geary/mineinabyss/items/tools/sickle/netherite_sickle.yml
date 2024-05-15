@@ -4,8 +4,9 @@ inherit:
 set.item:
   item:
     itemName: <#172929>Netherite Sickle
-    type: NETHERITE_HOE
-    customModelData: 1
+    type: PAPER
+    customModelData: 305
+    durability: 2031
 set.recipes:
   result:
     prefab: mineinabyss:netherite_sickle
@@ -16,8 +17,9 @@ set.recipes:
         type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
       input: mineinabyss:diamond_sickle
       addition: minecraft:netherite_ingot
-skills:
-  - event: on.itemRightClick
-    using: itemHolder
-    sickle:
-      radius: 4
+observe:
+  - event: onItemRightClick
+    using: childOf
+    emit:
+      - sickle:
+          radius: 4
