@@ -1,5 +1,5 @@
 l3p:
-  Type: kakatsumuri,sakuranbo
+  Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi
   Action: ADD
   Worlds: world
   Chance: 0.007
@@ -8,7 +8,7 @@ l3p:
   UseWorldScaling: false
   Conditions:
   #- onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=l3s0} true
+  - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 l3d:
@@ -21,7 +21,7 @@ l3d:
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
-  - region{r=l3s0} true
+  - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -35,32 +35,32 @@ l3w:
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0} true
+  - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
 
 l3f:
-  Type: corpseweeper,daikonchu,dosetori,hammerbeak
+  Type: daikonchu,dosetori,yomotsubi,madokajack
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 2
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0} true
-  - mobsinchunk{a=<5} true
+  - region{r=l3s0,l3s1,l3s2,l3s3} true
+  - mobsinchunk{a=<4} true
   - inblock{b=WATER} false
 l3fa:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00035
+  Chance: 0.0005
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0} true
+  - region{r=l3s0,l3s1,l3s2,l3s3} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 

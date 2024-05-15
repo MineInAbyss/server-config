@@ -1,6 +1,6 @@
 daikonchu:
   Type: SILVERFISH
-  Health: 40
+  Health: 80
   Damage: 0
   Skills:
   - cancelevent{sync=true} @Self ~onAttack

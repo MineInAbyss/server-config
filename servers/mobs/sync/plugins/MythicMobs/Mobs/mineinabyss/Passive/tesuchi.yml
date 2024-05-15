@@ -41,6 +41,6 @@ tesuchi:
   - skill{s=bloodEffectSmall} @self ~onHurt <100%
   - skill{s=leaflizardHurt} @self ~onHurt
   - skill{s=leaflizardDeath} @self ~onDeath
-  - summon{type=qmob_leaflizardCorpse;amount=1;radius=0;delay=16} @self ~onDeath
+  #- summon{type=qmob_leaflizardCorpse;amount=1;radius=0;delay=16} @self ~onDeath
   - skill{s=leaflizardDisguise;delay=<random.0to20>} @self ~onTimer:20
   - skill{s=leaflizardInvis} @self ~onTimer:10

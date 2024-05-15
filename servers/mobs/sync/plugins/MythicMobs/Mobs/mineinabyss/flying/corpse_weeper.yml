@@ -1,8 +1,8 @@
 corpse_weeper:
   Type: ALLAY
   Display: '<#D12B26>Corpse-Weeper'
-  Health: 45
-  Damage: 9
+  Health: 35
+  Damage: 7
   AIGoalSelectors:
     - clear
     - meleeattack

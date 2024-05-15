@@ -24,7 +24,7 @@ SJ_Hit:
 
 
 SJ_dash:
-  Cooldown: 13
+  Cooldown: 7
   Conditions:
     - offgcd true
     - targetinlineofsight
@@ -43,10 +43,10 @@ SJ_dash:
     - delay 4
     - state{s=dash_state;remove=true} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
-    - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=2}
+    - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=30;repeatinterval=1} @forward{f=2}
     - delay 1
     - skill{s=SJ_dashmiss} @self
-    - delay 60
+    - delay 50
     - setai{ai=true}
 SJ_dashhit:
   Cooldown: 3
@@ -55,7 +55,7 @@ SJ_dashhit:
   Skills:
     - setstance{stance=dashhit} @self
    # - shieldbreak{duration=200} @target
-    - damage{a=8;ia=true} @PIR{r=3}
+    - damage{a=10;ia=true} @PIR{r=3}
 
     - delay 100
 
@@ -80,6 +80,9 @@ sj_roar:
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - delay 10
+    - potion{type=SLOW;duration=40;level=5;p=false;force=true} @pir{r=25}
+    - potion{type=WEAKNESS;duration=150;level=1;p=false;force=true} @pir{r=25}
+
     - skill{s=sj_shake;repeat=6;repeatInterval=8} @pir{r=25}
     - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
     - effect:sound{s=entity.polar_bear.warning;v=1.2;p=1} @self

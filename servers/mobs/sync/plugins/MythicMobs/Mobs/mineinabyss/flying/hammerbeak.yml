@@ -98,7 +98,7 @@ hammerbeakLarge:
   - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
   - look{} @target ~onTimer:20
   - CancelEvent{sync=true} @self ~onAttack
-  - summon{type=qmob_hammerbeakCorpse;amount=1;radius=0;delay=46} @self ~onDeath
+  #- summon{type=qmob_hammerbeakCorpse;amount=1;radius=0;delay=46} @self ~onDeath
   - velocity{m=add;x=0;y=-0.8;z=0;repeat=120;repeatInterval=1} @self ~onDeath
   # Stances/AI
   - stance{s=landed} @self ~onSpawn

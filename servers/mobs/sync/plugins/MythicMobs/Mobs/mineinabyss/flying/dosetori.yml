@@ -2,7 +2,7 @@ dosetori:
   Type: ALLAY
   Display: "<#FFF821>Dosetori"
   Health: 30
-  Damage: 5
+  Damage: 7
   AIGoalSelectors:
     - clear
     - meleeattack{speed=1.5;range=1.5}
@@ -24,9 +24,9 @@ dosetori:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 1.3
+    Scale: 1.4
   Drops:
-  - exp 60-100
+  - exp 20-40
   - geary mineinabyss:dosetori_meat_raw 1-2
   - geary mineinabyss:dosetori_wingflap 1-3 0.7
   - geary mineinabyss:dosetori_bone 1-3 0.8
