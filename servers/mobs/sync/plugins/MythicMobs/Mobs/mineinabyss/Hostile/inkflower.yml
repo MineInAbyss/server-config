@@ -28,7 +28,6 @@ inkflower:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-    Scale: 3
   Skills:
    # - CancelEvent{sync=true} ~onAttack
    # - skill{s=Damage_8} @self ~onAttack
