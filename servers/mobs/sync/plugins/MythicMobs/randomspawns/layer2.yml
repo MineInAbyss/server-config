@@ -1,5 +1,5 @@
 l2p:
-  Type: chimokami,tesuchi
+  Type: chimokami,tesuchi,fuwagi,ottobas
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -8,7 +8,7 @@ l2p:
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=layertwo} true
+  - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 l1d:
@@ -21,7 +21,7 @@ l1d:
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=layertwo} true
+  - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -35,7 +35,7 @@ l2w:
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
-  - region{r=layertwo} true
+  - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
 
@@ -48,7 +48,7 @@ l2f:
   Cooldown: 2
   UseWorldScaling: false
   Conditions:
-  - region{r=layertwo} true
+  - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
 l2fa:
@@ -60,7 +60,7 @@ l2fa:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=layertwo} true
+  - region{r=l2s0,l2s1} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -73,6 +73,9 @@ l2fr:
   Cooldown: 30
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l2s0,l2s1} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+
+
+

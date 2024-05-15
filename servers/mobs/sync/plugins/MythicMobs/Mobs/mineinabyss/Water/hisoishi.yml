@@ -3,7 +3,7 @@ hisoishi:
   Modules:
     ThreatTable: true
   Health: 25 # change this
-  Damage: 4 
+  Damage: 0
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
@@ -30,8 +30,8 @@ hisoishi:
     DamageTint: true
   Drops:
     - exp 10-20
-    - geary mineinabyss:hisoishi_claw 1 0.5
-    - geary mineinabyss:hisoishi_shell 1 0.5
+    - geary mineinabyss:hisoishi_claw 1-3 0.8
+    - geary mineinabyss:hisoishi_shell 1 0.2
   Skills:
   ####### Misc
 #  - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.2

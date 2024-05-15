@@ -1,8 +1,8 @@
 inbyo:
   Type: SPIDER
   Display: "<#3D3D3D>Inbyo"
-  Health: 10
-  Damage: 8
+  Health: 18
+  Damage: 4
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -20,7 +20,7 @@ inbyo:
     Silent: true
     FollowRange: 64
     interactable: true
-    MovementSpeed: 0.4
+    MovementSpeed: 0.25
     attackKnockback: 1
   Model:
     Id: inbyo
@@ -28,10 +28,11 @@ inbyo:
     DamageTint: true
   Drops:
     - exp 35-45
-    - geary mineinabyss:inbyo_meat_raw 1-2
-    - geary mineinabyss:inbyo_fur 1-3
+    - geary mineinabyss:inbyo_meat_raw 1-2 0.6
+    - geary mineinabyss:inbyo_fur 1-3 0.6
 
   Skills:
+    - state{mid=inbyo;s=attack} @self ~onAttack
     - skill{s=inbyospawn} @self ~onspawn
     - skill{s=inbyopoop} @target ~onTimer:20
     - effect:sound{s=mineinabyss:entity.inbyo.ambient;v=6;p=0.8} @self ~onAmbient

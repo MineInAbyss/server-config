@@ -26,11 +26,16 @@ buruguro:
   AITargetSelectors:
   - clear
   - attacker
+  Model:
+    Id: glowfly
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Skills:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill:buruguroSpawn @self ~onSpawn
-  - skill:buruguroDamaged @self ~onDamaged
-  - skill:buruguroTick @self ~onTimer:20
-  - skill:buruguroMelee @trigger ~onAttack
+  - skill{s=buruguroSpawn} @self ~onSpawn
+  - skill{s=buruguroDamaged} @self ~onDamaged
+  - skill{s=buruguroTick} @self ~onTimer:20
+  - skill{s=buroguroMelee} @trigger ~onAttack
   

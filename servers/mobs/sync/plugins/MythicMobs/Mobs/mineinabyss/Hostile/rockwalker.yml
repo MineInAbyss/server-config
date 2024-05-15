@@ -1,9 +1,9 @@
 rockwalker:
-  Type: DROWNED
+  Type: SPIDER
   Modules:
     ThreatTable: true
   Health: 25 # change this
-  Damage: 4 
+  Damage: 6
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
@@ -21,7 +21,6 @@ rockwalker:
     - clear
     - attacker
   Equipment:
-    - diamond_axe HAND
   DamageModifiers:
   Model:
     Id: rockwalker

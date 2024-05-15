@@ -1,59 +1,68 @@
-MSO_AmethystGolem:
-  Type: MSO_AmethystGolem
-  Action: REPLACE
-  Reason: NATURAL
+l3p:
+  Type: kakatsumuri,sakuranbo
+  Action: ADD
   Worlds: world
-  Biomes: LUSH_CAVES
-  Chance: 0.05
-  Priority: 1
-  UseWorldScaling: true
-  PositionType: GROUND
+  Chance: 0.007
+  Priority: 0.5
+  Cooldown: 15
+  UseWorldScaling: false
   Conditions:
-  - onblock 10
+  #- onblock{m=GRASS_BLOCK,DIRT} true
+  - region{r=l3s0} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+l3d:
+  Type: spittleshrub,buroguro,squidfly
+  Action: ADD
+  Worlds: world
+  Chance: 0.002
+  Priority: 0.1
+  Cooldown: 10
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
+  - region{r=l3s0} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
 
-MSO_DwellingBug:
-  Type: MSO_DwellingBug
-  Action: REPLACE
-  Reason: NATURAL
+l3w:
+  Type: ikenosuke
+  Action: ADD
   Worlds: world
-  Chance: 0.025
-  Priority: 1
-  UseWorldScaling: true
-  PositionType: GROUND
+  Chance: 0.005
+  Priority: 0.5
+  Cooldown: 2
+  Positiontype: SEA
+  UseWorldScaling: false
   Conditions:
-  - heightbelow 0
+  - region{r=l3s0} true
+  - mobsinchunk{a=<2} true
+  - inblock{b=WATER} true
 
-MSO_GlowFly:
-  Type: MSO_GlowFly
-  Action: REPLACE
+l3f:
+  Type: corpseweeper,daikonchu,dosetori,hammerbeak
+  Action: ADD
   Worlds: world
-  Chance: 0.05
-  Priority: 1
-  UseWorldScaling: true
-  PositionType: GROUND
+  Chance: 0.001
+  Priority: 0.5
+  Cooldown: 2
+  UseWorldScaling: false
   Conditions:
-  - heightbelow 10
+  - region{r=l3s0} true
+  - mobsinchunk{a=<5} true
+  - inblock{b=WATER} false
+l3fa:
+  Type: splitjaw
+  Action: ADD
+  Worlds: world
+  Chance: 0.00035
+  Priority: 1
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - region{r=l3s0} true
+  #- mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
 
-MSO_MinerDwarf:
-  Type: MSO_MinerDwarf
-  Action: REPLACE
-  Reason: NATURAL
-  Worlds: world
-  Chance: 0.01
-  Priority: 1
-  UseWorldScaling: true
-  PositionType: GROUND
-  Conditions:
-  - heightbelow 0
 
-MSO_Spittleshrub:
-  Type: MSO_Spittleshrub
-  Action: REPLACE
-  Worlds: world
-  Biome: LUSH_CAVES
-  Chance: 0.05
-  Priority: 1
-  UseWorldScaling: true
-  PositionType: GROUND
-  Conditions:
-  - heightbelow 0
+

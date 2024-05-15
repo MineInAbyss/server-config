@@ -7,7 +7,7 @@ l1p:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 l1d:
@@ -19,7 +19,7 @@ l1d:
   Cooldown: 10
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 l1w:
@@ -32,7 +32,7 @@ l1w:
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
@@ -45,7 +45,7 @@ l1f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
 l1fa:
@@ -57,7 +57,7 @@ l1fa:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -70,6 +70,10 @@ l1fr:
   Cooldown: 30
   UseWorldScaling: false
   Conditions:
-  - region{r=layerone} true
+  - region{r=l1s1,l1s2,l1s3} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+
+
+
+
