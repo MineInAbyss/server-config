@@ -9,7 +9,7 @@ kakatsumuri:
     - lookatplayers
     - randomlookaround
     - float
-    - fleeplayers{d=15;s=4;ss=1}
+    #- fleeplayers{d=15;s=4;ss=1}
   AITargetSelectors:
     - clear
   Options:

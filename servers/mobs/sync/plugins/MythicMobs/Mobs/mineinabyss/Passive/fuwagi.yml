@@ -9,6 +9,7 @@ fuwagi:
     - lookatplayers
     - randomlookaround
     - float
+    - fleeplayers{d=10;ss=1}
   AITargetSelectors:
     - clear
   Options:
