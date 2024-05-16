@@ -11,6 +11,7 @@ l3p:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 l3d:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
@@ -24,6 +25,7 @@ l3d:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 l3w:
   Type: ikenosuke
@@ -38,7 +40,7 @@ l3w:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
-
+  - livinginradius{a=<15;r=30} true
 l3f:
   Type: daikonchu,dosetori,yomotsubi,madokajack
   Action: ADD
@@ -51,6 +53,7 @@ l3f:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<4} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 l3fa:
   Type: splitjaw
   Action: ADD
@@ -63,6 +66,7 @@ l3fa:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 
 

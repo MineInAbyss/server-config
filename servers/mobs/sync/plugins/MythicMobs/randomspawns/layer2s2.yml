@@ -11,6 +11,7 @@
   - region{r=l2s2} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 l2s2floor:
   Type: hisoishi,rockwalker
   Action: ADD
@@ -24,10 +25,11 @@ l2s2floor:
   - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 
 l2f5:
-  Type: dosetori,hammerbeak,corpseweeper
+  Type: dosetori,hammerbeak,corpse_weeper
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -38,12 +40,13 @@ l2f5:
   - region{r=l2s2} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 l2fr5:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.0005
+  Chance: 0.0003
   Priority: 0.5
   Cooldown: 30
   UseWorldScaling: false
@@ -51,3 +54,4 @@ l2fr5:
   - region{r=l2s2} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true

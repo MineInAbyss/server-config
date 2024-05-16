@@ -11,6 +11,7 @@ l2p:
   - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 l1d:
   Type: vinebinder,vinepoofer,vineblaster,spikewalker
   Action: ADD
@@ -24,6 +25,7 @@ l1d:
   - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 l2w:
   Type: billabonk,ikenosuke,rohana
@@ -38,7 +40,7 @@ l2w:
   - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
-
+  - livinginradius{a=<15;r=30} true
 l2f:
   Type: silkfang,cyatoria,dosetori,hammerbeak
   Action: ADD
@@ -51,8 +53,9 @@ l2f:
   - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 l2fa:
-  Type: corpseweeper,hammerbeakLarge
+  Type: corpse_weeper,hammerbeakLarge
   Action: ADD
   Worlds: world
   Chance: 0.00035
@@ -63,6 +66,7 @@ l2fa:
   - region{r=l2s0,l2s1} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 l2fr:
   Type: splitjaw
@@ -76,6 +80,7 @@ l2fr:
   - region{r=l2s0,l2s1} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - livinginradius{a=<15;r=30} true
 
 
 
