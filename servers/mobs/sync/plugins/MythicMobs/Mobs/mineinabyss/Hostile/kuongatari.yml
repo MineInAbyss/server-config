@@ -27,6 +27,8 @@ Kuongatari:
     - FIRE 15
     - FIRE_TICK 3
   Skills:
+    - skill{s=Kuongatarispawn} @self ~onspawn
+
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - state{mid=kuongatari;s=attack} @self ~onAttack
     - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2

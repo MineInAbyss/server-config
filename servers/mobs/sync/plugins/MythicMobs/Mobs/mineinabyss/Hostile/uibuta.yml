@@ -10,7 +10,6 @@ uibuta:
     FollowRange: 30
     MaxCombatDistance: 35
     MovementSpeed: 0.35
-    AttackKnockback: 2
   AIGoalSelectors:
     - clear
     - meleeattack

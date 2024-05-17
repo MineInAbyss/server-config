@@ -2,7 +2,7 @@ hisomukuro:
   Type: AXOLOTL
   Display: "<#C8C8C8>Hisomukuro"
   Health: 50
-  Damage: 35
+  Damage: 20
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -31,5 +31,5 @@ hisomukuro:
     - geary mineinabyss:hamashirama_raw 1-4
     - geary mineinabyss:hisomukuro_fin 1-2 0.6
   Skill: 
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

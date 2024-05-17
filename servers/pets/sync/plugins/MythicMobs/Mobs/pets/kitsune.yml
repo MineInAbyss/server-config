@@ -1,0 +1,84 @@
+
+Kitsune_Normal:
+  Type: WOLF
+  Display: '&fKitsune'
+  Health: 100
+  Damage: 3
+  Options:
+    MovementSpeed: 0.19
+    PreventRandomEquipment: true
+    Persistent: false
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Invincible: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=kitsune_normal;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1} @self ~onTimer:220 0.4
+  - skill{s=Kitsune_Normal_Dash} ~onSignal:DASH
+  
+Kitsune_Demonic:
+  Type: WOLF
+  Display: '&fDemonic Kitsune'
+  Health: 100
+  Damage: 3
+  Options:
+    MovementSpeed: 0.19
+    PreventRandomEquipment: true
+    Persistent: false
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Invincible: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=kitsune_demonic;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1} @self ~onTimer:220 0.4
+  - skill{s=Kitsune_Demonic_Dash} ~onSignal:DASH
+  
+Kitsune_Inferno:
+  Type: WOLF
+  Display: '&fInferno Kitsune'
+  Health: 100
+  Damage: 3
+  Options:
+    MovementSpeed: 0.19
+    PreventRandomEquipment: true
+    Persistent: false
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Invincible: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=kitsune_inferno;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1} @self ~onTimer:220 0.4
+  - skill{s=Kitsune_Inferno_Dash} ~onSignal:DASH

@@ -75,7 +75,7 @@ inbyospawn:
     - hasparent false
   Skills:
     - gcd{ticks=20}
-    - summon{type=inbyo;amount=2-7;radius=7} @self
+    - summon{type=inbyo;amount=2-5;radius=7} @self
 
 billabonkspawn:
   Cooldown: 9999999
@@ -97,7 +97,7 @@ corpseweeperspawn:
     - gcd{ticks=20}
     - summon{type=;amount=0-2;radius=4} @self
 
-rohana:
+rohanaspawn:
   Cooldown: 9999999
   Conditions:
     - offgcd
@@ -106,7 +106,7 @@ rohana:
   Skills:
     - gcd{ticks=20}
     - summon{type=rohana;amount=0-3;radius=3} @self
-silkfang:
+silkfangspawn:
   Cooldown: 9999999
   Conditions:
     - offgcd
@@ -115,7 +115,7 @@ silkfang:
   Skills:
     - gcd{ticks=20}
     - summon{type=;amount=0-1;radius=7} @self
-squidfly:
+squidflyspawn:
   Cooldown: 9999999
   Conditions:
     - offgcd
@@ -135,7 +135,7 @@ sakuranbospawn:
     - gcd{ticks=20}
     - summon{type=sakuranbo;amount=0-2;radius=3} @self
 
-:
+Kuongatarispawn:
   Cooldown: 9999999
   Conditions:
     - offgcd
@@ -143,7 +143,7 @@ sakuranbospawn:
     - hasparent false
   Skills:
     - gcd{ticks=20}
-    - summon{type=;amount=;radius=7} @self
+    - summon{type=kuongatari;amount=1-3;radius=7} @self
 
 :
   Cooldown: 9999999
