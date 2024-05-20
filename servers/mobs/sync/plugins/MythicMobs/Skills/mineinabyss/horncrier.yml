@@ -1,0 +1,185 @@
+
+
+hc_dash:
+  Cooldown: 7
+  Conditions:
+    - offgcd true
+    - targetinlineofsight
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - gcd{ticks=400}
+    - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
+   # - setai{ai=false}
+    - potion{type=SLOW;duration=20;level=10} @self
+ 
+
+    - delay 20
+    - state{s=charge_windup;li=0;lo=0} @self
+    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - delay 30
+    - setspeed{speed=1;type=walking} @self
+    - state{s=charge_windup;r=true} @self
+    - state{s=charge_run;li=0;lo=0} @self
+    - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - totem{md=2;c=1;oH=hc_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=60;repeatinterval=1} @forward{f=2}
+    - delay 60
+    - state{s=charge_run;remove=true} @self
+    - skill{s=hc_dashmiss} @self
+    - delay 50
+    #- setai{ai=true}
+hc_dashhit:
+  Cooldown: 3
+  Conditions:
+    - targetwithin 5
+  Skills:
+    - state{s=charge_hit;li=0;lo=0} @self
+    - setstance{stance=dashhit} @self
+   # - shieldbreak{duration=200} @target
+    - damage{a=10} 
+    - throw{v=10;vy=5} 
+    - potion{type=NAUSEA;duration=200;level=5}
+    - recoil{r=20;pitch=-0.5}
+    - delay 2
+    - recoil{r=20;yaw=.5}
+
+    - delay 2
+    - recoil{r=20;yaw=.5}
+
+    - delay 100
+
+hc_dashmiss:
+  Cooldown: 
+  Conditions:
+    - stance{s=dashhit} false
+  Skills:
+    - stun{d=80;f=true} @self
+    - state{s=charge_miss;li=0;lo=0} @self
+    - delay 40
+    - state{s=charge_miss;remove=true} @self 
+    - setstance{stance=normal} @self
+
+
+
+
+
+hc_Attack2:
+  Cooldown: 2
+  Conditions:
+    - offgcd
+    - targetwithin{d=5} true
+  Skills:
+    - CancelEvent
+    - gcd{ticks=40}
+    - setAI{ai=false} @self
+    - state{s=horn_swipe} @self
+    #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 20
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
+#will bleed once every 5 seconds for 5 seconds
+
+hc_Attack_DAMAGE2:
+  TargetConditions:
+    - isblocking false
+  Skills:
+    - damage{a=10;pkb=true;hnp=false;hp=true} @target
+    #- skill{s=Bleeding} @target
+    - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+    - throw{v=10;vy=5} @target
+    - potion{type=NAUSEA;duration=200;level=5}
+    - recoil{r=20;pitch=-0.5}
+    - delay 2
+    - recoil{r=20;yaw=.5}
+
+hc_Attack:
+  Cooldown: 2
+  Conditions:
+    - offgcd
+    - targetwithin{d=5} true
+  Skills:
+    - CancelEvent
+    - gcd{ticks=40}
+    - setAI{ai=false} @self
+    - state{s=horn_swipe} @self
+    #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 20
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
+#will bleed once every 5 seconds for 5 seconds
+
+hc_Attack_DAMAGE:
+  TargetConditions:
+    - isblocking false
+  Skills:
+    - damage{a=4;pkb=true;hnp=false;hp=true} @target
+    #- skill{s=Bleeding} @target
+    - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+    - throw{v=5;vy=3} @target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hc_backup:
+  Skills:
+ # - rally{types=hisoishi,baby_hisoishi;radius=30;ot=false} @Trigger
+
+hcAmbient:
+  Cooldown: 0.3
+  Skills:
+  - effect:sound{s=block.bone_block.hit;volume=0.4;pitch=1.7} @self
+  - effect:sound{s=block.bone_block.break;volume=0.4;pitch=0.5} @self
+  #- effect:sound{s=block.sculk_sensor.clicking;volume=0.6;pitch=0.3} @self
+ # - effect:sound{s=entity.warden.listening;volume=0.4;pitch=1.4} @self
+  - effect:sound{s=entity.skeleton.ambient;volume=1;pitch=1.6} @self
+  - effect:sound{s=entity.allay.ambient_without_item;volume=1.1;pitch=1.6} @self
+  - effect:sound{s=entity.breeze.idle_air;volume=0.5;pitch=0.3} @self
+  - effect:sound{s=entity.breeze.idle_ground;volume=0.2;pitch=0.3} @self
+  - effect:sound{s=entity.breeze.inhale;volume=1;pitch=1} @self
+hcHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.salmon.hurt;sc=master;p=<random.float.0.8to0.9>;v=1.1} @self
+  - sound{s=entity.shulker.hurt;sc=master;p=<random.float.1.5to1.6>;v=1.1} @self
+  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+
+hcDeath:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.shulker.sit;sc=master;p=<random.float.1.7to1.8>;v=1.1} @self
+  - sound{s=entity.salmon.death;sc=master;p=<random.float.0.8to0.9>;v=1.1} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=5;repeatInterval=1} @self

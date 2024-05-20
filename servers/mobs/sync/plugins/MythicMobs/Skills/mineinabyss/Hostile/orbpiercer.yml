@@ -38,7 +38,7 @@ orbyATTACKDamage:
     - damage{amount=10} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     #- skill{s=Bleeding} @target
-    - throw{v=4;vy=2} @target
+    - throw{v=4;vy=1} @target
 
 
 
@@ -135,7 +135,7 @@ orby_shout:
 orby_knockback:
   Skills:
     - delay 1
-    - throw{v=25;vy=4} @pir{r=12}
+    - throw{v=17;vy=2} @pir{r=8}
 orby_screenshake:
   Skills:
     - recoil{r=15;pitch=-0.2}

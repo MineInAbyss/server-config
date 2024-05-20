@@ -9,7 +9,7 @@ SJ_Attack:
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=5;vR=5;i=1;repeat=20;repeatinterval=1} @forward{f=1}
+    - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=5;vR=5;i=1;repeat=20;repeatinterval=1} @forward{f=3}
 #will bleed once every 5 seconds for 5 seconds
 SJ_Attack_DAMAGE:
   TargetConditions:
