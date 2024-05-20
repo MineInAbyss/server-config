@@ -1,5 +1,5 @@
 woodcrier:
-  Type: ALLAY
+  Type: ZOMBIE
   Display: "<#9A1CAD>Woodcrier"
   Health: 85
   Damage: 9
@@ -75,8 +75,7 @@ woodcrier:
 
 
 horncrier:
-
-  Type: ALLAY
+  Type: ZOMBIE
   Display: "<#9A1CAD>Horncrier"
   Health: 85
   Damage: 9
