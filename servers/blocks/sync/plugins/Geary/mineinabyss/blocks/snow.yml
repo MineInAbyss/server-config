@@ -6,12 +6,12 @@ blocky:sound:
   hitSound: block.snow.hit
   fallSound: block.snow.fall
 breaking:
-  baseDuration: 3s
+  hardness: 0.8
   modifiers:
     heldItems:
       - item:
           type: NETHERITE_SHOVEL
-        value: 2.6s
+        value: 0.6
     heldTypes:
       - toolType: SHOVEL
-        value: 2s
+        value: 0.5

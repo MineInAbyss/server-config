@@ -1,23 +1,26 @@
 namespaces: [geary, blocky]
 breaking:
-  baseDuration: 15s
+  hardness: 4.5
   modifiers:
     heldItems:
       - item:
           type: NETHERITE_PICKAXE
-        value: 14.9s
+        value: 9
       - item:
           type: DIAMOND_PICKAXE
-        value: 14.8s
+        value: 8
       - item:
           type: GOLDEN_PICKAXE
-        value: 14s
+        value: 12
       - item:
           type: IRON_PICKAXE
-        value: 14.6s
+        value: 6
       - item:
           type: STONE_PICKAXE
-        value: 14s
+        value: 4
+      - item:
+          type: STONE_PICKAXE
+        value: 2
     heldTypes:
       - toolType: PICKAXE
-        value: 7.5s
+        value: 5

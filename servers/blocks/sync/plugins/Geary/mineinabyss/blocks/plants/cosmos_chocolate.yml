@@ -7,6 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 10
+breaking:
+  hardness: 4.5
 info:
   blockModel: hmcmodels:block/nature/cosmos_chocolate
 drops:

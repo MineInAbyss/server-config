@@ -7,18 +7,18 @@ blocky:sound:
   fallSound: blocky.wood.fall
 burnable: {}
 breaking:
-  baseDuration: 3s
+  hardness: 0.8
   modifiers:
     heldItems:
       - item:
           type: NETHERITE_AXE
-        value: 2.5s
+        value: 0.8
       - item:
           type: DIAMOND_AXE
-        value: 2s
+        value: 0.7
       - item:
           type: IRON_AXE
-        value: 1.5s
+        value: 10
     heldTypes:
       - toolType: AXE
-        value: 1s
+        value: 0.2

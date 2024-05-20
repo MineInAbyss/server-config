@@ -1,7 +1,7 @@
 namespaces: [geary, blocky]
-inherit:
-  - mineinabyss:ore
-  - mineinabyss:stone
+#inherit:
+#  - mineinabyss:stone
+#  - mineinabyss:ore
 set.item:
   item:
     type: PAPER
@@ -12,25 +12,9 @@ set.block:
   blockId: 1
 info:
   blockModel: mineinabyss:block/ores/charcoal_sand_ore
+
 drops:
   acceptedToolTypes: [ PICKAXE ]
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   onlyDropWithCorrectTool: true
   drops:
     - item: mineinabyss:charcoal_sand_raw
@@ -40,3 +24,28 @@ drops:
       silkTouchedDrop:
         prefab: mineinabyss:charcoal_sand_ore
 
+breaking:
+  hardness: 4.5
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_PICKAXE
+        value: 9
+      - item:
+          type: DIAMOND_PICKAXE
+        value: 8
+      - item:
+          type: GOLDEN_PICKAXE
+        value: 12
+      - item:
+          type: IRON_PICKAXE
+        value: 6
+      - item:
+          type: STONE_PICKAXE
+        value: 4
+      - item:
+          type: STONE_PICKAXE
+        value: 2
+    heldTypes:
+      - toolType: PICKAXE
+        value: 5

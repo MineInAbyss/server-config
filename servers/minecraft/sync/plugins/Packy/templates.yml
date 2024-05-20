@@ -21,6 +21,10 @@ templates:
     default: true
     forced: true
     filePath: Emojy/pack.zip
+  - name: custom_blocks
+    default: true
+    forced: true
+    filePath: Blocky/pack
   - name: build
     default: true
     forced: false
