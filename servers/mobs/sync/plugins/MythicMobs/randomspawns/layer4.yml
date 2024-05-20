@@ -11,7 +11,7 @@ l4p:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 l4d:
   Type: shroombear
   Action: ADD
@@ -25,7 +25,7 @@ l4d:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 l4i:
   Type: ashimite
   Action: ADD
@@ -39,7 +39,7 @@ l4i:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 
 l4w:
   Type: makihige,kazura,hagamizukin
@@ -54,7 +54,7 @@ l4w:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 l4whippo:
   Type: makihige,kazura,hagamizukin,uibuta
   Action: ADD
@@ -68,7 +68,7 @@ l4whippo:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<2} true
   - inblock{b=WATER} true
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 l4f:
   Type: uibuta,onitsuchi,kuongatari
   Action: ADD
@@ -81,7 +81,7 @@ l4f:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<4} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 l4fa:
   Type: tachikatana,orbpiercer
   Action: ADD
@@ -94,7 +94,7 @@ l4fa:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   #- mobsinchunk{a=<1} true
  # - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} true
+  - livinginradius{a=<13;r=40} true
 
 
 
