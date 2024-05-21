@@ -1,5 +1,5 @@
 chikdig:
-  Cooldown: 1
+  Cooldown: 10
   Skills:
     - setstance{stance=dag} @self
     - stun{d=9999;cogd=true;cocu=true} @self
@@ -25,7 +25,7 @@ chikredig:
 
 
 digattack:
-  Cooldown: 1
+  Cooldown: 10
   Conditions:
     - stance{s=dag} true
     - targetwithin{d=5} true
