@@ -4,7 +4,7 @@ l2p:
   Worlds: world
   Chance: 0.003
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
@@ -18,7 +18,7 @@ l1d:
   Worlds: world
   Chance: 0.002
   Priority: 0.1
-  Cooldown: 10
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
@@ -33,7 +33,7 @@ l2w:
   Worlds: world
   Chance: 0.005
   Priority: 0.5
-  Cooldown: 2
+  Cooldown: 1
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
@@ -47,7 +47,7 @@ l2f:
   Worlds: world
   Chance: 0.001
   Priority: 0.5
-  Cooldown: 2
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - region{r=l2s0,l2s1} true
@@ -60,7 +60,7 @@ l2fa:
   Worlds: world
   Chance: 0.00035
   Priority: 1
-  Cooldown: 15
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - region{r=l2s0,l2s1} true
@@ -74,7 +74,7 @@ l2fr:
   Worlds: world
   Chance: 0.0001
   Priority: 0.5
-  Cooldown: 30
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - region{r=l2s0,l2s1} true
