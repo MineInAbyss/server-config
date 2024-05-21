@@ -24,7 +24,11 @@ tesuchi:
   - geary mineinabyss:tesuchi_tail 1
   - geary mineinabyss:tesuchi_scales 1-3 0.8
   DamageModifiers:
-
+  Model:
+    Id: tesuchi
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
