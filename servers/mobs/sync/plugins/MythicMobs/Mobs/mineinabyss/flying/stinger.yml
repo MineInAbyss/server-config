@@ -26,6 +26,11 @@ stinger:
     FollowRange: 25
     MovementSpeed: 0.0   # replaced with skills
     KnockbackResistance: 0.0
+  Model:
+    Id: qmob_stinger
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Drops:
   - exp 5-15
   - geary mineinabyss:stinger_raw 1 0.5
@@ -37,7 +42,6 @@ stinger:
   - skill{s=stingerspawn} @self ~onspawn
 
   ####### Misc
-  - model{mid=qmob_stinger} @self ~onSpawn
   - look{} @target ~onTimer:20
   - defaultstate{t=walk;s=walk;sp=1.0} @self ~onSpawn
   - state{t=idle;sp=1.0} @self ~onTimer:5 ?stance{s=idleAir}

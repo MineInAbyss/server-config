@@ -11,7 +11,7 @@
   - region{r=l2s2} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} false
+
 l2s2floor:
   Type: hisoishi,rockwalker
   Action: ADD
@@ -25,7 +25,7 @@ l2s2floor:
   - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} false
+
 
 
 l2f5:
@@ -40,7 +40,7 @@ l2f5:
   - region{r=l2s2} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} false
+
 
 l2fr5:
   Type: splitjaw
@@ -54,4 +54,3 @@ l2fr5:
   - region{r=l2s2} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - livinginradius{a=<15;r=30} false

@@ -74,7 +74,7 @@ woodcrier:
 horncrier:
   Type: ZOMBIE
   Display: "<#9A1CAD>Horncrier"
-  Health: 80
+  Health: 60
   Damage: 0
   AIGoalSelectors:
     - clear
