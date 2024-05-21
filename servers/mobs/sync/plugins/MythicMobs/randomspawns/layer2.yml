@@ -2,7 +2,7 @@ l2p:
   Type: chimokami,tesuchi,fuwagi,ottobas
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.005
   Priority: 0.5
   Cooldown: 1
   UseWorldScaling: false
@@ -16,7 +16,7 @@ l1d:
   Type: vinebinder,vinepoofer,vineblaster,spikewalker
   Action: ADD
   Worlds: world
-  Chance: 0.002
+  Chance: 0.004
   Priority: 0.1
   Cooldown: 1
   UseWorldScaling: false
@@ -45,9 +45,9 @@ l2f:
   Type: silkfang,cyatoria,dosetori,hammerbeak,woodcrier
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0025
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l2s0,l2s1} true
@@ -58,7 +58,7 @@ l2fa:
   Type: corpse_weeper,hammerbeakLarge
   Action: ADD
   Worlds: world
-  Chance: 0.00035
+  Chance: 0.0005
   Priority: 1
   Cooldown: 1
   UseWorldScaling: false
