@@ -26,7 +26,7 @@ Configuration:
     GenerateSpawnPoints: true
 
     # Area around players where mobs will try to spawn
-    SpawnRadiusPerPlayer: 30
+    SpawnRadiusPerPlayer: 32
     SpawnRadiusPerPlayerMin: 16
     SpawnRadiusPerPlayerY: 20
 
@@ -34,7 +34,7 @@ Configuration:
     LimitMultiplier: 1.2
 
     PointsPerSecond:
-      Land: 5
+      Land: 6
       Air: 1
       Sea: 3
       Lava: 1

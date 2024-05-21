@@ -20,6 +20,7 @@ chikyuoebi:
     LockPitch: true
     Interactable: false
     MovementSpeed: 0.3
+    Collidable: false
     Silent: true
     PreventSunburn: true
   Model:
