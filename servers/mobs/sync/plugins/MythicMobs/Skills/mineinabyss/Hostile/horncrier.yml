@@ -17,7 +17,7 @@ hc_dash:
     - state{s=charge_windup;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 30
-    - setspeed{speed=1.5;type=walking} @self
+    - setspeed{speed=2;type=walking} @self
     - state{s=charge_windup;r=true} @self
     - state{s=charge_run;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target

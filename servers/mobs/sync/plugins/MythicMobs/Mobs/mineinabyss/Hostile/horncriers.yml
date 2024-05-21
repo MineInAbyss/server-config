@@ -1,8 +1,8 @@
 woodcrier:
   Type: ZOMBIE
   Display: "<#9A1CAD>Woodcrier"
-  Health: 85
-  Damage: 9
+  Health: 30
+  Damage: 0
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -13,12 +13,13 @@ woodcrier:
     - clear
     - players
   Options:
-  #  KnockbackResistance: 0.2
+    KnockbackResistance: 0.2
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
+    Silent: true
     Interactable: false
     MovementSpeed: 0.3
     PreventSunburn: true
@@ -73,8 +74,8 @@ woodcrier:
 horncrier:
   Type: ZOMBIE
   Display: "<#9A1CAD>Horncrier"
-  Health: 85
-  Damage: 9
+  Health: 80
+  Damage: 0
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -85,7 +86,7 @@ horncrier:
     - clear
     - players
   Options:
-   # KnockbackResistance: 1
+    KnockbackResistance: 1
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
@@ -93,6 +94,7 @@ horncrier:
     LockPitch: true
     Interactable: false
     MovementSpeed: 0.35
+    Silent: true
     PreventSunburn: true
   Model:
     Id: horncrier_hard
