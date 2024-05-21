@@ -1,0 +1,36 @@
+
+
+imposter_vent:
+  Type: ARMOR_STAND
+  Display: 'Vent'
+  Options:
+    Marker: true
+    Despawn: false
+    Persistent: true
+  Skills:
+  - skill{s=spawn_imposter} @self ~onTimer:20
+  - model{mid=imposter_vent;d=false;i=true} @self ~onSpawn
+  - model{mid=imposter_vent;d=false;i=true} @self ~onLoad
+
+
+red_imposter:
+  Type: SILVERFISH
+  Display: 'an Imposter'
+  #Disguise: ARMOR_STAND setInvisible
+  Health: 1
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Silent: true
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    FollowDistance: 32
+  Skills:
+  - skill{s=imposter_redSPAWN} @self ~onSpawn
+  - skill{s=imposter_redATTACKsync;sync=true} @self ~onAttack
+  - skill{s=imposter_redDEATH} @self ~onDeath
+  - skill{s=imposter_redSHOOT} @self ~onTimer:20
+  - model{mid=imposter_red;d=false;i=true} @self ~onSpawn
+  - model{mid=imposter_red;d=false;i=true} @self ~onLoad
+  

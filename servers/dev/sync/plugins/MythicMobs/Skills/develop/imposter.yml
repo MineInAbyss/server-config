@@ -1,0 +1,779 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+spawn_imposter:
+  Conditions:
+  - playerwithin{d=10} true
+  Cooldown: 20
+  Skills:
+  - state{s=spawnimposter} @self
+  - skill{s=spawnrandomimposter} @self
+  
+spawnrandomimposter:
+  Skills:
+  - randomskill{skills=spawngreenimposter,spawnblackimposter,spawnpurpleimposter,spawnblueimposter,spawnlimeimposter,spawnwhiteimposter,spawnpinkimposter,spawncyanimposter,spawnyellowimposter,spawnredimposter,spawnbrownimposter,spawnorangeimposter} @self
+  
+spawngreenimposter:
+  Skills:
+  - summon{t=green_imposter} @self
+spawnblackimposter:
+  Skills:
+  - summon{t=black_imposter} @self
+spawnpurpleimposter:
+  Skills:
+  - summon{t=purple_imposter} @self
+spawnblueimposter:
+  Skills:
+  - summon{t=blue_imposter} @self
+spawnlimeimposter:
+  Skills:
+  - summon{t=lime_imposter} @self
+spawnwhiteimposter:
+  Skills:
+  - summon{t=white_imposter} @self
+spawnpinkimposter:
+  Skills:
+  - summon{t=pink_imposter} @self
+spawncyanimposter:
+  Skills:
+  - summon{t=cyan_imposter} @self
+spawnyellowimposter:
+  Skills:
+  - summon{t=yellow_imposter} @self
+spawnredimposter:
+  Skills:
+  - summon{t=red_imposter} @self
+spawnbrownimposter:
+  Skills:
+  - summon{t=brown_imposter} @self
+spawnorangeimposter:
+  Skills:
+  - summon{t=orange_imposter} @self
+  
+
+imposter_ATTACKDamage:
+  Skills:
+  - damage{a=3}
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25;y=.5}
+
+#### green imposter ####
+
+imposter_greenSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_green;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_greenATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_greenATTACK} @self
+  
+imposter_greenATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_green;part=right_hand;newmodel=imposter_parts;newpart=knife_green} @self
+  - ChangePart{model=imposter_green;part=left_hand;newmodel=imposter_parts;newpart=left_hand_green} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_green;part=right_hand;newmodel=imposter_green;newpart=right_hand} @self
+  - ChangePart{model=imposter_green;part=left_hand;newmodel=imposter_green;newpart=left_hand} @self
+  
+imposter_greenSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_green;part=right_hand;newmodel=imposter_parts;newpart=gun_green} @self
+  - ChangePart{model=imposter_green;part=left_hand;newmodel=imposter_parts;newpart=left_hand_green} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_green;part=right_hand;newmodel=imposter_green;newpart=right_hand} @self
+  - ChangePart{model=imposter_green;part=left_hand;newmodel=imposter_green;newpart=left_hand} @self
+  
+imposter_greenDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_green;part=body;newmodel=imposter_parts;newpart=dead_green} @self
+  - ChangePart{model=imposter_green;part=right_hand;newmodel=imposter_green;newpart=right_hand} @self
+  - ChangePart{model=imposter_green;part=left_hand;newmodel=imposter_green;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### black imposter ####
+
+imposter_blackSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_black;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_blackATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_blackATTACK} @self
+  
+imposter_blackATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_black;part=right_hand;newmodel=imposter_parts;newpart=knife_black} @self
+  - ChangePart{model=imposter_black;part=left_hand;newmodel=imposter_parts;newpart=left_hand_black} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_black;part=right_hand;newmodel=imposter_black;newpart=right_hand} @self
+  - ChangePart{model=imposter_black;part=left_hand;newmodel=imposter_black;newpart=left_hand} @self
+  
+imposter_blackSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_black;part=right_hand;newmodel=imposter_parts;newpart=gun_black} @self
+  - ChangePart{model=imposter_black;part=left_hand;newmodel=imposter_parts;newpart=left_hand_black} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_black;part=right_hand;newmodel=imposter_black;newpart=right_hand} @self
+  - ChangePart{model=imposter_black;part=left_hand;newmodel=imposter_black;newpart=left_hand} @self
+  
+imposter_blackDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_black;part=body;newmodel=imposter_parts;newpart=dead_black} @self
+  - ChangePart{model=imposter_black;part=right_hand;newmodel=imposter_black;newpart=right_hand} @self
+  - ChangePart{model=imposter_black;part=left_hand;newmodel=imposter_black;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### purple imposter ####
+
+imposter_purpleSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_purple;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_purpleATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_purpleATTACK} @self
+  
+imposter_purpleATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_purple;part=right_hand;newmodel=imposter_parts;newpart=knife_purple} @self
+  - ChangePart{model=imposter_purple;part=left_hand;newmodel=imposter_parts;newpart=left_hand_purple} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_purple;part=right_hand;newmodel=imposter_purple;newpart=right_hand} @self
+  - ChangePart{model=imposter_purple;part=left_hand;newmodel=imposter_purple;newpart=left_hand} @self
+  
+imposter_purpleSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_purple;part=right_hand;newmodel=imposter_parts;newpart=gun_purple} @self
+  - ChangePart{model=imposter_purple;part=left_hand;newmodel=imposter_parts;newpart=left_hand_purple} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_purple;part=right_hand;newmodel=imposter_purple;newpart=right_hand} @self
+  - ChangePart{model=imposter_purple;part=left_hand;newmodel=imposter_purple;newpart=left_hand} @self
+  
+imposter_purpleDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_purple;part=body;newmodel=imposter_parts;newpart=dead_purple} @self
+  - ChangePart{model=imposter_purple;part=right_hand;newmodel=imposter_purple;newpart=right_hand} @self
+  - ChangePart{model=imposter_purple;part=left_hand;newmodel=imposter_purple;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### blue imposter ####
+
+imposter_blueSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_blue;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_blueATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_blueATTACK} @self
+  
+imposter_blueATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_blue;part=right_hand;newmodel=imposter_parts;newpart=knife_blue} @self
+  - ChangePart{model=imposter_blue;part=left_hand;newmodel=imposter_parts;newpart=left_hand_blue} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_blue;part=right_hand;newmodel=imposter_blue;newpart=right_hand} @self
+  - ChangePart{model=imposter_blue;part=left_hand;newmodel=imposter_blue;newpart=left_hand} @self
+  
+imposter_blueSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_blue;part=right_hand;newmodel=imposter_parts;newpart=gun_blue} @self
+  - ChangePart{model=imposter_blue;part=left_hand;newmodel=imposter_parts;newpart=left_hand_blue} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_blue;part=right_hand;newmodel=imposter_blue;newpart=right_hand} @self
+  - ChangePart{model=imposter_blue;part=left_hand;newmodel=imposter_blue;newpart=left_hand} @self
+  
+imposter_blueDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_blue;part=body;newmodel=imposter_parts;newpart=dead_blue} @self
+  - ChangePart{model=imposter_blue;part=right_hand;newmodel=imposter_blue;newpart=right_hand} @self
+  - ChangePart{model=imposter_blue;part=left_hand;newmodel=imposter_blue;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### lime imposter ####
+
+imposter_limeSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_lime;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_limeATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_limeATTACK} @self
+  
+imposter_limeATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_lime;part=right_hand;newmodel=imposter_parts;newpart=knife_lime} @self
+  - ChangePart{model=imposter_lime;part=left_hand;newmodel=imposter_parts;newpart=left_hand_lime} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_lime;part=right_hand;newmodel=imposter_lime;newpart=right_hand} @self
+  - ChangePart{model=imposter_lime;part=left_hand;newmodel=imposter_lime;newpart=left_hand} @self
+  
+imposter_limeSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_lime;part=right_hand;newmodel=imposter_parts;newpart=gun_lime} @self
+  - ChangePart{model=imposter_lime;part=left_hand;newmodel=imposter_parts;newpart=left_hand_lime} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_lime;part=right_hand;newmodel=imposter_lime;newpart=right_hand} @self
+  - ChangePart{model=imposter_lime;part=left_hand;newmodel=imposter_lime;newpart=left_hand} @self
+  
+imposter_limeDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_lime;part=body;newmodel=imposter_parts;newpart=dead_lime} @self
+  - ChangePart{model=imposter_lime;part=right_hand;newmodel=imposter_lime;newpart=right_hand} @self
+  - ChangePart{model=imposter_lime;part=left_hand;newmodel=imposter_lime;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### white imposter ####
+
+imposter_whiteSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_white;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_whiteATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_whiteATTACK} @self
+  
+imposter_whiteATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_white;part=right_hand;newmodel=imposter_parts;newpart=knife_white} @self
+  - ChangePart{model=imposter_white;part=left_hand;newmodel=imposter_parts;newpart=left_hand_white} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_white;part=right_hand;newmodel=imposter_white;newpart=right_hand} @self
+  - ChangePart{model=imposter_white;part=left_hand;newmodel=imposter_white;newpart=left_hand} @self
+  
+imposter_whiteSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_white;part=right_hand;newmodel=imposter_parts;newpart=gun_white} @self
+  - ChangePart{model=imposter_white;part=left_hand;newmodel=imposter_parts;newpart=left_hand_white} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_white;part=right_hand;newmodel=imposter_white;newpart=right_hand} @self
+  - ChangePart{model=imposter_white;part=left_hand;newmodel=imposter_white;newpart=left_hand} @self
+  
+imposter_whiteDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_white;part=body;newmodel=imposter_parts;newpart=dead_white} @self
+  - ChangePart{model=imposter_white;part=right_hand;newmodel=imposter_white;newpart=right_hand} @self
+  - ChangePart{model=imposter_white;part=left_hand;newmodel=imposter_white;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### pink imposter ####
+
+imposter_pinkSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_pink;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_pinkATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_pinkATTACK} @self
+  
+imposter_pinkATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_pink;part=right_hand;newmodel=imposter_parts;newpart=knife_pink} @self
+  - ChangePart{model=imposter_pink;part=left_hand;newmodel=imposter_parts;newpart=left_hand_pink} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_pink;part=right_hand;newmodel=imposter_pink;newpart=right_hand} @self
+  - ChangePart{model=imposter_pink;part=left_hand;newmodel=imposter_pink;newpart=left_hand} @self
+  
+imposter_pinkSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_pink;part=right_hand;newmodel=imposter_parts;newpart=gun_pink} @self
+  - ChangePart{model=imposter_pink;part=left_hand;newmodel=imposter_parts;newpart=left_hand_pink} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_pink;part=right_hand;newmodel=imposter_pink;newpart=right_hand} @self
+  - ChangePart{model=imposter_pink;part=left_hand;newmodel=imposter_pink;newpart=left_hand} @self
+  
+imposter_pinkDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_pink;part=body;newmodel=imposter_parts;newpart=dead_pink} @self
+  - ChangePart{model=imposter_pink;part=right_hand;newmodel=imposter_pink;newpart=right_hand} @self
+  - ChangePart{model=imposter_pink;part=left_hand;newmodel=imposter_pink;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### cyan imposter ####
+
+imposter_cyanSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_cyan;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_cyanATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_cyanATTACK} @self
+  
+imposter_cyanATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_cyan;part=right_hand;newmodel=imposter_parts;newpart=knife_cyan} @self
+  - ChangePart{model=imposter_cyan;part=left_hand;newmodel=imposter_parts;newpart=left_hand_cyan} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_cyan;part=right_hand;newmodel=imposter_cyan;newpart=right_hand} @self
+  - ChangePart{model=imposter_cyan;part=left_hand;newmodel=imposter_cyan;newpart=left_hand} @self
+  
+imposter_cyanSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_cyan;part=right_hand;newmodel=imposter_parts;newpart=gun_cyan} @self
+  - ChangePart{model=imposter_cyan;part=left_hand;newmodel=imposter_parts;newpart=left_hand_cyan} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_cyan;part=right_hand;newmodel=imposter_cyan;newpart=right_hand} @self
+  - ChangePart{model=imposter_cyan;part=left_hand;newmodel=imposter_cyan;newpart=left_hand} @self
+  
+imposter_cyanDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_cyan;part=body;newmodel=imposter_parts;newpart=dead_cyan} @self
+  - ChangePart{model=imposter_cyan;part=right_hand;newmodel=imposter_cyan;newpart=right_hand} @self
+  - ChangePart{model=imposter_cyan;part=left_hand;newmodel=imposter_cyan;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### yellow imposter ####
+
+imposter_yellowSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_yellow;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_yellowATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_yellowATTACK} @self
+  
+imposter_yellowATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_yellow;part=right_hand;newmodel=imposter_parts;newpart=knife_yellow} @self
+  - ChangePart{model=imposter_yellow;part=left_hand;newmodel=imposter_parts;newpart=left_hand_yellow} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_yellow;part=right_hand;newmodel=imposter_yellow;newpart=right_hand} @self
+  - ChangePart{model=imposter_yellow;part=left_hand;newmodel=imposter_yellow;newpart=left_hand} @self
+  
+imposter_yellowSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_yellow;part=right_hand;newmodel=imposter_parts;newpart=gun_yellow} @self
+  - ChangePart{model=imposter_yellow;part=left_hand;newmodel=imposter_parts;newpart=left_hand_yellow} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_yellow;part=right_hand;newmodel=imposter_yellow;newpart=right_hand} @self
+  - ChangePart{model=imposter_yellow;part=left_hand;newmodel=imposter_yellow;newpart=left_hand} @self
+  
+imposter_yellowDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_yellow;part=body;newmodel=imposter_parts;newpart=dead_yellow} @self
+  - ChangePart{model=imposter_yellow;part=right_hand;newmodel=imposter_yellow;newpart=right_hand} @self
+  - ChangePart{model=imposter_yellow;part=left_hand;newmodel=imposter_yellow;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### red imposter ####
+
+imposter_redSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_red;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_redATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_redATTACK} @self
+  
+imposter_redATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_red;part=right_hand;newmodel=imposter_parts;newpart=knife_red} @self
+  - ChangePart{model=imposter_red;part=left_hand;newmodel=imposter_parts;newpart=left_hand_red} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_red;part=right_hand;newmodel=imposter_red;newpart=right_hand} @self
+  - ChangePart{model=imposter_red;part=left_hand;newmodel=imposter_red;newpart=left_hand} @self
+  
+imposter_redSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_red;part=right_hand;newmodel=imposter_parts;newpart=gun_red} @self
+  - ChangePart{model=imposter_red;part=left_hand;newmodel=imposter_parts;newpart=left_hand_red} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_red;part=right_hand;newmodel=imposter_red;newpart=right_hand} @self
+  - ChangePart{model=imposter_red;part=left_hand;newmodel=imposter_red;newpart=left_hand} @self
+  
+imposter_redDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_red;part=body;newmodel=imposter_parts;newpart=dead_red} @self
+  - ChangePart{model=imposter_red;part=right_hand;newmodel=imposter_red;newpart=right_hand} @self
+  - ChangePart{model=imposter_red;part=left_hand;newmodel=imposter_red;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### brown imposter ####
+
+imposter_brownSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_brown;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_brownATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_brownATTACK} @self
+  
+imposter_brownATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_brown;part=right_hand;newmodel=imposter_parts;newpart=knife_brown} @self
+  - ChangePart{model=imposter_brown;part=left_hand;newmodel=imposter_parts;newpart=left_hand_brown} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_brown;part=right_hand;newmodel=imposter_brown;newpart=right_hand} @self
+  - ChangePart{model=imposter_brown;part=left_hand;newmodel=imposter_brown;newpart=left_hand} @self
+  
+imposter_brownSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_brown;part=right_hand;newmodel=imposter_parts;newpart=gun_brown} @self
+  - ChangePart{model=imposter_brown;part=left_hand;newmodel=imposter_parts;newpart=left_hand_brown} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_brown;part=right_hand;newmodel=imposter_brown;newpart=right_hand} @self
+  - ChangePart{model=imposter_brown;part=left_hand;newmodel=imposter_brown;newpart=left_hand} @self
+  
+imposter_brownDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_brown;part=body;newmodel=imposter_parts;newpart=dead_brown} @self
+  - ChangePart{model=imposter_brown;part=right_hand;newmodel=imposter_brown;newpart=right_hand} @self
+  - ChangePart{model=imposter_brown;part=left_hand;newmodel=imposter_brown;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
+  
+#### orange imposter ####
+
+imposter_orangeSPAWN:
+  Skills:
+  - gcd{ticks=40} @self
+  #- setAI{ai=false} @self
+  - state{s=spawn} @self
+  - delay 30
+  - defaultstate{m=imposter_orange;t=idle;s=idle_surface} @self
+  - setAI{ai=true} @self
+  
+imposter_orangeATTACKsync:
+  Skills:
+  - CancelEvent
+  - Skill{s=imposter_orangeATTACK} @self
+  
+imposter_orangeATTACK:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=stab} @self
+  - ChangePart{model=imposter_orange;part=right_hand;newmodel=imposter_parts;newpart=knife_orange} @self
+  - ChangePart{model=imposter_orange;part=left_hand;newmodel=imposter_parts;newpart=left_hand_orange} @self
+  - delay 5
+  - sound{s=entity.player.attack.sweep} @self
+  - totem{ch=5;oH=imposter_ATTACKDamage;int=1;hR=2;vR=2;md=2} @forward{f=1}
+  - delay 15
+  - ChangePart{model=imposter_orange;part=right_hand;newmodel=imposter_orange;newpart=right_hand} @self
+  - ChangePart{model=imposter_orange;part=left_hand;newmodel=imposter_orange;newpart=left_hand} @self
+  
+imposter_orangeSHOOT:
+  Cooldown: 10
+  Conditions:
+  - targetinlineofsight true
+  - incombat true
+  - targetwithin{d=3} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=30} @self
+  - state{s=shoot} @self
+  - ChangePart{model=imposter_orange;part=right_hand;newmodel=imposter_parts;newpart=gun_orange} @self
+  - ChangePart{model=imposter_orange;part=left_hand;newmodel=imposter_parts;newpart=left_hand_orange} @self
+  - delay 20
+  - sound{s=entity.firework_rocket.large_blast} @self
+  - Skill{s=imposter_ATTACKDamage} @target
+  - delay 12
+  - ChangePart{model=imposter_orange;part=right_hand;newmodel=imposter_orange;newpart=right_hand} @self
+  - ChangePart{model=imposter_orange;part=left_hand;newmodel=imposter_orange;newpart=left_hand} @self
+  
+imposter_orangeDEATH:
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=50;hS=.25;vS=.25}
+  - ChangePart{model=imposter_orange;part=body;newmodel=imposter_parts;newpart=dead_orange} @self
+  - ChangePart{model=imposter_orange;part=right_hand;newmodel=imposter_orange;newpart=right_hand} @self
+  - ChangePart{model=imposter_orange;part=left_hand;newmodel=imposter_orange;newpart=left_hand} @self
+  - delay 40
+  - effect:particles{particle=poof;amount=50;hS=.25;vS=.25} @self
