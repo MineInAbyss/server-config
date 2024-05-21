@@ -1,7 +1,7 @@
 
 
 hc_dash:
-  Cooldown: 7
+  Cooldown: 10
   Conditions:
     - offgcd true
     - targetinlineofsight
@@ -17,7 +17,7 @@ hc_dash:
     - state{s=charge_windup;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 30
-    - setspeed{speed=1;type=walking} @self
+    - setspeed{speed=1.5;type=walking} @self
     - state{s=charge_windup;r=true} @self
     - state{s=charge_run;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
@@ -63,16 +63,12 @@ hc_Attack2:
   Skills:
     - CancelEvent
     - gcd{ticks=40}
-    - setAI{ai=false} @self
     - state{s=horn_swipe} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=1}
 #will bleed once every 5 seconds for 5 seconds
-    - setAI{ai=true} @self
 hc_Attack_DAMAGE2:
-  TargetConditions:
-    - isblocking false
   Skills:
     - damage{a=10;pkb=true;hnp=false;hp=true} @target
     #- skill{s=Bleeding} @target
@@ -81,7 +77,6 @@ hc_Attack_DAMAGE2:
     - potion{type=NAUSEA;duration=200;level=5}
 
 hc_Attack:
-  Cooldown: 2
   Conditions:
     - offgcd
     - targetwithin{d=5} true
@@ -92,12 +87,11 @@ hc_Attack:
     - state{s=horn_swipe} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
-#will bleed once every 5 seconds for 5 seconds
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=1}
     - setAI{ai=true} @self
 hc_Attack_DAMAGE:
-  TargetConditions:
-    - isblocking false
+ # TargetConditions:
+  #  - isblocking false
   Skills:
     - damage{a=4;pkb=true;hnp=false;hp=true} @target
     #- skill{s=Bleeding} @target

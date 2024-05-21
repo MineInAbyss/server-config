@@ -13,14 +13,14 @@ woodcrier:
     - clear
     - players
   Options:
-    KnockbackResistance: 0.2
+  #  KnockbackResistance: 0.2
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-  # MovementSpeed: 0.6
+    MovementSpeed: 0.3
     PreventSunburn: true
   Model:
     Id: horncrier_easy
@@ -39,8 +39,6 @@ woodcrier:
 
   Skills:
   # - CancelEvent{sync=true} ~onAttack
-    - bodyclamp{m=horncrier_easy;c=15} @self ~onSpawn
-    - bodyclamp{m=horncrier_easy;c=15} @self ~onLoad
     - DefaultState{m=horncrier_easy;t=walk;s=in_combat} @self ~onEnterCombat
     - DefaultState{m=horncrier_easy;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
@@ -85,17 +83,16 @@ horncrier:
     - randomlookaround
   AITargetSelectors:
     - clear
-    - attacker
     - players
   Options:
-    KnockbackResistance: 1
+   # KnockbackResistance: 1
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-  # MovementSpeed: 0.6
+    MovementSpeed: 0.35
     PreventSunburn: true
   Model:
     Id: horncrier_hard
@@ -114,13 +111,11 @@ horncrier:
 
   Skills:
   # - CancelEvent{sync=true} ~onAttack
-    - bodyclamp{m=horncrier_hard;c=15} @self ~onSpawn
-    - bodyclamp{m=horncrier_hard;c=15} @self ~onLoad
     - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onEnterCombat
     - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
 
-    - skill{s=hc_dash} @target ~onTimer:20
+    - skill{s=hc_dash} @target ~onTimer:100
     - skill{s=hc_Attack2} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
