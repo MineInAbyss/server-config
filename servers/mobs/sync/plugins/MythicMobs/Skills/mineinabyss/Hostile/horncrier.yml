@@ -24,6 +24,7 @@ hc_dash:
     - totem{md=2;c=1;oH=hc_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=60;repeatinterval=1} @forward{f=2}
     - delay 60
     - state{s=charge_run;remove=true} @self
+    - setspeed{speed=1;type=walking} @self
     - skill{s=hc_dashmiss} @self
     - delay 50
     #- setai{ai=true}
