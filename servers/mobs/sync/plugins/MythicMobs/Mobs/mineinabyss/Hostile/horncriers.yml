@@ -118,7 +118,7 @@ horncrier:
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     - skill{s=hc_dash} @target ~onTimer:100
-    - skill{s=digattack} @self ~onTimer:20
+    - skill{s=hc_Attack2} @self ~onTimer:20
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
    # - skill{s=hc_backup} @self ~ondamaged

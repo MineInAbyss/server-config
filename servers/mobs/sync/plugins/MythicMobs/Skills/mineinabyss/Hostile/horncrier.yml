@@ -57,7 +57,6 @@ hc_dashmiss:
 
 
 hc_Attack2:
-  Cooldown: 2
   Conditions:
     - offgcd
     - targetwithin{d=5} true
@@ -71,7 +70,7 @@ hc_Attack2:
 #will bleed once every 5 seconds for 5 seconds
 hc_Attack_DAMAGE2:
   Skills:
-    - damage{a=10;pkb=true;hnp=false;hp=true} @target
+    - damage{a=10;pkb=true;hp=true} @target
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     - throw{v=10;vy=5} @target
@@ -94,7 +93,7 @@ hc_Attack_DAMAGE:
  # TargetConditions:
   #  - isblocking false
   Skills:
-    - damage{a=4;pkb=true;hnp=false;hp=true} @target
+    - damage{a=4;pkb=true;hp=true} @target
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     - throw{v=5;vy=3} @target
