@@ -21,7 +21,7 @@ woodcrier:
     LockPitch: true
     Silent: true
     Interactable: false
-    MovementSpeed: 0.3
+    MovementSpeed: 0.35
     PreventSunburn: true
   Model:
     Id: horncrier_easy
@@ -40,8 +40,8 @@ woodcrier:
 
   Skills:
   # - CancelEvent{sync=true} ~onAttack
-    - DefaultState{m=horncrier_easy;t=walk;s=in_combat} @self ~onEnterCombat
-    - DefaultState{m=horncrier_easy;t=walk;s=walk} @self ~onDropCombat
+    - DefaultState{m=horncrier_easy;t=walk;s=in_combat} @self ~onspawn
+  #  - DefaultState{m=horncrier_easy;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
 
    # - skill{s=hc_dash} @target ~onTimer:20
@@ -93,7 +93,7 @@ horncrier:
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-    MovementSpeed: 0.35
+    MovementSpeed: 0.45
     Silent: true
     PreventSunburn: true
   Model:
@@ -113,12 +113,12 @@ horncrier:
 
   Skills:
   # - CancelEvent{sync=true} ~onAttack
-    - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onEnterCombat
-    - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
+    - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onspawn
+  #  - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
 
-    - skill{s=hc_dash} @target ~onTimer:100
-    - skill{s=hc_Attack2} @self ~onTimer:20
+    - skill{s=hc_dash} @target ~onTimer:200
+    - skill{s=hc_Attack2} @self ~onattack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
    # - skill{s=hc_backup} @self ~ondamaged
