@@ -2,13 +2,15 @@ Kuongatari:
   Type: CAVE_SPIDER
   Health: 50
   Damage: 8
-  AITargetSelectors:
+  AIGoalSelectors:
     - clear
-    - attacker
-    - players
+    - meleeattack
+    - float
+    - randomstroll
+    - randomlookaround
   Options:
     PreventSunBurn: true
-    KnockbackResistance: 1
+    KnockbackResistance: 0.2
     #DigOutOfGround: true
     Collidable: true
     #Silent: false

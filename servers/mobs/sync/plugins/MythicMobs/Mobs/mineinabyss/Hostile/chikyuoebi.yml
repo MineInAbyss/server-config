@@ -8,11 +8,10 @@ chikyuoebi:
     - clear
     - meleeattack
     - float
-    - randomFly
+    - randomstroll
     - randomlookaround
   AITargetSelectors:
     - clear
-    - attacker
     - players
   Options:
     KnockbackResistance: 1
@@ -42,13 +41,12 @@ chikyuoebi:
   # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=chikyuoebi;c=15} @self ~onSpawn
     - bodyclamp{m=chikyuoebi;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.35} @self ~onSpawn
     - DefaultState{m=chikyuoebi;t=idle;s=idle} @self ~onEnterCombat
     - skill{s=chikdig} @self ~onDropCombat
+    - skill{s=chikdig} @self ~onspawn
     - skill{s=Changetarget} ~onTimer:160 <99%
-
+    - state{mid=chikyuoebi;s=attack} @self ~onAttack
  
-    - skill{s=hc_Attack2} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
    # - skill{s=hc_backup} @self ~ondamaged

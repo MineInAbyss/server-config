@@ -7,14 +7,13 @@ woodcrier:
     - clear
     - meleeattack
     - float
-    - randomFly
+    - randomstroll
     - randomlookaround
   AITargetSelectors:
     - clear
-    - attacker
     - players
   Options:
-    KnockbackResistance: 1
+    KnockbackResistance: 0.2
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
@@ -42,7 +41,6 @@ woodcrier:
   # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=horncrier_easy;c=15} @self ~onSpawn
     - bodyclamp{m=horncrier_easy;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.35} @self ~onSpawn
     - DefaultState{m=horncrier_easy;t=walk;s=in_combat} @self ~onEnterCombat
     - DefaultState{m=horncrier_easy;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
@@ -118,7 +116,6 @@ horncrier:
   # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=horncrier_hard;c=15} @self ~onSpawn
     - bodyclamp{m=horncrier_hard;c=15} @self ~onLoad
-    - setspeed{type=flying;speed=1.35} @self ~onSpawn
     - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onEnterCombat
     - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%

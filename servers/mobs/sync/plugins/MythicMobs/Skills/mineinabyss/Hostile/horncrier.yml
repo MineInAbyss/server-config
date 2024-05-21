@@ -38,13 +38,6 @@ hc_dashhit:
     - damage{a=10} 
     - throw{v=10;vy=5} 
     - potion{type=NAUSEA;duration=200;level=5}
-    - recoil{r=20;pitch=-0.5}
-    - delay 2
-    - recoil{r=20;yaw=.5}
-
-    - delay 2
-    - recoil{r=20;yaw=.5}
-
     - delay 100
 
 hc_dashmiss:
@@ -76,7 +69,7 @@ hc_Attack2:
     - delay 20
     - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
 #will bleed once every 5 seconds for 5 seconds
-
+    - setAI{ai=true} @self
 hc_Attack_DAMAGE2:
   TargetConditions:
     - isblocking false
@@ -86,9 +79,6 @@ hc_Attack_DAMAGE2:
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     - throw{v=10;vy=5} @target
     - potion{type=NAUSEA;duration=200;level=5}
-    - recoil{r=20;pitch=-0.5}
-    - delay 2
-    - recoil{r=20;yaw=.5}
 
 hc_Attack:
   Cooldown: 2
@@ -104,7 +94,7 @@ hc_Attack:
     - delay 20
     - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=1}
 #will bleed once every 5 seconds for 5 seconds
-
+    - setAI{ai=true} @self
 hc_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
