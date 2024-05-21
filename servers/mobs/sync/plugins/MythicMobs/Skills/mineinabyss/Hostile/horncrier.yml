@@ -10,7 +10,7 @@ hc_dash:
     - gcd{ticks=400}
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
    # - setai{ai=false}
-    - potion{type=SLOW;duration=20;level=10} @self
+    - stun{d=20;f=true} @self
  
 
     - delay 20
