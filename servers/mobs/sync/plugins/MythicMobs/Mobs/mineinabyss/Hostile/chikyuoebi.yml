@@ -1,5 +1,4 @@
 chikyuoebi:
-
   Type: ZOMBIE
   Display: "<#9A1CAD>Chikyuoebi"
   Health: 85
@@ -8,7 +7,6 @@ chikyuoebi:
     - clear
     - meleeattack
     - float
-    - randomstroll
     - randomlookaround
   AITargetSelectors:
     - clear
@@ -21,7 +19,8 @@ chikyuoebi:
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-  # MovementSpeed: 0.6
+    MovementSpeed: 0.3
+    Silent: true
     PreventSunburn: true
   Model:
     Id: chikyuoebi
@@ -43,14 +42,16 @@ chikyuoebi:
     - bodyclamp{m=chikyuoebi;c=15} @self ~onLoad
     - DefaultState{m=chikyuoebi;t=idle;s=idle} @self ~onEnterCombat
     - skill{s=chikdig} @self ~onDropCombat
+    - skill{s=chikredig} @self  ~onTimer:20
     - skill{s=chikdig} @self ~onspawn
     - skill{s=Changetarget} ~onTimer:160 <99%
-    - state{mid=chikyuoebi;s=attack} @self ~onAttack
- 
+    - skill{s=ch_Attack} @self ~onattack
+    - skill{s=digattack} @self ~onTimer:10
+    - skill{s=digattack} @self ~ondamaged
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
    # - skill{s=hc_backup} @self ~ondamaged
-    - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+   # - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=hcHurt} @self ~onHurt
     - skill{s=hcDeath} @self ~onDeath
 

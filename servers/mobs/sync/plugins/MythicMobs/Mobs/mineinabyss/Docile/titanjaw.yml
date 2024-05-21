@@ -3,7 +3,7 @@ titanjaw:
   Modules:
     ThreatTable: true
   Health: 60 # change this
-  Damage: 10 
+  Damage: 8
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
