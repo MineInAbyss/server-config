@@ -12,6 +12,7 @@ spikewalker:
     Silent: true
     FollowRange: 48
     MaxCombatDistance: 35
+    Movementspeed: 0.3
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -34,5 +35,5 @@ spikewalker:
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=Reflectdamage} ~onTimer:150 <99%
+    - skill{s=Reflectdamage} ~onTimer:100 <99%
     - skill{s=damagereflect} ~onDamaged

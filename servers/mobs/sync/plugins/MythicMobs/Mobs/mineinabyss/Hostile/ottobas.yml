@@ -19,6 +19,7 @@ ottobas:
     Collidable: true
     Silent: true
     FollowRange: 20
+    DigOutOfGround: true
     interactable: true
     MovementSpeed: 0.25
     attackKnockback: 5

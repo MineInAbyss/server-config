@@ -24,7 +24,7 @@ tesuchi:
   - geary mineinabyss:tesuchi_scales 1-3 0.8
   DamageModifiers:
   Model:
-    Id: tesuchi
+    Id: qmob_leafLizard
     ViewRadius: 64
     Drive: false
     DamageTint: true
@@ -33,7 +33,6 @@ tesuchi:
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-  - model{mid=qmob_leafLizard;step=0.8} @self ~onSpawn
   - look{} @target ~onTimer:20
   - defaultstate{t=walk;s=walk;sp=2.2} @self ~onSpawn
   - CancelEvent{sync=true} @self ~onAttack

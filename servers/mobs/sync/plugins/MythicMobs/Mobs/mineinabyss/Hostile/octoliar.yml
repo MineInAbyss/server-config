@@ -14,12 +14,12 @@ octoliar:
   Health: 80 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     PreventOtherDrops: true
     FollowRange: 15
     MovementSpeed: 0.22   # replaced with skills
     KnockbackResistance: 1.0
+    DigOutOfGround: true
   Model:
     Id: octoliar
     ViewRadius: 64

@@ -19,6 +19,7 @@ chimokami:
     FollowRange: 5
     interactable: true
     MovementSpeed: 0.3
+    DigOutOfGround: true
   Model:
     Id: chimokami
     ViewRadius: 64

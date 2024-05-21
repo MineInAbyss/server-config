@@ -19,6 +19,7 @@ shroombear:
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.22
+    DigOutOfGround: true
   DamageModifiers:
   Model:
     Id: qmob_shroombear

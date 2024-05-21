@@ -3,7 +3,6 @@ silkfang:
   Health: 22
   Damage: 4
   Options:
-    Despawn: true
     MovementSpeed: 0.36
     MaxCombatDistance: 30
     DigOutOfGround: true

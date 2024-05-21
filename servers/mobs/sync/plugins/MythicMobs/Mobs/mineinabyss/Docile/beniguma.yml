@@ -19,6 +19,7 @@ beniguma:
     FollowRange: 20
     interactable: true
     MovementSpeed: 0.3
+    DigOutOfGround: true
   Model:
     Id: beniguma
     ViewRadius: 64
