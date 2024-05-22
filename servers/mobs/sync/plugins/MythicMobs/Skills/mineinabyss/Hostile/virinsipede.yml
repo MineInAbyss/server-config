@@ -7,8 +7,8 @@ virinburrow:
   Skills:
       - setai{ai=false} @self
       - state{s=dig_in} @self
-      - particles{p=blockcrack;amount=15;hS=1.5;vS=2;material=DIRT;repeat=10;repeati=2} @self
-      - particles{p=blockcrack;amount=15;hS=1.5;vS=2;material=STONE;repeat=10;repeati=2} @self
+      - particles{p=blockcrack;amount=15;hS=1;vS=2;material=DIRT;repeat=10;repeati=2} @self
+      - particles{p=blockcrack;amount=15;hS=1;vS=2;material=STONE;repeat=10;repeati=2} @self
       - potion{type=RESISTANCE;duration=80;level=10} @self
       - delay 43
 
@@ -133,9 +133,9 @@ viricircle:
   Cooldown:
   Skills:
       - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=7;points=50} @self
-      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=DIRT} @self
-      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=STONE} @self
-      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=SAND} @self
+      - particles{p=blockcrack;amount=11;hS=1.5;vS=1;material=DIRT} @self
+      - particles{p=blockcrack;amount=11;hS=1.5;vS=1;material=STONE} @self
+      - particles{p=blockcrack;amount=11;hS=1.5;vS=1;material=SAND} @self
 
 
 virishock1:
