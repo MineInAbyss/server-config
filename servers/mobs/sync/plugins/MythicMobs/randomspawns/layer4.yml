@@ -2,7 +2,7 @@ l4p:
   Type: shroombear
   Action: ADD
   Worlds: world
-  Chance: 0.007
+  Chance: 0.006
   Priority: 0.5
   Cooldown: 15
   UseWorldScaling: false
@@ -13,7 +13,7 @@ l4p:
   - inblock{b=WATER} false
 
 l4d:
-  Type: shroombear
+  Type: stinger,mantoyer
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -25,48 +25,33 @@ l4d:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-
-l4i:
-  Type: ashimite
-  Action: ADD
-  Worlds: world
-  Chance: 0.003
-  Priority: 0.1
-  Cooldown: 10
-  UseWorldScaling: false
-  Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-
 
 l4w:
-  Type: makihige,kazura,hagamizukin
+  Type: makihige,kazura,hagamizukin,rohana,spiralsquid
   Action: ADD
   Worlds: world
-  Chance: 0.005
+  Chance: 0.009
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
-  - mobsinchunk{a=<2} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l4whippo:
-  Type: makihige,kazura,hagamizukin,uibuta
+  Type: uibuta
   Action: ADD
   Worlds: world
-  Chance: 0.002
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
-  - mobsinchunk{a=<2} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l4f:
@@ -83,18 +68,30 @@ l4f:
   - inblock{b=WATER} false
 
 l4fa:
-  Type: tachikatana,orbpiercer
+  Type: orbpiercer
   Action: ADD
   Worlds: world
-  Chance: 0.0003
+  Chance: 0.00002
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
-  #- mobsinchunk{a=<1} true
+  - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
 
+l4fa2:
+  Type: tachikatana
+  Action: ADD
+  Worlds: world
+  Chance: 0.00001
+  Priority: 1
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - mobsinchunk{a=<3} true
+ # - inblock{b=WATER} false
 
 
 

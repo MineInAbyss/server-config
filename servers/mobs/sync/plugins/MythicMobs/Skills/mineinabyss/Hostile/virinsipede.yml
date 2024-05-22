@@ -1,0 +1,52 @@
+  VirinsipedeBurrowAttack:
+    Cooldown: 20
+    Skills:
+      - setai{ai=false}
+      - state{s=dig_in} @self
+      - particles{p=blockcrack;amount=20;spread=1,1,1;material=DIRT;repeat=40;repeati=4} @self
+      - particles{p=blockcrack;amount=20;spread=1,1,1;material=STONE;repeat=40;repeati=4} @self
+
+
+      - potion{type=RESISTANCE;duration=100;level=10}
+      - delay 40
+      - invisibility{d=60} @Self
+      - teleport{tloc=<player.location.x>,<player.location.y>,<player.location.z>} @targetlocation
+      - skill{s=viricircle;repeat=60;repeati=4} @targetlocation
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
+      - delay 5
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
+      - delay 5
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
+      - delay 50
+      - skill{s=virishock} @Self
+      - delay 20
+      - setAI{ai=true} @self
+viricircle:
+  Conditions:
+  Cooldown:
+  Skills:
+      - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=6;points=50}
+      - particles{p=blockcrack;amount=20;spread=6,1,6;material=DIRT;repeat=40;repeati=4} @self
+      - particles{p=blockcrack;amount=20;spread=6,1,6;material=STONE;repeat=40;repeati=4} @self
+
+
+
+virishock:
+  Skills:
+      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=6}
+      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=6}
+
+      - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
+      - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self
+      - effect:sound{s=block.anvil.land;volume=0.5;pitch=0.8} @Self
+      - effect:sound{s=block.end_portal_frame.fill;volume=0.8;pitch=1.5} @Self
+      - effect:sound{s=entity.illusioner.mirror_move;volume=0.6;pitch=1.0} @Self
+      - effect:sound{s=entity.wither.break_block;volume=0.5;pitch=1.1} @Self
+      - particles{p=blockcrack;amount=100;spread=1,1,1;material=DIRT} @LivingEntitiesInRadius{r=5}
+      - particles{p=explosion;amount=50;spread=1,1,1} @Self
+      - particles{p=blockdust;amount=30;material=SAND;spread=1,1,1} @Self
+
+      - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
+      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
+      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
+

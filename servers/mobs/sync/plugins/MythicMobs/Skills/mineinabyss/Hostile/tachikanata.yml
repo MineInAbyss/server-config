@@ -88,7 +88,7 @@ tachishockwave:
     - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
 
   #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
-    - potion{type=DAMAGE_RESISTANCE;duration=130;level=1;p=false} @self
+    - potion{type=DAMAGE_RESISTANCE;duration=130;level=3;p=false} @self
     - skill{s=tachicircle;repeat=20;repeati=4} @Self
     - delay 36
     - skill{s=tachishock} @Self
