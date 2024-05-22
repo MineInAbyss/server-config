@@ -30,7 +30,6 @@ virinsipede:
     Id: virinsipede
     ViewRadius: 64
     DamageTint: true
-    Scale: 1.1
   Drops:
     - exp 15-25
     - geary mineinabyss:virinsipede_segments 3-8 1

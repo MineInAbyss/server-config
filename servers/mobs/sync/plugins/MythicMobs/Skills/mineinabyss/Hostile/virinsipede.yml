@@ -7,8 +7,8 @@ virinburrow:
   Skills:
       - setai{ai=false} @self
       - state{s=dig_in} @self
-      - particles{p=blockcrack;amount=30;hS=2;vS=2;material=DIRT;repeat=10;repeati=3} @self
-      - particles{p=blockcrack;amount=30;hS=2;vS=2;material=STONE;repeat=10;repeati=3} @self
+      - particles{p=blockcrack;amount=15;hS=1.5;vS=2;material=DIRT;repeat=10;repeati=2} @self
+      - particles{p=blockcrack;amount=15;hS=1.5;vS=2;material=STONE;repeat=10;repeati=2} @self
       - potion{type=RESISTANCE;duration=80;level=10} @self
       - delay 43
 
@@ -64,13 +64,13 @@ virinburrow:
       - partvisibility{m=virinsipede;v=false;p=right_antenna} @self
       - partvisibility{m=virinsipede;v=false;p=face} @self
       - teleport{spreadh=0;spreadv=0} @targetlocation
-      - skill{s=viricircle;repeat=15;repeati=4} @self
+      - skill{s=viricircle;repeat=10;repeati=4} @self
       - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
       - delay 5
       - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
       - delay 5
       - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
-      - delay 40
+      - delay 20
       - delay 1
       - state{s=dig_out} @self
 
@@ -133,15 +133,15 @@ viricircle:
   Cooldown:
   Skills:
       - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=7;points=50} @self
-      - particles{p=blockcrack;amount=20;hS=3;vS=;material=DIRT} @self
-      - particles{p=blockcrack;amount=20;hS=3;vS=1;material=STONE} @self
-      - particles{p=blockcrack;amount=20;hS=3;vS=1;material=SAND} @self
+      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=DIRT} @self
+      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=STONE} @self
+      - particles{p=blockcrack;amount=15;hS=2;vS=1;material=SAND} @self
 
 
 virishock1:
   Skills:
       - throw{velocity=20;velocityY=5} @PlayersInRadius{r=8}
-      - damage{amount=80;ignoreArmor=false} @PlayersInRadius{r=8}
+      - damage{amount=35;ignoreArmor=false} @PlayersInRadius{r=8}
       - delay 1
       - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
       - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self

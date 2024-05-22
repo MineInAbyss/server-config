@@ -29,6 +29,7 @@ OrbPiercer:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+    Scale: 0.8
   DamageModifiers:
     - DROWNING 0
     - PROJECTILE 0.25
