@@ -1,6 +1,6 @@
-  VirinsipedeBurrowAttack:
-    Cooldown: 20
-    Skills:
+virinburrow:
+  Cooldown: 20
+  Skills:
       - setai{ai=false}
       - state{s=dig_in} @self
       - particles{p=blockcrack;amount=20;spread=1,1,1;material=DIRT;repeat=40;repeati=4} @self
