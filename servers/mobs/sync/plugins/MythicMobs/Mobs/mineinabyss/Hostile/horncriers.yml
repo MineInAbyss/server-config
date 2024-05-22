@@ -114,7 +114,7 @@ horncrier:
   Skills:
   # - CancelEvent{sync=true} ~onAttack
     - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onspawn
-  #  - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
+    - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     - skill{s=hc_dash} @target ~onTimer:200
