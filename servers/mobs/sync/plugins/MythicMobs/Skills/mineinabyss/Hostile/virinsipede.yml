@@ -1,12 +1,26 @@
 virinburrow:
-  Cooldown: 20
+  Conditions:
+      - offgcd true
+      - targetinlineofsight
+      - incombat true
+  Cooldown: 10
   Skills:
       - setai{ai=false} @self
       - state{s=dig_in} @self
-      - particles{p=blockcrack;amount=20;hS=1;vS=1;material=DIRT;repeat=10;repeati=4} @self
-      - particles{p=blockcrack;amount=20;hS=6;vS=1;material=STONE;repeat=10;repeati=4} @self
-      - potion{type=RESISTANCE;duration=100;level=10}
-      - delay 40
+      - particles{p=blockcrack;amount=30;hS=2;vS=2;material=DIRT;repeat=10;repeati=3} @self
+      - particles{p=blockcrack;amount=30;hS=2;vS=2;material=STONE;repeat=10;repeati=3} @self
+      - potion{type=RESISTANCE;duration=80;level=10} @self
+      - delay 43
+
+      - partvisibility{m=virinsipede;v=false;p=base} @self
+      - partvisibility{m=virinsipede;v=false;p=section_9} @self
+      - partvisibility{m=virinsipede;v=false;p=left_section_9_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=right_section_9_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=size_bone_s9} @self
+      - partvisibility{m=virinsipede;v=false;p=tail} @self
+      - partvisibility{m=virinsipede;v=false;p=right_tail_pincer} @self
+      - partvisibility{m=virinsipede;v=false;p=left_tail_pincer} @self
+      - partvisibility{m=virinsipede;v=false;p=ob_hitbox_tail} @self
       - partvisibility{m=virinsipede;v=false;p=base} @self
       - partvisibility{m=virinsipede;v=false;p=section_7} @self
       - partvisibility{m=virinsipede;v=false;p=section_6} @self
@@ -14,6 +28,9 @@ virinburrow:
       - partvisibility{m=virinsipede;v=false;p=right_section_7_legs} @self
       - partvisibility{m=virinsipede;v=false;p=size_bone_s7} @self
       - partvisibility{m=virinsipede;v=false;p=section_8} @self
+      - partvisibility{m=virinsipede;v=false;p=left_section_8_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=right_section_8_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=size_bone_s8} @self
       - partvisibility{m=virinsipede;v=false;p=left_section_6_legs} @self
       - partvisibility{m=virinsipede;v=false;p=right_section_6_legs} @self
       - partvisibility{m=virinsipede;v=false;p=size_bone_s6} @self
@@ -30,20 +47,42 @@ virinburrow:
       - partvisibility{m=virinsipede;v=false;p=right_section_3_legs} @self
       - partvisibility{m=virinsipede;v=false;p=size_bone_s3} @self
       - partvisibility{m=virinsipede;v=false;p=section_2} @self
+      - partvisibility{m=virinsipede;v=false;p=left_section_2_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=right_section_2_legs} @self
+      - partvisibility{m=virinsipede;v=false;p=size_bone_s2} @self
+      - partvisibility{m=virinsipede;v=false;p=ob_hitbox_head} @self
       - partvisibility{m=virinsipede;v=false;p=head} @self
       - partvisibility{m=virinsipede;v=false;p=left_head_leg_1} @self
       - partvisibility{m=virinsipede;v=false;p=left_head_leg_2} @self
+      - partvisibility{m=virinsipede;v=false;p=left_head_knee} @self
+      - partvisibility{m=virinsipede;v=false;p=right_head_knee} @self
       - partvisibility{m=virinsipede;v=false;p=right_head_leg_1} @self
       - partvisibility{m=virinsipede;v=false;p=right_head_leg_2} @self
+      - partvisibility{m=virinsipede;v=false;p=left_pincer} @self
+      - partvisibility{m=virinsipede;v=false;p=right_pincer} @self
+      - partvisibility{m=virinsipede;v=false;p=left_antenna} @self
+      - partvisibility{m=virinsipede;v=false;p=right_antenna} @self
       - partvisibility{m=virinsipede;v=false;p=face} @self
       - teleport{spreadh=0;spreadv=0} @targetlocation
-      - skill{s=viricircle;repeat=60;repeati=4} @targetlocation
+      - skill{s=viricircle;repeat=15;repeati=4} @self
       - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
       - delay 5
       - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
       - delay 5
       - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
-      - delay 80
+      - delay 40
+      - delay 1
+      - state{s=dig_out} @self
+
+      - partvisibility{m=virinsipede;v=true;p=base} @self
+      - partvisibility{m=virinsipede;v=true;p=section_9} @self
+      - partvisibility{m=virinsipede;v=true;p=left_section_9_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=right_section_9_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=size_bone_s9} @self
+      - partvisibility{m=virinsipede;v=true;p=tail} @self
+      - partvisibility{m=virinsipede;v=true;p=right_tail_pincer} @self
+      - partvisibility{m=virinsipede;v=true;p=left_tail_pincer} @self
+      - partvisibility{m=virinsipede;v=true;p=ob_hitbox_tail} @self
       - partvisibility{m=virinsipede;v=true;p=base} @self
       - partvisibility{m=virinsipede;v=true;p=section_7} @self
       - partvisibility{m=virinsipede;v=true;p=section_6} @self
@@ -51,6 +90,9 @@ virinburrow:
       - partvisibility{m=virinsipede;v=true;p=right_section_7_legs} @self
       - partvisibility{m=virinsipede;v=true;p=size_bone_s7} @self
       - partvisibility{m=virinsipede;v=true;p=section_8} @self
+      - partvisibility{m=virinsipede;v=true;p=left_section_8_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=right_section_8_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=size_bone_s8} @self
       - partvisibility{m=virinsipede;v=true;p=left_section_6_legs} @self
       - partvisibility{m=virinsipede;v=true;p=right_section_6_legs} @self
       - partvisibility{m=virinsipede;v=true;p=size_bone_s6} @self
@@ -67,44 +109,49 @@ virinburrow:
       - partvisibility{m=virinsipede;v=true;p=right_section_3_legs} @self
       - partvisibility{m=virinsipede;v=true;p=size_bone_s3} @self
       - partvisibility{m=virinsipede;v=true;p=section_2} @self
+      - partvisibility{m=virinsipede;v=true;p=left_section_2_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=right_section_2_legs} @self
+      - partvisibility{m=virinsipede;v=true;p=size_bone_s2} @self
+      - partvisibility{m=virinsipede;v=true;p=ob_hitbox_head} @self
       - partvisibility{m=virinsipede;v=true;p=head} @self
       - partvisibility{m=virinsipede;v=true;p=left_head_leg_1} @self
       - partvisibility{m=virinsipede;v=true;p=left_head_leg_2} @self
+      - partvisibility{m=virinsipede;v=true;p=left_head_knee} @self
+      - partvisibility{m=virinsipede;v=true;p=right_head_knee} @self
       - partvisibility{m=virinsipede;v=true;p=right_head_leg_1} @self
       - partvisibility{m=virinsipede;v=true;p=right_head_leg_2} @self
+      - partvisibility{m=virinsipede;v=true;p=left_pincer} @self
+      - partvisibility{m=virinsipede;v=true;p=right_pincer} @self
+      - partvisibility{m=virinsipede;v=true;p=left_antenna} @self
+      - partvisibility{m=virinsipede;v=true;p=right_antenna} @self
       - partvisibility{m=virinsipede;v=true;p=face} @self
-
-      - delay 1
-      - state{s=dig_out} @self
-      - skill{s=virishock} @Self
+      - skill{s=virishock1} @Self
       - delay 20
       - setAI{ai=true} @self
 viricircle:
   Conditions:
   Cooldown:
   Skills:
-      - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=6;points=50} @self
-      - particles{p=blockcrack;amount=20;hS=6;vS=1;material=DIRT;repeat=10;repeati=4} @self
-      - particles{p=blockcrack;amount=20;hS=6;vS=1;material=STONE;repeat=10;repeati=4} @self
+      - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=7;points=50} @self
+      - particles{p=blockcrack;amount=20;hS=3;vS=;material=DIRT} @self
+      - particles{p=blockcrack;amount=20;hS=3;vS=1;material=STONE} @self
+      - particles{p=blockcrack;amount=20;hS=3;vS=1;material=SAND} @self
 
 
-
-virishock:
+virishock1:
   Skills:
-      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=6}
-      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=6}
-
+      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=8}
+      - damage{amount=80;ignoreArmor=false} @PlayersInRadius{r=8}
+      - delay 1
       - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
       - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self
       - effect:sound{s=block.anvil.land;volume=0.5;pitch=0.8} @Self
       - effect:sound{s=block.end_portal_frame.fill;volume=0.8;pitch=1.5} @Self
       - effect:sound{s=entity.illusioner.mirror_move;volume=0.6;pitch=1.0} @Self
       - effect:sound{s=entity.wither.break_block;volume=0.5;pitch=1.1} @Self
-      - particles{p=blockcrack;amount=100;hS=6;vS=1;material=DIRT} @Self
-      - particles{p=explosion;amount=50;hS=6;vS=1} @Self
-      - particles{p=blockdust;amount=30;material=SAND;hS=6;vS=1} @Self
+      - particles{p=blockcrack;amount=100;hS=3;vS=3;material=DIRT} @Self
+      - particles{p=explosion_emitter;amount=10;hS=2;vS=2} @Self
+      - particles{p=blockdust;amount=50;material=SAND;hS=3;vS=3} @Self
 
       - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
-      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
-      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
 
