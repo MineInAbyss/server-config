@@ -860,7 +860,7 @@ herobrineDROPKICKDamage:
   - skill{s=herobrineBLOODfx} @EIR{r=2}
   - velocity{m=set;x=0;y=0;z=0} @self @EIR{r=2}
   - throw{velocity=15;velocityY=1} @EIR{r=2}
-  - damage{a=<caster.score.herodamage>} @EIR{r=2}
+  - damage{a=5} @EIR{r=2}
   
 
 
@@ -942,7 +942,7 @@ herobrineCROSSBOWTICK:
 
 herobrineCROSSBOWHIT:
   Skills:
-  - damage{a=<caster.score.herodamage>}
+  - damage{a=5}
   - skill{s=herobrineBLOODfx}
   
 herobrineLAND:
@@ -1004,7 +1004,7 @@ herobrineSLASH2:
   
 herobrineSLASHDamage:
   Skills:
-  - damage{a=<caster.score.herodamage>} @EIR{r=2}
+  - damage{a=5} @EIR{r=2}
   - skill{s=herobrineBLOODfx} @EIR{r=2}
   
 herobrinePICKAXEsync:
@@ -1035,7 +1035,7 @@ herobrinePICKAXE:
   
 herobrinePICKAXEDamage:
   Skills:
-  - damage{a=<caster.score.herodamage>} @EIR{r=2}
+  - damage{a=5} @EIR{r=2}
   - throw{velocity=6;velocityY=12} @EIR{r=2}
   - skill{s=herobrineBLOODfx} @EIR{r=2}
   
@@ -1112,7 +1112,7 @@ herobrineROUNDHOUSEsync:
   - skill{s=herobrineROUNDHOUSE} @self
   
 herobrineROUNDHOUSE:
-  Cooldown: 15
+  Cooldown: 7
   Conditions:
   - targetwithin{d=3} true
   Skills:
@@ -1125,7 +1125,7 @@ herobrineROUNDHOUSE:
 herobrineROUNDHOUSEDamage:
   Skills:
   - skill{s=herobrineBLOODfx} @EIR{r=2}
-  - damage{a=<caster.score.herodamage>} @EIR{r=2}
+  - damage{a=5} @EIR{r=2}
   - throw{velocity=20;velocityY=-10} @EIR{r=2}
 
 herobrinePOWERPUNCHsync:
@@ -1154,7 +1154,7 @@ herobrinePOWERPUNCH:
   
 herobrinePOWERPUNCHDamage:
   Skills:
-  - damage{a="<caster.score.herodamage>*2"} @EIR{r=2}
+  - damage{a="5*2"} @EIR{r=2}
   - skill{s=herobrineBLOODfx} @EIR{r=2}
   - throw{velocity=20;velocityY=3} @EIR{r=2}
   
@@ -1175,13 +1175,13 @@ herobrineDOWNPUNCH:
   - state{s=punch_down} @self
   - skill{s=herobrineswingsound} @self
   - delay 8
-  - totem{ch=5;oH=herobrineDOWNPUNCHDamage;int=1;hR=1;md=2;hnp=true} @Forward{f=1}
+  - totem{ch=5;oH=herobrineDOWNPUNCHDamage;int=1;hR=2;md=2;hnp=true} @Forward{f=1}
   - delay 10
   - setspeed{speed=2;type=walking} @self
   
 herobrineDOWNPUNCHDamage:
   Skills:
-  - damage{a=<caster.score.herodamage>} @EIR{r=2}
+  - damage{a=10} @EIR{r=2}
   - skill{s=herobrineBLOODfx} @EIR{r=2}
   
 herobrineBLOODfx:
@@ -1223,7 +1223,7 @@ herobrineULTRA:
   Conditions:
   - onground true  
   - offgcd true
-  Cooldown: 240
+  Cooldown: 220
   Skills:
   - sound{s=littleroom_herobrine:littleroom.herobrine.powerup;v=1;sc=HOSTILE} @self
   - setspeed{speed=0;type=walking} @self
@@ -1261,7 +1261,7 @@ herobrineAXE:
   - offgcd true
   - targetwithin{d=5} false
   - incombat true
-  Cooldown: 15
+  Cooldown: 10
   Skills:
   - delay 1
   - setspeed{speed=0;type=walking} @self
@@ -1281,7 +1281,7 @@ herobrineAXE:
 herobrineAXEHIT:
   Skills:
   - potion{type=SLOW;duration=40;level=1}
-  - damage{a=<caster.score.herodamage>}
+  - damage{a=5}
   - skill{s=herobrineBLOODfx}
   
 herobrineFISHING:

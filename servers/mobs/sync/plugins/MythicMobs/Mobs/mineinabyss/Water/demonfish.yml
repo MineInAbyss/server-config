@@ -14,13 +14,13 @@ demonfish:
   - clear
   - attacker
   Faction: fish
-  Health: 18 # change this
-  Damage: 3
+  Health: 30 # change this
+  Damage: 5
   Options:
     Despawn: false
     Silent: false
     FollowRange: 25
-    MovementSpeed: 0.22
+    MovementSpeed: 0.4
     KnockbackResistance: 0.0
   Drops: # put stuff here
   DamageModifiers:
@@ -49,13 +49,13 @@ hagamizukin:
   - clear
   - attacker
   Faction: fish
-  Health: 18 # change this
+  Health: 30 # change this
   Damage: 3
   Options:
     Despawn: false
     Silent: false
     FollowRange: 25
-    MovementSpeed: 0.22
+    MovementSpeed: 0.3
     KnockbackResistance: 0.0
   Drops: # put stuff here
   DamageModifiers:

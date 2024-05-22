@@ -126,7 +126,7 @@ herobrine_bobber:
 fighter_steve:
   Type: IRON_GOLEM
   Display: 'STEVE'
-  Damage: 0  
+  Damage: 7  
   BossBar:
     Enabled: true
     Title: '<mob.name>'
@@ -151,8 +151,8 @@ fighter_steve:
   - setmobscore{o=herodamage;v=7} @self ~onSpawn
   - skill{s=herobrineULTRAtele} @self ~onDamaged .25
   - skill{s=herobrineFLINCHhit} @self ~onDamaged
-  - skill{s=herobrineFLINCH75;sync=true} @self ~onDamaged <75%
-  - skill{s=herobrineFLINCH50;sync=true} @self ~onDamaged <50%
+ # - skill{s=herobrineFLINCH75;sync=true} @self ~onDamaged <75%
+ # - skill{s=herobrineFLINCH50;sync=true} @self ~onDamaged <50%
   - skill{s=herobrineVAULT} @forward{f=0.75} ~onTimer:20
   - skill{s=herobrineULTRA} @self ~onDamaged <25%
   - skill{s=herobrineBLOCK} @self ~onDamaged
@@ -170,7 +170,7 @@ fighter_steve:
 amogus:
   Type: IRON_GOLEM
   Display: 'AMOGUS'
-  Damage: 0  
+  Damage: 7  
   BossBar:
     Enabled: true
     Title: '<mob.name>'
@@ -188,25 +188,39 @@ amogus:
   AITargetSelectors:
   - players
   - golems
-  Health: 300
+  Health: 500
   Skills:
   - skill{s=HerobrineSTEVESPAWN} @self ~onSpawn
   - randomskill{skills=herobrineHEIGHTJUMP4,herobrineHEIGHTJUMP2,herobrineFISHING,herobrineAXE,herobrineROLL,herobrineLEAPKICK} @target ~onTimer:15
   - setmobscore{o=herodamage;v=7} @self ~onSpawn
   - skill{s=herobrineULTRAtele} @self ~onDamaged .25
   - skill{s=herobrineFLINCHhit} @self ~onDamaged
-  - skill{s=herobrineFLINCH75;sync=true} @self ~onDamaged <75%
-  - skill{s=herobrineFLINCH50;sync=true} @self ~onDamaged <50%
+ # - skill{s=herobrineFLINCH75;sync=true} @self ~onDamaged <75%
+ # - skill{s=herobrineFLINCH50;sync=true} @self ~onDamaged <50%
   - skill{s=herobrineVAULT} @forward{f=0.75} ~onTimer:20
   - skill{s=herobrineULTRA} @self ~onDamaged <25%
   - skill{s=herobrineBLOCK} @self ~onDamaged
   - skill{s=herobrineBLOCKprep} @self ~onTimer:15
-  - skill{s=herobrineEAT} @self ~onTimer:20 <50%
+  - skill{s=herobrineEAT} @self ~onTimer:20 <70%
   - randomskill{skills=herobrineSLASHsync,herobrineSLASHsync,herobrineSLASHsync,herobrinePICKAXEsync,herobrineROUNDHOUSEsync,herobrineDOWNPUNCHsync,herobrinePOWERPUNCHsync;sync=true} @self ~onAttack
-  - skill{s=herobrineLEAPBACK} @self ~onTimer:120
+  - skill{s=herobrineLEAPBACK} @self ~onTimer:80
   - skill{s=herobrineLAND} @self ~onTimer:1
   - model{mid=imposter_red;n=false} @self ~onSpawn
   - DefaultState{m=herobrine;t=WALK;s=run} @self ~onEnterCombat
   - DefaultState{m=herobrine;t=WALK;s=walk} @self ~onDropCombat
   - state{s=idle} @self ~onDropCombat
   - skill{s=herobrineDEATH} @self ~onDeath
+
+herobrine_axe:
+  Type: ARMOR_STAND
+  Display: 'herobrine axe'
+  Skills:
+  - model{mid=herobrine_axe;n=false;d=false} @self ~onSpawn
+  - remove @self
+herobrine_bobber:
+  Type: SILVERFISH
+  Display: 'herobrine bobber'
+  Skills:
+  - skill{s=herobrinebobberSPAWN} @self ~onSpawn
+  - model{mid=herobrine_bobber;n=false;d=false} @self ~onSpawn
+  

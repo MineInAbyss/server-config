@@ -1,5 +1,5 @@
 l4p:
-  Type: shroombear
+  Type: shroombear,hashofu
   Action: ADD
   Worlds: world
   Chance: 0.006
@@ -30,7 +30,7 @@ l4w:
   Type: makihige,kazura,hagamizukin,rohana,spiralsquid
   Action: ADD
   Worlds: world
-  Chance: 0.009
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
@@ -64,7 +64,7 @@ l4f:
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
-  - mobsinchunk{a=<4} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
 l4fa:

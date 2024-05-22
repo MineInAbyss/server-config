@@ -1,8 +1,38 @@
 l5p:
-  Type: shroombear
+  Type: abyssal_snail,titanjaw
   Action: ADD
   Worlds: world
-  Chance: 0.007
+  Chance: 0.006
+  Priority: 0.5
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=GRASS_BLOCK,DIRT} true
+  - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+
+
+l5psnow:
+  Type: ashimite
+  Action: ADD
+  Worlds: world
+  Chance: 0.006
+  Priority: 0.5
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
+  - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+
+
+l5psand:
+  Type: virinsipede
+  Action: ADD
+  Worlds: world
+  Chance: 0.006
   Priority: 0.5
   Cooldown: 15
   UseWorldScaling: false
@@ -12,8 +42,12 @@ l5p:
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
+
+
+
+
 l5d:
-  Type: shroombear
+  Type: stinger,mantoyer
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -25,52 +59,37 @@ l5d:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-
-l5i:
-  Type: ashimite
-  Action: ADD
-  Worlds: world
-  Chance: 0.003
-  Priority: 0.1
-  Cooldown: 10
-  UseWorldScaling: false
-  Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
-  - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-
 
 l5w:
-  Type: makihige,kazura,hagamizukin
+  Type: makihige,demonfish
   Action: ADD
   Worlds: world
-  Chance: 0.005
+  Chance: 0.009
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<2} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l5whippo:
-  Type: makihige,kazura,hagamizukin,uibuta
+  Type: uibuta
   Action: ADD
   Worlds: world
-  Chance: 0.002
+  Chance: 0.001
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<2} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l5f:
-  Type: uibuta,onitsuchi,kuongatari
+  Type: onitsuchi
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -79,22 +98,34 @@ l5f:
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<4} true
+  - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
 l5fa:
-  Type: tachikatana,orbpiercer
+  Type: orbpiercer
   Action: ADD
   Worlds: world
-  Chance: 0.0003
+  Chance: 0.00002
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<10} true
+  - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
 
+l5fa2:
+  Type: tachikatana
+  Action: ADD
+  Worlds: world
+  Chance: 0.00001
+  Priority: 1
+  Cooldown: 15
+  UseWorldScaling: false
+  Conditions:
+  - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinchunk{a=<3} true
+ # - inblock{b=WATER} false
 
 
 

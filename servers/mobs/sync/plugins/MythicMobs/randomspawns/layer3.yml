@@ -1,5 +1,5 @@
 l3p:
-  Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi
+  Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede
   Action: ADD
   Worlds: world
   Chance: 0.007
@@ -7,7 +7,7 @@ l3p:
   Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  #- onblock{m=GRASS_BLOCK,DIRT} true
+  - onblock{m=WHITE_CONRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
