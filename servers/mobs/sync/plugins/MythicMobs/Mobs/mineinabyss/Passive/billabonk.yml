@@ -14,8 +14,8 @@ billabonk:
     - players
   Drops:
     - exp 5-10
-    - geary mineinabyss:billabonk_leg_raw 1 0.6
-    - geary mineinabyss:billabonk_sac 1-2 0.4
+    - billabonkUC
+    - billabonkC
     - lily_pad 1-2 0.4
   Health: 20 # change this
   Damage: 0 

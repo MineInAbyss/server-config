@@ -1,0 +1,11 @@
+billabonkUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:billabonk_leg_cooked 1-2 0.6
+
+billabonkC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:billabonk_leg_cooked 1-2 0.6
