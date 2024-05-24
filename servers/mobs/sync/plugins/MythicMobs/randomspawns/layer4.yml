@@ -2,7 +2,7 @@ l4p:
   Type: shroombear,hashofu
   Action: ADD
   Worlds: world
-  Chance: 0.006
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 15
   UseWorldScaling: false
@@ -16,7 +16,7 @@ l4d:
   Type: stinger,mantoyer
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0015
   Priority: 0.1
   Cooldown: 10
   UseWorldScaling: false
@@ -30,7 +30,7 @@ l4w:
   Type: makihige,kazura,hagamizukin,rohana,spiralsquid
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0015
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
@@ -44,7 +44,7 @@ l4whippo:
   Type: uibuta
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0015
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
@@ -58,7 +58,7 @@ l4f:
   Type: uibuta,onitsuchi,kuongatari,horncrier
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0015
   Priority: 0.5
   Cooldown: 2
   UseWorldScaling: false
@@ -71,7 +71,7 @@ l4fa:
   Type: orbpiercer
   Action: ADD
   Worlds: world
-  Chance: 0.00002
+  Chance: 0.00001
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false
