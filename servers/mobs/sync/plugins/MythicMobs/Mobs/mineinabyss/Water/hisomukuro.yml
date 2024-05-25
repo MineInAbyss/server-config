@@ -1,26 +1,25 @@
 hisomukuro:
   Type: AXOLOTL
   Display: "<#C8C8C8>Hisomukuro"
-  Health: 50
-  Damage: 20
+  Health: 80
+  Damage: 8
   AIGoalSelectors:
     - clear
     - meleeattack
     - randomstroll
     - lookatplayers
     - randomlookaround
-    - float
   AITargetSelectors:
     - clear
     - players
     - attackers
   Options:
-    AttackKnockback: 2
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    interactable: false
     MovementSpeed: 0.6
+    KnockbackResistance: 1.0
   Model:
     Id: hisomukuro
     ViewRadius: 64

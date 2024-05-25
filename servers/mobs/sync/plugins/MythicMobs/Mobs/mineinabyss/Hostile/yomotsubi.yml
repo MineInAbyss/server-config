@@ -1,7 +1,7 @@
 yomotsubi:
   Type: SPIDER
   Health: 50
-  Damage: 11
+  Damage: 6
   AIGoalSelectors:
     - clear
     - spiderattack
@@ -21,7 +21,6 @@ yomotsubi:
     DigOutOfGround: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
-    - TORCH HAND
   Model:
     Id: yomotsubi
     ViewRadius: 64

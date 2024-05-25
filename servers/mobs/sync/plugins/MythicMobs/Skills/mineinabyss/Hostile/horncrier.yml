@@ -21,7 +21,6 @@ hc_dash:
     - setspeed{speed=2;type=walking} @self
     - state{s=charge_windup;r=true} @self
     - state{s=charge_run;li=0;lo=0} @self
-    - potion{type=SPEED;duration=60;level=1} @self
     #- look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - totem{md=2;c=1;oH=hc_dashhit;hnp=false;hp=true;hR=1;vR=2;i=1;repeat=100;repeatinterval=1} @forward{f=1}
     - delay 110
@@ -38,9 +37,9 @@ hc_dashhit:
     - state{s=charge_hit;li=0;lo=0} @self
     - setstance{stance=dashhit} @self
    # - shieldbreak{duration=200} @target
-    - damage{a=8} 
-    - throw{v=10;vy=5} 
-    - potion{type=NAUSEA;duration=800;level=5}
+    - damage{a=7} 
+    - throw{v=10;vy=6} 
+    - potion{type=DARKNESS;duration=60;level=1} 0.5
     - delay 100
 
 hc_dashmiss:
@@ -155,10 +154,8 @@ hcAmbient:
 hcHurt:
   Cooldown: 0.3
   Skills:
-  - effect:sound{s=entity.ghast.hurt;volume=0.6;pitch=0.7} @self
-  - effect:sound{s=entity.horse.hurt;volume=0.6;pitch=0.9} @self
-  - effect:sound{s=entity.wither.hurt;volume=0.5;pitch=1.2} @self
 
+  - effect:sound{s=entity.horse.hurt;volume=0.6;pitch=0.9} @self
   - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
   - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
   - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
@@ -168,11 +165,3 @@ hcHurt:
   - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
   - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
 
-hcDeath:
-  Cooldown: 0.3
-  Skills:
-  - effect:sound{s=entity.ghast.death;volume=0.8;pitch=0.6} @self
-  - delay{d=10}
-  - effect:sound{s=entity.wither.death;volume=0.5;pitch=0.9} @self
-  - delay{d=15}
-  - effect:sound{s=entity.ender_dragon.growl;volume=0.6;pitch=1.1} @self

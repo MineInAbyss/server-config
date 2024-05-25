@@ -2,9 +2,9 @@ l5p:
   Type: abyssal_snail,titanjaw
   Action: ADD
   Worlds: world
-  Chance: 0.006
+  Chance: 0.002
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
@@ -19,7 +19,21 @@ l5psnow:
   Worlds: world
   Chance: 0.006
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 1
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
+  - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
+
+l5hsnow:
+  Type: octoliar,horncrier
+  Action: ADD
+  Worlds: world
+  Chance: 0.001
+  Priority: 0.5
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
@@ -28,11 +42,14 @@ l5psnow:
   - inblock{b=WATER} false
 
 
+
+
+
 l5psand:
   Type: virinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.006
+  Chance: 0.001
   Priority: 0.5
   Cooldown: 15
   UseWorldScaling: false
@@ -47,12 +64,12 @@ l5psand:
 
 
 l5d:
-  Type: stinger,mantoyer
+  Type: stinger
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.002
   Priority: 0.1
-  Cooldown: 10
+  Cooldown: 15
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
@@ -64,7 +81,7 @@ l5w:
   Type: makihige,demonfish
   Action: ADD
   Worlds: world
-  Chance: 0.009
+  Chance: 0.01
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
@@ -75,10 +92,10 @@ l5w:
   - inblock{b=WATER} true
 
 l5whippo:
-  Type: uibuta
+  Type: uibuta,edusan,hisomukuro
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0035
   Priority: 0.5
   Cooldown: 2
   Positiontype: SEA
@@ -89,7 +106,7 @@ l5whippo:
   - inblock{b=WATER} true
 
 l5f:
-  Type: onitsuchi
+  Type: onitsuchi,chikyuoebi
   Action: ADD
   Worlds: world
   Chance: 0.003
@@ -101,31 +118,21 @@ l5f:
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
-l5fa:
-  Type: orbpiercer
-  Action: ADD
-  Worlds: world
-  Chance: 0.00002
-  Priority: 1
-  Cooldown: 15
-  UseWorldScaling: false
-  Conditions:
-  - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<3} true
- # - inblock{b=WATER} false
 
 l5fa2:
   Type: tachikatana
   Action: ADD
   Worlds: world
-  Chance: 0.00001
+  Chance: 0.00005
   Priority: 1
-  Cooldown: 15
+  Cooldown: 30
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<3} true
+ # - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
+
+
 
 
 

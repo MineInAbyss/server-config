@@ -23,6 +23,7 @@ hagamizukin:
     FollowRange: 25
     MovementSpeed: 0.35
     KnockbackResistance: 0.0
+    interactable: false
   Drops: # put stuff here
   DamageModifiers:
 

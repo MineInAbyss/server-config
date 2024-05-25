@@ -1,7 +1,7 @@
 uibuta:
   Type: RAVAGER
   Display: "<#8F2222>Uibuta"
-  Health: 50
+  Health: 100
   Damage: 9.5
   Options:
     KnockbackResistance: 0.1
@@ -22,7 +22,7 @@ uibuta:
     - players
     - attacker
   Equipment:
-    - STONE_BOOTS{enchants=DEPTH_STRIDER:3}
+    - IRON_BOOTS{enchants=DEPTH_STRIDER:3}
   Model:
     Id: uibuta
     ViewRadius: 64
@@ -35,6 +35,8 @@ uibuta:
     - geary mineinabyss:uibuta_tooth 1-3 0.75
 
   Skills:
+    - state{mid=uibuta;s=attack} @self ~onAttack
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - effect:sound{s=mineinabyss:entity.ottobas.ambient;v=6;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.ottobas.death;v=6;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.ottobas.hurt;v=6;p=0.8} @self ~onDamaged

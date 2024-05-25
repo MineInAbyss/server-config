@@ -19,6 +19,7 @@ swarmshocker:
     FollowRange: 10
     MovementSpeed: 0.25
     KnockbackResistance: 0.0
+    interactable: false
   Drops: # put stuff here
   DamageModifiers:
 
