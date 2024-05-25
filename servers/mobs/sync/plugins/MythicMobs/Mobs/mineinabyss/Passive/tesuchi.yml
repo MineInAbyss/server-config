@@ -7,10 +7,11 @@ tesuchi:
   - fleeplayers
   - randomlookaround
   - float
+
   AITargetSelectors:
   - clear
   Faction: leaflizards
-  Health: 18 # change this
+  Health: 22 # change this
   Damage: 0 # keep this 0
   Options:
     Silent: true
@@ -19,7 +20,7 @@ tesuchi:
     MovementSpeed: 0.2
     KnockbackResistance: 0.6
   Drops: # put stuff here
-  - exp 10-15
+  - exp 5-10
   - geary mineinabyss:tesuchi_tail 1
   - geary mineinabyss:tesuchi_scales 1-3 0.8
   DamageModifiers:

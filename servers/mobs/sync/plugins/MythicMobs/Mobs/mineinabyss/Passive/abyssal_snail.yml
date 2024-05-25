@@ -18,6 +18,7 @@ abyssal_snail:
     Silent: true
     FollowRange: 20
     interactable: true
+    Preventotherdrops: true
     MovementSpeed: 0.1
   Model:
     Id: abyssal_snail

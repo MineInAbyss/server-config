@@ -9,7 +9,8 @@ sakuranbo:
     - lookatplayers
     - randomlookaround
     - float
-    - fleeplayers{d=5;s=0.5;ss=1}
+    - fleeplayers{distance=5;speed=0.6;safespeed=1;conditions=[ - inlineofsight true ]}
+
   AITargetSelectors:
     - clear
   Options:

@@ -1,7 +1,7 @@
 edusan:
   Type: COD
-  Display: "Edusan"
-  Health: 20
+  Display: "<#800080>Edusan"
+  Health: 80
   Damage: 0
   AIGoalSelectors:
     - clear
@@ -23,7 +23,8 @@ edusan:
     DamageTint: true
   Drops:
     - exp 15-20
-    - geary mineinabyss:demonfish_raw 1 
+    - geary mineinabyss:edusan_scale 1-18 1
+    - geary mineinabyss:edusan_whisker 1 0.2
   Skill: 
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

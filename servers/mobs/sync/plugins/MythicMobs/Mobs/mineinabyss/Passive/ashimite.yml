@@ -19,6 +19,11 @@ ashimite:
     FollowRange: 48
     interactable: true
     #MovementSpeed: 0.25
+  Drops:
+    - exp 5-10
+    - ashimiteUC
+    - ashimiteC
+    - LIGHT_BLUE_WOOL 1-2 0.6
   Model:
     Id: ashimite
     ViewRadius: 64
@@ -38,6 +43,7 @@ ashimite:
     #- sound{s=mineinabyss:entity.stingerhead.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.stingerhead.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.stingerhead.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+
 baby_ashimite:
   Type: SHEEP
   Health: 12
@@ -58,7 +64,13 @@ baby_ashimite:
     Silent: true
     FollowRange: 48
     interactable: false
-    #MovementSpeed: 0.25
+    Preventotherdrops: true
+    #MovementSpeed: 0.25"
+  Drops:
+    - exp 1-10
+    - geary mineinabyss:ashimite_hoof 1-2 0.3
+    - geary mineinabyss:ashimite_antlers 1 0.3
+    - LIGHT_BLUE_WOOL 1 0.3
   Model:
     Id: ashimite
     ViewRadius: 64

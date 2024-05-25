@@ -9,7 +9,7 @@ fuwagi:
     - lookatplayers
     - randomlookaround
     - float
-    - fleeplayers{d=10;ss=1}
+    - fleeplayers{distance=5;speed=1;safespeed=1;conditions=[ - inlineofsight true ]}
   AITargetSelectors:
     - clear
   Options:
@@ -23,8 +23,9 @@ fuwagi:
     ViewRadius: 64
     DamageTint: true
   Drops:
-    - exp 10-16
-    - geary mineinabyss:fuwagi_meat_raw 1 0.8
+    - exp 3-7
+    - fuwagiUC
+    - fuwagiC
     - geary mineinabyss:fuwagi_foot 1-2 0.3
     - geary mineinabyss:fuwagi_hide 1 0.4
 

@@ -18,7 +18,7 @@ l2s2floor:
   Worlds: world
   Chance: 0.0015
   Priority: 0.1
-  Cooldown: 10
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l2s2} true

@@ -17,6 +17,7 @@ makihige:
     Collidable: true
     Silent: true
     interactable: true
+    DigOutOfGround: true
     MovementSpeed: 0.2
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:20} FEET

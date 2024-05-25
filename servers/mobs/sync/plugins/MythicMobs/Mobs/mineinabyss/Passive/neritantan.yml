@@ -9,7 +9,8 @@ neritantan:
     - lookatplayers
     - randomlookaround
     - float
-    - fleeplayers{d=10;s=1.5;ss=1}
+    - fleeplayers{distance=10;speed=1.5;safespeed=1;conditions=[ - inlineofsight true ]}
+
   AITargetSelectors:
     - clear
   Options:
@@ -22,8 +23,9 @@ neritantan:
     ViewRadius: 64
     DamageTint: true
   Drops:
-    - exp 10-15
-    - geary mineinabyss:neritantan_meat_raw 1 0.5
+    - exp 5-10
+    - neritantanUC
+    - neritantanC
     - beetroot_seeds 1-2 0.3
     - melon_seeds 1-2 0.3
     - pumpkin_seeds 1-2 0.3

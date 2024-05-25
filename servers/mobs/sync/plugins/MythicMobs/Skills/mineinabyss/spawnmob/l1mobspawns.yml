@@ -145,12 +145,3 @@ Kuongatarispawn:
     - gcd{ticks=20}
     - summon{type=kuongatari;amount=1-3;radius=7} @self
 
-:
-  Cooldown: 9999999
-  Conditions:
-    - offgcd
-    - isChild false
-    - hasparent false
-  Skills:
-    - gcd{ticks=20}
-    - summon{type=;amount=;radius=7} @self

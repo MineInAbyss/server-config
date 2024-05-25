@@ -13,7 +13,7 @@ billabonk:
     - clear
     - players
   Drops:
-    - exp 5-10
+    - exp 1-10
     - billabonkUC
     - billabonkC
     - lily_pad 1-2 0.4
@@ -21,6 +21,7 @@ billabonk:
   Damage: 0 
   Options:
     Despawn: false
+    Preventotherdrops: true
   DamageModifiers:
   Model:
     Id: billabonk

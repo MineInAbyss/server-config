@@ -13,6 +13,7 @@ demonfish:
   AITargetSelectors:
   - clear
   - attacker
+  - players
   Faction: fish
   Health: 30 # change this
   Damage: 5
@@ -21,51 +22,21 @@ demonfish:
     Silent: false
     FollowRange: 25
     MovementSpeed: 0.4
+    Interactable: false
     KnockbackResistance: 0.0
   Drops: # put stuff here
+  - demonfishUC
+  - demonfishC
   DamageModifiers:
-
+  Model:
+    Id: qmob_demonfish
+    ViewRadius: 64
+    DamageTint: true
   Skills:
   ####### Misc
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - model{mid=qmob_demonfish} @self ~onSpawn
-  - look{immediately=true} @targetLocation ~onTimer:10
-  - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
-hagamizukin:
-  Type: SALMON
-  Modules:
-    ThreatTable: true
-  AIGoalSelectors:
-  - clear
-  - movetowater
-  - meleeattack
-  - movetowardstarget
-  - fleeplayers
-  - randomlookaround
-  - randomfly
-  AITargetSelectors:
-  - clear
-  - attacker
-  Faction: fish
-  Health: 30 # change this
-  Damage: 3
-  Options:
-    Despawn: false
-    Silent: false
-    FollowRange: 25
-    MovementSpeed: 0.3
-    KnockbackResistance: 0.0
-  Drops: # put stuff here
-  DamageModifiers:
-
-  Skills:
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - state{mid=hagamizukin;s=attack} @self ~onAttack
-  ####### Misc
-  - model{mid=hagamizukin} @self ~onSpawn
+ # - model{mid=qmob_demonfish} @self ~onSpawn
   - look{immediately=true} @targetLocation ~onTimer:10
   - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
   #- skill:MIAPetExpNearby{exp=1} ~onDeath

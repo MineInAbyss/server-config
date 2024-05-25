@@ -49,7 +49,7 @@ qmob_stingerDamager:
   Cooldown: 0
   Conditions:
   Skills:
-  - damage{a=3;pk=true;cd=0.5} @EIR{r=1.25;ignore=samefaction} # make this what you want
+  - damage{a=5;pk=true;cd=0.5} @EIR{r=1.75;ignore=samefaction} # make this what you want
   - sound{s=entity.bee.sting;sc=master;p=<random.float.1.35to1.45>;v=1.85;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
@@ -58,8 +58,9 @@ qmob_stingerDamager:
   - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
   - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;cd=0.5} @self ?targetwithin{d=1.2}
-  - damage{a=0.5;pi=true;pk=true} @EIR{r=0.25;ignore=samefaction} # extra damage if they're really close
+  - damage{a=2;pi=true;pk=true} @EIR{r=0.25;ignore=samefaction} # extra damage if they're really close
   - effect:particles{particle=block;m=red_concrete_powder;y=1;a=3;hs=0.4;vs=0.1;s=0;y=1.5;cd=0.5} @target ?targetwithin{d=1.2} #
   - effect:particles{particle=block;m=red_nether_bricks;y=1;a=3;hs=0.15;vs=0.1;s=0;y=1.5;cd=0.5} @target ?targetwithin{d=1.2}   # Simple blood effect
   - effect:particles{particle=block;m=nether_wart_block;y=1;a=5;hs=0.15;vs=0.1;s=0;y=1.5;cd=0.5} @target ?targetwithin{d=1.2}   # Remove if there are
   - effect:particles{particle=block;m=weeping_vines;y=1;a=12;hs=0.15;vs=0.15;s=0;y=1.5;cd=0.5} @target ?targetwithin{d=1.2}      # children or otherwise.
+  - potion{type=POISON;duration=40;level=2} @EIR{r=0.25;ignore=samefaction}
