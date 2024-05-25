@@ -9,6 +9,7 @@
   Conditions:
   - onblock{m=BIRCH_LEAVES,OAK_WOOD,OAK_PLANKS,OAK_SLAB,OAK_LEAVES,COBBLESTONE_SLAB} true
   - region{r=l2s2} true
+  - mobsinradius{a=>7;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -23,6 +24,7 @@ l2s2floor:
   Conditions:
   - region{r=l2s2} true
   - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
+  - mobsinradius{a=>5;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -39,6 +41,7 @@ l2f5:
   Conditions:
   - region{r=l2s2} true
   - mobsinchunk{a=<5} true
+  - mobsinradius{a=>5;radius=15} false
   - inblock{b=WATER} false
 
 

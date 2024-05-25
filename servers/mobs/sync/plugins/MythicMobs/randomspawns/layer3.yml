@@ -34,7 +34,6 @@ l3w:
   Chance: 0.0025
   Priority: 0.5
   Cooldown: 1
-  Positiontype: SEA
   UseWorldScaling: false
   Conditions:
   - region{r=l3s0,l3s1,l3s2,l3s3} true

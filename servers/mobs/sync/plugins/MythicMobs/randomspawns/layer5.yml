@@ -9,6 +9,7 @@ l5p:
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>5;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -24,6 +25,7 @@ l5psnow:
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>7;radius=25} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -38,6 +40,7 @@ l5hsnow:
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>5;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -51,11 +54,12 @@ l5psand:
   Worlds: world
   Chance: 0.001
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 20
   UseWorldScaling: false
   Conditions:
   #- onblock{m=GRASS_BLOCK,DIRT} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>7;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -74,6 +78,7 @@ l5d:
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>10;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -82,39 +87,41 @@ l5w:
   Action: ADD
   Worlds: world
   Chance: 0.01
-  Priority: 0.5
-  Cooldown: 2
-  Positiontype: SEA
+  Priority: 1
+  PositionType: SEA
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
   - mobsinchunk{a=<1} true
+  - mobsinradius{a=>5;radius=15} false
   - inblock{b=WATER} true
 
-l5whippo:
-  Type: uibuta,edusan,hisomukuro
+l5watermob:
+  Type: edusan,hisomukuro,hagamizukin
   Action: ADD
   Worlds: world
-  Chance: 0.0035
+  Chance: 0.0025
+  PositionType: SEA
+  Cooldown: 5
   Priority: 0.5
-  Cooldown: 2
-  Positiontype: SEA
-  UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinchunk{a=<1} true
+  - mobsinradius{a=>5;radius=15} false
+ # - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l5f:
   Type: onitsuchi,chikyuoebi
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.001
   Priority: 0.5
-  Cooldown: 2
+  Cooldown: 20
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>5;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
