@@ -22,7 +22,7 @@ l4d:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
   - mobsinradius{a=>10;radius=15} false
@@ -57,7 +57,7 @@ l4whippo:
   - inblock{b=WATER} true
 
 l4f:
-  Type: uibuta,onitsuchi,kuongatari,horncrier,yomotsubi
+  Type: uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi
   Action: ADD
   Worlds: world
   Chance: 0.001

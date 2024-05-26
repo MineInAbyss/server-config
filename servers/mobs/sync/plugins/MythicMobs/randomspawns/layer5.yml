@@ -1,15 +1,15 @@
 l5p:
-  Type: abyssal_snail,titanjaw
+  Type: abyssal_snail,titanjaw,Kuongatari
   Action: ADD
   Worlds: world
-  Chance: 0.002
+  Chance: 0.006
   Priority: 0.5
-  Cooldown: 5
+  Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT} true
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=>7;radius=45} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -40,26 +40,39 @@ l5hsnow:
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=>5;radius=45} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
 
 
-
+l5hsand:
+  Type: kagi_tachikiri
+  Action: ADD
+  Worlds: world
+  Chance: 0.0015
+  Priority: 0.5
+  Cooldown: 5
+  UseWorldScaling: false
+  Conditions:
+  - onblock{m=SAND,SANDSTONE,RED_SAND,RED_SANDSTONE} true
+  - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>5;radius=45} false
+  - mobsinchunk{a=<1} true
+  - inblock{b=WATER} false
 
 l5psand:
   Type: virinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0004
   Priority: 0.5
-  Cooldown: 20
+  Cooldown: 30
   UseWorldScaling: false
   Conditions:
-  #- onblock{m=GRASS_BLOCK,DIRT} true
+  - onblock{m=SAND,SANDSTONE,RED_SAND,RED_SANDSTONE} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>7;radius=15} false
+  - mobsinradius{a=>2;radius=45} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -68,7 +81,7 @@ l5psand:
 
 
 l5d:
-  Type: stinger
+  Type: stinger,Kuongatari
   Action: ADD
   Worlds: world
   Chance: 0.002
@@ -76,9 +89,9 @@ l5d:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>10;radius=15} false
+  - mobsinradius{a=>10;radius=45} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -86,42 +99,42 @@ l5w:
   Type: makihige,demonfish
   Action: ADD
   Worlds: world
-  Chance: 0.01
-  Priority: 1
+  Chance: 0.002
   PositionType: SEA
-  Cooldown: 1
-  UseWorldScaling: false
+  Cooldown: 10
+  Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
+  - mobsinradius{a=>5;radius=50} false
   - mobsinchunk{a=<1} true
-  - mobsinradius{a=>5;radius=15} false
   - inblock{b=WATER} true
+
 
 l5watermob:
   Type: edusan,hisomukuro,hagamizukin
   Action: ADD
   Worlds: world
-  Chance: 0.0025
+  Chance: 0.001
   PositionType: SEA
   Cooldown: 5
   Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=>5;radius=35} false
  # - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
 l5f:
-  Type: onitsuchi,chikyuoebi
+  Type: onitsuchi,chikyuoebi,uibuta
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.002
   Priority: 0.5
-  Cooldown: 20
+  Cooldown: 10
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=>5;radius=35} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
