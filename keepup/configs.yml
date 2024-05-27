@@ -1,0 +1,67 @@
+global:
+  files:
+    plugins/Geary:
+      deleteUntracked: true
+      keep:
+        - config.yml
+feat/mobs:
+  copyPaths: [ feat/mobs ]
+  files:
+    plugins/MythicMobs:
+      deleteUntracked: true
+      keep:
+        - config/
+        - data/
+        - stats.yml
+
+# Servers
+minecraft:
+  copyPaths: [ servers/minecraft ]
+  variables:
+    env:
+      PRIVATE_PLUGINS_TOKEN: "{{ lookup('env', 'PRIVATE_PLUGINS_TOKEN') }}"
+      PACKY_ACCESS_TOKEN: "{{ lookup('env', 'PACKY_ACCESS_TOKEN', default='UNKNOWN') }}"
+      SERVER_NAME: "{{ lookup('env', 'SERVER_NAME', errors='ignore') }}"
+      PACKY_PUBLIC_ADDRESS: "{{ lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') }}"
+    velocity_forward_secret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
+
+survival:
+  copyPaths: [ servers/survival ]
+  variables:
+    chattyServerPrefix: ":survival::space_-4:"
+  include:
+    - minecraft
+    - items
+    - blocks
+    - mobs
+build:
+  copyPaths: [ servers/build ]
+  include:
+    - minecraft
+    - feat/blocks
+    - feat/items
+dev:
+  copyPaths: [ servers/dev ]
+  variables:
+    chattyServerPrefix: ":dev::space_-4:"
+  include:
+    - minecraft
+    - feat/blocks
+    - feat/items
+    - feat/mobs
+    - feat/pets
+    - feat/delvers
+archive:
+  copyPaths: [ servers/archive ]
+  variables:
+    chattyServerPrefix: ":archive::space_-4:"
+  include:
+    - feat/delvers
+    - feat/mobs
+    - minecraft
+
+# Proxy
+velocity:
+  copyPaths: [ servers/proxy ]
+  variables:
+    velocityForwardingSecret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"

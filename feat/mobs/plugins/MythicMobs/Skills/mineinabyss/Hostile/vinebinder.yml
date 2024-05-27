@@ -1,0 +1,103 @@
+vinebinderattack:
+  Conditions:
+  - targetwithin{d=4} true
+  Skills:
+  - cancelevent{sync=true} @Self
+  - skill{s=[
+    - state{s=attack} @Self
+    - setai{ai=false} @Self
+    - delay 22
+    - effect:sound{s=entity.shulker.ambient;p=1.3} @Self
+    - totem{ch=3;
+        onStart=[
+          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+          - skill:vinebinderATTACKDamage @ENO{r=3}  ];int=1;hR=3;md=1} @Forward{f=3}
+    - delay 10
+    - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
+    - totem{ch=3;
+        onStart=[
+          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+          - skill:vinebinderATTACKDamage @ENO{r=3}  ];int=1;hR=3;md=1} @Forward{f=3}
+    - setai{ai=true} @Self
+    - state{s=attack;remove=true} @Self    ]}
+
+vinebinderATTACKDamage:
+  Skills:
+    - damage{amount=5}
+vinebinderATTACKDamage2:
+  Cooldown: 1
+  Skills:
+    - damage{amount=5}
+
+vinebinderwave:
+  Cooldown: 15
+  Conditions:
+    - offgcd
+    - targetwithin{d=3} false
+  Skills:
+    - gcd{ticks=200}
+    - state{s=swing;li=3;lo=2} @self 
+    - delay 15
+    - particles{p=crit_magic;a=2;hs=0.1;vs=0.1;repeat=40;repeatInterval=1} @modelpart{mid=vinebinder;pid=tonque1}
+    - skill{s=[- totem{md=2;c=1;oH=vinebinderATTACKDamage2;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=50;repeatinterval=1} @LivingNearTargetLocation{r=1}  ]} @modelpart{mid=vinebinder;pid=tonque1}
+    - delay 45
+    - state{s=swing;li=3;lo=2;r=true} @self 
+vinebinderHurt:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.shulker.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+
+vinebinderAmbient:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.shulker.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+
+
+vineblasterattack:
+  Cooldown: 5
+  Conditions:
+    - incombat true
+    - offgcd true
+   # - targetwithin{d=10} true
+    #- targetinlineofsight{} true
+  Skills:
+    - gcd{ticks=50}
+    - state{s=pew} @self
+    - effect:sound{s=entity.blaze.shoot;p=0.8} @Self
+    - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
+    - delay 20
+
+    - projectile{onTick=vineblaster_tick;onHit=vineblaster_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - delay 20
+    - state{s=pew;r=true} @self
+
+
+vineblaster_tick:
+  Skills:
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=15;hS=.25;vS=.25;speed=0.05}
+
+vineblaster_impact:
+  Skills:
+    - damage{a=5} @target
+    - potion{type=POISON;duration=100;level=2} @target
+    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target
+
+vinepooferattack:
+  Cooldown: 7
+  Conditions:
+    - incombat true
+    - offgcd true
+    - targetwithin{d=5} true
+  Skills:
+    - gcd{ticks=100}
+    - state{s=poof} @self
+    - delay 22
+    - effect:sound{s=block.wool.place;p=1.5;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.7;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.9;v=2} @Self
+    - effect:sound{s=block.wool.place;p=2.0;v=2} @Self
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=150;hS=7;vS=5;y=7}
+    - potion{type=POISON;duration=100;level=3} @PIR{r=7}
+    - potion{type=WITHER;duration=100;level=3} @PIR{r=7}
+    - skill{s=Bleeding} @PIR{r=7}
+    - potion{type=SLOWNESS;duration=100;level=2} @PIR{r=7}

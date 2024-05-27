@@ -1,0 +1,104 @@
+vinebinder:
+  Type: ZOMBIE
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - randomlookaround
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Health: 30 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Preventsunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+  Model:
+    Id: vinebinder
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Skills:
+  ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+
+  - skill{s=vinebinderattack} @Self ~onAttack
+  - skill{s=vinebinderwave} @target ~onTimer:20
+
+vineblaster:
+  Type: ZOMBIE
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  #- randomlookaround
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Health: 20 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Preventsunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+  Model:
+    Id: vineblaster
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.3
+  Skills:
+  ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+  - skill:vineblasterattack @Self ~onTimer:60
+ # - skill{s=vineblastermortar} @target ~onTimer:20
+  - cancelevent{sync=true} @Self ~onAttack
+
+vinepoofer:
+  Type: ZOMBIE
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - randomlookaround
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Health: 30 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Preventsunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+  Model:
+    Id: vinepoofer
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Skills:
+  ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+  - skill:vinepooferattack @Self ~onTimer:60
+ # - skill{s=vinebinderwave} @target ~onTimer:20
+  - cancelevent{sync=true} @Self ~onAttack

@@ -1,0 +1,41 @@
+virinsipede:
+  Type: zombie
+  Display: "<#C42D2D>Virinsipede"
+  Health: 160
+  Damage: 10
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - float
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+    Interactable: false
+    MovementSpeed: 0.3
+    Collidable: false
+    Silent: true
+    PreventSunburn: true
+  DamageModifiers:
+    - PROJECTILE 0.5
+  Model:
+    Id: virinsipede
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 15-25
+    - geary mineinabyss:virinsipede_segments 3-8 1
+   # - geary mineinabyss:virinsipede 1 0.3
+  Skills:
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=virinburrow} @Self ~onTimer:60
+    - state{mid=virinsipede;s=attack} @self ~onAttack

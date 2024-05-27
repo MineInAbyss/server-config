@@ -1,0 +1,12 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: BLACK_WOOL
+    displayName: "<red>Beniguma Fur"
+    customModelData: 0
+    lore:
+      - <yellow>A tuft of fur from the body of the rarely
+      - <yellow>seen <#D63624>Chimokami<yellow>. These raccoon-like
+      - <yellow>creatures are forragers in the
+      - <yellow>the <red>Edge of The Abyss<yellow>.
+disableItemInteractions: {}

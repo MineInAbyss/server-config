@@ -1,4 +1,4 @@
 - name: Render template for Keepup configs
   template:
-    src: "servers/keepup-configs.yml"
+    src: "keepup/configs.yml"
     dest: '{{ home }}/keepupDir/keepup-configs.yml'

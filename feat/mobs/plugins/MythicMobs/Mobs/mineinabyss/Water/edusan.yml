@@ -1,0 +1,29 @@
+edusan:
+  Type: COD
+  Display: "<#800080>Edusan"
+  Health: 80
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    interactable: true
+    MovementSpeed: 0.3
+  Model:
+    Id: edusan
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 15-20
+    - geary mineinabyss:edusan_scale 1-18 1
+    - geary mineinabyss:edusan_whisker 1 0.2
+  Skill: 
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
