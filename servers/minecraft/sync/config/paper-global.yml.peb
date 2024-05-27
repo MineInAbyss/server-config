@@ -1,4 +1,3 @@
-{% set secret_file = lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) %}
 # This is the global configuration file for Paper.
 # As you can see, there's a lot to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
@@ -95,9 +94,9 @@ proxies:
     online-mode: true
   proxy-protocol: false
   velocity:
-    enabled: {{ secret_file | length > 0 }}
+    enabled: '{{ velocity_forward_secret | length > 0 }}'
     online-mode: true
-    secret: {{ secret_file if secret_file | length > 0 else 'N/A' }}
+    secret: '{{ velocity_forward_secret | length > 0 ? velocity_forward_secret : 'N/A' }}'
 scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false

@@ -1,0 +1,3 @@
+[mineinabyss]
+type = http
+url = https://private-plugins:{{ env.PRIVATE_PLUGINS_TOKEN }}@repo.mineinabyss.com

@@ -1,0 +1,62 @@
+global:
+  files:
+    plugins/Geary:
+      deleteUntracked: true
+mobs:
+  files:
+    plugins/MythicMobs:
+      deleteUntracked: true
+      keep:
+        - config/
+        - data/
+minecraft:
+  copyPaths: [ minecraft/sync ]
+  variables:
+    env:
+      PRIVATE_PLUGINS_TOKEN: "{{ lookup('env', 'PRIVATE_PLUGINS_TOKEN') }}"
+      PACKY_ACCESS_TOKEN: "{{ lookup('env', 'PACKY_ACCESS_TOKEN', default='UNKNOWN') }}"
+      SERVER_NAME: "{{ lookup('env', 'SERVER_NAME', errors='ignore') }}"
+      PACKY_PUBLIC_ADDRESS: "{{ lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') }}"
+    velocity_forward_secret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
+
+# Servers
+survival:
+  variables:
+    chattyServerPrefix: ":survival::space_-4:"
+  include:
+    - minecraft
+    - items
+    - blocks
+    - mobs
+    - survival
+build:
+  include:
+    - minecraft
+    - blocks
+    - items
+    - build
+dev:
+  variables:
+    chattyServerPrefix: ":dev::space_-4:"
+  include:
+    - minecraft
+    - blocks
+    - items
+    - mobs
+    - pets
+    - delvers
+    - dev
+archive:
+  variables:
+    chattyServerPrefix: ":archive::space_-4:"
+  include:
+    - delvers
+    - mobs
+    - minecraft
+    - archive
+
+# Proxy
+velocity:
+  variables:
+    velocityForwardingSecret: "{ { lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) } }"
+  copyPaths: [ proxy ]

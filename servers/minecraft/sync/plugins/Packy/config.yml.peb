@@ -1,5 +1,3 @@
-{% set server_name = lookup('env', 'SERVER_NAME', errors='ignore') %}
-{% set publicAddress = lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') %}
 mcmeta:
   format: 18
   description: <gradient:#ff7043:#ffca28:#ff7043>MineInAbyss <white>- <gradient:#fff906:#fffb46>Server
@@ -8,7 +6,7 @@ icon: pack.png
 server:
   ip: "0.0.0.0"
   port: 8082
-  publicAddress: {{ publicAddress or "https://" + server_name + ".pack.mineinabyss.com" }}
+  publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS ? env.PACKY_PUBLIC_ADDRESS : "https://" + env.SERVER_NAME + ".pack.mineinabyss.com" }}"
 prompt: ""
 force: false
 obfuscate: false
