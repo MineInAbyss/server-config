@@ -5,7 +5,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: common
   - name: trims
     default: true
@@ -27,7 +27,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: build
   - name: premium_content
     default: true
@@ -44,7 +44,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: 2d_tools
   - name: new_armor
     default: true
@@ -55,7 +55,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: new_armor
   - name: 3d_tools
     default: false
@@ -65,7 +65,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: 3d_tools
   - name: old_armor
     default: false
@@ -76,7 +76,7 @@ templates:
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
-      branch: develop
+      branch: master
       subFolder: old_armor
   - name: custom_music
     default: true
