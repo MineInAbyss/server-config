@@ -1,11 +1,4 @@
-- name: Copy server-specific configurations
-  include_tasks: copy-dir.yml
-  vars:
-    src: "servers/{{ item }}/sync/"
-  loop: "{{ servers[server_name] }}"
-
-- name: Copy templates
-  include_tasks: template-dir.yml
-  vars:
-    templates_source: "servers/{{ item }}/templates"
-  loop: "{{ servers[server_name] }}"
+- name: Render template for Keepup configs
+  template:
+    src: "servers/keepup-configs.yml"
+    dest: '{{ home }}/keepupDir/keepup-configs.yml'

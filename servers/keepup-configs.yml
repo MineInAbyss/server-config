@@ -2,13 +2,17 @@ global:
   files:
     plugins/Geary:
       deleteUntracked: true
+      keep:
+        - config.yml
 mobs:
+  copyPaths: [ mobs/sync ]
   files:
     plugins/MythicMobs:
       deleteUntracked: true
       keep:
         - config/
         - data/
+        - stats.yml
 minecraft:
   copyPaths: [ minecraft/sync ]
   variables:
@@ -58,5 +62,5 @@ archive:
 # Proxy
 velocity:
   variables:
-    velocityForwardingSecret: "{ { lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) } }"
+    velocityForwardingSecret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
   copyPaths: [ proxy ]
