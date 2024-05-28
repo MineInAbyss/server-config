@@ -76,7 +76,7 @@ channels:
       position: SUFFIX
       format: "{{ deleteMessageText }}"
       notifyStaff: true
-    format: "{{ chatty.serverPrefix }}%luckperms_prefix% {{ hoverableNickname }}<chatty_nickname>:"
+    format: "{{ chatty.serverPrefix }}%luckperms_prefix% {{ hoverableNickname }}<chatty_nickname>: "
     messageColor: "#fafafa"
     channelAliases: [ "g" ]
 
@@ -87,10 +87,10 @@ channels:
     messageDeletion:
       enabled: true
       position: SUFFIX
-      format: " <gray>[<red>X</red>]</gray>"
+      format: "{{ deleteMessageText }}"
       notifyStaff: true
       logDeletedMessages: true
-    format: "{{ chatty.serverPrefix }}:local: {{ hoverableNickname }}<chatty_nickname>: "
+    format: "{{ chatty.serverPrefix }}:local: {{ hoverableNickname }}<#DFCC4E><chatty_nickname>: "
     messageColor: "#FFECB3"
     channelRadius: "{{ chatty.localChatRadius | default(500) }}"
     channelAliases: [ "l" ]
@@ -103,12 +103,13 @@ channels:
     isDefaultChannel: false
     isStaffChannel: true
     discordsrv: false
-    format: "{{ chatty.serverPrefix }}:admin: {{ hoverableNickname }}<chatty_nickname>: "
-    messageColor: red
+    format: "{{ chatty.serverPrefix }}:admin: {{ hoverableNickname }}<#E51E61><chatty_nickname>: "
+    messageColor: "#F5A5C0"
     channelAliases: [ "a" ]
 
   builder:
     channelType: PERMISSION
+    discordsrv: false
     permission: "chatty.channel.builder"
     format: "{{ chatty.serverPrefix }}:builder: {{ hoverableNickname }}<chatty_nickname>: "
     messageColor: "#529ced"

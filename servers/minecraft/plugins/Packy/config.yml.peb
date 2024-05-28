@@ -6,7 +6,7 @@ icon: pack.png
 server:
   ip: "0.0.0.0"
   port: 8082
-  publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS ? env.PACKY_PUBLIC_ADDRESS : "https://" + env.SERVER_NAME + ".pack.mineinabyss.com" }}"
+  publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://" + env.SERVER_NAME + ".pack.mineinabyss.com") }}"
 prompt: ""
 force: false
 obfuscate: false

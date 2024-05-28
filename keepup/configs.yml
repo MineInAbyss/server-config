@@ -54,6 +54,7 @@ dev:
   variables:
     chatty:
       serverPrefix: ":dev::space_-4:"
+      localChatRadius: 0
   include:
     - minecraft
     - feat/blocks
@@ -66,6 +67,7 @@ archive:
   variables:
     chatty:
       serverPrefix: ":archive::space_-4:"
+      localChatRadius: 0
   include:
     - minecraft
     - feat/delvers

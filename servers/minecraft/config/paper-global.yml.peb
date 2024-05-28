@@ -96,7 +96,7 @@ proxies:
   velocity:
     enabled: '{{ velocity_forward_secret | length > 0 }}'
     online-mode: true
-    secret: '{{ velocity_forward_secret | length > 0 ? velocity_forward_secret : 'N/A' }}'
+    secret: '{{ velocity_forward_secret | default('N/A') }}'
 scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false
