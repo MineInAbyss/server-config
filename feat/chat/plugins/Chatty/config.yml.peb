@@ -1,0 +1,115 @@
+{% if chatty.enableHover == "true" %}
+{% set hoverableNickname = "
+<hover:show_text:' <light_purple><b><chatty_nickname><newline>
+<light_purple>Deaths: <aqua>%statistic_deaths%<newline>
+<light_purple>Time Played: <aqua>%statistic_hours_played%h<newline>
+<light_purple>Time since last death: <aqua>%statistic_hours_since_death%h'>
+<click:run_command:/mia profile %player_name%>:space_-4:<#FFCA28>
+" | trim %}
+{% endif %}
+{% set deleteMessageText = "<gray>[<red>❌</red>]</gray>" %}
+playerHeadFont: "minecraft:chatty_heads"
+
+privateMessages:
+  enabled: true
+  proxy: true
+  messageReplyTime: 5m
+  messageSendFormat: '<gold>You -> <chatty_nickname><gold>: '
+  messageReceiveFormat: '<gold><chatty_nickname> -> You<gold>: '
+  messageSendSound: ""
+  messageReceivedSound: ""
+
+chat:
+  disableChatSigning: true
+  commandSpyFormat: '<gold><chatty_nickname><yellow>: '
+  filterFormat: CENSOR
+  filters: [ ]
+  formatURLs: true
+  urlReplacements:
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.png\?.*$
+      replacement: '[Discord Image]'
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.mp4\?.*$
+      replacement: '[Discord Video]'
+    - pattern: youtube.com
+      replacement: '[YouTube]'
+
+ping:
+  enabledChannels:
+    - all
+  defaultPingSound: block.amethyst_block.place
+  alternativePingSounds:
+    - all
+  pingVolume: 1.0
+  pingPitch: 1.0
+  pingPrefix: '@'
+  clickToReply: true
+  pingReceiveFormat: <gold><b>
+  pingSendFormat: <i>
+
+nicknames:
+  useDisplayName: true
+  maxLength: 32
+  countTagsInLength: false
+  nickNameOtherPrefix: '@'
+
+join:
+  enabled: false
+  firstJoin:
+    enabled: false
+
+leave:
+  enabled: false
+
+proxy:
+  enableProxySwitchMessages: false
+  discordSrvChannelID: "Global"
+  sendProxyMessagesToDiscord: true
+
+channels:
+  global:
+    channelType: GLOBAL
+    isDefaultChannel: true
+    proxy: true
+    discordsrv: true
+    messageDeletion:
+      enabled: true
+      position: SUFFIX
+      format: "{{ deleteMessageText }}"
+      notifyStaff: true
+    format: "{{ chatty.serverPrefix }}%luckperms_prefix% {{ hoverableNickname }}<chatty_nickname>:"
+    messageColor: "#fafafa"
+    channelAliases: [ "g" ]
+
+  local:
+    channelType: RADIUS
+    proxy: false
+    discordsrv: false
+    messageDeletion:
+      enabled: true
+      position: SUFFIX
+      format: " <gray>[<red>X</red>]</gray>"
+      notifyStaff: true
+      logDeletedMessages: true
+    format: "{{ chatty.serverPrefix }}:local: {{ hoverableNickname }}<chatty_nickname>: "
+    messageColor: "#FFECB3"
+    channelRadius: {{ chatty.localChatRadius | default(500) }}
+    channelAliases: [ "l" ]
+
+  admin:
+    channelType: PERMISSION
+    permission: "chatty.channel.admin"
+    logToConsole: true
+    proxy: true
+    isDefaultChannel: false
+    isStaffChannel: true
+    discordsrv: false
+    format: "{{ chatty.serverPrefix }}:admin: {{ hoverableNickname }}<chatty_nickname>: "
+    messageColor: red
+    channelAliases: [ "a" ]
+
+  builder:
+    channelType: PERMISSION
+    permission: "chatty.channel.builder"
+    format: "{{ chatty.serverPrefix }}:builder: {{ hoverableNickname }}<chatty_nickname>: "
+    messageColor: "#529ced"
+    channelAliases: [ "b" ]

@@ -24,17 +24,26 @@ minecraft:
       SERVER_NAME: "{{ lookup('env', 'SERVER_NAME', errors='ignore') }}"
       PACKY_PUBLIC_ADDRESS: "{{ lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') }}"
     velocity_forward_secret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
+  include:
+    - feat/chat
 
 survival:
   copyPaths: [ servers/survival ]
   variables:
-    chattyServerPrefix: ":survival::space_-4:"
+    chatty:
+      enableHover: true
+      serverPrefix: ":survival::space_-4:"
   include:
     - minecraft
-    - items
-    - blocks
-    - mobs
+    - feat/items
+    - feat/blocks
+    - feat/mobs
 build:
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":build::space_-4:"
+      localChatRadius: 0
   copyPaths: [ servers/build ]
   include:
     - minecraft
@@ -43,7 +52,8 @@ build:
 dev:
   copyPaths: [ servers/dev ]
   variables:
-    chattyServerPrefix: ":dev::space_-4:"
+    chatty:
+      serverPrefix: ":dev::space_-4:"
   include:
     - minecraft
     - feat/blocks
@@ -54,11 +64,12 @@ dev:
 archive:
   copyPaths: [ servers/archive ]
   variables:
-    chattyServerPrefix: ":archive::space_-4:"
+    chatty:
+      serverPrefix: ":archive::space_-4:"
   include:
+    - minecraft
     - feat/delvers
     - feat/mobs
-    - minecraft
 
 # Proxy
 velocity:
