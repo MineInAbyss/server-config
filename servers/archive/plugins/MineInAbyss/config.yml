@@ -1,31 +1,28 @@
 # Ignore following options, enable all features
 enableAll: false
 # Choose which features to enable with true/false
-advancement:
-  enabled: false
 antiCheese:
-  enabled: true
+  enabled: false
 configManagement:
   enabled: true
 core:
   enabled: true
 cosmetics:
-  enabled: true
-  equipWhistleCosmetic: false
+  enabled: false
   equipBackpacks: false
   defaultBackpack: "backpack"
 curse:
-  enabled: true
+  enabled: false
 custom_hud:
-  enabled: true
+  enabled: false
 descent:
   enabled: false
 displayLocker:
-  enabled: true
+  enabled: false
 enchants:
   enabled: false
 exp:
-  enabled: true
+  enabled: false
 gondolas:
   enabled: false
 guilds:
@@ -42,7 +39,7 @@ lootCrates:
 misc:
   enabled: false
 music:
-  enabled: true
+  enabled: false
 shopkeeping:
   enabled: false
 okiboTravel:
@@ -53,11 +50,10 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: false
-  token: null
 pins:
   enabled: false
 playerProfile:
-  enabled: true
+  enabled: false
 survivalPvp:
   enabled: false
 adventurePvp:
