@@ -13,6 +13,15 @@ feat/mobs:
         - config/
         - data/
         - stats.yml
+feat/emotes:
+  copyPaths: [ feat/emotes ]
+  files:
+    plugins/Emojy:
+      deleteUntracked: true
+      keep:
+        - gifs/ # Image sequences get generated in here
+        - fonts/
+        - pack.zip
 
 # Servers
 minecraft:
@@ -26,6 +35,7 @@ minecraft:
     velocity_forward_secret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
   include:
     - feat/chat
+    - feat/emotes
 
 survival:
   copyPaths: [ servers/survival ]
@@ -36,6 +46,8 @@ survival:
   include:
     - minecraft
     - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
     - feat/blocks
     - feat/mobs
 build:
@@ -49,6 +61,8 @@ build:
     - minecraft
     - feat/blocks
     - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
 dev:
   copyPaths: [ servers/dev ]
   variables:
@@ -59,6 +73,8 @@ dev:
     - minecraft
     - feat/blocks
     - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
     - feat/mobs
     - feat/pets
     - feat/delvers
@@ -70,8 +86,6 @@ archive:
       localChatRadius: 0
   include:
     - minecraft
-    - feat/delvers
-    - feat/mobs
 
 # Proxy
 velocity:
