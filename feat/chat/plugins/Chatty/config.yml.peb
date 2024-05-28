@@ -92,7 +92,7 @@ channels:
       logDeletedMessages: true
     format: "{{ chatty.serverPrefix }}:local: {{ hoverableNickname }}<chatty_nickname>: "
     messageColor: "#FFECB3"
-    channelRadius: {{ chatty.localChatRadius | default(500) }}
+    channelRadius: "{{ chatty.localChatRadius | default(500) }}"
     channelAliases: [ "l" ]
 
   admin:
