@@ -67,7 +67,7 @@ dev:
   copyPaths: [ servers/dev ]
   variables:
     chatty:
-      serverPrefix: ":dev::space_-4:"
+      serverPrefix: ":test::space_-4:"
       localChatRadius: 0
   include:
     - minecraft
