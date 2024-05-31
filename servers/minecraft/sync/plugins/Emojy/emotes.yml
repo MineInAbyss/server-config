@@ -521,6 +521,16 @@ emotes:
     texture: mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png
     height: 224
     ascent: 15
+  - id: player_profile_background
+    font: mineinabyss:playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_background.png
+    height: 72
+    ascent: -2
+  - id: player_profile_background_2
+    font: mineinabyss:playerprofile
+    texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
+    height: 72
+    ascent: -2
   - id: player_profile_rank_admin
     template: playerprofile
     texture: mineinabyss:ui/roles/admin.png

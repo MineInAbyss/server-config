@@ -55,6 +55,9 @@ pins:
   enabled: false
 playerProfile:
   enabled: true
+  validBackgroundIds:
+  - "player_profile_background"
+  - "player_profile_background_2"
 survivalPvp:
   enabled: true
 adventurePvp:
