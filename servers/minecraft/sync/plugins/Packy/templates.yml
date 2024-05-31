@@ -8,34 +8,34 @@ templates:
       branch: develop
       subFolder: common
   - name: modelengine
-    default: false
-    forced: false
+    default: true
+    forced: true
     filePath: ModelEngine/resource pack.zip
   - name: emotes
     default: true
     forced: true
     filePath: Emojy/pack.zip
   - name: custom_blocks
-    default: false
-    forced: false
+    default: true
+    forced: true
     filePath: Blocky/pack
   - name: build
-    default: false
-    forced: false
+    default: true
+    forced: true
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
       branch: develop
       subFolder: build
   - name: premium_content
-    default: false
-    forced: false
+    default: true
+    forced: true
     githubDownload:
       org: MineInAbyss
       repo: ResourcePack-Premium-Content
       branch: master
   - name: 2d_tools
-    default: false
+    default: true
     forced: false
     conflictsWith:
       - 3d_tools
@@ -46,7 +46,7 @@ templates:
       subFolder: 2d_tools
   - name: new_armor
     default: true
-    forced: true
+    forced: false
     conflictsWith:
       - old_armor
       - vanilla_armor

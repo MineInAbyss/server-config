@@ -5,7 +5,7 @@ nicknames:
   countTagsInLength: false
   nickNameOtherPrefix: '@'
 chat:
-  disableChatSigning: true
+  disableChatSigning: false
   commandSpyFormat: '<gold><chatty_nickname><yellow>: '
   # Valid formats: STRIKETHROUGH, CENSOR, DELETE, BLOCK
   # STRIKETHROUGH: Replaces filtered words with a strikethrough

@@ -1,7 +1,3 @@
-# FOR HMCCOSMETICS USERS:
-# Vanilla RP Title: <white>
-# Oraxen Configuration Title: <white><s:-8><g:dye_menu>
-# ItemsAdder Configuration Title: '<white>:img_offset_-8::img_dye_menu:'
 title: <gradient:#aa3159:#8c0c0c>HMCColor
 rows: 6
 buttons:
@@ -26,24 +22,22 @@ buttons:
       third: 21..23
     scrollingGrid:
       row: 19..25
-      backwardSlot: 18
-      forwardSlot: 26
-      backwardItem:
+      left: 8
+      right: 17
+      leftItem:
         type: minecraft:arrow
         customModelData: 1
         displayName: Scroll base-colors backwards
-      forwardItem:
+      rightItem:
         type: minecraft:arrow
         customModelData: 2
         displayName: Scroll base-colors forward
-    # baseColorItem can be specified, null defaults to Buttons.item
-    baseColorItem: null
   subColorGrid:
     # Valid types are: NORMAL, SCROLLING
     type: NORMAL
-    # Whether to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
-    autoFillColorGradient: true
     normalGrid:
+      # Whether to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
+      autoFillColorGradient: false
       rows:
         - 46..52
     scrollingGrid:
@@ -58,8 +52,6 @@ buttons:
         type: minecraft:arrow
         customModelData: 2
         displayName: Scroll sub-colors forward
-    # subColorItem can be specified, null defaults to Buttons.item
-    subColorItem: null
   effectButton: 31
 blacklistedItems:
   oraxenItems: []
@@ -89,7 +81,6 @@ effects:
     color: "#FCFC02"
     permission: hmccolor.effect
 colorPermission: hmccolor.dye
-noPermissionMessage: <red>You do not have access to this color!
 colors:
   red:
     baseColor:
