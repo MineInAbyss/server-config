@@ -6,7 +6,7 @@ yomotsubi_airball:
    # - targetwithin{d=10} true
     #- targetinlineofsight{} true
   Skills:
-    - gcd{ticks=50}
+    - gcd{ticks=300}
     - state{s=wingsbrrr} @self
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
@@ -22,5 +22,6 @@ yomotsubi_impact:
   Skills:
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
     - throw{velocity=20;velocityY=7} @target
-    - damage{a=10} @target
+    - damage{a=8} @target
+    - damage{a=4;ia=true} @target
     - shieldbreak{duration=150} @target
