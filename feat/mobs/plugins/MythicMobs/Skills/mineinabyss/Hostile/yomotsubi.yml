@@ -6,7 +6,7 @@ yomotsubi_airball:
    # - targetwithin{d=10} true
     #- targetinlineofsight{} true
   Skills:
-    - gcd{ticks=300}
+    - gcd{ticks=50}
     - state{s=wingsbrrr} @self
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
