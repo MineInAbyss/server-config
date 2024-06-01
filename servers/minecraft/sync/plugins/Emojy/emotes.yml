@@ -423,18 +423,19 @@ emotes:
     texture: mineinabyss:ui/pvp/pvp_menu_toggle.png
     height: 196
     ascent: 23
-  - id: guild_main_menu_has_guild_and_has_invites
+  - id: guild_main_menu
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_main_menu_has_guild_and_has_invites.png
-  - id: guild_main_menu_has_guild_and_no_invites
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu.png
+  - id: guild_main_menu_create
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_main_menu_has_guild_and_no_invites.png
-  - id: guild_main_menu_no_guild_and_has_invites
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_create.png
+    height: 36
+    ascent: -22
+  - id: guild_main_menu_info
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_main_menu_no_guild_and_has_invites.png
-  - id: guild_main_menu_no_guild_and_no_invites
-    template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_main_menu_no_guild_and_no_invites.png
+    texture: mineinabyss:ui/guilds/menus/guild_main_menu_info.png
+    height: 36
+    ascent: -22
   - id: guild_disband_or_leave_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_disband_or_leave_menu.png
@@ -444,18 +445,12 @@ emotes:
   - id: guild_owner_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_owner_menu.png
-  - id: guild_invites_menu
+  - id: guild_inbox_list_menu
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_invites_menu.png
-  - id: handle_guild_invites
+    texture: mineinabyss:ui/guilds/menus/guild_inbox_list_menu.png
+  - id: guild_inbox_handle_menu
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/handle_guild_invites.png
-  - id: guild_join_requests_menu
-    template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_join_requests_menu.png
-  - id: handle_guild_join_requests
-    template: guilds
-    texture: mineinabyss:ui/guilds/menus/handle_guild_join_requests.png
+    texture: mineinabyss:ui/guilds/menus/guild_inbox_handle_menu.png
   - id: guild_member_action_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_member_action_menu.png
@@ -474,23 +469,28 @@ emotes:
   - id: guild_member_management_jointype_any
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_any.png
-    height: 20
-    ascent: -3
+    height: 17
+    ascent: -5
   - id: guild_member_management_jointype_invite
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_invite.png
-    height: 20
-    ascent: -3
+    height: 17
+    ascent: -5
   - id: guild_member_management_jointype_request
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_request.png
-    height: 20
-    ascent: -3
-  - id: guild_member_management_notification
+    height: 17
+    ascent: -5
+  - id: guild_inbox_read
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_notification.png
-    height: 6
-    ascent: -6
+    texture: mineinabyss:ui/guilds/menus/guild_inbox_read.png
+    height: 17
+    ascent: -5
+  - id: guild_inbox_unread
+    template: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_inbox_unread.png
+    height: 17
+    ascent: -5
   - id: guild_search_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_search_menu.png
