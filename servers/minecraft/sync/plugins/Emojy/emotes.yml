@@ -439,12 +439,24 @@ emotes:
   - id: guild_disband_or_leave_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_disband_or_leave_menu.png
-  - id: guild_member_menu
+  - id: guild_info_menu
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_menu.png
-  - id: guild_owner_menu
+    texture: mineinabyss:ui/guilds/menus/guild_info_menu.png
+  - id: guild_level_up_button
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_owner_menu.png
+    texture: mineinabyss:ui/guilds/menus/guild_level_up_button.png
+    height: 17
+    ascent: -5
+  - id: guild_disband_button
+    template: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_disband_button.png
+    height: 17
+    ascent: -94
+  - id: guild_leave_button
+    template: guilds
+    texture: mineinabyss:ui/guilds/menus/guild_leave_button.png
+    height: 17
+    ascent: -94
   - id: guild_inbox_list_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_inbox_list_menu.png
