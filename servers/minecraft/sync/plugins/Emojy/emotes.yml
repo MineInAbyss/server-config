@@ -459,30 +459,38 @@ emotes:
   - id: guild_member_action_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_member_action_menu.png
-  - id: guild_member_management_menu_1_has_request
+  - id: guild_member_management_menu_1
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_1_has_request.png
-  - id: guild_member_management_menu_2_has_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_1.png
+  - id: guild_member_management_menu_2
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_2_has_request.png
-  - id: guild_member_management_menu_3_has_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_2.png
+  - id: guild_member_management_menu_3
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_3_has_request.png
-  - id: guild_member_management_menu_4_has_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_3.png
+  - id: guild_member_management_menu_4
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_4_has_request.png
-  - id: guild_member_management_menu_1_no_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_4.png
+  - id: guild_member_management_jointype_any
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_1_no_request.png
-  - id: guild_member_management_menu_2_no_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_any.png
+    height: 20
+    ascent: -3
+  - id: guild_member_management_jointype_invite
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_2_no_request.png
-  - id: guild_member_management_menu_3_no_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_invite.png
+    height: 20
+    ascent: -3
+  - id: guild_member_management_jointype_request
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_3_no_request.png
-  - id: guild_member_management_menu_4_no_request
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_jointype_request.png
+    height: 20
+    ascent: -3
+  - id: guild_member_management_notification
     template: guilds
-    texture: mineinabyss:ui/guilds/menus/guild_member_management_menu_4_no_request.png
+    texture: mineinabyss:ui/guilds/menus/guild_member_management_notification.png
+    height: 6
+    ascent: -6
   - id: guild_search_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_search_menu.png

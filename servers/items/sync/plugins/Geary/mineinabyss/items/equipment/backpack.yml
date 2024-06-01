@@ -1,0 +1,11 @@
+namespaces: [geary, backpacky]
+
+set.item:
+  item:
+    type: PAPER
+    itemName: "<lang:test.test1></lang> :pog: :siggy:"
+
+backpacky:backpack:
+  rows: 6
+  title: test
+  pageSize: 45

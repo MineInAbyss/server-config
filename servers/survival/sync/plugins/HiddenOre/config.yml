@@ -520,7 +520,7 @@ regions:
             minAmount: 1
             maxAmount: 4
   layerfive:
-    blocks:
+    blocks:   
       ice:
         materials:
           ice:
@@ -577,6 +577,23 @@ regions:
             material: BLUE_TERRACOTTA
         dropMultiple: false
         drops:
+          test:
+            prefab: mineinabyss:charcoal_sand_raw
+            tools:
+              - anything
+            chance: 0.4
+            minAmount: 2
+            maxAmount: 5
+            transformIfAble: false
+          charcoal_sand_ore:
+            prefab: mineinabyss:charcoal_sand_ore
+            tools:
+              - anything
+            chance: 0.1
+            minAmount: 2
+            maxAmount: 5
+            transformIfAble: true
+            transformDropIfFails: false
           coal_ore:
             package:
               - ==: org.bukkit.inventory.ItemStack
@@ -652,32 +669,4 @@ regions:
             minAmount: 1
             maxAmount: 3
             transformIfAble: true
-          quartz:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: QUARTZ
-            tools:
-              - anything
-            chance: 0.001
-            minAmount: 1
-            maxAmount: 4
-          soul_sand:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: SOUL_SAND
-            tools:
-              - anything
-            chance: 0.0005
-            minAmount: 3
-            maxAmount: 6
-          gravel:
-            package:
-              - ==: org.bukkit.inventory.ItemStack
-                type: GRAVEL
-            tools:
-              - anything
-            chance: 0.004
-            minAmount: 3
-            maxAmount: 12
-            transformIfAble: false
-            transformDropIfFails: false
+          
