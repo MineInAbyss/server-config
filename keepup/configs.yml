@@ -23,6 +23,9 @@ feat/emotes:
         - fonts/
         - pack.zip
 
+feat/bosses:
+  copyPaths: [ "{{ privateSettingsDest }}/feat/bosses" ]
+
 # Servers
 minecraft:
   copyPaths: [ servers/minecraft ]
@@ -78,6 +81,8 @@ dev:
     - feat/mobs
     - feat/pets
     - feat/delvers
+    - feat/bosses
+
 archive:
   copyPaths: [ servers/archive ]
   variables:

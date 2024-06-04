@@ -5,6 +5,8 @@
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
     minecraft_uid: "{{ lookup('env', 'UID', '1000') }}"
     home: "{{ lookup('ansible.builtin.env', 'HOME') }}"
+  vars_files:
+    - "variables.yml"
   pre_tasks:
     - include_vars:
         file: "keepup/configs.yml"
