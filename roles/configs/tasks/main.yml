@@ -8,6 +8,12 @@
     path: "/run/secrets/server_config_ssh_key"
   register: p
 
+- name: Ensure we ignore ownership of repo being different
+  community.general.git_config:
+    name: safe.directory
+    scope: global
+    value: "{{ privateSettingsDest }}"
+
 - name: Clone private settings repo
   ansible.builtin.git:
     repo: "{{ privateSettingsSSH }}"
