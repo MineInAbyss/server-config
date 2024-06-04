@@ -22,5 +22,5 @@
     accept_hostkey: yes
     force: true
     depth: 1
-    version: "{{ lookup('env', 'ANSIBLE_PULL_BRANCH', 'develop') }}"
+    version: "{{ lookup('env', 'ANSIBLE_PULL_BRANCH', default='develop') }}"
   when: p.stat.exists
