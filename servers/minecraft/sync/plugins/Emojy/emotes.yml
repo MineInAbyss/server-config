@@ -665,16 +665,26 @@ emotes:
   - id: clear_row_6
     template: cosmetic_clear
     ascent: -94
-  - id: blocky_default_menu
+  - id: blocky_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/default_menu.png
+    texture: mineinabyss:ui/blocky/blocky_menu.png
     height: 256
     ascent: 14
   - id: blocky_grid_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/grid_menu.png
+    texture: mineinabyss:ui/blocky/blocky_grid_menu.png
     height: 256
     ascent: 14
+  - id: blocky_scrolling_up
+    font: mineinabyss:blocky
+    texture: mineinabyss:ui/blocky/blocky_scrolling_up.png
+    height: 17
+    ascent: -22
+  - id: blocky_scrolling_down
+    font: mineinabyss:blocky
+    texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
+    height: 17
+    ascent: -58
   - id: orthmap_icon
     font: mineinabyss:orth_map2
     texture: minecraft:gui/sprites/icon/accessibility.png
