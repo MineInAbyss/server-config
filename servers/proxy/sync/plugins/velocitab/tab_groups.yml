@@ -23,6 +23,7 @@ groups:
     sorting_placeholders:
       - '%server%'
       - '%role_weight%'
+      - '%statistic_minutes_played%'
       - '%username%'
     header_footer_update_rate: 1000
     placeholder_update_rate: 5000
