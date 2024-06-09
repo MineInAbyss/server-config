@@ -1,6 +1,6 @@
 enabled: false
 guildChannelTemplate:
-  channelType: PRIVATE
+  channelType: CUSTOM
   permission: ""
   logToConsole: true
   proxy: false
