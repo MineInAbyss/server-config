@@ -5,8 +5,6 @@ set.item:
     itemName: "<#b5955f>Haste Potion"
     lore:
       - <light_purple>Haste II</light_purple> <blue>(3:00)</blue>
-    enchantments: # For Glint Effect
-        - enchant: minecraft:infinity
     color: 233,177,21
     itemFlags:
       - HIDE_ADDITIONAL_TOOLTIP
