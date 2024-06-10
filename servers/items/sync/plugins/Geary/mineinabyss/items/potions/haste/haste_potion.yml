@@ -6,8 +6,6 @@ set.item:
     color: 233,177,21
     lore:
       - <light_purple>Haste</light_purple> <blue>(03:00)</blue>
-    enchantments: # For Glint Effect
-        - enchant: minecraft:infinity
     itemFlags:
       - HIDE_POTION_EFFECTS
       - HIDE_ENCHANTS
