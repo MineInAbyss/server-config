@@ -1,7 +1,7 @@
 templates:
   - name: common
     default: true
-    forced: true
+    required: true
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
@@ -9,19 +9,22 @@ templates:
       subFolder: common
   - name: modelengine
     default: true
-    forced: true
+    required: true
     filePath: ModelEngine/resource pack.zip
+  - name: custom_hud
+    default: true
+    required: false
   - name: emotes
     default: true
-    forced: true
+    required: true
     filePath: Emojy/pack.zip
   - name: custom_blocks
     default: true
-    forced: true
+    required: true
     filePath: Blocky/pack
   - name: build
     default: true
-    forced: true
+    required: true
     githubDownload:
       org: MineInAbyss
       repo: MineInAbyss-resourcepack
@@ -29,14 +32,14 @@ templates:
       subFolder: build
   - name: premium_content
     default: true
-    forced: true
+    required: true
     githubDownload:
       org: MineInAbyss
       repo: ResourcePack-Premium-Content
       branch: master
   - name: 2d_tools
     default: true
-    forced: false
+    required: false
     conflictsWith:
       - 3d_tools
     githubDownload:
@@ -46,7 +49,7 @@ templates:
       subFolder: 2d_tools
   - name: new_armor
     default: true
-    forced: false
+    required: false
     conflictsWith:
       - old_armor
       - vanilla_armor
@@ -57,7 +60,7 @@ templates:
       subFolder: new_armor
   - name: 3d_tools
     default: false
-    forced: false
+    required: false
     conflictsWith:
       - 2d_tools
     githubDownload:
@@ -67,7 +70,7 @@ templates:
       subFolder: 3d_tools
   - name: old_armor
     default: false
-    forced: false
+    required: false
     conflictsWith:
       - new_armor
       - vanilla_armor
@@ -78,20 +81,20 @@ templates:
       subFolder: old_armor
   - name: custom_music
     default: false
-    forced: false
+    required: false
     githubDownload:
       org: MineInAbyss
       repo: OST
       branch: master
   - name: vanilla_armor
     default: false
-    forced: false
+    required: false
     conflictsWith:
       - new_armor
       - old_armor
   - name: vanilla_tools
     default: false
-    forced: false
+    required: false
     conflictsWith:
       - 2d_tools
       - 3d_tools
