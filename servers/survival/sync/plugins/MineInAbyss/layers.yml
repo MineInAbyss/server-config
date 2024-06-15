@@ -1,5 +1,6 @@
 layers:
 - name: "<#FFA812>Orth"
+  id: "orth"
   sub: "<#FFC421>City of the Great Pit"
   deathMessage: "in the city of <#FFA812>Orth<white> :bell:<white>"
   depth:
@@ -19,6 +20,7 @@ layers:
   sections:
   - "orth"
 - name: "<#DB4040>Edge of the Abyss"
+  id: "layerone"
   sub: "<#BA1E1E>0-1510 blocks"
   deathMessage: "at the <#DB4040>Edge of the Abyss<white> :redw:<white>"
   depth:
@@ -55,6 +57,7 @@ layers:
   - "l1s2"
   - "l1s3"
 - name: "<#175ABF>Forest of Temptation"
+  id: "layertwo"
   sub: "<#286FBF>1510-2580 blocks"
   deathMessage: "in the <#175ABF>Forest of Temptation<white> :bluew:<white>"
   depth:
@@ -106,6 +109,7 @@ layers:
   - "l2s1"
   - "l2s2"
 - name: "<#D428B1>Great Fault"
+  id: "layerthree"
   sub: "<#E82CC2>2580–4020 blocks"
   deathMessage: "in the <#D428B1>Great Fault<white> :moonw:<white>"
   depth:
@@ -177,6 +181,7 @@ layers:
   - "l3s2"
   - "l3s3"
 - name: "<#9E1E84>The Goblets of Giants"
+  id: "layerfour"
   sub: "<#77237A>4020–5850 blocks"
   deathMessage: "in the <#9E1E84>Goblets of Giants<white> :moonw:<white>"
   depth:
@@ -237,6 +242,7 @@ layers:
   - "l4s4"
   - "l4s5"
 - name: "<#3B3B3B>Sea of Corpses"
+  id: "layerfive"
   sub: "<#545454>5850–7200 blocks"
   deathMessage: "in the <#3B3B3B>Sea of Corpses<white> :blackw:<white>"
   depth:
