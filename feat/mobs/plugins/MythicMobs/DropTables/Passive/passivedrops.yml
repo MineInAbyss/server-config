@@ -64,13 +64,13 @@ demonfishUC:
   Drops:
     - geary mineinabyss:demonfish_raw 1-2 0.6
     
-C:
+edusandC:
   Conditions:
   - isburning true
   Drops:
     - geary mineinabyss:billabonk_meat_cooked 1-2 0.6
 
-UC:
+edusanUC:
   Conditions:
   - isburning false
   Drops:

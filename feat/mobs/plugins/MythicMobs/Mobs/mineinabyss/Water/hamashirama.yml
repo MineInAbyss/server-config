@@ -1,5 +1,5 @@
 hamashirama:
-  Type: SQUID
+  Type: GLOW_SQUID
   Display: "<#1B91B5>Hamashirama"
   Health: 30
   Damage: 0
@@ -18,12 +18,14 @@ hamashirama:
     interactable: true
     MovementSpeed: 0.2
   Model:
-    Id: hamasharima
+    Id: hamashirama
     ViewRadius: 64
     DamageTint: true
   Drops:
     - exp 20-25
-    - geary mineinabyss:hamashirama_raw 1
+    - geary mineinabyss:hamashirama_sack 1
+    - hamashiramaUC
+    - hamashiramaC
   Skill: 
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
