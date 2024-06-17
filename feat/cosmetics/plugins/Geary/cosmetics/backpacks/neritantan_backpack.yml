@@ -6,4 +6,4 @@ set.item:
     color: "255, 255, 255"
     customModelData: 102
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP

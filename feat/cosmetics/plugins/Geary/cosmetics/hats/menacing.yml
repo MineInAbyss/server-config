@@ -5,6 +5,6 @@ set.item:
     type: POTION
     customModelData: 311
     itemFlags:
-      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}
