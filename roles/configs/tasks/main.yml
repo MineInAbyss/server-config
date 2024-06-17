@@ -1,3 +1,8 @@
+- name: Ensure keepupDir exists
+  file:
+    path: "{{ home }}/keepupDir/"
+    state: directory
+
 - name: Render template for Keepup configs
   template:
     src: "keepup/configs.yml"
