@@ -23,11 +23,7 @@ mia_baby_corpse_weeper:
   - skill{s=mia_spawn} @self ~onSpawn
   - skill{s=mia_baby_corpse_weeper_spell} @target ~onTimer:20
 
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/pets/pet_corpse_weeper.yml
-  #- petExperience{exp=1} @ENO{r=10} ~onDeath
-========
   #- skill:MIAPetExpNearby{exp=1;radius=10} ~onDeath
->>>>>>>> refs/remotes/origin/develop:feat/pets/plugins/MythicMobs/Mobs/pets/pet_corpse_weeper.yml
   - skill{s=mia_feed} @self ~onInteract
 
   - bodyclamp{mh=10;mb=10;s=0} @self ~onSpawn
@@ -104,7 +100,3 @@ mia_corpse_weeper:
     FollowRange: 20
     PreventItemPickup: true
     PreventRandomEquipment: true
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/pets/pet_corpse_weeper.yml
-  
-========
->>>>>>>> refs/remotes/origin/develop:feat/pets/plugins/MythicMobs/Mobs/pets/pet_corpse_weeper.yml

@@ -2,15 +2,6 @@ EXP_Gain:
   Conditions:
   - incombat true
   Skills:
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/pets/petxp.yml
-  #- petExperience{exp=1} @self
-
-
-mia_XP:
-  Cooldown: 1
-  Skills:  
-  #- petExperience{exp=1} @trigger
-========
   - petExperience{exp=1} @self
 
 
@@ -18,7 +9,6 @@ mia_XP:
   Cooldown: 0
   Skills:  
   - skill:MIAPetExpNearby{exp=5;radius=30}
->>>>>>>> refs/remotes/origin/develop:feat/pets/plugins/MythicMobs/Skills/pets/petxp.yml
 
 Pet_Look:
   Conditions:
@@ -60,11 +50,7 @@ mia_feed:
   - look{headOnly=true;immediately=true;repeat=20;repeatInterval=1} @Trigger
   - effect:particles{particle=heart;amount=1;hS=.5;vS=.5;speed=1;dir=0,1,0;d=true;repeat=2;repeatInterval=5;y=1} @self
   - consumeslot{} @trigger
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/pets/petxp.yml
-  #- petExperience{exp=25} @self
-========
   - petExperience{exp=25} @self
->>>>>>>> refs/remotes/origin/develop:feat/pets/plugins/MythicMobs/Skills/pets/petxp.yml
   #- heal{amount=20} @self
 
 
