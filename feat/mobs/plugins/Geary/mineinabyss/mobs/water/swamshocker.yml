@@ -1,0 +1,10 @@
+namespaces: [geary]
+displayName: "<#257BEB>Swarm shocker"
+set.*:
+  mythicMob: swarmshocker
+drop:
+  - exp: 15..20
+  - item: mineinabyss:swarmshocker_raw
+    dropChance: 0.6000
+sounds: {}
+prevent.breeding: {}

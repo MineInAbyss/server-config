@@ -1,0 +1,81 @@
+titanjaw:
+  Type: RAVAGER
+  Modules:
+    ThreatTable: true
+  Health: 50 # change this
+  Damage: 8 
+  Options:
+    PreventSunBurn: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  DamageModifiers:
+  Model:
+    Id: titanjaw
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2.5
+  Skills:
+  ####### Misc
+#  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
+  - skill{s=tj_backup} @self ~ondamaged
+  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  - skill{s=tjHurt} @self ~onHurt
+  - skill{s=tjDeath} @self ~onDeath
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath
+baby_titanjaw:
+  Type: RAVAGER
+  Modules:
+    ThreatTable: true
+  Health: 25 # change this
+  Damage: 4 
+  Options:
+    PreventSunBurn: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - gotoparent
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  Equipment:
+  - awesome_boss_helmet HEAD
+  - diamond_axe HAND
+  DamageModifiers:
+  Model:
+    Id: titanjaw
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Skills:
+  ####### Misc
+  - CancelEvent{sync=true} @self ~onAttack
+  - CancelEvent{sync=true} @self ~onInteract
+  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.1
+  - skill{s=tj_backup} @self ~ondamaged
+  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+  - skill{s=tjHurt} @self ~onHurt
+  - skill{s=tjDeath} @self ~onDeath
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath
