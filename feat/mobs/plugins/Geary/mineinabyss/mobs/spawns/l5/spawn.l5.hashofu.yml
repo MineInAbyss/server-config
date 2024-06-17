@@ -1,5 +1,0 @@
-namespaces: [geary]
-inherit:
-  -  mineinabyss:spawn.hashofu
-spawn_regions:
-  keys: [ layerfive ]

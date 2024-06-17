@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:feat/mobs/plugins/Geary/mineinabyss/mobs/hostile_flying.yml
 namespaces: [ geary ]
-========
-namespaces: [ geary ]
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/Geary/mineinabyss/mobs/allay_base.yml
 set.burnInDay: false
 prevent.*:
   interaction:

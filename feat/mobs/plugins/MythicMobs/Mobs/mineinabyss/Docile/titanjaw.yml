@@ -2,13 +2,8 @@ titanjaw:
   Type: RAVAGER
   Modules:
     ThreatTable: true
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/titanjaw.yml
-  Health: 50 # change this
-  Damage: 8 
-========
   Health: 60 # change this
   Damage: 8
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Docile/titanjaw.yml
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
@@ -36,20 +31,13 @@ titanjaw:
   Skills:
   ####### Misc
 #  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/titanjaw.yml
-========
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Docile/titanjaw.yml
   - skill{s=tj_backup} @self ~ondamaged
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
   - skill{s=tjDeath} @self ~onDeath
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/titanjaw.yml
-  #- petExperience{exp=1} @ENO{r=30} ~onDeath
-========
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Docile/titanjaw.yml
 baby_titanjaw:
   Type: RAVAGER
   Modules:
@@ -74,10 +62,6 @@ baby_titanjaw:
     - clear
     - attacker
   Equipment:
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/titanjaw.yml
-  - awesome_boss_helmet HEAD
-========
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Docile/titanjaw.yml
   - diamond_axe HAND
   DamageModifiers:
   Model:
@@ -95,8 +79,4 @@ baby_titanjaw:
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
   - skill{s=tjDeath} @self ~onDeath
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/titanjaw.yml
-  #- petExperience{exp=1} @ENO{r=30} ~onDeath
-========
   - skill:MIAPetExpNearby{exp=1} ~onDeath
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Docile/titanjaw.yml

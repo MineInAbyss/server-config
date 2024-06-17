@@ -9,11 +9,7 @@ SJ_Attack:
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-    - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=5;vR=5;i=1;repeat=20;repeatinterval=1} @forward{f=1}
-========
     - totem{md=2;c=1;oH=SJ_Attack_DAMAGE;hnp=true;hp=true;hR=5;vR=5;i=1;repeat=20;repeatinterval=1} @forward{f=3}
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
 #will bleed once every 5 seconds for 5 seconds
 SJ_Attack_DAMAGE:
   TargetConditions:
@@ -28,11 +24,7 @@ SJ_Hit:
 
 
 SJ_dash:
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-  Cooldown: 13
-========
   Cooldown: 7
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
   Conditions:
     - offgcd true
     - targetinlineofsight
@@ -51,17 +43,10 @@ SJ_dash:
     - delay 4
     - state{s=dash_state;remove=true} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-    - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=20;repeatinterval=1} @forward{f=2}
-    - delay 1
-    - skill{s=SJ_dashmiss} @self
-    - delay 60
-========
     - totem{md=2;c=1;oH=SJ_dashhit;hnp=true;hp=true;hR=3;vR=3;i=1;repeat=30;repeatinterval=1} @forward{f=2}
     - delay 1
     - skill{s=SJ_dashmiss} @self
     - delay 50
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
     - setai{ai=true}
 SJ_dashhit:
   Cooldown: 3
@@ -70,11 +55,7 @@ SJ_dashhit:
   Skills:
     - setstance{stance=dashhit} @self
    # - shieldbreak{duration=200} @target
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-    - damage{a=8;ia=true} @PIR{r=3}
-========
     - damage{a=10;ia=true} @PIR{r=3}
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
 
     - delay 100
 
@@ -91,10 +72,7 @@ SJ_dashmiss:
 
 sj_roar:
   Conditions:
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-========
     - incombat true
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
     - offgcd
   Cooldown: 20
   Skills:
@@ -102,14 +80,6 @@ sj_roar:
     - setAI{ai=false} @self
     - state{s=roar;li=0;lo=0} @self
     - delay 10
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/splitjaw.yml
-    - skill{s=sj_shake;repeat=6;repeatInterval=8} @pir{r=25}
-    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=orbpiercer;part=torso}
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
-========
     - potion{type=SLOW;duration=40;level=5;p=false;force=true} @pir{r=25}
     - potion{type=WEAKNESS;duration=150;level=1;p=false;force=true} @pir{r=25}
 
@@ -119,7 +89,6 @@ sj_roar:
     - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.9} @self
     - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.8} @self
     - effect:sound{s=entity.polar_bear.warning;v=1.2;p=0.7} @self
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Skills/mineinabyss/Hostile/splitjaw.yml
     - delay 1
     - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
     - delay 55

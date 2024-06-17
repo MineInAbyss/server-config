@@ -2,15 +2,6 @@ Kuongatari:
   Type: CAVE_SPIDER
   Health: 50
   Damage: 8
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/kuongatari.yml
-  AITargetSelectors:
-    - clear
-    - attacker
-    - players
-  Options:
-    PreventSunBurn: true
-    KnockbackResistance: 1
-========
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -20,7 +11,6 @@ Kuongatari:
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.2
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/kuongatari.yml
     #DigOutOfGround: true
     Collidable: true
     #Silent: false
@@ -39,12 +29,6 @@ Kuongatari:
     - FIRE 15
     - FIRE_TICK 3
   Skills:
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/kuongatari.yml
-    - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
-    - shieldbreak{duration=100} @target ~onattack 0.35
-    - dismount ~onTimer:20
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
-========
     - skill{s=Kuongatarispawn} @self ~onspawn
 
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
@@ -53,7 +37,6 @@ Kuongatari:
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/kuongatari.yml
 Kuongatari_summon:
   Type: SPIDER
   Display: "<#1FB53D>Baby Kuongatari"
@@ -92,8 +75,4 @@ Kuongatari_summon:
   Skills:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
-<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/kuongatari.yml
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
-========
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
->>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/kuongatari.yml
