@@ -6,11 +6,11 @@ set.item:
     itemName: "<#257BEB>Swarm Shocker"
     customModelData: 16
 ========
-namespaces: [ geary, mobzy, looty ]
+namespaces: [ geary ]
 set.item:
   item:
     type: GUNPOWDER
-    displayName: "<#257BEB>Charged Powder"
+    itemName: "<#257BEB>Charged Powder"
     customModelData: 0
 >>>>>>>> refs/remotes/origin/develop:feat/items/plugins/Geary/mineinabyss/items/drops/swarmshocker/swarmshocker_Charged_Powder.yml
     lore:

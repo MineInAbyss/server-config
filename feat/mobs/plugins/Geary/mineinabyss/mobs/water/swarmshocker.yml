@@ -1,7 +1,7 @@
 <<<<<<<< HEAD:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swamshocker.yml
 namespaces: [geary]
 ========
-namespaces: [ geary, mobzy, looty ]
+namespaces: [ geary ]
 inherit: [ mineinabyss:water_mob ]
 >>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swarmshocker.yml
 displayName: "<#257BEB>Swarm shocker"

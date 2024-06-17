@@ -1,4 +1,4 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [ geary ]
 inherit: [ mineinabyss:water_mob ]
 set.*:
   entityType: minecraft:squid

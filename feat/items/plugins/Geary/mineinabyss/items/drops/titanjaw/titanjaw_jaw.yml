@@ -1,8 +1,8 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: IRON_INGOT
-    displayName: <#3C3B4A>Titanjaw plate
+    itemName: <#3C3B4A>Titanjaw plate
     customModelData: 0
     lore:
       - <yellow>Can be obtained by finding and

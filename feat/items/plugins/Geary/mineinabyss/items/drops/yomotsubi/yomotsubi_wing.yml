@@ -1,8 +1,8 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: COPPER_INGOT
-    displayName: <#9C0F2C>Yomotsubi Wing
+    itemName: <#9C0F2C>Yomotsubi Wing
     customModelData: 2
     lore:
       - <yellow>Dropped by <#25D648>Yumotsubi <yellow>infesting the

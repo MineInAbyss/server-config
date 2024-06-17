@@ -1,4 +1,4 @@
-namespaces: [ geary, mobzy, looty ]
+namespaces: [ geary ]
 inherit: [ mineinabyss:allay_base ]
 set.*:
   remove_when_far_away: true

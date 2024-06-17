@@ -1,8 +1,8 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: AMETHYST_BLOCK
-    displayName: <#785F34>Hisoishi Shell
+    itemName: <#785F34>Hisoishi Shell
     customModelData: 0
     lore:
       - <yellow>Dropped by <#785F34>Hisoishi Crab <yellow>in

@@ -1,8 +1,8 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: BLACK_WOOL
-    displayName: "<red>Beniguma Fur"
+    itemName: "<red>Beniguma Fur"
     customModelData: 0
     lore:
       - <yellow>A tuft of fur from the body of the rarely

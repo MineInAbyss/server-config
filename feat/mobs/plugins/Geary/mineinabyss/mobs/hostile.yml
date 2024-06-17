@@ -1,4 +1,4 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.*:
   burnInDay: false
   remove_when_far_away: true

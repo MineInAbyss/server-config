@@ -1,9 +1,9 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: PRISMARINE_SHARD
     customModelData: 1
-    displayName: <#00FFFF>tachikanata Scale
+    itemName: <#00FFFF>tachikanata Scale
     lore:
       - <yellow>Obtained from slaying
       - <yellow>a <#00FFFF>tachikanata <yellow>found in

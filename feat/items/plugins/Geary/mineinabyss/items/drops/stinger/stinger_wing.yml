@@ -1,8 +1,8 @@
-namespaces: [geary, mobzy, looty]
+namespaces: [ geary ]
 set.item:
   item:
     type: STRING
-    displayName: <#03AC13>Stinger wing
+    itemName: <#03AC13>Stinger wing
     customModelData: 1
     lore:
       - <yellow>Obtained from <#25D648>Stinger <yellow>in
