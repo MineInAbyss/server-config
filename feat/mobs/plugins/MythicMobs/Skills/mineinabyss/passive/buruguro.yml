@@ -1,0 +1,73 @@
+buroguroSpawn:
+  Skills:
+  - model{m=glowfly;n=false;s=1}
+  - bodyclamp{angle=0}
+  - gcd{ticks=20}
+
+buroguroMelee:
+  Skills:
+  - cancelevent
+  - skill:buroguroMeleeSwing
+
+buroguroMeleeSwing:
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  - incombat
+  TargetConditions:
+  - distance <3
+  Skills:
+  - state{s=attack;li=3;lo=2;speed=1} @self
+  - gcd{ticks=20} @self
+  - setai{ai=false} @self
+  - delay 8
+  - effect:sound{cd=5;s=entity.bee.pollinate;v=1;p=0.6} @self
+  - delay 2
+  - totem{ch=3;
+      onStart=[
+        - skill:buroguroMeleeDamage @ENO{r=3}
+      ];int=1;hR=3;md=1} @Forward{f=1.5}
+  - delay 10
+  - setai{ai=true} @self
+  
+buroguroMeleeDamage:
+  TargetConditions:
+  - samefaction false
+  Skills:
+  - effect:sound{cd=5;s=entity.bee.sting;v=1;p=0.6} @self
+  - effect:particles{p=crit;a=55;hS=0.4;vS=0.4;y=1.5}
+  - effect:particles{p=reddust;size=5;color=#32CE32;a=5;hS=0.2;vS=0.2;y=1.5}
+  - basedamage{m=1}
+  - damage{a=1;ia=true}
+  - potion{type=WITHER;d=100;level=2;ow=true}
+  - potion{type=LEVITATION;d=20;level=3} @self 0.5
+  
+buroguroDamaged:
+  Cooldown: 0.5
+  Skills:
+  - rally{radius=20;types=buroguro} @trigger
+  - sound{s=entity.bee.hurt;p=0.75;v=1}
+  - potion{type=LEVITATION;d=20;level=3} @self 0.5
+  
+buroguroTick:
+  Conditions:
+  - offgcd
+  - incombat castInstead buroguroTickCombat
+  Skills:
+  - skill:buroguroBeAnnoying
+  
+buroguroBeAnnoying:
+  Cooldown: 5
+  Conditions:
+  - playersInRadius{a=>0;radius=8}
+  Skills:
+  - skill:buroguroBeAnnoyingMove @NearestPlayer
+  - potion{type=LEVITATION;d=20;level=1} @self 0.33
+buroguroBeAnnoyingMove:
+  Skills:
+  - goto @RLNT{a=1;r=3}
+  
+buroguroTickCombat:
+  Cooldown: 8
+  Skills:
+  - propel{v=0.5;repeat=20;repeati=1} @target

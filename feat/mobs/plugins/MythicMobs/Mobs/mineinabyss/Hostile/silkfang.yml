@@ -1,0 +1,55 @@
+silkfang:
+  Type: CAVE_SPIDER
+  Health: 22
+  Damage: 4
+  Options:
+<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/silkfang.yml
+    Despawn: true
+========
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/silkfang.yml
+    MovementSpeed: 0.36
+    MaxCombatDistance: 30
+    DigOutOfGround: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  DamageModifiers:
+  - ENTITY_ATTACK 1
+  - PROJECTILE 0.7
+  - DROWNING 0
+  - CONTACT 0
+  - FALLING 0
+  Model:
+    Id: silkfang
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/silkfang.yml
+========
+  - skill{s=silkfangspawn} @self ~onspawn
+
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/silkfang.yml
+  - skill{s=sfSpiderWebShot} @Target ~onTimer:220
+  - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
+  - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
+  - dismount ~onDamaged
+  - skill{s=stingerhead_unstuck} @self ~onTimer:20
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=stingerhead_unstuck} @self ~onTimer:20
+  - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
+  - skill{s=silkfangHurt} @self ~onHurt
+  - skill{s=silkfangDeath} @self ~onDeath
+<<<<<<<< HEAD:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/silkfang.yml
+  #- petExperience{exp=1} @ENO{r=30} ~onDeath
+========
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/MythicMobs/Mobs/mineinabyss/Hostile/silkfang.yml

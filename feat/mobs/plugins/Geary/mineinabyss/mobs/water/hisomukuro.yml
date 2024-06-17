@@ -1,4 +1,5 @@
-namespaces: [ geary ]
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:water_mob ]
 set.*:
   entityType: minecraft:axolotl
   modelengineModel:

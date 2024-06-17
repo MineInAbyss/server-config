@@ -1,11 +1,26 @@
-- name: Copy server-specific configurations
-  include_tasks: copy-dir.yml
-  vars:
-    src: "servers/{{ item }}/sync/"
-  loop: "{{ servers[server_name] }}"
+- name: Render template for Keepup configs
+  template:
+    src: "keepup/configs.yml"
+    dest: '{{ home }}/keepupDir/keepup-configs.yml'
 
-- name: Copy templates
-  include_tasks: template-dir.yml
-  vars:
-    templates_source: "servers/{{ item }}/templates"
-  loop: "{{ servers[server_name] }}"
+- name: Check if SSH key exists
+  stat:
+    path: "/run/secrets/server_config_ssh_key"
+  register: p
+
+- name: Ensure we ignore ownership of repo being different
+  community.general.git_config:
+    name: safe.directory
+    scope: global
+    value: "{{ privateSettingsDest }}"
+
+- name: Clone private settings repo
+  ansible.builtin.git:
+    repo: "{{ privateSettingsSSH }}"
+    dest: "{{ privateSettingsDest }}"
+    key_file: "/run/secrets/server_config_ssh_key"
+    accept_hostkey: yes
+    force: true
+    depth: 1
+    version: "{{ lookup('env', 'ANSIBLE_PULL_BRANCH', default='develop') }}"
+  when: p.stat.exists

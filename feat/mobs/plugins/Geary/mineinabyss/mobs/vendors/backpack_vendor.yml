@@ -1,6 +1,5 @@
-namespaces: [geary, mobzy, mineinabyss]
-inherit:
-  - mineinabyss:npc
+namespaces: [geary, mobzy, looty, mineinabyss]
+inherit: [mineinabyss:npc]
 set.modelengineModel:
   modelId: guildmaster
 shopkeeper:
@@ -32,7 +31,7 @@ shopkeeper:
         type: POTION
         color: "255, 255, 255"
         itemFlags:
-          - HIDE_ADDITIONAL_TOOLTIP
+          - HIDE_POTION_EFFECTS
         customModelData: 105
       currencyType: ORTH_COIN
       price: 3

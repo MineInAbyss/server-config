@@ -1,0 +1,15 @@
+namespaces: [geary, mobzy, looty]
+spawn.*:
+  type: mineinabyss:kakatsumuri
+  regions: [ layerthree ]
+  amount: 1..3
+  spread: 20
+check.*:
+  spawn.gap: 3..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - PODZOL
+      - DIORITE
+      - WHITE_CONCRETE
+      - CALCITE

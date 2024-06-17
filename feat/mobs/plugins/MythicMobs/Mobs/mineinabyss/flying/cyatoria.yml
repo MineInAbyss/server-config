@@ -1,7 +1,8 @@
 cyatoria:
   Type: ALLAY
+  Display: "<#3DDFFF>Cyatoria"
   Health: 25
-  Damage: 3
+  Damage: 4
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -17,19 +18,25 @@ cyatoria:
     DigOutOfGround: true
     FollowRange: 28
     MaxCombatDistance: 128
-
-
-   # MovementSpeed: 0.35
+ #  MovementSpeed: 0.35
   Model:
     Id: cyatoria
     ViewRadius: 64
     Drive: false
     DamageTint: true
+    Scale: 0.8
+  Drops: 
+    - exp 25-45
+    - geary mineinabyss:cyatoria_drumstick_raw 1-2
+    - geary mineinabyss:cyatoria_feather 1-4 0.7
+
   Skills:
-   # - CancelEvent{sync=true} ~onAttack
-    #- skill{s=Damage_3} @self ~onAttack
+  # - CancelEvent{sync=true} ~onAttack
+  # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=cyatoria;c=15} @self ~onSpawn
     - bodyclamp{m=cyatoria;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=cyatoria;s=attack} @self ~onAttack
-    #- petExperience{exp=1} @ENO{r=30} ~onDeath
+  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

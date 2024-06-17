@@ -1,6 +1,5 @@
-namespaces: [geary, mineinabyss]
-inherit:
-  - mineinabyss:npc
+namespaces: [geary, mobzy, looty, mineinabyss]
+inherit: [mineinabyss:npc]
 set.modelengineModel:
   modelId: guildmaster
 shopkeeper:

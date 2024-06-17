@@ -1,0 +1,11 @@
+<<<<<<<< HEAD:feat/mobs/plugins/Geary/mineinabyss/mobs/hostile_flying.yml
+namespaces: [ geary ]
+========
+namespaces: [geary, mobzy, looty]
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/Geary/mineinabyss/mobs/allay_base.yml
+set.burnInDay: false
+prevent.*:
+  interaction:
+    type: [ RIGHT_CLICK ]
+  regeneration:
+    reason: [ REGEN ]

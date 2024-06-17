@@ -1,0 +1,16 @@
+namespaces: [geary, mobzy, looty]
+inherit: [ mineinabyss:spawn.hostile_base ]
+spawn.*:
+  type: mineinabyss:orbpiercer
+  regions: [ layerfour ]
+  priority: 2
+check.*:
+  spawn.local_group:
+    max: 1
+    radius: 320
+  spawn.gap: 10..4096
+  spawn.delay:
+    attemptEvery: 4s
+  blockType:
+    allow:
+      - WATER

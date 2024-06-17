@@ -1,8 +1,0 @@
-namespaces: [geary]
-inherit:
-  -  mineinabyss:spawn.splitjaw
-spawn_regions:
-  keys: [ layertwo ]
-check.spawn.local_group:
-  max: 2
-  radius: 320

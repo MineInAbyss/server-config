@@ -1,0 +1,15 @@
+namespaces: [geary, mobzy, looty]
+spawn.*:
+  type: mineinabyss:chimokami
+  amount: 1..2
+  regions: [ layertwo ]
+  spread: 10
+check.*:
+  spawn.gap: 5..4096
+  #time:
+  #  min: 13000
+  #  max: 23000
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - DIRT

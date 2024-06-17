@@ -1,11 +1,11 @@
-namespaces: [geary]
+namespaces: [geary, mobzy, looty]
 set.item:
   item:
-    type: PAPER
-    itemName: <dark_green>Tesuchi Scales
+    type: APPLE
+    displayName: <dark_green>Tesuchi Scales
     customModelData: 120
     lore:
       - <green><i>Crispy
-    food:
-      saturation: 1.2
-      nutrition: 2
+food:
+  saturation: 1.2
+  hunger: 2

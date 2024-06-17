@@ -1,0 +1,24 @@
+namespaces: [geary, mobzy, looty]
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:red_sand
+    amount: 16
+  group: "mineinabyss:red_sand"
+  recipes:
+    - !<shaped>
+      items:
+        S: { type: minecraft:sand }
+        F: { prefab: mineinabyss:stingerhead_flesh }
+      configuration: |-
+        |SSS|
+        |SFS|
+        |SSS|
+    - !<shaped>
+      items:
+        S: { type: minecraft:sand }
+        F: { prefab: mineinabyss:virinsipede_segments }
+      configuration: |-
+        |SSS|
+        |SFS|
+        |SSS|

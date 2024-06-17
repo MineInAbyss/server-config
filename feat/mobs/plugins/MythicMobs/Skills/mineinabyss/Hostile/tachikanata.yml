@@ -1,0 +1,122 @@
+tachiATTACK:
+  Conditions:
+  Skills:
+      - CancelEvent
+      - skill{s=tachiATTACKskill} @self
+tachiATTACKskill:
+  Conditions:
+  Cooldown: 3
+  Skills:
+    - state{s=swipe_attack;li=3;lo=2} @self 
+    - delay 20
+    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
+    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - delay 15
+    - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
+    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+tachiATTACKDamage:
+  Skills:
+    - shieldbreak{duration=50} @target
+    - delay 1
+    - damage{amount=13} @target
+    - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+    #- skill{s=Bleeding} @target
+    - recoil{r=15;pitch=-0.2} @target
+    - delay 2
+    - recoil{r=15;pitch=.1} @target
+    - delay 2
+    - recoil{r=15;pitch=-0.1} @target
+    - delay 2
+    - recoil{r=15;pitch=0.1} @target
+tachiHurt:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.guardian.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+
+tachiAmbient:
+  Cooldown: 0.3
+  Skills:
+    - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+
+tachi_PROJ:
+  Cooldown: 8
+  Conditions:
+    - incombat true
+    - offgcd true
+    - targetwithin{d=4} false
+    #- targetinlineofsight{} true
+  Skills:
+    - gcd{ticks=200}
+    - state{s=proj_attack} @self
+    - setAI{ai=false} @self
+    - potion{type=SLOW;duration=60;level=5;p=false;force=true} @Self
+    - delay 20
+    - projectile{onTick=warden_proj;onHit=tachi_impact;v=11;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;vn=1;origin=@modelpart{mid=tachikatana;pid=l_claw_hinge;location=0,1,0};fromorigin=true} @target
+    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.1.9to2.0>;v=1.5} @self
+    - delay 10
+    - projectile{onTick=warden_proj;onHit=tachi_impact;v=11;i=3;hR=1;vR=1;hnp=false;a=.6;tyo=1;vn=1;origin=@modelpart{mid=tachikatana;pid=r_claw_hinge;location=0,1,0};fromorigin=true} @target
+    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.1.9to2.0>;v=1.5} @self
+    - setAI{ai=true} @self
+warden_proj:
+  Skills:
+    - effect:particles{particle=sonic_boom;amount=15}
+
+tachi_impact:
+  Skills:
+    - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.1.9to2.0>;v=0.5} @self
+    - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
+    - throw{velocity=20;velocityY=5} @PIR{r=3}
+    - damage{a=13} @target
+    - delay 5
+
+tachishockwave:
+  Cooldown: 20
+  Conditions:
+    - incombat true
+    - offgcd true
+    #- targetinlineofsight{} true
+  Skills:
+    - gcd{ticks=100} @self
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
+    - delay 20
+    - setAI{ai=false} @self
+    - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
+    - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
+
+  #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
+    - potion{type=DAMAGE_RESISTANCE;duration=130;level=3;p=false} @self
+    - skill{s=tachicircle;repeat=20;repeati=4} @Self
+    - delay 36
+    - skill{s=tachishock} @Self
+    - delay 25
+    - setAI{ai=true} @self
+tachicircle:
+  Conditions:
+  Cooldown:
+  Skills:
+    - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=12;points=50}
+
+tachishock:
+  Skills:
+    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
+    - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
+    - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
+    - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=10;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=2;points=15;amount=10;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=3;points=15;amount=10;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=4;points=15;amount=20;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=5;points=15;amount=20;hS=1;vS=1} @Self 
+    - delay 1
+    - effect:particlering{particle=sonic_boom;radius=6;points=15;amount=20;hS=1;vS=1} @Self
+    - delay 1
+    - effect:particlering{particle=sonic_boom;radius=7;points=15;amount=30;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=8;points=15;amount=50;hS=1;vS=1} @Self
+    - effect:particlering{particle=sonic_boom;radius=9;points=15;amount=50;hS=1;vS=1} @Self
+    - delay 1
+    - effect:particlering{particle=sonic_boom;radius=10;points=15;amount=70;hS=1;vS=1} @Self
+
+

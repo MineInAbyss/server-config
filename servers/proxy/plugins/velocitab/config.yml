@@ -23,8 +23,9 @@ only_list_players_in_same_group: true
 server_display_names:
   survival: 
   build: 
-  dev: 
+  dev: 
   test: 
+  archive: 
 # Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
 # How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)

@@ -1,0 +1,15 @@
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:neritantan
+  amount: 1..3
+  spread: 20
+  regions: [ layerthree ]
+check.*:
+  spawn.gap: 2..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK
+      - DIORITE
+      - WHITE_CONCRETE
+  spawn.delay:
+    attemptEvery: 12t

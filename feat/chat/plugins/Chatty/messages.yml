@@ -1,0 +1,60 @@
+nicknames:
+  selfSuccess: <green>You changed your nickname to <i><chatty_nickname>!
+  selfDenied: <red>You can't change your nickname!
+  selfEmpty: <yellow>Removed nickname!
+  otherSuccess: <green>You changed %player_name%'s nickname to <i><chatty_nickname>!
+  otherDenied: <red>You can't change %player_name%'s nickname!
+  otherEmpty: <yellow>Removed nickname for %player_name%!
+  invalidPlayer: <red>That player doesn't exist!
+  consoleNicknameSelf: <red>Sadly console cannot have cool nickname :(
+  tooLong: <red>The nickname was too long!
+privateMessages:
+  disabled: <red>Private messages are disabled
+  invalidPlayer: <red>This player is not online or does not exist
+  emptyReply: <red>You have noone to reply to
+spying:
+  commandSpyOn: <green>You are now spying on commands
+  commandSpyOff: <red>You are no longer spying on commands
+  startSpyingOnChannel: <gold>Started spying on <italic><chatty_player_spy_last>
+  stopSpyingOnChannel: <gold>Stopped spying on <italic><chatty_player_spy_last>
+  cannotSpyOnChannel: <red>You cannot spy on <italic><chatty_player_spy_last>
+  noChannelWithName: <red>No channel by this name exists.
+ping:
+  toggledPingSound: Ping sound is now <i><chatty_player_ping_toggle></i>.
+  changedPingSound: Ping sound set to <i><chatty_player_ping_sound></i>
+  invalidPingSound: <red>You must specify a valid sound to play.
+  replyMessage: <red>Shift + Click to mention!
+messageDeletion:
+  hoverText: <red>Click to delete message
+  notifyStaff: <gold>Message deleted by <yellow>%player_name%</yellow>.
+  format: <gray>[<red>X</red>]</gray>
+  deletionSuccess: <green><i>Message deleted
+  deletionFailed: <red>Could not delete message...
+chatFilter:
+  blockMessage: <yellow>⚠<gray>Your message contained blocked words:<i>
+  deleteWordsEmptyMessage: <yellow>⚠<gray>Your message was not sent as it contained
+    only blocked words.
+  notifyStaff: <yellow>⚠<gray><chatty_nickname> sent a message containing blocked
+    words:<i>
+channels:
+  availableChannels: <gold>Available channels are:<newline><yellow><chatty_player_available_channels>
+  channelChanged: <red>You have changed to channel <yellow><chatty_player_channel><red>.
+  noChannelWithName: No channel by this name exists.
+  missingChannelPermission: You do not have permission to join this channel.
+  emptyChannelMessage: <red>There is no-one to read your message
+proxies:
+  proxyJoin: <green>+ <white>| <aqua><chatty_nickname>%player_server%)
+  proxyLeave: <red>- <white>| <aqua><chatty_nickname>
+  proxySwitchToMessage: <gray>↑<white> ┃ <aqua><chatty_nickname> <gray>left to <aqua><chatty_player_proxy_new_server>
+    server.
+  proxySwitchFromMessage: <gray>↑<white> ┃ <aqua><chatty_nickname> <gray>left to <aqua><chatty_player_proxy_new_server>
+    server.
+joinLeave:
+  firstJoinMessage: <gradient:#058330:#ff9200>Welcome %player_name% to %server_name%</gradient>
+  joinMessage: <green>%player_name%<white> has joined the server.
+  leaveMessage: <red>%player_name%<white> has left the server.
+other:
+  disallowedStyling: <red>Your message contains formatting you cannot use!
+  configReloaded: <green>Chatty config reloaded.
+  messagesReloaded: <green>Chatty messages reloaded.
+  nickNameChanged: Nickname set to <white><i><chatty_nickname>.

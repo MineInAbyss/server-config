@@ -1,0 +1,13 @@
+namespaces: [ geary, mobzy, looty ]
+spawn.*:
+  type: mineinabyss:cyatoria
+  position: AIR
+  amount: 1..3
+  spread: 10
+  priority: 0.3
+  regions: [ layerone, layertwo ]
+check.*:
+  spawn.local_group:
+    max: 1
+    radius: 192
+  spawn.gap: 20..4096

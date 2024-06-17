@@ -1,0 +1,28 @@
+<<<<<<<< HEAD:feat/items/plugins/Geary/mineinabyss/items/drops/swarmshocker/swarmshocker_raw.yml
+namespaces: [geary]
+set.item:
+  item:
+    type: BLAZE_POWDER
+    itemName: "<#257BEB>Swarm Shocker"
+    customModelData: 16
+========
+namespaces: [ geary, mobzy, looty ]
+set.item:
+  item:
+    type: GUNPOWDER
+    displayName: "<#257BEB>Charged Powder"
+    customModelData: 0
+>>>>>>>> refs/remotes/origin/develop:feat/items/plugins/Geary/mineinabyss/items/drops/swarmshocker/swarmshocker_Charged_Powder.yml
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#257BEB>Swarm Shocker <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#1B5BAD><i>Seems like it would power something....
+      - <#1B5BAD><i>Cannot be cooked
+<<<<<<<< HEAD:feat/items/plugins/Geary/mineinabyss/items/drops/swarmshocker/swarmshocker_raw.yml
+    food:
+      saturation: 5
+      nutrition: 5
+========
+disableItemInteractions: { }
+>>>>>>>> refs/remotes/origin/develop:feat/items/plugins/Geary/mineinabyss/items/drops/swarmshocker/swarmshocker_Charged_Powder.yml

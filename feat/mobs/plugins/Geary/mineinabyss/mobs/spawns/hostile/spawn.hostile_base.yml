@@ -1,0 +1,4 @@
+namespaces: [geary, mobzy, looty]
+check.*:
+  light:
+    range: 0

@@ -1,3 +1,7 @@
-namespaces: [geary]
-set.entityType: minecraft:iron_golem
-set.burnInDay: false
+namespaces: [geary, mobzy, looty]
+set.*:
+  burnInDay: false
+  remove_when_far_away: true
+despawn.*:
+  when_far_away: {}
+  on_chunk_unload: {}

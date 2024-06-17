@@ -1,0 +1,11 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: glow_ink_sack
+    displayName: <#1B91B5>Raw Hamashirama
+    customModelData: 0
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Seems like i can make things glow with this!

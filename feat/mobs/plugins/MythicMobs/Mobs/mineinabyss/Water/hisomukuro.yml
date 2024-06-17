@@ -1,0 +1,34 @@
+hisomukuro:
+  Type: AXOLOTL
+  Display: "<#C8C8C8>Hisomukuro"
+  Health: 80
+  Damage: 8
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+    - attackers
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    interactable: false
+    MovementSpeed: 0.6
+    KnockbackResistance: 1.0
+  Model:
+    Id: hisomukuro
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 200-250
+    - geary mineinabyss:demonfish_raw 1-4
+    - geary mineinabyss:hamashirama_raw 1-4
+    - geary mineinabyss:hisomukuro_fin 1-2 0.6
+  Skill: 
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

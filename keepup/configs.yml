@@ -1,0 +1,99 @@
+global:
+  files:
+    plugins/Geary:
+      deleteUntracked: true
+      keep:
+        - config.yml
+feat/mobs:
+  copyPaths: [ feat/mobs ]
+  files:
+    plugins/MythicMobs:
+      deleteUntracked: true
+      keep:
+        - config/
+        - data/
+        - stats.yml
+feat/emotes:
+  copyPaths: [ feat/emotes ]
+  files:
+    plugins/Emojy:
+      deleteUntracked: true
+      keep:
+        - gifs/ # Image sequences get generated in here
+        - fonts/
+        - pack.zip
+
+feat/bosses:
+  copyPaths: [ "{{ privateSettingsDest }}/feat/bosses" ]
+
+# Servers
+minecraft:
+  copyPaths: [ servers/minecraft ]
+  variables:
+    env:
+      PRIVATE_PLUGINS_TOKEN: "{{ lookup('env', 'PRIVATE_PLUGINS_TOKEN') }}"
+      PACKY_ACCESS_TOKEN: "{{ lookup('env', 'PACKY_ACCESS_TOKEN', default='UNKNOWN') }}"
+      SERVER_NAME: "{{ lookup('env', 'SERVER_NAME', errors='ignore') }}"
+      PACKY_PUBLIC_ADDRESS: "{{ lookup('env', 'PACKY_PUBLIC_ADDRESS', errors='ignore') }}"
+    velocity_forward_secret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"
+  include:
+    - feat/chat
+    - feat/emotes
+
+survival:
+  copyPaths: [ servers/survival ]
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":survival::space_-4:"
+  include:
+    - minecraft
+    - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
+    - feat/blocks
+    - feat/mobs
+build:
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":build::space_-4:"
+      localChatRadius: 0
+  copyPaths: [ servers/build ]
+  include:
+    - minecraft
+    - feat/blocks
+    - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
+dev:
+  copyPaths: [ servers/dev ]
+  variables:
+    chatty:
+      serverPrefix: ":test::space_-4:"
+      localChatRadius: 0
+  include:
+    - minecraft
+    - feat/blocks
+    - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
+    - feat/mobs
+    - feat/pets
+    - feat/delvers
+    - feat/bosses
+
+archive:
+  copyPaths: [ servers/archive ]
+  variables:
+    chatty:
+      serverPrefix: ":adventure::space_-4:"
+      localChatRadius: 0
+  include:
+    - minecraft
+
+# Proxy
+velocity:
+  copyPaths: [ servers/proxy ]
+  variables:
+    velocityForwardingSecret: "{{ lookup('ansible.builtin.file', '/run/secrets/velocity_forwarding_secret', errors='ignore') | default(lookup('env', 'VELOCITY_FORWARDING_SECRET'), true) }}"

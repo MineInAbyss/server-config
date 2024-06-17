@@ -1,0 +1,13 @@
+namespaces: [geary, mobzy, looty]
+spawn.*:
+  regions: [ layerfive ]
+  type: mineinabyss:ikenosuke
+  amount: 1..4
+  spread: 1
+check.spawn.local_group:
+  max: 6
+  radius: 128
+check.blockType:
+  allow:
+    - WATER
+

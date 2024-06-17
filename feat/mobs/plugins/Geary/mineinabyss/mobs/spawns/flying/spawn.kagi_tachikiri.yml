@@ -1,0 +1,17 @@
+namespaces: [geary, mobzy, looty]
+spawn.*:
+  regions: [ layerfive ]
+  type: mineinabyss:kagi_tachikiri
+  amount: 1..4
+  spread: 10
+  # priority: 0.4
+check.*:
+  spawn.local_group:
+    max: 4
+    radius: 128
+  spawn.gap: 4..40
+  blockType:
+    allow:
+      - SAND
+      - RED_SAND
+

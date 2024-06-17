@@ -1,0 +1,43 @@
+hagamizukin:
+  Type: SALMON
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - movetowater
+  - meleeattack
+  - movetowardstarget
+  - fleeplayers
+  - randomlookaround
+  - randomfly
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players
+  Faction: fish
+  Health: 30 # change this
+  Damage: 3
+  Options:
+    Despawn: false
+    Silent: false
+    FollowRange: 25
+    MovementSpeed: 0.35
+    KnockbackResistance: 0.0
+    interactable: false
+  Drops:
+    - exp 15-20
+    - geary mineinabyss:hagamizukin_scale 1-18 1
+    - geary mineinabyss:hagamizukin_whisker 1 0.2
+    - hagamizukinUC
+    - hagamizukinC
+  DamageModifiers:
+
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - state{mid=hagamizukin;s=attack} @self ~onAttack
+  ####### Misc
+  - model{mid=hagamizukin} @self ~onSpawn
+  - look{immediately=true} @targetLocation ~onTimer:10
+  - propel{v=0.15;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:35 0.9 ?inBlock{b=WATER} ?incombat{}
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath

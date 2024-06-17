@@ -1,0 +1,9 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    displayName: <#FF9D26>Camper Backpack
+    type: POTION
+    color: "98, 168, 255"
+    customModelData: 104
+    itemFlags:
+      - HIDE_POTION_EFFECTS

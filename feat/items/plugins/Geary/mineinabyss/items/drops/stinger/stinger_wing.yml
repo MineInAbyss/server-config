@@ -1,0 +1,13 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: STRING
+    displayName: <#03AC13>Stinger wing
+    customModelData: 1
+    lore:
+      - <yellow>Obtained from <#25D648>Stinger <yellow>in
+      - <yellow>the <green>Inverted Forest <yellow>and
+      - <yellow>in the <green>Sea of Corpses<yellow>.
+      - <#167D2A><i>A very thin, yet surprisingly
+      - <#167D2A><i>flexible piece of flesh
+disableItemInteractions: {}

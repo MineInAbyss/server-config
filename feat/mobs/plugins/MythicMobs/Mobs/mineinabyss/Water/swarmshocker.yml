@@ -1,0 +1,38 @@
+swarmshocker:
+  Type: COD
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - fleeplayers
+  - randomlookaround
+  - randomfly
+  - movetowater
+  AITargetSelectors:
+  - clear
+  Faction: swarmshockers
+  Health: 10 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Despawn: false
+    Silent: true
+    FollowRange: 10
+    MovementSpeed: 0.25
+    KnockbackResistance: 0.0
+    interactable: false
+  Drops: # put stuff here
+  DamageModifiers:
+
+  Skills:
+  ####### Misc
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - model{mid=qmob_swarmshocker} @self ~onSpawn
+  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%
+  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onTimer:165 ?inCombat{} ?inBlock{b=WATER}
+  - sound{s=entity.glow_squid.hurt;sc=master;p=1.95;v=0.65;cd=0.5} @self ~onHurt 0.8
+  - sound{s=entity.glow_squid.ambient;sc=master;p=1.95;v=0.45;cd=0.5;delay=<random.0to13>} @self ~onTimer:137 0.55
+  - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath
+  - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
+  - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,0 +1,89 @@
+ashimiteUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:ashimite_meat_raw 1-2 0.6
+
+billabonkC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:ashimite_meat_cooked 1-2 0.6
+
+billabonkUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:billabonk_leg_raw 1-2 0.6
+
+fuwagiC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:billabonk_leg_cooked 1-2 0.6
+
+fuwagiUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:billabonk_leg_raw 1-2 0.6
+
+neritantanC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:neritantan_meat_cooked 1-2 0.6
+
+neritantanUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:neritantan_meat_raw 1-2 0.6
+    
+okiboC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:okibo_meat_cooked 1-2 0.6
+
+okiboUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:okibo_meat_raw 1-2 0.6
+    
+demonfishC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:demonfish_cooked 1-2 0.6
+
+demonfishUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:demonfish_raw 1-2 0.6
+    
+edusandC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:billabonk_meat_cooked 1-2 0.6
+
+edusanUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:billabonk_meat_raw 1-2 0.6
+    
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:billabonk_meat_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:billabonk_meat_raw 1-2 0.6

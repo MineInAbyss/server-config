@@ -1,0 +1,106 @@
+mcmeta:
+  format: 18
+  description: <gradient:#ff7043:#ffca28:#ff7043>MineInAbyss <white>- <gradient:#fff906:#fffb46>Server
+    Resourcepack
+icon: pack.png
+server:
+  ip: "0.0.0.0"
+  port: 8082
+  publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://" + env.SERVER_NAME + ".pack.mineinabyss.com") }}"
+prompt: ""
+force: false
+obfuscate: false
+cachedPackAmount: 18
+menu:
+  title: Packy Pack Picker
+  height: 6
+  subMenus:
+    hud:
+      title: Custom Hud
+      height: 6
+      button:
+        type: COMPASS
+        displayName: <gold>Custom Hud
+      modifiers:
+        offset:
+          x: 4
+          y: 4
+        size:
+          width: 1
+          height: 1
+      type: MENU
+      packs:
+        custom_hud: { }
+    music:
+      title: Music
+      height: 6
+      button:
+        type: JUKEBOX
+        displayName: <gold>Music
+      modifiers:
+        offset:
+          x: 4
+          y: 1
+        size:
+          width: 1
+          height: 1
+      type: MENU
+      packs:
+        custom_music: { }
+    armor:
+      title: Armor Picker
+      height: 6
+      button:
+        itemFlags:
+          - HIDE_ATTRIBUTES
+      modifiers:
+        offset:
+          x: 1
+          y: 1
+        size:
+          width: 2
+          height: 4
+      type: CYCLING
+      packs:
+        new_armor:
+          button:
+            type: DIAMOND_HELMET
+            displayName: <gold>New Armor
+        old_armor:
+          button:
+            type: GOLDEN_HELMET
+            displayName: <gold>Old Armor
+        vanilla_armor:
+          button:
+            type: IRON_HELMET
+            displayName: <gold>Vanilla
+    tools:
+      title: Packy Pack Picker2
+      height: 6
+      button:
+        itemFlags:
+          - HIDE_ATTRIBUTES
+      modifiers:
+        offset:
+          x: 6
+          y: 1
+        size:
+          width: 2
+          height: 4
+      type: CYCLING
+      packs:
+        2d_tools:
+          button:
+            type: DIAMOND_SWORD
+            displayName: "<gold>2D Tools"
+            customModelData: 1
+        3d_tools:
+          button:
+            type: GOLDEN_SWORD
+            displayName: "<gold>3D Tools"
+            customModelData: 2
+        vanilla_tools:
+          button:
+            type: IRON_SWORD
+            displayName: "<gold>Vanilla Tools"
+            customModelData: 3

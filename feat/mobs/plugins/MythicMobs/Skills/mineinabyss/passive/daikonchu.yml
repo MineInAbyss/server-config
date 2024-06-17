@@ -1,0 +1,25 @@
+DaikonchuAttack:
+  Conditions:
+  - offgcd
+  - incombat
+  Skills:
+  - cancelevent{sync=true} @Self
+  - skill{s=[
+    - state{s=attack} @Self
+    - setai{ai=false} @Self
+    - delay 22
+    - effect:sound{s=entity.spider.hurt;p=0.7} @Self
+    - totem{ch=3;
+        onStart=[
+          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+          - skill:DaikonchuDamage @ENO{r=3}
+        ];int=1;hR=3;md=1} @Forward{f=1.5}
+    - setai{ai=true} @Self
+    - state{s=attack;remove=true} @Self
+    ]}
+DaikonchuDamage:
+  Skills:
+  - effect:sound{s=entity.spider.step;v=1;p=0.8} @self
+  - effect:particles{p=reddust;size=5;color=#FFFFFF;a=5;hS=0.2;vS=0.2;y=1.5}
+  - damage{amount=10}
+  - throw{v=4;vy=2}

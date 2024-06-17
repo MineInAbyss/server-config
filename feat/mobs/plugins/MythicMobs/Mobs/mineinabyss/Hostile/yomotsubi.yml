@@ -1,0 +1,39 @@
+yomotsubi:
+  Type: SPIDER
+  Health: 50
+  Damage: 6
+  AIGoalSelectors:
+    - clear
+    - spiderattack
+    - randomstroll
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 1
+    Collidable: false
+    Silent: true
+    FollowRange: 48
+    MovementSpeed: 0.25
+    MaxCombatDistance: 24
+    DigOutOfGround: true
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+  Model:
+    Id: yomotsubi
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 3
+  Skills:
+   # - CancelEvent{sync=true} ~onAttack
+   # - skill{s=Damage_8} @self ~onAttack
+    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - bodyclamp{m=yomotsubi;c=15} @self ~onSpawn
+    - bodyclamp{m=yomotsubi;c=15} @self ~onLoad
+    - state{mid=yomotsubi;s=attack} @self ~onAttack
+    
+    - skill{s=yomotsubi_airball} @target ~onTimer:20

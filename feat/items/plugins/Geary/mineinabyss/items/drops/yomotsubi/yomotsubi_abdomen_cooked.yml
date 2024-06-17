@@ -1,0 +1,24 @@
+namespaces: [geary, mobzy, looty]
+set.item:
+  item:
+    type: APPLE
+    displayName: <#1FB53D>Cooked Yomotsubi Abdomen
+    customModelData: 121
+    lore:
+      - <yellow>Dropped by <#25D648>Yomotsubi's <yellow>infesting the
+      - <green>Goblets of Giants <yellow>and the <green>Great Fault <yellow>.
+      - <#167D2A><i>Tastes suprisingly tasty for such a small bug..
+food:
+  saturation: 0.6
+  hunger: 1
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input: mineinabyss:yomotsubi_abdomen_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input: mineinabyss:yomotsubi_abdomen_raw
+      experience: 2f
+      cookingTime: 50

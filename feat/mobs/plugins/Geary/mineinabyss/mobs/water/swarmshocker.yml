@@ -1,0 +1,20 @@
+<<<<<<<< HEAD:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swamshocker.yml
+namespaces: [geary]
+========
+namespaces: [ geary, mobzy, looty ]
+inherit: [ mineinabyss:water_mob ]
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swarmshocker.yml
+displayName: "<#257BEB>Swarm shocker"
+set.*:
+  mythicMob: swarmshocker
+drop:
+  - exp: 15..20
+  - item: mineinabyss:swarmshocker_raw
+    dropChance: 0.6000
+<<<<<<<< HEAD:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swamshocker.yml
+sounds: {}
+prevent.breeding: {}
+========
+sounds: { }
+prevent.breeding: { }
+>>>>>>>> refs/remotes/origin/develop:feat/mobs/plugins/Geary/mineinabyss/mobs/water/swarmshocker.yml

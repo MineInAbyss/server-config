@@ -1,0 +1,65 @@
+chikdig:
+  Cooldown: 10
+  Skills:
+    - setstance{stance=dag} @self
+    - stun{d=9999;cogd=true;cocu=true} @self
+    - state{s=dig} @self
+    #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 30
+    - state{s=dig;r=true} @self
+    - state{s=landmine} @self
+
+chikredig:
+  Cooldown: 10
+  Conditions:
+    - playersinradius{a=<1;r=30} true
+  Skills:
+    - setstance{stance=dag} @self
+    - stun{d=9999;cogd=true;cocu=true} @self
+    - state{s=dig} @self
+    #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 30
+    - state{s=dig;r=true} @self
+    - state{s=landmine} @self
+
+
+
+digattack:
+  Cooldown: 10
+  Conditions:
+    - stance{s=dag} true
+    - targetwithin{d=5} true
+  Skills:
+    - stun{d=60} @self
+    - state{s=landmine;r=true} @self
+    - state{s=trigger} @self
+  #  - shieldbreak{duration=50} @target
+    - damage{amount=10;ia=true} @PIR{r=5}
+    - potion{type=POISON;duration=100;level=5} @PIR{r=5}
+    - potion{type=WITHER;duration=50;level=5} @PIR{r=5}
+    - skill{s=Bleeding} @PIR{r=5}
+    - delay 30
+    - potionclear @self
+    - setstance{stance=normal} @self
+ch_Attack:
+  Cooldown: 1.5
+  Conditions:
+    - stance{s=normal} true
+    - offgcd
+    - targetwithin{d=5} true
+  Skills:
+    - CancelEvent
+    - gcd{ticks=20}
+    - state{s=attack} @self
+    #- effect:sound{s=;volume=0.65;pitch=1} @self
+    - delay 20
+    - totem{md=2;c=1;oH=ch_Attack_DAMAGE2;hp=true;hR=2;vR=2;i=1} @forward{f=1.5}
+#will bleed once every 5 seconds for 5 seconds
+ch_Attack_DAMAGE2:
+  Cooldown: 1.5
+  Skills:
+    - damage{a=10;pkb=true;hp=true} @target
+    #- skill{s=Bleeding} @target
+    - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+    - throw{v=10;vy=5} @target
+    - potion{type=NAUSEA;duration=200;level=5}

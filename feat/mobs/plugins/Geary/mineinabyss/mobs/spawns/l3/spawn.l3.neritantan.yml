@@ -1,7 +1,0 @@
-namespaces: [geary]
-inherit:
-  -  mineinabyss:spawn.neritantan
-spawn_regions:
-  keys: [ layerthree ]
-check.spawn.delay:
-  attemptEvery: 12t

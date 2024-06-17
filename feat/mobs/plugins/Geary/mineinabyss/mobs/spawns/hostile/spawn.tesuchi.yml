@@ -1,0 +1,16 @@
+namespaces: [geary, mobzy, looty]
+inherit: [ mineinabyss:spawn.hostile_base ]
+spawn.*:
+  type: mineinabyss:tesuchi
+  amount: 1..3
+  regions: [ layertwo ]
+  spread: 15
+  # priority: 0.2
+check.*:
+#  spawn.local_group:
+#    max: 6
+#    radius: 120
+  spawn.gap: 3..4096
+  blockType:
+    allow:
+      - GRASS_BLOCK

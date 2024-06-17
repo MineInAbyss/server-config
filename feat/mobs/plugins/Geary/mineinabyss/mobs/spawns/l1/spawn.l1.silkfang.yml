@@ -1,8 +1,0 @@
-namespaces: [geary]
-inherit:
-  -  mineinabyss:spawn.silkfang
-spawn_regions:
-  keys: [ layerone ]
-check.spawn.local_group:
-  max: 2
-  radius: 128

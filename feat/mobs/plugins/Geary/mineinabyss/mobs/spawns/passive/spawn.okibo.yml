@@ -1,0 +1,14 @@
+namespaces: [geary, mobzy, looty]
+spawn.*:
+  type: mineinabyss:okibo
+  amount: 1..2
+  spread: 6
+  regions: [ orth ]
+  priority: 5
+check.*:
+  spawn.gap: 8..4096
+  blockType:
+    allow:
+      - STONE
+      - STONE_BRICKS
+      - COBBLESTONE
