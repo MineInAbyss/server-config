@@ -8,9 +8,9 @@ set.item:
       - <yellow>Dropped by <#25D648>Yomotsubi's <yellow>infesting the
       - <green>Goblets of Giants <yellow>and the <green>Great Fault <yellow>.
       - <#167D2A><i>Tastes suprisingly tasty for such a small bug..
-food:
-  saturation: 0.6
-  hunger: 1
+    food:
+      saturation: 0.6
+      nutrition: 1
 set.recipes:
   discoverRecipes: true
   recipes:
