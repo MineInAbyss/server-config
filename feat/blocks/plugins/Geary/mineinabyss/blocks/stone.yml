@@ -1,10 +1,10 @@
 namespaces: [geary, blocky]
 blocky:sound:
-  placeSound: blocky.stone.place
-  breakSound: blocky.stone.break
-  stepSound: blocky.stone.step
-  hitSound: blocky.stone.hit
-  fallSound: blocky.stone.fall
+  placeSound: blocky:block.stone.place
+  breakSound: blocky:block.stone.break
+  stepSound: blocky:block.stone.step
+  hitSound: blocky:block.stone.hit
+  fallSound: blocky:block.stone.fall
 breaking:
   hardness: 0.1
 
