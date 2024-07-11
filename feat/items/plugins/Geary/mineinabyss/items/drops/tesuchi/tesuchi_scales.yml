@@ -6,6 +6,6 @@ set.item:
     customModelData: 420
     lore:
       - <green><i>Crispy
-food:
-  saturation: 1.2
-  hunger: 2
+    food:
+      saturation: 1.2
+      nutrition: 2

@@ -8,6 +8,6 @@ set.item:
       - <yellow>Dropped by <#25D648>Stinger's <yellow>infesting the
       - <green>Inverted Forest <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>Perhaps this could be cooked...
-food:
-  saturation: 0.2
-  hunger: 1
+    food:
+      saturation: 0.2
+      nutrition: 1

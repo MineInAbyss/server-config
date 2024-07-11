@@ -10,9 +10,9 @@ set.item:
       - <yellow>nests in the <green>Sea of Corpses<yellow>.
       - <yellow>Tastes like crab!
       - <yellow>I should probably cook this...
-food:
-  saturation: 9.6
-  hunger: 8
+    food:
+      saturation: 9.6
+      nutrition: 8
 set.recipes:
   discoverRecipes: true
   recipes:

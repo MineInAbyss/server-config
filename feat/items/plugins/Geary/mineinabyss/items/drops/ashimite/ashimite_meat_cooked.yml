@@ -12,8 +12,8 @@ set.item:
     food:
       nutrition: 8
       saturation: 12.8
-      #replacement:
-      #  prefab: mineinabyss:ashimite_meat_bone
+      usingConvertsTo:
+        prefab: mineinabyss:ashimite_meat_bone
 set.recipes:
   discoverRecipes: true
   recipes:

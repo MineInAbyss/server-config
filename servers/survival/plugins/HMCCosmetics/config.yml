@@ -91,7 +91,7 @@ menu-settings:
     enabled: true
     # This is the cooldown in miliseconds for the menu. This is useful for servers that have a lot of players.
     # (So if a user clicks the menu, it won't spam the server with requesting it to refresh itself)
-    time: 1000
+    time: 100
   shading:
     # Below is the shading mechanism behind cosmetic items. This is a bit complicated, but it allows for a lot of customization.
     # The shading is done through the title and by shifting textures around. This is done by offsets.
@@ -100,8 +100,8 @@ menu-settings:
     first-row-shift: ':space_-169:'
     sequent-row-shift: ':space_-165:'
     individual-column-shift: ':space_-3:'
-    background: ':shade_row_<row>|colorable: '
-    clear-background: ':clear_row_<row>|colorable: '
+    background: ':shade_row_<row>|c: '
+    clear-background: ':clear_row_<row>|c: '
     #These use MiniMessage for color! https://docs.advntr.dev/minimessage/format.html#color
     equipped-cosmetic-color: <yellow>
     equipable-cosmetic-color: <green>
