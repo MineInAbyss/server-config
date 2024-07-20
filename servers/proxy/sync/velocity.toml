@@ -58,7 +58,6 @@ ping-passthrough = "DISABLED"
 # Configure your servers here. Each key represents the server's name, and the value
 # represents the IP address of the server to connect to.
 dev = "minecraft-dev:25565"
-dev-survival = "minecraft-survival-dev:25565"
 test = "minecraft-test:25565"
 build = "minecraft-build:25565"
 survival = "minecraft-survival:25565"
@@ -66,15 +65,17 @@ archive = "minecraft-archive:25565"
 # In what order we should try servers when a player logs in or is kicked from aserver.
 # try = ["survival", "build"]
 try = ["survival", "build"]
-
+dev-survival = "minecraft-survival-dev:25565"
+dev-alpha = "minecraft-dev-alpha:25565"
 # factions = "127.0.0.1:30067"
 [forced-hosts]
 "archive.mineinabyss.com" = ["archive"]
 "survive.mineinabyss.com" = ["survival"]
 "build.mineinabyss.com" = ["build"]
+"survive.dev.mineinabyss.com" = ["dev-survival"]
 "test.mineinabyss.com" = ["test"]
 "dev.mineinabyss.com" = ["dev"]
-"survive.dev.mineinabyss.com" = ["dev-survival"]
+"alpha.dev.mineinabyss.com" = ["dev-alpha"]
 
 [advanced]
 # Specify a custom timeout for connection timeouts here. The default is five seconds.
