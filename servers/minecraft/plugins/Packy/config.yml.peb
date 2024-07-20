@@ -20,7 +20,7 @@ menu:
       height: 6
       button:
         type: COMPASS
-        displayName: <gold>Custom Hud
+        itemName: <gold>Custom Hud
       modifiers:
         offset:
           x: 4
@@ -36,7 +36,7 @@ menu:
       height: 6
       button:
         type: JUKEBOX
-        displayName: <gold>Music
+        itemName: <gold>Music
       modifiers:
         offset:
           x: 4
@@ -65,15 +65,15 @@ menu:
         new_armor:
           button:
             type: DIAMOND_HELMET
-            displayName: <gold>New Armor
+            itemName: <gold>New Armor
         old_armor:
           button:
             type: GOLDEN_HELMET
-            displayName: <gold>Old Armor
+            itemName: <gold>Old Armor
         vanilla_armor:
           button:
             type: IRON_HELMET
-            displayName: <gold>Vanilla
+            itemName: <gold>Vanilla
     tools:
       title: Packy Pack Picker2
       height: 6
@@ -92,15 +92,15 @@ menu:
         2d_tools:
           button:
             type: DIAMOND_SWORD
-            displayName: "<gold>2D Tools"
+            itemName: "<gold>2D Tools"
             customModelData: 1
         3d_tools:
           button:
             type: GOLDEN_SWORD
-            displayName: "<gold>3D Tools"
+            itemName: "<gold>3D Tools"
             customModelData: 2
         vanilla_tools:
           button:
             type: IRON_SWORD
-            displayName: "<gold>Vanilla Tools"
+            itemName: "<gold>Vanilla Tools"
             customModelData: 3
