@@ -1,0 +1,67 @@
+# Ignore following options, enable all features
+enableAll: false
+# Choose which features to enable with true/false
+antiCheese:
+  enabled: true
+configManagement:
+  enabled: false
+core:
+  enabled: true
+cosmetics:
+  enabled: true
+  equipWhistleCosmetic: false
+  equipBackpacks: false
+  defaultBackpack: "backpack"
+curse:
+  enabled: true
+custom_hud:
+  enabled: false
+descent:
+  enabled: false
+displayLocker:
+  enabled: true
+exp:
+  enabled: false
+gondolas:
+  enabled: false
+guilds:
+  enabled: true
+hubstorage:
+  enabled: true
+keepInventory:
+  enabled: true
+  keepInvInVoid: true
+layers:
+  enabled: true
+lootCrates:
+  enabled: true
+misc:
+  enabled: true
+music:
+  enabled: true
+shopkeeping:
+  enabled: false
+okiboTravel:
+  enabled: false
+orthBanking:
+  enabled: true
+  balanceHudId: "balance_empty_offhand"
+  balanceHudOffhandId: "balance_offhand"
+patreon:
+  enabled: true
+pins:
+  enabled: false
+playerProfile:
+  enabled: true
+  validBackgroundIds:
+  - "player_profile_background"
+survivalPvp:
+  enabled: false
+adventurePvp:
+  enabled: false
+relics:
+  enabled: true
+tools:
+  enabled: true
+tutorial:
+  enabled: true

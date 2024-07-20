@@ -30,10 +30,12 @@ menus:
 # NOTE: This reduces the total amount of custom block slots from 799 to 750
 noteBlocks:
   isEnabled: true
+  restoreVanillaFunctionality: true
 tripWires:
   isEnabled: true
 furniture:
   hitboxOutlines:
+    # Valid typed are ITEM, BLOCK, NONE
     type: ITEM
     item:
       type: minecraft:glass
@@ -46,6 +48,12 @@ caveVineBlocks:
 slabBlocks:
   isEnabled: true
 stairBlocks:
+  isEnabled: true
+doorBlocks:
+  isEnabled: true
+trapdoorBlocks:
+  isEnabled: true
+grateBlocks:
   isEnabled: true
 # If you wish to use vanilla sounds, set this to true
 # Keep in mind it disables all custom sounds from place/break/hit etc

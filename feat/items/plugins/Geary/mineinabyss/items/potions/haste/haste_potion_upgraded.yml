@@ -12,8 +12,8 @@ set.item:
     food:
       nutrition: 0
       saturation: 0
-      #replacement:
-      #  type: GLASS_BOTTLE
+      usingConvertsTo:
+        type: GLASS_BOTTLE
       effects:
         - effect:
             type: minecraft:haste

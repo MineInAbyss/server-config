@@ -1,8 +1,8 @@
 layers:
-- name: "<#FFA812>Orth"
-  id: "orth"
+- id: "orth"
+  name: "<#FFA812>Orth"
   sub: "<#FFC421>City of the Great Pit"
-  deathMessage: "in the city of <#FFA812>Orth<white> :bell:<white>"
+  deathMessage: "in the city of <#ffa812>Orth<white> :bell:"
   depth:
     start: -1
     end: 0
@@ -19,10 +19,10 @@ layers:
   songs: []
   sections:
   - "orth"
-- name: "<#DB4040>Edge of the Abyss"
-  id: "layerone"
+- id: "layerone"
+  name: "<#DB4040>Edge of the Abyss"
   sub: "<#BA1E1E>0-1510 blocks"
-  deathMessage: "at the <#DB4040>Edge of the Abyss<white> :redw:<white>"
+  deathMessage: "at the <#db4040>Edge of the Abyss<white> :redw:"
   depth:
     start: 0
     end: 1510
@@ -56,10 +56,10 @@ layers:
   - "l1s1"
   - "l1s2"
   - "l1s3"
-- name: "<#175ABF>Forest of Temptation"
-  id: "layertwo"
+- id: "layertwo"
+  name: "<#175ABF>Forest of Temptation"
   sub: "<#286FBF>1510-2580 blocks"
-  deathMessage: "in the <#175ABF>Forest of Temptation<white> :bluew:<white>"
+  deathMessage: "in the <#175abf>Forest of Temptation<white> :bluew:"
   depth:
     start: 1510
     end: 2580
@@ -108,10 +108,10 @@ layers:
   - "l2s0"
   - "l2s1"
   - "l2s2"
-- name: "<#D428B1>Great Fault"
-  id: "layerthree"
+- id: "layerthree"
+  name: "<#D428B1>Great Fault"
   sub: "<#E82CC2>2580–4020 blocks"
-  deathMessage: "in the <#D428B1>Great Fault<white> :moonw:<white>"
+  deathMessage: "in the <#d428b1>Great Fault<white> :moonw:"
   depth:
     start: 2580
     end: 4020
@@ -180,10 +180,10 @@ layers:
   - "l3s1"
   - "l3s2"
   - "l3s3"
-- name: "<#9E1E84>The Goblets of Giants"
-  id: "layerfour"
+- id: "layerfour"
+  name: "<#9E1E84>The Goblets of Giants"
   sub: "<#77237A>4020–5850 blocks"
-  deathMessage: "in the <#9E1E84>Goblets of Giants<white> :moonw:<white>"
+  deathMessage: "in the <#9e1e84>Goblets of Giants<white> :moonw:"
   depth:
     start: 4020
     end: 5850
@@ -241,10 +241,10 @@ layers:
   - "l4s3"
   - "l4s4"
   - "l4s5"
-- name: "<#3B3B3B>Sea of Corpses"
-  id: "layerfive"
+- id: "layerfive"
+  name: "<#3B3B3B>Sea of Corpses"
   sub: "<#545454>5850–7200 blocks"
-  deathMessage: "in the <#3B3B3B>Sea of Corpses<white> :blackw:<white>"
+  deathMessage: "in the <#3b3b3b>Sea of Corpses<white> :blackw:"
   depth:
     start: 5850
     end: 7200

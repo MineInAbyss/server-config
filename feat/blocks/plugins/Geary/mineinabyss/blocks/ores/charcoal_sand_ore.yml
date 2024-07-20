@@ -1,18 +1,26 @@
 namespaces: [geary, blocky]
-#inherit:
-#  - mineinabyss:stone
-#  - mineinabyss:ore
+inherit:
+  - mineinabyss:stone
+  - mineinabyss:ore
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Charcoal Sand Ore
     customModelData: 2001
+    maxStackSize: 99
 set.block:
   blockType: NOTEBLOCK
   blockId: 1
 info:
   blockModel: mineinabyss:block/ores/charcoal_sand_ore
-
+blocky:sound:
+  placeSound: minecraft:block.amethyst_block.place
+  breakSound: minecraft:block.amethyst_block.break
+  stepSound: minecraft:block.amethyst_block.step
+  hitSound: minecraft:block.amethyst_block.hit
+  fallSound: minecraft:block.amethyst_block.fall
+instrument: 
+  instrument: minecraft:block.amethyst_block.break
 drops:
   acceptedToolTypes: [ PICKAXE ]
   onlyDropWithCorrectTool: true
@@ -25,7 +33,7 @@ drops:
         prefab: mineinabyss:charcoal_sand_ore
 
 breaking:
-  hardness: 4.5
+  hardness: 0.5
   modifiers:
     heldItems:
       - item:

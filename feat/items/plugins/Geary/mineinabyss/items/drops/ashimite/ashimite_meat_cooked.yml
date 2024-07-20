@@ -3,7 +3,7 @@ set.item:
   item:
     type: PAPER
     itemName: "<#2597D9>Cooked Ashimite Meat"
-    customModelData: 111
+    customModelData: 411
     lore:
       - <yellow>Can be obtained by hunting down an
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses
@@ -12,8 +12,8 @@ set.item:
     food:
       nutrition: 8
       saturation: 12.8
-      #replacement:
-      #  prefab: mineinabyss:ashimite_meat_bone
+      usingConvertsTo:
+        prefab: mineinabyss:ashimite_meat_bone
 set.recipes:
   discoverRecipes: true
   recipes:
