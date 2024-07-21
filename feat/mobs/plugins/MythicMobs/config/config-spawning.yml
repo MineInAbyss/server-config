@@ -12,33 +12,44 @@ Configuration:
   # Spawners
   #================================================================================
 
-  # Nothing here yet
+  Spawners:
+
+    # Enable this if you want to create & edit spawner files manually instead of using commands
+    DisableCommandSaving: false
 
   #================================================================================
   # Random Spawning
   #================================================================================
   RandomSpawning:
 
-    # Disable vanilla mob spawning
-    DisableVanillaSpawns: true
-
-    # Must be enabled for ADD method
-    GenerateSpawnPoints: false
+    # Generator used for ADD method. Can be NONE, CLUSTER, or LEGACY
+    Generator: NONE
 
     # Area around players where mobs will try to spawn
-    SpawnRadiusPerPlayer: 27
-    SpawnRadiusPerPlayerMin: 10
-    SpawnRadiusPerPlayerY: 15
+    SpawnRadiusPerPlayer: 64
+    SpawnRadiusPerPlayerMin: 12
+    SpawnRadiusPerPlayerY: 16
 
-    # Allows Mythic mobs to spawn this amount over the vanilla cap
-    LimitMultiplier: 1
+    # Distance at which players will be considered a group
+    PlayerClusterDistance: 24
 
-    PointsPerSecond:
-      Land: 5
-      Air: 1
-      Sea: 3
-      Lava: 1
-      Ground: 0
+    # Allows Mythic mobs to spawn this far over the vanilla cap
+    LimitMultiplier: 1.2
+
+    # if true, vanilla mobs will not count towards the limit
+    IgnoreVanillaMobs: false
+
+    # if true, only mythic mobs spawned via generation will count towards the limit
+    IgnoreUnnaturalMobs: false
+
+    # Local mob cap will increase by this much per player
+    GroupMultiplier: 0.1
+
+    # Set to -1 to follow the server limit, or 0 for no limit
+    SpawningLimit: -1
+
+    # Whether Action: REPLACE spawners obey the spigot mob cap
+    ReplaceObeysCap: false
 
     # Maximum milliseconds per tick spent on spawning
     MaxGenerationTime: 20
