@@ -7,18 +7,19 @@ set.item:
     lore:
       - <yellow>A fleshy bottle filled with a thick, black, oily substance.
       - <yellow>Drinking it gives the user a jolt of energy, at a price...
-skills:
-  - event: on.itemConsumed
-    using: consumer
-    run:
-      - set.potionEffects:
-          - type: minecraft:speed
-            duration: 7s
-            amplifier: 10
-          - type: minecraft:jump_boost
-            duration: 7s
-            amplifier: 3
-      - damage:
-          damage: 10
-          minHealth: 1
-          ignoreArmor: true
+# TODO reimplement using observe
+#skills:
+#  - event: on.itemConsumed
+#    using: consumer
+#    run:
+#      - set.potionEffects:
+#          - type: minecraft:speed
+#            duration: 7s
+#            amplifier: 10
+#          - type: minecraft:jump_boost
+#            duration: 7s
+#            amplifier: 3
+#      - damage:
+#          damage: 10
+#          minHealth: 1
+#          ignoreArmor: true

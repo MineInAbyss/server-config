@@ -21,14 +21,17 @@ set.recipes:
         |GCG|
         | G |
 depthmeter: { }
-skills:
-  - event: on.itemLeftClick
-    using: itemHolder
-    conditions:
-      - cooldown:
-          length: 1s
-    showDepth: { }
-  - event: on.itemRightClick
-    toggleDepthHud: { }
+observe:
+  - event: onItemLeftClick
+    using: childOf
+    # TODO support conditions
+#    conditions:
+#      - cooldown:
+#          length: 1s
+    emit:
+      - showDepth: { }
+  - event: onItemRightClick
+    emit:
+      - toggleDepthHud: { }
 
 disableItemInteractions: { }

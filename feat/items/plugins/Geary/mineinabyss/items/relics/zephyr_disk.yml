@@ -5,25 +5,26 @@ set.item:
     itemName: <dark_aqua>Zephyr Disk
     customModelData: 5
 disableItemInteractions: { }
-skills:
-  - event: on.itemRightClick
-    using: itemHolder
-    vars:
-      - derived location center:
-          read.location: { }
-    run:
-      - using: { nearbyEntities: { radius: 10 } }
-        vars:
-          - derived location targetLoc:
-              read.location: { }
-        run:
-          - playSound:
-              sound: minecraft:entity.generic.extinguish_fire
-          - knockback:
-              center: $center
-              power: 1
-              yAngle: 0.5
-          - particle:
-              at: $targetLoc
-              particle: CLOUD
-              count: 3
+# TODO reimplement using observe
+#skills:
+#  - event: on.itemRightClick
+#    using: itemHolder
+#    vars:
+#      - derived location center:
+#          read.location: { }
+#    run:
+#      - using: { nearbyEntities: { radius: 10 } }
+#        vars:
+#          - derived location targetLoc:
+#              read.location: { }
+#        run:
+#          - playSound:
+#              sound: minecraft:entity.generic.extinguish_fire
+#          - knockback:
+#              center: $center
+#              power: 1
+#              yAngle: 0.5
+#          - particle:
+#              at: $targetLoc
+#              particle: CLOUD
+#              count: 3

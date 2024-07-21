@@ -15,7 +15,7 @@ set.recipes:
         - mineinabyss:titanjaw_pearl
 starcompass: { }
 disableItemInteractions: { }
-skills:
-  - event: on.itemRightClick
-    run:
+observe:
+  - event: onItemRightClick
+    emit:
       - toggleStarcompassHud: { }
