@@ -1,4 +1,4 @@
 namespaces: [ geary ]
-inherit: [mineinabyss:npc]
+inherit: [ mineinabyss:npc ]
 set.modelengineModel:
   modelId: nat
