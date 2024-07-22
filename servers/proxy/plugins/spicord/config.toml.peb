@@ -1,0 +1,35 @@
+# +--------------------------------------------------+
+# | Project: Spicord                                 |
+# | GitHub: https://github.com/OopsieWoopsie/Spicord |
+# +--------------------------------------------------+
+
+# Configuration version, don't change this.
+config_version = 1
+
+
+# Time in seconds that Spicord will wait for
+# all external addons to register.
+# Don't change this if you don't need this.
+loadDelay = 10
+
+
+# Leave it empty or delete the line to disable the footer
+# or replace the text with whatever you want!
+
+
+[[bots]]
+  name = "default"
+  enabled = true
+  token = "{{ spicord.token }}"
+  command_support = true
+  command_prefix = "-"
+  addons = [
+    "spicord::info",
+    "spicord::plugins",
+    "spicord::players",
+    "ban_announcer"
+  ]
+
+[jda_messages]
+  enabled = false
+  debug = false

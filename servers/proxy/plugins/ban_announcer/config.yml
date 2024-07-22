@@ -1,0 +1,73 @@
+# The channel id where the messages will be sent
+# If you don't know how to get a channel id... https://www.google.com/?q=discord+how+to+get+channel+id
+channel-to-announce: 449308250140049418
+
+# If the text is empty (nothing between the double quotes),
+#    the message will not be sent (a.k.a. the message is "disabled"), for example:
+#
+#    kick: "" <-- this will disable the message
+#
+#    If you don't want to use embed messages you can use pure text, for ex.:
+#
+#    kick: "The player %player% was kicked by %staff%"
+#
+#
+# Variables are self-explained...
+messages:
+  kick:      "{embed:kick}"
+  note:      "{embed:note}"
+  jail:      "{embed:jail}"
+  ban:       "{embed:ban}"
+  tempban:   "{embed:tempban}"
+  mute:      "{embed:mute}"
+  tempmute:  "{embed:tempmute}"
+  banip:     "{embed:banip}"
+  tempbanip: "{embed:tempbanip}"
+  warn:      "{embed:warn}"
+  tempwarn:  "{embed:tempwarn}"
+  unbanip:   "{embed:unbanip}"
+  unwarn:    "{embed:unwarn}"
+  unmute:    "{embed:unmute}"
+  unban:     "{embed:unban}"
+  unnote:    "{embed:unnote}"
+  unjail:    "{embed:unjail}"
+
+### Discord Command ###
+# Set to true to enable the discord "/banannouncer" slash command.
+#
+# The command does NOT provides moderation tools, it is for testing
+# your embed files and reloading them without going to the console.
+#
+# Only members with permission of "BAN_MEMBERS" can use the command.
+enable-discord-command: true
+
+# The plugin used for manage the punishments
+# Possible values:
+#     auto        = Auto detect
+#     advancedban = Use AdvancedBan
+#     litebans    = Use LiteBans
+#     maxbans     = Use MaxBansPlus
+#     libertybans = Use LibertyBans
+punishment-manager: auto
+
+# The plugin used for manage the jails (spigot-only)
+# Possible values:
+#     off         = Do not use this
+#     essentials  = Use EssentialsX
+#     betterjails = Use BetterJails
+jail-manager: off
+
+# If it's set to false, the punishments made
+#    with the '-s' flag of LiteBans will be sent anyways.
+ignore-silent: false
+
+# Name to show when the console does stuff
+console-name: "Console"
+
+# When a punishment expires this text will be added to the staff name
+# for example:
+# "X was unbanned by StaffName (Automatic)"
+automatic: "Automatic"
+
+# Do not change this or i'll eat your cookies
+config-version: 4

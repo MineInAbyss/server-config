@@ -1,0 +1,68 @@
+#    _____            _        _          _       _
+#    |  __ \          | |      | |        | |     (_)
+#    | |__) |___   ___| | _____| |_       | | ___  _ _ __
+#    |  _  // _ \ / __| |/ / _ \ __|  _   | |/ _ \| | '_ \
+#    | | \ \ (_) | (__|   <  __/ |_  | |__| | (_) | | | | |
+#    |_|  \_\___/ \___|_|\_\___|\__|  \____/ \___/|_|_| |_|
+
+# Do not change these values
+config-version: 2.3
+already-asked: false
+
+# WARNING: If this plugin is running on bungeecord or velocity please read https://wiki.lorenzo0111.me/rocketjoin/bungeecord
+
+# Start of the configuration
+
+prefix: "&8&l»"
+no_permission: "&cYou do not have permission to use this command!"
+
+# Enable Update Message on Join. Default: true
+update-message: true
+
+# Placeholders: {Player} (Name) and {DisplayPlayer} (Display Name)
+# PlaceholderAPI Support! Download it from tinyurl.com/PlaceholderAPI
+
+# Join message
+join:
+  enabled: true
+  message: "&a+&f ┃ &b{player}"
+  otherServerMessage: "&a+&f ┃ &b{player} &7(&b{server}&7)"
+  enable-title: false
+  # Send a title to the player when he join the server!
+  title: "&a&lWelcome {player}!"
+  subtitle: "&7Welcome in ServerName Server!"
+
+leave:
+  enabled: true
+  message: "&c-&f ┃ &b{player}"
+  otherServerMessage: "&c-&f ┃ &b{player} &7(&b{server}&7)"
+
+# Only available in a proxy( Velocity or Bungeecord)
+# Called on server switch
+# Additional placeholders: {oldServer} {newServer}
+serverSwitch:
+  enabled: true
+  messageFrom: "&7↑&f ┃ &b{player} &7left to &b{newServer} server."
+  messageTo: "&7↓&f ┃ &b{player} &7joined from &b{oldServer} server."
+
+# Commands that will be executed from console when an user joins the server
+# If you want to disable this just set it to []
+# See https://wiki.lorenzo0111.me/rocketjoin/execute-commands for more information
+# commands: []
+commands: []
+
+# If you enable hide feature people with the permission of hide-permission won't have a join message
+enable-hide: false
+hide-permission: "rocketjoin.silent"
+
+# ---> Custom Conditions <---
+
+conditions:
+  first_join:
+    type: FIRST
+    join: "<#058330>W<#22862a>e<#338834>l<#418a1d>c<#4d8d14>o<#598f08>m<#659000>e &5<b>{player}</b> <#719200>t<#7c9400>o <#889500>M<#949600>i<#9f9600>n<#ab9700>e <#b79700>i<#c39700>n <#cf9700>A<#db9600>b<#e79500>y<#f39400>s<#ff9200>s"
+
+# Use \n for a new line
+# Set to "disable" to disable this feature
+# welcome: "disable"
+welcome: "disable"

@@ -16,13 +16,16 @@ groups:
       prefix: ''
       suffix: ''
     servers:
-      - survival
-      - build
       - dev
+      - build
+      - survival
       - archive
     sorting_placeholders:
       - '%server%'
       - '%role_weight%'
+      - '%statistic_minutes_played%'
       - '%username%'
+    collisions: false
     header_footer_update_rate: 1000
     placeholder_update_rate: 5000
+    only_list_players_in_same_server: false

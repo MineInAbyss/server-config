@@ -9,6 +9,8 @@
 check_for_updates: true
 # Whether to remove nametag from players' heads if the nametag associated with their server group is empty.
 remove_nametags: false
+# Whether to disable header and footer if they are empty and let backend servers handle them.
+disable_header_footer_if_empty: true
 # Which text formatter to use (MINEDOWN, MINIMESSAGE, or LEGACY)
 formatter: MINEDOWN
 # All servers which are not in other groups will be put in the fallback group.
@@ -16,8 +18,8 @@ formatter: MINEDOWN
 fallback_enabled: true
 # The formats to use for the fallback group.
 fallback_group: default
-# Only show other players on a server that is part of the same server group as the player.
-only_list_players_in_same_group: true
+# Whether to show all players from all groups in the TAB list.
+show_all_players_from_all_groups: false
 # Define custom names to be shown in the TAB list for specific server names.
 # If no custom display name is provided for a server, its original name will be used.
 server_display_names:
@@ -35,7 +37,12 @@ enable_mini_placeholders_hook: true
 # Whether to send scoreboard teams packets. Required for player list sorting and nametag formatting.
 # Turn this off if you're using scoreboard teams on backend servers.
 send_scoreboard_packets: true
+# If built-in placeholders return a blank string, fallback to Placeholder API equivalents.
+# For example, if %prefix% returns a blank string, use %luckperms_prefix%. Requires PAPIProxyBridge.
+fallback_to_papi_if_placeholder_blank: false
 # Whether to sort players in the TAB list.
 sort_players: true
 # Remove gamemode spectator effect for other players in the TAB list.
 remove_spectator_effect: true
+# Whether to enable the Plugin Message API (allows backend plugins to perform certain operations)
+enable_plugin_message_api: true
