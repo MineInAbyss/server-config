@@ -5,7 +5,7 @@ global:
       keep:
         - config.yml
 feat/mobs:
-  copyPaths: [ feat/mobs ]
+  copyPaths: [ feat/mobs, feat/disable_mythic_examples ]
   files:
     plugins/MythicMobs:
       deleteUntracked: true
