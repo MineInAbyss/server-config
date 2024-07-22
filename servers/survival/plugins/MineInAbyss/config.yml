@@ -3,8 +3,6 @@ enableAll: false
 # Choose which features to enable with true/false
 antiCheese:
   enabled: true
-configManagement:
-  enabled: false
 core:
   enabled: true
 cosmetics:
@@ -20,8 +18,6 @@ descent:
   enabled: false
 displayLocker:
   enabled: true
-exp:
-  enabled: false
 gondolas:
   enabled: false
 guilds:
@@ -49,15 +45,11 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: true
-pins:
-  enabled: false
 playerProfile:
   enabled: true
   validBackgroundIds:
   - "player_profile_background"
-survivalPvp:
-  enabled: false
-adventurePvp:
+pvp:
   enabled: false
 relics:
   enabled: true
