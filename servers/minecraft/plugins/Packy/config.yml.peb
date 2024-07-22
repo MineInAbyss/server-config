@@ -1,5 +1,5 @@
 mcmeta:
-  format: 18
+  format: 48
   description: <gradient:#ff7043:#ffca28:#ff7043>MineInAbyss <white>- <gradient:#fff906:#fffb46>Server
     Resourcepack
 icon: pack.png
@@ -9,7 +9,11 @@ server:
   publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://" + env.SERVER_NAME + ".pack.mineinabyss.com") }}"
 prompt: ""
 force: false
-obfuscate: false
+obfuscation: FULL
+packSquash:
+  enabled: false
+  exePath: ""
+  settingsPath: packsquash.toml
 cachedPackAmount: 18
 menu:
   title: Packy Pack Picker
@@ -19,7 +23,7 @@ menu:
       title: Custom Hud
       height: 6
       button:
-        type: COMPASS
+        type: minecraft:compass
         itemName: <gold>Custom Hud
       modifiers:
         offset:
@@ -30,12 +34,12 @@ menu:
           height: 1
       type: MENU
       packs:
-        custom_hud: { }
+        custom_hud: {}
     music:
       title: Music
       height: 6
       button:
-        type: JUKEBOX
+        type: minecraft:jukebox
         itemName: <gold>Music
       modifiers:
         offset:
@@ -46,13 +50,11 @@ menu:
           height: 1
       type: MENU
       packs:
-        custom_music: { }
+        custom_music: {}
     armor:
       title: Armor Picker
       height: 6
-      button:
-        itemFlags:
-          - HIDE_ATTRIBUTES
+      button: {}
       modifiers:
         offset:
           x: 1
@@ -64,22 +66,20 @@ menu:
       packs:
         new_armor:
           button:
-            type: DIAMOND_HELMET
+            type: minecraft:diamond_helmet
             itemName: <gold>New Armor
         old_armor:
           button:
-            type: GOLDEN_HELMET
+            type: minecraft:golden_helmet
             itemName: <gold>Old Armor
         vanilla_armor:
           button:
-            type: IRON_HELMET
+            type: minecraft:iron_helmet
             itemName: <gold>Vanilla
     tools:
       title: Packy Pack Picker2
       height: 6
-      button:
-        itemFlags:
-          - HIDE_ATTRIBUTES
+      button: {}
       modifiers:
         offset:
           x: 6
@@ -91,16 +91,16 @@ menu:
       packs:
         2d_tools:
           button:
-            type: DIAMOND_SWORD
-            itemName: "<gold>2D Tools"
+            type: minecraft:diamond_sword
             customModelData: 1
+            itemName: <gold>2D Tools
         3d_tools:
           button:
-            type: GOLDEN_SWORD
-            itemName: "<gold>3D Tools"
+            type: minecraft:golden_sword
             customModelData: 2
+            itemName: <gold>3D Tools
         vanilla_tools:
           button:
-            type: IRON_SWORD
-            itemName: "<gold>Vanilla Tools"
+            type: minecraft:iron_sword
             customModelData: 3
+            itemName: <gold>Vanilla Tools
