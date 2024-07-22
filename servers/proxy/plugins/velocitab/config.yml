@@ -28,6 +28,9 @@ server_display_names:
   dev: 
   test: 
   archive: 
+  dev-alpha: 
+  dev-beta: 
+  dev-gamma: 
 # Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
 # How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)
