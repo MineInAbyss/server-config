@@ -1,5 +1,0 @@
-namespaces: [ geary, mineinabyss ]
-inherit: [ mineinabyss:npc ]
-set.modelengineModel:
-  modelId: guildmaster
-guildmaster: { }
