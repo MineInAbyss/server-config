@@ -4,6 +4,7 @@ set.item:
     itemName: <#FF9D26>Bonfire
     type: PAPER
     customModelData: 1034
+    maxStackSize: 16
 set.recipes:
   discoverRecipes: true
   recipes:
