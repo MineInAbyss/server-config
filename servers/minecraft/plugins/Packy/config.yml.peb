@@ -9,7 +9,7 @@ server:
   publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://" + env.SERVER_NAME + ".pack.mineinabyss.com") }}"
 prompt: ""
 force: false
-obfuscation: FULL
+obfuscation: SIMPLE
 packSquash:
   enabled: false
   exePath: ""
