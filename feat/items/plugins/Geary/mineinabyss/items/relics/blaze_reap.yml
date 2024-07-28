@@ -1,7 +1,7 @@
 namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    type: minecraft:knowledge_book
+    type: minecraft:paper
     customModelData: 2
     itemName: <#617B94><b>Blaze Reap
     lore:
@@ -10,21 +10,21 @@ set.item:
       - <#C6CC8A>on whatever it is struck on.
       - <#948E61><i>Used to create powerful explosions.
 disableItemInteractions: { }
-# TODO reimplement using observe
-#skills:
-#  - event: on.itemRightClick
-#    using: itemHolder
-#    vars:
-#      - derived location spawnAt:
-#          read.targetBlock:
-#            maxDistance: 10
-#    conditions:
-#      - check.player:
-#          isSneaking: true
-#      - cooldown:
-#          length: 2s
-#          itemName: <#617B94>Blaze Reap
-#    run:
-#      - explode:
-#          breakBlocks: false
-#          at: $spawnAt
+
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        cooldownsComplete: [ blaze_reap ]
+        player:
+          sneaking: true
+    - startCooldown:
+        id: blaze_reap
+        length: 2s
+        display: <#617B94>Blaze Reap
+    - get.targetBlock: { maxDistance: 15 }
+      register: targetBlock
+    - explode:
+        breakBlocks: false
+        power: 2
+        at: "{{ targetBlock }}"

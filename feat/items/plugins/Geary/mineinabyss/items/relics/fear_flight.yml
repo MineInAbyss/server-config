@@ -1,24 +1,24 @@
-namespaces: [geary, mineinabyss]
+namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: GLASS
     itemName: Fear Flight
     # customModelData: 102
-#passive:
-#  - !<on.parent>
-#    - !<if>
-#      conditions:
-#        health:
-#          withinPercent: 0..0.4
-#      run:
-#        particle:
-#          type: CLOUD
-#          offsetY: 1
-#          count: 3
-#          speed: 0
-#        apply_potion_effects:
-#          effects:
-#            - type: SPEED
-#              duration: 3s
-#              amplifier: 2
-#              ambient: true
+passive:
+  - match: [ inInventory ]
+    every: 1s
+    run:
+      - become: parent
+      - ensure:
+          mythicConditions:
+            - health{h=<5}
+      - particle:
+          type: CLOUD
+          offsetY: 1
+          count: 3
+          speed: 0
+      - applyPotionEffects:
+          - type: minecraft:speed
+            duration: 3s
+            amplifier: 2
+            hasParticles: false

@@ -4,6 +4,24 @@ set.item:
     type: KNOWLEDGE_BOOK
     itemName: <dark_gray>Tomorrow Signal
     customModelData: 12
+observe:
+  itemLeftClick:
+    - become: parent
+    - ensure:
+        cooldownComplete: [lightning_strike]
+    - startCooldown:
+        id: lightning_strike
+        length: 2s
+        display: <dark_gray>Tomorrow Signal
+    - get.targetBlock: { maxDistance: 15 }
+      register: targetBlock
+    - smite:
+        at: "{{ targetBlock }}"
+    - particle:
+        type: CLOUD
+        count: 10
+        speed: 0.2
+        at: "{{ targetBlock }}"
 #events:
 #  leftClick:
 #    - !<cooldown>

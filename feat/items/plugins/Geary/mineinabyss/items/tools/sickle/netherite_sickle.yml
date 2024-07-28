@@ -18,8 +18,7 @@ set.recipes:
       input: mineinabyss:diamond_sickle
       addition: minecraft:netherite_ingot
 observe:
-  - event: onItemRightClick
-    using: childOf
-    emit:
-      - sickle:
-          radius: 4
+  itemRightClick:
+    - become: parent
+    - sickle:
+        radius: 4

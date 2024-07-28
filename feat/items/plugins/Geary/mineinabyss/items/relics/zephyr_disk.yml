@@ -6,25 +6,25 @@ set.item:
     customModelData: 5
 disableItemInteractions: { }
 # TODO reimplement using observe
-#skills:
-#  - event: on.itemRightClick
-#    using: itemHolder
-#    vars:
-#      - derived location center:
-#          read.location: { }
-#    run:
-#      - using: { nearbyEntities: { radius: 10 } }
-#        vars:
-#          - derived location targetLoc:
-#              read.location: { }
-#        run:
-#          - playSound:
-#              sound: minecraft:entity.generic.extinguish_fire
-#          - knockback:
-#              center: $center
-#              power: 1
-#              yAngle: 0.5
-#          - particle:
-#              at: $targetLoc
-#              particle: CLOUD
-#              count: 3
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        cooldownsComplete: [ zephyr_disk ]
+    - get.location: {}
+      register: center
+    - get.nearbyEntities: { radius: 10 }
+      register: nearbyEntities
+    - run:
+        - become: "{{ item }}"
+        - playSound:
+            sound: minecraft:entity.generic.extinguish_fire
+        - knockback:
+            center: "{{ center }}"
+            power: 1
+            yAngle: 0.5
+        - particle:
+            at: $targetLoc
+            particle: CLOUD
+            count: 3
+      loop: nearbyEntities

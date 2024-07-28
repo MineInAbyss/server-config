@@ -1,4 +1,4 @@
-namespaces: [geary, mineinabyss]
+namespaces: [ geary, mineinabyss ]
 inherit:
   - mineinabyss:sickle
 set.item:
@@ -20,8 +20,7 @@ set.recipes:
         | SM|
         |S  |
 observe:
-  - event: onItemRightClick
-    using: childOf
-    emit:
-      - sickle:
-          radius: 1
+  itemRightClick:
+    - become: parent
+    - sickle:
+        radius: 1

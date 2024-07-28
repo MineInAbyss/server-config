@@ -1,7 +1,7 @@
 namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:compass
     customModelData: 125
     itemName: <dark_aqua>Star Compass
     lore:
@@ -16,6 +16,5 @@ set.recipes:
 starcompass: { }
 disableItemInteractions: { }
 observe:
-  - event: onItemRightClick
-    emit:
-      - toggleStarcompassHud: { }
+  itemRightClick:
+    - toggleStarcompassHud: { }

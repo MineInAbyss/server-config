@@ -1,4 +1,4 @@
-namespaces: [geary, mineinabyss]
+namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: PAPER
@@ -22,16 +22,17 @@ set.recipes:
         | G |
 depthmeter: { }
 observe:
-  - event: onItemLeftClick
-    using: childOf
-    # TODO support conditions
-#    conditions:
-#      - cooldown:
-#          length: 1s
-    emit:
-      - showDepth: { }
-  - event: onItemRightClick
-    emit:
-      - toggleDepthHud: { }
+  itemLeftClick:
+    - become: parent
+    - startCooldown:
+        id: depth_meter
+        length: 1s
+        display: <#617B94>Depth Meter
+    - ensure:
+        cooldownComplete: [ depth_meter ]
+    - showDepth: { }
+
+  itemRightClick:
+    - toggleDepthHud: { }
 
 disableItemInteractions: { }

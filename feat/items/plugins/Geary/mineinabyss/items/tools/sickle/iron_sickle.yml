@@ -19,8 +19,7 @@ set.recipes:
         | SM|
         |S  |
 observe:
-  - event: onItemRightClick
-    using: childOf
-    emit:
-      - sickle:
-          radius: 2
+  itemRightClick:
+    - become: parent
+    - sickle:
+        radius: 2
