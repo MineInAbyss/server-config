@@ -8,8 +8,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 35
-info:
-  blockModel: "mineinabyss:block/snow/cryosol"
+pack:
+  model: "mineinabyss:block/snow/cryosol"
 drops:
   drops:
     - item: mineinabyss:cryosol

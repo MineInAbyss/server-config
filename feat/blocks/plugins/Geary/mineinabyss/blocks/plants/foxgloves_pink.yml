@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 13
-info:
-  blockModel: hmcmodels:block/nature/foxgloves_pink
+pack:
+  model: hmcmodels:block/nature/foxgloves_pink
 drops:
   drops:
     - item: mineinabyss:foxgloves_pink

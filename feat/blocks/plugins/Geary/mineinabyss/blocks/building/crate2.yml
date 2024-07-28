@@ -8,8 +8,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 33
-info:
-  blockModel: mineinabyss:block/building/crate2
+pack:
+  model: mineinabyss:block/building/crate2
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break

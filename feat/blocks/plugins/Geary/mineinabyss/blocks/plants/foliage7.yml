@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 7
-info:
-  blockModel: mineinabyss:block/nature/foliage7
+pack:
+  model: mineinabyss:block/nature/foliage7
 drops:
   drops:
     - item: mineinabyss:foliage7

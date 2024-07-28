@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 16
-info:
-  blockModel: hmcmodels:block/nature/lupine_purple
+pack:
+  model: hmcmodels:block/nature/lupine_purple
 drops:
   drops:
     - item: mineinabyss:lupine_purple

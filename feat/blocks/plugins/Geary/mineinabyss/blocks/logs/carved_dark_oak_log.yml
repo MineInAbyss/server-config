@@ -9,8 +9,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 11
-info:
-  blockModel: mineinabyss:block/logs/carved_dark_oak_log
+pack:
+  model: mineinabyss:block/logs/carved_dark_oak_log
 directional:
   yBlock: mineinabyss:carved_dark_oak_log_y
   xBlock: mineinabyss:carved_dark_oak_log_x

@@ -9,8 +9,8 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 46
 
-info:
-  blockModel: "mineinabyss:block/snow/snow_bricks"
+pack:
+  model: "mineinabyss:block/snow/snow_bricks"
 drops:
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true

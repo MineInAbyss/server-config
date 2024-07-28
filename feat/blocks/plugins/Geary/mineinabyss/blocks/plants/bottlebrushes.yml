@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 9
-info:
-  blockModel: hmcmodels:block/nature/bottlebrushes
+pack:
+  model: hmcmodels:block/nature/bottlebrushes
 drops:
   drops:
     - item: mineinabyss:bottlebrushes

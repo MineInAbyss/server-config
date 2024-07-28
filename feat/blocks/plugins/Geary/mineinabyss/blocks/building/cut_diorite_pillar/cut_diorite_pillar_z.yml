@@ -5,5 +5,5 @@ directional:
 set.block:
   blockType: NOTEBLOCK
   blockId: 31
-info:
-  blockModel: mineinabyss:block/building/cut_diorite_pillar
+pack:
+  model: mineinabyss:block/building/cut_diorite_pillar

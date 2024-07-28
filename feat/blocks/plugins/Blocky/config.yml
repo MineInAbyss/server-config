@@ -44,7 +44,7 @@ furniture:
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
 caveVineBlocks:
-  isEnabled: false
+  isEnabled: true
 slabBlocks:
   isEnabled: true
 stairBlocks:

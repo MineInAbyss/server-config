@@ -8,8 +8,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 45
-info:
-  blockModel: "mineinabyss:block/snow/polished_packed_ice"
+pack:
+  model: "mineinabyss:block/snow/polished_packed_ice"
 drops:
   drops:
     - silkTouchedDrop:

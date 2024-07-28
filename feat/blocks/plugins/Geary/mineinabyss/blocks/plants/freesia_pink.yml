@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 14
-info:
-  blockModel: hmcmodels:block/nature/freesia_pink
+pack:
+  model: hmcmodels:block/nature/freesia_pink
 drops:
   drops:
     - item: mineinabyss:freesia_pink

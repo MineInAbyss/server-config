@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 11
-info:
-  blockModel: hmcmodels:block/nature/cosmos_pink
+pack:
+  model: hmcmodels:block/nature/cosmos_pink
 drops:
   drops:
     - item: mineinabyss:cosmos_pink

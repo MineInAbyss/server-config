@@ -4,5 +4,5 @@ directional:
 set.block:
   blockType: NOTEBLOCK
   blockId: 20
-info:
-  blockModel: mineinabyss:block/logs/carved_oak_log
+pack:
+  model: mineinabyss:block/logs/carved_oak_log

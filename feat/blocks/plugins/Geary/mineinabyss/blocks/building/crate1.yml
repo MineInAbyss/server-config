@@ -10,8 +10,8 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 32
 
-info:
-  blockModel: "mineinabyss:block/building/crate1"
+pack:
+  model: "mineinabyss:block/building/crate1"
 
 drops:
   drops:

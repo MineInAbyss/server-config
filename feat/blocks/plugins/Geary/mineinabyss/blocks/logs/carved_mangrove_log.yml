@@ -9,8 +9,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 17
-info:
-  blockModel: mineinabyss:block/logs/carved_mangrove_log
+pack:
+  model: mineinabyss:block/logs/carved_mangrove_log
 directional:
   yBlock: mineinabyss:carved_mangrove_log_y
   xBlock: mineinabyss:carved_mangrove_log_x

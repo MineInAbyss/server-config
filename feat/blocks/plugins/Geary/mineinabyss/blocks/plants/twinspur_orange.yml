@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 17
-info:
-  blockModel: hmcmodels:block/nature/twinspur_orange
+pack:
+  model: hmcmodels:block/nature/twinspur_orange
 drops:
   drops:
     - item: mineinabyss:twinspur_orange

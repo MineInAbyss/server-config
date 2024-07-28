@@ -9,8 +9,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 2
-info:
-  blockModel: mineinabyss:block/logs/carved_acacia_log
+pack:
+  model: mineinabyss:block/logs/carved_acacia_log
 directional:
   yBlock: mineinabyss:carved_acacia_log_y
   xBlock: mineinabyss:carved_acacia_log_x

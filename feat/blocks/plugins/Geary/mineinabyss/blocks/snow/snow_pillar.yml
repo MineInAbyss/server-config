@@ -8,8 +8,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 47
-info:
-  blockModel: "mineinabyss:block/snow/snow_pillar"
+pack:
+  model: "mineinabyss:block/snow/snow_pillar"
 directional:
   yBlock: mineinabyss:snow_pillar_y
   xBlock: mineinabyss:snow_pillar_x

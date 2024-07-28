@@ -13,8 +13,8 @@ placableOn:
 set.block:
   blockType: WIRE
   blockId: 1
-info:
-  blockModel: mineinabyss:block/nature/foliage1
+pack:
+  model: mineinabyss:block/nature/foliage1
 tall_wire: {}
 drops:
   drops:

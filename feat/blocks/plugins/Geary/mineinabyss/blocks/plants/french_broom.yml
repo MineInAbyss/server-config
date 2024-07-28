@@ -7,8 +7,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 15
-info:
-  blockModel: hmcmodels:block/nature/french_broom
+pack:
+  model: hmcmodels:block/nature/french_broom
 drops:
   drops:
     - item: mineinabyss:french_broom

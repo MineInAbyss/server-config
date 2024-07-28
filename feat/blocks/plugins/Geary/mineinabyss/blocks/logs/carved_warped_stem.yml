@@ -9,8 +9,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 26
-info:
-  blockModel: mineinabyss:block/logs/carved_warped_stem
+pack:
+  model: mineinabyss:block/logs/carved_warped_stem
 directional:
   yBlock: mineinabyss:carved_warped_stem_y
   xBlock: mineinabyss:carved_warped_stem_x

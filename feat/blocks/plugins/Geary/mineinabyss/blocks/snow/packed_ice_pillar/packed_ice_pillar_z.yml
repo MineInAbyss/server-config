@@ -4,5 +4,5 @@ directional:
 set.block:
   blockType: NOTEBLOCK
   blockId: 43
-info:
-  blockModel: mineinabyss:block/snow/packed_ice_pillar
+pack:
+  model: mineinabyss:block/snow/packed_ice_pillar

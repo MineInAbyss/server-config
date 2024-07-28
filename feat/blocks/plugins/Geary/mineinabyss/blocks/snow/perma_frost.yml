@@ -10,8 +10,8 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 44
 
-info:
-  blockModel: "mineinabyss:block/snow/perma_frost"
+pack:
+  model: "mineinabyss:block/snow/perma_frost"
 drops:
   drops:
     - item: mineinabyss:perma_frost

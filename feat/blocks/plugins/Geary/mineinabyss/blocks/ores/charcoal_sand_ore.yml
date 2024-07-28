@@ -11,8 +11,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 1
-info:
-  blockModel: mineinabyss:block/ores/charcoal_sand_ore
+pack:
+  model: mineinabyss:block/ores/charcoal_sand_ore
 blocky:sound:
   placeSound: minecraft:block.amethyst_block.place
   breakSound: minecraft:block.amethyst_block.break

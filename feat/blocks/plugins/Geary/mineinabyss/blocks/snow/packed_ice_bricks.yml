@@ -9,8 +9,8 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 40
-info:
-  blockModel: "mineinabyss:block/snow/packed_ice_bricks"
+pack:
+  model: "mineinabyss:block/snow/packed_ice_bricks"
 drops:
   drops:
     - item: mineinabyss:packed_ice_bricks

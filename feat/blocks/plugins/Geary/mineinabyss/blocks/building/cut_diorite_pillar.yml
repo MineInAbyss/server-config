@@ -8,10 +8,10 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 29
-info:
-  blockModel: mineinabyss:block/building/cut_diorite_pillar
+pack:
+  model: mineinabyss:block/building/cut_diorite_pillar
 directional:
-  yBlock: mineinabyss:cut_diorite_pillar_y
+  yBlock: mineinabyss:cut_diorite_pillar
   xBlock: mineinabyss:cut_diorite_pillar_x
   zBlock: mineinabyss:cut_diorite_pillar_z
 

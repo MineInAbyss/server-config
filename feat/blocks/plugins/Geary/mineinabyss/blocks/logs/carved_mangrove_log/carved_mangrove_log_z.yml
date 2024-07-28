@@ -4,5 +4,5 @@ directional:
 set.block:
   blockType: NOTEBLOCK
   blockId: 19
-info:
-  blockModel: mineinabyss:block/logs/carved_mangrove_log
+pack:
+  model: mineinabyss:block/logs/carved_mangrove_log
