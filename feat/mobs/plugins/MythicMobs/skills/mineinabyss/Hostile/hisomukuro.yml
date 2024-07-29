@@ -13,7 +13,7 @@ HS_grab:
   Skills:
   - lockhead{lp=true;ly=true} @self
   - gcd{ticks=50}
-  - command{c="remove boats 5";asTarget=true;asOp=true} @trigger ~onInteract
+  - command{c="remove boats 5";asTarget=true;asOp=true} @target
   - state{s=grab} @self
   - delay 25
   - skill{s=HS_grab_success} @self
