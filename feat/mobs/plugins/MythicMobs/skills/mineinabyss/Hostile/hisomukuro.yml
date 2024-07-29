@@ -30,7 +30,5 @@ HS_grab_success:
   - delay 10
   - delay 15
   - dismountall{p=seat} @self
-  - summon{t=HS_concussion} @target
   - delay 30
-  - setspeed{type=walking;speed=1} @self
   - lockhead{lp=false;ly=false} @self
