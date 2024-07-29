@@ -1,24 +1,26 @@
 hisomukuro:
-  Type: AXOLOTL
+  Type: SALMON
   Display: "<#C8C8C8>Hisomukuro"
-  Health: 80
+  Health: 60
   Damage: 8
   AIGoalSelectors:
     - clear
+    - movetowater
     - meleeattack
-    - randomstroll
-    - lookatplayers
+    - movetowardstarget
+    - fleeplayers
     - randomlookaround
+    - randomfly
   AITargetSelectors:
     - clear
+    - attacker
     - players
-    - attackers
   Options:
     Collidable: true
     Silent: true
     FollowRange: 20
     interactable: false
-    MovementSpeed: 0.6
+    MovementSpeed: 0.4
     KnockbackResistance: 1.0
   Model:
     Id: hisomukuro
@@ -33,4 +35,4 @@ hisomukuro:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
 
-    - skill{s=HS_grab} @self ~onDamaged
+    - skill{s=HS_grab} @target ~oninteract
