@@ -1,10 +1,9 @@
-hisomukuro1:
+hisomukuro:
   Type: SALMON
   Display: "<#C8C8C8>Hisomukuro"
   Health: 60
   Damage: 8
   AIGoalSelectors:
-    - clear
     - movetowater
     - meleeattack
     - movetowardstarget
@@ -12,7 +11,6 @@ hisomukuro1:
     - randomlookaround
     - randomfly
   AITargetSelectors:
-    - clear
     - attacker
     - players
   Options:
