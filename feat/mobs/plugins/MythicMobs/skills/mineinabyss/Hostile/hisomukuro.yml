@@ -1,0 +1,36 @@
+
+HS_grab_sync:
+  Conditions:
+  - targetwithin{d=4}
+  Skills:
+  - CancelEvent
+  - skill{s=HS_grab} @self
+
+HS_grab:
+  Cooldown: 10
+  Conditions:
+  - offgcd true
+  Skills:
+  - lockhead{lp=true;ly=true} @self
+  - gcd{ticks=50}
+  - command{c="remove boats 5";asTarget=true;asOp=true} @trigger ~onInteract
+  - state{s=grab} @self
+  - delay 25
+  - skill{s=HS_grab_success} @self
+  
+HS_grab_success:
+  Conditions:
+  - targetwithin{d=4}
+  Skills:
+  - gcd{ticks=70}
+  - mountmodel{driver=false;mode=Force_Walking;pbone=seat;dmg=true} @target
+  - delay 5
+  - velocity{m=add;x=0;y=-5;z=0;relative=true} @self
+  - damage{amount=10;repeat=6;repeatInterval=5} @target @ModelPassengers
+  - delay 10
+  - delay 15
+  - dismountall{p=seat} @self
+  - summon{t=HS_concussion} @target
+  - delay 30
+  - setspeed{type=walking;speed=1} @self
+  - lockhead{lp=false;ly=false} @self

@@ -32,3 +32,5 @@ hisomukuro:
   Skill: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+
+    - skill{s=HS_grab} @self ~onDamaged
