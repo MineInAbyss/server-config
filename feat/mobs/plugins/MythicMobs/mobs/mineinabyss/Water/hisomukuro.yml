@@ -4,6 +4,7 @@ hisomukuro:
   Health: 60
   Damage: 8
   AIGoalSelectors:
+    - clear
     - movetowater
     - meleeattack
     - movetowardstarget
@@ -11,7 +12,6 @@ hisomukuro:
     - randomlookaround
     - randomfly
   AITargetSelectors:
-    - attacker
     - players
   Options:
     Collidable: true
@@ -19,18 +19,18 @@ hisomukuro:
     FollowRange: 20
     interactable: false
     MovementSpeed: 0.4
-    KnockbackResistance: 1.0
   Model:
-    Id: hisomukuro_working
+    Id: hisomukuro
     ViewRadius: 64
     DamageTint: true
   Drops:
-    - exp 20-100
+    - exp 200-250
     - geary mineinabyss:demonfish_raw 1-4
     - geary mineinabyss:hamashirama_raw 1-4
     - geary mineinabyss:hisomukuro_fin 1-2 0.6
   Skills: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
-    - skill{s=HS_grab} @target ~oninteract
+    - skill{s=HS_ball} @target ~onTimer:20
+   # - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
+   # - skill{s=HS_grab} @self ~oninteract
