@@ -1,4 +1,4 @@
-hisomukuro:
+hisomukuro1:
   Type: SALMON
   Display: "<#C8C8C8>Hisomukuro"
   Health: 60
@@ -27,12 +27,12 @@ hisomukuro:
     ViewRadius: 64
     DamageTint: true
   Drops:
-    - exp 200-250
+    - exp 20-100
     - geary mineinabyss:demonfish_raw 1-4
     - geary mineinabyss:hamashirama_raw 1-4
     - geary mineinabyss:hisomukuro_fin 1-2 0.6
-  Skill: 
+  Skills: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
-
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
     - skill{s=HS_grab} @target ~oninteract

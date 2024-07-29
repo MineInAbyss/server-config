@@ -1,14 +1,5 @@
 HS_grab:
-  Cooldown: 10
-  Conditions:
-    - offgcd true
   Skills:
-    - lockhead{lp=true;ly=true} @self
-    - gcd{ticks=50}
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
-    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
    # - command{c="remove boats 5";asTarget=true;asOp=true} @target
     - state{s=grab} @self
     - delay 25
@@ -17,7 +8,10 @@ HS_grab_success:
   Conditions:
     - targetwithin{d=6}
   Skills:
-    - gcd{ticks=70}
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=5;p=0.7} @self
     - mountmodel{driver=false;mode=Force_Walking;pbone=seat;dmg=true} @target
     - delay 5
     - velocity{m=add;x=0;y=-5;z=0;relative=true} @self
