@@ -87,14 +87,70 @@ edusanC:
   Drops:
     - geary mineinabyss:billabonk_leg_cooked 1-2 0.6
 
+hagamizukinC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:hagamizukin_cooked 1-2 0.6
+
+hagamizukinUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:hagamizukin_raw 1-2 0.6
+
 C:
   Conditions:
   - isburning true
   Drops:
-    - geary mineinabyss:billabonk_leg_cooked 1-2 0.6
+    - geary mineinabyss:_cooked 1-2 0.6
 
 UC:
   Conditions:
   - isburning false
   Drops:
-    - geary mineinabyss:billabonk_leg_raw 1-2 0.6
+    - geary mineinabyss:_raw 1-2 0.6
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6

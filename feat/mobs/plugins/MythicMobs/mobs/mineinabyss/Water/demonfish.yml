@@ -1,5 +1,6 @@
 demonfish:
   Type: SALMON
+  Display: "<#1B91B5>Demonfish"
   Modules:
     ThreatTable: true
   AIGoalSelectors:

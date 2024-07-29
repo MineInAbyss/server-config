@@ -1,0 +1,14 @@
+namespaces: [geary]
+set.item:
+  item:
+    type: PAPER
+    itemName: <#0B6623>Raw Hagamizukin
+    customModelData: 322
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#0B6623>Hagamizukin <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Seems like a great source for food!
+    food:
+      saturation: 0.4
+      nutrition: 2
