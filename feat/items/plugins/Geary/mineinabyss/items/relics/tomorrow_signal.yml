@@ -8,7 +8,7 @@ observe:
   itemLeftClick:
     - become: parent
     - ensure:
-        cooldownComplete: [lightning_strike]
+        cooldownsComplete: [lightning_strike]
     - startCooldown:
         id: lightning_strike
         length: 2s

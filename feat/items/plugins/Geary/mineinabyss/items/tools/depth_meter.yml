@@ -29,7 +29,7 @@ observe:
         length: 1s
         display: <#617B94>Depth Meter
     - ensure:
-        cooldownComplete: [ depth_meter ]
+        cooldownsComplete: [ depth_meter ]
     - showDepth: { }
 
   itemRightClick:

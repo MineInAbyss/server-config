@@ -12,8 +12,11 @@ passive:
       - ensure:
           mythicConditions:
             - health{h=<5}
+      - get.location: {}
+        register: location
       - particle:
-          type: CLOUD
+          at: "{{ location }}"
+          particle: CLOUD
           offsetY: 1
           count: 3
           speed: 0
