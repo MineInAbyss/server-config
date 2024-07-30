@@ -87,7 +87,7 @@ background_offhand_empty:
       use-legacy-serializer: false
       pattern: "[papi:mineinabyss_orthbanking_tokens]<image:mittytoken>"
       align: right
-      x: -78
+      x: -76
       y: 30
       scale: 1
       outline: true
@@ -269,7 +269,11 @@ hunger:
     y-equation: 3cos(t/30 * pi)
 
 armor_air_background:
-
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
   images:
     1:
       name: armor_air_background
