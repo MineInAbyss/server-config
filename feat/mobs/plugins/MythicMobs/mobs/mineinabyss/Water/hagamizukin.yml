@@ -8,14 +8,10 @@ hagamizukin:
     - movetowater
     - meleeattack
     - movetowardstarget
-    - fleeplayers
     - randomlookaround
     - randomfly
   AITargetSelectors:
-    - clear
-    - attacker
     - players
-  Faction: fish
   Health: 50 # change this
   Damage: 7
   Options:
