@@ -1,0 +1,343 @@
+background:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: background
+      x: 12
+      y: 6
+
+background_offhand:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "papi:player_item_in_offhand"
+      second: "'AIR'"
+      operation: "!="
+  images:
+    1:
+      name: background_offhand
+      x: -128
+      y: 12
+  texts:
+    1:
+      name: orthbanking
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: false
+      use-legacy-serializer: false
+      pattern: "[papi:mineinabyss_orthbanking_coins]<image:orthcoin>"
+      align: right
+      x: -88
+      y: 40
+      scale: 1
+      outline: true
+    2:
+      name: orthbanking
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: false
+      use-legacy-serializer: false
+      pattern: "[papi:mineinabyss_orthbanking_tokens]<image:mittytoken>"
+      align: right
+      x: -87
+      y: 30
+      scale: 1
+      outline: true
+
+background_offhand_empty:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "papi:player_item_in_offhand"
+      second: "'AIR'"
+      operation: "=="
+  images:
+    1:
+      name: background_offhand_empty
+      x: -113
+      y: 12
+  texts:
+    1:
+      name: orthbanking
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: false
+      use-legacy-serializer: false
+      pattern: "[papi:mineinabyss_orthbanking_coins]<image:orthcoin>"
+      align: right
+      x: -77
+      y: 40
+      scale: 1
+      outline: true
+    2:
+      name: orthbanking
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: false
+      use-legacy-serializer: false
+      pattern: "[papi:mineinabyss_orthbanking_tokens]<image:mittytoken>"
+      align: right
+      x: -78
+      y: 30
+      scale: 1
+      outline: true
+
+# background_offhand:
+  # conditions:
+    # 1:
+      # first: "papi:player_gamemode"
+      # second: "'SURVIVAL'"
+      # operation: "=="
+    # 2:
+      # first: "papi:player_item_in_offhand"
+      # second: "'AIR'"
+      # operation: "!="
+  # images:
+    # 1:
+      # name: background_offhand
+      # x: 13
+      # y: 6
+
+health:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: health_empty
+      x: -50
+      y: 13
+    2:
+      name: health_bar
+      x: -33
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+poison:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "papi:player_has_potioneffect_poison"
+      second: "'yes'"
+      operation: "=="
+  images:
+    1:
+      name: poison_empty
+      x: -50
+      y: 13
+    2:
+      name: poison_bar
+      x: -33
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+bleeding:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "papi:player_has_potioneffect_wither"
+      second: "'yes'"
+      operation: "=="
+  images:
+    1:
+      name: bleeding_empty
+      x: -50
+      y: 13
+    2:
+      name: bleeding_bar
+      x: -33
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+freezing:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "(number)papi:player_absorption"
+      second: 0
+      operation: ">"
+  images:
+    1:
+      name: freezing_empty
+      x: -50
+      y: 13
+    2:
+      name: freezing_bar
+      x: -33
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+absorption:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "(number)papi:player_absorption"
+      second: 0
+      operation: ">"
+  images:
+    1:
+      name: absorption_empty
+      x: -50
+      y: 3
+    2:
+      name: absorption_bar
+      x: -33
+      y: -1
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+food:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: food_empty
+      x: 34
+      y: 13
+    2:
+      name: food_bar
+      x: 51
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+hunger:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+    2:
+      first: "papi:player_has_potioneffect_hunger"
+      second: "'yes'"
+      operation: "=="
+  images:
+    1:
+      name: hunger_empty
+      x: 34
+      y: 14
+    2:
+      name: hunger_bar
+      x: 51
+      y: 16
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)
+
+armor_air_background:
+
+  images:
+    1:
+      name: armor_air_background
+      x: -24
+      y: -36
+
+armor:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: armor_empty
+      x: -30
+      y: -34
+    2:
+      name: armor_bar
+      x: -28
+      y: -15
+  
+air:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: air_empty
+      x: -18
+      y: -34
+    2:
+      name: air_bar
+      x: -16
+      y: -15
+
+exp:
+  conditions:
+    1:
+      first: "papi:player_gamemode"
+      second: "'SURVIVAL'"
+      operation: "=="
+  images:
+    1:
+      name: exp_empty
+      x: 1
+      y: 22
+    2:
+      name: exp_bar
+      x: 9
+      y: 25
+  texts:
+    1:
+      name: default_font
+      space: 0
+      number-format: "#,###.#"
+      disable-number-format: false
+      use-legacy-serializer: false
+      pattern: "<green>[papi:player_level]"
+      align: center
+      x: 190
+      y: 16
+      scale: 0.5
+      outline: true
+      deserialize-text: true
+  animations:
+    duration: 60
+    x-equation: 0
+    y-equation: 3cos(t/30 * pi)

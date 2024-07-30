@@ -1,0 +1,60 @@
+test_hud:
+  layouts:
+    0:
+      name: background
+      x: 50
+      y: 100
+    1:
+      name: background_offhand
+      x: 50
+      y: 100
+    2:
+      name: background_offhand_empty
+      x: 50
+      y: 100
+    3:
+      name: health
+      x: 50
+      y: 100
+    4:
+      name: poison
+      x: 50
+      y: 100
+    5:
+      name: bleeding
+      x: 50
+      y: 100
+    #5:
+    #  name: freezing
+    #  x: 50
+    #  y: 100
+    6:
+      name: absorption
+      x: 50
+      y: 100
+    7:
+      name: food
+      x: 50
+      y: 100
+    8:
+      name: hunger
+      x: 50
+      y: 100
+    9:
+      name: exp
+      x: 50
+      y: 100
+    10:
+      name: armor_air_background
+      x: 100
+      y: 100
+    11:
+      name: armor
+      x: 100
+      y: 100
+    12:
+      name: air
+      x: 100
+      y: 100
+    
+    

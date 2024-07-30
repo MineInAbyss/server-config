@@ -14,6 +14,8 @@ templates:
   - name: custom_hud
     default: true
     required: false
+    loadTrigger:
+      type: "BetterHud"
   - name: emotes
     default: true
     required: true

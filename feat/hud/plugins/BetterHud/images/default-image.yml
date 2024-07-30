@@ -1,0 +1,145 @@
+background:
+  type: single
+  file: main_background_cogs.png
+
+background_offhand:
+  type: single
+  file: offhand_background.png
+  
+background_offhand_empty:
+  type: single
+  file: empty_offhand_background.png
+
+health_empty:
+  type: single
+  file: health_empty.png
+
+poison_empty:
+  type: single
+  file: poison_empty.png
+
+bleeding_empty:
+  type: single
+  file: bleeding_empty.png
+
+freezing_empty:
+  type: single
+  file: freezing_empty.png
+
+absorption_empty:
+  type: single
+  file: absorption_empty.png
+
+food_empty:
+  type: single
+  file: food_empty.png
+
+hunger_empty:
+  type: single
+  file: hunger_empty.png
+
+armor_empty:
+  type: single
+  file: armor_empty.png
+
+air_empty:
+  type: single
+  file: air_empty.png
+
+exp_empty:
+  type: single
+  file: exp_empty.png
+
+health_bar:
+  type: listener
+  file: health_bar.png
+  split: 20
+  split-type: left
+  setting:
+    listener:
+      class: health
+
+poison_bar:
+  type: listener
+  file: poison_bar.png
+  split: 20
+  split-type: left
+  setting:
+    listener:
+      class: health
+
+bleeding_bar:
+  type: listener
+  file: bleeding_bar.png
+  split: 20
+  split-type: left
+  setting:
+    listener:
+      class: health
+
+freezing_bar:
+  type: listener
+  file: freezing_bar.png
+  split: 20
+  split-type: left
+  setting:
+    listener:
+      class: health
+
+absorption_bar:
+  type: listener
+  file: absorption_bar.png
+  split: 20
+  split-type: left
+  setting:
+    listener:
+      class: absorption
+
+food_bar:
+  type: listener
+  file: food_bar.png
+  split: 20
+  split-type: right
+  setting:
+    listener:
+      class: food
+
+hunger_bar:
+  type: listener
+  file: hunger_bar.png
+  split: 20
+  split-type: right
+  setting:
+    listener:
+      class: food
+
+armor_air_background:
+  type: single
+  file: armor_air_background.png
+
+armor_bar:
+  type: listener
+  file: armor_bar.png
+  split: 20
+  split-type: up
+  setting:
+    listener:
+      class: armor
+
+air_bar:
+  type: listener
+  file: air_bar.png
+  split: 20
+  split-type: up
+  setting:
+    listener:
+      class: air
+
+exp_bar:
+  type: listener
+  file: exp_bar.png
+  split: 26
+  split-type: left
+  setting:
+    listener:
+      class: exp
