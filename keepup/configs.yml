@@ -53,6 +53,7 @@ survival:
     - feat/cosmetics
     - feat/blocks
     - feat/mobs
+    - feat/hud
 build:
   variables:
     chatty:
@@ -82,6 +83,7 @@ dev:
     - feat/pets
     - feat/delvers
     - feat/bosses
+    - feat/hud
 
 archive:
   copyPaths: [ servers/archive ]
