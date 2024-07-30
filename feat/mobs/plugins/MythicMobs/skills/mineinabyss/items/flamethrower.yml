@@ -61,7 +61,18 @@ Flame-Torrent:
   - gcd{ticks=40} @self
   - delay 8
   - projectile{
-      i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=-10;hitself=false;se=false;
+      i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=-10;hnp=true;hitself=false;se=false;
+      bullet=BLOCK;material=FIRE;
+      onStart=[
+        - sound{s=entity.generic.ignite;p=1.7}
+      ];
+      onHit=[
+        - damage{amount=5} 
+        - ignite{ticks=100}
+      ]} @targetlocation
+  - delay 10
+  - projectile{
+      i=1;repeat=10;repeati=1;syo=1;tyo=1;hnp=true;v=18;ho=0;hitself=false;se=false;
       bullet=BLOCK;material=FIRE;
       onStart=[
         - sound{s=entity.generic.ignite;p=1.7}
@@ -72,18 +83,7 @@ Flame-Torrent:
       ]} @targetlocation
   - delay 10
   - projectile{
-      i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=0;hitself=false;se=false;
-      bullet=BLOCK;material=FIRE;
-      onStart=[
-        - sound{s=entity.generic.ignite;p=1.7}
-      ];
-      onHit=[
-        - damage{amount=5}
-        - ignite{ticks=100}
-      ]} @targetlocation
-  - delay 10
-  - projectile{
-      i=1;repeat=10;repeati=1;syo=1;tyo=1;v=18;ho=10;hitself=false;se=false;
+      i=1;repeat=10;repeati=1;syo=1;tyo=1;hnp=true;v=18;ho=10;hitself=false;se=false;
       bullet=BLOCK;material=FIRE;
       onStart=[
         - sound{s=entity.generic.ignite;p=1.7}
