@@ -1,7 +1,7 @@
 hisomukuro:
-  Type: SALMON
+  Type: AXOLOTL
   Display: "<#C8C8C8>Hisomukuro"
-  Health: 60
+  Health: 80
   Damage: 8
   AIGoalSelectors:
     - clear
@@ -18,19 +18,22 @@ hisomukuro:
     Silent: true
     FollowRange: 20
     interactable: false
-    MovementSpeed: 0.4
+    MovementSpeed: 0.6
   Model:
     Id: hisomukuro
     ViewRadius: 64
     DamageTint: true
   Drops:
-    - exp 200-250
-    - geary mineinabyss:demonfish_raw 1-4
-    - geary mineinabyss:hamashirama_raw 1-4
-    - geary mineinabyss:hisomukuro_fin 1-2 0.6
+    - exp 20-30
+    - BONE 0-5 1 1
+    - geary mineinabyss:hisomukuro_rib 2-6 0.7
   Skills: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
     - skill{s=HS_ball} @target ~onTimer:20
+    - skill{s=HS_charge} @self ~onTimer:1
+    - skill{s=HSAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - setstance{stance=hscharge} @self ~onspawn
    # - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
    # - skill{s=HS_grab} @self ~oninteract
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

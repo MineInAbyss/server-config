@@ -2,29 +2,49 @@
 
 
 HS_ball:
-  Cooldown: 10
+  Cooldown: 5
   Conditions:
     - incombat true
     - offgcd true
    # - targetwithin{d=10} true
     #- targetinlineofsight{} true
   Skills:
-    - gcd{ticks=10}
-    - projectile{onTick=HS_tick;onHit=HS_impact;v=12;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=0.5;syo=1.5;vn=1} @target
-
-
+    - gcd{ticks=150}
+    - state{s=grab} @self
+  #  - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5;repeat=15;repeatInterval=1} @Self
+  #  - effect:particlebox{p=bubble_pop;a=9;repeat=15;repeatInterval=1} @Self
+    - delay 15
+    - setstance{stance=bullet} @self
+    - projectile{onTick=HS_tick;onHit=HS_impact;v=18;i=1;hR=0.5;vR=0.5;hnp=false;tyo=0.5} @target
+    - delay 35
+    - delay 20
+    - setstance{stance=hscharge} @self
+    - state{s=grab;r=true} @self
+HS_charge:
+  Conditions:
+    - stance hscharge
+  Skills:
+    - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5} @Self
+    - effect:particlebox{p=bubble_pop;a=9;y=1.5;s=0.1;r=0.2} @Self
 HS_tick:
   Skills:
-    - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5} @Self ~onTimer:1
-    - effect:particlebox{p=bubble_pop;a=9;y=1.5;s=0.1;r=0.2} @Self ~onTimer:1
+    - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5}
+    - effect:particlebox{p=bubble_pop;a=9;y=1.5;s=0.1;r=0.2}
 
 HS_impact:
   Skills:
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
     - command{c="remove boats 5";asTarget=true;asOp=true} @target
     - potion{type=BLINDNESS;duration=100;level=1;p=false;force=true} @Self
+    - potion{type=SLOWNESS;duration=100;level=1;p=false;force=true} @Self
     - damage{a=8} @target
     - damage{a=10;ia=true} @target
     - shieldbreak{duration=150} @target
 
 
+
+HSAmbient:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.elder_guardian.ambient;sc=master;p=<random.float.1.65to2.00>;v=1.1} @self
+  - sound{s=entity.salmon.ambient;sc=master;p=<random.float.0.85to0.95>;v=0.7} @self
