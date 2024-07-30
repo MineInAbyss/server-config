@@ -15,7 +15,7 @@ HS_ball:
   #  - effect:particlebox{p=bubble_pop;a=9;repeat=15;repeatInterval=1} @Self
     - delay 15
     - setstance{stance=bullet} @self
-    - projectile{onTick=HS_tick;onHit=HS_impact;v=18;i=1;hR=0.5;vR=0.5;hnp=false;tyo=0.5} @target
+    - projectile{onTick=HS_tick;onHit=HS_impact;v=18;i=1;hR=0.5;vR=0.5;hnp=false;tyo=0} @target
     - delay 35
     - delay 20
     - setstance{stance=hscharge} @self
