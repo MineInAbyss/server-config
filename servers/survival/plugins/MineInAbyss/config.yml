@@ -3,6 +3,8 @@ enableAll: false
 # Choose which features to enable with true/false
 antiCheese:
   enabled: true
+#blocklocker:
+#  enabled: false
 core:
   enabled: true
 cosmetics:
