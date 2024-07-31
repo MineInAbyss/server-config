@@ -2,7 +2,7 @@ l5p:
   Type: abyssal_snail,titanjaw,Kuongatari
   Action: ADD
   Worlds: world
-  Chance: 0.0006
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -18,7 +18,7 @@ l5psnow:
   Type: ashimite
   Action: ADD
   Worlds: world
-  Chance: 0.0006
+  Chance: 0.003
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -33,7 +33,7 @@ l5hsnow:
   Type: octoliar,horncrier
   Action: ADD
   Worlds: world
-  Chance: 0.0001
+  Chance: 0.0005
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -50,7 +50,7 @@ l5hsand:
   Type: kagi_tachikiri
   Action: ADD
   Worlds: world
-  Chance: 0.00015
+  Chance: 0.00075
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -65,7 +65,7 @@ l5psand:
   Type: virinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.00004
+  Chance: 0.002
   Priority: 0.5
   Cooldown: 30
   UseWorldScaling: false
@@ -84,7 +84,7 @@ l5d:
   Type: stinger,Kuongatari
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.001
   Priority: 0.1
   Cooldown: 15
   UseWorldScaling: false
@@ -99,7 +99,7 @@ l5w:
   Type: makihige,demonfish
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.001
   PositionType: SEA
   Cooldown: 10
   Priority: 0.5
@@ -114,7 +114,7 @@ l5watermob:
   Type: edusan,hisomukuro,hagamizukin
   Action: ADD
   Worlds: world
-  Chance: 0.0001
+  Chance: 0.0005
   PositionType: SEA
   Cooldown: 5
   Priority: 0.5
@@ -128,7 +128,7 @@ l5f:
   Type: onitsuchi,chikyuoebi,uibuta
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.001
   Priority: 0.5
   Cooldown: 10
   UseWorldScaling: false
@@ -143,7 +143,7 @@ l5fa2:
   Type: tachikatana
   Action: ADD
   Worlds: world
-  Chance: 0.000005
+  Chance: 0.000025
   Priority: 1
   Cooldown: 30
   UseWorldScaling: false

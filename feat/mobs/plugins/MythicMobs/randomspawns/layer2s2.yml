@@ -2,7 +2,7 @@
   Type: stinger,inbyo
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.0025
   Priority: 0.1
   Cooldown: 10
   UseWorldScaling: false
@@ -17,7 +17,7 @@ l2s2floor:
   Type: hisoishi,rockwalker
   Action: ADD
   Worlds: world
-  Chance: 0.00015
+  Chance: 0.00075
   Priority: 0.1
   Cooldown: 5
   UseWorldScaling: false
@@ -34,7 +34,7 @@ l2f5:
   Type: dosetori,hammerbeak,corpse_weeper
   Action: ADD
   Worlds: world
-  Chance: 0.00004
+  Chance: 0.0002
   Priority: 0.5
   Cooldown: 10
   UseWorldScaling: false
@@ -49,7 +49,7 @@ l2fr5:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00001
+  Chance: 0.00005
   Priority: 0.5
   Cooldown: 30
   UseWorldScaling: false
