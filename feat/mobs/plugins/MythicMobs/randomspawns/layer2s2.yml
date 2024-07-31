@@ -36,12 +36,12 @@ l2f5:
   Worlds: world
   Chance: 0.00004
   Priority: 0.5
-  Cooldown: 2
+  Cooldown: 10
   UseWorldScaling: false
   Conditions:
   - region{r=l2s2} true
-  - mobsinchunk{a=<5} true
-  - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=5to99;radius=45} false
+  - mobsinchunk{a=<2} true
+  - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=5to99;radius=50} false
   - inblock{b=WATER} false
 
 
