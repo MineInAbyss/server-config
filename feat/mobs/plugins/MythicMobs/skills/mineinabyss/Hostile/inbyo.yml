@@ -10,7 +10,7 @@ inbyopoop:
     - state{s=poopthrow} @self
     - potion{type=SLOW;duration=15;level=2;p=false;force=true} @Self
     - delay 20
-    - projectile{bulletType=ITEM;material=brown_dye;onTick=inbyopoop_tick;onHit=inbyopoop_impact;v=10;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{bulletType=ITEM;material=brown_dye;onTick=inbyopoop_tick;onHit=inbyopoop_impact;v=20;g=0.6;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
     - delay 20
 
 
