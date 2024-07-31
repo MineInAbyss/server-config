@@ -1,7 +1,20 @@
 daikonchu:
-  Type: SILVERFISH
+  Type: SPIDER
   Health: 80
   Damage: 0
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Model:
+    Id: daikonchu
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
@@ -9,4 +22,3 @@ daikonchu:
   - skill{s=Changetarget} ~onTimer:160 <99%
   - model{mid=daikonchu;n=false} @Self ~onSpawn
   - skill:DaikonchuAttack @Self ~onAttack
-#  - skill:DwellingBugTame @Self ~onInteract COMING SOON!!!!!!!

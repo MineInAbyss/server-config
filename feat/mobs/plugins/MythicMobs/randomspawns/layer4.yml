@@ -9,7 +9,7 @@ l4p:
   Conditions:
   #- onblock{m=GRASS_BLOCK,DIRT} true
   - region{r=l4s0,l4s1,l4s2,l4s3} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=5to99;radius=15} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -25,7 +25,7 @@ l4d:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
-  - mobsinradius{a=>10;radius=15} false
+  - mobsinradius{a=10to99;radius=15} false
   - inblock{b=WATER} false
 
 l4w:
@@ -53,7 +53,7 @@ l4whippo:
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
-  - mobsinradius{a=>5;radius=15} false
+  - mobsinradius{a=5to99;radius=15} false
   - inblock{b=WATER} true
 
 l4f:
