@@ -23,7 +23,7 @@ Configuration:
     DisableVanillaSpawns: true
 
     # Must be enabled for ADD method
-    GenerateSpawnPoints: false
+    GenerateSpawnPoints: true
 
     # Area around players where mobs will try to spawn
     SpawnRadiusPerPlayer: 27
