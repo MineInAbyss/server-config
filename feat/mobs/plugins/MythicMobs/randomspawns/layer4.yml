@@ -2,7 +2,7 @@ l4p:
   Type: shroombear,hashofu
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0003
   Priority: 0.5
   Cooldown: 15
   UseWorldScaling: false
@@ -17,7 +17,7 @@ l4d:
   Type: stinger,mantoyer
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0001
   Priority: 0.6
   Cooldown: 15
   UseWorldScaling: false
@@ -32,9 +32,9 @@ l4w:
   Type: kazura,hagamizukin,rohana,spiralsquid,ikenosuke
   Action: ADD
   Worlds: world
-  Chance: 0.0045
+  Chance: 0.00045
   Priority: 1
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
@@ -46,9 +46,9 @@ l4whippo:
   Type: uibuta,makihige
   Action: ADD
   Worlds: world
-  Chance: 0.0015
+  Chance: 0.00015
   Priority: 0.5
-  Cooldown: 2
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
@@ -60,9 +60,9 @@ l4f:
   Type: uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0001
   Priority: 0.2
-  Cooldown: 0
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true
@@ -74,7 +74,7 @@ l4fa:
   Type: OrbPiercer
   Action: ADD
   Worlds: world
-  Chance: 0.0001
+  Chance: 0.00001
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false
@@ -87,7 +87,7 @@ l4fa2:
   Type: tachikatana
   Action: ADD
   Worlds: world
-  Chance: 0.00005
+  Chance: 0.000005
   Priority: 1
   Cooldown: 15
   UseWorldScaling: false

@@ -2,9 +2,9 @@ l2p:
   Type: chimokami,tesuchi,fuwagi,ottobas
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0003
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
@@ -16,9 +16,9 @@ l1d:
   Type: vinebinder,vinepoofer,vineblaster,spikewalker
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0003
   Priority: 0.1
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT} true
@@ -31,9 +31,9 @@ l2w:
   Type: billabonk,ikenosuke,rohana
   Action: ADD
   Worlds: world
-  Chance: 0.0025
+  Chance: 0.00025
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
@@ -45,7 +45,7 @@ l2f:
   Type: silkfang,cyatoria,dosetori,hammerbeak,woodcrier
   Action: ADD
   Worlds: world
-  Chance: 0.0009
+  Chance: 0.00009
   Priority: 0.5
   Cooldown: 9
   UseWorldScaling: false
@@ -58,7 +58,7 @@ l2fa:
   Type: corpse_weeper,hammerbeakLarge
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.00002
   Priority: 1
   Cooldown: 10
   UseWorldScaling: false
@@ -72,7 +72,7 @@ l2fr:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00005
+  Chance: 0.000005
   Priority: 0.5
   Cooldown: 20
   UseWorldScaling: false

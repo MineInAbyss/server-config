@@ -2,9 +2,9 @@ l1p:
   Type: beniguma,fuwagi,okibo
   Action: ADD
   Worlds: world
-  Chance: 0.003
+  Chance: 0.0003
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true
@@ -15,9 +15,9 @@ l1d:
   Type: vinebinder,vinepoofer
   Action: ADD
   Worlds: world
-  Chance: 0.002
+  Chance: 0.0002
   Priority: 0.1
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true
@@ -28,9 +28,9 @@ l1w:
   Type: spiralsquid
   Action: ADD
   Worlds: world
-  Chance: 0.0025
+  Chance: 0.00025
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true
@@ -41,9 +41,9 @@ l1f:
   Type: hammerbeak,silkfang,cyatoria
   Action: ADD
   Worlds: world
-  Chance: 0.0004
+  Chance: 0.00004
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true
@@ -54,9 +54,9 @@ l1fa:
   Type: hammerbeakLarge
   Action: ADD
   Worlds: world
-  Chance: 0.00005
+  Chance: 0.000005
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true
@@ -68,9 +68,9 @@ l1fr:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00005
+  Chance: 0.000005
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l1s1,l1s2,l1s3} true

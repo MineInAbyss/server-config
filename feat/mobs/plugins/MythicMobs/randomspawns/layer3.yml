@@ -2,9 +2,9 @@ l3p:
   Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.0035
+  Chance: 0.00035
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=WHITE_CONCRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
@@ -16,9 +16,9 @@ l3d:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
   Worlds: world
-  Chance: 0.0015
+  Chance: 0.00015
   Priority: 0.1
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
@@ -31,9 +31,9 @@ l3w:
   Type: ikenosuke
   Action: ADD
   Worlds: world
-  Chance: 0.0025
+  Chance: 0.00025
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
@@ -44,9 +44,9 @@ l3f:
   Type: daikonchu,dosetori,yomotsubi,madokajack
   Action: ADD
   Worlds: world
-  Chance: 0.0015
+  Chance: 0.00015
   Priority: 0.5
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
@@ -57,9 +57,9 @@ l3fa:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00025
+  Chance: 0.000025
   Priority: 1
-  Cooldown: 1
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
