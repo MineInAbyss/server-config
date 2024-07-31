@@ -1,20 +1,25 @@
 daikonchu:
   Type: SPIDER
+  Display: "<#FFF821>Daikonchu"
   Health: 80
   Damage: 0
   AIGoalSelectors:
     - clear
-    - meleeattack
+    - spiderattack
     - float
     - randomlookaround
   AITargetSelectors:
     - clear
-    - players
+    - players1
   Model:
     Id: daikonchu
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 15-25
+    - geary mineinabyss:daikonchu_carapace 1 0.4
+    - geary mineinabyss:daikonchu_wings 1-2 0.3
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
