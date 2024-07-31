@@ -7,11 +7,11 @@ l3p:
   Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  - onblock{m=WHITE_CONRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
+  - onblock{m=WHITE_CONCRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-
+  - mobsinradius{types=kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede;a=10to99;radius=45} false
 l3d:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
