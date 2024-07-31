@@ -1,0 +1,11 @@
+namespaces: [geary]
+set.item:
+  item:
+    type: LEATHER
+    itemName: "<#FFF821>Daikonchu Wing"
+    customModelData: 2
+    lore:
+      - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
+      - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
+      - <#FFE817><i>Perhaps I can take flight with these?
+      - <#FFE817><i>(No this is not related to membrane or elytras)
