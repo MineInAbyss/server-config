@@ -1,5 +1,6 @@
 swarmshocker:
   Type: COD
+  Display: "<#257BEB>Swarmshocker"
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -11,7 +12,7 @@ swarmshocker:
   AITargetSelectors:
   - clear
   Faction: swarmshockers
-  Health: 10 # change this
+  Health: 15 # change this
   Damage: 0 # keep this 0
   Options:
     Despawn: false
@@ -20,7 +21,9 @@ swarmshocker:
     MovementSpeed: 0.25
     KnockbackResistance: 0.0
     interactable: false
-  Drops: # put stuff here
+  Drops:
+  - exp 5-15
+  - geary mineinabyss:swarmshocker_Charged_Powder 1-2 0.6
   DamageModifiers:
 
   Skills:

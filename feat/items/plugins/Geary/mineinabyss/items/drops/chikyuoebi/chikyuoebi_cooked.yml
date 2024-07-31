@@ -1,0 +1,25 @@
+namespaces: [geary]
+set.item:
+  item:
+    type: PAPER
+    itemName: <#9A1CAD>Cooked Chikyuoebi Claw
+    customModelData: 423
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#1B91B5>Chikyuoebi <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Tastes like lobster!
+    food:
+      saturation: 9.6
+      nutrition: 7
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input: mineinabyss:chikyuoebi_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input: mineinabyss:chikyuoebi_raw
+      experience: 2f
+      cookingTime: 50

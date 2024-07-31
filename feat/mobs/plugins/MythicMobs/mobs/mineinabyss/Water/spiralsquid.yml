@@ -1,6 +1,6 @@
 spiralsquid:
   Type: SQUID
-  Display: "<#1B91B5>Hamashirama"
+  Display: "<#1B91B5>spiralsquid"
   Health: 8
   Damage: 0
   AIGoalSelectors:
@@ -22,8 +22,9 @@ spiralsquid:
     DamageTint: true
   Drops:
     - exp 5-10
-    - geary mineinabyss:spiralsquid_raw 1
     - ink_sac 1-2
+    - spiralsquidUC
+    - spiralsquidC
   Skill: 
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged

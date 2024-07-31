@@ -16,12 +16,13 @@ ikenosuke:
     Despawn: false
     Silent: false
     FollowRange: 25
-    MovementSpeed: 0.25
+    MovementSpeed: 0.4
     KnockbackResistance: 0.0
     interactable: false
   Drops: # put stuff here
-  - exp 15-20
-  - geary mineinabyss:ikenosuke_raw 1
+  - exp 5-15
+  - ikenosukeUC
+  - ikenosukeC
   DamageModifiers:
 
   Skills:

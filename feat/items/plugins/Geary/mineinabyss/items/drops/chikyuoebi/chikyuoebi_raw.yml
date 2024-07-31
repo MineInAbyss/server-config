@@ -1,0 +1,14 @@
+namespaces: [geary]
+set.item:
+  item:
+    type: PAPER
+    itemName: <#9A1CAD>Raw chikyuoebi
+    customModelData: 323
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>catching a <#9A1CAD>Chikyuoebi <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#A759FF>Not that tasty raw...
+    food:
+      saturation: 0.4
+      nutrition: 2

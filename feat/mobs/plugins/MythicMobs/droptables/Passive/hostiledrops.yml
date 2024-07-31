@@ -1,0 +1,89 @@
+
+hagamizukinC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:hagamizukin_cooked 1-2 0.6
+
+hagamizukinUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:hagamizukin_raw 1-2 0.6
+
+chikyuoebiC:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:chikyuoebi_cooked 1-2 0.6
+
+chikyuoebiUC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:chikyuoebi_raw 1-2 0.6
+
+
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+
+
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+
+
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+
+
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
+
+
+C:
+  Conditions:
+  - isburning true
+  Drops:
+    - geary mineinabyss:_cooked 1-2 0.6
+
+UC:
+  Conditions:
+  - isburning false
+  Drops:
+    - geary mineinabyss:_raw 1-2 0.6
