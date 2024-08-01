@@ -123,10 +123,10 @@ health:
       name: health_bar
       x: -33
       y: 16
-  animations:
-    duration: 60
-    x-equation: 0
-    y-equation: 3cos(t/30 * pi)
+  #animations:
+  #  duration: 60
+  #  x-equation: 0
+  #  y-equation: 3cos(t/30 * pi)
 
 poison:
   conditions:
@@ -239,10 +239,10 @@ food:
       name: food_bar
       x: 51
       y: 16
-  animations:
-    duration: 60
-    x-equation: 0
-    y-equation: 3cos(t/30 * pi)
+  #animations:
+  #  duration: 60
+  #  x-equation: 0
+  #  y-equation: 3cos(t/30 * pi)
 
 hunger:
   conditions:
