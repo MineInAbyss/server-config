@@ -8,6 +8,16 @@ benigumaspawn:
     - gcd{ticks=20}
     - summon{type=beniguma;amount=0-2;radius=3} @self
 
+mantoyerspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=mantoyer;amount=0-2;radius=3} @self
+
 okibospawn:
   Cooldown: 9999999
   Conditions:
