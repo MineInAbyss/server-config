@@ -31,13 +31,9 @@ woodcrier:
   DamageModifiers:
     - PROJECTILE 0.5
   Drops:
-    - exp 70-115
-    - geary mineinabyss:horncrier_easy_scales 1-3 0.7
-    - geary mineinabyss:horncrier_easy_gunk 2 0.5
-    - DIAMOND 1 0.05
-    - GOLD_INGOT 1 0.07
-    - EMERALD 1 0.05
-
+    - exp 10-30
+    - geary mineinabyss:horncrier_horn 1-2 0.6
+    - WHITE_WOOL 1-3 0.6
   Skills:
   # - CancelEvent{sync=true} ~onAttack
     - DefaultState{m=horncrier_easy;t=walk;s=in_combat} @self ~onspawn
@@ -74,7 +70,7 @@ woodcrier:
 horncrier:
   Type: ZOMBIE
   Display: "<#9A1CAD>Horncrier"
-  Health: 60
+  Health: 65
   Damage: 0
   AIGoalSelectors:
     - clear
@@ -93,7 +89,7 @@ horncrier:
     MaxCombatDistance: 128
     LockPitch: true
     Interactable: false
-    MovementSpeed: 0.40
+    MovementSpeed: 0.45
     Silent: true
     PreventSunburn: true
   Model:
@@ -104,13 +100,9 @@ horncrier:
   DamageModifiers:
     - PROJECTILE 0.5
   Drops:
-    - exp 70-115
-    - geary mineinabyss:horncrier_hard_scales 1-3 0.7
-    - geary mineinabyss:horncrier_hard_gunk 2 0.5
-    - DIAMOND 1 0.05
-    - GOLD_INGOT 1 0.07
-    - EMERALD 1 0.05
-
+    - exp 30-60
+    - geary mineinabyss:horncrier_horn 1-2 0.6
+    - WHITE_WOOL 1-3 0.6
   Skills:
   # - CancelEvent{sync=true} ~onAttack
     - DefaultState{m=horncrier_hard;t=walk;s=in_combat} @self ~onspawn

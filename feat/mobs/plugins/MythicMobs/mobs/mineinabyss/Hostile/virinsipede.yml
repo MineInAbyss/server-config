@@ -33,7 +33,7 @@ virinsipede:
   Drops:
     - exp 15-25
     - geary mineinabyss:virinsipede_segments 3-8 1
-   # - geary mineinabyss:virinsipede 1 0.3
+    - geary mineinabyss:virinsipede_antlers 1 0.3
   Skills:
     - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
