@@ -1,0 +1,18 @@
+namespaces: [geary]
+set.recipes:
+  result:
+    type: minecraft:magenta_terracotta
+    amount: 8
+  discoverRecipes: true
+  group: "mineinabyss:terracotta_dye"
+  recipes:
+    - !<shaped>
+      items:
+        T:
+          tag: terracotta
+        D:
+          type: minecraft:magenta_dye
+      configuration: |-
+        |TTT|
+        |TDT|
+        |TTT|
