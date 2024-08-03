@@ -11,6 +11,7 @@ observe:
     - become: parent
     - ensure:
         cooldownsComplete: [ flamethrower ]
+    - ensure:
         hasConsumable:
           type: mineinabyss:flamethrower_fuel
       onFail:

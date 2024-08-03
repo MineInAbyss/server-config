@@ -1,51 +1,25 @@
-namespaces: [geary, mineinabyss]
+namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    type: KNOWLEDGE_BOOK
+    type: minecraft:paper
     itemName: <dark_gray>Tomorrow Signal
     customModelData: 12
+disableItemInteractions: { }
 observe:
   itemLeftClick:
     - become: parent
     - ensure:
-        cooldownsComplete: [lightning_strike]
+        cooldownsComplete: [ lightning_strike ]
     - startCooldown:
         id: lightning_strike
         length: 2s
         display: <dark_gray>Tomorrow Signal
-    - get.targetBlock: { maxDistance: 15 }
+    - eval: "entity.getTargetBlock { maxDistance: 15 }"
       register: targetBlock
     - smite:
         at: "{{ targetBlock }}"
     - particle:
-        type: CLOUD
+        particle: CLOUD
         count: 10
         speed: 0.2
         at: "{{ targetBlock }}"
-#events:
-#  leftClick:
-#    - !<cooldown>
-#      name: Lightning Strike
-#      length: 2s
-#      run:
-#        - !<on.parent>
-#          smite:
-#            at: !<player.target_block>
-#              maxDist: 15
-#              allowAir: false
-#          particle:
-#            type: CLOUD
-#            count: 10
-#            speed: 0.2
-#            at: !<player.target_block>
-#              maxDist: 15
-#              allowAir: false
-#  rightClick:
-#    - !<cooldown>
-#      name: Lightning Strike
-#      length: 2s
-#      run:
-#        - !<on.parent>
-#          toggle_storm:
-#            at: !<player.location>
-disableItemInteractions: {}

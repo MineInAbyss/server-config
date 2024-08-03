@@ -2,7 +2,7 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <dark_gray>Grim Ripper
-    type: KNOWLEDGE_BOOK
+    type: minecraft:paper
     customModelData: 6
 disableItemInteractions: {}
 #events:

@@ -4,6 +4,7 @@ set.item:
     type: GLASS
     itemName: Fear Flight
     # customModelData: 102
+disableItemInteractions: { }
 passive:
   - match: [ inInventory ]
     every: 1s
@@ -12,10 +13,8 @@ passive:
       - ensure:
           mythicConditions:
             - health{h=<5}
-      - get.location: {}
-        register: location
       - particle:
-          at: "{{ location }}"
+          at: "{{ entity.getLocation }}"
           particle: CLOUD
           offsetY: 1
           count: 3

@@ -1,7 +1,7 @@
 namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    type: KNOWLEDGE_BOOK
+    type: minecraft:paper
     itemName: <dark_aqua>Zephyr Disk
     customModelData: 5
 disableItemInteractions: { }
@@ -11,12 +11,10 @@ observe:
     - become: parent
     - ensure:
         cooldownsComplete: [ zephyr_disk ]
-    - get.location: {}
+    - eval: entity.getLocation
       register: center
-    - get.nearbyEntities: { radius: 10 }
-      register: nearbyEntities
-    - run:
-        - become: "{{ item }}"
+    - actionGroup:
+        - become: it
         - playSound:
             sound: minecraft:entity.generic.extinguish_fire
         - knockback:
@@ -24,7 +22,7 @@ observe:
             power: 1
             yAngle: 0.5
         - particle:
-            at: $targetLoc
+            at: "{{ entity.getLocation }}"
             particle: CLOUD
             count: 3
-      loop: nearbyEntities
+      loop: "entity.getNearbyEntities { radius: 10 }"

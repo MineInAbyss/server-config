@@ -1,7 +1,7 @@
 namespaces: [geary, mineinabyss]
 set.item:
   item:
-    type: KNOWLEDGE_BOOK
+    type: minecraft:paper
     customModelData: 3
 #events:
 #  leftClick:

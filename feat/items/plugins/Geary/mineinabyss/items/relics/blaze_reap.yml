@@ -22,9 +22,7 @@ observe:
         id: blaze_reap
         length: 2s
         display: <#617B94>Blaze Reap
-    - get.targetBlock: { maxDistance: 15 }
-      register: targetBlock
     - explode:
         breakBlocks: false
         power: 2
-        at: "{{ targetBlock }}"
+        at: "{{ entity.getTargetBlock { maxDistance: 10 } }}"

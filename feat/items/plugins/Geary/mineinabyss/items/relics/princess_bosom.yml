@@ -2,7 +2,7 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <#C13523><b>Princess Bosom
-    type: KNOWLEDGE_BOOK
+    type: minecraft:paper
     customModelData: 1
     lore:
       - <#D2D489>It is an egg-shaped Relic with
@@ -12,18 +12,21 @@ set.item:
       - <#EDEEB9><i>Can be used to give you
       - <#EDEEB9><i>that extra energy boost.
 disableItemInteractions: {}
-#events:
-#  leftClick:
-#    - !<cooldown>
-#      name: Princess Bosom
-#      length: 10s
-#      run:
-#        - !<on.parent>
-#          apply_potion_effects:
-#            effects:
-#            - type: SPEED
-#              duration: 5s
-#              amplifier: 2
-#            - type: JUMP
-#              duration: 5s
-#              amplifier: 2
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        cooldownsComplete: [ princess_bosom ]
+    - startCooldown:
+        id: princess_bosom
+        length: 10s
+        display: <#C13523><b>Princess Bosom
+    - applyPotionEffects:
+        - type: minecraft:speed
+          duration: 3s
+          amplifier: 2
+          hasParticles: false
+        - type: minecraft:jump_boost
+          duration: 5s
+          amplifier: 2
+          hasParticles: false
