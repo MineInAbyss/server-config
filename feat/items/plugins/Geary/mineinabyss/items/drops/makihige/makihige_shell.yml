@@ -12,3 +12,7 @@ set.item:
       - <#5221A6><i>It used to be the home to a
       - <#5221A6><i>Makihige. Not anymore...
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:obsidian
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/makihige_shell

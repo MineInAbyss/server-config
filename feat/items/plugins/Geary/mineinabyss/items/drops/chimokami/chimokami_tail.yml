@@ -10,3 +10,7 @@ set.item:
       - <yellow>make their dens in the darker areas of
       - <yellow>the <green>Forest of Temptation<yellow>.
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:red_wool
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/chimokami_tail

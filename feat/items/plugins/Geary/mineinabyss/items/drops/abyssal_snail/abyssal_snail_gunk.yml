@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Sea of Corpses</green>.
       - <#A68348><i>Many delvers feel strangely compelled
       - <#A68348><i>to lick slime such as this. Well, <b>DON'T</b>!
+resourcepack:
+  type: minecraft:slime_ball
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/abyssal_snail_gunk

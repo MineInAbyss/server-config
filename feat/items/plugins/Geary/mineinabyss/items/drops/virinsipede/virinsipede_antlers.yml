@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Great Fault.
       - <#FFC847><i>Blazing hot, just like
       - <#FFC847><i>the Virinsipede's rage.
+resourcepack:
+  type: minecraft:blaze_rod
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/virinsipede_antlers

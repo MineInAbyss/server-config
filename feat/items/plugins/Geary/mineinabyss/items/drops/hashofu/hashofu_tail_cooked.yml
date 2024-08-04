@@ -24,3 +24,7 @@ set.recipes:
       input: mineinabyss:hashofu_tail_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 407
+  textures: mineinabyss:item/creature_drops/hashofu_tail_cooked

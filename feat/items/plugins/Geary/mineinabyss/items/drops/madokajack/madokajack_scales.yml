@@ -10,3 +10,7 @@ set.item:
       - <yellow>appear to have much of a purpose.
       - <#369AFF><i>Though hard, these scales are
       - <#369AFF><i>slimy and smell of feces?!
+resourcepack:
+  type: minecraft:prismarine_shard
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/madokajack_scales

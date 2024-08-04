@@ -8,3 +8,7 @@ set.item:
       - <light_purple>Neritantans love eating these. Fittingly,
       - <dark_purple>Amakagame <light_purple>smell just like them to lure
       - <light_purple>in their prey.
+resourcepack:
+  type: minecraft:chorus_fruit
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/baracocha_fruit

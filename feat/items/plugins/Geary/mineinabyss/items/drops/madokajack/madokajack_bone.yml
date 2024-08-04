@@ -8,3 +8,7 @@ set.item:
       - <yellow>Dropped by <#2252C2>Madokajacks
       - <yellow>in the <green>Great Fault<yellow>.
       - <#369AFF><i>Even their bones smell rancid.
+resourcepack:
+  type: minecraft:bone
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/madokajack_bone

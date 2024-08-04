@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Great Fault<yellow>.
       - <#8F425B><i>I've heard their body makes
       - <#8F425B><i>for a great fertiliser.
+resourcepack:
+  type: minecraft:bone_meal
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/rinsipede_segments

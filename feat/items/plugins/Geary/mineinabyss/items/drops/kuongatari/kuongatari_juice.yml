@@ -8,3 +8,7 @@ set.item:
       - <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>Some call these bugs Amarathine-Deceptors
+resourcepack:
+  type: minecraft:lime_dye
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/kuongatari_juice

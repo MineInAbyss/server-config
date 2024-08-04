@@ -12,3 +12,7 @@ set.item:
       - <yellow>when combined with a little steel.
       - <#A9CCCA><i>It seems sharp enough
       - <#A9CCCA><i>to put an eye out.
+resourcepack:
+  type: minecraft:flint
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/hammerbeak_beak

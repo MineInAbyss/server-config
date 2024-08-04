@@ -10,3 +10,7 @@ set.item:
       - <yellow>Might be useful in brewing potions.
       - <#369AFF><i>Why does it smell of shit?
       - <#369AFF><i>Who nose...
+resourcepack:
+  type: minecraft:spider_eye
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/madokajack_eye

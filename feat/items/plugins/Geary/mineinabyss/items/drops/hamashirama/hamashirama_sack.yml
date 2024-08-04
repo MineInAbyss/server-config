@@ -9,3 +9,7 @@ set.item:
       - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>Seems like i can make things glow with this!
+resourcepack:
+  type: minecraft:glow_ink_sac
+  customModelData: 0
+  textures: mineinabyss:item/creature_drops/hamashirama_sack

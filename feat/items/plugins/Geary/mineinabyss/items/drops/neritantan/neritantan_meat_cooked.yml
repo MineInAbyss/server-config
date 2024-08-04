@@ -23,3 +23,7 @@ set.recipes:
       input: mineinabyss:neritantan_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 409
+  textures: mineinabyss:item/creature_drops/neritantan_meat_cooked

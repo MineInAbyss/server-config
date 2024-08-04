@@ -10,3 +10,7 @@ set.item:
       - <#595959><i>Seems useless by itself.
       - <#595959><i>Perhaps I should look for a vendor?
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:polished_blackstone_button
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/hashofu_body

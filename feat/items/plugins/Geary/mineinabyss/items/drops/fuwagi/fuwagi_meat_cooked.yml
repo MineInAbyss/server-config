@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:fuwagi_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 415
+  textures: mineinabyss:item/creature_drops/fuwagi_meat_cooked

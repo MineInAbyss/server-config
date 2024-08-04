@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: APPLE
+    type: PAPER
     itemName: <dark_green>Tesuchi Tail
     customModelData: 320
     lore:
@@ -9,3 +9,7 @@ set.item:
     food:
       saturation: 1.5
       nutrition: 3
+resourcepack:
+  type: minecraft:paper
+  customModelData: 320
+  textures: mineinabyss:item/creature_drops/tesuchi_tail

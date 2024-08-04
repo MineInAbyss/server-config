@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:ashimite_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 411
+  textures: mineinabyss:item/creature_drops/ashimite_meat_cooked

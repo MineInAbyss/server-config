@@ -9,3 +9,7 @@ set.item:
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Perhaps I can take flight with these?
       - <#FFE817><i>(No this is not related to membrane or elytras)
+resourcepack:
+  type: minecraft:leather
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/dosetori_wing

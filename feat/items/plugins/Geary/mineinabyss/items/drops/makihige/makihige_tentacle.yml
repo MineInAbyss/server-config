@@ -10,3 +10,7 @@ set.item:
       - <yellow>This friendly creature can be found in the
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#5221A6><i>Not sure what this would be useful for...
+resourcepack:
+  type: minecraft:leather
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/makihige_tentacle

@@ -9,3 +9,7 @@ set.item:
       - <yellow>the <green>Edge of the Abyss <yellow>and
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <#A9CCCA><i>It looks very combustible.
+resourcepack:
+  type: minecraft:feather
+  customModelData: 3
+  textures: mineinabyss:item/creature_drops/hammerbeak_feather

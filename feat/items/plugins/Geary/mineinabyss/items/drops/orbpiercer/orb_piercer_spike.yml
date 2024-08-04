@@ -13,3 +13,7 @@ set.item:
       - <yellow>Avoid them at all cost!
       - <#D9D9D9><i>Their spines contain a very
       - <#D9D9D9><i>potent venom, so take caution!
+resourcepack:
+  type: minecraft:quartz
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/orb_piercer_spike

@@ -8,3 +8,7 @@ set.item:
       - <yellow>Can be obtained by hunting down
       - <yellow>an <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>,
       - <yellow>and eating its meat.
+resourcepack:
+  type: minecraft:bone
+  customModelData: 0
+  textures: mineinabyss:item/creature_drops/ashimite_meat_bone

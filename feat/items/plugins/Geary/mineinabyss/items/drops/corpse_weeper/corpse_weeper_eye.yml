@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <red><i>It feels like it's staring into your soul...
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:ender_eye
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/corpse_weeper_eye

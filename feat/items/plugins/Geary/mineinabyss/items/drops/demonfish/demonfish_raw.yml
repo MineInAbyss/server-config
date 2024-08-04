@@ -12,3 +12,7 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+resourcepack:
+  type: minecraft:paper
+  customModelData: 316
+  textures: mineinabyss:item/creature_drops/demonfish_raw

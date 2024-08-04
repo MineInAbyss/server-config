@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: APPLE
+    type: minecraft:paper
     itemName: "<#2597D9>Raw Ashimite Meat"
     customModelData: 311
     lore:
@@ -26,3 +26,7 @@ set.item:
             hasParticles: true
             hasIcon: true
 
+resourcepack:
+  type: minecraft:paper
+  customModelData: 311
+  textures: mineinabyss:item/creature_drops/ashimite_meat_raw

@@ -12,3 +12,7 @@ set.item:
     food:
       saturation: 1.8
       nutrition: 3
+resourcepack:
+  type: minecraft:paper
+  customModelData: 313
+  textures: mineinabyss:item/creature_drops/okibo_meat_raw

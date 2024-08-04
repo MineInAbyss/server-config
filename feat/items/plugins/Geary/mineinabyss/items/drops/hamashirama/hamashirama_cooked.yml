@@ -23,3 +23,7 @@ set.recipes:
       input: mineinabyss:hamashirama_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 417
+  textures: mineinabyss:item/creature_drops/hamashirama_cooked

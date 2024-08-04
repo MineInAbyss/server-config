@@ -13,3 +13,7 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+resourcepack:
+  type: minecraft:paper
+  customModelData: 319
+  textures: mineinabyss:item/creature_drops/squidfly_brain_raw

@@ -13,3 +13,7 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+resourcepack:
+  type: minecraft:paper
+  customModelData: 302
+  textures: mineinabyss:item/creature_drops/uibuta_meat_raw

@@ -7,3 +7,7 @@ set.item:
     lore:
       - <#BDBDBD><i>Looks like it will keep me warm
       - <#BDBDBD><i>through the entire winter if needed.
+resourcepack:
+  type: minecraft:leather
+  customModelData: 4
+  textures: mineinabyss:item/creature_drops/okibo_fur

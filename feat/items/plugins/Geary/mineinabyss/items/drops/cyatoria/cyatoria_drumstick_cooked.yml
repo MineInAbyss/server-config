@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:cyatoria_drumstick_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 403
+  textures: mineinabyss:item/creature_drops/cyatoria_drumstick_cooked

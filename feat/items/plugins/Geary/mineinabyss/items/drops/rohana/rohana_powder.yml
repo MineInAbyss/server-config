@@ -10,3 +10,7 @@ set.item:
       - <green>Temptation <yellow>or the <green>Goblets of Giants<yellow>.
       - <#FF1FB4><i>They glow faintly and can be
       - <#FF1FB4><i>an impromptu light source.
+resourcepack:
+  type: minecraft:glowstone_dust
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/rohana_powder

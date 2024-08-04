@@ -10,3 +10,7 @@ set.item:
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#1B5BAD><i>Seems like a great source for food!
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:clay_ball
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/edusan_scale

@@ -23,3 +23,7 @@ set.recipes:
       input: mineinabyss:demonfish_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 416
+  textures: mineinabyss:item/creature_drops/demonfish_cooked

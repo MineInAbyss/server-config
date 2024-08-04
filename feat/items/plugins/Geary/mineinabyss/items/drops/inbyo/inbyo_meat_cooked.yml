@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:inbyo_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 401
+  textures: mineinabyss:item/creature_drops/inbyo_meat_cooked

@@ -1,7 +1,7 @@
 namespaces: [geary]
 set.item:
   item:
-    type: NAUTILUS_SHELL
+    type: minecraft:nautilus_shell
     itemName: <#785F34>Abyssal Snail Shell
     customModelData: 1
     lore:
@@ -9,3 +9,7 @@ set.item:
       - <yellow>the <green>Sea of Corpses</green>.
       - <#A68348><i>If you put it to your ear, you might hear
       - <#A68348><i>the wailing of the souls lost to the sea.
+resourcepack:
+  type: minecraft:nautilus_shell
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/abyssal_snail_gunk

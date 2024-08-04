@@ -11,3 +11,7 @@ set.item:
       - <#167D2A><i>A very thin, yet surprisingly
       - <#167D2A><i>tensile strand of silk.
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:string
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/kuongatari_silk

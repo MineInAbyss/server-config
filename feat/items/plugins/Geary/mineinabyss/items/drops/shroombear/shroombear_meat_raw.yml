@@ -14,3 +14,7 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+resourcepack:
+  type: minecraft:paper
+  customModelData: 310
+  textures: mineinabyss:item/creature_drops/shroombear_meat_raw

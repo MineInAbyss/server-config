@@ -10,3 +10,7 @@ set.item:
       - <reset><yellow>and the <green>Great Fault<yellow>.
       - <reset><light_purple><i>Can be used to
       - <reset><light_purple><i>make certain blocks.
+resourcepack:
+  type: minecraft:popped_chorus_fruit
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/splitjaw_scales

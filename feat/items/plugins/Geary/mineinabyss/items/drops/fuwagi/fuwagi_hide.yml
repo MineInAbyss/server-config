@@ -10,3 +10,7 @@ set.item:
       - <green>Abyss <yellow>and the <green>Forest of Temptation<yellow>.
       - <#FF3A24><i>Soft and cozy. You can make some
       - <#FF3A24><i>quality sweaters out of this.
+resourcepack:
+  type: minecraft:rabbit_hide
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/fuwagi_hide

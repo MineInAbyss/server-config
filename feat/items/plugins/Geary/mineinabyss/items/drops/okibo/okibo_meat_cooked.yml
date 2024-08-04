@@ -26,3 +26,7 @@ set.recipes:
       input: mineinabyss:okibo_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 413
+  textures: mineinabyss:item/creature_drops/okibo_meat_cooked

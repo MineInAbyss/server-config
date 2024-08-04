@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: BLACK_WOOL
+    type: minecraft:black_wool
     itemName: "<red>Beniguma Fur"
     customModelData: 0
     lore:
@@ -10,3 +10,7 @@ set.item:
       - <yellow>creatures are forragers in the
       - <yellow>the <red>Edge of The Abyss<yellow>.
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:black_wool
+  customModelData: 0
+  textures: mineinabyss:item/creature_drops/beniguma_fur

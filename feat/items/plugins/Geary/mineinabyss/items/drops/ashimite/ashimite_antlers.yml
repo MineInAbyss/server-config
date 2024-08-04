@@ -9,3 +9,7 @@ set.item:
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
       - <#824E21><i>They use these to assert dominance.
       - <#824E21><i>Yet they run off when you get close...
+resourcepack:
+  type: minecraft:dead_horn_coral
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/ashimite_antlers

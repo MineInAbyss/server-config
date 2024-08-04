@@ -23,3 +23,7 @@ set.recipes:
       input: mineinabyss:uibuta_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 402
+  textures: mineinabyss:item/creature_drops/uibuta_meat_cooked

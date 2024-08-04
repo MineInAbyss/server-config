@@ -10,3 +10,7 @@ set.item:
       - <#ED4C4C><i>Somewhat fine silk with a
       - <#ED4C4C><i>large amount of tensile strength.
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:string
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/silkfang_silk

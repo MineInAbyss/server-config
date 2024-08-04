@@ -14,3 +14,7 @@ set.item:
     food:
       saturation: 1.8
       nutrition: 3
+resourcepack:
+  type: minecraft:paper
+  customModelData: 315
+  textures: mineinabyss:item/creature_drops/fuwagi_meat_raw

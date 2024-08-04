@@ -9,3 +9,7 @@ set.item:
       - <yellow>one-eyed <#FF9721>Makihige<yellow>.
       - <#5221A6><i>With this you might be able to
       - <#5221A6><i>do something. Probably not though
+resourcepack:
+  type: minecraft:ink_sac
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/makihige_

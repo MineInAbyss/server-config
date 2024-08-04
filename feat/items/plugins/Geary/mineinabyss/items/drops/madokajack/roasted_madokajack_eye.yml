@@ -10,3 +10,7 @@ set.item:
       - <yellow>Might be useful in brewing potions.
       - <#369AFF><i>Why did fermenting it remove the smell?
       - <#369AFF><i>No one nose...
+resourcepack:
+  type: minecraft:fermented_spider_eye
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/roasted_madokajack_eye

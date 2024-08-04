@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Great Fault<yellow>.
       - <#B8FFBA><i>Even after death the shell
       - <#B8FFBA><i>still keeps it bright glow.
+resourcepack:
+  type: minecraft:prismarine_crystals
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/kakatsumuri_shell

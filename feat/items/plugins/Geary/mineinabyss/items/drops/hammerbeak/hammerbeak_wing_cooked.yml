@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:hammerbeak_wing_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 406
+  textures: mineinabyss:item/creature_drops/hammerbeak_wing_cooked

@@ -25,3 +25,7 @@ set.recipes:
       input: mineinabyss:shroombear_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 410
+  textures: mineinabyss:item/creature_drops/shroombear_meat_cooked

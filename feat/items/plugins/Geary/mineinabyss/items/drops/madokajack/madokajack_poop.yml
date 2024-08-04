@@ -11,3 +11,7 @@ set.item:
       - <#369AFF><i>Seems the Madokajack shat itself
       - <#369AFF><i>before it died. Strangely its
       - <#369AFF><i>droppings do not smell like feces?!
+resourcepack:
+  type: minecraft:prismarine_crystals
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/madokajack_poop

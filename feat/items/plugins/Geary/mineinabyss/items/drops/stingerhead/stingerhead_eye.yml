@@ -9,3 +9,7 @@ set.item:
       - <yellow>a <#9C0F2C>Stingerhead <yellow>found in
       - <yellow>nests in the <green>Sea of Corpses<yellow>,
       - <yellow>and plucking its eye out.
+resourcepack:
+  type: minecraft:fermented_spider_eye
+  customModelData: 2
+  textures: mineinabyss:item/creature_drops/stingerhead_eye

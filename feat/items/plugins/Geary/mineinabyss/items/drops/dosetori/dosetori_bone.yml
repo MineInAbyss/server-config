@@ -8,3 +8,7 @@ set.item:
       - <yellow>Dropped by the <#FFF821>Dosetori <yellow>in the
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Seems to be kind of unsturdy...
+resourcepack:
+  type: minecraft:bone
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/dosetori_bone

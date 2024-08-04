@@ -22,3 +22,7 @@ set.recipes:
       input: mineinabyss:dosetori_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 404
+  textures: mineinabyss:item/creature_drops/dosetori_meat_cooked

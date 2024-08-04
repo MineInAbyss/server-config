@@ -8,3 +8,7 @@ set.item:
       - <#ED4C4C><i>Rumor has it that a
       - <#ED4C4C><i>larger arachnid can stare back
       - <#ED4C4C><i>at you through this...
+resourcepack:
+  type: minecraft:spider_eye
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/silkfang_eye

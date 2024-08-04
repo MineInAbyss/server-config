@@ -23,3 +23,7 @@ set.recipes:
       input: mineinabyss:squidfly_brain_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  type: minecraft:paper
+  customModelData: 419
+  textures: mineinabyss:item/creature_drops/squidfly_brain_cooked

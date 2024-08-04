@@ -11,3 +11,7 @@ set.item:
       - <yellow>them back when host is near death.
       - <#AB3AA0><i>These are damaged from being killed
       - <#AB3AA0><i>seems like a source for antidotes and recovery...
+resourcepack:
+  type: minecraft:warped_fungus
+  customModelData: 0
+  textures: mineinabyss:item/creature_drops/parasitic_watershrooms

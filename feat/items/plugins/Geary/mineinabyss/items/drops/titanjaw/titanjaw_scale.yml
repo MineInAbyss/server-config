@@ -10,3 +10,7 @@ set.item:
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#0C7787><i>Might be useful to craft gear
       - <#0C7787><i>with if I collect enough.
+resourcepack:
+  type: minecraft:turtle_scute
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/titanjaw_scale

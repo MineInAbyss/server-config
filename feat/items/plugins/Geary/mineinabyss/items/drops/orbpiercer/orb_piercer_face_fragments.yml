@@ -12,3 +12,7 @@ set.item:
       - <#D9D9D9><i>be able to see it as well?
       - <#D9D9D9><i>Probably just wishful thinking...
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:nether_wart
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/orb_piercer_face_fragments

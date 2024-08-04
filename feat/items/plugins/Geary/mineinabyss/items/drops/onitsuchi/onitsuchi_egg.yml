@@ -11,3 +11,7 @@ set.item:
       - <yellow>or mischievious acts of tomfoolery.
       - <#A9CCCA><i>Mother Onitsuchi does
       - <#A9CCCA><i>not look to happy...
+resourcepack:
+  type: minecraft:egg
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/onitsuchi_egg

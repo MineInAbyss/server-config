@@ -11,3 +11,7 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+resourcepack:
+  type: minecraft:paper
+  customModelData: 305
+  textures: mineinabyss:item/creature_drops/billabonk_leg_raw

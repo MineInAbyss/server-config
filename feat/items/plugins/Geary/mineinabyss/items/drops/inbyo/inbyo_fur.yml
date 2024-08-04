@@ -9,3 +9,7 @@ set.item:
       - <yellow>in the <green>Inverted Forest<yellow>.
       - <#B5B5B5><i>This stench is nauseating...
 disableItemInteractions: {}
+resourcepack:
+  type: minecraft:black_wool
+  customModelData: 1
+  textures: mineinabyss:item/creature_drops/inbyo_fur
