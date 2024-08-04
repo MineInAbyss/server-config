@@ -10,6 +10,7 @@ set.item:
       - <#595959><i>There is a fire in his eyes.
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:fire_charge
-  customModelData: 1
+  baseMaterial: minecraft:fire_charge
   textures: mineinabyss:item/creature_drops/hashofu_eye
+  itemPredicates:
+    customModelData: 1

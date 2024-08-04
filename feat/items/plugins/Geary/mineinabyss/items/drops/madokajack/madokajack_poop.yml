@@ -12,6 +12,7 @@ set.item:
       - <#369AFF><i>before it died. Strangely its
       - <#369AFF><i>droppings do not smell like feces?!
 resourcepack:
-  type: minecraft:prismarine_crystals
-  customModelData: 1
+  baseMaterial: minecraft:prismarine_crystals
   textures: mineinabyss:item/creature_drops/madokajack_poop
+  itemPredicates:
+    customModelData: 1

@@ -25,6 +25,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 408
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/onitsuchi_wing_cooked
+  itemPredicates:
+    customModelData: 408

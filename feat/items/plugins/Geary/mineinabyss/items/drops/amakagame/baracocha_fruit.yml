@@ -9,6 +9,7 @@ set.item:
       - <dark_purple>Amakagame <light_purple>smell just like them to lure
       - <light_purple>in their prey.
 resourcepack:
-  type: minecraft:chorus_fruit
-  customModelData: 1
+  baseMaterial: minecraft:chorus_fruit
   textures: mineinabyss:item/creature_drops/baracocha_fruit
+  itemPredicates:
+    customModelData: 1

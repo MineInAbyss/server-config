@@ -11,3 +11,8 @@ set.item:
     customModelData: 2
 disableItemInteractions: { }
 mittytoken: { }
+resourcepack:
+  baseMaterial: minecraft:emerald
+  textures: mineinabyss:item/mitty_token
+  itemPredicates:
+    customModelData: 2

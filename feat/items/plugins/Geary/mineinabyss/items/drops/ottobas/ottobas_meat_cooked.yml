@@ -24,6 +24,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 414
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/ottobas_meat_cooked
+  itemPredicates:
+    customModelData: 414

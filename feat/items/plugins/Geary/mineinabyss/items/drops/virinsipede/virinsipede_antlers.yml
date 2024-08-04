@@ -10,6 +10,7 @@ set.item:
       - <#FFC847><i>Blazing hot, just like
       - <#FFC847><i>the Virinsipede's rage.
 resourcepack:
-  type: minecraft:blaze_rod
-  customModelData: 2
+  baseMaterial: minecraft:blaze_rod
   textures: mineinabyss:item/creature_drops/virinsipede_antlers
+  itemPredicates:
+    customModelData: 2

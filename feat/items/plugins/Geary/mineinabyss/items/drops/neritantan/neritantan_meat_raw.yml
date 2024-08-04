@@ -13,6 +13,7 @@ set.item:
       saturation: 1.2
       nutrition: 2
 resourcepack:
-  type: minecraft:paper
-  customModelData: 309
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/neritantan_meat_raw
+  itemPredicates:
+    customModelData: 309

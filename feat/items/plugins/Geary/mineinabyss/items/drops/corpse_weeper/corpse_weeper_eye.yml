@@ -10,6 +10,7 @@ set.item:
       - <red><i>It feels like it's staring into your soul...
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:ender_eye
-  customModelData: 1
+  baseMaterial: minecraft:ender_eye
   textures: mineinabyss:item/creature_drops/corpse_weeper_eye
+  itemPredicates:
+    customModelData: 1

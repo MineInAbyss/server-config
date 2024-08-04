@@ -11,6 +11,7 @@ set.item:
       - <yellow>the <red>Edge of The Abyss<yellow>.
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:black_wool
-  customModelData: 0
+  baseMaterial: minecraft:black_wool
   textures: mineinabyss:item/creature_drops/beniguma_fur
+  itemPredicates:
+    customModelData: 0

@@ -11,6 +11,7 @@ set.item:
       - <#1B5BAD><i>Seems like a great source for food!
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:clay_ball
-  customModelData: 1
+  baseMaterial: minecraft:clay_ball
   textures: mineinabyss:item/creature_drops/edusan_scale
+  itemPredicates:
+    customModelData: 1

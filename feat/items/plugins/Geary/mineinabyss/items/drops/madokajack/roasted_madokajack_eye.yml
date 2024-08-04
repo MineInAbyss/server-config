@@ -11,6 +11,7 @@ set.item:
       - <#369AFF><i>Why did fermenting it remove the smell?
       - <#369AFF><i>No one nose...
 resourcepack:
-  type: minecraft:fermented_spider_eye
-  customModelData: 1
+  baseMaterial: minecraft:fermented_spider_eye
   textures: mineinabyss:item/creature_drops/roasted_madokajack_eye
+  itemPredicates:
+    customModelData: 1

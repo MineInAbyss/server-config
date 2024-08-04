@@ -10,6 +10,7 @@ set.item:
       - <yellow>nests in the <green>Sea of Corpses<yellow>,
       - <yellow>and plucking its eye out.
 resourcepack:
-  type: minecraft:fermented_spider_eye
-  customModelData: 2
+  baseMaterial: minecraft:fermented_spider_eye
   textures: mineinabyss:item/creature_drops/stingerhead_eye
+  itemPredicates:
+    customModelData: 2

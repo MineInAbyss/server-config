@@ -8,6 +8,7 @@ set.item:
       - <#BDBDBD><i>Looks like it will keep me warm
       - <#BDBDBD><i>through the entire winter if needed.
 resourcepack:
-  type: minecraft:leather
-  customModelData: 4
+  baseMaterial: minecraft:leather
   textures: mineinabyss:item/creature_drops/okibo_fur
+  itemPredicates:
+    customModelData: 4

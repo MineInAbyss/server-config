@@ -13,6 +13,7 @@ set.item:
       saturation: 0.4
       nutrition: 2
 resourcepack:
-  type: minecraft:paper
-  customModelData: 317
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/hamashirama_raw
+  itemPredicates:
+    customModelData: 317

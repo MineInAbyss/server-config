@@ -14,3 +14,8 @@ set.recipes:
         - mineinabyss:madokajack_scales
         - mineinabyss:kakatsumuri_glowing_tip
 disableItemInteractions: {}
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/relics/star_compass/star_compass_needle
+  itemPredicates:
+    customModelData: 124

@@ -12,6 +12,7 @@ set.item:
       saturation: 0.2
       nutrition: 1
 resourcepack:
-  type: minecraft:paper
-  customModelData: 301
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen_raw
+  itemPredicates:
+    customModelData: 301

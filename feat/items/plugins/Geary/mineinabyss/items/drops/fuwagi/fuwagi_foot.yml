@@ -12,6 +12,7 @@ set.item:
       - <#FF3A24><i>foot in your inventory, you will
       - <#FF3A24><i>have good luck.
 resourcepack:
-  type: minecraft:rabbit_foot
-  customModelData: 1
+  baseMaterial: minecraft:rabbit_foot
   textures: mineinabyss:item/creature_drops/fuwagi_foot
+  itemPredicates:
+    customModelData: 1

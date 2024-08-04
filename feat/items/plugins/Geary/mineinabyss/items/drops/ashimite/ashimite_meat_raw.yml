@@ -27,6 +27,7 @@ set.item:
             hasIcon: true
 
 resourcepack:
-  type: minecraft:paper
-  customModelData: 311
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/ashimite_meat_raw
+  itemPredicates:
+    customModelData: 311

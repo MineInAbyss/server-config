@@ -10,6 +10,7 @@ set.item:
       - <#A68348><i>Many delvers feel strangely compelled
       - <#A68348><i>to lick slime such as this. Well, <b>DON'T</b>!
 resourcepack:
-  type: minecraft:slime_ball
-  customModelData: 1
+  baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/abyssal_snail_gunk
+  itemPredicates:
+    customModelData: 1

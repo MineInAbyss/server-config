@@ -23,6 +23,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 412
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/corpse_weeper_meat_cooked
+  itemPredicates:
+    customModelData: 412

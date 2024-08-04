@@ -10,6 +10,7 @@ set.item:
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#0C7787><i>extremely tough scale from the titanjaw
 resourcepack:
-  type: minecraft:iron_ingot
-  customModelData: 0
+  baseMaterial: minecraft:iron_ingot
   textures: mineinabyss:item/creature_drops/titanjaw_jaw
+  itemPredicates:
+    customModelData: 0

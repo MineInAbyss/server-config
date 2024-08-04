@@ -13,6 +13,7 @@ set.item:
       - <#EB1742><i>Perhaps I can upgrade my
       - <#EB1742><i>armour with this?
 resourcepack:
-  type: minecraft:netherite_scrap
-  customModelData: 1
+  baseMaterial: minecraft:netherite_scrap
   textures: mineinabyss:item/creature_drops/stingerhead_scale
+  itemPredicates:
+    customModelData: 1

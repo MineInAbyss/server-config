@@ -9,6 +9,7 @@ set.item:
       - <gold>Sakuranbo <yellow>in the <green>Great Fault<yellow>.
       - <gold><i>Sniffing it is probably a bad idea...
 resourcepack:
-  type: minecraft:gunpowder
-  customModelData: 1
+  baseMaterial: minecraft:gunpowder
   textures: mineinabyss:item/creature_drops/sakuranbo_dust
+  itemPredicates:
+    customModelData: 1

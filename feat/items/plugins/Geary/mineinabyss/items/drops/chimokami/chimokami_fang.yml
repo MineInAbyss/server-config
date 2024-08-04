@@ -12,6 +12,7 @@ set.item:
       - <#A82A1C>proven to be a hoax, however, their
       - <#A82A1C>teeth are excellent firestarters.
 resourcepack:
-  type: minecraft:flint
-  customModelData: 2
+  baseMaterial: minecraft:flint
   textures: mineinabyss:item/creature_drops/chimokami_fang
+  itemPredicates:
+    customModelData: 2

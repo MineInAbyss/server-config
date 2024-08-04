@@ -11,6 +11,7 @@ set.item:
       - <#0C7787><i>Might be useful to craft gear
       - <#0C7787><i>with if I collect enough.
 resourcepack:
-  type: minecraft:turtle_scute
-  customModelData: 1
+  baseMaterial: minecraft:turtle_scute
   textures: mineinabyss:item/creature_drops/titanjaw_scale
+  itemPredicates:
+    customModelData: 1

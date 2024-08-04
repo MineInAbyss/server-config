@@ -11,6 +11,7 @@ set.item:
       - <#54FFA4><i>It resembles the feathers
       - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
 resourcepack:
-  type: minecraft:feather
-  customModelData: 2
+  baseMaterial: minecraft:feather
   textures: mineinabyss:item/creature_drops/cyatoria_feather
+  itemPredicates:
+    customModelData: 2

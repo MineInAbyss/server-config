@@ -24,3 +24,8 @@ set.recipes:
       input: mineinabyss:charcoal_sand_ore
       experience: 2f
       cookingTime: 50
+resourcepack:
+  baseMaterial: minecraft:iron_ingot
+  textures: mineinabyss:item/materials/charcoal_sand_ore
+  itemPredicates:
+    customModelData: 1

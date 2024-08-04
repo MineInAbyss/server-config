@@ -10,6 +10,7 @@ set.item:
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>Seems like i can make things glow with this!
 resourcepack:
-  type: minecraft:glow_ink_sac
-  customModelData: 0
+  baseMaterial: minecraft:glow_ink_sac
   textures: mineinabyss:item/creature_drops/hamashirama_sack
+  itemPredicates:
+    customModelData: 0

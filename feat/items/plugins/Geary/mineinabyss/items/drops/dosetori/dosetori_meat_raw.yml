@@ -12,6 +12,7 @@ set.item:
       saturation: 1.2
       nutrition: 2
 resourcepack:
-  type: minecraft:paper
-  customModelData: 304
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/dosetori_meat_raw
+  itemPredicates:
+    customModelData: 304

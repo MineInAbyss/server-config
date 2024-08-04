@@ -9,6 +9,7 @@ set.item:
       - <yellow>the <green>Forest of Temptation<yellow>.
       - <yellow>Seems to be poisonous, I best not eat it...
 resourcepack:
-  type: minecraft:pufferfish
-  customModelData: 1
+  baseMaterial: minecraft:pufferfish
   textures: mineinabyss:item/creature_drops/billabonk_leg_sac
+  itemPredicates:
+    customModelData: 1

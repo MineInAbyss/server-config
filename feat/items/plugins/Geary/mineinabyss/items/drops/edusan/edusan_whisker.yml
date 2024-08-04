@@ -11,6 +11,7 @@ set.item:
       - <#1B5BAD><i>Seems like a great source for food!
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:echo_shard
-  customModelData: 1
+  baseMaterial: minecraft:echo_shard
   textures: mineinabyss:item/creature_drops/edusan_whisker
+  itemPredicates:
+    customModelData: 1

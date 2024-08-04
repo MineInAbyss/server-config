@@ -12,6 +12,7 @@ set.item:
       - <#A9CCCA><i>Mother Onitsuchi does
       - <#A9CCCA><i>not look to happy...
 resourcepack:
-  type: minecraft:egg
-  customModelData: 1
+  baseMaterial: minecraft:egg
   textures: mineinabyss:item/creature_drops/onitsuchi_egg
+  itemPredicates:
+    customModelData: 1

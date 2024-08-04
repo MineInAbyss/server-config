@@ -10,6 +10,7 @@ set.item:
       - <#B8FFBA><i>The very tip of the shell, it seems
       - <#B8FFBA><i>to leak a glowing sticky substance.
 resourcepack:
-  type: minecraft:glow_ink_sac
-  customModelData: 1
+  baseMaterial: minecraft:glow_ink_sac
   textures: mineinabyss:item/creature_drops/kakatsumuri_glowing_tip
+  itemPredicates:
+    customModelData: 1

@@ -10,6 +10,7 @@ set.item:
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#0C7787><i>Why do I feel like I am haunted...
 resourcepack:
-  type: minecraft:ghast_tear
-  customModelData: 1
+  baseMaterial: minecraft:ghast_tear
   textures: mineinabyss:item/creature_drops/titanjaw_pearl
+  itemPredicates:
+    customModelData: 1

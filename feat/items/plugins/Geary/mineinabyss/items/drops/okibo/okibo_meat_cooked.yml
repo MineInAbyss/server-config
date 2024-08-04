@@ -27,6 +27,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 413
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/okibo_meat_cooked
+  itemPredicates:
+    customModelData: 413

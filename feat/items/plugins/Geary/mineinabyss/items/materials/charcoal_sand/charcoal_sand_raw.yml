@@ -4,3 +4,8 @@ set.item:
     itemName: <dark_aqua>Raw Charcoal Sand
     type: RAW_IRON
     customModelData: 1
+resourcepack:
+  baseMaterial: minecraft:raw_iron
+  textures: mineinabyss:item/materials/charcoal_sand_raw
+  itemPredicates:
+    customModelData: 1

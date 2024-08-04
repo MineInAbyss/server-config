@@ -11,6 +11,7 @@ set.item:
       - <yellow>and fall into the <green>Goblets of Giants<yellow>.
       - <#807E78><i>White Sac.
 resourcepack:
-  type: minecraft:ink_sac
-  customModelData: 1
+  baseMaterial: minecraft:ink_sac
   textures: mineinabyss:item/creature_drops/kazura_squid_ink_sac
+  itemPredicates:
+    customModelData: 1

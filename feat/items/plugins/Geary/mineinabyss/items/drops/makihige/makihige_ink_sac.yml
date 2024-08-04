@@ -10,6 +10,7 @@ set.item:
       - <#5221A6><i>With this you might be able to
       - <#5221A6><i>do something. Probably not though
 resourcepack:
-  type: minecraft:ink_sac
-  customModelData: 2
+  baseMaterial: minecraft:ink_sac
   textures: mineinabyss:item/creature_drops/makihige_
+  itemPredicates:
+    customModelData: 2

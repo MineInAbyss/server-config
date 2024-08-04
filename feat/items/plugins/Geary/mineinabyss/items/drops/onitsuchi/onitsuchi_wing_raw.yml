@@ -13,6 +13,7 @@ set.item:
       saturation: 1.2
       nutrition: 2
 resourcepack:
-  type: minecraft:paper
-  customModelData: 308
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/onitsuchi_wing_raw
+  itemPredicates:
+    customModelData: 308

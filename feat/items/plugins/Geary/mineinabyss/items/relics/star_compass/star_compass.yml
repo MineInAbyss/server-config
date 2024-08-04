@@ -18,3 +18,42 @@ disableItemInteractions: { }
 observe:
   itemRightClick:
     - toggleStarcompassHud: { }
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/relics/star_compass/star_compass
+  itemPredicates:
+    customModelData: 125
+    angleTextures:
+      mineinabyss:item/relics/star_compass/16: 0.000000
+      mineinabyss:item/relics/star_compass/17: 0.015625
+      mineinabyss:item/relics/star_compass/18: 0.046875
+      mineinabyss:item/relics/star_compass/19: 0.078125
+      mineinabyss:item/relics/star_compass/20: 0.109375
+      mineinabyss:item/relics/star_compass/21: 0.140625
+      mineinabyss:item/relics/star_compass/22: 0.171875
+      mineinabyss:item/relics/star_compass/23: 0.203125
+      mineinabyss:item/relics/star_compass/24: 0.234375
+      mineinabyss:item/relics/star_compass/25: 0.265625
+      mineinabyss:item/relics/star_compass/26: 0.296875
+      mineinabyss:item/relics/star_compass/27: 0.328125
+      mineinabyss:item/relics/star_compass/28: 0.359375
+      mineinabyss:item/relics/star_compass/29: 0.390625
+      mineinabyss:item/relics/star_compass/30: 0.421875
+      mineinabyss:item/relics/star_compass/31: 0.453125
+      mineinabyss:item/relics/star_compass/0: 0.484375
+      mineinabyss:item/relics/star_compass/1: 0.515625
+      mineinabyss:item/relics/star_compass/2: 0.546875
+      mineinabyss:item/relics/star_compass/3: 0.578125
+      mineinabyss:item/relics/star_compass/4: 0.609375
+      mineinabyss:item/relics/star_compass/5: 0.640625
+      mineinabyss:item/relics/star_compass/6: 0.671875
+      mineinabyss:item/relics/star_compass/7: 0.703125
+      mineinabyss:item/relics/star_compass/8: 0.734375
+      mineinabyss:item/relics/star_compass/9: 0.765625
+      mineinabyss:item/relics/star_compass/10: 0.796875
+      mineinabyss:item/relics/star_compass/11: 0.828125
+      mineinabyss:item/relics/star_compass/12: 0.859375
+      mineinabyss:item/relics/star_compass/13: 0.890625
+      mineinabyss:item/relics/star_compass/14: 0.921875
+      mineinabyss:item/relics/star_compass/15: 0.953125
+      #mineinabyss:item/relics/star_compass/16: 0.984375

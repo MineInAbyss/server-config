@@ -11,6 +11,7 @@ set.item:
       - <#369AFF><i>Though hard, these scales are
       - <#369AFF><i>slimy and smell of feces?!
 resourcepack:
-  type: minecraft:prismarine_shard
-  customModelData: 1
+  baseMaterial: minecraft:prismarine_shard
   textures: mineinabyss:item/creature_drops/madokajack_scales
+  itemPredicates:
+    customModelData: 1

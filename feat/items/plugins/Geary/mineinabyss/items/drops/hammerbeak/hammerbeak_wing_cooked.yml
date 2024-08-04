@@ -26,6 +26,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 406
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/hammerbeak_wing_cooked
+  itemPredicates:
+    customModelData: 406

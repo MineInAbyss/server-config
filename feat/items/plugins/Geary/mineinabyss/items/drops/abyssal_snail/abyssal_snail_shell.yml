@@ -10,6 +10,7 @@ set.item:
       - <#A68348><i>If you put it to your ear, you might hear
       - <#A68348><i>the wailing of the souls lost to the sea.
 resourcepack:
-  type: minecraft:nautilus_shell
-  customModelData: 1
+  baseMaterial: minecraft:nautilus_shell
   textures: mineinabyss:item/creature_drops/abyssal_snail_gunk
+  itemPredicates:
+    customModelData: 1

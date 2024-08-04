@@ -9,6 +9,7 @@ set.item:
       - <yellow>in the <green>Great Fault<yellow>.
       - <#369AFF><i>Even their bones smell rancid.
 resourcepack:
-  type: minecraft:bone
-  customModelData: 2
+  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/madokajack_bone
+  itemPredicates:
+    customModelData: 2

@@ -11,6 +11,7 @@ set.item:
       - <#FF1FB4><i>They glow faintly and can be
       - <#FF1FB4><i>an impromptu light source.
 resourcepack:
-  type: minecraft:glowstone_dust
-  customModelData: 1
+  baseMaterial: minecraft:glowstone_dust
   textures: mineinabyss:item/creature_drops/rohana_powder
+  itemPredicates:
+    customModelData: 1

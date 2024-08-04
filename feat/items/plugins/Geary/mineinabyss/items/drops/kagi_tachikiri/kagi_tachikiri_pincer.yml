@@ -9,6 +9,7 @@ set.item:
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#376B36><i>Extremely sharp, watch your fingers!
 resourcepack:
-  type: minecraft:flint
-  customModelData: 4
+  baseMaterial: minecraft:flint
   textures: mineinabyss:item/creature_drops/kagi_tachikiri_pincer
+  itemPredicates:
+    customModelData: 4

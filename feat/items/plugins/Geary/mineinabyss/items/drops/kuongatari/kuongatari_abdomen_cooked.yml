@@ -23,6 +23,7 @@ set.recipes:
       experience: 2f
       cookingTime: 50
 resourcepack:
-  type: minecraft:paper
-  customModelData: 421
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen_cooked
+  itemPredicates:
+    customModelData: 421

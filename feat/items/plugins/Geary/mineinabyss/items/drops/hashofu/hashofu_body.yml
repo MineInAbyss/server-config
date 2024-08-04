@@ -11,6 +11,7 @@ set.item:
       - <#595959><i>Perhaps I should look for a vendor?
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:polished_blackstone_button
-  customModelData: 1
+  baseMaterial: minecraft:polished_blackstone_button
   textures: mineinabyss:item/creature_drops/hashofu_body
+  itemPredicates:
+    customModelData: 1

@@ -8,6 +8,7 @@ set.item:
       - <yellow>Dropped from <#FFF34E>Corpse-Weepers
       - <yellow>in the <green>Forest of Temptation<yellow>.
 resourcepack:
-  type: minecraft:feather
-  customModelData: 1
+  baseMaterial: minecraft:feather
   textures: mineinabyss:item/creature_drops/corpse_weeper_feather
+  itemPredicates:
+    customModelData: 1

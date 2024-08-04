@@ -10,6 +10,7 @@ set.item:
       - <#B5B5B5><i>This stench is nauseating...
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:black_wool
-  customModelData: 1
+  baseMaterial: minecraft:black_wool
   textures: mineinabyss:item/creature_drops/inbyo_fur
+  itemPredicates:
+    customModelData: 1

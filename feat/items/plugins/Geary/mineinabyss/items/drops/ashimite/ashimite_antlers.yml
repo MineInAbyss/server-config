@@ -10,6 +10,7 @@ set.item:
       - <#824E21><i>They use these to assert dominance.
       - <#824E21><i>Yet they run off when you get close...
 resourcepack:
-  type: minecraft:dead_horn_coral
-  customModelData: 1
+  baseMaterial: minecraft:dead_horn_coral
   textures: mineinabyss:item/creature_drops/ashimite_antlers
+  itemPredicates:
+    customModelData: 1

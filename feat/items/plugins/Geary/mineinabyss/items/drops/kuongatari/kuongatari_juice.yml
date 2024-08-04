@@ -9,6 +9,7 @@ set.item:
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>Some call these bugs Amarathine-Deceptors
 resourcepack:
-  type: minecraft:lime_dye
-  customModelData: 1
+  baseMaterial: minecraft:lime_dye
   textures: mineinabyss:item/creature_drops/kuongatari_juice
+  itemPredicates:
+    customModelData: 1

@@ -14,6 +14,7 @@ set.item:
       saturation: 1.8
       nutrition: 3
 resourcepack:
-  type: minecraft:paper
-  customModelData: 314
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/ottobas_meat_raw
+  itemPredicates:
+    customModelData: 314

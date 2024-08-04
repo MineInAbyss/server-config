@@ -7,6 +7,7 @@ set.item:
     lore:
       - <#40FF19>Yucky.
 resourcepack:
-  type: minecraft:slime_ball
-  customModelData: 2
+  baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/splitjaw_gunk
+  itemPredicates:
+    customModelData: 2

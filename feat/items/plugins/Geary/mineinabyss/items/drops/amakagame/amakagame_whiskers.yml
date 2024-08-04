@@ -8,6 +8,7 @@ set.item:
       - <light_purple>An <dark_purple>Amakagame <light_purple>is almost all stomach,
       - <light_purple>so they have few salvageable body parts
 resourcepack:
-  type: minecraft:crimson_roots
-  customModelData: 1
+  baseMaterial: minecraft:crimson_roots
   textures: mineinabyss:item/creature_drops/amakagame_whiskers
+  itemPredicates:
+    customModelData: 1

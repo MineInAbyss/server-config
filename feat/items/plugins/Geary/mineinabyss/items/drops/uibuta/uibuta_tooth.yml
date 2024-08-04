@@ -10,6 +10,7 @@ set.item:
       - <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#C42F2F><i>It is fairly big, but suprisingly blunt...
 resourcepack:
-  type: minecraft:bone
-  customModelData: 3
+  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/uibuta_tooth
+  itemPredicates:
+    customModelData: 3

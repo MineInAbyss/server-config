@@ -9,6 +9,7 @@ set.item:
       - <yellow>an <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>,
       - <yellow>and eating its meat.
 resourcepack:
-  type: minecraft:bone
-  customModelData: 0
+  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/ashimite_meat_bone
+  itemPredicates:
+    customModelData: 0

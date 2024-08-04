@@ -12,6 +12,7 @@ set.item:
       saturation: 1.8
       nutrition: 3
 resourcepack:
-  type: minecraft:paper
-  customModelData: 301
+  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/inbyo_meat_raw
+  itemPredicates:
+    customModelData: 301

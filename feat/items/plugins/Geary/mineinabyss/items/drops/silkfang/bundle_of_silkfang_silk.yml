@@ -11,6 +11,7 @@ set.item:
       - <#ED4C4C><i>like this has a lot of potential
       - <#ED4C4C><i>for traps.
 resourcepack:
-  type: minecraft:cobweb
-  customModelData: 1
+  baseMaterial: minecraft:cobweb
   textures: mineinabyss:item/creature_drops/bundle_of_silkfang_silk
+  itemPredicates:
+    customModelData: 1

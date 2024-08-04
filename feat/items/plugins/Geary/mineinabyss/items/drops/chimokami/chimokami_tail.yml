@@ -11,6 +11,7 @@ set.item:
       - <yellow>the <green>Forest of Temptation<yellow>.
 disableItemInteractions: {}
 resourcepack:
-  type: minecraft:red_wool
-  customModelData: 1
+  baseMaterial: minecraft:red_wool
   textures: mineinabyss:item/creature_drops/chimokami_tail
+  itemPredicates:
+    customModelData: 1

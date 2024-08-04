@@ -11,6 +11,7 @@ set.item:
       - <#369AFF><i>Why does it smell of shit?
       - <#369AFF><i>Who nose...
 resourcepack:
-  type: minecraft:spider_eye
-  customModelData: 2
+  baseMaterial: minecraft:spider_eye
   textures: mineinabyss:item/creature_drops/madokajack_eye
+  itemPredicates:
+    customModelData: 2

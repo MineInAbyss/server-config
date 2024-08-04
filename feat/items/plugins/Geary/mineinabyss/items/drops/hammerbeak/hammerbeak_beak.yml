@@ -13,6 +13,7 @@ set.item:
       - <#A9CCCA><i>It seems sharp enough
       - <#A9CCCA><i>to put an eye out.
 resourcepack:
-  type: minecraft:flint
-  customModelData: 1
+  baseMaterial: minecraft:flint
   textures: mineinabyss:item/creature_drops/hammerbeak_beak
+  itemPredicates:
+    customModelData: 1
