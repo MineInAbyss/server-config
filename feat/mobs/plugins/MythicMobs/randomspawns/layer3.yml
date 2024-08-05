@@ -2,7 +2,7 @@ l3p:
   Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.00175
+  Chance: 0.0175
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -16,8 +16,8 @@ l3d:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
   Worlds: world
-  Chance: 0.00015
-  Priority: 0.1
+  Chance: 0.0015
+  Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
@@ -31,7 +31,7 @@ l3w:
   Type: ikenosuke
   Action: ADD
   Worlds: world
-  Chance: 0.00025
+  Chance: 0.0025
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -44,7 +44,7 @@ l3f:
   Type: daikonchu,dosetori,yomotsubi,madokajack
   Action: ADD
   Worlds: world
-  Chance: 0.00015
+  Chance: 0.0015
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false
@@ -57,7 +57,7 @@ l3fa:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.000025
+  Chance: 0.00025
   Priority: 1
   Cooldown: 5
   UseWorldScaling: false

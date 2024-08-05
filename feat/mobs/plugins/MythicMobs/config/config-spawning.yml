@@ -27,14 +27,14 @@ Configuration:
 
     # Area around players where mobs will try to spawn
     SpawnRadiusPerPlayer: 50
-    SpawnRadiusPerPlayerMin: 15
+    SpawnRadiusPerPlayerMin: 10
     SpawnRadiusPerPlayerY: 25
 
     # Allows Mythic mobs to spawn this amount over the vanilla cap
     LimitMultiplier: 1
 
     PointsPerSecond:
-      Land: 4
+      Land: 5
       Air: 1
       Sea: 2
       Lava: 1
