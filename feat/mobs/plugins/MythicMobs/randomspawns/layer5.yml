@@ -120,7 +120,7 @@ l5watermob:
   Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=edusan,hisomukuro,hagamizukin;a=5to99;radius=35} false
+  - mobsinradius{types=edusan,hisomukuro,hagamizukin;a=5to99;radius=100} false
  # - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
@@ -134,7 +134,7 @@ l5f:
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=onitsuchi,chikyuoebi,uibuta;a=5to99;radius=35} false
+  - mobsinradius{types=onitsuchi,chikyuoebi,uibuta;a=5to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
