@@ -96,10 +96,10 @@ l5d:
   - inblock{b=WATER} false
 
 l5w:
-  Type: makihige,demonfish
+  Type: makihige,demonfish,hagamizukin
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.0005
   PositionType: SEA
   Cooldown: 10
   Priority: 0.5
@@ -111,10 +111,10 @@ l5w:
 
 
 l5watermob:
-  Type: edusan,hisomukuro,hagamizukin
+  Type: edusan,hisomukuro
   Action: ADD
   Worlds: world
-  Chance: 0.0005
+  Chance: 0.00005
   PositionType: SEA
   Cooldown: 5
   Priority: 0.5
@@ -123,6 +123,8 @@ l5watermob:
   - mobsinradius{types=edusan,hisomukuro,hagamizukin;a=5to99;radius=100} false
  # - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
+
+
 
 l5f:
   Type: onitsuchi,chikyuoebi,uibuta

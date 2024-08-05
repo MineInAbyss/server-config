@@ -26,17 +26,17 @@ Configuration:
     GenerateSpawnPoints: true
 
     # Area around players where mobs will try to spawn
-    SpawnRadiusPerPlayer: 27
-    SpawnRadiusPerPlayerMin: 10
-    SpawnRadiusPerPlayerY: 15
+    SpawnRadiusPerPlayer: 50
+    SpawnRadiusPerPlayerMin: 15
+    SpawnRadiusPerPlayerY: 25
 
     # Allows Mythic mobs to spawn this amount over the vanilla cap
     LimitMultiplier: 1
 
     PointsPerSecond:
-      Land: 5
+      Land: 4
       Air: 1
-      Sea: 3
+      Sea: 2
       Lava: 1
       Ground: 0
 

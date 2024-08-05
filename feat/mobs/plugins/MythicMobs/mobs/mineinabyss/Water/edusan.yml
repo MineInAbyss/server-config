@@ -5,9 +5,12 @@ edusan:
   Damage: 0
   AIGoalSelectors:
     - clear
-    - randomstroll
-    - lookatplayers
+    - movetowater
+    - meleeattack
+    - movetowardstarget
+    - fleeplayers
     - randomlookaround
+    - randomfly
   AITargetSelectors:
     - clear
   Options:
