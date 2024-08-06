@@ -1,0 +1,6 @@
+namespaces: [ geary ]
+prevent.*:
+  interaction:
+    type: [ RIGHT_CLICK ]
+  regeneration:
+    reason: [ REGEN ]

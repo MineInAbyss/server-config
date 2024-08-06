@@ -1,0 +1,29 @@
+# namespaces: geary, mineinabyss
+- ensure:
+    player:
+      isSneaking: true
+
+- read.entityPosition:
+  register: position
+
+- read.targetBlock:
+    maxDistance: 10
+  register: spawnAt
+
+- interpolateBlocks:
+    from: '{{ position.block }}'
+    to: '{{ spawnAt.block }}'
+    steps: 10
+  register: blocks
+
+- explode:
+    breakBlocks: false
+    at: '{{ spawnAt.block }}'
+  loop: '{{ blocks }}'
+  loop_control:
+    delay: 0.1s
+
+# Could hook into other things too!
+- mythicSkills:
+    target: '{{ spawnAt.block }}'
+    run: [ ]

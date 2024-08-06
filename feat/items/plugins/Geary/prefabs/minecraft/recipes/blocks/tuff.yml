@@ -1,0 +1,15 @@
+namespaces: [ geary ]
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:tuff
+    amount: 12
+  group: "mineinabyss:tuff"
+  recipes:
+    - !<shaped>
+      items:
+        S: { type: minecraft:bone }
+      configuration: |-
+        |SS |
+        |SS |
+        |   |
