@@ -39,5 +39,50 @@ swarmshockerShock:
   - damage{a=1;pi=true;pk=true;repeat=1;repeatInterval=3;delay=18} @EIR{r=2.25;ignore=samefaction}
   - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @EIR{r=2.25;ignore=samefaction}
   - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=SLOW_DIGGING;l=2;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=WEAKNESS;l=3;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=WEAKNESS;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+
+
+swarmshockerbigShock:
+  Conditions:
+  - targetwithin{d=8}
+  Cooldown: 3
+  Skills:
+  - delay <random.0to20>
+  - effect:particles{particle=glow;a=<random.4to8>;hs=0.4;vs=0.4;s=0;y=0;repeat=10;repeatInterval=2} @self
+  - effect:particles{particle=glow;a=<random.10to15>;hs=0.5;vs=0.5;s=0;y=0;repeat=28;repeatInterval=1} @self
+  - sound{s=entity.chicken.step;sc=master;p=2.0;v=1.15;repeat=10;repeatInterval=4} @self
+  - delay <random.15to20>
+  - sound{s=entity.chicken.step;sc=master;p=2.0;v=1.15;repeat=10;repeatInterval=2} @self
+  - state{s=shock_attack} @self
+  - delay 10
+  - sound{s=entity.frog.tongue;sc=master;p=1.35;v=1.75} @self
+  - sound{s=entity.parrot.imitate.creeper;sc=master;p=2.0;v=2.0} @self
+  - sound{s=entity.guardian.attack;sc=master;p=2.0;v=1.15} @self
+  - sound{s=entity.chicken.step;sc=master;p=1.8;v=1.15;repeat=20;repeatInterval=1} @self
+  - sound{s=entity.chicken.step;sc=master;p=1.8;v=1.15;repeat=10;repeatInterval=2;delay=11} @self
+  - sound{s=entity.chicken.step;sc=master;p=1.8;v=1.15;repeat=10;repeatInterval=3;delay=21} @self
+  - sound{s=entity.chicken.step;sc=master;p=1.8;v=1.15;repeat=12;repeatInterval=5;delay=37} @self
+  - effect:particles{particle=glow;a=<random.5to8>;hs=0.25;vs=0.15;s=0;y=0;repeat=18;repeatInterval=1} @self
+  - effect:particlesphere{particle=electricSpark;a=<random.10to20>;r=1;hs=0.08;vs=0.08;s=0;y=0;repeat=18;repeatInterval=1} @self
+  - sound{s=entity.zombie.destroy_egg;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
+  - sound{s=entity.player.hurt_freeze;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
+  - damage{a=2;pi=true;pk=true;repeat=40;repeatInterval=1} @EIR{r=2.25;ignore=samefaction}
+  - damage{a=2;pi=true;pk=true;repeat=6;repeatInterval=2;delay=11} @EIR{r=2.25;ignore=samefaction}
+  - damage{a=2;pi=true;pk=true;repeat=2;repeatInterval=3;delay=18} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=SLOW_DIGGING;l=2;force=true;p=false;d=<random.100to200>} @EIR{r=2.25;ignore=samefaction}
+  - potion{t=WEAKNESS;l=2;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - delay 20
+  - state{s=shock_attack;r=true} @self
+
+swarm_Summon:
+  Cooldown: 9999999
+  Conditions:
+  - offgcd
+  - targetwithin{d=30} true
+  - incombat true
+  Skills:
+  - gcd{ticks=99999}
+  - summon{type=swarmshocker;amount=2;radius=3} @self

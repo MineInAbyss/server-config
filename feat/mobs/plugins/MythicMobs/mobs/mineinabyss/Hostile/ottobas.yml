@@ -13,7 +13,6 @@ ottobas:
   AITargetSelectors:
     - clear
     - players
-    - attacker
   Options:
     KnockbackResistance: 0.3
     Collidable: true
