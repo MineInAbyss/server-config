@@ -36,3 +36,8 @@ observe:
     - toggleDepthHud: { }
 
 disableItemInteractions: { }
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/tools/depth_meter
+  itemPredicates:
+    customModelData: 126

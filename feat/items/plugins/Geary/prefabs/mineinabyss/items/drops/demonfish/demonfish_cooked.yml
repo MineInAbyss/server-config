@@ -25,6 +25,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/demonfish_cooked
+  textures: mineinabyss:item/food/creatures/demonfish_cooked
   itemPredicates:
     customModelData: 416

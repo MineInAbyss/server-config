@@ -16,6 +16,6 @@ set.item:
       nutrition: 2
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/cyatoria_drumstick_raw
+  textures: mineinabyss:item/food/creatures/cyatoria_drumstick_raw
   itemPredicates:
     customModelData: 303

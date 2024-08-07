@@ -14,6 +14,6 @@ set.item:
       nutrition: 3
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/corpse_weeper_meat_raw
+  textures: mineinabyss:item/food/creatures/corpse_weeper_meat_raw
   itemPredicates:
     customModelData: 312

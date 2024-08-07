@@ -26,6 +26,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/billabonk_leg_cooked
+  textures: mineinabyss:item/food/creatures/billabonk_leg_cooked
   itemPredicates:
     customModelData: 405

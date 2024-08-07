@@ -28,6 +28,6 @@ set.item:
 
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/ashimite_meat_raw
+  textures: mineinabyss:item/food/creatures/ashimite_meat_raw
   itemPredicates:
     customModelData: 311

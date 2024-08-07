@@ -16,3 +16,8 @@ set.recipes:
       items:
         - prefab: mineinabyss:tesuchi_scales
         - type: FISHING_ROD
+resourcepack:
+  baseMaterial: minecraft:carrot_on_a_stick
+  textures: mineinabyss:item/other/tesuchi_scale_on_a_stick
+  itemPredicates:
+    customModelData: 2

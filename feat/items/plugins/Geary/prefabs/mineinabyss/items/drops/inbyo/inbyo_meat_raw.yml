@@ -13,6 +13,6 @@ set.item:
       nutrition: 3
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/inbyo_meat_raw
+  textures: mineinabyss:item/food/creatures/inbyo_meat_raw
   itemPredicates:
     customModelData: 301

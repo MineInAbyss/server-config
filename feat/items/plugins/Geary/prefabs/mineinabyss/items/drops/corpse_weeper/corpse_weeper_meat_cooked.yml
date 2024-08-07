@@ -24,6 +24,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/corpse_weeper_meat_cooked
+  textures: mineinabyss:item/food/creatures/corpse_weeper_meat_cooked
   itemPredicates:
     customModelData: 412

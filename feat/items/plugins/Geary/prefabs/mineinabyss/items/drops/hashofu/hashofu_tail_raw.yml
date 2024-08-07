@@ -15,6 +15,6 @@ set.item:
       nutrition: 2
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/hashofu_tail_raw
+  textures: mineinabyss:item/food/creatures/hashofu_tail_raw
   itemPredicates:
     customModelData: 307

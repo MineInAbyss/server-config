@@ -7,6 +7,6 @@ set.item:
 orthcoin: {}
 resourcepack:
   baseMaterial: minecraft:emerald
-  textures: mineinabyss:item/orth_coin
+  model: mineinabyss:item/other/orth_coin
   itemPredicates:
     customModelData: 1

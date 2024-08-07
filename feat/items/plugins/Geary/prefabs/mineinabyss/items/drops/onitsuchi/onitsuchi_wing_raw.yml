@@ -14,6 +14,6 @@ set.item:
       nutrition: 2
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/onitsuchi_wing_raw
+  textures: mineinabyss:item/food/creatures/onitsuchi_wing_raw
   itemPredicates:
     customModelData: 308

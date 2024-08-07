@@ -28,6 +28,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/okibo_meat_cooked
+  textures: mineinabyss:item/food/creatures/okibo_meat_cooked
   itemPredicates:
     customModelData: 413

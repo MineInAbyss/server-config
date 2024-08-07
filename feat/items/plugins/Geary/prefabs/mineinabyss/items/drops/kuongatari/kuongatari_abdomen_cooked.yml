@@ -24,6 +24,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/kuongatari_abdomen_cooked
+  textures: mineinabyss:item/food/creatures/kuongatari_abdomen_cooked
   itemPredicates:
     customModelData: 421

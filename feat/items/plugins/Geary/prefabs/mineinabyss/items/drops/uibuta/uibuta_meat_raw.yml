@@ -15,6 +15,6 @@ set.item:
       nutrition: 2
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/uibuta_meat_raw
+  textures: mineinabyss:item/food/creatures/uibuta_meat_raw
   itemPredicates:
     customModelData: 302

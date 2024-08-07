@@ -15,6 +15,6 @@ set.item:
       nutrition: 2
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/hammerbeak_wing_raw
+  textures: mineinabyss:item/food/creatures/hammerbeak_wing_raw
   itemPredicates:
     customModelData: 306

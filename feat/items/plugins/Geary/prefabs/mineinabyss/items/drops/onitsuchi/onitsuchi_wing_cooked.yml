@@ -26,6 +26,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/onitsuchi_wing_cooked
+  textures: mineinabyss:item/food/creatures/onitsuchi_wing_cooked
   itemPredicates:
     customModelData: 408

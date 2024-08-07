@@ -25,6 +25,6 @@ set.recipes:
       cookingTime: 50
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/hamashirama_cooked
+  textures: mineinabyss:item/food/creatures/hamashirama_cooked
   itemPredicates:
     customModelData: 417
