@@ -11,6 +11,6 @@ set.item:
       nutrition: 3
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/tesuchi_tail
+  textures: mineinabyss:item/food/creatures/tesuchi_tail
   itemPredicates:
     customModelData: 320

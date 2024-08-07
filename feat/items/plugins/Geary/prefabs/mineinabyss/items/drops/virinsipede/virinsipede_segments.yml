@@ -11,6 +11,6 @@ set.item:
       - <#8F425B><i>for a great fertiliser.
 resourcepack:
   baseMaterial: minecraft:bone_meal
-  textures: mineinabyss:item/creature_drops/virinipede_segments
+  textures: mineinabyss:item/creature_drops/virinsipede_segments
   itemPredicates:
     customModelData: 2
