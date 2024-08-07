@@ -8,12 +8,17 @@ server:
   port: 8082
   publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://" + env.SERVER_NAME + ".pack.mineinabyss.com") }}"
 prompt: ""
-force: false
-obfuscation: SIMPLE
+force: true
+sendOnReload: false
+# What ObfuscationType to use, valid options are FULL, SIMPLE & NONE
+obfuscation: NONE
+# This will use PackSquash to automatically squash all templates
 packSquash:
   enabled: false
   exePath: ""
   settingsPath: packsquash.toml
+# The amount of TemplateID combinations Packy should cache the ResourcePack off
+# If your ResourcePack is large it is recommended to lower this value
 cachedPackAmount: 18
 menu:
   title: Packy Pack Picker
