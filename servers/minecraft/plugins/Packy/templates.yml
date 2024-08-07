@@ -7,6 +7,10 @@ templates:
       repo: MineInAbyss-resourcepack
       branch: develop
       subFolder: common
+  - name: geary
+    default: true
+    required: true
+    filePath: Geary/resourcepack.zip
   - name: modelengine
     default: true
     required: true

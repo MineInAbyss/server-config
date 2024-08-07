@@ -341,7 +341,7 @@ exp:
       scale: 0.5
       outline: true
       deserialize-text: true
-  animations:
-    duration: 60
-    x-equation: 0
-    y-equation: 3cos(t/30 * pi)
+  #animations:
+  #  duration: 60
+  #  x-equation: 0
+  #  y-equation: 3cos(t/30 * pi)

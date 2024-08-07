@@ -10,8 +10,8 @@ set.item:
       - <yellow>creatures are forragers in the
       - <yellow>the <red>Edge of The Abyss<yellow>.
 disableItemInteractions: {}
-resourcepack:
-  baseMaterial: minecraft:black_wool
-  textures: mineinabyss:item/creature_drops/beniguma_fur
-  itemPredicates:
-    customModelData: 0
+#resourcepack:
+#  baseMaterial: minecraft:black_wool
+#  textures: mineinabyss:item/creature_drops/beniguma_fur
+#  itemPredicates:
+#    customModelData: 0

@@ -11,6 +11,6 @@ set.item:
       - <#5221A6><i>do something. Probably not though
 resourcepack:
   baseMaterial: minecraft:ink_sac
-  textures: mineinabyss:item/creature_drops/makihige_
+  textures: mineinabyss:item/creature_drops/makihige_ink_sac
   itemPredicates:
     customModelData: 2

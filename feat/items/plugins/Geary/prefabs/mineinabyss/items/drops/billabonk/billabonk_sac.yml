@@ -10,6 +10,6 @@ set.item:
       - <yellow>Seems to be poisonous, I best not eat it...
 resourcepack:
   baseMaterial: minecraft:pufferfish
-  textures: mineinabyss:item/creature_drops/billabonk_leg_sac
+  textures: mineinabyss:item/creature_drops/billabonk_sac
   itemPredicates:
     customModelData: 1
