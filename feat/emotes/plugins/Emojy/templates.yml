@@ -1,32 +1,31 @@
-templates:
-  - id: role_template
-    font: minecraft:default
-    height: 7
-    ascent: 7
-  - id: starcompass
-    font: mineinabyss:hud
-    height: 24
-    ascent: 8
-  - id: guilds
-    font: mineinabyss:guilds
-    height: 224
-    ascent: 16
-  - id: playerprofile
-    font: mineinabyss:playerprofile
-    height: 7
-    ascent: 7
-  - id: orth_map
-    texture: mineinabyss:ui/orth_map.png
-    font: mineinabyss:orth_map
-    height: 30
-    ascent: 30
-    bitmapWidth: 2
-    bitmapHeight: 2
-  - id: cosmetic_shade
-    texture: minecraft:hmccosmetics/shade.png
-    font: mineinabyss:cosmetics
-    height: 16
-  - id: cosmetic_clear
-    texture: minecraft:hmccosmetics/clear_image.png
-    font: mineinabyss:cosmetics
-    height: 16
+role_template:
+  font: minecraft:default
+  height: 7
+  ascent: 7
+starcompass:
+  font: mineinabyss:hud
+  height: 24
+  ascent: 8
+guilds:
+  font: mineinabyss:guilds
+  height: 224
+  ascent: 16
+playerprofile:
+  font: mineinabyss:playerprofile
+  height: 7
+  ascent: 7
+orth_map:
+  texture: mineinabyss:ui/orth_map.png
+  font: mineinabyss:orth_map
+  height: 30
+  ascent: 30
+  bitmapWidth: 2
+  bitmapHeight: 2
+cosmetic_shade:
+  texture: minecraft:hmccosmetics/shade.png
+  font: mineinabyss:cosmetics
+  height: 16
+cosmetic_clear:
+  texture: minecraft:hmccosmetics/clear_image.png
+  font: mineinabyss:cosmetics
+  height: 16
