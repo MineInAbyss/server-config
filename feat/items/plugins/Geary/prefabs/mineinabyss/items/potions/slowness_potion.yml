@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POTION
-    potionType: minecraft:slowness
+    basePotionType: minecraft:slowness
 set.potion_mixes:
   potionmixes:
     - ingredient:

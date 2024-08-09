@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POTION
-    potionType: minecraft:regeneration
+    basePotionType: minecraft:regeneration
 set.potion_mixes:
   potionmixes:
     - ingredient:

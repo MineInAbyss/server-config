@@ -11,7 +11,7 @@ loot_table:
         - !<mineinabyss:item>
           item:
             type: POTION
-            potionType: minecraft:regeneration
+            basePotionType: minecraft:regeneration
       conditions:
         - !<minecraft:random_chance> { chance: 0.75 }
     - entries:

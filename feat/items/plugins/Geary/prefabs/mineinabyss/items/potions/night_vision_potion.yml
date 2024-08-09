@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POTION
-    potionType: minecraft:night_vision
+    basePotionType: minecraft:night_vision
 set.potion_mixes:
   potionmixes:
     - ingredient:

@@ -23,6 +23,6 @@ set.potion_mixes:
   potionmixes:
     - input:
         type: POTION
-        potionType: minecraft:water
+        basePotionType: minecraft:water
       ingredient:
         prefab: mineinabyss:haste_paste

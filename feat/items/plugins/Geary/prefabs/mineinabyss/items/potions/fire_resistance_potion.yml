@@ -2,7 +2,7 @@ namespaces: [geary]
 set.item:
   item:
     type: POTION
-    potionType: minecraft:fire_resistance
+    basePotionType: minecraft:fire_resistance
 set.potion_mixes:
   potionmixes:
     - ingredient:
