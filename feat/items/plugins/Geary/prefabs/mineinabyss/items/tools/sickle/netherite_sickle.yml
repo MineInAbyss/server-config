@@ -1,12 +1,11 @@
 namespaces: [geary, mineinabyss]
-inherit:
-  - mineinabyss:sickle
 set.item:
   item:
     itemName: <#172929>Netherite Sickle
-    type: PAPER
-    customModelData: 305
+    type: minecraft:clock
+    customModelData: 6
     durability: 2031
+    maxStackSize: 1
 set.recipes:
   result:
     prefab: mineinabyss:netherite_sickle

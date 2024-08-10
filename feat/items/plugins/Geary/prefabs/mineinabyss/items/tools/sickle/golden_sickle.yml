@@ -1,12 +1,11 @@
 namespaces: [geary, mineinabyss]
-inherit:
-  - mineinabyss:sickle
 set.item:
   item:
     itemName: <gold>Golden Sickle
-    type: PAPER
-    customModelData: 303
+    type: minecraft:clock
+    customModelData: 4
     durability: 32
+    maxStackSize: 1
 set.recipes:
   discoverRecipes: true
   recipes:

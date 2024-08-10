@@ -1,12 +1,11 @@
 namespaces: [geary, mineinabyss]
-inherit:
-  - mineinabyss:sickle
 set.item:
   item:
     itemName: <dark_gray>Stone Sickle
-    type: PAPER
-    customModelData: 301
+    type: minecraft:clock
+    customModelData: 2
     durability: 131
+    maxStackSize: 1
 set.recipes:
   discoverRecipes: true
   recipes:

@@ -1,17 +1,17 @@
 namespaces: [geary, mineinabyss]
 set.item:
   item:
-    itemName: <dark_aqua>Diamond Sickle
+    itemName: <dark_aqua>Charcoal Sand Sickle
     type: minecraft:clock
-    customModelData: 5
-    durability: 1561
+    customModelData: 7
+    durability: 3000
     maxStackSize: 1
 set.recipes:
   discoverRecipes: true
   recipes:
     - !<shaped>
       items:
-        M: minecraft:diamond
+        M: mineinabyss:charcoal_sand_ingot
         S: minecraft:stick
       configuration: |-
         | MM|
@@ -22,3 +22,8 @@ observe:
     - become: parent
     - sickle:
         radius: 2
+resourcepack:
+  baseMaterial: minecraft:clock
+  textures: mineinabyss:item/tools/charcoal_sand_sickle
+  itemPredicates:
+    customModelData: 7

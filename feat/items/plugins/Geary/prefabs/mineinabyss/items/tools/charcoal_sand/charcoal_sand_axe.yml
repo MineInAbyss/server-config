@@ -1,0 +1,23 @@
+namespaces: [geary]
+set.item:
+  item:
+    itemName: <dark_aqua>Charcoal Sand Axe
+    type: DIAMOND_AXE
+    customModelData: 1
+    durability: 3000
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M: mineinabyss:charcoal_sand_ingot
+        S: minecraft:stick
+      configuration: |-
+        | MM|
+        | SM|
+        |S  |
+resourcepack:
+  baseMaterial: minecraft:diamond_axe
+  textures: mineinabyss:item/tools/charcoal_sand_axe
+  itemPredicates:
+    customModelData: 1

@@ -1,0 +1,23 @@
+namespaces: [geary]
+set.item:
+  item:
+    itemName: <dark_aqua>Charcoal Sand Dagger
+    type: DIAMOND_SWORD
+    customModelData: 4
+    durability: 3000
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        M: mineinabyss:charcoal_sand_ingot
+        S: minecraft:stick
+      configuration: |-
+        |M|
+        |M|
+        |S|
+resourcepack:
+  baseMaterial: minecraft:diamond_sword
+  textures: mineinabyss:item/tools/charcoal_sand_dagger
+  itemPredicates:
+    customModelData: 4

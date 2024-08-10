@@ -1,12 +1,11 @@
 namespaces: [ geary, mineinabyss ]
-inherit:
-  - mineinabyss:sickle
 set.item:
   item:
     itemName: <#63614E>Wooden Sickle
-    type: PAPER
-    customModelData: 300
+    type: minecraft:clock
+    customModelData: 1
     durability: 59
+    maxStackSize: 1
 set.recipes:
   discoverRecipes: true
   recipes:
