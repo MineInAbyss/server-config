@@ -3,8 +3,6 @@ enableAll: false
 # Choose which features to enable with true/false
 antiCheese:
   enabled: false
-configManagement:
-  enabled: true
 core:
   enabled: true
 cosmetics:

@@ -4,6 +4,7 @@ global:
       deleteUntracked: true
       keep:
         - config.yml
+        - resourcepack.zip
 feat/mobs:
   copyPaths: [ feat/mobs, feat/disable_mythic_examples ]
   files:
