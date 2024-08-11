@@ -1,0 +1,40 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axshulkers.html
+# if you want to disable a message, just set it to ""
+
+reloaded: '&#33FF33Successfully reloaded plugin!'
+cleared: '&#33FF33The shulker in your hand have been removed from the database!'
+cooldown: '&#FF3333You can''t open shulkers for &f%seconds% &#FF3333seconds!'
+
+# list of sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+open:
+  sound: BLOCK_SHULKER_BOX_OPEN
+  message: ''
+
+close:
+  sound: BLOCK_SHULKER_BOX_CLOSE
+  message: ''
+
+help:
+- ' '
+- '&#CC00FF&lAxShulkers &7» '
+- ' &7- &f/axshulkers reload &7| &#CC00FFReload plugin'
+- ' &7- &f/axshulkers clear &7| &#CC00FFTurns shulker in hand into a normal one'
+- ' '
+
+# name of the shulker gui
+# only used when the shulker doesn't have a custom name
+shulker-title: '&0Shulker Box'
+
+errors:
+  no-permission: '&#FF3333You don''t have permission to run this command!'
+  no-shulker: '&#FF3333You are not holding a shulker box or it is already cleared!'
+  creative-copy-item: '&#FF3333It looks like you have copied a shulker box, but no worries, we fixed it for you!'
+  banned-item: '&#FF3333You can''t put this item into shulker boxes!'
+  blacklisted-world: '&#FF3333You can''t open shulkers in this world!'
+  cant-run-commands: '&#FF3333You can''t run commands while a shulker is open!'
+  moving-disabled: '&#FF3333You can''t move while a shulker is open!'
+
+update-notifier: '&#DD88FFThere is a new version of AxShulkers available! &#DDDDDD(&#FFFFFFcurrent: &#FF0000%current% &#DDDDDD| &#FFFFFFlatest: &#00FF00%latest%&#DDDDDD)'
+
+# do not change this
+version: 5

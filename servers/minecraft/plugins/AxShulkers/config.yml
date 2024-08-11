@@ -1,0 +1,89 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axshulkers.html
+#
+# IMPORTANT: before you put a shulker in a kit or a crate, make sure to hold it in your hand and run /axshulkers clear!
+# if this is not done, people will be getting the exact same shulker, and they will share its inventory (probably not what you want)
+# you don't need to worry about this, if you enable the 'auto-clear-shulkers' setting!
+
+prefix: '&#CC00FF&lAxShulkers &7» '
+
+# EXPERIEMENTAL (this option was well tested, however it is still less safe than the default system)
+# this setting will remove the safety UUID from the shulkers after they are closed
+# it relies on java WeakReference-s to protect you from dupes
+# this also force disables 'enable-obfuscation'
+auto-clear-shulkers: false
+
+# this setting is not reloadable, you have to restart the server
+# how often should the plugin save shulker boxes from ram to the database?
+# this is in minutes
+auto-save-minutes: 5
+
+# if this is on, the plugin won't save items to the shulker item
+# this makes it impossible to see what is in the shulker without opening it
+# note: this will break the shulker peeking functionality in plugins (like in auction houses or [item] plugins)
+# incompatible with auto-clear-shulkers
+enable-obfuscation: false
+
+# how often should people be able to peek in shulker boxes
+# note: this is not required for security, you can leave it on 0 to disable
+open-cooldown-milliseconds: 0
+
+# should the shulker open when it gets right clicked in the player's inventory?
+opening-from-inventory:
+  enabled: true
+  # should this also be possible in the player's ender chest?
+  open-from-enderchest: true
+
+# if this is true then players won't be able to open shulkers from their hand
+disable-shulker-opening: false
+# if this is true then players won't be able to place them down (they can still open them)
+disable-shulker-placing: true
+# if this is true then dispensers won't place shulker boxes
+disable-shulker-dispensing: true
+# if this is true, the shulker will be closed if the player moves
+disable-moving-while-open: true
+
+# if this is true then shulkers will be immune to cactus, lava, fire, etc..
+undestoryable-shulkers: true
+
+# when in creative mode, the plugin will not modify any of the shulkers
+# note that this probably allows some dupes in creative mode, of course in creative you can already duplicate items so it shouldn't be a big deal
+# this is the same feature as auto-clear-shulkers, however this only affects creative mode
+auto-clear-in-creative: true
+
+# if enabled and somehow a shulker has a uuid, but it is not in the database, the contents of that shulker will be removed
+# this also required to prevent incompatibility with third party plugins
+# the only reason you should disable this is if you decided to delete the axshulkers database without resetting players' shulkers
+delete-invalid-items: true
+
+# what should the nbt that the plugin places on shulkers be named?
+# note that the plugin will not clean up old ones, so changing this is not recommended
+# changing this while the server is running can lead to dupes
+# if you have deleted the axshulkers database without deleting the items, it is recommended to change this to avoid item loss
+nbt-tag: AxShulkers-UUID
+
+# list of items that CAN'T be put into shulker boxes
+# note: the name-contains string shouldn't include any color codes
+blacklisted-items:
+  '1':
+    material: barrier
+    name-contains: Banned item's name
+
+# worlds where player's can't open shulkers
+blacklisted-worlds:
+- name_of_world
+
+# this setting is not reloadable, you have to restart the server
+# don't change this while you have data, however if you do, also change the nbt-tag setting to something else
+database:
+  # h2, sqlite
+  type: h2
+
+# should be plugin notify you if there is a new update?
+update-notifier:
+  # if enabled, it will display the message in the console
+  enabled: true
+  # if enabled, it will broadcast the update message to all players who have the <plugin-name>.update-notify permission
+  on-join: true
+
+# do not change this
+version: 11
