@@ -17,8 +17,6 @@ modelengine:
 custom_hud:
   default: true
   required: false
-  loadTrigger:
-    type: "BetterHud"
 emotes:
   default: true
   required: true
