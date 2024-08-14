@@ -9,3 +9,8 @@ set.item:
       - <yellow>the <green>Great Fault<yellow> and <green>Inverted Forest<yellow>.
       - <#A68348><i>The shell is almost as hard as amethyst
       - <#A68348><i>in order to keep out predators.
+resourcepack:
+  baseMaterial: minecraft:amethyst_block
+  textures: mineinabyss:item/creature_drops/hisoishi_shell
+  itemPredicates:
+    customModelData: 1
