@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: NETHERITE_SCRAP
+    type: PRISMARINE
     itemName: <#00FFFF>tachikanata Claw
     customModelData: 1
     lore:
@@ -9,10 +9,9 @@ set.item:
       - <yellow>a <#00FFFF>tachikanata <yellow>found in
       - <yellow>nests in the <green>Sea of Corpses<yellow>.
       - <yellow>Tastes like crab!
-      - <yellow>I should probably cook this...
     food:
       saturation: 3
-      nutrition: 3
+      nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -24,3 +23,8 @@ set.recipes:
       input: mineinabyss:shroombear_meat_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  baseMaterial: minecraft:prismarine
+  textures: mineinabyss:item/creature_drops/tachikatana_leg
+  itemPredicates:
+    customModelData: 1

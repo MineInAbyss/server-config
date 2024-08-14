@@ -1,5 +1,5 @@
 swarmshocker:
-  Type: COD
+  Type: ZOMBIE
   Display: "<#257BEB>Swarmshocker"
   Modules:
     ThreatTable: true
@@ -46,7 +46,7 @@ swarmshocker:
 
 
 swarmhoarder:
-  Type: COD
+  Type: ZOMBIE
   Display: "<#257BEB>Swarmhoarder"
   Modules:
     ThreatTable: true

@@ -12,3 +12,8 @@ set.item:
       - <yellow>material in the <green>Abyss<yellow>.
       - <#EB1742><i>Perhaps I can traverse water
       - <#EB1742><i>better with this?
+resourcepack:
+  baseMaterial: minecraft:prismarine_shard
+  textures: mineinabyss:item/creature_drops/tachikanata_scale
+  itemPredicates:
+    customModelData: 1
