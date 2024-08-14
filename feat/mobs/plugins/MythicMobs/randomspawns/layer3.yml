@@ -57,7 +57,7 @@ l3fa:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.00025
+  Chance: 0.0005
   Priority: 1
   Cooldown: 5
   UseWorldScaling: false
@@ -66,6 +66,6 @@ l3fa:
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
-
+  - mobsinradius{types=splitjaw;a=1to99;radius=200} false
 
 

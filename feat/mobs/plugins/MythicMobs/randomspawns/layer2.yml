@@ -80,7 +80,7 @@ l2fr:
   - region{r=l2s0,l2s1} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-
+  - mobsinradius{types=splitjaw;a=1to99;radius=200} false
 
 
 

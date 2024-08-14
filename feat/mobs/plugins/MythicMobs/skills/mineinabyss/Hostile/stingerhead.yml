@@ -14,7 +14,7 @@ stingerhead_unstuck:
   Conditions:
    - damagecause{cause=SUFFOCATION} true
   Skills:
-   - teleport{spreadh=5;spreadv=3} @self
+   - teleport{spreadh=5;spreadv=5} @self
 
 SH_Attack:
   Cooldown: 1

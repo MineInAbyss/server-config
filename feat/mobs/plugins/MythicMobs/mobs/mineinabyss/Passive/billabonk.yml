@@ -33,3 +33,4 @@ billabonk:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.death;v=6;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.hurt;v=6;p=0.2} @self ~onDamaged
+    - skill{s=breathe} @self ~onspawn

@@ -49,7 +49,7 @@ l2fr5:
   Type: splitjaw
   Action: ADD
   Worlds: world
-  Chance: 0.0005
+  Chance: 0.0002
   Priority: 0.5
   Cooldown: 30
   UseWorldScaling: false
@@ -57,3 +57,4 @@ l2fr5:
   - region{r=l2s2} true
   #- mobsinchunk{a=<1} true
   - inblock{b=WATER} false
+  - mobsinradius{types=splitjaw;a=1to99;radius=200} false

@@ -20,7 +20,7 @@ Stingerhead:
     FollowRange: 48
     MovementSpeed: 0.4
     MaxCombatDistance: 24
-    DigOutOfGround: true
+   # DigOutOfGround: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
@@ -42,7 +42,7 @@ Stingerhead:
     - heal{amount=50} @self ~onkill
     - skill{s=SH_Hit} ~onDamaged
     - dismount ~onDamaged
-    - skill{s=stingerhead_unstuck} @self ~onTimer:20
+    - skill{s=stingerhead_unstuck} @self ~ondamaged
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
