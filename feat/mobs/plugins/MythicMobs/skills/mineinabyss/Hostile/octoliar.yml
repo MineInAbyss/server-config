@@ -68,7 +68,7 @@ octoliarBite:   # melee attack
   - sound{s=entity.fox.bite;sc=master;p=0.85;v=1.1} @self
   - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
   - delay 2
-  - potion{t=POISON;l=0;force=true;p=true;d=<random.120to180>} @EIC{a=175.0;r=2.9;rot=0.0}
+  - potion{t=POISON;l=1;force=true;p=true;d=<random.120to180>} @EIC{a=175.0;r=2.9;rot=0.0}
   - damage{a=<random.5to7>;pi=true} @EIC{a=175.0;r=2.9;rot=0.0}
   - delay <random.10to30>
   - stance{s=idle} @self
@@ -105,7 +105,7 @@ octoliarSpitHit:
   - damage{a=<random.1to2>;pi=true;pk=true}
   - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
   - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
-  - potion{t=POISON;l=0;force=true;p=true;d=<random.120to180>}
+  - potion{t=POISON;l=2;force=true;p=true;d=<random.120to180>}
 
 octoliarWeb:   # web attack
   Cooldown: 10
@@ -153,7 +153,7 @@ octoliarWebEnd:
 octoliarWebHit:
   Cooldown: 0.0
   Skills:
-  - damage{a=<random.1to2>;pi=true;pk=true}
+  - damage{a=<random.5to6>;pi=true;pk=true}
   - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
   - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
   - potion{t=SLOW;l=4;force=true;p=true;d=<random.120to180>}

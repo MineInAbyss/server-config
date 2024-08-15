@@ -1,11 +1,16 @@
 namespaces: [geary]
 set.item:
   item:
-    type: TUBE_CORAL
-    itemName: <#7D93FF>Kakatsumuri Shell
+    type: BLUE_CONCRETE
+    itemName: <#ADD8E6>Octoliar Tentacle
     customModelData: 1
     lore:
-      - <yellow>Dropped by <#7D93FF>Kakatsumuri
-      - <yellow>the <green>Sea of Corpses<yellow>.
-      - <#B8FFBA><i>Even after death the shell
-      - <#B8FFBA><i>still keeps it bright glow.
+      - <yellow>Dropped by <#ADD8E6>Octoliar in the
+      - <yellow><green>Goblets of Giants<yellow> and<green>Sea of Corpses<yellow>.
+      - <#B8FFBA><i>Although a little wet it's
+      - <#B8FFBA><i>as tough as a rock!
+resourcepack:
+  baseMaterial: minecraft:blue_concrete
+  textures: mineinabyss:item/creature_drops/octoliar_tentacle
+  itemPredicates:
+    customModelData: 4
