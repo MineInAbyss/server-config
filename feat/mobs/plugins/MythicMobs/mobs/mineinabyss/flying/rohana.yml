@@ -29,6 +29,7 @@ rohana:
     - geary mineinabyss:rohana_tail 2 0.4
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
  #   - skill{s=rohanaspawn} @self ~onspawn
 
     - bodyclamp{m=rohana;c=15} @self ~onSpawn

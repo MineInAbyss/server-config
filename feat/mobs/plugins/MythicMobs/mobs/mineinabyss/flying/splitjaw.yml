@@ -39,6 +39,7 @@ splitjaw:
     - EMERALD 1 0.1
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad

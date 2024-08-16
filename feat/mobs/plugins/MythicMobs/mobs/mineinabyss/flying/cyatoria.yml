@@ -31,6 +31,7 @@ cyatoria:
     - geary mineinabyss:cyatoria_feather 1-4 0.7
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=cyatoria;c=15} @self ~onSpawn

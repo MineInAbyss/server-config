@@ -32,6 +32,7 @@ hammerbeak:
     - geary mineinabyss:hammerbeak_feather 1-2 0.5
 
   Skills:
+  - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   #- skill{s=hammerbeakspawn} @self ~onspawn
   # Misc
   - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10

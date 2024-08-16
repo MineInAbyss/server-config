@@ -33,6 +33,7 @@ madokajack:
     - geary mineinabyss:madokajack_poop 1 0.3
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn

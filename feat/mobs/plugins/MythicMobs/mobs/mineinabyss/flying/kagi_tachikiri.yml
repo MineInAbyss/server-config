@@ -29,6 +29,7 @@ kagi_tachikiri:
     - geary mineinabyss:kagi_tachikiri_pincer 1-2 0.7
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_8} @self ~onAttack
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawn

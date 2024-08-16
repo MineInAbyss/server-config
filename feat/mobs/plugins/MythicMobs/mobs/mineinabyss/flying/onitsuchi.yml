@@ -32,6 +32,7 @@ onitsuchi:
     - geary mineinabyss:onitsuchi_egg 1-2 0.5
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
   # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=onitsuchi;c=15} @self ~onSpawn
     - bodyclamp{m=onitsuchi;c=15} @self ~onLoad

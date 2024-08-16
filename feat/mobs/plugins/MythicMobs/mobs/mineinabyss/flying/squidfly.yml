@@ -29,6 +29,7 @@ squidfly:
     - geary mineinabyss:squidfly_brain_raw 1 0.8
 
   Skills:
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
     - skill{s=squidflyspawn} @self ~onspawn
 
   # - CancelEvent{sync=true} ~onAttack
