@@ -8,3 +8,9 @@ set.recipes:
     - !<shapeless>
       items:
         - prefab: mineinabyss:chimokami_tail
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:stingerhead_flesh
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:virinsipede_segments

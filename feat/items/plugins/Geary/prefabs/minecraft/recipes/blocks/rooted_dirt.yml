@@ -2,14 +2,14 @@ namespaces: [ geary ]
 set.recipes:
   discoverRecipes: true
   result:
-    type: minecraft:red_sand
+    type: minecraft:rooted_dirt
     amount: 8
-  group: "mineinabyss:red_sand"
+  group: "mineinabyss:rooted_dirt"
   recipes:
     - !<shaped>
       items:
-        S: { type: minecraft:sand }
-        D: { type: minecraft:red_dye }
+        S: { type: minecraft:dirt }
+        D: { type: minecraft:hanging_roots }
       configuration: |-
         |SSS|
         |SDS|

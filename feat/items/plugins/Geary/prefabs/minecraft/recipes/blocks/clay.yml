@@ -2,14 +2,14 @@ namespaces: [ geary ]
 set.recipes:
   discoverRecipes: true
   result:
-    type: minecraft:red_sand
+    type: minecraft:clay
     amount: 8
-  group: "mineinabyss:red_sand"
+  group: "mineinabyss:clay"
   recipes:
     - !<shaped>
       items:
-        S: { type: minecraft:sand }
-        D: { type: minecraft:red_dye }
+        S: { type: minecraft:mud }
+        D: { prefab: mineinabyss:bundle_of_silkfang_silk }
       configuration: |-
         |SSS|
         |SDS|
