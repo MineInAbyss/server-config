@@ -28,7 +28,7 @@ hisomukuro:
     - geary mineinabyss:hisomukuro_rib 2-6 0.7
   Skills: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+    - skill{s=displayHealth} ~onDamaged
     - skill{s=HS_ball} @target ~onTimer:20
     - skill{s=HS_charge} @self ~onTimer:1
     - skill{s=HSAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

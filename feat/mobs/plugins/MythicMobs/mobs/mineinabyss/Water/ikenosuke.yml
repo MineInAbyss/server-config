@@ -27,7 +27,7 @@ ikenosuke:
 
   Skills:
   ####### Misc
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=qmob_ikenosuke} @self ~onSpawn
  # - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}

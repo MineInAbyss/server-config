@@ -30,7 +30,7 @@ yomotsubi:
   Skills:
    # - CancelEvent{sync=true} ~onAttack
    # - skill{s=Damage_8} @self ~onAttack
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawn
     - bodyclamp{m=yomotsubi;c=15} @self ~onLoad

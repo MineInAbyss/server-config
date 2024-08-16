@@ -35,5 +35,5 @@ neritantan:
     - effect:sound{s=mineinabyss:neritantan;v=6;p=0.2} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.neritantan.death;v=6;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.neritantan.hurt;v=6;p=0.2} @self ~onDamaged
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

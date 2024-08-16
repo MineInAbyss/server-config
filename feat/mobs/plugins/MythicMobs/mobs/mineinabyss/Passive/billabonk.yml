@@ -29,7 +29,7 @@ billabonk:
     Drive: false
     DamageTint: true
   Skills:
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.death;v=6;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.hurt;v=6;p=0.2} @self ~onDamaged

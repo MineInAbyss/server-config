@@ -31,7 +31,7 @@ titanjaw:
   Skills:
   ####### Misc
 #  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - skill{s=displayHealth} ~onDamaged
   - skill{s=tj_backup} @self ~ondamaged
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt

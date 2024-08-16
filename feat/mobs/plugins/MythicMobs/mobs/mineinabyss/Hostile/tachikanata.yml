@@ -34,7 +34,7 @@ tachikatana:
     - PROJECTILE 0.25
     - SUFFOCATION 0
   Skills:
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
    # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
@@ -43,7 +43,7 @@ tachikatana:
     #- sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
 
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill{s=tachiATTACK} @self ~onAttack
     - skill{s=tachi_PROJ} @target ~onTimer:20
     - skill{s=tachishockwave} @target ~onTimer:20

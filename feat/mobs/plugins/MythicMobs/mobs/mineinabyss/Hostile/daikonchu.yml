@@ -22,7 +22,7 @@ daikonchu:
     - geary mineinabyss:daikonchu_wings 1-2 0.3
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - skill{s=Changetarget} ~onTimer:160 <99%
   - model{mid=daikonchu;n=false} @Self ~onSpawn

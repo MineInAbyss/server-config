@@ -32,7 +32,7 @@ swarmshocker:
     DamageTint: true
   Skills:
   ####### Misc
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=swarmshocker} @self ~onSpawn
   - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%
@@ -79,7 +79,7 @@ swarmhoarder:
     DamageTint: true
   Skills:
   ####### Misc
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=swarmshockermid} @self ~onSpawn
   - skill{s=swarmshockerbigShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%

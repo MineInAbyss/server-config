@@ -17,7 +17,7 @@ delverarcher:
   - exp 15
  # - mmoitems{type=MATERIAL;id=ANCIENTTHREAD} 1-2 0.45
   Skills:
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged 
+  - skill{s=displayHealth} ~onDamaged 
   - skill{s=CancelDamageEvent;sync=true} ~onShoot
   - model{mid=DelverArcher;n=false;d=false} @self ~onSpawn
   - state{mid=DelverArcher;s=hurt} @self ~onDamaged
@@ -25,7 +25,6 @@ delverarcher:
   - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
   - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
   - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
 
 
 delvertrade:
@@ -83,6 +82,6 @@ delvertrade:
 
   - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
 
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
 
   - skill{s=Charge} @target ~onDamaged 0.09

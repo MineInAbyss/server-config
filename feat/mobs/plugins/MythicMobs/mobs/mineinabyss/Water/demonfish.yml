@@ -34,7 +34,7 @@ demonfish:
     DamageTint: true
   Skills:
   ####### Misc
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
  # - model{mid=qmob_demonfish} @self ~onSpawn
   - look{immediately=true} @targetLocation ~onTimer:10

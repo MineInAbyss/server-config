@@ -32,5 +32,5 @@ makihige:
     - geary mineinabyss:makihige_tentacle 1-2 0.4
 
   Skills:
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

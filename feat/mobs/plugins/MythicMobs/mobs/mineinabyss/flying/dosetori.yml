@@ -44,5 +44,5 @@ dosetori:
     - effect:sound{s=mineinabyss:entity.dosetori.ambient;v=6;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.dosetori.death;v=6;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.dosetori.hurt;v=6;p=0.8} @self ~onDamaged
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

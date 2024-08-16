@@ -49,7 +49,7 @@ woodcrier:
     - skill{s=hcHurt} @self ~onHurt
     - skill{s=hcDeath} @self ~onDeath
 
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=2} ~onDeath
 
 
@@ -118,7 +118,7 @@ horncrier:
     - skill{s=hcHurt} @self ~onHurt
     - skill{s=hcDeath} @self ~onDeath
 
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=2} ~onDeath
 
 

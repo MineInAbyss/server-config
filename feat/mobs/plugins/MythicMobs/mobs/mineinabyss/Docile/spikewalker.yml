@@ -33,7 +33,7 @@ spikewalker:
     Drive: false
     DamageTint: true
   Skills:
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Reflectdamage} ~onTimer:100 <99%
     - skill{s=damagereflect} ~onDamaged

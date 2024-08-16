@@ -28,5 +28,5 @@ kakatsumuri:
     - geary mineinabyss:kakatsumuri_glowing_tip 1 0.9
   Skills:
   ####### Misc
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath  

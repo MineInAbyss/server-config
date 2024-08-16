@@ -31,7 +31,7 @@ inkflower:
   Skills:
    # - CancelEvent{sync=true} ~onAttack
    # - skill{s=Damage_8} @self ~onAttack
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
 
 
     - bodyclamp{m=inkflower;c=15} @self ~onSpawn

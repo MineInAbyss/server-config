@@ -39,5 +39,5 @@ onitsuchi:
     - setspeed{type=flying;speed=1.2} @self ~onSpawn
     - state{mid=onitsuchi;s=attack} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -31,7 +31,7 @@ mantoyer:
     - geary mineinabyss:mantoyer_horn 1-2 0.6
   Skills:
 
-    - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=mantoyerspawn} @self ~onspawn
 

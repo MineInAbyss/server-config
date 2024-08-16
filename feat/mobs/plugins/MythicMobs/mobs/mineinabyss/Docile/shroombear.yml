@@ -35,7 +35,7 @@ shroombear:
   - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
   - skill{s=Shroom_Harvest} @self ~oninteract
   - summon{type=baby_shroombear;amount=1;radius=3} @self ~onSpawn 0.1
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 baby_shroombear:
   Type: PIG
@@ -75,5 +75,5 @@ baby_shroombear:
   - skill{s=shroombearDeath} @self ~onDeath
   - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:100 0.66 <55%
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
-  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged  
+  - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
