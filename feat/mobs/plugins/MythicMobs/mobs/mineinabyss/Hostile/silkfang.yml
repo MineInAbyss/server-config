@@ -27,6 +27,12 @@ silkfang:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+  - exp 10-15
+  - geary mineinabyss:silkfang_eye 1-2 0.6
+  - geary mineinabyss:silkfang_silk 1-2 0.6
+  - geary mineinabyss:bundle_of_silkfang_silk 1 0.2
+
   Skills:
   - skill{s=silkfangspawn} @self ~onspawn
 

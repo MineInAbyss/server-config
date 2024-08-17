@@ -1,0 +1,16 @@
+namespaces: [ geary ]
+set.item:
+  item:
+    type: BRICK
+    itemName: <#BE6400>Rockwalker Mandible
+    customModelData: 1
+    lore:
+      - <yellow>Dropped by <#BE6400>Hisoishi Crab <yellow>in
+      - <yellow>the <green>Great Fault<yellow> and <green>Inverted Forest<yellow>.
+      - <#A68348><i>This sharp claw can dig through stone with ease
+      - <#A68348><i> and even break bone!
+resourcepack:
+  baseMaterial: minecraft:brick
+  textures: mineinabyss:item/creature_drops/rockwalker_mandible
+  itemPredicates:
+    customModelData: 1

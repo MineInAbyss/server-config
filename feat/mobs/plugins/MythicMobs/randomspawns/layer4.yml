@@ -25,7 +25,7 @@ l4d:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
   - region{r=l4s0,l4s1,l4s2,l4s3} true
   - mobsinchunk{a=<1} true
-  - mobsinradius{types=stinger,mantoyer;a=7to99;radius=100} false
+  - mobsinradius{types=stinger,mantoyer;a=3to99;radius=100} false
   - inblock{b=WATER} false
 
 l4w:

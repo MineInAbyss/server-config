@@ -1,5 +1,6 @@
 rockwalker:
   Type: SPIDER
+  Display: "<#BE6400>rockwalker"
   Modules:
     ThreatTable: true
   Health: 25 # change this
@@ -28,6 +29,9 @@ rockwalker:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:rockwalker_mandible 1-2 0.8
   Skills:
   ####### Misc
 #  - summon{type=baby_hisoishi;amount=1;radius=3} @self ~onSpawn 0.2

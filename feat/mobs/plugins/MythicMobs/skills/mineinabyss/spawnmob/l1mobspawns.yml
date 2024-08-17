@@ -76,7 +76,7 @@ stingerspawn:
     - hasparent false
   Skills:
     - gcd{ticks=20}
-    - summon{type=stinger;amount=2-6;radius=5} @self
+    - summon{type=stinger2;amount=2-4;radius=3} @self
 inbyospawn:
   Cooldown: 9999999
   Conditions:
