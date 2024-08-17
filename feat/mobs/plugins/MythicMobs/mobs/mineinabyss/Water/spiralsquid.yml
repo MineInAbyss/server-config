@@ -23,8 +23,7 @@ spiralsquid:
   Drops:
     - exp 5-10
     - ink_sac 1-2
-    - spiralsquidUC
-    - spiralsquidC
+    - geary mineinabyss:spiralsquid_raw 1-2 0.6
   Skill: 
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - skill{s=displayHealth} ~onDamaged

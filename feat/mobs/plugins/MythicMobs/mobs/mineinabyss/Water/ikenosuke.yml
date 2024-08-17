@@ -21,8 +21,7 @@ ikenosuke:
     interactable: false
   Drops: # put stuff here
   - exp 5-15
-  - ikenosukeUC
-  - ikenosukeC
+  - geary mineinabyss:ikenosuke_raw 1-2 0.6
   DamageModifiers:
 
   Skills:

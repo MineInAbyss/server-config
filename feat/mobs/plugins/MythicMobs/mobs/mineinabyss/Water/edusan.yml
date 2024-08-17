@@ -27,8 +27,6 @@ edusan:
     - exp 15-20
     - geary mineinabyss:edusan_scale 1-18 1
     - geary mineinabyss:edusan_whisker 1 0.2
-    - edusanUC
-    - edusanC
-  Skill: 
+  Skill:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

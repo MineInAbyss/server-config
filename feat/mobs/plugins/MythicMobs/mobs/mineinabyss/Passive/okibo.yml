@@ -24,8 +24,7 @@ okibo:
     Scale: 2.75
   Drops:
     - exp 20-25
-    - okiboUC
-    - okiboC
+    - geary mineinabyss:okibo_meat_raw 1-2 0.6
 
   Skills:
     - skill{s=displayHealth} ~onDamaged  

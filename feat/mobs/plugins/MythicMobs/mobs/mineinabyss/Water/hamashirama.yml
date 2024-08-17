@@ -23,8 +23,7 @@ hamashirama:
     DamageTint: true
   Drops:
     - exp 20-25
-    - hamashiramaUC
-    - hamashiramaC
+    - geary mineinabyss:hamashirama_raw 1-2 0.6
   Skill: 
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

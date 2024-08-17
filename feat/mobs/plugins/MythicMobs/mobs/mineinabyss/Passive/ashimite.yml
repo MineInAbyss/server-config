@@ -21,8 +21,7 @@ ashimite:
     #MovementSpeed: 0.25
   Drops:
     - exp 5-10
-    - ashimiteUC
-    - ashimiteC
+    - geary mineinabyss:ashimite_meat_raw 1-2 0.6
     - LIGHT_BLUE_WOOL 1-2 0.6
   Model:
     Id: ashimite
