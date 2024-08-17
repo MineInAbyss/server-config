@@ -13,6 +13,7 @@ rohana:
     Collidable: true
     Silent: true
     FollowRange: 17
+    PreventOtherDrops: true
   # MovementSpeed: 0.3
   Equipment:
     - TORCH HAND

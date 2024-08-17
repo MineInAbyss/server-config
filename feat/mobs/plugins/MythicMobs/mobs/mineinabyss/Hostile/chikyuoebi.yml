@@ -20,9 +20,9 @@ chikyuoebi:
     LockPitch: true
     Interactable: false
     MovementSpeed: 0.3
-    Collidable: false
     Silent: true
     PreventSunburn: true
+    PreventOtherDrops: true
   Model:
     Id: chikyuoebi_modified
     ViewRadius: 64

@@ -20,7 +20,8 @@ billabonk:
   Damage: 0 
   Options:
     Despawn: false
-    Preventotherdrops: true
+    PreventOtherDrops: true
+    Silent: true
   DamageModifiers:
   Model:
     Id: billabonk

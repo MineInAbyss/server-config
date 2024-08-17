@@ -23,6 +23,8 @@ splitjaw:
     Interactable: false
   # MovementSpeed: 0.6
     PreventSunburn: true
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: splitjaw
     ViewRadius: 64

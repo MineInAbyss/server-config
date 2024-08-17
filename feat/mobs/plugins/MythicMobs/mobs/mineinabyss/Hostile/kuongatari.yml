@@ -18,6 +18,8 @@ Kuongatari:
     MovementSpeed: 0.32
     MaxCombatDistance: 20
     DigOutOfGround: true
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: kuongatari
     ViewRadius: 64

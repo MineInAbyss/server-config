@@ -20,6 +20,7 @@ chimokami:
     interactable: true
     MovementSpeed: 0.3
     DigOutOfGround: true
+    PreventOtherDrops: true
   Model:
     Id: chimokami
     ViewRadius: 64

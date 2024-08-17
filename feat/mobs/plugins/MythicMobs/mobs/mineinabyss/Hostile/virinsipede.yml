@@ -21,9 +21,9 @@ virinsipede:
     LockPitch: true
     Interactable: false
     MovementSpeed: 0.3
-    Collidable: false
     Silent: true
     PreventSunburn: true
+    PreventOtherDrops: true
   DamageModifiers:
     - PROJECTILE 0.5
   Model:

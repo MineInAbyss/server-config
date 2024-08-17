@@ -11,6 +11,7 @@ rockwalker:
     Silent: true
     FollowRange: 20
     MaxCombatDistance: 35
+    PreventOtherDrops: true
   AIGoalSelectors:
     - clear
     - meleeattack

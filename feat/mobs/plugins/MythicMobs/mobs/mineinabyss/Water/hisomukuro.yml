@@ -18,6 +18,7 @@ hisomukuro:
     FollowRange: 20
     interactable: false
     MovementSpeed: 0.6
+    PreventOtherDrops: true
   Model:
     Id: hisomukuro
     ViewRadius: 64

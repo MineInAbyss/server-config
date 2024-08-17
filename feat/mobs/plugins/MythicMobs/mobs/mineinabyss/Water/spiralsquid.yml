@@ -16,6 +16,7 @@ spiralsquid:
     FollowRange: 20
     interactable: true
     MovementSpeed: 0.2
+    PreventOtherDrops: true
   Model:
     Id: spiralsquid
     ViewRadius: 64

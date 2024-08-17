@@ -19,6 +19,7 @@ ikenosuke:
     MovementSpeed: 0.4
     KnockbackResistance: 0.0
     interactable: false
+    PreventOtherDrops: true
   Drops: # put stuff here
   - exp 5-15
   - geary mineinabyss:ikenosuke_raw 1-2 0.6

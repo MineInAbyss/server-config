@@ -18,6 +18,8 @@ squidfly:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
+    PreventOtherDrops: true
+    Silent: true
   # MovementSpeed: 0.7
   Model:
     Id: squidfly

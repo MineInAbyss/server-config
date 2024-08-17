@@ -6,6 +6,7 @@ rinsipede:
   Damage: 5
   Options:
     PreventSunBurn: true
+    PreventOtherDrops: true
     KnockbackResistance: 0.6
     DigOutOfGround: true
     Collidable: true

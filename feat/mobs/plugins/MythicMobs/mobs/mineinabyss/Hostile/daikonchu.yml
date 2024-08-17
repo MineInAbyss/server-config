@@ -3,6 +3,9 @@ daikonchu:
   Display: "<#FFF821>Daikonchu"
   Health: 80
   Damage: 0
+  Options:
+    PreventOtherDrops: true
+    Silent: true
   AIGoalSelectors:
     - clear
     - spiderattack

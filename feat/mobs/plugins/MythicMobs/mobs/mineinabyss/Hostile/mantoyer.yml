@@ -20,6 +20,7 @@ mantoyer:
     interactable: true
     MovementSpeed: 0.3
     DigOutOfGround: true
+    PreventOtherDrops: true
   Model:
     Id: mantoyer
     ViewRadius: 64

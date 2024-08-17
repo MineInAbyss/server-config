@@ -13,6 +13,7 @@ hisoishi:
     FollowRange: 20
     MaxCombatDistance: 35
     DigOutOfGround: true
+    PreventOtherDrops: true
   AIGoalSelectors:
     - clear
     - meleeattack

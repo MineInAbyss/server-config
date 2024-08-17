@@ -20,6 +20,7 @@ Stingerhead:
     FollowRange: 48
     MovementSpeed: 0.4
     MaxCombatDistance: 24
+    PreventOtherDrops: true
    # DigOutOfGround: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET

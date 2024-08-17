@@ -21,6 +21,7 @@ tachikatana:
     FollowRange: 48
     MovementSpeed: 0.3
     MaxCombatDistance: 35
+    PreventOtherDrops: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND

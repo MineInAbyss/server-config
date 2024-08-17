@@ -18,6 +18,7 @@ kazura:
     interactable: true
     followRange: 10
     MovementSpeed: 0.2
+    PreventOtherDrops: true
   Model:
     Id: kazura
     ViewRadius: 64

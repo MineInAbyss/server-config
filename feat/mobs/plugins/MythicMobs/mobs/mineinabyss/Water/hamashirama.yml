@@ -17,6 +17,7 @@ hamashirama:
     FollowRange: 20
     interactable: true
     MovementSpeed: 0.2
+    PreventOtherDrops: true
   Model:
     Id: hamashirama
     ViewRadius: 64

@@ -20,6 +20,7 @@ shroombear:
     FollowRange: 10
     MovementSpeed: 0.22
     DigOutOfGround: true
+    PreventOtherDrops: true
   DamageModifiers:
   Model:
     Id: qmob_shroombear

@@ -18,7 +18,8 @@ dosetori:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-  # MovementSpeed: 0.5
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: dosetori
     ViewRadius: 64

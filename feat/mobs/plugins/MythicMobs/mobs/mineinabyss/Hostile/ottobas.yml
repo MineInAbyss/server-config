@@ -22,6 +22,7 @@ ottobas:
     interactable: true
     MovementSpeed: 0.25
     attackKnockback: 5
+    PreventOtherDrops: true
   Model:
     Id: ottobas
     ViewRadius: 64

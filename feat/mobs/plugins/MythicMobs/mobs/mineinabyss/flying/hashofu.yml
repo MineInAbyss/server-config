@@ -12,6 +12,8 @@ hashofu:
     KnockbackResistance: 1
     Collidable: true
     FollowRange: 17
+    PreventOtherDrops: true
+    Silent: true
   # MovementSpeed: 0.4
   Model:
     Id: hashofu

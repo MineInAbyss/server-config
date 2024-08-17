@@ -18,6 +18,8 @@ madokajack:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
+    PreventOtherDrops: true
+    Silent: true
   # MovementSpeed: 0.35
   Model:
     Id: madokajack

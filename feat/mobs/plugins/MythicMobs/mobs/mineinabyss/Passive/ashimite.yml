@@ -18,6 +18,7 @@ ashimite:
     Silent: true
     FollowRange: 48
     interactable: true
+    PreventOtherDrops: true
     #MovementSpeed: 0.25
   Drops:
     - exp 5-10

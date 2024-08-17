@@ -6,6 +6,7 @@ spikewalker:
   Damage: 3
   Options:
     PreventSunBurn: true
+    PreventOtherDrops: true
     KnockbackResistance: 1
     DigOutOfGround: true
     Collidable: true
@@ -22,10 +23,6 @@ spikewalker:
   AITargetSelectors:
     - clear
     - attacker
-  Health: 20 # change this
-  Damage: 0 
-  Options:
-    Despawn: false
   DamageModifiers:
   Model:
     Id: spikewalker

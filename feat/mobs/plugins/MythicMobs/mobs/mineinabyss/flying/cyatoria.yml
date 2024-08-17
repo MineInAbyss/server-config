@@ -18,7 +18,8 @@ cyatoria:
     DigOutOfGround: true
     FollowRange: 28
     MaxCombatDistance: 128
- #  MovementSpeed: 0.35
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: cyatoria
     ViewRadius: 64

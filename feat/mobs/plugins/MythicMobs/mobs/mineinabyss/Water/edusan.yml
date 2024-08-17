@@ -19,6 +19,7 @@ edusan:
     FollowRange: 20
     interactable: true
     MovementSpeed: 0.3
+    PreventOtherDrops: true
   Model:
     Id: edusan
     ViewRadius: 64

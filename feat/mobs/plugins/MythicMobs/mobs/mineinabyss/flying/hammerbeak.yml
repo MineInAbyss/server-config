@@ -20,6 +20,8 @@ hammerbeak:
     FollowRange: 32
     MaxCombatDistance: 128
     MovementSpeed: 0.32
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: qmob_hammerbeaksmall
     ViewRadius: 64

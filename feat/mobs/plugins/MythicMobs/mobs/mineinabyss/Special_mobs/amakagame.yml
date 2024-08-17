@@ -18,6 +18,7 @@ amakagame:
     Silent: true
     interactable: true
     MovementSpeed: 0
+    PreventOtherDrops: true
   Model:
     Id: amakagame
     ViewRadius: 64

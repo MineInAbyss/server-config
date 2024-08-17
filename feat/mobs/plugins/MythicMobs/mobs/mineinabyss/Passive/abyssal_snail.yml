@@ -20,6 +20,7 @@ abyssal_snail:
     interactable: true
     Preventotherdrops: true
     MovementSpeed: 0.1
+    PreventOtherDrops: true
   Model:
     Id: abyssal_snail
     ViewRadius: 64

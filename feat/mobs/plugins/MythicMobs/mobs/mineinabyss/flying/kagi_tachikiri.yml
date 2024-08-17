@@ -18,6 +18,8 @@ kagi_tachikiri:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
+    PreventOtherDrops: true
+    Silent: true
   # MovementSpeed: 0.5
   Model:
     Id: kagi_tachikiri

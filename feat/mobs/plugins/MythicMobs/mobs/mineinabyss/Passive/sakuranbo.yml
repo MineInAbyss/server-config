@@ -19,6 +19,7 @@ sakuranbo:
     interactable: true
     MovementSpeed: 0.3
     KnockbackRessistance: 0.2
+    PreventOtherDrops: true
   Model:
     Id: sakuranbo
     ViewRadius: 64

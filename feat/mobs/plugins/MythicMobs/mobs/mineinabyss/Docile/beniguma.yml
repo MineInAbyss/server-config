@@ -20,6 +20,7 @@ beniguma:
     interactable: true
     MovementSpeed: 0.3
     DigOutOfGround: true
+    PreventOtherDrops: true
   Model:
     Id: beniguma
     ViewRadius: 64

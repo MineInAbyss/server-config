@@ -22,6 +22,7 @@ swarmshocker:
     MovementSpeed: 0.35
     KnockbackResistance: 0.0
     interactable: false
+    PreventOtherDrops: true
   Drops:
   - exp 5-15
   - geary mineinabyss:swarmshocker_charged_powder 1 0.3

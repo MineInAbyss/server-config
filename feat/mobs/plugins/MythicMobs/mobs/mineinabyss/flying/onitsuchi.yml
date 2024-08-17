@@ -18,6 +18,8 @@ onitsuchi:
     DigOutOfGround: true
     FollowRange: 20
     MaxCombatDistance: 128
+    PreventOtherDrops: true
+    Silent: true
   # MovementSpeed: 0.4
   Model:
     Id: onitsuchi

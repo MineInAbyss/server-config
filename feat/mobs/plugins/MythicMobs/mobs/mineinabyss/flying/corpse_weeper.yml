@@ -18,7 +18,8 @@ corpse_weeper:
     DigOutOfGround: true
     FollowRange: 32
     MaxCombatDistance: 128
-   # MovementSpeed: 0.5
+    PreventOtherDrops: true
+    Silent: true
   Model:
     Id: corpse_weeper
     ViewRadius: 64

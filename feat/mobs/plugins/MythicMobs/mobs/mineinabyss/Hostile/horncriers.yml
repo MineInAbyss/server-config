@@ -23,6 +23,7 @@ woodcrier:
     Interactable: false
     MovementSpeed: 0.35
     PreventSunburn: true
+    PreventOtherDrops: true
   Model:
     Id: horncrier_easy
     ViewRadius: 64

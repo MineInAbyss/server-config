@@ -19,6 +19,7 @@ makihige:
     interactable: true
     DigOutOfGround: true
     MovementSpeed: 0.2
+    PreventOtherDrops: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:20} FEET
   Model:

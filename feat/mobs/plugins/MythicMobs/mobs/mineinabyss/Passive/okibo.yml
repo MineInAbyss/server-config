@@ -17,6 +17,7 @@ okibo:
     interactable: true
     MovementSpeed: 0.2
     KnockbackRessistance: 0.2
+    PreventOtherDrops: true
   Model:
     Id: okibo
     ViewRadius: 64

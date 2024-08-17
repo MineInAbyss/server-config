@@ -3,6 +3,9 @@ kessho:
   Type: IRON_GOLEM
   Health: 60
   Damage: 0
+  Options:
+    PreventOtherDrops: true
+    Silent: true
   Skills:
   - model{mid=amethyst_golem;n=false} @Self ~onSpawn
   - skill:AmethystGolemAttack{sync=true} @Self ~onAttack

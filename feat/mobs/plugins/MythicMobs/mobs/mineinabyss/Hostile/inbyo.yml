@@ -22,6 +22,7 @@ inbyo:
     interactable: true
     MovementSpeed: 0.25
     attackKnockback: 1
+    PreventOtherDrops: true
   Model:
     Id: inbyo
     ViewRadius: 64
