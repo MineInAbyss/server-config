@@ -11,6 +11,8 @@ set.item:
     food:
       saturation: 0.2
       nutrition: 1
+replaceBurnedDrop:
+  prefab: mineinabyss:kuongatari_abdomen_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen

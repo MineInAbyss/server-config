@@ -14,6 +14,8 @@ set.item:
     food:
       saturation: 1.8
       nutrition: 3
+replaceBurnedDrop:
+  prefab: mineinabyss:fuwagi_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/fuwagi_meat_raw

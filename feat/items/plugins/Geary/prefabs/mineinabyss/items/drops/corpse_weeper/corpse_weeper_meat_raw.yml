@@ -12,6 +12,8 @@ set.item:
     food:
       saturation: 1.8
       nutrition: 3
+replaceBurnedDrop:
+  prefab: mineinabyss:corpse_weeper_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/corpse_weeper_meat_raw

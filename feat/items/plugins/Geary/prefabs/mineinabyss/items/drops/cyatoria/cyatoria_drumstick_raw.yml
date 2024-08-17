@@ -19,3 +19,5 @@ resourcepack:
   textures: mineinabyss:item/food/creatures/cyatoria_drumstick_raw
   itemPredicates:
     customModelData: 303
+replaceBurnedDrop:
+  prefab: mineinabyss:cyatoria_drumstick_cooked

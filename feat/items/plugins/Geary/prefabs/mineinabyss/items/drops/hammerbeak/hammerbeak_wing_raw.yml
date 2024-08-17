@@ -13,6 +13,8 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:hammerbeak_wing_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hammerbeak_wing_raw

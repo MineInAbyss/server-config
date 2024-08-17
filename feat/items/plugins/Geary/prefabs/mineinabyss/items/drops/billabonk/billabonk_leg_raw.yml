@@ -11,6 +11,8 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:billabonk_leg_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/billabonk_leg_raw

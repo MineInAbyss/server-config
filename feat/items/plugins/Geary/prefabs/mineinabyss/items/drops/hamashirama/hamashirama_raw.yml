@@ -12,6 +12,8 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:hamashirama_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hamashirama_raw

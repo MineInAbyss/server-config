@@ -13,6 +13,8 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:uibuta_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/uibuta_meat_raw

@@ -13,3 +13,5 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:leaflizard_cooked

@@ -12,6 +12,8 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:neritantan_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/neritantan_meat_raw

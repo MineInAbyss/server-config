@@ -11,6 +11,8 @@ set.item:
     food:
       saturation: 1.2
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:dosetori_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/dosetori_meat_raw

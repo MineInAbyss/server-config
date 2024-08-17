@@ -12,6 +12,8 @@ set.item:
     food:
       saturation: 1.8
       nutrition: 3
+replaceBurnedDrop:
+  prefab: mineinabyss:okibo_meat_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/okibo_meat_raw

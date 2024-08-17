@@ -12,6 +12,8 @@ set.item:
     food:
       saturation: 0.4
       nutrition: 2
+replaceBurnedDrop:
+  prefab: mineinabyss:demonfish_cooked
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/demonfish_raw
