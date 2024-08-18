@@ -2,13 +2,13 @@ namespaces: [ geary ]
 set.item:
   item:
     type: BRICK
-    itemName: <#BE6400>Rockwalker Mandible
+    itemName: <#BE6400>Rock-walker Mandible
     customModelData: 1
     lore:
-      - <yellow>Dropped by <#BE6400>Rockwalker<yellow> in
-      - <yellow>the <green>Great Fault<yellow> and <green>Inverted Forest<yellow>.
-      - <#A68348><i>Its sharp to the touch! And hard enough to break
-      - <#A68348><i> through metal!
+      - <yellow>Dropped by <#BE6400>Rock-walkers<yellow> in
+      - <yellow>the <green>Inverted Forest<yellow> and <green>Great Fault<yellow>.
+      - <#A68348><i>The rockwalkers use these as their climbing
+      - <#A68348><i>gear, and its toughness sure looks the part.
 resourcepack:
   baseMaterial: minecraft:brick
   textures: mineinabyss:item/creature_drops/rockwalker_mandible

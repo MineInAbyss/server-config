@@ -2,13 +2,12 @@ namespaces: [ geary ]
 set.item:
   item:
     type: SALMON
-    itemName: <#00FFFF>tachikatana leg
+    itemName: <#00FFFF>Tachikanata Leg
     customModelData: 1
     lore:
-      - <yellow>Obtained from slaying
-      - <yellow>a <#00FFFF>tachikatana <yellow>found in
-      - <yellow>nests in the <green>Sea of Corpses<yellow>.
-      - <yellow>Tastes like crab!
+      - <yellow>Obtained from slaying a <#00FFFF>Tachikanata
+      - <yellow>found in nests in the <green>Sea of Corpses<yellow>.
+      - <#1B5BAD><i>Tastes like crab!
     food:
       saturation: 5
       nutrition: 5

@@ -8,8 +8,7 @@ set.item:
       - <yellow>Can be obtained by finding and
       - <yellow>catching a <#257BEB>Swarm Shocker <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
-      - <#1B5BAD><i>Seems like it would power something....
-      - <#1B5BAD><i>Cannot be cooked
+      - <#1B5BAD><i>This stores an impressive amount of energy!
 disableItemInteractions: { }
 resourcepack:
   baseMaterial: minecraft:gunpowder

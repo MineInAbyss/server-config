@@ -2,10 +2,10 @@ namespaces: [ geary ]
 set.item:
   item:
     type: BROWN_WOOL
-    itemName: <#BDA55D>Mantoyer Horn
+    itemName: <#BDA55D>Man-toyer Horn
     customModelData: 1
     lore:
-      - <yellow>Dropped by <#BDA55D>Mantoyer <yellow>in
+      - <yellow>Dropped by <#BDA55D>Man-toyers <yellow>in
       - <yellow>the <green>Inverted Forest<yellow>.
-      - <#A68348><i>cute small little horns
-      - <#A68348><i>carefull! they are sharp
+      - <#A68348><i>I could cut myself on these
+      - <#A68348><i>if I'm not careful.
