@@ -1,6 +1,6 @@
 spittleshrub:
   Type: HUSK
-  Display: 'Spittleshrub'
+  Display: '<#696112>Spittleshrub'
   Damage: 7
   Health: 45
   Options:
@@ -29,8 +29,8 @@ spittleshrub:
   Drops:
   - exp 20-35
   - GLOW_BERRIES 1-3 1
-  - geary mineinabyss:plant_matter 2-4
-
+  - geary mineinabyss:plant_matter 1-3 0.6
+  - geary mineinabyss:spittleshrub_root 1 0.2
 
   Skills:
   - skill{s=displayHealth} ~onDamaged  

@@ -1,14 +1,12 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: BRICK
+    type: WHEAT_SEEDS
     itemName: <#BE6400>Plant Matter
     customModelData: 1
     lore:
-      - <yellow>Dropped by <#BE6400>Hisoishi Crab <yellow>in
-      - <yellow>the <green>Great Fault<yellow> and <green>Inverted Forest<yellow>.
-      - <#A68348><i>This sharp claw can dig through stone with ease
-      - <#A68348><i> and even break bone!
+      - <yellow>Dropped by plant creatures throughout the abyss
+      - <yellow>can probably be used to make different plant types!
 resourcepack:
   baseMaterial: minecraft:wheat_seeds
   textures: mineinabyss:item/creature_drops/rockwalker_mandible

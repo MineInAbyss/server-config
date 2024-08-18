@@ -1,7 +1,7 @@
 Stingerhead:
   Type: SPIDER
-  Health: 250
-  Damage: 11
+  Health: 300
+  Damage: 13
   AIGoalSelectors:
     - clear
     - spiderattack
@@ -18,7 +18,7 @@ Stingerhead:
 
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.4
+    MovementSpeed: 0.37
     MaxCombatDistance: 24
     PreventOtherDrops: true
    # DigOutOfGround: true
@@ -30,6 +30,7 @@ Stingerhead:
     ViewRadius: 64
     Drive: false
     DamageTint: true
+    Scale: 1.2
   DamageModifiers:
     - PROJECTILE 0.10
     - SUFFOCATION 0.05
@@ -40,17 +41,17 @@ Stingerhead:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
-    - heal{amount=50} @self ~onkill
+    - heal{amount=150} @self ~onkill
     - skill{s=SH_Hit} ~onDamaged
     - dismount ~onDamaged
     - skill{s=stingerhead_unstuck} @self ~ondamaged
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
-    - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>20}
+    - propel{v=2;delay=1} @trigger ~onDamaged ?~distance{d=>20}
 
-    - skill{s=stingerhead_bigleap} @target ~onTimer:150   
-    - skill{s=stingerhead_leap} @target ~onTimer:100    
+    - skill{s=stingerhead_bigleap} @target ~onTimer:100   
+    - skill{s=stingerhead_leap} @target ~onTimer:60    
     - skill{s=stingerhead_spin} @self ~onDamaged 0.15
     #- state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
     #- skill{s=stingerhead_leap_attack} @self ~onTimer:20
@@ -143,7 +144,7 @@ Stingerhead_Stinger_Detached:
     Silent: true
   Drops:
     - exp 40-50
-    - geary mineinabyss:stingerhead_scale 0-1 0.1
+    - geary mineinabyss:stingerhead_scale 0-1 0.2
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=5;hS=.25;vS=.25} @modelpart{m=stingerhead_stinger;offset=LOCAL;x=-1} ~onTimer:1
     - skill{s=stingerhead_stinger_detached_spawn} @self ~onSpawn

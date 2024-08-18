@@ -10,7 +10,7 @@ Cancelattack:
 
 
 stingerhead_unstuck:
-  Cooldown: 5
+  Cooldown: 16
   Conditions:
    - damagecause{cause=SUFFOCATION} true
   Skills:
@@ -32,7 +32,7 @@ SH_Attack_DAMAGE:
   TargetConditions:
     - isblocking false
   Skills:
-    - damage{a=12;pkb=true;hnp=false;hp=true} @target
+    - damage{a=13;pkb=true;hnp=false;hp=true} @target
     - skill{s=Bleeding} @target
 SH_Hit:
   Cooldown: 1
@@ -72,7 +72,7 @@ stingerhead_clear_players:
     - throw{velocity=10;velocityY=3} @PlayersInRadius{a>=<skill.min_amount>;r=<skill.radius>}
 
 stingerhead_bigleap:
-  Cooldown: 30
+  Cooldown: 20
   Conditions:
     - targetinlineofsight{} true
     - offgcd true
@@ -93,7 +93,7 @@ stingerhead_bigleap:
     - state{s=launch_attack;remove=true} @self
     - setai{ai=true} @self
 stingerhead_leap:
-  Cooldown: 10
+  Cooldown: 7
   Conditions:
     - offgcd true
     - targetinlineofsight
@@ -203,7 +203,7 @@ stingerhead_hit_stinger:
 
 
 stingerhead_venom:
-  Cooldown: 8
+  Cooldown: 6
   Conditions:
     - incombat true
     - offgcd true
