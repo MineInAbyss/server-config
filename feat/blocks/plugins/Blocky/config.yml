@@ -39,7 +39,6 @@ furniture:
     type: ITEM
     item:
       type: minecraft:glass
-      hideTooltips: false
   worldEdit: false
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
