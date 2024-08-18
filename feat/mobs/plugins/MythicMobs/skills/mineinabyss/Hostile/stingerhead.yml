@@ -265,3 +265,51 @@ Bleeding:
     - effect:sound{s=entity.generic.hurt;v=1;p=1;} @target
     - effect:particles{p=dripLava;vs=0.5;hs=0.5;a=10;s=0.25;y=0.5;repeat=5;repeatInterval=20} @target
     - damage{a=1;repeat=4;repeatInterval=20;pkb=false;ia=true} @target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stingerburrow:
+  Conditions:
+      - offgcd true
+      - targetinlineofsight
+      - incombat true
+  Cooldown: 10
+  Skills:
+      - setai{ai=false} @self
+      - state{s=burrow_in} @self
+      - particles{p=blockcrack;amount=15;hS=1;vS=2;material=SAND;repeat=10;repeati=2} @self
+      - particles{p=blockcrack;amount=15;hS=1;vS=2;material=GRAVEL;repeat=10;repeati=2} @self
+      - particles{p=blockcrack;amount=15;hS=1;vS=2;material=ICE;repeat=10;repeati=2} @self
+      - potion{type=RESISTANCE;duration=80;level=10} @self
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
+      - delay 5
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
+      - delay 5
+      - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
+      - delay 22
+
+      - teleport{spreadh=5;spreadv=0} @targetlocation
+      - state{s=dig_out} @self
+
+      - skill{s=stingerdigout} @Self
+      - delay 20
+      - setAI{ai=true} @self
+
+stingerdigout:
+  Skills:
+      - damage{amount=10;ignoreArmor=false} @PlayersInRadius{r=7}
+      - delay 1
+      - particles{p=blockcrack;amount=10;hS=2;vS=2;material=DIRT} @Self
+      - particles{p=explosion_emitter;amount=10;hS=2;vS=2} @Self
+      - particles{p=blockdust;amount=10;material=SAND;hS=2;vS=2} @Self

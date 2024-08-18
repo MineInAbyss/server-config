@@ -4,7 +4,7 @@ l4p:
   Worlds: world
   Chance: 0.0015
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   #- onblock{m=GRASS_BLOCK,DIRT} true
@@ -19,7 +19,7 @@ l4d:
   Worlds: world
   Chance: 0.0005
   Priority: 0.6
-  Cooldown: 10
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
@@ -89,7 +89,7 @@ l4fa2:
   Worlds: world
   Chance: 0.000005
   Priority: 1
-  Cooldown: 15
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3} true

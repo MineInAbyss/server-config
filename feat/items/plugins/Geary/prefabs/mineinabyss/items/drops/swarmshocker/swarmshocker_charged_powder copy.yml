@@ -2,7 +2,7 @@ namespaces: [ geary ]
 set.item:
   item:
     type: GUNPOWDER
-    itemName: "<#257BEB>Charged Powder"
+    itemName: "<#257BEB>Swarmshocker Charged Powder"
     customModelData: 2
     lore:
       - <yellow>Can be obtained by finding and
@@ -11,3 +11,8 @@ set.item:
       - <#1B5BAD><i>Seems like it would power something....
       - <#1B5BAD><i>Cannot be cooked
 disableItemInteractions: { }
+resourcepack:
+  baseMaterial: minecraft:gunpowder
+  textures: mineinabyss:item/creature_drops/swarmshocker_charged_powder
+  itemPredicates:
+    customModelData: 2

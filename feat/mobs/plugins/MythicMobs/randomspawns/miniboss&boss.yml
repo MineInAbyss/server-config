@@ -6,11 +6,11 @@ stingerhead:
   Worlds: world
   Chance: 0.0002
   Priority: 0.5
-  Cooldown: 15
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=stingerheaddesert,stingerheadnestcave,stingerheadsanddesert,stingerheadsnow} true
-  - mobsinradius{types=virinsipede;a=2to99;radius=100} false
+  - mobsinradius{types=stingerhead;a=1to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 

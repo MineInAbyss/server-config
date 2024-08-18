@@ -1,30 +1,19 @@
 namespaces: [ geary ]
 set.item:
   item:
-    type: PRISMARINE
-    itemName: <#00FFFF>tachikanata Claw
+    type: SALMON
+    itemName: <#00FFFF>tachikatana leg
     customModelData: 1
     lore:
       - <yellow>Obtained from slaying
-      - <yellow>a <#00FFFF>tachikanata <yellow>found in
+      - <yellow>a <#00FFFF>tachikatana <yellow>found in
       - <yellow>nests in the <green>Sea of Corpses<yellow>.
       - <yellow>Tastes like crab!
     food:
-      saturation: 3
+      saturation: 5
       nutrition: 5
-set.recipes:
-  discoverRecipes: true
-  recipes:
-    - !<furnace>
-      input: mineinabyss:shroombear_meat_raw
-      experience: 1f
-      cookingTime: 100
-    - !<smoking>
-      input: mineinabyss:shroombear_meat_raw
-      experience: 2f
-      cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:prismarine
+  baseMaterial: minecraft:salmon
   textures: mineinabyss:item/creature_drops/tachikatana_leg
   itemPredicates:
-    customModelData: 1
+    customModelData: 2

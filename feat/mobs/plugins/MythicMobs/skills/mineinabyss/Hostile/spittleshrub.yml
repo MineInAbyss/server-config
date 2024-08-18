@@ -43,7 +43,7 @@ SpittleshrubMeleeDamage:
   - effect:particles{p=crit;a=55;hS=0.4;vS=0.4;y=1.5}
   - effect:particles{p=reddust;size=5;color=#32CE32;a=5;hS=0.2;vS=0.2;y=1.5}
   - basedamage{m=1.2}
-  - potion{type=POISON;d=100;level=3;ow=true}
+  - potion{type=POISON;d=60;level=2;ow=true}
   - throw{v=4;vy=2}
   
 SpittleshrubDamaged:
@@ -68,7 +68,7 @@ SpittleshrubSpit:
   - gcd{ticks=30} @self
   - setai{ai=false} @self
   - delay 22
-  - missile{v=32;vo=0.5;inertia=1;
+  - missile{v=25;vo=0.5;inertia=1;
       onStart=[
         - sound{s=entity.llama.spit;p=1.5}
         - particles{p=spit;directional=true;speed=1} @target
@@ -80,8 +80,8 @@ SpittleshrubSpit:
       ];
       onHit=[
         - effect:sound{s=entity.bee.sting;p=1.5;v=1}
-        - potion{type=SLOW;d=100;p=1}
-        - potion{type=POISON;d=100;level=2;ow=true}
+        - potion{type=SLOW;d=60;p=1}
+        - potion{type=POISON;d=60;level=1;ow=true}
       ];
       onEnd=[
         - effect:particles{p=wax_off;a=40;hS=0.2;vS=0.2}

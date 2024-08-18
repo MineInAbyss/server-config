@@ -9,7 +9,6 @@ mantoyer:
     - lookatplayers
     - randomlookaround
     - float
-    #- fleeplayers{d=10;s=2;ss=1}
   AITargetSelectors:
     - clear
     - players

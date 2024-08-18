@@ -3,7 +3,7 @@ set.item:
   item:
     type: STRING
     itemName: <#03AC13>Stinger wing
-    customModelData: 1
+    customModelData: 2
     lore:
       - <yellow>Obtained from <#25D648>Stinger <yellow>in
       - <yellow>the <green>Inverted Forest <yellow>and
@@ -11,3 +11,8 @@ set.item:
       - <#167D2A><i>A very thin, yet surprisingly
       - <#167D2A><i>flexible piece of flesh
 disableItemInteractions: {}
+resourcepack:
+  baseMaterial: minecraft:string
+  textures: mineinabyss:item/creature_drops/stinger_wing
+  itemPredicates:
+    customModelData: 3

@@ -1,0 +1,13 @@
+namespaces: [ geary ]
+set.item:
+  item:
+    type: SLIME_BALL
+    itemName: "<#257BEB>Swarmhoarder Jelly"
+    customModelData: 1
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>killing a <#257BEB>Swarm Hoarder <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#1B5BAD><i>This can hold things together!
+      - <#1B5BAD><i>Tastes like water....
+disableItemInteractions: { }

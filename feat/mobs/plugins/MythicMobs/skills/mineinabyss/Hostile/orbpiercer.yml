@@ -53,7 +53,7 @@ orbyspear:
   Conditions:
     - offgcd
     - stance{s=spikeless;str=true} false
-    - lineofsight true
+    - targetinlineofsight
   Cooldown: 56
   Skills:
     - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self
@@ -64,7 +64,7 @@ orbyspear:
 orbyspear2:
   Conditions:
     - offgcd
-    - lineofsight true
+    - targetinlineofsight
   Cooldown: 6
   Skills:
     - state{mid=orbpiercer;s=normal_shot;li=0;lo=0;r=false} @self

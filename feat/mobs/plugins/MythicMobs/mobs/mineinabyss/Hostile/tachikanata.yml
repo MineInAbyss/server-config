@@ -1,7 +1,7 @@
 tachikatana:
   Type: ZOMBIE
   Display: "<#00FFFF>tachikanata"
-  Health: 150
+  Health: 200
   Damage: 0
   AIGoalSelectors:
     - clear
@@ -32,8 +32,14 @@ tachikatana:
     DamageTint: true
   DamageModifiers:
     - DROWNING 0
-    - PROJECTILE 0.25
+    - PROJECTILE 0.50
     - SUFFOCATION 0
+  Drops:
+    - exp 100-250
+    - geary mineinabyss:tachikatana_leg 1-2 0.8
+    - geary mineinabyss:tachikatana_claw 1-2 0.8
+    - geary mineinabyss:tachikatana_scale 1-2 0.8
+
   Skills:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath

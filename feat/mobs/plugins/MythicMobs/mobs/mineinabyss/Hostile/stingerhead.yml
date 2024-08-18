@@ -1,5 +1,6 @@
 Stingerhead:
   Type: SPIDER
+  Display: "<#9C0F2C>Stingerhead"
   Health: 300
   Damage: 13
   AIGoalSelectors:
@@ -31,9 +32,18 @@ Stingerhead:
     Drive: false
     DamageTint: true
     Scale: 1.2
+
+  Drops:
+    - exp 100-250
+    - geary mineinabyss:stingerhead_scale 1-2 1
+    - geary mineinabyss:stingerhead_flesh 1-2 1
+    - geary mineinabyss:stingerhead_eye 1-2 0.4
+
+
+
   DamageModifiers:
     - PROJECTILE 0.10
-    - SUFFOCATION 0.05
+    - SUFFOCATION 0.01
   Skills: 
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
@@ -49,7 +59,7 @@ Stingerhead:
     - skill{s=stingerhead_venom} @target ~onTimer:45
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=2;delay=1} @trigger ~onDamaged ?~distance{d=>20}
-
+    - skill{s=virinburrow} @Self ~onDamaged 0.1
     - skill{s=stingerhead_bigleap} @target ~onTimer:100   
     - skill{s=stingerhead_leap} @target ~onTimer:60    
     - skill{s=stingerhead_spin} @self ~onDamaged 0.15

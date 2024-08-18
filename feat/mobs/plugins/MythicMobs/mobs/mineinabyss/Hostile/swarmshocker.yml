@@ -13,13 +13,13 @@ swarmshocker:
   AITargetSelectors:
   - clear
   - players
-  Health: 15 # change this
+  Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
     Despawn: false
     Silent: true
     FollowRange: 10
-    MovementSpeed: 0.35
+    MovementSpeed: 0.4
     KnockbackResistance: 0.0
     interactable: false
     PreventOtherDrops: true
@@ -61,18 +61,19 @@ swarmhoarder:
   AITargetSelectors:
   - clear
   - players
-  Health: 60 # change this
+  Health: 70 # change this
   Damage: 0 # keep this 0
   Options:
     Despawn: false
     Silent: true
     FollowRange: 10
-    MovementSpeed: 0.25
+    MovementSpeed: 0.3
     KnockbackResistance: 0.0
     interactable: false
   Drops:
-  - exp 10-35
+  - exp 20-35
   - geary mineinabyss:swarmshocker_charged_powder 1-2 0.6
+  - geary mineinabyss:swarmshocker_jelly 1-2 0.6
   DamageModifiers:
   Model:
     Id: swarmshockermid

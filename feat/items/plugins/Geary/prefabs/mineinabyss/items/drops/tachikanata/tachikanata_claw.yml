@@ -2,16 +2,16 @@ namespaces: [ geary ]
 set.item:
   item:
     type: PRISMARINE_CRYSTALS
-    itemName: <#00FFFF>tachikanata Scale
+    itemName: <#00FFFF>tachikatana Scale
     customModelData: 2
     lore:
-      - <yellow>Obtained from slaying a <#00FFFF>tachikanata
+      - <yellow>Obtained from slaying a <#00FFFF>tachikatana
       - <yellow>found around the in the <green>Sea of Corpses<yellow>.
-      - <#EB1742><i>A shiny scale knocked off the tachikanata!
+      - <#EB1742><i>A shiny scale knocked off the tachikatana!
       - <#EB1742><i>Striking it in a particular way emits
       - <#EB1742><i>a shockwave, what if i combine this...
 resourcepack:
   baseMaterial: minecraft:prismarine_crystals
-  textures: mineinabyss:item/creature_drops/tachikanata_claw
+  textures: mineinabyss:item/creature_drops/tachikatana_claw
   itemPredicates:
     customModelData: 1

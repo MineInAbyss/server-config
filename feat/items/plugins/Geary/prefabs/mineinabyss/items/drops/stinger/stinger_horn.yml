@@ -8,3 +8,8 @@ set.item:
       - <yellow>Dropped by <#25D648>Stinger's <yellow>infesting the
       - <green>Inverted Forest <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>The beak of a Stinger sharp enough to pierce flesh
+resourcepack:
+  baseMaterial: minecraft:quartz
+  textures: mineinabyss:item/creature_drops/stinger_horn
+  itemPredicates:
+    customModelData: 1

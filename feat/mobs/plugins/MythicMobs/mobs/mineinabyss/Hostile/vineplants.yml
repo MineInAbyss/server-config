@@ -9,7 +9,7 @@ vinebinder:
   AITargetSelectors:
   - clear
   - players
-  Health: 30 # change this
+  Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
     Preventsunburn: true
@@ -24,14 +24,19 @@ vinebinder:
     Drive: false
     DamageTint: true
     Scale: 1
+
+  Drops:
+  - exp 10-15
+  - geary mineinabyss:plant_matter 1-2 0.6
+
   Skills:
   ####### Misc
   - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
-  - skill{s=vinebinderattack} @Self ~onAttack
-  - skill{s=vinebinderwave} @target ~onTimer:20
+  - skill{s=vbATTACK} @Self ~onAttack
+  #- skill{s=vinebinderwave} @target ~onTimer:20
 
 vineblaster:
   Type: ZOMBIE
@@ -44,7 +49,7 @@ vineblaster:
   AITargetSelectors:
   - clear
   - players
-  Health: 20 # change this
+  Health: 16 # change this
   Damage: 0 # keep this 0
   Options:
     Preventsunburn: true
@@ -59,6 +64,10 @@ vineblaster:
     Drive: false
     DamageTint: true
     Scale: 0.3
+  Drops:
+  - exp 10-15
+  - geary mineinabyss:plant_matter 1-2 0.6
+
   Skills:
   ####### Misc
   - skill{s=displayHealth} ~onDamaged  
@@ -79,7 +88,7 @@ vinepoofer:
   AITargetSelectors:
   - clear
   - players
-  Health: 30 # change this
+  Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
     Preventsunburn: true
@@ -94,6 +103,10 @@ vinepoofer:
     Drive: false
     DamageTint: true
     Scale: 1
+  Drops:
+  - exp 10-15
+  - geary mineinabyss:plant_matter 1-2 0.6
+
   Skills:
   ####### Misc
   - skill{s=displayHealth} ~onDamaged  

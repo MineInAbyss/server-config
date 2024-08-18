@@ -3,10 +3,10 @@ set.item:
   item:
     type: PRISMARINE_SHARD
     customModelData: 1
-    itemName: <#00FFFF>tachikanata Scale
+    itemName: <#00FFFF>tachikatana Scale
     lore:
       - <yellow>Obtained from slaying
-      - <yellow>a <#00FFFF>tachikanata <yellow>found in
+      - <yellow>a <#00FFFF>tachikatana <yellow>found in
       - <yellow>nests in the <green>Sea of Corpses<yellow>.
       - <yellow>It is said to be the most waterproof
       - <yellow>material in the <green>Abyss<yellow>.
@@ -14,6 +14,6 @@ set.item:
       - <#EB1742><i>better with this?
 resourcepack:
   baseMaterial: minecraft:prismarine_shard
-  textures: mineinabyss:item/creature_drops/tachikanata_scale
+  textures: mineinabyss:item/creature_drops/tachikatana_scale
   itemPredicates:
     customModelData: 1

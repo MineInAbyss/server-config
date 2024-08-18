@@ -84,9 +84,9 @@ l5d:
   Type: stinger,Kuongatari
   Action: ADD
   Worlds: world
-  Chance: 0.001
+  Chance: 0.00075
   Priority: 0.1
-  Cooldown: 15
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
@@ -101,7 +101,7 @@ l5w:
   Worlds: world
   Chance: 0.0005
   PositionType: SEA
-  Cooldown: 10
+  Cooldown: 5
   Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
@@ -132,7 +132,7 @@ l5f:
   Worlds: world
   Chance: 0.001
   Priority: 0.5
-  Cooldown: 10
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
@@ -147,7 +147,7 @@ l5fa2:
   Worlds: world
   Chance: 0.000025
   Priority: 1
-  Cooldown: 30
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
