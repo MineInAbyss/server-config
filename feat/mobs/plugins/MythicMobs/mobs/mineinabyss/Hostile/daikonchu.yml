@@ -30,3 +30,4 @@ daikonchu:
   - skill{s=Changetarget} ~onTimer:160 <99%
   - model{mid=daikonchu;n=false} @Self ~onSpawn
   - skill:DaikonchuAttack @Self ~onAttack
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

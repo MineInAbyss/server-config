@@ -38,3 +38,4 @@ buruguro:
   - skill{s=buruguroTick} @self ~onTimer:20
   - skill{s=buroguroMelee} @trigger ~onAttack
   
+  - skill{s=stingerhead_unstuck} @self ~ondamaged

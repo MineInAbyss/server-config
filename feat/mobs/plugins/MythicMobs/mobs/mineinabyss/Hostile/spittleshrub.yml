@@ -44,3 +44,4 @@ spittleshrub:
   - skill:SpittleshrubMelee @trigger ~onAttack
   - skill:SpittleshrubInteract @trigger ~onInteract
   
+  - skill{s=stingerhead_unstuck} @self ~ondamaged

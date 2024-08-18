@@ -44,7 +44,7 @@ swarmshocker:
   - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
   - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
-
+  - skill{s=stingerhead_unstuck} @self ~ondamaged
 
 swarmhoarder:
   Type: ZOMBIE
@@ -91,6 +91,6 @@ swarmhoarder:
   - effect:particles{particle=glow_squid_ink;a=<random.2to5>;hs=0.15;vs=0.15;s=0;y=0;delay=40;repeat=4;repeatInterval=1} @self ~onDeath
   - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;delay=<random.0to10>;repeat=1;repeatInterval=2} @self ~onTimer:20 0.8
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
-
+  - skill{s=stingerhead_unstuck} @self ~ondamaged
 
   - skill{s=swarm_Summon} @self ~onDeath

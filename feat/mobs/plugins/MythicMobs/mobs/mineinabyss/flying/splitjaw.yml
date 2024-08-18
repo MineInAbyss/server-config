@@ -60,3 +60,4 @@ splitjaw:
     - effect:sound{s=mineinabyss:entity.splitjaw.hurt;v=6;p=0.8} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=2} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

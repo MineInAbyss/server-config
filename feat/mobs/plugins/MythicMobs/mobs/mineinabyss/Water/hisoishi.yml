@@ -18,8 +18,10 @@ hisoishi:
     - clear
     - meleeattack
     - randomstroll
+    
     - lookatplayers
     - randomlookaround
+    - float
   AITargetSelectors:
     - clear
     - attacker

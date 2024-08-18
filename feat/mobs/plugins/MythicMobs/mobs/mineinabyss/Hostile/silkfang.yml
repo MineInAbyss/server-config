@@ -51,3 +51,4 @@ silkfang:
   - skill{s=silkfangHurt} @self ~onHurt
   - skill{s=silkfangDeath} @self ~onDeath
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
+  - skill{s=stingerhead_unstuck} @self ~ondamaged

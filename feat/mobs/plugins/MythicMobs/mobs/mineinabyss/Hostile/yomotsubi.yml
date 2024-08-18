@@ -38,3 +38,4 @@ yomotsubi:
     - state{mid=yomotsubi;s=attack} @self ~onAttack
     
     - skill{s=yomotsubi_airball} @target ~onTimer:20
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

@@ -40,6 +40,7 @@ Kuongatari:
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged
 Kuongatari_summon:
   Type: SPIDER
   Display: "<#1FB53D>Baby Kuongatari"
@@ -79,3 +80,4 @@ Kuongatari_summon:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

@@ -12,3 +12,4 @@ kessho:
   - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
   - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
+  - skill{s=stingerhead_unstuck} @self ~ondamaged

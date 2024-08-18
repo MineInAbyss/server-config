@@ -47,3 +47,4 @@ corpse_weeper:
     - effect:sound{s=mineinabyss:entity.corpseweeper.cry;v=6;p=0.8} @self ~onCry
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

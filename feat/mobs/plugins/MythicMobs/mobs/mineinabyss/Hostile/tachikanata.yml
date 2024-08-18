@@ -57,3 +57,4 @@ tachikatana:
     #- state{mid=tachikatana;s=swipe_attack;li=3;lo=3} @self ~onAttack
 
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

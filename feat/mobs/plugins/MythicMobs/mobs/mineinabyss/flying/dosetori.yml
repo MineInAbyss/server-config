@@ -47,3 +47,4 @@ dosetori:
     - effect:sound{s=mineinabyss:entity.dosetori.hurt;v=6;p=0.8} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

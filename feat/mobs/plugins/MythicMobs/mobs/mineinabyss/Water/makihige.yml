@@ -35,3 +35,4 @@ makihige:
   Skills:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=stingerhead_unstuck} @self ~ondamaged

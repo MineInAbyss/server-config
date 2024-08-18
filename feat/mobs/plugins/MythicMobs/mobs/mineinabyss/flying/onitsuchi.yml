@@ -1,8 +1,8 @@
 onitsuchi:
   Type: ALLAY
   Display: "<#5C471D>Onitsuchi"
-  Health: 60
-  Damage: 9
+  Health: 50
+  Damage: 7
   AIGoalSelectors:
     - clear
     - meleeattack{speed=1.5;range=1.5}

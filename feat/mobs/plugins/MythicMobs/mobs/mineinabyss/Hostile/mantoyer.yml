@@ -40,3 +40,4 @@ mantoyer:
   #- model{mid=daikonchu;n=false} @Self ~onSpawn
  # - skill:DaikonchuAttack @Self ~onAttack
 #  - skill:DwellingBugTame @Self ~onInteract COMING SOON!!!!!!!
+    - skill{s=stingerhead_unstuck} @self ~ondamaged
