@@ -3,7 +3,7 @@ set.item:
   item:
     type: PRISMARINE_CRYSTALS
     itemName: <#00FFFF>Tachikatana Claw
-    customModelData: 5
+    customModelData: 3
     lore:
       - <yellow>Obtained from slaying a <#00FFFF>Tachikatana
       - <yellow>found in nests in the <green>Sea of Corpses<yellow>.
@@ -13,4 +13,4 @@ resourcepack:
   baseMaterial: minecraft:prismarine_crystals
   textures: mineinabyss:item/creature_drops/tachikatana_claw
   itemPredicates:
-    customModelData: 5
+    customModelData: 3

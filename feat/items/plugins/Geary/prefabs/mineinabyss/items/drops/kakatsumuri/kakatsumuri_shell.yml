@@ -3,7 +3,7 @@ set.item:
   item:
     type: PRISMARINE_CRYSTALS
     itemName: <#7D93FF>Kakatsumuri Shell
-    customModelData: 3
+    customModelData: 2
     lore:
       - <yellow>Dropped by <#7D93FF>Kakatsumuri
       - <yellow>in the <green>Great Fault<yellow>.
@@ -13,4 +13,4 @@ resourcepack:
   baseMaterial: minecraft:prismarine_crystals
   textures: mineinabyss:item/creature_drops/kakatsumuri_shell
   itemPredicates:
-    customModelData: 3
+    customModelData: 2

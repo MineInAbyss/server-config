@@ -3,7 +3,7 @@ set.item:
   item:
     type: GLOW_INK_SAC
     itemName: <#ADD8E6>Octoliar Ink Sac
-    customModelData: 1
+    customModelData: 2
     lore:
       - <yellow>Dropped by <#ADD8E6>Octoliars in the
       - <yellow><green>Goblets of Giants<yellow> and <green>Sea of Corpses<yellow>.
@@ -14,4 +14,4 @@ resourcepack:
   baseMaterial: minecraft:glow_ink_sac
   textures: mineinabyss:item/creature_drops/octoliar_ink_sac
   itemPredicates:
-    customModelData: 1
+    customModelData: 2

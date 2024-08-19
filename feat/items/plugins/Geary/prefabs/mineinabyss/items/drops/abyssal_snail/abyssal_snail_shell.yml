@@ -11,6 +11,6 @@ set.item:
       - <#A68348><i>the wailing of the souls lost to the sea.
 resourcepack:
   baseMaterial: minecraft:nautilus_shell
-  textures: mineinabyss:item/creature_drops/abyssal_snail_gunk
+  textures: mineinabyss:item/creature_drops/abyssal_snail_shell
   itemPredicates:
     customModelData: 1
