@@ -3,7 +3,7 @@ set.item:
   item:
     type: GLOW_INK_SAC
     itemName: <#7D93FF>Kakatsumuri Glowing Tip
-    customModelData: 1
+    customModelData: 4
     lore:
       - <yellow>Dropped by <#7D93FF>Kakatsumuri
       - <yellow>in the <green>Great Fault<yellow>.
@@ -13,4 +13,4 @@ resourcepack:
   baseMaterial: minecraft:glow_ink_sac
   textures: mineinabyss:item/creature_drops/kakatsumuri_glowing_tip
   itemPredicates:
-    customModelData: 1
+    customModelData: 4

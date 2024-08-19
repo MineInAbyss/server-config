@@ -14,6 +14,7 @@ kakatsumuri:
     - clear
   Options:
     Collidable: true
+    PreventOtherDrops: true
     Silent: true
     FollowRange: 20
     interactable: true
@@ -22,8 +23,6 @@ kakatsumuri:
     Id: kakatsumuri
     ViewRadius: 64
     DamageTint: true
-    PreventOtherDrops: true
-    Silent: true
   Drops:
     - exp 3-8
     - geary mineinabyss:kakatsumuri_shell 1 0.8

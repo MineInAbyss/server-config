@@ -2,10 +2,10 @@ namespaces: [ geary ]
 set.item:
   item:
     type: PRISMARINE_CRYSTALS
-    itemName: <#00FFFF>Tachikanata Claw
-    customModelData: 2
+    itemName: <#00FFFF>Tachikatana Claw
+    customModelData: 5
     lore:
-      - <yellow>Obtained from slaying a <#00FFFF>Tachikanata
+      - <yellow>Obtained from slaying a <#00FFFF>Tachikatana
       - <yellow>found in nests in the <green>Sea of Corpses<yellow>.
       - <#1B5BAD><i>Striking it in a particular way emits
       - <#1B5BAD><i>a shockwave..
@@ -13,4 +13,4 @@ resourcepack:
   baseMaterial: minecraft:prismarine_crystals
   textures: mineinabyss:item/creature_drops/tachikatana_claw
   itemPredicates:
-    customModelData: 1
+    customModelData: 5

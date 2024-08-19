@@ -23,3 +23,8 @@ set.recipes:
       input: mineinabyss:hagamizukin_raw
       experience: 2f
       cookingTime: 50
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/food/creatures/hagamizukin_cooked
+  itemPredicates:
+    customModelData: 422

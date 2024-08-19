@@ -9,3 +9,8 @@ set.item:
       - <yellow>killing a <#0B6623>Hagamizukin <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>extremely sharp tooth used to make hard things
+resourcepack:
+  baseMaterial: minecraft:quartz
+  textures: mineinabyss:item/creature_drops/hagamizukin_tooth
+  itemPredicates:
+    customModelData: 2

@@ -14,3 +14,8 @@ set.item:
       nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:hagamizukin_cooked
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/food/creatures/hagamizukin_raw
+  itemPredicates:
+    customModelData: 322

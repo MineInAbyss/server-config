@@ -9,3 +9,8 @@ set.item:
       - <yellow>the plains of the <green>Sea of Corpses<yellow>.
       - <#A68348><i>Its hard and solid...
       - <#A68348><i>I can build structures with this.
+resourcepack:
+  baseMaterial: minecraft:white_concrete
+  textures: mineinabyss:item/creature_drops/horncrier_horn
+  itemPredicates:
+    customModelData: 1
