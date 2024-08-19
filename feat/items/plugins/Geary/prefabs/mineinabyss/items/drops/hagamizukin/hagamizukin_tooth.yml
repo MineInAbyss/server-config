@@ -3,7 +3,7 @@ set.item:
   item:
     type: QUARTZ
     itemName: <#0B6623>Hagamizukin
-    customModelData: 2
+    customModelData: 4
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>killing a <#0B6623>Hagamizukin <yellow>in the
@@ -13,4 +13,4 @@ resourcepack:
   baseMaterial: minecraft:quartz
   textures: mineinabyss:item/creature_drops/hagamizukin_tooth
   itemPredicates:
-    customModelData: 2
+    customModelData: 4

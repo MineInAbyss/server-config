@@ -3,7 +3,7 @@ set.item:
   item:
     type: SLIME_BALL
     itemName: "<#257BEB>Swarmhoarder Jelly"
-    customModelData: 1
+    customModelData: 3
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>killing a <#257BEB>Swarm Hoarder <yellow>in the
@@ -15,4 +15,4 @@ resourcepack:
   baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/swarmshocker_jelly
   itemPredicates:
-    customModelData: 1
+    customModelData: 3

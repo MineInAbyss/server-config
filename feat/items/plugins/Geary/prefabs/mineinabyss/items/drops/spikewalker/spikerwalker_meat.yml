@@ -10,6 +10,6 @@ set.item:
       - <#ED4C4C><i>It's rough and gamey...
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/creature_drops/spikewalker_spike
+  textures: mineinabyss:item/creature_drops/spikewalker_meat
   itemPredicates:
     customModelData: 400

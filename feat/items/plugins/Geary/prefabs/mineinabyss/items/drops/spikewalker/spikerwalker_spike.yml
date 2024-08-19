@@ -3,7 +3,7 @@ set.item:
   item:
     type: QUARTZ
     itemName: <#116AAD>Spikewalker Spike
-    customModelData: 1
+    customModelData: 2
     lore:
       - <#ED4C4C><i>Large Spike removed
       - <#ED4C4C><i>from that back of a <#116AAD>Spikewalker
@@ -12,4 +12,4 @@ resourcepack:
   baseMaterial: minecraft:quartz
   textures: mineinabyss:item/creature_drops/spikewalker_spike
   itemPredicates:
-    customModelData: 1
+    customModelData: 2
