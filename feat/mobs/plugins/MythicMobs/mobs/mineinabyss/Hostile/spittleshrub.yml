@@ -6,9 +6,9 @@ spittleshrub:
   Options:
     Despawn: true
     PreventSunburn: true
-    PreventOtherDrops: true
     PreventJockeyMounts: true
     ShowName: false
+    Silent: true
     MovementSpeed: 0.34
     KnockbackResistance: 1
     FollowRange: 32
