@@ -2,13 +2,13 @@ namespaces: [ geary ]
 set.item:
   item:
     type: ECHO_SHARD
-    itemName: "<#800080>Edusan Scale"
+    itemName: "<#800080>Edusan Whisker"
     customModelData: 1
     lore:
-      - <yellow>Can be obtained by finding and
-      - <yellow>catching a <#257BEB>Demonfish <yellow>in the
-      - <yellow>waters of the <green>Sea of Corpses<yellow>.
-      - <#1B5BAD><i>Seems like a great source for food!
+      - <yellow>Can be obtained by finding the rare
+      - <yellow><#257BEB>Edusan <yellow>in the waters
+      - <yellow>of the <green>Sea of Corpses<yellow>.
+      - <#1B5BAD><i>This thing emits a strange aura...
 disableItemInteractions: {}
 resourcepack:
   baseMaterial: minecraft:echo_shard
