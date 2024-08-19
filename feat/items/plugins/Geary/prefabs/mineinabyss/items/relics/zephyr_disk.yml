@@ -17,10 +17,10 @@ observe:
         - become: it
         - playSound:
             sound: minecraft:entity.generic.extinguish_fire
-        - knockback:
-            center: "{{ center }}"
-            power: 1
-            yAngle: 0.5
+#        - knockback:
+#            center: "{{ center }}"
+#            power: 1
+#            yAngle: 0.5
         - particle:
             at: "{{ entity.getLocation }}"
             particle: CLOUD

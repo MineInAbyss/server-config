@@ -1,0 +1,15 @@
+namespaces: [ geary ]
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:suspicious_gravel
+    amount: 8
+  recipes:
+    - !<shaped>
+      items:
+        S: { type: minecraft:gravel }
+        D: { prefab: mineinabyss:hashofu_body }
+      configuration: |-
+        |SSS|
+        |SDS|
+        |SSS|

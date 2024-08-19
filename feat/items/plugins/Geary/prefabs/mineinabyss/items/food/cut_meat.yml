@@ -1,0 +1,14 @@
+namespaces: [geary, mineinabyss]
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Cut Meat
+    customModelData: 130
+    food:
+      saturation: 12.8
+      nutrition: 8
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/food/cut_meat
+  itemPredicates:
+    customModelData: 130

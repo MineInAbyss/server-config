@@ -1,0 +1,25 @@
+namespaces: [geary, mineinabyss]
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Knife
+    customModelData: 129
+    maxStackSize: 1
+    lore:
+      - <yellow>Used to cut meat into smaller pieces.
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/tools/knife
+  itemPredicates:
+    customModelData: 129
+
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<shaped>
+      items:
+        I: { type: minecraft:iron_ingot }
+        S: { type: minecraft:stick }
+      configuration: |-
+        |I|
+        |S|

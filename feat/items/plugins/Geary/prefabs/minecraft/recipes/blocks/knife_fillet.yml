@@ -1,0 +1,17 @@
+namespaces: [ geary ]
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:cut_meat
+  group: mineinabyss:cut_meat
+  recipes:
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:knife
+          recipeOptions: [ !<keep> {} ]
+        - prefab: mineinabyss:ashimite_meat_raw
+    - !<shapeless>
+      items:
+        - prefab: mineinabyss:knife
+          recipeOptions: [ !<keep> {} ]
+        - prefab: mineinabyss:inbyo_meat_raw

@@ -11,17 +11,13 @@ set.item:
 observe:
   itemConsumed:
     - become: parent
-    #- set.potionEffects:
-    #    - type: minecraft:speed
-    #      duration: 7s
-    #      amplifier: 10
-    #    - type: minecraft:jump_boost
-    #      duration: 7s
-    #      amplifier: 3
-    - damage:
-        damage: 10
-        minHealth: 1
-        ignoreArmor: true
+    - applyPotionEffects:
+        - type: minecraft:speed
+          duration: 7s
+          amplifier: 10
+        - type: minecraft:jump_boost
+          duration: 7s
+          amplifier: 3
 resourcepack:
   baseMaterial: minecraft:potion
   textures:

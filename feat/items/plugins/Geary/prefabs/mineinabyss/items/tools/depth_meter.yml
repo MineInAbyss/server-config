@@ -24,12 +24,11 @@ depthmeter: { }
 observe:
   itemLeftClick:
     - become: parent
+    - ensure:
+        cooldownsComplete: [ depth_meter ]
     - startCooldown:
         id: depth_meter
         length: 1s
-        display: <#617B94>Depth Meter
-    - ensure:
-        cooldownsComplete: [ depth_meter ]
     - showDepth: { }
 
   itemRightClick:

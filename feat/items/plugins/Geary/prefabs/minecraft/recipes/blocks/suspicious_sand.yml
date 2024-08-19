@@ -1,0 +1,15 @@
+namespaces: [ geary ]
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:suspicious_sand
+    amount: 8
+  recipes:
+    - !<shaped>
+      items:
+        S: { type: minecraft:sand }
+        D: { prefab: mineinabyss:hashofu_body }
+      configuration: |-
+        |SSS|
+        |SDS|
+        |SSS|
