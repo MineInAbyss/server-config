@@ -34,13 +34,13 @@ swarmshockerShock:
   - effect:particlesphere{particle=electricSpark;a=<random.10to20>;r=1;hs=0.08;vs=0.08;s=0;y=0;repeat=9;repeatInterval=1} @self
   - sound{s=entity.zombie.destroy_egg;sc=master;p=2.0;v=1.15;repeat=10;repeatInterval=1} @self ?targetwithin{d=2}
   - sound{s=entity.player.hurt_freeze;sc=master;p=2.0;v=1.15;repeat=10;repeatInterval=1} @self ?targetwithin{d=2}
-  - damage{a=0.5;pi=true;pk=true;repeat=40;repeatInterval=1} @EIR{r=2.25;ignore=samefaction}
-  - damage{a=1;pi=true;pk=true;repeat=3;repeatInterval=2;delay=11} @EIR{r=2.25;ignore=samefaction}
-  - damage{a=1;pi=true;pk=true;repeat=1;repeatInterval=3;delay=18} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=WEAKNESS;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - damage{a=0.5;pi=true;pk=true;repeat=40;repeatInterval=1} @PIR{r=2}
+  - damage{a=0.75;pi=true;pk=true;repeat=3;repeatInterval=2;delay=11} @PIR{r=1.75}
+  - damage{a=1.25;pi=true;pk=true;repeat=1;repeatInterval=3;delay=18} @PIR{r=1.5}
+  - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @PIR{r=2}
+  - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}
+  - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}
+  - potion{t=WEAKNESS;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}
 
 
 swarmshockerbigShock:
@@ -67,13 +67,13 @@ swarmshockerbigShock:
   - effect:particlesphere{particle=electricSpark;a=<random.10to20>;r=1;hs=0.08;vs=0.08;s=0;y=0;repeat=18;repeatInterval=1} @self
   - sound{s=entity.zombie.destroy_egg;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
   - sound{s=entity.player.hurt_freeze;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
-  - damage{a=2;pi=true;pk=true;repeat=40;repeatInterval=1} @EIR{r=2.25;ignore=samefaction}
-  - damage{a=2;pi=true;pk=true;repeat=6;repeatInterval=2;delay=11} @EIR{r=2.25;ignore=samefaction}
-  - damage{a=2;pi=true;pk=true;repeat=2;repeatInterval=3;delay=18} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=SLOW_DIGGING;l=2;force=true;p=false;d=<random.100to200>} @EIR{r=2.25;ignore=samefaction}
-  - potion{t=WEAKNESS;l=2;force=true;p=false;d=<random.80to150>} @EIR{r=2.25;ignore=samefaction}
+  - damage{a=2;pi=true;pk=true;repeat=40;repeatInterval=1} @PIR{r=2.5}
+  - damage{a=2.25;pi=true;pk=true;repeat=6;repeatInterval=2;delay=11} @PIR{r=2.25}
+  - damage{a=2.5;pi=true;pk=true;repeat=2;repeatInterval=3;delay=18} @PIR{r=2}
+  - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @PIR{r=2.25}
+  - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2.25}
+  - potion{t=SLOW_DIGGING;l=2;force=true;p=false;d=<random.100to200>} @PIR{r=2.25}
+  - potion{t=WEAKNESS;l=2;force=true;p=false;d=<random.80to150>} @PIR{r=2.25}
   - delay 20
   - state{s=shock_attack;r=true} @self
 
