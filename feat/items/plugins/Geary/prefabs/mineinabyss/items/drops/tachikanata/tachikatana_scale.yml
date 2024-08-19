@@ -2,7 +2,7 @@ namespaces: [ geary ]
 set.item:
   item:
     type: PRISMARINE_SHARD
-    customModelData: 1
+    customModelData: 2
     itemName: <#00FFFF>Tachikatana Scale
     lore:
       - <yellow>Obtained from slaying a <#00FFFF>Tachikatana
@@ -14,4 +14,4 @@ resourcepack:
   baseMaterial: minecraft:prismarine_shard
   textures: mineinabyss:item/creature_drops/tachikatana_scale
   itemPredicates:
-    customModelData: 1
+    customModelData: 2
