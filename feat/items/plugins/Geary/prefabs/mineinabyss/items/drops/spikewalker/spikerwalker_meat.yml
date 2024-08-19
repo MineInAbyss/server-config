@@ -1,0 +1,15 @@
+namespaces: [ geary ]
+set.item:
+  item:
+    type: PAPER
+    itemName: <#116AAD>Spikewalker Meat
+    customModelData: 1
+    lore:
+      - <#ED4C4C><i>The inedible hard meat of a
+      - <#ED4C4C><i><#116AAD>Spikewalker <#ED4C4C><i>
+      - <#ED4C4C><i>It's rough and gamey...
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: mineinabyss:item/creature_drops/spikewalker_spike
+  itemPredicates:
+    customModelData: 400

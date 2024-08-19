@@ -1,0 +1,15 @@
+namespaces: [geary]
+set.item:
+  item:
+    type: FROGLIGHT
+    itemName: <#ADD8E6>Buroguro Lantern
+    customModelData: 1
+    lore:
+      - <yellow>Dropped by <#0357AB>Billabonks <yellow>in
+      - <yellow>the <green>Forest of Temptation<yellow>.
+      - <yellow>Seems to be poisonous, I best not eat it...
+#resourcepack:
+#  baseMaterial: minecraft:pufferfish
+ # textures: mineinabyss:item/creature_drops/billabonk_sac
+ # itemPredicates:
+ #   customModelData: 1

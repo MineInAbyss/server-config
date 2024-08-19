@@ -8,7 +8,7 @@ l4p:
   UseWorldScaling: false
   Conditions:
   #- onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinradius{types=shroombear,hashofu;a=5to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
@@ -23,7 +23,7 @@ l4d:
   UseWorldScaling: false
   Conditions:
   - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<1} true
   - mobsinradius{types=stinger,mantoyer;a=3to99;radius=100} false
   - inblock{b=WATER} false
@@ -37,7 +37,7 @@ l4w:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<1} true
   - mobsinradius{types=kazura,hagamizukin,rohana,spiralsquid,ikenosuke;a=5to99;radius=100} false
   - inblock{b=WATER} true
@@ -51,7 +51,7 @@ l4whippo:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<1} true
   - mobsinradius{types=uibuta,makihige;a=5to99;radius=100} false
   - inblock{b=WATER} true
@@ -65,7 +65,7 @@ l4f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<2} true
   - mobsinradius{types=uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi;a=5to99;radius=100} false
   - inblock{b=WATER} false
@@ -79,7 +79,7 @@ l4fa:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
 
@@ -92,7 +92,7 @@ l4fa2:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3} true
+  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
 

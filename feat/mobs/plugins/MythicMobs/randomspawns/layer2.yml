@@ -25,7 +25,7 @@ l1d:
   - region{r=l2s0,l2s1} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - mobsinradius{types=vinebinder,vinepoofer,vineblaster,spikewalker;a=5to99;radius=100} false
+  - mobsinradius{types=vinebinder,vinepoofer,vineblaster;a=5to99;radius=100} false
 
 l2w:
   Type: billabonk,ikenosuke,rohana

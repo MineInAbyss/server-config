@@ -1,10 +1,12 @@
 buruguro:
   Type: BEE
-  Display: 'Buro Guro'
-  Damage: 8
+  Display: '<#ADD8E6>Buroguro'
+  Damage: 6
   Health: 32
   Drops:
-  - POINTED_DRIPSTONE 1-3 1
+    - exp 50-90
+    - geary mineinabyss:buroguro_lantern 1 0.3
+    - geary mineinabyss:buroguro_stinger 1-2 0.6
   Faction: glowfly
   Options:
     Silent: true

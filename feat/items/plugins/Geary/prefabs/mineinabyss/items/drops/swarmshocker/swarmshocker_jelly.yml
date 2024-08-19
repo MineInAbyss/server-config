@@ -11,3 +11,8 @@ set.item:
       - <#1B5BAD><i>Very sticky, almost like some sort of resin.
       - <#1B5BAD><i>Tastes very watery...
 disableItemInteractions: { }
+resourcepack:
+  baseMaterial: minecraft:slime_ball
+  textures: mineinabyss:item/creature_drops/swarmshocker_jelly
+  itemPredicates:
+    customModelData: 1
