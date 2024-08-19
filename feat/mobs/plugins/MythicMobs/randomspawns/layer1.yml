@@ -23,7 +23,7 @@ l1d:
   - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - mobsinradius{types=vinebinder,vinepoofer;a=5to99;radius=100} false
+  - mobsinradius{types=vinebinder,vinepoofer;a=3to99;radius=100} false
 l1w:
   Type: spiralsquid
   Action: ADD
@@ -36,7 +36,7 @@ l1w:
   - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
-  - mobsinradius{types=spiralsquid;a=5to99;radius=100} false
+  - mobsinradius{types=spiralsquid;a=2to99;radius=100} false
 l1f:
   Type: hammerbeak,silkfang,cyatoria
   Action: ADD
@@ -49,7 +49,7 @@ l1f:
   - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<5} true
   - inblock{b=WATER} false
-  - mobsinradius{types=hammerbeak,silkfang,cyatoria;a=5to99;radius=100} false
+  - mobsinradius{types=hammerbeak,silkfang,cyatoria;a=3to99;radius=100} false
 l1fa:
   Type: hammerbeakLarge
   Action: ADD
@@ -62,6 +62,7 @@ l1fa:
   - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<10} true
   - inblock{b=WATER} false
+  - mobsinradius{types=hammerbeakLarge;a=2to99;radius=100} false
 
 
 l1fr:
@@ -76,6 +77,7 @@ l1fr:
   - region{r=l1s1,l1s2,l1s3} true
   - mobsinchunk{a=<10} true
   - inblock{b=WATER} false
+  - mobsinradius{types=splitjaw;a=2to99;radius=100} false
 
 
 

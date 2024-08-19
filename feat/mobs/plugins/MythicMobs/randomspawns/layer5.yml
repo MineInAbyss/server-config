@@ -25,7 +25,7 @@ l5psnow:
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=ashimite;a=5to99;radius=25} false
+  - mobsinradius{types=ashimite;a=4to99;radius=25} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -40,7 +40,7 @@ l5hsnow:
   Conditions:
   - onblock{m=SNOW_BLOCK,POWDER_SNOW,SNOW} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=octoliar,horncrier;a=5to99;radius=100} false
+  - mobsinradius{types=octoliar,horncrier;a=4to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -58,7 +58,7 @@ l5hsand:
   Conditions:
   - onblock{m=SAND,SANDSTONE,RED_SAND,RED_SANDSTONE} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=spikewalker;a=1to99;radius=200} false
+  - mobsinradius{types=spikewalker;a=2to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -74,7 +74,7 @@ l5hsand:
   Conditions:
   - onblock{m=SAND,SANDSTONE,RED_SAND,RED_SANDSTONE} true
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=kagi_tachikiri;a=5to99;radius=100} false
+  - mobsinradius{types=kagi_tachikiri;a=2to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -82,9 +82,9 @@ l5psand:
   Type: virinsipede
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.0001
   Priority: 0.5
-  Cooldown: 30
+  Cooldown: 5
   UseWorldScaling: false
   Conditions:
   - onblock{m=SAND,SANDSTONE,RED_SAND,RED_SANDSTONE} true
@@ -122,7 +122,7 @@ l5w:
   Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=makihige,demonfish;a=5to99;radius=100} false
+  - mobsinradius{types=makihige,demonfish;a=4to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
@@ -137,7 +137,7 @@ l5watermob:
   Priority: 0.5
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=edusan,hisomukuro,hagamizukin;a=5to99;radius=100} false
+  - mobsinradius{types=edusan,hisomukuro,hagamizukin;a=3to99;radius=100} false
  # - mobsinchunk{a=<1} true
   - inblock{b=WATER} true
 
@@ -153,7 +153,7 @@ l5f:
   UseWorldScaling: false
   Conditions:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
-  - mobsinradius{types=onitsuchi,chikyuoebi,uibuta,swarmhoarder;a=5to99;radius=100} false
+  - mobsinradius{types=onitsuchi,chikyuoebi,uibuta,swarmhoarder;a=3to99;radius=100} false
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
 
@@ -170,7 +170,8 @@ l5fa2:
   - region{r=l5s0,l5s1,l5s2,l5s3} true
  # - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
-
+  - mobsinradius{types=tachikatana;a=2to99;radius=100} false
+  - mobsinchunk{a=<1} true
 
 
 

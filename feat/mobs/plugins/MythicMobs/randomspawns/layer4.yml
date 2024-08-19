@@ -53,7 +53,7 @@ l4whippo:
   Conditions:
   - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<1} true
-  - mobsinradius{types=uibuta,makihige;a=5to99;radius=100} false
+  - mobsinradius{types=uibuta,makihige;a=3to99;radius=100} false
   - inblock{b=WATER} true
 
 l4f:
@@ -82,6 +82,7 @@ l4fa:
   - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
+  - mobsinradius{types=OrbPiercer;a=2to99;radius=200} false
 
 l4fa2:
   Type: tachikatana
@@ -95,6 +96,7 @@ l4fa2:
   - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
   - mobsinchunk{a=<3} true
  # - inblock{b=WATER} false
+  - mobsinradius{types=tachikatana;a=2to99;radius=200} false
 
 
 

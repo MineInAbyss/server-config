@@ -4,7 +4,7 @@ stingerhead:
   Type: stingerhead
   Action: ADD
   Worlds: world
-  Chance: 0.0002
+  Chance: 0.0001
   Priority: 0.5
   Cooldown: 5
   UseWorldScaling: false

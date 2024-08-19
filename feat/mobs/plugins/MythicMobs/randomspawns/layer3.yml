@@ -11,7 +11,7 @@ l3p:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<1} true
   - inblock{b=WATER} false
-  - mobsinradius{types=kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede;a=10to99;radius=100} false
+  - mobsinradius{types=kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede;a=6to99;radius=100} false
 l3d:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
