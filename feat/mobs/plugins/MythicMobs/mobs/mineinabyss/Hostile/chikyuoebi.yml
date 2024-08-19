@@ -23,6 +23,7 @@ chikyuoebi:
     Silent: true
     PreventSunburn: true
     PreventOtherDrops: true
+    PreventJockeyMounts: true
   Model:
     Id: chikyuoebi_modified
     ViewRadius: 64

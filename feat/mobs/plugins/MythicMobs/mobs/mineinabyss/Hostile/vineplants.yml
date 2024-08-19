@@ -12,9 +12,10 @@ vinebinder:
   Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
-    Preventsunburn: true
-    Silent: true
+    PreventSunburn: true
     PreventOtherDrops: true
+    PreventJockeyMounts: true
+    Silent: true
     FollowRange: 15
     MovementSpeed: 0   # replaced with skills
     KnockbackResistance: 1.0

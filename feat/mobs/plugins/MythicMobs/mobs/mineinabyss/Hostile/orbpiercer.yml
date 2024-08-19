@@ -14,7 +14,6 @@ OrbPiercer:
     - attacker
     - players
   Options:
-    PreventSunBurn: true
     KnockbackResistance: 1
     DigOutOfGround: true
     Collidable: true
@@ -22,7 +21,9 @@ OrbPiercer:
     FollowRange: 48
     MovementSpeed: 0.3
     MaxCombatDistance: 35
+    PreventSunburn: true
     PreventOtherDrops: true
+    PreventJockeyMounts: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND

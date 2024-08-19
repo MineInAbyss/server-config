@@ -20,7 +20,9 @@ yomotsubi:
     MovementSpeed: 0.2
     MaxCombatDistance: 24
     DigOutOfGround: true
+    PreventSunburn: true
     PreventOtherDrops: true
+    PreventJockeyMounts: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
   Model:

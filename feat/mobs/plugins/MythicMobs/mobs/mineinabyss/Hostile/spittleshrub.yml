@@ -5,7 +5,9 @@ spittleshrub:
   Health: 45
   Options:
     Despawn: true
-    Silent: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
     ShowName: false
     MovementSpeed: 0.34
     KnockbackResistance: 1

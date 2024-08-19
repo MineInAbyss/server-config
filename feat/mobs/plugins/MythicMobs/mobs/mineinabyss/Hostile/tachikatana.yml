@@ -13,7 +13,9 @@ tachikatana:
     - clear
     - players
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
     KnockbackResistance: 1
     DigOutOfGround: true
     Collidable: true
@@ -21,7 +23,6 @@ tachikatana:
     FollowRange: 48
     MovementSpeed: 0.3
     MaxCombatDistance: 35
-    PreventOtherDrops: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND

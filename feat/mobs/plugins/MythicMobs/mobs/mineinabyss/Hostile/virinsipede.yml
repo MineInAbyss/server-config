@@ -24,6 +24,7 @@ virinsipede:
     Silent: true
     PreventSunburn: true
     PreventOtherDrops: true
+    PreventJockeyMounts: true
   DamageModifiers:
     - PROJECTILE 0.5
   Model:
