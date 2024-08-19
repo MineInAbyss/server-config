@@ -2,13 +2,13 @@ namespaces: [ geary ]
 set.item:
   item:
     type: AMETHYST_SHARD
-    itemName: <#785F34>Crystal Hisoishi Claw
+    itemName: <#785F34>Hisoishi Claw
     customModelData: 1
     lore:
       - <yellow>Dropped by <#785F34>Hisoishi Crab <yellow>in
       - <yellow>the <green>Great Fault<yellow> and <green>Inverted Forest<yellow>.
-      - <#A68348><i>This sharp claw can dig through stone with ease
-      - <#A68348><i> and even break bone!
+      - <#A68348><i>This sharp claw can dig through stone
+      - <#A68348><i>with ease and can even break bone!
 resourcepack:
   baseMaterial: minecraft:amethyst_shard
   textures: mineinabyss:item/creature_drops/hisoishi_claw
