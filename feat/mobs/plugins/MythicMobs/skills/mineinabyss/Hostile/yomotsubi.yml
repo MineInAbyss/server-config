@@ -1,10 +1,10 @@
 yomotsubi_airball:
-  Cooldown: 15
+  Cooldown: 10
   Conditions:
     - incombat true
     - offgcd true
    # - targetwithin{d=10} true
-    #- targetinlineofsight{} true
+    - targetinlineofsight{} true
   Skills:
     - gcd{ticks=50}
     - state{s=wingsbrrr} @self
@@ -27,7 +27,7 @@ bondrewd_airball:
 
 yomotsubi_tick:
   Skills:
-    - effect:particles{particle=cloud;amount=15;hS=.25;vS=.25;speed=0.05}
+    - effect:particles{particle=cloud;amount=12;hS=.15;vS=.15;speed=0.05}
 
 yomotsubi_impact:
   Skills:
