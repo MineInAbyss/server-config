@@ -5,8 +5,9 @@ set.item:
     itemName: <#696112>Spittleshrub Root
     customModelData: 1
     lore:
-      - <yellow>Dropped by plant creatures throughout the abyss
-      - <yellow>can probably be used to make different plant types!
+      - <yellow>Dropped by various plant-like creatures throughout the <green>Abyss<yellow>.
+      - <#A68348><i>This looks like a pretty vital ingredient
+      - <#A68348><i>for some plants.
 resourcepack:
   baseMaterial: minecraft:moss_block
   textures: mineinabyss:item/creature_drops/spittleshrub_root

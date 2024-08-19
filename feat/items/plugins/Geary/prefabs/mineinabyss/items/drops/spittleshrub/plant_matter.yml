@@ -5,8 +5,10 @@ set.item:
     itemName: <#BE6400>Plant Matter
     customModelData: 1
     lore:
-      - <yellow>Dropped by plant creatures throughout the abyss
-      - <yellow>can probably be used to make different plant types!
+      - <yellow>Dropped by various plant-like creatures throughout the <green>Abyss<yellow>.
+      - <#A68348><i>Maybe I could use this to make my own plants,
+      - <#A68348><i>though they wouldn't do anything special
+      - <#A68348><i>without proper care..
 resourcepack:
   baseMaterial: minecraft:wheat_seeds
   textures: mineinabyss:item/creature_drops/rockwalker_mandible
