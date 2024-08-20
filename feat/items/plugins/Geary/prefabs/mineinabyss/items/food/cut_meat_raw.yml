@@ -2,13 +2,24 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: minecraft:paper
-    itemName: Cut Meat
+    itemName: Raw Cut Meat
     customModelData: 130
     food:
-      saturation: 12.8
-      nutrition: 8
+      saturation: 1.8
+      nutrition: 3
 resourcepack:
   baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/standard_food/cut_meat_raw
   itemPredicates:
     customModelData: 130
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - !<furnace>
+      input: mineinabyss:cut_meat_raw
+      experience: 1f
+      cookingTime: 100
+    - !<smoking>
+      input: mineinabyss:cut_meat_raw
+      experience: 2f
+      cookingTime: 50
