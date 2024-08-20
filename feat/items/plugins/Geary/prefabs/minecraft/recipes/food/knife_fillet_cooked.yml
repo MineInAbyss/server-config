@@ -2,46 +2,54 @@ namespaces: [ geary ]
 set.recipes:
   discoverRecipes: true
   result:
-    prefab: mineinabyss:cut_meat_raw
-  group: mineinabyss:cut_meat_raw
+    prefab: mineinabyss:cut_meat_cooked
+  group: mineinabyss:cut_meat_cooked
   recipes:
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:ashimite_meat_raw
+        - prefab: mineinabyss:ashimite_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:corpse_weeper_meat_raw
+        - prefab: mineinabyss:corpse_weeper_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:dosetori_meat_raw
+        - prefab: mineinabyss:dosetori_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:fuwagi_meat_raw
+        - prefab: mineinabyss:fuwagi_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:inbyo_meat_raw
+        - prefab: mineinabyss:inbyo_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:neritantan_meat_raw
+        - prefab: mineinabyss:neritantan_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:okibo_meat_raw
+        - prefab: mineinabyss:okibo_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:ottobas_meat_raw
+        - prefab: mineinabyss:ottobas_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:shroombear_meat_raw
+        - prefab: mineinabyss:shroombear_meat_cooked
     - !<shapeless>
       items:
         - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
-        - prefab: mineinabyss:uibuta_meat_raw
+        - prefab: mineinabyss:uibuta_meat_cooked
+    - !<shapeless>
+      items:
+        - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
+        - prefab: mineinabyss:hammerbeak_wing_cooked
+    - !<shapeless>
+      items:
+        - { prefab: mineinabyss:knife, recipeOptions: [ !<keep> { } ] }
+        - prefab: mineinabyss:onitsuchi_wing_cooked
