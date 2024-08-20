@@ -9,6 +9,6 @@ set.item:
       nutrition: 8
 resourcepack:
   baseMaterial: minecraft:paper
-  textures: mineinabyss:item/food/cut_meat
+  textures: mineinabyss:item/food/standard_food/cut_meat_raw
   itemPredicates:
     customModelData: 130
