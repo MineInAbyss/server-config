@@ -1,4 +1,4 @@
-# HappyHud by Ehhthan
+# MythicHUD by wordandahalf and Mythic
 
 # If the default files should be generated.
 generate-default-files: false
@@ -27,11 +27,10 @@ decimal-format: '#.##'
 
 # If you would like to copy the built-resource pack to a different location.
 copy-resource-pack:
-  enabled: true
+  enabled: false
   # The location to copy each namespace to. The parent path is your plugins directory.
-  namespaces:
-    minecraft: "Packy/templates/custom_hud/assets"
-    happyhud: "Packy/templates/custom_hud/assets"
+  namespaces: []
+  path: "Packy/templates/custom_hud"
 
 boss-bar:
   # The maximum amount of shown boss bars a player can hold.

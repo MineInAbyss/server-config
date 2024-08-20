@@ -1,0 +1,21 @@
+{
+  "pack": {
+    "pack_format": 13,
+    "supported_formats": {
+      "min_inclusive": 13,
+      "max_inclusive": 34
+    },
+    "description": "Remember to move non-overlay folders into assets/. For proper 1.20.5+ support, you need the mythichud-modern overlay!"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": {
+          "min_inclusive": 32,
+          "max_inclusive": 34
+        },
+        "directory": "mythichud-modern"
+      }
+    ]
+  }
+}

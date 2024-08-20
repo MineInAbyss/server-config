@@ -1,7 +1,7 @@
-prefix: "<gray>[</gray><gradient:#c65077:#aa3159>HappyHud</gradient><gray>]</gray> "
+prefix: "<gray>[</gray><rainbow>MythicHUD</rainbow><gray>]</gray> "
 reload:
-  - "<#157537> HappyHud has been successfully reloaded."
-  - "<bold><gradient:#c65077:#c22b2b> Make sure to reload Packy!"
+  - "<green> MythicHUD has been successfully reloaded."
+  - "<bold><red> MAKE SURE TO RELOAD YOUR RESOURCE PACK!"
 
 layout-add-success: "<green>Successfully added layout '<layout>' to <holder>."
 layout-add-fail: "<red>Could not add layout '<layout>' to <holder>."
