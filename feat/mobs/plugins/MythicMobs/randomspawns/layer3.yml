@@ -52,7 +52,7 @@ l3f:
   - region{r=l3s0,l3s1,l3s2,l3s3} true
   - mobsinchunk{a=<4} true
   - inblock{b=WATER} false
-
+  - mobsinradius{types=daikonchu,dosetori,yomotsubi,madokajack;a=4to99;radius=100} false
 l3fa:
   Type: splitjaw
   Action: ADD

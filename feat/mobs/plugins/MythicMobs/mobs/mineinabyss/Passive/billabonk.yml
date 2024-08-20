@@ -5,7 +5,7 @@ billabonk:
     ThreatTable: true
   AIGoalSelectors:
     - clear
-    - fleeplayers{distance=5;speed=1;safespeed=1;conditions=[ - inlineofsight true ]}
+    - fleeplayers{distance=5;speed=1.3;safespeed=1.3;conditions=[ - inlineofsight true ]}
     - panicWhenOnFire
     - randomstroll
     - lookatplayers
@@ -22,7 +22,8 @@ billabonk:
   Options:
     Despawn: false
     PreventOtherDrops: true
-    Silent: true
+    Silent: true    #MovementSpeed: 0.25
+    MovementSpeed: 0.3
   DamageModifiers:
   Model:
     Id: billabonk
