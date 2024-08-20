@@ -1,4 +1,4 @@
-l4p:
+l4_passive:
   Type: shroombear,hashofu
   Action: ADD
   Worlds: world
@@ -7,13 +7,13 @@ l4p:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  #- onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinradius{types=shroombear,hashofu;a=5to99;radius=100} false
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    #- onblock{m=GRASS_BLOCK,DIRT} true
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinradius{types=shroombear,hashofu;a=5to99;radius=100} false
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
-l4d:
+l4_docile:
   Type: stinger,mantoyer
   Action: ADD
   Worlds: world
@@ -22,13 +22,13 @@ l4d:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<1} true
-  - mobsinradius{types=stinger,mantoyer;a=3to99;radius=100} false
-  - inblock{b=WATER} false
+    - onblock{m=GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS} true
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<1} true
+    - mobsinradius{types=stinger,mantoyer;a=3to99;radius=100} false
+    - inblock{b=WATER} false
 
-l4w:
+l4_water:
   Type: kazura,hagamizukin,rohana,spiralsquid,ikenosuke
   Action: ADD
   Worlds: world
@@ -37,12 +37,12 @@ l4w:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<1} true
-  - mobsinradius{types=kazura,hagamizukin,rohana,spiralsquid,ikenosuke;a=5to99;radius=100} false
-  - inblock{b=WATER} true
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<1} true
+    - mobsinradius{types=kazura,hagamizukin,rohana,spiralsquid,ikenosuke;a=5to99;radius=100} false
+    - inblock{b=WATER} true
 
-l4whippo:
+l4_water_uncommon:
   Type: uibuta,makihige
   Action: ADD
   Worlds: world
@@ -51,12 +51,12 @@ l4whippo:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<1} true
-  - mobsinradius{types=uibuta,makihige;a=3to99;radius=100} false
-  - inblock{b=WATER} true
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<1} true
+    - mobsinradius{types=uibuta,makihige;a=3to99;radius=100} false
+    - inblock{b=WATER} true
 
-l4f:
+l4_hostile:
   Type: uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi,swarmshocker
   Action: ADD
   Worlds: world
@@ -65,12 +65,12 @@ l4f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<2} true
-  - mobsinradius{types=uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi;a=5to99;radius=100} false
-  - inblock{b=WATER} false
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<2} true
+    - mobsinradius{types=uibuta,onitsuchi,Kuongatari,horncrier,yomotsubi;a=5to99;radius=100} false
+    - inblock{b=WATER} false
 
-l4fa:
+l4_hostile_uncommon:
   Type: OrbPiercer
   Action: ADD
   Worlds: world
@@ -79,12 +79,12 @@ l4fa:
   Cooldown: 15
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<3} true
- # - inblock{b=WATER} false
-  - mobsinradius{types=OrbPiercer;a=2to99;radius=200} false
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<3} true
+    # - inblock{b=WATER} false
+    - mobsinradius{types=OrbPiercer;a=2to99;radius=200} false
 
-l4fa2:
+l4_hostile_rare:
   Type: tachikatana
   Action: ADD
   Worlds: world
@@ -93,10 +93,7 @@ l4fa2:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
-  - mobsinchunk{a=<3} true
- # - inblock{b=WATER} false
-  - mobsinradius{types=tachikatana;a=2to99;radius=200} false
-
-
-
+    - region{r=l4s0,l4s1,l4s2,l4s3,l4s4} true
+    - mobsinchunk{a=<3} true
+    # - inblock{b=WATER} false
+    - mobsinradius{types=tachikatana;a=2to99;radius=200} false

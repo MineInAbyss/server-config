@@ -1,4 +1,4 @@
-l1p:
+l1_passive:
   Type: beniguma,fuwagi,okibo
   Action: ADD
   Worlds: world
@@ -7,11 +7,12 @@ l1p:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=beniguma,fuwagi,okibo;a=5to99;radius=100} false
-l1d:
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=beniguma,fuwagi,okibo;a=5to99;radius=100} false
+
+l1_docile:
   Type: vinebinder,vinepoofer
   Action: ADD
   Worlds: world
@@ -20,11 +21,12 @@ l1d:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=vinebinder,vinepoofer;a=3to99;radius=100} false
-l1w:
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=vinebinder,vinepoofer;a=3to99;radius=100} false
+
+l1_water:
   Type: spiralsquid
   Action: ADD
   Worlds: world
@@ -33,11 +35,11 @@ l1w:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} true
-  - mobsinradius{types=spiralsquid;a=2to99;radius=100} false
-l1f:
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} true
+    - mobsinradius{types=spiralsquid;a=2to99;radius=100} false
+l1_flying:
   Type: hammerbeak,silkfang,cyatoria
   Action: ADD
   Worlds: world
@@ -46,11 +48,12 @@ l1f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<5} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=hammerbeak,silkfang,cyatoria;a=3to99;radius=100} false
-l1fa:
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<5} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=hammerbeak,silkfang,cyatoria;a=3to99;radius=100} false
+
+l1_flying_uncommon:
   Type: hammerbeakLarge
   Action: ADD
   Worlds: world
@@ -59,13 +62,12 @@ l1fa:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<10} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=hammerbeakLarge;a=2to99;radius=100} false
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<10} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=hammerbeakLarge;a=2to99;radius=100} false
 
-
-l1fr:
+l1_flying_rare:
   Type: splitjaw
   Action: ADD
   Worlds: world
@@ -74,10 +76,10 @@ l1fr:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l1s1,l1s2,l1s3} true
-  - mobsinchunk{a=<10} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=splitjaw;a=2to99;radius=100} false
+    - region{r=l1s1,l1s2,l1s3} true
+    - mobsinchunk{a=<10} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=splitjaw;a=2to99;radius=100} false
 
 
 

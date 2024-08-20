@@ -1,4 +1,4 @@
-l2p:
+l2_passive:
   Type: chimokami,tesuchi,fuwagi,ottobas
   Action: ADD
   Worlds: world
@@ -7,12 +7,13 @@ l2p:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=l2s0,l2s1} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=chimokami,tesuchi,fuwagi,ottobas;a=5to99;radius=100} false
-l1d:
+    - onblock{m=GRASS_BLOCK,DIRT} true
+    - region{r=l2s0,l2s1} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=chimokami,tesuchi,fuwagi,ottobas;a=5to99;radius=100} false
+
+l1_docile:
   Type: vinebinder,vinepoofer,vineblaster,spikewalker
   Action: ADD
   Worlds: world
@@ -21,13 +22,13 @@ l1d:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT} true
-  - region{r=l2s0,l2s1} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=vinebinder,vinepoofer,vineblaster;a=2to99;radius=100} false
+    - onblock{m=GRASS_BLOCK,DIRT} true
+    - region{r=l2s0,l2s1} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=vinebinder,vinepoofer,vineblaster;a=2to99;radius=100} false
 
-l2w:
+l2_water:
   Type: billabonk,ikenosuke,rohana
   Action: ADD
   Worlds: world
@@ -37,11 +38,12 @@ l2w:
   Positiontype: SEA
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s0,l2s1} true
-  - mobsinchunk{a=<2} true
-  - inblock{b=WATER} true
-  - mobsinradius{types=billabonk,ikenosuke,rohana;a=5to99;radius=100} false
-l2f:
+    - region{r=l2s0,l2s1} true
+    - mobsinchunk{a=<2} true
+    - inblock{b=WATER} true
+    - mobsinradius{types=billabonk,ikenosuke,rohana;a=5to99;radius=100} false
+
+l2_flying:
   Type: silkfang,cyatoria,dosetori,hammerbeak,woodcrier
   Action: ADD
   Worlds: world
@@ -50,11 +52,12 @@ l2f:
   Cooldown: 9
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s0,l2s1} true
-  - mobsinchunk{a=<2} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=silkfang,cyatoria,dosetori,hammerbeak,woodcrier;a=5to99;radius=100} false
-l2fa:
+    - region{r=l2s0,l2s1} true
+    - mobsinchunk{a=<2} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=silkfang,cyatoria,dosetori,hammerbeak,woodcrier;a=5to99;radius=100} false
+
+l2_flying_uncommon:
   Type: corpse_weeper,hammerbeakLarge
   Action: ADD
   Worlds: world
@@ -63,12 +66,12 @@ l2fa:
   Cooldown: 10
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s0,l2s1} true
-  - mobsinchunk{a=<3} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=corpse_weeper,hammerbeakLarge;a=5to99;radius=100} false
+    - region{r=l2s0,l2s1} true
+    - mobsinchunk{a=<3} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=corpse_weeper,hammerbeakLarge;a=5to99;radius=100} false
 
-l2fr:
+l2_flying_rare:
   Type: splitjaw
   Action: ADD
   Worlds: world
@@ -77,10 +80,10 @@ l2fr:
   Cooldown: 20
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s0,l2s1} true
-  #- mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=splitjaw;a=1to99;radius=200} false
+    - region{r=l2s0,l2s1} true
+    #- mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=splitjaw;a=1to99;radius=200} false
 
 
 

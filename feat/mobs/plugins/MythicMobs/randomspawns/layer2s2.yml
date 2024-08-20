@@ -1,4 +1,4 @@
-2l2s2tree:
+l2s2_tree:
   Type: stinger,inbyo
   Action: ADD
   Worlds: world
@@ -7,13 +7,13 @@
   Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  - onblock{m=BIRCH_LEAVES,OAK_WOOD,OAK_PLANKS,OAK_SLAB,OAK_LEAVES,COBBLESTONE_SLAB} true
-  - region{r=l2s2} true
-  - mobsinradius{types=stinger,inbyo;a=15to99;radius=100} false
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    - onblock{m=BIRCH_LEAVES,OAK_WOOD,OAK_PLANKS,OAK_SLAB,OAK_LEAVES,COBBLESTONE_SLAB} true
+    - region{r=l2s2} true
+    - mobsinradius{types=stinger,inbyo;a=15to99;radius=100} false
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
-l2s2floor:
+l2s2_floor:
   Type: hisoishi,rockwalker
   Action: ADD
   Worlds: world
@@ -22,15 +22,15 @@ l2s2floor:
   Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s2} true
-  - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
-  - mobsinradius{types=hisoishi,rockwalker;a=5to99;radius=100} false
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    - region{r=l2s2} true
+    - onblock{m=DIORITE,CALCITE,WHITE_CONCRETE,STONE} true
+    - mobsinradius{types=hisoishi,rockwalker;a=5to99;radius=100} false
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
 
 
-l2f5:
+l2s2_flying:
   Type: dosetori,hammerbeak,corpse_weeper
   Action: ADD
   Worlds: world
@@ -39,14 +39,14 @@ l2f5:
   Cooldown: 1
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s2} true
-  - mobsinchunk{a=<2} true
-  - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=5to99;radius=100} false
-  - inblock{b=WATER} false
-  - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=2to99;radius=100} false
+    - region{r=l2s2} true
+    - mobsinchunk{a=<2} true
+    - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=5to99;radius=100} false
+    - inblock{b=WATER} false
+    - mobsinradius{types=dosetori,hammerbeak,corpse_weeper;a=2to99;radius=100} false
 
 
-l2fr5:
+l2s2_flying_rare:
   Type: splitjaw
   Action: ADD
   Worlds: world
@@ -55,7 +55,7 @@ l2fr5:
   Cooldown: 30
   UseWorldScaling: false
   Conditions:
-  - region{r=l2s2} true
-  #- mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=splitjaw;a=1to99;radius=200} false
+    - region{r=l2s2} true
+    #- mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=splitjaw;a=1to99;radius=200} false

@@ -1,5 +1,3 @@
-
-
 stingerhead:
   Type: stingerhead
   Action: ADD
@@ -9,9 +7,9 @@ stingerhead:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=stingerheaddesert,stingerheadnestcave,stingerheadsanddesert,stingerheadsnow} true
-  - mobsinradius{types=stingerhead;a=1to99;radius=100} false
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    - region{r=stingerheaddesert,stingerheadnestcave,stingerheadsanddesert,stingerheadsnow} true
+    - mobsinradius{types=stingerhead;a=1to99;radius=100} false
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
 

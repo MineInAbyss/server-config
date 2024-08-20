@@ -1,4 +1,4 @@
-l3p:
+l3_passive:
   Type: kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede
   Action: ADD
   Worlds: world
@@ -7,12 +7,13 @@ l3p:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - onblock{m=WHITE_CONCRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
-  - region{r=l3s0,l3s1,l3s2,l3s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede;a=6to99;radius=100} false
-l3d:
+    - onblock{m=WHITE_CONCRETE,STONE,COBBLESTONE,DIORITE,CALCITE} true
+    - region{r=l3s0,l3s1,l3s2,l3s3} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=kakatsumuri,sakuranbo,neritantan,rockwalker,hisoishi,rinsipede;a=6to99;radius=100} false
+
+l3_docile:
   Type: spittleshrub,buroguro,squidfly
   Action: ADD
   Worlds: world
@@ -21,13 +22,13 @@ l3d:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
-  - region{r=l3s0,l3s1,l3s2,l3s3} true
-  - mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    - onblock{m=GRASS_BLOCK,DIRT,PODZOL} true
+    - region{r=l3s0,l3s1,l3s2,l3s3} true
+    - mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
 
-l3w:
+l3_water:
   Type: ikenosuke
   Action: ADD
   Worlds: world
@@ -36,11 +37,11 @@ l3w:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0,l3s1,l3s2,l3s3} true
-  - mobsinchunk{a=<2} true
-  - inblock{b=WATER} true
+    - region{r=l3s0,l3s1,l3s2,l3s3} true
+    - mobsinchunk{a=<2} true
+    - inblock{b=WATER} true
 
-l3f:
+l3_flying:
   Type: daikonchu,dosetori,yomotsubi,madokajack
   Action: ADD
   Worlds: world
@@ -49,11 +50,12 @@ l3f:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0,l3s1,l3s2,l3s3} true
-  - mobsinchunk{a=<4} true
-  - inblock{b=WATER} false
-  - mobsinradius{types=daikonchu,dosetori,yomotsubi,madokajack;a=4to99;radius=100} false
-l3fa:
+    - region{r=l3s0,l3s1,l3s2,l3s3} true
+    - mobsinchunk{a=<4} true
+    - inblock{b=WATER} false
+    - mobsinradius{types=daikonchu,dosetori,yomotsubi,madokajack;a=4to99;radius=100} false
+
+l3_flying_uncommon:
   Type: splitjaw
   Action: ADD
   Worlds: world
@@ -62,10 +64,10 @@ l3fa:
   Cooldown: 5
   UseWorldScaling: false
   Conditions:
-  - region{r=l3s0,l3s1,l3s2,l3s3} true
-  #- mobsinchunk{a=<1} true
-  - inblock{b=WATER} false
+    - region{r=l3s0,l3s1,l3s2,l3s3} true
+    #- mobsinchunk{a=<1} true
+    - inblock{b=WATER} false
 
-  - mobsinradius{types=splitjaw;a=1to99;radius=200} false
+    - mobsinradius{types=splitjaw;a=1to99;radius=200} false
 
 
