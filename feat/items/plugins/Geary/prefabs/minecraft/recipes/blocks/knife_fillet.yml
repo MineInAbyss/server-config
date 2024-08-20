@@ -2,8 +2,8 @@ namespaces: [ geary ]
 set.recipes:
   discoverRecipes: true
   result:
-    prefab: mineinabyss:cut_meat
-  group: mineinabyss:cut_meat
+    prefab: mineinabyss:cut_meat_raw
+  group: mineinabyss:cut_meat_raw
   recipes:
     - !<shapeless>
       items:
