@@ -1,6 +1,7 @@
 ashimite:
   Type: SHEEP
   Health: 35
+  Display: "<#2597D9>Ashimite"
   AIGoalSelectors:
     - clear
     - fleeplayers{distance=5;speed=2;safespeed=2;conditions=[ - inlineofsight true ]}
@@ -47,6 +48,7 @@ ashimite:
 baby_ashimite:
   Type: SHEEP
   Health: 12
+  Display: "<#2597D9>Baby Ashimite"
   AIGoalSelectors:
     - clear
     - gotoparent

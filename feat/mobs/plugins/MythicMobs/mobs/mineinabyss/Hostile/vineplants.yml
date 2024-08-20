@@ -1,5 +1,6 @@
 vinebinder:
   Type: ZOMBIE
+  Display: "<green>Vinebinder"
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -43,6 +44,7 @@ vineblaster:
   Type: ZOMBIE
   Modules:
     ThreatTable: true
+  Display: "<green>Vineblaster"
   AIGoalSelectors:
   - clear
   #- randomlookaround
@@ -80,6 +82,7 @@ vineblaster:
 
 vinepoofer:
   Type: ZOMBIE
+  Display: "<green>Vinepoofer"
   Modules:
     ThreatTable: true
   AIGoalSelectors:

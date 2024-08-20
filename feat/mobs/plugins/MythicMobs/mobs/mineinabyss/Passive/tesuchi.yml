@@ -1,5 +1,6 @@
 tesuchi:
   Type: OCELOT
+  Display: <dark_green>Tesuchi
   Modules:
     ThreatTable: true
   AIGoalSelectors:

@@ -1,5 +1,6 @@
 billabonk:
   Type: FROG
+  Display: "<#0357AB>Billabonk"
   Modules:
     ThreatTable: true
   AIGoalSelectors:

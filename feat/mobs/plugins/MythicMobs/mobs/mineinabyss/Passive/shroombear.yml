@@ -1,5 +1,6 @@
 shroombear:
   Type: PIG
+  Display: "<#85562D>Shroombear"
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -40,6 +41,7 @@ shroombear:
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 baby_shroombear:
   Type: PIG
+  Display: "<#85562D>Baby Shroombear"
   Modules:
     ThreatTable: true
   AIGoalSelectors:
