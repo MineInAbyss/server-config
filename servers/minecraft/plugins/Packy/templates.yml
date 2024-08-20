@@ -21,6 +21,14 @@ emotes:
   default: true
   required: true
   filePath: Emojy/pack.zip
+openinv_addon:
+  default: true
+  required: true
+  githubDownload:
+    org: Jikoo
+    repo: OpenInv
+    branch: master
+    subFolder: resource-pack
 custom_blocks:
   default: true
   required: true
