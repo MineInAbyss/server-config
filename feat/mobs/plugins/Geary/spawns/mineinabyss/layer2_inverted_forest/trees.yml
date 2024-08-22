@@ -1,0 +1,16 @@
+namespaces: [ geary ]
+l2s2_trees:
+  position: WATER
+  regions: [ l2s2 ]
+  priority: 0.5
+  amount: 1-3
+  spread: 5
+  conditions:
+    - maxNearby:
+        amount: 5
+    - blockBelow:
+        allow: [ BIRCH_LEAVES, OAK_WOOD, OAK_PLANKS, OAK_SLAB, OAK_LEAVES, COBBLESTONE_SLAB ]
+      # TODO y level check?
+
+l2s2_inbyo: { inherit: l2s2_trees, type: mm:inbyo }
+l2s2_stinger: { inherit: l2s2_trees, type: mm:stinger }

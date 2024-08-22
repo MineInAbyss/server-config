@@ -1,0 +1,18 @@
+namespaces: [ geary ]
+l4_passive:
+  position: GROUND
+  priority: 0.5
+  regions: [ layerfour ]
+  amount: 2-3
+  spread: 7
+  ySpread: 1
+  conditions:
+    # TODO figure out correct blocks
+    - blockBelow:
+        allow: [ grass_block ]
+    - maxNearby:
+        amount: 5
+
+# shroombear,hashofu
+l4_shroombear: { inherit: l4_passive, type: mm:shroombear }
+l4_hashofu: { inherit: l4_passive, type: mm:hashofu }

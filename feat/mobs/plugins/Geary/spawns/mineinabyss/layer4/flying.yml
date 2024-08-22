@@ -1,0 +1,12 @@
+namespaces: [ geary ]
+l4_flying:
+  position: AIR
+  priority: 0.5
+  regions: [ layerfour ]
+  conditions:
+    - gap: 10..600
+
+# Common
+# onitsuchi
+
+# Uncommon

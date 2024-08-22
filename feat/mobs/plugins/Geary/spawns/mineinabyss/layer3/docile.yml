@@ -1,0 +1,14 @@
+namespaces: [ geary ]
+l3_docile:
+  position: GROUND
+  priority: 0.5
+  regions: [ layerthree ]
+  conditions:
+    - blockBelow:
+        allow: [ GRASS_BLOCK,DIRT,PODZOL ]
+    - maxNearby:
+        amount: 5
+
+l3_spittleshrub: { inherit: l3_docile, type: mm:spittleshrub }
+l3_buroguro: { inherit: l3_docile, type: mm:buroguro }
+l3_squidfly: { inherit: l3_docile, type: mm:squidfly }

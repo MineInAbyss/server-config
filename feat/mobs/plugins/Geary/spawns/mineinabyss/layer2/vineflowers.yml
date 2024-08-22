@@ -1,0 +1,14 @@
+namespaces: [ geary ]
+l2_vineflowers:
+  position: GROUND
+  priority: 0.1
+  regions: [ layertwo ]
+  conditions:
+    - blockBelow:
+        allow: [ grass_block ]
+    - maxNearby:
+        amount: 5
+
+l2_vinebinder: { inherit: l2_vineflowers, type: mm:vinebinder }
+l2_vinepoofer: { inherit: l2_vineflowers, type: mm:vinepoofer }
+l2_vineblaster: { inherit: l2_vineflowers, type: mm:vineblaster, priority: 0.05 }

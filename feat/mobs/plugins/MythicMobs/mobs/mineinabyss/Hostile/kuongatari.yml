@@ -1,4 +1,4 @@
-Kuongatari:
+kuongatari:
   Type: CAVE_SPIDER
   SpawnCategory: hostile
   Display: "<#1FB53D>Kuongatari"
@@ -47,7 +47,7 @@ Kuongatari:
     - dismount ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=stingerhead_unstuck} @self ~ondamaged
-Kuongatari_summon:
+kuongatari_summon:
   Type: SPIDER
   Display: "<#1FB53D>Baby Kuongatari"
   Health: 16

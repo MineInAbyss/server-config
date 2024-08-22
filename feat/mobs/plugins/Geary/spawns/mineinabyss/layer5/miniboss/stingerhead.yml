@@ -1,0 +1,10 @@
+namespaces: [ geary ]
+l5_stingerhead:
+  position: GROUND
+  priority: 0.01
+  spread: 10
+  ySpread: 1
+  regions: [ stingerheaddesert, stingerheadnestcave, stingerheadsanddesert, stingerheadsnow ]
+  conditions:
+    - maxNearby:
+        amount: 2

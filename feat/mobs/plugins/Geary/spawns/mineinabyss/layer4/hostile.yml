@@ -1,0 +1,43 @@
+namespaces: [ geary ]
+l4_hostile:
+  position: GROUND
+  priority: 0.5
+  regions: [ layerfour ]
+  conditions:
+    - mythicConditions:
+        - lightlevelfromblocks{l=0}
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 4
+
+l4_kuongatari: { inherit: l4_hostile, type: mm:kuongatari }
+l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
+l4_yomotsubi: { inherit: l4_hostile, type: mm:yomotsubi }
+l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }
+
+# Uncommon
+l4_orbpiercer:
+  inherit: l4_hostile
+  type: mm:orbpiercer
+  priority: 0.05
+  conditions:
+    - $inherit
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 2
+
+# Rare
+l4_tachikatana:
+  inherit: l4_hostile
+  type: mm:tachikatana
+  priority: 0.01
+  conditions:
+    - $inherit
+    - $remove blockBelow
+    - $remove maxNearby
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 2

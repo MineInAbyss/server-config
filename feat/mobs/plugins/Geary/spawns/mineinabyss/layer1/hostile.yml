@@ -15,5 +15,5 @@ l1_silkfang:
   conditions:
     - $inherit
     - gap: 4..600
-    - block_below:
+    - blockBelow:
         allow: [ grass_block, stone ]

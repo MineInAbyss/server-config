@@ -1,0 +1,14 @@
+namespaces: [ geary ]
+l3_water:
+  position: WATER
+  regions: [ layerthree ]
+  priority: 0.5
+  amount: 1-3
+  spread: 5
+  conditions:
+    - maxNearby:
+        amount: 5
+    - isSourceLiquid: {}
+
+l3_ikenosuke: { inherit: l3_water, type: mm:ikenosuke }
+

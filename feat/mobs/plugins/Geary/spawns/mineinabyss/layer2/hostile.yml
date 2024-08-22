@@ -1,0 +1,30 @@
+namespaces: [ geary ]
+l2_hostile:
+  position: GROUND
+  priority: 0.5
+  regions: [ layertwo ]
+  conditions:
+    - mythicConditions:
+        - lightlevelfromblocks{l=0}
+
+l2_ottobas:
+  inherit: l2_hostile
+  type: mm:ottobas
+  conditions:
+    - $inherit
+    - gap: 4..600
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 2
+
+l2_silkfang:
+  inherit: l2_hostile
+  type: mm:silkfang
+  conditions:
+    - $inherit
+    - gap: 4..600
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 4

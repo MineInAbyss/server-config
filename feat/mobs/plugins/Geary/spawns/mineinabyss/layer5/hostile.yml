@@ -1,0 +1,62 @@
+namespaces: [ geary ]
+l5_hostile:
+  position: GROUND
+  priority: 0.5
+  regions: [ layerfive ]
+  conditions:
+    - mythicConditions:
+        - lightlevelfromblocks{l=0}
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 4
+
+l5_hostile_snow:
+  inherit: l5_hostile
+  conditions:
+    - $inherit
+    - $remove blockBelow
+    - blockBelow:
+        allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW ]
+
+l5_hostile_sand:
+  inherit: l5_hostile
+  conditions:
+    - $inherit
+    - $remove blockBelow
+    - blockBelow:
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE ]
+
+# Mobs
+l5_kuongatari: { inherit: l5_hostile, type: mm:kuongatari }
+l5_yomotsubi: { inherit: l5_hostile, type: mm:yomotsubi }
+l5_swarmshocker: { inherit: l5_hostile, type: mm:swarmshocker }
+
+# Snow
+l5_octoliar: { inherit: l5_hostile_snow, type: mm:octoliar }
+l5_horncrier: { inherit: l5_hostile_snow, type: mm:horncrier }
+
+# Sand
+l5_spikewalker: { inherit: l5_hostile_sand, type: mm:spikewalker }
+l5_kagi_tachikiri: { inherit: l5_hostile_sand, type: mm:kagi_tachikiri }
+l5_virinsipede: { inherit: l5_hostile_sand, type: mm:virinsipede }
+
+# Uncommon
+l5_swarmhoarder:
+  inherit: l5_hostile
+  priority: 0.05
+  type: mm:swarmhoarder
+
+# Rare
+l5_tachikatana:
+  inherit: l5_hostile
+  type: mm:tachikatana
+  priority: 0.03
+  conditions:
+    - $inherit
+    - $remove blockBelow
+    - $remove maxNearby
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 2

@@ -1,0 +1,12 @@
+namespaces: [ geary ]
+l5_flying:
+  position: AIR
+  priority: 0.5
+  regions: [ layerfive ]
+  conditions:
+    - gap: 10..600
+
+# Common
+# onitsuchi,chikyuoebi,uibuta,swarmhoarder
+l5_onitsuchi: { inherit: l5_flying, type: mm:onitsuchi }
+l5_chikyuoebi: { inherit: l5_flying, type: mm:chikyuoebi }
