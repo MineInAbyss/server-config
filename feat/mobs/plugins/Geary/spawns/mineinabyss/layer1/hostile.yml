@@ -4,13 +4,16 @@ l1_hostile:
   priority: 0.5
   regions: [ layerone ]
   conditions:
-    mythicConditions:
-      - lightlevelfromblocks{l=0}
+    - mythicConditions:
+        - lightlevelfromblocks{l=0}
+    - maxNearby:
+        amount: 3
 
 l1_silkfang:
   inherit: l1_hostile
   type: mm:silkfang
   conditions:
-    gap: 4..600
-    block_below:
-      allow: [ grass_block, stone ]
+    - $inherit
+    - gap: 4..600
+    - block_below:
+        allow: [ grass_block, stone ]

@@ -4,10 +4,13 @@ l1_passive:
   priority: 0.5
   regions: [ layerone ]
   amount: 2-3
-  radius: 10
+  spread: 7
+  ySpread: 1
   conditions:
-    block_below:
-      allow: [ grass_block ]
+    - block_below:
+        allow: [ grass_block ]
+    - maxNearby:
+        amount: 5
 
 l1_beniguma: { inherit: l1_passive, type: mm:beniguma }
 l1_fuwagi: { inherit: l1_passive, type: mm:fuwagi }
@@ -15,6 +18,8 @@ l1_okibo:
   inherit: l1_passive
   type: mm:okibo
   amount: 1-2
+  priority: 0.02
   regions: [ orth, l1s0 ]
   conditions:
-    gap: 5..600
+    - $inherit
+    - gap: 5..600
