@@ -63,6 +63,7 @@ hammerbeak:
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 hammerbeakLarge:
   Type: VINDICATOR
+  SpawnCategory: flying
   Display: '<#613F0C>Giant Hammerbeak'
   Modules:
     ThreatTable: true

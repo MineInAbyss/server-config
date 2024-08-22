@@ -1,0 +1,9 @@
+namespaces: [ geary ]
+l1_water:
+  position: WATER
+  regions: [ layerone ]
+  priority: 0.5
+  amount: 1-2
+  radius: 5
+
+l1_spiralsquid: { inherit: l1_water, type: mm:spiralsquid }

@@ -18,7 +18,6 @@ delverarcher:
  # - mmoitems{type=MATERIAL;id=ANCIENTTHREAD} 1-2 0.45
   Skills:
   - skill{s=displayHealth} ~onDamaged 
-  - skill{s=CancelDamageEvent;sync=true} ~onShoot
   - model{mid=DelverArcher;n=false;d=false} @self ~onSpawn
   - state{mid=DelverArcher;s=hurt} @self ~onDamaged
   - skill{s=maarcherShoot;sync=true} @Target ~onShoot

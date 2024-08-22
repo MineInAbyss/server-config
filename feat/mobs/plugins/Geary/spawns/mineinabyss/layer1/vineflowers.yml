@@ -1,0 +1,11 @@
+namespaces: [ geary ]
+l1_vineflowers:
+  position: GROUND
+  priority: 0.1
+  regions: [ layerone ]
+  conditions:
+    block_below:
+      allow: [ grass_block ]
+
+l1_vinebinder: { inherit: l1_vineflowers, type: mm:vinebinder }
+l1_vinepoofer: { inherit: l1_vineflowers, type: mm:vinepoofer }

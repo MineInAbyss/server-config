@@ -1,0 +1,7 @@
+namespaces: [ geary ]
+l1_hostile:
+  position: GROUND
+  priority: 0.5
+  regions: [ layerone ]
+
+l1_silkfang: { inherit: l1_hostile, type: mm:silkfang }

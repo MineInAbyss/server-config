@@ -37,7 +37,6 @@ titanjaw:
   - geary mineinabyss:titanjaw_scale 1-2 0.6
   Skills:
   ####### Misc
-#  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.2
   - skill{s=displayHealth} ~onDamaged
   - skill{s=tj_backup} @self ~ondamaged
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
@@ -82,7 +81,6 @@ baby_titanjaw:
   ####### Misc
   - CancelEvent{sync=true} @self ~onAttack
   - CancelEvent{sync=true} @self ~onInteract
-  - summon{type=baby_titanjaw;amount=1;radius=3} @self ~onSpawn 0.1
   - skill{s=tj_backup} @self ~ondamaged
   - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
   - skill{s=tjHurt} @self ~onHurt
