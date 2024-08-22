@@ -57,3 +57,62 @@ silkfangDeath:
   - sound{s=entity.silverfish.death;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
   - sound{s=entity.phantom.death;sc=master;p=<random.float.1.45to1.55>;v=0.3} @self
   - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=20;repeatInterval=1} @self
+
+
+
+
+
+
+
+
+
+silkfangWeb:   # web attack
+  Cooldown: 10
+  Conditions:
+  - stance{s=attacking} false
+  - targetnotwithin{d=2} true
+  Skills:
+  - stance{s=attacking} @self
+  - setspeed{speed=0;type=walking}
+  - state{state=spray;li=4;lo=4;speed=1.0} @self
+  - sound{s=entity.silverfish.ambient;sc=master;p=0.85;v=2.1} @self
+  - sound{s=entity.spider.hurt;sc=master;p=0.85;v=2.1} @self
+  - delay 10
+  - sound{s=block.snow.break;sc=master;p=1.45;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.55;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.65;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.75;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.85;v=1.1} @self
+  - delay 1
+  - sound{s=block.snow.break;sc=master;p=1.95;v=1.1} @self
+  - delay 9
+  - sound{s=entity.bat.takeoff;sc=master;p=1.95;v=1.1} @self
+  - sound{s=item.dye.use;sc=master;p=1.85;v=1.1} @self
+  - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
+  - sound{s=entity.cat.hiss;sc=master;p=1.75;v=2.1} @self
+  - sound{s=entity.squid.squirt;sc=master;p=2.0;v=1.1} @self
+  - projectile{hft=true;onTick=silkfangWebTick;onEnd=silkfangWebEnd;onHit=silkfangWebHit;v=12;i=1;hR=0.65;vr=0.75;g=0.5;hnp=true;fromorigin=true;origin=@ModelPart{p=cap};syo=1.25;sfo=0;repeat=2;repeatInterval=1} @Cone{angle=90;p=16;range=16;rotation=0} #change this
+  - delay <random.20to50>
+  - stance{s=idle} @self
+  - setspeed{speed=1;type=walking}
+silkfangWebTick:
+  Cooldown: 0.0
+  Skills:
+  - particles{p=cloud;a=1;hs=0.01;vs=0.01;size=4} @origin
+  - modifyProjectile{trait=GRAVITY;action=MULTIPLY;value=2.0;delay=7}
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.95;delay=12}
+silkfangWebEnd:
+  Cooldown: 0.0
+  Skills:
+  - particles{p=cloud;a=1;hs=0.2;vs=0.0;y=-0.05;repeat=60;repeatInterval=1} @origin
+silkfangWebHit:
+  Cooldown: 0.0
+  Skills:
+  - damage{a=<random.1to2>;pi=true;pk=true}
+  - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
+  - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
+  - potion{t=SLOW;l=4;force=true;p=true;d=<random.120to180>}

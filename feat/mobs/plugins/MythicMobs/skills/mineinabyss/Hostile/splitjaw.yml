@@ -1,4 +1,11 @@
 
+
+
+
+splitjawHurt:
+  Cooldown: 10
+  Skills:
+    - effect:sound{s=mineinabyss:entity.splitjaw.hurt;v=1.5;p=0.8} @self
 SJ_Attack:
   Cooldown: 3
   Conditions:

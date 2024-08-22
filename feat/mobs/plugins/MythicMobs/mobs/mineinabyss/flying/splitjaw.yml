@@ -55,9 +55,11 @@ splitjaw:
     - skill{s=SJ_dash} @target ~onTimer:20
     - skill{s=SJ_Attack} @self ~onAttack
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=6;p=0.8} @self ~onAmbient
-    - effect:sound{s=mineinabyss:entity.splitjaw.death;v=6;p=0.8} @self ~onDeath
-    - effect:sound{s=mineinabyss:entity.splitjaw.hurt;v=6;p=0.8} @self ~onDamaged
+
+
+    - skill{s=splitjawHurt} @self ~onHurt
+    - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=1.5;p=0.8} @self ~onAmbient 0.6
+    - effect:sound{s=mineinabyss:entity.splitjaw.death;v=1.5;p=0.8} @self ~onDeath
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=2} ~onDeath
     - skill{s=stingerhead_unstuck} @self ~ondamaged

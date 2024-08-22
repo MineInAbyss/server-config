@@ -61,7 +61,7 @@ Stingerhead:
     - skill{s=stingerhead_venom} @target ~onTimer:45
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=2;delay=1} @trigger ~onDamaged ?~distance{d=>20}
-    - skill{s=virinburrow} @Self ~onDamaged 0.1
+    - skill{s=stingerburrow} @Self ~onDamaged 0.1
     - skill{s=stingerhead_bigleap} @target ~onTimer:100   
     - skill{s=stingerhead_leap} @target ~onTimer:60    
     - skill{s=stingerhead_spin} @self ~onDamaged 0.15
