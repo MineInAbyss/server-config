@@ -1,0 +1,156 @@
+#benigumaspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=beniguma;amount=0-2;radius=3} @self
+#
+#mantoyerspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=mantoyer;amount=0-2;radius=3} @self
+#
+#okibospawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=okibo;amount=0-1;radius=6} @self
+#
+#fuwagispawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=fuwagi;amount=0-2;radius=3} @self
+#
+#spiralsquidspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=spiralsquid;amount=0-1;radius=3} @self
+#
+#hammerbeakspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=hammerbeak;amount=0-2;radius=3} @self
+#
+#
+#bighammerbeakspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=hammerbeak;amount=2;radius=3} @self
+#stingerspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=stinger2;amount=2-4;radius=3} @self
+#inbyospawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=inbyo;amount=2-5;radius=7} @self
+#
+#billabonkspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=billabonk;amount=0-2;radius=3} @self
+#
+#corpseweeperspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=;amount=0-2;radius=4} @self
+#
+#rohanaspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=rohana;amount=0-3;radius=3} @self
+#silkfangspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=;amount=0-1;radius=7} @self
+#squidflyspawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=;amount=0-2;radius=4} @self
+#
+#sakuranbospawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=sakuranbo;amount=0-2;radius=3} @self
+#
+#Kuongatarispawn:
+#  Cooldown: 9999999
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+#  Skills:
+#    - gcd{ticks=20}
+#    - summon{type=kuongatari;amount=0-2;radius=7} @self

@@ -1,5 +1,6 @@
 OrbPiercer:
   Type: ZOMBIE
+  SpawnCategory: hostile
   Display: "<#C74040>Orb Piercer"
   Health: 150
   Damage: 8

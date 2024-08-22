@@ -1,0 +1,8 @@
+groupspawn:
+#  Conditions:
+#    - offgcd
+#    - isChild false
+#    - hasparent false
+  Skills:
+#    - gcd{ticks=20}
+    - summon{type=<skill.type>;amount=<skill.amount>;radius=<skill.radius>} @self

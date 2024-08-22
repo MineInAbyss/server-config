@@ -1,5 +1,6 @@
 tesuchi:
   Type: OCELOT
+  SpawnCategory: passive
   Display: <dark_green>Tesuchi
   Modules:
     ThreatTable: true

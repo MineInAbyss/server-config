@@ -1,5 +1,6 @@
 rohana:
   Type: ALLAY
+  SpawnCategory: flying
   Display: "<#6C19BF>Rohana"
   Health: 10
   AIGoalSelectors:

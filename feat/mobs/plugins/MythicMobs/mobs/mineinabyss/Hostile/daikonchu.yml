@@ -1,5 +1,6 @@
 daikonchu:
   Type: SPIDER
+  SpawnCategory: hostile
   Display: "<#FFF821>Daikonchu"
   Health: 80
   Damage: 0
@@ -22,7 +23,7 @@ daikonchu:
   Drops:
     - exp 15-25
     - geary mineinabyss:daikonchu_carapace 1 0.4
-    - geary mineinabyss:daikonchu_wings 1-2 0.3
+    - geary mineinabyss:daikonchu_wing 1-2 0.3
   Skills:
   - cancelevent{sync=true} @Self ~onAttack
   - skill{s=displayHealth} ~onDamaged  

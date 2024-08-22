@@ -1,5 +1,6 @@
 hashofu:
   Type: ALLAY
+  SpawnCategory: flying
   Display: "<#454545>Hashofu"
   Health: 20
   AIGoalSelectors:

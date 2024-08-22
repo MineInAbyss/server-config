@@ -1,0 +1,55 @@
+
+
+
+HS_ball:
+  Cooldown: 10
+  Conditions:
+    - incombat true
+    - offgcd true
+   # - targetwithin{d=10} true
+    #- targetinlineofsight{} true
+  Skills:
+    - gcd{ticks=100}
+    - state{s=grab} @self
+  #  - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5;repeat=15;repeatInterval=1} @Self
+  #  - effect:particlebox{p=bubble_pop;a=9;repeat=15;repeatInterval=1} @Self
+    - delay 15
+    - setstance{stance=bullet} @self
+    - projectile{onTick=HSA_tick;onHit=HS_impact;v=18;i=1;hR=1;vR=1;hnp=true;tyo=-1} @targetlocation
+    - delay 35
+    - delay 20
+    - setstance{stance=hscharge} @self
+    - state{s=grab;r=true} @self
+HS_charge:
+  Conditions:
+    - stance hscharge
+  Skills:
+    - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5} @Self
+    - effect:particlebox{p=bubble_pop;a=9;y=1.5;s=0.1;r=0.2} @Self
+HSA_tick:
+  Skills:
+    - effect:particlebox{p=bubble;a=5;y=1.5;s=0.1;r=0.5}
+    - effect:particlebox{p=bubble_pop;a=9;y=1.5;s=0.1;r=0.2}
+
+HS_impact:
+  Skills:
+    - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
+    #- explosion{yield=2} @target
+    - command{c="remove boats 5";asOp=true} @target
+    - command{c="remove boats 5";asOp=true} @target
+    - command{c="remove boats 5";asOp=true;asTarget=true} @target
+    - command{c="remove boats 5";asOp=true;asCaster=true} @target
+      
+    - potion{type=BLINDNESS;duration=100;level=1;p=false;force=true} @target
+    - potion{type=SLOWNESS;duration=100;level=1;p=false;force=true} @target
+    - damage{a=8} @target
+    - damage{a=10;ia=true} @target
+    - shieldbreak{duration=150} @target
+
+
+
+HSAmbient:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.elder_guardian.ambient;sc=master;p=<random.float.1.65to2.00>;v=1.1} @self
+  - sound{s=entity.salmon.ambient;sc=master;p=<random.float.0.85to0.95>;v=0.7} @self

@@ -1,5 +1,6 @@
 tachikatana:
   Type: ZOMBIE
+  SpawnCategory: hostile
   Display: "<#00FFFF>Tachikatana"
   Health: 200
   Damage: 0

@@ -1,5 +1,6 @@
 rockwalker:
   Type: SPIDER
+  SpawnCategory: hostile
   Display: "<#BE6400>Rockwalker"
   Modules:
     ThreatTable: true

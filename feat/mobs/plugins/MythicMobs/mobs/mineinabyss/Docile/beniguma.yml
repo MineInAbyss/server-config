@@ -1,5 +1,6 @@
 beniguma:
   Type: PIG
+  SpawnCategory: docile
   Display: "<red>Beniguma"
   Health: 16
   Damage: 3
@@ -32,4 +33,3 @@ beniguma:
   Skills:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=benigumaspawn} @self ~onspawn

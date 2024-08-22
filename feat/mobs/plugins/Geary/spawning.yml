@@ -1,0 +1,16 @@
+defaultCap: 10
+playerCaps:
+  flying: 10
+  hostile: 70
+  passive: 10
+  water: 10
+  animal: 10
+range:
+  maxDistance: 60
+  minDistance: 16
+  maxVerticalDistance: 32
+  playerCapRadius: 256
+runTimes:
+  GROUND: 1t
+  AIR: 1s
+maxSpawnAttemptsPerPlayer: 10

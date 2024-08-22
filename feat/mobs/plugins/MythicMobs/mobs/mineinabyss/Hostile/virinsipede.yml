@@ -1,5 +1,6 @@
 virinsipede:
   Type: zombie
+  SpawnCategory: hostile
   Display: "<#C42D2D>Virinsipede"
   Health: 160
   Damage: 10

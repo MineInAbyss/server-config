@@ -1,5 +1,6 @@
 swarmshocker:
   Type: ZOMBIE
+  SpawnCategory: hostile
   Display: "<#257BEB>Swarmshocker"
   Modules:
     ThreatTable: true

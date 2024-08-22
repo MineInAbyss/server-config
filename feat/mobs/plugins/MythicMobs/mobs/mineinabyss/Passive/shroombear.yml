@@ -1,5 +1,6 @@
 shroombear:
   Type: PIG
+  SpawnCategory: passive
   Display: "<#85562D>Shroombear"
   Modules:
     ThreatTable: true

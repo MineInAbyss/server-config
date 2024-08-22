@@ -1,5 +1,6 @@
 octoliar:
   Type: SPIDER
+  SpawnCategory: hostile
   Display: "<#ADD8E6>Octoliar"
   Modules:
     ThreatTable: true
@@ -31,7 +32,7 @@ octoliar:
   Drops:
   - exp 5-15
   - sweet_berries 1-3 0.6
-  - geary mineinabyss:octoliar_inksac 1-2 0.6
+  - geary mineinabyss:octoliar_ink_sac 1-2 0.6
   - geary mineinabyss:octoliar_tentacle 1-2 0.6
   Skills:
   ####### Misc

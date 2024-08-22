@@ -1,5 +1,6 @@
 corpse_weeper:
   Type: ALLAY
+  SpawnCategory: flying
   Display: '<#D12B26>Corpse-Weeper'
   Health: 35
   Damage: 7

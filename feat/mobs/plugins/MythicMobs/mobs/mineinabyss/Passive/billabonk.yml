@@ -1,5 +1,6 @@
 billabonk:
   Type: FROG
+  SpawnCategory: passive
   Display: "<#0357AB>Billabonk"
   Modules:
     ThreatTable: true

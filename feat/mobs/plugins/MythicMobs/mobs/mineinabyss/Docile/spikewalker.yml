@@ -1,5 +1,6 @@
 spikewalker:
   Type: VINDICATOR
+  SpawnCategory: docile
   Modules:
     ThreatTable: true
   Health: 40 # change this

@@ -1,6 +1,7 @@
 hisoishi:
-  Display: "<#785F34>Hisoishi"
   Type: ZOMBIE
+  SpawnCategory: water
+  Display: "<#785F34>Hisoishi"
   Modules:
     ThreatTable: true
   Health: 25 # change this

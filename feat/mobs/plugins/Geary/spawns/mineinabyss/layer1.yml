@@ -1,0 +1,28 @@
+namespaces: [geary]
+l1_passive:
+  position: GROUND
+  priority: 0.5
+  regions: [layerone]
+  amount: 2-3
+  radius: 10
+  conditions:
+    block_below:
+      allow: [grass_block]
+      deny: []
+
+l1_flying:
+  position: AIR
+  type: mm:hammerbeak
+  priority: 0.5
+  regions: [layerone]
+  # amount: 2-3
+  # radius: 10
+  conditions: {}
+
+l1_beniguma: { inherit: l1_passive, type: mm:beniguma }
+l1_fuwagi: { inherit: l1_passive, type: mm:fuwagi }
+
+l1_okibo:
+  inherit: l1_passive
+  type: mm:okibo
+  amount: 1-2

@@ -1,5 +1,6 @@
 ikenosuke:
   Type: COD
+  SpawnCategory: water
   Display: "<#1B91B5>Ikenosuke"
   Modules:
     ThreatTable: true

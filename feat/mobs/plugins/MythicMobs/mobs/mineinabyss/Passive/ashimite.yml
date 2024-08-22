@@ -1,5 +1,6 @@
 ashimite:
   Type: SHEEP
+  SpawnCategory: passive
   Health: 35
   Display: "<#2597D9>Ashimite"
   AIGoalSelectors:

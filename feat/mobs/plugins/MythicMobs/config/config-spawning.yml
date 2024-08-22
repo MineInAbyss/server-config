@@ -23,12 +23,12 @@ Configuration:
     DisableVanillaSpawns: true
 
     # Must be enabled for ADD method
-    GenerateSpawnPoints: true
+    GenerateSpawnPoints: false
 
     # Area around players where mobs will try to spawn
     SpawnRadiusPerPlayer: 50
-    SpawnRadiusPerPlayerMin: 10
-    SpawnRadiusPerPlayerY: 25
+    SpawnRadiusPerPlayerMin: 16
+    SpawnRadiusPerPlayerY: 32
 
     # Allows Mythic mobs to spawn this amount over the vanilla cap
     LimitMultiplier: 1

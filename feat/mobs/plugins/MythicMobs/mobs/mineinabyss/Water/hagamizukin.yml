@@ -1,5 +1,6 @@
 hagamizukin:
   Type: SALMON
+  SpawnCategory: water
   Display: "<#0B6623>Hagamizukin"
   Modules:
     ThreatTable: true

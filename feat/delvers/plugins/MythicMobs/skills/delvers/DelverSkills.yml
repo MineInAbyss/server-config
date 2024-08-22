@@ -56,7 +56,7 @@ pirategun:
 gunTick:
   Conditions:
   Skills:
-  - effect:particles{particle=smoke_medium;a=1;s=0.1;hs=0.1;vs=0.1} @origin
+  - effect:particles{particle=smoke;a=1;s=0.1;hs=0.1;vs=0.1} @origin
 gunHit:
   Conditions:
   Cooldown:
@@ -102,7 +102,7 @@ PCTick:
   Cooldown:
   Skills:
   - effect:particles{p=reddust;color=#000000;a=15;s=0.05;hR=0.5;vR=0.5} @origin
-  - effect:particles{particle=smoke_medium;a=15;s=0.05;hs=0.5;vs=0.5} @origin
+  - effect:particles{particle=smoke;a=15;s=0.05;hs=0.5;vs=0.5} @origin
 PCHit:
   Conditions:
   Skills:
