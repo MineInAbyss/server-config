@@ -3,6 +3,9 @@ l1_hostile:
   position: GROUND
   priority: 0.5
   regions: [ layerone ]
+  conditions:
+    mythicConditions:
+      - lightlevelfromblocks{l=0}
 
 l1_silkfang:
   inherit: l1_hostile
