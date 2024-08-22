@@ -4,4 +4,10 @@ l1_hostile:
   priority: 0.5
   regions: [ layerone ]
 
-l1_silkfang: { inherit: l1_hostile, type: mm:silkfang }
+l1_silkfang:
+  inherit: l1_hostile
+  type: mm:silkfang
+  conditions:
+    gap: 4..600
+    block_below:
+      allow: [ grass_block, stone ]

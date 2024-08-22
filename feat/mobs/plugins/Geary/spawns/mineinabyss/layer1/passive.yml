@@ -16,3 +16,5 @@ l1_okibo:
   type: mm:okibo
   amount: 1-2
   regions: [ orth, l1s0 ]
+  conditions:
+    gap: 5..600

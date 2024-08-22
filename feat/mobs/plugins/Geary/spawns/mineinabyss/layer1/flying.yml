@@ -6,7 +6,7 @@ l1_flying:
   # amount: 2-3
   # radius: 10
   conditions:
-    gap: 10..
+    gap: 10..600
 
 l1_hammerbeak: { inherit: l1_flying, type: mm:hammerbeak }
 l1_cyatoria: { inherit: l1_flying, type: mm:cyatoria }
