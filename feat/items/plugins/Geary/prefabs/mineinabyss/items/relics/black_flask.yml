@@ -21,7 +21,7 @@ observe:
 resourcepack:
   baseMaterial: minecraft:potion
   textures:
-    - mineinabyss:item/relics/consumable/black_flask
-    - mineinabyss:item/relics/consumable/black_flask
+    - mineinabyss:item/relics/consumables/black_flask
+    - mineinabyss:item/relics/consumables/black_flask
   itemPredicates:
     customModelData: 1

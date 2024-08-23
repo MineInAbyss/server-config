@@ -11,6 +11,6 @@ set.item:
       - <#A68348><i>without proper care..
 resourcepack:
   baseMaterial: minecraft:wheat_seeds
-  textures: mineinabyss:item/creature_drops/rockwalker_mandible
+  textures: mineinabyss:item/creature_drops/plant_matter
   itemPredicates:
     customModelData: 1
