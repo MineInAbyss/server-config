@@ -14,11 +14,12 @@ passive:
           mythicConditions:
             - health{h=<5}
       - particle:
-          at: "{{ entity.getLocation }}"
           particle: CLOUD
           offsetY: 1
           count: 3
           speed: 0
+        with:
+          location: "{{ entity.getLocation }}"
       - applyPotionEffects:
           - type: minecraft:speed
             duration: 3s

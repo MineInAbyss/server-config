@@ -25,4 +25,5 @@ observe:
     - explode:
         breakBlocks: false
         power: 2
-        at: "{{ entity.getTargetBlock { maxDistance: 10 } }}"
+      with:
+        location: "{{ entity.getTargetBlock { maxDistance: 10 } }}"

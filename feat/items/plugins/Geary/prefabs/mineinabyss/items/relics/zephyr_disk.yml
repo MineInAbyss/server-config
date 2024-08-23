@@ -22,7 +22,8 @@ observe:
 #            power: 1
 #            yAngle: 0.5
         - particle:
-            at: "{{ entity.getLocation }}"
             particle: CLOUD
             count: 3
+          with:
+            location: "{{ entity.getLocation }}"
       loop: "entity.getNearbyEntities { radius: 10 }"
