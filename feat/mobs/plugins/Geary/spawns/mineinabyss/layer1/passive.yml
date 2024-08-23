@@ -1,16 +1,16 @@
 namespaces: [ geary ]
 l1_passive:
   position: GROUND
-  priority: 0.015
+  priority: 0.0015
   regions: [ layerone ]
-  amount: 1-3
+  amount: 1-2
   spread: 5
   ySpread: 1
   conditions:
    # - blockBelow:
   #      allow: [ grass_block ]
     - maxNearby:
-        amount: 5
+        amount: 4
 
 l1_beniguma: { inherit: l1_passive, type: mm:beniguma }
 l1_fuwagi: { inherit: l1_passive, type: mm:fuwagi }
@@ -18,8 +18,10 @@ l1_okibo:
   inherit: l1_passive
   type: mm:okibo
   amount: 1-2
-  priority: 0.02
+  priority: 0.002
   regions: [ orth, l1s0 ]
   conditions:
-    - $inherit
-    - gap: 5..600
+    - blockBelow:
+        allow: [ grass_block ]
+    - maxNearby:
+        amount: 2

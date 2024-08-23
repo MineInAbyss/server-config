@@ -59,24 +59,24 @@
 #    - summon{type=hammerbeak;amount=0-2;radius=3} @self
 #
 #
-#bighammerbeakspawn:
-#  Cooldown: 9999999
-#  Conditions:
-#    - offgcd
-#    - isChild false
-#    - hasparent false
-#  Skills:
-#    - gcd{ticks=20}
-#    - summon{type=hammerbeak;amount=2;radius=3} @self
-#stingerspawn:
-#  Cooldown: 9999999
-#  Conditions:
-#    - offgcd
-#    - isChild false
-#    - hasparent false
-#  Skills:
-#    - gcd{ticks=20}
-#    - summon{type=stinger2;amount=2-4;radius=3} @self
+bighammerbeakspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=hammerbeak;amount=2;radius=3} @self
+stingerspawn:
+  Cooldown: 9999999
+  Conditions:
+    - offgcd
+    - isChild false
+    - hasparent false
+  Skills:
+    - gcd{ticks=20}
+    - summon{type=stinger2;amount=2-4;radius=3} @self
 #inbyospawn:
 #  Cooldown: 9999999
 #  Conditions:

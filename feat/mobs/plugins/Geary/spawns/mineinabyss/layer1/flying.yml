@@ -4,7 +4,7 @@ l1_flying:
   priority: 0.0002
   regions: [ layerone ]
   conditions:
-    - gap: 10..600
+    - gap: 5..600
 
 
 l1_hammerbeak: { inherit: l1_flying, type: mm:hammerbeak }
