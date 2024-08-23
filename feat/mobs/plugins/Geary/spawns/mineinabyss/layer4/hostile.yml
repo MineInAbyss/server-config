@@ -9,7 +9,7 @@ l4_hostile:
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
-        amount: 4
+        amount: 3
 
 # Common
 l4_kuongatari:
@@ -18,7 +18,13 @@ l4_kuongatari:
   amount: 2-4
   spread: 7
 l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
-l4_yomotsubi: { inherit: l4_hostile, type: mm:yomotsubi }
+l4_yomotsubi:
+  inherit: l4_hostile
+  type: mm:yomotsubi
+  conditions:
+    - $inherit
+    - $remove maxNearby
+    - maxNearby: { amount: 2 }
 l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }
 
 # Uncommon
@@ -28,6 +34,7 @@ l4_orbpiercer:
   priority: 0.05
   conditions:
     - $inherit
+    - $remove maxNearby blockBelow
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
@@ -40,8 +47,7 @@ l4_tachikatana:
   priority: 0.01
   conditions:
     - $inherit
-    - $remove blockBelow
-    - $remove maxNearby
+    - $remove maxNearby blockBelow
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:

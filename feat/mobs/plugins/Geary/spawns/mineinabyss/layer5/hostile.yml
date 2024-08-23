@@ -58,8 +58,7 @@ l5_tachikatana:
   priority: 0.03
   conditions:
     - $inherit
-    - $remove blockBelow
-    - $remove maxNearby
+    - $remove maxNearby blockBelow
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:

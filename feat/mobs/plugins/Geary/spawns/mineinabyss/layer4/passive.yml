@@ -15,4 +15,11 @@ l4_passive:
 
 # shroombear,hashofu
 l4_shroombear: { inherit: l4_passive, type: mm:shroombear }
-l4_hashofu: { inherit: l4_passive, type: mm:hashofu }
+l4_hashofu:
+  inherit: l4_passive
+  type: mm:hashofu
+  conditions:
+    - $inherit
+    - $remove maxNearby
+    - maxNearby:
+        amount: 2
