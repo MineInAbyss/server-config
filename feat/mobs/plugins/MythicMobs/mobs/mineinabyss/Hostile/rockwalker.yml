@@ -44,4 +44,3 @@ rockwalker:
     - skill{s=hsDeath} @self ~onDeath
     - state{mid=rockwalker;s=attack;li=3;lo=3} @self ~onAttack
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=stingerhead_unstuck} @self ~ondamaged

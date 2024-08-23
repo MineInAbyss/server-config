@@ -23,6 +23,9 @@ l4_uibuta:
   priority: 0.1
   conditions: # Ensure we're at water surface
     - $inherit
+    - $remove maxNearby
+    - maxNearby:
+        amount: 2
     - blockAbove:
         allow: [ AIR ]
 l4_makihige:
@@ -31,5 +34,8 @@ l4_makihige:
   priority: 0.1
   conditions:
     - $inherit
+    - $remove maxNearby
+    - maxNearby:
+        amount: 3
     - blockAbove:
         allow: [ AIR ]

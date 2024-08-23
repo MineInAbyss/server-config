@@ -7,6 +7,6 @@ l4_flying:
     - gap: 10..600
 
 # Common
-# onitsuchi
+l4_onitsuchi: { inherit: l4_flying, type: mm:onitsuchi }
 
 # Uncommon

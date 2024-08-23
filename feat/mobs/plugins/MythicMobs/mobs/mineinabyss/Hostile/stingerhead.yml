@@ -57,7 +57,6 @@ Stingerhead:
     - heal{amount=150} @self ~onkill
     - skill{s=SH_Hit} ~onDamaged
     - dismount ~onDamaged
-    - skill{s=stingerhead_unstuck} @self ~ondamaged
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
     #- skill:MIAPetExpNearby{exp=1} ~onDeath

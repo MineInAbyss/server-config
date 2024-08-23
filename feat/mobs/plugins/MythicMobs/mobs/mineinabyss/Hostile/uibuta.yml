@@ -44,4 +44,3 @@ uibuta:
     - effect:sound{s=mineinabyss:entity.ottobas.hurt;v=6;p=0.8} @self ~onDamaged
     
 
-    - skill{s=stingerhead_unstuck} @self ~ondamaged

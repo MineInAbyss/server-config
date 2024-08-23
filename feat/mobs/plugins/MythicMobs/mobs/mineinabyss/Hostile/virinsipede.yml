@@ -41,4 +41,3 @@ virinsipede:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=virinburrow} @Self ~onTimer:60
     - state{mid=virinsipede;s=attack} @self ~onAttack
-    - skill{s=stingerhead_unstuck} @self ~ondamaged

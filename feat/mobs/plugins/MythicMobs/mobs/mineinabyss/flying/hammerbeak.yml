@@ -59,7 +59,6 @@ hammerbeak:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
   - skill{s=displayHealth} ~onDamaged  
-    - skill{s=stingerhead_unstuck} @self ~ondamaged
   - skill:MIAPetExpNearby{exp=1} ~onDeath
 hammerbeakLarge:
   Type: VINDICATOR
@@ -122,4 +121,3 @@ hammerbeakLarge:
   - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
   - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill{s=stingerhead_unstuck} @self ~ondamaged

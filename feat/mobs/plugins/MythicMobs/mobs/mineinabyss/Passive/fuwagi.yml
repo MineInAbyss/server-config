@@ -38,4 +38,3 @@ fuwagi:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=fuwagispawn} @self ~onspawn
-    - skill{s=stingerhead_unstuck} @self ~ondamaged

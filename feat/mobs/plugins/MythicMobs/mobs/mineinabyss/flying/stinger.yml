@@ -40,7 +40,6 @@ stinger:
   DamageModifiers:
 
   Skills:
-  - skill{s=stingerhead_unstuck} @self ~ondamaged
   ####### Misc
   - look{} @target ~onTimer:20
   - defaultstate{t=walk;s=walk;sp=1.0} @self ~onSpawn

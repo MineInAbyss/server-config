@@ -55,7 +55,6 @@ orbpiercer:
     - skill{s=orbyATTACK} @self ~onAttack
     #- skill{s=Changetarget} ~onTimer:160 <99%
     - dismount ~onDamaged
-    - skill{s=stingerhead_unstuck} @self ~ondamaged
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear2} @target ~onTimer:20 <50%

@@ -47,9 +47,7 @@ silkfang:
   - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
   - dismount ~onDamaged
   - skill{s=Changetarget} ~onTimer:160 <99%
-  - skill{s=stingerhead_unstuck} @self ~onTimer:20
   - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
   - skill{s=silkfangHurt} @self ~onHurt
   - skill{s=silkfangDeath} @self ~onDeath
   #- skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill{s=stingerhead_unstuck} @self ~ondamaged

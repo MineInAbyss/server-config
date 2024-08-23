@@ -28,7 +28,11 @@ l5_hostile_sand:
         allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE ]
 
 # Mobs
-l5_kuongatari: { inherit: l5_hostile, type: mm:kuongatari }
+l5_kuongatari:
+  inherit: l5_hostile
+  type: mm:kuongatari
+  amount: 3-4
+  spread: 7
 l5_yomotsubi: { inherit: l5_hostile, type: mm:yomotsubi }
 l5_swarmshocker: { inherit: l5_hostile, type: mm:swarmshocker }
 

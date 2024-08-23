@@ -11,7 +11,12 @@ l4_hostile:
     - maxNearby:
         amount: 4
 
-l4_kuongatari: { inherit: l4_hostile, type: mm:kuongatari }
+# Common
+l4_kuongatari:
+  inherit: l4_hostile
+  type: mm:kuongatari
+  amount: 2-4
+  spread: 7
 l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
 l4_yomotsubi: { inherit: l4_hostile, type: mm:yomotsubi }
 l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }

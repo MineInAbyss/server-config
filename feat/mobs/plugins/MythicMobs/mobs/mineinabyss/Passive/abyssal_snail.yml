@@ -38,4 +38,3 @@ abyssal_snail:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=breathe} @self ~onspawn
-    - skill{s=stingerhead_unstuck} @self ~ondamaged
