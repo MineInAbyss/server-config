@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 l1_hostile:
   position: GROUND
-  priority: 0.02
+  priority: 0.001
   regions: [ layerone ]
   conditions:
     - mythicConditions:
@@ -15,5 +15,5 @@ l1_silkfang:
   conditions:
     - $inherit
     - gap: 4..600
-    - blockBelow:
-        allow: [ grass_block, stone ]
+  #  - blockBelow:
+   #     allow: [ grass_block, stone ]

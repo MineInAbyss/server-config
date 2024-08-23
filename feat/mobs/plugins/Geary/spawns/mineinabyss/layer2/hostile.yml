@@ -28,3 +28,5 @@ l2_silkfang:
         allow: [ grass_block, stone ]
     - maxNearby:
         amount: 4
+
+l2_woodcrier: { inherit: l2_silkfang, type: mm:woodcrier }

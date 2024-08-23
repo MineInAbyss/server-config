@@ -1,16 +1,16 @@
 defaultCap: 10
 playerCaps:
-  flying: 6
-  hostile: 7
-  passive: 10
+  flying: 5
+  hostile: 5
+  passive: 12
   water: 7
-  docile: 
+  miniboss: 2
 range:
   maxDistance: 60
   minDistance: 16
-  maxVerticalDistance: 30
+  maxVerticalDistance: 22
   playerCapRadius: 200
 runTimes:
   GROUND: 1t
-  AIR: 8s
+  AIR: 11s
 maxSpawnAttemptsPerPlayer: 10

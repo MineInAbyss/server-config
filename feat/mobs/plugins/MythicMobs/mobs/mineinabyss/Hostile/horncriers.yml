@@ -75,6 +75,7 @@ horncrier:
   Display: "<#9A1CAD>Horncrier"
   Health: 65
   Damage: 0
+  SpawnCategory: hostile
   AIGoalSelectors:
     - clear
     - meleeattack

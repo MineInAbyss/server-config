@@ -1,6 +1,6 @@
 rinsipede:
   Type: spider
-  SpawnCategory: docile
+  SpawnCategory: passive
   Modules:
     ThreatTable: true
   Health: 30 # change this

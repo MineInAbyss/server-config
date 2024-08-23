@@ -1,6 +1,6 @@
 titanjaw:
   Type: RAVAGER
-  SpawnCategory: docile
+  SpawnCategory: passive
   Modules:
     ThreatTable: true
   Health: 60 # change this

@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 l1_vineflowers:
   position: GROUND
-  priority: 0.01
+  priority: 0.001
   regions: [ layerone ]
   conditions:
     - blockBelow:

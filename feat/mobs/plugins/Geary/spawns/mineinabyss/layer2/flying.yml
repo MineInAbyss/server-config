@@ -10,7 +10,6 @@ l2_flying:
 l2_hammerbeak: { inherit: l2_flying, type: mm:hammerbeak }
 l2_cyatoria: { inherit: l2_flying, type: mm:cyatoria }
 l2_dosetori: { inherit: l2_flying, type: mm:dosetori }
-l2_woodcrier: { inherit: l2_flying, type: mm:woodcrier }
 
 # Uncommon
 l2_hammerbeakLarge: { inherit: l2_flying, type: mm:hammerbeakLarge, priority: 0.05 }
