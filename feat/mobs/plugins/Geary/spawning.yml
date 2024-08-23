@@ -4,10 +4,11 @@ playerCaps:
   hostile: 10
   passive: 12
   water: 7
+  uncommon: 5
   miniboss: 2
 range:
-  maxDistance: 60
-  minDistance: 16
+  maxDistance: 50
+  minDistance: 10
   maxVerticalDistance: 22
   playerCapRadius: 200
 runTimes:
