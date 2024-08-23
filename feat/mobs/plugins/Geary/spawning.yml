@@ -1,10 +1,10 @@
 defaultCap: 10
 playerCaps:
   flying: 6
-  hostile: 25
-  passive: 15
-  water: 10
-  docile: 10
+  hostile: 7
+  passive: 10
+  water: 7
+  docile: 
 range:
   maxDistance: 60
   minDistance: 16

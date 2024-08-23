@@ -1,10 +1,10 @@
 namespaces: [ geary ]
 l1_passive:
   position: GROUND
-  priority: 0.5
+  priority: 0.015
   regions: [ layerone ]
-  amount: 2-3
-  spread: 7
+  amount: 1-3
+  spread: 5
   ySpread: 1
   conditions:
     - blockBelow:

@@ -1,12 +1,13 @@
 namespaces: [ geary ]
 l1_flying:
   position: AIR
-  priority: 0.5
+  priority: 0.02
   regions: [ layerone ]
   conditions:
     - gap: 10..600
 
+
 l1_hammerbeak: { inherit: l1_flying, type: mm:hammerbeak }
 l1_cyatoria: { inherit: l1_flying, type: mm:cyatoria }
-l1_hammerbeakLarge: { inherit: l1_flying, type: mm:hammerbeakLarge, priority: 0.05 }
-l1_splitjaw: { inherit: l1_flying, type: mm:splitjaw, priority: 0.01 }
+l1_hammerbeakLarge: { inherit: l1_flying, type: mm:hammerbeakLarge, priority: 0.005 }
+l1_splitjaw: { inherit: l1_flying, type: mm:splitjaw, priority: 0.001 }
