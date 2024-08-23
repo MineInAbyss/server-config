@@ -6,8 +6,6 @@ l4_hostile:
   conditions:
     - mythicConditions:
         - lightlevelfromblocks{l=0}
-    - blockBelow:
-        allow: [ grass_block, stone ]
     - maxNearby:
         amount: 3
 
@@ -17,7 +15,17 @@ l4_kuongatari:
   type: mm:kuongatari
   amount: 2-4
   spread: 7
-l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
+  conditions:
+    - $inherit
+    - blockBelow:
+        allow: [ grass_block ]
+l4_horncrier:
+  inherit: l4_hostile
+  type: mm:horncrier
+  conditions:
+    - $inherit
+    - blockBelow:
+        allow: [ stone, packed_ice ]
 l4_yomotsubi:
   inherit: l4_hostile
   type: mm:yomotsubi
@@ -25,7 +33,15 @@ l4_yomotsubi:
     - $inherit
     - $remove maxNearby
     - maxNearby: { amount: 2 }
-l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }
+    - blockBelow:
+        allow: [ grass_block ]
+l4_swarmshocker:
+  inherit: l4_hostile
+  type: mm:swarmshocker
+  conditions:
+    - $inherit
+    - blockBelow:
+        allow: [ grass_block ]
 
 # Uncommon
 l4_orbpiercer:
@@ -34,7 +50,7 @@ l4_orbpiercer:
   priority: 0.05
   conditions:
     - $inherit
-    - $remove maxNearby blockBelow
+    - $remove maxNearby
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
@@ -47,7 +63,7 @@ l4_tachikatana:
   priority: 0.01
   conditions:
     - $inherit
-    - $remove maxNearby blockBelow
+    - $remove maxNearby
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
