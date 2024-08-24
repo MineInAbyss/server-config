@@ -20,7 +20,7 @@ mia_baby_corpse_weeper:
     Scale: 0.3
   Skills:
   - skill{s=mia_death} @self ~onDeath
-  - skill{s=mia_spawn} @self ~onSpawn
+#  - skill{s=mia_spawn} @self ~onSpawn
   - skill{s=mia_baby_corpse_weeper_spell} @target ~onTimer:20
 
   #- skill:MIAPetExpNearby{exp=1;radius=10} ~onDeath
@@ -78,7 +78,7 @@ mia_corpse_weeper:
   - potion{p=false;type=SLOW_FALLING;duration=25;level=1} @owner ~onTimer:20
   - skill{s=mia_feed} @self ~onInteract <100%
   - skill{s=mia_death} @self ~onDeath
-  - skill{s=mia_spawn} @self ~onSpawn
+#  - skill{s=mia_spawn} @self ~onSpawn
   - skill{s=mia_corpseweeper_spell} @ring{r=4;p=6} ~onTimer:20
   - skill{s=mia_corpseweeper_attack_1_sync;sync=true} @target ~onAttack
 

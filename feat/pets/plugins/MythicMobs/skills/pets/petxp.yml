@@ -76,22 +76,22 @@ mia_learn_spell:
   - sound{s=minecraft:entity.player.levelup;v=1;sc=HOSTILE} @self
   - heal{amount=1000} @self
   - message{m="&f<caster.display> &6LEVELED UP!"} @owner
-  - skill{s=mia_poki_learn_spell} @self
-  - skill{s=mia_stabuaro_learn_spell} @self
-  - skill{s=mia_cinderbite_learn_spell} @self
-  - skill{s=mia_charchomp_learn_spell} @self
-  - skill{s=mia_seeweed_learn_spell} @self
-  - skill{s=mia_norimon_learn_spell} @self
-  - skill{s=mia_shambox_learn_spell} @self
-  - skill{s=mia_fauxcase_learn_spell} @self
-  - skill{s=mia_waftling_learn_spell} @self
-  - skill{s=mia_buoyduck_learn_spell} @self
-  - skill{s=mia_potbelly_learn_spell} @self
-  - skill{s=mia_thugjug_learn_spell} @self
-  - skill{s=mia_pit_learn_spell} @self
-  - skill{s=mia_snapweed_learn_spell} @self
-  - skill{s=mia_snohut_learn_spell} @self
-  - skill{s=mia_igloortle_learn_spell} @self
+#  - skill{s=mia_poki_learn_spell} @self
+#  - skill{s=mia_stabuaro_learn_spell} @self
+#  - skill{s=mia_cinderbite_learn_spell} @self
+#  - skill{s=mia_charchomp_learn_spell} @self
+#  - skill{s=mia_seeweed_learn_spell} @self
+#  - skill{s=mia_norimon_learn_spell} @self
+#  - skill{s=mia_shambox_learn_spell} @self
+#  - skill{s=mia_fauxcase_learn_spell} @self
+#  - skill{s=mia_waftling_learn_spell} @self
+#  - skill{s=mia_buoyduck_learn_spell} @self
+#  - skill{s=mia_potbelly_learn_spell} @self
+#  - skill{s=mia_thugjug_learn_spell} @self
+#  - skill{s=mia_pit_learn_spell} @self
+#  - skill{s=mia_snapweed_learn_spell} @self
+#  - skill{s=mia_snohut_learn_spell} @self
+#  - skill{s=mia_igloortle_learn_spell} @self
   
 ### PET EVOLVE ###
 
@@ -134,7 +134,7 @@ mia_dodge:
   
 mia_dodge_left:
   Skills:
-  - skill{s=mia_sound_swing} @self
+#  - skill{s=mia_sound_swing} @self
   - settargetscore{o=dodge;v=0} @self
   - lockmodel{l=true} @self
   - message{m="&a<caster.display>&f dodged the attack!"} @owner
@@ -148,7 +148,7 @@ mia_dodge_left:
   
 mia_dodge_right:
   Skills:
-  - skill{s=mia_sound_swing} @self
+#  - skill{s=mia_sound_swing} @self
   - settargetscore{o=dodge;v=0} @self
   - lockmodel{l=true} @self
   - message{m="&a<caster.display>&f dodged the attack!"} @owner

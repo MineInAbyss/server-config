@@ -35,7 +35,7 @@ corpse_weeper:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-    - skill{s=corpseweeperspawn} @self ~onSpawn
+#    - skill{s=corpseweeperspawn} @self ~onSpawn
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=corpse_weeper;c=15} @self ~onSpawn

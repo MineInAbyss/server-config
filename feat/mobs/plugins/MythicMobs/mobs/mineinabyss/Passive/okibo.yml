@@ -31,4 +31,4 @@ okibo:
   Skills:
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=okibospawn} @self ~onspawn
+#    - skill{s=okibospawn} @self ~onspawn

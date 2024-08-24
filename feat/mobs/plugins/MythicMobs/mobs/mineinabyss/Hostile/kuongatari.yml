@@ -38,7 +38,7 @@ kuongatari:
     - geary mineinabyss:kuongatari_silk 1-2 0.6
     - geary mineinabyss:kuongatari_abdomen_raw 1-2 0.7
   Skills:
-    - skill{s=Kuongatarispawn} @self ~onspawn
+#    - skill{s=Kuongatarispawn} @self ~onspawn
 
     - skill{s=displayHealth} ~onDamaged  
     - state{mid=kuongatari;s=attack} @self ~onAttack

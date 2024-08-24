@@ -37,4 +37,4 @@ fuwagi:
     - effect:sound{s=mineinabyss:entity.fuwagi.hurt;v=6;p=0.2} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=fuwagispawn} @self ~onspawn
+#    - skill{s=fuwagispawn} @self ~onspawn

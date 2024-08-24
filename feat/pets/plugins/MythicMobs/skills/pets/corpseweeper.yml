@@ -53,7 +53,7 @@ mia_corpseweeper_attack_damage:
   TargetConditions:
   - score{objective=dodge;value=1} false
   Skills:
-  - skill{s=mia_sound_impact} @self
+#  - skill{s=mia_sound_impact} @self
   - sudoskill{s=mia_XP;cat=true}
   - damage{a=<pet.power>*2}
   
@@ -88,7 +88,7 @@ mia_corpseweeper_spell:
   - delay 10
   - totem{md=2;oH=mia_corpseweeper_spell_damage;hr=1;vr=1;hnp=true;hp=false} @forward{f=.5}
   - message{m="&a<caster.display>&f used &6Triple Peck!"} @owner
-  - skill{s=mia_corpseweeper_spell_cast} @Sphere{radius=6;points=12;yoffset=1}
+#  - skill{s=mia_corpseweeper_spell_cast} @Sphere{radius=6;points=12;yoffset=1}
   #- totem{md=2;oH=mia_corpseweeper_spell_damage;hS=5;vS=5;hnp=true;hp=false} @self 
   - delay 20
   - setspeed{type=walking;speed=1.35} @self
@@ -101,6 +101,6 @@ mia_corpseweeper_spell_damage:
   - score{objective=dodge;value=1} false
   Skills:
   - throw{v=4;vy=3}
-  - skill{s=mia_sound_impact} @self
+#  - skill{s=mia_sound_impact} @self
   - sudoskill{s=mia_XP;cat=true}
   - damage{a=<pet.power>*4}

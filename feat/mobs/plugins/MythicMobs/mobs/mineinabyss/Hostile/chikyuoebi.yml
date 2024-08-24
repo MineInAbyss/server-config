@@ -56,7 +56,7 @@ chikyuoebi:
    # - skill{s=hc_backup} @self ~ondamaged
    # - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=hcHurt} @self ~onHurt
-    - skill{s=hcDeath} @self ~onDeath
+#    - skill{s=hcDeath} @self ~onDeath
 
     - skill{s=displayHealth} ~onDamaged  
     - skill:MIAPetExpNearby{exp=2} ~onDeath

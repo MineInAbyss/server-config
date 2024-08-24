@@ -32,7 +32,7 @@ rohana:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
- #   - skill{s=rohanaspawn} @self ~onspawn
+#    - skill{s=rohanaspawn} @self ~onspawn
 
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
     - bodyclamp{m=rohana;c=15} @self ~onLoad

@@ -36,8 +36,8 @@ buroguro:
   Skills:
   - skill{s=displayHealth} ~onDamaged  
   - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill{s=buruguroSpawn} @self ~onSpawn
-  - skill{s=buruguroDamaged} @self ~onDamaged
-  - skill{s=buruguroTick} @self ~onTimer:20
+#  - skill{s=buruguroSpawn} @self ~onSpawn
+#  - skill{s=buruguroDamaged} @self ~onDamaged
+#  - skill{s=buruguroTick} @self ~onTimer:20
   - skill{s=buroguroMelee} @trigger ~onAttack
   

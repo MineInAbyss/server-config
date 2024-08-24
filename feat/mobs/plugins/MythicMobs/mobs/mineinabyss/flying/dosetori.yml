@@ -34,7 +34,7 @@ dosetori:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-    - skill{s=dosetorispawn} @self ~onspawn
+#    - skill{s=dosetorispawn} @self ~onspawn
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=dosetori;c=15} @self ~onSpawn

@@ -33,7 +33,7 @@ squidfly:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-    - skill{s=squidflyspawn} @self ~onspawn
+#    - skill{s=squidflyspawn} @self ~onspawn
 
   # - CancelEvent{sync=true} ~onAttack
   # - skill{s=Damage_5} @self ~onAttack

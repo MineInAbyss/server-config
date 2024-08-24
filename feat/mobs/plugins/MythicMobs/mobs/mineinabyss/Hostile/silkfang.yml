@@ -36,7 +36,7 @@ silkfang:
   - geary mineinabyss:bundle_of_silkfang_silk 1 0.2
 
   Skills:
-  - skill{s=silkfangspawn} @self ~onspawn
+#  - skill{s=silkfangspawn} @self ~onspawn
 
   - skill{s=displayHealth} ~onDamaged
   - skill:MIAPetExpNearby{exp=1} ~onDeath
