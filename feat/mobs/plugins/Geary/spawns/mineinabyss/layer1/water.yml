@@ -2,7 +2,7 @@ namespaces: [ geary ]
 l1_water:
   position: WATER
   regions: [ layerone ]
-  priority: 0.001
+  priority: 0.0005
   amount: 1-2
   spread: 5
   conditions:
