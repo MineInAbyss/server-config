@@ -1,8 +1,11 @@
 namespaces: [ geary ]
 l4_docile:
   position: GROUND
-  priority: 0.5
+  priority: 0.0003
   regions: [ layerfour ]
+  amount: 1-3
+  spread: 5
+  ySpread: 1
   conditions:
     - blockBelow:
         allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
@@ -10,5 +13,17 @@ l4_docile:
         amount: 5
 
 # stinger,mantoyer
-l4_stinger: { inherit: l4_docile, type: mm:stinger }
 l4_mantoyer: { inherit: l4_docile, type: mm:mantoyer }
+
+
+l4_stinger:
+  inherit: l4_docile
+  type: mm:stinger
+  amount: 3-5
+  priority: 0.0002
+  regions: [ layerfour ]
+  conditions:
+    - blockBelow:
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
+    - maxNearby:
+        amount: 2

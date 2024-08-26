@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 l1_passive:
   position: GROUND
-  priority: 0.0015
+  priority: 0.001
   regions: [ layerone ]
   amount: 1-2
   spread: 5
@@ -18,7 +18,7 @@ l1_okibo:
   inherit: l1_passive
   type: mm:okibo
   amount: 1-2
-  priority: 0.002
+  priority: 0.0002
   regions: [ orth, l1s0 ]
   conditions:
     - blockBelow:

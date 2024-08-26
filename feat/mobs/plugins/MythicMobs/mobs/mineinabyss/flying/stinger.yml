@@ -1,6 +1,6 @@
 stinger:
   Type: BEE
-  SpawnCategory: flying
+  SpawnCategory: swarm
   Display: '<#03AC13>Stinger'  # change this
   Modules:
     ThreatTable: true

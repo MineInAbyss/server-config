@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 l1_hostile:
   position: GROUND
-  priority: 0.001
+  priority: 0.0005
   regions: [ layerone ]
   conditions:
     - mythicConditions:

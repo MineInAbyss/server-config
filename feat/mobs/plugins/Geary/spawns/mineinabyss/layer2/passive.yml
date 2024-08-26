@@ -1,9 +1,9 @@
 namespaces: [ geary ]
 l2_passive:
   position: GROUND
-  priority: 0.5
+  priority: 0.001
   regions: [ layertwo ]
-  amount: 2-3
+  amount: 1-3
   spread: 7
   ySpread: 1
   conditions:
@@ -13,5 +13,18 @@ l2_passive:
         amount: 5
 
 l2_fuwagi: { inherit: l2_passive, type: mm:fuwagi }
-l2_tesuchi: { inherit: l2_passive, type: mm:tesuchi }
 l2_chimokami: { inherit: l2_passive, type: mm:chimokami }
+
+
+l2_tesuchi:
+  position: GROUND
+  priority: 0.00025
+  regions: [ layertwo ]
+  amount: 1-2
+  spread: 7
+  ySpread: 1
+  conditions:
+    - blockBelow:
+        allow: [ grass_block, dirt ]
+    - maxNearby:
+        amount: 5

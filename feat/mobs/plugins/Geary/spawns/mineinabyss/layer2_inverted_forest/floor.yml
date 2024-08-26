@@ -2,7 +2,7 @@ namespaces: [ geary ]
 l2s2_floor:
   position: WATER
   regions: [ l2s2 ]
-  priority: 0.5
+  priority: 0.00025
   amount: 1-3
   spread: 5
   conditions:
