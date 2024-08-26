@@ -1,6 +1,6 @@
 hisoishi:
   Type: ZOMBIE
-  SpawnCategory: water
+  SpawnCategory: passive
   Display: "<#785F34>Hisoishi"
   Modules:
     ThreatTable: true
