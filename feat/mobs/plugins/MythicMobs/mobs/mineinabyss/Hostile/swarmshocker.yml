@@ -40,7 +40,7 @@ swarmshocker:
   - skill:MIAPetExpNearby{exp=1} ~onDeath
   - model{mid=swarmshocker} @self ~onSpawn
   - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onHurt 0.55 <100%
-  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onTimer:165 ?inCombat{} ?inBlock{b=WATER}
+  - skill{s=swarmshockerShock;delay=<random.0to20>} @self ~onTimer:165 ?inCombat{}
   - sound{s=entity.glow_squid.hurt;sc=master;p=1.95;v=0.65;cd=0.5} @self ~onHurt 0.8
   - sound{s=entity.glow_squid.ambient;sc=master;p=1.95;v=0.45;cd=0.5;delay=<random.0to13>} @self ~onTimer:137 0.55
   - sound{s=entity.glow_squid.death;sc=master;p=2.0;v=0.65} @self ~onDeath
@@ -70,7 +70,7 @@ swarmhoarder:
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.3
-    KnockbackResistance: 0.3
+    KnockbackResistance: 0.6
     interactable: false
   Drops:
   - exp 20-35
