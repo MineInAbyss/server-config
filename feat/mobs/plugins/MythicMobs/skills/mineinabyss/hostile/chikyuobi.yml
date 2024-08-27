@@ -28,7 +28,6 @@ digattackfail:
   Cooldown: 10
   Conditions:
     - stance{s=dag} true
-    - targetwithin{d=5} true
   Skills:
     - stun{d=60} @self
     - state{s=landmine;r=true} @self
@@ -46,7 +45,7 @@ digattack:
   Cooldown: 10
   Conditions:
     - stance{s=dag} true
-    - targetwithin{d=5} true
+    - targetwithin{d=2.5} true
   Skills:
     - stun{d=60} @self
     - state{s=landmine;r=true} @self
