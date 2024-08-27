@@ -13,7 +13,7 @@ range:
   maxVerticalDistance: 22
   playerCapRadius: 200
 runTimes:
-  GROUND: 15t
+  GROUND: 30t
   WATER: 2s
-  AIR: 10s
+  AIR: 14s
 maxSpawnAttemptsPerPlayer: 10
