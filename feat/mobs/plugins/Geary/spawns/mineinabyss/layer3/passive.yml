@@ -10,7 +10,7 @@ l3_passive:
     - blockBelow:
         allow: [ WHITE_CONCRETE, STONE, COBBLESTONE, DIORITE, CALCITE ]
     - maxNearby:
-        amount: 5
+        amount: 3
 
 l3_kakatsumuri: { inherit: l3_passive, type: mm:kakatsumuri }
 l3_sakuranbo: { inherit: l3_passive, type: mm:sakuranbo }
