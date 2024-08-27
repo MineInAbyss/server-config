@@ -7,7 +7,6 @@ l3_flying:
     - gap: 10..600
 
 # Common
-l3_daikonchu: { inherit: l3_flying, type: mm:daikonchu }
 l3_dosetori: { inherit: l3_flying, type: mm:dosetori }
 l3_madokajack: { inherit: l3_flying, type: mm:madokajack }
 

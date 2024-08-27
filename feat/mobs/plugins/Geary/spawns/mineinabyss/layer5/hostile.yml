@@ -1,15 +1,18 @@
 namespaces: [ geary ]
 l5_hostile:
   position: GROUND
-  priority: 0.5
+  priority: 0.00025
   regions: [ layerfive ]
   conditions:
-    - mythicConditions:
-        - lightlevelfromblocks{l=0}
+  #  - mythicConditions:
+  #      - lightlevelfromblocks{l=0}
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
         amount: 4
+
+l5_chikyuoebi: { inherit: l5_hostile, type: mm:chikyuoebi }
+
 
 l5_hostile_snow:
   inherit: l5_hostile
@@ -31,7 +34,7 @@ l5_hostile_sand:
 l5_kuongatari:
   inherit: l5_hostile
   type: mm:kuongatari
-  amount: 3-4
+  amount: 1-2
   spread: 7
 l5_yomotsubi: { inherit: l5_hostile, type: mm:yomotsubi }
 l5_swarmshocker: { inherit: l5_hostile, type: mm:swarmshocker }
@@ -48,18 +51,18 @@ l5_virinsipede: { inherit: l5_hostile_sand, type: mm:virinsipede }
 # Uncommon
 l5_swarmhoarder:
   inherit: l5_hostile
-  priority: 0.05
+  priority: 0.00005
   type: mm:swarmhoarder
 
 # Rare
 l5_tachikatana:
   inherit: l5_hostile
   type: mm:tachikatana
-  priority: 0.03
+  priority: 0.00001
   conditions:
     - $inherit
     - $remove maxNearby blockBelow
     - blockBelow:
-        allow: [ grass_block, stone ]
+        allow: [ grass_block, stone, moss_block, path_block ]
     - maxNearby:
         amount: 2

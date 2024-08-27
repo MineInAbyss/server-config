@@ -3,6 +3,7 @@ dosetori:
   Display: "<#FFF821>Dosetori"
   Health: 30
   Damage: 7
+  SpawnCategory: flying
   AIGoalSelectors:
     - clear
     - meleeattack{speed=1.5;range=1.5}

@@ -14,6 +14,6 @@ range:
   playerCapRadius: 200
 runTimes:
   GROUND: 15t
-  WATER: 15t
+  WATER: 2s
   AIR: 10s
 maxSpawnAttemptsPerPlayer: 10

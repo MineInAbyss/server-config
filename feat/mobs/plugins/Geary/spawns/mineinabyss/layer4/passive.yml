@@ -1,15 +1,15 @@
 namespaces: [ geary ]
 l4_passive:
   position: GROUND
-  priority: 0.5
+  priority: 0.001
   regions: [ layerfour ]
-  amount: 2-3
+  amount: 1-3
   spread: 7
   ySpread: 1
   conditions:
     # TODO figure out correct blocks
     - blockBelow:
-        allow: [ grass_block ]
+        allow: [ grass_block, dirt, moss_block, path_block]
     - maxNearby:
         amount: 5
 
@@ -22,4 +22,4 @@ l4_hashofu:
     - $inherit
     - $remove maxNearby
     - maxNearby:
-        amount: 2
+        amount: 3

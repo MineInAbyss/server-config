@@ -2,7 +2,7 @@ namespaces: [ geary ]
 l5_water:
   position: WATER
   regions: [ layerfive ]
-  priority: 0.5
+  priority: 0.000065
   amount: 1-3
   spread: 5
   conditions:
@@ -17,7 +17,7 @@ l5_hagamizukin: { inherit: l5_water, type: mm:hagamizukin }
 l5_uibuta:
   inherit: l5_water
   type: mm:uibuta
-  priority: 0.1
+  priority: 0.000025
   conditions: # Ensure we're at water surface
     - $inherit
     - blockAbove:
@@ -25,7 +25,7 @@ l5_uibuta:
 l5_makihige:
   inherit: l5_water
   type: mm:makihige
-  priority: 0.2
+  priority: 0.00001
   conditions:
     - $inherit
     - blockAbove:
@@ -35,9 +35,9 @@ l5_makihige:
 l5_edusan:
   inherit: l5_water
   type: mm:edusan
-  priority: 0.01
+  priority: 0.000005
 
 l5_hisomukuro:
   inherit: l5_water
   type: mm:hisomukuro
-  priority: 0.01
+  priority: 0.00003

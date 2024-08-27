@@ -5,9 +5,9 @@ l2_vineflowers:
   regions: [ layertwo ]
   conditions:
     - blockBelow:
-        allow: [ grass_block ]
+        allow: [ grass_block, moss_block, path_block, dirt ]
     - maxNearby:
-        amount: 5
+        amount: 4
 
 l2_vinebinder: { inherit: l2_vineflowers, type: mm:vinebinder }
 l2_vinepoofer: { inherit: l2_vineflowers, type: mm:vinepoofer }

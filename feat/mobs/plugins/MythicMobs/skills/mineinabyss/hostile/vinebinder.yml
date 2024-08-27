@@ -51,7 +51,7 @@ vinebinderAmbient:
 
 
 vineblasterattack:
-  Cooldown: 5
+  Cooldown: 6
   Conditions:
     - incombat true
     - offgcd true
@@ -75,7 +75,7 @@ vineblaster_tick:
 
 vineblaster_impact:
   Skills:
-    - damage{a=5} @target
+    - damage{a=3} @target
     - potion{type=POISON;duration=50;level=2} @target
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target
 
@@ -94,7 +94,21 @@ vinepooferattack:
     - effect:sound{s=block.wool.place;p=1.7;v=2} @Self
     - effect:sound{s=block.wool.place;p=1.9;v=2} @Self
     - effect:sound{s=block.wool.place;p=2.0;v=2} @Self
-    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=200;hS=6;vS=5;y=6}
-    - potion{type=POISON;duration=100;level=3} @PIR{r=6}
-    - potion{type=WITHER;duration=100;level=3} @PIR{r=6}
-    - potion{type=SLOWNESS;duration=100;level=2} @PIR{r=6}
+    - effect:sound{s=block.wool.place;p=1.5;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.7;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.9;v=2} @Self
+    - effect:sound{s=block.wool.place;p=2.0;v=2} @Self
+    - delay 2
+    - effect:sound{s=block.wool.place;p=1.5;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.7;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.9;v=2} @Self
+    - effect:sound{s=block.wool.place;p=2.0;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.5;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.7;v=2} @Self
+    - effect:sound{s=block.wool.place;p=1.9;v=2} @Self
+    - effect:sound{s=block.wool.place;p=2.0;v=2} @Self
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=300;hS=5;vS=5;y=1} @self
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=30;hS=1;vS=2} @self
+    - potion{type=POISON;duration=80;level=2} @PIR{r=6}
+    - potion{type=WITHER;duration=50;level=1} @PIR{r=6}
+    - potion{type=SLOWNESS;duration=100;level=1} @PIR{r=6}

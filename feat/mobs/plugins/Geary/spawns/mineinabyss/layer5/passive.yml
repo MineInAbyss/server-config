@@ -1,14 +1,14 @@
 namespaces: [ geary ]
 l5_passive:
   position: GROUND
-  priority: 0.5
+  priority: 0.001
   regions: [ layerfive ]
   amount: 2-3
   spread: 7
   ySpread: 1
   conditions:
     - blockBelow:
-        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS, MOSS_BLOCK, PATH_BLOCK]
     - maxNearby:
         amount: 5
 

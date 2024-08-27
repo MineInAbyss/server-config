@@ -24,6 +24,24 @@ chikredig:
 
 
 
+digattackfail:
+  Cooldown: 10
+  Conditions:
+    - stance{s=dag} true
+    - targetwithin{d=5} true
+  Skills:
+    - stun{d=60} @self
+    - state{s=landmine;r=true} @self
+    - state{s=trigger} @self
+  #  - shieldbreak{duration=50} @target
+    - potion{type=POISON;duration=50;level=3} @PIR{r=3}
+    - potion{type=WITHER;duration=25;level=3} @PIR{r=3}
+    - skill{s=Bleeding} @PIR{r=3}
+    - delay 30
+    - potionclear @self
+    - setstance{stance=normal} @self
+
+
 digattack:
   Cooldown: 10
   Conditions:
@@ -37,10 +55,13 @@ digattack:
     - damage{amount=10;ia=true} @PIR{r=5}
     - potion{type=POISON;duration=100;level=5} @PIR{r=5}
     - potion{type=WITHER;duration=50;level=5} @PIR{r=5}
+    - potion{type=NAUSEA;duration=200;level=5}
     - skill{s=Bleeding} @PIR{r=5}
     - delay 30
     - potionclear @self
     - setstance{stance=normal} @self
+
+
 ch_Attack:
   Cooldown: 1.5
   Conditions:
@@ -52,7 +73,7 @@ ch_Attack:
     - gcd{ticks=20}
     - state{s=attack} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
-    - delay 20
+    - delay 15
     - totem{md=2;c=1;oH=ch_Attack_DAMAGE2;hp=true;hR=2;vR=2;i=1} @forward{f=1.5}
 #will bleed once every 5 seconds for 5 seconds
 ch_Attack_DAMAGE2:
@@ -62,4 +83,3 @@ ch_Attack_DAMAGE2:
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
     - throw{v=10;vy=5} @target
-    - potion{type=NAUSEA;duration=200;level=5}

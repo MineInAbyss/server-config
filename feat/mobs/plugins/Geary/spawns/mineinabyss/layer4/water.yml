@@ -2,7 +2,7 @@ namespaces: [ geary ]
 l4_water:
   position: WATER
   regions: [ layerfour ]
-  priority: 0.5
+  priority: 0.00005
   amount: 1-3
   spread: 5
   conditions:
@@ -11,16 +11,23 @@ l4_water:
     - isSourceLiquid: { }
 
 l4_kazura: { inherit: l4_water, type: mm:kazura }
-l4_hagamizukin: { inherit: l4_water, type: mm:hagamizukin }
 l4_rohana: { inherit: l4_water, type: mm:rohana }
 l4_spiralsquid: { inherit: l4_water, type: mm:spiralsquid }
 l4_ikenosuke: { inherit: l4_water, type: mm:ikenosuke }
 
 # Uncommon
+l4_hagamizukin:
+  inherit: l4_water
+  type: mm:hagamizukin
+  priority: 0.00005
+  conditions: # Ensure we're at water surface
+    - maxNearby:
+        amount: 2
+
 l4_uibuta:
   inherit: l4_water
   type: mm:uibuta
-  priority: 0.1
+  priority: 0.00005
   conditions: # Ensure we're at water surface
     - $inherit
     - $remove maxNearby
@@ -28,10 +35,11 @@ l4_uibuta:
         amount: 2
     - blockAbove:
         allow: [ AIR ]
+
 l4_makihige:
   inherit: l4_water
   type: mm:makihige
-  priority: 0.1
+  priority: 0.00005
   conditions:
     - $inherit
     - $remove maxNearby

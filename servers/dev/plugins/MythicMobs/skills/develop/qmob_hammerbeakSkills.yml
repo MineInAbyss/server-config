@@ -289,10 +289,10 @@ qmob_hammerbeakDamager:
   Skills:
   - effect:particles{particle=white_ash;a=2;hs=0.2;vs=0.2;uel=true} @self
   - effect:particles{particle=cloud;a=2;hs=0.2;vs=0.2;uel=true} @self
-  - damage{a=4} @EIR{r=2.85;ignore=samefaction} # make this what you want
+  - damage{a=4} @PIR{r=2.85} # make this what you want
   - sound{s=entity.player.attack.knockback;sc=master;p=<random.float.1.35to1.45>;v=0.85;cd=0.5} @self ?targetwithin{d=2.7}
-  - damage{a=1;pi=true} @EIR{r=1.85;ignore=samefaction} # extra damage if they're really close
-  - potion{t=CONFUSION;l=1;force=true;p=true;d=120} @PIR{r=2.85}
+  - damage{a=1;pi=true} @PIR{r=1.85}
+  - potion{t=CONFUSION;l=1;force=true;p=true;d=80} @PIR{r=2.85}
 
 qmob_hammerbeakDamagerSmall:
   Cooldown: 0
@@ -300,6 +300,6 @@ qmob_hammerbeakDamagerSmall:
   Skills:
   - effect:particles{particle=white_ash;a=2;hs=0.2;vs=0.2;uel=true} @self
   - effect:particles{particle=cloud;a=2;hs=0.2;vs=0.2;uel=true} @self
-  - damage{a=3} @EIR{r=1.85;ignore=samefaction} # make this what you want
+  - damage{a=3} @PIR{r=1.85}
   - sound{s=entity.player.attack.knockback;sc=master;p=<random.float.1.45to1.55>;v=0.65;cd=0.5} @self ?targetwithin{d=1.7}
-  - damage{a=0.5;pi=true} @EIR{r=0.85;ignore=samefaction} # extra damage if they're really close
+  - damage{a=1;pi=true} @PIR{r=0.85}

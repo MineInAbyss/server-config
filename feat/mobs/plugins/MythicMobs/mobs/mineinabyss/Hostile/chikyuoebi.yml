@@ -50,7 +50,7 @@ chikyuoebi:
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=ch_Attack} @self ~onattack
     - skill{s=digattack} @self ~onTimer:10
-    - skill{s=digattack} @self ~ondamaged
+    - skill{s=digattackfail} @self ~ondamaged
   # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
    # - skill{s=hc_backup} @self ~ondamaged

@@ -5,6 +5,8 @@ l2_flying:
   regions: [ layertwo ]
   conditions:
     - gap: 10..600
+    - maxNearby:
+        amount: 3
 
 # Common
 l2_hammerbeak: { inherit: l2_flying, type: mm:hammerbeak }

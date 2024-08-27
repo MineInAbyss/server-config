@@ -9,4 +9,3 @@ l5_flying:
 # Common
 # onitsuchi,chikyuoebi,uibuta,swarmhoarder
 l5_onitsuchi: { inherit: l5_flying, type: mm:onitsuchi }
-l5_chikyuoebi: { inherit: l5_flying, type: mm:chikyuoebi }

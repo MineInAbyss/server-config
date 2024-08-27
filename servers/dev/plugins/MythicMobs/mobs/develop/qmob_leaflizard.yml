@@ -25,7 +25,7 @@ qmob_leaflizard:
 
   Skills:
   ####### Misc
-  - model{mid=qmob_leafLizard;step=0.8} @self ~onSpawn
+  - model{mid=leaflizard;step=0.8} @self ~onSpawn
   - look{} @target ~onTimer:20
   - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawn
   - CancelEvent{sync=true} @self ~onAttack

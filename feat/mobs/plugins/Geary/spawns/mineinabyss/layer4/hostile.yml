@@ -1,70 +1,22 @@
 namespaces: [ geary ]
 l4_hostile:
   position: GROUND
-  priority: 0.5
+  priority: 0.00025
   regions: [ layerfour ]
   conditions:
-    - mythicConditions:
-        - lightlevelfromblocks{l=0}
+ #   - mythicConditions:
+ #       - lightlevelfromblocks{l=0}
     - maxNearby:
         amount: 3
 
-# Common
-l4_kuongatari:
-  inherit: l4_hostile
-  type: mm:kuongatari
-  amount: 2-4
-  spread: 7
-  conditions:
-    - $inherit
-    - blockBelow:
-        allow: [ grass_block ]
-l4_horncrier:
-  inherit: l4_hostile
-  type: mm:horncrier
-  conditions:
-    - $inherit
-    - blockBelow:
-        allow: [ stone, packed_ice ]
-l4_yomotsubi:
-  inherit: l4_hostile
-  type: mm:yomotsubi
-  conditions:
-    - $inherit
-    - $remove maxNearby
-    - maxNearby: { amount: 2 }
-    - blockBelow:
-        allow: [ grass_block ]
-l4_swarmshocker:
-  inherit: l4_hostile
-  type: mm:swarmshocker
-  conditions:
-    - $inherit
-    - blockBelow:
-        allow: [ grass_block ]
 
-# Uncommon
-l4_orbpiercer:
-  inherit: l4_hostile
-  type: mm:orbpiercer
-  priority: 0.05
-  conditions:
-    - $inherit
-    - $remove maxNearby
-    - blockBelow:
-        allow: [ grass_block, stone ]
-    - maxNearby:
-        amount: 2
+l4_kuongatari: { inherit: l4_hostile, type: mm:kuongatari }
+#l4_yomotsubi: { inherit: l4_hostile, type: mm:yomotsubi }
+l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
+l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }    
 
-# Rare
-l4_tachikatana:
-  inherit: l4_hostile
-  type: mm:tachikatana
-  priority: 0.01
-  conditions:
-    - $inherit
-    - $remove maxNearby
-    - blockBelow:
-        allow: [ grass_block, stone ]
-    - maxNearby:
-        amount: 2
+l4_orbpiercer: { inherit: l4_hostile, type: mm:orbpiercer, priority: 0.000015  }
+
+
+l4_tachikatana: { inherit: l4_hostile, type: mm:tachikatana, priority: 0.0000025  }    
+
