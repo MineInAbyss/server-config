@@ -29,8 +29,9 @@ decimal-format: '#.##'
 copy-resource-pack:
   enabled: false
   # The location to copy each namespace to. The parent path is your plugins directory.
-  namespaces: []
-  path: "Packy/templates/custom_hud"
+  namespaces:
+    minecraft: test
+    mythichud: test2
 
 boss-bar:
   # The maximum amount of shown boss bars a player can hold.
