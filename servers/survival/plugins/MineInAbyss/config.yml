@@ -1,5 +1,7 @@
 # Ignore following options, enable all features
 enableAll: false
+ansiblePull:
+  enabled: false
 # Choose which features to enable with true/false
 antiCheese:
   enabled: true
@@ -45,10 +47,23 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: true
+  patreonRoles:
+    "patreon":
+      roleId: "672296677864112128"
+      patreonTier: 1
+    "patreonplus":
+      roleId: "894216646623895573"
+      patreonTier: 2
 playerProfile:
   enabled: true
   validBackgroundIds:
-  - "player_profile_background"
+  - "orth_background"
+  - "ancient_ship"
+  - "nanachi_hut"
+  - "golden_bridge"
+  - "layer2_windmills"
+  - "layer6"
+  - "seeker_camp"
 pvp:
   enabled: false
 relics:

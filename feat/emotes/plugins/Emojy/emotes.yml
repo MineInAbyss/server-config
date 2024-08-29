@@ -486,16 +486,27 @@ emotes:
     texture: mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png
     height: 224
     ascent: 15
-  - id: player_profile_background
-    font: mineinabyss:playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background.png
-    height: 72
-    ascent: -2
-  - id: player_profile_background_2
-    font: mineinabyss:playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
-    height: 72
-    ascent: -2
+  - id: orth_background
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/orth_background.png
+  - id: ancient_ship
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/ancient_ship.png
+  - id: nanachi_hut
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/nanachi_hut.png
+  - id: golden_bridge
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/golden_bridge.png
+  - id: layer2_windmills
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/layer2_windmills.png
+  - id: layer6
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/layer6.png
+  - id: seeker_camp
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/seeker_camp.png
   - id: player_profile_rank_admin
     template: playerprofile
     texture: mineinabyss:ui/roles/admin.png
