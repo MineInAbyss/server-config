@@ -1,0 +1,12 @@
+namespaces: [geary]
+set.item:
+  item:
+    hideTooltip: true
+    type: minecraft:paper
+    customModelData: 10
+
+resourcepack:
+  baseMaterial: minecraft:paper
+  textures: cosmetics:item/ui/dye_scrollable_prev
+  itemPredicates:
+    customModelData: 10

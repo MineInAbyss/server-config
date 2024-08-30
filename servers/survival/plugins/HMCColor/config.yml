@@ -51,13 +51,9 @@ buttons:
       backwardsSlot: 45
       forwardsSlot: 53
       backwardsItem:
-        type: minecraft:arrow
-        customModelData: 1
-        displayName: Scroll sub-colors backwards
+        prefab: cosmetics:dye_scrollable_prev
       forwardsItem:
-        type: minecraft:arrow
-        customModelData: 2
-        displayName: Scroll sub-colors forward
+        prefab: cosmetics:dye_scrollable_next
     # subColorItem can be specified, null defaults to Buttons.item
     subColorItem: null
   effectButton: 31
