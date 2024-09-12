@@ -17,6 +17,7 @@ modelengine:
 custom_hud:
   default: true
   required: false
+  filePath: MythicHUD/built-pack
 emotes:
   default: true
   required: true
