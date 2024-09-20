@@ -7,7 +7,7 @@ buroguro:
   Drops:
     - exp 50-90
     - geary mineinabyss:buroguro_lantern 1 0.3
-    - geary mineinabyss:buroguro_stinger 1-2 0.6
+   # - geary mineinabyss:buroguro_stinger 1-2 0.6
   Faction: glowfly
   Options:
     Silent: true

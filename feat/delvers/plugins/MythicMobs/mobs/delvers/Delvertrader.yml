@@ -72,7 +72,7 @@ delvertrade:
 
   - state{mid=DelverTrader;s=hurt} @self ~onDamaged
 
-  - skill{s=pcsword} @target ~onTimer:300
+  - skill{s=piratesword} @target ~onTimer:300
 
 
   - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1

@@ -157,3 +157,76 @@ virishock:
       - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
       - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
 
+
+leaflizardDisguise:
+  Cooldown: 10
+  Conditions:
+  - targetwithin{d=5}
+  - moving{} true
+  Skills:
+  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master} @self
+  - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master} @self
+  - effect:particles{particle=falling_spore_blossom;a=30;hs=0.9;vs=0.04;y=0.2;repeat=2;repeatInterval=1} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=torso} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=head} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=backtorso} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=frontarml} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=frontarmr} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=reararml} @self
+  - partvisibility{m=qmob_leafLizard;v=false;p=reararmr} @self
+  - setstance{s=hiding} @self
+  - delay <random.160to200>
+  - partvisibility{m=qmob_leafLizard;v=true;p=torso} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=head} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=backtorso} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=frontarml} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=frontarmr} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=reararml} @self
+  - partvisibility{m=qmob_leafLizard;v=true;p=reararmr} @self
+  - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master;sync=true} @self
+  - setstance{s=clear} @self
+
+leaflizardInvis:
+  Cooldown: 0.0
+  Conditions:
+  - stance{s=hiding} true
+  Skills:
+  - potion{t=INVISIBILITY;l=0;force=true;p=false;d=10} @self
+  - potion{t=SPEED;l=4;force=true;p=false;d=15} @self
+
+
+qmob_leaflizardstep:
+  Cooldown: 0
+  Conditions:
+  - onground{} true
+  Skills:
+  - sound{s=entity.frog.tongue;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
+  - sound{s=entity.frog.eat;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
+
+bloodEffectleaflizard:
+  Cooldown: 0.1
+  Skills:
+  - effect:particles{particle=block;m=red_concrete_powder;a=3;hs=0.4;vs=0.1;s=0} #
+  - effect:particles{particle=block;m=red_nether_bricks;a=3;hs=0.15;vs=0.1;s=0}    # Simple blood effect
+  - effect:particles{particle=block;m=nether_wart_block;a=5;hs=0.15;vs=0.1;s=0}    # Remove if there are
+  - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.15;vs=0.15;s=0}       # children or otherwise.
+
+leaflizardHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.frog.hurt;sc=master;p=<random.float.1.9to2.0>;v=1.1} @self
+  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+
+leaflizardDeath:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.frog.death;sc=master;p=<random.float.1.8to1.9>;v=1.1} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=5;repeatInterval=1} @self

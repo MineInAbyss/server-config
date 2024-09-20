@@ -42,6 +42,6 @@ inkflower:
     - setspeed{type=flying;speed=1.4} @self ~onSpawn
     - state{mid=inkflower;s=attack} @self ~onAttack
     
-    - skill{s=inkflower_airball} @target ~onTimer:20
+    #- skill{s=inkflower_airball} @target ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
