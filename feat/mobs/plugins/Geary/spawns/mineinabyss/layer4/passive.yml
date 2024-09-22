@@ -9,7 +9,7 @@ l4_passive:
   conditions:
     # TODO figure out correct blocks
     blockBelow:
-      allow: [ grass_block, dirt, moss_block, path_block]
+      allow: [ grass_block, dirt, moss_block, dirt_path]
     maxNearby:
       amount: 5
 

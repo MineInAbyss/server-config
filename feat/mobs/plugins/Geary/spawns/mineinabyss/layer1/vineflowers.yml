@@ -5,7 +5,7 @@ l1_vineflowers:
   regions: [ layerone ]
   conditions:
     blockBelow:
-      allow: [ grass_block, dirt, moss_block, path_block ]
+      allow: [ grass_block, dirt, moss_block, dirt_path ]
     maxNearby:
       amount: 2
 
