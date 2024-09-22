@@ -4,7 +4,7 @@ l5_flying:
   priority: 0.5
   regions: [ layerfive ]
   conditions:
-    gap: 10..600
+    - gap: 10..600
 
 # Common
 # onitsuchi,chikyuoebi,uibuta,swarmhoarder

@@ -4,7 +4,7 @@ l3_flying:
   priority: 0.0001
   regions: [ layerthree ]
   conditions:
-    gap: 10..600
+    - gap: 10..600
 
 # Common
 l3_dosetori: { inherit: l3_flying, type: mm:dosetori }

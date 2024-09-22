@@ -14,7 +14,7 @@ range:
   playerCapRadius: 200
   defaultNearbyRange: 128.0
 runTimes:
-  GROUND: 1.5s
+  GROUND: 30t
   WATER: 2s
   AIR: 14s
 maxSpawnAttemptsPerPlayer: 10

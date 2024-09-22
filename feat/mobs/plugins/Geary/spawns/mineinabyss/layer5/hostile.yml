@@ -6,10 +6,10 @@ l5_hostile:
   conditions:
   #  - mythicConditions:
   #      - lightlevelfromblocks{l=0}
-    blockBelow:
-      allow: [ grass_block, stone ]
-    maxNearby:
-      amount: 4
+    - blockBelow:
+        allow: [ grass_block, stone ]
+    - maxNearby:
+        amount: 4
 
 l5_chikyuoebi: { inherit: l5_hostile, type: mm:chikyuoebi }
 
@@ -17,18 +17,18 @@ l5_chikyuoebi: { inherit: l5_hostile, type: mm:chikyuoebi }
 l5_hostile_snow:
   inherit: l5_hostile
   conditions:
-    $inherit: {}
-    $remove blockBelow: {}
-    blockBelow:
-      allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW ]
+    - $inherit
+    - $remove blockBelow
+    - blockBelow:
+        allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW ]
 
 l5_hostile_sand:
   inherit: l5_hostile
   conditions:
-    $inherit: {}
-    "$remove blockBelow": {}
-    blockBelow:
-      allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE ]
+    - $inherit
+    - $remove blockBelow
+    - blockBelow:
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE ]
 
 # Mobs
 l5_kuongatari:
@@ -60,9 +60,9 @@ l5_tachikatana:
   type: mm:tachikatana
   priority: 0.00001
   conditions:
-    $inherit: {}
-    "$remove maxNearby blockBelow": {}
-    blockBelow:
-      allow: [ grass_block, stone, moss_block, path_block ]
-    maxNearby:
-      amount: 2
+    - $inherit
+    - $remove maxNearby blockBelow
+    - blockBelow:
+        allow: [ grass_block, stone, moss_block, path_block ]
+    - maxNearby:
+        amount: 2

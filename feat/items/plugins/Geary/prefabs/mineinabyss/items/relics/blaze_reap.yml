@@ -11,19 +11,19 @@ set.item:
       - <#948E61><i>Used to create powerful explosions.
 disableItemInteractions: { }
 
-#observe:
-#  itemRightClick:
-#    - become: parent
-#    - ensure:
-#        cooldownsComplete: [ blaze_reap ]
-#        player:
-#          sneaking: true
-#    - startCooldown:
-#        id: blaze_reap
-#        length: 2s
-#        display: <#617B94>Blaze Reap
-#    - explode:
-#        breakBlocks: false
-#        power: 2
-#      with:
-#        location: "{{ entity.getTargetBlock { maxDistance: 10 } }}"
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        cooldownsComplete: [ blaze_reap ]
+        player:
+          sneaking: true
+    - startCooldown:
+        id: blaze_reap
+        length: 2s
+        display: <#617B94>Blaze Reap
+    - explode:
+        breakBlocks: false
+        power: 2
+      with:
+        location: "{{ entity.getTargetBlock { maxDistance: 10 } }}"

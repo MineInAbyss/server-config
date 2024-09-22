@@ -11,23 +11,23 @@ l3_ottobas:
   inherit: l3_hostile
   type: mm:ottobas
   conditions:
-    $inherit: {}
-    gap: 4..600
-    blockBelow:
-      allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
-    maxNearby:
-      amount: 2
+    - $inherit
+    - gap: 4..600
+    - blockBelow:
+        allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
+    - maxNearby:
+        amount: 2
 
 l3_silkfang:
   inherit: l3_hostile
   type: mm:silkfang
   conditions:
-    $inherit: {}
-    gap: 4..600
-    blockBelow:
-      allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
-    maxNearby:
-      amount: 4
+    - $inherit
+    - gap: 4..600
+    - blockBelow:
+        allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
+    - maxNearby:
+        amount: 4
 
 
 l3_yomotsubi: { inherit: l3_hostile, type: mm:yomotsubi, priority: 0.00007 }

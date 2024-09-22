@@ -7,10 +7,10 @@ l4_docile:
   spread: 5
   ySpread: 1
   conditions:
-    blockBelow:
-      allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
-    maxNearby:
-      amount: 5
+    - blockBelow:
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
+    - maxNearby:
+        amount: 5
 
 # stinger,mantoyer
 l4_mantoyer: { inherit: l4_docile, type: mm:mantoyer }
@@ -23,7 +23,7 @@ l4_stinger:
   priority: 0.0002
   regions: [ layerfour ]
   conditions:
-    blockBelow:
-      allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
-    maxNearby:
-      amount: 2
+    - blockBelow:
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
+    - maxNearby:
+        amount: 2

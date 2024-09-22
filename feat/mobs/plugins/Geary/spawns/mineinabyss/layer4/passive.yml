@@ -8,10 +8,10 @@ l4_passive:
   ySpread: 1
   conditions:
     # TODO figure out correct blocks
-    blockBelow:
-      allow: [ grass_block, dirt, moss_block, path_block]
-    maxNearby:
-      amount: 5
+    - blockBelow:
+        allow: [ grass_block, dirt, moss_block, path_block]
+    - maxNearby:
+        amount: 5
 
 # shroombear,hashofu
 l4_shroombear: { inherit: l4_passive, type: mm:shroombear }
@@ -19,7 +19,7 @@ l4_hashofu:
   inherit: l4_passive
   type: mm:hashofu
   conditions:
-    $inherit: {}
-    $remove maxNearby: {}
-    maxNearby:
-      amount: 3
+    - $inherit
+    - $remove maxNearby
+    - maxNearby:
+        amount: 3

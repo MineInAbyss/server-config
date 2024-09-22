@@ -4,10 +4,10 @@ l5_docile:
   priority: 0.00025
   regions: [ layerfive ]
   conditions:
-    blockBelow:
-      allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
-    maxNearby:
-      amount: 5
+    - blockBelow:
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS ]
+    - maxNearby:
+        amount: 5
 
 # stinger,mantoyer
 l5_stinger: { inherit: l5_docile, type: mm:stinger }

@@ -5,23 +5,23 @@ set.item:
     itemName: <dark_gray>Tomorrow Signal
     customModelData: 12
 disableItemInteractions: { }
-#observe:
-#  itemLeftClick:
-#    - become: parent
-#    - ensure:
-#        cooldownsComplete: [ lightning_strike ]
-#    - startCooldown:
-#        id: lightning_strike
-#        length: 2s
-#        display: <dark_gray>Tomorrow Signal
-#    - eval: "entity.getTargetBlock { maxDistance: 15 }"
-#      register: targetBlock
-#    - smite: {}
-#      with:
-#        location: "{{ targetBlock }}"
-#    - particle:
-#        particle: CLOUD
-#        count: 10
-#        speed: 0.2
-#      with:
-#        location: "{{ targetBlock }}"
+observe:
+  itemLeftClick:
+    - become: parent
+    - ensure:
+        cooldownsComplete: [ lightning_strike ]
+    - startCooldown:
+        id: lightning_strike
+        length: 2s
+        display: <dark_gray>Tomorrow Signal
+    - eval: "entity.getTargetBlock { maxDistance: 15 }"
+      register: targetBlock
+    - smite: {}
+      with:
+        location: "{{ targetBlock }}"
+    - particle:
+        particle: CLOUD
+        count: 10
+        speed: 0.2
+      with:
+        location: "{{ targetBlock }}"

@@ -7,10 +7,10 @@ l2_passive:
   spread: 7
   ySpread: 1
   conditions:
-    blockBelow:
-      allow: [ grass_block, dirt, moss_block, path_block ]
-    maxNearby:
-      amount: 3
+    - blockBelow:
+        allow: [ grass_block, dirt, moss_block, path_block ]
+    - maxNearby:
+        amount: 3
 
 l2_fuwagi: { inherit: l2_passive, type: mm:fuwagi }
 l2_chimokami: { inherit: l2_passive, type: mm:chimokami }
@@ -24,7 +24,7 @@ l2_tesuchi:
   spread: 7
   ySpread: 1
   conditions:
-    blockBelow:
-      allow: [ grass_block, dirt, moss_block, path_block ]
-    maxNearby:
-      amount: 3
+    - blockBelow:
+        allow: [ grass_block, dirt, moss_block, path_block ]
+    - maxNearby:
+        amount: 3

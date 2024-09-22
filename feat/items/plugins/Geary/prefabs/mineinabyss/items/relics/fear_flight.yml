@@ -5,23 +5,23 @@ set.item:
     itemName: Fear Flight
     # customModelData: 102
 disableItemInteractions: { }
-#passive:
-#  - match: [ inInventory ]
-#    every: 1s
-#    run:
-#      - become: parent
-#      - ensure:
-#          mythicConditions:
-#            - health{h=<5}
-#      - particle:
-#          particle: CLOUD
-#          offsetY: 1
-#          count: 3
-#          speed: 0
-#        with:
-#          location: "{{ entity.getLocation }}"
-#      - applyPotionEffects:
-#          - type: minecraft:speed
-#            duration: 3s
-#            amplifier: 2
-#            hasParticles: false
+passive:
+  - match: [ inInventory ]
+    every: 1s
+    run:
+      - become: parent
+      - ensure:
+          mythicConditions:
+            - health{h=<5}
+      - particle:
+          particle: CLOUD
+          offsetY: 1
+          count: 3
+          speed: 0
+        with:
+          location: "{{ entity.getLocation }}"
+      - applyPotionEffects:
+          - type: minecraft:speed
+            duration: 3s
+            amplifier: 2
+            hasParticles: false
