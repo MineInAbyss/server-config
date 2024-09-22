@@ -12,6 +12,7 @@ range:
   minDistance: 12
   maxVerticalDistance: 22
   playerCapRadius: 200
+  defaultNearbyRange: 128.0
 runTimes:
   GROUND: 1.5s
   WATER: 2s
