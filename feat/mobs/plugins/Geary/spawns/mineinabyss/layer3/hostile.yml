@@ -14,7 +14,7 @@ l3_ottobas:
     $inherit: {}
     gap: 4..600
     blockBelow:
-      allow: [ grass_block, stone,green_terracotta, moss_block, dirt_path ]
+      allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
     maxNearby:
       amount: 2
 
@@ -25,7 +25,7 @@ l3_silkfang:
     $inherit: {}
     gap: 4..600
     blockBelow:
-      allow: [ grass_block, stone,green_terracotta, moss_block, dirt_path ]
+      allow: [ grass_block, stone,green_terracotta, moss_block, path_block ]
     maxNearby:
       amount: 4
 

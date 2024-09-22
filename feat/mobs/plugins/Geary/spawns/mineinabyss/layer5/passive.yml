@@ -8,7 +8,7 @@ l5_passive:
   ySpread: 1
   conditions:
     blockBelow:
-      allow: [ grass_block, dirt, podzol, mud, muddy_mangrove_roots, moss_block, dirt_path]
+      allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS, MOSS_BLOCK, PATH_BLOCK]
     maxNearby:
       amount: 5
 
@@ -18,7 +18,7 @@ l5_passive_snow:
     $inherit: {}
     "$remove blockBelow": {}
     blockBelow:
-      allow: [ snow_block, powder_snow, snow ]
+      allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW ]
 
 l5_abyssal_snail: { inherit: l5_passive, type: mm:abyssal_snail }
 l5_ashimite: { inherit: l5_passive_snow, type: mm:ashimite }

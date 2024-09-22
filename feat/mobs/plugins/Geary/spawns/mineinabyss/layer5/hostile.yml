@@ -63,6 +63,6 @@ l5_tachikatana:
     $inherit: {}
     "$remove maxNearby blockBelow": {}
     blockBelow:
-      allow: [ grass_block, stone, moss_block, dirt_path ]
+      allow: [ grass_block, stone, moss_block, path_block ]
     maxNearby:
       amount: 2
