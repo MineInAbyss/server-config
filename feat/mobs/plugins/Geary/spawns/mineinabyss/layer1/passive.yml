@@ -22,6 +22,6 @@ l1_okibo:
   regions: [ orth, l1s0 ]
   conditions:
     - blockBelow:
-        allow: [ grass_block, moss_block, path_block, dirt ]
+        allow: [ grass_block, moss_block, dirt_path, dirt ]
     - maxNearby:
         amount: 2

@@ -8,7 +8,7 @@ l2_passive:
   ySpread: 1
   conditions:
     - blockBelow:
-        allow: [ grass_block, dirt, moss_block, path_block ]
+        allow: [ grass_block, dirt, moss_block, dirt_path ]
     - maxNearby:
         amount: 3
 
@@ -25,6 +25,6 @@ l2_tesuchi:
   ySpread: 1
   conditions:
     - blockBelow:
-        allow: [ grass_block, dirt, moss_block, path_block ]
+        allow: [ grass_block, dirt, moss_block, dirt_path ]
     - maxNearby:
         amount: 3
