@@ -6,5 +6,5 @@ l5_stingerhead:
   ySpread: 1
   regions: [ stingerheaddesert, stingerheadnestcave, stingerheadsanddesert, stingerheadsnow ]
   conditions:
-    - maxNearby:
-        amount: 2
+    maxNearby:
+      amount: 2

@@ -4,10 +4,10 @@ l2_vineflowers:
   priority: 0.00025
   regions: [ layertwo ]
   conditions:
-    - blockBelow:
-        allow: [ grass_block, moss_block, path_block, dirt ]
-    - maxNearby:
-        amount: 4
+    blockBelow:
+      allow: [ grass_block, moss_block, path_block, dirt ]
+    maxNearby:
+      amount: 4
 
 l2_vinebinder: { inherit: l2_vineflowers, type: mm:vinebinder }
 l2_vinepoofer: { inherit: l2_vineflowers, type: mm:vinepoofer }

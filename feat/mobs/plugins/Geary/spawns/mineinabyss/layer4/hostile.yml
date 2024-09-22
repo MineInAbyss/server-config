@@ -6,8 +6,8 @@ l4_hostile:
   conditions:
  #   - mythicConditions:
  #       - lightlevelfromblocks{l=0}
-    - maxNearby:
-        amount: 3
+    maxNearby:
+      amount: 3
 
 
 l4_kuongatari: { inherit: l4_hostile, type: mm:kuongatari }

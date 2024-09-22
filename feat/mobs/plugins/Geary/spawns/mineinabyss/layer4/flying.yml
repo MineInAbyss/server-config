@@ -4,7 +4,7 @@ l4_flying:
   priority: 0.0001
   regions: [ layerfour ]
   conditions:
-    - gap: 10..600
+    gap: 10..600
 
 # Common
 l4_onitsuchi: { inherit: l4_flying, type: mm:onitsuchi }

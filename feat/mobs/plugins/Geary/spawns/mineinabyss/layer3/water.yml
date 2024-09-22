@@ -6,9 +6,9 @@ l3_water:
   amount: 1-2
   spread: 5
   conditions:
-    - maxNearby:
-        amount: 5
-    - isSourceLiquid: {}
+    maxNearby:
+      amount: 5
+    isSourceLiquid: {}
 
 l3_ikenosuke: { inherit: l3_water, type: mm:ikenosuke }
 
