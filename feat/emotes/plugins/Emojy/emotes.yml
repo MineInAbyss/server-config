@@ -489,6 +489,9 @@ emotes:
   - id: orth_background
     template: playerprofile_background
     texture: mineinabyss:ui/player_profiles/orth_background.png
+  - id: funeral_plaque
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/funeral_plaque.png
   - id: ancient_ship
     template: playerprofile_background
     texture: mineinabyss:ui/player_profiles/ancient_ship.png
