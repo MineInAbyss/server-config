@@ -8,8 +8,8 @@ l2s2_floor:
   conditions:
     - maxNearby:
         amount: 5
-    - blockBelow:
-        allow: [ DIORITE, CALCITE, WHITE_CONCRETE, STONE ]
+ #   - blockBelow:
+#        allow: [ DIORITE, CALCITE, WHITE_CONCRETE, STONE ]
 
 l2s2_hisoishi: { inherit: l2s2_floor, type: mm:hisoishi }
 l2s2_rockwalker: { inherit: l2s2_floor, type: mm:rockwalker }
