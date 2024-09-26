@@ -1,7 +1,7 @@
 namespaces: [ geary ]
 l5_hostile:
   position: GROUND
-  priority: 0.00025
+  priority: 0.004
   regions: [ layerfive ]
   conditions:
   #  - mythicConditions:
@@ -20,7 +20,7 @@ l5_hostile_snow:
     - $inherit
     - $remove blockBelow
     - blockBelow:
-        allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW ]
+        allow: [ SNOW_BLOCK,POWDER_SNOW,SNOW,ICE,PACKED_ICE ]
 
 l5_hostile_sand:
   inherit: l5_hostile
@@ -28,7 +28,7 @@ l5_hostile_sand:
     - $inherit
     - $remove blockBelow
     - blockBelow:
-        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE ]
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL]
 
 # Mobs
 l5_kuongatari:
@@ -36,33 +36,50 @@ l5_kuongatari:
   type: mm:kuongatari
   amount: 1-2
   spread: 7
+
+
 l5_yomotsubi: { inherit: l5_hostile, type: mm:yomotsubi }
 l5_swarmshocker: { inherit: l5_hostile, type: mm:swarmshocker }
 
+
 # Snow
-l5_octoliar: { inherit: l5_hostile_snow, type: mm:octoliar }
+l5_octoliar: { inherit: l5_hostile, type: mm:octoliar }
 l5_horncrier: { inherit: l5_hostile_snow, type: mm:horncrier }
 
 # Sand
 l5_spikewalker: { inherit: l5_hostile_sand, type: mm:spikewalker }
 l5_kagi_tachikiri: { inherit: l5_hostile_sand, type: mm:kagi_tachikiri }
-l5_virinsipede: { inherit: l5_hostile_sand, type: mm:virinsipede }
+l5_virinsipede: { inherit: l5_hostile_sand, type: mm:virinsipede, priority: 0.0006 }
 
 # Uncommon
 l5_swarmhoarder:
   inherit: l5_hostile
-  priority: 0.00005
+  priority: 0.0005
   type: mm:swarmhoarder
+
+
 
 # Rare
 l5_tachikatana:
   inherit: l5_hostile
   type: mm:tachikatana
-  priority: 0.00001
+  priority: 0.0001
   conditions:
     - $inherit
     - $remove maxNearby blockBelow
     - blockBelow:
         allow: [ grass_block, stone, moss_block, dirt_path ]
+    - maxNearby:
+        amount: 2
+
+l5_rarestingerhead:
+  inherit: l5_hostile
+  type: mm:Stingerhead
+  priority: 0.0001
+  conditions:
+    - $inherit
+    - $remove maxNearby blockBelow
+    - blockBelow:
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL]
     - maxNearby:
         amount: 2

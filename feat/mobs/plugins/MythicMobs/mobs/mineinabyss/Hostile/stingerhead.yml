@@ -127,7 +127,7 @@ Stingerhead_Stinger7:
 
 Stingerhead_Stinger_Template:
   Type: VEX
-  Health: 27
+  Health: 5
   Options:
     PreventOtherDrops: true
     Silent: true
@@ -155,7 +155,7 @@ Stingerhead_Stinger_Detached:
     Collidable: false
     Silent: true
   Drops:
-    - exp 40-50
+    - exp 5-10
     - geary mineinabyss:stingerhead_scale 0-1 0.2
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=5;hS=.25;vS=.25} @modelpart{m=stingerhead_stinger;offset=LOCAL;x=-1} ~onTimer:1

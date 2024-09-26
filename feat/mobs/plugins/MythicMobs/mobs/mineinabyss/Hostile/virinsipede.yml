@@ -2,7 +2,7 @@ virinsipede:
   Type: zombie
   SpawnCategory: uncommon
   Display: "<#C42D2D>Virinsipede"
-  Health: 160
+  Health: 150
   Damage: 10
   AIGoalSelectors:
     - clear

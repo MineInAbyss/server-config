@@ -72,7 +72,7 @@ stingerhead_clear_players:
     - throw{velocity=10;velocityY=3} @PlayersInRadius{a>=<skill.min_amount>;r=<skill.radius>}
 
 stingerhead_bigleap:
-  Cooldown: 20
+  Cooldown: 10
   Conditions:
     - targetinlineofsight{} true
     - offgcd true
@@ -228,14 +228,14 @@ stingerhead_venom_impact:
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
     - potion{type=POISON;duration=40;level=2} @target
-    - potion{type=BLINDNESS;duration=40;level=1} @target
-    - damage{a=10} @target
+    - potion{type=BLINDNESS;duration=40;level=2} @target
+    - damage{a=13} @target
     - skill{s=Bleeding} @target
 stingerhead_venom_stinger:
     - potion{type=POISON;duration=<caster.stingerhead_stinger_count>*1.5;level=<caster.stingerhead_stinger_count>-1} @trigger
 
 stingerhead_spin:
-  Cooldown: 4
+  Cooldown: 3
   Conditions:
     - offgcd
   TargetConditions:
@@ -249,8 +249,8 @@ stingerhead_spin:
       - delay 1
       - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
       - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
-      - damage{amount=8} @PIR{r=7}
-      - damage{amount=4;pk=false;ia=true} @PIR{r=7}
+      - damage{amount=12} @PIR{r=7}
+      - damage{amount=5;pk=false;ia=true} @PIR{r=7}
       - throw{v=10;vy=4} @PIR{r=7}
       ]} @EIR{r=8;ignore=faction}
     - delay 20
@@ -284,7 +284,7 @@ stingerburrow:
       - offgcd true
       - targetinlineofsight
       - incombat true
-  Cooldown: 10
+  Cooldown: 6
   Skills:
       - setai{ai=false} @self
       - state{s=burrow_in} @self
@@ -297,9 +297,9 @@ stingerburrow:
       - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
       - delay 5
       - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
-      - delay 22
+      - delay 30
 
-      - teleport{spreadh=5;spreadv=0} @targetlocation
+      - teleport{spreadh=6;spreadv=1} @targetlocation
       - state{s=dig_out} @self
 
       - skill{s=stingerdigout} @Self

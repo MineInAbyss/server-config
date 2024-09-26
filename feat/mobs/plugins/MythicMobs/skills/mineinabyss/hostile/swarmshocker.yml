@@ -67,9 +67,9 @@ swarmshockerbigShock:
   - effect:particlesphere{particle=electricSpark;a=<random.10to20>;r=1;hs=0.08;vs=0.08;s=0;y=0;repeat=18;repeatInterval=1} @self
   - sound{s=entity.zombie.destroy_egg;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
   - sound{s=entity.player.hurt_freeze;sc=master;p=2.0;v=1.15;repeat=20;repeatInterval=1} @self ?targetwithin{d=2}
-  - damage{a=1.7;pi=true;pk=true;repeat=30;repeatInterval=1} @PIR{r=2.5}
-  - damage{a=2;pi=true;pk=true;repeat=4;repeatInterval=2;delay=7} @PIR{r=2.25}
-  - damage{a=2.25;pi=true;pk=true;repeat=2;repeatInterval=3;delay=11} @PIR{r=2}
+  - damage{a=1.8;pi=true;pk=true;repeat=30;repeatInterval=1} @PIR{r=2.5}
+  - damage{a=2.1;pi=true;pk=true;repeat=4;repeatInterval=2;delay=7} @PIR{r=2.25}
+  - damage{a=2.5;pi=true;pk=true;repeat=2;repeatInterval=3;delay=11} @PIR{r=2}
   - potion{t=SLOW;l=1;force=true;p=false;d=<random.40to60>} @PIR{r=2.25}
   - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2.25}
   - potion{t=SLOW_DIGGING;l=2;force=true;p=false;d=<random.100to200>} @PIR{r=2.25}

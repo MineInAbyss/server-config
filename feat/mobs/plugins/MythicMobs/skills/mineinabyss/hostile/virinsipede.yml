@@ -3,7 +3,7 @@ virinburrow:
       - offgcd true
       - targetinlineofsight
       - incombat true
-  Cooldown: 10
+  Cooldown: 30
   Skills:
       - setai{ai=false} @self
       - state{s=dig_in} @self

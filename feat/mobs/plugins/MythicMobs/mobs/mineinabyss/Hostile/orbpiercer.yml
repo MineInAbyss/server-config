@@ -2,7 +2,7 @@ orbpiercer:
   Type: ZOMBIE
   SpawnCategory: miniboss
   Display: "<#C74040>Orb Piercer"
-  Health: 150
+  Health: 170
   Damage: 8
   AIGoalSelectors:
     - clear
@@ -20,7 +20,7 @@ orbpiercer:
     Collidable: true
     Silent: true
     FollowRange: 48
-    MovementSpeed: 0.3
+    MovementSpeed: 0.36
     MaxCombatDistance: 35
     PreventSunburn: true
     PreventOtherDrops: true
@@ -59,7 +59,7 @@ orbpiercer:
     - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
     - skill{s=orbyspear2} @target ~onTimer:20 <50%
     - skill{s=orbyspear} @target ~onTimer:20 >50%
-    - skill{s=orby_impale} @target ~onTimer:40
+    - skill{s=orby_impale} @target ~onTimer:20
     - skill{s=orby_shout} @target ~oncombat
     - skill{s=orby_shout} @target ~onDamaged 0.1
     - skill{s=orby_spike_eject} @target ~onDamaged <60%

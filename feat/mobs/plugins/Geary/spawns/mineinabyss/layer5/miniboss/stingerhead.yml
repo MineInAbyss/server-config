@@ -1,10 +1,11 @@
 namespaces: [ geary ]
-l5_stingerhead:
+l5_stingerheadnest:
   position: GROUND
-  priority: 0.00008
-  spread: 10
-  ySpread: 1
+  priority: 0.0005
   regions: [ stingerheaddesert, stingerheadnestcave, stingerheadsanddesert, stingerheadsnow ]
   conditions:
     - maxNearby:
         amount: 2
+
+
+l5_stingerheadspawn: { inherit: l5_stingerheadnest, type: mm:Stingerhead}    
