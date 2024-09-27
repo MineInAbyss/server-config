@@ -2,19 +2,19 @@ defaultCap: 10
 playerCaps:
   flying: 5
   passive: 12
-  water: 7
+  water: 6
   hostile: 6
   swarm: 7
   uncommon: 4
   miniboss: 2
 range:
-  maxDistance: 52
+  maxDistance: 48
   minDistance: 12
   maxVerticalDistance: 22
   playerCapRadius: 200
   defaultNearbyRange: 128.0
 runTimes:
   GROUND: 30t
-  WATER: 2s
-  AIR: 14s
+  WATER: 20s
+  AIR: 20s
 maxSpawnAttemptsPerPlayer: 10
