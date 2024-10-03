@@ -110,3 +110,5 @@ pet_stats: "§6✦ Pet's Information ✦\n§7Status: %status%\n§6Level §7- §6
   §7Power: §f%power%%\n \n§7Experience: §a%experience%/%threshold% xp\n%progressbar%"
 debugger_joining: §aDebugger is enabled. You are now listening to it.
 debugger_leave: §aDebugger is §7disabled§a. You will not be listening to it anymore.
+pet_stats_evolution_already_owned: §cEvolution already owned.
+pet_stats_max_level: §7Maximum level reached.
