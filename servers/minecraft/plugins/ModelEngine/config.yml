@@ -25,7 +25,8 @@ Model-Generator:
   Create-Atlas: true
   Create-Shader: false
   Create-MC-META: false
-  Item-Model: TIPPED_ARROW
+  Item-Models:
+  - TIPPED_ARROW
 Network-Optimization:
   Bundle-Everything: true
   Bundle-Size: 512
