@@ -17,7 +17,6 @@ shroombear:
   Health: 25 # change this
   Damage: 0 
   Options:
-    Despawn: false
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.22
@@ -57,7 +56,6 @@ baby_shroombear:
   Health: 12 # change this
   Damage: 0 
   Options:
-    Despawn: false
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.18

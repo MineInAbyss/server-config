@@ -34,18 +34,15 @@ mia_baby_corpse_weeper:
     ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
-    Persistent: false
-    Despawn: false
     Invincible: true
     PreventOtherDrops: true
     FollowRange: 20
     Silent: true
     KnockbackResistance: 1
     PreventSunburn: true
-    
-    
+
 ### corpse_weeper ###
-    
+
 mia_corpse_weeper:
   Type: ALLAY
   Display: "corpse_weeper"
@@ -70,7 +67,7 @@ mia_corpse_weeper:
     ViewRadius: 64
     Drive: false
     DamageTint: true
-  Skills:  
+  Skills:
   - skill{s=mia_entercombat} @self ~onEnterCombat
   - skill{s=mia_dropcombat} @self ~onDropCombat
   - skill{s=mia_dodge_sync} @self ~onTimer:120 .4
@@ -83,7 +80,7 @@ mia_corpse_weeper:
   - skill{s=mia_corpseweeper_attack_1_sync;sync=true} @target ~onAttack
 
   - setspeed{type=flying;speed=1.5} @self ~onSpawn
-  - state{mid=corpse_weeper;s=attack} @self ~onAttack 
+  - state{mid=corpse_weeper;s=attack} @self ~onAttack
   - skill{s=mia_feed} @self ~onInteract
 
   - bodyclamp{mh=10;mb=10;s=0} @self ~onSpawn
@@ -92,7 +89,6 @@ mia_corpse_weeper:
   Options:
     Collidable: true
     #Invincible: true
-    Despawn: true
     AlwaysShowName: false
     PreventOtherDrops: true
     Silent: true

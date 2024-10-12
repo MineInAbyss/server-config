@@ -16,7 +16,6 @@ hagamizukin:
   Health: 50 # change this
   Damage: 7
   Options:
-    Despawn: false
     Silent: false
     FollowRange: 25
     MovementSpeed: 1.1

@@ -71,7 +71,6 @@ orbpiercer_projectile:
   Options:
     NoAI: true
     Silent: true
-    Despawn: false
     Invincible: true
     PreventBlockInfection: true
   Skills:

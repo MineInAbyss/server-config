@@ -8,9 +8,7 @@ Aerial_Bunny:
     ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
-    Persistent: false
     Invincible: false
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 20
     Silent: true
@@ -43,9 +41,7 @@ Baby_Shark:
     ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
-    Persistent: false
     Invincible: false
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 20
     Silent: true

@@ -20,7 +20,6 @@ qmob_stinger:
   Health: 16 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     PreventOtherDrops: true
     FollowRange: 25

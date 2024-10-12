@@ -14,7 +14,6 @@ ikenosuke:
   Health: 12 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: false
     FollowRange: 25
     MovementSpeed: 0.4

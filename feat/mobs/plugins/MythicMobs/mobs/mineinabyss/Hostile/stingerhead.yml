@@ -149,8 +149,6 @@ Stingerhead_Stinger_Detached:
   Options:
     PreventBlockInfection: true
     PreventOtherDrops: true
-    Despawn: true
-    Persistent: false
     KnockbackResistance: 1
     Collidable: false
     Silent: true

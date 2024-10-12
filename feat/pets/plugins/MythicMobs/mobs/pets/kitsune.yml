@@ -7,8 +7,6 @@ Kitsune_Normal:
   Options:
     MovementSpeed: 0.19
     PreventRandomEquipment: true
-    Persistent: false
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 40
     Invincible: true
@@ -35,8 +33,6 @@ Kitsune_Demonic:
   Options:
     MovementSpeed: 0.19
     PreventRandomEquipment: true
-    Persistent: false
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 40
     Invincible: true
@@ -63,8 +59,6 @@ Kitsune_Inferno:
   Options:
     MovementSpeed: 0.19
     PreventRandomEquipment: true
-    Persistent: false
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 40
     Invincible: true

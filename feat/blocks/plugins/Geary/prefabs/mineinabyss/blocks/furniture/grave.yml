@@ -12,7 +12,6 @@ blocky:sound:
   fallSound: block.stone.fall
 furniture:
   properties:
-    persistent: true
     brightness:
       blockLight: 15
     displayTransform: NONE

@@ -16,7 +16,6 @@ fukaiasai:
   Health: 10 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.25

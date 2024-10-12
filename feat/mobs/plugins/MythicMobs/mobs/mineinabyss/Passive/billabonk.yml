@@ -21,7 +21,6 @@ billabonk:
   Health: 20 # change this
   Damage: 0 
   Options:
-    Despawn: false
     PreventOtherDrops: true
     Silent: true    #MovementSpeed: 0.25
     MovementSpeed: 0.3

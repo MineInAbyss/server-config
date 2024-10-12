@@ -19,7 +19,6 @@ demonfish:
   Health: 30 # change this
   Damage: 5
   Options:
-    Despawn: false
     Silent: false
     FollowRange: 25
     MovementSpeed: 0.6

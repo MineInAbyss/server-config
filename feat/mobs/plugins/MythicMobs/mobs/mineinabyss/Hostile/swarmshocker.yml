@@ -17,7 +17,6 @@ swarmshocker:
   Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.4
@@ -66,7 +65,6 @@ swarmhoarder:
   Health: 70 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.3

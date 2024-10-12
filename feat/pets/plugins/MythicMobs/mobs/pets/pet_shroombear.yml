@@ -8,9 +8,7 @@ mia_baby_shroombear:
     ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
-    Persistent: false
     Invincible: true
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 20
     Silent: true
@@ -47,9 +45,7 @@ mia_shroombear:
     ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
-    Persistent: false
     Invincible: true
-    Despawn: false
     PreventOtherDrops: true
     FollowRange: 20
     Silent: true

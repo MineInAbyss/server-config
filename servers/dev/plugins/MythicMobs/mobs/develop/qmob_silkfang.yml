@@ -17,7 +17,6 @@ qmob_silkfang:
   Health: 80 # change this
   Damage: 0 # keep this 0
   Options:
-    Despawn: false
     Silent: true
     PreventOtherDrops: true
     FollowRange: 15
