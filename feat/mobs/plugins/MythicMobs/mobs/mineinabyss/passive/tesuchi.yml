@@ -20,9 +20,7 @@ tesuchi:
     FollowRange: 25
     MovementSpeed: 0.2
     KnockbackResistance: 1.0
-  Drops: # put stuff here
-
-  Drops: # put stuff here
+  Drops:
     - exp 5-10
     - geary mineinabyss:tesuchi_tail 1
     - geary mineinabyss:tesuchi_scales 1-3 0.8

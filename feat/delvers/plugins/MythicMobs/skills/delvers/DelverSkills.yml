@@ -69,7 +69,6 @@ piratesword:
   - targetwithin{d=7} true
   - targetnotwithin{d=3} true
   - offgcd true
-  Cooldown:
   Skills:
   - GCD{ticks=100} @Self
   - potion{t=SPEED;d=35;l=1} @self
