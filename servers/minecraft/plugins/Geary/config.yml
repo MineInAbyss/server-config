@@ -1,0 +1,34 @@
+# Convert bukkit entities to and from geary, for instance to store and persist components on a player.
+trackEntities: true
+items:
+  enabled: true
+  # If an item has no prefabs encoded, try to find its prefab by matching custom model data.
+  migrateByCustomModelData: false
+  autoDiscoverVanillaRecipes: false
+# Convert blocks to and from geary.
+trackBlocks: true
+catch:
+  # Whether to throw an error when an entity read operation occurs outside of the server thread.
+  asyncRead: IGNORE
+  # Whether to throw an error when an entity write operation occurs outside of the server thread.
+  asyncWrite: ERROR
+  # Whether to throw an error when converting bukkit concepts to geary entities outside of the server thread.
+  asyncEntityConversion: IGNORE
+  asyncRecordsAccess: IGNORE
+  asyncArchetypeProviderAccess: IGNORE
+mobTypeConversion: IGNORE
+# List of mob types to remove if they are not entities with Geary prefabs (i.e. vanilla entities)
+removeVanillaMobTypes: []
+logLevel: Info
+integrations:
+  # Allow binding to MythicMobs entities.
+  mythicMobs: true
+resourcePack:
+  generate: true
+  # The path to generate the pack to from `plugins/Geary`
+  # Adding .zip to path will export as a zip instead of directory
+  outputPath: resourcepack.zip
+  # Points to a resourcepack in zip or directory format to merge into Geary's pack
+  includedPackPath: template_pack
+# Whether to enable Geary's spawning system
+spawning: true
