@@ -20,14 +20,22 @@ privateMessages:
   messageReceivedSound: ""
 
 chat:
-  disableChatSigning: true
-  commandSpyFormat: '<gold><chatty_nickname><yellow>: '
-  filterFormat: CENSOR
-  filters:
-    - n\s*i\s*g\s*g\s*e?\s*r?
-    - n[\W_]*i[\W_]*g[\W_]*g[\W_]*e?[\W_]*r?
-    - n[\W_]*[i1!][\W_]*g[\W_]*g[\W_]*[e3]?[\W_]*[rR]?
-    - \[nN][\W_]*[iI1!][\W_]*[gG][\W_]*[gG][\W_]*[eE3]?[\W_]*[rR]?
+  disableChatSigning: false
+    commandSpyFormat: '<gold><chatty_nickname><yellow>: '
+    # Valid formats: STRIKETHROUGH, CENSOR, DELETE, BLOCK
+    # STRIKETHROUGH: Replaces filtered words with a strikethrough
+    # CENSOR: Replaces filtered words with a censor
+    # DELETE: Deletes filtered words
+    # BLOCK: Blocks filtered words from being sent
+    filters:
+      - pattern: n\s*i\s*g\s*g\s*e?\s*r?
+        format: BLOCK
+      - pattern: n[\W_]*i[\W_]*g[\W_]*g[\W_]*e?[\W_]*r?
+        format: BLOCK
+      - pattern: n[\W_]*[i1!][\W_]*g[\W_]*g[\W_]*[e3]?[\W_]*[rR]?
+        format: BLOCK
+      - pattern: \[nN][\W_]*[iI1!][\W_]*[gG][\W_]*[gG][\W_]*[eE3]?[\W_]*[rR]?
+        format: BLOCK
   formatURLs: true
   urlReplacements:
       - pattern: https?:\/\/(media|cdn)\.discordapp\.net\/[^\s]+\.png(\?[^\s]*)?
