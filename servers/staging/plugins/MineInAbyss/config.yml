@@ -1,0 +1,75 @@
+# Ignore following options, enable all features
+enableAll: false
+ansiblePull:
+  enabled: false
+# Choose which features to enable with true/false
+antiCheese:
+  enabled: true
+core:
+  enabled: true
+cosmetics:
+  enabled: true
+  equipWhistleCosmetic: false
+  equipBackpacks: false
+  defaultBackpack: "backpack"
+curse:
+  enabled: true
+custom_hud:
+  enabled: true
+descent:
+  enabled: false
+displayLocker:
+  enabled: true
+gondolas:
+  enabled: false
+guilds:
+  enabled: true
+hubstorage:
+  enabled: true
+keepInventory:
+  enabled: true
+  keepInvInVoid: true
+layers:
+  enabled: true
+lootCrates:
+  enabled: true
+misc:
+  enabled: true
+music:
+  enabled: true
+shopkeeping:
+  enabled: false
+okiboTravel:
+  enabled: true
+orthBanking:
+  enabled: true
+  balanceHudId: "balance_empty_offhand"
+  balanceHudOffhandId: "balance_offhand"
+patreon:
+  enabled: true
+  patreonRoles:
+    "patreon":
+      roleId: "672296677864112128"
+      patreonTier: 1
+    "patreonplus":
+      roleId: "894216646623895573"
+      patreonTier: 2
+playerProfile:
+  enabled: true
+  validBackgroundIds:
+    - "orth_background"
+    - "ancient_ship"
+    - "nanachi_hut"
+    - "golden_bridge"
+    - "layer2_windmills"
+    - "layer6"
+    - "seeker_camp"
+    - "funeral_plaque"
+pvp:
+  enabled: false
+relics:
+  enabled: true
+tools:
+  enabled: true
+tutorial:
+  enabled: true

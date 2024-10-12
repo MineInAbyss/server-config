@@ -68,6 +68,26 @@ build:
     - feat/items
     - feat/loot_chests
     - feat/cosmetics
+
+staging:
+  copyPaths: [ servers/staging ]
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":survival::space_-4::test::space_-4:"
+      localChatRadius: 0
+  include:
+    - minecraft
+    - feat/blocks
+    - feat/items
+    - feat/loot_chests
+    - feat/cosmetics
+    - feat/mobs
+    - feat/pets
+    - feat/delvers
+    - feat/bosses
+    - feat/hud
+
 dev:
   copyPaths: [ servers/dev ]
   variables:
