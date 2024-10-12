@@ -70,7 +70,7 @@ build:
     - feat/cosmetics
 
 staging:
-  copyPaths: [ servers/staging ]
+  copyPaths: [ ] # Staging should mimic another server as closely as possible, use `include` below instead
   variables:
     chatty:
       enableHover: true
