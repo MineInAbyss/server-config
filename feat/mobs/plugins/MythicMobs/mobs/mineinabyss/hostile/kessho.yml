@@ -10,8 +10,8 @@ kessho:
     PreventOtherDrops: true
     PreventJockeyMounts: true
   Skills:
-  - model{mid=amethyst_golem;n=false} @Self ~onSpawn
-  - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
-  - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - model{mid=amethyst_golem;n=false} @Self ~onSpawn
+    - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
+    - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

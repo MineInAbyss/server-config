@@ -9,7 +9,7 @@ chimokami:
     - randomstroll
     - lookatplayers
     - randomlookaround
-   # - fleeplayers{d=15;s=2;ss=1}
+    # - fleeplayers{d=15;s=2;ss=1}
   AITargetSelectors:
     - clear
     - attackers
@@ -31,5 +31,5 @@ chimokami:
     - geary mineinabyss:chimokami_tail 1-3 0.8
     - geary mineinabyss:chimokami_fang 1-2 0.7
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

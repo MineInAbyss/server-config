@@ -33,11 +33,11 @@ mantoyer:
     - geary mineinabyss:mantoyer_horn 1-2 0.6
   Skills:
 
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-#    - skill{s=mantoyerspawn} @self ~onspawn
+    #    - skill{s=mantoyerspawn} @self ~onspawn
 
     - state{mid=mantoyer;s=attack} @self ~onAttack
   #- model{mid=daikonchu;n=false} @Self ~onSpawn
- # - skill:DaikonchuAttack @Self ~onAttack
+  # - skill:DaikonchuAttack @Self ~onAttack
 #  - skill:DwellingBugTame @Self ~onInteract COMING SOON!!!!!!!

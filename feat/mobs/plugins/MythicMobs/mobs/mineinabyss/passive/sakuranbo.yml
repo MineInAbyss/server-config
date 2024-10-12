@@ -30,7 +30,7 @@ sakuranbo:
     - geary mineinabyss:sakuranbo_dust 1-3 0.9
 
   Skills:
-#    - skill{s=sakuranbospawn} @self ~onspawn
+    #    - skill{s=sakuranbospawn} @self ~onspawn
 
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

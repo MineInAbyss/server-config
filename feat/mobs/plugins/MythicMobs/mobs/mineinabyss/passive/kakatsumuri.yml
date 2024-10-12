@@ -29,6 +29,6 @@ kakatsumuri:
     - geary mineinabyss:kakatsumuri_shell 1 0.8
     - geary mineinabyss:kakatsumuri_glowing_tip 1 0.9
   Skills:
-  ####### Misc
-    - skill{s=displayHealth} ~onDamaged  
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath  

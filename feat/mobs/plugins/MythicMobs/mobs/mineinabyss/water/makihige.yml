@@ -34,5 +34,5 @@ makihige:
     - geary mineinabyss:makihige_tentacle 1-2 0.4
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

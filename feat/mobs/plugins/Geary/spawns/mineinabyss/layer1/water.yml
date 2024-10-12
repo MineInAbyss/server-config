@@ -8,6 +8,6 @@ l1_water:
   conditions:
     - maxNearby:
         amount: 3
-    - isSourceLiquid: {}
+    - isSourceLiquid: { }
 
 l1_spiralsquid: { inherit: l1_water, type: mm:spiralsquid }

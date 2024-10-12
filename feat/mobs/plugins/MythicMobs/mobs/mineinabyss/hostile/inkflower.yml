@@ -32,9 +32,9 @@ inkflower:
     Drive: false
     DamageTint: true
   Skills:
-   # - CancelEvent{sync=true} ~onAttack
-   # - skill{s=Damage_8} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged  
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_8} @self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
 
 
     - bodyclamp{m=inkflower;c=15} @self ~onSpawn

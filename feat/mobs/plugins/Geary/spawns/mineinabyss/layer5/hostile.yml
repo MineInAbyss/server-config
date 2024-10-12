@@ -4,8 +4,8 @@ l5_hostile:
   priority: 0.004
   regions: [ layerfive ]
   conditions:
-  #  - mythicConditions:
-  #      - lightlevelfromblocks{l=0}
+    #  - mythicConditions:
+    #      - lightlevelfromblocks{l=0}
     - blockBelow:
         allow: [ grass_block, stone ]
     - maxNearby:
@@ -28,7 +28,7 @@ l5_hostile_sand:
     - $inherit
     - $remove blockBelow
     - blockBelow:
-        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL]
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL ]
 
 # Mobs
 l5_kuongatari:
@@ -80,6 +80,6 @@ l5_rarestingerhead:
     - $inherit
     - $remove maxNearby blockBelow
     - blockBelow:
-        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL]
+        allow: [ SAND,SANDSTONE,RED_SAND,RED_SANDSTONE,SANDSTONE_SLAB,SANDSTONE_STAIRS,SMOOTH_SANDSTONE,SOUL_SOIL ]
     - maxNearby:
         amount: 2

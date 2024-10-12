@@ -7,8 +7,8 @@ l1_passive:
   spread: 5
   ySpread: 1
   conditions:
-   # - blockBelow:
-  #      allow: [ grass_block ]
+    # - blockBelow:
+    #      allow: [ grass_block ]
     - maxNearby:
         amount: 4
 

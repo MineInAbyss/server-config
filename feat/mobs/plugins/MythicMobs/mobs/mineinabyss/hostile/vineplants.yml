@@ -5,12 +5,12 @@ vinebinder:
   Modules:
     ThreatTable: true
   AIGoalSelectors:
-  - clear
-  - randomlookaround
-  - lookatplayers
+    - clear
+    - randomlookaround
+    - lookatplayers
   AITargetSelectors:
-  - clear
-  - players
+    - clear
+    - players
   Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
@@ -29,16 +29,16 @@ vinebinder:
     Scale: 1
 
   Drops:
-  - exp 10-15
-  - geary mineinabyss:plant_matter 1-2 0.6
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
 
   Skills:
-  ####### Misc
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
-  - skill{s=vbATTACK} @Self ~onAttack
+    - skill{s=vbATTACK} @Self ~onAttack
   #- skill{s=vinebinderwave} @target ~onTimer:20
 
 vineblaster:
@@ -48,12 +48,12 @@ vineblaster:
     ThreatTable: true
   Display: "<green>Vineblaster"
   AIGoalSelectors:
-  - clear
-  #- randomlookaround
-  - lookatplayers
+    - clear
+    #- randomlookaround
+    - lookatplayers
   AITargetSelectors:
-  - clear
-  - players
+    - clear
+    - players
   Health: 16 # change this
   Damage: 0 # keep this 0
   Options:
@@ -70,17 +70,17 @@ vineblaster:
     DamageTint: true
     Scale: 0.3
   Drops:
-  - exp 10-15
-  - geary mineinabyss:plant_matter 1-2 0.6
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
 
   Skills:
-  ####### Misc
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-  - skill:vineblasterattack @Self ~onTimer:60
- # - skill{s=vineblastermortar} @target ~onTimer:20
-  - cancelevent{sync=true} @Self ~onAttack
+    - skill:vineblasterattack @Self ~onTimer:60
+    # - skill{s=vineblastermortar} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack
 
 vinepoofer:
   Type: ZOMBIE
@@ -89,12 +89,12 @@ vinepoofer:
   Modules:
     ThreatTable: true
   AIGoalSelectors:
-  - clear
-  - randomlookaround
-  - lookatplayers
+    - clear
+    - randomlookaround
+    - lookatplayers
   AITargetSelectors:
-  - clear
-  - players
+    - clear
+    - players
   Health: 20 # change this
   Damage: 0 # keep this 0
   Options:
@@ -111,14 +111,14 @@ vinepoofer:
     DamageTint: true
     Scale: 1
   Drops:
-  - exp 10-15
-  - geary mineinabyss:plant_matter 1-2 0.6
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
 
   Skills:
-  ####### Misc
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-  - skill:vinepooferattack @Self ~onTimer:60
- # - skill{s=vinebinderwave} @target ~onTimer:20
-  - cancelevent{sync=true} @Self ~onAttack
+    - skill:vinepooferattack @Self ~onTimer:60
+    # - skill{s=vinebinderwave} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack

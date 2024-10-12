@@ -27,7 +27,7 @@ orbyATTACKskill:
   Conditions:
   Cooldown: 1
   Skills:
-    - state{s=attack;li=3;lo=2} @self 
+    - state{s=attack;li=3;lo=2} @self
     - delay 10
     - totem{ch=3;onStart=orbyATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
     - delay 30
@@ -193,172 +193,172 @@ orbyspikespin:
   Skills:
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
 
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=360;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - delay 20
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
 
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
-    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
-    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
 
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=360;sE=true;syo=2;tyo=1.5;hR=2} @Target
 
+    - delay 20
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+    - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=360;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - delay 20
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
- 
+
     - sound{s=entity.creeper.death;v=1;p=1.3} @PIR{r=30}
     - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=orbyt;onHit=orbyhit;onEnd=orbyend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
 
@@ -377,7 +377,7 @@ orby_impale:
   Skills:
     - gcd{ticks=150}
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
-   # - setai{ai=false}
+    # - setai{ai=false}
     - state{s=dash_charge;li=0;lo=0} @self
     #- look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 15
@@ -385,11 +385,11 @@ orby_impale:
     - state{s=dash_charge;r=true} @self
     - state{s=dash_land_and_impale;li=0;lo=0} @self
     - delay 3
-   # - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    # - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - totem{md=2;c=1;oH=orby_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=5}
     - delay 34
     - state{s=dash_land_and_impale;remove=true} @self
-   # - setai{ai=true}
+    # - setai{ai=true}
 orby_leapa:
   Cooldown: 3
   Conditions:

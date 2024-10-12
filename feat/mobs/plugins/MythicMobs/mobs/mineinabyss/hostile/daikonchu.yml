@@ -25,9 +25,9 @@ daikonchu:
     - geary mineinabyss:daikonchu_carapace 1 0.4
     - geary mineinabyss:daikonchu_wing 1-2 0.3
   Skills:
-  - cancelevent{sync=true} @Self ~onAttack
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill{s=Changetarget} ~onTimer:160 <99%
-  - model{mid=daikonchu;n=false} @Self ~onSpawn
-  - skill:DaikonchuAttack @Self ~onAttack
+    - cancelevent{sync=true} @Self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - model{mid=daikonchu;n=false} @Self ~onSpawn
+    - skill:DaikonchuAttack @Self ~onAttack

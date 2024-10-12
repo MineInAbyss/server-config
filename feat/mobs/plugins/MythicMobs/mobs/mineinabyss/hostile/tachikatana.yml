@@ -43,16 +43,16 @@ tachikatana:
     - geary mineinabyss:tachikatana_scale 1-2 0.8
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-   # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
+    # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
     #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
-#    - skill{s=orbpiercer_speed} @self ~onSpawn
+    #    - skill{s=orbpiercer_speed} @self ~onSpawn
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
     #- sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
     #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
 
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill{s=tachiATTACK} @self ~onAttack
     - skill{s=tachi_PROJ} @target ~onTimer:20
     - skill{s=tachishockwave} @target ~onTimer:20

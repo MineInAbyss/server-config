@@ -38,9 +38,9 @@ kuongatari:
     - geary mineinabyss:kuongatari_silk 1-2 0.6
     - geary mineinabyss:kuongatari_abdomen_raw 1-2 0.7
   Skills:
-#    - skill{s=Kuongatarispawn} @self ~onspawn
+    #    - skill{s=Kuongatarispawn} @self ~onspawn
 
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - state{mid=kuongatari;s=attack} @self ~onAttack
     - skill{s=Kuon_Summon} @target ~onDamaged <40% 0.2
     - shieldbreak{duration=100} @target ~onattack 0.35
@@ -61,7 +61,7 @@ kuongatari_summon:
     KnockbackResistance: 0
     #DigOutOfGround: true
     Collidable: true
-   # Silent: true
+    # Silent: true
     FollowRange: 30
     MovementSpeed: 0.4
     MaxCombatDistance: 20

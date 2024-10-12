@@ -25,7 +25,7 @@ Stingerhead:
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true
-   # DigOutOfGround: true
+    # DigOutOfGround: true
   Equipment:
     - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
     - TORCH HAND
@@ -47,10 +47,10 @@ Stingerhead:
   DamageModifiers:
     - PROJECTILE 0.10
     - SUFFOCATION 0.01
-  Skills: 
+  Skills:
     # - skill{s=burrow_out} @self ~onSpawn
     # - skill{s=burrow_in} @self ~onDespawn
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
@@ -62,8 +62,8 @@ Stingerhead:
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=2;delay=1} @trigger ~onDamaged ?~distance{d=>20}
     - skill{s=stingerburrow} @Self ~onDamaged 0.1
-    - skill{s=stingerhead_bigleap} @target ~onTimer:100   
-    - skill{s=stingerhead_leap} @target ~onTimer:60    
+    - skill{s=stingerhead_bigleap} @target ~onTimer:100
+    - skill{s=stingerhead_leap} @target ~onTimer:60
     - skill{s=stingerhead_spin} @self ~onDamaged 0.15
     #- state{mid=stingerhead;s=spin_attack} @self ~onTimer:20
     #- skill{s=stingerhead_leap_attack} @self ~onTimer:20

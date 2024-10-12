@@ -1,7 +1,3 @@
-
-
-
-
 splitjawHurt:
   Cooldown: 10
   Skills:
@@ -61,20 +57,20 @@ SJ_dashhit:
     - targetwithin 5
   Skills:
     - setstance{stance=dashhit} @self
-   # - shieldbreak{duration=200} @target
+    # - shieldbreak{duration=200} @target
     - damage{a=10;ia=true} @PIR{r=3}
 
     - delay 100
 
 SJ_dashmiss:
-  Cooldown: 
+  Cooldown:
   Conditions:
     - stance{s=dashhit} false
   Skills:
     - stun{d=80;f=true} @self
     - state{s=dash_ground_slam;li=0;lo=0} @self
     - delay 60
-    - state{s=dash_ground_slam;remove=true} @self 
+    - state{s=dash_ground_slam;remove=true} @self
     - setstance{stance=normal} @self
 
 sj_roar:

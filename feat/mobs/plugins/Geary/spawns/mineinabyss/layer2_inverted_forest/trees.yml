@@ -11,7 +11,7 @@ l2s2_trees:
     - blockBelow:
         allow: [ BIRCH_LEAVES, OAK_WOOD, OAK_PLANKS, OAK_SLAB, OAK_LEAVES, COBBLESTONE_SLAB, GRASS_BLOCK ]
       # TODO y level check?
-      
+
 
 l2s2_inbyo: { inherit: l2s2_trees, type: mm:inbyo }
 l2s2_stinger: { inherit: l2s2_trees, type: mm:stinger }

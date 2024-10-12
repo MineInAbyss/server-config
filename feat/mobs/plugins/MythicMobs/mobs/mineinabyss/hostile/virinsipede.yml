@@ -37,7 +37,7 @@ virinsipede:
     - geary mineinabyss:virinsipede_segments 4-10 1
     - geary mineinabyss:virinsipede_antlers 1-2 0.3
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=virinburrow} @Self ~onTimer:60
     - state{mid=virinsipede;s=attack} @self ~onAttack

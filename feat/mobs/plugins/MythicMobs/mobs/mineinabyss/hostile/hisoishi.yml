@@ -19,7 +19,7 @@ hisoishi:
     - clear
     - meleeattack
     - randomstroll
-    
+
     - lookatplayers
     - randomlookaround
     - float
@@ -39,8 +39,8 @@ hisoishi:
     - geary mineinabyss:hisoishi_claw 1-3 0.8
     - geary mineinabyss:hisoishi_shell 1 0.2
   Skills:
-  ####### Misc
-    - skill{s=displayHealth} ~onDamaged  
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - skill{s=hs_backup} @self ~ondamaged
@@ -65,7 +65,7 @@ baby_hisoishi:
   Modules:
     ThreatTable: true
   Health: 40 # change this
-  Damage: 4 
+  Damage: 4
   Options:
     PreventSunBurn: true
     KnockbackResistance: 0.6
@@ -93,7 +93,7 @@ baby_hisoishi:
     DamageTint: true
     Scale: 0.4
   Skills:
-  ####### Misc
+    ####### Misc
     - CancelEvent{sync=true} @self ~onAttack
     - skill{s=tj_backup} @self ~ondamaged
     - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

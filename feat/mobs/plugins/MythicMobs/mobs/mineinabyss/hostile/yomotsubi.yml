@@ -37,12 +37,12 @@ yomotsubi:
     - geary mineinabyss:yomotsubi_wing 1-2 0.6
     - geary mineinabyss:yomotsubi_abdomen_raw 1-2 0.7
   Skills:
-   # - CancelEvent{sync=true} ~onAttack
-   # - skill{s=Damage_8} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged  
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_8} @self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawn
     - bodyclamp{m=yomotsubi;c=15} @self ~onLoad
     - state{mid=yomotsubi;s=attack} @self ~onAttack
-    
+
     - skill{s=yomotsubi_airball} @target ~onTimer:20

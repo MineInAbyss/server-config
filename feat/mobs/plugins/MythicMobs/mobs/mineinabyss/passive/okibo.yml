@@ -29,6 +29,6 @@ okibo:
     - geary mineinabyss:okibo_meat_raw 1-2 0.6
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
 #    - skill{s=okibospawn} @self ~onspawn

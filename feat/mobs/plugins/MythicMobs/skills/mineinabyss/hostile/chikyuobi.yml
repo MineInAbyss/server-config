@@ -32,7 +32,7 @@ digattackfail:
     - stun{d=60} @self
     - state{s=landmine;r=true} @self
     - state{s=trigger} @self
-  #  - shieldbreak{duration=50} @target
+    #  - shieldbreak{duration=50} @target
     - potion{type=POISON;duration=50;level=3} @PIR{r=3}
     - potion{type=WITHER;duration=25;level=3} @PIR{r=3}
     - skill{s=Bleeding} @PIR{r=3}
@@ -50,7 +50,7 @@ digattack:
     - stun{d=60} @self
     - state{s=landmine;r=true} @self
     - state{s=trigger} @self
-  #  - shieldbreak{duration=50} @target
+    #  - shieldbreak{duration=50} @target
     - damage{amount=10;ia=true} @PIR{r=5}
     - potion{type=POISON;duration=100;level=5} @PIR{r=5}
     - potion{type=WITHER;duration=50;level=5} @PIR{r=5}

@@ -8,7 +8,7 @@ l5_passive:
   ySpread: 1
   conditions:
     - blockBelow:
-        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS, MOSS_BLOCK, DIRT_PATH]
+        allow: [ GRASS_BLOCK,DIRT,PODZOL,MUD,MUDDY_MANGROVE_ROOTS, MOSS_BLOCK, DIRT_PATH ]
     - maxNearby:
         amount: 5
 

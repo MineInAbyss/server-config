@@ -1,232 +1,232 @@
 virinburrow:
   Conditions:
-      - offgcd true
-      - targetinlineofsight
-      - incombat true
+    - offgcd true
+    - targetinlineofsight
+    - incombat true
   Cooldown: 20
   Skills:
-      - setai{ai=false} @self
-      - state{s=dig_in} @self
-      - particles{p=blockcrack;amount=40;hS=2;vS=2;material=DIRT;repeat=10;repeati=4} @self
-      - particles{p=blockcrack;amount=40;hS=3;vS=2;material=STONE;repeat=10;repeati=4} @self
-      - potion{type=RESISTANCE;duration=100;level=10}
-      - delay 43
+    - setai{ai=false} @self
+    - state{s=dig_in} @self
+    - particles{p=blockcrack;amount=40;hS=2;vS=2;material=DIRT;repeat=10;repeati=4} @self
+    - particles{p=blockcrack;amount=40;hS=3;vS=2;material=STONE;repeat=10;repeati=4} @self
+    - potion{type=RESISTANCE;duration=100;level=10}
+    - delay 43
 
-      - partvisibility{m=virinsipede;v=false;p=base} @self
-      - partvisibility{m=virinsipede;v=false;p=section_9} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_9_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_9_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s9} @self
-      - partvisibility{m=virinsipede;v=false;p=tail} @self
-      - partvisibility{m=virinsipede;v=false;p=right_tail_pincer} @self
-      - partvisibility{m=virinsipede;v=false;p=left_tail_pincer} @self
-      - partvisibility{m=virinsipede;v=false;p=ob_hitbox_tail} @self
-      - partvisibility{m=virinsipede;v=false;p=base} @self
-      - partvisibility{m=virinsipede;v=false;p=section_7} @self
-      - partvisibility{m=virinsipede;v=false;p=section_6} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_7_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_7_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s7} @self
-      - partvisibility{m=virinsipede;v=false;p=section_8} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_8_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_8_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s8} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_6_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_6_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s6} @self
-      - partvisibility{m=virinsipede;v=false;p=section_5} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_5_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_5_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s5} @self
-      - partvisibility{m=virinsipede;v=false;p=section_4} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_4_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_4_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s4} @self
-      - partvisibility{m=virinsipede;v=false;p=section_3} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_3_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_3_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s3} @self
-      - partvisibility{m=virinsipede;v=false;p=section_2} @self
-      - partvisibility{m=virinsipede;v=false;p=left_section_2_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=right_section_2_legs} @self
-      - partvisibility{m=virinsipede;v=false;p=size_bone_s2} @self
-      - partvisibility{m=virinsipede;v=false;p=ob_hitbox_head} @self
-      - partvisibility{m=virinsipede;v=false;p=head} @self
-      - partvisibility{m=virinsipede;v=false;p=left_head_leg_1} @self
-      - partvisibility{m=virinsipede;v=false;p=left_head_leg_2} @self
-      - partvisibility{m=virinsipede;v=false;p=left_head_knee} @self
-      - partvisibility{m=virinsipede;v=false;p=right_head_knee} @self
-      - partvisibility{m=virinsipede;v=false;p=right_head_leg_1} @self
-      - partvisibility{m=virinsipede;v=false;p=right_head_leg_2} @self
-      - partvisibility{m=virinsipede;v=false;p=left_pincer} @self
-      - partvisibility{m=virinsipede;v=false;p=right_pincer} @self
-      - partvisibility{m=virinsipede;v=false;p=left_antenna} @self
-      - partvisibility{m=virinsipede;v=false;p=right_antenna} @self
-      - partvisibility{m=virinsipede;v=false;p=face} @self
-      - teleport{spreadh=0;spreadv=0} @targetlocation
-      - skill{s=viricircle;repeat=25;repeati=4} @self
-      - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
-      - delay 5
-      - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
-      - delay 5
-      - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
-      - delay 80
-      - delay 1
-      - state{s=dig_out} @self
+    - partvisibility{m=virinsipede;v=false;p=base} @self
+    - partvisibility{m=virinsipede;v=false;p=section_9} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_9_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_9_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s9} @self
+    - partvisibility{m=virinsipede;v=false;p=tail} @self
+    - partvisibility{m=virinsipede;v=false;p=right_tail_pincer} @self
+    - partvisibility{m=virinsipede;v=false;p=left_tail_pincer} @self
+    - partvisibility{m=virinsipede;v=false;p=ob_hitbox_tail} @self
+    - partvisibility{m=virinsipede;v=false;p=base} @self
+    - partvisibility{m=virinsipede;v=false;p=section_7} @self
+    - partvisibility{m=virinsipede;v=false;p=section_6} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_7_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_7_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s7} @self
+    - partvisibility{m=virinsipede;v=false;p=section_8} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_8_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_8_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s8} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_6_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_6_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s6} @self
+    - partvisibility{m=virinsipede;v=false;p=section_5} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_5_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_5_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s5} @self
+    - partvisibility{m=virinsipede;v=false;p=section_4} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_4_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_4_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s4} @self
+    - partvisibility{m=virinsipede;v=false;p=section_3} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_3_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_3_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s3} @self
+    - partvisibility{m=virinsipede;v=false;p=section_2} @self
+    - partvisibility{m=virinsipede;v=false;p=left_section_2_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=right_section_2_legs} @self
+    - partvisibility{m=virinsipede;v=false;p=size_bone_s2} @self
+    - partvisibility{m=virinsipede;v=false;p=ob_hitbox_head} @self
+    - partvisibility{m=virinsipede;v=false;p=head} @self
+    - partvisibility{m=virinsipede;v=false;p=left_head_leg_1} @self
+    - partvisibility{m=virinsipede;v=false;p=left_head_leg_2} @self
+    - partvisibility{m=virinsipede;v=false;p=left_head_knee} @self
+    - partvisibility{m=virinsipede;v=false;p=right_head_knee} @self
+    - partvisibility{m=virinsipede;v=false;p=right_head_leg_1} @self
+    - partvisibility{m=virinsipede;v=false;p=right_head_leg_2} @self
+    - partvisibility{m=virinsipede;v=false;p=left_pincer} @self
+    - partvisibility{m=virinsipede;v=false;p=right_pincer} @self
+    - partvisibility{m=virinsipede;v=false;p=left_antenna} @self
+    - partvisibility{m=virinsipede;v=false;p=right_antenna} @self
+    - partvisibility{m=virinsipede;v=false;p=face} @self
+    - teleport{spreadh=0;spreadv=0} @targetlocation
+    - skill{s=viricircle;repeat=25;repeati=4} @self
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.1} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.3} @PIR{r=30}
+    - delay 5
+    - sound{s=minecraft:entity.iron_golem.repair;p=0.5} @PIR{r=30}
+    - delay 80
+    - delay 1
+    - state{s=dig_out} @self
 
-      - partvisibility{m=virinsipede;v=true;p=base} @self
-      - partvisibility{m=virinsipede;v=true;p=section_9} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_9_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_9_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s9} @self
-      - partvisibility{m=virinsipede;v=true;p=tail} @self
-      - partvisibility{m=virinsipede;v=true;p=right_tail_pincer} @self
-      - partvisibility{m=virinsipede;v=true;p=left_tail_pincer} @self
-      - partvisibility{m=virinsipede;v=true;p=ob_hitbox_tail} @self
-      - partvisibility{m=virinsipede;v=true;p=base} @self
-      - partvisibility{m=virinsipede;v=true;p=section_7} @self
-      - partvisibility{m=virinsipede;v=true;p=section_6} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_7_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_7_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s7} @self
-      - partvisibility{m=virinsipede;v=true;p=section_8} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_8_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_8_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s8} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_6_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_6_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s6} @self
-      - partvisibility{m=virinsipede;v=true;p=section_5} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_5_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_5_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s5} @self
-      - partvisibility{m=virinsipede;v=true;p=section_4} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_4_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_4_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s4} @self
-      - partvisibility{m=virinsipede;v=true;p=section_3} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_3_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_3_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s3} @self
-      - partvisibility{m=virinsipede;v=true;p=section_2} @self
-      - partvisibility{m=virinsipede;v=true;p=left_section_2_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=right_section_2_legs} @self
-      - partvisibility{m=virinsipede;v=true;p=size_bone_s2} @self
-      - partvisibility{m=virinsipede;v=true;p=ob_hitbox_head} @self
-      - partvisibility{m=virinsipede;v=true;p=head} @self
-      - partvisibility{m=virinsipede;v=true;p=left_head_leg_1} @self
-      - partvisibility{m=virinsipede;v=true;p=left_head_leg_2} @self
-      - partvisibility{m=virinsipede;v=true;p=left_head_knee} @self
-      - partvisibility{m=virinsipede;v=true;p=right_head_knee} @self
-      - partvisibility{m=virinsipede;v=true;p=right_head_leg_1} @self
-      - partvisibility{m=virinsipede;v=true;p=right_head_leg_2} @self
-      - partvisibility{m=virinsipede;v=true;p=left_pincer} @self
-      - partvisibility{m=virinsipede;v=true;p=right_pincer} @self
-      - partvisibility{m=virinsipede;v=true;p=left_antenna} @self
-      - partvisibility{m=virinsipede;v=true;p=right_antenna} @self
-      - partvisibility{m=virinsipede;v=true;p=face} @self
-      - skill{s=virishock} @Self
-      - delay 20
-      - setAI{ai=true} @self
+    - partvisibility{m=virinsipede;v=true;p=base} @self
+    - partvisibility{m=virinsipede;v=true;p=section_9} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_9_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_9_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s9} @self
+    - partvisibility{m=virinsipede;v=true;p=tail} @self
+    - partvisibility{m=virinsipede;v=true;p=right_tail_pincer} @self
+    - partvisibility{m=virinsipede;v=true;p=left_tail_pincer} @self
+    - partvisibility{m=virinsipede;v=true;p=ob_hitbox_tail} @self
+    - partvisibility{m=virinsipede;v=true;p=base} @self
+    - partvisibility{m=virinsipede;v=true;p=section_7} @self
+    - partvisibility{m=virinsipede;v=true;p=section_6} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_7_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_7_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s7} @self
+    - partvisibility{m=virinsipede;v=true;p=section_8} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_8_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_8_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s8} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_6_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_6_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s6} @self
+    - partvisibility{m=virinsipede;v=true;p=section_5} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_5_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_5_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s5} @self
+    - partvisibility{m=virinsipede;v=true;p=section_4} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_4_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_4_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s4} @self
+    - partvisibility{m=virinsipede;v=true;p=section_3} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_3_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_3_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s3} @self
+    - partvisibility{m=virinsipede;v=true;p=section_2} @self
+    - partvisibility{m=virinsipede;v=true;p=left_section_2_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=right_section_2_legs} @self
+    - partvisibility{m=virinsipede;v=true;p=size_bone_s2} @self
+    - partvisibility{m=virinsipede;v=true;p=ob_hitbox_head} @self
+    - partvisibility{m=virinsipede;v=true;p=head} @self
+    - partvisibility{m=virinsipede;v=true;p=left_head_leg_1} @self
+    - partvisibility{m=virinsipede;v=true;p=left_head_leg_2} @self
+    - partvisibility{m=virinsipede;v=true;p=left_head_knee} @self
+    - partvisibility{m=virinsipede;v=true;p=right_head_knee} @self
+    - partvisibility{m=virinsipede;v=true;p=right_head_leg_1} @self
+    - partvisibility{m=virinsipede;v=true;p=right_head_leg_2} @self
+    - partvisibility{m=virinsipede;v=true;p=left_pincer} @self
+    - partvisibility{m=virinsipede;v=true;p=right_pincer} @self
+    - partvisibility{m=virinsipede;v=true;p=left_antenna} @self
+    - partvisibility{m=virinsipede;v=true;p=right_antenna} @self
+    - partvisibility{m=virinsipede;v=true;p=face} @self
+    - skill{s=virishock} @Self
+    - delay 20
+    - setAI{ai=true} @self
 viricircle:
   Conditions:
   Cooldown:
   Skills:
-      - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=6;points=50} @self
-      - particles{p=blockcrack;amount=40;hS=4;vS=1;material=DIRT;repeat=10;repeati=4} @self
-      - particles{p=blockcrack;amount=40;hS=4;vS=1;material=STONE;repeat=10;repeati=4} @self
-      - particles{p=blockcrack;amount=40;hS=4;vS=1;material=SAND;repeat=10;repeati=4} @self
+    - effect:particlering{p=reddust;color=#2ce8f5;a=2;y=0.2;r=6;points=50} @self
+    - particles{p=blockcrack;amount=40;hS=4;vS=1;material=DIRT;repeat=10;repeati=4} @self
+    - particles{p=blockcrack;amount=40;hS=4;vS=1;material=STONE;repeat=10;repeati=4} @self
+    - particles{p=blockcrack;amount=40;hS=4;vS=1;material=SAND;repeat=10;repeati=4} @self
 
 
 virishock:
   Skills:
-      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=6}
-      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=6}
+    - throw{velocity=20;velocityY=5} @PlayersInRadius{r=6}
+    - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=6}
 
-      - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
-      - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self
-      - effect:sound{s=block.anvil.land;volume=0.5;pitch=0.8} @Self
-      - effect:sound{s=block.end_portal_frame.fill;volume=0.8;pitch=1.5} @Self
-      - effect:sound{s=entity.illusioner.mirror_move;volume=0.6;pitch=1.0} @Self
-      - effect:sound{s=entity.wither.break_block;volume=0.5;pitch=1.1} @Self
-      - particles{p=blockcrack;amount=100;hS=3;vS=3;material=DIRT} @Self
-      - particles{p=explosion_emitter;amount=10;hS=2;vS=2} @Self
-      - particles{p=blockdust;amount=50;material=SAND;hS=3;vS=3} @Self
+    - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
+    - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self
+    - effect:sound{s=block.anvil.land;volume=0.5;pitch=0.8} @Self
+    - effect:sound{s=block.end_portal_frame.fill;volume=0.8;pitch=1.5} @Self
+    - effect:sound{s=entity.illusioner.mirror_move;volume=0.6;pitch=1.0} @Self
+    - effect:sound{s=entity.wither.break_block;volume=0.5;pitch=1.1} @Self
+    - particles{p=blockcrack;amount=100;hS=3;vS=3;material=DIRT} @Self
+    - particles{p=explosion_emitter;amount=10;hS=2;vS=2} @Self
+    - particles{p=blockdust;amount=50;material=SAND;hS=3;vS=3} @Self
 
-      - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
-      - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
-      - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
+    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
+    - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
+    - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
 
 
 leaflizardDisguise:
   Cooldown: 10
   Conditions:
-  - targetwithin{d=5}
-  - moving{} true
+    - targetwithin{d=5}
+    - moving{} true
   Skills:
-  - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
-  - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master} @self
-  - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master} @self
-  - effect:particles{particle=falling_spore_blossom;a=30;hs=0.9;vs=0.04;y=0.2;repeat=2;repeatInterval=1} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=torso} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=head} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=backtorso} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=frontarml} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=frontarmr} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=reararml} @self
-  - partvisibility{m=qmob_leafLizard;v=false;p=reararmr} @self
-  - setstance{s=hiding} @self
-  - delay <random.160to200>
-  - partvisibility{m=qmob_leafLizard;v=true;p=torso} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=head} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=backtorso} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=frontarml} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=frontarmr} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=reararml} @self
-  - partvisibility{m=qmob_leafLizard;v=true;p=reararmr} @self
-  - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master;sync=true} @self
-  - setstance{s=clear} @self
+    - sound{s=item.dye.use;p=0.5;v=0.82;sc=master} @self
+    - sound{s=block.candle.extinguish;p=0.5;v=0.82;sc=master} @self
+    - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master} @self
+    - effect:particles{particle=falling_spore_blossom;a=30;hs=0.9;vs=0.04;y=0.2;repeat=2;repeatInterval=1} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=torso} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=head} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=backtorso} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=frontarml} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=frontarmr} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=reararml} @self
+    - partvisibility{m=qmob_leafLizard;v=false;p=reararmr} @self
+    - setstance{s=hiding} @self
+    - delay <random.160to200>
+    - partvisibility{m=qmob_leafLizard;v=true;p=torso} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=head} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=backtorso} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=frontarml} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=frontarmr} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=reararml} @self
+    - partvisibility{m=qmob_leafLizard;v=true;p=reararmr} @self
+    - sound{s=entity.frog.ambient;p=1.9;v=0.82;sc=master;sync=true} @self
+    - setstance{s=clear} @self
 
 leaflizardInvis:
   Cooldown: 0.0
   Conditions:
-  - stance{s=hiding} true
+    - stance{s=hiding} true
   Skills:
-  - potion{t=INVISIBILITY;l=0;force=true;p=false;d=10} @self
-  - potion{t=SPEED;l=4;force=true;p=false;d=15} @self
+    - potion{t=INVISIBILITY;l=0;force=true;p=false;d=10} @self
+    - potion{t=SPEED;l=4;force=true;p=false;d=15} @self
 
 
 qmob_leaflizardstep:
   Cooldown: 0
   Conditions:
-  - onground{} true
+    - onground{} true
   Skills:
-  - sound{s=entity.frog.tongue;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
-  - sound{s=entity.frog.eat;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
+    - sound{s=entity.frog.tongue;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
+    - sound{s=entity.frog.eat;sc=master;p=<random.float.1.9to2.0>;v=0.8} @self
 
 bloodEffectleaflizard:
   Cooldown: 0.1
   Skills:
-  - effect:particles{particle=block;m=red_concrete_powder;a=3;hs=0.4;vs=0.1;s=0} #
-  - effect:particles{particle=block;m=red_nether_bricks;a=3;hs=0.15;vs=0.1;s=0}    # Simple blood effect
-  - effect:particles{particle=block;m=nether_wart_block;a=5;hs=0.15;vs=0.1;s=0}    # Remove if there are
-  - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.15;vs=0.15;s=0}       # children or otherwise.
+    - effect:particles{particle=block;m=red_concrete_powder;a=3;hs=0.4;vs=0.1;s=0} #
+    - effect:particles{particle=block;m=red_nether_bricks;a=3;hs=0.15;vs=0.1;s=0}    # Simple blood effect
+    - effect:particles{particle=block;m=nether_wart_block;a=5;hs=0.15;vs=0.1;s=0}    # Remove if there are
+    - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.15;vs=0.15;s=0}       # children or otherwise.
 
 leaflizardHurt:
   Cooldown: 0.3
   Skills:
-  - sound{s=entity.frog.hurt;sc=master;p=<random.float.1.9to2.0>;v=1.1} @self
-  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
-  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
-  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
-  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
-  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
-  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
-  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
-  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+    - sound{s=entity.frog.hurt;sc=master;p=<random.float.1.9to2.0>;v=1.1} @self
+    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+    - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
 
 leaflizardDeath:
   Cooldown: 0.3
   Skills:
-  - sound{s=entity.frog.death;sc=master;p=<random.float.1.8to1.9>;v=1.1} @self
-  - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=5;repeatInterval=1} @self
+    - sound{s=entity.frog.death;sc=master;p=<random.float.1.8to1.9>;v=1.1} @self
+    - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=5;repeatInterval=1} @self

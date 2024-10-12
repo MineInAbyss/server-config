@@ -35,16 +35,16 @@ corpse_weeper:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-#    - skill{s=corpseweeperspawn} @self ~onSpawn
-  # - CancelEvent{sync=true} ~onAttack
-  # - skill{s=Damage_3} @self ~onAttack
+    #    - skill{s=corpseweeperspawn} @self ~onSpawn
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=corpse_weeper;c=15} @self ~onSpawn
     - bodyclamp{m=corpse_weeper;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.7} @self ~onSpawn
     - state{mid=corpse_weeper;s=attack} @self ~onAttack
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
     - effect:sound{s=mineinabyss:entity.corpseweeper.ambient;v=6;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.corpseweeper.death;v=6;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.corpseweeper.cry;v=6;p=0.8} @self ~onCry
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

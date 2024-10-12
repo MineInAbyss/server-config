@@ -26,6 +26,6 @@ hamashirama:
   Drops:
     - exp 20-25
     - geary mineinabyss:hamashirama_raw 1-2 0.6
-  Skill: 
+  Skill:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

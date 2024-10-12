@@ -8,4 +8,4 @@ l5_stingerheadnest:
         amount: 2
 
 
-l5_stingerheadspawn: { inherit: l5_stingerheadnest, type: mm:Stingerhead}    
+l5_stingerheadspawn: { inherit: l5_stingerheadnest, type: mm:Stingerhead }

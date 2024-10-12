@@ -27,19 +27,19 @@ cyatoria:
     Drive: false
     DamageTint: true
     Scale: 0.8
-  Drops: 
+  Drops:
     - exp 25-45
     - geary mineinabyss:cyatoria_drumstick_raw 1-2
     - geary mineinabyss:cyatoria_feather 1-4 0.7
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-  # - CancelEvent{sync=true} ~onAttack
-  # - skill{s=Damage_3} @self ~onAttack
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=cyatoria;c=15} @self ~onSpawn
     - bodyclamp{m=cyatoria;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.1} @self ~onSpawn
     - state{mid=cyatoria;s=attack} @self ~onAttack
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=displayHealth} ~onDamaged  
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

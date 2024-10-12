@@ -27,10 +27,10 @@ hagamizukin:
     - geary mineinabyss:hagamizukin_tooth 1-2 0.6
     - geary mineinabyss:hagamizukin_raw 1-2 0.6
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - state{mid=hagamizukin;s=attack} @self ~onAttack
-  ####### Misc
+    ####### Misc
     - model{mid=hagamizukin} @self ~onSpawn
     - look{immediately=true} @targetLocation ~onTimer:10
     - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}

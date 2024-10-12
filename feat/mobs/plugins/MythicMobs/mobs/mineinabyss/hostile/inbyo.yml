@@ -37,7 +37,7 @@ inbyo:
 
   Skills:
     - state{mid=inbyo;s=attack} @self ~onAttack
-#    - skill{s=inbyospawn} @self ~onspawn
+    #    - skill{s=inbyospawn} @self ~onspawn
     - skill{s=inbyopoop} @target ~onTimer:20
     - effect:sound{s=mineinabyss:entity.inbyo.ambient;v=6;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.inbyo.death;v=6;p=0.8} @self ~onDeath

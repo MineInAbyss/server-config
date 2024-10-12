@@ -20,7 +20,6 @@ fuwagi:
     interactable: true
     MovementSpeed: 0.25
     PreventOtherDrops: true
-    Silent: true
   Model:
     Id: fuwagi
     ViewRadius: 64
@@ -35,6 +34,6 @@ fuwagi:
     - effect:sound{s=mineinabyss:fuwagi;v=6;p=0.2} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.fuwagi.death;v=6;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.fuwagi.hurt;v=6;p=0.2} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
 #    - skill{s=fuwagispawn} @self ~onspawn

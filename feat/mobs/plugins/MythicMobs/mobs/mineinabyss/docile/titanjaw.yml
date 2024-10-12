@@ -32,17 +32,17 @@ titanjaw:
     DamageTint: true
     Scale: 2.5
   Drops:
-  - exp 20-25
-  - geary mineinabyss:titanjaw_pearl 1 0.2
-  - geary mineinabyss:titanjaw_scale 1-2 0.6
+    - exp 20-25
+    - geary mineinabyss:titanjaw_pearl 1 0.2
+    - geary mineinabyss:titanjaw_scale 1-2 0.6
   Skills:
-  ####### Misc
-  - skill{s=displayHealth} ~onDamaged
-  - skill{s=tj_backup} @self ~ondamaged
-  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=tjHurt} @self ~onHurt
-  - skill{s=tjDeath} @self ~onDeath
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 baby_titanjaw:
   Type: RAVAGER
@@ -69,7 +69,7 @@ baby_titanjaw:
     - clear
     - attacker
   Equipment:
-  - diamond_axe HAND
+    - diamond_axe HAND
   DamageModifiers:
   Model:
     Id: titanjaw
@@ -78,11 +78,11 @@ baby_titanjaw:
     DamageTint: true
     Scale: 1
   Skills:
-  ####### Misc
-  - CancelEvent{sync=true} @self ~onAttack
-  - CancelEvent{sync=true} @self ~onInteract
-  - skill{s=tj_backup} @self ~ondamaged
-  - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=tjHurt} @self ~onHurt
-  - skill{s=tjDeath} @self ~onDeath
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    ####### Misc
+    - CancelEvent{sync=true} @self ~onAttack
+    - CancelEvent{sync=true} @self ~onInteract
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

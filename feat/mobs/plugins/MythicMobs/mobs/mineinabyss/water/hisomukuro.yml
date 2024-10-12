@@ -28,13 +28,13 @@ hisomukuro:
     - exp 20-30
     - BONE 0-5 1 1
     - geary mineinabyss:hisomukuro_rib 2-6 0.7
-  Skills: 
+  Skills:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged
     - skill{s=HS_ball} @target ~onTimer:20
     - skill{s=HS_charge} @self ~onTimer:1
     - skill{s=HSAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - setstance{stance=hscharge} @self ~onspawn
-   # - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
-   # - skill{s=HS_grab} @self ~oninteract
+    # - effect:sound{s=entity.polar_bear.warning;v=5;p=1} @self ~onspawn
+    # - skill{s=HS_grab} @self ~oninteract
     - skill:MIAPetExpNearby{exp=1} ~onDeath

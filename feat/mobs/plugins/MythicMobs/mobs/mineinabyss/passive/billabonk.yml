@@ -19,7 +19,7 @@ billabonk:
     - geary mineinabyss:billabonk_leg_raw 1-2 0.6
     - lily_pad 1-2 0.4
   Health: 20 # change this
-  Damage: 0 
+  Damage: 0
   Options:
     PreventOtherDrops: true
     Silent: true    #MovementSpeed: 0.25
@@ -31,7 +31,7 @@ billabonk:
     Drive: false
     DamageTint: true
   Skills:
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.death;v=6;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.hurt;v=6;p=0.2} @self ~onDamaged

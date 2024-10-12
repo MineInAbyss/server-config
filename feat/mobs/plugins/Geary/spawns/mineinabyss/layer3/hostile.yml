@@ -3,9 +3,9 @@ l3_hostile:
   position: GROUND
   priority: 0.00025
   regions: [ layerthree ]
-  #conditions:
-   # - mythicConditions:
-   #     - lightlevelfromblocks{l=0}
+    #conditions:
+    # - mythicConditions:
+  #     - lightlevelfromblocks{l=0}
 
 l3_ottobas:
   inherit: l3_hostile

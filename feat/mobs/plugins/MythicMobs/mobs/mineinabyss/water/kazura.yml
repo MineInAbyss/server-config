@@ -28,6 +28,6 @@ kazura:
   Drops:
     - exp 10-15
     - geary mineinabyss:kazura_squid_ink_sac 1-2 0.8
-  Skill: 
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-  - skill{s=displayHealth} ~onDamaged
+  Skill:
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=displayHealth} ~onDamaged

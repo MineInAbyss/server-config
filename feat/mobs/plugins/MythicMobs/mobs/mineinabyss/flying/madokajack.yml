@@ -37,15 +37,15 @@ madokajack:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-  # - CancelEvent{sync=true} ~onAttack
-  # - skill{s=Damage_5} @self ~onAttack
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=madokajack;c=15} @self ~onSpawn
     - bodyclamp{m=madokajack;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.3} @self ~onSpawn
     - state{mid=madokajack;s=attack} @self ~onAttack
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
     - effect:sound{s=mineinabyss:entity.madokajack.ambient;v=6;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.madokajack.death;v=6;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.madokajack.hurt;v=6;p=0.8} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

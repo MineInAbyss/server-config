@@ -40,7 +40,7 @@ chikyuoebi:
     - GRAVEL 2-4 0.601
     - EMERALD 1 0.05
   Skills:
-  # - CancelEvent{sync=true} ~onAttack
+    # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=chikyuoebi;c=15} @self ~onSpawn
     - bodyclamp{m=chikyuoebi;c=15} @self ~onLoad
     - DefaultState{m=chikyuoebi;t=idle;s=idle} @self ~onEnterCombat
@@ -51,14 +51,14 @@ chikyuoebi:
     - skill{s=ch_Attack} @self ~onattack
     - skill{s=digattack} @self ~onTimer:10
     - skill{s=digattackfail} @self ~ondamaged
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
-   # - skill{s=hc_backup} @self ~ondamaged
-   # - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    # - skill{s=hc_backup} @self ~ondamaged
+    # - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=hcHurt} @self ~onHurt
-#    - skill{s=hcDeath} @self ~onDeath
+    #    - skill{s=hcDeath} @self ~onDeath
 
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=2} ~onDeath
 
 

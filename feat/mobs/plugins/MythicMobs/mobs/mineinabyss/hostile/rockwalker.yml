@@ -34,8 +34,8 @@ rockwalker:
     - exp 10-15
     - geary mineinabyss:rockwalker_mandible 1-2 0.8
   Skills:
-  ####### Misc
-    - skill{s=displayHealth} ~onDamaged  
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=hs_backup} @self ~ondamaged
