@@ -7,7 +7,7 @@ hisoishi:
   Health: 25 # change this
   Damage: 0
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     KnockbackResistance: 0.6
     Collidable: true
     Silent: true
@@ -28,7 +28,6 @@ hisoishi:
     - attacker
   Equipment:
     - diamond_axe HAND
-  DamageModifiers:
   Model:
     Id: hisoishi
     ViewRadius: 64
@@ -67,7 +66,7 @@ baby_hisoishi:
   Health: 40 # change this
   Damage: 4
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     KnockbackResistance: 0.6
     DigOutOfGround: true
     Collidable: true
@@ -85,7 +84,6 @@ baby_hisoishi:
     - attacker
   Equipment:
     - diamond_axe HAND
-  DamageModifiers:
   Model:
     Id: hisoishi
     ViewRadius: 64

@@ -19,7 +19,7 @@ hagamizukin:
     Silent: false
     FollowRange: 25
     MovementSpeed: 1.1
-    interactable: false
+    Interactable: true
     PreventOtherDrops: true
   Drops:
     - exp 15-20

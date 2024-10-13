@@ -21,7 +21,7 @@ woodcrier:
     MaxCombatDistance: 128
     LockPitch: true
     Silent: true
-    Interactable: false
+    Interactable: true
     MovementSpeed: 0.35
     PreventSunburn: true
     PreventOtherDrops: true
@@ -92,7 +92,7 @@ horncrier:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
-    Interactable: false
+    Interactable: true
     MovementSpeed: 0.45
     Silent: true
     PreventSunburn: true

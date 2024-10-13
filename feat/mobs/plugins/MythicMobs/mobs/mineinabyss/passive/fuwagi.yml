@@ -17,7 +17,7 @@ fuwagi:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.25
     PreventOtherDrops: true
   Model:

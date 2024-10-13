@@ -19,7 +19,7 @@ chikyuoebi:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
-    Interactable: false
+    Interactable: true
     MovementSpeed: 0.3
     Silent: true
     PreventSunburn: true

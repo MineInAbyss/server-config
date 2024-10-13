@@ -24,7 +24,6 @@ tesuchi:
     - exp 5-10
     - geary mineinabyss:tesuchi_tail 1
     - geary mineinabyss:tesuchi_scales 1-3 0.8
-  DamageModifiers:
   Model:
     Id: leaflizard
     ViewRadius: 64

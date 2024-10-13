@@ -11,7 +11,7 @@ kuongatari:
     - randomstroll
     - randomlookaround
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     KnockbackResistance: 0.2
     #DigOutOfGround: true
     Collidable: true
@@ -56,7 +56,7 @@ kuongatari_summon:
     - attacker
     - players
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     PreventOtherDrops: true
     KnockbackResistance: 0
     #DigOutOfGround: true

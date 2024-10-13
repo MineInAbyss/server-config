@@ -22,7 +22,6 @@ shroombear:
     MovementSpeed: 0.22
     DigOutOfGround: true
     PreventOtherDrops: true
-  DamageModifiers:
   Model:
     Id: qmob_shroombear
     ViewRadius: 64
@@ -59,7 +58,6 @@ baby_shroombear:
     Silent: true
     FollowRange: 10
     MovementSpeed: 0.18
-  DamageModifiers:
   Model:
     Id: qmob_shroombear
     ViewRadius: 64

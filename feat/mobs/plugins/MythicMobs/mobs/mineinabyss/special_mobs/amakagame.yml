@@ -17,7 +17,7 @@ amakagame:
     KnockbackResistance: 1
     Collidable: true
     Silent: true
-    interactable: true
+    Interactable: true
     MovementSpeed: 0
     PreventOtherDrops: true
   Model:

@@ -11,7 +11,6 @@ buroguro:
   Faction: glowfly
   Options:
     Silent: true
-    ShowName: false
     MovementSpeed: 0.46
     KnockbackResistance: 1
     FollowRange: 32
@@ -19,8 +18,7 @@ buroguro:
     PreventOtherDrops: true
     PreventRandomEquipment: true
     PreventItemPickup: true
-  ThreatTable:
-    Enabled: true
+    UseThreatTable: true
   AIGoalSelectors:
     - clear
     - meleeattack

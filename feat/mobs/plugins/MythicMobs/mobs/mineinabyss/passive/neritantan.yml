@@ -17,14 +17,13 @@ neritantan:
   Options:
     Collidable: true
     Silent: true
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.25
+    PreventOtherDrops: true
   Model:
     Id: neritantan
     ViewRadius: 64
     DamageTint: true
-    PreventOtherDrops: true
-    Silent: true
   Drops:
     - exp 5-10
     - geary mineinabyss:neritantan_meat_raw 1-2 0.6

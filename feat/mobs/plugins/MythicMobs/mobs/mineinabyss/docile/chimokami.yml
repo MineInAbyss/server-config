@@ -18,7 +18,7 @@ chimokami:
     Collidable: true
     Silent: true
     FollowRange: 5
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.3
     DigOutOfGround: true
     PreventOtherDrops: true

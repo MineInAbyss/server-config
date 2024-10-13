@@ -17,9 +17,9 @@ sakuranbo:
   Options:
     Collidable: true
     Silent: true
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.3
-    KnockbackRessistance: 0.2
+    KnockbackResistance: 0.2
     PreventOtherDrops: true
   Model:
     Id: sakuranbo

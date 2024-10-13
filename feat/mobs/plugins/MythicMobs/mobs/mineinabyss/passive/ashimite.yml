@@ -19,7 +19,7 @@ ashimite:
     Color: LIGHT_BLUE
     Silent: true
     FollowRange: 48
-    interactable: true
+    Interactable: true
     PreventOtherDrops: true
     #MovementSpeed: 0.25
   Drops:
@@ -63,8 +63,8 @@ baby_ashimite:
     Color: LIGHT_BLUE
     Silent: true
     FollowRange: 48
-    interactable: false
-    Preventotherdrops: true
+    Interactable: true
+    PreventOtherDrops: true
     #MovementSpeed: 0.25"
   Drops:
     - exp 1-10

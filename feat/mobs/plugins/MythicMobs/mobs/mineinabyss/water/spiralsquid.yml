@@ -16,7 +16,7 @@ spiralsquid:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.2
     PreventOtherDrops: true
   Model:
@@ -27,6 +27,6 @@ spiralsquid:
     - exp 5-10
     - ink_sac 1-2
     - geary mineinabyss:spiralsquid_raw 1-2 0.6
-  Skill:
+  Skills:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

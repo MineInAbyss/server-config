@@ -24,7 +24,6 @@ billabonk:
     PreventOtherDrops: true
     Silent: true    #MovementSpeed: 0.25
     MovementSpeed: 0.3
-  DamageModifiers:
   Model:
     Id: billabonk
     ViewRadius: 64

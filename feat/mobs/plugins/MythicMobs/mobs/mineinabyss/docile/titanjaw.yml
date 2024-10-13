@@ -7,7 +7,7 @@ titanjaw:
   Damage: 8
   Display: "<#3C3B4A>Titanjaw"
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     PreventOtherDrops: true
     KnockbackResistance: 0.6
     DigOutOfGround: true
@@ -24,7 +24,6 @@ titanjaw:
   AITargetSelectors:
     - clear
     - attacker
-  DamageModifiers:
   Model:
     Id: titanjaw
     ViewRadius: 64
@@ -52,7 +51,7 @@ baby_titanjaw:
   Damage: 4
   Display: "<#3C3B4A>Titanjaw baby"
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     KnockbackResistance: 0.6
     DigOutOfGround: true
     Collidable: true
@@ -70,7 +69,6 @@ baby_titanjaw:
     - attacker
   Equipment:
     - diamond_axe HAND
-  DamageModifiers:
   Model:
     Id: titanjaw
     ViewRadius: 64

@@ -17,7 +17,7 @@ hisomukuro:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: false
+    Interactable: true
     MovementSpeed: 0.6
     PreventOtherDrops: true
   Model:

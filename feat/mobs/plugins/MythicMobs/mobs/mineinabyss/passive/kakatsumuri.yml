@@ -18,7 +18,7 @@ kakatsumuri:
     PreventOtherDrops: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.2
   Model:
     Id: kakatsumuri

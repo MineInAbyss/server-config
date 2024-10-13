@@ -18,7 +18,7 @@ ikenosuke:
     FollowRange: 25
     MovementSpeed: 0.4
     KnockbackResistance: 0.0
-    interactable: false
+    Interactable: true
     PreventOtherDrops: true
   Drops: # put stuff here
     - exp 5-15

@@ -16,8 +16,7 @@ kazura:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
-    followRange: 10
+    Interactable: true
     MovementSpeed: 0.2
     PreventOtherDrops: true
   Model:
@@ -28,6 +27,6 @@ kazura:
   Drops:
     - exp 10-15
     - geary mineinabyss:kazura_squid_ink_sac 1-2 0.8
-  Skill:
+  Skills:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

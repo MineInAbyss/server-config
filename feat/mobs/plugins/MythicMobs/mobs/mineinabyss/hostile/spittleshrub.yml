@@ -7,7 +7,6 @@ spittleshrub:
   Options:
     PreventSunburn: true
     PreventJockeyMounts: true
-    ShowName: false
     Silent: true
     MovementSpeed: 0.34
     KnockbackResistance: 1
@@ -16,8 +15,7 @@ spittleshrub:
     PreventOtherDrops: true
     PreventRandomEquipment: true
     PreventItemPickup: true
-  ThreatTable:
-    Enabled: true
+    UseThreatTable: true
   DamageModifiers:
     - LAVA 5
     - LAVA_TICK 5

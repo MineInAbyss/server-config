@@ -18,7 +18,7 @@ edusan:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.3
     PreventOtherDrops: true
   Model:
@@ -29,6 +29,6 @@ edusan:
     - exp 15-20
     - geary mineinabyss:edusan_scale 1-18 1
     - geary mineinabyss:edusan_whisker 1 0.2
-  Skill:
+  Skills:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

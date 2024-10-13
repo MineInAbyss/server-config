@@ -21,7 +21,7 @@ splitjaw:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
-    Interactable: false
+    Interactable: true
     # MovementSpeed: 0.6
     PreventSunburn: true
     PreventOtherDrops: true

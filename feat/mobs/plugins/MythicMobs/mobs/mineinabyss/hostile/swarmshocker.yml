@@ -21,14 +21,13 @@ swarmshocker:
     FollowRange: 10
     MovementSpeed: 0.4
     KnockbackResistance: 0.0
-    interactable: false
+    Interactable: true
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true
   Drops:
     - exp 5-15
     - geary mineinabyss:swarmshocker_charged_powder 1 0.3
-  DamageModifiers:
   Model:
     Id: swarmshocker
     ViewRadius: 64
@@ -69,12 +68,11 @@ swarmhoarder:
     FollowRange: 10
     MovementSpeed: 0.3
     KnockbackResistance: 0.6
-    interactable: false
+    Interactable: true
   Drops:
     - exp 20-35
     - geary mineinabyss:swarmshocker_charged_powder 1-2 0.6
     - geary mineinabyss:swarmshocker_jelly 1-2 0.6
-  DamageModifiers:
   Model:
     Id: swarmshockermid
     ViewRadius: 64

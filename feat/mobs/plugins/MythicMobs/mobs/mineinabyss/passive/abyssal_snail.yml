@@ -18,8 +18,7 @@ abyssal_snail:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
-    Preventotherdrops: true
+    Interactable: true
     MovementSpeed: 0.1
     PreventOtherDrops: true
   Model:

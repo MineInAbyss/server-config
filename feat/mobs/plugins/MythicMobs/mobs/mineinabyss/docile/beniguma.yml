@@ -18,7 +18,7 @@ beniguma:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.3
     DigOutOfGround: true
     PreventOtherDrops: true

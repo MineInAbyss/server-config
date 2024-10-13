@@ -1,5 +1,5 @@
 virinsipede:
-  Type: zombie
+  Type: ZOMBIE
   SpawnCategory: uncommon
   Display: "<#C42D2D>Virinsipede"
   Health: 150
@@ -20,7 +20,7 @@ virinsipede:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
-    Interactable: false
+    Interactable: true
     MovementSpeed: 0.3
     Silent: true
     PreventSunburn: true

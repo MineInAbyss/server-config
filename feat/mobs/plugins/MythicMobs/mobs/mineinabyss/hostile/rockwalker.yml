@@ -7,7 +7,7 @@ rockwalker:
   Health: 25 # change this
   Damage: 6
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     KnockbackResistance: 0.6
     Collidable: true
     Silent: true
@@ -23,8 +23,6 @@ rockwalker:
   AITargetSelectors:
     - clear
     - attacker
-  Equipment:
-  DamageModifiers:
   Model:
     Id: rockwalker
     ViewRadius: 64

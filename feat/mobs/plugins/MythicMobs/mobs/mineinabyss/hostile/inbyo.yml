@@ -20,9 +20,8 @@ inbyo:
     Collidable: true
     Silent: true
     FollowRange: 64
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.25
-    attackKnockback: 1
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true

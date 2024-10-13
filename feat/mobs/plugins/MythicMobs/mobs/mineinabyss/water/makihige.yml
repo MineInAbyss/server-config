@@ -17,7 +17,7 @@ makihige:
     KnockbackResistance: 0.2
     Collidable: true
     Silent: true
-    interactable: true
+    Interactable: true
     DigOutOfGround: true
     MovementSpeed: 0.2
     PreventOtherDrops: true

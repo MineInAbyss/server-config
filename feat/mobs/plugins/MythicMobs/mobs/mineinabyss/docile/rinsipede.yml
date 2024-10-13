@@ -1,5 +1,5 @@
 rinsipede:
-  Type: spider
+  Type: SPIDER
   SpawnCategory: passive
   Modules:
     ThreatTable: true
@@ -7,7 +7,7 @@ rinsipede:
   Damage: 5
   Display: "<#FFFF99>Rinsipede"
   Options:
-    PreventSunBurn: true
+    PreventSunburn: true
     PreventOtherDrops: true
     KnockbackResistance: 0.6
     DigOutOfGround: true
@@ -24,7 +24,6 @@ rinsipede:
   AITargetSelectors:
     - clear
     - attacker
-  DamageModifiers:
   Model:
     Id: rinsipede
     ViewRadius: 64

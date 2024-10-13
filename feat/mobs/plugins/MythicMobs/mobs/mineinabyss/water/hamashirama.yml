@@ -16,7 +16,7 @@ hamashirama:
     Collidable: true
     Silent: true
     FollowRange: 20
-    interactable: true
+    Interactable: true
     MovementSpeed: 0.2
     PreventOtherDrops: true
   Model:
@@ -26,6 +26,6 @@ hamashirama:
   Drops:
     - exp 20-25
     - geary mineinabyss:hamashirama_raw 1-2 0.6
-  Skill:
+  Skills:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

@@ -22,12 +22,11 @@ demonfish:
     Silent: false
     FollowRange: 25
     MovementSpeed: 0.6
-    Interactable: false
+    Interactable: true
     KnockbackResistance: 0.0
     PreventOtherDrops: true
   Drops:
     - geary mineinabyss:demonfish_raw 1-2 0.6
-  DamageModifiers:
   Model:
     Id: qmob_demonfish
     ViewRadius: 64
