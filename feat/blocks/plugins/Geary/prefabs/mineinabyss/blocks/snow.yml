@@ -1,11 +1,10 @@
-namespaces: [geary, blocky]
 blocky:sound:
   placeSound: block.snow.place
   breakSound: block.snow.break
   stepSound: block.snow.step
   hitSound: block.snow.hit
   fallSound: block.snow.fall
-breaking:
+blocky:breaking:
   hardness: 0.8
   modifiers:
     heldItems:

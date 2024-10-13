@@ -1,24 +1,23 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
-    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 2 }
       entries:
-        - !<minecraft:item>
+        - type: minecraft:item
           name: minecraft:golden_apple
       conditions:
-        - !<minecraft:random_chance> { chance: 0.5 }
+        - { type: minecraft:random_chance, chance: 0.5 }
     - entries:
-        - !<mineinabyss:item>
+        - type: mineinabyss:item
           item:
             type: POTION
             basePotionType: minecraft:regeneration
       conditions:
-        - !<minecraft:random_chance> { chance: 0.75 }
+        - { type: minecraft:random_chance, chance: 0.75 }
     - entries:
-        - !<mineinabyss:item>
+        - type: mineinabyss:item
           item: mineinabyss:parasitic_watershrooms
       conditions:
-        - !<minecraft:random_chance> { chance: 0.75 }
+        - { type: minecraft:random_chance, chance: 0.75 }
       functions:
-        - !<minecraft:set_count>
-          count: !<minecraft:uniform> { min: 2, max: 6 }
+        - type: minecraft:set_count
+          count: { type: minecraft:uniform, min: 2, max: 6 }

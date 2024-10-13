@@ -1,6 +1,4 @@
-namespaces: [ geary ]
-prevent.*:
-  interaction:
-    type: [ RIGHT_CLICK ]
-  regeneration:
-    reason: [ REGEN ]
+prevent.interaction:
+  type: [ RIGHT_CLICK ]
+prevent.regeneration:
+  reason: [ REGEN ]

@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:snow]
 set.item:
   item:
@@ -8,9 +7,9 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 45
-pack:
+blocky:pack:
   model: "mineinabyss:block/snow/polished_packed_ice"
-drops:
+blocky:drops:
   drops:
     - silkTouchedDrop:
         prefab: mineinabyss:charcoal_sand_ore

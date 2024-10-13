@@ -1,20 +1,19 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     # Monster food
-    - rolls: !<minecraft:uniform> { min: 1, max: 3 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 3 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:neritantan_meat_cooked
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:onitsuchi_wing_cooked
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:demonfish_cooked
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:billabonk_leg_cooked
           functions:
-            - !<minecraft:set_count>
-              count: !<minecraft:uniform> { min: 2, max: 6 }
+            - type: minecraft:set_count
+              count: { type: minecraft:uniform, min: 2, max: 6 }

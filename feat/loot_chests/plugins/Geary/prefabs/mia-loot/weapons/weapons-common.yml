@@ -1,15 +1,14 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     # Swords
     - entries:
         # Wooden swords
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<minecraft:item> { name: minecraft:wooden_sword }
+            - { type: minecraft:item, name: minecraft:wooden_sword }
         # Stone swords
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 1
           children:
-            - !<minecraft:item> { name: minecraft:stone_sword }
+            - { type: minecraft:item,  name: minecraft:stone_sword }

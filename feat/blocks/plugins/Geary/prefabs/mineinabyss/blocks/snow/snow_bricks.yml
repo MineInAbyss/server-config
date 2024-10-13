@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:snow]
 set.item:
   item:
@@ -9,9 +8,9 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 46
 
-pack:
+blocky:pack:
   model: "mineinabyss:block/snow/snow_bricks"
-drops:
+blocky:drops:
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true
   drops:

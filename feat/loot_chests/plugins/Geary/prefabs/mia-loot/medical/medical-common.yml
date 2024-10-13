@@ -1,6 +1,5 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     - entries:
-        - !<mineinabyss:item>
+        - type: mineinabyss:item
           item: mineinabyss:abyssal_snail_shell

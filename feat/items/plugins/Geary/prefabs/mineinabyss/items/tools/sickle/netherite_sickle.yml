@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: Netherite Sickle
@@ -16,7 +15,7 @@ set.recipes:
     prefab: mineinabyss:netherite_sickle
   discoverRecipes: true
   recipes:
-    - !<smithing_transform>
+    - type: smithing_transform
       template:
         type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
       input: mineinabyss:diamond_sickle
@@ -24,5 +23,5 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 4

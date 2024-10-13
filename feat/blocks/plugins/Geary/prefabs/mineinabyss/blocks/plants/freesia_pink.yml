@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
@@ -7,8 +6,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 14
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/freesia_pink
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:freesia_pink

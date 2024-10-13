@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     itemName: Wooden Sickle
@@ -14,7 +13,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M:
           tag: planks
@@ -26,5 +25,5 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 1

@@ -1,11 +1,10 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: NETHERRACK
   recipes:
-    - !<blasting>
+    - type: blasting
       input:
         type: DIRT
-      experience: 1f
+      experience: 1
       cookingTime: 100

@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     type: PAPER
@@ -17,7 +16,7 @@ set.recipes:
     prefab: mineinabyss:haste_paste
     amount: 3
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:kagi_tachikiri_pincer
         - prefab: mineinabyss:squidfly_brain_raw

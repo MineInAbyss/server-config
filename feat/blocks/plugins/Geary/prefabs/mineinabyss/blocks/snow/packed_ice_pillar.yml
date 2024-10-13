@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit:
   - mineinabyss:snow
 set.item:
@@ -9,12 +8,12 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 41
-pack:
+blocky:pack:
   model: "mineinabyss:block/snow/packed_ice_pillar"
-directional:
+blocky:directional:
   yBlock: mineinabyss:packed_ice_pillar_y
   xBlock: mineinabyss:packed_ice_pillar_x
   zBlock: mineinabyss:packed_ice_pillar_z
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:packed_ice_pillar

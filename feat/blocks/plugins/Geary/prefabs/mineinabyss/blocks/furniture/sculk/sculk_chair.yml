@@ -1,16 +1,15 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
     itemName: <white>Sculk Chair
     customModelData: 1023
-furniture:
+blocky:furniture:
   collisionHitbox:
     - x: 0
-seats:
+blocky:seats:
   - y: 0.0
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:sculk_chair
 

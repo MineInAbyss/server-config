@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
@@ -8,9 +7,9 @@ set.item:
     color: 255, 255, 255
     itemFlags:
       - HIDE_ADDITIONAL_TOOLTIP
-seats:
+blocky:seats:
   - y: 0.1
-furniture:
+blocky:furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
     - x: 0
@@ -27,11 +26,11 @@ furniture:
       height: 2.0
       offset:
         x: 1
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: false
   wall: false
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bamboo_bench
 

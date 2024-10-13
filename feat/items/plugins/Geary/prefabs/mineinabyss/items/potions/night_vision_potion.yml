@@ -1,9 +1,8 @@
-namespaces: [geary]
 set.item:
   item:
     type: POTION
     basePotionType: minecraft:night_vision
-set.potion_mixes:
+set.potionMixes:
   potionmixes:
     - ingredient:
         prefab: mineinabyss:hashofu_eye

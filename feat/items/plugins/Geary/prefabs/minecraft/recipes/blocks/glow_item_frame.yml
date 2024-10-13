@@ -1,10 +1,9 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: GLOW_ITEM_FRAME
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:kakatsumuri_glowing_tip
         - type: ITEM_FRAME

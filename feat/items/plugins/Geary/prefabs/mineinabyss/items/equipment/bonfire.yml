@@ -1,4 +1,3 @@
-namespaces: [geary, blocky, bonfire]
 set.item:
   item:
     itemName: <#FF9D26>Bonfire
@@ -8,7 +7,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         S:
           type: STICK
@@ -20,22 +19,22 @@ set.recipes:
         |SSS|
         |SFS|
         |SCS|
-furniture:
+blocky:furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.6
-preventItemstackUpdate:
+blocky:preventItemstackUpdate:
   forceWhenDifferentMaterial: true
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: false
   wall: false
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bonfire
 copyToInstances:
   persisting:
-    bonfire:
+    bonfire:bonfire:
       states:
         unlit: mineinabyss:bonfire
         lit: mineinabyss:bonfire_lit

@@ -1,19 +1,18 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: SOUL_SAND
   group: "looty:soul_sand"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: NETHERRACK
         - type: BONE
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: NETHERRACK
         - prefab: mineinabyss:dosetori_bone
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: NETHERRACK
         - prefab: mineinabyss:madokajack_bone

@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: Charcoal Sand Sickle
@@ -14,7 +13,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M: mineinabyss:charcoal_sand_ingot
         S: minecraft:stick
@@ -25,7 +24,7 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 2
 resourcepack:
   baseMaterial: minecraft:wooden_hoe

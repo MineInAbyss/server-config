@@ -1,11 +1,10 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
     itemName: <#6f4536>Sunny Wood Chair
     customModelData: 1001
-seats:
+blocky:seats:
   - y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
@@ -13,20 +12,20 @@ blocky:sound:
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: true
   wall: false
   blocks:
     - STONE
-furniture:
+blocky:furniture:
   rotationType: STRICT
   interactionHitbox:
     - width: 1
       height: 2.0
   collisionHitbox:
     - x: 0
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:sunny_wood_chair
 

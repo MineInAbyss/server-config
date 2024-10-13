@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     itemName: Tesuchi Scale on a Stick
@@ -12,7 +11,7 @@ set.recipes:
   result:
     prefab: mineinabyss:tesuchi_scale_on_a_stick
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:tesuchi_scales
         - type: FISHING_ROD

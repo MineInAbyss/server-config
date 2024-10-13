@@ -1,19 +1,18 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: BLACK_DYE
   group: "black_dye"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:makihige_ink_sac
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:inbyo_fur
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: COAL
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: CHARCOAL

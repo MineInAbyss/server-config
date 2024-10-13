@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: PAPER
@@ -9,7 +8,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - mineinabyss:madokajack_scales
         - mineinabyss:kakatsumuri_glowing_tip

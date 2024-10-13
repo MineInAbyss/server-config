@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit:
   - mineinabyss:wood
 set.item:
@@ -10,12 +9,12 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 23
 
-pack:
+blocky:pack:
   model: mineinabyss:block/logs/carved_spruce_log
-directional:
+blocky:directional:
   yBlock: mineinabyss:carved_spruce_log_y
   xBlock: mineinabyss:carved_spruce_log_x
   zBlock: mineinabyss:carved_spruce_log_z
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:carved_spruce_log

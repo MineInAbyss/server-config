@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: minecraft:compass
@@ -9,15 +8,15 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - mineinabyss:star_compass_needle
         - mineinabyss:titanjaw_pearl
-starcompass: { }
+mineinabyss:starcompass: { }
 disableItemInteractions: { }
 observe:
   itemRightClick:
-    - toggleStarcompassHud: { }
+    - mineinabyss:toggleStarcompassHud: { }
 resourcepack:
   baseMaterial: minecraft:compass
   textures: mineinabyss:item/relics/star_compass/star_compass

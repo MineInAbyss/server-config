@@ -1,13 +1,12 @@
-namespaces: [ geary, blocky ]
 inherit: [ mineinabyss:wood, mineinabyss:ground_furniture ]
 set.item:
   item:
     type: PAPER
     itemName: <white>Bamboo Mirror
     customModelData: 1004
-furniture: { }
+blocky:furniture: { }
 
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bamboo_mirror
 

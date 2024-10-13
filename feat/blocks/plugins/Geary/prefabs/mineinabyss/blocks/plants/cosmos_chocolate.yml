@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
@@ -7,10 +6,10 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 10
-breaking:
+blocky:breaking:
   hardness: 4.5
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/cosmos_chocolate
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:cosmos_chocolate
