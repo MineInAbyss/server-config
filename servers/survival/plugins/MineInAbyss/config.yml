@@ -7,6 +7,10 @@ antiCheese:
   enabled: true
 core:
   enabled: true
+  waterfallDamageMultiplier: 1.0
+  waterfallMoveMultiplier: 0.15
+  bubbleColumnDamageMultiplier: 2.0
+  bubbleColumnBreathMultiplier: 2
 cosmetics:
   enabled: true
   equipWhistleCosmetic: false
