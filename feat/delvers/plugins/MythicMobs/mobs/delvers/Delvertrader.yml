@@ -1,6 +1,6 @@
 delverarcher:
   Type: SKELETON
-  Display: 'Temple Archer'
+  Display: "Temple Archer"
   Health: 120
   Damage: 18
   Modules:
@@ -14,73 +14,46 @@ delverarcher:
     PreventOtherDrops: true
     PreventSunburn: true
   Drops:
-  - exp 15
- # - mmoitems{type=MATERIAL;id=ANCIENTTHREAD} 1-2 0.45
-  Skills:
-  - skill{s=displayHealth} ~onDamaged 
-  - model{mid=DelverArcher;n=false;d=false} @self ~onSpawn
-  - state{mid=DelverArcher;s=hurt} @self ~onDamaged
-  - skill{s=maarcherShoot;sync=true} @Target ~onShoot
-  - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
-  - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
-  - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
+    - exp 15
+  Model:
+    Id: DelverArcher
+    Drive: false
 
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - model{mid=DelverArcher;n=false;d=false} @self ~onSpawn
+    - state{mid=DelverArcher;s=hurt} @self ~onDamaged
+    - skill{s=maarcherShoot;sync=true} @Target ~onShoot
+    - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
+    - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
+    - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
 
 delvertrade:
-
-  Mobtype: zombie
-
-  Display: '&9Delver Trader'
-
+  Type: ZOMBIE
+  Display: "&9Delver Trader"
   Health: 130
-
   Damage: 12
-
   Options:
-
     FollowRange: 30
-
     AlwaysShowName: false
-
     MovementSpeed: 0.28
-
     PreventOtherDrops: true
-
     PreventSunburn: true
-
     PreventRandomEquipment: true
-
   AIGoalSelectors:
-
-  - 0 clear
-
-  - 1 meleeattack
-
-  - 2 randomstroll
-
+    - 0 clear
+    - 1 meleeattack
+    - 2 randomstroll
   Drops:
-
-  - exp 15
-
+    - exp 15
   Skills:
-
-  - model{mid=DelverTrader;n=false;d=false} @self ~onSpawn
-
-  - model{mid=DelverTrader;n=false;d=false} @self ~onLoad
-
-  - state{mid=DelverTrader;s=swing} @self ~onAttack
-
-  - state{mid=DelverTrader;s=hurt} @self ~onDamaged
-
-  - skill{s=piratesword} @target ~onTimer:300
-
-
-  - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
-
-  - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
-
-  - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
-
-  - skill{s=displayHealth} ~onDamaged  
-
-  - skill{s=Charge} @target ~onDamaged 0.09
+    - model{mid=DelverTrader;n=false;d=false} @self ~onSpawn
+    - model{mid=DelverTrader;n=false;d=false} @self ~onLoad
+    - state{mid=DelverTrader;s=swing} @self ~onAttack
+    - state{mid=DelverTrader;s=hurt} @self ~onDamaged
+    - skill{s=piratesword} @target ~onTimer:300
+    - effect:sound{s=entity.pillager.hurt;p=1;v=1} @self ~onDamaged 1
+    - sound{s=entity.pillager.ambient;v=1;p=1} @self ~onTimer:80 0.6
+    - effect:sound{s=entity.pillager.death;p=1;v=1} @self ~onDeath
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=Charge} @target ~onDamaged 0.09

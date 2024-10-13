@@ -9,8 +9,9 @@ kessho:
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true
+  Model:
+    Id: amethyst_golem
   Skills:
-    - model{mid=amethyst_golem;n=false} @Self ~onSpawn
     - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
     - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
     - skill{s=displayHealth} ~onDamaged

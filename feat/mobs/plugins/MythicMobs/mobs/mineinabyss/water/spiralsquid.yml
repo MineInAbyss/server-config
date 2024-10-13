@@ -30,4 +30,3 @@ spiralsquid:
   Skill:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged
-#  - skill{s=spiralsquidspawn} @self ~onspawn
