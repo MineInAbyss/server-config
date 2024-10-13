@@ -19,7 +19,7 @@ observe:
   itemRightClick:
     - toggleStarcompassHud: { }
 resourcepack:
-  baseMaterial: minecraft:paper
+  baseMaterial: minecraft:compass
   textures: mineinabyss:item/relics/star_compass/star_compass
   itemPredicates:
     customModelData: 125
