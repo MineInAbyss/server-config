@@ -1,11 +1,10 @@
 Aerial_Bunny:
-  Type: bee
+  Type: BEE
   Display: '&fAerial Bunny'
   Health: 1000
   Damage: 2
   Options:
     MovementSpeed: 0.33
-    ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
     Invincible: false
@@ -32,13 +31,12 @@ Aerial_Bunny:
 # Baby Shark #
 
 Baby_Shark:
-  Type: turtle
+  Type: TURTLE
   Display: '&bBaby Shark'
   Health: 1000
   Damage: 2
   Options:
     MovementSpeed: 1
-    ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
     Invincible: false

@@ -3,7 +3,7 @@ mia_baby_corpse_weeper:
   Display: "baby corpseweeper"
   Modules:
     ThreatTable: true
-  FACTION: PET
+  Faction: PET
   AIGoalSelectors:
     - 0 clear
     - 1 randomstroll
@@ -19,11 +19,10 @@ mia_baby_corpse_weeper:
     DamageTint: true
     Scale: 0.3
   Skills:
-    #- skill{s=mia_death} @self ~onDeath
+    #  - skill{s=mia_death} @self ~onDeath
     #  - skill{s=mia_spawn} @self ~onSpawn
-    #- skill{s=mia_baby_corpse_weeper_spell} @target ~onTimer:20
-
-    #- skill:MIAPetExpNearby{exp=1;radius=10} ~onDeath
+    #  - skill{s=mia_baby_corpse_weeper_spell} @target ~onTimer:20
+    #  - skill:MIAPetExpNearby{exp=1;radius=10} ~onDeath
     - skill{s=mia_feed} @self ~onInteract
 
     - bodyclamp{mh=10;mb=10;s=0} @self ~onSpawn
@@ -31,7 +30,6 @@ mia_baby_corpse_weeper:
   Damage: 0
   Options:
     MovementSpeed: 0.33
-    ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
     Invincible: true
@@ -48,7 +46,7 @@ mia_corpse_weeper:
   Display: "corpse_weeper"
   Modules:
     ThreatTable: true
-  FACTION: BATTLEPET
+  Faction: BATTLEPET
   AIGoalSelectors:
     - clear
     - meleeattack

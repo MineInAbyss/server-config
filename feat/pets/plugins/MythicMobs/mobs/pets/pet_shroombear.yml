@@ -1,11 +1,10 @@
 mia_baby_shroombear:
-  Type: wolf
+  Type: WOLF
   Display: '&2Shroombear'
-  health: 150
+  Health: 150
   Damage: 2
   Options:
     MovementSpeed: 0.29
-    ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
     Invincible: true
@@ -36,13 +35,12 @@ mia_baby_shroombear:
     - skill{s=shroombearDeath} @self ~onDeath
 
 mia_shroombear:
-  Type: wolf
+  Type: WOLF
   Display: '&2Shroombear'
-  health: 150
+  Health: 150
   Damage: 2
   Options:
     MovementSpeed: 0.29
-    ShowHealth: false
     PreventRandomEquipment: true
     AlwaysShowName: true
     Invincible: true
