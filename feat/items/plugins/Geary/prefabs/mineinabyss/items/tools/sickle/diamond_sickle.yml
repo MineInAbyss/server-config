@@ -2,10 +2,15 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <dark_aqua>Diamond Sickle
-    type: minecraft:clock
+    type: minecraft:wooden_hoe
     customModelData: 5
     durability: 1561
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:

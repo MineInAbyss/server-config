@@ -2,10 +2,15 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <gray>Iron Sickle
-    type: minecraft:clock
+    type: minecraft:wooden_hoe
     customModelData: 3
     durability: 250
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:

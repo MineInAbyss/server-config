@@ -57,14 +57,14 @@ patreon:
 playerProfile:
   enabled: true
   validBackgroundIds:
-    - "orth_background"
-    - "ancient_ship"
-    - "nanachi_hut"
-    - "golden_bridge"
-    - "layer2_windmills"
-    - "layer6"
-    - "seeker_camp"
-    - "funeral_plaque"
+  - "orth_background"
+  - "ancient_ship"
+  - "nanachi_hut"
+  - "golden_bridge"
+  - "layer2_windmills"
+  - "layer6"
+  - "seeker_camp"
+  - "funeral_plaque"
 pvp:
   enabled: false
 relics:

@@ -2,10 +2,15 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <dark_aqua>Charcoal Sand Sickle
-    type: minecraft:clock
+    type: minecraft:wooden_hoe
     customModelData: 7
     durability: 3000
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -23,7 +28,7 @@ observe:
     - sickle:
         radius: 2
 resourcepack:
-  baseMaterial: minecraft:clock
+  baseMaterial: minecraft:wooden_hoe
   textures: mineinabyss:item/tools/charcoal_sand_sickle
   itemPredicates:
     customModelData: 7

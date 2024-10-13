@@ -2,10 +2,15 @@ namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <#172929>Netherite Sickle
-    type: minecraft:clock
+    type: minecraft:wooden_hoe
     customModelData: 6
     durability: 2031
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   result:
     prefab: mineinabyss:netherite_sickle
