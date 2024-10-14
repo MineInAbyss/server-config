@@ -23,6 +23,8 @@ blocky:furniture:
   interactionHitbox:
     - width: 1.0
       height: 1.6
+      offset:
+        y: -0.5
 blocky:preventItemstackUpdate:
   forceWhenDifferentMaterial: true
 blocky:placableOn:
@@ -39,3 +41,9 @@ copyToInstances:
         unlit: mineinabyss:bonfire
         lit: mineinabyss:bonfire_lit
         set: mineinabyss:bonfire_self_lit
+      addons:
+        - mineinabyss:charcoal_sand_pickaxe
+        - mineinabyss:charcoal_sand_axe
+        - mineinabyss:charcoal_sand_shovel
+        - mineinabyss:charcoal_sand_hoe
+        - mineinabyss:charcoal_sand_sickle
