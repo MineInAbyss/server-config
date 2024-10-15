@@ -42,8 +42,8 @@ copyToInstances:
         lit: mineinabyss:bonfire_lit
         set: mineinabyss:bonfire_self_lit
       addons:
-        - mineinabyss:charcoal_sand_pickaxe
-        - mineinabyss:charcoal_sand_axe
-        - mineinabyss:charcoal_sand_shovel
-        - mineinabyss:charcoal_sand_hoe
-        - mineinabyss:charcoal_sand_sickle
+        - mineinabyss:bonfire
+        - mineinabyss:bonfire_1
+        - mineinabyss:bonfire_2
+        - mineinabyss:bonfire_3
+        - mineinabyss:bonfire_4
