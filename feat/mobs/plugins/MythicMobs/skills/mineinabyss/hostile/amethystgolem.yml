@@ -1,45 +1,45 @@
 AmethystGolemAttack:
   Conditions:
-  - offgcd
-  - incombat
+    - offgcd
+    - incombat
   Skills:
-  - cancelevent{sync=true} @Self
-  - skill{s=[
-    - state{s=attack} @Self
-    - setai{ai=false} @Self
-    - delay 15
-    - effect:sound{s=entity.iron_golem.attack;p=0.3} @Self
-    - totem{ch=3;
-        onStart=[
-          - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
-          - skill:AmethystGolemDamage @ENO{r=3}
-        ];int=1;hR=3;md=1} @Forward{f=1.5}
-    - setai{ai=true} @Self
-    ]}
-AmethystGolemAttackSlam: 
+    - cancelevent{sync=true} @Self
+    - skill{s=[
+      - state{s=attack} @Self
+      - setai{ai=false} @Self
+      - delay 15
+      - effect:sound{s=entity.iron_golem.attack;p=0.3} @Self
+      - totem{ch=3;
+      onStart=[
+      - particles{p=reddust;color=#FFFFFF;a=1;s=1.5} @origin
+      - skill:AmethystGolemDamage @ENO{r=3}
+      ];int=1;hR=3;md=1} @Forward{f=1.5}
+      - setai{ai=true} @Self
+      ]}
+AmethystGolemAttackSlam:
   - skill{s=[
     - state{s=attack2} @Self
     - setai{ai=false} @Self
     - effect:sound{s=block.anvil.hit} @Self
     - delay 30
     - totem{ch=3;
-        onStart=[
-          - skill:AmethystGolemThrow @ENO{r=3}
-        ];int=1;hR=3;md=1} @Forward{f=1.5}
+    onStart=[
+    - skill:AmethystGolemThrow @ENO{r=3}
+    ];int=1;hR=3;md=1} @Forward{f=1.5}
     - setai{ai=true} @Self
     ]}
 AmethystGolemDamage:
   Skills:
-  - effect:sound{s=entity.iron_golem.hurt;v=1;p=0.8} @self
-  - effect:particles{p=reddust;size=5;color=#FFFFFF;a=5;hS=0.2;vS=0.2;y=1.5}
-  - damage{amount=8}
-  - throw{v=4;vy=2}
+    - effect:sound{s=entity.iron_golem.hurt;v=1;p=0.8} @self
+    - effect:particles{p=reddust;size=5;color=#FFFFFF;a=5;hS=0.2;vS=0.2;y=1.5}
+    - damage{amount=8}
+    - throw{v=4;vy=2}
 AmethystGolemThrow:
   Skills:
-  - effect:sound{s=entity.iron_golem.hurt;v=1;p=0.8} @self
-  - effect:particles{p=reddust;size=5;color=#FFFFFF;a=5;hS=0.2;vS=0.2;y=1.5}
-  - damage{amount=12}
-  - throw{v=12;vy=15}
+    - effect:sound{s=entity.iron_golem.hurt;v=1;p=0.8} @self
+    - effect:particles{p=reddust;size=5;color=#FFFFFF;a=5;hS=0.2;vS=0.2;y=1.5}
+    - damage{amount=12}
+    - throw{v=12;vy=15}
 
 
 

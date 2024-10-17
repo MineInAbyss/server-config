@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     itemName: <#b74b4d><b>Mitty Token
@@ -10,7 +9,7 @@ set.item:
     type: EMERALD
     customModelData: 2
 disableItemInteractions: { }
-mittytoken: { }
+mineinabyss:mittytoken: { }
 resourcepack:
   baseMaterial: minecraft:emerald
   model: mineinabyss:item/other/mitty_token

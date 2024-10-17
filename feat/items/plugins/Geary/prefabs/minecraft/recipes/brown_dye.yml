@@ -1,10 +1,9 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: BROWN_DYE
   group: "brown_dye"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:madokajack_poop

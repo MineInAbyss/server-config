@@ -1,5 +1,3 @@
-
-
 hc_dash:
   Cooldown: 25
   Conditions:
@@ -10,9 +8,9 @@ hc_dash:
   Skills:
     - gcd{ticks=220}
     - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
-   # - setai{ai=false}
+    # - setai{ai=false}
     - stun{d=50;f=true} @self
- 
+
 
     - delay 20
     - state{s=charge_windup;li=0;lo=0} @self
@@ -36,21 +34,21 @@ hc_dashhit:
   Skills:
     - state{s=charge_hit;li=0;lo=0} @self
     - setstance{stance=dashhit} @self
-   # - shieldbreak{duration=200} @target
-    - damage{a=7} 
-    - throw{v=10;vy=6} 
+    # - shieldbreak{duration=200} @target
+    - damage{a=7}
+    - throw{v=10;vy=6}
     - potion{type=DARKNESS;duration=60;level=1} 0.5
     - delay 100
 
 hc_dashmiss:
-  Cooldown: 
+  Cooldown:
   Conditions:
     - stance{s=dashhit} false
   Skills:
     - stun{d=100;f=true} @self
     - state{s=charge_miss;li=0;lo=0} @self
     - delay 40
-    - state{s=charge_miss;remove=true} @self 
+    - state{s=charge_miss;remove=true} @self
     - setstance{stance=normal} @self
 
 
@@ -93,7 +91,7 @@ hc_Attack:
     - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hp=true;hR=2;vR=2;i=1} @forward{f=1.5}
     - setAI{ai=true} @self
 hc_Attack_DAMAGE:
- # TargetConditions:
+  # TargetConditions:
   #  - isblocking false
   Cooldown: 1.5
   Skills:
@@ -137,31 +135,31 @@ hc_Attack_DAMAGE:
 
 hc_backup:
   Skills:
- # - rally{types=hisoishi,baby_hisoishi;radius=30;ot=false} @Trigger
+  # - rally{types=hisoishi,baby_hisoishi;radius=30;ot=false} @Trigger
 
 hcAmbient:
   Cooldown: 0.3
   Skills:
-  - effect:sound{s=block.bone_block.hit;volume=0.4;pitch=1.7} @self
-  - effect:sound{s=block.bone_block.break;volume=0.4;pitch=0.5} @self
-  #- effect:sound{s=block.sculk_sensor.clicking;volume=0.6;pitch=0.3} @self
- # - effect:sound{s=entity.warden.listening;volume=0.4;pitch=1.4} @self
-  - effect:sound{s=entity.skeleton.ambient;volume=1;pitch=1.6} @self
-  - effect:sound{s=entity.goat;volume=1.1;pitch=1.6} @self
-  - effect:sound{s=entity.breeze.idle_air;volume=0.5;pitch=0.3} @self
-  - effect:sound{s=entity.breeze.idle_ground;volume=0.2;pitch=0.3} @self
-  - effect:sound{s=entity.horse.breathe;v=1;p=0.8} @Self @self
+    - effect:sound{s=block.bone_block.hit;volume=0.4;pitch=1.7} @self
+    - effect:sound{s=block.bone_block.break;volume=0.4;pitch=0.5} @self
+    #- effect:sound{s=block.sculk_sensor.clicking;volume=0.6;pitch=0.3} @self
+    # - effect:sound{s=entity.warden.listening;volume=0.4;pitch=1.4} @self
+    - effect:sound{s=entity.skeleton.ambient;volume=1;pitch=1.6} @self
+    - effect:sound{s=entity.goat;volume=1.1;pitch=1.6} @self
+    - effect:sound{s=entity.breeze.idle_air;volume=0.5;pitch=0.3} @self
+    - effect:sound{s=entity.breeze.idle_ground;volume=0.2;pitch=0.3} @self
+    - effect:sound{s=entity.horse.breathe;v=1;p=0.8} @Self @self
 hcHurt:
   Cooldown: 0.3
   Skills:
 
-  - effect:sound{s=entity.horse.hurt;volume=0.6;pitch=0.9} @self
-  - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
-  - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
-  - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
-  - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
-  - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
-  - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
-  - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
-  - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+    - effect:sound{s=entity.horse.hurt;volume=0.6;pitch=0.9} @self
+    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
+    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
+    - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
+    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
+    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
+    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
+    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
+    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
 

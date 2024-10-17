@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: minecraft:paper
@@ -16,7 +15,7 @@ resourcepack:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         I: { type: minecraft:iron_ingot }
         S: { type: minecraft:stick }

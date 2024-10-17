@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     type: PAPER
@@ -15,7 +14,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:spiralsquid_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100

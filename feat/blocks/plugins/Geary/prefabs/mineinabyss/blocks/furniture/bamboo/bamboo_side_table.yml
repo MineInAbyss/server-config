@@ -1,18 +1,17 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
     itemName: <white>Bamboo Side Table
     customModelData: 1007
-furniture:
+blocky:furniture:
   collisionHitbox:
     - x: 0
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: false
   wall: false
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bamboo_side_table
 

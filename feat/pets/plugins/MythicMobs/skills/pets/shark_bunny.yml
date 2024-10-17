@@ -1,28 +1,27 @@
-
 # Aerial Bunny #
-  
+
 HighJump_POTION:
   Skills:
-  - potion{t=JUMP;d=20;l=1;hasParticles=false}
-  
+    - potion{t=JUMP;d=20;l=1;hasParticles=false}
+
 SlowFalling:
   TargetConditions:
-  - onblock{m=AIR} true
-  - altitude{h=>3} true
+    - onblock{m=AIR} true
+    - altitude{h=>3} true
   Skills:
-  - potion{t=SLOW_FALLING;d=20;l=0;hasParticles=false} @PetOwner
-  
+    - potion{t=SLOW_FALLING;d=20;l=0;hasParticles=false} @PetOwner
+
 # Baby Shark #
 
 Aqua_Buff:
   TargetConditions:
-  - inblock{m=WATER} true
+    - inblock{m=WATER} true
   Skills:
-  - potion{t=WATER_BREATHING;d=20;l=0;hasParticles=false} @PetOwner
-  - potion{t=SPEED;d=20;l=1;hasParticles=false} @PetOwner
-  
+    - potion{t=WATER_BREATHING;d=20;l=0;hasParticles=false} @PetOwner
+    - potion{t=SPEED;d=20;l=1;hasParticles=false} @PetOwner
+
 Aqua_Buff_FX:
   TargetConditions:
-  - inblock{m=WATER} true
+    - inblock{m=WATER} true
   Skills:
-  - effect:particles{particle=bubble;amount=20;hS=0.6;vS=1.2;speed=0;forwardOffset=0;sideOffset=0;y=1} @PetOwner
+    - effect:particles{particle=bubble;amount=20;hS=0.6;vS=1.2;speed=0;forwardOffset=0;sideOffset=0;y=1} @PetOwner

@@ -35,34 +35,34 @@ hammerbeak:
     - geary mineinabyss:hammerbeak_feather 1-2 0.5
 
   Skills:
-  - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-#  - skill{s=hammerbeakspawn} @self ~onspawn
-  # Misc
-  - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
-  - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
-  - look{} @target ~onTimer:20
-  - CancelEvent{sync=true} @self ~onAttack 
-#  - summon{type=qmob_hammerbeakSmallCorpse;amount=1;radius=0;delay=42} @self ~onDeath
-  - velocity{m=add;x=0;y=-0.4;z=0;repeat=120;repeatInterval=1} @self ~onDeath
-  # Stances/AI
-  - stance{s=landed} @self ~onSpawn
-  - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=10}
-  - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
-  - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
-  - skill{s=hammerbeakLand} @self ~onDropCombat
-  - skill{s=hammerbeakLand} @self ~onTimer:100
-   # FX
-  - skill{s=hammerbeakAmbientSmall;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=hammerbeakHurtSmall} @self ~onHurt
-  - skill{s=hammerbeakDeathSmall} @self ~onDeath
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
+    #  - skill{s=hammerbeakspawn} @self ~onspawn
+    # Misc
+    - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
+    - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
+    - look{} @target ~onTimer:20
+    - CancelEvent{sync=true} @self ~onAttack
+    #  - summon{type=qmob_hammerbeakSmallCorpse;amount=1;radius=0;delay=42} @self ~onDeath
+    - velocity{m=add;x=0;y=-0.4;z=0;repeat=120;repeatInterval=1} @self ~onDeath
+    # Stances/AI
+    - stance{s=landed} @self ~onSpawn
+    - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=10}
+    - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
+    - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
+    - skill{s=hammerbeakLand} @self ~onDropCombat
+    - skill{s=hammerbeakLand} @self ~onTimer:100
+    # FX
+    - skill{s=hammerbeakAmbientSmall;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hammerbeakHurtSmall} @self ~onHurt
+    - skill{s=hammerbeakDeathSmall} @self ~onDeath
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
-  
+
 hammerbeakLarge:
   Type: VINDICATOR
   SpawnCategory: uncommon
@@ -70,21 +70,20 @@ hammerbeakLarge:
   Modules:
     ThreatTable: true
   AIGoalSelectors:
-  - clear
-  - meleeattack
-  - movetowardstarget
-  - randomlookaround
-  - randomfly
-  - lookatplayers
+    - clear
+    - meleeattack
+    - movetowardstarget
+    - randomlookaround
+    - randomfly
+    - lookatplayers
   AITargetSelectors:
-  - clear
-  - players
-  - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
+    - clear
+    - players
+    - nearestConditionalTarget{conditions=[- mythicmobtype{t=qmob_ikenosuke,qmob_demonfish,qmob_stinger} true]}
   Faction: hammerbeaks
   Health: 50
   Damage: 0
   Options:
-    Despawn: false
     Silent: true
     PreventOtherDrops: true
     FollowRange: 45
@@ -96,31 +95,31 @@ hammerbeakLarge:
     - geary mineinabyss:hammerbeak_beak 1 0.6
     - geary mineinabyss:hammerbeak_feather 1-3 0.7
     - geary mineinabyss:hammerbeak_egg 1-2 0.5
-  DamageModifiers:
+  Model:
+    Id: qmob_hammerbeaksmall
+    Scale: 1.5
 
   Skills:
-#  - skill{s=bighammerbeakspawn} @self ~onspawn
-  # Misc
-  - model{mid=qmob_hammerbeak} @self ~onSpawn
-  - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
-  - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
-  - look{} @target ~onTimer:20
-  - CancelEvent{sync=true} @self ~onAttack
-  #- summon{type=qmob_hammerbeakCorpse;amount=1;radius=0;delay=46} @self ~onDeath
-  - velocity{m=add;x=0;y=-0.8;z=0;repeat=120;repeatInterval=1} @self ~onDeath
-  # Stances/AI
-  - stance{s=landed} @self ~onSpawn
-  - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=14}
-  - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
-  - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
-  - skill{s=hammerbeakLand} @self ~onDropCombat
-  - skill{s=hammerbeakLand} @self ~onTimer:100
-  # FX
-  - skill{s=hammerbeakAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
-  - skill{s=hammerbeakHurt} @self ~onHurt
-  - skill{s=hammerbeakDeath} @self ~onDeath
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
-  - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # Misc
+    - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
+    - potion{t=LEVITATION;l=1;force=true;p=true;d=10} @self ~onTimer:20 ?stance{s=idleAir}
+    - look{} @target ~onTimer:20
+    - CancelEvent{sync=true} @self ~onAttack
+    #- summon{type=qmob_hammerbeakCorpse;amount=1;radius=0;delay=46} @self ~onDeath
+    - velocity{m=add;x=0;y=-0.8;z=0;repeat=120;repeatInterval=1} @self ~onDeath
+    # Stances/AI
+    - stance{s=landed} @self ~onSpawn
+    - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=14}
+    - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
+    - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
+    - skill{s=hammerbeakLand} @self ~onDropCombat
+    - skill{s=hammerbeakLand} @self ~onTimer:100
+    # FX
+    - skill{s=hammerbeakAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hammerbeakHurt} @self ~onHurt
+    - skill{s=hammerbeakDeath} @self ~onDeath
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
+    - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

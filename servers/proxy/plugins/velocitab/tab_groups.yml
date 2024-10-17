@@ -10,7 +10,7 @@ groups:
     headers:
       - "\n\n\n\uE101\uE000\uE101\uE001\uE101\uE002"
     footers:
-      - 'Ping: %ping%ms %server_tps_5_colored%'
+      - '&3Players&f: &b%players_online%&f/&3250 &f | &6Ping&f: &e%ping%ms &f| %server_tps_5_colored%'
     format: '%server%%prefix% &#fafafa&%username%'
     nametag:
       prefix: ''

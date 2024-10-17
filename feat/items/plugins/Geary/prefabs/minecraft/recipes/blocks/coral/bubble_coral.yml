@@ -1,15 +1,14 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: BUBBLE_CORAL
   group: "looty:bubble_coral"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
         - type: PURPLE_DYE
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
         - type: MAGENTA_DYE

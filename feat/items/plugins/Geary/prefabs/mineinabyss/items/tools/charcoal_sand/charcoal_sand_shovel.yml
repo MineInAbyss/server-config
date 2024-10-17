@@ -1,14 +1,13 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
-    itemName: <dark_aqua>Charcoal Sand Shovel
+    itemName: Charcoal Sand Shovel
     type: DIAMOND_SHOVEL
     customModelData: 1
     durability: 3000
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M: mineinabyss:charcoal_sand_ingot
         S: minecraft:stick

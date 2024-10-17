@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
@@ -7,8 +6,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 5
-pack:
+blocky:pack:
   model: mineinabyss:block/nature/foliage5
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:foliage5

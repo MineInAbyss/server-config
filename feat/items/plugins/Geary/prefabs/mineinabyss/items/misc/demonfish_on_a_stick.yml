@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     itemName: Demonfish on a Stick
@@ -13,7 +12,7 @@ set.recipes:
   result:
     prefab: mineinabyss:demonfish_on_a_stick
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:demonfish_raw
         - type: FISHING_ROD

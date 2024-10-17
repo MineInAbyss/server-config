@@ -1,0 +1,39 @@
+hagamizukin:
+  Type: SALMON
+  SpawnCategory: water
+  Display: "<#0B6623>Hagamizukin"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - movetowater
+    - meleeattack
+    - movetowardstarget
+    - randomlookaround
+    - randomfly
+  AITargetSelectors:
+    - players
+  Health: 50 # change this
+  Damage: 7
+  Options:
+    Silent: false
+    FollowRange: 25
+    MovementSpeed: 1.1
+    Interactable: true
+    PreventOtherDrops: true
+  Drops:
+    - exp 15-20
+    - DRIED_KELP 1-3 0.7
+    - geary mineinabyss:hagamizukin_tooth 1-2 0.6
+    - geary mineinabyss:hagamizukin_raw 1-2 0.6
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - state{mid=hagamizukin;s=attack} @self ~onAttack
+    ####### Misc
+    - model{mid=hagamizukin} @self ~onSpawn
+    - look{immediately=true} @targetLocation ~onTimer:10
+    - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}
+    - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}
+
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

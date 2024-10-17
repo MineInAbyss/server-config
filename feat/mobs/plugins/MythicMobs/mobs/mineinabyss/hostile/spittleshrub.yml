@@ -1,0 +1,46 @@
+spittleshrub:
+  Type: HUSK
+  SpawnCategory: hostile
+  Display: '<#696112>Spittleshrub'
+  Damage: 7
+  Health: 45
+  Options:
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Silent: true
+    MovementSpeed: 0.34
+    KnockbackResistance: 1
+    FollowRange: 32
+    MaxCombatDistance: 64
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventItemPickup: true
+    UseThreatTable: true
+  DamageModifiers:
+    - LAVA 5
+    - LAVA_TICK 5
+    - FIRE 7
+    - FIRE_TICK 5
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+    - players
+  Drops:
+    - exp 20-35
+    - GLOW_BERRIES 1-2 0.6
+    - geary mineinabyss:plant_matter 1-3 0.6
+    - geary mineinabyss:spittleshrub_root 1 0.2
+
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill:SpittleshrubSpawn @self ~onSpawn
+    - skill:SpittleshrubDamaged @self ~onDamaged
+    - skill:SpittleshrubHiddenDamaged{sync=true} @self ~onDamaged
+    - skill:SpittleshrubBurrow @self ~onDropCombat
+    - skill:SpittleshrubScan @target ~onTimer:5
+    - skill:SpittleshrubSpit @target ~onTimer:10 0.33
+    - skill:SpittleshrubMelee @trigger ~onAttack
+    - skill:SpittleshrubInteract @trigger ~onInteract
+  

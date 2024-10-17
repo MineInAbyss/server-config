@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: minecraft:paper
@@ -6,7 +5,7 @@ set.item:
 disableItemInteractions: {}
 #events:
 #  leftClick:
-#    - !<cooldown>
+#    - type: cooldown
 #      name: Freeze Enemies
 #      length: 2s
 #      run:

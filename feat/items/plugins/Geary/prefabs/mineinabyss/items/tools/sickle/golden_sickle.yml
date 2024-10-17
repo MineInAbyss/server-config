@@ -1,15 +1,19 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
-    itemName: <gold>Golden Sickle
-    type: minecraft:clock
+    itemName: Golden Sickle
+    type: minecraft:wooden_hoe
     customModelData: 4
     durability: 32
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M: minecraft:gold_ingot
         S: minecraft:stick
@@ -20,5 +24,5 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 3

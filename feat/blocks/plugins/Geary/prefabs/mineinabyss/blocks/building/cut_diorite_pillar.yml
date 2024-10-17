@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:stone]
 set.item:
   item:
@@ -8,13 +7,13 @@ set.item:
 set.block:
   blockType: NOTEBLOCK
   blockId: 29
-pack:
+blocky:pack:
   model: mineinabyss:block/building/cut_diorite_pillar
-directional:
+blocky:directional:
   yBlock: mineinabyss:cut_diorite_pillar
   xBlock: mineinabyss:cut_diorite_pillar_x
   zBlock: mineinabyss:cut_diorite_pillar_z
 
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:cut_diorite_pillar

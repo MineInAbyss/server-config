@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     type: POTION
@@ -21,7 +20,7 @@ set.item:
             amplifier: 1
           probability: 1.0
 
-set.potion_mixes:
+set.potionMixes:
   potionmixes:
     - ingredient: minecraft:glowstone_dust
       input: mineinabyss:haste_potion

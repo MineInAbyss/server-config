@@ -5,18 +5,15 @@ menus:
     blockButton:
       type: minecraft:paper
       customModelData: 1
-      itemName: <blue>B</blue><#5568ff>l</#5568ff><#557bff>o</#557bff><#558eff>c</#558eff><#55a1ff>k</#55a1ff><#55b3ff>
-        </#55b3ff><#55c6ff>M</#55c6ff><#55d9ff>e</#55d9ff><#55ecff>n</#55ecff><aqua>u
+      itemName: <gradient:blue:aqua>Block Menu
     wireButton:
       type: minecraft:paper
       customModelData: 1
-      itemName: <dark_green>W</dark_green><#0bb50b>i</#0bb50b><#15bf15>r</#15bf15><#20ca20>e</#20ca20><#2bd52b>
-        </#2bd52b><#35df35>M</#35df35><#40ea40>e</#40ea40><#4af44a>n</#4af44a><green>u
+      itemName: <gradient:dark_green:green>Wire Menu
     furnitureButton:
       type: minecraft:paper
       customModelData: 1
-      itemName: <gold>F</gold><#ffb107>u</#ffb107><#ffb70d>r</#ffb70d><#ffbe14>n</#ffbe14><#ffc41a>i</#ffc41a><#ffcb21>t</#ffcb21><#ffd127>u</#ffd127><#ffd82e>r</#ffd82e><#ffde34>e</#ffde34><#ffe53b>
-        </#ffe53b><#ffeb41>M</#ffeb41><#fff248>e</#fff248><#fff84e>n</#fff84e><yellow>u
+      itemName: <gradient:gold:yellow>Furniture Menu
   blockMenu:
     title: ':space_-8::blocky_grid_menu:'
     height: 6
@@ -33,12 +30,13 @@ noteBlocks:
   restoreVanillaFunctionality: true
 tripWires:
   isEnabled: true
-furniture:
+blocky:furniture:
   hitboxOutlines:
     # Valid typed are ITEM, BLOCK, NONE
     type: ITEM
     item:
-      type: minecraft:glass
+      type: minecraft:structure_void
+      customModelData: 1
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
 caveVineBlocks:

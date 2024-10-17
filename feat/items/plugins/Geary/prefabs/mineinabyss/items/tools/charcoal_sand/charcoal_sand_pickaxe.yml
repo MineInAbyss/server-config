@@ -1,14 +1,13 @@
-namespaces: [geary]
 set.item:
   item:
-    itemName: <dark_aqua>Charcoal Sand Pickaxe
+    itemName: Charcoal Sand Pickaxe
     type: DIAMOND_PICKAXE
     customModelData: 1
     durability: 3000
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M: mineinabyss:charcoal_sand_ingot
         S: minecraft:stick

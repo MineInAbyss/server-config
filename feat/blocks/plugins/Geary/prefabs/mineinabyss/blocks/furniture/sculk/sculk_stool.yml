@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
@@ -11,12 +10,12 @@ blocky:sound:
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-seats:
+blocky:seats:
   - y: -0.3
-furniture:
+blocky:furniture:
   collisionHitbox:
     - x: 0
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:sculk_stool
 

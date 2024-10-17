@@ -1,4 +1,3 @@
-namespaces: [ geary ]
 l4_flying:
   position: AIR
   priority: 0.00001
@@ -8,5 +7,5 @@ l4_flying:
 
 # Common
 l4_onitsuchi: { inherit: l4_flying, type: mm:onitsuchi }
-l4_hammerbeakLarge: { inherit: l4_flying, type: mm:hammerbeakLarge}
+l4_hammerbeakLarge: { inherit: l4_flying, type: mm:hammerbeakLarge }
 # Uncommon

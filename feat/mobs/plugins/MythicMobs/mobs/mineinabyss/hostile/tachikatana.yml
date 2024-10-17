@@ -1,0 +1,66 @@
+tachikatana:
+  Type: ZOMBIE
+  SpawnCategory: miniboss
+  Display: "<#00FFFF>Tachikatana"
+  Health: 200
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomstroll
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    KnockbackResistance: 1
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MovementSpeed: 0.3
+    MaxCombatDistance: 35
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+    - TORCH HAND
+  Model:
+    Id: tachikatana
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  DamageModifiers:
+    - DROWNING 0
+    - PROJECTILE 0.50
+    - SUFFOCATION 0
+  Drops:
+    - exp 100-250
+    - geary mineinabyss:tachikatana_leg 1-2 0.8
+    - geary mineinabyss:tachikatana_claw 1-2 0.8
+    - geary mineinabyss:tachikatana_scale 1-2 0.8
+
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - bodyclamp{m=tachikatana;c=15} @self ~onSpawn
+    #- bodyclamp{m=orbpiercer;c=15} @self ~onLoad
+    #    - skill{s=orbpiercer_speed} @self ~onSpawn
+    #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+    #- sound{s=mineinabyss:entity.orbpiercer.death;v=1;sc=HOSTILE} @self ~onDeath
+    #- sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;sc=HOSTILE} @self ~onTimer:400
+
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=tachiATTACK} @self ~onAttack
+    - skill{s=tachi_PROJ} @target ~onTimer:20
+    - skill{s=tachishockwave} @target ~onTimer:20
+    - skill{s=tachiAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tachiHurt} @self ~onHurt
+    #- skill{s=Changetarget} ~onTimer:160 <99%
+    - dismount ~onDamaged
+    - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
+    #- state{mid=tachikatana;s=swipe_attack;li=3;lo=3} @self ~onAttack
+
+    #- skill:MIAPetExpNearby{exp=1} ~onDeath

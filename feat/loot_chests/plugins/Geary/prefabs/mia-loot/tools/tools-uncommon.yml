@@ -1,36 +1,35 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     # Tools
     - entries:
         # Iron tools
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:iron_sickle
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:iron_axe
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:iron_pickaxe
         # Stone tools
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 1
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:golden_sickle
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:golden_axe
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:golden_pickaxe
     # Funnies
     - entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:demonfish_on_a_stick
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:tesuchi_scale_on_a_stick
       conditions:
-        - !<minecraft:random_chance> { chance: 0.75 }
+        - { type: minecraft:random_chance, chance: 0.75 }

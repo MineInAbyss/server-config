@@ -207,6 +207,9 @@ emotes:
   - id: salixw
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/salixw.png
+  - id: troopaw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/troopaw.png
   - id: admin
     template: role_template
     texture: mineinabyss:ui/roles/admin.png

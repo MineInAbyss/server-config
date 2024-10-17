@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:wood]
 set.item:
   item:
     type: PAPER
     itemName: <white>Bamboo Plant
     customModelData: 1005
-furniture:
+blocky:furniture:
   rotationType: NONE
 
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bamboo_plant
 

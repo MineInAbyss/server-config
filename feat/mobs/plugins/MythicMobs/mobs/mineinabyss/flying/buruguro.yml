@@ -7,11 +7,10 @@ buroguro:
   Drops:
     - exp 50-90
     - geary mineinabyss:buroguro_lantern 1 0.3
-   # - geary mineinabyss:buroguro_stinger 1-2 0.6
+    # - geary mineinabyss:buroguro_stinger 1-2 0.6
   Faction: glowfly
   Options:
     Silent: true
-    ShowName: false
     MovementSpeed: 0.46
     KnockbackResistance: 1
     FollowRange: 32
@@ -19,25 +18,24 @@ buroguro:
     PreventOtherDrops: true
     PreventRandomEquipment: true
     PreventItemPickup: true
-  ThreatTable:
-    Enabled: true
+    UseThreatTable: true
   AIGoalSelectors:
-  - clear
-  - meleeattack
-  - randomfly
+    - clear
+    - meleeattack
+    - randomfly
   AITargetSelectors:
-  - clear
-  - attacker
+    - clear
+    - attacker
   Model:
     Id: glowfly
     ViewRadius: 64
     Drive: false
     DamageTint: true
   Skills:
-  - skill{s=displayHealth} ~onDamaged  
-  - skill:MIAPetExpNearby{exp=1} ~onDeath
-#  - skill{s=buruguroSpawn} @self ~onSpawn
-#  - skill{s=buruguroDamaged} @self ~onDamaged
-#  - skill{s=buruguroTick} @self ~onTimer:20
-  - skill{s=buroguroMelee} @trigger ~onAttack
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    #  - skill{s=buruguroSpawn} @self ~onSpawn
+    #  - skill{s=buruguroDamaged} @self ~onDamaged
+    #  - skill{s=buruguroTick} @self ~onTimer:20
+    - skill{s=buroguroMelee} @trigger ~onAttack
   

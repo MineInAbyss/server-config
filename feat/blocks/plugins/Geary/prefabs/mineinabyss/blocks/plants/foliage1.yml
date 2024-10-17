@@ -1,10 +1,9 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
     itemName: <#7a4e48>Foliage 1
     customModelData: 3001
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: true
   wall: false
@@ -13,9 +12,9 @@ placableOn:
 set.block:
   blockType: WIRE
   blockId: 1
-pack:
+blocky:pack:
   model: mineinabyss:block/nature/foliage1
-tall_wire: {}
-drops:
+blocky:tallWire: {}
+blocky:drops:
   drops:
     - item: mineinabyss:foliage1

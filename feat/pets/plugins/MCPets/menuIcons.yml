@@ -7,7 +7,7 @@ mount:
     meta-type: UNSPECIFIC
     display-name: '{"text":"","extra":[{"text":"Mount","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     lore:
-    - '{"text":"","extra":[{"text":"Click to mount your pet","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '{"text":"","extra":[{"text":"Click to mount your pet","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
 rename:
   ==: org.bukkit.inventory.ItemStack
   v: 3955
@@ -17,7 +17,7 @@ rename:
     meta-type: UNSPECIFIC
     display-name: '{"text":"","extra":[{"text":"Rename","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     lore:
-    - '{"text":"","extra":[{"text":"Click to rename your pet","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '{"text":"","extra":[{"text":"Click to rename your pet","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
 inventory:
   ==: org.bukkit.inventory.ItemStack
   v: 3955
@@ -36,7 +36,7 @@ petmenu:
     meta-type: UNSPECIFIC
     display-name: '{"text":"","extra":[{"text":"Back to menu","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
     lore:
-    - '{"text":"","extra":[{"text":"Click to get back to the menu","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '{"text":"","extra":[{"text":"Click to get back to the menu","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
 skins:
   ==: org.bukkit.inventory.ItemStack
   v: 3955

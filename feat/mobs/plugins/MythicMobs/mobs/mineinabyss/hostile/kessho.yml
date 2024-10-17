@@ -1,0 +1,18 @@
+kessho:
+  Display: '&dKessho'
+  SpawnCategory: hostile
+  Type: IRON_GOLEM
+  Health: 60
+  Damage: 0
+  Options:
+    Silent: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Model:
+    Id: amethyst_golem
+  Skills:
+    - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
+    - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

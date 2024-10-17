@@ -1,4 +1,3 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
@@ -10,9 +9,8 @@ blocky:sound:
   stepSound: block.stone.step
   hitSound: block.stone.hit
   fallSound: block.stone.fall
-furniture:
+blocky:furniture:
   properties:
-    persistent: true
     brightness:
       blockLight: 15
     displayTransform: NONE

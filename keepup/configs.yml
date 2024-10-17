@@ -68,6 +68,17 @@ build:
     - feat/items
     - feat/loot_chests
     - feat/cosmetics
+
+staging:
+  copyPaths: [ ] # Staging should mimic another server as closely as possible, use `include` below instead
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":survival::space_-4::test::space_-4:"
+      localChatRadius: 0
+  include:
+    - survival
+
 dev:
   copyPaths: [ servers/dev ]
   variables:

@@ -1,0 +1,86 @@
+titanjaw:
+  Type: RAVAGER
+  SpawnCategory: passive
+  Modules:
+    ThreatTable: true
+  Health: 60 # change this
+  Damage: 8
+  Display: "<#3C3B4A>Titanjaw"
+  Options:
+    PreventSunburn: true
+    PreventOtherDrops: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  Model:
+    Id: titanjaw
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2.5
+  Drops:
+    - exp 20-25
+    - geary mineinabyss:titanjaw_pearl 1 0.2
+    - geary mineinabyss:titanjaw_scale 1-2 0.6
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+baby_titanjaw:
+  Type: RAVAGER
+  Modules:
+    ThreatTable: true
+  Health: 25 # change this
+  Damage: 4
+  Display: "<#3C3B4A>Titanjaw baby"
+  Options:
+    PreventSunburn: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - gotoparent
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  Equipment:
+    - diamond_axe HAND
+  Model:
+    Id: titanjaw
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Skills:
+    ####### Misc
+    - CancelEvent{sync=true} @self ~onAttack
+    - CancelEvent{sync=true} @self ~onInteract
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - skill:MIAPetExpNearby{exp=1} ~onDeath

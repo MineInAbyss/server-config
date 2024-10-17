@@ -1,9 +1,8 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:snow_pillar]
-directional:
+blocky:directional:
   parentBlock: mineinabyss:snow_pillar
 set.block:
   blockType: NOTEBLOCK
   blockId: 47
-pack:
+blocky:pack:
   model: mineinabyss:block/snow/snow_pillar

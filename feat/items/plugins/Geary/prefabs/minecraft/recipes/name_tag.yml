@@ -1,11 +1,10 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: NAME_TAG
   group: "looty:name_tag"
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         S:
           prefab: mineinabyss:silkfang_silk
@@ -17,7 +16,7 @@ set.recipes:
         | SS|
         |PIP|
         |PPP|
-    - !<shaped>
+    - type: shaped
       items:
         S:
           prefab: mineinabyss:silkfang_silk
@@ -29,7 +28,7 @@ set.recipes:
         | SS|
         |PIP|
         |PPP|
-    - !<shaped>
+    - type: shaped
       items:
         K:
           prefab: mineinabyss:kuongatari_silk
@@ -41,7 +40,7 @@ set.recipes:
         | KK|
         |PIP|
         |PPP|
-    - !<shaped>
+    - type: shaped
       items:
         K:
           prefab: mineinabyss:kuongatari_silk

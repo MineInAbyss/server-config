@@ -1,11 +1,10 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
     type: PAPER
     itemName: <#33404d>Stone Bench
     customModelData: 1000
-seats:
+blocky:seats:
   - y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
@@ -13,12 +12,12 @@ blocky:sound:
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-furniture:
+blocky:furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
     - x: 0
     - x: 1
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:stone_bench
 

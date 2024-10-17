@@ -1,13 +1,13 @@
 tachiATTACK:
   Conditions:
   Skills:
-      - CancelEvent
-      - skill{s=tachiATTACKskill} @self
+    - CancelEvent
+    - skill{s=tachiATTACKskill} @self
 tachiATTACKskill:
   Conditions:
   Cooldown: 3
   Skills:
-    - state{s=swipe_attack;li=3;lo=2} @self 
+    - state{s=swipe_attack;li=3;lo=2} @self
     - delay 20
     - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
     - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
@@ -87,7 +87,7 @@ tachishockwave:
     - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
     - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
 
-  #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
+    #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
     - potion{type=DAMAGE_RESISTANCE;duration=130;level=3;p=false} @self
     - skill{s=tachicircle;repeat=20;repeati=4} @Self
     - delay 36
@@ -105,15 +105,15 @@ tachishock:
     - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
     - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
     - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
-    - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=10;hS=1;vS=1} @Self 
-    - effect:particlering{particle=sonic_boom;radius=2;points=15;amount=10;hS=1;vS=1} @Self 
-    - effect:particlering{particle=sonic_boom;radius=3;points=15;amount=10;hS=1;vS=1} @Self 
-    - effect:particlering{particle=sonic_boom;radius=4;points=15;amount=20;hS=1;vS=1} @Self 
-    - effect:particlering{particle=sonic_boom;radius=5;points=15;amount=20;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=10;hS=1;vS=1} @Self
+    - effect:particlering{particle=sonic_boom;radius=2;points=15;amount=10;hS=1;vS=1} @Self
+    - effect:particlering{particle=sonic_boom;radius=3;points=15;amount=10;hS=1;vS=1} @Self
+    - effect:particlering{particle=sonic_boom;radius=4;points=15;amount=20;hS=1;vS=1} @Self
+    - effect:particlering{particle=sonic_boom;radius=5;points=15;amount=20;hS=1;vS=1} @Self
     - delay 1
     - effect:particlering{particle=sonic_boom;radius=6;points=15;amount=20;hS=1;vS=1} @Self
     - delay 1
-    - effect:particlering{particle=sonic_boom;radius=7;points=15;amount=30;hS=1;vS=1} @Self 
+    - effect:particlering{particle=sonic_boom;radius=7;points=15;amount=30;hS=1;vS=1} @Self
     - effect:particlering{particle=sonic_boom;radius=8;points=15;amount=50;hS=1;vS=1} @Self
     - effect:particlering{particle=sonic_boom;radius=9;points=15;amount=50;hS=1;vS=1} @Self
     - delay 1

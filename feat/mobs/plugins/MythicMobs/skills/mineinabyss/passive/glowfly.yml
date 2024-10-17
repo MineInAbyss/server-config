@@ -1,73 +1,73 @@
 GlowFlySpawn:
   Skills:
-  - model{m=glowfly;n=false;s=1}
-  - bodyclamp{angle=0}
-  - gcd{ticks=20}
+    - model{m=glowfly;n=false;s=1}
+    - bodyclamp{angle=0}
+    - gcd{ticks=20}
 
 GlowFlyMelee:
   Skills:
-  - cancelevent
-  - skill:GlowFlyMeleeSwing
+    - cancelevent
+    - skill:GlowFlyMeleeSwing
 
 GlowFlyMeleeSwing:
   Cooldown: 1
   Conditions:
-  - offgcd
-  - incombat
+    - offgcd
+    - incombat
   TargetConditions:
-  - distance <3
+    - distance <3
   Skills:
-  - state{s=attack;li=3;lo=2;speed=1} @self
-  - gcd{ticks=20} @self
-  - setai{ai=false} @self
-  - delay 8
-  - effect:sound{cd=5;s=entity.bee.pollinate;v=1;p=0.6} @self
-  - delay 2
-  - totem{ch=3;
+    - state{s=attack;li=3;lo=2;speed=1} @self
+    - gcd{ticks=20} @self
+    - setai{ai=false} @self
+    - delay 8
+    - effect:sound{cd=5;s=entity.bee.pollinate;v=1;p=0.6} @self
+    - delay 2
+    - totem{ch=3;
       onStart=[
-        - skill:GlowFlyMeleeDamage @ENO{r=3}
+      - skill:GlowFlyMeleeDamage @ENO{r=3}
       ];int=1;hR=3;md=1} @Forward{f=1.5}
-  - delay 10
-  - setai{ai=true} @self
-  
+    - delay 10
+    - setai{ai=true} @self
+
 GlowFlyMeleeDamage:
   TargetConditions:
-  - samefaction false
+    - samefaction false
   Skills:
-  - effect:sound{cd=5;s=entity.bee.sting;v=1;p=0.6} @self
-  - effect:particles{p=crit;a=55;hS=0.4;vS=0.4;y=1.5}
-  - effect:particles{p=reddust;size=5;color=#32CE32;a=5;hS=0.2;vS=0.2;y=1.5}
-  - basedamage{m=1}
-  - damage{a=1;ia=true}
-  - potion{type=WITHER;d=100;level=2;ow=true}
-  - potion{type=LEVITATION;d=20;level=3} @self 0.5
-  
+    - effect:sound{cd=5;s=entity.bee.sting;v=1;p=0.6} @self
+    - effect:particles{p=crit;a=55;hS=0.4;vS=0.4;y=1.5}
+    - effect:particles{p=reddust;size=5;color=#32CE32;a=5;hS=0.2;vS=0.2;y=1.5}
+    - basedamage{m=1}
+    - damage{a=1;ia=true}
+    - potion{type=WITHER;d=100;level=2;ow=true}
+    - potion{type=LEVITATION;d=20;level=3} @self 0.5
+
 GlowFlyDamaged:
   Cooldown: 0.5
   Skills:
-  - rally{radius=20;types=GlowFly} @trigger
-  - sound{s=entity.bee.hurt;p=0.75;v=1}
-  - potion{type=LEVITATION;d=20;level=3} @self 0.5
-  
+    - rally{radius=20;types=GlowFly} @trigger
+    - sound{s=entity.bee.hurt;p=0.75;v=1}
+    - potion{type=LEVITATION;d=20;level=3} @self 0.5
+
 GlowFlyTick:
   Conditions:
-  - offgcd
-  - incombat castInstead GlowFlyTickCombat
+    - offgcd
+    - incombat castInstead GlowFlyTickCombat
   Skills:
-  - skill:GlowFlyBeAnnoying
-  
+    - skill:GlowFlyBeAnnoying
+
 GlowFlyBeAnnoying:
   Cooldown: 5
   Conditions:
-  - playersInRadius{a=>0;radius=8}
+    - playersInRadius{a=>0;radius=8}
   Skills:
-  - skill:GlowFlyBeAnnoyingMove @NearestPlayer
-  - potion{type=LEVITATION;d=20;level=1} @self 0.33
+    - skill:GlowFlyBeAnnoyingMove @NearestPlayer
+    - potion{type=LEVITATION;d=20;level=1} @self 0.33
 GlowFlyBeAnnoyingMove:
   Skills:
-  - goto @RLNT{a=1;r=3}
-  
+    - goto @RLNT{a=1;r=3}
+
 GlowFlyTickCombat:
   Cooldown: 8
   Skills:
-  - propel{v=0.5;repeat=20;repeati=1} @target
+    - propel{v=0.5;repeat=20;repeati=1} @target

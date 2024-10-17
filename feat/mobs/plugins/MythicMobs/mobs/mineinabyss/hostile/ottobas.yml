@@ -1,0 +1,37 @@
+ottobas:
+  Type: RAVAGER
+  SpawnCategory: hostile
+  Display: "<#D8D8D8>Ottobas"
+  Health: 90
+  Damage: 10
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 0.3
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    DigOutOfGround: true
+    Interactable: true
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+  Model:
+    Id: ottobas
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 55-90
+    - geary mineinabyss:ottobas_meat_raw 4-15
+
+  Skills:
+    - effect:sound{s=mineinabyss:entity.ottobas.ambient;v=6;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.ottobas.death;v=6;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.ottobas.hurt;v=6;p=0.8} @self ~onDamaged

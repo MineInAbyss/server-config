@@ -21,8 +21,8 @@ splitjaw:
     FollowRange: 32
     MaxCombatDistance: 128
     LockPitch: true
-    Interactable: false
-  # MovementSpeed: 0.6
+    Interactable: true
+    # MovementSpeed: 0.6
     PreventSunburn: true
     PreventOtherDrops: true
     Silent: true
@@ -43,7 +43,7 @@ splitjaw:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-  # - CancelEvent{sync=true} ~onAttack
+    # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawn
     - bodyclamp{m=splitjaw;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.35} @self ~onSpawn
@@ -55,11 +55,11 @@ splitjaw:
     - skill{s=sj_roar} @target ~onTimer:80
     - skill{s=SJ_dash} @target ~onTimer:20
     - skill{s=SJ_Attack} @self ~onAttack
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
     - skill{s=splitjawHurt} @self ~onHurt
     - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=1.5;p=0.8} @self ~onAmbient 0.6
     - effect:sound{s=mineinabyss:entity.splitjaw.death;v=1.5;p=0.8} @self ~onDeath
-    - skill{s=displayHealth} ~onDamaged  
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=2} ~onDeath

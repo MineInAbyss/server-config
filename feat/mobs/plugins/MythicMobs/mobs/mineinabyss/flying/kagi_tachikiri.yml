@@ -33,13 +33,13 @@ kagi_tachikiri:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
-  # - CancelEvent{sync=true} ~onAttack
-  # - skill{s=Damage_8} @self ~onAttack
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_8} @self ~onAttack
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawn
     - bodyclamp{m=kagi_tachikiri;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1.4} @self ~onSpawn
     - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
     - skill{s=kagi_venom} @target ~onTimer:20
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=displayHealth} ~onDamaged  
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath

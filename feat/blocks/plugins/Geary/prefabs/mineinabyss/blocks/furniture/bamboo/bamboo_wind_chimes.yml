@@ -1,19 +1,18 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:wood]
 set.item:
   item:
     type: PAPER
     itemName: <white>Bamboo Wind Chime
     customModelData: 1009
-furniture:
+blocky:furniture:
   interactionHitbox:
     - width: 0.4
       height: 1.0
-placable_on:
+blocky:placableOn:
   floor: false
   ceiling: true
   wall: false
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bamboo_wind_chime
 

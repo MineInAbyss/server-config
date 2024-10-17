@@ -1,16 +1,15 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: RED_DYE
   group: "red_dye"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:chimokami_tail
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:stingerhead_flesh
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:virinsipede_segments

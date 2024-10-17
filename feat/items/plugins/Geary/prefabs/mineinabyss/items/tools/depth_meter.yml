@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: PAPER
@@ -12,7 +11,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         G: minecraft:glass
         C: minecraft:compass
@@ -20,7 +19,7 @@ set.recipes:
         | G |
         |GCG|
         | G |
-depthmeter: { }
+mineinabyss:depthmeter: { }
 observe:
   itemLeftClick:
     - become: parent
@@ -29,10 +28,10 @@ observe:
     - startCooldown:
         id: depth_meter
         length: 1s
-    - showDepth: { }
+    - mineinabyss:showDepth: { }
 
   itemRightClick:
-    - toggleDepthHud: { }
+    - mineinabyss:toggleDepthHud: { }
 
 disableItemInteractions: { }
 resourcepack:

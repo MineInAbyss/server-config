@@ -1,11 +1,10 @@
-namespaces: [ geary ]
 l4_hostile:
   position: GROUND
   priority: 0.0025
   regions: [ layerfour ]
   conditions:
- #   - mythicConditions:
- #       - lightlevelfromblocks{l=0}
+    #   - mythicConditions:
+    #       - lightlevelfromblocks{l=0}
     - maxNearby:
         amount: 3
 
@@ -13,10 +12,10 @@ l4_hostile:
 l4_kuongatari: { inherit: l4_hostile, type: mm:kuongatari }
 #l4_yomotsubi: { inherit: l4_hostile, type: mm:yomotsubi }
 l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
-l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }    
+l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }
 
-l4_orbpiercer: { inherit: l4_hostile, type: mm:orbpiercer, priority: 0.0001  }
+l4_orbpiercer: { inherit: l4_hostile, type: mm:orbpiercer, priority: 0.0001 }
 
 
-l4_tachikatana: { inherit: l4_hostile, type: mm:tachikatana, priority: 0.00001  }    
+l4_tachikatana: { inherit: l4_hostile, type: mm:tachikatana, priority: 0.00001 }
 

@@ -1,4 +1,3 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <#22B866><b>Nil Fount
@@ -9,7 +8,7 @@ set.item:
 disableItemInteractions: {}
 #events:
 #  leftClick:
-#    - !<cooldown>
+#    - type: cooldown
 #      name: Nil Fount
 #      length: 2s
 #      run:

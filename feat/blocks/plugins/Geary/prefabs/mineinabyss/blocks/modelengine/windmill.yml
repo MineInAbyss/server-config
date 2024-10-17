@@ -1,12 +1,11 @@
-namespaces: [geary, blocky]
 set.item:
   item:
     type: PAPER
     itemName: <#33404d>Windmill
     customModelData: 1002
 disableItemInteractions: {}
-modelengine:
+blocky:modelengine:
   modelId: windmill
-furniture:
+blocky:furniture:
   collisionHitbox:
     - x: 0

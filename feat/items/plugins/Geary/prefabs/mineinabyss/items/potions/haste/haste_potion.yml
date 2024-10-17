@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     type: POTION
@@ -19,7 +18,7 @@ set.item:
             type: minecraft:haste
             duration: 3m
           probability: 1.0
-set.potion_mixes:
+set.potionMixes:
   potionmixes:
     - input:
         type: POTION

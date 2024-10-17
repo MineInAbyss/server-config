@@ -1,0 +1,56 @@
+octoliar:
+  Type: SPIDER
+  SpawnCategory: hostile
+  Display: "<#ADD8E6>Octoliar"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - movetowardstarget
+    - randomlookaround
+    - lookatplayers
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 80 # change this
+  Damage: 0 # keep this 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0.25   # replaced with skills
+    KnockbackResistance: 0.5
+    DigOutOfGround: true
+  Model:
+    Id: octoliar
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 2
+  Drops:
+    - exp 5-15
+    - sweet_berries 1-3 0.6
+    - geary mineinabyss:octoliar_ink_sac 1-2 0.6
+    - geary mineinabyss:octoliar_tentacle 1-2 0.6
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - model{mid=octoliar} @self ~onSpawn
+    - defaultstate{t=walk;s=walk;sp=1.5} @self ~onSpawn
+    - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
+    - potion{t=JUMP;l=1;force=true;p=true;d=12} @self ~onTimer:10
+    - look{} @target ~onTimer:20
+    ####### Stances/AI/Abilities
+    - skill{s=octoliarBite} @self ~onAttack # meleeattack
+    - skill{s=octoliarWeb;delay=<random.0to20>} @self ~onTimer:120 0.65
+    - skill{s=octoliarSpit;delay=<random.0to20>} @self ~onTimer:35 0.55
+    ########### FX
+    - skill{s=octoliarAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
+    - skill{s=octoliarHurt} @self ~onHurt
+    - skill{s=octoliarDeath} @self ~onDeath
+    - skill{s=bloodEffectoctoliar} @self ~onHurt 0.65 >50%
+    - skill{s=bloodEffectoctoliar} @self ~onHurt 0.9 =50%
+    - skill{s=bloodEffectoctoliar} @self ~onHurt 0.85 <50%
