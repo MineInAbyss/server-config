@@ -26,9 +26,9 @@ chat:
   filters: [ ]
   formatURLs: true
   urlReplacements:
-    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.png\?.*$
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\/.*\.png\?.*$
       replacement: '[Discord Image]'
-    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\.mp4\?.*$
+    - pattern: ^https:\/\/cdn\.discordapp\.com\/attachments\/[^\/]+\/[^\/]+\/.*\.mp4\?.*$
       replacement: '[Discord Video]'
     - pattern: youtube.com
       replacement: '[YouTube]'
