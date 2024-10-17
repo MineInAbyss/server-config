@@ -38,9 +38,9 @@ chat:
       format: BLOCK
   formatURLs: true
   urlReplacements:
-      - pattern: https?:\/\/(media|cdn)\.discordapp\.net\/[^\s]+\.png(\?[^\s]*)?
+      - pattern: https?:\/\/(media|cdn)\.discordapp\.(com|net)\/[^\s]+\/.*\.png(\?[^\s]*)?
         replacement: '[Discord Image]'
-      - pattern: https?:\/\/(media|cdn)\.discordapp\.net\/[^\s]+\.mp4(\?[^\s]*)?
+      - pattern: https?:\/\/(media|cdn)\.discordapp\.(com|net)\/[^\s]+\/.*\.mp4(\?[^\s]*)?
         replacement: '[Discord Video]'
       - pattern: https?:\/\/(www\.)?youtube\.com\/[^\s]+
         replacement: '[YouTube]'
