@@ -19,7 +19,4 @@ set.recipes:
         |M M|
         |TMT|
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/materials/blank_template_rune
-  itemPredicates:
-    customModelData: 128

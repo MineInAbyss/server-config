@@ -5,7 +5,4 @@ set.item:
     customModelData: 1
 mineinabyss:orthcoin: {}
 resourcepack:
-  baseMaterial: minecraft:emerald
   model: mineinabyss:item/other/orth_coin
-  itemPredicates:
-    customModelData: 1

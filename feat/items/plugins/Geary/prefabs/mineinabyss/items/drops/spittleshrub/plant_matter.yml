@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: WHEAT_SEEDS
+    type: minecraft:wheat_seeds
     itemName: <#BE6400>Plant Matter
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#A68348><i>though they wouldn't do anything special
       - <#A68348><i>without proper care..
 resourcepack:
-  baseMaterial: minecraft:wheat_seeds
   textures: mineinabyss:item/creature_drops/plant_matter
-  itemPredicates:
-    customModelData: 1

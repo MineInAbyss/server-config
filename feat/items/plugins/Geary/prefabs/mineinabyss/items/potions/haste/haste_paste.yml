@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#b5955f>Haste Paste"
     customModelData: 127
     lore:
@@ -22,7 +22,4 @@ set.recipes:
         - prefab: mineinabyss:squidfly_brain_raw
         - prefab: mineinabyss:sakuranbo_dust
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/materials/haste_paste
-  itemPredicates:
-    customModelData: 127

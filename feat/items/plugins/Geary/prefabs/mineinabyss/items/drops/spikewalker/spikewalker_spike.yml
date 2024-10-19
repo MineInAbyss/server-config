@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: QUARTZ
+    type: minecraft:quartz
     itemName: <#116AAD>Spikewalker Spike
     customModelData: 2
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <#ED4C4C><i>from that back of a <#116AAD>Spikewalker
       - <#ED4C4C><i>I can make something sharp from this....
 resourcepack:
-  baseMaterial: minecraft:quartz
   textures: mineinabyss:item/creature_drops/spikewalker_spike
-  itemPredicates:
-    customModelData: 2

@@ -163,9 +163,6 @@ sections:
 damageOutsideSections: 3.5
 # Worlds which shouldn't damage players when outside of a section.
 damageExcludedWorlds: []
-# Sends an additional remount packet after this delay to prevent client-side mount bugs when moving between sections.
-
-remountPacketDelay: 3.5s
 fall:
   # The maximum safe falling distance, after which players will start taking damage. Set to -1 to disable falling damage
   maxSafeDist: 40.0

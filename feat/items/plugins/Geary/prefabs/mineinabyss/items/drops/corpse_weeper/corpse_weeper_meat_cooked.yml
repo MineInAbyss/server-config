@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#D12B26>Cooked Corpse-Weeper Meat"
     customModelData: 412
     lore:
@@ -22,7 +22,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/corpse_weeper_meat_cooked
-  itemPredicates:
-    customModelData: 412

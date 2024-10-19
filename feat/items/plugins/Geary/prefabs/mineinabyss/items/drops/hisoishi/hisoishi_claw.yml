@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: AMETHYST_SHARD
+    type: minecraft:amethyst_shard
     itemName: <#785F34>Crystal Hisoishi Claw
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#A68348><i>This sharp claw can dig through stone with ease
       - <#A68348><i> and even break bone!
 resourcepack:
-  baseMaterial: minecraft:amethyst_shard
   textures: mineinabyss:item/creature_drops/hisoishi_claw
-  itemPredicates:
-    customModelData: 1

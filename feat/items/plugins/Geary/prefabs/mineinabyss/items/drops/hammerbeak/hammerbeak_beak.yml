@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: FLINT
+    type: minecraft:flint
     itemName: <#613F0C>Hammerbeak Beak
     customModelData: 1
     lore:
@@ -12,7 +12,4 @@ set.item:
       - <#A9CCCA><i>It seems sharp enough
       - <#A9CCCA><i>to put an eye out.
 resourcepack:
-  baseMaterial: minecraft:flint
   textures: mineinabyss:item/creature_drops/hammerbeak_beak
-  itemPredicates:
-    customModelData: 1

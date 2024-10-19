@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#D12B26>Raw Corpse-Weeper Meat"
     customModelData: 312
     lore:
@@ -14,7 +14,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:corpse_weeper_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/corpse_weeper_meat_raw
-  itemPredicates:
-    customModelData: 312

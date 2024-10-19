@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: FERMENTED_SPIDER_EYE
+    type: minecraft:fermented_spider_eye
     itemName: <#1C439E>Roasted Madokajack Eye
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <#369AFF><i>Why did fermenting it remove the smell?
       - <#369AFF><i>No one nose...
 resourcepack:
-  baseMaterial: minecraft:fermented_spider_eye
   textures: mineinabyss:item/creature_drops/madokajack_eye_roasted
-  itemPredicates:
-    customModelData: 1

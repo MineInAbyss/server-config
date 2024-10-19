@@ -2,7 +2,7 @@ inherit:
   - mineinabyss:wood
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Carved Crimson Stem
     customModelData: 2022
 set.block:

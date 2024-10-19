@@ -1,7 +1,7 @@
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Sculk Big Table
     customModelData: 1022
 blocky:sound:

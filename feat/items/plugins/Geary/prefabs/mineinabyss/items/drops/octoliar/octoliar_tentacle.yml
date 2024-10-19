@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: BLUE_CONCRETE
+    type: minecraft:blue_concrete
     itemName: <#ADD8E6>Octoliar Tentacle
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#B8FFBA><i>Although a little wet, it's
       - <#B8FFBA><i>as tough as a rock!
 resourcepack:
-  baseMaterial: minecraft:blue_concrete
   textures: mineinabyss:item/creature_drops/octoliar_tentacle
-  itemPredicates:
-    customModelData: 1

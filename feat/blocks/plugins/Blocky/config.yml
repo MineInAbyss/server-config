@@ -30,7 +30,7 @@ noteBlocks:
   restoreVanillaFunctionality: true
 tripWires:
   isEnabled: true
-blocky:furniture:
+furniture:
   hitboxOutlines:
     # Valid typed are ITEM, BLOCK, NONE
     type: ITEM

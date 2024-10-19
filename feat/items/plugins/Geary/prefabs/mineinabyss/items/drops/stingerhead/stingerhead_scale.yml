@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: NETHERITE_SCRAP
+    type: minecraft:netherite_scrap
     itemName: <#9C0F2C>Stingerhead Scale
     customModelData: 1
     lore:
@@ -12,7 +12,4 @@ set.item:
       - <#EB1742><i>Perhaps I can upgrade my
       - <#EB1742><i>armour with this?
 resourcepack:
-  baseMaterial: minecraft:netherite_scrap
   textures: mineinabyss:item/creature_drops/stingerhead_scale
-  itemPredicates:
-    customModelData: 1

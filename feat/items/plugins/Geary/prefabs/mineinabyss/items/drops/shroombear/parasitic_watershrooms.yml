@@ -1,6 +1,7 @@
 set.item:
   item:
-    type: WARPED_FUNGUS
+    type: minecraft:warped_fungus
+    customModelData: 0
     itemName: <#913188>Parasitic Watershrooms
     lore:
       - <yellow>Most commonly found growing
@@ -11,7 +12,4 @@ set.item:
       - <#AB3AA0><i>These are damaged from being killed
       - <#AB3AA0><i>seems like a source for antidotes and recovery...
 resourcepack:
-  baseMaterial: minecraft:warped_fungus
   textures: mineinabyss:item/creature_drops/parasitic_watershrooms
-  itemPredicates:
-    customModelData: 0

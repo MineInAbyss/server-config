@@ -16,7 +16,4 @@ set.recipes:
         | S |
         | S |
 resourcepack:
-  baseMaterial: minecraft:diamond_pickaxe
   textures: mineinabyss:item/tools/charcoal_sand_pickaxe
-  itemPredicates:
-    customModelData: 1

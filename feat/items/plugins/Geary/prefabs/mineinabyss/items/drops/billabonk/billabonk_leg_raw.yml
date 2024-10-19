@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#0357AB>Raw Billabonk Leg
     customModelData: 305
     lore:
@@ -13,7 +13,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:billabonk_leg_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/billabonk_leg_raw
-  itemPredicates:
-    customModelData: 305

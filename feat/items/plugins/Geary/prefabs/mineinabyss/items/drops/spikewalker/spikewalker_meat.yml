@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#116AAD>Spikewalker Meat
     customModelData: 400
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <#ED4C4C><i><#116AAD>Spikewalker <#ED4C4C><i>
       - <#ED4C4C><i>It's rough and gamey...
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/spikewalker_meat
-  itemPredicates:
-    customModelData: 400

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: NETHER_WART
+    type: minecraft:nether_wart
     itemName: <#C74040>Orb Piercer Face Fragments
     customModelData: 1
     lore:
@@ -12,7 +12,4 @@ set.item:
       - <#D9D9D9><i>Probably just wishful thinking...
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:nether_wart
   textures: mineinabyss:item/creature_drops/orb_piercer_face_fragments
-  itemPredicates:
-    customModelData: 1

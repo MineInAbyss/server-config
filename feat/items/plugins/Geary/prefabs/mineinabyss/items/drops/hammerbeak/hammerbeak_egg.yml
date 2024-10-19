@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: EGG
+    type: minecraft:egg
     itemName: <#613F0C>Hammerbeak Egg
     customModelData: 1
     lore:
@@ -12,7 +12,4 @@ set.item:
       - <#A9CCCA><i>Mother Hammerbeak does
       - <#A9CCCA><i>not look to happy...
 resourcepack:
-  baseMaterial: minecraft:egg
   textures: mineinabyss:item/creature_drops/hammerbeak_egg
-  itemPredicates:
-    customModelData: 1

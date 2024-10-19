@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: QUARTZ
+    type: minecraft:quartz
     itemName: <#0B6623>Hagamizukin
     customModelData: 4
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>extremely sharp tooth used to make hard things
 resourcepack:
-  baseMaterial: minecraft:quartz
   textures: mineinabyss:item/creature_drops/hagamizukin_tooth
-  itemPredicates:
-    customModelData: 4

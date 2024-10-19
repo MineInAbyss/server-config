@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: LEATHER
+    type: minecraft:leather
     itemName: <#FF771C>Makihige Tentacle
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#5221A6><i>Not sure what this would be useful for...
 resourcepack:
-  baseMaterial: minecraft:leather
   textures: mineinabyss:item/creature_drops/makihige_tentacle
-  itemPredicates:
-    customModelData: 1

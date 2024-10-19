@@ -2,7 +2,7 @@ inherit:
   - mineinabyss:snow
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Snow Tiles
     customModelData: 2051
 set.block:

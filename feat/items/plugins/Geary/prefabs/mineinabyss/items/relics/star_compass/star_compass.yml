@@ -18,10 +18,8 @@ observe:
   itemRightClick:
     - mineinabyss:toggleStarcompassHud: { }
 resourcepack:
-  baseMaterial: minecraft:compass
   textures: mineinabyss:item/relics/star_compass/star_compass
   itemPredicates:
-    customModelData: 125
     angleTextures:
       mineinabyss:item/relics/star_compass/16: 0.000000
       mineinabyss:item/relics/star_compass/17: 0.015625

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: POLISHED_BLACKSTONE_BUTTON
+    type: minecraft:polished_blackstone_button
     itemName: <#454545>Hashofu Body
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <#595959><i>Perhaps I should look for a vendor?
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:polished_blackstone_button
   textures: mineinabyss:item/creature_drops/hashofu_body
-  itemPredicates:
-    customModelData: 1

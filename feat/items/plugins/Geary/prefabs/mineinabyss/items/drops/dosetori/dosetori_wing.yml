@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: LEATHER
+    type: minecraft:leather
     itemName: "<#FFF821>Dosetori Wing"
     customModelData: 2
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#FFE817><i>Perhaps I can take flight with these?
       - <#FFE817><i>(No this is not related to membrane or elytras)
 resourcepack:
-  baseMaterial: minecraft:leather
   textures: mineinabyss:item/creature_drops/dosetori_wing
-  itemPredicates:
-    customModelData: 2

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: BONE
+    type: minecraft:bone
     itemName: <#1C439E>Madokajack Bone
     customModelData: 2
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <yellow>in the <green>Great Fault<yellow>.
       - <#369AFF><i>Even their bones smell rancid.
 resourcepack:
-  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/madokajack_bone
-  itemPredicates:
-    customModelData: 2

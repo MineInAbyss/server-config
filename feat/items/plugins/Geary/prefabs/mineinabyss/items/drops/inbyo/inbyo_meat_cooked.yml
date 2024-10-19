@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#3D3D3D>Cooked Inbyo Meat
     customModelData: 401
     lore:
@@ -25,7 +25,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/inbyo_meat_cooked
-  itemPredicates:
-    customModelData: 401

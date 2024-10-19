@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: SLIME_BALL
+    type: minecraft:slime_ball
     itemName: "<#257BEB>Swarmhoarder Jelly"
     customModelData: 3
     lore:
@@ -11,7 +11,4 @@ set.item:
       - <#1B5BAD><i>Tastes very watery...
 disableItemInteractions: { }
 resourcepack:
-  baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/swarmshocker_jelly
-  itemPredicates:
-    customModelData: 3

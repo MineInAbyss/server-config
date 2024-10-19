@@ -1,7 +1,7 @@
 inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Bamboo Hanging Flower
     customModelData: 1003
 blocky:furniture: {}

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: BONE_MEAL
+    type: minecraft:bone_meal
     itemName: <#C42D2D>Virinsipede Segments
     customModelData: 2
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#8F425B><i>I've heard their body makes
       - <#8F425B><i>for a great fertiliser.
 resourcepack:
-  baseMaterial: minecraft:bone_meal
   textures: mineinabyss:item/creature_drops/virinsipede_segments
-  itemPredicates:
-    customModelData: 2

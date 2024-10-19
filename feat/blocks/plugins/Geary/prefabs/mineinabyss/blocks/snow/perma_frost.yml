@@ -2,7 +2,7 @@ inherit:
   - mineinabyss:snow
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Perma Frost
     customModelData: 2047
 set.block:

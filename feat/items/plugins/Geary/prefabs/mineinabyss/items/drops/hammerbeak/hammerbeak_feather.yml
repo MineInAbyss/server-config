@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: FEATHER
+    type: minecraft:feather
     itemName: <#613F0C>Hammerbeak Feather
     customModelData: 3
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <yellow>in the <green>Forest of Temptation<yellow>.
       - <#A9CCCA><i>It looks very combustible.
 resourcepack:
-  baseMaterial: minecraft:feather
   textures: mineinabyss:item/creature_drops/hammerbeak_feather
-  itemPredicates:
-    customModelData: 3

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#257BEB>Raw Demonfish"
     customModelData: 316
     lore:
@@ -14,7 +14,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:demonfish_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/demonfish_raw
-  itemPredicates:
-    customModelData: 316

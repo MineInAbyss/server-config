@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: STRING
+    type: minecraft:string
     itemName: <#03AC13>Stinger Wing
     customModelData: 3
     lore:
@@ -11,7 +11,4 @@ set.item:
       - <#167D2A><i>flexible piece of flesh
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:string
   textures: mineinabyss:item/creature_drops/stinger_wing
-  itemPredicates:
-    customModelData: 3

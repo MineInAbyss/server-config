@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#5C471D>Raw Onitsuchi Wing
     customModelData: 308
     lore:
@@ -14,7 +14,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:onitsuchi_wing_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/onitsuchi_wing_raw
-  itemPredicates:
-    customModelData: 308

@@ -11,7 +11,4 @@ set.item:
       - <#524D47><i>Metallic on the inside!
       - <#524D47><i>prehaps i can use this to launch something...
 resourcepack:
-  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/hisomukuro_rib
-  itemPredicates:
-    customModelData: 4

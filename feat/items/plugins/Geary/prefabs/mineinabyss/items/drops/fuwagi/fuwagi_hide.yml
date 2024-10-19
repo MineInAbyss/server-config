@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: RABBIT_HIDE
+    type: minecraft:rabbit_hide
     itemName: <#E0E0E0>Fuwagi Hide
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <#FF3A24><i>Soft and cozy. You can make some
       - <#FF3A24><i>quality sweaters out of this.
 resourcepack:
-  baseMaterial: minecraft:rabbit_hide
   textures: mineinabyss:item/creature_drops/fuwagi_hide
-  itemPredicates:
-    customModelData: 1

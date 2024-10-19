@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: SPIDER_EYE
+    type: minecraft:spider_eye
     itemName: <#116AAD>Silkfang Eye
     customModelData: 1
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <#ED4C4C><i>larger arachnid can stare back
       - <#ED4C4C><i>at you through this...
 resourcepack:
-  baseMaterial: minecraft:spider_eye
   textures: mineinabyss:item/creature_drops/silkfang_eye
-  itemPredicates:
-    customModelData: 1

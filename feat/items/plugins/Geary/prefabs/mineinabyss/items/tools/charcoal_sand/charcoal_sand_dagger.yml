@@ -16,7 +16,4 @@ set.recipes:
         |M|
         |S|
 resourcepack:
-  baseMaterial: minecraft:diamond_sword
   textures: mineinabyss:item/tools/charcoal_sand_dagger
-  itemPredicates:
-    customModelData: 4

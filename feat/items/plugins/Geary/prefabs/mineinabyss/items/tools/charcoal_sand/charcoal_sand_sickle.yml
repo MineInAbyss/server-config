@@ -27,7 +27,4 @@ observe:
     - mineinabyss:sickle:
         radius: 2
 resourcepack:
-  baseMaterial: minecraft:wooden_hoe
   textures: mineinabyss:item/tools/charcoal_sand_sickle
-  itemPredicates:
-    customModelData: 7

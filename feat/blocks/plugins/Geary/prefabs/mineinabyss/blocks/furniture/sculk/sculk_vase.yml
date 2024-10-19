@@ -1,7 +1,7 @@
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Sculk Vase
     customModelData: 1030
 blocky:sound:

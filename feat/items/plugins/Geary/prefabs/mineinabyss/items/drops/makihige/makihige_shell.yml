@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: OBSIDIAN
+    type: minecraft:obsidian
     itemName: <#FF771C>Makihige Shell
     customModelData: 1
     lore:
@@ -12,7 +12,4 @@ set.item:
       - <#5221A6><i>Makihige. Not anymore...
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:obsidian
   textures: mineinabyss:item/creature_drops/makihige_shell
-  itemPredicates:
-    customModelData: 1

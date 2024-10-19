@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: POTION
+    type: minecraft:potion
     itemName: <gold>Black Flask
     customModelData: 1
     lore:
@@ -18,9 +18,6 @@ observe:
           duration: 7s
           amplifier: 3
 resourcepack:
-  baseMaterial: minecraft:potion
   textures:
     - mineinabyss:item/relics/consumables/black_flask
     - mineinabyss:item/relics/consumables/black_flask
-  itemPredicates:
-    customModelData: 1

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#613F0C>Raw Hammerbeak Wing
     customModelData: 306
     lore:
@@ -15,7 +15,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:hammerbeak_wing_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hammerbeak_wing_raw
-  itemPredicates:
-    customModelData: 306

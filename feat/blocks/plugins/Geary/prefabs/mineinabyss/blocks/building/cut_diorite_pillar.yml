@@ -1,7 +1,7 @@
 inherit: [mineinabyss:stone]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Cut Diorite Pillar
     customModelData: 2034
 set.block:

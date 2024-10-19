@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#454545>Cooked Hashofu Tail
     customModelData: 407
     lore:
@@ -24,7 +24,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hashofu_tail_cooked
-  itemPredicates:
-    customModelData: 407

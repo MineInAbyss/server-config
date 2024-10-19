@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: POPPED_CHORUS_FRUIT
+    type: minecraft:popped_chorus_fruit
     itemName: <#9A1CAD>Splitjaw Scales
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <reset><light_purple><i>Can be used to
       - <reset><light_purple><i>make certain blocks.
 resourcepack:
-  baseMaterial: minecraft:popped_chorus_fruit
   textures: mineinabyss:item/creature_drops/splitjaw_scales
-  itemPredicates:
-    customModelData: 1

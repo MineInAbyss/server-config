@@ -7,10 +7,7 @@ set.item:
       saturation: 1.8
       nutrition: 3
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/standard_food/cut_meat_raw
-  itemPredicates:
-    customModelData: 130
 set.recipes:
   discoverRecipes: true
   recipes:

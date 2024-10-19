@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#85562D>Shroombear Meat
     customModelData: 310
     lore:
@@ -16,7 +16,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:shroombear_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/shroombear_meat_raw
-  itemPredicates:
-    customModelData: 310

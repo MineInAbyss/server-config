@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#257BEB>Cooked Demonfish"
     customModelData: 416
     lore:
@@ -23,7 +23,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/demonfish_cooked
-  itemPredicates:
-    customModelData: 416

@@ -7,10 +7,7 @@ set.item:
     lore:
       - <yellow>Used to cut meat into smaller pieces.
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/tools/knife
-  itemPredicates:
-    customModelData: 129
 
 set.recipes:
   discoverRecipes: true

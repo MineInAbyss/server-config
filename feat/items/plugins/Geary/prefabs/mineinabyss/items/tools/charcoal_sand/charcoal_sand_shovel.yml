@@ -16,7 +16,4 @@ set.recipes:
         |S|
         |S|
 resourcepack:
-  baseMaterial: minecraft:diamond_shovel
   textures: mineinabyss:item/tools/charcoal_sand_shovel
-  itemPredicates:
-    customModelData: 1

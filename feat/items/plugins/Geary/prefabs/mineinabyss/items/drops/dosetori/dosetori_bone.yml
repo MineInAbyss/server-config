@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: BONE
+    type: minecraft:bone
     itemName: "<#FFF821>Dosetori Bone"
     customModelData: 1
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <green>Inverted Forest <yellow>and <green>Great Fault<yellow>.
       - <#FFE817><i>Seems to be kind of unsturdy...
 resourcepack:
-  baseMaterial: minecraft:bone
   textures: mineinabyss:item/creature_drops/dosetori_bone
-  itemPredicates:
-    customModelData: 1

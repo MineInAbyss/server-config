@@ -1,7 +1,7 @@
 inherit: [mineinabyss:snow]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Chiseled Packed Ice
     customModelData: 2041
 set.block:

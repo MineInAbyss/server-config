@@ -2,7 +2,7 @@ inherit:
   - mineinabyss:snow
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Packed Ice Pillar
     customModelData: 2046
 set.block:

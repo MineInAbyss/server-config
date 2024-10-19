@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#FFF821>Raw Dosetori Meat"
     customModelData: 304
     lore:
@@ -13,7 +13,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:dosetori_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/dosetori_meat_raw
-  itemPredicates:
-    customModelData: 304

@@ -1,12 +1,9 @@
 set.item:
   item:
-    type: SLIME_BALL
+    type: minecraft:slime_ball
     itemName: <#38E016>Splitjaw Gunk
     customModelData: 2
     lore:
       - <#40FF19>Yucky.
 resourcepack:
-  baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/splitjaw_gunk
-  itemPredicates:
-    customModelData: 2

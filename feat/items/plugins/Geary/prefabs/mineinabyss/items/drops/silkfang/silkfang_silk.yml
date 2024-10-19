@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: STRING
+    type: minecraft:string
     itemName: <#116AAD>Silkfang Silk
     customModelData: 2
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <#ED4C4C><i>large amount of tensile strength.
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:string
   textures: mineinabyss:item/creature_drops/silkfang_silk
-  itemPredicates:
-    customModelData: 2

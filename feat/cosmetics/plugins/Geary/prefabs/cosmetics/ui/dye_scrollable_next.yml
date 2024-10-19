@@ -5,7 +5,4 @@ set.item:
     customModelData: 11
 
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: cosmetics:item/ui/dye_scrollable_next
-  itemPredicates:
-    customModelData: 11

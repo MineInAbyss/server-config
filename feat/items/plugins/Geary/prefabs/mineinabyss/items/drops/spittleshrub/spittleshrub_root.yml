@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: MOSS_BLOCK
+    type: minecraft:moss_block
     itemName: <#696112>Spittleshrub Root
     customModelData: 1
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <#A68348><i>This looks like a pretty vital ingredient
       - <#A68348><i>for some plants.
 resourcepack:
-  baseMaterial: minecraft:moss_block
   textures: mineinabyss:item/creature_drops/spittleshrub_root
-  itemPredicates:
-    customModelData: 1

@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#D8D8D8>Raw Ottobas Meat
     customModelData: 314
     lore:
@@ -15,7 +15,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ottobas_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/ottobas_meat_raw
-  itemPredicates:
-    customModelData: 314

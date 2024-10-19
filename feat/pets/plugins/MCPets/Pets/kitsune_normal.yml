@@ -11,10 +11,10 @@ Icon:
   Material: BRICK
   CustomModelData: 2528
   Description:
-    - §fGet your pet Kitsune!
+  - §fGet your pet Kitsune!
 Signals:
   Values:
-    - DASH
+  - DASH
   Item:
     Name: §bSignal Feather
     Material: FEATHER
@@ -27,7 +27,7 @@ Skins:
       CustomModelData: 2528
       DisplayName: §6Normal Kitsune
       Lore:
-        - §fGet your pet Kitsune!
+      - §fGet your pet Kitsune!
   Kitsune_Inferno:
     MythicMob: Kitsune_Inferno
     Permission: skin.kitsune_inferno
@@ -36,7 +36,7 @@ Skins:
       CustomModelData: 2527
       DisplayName: §cInferno Kitsune
       Lore:
-        - §fGet your pet Inferno Kitsune!
+      - §fGet your pet Inferno Kitsune!
   Kitsune_Demonic:
     MythicMob: Kitsune_Demonic
     Permission: skin.kitsune_demonic
@@ -45,4 +45,4 @@ Skins:
       CustomModelData: 2526
       DisplayName: §4Demonic Kitsune
       Lore:
-        - §fGet your pet Demonic Kitsune!
+      - §fGet your pet Demonic Kitsune!

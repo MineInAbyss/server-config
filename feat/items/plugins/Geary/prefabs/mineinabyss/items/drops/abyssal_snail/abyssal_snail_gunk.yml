@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: SLIME_BALL
+    type: minecraft:slime_ball
     itemName: <reset><#785F34>Abyssal Snail Gunk
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#A68348><i>Many delvers feel strangely compelled
       - <#A68348><i>to lick slime such as this. Well, <b>DON'T</b>!
 resourcepack:
-  baseMaterial: minecraft:slime_ball
   textures: mineinabyss:item/creature_drops/abyssal_snail_gunk
-  itemPredicates:
-    customModelData: 1

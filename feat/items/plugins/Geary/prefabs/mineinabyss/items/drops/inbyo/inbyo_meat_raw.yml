@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#3D3D3D>Raw Inbyo Meat
     customModelData: 301
     lore:
@@ -13,7 +13,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:inbyo_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/inbyo_meat_raw
-  itemPredicates:
-    customModelData: 301

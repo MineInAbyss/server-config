@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: RABBIT_FOOT
+    type: minecraft:rabbit_foot
     itemName: "<#E0E0E0>Fuwagi Foot"
     customModelData: 1
     lore:
@@ -11,7 +11,4 @@ set.item:
       - <#FF3A24><i>foot in your inventory, you will
       - <#FF3A24><i>have good luck.
 resourcepack:
-  baseMaterial: minecraft:rabbit_foot
   textures: mineinabyss:item/creature_drops/fuwagi_foot
-  itemPredicates:
-    customModelData: 1

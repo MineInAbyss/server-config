@@ -1,7 +1,7 @@
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#33404d>Stone Bench
     customModelData: 1000
 blocky:seats:

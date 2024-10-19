@@ -2,7 +2,7 @@ inherit:
   - mineinabyss:wood
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Carved Dark Oak Log
     customModelData: 2023
 set.block:

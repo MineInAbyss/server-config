@@ -16,7 +16,4 @@ set.recipes:
         | SM|
         |S  |
 resourcepack:
-  baseMaterial: minecraft:diamond_axe
   textures: mineinabyss:item/tools/charcoal_sand_axe
-  itemPredicates:
-    customModelData: 1

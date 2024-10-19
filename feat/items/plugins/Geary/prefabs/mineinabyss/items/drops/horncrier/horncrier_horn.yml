@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: WHITE_CONCRETE
+    type: minecraft:white_concrete
     itemName: <#9A1CAD>Horncrier Horn
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#A68348><i>Its hard and solid...
       - <#A68348><i>I can build structures with this.
 resourcepack:
-  baseMaterial: minecraft:white_concrete
   textures: mineinabyss:item/creature_drops/horncrier_horn
-  itemPredicates:
-    customModelData: 1

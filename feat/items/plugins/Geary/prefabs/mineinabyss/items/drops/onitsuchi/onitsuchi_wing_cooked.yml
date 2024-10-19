@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#5C471D>Cooked Onitsuchi Wing
     customModelData: 408
     lore:
@@ -24,7 +24,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/onitsuchi_wing_cooked
-  itemPredicates:
-    customModelData: 408

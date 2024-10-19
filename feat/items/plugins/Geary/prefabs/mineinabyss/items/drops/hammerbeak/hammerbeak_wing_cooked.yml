@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#613F0C>Cooked Hammerbeak Wing
     customModelData: 406
     lore:
@@ -25,7 +25,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hammerbeak_wing_cooked
-  itemPredicates:
-    customModelData: 406

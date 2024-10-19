@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: FLINT
+    type: minecraft:flint
     itemName: "<#2597D9>Ashimite Hoof"
     customModelData: 3
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <#2597D9>Ashimite <yellow>in the <green>Sea of Corpses<yellow>.
       - <#824E21><i>Excellent for starting fires!
 resourcepack:
-  baseMaterial: minecraft:flint
   textures: mineinabyss:item/creature_drops/ashimite_hoof
-  itemPredicates:
-    customModelData: 3

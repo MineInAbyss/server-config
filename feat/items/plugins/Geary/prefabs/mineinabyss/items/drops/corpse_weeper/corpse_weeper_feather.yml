@@ -1,13 +1,10 @@
 set.item:
   item:
-    type: FEATHER
+    type: minecraft:feather
     itemName: "<#D12B26>Corpse-Weeper Feather"
     customModelData: 1
     lore:
       - <yellow>Dropped from <#FFF34E>Corpse-Weepers
       - <yellow>in the <green>Forest of Temptation<yellow>.
 resourcepack:
-  baseMaterial: minecraft:feather
   textures: mineinabyss:item/creature_drops/corpse_weeper_feather
-  itemPredicates:
-    customModelData: 1

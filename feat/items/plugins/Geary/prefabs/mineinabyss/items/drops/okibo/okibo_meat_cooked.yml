@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#10DEA7>Cooked Okibo Meat
     customModelData: 413
     lore:
@@ -26,7 +26,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/okibo_meat_cooked
-  itemPredicates:
-    customModelData: 413

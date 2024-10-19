@@ -24,7 +24,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:iron_ingot
   textures: mineinabyss:item/materials/charcoal_sand_ingot
-  itemPredicates:
-    customModelData: 1

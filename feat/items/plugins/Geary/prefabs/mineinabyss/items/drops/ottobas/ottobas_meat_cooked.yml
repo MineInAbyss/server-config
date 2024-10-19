@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#D8D8D8>Cooked Ottobas Meat
     customModelData: 414
     lore:
@@ -23,7 +23,4 @@ set.recipes:
       experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/ottobas_meat_cooked
-  itemPredicates:
-    customModelData: 414

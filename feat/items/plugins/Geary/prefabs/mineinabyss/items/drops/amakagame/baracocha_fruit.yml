@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: CHORUS_FRUIT
+    type: minecraft:chorus_fruit
     itemName: "<dark_purple>Baracocha Fruit"
     customModelData: 1
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <dark_purple>Amakagame <light_purple>smell just like them to lure
       - <light_purple>in their prey.
 resourcepack:
-  baseMaterial: minecraft:chorus_fruit
   textures: mineinabyss:item/creature_drops/baracocha_fruit
-  itemPredicates:
-    customModelData: 1

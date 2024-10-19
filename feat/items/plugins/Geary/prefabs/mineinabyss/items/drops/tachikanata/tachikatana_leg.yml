@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: SALMON
+    type: minecraft:salmon
     itemName: <#00FFFF>Tachikatana Leg
     customModelData: 2
     lore:
@@ -11,7 +11,4 @@ set.item:
       saturation: 5
       nutrition: 5
 resourcepack:
-  baseMaterial: minecraft:salmon
   textures: mineinabyss:item/creature_drops/tachikatana_leg
-  itemPredicates:
-    customModelData: 2

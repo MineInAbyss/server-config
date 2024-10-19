@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <dark_aqua>Depth Meter
     customModelData: 126
     lore:
@@ -35,7 +35,4 @@ observe:
 
 disableItemInteractions: { }
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/tools/depth_meter
-  itemPredicates:
-    customModelData: 126

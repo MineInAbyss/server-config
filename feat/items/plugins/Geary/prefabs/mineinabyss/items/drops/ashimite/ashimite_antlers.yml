@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: DEAD_HORN_CORAL
+    type: minecraft:dead_horn_coral
     itemName: "<#2597D9>Ashimite Antlers"
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#824E21><i>They use these to assert dominance.
       - <#824E21><i>Yet they run off when you get close...
 resourcepack:
-  baseMaterial: minecraft:dead_horn_coral
   textures: mineinabyss:item/creature_drops/ashimite_antlers
-  itemPredicates:
-    customModelData: 1

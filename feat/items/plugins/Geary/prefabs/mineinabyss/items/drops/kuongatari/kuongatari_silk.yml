@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: STRING
+    type: minecraft:string
     itemName: <#1FB53D>Kuongatari Silk
     customModelData: 1
     lore:
@@ -11,7 +11,4 @@ set.item:
       - <#167D2A><i>tensile strand of silk.
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:string
   textures: mineinabyss:item/creature_drops/kuongatari_silk
-  itemPredicates:
-    customModelData: 1

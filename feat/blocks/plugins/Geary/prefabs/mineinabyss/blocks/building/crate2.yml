@@ -1,7 +1,7 @@
 inherit: [mineinabyss:wood]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#e6c186>Crate 2
     customModelData: 2019
 set.block:

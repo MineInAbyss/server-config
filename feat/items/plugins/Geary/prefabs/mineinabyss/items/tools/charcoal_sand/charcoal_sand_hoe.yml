@@ -16,7 +16,4 @@ set.recipes:
         | S|
         | S|
 resourcepack:
-  baseMaterial: minecraft:diamond_hoe
   textures: mineinabyss:item/tools/charcoal_sand_hoe
-  itemPredicates:
-    customModelData: 1

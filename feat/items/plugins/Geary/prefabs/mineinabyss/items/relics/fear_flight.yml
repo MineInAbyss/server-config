@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: GLASS
+    type: minecraft:glass
     itemName: Fear Flight
     # customModelData: 102
 disableItemInteractions: { }

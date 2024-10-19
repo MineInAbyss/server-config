@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: FEATHER
+    type: minecraft:feather
     itemName: <#5C471D>Onitsuchi Feather
     customModelData: 4
     lore:
@@ -8,7 +8,4 @@ set.item:
       - <yellow>the <green>Goblets of Giants <yellow>and <green>Sea of Corpses<yellow>.
       - <#A9CCCA><i>It looks very combustible.
 resourcepack:
-  baseMaterial: minecraft:feather
   textures: mineinabyss:item/creature_drops/onitsuchi_feather
-  itemPredicates:
-    customModelData: 4

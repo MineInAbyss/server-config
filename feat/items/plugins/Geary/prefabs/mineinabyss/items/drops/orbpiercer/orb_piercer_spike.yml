@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: QUARTZ
+    type: minecraft:quartz
     itemName: <#A63535>Orb Piercer Spike
     customModelData: 1
     lore:
@@ -13,7 +13,4 @@ set.item:
       - <#D9D9D9><i>Their spines contain a very
       - <#D9D9D9><i>potent venom, so take caution!
 resourcepack:
-  baseMaterial: minecraft:quartz
   textures: mineinabyss:item/creature_drops/orb_piercer_spike
-  itemPredicates:
-    customModelData: 1

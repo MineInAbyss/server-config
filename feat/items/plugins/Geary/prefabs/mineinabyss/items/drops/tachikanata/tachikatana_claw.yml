@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: PRISMARINE_CRYSTALS
+    type: minecraft:prismarine_crystals
     itemName: <#00FFFF>Tachikatana Claw
     customModelData: 3
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <#1B5BAD><i>Striking it in a particular way emits
       - <#1B5BAD><i>a shockwave..
 resourcepack:
-  baseMaterial: minecraft:prismarine_crystals
   textures: mineinabyss:item/creature_drops/tachikatana_claw
-  itemPredicates:
-    customModelData: 3

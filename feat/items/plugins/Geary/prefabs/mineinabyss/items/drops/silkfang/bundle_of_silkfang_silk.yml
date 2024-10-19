@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: COBWEB
+    type: minecraft:cobweb
     itemName: <#116AAD>Bundle of Silkfang Silk
     customModelData: 1
     lore:
@@ -10,7 +10,4 @@ set.item:
       - <#ED4C4C><i>like this has a lot of potential
       - <#ED4C4C><i>for traps.
 resourcepack:
-  baseMaterial: minecraft:cobweb
   textures: mineinabyss:item/creature_drops/bundle_of_silkfang_silk
-  itemPredicates:
-    customModelData: 1

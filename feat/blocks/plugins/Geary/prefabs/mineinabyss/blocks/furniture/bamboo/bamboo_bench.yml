@@ -1,7 +1,7 @@
 inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
 set.item:
   item:
-    type: TIPPED_ARROW
+    type: minecraft:tipped_arrow
     itemName: <white>Bamboo Bench
     customModelData: 1
     color: 255, 255, 255

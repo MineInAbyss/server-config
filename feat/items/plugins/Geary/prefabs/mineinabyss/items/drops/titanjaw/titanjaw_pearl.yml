@@ -1,6 +1,6 @@
 set.item:
   item:
-    type: GHAST_TEAR
+    type: minecraft:ghast_tear
     itemName: <#3C3B4A>Titanjaw Pearl
     customModelData: 1
     lore:
@@ -9,7 +9,4 @@ set.item:
       - <yellow>in the <green>Sea of Corpses<yellow>.
       - <#0C7787><i>Why do I feel like I am haunted...
 resourcepack:
-  baseMaterial: minecraft:ghast_tear
   textures: mineinabyss:item/creature_drops/titanjaw_pearl
-  itemPredicates:
-    customModelData: 1

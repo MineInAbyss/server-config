@@ -17,7 +17,4 @@ set.recipes:
         - prefab: mineinabyss:demonfish_raw
         - type: FISHING_ROD
 resourcepack:
-  baseMaterial: minecraft:carrot_on_a_stick
   textures: mineinabyss:item/other/demonfish_on_a_stick
-  itemPredicates:
-    customModelData: 1
