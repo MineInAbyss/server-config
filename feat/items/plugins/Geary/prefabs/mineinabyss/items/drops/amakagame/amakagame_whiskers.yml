@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.item:
   item:
     type: minecraft:crimson_roots
@@ -8,7 +7,4 @@ set.item:
       - <light_purple>Smells fruity but something about it is really
       - <light_purple>not making me want to eat this...
 resourcepack:
-  baseMaterial: minecraft:crimson_roots
   textures: mineinabyss:item/creature_drops/amakagame_whiskers
-  itemPredicates:
-    customModelData: 1

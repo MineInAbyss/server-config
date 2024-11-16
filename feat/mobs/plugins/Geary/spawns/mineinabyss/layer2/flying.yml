@@ -1,0 +1,19 @@
+l2_flying:
+  position: AIR
+  priority: 0.0001
+  regions: [ layertwo ]
+  conditions:
+    - gap: 10..600
+    - maxNearby:
+        amount: 3
+
+# Common
+l2_hammerbeak: { inherit: l2_flying, type: mm:hammerbeak }
+l2_cyatoria: { inherit: l2_flying, type: mm:cyatoria }
+l2_dosetori: { inherit: l2_flying, type: mm:dosetori }
+
+# Uncommon
+l2_hammerbeakLarge: { inherit: l2_flying, type: mm:hammerbeakLarge, priority: 0.000025 }
+l2_corpse_weeper: { inherit: l2_flying, type: mm:corpse_weeper, priority: 0.000025 }
+# Rare
+l2_splitjaw: { inherit: l2_flying, type: mm:splitjaw, priority: 0.000005 }

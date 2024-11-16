@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Twinspur Orange
     customModelData: 3018
 set.block:
   blockType: WIRE
   blockId: 17
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/twinspur_orange
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:twinspur_orange

@@ -1,7 +1,6 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     customModelData: 124
     itemName: <dark_aqua>Star Compass Needle
     lore:
@@ -9,13 +8,10 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - mineinabyss:madokajack_scales
         - mineinabyss:kakatsumuri_glowing_tip
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/relics/star_compass/star_compass_needle
-  itemPredicates:
-    customModelData: 124

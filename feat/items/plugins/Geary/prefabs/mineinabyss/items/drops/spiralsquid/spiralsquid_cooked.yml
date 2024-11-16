@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#6CE5F5>Cooked Spiralsquid
     customModelData: 418
     lore:
@@ -15,7 +14,7 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:spiralsquid_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100

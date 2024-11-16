@@ -1,6 +1,7 @@
 - name:
   hosts: localhost
   connection: local
+  gather_facts: false
   vars:
     server_name: "{{ lookup('env', 'SERVER_NAME') }}"
     minecraft_uid: "{{ lookup('env', 'UID', '1000') }}"

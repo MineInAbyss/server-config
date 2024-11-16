@@ -1,10 +1,9 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: FIRE_CORAL
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
         - type: RED_DYE

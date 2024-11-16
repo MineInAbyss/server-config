@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#0B6623>Raw Hagamizukin
     customModelData: 322
     lore:
@@ -14,3 +13,5 @@ set.item:
       nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:hagamizukin_cooked
+resourcepack:
+  textures: mineinabyss:item/food/creatures/hagamizukin_raw

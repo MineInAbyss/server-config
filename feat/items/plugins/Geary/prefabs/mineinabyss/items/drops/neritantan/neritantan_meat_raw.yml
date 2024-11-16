@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#BDBDBD>Raw Neritantan Meat
     customModelData: 309
     lore:
@@ -15,7 +14,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:neritantan_meat_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/neritantan_meat_raw
-  itemPredicates:
-    customModelData: 309

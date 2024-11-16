@@ -1,15 +1,19 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
-    itemName: <dark_gray>Stone Sickle
-    type: minecraft:clock
+    itemName: Stone Sickle
+    type: minecraft:wooden_hoe
     customModelData: 2
     durability: 131
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M: minecraft:cobblestone
         S: minecraft:stick
@@ -20,5 +24,5 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 1

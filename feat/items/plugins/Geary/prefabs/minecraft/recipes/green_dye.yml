@@ -1,9 +1,8 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: GREEN_DYE
   group: "green_dye"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items: [ mineinabyss:splitjaw_gunk ]

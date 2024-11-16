@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#E0E0E0>Cooked Fuwagi Meat
     customModelData: 415
     lore:
@@ -17,16 +16,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:fuwagi_meat_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:fuwagi_meat_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/fuwagi_meat_cooked
-  itemPredicates:
-    customModelData: 415

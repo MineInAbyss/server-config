@@ -19,10 +19,6 @@ descent:
   enabled: false
 displayLocker:
   enabled: false
-enchants:
-  enabled: false
-exp:
-  enabled: false
 gondolas:
   enabled: false
 guilds:
@@ -50,13 +46,9 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: false
-pins:
-  enabled: false
 playerProfile:
   enabled: false
-survivalPvp:
-  enabled: false
-adventurePvp:
+pvp:
   enabled: false
 relics:
   enabled: false

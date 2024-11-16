@@ -27,7 +27,7 @@ equip-cosmetic: '%prefix% <gradient:#6D9DC5:#45CDE9>You have equipped <cosmetic>
 unequip-cosmetic: '%prefix% <gradient:#6D9DC5:#45CDE9>You have unequipped <cosmetic>!'
 hide-cosmetic: '%prefix% <gradient:#6D9DC5:#45CDE9>Hidden cosmetics'
 show-cosmetic: '%prefix% <gradient:#6D9DC5:#45CDE9>Revealed cosmetics!'
-hidden-cosmetics: '%prefix% <red>Your cosmetics are hidden!'
+hidden-cosmetics: ''
 emote-blocked: '%prefix% <red>You can not use your emote here!'
 emote-none: '%prefix% <red>You have no emote equipped!'
 invalid-slot: '%prefix% <red>Invalid cosmetic slot!'

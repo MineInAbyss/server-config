@@ -1,0 +1,17 @@
+l3_passive:
+  position: GROUND
+  priority: 0.001
+  regions: [ layerthree ]
+  amount: 1-3
+  spread: 7
+  ySpread: 1
+  conditions:
+    - blockBelow:
+        allow: [ WHITE_CONCRETE, STONE, COBBLESTONE, DIORITE, CALCITE ]
+    - maxNearby:
+        amount: 3
+
+l3_kakatsumuri: { inherit: l3_passive, type: mm:kakatsumuri }
+l3_sakuranbo: { inherit: l3_passive, type: mm:sakuranbo }
+l3_neritantan: { inherit: l3_passive, type: mm:neritantan }
+l3_rinsipede: { inherit: l3_passive, type: mm:rinsipede }

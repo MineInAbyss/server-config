@@ -1,5 +1,4 @@
-namespaces: [geary, blocky]
-breaking:
+blocky:breaking:
   hardness: 4.5
   modifiers:
     heldItems:

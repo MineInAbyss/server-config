@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/MineInAbyss/plugin-schemas/refs/heads/master/generated/mythicmobs.json": "**/MythicMobs/mobs/**/*.yml"
+    }
+}

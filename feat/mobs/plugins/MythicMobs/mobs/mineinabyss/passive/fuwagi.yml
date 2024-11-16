@@ -1,0 +1,39 @@
+fuwagi:
+  Type: PIG
+  SpawnCategory: passive
+  Display: "<#E0E0E0>Fuwagi"
+  Health: 10
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+    - fleeplayers{distance=5;speed=1;safespeed=1;conditions=[ - inlineofsight true ]}
+  AITargetSelectors:
+    - clear
+  Options:
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    Interactable: true
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+  Model:
+    Id: fuwagi
+    ViewRadius: 64
+    DamageTint: true
+  Drops:
+    - exp 3-7
+    - geary mineinabyss:fuwagi_meat_raw 1-2 0.6
+    - geary mineinabyss:fuwagi_foot 1-2 0.3
+    - geary mineinabyss:fuwagi_hide 1 0.4
+
+  Skills:
+    - effect:sound{s=mineinabyss:fuwagi;v=6;p=0.2} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.fuwagi.death;v=6;p=0.2} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.fuwagi.hurt;v=6;p=0.2} @self ~onDamaged
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+#    - skill{s=fuwagispawn} @self ~onspawn

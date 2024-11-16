@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#5C471D>Cooked Onitsuchi Wing
     customModelData: 408
     lore:
@@ -16,16 +15,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:onitsuchi_wing_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:onitsuchi_wing_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/onitsuchi_wing_cooked
-  itemPredicates:
-    customModelData: 408

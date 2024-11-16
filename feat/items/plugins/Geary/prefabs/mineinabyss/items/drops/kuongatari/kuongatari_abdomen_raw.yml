@@ -1,9 +1,8 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#1FB53D>Kuongatari Abdomen
-    customModelData: 21
+    customModelData: 321
     lore:
       - <yellow>Dropped by <#25D648>Kuongataris <yellow>infesting the
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
@@ -14,7 +13,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:kuongatari_abdomen_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen
-  itemPredicates:
-    customModelData: 301

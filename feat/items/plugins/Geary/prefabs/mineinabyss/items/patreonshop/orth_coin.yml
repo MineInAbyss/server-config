@@ -1,12 +1,8 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     itemName: <#ffbb1c><b>Orth Coin
     type: EMERALD
     customModelData: 1
-orthcoin: {}
+mineinabyss:orthcoin: {}
 resourcepack:
-  baseMaterial: minecraft:emerald
   model: mineinabyss:item/other/orth_coin
-  itemPredicates:
-    customModelData: 1

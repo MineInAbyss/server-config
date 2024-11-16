@@ -1,7 +1,6 @@
-namespaces: [ geary ]
 set.item:
   item:
-    type: APPLE
+    type: minecraft:apple
     itemName: <#03AC13>Stinger Abdomen
     customModelData: 21
     lore:

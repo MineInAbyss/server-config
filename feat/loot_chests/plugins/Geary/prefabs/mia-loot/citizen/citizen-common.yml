@@ -1,29 +1,29 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     - entries:
-        - !<mineinabyss:item>
+        - type: mineinabyss:item
           item: mineinabyss:bonfire
       conditions:
-        - !<minecraft:random_chance> { chance: 0.2 }
+        - { type: minecraft:random_chance, chance: 0.2 }
+
     # Ores
-    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 2 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           children:
-            - !<minecraft:item> { name: minecraft:iron_ingot }
-            - !<minecraft:item> { name: minecraft:copper_ingot }
+            - { type: minecraft:item,  name: minecraft:iron_ingot }
+            - { type: minecraft:item,  name: minecraft:copper_ingot }
           functions:
-            - !<minecraft:set_count>
-              count: !<minecraft:uniform> { min: 1, max: 4 }
+            - type: minecraft:set_count
+              count: { type: minecraft:uniform, min: 1, max: 4 }
     # Building materials
-    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 2 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           children:
-            - !<minecraft:item> { name: minecraft:oak_log }
-            - !<minecraft:item> { name: minecraft:birch_log }
-            - !<minecraft:item> { name: minecraft:spruce_log }
+            - { type: minecraft:item,  name: minecraft:oak_log }
+            - { type: minecraft:item,  name: minecraft:birch_log }
+            - { type: minecraft:item,  name: minecraft:spruce_log }
       functions:
-        - !<minecraft:set_count>
-          count: !<minecraft:uniform> { min: 1, max: 8 }
+        - type: minecraft:set_count
+          count: { type: minecraft:uniform, min: 1, max: 8 }

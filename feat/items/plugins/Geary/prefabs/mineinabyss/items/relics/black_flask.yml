@@ -1,7 +1,6 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
-    type: POTION
+    type: minecraft:potion
     itemName: <gold>Black Flask
     customModelData: 1
     lore:
@@ -11,21 +10,14 @@ set.item:
 observe:
   itemConsumed:
     - become: parent
-    #- set.potionEffects:
-    #    - type: minecraft:speed
-    #      duration: 7s
-    #      amplifier: 10
-    #    - type: minecraft:jump_boost
-    #      duration: 7s
-    #      amplifier: 3
-    - damage:
-        damage: 10
-        minHealth: 1
-        ignoreArmor: true
+    - applyPotionEffects:
+        - type: minecraft:speed
+          duration: 7s
+          amplifier: 10
+        - type: minecraft:jump_boost
+          duration: 7s
+          amplifier: 3
 resourcepack:
-  baseMaterial: minecraft:potion
   textures:
-    - mineinabyss:item/relics/consumable/black_flask
-    - mineinabyss:item/relics/consumable/black_flask
-  itemPredicates:
-    customModelData: 1
+    - mineinabyss:item/relics/consumables/black_flask
+    - mineinabyss:item/relics/consumables/black_flask

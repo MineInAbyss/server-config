@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: French Broom
     customModelData: 3016
 set.block:
   blockType: WIRE
   blockId: 15
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/french_broom
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:french_broom

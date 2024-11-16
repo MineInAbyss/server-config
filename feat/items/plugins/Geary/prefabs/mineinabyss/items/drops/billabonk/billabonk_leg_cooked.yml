@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: "<#0357AB>Cooked Billabonk Leg"
     customModelData: 405
     lore:
@@ -15,16 +14,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:billabonk_leg_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:billabonk_leg_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/billabonk_leg_cooked
-  itemPredicates:
-    customModelData: 405

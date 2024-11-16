@@ -1,11 +1,10 @@
-namespaces: [geary, mineinabyss]
 set.item:
   item:
     type: minecraft:paper
     customModelData: 3
 #events:
 #  leftClick:
-#    - !<cooldown>
+#    - type: cooldown
 #      name: Explosion
 #      length: 2s
 #      run:

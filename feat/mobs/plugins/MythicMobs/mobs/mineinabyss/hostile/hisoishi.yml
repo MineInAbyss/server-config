@@ -1,0 +1,101 @@
+hisoishi:
+  Type: ZOMBIE
+  SpawnCategory: passive
+  Display: "<#785F34>Hisoishi"
+  Modules:
+    ThreatTable: true
+  Health: 25 # change this
+  Damage: 0
+  Options:
+    PreventSunburn: true
+    KnockbackResistance: 0.6
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    MaxCombatDistance: 35
+    DigOutOfGround: true
+    PreventOtherDrops: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - attacker
+  Equipment:
+    - diamond_axe HAND
+  Model:
+    Id: hisoishi
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Drops:
+    - exp 10-20
+    - geary mineinabyss:hisoishi_claw 1-3 0.8
+    - geary mineinabyss:hisoishi_shell 1 0.2
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+    - skill{s=hs_backup} @self ~ondamaged
+    - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hsHurt} @self ~onHurt
+    - skill{s=hsDeath} @self ~onDeath
+    - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath
+
+
+
+
+
+
+
+
+
+
+
+baby_hisoishi:
+  Type: RAVAGER
+  Modules:
+    ThreatTable: true
+  Health: 40 # change this
+  Damage: 4
+  Options:
+    PreventSunburn: true
+    KnockbackResistance: 0.6
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MaxCombatDistance: 35
+  AIGoalSelectors:
+    - clear
+    - gotoparent
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  Equipment:
+    - diamond_axe HAND
+  Model:
+    Id: hisoishi
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 0.4
+  Skills:
+    ####### Misc
+    - CancelEvent{sync=true} @self ~onAttack
+    - skill{s=tj_backup} @self ~ondamaged
+    - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=tjHurt} @self ~onHurt
+    - skill{s=tjDeath} @self ~onDeath
+    - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,15 +1,19 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    itemName: <#63614E>Wooden Sickle
-    type: minecraft:clock
+    itemName: Wooden Sickle
+    type: minecraft:wooden_hoe
     customModelData: 1
     durability: 59
-    maxStackSize: 1
+    tool:
+      rules:
+        - blockTypes:
+            - "minecraft:leaves"
+          speed: 8.0
+          correctForDrops: TRUE
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         M:
           tag: planks
@@ -21,5 +25,5 @@ set.recipes:
 observe:
   itemRightClick:
     - become: parent
-    - sickle:
+    - mineinabyss:sickle:
         radius: 1

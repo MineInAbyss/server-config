@@ -1,0 +1,13 @@
+l1_vineflowers:
+  position: GROUND
+  priority: 0.00025
+  regions: [ layerone ]
+  conditions:
+    - blockBelow:
+        allow: [ grass_block, dirt, moss_block, dirt_path ]
+    - maxNearby:
+        amount: 2
+
+l1_vinebinder: { inherit: l1_vineflowers, type: mm:vinebinder }
+l1_vinepoofer: { inherit: l1_vineflowers, type: mm:vinepoofer }
+l2_vineblaster: { inherit: l1_vineflowers, type: mm:vineblaster, priority: 0.0001 }

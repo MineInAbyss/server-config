@@ -1,6 +1,5 @@
 Id: mia_baby_shroombear
 MythicMob: mia_baby_shroombear
-Permission: #mia_baby_shroombear
 Mountable: false
 Distance: 6
 SpawnRange: 3
@@ -153,3 +152,4 @@ Levels:
       Text: Your shroombear is Evolving!
       Type: TITLE
       Skill: mia_evolve
+Permission: mcpets.use

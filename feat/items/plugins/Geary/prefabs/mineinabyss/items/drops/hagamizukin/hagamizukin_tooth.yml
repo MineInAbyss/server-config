@@ -1,7 +1,6 @@
-namespaces: [ geary ]
 set.item:
   item:
-    type: QUARTZ
+    type: minecraft:quartz
     itemName: <#0B6623>Hagamizukin Tooth
     customModelData: 2
     lore:
@@ -9,3 +8,5 @@ set.item:
       - <yellow>killing a <#0B6623>Hagamizukin <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
       - <#A759FF>This thing is really sharp.
+resourcepack:
+  textures: mineinabyss:item/creature_drops/hagamizukin_tooth

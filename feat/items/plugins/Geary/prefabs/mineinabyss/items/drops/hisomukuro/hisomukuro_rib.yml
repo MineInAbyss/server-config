@@ -1,14 +1,14 @@
-namespaces: [geary]
 set.item:
   item:
-    type: TUFF
+    type: minecraft:bone
     itemName: <#5C7BCAD>Hisomukuro Rib
-    customModelData: 1
+    customModelData: 4
     lore:
       - <yellow>Can be obtained by finding
       - <yellow>a <#5C7BCAD>Hisomukuro <yellow>in the waters
       - <yellow>of the <green>Sea of Corpses<yellow>.
-      - <#524D47><i>Its bony on the outside but
-      - <#524D47><i>Metallic on the inside!
       - <#524D47><i>Surely I can use this for something...
 disableItemInteractions: {}
+
+resourcepack:
+  textures: mineinabyss:item/creature_drops/hisomukuro_rib

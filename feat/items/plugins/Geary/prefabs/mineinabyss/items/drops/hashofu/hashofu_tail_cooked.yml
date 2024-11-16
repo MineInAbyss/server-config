@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#454545>Cooked Hashofu Tail
     customModelData: 407
     lore:
@@ -16,16 +15,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:hashofu_tail_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:hashofu_tail_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/hashofu_tail_cooked
-  itemPredicates:
-    customModelData: 407

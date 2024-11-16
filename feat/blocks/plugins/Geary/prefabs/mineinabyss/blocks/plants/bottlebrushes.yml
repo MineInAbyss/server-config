@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: bottlebrushes
     customModelData: 3009
 set.block:
   blockType: WIRE
   blockId: 9
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/bottlebrushes
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:bottlebrushes

@@ -1,5 +1,4 @@
-namespaces: [geary, blocky]
-placableOn:
+blocky:placableOn:
   floor: true
   ceiling: false
   wall: false

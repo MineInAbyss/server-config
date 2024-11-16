@@ -1,0 +1,13 @@
+l3_flying:
+  position: AIR
+  priority: 0.0001
+  regions: [ layerthree ]
+  conditions:
+    - gap: 10..600
+
+# Common
+l3_dosetori: { inherit: l3_flying, type: mm:dosetori }
+l3_madokajack: { inherit: l3_flying, type: mm:madokajack }
+
+# Uncommon
+l3_splitjaw: { inherit: l3_flying, type: mm:splitjaw, priority: 0.000015 }

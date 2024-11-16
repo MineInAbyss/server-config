@@ -1,10 +1,9 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: HORN_CORAL_BLOCK
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         A:
           prefab: mineinabyss:ashimite_antlers

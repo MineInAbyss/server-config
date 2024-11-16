@@ -1,7 +1,6 @@
-namespaces: [ geary ]
 set.item:
   item:
-    type: CLAY_BALL
+    type: minecraft:clay_ball
     itemName: "<#800080>Edusan Scale"
     customModelData: 1
     lore:
@@ -11,7 +10,4 @@ set.item:
       - <#1B5BAD><i>Has a surprisingly soft texture.
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:clay_ball
   textures: mineinabyss:item/creature_drops/edusan_scale
-  itemPredicates:
-    customModelData: 1

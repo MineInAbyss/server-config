@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Freesia Pink
     customModelData: 3014
 set.block:
   blockType: WIRE
   blockId: 14
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/freesia_pink
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:freesia_pink

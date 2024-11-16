@@ -7,39 +7,39 @@
 # Spawners -> https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Spawners
 #
 Configuration:
-
+  
   # ================================================================================
   # Spawners
   # ================================================================================
 
-  # Nothing here yet
+    # Nothing here yet
 
-  # ================================================================================
+    # ================================================================================
   # Random Spawning
   # ================================================================================
   RandomSpawning:
-
+    
     # Disable vanilla mob spawning
     DisableVanillaSpawns: true
-
+    
     # Must be enabled for ADD method
-    GenerateSpawnPoints: true
-
+    GenerateSpawnPoints: false
+    
     # Area around players where mobs will try to spawn
     SpawnRadiusPerPlayer: 50
-    SpawnRadiusPerPlayerMin: 10
-    SpawnRadiusPerPlayerY: 25
-
+    SpawnRadiusPerPlayerMin: 16
+    SpawnRadiusPerPlayerY: 32
+    
     # Allows Mythic mobs to spawn this amount over the vanilla cap
     LimitMultiplier: 1
-
+    
     PointsPerSecond:
       Land: 5
       Air: 1
       Sea: 2
       Lava: 1
       Ground: 0
-
+    
     # Maximum milliseconds per tick spent on spawning
     MaxGenerationTime: 20
     PlayerClusterDistance: 24.0
@@ -48,5 +48,6 @@ Configuration:
     IgnoreVanillaMobs: false
     IgnoreUnnaturalMobs: false
     ReplaceObeysCap: false
+    MaxGenerationAttempts: 10
   Spawners:
     DisableCommandSaving: false

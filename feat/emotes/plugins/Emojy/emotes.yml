@@ -207,6 +207,12 @@ emotes:
   - id: salixw
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/salixw.png
+  - id: troopaw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/troopaw.png
+  - id: rabbitw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/rabbitw.png
   - id: admin
     template: role_template
     texture: mineinabyss:ui/roles/admin.png
@@ -486,16 +492,30 @@ emotes:
     texture: mineinabyss:ui/player_profiles/player_profile_patreon_armor_hidden.png
     height: 224
     ascent: 15
-  - id: player_profile_background
-    font: mineinabyss:playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background.png
-    height: 72
-    ascent: -2
-  - id: player_profile_background_2
-    font: mineinabyss:playerprofile
-    texture: mineinabyss:ui/player_profiles/player_profile_background_2.png
-    height: 72
-    ascent: -2
+  - id: orth_background
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/orth_background.png
+  - id: funeral_plaque
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/funeral_plaque.png
+  - id: ancient_ship
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/ancient_ship.png
+  - id: nanachi_hut
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/nanachi_hut.png
+  - id: golden_bridge
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/golden_bridge.png
+  - id: layer2_windmills
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/layer2_windmills.png
+  - id: layer6
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/layer6.png
+  - id: seeker_camp
+    template: playerprofile_background
+    texture: mineinabyss:ui/player_profiles/seeker_camp.png
   - id: player_profile_rank_admin
     template: playerprofile
     texture: mineinabyss:ui/roles/admin.png
@@ -624,12 +644,12 @@ emotes:
     font: mineinabyss:blocky
     texture: mineinabyss:ui/blocky/blocky_scrolling_up.png
     height: 17
-    ascent: -22
+    ascent: -96
   - id: blocky_scrolling_down
     font: mineinabyss:blocky
     texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
     height: 17
-    ascent: -58
+    ascent: -96
   - id: orthmap_icon
     font: mineinabyss:orth_map2
     texture: minecraft:gui/sprites/icon/accessibility.png

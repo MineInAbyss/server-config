@@ -1,0 +1,104 @@
+## OrthBanking
+orthbanking:
+  elements:
+    coins:
+      asset: "mineinabyss-orthcoins"
+      position:
+        x: 50
+        y: 0
+    tokens:
+      asset: "mineinabyss-tokens"
+      position:
+        x: 50
+        y: 0
+    coins-offhand:
+      asset: 'mineinabyss-orthcoins-offhand'
+      position:
+        x: 50
+        y: 0
+    tokens-offhand:
+      asset: 'mineinabyss-tokens-offhand'
+      position:
+        x: 50
+        y: 0
+
+## Abyss-Layers
+layers:
+  elements:
+    orth:
+      asset: 'mineinabyss-orth'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -60
+        y: -8.0
+    edge_of_the_abyss:
+      asset: 'mineinabyss-edge_of_the_abyss'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: 5
+        y: -8.0
+    forest_of_temptation:
+      asset: 'mineinabyss-forest_of_temptation'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: 30
+        y: -8.0
+    great_fault:
+      asset: 'mineinabyss-great_fault'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -30
+        y: -8.0
+    goblets_of_giants:
+      asset: 'mineinabyss-goblets_of_giants'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -30
+        y: -8.0
+    sea_of_corpses:
+      asset: 'mineinabyss-sea_of_corpses'
+      align: center
+      position:
+        x: 50
+        y: 100
+      offset:
+        x: -12
+        y: -8.0
+
+
+## Relics & Tools
+#relics_and_tools:
+#  elements:
+#    depth:
+#      asset: 'mineinabyss-depth'
+#      align: center
+#      position:
+#        x: 50
+#        y: 100
+#      offset:
+#        x: 60
+#        y: -8.0
+#    starcompass:
+#      align: center
+#      asset: 'mineinabyss-starcompass'
+#      position:
+#        x: 50
+#        y: 100
+#      offset:
+#        x: -5
+#        y: -5

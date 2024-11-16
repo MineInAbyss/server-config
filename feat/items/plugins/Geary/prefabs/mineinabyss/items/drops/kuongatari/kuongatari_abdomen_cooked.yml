@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#1FB53D>Cooked Kuongatari Abdomen
     customModelData: 421
     lore:
@@ -14,16 +13,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:kuongatari_abdomen_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:kuongatari_abdomen_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen_cooked
-  itemPredicates:
-    customModelData: 421

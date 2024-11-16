@@ -1,20 +1,19 @@
-namespaces: [geary, blocky]
 inherit:
   - mineinabyss:wood
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Carved Mangrove Log
     customModelData: 2025
 set.block:
   blockType: NOTEBLOCK
   blockId: 17
-pack:
+blocky:pack:
   model: mineinabyss:block/logs/carved_mangrove_log
-directional:
+blocky:directional:
   yBlock: mineinabyss:carved_mangrove_log_y
   xBlock: mineinabyss:carved_mangrove_log_x
   zBlock: mineinabyss:carved_mangrove_log_z
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:carved_mangrove_log

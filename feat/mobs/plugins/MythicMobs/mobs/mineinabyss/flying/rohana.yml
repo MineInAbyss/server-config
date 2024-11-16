@@ -1,6 +1,7 @@
 rohana:
   Type: ALLAY
-  Display: "Rohana"
+  SpawnCategory: flying
+  Display: "<#6C19BF>Rohana"
   Health: 10
   AIGoalSelectors:
     - clear
@@ -31,13 +32,12 @@ rohana:
 
   Skills:
     - prefabs{p=mineinabyss:custom_allay} @self ~onSpawnOrLoad
- #   - skill{s=rohanaspawn} @self ~onspawn
+    #    - skill{s=rohanaspawn} @self ~onspawn
 
     - bodyclamp{m=rohana;c=15} @self ~onSpawn
     - bodyclamp{m=rohana;c=15} @self ~onLoad
     - setspeed{type=flying;speed=1} @self ~onSpawn
     - state{mid=rohana;s=attack} @self ~onAttack
-  # - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=displayHealth} ~onDamaged  
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
-    - skill{s=stingerhead_unstuck} @self ~ondamaged

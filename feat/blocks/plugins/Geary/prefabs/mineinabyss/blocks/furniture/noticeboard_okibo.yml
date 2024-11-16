@@ -1,7 +1,6 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#33404d>Noticeboard Okibo
     customModelData: 1032
 blocky:sound:
@@ -10,9 +9,8 @@ blocky:sound:
   stepSound: block.wood.step
   hitSound: block.wood.hit
   fallSound: block.wood.fall
-furniture:
+blocky:furniture:
   properties:
-    persistent: false
     brightness:
       blockLight: 15
     displayTransform: NONE
@@ -24,7 +22,7 @@ furniture:
   interactionHitbox:
     - width: 2
       height: 0.5
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:noticeboard_okibo
 

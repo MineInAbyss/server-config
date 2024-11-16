@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: RED_WOOL
+    type: minecraft:red_wool
     itemName: "<#D63624>Chimokami Tail"
     customModelData: 1
     lore:
@@ -11,7 +10,4 @@ set.item:
       - <yellow>the <green>Forest of Temptation<yellow>.
 disableItemInteractions: {}
 resourcepack:
-  baseMaterial: minecraft:red_wool
   textures: mineinabyss:item/creature_drops/chimokami_tail
-  itemPredicates:
-    customModelData: 1

@@ -17,22 +17,23 @@ modelengine:
 custom_hud:
   default: true
   required: false
+  filePath: MythicHUD/built-pack
 emotes:
   default: true
   required: true
   filePath: Emojy/pack.zip
+openinv_addon:
+  default: true
+  required: true
+  githubDownload:
+    org: Jikoo
+    repo: OpenInv
+    branch: master
+    subFolder: resource-pack
 custom_blocks:
   default: true
   required: true
   filePath: Blocky/pack
-build:
-  default: true
-  required: true
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: build
 premium_content:
   default: true
   required: true

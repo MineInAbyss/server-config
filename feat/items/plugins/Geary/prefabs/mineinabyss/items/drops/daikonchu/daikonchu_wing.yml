@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: LEATHER
+    type: minecraft:leather
     itemName: "<#FFF821>Daikonchu Wing"
     customModelData: 2
     lore:

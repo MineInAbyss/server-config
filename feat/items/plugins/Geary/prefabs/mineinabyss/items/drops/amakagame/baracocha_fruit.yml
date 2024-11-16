@@ -1,13 +1,9 @@
-namespaces: [geary]
 set.item:
   item:
-    type: CHORUS_FRUIT
+    type: minecraft:chorus_fruit
     itemName: "<dark_purple>Baracocha Fruit"
     customModelData: 1
     lore:
       - <light_purple>Loved by Neritantan all over the Great Fault.
 resourcepack:
-  baseMaterial: minecraft:chorus_fruit
   textures: mineinabyss:item/creature_drops/baracocha_fruit
-  itemPredicates:
-    customModelData: 1

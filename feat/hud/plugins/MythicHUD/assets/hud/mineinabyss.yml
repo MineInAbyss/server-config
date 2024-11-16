@@ -3,6 +3,7 @@ mineinabyss-orthcoins:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
     - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
+    - gamemode{gm=survival,adventure} true hide
   layers:
     text:
       align: left
@@ -15,6 +16,7 @@ mineinabyss-orthcoins-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
     - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
+    - gamemode{gm=survival,adventure} true hide
   layers:
     text:
       align: left
@@ -27,6 +29,7 @@ mineinabyss-tokens:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
     - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
+    - gamemode{gm=survival,adventure} true hide
   layers:
     text:
       align: left
@@ -39,6 +42,7 @@ mineinabyss-tokens-offhand:
   conditions:
     - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
     - placeholder{ph=%mineinabyss_orthbanking_hud_state%;v=false} false hide
+    - gamemode{gm=survival,adventure} true hide
   layers:
     text:
       align: left

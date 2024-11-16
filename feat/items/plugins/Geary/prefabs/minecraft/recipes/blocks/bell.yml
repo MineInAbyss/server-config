@@ -1,10 +1,9 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: BELL
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         G:
           type: GOLD_BLOCK

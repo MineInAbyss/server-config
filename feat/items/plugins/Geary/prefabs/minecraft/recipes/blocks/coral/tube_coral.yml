@@ -1,15 +1,14 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: TUBE_CORAL
   group: "looty:tube_coral"
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
         - type: BLUE_DYE
-    - !<shapeless>
+    - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
         - type: CYAN_DYE

@@ -1,11 +1,10 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: TUBE_CORAL_BLOCK
   group: "looty:tube_coral_block"
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         A:
           prefab: mineinabyss:ashimite_antlers
@@ -15,7 +14,7 @@ set.recipes:
         | A |
         |ABA|
         | A |
-    - !<shaped>
+    - type: shaped
       items:
         A:
           prefab: mineinabyss:ashimite_antlers

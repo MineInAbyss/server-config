@@ -1,21 +1,20 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:snow]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Snow Pillar
     customModelData: 2050
 set.block:
   blockType: NOTEBLOCK
   blockId: 47
-pack:
+blocky:pack:
   model: "mineinabyss:block/snow/snow_pillar"
-directional:
+blocky:directional:
   yBlock: mineinabyss:snow_pillar_y
   xBlock: mineinabyss:snow_pillar_x
   zBlock: mineinabyss:snow_pillar_z
 
-drops:
+blocky:drops:
   acceptedToolTypes: [ SHOVEL ]
   onlyDropWithCorrectTool: true
   drops:

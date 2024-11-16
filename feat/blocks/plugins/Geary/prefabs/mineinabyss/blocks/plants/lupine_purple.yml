@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Lupine Purple
     customModelData: 3017
 set.block:
   blockType: WIRE
   blockId: 16
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/lupine_purple
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:lupine_purple

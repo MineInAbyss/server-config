@@ -1,39 +1,38 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     # Food recipe items
-    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 2 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           children:
-            - !<minecraft:item> { name: minecraft:wheat }
-            - !<minecraft:item> { name: minecraft:sugar }
-            - !<minecraft:item> { name: minecraft:potato }
+            - { type: minecraft:item,  name: minecraft:wheat }
+            - { type: minecraft:item,  name: minecraft:sugar }
+            - { type: minecraft:item,  name: minecraft:potato }
           functions:
-            - !<minecraft:set_count>
-              count: !<minecraft:uniform> { min: 1, max: 4 }
+            - type: minecraft:set_count
+              count: { type: minecraft:uniform, min: 1, max: 4 }
     # Monster food
-    - rolls: !<minecraft:uniform> { min: 1, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 1, max: 2 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:fuwagi_meat_cooked
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:hammerbeak_wing_cooked
           functions:
-            - !<minecraft:set_count>
-              count: !<minecraft:uniform> { min: 1, max: 2 }
+            - type: minecraft:set_count
+              count: { type: minecraft:uniform, min: 1, max: 2 }
     # Seeds
-    - rolls: !<minecraft:uniform> { min: 0, max: 2 }
+    - rolls: { type: minecraft:uniform, min: 0, max: 2 }
       entries:
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<minecraft:item> { name: minecraft:wheat_seeds }
-            - !<minecraft:item> { name: minecraft:beetroot_seeds }
-            - !<minecraft:item> { name: minecraft:carrot_seeds }
+            - { type: minecraft:item,  name: minecraft:wheat_seeds }
+            - { type: minecraft:item,  name: minecraft:beetroot_seeds }
+            - { type: minecraft:item,  name: minecraft:carrot_seeds }
           functions:
-            - !<minecraft:set_count>
-              count: !<minecraft:uniform> { min: 1, max: 4 }
+            - type: minecraft:set_count
+              count: { type: minecraft:uniform, min: 1, max: 4 }

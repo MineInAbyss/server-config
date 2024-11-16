@@ -2,8 +2,7 @@ title: ":space_-8::cosmetic_grid_menu:"
 rows: 6
 items:
   neritantan_balloon:
-    slots:
-      - 0
+    slots: 0
     model: neritantan_balloon
     dyeable: true
     item:
@@ -20,8 +19,7 @@ items:
     cost: 2
     cosmetic: neritantan_balloon
   splitjaw_balloon:
-    slots:
-      - 1
+    slots: 1
     model: splitjaw_balloon
     dyeable: false
     item:
@@ -39,8 +37,7 @@ items:
     cosmetic: splitjaw_balloon
 
   back_button:
-    slots:
-      - 49
+    slots: 49
     item:
       material: PAPER
       name: "<red>To Main Menu"

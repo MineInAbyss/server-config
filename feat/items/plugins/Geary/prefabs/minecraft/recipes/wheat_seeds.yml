@@ -1,9 +1,8 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: WHEAT_SEEDS
   recipes:
-    - !<shapeless>
+    - type: shapeless
       items:
         - type: WHEAT

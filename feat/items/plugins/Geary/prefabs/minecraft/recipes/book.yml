@@ -1,11 +1,10 @@
-namespaces: [geary]
 set.recipes:
   discoverRecipes: true
   result:
     type: BOOK
   group: "looty:book"
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         S:
           prefab: mineinabyss:silkfang_silk
@@ -15,7 +14,7 @@ set.recipes:
         |SP |
         |SP |
         |SP |
-    - !<shaped>
+    - type: shaped
       items:
         S:
           prefab: mineinabyss:kuongatari_silk

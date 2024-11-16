@@ -1,11 +1,10 @@
-namespaces: [geary, mineinabyss]
 disableItemInteractions: {}
 set.item:
   item:
     itemName: Grappling Hook
     type: IRON_HOE
     customModelData: 1
-grappling_hook:
+mineinabyss:grapplingHook:
   range: 200
   hookSpeed: 2.0
   pullSpeed: 2.0

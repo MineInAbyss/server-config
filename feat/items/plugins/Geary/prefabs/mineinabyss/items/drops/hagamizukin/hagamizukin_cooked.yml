@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#0B6623>Cooked Hagamizukin
     customModelData: 422
     lore:
@@ -15,11 +14,13 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: mineinabyss:hagamizukin_raw
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: mineinabyss:hagamizukin_raw
-      experience: 2f
+      experience: 2
       cookingTime: 50
+resourcepack:
+  textures: mineinabyss:item/food/creatures/hagamizukin_cooked

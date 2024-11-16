@@ -1,18 +1,17 @@
-namespaces: [geary, blocky]
 inherit:
   - mineinabyss:wood
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#e6c186>Crate 1
     customModelData: 2018
 set.block:
   blockType: NOTEBLOCK
   blockId: 32
 
-pack:
+blocky:pack:
   model: "mineinabyss:block/building/crate1"
 
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:crate1

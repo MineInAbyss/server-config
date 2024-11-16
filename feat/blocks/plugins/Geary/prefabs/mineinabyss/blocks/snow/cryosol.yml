@@ -1,15 +1,14 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:snow]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Cryosol
     customModelData: 2042
 set.block:
   blockType: NOTEBLOCK
   blockId: 35
-pack:
+blocky:pack:
   model: "mineinabyss:block/snow/cryosol"
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:cryosol

@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: COOKED_COD
+    type: minecraft:cooked_cod
     itemName: "<#257BEB>Raw Ikenosuke"
     customModelData: 0
     lore:

@@ -1,0 +1,47 @@
+vanilla:
+  elements:
+    health:
+      asset: 'vanilla-health'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -50.0
+        y: 41.0
+    food:
+      asset: 'vanilla-food'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 34.0
+        y: 41.0
+    exp:
+      asset: 'vanilla-exp'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 2.0
+        y: 32
+    armor:
+      asset: 'vanilla-armor'
+      align: right
+      position:
+        x: 100.0
+        y: 0.0
+      offset:
+        x: -18
+        y: 100
+    air:
+      asset: 'vanilla-air'
+      align: right
+      position:
+        x: 100.0
+        y: 0.0
+      offset:
+        x: -30
+        y: 100

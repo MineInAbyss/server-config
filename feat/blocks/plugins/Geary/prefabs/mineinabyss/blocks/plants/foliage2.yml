@@ -1,15 +1,14 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#7a4e48>Foliage 2
     customModelData: 3002
 set.block:
   blockType: WIRE
   blockId: 2
 
-pack:
+blocky:pack:
   model: mineinabyss:block/nature/foliage2
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:foliage2

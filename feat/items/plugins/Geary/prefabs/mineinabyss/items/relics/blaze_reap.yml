@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: minecraft:paper
@@ -25,4 +24,5 @@ observe:
     - explode:
         breakBlocks: false
         power: 2
-        at: "{{ entity.getTargetBlock { maxDistance: 10 } }}"
+      with:
+        location: "{{ entity.getTargetBlock { maxDistance: 10 } }}"

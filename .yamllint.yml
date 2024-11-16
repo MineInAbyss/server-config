@@ -5,14 +5,14 @@ yaml-files:
 
 rules:
   anchors: enable
-  braces: enable
-  brackets: enable
+  braces:
+    max-spaces-inside: 1
+  brackets:
+    max-spaces-inside: 1
   colons: enable
-  commas: enable
-  comments:
-    level: warning
-  comments-indentation:
-    level: warning
+  commas: disable
+  comments: disable
+  comments-indentation: disable
   document-end: disable
   document-start: disable
   empty-lines: enable
@@ -23,7 +23,8 @@ rules:
   key-duplicates: enable
   key-ordering: disable
   line-length: disable
-  new-line-at-end-of-file: enable
+  new-line-at-end-of-file:
+    level: warning
   new-lines: enable
   octal-values: disable
   quoted-strings: disable

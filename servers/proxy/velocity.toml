@@ -7,7 +7,7 @@ bind = "0.0.0.0:25577"
 motd = "<dark_aqua>A Velocity Server"
 # What should we display for the maximum number of players? (Velocity does not support a cap
 # on the number of players online.)
-show-max-players = 100
+show-max-players = 200
 # Should we authenticate players with Mojang? By default, this is on.
 online-mode = true
 #Should the proxy enforce the new public key security standard? By default, this is on.
@@ -61,11 +61,12 @@ dev = "minecraft-dev:25565"
 dev-alpha = "minecraft-dev-alpha:25565"
 dev-beta = "minecraft-dev-beta:25565"
 dev-gamma = "minecraft-dev-gamma:25565"
+staging = "minecraft-staging:25565"
 build = "minecraft-build:25565"
 survival = "minecraft-survival:25565"
 archive = "minecraft-archive:25565"
 # In what order we should try servers when a player logs in or is kicked from aserver.
-try = ["survival", "build", "dev"]
+try = ["survival", "build" ]
 
 # factions = "127.0.0.1:30067"
 [forced-hosts]
@@ -73,6 +74,7 @@ try = ["survival", "build", "dev"]
 "survive.mineinabyss.com" = ["survival"]
 "build.mineinabyss.com" = ["build"]
 "dev.mineinabyss.com" = ["dev"]
+"staging.mineinabyss.com" = ["staging"]
 "alpha.dev.mineinabyss.com" = ["dev-alpha"]
 "beta.dev.mineinabyss.com" = ["dev-beta"]
 "gamma.dev.mineinabyss.com" = ["dev-gamma"]

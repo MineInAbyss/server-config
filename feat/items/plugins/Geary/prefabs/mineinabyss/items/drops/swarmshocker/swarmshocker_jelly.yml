@@ -1,0 +1,14 @@
+set.item:
+  item:
+    type: minecraft:slime_ball
+    itemName: "<#257BEB>Swarmhoarder Jelly"
+    customModelData: 3
+    lore:
+      - <yellow>Can be obtained by finding and
+      - <yellow>killing a <#257BEB>Swarm Hoarder <yellow>in the
+      - <yellow>waters of the <green>Sea of Corpses<yellow>.
+      - <#1B5BAD><i>Very sticky, almost like some sort of resin.
+      - <#1B5BAD><i>Tastes very watery...
+disableItemInteractions: { }
+resourcepack:
+  textures: mineinabyss:item/creature_drops/swarmshocker_jelly

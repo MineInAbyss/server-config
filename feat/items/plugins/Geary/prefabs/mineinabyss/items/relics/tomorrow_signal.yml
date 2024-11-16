@@ -1,4 +1,3 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
     type: minecraft:paper
@@ -16,10 +15,12 @@ observe:
         display: <dark_gray>Tomorrow Signal
     - eval: "entity.getTargetBlock { maxDistance: 15 }"
       register: targetBlock
-    - smite:
-        at: "{{ targetBlock }}"
+    - smite: {}
+      with:
+        location: "{{ targetBlock }}"
     - particle:
         particle: CLOUD
         count: 10
         speed: 0.2
-        at: "{{ targetBlock }}"
+      with:
+        location: "{{ targetBlock }}"

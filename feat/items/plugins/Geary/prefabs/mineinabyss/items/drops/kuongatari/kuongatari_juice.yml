@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: LIME_DYE
+    type: minecraft:lime_dye
     itemName: <#1FB53D>Kuongatari Juice
     customModelData: 1
     lore:
@@ -9,7 +8,4 @@ set.item:
       - <green>Goblets of Giants <yellow>and the <green>Sea of Corpses<yellow>.
       - <#167D2A><i>The substance has a vibrant, green hue.
 resourcepack:
-  baseMaterial: minecraft:lime_dye
   textures: mineinabyss:item/creature_drops/kuongatari_juice
-  itemPredicates:
-    customModelData: 1

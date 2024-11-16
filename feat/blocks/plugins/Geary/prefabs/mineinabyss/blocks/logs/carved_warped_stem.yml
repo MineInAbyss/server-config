@@ -1,20 +1,19 @@
-namespaces: [geary, blocky]
 inherit:
   - mineinabyss:wood
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Carved Warped Stem
     customModelData: 2028
 set.block:
   blockType: NOTEBLOCK
   blockId: 26
-pack:
+blocky:pack:
   model: mineinabyss:block/logs/carved_warped_stem
-directional:
+blocky:directional:
   yBlock: mineinabyss:carved_warped_stem_y
   xBlock: mineinabyss:carved_warped_stem_x
   zBlock: mineinabyss:carved_warped_stem_z
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:carved_warped_stem

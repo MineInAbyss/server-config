@@ -1,8 +1,7 @@
-namespaces: [geary, blocky]
 inherit: [mineinabyss:ground_furniture]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <white>Sculk Big Table
     customModelData: 1022
 blocky:sound:
@@ -11,14 +10,14 @@ blocky:sound:
   stepSound: block.amethyst_cluster.step
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
-furniture:
+blocky:furniture:
   collisionHitbox:
     - x: -1
     - x: 1
     - z: 1
     - x: -1
       z: 1
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:sculk_big_table
 

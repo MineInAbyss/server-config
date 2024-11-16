@@ -1,0 +1,8 @@
+set.item:
+  item:
+    hideTooltip: true
+    type: minecraft:paper
+    customModelData: 11
+
+resourcepack:
+  textures: cosmetics:item/ui/dye_scrollable_next

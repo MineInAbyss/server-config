@@ -1,4 +1,3 @@
-namespaces: [geary]
 set.recipes:
   result:
     type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
@@ -7,7 +6,7 @@ set.recipes:
     - "minecraft:netherite_upgrade_smithing_template"
   group: "netherite_upgrade_smithing_template"
   recipes:
-    - !<shaped>
+    - type: shaped
       items:
         S:
           prefab: mineinabyss:silkfang_eye

@@ -1,8 +1,7 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
-    itemName: <#9A1CAD>Raw chikyuoebi
+    type: minecraft:paper
+    itemName: <#9A1CAD>Raw Chikyuoebi
     customModelData: 323
     lore:
       - <yellow>Can be obtained by finding and
@@ -14,3 +13,4 @@ set.item:
       nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:chikyuoebi_cooked
+

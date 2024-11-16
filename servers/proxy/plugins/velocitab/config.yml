@@ -23,14 +23,14 @@ show_all_players_from_all_groups: false
 # Define custom names to be shown in the TAB list for specific server names.
 # If no custom display name is provided for a server, its original name will be used.
 server_display_names:
-  survival: [](font=roles)
-  build: [](font=roles)
-  dev: [](font=roles)
-  test: [](font=roles)
-  archive: [](font=roles)
-  dev-alpha: [](font=roles)
-  dev-beta: [](font=roles)
-  dev-gamma: [](font=roles)
+  survival: "[](font=mineinabyss:roles)"
+  build: "[](font=mineinabyss:roles)"
+  dev: "[](font=mineinabyss:roles)"
+  test: "[](font=mineinabyss:roles)"
+  archive: "[](font=mineinabyss:roles)"
+  dev-alpha: "[](font=mineinabyss:roles)"
+  dev-beta: "[](font=mineinabyss:roles)"
+  dev-gamma: "[](font=mineinabyss:roles)"
 # Whether to enable the PAPIProxyBridge hook for PAPI support
 enable_papi_hook: true
 # How long in seconds to cache PAPI placeholders for, in milliseconds. (0 to disable)

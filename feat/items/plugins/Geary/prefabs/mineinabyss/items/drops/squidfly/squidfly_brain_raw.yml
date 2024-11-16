@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#85512E>Squidfly Brain
     customModelData: 319
     lore:
@@ -16,7 +15,4 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:squidfly_brain_cooked
 resourcepack:
-  baseMaterial: minecraft:paper
   textures: mineinabyss:item/food/creatures/squidfly_brain_raw
-  itemPredicates:
-    customModelData: 319

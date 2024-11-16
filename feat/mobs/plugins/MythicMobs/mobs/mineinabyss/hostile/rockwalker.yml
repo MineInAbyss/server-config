@@ -1,0 +1,44 @@
+rockwalker:
+  Type: SPIDER
+  SpawnCategory: hostile
+  Display: "<#BE6400>Rockwalker"
+  Modules:
+    ThreatTable: true
+  Health: 25 # change this
+  Damage: 6
+  Options:
+    PreventSunburn: true
+    KnockbackResistance: 0.6
+    Collidable: true
+    Silent: true
+    FollowRange: 20
+    MaxCombatDistance: 35
+    PreventOtherDrops: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+  Model:
+    Id: rockwalker
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:rockwalker_mandible 1-2 0.8
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=hs_backup} @self ~ondamaged
+    - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hsHurt} @self ~onHurt
+    - skill{s=hsDeath} @self ~onDeath
+    - state{mid=rockwalker;s=attack;li=3;lo=3} @self ~onAttack
+  #- skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: POTION
+    type: minecraft:potion
     itemName: "<#b5955f>Haste Potion"
     lore:
       - <light_purple>Haste II</light_purple> <blue>(3:00)</blue>
@@ -21,7 +20,7 @@ set.item:
             amplifier: 1
           probability: 1.0
 
-set.potion_mixes:
+set.potionMixes:
   potionmixes:
     - ingredient: minecraft:glowstone_dust
       input: mineinabyss:haste_potion

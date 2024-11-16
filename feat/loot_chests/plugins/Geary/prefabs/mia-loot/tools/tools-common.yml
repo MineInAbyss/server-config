@@ -1,25 +1,24 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     # Tools
     - entries:
         # Wooden tools
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 3
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:wooden_sickle
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:wooden_axe
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:wooden_pickaxe
         # Stone tools
-        - !<minecraft:group>
+        - type: minecraft:group
           weight: 1
           children:
-            - !<mineinabyss:item>
+            - type: mineinabyss:item
               item: mineinabyss:stone_sickle
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:stone_axe
-            - !<minecraft:item>
+            - type: minecraft:item
               name: minecraft:stone_pickaxe

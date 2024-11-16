@@ -1,0 +1,40 @@
+demonfish:
+  Type: SALMON
+  SpawnCategory: water
+  Display: "<#1B91B5>Demonfish"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - movetowater
+    - meleeattack
+    - movetowardstarget
+    - fleeplayers
+    - randomlookaround
+    - randomfly
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Health: 30 # change this
+  Damage: 5
+  Options:
+    Silent: false
+    FollowRange: 25
+    MovementSpeed: 0.6
+    Interactable: true
+    KnockbackResistance: 0.0
+    PreventOtherDrops: true
+  Drops:
+    - geary mineinabyss:demonfish_raw 1-2 0.6
+  Model:
+    Id: qmob_demonfish
+    ViewRadius: 64
+    DamageTint: true
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - look{immediately=true} @targetLocation ~onTimer:10
+    - propel{v=0.25;delay=<random.0to10>;repeat=19;repeatInterval=1} @targetLocation ~onTimer:55 0.9 ?inBlock{b=WATER} ?inCombat{}
+    - propel{v=0.1;delay=<random.0to20>;repeat=<random.40to70>;repeatInterval=1} @targetlocation ~onTimer:100 0.45 ?inBlock{b=WATER}

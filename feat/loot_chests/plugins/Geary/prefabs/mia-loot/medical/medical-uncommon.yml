@@ -1,11 +1,10 @@
-namespaces: [ mineinabyss ]
-loot_table:
+mineinabyss:lootTable:
   pools:
     - entries:
-        - !<mineinabyss:item>
+        - type: mineinabyss:item
           item: mineinabyss:parasitic_watershrooms
       conditions:
-        - !<minecraft:random_chance> { chance: 0.75 }
+        - { type: minecraft:random_chance, chance: 0.75 }
       functions:
-        - !<minecraft:set_count>
-          count: !<minecraft:uniform> { min: 1, max: 4 }
+        - type: minecraft:set_count
+          count: { type: minecraft:uniform, min: 1, max: 4 }

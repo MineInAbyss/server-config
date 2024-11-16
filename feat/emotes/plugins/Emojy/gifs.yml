@@ -3,6 +3,7 @@ gifs:
     framePath: emotes:gifs/amogusdumpy
     ascent: 9
     height: 11
+    offset: -13
   - id: bonedance
     framePath: emotes:gifs/bonedance
     ascent: 9
@@ -27,6 +28,7 @@ gifs:
     framePath: emotes:gifs/necoflap
     ascent: 9
     height: 11
+    offset: -9
   - id: pepedance
     framePath: emotes:gifs/pepedance
     ascent: 9
@@ -35,10 +37,12 @@ gifs:
     framePath: emotes:gifs/pruskhapat
     ascent: 9
     height: 11
+    offset: -17
   - id: regangry
     framePath: emotes:gifs/regangry
     ascent: 9
     height: 11
+    offset: -12
   - id: rikopew
     framePath: emotes:gifs/rikopew
     ascent: 9

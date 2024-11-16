@@ -2,7 +2,7 @@
 # Vanilla RP Title: <white>
 # Oraxen Configuration Title: <white><s:-8><g:dye_menu>
 # ItemsAdder Configuration Title: '<white>:img_offset_-8::img_dye_menu:'
-title: <gradient:#aa3159:#8c0c0c>HMCColor
+title: ':space_-8::cosmetic_dye_menu:'
 rows: 6
 buttons:
   # Can also be: 
@@ -40,7 +40,7 @@ buttons:
     baseColorItem: null
   subColorGrid:
     # Valid types are: NORMAL, SCROLLING
-    type: NORMAL
+    type: SCROLLING
     # Whether to ignore the listed subcolors and instead use a gradient from the white->baseColor->black.
     autoFillColorGradient: true
     normalGrid:
@@ -51,13 +51,9 @@ buttons:
       backwardsSlot: 45
       forwardsSlot: 53
       backwardsItem:
-        type: minecraft:arrow
-        customModelData: 1
-        displayName: Scroll sub-colors backwards
+        prefab: cosmetics:dye_scrollable_prev
       forwardsItem:
-        type: minecraft:arrow
-        customModelData: 2
-        displayName: Scroll sub-colors forward
+        prefab: cosmetics:dye_scrollable_next
     # subColorItem can be specified, null defaults to Buttons.item
     subColorItem: null
   effectButton: 31

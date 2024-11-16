@@ -1,7 +1,6 @@
-namespaces: [ geary, mineinabyss ]
 set.item:
   item:
-    type: GLASS
+    type: minecraft:glass
     itemName: Fear Flight
     # customModelData: 102
 disableItemInteractions: { }
@@ -14,11 +13,12 @@ passive:
           mythicConditions:
             - health{h=<5}
       - particle:
-          at: "{{ entity.getLocation }}"
           particle: CLOUD
           offsetY: 1
           count: 3
           speed: 0
+        with:
+          location: "{{ entity.getLocation }}"
       - applyPotionEffects:
           - type: minecraft:speed
             duration: 3s

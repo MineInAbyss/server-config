@@ -1,7 +1,6 @@
-namespaces: [geary]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: <#454545>Cooked Leaflizard Tail
     customModelData: 107
     lore:
@@ -16,11 +15,11 @@ set.item:
 set.recipes:
   discoverRecipes: true
   recipes:
-    - !<furnace>
+    - type: furnace
       input: { prefab: mineinabyss:leaflizard_raw }
-      experience: 1f
+      experience: 1
       cookingTime: 100
-    - !<smoking>
+    - type: smoking
       input: { prefab: mineinabyss:leaflizard_raw }
-      experience: 2f
+      experience: 2
       cookingTime: 50

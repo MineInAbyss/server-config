@@ -60,7 +60,7 @@ hide-permission: "rocketjoin.silent"
 conditions:
   first_join:
     type: FIRST
-    join: "<#058330>W<#22862a>e<#338834>l<#418a1d>c<#4d8d14>o<#598f08>m<#659000>e &5<b>{player}</b> <#719200>t<#7c9400>o <#889500>M<#949600>i<#9f9600>n<#ab9700>e <#b79700>i<#c39700>n <#cf9700>A<#db9600>b<#e79500>y<#f39400>s<#ff9200>s"
+    join: "<#058330>W<#22862a>e<#338834>l<#418a1d>c<#4d8d14>o<#598f08>m<#659000>e &5<i>{player}</i> <#719200>t<#7c9400>o <#889500>M<#949600>i<#9f9600>n<#ab9700>e <#b79700>i<#c39700>n <#cf9700>A<#db9600>b<#e79500>y<#f39400>s<#ff9200>s"
 
 # Use \n for a new line
 # Set to "disable" to disable this feature

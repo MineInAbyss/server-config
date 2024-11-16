@@ -1,0 +1,11 @@
+l4_flying:
+  position: AIR
+  priority: 0.00001
+  regions: [ layerfour ]
+  conditions:
+    - gap: 10..600
+
+# Common
+l4_onitsuchi: { inherit: l4_flying, type: mm:onitsuchi }
+l4_hammerbeakLarge: { inherit: l4_flying, type: mm:hammerbeakLarge }
+# Uncommon

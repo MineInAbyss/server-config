@@ -1,14 +1,13 @@
-namespaces: [geary, blocky]
 set.item:
   item:
-    type: PAPER
+    type: minecraft:paper
     itemName: Cosmos Red
     customModelData: 3012
 set.block:
   blockType: WIRE
   blockId: 12
-pack:
+blocky:pack:
   model: hmcmodels:block/nature/cosmos_red
-drops:
+blocky:drops:
   drops:
     - item: mineinabyss:cosmos_red

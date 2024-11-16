@@ -1,0 +1,26 @@
+l1_passive:
+  position: GROUND
+  priority: 0.001
+  regions: [ layerone ]
+  amount: 1-2
+  spread: 5
+  ySpread: 1
+  conditions:
+    # - blockBelow:
+    #      allow: [ grass_block ]
+    - maxNearby:
+        amount: 4
+
+l1_beniguma: { inherit: l1_passive, type: mm:beniguma }
+l1_fuwagi: { inherit: l1_passive, type: mm:fuwagi }
+l1_okibo:
+  inherit: l1_passive
+  type: mm:okibo
+  amount: 1-2
+  priority: 0.0002
+  regions: [ orth, l1s0 ]
+  conditions:
+    - blockBelow:
+        allow: [ grass_block, moss_block, dirt_path, dirt ]
+    - maxNearby:
+        amount: 2
