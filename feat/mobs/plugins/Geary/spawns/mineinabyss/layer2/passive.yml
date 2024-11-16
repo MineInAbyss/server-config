@@ -15,15 +15,4 @@ l2_fuwagi: { inherit: l2_passive, type: mm:fuwagi }
 l2_chimokami: { inherit: l2_passive, type: mm:chimokami }
 
 
-l2_tesuchi:
-  position: GROUND
-  priority: 0.00025
-  regions: [ layertwo ]
-  amount: 1-2
-  spread: 7
-  ySpread: 1
-  conditions:
-    - blockBelow:
-        allow: [ grass_block, dirt, moss_block, dirt_path ]
-    - maxNearby:
-        amount: 3
+l2_tesuchi: { inherit: l2_passive, priority: 0.00025, amount: 1-2, type: mm:tesuchi }
