@@ -1,12 +1,12 @@
 set.item:
   item:
     type: minecraft:quartz
-    itemName: <#0B6623>Hagamizukin
-    customModelData: 4
+    itemName: <#0B6623>Hagamizukin Tooth
+    customModelData: 2
     lore:
       - <yellow>Can be obtained by finding and
       - <yellow>killing a <#0B6623>Hagamizukin <yellow>in the
       - <yellow>waters of the <green>Sea of Corpses<yellow>.
-      - <#A759FF>extremely sharp tooth used to make hard things
+      - <#A759FF>This thing is really sharp.
 resourcepack:
   textures: mineinabyss:item/creature_drops/hagamizukin_tooth
