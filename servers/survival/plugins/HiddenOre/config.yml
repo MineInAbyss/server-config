@@ -669,4 +669,32 @@ layers:
             minAmount: 1
             maxAmount: 3
             transformIfAble: true
-          
+          quartz:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: QUARTZ
+            tools:
+              - anything
+            chance: 0.001
+            minAmount: 1
+            maxAmount: 4
+          soul_sand:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: SOUL_SAND
+            tools:
+              - anything
+            chance: 0.0005
+            minAmount: 3
+            maxAmount: 6
+          gravel:
+            package:
+              - ==: org.bukkit.inventory.ItemStack
+                type: GRAVEL
+            tools:
+              - anything
+            chance: 0.004
+            minAmount: 3
+            maxAmount: 12
+            transformIfAble: false
+            transformDropIfFails: false
