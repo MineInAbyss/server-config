@@ -6,7 +6,7 @@ l3_hostile:
     - maxNearby:
         amount: 2
     - blockBelow:
-        allow: [ "#base_stone_overworld", "#dirt", "#terracotta" ]
+        allow: [ "#base_stone_overworld", "#dirt", "#terracotta", "#concrete", "#concrete_with_powder", "#moss_blocks" ]
 
 l3_silkfang:
   inherit: l3_hostile

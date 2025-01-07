@@ -4,7 +4,7 @@ l1_hostile:
   spread: 5
   conditions:
     - blockBelow:
-        allow: [ "#base_stone_overworld", "#dirt", "#terracotta" ]
+        allow: [ "#base_stone_overworld", "#dirt", "#terracotta", "#concrete", "#concrete_with_powder", "#moss_blocks" ]
     - maxNearby:
         amount: 3
 

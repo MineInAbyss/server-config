@@ -3,7 +3,7 @@ l5_hostile:
   regions: [ layerfive ]
   spread: 5
   conditions:
-    - blockBelow: { allow: [ "#base_stone_overworld", "#dirt" ], deny: [ DIORITE ] }
+    - blockBelow: { allow: [ "#base_stone_overworld", "#dirt", "#terracotta", "#concrete", "#concrete_with_powder", "#moss_blocks" ], deny: [ "diodrite", "white_concrete_powder", "calcite", "mud", "deepslate" ] }
     - maxNearby:
         amount: 4
 
@@ -18,6 +18,8 @@ l5_hostile_snow:
         allow:
           - '#snow'
           - '#ice'
+          - 'diodrite'
+          - 'white_concrete_powder'
 
 l5_hostile_sand:
   inherit: l5_hostile
@@ -29,10 +31,13 @@ l5_hostile_sand:
           - '#sand'
           - SANDSTONE
           - RED_SANDSTONE
+          - RED_SANDSTONE_SLAB
           - SANDSTONE_SLAB
           - SANDSTONE_STAIRS
           - SMOOTH_SANDSTONE
+          - SMOOTH_SANDSTONE_SLAB
           - SOUL_SOIL
+          - SOUL_SAND
 
 # Mobs
 l5_kuongatari:

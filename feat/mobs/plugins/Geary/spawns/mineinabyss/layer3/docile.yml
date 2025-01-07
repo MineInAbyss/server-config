@@ -4,7 +4,7 @@ l3_docile:
   regions: [ layerthree ]
   conditions:
     - blockBelow:
-        allow: [ "#dirt" ]
+        allow: [ "#dirt", "#moss_blocks", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
     - maxNearby:
         amount: 5
 
@@ -12,4 +12,4 @@ l3_spittleshrub: { inherit: l3_docile, type: mm:spittleshrub }
 l3_buroguro: { inherit: l3_docile, type: mm:buroguro }
 l3_squidfly: { inherit: l3_docile, type: mm:squidfly }
 l3_rockwalker: { inherit: l3_docile, type: mm:rockwalker }
-#l3_hisoishi: { inherit: l3_docile, type: mm:hisoishi }
+l3_hisoishi: { inherit: l3_docile, type: mm:hisoishi }

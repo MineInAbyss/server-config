@@ -4,7 +4,7 @@ l2_hostile:
   spread: 5
   conditions:
     - blockBelow:
-        allow: [ "#base_stone_overworld", "#dirt", "#terracotta" ]
+        allow: [ "#base_stone_overworld", "#dirt", "#terracotta", "#concrete", "#concrete_with_powder", "#moss_blocks" ]
 
 l2_ottobas:
   inherit: l2_hostile

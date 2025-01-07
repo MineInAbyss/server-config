@@ -6,7 +6,7 @@ l4_hostile:
     - maxNearby:
         amount: 3
     - blockBelow:
-        allow: [ "#base_stone_overworld", "#dirt", "#terracotta" ]
+        allow: [ "#base_stone_overworld", "#dirt", "#terracotta", "#concrete", "#concrete_with_powder", "#moss_blocks" ]
 
 
 l4_kuongatari:
@@ -16,7 +16,7 @@ l4_kuongatari:
     - $inherit
     - $remove blockBelow
     - blockBelow:
-        allow: [ "#dirt" ]
+        allow: [ "#dirt", "#moss_blocks", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
 l4_horncrier: { inherit: l4_hostile, type: mm:horncrier }
 l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker }
 

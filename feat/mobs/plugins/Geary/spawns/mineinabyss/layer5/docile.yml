@@ -4,7 +4,7 @@ l5_docile:
   spread: 5
   conditions:
     - blockBelow:
-        allow: [ "#dirt" ]
+        allow: [ "#dirt", "#moss_blocks", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
     - maxNearby:
         amount: 5
 
