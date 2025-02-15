@@ -1,4 +1,4 @@
-#{% set privateSettingsDest = "/data/mineinabyss/server-config-private" %}
+#{% set privateSettingsDest = "/data/mineinabyss/server-config-private" %}#
 global:
   files:
     plugins/Geary:
