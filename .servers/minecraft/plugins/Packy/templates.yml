@@ -86,10 +86,7 @@ old_armor:
 custom_music:
   default: false
   required: false
-  githubDownload:
-    org: MineInAbyss
-    repo: OST
-    branch: master
+  filePath: Packy/resourcepacks/ost
 vanilla_armor:
   default: false
   required: false

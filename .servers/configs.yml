@@ -55,7 +55,9 @@ feat/cosmetics:
       dest: plugins/Geary/prefabs/cosmetics
 
 feat/bosses:
-  copyPaths: [ "{{ privateSettingsDest }}/feat/bosses" ]
+  copyPaths:
+    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/bosses"
+      dest: plugins/MythicMobs/packs/bosses
 
 feat/loot_chests:
   copyPaths:
@@ -93,6 +95,11 @@ feat/hiddenore:
     - source: plugins/HiddenOre
       dest: plugins/HiddenOre
 
+feat/ost:
+  copyPaths:
+    - source: "{{ privateSettingsDest }}/mc-resourcepacks/ost"
+      dest: plugins/Packy/resourcepacks/ost
+
 # Servers
 minecraft:
   copyPaths: [ .servers/minecraft ]
@@ -123,6 +130,7 @@ survival:
     - feat/mobs
     - feat/hud
     - feat/hiddenore
+    - feat/ost
 
 build:
   variables:
@@ -165,6 +173,7 @@ dev:
     - feat/delvers
     - feat/bosses
     - feat/hud
+    - feat/ost
 
 dev-alpha:
   copyPaths: [ .servers/dev-alpha ]
