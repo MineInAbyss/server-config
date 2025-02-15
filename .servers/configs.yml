@@ -88,6 +88,11 @@ feat/delvers:
     - source: plugins/MythicMobs/packs/delvers
       dest: plugins/MythicMobs/packs/delvers
 
+feat/hiddenore:
+  copyPaths:
+    - source: plugins/HiddenOre
+      dest: plugins/HiddenOre
+
 # Servers
 minecraft:
   copyPaths: [ .servers/minecraft ]
@@ -117,6 +122,8 @@ survival:
     - feat/blocks
     - feat/mobs
     - feat/hud
+    - feat/hiddenore
+
 build:
   variables:
     chatty:
