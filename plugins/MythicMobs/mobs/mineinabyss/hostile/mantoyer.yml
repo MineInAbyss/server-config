@@ -34,7 +34,7 @@ mantoyer:
     - geary mineinabyss:mantoyer_horns 1-2 0.6
 
   Skills:
-
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
 

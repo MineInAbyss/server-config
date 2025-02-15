@@ -43,7 +43,8 @@ kuongatari:
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - state{mid=kuongatari;s=attack} @self ~onAttack
-    - skill{s=Kuon_Summon} @target ~onDamaged 0.11
+    - skill{s=Kuon_Summon} @target ~onDamaged 0.13
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
     - skill:MIAPetExpNearby{exp=1} ~onDeath
@@ -88,3 +89,4 @@ kuongatari_summon:
     - shieldbreak{duration=100} @target ~onattack 0.35
     - skill{s=Kuon_Summon} @target ~onDamaged 0.01
     #- skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=Changetarget} ~onTimer:160 <99%

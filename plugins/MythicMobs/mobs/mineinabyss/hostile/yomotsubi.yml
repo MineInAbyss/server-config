@@ -44,7 +44,7 @@ yomotsubi:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=yomotsubi;s=attack} @self ~onAttack
-
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=yomotsubi_airball} @target ~onTimer:20
     - skill{s=yomoAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=yomoHurt} @self ~onHurt
@@ -95,7 +95,7 @@ shiratsubi:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=shiratsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=shiratsubi;s=attack} @self ~onAttack
-
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=shiratsubi_airball} @target ~onTimer:20
     - skill{s=yomoAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=yomoHurt} @self ~onHurt

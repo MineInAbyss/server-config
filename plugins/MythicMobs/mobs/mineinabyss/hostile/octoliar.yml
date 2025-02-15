@@ -47,6 +47,7 @@ octoliar:
     - skill{s=octoliarWeb;delay=<random.0to20>} @self ~onTimer:120 0.65
     - skill{s=octoliarSpit;delay=<random.0to20>} @self ~onTimer:35 0.55
     ########### FX
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=octoliarAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
     - skill{s=octoliarHurt} @self ~onHurt
     - skill{s=octoliarDeath} @self ~onDeath

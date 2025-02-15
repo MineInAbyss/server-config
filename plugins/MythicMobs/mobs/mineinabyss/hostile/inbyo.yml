@@ -44,3 +44,4 @@ inbyo:
     - effect:sound{s=mineinabyss:entity.inbyo.ambient;v=4;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.inbyo.death;v=4;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.inbyo.hurt;v=4;p=0.8} @self ~onDamaged
+    - skill{s=Changetarget} ~onTimer:160 <99%

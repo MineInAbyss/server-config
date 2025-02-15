@@ -42,7 +42,7 @@ virinsipede:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=virinburrow} @Self ~onTimer:60
     - state{mid=virinsipede;s=attack} @self ~onAttack
-
+    - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=virinAmbient;delay=<random.0to8>} @self ~onTimer:95 0.33
     - skill{s=virinHurt} @self ~onHurt
     - skill{s=virinDeath} @self ~onDeath
