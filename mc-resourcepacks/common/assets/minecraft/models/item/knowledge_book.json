@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/knowledge_book"
+  },
+  "overrides": [
+    { "predicate": {"custom_model_data": 1}, "model": "mineinabyss:item/relics/boob_stone"},
+    { "predicate": {"custom_model_data": 2}, "model": "mineinabyss:item/relics/blaze_reap"},
+    { "predicate": {"custom_model_data": 3}, "model": "mineinabyss:item/relics/sparagmos"},
+    { "predicate": {"custom_model_data": 5}, "model": "mineinabyss:item/relics/zephyr_disk"},
+    { "predicate": {"custom_model_data": 6}, "model": "mineinabyss:item/relics/grim_ripper"},
+    { "predicate": {"custom_model_data": 7}, "model": "mineinabyss:item/relics/sonic_stone"},
+    { "predicate": {"custom_model_data": 8}, "model": "mineinabyss:item/relics/ghost_seek"},
+    { "predicate": {"custom_model_data": 9}, "model": "mineinabyss:item/relics/flamethrower"},
+    { "predicate": {"custom_model_data": 10}, "model": "mineinabyss:item/relics/lie_supor"},
+    { "predicate": {"custom_model_data": 11}, "model": "mineinabyss:item/relics/flash_cannon"},
+    { "predicate": {"custom_model_data": 13}, "model": "mineinabyss:item/relics/bounding_lance"},
+    { "predicate": {"custom_model_data": 14}, "model": "mineinabyss:item/relics/shielding_mask"},
+    { "predicate": {"custom_model_data": 16}, "model": "mineinabyss:item/relics/airform_b"},
+    { "predicate": {"custom_model_data": 17}, "model": "mineinabyss:item/relics/respiratis"},
+    { "predicate": {"custom_model_data": 18}, "model": "mineinabyss:item/relics/verdau_effax"},
+    { "predicate": {"custom_model_data": 19}, "model": "mineinabyss:item/relics/conterein"},
+    { "predicate": {"custom_model_data": 20}, "model": "mineinabyss:item/relics/moniscelti"},
+    { "predicate": {"custom_model_data": 21}, "model": "mineinabyss:item/relics/saw_arm"},
+    { "predicate": {"custom_model_data": 22}, "model": "mineinabyss:item/relics/3_branched_sword"}
+  ]
+}

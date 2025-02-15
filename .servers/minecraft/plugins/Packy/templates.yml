@@ -1,11 +1,11 @@
 common:
   default: true
   required: true
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: common
+  filePath: Packy/resourcepacks/common
+cosmetics:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/cosmetics
 geary:
   default: true
   required: true
@@ -41,48 +41,32 @@ premium_content:
     org: MineInAbyss
     repo: ResourcePack-Premium-Content
     branch: master
-2d_tools:
+tools_2d:
   default: true
   required: false
   conflictsWith:
-    - 3d_tools
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: 2d_tools
-new_armor:
+    - tools_3d
+  filePath: Packy/resourcepacks/tools_2d
+armor_new:
   default: true
   required: false
   conflictsWith:
-    - old_armor
+    - armor_old
     - vanilla_armor
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: new_armor
-3d_tools:
+  filePath: Packy/resourcepacks/armor_new
+tools_3d:
   default: false
   required: false
   conflictsWith:
-    - 2d_tools
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: 3d_tools
-old_armor:
+    - tools_2d
+  filePath: Packy/resourcepacks/tools_3d
+armor_old:
   default: false
   required: false
   conflictsWith:
-    - new_armor
+    - armor_new
     - vanilla_armor
-  githubDownload:
-    org: MineInAbyss
-    repo: MineInAbyss-resourcepack
-    branch: develop
-    subFolder: old_armor
+  filePath: Packy/resourcepacks/armor_old
 custom_music:
   default: false
   required: false
@@ -91,11 +75,11 @@ vanilla_armor:
   default: false
   required: false
   conflictsWith:
-    - new_armor
-    - old_armor
+    - armor_new
+    - armor_old
 vanilla_tools:
   default: false
   required: false
   conflictsWith:
-    - 2d_tools
-    - 3d_tools
+    - tools_2d
+    - tools_3d

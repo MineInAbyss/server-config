@@ -1,0 +1,12 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_sword"
+	},
+
+	"overrides": [
+		{ "predicate": {"custom_model_data": 1}, "model": "packy:item/tools/2d_sword"},
+		{ "predicate": {"custom_model_data": 2}, "model": "packy:item/tools/3d_sword"},
+		{ "predicate": {"custom_model_data": 3}, "model": "packy:item/tools/vanilla_sword"}
+	]
+}

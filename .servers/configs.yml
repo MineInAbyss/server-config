@@ -53,6 +53,8 @@ feat/cosmetics:
       dest: plugins/Geary/template_pack
     - source: plugins/Geary/prefabs/cosmetics
       dest: plugins/Geary/prefabs/cosmetics
+    - source: mc-resourcepacks/cosmetics
+      dest: plugins/Packy/resourcepacks/cosmetics
 
 feat/bosses:
   copyPaths:
@@ -72,6 +74,14 @@ feat/items:
       dest: plugins/Geary/prefabs/minecraft/recipes
     - source: mc-resourcepacks/items
       dest: plugins/Geary/template_pack
+    - source: mc-resourcepacks/tools_2d
+      dest: plugins/Packy/resourcepacks/tools_2d
+    - source: mc-resourcepacks/tools_3d
+      dest: plugins/Packy/resourcepacks/tools_3d
+    - source: mc-resourcepacks/armor_new
+      dest: plugins/Packy/resourcepacks/armor_new
+    - source: mc-resourcepacks/armor_old
+      dest: plugins/Packy/resourcepacks/armor_old
 
 feat/hud:
   copyPaths:
@@ -99,6 +109,11 @@ feat/ost:
   copyPaths:
     - source: "{{ privateSettingsDest }}/mc-resourcepacks/ost"
       dest: plugins/Packy/resourcepacks/ost
+
+feat/resourcepack-common:
+  copyPaths:
+    - source: mc-resourcepacks/common
+      dest: plugins/Packy/resourcepacks/common
 
 # Servers
 minecraft:

@@ -69,11 +69,11 @@ menu:
           height: 4
       type: CYCLING
       packs:
-        new_armor:
+        armor_new:
           button:
             type: minecraft:diamond_helmet
             itemName: <gold>New Armor
-        old_armor:
+        armor_old:
           button:
             type: minecraft:golden_helmet
             itemName: <gold>Old Armor
@@ -94,12 +94,12 @@ menu:
           height: 4
       type: CYCLING
       packs:
-        2d_tools:
+        tools_2d:
           button:
             type: minecraft:diamond_sword
             customModelData: 1
             itemName: <gold>2D Tools
-        3d_tools:
+        tools_3d:
           button:
             type: minecraft:golden_sword
             customModelData: 2
