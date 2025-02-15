@@ -1,11 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Ghost Seek
+    itemName: <gold>Enhanced Ghost Seek
     type: CARVED_PUMPKIN
     customModelData: 108
 #ghost_seek:
 hat: {}
 disableItemInteractions: {}
+enchantments:
+  - enchant: minecraft:sharpness 1 
+    level: 1
 observe:
   itemRightClick:
     - become: parent
@@ -14,8 +17,8 @@ observe:
           sneaking: true
     - cooldown:
         id: relicscout
-        length: 5s
+        length: 2s
         display: <#617B94>Relic Scout
     - mythicSkills:
-        - "relicscout"
+        - "enchancedrelicscout"
 

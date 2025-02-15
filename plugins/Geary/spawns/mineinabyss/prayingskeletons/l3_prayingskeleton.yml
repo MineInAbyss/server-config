@@ -1,0 +1,18 @@
+l3_prayingskeleton:
+  position: GROUND
+  type: mm:l3prayingskeleton
+  priority: 1
+  regions:
+    - l3s0
+    - l3s1
+    - l3s2
+    - l3s3
+  conditions:
+    - maxNearby:
+        amount: 2
+        radius: 500
+    - mythicConditions:
+        - mobsInRadius{types=l3prayingskeleton;amount=0to5;radius=1000} true
+  spread: 100 # The horizontal spread for them
+  ySpread: 10 # And the vertical spread
+
