@@ -129,6 +129,7 @@ minecraft:
   include:
     - feat/chat
     - feat/emotes
+    - feat/resourcepack-common
 
 survival:
   copyPaths: [ .servers/survival ]
