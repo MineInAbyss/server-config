@@ -110,6 +110,13 @@ feat/ost:
   copyPaths:
     - source: "{{ privateSettingsDest }}/mc-resourcepacks/ost"
       dest: plugins/Packy/resourcepacks/ost
+    - source: mc-datapacks/music_discs
+      dest: worlds/world/datapacks/music_discs
+
+feat/deeperworld:
+  copyPaths:
+    - source: mc-datapacks/deeper_world
+      dest: worlds/world/datapacks/deeper_world
 
 feat/resourcepack-common:
   copyPaths:
@@ -131,6 +138,7 @@ minecraft:
     - feat/chat
     - feat/emotes
     - feat/resourcepack-common
+    - feat/deeperworld
 
 survival:
   copyPaths: [ .servers/survival ]
