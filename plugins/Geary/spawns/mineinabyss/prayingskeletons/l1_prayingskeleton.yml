@@ -12,7 +12,7 @@ l1_prayingskeleton:
         amount: 2
         radius: 400
     - mythicConditions:
-        - mobsInRadius{types=l1prayingskeleton;amount=0to5;radius=1000} true
+        - MobsInRadius{types=l1prayingskeleton;amount=0to5;radius=1000} true
   spread: 100 # The horizontal spread for them
   ySpread: 10 # And the vertical spread
 
