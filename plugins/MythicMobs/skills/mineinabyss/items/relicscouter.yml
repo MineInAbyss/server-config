@@ -53,6 +53,15 @@ closescout4:
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
     - delay 1
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
+
+enhancedscout3:
+  Conditions:
+    - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=25}
+  Cooldown: 1
+  Skills:
+    - delay 20
+    - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
+    - effect:glow{color=GOLD;duration=60} @mobsInRadius{types=l5prayingskeleton;radius=100}
 enhancedrelicscout:
   Conditions:
     - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=500}
@@ -60,32 +69,37 @@ enhancedrelicscout:
   Skills:
     - skill{s=closescout} @self
     - skill{s=closescout2} @self
-    - skill{s=triggerskele} @trigger
+    - skill{s=enhancedscout3} @self
+    - skill{s=closescout4} @self
+    - skill{s=triggerskele} @self
     - delay 5
     - sound{s=block.note_block.chime;sc=master;p=1;v=1} @self
 
 saveskelelocation:
   Skills:
-  - setvariable{var=SpawnLoc;type=STRING;value="&b<caster.l.x>&e, &b<caster.l.y>&e, &b<caster.l.z>";scope=CASTER} @self
-  - setvariable{var=SpawnLocX;type=FLOAT;value="<caster.l.x>"} @self
-  - setvariable{var=SpawnLocY;type=FLOAT;value="<caster.l.y>"} @self
-  - setvariable{var=SpawnLocZ;type=FLOAT;value="<caster.l.z>"} @self
+saveskelelocation:
+  Skills:
+    - setvariable{var=SpawnLocX;type=FLOAT;value="<caster.l.x>";scope=CASTER} @self
+    - setvariable{var=SpawnLocY;type=FLOAT;value="<caster.l.y>";scope=CASTER} @self
+    - setvariable{var=SpawnLocZ;type=FLOAT;value="<caster.l.z>";scope=CASTER} @self
+    - setvariable{var=SpawnLoc;type=STRING;value="&b<caster.var.SpawnLocX>&e, &b<caster.var.SpawnLocY>&e, &b<caster.var.SpawnLocZ>"} @self
 
 triggerskele:
   Skills:
-  - signal{s=location} @MobsInRadius{r=1000;types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton}
+    - signal{s=location} @MobsInRadius{r=1000;types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton}
 
 skeleping:
   Skills:
-  - setvariable{var=playerX;type=STRING;value="<target.l.x>";scope=TARGET} @Trigger
-  - setvariable{var=playerY;type=STRING;value="<target.l.y>";scope=TARGET} @Trigger
-  - setvariable{var=playerZ;type=STRING;value="<target.l.z>";scope=TARGET} @Trigger
-  - setvariable{var=dx;type=STRING;value="(<caster.var.SpawnLocX> - <caster.var.playerX>)"} @Trigger
-  - setvariable{var=dy;type=STRING;value="(<caster.var.SpawnLocY> - <caster.var.playerY>)"} @Trigger
-  - setvariable{var=dz;type=STRING;value="(<caster.var.SpawnLocZ> - <caster.var.playerZ>)"} @Trigger
-  - setvariable{var=distance;type=STRING;value="sqrt(<caster.var.dx>^2 + <caster.var.dy>^2 + <caster.var.dz>^2)"} @Trigger
-  - message{m="&e<caster.name> is &b<caster.var.distance> &eblocks away."} @Trigger
+    - setvariable{var=playerX;type=FLOAT;value="<target.l.x>";scope=TARGET} @Trigger
+    - setvariable{var=playerY;type=FLOAT;value="<target.l.y>";scope=TARGET} @Trigger
+    - setvariable{var=playerZ;type=FLOAT;value="<target.l.z>";scope=TARGET} @Trigger
+    - setvariable{var=dx;type=FLOAT;value="<caster.var.SpawnLocX> - <caster.var.playerX>"} @Trigger
+    - setvariable{var=dy;type=FLOAT;value="<caster.var.SpawnLocY> - <caster.var.playerY>"} @Trigger
+    - setvariable{var=dz;type=FLOAT;value="<caster.var.SpawnLocZ> - <caster.var.playerZ>"} @Trigger
+    - setvariable{var=distance;type=FLOAT;value="sqrt(<caster.var.dx>*<caster.var.dx> + <caster.var.dy>*<caster.var.dy> + <caster.var.dz>*<caster.var.dz>)"} @Trigger
+    - message{m="&e<caster.name> is &b<caster.var.distance>&e blocks away."} @Trigger
+
 
 godping:
   Skills:
-  - message{m="&eA &B<caster.name>&e &eis at <caster.var.SpawnLoc>"} @Trigger
+    - message{m="&eA &B<caster.name>&e &eis at <caster.var.SpawnLoc>"} @Trigger

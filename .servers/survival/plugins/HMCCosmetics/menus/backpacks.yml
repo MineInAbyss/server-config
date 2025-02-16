@@ -67,25 +67,31 @@ items:
 
   camera_bronze:
     slots:
-      - 7
+      - 6
     item:
       material: hmccosmetics:camera_bronze
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       material: hmccosmetics:camera_bronze
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:camera_bronze
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-equipped-item:
       material: hmccosmetics:camera_bronze
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     type: mia_cosmetic
     cosmetic: camera_bronze
     actions:
@@ -95,11 +101,12 @@ items:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   camera_silver:
     slots:
-      - 8
+      - 7
     item:
       material: hmccosmetics:camera_silver
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       material: hmccosmetics:camera_silver
@@ -110,6 +117,7 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-equipped-item:
       material: hmccosmetics:camera_silver
       lore:
@@ -123,11 +131,12 @@ items:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   camera_gold:
     slots:
-      - 9
+      - 8
     item:
       material: hmccosmetics:camera_gold
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       material: hmccosmetics:camera_gold
@@ -138,6 +147,7 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-equipped-item:
       material: hmccosmetics:camera_gold
       lore:

@@ -9,7 +9,7 @@ l2_prayingskeleton:
   conditions:
     - maxNearby:
         amount: 2
-        radius: 500
+        radius: 400
     - mythicConditions:
         - mobsInRadius{types=l2prayingskeleton;amount=0to5;radius=1000} true
   spread: 100 # The horizontal spread for them

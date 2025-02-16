@@ -1,0 +1,11 @@
+set.item:
+  item:
+    type: minecraft:netherite_sword
+    customModelData: 3
+    itemName: <#FFC0CB><b>Relic Sword
+    lore:
+      - <#C6CC8A>A shield forged deep, unyielding, strong,
+      - <#C6CC8A>Your love, my guard, through light and shade,
+      - <#C6CC8A>In every trial, our vow is made.
+resourcepack:
+  model: mineinabyss:item/event/golemite_sword

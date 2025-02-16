@@ -1,0 +1,11 @@
+set.item:
+  item:
+    type: minecraft:bow
+    customModelData: 2
+    itemName: <#FFC0CB><b>Relic Bow
+    lore:
+      - <#C6CC8A>In the Abyss, our hearts entwine,
+      - <#C6CC8A>Depths of love, like relics, shine,
+      - <#C6CC8A>Bound by courage, your soul is mine.
+resourcepack:
+  model: mineinabyss:item/event/relic_bow
