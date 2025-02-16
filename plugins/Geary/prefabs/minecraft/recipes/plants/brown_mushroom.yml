@@ -1,0 +1,14 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:brown_mushroom
+    amount: 1
+  recipes:
+    - type: shaped
+      items:
+        S: { type: mineinabyss:plant_matter}
+   
+      configuration: |-
+        |   |
+        |   |
+        |S  |

@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:dead_bush
+    amount: 1
+  recipes:
+    - type: shaped
+      items:
+        S: { type: mineinabyss:plant_matter}
+        D:
+          type: minecraft:sand        
+      configuration: |-
+        |D D|
+        |DSD|
+        | D |

@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:big_dripleaf
+    amount: 1
+  recipes:
+    - type: shaped
+      items:
+        S: { type: mineinabyss:plant_matter}
+      configuration: |-
+        |SSS|
+        |S  |
+        |S  |

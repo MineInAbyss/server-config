@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:rooted_dirt
+    amount: 8
+  recipes:
+    - type: shaped
+      items:
+        D:
+          type: minecraft:dirt  
+        D: { type: mineinabyss:spittleshrub_root}     
+      configuration: |-
+        |SSS|
+        |SDS|
+        |SSS|

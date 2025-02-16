@@ -65,8 +65,90 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
-
-
+  camera_bronze:
+    slots:
+      - 7
+    item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+    equipped-item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+    type: mia_cosmetic
+    cosmetic: camera_bronze
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  camera_silver:
+    slots:
+      - 8
+    item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+    equipped-item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+    type: mia_cosmetic
+    cosmetic: camera_silver
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  camera_gold:
+    slots:
+      - 9
+    item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+    equipped-item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+    type: mia_cosmetic
+    cosmetic: camera_gold
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
 
   camper_backpack:
@@ -136,7 +218,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 2
+    cost: 1
     cosmetic: miner_backpack
     actions:
       on-equip:
@@ -166,7 +248,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 2
+    cost: 1
     cosmetic: explorer_backpack
     actions:
       on-equip:

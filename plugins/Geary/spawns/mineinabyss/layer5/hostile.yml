@@ -63,7 +63,7 @@ l5_swarmhoarder: # uncommon spawn
 l5_tachikatana: # rare spawn
   inherit: l5_hostile
   type: mm:tachikatana
-  chance: 0.04
+  chance: 0.02
   priority: 0.04
   conditions:
     - $inherit

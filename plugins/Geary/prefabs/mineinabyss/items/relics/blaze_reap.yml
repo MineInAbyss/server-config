@@ -18,7 +18,7 @@ observe:
           sneaking: true
     - cooldown:
         id: BlazeReap
-        length: 120s
+        length: 5s
         display: <#617B94>Blaze Reap
     - mythicSkills:
         - "BlazeReap"

@@ -28,8 +28,7 @@ abyssal_snail:
   Drops:
     - exp 25-40
     - geary mineinabyss:abyssal_snail_shell 1 0.7
-    - geary mineinabyss:abyssal_snail_gunk 1-2
-
+    - geary mineinabyss:abyssal_snail_gunk 1-2 0.7
 
   Skills:
     - effect:sound{s=mineinabyss:axolotl.idle_air;v=4;p=0.2} @self ~onAmbient

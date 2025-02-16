@@ -16,4 +16,5 @@ l2_passive:
 
 l2_fuwagi: { inherit: l2_passive, type: mm:fuwagi }
 l2_chimokami: { inherit: l2_passive, type: mm:chimokami }
-l2_tesuchi: { inherit: l2_passive, priority: 0.8, amount: 1-2, type: mm:tesuchi }
+l2_tesuchi: { inherit: l2_passive, priority: 0.8, type: mm:tesuchi }
+l2_billabonk: { inherit: l2_passive, type: mm:billabonk, priority: 0.2 }

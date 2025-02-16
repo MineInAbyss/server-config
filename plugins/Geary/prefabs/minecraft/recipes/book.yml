@@ -24,3 +24,13 @@ set.recipes:
         |SP |
         |SP |
         |SP |
+    - type: shaped
+      items:
+        S:
+          prefab: mineinabyss:stinger_wing
+        P:
+          type: PAPER
+      configuration: |-
+        |SP |
+        |SP |
+        |SP |

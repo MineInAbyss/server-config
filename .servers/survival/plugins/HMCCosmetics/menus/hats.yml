@@ -216,7 +216,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: ozen_hat
   lyza_hat:
     slots: 29
@@ -248,7 +248,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: lyza_hat
   nanachi_hat:
     slots: 30
@@ -278,7 +278,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: nanachi_hat
   faputa_hat:
     slots: 31
@@ -308,7 +308,7 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     type: mia_cosmetic
     currency: mitty_token
-    cost: 1
+    cost: 2
     cosmetic: faputa_hat
 
   menacing:

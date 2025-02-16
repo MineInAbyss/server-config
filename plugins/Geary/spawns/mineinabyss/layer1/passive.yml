@@ -24,9 +24,9 @@ l1_okibo:
   inherit: l1_passive
   type: mm:okibo
   amount: 1-2
-  chance: 0.1
+  chance: 0.2
   priority: 0.3
-  regions: [ orth, l1s0 ]
+  regions: [ orth, layerone ]
   conditions:
     - blockBelow:
         allow: [ "#dirt" ]
