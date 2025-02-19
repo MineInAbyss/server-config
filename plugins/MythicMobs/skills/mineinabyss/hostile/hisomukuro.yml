@@ -48,5 +48,5 @@ HS_impact:
 HSAmbient:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.elder_guardian.ambient;sc=master;p=<random.float.1.65to2.00>;v=1.1} @self
-    - sound{s=entity.salmon.ambient;sc=master;p=<random.float.0.85to0.95>;v=0.7} @self
+    - sound{s=entity.elder_guardian.ambient;sc=hostile;p=<random.float.1.65to2.00>;v=1.1} @self
+    - sound{s=entity.salmon.ambient;sc=hostile;p=<random.float.0.85to0.95>;v=0.7} @self

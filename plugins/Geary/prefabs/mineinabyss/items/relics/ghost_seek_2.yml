@@ -1,6 +1,6 @@
 set.item:
   item:
-    itemName: <gold>Damaged Ghost Seek
+    itemName: <gold>Repaired Ghost Seek
     type: CARVED_PUMPKIN
     customModelData: 108
     lore:
@@ -8,7 +8,10 @@ set.item:
       - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
       - <#D2D489>guiding its wielder toward hidden relics.
 
-#ghost_seek:
+enchantments:
+  - enchant: minecraft:sharpness
+    level: 1
+itemFlags: [ HIDE_ENCHANTS ]
 hat: {}
 disableItemInteractions: {}
 observe:
@@ -18,11 +21,11 @@ observe:
         player:
           sneaking: true
     - cooldown:
-        id: brokenscout
-        length: 10s
+        id: relicscout
+        length: 7s
         display: <#617B94>Relic Scout
     - mythicSkills:
-        - "brokenscout"
+        - "repairscout"
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
 

@@ -12,7 +12,7 @@ vbATTACKskill:
     - delay 12
     - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
     - totem{ch=3;onStart=vinebinderATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
-    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - sound{s=entity.iron_golem.attack;sc=hostile;p=<random.float.0.5to0.1>;v=1.1} @self
 
 
 
@@ -38,12 +38,12 @@ vinebinderwave:
 vinebinderHurt:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.shulker.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+    - sound{s=entity.shulker.hurt;sc=hostile;p=<random.float.1.5to2.0>;v=1.1} @self
 
 vinebinderAmbient:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.shulker.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+    - sound{s=entity.shulker.ambient;sc=hostile;p=<random.float.0.1to0.5>;v=1.5} @self
 
 
 vineblasterattack:

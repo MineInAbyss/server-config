@@ -1,0 +1,52 @@
+sporemantaHurt:
+  Cooldown: 0.3
+  Skills:
+  - sound{s=entity.illusioner.hurt;sc=hostile;p=<random.float.1.1to1.2>;v=0.85} @self
+  - sound{s=entity.wither.shoot;p=1.8;v=0.75;sc=hostile;sync=true} @self
+  - sound{s=entity.phantom.hurt;p=0.9;v=0.8;sc=hostile;sync=true} @self
+  - sound{s=block.sculk.sensor.clicking;p=1.2;v=0.7;sc=hostile;sync=true} @self
+  - sound{s=block.respawn_anchor.charge;p=1.1;v=0.6;sc=hostile;sync=true} @self
+  - effect:particles{particle=witch;a=8;hs=0.3;vs=0.3;y=0.3} @self
+
+sporemantaDeath:
+  Cooldown: 0.3
+  Skills:
+  - effect:particles{particle=poof;a=30;hs=0.4;vs=0.4;y=0.4} @self
+  - sound{s=entity.illusioner.death;sc=hostile;p=<random.float.1.3to1.4>;v=0.9} @self
+  - sound{s=entity.phantom.death;p=1.2;v=0.85;sc=hostile;sync=true} @self
+  - sound{s=particle.soul_escape;sc=hostile;p=2.2;v=0.75;delay=5;repeat=5;repeatInterval=1} @self
+  - sound{s=entity.wither.spawn;p=1.0;v=0.9;sc=hostile;sync=true} @self
+  - effect:particles{particle=soul;a=40;hs=0.6;vs=0.4} @self
+  - effect:particles{particle=poison;a=15;hs=0.3;vs=0.3} @self
+
+sporemantaDamager:
+  Cooldown: 1.5
+  Skills:
+  - sound{s=entity.illusioner.cast_spell;sc=hostile;p=<random.float.1.25to1.35>;v=0.8} @self ?targetwithin{d=1.5}
+  - sound{s=entity.wither.shoot;p=1.7;v=0.7;sc=hostile;} @self ?targetwithin{d=1.5}
+  - effect:particles{particle=spore_blossom;a=12;hs=0.3;vs=0.3} @self ?targetwithin{d=1.5}
+
+
+sporemantaAura:
+  Cooldown: 10
+  Conditions:
+  - incombat true
+  - offgcd true
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=80}
+  - effect:particlesphere{particle=portal;a=30;r=2;repeat=20;repeatinterval=5} @self
+  - effect:particles{particle=falling_obsidian_tear;a=10;hs=0.6;vs=0.3;y=0.2;repeat=5;repeatinterval=20} @self
+  - effect:particles{particle=dragon_breath;a=5;hs=1.0;vs=0.6;y=0.2;repeat=5;repeatinterval=20} @self
+  - effect:particles{particle=spore_blossom;a=5;hs=0.3;vs=0.3;repeat=5;repeatinterval=20}  @self
+
+  - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @PIR{r=2}
+  - potion{type=POISON;duration=40;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
+  - potion{type=BLINDNESS;duration=40;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
+
+sporemantaAmbient:
+  Cooldown: 8
+  Skills:
+  - sound{s=entity.evoker.prepare_wololo;sc=hostile;p=0.9;v=0.5} @self
+  - sound{s=entity.phantom.ambient;sc=hostile;p=1.05;v=0.4;delay=8} @self
+  - sound{s=block.enchantment_table.use;sc=hostile;p=0.95;v=0.3;delay=12} @self

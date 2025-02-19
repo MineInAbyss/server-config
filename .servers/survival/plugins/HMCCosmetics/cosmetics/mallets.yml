@@ -1,0 +1,20 @@
+mallet_chisel:
+  slot: BACKPACK
+  permission: "hmccosmetics.mallet_chisel.normal"
+  item:
+    material: geary:cosmetics:mallet_chisel
+mallet_chisel_bronze:
+  slot: BACKPACK
+  permission: "hmccosmetics.mallet_chisel.bronze"
+  item:
+    material: geary:cosmetics:mallet_chisel_bronze
+mallet_chisel_silver:
+  slot: BACKPACK
+  permission: "hmccosmetics.mallet_chisel.silver"
+  item:
+    material: geary:cosmetics:mallet_chisel_silver
+mallet_chisel_gold:
+  slot: BACKPACK
+  permission: "hmccosmetics.mallet_chisel.gold"
+  item:
+    material: geary:cosmetics:mallet_chisel_gold

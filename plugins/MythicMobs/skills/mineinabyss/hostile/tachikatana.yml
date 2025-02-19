@@ -8,10 +8,10 @@ tachiATTACKskill:
     - state{s=swipe_attack;li=3;lo=2} @self
     - delay 20
     - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
-    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - sound{s=entity.iron_golem.attack;sc=hostile;p=<random.float.0.5to0.1>;v=1.1} @self
     - delay 15
     - totem{ch=3;onStart=tachiATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @forward{f=4}
-    - sound{s=entity.iron_golem.attack;sc=master;p=<random.float.0.5to0.1>;v=1.1} @self
+    - sound{s=entity.iron_golem.attack;sc=hostile;p=<random.float.0.5to0.1>;v=1.1} @self
 tachiATTACKDamage:
   Skills:
     - shieldbreak{duration=50} @target
@@ -29,12 +29,12 @@ tachiATTACKDamage:
 tachiHurt:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.guardian.hurt;sc=master;p=<random.float.1.5to2.0>;v=1.1} @self
+    - sound{s=entity.guardian.hurt;sc=hostile;p=<random.float.1.5to2.0>;v=1.1} @self
 
 tachiAmbient:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.frog.ambient;sc=master;p=<random.float.0.1to0.5>;v=1.5} @self
+    - sound{s=entity.frog.ambient;sc=hostile;p=<random.float.0.1to0.5>;v=1.5} @self
 
 tachi_PROJ:
   Cooldown: 8
@@ -50,10 +50,10 @@ tachi_PROJ:
     - potion{type=SLOW;duration=60;level=5;p=false;force=true} @Self
     - delay 20
     - projectile{onTick=warden_proj;onHit=tachi_impact;v=11;i=1;hR=1.5;vR=2;hnp=false;a=.6;tyo=0.8;vn=1;origin=@modelpart{mid=tachikatana;pid=l_claw_hinge;location=0,1,0};fromorigin=true} @target
-    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.1.9to2.0>;v=1.5} @self
+    - sound{s=entity.warden.sonic_boom;sc=hostile;p=<random.float.1.9to2.0>;v=1.5} @self
     - delay 10
     - projectile{onTick=warden_proj;onHit=tachi_impact;v=11;i=3;hR=1.5;vR=2;hnp=false;a=.6;tyo=0.8;vn=1;origin=@modelpart{mid=tachikatana;pid=r_claw_hinge;location=0,1,0};fromorigin=true} @target
-    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.1.9to2.0>;v=1.5} @self
+    - sound{s=entity.warden.sonic_boom;sc=hostile;p=<random.float.1.9to2.0>;v=1.5} @self
     - setAI{ai=true} @self
 warden_proj:
   Skills:
@@ -61,7 +61,7 @@ warden_proj:
 
 tachi_impact:
   Skills:
-    - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.1.9to2.0>;v=0.5} @self
+    - sound{s=entity.warden.attack_impact;sc=hostile;p=<random.float.1.9to2.0>;v=0.5} @self
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @target
     - throw{velocity=20;velocityY=5} @PIR{r=3}
     - damage{a=13} @target
@@ -83,7 +83,7 @@ tachishockwave:
     - delay 20
     - setAI{ai=false} @self
     - state{mid=tachikatana;s=shckwav_attack;li=0;lo=0;r=false} @self
-    - sound{s=entity.warden.sonic_charge;sc=master;p=<random.float.0.5to1.0>;v=1.5} @self
+    - sound{s=entity.warden.sonic_charge;sc=hostile;p=<random.float.0.5to1.0>;v=1.5} @self
 
     #- aura{auraname=golemitebosscircle;onTick=meteorcircle;i=1;duration=100} @targetlocation
     - potion{type=DAMAGE_RESISTANCE;duration=130;level=3;p=false} @self
@@ -98,7 +98,7 @@ tachicircle:
 
 tachishock:
   Skills:
-    - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
+    - sound{s=entity.warden.sonic_boom;sc=hostile;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
     - throw{velocity=20;velocityY=5} @PlayersInRadius{r=12}
     - damage{amount=40;ignoreArmor=false} @PlayersInRadius{r=12}
     - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=10;hS=1;vS=1} @Self

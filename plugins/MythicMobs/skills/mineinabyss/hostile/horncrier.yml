@@ -153,12 +153,12 @@ hcHurt:
   Cooldown: 0.3
   Skills:
     - effect:sound{s=entity.horse.hurt;volume=0.6;pitch=0.9} @self
-    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
-    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
-    - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
-    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
-    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
-    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
-    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
-    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=hostile;sync=true} @self
+    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=hostile;sync=true} @self
+    - sound{s=block.sand.place;p=0.66;v=0.88;sc=hostile;sync=true} @self
+    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=hostile;sync=true} @self
+    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=hostile;sync=true} @self
+    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=hostile;sync=true} @self
+    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=hostile;sync=true} @self
+    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=hostile;sync=true} @self
 

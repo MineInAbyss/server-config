@@ -31,32 +31,32 @@ sfSpiderWebShot-Hit:
 silkfangAmbient:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.spider.ambient;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
-    - sound{s=entity.silverfish.ambient;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
-    - sound{s=entity.phantom.ambient;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
+    - sound{s=entity.spider.ambient;sc=hostile;p=<random.float.0.6to0.7>;v=1.1} @self
+    - sound{s=entity.silverfish.ambient;sc=hostile;p=<random.float.0.7to0.8>;v=1.1} @self
+    - sound{s=entity.phantom.ambient;sc=hostile;p=<random.float.1.15to1.25>;v=0.3} @self
 
 silkfangHurt:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.spider.hurt;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
-    - sound{s=entity.silverfish.hurt;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
-    - sound{s=entity.phantom.hurt;sc=master;p=<random.float.1.15to1.25>;v=0.3} @self
-    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=master;sync=true} @self
-    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=master;sync=true} @self
-    - sound{s=block.sand.place;p=0.66;v=0.88;sc=master;sync=true} @self
-    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=master;sync=true} @self
-    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=master;sync=true} @self
-    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=master;sync=true} @self
-    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=master;sync=true} @self
-    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=master;sync=true} @self
+    - sound{s=entity.spider.hurt;sc=hostile;p=<random.float.0.7to0.8>;v=1.1} @self
+    - sound{s=entity.silverfish.hurt;sc=hostile;p=<random.float.0.6to0.7>;v=1.1} @self
+    - sound{s=entity.phantom.hurt;sc=hostile;p=<random.float.1.15to1.25>;v=0.3} @self
+    - sound{s=item.crop.plant;p=2.0;v=1.18;sc=hostile;sync=true} @self
+    - sound{s=block.candle.extinguish;p=0.8;v=2.0;sc=hostile;sync=true} @self
+    - sound{s=block.sand.place;p=0.66;v=0.88;sc=hostile;sync=true} @self
+    - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=hostile;sync=true} @self
+    - sound{s=block.beehive.drop;p=1.22;v=1.22;sc=hostile;sync=true} @self
+    - sound{s=block.composter.ready;p=2.0;v=0.16;sc=hostile;sync=true} @self
+    - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=hostile;sync=true} @self
+    - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=hostile;sync=true} @self
 
 silkfangDeath:
   Cooldown: 0.3
   Skills:
-    - sound{s=entity.spider.death;sc=master;p=<random.float.0.7to0.8>;v=1.1} @self
-    - sound{s=entity.silverfish.death;sc=master;p=<random.float.0.6to0.7>;v=1.1} @self
-    - sound{s=entity.phantom.death;sc=master;p=<random.float.1.45to1.55>;v=0.3} @self
-    - sound{s=particle.soul_escape;sc=master;p=2.0;v=2.25;delay=5;repeat=20;repeatInterval=1} @self
+    - sound{s=entity.spider.death;sc=hostile;p=<random.float.0.7to0.8>;v=1.1} @self
+    - sound{s=entity.silverfish.death;sc=hostile;p=<random.float.0.6to0.7>;v=1.1} @self
+    - sound{s=entity.phantom.death;sc=hostile;p=<random.float.1.45to1.55>;v=0.3} @self
+    - sound{s=particle.soul_escape;sc=hostile;p=2.0;v=2.25;delay=5;repeat=20;repeatInterval=1} @self
 
 
 
@@ -75,26 +75,26 @@ silkfangWeb: # web attack
     - stance{s=attacking} @self
     - setspeed{speed=0;type=walking}
     - state{state=spray;li=4;lo=4;speed=1.0} @self
-    - sound{s=entity.silverfish.ambient;sc=master;p=0.85;v=2.1} @self
-    - sound{s=entity.spider.hurt;sc=master;p=0.85;v=2.1} @self
+    - sound{s=entity.silverfish.ambient;sc=hostile;p=0.85;v=2.1} @self
+    - sound{s=entity.spider.hurt;sc=hostile;p=0.85;v=2.1} @self
     - delay 10
-    - sound{s=block.snow.break;sc=master;p=1.45;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.45;v=1.1} @self
     - delay 1
-    - sound{s=block.snow.break;sc=master;p=1.55;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.55;v=1.1} @self
     - delay 1
-    - sound{s=block.snow.break;sc=master;p=1.65;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.65;v=1.1} @self
     - delay 1
-    - sound{s=block.snow.break;sc=master;p=1.75;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.75;v=1.1} @self
     - delay 1
-    - sound{s=block.snow.break;sc=master;p=1.85;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.85;v=1.1} @self
     - delay 1
-    - sound{s=block.snow.break;sc=master;p=1.95;v=1.1} @self
+    - sound{s=block.snow.break;sc=hostile;p=1.95;v=1.1} @self
     - delay 9
-    - sound{s=entity.bat.takeoff;sc=master;p=1.95;v=1.1} @self
-    - sound{s=item.dye.use;sc=master;p=1.85;v=1.1} @self
-    - sound{s=item.glow_ink_sac.use;sc=master;p=1.85;v=1.1} @self
-    - sound{s=entity.cat.hiss;sc=master;p=1.75;v=2.1} @self
-    - sound{s=entity.squid.squirt;sc=master;p=2.0;v=1.1} @self
+    - sound{s=entity.bat.takeoff;sc=hostile;p=1.95;v=1.1} @self
+    - sound{s=item.dye.use;sc=hostile;p=1.85;v=1.1} @self
+    - sound{s=item.glow_ink_sac.use;sc=hostile;p=1.85;v=1.1} @self
+    - sound{s=entity.cat.hiss;sc=hostile;p=1.75;v=2.1} @self
+    - sound{s=entity.squid.squirt;sc=hostile;p=2.0;v=1.1} @self
     - projectile{hft=true;onTick=silkfangWebTick;onEnd=silkfangWebEnd;onHit=silkfangWebHit;v=12;i=1;hR=0.65;vr=0.75;g=0.5;hnp=true;fromorigin=true;origin=@ModelPart{p=cap};syo=1.25;sfo=0;repeat=2;repeatInterval=1} @Cone{angle=90;p=16;range=16;rotation=0} #change this
     - delay <random.20to50>
     - stance{s=idle} @self
@@ -113,6 +113,6 @@ silkfangWebHit:
   Cooldown: 0.0
   Skills:
     - damage{a=<random.1to2>;pi=true;pk=true}
-    - sound{s=block.slime_block.step;sc=master;p=2.0;v=1.1}
-    - sound{s=item.ink_sac.use;sc=master;p=2.0;v=1.1}
+    - sound{s=block.slime_block.step;sc=hostile;p=2.0;v=1.1}
+    - sound{s=item.ink_sac.use;sc=hostile;p=2.0;v=1.1}
     - potion{t=SLOW;l=4;force=true;p=true;d=<random.120to180>}
