@@ -6,7 +6,8 @@ set.recipes:
   recipes:
     - type: shaped
       items:
-        S: { type: mineinabyss:plant_matter}
+        S: 
+          prefab: mineinabyss:plant_matter
       configuration: |-
         | S |
         | S |

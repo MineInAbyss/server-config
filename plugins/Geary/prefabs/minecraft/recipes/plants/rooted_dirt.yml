@@ -6,9 +6,10 @@ set.recipes:
   recipes:
     - type: shaped
       items:
-        D:
+        S:
           type: minecraft:dirt  
-        D: { type: mineinabyss:spittleshrub_root}     
+        D: 
+          prefab: mineinabyss:sprittleshrub_root
       configuration: |-
         |SSS|
         |SDS|
