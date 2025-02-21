@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "item/golden_hoe"
+    },
+  
+    "overrides": [
+      { "predicate": {"custom_model_data": 1}, "model": "mineinabyss:item/tools/sickle/golden_sickle"}
+    ]
+  }
+  

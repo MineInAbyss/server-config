@@ -1,8 +1,8 @@
 set.item:
   item:
     itemName: Iron Sickle
-    type: minecraft:wooden_hoe
-    customModelData: 3
+    type: minecraft:iron_hoe
+    customModelData: 1
     durability: 250
     tool:
       rules:
