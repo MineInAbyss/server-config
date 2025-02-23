@@ -127,3 +127,44 @@ vinepoofer:
     - skill:vinepooferattack @Self ~onTimer:30
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
+
+
+allyvineblaster:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Modules:
+    ThreatTable: true
+  Display: "<green>Vineblaster"
+  Faction: Ally
+  AIGoalSelectors:
+    - clear
+    #- randomlookaround
+    - LookAtTarget
+  AITargetSelectors:
+    - NearestOtherFactionMonsters
+  Health: 5 # change this
+  Damage: 0 # keep this 0
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+    Collidable: false
+  Model:
+    Id: vineblaster
+    ViewRadius: 48
+    Drive: false
+    DamageTint: false
+    Scale: 1
+  Drops:
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill:allyvineblasterattack @Self ~onTimer:1
+    # - skill{s=vineblastermortar} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack
+    - remove{d=200} @self ~onspawn

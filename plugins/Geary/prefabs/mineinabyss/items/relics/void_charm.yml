@@ -1,0 +1,24 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <dark_aqua>Void Charm
+    customModelData: 139
+    # TODO add lore
+#disableItemInteractions: { }
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+        id: shadowball
+        length: 10s
+        display: <dark_aqua>Void Charm
+    - mythicSkills:
+        - "shadowball"
+resourcepack:
+  model: mineinabyss:item/projectiles/1

@@ -1,0 +1,27 @@
+set.item:
+  item:
+    type: minecraft:paper
+    customModelData: 138
+    itemName: <#617B94><b>Vine Charm
+    lore:
+      - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
+      - <#C6CC8A>which causes ongoing explosions
+      - <#C6CC8A>on whatever it is struck on.
+      - <#948E61><i>Used to create powerful explosions.
+disableItemInteractions: { }
+hat: {}
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+        id: vinecharm
+        length: 15s
+        display: <#617B94>Vine Charm
+    - mythicSkills:
+        - "vinecharm"

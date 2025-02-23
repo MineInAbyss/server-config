@@ -101,7 +101,7 @@ hammerbeakLarge:
     - geary mineinabyss:hammerbeak_egg 1-2 0.5
   Model:
     Id: hammerbeakremodel
-    Scale: 1.2
+    Scale: 1
   Skills:
     # Misc
     - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10

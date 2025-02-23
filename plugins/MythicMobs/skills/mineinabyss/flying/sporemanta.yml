@@ -17,32 +17,32 @@ sporemantaDeath:
   - sound{s=particle.soul_escape;sc=hostile;p=2.2;v=0.75;delay=5;repeat=5;repeatInterval=1} @self
   - sound{s=entity.wither.spawn;p=1.0;v=0.9;sc=hostile;sync=true} @self
   - effect:particles{particle=soul;a=40;hs=0.6;vs=0.4} @self
-  - effect:particles{particle=poison;a=15;hs=0.3;vs=0.3} @self
+  - effect:particles{particle=FALLING_SPORE_BLOSSOM;a=15;hs=0.3;vs=0.3} @self
 
 sporemantaDamager:
   Cooldown: 1.5
   Skills:
   - sound{s=entity.illusioner.cast_spell;sc=hostile;p=<random.float.1.25to1.35>;v=0.8} @self ?targetwithin{d=1.5}
   - sound{s=entity.wither.shoot;p=1.7;v=0.7;sc=hostile;} @self ?targetwithin{d=1.5}
-  - effect:particles{particle=spore_blossom;a=12;hs=0.3;vs=0.3} @self ?targetwithin{d=1.5}
+  - effect:particles{particle=FALLING_SPORE_BLOSSOM;a=12;hs=0.3;vs=0.3} @self ?targetwithin{d=1.5}
 
 
-sporemantaAura:
-  Cooldown: 10
+sporemantaaura:
+  Cooldown: 7
   Conditions:
-  - incombat true
   - offgcd true
-  - targetwithin{d=20} true
+  - incombat true
   Skills:
-  - gcd{ticks=80}
-  - effect:particlesphere{particle=portal;a=30;r=2;repeat=20;repeatinterval=5} @self
+  - gcd{ticks=60}
+  - effect:particlesphere{particle=portal;a=30;r=3;repeat=20;repeatinterval=5} @self
   - effect:particles{particle=falling_obsidian_tear;a=10;hs=0.6;vs=0.3;y=0.2;repeat=5;repeatinterval=20} @self
   - effect:particles{particle=dragon_breath;a=5;hs=1.0;vs=0.6;y=0.2;repeat=5;repeatinterval=20} @self
-  - effect:particles{particle=spore_blossom;a=5;hs=0.3;vs=0.3;repeat=5;repeatinterval=20}  @self
+  - effect:particles{particle=FALLING_SPORE_BLOSSOM;a=5;hs=0.3;vs=0.3;repeat=5;repeatinterval=20}  @self
 
   - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @PIR{r=2}
-  - potion{type=POISON;duration=40;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
-  - potion{type=BLINDNESS;duration=40;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
+  - potion{type=POISON;duration=60;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
+  - potion{type=WITHER;duration=60;level=2;repeat=5;repeatinterval=20} @PIR{r=2}
+  - potion{type=BLINDNESS;duration=70;level=1;repeat=5;repeatinterval=20} @PIR{r=2}
 
 sporemantaAmbient:
   Cooldown: 8

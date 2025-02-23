@@ -1,0 +1,30 @@
+set.item:
+  item:
+    itemName: <gold>Wave Charm
+    type: PAPER
+    customModelData: 141
+    lore:
+      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+      - <#D2D489>guiding its wielder toward hidden relics.
+
+#ghost_seek:
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+          id: tidalwave
+          length: 15s
+          display: <dark_aqua>
+    - mythicSkills:
+          - "Tidal_Wave"
+resourcepack:
+  model: mineinabyss:item/relics/verdau_effax
+

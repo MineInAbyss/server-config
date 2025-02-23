@@ -20,7 +20,7 @@ octoliar:
     Silent: true
     PreventOtherDrops: true
     FollowRange: 15
-    MovementSpeed: 0.25   # replaced with skills
+    MovementSpeed: 0.35   # replaced with skills
     KnockbackResistance: 0.5
     DigOutOfGround: true
   Model:
@@ -28,7 +28,7 @@ octoliar:
     ViewRadius: 48
     Drive: false
     DamageTint: true
-    Scale: 2
+    Scale: 1.2
   Drops:
     - exp 5-15
     - geary mineinabyss:octoliar_ink_sac 1-2 0.6

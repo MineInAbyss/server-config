@@ -10,7 +10,7 @@ kagi_venom:
     - state{s=spit} @self
     - potion{type=SLOW;duration=15;level=2;p=false;force=true} @Self
     - delay 10
-    - projectile{onTick=kagi_venom_tick;onHit=kagi_venom_impact;v=20;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=kagi_venom_tick;onHit=kagi_venom_impact;v=20;g=1;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5} @target
     - delay 20
 
 

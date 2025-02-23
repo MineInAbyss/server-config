@@ -2,3 +2,12 @@ displayHealth:
   Skills:
     - setvar{var=skill.hp;type=INTEGER;val="ceil(max(0, <mob.hp>-<skill.var.damage-amount>) * 1) / 1"}
     - sendactionmessage{m="<mob.name><&sp>&6<skill.var.hp{round=0}>&8/&6<mob.mhp{round=0}>"} @Trigger
+
+SaveBossLocation:
+  Skills:
+  - setvariable{var=SpawnLoc;type=STRING;value="&b<caster.l.x>&e, &b<caster.l.y>&e, &b<caster.l.z>";scope=CASTER} @self
+
+
+bossping:
+  Skills:
+  - message{m="&eA &B<caster.name>&e &eis at <caster.var.SpawnLoc>"} @Trigger

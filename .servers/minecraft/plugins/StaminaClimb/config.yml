@@ -17,6 +17,7 @@ walljumpCooldown: 300
 roofClimbDifficulty: 7.0
 climbBlacklist:
   - BEACON
+  - BARRIER
   - BARREL
   - CAMPFIRE
   - CARTOGRAPHY_TABLE

@@ -60,14 +60,14 @@ vineblasterattack:
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
 
-    - projectile{onTick=vineblaster_tick;onHit=vineblaster_impact;v=10;i=1;hR=1;vR=1;hnp=false;tyo=1;syo=0.5;vn=1} @target
+    - projectile{onTick=vineblaster_tick;onHit=vineblaster_impact;v=11;i=1;hR=1;vR=1;hnp=false;hp=true;tyo=1;syo=0.3} @target
     - delay 20
     - state{s=pew;r=true} @self
 
 
 vineblaster_tick:
   Skills:
-    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=15;hS=.25;vS=.25;speed=0.05}
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=15;hS=.12;vS=.12;speed=0.05}
 
 vineblaster_impact:
   Skills:

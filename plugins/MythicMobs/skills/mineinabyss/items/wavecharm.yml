@@ -1,0 +1,12 @@
+
+Tidal_Wave:
+  Skills:
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1;vR=1;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @forward{f=5;y=0}
+
+Tidal_Wave_HIT:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - damage{a=10} @EntitiesNearOrigin{r=3;i=players}
+  - throw{velocity=4;velocityY=2} @EntitiesNearOrigin{r=3;i=players}
+  - effect:particles{particle=splash;amount=30;hS=0;vS=0;speed=0} @origin

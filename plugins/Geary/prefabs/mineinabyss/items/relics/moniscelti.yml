@@ -1,0 +1,22 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <dark_aqua>Moniscelti
+    customModelData: 120
+    # TODO add lore
+#disableItemInteractions: { }
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - health{h=>10}
+      onFail:
+        - sendActionBar:
+            text: <red>Not Enough Health
+    - cooldown:
+        id: moniscelti
+        length: 10s
+        display: <dark_aqua>Moniscelti
+    - mythicSkills:
+        - "moniscelti"

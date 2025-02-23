@@ -1,0 +1,44 @@
+vac2:
+  Type: silverfish
+  Display: 'Blackhole'
+  AITargetSelectors:
+  - 0 clear
+  - 1 SpecificFaction Skeleton
+  - 2 players
+  - 3 attacker
+  KillMessages:
+  - '<target.name> was consumed by the abyss'
+  - '<target.name> soul is no more.'
+  Health: 45
+  DamageModifiers:
+  - FIRE 0
+  - MAGIC 2.7
+  Damage: 0
+  KillMessages:
+  Equipment:
+  - air:4
+  - air:3
+  - air:2
+  - air:1
+  - air:0
+  Drops:
+  Skills:
+   - projectile{bulletType=MYTHICITEM;material=va7;onTick=uecoab2;mr=170;v=0;i=1;hR=3;hp=true;hnp=true;vR=1;sE=true;hs=false;d=73;syo=0;g=0;tyo=0;onEnd=bam;sE=false;sB=false;hp=true;hnp=false} @Origin ~onSpawn
+   - potion{type=INVISIBILITY;duration=99999;level=1;p=false} @Self ~onSpawn
+   - signal{s=NULLSAVE;repeat=37;repeatInterval=2} @EntitiesNearOrigin{r=16} ~onSpawn
+   - potion{type=SLOW;duration=99999;level=100;p=false} @Self ~onSpawn
+   - potion{type=LEVITATION;duration=99999;level=1;p=false} @Self ~onSpawn
+   - remove{delay=74} @Self ~onSpawn
+   - damage{a=50;ignorearmor=false;cooldown=1;delay=70} @EntitiesNearOrigin{r=7} ~onSpawn
+  Options:
+    ApplyInvisibility: true
+    Silent: true
+    AlwaysShowName: false
+    MovementSpeed: 0.56
+    MaxCombatDistance: 5
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    FollowRange: 50
+    Despawn: true
+    Interactable: true
+    KnockbackResistance: 0

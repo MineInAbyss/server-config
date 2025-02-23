@@ -1,0 +1,11 @@
+moniscelti:
+  Skills:
+    - damagepercent{percent=0.5} @self
+    - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
+    - delay 3
+    - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+    - effect:particles{particle=totem_of_undying;speed=0.4;amount=40;hs=.2;vs=1;y=4} @Self
+    - delay 30
+    - potion{t=SPEED;d=100;l=2} @self
+    - potion{t=STRENGTH;d=100;l=2} @self
+    - potion{t=JUMP_BOOST;d=100;l=2} @self

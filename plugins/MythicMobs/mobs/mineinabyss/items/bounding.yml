@@ -1,0 +1,14 @@
+bounding:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    NoAI: true
+    Silent: true
+    Invincible: true
+    PreventBlockInfection: true
+  Skills:
+  - remove{delay=200} @self ~onSpawnOrLoad
+  - potion{t=STRENGTH;d=30;l=1} @PlayersNearOrigin{r=5}
+  - potion{t=HASTE;d=30;l=1} @PlayersNearOrigin{r=5}
+  - potion{t=REGENERATION;d=30;l=1} @PlayersNearOrigin{r=5}

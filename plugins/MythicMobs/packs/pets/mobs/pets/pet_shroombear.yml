@@ -29,7 +29,6 @@ mia_baby_shroombear:
     Scale: 0.3
   Skills:
     - skill{s=shroombearheal} @self ~onTimer:10
-    - skill{s=Baby_Shroom_Harvest} @self ~oninteract
     - skill{s=shroombearAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=shroombearHurt} @self ~onHurt
     - skill{s=shroombearDeath} @self ~onDeath
@@ -65,7 +64,7 @@ mia_shroombear:
     Scale: 0.8
   Skills:
     - skill{s=shroombearheal2} @self ~onTimer:10
-    - skill{s=shroombearHarvest} @self ~oninteract
+
     - skill{s=shroombearAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=shroombearHurt} @self ~onHurt
     - skill{s=shroombearDeath} @self ~onDeath

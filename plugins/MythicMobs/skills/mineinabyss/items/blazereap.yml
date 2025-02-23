@@ -1,14 +1,18 @@
 BlazeReap:
   Conditions:
-  Cooldown: 10
+  Cooldown: 1
   Skills:
     - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.1.9to2.0>;v=0.5} @self
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @self
     - effect:particles{p=hugeexplode;a=2;vs=0.2;hs=0.2;s=0;y=1} @self
     - sound{s=entity.warden.sonic_boom;sc=master;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
-    - throw{velocity=20;velocityY=5} @EntitiesInRadius{r=4;ignore=players}
-    - damage{amount=80;ignoreArmor=false} @EntitiesInRadius{r=4;ignore=players}
-    - effect:particlering{particle=sonic_boom;radius=1;points=15;amount=10;hS=1;vS=1} @Self
-    - effect:particlering{particle=sonic_boom;radius=2;points=15;amount=10;hS=1;vS=1} @Self
-    - effect:particlering{particle=sonic_boom;radius=3;points=15;amount=10;hS=1;vS=1} @Self
+    - throw{velocity=30;velocityY=5} @EntitiesInRadius{r=7;ignore=players}
+    - damage{amount=80;ignoreArmor=false} @EntitiesInRadius{r=8;ignore=players}
+    - effect:particlering{particle=Gust_Emitter_Large;radius=1;points=1;amount=1;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Large;radius=2;points=1;amount=1;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Large;radius=3;points=1;amount=2;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Large;radius=4;points=3;amount=3;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Small;radius=5;points=3;amount=3;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Small;radius=6;points=5;amount=3;hS=1;vS=1} @Self
+    - effect:particlering{particle=Gust_Emitter_Small;radius=7;points=6;amount=3;hS=1;vS=1} @Self
 

@@ -1,0 +1,25 @@
+set.item:
+  item:
+    itemName: <gold>Damaged Ghost Seek
+    type: DIAMOND_SWORD
+    customModelData: 4
+    lore:
+      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+      - <#D2D489>guiding its wielder toward hidden relics.
+
+#ghost_seek:
+
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: boundinglance
+        length: 30s
+        display: <#617B94>Bounding Lance
+    - mythicSkills:
+        - "boundinglance"
+resourcepack:
+  model: mineinabyss:item/relics/bounding_lance
+

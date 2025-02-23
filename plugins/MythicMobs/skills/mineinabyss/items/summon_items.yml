@@ -1,0 +1,43 @@
+vinecharm:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - command{repeat=15;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
+    - summon{type=allyvineblaster;amount=2;radius=4;ctt=true;itt=true;os=true} @self
+    - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+    - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+
+
+
+
+
+
+
+
+
+allyvineblasterattack:
+  Cooldown: 3
+  Conditions:
+    - incombat true
+    - offgcd true
+    # - targetwithin{d=10} true
+    - targetinlineofsight{} true
+  Skills:
+
+    - gcd{ticks=50}
+    - state{s=pew} @self
+    - effect:sound{s=entity.blaze.shoot;p=0.8} @Self
+    - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
+    - delay 20
+
+    - projectile{onTick=vineblaster_tick;onHit=avineblaster_impact;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;syo=0.5;tyo=0.5} @target
+    - delay 20
+    - state{s=pew;r=true} @self
+
+
+
+avineblaster_impact:
+  Skills:
+    - damage{a=4} @target
+    - potion{type=POISON;duration=50;level=2} @target
+    - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target

@@ -1,0 +1,13 @@
+verdaueffax:
+  Conditions:
+  Cooldown: 10
+  Skills:
+  - skill{s=effaxfeed;repeat=5;repeatInterval=25} @self
+effaxfeed:
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.shulker.ambient;p=1.3} @Self
+  - delay 1
+  - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
+  - feed{amount=-2} @self
+  - heal{amount=2} @self

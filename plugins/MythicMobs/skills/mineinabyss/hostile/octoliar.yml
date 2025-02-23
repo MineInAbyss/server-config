@@ -109,10 +109,10 @@ octoliarSpitHit:
     - potion{t=POISON;l=2;force=true;p=true;d=<random.120to180>}
     - potion{t=SLOWNESS;l=1;force=true;p=true;d=<random.120to180>}
 octoliarWeb: # web attack
-  Cooldown: 10
+  Cooldown: 5
   Conditions:
     - stance{s=attacking} false
-    - targetnotwithin{d=2} true
+    - incombat true
   Skills:
     - stance{s=attacking} @self
     - setspeed{speed=0;type=walking}
@@ -137,7 +137,7 @@ octoliarWeb: # web attack
     - sound{s=item.glow_ink_sac.use;sc=hostile;p=1.85;v=1.1} @self
     - sound{s=entity.cat.hiss;sc=hostile;p=1.75;v=2.1} @self
     - sound{s=entity.squid.squirt;sc=hostile;p=2.0;v=1.1} @self
-    - projectile{hft=true;onTick=octoliarWebTick;onEnd=octoliarWebEnd;onHit=octoliarWebHit;v=14;i=1;hR=0.65;vr=0.75;g=0.5;hnp=true;fromorigin=true;origin=@ModelPart{p=cap};syo=1.25;sfo=0;repeat=3;repeatInterval=1} @Cone{angle=90;p=16;range=16;rotation=0} #change this
+    - projectile{hft=true;onTick=octoliarWebTick;onEnd=octoliarWebEnd;onHit=octoliarWebHit;v=17;i=1;hR=0.65;vr=0.75;g=0.5;hnp=true;fromorigin=true;origin=@ModelPart{p=cap};syo=1.25;sfo=0;repeat=5;repeatInterval=1} @Cone{angle=95;p=16;range=18;rotation=0} #change this
     - delay <random.20to50>
     - stance{s=idle} @self
     - setspeed{speed=1;type=walking}
@@ -154,7 +154,8 @@ octoliarWebEnd:
 octoliarWebHit:
   Cooldown: 0.0
   Skills:
-    - damage{a=<random.5to6>;pi=true;pk=true}
+    - damage{a=<random.6to10>;pi=true;pk=true}
     - sound{s=block.slime_block.step;sc=hostile;p=2.0;v=1.1}
     - sound{s=item.ink_sac.use;sc=hostile;p=2.0;v=1.1}
     - potion{t=SLOW;l=4;force=true;p=true;d=<random.120to180>}
+    - potion{t=POISON;l=4;force=true;p=true;d=<random.120to180>}

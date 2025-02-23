@@ -1,0 +1,22 @@
+set.item:
+  item:
+    itemName: <gold>Crit Charm
+    type: PAPER
+    customModelData: 118
+    lore:
+      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+      - <#D2D489>guiding its wielder toward hidden relics.
+
+#ghost_seek:
+disableItemInteractions: {}
+passive:
+  - match: [ inInventory ]
+    every: 10s
+    run:
+      - become: parent
+      - mythicSkills:
+          - "randomcritplayer"
+resourcepack:
+  model: mineinabyss:item/relics/verdau_effax
+

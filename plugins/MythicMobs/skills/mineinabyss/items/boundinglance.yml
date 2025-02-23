@@ -1,0 +1,23 @@
+boundinglance:
+  Cooldown: 1
+  Conditions:
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - command{repeat=10;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
+    - potion{t=SLOW;l=7;d=30;p=false} @Self
+  #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
+    - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+    - delay 30
+  #  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+    - skill{s=bounding;repeat=40;repeati=5} @targetlocation
+    - summon{type=bounding;amount=1;radius=0} @targetlocation
+
+
+
+
+bounding:
+  Skills:
+    - effect:particlesphere{p=reddust;c=#ffffff;y=0.2;r=5;a=100} @origin
+    - potion{t=STRENGTH;d=30;l=1} @PIR{r=5}
+    - potion{t=HASTE;d=30;l=1} @PIR{r=5}
+    - potion{t=REGENERATION;d=30;l=1} @PIR{r=5}

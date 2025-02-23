@@ -1,0 +1,50 @@
+set.item:
+  item:
+    itemName: <gold>Animal Totem
+    type: PAPER
+    customModelData: 137
+    lore:
+      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+      - <#D2D489>guiding its wielder toward hidden relics.
+
+#ghost_seek:
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        player:
+          sneaking: true
+    - cooldown:
+        id: animal_totem
+        length: 60s
+        display: <#617B94>Animal Totem
+    - applyPotionEffects:
+        - type: minecraft:speed
+          duration: 2s
+          amplifier: 3
+          hasParticles: false
+passive:
+  - match: [ inInventory ]
+    every: 30s
+    run:
+      - become: parent
+
+      - particle:
+          particle: CLOUD
+          offset: [ 0, 1, 0 ]
+          count: 10
+          speed: 0
+        with:
+          location: "{{ entity.getLocation }}"
+      - applyPotionEffects:
+          - type: minecraft:speed
+            duration: 3s
+            amplifier: 1
+            hasParticles: false
+
+
+resourcepack:
+  model: mineinabyss:item/relics/ghost_seek_off
+

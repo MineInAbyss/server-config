@@ -1,0 +1,5 @@
+randomcritplayer:
+  Conditions:
+  Cooldown:
+  Skills:
+  - onAttack{auraName=Crit;onTick=CritTick;duration=20;charges=5;multiplier=1.3;i=4} @self

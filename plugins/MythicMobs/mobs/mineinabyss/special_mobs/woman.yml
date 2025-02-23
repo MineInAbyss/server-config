@@ -36,7 +36,7 @@ ozen:
   - randomskill{skills=ozen_melee_1_sync,ozen_melee_2_sync;sync=true} @self ~onAttack
 
   - throw{v=5;yv=-1} @pir{r=1} ~onTimer:1
-  - skill{s=ozen_death} @self ~onDeath
+  #- skill{s=ozen_death} @self ~onDeath
   - skill{s=ozen_slap} @self ~onDamaged 0.1
  # - skill{s=ozen_grab_sync} @self ~oninteract
 
