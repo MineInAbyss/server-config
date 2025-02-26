@@ -1,0 +1,38 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+DamageDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:damagesphere 1 0.95
+
+AoeDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:aoesphere 1 0.95
+SunDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:sunsphere 1 0.95
+
+LureDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:luresphere 1 0.95
+
+SpreadDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:spreadsphere 1 0.95
+
+LavaDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - geary mineinabyss:heatstone 1 0.9

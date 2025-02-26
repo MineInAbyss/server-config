@@ -14,7 +14,7 @@ woodcrier:
     - clear
     - players
   Options:
-    KnockbackResistance: 0.2
+    KnockbackResistance: 0.1
     Collidable: true
     DigOutOfGround: true
     FollowRange: 32
@@ -22,7 +22,7 @@ woodcrier:
     LockPitch: true
     Silent: true
     Interactable: true
-    MovementSpeed: 0.35
+    MovementSpeed: 0.3
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true

@@ -1,0 +1,27 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#F0EB65>Sun Sphere
+    customModelData: 154
+    lore:
+      - <gold>It is an egg-shaped relic with
+      - <gold>golden patterns on its surface.
+      - <gold>It has a complicated texture and has a cracking
+      - <gold>noise like eggs if pressure is applied to it.
+      - <#B07E3E><i>Emits light when it is being thrown.
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: sunsphere
+        length: 5s
+        display: <#F0EB65>Sun Sphere
+    - mythicSkills:
+        - "sunthrow"
+    - consumeItem:
+        type: mineinabyss:sunsphere
+      when:
+        - chance: 1
+resourcepack:
+  textures: mineinabyss:item/relics/spheres/l5_sunsphere
+

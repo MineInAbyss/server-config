@@ -1,0 +1,42 @@
+pmeteortarget:
+  Type: ARMOR_STAND
+  Display: Capra
+  Options:
+    NoAI: true
+    Silent: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=magiccircle;n=false;d=false} @self ~onSpawn
+  - skill{s=pmeteorcometh} @self ~onSpawn
+meteor:
+  Type: CAT
+  Display: meteor
+  Equipment:
+  - glowstone:0
+  Options:
+    NoAI: true
+    Silent: true
+    Despawn: false
+    Invincible: true
+    PreventBlockInfection: true
+  Skills:
+  - skill{s=meteorONSPAWN} @self ~onSpawn
+  - model{mid=meteor;n=false;d=false;i=false} @self ~onSpawn
+
+pangeameteor:
+  Type: CAT
+  Display: meteor
+  Equipment:
+  - glowstone:0
+  Options:
+    NoAI: true
+    Silent: true
+    Despawn: false
+    Invincible: true
+    PreventBlockInfection: true
+  Skills:
+  - skill{s=meteorONSPAWN} @self ~onSpawn
+  - model{mid=pgboulder;n=false;d=false;i=false} @self ~onSpawn
+  - state{mid=pgboulder;s=fly;li=3;lo=2;r=false} @Self ~onSpawn

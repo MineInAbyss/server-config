@@ -11,7 +11,12 @@
 		{ "predicate": { "custom_model_data": 4}, "model": "mineinabyss:item/projectiles/vacio4" },
 		{ "predicate": { "custom_model_data": 5}, "model": "mineinabyss:item/projectiles/vacio5" },
 		{ "predicate": { "custom_model_data": 6}, "model": "mineinabyss:item/projectiles/vacio6" },
-		{ "predicate": { "custom_model_data": 7}, "model": "mineinabyss:item/projectiles/vacio7" }
+		{ "predicate": { "custom_model_data": 7}, "model": "mineinabyss:item/projectiles/vacio7" },
+
+		{ "predicate": {"custom_model_data": 8}, "model": "mineinabyss:item/projectiles/cs1"},
+		{ "predicate": {"custom_model_data": 9}, "model": "mineinabyss:item/projectiles/cs2"},
+		{ "predicate": {"custom_model_data": 10}, "model": "mineinabyss:item/projectiles/cs3"},
+		{ "predicate": {"custom_model_data": 11}, "model": "mineinabyss:item/projectiles/cs4"}
 
 	]
 }

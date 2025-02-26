@@ -6,5 +6,7 @@ set.item:
     lore:
       - ":layer_3:"
       - <yellow>It looks so derpy without its body.
+replaceBurnedDrop:
+  prefab: mineinabyss:madokajack_eye_roasted
 resourcepack:
   textures: mineinabyss:item/creature_drops/madokajack_eye

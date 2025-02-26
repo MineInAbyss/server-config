@@ -1,0 +1,41 @@
+SolarFlare:
+  Conditions:
+  - offgcd true
+  Cooldown: 30
+  Skills:
+  - gcd{t=300}
+  - effect:particlering{p=flame;r=1;points=10;hS=0;vS=0;y=0.5} @self
+  - effect:particlering{p=flame;r=1;points=10;hS=0;vS=0;y=1} @self
+  - sound{s=block.campfire.crackle;p=1} @PIR{r=50}
+  - delay 20
+  - sound{s=block.fire.extinguish;p=0.5} @PIR{r=50}
+  - effect:particlering{p=flame;r=1;points=15;hS=0;vS=0;y=0.5} @self
+  - effect:particlering{p=flame;r=1;points=15;hS=0;vS=0;y=1} @self
+  - delay 20
+  - sound{s=block.campfire.crackle;p=1} @PIR{r=50}
+  - effect:particlering{p=flame;r=1;points=10;hS=0;vS=0;y=0.5} @self
+  - effect:particlering{p=flame;r=1;points=10;hS=0;vS=0;y=1} @self
+  - delay 20
+  - potion{type=SLOW;duration=300;level=200} @self
+  - potion{type=LEVITATION;duration=100;level=2} @self
+  - potion{type=SLOW_FALLING;duration=250;level=1} @self
+  - potion{type=DAMAGE_RESISTANCE;d=250;l=2;force=true} @self
+  - delay 75
+  - effect:particles{p=flash;y=4;repeat=16;repeatInterval=15} @self
+  #- potion{type=SLOW_FALLING;duration=250;level=1} @PIR{r=50}
+  #- velocity{m=set;x=0;y=3;z=0} @PIR{r=50}
+  - missile{oT=SolarFlare-onTick;oH=SolarFlare-onHit;oE=SolarFlare-onEnd;sE=true;hnp=false;hp=true;syo=1.5;v=18;i=1;hR=1;vR=1;in=7;md=90;repeat=20;repeatInterval=10} @PlayersInRadius{r=50;limit=1;sort=RANDOM}
+  - sound{s=block.redstone_torch.burnout;p=2;v=0.5;repeat=16;repeatInterval=15} @PIR{r=50}
+  
+SolarFlare-onTick:
+  Skills:
+  - effect:particles{p=flame;hR=0.1;vR=0.1;i=1;v=1} @origin
+  
+SolarFlare-onHit:
+  Skills:
+  - damage{a=20}
+  - ignite{t=60}
+  
+SolarFlare-onEnd:
+  Skills:
+  - effect:explosion @origin

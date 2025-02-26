@@ -1,0 +1,38 @@
+set.item:
+  item:
+    itemName: <gold>Leap onto Heavens
+    type: PAPER
+    customModelData: 140
+    lore:
+      - ':layer_3: Grade II Relic'
+      - '<#D2D489><i>Boots made out of abyssal threads with a relic sown into them.</#D2D489>'
+      - '<#D2D489><i>When activated they grant the wearer a short escape from</#D2D489>'
+      - '<#D2D489><i>gravity allowing delvers to ascend quicker.</#D2D489>'
+#ghost_seek:
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - hasaurastacks{n=boot;s=3} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Charge
+    - mythicSkills:
+        - "boot_fly"
+passive:
+  - match: [ inInventory ]
+    every: 2s
+    run:
+      - become: parent
+      - ensure:
+          player:
+            sneaking: true
+      - mythicSkills:
+          - "bootcharge"
+
+
+
+
+

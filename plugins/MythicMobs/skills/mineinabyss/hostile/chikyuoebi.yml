@@ -51,9 +51,10 @@ digattack:
     - state{s=landmine;r=true} @self
     - state{s=trigger} @self
     #  - shieldbreak{duration=50} @target
-    - damage{amount=10;ia=true} @PIR{r=5}
+    - damage{amount=15;ia=true} @PIR{r=5}
     - potion{type=POISON;duration=100;level=5} @PIR{r=5}
-    - potion{type=WITHER;duration=50;level=5} @PIR{r=5}
+    - potion{type=WITHER;duration=100;level=5} @PIR{r=5}
+    - potion{type=SLOWNESS;duration=100;level=5} @PIR{r=5}
     - potion{type=NAUSEA;duration=200;level=5}
     - skill{s=Bleeding} @PIR{r=5}
     - delay 30
@@ -65,7 +66,7 @@ ch_Attack:
   Cooldown: 1.5
   Conditions:
     - stance{s=normal} true
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - CancelEvent

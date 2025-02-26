@@ -1,0 +1,17 @@
+healing_staff:
+  Cooldown:
+  Conditions:
+  Skills:
+  - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
+  - potion{t=SLOW;l=7;d=80;p=false} @Self
+  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
+  - delay 3
+  - message{msg="&e<player.name> is casting a healing spell."} @PIR{r=7}
+  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+  - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+  - delay 65
+  - effect:particles{particle=villager_happy;a=20;y=1;s=1;hs=0.4;vs=0.4} @PIR{r=7}
+  - effect:particles{particle=villager_happy;a=30;y=1;s=1;hs=1;vs=1;y=1.5} @PIR{r=7}
+  - effect:particles{particle=totem_of_undying;speed=0.4;amount=60;hs=.2;vs=1;y=4} @Self
+  - heal{a=5} @PIR{r=7}
+  - heal{a=5} @self

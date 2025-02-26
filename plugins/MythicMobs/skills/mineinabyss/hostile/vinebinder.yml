@@ -25,7 +25,7 @@ vinebinderATTACKDamage:
 vinebinderwave:
   Cooldown: 15
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=3} false
   Skills:
     - gcd{ticks=200}

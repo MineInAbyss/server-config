@@ -13,7 +13,7 @@ set.recipes:
         - mineinabyss:star_compass_needle
         - mineinabyss:titanjaw_pearl
 mineinabyss:starcompass: { }
-disableItemInteractions: { }
+
 observe:
   itemRightClick:
     - mineinabyss:toggleStarcompassHud: { }

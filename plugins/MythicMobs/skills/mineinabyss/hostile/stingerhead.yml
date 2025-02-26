@@ -19,7 +19,7 @@ stingerhead_unstuck:
 SH_Attack:
   Cooldown: 1
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - gcd{ticks=40}
@@ -238,7 +238,7 @@ stingerhead_venom_stinger:
 stingerhead_spin:
   Cooldown: 3
   Conditions:
-    - offgcd
+    - offgcd true
   TargetConditions:
     - distance{d=<5} true
   Skills:

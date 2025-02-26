@@ -5,7 +5,7 @@ splitjawHurt:
 SJ_Attack:
   Cooldown: 3
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - gcd{ticks=40}
@@ -75,7 +75,7 @@ SJ_dashmiss:
 sj_roar:
   Conditions:
     - incombat true
-    - offgcd
+    - offgcd true
   Cooldown: 20
   Skills:
     - gcd{ticks=300} @self

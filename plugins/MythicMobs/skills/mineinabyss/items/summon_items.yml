@@ -2,21 +2,37 @@ vinecharm:
   Cooldown: 1
   Conditions:
   Skills:
-    - command{repeat=15;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
-    - summon{type=allyvineblaster;amount=2;radius=4;ctt=true;itt=true;os=true} @self
+    - command{repeat=10;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true} @self
+    - summon{type=allyvineblaster;amount=3;radius=8;ctt=true;itt=true;os=true} @self
     - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
     - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
 
 
-
-
+luckybackup1:
+  Skills:
+    - summon{type=backupskele1;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+luckybackup2:
+  Skills:
+    - summon{type=backupskele2;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+luckybackup3:
+  Skills:
+    - summon{type=backupskele3;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+luckybackup4:
+  Skills:
+    - summon{type=backupskele4;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+luckybackup5:
+  Skills:
+    - summon{type=backupskele5;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+luckybackup5:
+  Skills:
+    - summon{type=testbackup;amount=1;radius=2;ctt=true;itt=true;os=true} @self
 
 
 
 
 
 allyvineblasterattack:
-  Cooldown: 3
+  Cooldown: 1
   Conditions:
     - incombat true
     - offgcd true
@@ -38,6 +54,6 @@ allyvineblasterattack:
 
 avineblaster_impact:
   Skills:
-    - damage{a=4} @target
-    - potion{type=POISON;duration=50;level=2} @target
+    - damage{a=4}
+    - potion{type=POISON;duration=50;level=2}
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target

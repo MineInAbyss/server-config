@@ -1,0 +1,28 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <dark_aqua><b>Verglas Whisper
+    customModelData: 139
+    lore:
+      - ':layer_5: Grade I Relic'
+      - '<#D2D489>A long frail pole carved from one of the crystallized sections</#D2D489>'
+      - '<#D2D489>surrounding the Sea of Corpses. It has the ability to</#D2D489>'
+      - '<#D2D489>shoot frozen air flash-freezing organic matter that it touches.</#D2D489>'
+#disableItemInteractions: { }
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+        id: Frost_Beam
+        length: 10s
+        display: <dark_aqua>Verglas Whisper
+    - mythicSkills:
+        - "Frost_Beam"
+resourcepack:
+  model: mineinabyss:item/projectiles/1

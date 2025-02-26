@@ -16,7 +16,7 @@ SpittleshrubMelee:
 SpittleshrubMeleeSwing:
   Cooldown: 1
   Conditions:
-    - offgcd
+    - offgcd true
     - incombat
     - stance attacking
   TargetConditions:
@@ -57,7 +57,7 @@ SpittleshrubDamaged:
 SpittleshrubSpit:
   Cooldown: 3
   Conditions:
-    - offgcd
+    - offgcd true
     - incombat
     - stance attacking
   TargetConditions:
@@ -91,7 +91,7 @@ SpittleshrubSpit:
 
 SpittleshrubScan:
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - threat{a=1} @PIR{r=16}
     - skill:SpittleshrubScanAICheck
@@ -99,7 +99,7 @@ SpittleshrubScan:
 SpittleshrubScanAICheck:
   Conditions:
     - incombat
-    - offgcd
+    - offgcd true
     - playersInRadius{amount=>0;r=6} castInstead SpittleshrubScan_AIBurrow
     - stance attacking false
   Skills:

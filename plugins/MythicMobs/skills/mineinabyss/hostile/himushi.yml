@@ -28,7 +28,7 @@ magma_snail_smoke_5:
 magma_snail_defence:
   Cooldown: 14
   Conditions:
-    - offgcd
+    - offgcd true
   TargetConditions:
     - distance{d=0to10} true
   Skills:
@@ -85,7 +85,7 @@ magma_snail_denfence-1-hit:
 
 magma_snail_hurt:
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - sound{s=entity.shulker.hurt;p=0.7;v=0.7} @self
 

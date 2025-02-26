@@ -1,0 +1,13 @@
+Frost_Beam:
+  Type: ARMOR_STAND
+  ItemHead: ice_circle
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+    Interactable: false
+  Skills:
+  - equip{item=ice_circle:4} ~onSpawn
+  - effect:particles{particle=redstone;color=#94d4ff;amount=12;hS=0.7;vS=0.7;y=0.7;speed=0;forwardOffset=2;sideOffset=0} @self ~onTimer:10
+  - remove{delay=80} @self ~onSpawn

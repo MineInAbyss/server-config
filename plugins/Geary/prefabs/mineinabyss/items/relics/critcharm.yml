@@ -1,13 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Crit Charm
+    itemName: <gold>Apex Desire
     type: PAPER
     customModelData: 118
     lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
-
+      - ':layer_3: Grade IV Relic'
+      - '<#D2D489><i>A relic which was formed by the tenacity of hostile creatures.</#D2D489>'
+      - '<#D2D489><i>It encompasses the will to be in control granting the</#D2D489>'
+      - '<#D2D489><i>wearer an increased chance of hitting vital spots.</#D2D489>'
+#ghost_seek:
 #ghost_seek:
 disableItemInteractions: {}
 passive:

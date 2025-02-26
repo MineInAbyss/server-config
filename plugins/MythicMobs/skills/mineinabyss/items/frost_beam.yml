@@ -1,0 +1,46 @@
+Frost_Beam:
+  Skills:
+  - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
+  #- effect:sound{s=glacia_sounds:samus.ice_beam_energy;volume=1;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Frost_Beam;r=0;points=1;i=1;duration=2000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 20
+  #- effect:sound{s=glacia_sounds:samus.ice_beam;volume=1;pitch=1} @self
+  - projectile{onTick=Frost_Beam_TICK;onHit=Frost_Beam_HIT;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1;tyo=1;repeat=20;repeatinterval=2} @targetlocation
+  
+Frost_Beam_TICK:
+  Skills:
+  - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Frost_Beam_HIT:
+  TargetConditions:
+  Skills:
+  - damage{a=5} @EntitiesNearOrigin{r=3}
+  - potion{type=SLOW;duration=60;level=2;hasParticles=false} @EntitiesNearOrigin{r=3}
+  - skill{s=Frost_Bolt_HIT_FX} @EntitiesNearOrigin{r=3}
+  #- effect:sound{s=glacia_sounds:samus.ice_freeze;volume=0.4;pitch=1} @self
+  - skill{s=SLOW_FX_60} @EntitiesNearOrigin{r=3}
+  
+Frost_Beam_EXPLODE:
+  Skills:
+  - damage{a=7} @EntitiesNearOrigin{r=5}
+  - prison{material=ICE;duration=80;breakable=false} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW;duration=100;level=2;hasParticles=false} @EntitiesNearOrigin{r=5}
+  - skill{s=Frost_Bolt_HIT_FX} @EntitiesNearOrigin{r=5}
+ # - effect:sound{s=glacia_sounds:samus.ice_break;volume=0.4;pitch=1} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.7;vS=0.7;y=0.6;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=explosion_huge;amount=1;hS=0;vS=0;y=0.3;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - skill{s=SLOW_FX_100} @EntitiesNearOrigin{r=3}
+
+Frost_Bolt_HIT_FX:
+  Skills:
+  - effect:particles{particle=block_crack;m=ICE;amount=10;hS=0.2;vS=0.2;speed=0;forwardOffset=0;sideOffset=0}
+
+SLOW_FX_60:
+  Skills:
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.35;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat=11;repeatinterval=5}
+  
+SLOW_FX_100:
+  Skills:
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.35;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat=19;repeatinterval=5}
+  

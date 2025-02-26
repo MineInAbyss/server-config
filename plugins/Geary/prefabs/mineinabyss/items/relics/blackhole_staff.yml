@@ -1,0 +1,28 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#302D2D><b>Skotos
+    customModelData: 139
+    lore:
+      - ':layer_5: Grade I Relic'
+      - '<#D2D489>An artifact of ancient times with the ability to</#D2D489>'
+      - '<#D2D489>void all energy connected to the force field.</#D2D489>'
+      - '<#D2D489>On use it eliminates life in a straight line.</#D2D489>'
+#disableItemInteractions: { }
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+        id: blackhole
+        length: 360s
+        display: <#302D2D><b>Skotos
+    - mythicSkills:
+        - "blackhole"
+resourcepack:
+  model: mineinabyss:item/projectiles/1

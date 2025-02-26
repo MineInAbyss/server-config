@@ -54,7 +54,7 @@ FLAMETHROWER-Tick:
 Flame-Torrent:
   Cooldown: 10
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - gcd{ticks=80} @self
     - potion{type=SLOW;level=5;d=50} @self

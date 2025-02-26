@@ -1,0 +1,28 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <dark_aqua>Aureate Water-shroom
+    customModelData: 139
+    lore:
+      - ':layer_4: Grade III Relic'
+      - '<#D2D489><i>Supposedly created by a group of delving alchemists who</#D2D489>'
+      - '<#D2D489><i>imbedded relics of solifaction into water-shrooms.</#D2D489>'
+      - '<#D2D489><i>As a staff it has the ability to heal its surroundings when used.</#D2D489>'
+#disableItemInteractions: { }
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+        id: healing_staff
+        length: 20s
+        display: <dark_aqua>Aureate Water-shroom
+    - mythicSkills:
+        - "healing_staff"
+resourcepack:
+  model: mineinabyss:item/projectiles/1

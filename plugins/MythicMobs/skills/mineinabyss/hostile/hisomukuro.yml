@@ -1,10 +1,9 @@
 HS_ball:
-  Cooldown: 6
+  Cooldown: 4
   Conditions:
     - incombat true
     - offgcd true
     # - targetwithin{d=10} true
-    #- targetinlineofsight{} true
   Skills:
     - gcd{ticks=100}
     - state{s=grab} @self
@@ -12,7 +11,7 @@ HS_ball:
     #  - effect:particlebox{p=bubble_pop;a=9;repeat=15;repeatInterval=1} @Self
     - delay 15
     - setstance{stance=bullet} @self
-    - projectile{onTick=HSA_tick;onHit=HS_impact;v=18;i=1;hR=1.5;vR=2;hnp=true;tyo=-0.8} @targetlocation
+    - projectile{onTick=HSA_tick;onHit=HS_impact;v=18;i=1;hR=1.5;vR=2;hnp=true;tyo=-0.8} @target
     - delay 35
     - delay 20
     - setstance{stance=hscharge} @self

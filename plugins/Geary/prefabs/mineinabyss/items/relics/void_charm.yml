@@ -1,9 +1,13 @@
 set.item:
   item:
     type: minecraft:paper
-    itemName: <dark_aqua>Void Charm
+    itemName: <dark_aqua>Fleeting Void
     customModelData: 139
-    # TODO add lore
+    lore:
+      - ':layer_5: Grade II Relic'
+      - '<#D2D489><i>Forgot what</#D2D489>'
+      - '<#D2D489><i>it</#D2D489>'
+      - '<#D2D489><i>does.</#D2D489>'
 #disableItemInteractions: { }
 observe:
   itemRightClick:
@@ -17,7 +21,7 @@ observe:
     - cooldown:
         id: shadowball
         length: 10s
-        display: <dark_aqua>Void Charm
+        display: <dark_aqua>Fleeting Void
     - mythicSkills:
         - "shadowball"
 resourcepack:

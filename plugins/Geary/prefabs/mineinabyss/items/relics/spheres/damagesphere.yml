@@ -1,0 +1,26 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#BFBFBF>Damage Sphere
+    customModelData: 150
+    lore:
+      - <gold>It is an egg-shaped relic with
+      - <gold>white and grey patterns on its surface.
+      - <gold>It has a smooth texture and has a cracking
+      - <gold>noise like eggs if pressure is applied to it.
+      - <#B07E3E><i>Damages creatures on contact if thrown.
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: damagesphere
+        length: 5s
+        display: <#BFBFBF>Damage Sphere
+    - mythicSkills:
+        - "damagethrow"
+    - consumeItem:
+        type: mineinabyss:damagesphere
+      when:
+        - chance: 1
+resourcepack:
+  textures: mineinabyss:item/relics/spheres/l1_sunsphere

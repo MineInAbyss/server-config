@@ -6,7 +6,7 @@ buroguroMelee:
 buroguroMeleeSwing:
   Cooldown: 1
   Conditions:
-    - offgcd
+    - offgcd true
     - incombat
   TargetConditions:
     - distance <3
@@ -45,7 +45,7 @@ buroguroDamaged:
 
 buroguroTick:
   Conditions:
-    - offgcd
+    - offgcd true
     - incombat castInstead buroguroTickCombat
   Skills:
     - skill:buroguroBeAnnoying

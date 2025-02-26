@@ -1,6 +1,6 @@
 AmethystGolemAttack:
   Conditions:
-    - offgcd
+    - offgcd true
     - incombat
   Skills:
     - cancelevent{sync=true} @Self

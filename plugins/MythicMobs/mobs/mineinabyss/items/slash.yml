@@ -1,0 +1,98 @@
+
+Bubble:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: bubble
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=0.7;vS=0.7;speed=0;y=0.5} @self ~onTimer:5
+  - effect:particles{particle=drip_water;amount=15;hS=0.8;vS=0.2;speed=0;y=0.1} @self ~onTimer:5
+  - equip{item=bubble:4} ~onSpawn
+
+CyanSwings_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,180
+  ItemHead: CyanSwings
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=cyan_swing_1:4} ~onSpawn
+  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+CyanSwings_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,45
+  ItemHead: CyanSwings
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=cyan_swing_1:4} ~onSpawn
+  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+CyanSwings_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: CyanSwings
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=cyan_swing_1:4} ~onSpawn
+  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+CyanSwings_4:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,135
+  ItemHead: CyanSwings
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=cyan_swing_1:4} ~onSpawn
+  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+
+Blood_Slash:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: projslash
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=projslash:4} ~onSpawn
+  - effect:particles{p=reddust;color=#FF0000;amount=15;hS=1.2;vS=0.1;speed=0} @self ~onSpawn

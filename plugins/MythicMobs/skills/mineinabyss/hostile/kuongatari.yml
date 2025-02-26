@@ -1,7 +1,7 @@
 Kuon_Summon:
   Cooldown: 1
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=20} true
     - incombat true
   Skills:

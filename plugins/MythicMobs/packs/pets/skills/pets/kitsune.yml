@@ -1,7 +1,7 @@
 Kitsune_Normal_Dash:
   Cooldown: 5
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - gcd{ticks=40}
     - state{s=run;li=10;lo=10} @self
@@ -14,7 +14,7 @@ Kitsune_Normal_Dash:
 Kitsune_Demonic_Dash:
   Cooldown: 5
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - gcd{ticks=40}
     - state{s=run;li=10;lo=10} @self
@@ -27,7 +27,7 @@ Kitsune_Demonic_Dash:
 Kitsune_Inferno_Dash:
   Cooldown: 5
   Conditions:
-    - offgcd
+    - offgcd true
   Skills:
     - gcd{ticks=40}
     - state{s=run;li=10;lo=10} @self

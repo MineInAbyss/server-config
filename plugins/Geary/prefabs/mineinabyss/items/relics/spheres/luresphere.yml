@@ -1,0 +1,26 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#28D42B>Lure Sphere
+    customModelData: 152
+    lore:
+      - <gold>It is an egg-shaped relic with
+      - <gold>weird green patterns on its surface.
+      - <gold>It has a smooth texture and has a cracking
+      - <gold>noise like eggs if pressure is applied to it.
+      - <#B07E3E><i>Capable of pulling creatures towards you
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: luresphere
+        length: 5s
+        display: <#28D42B>Lure Sphere
+    - mythicSkills:
+        - "lurethrow"
+    - consumeItem:
+        type: mineinabyss:luresphere
+      when:
+        - chance: 1
+resourcepack:
+  textures: mineinabyss:item/relics/spheres/l3_sunsphere

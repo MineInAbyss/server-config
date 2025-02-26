@@ -7,5 +7,16 @@ set.item:
       - ":layer_3:"
       - <yellow>I wonder how many people in Orth
       - <yellow>would like to eat this...
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - type: furnace
+      input: mineinabyss:madokajack_eye
+      experience: 1
+      cookingTime: 100
+    - type: smoking
+      input: mineinabyss:madokajack_eye
+      experience: 2
+      cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/creature_drops/madokajack_eye_roasted

@@ -4,9 +4,10 @@ set.item:
     type: PAPER
     customModelData: 118
     lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
+      - ':layer_1::layer_2: Grade IV Relic'
+      - '<#D2D489><i>An organic object that attaches to the wearer and</#D2D489>'
+      - '<#D2D489><i>channels their intrinsic instinct for survival. When in </#D2D489>'
+      - '<#D2D489><i>danger the relic trades energy reserves for quick closing wounds.</#D2D489>'
 
 #ghost_seek:
 disableItemInteractions: {}
@@ -20,8 +21,8 @@ passive:
             - health{h=<10}
       - cooldown:
           id: Verdau Effax
-          length: 45s
-          display: <dark_aqua>
+          length: 120s
+          display: <dark_aqua>Absorb
       - mythicSkills:
           - "verdaueffax"
 resourcepack:

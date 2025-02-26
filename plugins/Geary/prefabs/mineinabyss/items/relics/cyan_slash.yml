@@ -1,0 +1,29 @@
+set.item:
+  item:
+    type: minecraft:netherite_sword
+    customModelData: 3
+    itemName: <#FFC0CB><b>Lunula Kaien
+    lore:
+      - ':layer_3: Grade I Relic'
+      - '<#D2D489>A weapon that can tear into the fabric of the force field.</#D2D489>'
+      - '<#D2D489>It is known to create crescent shaped slashes</#D2D489>'
+      - '<#D2D489>damaging all organic matter that it comes into contact with.</#D2D489>'
+#ghost_seek:
+disableItemInteractions: {}
+observe:
+  itemLeftClick:
+    - become: parent
+    - ensure:
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
+    - cooldown:
+          id: cyanslash
+          length: 1s
+          display: <dark_aqua>
+    - mythicSkills:
+          - "Cyan_Slash"
+resourcepack:
+  model: mineinabyss:item/event/relic_sword

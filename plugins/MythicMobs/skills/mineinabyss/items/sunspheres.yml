@@ -1,0 +1,103 @@
+damagethrow:
+  Cooldown: 0
+  Conditions:
+    - offgcd true
+  Skills:
+    - gcd{ticks=50}
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=damage_impact;onEnd=d_end;v=30;g=0.7;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;vO=0.1} @targetlocation
+
+aoethrow:
+  Cooldown: 0
+  Conditions:
+    - offgcd true
+  Skills:
+    - gcd{ticks=50}
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=aoe_impact;onEnd=a_end;v=20;g=0.8;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;vO=0.1} @targetlocation
+
+spreadthrow:
+  Cooldown: 0
+  Conditions:
+    - offgcd true
+  Skills:
+    - gcd{ticks=50}
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=spread_impact;onEnd=s_end;v=20;g=0.8;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;vO=0.1} @targetlocation
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=fakespread_impact;v=20;g=0.8;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;a=.8;syo=1.5} @targetlocation
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=fakespread_impact;v=20;g=0.8;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;a=.7;syo=1.5} @targetlocation
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=fakespread_impact;v=20;g=0.8;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;a=.8;syo=1.5} @targetlocation
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=fakespread_impact;v=20;g=0.8;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;a=.8;syo=1.5} @targetlocation
+
+
+lurethrow:
+  Cooldown: 0
+  Conditions:
+    - offgcd true
+  Skills:
+    - gcd{ticks=50}
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=pull_impact;onEnd=l_end;v=20;g=0.8;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5} @targetlocation
+
+sunthrow:
+  Cooldown: 0
+  Conditions:
+    - offgcd true
+  Skills:
+    - gcd{ticks=50}
+    - projectile{bulletType=ITEM;material=redstone;onTick=sphere_tick;onHit=sun_impact;onEnd=sun_end;v=20;g=0.8;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5} @targetlocation
+
+
+
+sphere_tick:
+  Skills:
+    - effect:particles{particle=Crit;amount=1;hS=.1;vS=.1;speed=0}
+
+sun_impact:
+  Skills:
+
+   # - dropitem{i=SunDrops}
+aoe_impact:
+  Skills:
+
+  #  - dropitem{i=AoeDrops}
+
+spread_impact:
+  Skills:
+    - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
+    - damage{a=10}
+   # - dropitem{i=SpreadDrops}
+
+fakespread_impact:
+  Skills:
+    - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
+    - damage{a=10}
+
+damage_impact:
+  Skills:
+    - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
+    - damage{a=25}
+   # - dropitem{i=DamageDrops}
+
+lure_impact:
+  Skills:
+   # - dropitem{i=LureDrops}
+
+d_end:
+  Skills:
+    - dropitem{i=DamageDrops}
+a_end:
+  Skills:
+    - dropitem{i=AoeDrops}
+    - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
+    - damage{a=15} @EntitiesNearOrigin{r=2}
+s_end:
+  Skills:
+    - dropitem{i=SpreadDrops}
+l_end:
+  Skills:
+    - effect:particles{particle=Wax_Off;amount=100;hS=5;vS=5;y=.5}
+    - pull{velocity=5} @EntitiesNearOrigin{r=10}
+    - dropitem{i=LureDrops}
+sun_end:
+  Skills:
+    - dropitem{i=SunDrops}
+    - particleorbital{r=0.8;points=16;t=50;i=1;particle=Electric_Spark;oy=2.3}
+    - blackscreen{d=50} @EntitiesNearOrigin{r=3}
+    - potion{t=SLOWNESS;d=100;l=2} @EntitiesNearOrigin{r=3}

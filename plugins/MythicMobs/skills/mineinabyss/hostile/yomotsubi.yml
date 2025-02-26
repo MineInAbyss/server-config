@@ -15,7 +15,7 @@ yomotsubi_airball:
     - sound{s=entity.ghast.shoot;sc=hostile;p=<random.float.0.8to1.0>;v=0.8} @self
     - sound{s=block.metal.break;sc=hostile;p=1.3;v=0.6} @self
 
-    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5} @target
     - delay 20
 
 bondrewd_airball:
@@ -27,12 +27,12 @@ bondrewd_airball:
     #- targetinlineofsight{} true
   Skills:
     - gcd{ticks=10}
-    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=12;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=0.5;syo=1.5;vn=1} @target
+    - projectile{onTick=yomotsubi_tick;onHit=yomotsubi_impact;v=12;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=0.5;syo=1.5} @target
 
 
 yomotsubi_tick:
   Skills:
-    - effect:particles{particle=cloud;amount=12;hS=.15;vS=.15;speed=0.05}
+    - effect:particles{particle=cloud;amount=9;hS=.1;vS=.1;speed=0.01}
 
 yomotsubi_impact:
   Skills:
@@ -85,7 +85,7 @@ shiratsubi_airball:
     - sound{s=entity.ghast.shoot;sc=hostile;p=<random.float.0.8to1.0>;v=0.8} @self
     - sound{s=block.metal.break;sc=hostile;p=1.3;v=0.6} @self
 
-    - projectile{onTick=shiratsubi_tick;onHit=shiratsubi_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5;vn=1} @target
+    - projectile{onTick=shiratsubi_tick;onHit=shiratsubi_impact;v=10;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5} @target
     - delay 20
 
 shiratsubi_tick:

@@ -6,7 +6,7 @@
 windstaff:
   Cooldown: 1
   Skills:
-    - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -1";op=true}
+    - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
 
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
@@ -15,7 +15,7 @@ windstaff:
     - sound{s=entity.ghast.shoot;sc=hostile;p=<random.float.0.8to1.0>;v=0.8} @self
     - sound{s=block.metal.break;sc=hostile;p=1.3;v=0.6} @self
 
-    - projectile{onTick=yomotsubi_tick;onHit=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=1;syo=1.5} @targetlocation
+    - projectile{onTick=yomotsubi_tick;onHit=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @targetlocation
     - delay 20
 
 
@@ -26,6 +26,7 @@ windstaff:
 wind_impact:
   Skills:
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1}
-    - throw{velocity=10;velocityY=5} @EIR{r=4}
-    - damage{a=12} @EIR{r=4}
+    - throw{velocity=10;velocityY=5} @EntitiesNearOrigin{r=2}
+    - damage{a=20} @EntitiesNearOrigin{r=2}
+
     - shieldbreak{duration=150}

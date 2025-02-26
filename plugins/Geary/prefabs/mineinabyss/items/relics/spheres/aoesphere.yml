@@ -1,0 +1,26 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#454A46>AOE Sphere
+    customModelData: 153
+    lore:
+      - <gold>It is an egg-shaped relic with
+      - <gold>black patterns on its surface.
+      - <gold>It has a smooth texture and has a cracking
+      - <gold>noise like eggs if pressure is applied to it.
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: aoesphere
+        length: 5s
+        display: <#454A46>Aoe Sphere
+    - mythicSkills:
+        - "aoethrow"
+    - consumeItem:
+        type: mineinabyss:aoesphere
+      when:
+        - chance: 1
+resourcepack:
+  textures: mineinabyss:item/relics/spheres/l4_sunsphere
+

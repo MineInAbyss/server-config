@@ -1,13 +1,12 @@
 set.item:
   item:
-    itemName: <gold>Animal Totem
+    itemName: <gold>Preys Desire
     type: PAPER
     customModelData: 137
     lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
-
+      - ':layer_1: Grade IV Relic'
+      - '<#D2D489><i>A mysterious totem granting adrenaline to flee predators.</#D2D489>'
+      - '<#D2D489><i>Calls upon the desire to survive when used.</#D2D489>'
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -19,7 +18,7 @@ observe:
     - cooldown:
         id: animal_totem
         length: 60s
-        display: <#617B94>Animal Totem
+        display: <#617B94>Preys Desire
     - applyPotionEffects:
         - type: minecraft:speed
           duration: 2s

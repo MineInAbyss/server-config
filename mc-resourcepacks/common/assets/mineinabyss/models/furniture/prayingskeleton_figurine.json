@@ -1,0 +1,41 @@
+{
+"credit": "Made with Blockbench",
+"texture_size": [16, 16],
+"textures": {
+    "104": "mineinabyss:bbmodels/praying_skeleton_1",
+},
+
+"display": {
+    "thirdperson_righthand": {
+        "rotation": [0, 134, 0],
+        "scale": [0.3, 0.3, 0.3]
+    },
+    "thirdperson_lefthand": {
+        "rotation": [0, 134, 0],
+        "scale": [0.3, 0.3, 0.3]
+    },
+    "firstperson_righthand": {
+        "rotation": [0, 115, 0],
+        "scale": [0.3, 0.3, 0.3]
+    },
+    "firstperson_lefthand": {
+        "rotation": [0, 115, 0],
+        "translation": [0, 0, -4],
+        "scale": [0.3, 0.3, 0.3]
+    },
+    "ground": {
+        "translation": [-3.5, 0, 0],
+        "scale": [0.5, 0.5, 0.5]
+    },
+    "gui": {
+        "rotation": [26, -141, 0],
+        "translation": [2, -0.25, 0],
+        "scale": [0.3, 0.3, 0.3]
+    },
+    "fixed": {
+        "rotation": [-90, 0, 0],
+        "translation": [-31.75, 0, -15.5],
+        "scale": [2, 2, 2]
+    }
+}
+}

@@ -81,7 +81,7 @@ swarmshockerbigShock:
 swarm_Summon:
   Cooldown: 9999999
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=30} true
     - incombat true
   Skills:

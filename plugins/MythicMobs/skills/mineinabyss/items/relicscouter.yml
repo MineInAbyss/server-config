@@ -10,7 +10,7 @@ brokenscout: #200 100 50 - 10 seconds   (made with layer 1-3 mob drops)
     - delay 5
     - sound{s=block.note_block.chime;sc=master;p=0.5;v=1} @self
 
-repairscout: #400 200 100 50 25 - 7 seconds  (made with orby face, diamonds, relic part drops) (Graveyards can spawn after l2 boss quest)
+repairscout: #400 200 100 50 25 - 7 seconds  (hiso bones, charcoal sand,, relic part drops) (Graveyards can spawn after l2 boss quest)
   Conditions:
     - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=400}
   Cooldown: 1

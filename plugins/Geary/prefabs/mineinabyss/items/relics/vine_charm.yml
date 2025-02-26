@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:paper
     customModelData: 138
-    itemName: <#617B94><b>Vine Charm
+    itemName: <#617B94>Tsurukinesist
     lore:
-      - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
-      - <#C6CC8A>which causes ongoing explosions
-      - <#C6CC8A>on whatever it is struck on.
-      - <#948E61><i>Used to create powerful explosions.
+      - ':layer_1::layer_2: Grade II Relic'
+      - '<#D2D489><i>An organic relic which was made by stitching together multiple</#D2D489>'
+      - '<#D2D489><i>relics and plant parts. When used it calls upon seeds to</#D2D489>'
+      - '<#D2D489><i>syphon the energy in the force field to rapidly grow into vine binders.</#D2D489>'
 disableItemInteractions: { }
 hat: {}
 observe:
@@ -22,6 +22,6 @@ observe:
     - cooldown:
         id: vinecharm
         length: 15s
-        display: <#617B94>Vine Charm
+        display: <#617B94>Tsurukinesist
     - mythicSkills:
         - "vinecharm"

@@ -1,0 +1,23 @@
+set.item:
+  item:
+    type: minecraft:bow
+    customModelData: 102
+    itemName: <#617B94><b>Pacing Step
+    lore:
+      - ':layer_2: Grade I Relic'
+      - '<#D2D489>A bow crafted out of multiple relic materials to supposedly</#D2D489>'
+      - '<#D2D489>combat predators in the upper layers.</#D2D489>'
+      - '<#D2D489>When used it lunges the wearer out of harms way.</#D2D489>'
+
+observe:
+  itemLeftClick:
+    - become: parent
+    - ensure:
+        player:
+          sneaking: true
+    - cooldown:
+        id: Backstep
+        length: 5s
+        display: <#617B94>Backstep
+    - mythicSkills:
+        - "Backstep"

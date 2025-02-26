@@ -58,7 +58,7 @@ hc_dashmiss:
 hc_Attack2:
   Cooldown: 1.5
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - CancelEvent
@@ -79,7 +79,7 @@ hc_Attack_DAMAGE2:
 hc_Attack:
   Cooldown: 1.5
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - CancelEvent

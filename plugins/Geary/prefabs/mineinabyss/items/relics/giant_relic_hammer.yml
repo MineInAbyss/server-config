@@ -1,0 +1,25 @@
+set.item:
+  item:
+    type: minecraft:netherite_axe
+    customModelData: 1
+    itemName: <#FFC0CB><b>Solemnity and Consequence
+    lore:
+      - ':layer_3: Grade I Relic'
+      - '<#D2D489>Multiple relics crafted into a giant hammer shaped weapon.</#D2D489>'
+      - '<#D2D489>The hammers head is being pulled into the depths of the abyss</#D2D489>'
+      - '<#D2D489>generating momentum on downward swings with heavy impact.</#D2D489>'
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        player:
+          sneaking: true
+    - cooldown:
+        id: hammer_smash
+        length: 5s
+        display: <#617B94>hammer_smash
+    - mythicSkills:
+        - "hammer_smash"
+
+resourcepack:
+  model: mineinabyss:item/relics/relichammer

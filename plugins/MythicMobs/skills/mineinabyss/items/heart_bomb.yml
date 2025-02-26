@@ -4,11 +4,11 @@ heartthrow:
     - offgcd true
   Skills:
     - gcd{ticks=50}
-    - projectile{bulletType=ITEM;material=redstone;onTick=heart_tick;onHit=heart_impact;v=20;g=0.6;i=1;hR=1;vR=1;hnp=true;a=.6;tyo=1;syo=1.5;vn=1} @targetlocation
+    - projectile{bulletType=ITEM;material=redstone;onTick=heart_tick;onHit=heart_impact;v=20;g=0.85;i=1;hR=1;vR=1;hnp=true;syo=1.5} @targetlocation
 
 heart_tick:
   Skills:
-    - effect:particles{particle=heart;amount=5;hS=.1;vS=.1;speed=1.25}
+    - effect:particles{particle=heart;amount=1;hS=.1;vS=.1;speed=1.25}
 
 heart_impact:
   Skills:

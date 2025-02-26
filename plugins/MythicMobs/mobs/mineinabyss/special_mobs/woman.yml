@@ -6,8 +6,8 @@
 
 ozen:
   Type: ZOMBIE
-  Display: '<#FFFFFF>Ozen the Unmoveable Sovereign' 
-  Health: 1000
+  Display: '<#FFFFFF>Ozen, the Unmoveable Sovereign <caster.hp>/<caster.mhp>' 
+  Health: 500
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -27,8 +27,21 @@ ozen:
     Collidable: true
     Silent: true
     FollowRange: 32
-    MovementSpeed: 0.27
+    MovementSpeed: 0.3
+  DropOptions:
+    DropMethod: FANCY
+    ShowDeathHologram: true
+    ClientSideDrops: true
+    Lootsplosion: false
+    HologramItemNames: true
+    ItemGlowByDefault: true
+    ItemBeamByDefault: true
+    ItemVFXByDefault: false
+
+    HologramTimeout: 2000
   Skills:
+  - barCreate{name="ozen";display="<caster.name> <caster.hp> <&fs> <caster.mhp>";value=1.0;color=PURPLE;style=SEGMENTED_6} @self ~onSpawn
+  - skill{s=ozen_bossbar_damage} @self ~onDamaged
   - skill{s=SaveBossLocation} @self ~onSpawn
   - skill{s=bossping} ~onSignal:location
   - skill{s=Changetarget} ~onTimer:10 <99%
@@ -37,11 +50,11 @@ ozen:
 
   - throw{v=5;yv=-1} @pir{r=1} ~onTimer:1
   #- skill{s=ozen_death} @self ~onDeath
-  - skill{s=ozen_slap} @self ~onDamaged 0.1
+  - skill{s=ozen_slap} @self ~onDamaged 0.15
  # - skill{s=ozen_grab_sync} @self ~oninteract
 
   - skill{s=ozen_bossbar_damage} @self ~onDamaged
   - model{mid=capelessozen;d=false;i=true;step=1;ride=true} @self ~onSpawn
   - model{mid=capelessozen;d=false;i=true;step=1;ride=true} @self ~onLoad  
   - remove{delay=30000} @self ~onSpawn
-  - skill{s=ozen_dash} @target ~onTimer:20
+  - skill{s=ozen_dash} @target ~onTimer:100

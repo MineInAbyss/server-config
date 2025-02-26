@@ -6,8 +6,8 @@ set.item:
     lore:
       - <aqua>Used by delvers to keep
       - <aqua>track of their depth.
-      - <#3f536c><i>Toggle between HUD
-      - <#3f536c><i>and item based with right-click.
+      - <#3f536c><i>Show depth with left-click
+      
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -49,12 +49,9 @@ observe:
     - become: parent
     - cooldown:
         id: depth_meter
-        length: 1s
+        length: 5s
+        display: <#02A9bF>Depth Meter
     - mineinabyss:showDepth: { }
 
-  itemRightClick:
-    - mineinabyss:toggleDepthHud: { }
-
-disableItemInteractions: { }
 resourcepack:
   textures: mineinabyss:item/tools/depth_meter

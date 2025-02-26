@@ -1,0 +1,33 @@
+
+bootcharge:
+  Cooldown: 
+  Conditions:
+  Skills:
+  - aura{auraName=boot;onStart=bootstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
+  - skill{s=bootready} @self
+  - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+
+bootstack:
+  Conditions:
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+
+bootready:
+  Cooldown: 6
+  Conditions:
+  - offgcd true
+  - hasaurastacks{n=boot;s=3} true
+
+  Skills:
+  - gcd{ticks=100}
+  - sound{s=item.trident.riptide_3;sc=master;p=1;v=1} @self
+
+
+
+boot_fly:
+  Conditions:
+  - hasaurastacks{n=boot;s=3} true
+  Skills:
+  - auraremove{aura=boot;stacks=3} @self
+  - sound{s=item.boot.throw;sc=hostile;p=1;v=0.6} @self
+  - velocity{m=set;x=0;y=1;z=0} @self 

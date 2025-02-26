@@ -124,6 +124,3 @@ Randomcrit:
   Cooldown:
   Skills:
   - onAttack{auraName=Crit;onTick=CritTick;duration=100;charges=1;multiplier=2.5;i=20} @self
-CritTick:
-  Skills:
-  - effect:particles{particle=crit;a=30;hs=0.5;vs=0.5;speed=1} @origin

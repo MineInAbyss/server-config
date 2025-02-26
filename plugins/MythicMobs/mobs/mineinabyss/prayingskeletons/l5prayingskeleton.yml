@@ -29,12 +29,24 @@ l5prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
+  DropOptions:
+    DropMethod: FANCY
+    ShowDeathHologram: false
+    ClientSideDrops: true
+    Lootsplosion: false
+    HologramItemNames: true
+    ItemGlowByDefault: true
+    ItemBeamByDefault: true
+    ItemVFXByDefault: false
+
+    HologramTimeout: 6000
   Drops:
     - exp 10-15
-    - geary mineinabyss:plant_matter 1-2 0.6
+    - L5RelicDrops
 
   Skills:
     ####### Misc
+    - skill{s=luckybackup5;cooldown=1;delay=70} @self ~onSpawn 0.05
     - skill{s=saveskelelocation} @self ~onSpawn
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
@@ -43,3 +55,58 @@ l5prayingskeleton:
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - teleport{spreadh=1;spreadv=1} @RandomLocationsNearOrigin{radius=400;minradius=100;spacing=1;onSurface=true} ~onspawn
+
+
+
+backupskele5:
+  Type: ZOMBIE
+  SpawnCategory: skeleton
+  Display: "<green>Praying Skeleton"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Health: 5 # change this
+  Damage: 0 # keep this 0
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+    Collidable: false
+    Despawn: false
+    Persistent: true
+  Model:
+    Id: praying_skeleton_2
+    ViewRadius: 100
+    Drive: false
+    DamageTint: false
+    Scale: 1
+  DamageModifiers:
+    - FALL 0.001
+    - DROWNING 0.001
+  DropOptions:
+    DropMethod: FANCY
+    ShowDeathHologram: false
+    ClientSideDrops: true
+    Lootsplosion: false
+    HologramItemNames: true
+    ItemGlowByDefault: true
+    ItemBeamByDefault: true
+    ItemVFXByDefault: false
+
+    HologramTimeout: 6000
+  Drops:
+    - exp 10-15
+    - L5RelicDrops
+  Skills:
+    ####### Misc
+    - skill{s=luckybackup5} @self ~onSpawn 0.05
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    # - skill{s=vinebinderwave} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack

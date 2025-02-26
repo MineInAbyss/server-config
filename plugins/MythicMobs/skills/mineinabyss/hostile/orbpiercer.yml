@@ -17,7 +17,7 @@ meteorONSPAWN:
 
 orbyATTACK:
   Conditions:
-    - offgcd
+    - offgcd true
     - targetwithin{d=5} true
   Skills:
     - CancelEvent
@@ -50,7 +50,7 @@ orbyATTACKDamage:
 ###orby projectiles
 orbyspear:
   Conditions:
-    - offgcd
+    - offgcd true
     - stance{s=spikeless;str=true} false
     - targetinlineofsight
   Cooldown: 56
@@ -62,7 +62,7 @@ orbyspear:
     - state{mid=orbpiercer;s=normal_shot;r=true} @self
 orbyspear2:
   Conditions:
-    - offgcd
+    - offgcd true
     - targetinlineofsight
   Cooldown: 6
   Skills:
@@ -100,7 +100,7 @@ orbyend:
 
 orby_shout:
   Conditions:
-    - offgcd
+    - offgcd true
     - stance{s=spikeless;str=true} false
   Cooldown: 40
   Skills:
@@ -149,7 +149,7 @@ orby_knockback2:
 orby_spike_eject:
   Cooldown: 500
   Conditions:
-    - offgcd
+    - offgcd true
   #- stance{s=spikeless;str=true} false
   Skills:
     - setAI{ai=false} @self

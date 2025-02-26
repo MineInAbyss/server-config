@@ -1,0 +1,23 @@
+bone_ball:
+  Cooldown: 1
+  Conditions:
+  Skills:
+
+    - projectile{onTick=BB_tick;onHit=bone_impact;v=18;i=1;hR=1;vR=1;hnp=true;syo=1.5;hp=true} @targetlocation
+
+bone_impact:
+  Skills:
+
+    - command{c="remove boats 5";asOp=true;asCaster=true} 
+
+    - potion{type=BLINDNESS;duration=100;level=1;p=false;force=true} @EntitiesNearOrigin{r=2}
+    - potion{type=SLOWNESS;duration=100;level=1;p=false;force=true} @EntitiesNearOrigin{r=2}
+    - damage{a=8} @EntitiesNearOrigin{r=2}
+    - damage{a=5;ia=true} @EntitiesNearOrigin{r=2}
+
+    - shieldbreak{duration=150} 
+
+BB_tick:
+  Skills:
+    - effect:particlebox{p=bubble;a=5;s=0.1;r=0.5}
+    - effect:particlebox{p=bubble_pop;a=9;s=0.1;r=0.2}

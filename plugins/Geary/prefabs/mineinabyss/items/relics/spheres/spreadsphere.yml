@@ -1,0 +1,28 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#7D9472>Spread Sphere
+    customModelData: 151
+    lore:
+      - <gold>It is an egg-shaped relic with
+      - <gold>grey patterns on its surface.
+      - <gold>It has a rigrid texture and has a cracking
+      - <gold>noise like eggs if pressure is applied to it.
+      - <#B07E3E><i>Shoots multiple projectiles
+      - <#B07E3E><i>after being thrown.
+observe:
+  itemRightClick:
+    - become: parent
+    - cooldown:
+        id: spreadsphere
+        length: 5s
+        display: <#7D9472>Spread Sphere
+    - mythicSkills:
+        - "spreadthrow"
+    - consumeItem:
+        type: mineinabyss:spreadsphere
+      when:
+        - chance: 1
+resourcepack:
+  textures: mineinabyss:item/relics/spheres/l2_sunsphere
+

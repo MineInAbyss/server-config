@@ -197,7 +197,7 @@ ozen_grab_damage:
   
 ozen_slap:
   Conditions:
-  - offgcd
+  - offgcd true
   Cooldown: 4
   Skills:
   - gcd{ticks=200} @self
@@ -211,7 +211,7 @@ ozen_slap:
 
 
 ozen_backhand_damage:
-  Cooldown: 3
+  Cooldown: 10
   Skills:  
   - effect:particles{particle=block;m=redstone_block;amount=5;hS=0;vS=0;y=1}
   - potion{type=CONFUSION;duration=120;level=1;p=false;i=false}
@@ -222,19 +222,16 @@ ozen_backhand_damage:
   - damage{a=12;pi=true}
 
 ozen_dash:
-
-  Cooldown: 10
-
+  Cooldown: 30
   Conditions:
   - offgcd true
   - targetinlineofsight
   - incombat true
   #- stance{s=spikeless;str=true} false
   Skills:
-  - gcd{ticks=220}
+  - gcd{ticks=500}
   - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
     # - setai{ai=false}
-  - stun{d=45;f=true} @self
 
 
   - delay 20
@@ -253,7 +250,7 @@ ozen_dash:
 
     #- setai{ai=true}
 ozen_dashhit:
-  Cooldown: 1.5
+  Cooldown: 10
   Conditions:
   - targetwithin 3
   Skills:
@@ -269,6 +266,7 @@ ozen_dashhit:
   - damage{a=7;pi=true} 
   - throw{v=10;vy=7}
   - setstance{stance=sprintendattack} @self
+  - setspeed{speed=1;type=walking} @self
   - delay 100
 
 

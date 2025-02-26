@@ -1,13 +1,13 @@
 set.item:
   item:
-    itemName: <gold>Wave Charm
+    itemName: <gold>Ricochet and Interference
     type: PAPER
     customModelData: 141
     lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
-
+      - ':layer_4: Grade IV Relic'
+      - '<#D2D489><i>A charm which can cause ripples in the force field</#D2D489>'
+      - '<#D2D489><i>similarly to how water acts in the Goblets of Giants.</#D2D489>'
+      - '<#D2D489><i>When used the caused ripple effect pushes back organic matter.</#D2D489>'
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -22,7 +22,7 @@ observe:
     - cooldown:
           id: tidalwave
           length: 15s
-          display: <dark_aqua>
+          display: <dark_aqua>Wave Charm
     - mythicSkills:
           - "Tidal_Wave"
 resourcepack:

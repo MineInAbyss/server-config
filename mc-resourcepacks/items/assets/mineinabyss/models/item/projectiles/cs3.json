@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "mineinabyss:item/projectiles/cs3",
+		"particle": "mineinabyss:item/projectiles/cs3"
+	},
+	"elements": [
+		{
+			"from": [-11.5, -11.5, 8],
+			"to": [27.5, 27.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0.032, 0.032, 15.968, 15.968], "texture": "#0"},
+				"east": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"south": {"uv": [15.968, 0.032, 0.032, 15.968], "texture": "#0"},
+				"west": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"up": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"down": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [90, 0, -180],
+			"translation": [-2.5, -19, 55.75],
+			"scale": [3.5, 3.5, 3.5]
+		}
+	}
+}

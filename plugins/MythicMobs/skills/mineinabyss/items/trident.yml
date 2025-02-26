@@ -4,18 +4,21 @@ trident_charge:
   Conditions:
   Skills:
   - aura{auraName=trident;onStart=tridentstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
+  - skill{s=tridentready} @self
+  - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
 tridentstack:
   Conditions:
   Skills:
-  - effect:particles{particle=splash;amount=10;hS=0.5;vS=1;speed=0;y=0.3}
+ # - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
 
 tridentready:
+  Cooldown: 6
   Conditions:
+  - offgcd true
   - hasaurastacks{n=trident;s=3} true
   Skills:
-
+  - gcd{ticks=100}
   - sound{s=item.trident.riptide_3;sc=master;p=1;v=1} @self
-
 
 
 throwtrident:
@@ -24,11 +27,11 @@ throwtrident:
   Skills:
   - auraremove{aura=trident;stacks=3} @self
   - sound{s=item.trident.throw;sc=hostile;p=1;v=0.6} @self
-  - projectile{bulletType=ARROW;arrowType=TRIDENT;onHit=trident_impact;v=10;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1;vn=1;g=0.8} @targetlocation
+  - projectile{bulletType=ARROW;arrowType=TRIDENT;onHit=trident_impact;v=25;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;g=0.1} @targetlocation
 
 
 trident_impact:
   Skills:
     - sound{s=item.trident.hit;sc=hostile;p=1;v=0.6} @self
-    - damage{a=12} @EIR{r=1}
+    - damage{a=15}
     - shieldbreak{duration=150}

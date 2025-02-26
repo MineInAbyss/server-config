@@ -1,0 +1,21 @@
+set.item:
+  item:
+    type: minecraft:shield
+    customModelData: 1
+    itemName: <#FFC0CB><b>Spined Targe
+    lore:
+      - <#C6CC8A>A shield forged deep, unyielding, strong,
+      - <#C6CC8A>Your love, my guard, through light and shade,
+      - <#C6CC8A>In every trial, our vow is made.
+observe:
+  itemRightClick:
+    - become: parent
+    - ensure:
+        player:
+          sneaking: true
+    - cooldown:
+        id: shieldbash
+        length: 5s
+        display: <#617B94>shieldbash
+    - mythicSkills:
+        - "shieldbash"

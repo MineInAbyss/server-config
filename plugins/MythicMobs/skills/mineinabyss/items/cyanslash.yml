@@ -1,0 +1,35 @@
+Cyan_Slash:
+  Cooldown: 1
+  Skills:
+  - command{repeat=5;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -1";op=true}
+  - delay 1
+  - randomskill{skills=Cyan_Slash_2,Cyan_Slash_3}
+  
+Cyan_Slash_1:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Cyan_Slash_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1}
+  - summon{type=CyanSwings_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0.3}
+
+Cyan_Slash_2:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Cyan_Slash_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1}
+  - summon{type=CyanSwings_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0.3}
+
+Cyan_Slash_3:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Cyan_Slash_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1}
+  - summon{type=CyanSwings_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0.3}
+
+Cyan_Slash_4:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Cyan_Slash_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1}
+  - summon{type=CyanSwings_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0.3}
+
+Cyan_Slash_DAMAGE:
+  Skills:
+  - damage{a=4;pkb=false;hnp=false;hp=true}
+  

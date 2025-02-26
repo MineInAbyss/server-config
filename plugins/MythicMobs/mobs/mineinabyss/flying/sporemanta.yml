@@ -34,14 +34,13 @@ sporemanta:
     - exp 5-15
     - geary mineinabyss:sporemanta_wing 1-2 0.5
     - geary mineinabyss:sporemanta_powder 1 0.2
-    - geary mineinabyss:valentines_chocolates 1-2 0.05 nolooting
-    - geary mineinabyss:benner_cookie 1-2 0.005 nolooting
+
 
   Skills:
     ####### Misc
     - potion{t=LEVITATION;l=4;force=true;p=true;d=5} @self ~onTimer:1 ?onground{}
     - state{mid=sporemanta;s=attack} @self ~onAttack
-    - skill{s=sporemantaaura} @self ~onTimer:10
+    - skill{s=sporemantaaura} @self ~onTimer:20
     ########### FX
     - skill{s=sporemantaHurt} @self ~onHurt
     - skill{s=sporemantaDeath} @self ~onDeath
