@@ -1,0 +1,9 @@
+brokenskull:
+  Id: PLAYER_HEAD
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg1YTA2MmE1NTdjNTVlNWE2YjhiMjEzZGIwMjNmYWQ5ODU5ZDIyMTI0NzNjMWMwM2U4NDc5ZjI3NmFiYWZlZCJ9fX0=
+  Display: <#FFB302>Broken Skull</#FFB302>
+  Lore:
+    - ':layer_1::layer_2:'
+    - '<gray><i>Found on praying skeletons.</gray>'
+    - '<gray><i>So far only half of the skull has been discovered.</gray>'
