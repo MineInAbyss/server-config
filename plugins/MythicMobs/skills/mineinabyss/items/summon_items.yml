@@ -23,7 +23,7 @@ luckybackup4:
 luckybackup5:
   Skills:
     - summon{type=backupskele5;amount=1;radius=2;ctt=true;itt=true;os=true} @self
-luckybackup5:
+testbackup:
   Skills:
     - summon{type=testbackup;amount=1;radius=2;ctt=true;itt=true;os=true} @self
 

@@ -1,14 +1,13 @@
 set.item:
   item:
-    itemName: <gold>Verdau Effax
+    itemName: <#88D481>Verdau Effax
     type: PAPER
     customModelData: 118
     lore:
-      - ':layer_1::layer_2: Grade IV Relic'
-      - '<#D2D489><i>An organic object that attaches to the wearer and</#D2D489>'
-      - '<#D2D489><i>channels their intrinsic instinct for survival. When in </#D2D489>'
-      - '<#D2D489><i>danger the relic trades energy reserves for quick closing wounds.</#D2D489>'
-
+      - ":layer_1::layer_2: Grade II Relic"
+      - <gold>An organic object that symbiotically attaches like a parasite.
+      - <#D2D489><i>When the hosts adrenaline level spikes the 
+      - <#D2D489><i>relic consumes energy reserves to heal its habitat.
 #ghost_seek:
 disableItemInteractions: {}
 passive:
@@ -22,7 +21,7 @@ passive:
       - cooldown:
           id: Verdau Effax
           length: 120s
-          display: <dark_aqua>Absorb
+          display: <#88D481>Absorb
       - mythicSkills:
           - "verdaueffax"
 resourcepack:

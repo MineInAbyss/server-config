@@ -1,14 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Respiratas
+    itemName: <#1F88ED>Respiratis
     type: PAPER
     customModelData: 137
     lore:
-      - ':layer_4: Grade IV Relic'
-      - '<#D2D489><i>Known to be created by a group of delving alchemists</#D2D489>'
-      - '<#D2D489><i>who searched for simpler ways to traverse to abyss.</#D2D489>'
-      - '<#D2D489><i>On use it grants the wearer the ability to stay under water.</#D2D489>'
-
+      - ":layer_4: Grade IV Relic"
+      - <gold>A relic composed of multiple relic materials
+      - <gold>and the gills of abyssal creatures.
+      - <#D2D489><i>On use it grants the wearer
+      - <#D2D489><i>the ability to thrive in water.
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -17,7 +17,7 @@ observe:
     - cooldown:
         id: respiratis
         length: 60s
-        display: <#617B94>Respiratis
+        display: <#1F88ED>Respiratis
     - applyPotionEffects:
         - type: minecraft:CONDUIT_POWER
           duration: 40s

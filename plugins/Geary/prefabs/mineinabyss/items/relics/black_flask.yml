@@ -1,11 +1,12 @@
 set.item:
   item:
     type: minecraft:potion
-    itemName: <#5C5C5C>Black Flask
+    itemName: <#5C5C5C><b>Black Flask
     customModelData: 101
     lore:
       - <gold>A fleshy bottle filled with a thick, black, oily substance.
       - <gold>Drinking it gives the user a jolt of energy, at a price...
+      - <#D2D489><i>Drinking it gives the user immense energy for a short time.
 
 observe:
   itemConsumed:

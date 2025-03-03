@@ -1,13 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Yamadoldrum
+    itemName: <#FCF5E5>Gust-Shot
     type: PAPER
     customModelData: 140
     lore:
-      - ':layer_3: Grade II Relic'
-      - '<#D2D489><i>A staff formed out of a relic imbedded into Yomotsubi wings.</#D2D489>'
-      - '<#D2D489><i>The relic powers the thin materials vibration creating gusts of wind.</#D2D489>'
-      - '<#D2D489><i>On use it shoots a projectile which knocks back entities.</#D2D489>'
+      - ":layer_3: Grade II Relic"
+      - <gold>A staff formed from a core causing thin metallic
+      - <gold>material to vibrate creating gusts of wind.
+      - <#D2D489><i>On use it shoots a projectile which explodes.
+
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -22,7 +23,7 @@ observe:
     - cooldown:
           id: windstaff
           length: 10s
-          display: <dark_aqua>Wind Staff
+          display: <#FCF5E5>Gust-Shot
     - mythicSkills:
           - "windstaff"
 resourcepack:

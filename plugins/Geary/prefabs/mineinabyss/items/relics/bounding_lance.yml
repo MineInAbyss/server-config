@@ -1,13 +1,16 @@
 set.item:
   item:
-    itemName: <#617B94><b>Proboscis
+
+    itemName: <#705160><b>Proboscis
     type: DIAMOND_SWORD
     customModelData: 4
     lore:
-      - ':layer_2: Grade I Relic'
-      - '<#D2D489>Needle shaped object known to</#D2D489>'
-      - '<#D2D489>syphon the force field itself</#D2D489>'
-      - '<#D2D489>using its nutrients to simulate blessings.</#D2D489>'
+      - ":layer_2: Grade I Relic"
+      - <#AB8E8A>Needle shaped spear capable of syphoning
+      - <#AB8E8A>nutrients from the force field itself.
+      - <#695654><i>When used it simulates blessings
+      - <#695654><i>in its surroundings.
+
 
 #ghost_seek:
 
@@ -18,7 +21,7 @@ observe:
     - cooldown:
         id: boundinglance
         length: 30s
-        display: <#617B94><b>Proboscis
+        display: <#8C0303><b>Proboscis
     - mythicSkills:
         - "boundinglance"
 resourcepack:

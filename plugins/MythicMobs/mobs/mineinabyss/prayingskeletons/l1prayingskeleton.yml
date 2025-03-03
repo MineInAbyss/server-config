@@ -29,21 +29,17 @@ l1prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
+    - PSIntroDrops #to be removed after the event
+    - PSIntroHeadDrops #to be removed after the event
     - L1RelicDrops
-    - L1HeadDrops
+    - L1PSHeadDrops
+    - L1PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
   Skills:
     ####### Misc
     - skill{s=luckybackup1;cooldown=1;delay=70} @self ~onSpawn 0.05
@@ -89,17 +85,7 @@ backupskele1:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
     - L1RelicDrops

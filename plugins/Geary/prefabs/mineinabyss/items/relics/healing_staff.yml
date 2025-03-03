@@ -1,13 +1,13 @@
 set.item:
   item:
     type: minecraft:paper
-    itemName: <dark_aqua>Aureate Water-shroom
+    itemName: <#BF2CB1>Panacea
     customModelData: 139
     lore:
-      - ':layer_4: Grade III Relic'
-      - '<#D2D489><i>Supposedly created by a group of delving alchemists who</#D2D489>'
-      - '<#D2D489><i>imbedded relics of solifaction into water-shrooms.</#D2D489>'
-      - '<#D2D489><i>As a staff it has the ability to heal its surroundings when used.</#D2D489>'
+      - ":layer_4: Grade III Relic"
+      - <gold>An artifact of peculiar smell adjutating cells
+      - <gold>to improve wound healing.
+      - <#D2D489><i>On use it grants life to organisms around.
 #disableItemInteractions: { }
 observe:
   itemRightClick:
@@ -21,7 +21,7 @@ observe:
     - cooldown:
         id: healing_staff
         length: 20s
-        display: <dark_aqua>Aureate Water-shroom
+        display: <#BF2CB1>Panacea
     - mythicSkills:
         - "healing_staff"
 resourcepack:

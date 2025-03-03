@@ -29,20 +29,17 @@ l2prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
+    - PSIntroDrops #to be removed after the event
+    - PSIntroHeadDrops #to be removed after the event
     - L2RelicDrops
+    - L2PSHeadDrops
+    - L2PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
 
   Skills:
     ####### Misc
@@ -89,17 +86,7 @@ backupskele2:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
     - L2RelicDrops

@@ -1,0 +1,25 @@
+MiscPSDrops:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  # - jukebox pants 1 0.001
+  # - generic cosmetic(skull helmet) 1 0.005
+  # - custom painting of the abyss 1 0.02
+  - experience_bottle 1-2 0.03
+  # - geary made bundle 1 0.05
+  # - relic shards
+
+
+PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02

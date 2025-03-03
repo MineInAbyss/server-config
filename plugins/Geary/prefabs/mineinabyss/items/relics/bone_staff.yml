@@ -1,14 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Undying Wisp
+    itemName: <#E7EBE9>Undying Wisp
     type: PAPER
     customModelData: 140
     lore:
-      - ':layer_5: Grade III Relic'
-      - '<#D2D489><i>A staff made out of the remains of delvers</#D2D489>'
-      - '<#D2D489><i>who have succumbed to the curse of the abyss.</#D2D489>'
-      - '<#D2D489><i>Powered by the longing of stuck souls</#D2D489>'
-      - '<#D2D489><i>crystallizing them when used.</#D2D489>'
+      - ":layer_5: Grade III Relic"
+      - <gold>A staff made out of the remains of delvers
+      - <gold>who have succumbed to the curse of the abyss.
+      - <#D2D489><i>Powered by the longing of stuck souls
+      - <#D2D489><i>crystallizing them when used.
 #ghost_seek:
 disableItemInteractions: {}
 observe:

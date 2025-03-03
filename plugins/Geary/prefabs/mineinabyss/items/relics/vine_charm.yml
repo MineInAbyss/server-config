@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:paper
     customModelData: 138
-    itemName: <#617B94>Tsurukinesist
+    itemName: <#51C947><b>Ivy Call
     lore:
-      - ':layer_1::layer_2: Grade II Relic'
-      - '<#D2D489><i>An organic relic which was made by stitching together multiple</#D2D489>'
-      - '<#D2D489><i>relics and plant parts. When used it calls upon seeds to</#D2D489>'
-      - '<#D2D489><i>syphon the energy in the force field to rapidly grow into vine binders.</#D2D489>'
+      - ":layer_1::layer_2: Grade II Relic"
+      - <gold>An organic talisman formed from plant parts and relics.
+      - <#D2D489><i>When used it calls upon weeds to syphon nutrients
+      - <#D2D489><i>from the force field to rapidly grow into vine binders.
 disableItemInteractions: { }
 hat: {}
 observe:
@@ -22,6 +22,6 @@ observe:
     - cooldown:
         id: vinecharm
         length: 15s
-        display: <#617B94>Tsurukinesist
+        display: <#51C947>Ivy Call
     - mythicSkills:
         - "vinecharm"

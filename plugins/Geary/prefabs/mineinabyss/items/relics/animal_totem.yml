@@ -1,12 +1,13 @@
 set.item:
   item:
-    itemName: <gold>Preys Desire
+    itemName: <#88D481>Fright Instinct
     type: PAPER
     customModelData: 137
     lore:
-      - ':layer_1: Grade IV Relic'
-      - '<#D2D489><i>A mysterious totem granting adrenaline to flee predators.</#D2D489>'
-      - '<#D2D489><i>Calls upon the desire to survive when used.</#D2D489>'
+      - ":layer_1: Grade IV Relic"
+      - <gold>A mysterious totem calling upon the desire
+      - <gold>to survive to escape from predators.
+      - <#D2D489><i>It grants the wearer adrenaline when used.
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -18,7 +19,7 @@ observe:
     - cooldown:
         id: animal_totem
         length: 60s
-        display: <#617B94>Preys Desire
+        display: <#88D481>Fright Instinct
     - applyPotionEffects:
         - type: minecraft:speed
           duration: 2s

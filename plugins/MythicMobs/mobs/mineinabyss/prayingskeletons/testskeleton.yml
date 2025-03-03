@@ -2,8 +2,6 @@ testskeleton:
   Type: ZOMBIE
   SpawnCategory: skeleton
   Display: "<green>Praying Skeleton"
-  Modules:
-    ThreatTable: true
   AIGoalSelectors:
     - clear
   AITargetSelectors:
@@ -21,7 +19,7 @@ testskeleton:
     Despawn: false
     Persistent: true
   Model:
-    Id: praying_skeleton_3
+    Id: praying_skeleton_1
     ViewRadius: 100
     Drive: false
     DamageTint: false
@@ -29,21 +27,10 @@ testskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
-
-    HologramTimeout: 200
   Drops:
     - exp 10-15
     - GOLDENRELIC
-    - L1HeadDrops
+    - testhead
   Skills:
     ####### Misc
     - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn
@@ -54,7 +41,7 @@ testskeleton:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
-
+   # - dropitem{i=GOLDENRELIC} @self ~onDeath
 testbackup:
   Type: ZOMBIE
   SpawnCategory: skeleton
@@ -86,24 +73,13 @@ testbackup:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
-
-    HologramTimeout: 200
   Drops:
     - exp 10-15
     - GOLDENRELIC
-    - L1HeadDrops
+    - testhead
   Skills:
     ####### Misc
-    - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn 0.2
+    - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn 0.05
     - skill{s=saveskelelocation} @self ~onSpawn
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location

@@ -3,10 +3,11 @@ set.item:
     type: minecraft:paper
     itemName: <dark_aqua>Moniscelti
     customModelData: 120
-      - ':layer_5: Grade IV Relic'
-      - '<#D2D489><i>A relic of ancient times which appears in Orthian tales.</#D2D489>'
-      - '<#D2D489><i>Its origin and components are shrouded in mystery. </#D2D489>'
-      - '<#D2D489><i>It grants blessings and curses when used.</#D2D489>'
+    lore:
+      - ":layer_5: Grade IV Relic"
+      - <gold>A relic of Orthian tales rumored to mimic the effects
+      - <gold>of the curse. Its origin is shrouded in obscurity.
+      - <#D2D489><i>On use it grants blessings and curses.
 #disableItemInteractions: { }
 observe:
   itemRightClick:

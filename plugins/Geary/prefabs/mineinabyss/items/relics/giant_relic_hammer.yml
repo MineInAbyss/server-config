@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:netherite_axe
     customModelData: 1
-    itemName: <#FFC0CB><b>Solemnity and Consequence
+    itemName: <#79EDE2><b>Seismic Sledge
     lore:
-      - ':layer_3: Grade I Relic'
-      - '<#D2D489>Multiple relics crafted into a giant hammer shaped weapon.</#D2D489>'
-      - '<#D2D489>The hammers head is being pulled into the depths of the abyss</#D2D489>'
-      - '<#D2D489>generating momentum on downward swings with heavy impact.</#D2D489>'
+      - ":layer_3: Grade I Relic"
+      - <#4A8781>Moulded from rocks which used to float in the Great Fault.
+      - <#31524E><i>Its core is being pulled by the depths of the abyss creating
+      - <#31524E><i>heavy downward swings with large shockwaves on impact.
 observe:
   itemRightClick:
     - become: parent
@@ -17,7 +17,7 @@ observe:
     - cooldown:
         id: hammer_smash
         length: 5s
-        display: <#617B94>hammer_smash
+        display: <#79EDE2>Seismic Smash
     - mythicSkills:
         - "hammer_smash"
 

@@ -18,7 +18,7 @@ HeatRay:
   
 HeatRay-onHit:
   Skills:
-  - skill{s=voidstop-target}
+ # - skill{s=voidstop-target}
   - ignite{ticks=100}
   - damage{a=30}
   

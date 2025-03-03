@@ -10,10 +10,10 @@ set.item:
 
 hat: {}
 disableItemInteractions: {}
-enchantments:
-  - enchant: minecraft:sharpness 
-    level: 1
-itemFlags: [ HIDE_ENCHANTS ]
+#enchantments:
+#  - enchant: minecraft:sharpness 
+#    level: 1
+#itemFlags: [ HIDE_ENCHANTS ]
 observe:
   itemRightClick:
     - become: parent

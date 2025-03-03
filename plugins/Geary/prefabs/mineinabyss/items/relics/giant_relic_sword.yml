@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:netherite_sword
     customModelData: 4
-    itemName: <#FFC0CB><b>Lunula Kaien
+    itemName: <#15ABC2><b>Crescent Blade
     lore:
       - ':layer_3: Grade I Relic'
-      - '<#D2D489>A weapon that can tear into the fabric of the force field.</#D2D489>'
-      - '<#D2D489>It is known to create crescent shaped slashes</#D2D489>'
-      - '<#D2D489>damaging all organic matter that it comes into contact with.</#D2D489>'
+      - <#249C9C>A weapon that can tear into the fabric of the force field.
+      - <#195959><i>It is known to create crescent shaped slashes damaging
+      - <#195959><i>all organic matter that it comes into contact with.
 observe:
   itemLeftClick:
     - become: parent
@@ -20,7 +20,7 @@ observe:
     - cooldown:
           id: cyanslash
           length: 1s
-          display: <dark_aqua>
+          display: <#15ABC2>Crescent
     - mythicSkills:
           - "Cyan_Slash"
 resourcepack:

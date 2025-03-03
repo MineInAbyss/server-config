@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:netherite_sword
     customModelData: 3
-    itemName: <#FFC0CB><b>Lunula Kaien
+    itemName: <#24A8D4><b>Selene Xiphos
     lore:
-      - ':layer_3: Grade I Relic'
-      - '<#D2D489>A weapon that can tear into the fabric of the force field.</#D2D489>'
-      - '<#D2D489>It is known to create crescent shaped slashes</#D2D489>'
-      - '<#D2D489>damaging all organic matter that it comes into contact with.</#D2D489>'
+      - ":layer_3: Grade I Relic"
+      - <#249C9C>A sword-shaped relic that
+      - <#249C9C>is known to create crescent shaped slashes.
+      - <#195959><i>Destroying organic matter with every slash.
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -22,7 +22,7 @@ observe:
     - cooldown:
           id: cyanslash
           length: 1s
-          display: <dark_aqua>
+          display: <#24A8D4>Selene Xiphos
     - mythicSkills:
           - "Cyan_Slash"
 resourcepack:

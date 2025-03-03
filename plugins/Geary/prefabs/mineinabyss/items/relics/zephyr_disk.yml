@@ -25,4 +25,4 @@ observe:
             count: 3
           with:
             location: "{{ entity.getLocation }}"
-          loop: "entity.getNearbyEntities { radius: 10 }"
+            loop: "entity.getNearbyEntities { radius: 10 }"

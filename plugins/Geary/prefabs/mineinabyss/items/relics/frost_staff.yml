@@ -1,13 +1,14 @@
 set.item:
   item:
     type: minecraft:paper
-    itemName: <dark_aqua><b>Verglas Whisper
+    itemName: <#CCDADB><b>Verglas Breath
     customModelData: 139
     lore:
-      - ':layer_5: Grade I Relic'
-      - '<#D2D489>A long frail pole carved from one of the crystallized sections</#D2D489>'
-      - '<#D2D489>surrounding the Sea of Corpses. It has the ability to</#D2D489>'
-      - '<#D2D489>shoot frozen air flash-freezing organic matter that it touches.</#D2D489>'
+      - ":layer_5: Grade I Relic"
+      - <#A0ACAD>A long frail pole carved from one of the
+      - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
+      - <#7B898A><i>It has the ability to flash-freeze air
+      - <#7B898A><i>which freezes all organic matter it touches.
 #disableItemInteractions: { }
 observe:
   itemRightClick:
@@ -21,7 +22,7 @@ observe:
     - cooldown:
         id: Frost_Beam
         length: 10s
-        display: <dark_aqua>Verglas Whisper
+        display: <#CCDADB>Verglas Breath
     - mythicSkills:
         - "Frost_Beam"
 resourcepack:

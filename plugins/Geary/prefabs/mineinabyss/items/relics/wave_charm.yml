@@ -1,13 +1,14 @@
 set.item:
   item:
-    itemName: <gold>Ricochet and Interference
+    itemName: <dark_aqua>Tidal Dew
     type: PAPER
     customModelData: 141
     lore:
-      - ':layer_4: Grade IV Relic'
-      - '<#D2D489><i>A charm which can cause ripples in the force field</#D2D489>'
-      - '<#D2D489><i>similarly to how water acts in the Goblets of Giants.</#D2D489>'
-      - '<#D2D489><i>When used the caused ripple effect pushes back organic matter.</#D2D489>'
+      - ":layer_4: Grade IV Relic"
+      - <gold>A talisman deeply intertwined with the force fields humidity. 
+      - <#D2D489><i>When used it causes droplets to combine forming
+      - <#D2D489><i>a wave pushing everything back it touches.
+      
 #ghost_seek:
 disableItemInteractions: {}
 observe:
@@ -22,7 +23,7 @@ observe:
     - cooldown:
           id: tidalwave
           length: 15s
-          display: <dark_aqua>Wave Charm
+          display: <dark_aqua>Tiding Wave
     - mythicSkills:
           - "Tidal_Wave"
 resourcepack:

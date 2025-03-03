@@ -29,20 +29,15 @@ l5prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
     - L5RelicDrops
+    - L5PSHeadDrops
+    - L5PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
 
   Skills:
     ####### Misc
@@ -89,17 +84,7 @@ backupskele5:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-  DropOptions:
-    DropMethod: FANCY
-    ShowDeathHologram: false
-    ClientSideDrops: true
-    Lootsplosion: false
-    HologramItemNames: true
-    ItemGlowByDefault: true
-    ItemBeamByDefault: true
-    ItemVFXByDefault: false
 
-    HologramTimeout: 6000
   Drops:
     - exp 10-15
     - L5RelicDrops

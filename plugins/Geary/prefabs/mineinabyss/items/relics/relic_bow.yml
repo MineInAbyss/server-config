@@ -2,12 +2,12 @@ set.item:
   item:
     type: minecraft:bow
     customModelData: 102
-    itemName: <#617B94><b>Pacing Step
+    itemName: <#617B94><b>Averting Barrage
     lore:
-      - ':layer_2: Grade I Relic'
-      - '<#D2D489>A bow crafted out of multiple relic materials to supposedly</#D2D489>'
-      - '<#D2D489>combat predators in the upper layers.</#D2D489>'
-      - '<#D2D489>When used it lunges the wearer out of harms way.</#D2D489>'
+      - ":layer_2: Grade I Relic"
+      - <#36526E>A bow with the mysterious ability to sense danger
+      - <#36526E>supposedly utilized to combat predators in upper layers.
+      - <#23374A><i>When used it pushes the wielder out of harms way.
 
 observe:
   itemLeftClick:
@@ -18,6 +18,6 @@ observe:
     - cooldown:
         id: Backstep
         length: 5s
-        display: <#617B94>Backstep
+        display: <#617B94>Averting Step
     - mythicSkills:
         - "Backstep"
