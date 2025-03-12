@@ -1,0 +1,37 @@
+
+
+BoundingLanceDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:bounding_lance 1 1 
+
+
+VineCharmDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:vine_charm 1 1 
+
+
+VerdauEffaxDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:verdaueffax 1 1  
+
+
+AnimalTotemDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:animal_totem 1 1    
+
