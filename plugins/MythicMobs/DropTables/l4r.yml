@@ -1,0 +1,43 @@
+BlazeReapDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:blaze_reap 1 1 
+
+
+TridentDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:trident 1 1 
+
+
+HealingStaffDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:healing_staff 1 1  
+
+
+RespiratisDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:respiratis 1 1    
+
+
+WaveCharmDrop:
+
+  MAxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:wave_charm 1 1
