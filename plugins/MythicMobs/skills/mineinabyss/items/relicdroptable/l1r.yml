@@ -1,0 +1,45 @@
+animalcharmdrop:
+  Conditions:
+  - playerwithin 32
+  - hasaura{aura=relicdrop} false
+  Skills:
+
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @PIR{r=32}
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=GOLDENRELIC} @trigger
+verdaueffaxdrop:
+  Conditions:
+  - playerwithin 32
+  - hasaura{aura=relicdrop} false
+  Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @PIR{r=32}
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=GOLDENRELIC} @trigger
+vinecharmdrop:
+  Conditions:
+  - playerwithin 32
+  - hasaura{aura=relicdrop} false
+  Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @PIR{r=32}
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=GOLDENRELIC} @trigger
+boundinglancedrop:
+  Conditions:
+  - playerwithin 32
+  - hasaura{aura=relicdrop} false
+  Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @PIR{r=32}
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=GOLDENRELIC} @trigger
+celebrate:
+  Skills:
+  - particle{p=HEART;a=5;hs=0.5;vs=0.5;y=1.5}
+
+
+gearydrop:
+  Conditions:
+  - playerwithin 32
+  Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @PIR{r=32}
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=geary mineinabyss:blackhole_staff} @trigger

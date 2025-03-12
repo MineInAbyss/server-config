@@ -96,3 +96,10 @@ backupskele1:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
+
+
+
+    - skill{s=animalcharmdrop;delay=20} @trigger ~onDeath
+    - skill{s=verdaueffaxdrop;delay=15}  @trigger ~onDeath
+    - skill{s=vinecharmdrop;delay=10} @trigger ~onDeath
+    - skill{s=boundinglancedrop;delay=5} @trigger ~onDeath
