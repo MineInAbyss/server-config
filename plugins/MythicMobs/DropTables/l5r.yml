@@ -1,0 +1,34 @@
+BlackholeStaffDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:blackhole_staff 1 1 
+
+
+FrostStaffDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:frost_staff 1 1 
+
+
+VoidCharmDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:void_charm 1 1  
+
+
+MonisceltiDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:moniscelti 1 1    

@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:powder_snow_bucket
+    amount: 1
+  recipes:
+    - type: shaped
+      items:
+        S: { prefab: mineinabyss:octoliar_tentacle}
+        B: { type: minecraft:bucket}
+        A: { type: minecraft:snowball}
+      configuration: |-
+        |ASA|
+        |SBS|
+        |ASA|

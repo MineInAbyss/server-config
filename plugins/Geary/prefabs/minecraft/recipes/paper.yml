@@ -1,0 +1,14 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: PAPER
+  group: "paper"
+  recipes:
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:daikonchu_wing
+        - prefab: mineinabyss:daikonchu_wing
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:stinger_wing
+        - prefab: mineinabyss:stinger_wing

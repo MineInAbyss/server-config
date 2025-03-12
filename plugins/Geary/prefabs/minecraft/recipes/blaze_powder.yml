@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: BLAZE_POWDER
+    amount: 2
+  group: "blaze_powder"
+  recipes:
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:rohana_tail
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:virinsipede_antlers

@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  removeRecipes:
+    - "minecraft:magma_cream"
+  result:
+    type: MAGMA_CREAM
+  group: "looty:magma_cream"
+  recipes:
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:splitjaw_gunk
+        - prefab: mineinabyss:swarmshocker_charged_powder
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:abyssal_snail_gunk
+        - prefab: mineinabyss:swarmshocker_charged_powder

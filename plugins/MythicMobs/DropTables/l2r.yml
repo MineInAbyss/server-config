@@ -1,0 +1,13 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+
+RelicBowDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:relic_bow 1 1   
+

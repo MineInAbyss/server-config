@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:snowball
+    amount: 16
+  recipes:
+    - type: shaped
+      items:
+        S: { prefab: mineinabyss:octoliar_tentacle}
+      configuration: |-
+        | S |
+        |S S|
+        | S |

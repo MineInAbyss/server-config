@@ -1,6 +1,10 @@
-# For more information, check out the plugin manual or join us on Discord:
-# http://www.mythicmobs.net
-#  
+
+testhead:
+  MaxItems: 1
+  Drops:
+  - silkfangeggsac 1 1
+  - oldorthbell 1 1
+  - prayingskeletonskull 1 1
 
 L1RelicDrops:
 
@@ -53,6 +57,7 @@ L4RelicDrops:
   - geary mineinabyss:blaze_reap 1 0.001 
   - geary mineinabyss:trident 1 0.005
   - geary mineinabyss:healing_staff 1 0.025
+  - geary mineinabyss:wave_charm 1 0.025
   - geary mineinabyss:respiratis 1 0.05
   - geary mineinabyss:aoesphere 1 0.2
 
@@ -66,7 +71,6 @@ L5RelicDrops:
   - geary mineinabyss:blackhole_staff 1 0.002
   - geary mineinabyss:frost_staff 1 0.002
   - geary mineinabyss:void_charm 1 0.01
-  - geary mineinabyss:verdaueffax 1 0.01
   - geary mineinabyss:moniscelti 1 0.025
   - geary mineinabyss:sunsphere 1 0.2
 
@@ -81,12 +85,3 @@ GOLDENRELIC:
   - geary mineinabyss:blaze_reap 1 0.25
   - geary mineinabyss:giant_relic_hammer 1 0.25 
   - geary mineinabyss:giant_relic_sword 1 0.25
-
-
-testhead:
-  MaxItems: 1
-  Drops:
-  - silkfangeggsac 1 1
-  - oldorthbell 1 1
-  - prayingskeletonskull 1 1
-

@@ -1,0 +1,11 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: BUNDLE
+  group: "bundle"
+  recipes:
+    - type: shapeless
+      items:
+        - prefab: mineinabyss:fuwagi_hide
+        - prefab: mineinabyss:plant_matter
+        - prefab: mineinabyss:silkfang_silk
