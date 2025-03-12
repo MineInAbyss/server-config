@@ -2,7 +2,7 @@ set.item:
   item:
     type: minecraft:paper
     itemName: <#616161>Grave Reach
-    customModelData: 139
+    customModelData: 146
     lore:
       - ":layer_5: Grade II Relic"
       - <gold>A mysterious relic rumored to be the cause of demise
@@ -25,4 +25,5 @@ observe:
     - mythicSkills:
         - "shadowball"
 resourcepack:
-  model: mineinabyss:item/projectiles/1
+  textures: mineinabyss:item/relics/blackhole_staff
+  parentModel: item/handheld

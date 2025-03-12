@@ -2,7 +2,7 @@ set.item:
   item:
     type: minecraft:paper
     itemName: <#CCDADB><b>Verglas Breath
-    customModelData: 139
+    customModelData: 147
     lore:
       - ":layer_5: Grade I Relic"
       - <#A0ACAD>A long frail pole carved from one of the
@@ -26,4 +26,4 @@ observe:
     - mythicSkills:
         - "Frost_Beam"
 resourcepack:
-  model: mineinabyss:item/projectiles/1
+  model: mineinabyss:item/relics/glacia_scepter

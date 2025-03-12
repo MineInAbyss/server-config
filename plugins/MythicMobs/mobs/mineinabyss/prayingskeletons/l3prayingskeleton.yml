@@ -29,10 +29,9 @@ l3prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
-    - L3RelicDrops
     - L3PSHeadDrops
     - L3PSOreDrops
     - PSHeadDrops
@@ -50,6 +49,13 @@ l3prayingskeleton:
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - teleport{spreadh=1;spreadv=1} @RandomLocationsNearOrigin{radius=200;minradius=500;spacing=1;onSurface=true} ~onspawn
+
+    - skill{s=giantrelicsworddrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
+    - skill{s=giantrelichammerdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
+    - skill{s=windstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=critcharmdrop;delay=5}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=relicbootsdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+
 
 backupskele3:
   Type: ZOMBIE
@@ -82,10 +88,14 @@ backupskele3:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
-    - L3RelicDrops
+    - L3PSHeadDrops
+    - L3PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
   Skills:
     ####### Misc
     - skill{s=luckybackup3;cooldown=1;delay=70} @self ~onSpawn 0.05
@@ -93,3 +103,11 @@ backupskele3:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
+
+
+
+    - skill{s=giantrelicsworddrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
+    - skill{s=giantrelichammerdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
+    - skill{s=windstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=critcharmdrop;delay=5}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=relicbootsdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01

@@ -29,7 +29,7 @@ l2prayingskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
     - PSIntroDrops #to be removed after the event
@@ -53,6 +53,12 @@ l2prayingskeleton:
     - cancelevent{sync=true} @Self ~onAttack
     - teleport{spreadh=1;spreadv=1} @RandomLocationsNearOrigin{radius=300;minradius=100;spacing=1;onSurface=true} ~onspawn
 
+
+    - skill{s=boundinglancedrop2;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.001
+    - skill{s=vinecharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=verdaueffaxdrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=relicbowdrop;delay=1 @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
 
 
 backupskele2:
@@ -86,7 +92,7 @@ backupskele2:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
-
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
     - L2RelicDrops
@@ -97,3 +103,9 @@ backupskele2:
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
+
+    - skill{s=boundinglancedrop2;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.001
+    - skill{s=vinecharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=verdaueffaxdrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=relicbowdrop;delay=1 @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025

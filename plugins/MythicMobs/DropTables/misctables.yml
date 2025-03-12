@@ -1,13 +1,14 @@
 MiscPSDrops:
 
-  MaxItems: 1
+  MaxItems: 2
   Conditions:
   - playerwithin 32
   Drops:
   # - jukebox pants 1 0.001
   # - generic cosmetic(skull helmet) 1 0.005
   # - custom painting of the abyss 1 0.02
-  - experience_bottle 1-2 0.03
+  - experience_bottle 1-2 0.1
+  - mineinabyss:charcoal_sand_raw 1 0.1
   # - geary made bundle 1 0.05
   # - relic shards
 

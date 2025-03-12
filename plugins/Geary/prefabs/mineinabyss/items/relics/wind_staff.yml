@@ -27,5 +27,5 @@ observe:
     - mythicSkills:
           - "windstaff"
 resourcepack:
-  model: mineinabyss:item/relics/verdau_effax
-
+  textures: mineinabyss:item/relics/wind_staff
+  parentModel: item/handheld

@@ -4,9 +4,9 @@ L1PSOreDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - diamond 1-2 0.1
-  - gold_ingot 1-2 0.2
-  - iron_ingot 4-6 0.2
+  - diamond 1-2 0.15
+  - gold_ingot 1-2 0.35
+  - iron_ingot 4-6 0.6
   # - fuel packets 8-16 0.3 #will be added later on
   # - charcoal sand ore 1 0.05 #will be added later on
 
@@ -17,9 +17,9 @@ L2PSOreDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - diamond 1-2 0.1
-  - gold_ingot 1-2 0.2
-  - iron_ingot 4-6 0.2
+  - diamond 1-2 0.15
+  - gold_ingot 1-2 0.35
+  - iron_ingot 4-6 0.6
   # - fuel packets 8-16 0.3 #will be added later on
   # - charcoal sand ore 1 0.05 #will be added later on
 
@@ -30,10 +30,9 @@ L3PSOreDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - emerald 1 0.1
-  - diamond 1-3 0.1
-  - gold_ingot 2-4 0.2
-  - iron_ingot 4-6 0.3
+  - diamond 1-2 0.15
+  - gold_ingot 1-2 0.35
+  - iron_ingot 4-6 0.6
   # - fuel packets 8-16 0.3 #will be added later on
   # - charcoal sand ore 1 0.05 #will be added later on
 
@@ -44,9 +43,9 @@ L4PSOreDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - emerald 1-2 0.1
-  - diamond 1-3 0.2
-  - gold_ingot 2-4 0.3
+  - diamond 1-2 0.15
+  - gold_ingot 1-2 0.35
+  - iron_ingot 4-6 0.6
   # - fuel packets 8-16 0.3 #will be added later on
   # - charcoal sand ore 1 0.05 #will be added later on
 
@@ -57,9 +56,9 @@ L5PSOreDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - emerald 2 0.2
-  - diamond 1-4 0.25
-  - gold_ingot 4-6 0.3
+  - diamond 1-2 0.15
+  - gold_ingot 1-2 0.35
+  - iron_ingot 4-6 0.6
   # - fuel packets 8-16 0.3 #will be added later on
   # - charcoal sand ore 1 0.05 #will be added later on
 

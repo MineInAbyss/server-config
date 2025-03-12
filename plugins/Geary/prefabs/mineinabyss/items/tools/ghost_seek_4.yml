@@ -7,13 +7,12 @@ set.item:
       - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
       - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
       - <#D2D489>guiding its wielder toward hidden relics.
-
+    enchantments:
+      - enchant: minecraft:sharpness
+        level: 1
+    itemFlags: [ HIDE_ENCHANTS ]
 hat: {}
 disableItemInteractions: {}
-#enchantments:
-#  - enchant: minecraft:sharpness 
-#    level: 1
-#itemFlags: [ HIDE_ENCHANTS ]
 observe:
   itemRightClick:
     - become: parent

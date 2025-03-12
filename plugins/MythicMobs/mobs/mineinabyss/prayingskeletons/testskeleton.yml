@@ -28,6 +28,7 @@ testskeleton:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
     - GOLDENRELIC
@@ -74,10 +75,10 @@ testbackup:
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
+    - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
-    - GOLDENRELIC
-    - testhead
+
   Skills:
     ####### Misc
     - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn 0.05
@@ -89,9 +90,8 @@ testbackup:
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
 
-    - skill{s=gearydrop;delay=1} @trigger ~onDeath
 
-    - skill{s=animalcharmdrop;delay=20} @trigger ~onDeath
-    - skill{s=verdaueffaxdrop;delay=15}  @trigger ~onDeath
-    - skill{s=vinecharmdrop;delay=10} @trigger ~onDeath
-    - skill{s=boundinglancedrop;delay=5} @trigger ~onDeath
+    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
+    - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
+    - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
+    - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25

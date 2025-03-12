@@ -2,7 +2,7 @@ set.item:
   item:
     itemName: <#1F88ED>Respiratis
     type: PAPER
-    customModelData: 137
+    customModelData: 117
     lore:
       - ":layer_4: Grade IV Relic"
       - <gold>A relic composed of multiple relic materials
@@ -19,7 +19,7 @@ observe:
         length: 60s
         display: <#1F88ED>Respiratis
     - applyPotionEffects:
-        - type: minecraft:CONDUIT_POWER
+        - type: minecraft:conduit_power
           duration: 40s
           amplifier: 1
           hasParticles: false

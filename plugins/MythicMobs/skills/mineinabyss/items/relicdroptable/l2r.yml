@@ -1,4 +1,10 @@
-relicdrop:
+
+relicbowdrop:
   Conditions:
   - playerwithin 32
+  TargetConditions:
+  - hasaura{aura=relicdrop} false
   Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
+  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - giveitem{i=RelicBowDrop} @trigger
