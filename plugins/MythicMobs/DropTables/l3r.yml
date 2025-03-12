@@ -1,0 +1,44 @@
+GiantRelicSwordDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:giant_relic_sword 1 1 
+
+
+GiantRelicHammerDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:giant_relic_hammer 1 1 
+
+
+WindStaffDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:wind_staff 1 1  
+
+
+RelicBootsDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:relicboots 1 1    
+
+
+CritCharmDrop:
+
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:critcharm 1 1   
+
