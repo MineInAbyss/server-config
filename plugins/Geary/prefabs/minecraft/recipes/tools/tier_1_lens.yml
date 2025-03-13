@@ -1,0 +1,21 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:tier_1_lens
+  group: mineinabyss:tier_1_lens
+  recipes:
+    - type: shaped
+      items:
+        R:
+          prefab: mineinabyss:spiralsquid_raw
+        G:
+          prefab: mineinabyss:splitjaw_gunk
+        T:
+          type: TINTED_GLASS
+        C: 
+          prefab: mineinabyss:charcoal_sand_ingot
+
+      configuration: |-
+        |GCG|
+        |RTR|
+        |GCG|
