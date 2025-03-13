@@ -22,7 +22,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
           id: windstaff
-          length: 10s
+          length: 20s
           display: <#FCF5E5>Gust-Shot
     - mythicSkills:
           - "windstaff"

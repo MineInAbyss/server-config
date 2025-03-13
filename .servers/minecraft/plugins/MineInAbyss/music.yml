@@ -1,7 +1,7 @@
 # The min/max amount of time to wait before playing a song after once finishes
 # Default is 10-20 minutes in Minecraft.
-minSongWaitTime: 10m
-maxSongWaitTime: 20m
+minSongWaitTime: 5m
+maxSongWaitTime: 10m
 # How long to wait before playing a song after a player logs in
 minWaitTimeOnLogin: 2m
 maxWaitTimeOnLogin: 4m

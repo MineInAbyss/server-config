@@ -15,13 +15,13 @@ observe:
     - become: parent
     - ensure:
         mythicConditions:
-          - EnchantingLevel{l=>1} true
+          - EnchantingLevel{l=>3} true
       onFail:
         - sendActionBar:
             text: <red>Out of Experience
     - cooldown:
         id: blackhole
-        length: 360s
+        length: 180s
         display: <#302D2D><b>Event Horizon
     - mythicSkills:
         - "blackhole"

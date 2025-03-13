@@ -34,7 +34,6 @@ l2prayingskeleton:
     - exp 10-15
     - PSIntroDrops #to be removed after the event
     - PSIntroHeadDrops #to be removed after the event
-    - L2RelicDrops
     - L2PSHeadDrops
     - L2PSOreDrops
     - PSHeadDrops
@@ -57,9 +56,12 @@ l2prayingskeleton:
     - skill{s=boundinglancedrop2;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.001
     - skill{s=vinecharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=verdaueffaxdrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=relicbowdrop;delay=1 @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=relicbowdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
 
+    - skill{s=dropletdrop;delay=3} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=uncertaindrop;delay=2} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=flatdrop;delay=1} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
 
 backupskele2:
   Type: ZOMBIE
@@ -95,7 +97,13 @@ backupskele2:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
-    - L2RelicDrops
+    - PSIntroDrops #to be removed after the event
+    - PSIntroHeadDrops #to be removed after the event
+    - L2PSHeadDrops
+    - L2PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
   Skills:
     ####### Misc
     - skill{s=luckybackup2;cooldown=1;delay=70} @self ~onSpawn 0.05
@@ -107,5 +115,9 @@ backupskele2:
     - skill{s=boundinglancedrop2;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.001
     - skill{s=vinecharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=verdaueffaxdrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=relicbowdrop;delay=1 @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=animalcharmdrop;delay=5} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=relicbowdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+
+    - skill{s=dropletdrop;delay=3} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=uncertaindrop;delay=2} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=flatdrop;delay=1} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025

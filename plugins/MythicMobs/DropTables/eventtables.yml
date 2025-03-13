@@ -3,14 +3,33 @@ PSIntroDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  # - geary mineinabyss:praying_skeleton_figurine 1 0.005 #SPECIAL DROP -> Needs message in chat
-  - geary mineinabyss:music_disc_droplets_lament 1 0.015 #SPECIAL DROP -> Needs message in chat
-  - geary mineinabyss:music_disc_the_flat_kazura 1 0.015 #SPECIAL DROP -> Needs message in chat
-  - geary mineinabyss:music_disc_uncertain_surroundings 1 0.015 #SPECIAL DROP -> Needs message in chat
   - geary mineinabyss:piglin_banner_pattern 1 0.04
   - geary mineinabyss:skull_banner_pattern 1 0.08
   - bone{name="<gold>Mysterious Bone";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.08 
 
+dropdrop:
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:music_disc_droplets_lament 1 1
+uncertaindrop:
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:music_disc_uncertain_surroundings 1 1
+flatdrop:
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - geary mineinabyss:music_disc_the_flat_kazura 1 1
+PSIntroDrops:
+  MaxItems: 2
+  Conditions:
+  - playerwithin 32
+  Drops:
 
 PSIntroHeadDrops:
   MaxItems: 2

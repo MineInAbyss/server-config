@@ -20,7 +20,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
         id: healing_staff
-        length: 20s
+        length: 35s
         display: <#BF2CB1>Panacea
     - mythicSkills:
         - "healing_staff"

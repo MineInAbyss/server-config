@@ -38,8 +38,8 @@ l4_horncrier:
 l4_orbpiercer:
   inherit: l4_hostile
   type: mm:orbpiercer
-  chance: 0.02
-  priority: 0.05
+  chance: 0.015
+  priority: 0.4
   conditions:
     - $inherit
     - $remove maxNearby

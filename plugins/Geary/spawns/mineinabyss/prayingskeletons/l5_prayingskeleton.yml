@@ -8,7 +8,7 @@ l5_prayingskeleton:
     - l5s3
   conditions:
     - maxNearby:
-        amount: 3
+        amount: 1
         radius: 400
     - mythicConditions:
         - MobsInRadius{types=l5prayingskeleton;amount=0to5;radius=1000} true

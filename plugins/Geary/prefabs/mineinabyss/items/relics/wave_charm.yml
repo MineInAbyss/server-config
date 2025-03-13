@@ -22,7 +22,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
           id: tidalwave
-          length: 15s
+          length: 20s
           display: <dark_aqua>Tiding Wave
     - mythicSkills:
           - "Tidal_Wave"

@@ -106,7 +106,7 @@ backupskele4:
     - cancelevent{sync=true} @Self ~onAttack
 
 
-    - skill{s=blazereapdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.001
+    - skill{s=blazereapdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
     - skill{s=tridentdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.005
     - skill{s=healingstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
     - skill{s=wavecharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025

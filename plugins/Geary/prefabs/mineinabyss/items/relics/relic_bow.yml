@@ -17,7 +17,7 @@ observe:
           sneaking: true
     - cooldown:
         id: Backstep
-        length: 5s
+        length: 25s
         display: <#617B94>Averting Step
     - mythicSkills:
         - "Backstep"

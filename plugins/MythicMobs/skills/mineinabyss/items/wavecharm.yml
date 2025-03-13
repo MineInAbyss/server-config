@@ -2,7 +2,7 @@
 Tidal_Wave:
   Skills:
   - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1;vR=1;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @targetlocation
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @targetlocation
 
 Tidal_Wave_HIT:
   TargetConditions:

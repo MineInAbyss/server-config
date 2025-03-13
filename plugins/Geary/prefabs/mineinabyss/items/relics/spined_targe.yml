@@ -8,14 +8,14 @@ set.item:
       - <#C6CC8A>Your love, my guard, through light and shade,
       - <#C6CC8A>In every trial, our vow is made.
 observe:
-  itemRightClick:
+  itemLeftClick:
     - become: parent
     - ensure:
         player:
           sneaking: true
     - cooldown:
         id: shieldbash
-        length: 5s
+        length: 15s
         display: <#617B94>shieldbash
     - mythicSkills:
         - "shieldbash"

@@ -57,6 +57,9 @@ l1prayingskeleton:
     - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.005
 
+    - skill{s=dropletdrop;delay=3} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=uncertaindrop;delay=2} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=flatdrop;delay=1} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
 
 backupskele1:
   Type: ZOMBIE
@@ -109,7 +112,11 @@ backupskele1:
 
 
 
-    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
     - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
     - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.005
+
+    - skill{s=dropletdrop;delay=3} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=uncertaindrop;delay=2} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+    - skill{s=flatdrop;delay=1} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025

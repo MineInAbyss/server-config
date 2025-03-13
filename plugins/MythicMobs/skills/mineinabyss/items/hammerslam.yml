@@ -9,9 +9,10 @@ hammer_smash:
   - leap{velocity=150} @forward{f=1;y=3}
   - delay 10
   - onDamaged{auraName=landresist;d=30;damageMods="FALL 0.5"} @self
-  - leap{velocity=50} @forward{f=2;y=-5}
-  - delay 20
+  - leap{velocity=60} @forward{f=2;y=-5}
+  - delay 15
   - skill{s=hammer_smash_damage} @self
+  - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
 hammer_smash_damage:
   TargetConditions:
   - owner{} false

@@ -51,7 +51,7 @@ l5prayingskeleton:
     - teleport{spreadh=1;spreadv=1} @RandomLocationsNearOrigin{radius=400;minradius=100;spacing=1;onSurface=true} ~onspawn
 
     - skill{s=blackholestaffdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
-    - skill{s=froststaffdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
+    - skill{s=froststaffdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.004
     - skill{s=voidcharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=monisceltidrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
 

@@ -20,7 +20,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
         id: shadowball
-        length: 10s
+        length: 15s
         display: <#616161>Deaths Knock
     - mythicSkills:
         - "shadowball"

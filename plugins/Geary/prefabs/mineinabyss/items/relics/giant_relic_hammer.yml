@@ -12,11 +12,14 @@ observe:
   itemRightClick:
     - become: parent
     - ensure:
-        player:
-          sneaking: true
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
     - cooldown:
         id: hammer_smash
-        length: 5s
+        length: 25s
         display: <#79EDE2>Seismic Smash
     - mythicSkills:
         - "hammer_smash"

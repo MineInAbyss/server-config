@@ -9,7 +9,6 @@ set.item:
       - <#D2D489><i>When used it calls upon weeds to syphon nutrients
       - <#D2D489><i>from the force field to rapidly grow into vine binders.
 disableItemInteractions: { }
-hat: {}
 observe:
   itemRightClick:
     - become: parent

@@ -20,7 +20,7 @@ observe:
     - become: parent
     - cooldown:
         id: boundinglance
-        length: 30s
+        length: 35s
         display: <#8C0303><b>Proboscis
     - mythicSkills:
         - "boundinglance"

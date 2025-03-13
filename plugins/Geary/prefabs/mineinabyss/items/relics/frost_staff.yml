@@ -21,7 +21,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
         id: Frost_Beam
-        length: 10s
+        length: 30s
         display: <#CCDADB>Verglas Breath
     - mythicSkills:
         - "Frost_Beam"

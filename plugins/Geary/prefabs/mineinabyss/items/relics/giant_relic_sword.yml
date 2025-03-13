@@ -19,7 +19,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
           id: cyanslash
-          length: 1s
+          length: 2s
           display: <#15ABC2>Crescent
     - mythicSkills:
           - "Cyan_Slash"

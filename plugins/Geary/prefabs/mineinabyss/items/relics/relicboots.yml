@@ -1,8 +1,8 @@
 set.item:
   item:
     itemName: <#976d5c>Spring Boot
-    type: PAPER
-    customModelData: 145
+    type: minecraft:netherite_boots
+    customModelData: 2
     lore:
       - ":layer_3: Grade II Relic"
       - <gold>Boots said to imitate the innate
@@ -25,7 +25,7 @@ observe:
         - "boot_fly"
 passive:
   - match: [ inInventory ]
-    every: 2s
+    every: 3s
     run:
       - become: parent
       - ensure:
