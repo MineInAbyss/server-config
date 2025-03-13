@@ -32,6 +32,7 @@ l4prayingskeleton:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - L4PSHeadDrops
     - L4PSOreDrops
     - PSHeadDrops
@@ -92,6 +93,7 @@ backupskele4:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - L4PSHeadDrops
     - L4PSOreDrops
     - PSHeadDrops

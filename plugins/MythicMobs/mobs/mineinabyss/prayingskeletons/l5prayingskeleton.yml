@@ -32,6 +32,7 @@ l5prayingskeleton:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - L5PSHeadDrops
     - L5PSOreDrops
     - PSHeadDrops
@@ -90,6 +91,7 @@ backupskele5:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - L5PSHeadDrops
     - L5PSOreDrops
     - PSHeadDrops
@@ -108,4 +110,6 @@ backupskele5:
     - skill{s=froststaffdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
     - skill{s=voidcharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
     - skill{s=monisceltidrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+
+
 

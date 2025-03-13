@@ -6,7 +6,7 @@ animalcharmdrop:
   Skills:
 
   - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
-  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade 1</#AA00AA><#D2D489> relic.'} @World
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade IV</#AA00AA><#D2D489> relic.'} @World
   - giveitem{i=AnimalTotemDrop} @trigger
 verdaueffaxdrop:
   Conditions:
@@ -15,7 +15,7 @@ verdaueffaxdrop:
   - hasaura{aura=relicdrop} false
   Skills:
   - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
-  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 2 relic.} @World
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade II</#AA00AA><#D2D489> relic.'} @World
   - giveitem{i=VerdauEffaxDrop} @trigger
 vinecharmdrop:
   Conditions:
@@ -24,7 +24,7 @@ vinecharmdrop:
   - hasaura{aura=relicdrop} false
   Skills:
   - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
-  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 3 relic.} @World
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade II</#AA00AA><#D2D489> relic.'} @World
   - giveitem{i=VineCharmDrop} @trigger
 boundinglancedrop1:
   Conditions:
@@ -33,9 +33,10 @@ boundinglancedrop1:
   - hasaura{aura=relicdrop} false
   Skills:
   - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
-  - message{m=A mail balloon whispers that <trigger.name> has discovered a Grade 4 relic.} @World
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World
   - giveitem{i=BoundingLanceDrop} @trigger
 celebrate:
   Skills:
   - particle{p=HEART;a=20;hs=1;vs=1;y=1.5}
+
 
