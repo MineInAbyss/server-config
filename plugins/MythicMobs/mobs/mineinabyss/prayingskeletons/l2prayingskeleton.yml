@@ -32,6 +32,7 @@ l2prayingskeleton:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - PSIntroDrops #to be removed after the event
     - PSIntroHeadDrops #to be removed after the event
     - L2PSHeadDrops
@@ -97,6 +98,7 @@ backupskele2:
     - ENTITY_SWEEP_ATTACK 0.001
   Drops:
     - exp 10-15
+    - bone 1-3 0.7
     - PSIntroDrops #to be removed after the event
     - PSIntroHeadDrops #to be removed after the event
     - L2PSHeadDrops
@@ -121,3 +123,4 @@ backupskele2:
     - skill{s=dropletdrop;delay=3} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
     - skill{s=uncertaindrop;delay=2} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
     - skill{s=flatdrop;delay=1} @trigger{conditions=[  - hasaura{aura=discdrop} false] ~onDeath 0.025
+
