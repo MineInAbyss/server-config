@@ -1,0 +1,21 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:ghost_seek
+  group: mineinabyss:ghost_seek
+  recipes:
+    - type: shaped
+      items:
+        H:
+          prefab: mineinabyss:hisoishi_shell
+        K:
+          prefab: mineinabyss:kakatsumuri_glowing_tip
+        T:
+          type: TINTED_GLASS
+        G: 
+          type: GOLD_INGOT
+
+      configuration: |-
+        |G G|
+        |KTK|
+        | H |

@@ -1,0 +1,19 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:tier_2_lens
+  group: mineinabyss:tier_2_lens
+  recipes:
+    - type: shaped
+      items:
+        L:
+          prefab: mineinabyss:tier_1_lens
+        N:
+          type: NETHERITE_INGOT
+        C: 
+          prefab: mineinabyss:charcoal_sand_ingot
+
+      configuration: |-
+        |CNC|
+        |CLC|
+        |CNC|
