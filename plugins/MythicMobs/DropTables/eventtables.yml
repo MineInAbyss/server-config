@@ -1,11 +1,16 @@
 PSIntroDrops:
-  MaxItems: 2
+  MaxItems: 3
   Conditions:
   - playerwithin 32
   Drops:
+  - chainmail_helmet{name="<gold>Mysterious Helmet";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
+  - chainmail_chestplate{name="<gold>Mysterious Chestplate";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
+  - chainmail_leggings{name="<gold>Mysterious Leggings";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
+  - chainmail_boots{name="<gold>Mysterious Boots";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
   - geary mineinabyss:piglin_banner_pattern 1 0.04
   - geary mineinabyss:skull_banner_pattern 1 0.08
   - bone{name="<gold>Mysterious Bone";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.08 
+  - disc_fragment_5{name="<gold>Disc Fragment";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.1
 
 dropdrop:
   MaxItems: 1
@@ -25,11 +30,6 @@ flatdrop:
   - playerwithin 32
   Drops:
   - geary mineinabyss:music_disc_the_flat_kazura 1 1
-PSIntroDrops:
-  MaxItems: 2
-  Conditions:
-  - playerwithin 32
-  Drops:
 
 PSIntroHeadDrops:
   MaxItems: 2
