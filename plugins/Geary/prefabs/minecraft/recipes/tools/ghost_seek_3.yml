@@ -1,0 +1,23 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:ghost_seek_3
+  group: mineinabyss:ghost_seek_3
+  recipes:
+    - type: shaped
+      items:
+        G:
+          prefab: mineinabyss:ghost_seek_2
+        H:
+          prefab: mineinabyss:hisomukuro_rib
+        B:
+          prefab: mineinabyss:buroguro_lantern
+        L: 
+          prefab: mineinabyss:tier_1_lens
+        I: 
+          prefab: mineinabyss:tier_2_lens
+
+      configuration: |-
+        |HBH|
+        |LGI|
+        |HBH|
