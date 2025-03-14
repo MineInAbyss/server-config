@@ -9,20 +9,17 @@ set.item:
       - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
       - <#D2D489>to darkness, revealing what the abyss hides.
 
-
-      
+hat: {}
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-    - become: parent
-    - cooldown:
-        id: night_vision
-        length: 70s
-        display: <#C13523><b>Night Vision
-    - applyPotionEffects:
-        - type: minecraft:night_vision
-          duration: 60s
-          amplifier: 1
-          hasParticles: false
+passive:
+  - match: [ equipped ]
+    every: 8s
+    run:
+      - become: parent
+      - applyPotionEffects:
+          - type: minecraft:night_vision
+            duration: 30s
+            amplifier: 1
+            hasParticles: false
 resourcepack:
   model: mineinabyss:item/relics/ngv_alt

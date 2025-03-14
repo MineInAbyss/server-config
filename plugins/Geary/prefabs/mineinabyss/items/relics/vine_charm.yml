@@ -20,7 +20,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
         id: vinecharm
-        length: 15s
+        length: 40s
         display: <#51C947>Ivy Call
     - mythicSkills:
         - "vinecharm"

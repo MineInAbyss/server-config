@@ -4,18 +4,19 @@ brokenscout: #200 100 50 - 10 seconds   (made with layer 1-3 mob drops)
   Cooldown: 1
   Skills:
     - command{repeat=15;repeatinterval=2;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
-
+    - effect:particles{particle=redstone;color=#FFFF00;amount=20;hS=0.5;vS=0.5;y=0.5} @self 
     - skill{s=closescout2} @self
     - skill{s=closescout3} @self
-    - delay 5
-    - sound{s=block.note_block.chime;sc=master;p=0.5;v=1} @self
-
+    - delay 10
+    - sound{s=block.note_block.chime;sc=master;p=0.5;v=1} @self 
 repairscout: #400 200 100 50 25 - 7 seconds  (hiso bones, charcoal sand,, relic part drops) (Graveyards can spawn after l2 boss quest)
   Conditions:
     - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=400}
   Cooldown: 1
   Skills:
     - command{repeat=10;repeatinterval=2;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - skill{s=closescout1} @self
     - skill{s=closescout2} @self
     - skill{s=closescout3} @self
@@ -30,9 +31,11 @@ relicscout: #500 250 100 50 25 - 7 seconds Glow Effect, can find other structure
   Cooldown: 1
   Skills:
     - command{repeat=7;repeatinterval=2;c="execute at <caster.uuid> run xp add <caster.name> -1";op=true}
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - skill{s=closescout} @self
     - skill{s=closescout2} @self
-    - skill{s=closescout3} @self
+    - skill{s=enhancedscout} @self
     - skill{s=closescout4} @self
     - delay 5
     - sound{s=block.note_block.chime;sc=master;p=0.5;v=1} @self
@@ -42,9 +45,11 @@ enhancedrelicscout:  #500 250 100 50 25 - 5 seconds Glow Effect, can find other 
     - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=500}
   Cooldown: 1
   Skills:
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - skill{s=closescout} @self
     - skill{s=closescout2} @self
-    - skill{s=enhancedscout3} @self
+    - skill{s=enhancedscout} @self
     - skill{s=closescout4} @self
     - skill{s=triggerskele} @self
     - delay 5
@@ -58,7 +63,7 @@ godscout:  #coords scout, unobtainable
   Skills:
     - skill{s=closescout} @self
     - skill{s=closescout2} @self
-    - skill{s=enhancedscout3} @self
+    - skill{s=enhancedscout} @self
     - skill{s=closescout4} @self
     - skill{s=triggerskele} @self
     - skill{s=godping} @self
@@ -72,6 +77,7 @@ closescout:
   Cooldown: 1
   Skills:
     - delay 10
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
     - sound{s=block.note_block.chime;sc=master;p=1;v=1} @self
 
 closescout1:
@@ -80,6 +86,8 @@ closescout1:
   Cooldown: 1
   Skills:
     - delay 10
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - sound{s=block.note_block.chime;sc=master;p=1;v=1} @self
 
 
@@ -89,6 +97,8 @@ closescout2:
   Cooldown: 1
   Skills:
     - delay 15
+    - effect:particles{particle=redstone;color=#0000FF;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - sound{s=block.note_block.chime;sc=master;p=1.5;v=1} @self
 
 closescout3:
@@ -98,12 +108,17 @@ closescout3:
   Skills:
     - delay 20
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
+    - delay 1
+    - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
+    - effect:particles{particle=redstone;color=#00FF00;amount=20;hS=0.5;vS=0.5;y=0.5} @self
 
 closescout4:
   Conditions:
     - mobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=25}
   Cooldown: 1
   Skills:
+    - effect:particles{particle=redstone;color=#00FF00;amount=20;hS=0.5;vS=0.5;y=0.5} @self
+
     - delay 25
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
     - delay 1
@@ -119,12 +134,14 @@ closescout4:
     - delay 1
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
 
-enhancedscout3:
+enhancedscout:
   Conditions:
     - MobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=25}
   Cooldown: 1
   Skills:
     - delay 20
+    - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
+    - delay 1
     - sound{s=block.note_block.chime;sc=master;p=2;v=1} @self
     - potion{type=GLOWING;duration=60;level=1} @MobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=100}
     - effect:glow{color=GOLD;duration=60} @MobsInRadius{types=l1prayingskeleton,l2prayingskeleton,l3prayingskeleton,l4prayingskeleton,l5prayingskeleton;amount=1to99;radius=100}

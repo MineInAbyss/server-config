@@ -63,18 +63,18 @@ spread_impact:
     - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
     - damage{a=10}
    # - dropitem{i=SpreadDrops}
-
+    - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}
 fakespread_impact:
   Skills:
     - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
     - damage{a=10}
-
+    - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}
 damage_impact:
   Skills:
     - effect:particles{particle=Electric_Spark;amount=50;hS=3;vS=3;y=.5}
     - damage{a=25}
    # - dropitem{i=DamageDrops}
-
+    - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}
 lure_impact:
   Skills:
    # - dropitem{i=LureDrops}
@@ -92,8 +92,8 @@ s_end:
     - dropitem{i=SpreadDrops}
 l_end:
   Skills:
-    - effect:particles{particle=Wax_Off;amount=100;hS=5;vS=5;y=.5}
-    - pull{velocity=5} @EntitiesNearOrigin{r=10}
+    - effect:particles{particle=Wax_Off;amount=100;hS=4;vS=4;y=.5}
+    - pull{velocity=3} @EntitiesNearOrigin{r=5}
     - dropitem{i=LureDrops}
 sun_end:
   Skills:

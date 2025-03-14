@@ -6,8 +6,6 @@ set.recipes:
   recipes:
     - type: shaped
       items:
-        R:
-          prefab: mineinabyss:spiralsquid_raw
         G:
           prefab: mineinabyss:splitjaw_gunk
         T:
@@ -17,5 +15,5 @@ set.recipes:
 
       configuration: |-
         |GCG|
-        |RTR|
+        |CTC|
         |GCG|

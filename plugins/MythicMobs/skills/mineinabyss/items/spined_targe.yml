@@ -1,5 +1,6 @@
 shieldbash:
   Skills:
+  - command{repeat=5;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -2";op=true}
   - sound{s=entity.shield.block;p=0.9;v=0.8} @Self
   - sound{s=entity.player.attack.knockback;p=1.1;v=0.7} @Self
   - sound{s=entity.zombie.attack_iron_door;p=1.2;v=0.6} @Self

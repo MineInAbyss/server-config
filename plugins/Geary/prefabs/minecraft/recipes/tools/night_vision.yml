@@ -1,0 +1,19 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:night_vision_goggle
+  group: mineinabyss:night_vision_goggle
+  recipes:
+    - type: shaped
+      items:
+        J:
+          prefab: mineinabyss:buroguro_lantern
+        D:
+          type: DIAMOND
+        L: 
+          prefab: mineinabyss:tier_1_lens
+          
+      configuration: |-
+        |JJJ|
+        |LDL|
+        |   |

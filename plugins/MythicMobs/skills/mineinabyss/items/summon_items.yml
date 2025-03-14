@@ -3,7 +3,7 @@ vinecharm:
   Conditions:
   Skills:
     - command{repeat=10;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true} @self
-    - summon{type=allyvineblaster;amount=3;radius=8;ctt=true;itt=true;os=true} @self
+    - summon{type=allyvineblaster;amount=3;radius=5;ctt=true;itt=true;os=true} @self
     - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
     - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
 
@@ -23,6 +23,9 @@ luckybackup4:
 luckybackup5:
   Skills:
     - summon{type=backupskele5;amount=1;radius=2;ctt=true;itt=true;os=true} @self
+goldenbackup:
+  Skills:
+    - summon{type=testbackup;amount=1;radius=2;ctt=true;itt=true;os=true} @self
 testbackup:
   Skills:
     - summon{type=testbackup;amount=1;radius=2;ctt=true;itt=true;os=true} @self
@@ -32,9 +35,8 @@ testbackup:
 
 
 allyvineblasterattack:
-  Cooldown: 1
+  Cooldown: 2
   Conditions:
-    - incombat true
     - offgcd true
     # - targetwithin{d=10} true
     - targetinlineofsight{} true
@@ -46,7 +48,7 @@ allyvineblasterattack:
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
 
-    - projectile{onTick=vineblaster_tick;onHit=avineblaster_impact;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;syo=0.5;tyo=0.5} @target
+    - projectile{onTick=vineblaster_tick;onHit=avineblaster_impact;v=20;i=1;hR=1;vR=1;hnp=true;hp=false;syo=0.5;tyo=0.5} @target
     - delay 20
     - state{s=pew;r=true} @self
 

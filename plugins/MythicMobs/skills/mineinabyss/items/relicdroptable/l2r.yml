@@ -8,3 +8,12 @@ relicbowdrop:
   - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
   - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World
   - giveitem{i=RelicBowDrop} @trigger
+boundinglancedrop2:
+  Conditions:
+  - playerwithin 32
+  TargetConditions:
+  - hasaura{aura=relicdrop} false
+  Skills:
+  - Aura{auraName=relicdrop;onTick=celebrate;duration=6} @trigger
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World
+  - giveitem{i=BoundingLanceDrop} @trigger

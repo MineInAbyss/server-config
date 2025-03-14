@@ -17,6 +17,11 @@ observe:
     - ensure:
         player:
           sneaking: true
+        mythicConditions:
+          - EnchantingLevel{l=>1} true
+      onFail:
+        - sendActionBar:
+            text: <red>Out of Experience
     - cooldown:
         id: BlazeReap
         length: 35s

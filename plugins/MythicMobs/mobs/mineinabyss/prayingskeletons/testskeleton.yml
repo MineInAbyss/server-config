@@ -51,11 +51,14 @@ testskeleton:
     - cancelevent{sync=true} @Self ~onAttack
    # - dropitem{i=GOLDENRELIC} @self ~onDeath
     - enchant{m=praying_skeleton_1;en=true} @self ~onspawn
+
     - effect:particles{particle=Electric_Spark;amount=5;hS=1;vS=1;y=.5} @self ~ontimer:30
-    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
+  
+    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.005
+    - skill{s=relicbowdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
 
     - skill{s=giantrelicsworddrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
     - skill{s=giantrelichammerdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
@@ -119,7 +122,7 @@ testbackup:
     - PSSherdDrops
   Skills:
     ####### Misc
-    - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn 0.05
+  #  - skill{s=testbackup;cooldown=1;delay=20} @self ~onSpawn 0.05
     - skill{s=saveskelelocation} @self ~onSpawn
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
@@ -128,28 +131,29 @@ testbackup:
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
 
-    - enchant{m=praying_skeleton_1;en=true} @self ~onspawn
+    - enchant{m=praying_skeleton_3;en=true} @self ~onspawn
     - effect:particles{particle=Electric_Spark;amount=5;hS=1;vS=1;y=.5} @self ~ontimer:30
 
-    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
-    - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.25
+    - skill{s=animalcharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=verdaueffaxdrop;delay=3}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=vinecharmdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=boundinglancedrop1;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=relicbowdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
 
-    - skill{s=giantrelicsworddrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
-    - skill{s=giantrelichammerdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
-    - skill{s=windstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
-    - skill{s=critcharmdrop;delay=5}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=relicbootsdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
+    - skill{s=giantrelicsworddrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=giantrelichammerdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=windstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=critcharmdrop;delay=5}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=relicbootsdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
 
-    - skill{s=blazereapdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
-    - skill{s=tridentdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.005
-    - skill{s=healingstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
-    - skill{s=wavecharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=blazereapdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=tridentdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=healingstaffdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
+    - skill{s=wavecharmdrop;delay=4} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
     - skill{s=respiratisdrop;delay=5}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
 
-    - skill{s=blackholestaffdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.002
-    - skill{s=froststaffdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.004
-    - skill{s=voidcharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.01
-    - skill{s=monisceltidrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.025
+    - skill{s=blackholestaffdrop;delay=1} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=froststaffdrop;delay=2} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=voidcharmdrop;delay=3} @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.02
+    - skill{s=monisceltidrop;delay=4}  @trigger{conditions=[  - hasaura{aura=relicdrop} false] ~onDeath 0.05
 

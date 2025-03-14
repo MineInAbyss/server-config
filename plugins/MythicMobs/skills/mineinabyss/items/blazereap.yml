@@ -2,6 +2,8 @@ BlazeReap:
   Conditions:
   Cooldown: 1
   Skills:
+    - command{repeat=20;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
+
     - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
     - effect:particles{p=hugeexplode;a=1;vs=0.2;hs=0.2;s=0;y=1} @self
     - effect:particles{p=hugeexplode;a=2;vs=0.2;hs=0.2;s=0;y=1} @self

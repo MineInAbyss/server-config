@@ -41,7 +41,8 @@ l5prayingskeleton:
 
   Skills:
     ####### Misc
-    - skill{s=luckybackup5;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=luckybackup1;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=goldenbackup;cooldown=1;delay=70} @self ~onSpawn 0.01
     - skill{s=saveskelelocation} @self ~onSpawn
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location

@@ -21,7 +21,7 @@ observe:
             text: <red>Out of Experience
     - cooldown:
         id: blackhole
-        length: 180s
+        length: 100s
         display: <#302D2D><b>Event Horizon
     - mythicSkills:
         - "blackhole"

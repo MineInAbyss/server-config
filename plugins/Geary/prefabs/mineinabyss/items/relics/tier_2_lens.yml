@@ -1,0 +1,16 @@
+set.item:
+  item:
+    itemName: <#AB8AE6>Hyalos Manifest
+    type: minecraft:blue_stained_glass
+    customModelData: 149
+    lore:
+      - ":layer_5: Tier 2 Lens"
+      - <#D2D489>A luminous material is crafted from a 
+      - <#D2D489>dangerous creature in the depths of the abyss.
+      - <#D2D489>The lens seem to sparkling with colours
+      - <#D2D489>that seem to reflect light from the force field.
+#ghost_seek:
+#ghost_seek:
+disableItemInteractions: {}
+#resourcepack:
+ # textures: mineinabyss:item/relics/hyalos_manifest

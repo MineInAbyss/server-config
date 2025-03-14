@@ -1,0 +1,14 @@
+set.item:
+  item:
+    itemName: <#828282>Hyalos Incipient
+    type: minecraft:light_blue_stained_glass
+    customModelData: 148
+    lore:
+      - ":layer_3: Tier 1 Lens"
+      - <#D2D489>A material crafted from a creature
+      - <#D2D489>and minerals from the depths of the abyss.
+      - <#D2D489>Seem to be important for crafting a certain tool.
+
+disableItemInteractions: {}
+#resourcepack:
+#  textures: mineinabyss:item/relics/hyalos_incipient

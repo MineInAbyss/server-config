@@ -12,20 +12,29 @@ set.item:
       - enchant: minecraft:sharpness
         level: 1
     itemFlags: [ HIDE_ENCHANTS ]
+prevent.enchanting: {}
 hat: {}
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-    - become: parent
-    - ensure:
-        player:
-          sneaking: true
-    - cooldown:
-        id: relicscout
-        length: 7s
-        display: <#617B94>Relic Scout
-    - mythicSkills:
-        - "repairscout"
+passive:
+  - match: [ equipped ]
+    every: 7s
+    run:
+      - become: parent
+      - mythicSkills:
+          - "repairscout"
+
+#observe:
+ # itemRightClick:
+  #  - become: parent
+  #  - ensure:
+ #       player:
+  #        sneaking: true
+  #  - cooldown:
+  #      id: relicscout
+  #      length: 7s
+  #      display: <#617B94>Relic Scout
+ #   - mythicSkills:
+  #      - "repairscout"
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
 

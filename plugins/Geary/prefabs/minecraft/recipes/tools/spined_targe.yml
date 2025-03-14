@@ -1,0 +1,17 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:spined_targe
+  group: mineinabyss:spined_targe
+  recipes:
+    - type: shaped
+      items:
+        D:
+          type: SHIELD
+        L: 
+          prefab: mineinabyss:charcoal_sand_ingot
+          
+      configuration: |-
+        |LLL|
+        |LDL|
+        |LLL|

@@ -13,18 +13,26 @@ set.item:
     itemFlags: [ HIDE_ENCHANTS ]
 hat: {}
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-    - become: parent
-    - ensure:
-        player:
-          sneaking: true
-    - cooldown:
-        id: relicscout
-        length: 5s
-        display: <#617B94>Relic Scout
-    - mythicSkills:
-        - "enchancedrelicscout"
+prevent.enchanting: {}
+passive:
+  - match: [ equipped ]
+    every: 5s
+    run:
+      - become: parent
+      - mythicSkills:
+          - "enchancedrelicscout"
+#observe:
+#  itemRightClick:
+#    - become: parent
+#    - ensure:
+#        player:
+#          sneaking: true
+#    - cooldown:
+#        id: relicscout
+#        length: 5s
+#        display: <#617B94>Relic Scout
+#    - mythicSkills:
+#        - "enchancedrelicscout"
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_on
 

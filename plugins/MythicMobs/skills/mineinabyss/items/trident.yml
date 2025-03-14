@@ -25,13 +25,14 @@ throwtrident:
   Conditions:
   - hasaurastacks{n=trident;s=3} true
   Skills:
+  - command{repeat=2;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
   - auraremove{aura=trident;stacks=3} @self
-  - sound{s=item.trident.throw;sc=hostile;p=1;v=0.6} @self
+  - sound{s=item.trident.throw;sc=players;p=1;v=0.6} @self
   - projectile{bulletType=ARROW;arrowType=TRIDENT;onHit=trident_impact;v=25;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;g=0.1} @targetlocation
 
 
 trident_impact:
   Skills:
-    - sound{s=item.trident.hit;sc=hostile;p=1;v=0.6} @self
+    - sound{s=item.trident.hit;sc=players;p=1;v=0.6} @self
     - damage{a=15}
     - shieldbreak{duration=150}

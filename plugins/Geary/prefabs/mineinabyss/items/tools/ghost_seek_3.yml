@@ -10,18 +10,25 @@ set.item:
 
 hat: {}
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-    - become: parent
-    - ensure:
-        player:
-          sneaking: true
-    - cooldown:
-        id: relicscout
-        length: 7s
-        display: <#617B94>Relic Scout
-    - mythicSkills:
-        - "relicscout"
+passive:
+  - match: [ equipped ]
+    every: 7s
+    run:
+      - become: parent
+      - mythicSkills:
+          - "relicscout"
+#observe:
+ # itemRightClick:
+ #   - become: parent
+ #   - ensure:
+ #       player:
+ #         sneaking: true
+ #   - cooldown:
+ #       id: relicscout
+ #       length: 7s
+ #       display: <#617B94>Relic Scout
+ #   - mythicSkills:
+ #       - "relicscout"
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_on
 

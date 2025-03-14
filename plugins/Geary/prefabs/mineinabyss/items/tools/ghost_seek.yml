@@ -9,20 +9,29 @@ set.item:
       - <#D2D489>guiding its wielder toward hidden relics.
 
 #ghost_seek:
-hat: {}
+#hat: {}
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-    - become: parent
-    - ensure:
-        player:
-          sneaking: true
-    - cooldown:
-        id: brokenscout
-        length: 10s
-        display: <#617B94>Relic Scout
-    - mythicSkills:
-        - "brokenscout"
+passive:
+  - match: [ equipped ]
+    every: 10s
+    run:
+      - become: parent
+      - mythicSkills:
+          - "brokenscout"
+
+
+#observe:
+#  itemRightClick:
+#    - become: parent
+#    - ensure:
+#        player:
+#          sneaking: true
+#    - cooldown:
+#        id: brokenscout
+#        length: 10s
+#        display: <#617B94>Relic Scout
+#    - mythicSkills:
+ #       - "brokenscout"
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
 

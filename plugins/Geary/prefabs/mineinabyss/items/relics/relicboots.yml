@@ -1,8 +1,8 @@
 set.item:
   item:
-    itemName: <#976d5c>Spring Boot
-    type: minecraft:netherite_boots
-    customModelData: 2
+    itemName: <#976d5c>Propulsion Charm
+    type: minecraft:paper
+    customModelData: 150
     lore:
       - ":layer_3: Grade II Relic"
       - <gold>Boots said to imitate the innate
@@ -11,7 +11,6 @@ set.item:
       - <#D2D489><i>in strength allowing delvers to ascend faster. 
 
 #ghost_seek:
-disableItemInteractions: {}
 observe:
   itemRightClick:
     - become: parent
@@ -24,8 +23,8 @@ observe:
     - mythicSkills:
         - "boot_fly"
 passive:
-  - match: [ inInventory ]
-    every: 3s
+  - match: [ inHand ]
+    every: 2s
     run:
       - become: parent
       - ensure:
@@ -33,6 +32,8 @@ passive:
             sneaking: true
       - mythicSkills:
           - "bootcharge"
+resourcepack:
+  textures: mineinabyss:item/relics/hammerbeak_totem
 
 
 

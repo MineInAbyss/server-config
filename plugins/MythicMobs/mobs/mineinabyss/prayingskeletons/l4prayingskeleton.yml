@@ -41,7 +41,8 @@ l4prayingskeleton:
 
   Skills:
     ####### Misc
-    - skill{s=luckybackup4;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=luckybackup1;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=goldenbackup;cooldown=1;delay=70} @self ~onSpawn 0.01
     - skill{s=saveskelelocation} @self ~onSpawn
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
@@ -101,7 +102,8 @@ backupskele4:
     - PSSherdDrops
   Skills:
     ####### Misc
-    - skill{s=luckybackup4;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=luckybackup1;cooldown=1;delay=70} @self ~onSpawn 0.05
+    - skill{s=goldenbackup;cooldown=1;delay=70} @self ~onSpawn 0.01
     - skill{s=displayHealth} ~onDamaged
     - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20

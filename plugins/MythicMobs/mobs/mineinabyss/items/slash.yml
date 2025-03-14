@@ -12,7 +12,7 @@ Bubble:
   Skills:
   - effect:particles{particle=splash;amount=20;hS=0.7;vS=0.7;speed=0;y=0.5} @self ~onTimer:5
   - effect:particles{particle=drip_water;amount=15;hS=0.8;vS=0.2;speed=0;y=0.1} @self ~onTimer:5
-  - equip{item=bubble:4} ~onSpawn
+  #- equip{item=bubble:4} ~onSpawn
 
 CyanSwings_1:
   Type: ARMOR_STAND
@@ -94,5 +94,5 @@ Blood_Slash:
     Invisible: true
     Invincible: true
   Skills:
-  - equip{item=projslash:4} ~onSpawn
+ # - equip{item=projslash:4} ~onSpawn
   - effect:particles{p=reddust;color=#FF0000;amount=15;hS=1.2;vS=0.1;speed=0} @self ~onSpawn

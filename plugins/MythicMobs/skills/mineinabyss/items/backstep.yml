@@ -1,16 +1,16 @@
 Backstep:
   Skills:
-
+  - command{repeat=4;repeatinterval=1;c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
   - lunge{velocity=1.18;velocityY=0.1} @forward{f=-6;y=0.1}
-  - sound{s=entity.breeze.idle_air;sc=hostile;p=1.1;v=1} @self
+  - sound{s=entity.breeze.idle_air;sc=players;p=1.1;v=1} @self
   - effect:particles{particle=redstone;color=#93ff73;amount=7;hS=0.3;vS=0.5;speed=0;repeat=4;repeatinterval=3} @self
-  - sound{s=entity.arrow.shoot;sc=hostile;p=1;v=0.6} @self
+  - sound{s=entity.arrow.shoot;sc=players;p=1;v=0.6} @self
   - projectile{bulletType=ARROW;arrowType=SPECTRAL;onHit=Quick_Shot_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.3} @targetlocation
   - delay 3
-  - sound{s=entity.arrow.shoot;sc=hostile;p=1;v=0.6} @self
+  - sound{s=entity.arrow.shoot;sc=players;p=1;v=0.6} @self
   - projectile{bulletType=ARROW;arrowType=SPECTRAL;onHit=Quick_Shot_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.3} @targetlocation
   - delay 3
-  - sound{s=entity.arrow.shoot;sc=hostile;p=1;v=0.6} @self
+  - sound{s=entity.arrow.shoot;sc=players;p=1;v=0.6} @self
   - projectile{bulletType=ARROW;arrowType=SPECTRAL;onHit=Quick_Shot_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.3} @targetlocation
 
 Quick_Shot_HIT:

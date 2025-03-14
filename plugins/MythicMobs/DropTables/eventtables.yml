@@ -3,15 +3,15 @@ PSIntroDrops:
   Conditions:
   - playerwithin 32
   Drops:
-  - chainmail_helmet{name="<gold>Mysterious Helmet";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
-  - chainmail_chestplate{name="<gold>Mysterious Chestplate";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
-  - chainmail_leggings{name="<gold>Mysterious Leggings";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
-  - chainmail_boots{name="<gold>Mysterious Boots";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.02
+  - chainmail_helmet{name="<gold>Mysterious Helmet";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.02
+  - chainmail_chestplate{name="<gold>Mysterious Chestplate";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.02
+  - chainmail_leggings{name="<gold>Mysterious Leggings";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.02
+  - chainmail_boots{name="<gold>Mysterious Boots";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.02
   - geary mineinabyss:piglin_banner_pattern 1 0.04
   - geary mineinabyss:skull_banner_pattern 1 0.08
-  - bone{name="<gold>Mysterious Bone";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.08 
-  - disc_fragment_5{name="<gold>Disc Fragment";lore="<#DB9200>:layer_1::layer2:";enchants=DURABILITY:1} 1 0.1
-
+  - bone{name="<gold>Mysterious Bone";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.08 
+  - disc_fragment_5{name="<gold>Disc Fragment";lore=":layer_1::layer_2:";enchants=FORTUNE:1} 1 0.1
+  
 dropdrop:
   MaxItems: 1
   Conditions:
@@ -40,5 +40,5 @@ PSIntroHeadDrops:
   - unknowndevice 1 0.02
   - oldpot 1 0.02
   - cauldronofbones 1 0.02
-  - brokenskull 1 0.05
-  - verticalcore 0.05
+  - brokenskull 1 0.06
+  - verticalcore 0.08

@@ -20,17 +20,19 @@ shadowball:
   - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
   - projectile{bulletType=MYTHICITEM;material=va1;bulletSpin=150;onTick=shadowballtick;onHit=shadowballhit;mr=170;v=15;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;tyo=1.2;onEnd=shadowballend;sE=true;hp=true;a=0.93} @targetlocation
+  - effect:particles{particle=smoke;amount=5;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
   - delay 7
   - projectile{bulletType=MYTHICITEM;material=va1;bulletSpin=150;onTick=shadowballtick;onHit=shadowballhit;mr=170;v=15;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;tyo=1.2;onEnd=shadowballend;sE=true;hp=true;a=0.93} @targetlocation
+  - effect:particles{particle=smoke;amount=5;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
   - delay 7
   - projectile{bulletType=MYTHICITEM;material=va1;bulletSpin=150;onTick=shadowballtick;onHit=shadowballhit;mr=170;v=15;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;tyo=1.2;onEnd=shadowballend;sE=true;hp=true;a=0.93} @targetlocation
-  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
+  - effect:particles{particle=smoke;amount=5;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
   - delay 7
   - projectile{bulletType=MYTHICITEM;material=va1;bulletSpin=150;onTick=shadowballtick;onHit=shadowballhit;mr=170;v=15;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;tyo=1.2;onEnd=shadowballend;sE=true;hp=true;a=0.93} @targetlocation
-  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
+  - effect:particles{particle=smoke;amount=5;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
   - delay 7
   - projectile{bulletType=MYTHICITEM;material=va1;bulletSpin=150;onTick=shadowballtick;onHit=shadowballhit;mr=170;v=15;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;tyo=1.2;onEnd=shadowballend;sE=true;hp=true;a=0.93} @targetlocation
-  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
+  - effect:particles{particle=smoke;amount=5;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
 
 shadowballtick:
   Skills:
