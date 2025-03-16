@@ -9,5 +9,6 @@ set.item:
     - 301
   dyedColor:
     color: '#FFFFFF'
-hat: {}
+  equippable:
+    slot: HEAD
 disableItemInteractions: {}

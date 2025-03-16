@@ -9,7 +9,8 @@ set.item:
   - <#D2D489>crafted with an intricate, almost organic design.
   - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
   - <#D2D489>to darkness, revealing what the abyss hides.
-hat: {}
+  equippable:
+    slot: HEAD
 disableItemInteractions: {}
 passive:
 - match:

@@ -3,15 +3,17 @@ set.item:
   itemName: <#b5955f>Haste Potion
   lore:
   - <light_purple>Haste</light_purple> <blue>(03:00)</blue>
-  customPotionEffects:
-  - type: minecraft:haste
-    duration: 3m
+  potionContents:
+    customEffects:
+    - type: minecraft:haste
+      duration: 3m
   dyedColor:
     color: 233,177,21
 set.potionMixes:
   potionmixes:
   - input:
       type: POTION
-      basePotionType: minecraft:water
+      potionContents:
+        potionType: minecraft:water
     ingredient:
       prefab: mineinabyss:haste_paste

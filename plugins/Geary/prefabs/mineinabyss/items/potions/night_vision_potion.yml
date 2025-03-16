@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:potion
-  basePotionType: minecraft:night_vision
+  potionContents:
+    potionType: minecraft:night_vision
 set.potionMixes:
   potionmixes:
   - ingredient:

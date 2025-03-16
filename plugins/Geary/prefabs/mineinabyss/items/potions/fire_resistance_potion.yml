@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:potion
-  basePotionType: minecraft:fire_resistance
+  potionContents:
+    potionType: minecraft:fire_resistance
 set.potionMixes:
   potionmixes:
   - ingredient:

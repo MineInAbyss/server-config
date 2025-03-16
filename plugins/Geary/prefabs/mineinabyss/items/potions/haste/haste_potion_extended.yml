@@ -3,9 +3,10 @@ set.item:
   itemName: <#b5955f>Haste Potion
   lore:
   - <light_purple>Haste</light_purple> <blue>(6:00)</blue>
-  customPotionEffects:
-  - type: minecraft:haste
-    duration: 8m
+  potionContents:
+    customEffects:
+    - type: minecraft:haste
+      duration: 8m
   dyedColor:
     color: 233,177,21
 set.potionMixes:

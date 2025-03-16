@@ -10,7 +10,8 @@ mineinabyss:lootTable:
         - type: mineinabyss:item
           item:
             type: POTION
-            basePotionType: minecraft:regeneration
+            potionContents:
+              potionType: minecraft:regeneration
       conditions:
         - { type: minecraft:random_chance, chance: 0.75 }
     - entries:

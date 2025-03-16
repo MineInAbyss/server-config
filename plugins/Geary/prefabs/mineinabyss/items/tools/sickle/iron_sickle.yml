@@ -4,7 +4,7 @@ set.item:
   customModelData:
     floats:
     - 1
-  durability: 250
+  maxDamage: 250
   tool:
     rules:
     - blockTypes:

@@ -7,5 +7,6 @@ set.item:
   customModelData:
     floats:
     - 308
-hat: {}
+  equippable:
+    slot: HEAD
 disableItemInteractions: {}

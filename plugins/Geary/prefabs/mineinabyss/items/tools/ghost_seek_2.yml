@@ -9,10 +9,12 @@ set.item:
   - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
   - <#D2D489>guiding its wielder toward hidden relics.
   enchantments:
-  - enchant: minecraft:sharpness
-    level: 1
+    enchantments:
+    - enchant: minecraft:sharpness
+      level: 1
+  equippable:
+    slot: HEAD
 prevent.enchanting: {}
-hat: {}
 disableItemInteractions: {}
 passive:
 - match:

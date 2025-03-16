@@ -10,17 +10,19 @@ set.item:
   food:
     saturation: 1.8
     nutrition: 3
-    usingConvertsTo:
-      prefab: mineinabyss:ashimite_meat_bone
-    effects:
-    - probability: 0.35
-      effect:
-        type: minecraft:hunger
-        duration: 10s
-        amplifier: 2
-        isAmbient: true
-        hasParticles: true
-        hasIcon: true
+  consumable:
+    consumeEffects:
+      - type: APPLY
+        probability: 0.35
+        effects:
+          - type: minecraft:hunger
+            duration: 10s
+            amplifier: 2
+            isAmbient: true
+            hasParticles: true
+            hasIcon: true
+  useRemainder:
+    prefab: mineinabyss:ashimite_meat_bone
 replaceBurnedDrop:
   prefab: mineinabyss:ashimite_meat_cooked
 resourcepack:

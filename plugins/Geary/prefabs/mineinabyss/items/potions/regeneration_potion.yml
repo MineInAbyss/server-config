@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:potion
-  basePotionType: minecraft:regeneration
+  potionContents:
+    potionType: minecraft:regeneration
 set.potionMixes:
   potionmixes:
   - ingredient:

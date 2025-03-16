@@ -7,8 +7,8 @@ set.item:
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable:
-    song: mineinabyss:the_lilypad_the_flat_kazura
-    showInTooltip: true
+    jukeboxSong: mineinabyss:the_lilypad_the_flat_kazura
+    showInToolTip: true
 resourcepack:
   textures:
     layers:

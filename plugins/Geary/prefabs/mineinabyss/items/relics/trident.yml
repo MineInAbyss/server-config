@@ -10,13 +10,14 @@ set.item:
   - <#3C8C82>a Goblet of Giants containing netherworld runes.
   - <#265c55><i>It is rumored to return to the user after being thrown.
   enchantments:
-  - enchant: minecraft:riptide
-    level: 1
-  - enchant: minecraft:impaling
-    level: 5
-  - enchant: minecraft:sharpness
-    level: 5
-  unbreakable: true
+    enchantments:
+      - enchant: minecraft:riptide
+        level: 1
+      - enchant: minecraft:impaling
+        level: 5
+      - enchant: minecraft:sharpness
+        level: 5
+  unbreakable: {}
 prevent.enchanting: {}
 disableItemInteractions: {}
 observe:

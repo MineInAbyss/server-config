@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:potion
-  basePotionType: minecraft:slowness
+  potionContents:
+    potionType: minecraft:slowness
 set.potionMixes:
   potionmixes:
   - ingredient:

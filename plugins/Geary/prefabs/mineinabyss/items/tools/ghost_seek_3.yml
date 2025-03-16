@@ -8,8 +8,9 @@ set.item:
   - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
   - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
   - <#D2D489>guiding its wielder toward hidden relics.
+  equippable:
+    slot: HEAD
 prevent.enchanting: {}
-hat: {}
 disableItemInteractions: {}
 passive:
 - match:
