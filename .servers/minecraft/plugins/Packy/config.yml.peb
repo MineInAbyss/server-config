@@ -11,7 +11,9 @@ prompt: ""
 force: true
 sendOnReload: false
 # What ObfuscationType to use, valid options are FULL, SIMPLE & NONE
-obfuscation: NONE
+obfuscation:
+  type: NONE
+  cache: false
 # This will use PackSquash to automatically squash all templates
 packSquash:
   enabled: false
@@ -97,15 +99,18 @@ menu:
         tools_2d:
           button:
             type: minecraft:diamond_sword
-            customModelData: 1
+            customModelData:
+              floats: [1]
             itemName: <gold>2D Tools
         tools_3d:
           button:
             type: minecraft:golden_sword
-            customModelData: 2
+            customModelData:
+              floats: [2]
             itemName: <gold>3D Tools
         vanilla_tools:
           button:
             type: minecraft:iron_sword
-            customModelData: 3
+            customModelData:
+              floats: [3]
             itemName: <gold>Vanilla Tools

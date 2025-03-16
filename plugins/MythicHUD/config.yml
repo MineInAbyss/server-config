@@ -1,32 +1,30 @@
 generate-default-files: false
 generate-unicode-files: true
 layout:
-    default:
-    - "vanilla"
-    - "orthbanking"
-    - "layers"
-    #- "relics_and_tools"
-    - "misc-layout"
-check-update: 20
+  default:
+    - backgrounds
+    - vanilla
+    - effect
+    - orthbanking
+check-update: 5
 decimal-format: '#.##'
-copy-resource-pack:
-    enabled: false
-    namespaces:
-        minecraft: Nexo/pack/assets
-        mythichud: Nexo/pack/assets
+copy-pack:
+  enabled: false
+  path: Nexo/pack/external_packs/MythicHud.zip
 boss-bar:
-    max: 7
-    hud-position: 4
-    color: white
+  max: 7
+  hud-position: 4
+  color: white
 disable-geyser-players: true
 disable-netty-injection: false
 elements:
-    EXPERIENCE_LEVEL: default
+  EXPERIENCE_LEVEL: default
 updaters:
-    RESPAWNING: true
-    ARMOR: true
-    AIR: true
-    CONSUMING: true
-    EXPERIENCE: true
+  ARMOR: true
+  AIR: true
+  RESPAWNING: true
+  EXPERIENCE: true
+  CONSUMING: true
 pack-support: all
-config-version: 8
+default-namespace: mythichud
+config-version: 9
