@@ -38,7 +38,6 @@ spittleshrub:
     ViewRadius: 48
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill:SpittleshrubSpawn @self ~onSpawnOrLoad
     - skill:SpittleshrubDamaged @self ~onDamaged
     - skill:SpittleshrubHiddenDamaged{sync=true} @self ~onDamaged

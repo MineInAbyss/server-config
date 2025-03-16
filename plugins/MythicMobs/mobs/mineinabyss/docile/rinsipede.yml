@@ -43,4 +43,3 @@ rinsipede:
     # - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     #- skill{s=tjHurt} @self ~onHurt
     # - skill{s=tjDeath} @self ~onDeath
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

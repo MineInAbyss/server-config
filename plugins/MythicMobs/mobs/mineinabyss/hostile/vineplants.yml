@@ -38,7 +38,6 @@ vinebinder:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
     - skill{s=vbATTACK} @Self ~onAttack
@@ -80,7 +79,6 @@ vineblaster:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - skill:vineblasterattack @Self ~onTimer:40
     # - skill{s=vineblastermortar} @target ~onTimer:20
@@ -121,7 +119,6 @@ allyvineblaster:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill:allyvineblasterattack @Self ~onTimer:10
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
@@ -163,7 +160,6 @@ vinepoofer:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - skill:vinepooferattack @Self ~onTimer:30
     # - skill{s=vinebinderwave} @target ~onTimer:20

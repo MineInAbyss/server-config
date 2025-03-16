@@ -48,8 +48,7 @@ woodcrier:
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     # - skill{s=hc_dash} @target ~onTimer:20
-    - skill{s=hb_Attack} @self ~onAttack
-    # - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - skill{s=hc_Attack} @self ~onAttack
 
     # - skill{s=hc_backup} @self ~ondamaged
     - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
@@ -57,7 +56,6 @@ woodcrier:
     #    - skill{s=hcDeath} @self ~onDeath
 
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=2} ~onDeath
 
 
 
@@ -130,7 +128,6 @@ horncrier:
 
     - skill{s=hc_dash} @target ~onTimer:200
     - skill{s=hc_Attack2} @self ~onattack
-    # - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     # - skill{s=hc_backup} @self ~ondamaged
     - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
@@ -138,6 +135,5 @@ horncrier:
     #    - skill{s=hcDeath} @self ~onDeath
 
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=2} ~onDeath
 
 

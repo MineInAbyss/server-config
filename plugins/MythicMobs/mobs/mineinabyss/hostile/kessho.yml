@@ -16,4 +16,3 @@ kessho:
     - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
     - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

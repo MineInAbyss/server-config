@@ -25,5 +25,4 @@ hamashirama:
     - geary mineinabyss:hamashirama_raw 1-2 0.6
 
   Skills:
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

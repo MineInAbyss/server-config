@@ -51,7 +51,6 @@ stingerhead:
     # - skill{s=burrow_out} @self ~onSpawnOrLoad
     # - skill{s=burrow_in} @self ~onDespawn
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=SH_Attack;sync=true} @self ~onAttack
     - heal{amount=150} @self ~onkill
@@ -59,7 +58,6 @@ stingerhead:
     - dismount ~onDamaged
     - skill{s=stingerhead_death} @self ~onDeath
     - skill{s=stingerhead_venom} @target ~onTimer:45
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
     - propel{v=2;delay=1} @trigger ~onDamaged ?~distance{d=>20}
     - skill{s=stingerburrow} @Self ~onDamaged 0.1
     - skill{s=stingerhead_bigleap} @target ~onTimer:100

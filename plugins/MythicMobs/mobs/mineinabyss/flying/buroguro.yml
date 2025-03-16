@@ -33,7 +33,6 @@ buroguro:
     DamageTint: true
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     #  - skill{s=buroguroDamaged} @self ~onDamaged
     #  - skill{s=buroguroTick} @self ~onTimer:20
     - skill{s=buroguroMelee} @trigger ~onAttack

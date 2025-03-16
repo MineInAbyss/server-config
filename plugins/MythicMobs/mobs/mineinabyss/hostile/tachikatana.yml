@@ -45,7 +45,6 @@ tachikatana:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - bodyclamp{m=tachikatana;c=15} @self ~onSpawnOrLoad
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
     #    - skill{s=orbpiercer_speed} @self ~onSpawnOrLoad
@@ -64,4 +63,3 @@ tachikatana:
     - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
     #- state{mid=tachikatana;s=swipe_attack;li=3;lo=3} @self ~onAttack
 
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -36,14 +36,12 @@ rockwalker:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=hs_backup} @self ~ondamaged
     - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=hsHurt} @self ~onHurt
     - skill{s=hsDeath} @self ~onDeath
     - state{mid=rockwalker;s=attack;li=3;lo=3} @self ~onAttack
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
 faputa:
@@ -78,7 +76,7 @@ faputa:
   Drops:
     - exp 10-15
 
-    
+
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
@@ -118,7 +116,7 @@ nanachi:
   Drops:
     - exp 10-15
 
-    
+
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged

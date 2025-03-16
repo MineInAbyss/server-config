@@ -60,7 +60,6 @@ hammerbeak:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
 
@@ -125,4 +124,3 @@ hammerbeakLarge:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

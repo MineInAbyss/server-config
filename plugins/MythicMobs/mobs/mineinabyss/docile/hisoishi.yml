@@ -42,14 +42,12 @@ hisoishi:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - skill{s=hs_backup} @self ~ondamaged
     - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=hsHurt} @self ~onHurt
     - skill{s=hsDeath} @self ~onDeath
     - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
 
@@ -100,4 +98,3 @@ baby_hisoishi:
     - skill{s=tjHurt} @self ~onHurt
     - skill{s=tjDeath} @self ~onDeath
     - state{mid=hisoishi;s=attack;li=3;lo=3} @self ~onAttack
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath

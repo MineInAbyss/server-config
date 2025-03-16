@@ -38,4 +38,3 @@ neritantan:
     - effect:sound{s=mineinabyss:entity.neritantan.death;v=4;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.neritantan.hurt;v=4;p=0.2} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

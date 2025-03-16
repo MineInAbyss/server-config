@@ -65,7 +65,6 @@ shroombear:
     - skill{s=shroombearHurt} @self ~onHurt
     - skill{s=shroombearDeath} @self ~onDeath
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
 
 baby_shroombear:
@@ -103,8 +102,6 @@ baby_shroombear:
     - skill{s=shroombearHurt} @self ~onHurt
     - skill{s=shroombearDeath} @self ~onDeath
     - skill{s=shroombearHeal;delay=<random.0to20>} @self ~onTimer:40 0.66 <80%
-    #- skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - defaultstate{t=walk;s=walk;sp=2.4} @self ~onSpawnOrLoad

@@ -47,7 +47,6 @@ l5prayingskeleton:
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=240000} @self ~onSpawn
@@ -115,7 +114,6 @@ backupskele5:
     ####### Misc
     - skill{s=luckybackup5} @self ~onSpawn 0.05
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=240000} @self ~onSpawn

@@ -36,7 +36,6 @@ silkfang:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=silkfangWeb;delay=<random.0to20>} @self ~onDamaged 0.65
 
     - skill{s=sfSpiderWebShot} @Target ~onTimer:220
@@ -47,4 +46,3 @@ silkfang:
     - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
     - skill{s=silkfangHurt} @self ~onHurt
     - skill{s=silkfangDeath} @self ~onDeath
-  #- skill:MIAPetExpNearby{exp=1} ~onDeath

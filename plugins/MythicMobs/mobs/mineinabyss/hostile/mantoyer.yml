@@ -36,6 +36,5 @@ mantoyer:
   Skills:
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - state{mid=mantoyer;s=attack} @self ~onAttack

@@ -46,7 +46,6 @@ testskeleton:
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
    # - dropitem{i=GOLDENRELIC} @self ~onDeath
@@ -127,7 +126,6 @@ testbackup:
     - skill{s=skeleping} ~onSignal:location
     - skill{s=godping} ~onSignal:location
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     # - skill{s=vinebinderwave} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
 

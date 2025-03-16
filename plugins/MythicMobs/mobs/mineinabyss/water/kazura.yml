@@ -27,5 +27,4 @@ kazura:
 
 
   Skills:
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

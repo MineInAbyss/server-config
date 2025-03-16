@@ -37,7 +37,6 @@ octoliar:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - defaultstate{t=walk;s=walk;sp=1.5} @self ~onSpawnOrLoad
     - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
     - potion{t=JUMP;l=1;force=true;p=true;d=12} @self ~onTimer:10

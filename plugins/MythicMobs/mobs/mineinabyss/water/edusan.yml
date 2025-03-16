@@ -35,5 +35,4 @@ edusan:
     - geary mineinabyss:edusan_whisker 1 0.2
 
   Skills:
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged

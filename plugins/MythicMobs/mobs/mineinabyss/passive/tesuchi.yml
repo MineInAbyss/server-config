@@ -34,7 +34,6 @@ tesuchi:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - look{} @target ~onTimer:20
     - defaultstate{t=walk;s=walk;sp=2.2} @self ~onSpawnOrLoad

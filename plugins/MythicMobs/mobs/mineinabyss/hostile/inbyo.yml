@@ -37,7 +37,6 @@ inbyo:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
 
     - state{mid=inbyo;s=attack} @self ~onAttack
     - skill{s=inbyopoop} @target ~onTimer:20

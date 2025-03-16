@@ -30,4 +30,3 @@ amakagame:
     - geary mineinabyss:baracocha_fruit 1-5
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

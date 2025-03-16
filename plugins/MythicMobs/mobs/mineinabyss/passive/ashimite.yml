@@ -83,7 +83,6 @@ baby_ashimite:
     Scale: 0.5
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
     - setspeed{type=walking;speed=1.8} @self ~onSpawn 0.2
     - skill{s=deerAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

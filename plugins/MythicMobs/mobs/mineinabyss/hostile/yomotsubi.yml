@@ -41,7 +41,6 @@ yomotsubi:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_8} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=yomotsubi;s=attack} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%
@@ -92,7 +91,6 @@ shiratsubi:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_8} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - bodyclamp{m=shiratsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=shiratsubi;s=attack} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%

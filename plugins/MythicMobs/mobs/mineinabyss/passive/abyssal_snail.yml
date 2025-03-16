@@ -35,5 +35,4 @@ abyssal_snail:
     - effect:sound{s=mineinabyss:entity.axolotl.death;v=4;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.axolotl.hurt;v=4;p=0.2} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=breathe} @self ~onSpawnOrLoad

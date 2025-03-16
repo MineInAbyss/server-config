@@ -30,6 +30,4 @@ hashofu:
   Skills:
     - bodyclamp{m=hashofu;c=15} @self ~onSpawnOrLoad
     - setspeed{type=flying;speed=1.2} @self ~onSpawnOrLoad
-    # - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath

@@ -36,6 +36,5 @@ spikewalker:
     DamageTint: true
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill:MIAPetExpNearby{exp=1} ~onDeath
     - skill{s=Reflectdamage} ~onTimer:100 <99%
     - skill{s=damagereflect} ~onDamaged
