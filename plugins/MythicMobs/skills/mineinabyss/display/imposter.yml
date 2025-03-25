@@ -123,7 +123,8 @@ amogus500:
   Skills:
   - gcd{ticks=100}
   - skill{s=skeldbyedoor} @Self
-  - jsonmessage{m="[{'text':'&eThe players have called upon the menace of the &4SUS &6Join the fight at /warp AprilFools!'}]"} @server ~onInteract
+  - jsonmessage{m="[{'text':'&eThe players has called upon the menace of the &4SUS!'}]"} @server ~onInteract
+  - jsonmessage{m="[{'text':'&6Join the fight at /warp AprilFools!'}]"} @server ~onInteract
   - jsonmessage{m="[{'text':'&aBoss will be spawning in 2 minutes!'}]"} @server ~onInteract
   - delay 2400
   - summon{t=amogus} @Location{c=20.5,83.5,-0.5,0,0}
