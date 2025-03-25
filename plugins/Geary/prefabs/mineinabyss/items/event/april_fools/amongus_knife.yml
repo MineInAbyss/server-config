@@ -10,3 +10,4 @@ set.item:
 disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/event/amongus_knife
+  parentModel: item/handheld
