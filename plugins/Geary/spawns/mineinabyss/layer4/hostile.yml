@@ -24,15 +24,8 @@ l4_kuongatari:
 
 l4_fapukuon:
   inherit: l4_hostile
-  type: mm:kuongatari
-  chance: 0.5
-  priority: 0.2
-  conditions:
-    - $inherit
-    - $remove blockBelow
-    - blockBelow:
-        allow: [ "#dirt", "moss_carpet", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
-        deny: [ "diorite" ]
+  type: mm:fapukuon
+  priority: 0.4
 
 l4_swarmshocker: { inherit: l4_hostile, type: mm:swarmshocker, priority: 0.6 }
 
@@ -52,14 +45,6 @@ l4_hornballer:
   priority: 0.3
   chance: 0.3
   type: mm:hornballer
-  conditions:
-    - $inherit
-    - $remove blockBelow
-    - blockBelow:
-        allow: [ "#base_stone_overworld", "cobblestone", "#dirt", "moss_carpet", "cyan_terracotta", "white_concrete", "calcite" ]
-        deny: ["moss_block"] # prevents from spawning on goblets
-
-
 
 
 
@@ -80,8 +65,8 @@ l4_orbpiercer:
 l4_tama:
   inherit: l4_hostile
   type: mm:tama
-  chance: 0.01
-  priority: 0.1
+  chance: 0.02
+  priority: 0.2
   conditions:
     - $inherit
     - $remove maxNearby
@@ -101,3 +86,8 @@ l4_tachikatana:
         amount: 1
 
 
+l4_spawnrandomamongus:
+  inherit: l4_hostile
+  type: mm:spawnrandomamongus
+  chance: 0.7
+  amount: 1-2

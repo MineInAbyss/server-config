@@ -39,3 +39,8 @@ l3_spawnrandomamongus:
   inherit: l3_hostile
   type: mm:spawnrandomamongus
   chance: 0.7
+
+l3_fapukuon:
+  inherit: l3_hostile
+  type: mm:fapukuon
+  priority: 0.4

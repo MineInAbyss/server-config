@@ -92,35 +92,30 @@ l5_kagi_tachikiri: { inherit: l5_hostile_sand, type: mm:kagi_tachikiri }
 l5_virinsipede: { inherit: l5_hostile_sand, type: mm:virinsipede, priority: 0.1, chance: 0.05 }
 
 l5_ikonia: { inherit: l5_hostile_sand, type: mm:ikonia, priority: 0.02, chance: 0.02 }
-l5_sporemanta:
-  inherit: l5_hostile
-  type: mm:sporemanta
-  conditions:
-    - $inherit
-    - $remove blockBelow
-    - blockBelow:
-        allow: [ "moss_carpet", "lily_pad", "pink_stained_glass", "purple_stained_glass", "quartz_block", "quartz_stairs", "sea_lantern" ]
-        deny: [ "diorite" ]
 
 l5_hornballer:
   inherit: l5_hostile
-  priority: 0.3
   chance: 0.3
   type: mm:hornballer
-  conditions:
-    - blockBelow:
-        allow: [ "#dirt", "moss_carpet", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
-    - maxNearby:
-        amount: 5
 
 l5_fapukuon:
   inherit: l5_hostile
-  type: mm:kuongatari
-  chance: 0.5
+  type: mm:fapukuon
   priority: 0.4
+
+l5_tama:
+  inherit: l5_hostile
+  type: mm:tama
+  chance: 0.02
+  priority: 0.2
   conditions:
     - $inherit
-    - $remove blockBelow
-    - blockBelow:
-        allow: [ "#dirt", "moss_carpet", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
-        deny: [ "diorite" ]
+    - $remove maxNearby
+    - maxNearby:
+        amount: 1
+
+l5_spawnrandomamongus:
+  inherit: l5_hostile
+  type: mm:spawnrandomamongus
+  chance: 0.7
+  amount: 1-2
