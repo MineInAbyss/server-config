@@ -14,7 +14,7 @@ observe:
     - become: parent
     - ensure:
         mythicConditions:
-          - EnchantingLevel{l=>1} true
+          - EnchantingLevel{l=>2} true
       onFail:
         - sendActionBar:
             text: <red>Out of Experience

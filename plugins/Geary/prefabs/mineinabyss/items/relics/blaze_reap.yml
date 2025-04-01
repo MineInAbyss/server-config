@@ -20,8 +20,8 @@ observe:
     - become: parent
     - ensure:
         mythicConditions:
-          - EnchantingLevel{l=>1} true
-          - hasaurastacks{n=blazereap;s=4} true
+          - EnchantingLevel{l=>2} true
+          - hasaurastacks{n=blazereap;s=5} true
       onFail:
         - sendActionBar:
             text: <red>Not Primed

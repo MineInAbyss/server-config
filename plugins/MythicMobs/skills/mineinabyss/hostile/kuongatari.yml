@@ -9,7 +9,7 @@ Kuon_Summon:
     - summon{type=kuongatari_summon;amount=1;radius=3} @self
 
 fapukuon_summon:
-  Cooldown: 1
+  Cooldown: 0.1
   Conditions:
     - offgcd true
     - targetwithin{d=20} true

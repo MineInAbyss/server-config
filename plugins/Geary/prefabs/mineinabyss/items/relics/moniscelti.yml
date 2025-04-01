@@ -14,7 +14,7 @@ observe:
     - become: parent
     - ensure:
         mythicConditions:
-          - health{h=>13}
+          - health{h=>15}
       onFail:
         - sendActionBar:
             text: <red>Not Enough Health
