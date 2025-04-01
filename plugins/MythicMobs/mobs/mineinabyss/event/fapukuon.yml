@@ -38,14 +38,11 @@ fapukuon:
     - exp 15-25
     - normalchicken 1 0.02
     - amogus_token 1 0.5
-    - geary mineinabyss:kuongatari_juice 1 0.3
-    - geary mineinabyss:kuongatari_silk 1 0.3
-    - geary mineinabyss:kuongatari_abdomen_raw 1-2 0.35
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - state{mid=kuongatari;s=attack} @self ~onAttack
-    - skill{s=fapukuon_summon} @target ~onDamaged 0.2y
+    - skill{s=fapukuon_summon} @target ~onDamaged 0.2
     - skill{s=Changetarget} ~onTimer:160 <99%
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
@@ -73,10 +70,7 @@ fapugatari_summon:
     - TORCH HAND
   Drops:
     - exp 5-15
-    - amogus_token 1 0.3
-    - geary mineinabyss:kuongatari_juice 1 0.04
-    - geary mineinabyss:kuongatari_silk 1 0.1
-    - geary mineinabyss:kuongatari_abdomen_raw 1 0.3
+    - amogus_token 1 0.25
   Model:
     Id: faputa
     ViewRadius: 48
