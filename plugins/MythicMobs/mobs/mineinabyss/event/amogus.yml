@@ -69,10 +69,10 @@ amogus:
     DamageTint: true
   Drops:
     - exp 200-500 1
-    - amongus_knife_token{top=1} 1 0.25
-    - amongus_cosmetic_token{top=2} 1 0.2
-    - clown_mask_token{top=3} 1 0.1
-    - townsman_meet_token{top=5} 1 0.1
+    - amongus_knife_token_new{top=1} 1 0.25
+    - amongus_cosmetic_token_new{top=2} 1 0.2
+    - clown_mask_token_new{top=3} 1 0.1
+    - townsman_meet_token_new{top=5} 1 0.1
     - moaiface 1 0.2
   Health: 1337
   DamageModifiers:
