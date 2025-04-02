@@ -2,7 +2,7 @@
 ## Developed by Little Room, patreon.com/littleroomdev ##
 #########################################################
 impostersignal:
-  Cooldown: 0
+  Cooldown: 0.5
   TriggerConditions:
   - holding{m=amogus_token;amount=1} true
   Skills:
@@ -138,12 +138,13 @@ amogus490:
   - jsonmessage{m="[{'text':'&c10 tokens left!'}]"} @server ~onInteract
 
 amogus500:
-  Cooldown: 1
+  Cooldown: 200
   Conditions:
   - offgcd true
   - hasaurastacks{n=amogusturnin;s=500} true
   Skills:
-  - gcd{ticks=100}
+  - auraremove{aura=amogusturnin;stacks=500} @self
+  - gcd{ticks=200}
   - skill{s=skeldbyedoor} @Self
   - jsonmessage{m="[{'text':'&eThe players have called upon the menace of the &4SUS!'}]"} @server ~onInteract
   - jsonmessage{m="[{'text':'&6Join the fight at /warp AprilFools!'}]"} @server ~onInteract
