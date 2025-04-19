@@ -8,4 +8,6 @@ set.item:
   - ':layer_5:'
   - <#0C7787><i>Why do I feel like I am haunted...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/titanjaw_pearl
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/titanjaw_pearl

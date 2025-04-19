@@ -20,4 +20,6 @@ set.recipes:
       |M M|
       |TMT|
 resourcepack:
-  textures: mineinabyss:item/materials/blank_template_rune
+  textures:
+    layers:
+    - mineinabyss:item/materials/blank_template_rune

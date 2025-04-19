@@ -9,4 +9,6 @@ set.item:
   - <#a39039><i>I've heard their body makes
   - <#a39039><i>for a great fertiliser.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/rinsipede_segments
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/rinsipede_segments

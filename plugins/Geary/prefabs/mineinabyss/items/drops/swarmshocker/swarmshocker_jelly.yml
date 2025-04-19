@@ -10,4 +10,6 @@ set.item:
   - <#1B5BAD><i>Tastes very watery...
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/swarmshocker_jelly
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/swarmshocker_jelly

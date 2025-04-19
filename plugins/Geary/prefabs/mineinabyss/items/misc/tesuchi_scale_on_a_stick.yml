@@ -17,4 +17,6 @@ set.recipes:
     - prefab: mineinabyss:tesuchi_scales
     - type: FISHING_ROD
 resourcepack:
-  textures: mineinabyss:item/other/tesuchi_scale_on_a_stick
+  textures:
+    layers:
+    - mineinabyss:item/other/tesuchi_scale_on_a_stick

@@ -12,4 +12,6 @@ set.item:
     saturation: 5
     nutrition: 5
 resourcepack:
-  textures: mineinabyss:item/creature_drops/tachikatana_leg
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/tachikatana_leg

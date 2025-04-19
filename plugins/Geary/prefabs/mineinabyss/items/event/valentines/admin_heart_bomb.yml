@@ -14,4 +14,6 @@ observe:
   - mythicSkills:
     - heartthrow
 resourcepack:
-  textures: mineinabyss:item/event/love_potion
+  textures:
+    layers:
+    - mineinabyss:item/event/love_potion

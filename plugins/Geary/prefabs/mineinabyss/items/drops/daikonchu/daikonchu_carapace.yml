@@ -8,4 +8,6 @@ set.item:
   - ':layer_3:'
   - <#f1b259>I could totally wear this.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/daikonchu_carapace
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/daikonchu_carapace

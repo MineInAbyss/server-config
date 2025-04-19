@@ -9,4 +9,6 @@ set.item:
   - <#A68348><i>The rockwalkers use these as their climbing
   - <#A68348><i>gear, and its toughness sure looks the part.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/rockwalker_mandible
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/rockwalker_mandible

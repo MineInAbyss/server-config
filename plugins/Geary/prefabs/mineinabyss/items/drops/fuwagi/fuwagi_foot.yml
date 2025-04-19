@@ -10,4 +10,6 @@ set.item:
   - <#FF3A24><i>foot in your inventory, you will
   - <#FF3A24><i>have good luck.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/fuwagi_foot
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/fuwagi_foot

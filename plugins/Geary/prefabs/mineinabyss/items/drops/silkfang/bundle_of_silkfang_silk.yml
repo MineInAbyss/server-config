@@ -9,4 +9,6 @@ set.item:
   - <#ED4C4C>Most people don't enjoy getting
   - <#ED4C4C>stuck in this.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/bundle_of_silkfang_silk
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/bundle_of_silkfang_silk

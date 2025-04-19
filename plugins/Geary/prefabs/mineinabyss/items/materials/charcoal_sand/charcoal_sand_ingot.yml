@@ -25,4 +25,6 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
-  textures: mineinabyss:item/materials/charcoal_sand_ingot
+  textures:
+    layers:
+    - mineinabyss:item/materials/charcoal_sand_ingot

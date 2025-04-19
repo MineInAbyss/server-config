@@ -17,5 +17,7 @@ set.recipes:
       |M|
       |S|
 resourcepack:
-  textures: mineinabyss:item/tools/charcoal_sand_dagger
+  textures:
+    layers:
+    - mineinabyss:item/tools/charcoal_sand_dagger
   parentModel: item/handheld

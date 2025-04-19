@@ -10,4 +10,6 @@ set.item:
   - <#ED4C4C><i>large amount of tensile strength.
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/silkfang_silk
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/silkfang_silk

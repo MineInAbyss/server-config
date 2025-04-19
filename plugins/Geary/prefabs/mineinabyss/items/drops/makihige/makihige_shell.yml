@@ -10,4 +10,6 @@ set.item:
   - <#5221A6>some day. But how?
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/makihige_shell
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/makihige_shell

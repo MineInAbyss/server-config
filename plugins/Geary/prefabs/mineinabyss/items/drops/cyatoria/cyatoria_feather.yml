@@ -9,4 +9,6 @@ set.item:
   - <#54FFA4><i>It resembles the feathers
   - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/cyatoria_feather
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/cyatoria_feather

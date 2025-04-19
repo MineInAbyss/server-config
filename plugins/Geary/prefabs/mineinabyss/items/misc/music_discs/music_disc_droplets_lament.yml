@@ -10,4 +10,6 @@ set.item:
     song: mineinabyss:the_lilypad_droplets_lament
     showInTooltip: true
 resourcepack:
-  textures: mineinabyss:item/other/music_discs/music_disc_lime
+  textures:
+    layers:
+    - mineinabyss:item/other/music_discs/music_disc_lime

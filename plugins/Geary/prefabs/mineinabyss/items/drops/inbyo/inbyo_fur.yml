@@ -9,4 +9,6 @@ set.item:
   - <#B5B5B5><i>This stench is nauseating...
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/inbyo_fur
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/inbyo_fur

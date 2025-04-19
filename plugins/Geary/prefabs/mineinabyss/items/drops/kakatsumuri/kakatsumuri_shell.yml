@@ -9,4 +9,6 @@ set.item:
   - <#B8FFBA><i>Even after death the shell
   - <#B8FFBA><i>still keeps it bright glow.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/kakatsumuri_shell
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/kakatsumuri_shell

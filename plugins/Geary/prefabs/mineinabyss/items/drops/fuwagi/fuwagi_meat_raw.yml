@@ -14,4 +14,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:fuwagi_meat_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/fuwagi_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/fuwagi_meat_raw

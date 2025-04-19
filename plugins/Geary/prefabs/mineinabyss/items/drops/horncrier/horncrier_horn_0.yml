@@ -11,7 +11,9 @@ set.item:
   - <#fbfc92><i>Ponder
   maxStackSize: 1
 resourcepack:
-  textures: mineinabyss:item/creature_drops/horncrier_horn
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/horncrier_horn
 observe:
   itemRightClick:
   - become: parent

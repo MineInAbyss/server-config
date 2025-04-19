@@ -8,4 +8,6 @@ set.item:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>Its texture feels otherworldly.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/dosetori_wing
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/dosetori_wing

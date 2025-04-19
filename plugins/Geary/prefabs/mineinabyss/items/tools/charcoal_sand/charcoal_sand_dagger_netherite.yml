@@ -6,4 +6,6 @@ set.item:
     - 6
   durability: 3000
 resourcepack:
-  textures: mineinabyss:item/tools/charcoal_sand_dagger
+  textures:
+    layers:
+    - mineinabyss:item/tools/charcoal_sand_dagger

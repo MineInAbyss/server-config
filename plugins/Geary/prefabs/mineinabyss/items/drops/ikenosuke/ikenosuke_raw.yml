@@ -13,4 +13,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ikenosuke_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/ikenosuke_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/ikenosuke_raw

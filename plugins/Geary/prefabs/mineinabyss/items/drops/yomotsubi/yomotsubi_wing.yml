@@ -9,4 +9,6 @@ set.item:
   - <#9c5d2c>A sturdy, metallic wing.
   - <#9c5d2c><i>Perhaps i can mold this into something...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/yomotsubi_wing
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/yomotsubi_wing

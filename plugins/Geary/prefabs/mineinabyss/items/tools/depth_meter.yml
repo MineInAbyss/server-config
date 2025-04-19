@@ -53,4 +53,6 @@ observe:
       display: <#02A9bF>Depth Meter
   - mineinabyss:showDepth: {}
 resourcepack:
-  textures: mineinabyss:item/tools/depth_meter
+  textures:
+    layers:
+    - mineinabyss:item/tools/depth_meter

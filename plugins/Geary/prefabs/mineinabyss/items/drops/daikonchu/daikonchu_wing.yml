@@ -8,4 +8,6 @@ set.item:
   - ':layer_3:'
   - <#f1b259>They're still buzzing...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/daikonchu_wing
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/daikonchu_wing

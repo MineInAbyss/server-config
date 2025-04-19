@@ -13,4 +13,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:chikyuoebi_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/chikyuoebi_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/chikyuoebi_raw

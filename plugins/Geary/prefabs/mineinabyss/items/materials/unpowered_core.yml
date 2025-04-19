@@ -23,4 +23,6 @@ set.recipes:
       |CPC|
       |GGG|
 resourcepack:
-  textures: mineinabyss:item/materials/fluid_core
+  textures:
+    layers:
+    - mineinabyss:item/materials/fluid_core

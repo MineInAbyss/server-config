@@ -13,4 +13,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:kuongatari_abdomen_cooked
 resourcepack:
-  textures: mineinabyss:item/creature_drops/kuongatari_abdomen
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/kuongatari_abdomen

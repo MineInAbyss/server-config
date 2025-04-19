@@ -9,4 +9,6 @@ set.item:
   - <#1B5BAD><i>This stores an impressive amount of energy!
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/swarmshocker_charged_powder
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/swarmshocker_charged_powder

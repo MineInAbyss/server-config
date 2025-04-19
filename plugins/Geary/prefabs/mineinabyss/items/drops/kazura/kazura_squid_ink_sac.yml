@@ -8,4 +8,6 @@ set.item:
   - ':layer_4:'
   - <#807E78>The sac is white, but its ink is black.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/kazura_squid_ink_sac
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/kazura_squid_ink_sac

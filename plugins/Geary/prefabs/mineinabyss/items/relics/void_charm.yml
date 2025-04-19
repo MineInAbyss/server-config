@@ -25,5 +25,7 @@ observe:
   - mythicSkills:
     - shadowball
 resourcepack:
-  textures: mineinabyss:item/relics/blackhole_staff
+  textures:
+    layers:
+    - mineinabyss:item/relics/blackhole_staff
   parentModel: item/handheld

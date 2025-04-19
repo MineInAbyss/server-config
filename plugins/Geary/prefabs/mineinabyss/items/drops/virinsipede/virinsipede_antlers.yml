@@ -9,4 +9,6 @@ set.item:
   - <#FFC847><i>Blazing hot, just like
   - <#FFC847><i>the Virinsipede's rage.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/virinsipede_antlers
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/virinsipede_antlers

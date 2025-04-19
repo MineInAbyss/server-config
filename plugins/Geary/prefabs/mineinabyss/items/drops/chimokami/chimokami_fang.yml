@@ -9,4 +9,6 @@ set.item:
   - <#7a243f><i>It is said that these beasts house a
   - <#7a243f><i>spiritual fire within.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/chimokami_fang
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/chimokami_fang

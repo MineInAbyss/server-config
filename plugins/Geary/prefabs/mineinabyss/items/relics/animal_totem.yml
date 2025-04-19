@@ -32,4 +32,6 @@ passive:
       amplifier: 1
       hasParticles: false
 resourcepack:
-  textures: mineinabyss:item/relics/tesuchi_totem
+  textures:
+    layers:
+    - mineinabyss:item/relics/tesuchi_totem

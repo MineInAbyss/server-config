@@ -14,4 +14,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:demonfish_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/demonfish_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/demonfish_raw

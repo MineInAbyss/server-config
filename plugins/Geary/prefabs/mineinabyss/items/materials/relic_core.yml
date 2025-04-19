@@ -25,4 +25,6 @@ set.recipes:
       |HCH|
       |GPG|
 resourcepack:
-  textures: mineinabyss:item/materials/charged_fluid
+  textures:
+    layers:
+    - mineinabyss:item/materials/charged_fluid

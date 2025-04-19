@@ -8,4 +8,6 @@ set.item:
   lore:
   - <yellow>Used to cut meat into smaller pieces.
 resourcepack:
-  textures: mineinabyss:item/tools/knife
+  textures:
+    layers:
+    - mineinabyss:item/tools/knife

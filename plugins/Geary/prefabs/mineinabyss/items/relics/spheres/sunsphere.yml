@@ -24,4 +24,6 @@ observe:
     when:
     - chance: 1
 resourcepack:
-  textures: mineinabyss:item/relics/spheres/l5_sunsphere
+  textures:
+    layers:
+    - mineinabyss:item/relics/spheres/l5_sunsphere

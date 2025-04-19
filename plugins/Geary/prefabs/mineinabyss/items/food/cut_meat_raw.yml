@@ -8,7 +8,9 @@ set.item:
     saturation: 1.8
     nutrition: 3
 resourcepack:
-  textures: mineinabyss:item/food/standard_food/cut_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/standard_food/cut_meat_raw
 set.recipes:
   discoverRecipes: true
   recipes:

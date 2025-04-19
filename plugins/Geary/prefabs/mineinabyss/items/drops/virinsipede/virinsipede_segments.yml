@@ -9,4 +9,6 @@ set.item:
   - <#8F425B><i>I've heard their body makes
   - <#8F425B><i>for a great fertiliser.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/virinsipede_segments
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/virinsipede_segments

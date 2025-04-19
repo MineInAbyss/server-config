@@ -23,4 +23,6 @@ set.recipes:
     - prefab: mineinabyss:squidfly_brain_raw
     - prefab: mineinabyss:sakuranbo_dust
 resourcepack:
-  textures: mineinabyss:item/materials/haste_paste
+  textures:
+    layers:
+    - mineinabyss:item/materials/haste_paste

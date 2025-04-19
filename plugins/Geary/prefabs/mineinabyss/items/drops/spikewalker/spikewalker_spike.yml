@@ -9,4 +9,6 @@ set.item:
   - <#ccbd99><i>It may not look pointy,
   - <#ccbd99><i>but don't let it poke ya!
 resourcepack:
-  textures: mineinabyss:item/creature_drops/spikewalker_spike
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/spikewalker_spike

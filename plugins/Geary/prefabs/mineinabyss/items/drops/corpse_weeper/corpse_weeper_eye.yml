@@ -9,4 +9,6 @@ set.item:
   - <red><i>It feels like it's staring into your soul...
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/corpse_weeper_eye
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/corpse_weeper_eye

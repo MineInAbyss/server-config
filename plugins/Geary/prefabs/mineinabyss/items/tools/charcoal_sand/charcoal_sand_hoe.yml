@@ -17,5 +17,7 @@ set.recipes:
       | S|
       | S|
 resourcepack:
-  textures: mineinabyss:item/tools/charcoal_sand_hoe
+  textures:
+    layers:
+    - mineinabyss:item/tools/charcoal_sand_hoe
   parentModel: item/handheld

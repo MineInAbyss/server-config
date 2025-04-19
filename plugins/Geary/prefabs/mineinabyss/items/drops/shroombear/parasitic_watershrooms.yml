@@ -9,4 +9,6 @@ set.item:
   - <yellow>Sucks nutrients from its host, releasing
   - <yellow>them back when the host is near death.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/parasitic_watershrooms
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/parasitic_watershrooms

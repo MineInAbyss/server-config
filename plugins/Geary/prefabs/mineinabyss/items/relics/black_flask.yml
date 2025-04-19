@@ -20,4 +20,5 @@ observe:
       amplifier: 3
 resourcepack:
   textures:
-  - mineinabyss:item/relics/consumables/black_flask
+    layers:
+      - mineinabyss:item/relics/consumables/black_flask

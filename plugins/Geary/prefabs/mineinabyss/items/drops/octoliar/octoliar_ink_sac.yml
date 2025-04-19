@@ -10,4 +10,6 @@ set.item:
   - <#B8FFBA><i>mixing it with the air it
   - <#B8FFBA><i>starts to glow!
 resourcepack:
-  textures: mineinabyss:item/creature_drops/octoliar_ink_sac
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/octoliar_ink_sac

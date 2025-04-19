@@ -10,4 +10,6 @@ set.item:
   - <#D9D9D9>Orb Piercer. Handle carefully!
   - <#D9D9D9>Its venom is very lethal.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/orb_piercer_spike
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/orb_piercer_spike

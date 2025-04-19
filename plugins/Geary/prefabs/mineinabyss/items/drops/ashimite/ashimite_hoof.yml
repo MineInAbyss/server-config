@@ -8,4 +8,6 @@ set.item:
   - ':layer_5:'
   - <#824E21><i>Excellent for starting fires!
 resourcepack:
-  textures: mineinabyss:item/creature_drops/ashimite_hoof
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/ashimite_hoof

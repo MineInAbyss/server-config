@@ -9,4 +9,6 @@ set.item:
   - <#B8FFBA><i>Although a little wet, it's
   - <#B8FFBA><i>as tough as a rock!
 resourcepack:
-  textures: mineinabyss:item/creature_drops/octoliar_tentacle
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/octoliar_tentacle

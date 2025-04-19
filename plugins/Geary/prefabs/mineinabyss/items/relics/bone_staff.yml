@@ -27,5 +27,7 @@ observe:
   - mythicSkills:
     - bone_ball
 resourcepack:
-  textures: mineinabyss:item/relics/bone_staff
+  textures:
+    layers:
+    - mineinabyss:item/relics/bone_staff
   parentModel: item/handheld

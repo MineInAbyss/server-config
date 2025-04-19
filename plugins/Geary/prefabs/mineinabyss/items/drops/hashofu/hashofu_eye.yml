@@ -9,4 +9,6 @@ set.item:
   - <#595959><i>There is a fire in its eyes.
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/hashofu_eye
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/hashofu_eye

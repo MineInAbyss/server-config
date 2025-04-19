@@ -9,4 +9,6 @@ set.item:
   - <#369AFF>Did I scare it so much that
   - <#369AFF>it pooped itself on death?
 resourcepack:
-  textures: mineinabyss:item/creature_drops/madokajack_poop
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/madokajack_poop

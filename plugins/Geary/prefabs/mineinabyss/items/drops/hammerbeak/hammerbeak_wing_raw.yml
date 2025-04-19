@@ -14,4 +14,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:hammerbeak_wing_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/hammerbeak_wing_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/hammerbeak_wing_raw

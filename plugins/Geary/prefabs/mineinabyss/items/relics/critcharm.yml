@@ -19,4 +19,6 @@ passive:
   - mythicSkills:
     - randomcritplayer
 resourcepack:
-  textures: mineinabyss:item/relics/crit_charm
+  textures:
+    layers:
+    - mineinabyss:item/relics/crit_charm

@@ -9,4 +9,6 @@ set.item:
   - <#DB5807><i>A powerful magma core.
   - <#DB5807><i>Could be usefull in powerfull relics..
 resourcepack:
-  textures: mineinabyss:item/creature_drops/himushi_core
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/himushi_core

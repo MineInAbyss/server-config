@@ -26,5 +26,7 @@ observe:
   - mythicSkills:
     - windstaff
 resourcepack:
-  textures: mineinabyss:item/relics/wind_staff
+  textures:
+    layers:
+    - mineinabyss:item/relics/wind_staff
   parentModel: item/handheld

@@ -8,4 +8,6 @@ set.item:
   - ':layer_3:'
   - <gold><i>Careful! Ignites easily.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/sakuranbo_dust
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/sakuranbo_dust

@@ -10,4 +10,6 @@ set.item:
   - <#EB1742><i>It reeks of burned dried vomit, much
   - <#EB1742><i>like Nanachi's Netherworld Stew.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/stingerhead_flesh
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/stingerhead_flesh

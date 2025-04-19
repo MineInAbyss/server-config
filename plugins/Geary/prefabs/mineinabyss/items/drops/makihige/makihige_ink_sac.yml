@@ -9,4 +9,6 @@ set.item:
   - <#5221A6><i>With this you might be able to
   - <#5221A6><i>do something. Probably not though
 resourcepack:
-  textures: mineinabyss:item/creature_drops/makihige_ink_sac
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/makihige_ink_sac

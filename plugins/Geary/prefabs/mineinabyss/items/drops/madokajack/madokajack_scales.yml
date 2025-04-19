@@ -9,4 +9,6 @@ set.item:
   - <#369AFF>Though hard, these scales are
   - <#369AFF>slimy and smell of feces!?
 resourcepack:
-  textures: mineinabyss:item/creature_drops/madokajack_scales
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/madokajack_scales

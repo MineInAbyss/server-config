@@ -9,4 +9,6 @@ set.item:
   - <#A759FF>Warped and sharp like some of
   - <#A759FF>the tempestuous abyssal bedrock.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/hagamizukin_tooth
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/hagamizukin_tooth

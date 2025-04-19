@@ -18,4 +18,6 @@ set.recipes:
     - prefab: mineinabyss:demonfish_raw
     - type: FISHING_ROD
 resourcepack:
-  textures: mineinabyss:item/other/demonfish_on_a_stick
+  textures:
+    layers:
+    - mineinabyss:item/other/demonfish_on_a_stick

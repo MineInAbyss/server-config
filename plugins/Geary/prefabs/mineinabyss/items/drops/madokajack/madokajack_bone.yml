@@ -8,4 +8,6 @@ set.item:
   - ':layer_3:'
   - <#369AFF><i>Even their bones smell rancid.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/madokajack_bone
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/madokajack_bone

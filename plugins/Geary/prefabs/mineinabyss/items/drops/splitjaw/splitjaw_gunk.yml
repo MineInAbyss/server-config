@@ -8,4 +8,6 @@ set.item:
   - ':layer_1::layer_2::layer_3:'
   - <#40FF19>Yucky.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/splitjaw_gunk
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/splitjaw_gunk

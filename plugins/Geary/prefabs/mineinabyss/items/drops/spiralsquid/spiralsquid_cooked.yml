@@ -11,7 +11,9 @@ set.item:
     saturation: 6
     nutrition: 5
 resourcepack:
-  textures: mineinabyss:item/food/creatures/spiralsquid_cooked
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/spiralsquid_cooked
 set.recipes:
   discoverRecipes: true
   recipes:

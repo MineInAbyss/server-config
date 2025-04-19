@@ -9,4 +9,6 @@ set.item:
   - <#ccbd99><i>Inedible, hard, rough,
   - <#ccbd99><i>and gamey...
 resourcepack:
-  textures: mineinabyss:item/food/creatures/spikewalker_meat
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/spikewalker_meat

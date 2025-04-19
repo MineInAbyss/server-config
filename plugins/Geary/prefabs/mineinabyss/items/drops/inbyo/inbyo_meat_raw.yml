@@ -13,4 +13,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:inbyo_meat_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/inbyo_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/inbyo_meat_raw

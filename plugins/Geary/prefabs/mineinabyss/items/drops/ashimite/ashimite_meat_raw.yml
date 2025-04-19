@@ -24,4 +24,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ashimite_meat_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/ashimite_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/ashimite_meat_raw

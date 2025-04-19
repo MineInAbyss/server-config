@@ -23,4 +23,6 @@ observe:
     when:
     - chance: 1
 resourcepack:
-  textures: mineinabyss:item/event/fool_cradle
+  textures:
+    layers:
+    - mineinabyss:item/event/fool_cradle

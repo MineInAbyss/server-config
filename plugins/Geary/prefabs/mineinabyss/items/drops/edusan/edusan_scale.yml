@@ -9,4 +9,6 @@ set.item:
   - <#ee5bb8><i>Exudes a beautifully ominous aura.
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/edusan_scale
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/edusan_scale

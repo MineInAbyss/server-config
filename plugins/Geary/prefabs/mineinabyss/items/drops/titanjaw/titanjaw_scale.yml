@@ -9,4 +9,6 @@ set.item:
   - <#0C7787><i>Might be useful to craft gear
   - <#0C7787><i>with if I collect enough.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/titanjaw_scale
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/titanjaw_scale

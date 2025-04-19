@@ -9,4 +9,6 @@ set.item:
   - <#A68348><i>I could cut myself on these
   - <#A68348><i>if I'm not careful.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/mantoyer_horns
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/mantoyer_horns

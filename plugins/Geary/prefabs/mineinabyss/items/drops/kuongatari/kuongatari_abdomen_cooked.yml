@@ -22,4 +22,6 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
-  textures: mineinabyss:item/creature_drops/kuongatari_abdomen_cooked
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/kuongatari_abdomen_cooked

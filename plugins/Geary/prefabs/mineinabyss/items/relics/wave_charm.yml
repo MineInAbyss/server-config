@@ -26,4 +26,6 @@ observe:
   - mythicSkills:
     - Tidal_Wave
 resourcepack:
-  textures: mineinabyss:item/relics/makihige_totem
+  textures:
+    layers:
+    - mineinabyss:item/relics/makihige_totem

@@ -8,4 +8,6 @@ set.item:
   - ':layer_5:'
   - <yellow>Its eye was almost fused into its armor.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/stingerhead_eye
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/stingerhead_eye

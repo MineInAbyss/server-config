@@ -8,4 +8,6 @@ set.item:
   - ':layer_5:'
   - <#f1b259>Leathery wing laced in a poisonous powder
 resourcepack:
-  textures: mineinabyss:item/creature_drops/sporemanta_wing
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/sporemanta_wing

@@ -25,5 +25,7 @@ observe:
   - mythicSkills:
     - healing_staff
 resourcepack:
-  textures: mineinabyss:item/relics/healing_staff
+  textures:
+    layers:
+    - mineinabyss:item/relics/healing_staff
   parentModel: item/handheld

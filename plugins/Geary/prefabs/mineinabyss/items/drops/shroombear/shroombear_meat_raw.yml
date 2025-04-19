@@ -15,4 +15,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:shroombear_meat_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/shroombear_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/shroombear_meat_raw

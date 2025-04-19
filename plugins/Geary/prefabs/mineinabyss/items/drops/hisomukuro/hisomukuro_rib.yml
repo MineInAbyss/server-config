@@ -10,4 +10,6 @@ set.item:
   - <#524D47><i>Metallic on the inside!
   - <#524D47><i>prehaps i can use this to launch something...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/hisomukuro_rib
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/hisomukuro_rib

@@ -11,4 +11,6 @@ set.item:
   - <#D9D9D9><i>Probably just wishful thinking...
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/orb_piercer_face_fragments
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/orb_piercer_face_fragments

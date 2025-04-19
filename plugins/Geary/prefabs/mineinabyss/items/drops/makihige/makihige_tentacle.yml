@@ -8,4 +8,6 @@ set.item:
   - ':layer_4::layer_5:'
   - <#5221A6>Seems useful. I better keep this...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/makihige_tentacle
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/makihige_tentacle

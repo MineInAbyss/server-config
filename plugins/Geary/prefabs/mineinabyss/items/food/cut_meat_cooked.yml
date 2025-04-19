@@ -8,4 +8,6 @@ set.item:
     saturation: 12.8
     nutrition: 8
 resourcepack:
-  textures: mineinabyss:item/food/standard_food/cut_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:item/food/standard_food/cut_meat_cooked

@@ -7,4 +7,5 @@ set.item:
 geary:resourcepack:
   parentModel: block/cube_all
   textures:
-    all: mineinabyss:furniture/furniture_outline
+    variables:
+      all: mineinabyss:furniture/furniture_outline

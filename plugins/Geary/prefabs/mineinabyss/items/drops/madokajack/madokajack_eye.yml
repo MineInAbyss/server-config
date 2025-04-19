@@ -10,4 +10,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:madokajack_eye_roasted
 resourcepack:
-  textures: mineinabyss:item/creature_drops/madokajack_eye
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/madokajack_eye

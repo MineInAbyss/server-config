@@ -8,4 +8,6 @@ set.item:
   - ':layer_2:'
   - <red>A quill for writing in blood.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/corpse_weeper_feather
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/corpse_weeper_feather

@@ -17,5 +17,7 @@ set.recipes:
       |MS |
       | S |
 resourcepack:
-  textures: mineinabyss:item/tools/charcoal_sand_axe
+  textures:
+    layers:
+    - mineinabyss:item/tools/charcoal_sand_axe
   parentModel: item/handheld

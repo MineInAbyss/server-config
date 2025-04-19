@@ -10,4 +10,6 @@ set.item:
   - <#A68348><i>though they wouldn't do anything special
   - <#A68348><i>without proper care..
 resourcepack:
-  textures: mineinabyss:item/creature_drops/plant_matter
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/plant_matter

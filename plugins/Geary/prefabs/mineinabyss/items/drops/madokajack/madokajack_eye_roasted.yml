@@ -20,4 +20,6 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
-  textures: mineinabyss:item/creature_drops/madokajack_eye_roasted
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/madokajack_eye_roasted

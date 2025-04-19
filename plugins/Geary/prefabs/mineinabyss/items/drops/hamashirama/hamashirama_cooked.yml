@@ -24,4 +24,6 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
-  textures: mineinabyss:item/food/creatures/hamashirama_cooked
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/hamashirama_cooked

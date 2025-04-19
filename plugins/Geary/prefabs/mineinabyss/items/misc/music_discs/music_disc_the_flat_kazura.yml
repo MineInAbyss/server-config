@@ -10,4 +10,6 @@ set.item:
     song: mineinabyss:the_lilypad_the_flat_kazura
     showInTooltip: true
 resourcepack:
-  textures: mineinabyss:item/other/music_discs/music_disc_green
+  textures:
+    layers:
+    - mineinabyss:item/other/music_discs/music_disc_green

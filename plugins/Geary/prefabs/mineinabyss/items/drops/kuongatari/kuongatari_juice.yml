@@ -8,4 +8,6 @@ set.item:
   - ':layer_4::layer_5:'
   - <#167D2A>Yuck! And it's sticky too!
 resourcepack:
-  textures: mineinabyss:item/creature_drops/kuongatari_juice
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/kuongatari_juice

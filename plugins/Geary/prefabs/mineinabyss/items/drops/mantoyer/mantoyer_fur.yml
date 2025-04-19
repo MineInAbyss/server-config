@@ -8,4 +8,6 @@ set.item:
   - ':layer_1::layer_4:'
   - <#A68348>Thickly furred, and very sturdy...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/mantoyer_fur
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/mantoyer_fur

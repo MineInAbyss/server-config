@@ -9,4 +9,6 @@ set.item:
   - <#BDBDBD><i>Looks like it will keep me warm
   - <#BDBDBD><i>through the entire winter if needed.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/okibo_fur
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/okibo_fur

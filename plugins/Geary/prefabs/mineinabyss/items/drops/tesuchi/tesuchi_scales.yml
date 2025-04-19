@@ -11,4 +11,6 @@ set.item:
     saturation: 1.2
     nutrition: 2
 resourcepack:
-  textures: mineinabyss:item/creature_drops/tesuchi_scales
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/tesuchi_scales

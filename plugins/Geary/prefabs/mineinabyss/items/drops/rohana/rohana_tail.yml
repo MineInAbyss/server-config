@@ -9,4 +9,6 @@ set.item:
   - <#FF1FB4><i>Can be used to make brewing stands
   - <#FF1FB4><i>or other useful relics...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/rohana_tail
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/rohana_tail

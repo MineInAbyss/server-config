@@ -17,5 +17,7 @@ set.recipes:
       |S|
       |S|
 resourcepack:
-  textures: mineinabyss:item/tools/charcoal_sand_shovel
+  textures:
+    layers:
+    - mineinabyss:item/tools/charcoal_sand_shovel
   parentModel: item/handheld

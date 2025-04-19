@@ -9,4 +9,6 @@ set.item:
   - <#649378><i>The shell is hard as amethyst
   - <#649378><i>to keep out predators.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/hisoishi_shell
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/hisoishi_shell

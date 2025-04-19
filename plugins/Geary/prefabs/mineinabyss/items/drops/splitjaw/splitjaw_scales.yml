@@ -9,4 +9,6 @@ set.item:
   - <reset><light_purple><i>Can be used to
   - <reset><light_purple><i>make certain blocks.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/splitjaw_scales
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/splitjaw_scales

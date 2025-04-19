@@ -43,4 +43,6 @@ passive:
   - mythicSkills:
     - bootcharge
 resourcepack:
-  textures: mineinabyss:item/relics/hammerbeak_totem
+  textures:
+    layers:
+    - mineinabyss:item/relics/hammerbeak_totem

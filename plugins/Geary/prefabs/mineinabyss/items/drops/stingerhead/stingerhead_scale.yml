@@ -11,4 +11,6 @@ set.item:
   - <#EB1742><i>Perhaps I can upgrade my
   - <#EB1742><i>armour with this?
 resourcepack:
-  textures: mineinabyss:item/creature_drops/stingerhead_scale
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/stingerhead_scale

@@ -8,4 +8,6 @@ set.item:
   - ':layer_2::layer_4::layer_5:'
   - <#167D2A><i>The beak of a Stinger sharp enough to pierce flesh.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/stinger_horn
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/stinger_horn

@@ -10,7 +10,9 @@ set.item:
   - <gold>A relic able to call a town to action.
   - <#D2D489><i>On use it sounds an emergency meeting.
 resourcepack:
-  textures: mineinabyss:item/event/townsman_meet
+  textures:
+    layers:
+    - mineinabyss:item/event/townsman_meet
 observe:
   itemRightClick:
   - become: parent

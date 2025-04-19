@@ -13,4 +13,6 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:dosetori_meat_cooked
 resourcepack:
-  textures: mineinabyss:item/food/creatures/dosetori_meat_raw
+  textures:
+    layers:
+    - mineinabyss:item/food/creatures/dosetori_meat_raw

@@ -10,4 +10,6 @@ set.item:
   - <#ee5bb8><i>hearing voices...
 disableItemInteractions: {}
 resourcepack:
-  textures: mineinabyss:item/creature_drops/edusan_whisker
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/edusan_whisker

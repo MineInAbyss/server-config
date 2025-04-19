@@ -8,4 +8,6 @@ set.item:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>It is fairly big, but suprisingly blunt...
 resourcepack:
-  textures: mineinabyss:item/creature_drops/uibuta_tooth
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/uibuta_tooth

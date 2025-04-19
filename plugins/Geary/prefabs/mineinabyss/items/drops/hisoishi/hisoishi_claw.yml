@@ -9,4 +9,6 @@ set.item:
   - <#649378><i>This sharp claw can dig through stone
   - <#649378><i>with ease.
 resourcepack:
-  textures: mineinabyss:item/creature_drops/hisoishi_claw
+  textures:
+    layers:
+    - mineinabyss:item/creature_drops/hisoishi_claw
