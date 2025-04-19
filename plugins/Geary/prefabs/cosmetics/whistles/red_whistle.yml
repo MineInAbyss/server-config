@@ -1,10 +1,11 @@
 set.item:
   itemName: <#DB4040>Red Whistle
   type: potion
-  color: '#FFFFFF'
   customModelData:
     floats:
     - 201
+  dyedColor:
+    color: '#FFFFFF'
 disableItemInteractions: {}
 observe:
   itemRightClick:

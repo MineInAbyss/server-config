@@ -1,10 +1,11 @@
 set.item:
   itemName: <#175ABF>Blue Whistle
   type: POTION
-  color: '#FFFFFF'
   customModelData:
     floats:
     - 202
+  dyedColor:
+    color: '#FFFFFF'
 disableItemInteractions: {}
 observe:
   itemRightClick:

@@ -1,11 +1,12 @@
 set.item:
   itemName: <#FF9D26>Backpack
   type: POTION
-  color: 220, 192, 105
   customModelData:
     floats:
     - 100
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
+  dyedColor:
+    color: 220, 192, 105
 disableItemInteractions: {}
 backpack: {}

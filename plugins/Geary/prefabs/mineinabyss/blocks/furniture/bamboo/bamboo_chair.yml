@@ -7,9 +7,10 @@ set.item:
   customModelData:
     floats:
     - 2
-  color: 255, 255, 255
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
+  dyedColor:
+    color: 255, 255, 255
 blocky:furniture:
   rotationType: STRICT
   interactionHitbox:
