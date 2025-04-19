@@ -1,9 +1,7 @@
 set.item:
   itemName: Stone Sickle
   type: minecraft:stone_hoe
-  customModelData:
-    floats:
-    - 1
+  itemModel: "mineinabyss:stone_sickle"
   maxDamage: 131
   tool:
     rules:

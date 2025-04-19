@@ -1,9 +1,7 @@
 set.item:
   itemName: <#E7EBE9>Undying Wisp
   type: PAPER
-  customModelData:
-    floats:
-    - 143
+  itemModel: mineinabyss:bone_staff
   lore:
   - ':layer_5: Grade III Relic'
   - <gold>A staff made out of the remains of delvers

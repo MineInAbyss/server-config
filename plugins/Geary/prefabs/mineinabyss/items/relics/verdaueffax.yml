@@ -1,9 +1,7 @@
 set.item:
   itemName: <#88D481>Verdau Effax
   type: PAPER
-  customModelData:
-    floats:
-    - 118
+  itemModel: mineinabyss:vverdaueffax
   lore:
   - ':layer_1::layer_2: Grade III Relic'
   - <gold>An organic object that symbiotically attaches like a parasite.

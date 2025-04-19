@@ -1,9 +1,7 @@
 set.item:
   itemName: Charcoal Sand Axe
   type: DIAMOND_AXE
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:charcoal_sand_axe
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true

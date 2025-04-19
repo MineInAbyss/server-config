@@ -1,9 +1,7 @@
 set.item:
   itemName: Charcoal Sand Sickle
   type: minecraft:wooden_hoe
-  customModelData:
-    floats:
-    - 7
+  itemModel: mineinabyss:charcoal_sand_sickle
   maxDamage: 3000
   tool:
     rules:

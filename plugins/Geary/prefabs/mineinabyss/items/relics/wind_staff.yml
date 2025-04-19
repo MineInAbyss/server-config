@@ -1,9 +1,7 @@
 set.item:
   itemName: <#FCF5E5>Gust-Shot
   type: PAPER
-  customModelData:
-    floats:
-    - 140
+  itemModel: mineinabyss:wind_staff
   lore:
   - ':layer_3: Grade II Relic'
   - <gold>A staff formed from a core causing thin metallic

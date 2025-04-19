@@ -1,9 +1,7 @@
 set.item:
   itemName: <#976d5c>Propulsion Charm
   type: minecraft:paper
-  customModelData:
-    floats:
-    - 150
+  itemModel: mineinabyss:relic_boots
   lore:
   - ':layer_3: Grade II Relic'
   - <gold>Boots said to imitate the innate

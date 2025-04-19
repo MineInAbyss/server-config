@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:paper
-  customModelData:
-    floats:
-    - 138
+  itemModel: mineinabyss:vine_charm
   itemName: <#51C947><b>Ivy Call
   lore:
   - ':layer_1::layer_2: Grade II Relic'

@@ -1,9 +1,7 @@
 set.item:
   itemName: <#808504>Chance Strike
   type: PAPER
-  customModelData:
-    floats:
-    - 144
+  itemModel: mineinabyss:critcharm
   lore:
   - ':layer_3: Grade IV Relic'
   - <gold>A relic which was formed by the tenacity of hostile creatures.

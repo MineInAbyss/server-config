@@ -1,0 +1,24 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      { "threshold": 1, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio1" } },
+      { "threshold": 2, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio2" } },
+      { "threshold": 3, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio3" } },
+      { "threshold": 4, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio4" } },
+      { "threshold": 5, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio5" } },
+      { "threshold": 6, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio6" } },
+      { "threshold": 7, "model": {"type": "model", "model": "mineinabyss:item/projectiles/vacio7" } },
+      { "threshold": 8, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs1" } },
+      { "threshold": 9, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs2" } },
+      { "threshold": 10, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs3" } },
+      { "threshold": 11, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs4" } },
+      { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:item/event/amongus_cookie" } }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/clay_ball"
+    }
+  }
+}

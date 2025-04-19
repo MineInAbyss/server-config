@@ -1,9 +1,7 @@
 set.item:
   itemName: Charcoal Sand Dagger
   type: NETHERITE_SWORD
-  customModelData:
-    floats:
-    - 6
+  itemModel: mineinabyss:charcoal_sand_dagger
   durability: 3000
 resourcepack:
   textures:

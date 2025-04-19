@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#BF2CB1>Panacea
-  customModelData:
-    floats:
-    - 142
+  itemModel: mineinabyss:healing_staff
   lore:
   - ':layer_4: Grade III Relic'
   - <gold>An artifact of peculiar smell adjutating cells

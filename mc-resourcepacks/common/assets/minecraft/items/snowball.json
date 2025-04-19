@@ -1,0 +1,13 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      { "threshold": 1, "model": {"type": "model", "model": "mineinabyss:item/other/coal_pebble" } }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/snowball"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "model": {
+    "type": "condition",
+    "property": "minecraft:using_item",
+    "on_false": {
+      "type": "range_dispatch",
+      "property": "damage",
+      "entries": [
+        {
+          "threshold": 0.2,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage1",
+            "model": {
+              "type": "shield"
+            }
+          }
+        },
+        {
+          "threshold": 0.5,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage2",
+            "model": {
+              "type": "shield"
+            }
+          }
+        },
+        {
+          "threshold": 0.8,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage3",
+            "model": {
+              "type": "shield"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:special",
+        "base": "mineinabyss:item/relics/spined_targe/spined_targe",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      }
+    },
+    "on_true": {
+      "type": "range_dispatch",
+      "property": "damage",
+      "entries": [
+        {
+          "threshold": 0.2,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage1",
+            "model": {
+              "type": "shield"
+            }
+          }
+        },
+        {
+          "threshold": 0.5,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage2",
+            "model": {
+              "type": "shield"
+            }
+          }
+        },
+        {
+          "threshold": 0.8,
+          "model": {
+            "type": "special",
+            "base": "mineinabyss:item/relics/spined_targe/spined_targe_damage3",
+            "model": {
+              "type": "shield"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:special",
+        "base": "mineinabyss:item/relics/spined_targe/spined_targe_blocking",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      }
+    },
+    "fallback": {
+      "type": "minecraft:special",
+      "base": "mineinabyss:item/relics/spined_targe/spined_targe",
+      "model": {
+        "type": "minecraft:shield"
+      }
+    }
+  }
+}

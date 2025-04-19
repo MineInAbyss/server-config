@@ -1,9 +1,7 @@
 set.item:
   itemName: <gold>Enhanced Ghost Seek
-  type: CARVED_PUMPKIN
-  customModelData:
-    floats:
-    - 108
+  type: PAPER
+  itemModel: mineinabyss:ghost_seek_on
   lore:
   - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
   - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#CCDADB><b>Verglas Breath
-  customModelData:
-    floats:
-    - 147
+  itemModel: mineinabyss:frost_staff
   lore:
   - ':layer_5: Grade I Relic'
   - <#A0ACAD>A long frail pole carved from one of the

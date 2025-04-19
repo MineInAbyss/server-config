@@ -98,19 +98,16 @@ menu:
       packs:
         tools_2d:
           button:
-            type: minecraft:diamond_sword
-            customModelData:
-              floats: [1]
+            type: minecraft:paper
+            itemModel: "packy:2d_sword"
             itemName: <gold>2D Tools
         tools_3d:
           button:
-            type: minecraft:golden_sword
-            customModelData:
-              floats: [2]
+            type: minecraft:paper
+            itemModel: "packy:3d_sword"
             itemName: <gold>3D Tools
         vanilla_tools:
           button:
-            type: minecraft:iron_sword
-            customModelData:
-              floats: [3]
+            type: minecraft:paper
+            itemModel: "packy:vanilla_sword"
             itemName: <gold>Vanilla Tools

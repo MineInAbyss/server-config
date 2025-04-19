@@ -1,9 +1,7 @@
 set.item:
   itemName: Charcoal Sand Hoe
   type: DIAMOND_HOE
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:charcoal_sand_hoe
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true

@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:netherite_sword
-  customModelData:
-    floats:
-    - 3
+  itemModel: mineinabyss:cyan_slash
   itemName: <#24A8D4><b>Selene Xiphos
   lore:
   - ':layer_3: Grade I Relic'

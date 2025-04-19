@@ -1,9 +1,7 @@
 set.item:
   itemName: Charcoal Sand Pickaxe
   type: DIAMOND_PICKAXE
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:charcoal_sand_pickaxe
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true

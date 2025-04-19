@@ -1,9 +1,7 @@
 set.item:
   itemName: Netherite Sickle
   type: minecraft:netherite_hoe
-  customModelData:
-    floats:
-    - 1
+  itemModel: "mineinabyss:netherite_sickle"
   maxDamage: 2031
   tool:
     rules:

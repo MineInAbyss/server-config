@@ -1,0 +1,13 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      { "threshold": 1, "model": {"type": "model", "model": "mineinabyss:item/other/custom_enchantment_book" } }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/enchanted_book"
+    }
+  }
+}

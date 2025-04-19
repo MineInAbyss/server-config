@@ -1,0 +1,45 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      { "threshold": 100, "model": {"type": "model", "model": "cosmetics:backpacks/default_backpack" } },
+      { "threshold": 101, "model": {"type": "model", "model": "cosmetics:backpacks/satchel" } },
+      { "threshold": 102, "model": {"type": "model", "model": "cosmetics:backpacks/neritantan_backpack" } },
+      { "threshold": 110, "model": {"type": "model", "model": "cosmetics:backpacks/default_backpack_fp" } },
+      { "threshold": 111, "model": {"type": "model", "model": "cosmetics:backpacks/satchel_fp" } },
+      { "threshold": 112, "model": {"type": "model", "model": "cosmetics:backpacks/neritantan_backpack_fp" } },
+
+      { "threshold": 200, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/bell" } },
+      { "threshold": 201, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/red_whistle" } },
+      { "threshold": 202, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/blue_whistle" } },
+      { "threshold": 203, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/moon_whistle" } },
+      { "threshold": 204, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/black_whistle" } },
+      { "threshold": 205, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/white_whistle" } },
+      { "threshold": 210, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/bell_fp" } },
+      { "threshold": 211, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/red_whistle_fp" } },
+      { "threshold": 212, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/blue_whistle_fp" } },
+      { "threshold": 213, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/moon_whistle_fp" } },
+      { "threshold": 214, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/black_whistle_fp" } },
+      { "threshold": 215, "model": {"type": "model", "model": "mineinabyss:item/relics/whistle/white_whistle_fp" } },
+
+      { "threshold": 301, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/bondrewd_hat" } },
+      { "threshold": 302, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/faputa_hat" } },
+      { "threshold": 303, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/habo_hat" } },
+      { "threshold": 304, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/lyza_hat" } },
+      { "threshold": 305, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/marulk_hat" } },
+      { "threshold": 306, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/nanachi_hat" } },
+      { "threshold": 307, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/ozen_hat" } },
+      { "threshold": 308, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/prushka_hat" } },
+      { "threshold": 309, "model": {"type": "model", "model": "mineinabyss:item/cosmetics/reg_hat" } },
+      { "threshold": 311, "model": {"type": "model", "model": "cosmetics:hats/menacing" } },
+      { "threshold": 313, "model": {"type": "model", "model": "cosmetics:hats/goggles" } },
+      { "threshold": 314, "model": {"type": "model", "model": "cosmetics:hats/double_flower" } },
+      { "threshold": 315, "model": {"type": "model", "model": "cosmetics:hats/side_flower" } }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/paper"
+    }
+  }
+}

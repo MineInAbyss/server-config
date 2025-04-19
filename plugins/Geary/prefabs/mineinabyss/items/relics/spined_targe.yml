@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:shield
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:spined_targe
   itemName: <#0047AB><b>Spined Targe
   lore:
   - <#3d59ab>A relic born from decades of Orthian research. A shield

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Depth Meter
-  customModelData:
-    floats:
-    - 126
+  itemModel: mineinabyss:depth_meter
   lore:
   - <aqua>Used by delvers to keep
   - <aqua>track of their depth.
