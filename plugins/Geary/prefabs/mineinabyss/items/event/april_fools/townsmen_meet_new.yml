@@ -1,9 +1,7 @@
 set.item:
   itemName: <#88D481>Townsmen Meet
   type: PAPER
-  customModelData:
-    floats:
-    - 160
+  itemModel: mineinabyss:townsman_meet
   lore:
   - ':troll: Grade IV Relic'
   - <gold>Found during April Fools 2025.

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Music Disc
-  customModelData:
-    floats:
-    - 2103
+  itemModel: mineinabyss:uncertain_surroundings
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable:
@@ -12,4 +10,4 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/other/music_discs/music_disc_blue
+    - mineinabyss:item/other/music_discs/uncertain_surroundings

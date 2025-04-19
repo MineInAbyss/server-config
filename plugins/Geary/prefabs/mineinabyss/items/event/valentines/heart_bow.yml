@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:bow
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:heart_bow
   itemName: <#FFC0CB><b>Heart Bow
   lore:
   - <#C6CC8A>In the Abyss, our hearts entwine,

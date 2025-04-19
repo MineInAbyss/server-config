@@ -3,9 +3,7 @@ set.item:
   itemName: Tesuchi Scale on a Stick
   lore:
   - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:tesuchi_scale_on_a_stick
 disableItemInteractions: {}
 set.recipes:
   discoverRecipes: true

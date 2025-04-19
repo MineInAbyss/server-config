@@ -1,9 +1,7 @@
 set.item:
   itemName: Blank Template Rune
   type: PAPER
-  customModelData:
-    floats:
-    - 128
+  itemModel: mineinabyss:blank_template_rune
 set.recipes:
   result:
     prefab: mineinabyss:blank_template_rune

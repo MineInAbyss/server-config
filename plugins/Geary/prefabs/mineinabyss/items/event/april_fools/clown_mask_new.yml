@@ -1,9 +1,7 @@
 set.item:
   itemName: <#C21807>Clown Mask
   type: PAPER
-  customModelData:
-    floats:
-    - 163
+  itemModel: mineinabyss:clown_mask
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.

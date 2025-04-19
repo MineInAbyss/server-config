@@ -1,9 +1,7 @@
 set.item:
   itemName: <dark_aqua>Charcoal Sand Ingot
-  type: IRON_INGOT
-  customModelData:
-    floats:
-    - 1
+  type: PAPER
+  itemModel: mineinabyss:charcoal_sand_ingot
 set.recipes:
   discoverRecipes: true
   group: charcoal_sand_ingot

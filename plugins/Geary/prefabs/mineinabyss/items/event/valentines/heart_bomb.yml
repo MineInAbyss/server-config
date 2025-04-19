@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Love Bomb
-  customModelData:
-    floats:
-    - 133
+  itemModel: mineinabyss:heart_bomb
 observe:
   itemRightClick:
   - become: parent

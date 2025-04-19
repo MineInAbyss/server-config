@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Raw Cut Meat
-  customModelData:
-    floats:
-    - 130
+  itemModel: mineinabyss:cut_meat_raw
   food:
     saturation: 1.8
     nutrition: 3

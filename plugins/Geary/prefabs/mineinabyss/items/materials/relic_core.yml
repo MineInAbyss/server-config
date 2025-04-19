@@ -1,9 +1,7 @@
 set.item:
   itemName: Relic Core
   type: PAPER
-  customModelData:
-    floats:
-    - 157
+  itemModel: mineinabyss:relic_core
 set.recipes:
   discoverRecipes: true
   result:
@@ -27,4 +25,4 @@ set.recipes:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/materials/charged_fluid
+    - mineinabyss:item/materials/core_fluid_charged

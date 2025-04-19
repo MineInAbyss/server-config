@@ -1,9 +1,7 @@
 set.item:
   itemName: <#C21807>Tama Chime
   type: PAPER
-  customModelData:
-    floats:
-    - 164
+  itemModel: mineinabyss:tama_chime
   lore:
   - ':troll: Grade IV Relic'
   - <gold>Found during April Fools 2025.

@@ -1,9 +1,7 @@
 set.item:
   itemName: <#C21807>Suspicious Dagger
   type: NETHERITE_SWORD
-  customModelData:
-    floats:
-    - 69
+  itemModel: mineinabyss:amongus_knife
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.

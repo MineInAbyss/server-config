@@ -1,10 +1,8 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Relic Shard
-  customModelData:
-    floats:
-    - 134
+  itemModel: mineinabyss:relic_shard
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/event/crystal_shard
+    - mineinabyss:item/event/relic_shard

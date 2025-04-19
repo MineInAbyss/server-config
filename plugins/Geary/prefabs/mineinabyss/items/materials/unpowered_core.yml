@@ -1,9 +1,7 @@
 set.item:
   itemName: Unpowered Core
   type: PAPER
-  customModelData:
-    floats:
-    - 156
+  itemModel: mineinabyss:unpowered_core
 set.recipes:
   discoverRecipes: true
   result:
@@ -25,4 +23,4 @@ set.recipes:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/materials/fluid_core
+    - mineinabyss:item/materials/core_fluid

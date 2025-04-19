@@ -1,9 +1,7 @@
 set.item:
   itemName: <#ffbb1c><b>Orth Coin
   type: EMERALD
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:orth_coin
 mineinabyss:orthcoin: {}
 resourcepack:
   model: mineinabyss:item/other/orth_coin

@@ -4,9 +4,7 @@ set.item:
   - <yellow>Useful in order to steer an <#2597D9>Ashimite<yellow>.
   - <yellow>That is if you can manage to sneak up on one
   type: CARROT_ON_A_STICK
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:demonfish_on_a_stick
 disableItemInteractions: {}
 set.recipes:
   discoverRecipes: true

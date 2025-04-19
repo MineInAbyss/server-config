@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#7D9472>Spread Sphere
-  customModelData:
-    floats:
-    - 151
+  itemModel: mineinabyss:l2_sunsphere
   lore:
   - <gold>It is an egg-shaped relic with
   - <gold>grey patterns on its surface.

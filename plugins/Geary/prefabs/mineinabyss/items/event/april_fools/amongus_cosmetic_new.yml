@@ -1,9 +1,7 @@
 set.item:
   itemName: <#C21807>Among Us
   type: PAPER
-  customModelData:
-    floats:
-    - 161
+  itemModel: mineinabyss:amongus_cosmetic
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.

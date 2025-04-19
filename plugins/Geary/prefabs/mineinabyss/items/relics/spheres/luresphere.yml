@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#28D42B>Magnet Sphere
-  customModelData:
-    floats:
-    - 152
+  itemModel: mineinabyss:l3_sunsphere
   lore:
   - <gold>It is an egg-shaped relic with
   - <gold>weird green patterns on its surface.
