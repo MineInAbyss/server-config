@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Cooked Cut Meat
-    customModelData: 131
-    food:
-      saturation: 12.8
-      nutrition: 8
+  type: minecraft:paper
+  itemName: Cooked Cut Meat
+  customModelData: 131
+  food:
+    saturation: 12.8
+    nutrition: 8
 resourcepack:
   textures: mineinabyss:item/food/standard_food/cut_meat_cooked

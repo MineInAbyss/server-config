@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:brown_wool
-    itemName: <#BDA55D>Man-toyer Fur
-    customModelData: 1
-    lore:
-      - ":layer_1::layer_4:"
-      - <#A68348>Thickly furred, and very sturdy...
+  type: minecraft:brown_wool
+  itemName: <#BDA55D>Man-toyer Fur
+  customModelData: 1
+  lore:
+  - ':layer_1::layer_4:'
+  - <#A68348>Thickly furred, and very sturdy...
 resourcepack:
   textures: mineinabyss:item/creature_drops/mantoyer_fur

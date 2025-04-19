@@ -1,23 +1,20 @@
 set.item:
-  item:
-    itemName: <#88D481>Townsmen Meet
-    type: PAPER
-    customModelData: 160
-    lore:
-      - ":troll: Grade IV Relic"
-      - <gold>Found during April Fools 2025.
-      - <gold>A relic able to call a town to action.
-      - <#D2D489><i>On use it sounds an emergency meeting.
-
+  itemName: <#88D481>Townsmen Meet
+  type: PAPER
+  customModelData: 160
+  lore:
+  - ':troll: Grade IV Relic'
+  - <gold>Found during April Fools 2025.
+  - <gold>A relic able to call a town to action.
+  - <#D2D489><i>On use it sounds an emergency meeting.
 resourcepack:
   textures: mineinabyss:item/event/townsman_meet
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        length: 10s
-        id: townsmanmeet
-        display: <#617B94>Meeting
-    - mythicSkills:
-        - "townsman_meet_sound"
-
+  - become: parent
+  - cooldown:
+      length: 10s
+      id: townsmanmeet
+      display: <#617B94>Meeting
+  - mythicSkills:
+    - townsman_meet_sound

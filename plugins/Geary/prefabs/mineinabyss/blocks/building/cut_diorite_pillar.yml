@@ -1,9 +1,9 @@
-inherit: [mineinabyss:stone]
+inherit:
+- mineinabyss:stone
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Cut Diorite Pillar
-    customModelData: 2034
+  type: minecraft:paper
+  itemName: <white>Cut Diorite Pillar
+  customModelData: 2034
 set.block:
   blockType: NOTEBLOCK
   blockId: 29
@@ -13,7 +13,6 @@ blocky:directional:
   yBlock: mineinabyss:cut_diorite_pillar
   xBlock: mineinabyss:cut_diorite_pillar_x
   zBlock: mineinabyss:cut_diorite_pillar_z
-
 blocky:drops:
   drops:
-    - item: mineinabyss:cut_diorite_pillar
+  - item: mineinabyss:cut_diorite_pillar

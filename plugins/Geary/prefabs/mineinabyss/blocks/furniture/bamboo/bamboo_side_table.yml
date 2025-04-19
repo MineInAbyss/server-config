@@ -1,17 +1,17 @@
-inherit: [mineinabyss:wood, mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:wood
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Bamboo Side Table
-    customModelData: 1007
+  type: minecraft:paper
+  itemName: <white>Bamboo Side Table
+  customModelData: 1007
 blocky:furniture:
   collisionHitbox:
-    - x: 0
+  - x: 0
 blocky:placableOn:
   floor: true
   ceiling: false
   wall: false
 blocky:drops:
   drops:
-    - item: mineinabyss:bamboo_side_table
-
+  - item: mineinabyss:bamboo_side_table

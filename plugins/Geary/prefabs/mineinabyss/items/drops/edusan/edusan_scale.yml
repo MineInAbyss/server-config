@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:clay_ball
-    itemName: "<#800080>Edusan Scale"
-    customModelData: 12
-    lore:
-      - ":layer_5:"
-      - <#ee5bb8><i>Exudes a beautifully ominous aura.
+  type: minecraft:clay_ball
+  itemName: <#800080>Edusan Scale
+  customModelData: 12
+  lore:
+  - ':layer_5:'
+  - <#ee5bb8><i>Exudes a beautifully ominous aura.
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/creature_drops/edusan_scale

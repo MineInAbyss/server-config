@@ -1,10 +1,9 @@
 inherit:
-  - mineinabyss:wood
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Carved Warped Stem
-    customModelData: 2028
+  type: minecraft:paper
+  itemName: <white>Carved Warped Stem
+  customModelData: 2028
 set.block:
   blockType: NOTEBLOCK
   blockId: 26
@@ -16,4 +15,4 @@ blocky:directional:
   zBlock: mineinabyss:carved_warped_stem_z
 blocky:drops:
   drops:
-    - item: mineinabyss:carved_warped_stem
+  - item: mineinabyss:carved_warped_stem

@@ -1,7 +1,6 @@
 set.item:
-  item:
-    type: minecraft:bone
-    itemName: "<#2597D9>Ashimite Meat Bone"
-    customModelData: 0
-    lore:
-      - ":layer_5:"
+  type: minecraft:bone
+  itemName: <#2597D9>Ashimite Meat Bone
+  customModelData: 0
+  lore:
+  - ':layer_5:'

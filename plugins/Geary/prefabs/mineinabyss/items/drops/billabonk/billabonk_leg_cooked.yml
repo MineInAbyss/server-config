@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: "<#b754c2>Cooked Billabonk Leg"
-    customModelData: 405
-    lore:
-      - ":layer_2:"
-      - <#0357AB><i>Moves when you apply electricity.
-    food:
-      saturation: 6
-      nutrition: 5
+  type: minecraft:paper
+  itemName: <#b754c2>Cooked Billabonk Leg
+  customModelData: 405
+  lore:
+  - ':layer_2:'
+  - <#0357AB><i>Moves when you apply electricity.
+  food:
+    saturation: 6
+    nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:billabonk_leg_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:billabonk_leg_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:billabonk_leg_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:billabonk_leg_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/billabonk_leg_cooked

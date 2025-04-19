@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:feather
-    itemName: "<#3DDFFF>Cyatoria Feather"
-    customModelData: 2
-    lore:
-      - ":layer_1::layer_2:"
-      - <#54FFA4><i>It resembles the feathers
-      - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
+  type: minecraft:feather
+  itemName: <#3DDFFF>Cyatoria Feather
+  customModelData: 2
+  lore:
+  - ':layer_1::layer_2:'
+  - <#54FFA4><i>It resembles the feathers
+  - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
 resourcepack:
   textures: mineinabyss:item/creature_drops/cyatoria_feather

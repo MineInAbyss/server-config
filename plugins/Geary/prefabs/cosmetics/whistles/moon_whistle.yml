@@ -1,15 +1,14 @@
 set.item:
-  item:
-    itemName: <#9E1E84>Moon Whistle
-    type: POTION
-    color: "#FFFFFF"
-    customModelData: 203
+  itemName: <#9E1E84>Moon Whistle
+  type: POTION
+  color: '#FFFFFF'
+  customModelData: 203
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        length: 3s
-        id: sound_moon_whistle
-    - playSound:
-        sound: mineinabyss:whistle.moon_whistle
+  - become: parent
+  - cooldown:
+      length: 3s
+      id: sound_moon_whistle
+  - playSound:
+      sound: mineinabyss:whistle.moon_whistle

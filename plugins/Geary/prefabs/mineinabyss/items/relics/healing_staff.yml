@@ -1,29 +1,27 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#BF2CB1>Panacea
-    customModelData: 142
-    lore:
-      - ":layer_4: Grade III Relic"
-      - <gold>An artifact of peculiar smell adjutating cells
-      - <gold>to improve wound healing.
-      - <#D2D489><i>On use it grants life to organisms around.
-#disableItemInteractions: { }
+  type: minecraft:paper
+  itemName: <#BF2CB1>Panacea
+  customModelData: 142
+  lore:
+  - ':layer_4: Grade III Relic'
+  - <gold>An artifact of peculiar smell adjutating cells
+  - <gold>to improve wound healing.
+  - <#D2D489><i>On use it grants life to organisms around.
 observe:
   itemRightClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - EnchantingLevel{l=>2} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Experience
-    - cooldown:
-        id: healing_staff
-        length: 35s
-        display: <#BF2CB1>Panacea
-    - mythicSkills:
-        - "healing_staff"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>2} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: healing_staff
+      length: 35s
+      display: <#BF2CB1>Panacea
+  - mythicSkills:
+    - healing_staff
 resourcepack:
   textures: mineinabyss:item/relics/healing_staff
   parentModel: item/handheld

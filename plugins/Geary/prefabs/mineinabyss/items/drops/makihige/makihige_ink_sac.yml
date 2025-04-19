@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:ink_sac
-    itemName: <#FF771C>Makihige Ink Sac
-    customModelData: 2
-    lore:
-      - ":layer_4::layer_5:"
-      - <#5221A6><i>With this you might be able to
-      - <#5221A6><i>do something. Probably not though
+  type: minecraft:ink_sac
+  itemName: <#FF771C>Makihige Ink Sac
+  customModelData: 2
+  lore:
+  - ':layer_4::layer_5:'
+  - <#5221A6><i>With this you might be able to
+  - <#5221A6><i>do something. Probably not though
 resourcepack:
   textures: mineinabyss:item/creature_drops/makihige_ink_sac

@@ -1,20 +1,18 @@
 inherit:
-  - mineinabyss:snow
+- mineinabyss:snow
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Ice Pillar
-    customModelData: 2044
+  type: minecraft:paper
+  itemName: Ice Pillar
+  customModelData: 2044
 set.block:
   blockType: NOTEBLOCK
   blockId: 37
-
 blocky:pack:
-  model: "mineinabyss:block/snow/ice_pillar"
+  model: mineinabyss:block/snow/ice_pillar
 blocky:directional:
   yBlock: mineinabyss:ice_pillar_y
   xBlock: mineinabyss:ice_pillar_x
   zBlock: mineinabyss:ice_pillar_z
 blocky:drops:
   drops:
-    - item: mineinabyss:ice_pillar
+  - item: mineinabyss:ice_pillar

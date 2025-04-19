@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:nether_wart
-    itemName: <#C74040>Orb Piercer Face Fragments
-    customModelData: 1
-    lore:
-      - ":layer_4:"
-      - <#D9D9D9><i>I wonder if I collect enough, will I
-      - <#D9D9D9><i>be able to see it as well?
-      - <#D9D9D9><i>Probably just wishful thinking...
+  type: minecraft:nether_wart
+  itemName: <#C74040>Orb Piercer Face Fragments
+  customModelData: 1
+  lore:
+  - ':layer_4:'
+  - <#D9D9D9><i>I wonder if I collect enough, will I
+  - <#D9D9D9><i>be able to see it as well?
+  - <#D9D9D9><i>Probably just wishful thinking...
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/creature_drops/orb_piercer_face_fragments

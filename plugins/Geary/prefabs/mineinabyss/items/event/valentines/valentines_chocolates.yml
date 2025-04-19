@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#E83A3A><b>Valentine Chocolate
-    customModelData: 131
-    lore:
-      - <#DB8888>Life is full of joy,
-      - <#DB8888>In the Abyss, there lies hope
-      - <#DB8888>Love prevails!
-    food:
-      saturation: 10
-      nutrition: 6
+  type: minecraft:paper
+  itemName: <#E83A3A><b>Valentine Chocolate
+  customModelData: 131
+  lore:
+  - <#DB8888>Life is full of joy,
+  - <#DB8888>In the Abyss, there lies hope
+  - <#DB8888>Love prevails!
+  food:
+    saturation: 10
+    nutrition: 6
 resourcepack:
   model: mineinabyss:item/event/valentines_chocolates

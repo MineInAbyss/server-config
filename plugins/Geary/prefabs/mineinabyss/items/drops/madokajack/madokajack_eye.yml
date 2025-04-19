@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:spider_eye
-    itemName: <#1C439E>Madokajack Eye
-    customModelData: 2
-    lore:
-      - ":layer_3:"
-      - <yellow>It looks so derpy without its body.
+  type: minecraft:spider_eye
+  itemName: <#1C439E>Madokajack Eye
+  customModelData: 2
+  lore:
+  - ':layer_3:'
+  - <yellow>It looks so derpy without its body.
 replaceBurnedDrop:
   prefab: mineinabyss:madokajack_eye_roasted
 resourcepack:

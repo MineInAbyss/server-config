@@ -1,28 +1,24 @@
 set.item:
-  item:
-    itemName: <#03AC13>Fools Cradle
-    type: PAPER
-    customModelData: 158
-    lore:
-      - ":troll: Grade IV Relic"
-      - <gold>Found during April Fools 2025.
-      - <gold>A relic capable of summoning random effects.
-      - <#D2D489><i>Works only during April Fools. 
-
+  itemName: <#03AC13>Fools Cradle
+  type: PAPER
+  customModelData: 158
+  lore:
+  - ':troll: Grade IV Relic'
+  - <gold>Found during April Fools 2025.
+  - <gold>A relic capable of summoning random effects.
+  - <#D2D489><i>Works only during April Fools.
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        id: foolscradle
-        length: 10s
-        display: <#03AC13>Fools Wish
-    - mythicSkills:
-        - "foolscradlethrow"
-    - consumeItem:
-        type: mineinabyss:fools_cradle
-      when:
-        - chance: 1
+  - become: parent
+  - cooldown:
+      id: foolscradle
+      length: 10s
+      display: <#03AC13>Fools Wish
+  - mythicSkills:
+    - foolscradlethrow
+  - consumeItem:
+      type: mineinabyss:fools_cradle
+    when:
+    - chance: 1
 resourcepack:
   textures: mineinabyss:item/event/fool_cradle
-
-

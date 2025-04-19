@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:turtle_scute
-    itemName: <#3C3B4A>Titanjaw Scale
-    customModelData: 1
-    lore:
-      - ":layer_5:"
-      - <#0C7787><i>Might be useful to craft gear
-      - <#0C7787><i>with if I collect enough.
+  type: minecraft:turtle_scute
+  itemName: <#3C3B4A>Titanjaw Scale
+  customModelData: 1
+  lore:
+  - ':layer_5:'
+  - <#0C7787><i>Might be useful to craft gear
+  - <#0C7787><i>with if I collect enough.
 resourcepack:
   textures: mineinabyss:item/creature_drops/titanjaw_scale

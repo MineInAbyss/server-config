@@ -1,20 +1,3 @@
 set.item:
-  item:
-    type: minecraft:paper
-    customModelData: 103
-#events:
-#  leftClick:
-#    - type: cooldown
-#      name: Explosion
-#      length: 2s
-#      run:
-#        - !<on.parent>
-#          meteor:
-#            events:
-#              projectileLand:
-#                explode:
-#                  power: 2
-#                  breakBlocks: true
-#                  at: !<entity.location>
-#            at: !<player.target_block>
-#              maxDist: 60
+  type: minecraft:paper
+  customModelData: 103

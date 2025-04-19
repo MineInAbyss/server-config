@@ -1,6 +1,5 @@
 set.item:
-  item:
-    type: PAPER
-    customModelData: 4004
+  type: PAPER
+  customModelData: 4004
 resourcepack:
   model: event:item/camera_gold

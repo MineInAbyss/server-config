@@ -1,22 +1,19 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#FFC0CB><b>Love Bomb
-    customModelData: 133
-    # TODO add lore
-#disableItemInteractions: { }
+  type: minecraft:paper
+  itemName: <#FFC0CB><b>Love Bomb
+  customModelData: 133
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        id: heartbomb
-        length: 2s
-        display: <dark_aqua>Heart Bomb
-    - mythicSkills:
-        - "heartthrow"
-    - consumeItem:
-        type: mineinabyss:heart_bomb
-      when:
-        - chance: 0.2
+  - become: parent
+  - cooldown:
+      id: heartbomb
+      length: 2s
+      display: <dark_aqua>Heart Bomb
+  - mythicSkills:
+    - heartthrow
+  - consumeItem:
+      type: mineinabyss:heart_bomb
+    when:
+    - chance: 0.2
 resourcepack:
   textures: mineinabyss:item/event/love_potion

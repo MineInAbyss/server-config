@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#0B6623>Cooked Hagamizukin
-    customModelData: 422
-    lore:
-      - ":layer_4::layer_5:"
-      - <#A759FF>The meat still feels angry with me,
-      - <#A759FF>but smells good now.
-    food:
-      saturation: 9.6
-      nutrition: 6
+  type: minecraft:paper
+  itemName: <#0B6623>Cooked Hagamizukin
+  customModelData: 422
+  lore:
+  - ':layer_4::layer_5:'
+  - <#A759FF>The meat still feels angry with me,
+  - <#A759FF>but smells good now.
+  food:
+    saturation: 9.6
+    nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:hagamizukin_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:hagamizukin_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:hagamizukin_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:hagamizukin_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/hagamizukin_cooked

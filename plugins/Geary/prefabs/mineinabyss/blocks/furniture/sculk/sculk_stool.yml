@@ -1,9 +1,9 @@
-inherit: [mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Sculk Stool
-    customModelData: 1028
+  type: minecraft:paper
+  itemName: <white>Sculk Stool
+  customModelData: 1028
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -11,11 +11,10 @@ blocky:sound:
   hitSound: block.amethyst_cluster.hit
   fallSound: block.amethyst_cluster.fall
 blocky:seats:
-  - y: -0.3
+- y: -0.3
 blocky:furniture:
   collisionHitbox:
-    - x: 0
+  - x: 0
 blocky:drops:
   drops:
-    - item: mineinabyss:sculk_stool
-
+  - item: mineinabyss:sculk_stool

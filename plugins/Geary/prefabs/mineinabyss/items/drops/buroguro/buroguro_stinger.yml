@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:pointed_dripstone
-    itemName: <#a3f7a2>Buroguro Stinger
-    customModelData: 1
-    lore:
-      - ":layer_3:"
-      - <#38896d><i>It's still drippin'!
+  type: minecraft:pointed_dripstone
+  itemName: <#a3f7a2>Buroguro Stinger
+  customModelData: 1
+  lore:
+  - ':layer_3:'
+  - <#38896d><i>It's still drippin'!
 resourcepack:
   textures: mineinabyss:item/creature_drops/buroguro_stinger

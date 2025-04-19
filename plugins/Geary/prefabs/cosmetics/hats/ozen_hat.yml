@@ -1,12 +1,11 @@
 set.item:
-  item:
-    itemName: <#262626>Ozen's Hat
-    lore:
-      - "<gray>:ozensmug:"
-    type: POTION
-    color: "#FFFFFF"
-    customModelData: 307
-    itemFlags:
-      - HIDE_ADDITIONAL_TOOLTIP
+  itemName: <#262626>Ozen's Hat
+  lore:
+  - '<gray>:ozensmug:'
+  type: POTION
+  color: '#FFFFFF'
+  customModelData: 307
+  itemFlags:
+  - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

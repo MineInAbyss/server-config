@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: "<#257BEB>Cooked Demonfish"
-    customModelData: 416
-    lore:
-      - ":layer_5:"
-      - <#1B5BAD>A staple food among delvers.
-    food:
-      saturation: 9.6
-      nutrition: 6
+  type: minecraft:paper
+  itemName: <#257BEB>Cooked Demonfish
+  customModelData: 416
+  lore:
+  - ':layer_5:'
+  - <#1B5BAD>A staple food among delvers.
+  food:
+    saturation: 9.6
+    nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:demonfish_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:demonfish_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:demonfish_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:demonfish_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/demonfish_cooked

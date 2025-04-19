@@ -1,9 +1,9 @@
-inherit: [mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Sculk Lamp
-    customModelData: 1026
+  type: minecraft:paper
+  itemName: <white>Sculk Lamp
+  customModelData: 1026
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -14,10 +14,9 @@ blocky:furniture:
   properties:
     displayTransform: FIXED
   collisionHitbox:
-    - x: 0
-    - y: 1
-    - y: 2
+  - x: 0
+  - y: 1
+  - y: 2
 blocky:drops:
   drops:
-    - item: mineinabyss:sculk_lamp
-
+  - item: mineinabyss:sculk_lamp

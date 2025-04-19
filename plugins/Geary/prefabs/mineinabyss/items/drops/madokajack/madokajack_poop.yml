@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:brown_dye
-    itemName: <#1C439E>Madokajack Poop
-    customModelData: 1
-    lore:
-      - ":layer_3:"
-      - <#369AFF>Did I scare it so much that
-      - <#369AFF>it pooped itself on death?
+  type: minecraft:brown_dye
+  itemName: <#1C439E>Madokajack Poop
+  customModelData: 1
+  lore:
+  - ':layer_3:'
+  - <#369AFF>Did I scare it so much that
+  - <#369AFF>it pooped itself on death?
 resourcepack:
   textures: mineinabyss:item/creature_drops/madokajack_poop

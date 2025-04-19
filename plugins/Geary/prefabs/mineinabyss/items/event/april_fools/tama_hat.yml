@@ -1,12 +1,11 @@
 set.item:
-  item:
-    itemName: <#C21807>Tama's Mane
-    type: PAPER
-    customModelData: 162
-    lore:
-      - ":troll:"
-      - <gold>Found during April Fools 2025.
-      - <gold>All hail the princess.
+  itemName: <#C21807>Tama's Mane
+  type: PAPER
+  customModelData: 162
+  lore:
+  - ':troll:'
+  - <gold>Found during April Fools 2025.
+  - <gold>All hail the princess.
 prevent.enchanting: {}
 hat: {}
 disableItemInteractions: {}

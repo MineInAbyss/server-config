@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:rotten_flesh
-    customModelData: 1
-    itemName: <#9C0F2C>Stingerhead Flesh
-    lore:
-      - ":layer_5:"
-      - <#EB1742><i>This is definetly not edible!
-      - <#EB1742><i>It reeks of burned dried vomit, much
-      - <#EB1742><i>like Nanachi's Netherworld Stew.
+  type: minecraft:rotten_flesh
+  customModelData: 1
+  itemName: <#9C0F2C>Stingerhead Flesh
+  lore:
+  - ':layer_5:'
+  - <#EB1742><i>This is definetly not edible!
+  - <#EB1742><i>It reeks of burned dried vomit, much
+  - <#EB1742><i>like Nanachi's Netherworld Stew.
 resourcepack:
   textures: mineinabyss:item/creature_drops/stingerhead_flesh

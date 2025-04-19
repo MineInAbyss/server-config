@@ -1,15 +1,14 @@
-inherit: [mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Sculk Chair
-    customModelData: 1023
+  type: minecraft:paper
+  itemName: <white>Sculk Chair
+  customModelData: 1023
 blocky:furniture:
   collisionHitbox:
-    - x: 0
+  - x: 0
 blocky:seats:
-  - y: 0.0
+- y: 0.0
 blocky:drops:
   drops:
-    - item: mineinabyss:sculk_chair
-
+  - item: mineinabyss:sculk_chair

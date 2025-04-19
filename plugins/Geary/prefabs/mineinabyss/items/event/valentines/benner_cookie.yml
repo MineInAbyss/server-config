@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#EBEBEB><b>Benner Cookie
-    customModelData: 132
-    lore:
-      - <#DB8888>Has a strong taste 
-      - <#DB8888>Of peace and love
-    food:
-      saturation: 13
-      nutrition: 8
+  type: minecraft:paper
+  itemName: <#EBEBEB><b>Benner Cookie
+  customModelData: 132
+  lore:
+  - <#DB8888>Has a strong taste
+  - <#DB8888>Of peace and love
+  food:
+    saturation: 13
+    nutrition: 8
 resourcepack:
   model: mineinabyss:item/event/benner_cookie

@@ -1,9 +1,9 @@
-inherit: [mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Sculk Deco
-    customModelData: 1024
+  type: minecraft:paper
+  itemName: <white>Sculk Deco
+  customModelData: 1024
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -12,9 +12,8 @@ blocky:sound:
   fallSound: block.amethyst_cluster.fall
 blocky:furniture:
   interactionHitbox:
-    - width: 1.0
-      height: 0.5
+  - width: 1.0
+    height: 0.5
 blocky:drops:
   drops:
-    - item: mineinabyss:sculk_deco_2
-
+  - item: mineinabyss:sculk_deco_2

@@ -1,15 +1,14 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#613F0C>Raw Hammerbeak Wing
-    customModelData: 306
-    lore:
-      - ":layer_1::layer_2::layer_4:"
-      - <#A9CCCA><i>This meat seems delicious
-      - <#A9CCCA><i>if cooked properly!
-    food:
-      saturation: 1.2
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#613F0C>Raw Hammerbeak Wing
+  customModelData: 306
+  lore:
+  - ':layer_1::layer_2::layer_4:'
+  - <#A9CCCA><i>This meat seems delicious
+  - <#A9CCCA><i>if cooked properly!
+  food:
+    saturation: 1.2
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:hammerbeak_wing_cooked
 resourcepack:

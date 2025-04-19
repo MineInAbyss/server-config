@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#85512E>Cooked Squidfly Brain
-    customModelData: 419
-    lore:
-      - ":layer_3:"
-      - <#C27643><i>Perhaps I will become smarter
-      - <#C27643><i>if I consume this brain?
-    food:
-      saturation: 6
-      nutrition: 5
+  type: minecraft:paper
+  itemName: <#85512E>Cooked Squidfly Brain
+  customModelData: 419
+  lore:
+  - ':layer_3:'
+  - <#C27643><i>Perhaps I will become smarter
+  - <#C27643><i>if I consume this brain?
+  food:
+    saturation: 6
+    nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:squidfly_brain_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:squidfly_brain_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:squidfly_brain_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:squidfly_brain_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/squidfly_brain_cooked

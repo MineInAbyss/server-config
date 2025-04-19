@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:ochre_froglight
-    itemName: <#a3f7a2>Buroguro Lantern
-    customModelData: 1
-    lore:
-      - ":layer_3:"
-      - <#38896d><i>Seems to be poisonous.
-      - <#38896d><i>I best not eat it...
+  type: minecraft:ochre_froglight
+  itemName: <#a3f7a2>Buroguro Lantern
+  customModelData: 1
+  lore:
+  - ':layer_3:'
+  - <#38896d><i>Seems to be poisonous.
+  - <#38896d><i>I best not eat it...
 resourcepack:
   textures: mineinabyss:item/creature_drops/buroguro_lantern

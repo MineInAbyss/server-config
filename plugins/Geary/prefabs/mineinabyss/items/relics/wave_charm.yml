@@ -1,31 +1,27 @@
 set.item:
-  item:
-    itemName: <dark_aqua>Tidal Dew
-    type: PAPER
-    customModelData: 141
-    lore:
-      - ":layer_4: Grade III Relic"
-      - <gold>A talisman deeply intertwined with the force fields humidity. 
-      - <#D2D489><i>When used it causes droplets to combine forming
-      - <#D2D489><i>a wave pushing everything back it touches.
-      
-#ghost_seek:
+  itemName: <dark_aqua>Tidal Dew
+  type: PAPER
+  customModelData: 141
+  lore:
+  - ':layer_4: Grade III Relic'
+  - <gold>A talisman deeply intertwined with the force fields humidity.
+  - <#D2D489><i>When used it causes droplets to combine forming
+  - <#D2D489><i>a wave pushing everything back it touches.
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - EnchantingLevel{l=>1} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Experience
-    - cooldown:
-          id: tidalwave
-          length: 20s
-          display: <dark_aqua>Tiding Wave
-    - mythicSkills:
-          - "Tidal_Wave"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: tidalwave
+      length: 20s
+      display: <dark_aqua>Tiding Wave
+  - mythicSkills:
+    - Tidal_Wave
 resourcepack:
   textures: mineinabyss:item/relics/makihige_totem
-

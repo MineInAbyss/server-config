@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#1FB53D>Cooked Kuongatari Abdomen
-    customModelData: 421
-    lore:
-      - ":layer_4::layer_5:"
-      - <#167D2A>Suprisingly tasty for such a small bug..
-    food:
-      saturation: 0.6
-      nutrition: 1
+  type: minecraft:paper
+  itemName: <#1FB53D>Cooked Kuongatari Abdomen
+  customModelData: 421
+  lore:
+  - ':layer_4::layer_5:'
+  - <#167D2A>Suprisingly tasty for such a small bug..
+  food:
+    saturation: 0.6
+    nutrition: 1
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:kuongatari_abdomen_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:kuongatari_abdomen_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:kuongatari_abdomen_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:kuongatari_abdomen_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/creature_drops/kuongatari_abdomen_cooked

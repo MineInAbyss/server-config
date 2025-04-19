@@ -1,12 +1,11 @@
-inherit: [ mineinabyss:wood, mineinabyss:ground_furniture ]
+inherit:
+- mineinabyss:wood
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Bamboo Mirror
-    customModelData: 1004
-blocky:furniture: { }
-
+  type: minecraft:paper
+  itemName: <white>Bamboo Mirror
+  customModelData: 1004
+blocky:furniture: {}
 blocky:drops:
   drops:
-    - item: mineinabyss:bamboo_mirror
-
+  - item: mineinabyss:bamboo_mirror

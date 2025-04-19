@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:cod
-    itemName: "<#9ff3f3>Cooked Ikenosuke"
-    customModelData: 227
-    lore:
-      - ":layer_2::layer_3::layer_4:"
-      - <#edfeff>The skin is tough, but the meat... Yum!
-    food:
-      saturation: 7
-      nutrition: 4
+  type: minecraft:cod
+  itemName: <#9ff3f3>Cooked Ikenosuke
+  customModelData: 227
+  lore:
+  - ':layer_2::layer_3::layer_4:'
+  - <#edfeff>The skin is tough, but the meat... Yum!
+  food:
+    saturation: 7
+    nutrition: 4
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:ikenosuke_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:ikenosuke_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:ikenosuke_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:ikenosuke_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/ikenosuke_cooked

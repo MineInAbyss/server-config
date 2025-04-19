@@ -1,28 +1,26 @@
 set.item:
-  item:
-    itemName: Relic Core
-    type: PAPER
-    customModelData: 157
+  itemName: Relic Core
+  type: PAPER
+  customModelData: 157
 set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:relic_core
   group: mineinabyss:relic_core
   recipes:
-    - type: shaped
-      items:
-        G:
-          prefab: mineinabyss:ikonia_plate
-        H:
-          prefab: mineinabyss:himushi_core
-        P:
-          prefab: mineinabyss:tachikatana_claw 
-        C:
-          prefab: mineinabyss:unpowered_core
-          
-      configuration: |-
-        |GPG|
-        |HCH|
-        |GPG|
+  - type: shaped
+    items:
+      G:
+        prefab: mineinabyss:ikonia_plate
+      H:
+        prefab: mineinabyss:himushi_core
+      P:
+        prefab: mineinabyss:tachikatana_claw
+      C:
+        prefab: mineinabyss:unpowered_core
+    configuration: |-
+      |GPG|
+      |HCH|
+      |GPG|
 resourcepack:
   textures: mineinabyss:item/materials/charged_fluid

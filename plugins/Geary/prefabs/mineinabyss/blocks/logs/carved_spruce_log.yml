@@ -1,14 +1,12 @@
 inherit:
-  - mineinabyss:wood
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Carved Spruce Log
-    customModelData: 2027
+  type: minecraft:paper
+  itemName: <white>Carved Spruce Log
+  customModelData: 2027
 set.block:
   blockType: NOTEBLOCK
   blockId: 23
-
 blocky:pack:
   model: mineinabyss:block/logs/carved_spruce_log
 blocky:directional:
@@ -17,4 +15,4 @@ blocky:directional:
   zBlock: mineinabyss:carved_spruce_log_z
 blocky:drops:
   drops:
-    - item: mineinabyss:carved_spruce_log
+  - item: mineinabyss:carved_spruce_log

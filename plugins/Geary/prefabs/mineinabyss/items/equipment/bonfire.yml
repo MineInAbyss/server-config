@@ -1,30 +1,29 @@
 set.item:
-  item:
-    itemName: <#FF9D26>Bonfire
-    type: PAPER
-    customModelData: 1034
-    maxStackSize: 16
+  itemName: <#FF9D26>Bonfire
+  type: PAPER
+  customModelData: 1034
+  maxStackSize: 16
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: shaped
-      items:
-        S:
-          type: STICK
-        C:
-          type: CAMPFIRE
-        F:
-          type: FLINT_AND_STEEL
-      configuration: |-
-        |SSS|
-        |SFS|
-        |SCS|
+  - type: shaped
+    items:
+      S:
+        type: STICK
+      C:
+        type: CAMPFIRE
+      F:
+        type: FLINT_AND_STEEL
+    configuration: |-
+      |SSS|
+      |SFS|
+      |SCS|
 blocky:furniture:
   interactionHitbox:
-    - width: 1.0
-      height: 1.6
-      offset:
-        y: -0.5
+  - width: 1.0
+    height: 1.6
+    offset:
+      y: -0.5
 blocky:preventItemstackUpdate:
   forceWhenDifferentMaterial: true
 blocky:placableOn:
@@ -33,7 +32,7 @@ blocky:placableOn:
   wall: false
 blocky:drops:
   drops:
-    - item: mineinabyss:bonfire
+  - item: mineinabyss:bonfire
 copyToInstances:
   persisting:
     bonfire:bonfire:
@@ -42,8 +41,8 @@ copyToInstances:
         lit: mineinabyss:bonfire_lit
         set: mineinabyss:bonfire_self_lit
       addons:
-        - mineinabyss:bonfire
-        - mineinabyss:bonfire_1
-        - mineinabyss:bonfire_2
-        - mineinabyss:bonfire_3
-        - mineinabyss:bonfire_4
+      - mineinabyss:bonfire
+      - mineinabyss:bonfire_1
+      - mineinabyss:bonfire_2
+      - mineinabyss:bonfire_3
+      - mineinabyss:bonfire_4

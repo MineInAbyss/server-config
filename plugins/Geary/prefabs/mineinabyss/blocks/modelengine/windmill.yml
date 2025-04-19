@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#33404d>Windmill
-    customModelData: 1002
+  type: minecraft:paper
+  itemName: <#33404d>Windmill
+  customModelData: 1002
 disableItemInteractions: {}
 blocky:modelengine:
   modelId: windmill
 blocky:furniture:
   collisionHitbox:
-    - x: 0
+  - x: 0

@@ -1,10 +1,9 @@
 inherit:
-  - mineinabyss:wood
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Carved Oak Log
-    customModelData: 2026
+  type: minecraft:paper
+  itemName: <white>Carved Oak Log
+  customModelData: 2026
 set.block:
   blockType: NOTEBLOCK
   blockId: 20
@@ -16,4 +15,4 @@ blocky:directional:
   zBlock: mineinabyss:carved_oak_log_z
 blocky:drops:
   drops:
-    - item: mineinabyss:carved_oak_log
+  - item: mineinabyss:carved_oak_log

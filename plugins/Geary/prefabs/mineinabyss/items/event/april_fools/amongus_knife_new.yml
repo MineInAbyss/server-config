@@ -1,19 +1,19 @@
 set.item:
-  item:
-    itemName: <#C21807>Suspicious Dagger
-    type: NETHERITE_SWORD
-    customModelData: 69
-    lore:
-      - ":troll:"
-      - <gold>Found during April Fools 2025.
-      - <gold>A weapon of absolute betrayal.
+  itemName: <#C21807>Suspicious Dagger
+  type: NETHERITE_SWORD
+  customModelData: 69
+  lore:
+  - ':troll:'
+  - <gold>Found during April Fools 2025.
+  - <gold>A weapon of absolute betrayal.
 passive:
-  - match: [ inHand ]
-    every: 3s
-    run:
-      - become: parent
-      - mythicSkills:
-          - "amongusknife"
+- match:
+  - inHand
+  every: 3s
+  run:
+  - become: parent
+  - mythicSkills:
+    - amongusknife
 resourcepack:
   model: mineinabyss:item/event/amongus_knife
   parentModel: item/handheld

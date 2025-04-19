@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:nautilus_shell
-    itemName: <#785F34>Abyssal Snail Shell
-    customModelData: 1
-    lore:
-      - ":layer_5:"
-      - <#A68348><i>If you put it to your ear, you might hear
-      - <#A68348><i>the wailing of the souls lost to the sea.
+  type: minecraft:nautilus_shell
+  itemName: <#785F34>Abyssal Snail Shell
+  customModelData: 1
+  lore:
+  - ':layer_5:'
+  - <#A68348><i>If you put it to your ear, you might hear
+  - <#A68348><i>the wailing of the souls lost to the sea.
 resourcepack:
   textures: mineinabyss:item/creature_drops/abyssal_snail_shell

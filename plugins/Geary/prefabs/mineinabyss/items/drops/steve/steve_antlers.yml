@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:dead_fire_coral
-    itemName: <#2597D9>Steve Antlers
-    customModelData: 1
-    lore:
-      - <yellow>Can be obtained by hunting down
-      - <#2597D9>Steve <yellow>in the <green>Goblets of Giants<yellow>.
+  type: minecraft:dead_fire_coral
+  itemName: <#2597D9>Steve Antlers
+  customModelData: 1
+  lore:
+  - <yellow>Can be obtained by hunting down
+  - <#2597D9>Steve <yellow>in the <green>Goblets of Giants<yellow>.

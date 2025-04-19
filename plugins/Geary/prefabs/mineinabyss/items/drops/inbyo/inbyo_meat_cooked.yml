@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#3D3D3D>Cooked Inbyo Meat
-    customModelData: 401
-    lore:
-      - ":layer_2:"
-      - <#B5B5B5><i>Seems more edible now, though
-      - <#B5B5B5><i>it still smells horrid...
-    food:
-      saturation: 12.8
-      nutrition: 8
+  type: minecraft:paper
+  itemName: <#3D3D3D>Cooked Inbyo Meat
+  customModelData: 401
+  lore:
+  - ':layer_2:'
+  - <#B5B5B5><i>Seems more edible now, though
+  - <#B5B5B5><i>it still smells horrid...
+  food:
+    saturation: 12.8
+    nutrition: 8
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:inbyo_meat_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:inbyo_meat_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:inbyo_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:inbyo_meat_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/inbyo_meat_cooked

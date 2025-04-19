@@ -1,15 +1,14 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#BDBDBD>Raw Neritantan Meat
-    customModelData: 309
-    lore:
-      - ":layer_2::layer_3:"
-      - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
-      - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
-    food:
-      saturation: 1.2
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#BDBDBD>Raw Neritantan Meat
+  customModelData: 309
+  lore:
+  - ':layer_2::layer_3:'
+  - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
+  - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
+  food:
+    saturation: 1.2
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:neritantan_meat_cooked
 resourcepack:

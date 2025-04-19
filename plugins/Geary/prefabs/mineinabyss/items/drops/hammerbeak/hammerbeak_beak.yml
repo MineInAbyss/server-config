@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:flint
-    itemName: <#613F0C>Hammerbeak Beak
-    customModelData: 1
-    lore:
-      - ":layer_1::layer_2::layer_4:"
-      - <yellow>Can be used as a fire starter
-      - <yellow>when combined with a little steel.
-      - <#A9CCCA><i>It seems sharp enough
-      - <#A9CCCA><i>to put an eye out.
+  type: minecraft:flint
+  itemName: <#613F0C>Hammerbeak Beak
+  customModelData: 1
+  lore:
+  - ':layer_1::layer_2::layer_4:'
+  - <yellow>Can be used as a fire starter
+  - <yellow>when combined with a little steel.
+  - <#A9CCCA><i>It seems sharp enough
+  - <#A9CCCA><i>to put an eye out.
 resourcepack:
   textures: mineinabyss:item/creature_drops/hammerbeak_beak

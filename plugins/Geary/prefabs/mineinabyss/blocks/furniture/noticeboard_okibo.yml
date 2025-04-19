@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#33404d>Noticeboard Okibo
-    customModelData: 1032
+  type: minecraft:paper
+  itemName: <#33404d>Noticeboard Okibo
+  customModelData: 1032
 blocky:sound:
   placeSound: block.wood.place
   breakSound: block.wood.break
@@ -20,11 +19,10 @@ blocky:furniture:
       z: 2.5
   rotationType: VERY_STRICT
   interactionHitbox:
-    - offset:
-        y: 2.0
-      width: 2
-      height: 0.5
+  - offset:
+      y: 2.0
+    width: 2
+    height: 0.5
 blocky:drops:
   drops:
-    - item: mineinabyss:noticeboard_okibo
-
+  - item: mineinabyss:noticeboard_okibo

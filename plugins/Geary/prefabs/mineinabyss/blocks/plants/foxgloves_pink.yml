@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Foxgloves Pink
-    customModelData: 3013
+  type: minecraft:paper
+  itemName: Foxgloves Pink
+  customModelData: 3013
 set.block:
   blockType: WIRE
   blockId: 13
@@ -10,4 +9,4 @@ blocky:pack:
   model: hmcmodels:block/nature/foxgloves_pink
 blocky:drops:
   drops:
-    - item: mineinabyss:foxgloves_pink
+  - item: mineinabyss:foxgloves_pink

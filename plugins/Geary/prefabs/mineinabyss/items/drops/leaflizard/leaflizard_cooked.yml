@@ -1,25 +1,26 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#454545>Cooked Leaflizard Tail
-    customModelData: 107
-    lore:
-      - <yellow>Obtained by cutting of the tail
-      - <yellow>of a <#454545>Hashofu <yellow>in the
-      - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
-      - <#595959><i>tastes more like chicken now.
-      - <#595959><i>it's not so squishy anymore...
-    food:
-      saturation: 6
-      nutrition: 5
+  type: minecraft:paper
+  itemName: <#454545>Cooked Leaflizard Tail
+  customModelData: 107
+  lore:
+  - <yellow>Obtained by cutting of the tail
+  - <yellow>of a <#454545>Hashofu <yellow>in the
+  - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.
+  - <#595959><i>tastes more like chicken now.
+  - <#595959><i>it's not so squishy anymore...
+  food:
+    saturation: 6
+    nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: { prefab: mineinabyss:leaflizard_raw }
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: { prefab: mineinabyss:leaflizard_raw }
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input:
+      prefab: mineinabyss:leaflizard_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input:
+      prefab: mineinabyss:leaflizard_raw
+    experience: 2
+    cookingTime: 50

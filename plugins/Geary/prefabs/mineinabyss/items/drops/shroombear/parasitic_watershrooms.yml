@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:warped_fungus
-    customModelData: 0
-    itemName: <#913188>Parasitic Watershrooms
-    lore:
-      - ":layer_4:"
-      - <yellow>Sucks nutrients from its host, releasing
-      - <yellow>them back when the host is near death.
+  type: minecraft:warped_fungus
+  customModelData: 0
+  itemName: <#913188>Parasitic Watershrooms
+  lore:
+  - ':layer_4:'
+  - <yellow>Sucks nutrients from its host, releasing
+  - <yellow>them back when the host is near death.
 resourcepack:
   textures: mineinabyss:item/creature_drops/parasitic_watershrooms

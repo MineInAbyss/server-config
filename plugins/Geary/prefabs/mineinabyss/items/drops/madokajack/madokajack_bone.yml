@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:bone
-    itemName: <#1C439E>Madokajack Bone
-    customModelData: 2
-    lore:
-      - ":layer_3:"
-      - <#369AFF><i>Even their bones smell rancid.
+  type: minecraft:bone
+  itemName: <#1C439E>Madokajack Bone
+  customModelData: 2
+  lore:
+  - ':layer_3:'
+  - <#369AFF><i>Even their bones smell rancid.
 resourcepack:
   textures: mineinabyss:item/creature_drops/madokajack_bone

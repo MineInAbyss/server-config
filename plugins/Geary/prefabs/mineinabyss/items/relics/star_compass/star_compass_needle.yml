@@ -1,17 +1,16 @@
 set.item:
-  item:
-    type: minecraft:paper
-    customModelData: 124
-    itemName: <dark_aqua>Star Compass Needle
-    lore:
-      - <dark_green>Used to craft a <#447881>Star Compass
+  type: minecraft:paper
+  customModelData: 124
+  itemName: <dark_aqua>Star Compass Needle
+  lore:
+  - <dark_green>Used to craft a <#447881>Star Compass
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: shapeless
-      items:
-        - mineinabyss:madokajack_scales
-        - mineinabyss:kakatsumuri_glowing_tip
+  - type: shapeless
+    items:
+    - mineinabyss:madokajack_scales
+    - mineinabyss:kakatsumuri_glowing_tip
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/relics/star_compass/star_compass_needle

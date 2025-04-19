@@ -1,8 +1,7 @@
 set.item:
-  item:
-    itemName: <gray>Neritantan Backpack
-    type: POTION
-    color: "255, 255, 255"
-    customModelData: 112
-    itemFlags:
-      - HIDE_ADDITIONAL_TOOLTIP
+  itemName: <gray>Neritantan Backpack
+  type: POTION
+  color: 255, 255, 255
+  customModelData: 112
+  itemFlags:
+  - HIDE_ADDITIONAL_TOOLTIP

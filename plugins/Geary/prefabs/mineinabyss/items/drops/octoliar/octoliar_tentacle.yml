@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:twisting_vines
-    itemName: <#ADD8E6>Octoliar Tentacle
-    customModelData: 1
-    lore:
-      - ":layer_5:"
-      - <#B8FFBA><i>Although a little wet, it's
-      - <#B8FFBA><i>as tough as a rock!
+  type: minecraft:twisting_vines
+  itemName: <#ADD8E6>Octoliar Tentacle
+  customModelData: 1
+  lore:
+  - ':layer_5:'
+  - <#B8FFBA><i>Although a little wet, it's
+  - <#B8FFBA><i>as tough as a rock!
 resourcepack:
   textures: mineinabyss:item/creature_drops/octoliar_tentacle

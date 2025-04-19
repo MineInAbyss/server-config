@@ -1,27 +1,24 @@
 set.item:
-  item:
-    itemName: Unpowered Core
-    type: PAPER
-    customModelData: 156
+  itemName: Unpowered Core
+  type: PAPER
+  customModelData: 156
 set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:unpowered_core
   group: mineinabyss:unpowered_core
   recipes:
-    - type: shaped
-      items:
-        G:
-          prefab: mineinabyss:hisomukuro_rib
-        P:
-          type: DIAMOND_BLOCK
-        C:
-          prefab: mineinabyss:himushi_core
-
-          
-      configuration: |-
-        |GGG|
-        |CPC|
-        |GGG|
+  - type: shaped
+    items:
+      G:
+        prefab: mineinabyss:hisomukuro_rib
+      P:
+        type: DIAMOND_BLOCK
+      C:
+        prefab: mineinabyss:himushi_core
+    configuration: |-
+      |GGG|
+      |CPC|
+      |GGG|
 resourcepack:
   textures: mineinabyss:item/materials/fluid_core

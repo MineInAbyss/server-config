@@ -1,10 +1,9 @@
 inherit:
-  - mineinabyss:wood
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Carved Crimson Stem
-    customModelData: 2022
+  type: minecraft:paper
+  itemName: <white>Carved Crimson Stem
+  customModelData: 2022
 set.block:
   blockType: NOTEBLOCK
   blockId: 8
@@ -16,4 +15,4 @@ blocky:directional:
   zBlock: mineinabyss:carved_crimson_stem_z
 blocky:drops:
   drops:
-    - item: mineinabyss:carved_crimson_stem
+  - item: mineinabyss:carved_crimson_stem

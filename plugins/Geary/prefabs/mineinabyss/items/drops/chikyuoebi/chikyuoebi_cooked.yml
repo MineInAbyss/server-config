@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#649984>Cooked Chikyuoebi Claw
-    customModelData: 423
-    lore:
-      - ":layer_5:"
-      - <#943e27><i>Tastes like lobster!
-    food:
-      saturation: 9.6
-      nutrition: 7
+  type: minecraft:paper
+  itemName: <#649984>Cooked Chikyuoebi Claw
+  customModelData: 423
+  lore:
+  - ':layer_5:'
+  - <#943e27><i>Tastes like lobster!
+  food:
+    saturation: 9.6
+    nutrition: 7
 resourcepack:
   textures: mineinabyss:item/food/creatures/chikyuoebi_cooked
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:chikyuoebi_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:chikyuoebi_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:chikyuoebi_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:chikyuoebi_raw
+    experience: 2
+    cookingTime: 50

@@ -1,50 +1,33 @@
 set.item:
-  item:
-    itemName: <#88D481>Fright Instinct
-    type: PAPER
-    customModelData: 137
-    lore:
-      - ":layer_1: Grade IV Relic"
-      - <gold>A mysterious totem calling upon the desire
-      - <gold>to survive to escape from predators.
-      - <#D2D489><i>It grants the wearer adrenaline when used.
-#ghost_seek:
+  itemName: <#88D481>Fright Instinct
+  type: PAPER
+  customModelData: 137
+  lore:
+  - ':layer_1: Grade IV Relic'
+  - <gold>A mysterious totem calling upon the desire
+  - <gold>to survive to escape from predators.
+  - <#D2D489><i>It grants the wearer adrenaline when used.
 disableItemInteractions: {}
-#observe:
-  #itemRightClick:
- #   - become: parent
- #   - ensure:
-  #      player:
- #         sneaking: true
- #   - cooldown:
- #       id: animal_totem
- #       length: 60s
-  #      display: <#88D481>Fright Instinct
- #   - applyPotionEffects:
- #       - type: minecraft:speed
-#          duration: 2s
-#          amplifier: 3
-#          hasParticles: false
 passive:
-  - match: [ inInventory ]
-    every: 30s
-    run:
-      - become: parent
-
-      - particle:
-          particle: CLOUD
-          offset: [ 0, 1, 0 ]
-          count: 10
-          speed: 0
-        with:
-          location: "{{ entity.getLocation }}"
-      - applyPotionEffects:
-          - type: minecraft:speed
-            duration: 3s
-            amplifier: 1
-            hasParticles: false
-
-
+- match:
+  - inInventory
+  every: 30s
+  run:
+  - become: parent
+  - particle:
+      particle: CLOUD
+      offset:
+      - 0
+      - 1
+      - 0
+      count: 10
+      speed: 0
+    with:
+      location: '{{ entity.getLocation }}'
+  - applyPotionEffects:
+    - type: minecraft:speed
+      duration: 3s
+      amplifier: 1
+      hasParticles: false
 resourcepack:
   textures: mineinabyss:item/relics/tesuchi_totem
-

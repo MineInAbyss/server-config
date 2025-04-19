@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:potion
-    basePotionType: minecraft:fire_resistance
+  type: minecraft:potion
+  basePotionType: minecraft:fire_resistance
 set.potionMixes:
   potionmixes:
-    - ingredient:
-        prefab: mineinabyss:virinsipede_antlers
+  - ingredient:
+      prefab: mineinabyss:virinsipede_antlers

@@ -1,14 +1,13 @@
 set.item:
-  item:
-    itemName: <#b74b4d><b>Mitty Token
-    lore:
-      - <#ff686b>
-      - <#ff686b>Bestowed upon those
-      - <#ff686b>who fund the server
-      - <#ff686b>to buy random shit
-    type: EMERALD
-    customModelData: 2
-disableItemInteractions: { }
-mineinabyss:mittytoken: { }
+  itemName: <#b74b4d><b>Mitty Token
+  lore:
+  - <#ff686b>
+  - <#ff686b>Bestowed upon those
+  - <#ff686b>who fund the server
+  - <#ff686b>to buy random shit
+  type: EMERALD
+  customModelData: 2
+disableItemInteractions: {}
+mineinabyss:mittytoken: {}
 resourcepack:
   model: mineinabyss:item/other/mitty_token

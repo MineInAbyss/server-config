@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:fire_charge
-    itemName: <#454545>Hashofu Eye
-    customModelData: 1
-    lore:
-      - ":layer_4::layer_5:"
-      - <#595959><i>There is a fire in its eyes.
+  type: minecraft:fire_charge
+  itemName: <#454545>Hashofu Eye
+  customModelData: 1
+  lore:
+  - ':layer_4::layer_5:'
+  - <#595959><i>There is a fire in its eyes.
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/creature_drops/hashofu_eye

@@ -1,26 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <dark_aqua>Flamethrower
-    customModelData: 109
-    # TODO add lore
-#disableItemInteractions: { }
+  type: minecraft:paper
+  itemName: <dark_aqua>Flamethrower
+  customModelData: 109
 observe:
   itemRightClick:
-    - become: parent
-    - ensure:
-        hasConsumable:
-          type: mineinabyss:flamethrower_fuel
-      onFail:
-        - sendActionBar:
-            text: <red>Out of fuel
-    - cooldown:
-        id: flamethrower
-        length: 2s
-        display: <dark_aqua>Flamethrower
-    - mythicSkills:
-        - "Flame-Torrent"
-    - consumeItem:
+  - become: parent
+  - ensure:
+      hasConsumable:
         type: mineinabyss:flamethrower_fuel
-      when:
-        - chance: 0.2 # Consume slightly slower
+    onFail:
+    - sendActionBar:
+        text: <red>Out of fuel
+  - cooldown:
+      id: flamethrower
+      length: 2s
+      display: <dark_aqua>Flamethrower
+  - mythicSkills:
+    - Flame-Torrent
+  - consumeItem:
+      type: mineinabyss:flamethrower_fuel
+    when:
+    - chance: 0.2

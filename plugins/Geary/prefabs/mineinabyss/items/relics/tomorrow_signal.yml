@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <dark_gray>Tomorrow Signal
-    customModelData: 112
-disableItemInteractions: { }
+  type: minecraft:paper
+  itemName: <dark_gray>Tomorrow Signal
+  customModelData: 112
+disableItemInteractions: {}
 observe:
   itemLeftClick:
-    - become: parent
-    - cooldown:
-        id: lightning_strike
-        length: 2s
-        display: <dark_gray>Tomorrow Signal
-    - eval: "entity.getTargetBlock { maxDistance: 15 }"
-      register: targetBlock
-    - smite: {}
-      with:
-        location: "{{ targetBlock }}"
-    - particle:
-        particle: CLOUD
-        count: 10
-        speed: 0.2
-      with:
-        location: "{{ targetBlock }}"
+  - become: parent
+  - cooldown:
+      id: lightning_strike
+      length: 2s
+      display: <dark_gray>Tomorrow Signal
+  - eval: 'entity.getTargetBlock { maxDistance: 15 }'
+    register: targetBlock
+  - smite: {}
+    with:
+      location: '{{ targetBlock }}'
+  - particle:
+      particle: CLOUD
+      count: 10
+      speed: 0.2
+    with:
+      location: '{{ targetBlock }}'

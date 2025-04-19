@@ -1,27 +1,26 @@
 set.item:
-  item:
-    itemName: <dark_aqua>Charcoal Sand Ingot
-    type: IRON_INGOT
-    customModelData: 1
+  itemName: <dark_aqua>Charcoal Sand Ingot
+  type: IRON_INGOT
+  customModelData: 1
 set.recipes:
   discoverRecipes: true
-  group: "charcoal_sand_ingot"
+  group: charcoal_sand_ingot
   recipes:
-    - type: furnace
-      input: mineinabyss:charcoal_sand_raw
-      experience: 1
-      cookingTime: 100
-    - type: blasting
-      input: mineinabyss:charcoal_sand_raw
-      experience: 2
-      cookingTime: 50
-    - type: furnace
-      input: mineinabyss:charcoal_sand_ore
-      experience: 1
-      cookingTime: 100
-    - type: blasting
-      input: mineinabyss:charcoal_sand_ore
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:charcoal_sand_raw
+    experience: 1
+    cookingTime: 100
+  - type: blasting
+    input: mineinabyss:charcoal_sand_raw
+    experience: 2
+    cookingTime: 50
+  - type: furnace
+    input: mineinabyss:charcoal_sand_ore
+    experience: 1
+    cookingTime: 100
+  - type: blasting
+    input: mineinabyss:charcoal_sand_ore
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/materials/charcoal_sand_ingot

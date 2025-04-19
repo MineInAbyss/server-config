@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:cooked_cod
-    itemName: "<#9ff3f3>Raw Ikenosuke"
-    customModelData: 228
-    lore:
-      - ":layer_2::layer_3::layer_4:"
-      - <#edfeff>The skin was tough, but the meat... Yum!
-    food:
-      saturation: 0.4
-      nutrition: 2
+  type: minecraft:cooked_cod
+  itemName: <#9ff3f3>Raw Ikenosuke
+  customModelData: 228
+  lore:
+  - ':layer_2::layer_3::layer_4:'
+  - <#edfeff>The skin was tough, but the meat... Yum!
+  food:
+    saturation: 0.4
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:ikenosuke_cooked
 resourcepack:

@@ -1,18 +1,17 @@
-inherit: [mineinabyss:wood]
+inherit:
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Bamboo Wind Chime
-    customModelData: 1009
+  type: minecraft:paper
+  itemName: <white>Bamboo Wind Chime
+  customModelData: 1009
 blocky:furniture:
   interactionHitbox:
-    - width: 0.4
-      height: 1.0
+  - width: 0.4
+    height: 1.0
 blocky:placableOn:
   floor: false
   ceiling: true
   wall: false
 blocky:drops:
   drops:
-    - item: mineinabyss:bamboo_wind_chime
-
+  - item: mineinabyss:bamboo_wind_chime

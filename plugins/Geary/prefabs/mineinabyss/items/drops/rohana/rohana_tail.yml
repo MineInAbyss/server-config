@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:blaze_rod
-    itemName: <#6C19BF>Rohana Tail
-    customModelData: 1
-    lore:
-      - ":layer_2::layer_4:"
-      - <#FF1FB4><i>Can be used to make brewing stands
-      - <#FF1FB4><i>or other useful relics...
+  type: minecraft:blaze_rod
+  itemName: <#6C19BF>Rohana Tail
+  customModelData: 1
+  lore:
+  - ':layer_2::layer_4:'
+  - <#FF1FB4><i>Can be used to make brewing stands
+  - <#FF1FB4><i>or other useful relics...
 resourcepack:
   textures: mineinabyss:item/creature_drops/rohana_tail

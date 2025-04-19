@@ -1,40 +1,26 @@
 set.item:
-  item:
-    itemName: <gold>Repaired Ghost Seek
-    type: CARVED_PUMPKIN
-    customModelData: 108
-    lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
-
-    enchantments:
-      - enchant: minecraft:sharpness
-        level: 1
-    itemFlags: [ HIDE_ENCHANTS ]
+  itemName: <gold>Repaired Ghost Seek
+  type: CARVED_PUMPKIN
+  customModelData: 108
+  lore:
+  - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+  - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+  - <#D2D489>guiding its wielder toward hidden relics.
+  enchantments:
+  - enchant: minecraft:sharpness
+    level: 1
+  itemFlags:
+  - HIDE_ENCHANTS
 prevent.enchanting: {}
 hat: {}
 disableItemInteractions: {}
 passive:
-  - match: [ equipped ]
-    every: 13s
-    run:
-      - become: parent
-      - mythicSkills:
-          - "repairscout"
-
-#observe:
- # itemRightClick:
-  #  - become: parent
-  #  - ensure:
- #       player:
-  #        sneaking: true
-  #  - cooldown:
-  #      id: relicscout
-  #      length: 7s
-  #      display: <#617B94>Relic Scout
- #   - mythicSkills:
-  #      - "repairscout"
+- match:
+  - equipped
+  every: 13s
+  run:
+  - become: parent
+  - mythicSkills:
+    - repairscout
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
-

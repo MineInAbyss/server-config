@@ -1,51 +1,46 @@
 set.item:
-  item:
-    itemName: <#68CCBF><b>Arc Staff
-    type: minecraft:netherite_hoe
-    customModelData: 5
-    lore:
-      - ":layer_4: Grade I Relic"
-      - <#3C8C82>A spear shape object carved out of the core from
-      - <#3C8C82>a Goblet of Giants containing netherworld runes.
-      - <#265c55><i>It is rumored to return to the user after being thrown.
-    enchantments:
-      - enchant: minecraft:impaling
-        level: 5
-      - enchant: minecraft:sharpness
-        level: 5      
-      - enchant: minecraft:riptide
-        level: 1
-    unbreakable: true
-#ghost_seek:
+  itemName: <#68CCBF><b>Arc Staff
+  type: minecraft:netherite_hoe
+  customModelData: 5
+  lore:
+  - ':layer_4: Grade I Relic'
+  - <#3C8C82>A spear shape object carved out of the core from
+  - <#3C8C82>a Goblet of Giants containing netherworld runes.
+  - <#265c55><i>It is rumored to return to the user after being thrown.
+  enchantments:
+  - enchant: minecraft:impaling
+    level: 5
+  - enchant: minecraft:sharpness
+    level: 5
+  - enchant: minecraft:riptide
+    level: 1
+  unbreakable: true
 prevent.enchanting: {}
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - hasaurastacks{n=A;s=3} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Charge
-    - mythicSkills:
-        - "arc_laser"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=A;s=3} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Charge
+  - mythicSkills:
+    - arc_laser
   itemLeftClick:
-    - become: parent
-    - ensure:
-        player:
-          sneaking: true
-        mythicConditions:
-          - EnchantingLevel{l=>1} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Experience
-    - cooldown:
-        id: ArcCharge
-        length: 12s
-        display: <#617B94>Arc Charge
-    - mythicSkills:
-        - "laser_charge"
-
-
-
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: ArcCharge
+      length: 12s
+      display: <#617B94>Arc Charge
+  - mythicSkills:
+    - laser_charge

@@ -1,27 +1,4 @@
 set.item:
-  item:
-    type: minecraft:paper
-    customModelData: 103
+  type: minecraft:paper
+  customModelData: 103
 disableItemInteractions: {}
-#events:
-#  leftClick:
-#    - type: cooldown
-#      name: Freeze Enemies
-#      length: 2s
-#      run:
-#        - !<on.parent>
-#          - !<on.nearby>
-#            at: !<player.target_block>
-#              maxDist: 5
-#            radius: 20
-#            max: 3
-#            run:
-#              apply_potion_effects:
-#                effects:
-#                  - type: SLOW
-#                    duration: 10s
-#                    amplifier: 100
-#              particle:
-#                type: CLOUD
-#                count: 10
-#                speed: 0.3

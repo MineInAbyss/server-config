@@ -1,27 +1,25 @@
 set.item:
-  item:
-    type: minecraft:compass
-    customModelData: 125
-    itemName: <dark_aqua>Star Compass
-    lore:
-      - <aqua>Points towards the center of the <green>Abyss
+  type: minecraft:compass
+  customModelData: 125
+  itemName: <dark_aqua>Star Compass
+  lore:
+  - <aqua>Points towards the center of the <green>Abyss
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: shapeless
-      items:
-        - mineinabyss:star_compass_needle
-        - mineinabyss:titanjaw_pearl
-mineinabyss:starcompass: { }
-
+  - type: shapeless
+    items:
+    - mineinabyss:star_compass_needle
+    - mineinabyss:titanjaw_pearl
+mineinabyss:starcompass: {}
 observe:
   itemRightClick:
-    - mineinabyss:toggleStarcompassHud: { }
+  - mineinabyss:toggleStarcompassHud: {}
 resourcepack:
   textures: mineinabyss:item/relics/star_compass/star_compass
   itemPredicates:
     angleTextures:
-      mineinabyss:item/relics/star_compass/16: 0.000000
+      mineinabyss:item/relics/star_compass/16: 0.0
       mineinabyss:item/relics/star_compass/17: 0.015625
       mineinabyss:item/relics/star_compass/18: 0.046875
       mineinabyss:item/relics/star_compass/19: 0.078125
@@ -53,4 +51,3 @@ resourcepack:
       mineinabyss:item/relics/star_compass/13: 0.890625
       mineinabyss:item/relics/star_compass/14: 0.921875
       mineinabyss:item/relics/star_compass/15: 0.953125
-      #mineinabyss:item/relics/star_compass/16: 0.984375

@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:glow_ink_sac
-    itemName: <#ADD8E6>Octoliar Ink Sac
-    customModelData: 2
-    lore:
-      - ":layer_5:"
-      - <#B8FFBA><i>Dark at first, but after
-      - <#B8FFBA><i>mixing it with the air it
-      - <#B8FFBA><i>starts to glow!
+  type: minecraft:glow_ink_sac
+  itemName: <#ADD8E6>Octoliar Ink Sac
+  customModelData: 2
+  lore:
+  - ':layer_5:'
+  - <#B8FFBA><i>Dark at first, but after
+  - <#B8FFBA><i>mixing it with the air it
+  - <#B8FFBA><i>starts to glow!
 resourcepack:
   textures: mineinabyss:item/creature_drops/octoliar_ink_sac

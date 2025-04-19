@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Cosmos Pink
-    customModelData: 3011
+  type: minecraft:paper
+  itemName: Cosmos Pink
+  customModelData: 3011
 set.block:
   blockType: WIRE
   blockId: 11
@@ -10,4 +9,4 @@ blocky:pack:
   model: hmcmodels:block/nature/cosmos_pink
 blocky:drops:
   drops:
-    - item: mineinabyss:cosmos_pink
+  - item: mineinabyss:cosmos_pink

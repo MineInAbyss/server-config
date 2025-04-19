@@ -1,15 +1,14 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: "<#257BEB>Raw Demonfish"
-    customModelData: 316
-    lore:
-      - ":layer_5:"
-      - <#1B5BAD>Imagine the shame of getting flopped
-      - <#1B5BAD>to death by one of these.
-    food:
-      saturation: 0.4
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#257BEB>Raw Demonfish
+  customModelData: 316
+  lore:
+  - ':layer_5:'
+  - <#1B5BAD>Imagine the shame of getting flopped
+  - <#1B5BAD>to death by one of these.
+  food:
+    saturation: 0.4
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:demonfish_cooked
 resourcepack:

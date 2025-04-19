@@ -1,13 +1,11 @@
-inherit: [mineinabyss:wood]
+inherit:
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <white>Bamboo Plant
-    customModelData: 1005
+  type: minecraft:paper
+  itemName: <white>Bamboo Plant
+  customModelData: 1005
 blocky:furniture:
   rotationType: NONE
-
 blocky:drops:
   drops:
-    - item: mineinabyss:bamboo_plant
-
+  - item: mineinabyss:bamboo_plant

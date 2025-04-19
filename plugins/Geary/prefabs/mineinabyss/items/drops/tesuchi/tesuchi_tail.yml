@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <dark_green>Tesuchi Tail
-    customModelData: 320
-    lore:
-      - ":layer_2:"
-      - <green><i>Yummy
-    food:
-      saturation: 1.5
-      nutrition: 3
+  type: minecraft:paper
+  itemName: <dark_green>Tesuchi Tail
+  customModelData: 320
+  lore:
+  - ':layer_2:'
+  - <green><i>Yummy
+  food:
+    saturation: 1.5
+    nutrition: 3
 resourcepack:
   textures: mineinabyss:item/food/creatures/tesuchi_tail

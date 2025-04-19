@@ -1,6 +1,4 @@
-# TODO decide on what this fuel should be and how to obtain it
 set.item:
-  item:
-    itemName: <gray>Flamethrower Fuel
-    type: PAPER
-    customModelData: 128
+  itemName: <gray>Flamethrower Fuel
+  type: PAPER
+  customModelData: 128

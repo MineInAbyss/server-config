@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <dark_green>Tesuchi Scales
-    customModelData: 420
-    lore:
-      - ":layer_2:"
-      - <green><i>Crispy
-    food:
-      saturation: 1.2
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <dark_green>Tesuchi Scales
+  customModelData: 420
+  lore:
+  - ':layer_2:'
+  - <green><i>Crispy
+  food:
+    saturation: 1.2
+    nutrition: 2
 resourcepack:
   textures: mineinabyss:item/creature_drops/tesuchi_scales

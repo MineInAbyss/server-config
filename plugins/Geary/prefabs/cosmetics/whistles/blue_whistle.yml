@@ -1,15 +1,14 @@
 set.item:
-  item:
-    itemName: <#175ABF>Blue Whistle
-    type: POTION
-    color: "#FFFFFF"
-    customModelData: 202
+  itemName: <#175ABF>Blue Whistle
+  type: POTION
+  color: '#FFFFFF'
+  customModelData: 202
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        length: 3s
-        id: sound_blue_whistle
-    - playSound:
-        sound: mineinabyss:whistle.blue_whistle
+  - become: parent
+  - cooldown:
+      length: 3s
+      id: sound_blue_whistle
+  - playSound:
+      sound: mineinabyss:whistle.blue_whistle

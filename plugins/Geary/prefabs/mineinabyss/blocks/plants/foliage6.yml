@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#7a4e48>Foliage 6
-    customModelData: 3006
+  type: minecraft:paper
+  itemName: <#7a4e48>Foliage 6
+  customModelData: 3006
 set.block:
   blockType: WIRE
   blockId: 6
@@ -10,4 +9,4 @@ blocky:pack:
   model: mineinabyss:block/nature/foliage6
 blocky:drops:
   drops:
-    - item: mineinabyss:foliage6
+  - item: mineinabyss:foliage6

@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#BDBDBD>Cooked Neritantan Meat
-    customModelData: 409
-    lore:
-      - ":layer_2::layer_3:"
-      - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
-      - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
-    food:
-      saturation: 9.6
-      nutrition: 6
+  type: minecraft:paper
+  itemName: <#BDBDBD>Cooked Neritantan Meat
+  customModelData: 409
+  lore:
+  - ':layer_2::layer_3:'
+  - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
+  - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
+  food:
+    saturation: 9.6
+    nutrition: 6
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:neritantan_meat_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:neritantan_meat_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:neritantan_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:neritantan_meat_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/neritantan_meat_cooked

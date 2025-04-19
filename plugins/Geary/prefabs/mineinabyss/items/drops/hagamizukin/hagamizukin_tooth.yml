@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:quartz
-    itemName: <#0B6623>Hagamizukin Tooth
-    customModelData: 4
-    lore:
-      - ":layer_4::layer_5:"
-      - <#A759FF>Warped and sharp like some of
-      - <#A759FF>the tempestuous abyssal bedrock.
+  type: minecraft:quartz
+  itemName: <#0B6623>Hagamizukin Tooth
+  customModelData: 4
+  lore:
+  - ':layer_4::layer_5:'
+  - <#A759FF>Warped and sharp like some of
+  - <#A759FF>the tempestuous abyssal bedrock.
 resourcepack:
   textures: mineinabyss:item/creature_drops/hagamizukin_tooth

@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#0B6623>Raw Hagamizukin
-    customModelData: 322
-    lore:
-      - ":layer_4::layer_5:"
-      - <#A759FF>The meat still feels angry with me.
-    food:
-      saturation: 0.4
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#0B6623>Raw Hagamizukin
+  customModelData: 322
+  lore:
+  - ':layer_4::layer_5:'
+  - <#A759FF>The meat still feels angry with me.
+  food:
+    saturation: 0.4
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:hagamizukin_cooked
 resourcepack:

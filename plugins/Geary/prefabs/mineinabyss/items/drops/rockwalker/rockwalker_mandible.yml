@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:brick
-    itemName: <#BE6400>Rock-walker Mandible
-    customModelData: 1
-    lore:
-      - ":layer_2::layer_3:"
-      - <#A68348><i>The rockwalkers use these as their climbing
-      - <#A68348><i>gear, and its toughness sure looks the part.
+  type: minecraft:brick
+  itemName: <#BE6400>Rock-walker Mandible
+  customModelData: 1
+  lore:
+  - ':layer_2::layer_3:'
+  - <#A68348><i>The rockwalkers use these as their climbing
+  - <#A68348><i>gear, and its toughness sure looks the part.
 resourcepack:
   textures: mineinabyss:item/creature_drops/rockwalker_mandible

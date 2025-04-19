@@ -1,18 +1,17 @@
 inherit:
-  - mineinabyss:snow
+- mineinabyss:snow
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Snow Tiles
-    customModelData: 2051
+  type: minecraft:paper
+  itemName: Snow Tiles
+  customModelData: 2051
 set.block:
   blockType: NOTEBLOCK
   blockId: 50
 blocky:pack:
-  model: "mineinabyss:block/snow/snow_tiles"
-
+  model: mineinabyss:block/snow/snow_tiles
 blocky:drops:
-  acceptedToolTypes: [ SHOVEL ]
+  acceptedToolTypes:
+  - SHOVEL
   onlyDropWithCorrectTool: true
   drops:
-    - item: mineinabyss:snow_tiles
+  - item: mineinabyss:snow_tiles

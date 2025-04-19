@@ -1,29 +1,28 @@
 set.item:
-  item:
-    itemName: <#C13523><b>Princess Bosom
-    type: minecraft:paper
-    customModelData: 101
-    lore:
-      - <#D2D489>It is an egg-shaped Relic with
-      - <#D2D489>patterns on its surface and has
-      - <#D2D489>a soft texture that squishes when
-      - <#D2D489>pressure is applied to it.
-      - <#EDEEB9><i>Can be used to give you
-      - <#EDEEB9><i>that extra energy boost.
+  itemName: <#C13523><b>Princess Bosom
+  type: minecraft:paper
+  customModelData: 101
+  lore:
+  - <#D2D489>It is an egg-shaped Relic with
+  - <#D2D489>patterns on its surface and has
+  - <#D2D489>a soft texture that squishes when
+  - <#D2D489>pressure is applied to it.
+  - <#EDEEB9><i>Can be used to give you
+  - <#EDEEB9><i>that extra energy boost.
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        id: princess_bosom
-        length: 10s
-        display: <#C13523><b>Princess Bosom
-    - applyPotionEffects:
-        - type: minecraft:speed
-          duration: 3s
-          amplifier: 2
-          hasParticles: false
-        - type: minecraft:jump_boost
-          duration: 5s
-          amplifier: 2
-          hasParticles: false
+  - become: parent
+  - cooldown:
+      id: princess_bosom
+      length: 10s
+      display: <#C13523><b>Princess Bosom
+  - applyPotionEffects:
+    - type: minecraft:speed
+      duration: 3s
+      amplifier: 2
+      hasParticles: false
+    - type: minecraft:jump_boost
+      duration: 5s
+      amplifier: 2
+      hasParticles: false

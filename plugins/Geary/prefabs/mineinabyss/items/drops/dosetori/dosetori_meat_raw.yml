@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: "<#59ac7a>Raw Dosetori Meat"
-    customModelData: 304
-    lore:
-      - ":layer_2::layer_3:"
-      - <#d6b12c><i>Tastes like chicken.
-    food:
-      saturation: 1.2
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#59ac7a>Raw Dosetori Meat
+  customModelData: 304
+  lore:
+  - ':layer_2::layer_3:'
+  - <#d6b12c><i>Tastes like chicken.
+  food:
+    saturation: 1.2
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:dosetori_meat_cooked
 resourcepack:

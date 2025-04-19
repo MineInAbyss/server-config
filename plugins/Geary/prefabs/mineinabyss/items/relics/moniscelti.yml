@@ -1,26 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <dark_aqua>Moniscelti
-    customModelData: 120
-    lore:
-      - ":layer_5: Grade IV Relic"
-      - <gold>A relic of Orthian tales rumored to mimic the effects
-      - <gold>of the curse. Its origin is shrouded in obscurity.
-      - <#D2D489><i>On use it grants blessings and curses.
-#disableItemInteractions: { }
+  type: minecraft:paper
+  itemName: <dark_aqua>Moniscelti
+  customModelData: 120
+  lore:
+  - ':layer_5: Grade IV Relic'
+  - <gold>A relic of Orthian tales rumored to mimic the effects
+  - <gold>of the curse. Its origin is shrouded in obscurity.
+  - <#D2D489><i>On use it grants blessings and curses.
 observe:
   itemRightClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - health{h=>15}
-      onFail:
-        - sendActionBar:
-            text: <red>Not Enough Health
-    - cooldown:
-        id: moniscelti
-        length: 20s
-        display: <dark_aqua>Moniscelti
-    - mythicSkills:
-        - "moniscelti"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - health{h=>15}
+    onFail:
+    - sendActionBar:
+        text: <red>Not Enough Health
+  - cooldown:
+      id: moniscelti
+      length: 20s
+      display: <dark_aqua>Moniscelti
+  - mythicSkills:
+    - moniscelti

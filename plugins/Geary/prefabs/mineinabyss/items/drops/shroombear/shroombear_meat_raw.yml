@@ -1,16 +1,15 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#85562D>Shroombear Meat
-    customModelData: 310
-    lore:
-      - ":layer_4:"
-      - <yellow>It's edible and dark in colour.
-      - <#694600>Might smell like excrement
-      - <#694600>if you don't clean it well...
-    food:
-      saturation: 1.2
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#85562D>Shroombear Meat
+  customModelData: 310
+  lore:
+  - ':layer_4:'
+  - <yellow>It's edible and dark in colour.
+  - <#694600>Might smell like excrement
+  - <#694600>if you don't clean it well...
+  food:
+    saturation: 1.2
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:shroombear_meat_cooked
 resourcepack:

@@ -1,17 +1,16 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#10DEA7>Raw Okibo Meat
-    customModelData: 313
-    lore:
-      - ":layer_orth::layer_1:"
-      - <yellow>Usually found in <green>Orth as a source of
-      - <yellow>transportation of goods, <#11E8AF>Okibos
-      - <yellow>are also a great source of food
-      - <yellow>due to their large size.
-    food:
-      saturation: 1.8
-      nutrition: 3
+  type: minecraft:paper
+  itemName: <#10DEA7>Raw Okibo Meat
+  customModelData: 313
+  lore:
+  - ':layer_orth::layer_1:'
+  - <yellow>Usually found in <green>Orth as a source of
+  - <yellow>transportation of goods, <#11E8AF>Okibos
+  - <yellow>are also a great source of food
+  - <yellow>due to their large size.
+  food:
+    saturation: 1.8
+    nutrition: 3
 replaceBurnedDrop:
   prefab: mineinabyss:okibo_meat_cooked
 resourcepack:

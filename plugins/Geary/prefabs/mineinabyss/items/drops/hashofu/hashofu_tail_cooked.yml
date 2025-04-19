@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#454545>Cooked Hashofu Tail
-    customModelData: 407
-    lore:
-      - ":layer_4::layer_5:"
-      - <#595959><i>It is said it tastes like sushi.
-      - <#595959><i>Smell isn't so unbearable anymore!
-    food:
-      saturation: 6
-      nutrition: 5
+  type: minecraft:paper
+  itemName: <#454545>Cooked Hashofu Tail
+  customModelData: 407
+  lore:
+  - ':layer_4::layer_5:'
+  - <#595959><i>It is said it tastes like sushi.
+  - <#595959><i>Smell isn't so unbearable anymore!
+  food:
+    saturation: 6
+    nutrition: 5
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:hashofu_tail_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:hashofu_tail_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:hashofu_tail_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:hashofu_tail_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/hashofu_tail_cooked

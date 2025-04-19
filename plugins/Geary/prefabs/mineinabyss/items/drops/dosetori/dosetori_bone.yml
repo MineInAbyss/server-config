@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:bone
-    itemName: "<#59ac7a>Dosetori Bone"
-    customModelData: 1
-    lore:
-      - ":layer_2::layer_3:"
-      - <#d6b12c><i>This thing sounds... hollow.
+  type: minecraft:bone
+  itemName: <#59ac7a>Dosetori Bone
+  customModelData: 1
+  lore:
+  - ':layer_2::layer_3:'
+  - <#d6b12c><i>This thing sounds... hollow.
 resourcepack:
   textures: mineinabyss:item/creature_drops/dosetori_bone

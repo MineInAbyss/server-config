@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: French Broom
-    customModelData: 3016
+  type: minecraft:paper
+  itemName: French Broom
+  customModelData: 3016
 set.block:
   blockType: WIRE
   blockId: 15
@@ -10,4 +9,4 @@ blocky:pack:
   model: hmcmodels:block/nature/french_broom
 blocky:drops:
   drops:
-    - item: mineinabyss:french_broom
+  - item: mineinabyss:french_broom

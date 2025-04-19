@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:black_dye
-    itemName: <#454545>Hashofu Body
-    customModelData: 1
-    lore:
-      - ":layer_4::layer_5:"
-      - <#595959>I can use this for <i>what</i>?
+  type: minecraft:black_dye
+  itemName: <#454545>Hashofu Body
+  customModelData: 1
+  lore:
+  - ':layer_4::layer_5:'
+  - <#595959>I can use this for <i>what</i>?
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/creature_drops/hashofu_body

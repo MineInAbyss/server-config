@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:apple
-    itemName: <#9C0F2C>Cooked Yomotsubi Abdomen
-    customModelData: 121
-    lore:
-      - ":layer_3::layer_5:"
-      - <#9c5d2c><i>Tastes suprisingly good.
-    food:
-      saturation: 0.6
-      nutrition: 1
+  type: minecraft:apple
+  itemName: <#9C0F2C>Cooked Yomotsubi Abdomen
+  customModelData: 121
+  lore:
+  - ':layer_3::layer_5:'
+  - <#9c5d2c><i>Tastes suprisingly good.
+  food:
+    saturation: 0.6
+    nutrition: 1
 resourcepack:
   textures: mineinabyss:item/food/creatures/yomotsubi_abdomen_cooked
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:yomotsubi_abdomen_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:yomotsubi_abdomen_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:yomotsubi_abdomen_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:yomotsubi_abdomen_raw
+    experience: 2
+    cookingTime: 50

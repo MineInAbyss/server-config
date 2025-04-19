@@ -1,19 +1,18 @@
 set.item:
-  item:
-    type: minecraft:carrot_on_a_stick
-    itemName: Tesuchi Scale on a Stick
-    lore:
-      - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
-    customModelData: 2
+  type: minecraft:carrot_on_a_stick
+  itemName: Tesuchi Scale on a Stick
+  lore:
+  - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
+  customModelData: 2
 disableItemInteractions: {}
 set.recipes:
   discoverRecipes: true
   result:
     prefab: mineinabyss:tesuchi_scale_on_a_stick
   recipes:
-    - type: shapeless
-      items:
-        - prefab: mineinabyss:tesuchi_scales
-        - type: FISHING_ROD
+  - type: shapeless
+    items:
+    - prefab: mineinabyss:tesuchi_scales
+    - type: FISHING_ROD
 resourcepack:
   textures: mineinabyss:item/other/tesuchi_scale_on_a_stick

@@ -1,15 +1,15 @@
-inherit: [mineinabyss:snow]
+inherit:
+- mineinabyss:snow
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Polished Packed Ice
-    customModelData: 2048
+  type: minecraft:paper
+  itemName: Polished Packed Ice
+  customModelData: 2048
 set.block:
   blockType: NOTEBLOCK
   blockId: 45
 blocky:pack:
-  model: "mineinabyss:block/snow/polished_packed_ice"
+  model: mineinabyss:block/snow/polished_packed_ice
 blocky:drops:
   drops:
-    - silkTouchedDrop:
-        prefab: mineinabyss:charcoal_sand_ore
+  - silkTouchedDrop:
+      prefab: mineinabyss:charcoal_sand_ore

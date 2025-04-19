@@ -1,20 +1,19 @@
 set.item:
-  item:
-    itemName: Charcoal Sand Dagger
-    type: DIAMOND_SWORD
-    customModelData: 6
-    durability: 3000
+  itemName: Charcoal Sand Dagger
+  type: DIAMOND_SWORD
+  customModelData: 6
+  durability: 3000
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: shaped
-      items:
-        M: mineinabyss:charcoal_sand_ingot
-        S: minecraft:stick
-      configuration: |-
-        |M|
-        |M|
-        |S|
+  - type: shaped
+    items:
+      M: mineinabyss:charcoal_sand_ingot
+      S: minecraft:stick
+    configuration: |-
+      |M|
+      |M|
+      |S|
 resourcepack:
   textures: mineinabyss:item/tools/charcoal_sand_dagger
   parentModel: item/handheld

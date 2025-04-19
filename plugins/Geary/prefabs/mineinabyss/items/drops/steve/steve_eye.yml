@@ -1,7 +1,6 @@
 set.item:
-  item:
-    type: minecraft:heart_of_the_sea
-    itemName: <#2597D9>Steve Eye
-    lore:
-      - <yellow>Can be obtained by hunting down
-      - <#2597D9>Steve <yellow>in the <green>Goblets of Giants<yellow>.
+  type: minecraft:heart_of_the_sea
+  itemName: <#2597D9>Steve Eye
+  lore:
+  - <yellow>Can be obtained by hunting down
+  - <#2597D9>Steve <yellow>in the <green>Goblets of Giants<yellow>.

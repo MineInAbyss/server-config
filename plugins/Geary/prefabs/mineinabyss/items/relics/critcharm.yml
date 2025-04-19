@@ -1,22 +1,20 @@
 set.item:
-  item:
-    itemName: <#808504>Chance Strike
-    type: PAPER
-    customModelData: 144
-    lore:
-      - ":layer_3: Grade IV Relic"
-      - <gold>A relic which was formed by the tenacity of hostile creatures.
-      - <#D2D489><i>It encompasses the will to be in control granting the
-      - <#D2D489><i>wearer an increased chance of hitting vital spots.
-#ghost_seek:
-#ghost_seek:
+  itemName: <#808504>Chance Strike
+  type: PAPER
+  customModelData: 144
+  lore:
+  - ':layer_3: Grade IV Relic'
+  - <gold>A relic which was formed by the tenacity of hostile creatures.
+  - <#D2D489><i>It encompasses the will to be in control granting the
+  - <#D2D489><i>wearer an increased chance of hitting vital spots.
 disableItemInteractions: {}
 passive:
-  - match: [ inInventory ]
-    every: 10s
-    run:
-      - become: parent
-      - mythicSkills:
-          - "randomcritplayer"
+- match:
+  - inInventory
+  every: 10s
+  run:
+  - become: parent
+  - mythicSkills:
+    - randomcritplayer
 resourcepack:
   textures: mineinabyss:item/relics/crit_charm

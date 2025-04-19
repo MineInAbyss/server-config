@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:potion
-    basePotionType: minecraft:slowness
+  type: minecraft:potion
+  basePotionType: minecraft:slowness
 set.potionMixes:
   potionmixes:
-    - ingredient:
-        prefab: mineinabyss:splitjaw_gunk
-    -   ingredient:
-          prefab: mineinabyss:abyssal_snail_gunk
+  - ingredient:
+      prefab: mineinabyss:splitjaw_gunk
+  - ingredient:
+      prefab: mineinabyss:abyssal_snail_gunk

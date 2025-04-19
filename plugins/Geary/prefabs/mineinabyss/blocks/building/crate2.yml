@@ -1,9 +1,9 @@
-inherit: [mineinabyss:wood]
+inherit:
+- mineinabyss:wood
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#e6c186>Crate 2
-    customModelData: 2019
+  type: minecraft:paper
+  itemName: <#e6c186>Crate 2
+  customModelData: 2019
 set.block:
   blockType: NOTEBLOCK
   blockId: 33
@@ -17,4 +17,4 @@ blocky:sound:
   fallSound: block.amethyst_cluster.fall
 blocky:drops:
   drops:
-    - item: mineinabyss:crate2
+  - item: mineinabyss:crate2

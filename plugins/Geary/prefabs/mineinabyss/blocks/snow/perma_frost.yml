@@ -1,16 +1,14 @@
 inherit:
-  - mineinabyss:snow
+- mineinabyss:snow
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Perma Frost
-    customModelData: 2047
+  type: minecraft:paper
+  itemName: Perma Frost
+  customModelData: 2047
 set.block:
   blockType: NOTEBLOCK
   blockId: 44
-
 blocky:pack:
-  model: "mineinabyss:block/snow/perma_frost"
+  model: mineinabyss:block/snow/perma_frost
 blocky:drops:
   drops:
-    - item: mineinabyss:perma_frost
+  - item: mineinabyss:perma_frost

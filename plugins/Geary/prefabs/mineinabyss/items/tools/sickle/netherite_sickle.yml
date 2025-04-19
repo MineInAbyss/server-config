@@ -1,27 +1,26 @@
 set.item:
-  item:
-    itemName: Netherite Sickle
-    type: minecraft:netherite_hoe
-    customModelData: 1
-    durability: 2031
-    tool:
-      rules:
-        - blockTypes:
-            - "minecraft:leaves"
-          speed: 8.0
-          correctForDrops: TRUE
+  itemName: Netherite Sickle
+  type: minecraft:netherite_hoe
+  customModelData: 1
+  durability: 2031
+  tool:
+    rules:
+    - blockTypes:
+      - minecraft:leaves
+      speed: 8.0
+      correctForDrops: true
 set.recipes:
   result:
     prefab: mineinabyss:netherite_sickle
   discoverRecipes: true
   recipes:
-    - type: smithing_transform
-      template:
-        type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
-      input: mineinabyss:diamond_sickle
-      addition: minecraft:netherite_ingot
+  - type: smithing_transform
+    template:
+      type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+    input: mineinabyss:diamond_sickle
+    addition: minecraft:netherite_ingot
 observe:
   itemRightClick:
-    - become: parent
-    - mineinabyss:sickle:
-        radius: 4
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 4

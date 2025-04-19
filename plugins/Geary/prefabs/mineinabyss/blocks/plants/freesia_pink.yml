@@ -1,8 +1,7 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Freesia Pink
-    customModelData: 3014
+  type: minecraft:paper
+  itemName: Freesia Pink
+  customModelData: 3014
 set.block:
   blockType: WIRE
   blockId: 14
@@ -10,4 +9,4 @@ blocky:pack:
   model: hmcmodels:block/nature/freesia_pink
 blocky:drops:
   drops:
-    - item: mineinabyss:freesia_pink
+  - item: mineinabyss:freesia_pink

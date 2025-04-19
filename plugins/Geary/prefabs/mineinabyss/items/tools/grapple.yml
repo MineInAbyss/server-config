@@ -1,9 +1,8 @@
 disableItemInteractions: {}
 set.item:
-  item:
-    itemName: Grappling Hook
-    type: IRON_HOE
-    customModelData: 1
+  itemName: Grappling Hook
+  type: IRON_HOE
+  customModelData: 1
 mineinabyss:grapplingHook:
   range: 200
   hookSpeed: 2.0

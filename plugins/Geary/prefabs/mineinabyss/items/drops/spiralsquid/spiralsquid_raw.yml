@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#6CE5F5>Raw Spiralsquid
-    customModelData: 318
-    lore:
-      - ":layer_1::layer_4:"
-      - <#35ADBD><i>Seems like a great source of food!
-    food:
-      saturation: 0.4
-      nutrition: 2
+  type: minecraft:paper
+  itemName: <#6CE5F5>Raw Spiralsquid
+  customModelData: 318
+  lore:
+  - ':layer_1::layer_4:'
+  - <#35ADBD><i>Seems like a great source of food!
+  food:
+    saturation: 0.4
+    nutrition: 2
 replaceBurnedDrop:
   prefab: mineinabyss:spiralsquid_cooked
 resourcepack:

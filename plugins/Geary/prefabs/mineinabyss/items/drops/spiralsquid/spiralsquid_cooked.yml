@@ -1,24 +1,23 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#6CE5F5>Cooked Spiralsquid
-    customModelData: 418
-    lore:
-      - ":layer_1::layer_4:"
-      - <#35ADBD><i>Seems like a great source of food!
-    food:
-      saturation: 6
-      nutrition: 5
+  type: minecraft:paper
+  itemName: <#6CE5F5>Cooked Spiralsquid
+  customModelData: 418
+  lore:
+  - ':layer_1::layer_4:'
+  - <#35ADBD><i>Seems like a great source of food!
+  food:
+    saturation: 6
+    nutrition: 5
 resourcepack:
   textures: mineinabyss:item/food/creatures/spiralsquid_cooked
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:spiralsquid_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:spiralsquid_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:spiralsquid_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:spiralsquid_raw
+    experience: 2
+    cookingTime: 50

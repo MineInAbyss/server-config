@@ -1,30 +1,27 @@
 set.item:
-  item:
-    itemName: <#1F88ED>Respiratis
-    type: PAPER
-    customModelData: 117
-    lore:
-      - ":layer_4: Grade IV Relic"
-      - <gold>A relic composed of multiple relic materials
-      - <gold>and the gills of abyssal creatures.
-      - <#D2D489><i>On use it grants the wearer
-      - <#D2D489><i>the ability to thrive in water.
-#ghost_seek:
+  itemName: <#1F88ED>Respiratis
+  type: PAPER
+  customModelData: 117
+  lore:
+  - ':layer_4: Grade IV Relic'
+  - <gold>A relic composed of multiple relic materials
+  - <gold>and the gills of abyssal creatures.
+  - <#D2D489><i>On use it grants the wearer
+  - <#D2D489><i>the ability to thrive in water.
 disableItemInteractions: {}
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        id: respiratis
-        length: 30s
-        display: <#1F88ED>Respiratis
-    - applyPotionEffects:
-        - type: minecraft:conduit_power
-          duration: 10s
-          amplifier: 1
-          hasParticles: false
-        - type: minecraft:dolphins_grace
-          duration: 10s
-          amplifier: 1
-          hasParticles: false
-
+  - become: parent
+  - cooldown:
+      id: respiratis
+      length: 30s
+      display: <#1F88ED>Respiratis
+  - applyPotionEffects:
+    - type: minecraft:conduit_power
+      duration: 10s
+      amplifier: 1
+      hasParticles: false
+    - type: minecraft:dolphins_grace
+      duration: 10s
+      amplifier: 1
+      hasParticles: false

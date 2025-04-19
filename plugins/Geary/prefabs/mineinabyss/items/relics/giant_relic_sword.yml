@@ -1,28 +1,27 @@
 set.item:
-  item:
-    type: minecraft:netherite_sword
-    customModelData: 4
-    itemName: <#15ABC2><b>Crescent Blade
-    lore:
-      - ':layer_3: Grade I Relic'
-      - <#249C9C>A weapon that can tear into the fabric of the force field.
-      - <#195959><i>It is known to create crescent shaped slashes damaging
-      - <#195959><i>all organic matter that it comes into contact with.
-    unbreakable: true
+  type: minecraft:netherite_sword
+  customModelData: 4
+  itemName: <#15ABC2><b>Crescent Blade
+  lore:
+  - ':layer_3: Grade I Relic'
+  - <#249C9C>A weapon that can tear into the fabric of the force field.
+  - <#195959><i>It is known to create crescent shaped slashes damaging
+  - <#195959><i>all organic matter that it comes into contact with.
+  unbreakable: true
 observe:
   itemLeftClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - EnchantingLevel{l=>1} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Experience
-    - cooldown:
-          id: cyanslash
-          length: 2s
-          display: <#15ABC2>Crescent
-    - mythicSkills:
-          - "Cyan_Slash"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: cyanslash
+      length: 2s
+      display: <#15ABC2>Crescent
+  - mythicSkills:
+    - Cyan_Slash
 resourcepack:
   model: mineinabyss:item/relics/relicsword

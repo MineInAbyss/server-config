@@ -1,26 +1,25 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: "<#2597D9>Cooked Ashimite Meat"
-    customModelData: 411
-    lore:
-      - ":layer_5:"
-      - <#824E21><i>Very tasty and rich in nutrients!
-    food:
-      nutrition: 8
-      saturation: 12.8
-      usingConvertsTo:
-        prefab: mineinabyss:ashimite_meat_bone
+  type: minecraft:paper
+  itemName: <#2597D9>Cooked Ashimite Meat
+  customModelData: 411
+  lore:
+  - ':layer_5:'
+  - <#824E21><i>Very tasty and rich in nutrients!
+  food:
+    nutrition: 8
+    saturation: 12.8
+    usingConvertsTo:
+      prefab: mineinabyss:ashimite_meat_bone
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:ashimite_meat_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:ashimite_meat_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:ashimite_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:ashimite_meat_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/ashimite_meat_cooked

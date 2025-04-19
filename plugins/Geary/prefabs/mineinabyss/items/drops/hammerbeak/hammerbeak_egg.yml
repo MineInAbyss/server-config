@@ -1,13 +1,12 @@
 set.item:
-  item:
-    type: minecraft:egg
-    itemName: <#613F0C>Hammerbeak Egg
-    customModelData: 1
-    lore:
-      - ":layer_1::layer_2::layer_4:"
-      - <yellow>Can be used as a cooking ingredient
-      - <yellow>or mischievious acts of tomfoolery.
-      - <#A9CCCA><i>Mother Hammerbeak does
-      - <#A9CCCA><i>not look to happy...
+  type: minecraft:egg
+  itemName: <#613F0C>Hammerbeak Egg
+  customModelData: 1
+  lore:
+  - ':layer_1::layer_2::layer_4:'
+  - <yellow>Can be used as a cooking ingredient
+  - <yellow>or mischievious acts of tomfoolery.
+  - <#A9CCCA><i>Mother Hammerbeak does
+  - <#A9CCCA><i>not look to happy...
 resourcepack:
   textures: mineinabyss:item/creature_drops/hammerbeak_egg

@@ -1,17 +1,16 @@
 set.item:
-  item:
-    type: minecraft:potion
-    itemName: "<#b5955f>Haste Potion"
-    color: 233,177,21
-    lore:
-      - <light_purple>Haste</light_purple> <blue>(6:00)</blue>
-    itemFlags:
-      - HIDE_ADDITIONAL_TOOLTIP
-      - HIDE_ENCHANTS
-    customPotionEffects:
-      - type: minecraft:haste
-        duration: 8m
+  type: minecraft:potion
+  itemName: <#b5955f>Haste Potion
+  color: 233,177,21
+  lore:
+  - <light_purple>Haste</light_purple> <blue>(6:00)</blue>
+  itemFlags:
+  - HIDE_ADDITIONAL_TOOLTIP
+  - HIDE_ENCHANTS
+  customPotionEffects:
+  - type: minecraft:haste
+    duration: 8m
 set.potionMixes:
   potionmixes:
-    - ingredient: minecraft:redstone
-      input: mineinabyss:haste_potion
+  - ingredient: minecraft:redstone
+    input: mineinabyss:haste_potion

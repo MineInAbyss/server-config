@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:bone_meal
-    itemName: <#6e2e3c>Rinsipede Segments
-    customModelData: 1
-    lore:
-      - ":layer_3:"
-      - <#a39039><i>I've heard their body makes
-      - <#a39039><i>for a great fertiliser.
+  type: minecraft:bone_meal
+  itemName: <#6e2e3c>Rinsipede Segments
+  customModelData: 1
+  lore:
+  - ':layer_3:'
+  - <#a39039><i>I've heard their body makes
+  - <#a39039><i>for a great fertiliser.
 resourcepack:
   textures: mineinabyss:item/creature_drops/rinsipede_segments

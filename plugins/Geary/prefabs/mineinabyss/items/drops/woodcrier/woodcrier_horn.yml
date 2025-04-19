@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:brown_concrete
-    itemName: <#963c0f>Woodcrier Horn
-    customModelData: 1
-    lore:
-      - ":layer_1::layer_2:"
-      - <#A68348><i>Its hard and solid...
-      - <#A68348><i>I can build structures with this.
+  type: minecraft:brown_concrete
+  itemName: <#963c0f>Woodcrier Horn
+  customModelData: 1
+  lore:
+  - ':layer_1::layer_2:'
+  - <#A68348><i>Its hard and solid...
+  - <#A68348><i>I can build structures with this.
 resourcepack:
   textures: mineinabyss:item/creature_drops/woodcrier_horn

@@ -1,14 +1,13 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#7a4e48>Foliage 1
-    customModelData: 3001
+  type: minecraft:paper
+  itemName: <#7a4e48>Foliage 1
+  customModelData: 3001
 blocky:placableOn:
   floor: true
   ceiling: true
   wall: false
   blocks:
-    - STONE
+  - STONE
 set.block:
   blockType: WIRE
   blockId: 1
@@ -17,4 +16,4 @@ blocky:pack:
 blocky:tallWire: {}
 blocky:drops:
   drops:
-    - item: mineinabyss:foliage1
+  - item: mineinabyss:foliage1

@@ -1,11 +1,10 @@
 set.item:
-  item:
-    type: minecraft:shield
-    customModelData: 3
-    itemName: <#FFC0CB><b>Heart Shield
-    lore:
-      - <#C6CC8A>A shield forged deep, unyielding, strong,
-      - <#C6CC8A>Your love, my guard, through light and shade,
-      - <#C6CC8A>In every trial, our vow is made.
+  type: minecraft:shield
+  customModelData: 3
+  itemName: <#FFC0CB><b>Heart Shield
+  lore:
+  - <#C6CC8A>A shield forged deep, unyielding, strong,
+  - <#C6CC8A>Your love, my guard, through light and shade,
+  - <#C6CC8A>In every trial, our vow is made.
 resourcepack:
   model: mineinabyss:item/event/heart_shield

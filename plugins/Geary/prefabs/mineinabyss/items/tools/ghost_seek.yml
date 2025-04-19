@@ -1,37 +1,20 @@
 set.item:
-  item:
-    itemName: <gold>Damaged Ghost Seek
-    type: CARVED_PUMPKIN
-    customModelData: 108
-    lore:
-      - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-      - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-      - <#D2D489>guiding its wielder toward hidden relics.
+  itemName: <gold>Damaged Ghost Seek
+  type: CARVED_PUMPKIN
+  customModelData: 108
+  lore:
+  - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+  - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+  - <#D2D489>guiding its wielder toward hidden relics.
 prevent.enchanting: {}
-#ghost_seek:
-#hat: {}
 disableItemInteractions: {}
 passive:
-  - match: [ equipped ]
-    every: 20s
-    run:
-      - become: parent
-      - mythicSkills:
-          - "brokenscout"
-
-
-#observe:
-#  itemRightClick:
-#    - become: parent
-#    - ensure:
-#        player:
-#          sneaking: true
-#    - cooldown:
-#        id: brokenscout
-#        length: 10s
-#        display: <#617B94>Relic Scout
-#    - mythicSkills:
- #       - "brokenscout"
+- match:
+  - equipped
+  every: 20s
+  run:
+  - become: parent
+  - mythicSkills:
+    - brokenscout
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
-

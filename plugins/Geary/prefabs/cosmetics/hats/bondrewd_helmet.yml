@@ -1,13 +1,12 @@
 set.item:
-  item:
-    itemName: <#370391>Bondrewd's Helmet
-    lore:
-      - <#6F19D1><i>
-      - <#6F19D1><i>Helmet worn by #1 dad
-    type: POTION
-    color: "#FFFFFF"
-    customModelData: 301
-    itemFlags:
-      - HIDE_ADDITIONAL_TOOLTIP
+  itemName: <#370391>Bondrewd's Helmet
+  lore:
+  - <#6F19D1><i>
+  - <#6F19D1><i>Helmet worn by
+  type: POTION
+  color: '#FFFFFF'
+  customModelData: 301
+  itemFlags:
+  - HIDE_ADDITIONAL_TOOLTIP
 hat: {}
 disableItemInteractions: {}

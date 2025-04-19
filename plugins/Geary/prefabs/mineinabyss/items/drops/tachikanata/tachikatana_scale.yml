@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:prismarine_shard
-    customModelData: 2
-    itemName: <#00FFFF>Tachikatana Scale
-    lore:
-      - ":layer_4::layer_5:"
-      - <#1B5BAD><i>A shiny scale knocked off the Tachikatana!
-      - <#1B5BAD><i>They're rumored to be one of the most waterproof
-      - <#1B5BAD><i>materials in the <green>Abyss<#1B5BAD>.
+  type: minecraft:prismarine_shard
+  customModelData: 2
+  itemName: <#00FFFF>Tachikatana Scale
+  lore:
+  - ':layer_4::layer_5:'
+  - <#1B5BAD><i>A shiny scale knocked off the Tachikatana!
+  - <#1B5BAD><i>They're rumored to be one of the most waterproof
+  - <#1B5BAD><i>materials in the <green>Abyss<#1B5BAD>.
 resourcepack:
   textures: mineinabyss:item/creature_drops/tachikatana_scale

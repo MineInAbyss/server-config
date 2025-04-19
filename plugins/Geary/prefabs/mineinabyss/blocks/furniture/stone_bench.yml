@@ -1,11 +1,11 @@
-inherit: [mineinabyss:ground_furniture]
+inherit:
+- mineinabyss:ground_furniture
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#33404d>Stone Bench
-    customModelData: 1000
+  type: minecraft:paper
+  itemName: <#33404d>Stone Bench
+  customModelData: 1000
 blocky:seats:
-  - y: 0.5
+- y: 0.5
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -15,9 +15,8 @@ blocky:sound:
 blocky:furniture:
   rotationType: VERY_STRICT
   collisionHitbox:
-    - x: 0
-    - x: 1
+  - x: 0
+  - x: 1
 blocky:drops:
   drops:
-    - item: mineinabyss:stone_bench
-
+  - item: mineinabyss:stone_bench

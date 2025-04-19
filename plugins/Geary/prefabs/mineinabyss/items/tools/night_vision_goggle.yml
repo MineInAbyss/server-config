@@ -1,25 +1,24 @@
 set.item:
-  item:
-    itemName: <#C13523><b>Night Vision Goggle
-    type: minecraft:paper
-    customModelData: 135
-    lore:
-      - <#D2D489>A pair of Relic-grade night vision goggles,
-      - <#D2D489>crafted with an intricate, almost organic design.
-      - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
-      - <#D2D489>to darkness, revealing what the abyss hides.
-
+  itemName: <#C13523><b>Night Vision Goggle
+  type: minecraft:paper
+  customModelData: 135
+  lore:
+  - <#D2D489>A pair of Relic-grade night vision goggles,
+  - <#D2D489>crafted with an intricate, almost organic design.
+  - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
+  - <#D2D489>to darkness, revealing what the abyss hides.
 hat: {}
 disableItemInteractions: {}
 passive:
-  - match: [ equipped ]
-    every: 8s
-    run:
-      - become: parent
-      - applyPotionEffects:
-          - type: minecraft:night_vision
-            duration: 30s
-            amplifier: 1
-            hasParticles: false
+- match:
+  - equipped
+  every: 8s
+  run:
+  - become: parent
+  - applyPotionEffects:
+    - type: minecraft:night_vision
+      duration: 30s
+      amplifier: 1
+      hasParticles: false
 resourcepack:
   model: mineinabyss:item/relics/ngv_alt

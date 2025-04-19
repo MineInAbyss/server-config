@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: Music Disc
-    customModelData: 2103
-    maxStackSize: 1
-    rarity: RARE
-    jukeboxPlayable:
-      song: mineinabyss:the_lilypad_uncertain_surroundings
-      showInTooltip: true
+  type: minecraft:paper
+  itemName: Music Disc
+  customModelData: 2103
+  maxStackSize: 1
+  rarity: RARE
+  jukeboxPlayable:
+    song: mineinabyss:the_lilypad_uncertain_surroundings
+    showInTooltip: true
 resourcepack:
   textures: mineinabyss:item/other/music_discs/music_disc_blue

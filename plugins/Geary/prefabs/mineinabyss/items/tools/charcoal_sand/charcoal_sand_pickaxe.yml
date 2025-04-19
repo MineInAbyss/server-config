@@ -1,20 +1,19 @@
 set.item:
-  item:
-    itemName: Charcoal Sand Pickaxe
-    type: DIAMOND_PICKAXE
-    customModelData: 1
-    durability: 3000
+  itemName: Charcoal Sand Pickaxe
+  type: DIAMOND_PICKAXE
+  customModelData: 1
+  durability: 3000
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: shaped
-      items:
-        M: mineinabyss:charcoal_sand_ingot
-        S: minecraft:stick
-      configuration: |-
-        |MMM|
-        | S |
-        | S |
+  - type: shaped
+    items:
+      M: mineinabyss:charcoal_sand_ingot
+      S: minecraft:stick
+    configuration: |-
+      |MMM|
+      | S |
+      | S |
 resourcepack:
   textures: mineinabyss:item/tools/charcoal_sand_pickaxe
   parentModel: item/handheld

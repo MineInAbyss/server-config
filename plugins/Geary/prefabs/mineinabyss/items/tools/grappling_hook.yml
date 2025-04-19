@@ -1,18 +1,14 @@
 disableItemInteractions: {}
 set.item:
-  item:
-    itemName: Reg Arm
-    type: GOLDEN_HOE
-    customModelData: 1
+  itemName: Reg Arm
+  type: GOLDEN_HOE
+  customModelData: 1
 observe:
   itemRightClick:
-    - become: parent
-    - cooldown:
-        id: grapplehook
-        length: 1s
-        display: <#616161>Reg Arm
-    - mythicSkills:
-        - "GrappleHook"
-
-
-
+  - become: parent
+  - cooldown:
+      id: grapplehook
+      length: 1s
+      display: <#616161>Reg Arm
+  - mythicSkills:
+    - GrappleHook

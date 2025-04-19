@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:echo_shard
-    itemName: "<#800080>Edusan Whisker"
-    customModelData: 1
-    lore:
-      - ":layer_5:"
-      - <#ee5bb8><i>When I touch this I start
-      - <#ee5bb8><i>hearing voices...
+  type: minecraft:echo_shard
+  itemName: <#800080>Edusan Whisker
+  customModelData: 1
+  lore:
+  - ':layer_5:'
+  - <#ee5bb8><i>When I touch this I start
+  - <#ee5bb8><i>hearing voices...
 disableItemInteractions: {}
 resourcepack:
   textures: mineinabyss:item/creature_drops/edusan_whisker

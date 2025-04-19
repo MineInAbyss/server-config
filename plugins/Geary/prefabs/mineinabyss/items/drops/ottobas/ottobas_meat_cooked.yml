@@ -1,25 +1,24 @@
 set.item:
-  item:
-    type: minecraft:paper
-    itemName: <#D8D8D8>Cooked Ottobas Meat
-    customModelData: 414
-    lore:
-      - ":layer_2:"
-      - <white><i>This should be enough food
-      - <white><i>to last for daaaaayyss!!
-    food:
-      saturation: 12.8
-      nutrition: 8
+  type: minecraft:paper
+  itemName: <#D8D8D8>Cooked Ottobas Meat
+  customModelData: 414
+  lore:
+  - ':layer_2:'
+  - <white><i>This should be enough food
+  - <white><i>to last for daaaaayyss!!
+  food:
+    saturation: 12.8
+    nutrition: 8
 set.recipes:
   discoverRecipes: true
   recipes:
-    - type: furnace
-      input: mineinabyss:ottobas_meat_raw
-      experience: 1
-      cookingTime: 100
-    - type: smoking
-      input: mineinabyss:ottobas_meat_raw
-      experience: 2
-      cookingTime: 50
+  - type: furnace
+    input: mineinabyss:ottobas_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:ottobas_meat_raw
+    experience: 2
+    cookingTime: 50
 resourcepack:
   textures: mineinabyss:item/food/creatures/ottobas_meat_cooked

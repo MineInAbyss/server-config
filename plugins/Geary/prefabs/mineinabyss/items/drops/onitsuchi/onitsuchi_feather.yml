@@ -1,10 +1,9 @@
 set.item:
-  item:
-    type: minecraft:feather
-    itemName: <#5C471D>Onitsuchi Feather
-    customModelData: 4
-    lore:
-      - ":layer_4::layer_5:"
-      - <#A9CCCA>Just a feather, innit?
+  type: minecraft:feather
+  itemName: <#5C471D>Onitsuchi Feather
+  customModelData: 4
+  lore:
+  - ':layer_4::layer_5:'
+  - <#A9CCCA>Just a feather, innit?
 resourcepack:
   textures: mineinabyss:item/creature_drops/onitsuchi_feather

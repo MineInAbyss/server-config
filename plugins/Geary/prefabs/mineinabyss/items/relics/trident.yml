@@ -1,47 +1,41 @@
 set.item:
-  item:
-    itemName: <#68CCBF><b>Aqua Tear
-    type: TRIDENT
-    customModelData: 1
-    lore:
-      - ":layer_4: Grade I Relic"
-      - <#3C8C82>A spear shape object carved out of the core from
-      - <#3C8C82>a Goblet of Giants containing netherworld runes.
-      - <#265c55><i>It is rumored to return to the user after being thrown.
-    enchantments:
-      - enchant: minecraft:riptide
-        level: 1
-      - enchant: minecraft:impaling
-        level: 5
-      - enchant: minecraft:sharpness
-        level: 5      
-    unbreakable: true
-#ghost_seek:
+  itemName: <#68CCBF><b>Aqua Tear
+  type: TRIDENT
+  customModelData: 1
+  lore:
+  - ':layer_4: Grade I Relic'
+  - <#3C8C82>A spear shape object carved out of the core from
+  - <#3C8C82>a Goblet of Giants containing netherworld runes.
+  - <#265c55><i>It is rumored to return to the user after being thrown.
+  enchantments:
+  - enchant: minecraft:riptide
+    level: 1
+  - enchant: minecraft:impaling
+    level: 5
+  - enchant: minecraft:sharpness
+    level: 5
+  unbreakable: true
 prevent.enchanting: {}
 disableItemInteractions: {}
 observe:
   itemLeftClick:
-    - become: parent
-    - ensure:
-        mythicConditions:
-          - hasaurastacks{n=trident;s=3} true
-      onFail:
-        - sendActionBar:
-            text: <red>Out of Charge
-    - mythicSkills:
-        - "throwtrident"
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=trident;s=3} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Charge
+  - mythicSkills:
+    - throwtrident
 passive:
-  - match: [ inHand ]
-    every: 1s
-    run:
-      - become: parent
-      - ensure:
-          player:
-            sneaking: true
-      - mythicSkills:
-          - "trident_charge"
-
-
-
-
-
+- match:
+  - inHand
+  every: 1s
+  run:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+  - mythicSkills:
+    - trident_charge

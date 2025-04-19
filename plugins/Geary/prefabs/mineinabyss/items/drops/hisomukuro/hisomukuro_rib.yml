@@ -1,12 +1,11 @@
 set.item:
-  item:
-    type: minecraft:bone
-    itemName: <#c7bcad>Hisomukuro Rib
-    customModelData: 4
-    lore:
-      - ":layer_5:"
-      - <#524D47><i>Its bony on the outside but
-      - <#524D47><i>Metallic on the inside!
-      - <#524D47><i>prehaps i can use this to launch something...
+  type: minecraft:bone
+  itemName: <#c7bcad>Hisomukuro Rib
+  customModelData: 4
+  lore:
+  - ':layer_5:'
+  - <#524D47><i>Its bony on the outside but
+  - <#524D47><i>Metallic on the inside!
+  - <#524D47><i>prehaps i can use this to launch something...
 resourcepack:
   textures: mineinabyss:item/creature_drops/hisomukuro_rib
