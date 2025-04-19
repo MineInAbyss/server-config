@@ -8,8 +8,9 @@ set.item:
   - ':troll:'
   - <gold>Found during April Fools 2025.
   - <gold>All hail the princess.
+  equippable:
+    slot: HEAD
 prevent.enchanting: {}
-hat: {}
 disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/event/tama_hat

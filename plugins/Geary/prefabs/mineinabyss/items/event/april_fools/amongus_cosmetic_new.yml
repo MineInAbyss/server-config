@@ -8,8 +8,9 @@ set.item:
   - ':troll:'
   - <gold>Found during April Fools 2025.
   - <gold>Inconveniently conspicious.
+  equippable:
+    slot: HEAD
 prevent.enchanting: {}
-hat: {}
 disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/event/red_imposter_hat

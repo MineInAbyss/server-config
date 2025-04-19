@@ -8,8 +8,9 @@ set.item:
   - ':troll:'
   - <gold>Found during April Fools 2025.
   - <gold>You thought this was a good item didn't you.
+  equippable:
+    slot: HEAD
 prevent.enchanting: {}
-hat: {}
 disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/event/clown_mask
