@@ -11,8 +11,6 @@ set.item:
   enchantments:
   - enchant: minecraft:sharpness
     level: 1
-  itemFlags:
-  - HIDE_ENCHANTS
 hat: {}
 disableItemInteractions: {}
 prevent.enchanting: {}

@@ -3,9 +3,6 @@ set.item:
   itemName: <#b5955f>Haste Potion
   lore:
   - <light_purple>Haste II</light_purple> <blue>(3:00)</blue>
-  itemFlags:
-  - HIDE_ADDITIONAL_TOOLTIP
-  - HIDE_ENCHANTS
   customPotionEffects:
   - type: minecraft:haste
     duration: 3m
