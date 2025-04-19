@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:glowstone_dust
   itemName: <#6C19BF>Rohana Powder
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_2::layer_4:'
   - <#FF1FB4><i>The closest thing to magical

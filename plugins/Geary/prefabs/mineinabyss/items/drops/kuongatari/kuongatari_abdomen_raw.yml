@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#1FB53D>Kuongatari Abdomen
-  customModelData: 321
+  customModelData:
+    floats:
+    - 321
   lore:
   - ':layer_4::layer_5:'
   - <#167D2A>Only the desperate eat this raw...

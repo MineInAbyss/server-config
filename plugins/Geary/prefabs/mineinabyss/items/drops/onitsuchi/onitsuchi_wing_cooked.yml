@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#5C471D>Cooked Onitsuchi Wing
-  customModelData: 408
+  customModelData:
+    floats:
+    - 408
   lore:
   - ':layer_4::layer_5:'
   - <yellow>Can also be acquired from cooking

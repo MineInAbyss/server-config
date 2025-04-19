@@ -1,7 +1,9 @@
 set.item:
   itemName: <gold>Refined Ghost Seek
   type: CARVED_PUMPKIN
-  customModelData: 108
+  customModelData:
+    floats:
+    - 108
   lore:
   - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
   - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,

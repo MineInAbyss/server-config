@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#454A46>AOE Sphere
-  customModelData: 153
+  customModelData:
+    floats:
+    - 153
   lore:
   - <gold>It is an egg-shaped relic with
   - <gold>black patterns on its surface.

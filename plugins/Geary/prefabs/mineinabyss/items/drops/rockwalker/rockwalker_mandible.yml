@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:brick
   itemName: <#BE6400>Rock-walker Mandible
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_2::layer_3:'
   - <#A68348><i>The rockwalkers use these as their climbing

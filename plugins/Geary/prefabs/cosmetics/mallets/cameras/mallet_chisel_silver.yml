@@ -1,5 +1,7 @@
 set.item:
   type: PAPER
-  customModelData: 4007
+  customModelData:
+    floats:
+    - 4007
 resourcepack:
   model: event:item/mallet_chisel_silver

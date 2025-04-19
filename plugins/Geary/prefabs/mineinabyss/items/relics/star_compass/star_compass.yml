@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:compass
-  customModelData: 125
+  customModelData:
+    floats:
+    - 125
   itemName: <dark_aqua>Star Compass
   lore:
   - <aqua>Points towards the center of the <green>Abyss

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#3D3D3D>Raw Inbyo Meat
-  customModelData: 301
+  customModelData:
+    floats:
+    - 301
   lore:
   - ':layer_2:'
   - <#B5B5B5><i>Doesn't look very tasty...

@@ -1,7 +1,9 @@
 set.item:
   itemName: Stone Sickle
   type: minecraft:stone_hoe
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   durability: 131
   tool:
     rules:

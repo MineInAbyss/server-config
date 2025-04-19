@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#59ac7a>Cooked Dosetori Meat
-  customModelData: 404
+  customModelData:
+    floats:
+    - 404
   lore:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>Tastes like fried chicken.

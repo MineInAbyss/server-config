@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#7D9472>Spread Sphere
-  customModelData: 151
+  customModelData:
+    floats:
+    - 151
   lore:
   - <gold>It is an egg-shaped relic with
   - <gold>grey patterns on its surface.

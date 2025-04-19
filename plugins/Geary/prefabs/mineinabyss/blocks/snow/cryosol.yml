@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Cryosol
-  customModelData: 2042
+  customModelData:
+    floats:
+    - 2042
 set.block:
   blockType: NOTEBLOCK
   blockId: 35

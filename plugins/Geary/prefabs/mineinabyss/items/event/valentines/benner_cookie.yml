@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#EBEBEB><b>Benner Cookie
-  customModelData: 132
+  customModelData:
+    floats:
+    - 132
   lore:
   - <#DB8888>Has a strong taste
   - <#DB8888>Of peace and love

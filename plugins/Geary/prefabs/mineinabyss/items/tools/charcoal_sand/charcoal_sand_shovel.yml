@@ -1,7 +1,9 @@
 set.item:
   itemName: Charcoal Sand Shovel
   type: DIAMOND_SHOVEL
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   durability: 3000
 set.recipes:
   discoverRecipes: true

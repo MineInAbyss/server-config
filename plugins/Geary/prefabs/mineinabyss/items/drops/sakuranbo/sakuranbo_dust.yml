@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:gunpowder
   itemName: <gold>Sakuranbo Dust
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_3:'
   - <gold><i>Careful! Ignites easily.

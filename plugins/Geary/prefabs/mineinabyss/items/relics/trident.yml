@@ -1,7 +1,9 @@
 set.item:
   itemName: <#68CCBF><b>Aqua Tear
   type: TRIDENT
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_4: Grade I Relic'
   - <#3C8C82>A spear shape object carved out of the core from

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:black_wool
   itemName: <#824243>Beniguma Fur
-  customModelData: 226
+  customModelData:
+    floats:
+    - 226
   lore:
   - ':layer_1:'
   - <#4a4558><i>This used to be a cute fox-like creature...

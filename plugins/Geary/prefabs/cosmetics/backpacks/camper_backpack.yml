@@ -2,6 +2,8 @@ set.item:
   itemName: <#FF9D26>Camper Backpack
   type: POTION
   color: 98, 168, 255
-  customModelData: 104
+  customModelData:
+    floats:
+    - 104
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: Raw Cut Meat
-  customModelData: 130
+  customModelData:
+    floats:
+    - 130
   food:
     saturation: 1.8
     nutrition: 3

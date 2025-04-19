@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:amethyst_shard
   itemName: <#303e77>Crystal Hisoishi Claw
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_2::layer_3:'
   - <#649378><i>This sharp claw can dig through stone

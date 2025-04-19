@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#D12B26>Cooked Corpse-Weeper Meat
-  customModelData: 412
+  customModelData:
+    floats:
+    - 412
   lore:
   - ':layer_2:'
   - <red><i>The stench is awful but it tastes so good...

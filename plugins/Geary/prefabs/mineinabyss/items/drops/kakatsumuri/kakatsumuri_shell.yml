@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:prismarine_crystals
   itemName: <#7D93FF>Kakatsumuri Shell
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   lore:
   - ':layer_3:'
   - <#B8FFBA><i>Even after death the shell

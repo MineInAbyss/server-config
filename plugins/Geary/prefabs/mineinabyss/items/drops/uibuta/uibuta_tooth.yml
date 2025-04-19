@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:bone
   itemName: <#8F2222>Uibuta Tooth
-  customModelData: 3
+  customModelData:
+    floats:
+    - 3
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>It is fairly big, but suprisingly blunt...

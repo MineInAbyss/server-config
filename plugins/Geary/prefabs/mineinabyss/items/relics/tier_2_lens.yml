@@ -1,7 +1,9 @@
 set.item:
   itemName: <#AB8AE6>Hyalos Manifest
   type: minecraft:blue_stained_glass
-  customModelData: 149
+  customModelData:
+    floats:
+    - 149
   lore:
   - ':layer_5: Tier 2 Lens'
   - <#D2D489>A luminous material is crafted from a

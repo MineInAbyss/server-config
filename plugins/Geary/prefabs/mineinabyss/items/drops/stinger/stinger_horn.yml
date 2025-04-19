@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:quartz
   itemName: <#03AC13>Stinger Horn
-  customModelData: 3
+  customModelData:
+    floats:
+    - 3
   lore:
   - ':layer_2::layer_4::layer_5:'
   - <#167D2A><i>The beak of a Stinger sharp enough to pierce flesh.

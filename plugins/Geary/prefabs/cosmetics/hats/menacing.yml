@@ -1,7 +1,9 @@
 set.item:
   itemName: <#8F00D6>ゴゴゴMenacingゴゴゴ
   type: POTION
-  customModelData: 311
+  customModelData:
+    floats:
+    - 311
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
 hat: {}

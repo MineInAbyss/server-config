@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#BDBDBD>Cooked Neritantan Meat
-  customModelData: 409
+  customModelData:
+    floats:
+    - 409
   lore:
   - ':layer_2::layer_3:'
   - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.

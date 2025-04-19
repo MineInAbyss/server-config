@@ -2,4 +2,6 @@ set.item:
   itemName: <#FFA812>Bell
   type: POTION
   color: '#FFFFFF'
-  customModelData: 200
+  customModelData:
+    floats:
+    - 200

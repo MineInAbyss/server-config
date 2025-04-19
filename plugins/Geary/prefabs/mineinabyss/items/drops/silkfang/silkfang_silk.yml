@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:string
   itemName: <#116AAD>Silkfang Silk
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   lore:
   - ':layer_1::layer_2:'
   - <#ED4C4C><i>Somewhat fine silk with a

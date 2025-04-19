@@ -4,7 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Hanging Flower
-  customModelData: 1003
+  customModelData:
+    floats:
+    - 1003
 blocky:furniture: {}
 blocky:drops:
   drops:

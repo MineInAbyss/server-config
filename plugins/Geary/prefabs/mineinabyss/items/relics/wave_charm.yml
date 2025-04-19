@@ -1,7 +1,9 @@
 set.item:
   itemName: <dark_aqua>Tidal Dew
   type: PAPER
-  customModelData: 141
+  customModelData:
+    floats:
+    - 141
   lore:
   - ':layer_4: Grade III Relic'
   - <gold>A talisman deeply intertwined with the force fields humidity.

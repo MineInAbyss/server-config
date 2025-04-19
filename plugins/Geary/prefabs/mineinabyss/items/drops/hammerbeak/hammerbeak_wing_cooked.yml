@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#613F0C>Cooked Hammerbeak Wing
-  customModelData: 406
+  customModelData:
+    floats:
+    - 406
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <yellow>A staple food among delvers.

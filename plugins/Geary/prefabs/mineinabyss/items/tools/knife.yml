@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: Knife
-  customModelData: 129
+  customModelData:
+    floats:
+    - 129
   maxStackSize: 1
   lore:
   - <yellow>Used to cut meat into smaller pieces.

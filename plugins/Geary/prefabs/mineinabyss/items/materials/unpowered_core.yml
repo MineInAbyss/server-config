@@ -1,7 +1,9 @@
 set.item:
   itemName: Unpowered Core
   type: PAPER
-  customModelData: 156
+  customModelData:
+    floats:
+    - 156
 set.recipes:
   discoverRecipes: true
   result:

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#6CE5F5>Raw Spiralsquid
-  customModelData: 318
+  customModelData:
+    floats:
+    - 318
   lore:
   - ':layer_1::layer_4:'
   - <#35ADBD><i>Seems like a great source of food!

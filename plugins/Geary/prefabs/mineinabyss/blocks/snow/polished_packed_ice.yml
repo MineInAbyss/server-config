@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Polished Packed Ice
-  customModelData: 2048
+  customModelData:
+    floats:
+    - 2048
 set.block:
   blockType: NOTEBLOCK
   blockId: 45

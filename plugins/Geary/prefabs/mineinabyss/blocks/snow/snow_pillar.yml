@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Snow Pillar
-  customModelData: 2050
+  customModelData:
+    floats:
+    - 2050
 set.block:
   blockType: NOTEBLOCK
   blockId: 47

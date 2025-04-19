@@ -5,7 +5,9 @@ set.item:
   - <#6F19D1><i>Helmet worn by
   type: POTION
   color: '#FFFFFF'
-  customModelData: 301
+  customModelData:
+    floats:
+    - 301
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
 hat: {}

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:hanging_roots
   itemName: <#696112>Spittleshrub Root
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_3:'
   - <#A68348><i>This looks like a pretty vital ingredient

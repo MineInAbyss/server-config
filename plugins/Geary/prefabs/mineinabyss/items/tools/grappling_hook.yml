@@ -2,7 +2,9 @@ disableItemInteractions: {}
 set.item:
   itemName: Reg Arm
   type: GOLDEN_HOE
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
 observe:
   itemRightClick:
   - become: parent

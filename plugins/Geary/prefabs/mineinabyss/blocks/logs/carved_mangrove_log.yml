@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Carved Mangrove Log
-  customModelData: 2025
+  customModelData:
+    floats:
+    - 2025
 set.block:
   blockType: NOTEBLOCK
   blockId: 17

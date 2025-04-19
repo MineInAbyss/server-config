@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Love Potion
-  customModelData: 133
+  customModelData:
+    floats:
+    - 133
 observe:
   itemRightClick:
   - become: parent

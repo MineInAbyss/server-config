@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#b754c2>Cooked Billabonk Leg
-  customModelData: 405
+  customModelData:
+    floats:
+    - 405
   lore:
   - ':layer_2:'
   - <#0357AB><i>Moves when you apply electricity.

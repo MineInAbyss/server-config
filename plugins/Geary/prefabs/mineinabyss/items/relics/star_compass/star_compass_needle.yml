@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:paper
-  customModelData: 124
+  customModelData:
+    floats:
+    - 124
   itemName: <dark_aqua>Star Compass Needle
   lore:
   - <dark_green>Used to craft a <#447881>Star Compass

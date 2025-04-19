@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Plant
-  customModelData: 1005
+  customModelData:
+    floats:
+    - 1005
 blocky:furniture:
   rotationType: NONE
 blocky:drops:

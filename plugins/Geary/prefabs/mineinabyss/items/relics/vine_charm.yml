@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:paper
-  customModelData: 138
+  customModelData:
+    floats:
+    - 138
   itemName: <#51C947><b>Ivy Call
   lore:
   - ':layer_1::layer_2: Grade II Relic'

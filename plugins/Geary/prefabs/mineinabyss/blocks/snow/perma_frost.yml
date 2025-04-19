@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Perma Frost
-  customModelData: 2047
+  customModelData:
+    floats:
+    - 2047
 set.block:
   blockType: NOTEBLOCK
   blockId: 44

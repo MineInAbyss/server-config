@@ -1,5 +1,7 @@
 set.item:
   itemName: <dark_gray>Grim Ripper
   type: minecraft:paper
-  customModelData: 106
+  customModelData:
+    floats:
+    - 106
 disableItemInteractions: {}

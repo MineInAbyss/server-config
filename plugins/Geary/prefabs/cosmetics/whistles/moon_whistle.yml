@@ -2,7 +2,9 @@ set.item:
   itemName: <#9E1E84>Moon Whistle
   type: POTION
   color: '#FFFFFF'
-  customModelData: 203
+  customModelData:
+    floats:
+    - 203
 disableItemInteractions: {}
 observe:
   itemRightClick:

@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Carved Warped Stem
-  customModelData: 2028
+  customModelData:
+    floats:
+    - 2028
 set.block:
   blockType: NOTEBLOCK
   blockId: 26

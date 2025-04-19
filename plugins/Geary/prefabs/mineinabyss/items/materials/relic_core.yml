@@ -1,7 +1,9 @@
 set.item:
   itemName: Relic Core
   type: PAPER
-  customModelData: 157
+  customModelData:
+    floats:
+    - 157
 set.recipes:
   discoverRecipes: true
   result:

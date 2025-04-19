@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Packed Ice Bricks
-  customModelData: 2045
+  customModelData:
+    floats:
+    - 2045
 set.block:
   blockType: NOTEBLOCK
   blockId: 40

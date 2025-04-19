@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: Snow Tiles
-  customModelData: 2051
+  customModelData:
+    floats:
+    - 2051
 set.block:
   blockType: NOTEBLOCK
   blockId: 50

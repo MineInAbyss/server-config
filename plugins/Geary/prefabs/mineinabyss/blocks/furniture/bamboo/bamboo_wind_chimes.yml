@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Wind Chime
-  customModelData: 1009
+  customModelData:
+    floats:
+    - 1009
 blocky:furniture:
   interactionHitbox:
   - width: 0.4

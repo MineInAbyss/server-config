@@ -1,7 +1,9 @@
 set.item:
   itemName: <#1F88ED>Respiratis
   type: PAPER
-  customModelData: 117
+  customModelData:
+    floats:
+    - 117
   lore:
   - ':layer_4: Grade IV Relic'
   - <gold>A relic composed of multiple relic materials

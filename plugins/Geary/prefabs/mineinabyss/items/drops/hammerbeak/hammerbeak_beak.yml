@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:flint
   itemName: <#613F0C>Hammerbeak Beak
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <yellow>Can be used as a fire starter

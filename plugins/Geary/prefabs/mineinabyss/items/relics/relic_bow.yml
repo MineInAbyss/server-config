@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:bow
-  customModelData: 102
+  customModelData:
+    floats:
+    - 102
   itemName: <#617B94><b>Averting Barrage
   lore:
   - ':layer_2: Grade I Relic'

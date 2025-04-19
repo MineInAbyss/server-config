@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_green>Tesuchi Tail
-  customModelData: 320
+  customModelData:
+    floats:
+    - 320
   lore:
   - ':layer_2:'
   - <green><i>Yummy

@@ -4,7 +4,9 @@ inherit:
 set.item:
   type: minecraft:tipped_arrow
   itemName: <white>Bamboo Chair
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   color: 255, 255, 255
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP

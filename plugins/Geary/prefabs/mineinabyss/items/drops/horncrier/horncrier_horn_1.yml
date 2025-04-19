@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#c4fcf2>Horncrier Horn
-  customModelData: 2667
+  customModelData:
+    floats:
+    - 2667
   lore:
   - ':layer_4::layer_5:'
   - <#fbfc92><i>These colors are unlike anything

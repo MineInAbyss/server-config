@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:brown_concrete
   itemName: <#963c0f>Woodcrier Horn
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_1::layer_2:'
   - <#A68348><i>Its hard and solid...

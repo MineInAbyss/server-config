@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#E83A3A><b>Valentine Chocolate
-  customModelData: 131
+  customModelData:
+    floats:
+    - 131
   lore:
   - <#DB8888>Life is full of joy,
   - <#DB8888>In the Abyss, there lies hope

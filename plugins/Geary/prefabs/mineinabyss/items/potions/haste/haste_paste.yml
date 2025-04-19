@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#b5955f>Haste Paste
-  customModelData: 127
+  customModelData:
+    floats:
+    - 127
   lore:
   - <yellow>Compact with nutrients fit for a miner,
   - <yellow>but odours a vile raw smell and has

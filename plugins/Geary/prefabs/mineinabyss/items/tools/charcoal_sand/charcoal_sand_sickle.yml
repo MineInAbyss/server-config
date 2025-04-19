@@ -1,7 +1,9 @@
 set.item:
   itemName: Charcoal Sand Sickle
   type: minecraft:wooden_hoe
-  customModelData: 7
+  customModelData:
+    floats:
+    - 7
   durability: 3000
   tool:
     rules:

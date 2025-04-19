@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Carved Crimson Stem
-  customModelData: 2022
+  customModelData:
+    floats:
+    - 2022
 set.block:
   blockType: NOTEBLOCK
   blockId: 8

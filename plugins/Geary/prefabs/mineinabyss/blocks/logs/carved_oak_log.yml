@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Carved Oak Log
-  customModelData: 2026
+  customModelData:
+    floats:
+    - 2026
 set.block:
   blockType: NOTEBLOCK
   blockId: 20

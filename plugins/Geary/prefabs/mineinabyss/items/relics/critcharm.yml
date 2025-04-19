@@ -1,7 +1,9 @@
 set.item:
   itemName: <#808504>Chance Strike
   type: PAPER
-  customModelData: 144
+  customModelData:
+    floats:
+    - 144
   lore:
   - ':layer_3: Grade IV Relic'
   - <gold>A relic which was formed by the tenacity of hostile creatures.

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#b754c2>Raw Billabonk Leg
-  customModelData: 305
+  customModelData:
+    floats:
+    - 305
   lore:
   - ':layer_2:'
   - <#0357AB><i>Do the stanky leg

@@ -1,7 +1,9 @@
 set.item:
   itemName: <#C21807>Tama's Mane
   type: PAPER
-  customModelData: 162
+  customModelData:
+    floats:
+    - 162
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.

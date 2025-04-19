@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:shield
-  customModelData: 3
+  customModelData:
+    floats:
+    - 3
   itemName: <#FFC0CB><b>Heart Shield
   lore:
   - <#C6CC8A>A shield forged deep, unyielding, strong,

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:lime_dye
   itemName: <#1FB53D>Kuongatari Juice
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_4::layer_5:'
   - <#167D2A>Yuck! And it's sticky too!

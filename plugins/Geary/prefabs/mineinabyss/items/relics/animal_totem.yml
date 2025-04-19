@@ -1,7 +1,9 @@
 set.item:
   itemName: <#88D481>Fright Instinct
   type: PAPER
-  customModelData: 137
+  customModelData:
+    floats:
+    - 137
   lore:
   - ':layer_1: Grade IV Relic'
   - <gold>A mysterious totem calling upon the desire

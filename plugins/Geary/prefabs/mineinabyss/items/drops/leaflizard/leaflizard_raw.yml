@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#454545>Leaflizard Tail
-  customModelData: 7
+  customModelData:
+    floats:
+    - 7
   lore:
   - <yellow>Obtained by cutting of the
   - <yellow>tail of a <#616161>Tail<yellow>in the

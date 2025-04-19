@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Flamethrower
-  customModelData: 109
+  customModelData:
+    floats:
+    - 109
 observe:
   itemRightClick:
   - become: parent

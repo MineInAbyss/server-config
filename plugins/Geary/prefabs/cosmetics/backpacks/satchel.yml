@@ -2,7 +2,9 @@ set.item:
   itemName: <#FF9D26>Satchel
   type: POTION
   color: 220, 192, 105
-  customModelData: 101
+  customModelData:
+    floats:
+    - 101
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
 disableItemInteractions: {}

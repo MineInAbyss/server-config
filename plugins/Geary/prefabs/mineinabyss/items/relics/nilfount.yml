@@ -3,5 +3,7 @@ set.item:
   lore:
   - <white>
   type: STICK
-  customModelData: 101
+  customModelData:
+    floats:
+    - 101
 disableItemInteractions: {}

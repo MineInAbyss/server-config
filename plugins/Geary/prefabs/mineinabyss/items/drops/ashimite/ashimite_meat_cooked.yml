@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#2597D9>Cooked Ashimite Meat
-  customModelData: 411
+  customModelData:
+    floats:
+    - 411
   lore:
   - ':layer_5:'
   - <#824E21><i>Very tasty and rich in nutrients!

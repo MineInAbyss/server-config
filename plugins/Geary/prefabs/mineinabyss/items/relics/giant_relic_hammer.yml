@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:netherite_axe
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   itemName: <#79EDE2><b>Seismic Sledge
   lore:
   - ':layer_3: Grade I Relic'

@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: Music Disc
-  customModelData: 2101
+  customModelData:
+    floats:
+    - 2101
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable:

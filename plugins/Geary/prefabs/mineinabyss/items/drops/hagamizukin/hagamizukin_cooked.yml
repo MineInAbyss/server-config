@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#0B6623>Cooked Hagamizukin
-  customModelData: 422
+  customModelData:
+    floats:
+    - 422
   lore:
   - ':layer_4::layer_5:'
   - <#A759FF>The meat still feels angry with me,

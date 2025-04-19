@@ -4,7 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Drawer
-  customModelData: 1002
+  customModelData:
+    floats:
+    - 1002
 blocky:furniture:
   collisionHitbox:
   - x: 0

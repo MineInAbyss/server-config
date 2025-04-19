@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:bow
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   itemName: <#FFC0CB><b>Relic Bow
   lore:
   - <#C6CC8A>In the Abyss, our hearts entwine,

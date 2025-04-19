@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#D8D8D8>Cooked Ottobas Meat
-  customModelData: 414
+  customModelData:
+    floats:
+    - 414
   lore:
   - ':layer_2:'
   - <white><i>This should be enough food

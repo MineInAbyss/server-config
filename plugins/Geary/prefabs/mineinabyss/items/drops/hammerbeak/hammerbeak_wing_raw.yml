@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#613F0C>Raw Hammerbeak Wing
-  customModelData: 306
+  customModelData:
+    floats:
+    - 306
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <#A9CCCA><i>This meat seems delicious

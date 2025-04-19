@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Cut Diorite Pillar
-  customModelData: 2034
+  customModelData:
+    floats:
+    - 2034
 set.block:
   blockType: NOTEBLOCK
   blockId: 29

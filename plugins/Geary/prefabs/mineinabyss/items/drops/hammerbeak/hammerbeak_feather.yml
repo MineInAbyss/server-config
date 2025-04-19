@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:feather
   itemName: <#613F0C>Hammerbeak Feather
-  customModelData: 3
+  customModelData:
+    floats:
+    - 3
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <#A9CCCA>Just a feather, innit?

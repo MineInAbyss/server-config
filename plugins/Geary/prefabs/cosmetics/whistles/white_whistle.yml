@@ -2,4 +2,6 @@ set.item:
   itemName: <#FFFFFF>White Whistle
   type: POTION
   color: '#FFFFFF'
-  customModelData: 205
+  customModelData:
+    floats:
+    - 205

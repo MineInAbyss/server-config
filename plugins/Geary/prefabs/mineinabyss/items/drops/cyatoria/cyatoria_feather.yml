@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:feather
   itemName: <#3DDFFF>Cyatoria Feather
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   lore:
   - ':layer_1::layer_2:'
   - <#54FFA4><i>It resembles the feathers

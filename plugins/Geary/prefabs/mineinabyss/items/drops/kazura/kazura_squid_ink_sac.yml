@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:ink_sac
   itemName: <#A9CCCA>Kazura Squid Ink Sac
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_4:'
   - <#807E78>The sac is white, but its ink is black.

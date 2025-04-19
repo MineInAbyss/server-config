@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:black_dye
   itemName: <#454545>Hashofu Body
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_4::layer_5:'
   - <#595959>I can use this for <i>what</i>?

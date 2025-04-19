@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:bone_meal
   itemName: <#6e2e3c>Rinsipede Segments
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_3:'
   - <#a39039><i>I've heard their body makes

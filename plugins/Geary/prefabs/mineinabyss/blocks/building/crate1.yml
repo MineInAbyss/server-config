@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <#e6c186>Crate 1
-  customModelData: 2018
+  customModelData:
+    floats:
+    - 2018
 set.block:
   blockType: NOTEBLOCK
   blockId: 32

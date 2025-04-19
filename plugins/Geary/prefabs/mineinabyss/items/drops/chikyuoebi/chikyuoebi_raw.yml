@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#649984>Raw Chikyuoebi
-  customModelData: 323
+  customModelData:
+    floats:
+    - 323
   lore:
   - ':layer_5:'
   - <#943e27><i>Not that tasty raw...

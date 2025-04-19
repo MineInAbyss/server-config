@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:slime_ball
   itemName: <reset><#785F34>Abyssal Snail Gunk
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_5:'
   - <#A68348><i>Many delvers feel strangely compelled

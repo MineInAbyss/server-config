@@ -1,7 +1,9 @@
 set.item:
   itemName: Netherite Sickle
   type: minecraft:netherite_hoe
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   durability: 2031
   tool:
     rules:

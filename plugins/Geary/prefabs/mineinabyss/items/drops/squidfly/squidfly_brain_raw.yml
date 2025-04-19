@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#85512E>Squidfly Brain
-  customModelData: 319
+  customModelData:
+    floats:
+    - 319
   lore:
   - ':layer_3:'
   - <#C27643><i>Eating it raw might not

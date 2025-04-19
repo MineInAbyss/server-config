@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:copper_ingot
   itemName: <#9C0F2C>Yomotsubi Wing
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   lore:
   - ':layer_3::layer_5:'
   - <#9c5d2c>A sturdy, metallic wing.

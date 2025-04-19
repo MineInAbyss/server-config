@@ -1,7 +1,9 @@
 set.item:
   itemName: <#536b92>Faputa Hat
   type: POTION
-  customModelData: 302
+  customModelData:
+    floats:
+    - 302
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
 hat: {}

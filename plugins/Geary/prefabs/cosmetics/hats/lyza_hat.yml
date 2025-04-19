@@ -5,7 +5,9 @@ set.item:
   - <#EDE134><b>Helmet worn by <reset><white><b>The Annihilator
   type: POTION
   color: '#FFFFFF'
-  customModelData: 304
+  customModelData:
+    floats:
+    - 304
   itemFlags:
   - HIDE_ADDITIONAL_TOOLTIP
 hat: {}

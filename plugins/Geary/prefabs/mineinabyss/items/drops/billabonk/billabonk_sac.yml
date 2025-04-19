@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:pufferfish
   itemName: <#b754c2>Billabonk Sac
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_2:'
   - <#0357AB><i>It seems to be poisonous.

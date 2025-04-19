@@ -1,7 +1,9 @@
 set.item:
   itemName: <#C21807>Among Us
   type: PAPER
-  customModelData: 161
+  customModelData:
+    floats:
+    - 161
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.

@@ -1,3 +1,5 @@
 set.item:
   type: minecraft:paper
-  customModelData: 1039
+  customModelData:
+    floats:
+    - 1039

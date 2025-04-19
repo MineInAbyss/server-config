@@ -1,7 +1,9 @@
 set.item:
   itemName: <#828282>Hyalos Incipient
   type: minecraft:light_blue_stained_glass
-  customModelData: 148
+  customModelData:
+    floats:
+    - 148
   lore:
   - ':layer_3: Tier 1 Lens'
   - <#D2D489>A material crafted from a creature

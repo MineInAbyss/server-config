@@ -4,7 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Mirror
-  customModelData: 1004
+  customModelData:
+    floats:
+    - 1004
 blocky:furniture: {}
 blocky:drops:
   drops:

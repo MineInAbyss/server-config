@@ -1,7 +1,9 @@
 set.item:
   itemName: Wooden Sickle
   type: minecraft:wooden_hoe
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   durability: 59
   tool:
     rules:

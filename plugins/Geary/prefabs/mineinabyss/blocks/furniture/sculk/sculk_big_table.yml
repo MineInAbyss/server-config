@@ -3,7 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Sculk Big Table
-  customModelData: 1022
+  customModelData:
+    floats:
+    - 1022
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break

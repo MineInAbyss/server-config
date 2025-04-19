@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:popped_chorus_fruit
   itemName: <#9A1CAD>Splitjaw Scales
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_1::layer_2::layer_3:'
   - <reset><light_purple><i>Can be used to

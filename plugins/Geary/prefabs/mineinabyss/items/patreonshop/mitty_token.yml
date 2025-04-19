@@ -6,7 +6,9 @@ set.item:
   - <#ff686b>who fund the server
   - <#ff686b>to buy random shit
   type: EMERALD
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
 disableItemInteractions: {}
 mineinabyss:mittytoken: {}
 resourcepack:

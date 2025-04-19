@@ -1,6 +1,8 @@
 set.item:
   type: minecraft:netherite_sword
-  customModelData: 4
+  customModelData:
+    floats:
+    - 4
   itemName: <#15ABC2><b>Crescent Blade
   lore:
   - ':layer_3: Grade I Relic'

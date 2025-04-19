@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:fermented_spider_eye
   itemName: <#454545>Leaflizard Scale
-  customModelData: 0
+  customModelData:
+    floats:
+    - 0
   lore:
   - <yellow>Obtained by slaughtering a <#616161>Leaflizard <yellow>in
   - <green>Edge of the Abyss<yellow>and <green>Forest of Temptation<yellow>.

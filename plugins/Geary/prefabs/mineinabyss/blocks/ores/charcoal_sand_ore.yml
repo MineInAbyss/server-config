@@ -4,7 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Charcoal Sand Ore
-  customModelData: 2001
+  customModelData:
+    floats:
+    - 2001
   maxStackSize: 99
 set.block:
   blockType: NOTEBLOCK

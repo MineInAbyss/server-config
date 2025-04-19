@@ -1,7 +1,9 @@
 set.item:
   itemName: <#68CCBF><b>Arc Staff
   type: minecraft:netherite_hoe
-  customModelData: 5
+  customModelData:
+    floats:
+    - 5
   lore:
   - ':layer_4: Grade I Relic'
   - <#3C8C82>A spear shape object carved out of the core from

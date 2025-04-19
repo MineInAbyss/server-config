@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Moniscelti
-  customModelData: 120
+  customModelData:
+    floats:
+    - 120
   lore:
   - ':layer_5: Grade IV Relic'
   - <gold>A relic of Orthian tales rumored to mimic the effects

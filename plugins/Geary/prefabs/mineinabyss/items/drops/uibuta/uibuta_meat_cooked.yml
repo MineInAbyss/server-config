@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#8F2222>Cooked Uibuta Meat
-  customModelData: 402
+  customModelData:
+    floats:
+    - 402
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>This should be enough food

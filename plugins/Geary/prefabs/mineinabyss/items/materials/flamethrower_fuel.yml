@@ -1,4 +1,6 @@
 set.item:
   itemName: <gray>Flamethrower Fuel
   type: PAPER
-  customModelData: 128
+  customModelData:
+    floats:
+    - 128

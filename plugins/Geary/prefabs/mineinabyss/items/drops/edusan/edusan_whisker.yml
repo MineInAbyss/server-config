@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:echo_shard
   itemName: <#800080>Edusan Whisker
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   lore:
   - ':layer_5:'
   - <#ee5bb8><i>When I touch this I start

@@ -1,6 +1,8 @@
 set.item:
   hideTooltip: true
   type: minecraft:paper
-  customModelData: 10
+  customModelData:
+    floats:
+    - 10
 resourcepack:
   textures: cosmetics:item/ui/dye_scrollable_prev

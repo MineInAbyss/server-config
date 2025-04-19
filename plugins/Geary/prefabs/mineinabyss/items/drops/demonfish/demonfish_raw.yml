@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#257BEB>Raw Demonfish
-  customModelData: 316
+  customModelData:
+    floats:
+    - 316
   lore:
   - ':layer_5:'
   - <#1B5BAD>Imagine the shame of getting flopped

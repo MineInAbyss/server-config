@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#454545>Hashofu Tail
-  customModelData: 307
+  customModelData:
+    floats:
+    - 307
   lore:
   - ':layer_4::layer_5:'
   - <#595959><i>It is said it tastes like sushi.

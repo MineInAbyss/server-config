@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:slime_ball
   itemName: <#257BEB>Swarmhoarder Jelly
-  customModelData: 3
+  customModelData:
+    floats:
+    - 3
   lore:
   - ':layer_4::layer_5:'
   - <#1B5BAD><i>Very sticky, almost like some sort of resin.

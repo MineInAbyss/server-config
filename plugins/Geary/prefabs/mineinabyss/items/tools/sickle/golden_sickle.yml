@@ -1,7 +1,9 @@
 set.item:
   itemName: Golden Sickle
   type: minecraft:golden_hoe
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
   durability: 32
   tool:
     rules:

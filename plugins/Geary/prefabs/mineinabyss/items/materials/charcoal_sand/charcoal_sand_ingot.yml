@@ -1,7 +1,9 @@
 set.item:
   itemName: <dark_aqua>Charcoal Sand Ingot
   type: IRON_INGOT
-  customModelData: 1
+  customModelData:
+    floats:
+    - 1
 set.recipes:
   discoverRecipes: true
   group: charcoal_sand_ingot

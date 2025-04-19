@@ -1,7 +1,9 @@
 set.item:
   type: minecraft:ink_sac
   itemName: <#FF771C>Makihige Ink Sac
-  customModelData: 2
+  customModelData:
+    floats:
+    - 2
   lore:
   - ':layer_4::layer_5:'
   - <#5221A6><i>With this you might be able to
