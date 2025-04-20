@@ -1,9 +1,7 @@
 set.item:
   itemName: <#9E1E84>Moon Whistle
   type: POTION
-  customModelData:
-    floats:
-    - 203
+  itemModel: mineinabyss:moon_whistle
   dyedColor:
     color: '#FFFFFF'
 disableItemInteractions: {}
@@ -15,3 +13,5 @@ observe:
       id: sound_moon_whistle
   - playSound:
       sound: mineinabyss:whistle.moon_whistle
+resourcepack:
+  model: mineinabyss:item/relics/whistle/moon_whistle

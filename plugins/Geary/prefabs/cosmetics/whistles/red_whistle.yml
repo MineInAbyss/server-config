@@ -1,9 +1,7 @@
 set.item:
   itemName: <#DB4040>Red Whistle
-  type: potion
-  customModelData:
-    floats:
-    - 201
+  type: POTION
+  itemModel: mineinabyss:red_whistle
   dyedColor:
     color: '#FFFFFF'
 disableItemInteractions: {}
@@ -15,3 +13,5 @@ observe:
       id: sound_red_whistle
   - playSound:
       sound: mineinabyss:whistle.red_whistle
+resourcepack:
+  model: mineinabyss:item/relics/whistle/red_whistle

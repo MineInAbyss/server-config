@@ -1,8 +1,8 @@
 set.item:
   itemName: <#FFA812>Bell
   type: POTION
-  customModelData:
-    floats:
-    - 200
+  itemModel: mineinabyss:bell
   dyedColor:
     color: '#FFFFFF'
+resourcepack:
+  model: mineinabyss:item/relics/whistle/bell

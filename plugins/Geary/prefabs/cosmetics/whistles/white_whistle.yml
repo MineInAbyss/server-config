@@ -1,8 +1,8 @@
 set.item:
   itemName: <#FFFFFF>White Whistle
   type: POTION
-  customModelData:
-    floats:
-    - 205
+  itemModel: mineinabyss:white_whistle
   dyedColor:
     color: '#FFFFFF'
+resourcepack:
+  model: mineinabyss:item/relics/whistle/white_whistle

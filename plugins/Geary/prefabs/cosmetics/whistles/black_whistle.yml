@@ -1,9 +1,7 @@
 set.item:
   itemName: <#3B3B3B>Black Whistle
   type: POTION
-  customModelData:
-    floats:
-    - 204
+  itemModel: mineinabyss:black_whistle
   dyedColor:
     color: '#FFFFFF'
 disableItemInteractions: {}
@@ -15,3 +13,5 @@ observe:
       id: sound_black_whistle
   - playSound:
       sound: mineinabyss:whistle.black_whistle
+resourcepack:
+  model: mineinabyss:item/relics/whistle/black_whistle
