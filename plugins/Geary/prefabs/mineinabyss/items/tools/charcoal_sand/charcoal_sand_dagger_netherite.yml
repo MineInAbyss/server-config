@@ -2,7 +2,7 @@ set.item:
   itemName: Charcoal Sand Dagger
   type: NETHERITE_SWORD
   itemModel: mineinabyss:charcoal_sand_dagger
-  durability: 3000
+  maxDamage: 3000
 resourcepack:
   textures:
     layers:

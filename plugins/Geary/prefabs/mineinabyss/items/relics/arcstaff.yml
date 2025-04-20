@@ -16,7 +16,7 @@ set.item:
     level: 5
   - enchant: minecraft:riptide
     level: 1
-  unbreakable: true
+  unbreakable: {}
 prevent.enchanting: {}
 disableItemInteractions: {}
 observe:

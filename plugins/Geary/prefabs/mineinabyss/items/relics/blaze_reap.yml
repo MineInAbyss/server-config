@@ -13,7 +13,7 @@ set.item:
     level: 3
   - enchant: minecraft:efficiency
     level: 5
-  unbreakable: true
+  unbreakable: {}
 observe:
   itemLeftClick:
   - become: parent

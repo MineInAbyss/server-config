@@ -8,7 +8,7 @@ set.item:
   - <#AB8E8A>nutrients from the force field itself.
   - <#695654><i>When used it simulates blessings
   - <#695654><i>in its surroundings.
-  unbreakable: true
+  unbreakable: {}
 disableItemInteractions: {}
 observe:
   itemRightClick:
