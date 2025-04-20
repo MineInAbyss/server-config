@@ -72,8 +72,7 @@ enableEffectsMenu: true
 # prefab: namespace:something
 effectItem:
   type: minecraft:paper
-  customModelData: 1
-  color: "#FFFCFC"
+  itemModel: minecraft:empty
 effects:
   space_effect:
     name: <#d24c9f>Space Effect

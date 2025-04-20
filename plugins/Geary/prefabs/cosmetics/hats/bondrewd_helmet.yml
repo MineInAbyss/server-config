@@ -4,11 +4,11 @@ set.item:
   - <#6F19D1><i>
   - <#6F19D1><i>Helmet worn by
   type: POTION
-  customModelData:
-    floats:
-    - 301
+  itemModel: mineinabyss:bondrewd_helmet
   dyedColor:
     color: '#FFFFFF'
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/bondrewd_helmet

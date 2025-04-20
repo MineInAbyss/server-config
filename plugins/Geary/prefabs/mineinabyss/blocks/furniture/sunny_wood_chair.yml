@@ -3,9 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <#6f4536>Sunny Wood Chair
-  customModelData:
-    floats:
-    - 1001
+  itemModel: mineinabyss:sunny_wood_chair
+resourcepack:
+  model: mineinabyss:furniture/sunny_wood_chair
 blocky:seats:
 - y: 0.5
 blocky:sound:

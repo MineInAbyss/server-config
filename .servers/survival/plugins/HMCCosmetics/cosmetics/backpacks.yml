@@ -4,7 +4,7 @@ empty_backpack:
   dyeable: false
   item:
     material: PAPER
-    model-data: 1
+    model-id: empty
 backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK
@@ -62,14 +62,14 @@ generic_backpack:
     color: "#ffffff"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 105
+    model-id: "cosmetics:generic_backpack"
   firstperson-item:
     name: "<#7e481d>Generic Backpack"
-    material: POTION
+    material: LEATHER_HORSE_ARMOR
     color: "#ffffff"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 115
+    model-id: "cosmetics:generic_backpack_fp"
 explorer_backpack:
   slot: CUSTOM
   slot-parent: MIA_BACKPACK

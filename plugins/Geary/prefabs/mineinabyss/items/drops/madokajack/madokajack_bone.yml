@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:bone
   itemName: <#1C439E>Madokajack Bone
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:madokajack_bone
   lore:
   - ':layer_3:'
   - <#369AFF><i>Even their bones smell rancid.

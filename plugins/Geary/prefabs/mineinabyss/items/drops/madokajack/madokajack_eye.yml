@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:spider_eye
   itemName: <#1C439E>Madokajack Eye
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:madokajack_eye
   lore:
   - ':layer_3:'
   - <yellow>It looks so derpy without its body.

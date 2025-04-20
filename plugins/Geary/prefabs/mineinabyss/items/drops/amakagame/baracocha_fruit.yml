@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:chorus_fruit
   itemName: <dark_purple>Baracocha Fruit
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:baracocha_fruit
   lore:
   - <light_purple>Neritantans love eating these. Fittingly,
   - <dark_purple>Amakagame <light_purple>smell just like them to lure

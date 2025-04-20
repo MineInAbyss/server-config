@@ -4,9 +4,9 @@ set.item:
   - <#6F19D1><i>
   - <#ED9134><b>Helmet worn by
   type: POTION
-  customModelData:
-    floats:
-    - 303
+  itemModel: mineinabyss:habo_hat
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/habo_hat

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#3DDFFF>Cooked Cyatoria Drumstick
-  customModelData:
-    floats:
-    - 403
+  itemModel: mineinabyss:cyatoria_drumstick_cooked
   lore:
   - ':layer_1::layer_2:'
   - <yellow>Said to be the offspring of a

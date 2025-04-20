@@ -1,7 +1,5 @@
 set.item:
   type: PAPER
-  customModelData:
-    floats:
-    - 4002
+  itemModel: event:camera_bronze
 resourcepack:
   model: event:item/camera_bronze

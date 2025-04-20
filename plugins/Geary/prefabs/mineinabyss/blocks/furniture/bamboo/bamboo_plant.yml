@@ -3,9 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Plant
-  customModelData:
-    floats:
-    - 1005
+  itemModel: hmcmodels:bamboo_plant
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_plant
 blocky:furniture:
   rotationType: NONE
 blocky:drops:

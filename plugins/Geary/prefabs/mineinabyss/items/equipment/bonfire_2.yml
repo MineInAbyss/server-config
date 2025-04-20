@@ -1,5 +1,5 @@
 set.item:
   type: minecraft:paper
-  customModelData:
-    floats:
-    - 1038
+  itemModel: mineinabyss:bonfire_2
+resourcepack:
+  model: mineinabyss:block/bonfire/bonfire_2

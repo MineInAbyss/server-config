@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:slime_ball
   itemName: <#38E016>Splitjaw Gunk
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:splitjaw_gunk
   lore:
   - ':layer_1::layer_2::layer_3:'
   - <#40FF19>Yucky.

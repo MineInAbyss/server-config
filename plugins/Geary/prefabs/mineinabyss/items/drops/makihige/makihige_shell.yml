@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:obsidian
   itemName: <#FF771C>Makihige Shell
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:makihige_shell
   lore:
   - ':layer_4::layer_5:'
   - <#5221A6>I hope I can make armor from this

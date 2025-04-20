@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:bone
   itemName: <#59ac7a>Dosetori Bone
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:dosetori_bone
   lore:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>This thing sounds... hollow.

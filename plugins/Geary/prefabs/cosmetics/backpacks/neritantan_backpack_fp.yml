@@ -1,8 +1,8 @@
 set.item:
   itemName: <gray>Neritantan Backpack
-  type: POTION
-  customModelData:
-    floats:
-    - 112
+  type: leather_horse_armor
   dyedColor:
     color: 255, 255, 255
+  itemModel: cosmetics:neritantan_backpack_fp
+resourcepack:
+  model: cosmetics:backpacks/neritantan_backpack_fp

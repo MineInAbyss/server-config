@@ -2,13 +2,13 @@ inherit:
 - mineinabyss:wood
 - mineinabyss:ground_furniture
 set.item:
-  type: minecraft:tipped_arrow
+  type: minecraft:leather_horse_armor
   itemName: <white>Bamboo Bench
-  customModelData:
-    floats:
-    - 1
   dyedColor:
     color: 255, 255, 255
+  itemModel: hmcmodels:bamboo_bench
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_bench
 blocky:seats:
 - y: 0.1
 blocky:furniture:

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#c26d23>Daikonchu Carapace
-  customModelData:
-    floats:
-    - 25
+  itemModel: mineinabyss:daikonchu_carapace
   lore:
   - ':layer_3:'
   - <#f1b259>I could totally wear this.

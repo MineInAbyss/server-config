@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:glow_ink_sac
   itemName: <#7D93FF>Kakatsumuri Glowing Tip
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:kakatsumuri_glowing_tip
   lore:
   - ':layer_3:'
   - <#B8FFBA><i>The very tip of the shell, it seems

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#2597D9>Raw Ashimite Meat
-  customModelData:
-    floats:
-    - 311
+  itemModel: mineinabyss:ashimite_meat_raw
   lore:
   - ':layer_5:'
   - <#824E21><i>Seems like a great source of food.

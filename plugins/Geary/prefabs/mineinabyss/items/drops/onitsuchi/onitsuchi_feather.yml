@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:feather
   itemName: <#5C471D>Onitsuchi Feather
-  customModelData:
-    floats:
-    - 4
+  itemModel: mineinabyss:onitsuchi_feather
   lore:
   - ':layer_4::layer_5:'
   - <#A9CCCA>Just a feather, innit?

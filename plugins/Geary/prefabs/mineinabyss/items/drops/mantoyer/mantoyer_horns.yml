@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#BDA55D>Man-toyer Horns
-  customModelData:
-    floats:
-    - 225
+  itemModel: mineinabyss:mantoyer_horns
   lore:
   - ':layer_1::layer_4:'
   - <#A68348><i>I could cut myself on these

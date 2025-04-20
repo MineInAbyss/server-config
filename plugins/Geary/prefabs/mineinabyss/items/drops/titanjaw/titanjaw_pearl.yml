@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:ghast_tear
   itemName: <#3C3B4A>Titanjaw Pearl
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:titanjaw_pearl
   lore:
   - ':layer_5:'
   - <#0C7787><i>Why do I feel like I am haunted...

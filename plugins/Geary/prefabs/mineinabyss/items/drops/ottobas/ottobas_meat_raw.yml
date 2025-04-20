@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#D8D8D8>Raw Ottobas Meat
-  customModelData:
-    floats:
-    - 314
+  itemModel: mineinabyss:ottobas_meat_raw
   lore:
   - ':layer_2:'
   - <white><i>A thick layer of fat clings to the meat.

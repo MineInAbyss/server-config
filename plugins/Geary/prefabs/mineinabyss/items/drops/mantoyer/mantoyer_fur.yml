@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:brown_wool
   itemName: <#BDA55D>Man-toyer Fur
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:mantoyer_fur
   lore:
   - ':layer_1::layer_4:'
   - <#A68348>Thickly furred, and very sturdy...

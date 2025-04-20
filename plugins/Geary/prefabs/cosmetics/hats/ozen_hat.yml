@@ -3,11 +3,11 @@ set.item:
   lore:
   - '<gray>:ozensmug:'
   type: POTION
-  customModelData:
-    floats:
-    - 307
+  itemModel: mineinabyss:ozen_hat
   dyedColor:
     color: '#FFFFFF'
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/ozen_hat

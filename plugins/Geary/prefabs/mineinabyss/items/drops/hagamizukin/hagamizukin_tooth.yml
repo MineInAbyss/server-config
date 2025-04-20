@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:quartz
   itemName: <#0B6623>Hagamizukin Tooth
-  customModelData:
-    floats:
-    - 4
+  itemModel: mineinabyss:hagamizukin_tooth
   lore:
   - ':layer_4::layer_5:'
   - <#A759FF>Warped and sharp like some of

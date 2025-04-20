@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:apple
   itemName: <#00FFFF>Tachikatana Leg
-  customModelData:
-    floats:
-    - 665
+  itemModel: mineinabyss:tachikatana_leg
   lore:
   - ':layer_4::layer_5:'
   - <#1B5BAD><i>Tastes like crab!

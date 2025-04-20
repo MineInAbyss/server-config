@@ -1,8 +1,0 @@
-inherit: [mineinabyss:cut_diorite_pillar]
-blocky:directional:
-  parentBlock: mineinabyss:cut_diorite_pillar
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 31
-blocky:pack:
-  model: mineinabyss:block/building/cut_diorite_pillar

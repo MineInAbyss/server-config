@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#5C471D>Onitsuchi Skull
-  customModelData:
-    floats:
-    - 5
+  itemModel: mineinabyss:onitsuchi_skull
   lore:
   - ':layer_4::layer_5:'
   - <yellow>Can be used as a fire starter

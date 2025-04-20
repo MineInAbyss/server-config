@@ -1,8 +1,8 @@
 set.item:
   itemName: <#FF9D26>Camper Backpack
-  type: POTION
-  customModelData:
-    floats:
-    - 114
+  type: leather_horse_armor
   dyedColor:
     color: 98, 168, 255
+  itemModel: cosmetics:camper_backpack_fp
+resourcepack:
+  model: cosmetics:backpacks/camper_backpack_fp

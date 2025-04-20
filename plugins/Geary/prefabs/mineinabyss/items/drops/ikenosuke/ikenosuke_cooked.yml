@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:cod
   itemName: <#9ff3f3>Cooked Ikenosuke
-  customModelData:
-    floats:
-    - 227
+  itemModel: mineinabyss:ikenosuke_cooked
   lore:
   - ':layer_2::layer_3::layer_4:'
   - <#edfeff>The skin is tough, but the meat... Yum!

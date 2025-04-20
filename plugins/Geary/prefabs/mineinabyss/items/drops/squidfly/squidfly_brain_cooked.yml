@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#85512E>Cooked Squidfly Brain
-  customModelData:
-    floats:
-    - 419
+  itemModel: mineinabyss:squidfly_brain_cooked
   lore:
   - ':layer_3:'
   - <#C27643><i>Perhaps I will become smarter

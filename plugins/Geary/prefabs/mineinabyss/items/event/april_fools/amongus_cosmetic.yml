@@ -1,8 +1,5 @@
 set.item:
   itemName: paper
   type: PAPER
-  customModelData:
-    floats:
-    - 0
 prevent.enchanting: {}
 disableItemInteractions: {}

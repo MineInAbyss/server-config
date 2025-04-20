@@ -4,10 +4,12 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Charcoal Sand Ore
-  customModelData:
-    floats:
-    - 2001
   maxStackSize: 99
+  itemModel: mineinabyss:charcoal_sand_ore
+resourcepack:
+  textures:
+    layers:
+      - mineinabyss:block/ores/charcoal_sand_ore
 set.block:
   blockType: NOTEBLOCK
   blockId: 1

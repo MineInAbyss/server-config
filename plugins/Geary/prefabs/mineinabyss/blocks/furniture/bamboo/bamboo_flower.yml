@@ -4,9 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Hanging Flower
-  customModelData:
-    floats:
-    - 1003
+  itemModel: hmcmodels:bamboo_flower
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_flower
 blocky:furniture: {}
 blocky:drops:
   drops:

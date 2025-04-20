@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:amethyst_block
   itemName: <#303e77>Hisoishi Shell
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:hisoishi_shell
   lore:
   - ':layer_2::layer_3:'
   - <#649378><i>The shell is hard as amethyst

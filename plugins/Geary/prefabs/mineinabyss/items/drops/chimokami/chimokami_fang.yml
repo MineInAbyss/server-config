@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#eeffff>Chimokami Fang
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:chimokami_fang
   lore:
   - ':layer_2:'
   - <#7a243f><i>It is said that these beasts house a

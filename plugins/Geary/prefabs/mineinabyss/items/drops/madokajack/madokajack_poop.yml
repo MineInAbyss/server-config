@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:brown_dye
   itemName: <#1C439E>Madokajack Poop
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:madokajack_poop
   lore:
   - ':layer_3:'
   - <#369AFF>Did I scare it so much that

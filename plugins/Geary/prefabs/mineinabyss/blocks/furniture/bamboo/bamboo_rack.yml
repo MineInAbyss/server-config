@@ -4,9 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Rack
-  customModelData:
-    floats:
-    - 1006
+  itemModel: hmcmodels:bamboo_rack
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_rack
 blocky:furniture:
   collisionHitbox:
   - x: 0

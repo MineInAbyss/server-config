@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:blaze_rod
   itemName: <#6C19BF>Rohana Tail
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:rohana_tail
   lore:
   - ':layer_2::layer_4:'
   - <#FF1FB4><i>Can be used to make brewing stands

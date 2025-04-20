@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1FB53D>Cooked Kuongatari Abdomen
-  customModelData:
-    floats:
-    - 421
+  itemModel: mineinabyss:kuongatari_abdomen_cooked
   lore:
   - ':layer_4::layer_5:'
   - <#167D2A>Suprisingly tasty for such a small bug..

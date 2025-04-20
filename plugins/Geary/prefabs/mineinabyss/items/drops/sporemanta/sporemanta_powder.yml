@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:glowstone_dust
   itemName: <#6C19BF>Spore Manta Powder
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:sporemanta_powder
   lore:
   - ':layer_5:'
   - <#FF1FB4><i>The furthest thing to magical

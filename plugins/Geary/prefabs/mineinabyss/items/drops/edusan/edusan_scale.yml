@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:clay_ball
   itemName: <#800080>Edusan Scale
-  customModelData:
-    floats:
-    - 12
+  itemModel: mineinabyss:edusan_scale
   lore:
   - ':layer_5:'
   - <#ee5bb8><i>Exudes a beautifully ominous aura.

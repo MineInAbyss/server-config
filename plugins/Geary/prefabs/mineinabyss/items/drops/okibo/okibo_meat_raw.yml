@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#10DEA7>Raw Okibo Meat
-  customModelData:
-    floats:
-    - 313
+  itemModel: mineinabyss:okibo_meat_raw
   lore:
   - ':layer_orth::layer_1:'
   - <yellow>Usually found in <green>Orth as a source of

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:twisting_vines
   itemName: <#ADD8E6>Octoliar Tentacle
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:octoliar_tentacle
   lore:
   - ':layer_5:'
   - <#B8FFBA><i>Although a little wet, it's

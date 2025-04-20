@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#59ac7a>Dosetori Wing
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:dosetori_wing
   lore:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>Its texture feels otherworldly.

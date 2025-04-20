@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#3D3D3D>Cooked Inbyo Meat
-  customModelData:
-    floats:
-    - 401
+  itemModel: mineinabyss:inbyo_meat_cooked
   lore:
   - ':layer_2:'
   - <#B5B5B5><i>Seems more edible now, though

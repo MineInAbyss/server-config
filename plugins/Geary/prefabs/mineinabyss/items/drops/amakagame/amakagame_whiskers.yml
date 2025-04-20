@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:crimson_roots
   itemName: <dark_purple>Amakagame Whiskers
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:amakagame_whiskers
   lore:
   - <light_purple>An <dark_purple>Amakagame <light_purple>is almost all stomach,
   - <light_purple>so they have few salvageable body parts

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#2597D9>Ashimite Hoof
-  customModelData:
-    floats:
-    - 3
+  itemModel: mineinabyss:ashimite_hoof
   lore:
   - ':layer_5:'
   - <#824E21><i>Excellent for starting fires!

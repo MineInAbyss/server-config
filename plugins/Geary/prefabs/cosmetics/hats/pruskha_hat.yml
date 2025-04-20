@@ -4,9 +4,9 @@ set.item:
   - <#6F19D1><i>
   - '<reset>:pruskha: <#22E03B><i>*Loli spilling noises*<reset> :pruskha:'
   type: POTION
-  customModelData:
-    floats:
-    - 308
+  itemModel: mineinabyss:pruskha_hat
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/pruskha_hat

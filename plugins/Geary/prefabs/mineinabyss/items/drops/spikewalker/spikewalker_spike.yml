@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:quartz
   itemName: <#755237>Spikewalker Spike
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:spikewalker_spike
   lore:
   - ':layer_5:'
   - <#ccbd99><i>It may not look pointy,

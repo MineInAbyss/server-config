@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#755237>Spikewalker Meat
-  customModelData:
-    floats:
-    - 400
+  itemModel: mineinabyss:spikewalker_meat
   lore:
   - ':layer_5:'
   - <#ccbd99><i>Inedible, hard, rough,

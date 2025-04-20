@@ -2,13 +2,13 @@ inherit:
 - mineinabyss:wood
 - mineinabyss:ground_furniture
 set.item:
-  type: minecraft:tipped_arrow
+  type: minecraft:leather_horse_armor
   itemName: <white>Bamboo Chair
-  customModelData:
-    floats:
-    - 2
   dyedColor:
     color: 255, 255, 255
+  itemModel: hmcmodels:bamboo_chair
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_chair
 blocky:furniture:
   rotationType: STRICT
   interactionHitbox:

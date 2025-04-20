@@ -1,8 +1,6 @@
 set.item:
   itemName: <#FFFFFF>White Whistle
-  type: POTION
+  type: PAPER
   itemModel: mineinabyss:white_whistle
-  dyedColor:
-    color: '#FFFFFF'
 resourcepack:
   model: mineinabyss:item/relics/whistle/white_whistle

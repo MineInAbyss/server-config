@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:iron_ingot
   itemName: <#9C0F2C>Shiratsubi Wing
-  customModelData:
-    floats:
-    - 3
+  itemModel: mineinabyss:shiratsubi_wing
   lore:
   - ':layer_5:'
   - <#9c5d2c>A sturdy, metallic wing.

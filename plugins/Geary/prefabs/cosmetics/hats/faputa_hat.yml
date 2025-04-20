@@ -1,9 +1,9 @@
 set.item:
   itemName: <#536b92>Faputa Hat
   type: POTION
-  customModelData:
-    floats:
-    - 302
+  itemModel: mineinabyss:faputa_hat
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/faputa_hat

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:egg
   itemName: <#613F0C>Hammerbeak Egg
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:hammerbeak_egg
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <yellow>Can be used as a cooking ingredient

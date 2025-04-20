@@ -1,9 +1,7 @@
 set.item:
   itemName: <#175ABF>Blue Whistle
-  type: POTION
+  type: PAPER
   itemModel: mineinabyss:blue_whistle
-  dyedColor:
-    color: '#FFFFFF'
 disableItemInteractions: {}
 observe:
   itemRightClick:

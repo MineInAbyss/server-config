@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:string
   itemName: <#1FB53D>Kuongatari Silk
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:kuongatari_silk
   lore:
   - ':layer_4::layer_5:'
   - <#167D2A><i>A very thin, yet surprisingly

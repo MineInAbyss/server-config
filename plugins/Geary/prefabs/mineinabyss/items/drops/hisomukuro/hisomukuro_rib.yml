@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:bone
   itemName: <#c7bcad>Hisomukuro Rib
-  customModelData:
-    floats:
-    - 4
+  itemModel: mineinabyss:hisomukuro_rib
   lore:
   - ':layer_5:'
   - <#524D47><i>Its bony on the outside but

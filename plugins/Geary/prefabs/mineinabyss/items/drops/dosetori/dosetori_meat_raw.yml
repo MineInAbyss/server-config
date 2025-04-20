@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#59ac7a>Raw Dosetori Meat
-  customModelData:
-    floats:
-    - 304
+  itemModel: mineinabyss:dosetori_meat_raw
   lore:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>Tastes like chicken.

@@ -4,9 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Table
-  customModelData:
-    floats:
-    - 1008
+  itemModel: hmcmodels:bamboo_table
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_table
 blocky:furniture:
   interactionHitbox:
   - width: 1.2

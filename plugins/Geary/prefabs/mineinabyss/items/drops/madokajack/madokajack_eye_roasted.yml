@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:fermented_spider_eye
   itemName: <#1C439E>Roasted Madokajack Eye
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:madokajack_eye_roasted
   lore:
   - ':layer_3:'
   - <yellow>I wonder how many people in Orth

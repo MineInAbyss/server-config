@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:red_wool
   itemName: <#eeffff>Chimokami Tail
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:chimokami_tail
   lore:
   - ':layer_2:'
   - <#7a243f><i>These critters like darkness.

@@ -3,9 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Sculk Deco
-  customModelData:
-    floats:
-    - 1024
+  itemModel: hmcmodels:sculk_deco
+resourcepack:
+  model: hmcmodels:furniture/sculk_furniture/sculk_deco
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break
@@ -18,4 +18,4 @@ blocky:furniture:
     height: 0.5
 blocky:drops:
   drops:
-  - item: mineinabyss:sculk_deco_2
+  - item: mineinabyss:sculk_deco

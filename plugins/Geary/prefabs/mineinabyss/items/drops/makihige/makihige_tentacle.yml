@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#FF771C>Makihige Tentacle
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:makihige_tentacle
   lore:
   - ':layer_4::layer_5:'
   - <#5221A6>Seems useful. I better keep this...

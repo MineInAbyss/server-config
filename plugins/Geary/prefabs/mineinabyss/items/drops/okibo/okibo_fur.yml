@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#10DEA7>Okibo Fur
-  customModelData:
-    floats:
-    - 4
+  itemModel: mineinabyss:okibo_fur
   lore:
   - ':layer_orth::layer_1:'
   - <#BDBDBD><i>Looks like it will keep me warm

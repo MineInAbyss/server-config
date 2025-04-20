@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#5468A8>Kagi Tachikiri Pincer
-  customModelData:
-    floats:
-    - 4
+  itemModel: mineinabyss:kagi_tachikiri_pincer
   lore:
   - ':layer_5:'
   - <#376B36><i>Extremely sharp, watch your fingers!

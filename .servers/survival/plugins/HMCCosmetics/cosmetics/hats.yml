@@ -68,7 +68,7 @@ mining_helmet:
     color: "#FFFFFF"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 312
+    model-id: cosmetics:mining_helmet
 goggles:
   slot: HELMET
   permission: "hmccosmetics.hat.goggles"
@@ -79,7 +79,7 @@ goggles:
     color: "#FFFFFF"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 313
+    model-id: cosmetics:goggles
 double_flower:
   slot: HELMET
   permission: "hmccosmetics.hat.double_flower"
@@ -90,7 +90,7 @@ double_flower:
     color: "#F26AEB"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 314
+    model-id: cosmetics:double_flower
 side_flower:
   slot: HELMET
   permission: "hmccosmetics.hat.side_flower"
@@ -101,4 +101,4 @@ side_flower:
     color: "#F26AEB"
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
-    model-data: 315
+    model-id: cosmetics:side_flower

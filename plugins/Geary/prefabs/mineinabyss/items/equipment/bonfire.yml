@@ -1,10 +1,10 @@
 set.item:
   itemName: <#FF9D26>Bonfire
   type: PAPER
-  customModelData:
-    floats:
-    - 1034
+  itemModel: mineinabyss:bonfire_unlit
   maxStackSize: 16
+resourcepack:
+  model: mineinabyss:block/bonfire/bonfire_unlit
 set.recipes:
   discoverRecipes: true
   recipes:

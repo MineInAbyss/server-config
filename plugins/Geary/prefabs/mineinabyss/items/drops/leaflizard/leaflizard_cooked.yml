@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#454545>Cooked Leaflizard Tail
-  customModelData:
-    floats:
-    - 107
+  itemModel: mineinabyss:leaflizard_cooked
   lore:
   - <yellow>Obtained by cutting of the tail
   - <yellow>of a <#454545>Hashofu <yellow>in the

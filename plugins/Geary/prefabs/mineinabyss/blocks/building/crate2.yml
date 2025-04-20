@@ -3,9 +3,11 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <#e6c186>Crate 2
-  customModelData:
-    floats:
-    - 2019
+  itemModel: mineinabyss:crate2
+resourcepack:
+  textures:
+    layers:
+      - mineinabyss:block/building/crate2
 set.block:
   blockType: NOTEBLOCK
   blockId: 33

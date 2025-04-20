@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:prismarine_shard
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:tachikatana_scale
   itemName: <#00FFFF>Tachikatana Scale
   lore:
   - ':layer_4::layer_5:'

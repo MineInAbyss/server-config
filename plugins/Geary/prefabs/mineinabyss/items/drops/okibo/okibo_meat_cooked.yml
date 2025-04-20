@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#10DEA7>Cooked Okibo Meat
-  customModelData:
-    floats:
-    - 413
+  itemModel: mineinabyss:okibo_meat_cooked
   lore:
   - ':layer_orth::layer_1:'
   - <yellow>There is a ritual in <green>Orth<yellow>, for whenever

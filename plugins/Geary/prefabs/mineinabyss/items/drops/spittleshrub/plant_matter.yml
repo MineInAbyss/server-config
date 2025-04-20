@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:bone_meal
   itemName: <#BE6400>Plant Matter
-  customModelData:
-    floats:
-    - 5
+  itemModel: mineinabyss:plant_matter
   lore:
   - ':layer_1::layer_2:'
   - <#A68348><i>Maybe I could use this to make my own plants,

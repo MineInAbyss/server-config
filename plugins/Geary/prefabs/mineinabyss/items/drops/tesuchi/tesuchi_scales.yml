@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_green>Tesuchi Scales
-  customModelData:
-    floats:
-    - 420
+  itemModel: mineinabyss:tesuchi_scales
   lore:
   - ':layer_2:'
   - <green><i>Crispy

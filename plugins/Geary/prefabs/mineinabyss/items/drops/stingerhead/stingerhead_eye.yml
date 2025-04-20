@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:fermented_spider_eye
   itemName: <#9C0F2C>Stingerhead Eye
-  customModelData:
-    floats:
-    - 2
+  itemModel: mineinabyss:stingerhead_eye
   lore:
   - ':layer_5:'
   - <yellow>Its eye was almost fused into its armor.

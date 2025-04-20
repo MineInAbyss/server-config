@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0B6623>Raw Hagamizukin
-  customModelData:
-    floats:
-    - 322
+  itemModel: mineinabyss:hagamizukin_raw
   lore:
   - ':layer_4::layer_5:'
   - <#A759FF>The meat still feels angry with me.

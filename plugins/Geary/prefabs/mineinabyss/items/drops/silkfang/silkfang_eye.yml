@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:spider_eye
   itemName: <#116AAD>Silkfang Eye
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:silkfang_eye
   lore:
   - ':layer_1::layer_2:'
   - <#ED4C4C><i>Rumor has it that a

@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:rotten_flesh
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:stingerhead_flesh
   itemName: <#9C0F2C>Stingerhead Flesh
   lore:
   - ':layer_5:'

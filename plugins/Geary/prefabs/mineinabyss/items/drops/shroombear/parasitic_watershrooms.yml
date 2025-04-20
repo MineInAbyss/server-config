@@ -1,8 +1,6 @@
 set.item:
   type: minecraft:warped_fungus
-  customModelData:
-    floats:
-    - 0
+  itemModel: mineinabyss:parasitic_watershrooms
   itemName: <#913188>Parasitic Watershrooms
   lore:
   - ':layer_4:'

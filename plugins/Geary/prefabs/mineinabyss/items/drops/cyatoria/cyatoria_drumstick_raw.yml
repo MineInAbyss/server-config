@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#3DDFFF>Raw Cyatoria Drumstick
-  customModelData:
-    floats:
-    - 303
+  itemModel: mineinabyss:cyatoria_drumstick_raw
   lore:
   - ':layer_1::layer_2:'
   - <yellow>Said to be the offspring of a

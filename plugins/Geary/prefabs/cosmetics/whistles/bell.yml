@@ -1,8 +1,6 @@
 set.item:
   itemName: <#FFA812>Bell
-  type: POTION
+  type: PAPER
   itemModel: mineinabyss:bell
-  dyedColor:
-    color: '#FFFFFF'
 resourcepack:
   model: mineinabyss:item/relics/whistle/bell

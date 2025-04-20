@@ -4,9 +4,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Bamboo Mirror
-  customModelData:
-    floats:
-    - 1004
+  itemModel: hmcmodels:bamboo_mirror
+resourcepack:
+  model: hmcmodels:furniture/bamboo_furniture/bamboo_mirror
 blocky:furniture: {}
 blocky:drops:
   drops:

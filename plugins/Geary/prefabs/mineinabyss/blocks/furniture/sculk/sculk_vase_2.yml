@@ -3,9 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Sculk Vase 2
-  customModelData:
-    floats:
-    - 1031
+  itemModel: hmcmodels:sculk_vase_2
+resourcepack:
+  model: hmcmodels:furniture/sculk_furniture/sculk_vase_2
 blocky:sound:
   placeSound: block.amethyst_cluster.place
   breakSound: block.amethyst_cluster.break

@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:prismarine_shard
   itemName: <#1C439E>Madokajack Scales
-  customModelData:
-    floats:
-    - 1
+  itemModel: mineinabyss:madokajack_scales
   lore:
   - ':layer_3:'
   - <#369AFF>Though hard, these scales are

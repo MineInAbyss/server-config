@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#6C19BF>Spore Manta Wing
-  customModelData:
-    floats:
-    - 7
+  itemModel: mineinabyss:sporemanta_wing
   lore:
   - ':layer_5:'
   - <#f1b259>Leathery wing laced in a poisonous powder

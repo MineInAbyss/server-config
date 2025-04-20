@@ -1,9 +1,0 @@
-blocky:sound:
-  placeSound: blocky:block.stone.place
-  breakSound: blocky:block.stone.break
-  stepSound: blocky:block.stone.step
-  hitSound: blocky:block.stone.hit
-  fallSound: blocky:block.stone.fall
-blocky:breaking:
-  hardness: 0.1
-

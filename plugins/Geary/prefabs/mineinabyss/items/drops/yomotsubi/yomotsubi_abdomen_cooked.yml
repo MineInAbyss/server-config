@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:apple
   itemName: <#9C0F2C>Cooked Yomotsubi Abdomen
-  customModelData:
-    floats:
-    - 121
+  itemModel: mineinabyss:yomotsubi_abdomen_raw
   lore:
   - ':layer_3::layer_5:'
   - <#9c5d2c><i>Tastes suprisingly good.

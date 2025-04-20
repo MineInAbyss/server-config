@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1B91B5>Cooked Hamashirama
-  customModelData:
-    floats:
-    - 417
+  itemModel: mineinabyss:hamashirama_cooked
   lore:
   - <yellow>Can be obtained by finding and
   - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the

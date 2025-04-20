@@ -1,8 +1,8 @@
 set.item:
   itemName: <#FF9D26>Miner Backpack
-  type: POTION
-  customModelData:
-    floats:
-    - 113
+  type: leather_horse_armor
   dyedColor:
     color: 220, 192, 105
+  itemModel: cosmetics:miner_backpack_fp
+resourcepack:
+  model: cosmetics:backpacks/miner_backpack_fp

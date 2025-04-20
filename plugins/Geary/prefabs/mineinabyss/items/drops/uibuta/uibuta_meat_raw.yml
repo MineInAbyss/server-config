@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#8F2222>Raw Uibuta Meat
-  customModelData:
-    floats:
-    - 302
+  itemModel: mineinabyss:uibuta_meat_raw
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>A thick layer of fat clings to the meat.

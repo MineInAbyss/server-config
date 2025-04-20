@@ -4,15 +4,18 @@ menus:
     height: 3
     blockButton:
       type: minecraft:paper
-      customModelData: 1
+      customModelData:
+        floats: [1]
       itemName: <gradient:blue:aqua>Block Menu
     wireButton:
       type: minecraft:paper
-      customModelData: 1
+      customModelData:
+        floats: [1]
       itemName: <gradient:dark_green:green>Wire Menu
     furnitureButton:
       type: minecraft:paper
-      customModelData: 1
+      customModelData:
+        floats: [1]
       itemName: <gradient:gold:yellow>Furniture Menu
   blockMenu:
     title: ':space_-8::blocky_grid_menu:'

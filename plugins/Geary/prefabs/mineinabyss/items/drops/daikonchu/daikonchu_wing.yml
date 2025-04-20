@@ -1,9 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#c26d23>Daikonchu Wing
-  customModelData:
-    floats:
-    - 6
+  itemModel: mineinabyss:daikonchu_wing
   lore:
   - ':layer_3:'
   - <#f1b259>They're still buzzing...

@@ -4,9 +4,9 @@ set.item:
   - <#6F19D1><i>
   - <#0268ED><i>Cap worn by
   type: POTION
-  customModelData:
-    floats:
-    - 305
+  itemModel: mineinabyss:marulk_hat
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/marulk_hat

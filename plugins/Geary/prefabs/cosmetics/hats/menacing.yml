@@ -1,9 +1,9 @@
 set.item:
   itemName: <#8F00D6>ゴゴゴMenacingゴゴゴ
   type: POTION
-  customModelData:
-    floats:
-    - 311
+  itemModel: mineinabyss:menacing
   equippable:
     slot: HEAD
 disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:item/cosmetics/menacing
