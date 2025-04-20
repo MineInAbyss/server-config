@@ -4,18 +4,15 @@ menus:
     height: 3
     blockButton:
       type: minecraft:paper
-      customModelData:
-        floats: [1]
+      itemModel: minecraft:empty
       itemName: <gradient:blue:aqua>Block Menu
     wireButton:
       type: minecraft:paper
-      customModelData:
-        floats: [1]
+      itemModel: minecraft:empty
       itemName: <gradient:dark_green:green>Wire Menu
     furnitureButton:
       type: minecraft:paper
-      customModelData:
-        floats: [1]
+      itemModel: minecraft:empty
       itemName: <gradient:gold:yellow>Furniture Menu
   blockMenu:
     title: ':space_-8::blocky_grid_menu:'
@@ -39,7 +36,7 @@ furniture:
     type: NONE
     item:
       type: minecraft:structure_void
-      customModelData: 1
+      itemModel: mineinabyss:furniture_outline
 # You will need to disable these in world-generation if you wanna use it
 # It aims to free up all CAVE_VINES except age = 0 and replaces its behaviour with CAVE_VINES_PLANT
 caveVineBlocks:

@@ -12,7 +12,8 @@ buttons:
   # prefab: namespace:something
   item:
     type: minecraft:potion
-    customModelData: 1000
+    customModelData:
+      floats: [1000]
     itemFlags:
       - HIDE_ADDITIONAL_TOOLTIP
   inputSlot: 10
@@ -30,11 +31,13 @@ buttons:
       forwardSlot: 26
       backwardItem:
         type: minecraft:arrow
-        customModelData: 1
+        customModelData:
+          floats: [1]
         itemName: Scroll base-colors backwards
       forwardItem:
         type: minecraft:arrow
-        customModelData: 2
+        customModelData:
+          floats: [2]
         itemName: Scroll base-colors forward
     # baseColorItem can be specified, null defaults to Buttons.item
     baseColorItem: null

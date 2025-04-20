@@ -41,7 +41,6 @@ set.recipes:
       |BSB|
       |LRL|
       |ABA|
-mineinabyss:depthmeter: {}
 observe:
   itemLeftClick:
   - become: parent

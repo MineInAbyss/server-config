@@ -29,6 +29,6 @@ resourcePack:
   # Adding .zip to path will export as a zip instead of directory
   outputPath: resourcepack.zip
   # Points to a resourcepack in zip or directory format to merge into Geary's pack
-  includedPackPath: template_pack
+  includedPackPath: "template_pack"
 # Whether to enable Geary's spawning system
 spawning: true
