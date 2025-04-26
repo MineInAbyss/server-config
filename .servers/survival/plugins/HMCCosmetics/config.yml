@@ -2,7 +2,7 @@
 # HMCCosmetics Configuration (Remapped)
 #
 config-version: 1
-default-menu: defaultmenu
+default-menu: command_main_menu
 debug-mode: false
 database-settings:
   type: sqlite
@@ -26,8 +26,8 @@ cosmetic-settings:
   # This determines what to process what areas to process placeholders when displaying the item to the user.
   # This can be heavy on servers with a lot of players, so if experiencing lag issues relating to setting display/lores of items, disable this.
   item-processing:
-    display-name: true
-    lore: true
+    display-name: false
+    lore: false
 
   # This is a list of worlds that cosmetics are hidden in. When a player enters one of these worlds, their cosmetics will be hidden.
   disabled-worlds:
@@ -176,31 +176,8 @@ wardrobe:
     title-stay: 500
     title-fade-out: 1000
   wardrobes:
-    test:
-      distance: -1
-      permission: hmccosmetics.wardrobe.default
-      npc-location:
-        world: world
-        x: -3.0
-        y: 139.0
-        z: -513.5
-        yaw: -180.0
-        pitch: 0.0
-      viewer-location:
-        world: world
-        x: -7.0
-        y: 139.5
-        z: -513.5
-        yaw: -90.0
-        pitch: 0.0
-      leave-location:
-        world: world
-        x: -9.0
-        y: 139.0
-        z: -513.5
-        yaw: 90.0
-        pitch: 0.0
     guildhq1:
+      default-menu: wardrobe_main_menu
       distance: -1
       permission: hmccosmetics.wardrobe.default
       npc-location:
@@ -225,6 +202,7 @@ wardrobe:
         yaw: 90.0
         pitch: 0.0
     guildhq2:
+      default-menu: wardrobe_main_menu
       distance: -1
       permission: hmccosmetics.wardrobe.default
       npc-location:

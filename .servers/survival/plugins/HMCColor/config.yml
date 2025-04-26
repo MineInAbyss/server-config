@@ -11,11 +11,14 @@ buttons:
   # itemsadderItem: hmccosmetics:paintbrush
   # prefab: namespace:something
   item:
-    type: minecraft:potion
-    customModelData:
-      floats: [1000]
-    itemFlags:
-      - HIDE_ADDITIONAL_TOOLTIP
+    type: minecraft:leather_horse_armor
+    dyedColor:
+      showInTooltip: false
+      color: "#FFFFFF"
+    attributeModifiers:
+      showInTooltip: false
+      attributes: []
+    itemModel: cosmetics:paintbrush
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:
@@ -29,16 +32,10 @@ buttons:
       row: 19..25
       backwardSlot: 18
       forwardSlot: 26
-      backwardItem:
-        type: minecraft:arrow
-        customModelData:
-          floats: [1]
-        itemName: Scroll base-colors backwards
-      forwardItem:
-        type: minecraft:arrow
-        customModelData:
-          floats: [2]
-        itemName: Scroll base-colors forward
+      backwardsItem:
+        prefab: cosmetics:scrollable_prev
+      forwardsItem:
+        prefab: cosmetics:scrollable_next
     # baseColorItem can be specified, null defaults to Buttons.item
     baseColorItem: null
   subColorGrid:
@@ -54,11 +51,14 @@ buttons:
       backwardsSlot: 45
       forwardsSlot: 53
       backwardsItem:
-        prefab: cosmetics:dye_scrollable_prev
+        prefab: cosmetics:scrollable_prev
       forwardsItem:
-        prefab: cosmetics:dye_scrollable_next
+        prefab: cosmetics:scrollable_next
     # subColorItem can be specified, null defaults to Buttons.item
-    subColorItem: null
+    subColorItem:
+      type: minecraft:leather_horse_armor
+      itemModel: cosmetics:paintbrush
+      hideTooltip: {}
   effectButton: 31
 blacklistedItems:
   nexoItems:
@@ -74,16 +74,20 @@ enableEffectsMenu: true
 # itemsadderItem: hmccosmetics:something
 # prefab: namespace:something
 effectItem:
-  type: minecraft:paper
+  type: minecraft:leather_horse_armor
+  itemName: "<gold>Effects"
+  hideAdditionalTooltip: {}
   itemModel: minecraft:empty
 effects:
   space_effect:
     name: <#d24c9f>Space Effect
     color: "#FCFC00"
+    hideAdditionalTooltip: {}
     permission: hmccolor.effect
   mario_effect:
     name: <#d24c9f>Rainbow Glimmer Effect
     color: "#FCFC02"
+    hideAdditionalTooltip: {}
     permission: hmccolor.effect
 colorPermission: hmccolor.dye
 noPermissionMessage: <red>You do not have access to this color!
@@ -91,171 +95,241 @@ colors:
   red:
     baseColor:
       name: <#D23635>Red
+      hideAdditionalTooltip: {}
       color: "#D23635"
     subColors:
       - name: <#ff0000>Light Red
+        hideAdditionalTooltip: {}
         color: "#FF0000"
       - name: <#CE2029>Fire Engine Red
+        hideAdditionalTooltip: {}
         color: "#CE2029"
       - name: <#66023C>Tyrian Red
+        hideAdditionalTooltip: {}
         color: "#66023C"
       - name: <#C71585>Red Violet
+        hideAdditionalTooltip: {}
         color: "#C71585"
       - name: <B3446C>Raspberry Red
+        hideAdditionalTooltip: {}
         color: "#B3446C"
       - name: <DE3163>Cerise Red
+        hideAdditionalTooltip: {}
         color: "#DE3163"
       - name: Neon Red
         color: "#FF6961"
   orange:
     baseColor:
       name: <#EA5C2B>Orange
+      hideAdditionalTooltip: {}
       color: "#EA5C2B"
     subColors:
       - name: <#ff9f00>Orange Peel
+        hideAdditionalTooltip: {}
         color: "#FF9F00"
       - name: <#ffa500>Light Orange
+        hideAdditionalTooltip: {}
         color: "#FFA500"
       - name: <#f28500>Tangerine Orange
+        hideAdditionalTooltip: {}
         color: "#F28500"
       - name: <#ffb347>Pastel Orange
+        hideAdditionalTooltip: {}
         color: "#FFB347"
       - name: <#e24c00>Bright Orange
+        hideAdditionalTooltip: {}
         color: "#E24C00"
       - name: <#EC5800>Persimmon Orange
+        hideAdditionalTooltip: {}
         color: "#EC5800"
       - name: <#ffa500>Orange
         color: "#FFA500"
   yellow:
     baseColor:
       name: <#FFC900>Yellow
+      hideAdditionalTooltip: {}
       color: "#FFC900"
     subColors:
       - name: <#FDDE6C>Golden Rod
+        hideAdditionalTooltip: {}
         color: "#FDDE6C"
       - name: <#FFF44F>Lemon Yellow
+        hideAdditionalTooltip: {}
         color: "#FFF44F"
       - name: <#FFEF00>Canary Yellow
+        hideAdditionalTooltip: {}
         color: "#FFEF00"
       - name: <#FFD00A>Citrine Yellow
+        hideAdditionalTooltip: {}
         color: "#FFD00A"
       - name: <#F1FF62>Lazer Lemon Yellow
+        hideAdditionalTooltip: {}
         color: "#F1FF62"
       - name: <#E8DE2A>Sunflower Yellow
+        hideAdditionalTooltip: {}
         color: "#E8DE2A"
       - name: <#FFD800>School Bus Yellow
+        hideAdditionalTooltip: {}
         color: "#FFD800"
   pink:
     baseColor:
       name: <#FC35FA>Pink
+      hideAdditionalTooltip: {}
       color: "#FC35FA"
     subColors:
       - name: <#fc8eac>Flamingo Pink
+        hideAdditionalTooltip: {}
         color: "#FC8EAC"
       - name: <#fc6c85>Watermelon Color
+        hideAdditionalTooltip: {}
         color: "#FC6C85"
       - name: <#ff77ff>Fuchsia Pink
+        hideAdditionalTooltip: {}
         color: "#FF77FF"
       - name: <#ff69b4>Hot Pink
+        hideAdditionalTooltip: {}
         color: "#FF69B4"
       - name: <#e75480>Dark Pink
+        hideAdditionalTooltip: {}
         color: "#E75480"
       - name: <#ffd1dc>Pastel Pink
+        hideAdditionalTooltip: {}
         color: "#FFD1DC"
       - name: <#de5d83>Blush Pink
+        hideAdditionalTooltip: {}
         color: "#8C0C1C"
   white:
     baseColor:
       name: <#FFFFFF>White
+      hideAdditionalTooltip: {}
       color: "#FFFFFF"
     subColors:
       - name: <#FFFFFF>White
+        hideAdditionalTooltip: {}
         color: "#FFFFFF"
       - name: <#fdf5e6>Old Lace White
+        hideAdditionalTooltip: {}
         color: "#FDF5E6"
       - name: <#faf0e6>Linen White
+        hideAdditionalTooltip: {}
         color: "#FAF0E6"
       - name: <#f5f5f5>White Smoke
+        hideAdditionalTooltip: {}
         color: "#F5F5F5"
       - name: <#808080>Light Grey
+        hideAdditionalTooltip: {}
         color: "#808080"
       - name: <#2a2727>Dark Grey
+        hideAdditionalTooltip: {}
         color: "#2A2727"
       - name: <#000000>Black
+        hideAdditionalTooltip: {}
         color: "#000000"
   green:
     baseColor:
       name: <#A3DA8D>Green
+      hideAdditionalTooltip: {}
       color: "#A3DA8D"
     subColors:
       - name: <#32cd32>Lime Green
+        hideAdditionalTooltip: {}
         color: "#32CD32"
       - name: <#4cbb17>Kelly Green
+        hideAdditionalTooltip: {}
         color: "#4CBB17"
       - name: <#7fff00>Chartreuse Green
+        hideAdditionalTooltip: {}
         color: "#7FFF00"
       - name: <#006400>Dark Green
+        hideAdditionalTooltip: {}
         color: "#006400"
       - name: <#228b22>Forest Green
+        hideAdditionalTooltip: {}
         color: "#228B22"
       - name: <#39ff14>Neon Green
+        hideAdditionalTooltip: {}
         color: "#39FF14"
       - name: <#4f7942>Fern Green
+        hideAdditionalTooltip: {}
         color: "#4F7942"
   purple:
     baseColor:
       name: <#8946A6>Purple
+      hideAdditionalTooltip: {}
       color: "#8946A6"
     subColors:
       - name: <#9966cc>Amethyst Purple
+        hideAdditionalTooltip: {}
         color: "#9966CC"
       - name: <#4B0082>Indigo Purple
+        hideAdditionalTooltip: {}
         color: "#4B0082"
       - name: <#551a8b>Dark Purple
+        hideAdditionalTooltip: {}
         color: "#551A8B"
       - name: <#6f2da8>Grape Purple
+        hideAdditionalTooltip: {}
         color: "#6F2DA8"
       - name: <#bf00ff>Electric Purple
+        hideAdditionalTooltip: {}
         color: "#BF00FF"
       - name: <#7851a9>Royal Purple
+        hideAdditionalTooltip: {}
         color: "#7851A9"
       - name: <#6f2da8>Lilac Purple
+        hideAdditionalTooltip: {}
         color: "#B666D2"
   blue:
     baseColor:
       name: <#3731B5>Blue
+      hideAdditionalTooltip: {}
       color: "#3731B5"
     subColors:
       - name: <#318CE7>France Blue
+        hideAdditionalTooltip: {}
         color: "#318CE7"
       - name: <#034694>Chelsea Blue
+        hideAdditionalTooltip: {}
         color: "#034694"
       - name: <#007FFF>Azure Blue
+        hideAdditionalTooltip: {}
         color: "#007FFF"
       - name: <#0000FF>Blue
+        hideAdditionalTooltip: {}
         color: "#0000FF"
       - name: <#13274F>Braves Navy
+        hideAdditionalTooltip: {}
         color: "#13274F"
       - name: <#00008B>Dark Blue
+        hideAdditionalTooltip: {}
         color: "#00008B"
       - name: <#6495ED>Cornflower Blue
+        hideAdditionalTooltip: {}
         color: "#6495ED"
   light_blue:
     baseColor:
       name: <#32ECE8>Light Blue
+      hideAdditionalTooltip: {}
       color: "#99FFFF"
     subColors:
       - name: <#0CAFFF>Chlorine Blue
+        hideAdditionalTooltip: {}
         color: "#0CAFFF"
       - name: <#00BFFF>Deep Sky Blue
+        hideAdditionalTooltip: {}
         color: "#0CBFFF"
       - name: <#7DF9FF>Eletric Blue
+        hideAdditionalTooltip: {}
         color: "#7DF9FF"
       - name: <#87CEFA>Light Sky Blue
+        hideAdditionalTooltip: {}
         color: "#87CEFA"
       - name: <#73C2FB>Maya Blue
+        hideAdditionalTooltip: {}
         color: "#73C2FB"
       - name: <#7CB9E8>Aero Blue
+        hideAdditionalTooltip: {}
         color: "#7CB9E8"
       - name: <#99FFFF>Ice Blue
+        hideAdditionalTooltip: {}
         color: "#99FFFF"

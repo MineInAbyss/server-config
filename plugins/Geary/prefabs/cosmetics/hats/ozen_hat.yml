@@ -2,7 +2,7 @@ set.item:
   itemName: <#262626>Ozen's Hat
   lore:
   - '<gray>:ozensmug:'
-  type: POTION
+  type: LEATHER_HORSE_ARMOR
   itemModel: mineinabyss:ozen_hat
   dyedColor:
     color: '#FFFFFF'
@@ -10,4 +10,7 @@ set.item:
     slot: HEAD
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:item/cosmetics/ozen_hat
+  model: cosmetics:hats/ozen_hat
+  tintSources:
+    - type: DYE
+      defaultColor: "#FFFFFF"

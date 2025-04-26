@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "cosmetics:hats/double_flower",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": "16777215"
+      }
+    ]
+  }
+}

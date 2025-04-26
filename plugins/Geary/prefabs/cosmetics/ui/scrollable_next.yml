@@ -1,0 +1,8 @@
+set.item:
+  hideTooltip: {}
+  type: minecraft:paper
+  itemModel: cosmetics:scrollable_next
+resourcepack:
+  textures:
+    layers:
+    - cosmetics:ui/buttons/scrollable_next

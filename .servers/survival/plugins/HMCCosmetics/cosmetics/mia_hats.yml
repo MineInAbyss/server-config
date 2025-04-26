@@ -1,0 +1,60 @@
+bondrewd_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.bondrewd_helmet"
+  dyeable: true
+  item:
+    material: geary:cosmetics:bondrewd_helmet
+habo_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.habo_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:habo_hat
+lyza_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.lyza_hat"
+  dyeable: true
+  item:
+    material: geary:cosmetics:lyza_hat
+marulk_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.marulk_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:marulk_cap
+nanachi_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.nanachi_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:nanachi_hat
+ozen_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.ozen_hat"
+  dyeable: true
+  item:
+    material: geary:cosmetics:ozen_hat
+prushka_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.prushka_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:prushka_hat
+reg_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.reg_helmet"
+  dyeable: false
+  item:
+    material: geary:cosmetics:reg_helmet
+menacing:
+  slot: HELMET
+  permission: "hmccosmetics.hat.menacing"
+  dyeable: false
+  item:
+    material: geary:cosmetics:menacing
+faputa_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.faputa_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:faputa_hat

@@ -1,0 +1,8 @@
+set.item:
+  type: PAPER
+  itemName: <#008211>Prushka's Hat
+  itemModel: mineinabyss:prushka_hat
+  equippable:
+    slot: HEAD
+resourcepack:
+  model: cosmetics:hats/prushka_hat

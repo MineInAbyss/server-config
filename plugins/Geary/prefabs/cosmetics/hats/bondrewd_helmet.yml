@@ -3,7 +3,7 @@ set.item:
   lore:
   - <#6F19D1><i>
   - <#6F19D1><i>Helmet worn by
-  type: POTION
+  type: LEATHER_HORSE_ARMOR
   itemModel: mineinabyss:bondrewd_helmet
   dyedColor:
     color: '#FFFFFF'
@@ -11,4 +11,7 @@ set.item:
     slot: HEAD
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:item/cosmetics/bondrewd_helmet
+  model: cosmetics:hats/bondrewd_helmet
+  tintSources:
+    - type: DYE
+      defaultColor: "#FFFFFF"

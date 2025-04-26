@@ -1,0 +1,26 @@
+title: ":space_-8::cosmetic_main_menu:"
+rows: 3
+id: wardrobe_main_menu
+items:
+  hats:
+    slots:
+      - 12
+    item:
+      name: "<gold>Hats"
+      material: PAPER
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] wardrobe_mia_hats"
+  backpacks:
+    slots:
+      - 14
+    item:
+      name: "<dark_green>Backpacks"
+      material: PAPER
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] wardrobe_mia_backpacks"

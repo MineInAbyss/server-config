@@ -1,0 +1,20 @@
+camera:
+  slot: BACKPACK
+  permission: "hmccosmetics.camera.normal"
+  item:
+    material: geary:cosmetics:camera
+camera_bronze:
+  slot: BACKPACK
+  permission: "hmccosmetics.camera.bronze"
+  item:
+    material: geary:cosmetics:camera_bronze
+camera_silver:
+  slot: BACKPACK
+  permission: "hmccosmetics.camera.silver"
+  item:
+    material: geary:cosmetics:camera_silver
+camera_gold:
+  slot: BACKPACK
+  permission: "hmccosmetics.camera.gold"
+  item:
+    material: geary:cosmetics:camera_gold

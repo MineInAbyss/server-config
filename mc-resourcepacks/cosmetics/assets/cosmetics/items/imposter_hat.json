@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "cosmetics:hats/imposter_hat",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": "3290300"
+      }
+    ]
+  }
+}

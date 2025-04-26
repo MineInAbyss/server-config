@@ -1,0 +1,8 @@
+set.item:
+  hideTooltip: {}
+  type: minecraft:paper
+  itemModel: cosmetics:question_mark_button
+resourcepack:
+  textures:
+    layers:
+      - cosmetics:ui/buttons/question_mark_button

@@ -1,8 +1,0 @@
-set.item:
-  hideTooltip: {}
-  type: minecraft:paper
-  itemModel: cosmetics:dye_scrollable_prev
-resourcepack:
-  textures:
-    layers:
-    - cosmetics:item/ui/dye_scrollable_prev
