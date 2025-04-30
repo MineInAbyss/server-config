@@ -1,13 +1,11 @@
 empty_backpack:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   dyeable: false
   item:
     material: PAPER
     model-id: empty
 backpack:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   permission: "hmccosmetics.backpack.backpack"
   dyeable: false
   item:
@@ -16,8 +14,7 @@ backpack:
   firstperson-item:
     material: geary:cosmetics:default_backpack_fp
 satchel:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   permission: "hmccosmetics.backpack.satchel"
   dyeable: true
   item:
@@ -26,8 +23,7 @@ satchel:
     material: geary:cosmetics:satchel_fp
 miner_backpack:
   permission: "hmccosmetics.backpack.miner_backpack"
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   dyeable: true
   item:
     material: geary:cosmetics:miner_backpack
@@ -35,16 +31,14 @@ miner_backpack:
     material: geary:cosmetics:miner_backpack_fp
 neritantan_backpack:
   permission: "hmccosmetics.backpack.neritantan_backpack"
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   dyeable: false
   item:
     material: geary:cosmetics:neritantan_backpack
   firstperson-item:
     material: geary:cosmetics:neritantan_backpack_fp
 camper_backpack:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
   dyeable: true
   item:
@@ -52,8 +46,7 @@ camper_backpack:
   firstperson-item:
     material: geary:cosmetics:camper_backpack_fp
 generic_backpack:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   permission: "hmccosmetics.backpack.generic_backpack"
   dyeable: false
   item:
@@ -71,8 +64,7 @@ generic_backpack:
       - HIDE_ADDITIONAL_TOOLTIP
     model-id: "cosmetics:generic_backpack_fp"
 explorer_backpack:
-  slot: CUSTOM
-  slot-parent: MIA_BACKPACK
+  slot: MIA_BACKPACK
   permission: "hmccosmetics.backpack.explorer_backpack"
   dyeable: true
   item:
