@@ -89,8 +89,37 @@ items:
     currency: orth_coin
     cost: 20
     cosmetic: prushka_hat
-  reg_helmet:
+  nanachi_hat:
     slots: 3
+    item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:nanachi_hat
+      lore:
+        - "<red>Locked"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 2
+    cosmetic: nanachi_hat
+  reg_helmet:
+    slots: 4
     item:
       material: hmccosmetics:reg_helmet
       lore:
@@ -120,70 +149,8 @@ items:
     cosmetic: reg_helmet
 
 
-  bondrewd_helmet:
-    slots: 27
-    item:
-      material: hmccosmetics:bondrewd_helmet
-      lore:
-        - ""
-        - "<yellow>[Left Click - <i>Equip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
-    equipped-item:
-      material: hmccosmetics:bondrewd_helmet
-      lore:
-        - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:bondrewd_helmet
-      lore:
-        - ""
-        - "<gold>2:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    locked-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:bondrewd_helmet
-      lore:
-        - "<red>Locked"
-    type: mia_cosmetic
-    currency: mitty_token
-    cost: 2
-    cosmetic: bondrewd_helmet
-  ozen_hat:
-    slots: 28
-    item:
-      material: hmccosmetics:ozen_hat
-      lore:
-        - ""
-        - "<yellow>[Left Click - <i>Equip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
-    equipped-item:
-      material: hmccosmetics:ozen_hat
-      lore:
-        - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:ozen_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
-    locked-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:ozen_hat
-      lore:
-        - "<red>Locked"
-    type: mia_cosmetic
-    currency: mitty_token
-    cost: 2
-    cosmetic: ozen_hat
   lyza_hat:
-    slots: 29
+    slots: 36
     item:
       material: hmccosmetics:lyza_hat
       lore:
@@ -213,21 +180,23 @@ items:
     currency: mitty_token
     cost: 2
     cosmetic: lyza_hat
-  nanachi_hat:
-    slots: 30
+  ozen_hat:
+    slots: 37
     item:
-      material: hmccosmetics:nanachi_hat
+      material: hmccosmetics:ozen_hat
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
-      material: hmccosmetics:nanachi_hat
+      material: hmccosmetics:ozen_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
-      material: hmccosmetics:nanachi_hat
+      material: hmccosmetics:ozen_hat
       lore:
         - ""
         - "<gold>1:cosmetic_mitty_token:"
@@ -235,15 +204,46 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
-      material: hmccosmetics:nanachi_hat
+      material: hmccosmetics:ozen_hat
       lore:
         - "<red>Locked"
     type: mia_cosmetic
     currency: mitty_token
     cost: 2
-    cosmetic: nanachi_hat
+    cosmetic: ozen_hat
+  bondrewd_helmet:
+    slots: 38
+    item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - ""
+        - "<gold>2:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bondrewd_helmet
+      lore:
+        - "<red>Locked"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 2
+    cosmetic: bondrewd_helmet
   faputa_hat:
-    slots: 31
+    slots: 39
     item:
       material: hmccosmetics:faputa_hat
       lore:

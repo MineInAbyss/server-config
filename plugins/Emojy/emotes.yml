@@ -621,6 +621,11 @@ emotes:
     texture: cosmetics:ui/menus/cosmetic_grid_menu_2.png
     height: 256
     ascent: 14
+  - id: cosmetic_grid_menu_3
+    font: mineinabyss:cosmetics
+    texture: cosmetics:ui/menus/cosmetic_grid_menu_3.png
+    height: 256
+    ascent: 14
   - id: wardrobe_transition
     font: mineinabyss:cosmetics
     texture: cosmetics:ui/wardrobe_transition.png

@@ -1,0 +1,26 @@
+title: ":space_-8::cosmetic_grid_menu_3:"
+rows: 6
+id: command_event_hats
+items:
+
+
+  home_button:
+    slots: 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] command_main_menu"
+  prev_button:
+    slots: 47
+    item:
+      material: PAPER
+      name: "<white>Previous Page"
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] command_other_hats"

@@ -46,12 +46,6 @@ reg_helmet:
   dyeable: false
   item:
     material: geary:cosmetics:reg_helmet
-menacing:
-  slot: HELMET
-  permission: "hmccosmetics.hat.menacing"
-  dyeable: false
-  item:
-    material: geary:cosmetics:menacing
 faputa_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.faputa_hat"

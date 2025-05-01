@@ -1,44 +1,53 @@
-mining_helmet:
-  slot: HELMET
-  permission: "hmccosmetics.hat.mining_helmet"
-  dyeable: false
-  item:
-    name: "<yellow>Mining Helmet"
-    material: PAPER
-    model-id: cosmetics:mining_helmet
 goggles:
   slot: HELMET
   permission: "hmccosmetics.hat.goggles"
-  dyeable: true
   item:
     name: "Goggles"
     material: PAPER
     model-id: cosmetics:goggles
-double_flower:
-  slot: HELMET
-  permission: "hmccosmetics.hat.double_flower"
-  dyeable: true
-  item:
-    name: "Double Flower"
-    material: LEATHER_HORSE_ARMOR
-    color: "#F26AEB"
-    item-flags:
-      - HIDE_ADDITIONAL_TOOLTIP
-    model-id: cosmetics:double_flower
-side_flower:
-  slot: HELMET
-  permission: "hmccosmetics.hat.side_flower"
-  dyeable: true
-  item:
-    name: "Side Flower"
-    material: LEATHER_HORSE_ARMOR
-    color: "#F26AEB"
-    item-flags:
-      - HIDE_ADDITIONAL_TOOLTIP
-    model-id: cosmetics:side_flower
 adventurer_hat:
   slot: HELMET
-  dyeable: true
   permission: "hmccosmetics.hat.adventurer_hat"
   item:
     material: geary:cosmetics:adventurer_hat
+fantasy_straw_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_straw_hat"
+  item:
+    material: geary:cosmetics:fantasy_straw_hat
+fantasy_explorer_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_explorer_hat"
+  item:
+    material: geary:cosmetics:fantasy_explorer_hat
+fantasy_cook_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_cook_hat"
+  item:
+    material: geary:cosmetics:fantasy_cook_hat
+fantasy_glasses:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_glasses"
+  item:
+    material: geary:cosmetics:fantasy_glasses
+fantasy_fisher_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_fisher_hat"
+  item:
+    material: geary:cosmetics:fantasy_fisher_hat
+fantasy_mining_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.fantasy_mining_helmet"
+  item:
+    material: geary:cosmetics:fantasy_mining_helmet
+
+dooby_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.dooby_helmet"
+  item:
+    material: geary:cosmetics:dooby_helmet
+henya_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.henya_helmet"
+  item:
+    material: geary:cosmetics:henya_helmet
