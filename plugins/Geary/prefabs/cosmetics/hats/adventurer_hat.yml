@@ -1,0 +1,8 @@
+set.item:
+  itemName: Adventurer Hat
+  type: LEATHER_HORSE_ARMOR
+  itemModel: cosmetics:adventurer_hat
+  dyedColor:
+    color: "#2D5B2C"
+resourcepack:
+  model: cosmetics:hats/adventurer_hat

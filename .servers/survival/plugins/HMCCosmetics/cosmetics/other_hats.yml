@@ -36,3 +36,9 @@ side_flower:
     item-flags:
       - HIDE_ADDITIONAL_TOOLTIP
     model-id: cosmetics:side_flower
+adventurer_hat:
+  slot: HELMET
+  dyeable: true
+  permission: "hmccosmetics.hat.adventurer_hat"
+  item:
+    material: geary:cosmetics:adventurer_hat

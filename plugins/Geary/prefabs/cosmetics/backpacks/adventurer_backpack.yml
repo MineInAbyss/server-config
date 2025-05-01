@@ -1,0 +1,8 @@
+set.item:
+  itemName: Adventurer Backpack
+  type: LEATHER_HORSE_ARMOR
+  dyedColor:
+    color: "#2D5B2C"
+  itemModel: cosmetics:adventurer_backpack
+resourcepack:
+  model: cosmetics:backpacks/adventurer_backpack
