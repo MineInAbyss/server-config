@@ -1,0 +1,15 @@
+amongus_cosmetic:
+  slot: HELMET
+  permission: "hmccosmetics.hat.amongus_cosmetic"
+  item:
+    material: geary:mineinabyss:amongus_cosmetic_new
+tama_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.tama_hat"
+  item:
+    material: geary:mineinabyss:tama_hat_new
+clown_mask:
+  slot: HELMET
+  permission: "hmccosmetics.hat.clown_mask"
+  item:
+    material: geary:mineinabyss:clown_mask_new
