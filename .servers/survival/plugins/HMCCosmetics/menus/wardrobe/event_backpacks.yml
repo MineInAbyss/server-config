@@ -1,0 +1,188 @@
+title: ":space_-8::cosmetic_grid_menu_3:"
+rows: 6
+id: wardrobe_event_backpacks
+items:
+  mallet_chisel_bronze:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:mallet_chisel_bronze
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:mallet_chisel_bronze
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:mallet_chisel_bronze
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: mallet_chisel_bronze
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  mallet_chisel_silver:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:mallet_chisel_silver
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:mallet_chisel_silver
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:mallet_chisel_silver
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: mallet_chisel_silver
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  mallet_chisel_gold:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:mallet_chisel_gold
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:mallet_chisel_gold
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:mallet_chisel_gold
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: mallet_chisel_gold
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+
+  camera_bronze:
+    slots:
+      - 6
+    item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:camera_bronze
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:camera_bronze
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: camera_bronze
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  camera_silver:
+    slots:
+      - 7
+    item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:camera_silver
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:camera_silver
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: camera_silver
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  camera_gold:
+    slots:
+      - 8
+    item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:camera_gold
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:camera_gold
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    cosmetic: camera_gold
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+
+  home_button:
+    slots: 49
+    item:
+      material: PAPER
+      name: "<red>To Main Menu"
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] wardrobe_main_menu"
+  prev_button:
+    slots: 47
+    item:
+      material: PAPER
+      name: "<white>Previous Page"
+      model-id: minecraft:empty
+    type: empty
+    actions:
+      any:
+        - "[MENU] wardrobe_other_backpacks"
