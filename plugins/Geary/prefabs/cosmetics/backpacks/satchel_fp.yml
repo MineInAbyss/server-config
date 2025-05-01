@@ -1,9 +1,11 @@
 set.item:
   itemName: <#FF9D26>Satchel
-  type: leather_horse_armor
+  type: minecraft:paper
   dyedColor:
-    color: 220, 192, 105
+    color: "#DCC069"
   itemModel: cosmetics:satchel_fp
 resourcepack:
   model: cosmetics:backpacks/satchel_fp
-disableItemInteractions: {}
+  tintSources:
+    - type: DYE
+      defaultColor: "#DCC069"

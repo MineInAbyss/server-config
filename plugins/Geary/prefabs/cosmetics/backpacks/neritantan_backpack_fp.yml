@@ -1,8 +1,11 @@
 set.item:
   itemName: <gray>Neritantan Backpack
-  type: leather_horse_armor
+  type: minecraft:paper
   dyedColor:
-    color: 255, 255, 255
+    color: "#FFFFFF"
   itemModel: cosmetics:neritantan_backpack_fp
 resourcepack:
   model: cosmetics:backpacks/neritantan_backpack_fp
+  tintSources:
+    - type: DYE
+      defaultColor: "#FFFFFF"

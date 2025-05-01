@@ -1,8 +1,11 @@
 set.item:
   itemName: <#FF9D26>Camper Backpack
-  type: leather_horse_armor
+  type: minecraft:paper
   dyedColor:
-    color: 98, 168, 255
+    color: "#62A8FF"
   itemModel: cosmetics:camper_backpack_fp
 resourcepack:
   model: cosmetics:backpacks/camper_backpack_fp
+  tintSources:
+    - type: DYE
+      defaultColor: "#62A8FF"

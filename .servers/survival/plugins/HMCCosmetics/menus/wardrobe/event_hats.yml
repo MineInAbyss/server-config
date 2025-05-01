@@ -1,6 +1,6 @@
 title: ":space_-8::cosmetic_grid_menu_3:"
 rows: 6
-id: command_event_hats
+id: wardrobe_event_hats
 items:
 
   tama_hat:
@@ -20,7 +20,9 @@ items:
       material: hmccosmetics:tama_hat
       lore:
         - ""
+        - "<gold>1:cosmetic_mitty_token:"
         - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:tama_hat
@@ -36,14 +38,20 @@ items:
       material: hmccosmetics:amongus_cosmetic
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:amongus_cosmetic
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:amongus_cosmetic
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:amongus_cosmetic
@@ -59,14 +67,20 @@ items:
       material: hmccosmetics:clown_mask
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:clown_mask
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:clown_mask
+      lore:
+        - ""
+        - "<gold>1:cosmetic_mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:clown_mask
@@ -86,7 +100,7 @@ items:
     type: empty
     actions:
       any:
-        - "[MENU] command_main_menu"
+        - "[MENU] wardrobe_main_menu"
   prev_button:
     slots: 47
     item:
@@ -96,4 +110,4 @@ items:
     type: empty
     actions:
       any:
-        - "[MENU] command_other_hats"
+        - "[MENU] wardrobe_other_hats"

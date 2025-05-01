@@ -8,20 +8,14 @@ items:
       material: hmccosmetics:fantasy_mining_helmet
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_mining_helmet
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_mining_helmet
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_mining_helmet
@@ -37,20 +31,14 @@ items:
       material: hmccosmetics:fantasy_cook_hat
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_cook_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_cook_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_cook_hat
@@ -66,20 +54,14 @@ items:
       material: hmccosmetics:fantasy_fisher_hat
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_fisher_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_fisher_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_fisher_hat
@@ -95,20 +77,14 @@ items:
       material: hmccosmetics:fantasy_explorer_hat
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_explorer_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_explorer_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_explorer_hat
@@ -124,20 +100,14 @@ items:
       material: hmccosmetics:adventurer_hat
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:adventurer_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:adventurer_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:adventurer_hat
@@ -153,20 +123,14 @@ items:
       material: hmccosmetics:fantasy_straw_hat
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_straw_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_straw_hat
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_straw_hat
@@ -182,20 +146,14 @@ items:
       material: hmccosmetics:goggles
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:goggles
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:goggles
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:goggles
@@ -211,20 +169,14 @@ items:
       material: hmccosmetics:fantasy_glasses
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_glasses
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_glasses
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_glasses
@@ -242,20 +194,14 @@ items:
       material: hmccosmetics:dooby_helmet
       lore:
         - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:dooby_helmet
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:dooby_helmet
-      lore:
-        - ""
-        - "<gold>1:cosmetic_mitty_token:"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-        - "<red>[Right Click - <i>Buy</i>]"
+        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:dooby_helmet

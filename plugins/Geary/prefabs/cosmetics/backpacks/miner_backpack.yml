@@ -1,8 +1,11 @@
 set.item:
   itemName: <#FF9D26>Miner Backpack
-  type: leather_horse_armor
+  type: minecraft:paper
   dyedColor:
-    color: 220, 192, 105
+    color: "#DCC069"
   itemModel: cosmetics:miner_backpack
 resourcepack:
   model: cosmetics:backpacks/miner_backpack
+  tintSources:
+    - type: DYE
+      defaultColor: "#DCC069"

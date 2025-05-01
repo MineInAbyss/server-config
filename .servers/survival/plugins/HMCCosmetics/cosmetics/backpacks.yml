@@ -50,19 +50,9 @@ generic_backpack:
   permission: "hmccosmetics.backpack.generic_backpack"
   dyeable: false
   item:
-    name: "<#7e481d>Generic Backpack"
-    material: POTION
-    color: "#ffffff"
-    item-flags:
-      - HIDE_ADDITIONAL_TOOLTIP
-    model-id: "cosmetics:generic_backpack"
+    material: geary:cosmetics:generic_backpack
   firstperson-item:
-    name: "<#7e481d>Generic Backpack"
-    material: LEATHER_HORSE_ARMOR
-    color: "#ffffff"
-    item-flags:
-      - HIDE_ADDITIONAL_TOOLTIP
-    model-id: "cosmetics:generic_backpack_fp"
+    material: geary:cosmetics:generic_backpack_fp
 explorer_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.explorer_backpack"
@@ -77,3 +67,21 @@ adventurer_backpack:
   permission: "hmccosmetics.backpack.adventurer_backpack"
   item:
     material: geary:cosmetics:adventurer_backpack
+fantasy_mining_backpack:
+  slot: BACKPACK
+  dyeable: true
+  permission: "hmccosmetics.backpack.fantasy_mining_backpack"
+  item:
+    material: geary:cosmetics:fantasy_mining_backpack
+fantasy_explorer_backpack:
+  slot: BACKPACK
+  dyeable: true
+  permission: "hmccosmetics.backpack.fantasy_explorer_backpack"
+  item:
+    material: geary:cosmetics:fantasy_explorer_backpack
+fantasy_fishing_rod:
+  slot: BACKPACK
+  dyeable: true
+  permission: "hmccosmetics.backpack.fantasy_fishing_rod"
+  item:
+    material: geary:cosmetics:fantasy_fishing_rod
