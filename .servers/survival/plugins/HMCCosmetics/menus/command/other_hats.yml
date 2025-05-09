@@ -93,11 +93,13 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:adventurer_hat
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:adventurer_hat

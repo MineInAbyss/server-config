@@ -28,27 +28,37 @@ adventurer_backpack:
   permission: "hmccosmetics.backpack.adventurer_backpack"
   item:
     material: geary:cosmetics:adventurer_backpack
+  firstperson-item:
+    material: geary:cosmetics:adventurer_backpack_fp
 fantasy_mining_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_mining_backpack"
   item:
     material: geary:cosmetics:fantasy_mining_backpack
+  firstperson-item:
+    material: geary:cosmetics:fantasy_mining_backpack_fp
 fantasy_explorer_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_explorer_backpack"
   item:
     material: geary:cosmetics:fantasy_explorer_backpack
+  firstperson-item:
+    material: geary:cosmetics:fantasy_explorer_backpack_fp
 fantasy_fishing_rod:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_fishing_rod"
   item:
     material: geary:cosmetics:fantasy_fishing_rod
+  firstperson-item:
+    material: geary:cosmetics:fantasy_fishing_rod_fp
 cauldron_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.cauldron_backpack"
   item:
     material: geary:cosmetics:cauldron_backpack
+  firstperson-item:
+    material: geary:cosmetics:cauldron_backpack_fp

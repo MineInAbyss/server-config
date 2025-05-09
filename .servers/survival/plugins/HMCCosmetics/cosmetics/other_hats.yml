@@ -8,6 +8,7 @@ goggles:
 adventurer_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.adventurer_hat"
+  dyeable: true
   item:
     material: geary:cosmetics:adventurer_hat
 fantasy_straw_hat:
