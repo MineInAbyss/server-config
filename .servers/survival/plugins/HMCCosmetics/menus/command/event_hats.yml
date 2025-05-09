@@ -43,7 +43,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:amongus_cosmetic
@@ -66,7 +65,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:clown_mask

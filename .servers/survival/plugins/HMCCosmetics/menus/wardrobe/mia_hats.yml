@@ -105,7 +105,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:nanachi_hat
@@ -253,7 +252,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:faputa_hat

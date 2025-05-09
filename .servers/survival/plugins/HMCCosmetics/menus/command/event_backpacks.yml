@@ -9,14 +9,12 @@ items:
       material: hmccosmetics:mallet_chisel_bronze
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:mallet_chisel_bronze
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:mallet_chisel_bronze
@@ -43,7 +41,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:mallet_chisel_silver
@@ -70,7 +67,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:mallet_chisel_gold
@@ -98,7 +94,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:camera_bronze
@@ -125,7 +120,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:camera_silver
@@ -152,7 +146,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<yellow>[Left Click - <i>Equip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:camera_gold
