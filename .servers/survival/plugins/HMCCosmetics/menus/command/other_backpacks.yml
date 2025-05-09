@@ -137,34 +137,8 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-  generic_backpack:
-    slots: 4
-    item:
-      material: hmccosmetics:generic_backpack
-      lore:
-        - ""
-        - "<yellow>[Left Click - <i>Equip</i>]"
-    equipped-item:
-      material: hmccosmetics:generic_backpack
-      lore:
-        - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
-    locked-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:generic_backpack
-      lore:
-        - "<red>Locked"
-    type: mia_cosmetic
-    currency: orth_coin
-    cost: 30
-    cosmetic: generic_backpack
-    actions:
-      on-equip:
-        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
-      on-unequip:
-        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   miner_backpack:
-    slots: 5
+    slots: 4
     item:
       material: hmccosmetics:miner_backpack
       lore:
@@ -198,7 +172,7 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   explorer_backpack:
-    slots: 6
+    slots: 5
     item:
       material: hmccosmetics:explorer_backpack
       lore:

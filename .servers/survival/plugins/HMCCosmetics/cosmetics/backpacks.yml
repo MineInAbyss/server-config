@@ -45,14 +45,6 @@ camper_backpack:
     material: geary:cosmetics:camper_backpack
   firstperson-item:
     material: geary:cosmetics:camper_backpack_fp
-generic_backpack:
-  slot: BACKPACK
-  permission: "hmccosmetics.backpack.generic_backpack"
-  dyeable: false
-  item:
-    material: geary:cosmetics:generic_backpack
-  firstperson-item:
-    material: geary:cosmetics:generic_backpack_fp
 explorer_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.explorer_backpack"
