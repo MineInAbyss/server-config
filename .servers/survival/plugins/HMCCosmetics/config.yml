@@ -116,8 +116,9 @@ menu-settings:
     locked-cosmetic-color: <red>
   cosmetic-type:
     # This allows you to specify if it should require a special click type for the interaction to work.
-    equip-click: ANY
-    unequip-click: ANY
+    equip-click: LEFT
+    unequip-click: LEFT
+    dye-click: RIGHT
 dye-menu:
   # If you use ItemsAdder, set this to "<white>:img_offset_-8::img_dye_menu:"
   # If you use Oraxen, set this to "<white><s:-8><g:dye_menu>"
