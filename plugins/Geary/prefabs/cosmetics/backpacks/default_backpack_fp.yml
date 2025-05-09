@@ -1,12 +1,6 @@
 set.item:
   itemName: <#FF9D26>Backpack
   type: minecraft:paper
-  dyedColor:
-    color: "#DCC069"
-  itemModel: cosmetics:default_backpack
+  itemModel: cosmetics:default_backpack_fp
 resourcepack:
-  model: cosmetics:backpacks/default_backpack
-  tintSources:
-    - type: DYE
-      defaultColor: "#DCC069"
-disableItemInteractions: {}
+  model: cosmetics:backpacks/default_backpack_fp

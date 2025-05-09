@@ -10,13 +10,11 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_mining_backpack
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_mining_backpack
@@ -44,13 +42,11 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_explorer_backpack
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_explorer_backpack
@@ -78,13 +74,11 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:fantasy_fishing_rod
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:fantasy_fishing_rod
@@ -112,11 +106,13 @@ items:
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     equipped-item:
       material: hmccosmetics:adventurer_backpack
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:adventurer_backpack
@@ -229,38 +225,6 @@ items:
     currency: mitty_token
     cost: 1
     cosmetic: camper_backpack
-    actions:
-      on-equip:
-        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
-      on-unequip:
-        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-  neritantan_backpack:
-    slots: 37
-    item:
-      material: hmccosmetics:neritantan_backpack
-      lore:
-        - ""
-        - "<yellow>[Left Click - <i>Equip</i>]"
-    equipped-item:
-      material: hmccosmetics:neritantan_backpack
-      lore:
-        - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
-    locked-equipped-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:neritantan_backpack
-      lore:
-        - "<red>Locked"
-        - "<yellow>[Left Click - <i>Unequip</i>]"
-    locked-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:neritantan_backpack
-      lore:
-        - "<red>Locked"
-    type: mia_cosmetic
-    currency: mitty_token
-    cost: 1
-    cosmetic: neritantan_backpack
     actions:
       on-equip:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"

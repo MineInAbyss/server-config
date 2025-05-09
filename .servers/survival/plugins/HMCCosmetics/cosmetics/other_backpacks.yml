@@ -1,26 +1,3 @@
-empty_backpack:
-  slot: BACKPACK
-  dyeable: false
-  item:
-    material: PAPER
-    model-id: minecraft:empty
-backpack:
-  slot: BACKPACK
-  permission: "hmccosmetics.backpack.backpack"
-  dyeable: false
-  item:
-    name: "<#7e481d>Backpack"
-    material: geary:cosmetics:default_backpack
-  firstperson-item:
-    material: geary:cosmetics:default_backpack_fp
-satchel:
-  slot: BACKPACK
-  permission: "hmccosmetics.backpack.satchel"
-  dyeable: true
-  item:
-    material: geary:cosmetics:satchel
-  firstperson-item:
-    material: geary:cosmetics:satchel_fp
 miner_backpack:
   permission: "hmccosmetics.backpack.miner_backpack"
   slot: BACKPACK
@@ -29,14 +6,6 @@ miner_backpack:
     material: geary:cosmetics:miner_backpack
   firstperson-item:
     material: geary:cosmetics:miner_backpack_fp
-neritantan_backpack:
-  permission: "hmccosmetics.backpack.neritantan_backpack"
-  slot: BACKPACK
-  dyeable: false
-  item:
-    material: geary:cosmetics:neritantan_backpack
-  firstperson-item:
-    material: geary:cosmetics:neritantan_backpack_fp
 camper_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
@@ -61,13 +30,13 @@ adventurer_backpack:
     material: geary:cosmetics:adventurer_backpack
 fantasy_mining_backpack:
   slot: BACKPACK
-  dyeable: true
+  dyeable: false
   permission: "hmccosmetics.backpack.fantasy_mining_backpack"
   item:
     material: geary:cosmetics:fantasy_mining_backpack
 fantasy_explorer_backpack:
   slot: BACKPACK
-  dyeable: true
+  dyeable: false
   permission: "hmccosmetics.backpack.fantasy_explorer_backpack"
   item:
     material: geary:cosmetics:fantasy_explorer_backpack

@@ -63,6 +63,75 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
+
+  bondrewd_backpack:
+    slots: 36
+    item:
+      material: hmccosmetics:bondrewd_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:bondrewd_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bondrewd_backpack
+      lore:
+        - "<red>Locked"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bondrewd_backpack
+      lore:
+        - "<red>Locked"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 2
+    cosmetic: bondrewd_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  neritantan_backpack:
+    slots: 37
+    item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - ""
+        - "<gold>2:mitty_token:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:neritantan_backpack
+      lore:
+        - "<red>Locked"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 2
+    cosmetic: neritantan_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+
   back_button:
     slots: 49
     item:
