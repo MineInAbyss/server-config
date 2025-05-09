@@ -2,7 +2,6 @@ title: ":space_-8::cosmetic_grid_menu_2:"
 rows: 6
 id: command_other_backpacks
 items:
-
   fantasy_mining_backpack:
     slots: 0
     item:
@@ -35,8 +34,40 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
-  fantasy_explorer_backpack:
+  cauldron_backpack:
     slots: 1
+    item:
+      material: hmccosmetics:cauldron_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:cauldron_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:cauldron_backpack
+      lore:
+        - "<red>Locked"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:cauldron_backpack
+      lore:
+        - "<red>Locked"
+    type: mia_cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: cauldron_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  fantasy_explorer_backpack:
+    slots: 2
     item:
       material: hmccosmetics:fantasy_explorer_backpack
       lore:
@@ -68,7 +99,7 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   fantasy_fishing_rod:
-    slots: 2
+    slots: 3
     item:
       material: hmccosmetics:fantasy_fishing_rod
       lore:
@@ -100,7 +131,7 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   adventurer_backpack:
-    slots: 3
+    slots: 4
     item:
       material: hmccosmetics:adventurer_backpack
       lore:
@@ -134,7 +165,7 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   miner_backpack:
-    slots: 4
+    slots: 5
     item:
       material: hmccosmetics:miner_backpack
       lore:
@@ -168,7 +199,7 @@ items:
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
   explorer_backpack:
-    slots: 5
+    slots: 6
     item:
       material: hmccosmetics:explorer_backpack
       lore:

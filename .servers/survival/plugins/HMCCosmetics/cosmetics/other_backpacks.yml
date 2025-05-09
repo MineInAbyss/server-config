@@ -46,3 +46,9 @@ fantasy_fishing_rod:
   permission: "hmccosmetics.backpack.fantasy_fishing_rod"
   item:
     material: geary:cosmetics:fantasy_fishing_rod
+cauldron_backpack:
+  slot: BACKPACK
+  dyeable: false
+  permission: "hmccosmetics.backpack.cauldron_backpack"
+  item:
+    material: geary:cosmetics:cauldron_backpack
