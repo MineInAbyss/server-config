@@ -73,7 +73,7 @@ fantasy_explorer_backpack:
     material: geary:cosmetics:fantasy_explorer_backpack
 fantasy_fishing_rod:
   slot: BACKPACK
-  dyeable: true
+  dyeable: false
   permission: "hmccosmetics.backpack.fantasy_fishing_rod"
   item:
     material: geary:cosmetics:fantasy_fishing_rod
