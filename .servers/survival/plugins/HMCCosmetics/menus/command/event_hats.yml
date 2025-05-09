@@ -36,7 +36,6 @@ items:
       material: hmccosmetics:amongus_cosmetic
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:amongus_cosmetic
@@ -58,7 +57,6 @@ items:
       material: hmccosmetics:clown_mask
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:clown_mask

@@ -34,7 +34,6 @@ items:
       material: hmccosmetics:mallet_chisel_silver
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:mallet_chisel_silver
@@ -60,7 +59,6 @@ items:
       material: hmccosmetics:mallet_chisel_gold
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:mallet_chisel_gold
@@ -87,7 +85,6 @@ items:
       material: hmccosmetics:camera_bronze
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:camera_bronze
@@ -113,7 +110,6 @@ items:
       material: hmccosmetics:camera_silver
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:camera_silver
@@ -139,7 +135,6 @@ items:
       material: hmccosmetics:camera_gold
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:camera_gold

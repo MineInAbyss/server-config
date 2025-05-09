@@ -111,7 +111,6 @@ items:
       material: hmccosmetics:adventurer_backpack
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:adventurer_backpack
@@ -144,7 +143,6 @@ items:
       material: hmccosmetics:generic_backpack
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:generic_backpack
@@ -268,7 +266,6 @@ items:
       material: hmccosmetics:neritantan_backpack
       lore:
         - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
       material: hmccosmetics:neritantan_backpack
