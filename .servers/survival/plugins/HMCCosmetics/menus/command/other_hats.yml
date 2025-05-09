@@ -149,27 +149,27 @@ items:
     currency: mitty_token
     cost: 1
     cosmetic: goggles
-  fantasy_glasses:
-    slots: 6
+  mechanic_glasses:
+    slots: 7
     item:
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - "<red>Locked"
     type: mia_cosmetic
     currency: mitty_token
     cost: 1
-    cosmetic: fantasy_glasses
+    cosmetic: mechanic_glasses
 
 
   dooby_helmet:

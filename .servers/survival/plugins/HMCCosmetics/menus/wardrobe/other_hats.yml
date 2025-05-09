@@ -198,20 +198,20 @@ items:
     currency: orth_coin
     cost: 150
     cosmetic: goggles
-  fantasy_glasses:
-    slots: 6
+  mechanic_glasses:
+    slots: 7
     item:
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - ""
         - "<yellow>[Left Click - <i>Equip</i>]"
     equipped-item:
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - ""
         - "<gold>80:cosmetic_orth_coin:"
@@ -219,13 +219,13 @@ items:
         - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
       model-id: cosmetics:question_mark_button
-      material: hmccosmetics:fantasy_glasses
+      material: hmccosmetics:mechanic_glasses
       lore:
         - "<red>Locked"
     type: mia_cosmetic
     currency: orth_coin
     cost: 80
-    cosmetic: fantasy_glasses
+    cosmetic: mechanic_glasses
 
 
   dooby_helmet:

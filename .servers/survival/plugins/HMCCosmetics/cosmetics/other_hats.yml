@@ -25,11 +25,11 @@ fantasy_cook_hat:
   permission: "hmccosmetics.hat.fantasy_cook_hat"
   item:
     material: geary:cosmetics:fantasy_cook_hat
-fantasy_glasses:
+mechanic_glasses:
   slot: HELMET
-  permission: "hmccosmetics.hat.fantasy_glasses"
+  permission: "hmccosmetics.hat.mechanic_glasses"
   item:
-    material: geary:cosmetics:fantasy_glasses
+    material: geary:cosmetics:mechanic_glasses
 fantasy_fisher_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_fisher_hat"
