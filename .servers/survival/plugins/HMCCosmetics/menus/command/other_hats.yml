@@ -130,29 +130,8 @@ items:
     currency: mitty_token
     cost: 1
     cosmetic: fantasy_straw_hat
-  goggles:
-    slots: 6
-    item:
-      material: hmccosmetics:goggles
-      lore:
-        - ""
-        - "<yellow>[Left Click - <i>Equip</i>]"
-    equipped-item:
-      material: hmccosmetics:goggles
-      lore:
-        - ""
-        - "<red>[Left Click - <i>Unequip</i>]"
-    locked-item:
-      model-id: cosmetics:question_mark_button
-      material: hmccosmetics:goggles
-      lore:
-        - "<red>Locked"
-    type: mia_cosmetic
-    currency: mitty_token
-    cost: 1
-    cosmetic: goggles
   mechanic_glasses:
-    slots: 7
+    slots: 6
     item:
       material: hmccosmetics:mechanic_glasses
       lore:

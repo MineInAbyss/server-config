@@ -8,8 +8,8 @@ server:
   port: 8082
   publicAddress: "{{ env.PACKY_PUBLIC_ADDRESS | default("https://pack.mineinabyss.com/" + env.SERVER_NAME) }}"
 prompt: ""
-force: true
-sendOnReload: false
+force: false
+sendOnReload: true
 # What ObfuscationType to use, valid options are FULL, SIMPLE & NONE
 obfuscation:
   type: NONE
