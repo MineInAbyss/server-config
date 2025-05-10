@@ -77,7 +77,6 @@ items:
       lore:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
-        - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
       model-id: cosmetics:question_mark_button
       material: hmccosmetics:bondrewd_backpack
