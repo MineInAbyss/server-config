@@ -1,0 +1,68 @@
+hornballer:
+  Type: ZOMBIE
+  Display: "<#9A1CAD>Hornballer"
+  Health: 100
+  Damage: 0
+  SpawnCategory: event
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+    Interactable: true
+    MovementSpeed: 0.38
+    Silent: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+  KillMessages:
+  - '<target.name> §cwas Dunked §fby §2Hornballer'
+  - '<target.name> §cwas a stepping stone §fin §2Hornballers §6legacy'
+  - '§2Hornballer §fbroke <target.name> §cknees on the court'
+  - '<target.name> §cwas finessed §fby §2Hornballer'
+  - '<target.name> §cgot nothing §fon §2Hornballer'
+  Model:
+    Id: hornballer
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.5
+    - FALL 0.01
+  Modules:
+    ThreatTable: true
+  Drops:
+    - exp 30-60
+    - toypufferfish 1 0.04
+    - potion{name="<#94bcd4>Balling Tears";lore=":troll:";enchants=THORNS:1} 1 0.06
+    - amogus_token 2-5 1
+
+    - GREEN_WOOL 1-3 0.6
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    - DefaultState{m=horncrier;t=walk;s=not_in_combat} @self ~onSpawnOrLoad
+    - DefaultState{m=horncrier;t=walk;s=walk} @self ~onEnterCombat
+    - DefaultState{m=horncrier;t=walk;s=not_in_combat} @self ~onDropCombat
+    - skill{s=Changetarget} ~onTimer:160 <99%
+
+    - skill{s=hb_dash} @target ~onTimer:100
+    - skill{s=hc_Attack2} @self ~onattack
+    # - skill:MIAPetExpNearby{exp=1} ~onDeath
+
+    # - skill{s=hc_backup} @self ~ondamaged
+    - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hcHurt} @self ~onHurt
+    #    - skill{s=hcDeath} @self ~onDeathAdd commentMore actions
+
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=2} ~onDeath

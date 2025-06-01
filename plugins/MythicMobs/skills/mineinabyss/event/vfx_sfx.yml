@@ -1,0 +1,24 @@
+
+townsman_meet_sound:
+  Skills:
+  - sound{s=mineinabyss:entity.amongus.meeting_sound;v=0.5;sc=HOSTILE} @self
+
+drip_song:
+  Skills:
+  - sound{s=mineinabyss:entity.amongus.drip;v=0.8;sc=HOSTILE} @world
+
+amongusknife:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - onAttack{auraName=bloodfx;onHit=knifefx;duration=100;charges=99;multiplier=1} @self
+knifefx:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - effect:particles{particle=block;m=redstone_block;amount=35;hS=.25;vS=.25;y=1.25}
+  
+kys:
+  Cooldown: 1
+  Skills:
+  - remove{delay=5} @self 
