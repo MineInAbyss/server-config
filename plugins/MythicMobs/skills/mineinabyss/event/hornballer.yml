@@ -49,7 +49,7 @@ hb_dashhit:
     - delay 10
 
     - velocity{m=set;x=0;y=0;z=0} @self
-    - damage{a=10;ia=true} @PIR{r=5}
+    - damage{a=5;ia=true} @PIR{r=5}
     - leap{velocity=60} @forward{f=2;y=-5}
     - delay 25
     - state{s=spikedown;li=0;lo=0;r=true} @self

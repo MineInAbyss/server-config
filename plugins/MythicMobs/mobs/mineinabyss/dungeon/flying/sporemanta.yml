@@ -1,0 +1,43 @@
+sporemanta:
+  Type: ALLAY
+  SpawnCategory: swarm
+  Display: '<#6C19BF>Spore Manta'  # change this
+  Prefabs: [ mineinabyss:custom_allay ]
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Health: 50 # change this
+  Damage: 10 # keep this 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    KnockbackResistance: 0.0
+    PreventSunburn: true
+    PreventJockeyMounts: true
+  Model:
+    Id: sporemanta
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  Drops:
+  Skills:
+    ####### Misc
+    - potion{t=LEVITATION;l=4;force=true;p=true;d=5} @self ~onTimer:1 ?onground{}
+    - state{mid=sporemanta;s=attack} @self ~onAttack
+    - skill{s=sporemantaaura} @self ~onTimer:20
+    ########### FX
+    - skill{s=sporemantaHurt} @self ~onHurt
+    - skill{s=sporemantaDeath} @self ~onDeath
+    - skill{s=sporemantaAmbient} @self ~onDeath
+    - skill{s=displayHealth} ~onDamaged
+

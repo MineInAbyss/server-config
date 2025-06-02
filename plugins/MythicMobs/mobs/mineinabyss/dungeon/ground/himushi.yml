@@ -1,8 +1,8 @@
-himushi:
+dungeonhimushi:
   Type: HUSK
   SpawnCategory: hostile
   Display: 'Himushi'
-  Health: 60
+  Health: 100
   Damage: 10
   AIGoalSelectors:
     - 0 clear
@@ -20,7 +20,7 @@ himushi:
     FollowRange: 30
     PreventItemPickup: true
     PreventRandomEquipment: true
-    MovementSpeed: 0.16
+    MovementSpeed: 0.18
     KnockbackResistance: 1
     PreventJockeyMounts: true
   Model:
@@ -28,9 +28,6 @@ himushi:
     ViewRadius: 48
     Drive: false
   Drops:
-    - SOUL_SAND 1-2 0.6
-    - MAGMA_BLOCK 1-2 0.6
-    - geary mineinabyss:himushi_core 1 0.2 nolooting
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - bodyclamp{m=magma_snail;c=0} @self ~onSpawnOrLoad

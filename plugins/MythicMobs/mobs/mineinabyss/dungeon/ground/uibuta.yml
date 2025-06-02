@@ -1,0 +1,46 @@
+dungeonuibuta:
+  Type: RAVAGER
+  SpawnCategory: hostile
+  Display: "<#8F2222>Uibuta"
+  Health: 100
+  Damage: 9
+  Options:
+    KnockbackResistance: 0.1
+    Collidable: true
+    Silent: true
+    FollowRange: 30
+    MaxCombatDistance: 35
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - lookatplayers
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - IRON_BOOTS{enchants=DEPTH_STRIDER:3}
+  Model:
+    Id: uibuta
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 2
+  DamageModifiers:
+    - FALL 0.01
+    - DROWNING 0.01
+  Drops:
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - state{mid=uibuta;s=attack} @self ~onAttack
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - effect:sound{s=mineinabyss:entity.ottobas.ambient;v=0.8;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.ottobas.death;v=0.8;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.ottobas.hurt;v=0.8;p=0.8} @self ~onDamaged
+    
+

@@ -26,7 +26,7 @@ magma_snail_smoke_5:
     - effect:particle{particle=lava;amount=2;hS=0.1;vS=0.2;size=1} @selflocation{forwardoffset=1.4;yOffset=1.4;sideoffset=0}
 
 magma_snail_defence:
-  Cooldown: 14
+  Cooldown: 18
   Conditions:
     - offgcd true
   TargetConditions:
@@ -39,8 +39,8 @@ magma_snail_defence:
     - delay 20
     - setstance{stance=defence} @self
     - gcd{ticks=160} @self
-    - skill{s=magma_snail_denfence-1;repeat=7;repeatInterval=20}
-    - potion{t=DAMAGE_RESISTANCE;d=160;l=255;p=false} @self
+    - skill{s=magma_snail_denfence-1;repeat=7;repeatInterval=15}
+   # - potion{t=DAMAGE_RESISTANCE;d=160;l=2;p=false} @self
     - delay 160
     - defaultstate{m=magma_snail;t=idle;s=idle} @self
     - defaultstate{m=magma_snail;t=walk;s=walk} @self
@@ -50,20 +50,20 @@ magma_snail_defence:
 magma_snail_denfence-1:
   Skills:
     - sound{s=entity.evoker.cast_spell;p=0.7;v=1.4} @self
-    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4} 0.8
-    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4} 0.8
-    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4} 0.8
+    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4}
+    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4}
+    - randomskill{s=magma_snail_defence-1-1,magma_snail_defence-1-2,magma_snail_defence-1-3,magma_snail_defence-1-4}
 
 magma_snail_defence-1-1:
   Cooldown: 1
   Skills:
-    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=12;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=20;vO=3;g=0.7} @RingAroundOrigin{yoffset=0.2;points=8;radius=6;sort=random;limit=2} 0.8
+    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=12;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=20;vO=3;g=0.7} @RingAroundOrigin{yoffset=0.2;points=8;radius=6;sort=random;limit=3}
 magma_snail_defence-1-2:
   Skills:
-    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=6;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=20;vO=3;g=0.5} @RingAroundOrigin{yoffset=0.2;points=16;radius=3;sort=random;limit=2}
+    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=8;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=20;vO=3;g=0.5} @RingAroundOrigin{yoffset=0.2;points=16;radius=3;sort=random;limit=3}
 magma_snail_defence-1-3:
   Skills:
-    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=8;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=30;vO=3;g=0.5} @RingAroundOrigin{yoffset=0.2;points=16;radius=6;sort=random;limit=2} 0.8
+    - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=10;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=30;vO=3;g=0.5} @RingAroundOrigin{yoffset=0.2;points=16;radius=6;sort=random;limit=3}
 magma_snail_defence-1-4:
   Skills:
     - projectile{ot=magma_snail_denfence-1-tick;oh=magma_snail_denfence-1-hit;i=1;v=12;hp=true;sb=false;se=true;syo=1.4;sfo=-0.7;ac=0.85;tyo=1;hO=50;vO=3;g=0.5} @RingAroundOrigin{yoffset=0.2;points=24;radius=8;sort=random;limit=3}
@@ -77,7 +77,7 @@ magma_snail_denfence-1-tick:
 
 magma_snail_denfence-1-hit:
   Skills:
-    - basedamage{m=1;pk=true} @EntitiesInRadius{r=3;target=players,animals}
+    - basedamage{m=1.5;pk=true;ia=true} @EntitiesInRadius{r=3;target=players}
     - throw{velocity=2;velocityY=1}
     - ignite{ticks=100}
     - effect:sound{s=entity.generic.explode;v=0.5;p=1}

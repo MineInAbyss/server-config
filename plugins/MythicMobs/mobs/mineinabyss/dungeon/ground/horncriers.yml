@@ -1,0 +1,127 @@
+dungeonwoodcrier:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Display: "<#9A1CAD>Woodcrier"
+  Health: 30
+  Damage: 0
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomstroll
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 0.1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+    Silent: true
+    Interactable: true
+    MovementSpeed: 0.38
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Model:
+    Id: horncrier_easy
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.5
+  Modules:
+    ThreatTable: true
+  Drops:
+
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    - DefaultState{m=horncrier_easy;t=walk;s=not_in_combat} @self ~onSpawnOrLoad
+    - DefaultState{m=horncrier_easy;t=walk;s=walk} @self ~onEnterCombat
+    - DefaultState{m=horncrier_easy;t=walk;s=not_in_combat} @self ~onDropCombat
+    - skill{s=Changetarget} ~onTimer:160 <99%
+
+    # - skill{s=hc_dash} @target ~onTimer:20
+    - skill{s=hc_Attack} @self ~onAttack
+
+    # - skill{s=hc_backup} @self ~ondamaged
+    - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hcHurt} @self ~onHurt
+    #    - skill{s=hcDeath} @self ~onDeath
+
+    - skill{s=displayHealth} ~onDamaged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dungeonhorncrier:
+  Type: ZOMBIE
+  Display: "<#9A1CAD>Horncrier"
+  Health: 60
+  Damage: 0
+  SpawnCategory: hostile
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+    Interactable: true
+    MovementSpeed: 0.45
+    Silent: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+  Model:
+    Id: horncrier_hard
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.5
+  Modules:
+    ThreatTable: true
+  Drops:
+
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    - DefaultState{m=horncrier_hard;t=walk;s=not_in_combat} @self ~onSpawnOrLoad
+    - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onEnterCombat
+    - DefaultState{m=horncrier_hard;t=walk;s=not_in_combat} @self ~onDropCombat
+    - skill{s=Changetarget} ~onTimer:160 <99%
+
+    - skill{s=hc_dash} @target ~onTimer:300
+    - skill{s=hc_Attack2} @self ~onattack
+
+    # - skill{s=hc_backup} @self ~ondamaged
+    - skill{s=hcAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=hcHurt} @self ~onHurt
+    #    - skill{s=hcDeath} @self ~onDeath
+
+    - skill{s=displayHealth} ~onDamaged
+
+

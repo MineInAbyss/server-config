@@ -16,12 +16,12 @@ hc_dash:
     - state{s=charge_windup;li=0;lo=0} @self
     - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - delay 30
-    - setspeed{speed=2;type=walking} @self
+    - setspeed{speed=1.8;type=walking} @self
     - state{s=charge_windup;r=true} @self
     - state{s=charge_run;li=0;lo=0} @self
     #- look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
     - totem{md=2;c=1;oH=hc_dashhit;hnp=false;hp=true;hR=1;vR=2;i=1;repeat=100;repeatinterval=1} @forward{f=1}
-    - delay 110
+    - delay 100
     - state{s=charge_run;remove=true} @self
     - skill{s=hc_dashmiss} @self
     - setspeed{speed=1;type=walking} @self
@@ -29,7 +29,7 @@ hc_dash:
 
     #- setai{ai=true}
 hc_dashhit:
-  Cooldown: 1.5
+  Cooldown: 3
   Conditions:
     - targetwithin 3
   Skills:
@@ -53,7 +53,7 @@ hc_dashmiss:
 
 
 hc_Attack2:
-  Cooldown: 1.5
+  Cooldown: 2
   Conditions:
     - offgcd true
     - targetwithin{d=5} true
@@ -63,7 +63,7 @@ hc_Attack2:
     - state{s=horn_swipe} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hp=true;hR=2;vR=2;i=1} @forward{f=1.5}
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE2;hp=true;hnp=false;hR=2;vR=2;i=1} @forward{f=1.5}
 #will bleed once every 5 seconds for 5 seconds
 hc_Attack_DAMAGE2:
   Cooldown: 1.5
@@ -71,10 +71,10 @@ hc_Attack_DAMAGE2:
     - damage{a=10;pkb=true;hp=true} @target
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
-    - throw{v=10;vy=5} @target
+    - throw{v=5;vy=2} @target
 
 hc_Attack:
-  Cooldown: 1.5
+  Cooldown: 2
   Conditions:
     - offgcd true
     - targetwithin{d=5} true
@@ -85,7 +85,7 @@ hc_Attack:
     - state{s=horn_swipe} @self
     #- effect:sound{s=;volume=0.65;pitch=1} @self
     - delay 20
-    - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hp=true;hR=2;vR=2;i=1} @forward{f=1.5}
+    - totem{md=2;c=1;oH=hc_Attack_DAMAGE;hp=true;hnp=false;hR=2;vR=2;i=1} @forward{f=1.5}
     - setAI{ai=true} @self
 hc_Attack_DAMAGE:
   # TargetConditions:
@@ -95,7 +95,7 @@ hc_Attack_DAMAGE:
     - damage{a=4;pkb=true;hp=true} @target
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
-    - throw{v=5;vy=3} @target
+    - throw{v=4;vy=2} @target
 
 
 

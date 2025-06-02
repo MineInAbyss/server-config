@@ -1,10 +1,10 @@
-splitjaw:
+dungeonsplitjaw:
   Type: ALLAY
   Prefabs: [ mineinabyss:custom_allay ]
   SpawnCategory: miniboss
   Display: "<#9A1CAD>Splitjaw"
-  Health: 90
-  Damage: 9
+  Health: 180
+  Damage: 12
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -30,32 +30,24 @@ splitjaw:
   Model:
     Id: splitjaw
     ViewRadius: 64
-    Scale: 1.2
+    Scale: 1.4
     Drive: false
     DamageTint: true
   DamageModifiers:
     - PROJECTILE 0.3
   Drops:
-    - exp 70-115
-
-
-    - geary mineinabyss:splitjaw_scales 1-3 0.7
-    - geary mineinabyss:splitjaw_gunk 1-2 0.7
-    - DIAMOND 1 0.1
-    - GOLD_INGOT 1 0.15
-
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawnOrLoad
-    - setspeed{type=flying;speed=1.35} @self ~onSpawnOrLoad
+    - setspeed{type=flying;speed=1.5} @self ~onSpawnOrLoad
     - state{mid=splitjaw;s=attack} @self ~onAttack
     - DefaultState{m=splitjaw;t=walk;s=walk_aggro} @self ~onEnterCombat
     - DefaultState{m=splitjaw;t=walk;s=walk} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
-    - skill{s=sj_roar} @target ~oncombat
-    - skill{s=sj_roar} @target ~onTimer:80
-    - skill{s=SJ_dash} @target ~onTimer:20
-    - skill{s=SJ_Attack} @self ~onAttack
+    - skill{s=Dsj_roar} @target ~oncombat
+    - skill{s=Dsj_roar} @target ~onTimer:60
+    - skill{s=DSJ_dash} @target ~onTimer:10
+    - skill{s=DSJ_Attack} @self ~onAttack
 
     - skill{s=splitjawHurt} @self ~onHurt
     - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=1.5;p=0.8} @self ~onAmbient 0.6
