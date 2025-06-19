@@ -1,94 +1,67 @@
 okiboStations:
-  - name: GoldenBridge
+  - id: GoldenBridge
     location:
-      world: world
       x: -617.0
       y: 147.0
       z: -68.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,1.19,-0.16
-  - name: GuildHQ
+    iconHitboxOffset: 0.01,0.19,0.16
+  - id: GuildHQ
     location:
-      world: world
       x: -127.0
       y: 135.0
       z: -534.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,1.26,0.24
-  - name: TowerDistrict
+    iconHitboxOffset: 0.01,0.26,0.24
+  - id: TowerDistrict
     location:
-      world: world
       x: 422.0
       y: 136.0
       z: -345.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,1.05,0.35
-  - name: DocksEast
+    iconHitboxOffset: 0.01,0.05,0.35
+  - id: DocksEast
     location:
-      world: world
       x: 1010.0
       y: 32.0
       z: -405.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,0.8,0.65
-  - name: VillageDistrict
+    iconHitboxOffset: 0.01,-0.2,0.65
+  - id: VillageDistrict
     location:
-      world: world
       x: 580.0
       y: 128.0
       z: 130.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,0.85,0.26
-  - name: CliffDistrict
+    iconHitboxOffset: 0.01,-0.15,0.26
+  - id: CliffDistrict
     location:
-      world: world
       x: 422.0
       y: 128.0
       z: 450.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,0.7,0.1
-  - name: SlumDistrict
+    iconHitboxOffset: 0.01,-0.3,0.1
+  - id: SlumDistrict
     location:
-      world: world
       x: -67.0
       y: 131.0
       z: 647.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,0.9,-0.33
-  - name: DocksWest
+    iconHitboxOffset: -0.01,-0.1,-0.33
+  - id: DocksWest
     location:
-      world: world
       x: -985.0
       y: 34.0
       z: 665.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,1.15,-0.66
-  - name: Orphanage
+    iconHitboxOffset: -0.01,0.15,-0.66
+  - id: Orphanage
     location:
-      world: world
       x: -643.0
       y: 145.0
       z: 177.0
-      yaw: 0.0
-      pitch: 0.0
-    iconHitboxOffset: -0.01,1.19,-0.33
+    iconHitboxOffset: -0.01,0.19,-0.33
 okiboMaps:
   - station: GoldenBridge
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: 1,0.0,0.5
-      yaw: 180.0
-    offset: 5.76,0.95,-0.6
-    yaw: 90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - GuildHQ
       - TowerDistrict
@@ -101,14 +74,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,0.01
+      scale: 1,1,1
   - station: GuildHQ
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: -0.6,0.0,0.0
-      yaw: 0.0
-    offset: -0.8,0.95,4.60
-    yaw: -90.0
+    location:
+      x: -115.5
+      y: 137
+      z: -529.5
+      yaw: 215.0
     scale: 1.3,1.3,1.3
+    offset: 0,-1,0
     hitboxes:
       - TowerDistrict
       - DocksEast
@@ -121,14 +95,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.1,-0.08,0
+      scale: 1,1,1
   - station: TowerDistrict
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: -1.0,0.0,0.0
-      yaw: 0.0
-    offset: -6.76,0.95,-1.41
-    yaw: -90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - DocksEast
       - VillageDistrict
@@ -141,14 +116,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.1,-0.08,0.01
+      scale: 1,1,1
   - station: DocksEast
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: 0.0,0.0,1.0
-      yaw: -90.0
-    offset: -1.42,0.95,2.8
-    yaw: 180.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - VillageDistrict
       - CliffDistrict
@@ -161,14 +137,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,-0.01
+      scale: 1,1,1
   - station: VillageDistrict
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: 1.0,0.0,0.0
-      yaw: 180.0
-    offset: 2.8,0.95,1.3
-    yaw: 90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - CliffDistrict
       - SlumDistrict
@@ -181,14 +158,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,0.01
+      scale: 1,1,1
   - station: CliffDistrict
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: 1.0,0.0,0.0
-      yaw: 180.0
-    offset: 4.76,0.95,2.4
-    yaw: 90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - SlumDistrict
       - DocksWest
@@ -201,14 +179,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,0.01
+      scale: 1,1,1
   - station: SlumDistrict
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: -1.0,0.0,0.0
-      yaw: 0.0
-    offset: -5.76,0.95,0.6
-    yaw: -90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - DocksWest
       - Orphanage
@@ -221,14 +200,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.1,-0.08,0.0
+      scale: 1,1,1
   - station: DocksWest
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: -1.0,0.0,0.0
-      yaw: 0.0
-    offset: -7.76,0.95,-2.4
-    yaw: -90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - Orphanage
       - GoldenBridge
@@ -241,14 +221,15 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.05,-0.08,0.00
+      scale: 1,1,1
   - station: Orphanage
-    noticeBoardFurniture:
-      prefab: mineinabyss:noticeboard_okibo
-      offset: 1.0,0.0,0.0
-      yaw: 180.0
-    offset: 3.76,0.95,4.4
-    yaw: 90.0
+    location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 90.0
     scale: 1.3,1.3,1.3
+    offset: 0,-0.5,0
     hitboxes:
       - GoldenBridge
       - GuildHQ
@@ -261,4 +242,5 @@ okiboMaps:
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,0.01
-costPerKM: 0.0
+      scale: 1,1,1
+costPerKM: 1.0
