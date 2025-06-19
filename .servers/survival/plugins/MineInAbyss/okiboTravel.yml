@@ -1,246 +1,152 @@
 okiboStations:
-  - id: GoldenBridge
-    location:
-      x: -617.0
-      y: 147.0
-      z: -68.0
-    iconHitboxOffset: 0.01,0.19,0.16
   - id: GuildHQ
+    displayName: Guild HQ
     location:
-      x: -127.0
-      y: 135.0
-      z: -534.0
-    iconHitboxOffset: 0.01,0.26,0.24
+      x: -149
+      y: 135
+      z: -534
+    iconHitboxOffset: -0.01,1.26,0.24
+  - id: GrandPier
+    displayName: Grand Pier
+    location:
+      x: -536
+      y: 128
+      z: -19
+    iconHitboxOffset: -0.01,1.19,-0.16
+  - id: NetherworldGate
+    displayName: Gate to the Netherworld
+    location:
+      x: -509
+      y: 112
+      z: -361
+    iconHitboxOffset: -0.01,1.05,0.35
+  - id: BlackMarket
+    displayName: Black Market
+    location:
+      x: 10
+      y: 135
+      z: 682
+    iconHitboxOffset: -0.01,0.8,0.65
+  - id: WharfEast
+    displayName: Wharf District East
+    location:
+      x: 10
+      y: 135
+      z: 682
+    iconHitboxOffset: -0.01,0.85,0.26
   - id: TowerDistrict
+    displayName: Tower District
     location:
-      x: 422.0
-      y: 136.0
-      z: -345.0
-    iconHitboxOffset: 0.01,0.05,0.35
-  - id: DocksEast
-    location:
-      x: 1010.0
-      y: 32.0
-      z: -405.0
-    iconHitboxOffset: 0.01,-0.2,0.65
-  - id: VillageDistrict
-    location:
-      x: 580.0
-      y: 128.0
-      z: 130.0
-    iconHitboxOffset: 0.01,-0.15,0.26
-  - id: CliffDistrict
-    location:
-      x: 422.0
-      y: 128.0
-      z: 450.0
-    iconHitboxOffset: 0.01,-0.3,0.1
-  - id: SlumDistrict
-    location:
-      x: -67.0
-      y: 131.0
-      z: 647.0
-    iconHitboxOffset: -0.01,-0.1,-0.33
-  - id: DocksWest
-    location:
-      x: -985.0
-      y: 34.0
-      z: 665.0
-    iconHitboxOffset: -0.01,0.15,-0.66
-  - id: Orphanage
-    location:
-      x: -643.0
-      y: 145.0
-      z: 177.0
-    iconHitboxOffset: -0.01,0.19,-0.33
+      x: 484
+      y: 126
+      z: -185
+    iconHitboxOffset: -0.01,0.7,0.1
 okiboMaps:
-  - station: GoldenBridge
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.0,-0.08,0.01
-      scale: 1,1,1
   - station: GuildHQ
     location:
-      x: -115.5
-      y: 137
-      z: -529.5
-      yaw: 215.0
+      x: -152.5
+      y: 136.0
+      z: -536.5
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
+      - GrandPier
+      - NetherworldGate
+      - BlackMarket
+      - WharfEast
       - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
     icon:
       text: ':orthmap_icon:'
-      offset: 0.1,-0.08,0
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: GrandPier
+    location:
+      x: -564.5
+      y: 129.0
+      z: -23.5
+      yaw: 0.0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - GuildHQ
+      - NetherworldGate
+      - BlackMarket
+      - WharfEast
+      - TowerDistrict
+    icon:
+      text: ':orthmap_icon:'
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: NetherworldGate
+    location:
+      x: -507.0
+      y: 112.0
+      z: -357.0
+      yaw: 0.0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - GuildHQ
+      - GrandPier
+      - BlackMarket
+      - WharfEast
+      - TowerDistrict
+    icon:
+      text: ':orthmap_icon:'
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: BlackMarket
+    location:
+      x: 13.5
+      y: 136.0
+      z: 684.5
+      yaw: 0.0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - GuildHQ
+      - GrandPier
+      - NetherworldGate
+      - WharfEast
+      - TowerDistrict
+    icon:
+      text: ':orthmap_icon:'
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: WharfEast
+    location:
+      x: 104.5
+      y: 83.0
+      z: 611.5
+      yaw: 0.0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - GuildHQ
+      - GrandPier
+      - NetherworldGate
+      - BlackMarket
+      - TowerDistrict
+    icon:
+      text: ':orthmap_icon:'
+      offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: TowerDistrict
     location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
+      x: 488.5
+      y: 127.0
+      z: -176.0
+      yaw: 0.0
     scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
+    offset: 0,-1,0
     hitboxes:
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
       - GuildHQ
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.1,-0.08,0.01
-      scale: 1,1,1
-  - station: DocksEast
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.0,-0.08,-0.01
-      scale: 1,1,1
-  - station: VillageDistrict
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
+      - GrandPier
+      - NetherworldGate
+      - BlackMarket
+      - WharfEast
     icon:
       text: ':orthmap_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
-  - station: CliffDistrict
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - SlumDistrict
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.0,-0.08,0.01
-      scale: 1,1,1
-  - station: SlumDistrict
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - DocksWest
-      - Orphanage
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.1,-0.08,0.0
-      scale: 1,1,1
-  - station: DocksWest
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - Orphanage
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.05,-0.08,0.00
-      scale: 1,1,1
-  - station: Orphanage
-    location:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 90.0
-    scale: 1.3,1.3,1.3
-    offset: 0,-0.5,0
-    hitboxes:
-      - GoldenBridge
-      - GuildHQ
-      - TowerDistrict
-      - DocksEast
-      - VillageDistrict
-      - CliffDistrict
-      - SlumDistrict
-      - DocksWest
-    icon:
-      text: ':orthmap_icon:'
-      offset: 0.0,-0.08,0.01
-      scale: 1,1,1
-costPerKM: 1.0
+costPerKM: 0.0
