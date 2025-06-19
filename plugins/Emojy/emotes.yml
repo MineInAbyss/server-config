@@ -697,6 +697,11 @@ emotes:
     texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
     height: 17
     ascent: -96
+  - id: orthmap_icon
+    font: mineinabyss:orth_map
+    texture: minecraft:gui/sprites/icon/accessibility.png
+    height: 7
+    ascent: 7
   - id: orthmap
     texture: mineinabyss:ui/orth_map.png
     font: mineinabyss:orth_map
@@ -704,8 +709,3 @@ emotes:
     ascent: 30
     bitmapWidth: 2
     bitmapHeight: 2
-  - id: orthmap_icon
-    font: mineinabyss:orth_map
-    texture: minecraft:gui/sprites/icon/accessibility.png
-    height: 7
-    ascent: 7
