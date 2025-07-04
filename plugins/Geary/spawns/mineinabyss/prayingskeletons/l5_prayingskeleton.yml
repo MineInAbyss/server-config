@@ -1,8 +1,8 @@
 l5_prayingskeleton:
   position: GROUND
   type: mm:l5prayingskeleton
-  priority: 0.1
-  chance: 0.1
+  priority: 0.2
+  chance: 0.2
   regions:
     - l5s1
     - l5s2
@@ -13,6 +13,6 @@ l5_prayingskeleton:
         radius: 800
     - mythicConditions:
         - MobsInRadius{types=l5prayingskeleton;amount=0to2;radius=1800} true
-  spread: 100 # The horizontal spread for them
+  spread: 30 # The horizontal spread for them
   ySpread: 10 # And the vertical spread
 

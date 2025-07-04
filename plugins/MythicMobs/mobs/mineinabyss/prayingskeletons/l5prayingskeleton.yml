@@ -51,7 +51,9 @@ l5prayingskeleton:
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=240000} @self ~onSpawn
     - skill{s=skelewet} @Self ~onTimer:20
-   # - skill{s=skelehigh} @Self ~onTimer:20
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightbelow{h=-240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightabove{h=240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?mobsInRadius{types=testdummy;amount=2to50;radius=100} 
     - skill{s=skelerock} @Self ~onTimer:20
 #    - skill{s=ylevelhigh} @Self ~onTimer:20
   #  - skill{s=ylevellow} @Self ~onTimer:20
@@ -65,7 +67,9 @@ l5prayingskeleton:
 
     - remove{delay=60000} @self ~onSpawn
     - skill{s=skelewet} @Self ~onTimer:20
-   # - skill{s=skelehigh} @Self ~onTimer:20
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightbelow{h=-240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightabove{h=240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?mobsInRadius{types=l5prayingskeleton,backupskele5;amount=2to50;radius=200} 
     - skill{s=skelerock} @Self ~onTimer:20
 #    - skill{s=ylevelhigh} @Self ~onTimer:20
   #  - skill{s=ylevellow} @Self ~onTimer:20
@@ -118,7 +122,9 @@ backupskele5:
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=240000} @self ~onSpawn
     - skill{s=skelewet} @Self ~onTimer:20
-   # - skill{s=skelehigh} @Self ~onTimer:20
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightbelow{h=-240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?heightabove{h=240}
+    - skill{s=kys;delay=20} @trigger ~onspawn ?mobsInRadius{types=l5prayingskeleton,backupskele5;amount=2to50;radius=200} 
     - skill{s=skelerock} @Self ~onTimer:20
 #    - skill{s=ylevelhigh} @Self ~onTimer:20
   #  - skill{s=ylevellow} @Self ~onTimer:20

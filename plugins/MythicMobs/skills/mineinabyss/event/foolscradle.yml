@@ -15,13 +15,13 @@ foolscradle_impact:
     - effect:particles{particle=raid_omen;amount=20;hS=.25;vS=.5;y=.5}
 
 
-cradlefaputa:
-  Skills:
-    - summon{type=fapukuon;amount=2;radius=3}
+#cradlefaputa:
+#  Skills:
+#    - summon{type=fapukuon;amount=2;radius=3}
 
-cradleamongus:
-  Skills:
-    - summon{type=spawnrandomamongus;amount=2;radius=3}
+#cradleamongus:
+#  Skills:
+#    - summon{type=spawnrandomamongus;amount=2;radius=3}
 
 
 cradlesunsphere:
@@ -45,4 +45,4 @@ cradlethrow:
 
 cradleswap:
   Skills:
-    - swapAdd comment
+    - swap

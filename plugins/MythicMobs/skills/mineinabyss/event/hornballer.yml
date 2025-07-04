@@ -87,7 +87,7 @@ hb_Attack_DAMAGE:
   # TargetConditions:
   #  - isblocking false
   Cooldown: 1.5
-  Skills:Add commentMore actions
+  Skills:
     - damage{a=10;pkb=true;hp=true;ie=true} @target
     #- skill{s=Bleeding} @target
     - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target

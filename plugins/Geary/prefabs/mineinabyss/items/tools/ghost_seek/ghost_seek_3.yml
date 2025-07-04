@@ -9,6 +9,16 @@ set.item:
   equippable:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
+
+observe:
+  itemSneak:
+  - become: parent
+  - cooldown:
+      id: gs
+      length: 10s
+      display: <#C13523><b>Ghost Seek
+  - mythicSkills:
+    - relicscout
 #passive:
 #- match:
 #  - equipped

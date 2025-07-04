@@ -188,5 +188,4 @@ testdummy:
     - DROWNING 0.001
     - ENTITY_SWEEP_ATTACK 0.001
   Skills:
-
     - skill{s=displayHealth} ~onDamaged

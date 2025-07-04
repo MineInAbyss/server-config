@@ -9,6 +9,16 @@ set.item:
   equippable:
     slot: HEAD
   enchantmentGlintOverride: true
+
+observe:
+  itemSneak:
+  - become: parent
+  - cooldown:
+      id: gs
+      length: 13s
+      display: <#C13523><b>Ghost Seek
+  - mythicSkills:
+    - repairscout
 #passive:
 #- match:
 #  - equipped

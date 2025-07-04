@@ -10,6 +10,15 @@ set.item:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
   enchantmentGlintOverride: true
+observe:
+  itemSneak:
+  - become: parent
+  - cooldown:
+      id: gs
+      length: 20s
+      display: <#C13523><b>Ghost Seek
+  - mythicSkills:
+    - brokenscout
 #passive:
 #- match:
 #  - equipped
@@ -20,3 +29,5 @@ set.item:
 #    - brokenscout
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_off
+
+
