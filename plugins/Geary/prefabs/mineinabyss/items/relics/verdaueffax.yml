@@ -3,7 +3,7 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:vverdaueffax
   lore:
-  - ':layer_1::layer_2: Grade III Relic'
+  - ':layer_1::layer_2: Grade II Relic'
   - <gold>An organic object that symbiotically attaches like a parasite.
   - <#D2D489><i>When the hosts adrenaline level spikes the
   - <#D2D489><i>relic consumes energy reserves to heal its habitat.
@@ -19,7 +19,7 @@ passive:
       - health{h=>1}
   - cooldown:
       id: Verdau Effax
-      length: 300s
+      length: 600s
       display: <#88D481>Absorb
   - mythicSkills:
     - verdaueffax
