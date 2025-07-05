@@ -8,6 +8,24 @@ set.item:
   - <gold>to survive to escape from predators.
   - <#D2D489><i>It grants the wearer adrenaline when used.
 disableItemInteractions: {}
+observe:
+  itemSneak:
+    - become: parent
+    - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:animal_totem
+        player:
+          sneaking: true
+    - cooldown:
+        id: animal_totem
+        length: 60s
+        display: <#617B94>Animal Totem
+    - applyPotionEffects:
+        - type: minecraft:speed
+          duration: 2s
+          amplifier: 3
+          hasParticles: false
 passive:
 - match:
   - inInventory

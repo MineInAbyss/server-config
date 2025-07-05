@@ -30,12 +30,12 @@ tama:
     - TORCH HAND
   Drops:
     - exp 100-250
-    - amogus_token 10-20 1
+   # - amogus_token 10-20 1
     - geary mineinabyss:orb_piercer_face_fragments 1-1 1 nolooting
     - geary mineinabyss:orb_piercer_spike 2-6 1
-    - geary mineinabyss:tama_hat 1 0.015 nolooting
-    - geary mineinabyss:tama_chime 1 0.025 nolooting
-    - goldslime 1 0.08
+    #- geary mineinabyss:tama_hat 1 0.015 nolooting
+    #- geary mineinabyss:tama_chime 1 0.025 nolooting
+   # - goldslime 1 0.08
   Model:
     Id: tama
     ViewRadius: 64

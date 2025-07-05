@@ -1,0 +1,26 @@
+
+bloom_charge:
+  Conditions:
+  Skills:
+  - onDamaged{auraName=flower_bloom;duration=200;c=1;maxStacks=5;cotd=false} @self
+
+
+
+
+
+
+blooming:
+  Conditions:
+  - hasaurastacks{n=flower_bloom;s=1} true
+  Skills:
+  - delay 5
+  - throw{velocity=10;velocityY=2} @EIR{r=4}
+  - damage{amount=6;ignoreArmor=false} @EIR{r=4} 
+  - effect:particlering{particle=BLOCKCRACK;material=OBSIDIAN;radius=1;points=5;amount=30;hS=1;vS=1} @Self 
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=OBSIDIAN;radius=2;points=7;amount=20;hS=1;vS=1} @Self 
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=OBSIDIAN;radius=3;points=9;amount=10;hS=1;vS=1} @Self 
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=OBSIDIAN;radius=4;points=11;amount=10;hS=1;vS=1} @Self 
+  - delay 2

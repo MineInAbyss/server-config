@@ -1,0 +1,100 @@
+dungeonyomotsubi:
+  Type: SPIDER
+  SpawnCategory: uncommon
+  Health: 40
+  Damage: 5
+  Display: "<#9C0F2C>Yomotsubi"
+  AIGoalSelectors:
+    - clear
+    - spiderattack
+    - randomstroll
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 0.6
+    Collidable: false
+    Silent: true
+    FollowRange: 28
+    MovementSpeed: 0.2
+    MaxCombatDistance: 24
+    DigOutOfGround: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+  Model:
+    Id: yomotsubi
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 3
+  Drops:
+    - exp 25-35
+    - geary mineinabyss:yomotsubi_wing 1-2 0.6
+    - geary mineinabyss:yomotsubi_abdomen_raw 1-2 0.6
+
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_8} @self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
+    - bodyclamp{m=yomotsubi;c=15} @self ~onSpawnOrLoad
+    - state{mid=yomotsubi;s=attack} @self ~onAttack
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=yomotsubi_airball} @target ~onTimer:20
+    - skill{s=yomoAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=yomoHurt} @self ~onHurt
+    - skill{s=yomoDeath} @self ~onDeath
+
+dungeonshiratsubi:
+  Type: SPIDER
+  SpawnCategory: uncommon
+  Health: 45
+  Damage: 6
+  Display: "<#9C0F2C>Shiratsubi"
+  AIGoalSelectors:
+    - clear
+    - spiderattack
+    - randomstroll
+    - randomlookaround
+    - float
+  AITargetSelectors:
+    - clear
+    - players
+  Options:
+    KnockbackResistance: 0.6
+    Collidable: false
+    Silent: true
+    FollowRange: 28
+    MovementSpeed: 0.2
+    MaxCombatDistance: 24
+    DigOutOfGround: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+  Model:
+    Id: shiratsubi
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 3
+  Drops:
+    - exp 25-35
+    - geary mineinabyss:shiratsubi_wing 1-2 0.6
+    - geary mineinabyss:yomotsubi_abdomen_raw 1-2 0.7
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_8} @self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
+    - bodyclamp{m=shiratsubi;c=15} @self ~onSpawnOrLoad
+    - state{mid=shiratsubi;s=attack} @self ~onAttack
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=shiratsubi_airball} @target ~onTimer:20
+    - skill{s=yomoAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
+    - skill{s=yomoHurt} @self ~onHurt
+    - skill{s=yomoDeath} @self ~onDeath

@@ -14,6 +14,14 @@ observe:
   itemRightClick:
   - become: parent
   - cooldown:
+      id: changestance
+      length: 1s
+      display: <#705160><b>Change Form
+  - mythicSkills:
+    - boundinglancecharge
+  itemRightClickSneak:
+  - become: parent
+  - cooldown:
       id: boundinglance
       length: 35s
       display: <#705160><b>Proboscis

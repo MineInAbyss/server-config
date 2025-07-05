@@ -1,10 +1,10 @@
-dungeonkagi_tachikiri:
+dungeoncyatoria:
   Type: ALLAY
   Prefabs: [ mineinabyss:custom_allay ]
   SpawnCategory: flying
-  Display: "<#5468A8>Kagi-Tachikiri"
-  Health: 55
-  Damage: 10
+  Display: "<#3DDFFF>Cyatoria"
+  Health: 25
+  Damage: 4
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -18,22 +18,25 @@ dungeonkagi_tachikiri:
   Options:
     Collidable: true
     DigOutOfGround: true
-    FollowRange: 32
+    FollowRange: 28
     MaxCombatDistance: 128
     PreventOtherDrops: true
     Silent: true
-  # MovementSpeed: 0.5
   Model:
-    Id: kagi_tachikiri
+    Id: cyatoria
     ViewRadius: 48
     Drive: false
     DamageTint: true
+    Scale: 0.8
   Drops:
+    - exp 25-45
+    - geary mineinabyss:cyatoria_drumstick_raw 1-2
+    - geary mineinabyss:cyatoria_feather 1-4 0.7
+
   Skills:
     # - CancelEvent{sync=true} ~onAttack
-    # - skill{s=Damage_8} @self ~onAttack
-    - bodyclamp{m=kagi_tachikiri;c=15} @self ~onSpawnOrLoad
-    - setspeed{type=flying;speed=1.4} @self ~onSpawnOrLoad
-    - state{mid=kagi_tachikiri;s=attack} @self ~onAttack
-    - skill{s=kagi_venom} @target ~onTimer:20
+    # - skill{s=Damage_3} @self ~onAttack
+    - bodyclamp{m=cyatoria;c=15} @self ~onSpawnOrLoad
+    - setspeed{type=flying;speed=1.1} @self ~onSpawnOrLoad
+    - state{mid=cyatoria;s=attack} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged

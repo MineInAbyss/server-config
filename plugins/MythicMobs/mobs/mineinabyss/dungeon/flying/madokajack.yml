@@ -1,0 +1,48 @@
+dungeonmadokajack:
+  Type: ALLAY
+  Prefabs: [ mineinabyss:custom_allay ]
+  SpawnCategory: flying
+  Display: "<#1C439E>Madokajack"
+  Health: 40
+  Damage: 8
+  AIGoalSelectors:
+    - clear
+    - meleeattack{speed=1.5;range=1.5}
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    PreventOtherDrops: true
+    Silent: true
+  # MovementSpeed: 0.35
+  Model:
+    Id: madokajack
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 3
+  Drops:
+    - exp 40-60
+    - geary mineinabyss:madokajack_scales 1-4 0.7
+    - geary mineinabyss:madokajack_bone 1.3 0.8
+    - geary mineinabyss:madokajack_eye 2 0.3
+    - geary mineinabyss:madokajack_poop 1 0.3
+
+  Skills:
+    # - CancelEvent{sync=true} ~onAttack
+    # - skill{s=Damage_5} @self ~onAttack
+    - bodyclamp{m=madokajack;c=15} @self ~onSpawnOrLoad
+    - setspeed{type=flying;speed=1.3} @self ~onSpawnOrLoad
+    - state{mid=madokajack;s=attack} @self ~onAttack
+    - effect:sound{s=mineinabyss:entity.madokajack.ambient;v=4;p=0.8} @self ~onAmbient
+    - effect:sound{s=mineinabyss:entity.madokajack.death;v=4;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.madokajack.hurt;v=4;p=0.8} @self ~onDamaged
+    - skill{s=displayHealth} ~onDamaged

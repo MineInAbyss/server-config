@@ -18,11 +18,7 @@ observe:
       length: 30s
       display: <#1F88ED>Respiratis
   - applyPotionEffects:
-    - type: minecraft:conduit_power
-      duration: 10s
-      amplifier: 1
-      hasParticles: false
     - type: minecraft:dolphins_grace
-      duration: 10s
+      duration: 8s
       amplifier: 1
       hasParticles: false

@@ -10,8 +10,8 @@ bounding:
     PreventBlockInfection: true
   Skills:
     - remove{delay=260} @self ~onSpawn
-    - potion{t=STRENGTH;d=40;l=1;repeat=50;repeati=4} @PIR{r=8} ~onSpawn
-    - potion{t=HASTE;d=40;l=1;repeat=50;repeati=4} @PIR{r=8} ~onSpawn
-    - potion{t=REGENERATION;d=40;l=1;repeat=50;repeati=4} @PIR{r=8} ~onSpawn
-
+    - potion{t=HASTE;d=60;l=2;repeat=50;repeati=4} @PIR{r=8} ~onSpawn
+    - potion{t=REGENERATION;d=60;l=1;repeat=50;repeati=4} @PIR{r=8} ~onSpawn
+    - potion{t=ABSORPTION;d=110;l=1;repeat=200;repeati=1} @PIR{r=8} ~onSpawn
+    - potion{t=HEALTH_BOOST;d=110;l=1;repeat=200;repeati=1} @PIR{r=8} ~onSpawn
     - skill{s=boundingbuff} @self ~onTimer:20

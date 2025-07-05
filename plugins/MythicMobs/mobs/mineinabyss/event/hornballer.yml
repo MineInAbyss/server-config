@@ -43,9 +43,9 @@ hornballer:
     ThreatTable: true
   Drops:
     - exp 30-60
-    - toypufferfish 1 0.04
-    - potion{name="<#94bcd4>Balling Tears";lore=":troll:";enchants=THORNS:1} 1 0.06
-    - amogus_token 2-5 1
+   # - toypufferfish 1 0.04
+   # - potion{name="<#94bcd4>Balling Tears";lore=":troll:";enchants=THORNS:1} 1 0.06
+   # - amogus_token 2-5 1
 
     - GREEN_WOOL 1-3 0.6
   Skills:
