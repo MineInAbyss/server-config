@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#68CCBF><b>Arc Staff
+  itemName: <#68CCBF><b>Chain Missile
   type: minecraft:netherite_hoe
   itemModel: mineinabyss:arc_staff
   lore:
@@ -16,19 +16,27 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=laser;s=>0} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Charge
+ # - ensure:
+ #     mythicConditions:
+  #    - hasaurastacks{n=A;s=3} true
+ #   onFail:
+  #  - sendActionBar:
+ #       text: <red>Out of Charge
   - mythicSkills:
     - arc_laser
-passive:
-- match:
-  - inInventory
-  every: 10s
-  run:
+  itemLeftClick:
   - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: ChainMissiles
+      length: 12s
+      display: <#617B94>Chain Missiles
   - mythicSkills:
-    - laser_charge
+    - ChainMissile

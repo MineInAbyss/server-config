@@ -60,21 +60,29 @@ livingcballs:
   - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.2} @origin
   - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 3
+  - delay 5
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.2} @origin
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 3
+  - delay 5
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.2} @origin
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 3
+  - delay 5
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.2} @origin
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 3
+  - delay 5
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.2} @origin
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 3
+
 tpmageTick:
   Conditions:
   Cooldown:
   Skills:
-  - effect:particles{particle=reddust;color=#2ce8f5;a=15;hs=0.15;vs=0.15} @origin
-  - effect:particles{particle=reddust;color=#124e89;a=5;hs=0.05;vs=0.05} @origin
+  - effect:particles{particle=reddust;color=#2ce8f5;a=5;hs=0.1;vs=0.1} @origin
+  - effect:particles{particle=reddust;color=#124e89;a=2;hs=0.02;vs=0.02} @origin
 tpmageHit:
   Conditions:
   Cooldown:

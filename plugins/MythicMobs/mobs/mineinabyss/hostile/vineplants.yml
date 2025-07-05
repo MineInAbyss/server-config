@@ -85,42 +85,39 @@ vineblaster:
     - cancelevent{sync=true} @Self ~onAttack
 
 allyvineblaster:
-  Type: iron_golem
-  SpawnCategory: hostile
+  Type: SILVERFISH
   Modules:
     ThreatTable: true
   Display: "<green>Vineblaster"
   Faction: ally
-  AIGoalSelectors:
-    - meleeattack
-    - randomlookaround
-    - LookAtTarget
-    - clear
   AITargetSelectors:
-    - monsters
-    - OwnerTarget
-    - OwnerAttacker
+  - clear
+  - monsters
+  - nearestConditionalTarget{conditions=[
+        - entitytype PLAYER false
+      ]}
   Health: 30 # change this
-  Damage: 0 # keep this 0
+  Damage: 2 # keep this 0
   Options:
     PreventSunburn: true
-    Silent: true
+    AlwaysShowName: false
+    Silent: false
+    MovementSpeed: 0.35
+    MaxCombatDistance: 25
     PreventOtherDrops: true
-    FollowRange: 15
-    MovementSpeed: 0.2   # replaced with skills
-    KnockbackResistance: 1.0
-    Collidable: false
+    PreventBlockInfection: true
+    FollowRange: 25
   Model:
     Id: vineblaster
     ViewRadius: 48
     Drive: false
     DamageTint: true
-    Scale: 2
+    Scale: 1
   Drops:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:allyvineblasterattack @Self ~onTimer:10
+    - skill:allyvineattack @Self ~onTimer:10
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=280} @self ~onSpawn
