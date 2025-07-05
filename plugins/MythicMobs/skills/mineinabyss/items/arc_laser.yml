@@ -22,27 +22,23 @@ laserready:
   - sound{s=block.respawn_anchor.charge;sc=players;p=1;v=1} @self
 
 
-
 arc_laser:
-  Conditions:
-  - hasaurastacks{n=laser;s=1} true
   Skills:
-  - auraremove{aura=laser;stacks=1} @self
-  - skill{s=arc_laser_targeter} @target
+    - skill{s=arc_laser_targeter} @target
  
 arc_laser_targeter:
   Conditions:
-  - targets{a=0} castinstead arc_laser_projectile_no_target
+    - targets{a=0} castinstead arc_laser_projectile_no_target
   Skills:
-  - skill{s=arc_laser_projectile;sync=true} @target
+    - skill{s=arc_laser_projectile;sync=true} @target
  
 arc_laser_projectile:
   Skills:
-  - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self
-  - chain{bounces=5;bounceRadius=5;bounceDelay=8;hitSelf=false;hitPlayers=false;hitNonPlayers=true;hitTarget=true;
+    - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self
+    - chain{bounces=5;bounceRadius=5;bounceDelay=8;hitSelf=false;hitPlayers=false;hitNonPlayers=true;hitTarget=true;
             onBounce=[ - effect:particleline{particle=redstone;#2ce8f5;amount=1;fromOrigin=true;ys=1.5;yt=1.5;hS=0;vS=0;c=#ff0019}
-                       - damage{amount=7.0;pi=true,pk=true} ]} @target
+                       - damage{amount=8.0;pi=true,pk=true} ]} @target
 arc_laser_projectile_no_target:
   Skills:
-  - effect:particleline{particle=redstone;c=#2ce8f5;amount=1;fromOrigin=true;hS=0;vS=0;c=#ff0019} @targetlocation
-  - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self
+    - effect:particleline{particle=redstone;c=#2ce8f5;amount=1;fromOrigin=true;hS=0;vS=0;c=#ff0019} @targetlocation
+    - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self

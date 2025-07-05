@@ -16,12 +16,12 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=A;s=3} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Charge
+ # - ensure:
+ #     mythicConditions:
+  #    - hasaurastacks{n=A;s=3} true
+ #   onFail:
+  #  - sendActionBar:
+ #       text: <red>Out of Charge
   - mythicSkills:
     - arc_laser
   itemLeftClick:
