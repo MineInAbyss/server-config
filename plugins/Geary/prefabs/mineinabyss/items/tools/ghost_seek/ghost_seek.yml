@@ -11,7 +11,7 @@ set.item:
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
   enchantmentGlintOverride: true
 observe:
-  itemSneak:
+  equipmentSneak:
   - become: parent
   - cooldown:
       id: gs

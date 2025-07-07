@@ -11,7 +11,7 @@ set.item:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
 observe:
-  itemSneak:
+  equipmentSneak:
   - become: parent
   - cooldown:
       id: gs
