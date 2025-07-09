@@ -19,6 +19,5 @@ knifefx:
   - effect:particles{particle=block;m=redstone_block;amount=35;hS=.25;vS=.25;y=1.25}
   
 kys:
-  Cooldown: 0
   Skills:
   - remove{delay=5} @self 
