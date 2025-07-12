@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#CCDADB><b>Petrifying Stone
+  itemModel: mineinabyss:petrifying_stone
+  lore:
+  - ':layer_5: Grade I Relic'
+  - <#A0ACAD>A long frail pole carved from one of the
+  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
+  - <#7B898A><i>It has the ability to flash-freeze air
+  - <#7B898A><i>which freezes all organic matter it touches.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>2} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: petrifying_thud
+      length: 8s #change to 44s after testing
+      display: <#CCDADB>Petrifying Thud
+  - mythicSkills:
+    - petrifying_thud
+resourcepack:
+  model: mineinabyss:item/relics/glacia_scepter

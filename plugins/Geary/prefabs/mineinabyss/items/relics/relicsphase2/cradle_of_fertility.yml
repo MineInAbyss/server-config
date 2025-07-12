@@ -1,0 +1,21 @@
+set.item:
+  itemName: <#1F88ED>Cradle of Fertility
+  type: PAPER
+  itemModel: mineinabyss:cradle_of_fertility
+  lore:
+  - ':layer_4: Grade IV Relic'
+  - <gold>A relic composed of multiple relic materials
+  - <gold>and the gills of abyssal creatures.
+  - <#D2D489><i>On use it grants the wearer
+  - <#D2D489><i>the ability to thrive in water.
+resourcepack:
+  model: mineinabyss:item/relics/respiratis
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: wish_of_fertility
+      length: 8s #Change to 40s once testing is done
+      display: <#1F88ED>Cradle of Fertility
+  - mythicSkills:
+    - wish_of_fertility

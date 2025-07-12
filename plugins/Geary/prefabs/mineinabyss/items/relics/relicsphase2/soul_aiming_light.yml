@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#CCDADB><b>Soul-aiming Light
+  itemModel: mineinabyss:soul-aiming_light
+  lore:
+  - ':layer_5: Grade I Relic'
+  - <#A0ACAD>A long frail pole carved from one of the
+  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
+  - <#7B898A><i>It has the ability to flash-freeze air
+  - <#7B898A><i>which freezes all organic matter it touches.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>2} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: aiming_light
+      length: 8s #change to 30-40s after testing
+      display: <#CCDADB>Aiming Light
+  - mythicSkills:
+    - aiming_light
+resourcepack:
+  model: mineinabyss:item/relics/glacia_scepter

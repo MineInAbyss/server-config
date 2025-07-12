@@ -1,0 +1,5 @@
+wish_of_fertility:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - bonemeal @TargetBlock
