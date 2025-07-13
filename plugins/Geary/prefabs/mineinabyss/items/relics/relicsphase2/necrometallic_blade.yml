@@ -1,0 +1,34 @@
+set.item:
+  itemName: <#1F88ED>Necrometallic Blade
+  type: minecraft:iron_sword
+  itemModel: mineinabyss:necrometallic_blade
+  lore:
+  - ':layer_4: Grade I Relic'
+  - <gold>A straight blade which was made from an ore 
+  - <gold>infected by a type of bacteria long ago.
+  - <#D2D489><i>When vibrated the ore releases bacterial 
+  - <#D2D489><i>spores which poison their environment. 
+  unbreakable: {}
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: prime_necrometallic_blade
+      length: 8s
+      display: <#1F88ED>Priming
+  - mythicSkills:
+    - necrometallic_blade_charge
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=necrometallic_blade;s=1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Not Primed
+  - cooldown:
+      id: necrometallic_blade
+      length: 8s
+      display: <#1F88ED>Necrometallic Spores
+  - mythicSkills:
+    - necrometallic_blade

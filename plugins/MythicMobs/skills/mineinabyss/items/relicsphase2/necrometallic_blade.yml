@@ -1,0 +1,36 @@
+necrometallic_blade:
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=1} true
+  Cooldown: 1
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -100";op=true}
+  - auraremove{aura=necrometallic_blade} @self
+  - aura{auraName=necrometallic_blade_poison;oT=necrometallic_blade_tick;duration=200;maxStacks=1;interval=25} @self
+
+necrometallic_blade_tick:
+  Skills:
+    - sound{s=entity.creeper.hurt;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
+    - damage{a=5;pi=true} @EntitiesNearOrigin{r=6;ignore=players}
+    - effect:particles{particle=campfire_signal_smoke;amount=100;hS=3;vS=1;y=0.5}
+    - effect:particles{particle=glow_squid_ink;amount=20;hS=3;vS=1;y=0.5}
+    - effect:particles{particle=large_smoke;amount=20;hS=3;vS=1;y=0.5}
+    - effect:particles{particle=sneeze;amount=200;hS=3;vS=1;y=0.5}
+    - effect:particles{particle=spore_blossom_air;amount=20;hS=3;vS=1;y=0.5}
+    - effect:particles{particle=trial_omen;amount=75;hS=3;vS=1;y=1}
+
+necrometallic_blade_charge:
+  Skills:
+    - aura{auraName=necrometallic_blade;onStart=necrometallic_blade_start;duration=200;maxStacks=1;cotd=false} @self
+    - skill{s=necrometallic_blade_ready} @self
+
+necrometallic_blade_start:
+  Skills:
+  - effect:particles{particle=sneeze;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{particle=trial_omen;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+
+necrometallic_blade_ready:
+  Cooldown: 5
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=1} true
+  Skills:
+    - sound{s=entity.creeper.primed;sc=master;p=1;v=1} @self
