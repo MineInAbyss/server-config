@@ -1,0 +1,10 @@
+nerve-tunedtwitch:
+  Conditions:
+  - inInventory
+  Skills:
+    - delay <random.20to180>
+    - recoil{r=20;pitch=-0.2} @self #doesnt work too well, very weak while also very shaky
+    - recoil{r=15;pitch=0.2} @self
+    - recoil{r=4;pitch=-0.1} @self
+    - recoil{r=15;pitch=0.1} @self
+    #- spin{duration=<random.5to10>;velocity=0} #too intrusive

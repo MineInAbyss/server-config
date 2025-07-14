@@ -1,0 +1,34 @@
+aiming_light:
+  Cooldown:
+  Conditions:
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
+  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
+  - potion{t=GLOWING;d=200;l=1} @self
+  - potion{t=BLINDNESS;d=20;l=1} @self
+  - sound{s=block.bell.resonate;volume=0.75;pitch=2} @origin
+  - sound{s=block.bell.resonate;volume=0.75;pitch=4} @origin
+  - delay 10
+  
+  - ShootShulkerBullet{oT=aiming_tick;oH=aiming_hit;oE=aiming_end;i=1;s=3} @target #Shulker Bullets seem to struggle with large hitboxes. Cant quite figure out how to make them target Orbies/Stingerheads
+  - delay 4
+  - ShootShulkerBullet{oT=aiming_tick;oH=aiming_hit;oE=aiming_end;i=1;v=5;md=200} @target
+ 
+aiming_tick:
+  Skills:
+  - particles{particle=redstone;c=#FCFCFC;size=2;a=3;hs=0;vs=0;s=0;y=0} @origin #Not the best looking particle trail yet
+
+aiming_hit:
+  Skills:
+  - damage{a=3;ignorearmor=true} @target
+  - damage{a=6} @@EntitiesNearTarget{r=3}
+  - potion{t=GLOWING;d=100;l=1} @target
+  - potion{t=BLINDNESS;d=40;l=1} @target
+  - delay 4
+  - potionclear{type=LEVITATION} @target
+  - potionclear{type=LEVITATION} @EntitiesNearTarget{r=5}
+
+aiming_end:
+  Skills:
+  #- damage{a=10} @EntitiesNearTarget{r=5}
+  #- damage{a=10} @PIR{r=1}

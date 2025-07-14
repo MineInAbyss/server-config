@@ -1,0 +1,11 @@
+frayed_murmur:
+  Conditions:
+  - inInventory
+  Skills:
+  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.1;v=<random.0.05to0.01>;repeat=4;repeatinterval=20} @origin
+  - delay 10
+  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.3;v=<random.0.05to0.01>;repeat=5;repeatinterval=20} @origin
+  - delay 10
+  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.2;v=<random.0.05to0.01>;repeat=3;repeatinterval=20} @origin
+  - delay 10
+  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.4;v=<random.0.05to0.01>;repeat=2;repeatinterval=20} @origin
