@@ -1,0 +1,21 @@
+Husk1:
+  Type: ZOMBIE
+  SpawnCategory: skeleton
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Health: 1
+  Damage: 0 
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0
+    KnockbackResistance: 1.0
+  Skills:
+  - doppleganger @NearestPlayer ~onTimer:1
+  - suicide ~onTimer:40

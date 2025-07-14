@@ -15,3 +15,4 @@ Tidal_Wave_HIT:
   - throw{velocity=16;velocityY=6} @EntitiesNearOrigin{r=3;i=players}
   - effect:particles{particle=splash;amount=30;hS=0;vS=0;speed=0} @origin
   - sound{s=block.water.splash;volume=0.7;pitch=0.8} @origin 
+  - extinguish{delay=2} 

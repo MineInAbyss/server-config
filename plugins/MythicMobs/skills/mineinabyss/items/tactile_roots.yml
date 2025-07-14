@@ -1,0 +1,21 @@
+tactile_roots_trigger: #conditions arent working atm, will try to find something else to make it work
+  Conditions:
+  - inInventory
+  Skills:
+  #- projectile{bulletType=ITEM;material=green_dye;v=0;syo=1;sfo=0.2;md=1;bspin=0;repeat=80;repeatInterval=1} @Self #meant to show what passive is equipped. Not working as planned.
+  - skill{s=tactile_roots_speed} @self
+  - skill{s=tactile_roots_slow} @self
+
+tactile_roots_speed:
+  Conditions:
+  - inInventory
+  - onblock{m=DIRT,GRASS_BLOCK,MOSS,FARMLAND,GRAVEL,DIRT_PATH,SAND} true @self
+  Skills:
+  - potion{t=SPEED;d=90:l=1} @self
+
+tactile_roots_slow:
+  Conditions:
+  - inInventory
+  - onblock{m=STONE,GRANITE,DIORITE,POLISHED_GRANITE,POLISHED_DIORITE,ANDESITE,POLISHED_ANDESITE,COBBLESTONE} true @self
+  Skills:
+  - potion{t=SLOWNESS;d=90;l=1} @self

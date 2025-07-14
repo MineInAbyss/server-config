@@ -9,7 +9,7 @@ set.item:
   - <#D2D489><i>On use it grants the wearer
   - <#D2D489><i>the ability to thrive in water.
 resourcepack:
-  model: mineinabyss:item/relics/respiratis
+  model: mineinabyss:item/relics/cradle_of_fertility
 observe:
   itemRightClick:
   - become: parent
