@@ -29,5 +29,6 @@ bone_impact:
 BB_tick:
   Skills:
     - sound{s=block.sculk_shrieker.break;p=1;v=0.5} @origin
+    - sound{s=entity.pufferfish.death;p=0.2;v=0.4} @origin
     - effect:particlebox{p=bubble;a=5;s=0.1;r=0.5}
     - effect:particlebox{p=bubble_pop;a=9;s=0.1;r=0.2}

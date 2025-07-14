@@ -24,13 +24,20 @@ passive:
       speed: 0
     with:
       location: '{{ entity.getLocation }}'
-  
-  - applyPotionEffects:
-    - type: minecraft:invisibility
-      duration: 8s
-      hasParticles: false
+
   - mythicSkills:
-    - frayed_murmur
+    - tactile_roots_trigger
+  
+  #- mythicSkills:
+  #  - ray-healing_heal
+
+  #- applyPotionEffects:
+  #  - type: minecraft:invisibility
+  #    duration: 8s
+  #    hasParticles: false
+  #- mythicSkills:
+  #  - frayed_murmur
+
   
   #- applyPotionEffects:
   #  - type: minecraft:haste
