@@ -1,21 +1,29 @@
-tactile_roots_trigger: #conditions arent working atm, will try to find something else to make it work
+tactile_roots_trigger:
   Conditions:
   - inInventory
   Skills:
-  #- projectile{bulletType=ITEM;material=green_dye;v=0;syo=1;sfo=0.2;md=1;bspin=0;repeat=80;repeatInterval=1} @Self #meant to show what passive is equipped. Not working as planned.
   - skill{s=tactile_roots_speed} @self
   - skill{s=tactile_roots_slow} @self
+  - skill{s=tactile_roots_pain} @self
 
 tactile_roots_speed:
-  Conditions:
-  - inInventory
-  - onblock{m=DIRT,GRASS_BLOCK,MOSS,FARMLAND,GRAVEL,DIRT_PATH,SAND} true @self
+  TargetConditions:
+    - onblock{m=DIRT,GRASS_BLOCK,MOSS,FARMLAND,GRAVEL,DIRT_PATH,SAND} true
   Skills:
-  - potion{t=SPEED;d=90:l=1} @self
+    - potion{t=SPEED;d=60;p=false} @self
+    - effect:particles{particle=reddust;color=#696112;amount=1;r=1;i=1} @Self
 
 tactile_roots_slow:
-  Conditions:
-  - inInventory
-  - onblock{m=STONE,GRANITE,DIORITE,POLISHED_GRANITE,POLISHED_DIORITE,ANDESITE,POLISHED_ANDESITE,COBBLESTONE} true @self
+  TargetConditions:
+    - onblock{m=STONE,GRANITE,DIORITE,POLISHED_GRANITE,POLISHED_DIORITE,ANDESITE,POLISHED_ANDESITE,COBBLESTONE} true
   Skills:
-  - potion{t=SLOWNESS;d=90;l=1} @self
+    - potion{t=SLOWNESS;d=60;p=false} @self
+    - effect:particles{particle=reddust;color=#7F7053;amount=1;r=1;i=1} @Self
+
+tactile_roots_pain:
+  TargetConditions:
+    - onblock{m=OBSIDIAN,CRYING_OBSIDIAN} true
+  Skills:
+    - damage{a=5;tags=StoneInShoe} @self
+    - potion{t=SLOWNESS;d=60;l=2;p=false} @self
+    - effect:particles{particle=reddust;color=#202020;amount=1;r=1;i=1} @Self

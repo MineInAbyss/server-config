@@ -17,5 +17,5 @@ Husk1:
     MovementSpeed: 0
     KnockbackResistance: 1.0
   Skills:
-  - doppleganger @NearestPlayer ~onTimer:1
+  - doppleganger @NearestPlayer @self ~onSpawn
   - suicide ~onTimer:40

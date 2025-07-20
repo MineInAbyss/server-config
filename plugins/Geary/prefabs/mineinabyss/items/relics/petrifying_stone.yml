@@ -24,4 +24,6 @@ observe:
   - mythicSkills:
     - petrifying_thud
 resourcepack:
-  model: mineinabyss:item/relics/petrifying_stone
+  textures:
+    layers:
+    - mineinabyss:item/relics/petrifying_stone

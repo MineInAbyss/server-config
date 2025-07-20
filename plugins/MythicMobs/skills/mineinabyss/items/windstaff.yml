@@ -10,11 +10,13 @@ windstaff:
     - sound{s=entity.ghast.shoot;sc=players;p=<random.float.0.8to1.0>;v=0.8} @self
     - sound{s=block.metal.break;sc=players;p=1.3;v=0.6} @self
 
-    - projectile{onTick=yomotsubi_tick;onHit=wind_impact;onend=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @targetlocation
+    - projectile{onTick=windstaff_tick;onHit=wind_impact;onEnd=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @targetlocation
     - delay 20
 
 
-
+windstaff_tick:
+  Skills:
+    - effect:particles{particle=cloud;amount=9;hS=.1;vS=.1;speed=0.01}
 
 
 

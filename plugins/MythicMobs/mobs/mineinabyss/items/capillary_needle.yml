@@ -1,0 +1,11 @@
+capillary_needle:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Small: true
+    Invisible: true
+    Invincible: true
+  Skills:
+   - model{mid=capillary_needle;n=false} @self ~onSpawn
