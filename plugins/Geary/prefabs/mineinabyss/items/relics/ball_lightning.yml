@@ -24,4 +24,6 @@ observe:
   - mythicSkills:
     - lightning_ball
 resourcepack:
-  model: mineinabyss:item/relics/ball_lightning
+  textures:
+    layers:
+    - mineinabyss:item/relics/ball_lightning

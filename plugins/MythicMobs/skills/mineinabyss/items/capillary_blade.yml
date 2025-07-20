@@ -1,0 +1,27 @@
+capillary_extend:
+  Conditions:
+  Cooldown:
+  Skills:
+  - projectile{bulletType=MOB;mob=capillary_needle;onHit=capillary_needle_hit;onEnd=capillary_needle_end;v=10;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @targetlocation
+  - aura{auraName=capillary_extend_aura;duration=60} @self
+
+capillary_needle_hit:
+  Conditions:
+  Cooldown:
+  Skills:
+  - aura{auraName=capillary_needle_aura;duration=60;i=1;onTick=capillary_needle_aura1} @target
+  - damage{a=30}
+  - heal{a=6}
+  - delay 60
+  - leap{velocity=40} @target
+
+capillary_needle_end:
+  Conditions:
+  Cooldown:
+  Skills:
+  - auraremove{aura=capillary_extend_aura} @self
+  - auraremove{aura=capillary_needle_aura} @target
+
+capillary_needle_aura:
+  Skills:
+  - summon{type=CAPILLARY_NEEDLE;amount=1;radius=1} @self

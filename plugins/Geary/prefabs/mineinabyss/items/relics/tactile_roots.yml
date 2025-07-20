@@ -1,0 +1,33 @@
+set.item:
+  itemName: <#88D481>Tactile Roots
+  type: PAPER
+  itemModel: mineinabyss:tactile_roots
+  lore:
+  - ':layer_1::layer_2: Special Grade Relic'
+  - <gold>An organic object that symbiotically attaches like a parasite.
+  - <#D2D489><i>When the hosts adrenaline level spikes the
+  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+
+passive:
+- match:
+  - inInventory
+  every: 1s
+  run:
+  - become: parent
+  - particle:
+      particle: CLOUD
+      offset:
+      - 0
+      - 1
+      - 0
+      count: 10
+      speed: 0
+    with:
+      location: '{{ entity.getLocation }}'
+  - mythicSkills:
+    - tactile_roots_trigger
+
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/tactile_roots

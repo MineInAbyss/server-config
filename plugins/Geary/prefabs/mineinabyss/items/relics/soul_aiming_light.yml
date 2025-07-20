@@ -24,4 +24,6 @@ observe:
   - mythicSkills:
     - aiming_light
 resourcepack:
-  model: mineinabyss:item/relics/soul-aiming_light
+  textures:
+    layers:
+    - mineinabyss:item/relics/soul-aiming_light

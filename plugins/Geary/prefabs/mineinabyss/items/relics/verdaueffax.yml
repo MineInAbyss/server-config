@@ -24,4 +24,6 @@ passive:
   - mythicSkills:
     - verdaueffax
 resourcepack:
-  model: mineinabyss:item/relics/gold-mending_wedge
+  textures:
+    layers:
+    - mineinabyss:item/relics/gold-mending_wedge

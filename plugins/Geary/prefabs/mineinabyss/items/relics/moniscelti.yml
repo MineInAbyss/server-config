@@ -23,4 +23,6 @@ observe:
   - mythicSkills:
     - moniscelti
 resourcepack:
-  model: mineinabyss:item/relics/dew-cress_knots
+  textures:
+    layers:
+    - mineinabyss:item/relics/dew-cress_knots
