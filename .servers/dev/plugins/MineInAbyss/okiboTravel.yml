@@ -16,7 +16,7 @@ okiboStations:
   - id: GrandPier
     displayName: Grand Pier
     location:
-      x: -536
+      x: -563
       y: 128
       z: -19
     iconHitboxOffset: 0.01,0.22,0.22
@@ -25,7 +25,7 @@ okiboStations:
     location:
       x: -509
       y: 112
-      z: -361
+      z: 361
     iconHitboxOffset: 0.01,-0.00,0.33
   - id: BlackMarket
     displayName: Black Market
@@ -37,16 +37,16 @@ okiboStations:
   - id: WharfEast
     displayName: Wharf District East
     location:
-      x: 10
-      y: 135
-      z: 682
+      x: 105
+      y: 82
+      z: 613
     iconHitboxOffset: 0.01,-0.15,0.08
   - id: TowerDistrict
     displayName: Tower District
     location:
-      x: 484
+      x: 490
       y: 126
-      z: -185
+      z: -180
     iconHitboxOffset: 0.01,0.03,-0.35
 okiboMaps:
   - station: GuildHQ
@@ -73,7 +73,6 @@ okiboMaps:
       x: -326.5
       y: -492.0
       z: 183.0
-      yaw: 0.0
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
@@ -92,7 +91,6 @@ okiboMaps:
       x: -564.5
       y: 129.5
       z: -17.5
-      yaw: 0.0
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
