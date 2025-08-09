@@ -1,0 +1,47 @@
+yunokage_click:
+  Skills:
+  - onAttack{auraName=yunokage_hit_track_0;onHit=yunokage_hit_0;duration=100} @self
+
+yunokage_hit_0:
+  Skills:
+  - sound{s=entity.wither_skeleton.ambient;sc=players;p=1;v=0.6} @self
+  - orbital{auraName=yunokage_skull_0;hp=false;bullet=DISPLAY;bulletmaterial=WITHER_SKELETON_SKULL;rotate=true;interval=1;duration=100;oy=1;scale=1,1,1;maxStacks=10;radius=2;sp=<random.0to10>;onEnd=yunokage_skull_end;cao=True} @self
+  - onAttack{auraName=yunokage_hit_track_1;onHit=yunokage_hit_1;duration=100} @self
+
+yunokage_hit_1:
+  Skills:
+  - orbital{auraName=yunokage_skull_1;hp=false;bullet=DISPLAY;bulletmaterial=WITHER_SKELETON_SKULL;rotate=true;interval=1;duration=100;oy=1;scale=1,1,1;maxStacks=10;radius=2;sp=random.0to10>;onEnd=yunokage_skull_end;cao=True} @self
+  - onAttack{auraName=yunokage_hit_track_2;onHit=yunokage_hit_2;duration=100} @self
+
+yunokage_hit_2:
+  Skills:
+  - orbital{auraName=yunokage_skull_2;hp=false;bullet=DISPLAY;bulletmaterial=WITHER_SKELETON_SKULL;rotate=true;interval=1;duration=100;oy=1;scale=1,1,1;maxStacks=10;radius=2;sp=random.0to10>;onEnd=yunokage_skull_end;cao=True} @self
+  - onAttack{auraName=yunokage_hit_track_3;onHit=yunokage_hit_3;duration=100} @self
+
+yunokage_hit_3:
+  Skills:
+  - orbital{auraName=yunokage_skull_3;hp=false;bullet=DISPLAY;bulletmaterial=WITHER_SKELETON_SKULL;rotate=true;interval=1;duration=100;oy=1;scale=1,1,1;maxStacks=10;radius=2;sp=random.0to10>;onEnd=yunokage_skull_end;cao=True} @self
+  - onAttack{auraName=yunokage_hit_track_4;onHit=yunokage_hit_4;duration=100} @self
+
+yunokage_hit_4:
+  Skills:
+  - orbital{auraName=yunokage_skull_4;hp=false;bullet=DISPLAY;bulletmaterial=WITHER_SKELETON_SKULL;rotate=true;interval=1;duration=100;oy=1;scale=1,1,1;maxStacks=10;radius=2;sp=random.0to10>;onEnd=yunokage_skull_end;cao=True} @self
+
+yunokage_shoot:
+  Skills:
+  - sound{s=entity.blaze.shoot;sc=players;p=1;v=0.6} @self
+  - auraremove{aura=yunokage_skull_0}
+  - auraremove{aura=yunokage_skull_1}
+  - auraremove{aura=yunokage_skull_2}
+  - auraremove{aura=yunokage_skull_3}
+  - auraremove{aura=yunokage_skull_4}
+  - auraremove{aura=yunokage_hit_track_0}
+  - auraremove{aura=yunokage_hit_track_1}
+  - auraremove{aura=yunokage_hit_track_2}
+  - auraremove{aura=yunokage_hit_track_3}
+  - auraremove{aura=yunokage_hit_track_4}
+
+yunokage_skull_end:
+  Skills:
+  - sound{s=entity.generic.explode;sc=players;p=1;v=0.6} @self
+  - effect:particles{particle=falling_dust;amount=20;hS=0.5;vS=1;speed=0;y=0.5} @origin
