@@ -1,0 +1,17 @@
+prayingSkeleton_l5:
+  Template: prayingSkeleton_base
+  Drops:
+    - exp 10-15
+    - bone 1-3 0.7
+    - L5PSHeadDrops
+    - L5PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
+    - geary mineinabyss:sunsphere 1-1 0.15 nolooting
+  Skills:
+    - skill{s=relicDrop;item=BlackHoleStaffDrop;grade=1} ~onDeath 0.001
+    - skill{s=relicDrop;delay=5;item=FrostStaffDrop;grade=1} ~onDeath 0.002
+    - skill{s=relicDrop;delay=7;item=BoneStaffDrop;grade=3} ~onDeath 0.005
+    - skill{s=relicDrop;delay=10;item=VoidCharmDrop;grade=2} ~onDeath 0.005
+    - skill{s=relicDrop;delay=15;item=MonisceltiDrop;grade=4} ~onDeath 0.015

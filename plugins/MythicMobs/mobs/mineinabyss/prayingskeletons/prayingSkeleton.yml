@@ -1,0 +1,26 @@
+prayingSkeleton_base:
+  Type: PIG
+  Display: "<green>Praying Skeleton"
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Health: 5
+  Damage: 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    Collidable: false
+  Model:
+    ViewRadius: 100
+    Drive: false
+    DamageTint: false
+    Scale: 1
+  Skills:
+    # Choose a random model for this skeleton
+    - randomskill{
+      [- model{modelid=praying_skeleton_1} @self],
+      [- model{modelid=praying_skeleton_2} @self],
+      [- model{modelid=praying_skeleton_3} @self]
+      } @self ~onSpawn
+    - skill{s=displayHealth} ~onDamaged

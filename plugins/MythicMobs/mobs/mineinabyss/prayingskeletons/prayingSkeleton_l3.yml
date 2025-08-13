@@ -1,0 +1,17 @@
+prayingSkeleton_l3:
+  Template: prayingSkeleton_base
+  Drops:
+    - exp 10-15
+    - bone 1-3 0.7
+    - L3PSHeadDrops
+    - L3PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
+    - geary mineinabyss:aoesphere 1 0.15 nolooting
+  Skills:
+    - skill{s=relicDrop;item=GiantRelicSwordDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;item=GiantRelicHammerDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;delay=10;item=WindStaffDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;delay=15;item=RelicBootsDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;delay=20;item=CritCharmDrop;grade=4} ~onDeath 0.025

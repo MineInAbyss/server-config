@@ -1,0 +1,231 @@
+SpawnDelay: 5
+WorldName: "world"
+sectionsConfig:
+  l1s0:
+    entry:
+      type: "mm:prayingSkeleton_l1"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: -20
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 1000
+  l1s1:
+    entry:
+      type: "mm:prayingSkeleton_l1"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 1000
+  l1s2:
+    entry:
+      type: "mm:prayingSkeleton_l1"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 1000
+  l1s3:
+    entry:
+      type: "mm:prayingSkeleton_l1"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 1000
+  l2s0:
+    entry:
+      type: "mm:prayingSkeleton_l2"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: 50
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 500
+  l2s1:
+    entry:
+      type: "mm:prayingSkeleton_l2"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 5
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 1000
+  l2s2:
+    entry:
+      type: "mm:prayingSkeleton_l2"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 500
+    spawnCap: 10
+    sectionMinY: -20
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 250
+    spawnAttempts: 500
+  l3s0:
+    entry:
+      type: "mm:prayingSkeleton_l3"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 3
+    sectionMinY: -220
+    sectionMaxY: -100
+    spawnNoise: 5
+    splitSize: 150
+    spawnAttempts: 500
+  l3s1:
+    entry:
+      type: "mm:prayingSkeleton_l3"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 3
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 3
+    splitSize: 100
+    spawnAttempts: 800
+  l3s2:
+    entry:
+      type: "mm:prayingSkeleton_l3"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 3
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 3
+    splitSize: 100
+    spawnAttempts: 800
+  l3s3:
+    entry:
+      type: "mm:prayingSkeleton_l3"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 300
+    spawnCap: 3
+    sectionMinY: 60
+    sectionMaxY: 220
+    spawnNoise: 3
+    splitSize: 150
+    spawnAttempts: 500
+  l4s1:
+    entry:
+      type: "mm:prayingSkeleton_l4"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 8
+    sectionMinY: -220
+    sectionMaxY: -60
+    spawnNoise: 5
+    splitSize: 200
+    spawnAttempts: 500
+  l4s2:
+    entry:
+      type: "mm:prayingSkeleton_l4"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 8
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 200
+    spawnAttempts: 700
+  l4s3:
+    entry:
+      type: "mm:prayingSkeleton_l4"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 8
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 200
+    spawnAttempts: 800
+  l4s4:
+    entry:
+      type: "mm:prayingSkeleton_l4"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 8
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 200
+    spawnAttempts: 800
+  l4s5:
+    entry:
+      type: "mm:prayingSkeleton_l4"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 500
+    spawnCap: 8
+    sectionMinY: 140
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 250
+    spawnAttempts: 500
+  l5s1:
+    entry:
+      type: "mm:prayingSkeleton_l5"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 500
+    spawnCap: 15
+    sectionMinY: -220
+    sectionMaxY: 100
+    spawnNoise: 5
+    splitSize: 250
+    spawnAttempts: 500
+  l5s2:
+    entry:
+      type: "mm:prayingSkeleton_l5"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 500
+    spawnCap: 15
+    sectionMinY: -220
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 250
+    spawnAttempts: 500
+  l5s3:
+    entry:
+      type: "mm:prayingSkeleton_l5"
+      conditions:
+        - isOpenArea: { range: 3 }
+    spreadRadius: 400
+    spawnCap: 10
+    sectionMinY: 0
+    sectionMaxY: 220
+    spawnNoise: 5
+    splitSize: 200
+    spawnAttempts: 1000

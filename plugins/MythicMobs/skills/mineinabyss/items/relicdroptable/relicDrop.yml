@@ -1,0 +1,14 @@
+# @param grade: The grade of the relic, 1-4, displays a message in chat based on this
+# @param item: The item to drop
+relicDrop:
+  TargetConditions:
+    # Aura used to prevent multiple items from dropping currently, as well as particle effect
+    - hasaura{aura=relicdrop} false
+  Skill:
+    - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @trigger
+    - giveitem{i=<skill.item>} @trigger
+    # Send a message based on a grade parameter
+    - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World ?varEquals{var=skill.grade;value=1}
+    - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade II</#AA00AA><#D2D489> relic.'} @World ?varEquals{var=skill.grade;value=2}
+    - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade III</#AA00AA><#D2D489> relic.'} @World ?varEquals{var=skill.grade;value=3}
+    - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade IV</#AA00AA><#D2D489> relic.'} @World ?varEquals{var=skill.grade;value=4}

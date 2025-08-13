@@ -1,0 +1,19 @@
+prayingSkeleton_l1:
+  Template: prayingSkeleton_base
+  Drops:
+    - exp 10-15
+    - bone 1-3 0.7
+    # - PSIntroDrops #to be removed after the event
+    # - PSIntroHeadDrops #to be removed after the event
+    - L1PSHeadDrops
+    - L1PSOreDrops
+    - PSHeadDrops
+    - MiscPSDrops
+    - PSSherdDrops
+    - geary mineinabyss:damagesphere 1-1 0.15 nolooting
+
+  Skills:
+    - skill{s=relicDrop;delay=15;item=AnimalTotemDrop;grade=4} ~onDeath 0.025
+    - skill{s=relicDrop;delay=10;item=VerdauEffaxDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=5;item=VineCharmDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;item=BoundingLanceDrop;grade=1} ~onDeath 0.005
