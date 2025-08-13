@@ -21,6 +21,8 @@ prayingSkeleton_base:
     - randomskill{
       [- model{modelid=praying_skeleton_1} @self],
       [- model{modelid=praying_skeleton_2} @self],
-      [- model{modelid=praying_skeleton_3} @self]
+      [- model{modelid=praying_skeleton_3} @self],
+      [- model{modelid=praying_skeleton_4} @self],
+      [- model{modelid=praying_skeleton_5} @self]
       } @self ~onSpawn
     - skill{s=displayHealth} ~onDamaged

@@ -1,22 +1,18 @@
 set.item:
-  itemName: <gold>Enhanced Ghost Seek <red>(Temporarily Disabled)
+  itemName: <gold>God Seek
   type: minecraft:paper
   itemModel: mineinabyss:ghost_seek_on
   lore:
-  - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-  - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-  - <#D2D489>guiding its wielder toward hidden relics.
-  enchantmentGlintOverride: true
+    - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+    - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+    - <#D2D489>guiding its wielder toward hidden relics.
   equippable:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
-#passive:
-#- match:
-#  - equipped
-#  every: 10s
-#  run:
-#  - become: parent
-#  - mythicSkills:
-#    - enchancedrelicscout
+observe:
+  itemRightClick:
+    - become: parent
+    - geary:ghost_seek:
+        radii: [ 250, 200, 150, 100, 50, 25, 10 ]
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_on

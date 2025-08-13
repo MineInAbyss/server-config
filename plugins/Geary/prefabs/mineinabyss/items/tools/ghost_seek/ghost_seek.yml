@@ -1,22 +1,21 @@
 set.item:
-  itemName: <gold>Damaged Ghost Seek <red>(Temporarily Disabled)
+  itemName: <gold>Damaged Ghost Seek
   type: minecraft:paper
-  itemModel: mineinabyss:ghost_seek_off
+  itemModel: mineinabyss:ghost_seek_on
   lore:
-  - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
-  - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
-  - <#D2D489>guiding its wielder toward hidden relics.
+    - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+    - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+    - <#D2D489>guiding its wielder toward hidden relics.
   equippable:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
-  enchantmentGlintOverride: true
-#passive:
-#- match:
-#  - equipped
-#  every: 20s
-#  run:
-#  - become: parent
-#  - mythicSkills:
-#    - brokenscout
+passive:
+  - match:
+      - equipped
+    every: 20s
+    run:
+      - become: parent
+      - geary:ghost_seek:
+          radii: [ 100, 75, 50, 25 ]
 resourcepack:
-  model: mineinabyss:item/relics/ghost_seek_off
+  model: mineinabyss:item/relics/ghost_seek_on
