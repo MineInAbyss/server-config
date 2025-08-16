@@ -11,14 +11,3 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:item/food/standard_food/cut_meat_raw
-set.recipes:
-  discoverRecipes: true
-  recipes:
-  - type: furnace
-    input: mineinabyss:cut_meat_raw
-    experience: 1
-    cookingTime: 100
-  - type: smoking
-    input: mineinabyss:cut_meat_raw
-    experience: 2
-    cookingTime: 50
