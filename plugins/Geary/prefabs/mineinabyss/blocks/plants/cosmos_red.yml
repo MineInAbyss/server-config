@@ -1,0 +1,13 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Cosmos Red
+    customModelData: 3012
+set.block:
+  blockType: WIRE
+  blockId: 12
+blocky:pack:
+  model: hmcmodels:block/nature/cosmos_red
+blocky:drops:
+  drops:
+    - item: mineinabyss:cosmos_red

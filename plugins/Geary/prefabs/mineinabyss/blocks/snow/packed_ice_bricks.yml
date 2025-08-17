@@ -1,0 +1,15 @@
+inherit:
+  - mineinabyss:snow
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Packed Ice Bricks
+    customModelData: 2045
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 40
+blocky:pack:
+  model: "mineinabyss:block/snow/packed_ice_bricks"
+blocky:drops:
+  drops:
+    - item: mineinabyss:packed_ice_bricks

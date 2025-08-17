@@ -1,0 +1,7 @@
+blocky:directional:
+  parentBlock: mineinabyss:ice_pillar
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 38
+blocky:pack:
+  model: mineinabyss:block/snow/ice_pillar

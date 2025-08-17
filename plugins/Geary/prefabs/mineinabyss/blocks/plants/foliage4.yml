@@ -1,0 +1,13 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: <#7a4e48>Foliage 4
+    customModelData: 3004
+set.block:
+  blockType: WIRE
+  blockId: 4
+blocky:pack:
+  model: mineinabyss:block/nature/foliage4
+blocky:drops:
+  drops:
+    - item: mineinabyss:foliage4

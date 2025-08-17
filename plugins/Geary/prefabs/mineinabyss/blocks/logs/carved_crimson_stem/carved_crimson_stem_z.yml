@@ -1,0 +1,7 @@
+blocky:directional:
+  parentBlock: mineinabyss:carved_crimson_stem
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 10
+blocky:pack:
+  model: mineinabyss:block/logs/carved_crimson_stem

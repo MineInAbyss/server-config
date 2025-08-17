@@ -1,0 +1,17 @@
+inherit: [mineinabyss:snow]
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Snow Bricks
+    customModelData: 2049
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 46
+
+blocky:pack:
+  model: "mineinabyss:block/snow/snow_bricks"
+blocky:drops:
+  acceptedToolTypes: [ SHOVEL ]
+  onlyDropWithCorrectTool: true
+  drops:
+    - item: mineinabyss:snow_bricks

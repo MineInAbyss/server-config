@@ -1,0 +1,16 @@
+blocky:sound:
+  placeSound: block.snow.place
+  breakSound: block.snow.break
+  stepSound: block.snow.step
+  hitSound: block.snow.hit
+  fallSound: block.snow.fall
+blocky:breaking:
+  hardness: 0.8
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_SHOVEL
+        value: 0.6
+    heldTypes:
+      - toolType: SHOVEL
+        value: 0.5

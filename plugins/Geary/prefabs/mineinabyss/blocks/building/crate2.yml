@@ -7,8 +7,8 @@ set.item:
 resourcepack:
   parentModel: block/cube_all
   textures:
-    layers:
-      - mineinabyss:block/building/crate2
+    variables:
+      all: mineinabyss:block/building/crate2
 set.block:
   blockType: NOTEBLOCK
   blockId: 33

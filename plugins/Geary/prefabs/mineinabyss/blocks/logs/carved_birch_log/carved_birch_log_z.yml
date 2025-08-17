@@ -1,0 +1,7 @@
+blocky:directional:
+  parentBlock: mineinabyss:carved_birch_log
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 7
+blocky:pack:
+  model: mineinabyss:block/logs/carved_birch_log

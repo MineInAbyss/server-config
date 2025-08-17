@@ -1,0 +1,13 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Lupine Purple
+    customModelData: 3017
+set.block:
+  blockType: WIRE
+  blockId: 16
+blocky:pack:
+  model: hmcmodels:block/nature/lupine_purple
+blocky:drops:
+  drops:
+    - item: mineinabyss:lupine_purple

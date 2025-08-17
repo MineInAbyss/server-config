@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:paper
+  itemName: bottlebrushes
+  customModelData: 3009
+set.block:
+  blockType: WIRE
+  blockId: 9
+blocky:pack:
+  model: hmcmodels:block/nature/bottlebrushes
+blocky:drops:
+  drops:
+    - item: mineinabyss:bottlebrushes

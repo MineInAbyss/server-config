@@ -1,0 +1,7 @@
+blocky:directional:
+  parentBlock: mineinabyss:carved_acacia_log
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 3
+blocky:pack:
+  model: mineinabyss:block/logs/carved_acacia_log

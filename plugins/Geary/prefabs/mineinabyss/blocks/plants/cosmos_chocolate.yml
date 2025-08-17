@@ -1,0 +1,15 @@
+set.item:
+  item:
+    type: minecraft:paper
+    itemName: Cosmos Chocolate
+    customModelData: 3010
+set.block:
+  blockType: WIRE
+  blockId: 10
+blocky:breaking:
+  hardness: 4.5
+blocky:pack:
+  model: hmcmodels:block/nature/cosmos_chocolate
+blocky:drops:
+  drops:
+    - item: mineinabyss:cosmos_chocolate
