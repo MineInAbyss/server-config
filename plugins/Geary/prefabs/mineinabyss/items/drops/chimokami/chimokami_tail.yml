@@ -3,7 +3,7 @@ set.item:
   itemName: <#eeffff>Chimokami Tail
   itemModel: mineinabyss:chimokami_tail
   lore:
-  - ':layer_2:'
+  - ':layer_2::cosmetic_orth_coin:'
   - <#7a243f><i>These critters like darkness.
 disableItemInteractions: {}
 resourcepack:
