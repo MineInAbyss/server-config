@@ -12,14 +12,14 @@ set.item:
 passive:
   - match:
       - equipped
-    every: 25s
+    every: 20s
     run:
       - become: parent
       - geary:ghost_seek:
           radii:
-            100:
+            150:
               - mythicSkills: [ ghost_seek_effect_1 ]
-            50:
+            75:
               - mythicSkills: [ ghost_seek_effect_2 ]
             25:
               - mythicSkills: [ ghost_seek_effect_3 ]
