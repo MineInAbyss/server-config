@@ -1,2 +1,0 @@
-privateSettingsSSH: git@github.com:MineInAbyss/server-config-private.git
-privateSettingsDest: "{{ home }}/mineinabyss/server-config-private"
