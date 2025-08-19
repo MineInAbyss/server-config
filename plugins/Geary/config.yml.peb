@@ -19,7 +19,7 @@ catch:
 mobTypeConversion: IGNORE
 # List of mob types to remove if they are not entities with Geary prefabs (i.e. vanilla entities)
 removeVanillaMobTypes: []
-logLevel: Info
+logLevel: '{{ geary.logLevel | default("Info") }}'
 integrations:
   # Allow binding to MythicMobs entities.
   mythicMobs: true
@@ -31,4 +31,4 @@ resourcePack:
   # Points to a resourcepack in zip or directory format to merge into Geary's pack
   includedPackPath: "template_pack"
 # Whether to enable Geary's spawning system
-spawning: true
+spawning: '{{ geary.spawning | default("false") }}'
