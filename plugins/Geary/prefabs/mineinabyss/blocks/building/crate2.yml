@@ -1,7 +1,7 @@
 inherit:
 - mineinabyss:wood
 set.item:
-  type: minecraft:clock
+  type: minecraft:paper
   itemName: <#e6c186>Crate 2
   itemModel: mineinabyss:crate2
 resourcepack:

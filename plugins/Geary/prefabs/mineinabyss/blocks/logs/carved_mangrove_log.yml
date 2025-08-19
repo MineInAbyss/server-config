@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:wood
 set.item:
-  type: minecraft:clock
+  type: minecraft:paper
   itemName: <white>Carved Mangrove Log
   itemModel: mineinabyss:carved_mangrove_log
 resourcepack:

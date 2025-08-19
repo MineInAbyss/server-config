@@ -1,6 +1,6 @@
 inherit: [mineinabyss:snow]
 set.item:
-  type: minecraft:clock
+  type: minecraft:paper
   itemName: Chiseled Packed Ice
   itemModel: mineinabyss:chiseled_packed_ice
 resourcepack:

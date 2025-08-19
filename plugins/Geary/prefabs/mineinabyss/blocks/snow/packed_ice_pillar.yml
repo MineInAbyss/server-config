@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:snow
 set.item:
-  type: minecraft:clock
+  type: minecraft:paper
   itemName: Packed Ice Pillar
   itemModel: mineinabyss:packed_ice_pillar
 resourcepack:
