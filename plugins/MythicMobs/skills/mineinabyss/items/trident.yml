@@ -25,7 +25,7 @@ throwtrident:
   Conditions:
   - hasaurastacks{n=trident;s=3} true
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -5";op=true}
+  - command{c="exp add <caster.name> -5"}
   - auraremove{aura=trident;stacks=3} @self
   - sound{s=item.trident.throw;sc=players;p=1;v=0.6} @self
   - projectile{bulletType=ARROW;arrowType=TRIDENT;onHit=trident_impact;v=25;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;g=0.1} @targetlocation

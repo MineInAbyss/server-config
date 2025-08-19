@@ -1,6 +1,6 @@
 Frost_Beam:
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -80";op=true}
+  - command{c="exp add <caster.name> -80"}
   - potion{t=SLOW;l=2;d=20;p=false} @Self
   - sound{s=entity.evoker.prepare_attack;volume=0.6;pitch=1.2;repeat=3;repeatinterval=5} @self
   - sound{s=block.enchantment_table.use;volume=0.5;pitch=0.8;repeat=2;repeatinterval=6} @self
@@ -47,4 +47,3 @@ SLOW_FX_60:
 SLOW_FX_100:
   Skills:
   - effect:particles{particle=block_crack;m=ICE;amount=5;hS=0.35;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat=19;repeatinterval=5}
-  

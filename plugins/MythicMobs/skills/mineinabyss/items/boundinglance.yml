@@ -3,7 +3,7 @@ boundinglance:
   Conditions:
   #- stance{s=spikeless;str=true} false
   Skills:
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
+    - command{c="exp add <caster.name> -20"}
     - potion{t=SLOW;l=7;d=30;p=false} @Self
   #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
     - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self

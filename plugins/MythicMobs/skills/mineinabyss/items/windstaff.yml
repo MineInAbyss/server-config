@@ -1,7 +1,7 @@
 windstaff:
   Cooldown: 1
   Skills:
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
+    - command{c="exp add <caster.name> -40"}
 
     - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
     - delay 20
