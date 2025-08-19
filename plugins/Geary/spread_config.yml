@@ -92,7 +92,7 @@ sectionsConfig:
       conditions:
         - isOpenArea: { range: 3 }
     spreadRadius: 400
-    spawnCap: 3
+    spawnCap: 1
     sectionMinY: -220
     sectionMaxY: -100
     spawnNoise: 5
