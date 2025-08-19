@@ -2,7 +2,7 @@ inherit:
 - mineinabyss:stone
 - mineinabyss:ore
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: <white>Charcoal Sand Ore
   itemModel: mineinabyss:charcoal_sand_ore
 resourcepack:

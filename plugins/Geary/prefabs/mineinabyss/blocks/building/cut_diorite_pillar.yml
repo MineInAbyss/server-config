@@ -1,6 +1,6 @@
 inherit: [mineinabyss:stone]
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: <white>Cut Diorite Pillar
   itemModel: mineinabyss:cut_diorite_pillar
 resourcepack:

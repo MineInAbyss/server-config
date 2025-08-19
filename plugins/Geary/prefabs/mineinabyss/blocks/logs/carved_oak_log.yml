@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:wood
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: <white>Carved Oak Log
   itemModel: mineinabyss:carved_oak_log
 resourcepack:

@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:snow
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: Packed Ice Bricks
   itemModel: mineinabyss:packed_ice_bricks
 resourcepack:

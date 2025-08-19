@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:wood
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: <white>Carved Spruce Log
   itemModel: mineinabyss:carved_spruce_log
 resourcepack:

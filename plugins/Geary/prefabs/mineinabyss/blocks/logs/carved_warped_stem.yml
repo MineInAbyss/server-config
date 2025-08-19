@@ -1,7 +1,7 @@
 inherit:
   - mineinabyss:wood
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemName: <white>Carved Warped Stem
   itemModel: mineinabyss:carved_warped_stem_top
 resourcepack:
