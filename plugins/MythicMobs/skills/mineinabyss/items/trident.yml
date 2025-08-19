@@ -1,13 +1,10 @@
 
 trident_charge:
-  Cooldown: 
-  Conditions:
   Skills:
   - aura{auraName=trident;onStart=tridentstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
   - skill{s=tridentready} @self
   - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
 tridentstack:
-  Conditions:
   Skills:
  # - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
 

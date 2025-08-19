@@ -1,6 +1,5 @@
 vinecharm:
   Cooldown: 1
-  Conditions:
   Skills:
     - command{c="exp add <caster.name> -50"} @self
     - summon{type=allyvineblaster;amount=3;radius=4;ctt=true;itt=true;os=true} @self
