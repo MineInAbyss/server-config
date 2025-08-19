@@ -1,0 +1,9 @@
+set.recipes:
+  discoverRecipes: true
+  removeRecipes:
+    - "minecraft:creaking_heart"
+  result:
+    type: minecraft:creaking_heart
+    amount: 1
+
+  recipes: []  
