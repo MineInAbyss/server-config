@@ -10,6 +10,8 @@ set.item:
   - <#695654><i>in its surroundings.
   unbreakable: {}
 disableItemInteractions: {}
+weapon:
+    damagePerAttack: 0
 observe:
   itemRightClick:
   - become: parent
