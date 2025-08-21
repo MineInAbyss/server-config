@@ -14,6 +14,10 @@ passive:
   every: 1s
   run:
   - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:tactile_roots
   - particle:
       particle: CLOUD
       offset:

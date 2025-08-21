@@ -2,8 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "mineinabyss:item/relics/capillary_blade",
-		"particle": "mineinabyss:item/relics/capillary_blade"
+		"1": "mineinabyss:item/relics/capillary_blade"
 	},
 	"elements": [
 		{
@@ -438,28 +437,26 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 2.5, 0]
+			"translation": [0, 2.25, 0.75]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 2.5, 0]
+			"translation": [0, 2.25, 0.75]
 		},
 		"firstperson_righthand": {
-			"translation": [0, 1.25, 0]
+			"rotation": [-5, 1, 0],
+			"translation": [2.75, 1.25, 0]
 		},
 		"firstperson_lefthand": {
-			"translation": [0, 1.25, 0]
+			"rotation": [-5, 1, 0],
+			"translation": [2.75, 1.25, 0]
 		},
 		"ground": {
-			"rotation": [0, 0, 90],
-			"translation": [3.75, -1.75, 0.25]
+			"rotation": [0, 0, 78],
+			"translation": [1.75, 0, 0]
 		},
 		"gui": {
-			"rotation": [0, 0, -45],
-			"translation": [-3, -3, 0],
-			"scale": [0.85, 0.85, 0.85]
-		},
-		"head": {
-			"translation": [6.5, 7, -3.25]
+			"rotation": [0, 0, -44],
+			"translation": [-3.5, -2.75, 0]
 		},
 		"fixed": {
 			"rotation": [0, 0, 46],

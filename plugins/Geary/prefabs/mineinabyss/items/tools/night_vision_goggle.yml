@@ -7,19 +7,21 @@ set.item:
   - <#D2D489>crafted with an intricate, almost organic design.
   - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
   - <#D2D489>to darkness, revealing what the abyss hides.
-  equippable:
-    slot: HEAD
 disableItemInteractions: {}
+
 passive:
 - match:
-  - equipped
-  every: 8s
+  - inInventory
+  every: 10s
   run:
   - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:night_vision_goggle
   - applyPotionEffects:
     - type: minecraft:night_vision
-      duration: 30s
-      amplifier: 1
+      duration: 22s
       hasParticles: false
 resourcepack:
   model: mineinabyss:item/relics/night_vision_goggles

@@ -5,7 +5,6 @@ ray-healing_heal:
   Skills:
   - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @Self
   - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
-  #- projectile{bulletType=ITEM;material=green_dye;v=0;syo=1;sfo=0.2;md=1;bspin=0;repeat=80;repeatInterval=1} @Self #meant to show what passive is equipped. Not working as planned.
   - skill{s=ray-healing_heal_low} @self
   - skill{s=ray-healing_heal_high} @self
   

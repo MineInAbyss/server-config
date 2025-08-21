@@ -1,7 +1,7 @@
 set.item:
-  itemName: <#88D481>Nerve-tuned Fibers
+  itemName: <#88D481>Ray-healing Plate
   type: PAPER
-  itemModel: mineinabyss:nerve-tuned_fibers
+  itemModel: mineinabyss:ray-healing_plate
   lore:
   - ':layer_1::layer_2: Special Grade Relic'
   - <gold>An organic object that symbiotically attaches like a parasite.
@@ -11,13 +11,13 @@ set.item:
 passive:
 - match:
   - inInventory
-  every: 4s
+  every: 1s
   run:
   - become: parent
   - ensure:
         inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:nerve-tuned_fibers
+          item: mineinabyss:ray-healing_plate
   - particle:
       particle: CLOUD
       offset:
@@ -28,16 +28,10 @@ passive:
       speed: 0
     with:
       location: '{{ entity.getLocation }}'
-    
-  - applyPotionEffects:
-    - type: minecraft:haste
-      duration: 8s
-      hasParticles: false
   - mythicSkills:
-    - nerve-tunedtwitch
-
+    - ray-healing_heal
 
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/relics/nerve-tuned_fibers
+    - mineinabyss:item/relics/ray-healing_plate

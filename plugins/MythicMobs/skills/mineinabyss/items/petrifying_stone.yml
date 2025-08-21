@@ -6,7 +6,7 @@ petrifying_thud:
     - sound{s=entity.fox.screech;p=10;v=0.4} @Self #unsure about sound design
     - sound{s=entity.fox.screech;p=9;v=0.4} @Self
     - sound{s=entity.fox.screech;p=8;v=0.4} @Self
-    - effect:particles{p=reddust;c=#C5C6D0;amount=20;hS=0.3;vS=0.3;speed=0;y=1.5} @self
+    - particle{p=reddust;c=#C5C6D0;amount=20;hS=0.3;vS=0.3;speed=0;y=1} @self
     - delay 25
     - skill{s=petrify_impact} @Self
 
@@ -16,8 +16,8 @@ petrify_impact:
     - sound{s=block.note_block.basedrum;p=0.5;v=0.75} @Self
     - sound{s=block.note_block.basedrum;p=1;v=0.75} @Self
     - delay 1
-    - effect:particlering{p=redstone;color=#C5C6D0;a=2;y=0.1;r=7;points=64} #colors not working as intended
-    - effect:particlering{p=redstone;color=#C5C6D0;a=2;y=0.2;r=4;points=32}
+    - effect:particlering{p=reddust;c=#C5C6D0;a=1;y=0.1;r=7;points=64} #colors not working as intended
+    - effect:particlering{p=reddust;c=#C5C6D0;a=1;y=0.2;r=4;points=32}
     - potion{t=SLOW;d=80;l=10} @PIR{r=4}
     - potion{t=SLOW;d=80;l=10} @Self
     - potion{t=SLOW;d=80;l=10} @EntitiesNearOrigin{r=4}

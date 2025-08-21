@@ -1,6 +1,7 @@
 blazereap_charge:
   Cooldown: 
   Conditions:
+    - hasaurastacks{n=primerstop;s=1} false
   Skills:
     - aura{auraName=blazereap;onStart=blazereapstack;duration=200;c=1;maxStacks=5;cotd=false} @self
     - skill{s=blazereapready} @self
@@ -49,3 +50,4 @@ BlazeReap:
     - effect:particlering{particle=Gust_Emitter_Small;radius=9;points=7;amount=5;hS=1;vS=1} @Self
     - effect:particlering{particle=Gust_Emitter_Small;radius=10;points=10;amount=5;hS=1;vS=1} @Self
     - effect:bloodyScreen{d=40} @EntitiesNearOrigin{r=12}
+    - aura{auraName=primerstop;duration=600;c=1;maxStacks=1;cotd=false} @self

@@ -3,7 +3,7 @@ lightning_ball:
   Conditions:
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
-  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;repeat=3;repeatInterval=3} @origin
+  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1;repeat=3;repeatInterval=3} @origin
   - sound{s=item.flintandsteel.use;sc=hostile;p=2.0;v=0.5;repeat=4;repeatInterval=4} @origin
   - delay 20
   - projectile{oT=lightning_tick;mr=170;v=1.4;i=1;vN=1;hN=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=200;syo=1.2;g=0;sE=false;hp=false;HitSelf=true} @targetlocation
@@ -13,22 +13,22 @@ lightning_tick:
   Skills:
     - effect:particles{particle=glow;a=<random.1to2>;hs=0.1;vs=0.1;s=0;y=0;repeat=5;repeatInterval=2} @origin
     - effect:particles{particle=glow;a=<random.3to5>;hs=0.25;vs=0.25;s=0;y=0;repeat=10;repeatInterval=1} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=2.0;v=1;repeat=5;repeatInterval=4} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=2.0;v=1;repeat=5;repeatInterval=2} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=2.0;v=0.75;repeat=5;repeatInterval=4} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=2.0;v=0.75;repeat=5;repeatInterval=2} @origin
     - delay 10
     - sound{s=entity.frog.tongue;sc=hostile;p=1;v=0.75} @origin
-    - sound{s=entity.parrot.imitate.creeper;sc=hostile;p=2.0;v=0.75} @origin
-    - sound{s=entity.guardian.attack;sc=hostile;p=2.0;v=0.75} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=1;repeat=10;repeatInterval=1} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=1;repeat=5;repeatInterval=2;delay=11} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=1;repeat=5;repeatInterval=3;delay=21} @origin
-    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=1;repeat=3;repeatInterval=5;delay=37} @origin
+    - sound{s=entity.parrot.imitate.creeper;sc=hostile;p=2.0;v=0.65} @origin
+    - sound{s=entity.guardian.attack;sc=hostile;p=2.0;v=0.65} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=0.75;repeat=10;repeatInterval=1} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=0.75;repeat=5;repeatInterval=2;delay=11} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=0.75;repeat=5;repeatInterval=3;delay=21} @origin
+    - sound{s=entity.chicken.step;sc=hostile;p=1.8;v=0.75;repeat=3;repeatInterval=5;delay=37} @origin
     - effect:particlesphere{particle=glow;a=<random.5to8>;r=3;hs=0.25;vs=0.15;s=0;y=0;repeat=6;repeatInterval=1} @origin
     - effect:particlesphere{particle=electricSpark;a=<random.10to20>;r=2;hs=0.08;vs=0.08;s=0;y=0;repeat=6;repeatInterval=1} @origin
-    - sound{s=entity.zombie.destroy_egg;sc=hostile;p=2.0;v=0.75;repeat=10;repeatInterval=1} @origin ?targetwithin{d=2}
-    - sound{s=entity.player.hurt_freeze;sc=hostile;p=2.0;v=0.75;repeat=10;repeatInterval=1} @origin ?targetwithin{d=2}
+    - sound{s=entity.zombie.destroy_egg;sc=hostile;p=2.0;v=0.65;repeat=10;repeatInterval=1} @origin ?targetwithin{d=2}
+    - sound{s=entity.player.hurt_freeze;sc=hostile;p=2.0;v=0.65;repeat=10;repeatInterval=1} @origin ?targetwithin{d=2}
 
-    - damage{a=1.8;pi=true;pk=true;repeat=6;repeatInterval=1} @PIR{r=3} 
+    - damage{a=3.6;pi=true;pk=true;repeat=3;repeatInterval=1} @PIR{r=3} 
     - damage{a=0.75;pi=true;pk=true;repeat=3;repeatInterval=2;delay=1} @PIR{r=2}
     - damage{a=1.25;pi=true;pk=true;repeat=1;repeatInterval=3;delay=1} @PIR{r=1}
     - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}

@@ -17,6 +17,8 @@ observe:
       id: respiratis
       length: 30s
       display: <#1F88ED>Respiratis
+  #- mythicSkills:
+  #  - sound{s=entity.panda.aggressive_ambient;sc=hostile;p=0.5;v=1} @self
   - applyPotionEffects:
     - type: minecraft:dolphins_grace
       duration: 8s

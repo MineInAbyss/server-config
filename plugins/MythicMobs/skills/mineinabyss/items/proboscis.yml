@@ -1,0 +1,99 @@
+boundinglancecharge:
+  Cooldown: 0
+  Conditions:
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - aura{auraName=boundinglance;onStart=blazereapstack;duration=200;c=1;maxStacks=5;cotd=true} @self
+    - potion{t=SLOW;l=1;d=20;p=false} @Self
+    - skill{s=boundinghealready} @self
+    - skill{s=boundingdamageready} @self
+    - skill{s=boundingshieldready} @self
+    - effect:particles{p=reddust;c=#FFD700;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
+
+boundinglance:
+  Cooldown: 1
+  Conditions:
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
+    - potion{t=SLOW;l=7;d=35;p=false} @Self
+  #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
+    - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+    - delay 30
+  #  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+    - skill{s=boundingshield} @self
+    - delay 1
+    - skill{s=boundbuff} @self
+    - delay 1
+    - skill{s=boundingdamage} @self
+
+boundingdamageready:
+  Cooldown: 5
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=1} true
+  Skills:
+    - effect:particles{p=reddust;c=#FF0000;amount=40;hS=0.5;vS=1;speed=0;y=0.5}
+
+
+boundinghealready:
+  Cooldown: 5
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=3} true
+  Skills:
+    - effect:particles{p=reddust;c=#00FF00;amount=40;hS=0.5;vS=1;speed=0;y=0.5}
+
+boundingshieldready:
+  Cooldown: 5
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=5} true
+  Skills:
+    - effect:particles{p=reddust;c=#0000FF;amount=40;hS=0.5;vS=1;speed=0;y=0.5}
+
+
+
+
+
+
+
+boundingdamage:
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=1} true
+  Skills:
+    - auraremove{aura=boundinglance;stacks=1} @self
+    #- skill{s=bounding;repeat=40;repeati=5} @self
+    - potion{t=STRENGTH;d=140;l=1} @self
+    - potion{t=SWIFTNESS;d=140;l=1} @self 
+
+
+boundbuff:
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=3} true
+  Skills:
+    - auraremove{aura=boundinglance;stacks=5} @self
+    - Aura{auraName=boundingring;onTick=buffring;interval=2;duration=60} @self
+    - potion{t=SLOW;l=2;d=60;p=false} @Self
+    - delay 60
+    - particle{p=happy_villager;a=30;hs=1;vs=1;y=1.5} @PIR{r=5}
+    - potion{t=REGENERATION;d=90;l=1} @PIR{r=5}
+    - potion{t=ABSORPTION;d=140;l=1} @PIR{r=5}
+    - potion{t=REGENERATION;d=90;l=2} @self
+    - potion{t=ABSORPTION;d=1400;l=1} @self
+boundingshield:
+  Conditions:
+    - hasaurastacks{n=boundinglance;s=5} true
+  Skills:
+    - auraremove{aura=boundinglance;stacks=5} @self
+    - summon{type=bounding;amount=1;radius=0} @self
+    - skill{s=bounding;repeat=40;repeati=5} @self
+bounding:
+  Skills:
+    - effect:particlesphere{p=reddust;c=#ffffff;y=0.2;r=8;a=100} @origin
+buffring:
+  Skills:
+    - effect:particlering{p=reddust;color=#00FF00;a=2;y=0.2;r=5;points=32}
+
+
+boundingbuff:
+    - potion{t=STRENGTH;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
+    - potion{t=HASTE;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
+    - potion{t=REGENERATION;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}

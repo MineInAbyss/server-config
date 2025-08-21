@@ -1,8 +1,0 @@
-randomcritplayer:
-  Conditions:
-  Cooldown:
-  Skills:
-  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
-CritTick:
-  Skills:
-  - effect:particles{particle=crit;a=16;hs=0.3;vs=0.3;speed=0.5} @origin

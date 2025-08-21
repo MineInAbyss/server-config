@@ -11,35 +11,12 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=boot;s=3} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Charge
+  - cooldown:
+      id: treble_winds
+      length: 8s #change to 30s after testing
+      display: <dark_aqua>Treble Winds      
   - mythicSkills:
-    - boot_fly
-  itemLeftClick:
-  - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=boot;s=3} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Charge
-  - mythicSkills:
-    - boot_fly_forward
-passive:
-- match:
-  - inHand
-  every: 2s
-  run:
-  - become: parent
-  - ensure:
-      player:
-        sneaking: true
-  - mythicSkills:
-    - bootcharge
+    - treble_winds
 resourcepack:
   textures:
     layers:

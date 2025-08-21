@@ -9,3 +9,4 @@ shieldbash:
   - potion{type=SLOW;duration=80;level=2;hasParticles=false;repeat=5;repeatinterval=4} @EIR{r=3}
   - effect:particles{particle=crit;amount=15;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self
   - effect:particles{particle=dust;amount=10;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self
+  

@@ -1,21 +1,26 @@
-Husk1:
+husk1:
   Type: ZOMBIE
-  SpawnCategory: skeleton
-  Modules:
-    ThreatTable: true
+  Health: 4
+  Damage: 0
   AIGoalSelectors:
-    - clear
-  AITargetSelectors:
-    - clear
-  Health: 1
-  Damage: 0 
+    - lookatplayers
+    - randomlookaround
   Options:
-    PreventSunburn: true
+    KnockbackResistance: 100
+    Collidable: true
     Silent: true
-    PreventOtherDrops: true
-    FollowRange: 15
+    FollowRange: 4
+    Interactable: true
     MovementSpeed: 0
-    KnockbackResistance: 1.0
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  DamageModifiers:
+    - FALLING 0
+  Model:
+    Id: inbyo
+    ViewRadius: 48
+    DamageTint: true
+    Scale: 0.7
   Skills:
-  - doppleganger @NearestPlayer @self ~onSpawn
-  - suicide ~onTimer:40
+    - suicide ~onTimer:200

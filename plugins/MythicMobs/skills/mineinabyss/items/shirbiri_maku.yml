@@ -1,0 +1,10 @@
+randomcritplayer:
+  Conditions:
+  Cooldown:
+  Skills:
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - sound{s=entity.fox.bite;p=2;v=0.1} @Self #not happy with the sound yet, will be removed if we dont find a good option
+CritTick:
+  Skills:
+  - effect:particles{particle=crit;a=16;hs=0.3;vs=0.3;speed=0.5} @origin
+  - effect:particles{particle=crit;a=4;hs=0.3;vs=0.3;speed=0.5;y=1.5} @origin

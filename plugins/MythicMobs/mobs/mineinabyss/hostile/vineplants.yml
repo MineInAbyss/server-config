@@ -84,11 +84,11 @@ vineblaster:
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
 
-allyvineblaster:
+wanabushi:
   Type: SILVERFISH
   Modules:
     ThreatTable: true
-  Display: "<green>Vineblaster"
+  Display: "<green>Wanabushi"
   Faction: ally
   AITargetSelectors:
   - clear
@@ -108,7 +108,7 @@ allyvineblaster:
     PreventBlockInfection: true
     FollowRange: 25
   Model:
-    Id: vineblaster
+    Id: wanabushi
     ViewRadius: 48
     Drive: false
     DamageTint: true

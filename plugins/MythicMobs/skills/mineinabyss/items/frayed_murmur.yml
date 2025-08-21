@@ -2,11 +2,6 @@ frayed_murmur:
   Conditions:
   - inInventory
   Skills:
-  #- summon{type=Husk1;amount=1;radius=4} @self #illusion test
+  - summon{type=husk1;amount=1;radius=8;os=true} @self #illusion test
   - delay 10
-  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.3;v=<random.0.02to0.01>;repeat=5;repeatinterval=20} @origin
-  - sound{s=entity.pufferfish.death;p=0.2;v=<random.0.02to0.01>} @origin
-  - delay 10
-  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.2;v=<random.0.02to0.01>;repeat=3;repeatinterval=20} @origin
-  - delay 10
-  - sound{s=entity.cat.beg_for_food;sc=hostile;p=0.4;v=<random.0.02to0.01>;repeat=2;repeatinterval=20} @origin
+  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.01} @origin

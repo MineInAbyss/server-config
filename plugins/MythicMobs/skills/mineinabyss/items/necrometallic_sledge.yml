@@ -1,0 +1,42 @@
+hammer_smash:
+  Conditions:
+  - onground true
+  Cooldown: 3
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -30";op=true}
+  - effect:particles{particle=crit;a=80;hs=0.5;vs=0.5;speed=1} @origin
+  - effect:sound{s=entity.iron_golem.death;v=1;p=0.5} @PIR{r=20}
+  - delay 10
+  - leap{velocity=150} @forward{f=1;y=3}
+  - delay 10
+  #- onDamaged{auraName=landresist;d=20;damageMods="FALL 0.5"} @self 
+  - leap{velocity=70} @forward{f=2;y=-5}
+  - delay 12
+  - skill{s=hammer_smash_damage} @self
+  - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
+hammer_smash_damage:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - damage{a=30;ignorearmor=false} @PIR{r=2;conditions=[
+                              - playerwithin{d=2} true     ]}
+  - potion{t=POISON;d=80;l=1} @PIR{r=2;conditions=[
+                              - playerwithin{d=2} true     ]}
+  - damage{a=10;ignorearmor=false;pi=true} @PIR{r=6}
+  - potion{t=POISON;d=80} @PIR{r=6}
+  - damage{a=35;ignorearmor=false} @EIR{r=2;ignore=players}
+  - potion{t=POISON;d=80;l=1} @EIR{r=2;ignore=players}
+  - damage{a=10;ignorearmor=false;pi=true} @EIR{r=6;ignore=players}
+  - potion{t=POISON;d=80} @EIR{r=6;ignore=players}
+  - throw{velocity=0;velocityY=6} @EIR{r=5}
+  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=1;points=5;amount=10;hS=1;vS=0.5} @self
+  - effect:particles{particle=glow_squid_ink;amount=20;hS=3;vS=1;y=0.5}
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=2;points=10;amount=20;hS=1;vS=0.5} @self
+  - effect:particles{particle=sneeze;amount=100;hS=3;vS=1;y=0.5} 
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=3;points=15;amount=40;hS=1;vS=0.5} @self
+  - effect:particles{particle=spore_blossom_air;amount=20;hS=3;vS=1;y=0.5} 
+  - delay 2
+  - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=5;points=20;amount=60;hS=1;vS=0.5} @self
+  - effect:particles{particle=trial_omen;amount=25;hS=3;vS=1;y=1}

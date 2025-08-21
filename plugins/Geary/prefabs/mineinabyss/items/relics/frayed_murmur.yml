@@ -14,6 +14,10 @@ passive:
   every: 4s
   run:
   - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:frayed_murmur
   - particle:
       particle: CLOUD
       offset:
