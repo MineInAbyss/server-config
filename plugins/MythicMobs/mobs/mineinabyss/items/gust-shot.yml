@@ -1,0 +1,16 @@
+wind_impact:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Invisible: true
+    Invincible: true
+    Small: true
+ 
+  Skills:
+  - throw{velocity=14;velocityY=7} @EntitiesNearOrigin{r=4} ~onSpawn
+  - damage{a=20} @EntitiesNearOrigin{r=4} ~onSpawn
+  - damage{a=30} @EIR{r=2;conditions=[
+                              - entitywithin{d=2} true     ]} ~onSpawn
+  - suicide ~onTimer:10

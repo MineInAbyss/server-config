@@ -33,6 +33,12 @@ observe:
     - BlazeReap
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=primerstop} false
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown  
   - cooldown:
       id: Primer
       length: 1s

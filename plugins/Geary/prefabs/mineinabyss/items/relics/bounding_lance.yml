@@ -13,6 +13,12 @@ disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=shiningstop} false
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown  
   - cooldown:
       id: changestance
       length: 1s
@@ -23,24 +29,10 @@ observe:
   - become: parent
   - cooldown:
       id: boundinglance
-      length: 1s
+      length: 40s
       display: <#705160><b>Proboscis
   - mythicSkills:
     - boundinglance
-passive:
-- match:
-  - inInventory
-  every: 12s
-  run:
-  - become: parent
-  - applyPotionEffects:
-    - type: minecraft:haste
-      duration: 2s
-      amplifier: 1
-      hasParticles: false
-    - type: minecraft:strength
-      duration: 2s
-      amplifier: 1
-      hasParticles: false
+
 resourcepack:
   model: mineinabyss:item/relics/bounding_lance

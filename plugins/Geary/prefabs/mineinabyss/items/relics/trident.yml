@@ -1,5 +1,6 @@
 set.item:
   itemName: <#68CCBF><b>Aqua Tear
+  itemModel: mineinabyss:trident
   type: TRIDENT
   lore:
   - ':layer_4: Grade I Relic'
@@ -8,7 +9,7 @@ set.item:
   - <#265c55><i>It is rumored to return to the user after being thrown.
   enchantments:
     - enchant: minecraft:riptide
-      level: 1
+      level: 2
     - enchant: minecraft:impaling
       level: 5
     - enchant: minecraft:sharpness
@@ -27,6 +28,10 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Charge
+  - cooldown:
+      id: tranquilpierce
+      length: 10s
+      display: <#617B94>Tranquil Pierce
   - mythicSkills:
     - throwtrident
 passive:
@@ -38,5 +43,10 @@ passive:
   - ensure:
       player:
         sneaking: true
+      mythicConditions:
+      - hasaurastacks{n=primerstop} false
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown  
   - mythicSkills:
     - trident_charge

@@ -9,6 +9,7 @@ boundinglancecharge:
     - skill{s=boundingdamageready} @self
     - skill{s=boundingshieldready} @self
     - effect:particles{p=reddust;c=#FFD700;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
+    - sound{s=entity.bee.sting;p=0.8;v=0.5} @self
 
 boundinglance:
   Cooldown: 1
@@ -18,7 +19,7 @@ boundinglance:
     - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
     - potion{t=SLOW;l=7;d=35;p=false} @Self
   #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
-    - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+    - sound{s=block.bamboo_sapling.hit;p=0.8;v=0.5} @Self
     - delay 30
   #  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
     - skill{s=boundingshield} @self
@@ -61,8 +62,10 @@ boundingdamage:
   Skills:
     - auraremove{aura=boundinglance;stacks=1} @self
     #- skill{s=bounding;repeat=40;repeati=5} @self
+    - sound{s=block.lodestone.place;p=0.9;v=0.9} @Self
     - potion{t=STRENGTH;d=140;l=1} @self
     - potion{t=SWIFTNESS;d=140;l=1} @self 
+    - aura{auraName=shiningstop;duration=800;c=1;cotd=false} @self
 
 
 boundbuff:
@@ -73,11 +76,13 @@ boundbuff:
     - Aura{auraName=boundingring;onTick=buffring;interval=2;duration=60} @self
     - potion{t=SLOW;l=2;d=60;p=false} @Self
     - delay 60
+    - sound{s=block.lodestone.place;p=0.9;v=0.9} @Self
     - particle{p=happy_villager;a=30;hs=1;vs=1;y=1.5} @PIR{r=5}
     - potion{t=REGENERATION;d=90;l=1} @PIR{r=5}
     - potion{t=ABSORPTION;d=140;l=1} @PIR{r=5}
     - potion{t=REGENERATION;d=90;l=2} @self
     - potion{t=ABSORPTION;d=1400;l=1} @self
+    - aura{auraName=shiningstop;duration=800;c=1;cotd=false} @self
 boundingshield:
   Conditions:
     - hasaurastacks{n=boundinglance;s=5} true
@@ -85,6 +90,7 @@ boundingshield:
     - auraremove{aura=boundinglance;stacks=5} @self
     - summon{type=bounding;amount=1;radius=0} @self
     - skill{s=bounding;repeat=40;repeati=5} @self
+    - aura{auraName=shiningstop;duration=800;c=1;cotd=false} @self
 bounding:
   Skills:
     - effect:particlesphere{p=reddust;c=#ffffff;y=0.2;r=8;a=100} @origin
@@ -94,6 +100,7 @@ buffring:
 
 
 boundingbuff:
+    - sound{s=block.lodestone.place;p=0.9;v=0.9} @Self
     - potion{t=STRENGTH;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
     - potion{t=HASTE;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
     - potion{t=REGENERATION;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}

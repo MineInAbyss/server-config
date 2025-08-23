@@ -4,8 +4,10 @@ tranquil_pierce_projectile:
   - players
   Options:
     Marker: true
-    Small: false
     Invisible: true
     Invincible: true
+    HasGravity: false
+    Small: true
+ 
   Skills:
   - model{mid=tranquil_pierce_projectile;n=false} @self ~onSpawn

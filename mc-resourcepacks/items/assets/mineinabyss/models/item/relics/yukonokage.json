@@ -438,6 +438,19 @@
 		},
 		"ground": {
 			"rotation": [75, 0, 0]
+		},
+		"gui": {
+			"rotation": [-43, -13, -46],
+			"translation": [-0.75, -1.25, 0],
+			"scale": [0.53, 0.53, 0.53]
+		},
+		"head": {
+			"rotation": [0, 0, 62],
+			"translation": [2.75, -11.75, 4.5],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"translation": [1.25, 0, 0]
 		}
 	}
 }

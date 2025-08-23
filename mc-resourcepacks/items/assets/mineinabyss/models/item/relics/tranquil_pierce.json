@@ -442,6 +442,20 @@
 		"ground": {
 			"rotation": [0, 0, -73],
 			"translation": [-3.5, 0, 0]
+		},
+		"gui": {
+			"rotation": [19, 46, -64],
+			"translation": [-3, -2.25, 0],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"head": {
+			"rotation": [60, -36, 67],
+			"translation": [2.25, -17.5, 4.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [98, 67, -1],
+			"translation": [0, 3.75, -18.25]
 		}
 	},
 	"groups": [

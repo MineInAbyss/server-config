@@ -90,14 +90,17 @@ wanabushi:
     ThreatTable: true
   Display: "<green>Wanabushi"
   Faction: ally
+  AIGoalSelectors:
+  - LookAtTarget{h=true}
+  - randomstroll
   AITargetSelectors:
-  - clear
-  - monsters
-  - nearestConditionalTarget{conditions=[
+  - 0 clear
+  - 1 monsters
+  - 2 nearestConditionalTarget{conditions=[
         - entitytype PLAYER false
-      ]}
+      ]} 
   Health: 30 # change this
-  Damage: 2 # keep this 0
+  Damage: 0 # keep this 0
   Options:
     PreventSunburn: true
     AlwaysShowName: false
@@ -117,7 +120,7 @@ wanabushi:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
-    - skill:allyvineattack @Self ~onTimer:10
+    - skill:allyvineblasterattack @Self ~onTimer:10
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
     - remove{delay=280} @self ~onSpawn
