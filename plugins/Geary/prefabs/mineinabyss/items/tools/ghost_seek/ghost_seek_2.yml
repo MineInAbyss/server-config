@@ -9,22 +9,22 @@ set.item:
   equippable:
     slot: HEAD
     cameraOverlay: mineinabyss:misc/ghost_seek_overlay
-passive:
-  - match:
-      - equipped
-    every: 20s
-    run:
-      - become: parent
-      - geary:ghost_seek:
-          radii:
-            200:
-              - mythicSkills: [ ghost_seek_effect_1 ]
-            100:
-              - mythicSkills: [ ghost_seek_effect_2 ]
-            50:
-              - mythicSkills: [ ghost_seek_effect_3 ]
-            25:
-              - mythicSkills: [ ghost_seek_effect_4 ]
+#passive:
+#  - match:
+#      - equipped
+#    every: 20s
+#    run:
+#      - become: parent
+#      - geary:ghost_seek:
+#          radii:
+#            200:
+#              - mythicSkills: [ ghost_seek_effect_1 ]
+#            100:
+#              - mythicSkills: [ ghost_seek_effect_2 ]
+#            50:
+#              - mythicSkills: [ ghost_seek_effect_3 ]
+#            25:
+#              - mythicSkills: [ ghost_seek_effect_4 ]
 
 passive:
 - match:
