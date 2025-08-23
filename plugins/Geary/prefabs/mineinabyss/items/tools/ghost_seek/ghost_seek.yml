@@ -23,5 +23,25 @@ passive:
               - mythicSkills: [ ghost_seek_effect_2 ]
             25:
               - mythicSkills: [ ghost_seek_effect_3 ]
+
+passive:
+- match:
+  - inInventory
+  every: 20s
+  run:
+    - become: parent
+    - ensure:
+          inSlot:
+            slots: [ 9, 10 ]
+            item: mineinabyss:ghost_seek
+    - geary:ghost_seek:
+        radii:
+          150:
+            - mythicSkills: [ ghost_seek_effect_1 ]
+          75:
+            - mythicSkills: [ ghost_seek_effect_2 ]
+          25:
+            - mythicSkills: [ ghost_seek_effect_3 ]
+
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_on

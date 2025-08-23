@@ -13,22 +13,19 @@ prayingSkeleton_base:
     Collidable: false
     KnockbackResistance: 1
   # TODO switch to `model` skill when it's fixed (currently it can not disguise the entity in certain cases, ex. when teleporting)
-  Model:
-    Id: praying_skeleton_1
-    ViewRadius: 100
-    DamageTint: false
-    Drive: false
+
   DamageModifiers:
     - FALL 0.001
     - DROWNING 0.001
     - ENTITY_SWEEP_ATTACK 0.001
   Skills:
     # Choose a random model for this skeleton
-    #    - randomskill{skills=
-    #      [- model{modelid=praying_skeleton_1;radius=100;damagetint=false;drive=false} @self],
-    #      [- model{modelid=praying_skeleton_2;radius=100;damagetint=false;drive=false} @self],
-    #      [- model{modelid=praying_skeleton_3;radius=100;damagetint=false;drive=false} @self],
-    #      [- model{modelid=praying_skeleton_4;radius=100;damagetint=false;drive=false} @self],
-    #      [- model{modelid=praying_skeleton_5;radius=100;damagetint=false;drive=false} @self]
-    #      } @self ~onSpawn
+    #- randomskill{skills=
+    #  [- model{modelid=praying_skeleton_1;radius=100;damagetint=false;drive=false} @self],
+    #  [- model{modelid=praying_skeleton_2;radius=100;damagetint=false;drive=false} @self],
+    #  [- model{modelid=praying_skeleton_3;radius=100;damagetint=false;drive=false} @self],
+    #  [- model{modelid=praying_skeleton_4;radius=100;damagetint=false;drive=false} @self],
+    #  [- model{modelid=praying_skeleton_5;radius=100;damagetint=false;drive=false} @self]
+    #  } @self ~onSpawn
     - skill{s=displayHealth} ~onDamaged
+    - randomskill{prayskelmodel1,prayskelmodel2,prayskelmodel3,prayskelmodel4,prayskelmodel5} @self ~onSpawn

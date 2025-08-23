@@ -1,30 +1,13 @@
 set.item:
-  type: minecraft:paper
-  itemModel: mineinabyss:yunokage
-  itemName: <#617B94><b>Yūkonokage
+  type: minecraft:netherite_sword
+  itemModel: mineinabyss:yukonokage
+  itemName: <#15ABC2><b>Yukonokage
   lore:
-  - ':layer_5: Grade I Relic'
-  - <#3d59ab>Yūkonokage is a cursed scythe crafted from a forgotten relic 
-  - <#3d59ab>ore that feeds on the essence of the living. Each swing with
-  - <#3d59ab>its jagged blade rends not just flesh—but the soul itself. 
-  - <#3d59ab>With every left-click strike, the scythe harvests fragments of 
-  - <#3d59ab>its victim's spirit, storing them in the swirling obsidian crystal 
-  - <#3d59ab>embedded in its shaft. The wielder can feel the tension of each 
-  - <#3d59ab>trapped soul—whispers, wails, and pleas echo faintly with every step. 
-  - <#3d59ab>When right-clicked, the scythe unleashes the pent-up souls in a 
-  - <#3d59ab>violent burst of spectral energy, tearing through all nearby life. 
-  - <#3d59ab>The more souls stored, the greater the devastation—but each 
-  - <#3d59ab>release leaves behind a ghostly afterimage of the wielder 
-  - <#3d59ab>for a brief moment, as if a piece of their own essence was sacrificed 
-  - <#3d59ab>alongside the blast.
-observe:
-  itemLeftClick:
-  - become: parent
-  - mythicSkills:
-    - yunokage_click
-  itemRightClick:
-  - become: parent
-  - mythicSkills:
-    - yunokage_shoot
+  - ':layer_3: Grade I Relic'
+  - <#249C9C>A weapon that can tear into the fabric of the force field.
+  - <#195959><i>It is known to create crescent shaped slashes damaging
+  - <#195959><i>all organic matter that it comes into contact with.
+  unbreakable: {}
+
 resourcepack:
-  model: mineinabyss:item/relics/yunokage
+  model: mineinabyss:item/relics/yukonokage

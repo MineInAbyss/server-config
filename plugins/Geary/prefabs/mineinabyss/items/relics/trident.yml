@@ -30,7 +30,7 @@ observe:
         text: <red>Out of Charge
   - cooldown:
       id: tranquilpierce
-      length: 10s
+      length: 15s
       display: <#617B94>Tranquil Pierce
   - mythicSkills:
     - throwtrident
@@ -41,12 +41,13 @@ passive:
   run:
   - become: parent
   - ensure:
-      player:
-        sneaking: true
-      mythicConditions:
+    mythicConditions:
       - hasaurastacks{n=primerstop} false
     onFail:
     - sendActionBar:
-        text: <red>In Cooldown  
+        text: <red>In Cooldown
+  - ensure:
+      player:
+        sneaking: true  
   - mythicSkills:
     - trident_charge

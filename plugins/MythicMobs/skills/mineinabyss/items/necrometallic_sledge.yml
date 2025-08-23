@@ -8,6 +8,7 @@ hammer_smash:
   - effect:sound{s=entity.iron_golem.death;v=1;p=0.5} @PIR{r=20}
   - delay 10
   - leap{velocity=150} @forward{f=1;y=3}
+  - hunger{a=2} @self
   - delay 10
   #- onDamaged{auraName=landresist;d=20;damageMods="FALL 0.5"} @self 
   - leap{velocity=70} @forward{f=2;y=-5}

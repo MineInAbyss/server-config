@@ -19,7 +19,7 @@ observe:
         text: <red>Out of Experience
   - cooldown:
       id: petrifying_thud
-      length: 8s #change to 44s after testing
+      length: 44s #change to 44s after testing
       display: <#CCDADB>Petrifying Thud
   - mythicSkills:
     - petrifying_thud

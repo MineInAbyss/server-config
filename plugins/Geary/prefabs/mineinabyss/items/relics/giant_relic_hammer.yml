@@ -21,11 +21,6 @@ observe:
       id: hammer_smash
       length: 35s
       display: <#79EDE2>Seismic Smash
-  - climb:stamina_modifiers:
-    modifiers:
-      - type: STAMINA
-        modifiers: -1
-        operation: ADD    
   - mythicSkills:
     - hammer_smash
 resourcepack:

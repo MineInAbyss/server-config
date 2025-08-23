@@ -20,7 +20,6 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - EnchantingLevel{l=>2} true
       - hasaurastacks{n=blazereap;s=5} true
     onFail:
     - sendActionBar:

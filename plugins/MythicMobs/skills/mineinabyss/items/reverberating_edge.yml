@@ -1,0 +1,6 @@
+reverberating_edge_stack:
+  Cooldown: 
+  Conditions:
+  Skills:
+    - aura{auraName=reverberatingedgestack;duration=100;c=1;maxStacks=10;cotd=false} @self
+    - effect:particles{particle=crit;amount=20;hS=0.5;vS=1;speed=0;y=0.5}

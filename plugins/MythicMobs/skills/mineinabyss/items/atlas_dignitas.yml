@@ -1,0 +1,18 @@
+atlas_dignitas:
+  Cooldown: 
+  Conditions:
+    - FoodLevel{a=<4} true
+  Skills:
+  - skill{atlas_haste} @self
+  - effect:particles{particle=crit;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+  
+atlas_haste:
+  Cooldown: 
+  Conditions:
+    - FoodLevel{a=<4} true
+    - holding{m=NETHERITE_PICKAXE} true
+  Skills:
+  - hunger{a=1} @self
+  - potion{t=HASTE;d=60;l=2} @self
+  - delay 50
+  - skill{atlas_haste} @self

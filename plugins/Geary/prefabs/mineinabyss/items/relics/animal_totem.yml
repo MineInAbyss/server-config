@@ -33,6 +33,8 @@ passive:
       duration: 3s
       amplifier: 1
       hasParticles: false
+  - mythicSkills:
+    - sudden_pinch_1
 resourcepack:
   textures:
     layers:

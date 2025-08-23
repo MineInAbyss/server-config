@@ -26,7 +26,6 @@ BlazeReap:
     - hasaurastacks{n=blazereap;s=5} true
   Cooldown: 1
   Skills:
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -100";op=true}
     - auraremove{aura=blazereap;stacks=3} @self
     - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
     - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self

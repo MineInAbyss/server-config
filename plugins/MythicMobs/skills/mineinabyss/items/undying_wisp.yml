@@ -21,8 +21,8 @@ bone_impact:
     - shieldbreak{duration=150} 
     - delay 1
     #- blackscreen{d=40} @EntitiesNearOrigin{r=2}
-    - spin{duration=60;velocity=0} @EntitiesNearOrigin{r=2}
-    - potion{t=BLINDNESS;d=100;l=0.5} @EntitiesNearOrigin{r=5}
+    - spin{duration=60;velocity=0} @EntitiesNearOrigin{r=2} #functions like a stun
+    - potion{t=BLINDNESS;d=100;l=1} @EntitiesNearOrigin{r=5}
     - damage{a=6;ia=true} @EntitiesNearOrigin{r=2}
 
 

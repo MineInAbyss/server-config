@@ -3,7 +3,7 @@ petrifying_thud:
   Conditions:
   Skills:
     - potion{t=SLOW;d=80;l=3} @Self
-    - sound{s=entity.fox.screech;p=10;v=0.4} @Self #unsure about sound design
+    - sound{s=entity.fox.screech;p=10;v=0.4} @Self
     - sound{s=entity.fox.screech;p=9;v=0.4} @Self
     - sound{s=entity.fox.screech;p=8;v=0.4} @Self
     - particle{p=reddust;c=#C5C6D0;amount=20;hS=0.3;vS=0.3;speed=0;y=1} @self
@@ -18,9 +18,9 @@ petrify_impact:
     - delay 1
     - effect:particlering{p=reddust;c=#C5C6D0;a=1;y=0.1;r=7;points=64} #colors not working as intended
     - effect:particlering{p=reddust;c=#C5C6D0;a=1;y=0.2;r=4;points=32}
-    - potion{t=SLOW;d=80;l=10} @PIR{r=4}
-    - potion{t=SLOW;d=80;l=10} @Self
-    - potion{t=SLOW;d=80;l=10} @EntitiesNearOrigin{r=4}
-    - potion{t=SLOW;d=80;l=3} @PIR{r=7}
-    - potion{t=SLOW;d=80;l=3} @Self
-    - potion{t=SLOW;d=80;l=3} @EntitiesNearOrigin{r=7}
+    - potion{t=SLOW;d=100;l=10} @PIR{r=4}
+    - potion{t=SLOW;d=100;l=10} @Self
+    - potion{t=SLOW;d=100;l=10} @EntitiesNearOrigin{r=4}
+    - potion{t=SLOW;d=100;l=3} @PIR{r=7}
+    - potion{t=SLOW;d=100;l=3} @Self
+    - potion{t=SLOW;d=100;l=3} @EntitiesNearOrigin{r=7}

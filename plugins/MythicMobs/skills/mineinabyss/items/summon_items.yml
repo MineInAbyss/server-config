@@ -38,7 +38,7 @@ avineblaster_tick:
 
 
 allyvineblasterattack:
-  Cooldown: 1.2
+  Cooldown:
   Conditions:
     - offgcd true
     - targetwithin{d=8} true
@@ -56,6 +56,6 @@ allyvineblasterattack:
 
 avineblaster_impact:
   Skills:
-    - damage{a=15}
+    - damage{a=18}
     - potion{type=POISON;duration=60;level=2}
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2} @target

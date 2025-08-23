@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:netherite_sword
+  itemModel: mineinabyss:reverberating_edge
+  itemName: <#15ABC2><b>Reverberating Edge
+  lore:
+  - ':layer_3: Grade I Relic'
+  - <#249C9C>A weapon that can tear into the fabric of the force field.
+  - <#195959><i>It is known to create crescent shaped slashes damaging
+  - <#195959><i>all organic matter that it comes into contact with.
+  unbreakable: {}
+observe:
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - onHit true
+    onFail:
+    - sendActionBar:
+        text: <red>You missed
+  - cooldown:
+      id: reverberatingedge
+      length: 0.5s
+      display: <#15ABC2>Reverberating Edge
+  - mythicSkills:
+    - reverberating_edge_stack
+resourcepack:
+  model: mineinabyss:item/relics/reverberating_edge
