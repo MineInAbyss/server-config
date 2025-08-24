@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <#CCDADB><b>Soul-aiming Light
+  itemName: <#CCDADB>Soul-aiming Light
   itemModel: mineinabyss:soul-aiming_light
   lore:
   - ':layer_5: Grade I Relic'
@@ -21,8 +21,28 @@ observe:
       id: aiming_light
       length: 8s #change to 30-40s after testing
       display: <#CCDADB>Aiming Light
-  - mythicSkills:
-    - aiming_light
+  - applyPotionEffects:
+    - type: minecraft:glowing
+      duration: 10s
+      amplifier: 1
+      hasParticles: false
+    - type: minecraft:blindness
+      duration: 1s
+      amplifier: 1
+      hasParticles: false
+  - geary:shulker_bullet:
+      amount: 3
+      damage: 15
+      radius: 20
+      homing: true
+      speed: 2
+      duration: 40
+      effects:
+        - type: minecraft:glowing
+          duration: 5.0t
+        - type: minecraft:blindness
+          duration: 3.0t
+          amplifier: 1
 resourcepack:
   textures:
     layers:

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemModel: mineinabyss:vine_charm
-  itemName: <#51C947><b>Ivy Call
+  itemName: <#51C947>Wanabushi
   lore:
   - ':layer_1::layer_2: Grade III Relic'
   - <gold>An organic talisman formed from plant parts and relics.
@@ -19,7 +19,7 @@ observe:
   - cooldown:
       id: vinecharm
       length: 40s
-      display: <#51C947>Ivy Call
+      display: <#51C947>Wanabushi
   - mythicSkills:
     - vinecharm
 resourcepack:

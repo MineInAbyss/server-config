@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <#CCDADB><b>Verglas Breath
+  itemName: <#CCDADB><b>Shiver Mist
   itemModel: mineinabyss:frost_staff
   lore:
   - ':layer_5: Grade I Relic'
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: Frost_Beam
       length: 38s
-      display: <#CCDADB>Verglas Breath
+      display: <#CCDADB>Shiver Mist
   - mythicSkills:
     - Frost_Beam
 resourcepack:

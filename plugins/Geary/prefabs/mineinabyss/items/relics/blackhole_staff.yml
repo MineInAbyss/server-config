@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <#302D2D><b>Event Horizon
+  itemName: <#302D2D><b>Subtle Pull
   itemModel: mineinabyss:blackhole_staff
   lore:
   - ':layer_5: Grade I Relic'
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: blackhole
       length: 100s
-      display: <#302D2D><b>Event Horizon
+      display: <#302D2D><b>Subtle Pull
   - mythicSkills:
     - blackhole
 resourcepack:

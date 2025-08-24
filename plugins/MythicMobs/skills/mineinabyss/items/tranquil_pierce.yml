@@ -6,7 +6,8 @@ trident_charge:
   Skills:
   - aura{auraName=trident;onStart=tridentstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
   - skill{s=tridentready} @self
-  - effect:particles{particle=wax_off;amount=14;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{particle=wax_off;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{particle=reddust;color=#362624;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
 tridentstack:
   Conditions:
   Skills:

@@ -52,7 +52,7 @@ livingcballs:
   Conditions:
   Cooldown: 1
   Skills:
-  - potion{t=SLOW;l=7;d=50;p=false} @Self
+  - potion{t=SLOW;l=3;d=50;p=false} @Self
   #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
   - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
   - delay 50
@@ -105,6 +105,6 @@ pgcrystalHit:
   - effect:sound{s=block.copper_bulb.break;volume=0.8;pitch=1.9} @origin
   - effect:particlesphere{p=reddust;color=#FF4255;amount=60;radius=1;size=1} @origin
   - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=1.6} @origin
-  - damage{a=7;preventknockback=true;pi=true} @EntitiesNearOrigin{r=2.2}
+  - damage{a=10;preventknockback=true;pi=true} @EntitiesNearOrigin{r=2.2}
   #- damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
   - sound{s=entity.player.attack.crit;volume=0.8;pitch=0.6;cooldown=1} @origin

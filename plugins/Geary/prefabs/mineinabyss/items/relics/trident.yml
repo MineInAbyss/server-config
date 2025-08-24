@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#68CCBF><b>Aqua Tear
+  itemName: <#68CCBF><b>Tranquil Pierce
   itemModel: mineinabyss:trident
   type: TRIDENT
   lore:
@@ -40,12 +40,6 @@ passive:
   every: 1s
   run:
   - become: parent
-  - ensure:
-    mythicConditions:
-      - hasaurastacks{n=primerstop} false
-    onFail:
-    - sendActionBar:
-        text: <red>In Cooldown
   - ensure:
       player:
         sneaking: true  

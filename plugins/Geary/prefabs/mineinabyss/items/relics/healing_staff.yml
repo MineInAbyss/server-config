@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <#BF2CB1>Panacea
+  itemName: <#BF2CB1>Symbiotic Water-shrooms
   itemModel: mineinabyss:healing_staff
   lore:
   - ':layer_4: Grade III Relic'
@@ -19,7 +19,7 @@ observe:
   - cooldown:
       id: healing_staff
       length: 35s
-      display: <#BF2CB1>Panacea
+      display: <#BF2CB1>Symbiotic Water-shrooms
   - mythicSkills:
     - healing_staff
 resourcepack:

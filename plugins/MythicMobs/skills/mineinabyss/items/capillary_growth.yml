@@ -21,7 +21,3 @@ capillary_needle_end:
   Skills:
   - auraremove{aura=capillary_extend_aura} @self
   - auraremove{aura=capillary_needle_aura} @target
-
-capillary_needle_aura1:
-  Skills:
-  - summon{type=CAPILLARY_NEEDLE;amount=1;radius=1} @self

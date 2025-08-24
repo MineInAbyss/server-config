@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <dark_aqua>Moniscelti
+  itemName: <dark_aqua>Dew-cress Knots
   itemModel: mineinabyss:moniscelti
   lore:
   - ':layer_5: Grade IV Relic'
@@ -19,7 +19,7 @@ observe:
   - cooldown:
       id: moniscelti
       length: 44s
-      display: <dark_aqua>Moniscelti
+      display: <dark_aqua>Dew-cress Knots
   - mythicSkills:
     - moniscelti
 resourcepack:

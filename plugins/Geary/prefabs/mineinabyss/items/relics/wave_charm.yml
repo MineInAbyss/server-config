@@ -1,5 +1,5 @@
 set.item:
-  itemName: <dark_aqua>Tidal Dew
+  itemName: <dark_aqua>Tidal Spout
   type: PAPER
   itemModel: mineinabyss:wave_charm
   lore:
@@ -19,7 +19,7 @@ observe:
   - cooldown:
       id: tidalwave
       length: 20s
-      display: <dark_aqua>Tiding Wave
+      display: <dark_aqua>Tidal Spout
   - mythicSkills:
     - Tidal_Wave
 resourcepack:

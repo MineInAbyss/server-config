@@ -1,24 +1,24 @@
 prayskelmodel1:
 skill:
-- model {mid=praying_skeleton_1;n=false;tint=false;radius=100} @self ~onSpawn
-- model {mid=praying_skeleton_1;n=false;tint=false;radius=100} @self ~onLoad
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_1;n=false;tint=false;radius=100} @self ~onSpawn
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_1;n=false;tint=false;radius=100} @self ~onLoad
 
 prayskelmodel2:
 skill:
-- model {mid=praying_skeleton_2;n=false;tint=false;radius=100} @self ~onSpawn
-- model {mid=praying_skeleton_2;n=false;tint=false;radius=100} @self ~onLoad
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_2;n=false;tint=false;radius=100} @self ~onSpawn
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_2;n=false;tint=false;radius=100} @self ~onLoad
 
 prayskelmodel3:
 skill:
-- model {mid=praying_skeleton_3;n=false;tint=false;radius=100} @self ~onSpawn
-- model {mid=praying_skeleton_3;n=false;tint=false;radius=100} @self ~onLoad
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_3;n=false;tint=false;radius=100} @self ~onSpawn
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_3;n=false;tint=false;radius=100} @self ~onLoad
 
 prayskelmodel4:
 skill:
-- model {mid=praying_skeleton_4;n=false;tint=false;radius=100} @self ~onSpawn
-- model {mid=praying_skeleton_4;n=false;tint=false;radius=100} @self ~onLoad
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_4;n=false;tint=false;radius=100} @self ~onSpawn
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_4;n=false;tint=false;radius=100} @self ~onLoad
 
 prayskelmodel5:
 skill:
-- model {mid=praying_skeleton_5;n=false;tint=false;radius=100} @self ~onSpawn
-- model {mid=praying_skeleton_5;n=false;tint=false;radius=100} @self ~onLoad
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_5;n=false;tint=false;radius=100} @self ~onSpawn
+- swapmodel{mid=praying_skeleton_1;nid=praying_skeleton_5;n=false;tint=false;radius=100} @self ~onLoad

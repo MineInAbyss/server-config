@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:paper
-  itemName: <#CCDADB><b>Petrifying Stone
+  itemName: <#CCDADB>Petrifying Stone
   itemModel: mineinabyss:petrifying_stone
   lore:
-  - ':layer_5: Grade I Relic'
-  - <#A0ACAD>A long frail pole carved from one of the
-  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
-  - <#7B898A><i>It has the ability to flash-freeze air
-  - <#7B898A><i>which freezes all organic matter it touches.
+  - ':layer_1: Grade III Relic'
+  - <#A0ACAD>A foreign composer once introduced this Relic into his orchestra.
+  - <#A0ACAD>Shortly after, several of his woodwinds quit.
+  - <#7B898A><i>Active ability. Right click to slow everything
+  - <#7B898A><i>within a 7 block radius.
 observe:
   itemRightClick:
   - become: parent
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: petrifying_thud
       length: 44s #change to 44s after testing
-      display: <#CCDADB>Petrifying Thud
+      display: <#CCDADB>Petrifying Stone
   - mythicSkills:
     - petrifying_thud
 resourcepack:

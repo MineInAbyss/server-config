@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:netherite_sword
   itemModel: mineinabyss:giant_relic_sword
-  itemName: <#15ABC2><b>Crescent Blade
+  itemName: <#15ABC2><b>Crescent Hatchet
   lore:
   - ':layer_3: Grade I Relic'
   - <#249C9C>A weapon that can tear into the fabric of the force field.
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: cyanslash
       length: 2s
-      display: <#15ABC2>Crescent
+      display: <#15ABC2>Crescent Hatchet
   - mythicSkills:
     - Cyan_Slash
 resourcepack:

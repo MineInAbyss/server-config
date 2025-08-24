@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#1F88ED>Respiratis
+  itemName: <#1F88ED>Morinaut Shell
   type: PAPER
   itemModel: mineinabyss:respiratis
   lore:
@@ -15,12 +15,11 @@ observe:
   - become: parent
   - cooldown:
       id: respiratis
-      length: 30s
-      display: <#1F88ED>Respiratis
+      length: 35s
+      display: <#1F88ED>Morinaut Shell
   #- mythicSkills:
   #  - sound{s=entity.panda.aggressive_ambient;sc=hostile;p=0.5;v=1} @self
   - applyPotionEffects:
     - type: minecraft:dolphins_grace
       duration: 8s
-      amplifier: 1
       hasParticles: false

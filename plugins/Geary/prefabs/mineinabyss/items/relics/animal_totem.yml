@@ -1,12 +1,13 @@
 set.item:
-  itemName: <#88D481>Fright Instinct
+  itemName: <#88D481>Sudden Pinch
   type: PAPER
   itemModel: mineinabyss:animal_totem
   lore:
-  - ':layer_1: Grade IV Relic'
-  - <gold>A mysterious totem calling upon the desire
-  - <gold>to survive to escape from predators.
-  - <#D2D489><i>It grants the wearer adrenaline when used.
+  - ':layer_1::layer_2: Grade IV Relic'
+  - <gold>Stories have been passed around about a Cave Raider who used this 
+  - <gold>Relic to keep himself constantly awake through his expeditions.
+  - <#D2D489><i>Passive ability. Grants a short speed
+  - <#D2D489><i>buff when equipped in a passive slot.
 disableItemInteractions: {}
 passive:
 - match:

@@ -23,7 +23,8 @@ bone_impact:
     #- blackscreen{d=40} @EntitiesNearOrigin{r=2}
     - spin{duration=60;velocity=0} @EntitiesNearOrigin{r=2} #functions like a stun
     - potion{t=BLINDNESS;d=100;l=1} @EntitiesNearOrigin{r=5}
-    - damage{a=6;ia=true} @EntitiesNearOrigin{r=2}
+    - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
+    - damage{a=15;ignorearmor=false} @EntitiesNearOrigin{r=2;ignore=players}
 
 
 BB_tick:

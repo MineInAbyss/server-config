@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:paper
-  itemName: <#616161>Grave Reach
+  itemName: <#616161>Buddstone Tap
   itemModel: mineinabyss:void_charm
   lore:
   - ':layer_5: Grade II Relic'
@@ -19,7 +19,7 @@ observe:
   - cooldown:
       id: shadowball
       length: 18s
-      display: <#616161>Deaths Knock
+      display: <#616161>Buddstone Tap
   - mythicSkills:
     - livingcballs
 resourcepack:

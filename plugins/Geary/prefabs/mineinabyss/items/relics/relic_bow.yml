@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:bow
   itemModel: mineinabyss:relic_bow
-  itemName: <#617B94><b>Averting Barrage
+  itemName: <#617B94><b>Breeze Piercer
   lore:
   - ':layer_2: Grade I Relic'
   - <#36526E>A bow with the mysterious ability to sense danger
@@ -22,7 +22,7 @@ observe:
   - cooldown:
       id: Backstep
       length: 20s
-      display: <#617B94>Averting Step
+      display: <#617B94>Breeze Piercer
   - mythicSkills:
     - Backstep
 resourcepack:

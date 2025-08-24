@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#976d5c>Propulsion Charm
+  itemName: <#976d5c>Treble Winds
   type: minecraft:paper
   itemModel: mineinabyss:relic_boots
   lore:
@@ -13,7 +13,7 @@ observe:
   - become: parent
   - cooldown:
       id: treble_winds
-      length: 8s #change to 30s after testing
+      length: 30s #change to 30s after testing
       display: <dark_aqua>Treble Winds      
   - mythicSkills:
     - treble_winds

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:netherite_axe
   itemModel: mineinabyss:giant_relic_hammer
-  itemName: <#79EDE2><b>Seismic Sledge
+  itemName: <#79EDE2><b>Necrometallic Sledge
   lore:
   - ':layer_3: Grade I Relic'
   - <#4A8781>Moulded from rocks which used to float in the Great Fault.
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: hammer_smash
       length: 35s
-      display: <#79EDE2>Seismic Smash
+      display: <#79EDE2>Necrometallic Sledge
   - mythicSkills:
     - hammer_smash
 resourcepack:

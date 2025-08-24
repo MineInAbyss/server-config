@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#88D481>Verdau Effax
+  itemName: <#88D481>Gold-mending Wedge
   type: PAPER
   itemModel: mineinabyss:vverdaueffax
   lore:
@@ -20,7 +20,7 @@ passive:
   - cooldown:
       id: Verdau Effax
       length: 600s
-      display: <#88D481>Absorb
+      display: <#88D481>Gold-mend
   - mythicSkills:
     - verdaueffax
 resourcepack:

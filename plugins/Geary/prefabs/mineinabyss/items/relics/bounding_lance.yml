@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#705160><b>Proboscis
+  itemName: <#705160><b>Shining Pike
   type: minecraft:netherite_sword
   itemModel: mineinabyss:bounding_lance
   lore:
@@ -15,7 +15,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - hasaurastacks{n=shiningstop} false
+      - hasaurastacks{n=shiningstop;s=1} false
     onFail:
     - sendActionBar:
         text: <red>In Cooldown  

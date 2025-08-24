@@ -34,4 +34,4 @@ prayingSkeleton_base:
     #  [- model{modelid=praying_skeleton_5;radius=100;damagetint=false;drive=false} @self]
     #  } @self ~onSpawn
     - skill{s=displayHealth} ~onDamaged
-    #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onSpawn
+    - randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onSpawn

@@ -3,16 +3,16 @@ set.item:
   itemModel: mineinabyss:atlas_dignitas
   itemName: <#617B94><b>Atlas Dignitas
   lore:
-  - ':layer_4: Grade I Relic'
-  - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
-  - <#C6CC8A>which causes ongoing explosions
-  - <#C6CC8A>on whatever it is struck on.
-  - <#948E61><i>Used to create powerful explosions.
+  - ':layer_3: Grade I Relic'
+  - <#C6CC8A>This Relic has found success in the mining, construction
+  - <#C6CC8A>and physical therapy industries, strangely enough.
+  - <#948E61><i>Active ability. On right click starts to consume
+  - <#948E61><i> food in exchange of a mining speed buff.
   enchantments:
     - enchant: minecraft:silk_touch
       level: 1
     - enchant: minecraft:efficiency
-      level: 7
+      level: 6
   enchantable: 0
   unbreakable: {}
 observe:
