@@ -6,6 +6,7 @@ set.item:
   itemModel: mineinabyss:carved_jungle_log
 resourcepack:
   parentModel: block/cube_column
+  model: mineinabyss:block/logs/carved_jungle_log
   textures:
     variables:
       side: mineinabyss:block/logs/carved_jungle_log

@@ -6,6 +6,7 @@ set.item:
   itemModel: mineinabyss:carved_crimson_stem
 resourcepack:
   parentModel: block/cube_column
+  model: mineinabyss:block/logs/carved_crimson_stem
   textures:
     variables:
       side: mineinabyss:block/logs/carved_crimson_stem
