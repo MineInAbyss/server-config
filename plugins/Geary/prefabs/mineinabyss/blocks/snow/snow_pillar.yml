@@ -5,6 +5,7 @@ set.item:
   itemModel: mineinabyss:snow_pillar
 resourcepack:
   parentModel: block/cube_column
+  model: "mineinabyss:block/snow/snow_pillar"
   textures:
     variables:
       side: mineinabyss:block/snow/snow_pillar

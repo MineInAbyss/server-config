@@ -5,6 +5,7 @@ set.item:
   itemModel: mineinabyss:cut_diorite_pillar
 resourcepack:
   parentModel: block/cube_column
+  model: mineinabyss:block/building/cut_diorite_pillar
   textures:
     variables:
       side: mineinabyss:block/building/cut_diorite_pillar

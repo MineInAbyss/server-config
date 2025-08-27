@@ -5,6 +5,7 @@ set.item:
   itemModel: mineinabyss:chiseled_packed_ice
 resourcepack:
   parentModel: block/cube_all
+  model: "mineinabyss:block/snow/chiseled_packed_ice"
   textures:
     variables:
       all: mineinabyss:block/snow/chiseled_packed_ice

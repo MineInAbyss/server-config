@@ -7,6 +7,7 @@ set.item:
   itemModel: mineinabyss:charcoal_sand_ore
 resourcepack:
   parentModel: block/cube_all
+  model: mineinabyss:block/ores/charcoal_sand_ore
   textures:
     variables:
       all: mineinabyss:block/ores/charcoal_sand_ore
