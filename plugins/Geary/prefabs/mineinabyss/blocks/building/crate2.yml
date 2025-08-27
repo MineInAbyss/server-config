@@ -6,7 +6,6 @@ set.item:
   itemModel: mineinabyss:crate2
 resourcepack:
   parentModel: block/cube_all
-  model: mineinabyss:block/building/crate2
   textures:
     variables:
       all: mineinabyss:block/building/crate2
