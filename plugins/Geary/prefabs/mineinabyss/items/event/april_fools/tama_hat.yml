@@ -15,7 +15,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - haspermission{p=hmccosmetics.hat.tama_hat} true
+      - haspermission{p=hmccosmetics.hat.tama_hat} false
     onFail:
     - sendActionBar:
         text: <#454A46>You already have this cosmetic
