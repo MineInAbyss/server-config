@@ -1,6 +1,6 @@
 spawnDelay: 5
 worldName: "world"
-clearSpawnsOlderThan: 1d
+clearSpawnsOlderThan: 4h
 sectionsConfig:
   l1s0:
     entry:

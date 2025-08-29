@@ -5,11 +5,11 @@
 ghost_seek_effect_1:
   Skills:
     - sound{s=mineinabyss:item.ghost_seek_1;sc=master;volume=1.5} @self
-    - effect:particles{particle=redstone;color=#9F294C;amount=6;hS=0.5;vS=0.5;y=1} @self
+    - effect:particles{particle=redstone;color=#000435;amount=6;hS=0.5;vS=0.5;y=1} @self
 ghost_seek_effect_2:
   Skills:
     - sound{s=mineinabyss:item.ghost_seek_2;sc=master;volume=1.5} @self
-    - effect:particles{particle=redstone;color=#D86631;amount=8;hS=0.5;vS=0.5;y=1} @self
+    - effect:particles{particle=redstone;color=#5B62A5;amount=8;hS=0.5;vS=0.5;y=1} @self
 ghost_seek_effect_3:
   Skills:
     - sound{s=mineinabyss:item.ghost_seek_3;sc=master;volume=1.5} @self
