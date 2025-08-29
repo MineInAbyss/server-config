@@ -167,7 +167,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>100:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 100
     cosmetic: feather_hat_blue
@@ -195,7 +195,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>100:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 100
     cosmetic: feather_hat_black
@@ -223,7 +223,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 80
     cosmetic: agile_hat_black
@@ -251,7 +251,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 80
     cosmetic: agile_hat_green
@@ -279,7 +279,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>60:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 60
     cosmetic: ocean_hat
@@ -307,7 +307,7 @@ items:
         - "<red>Locked</red> <white>|</white> <gold>100:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Try</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
-    type: cosmetic
+    type: mia_cosmetic
     currency: orth_coin
     cost: 100
     cosmetic: detchuanga_hat
