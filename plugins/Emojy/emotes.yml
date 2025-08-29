@@ -578,9 +578,13 @@ emotes:
   - id: guild_search_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_search_menu.png
+    height: 256
+    ascent: -32
   - id: guild_name_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_name_menu.png
+    height: 256
+    ascent: -32
   - id: guild_list_menu
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_list_menu.png
@@ -705,8 +709,8 @@ emotes:
     height: 7
     ascent: 7
   - id: orthmap
-    texture: mineinabyss:ui/orth_map.png
     font: mineinabyss:orth_map
+    texture: mineinabyss:ui/orth_map.png
     height: 30
     ascent: 30
     bitmapWidth: 2
