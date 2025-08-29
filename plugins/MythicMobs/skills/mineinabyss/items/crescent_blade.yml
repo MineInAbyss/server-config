@@ -24,34 +24,29 @@ crescent_slash_2:
     - hasaurastacks{n=crescentprimer;s=3to4} true
   Skills:
   - auraremove{aura=crescentprimer;stacks=3} @self
-  - randomskill{skills=slash_1,slash_2}
-  - delay 1
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_2;v=6;i=1;hR=1.5;vR=1.5;mr=5;hnp=true;hp=true;hO=0;sE=false;sB=false;d=100;hs=true;hfs=1} @forward{f=1}
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_2;v=6;i=1;hR=1.5;vR=1.5;mr=5;hnp=true;hp=true;hO=0;sE=false;sB=false;d=100;hs=true;hfs=1} @targetlocation
 
 crescent_slash_3:
   Conditions:
     - hasaurastacks{n=crescentprimer;s=5to6} true
   Skills:
   - auraremove{aura=crescentprimer;stacks=5} @self
-  - randomskill{skills=slash_1,slash_2}
-  - delay 1
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=7;i=1;hR=1.5;vR=1.5;mr=15;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @forward{f=1}
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=7;i=1;hR=1.5;vR=1.5;mr=15;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @targetlocation
 
 crescent_slash_4:
   Conditions:
     - hasaurastacks{n=crescentprimer;s=>7} true
   Skills:
-  - auraremove{aura=crescentprimer;stacks=10} @self
-  - randomskill{skills=slash_1,slash_2}
   - skill{s=crescent_debuff}
   - delay 1
+  - auraremove{aura=crescentprimer;stacks=10} @self
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=8;i=1;hR=1.5;vR=1.5;mr=25;hnp=true;hp=true;hO=0;sE=false;sB=false;d=300;hs=true;hfs=1} @forward{f=1}
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=8;i=1;hR=1.5;vR=1.5;mr=25;hnp=true;hp=true;hO=0;sE=false;sB=false;d=300;hs=true;hfs=1} @targetlocation
 
 crescent_debuff:
   Conditions:
@@ -66,7 +61,6 @@ crescent_debuff:
 
 slash_1:
   Conditions:
-    - hasaurastacks{n=crescentprimer;s=3} true
   Skills:
   - sound{s=entity.player.attack.sweep;volume=0.7;pitch=1.6} @self # Quick sword slash
   - sound{s=block.water.splash;volume=0.6;pitch=1.4} @self         # Small water splash
@@ -75,7 +69,6 @@ slash_1:
 
 slash_2:
   Conditions:
-    - hasaurastacks{n=crescentprimer;s=5} true
   Skills:
   - sound{s=entity.player.attack.sweep;volume=0.7;pitch=1.6} @self # Quick sword slash
   - sound{s=block.water.splash;volume=0.6;pitch=1.4} @self         # Small water splash
@@ -104,17 +97,15 @@ crescent_primer:
     - hasaurastacks{n=crescentstop;s=1} false
   Skills:
   - aura{auraName=crescentprimer;onStart=crescent_start;duration=100;c=1;maxStacks=10;cotd=true} @self
-  - skill{s=crescent_slash_1_charged} @self
-  - skill{s=crescent_slash_2_charged} @self
-  - skill{s=crescent_slash_3_charged} @self
-  - skill{s=crescent_slash_4_charged} @self
-
-crescent_start:
-  Cooldown:
-  Conditions:
-  Skills:
-  - sound{s=item.axe.strip;p=0.4;v=0.3} @self
+  - sound{s=item.axe.strip;p=0.4;v=0.5} @self
   - effect:particles{p=enchant;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
+  - skill{s=crescent_slash_1_charged} @self
+  - delay 1
+  - skill{s=crescent_slash_2_charged} @self
+  - delay 1
+  - skill{s=crescent_slash_3_charged} @self
+  - delay 1
+  - skill{s=crescent_slash_4_charged} @self
 
 crescent_slash_1_charged:
   Cooldown: 5

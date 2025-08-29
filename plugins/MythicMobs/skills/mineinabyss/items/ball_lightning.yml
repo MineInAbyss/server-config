@@ -29,12 +29,12 @@ lightning_tick:
     - sound{s=entity.player.hurt_freeze;sc=hostile;p=2.0;v=0.65;repeat=10;repeatInterval=1} @origin ?targetwithin{d=2}
 
     - damage{a=3.6;pi=true;pk=true;repeat=3;repeatInterval=1} @PIR{r=3} 
-    - damage{a=0.75;pi=true;pk=true;repeat=3;repeatInterval=2;delay=1} @PIR{r=2}
+    - damage{a=1;pi=true;pk=true;repeat=3;repeatInterval=2;delay=1} @PIR{r=2}
     - damage{a=1.25;pi=true;pk=true;repeat=1;repeatInterval=3;delay=1} @PIR{r=1}
     - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}
     - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @PIR{r=2}
     - damage{a=0.9;pi=true;pk=true;repeat=12;repeatInterval=1} @EntitiesNearOrigin{r=3}
-    - damage{a=0.75;pi=true;pk=true;repeat=3;repeatInterval=2;delay=1} @EntitiesNearOrigin{r=2}
-    - damage{a=1.25;pi=true;pk=true;repeat=1;repeatInterval=3;delay=1} @EntitiesNearOrigin{r=1}
+    - damage{a=1;pi=true;pk=true;repeat=3;repeatInterval=2;delay=1} @EntitiesNearOrigin{r=2}
+    - damage{a=1.5;pi=true;pk=true;repeat=1;repeatInterval=3;delay=1} @EntitiesNearOrigin{r=1}
     - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EntitiesNearOrigin{r=2}
     - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @EntitiesNearOrigin{r=2}

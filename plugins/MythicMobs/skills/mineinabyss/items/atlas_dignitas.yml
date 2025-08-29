@@ -14,7 +14,7 @@ atlas_dignitas:
   TargetConditions:
     - FoodLevel{a=>4} @self true
   Skills:
-  - onBlockBreak{oB=atlas_break;oT=atlas_tick;cE=false;auraname=atlasskill;d=100;c=1;ms=22;cod=true;cogd=true} @self
+  - onBlockBreak{oB=atlas_break;oT=atlas_tick;cE=false;auraname=atlasskill;d=100;c=1;ms=22;cod=true;cogd=true}
   - delay 1
   - skill{atlas_debuff} @self
   - delay 1
@@ -30,8 +30,9 @@ atlas_tick:
   TargetConditions:
     - FoodLevel{a=>4} @self true
   Skills:
-  - potion{t=HASTE;d=20;l=2} @self
-  - sound{s=entity.bee.loop;sc=hostile;p=0.3;v=0.1} @self
+  - potion{t=HASTE;d=20;l=1} @self
+  - sound{s=entity.bee.loop;sc=hostile;p=0.3;v=0.2} @self
+  - sound{s=entity.bee.loop;sc=hostile;p=0.2;v=0.2} @self
 
 atlas_debuff:
   Cooldown:

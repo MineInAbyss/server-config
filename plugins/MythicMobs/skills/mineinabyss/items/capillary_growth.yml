@@ -4,26 +4,24 @@ capillary_hit:
     - holding{m=NETHERITE_SWORD} true
   Skills:
   - onAttack{oH=capillary_growth_stack;cE=true;auraname=c_g_s} @self
-  - skill{s=capillary_growth_kill} @self ~onKill
+  - skill{s=capillary_growth_kill} ~onKill
   - delay 1
   - skill{s=capillary_state_1} @self
   - delay 1
   - skill{s=capillary_state_2} @self
-  - delay 1
-  - skill{s=capillary_growth_effect} ~onAttack
 
 capillary_growth_stack:
-  Cooldown: 12
+  Cooldown:
   Skills:
   - aura{auraName=capillarygrowthstack;duration=100;c=1;maxStacks=10;cotd=false} @self
+  - aura{auraName=capillarysyphonstack;oT=capillary_syphon_target;duration=100;c=1;maxStacks=1;cotd=false} @target
   - effect:particles{particle=reddust;amount=2;speed=0;y=1} @target
-  - skill{s=capillary_growth_effect} @self
 
 capillary_growth_kill:
   Cooldown: 1
   Skills:
   - heal{a=2} @self
-  - effect:particles{particle=heart;amount=2;speed=0;y=1;size=0.5} @self
+  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
 
 capillary_state_1:
   Cooldown: 
@@ -40,12 +38,35 @@ capillary_state_2:
   - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1;size=1.5} @self
 
 capillary_growth_effect:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=10} true
+  Skills:
+  - skill{s=capillary_growth_heal} @self
+  - delay 1
+  - skill{s=capillary_growth_syphon} @EIR{r=4}
+
+capillary_syphon_target:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=capillarysyphonstack} true
+  Skills:
+  - effect:particles{particle=damage_indicator;amount=2;speed=0;hS=0.5;vS=1;y=1;size=1} @self
+
+capillary_growth_heal:
   Cooldown: 
   Conditions:
     - hasaurastacks{n=capillarygrowthstack;s=10} true
   Skills:
   - auraremove{aura=capillarygrowthstack} @self
-  - effect:particles{particle=heart;amount=2;speed=0;y=1;size=0.5} @self
-  - effect:particles{particle=damage_indicator;amount=3;speed=0;hS=0.5;vS=1;y=1;size=1} @target
-  - potion{t=ABSORPTION;d=30;l=1} @self
-  - potion{t=WITHER;d=40;l=3} @target
+  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+  - potion{t=HEALTH_BOOST;d=40} @self
+
+capillary_growth_syphon:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarysyphonstack} true
+  Skills:
+  - auraremove{aura=capillarysyphonstack} @self
+  - effect:particles{particle=damage_indicator;amount=5;speed=0;hS=0.5;vS=1;y=1;size=1} @self
+  - potion{t=WITHER;d=50;l=3} @self

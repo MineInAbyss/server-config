@@ -17,7 +17,7 @@ observe:
       - hasaurastacks{n=crescentprimer;s=>1} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Not Primed
   - cooldown:
       id: cyanslash
       length: 10s

@@ -16,11 +16,11 @@ petrify_impact:
     - sound{s=block.note_block.basedrum;p=0.5;v=0.75} @Self
     - sound{s=block.note_block.basedrum;p=1;v=0.75} @Self
     - delay 1
-    - effect:particlering{p=mycelium;c=#C5C6D0;a=1;y=0.1;r=7;points=64}
-    - effect:particlering{p=mycelium;c=#C5C6D0;a=1;y=0.2;r=4;points=32;size=2}
+    - effect:particlering{p=mycelium;c=#C5C6D0;a=3;hS=0.5;y=0.1;r=7;points=48}
+    - effect:particlering{p=mycelium;c=#C5C6D0;a=3;hS=0.5;y=0.2;r=4;points=30;size=2}
     - potion{t=SLOW;d=100;l=10} @PIR{r=4}
     - potion{t=SLOW;d=100;l=10} @self
     - potion{t=SLOW;d=100;l=10} @EntitiesNearOrigin{r=4}
-    - potion{t=SLOW;d=100;l=3} @PIR{r=7}
-    - potion{t=SLOW;d=100;l=3} @self
-    - potion{t=SLOW;d=100;l=3} @EntitiesNearOrigin{r=7}
+    - potion{t=SLOW;d=100;l=2} @PIR{r=7}
+    - potion{t=SLOW;d=100;l=2} @self
+    - potion{t=SLOW;d=100;l=2} @EntitiesNearOrigin{r=7}

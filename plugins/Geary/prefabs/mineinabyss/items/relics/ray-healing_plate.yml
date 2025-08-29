@@ -18,16 +18,6 @@ passive:
         inSlot:
           slots: [ 9, 10 ]
           item: mineinabyss:ray-healing_plate
-  - particle:
-      particle: CLOUD
-      offset:
-      - 0
-      - 1
-      - 0
-      count: 10
-      speed: 0
-    with:
-      location: '{{ entity.getLocation }}'
   - mythicSkills:
     - ray-healing_heal
 

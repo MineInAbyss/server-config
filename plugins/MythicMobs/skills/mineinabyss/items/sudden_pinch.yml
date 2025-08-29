@@ -14,7 +14,7 @@ sudden_pinch_2:
   Skills:
   - sound{s=block.cave_vines.pick_berries;volume=0.2;pitch=1.8} @self
   - effect:particles{particle=reddust;color=#803B20;amount=3;r=1;i=1} @self
-  - potion{t=SPEED;d=100;l=1} @self
+  - potion{t=SPEED;d=100} @self
 
 
 

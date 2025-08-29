@@ -1,17 +1,14 @@
 ray-healing_heal:
   Conditions:
-  - inInventory
   - lightlevel{l=>12} true
   Skills:
-  - aura{auraName=rayhealingplate;duration=1000;c=1;ms=10} @self
-  - delay 1
+  - aura{auraName=rayhealingplate;duration=1111;c=1;ms=10} @self
   - skill{s=ray-healing_heal_low} @self
   - delay 1
   - skill{s=ray-healing_heal_high} @self
   
 ray-healing_heal_low:
   Conditions:
-  - inInventory
   - lightlevel{l=12to14} true
   - hasaurastacks{n=rayhealingplate;s=10} true
   Skills:
@@ -19,11 +16,11 @@ ray-healing_heal_low:
   - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
   - heal{amount=1} @self
   - oxygen{amount=4} @self
+  - delay 1
   - auraremove{aura=rayhealingplate} @self 
 
 ray-healing_heal_high:
   Conditions:
-  - inInventory
   - lightlevel{l=15} true
   - hasaurastacks{n=rayhealingplate;s=10} true   
   Skills:
@@ -31,4 +28,5 @@ ray-healing_heal_high:
   - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
   - heal{amount=2} @self
   - oxygen{amount=8} @self
+  - delay 1
   - auraremove{aura=rayhealingplate} @self

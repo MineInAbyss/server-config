@@ -31,7 +31,7 @@ observe:
       display: <#617B94>Atlas Dignitas
   - mythicSkills:
     - atlas_trigger
-  itemLeftClick:
+itemLeftClick:
   - become: parent
   - mythicSkills:
     - atlas_dignitas

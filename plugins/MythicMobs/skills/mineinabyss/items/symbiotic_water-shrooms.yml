@@ -11,7 +11,9 @@ healing_staff:
   #- Aura{auraName=boundingring;onTick=buffring;interval=2;duration=60} @self
   - delay 65
   - effect:particles{particle=spore_blossom_air;a=10;y=1;s=1;hs=0.4;vs=0.4} @PIR{r=5}
-  - effect:particles{particle=warped_spore;a=10;y=1;s=1;hs=1;vs=1;y=1.5} @PIR{r=5}
-  - effect:particles{p=dust_color_transition;color=#e4d5b7;color2=#eed9c4;size=1;speed=0.4;amount=20;hs=.2;vs=1;y=1} @Self
+  - effect:particles{particle=warped_spore;a=10;y=1;s=1;hs=1;vs=1;y=1} @PIR{r=5}
+  - effect:particles{particle=spore_blossom_air;a=3;y=1;s=1;hs=0.4;vs=0.4} @self
+  - effect:particles{particle=warped_spore;a=3;y=1;s=1;hs=1;vs=1;y=1} @self
+  - effect:particles{p=dust_color_transition;color=#e4d5b7;color2=#eed9c4;size=1;speed=0.4;amount=5;hs=0.5;vs=0.5;y=1} @Self
   - heal{a=6} @PIR{r=5}
   - heal{a=3} @self

@@ -14,5 +14,19 @@ observe:
   - become: parent
   - mythicSkills:
     - capillary_hit
+itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=capillarygrowthstack;s=10} true
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown  
+  - cooldown:
+      id: capillary_growth
+      length: 15s
+      display: <#617B94>Capillary Growth
+  - mythicSkills:
+    - capillary_growth_effect
 resourcepack:
   model: mineinabyss:item/relics/capillary_blade

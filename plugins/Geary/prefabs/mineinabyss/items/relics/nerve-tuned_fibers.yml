@@ -17,25 +17,13 @@ passive:
   - ensure:
         inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:nerve-tuned_fibers
-  - particle:
-      particle: CLOUD
-      offset:
-      - 0
-      - 1
-      - 0
-      count: 10
-      speed: 0
-    with:
-      location: '{{ entity.getLocation }}'
-    
+          item: mineinabyss:nerve-tuned_fibers 
   - applyPotionEffects:
     - type: minecraft:haste
       duration: 8s
       hasParticles: false
   - mythicSkills:
     - nerve-tunedtwitch
-
 
 resourcepack:
   textures:
