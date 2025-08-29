@@ -15,17 +15,14 @@ bone_ball:
 
 bone_impact:
   Skills:
-
-   # - command{c="remove boats 5";asOp=true;asCaster=true} 
-
     - shieldbreak{duration=150} 
     - delay 1
     #- blackscreen{d=40} @EntitiesNearOrigin{r=2}
-    - spin{duration=60;velocity=0} @EntitiesNearOrigin{r=2} #functions like a stun
-    - potion{t=BLINDNESS;d=100;l=1} @EntitiesNearOrigin{r=5}
+    #- spin{duration=60;velocity=0} @EntitiesNearOrigin{r=2} #functions like a stun
+    - stun{duration=60;f=true} @EntitiesNearOrigin{r=2}
+    - potion{t=BLINDNESS;d=80;l=1} @EntitiesNearOrigin{r=2}
     - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
-    - damage{a=15;ignorearmor=false} @EntitiesNearOrigin{r=2;ignore=players}
-
+    - damage{a=10;ignorearmor=false} @EntitiesNearOrigin{r=2;ignore=players}
 
 BB_tick:
   Skills:

@@ -1,0 +1,14 @@
+princess_bosom:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - sound{s=block.fungus.break;p=0.2;v=0.3} @self
+    - sound{s=block.fungus.break;p=0.1;v=0.3} @self
+    - particle{p=ash;c=#C5C6D0;amount=5;hS=0.3;vS=0.3;speed=0;y=1} @self
+    - particle{p=crimson_spore;c=#C5C6D0;amount=3;hS=0.3;vS=0.3;speed=0;y=1} @self
+    - delay 10
+    - potion{t=UNLUCK;d=80;l=1} @EIR{r=3}
+    - potion{t=CONFUSION;d=80;l=1} @EIR{r=3}
+    - potion{t=UNLUCK;d=80;l=1} @self
+    - potion{t=CONFUSION;d=80;l=1} @self
+    - potion{t=ABSORPTION;d=200;l=1} @self

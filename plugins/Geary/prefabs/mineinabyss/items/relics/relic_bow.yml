@@ -8,6 +8,7 @@ set.item:
   - <#36526E>supposedly utilized to combat predators in upper layers.
   - <#23374A><i>When used it pushes the wielder out of harms way.
   unbreakable: {}
+disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent

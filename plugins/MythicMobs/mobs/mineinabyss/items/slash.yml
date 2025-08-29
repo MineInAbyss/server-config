@@ -83,6 +83,18 @@ CyanSwings_4:
   - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
   - remove{delay=6} @self ~onSpawn
 
+Crescent_Projectile:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=tidal_wave;n=false} @self ~onSpawn
+
 Blood_Slash:
   Type: ARMOR_STAND
   Pose:

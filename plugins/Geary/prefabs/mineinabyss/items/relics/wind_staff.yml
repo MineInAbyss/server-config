@@ -7,6 +7,7 @@ set.item:
   - <gold>A staff formed from a core causing thin metallic
   - <gold>material to vibrate creating gusts of wind.
   - <#D2D489><i>On use it shoots a projectile which explodes.
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent
@@ -17,7 +18,7 @@ observe:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: windstaff
+      id: gust-shot
       length: 20s
       display: <#FCF5E5>Gust-Shot
   - mythicSkills:

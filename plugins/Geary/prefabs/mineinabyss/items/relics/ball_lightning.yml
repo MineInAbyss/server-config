@@ -8,6 +8,7 @@ set.item:
   - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
   - <#7B898A><i>It has the ability to flash-freeze air
   - <#7B898A><i>which freezes all organic matter it touches.
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

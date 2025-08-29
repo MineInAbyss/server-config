@@ -7,6 +7,7 @@ set.item:
   - <gold>A mysterious relic rumored to be the cause of demise
   - <gold>of an ancient civilisation. All that is known
   - <#D2D489><i>is its ability to conjure darkness when used.
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

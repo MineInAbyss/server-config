@@ -8,6 +8,7 @@ set.item:
   - <#A0ACAD>Shortly after, several of his woodwinds quit.
   - <#7B898A><i>Active ability. Right click to slow everything
   - <#7B898A><i>within a 7 block radius.
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

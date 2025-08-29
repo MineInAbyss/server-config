@@ -1,14 +1,14 @@
 spawnDelay: 5
 worldName: "world"
-clearSpawnsOlderThan: 1d
+clearSpawnsOlderThan: 2h
 sectionsConfig:
   l1s0:
     entry:
       type: "mm:prayingSkeleton_l1"
       conditions:
         - isOpenArea: { range: 3 }
-    spreadRadius: 300
-    spawnCap: 5
+    spreadRadius: 75
+    spawnCap: 20
     sectionMinY: -220
     sectionMaxY: -20
     spawnNoise: 5
@@ -19,8 +19,8 @@ sectionsConfig:
       type: "mm:prayingSkeleton_l1"
       conditions:
         - isOpenArea: { range: 3 }
-    spreadRadius: 300
-    spawnCap: 5
+    spreadRadius: 75
+    spawnCap: 50
     sectionMinY: -220
     sectionMaxY: 220
     spawnNoise: 5
@@ -31,8 +31,8 @@ sectionsConfig:
       type: "mm:prayingSkeleton_l1"
       conditions:
         - isOpenArea: { range: 3 }
-    spreadRadius: 300
-    spawnCap: 5
+    spreadRadius: 75
+    spawnCap: 50
     sectionMinY: -220
     sectionMaxY: 220
     spawnNoise: 5
@@ -43,9 +43,9 @@ sectionsConfig:
       type: "mm:prayingSkeleton_l1"
       conditions:
         - isOpenArea: { range: 3 }
-    spreadRadius: 300
-    spawnCap: 5
-    sectionMinY: -220
+    spreadRadius: 75
+    spawnCap: 20
+    sectionMinY: 50
     sectionMaxY: 220
     spawnNoise: 5
     splitSize: 150

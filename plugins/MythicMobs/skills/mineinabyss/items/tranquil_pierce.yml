@@ -8,6 +8,7 @@ trident_charge:
   - skill{s=tridentready} @self
   - effect:particles{particle=wax_off;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
   - effect:particles{particle=reddust;color=#362624;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
+
 tridentstack:
   Conditions:
   Skills:
@@ -29,7 +30,7 @@ throwtrident:
   Skills:
   - auraremove{aura=trident;stacks=3} @self
   - sound{s=item.trident.throw;sc=players;p=1;v=0.6} @self
-  - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=true;d=200;hs=false;hfs=1} @targetlocation
+  - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1.5;vR=1.5;mr=35;hnp=true;hp=true;hO=0;sE=false;sB=true;d=200;hs=false;hfs=1} @targetlocation
   - aura{auraName=tridentstop;duration=200;c=1;cotd=false} @self
 
 trident_impact:

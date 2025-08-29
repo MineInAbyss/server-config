@@ -8,20 +8,35 @@ set.item:
   - <#195959><i>It is known to create crescent shaped slashes damaging
   - <#195959><i>all organic matter that it comes into contact with.
   unbreakable: {}
+disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent
   - ensure:
       mythicConditions:
-      - EnchantingLevel{l=>1} true
+      - hasaurastacks{n=crescentprimer;s=>1} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
       id: cyanslash
-      length: 2s
+      length: 10s
       display: <#15ABC2>Crescent Hatchet
   - mythicSkills:
-    - Cyan_Slash
+    - crescent_slash
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=crescentstop} false
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown  
+  - cooldown:
+      id: crescentprimer
+      length: 1s
+      display: <#617B94>Primer
+  - mythicSkills:
+    - crescent_primer
 resourcepack:
   model: mineinabyss:item/relics/crescent_blade

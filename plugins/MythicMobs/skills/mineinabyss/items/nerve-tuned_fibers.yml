@@ -2,9 +2,36 @@ nerve-tunedtwitch:
   Conditions:
   - inInventory
   Skills:
-    - delay <random.20to180>
-    - recoil{r=20;pitch=-0.2} @self #doesnt work too well, very weak while also very shaky
-    - recoil{r=15;pitch=0.2} @self
-    - recoil{r=4;pitch=-0.1} @self
-    - recoil{r=15;pitch=0.1} @self
-    #- spin{duration=<random.5to10>;velocity=0} #too intrusive
+  - randomskill{skills=nerve-tunedtwitch_1, nerve-tunedtwitch_2, nerve-tunedtwitch_3, nerve-tunedtwitch_4} @self
+
+nerve-tunedtwitch_1:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=-1;y=-1}
+  - recoil{r=35;pitch=-0.2} @self
+
+nerve-tunedtwitch_2:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=1;y=-1}
+  - recoil{r=40;pitch=0.2} @self
+
+nerve-tunedtwitch_3:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=-1;y=1}
+  - recoil{r=35;pitch=-0.1} @self
+
+nerve-tunedtwitch_4:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=1;y=1}
+  - recoil{r=40;pitch=-0.1} @self

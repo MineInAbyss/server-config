@@ -15,19 +15,24 @@ set.item:
       level: 6
   enchantable: 0
   unbreakable: {}
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent
   - ensure:
       mythicConditions:
-      - FoodLevel{a=<4} true
+      - FoodLevel{a=>4} true
     onFail:
     - sendActionBar:
         text: <red>Out of Food
   - cooldown:
       id: AtlasDignitas
-      length: 60s
+      length: 80s
       display: <#617B94>Atlas Dignitas
+  - mythicSkills:
+    - atlas_trigger
+  itemLeftClick:
+  - become: parent
   - mythicSkills:
     - atlas_dignitas
 

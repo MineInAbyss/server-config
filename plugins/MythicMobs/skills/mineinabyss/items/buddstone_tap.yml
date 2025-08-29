@@ -60,19 +60,19 @@ livingcballs:
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 5
+  - delay 10
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 5
+  - delay 10
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 5
+  - delay 10
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 5
+  - delay 10
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;sB=true} @Targetlocation

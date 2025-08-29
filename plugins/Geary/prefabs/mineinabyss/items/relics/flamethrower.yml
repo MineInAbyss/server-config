@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Flamethrower
   itemModel: mineinabyss:flamethrower
+disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/relics/flamethrower
 observe:

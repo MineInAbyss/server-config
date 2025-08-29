@@ -1,29 +1,34 @@
 windstaff:
   Cooldown: 1
   Skills:
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
 
-    - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
-    - effect:particles{particle=dust_plume;amount=9;y=0.5;size=2}
-    - sound{s=block.roots.break;sc=players;p=0.5;v=0.8;repeat=4;repeatInterval=3} @self
-    - delay 20
-    - sound{s=entity.blaze.shoot;sc=players;p=1.1;v=0.7} @self
-    - sound{s=entity.ender_dragon.flap;sc=players;p=0.6;v=0.7} @self
-    - sound{s=entity.ghast.shoot;sc=players;p=<random.float.0.8to1.0>;v=0.8} @self
-    - sound{s=block.metal.break;sc=players;p=1.3;v=0.6} @self
+  - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
+  - effect:particles{particle=dust_plume;amount=9;y=0.5;size=2}
+  - sound{s=block.roots.break;sc=players;p=0.5;v=0.8;repeat=4;repeatInterval=3} @self
+  - delay 20
+  - sound{s=entity.blaze.shoot;sc=players;p=1.1;v=0.7} @self
+  - sound{s=entity.ender_dragon.flap;sc=players;p=0.6;v=0.7} @self
+  - sound{s=entity.ghast.shoot;sc=players;p=<random.float.0.8to1.0>;v=0.8} @self
+  - sound{s=block.metal.break;sc=players;p=1.3;v=0.6} @self
 
-    - projectile{onTick=windstaff_tick;onHit=wind_impact;onEnd=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5;hitSelf=true} @targetlocation
-    - delay 20 
+  - projectile{onTick=windstaff_tick;onHit=wind_impact;onEnd=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5;hitSelf=true} @targetlocation
+  - delay 20 
 
 windstaff_tick:
   Skills:
-    - effect:particles{particle=dust_plume;amount=9;hS=.1;vS=.1;speed=0.01}
-
-
+  - effect:particles{particle=dust_plume;amount=9;hS=.1;vS=.1;speed=0.01}
 
 wind_impact:
   Skills:
-    - effect:particles{p=gust_emitter_large;a=1;vs=0.2;hs=0.2;s=0;y=1;size=1.5}
-    - fakeexplosion
-    - summon{type=wind_impact;amount=1;ctt=true;itt=true;os=true} @targetloaction
-    - shieldbreak{duration=150}
+  - effect:particles{p=gust_emitter_large;a=1;vs=0.2;hs=0.2;s=0;y=1;size=1.5}
+  - fakeexplosion
+  - totem{md=2;c=1;oH=wind_impact_effect;hnp=true;hp=true;hR=2;vR=2;i=1} @targetlocation
+  - shieldbreak{duration=150}
+
+wind_impact_effect:
+  Skills:
+  - throw{velocity=14;velocityY=7} @EIR{r=4}
+  - damage{a=20} @EIR{r=4}
+  - damage{a=30} @EIR{r=2;conditions=[
+                              - entitywithin{d=2} true     ]}

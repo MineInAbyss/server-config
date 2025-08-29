@@ -8,24 +8,11 @@ set.item:
   - <#195959><i>It is known to create crescent shaped slashes damaging
   - <#195959><i>all organic matter that it comes into contact with.
   unbreakable: {}
+disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaura{aura=capillary_extend_aura} false 
-    onFail:
-    - sendActionBar:
-        text: <red>Weapon Extended
   - mythicSkills:
-    - heal{amount=1} ~onKill
-  itemRightClick:
-  - become: parent
-  - cooldown:
-      id: capillary_extend
-      length: 8s #change to 35s once testing is done
-      display: <#15ABC2>Capillary Blade
-  - mythicSkills:
-    - capillary_extend
+    - capillary_hit
 resourcepack:
   model: mineinabyss:item/relics/capillary_blade

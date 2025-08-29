@@ -7,20 +7,24 @@ set.item:
   - <gold>An organic object that symbiotically attaches like a parasite.
   - <#D2D489><i>When the hosts adrenaline level spikes the
   - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+disableItemInteractions: {}
 passive:
 - match:
   - inInventory
-  every: 4s
+  every: 1s
   run:
   - become: parent
   - ensure:
       mythicConditions:
       - health{h=<5}
       - health{h=>1}
+      inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:animal_totem
   - cooldown:
-      id: Verdau Effax
+      id: gold-mending_wedge
       length: 600s
-      display: <#88D481>Gold-mend
+      display: <#88D481>Gold-mending Wedge
   - mythicSkills:
     - verdaueffax
 resourcepack:

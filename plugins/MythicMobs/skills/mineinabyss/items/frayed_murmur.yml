@@ -2,6 +2,34 @@ frayed_murmur:
   Conditions:
   - inInventory
   Skills:
-  - summon{type=husk1;amount=1;radius=8;os=true} @self #illusion test
-  - delay 10
-  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.01} @origin
+  #- summon{type=husk1;amount=1;radius=8;os=true} @self #illusion test
+  - randomskill{skills=murmur_effect_1, murmur_effect_2, murmur_effect_3} @self
+
+murmur_effect_1:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.5to10>
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.01} @self
+  - delay <random.10to40>
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+
+murmur_effect_2:
+  Conditions:
+  - inInventory
+  Skills:
+  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.01} @self
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+  - delay <random.30to80>
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+
+murmur_effect_3:
+  Conditions:
+  - inInventory
+  Skills:
+  - delay <random.20to40>
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+  - delay <random.10to40>
+  - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
+  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.01} @self

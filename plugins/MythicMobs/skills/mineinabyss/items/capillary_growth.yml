@@ -1,23 +1,51 @@
-capillary_extend:
-  Conditions:
+capillary_hit:
   Cooldown:
+  Conditions:
+    - holding{m=NETHERITE_SWORD} true
   Skills:
-  - projectile{bulletType=MOB;mob=capillary_needle;onHit=capillary_needle_hit;onEnd=capillary_needle_end;v=15;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @targetlocation
-  - aura{auraName=capillary_extend_aura;duration=60} @self
+  - onAttack{oH=capillary_growth_stack;cE=true;auraname=c_g_s} @self
+  - skill{s=capillary_growth_kill} @self ~onKill
+  - delay 1
+  - skill{s=capillary_state_1} @self
+  - delay 1
+  - skill{s=capillary_state_2} @self
+  - delay 1
+  - skill{s=capillary_growth_effect} ~onAttack
 
-capillary_needle_hit:
-  Conditions:
-  Cooldown:
+capillary_growth_stack:
+  Cooldown: 12
   Skills:
-  - aura{auraName=capillary_needle_aura;duration=60;i=1;onTick=capillary_needle_aura1} @target
-  - damage{a=25;ignorearmor=true} 
-  - heal{a=6} @Self
-  - delay 60
-  - leap{velocity=80} @target
+  - aura{auraName=capillarygrowthstack;duration=100;c=1;maxStacks=10;cotd=false} @self
+  - effect:particles{particle=reddust;amount=2;speed=0;y=1} @target
+  - skill{s=capillary_growth_effect} @self
 
-capillary_needle_end:
-  Conditions:
-  Cooldown:
+capillary_growth_kill:
+  Cooldown: 1
   Skills:
-  - auraremove{aura=capillary_extend_aura} @self
-  - auraremove{aura=capillary_needle_aura} @target
+  - heal{a=2} @self
+  - effect:particles{particle=heart;amount=2;speed=0;y=1;size=0.5} @self
+
+capillary_state_1:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=1to8} true
+  Skills:
+  - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1} @self
+
+capillary_state_2:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=9to10} true
+  Skills:
+  - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1;size=1.5} @self
+
+capillary_growth_effect:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=10} true
+  Skills:
+  - auraremove{aura=capillarygrowthstack} @self
+  - effect:particles{particle=heart;amount=2;speed=0;y=1;size=0.5} @self
+  - effect:particles{particle=damage_indicator;amount=3;speed=0;hS=0.5;vS=1;y=1;size=1} @target
+  - potion{t=ABSORPTION;d=30;l=1} @self
+  - potion{t=WITHER;d=40;l=3} @target

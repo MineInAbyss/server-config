@@ -6,6 +6,7 @@ set.item:
   - <#3d59ab>A relic born from decades of Orthian research. A shield
   - <#3d59ab>which is made from a rare mineral found within the abyss.
   - <#6666ff><i>On use it dashes forward damaging organisms it touches.
+disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent

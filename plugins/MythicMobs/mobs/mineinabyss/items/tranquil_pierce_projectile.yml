@@ -11,3 +11,4 @@ tranquil_pierce_projectile:
  
   Skills:
   - model{mid=tranquil_pierce_projectile;n=false} @self ~onSpawn
+  - state{mid=idle;s=attack} @self ~onSpawn

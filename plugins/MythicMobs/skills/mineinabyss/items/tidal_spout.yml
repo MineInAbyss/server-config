@@ -7,6 +7,7 @@ Tidal_Wave:
   - sound{s=block.water.ambient;volume=0.6;pitch=0.8} @self       # Background water presence  
   - sound{s=item.trident.throw;volume=0.7;pitch=1.0} @self       # Whoosh of water moving  
   - sound{s=entity.drowned.hurt_water;volume=0.6;pitch=0.9} @self
+
 Tidal_Wave_HIT:
   TargetConditions:
   - owner{} false

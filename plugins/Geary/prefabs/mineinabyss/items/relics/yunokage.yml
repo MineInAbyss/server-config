@@ -8,6 +8,6 @@ set.item:
   - <#195959><i>It is known to create crescent shaped slashes damaging
   - <#195959><i>all organic matter that it comes into contact with.
   unbreakable: {}
-
+disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/relics/yukonokage

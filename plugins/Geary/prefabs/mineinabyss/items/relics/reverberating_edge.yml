@@ -8,20 +8,25 @@ set.item:
   - <#195959><i>It is known to create crescent shaped slashes damaging
   - <#195959><i>all organic matter that it comes into contact with.
   unbreakable: {}
+disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent
+  - mythicSkills:
+    - reverberating_edge_hit
+  itemRightClick:
+  - become: parent
   - ensure:
       mythicConditions:
-      - onHit true
+      - hasaurastacks{n=reverberatingedgestack;s=10} true
     onFail:
     - sendActionBar:
-        text: <red>You missed
+        text: <red>Sword is not charged
   - cooldown:
-      id: reverberatingedge
-      length: 0.5s
-      display: <#15ABC2>Reverberating Edge
+      id: reverberating_edge
+      length: 50s
+      display: <#617B94>Reverberating Edge
   - mythicSkills:
-    - reverberating_edge_stack
+    - reverberating_edge_ability
 resourcepack:
   model: mineinabyss:item/relics/reverberating_edge

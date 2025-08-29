@@ -1,14 +1,16 @@
 set.item:
-  itemName: <#C13523><b>Princess Bosom
+  itemName: <#C13523>Princess Bosom
   type: minecraft:paper
   itemModel: mineinabyss:princess_bosom
   lore:
+  - ':layer_1::layer_2: Grade III Relic'
   - <#D2D489>It is an egg-shaped Relic with
   - <#D2D489>patterns on its surface and has
   - <#D2D489>a soft texture that squishes when
   - <#D2D489>pressure is applied to it.
   - <#EDEEB9><i>Can be used to give you
   - <#EDEEB9><i>that extra energy boost.
+disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:item/relics/princess_bosom
 observe:
@@ -16,14 +18,7 @@ observe:
   - become: parent
   - cooldown:
       id: princess_bosom
-      length: 10s
-      display: <#C13523><b>Princess Bosom
-  - applyPotionEffects:
-    - type: minecraft:speed
-      duration: 3s
-      amplifier: 2
-      hasParticles: false
-    - type: minecraft:jump_boost
-      duration: 5s
-      amplifier: 2
-      hasParticles: false
+      length: 30s
+      display: <#C13523>Princess Bosom
+  - mythicSkills:
+    - princess_bosom

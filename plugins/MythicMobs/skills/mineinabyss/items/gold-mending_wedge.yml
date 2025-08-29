@@ -5,6 +5,7 @@ verdaueffax:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -250";op=true}
   - Aura{auraName=verdaudown;onTick=verdaudown;interval=60;duration=120000} @self
   - skill{s=effaxfeed} @self
+
 effaxfeed:
   Conditions:
   Skills:
@@ -12,8 +13,6 @@ effaxfeed:
   - delay 1
   - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
   - potion{t=REGENERATION;d=200;l=1} @self
-
-
 
 verdaudown:
   Conditions:

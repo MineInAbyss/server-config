@@ -1,25 +1,34 @@
 ray-healing_heal:
   Conditions:
   - inInventory
-  - lightlevel{l=>8} true
+  - lightlevel{l=>12} true
   Skills:
-  - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @Self
-  - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
+  - aura{auraName=rayhealingplate;duration=1000;c=1;ms=10} @self
+  - delay 1
   - skill{s=ray-healing_heal_low} @self
+  - delay 1
   - skill{s=ray-healing_heal_high} @self
   
 ray-healing_heal_low:
   Conditions:
   - inInventory
-  - lightlevel{l=8to10} true
+  - lightlevel{l=12to14} true
+  - hasaurastacks{n=rayhealingplate;s=10} true
   Skills:
-  - heal{amount=<random0to1>} @self
-  - oxygen{amount=<random0to1>} @self 
+  - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
+  - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
+  - heal{amount=1} @self
+  - oxygen{amount=4} @self
+  - auraremove{aura=rayhealingplate} @self 
 
 ray-healing_heal_high:
   Conditions:
   - inInventory
-  - lightlevel{l=>11} true   
+  - lightlevel{l=15} true
+  - hasaurastacks{n=rayhealingplate;s=10} true   
   Skills:
-  - heal{amount=1} @self
-  - oxygen{amount=1} @self  
+  - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
+  - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
+  - heal{amount=2} @self
+  - oxygen{amount=8} @self
+  - auraremove{aura=rayhealingplate} @self

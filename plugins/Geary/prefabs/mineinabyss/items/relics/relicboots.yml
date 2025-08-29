@@ -8,15 +8,24 @@ set.item:
   - <gold>abilities of a famous delver.
   - <#D2D489><i>On use they grant the wearer a short boost
   - <#D2D489><i>in strength allowing delvers to ascend faster.
+disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent
   - cooldown:
       id: treble_winds
-      length: 30s #change to 30s after testing
+      length: 30s
       display: <dark_aqua>Treble Winds      
   - mythicSkills:
     - treble_winds
+  itemLeftClick:
+  - become: parent
+  - cooldown:
+      id: treble_winds
+      length: 30s
+      display: <dark_aqua>Treble Winds      
+  - mythicSkills:
+    - treble_winds_forward
 resourcepack:
   textures:
     layers:
