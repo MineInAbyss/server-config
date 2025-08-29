@@ -14,7 +14,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - haspermission{p=hmccosmetics.hat.amongus_cosmetic} true
+      - haspermission{p=hmccosmetics.hat.amongus_cosmetic} false
     onFail:
     - sendActionBar:
         text: <#454A46>You already have this cosmetic
