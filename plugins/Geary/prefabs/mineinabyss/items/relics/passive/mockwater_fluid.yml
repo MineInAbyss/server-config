@@ -18,14 +18,14 @@ passive:
         inSlot:
           slots: [ 9, 10 ]
           item: mineinabyss:mockwater_fluid
-  climb:stamina_modifiers:
-    modifiers:
-      - type: STAMINA
-        modifier: 1.1
-        operation: MULTIPLY
-      - type: CLIMB_SPEED
-        modifier: 1.1
-        operation: MULTIPLY
+  # climb:stamina_modifiers:
+  #   modifiers:
+  #     - type: STAMINA
+  #       modifier: 1.1
+  #       operation: MULTIPLY
+  #     - type: CLIMB_SPEED
+  #       modifier: 1.1
+  #       operation: MULTIPLY
 resourcepack:
   textures:
     layers:

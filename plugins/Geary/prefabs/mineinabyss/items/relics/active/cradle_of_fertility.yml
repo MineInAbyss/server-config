@@ -20,13 +20,13 @@ observe:
       id: wish_of_fertility
       length: 8s #Change to 40s once testing is done
       display: <#1F88ED>Cradle of Fertility
-  - geary:bonemeal_radius:
-      radius: 3
-      Allowed Tags:
-        - crops
-        - saplings
-      excludedBlocks:
-        - GRASS_BLOCK
-        - DIRT
+  # - geary:bonemeal_radius:
+  #     radius: 3
+  #     Allowed Tags:
+  #       - crops
+  #       - saplings
+  #     excludedBlocks:
+  #       - GRASS_BLOCK
+  #       - DIRT
   - mythicSkills:
     - wish_of_fertility
