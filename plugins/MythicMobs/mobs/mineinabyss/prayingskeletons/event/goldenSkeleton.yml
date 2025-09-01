@@ -1,0 +1,42 @@
+goldenSkeleton:
+  Type: PIG
+  Display: "<green>Blessed Skeleton"
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Health: 5
+  Damage: 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    Collidable: false
+    KnockbackResistance: 1
+  #Model:
+  #  Id: golden_skeleton_1
+  #  ViewRadius: 100
+  #  Drive: false
+  #  DamageTint: false
+  #  Scale: 1
+  # TODO switch to `model` skill when it's fixed (currently it can not disguise the entity in certain cases, ex. when teleporting)
+
+  DamageModifiers:
+    - FALL 0.001
+    - DROWNING 0.001
+    - ENTITY_SWEEP_ATTACK 0.001
+  Drops:
+    - exp 14-44
+    - golden_carrot 8-16 1
+    - raw_gold_block 1-1 1
+    - GoldenSkelPlayerHeads
+    #- geary mineinabyss:spreadsphere 1-1 0.15 nolooting
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - model{modelid=golden_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
+    - randomskill {skills= 
+      [- skill{s=relicDrop;delay=15;item=LamentsThreadDrop;grade=3} 0.25],
+      [- skill{s=relicDrop;delay=10;item=SinSpiral;grade=2} 0.1],
+      [- skill{s=relicDrop;delay=5;item=MockwaterFluid;grade=4} 0.4],
+      [- skill{s=relicDrop;item=GambitIncense;grade=3} 0.25]
+      } ~onDeath 
+    #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10

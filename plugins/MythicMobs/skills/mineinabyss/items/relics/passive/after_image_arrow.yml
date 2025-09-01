@@ -1,0 +1,40 @@
+after_image_arrow:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=afterimagearrow;onTick=after_image_shot;duration=40;c=1;maxStacks=1;cotd=false} @self
+
+after_image_shot:
+  Cooldown:
+  Conditions:
+  Skills:
+  - onShoot{auraName=afterimageshot;onShoot=after_image;duration=20;c=1} @self
+
+after_image:
+  Cooldown:
+  Conditions:
+  Skills:
+  - delay 10
+  - shoot{type=ARROW;oT=after_image_tick;velocity=5;damage=10;pl=2} @targetlocation
+
+after_image_tick:
+  Cooldown:
+  Conditions:
+  Skills:
+  - effect:particles{particle=end_rod;amount=4;hS=0.1;vS=0.1;speed=0.01}
+
+after_image_projectiles:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 10
+  - projectile{onTick=after_image_tick;onHit=after_image_impact;onEnd=after_image_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @targetlocation
+
+after_image_impact:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=10} @EIR{r=2}
+
+#- bowtension{value=>0.5} true

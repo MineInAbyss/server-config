@@ -1,0 +1,31 @@
+
+cast_meteor:
+  Conditions:
+  - offgcd true
+  Skills:
+  - summon{type=pmeteortarget} @self
+pmeteorcometh:
+  Skills:
+  - projectile{bulletType=MOB;mob=meteor;onTick=pmeteorctick;oE=pmeteorcimpact;v=10;i=1;hR=1;vR=1;syo=16;sB=true;sso=2;mr=90;d=200} @origin
+  - delay 200
+  - remove @self
+
+
+pmeteorctick:
+  Skills:
+  - effect:particles{p=campfire_cosy_smoke;amount=5;speed=0;hS=.25;vS=.25} @origin
+  - effect:particles{p=flame;amount=15;speed=0;hS=.25;vS=.25} @origin
+
+pmeteorcimpact:
+  Skills:
+  - effect:explosion @self
+  - throw{velocity=6;velocityY=4} @EntitiesInRadius{r=3;ignore=players}
+  - damage{a=80} @EntitiesInRadius{r=3;ignore=players}
+  - ignite{ticks=100} @EntitiesInRadius{r=3;ignore=players}
+  - effect:blockmask{m=fire;r=1;d=20;oa=true} @origin
+  - effect:particles{p=flash;amount=5;speed=1} @origin
+
+meteorONSPAWN:
+  Skills:
+  - delay 1
+  - potion{type=INVISIBILITY;duration=480;level=0;p=false} @self

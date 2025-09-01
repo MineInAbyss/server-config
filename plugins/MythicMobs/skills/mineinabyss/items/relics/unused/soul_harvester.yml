@@ -1,0 +1,32 @@
+soul_harvester:
+  Cooldown: 
+  Conditions:
+  #- hasaura{n=soullaser} false
+  Skills:
+  - aura{auraName=souls;onStart=soulstack;duration=9999;c=1;maxStacks=10;cotd=true} @self
+soulstack:
+  Conditions:
+  Skills:
+  - effect:particles{particle=soul;a=20;hs=1;vs=1;s=1} @self
+
+soul_laser:
+  Conditions:
+  #- hasaura{n=soul_laser} false
+  #- hasaurastacks{n=souls;s=10} true
+  Skills:
+  - aura{auraName=soullaser;i=1;d=50;oT=soulproj;c=1} @Self
+  - delay 50
+  - auraremove{aura=souls;stacks=10} @self
+  - auraremove{aura=soullaser;stacks=10} @self
+soulproj:
+  Conditions:
+  Skills:
+  - projectile{i=1;oT=soulTick;oH=soulHit;mr=8;sE=false;v=20;hnp=true;} @Targetlocation
+
+soulTick:
+  Skills:
+  - effect:particles{particle=soul_fire_flame;a=10;s=0;hs=0.1;vs=0.1} @origin
+soulHit:
+  Skills:
+  - damage{a=20} 
+  - ignite{t=100} 

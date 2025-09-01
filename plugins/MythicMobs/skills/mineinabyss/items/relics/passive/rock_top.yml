@@ -1,0 +1,19 @@
+rock_top:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=rocktopspin;onTick=rock_top_spin;onEnd=rock_top_confusion;duration=50;c=1;maxStacks=1;cotd=false} @self
+
+rock_top_spin:
+  Cooldown:
+  Conditions:
+  Skills:
+  - sound{s=weather.rain;volume=0.2;pitch=0.7} @self
+  - effect:particles{particle=firework;color=#803B20;amount=3;r=1;i=1;y=0.5;hS=0.5;vS=0.5} @self
+  - spin{duration=10;velocity=2} @self
+
+rock_top_confusion:
+  Cooldown:
+  Conditions:
+  Skills:
+  - potion{type=CONFUSION;duration=80} @self

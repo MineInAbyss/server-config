@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:paper
+  itemModel: mineinabyss:sin_spiral
+  itemName: <#51C947>Sin Spiral
+  lore:
+  - ':layer_1::layer_2: Grade III Relic'
+  - <gold>An organic talisman formed from plant parts and relics.
+  - <#D2D489><i>When used it calls upon weeds to syphon nutrients
+  - <#D2D489><i>from the force field to rapidly grow into vine binders.
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: sinspiral
+      length: 8s #change to 50s after testing
+      display: <#51C947>Sin Spiral
+  - mythicSkills:
+    - sin_spiral
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/sin_spiral

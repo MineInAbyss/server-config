@@ -1,0 +1,27 @@
+set.item:
+  itemName: <#88D481>Laments Thread
+  type: PAPER
+  itemModel: mineinabyss:laments_thread
+  lore:
+  - ':layer_1::layer_2: Grade IV Relic'
+  - <gold>Stories have been passed around about a Cave Raider who used this 
+  - <gold>Relic to keep himself constantly awake through his expeditions.
+  - <#D2D489><i>Passive ability. Grants a short speed
+  - <#D2D489><i>buff when equipped in a passive slot.
+disableItemInteractions: {}
+passive:
+- match:
+  - inInventory
+  every: 2s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:laments_thread
+  - mythicSkills:
+    - laments_thread
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/laments_thread

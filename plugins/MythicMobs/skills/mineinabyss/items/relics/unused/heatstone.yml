@@ -1,0 +1,54 @@
+heatthrow:
+  Cooldown: 0
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=50}
+  - projectile{bulletType=ITEM;material=redstone;onTick=heat_tick;onHit=heat_impact;onEnd=heat_impact;v=30;g=0.95;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5} @targetlocation
+
+heat_tick:
+  Skills:
+  - effect:particles{particle=Crit;amount=1;hS=.1;vS=.1;speed=0}
+
+
+heat_impact:
+  Skills:
+  - summon{type=heat_stone;amount=1;radius=0} @origin
+
+
+lavaspin:
+  Cooldown: 5
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=80} 
+  - setai{ai=false} 
+  - skill{repeat=4;repeati=10;s=[
+      - sound{s=item.trident.riptide_3;p=0.65;v=0.5} @self
+      - sound{s=entity.player.attack.sweep;p=0.65;v=0.5} @self
+      - damage{amount=10} @EntitiesNearOrigin{r=4}
+      - ignite{ticks=100}
+      - throw{v=10;vy=4}
+    ]} @EIR{r=5;ignore=faction}
+  - orbital{points=26;duration=80;repeat=4;repeati=5;bullet=BLOCK;material=FIRE;radius=4;
+      onTick=[
+        - geyser{type=LAVA;i=3;h=3} @origin
+        - particles{p=flame;y=3;vS=3;a=1} @origin
+      ]}
+  - delay 44
+  - dropitem{i=LavaDrops}
+  - setai{ai=true}
+
+LavaRing:
+  Cooldown: 5
+  Skills:
+  - gcd{t=250}
+  - effect:particlering{p=lava;r=1;points=5;hS=0;vS=0;y=0.5;speed=10;repeat=3;repeatInterval=10} @self
+  - sound{s=entity.generic.burn;p=2} @PIR{r=50}
+  - delay 35
+  - throw{v=40;vy=1} @PIR{r=30}
+  - effect:geyser{type=LAVA;height=7;speed=5;repeat=3;repeatInterval=80} @Ring{radius=5;points=20} 
+  - delay 20
+  - effect:geyser{type=LAVA;height=5;speed=5;repeat=3;repeatInterval=80} @Ring{radius=8;points=20} 
+  - delay 20
+  - effect:geyser{type=LAVA;height=3;speed=5;repeat=3;repeatInterval=80} @Ring{radius=12;points=20}

@@ -1,0 +1,40 @@
+charredSkeleton:
+  Type: PIG
+  Display: "<green>Cursed Skeleton"
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Health: 5
+  Damage: 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    Collidable: false
+    KnockbackResistance: 1
+  #Model:
+  #  Id: charred_skeleton_1
+  #  ViewRadius: 100
+  #  Drive: false
+  #  DamageTint: false
+  #  Scale: 1
+  # TODO switch to `model` skill when it's fixed (currently it can not disguise the entity in certain cases, ex. when teleporting)
+
+  DamageModifiers:
+    - FALL 0.001
+    - DROWNING 0.001
+    - ENTITY_SWEEP_ATTACK 0.001
+  Drops:
+    - exp 1-4
+    - charcoal 4-6 1
+    - WITHER_ROSE{name="<#36454F>Charred Flower";lore="<gold>Found during the Curses and Blessings event.";enchants=DURABILITY:1} 1 0.05
+    - CREEPER_BANNER_PATTERN{name="<#36454F>Creeper Banner Pattern";lore="<gold>Found during the Curses and Blessings event."} 1 0.005
+    - snort_pottery_sherd 2-3 0.05
+    - prize_pottery_sherd 2-3 0.05
+    - CharredSkelPlayerHeads
+    #- geary mineinabyss:spreadsphere 1-1 0.15 nolooting
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - model{modelid=charred_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
+    #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10
+    - skill{charred_skeleton_curse} ~onDeath

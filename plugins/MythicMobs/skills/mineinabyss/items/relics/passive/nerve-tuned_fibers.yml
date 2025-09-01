@@ -1,0 +1,117 @@
+nerve-tunedtwitch:
+  Conditions:
+  Skills:
+  - randomskill{skills=nerve-tunedtwitch_1, nerve-tunedtwitch_2, nerve-tunedtwitch_3, nerve-tunedtwitch_4, nerve-tunedtwitch_5, nerve-tunedtwitch_6, nerve-tunedtwitch_7, nerve-tunedtwitch_8, nerve-tunedtwitch_9, nerve-tunedtwitch_10, nerve-tunedtwitch_11, nerve-tunedtwitch_12, nerve-tunedtwitch_13, nerve-tunedtwitch_14, nerve-tunedtwitch_15, nerve-tunedtwitch_16}
+  - effect:particles{particle=wax_off;amount=4;hS=0.5;vS=1;speed=0;y=0.5;size=0.6}
+
+nerve-tunedtwitch_1:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=0}
+
+nerve-tunedtwitch_2:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=90}
+
+nerve-tunedtwitch_3:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=180}
+
+nerve-tunedtwitch_4:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=270}
+
+nerve-tunedtwitch_5:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=0}
+
+nerve-tunedtwitch_6:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=90}
+
+nerve-tunedtwitch_7:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=180}
+
+nerve-tunedtwitch_8:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=270}
+
+nerve-tunedtwitch_9:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=45}
+
+nerve-tunedtwitch_10:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=135}
+
+nerve-tunedtwitch_11:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=225}
+
+nerve-tunedtwitch_12:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=315}
+
+nerve-tunedtwitch_13:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=45}
+
+nerve-tunedtwitch_14:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=0.2} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=0.1;rot=135}
+
+nerve-tunedtwitch_15:
+  Conditions:
+  Skills:
+  - recoil{r=35;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=225}
+
+nerve-tunedtwitch_16:
+  Conditions:
+  Skills:
+  - recoil{r=40;pitch=-0.1} @self
+  - delay <random.10to30>
+  - lunge{velocity=1;velocityY=0.5} @forward{f=0.1;y=-0.1;rot=315}

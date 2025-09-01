@@ -1,0 +1,29 @@
+set.item:
+  itemName: <#88D481>Mermaid Burp
+  type: PAPER
+  itemModel: mineinabyss:mermaid_burp
+  lore:
+  - ':layer_1::layer_2: Grade IV Relic'
+  - <gold>Stories have been passed around about a Cave Raider who used this 
+  - <gold>Relic to keep himself constantly awake through his expeditions.
+  - <#D2D489><i>Passive ability. Grants a short speed
+  - <#D2D489><i>buff when equipped in a passive slot.
+disableItemInteractions: {}
+passive:
+- match:
+  - inInventory
+  every: 4s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:mermaid_burp
+  - applyPotionEffects:
+    - type: minecraft:water_breathing
+      duration: 6s
+      hasParticles: false
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/sudden_pinch

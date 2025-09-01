@@ -1,0 +1,23 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#BF2CB1>Gambit Incense
+  itemModel: mineinabyss:gambit_incense
+  lore:
+  - ':layer_4: Grade III Relic'
+  - <gold>An artifact of peculiar smell adjutating cells
+  - <gold>to improve wound healing.
+  - <#D2D489><i>On use it grants life to organisms around.
+disableItemInteractions: {}
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: gambit_incense
+      length: 28s
+      display: <#BF2CB1>Gambit Incense
+  - mythicSkills:
+    - gambit_incense
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/gambit_incense

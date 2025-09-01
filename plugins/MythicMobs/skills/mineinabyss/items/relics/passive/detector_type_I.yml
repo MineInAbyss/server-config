@@ -1,0 +1,28 @@
+detector_type_I:
+  Cooldown:
+  Conditions:
+  TargetConditions:
+    - lineofsight true
+  Skills:
+  - aura{auraName=detectortypeIscan;onTick=detector_scan;duration=40;c=1;maxStacks=1;cotd=false} @self
+  - onDamaged{auraName=detectortypeIdebuff;onTick=detector_type_I_debuff;duration=40;c=1;maxStacks=1;cotd=false;multiplier=1.1} @EIR{r=7;ignore=players}
+
+detector_scan:
+  Cooldown:
+  Conditions:
+    - ( holding{m=NETHERITE_SWORD} true || holding{m=DIAMOND_SWORD} true || holding{m=NETHERITE_AXE} true || holding{m=DIAMOND_AXE} true || holding{m=IRON_SWORD} true || holding{m=IRON_AXE} true ) true
+  Skills:
+  - onAttack{oH=detector_type_I_damage;cE=false;auraname=d_t_I}
+
+detector_type_I_debuff:
+  Cooldown:
+  Conditions:
+  Skills:
+  - potion{type=GLOWING;duration=40} @self
+
+detector_type_I_damage:
+  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
+  Conditions:
+  Skills:
+  #- damage{a=10} @target{conditions=[  - hasaura{aura=detectortypeIdebuff} true ]}
+  - effect:particles{p=enchanted_hit;amount=5;hS=0.3;vS=0.3;speed=0;y=1} @target{conditions=[  - hasaura{aura=detectortypeIdebuff} true ]}

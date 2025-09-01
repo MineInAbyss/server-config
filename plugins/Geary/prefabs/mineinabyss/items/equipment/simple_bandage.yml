@@ -1,0 +1,50 @@
+set.item:
+  type: minecraft:paper
+  itemName: Simple Bandage
+  itemModel: mineinabyss:simple_bandage
+  consumable:
+    animation: ENDERMAN.CARRYING
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - incombat false
+    onFail:
+    - sendActionBar:
+        text: <red>Not Sneaking / In Combat
+  - cooldown:
+      id: bandage
+      length: 20s
+      display: <#617B94>Simple Bandage
+  - mythicSkills:
+    - simple_bandage
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:simple_bandage
+    amount: 2
+  group: mineinabyss:simple_bandage
+  recipes:
+    - type: shaped
+      items:
+        M:
+          prefab: mineinabyss:mantoyer_horns
+        P:
+          prefab: mineinabyss:plant_matter
+        S:
+          type: SWEET_BERRIES
+        P: 
+          type: PAPER
+          
+      configuration: |-
+        | P |
+        |SPM|
+        | P |
+
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/other/bandages

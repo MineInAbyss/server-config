@@ -1,0 +1,86 @@
+charred_skeleton_curse:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - randomskill{skills=curse_kuongatari_1, curse_kuongatari_2, curse_kuongatari_3, curse_chikyuoebi, curse_areaofeffect_harm, curse_areaofeffect_poison, curse_slow_1, curse_slow_2, curse_blindness_1, curse_blindness_2, curse_levitation_1, curse_levitation_2, curse_hunger_1, curse_hunger_2, curse_bloodyscreen_1, curse_bloodyscreen_2, curse_throw_1, curse_throw_2} 0.8
+    - smokeswirl{duration=30;interval=30} @self
+    - sound{s=minecraft:ambient.cave;p=1;v=0.8} @PIR{r=5}
+
+golden_skeleton_death:
+  Cooldown: 1
+  Conditions:
+  Skills:
+    - effect:particlebox{particle=ominous_spawning;amount=30;hS=3;vS=1.5;speed=0;y=1;size=2;r=3} @self
+    - sound{s=minecraft:ambient.cave;p=1;v=0.8} @PIR{r=5}
+
+curse_kuongatari_1:
+  Skills:
+    - summon{type=kuongatari;amount=1;radius=1} @self
+
+curse_kuongatari_2:
+  Skills:
+    - summon{type=kuongatari;amount=2;radius=2} @self
+
+curse_kuongatari_3:
+  Skills:
+    - summon{type=kuongatari;amount=3;radius=2} @self
+
+curse_chikyuoebi:
+  Skills:
+    - summon{type=chikyuoebi;amount=1;radius=1} @self
+
+curse_areaofeffect_harm:
+  Skills:
+    - summonareaeffectcloud{p=entity_effect;d=100;r=4;rrot=0;type=HARM;l=2;pd=100} @self
+
+curse_areaofeffect_poison:
+  Skills:
+    - summonareaeffectcloud{p=entity_effect;d=100;r=4;rrot=0;type=POISON;l=2;pd=100} @self
+
+curse_slow_1:
+  Skills:
+    - potion{t=SLOW;l=2;d=200;p=false} @PIR{r=5}
+
+curse_slow_2:
+  Skills:
+    - potion{t=SLOW;l=4;d=200;p=false} @PIR{r=5}
+
+curse_blindness_1:
+  Skills:
+    - potion{t=BLINDNESS;d=200;p=false} @PIR{r=5}
+
+curse_blindness_2:
+  Skills:
+    - potion{t=BLINDNESS;l=2;d=200;p=false} @PIR{r=5}
+
+curse_levitation_1:
+  Skills:
+    - potion{t=LEVITATION;d=200;p=false} @PIR{r=5}
+
+curse_levitation_2:
+  Skills:
+    - potion{t=LEVITATION;l=4;d=100;p=false} @PIR{r=5}
+
+curse_hunger_1:
+  Skills:
+    - potion{t=HUNGER;d=100;p=false} @PIR{r=5}
+
+curse_hunger_2:
+  Skills:
+    - potion{t=HUNGER;l=4;d=100;p=false} @PIR{r=5}
+
+curse_bloodyscreen_1:
+  Skills:
+    - effect:bloodyScreen{d=100} @PIR{r=5}
+
+curse_bloodyscreen_2:
+  Skills:
+    - effect:bloodyScreen{d=200} @PIR{r=5}
+
+curse_throw_1:
+  Skills:
+    - throw{velocity=6;velocityY=5} @PIR{r=5}
+
+curse_throw_2:
+  Skills:
+    - throw{velocity=15;velocityY=5} @PIR{r=5}

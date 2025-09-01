@@ -26,10 +26,10 @@ CyanSwings_1:
     Invincible: true
   Skills:
   - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
-  - equip{item=cyan_swing_1:4} ~onSpawn
-  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
-  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
-  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - equip{item=cyan_swing_1 HAND} ~onSpawn
+  - equip{item=cyan_swing_2 HAND;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3 HAND;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4 HAND;delay=3} ~onSpawn
   - remove{delay=6} @self ~onSpawn
 CyanSwings_2:
   Type: ARMOR_STAND
@@ -43,10 +43,10 @@ CyanSwings_2:
     Invincible: true
   Skills:
   - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
-  - equip{item=cyan_swing_1:4} ~onSpawn
-  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
-  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
-  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - equip{item=cyan_swing_1 HAND} ~onSpawn
+  - equip{item=cyan_swing_2 HAND;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3 HAND;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4 HAND;delay=3} ~onSpawn
   - remove{delay=6} @self ~onSpawn
 CyanSwings_3:
   Type: ARMOR_STAND
@@ -60,10 +60,10 @@ CyanSwings_3:
     Invincible: true
   Skills:
   - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
-  - equip{item=cyan_swing_1:4} ~onSpawn
-  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
-  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
-  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - equip{item=cyan_swing_1 HAND} ~onSpawn
+  - equip{item=cyan_swing_2 HAND;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3 HAND;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4 HAND;delay=3} ~onSpawn
   - remove{delay=6} @self ~onSpawn
 CyanSwings_4:
   Type: ARMOR_STAND
@@ -77,10 +77,10 @@ CyanSwings_4:
     Invincible: true
   Skills:
   - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
-  - equip{item=cyan_swing_1:4} ~onSpawn
-  - equip{item=cyan_swing_2:4;delay=1} ~onSpawn
-  - equip{item=cyan_swing_3:4;delay=2} ~onSpawn
-  - equip{item=cyan_swing_4:4;delay=3} ~onSpawn
+  - equip{item=cyan_swing_1 HAND} ~onSpawn
+  - equip{item=cyan_swing_2 HAND;delay=1} ~onSpawn
+  - equip{item=cyan_swing_3 HAND;delay=2} ~onSpawn
+  - equip{item=cyan_swing_4 HAND;delay=3} ~onSpawn
   - remove{delay=6} @self ~onSpawn
 
 Crescent_Projectile:

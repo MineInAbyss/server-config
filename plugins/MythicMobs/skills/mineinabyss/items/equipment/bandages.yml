@@ -1,0 +1,13 @@
+simple_bandage:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=simplebandageheal;oE=simple_bandage_heal;duration=60;c=1;maxStacks=1;cotd=false} @self
+
+simple_bandage_heal:
+  Cooldown:
+  Conditions:
+  - sneaking true
+  Skills:
+  #particles
+  - heal{a=3} @self
