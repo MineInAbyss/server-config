@@ -5,20 +5,20 @@ detector_type_i:
     - lineofsight true
   Skills:
   - aura{auraName=detectortypeiscan;onTick=detector_scan;duration=40;c=1;maxStacks=1;cotd=false} @self
-  - onDamaged{auraName=detectortypeidebuff;onTick=detector_type_i_debuff;duration=40;c=1;maxStacks=1;cotd=false;multiplier=1.1} @EIR{r=7;ignore=players}
+  - onDamaged{auraName=detectortypeidebuff;onTick=detector_type_i_debuff;duration=40;c=1;maxStacks=1;cotd=false;multiplier=1.2} @target
 
 detector_scan:
   Cooldown:
   Conditions:
-    - ( holding{m=NETHERITE_SWORD} true || holding{m=DIAMOND_SWORD} true || holding{m=NETHERITE_AXE} true || holding{m=DIAMOND_AXE} true || holding{m=IRON_SWORD} true || holding{m=IRON_AXE} true ) true
   Skills:
   - onAttack{oH=detector_type_i_damage;cE=false;auraname=d_t_i}
 
 detector_type_i_debuff:
   Cooldown:
   Conditions:
+  TargetConditions:
   Skills:
-  - potion{type=GLOWING;duration=40} @self
+  - potion{type=GLOWING;duration=40}
 
 detector_type_i_damage:
   Cooldown: 0.6 #cooldown accounts for sword attack cooldown

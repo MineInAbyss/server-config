@@ -7,7 +7,6 @@ set.item:
   - <gold>A relic of Orthian tales rumored to mimic the effects
   - <gold>of the curse. Its origin is shrouded in obscurity.
   - <#D2D489><i>On use it grants blessings and curses.
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

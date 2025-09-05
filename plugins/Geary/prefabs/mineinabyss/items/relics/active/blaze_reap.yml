@@ -15,7 +15,6 @@ set.item:
       level: 5
   enchantable: 0
   unbreakable: {}
-disableItemInteractions: {}
 observe:
   itemLeftClick:
   - become: parent

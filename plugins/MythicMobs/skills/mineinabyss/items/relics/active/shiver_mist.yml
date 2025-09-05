@@ -8,6 +8,7 @@ Frost_Beam:
   - delay 10
   #- effect:sound{s=glacia_sounds:samus.ice_beam;volume=1;pitch=1} @self
   - projectile{onTick=Frost_Beam_TICK;onHit=Frost_Beam_HIT;v=30;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1;tyo=1;a=0.9;repeat=29;repeatinterval=2} @targetlocation
+  - skill{s=after_image_projectile}
   - sound{s=entity.ender_dragon.flap;volume=0.3;pitch=1.6;repeat=4;repeatinterval=3} @self
   #- sound{s=block.snow.break;volume=0.8;pitch=1.0;repeat=3;repeatinterval=4} @self
   - sound{s=entity.wither.shoot;volume=0.1;pitch=1.5;repeat=40;repeatinterval=2} @self
@@ -21,7 +22,7 @@ Frost_Beam_TICK:
 Frost_Beam_HIT:
   TargetConditions:
   Skills:
-  - damage{a=7;pkb=true} @EntitiesNearOrigin{r=2}
+  - damage{a=8;pkb=true} @EntitiesNearOrigin{r=2}
   - potion{type=SLOW;duration=80;level=3;hasParticles=false} @EntitiesNearOrigin{r=3}
   - skill{s=Frost_Bolt_HIT_FX} @EntitiesNearOrigin{r=1}
   #- effect:sound{s=glacia_sounds:samus.ice_freeze;volume=0.4;pitch=1} @self
@@ -30,7 +31,7 @@ Frost_Beam_HIT:
   
 Frost_Beam_EXPLODE:
   Skills:
-  - damage{a=7;pkb=false} @EntitiesNearOrigin{r=5}
+  - damage{a=8;pkb=false} @EntitiesNearOrigin{r=5}
   - prison{material=ICE;duration=80;breakable=false} @EntitiesNearOrigin{r=5}
   - potion{type=SLOW;duration=60;level=1;hasParticles=false} @EntitiesNearOrigin{r=5}
   - skill{s=Frost_Bolt_HIT_FX} @EntitiesNearOrigin{r=5}

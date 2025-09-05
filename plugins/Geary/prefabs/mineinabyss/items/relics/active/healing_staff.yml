@@ -7,7 +7,6 @@ set.item:
   - <gold>An artifact of peculiar smell adjutating cells
   - <gold>to improve wound healing.
   - <#D2D489><i>On use it grants life to organisms around.
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

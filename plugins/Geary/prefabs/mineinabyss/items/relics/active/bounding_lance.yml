@@ -9,7 +9,6 @@ set.item:
   - <#695654><i>When used it simulates blessings
   - <#695654><i>in its surroundings.
   unbreakable: {}
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent
@@ -35,4 +34,4 @@ observe:
     - boundinglance
 
 resourcepack:
-  model: mineinabyss:item/relics/bounding_lance
+  model: mineinabyss:item/relics/shining_pike

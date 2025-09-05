@@ -2,14 +2,14 @@ laments_thread:
   Cooldown:
   Conditions:
   Skills:
-  - effect:particleorbital{r=3;points=20;t=100;i=5;vy=20;rX=35;rZ=5;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=3;points=20;t=100;i=3;vy=20;rX=55;rZ=15;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=3;points=20;t=100;i=8;vy=20;rX=135;rZ=35;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=3;points=20;t=100;i=4;vy=20;rX=200;rZ=20;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=2;points=16;t=100;i=7;vy=20;rX=0;rZ=45;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=2;points=16;t=100;i=4;vy=20;rX=45;rZ=0;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=2;points=16;t=100;i=6;vy=20;rX=90;rZ=45;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
-  - effect:particleorbital{r=2;points=16;t=100;i=5;vy=20;rX=150;rZ=90;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.1} @self
+  - effect:particleorbital{r=3;points=20;t=100;i=5;vy=20;rX=35;rZ=5;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=3;points=20;t=100;i=3;vy=20;rX=55;rZ=15;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=3;points=20;t=100;i=8;vy=20;rX=135;rZ=35;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=3;points=20;t=100;i=4;vy=20;rX=200;rZ=20;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=2;points=16;t=100;i=7;vy=20;rX=0;rZ=45;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=2;points=16;t=100;i=4;vy=20;rX=45;rZ=0;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=2;points=16;t=100;i=6;vy=20;rX=90;rZ=45;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
+  - effect:particleorbital{r=2;points=16;t=100;i=5;vy=20;rX=150;rZ=90;rY=0;particle=dust_color_transition;color=#D2C0C4;color2=#C6ADC6;color3=#8F7193;size=0.6} @self
   - aura{auraName=lamentsdread;onTick=laments_dread;duration=50;c=1;maxStacks=1;cotd=false} @self
   - aura{auraName=lamentsdread;onTick=laments_dread;duration=50;c=1;maxStacks=1;cotd=false} @EIR{r=3}
 
@@ -17,6 +17,6 @@ laments_dread:
   Cooldown:
   Conditions:
   Skills:
-  - effect:particles{particle=falling_obsidian_tear;color=#803B20;amount=3;r=1;i=1;y=1;hS=0.5;vS=0.5;speed=0.5} @self
-  - potion{type=WEAKNESS;duration=20} @self
-  - potion{type=SLOW_DIGGING;duration=40} @self
+  - effect:particles{particle=falling_obsidian_tear;color=#803B20;amount=1;y=1;hS=0.5;vS=0.5;speed=0.1} @self
+  - potion{type=WEAKNESS;duration=20;p=false} @self
+  - potion{type=SLOW_DIGGING;duration=40;p=false} @self

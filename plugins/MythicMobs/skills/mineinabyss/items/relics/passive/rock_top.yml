@@ -8,12 +8,12 @@ rock_top_spin:
   Cooldown:
   Conditions:
   Skills:
-  - sound{s=weather.rain;volume=0.2;pitch=0.7} @self
-  - effect:particles{particle=firework;color=#803B20;amount=3;r=1;i=1;y=0.5;hS=0.5;vS=0.5} @self
-  - spin{duration=10;velocity=2} @self
+  - sound{s=weather.rain;volume=0.1;pitch=0.7} @self
+  - effect:particles{particle=firework;color=#803B20;amount=2;y=0.5;hS=0.5;vS=0.5;speed=0} @self
+  - spin{duration=10;velocity=1.5} @self
 
 rock_top_confusion:
   Cooldown:
   Conditions:
   Skills:
-  - potion{type=CONFUSION;duration=80} @self
+  - potion{type=CONFUSION;duration=80;p=false} @self

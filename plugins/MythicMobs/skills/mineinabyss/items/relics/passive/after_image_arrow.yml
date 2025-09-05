@@ -8,14 +8,16 @@ after_image_shot:
   Cooldown:
   Conditions:
   Skills:
-  - onShoot{auraName=afterimageshot;onShoot=after_image;duration=20;c=1} @self
+  - onShoot{auraName=afterimageshot;onShoot=after_image_bow;duration=20;c=1} @self
 
-after_image:
+after_image_bow:
   Cooldown:
   Conditions:
+    - bowtension{value=>0.5} true
   Skills:
   - delay 10
-  - shoot{type=ARROW;oT=after_image_tick;velocity=5;damage=10;pl=2} @targetlocation
+  #- shoot{type=ARROW;oT=after_image_tick;velocity=0.5;damage=10;pl=2} @targetlocation
+  - projectile{bulletType=ARROW;arrowType=NORMAL;oT=after_image_tick;oH=after_image_hit;g=0.6;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation
 
 after_image_tick:
   Cooldown:
@@ -23,18 +25,18 @@ after_image_tick:
   Skills:
   - effect:particles{particle=end_rod;amount=4;hS=0.1;vS=0.1;speed=0.01}
 
-after_image_projectiles:
+after_image_hit:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=10} @EIR{r=2}
+
+after_image_projectile: #skill to add to all projectile based relics made: - skill{s=after_image_projectile}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 10
-  - projectile{onTick=after_image_tick;onHit=after_image_impact;onEnd=after_image_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @targetlocation
-
-after_image_impact:
-  Cooldown:
-  Conditions:
-  Skills:
-  - damage{a=10} @EIR{r=2}
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=10;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation
 
 #- bowtension{value=>0.5} true

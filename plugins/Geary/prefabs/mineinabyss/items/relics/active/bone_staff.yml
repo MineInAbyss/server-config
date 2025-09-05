@@ -8,7 +8,6 @@ set.item:
   - <gold>who have succumbed to the curse of the abyss.
   - <#D2D489><i>Powered by the longing of stuck souls
   - <#D2D489><i>crystallizing them when used.
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

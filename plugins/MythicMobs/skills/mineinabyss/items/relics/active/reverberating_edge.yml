@@ -4,16 +4,16 @@ reverberating_edge_hit:
     - holding{m=NETHERITE_SWORD} true
   Skills:
   - onAttack{oH=reverberating_edge_stack;cE=false;auraname=r_e_s} @self
-  - skill{s=reverberating_edge_vibrate_1} @self
+  - skill{s=reverberating_edge_vibrate_1}
   - delay 1
-  - skill{s=reverberating_edge_vibrate_2} @self
+  - skill{s=reverberating_edge_vibrate_2}
   - delay 1
-  - skill{s=reverberating_edge_vibrate_3} @self
+  - skill{s=reverberating_edge_vibrate_3}
   - delay 1
-  - skill{s=reverberating_edge_vibrate_4} @self
+  - skill{s=reverberating_edge_vibrate_4}
 
 reverberating_edge_stack:
-  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
+  Cooldown: 12 #cooldown accounts for sword attack cooldown
   Conditions:
   Skills:
   - aura{auraName=reverberatingedgestack;duration=100;c=1;maxStacks=10;cotd=false;rd=true} @self
@@ -34,7 +34,7 @@ reverberating_edge_vibrate_2:
   - effect:particles{particle=ash;amount=5;hS=0.5;vS=1;speed=0;y=0.5;size=1.5} @self
 
 reverberating_edge_vibrate_3:
-  Cooldown: 0.6
+  Cooldown: 12
   Conditions:
     - hasaurastacks{n=reverberatingedgestack;s=7to8} true
   Skills:
@@ -42,7 +42,7 @@ reverberating_edge_vibrate_3:
   - damage{a=2} @target
 
 reverberating_edge_vibrate_4:
-  Cooldown: 0.6
+  Cooldown: 12
   Conditions:
     - hasaurastacks{n=reverberatingedgestack;s=9to10} true
   Skills:
@@ -65,7 +65,7 @@ reverberating_edge_ability:
   - effect:particles{particle=instant_effect;amount=10;speed=0;y=0.5} @self
   - effect:particles{p=falling_dust;material=STONE;amount=10;hS=3;vS=1.5;speed=0;y=0.5;size=1.5} @self
   - effect:particlebox{particle=ash;amount=40;hS=3;vS=1.5;speed=0;y=1;size=2;r=3} @self
-  - effect:particlebox{particle=white_ash;amount=20;hS=3;vS=1.5;speed=0;y=1;size=1.2;r=3} @self
+  - effect:particlebox{particle=white_ash;amount=10;hS=3;vS=1.5;speed=0;y=1;size=1.2;r=3} @self
   - stun{d=80;f=true} @EIR{r=3}
   - potion{t=SLOW;d=140;l=10} @EIR{r=3}
 

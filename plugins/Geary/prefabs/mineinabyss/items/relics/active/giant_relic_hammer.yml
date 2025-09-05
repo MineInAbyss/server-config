@@ -8,7 +8,6 @@ set.item:
   - <#31524E><i>Its core is being pulled by the depths of the abyss creating
   - <#31524E><i>heavy downward swings with large shockwaves on impact.
   unbreakable: {}
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

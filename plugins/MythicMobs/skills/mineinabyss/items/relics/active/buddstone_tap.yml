@@ -55,24 +55,25 @@ livingcballs:
   - potion{t=SLOW;l=3;d=50;p=false} @Self
   #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
   - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
-  - delay 50
+  - delay 40
   - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 6
+  - skill{s=after_image_projectile}
+  - delay 2
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 6
+  - delay 2
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 6
+  - delay 2
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - delay 6
+  - delay 2
   - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;sB=true} @Targetlocation

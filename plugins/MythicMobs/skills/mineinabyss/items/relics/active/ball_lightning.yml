@@ -7,6 +7,7 @@ lightning_ball:
   - sound{s=item.flintandsteel.use;sc=hostile;p=2.0;v=0.5;repeat=4;repeatInterval=4} @origin
   - delay 20
   - projectile{oT=lightning_tick;mr=170;v=1.4;i=1;vN=1;hN=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=200;syo=1.2;g=0;sE=false;hp=false;HitSelf=true} @targetlocation
+  - skill{s=after_image_projectile}
 
 lightning_tick:
   Cooldown: 1

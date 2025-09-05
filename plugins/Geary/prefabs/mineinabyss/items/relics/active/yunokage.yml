@@ -8,6 +8,32 @@ set.item:
   - <#195959><i>It is known to create crescent shaped slashes damaging
   - <#195959><i>all organic matter that it comes into contact with.
   unbreakable: {}
-disableItemInteractions: {}
+observe:
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - yukonokage_hit
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=yukonokagestack;s=20to220} true
+    onFail:
+    - sendActionBar:
+        text: <red>You have no souls
+  - cooldown:
+      id: yukonokage
+      length: 5s
+      display: <#617B94>Yukonokage
+  - mythicSkills:
+    - yukonokage_ability
+passive:
+- match:
+  - inHand
+  every: 1s
+  run:
+  - become: parent 
+  - mythicSkills:
+    - yukonokage_soul_display
 resourcepack:
   model: mineinabyss:item/relics/yukonokage

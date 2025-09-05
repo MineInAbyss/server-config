@@ -4,7 +4,7 @@ capillary_hit:
     - holding{m=NETHERITE_SWORD} true
     - isblocking false
   Skills:
-  - onAttack{oH=capillary_growth_stack;cE=false;auraname=c_g_s} @self
+  - onAttack{oH=capillary_growth_stack;cE=false;auraname=c_g_s}
   - skill{s=capillary_growth_kill} ~onKill
   - delay 1
   - skill{s=capillary_state_1} @self
@@ -12,10 +12,10 @@ capillary_hit:
   - skill{s=capillary_state_2} @self
 
 capillary_growth_stack:
-  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
+  Cooldown: 12 #cooldown accounts for sword attack cooldown
   Skills:
-  - aura{auraName=capillarygrowthstack;duration=100;c=1;maxStacks=10;cotd=false} @self
-  - aura{auraName=capillarysyphonstack;oT=capillary_syphon_target;duration=200;c=1;maxStacks=1;cotd=false} @target
+  - aura{auraName=capillarygrowthstack;duration=100;c=1;maxStacks=10;cotd=false;rd=true} @self
+  - aura{auraName=capillarysyphonstack;oT=capillary_syphon_target;duration=200;c=1;maxStacks=1;cotd=false;rd=true} @target
   - effect:particles{particle=reddust;amount=2;speed=0;y=1} @target
 
 capillary_growth_kill:

@@ -7,7 +7,6 @@ set.item:
   - <gold>A talisman deeply intertwined with the force fields humidity.
   - <#D2D489><i>When used it causes droplets to combine forming
   - <#D2D489><i>a wave pushing everything back it touches.
-disableItemInteractions: {}
 observe:
   itemRightClick:
   - become: parent

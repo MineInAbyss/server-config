@@ -1,23 +1,26 @@
 
-blackhole:
+subtle_pull:
   Cooldown:
   Conditions:
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
-  - sound{s=entity.ender_dragon.shoot;;volume=2;pitch=1.6} @origin
-  - sound{s=entity.ender_dragon.shoot;;volume=2;pitch=0.2} @origin
-  - sound{s=entity.ender_dragon.shoot;;volume=2;pitch=0.6} @origin
+  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;repeat=3;repeatInterval=3} @self #red particles maybe with particleatom
+  - sound{s=block.bell.resonate;volume=0.75;pitch=2} @self #thinking about sound
+  - sound{s=block.bell.resonate;volume=0.75;pitch=4} @self
+  - delay 15
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin #dis one unsure about
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=0.2} @origin
+  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=0.6} @origin
   - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
-  - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=vait2;onHit=vahit2;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=vaend2;sE=false;hp=true} @targetlocation
+  - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_hit;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @targetlocation
   - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
 
-
-
-vait2:
+subtle_pull_tick:
   Skills:
   - effect:particles{p=smoke;y=0;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
   - effect:particles{p=reddust;color=#000000;y=0.2;amount=8;speed=1;hS=0.7;vS=0.4;size=2} @Origin
-vahit2:
+
+subtle_pull_hit:
   Skills:
   - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
   - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
@@ -29,8 +32,7 @@ vahit2:
   - sound{s=entity.player.attack.crit;volume=1;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
   - effect:bloodyScreen{d=30} @EntitiesNearOrigin{r=1.6}
 
-
-vaend2:
+subtle_pull_end:
   Skills:
   - sound{s=entity.wither.ambient;volume=1;pitch=0.2} @origin
   - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @Origin
@@ -62,7 +64,7 @@ vaend2:
   - delay 40
   - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=100;radius=3.1;size=4;repeat=2;repeatinterval=2} @origin
   - delay 30
-  - skill{s=blackholedamage} @origin
+  - skill{s=subtle_pull_damage} @origin
   - delay 4
   - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2} @origin
   - effect:particlesphere{p=smoke_large;amount=200;radius=3;size=7;repeat=4;repeatinterval=2;speed=0.6} @origin
@@ -92,7 +94,7 @@ vaend2:
   - sound{s=block.end_portal.spawn;volume=1;pitch=0.6} @origin
   - sound{s=block.end_portal.spawn;volume=1;pitch=1.6} @origin
 
-blackholedamage:
+subtle_pull_damage:
   Cooldown: 0
   Skills:
    - shieldbreak{duration=150} @EntitiesNearOrigin{r=7}
@@ -102,6 +104,8 @@ blackholedamage:
                               - playerwithin{d=2} true ]}
    - damage{a=25;pi=true} @PlayersNearOrigin{r=7}
 
+
+
 ueco:
   Cooldown: 0
   Skills:
@@ -109,6 +113,7 @@ ueco:
   - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
   - potion{type=SLOW;duration=10;lvl=0;p=false} @EntitiesNearOrigin{r=2}
  # - potion{type=CONFUSION;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=2}
+
 uecoab:
   Cooldown: 0
   Skills:
