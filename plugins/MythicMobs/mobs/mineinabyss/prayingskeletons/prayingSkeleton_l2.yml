@@ -16,4 +16,4 @@ prayingSkeleton_l2:
     - skill{s=relicDrop;delay=10;item=VineCharmDrop;grade=2} ~onDeath 0.01
     - skill{s=relicDrop;delay=15;item=VerdauEffaxDrop;grade=3} ~onDeath 0.025
     - skill{s=relicDrop;delay=20;item=AnimalTotemDrop;grade=4} ~onDeath 0.05
-    - skill{s=relicDrop;item=RelicBowDrop;grade=4} ~onDeath 0.002
+    - skill{s=relicDrop;item=RelicBowDrop;grade=1} ~onDeath 0.002
