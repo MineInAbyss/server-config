@@ -11,12 +11,6 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - EnchantingLevel{l=>2} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience
   - cooldown:
       id: hammer_smash
       length: 35s

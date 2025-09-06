@@ -13,7 +13,7 @@ after_image_shot:
 after_image_bow:
   Cooldown:
   Conditions:
-    - bowtension{value=>0.5} true
+    #- bowtension{value=>0.5} true
   Skills:
   - delay 10
   #- shoot{type=ARROW;oT=after_image_tick;velocity=0.5;damage=10;pl=2} @targetlocation
@@ -37,6 +37,4 @@ after_image_projectile: #skill to add to all projectile based relics made: - ski
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 10
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=30;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation
-
-#- bowtension{value=>0.5} true
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=50;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation

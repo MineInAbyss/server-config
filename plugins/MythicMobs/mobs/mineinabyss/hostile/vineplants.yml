@@ -123,7 +123,7 @@ wanabushi:
     - skill:allyvineblasterattack @Self ~onTimer:10
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
-    - remove{delay=400} @self ~onSpawn
+    - remove{delay=500} @self ~onSpawn
 
 vinepoofer:
   Type: ZOMBIE

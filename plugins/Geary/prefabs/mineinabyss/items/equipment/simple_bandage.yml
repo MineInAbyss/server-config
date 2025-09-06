@@ -2,25 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: Simple Bandage
   itemModel: mineinabyss:simple_bandage
-  #consumable:
-  #  animation: ENDERMAN.CARRYING
-observe:
-  itemRightClick:
-  - become: parent
-  - ensure:
-      player:
-        sneaking: true
-      mythicConditions:
-      - incombat false
-    onFail:
-    - sendActionBar:
-        text: <red>Not Sneaking / In Combat
-  - cooldown:
-      id: bandage
-      length: 20s
-      display: <#617B94>Simple Bandage
-  - mythicSkills:
-    - simple_bandage
+  maxStackSize: 16
 set.recipes:
   discoverRecipes: true
   result:
@@ -43,6 +25,24 @@ set.recipes:
         | P |
         |SPM|
         | P |
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - incombat false
+    onFail:
+    - sendActionBar:
+        text: <red>Not Sneaking / In Combat
+  - cooldown:
+      id: bandage
+      length: 20s
+      display: <#617B94>Simple Bandage
+  - animation: ENDERMAN.CARRYING
+  - mythicSkills:
+    - simple_bandage
 
 resourcepack:
   textures:

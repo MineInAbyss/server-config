@@ -39,7 +39,8 @@ reverberating_edge_vibrate_3:
     - hasaurastacks{n=reverberatingedgestack;s=7to8} true
   Skills:
   - effect:particles{p=falling_dust;material=STONE;amount=5;hS=0.5;vS=1;speed=0;y=0.5} @self
-  - damage{a=2} @target
+  #- damage{a=2} @target
+  - onAttack{oH=reverberating_edge_damage_1;cE=false;auraname=r_e_s} @target
 
 reverberating_edge_vibrate_4:
   Cooldown: 0.6
@@ -47,7 +48,20 @@ reverberating_edge_vibrate_4:
     - hasaurastacks{n=reverberatingedgestack;s=9to10} true
   Skills:
   - effect:particles{p=falling_dust;material=STONE;amount=10;hS=0.5;vS=1;speed=0;y=0.5;size=1.5} @self
-  - damage{a=3} @target
+  #- damage{a=3} @target
+  - onAttack{oH=reverberating_edge_damage_2;cE=false;auraname=r_e_s} @target
+
+reverberating_edge_damage_1:
+  Cooldown: 0.6
+  Conditions:
+  Skills:
+  - damage{a=2}
+
+reverberating_edge_damage_2:
+  Cooldown: 0.6
+  Conditions:
+  Skills:
+  - damage{a=3}
 
 reverberating_edge_ability:
   Cooldown: 

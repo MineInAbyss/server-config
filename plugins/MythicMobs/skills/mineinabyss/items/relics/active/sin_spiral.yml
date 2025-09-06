@@ -1,6 +1,5 @@
 sin_spiral:
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
   - effect:particles{particle=warped_spore;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
   - effect:particles{particle=white_smoke;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
   - sound{s=entity.bat.takeoff;p=2;v=0.6} @self

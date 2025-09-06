@@ -3,7 +3,6 @@ hammer_smash:
   - onground true
   Cooldown: 3
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -30";op=true}
   - effect:particles{particle=crit;a=80;hs=0.5;vs=0.5;speed=1} @origin
   - effect:sound{s=entity.iron_golem.death;v=1;p=0.5} @PIR{r=20}
   - delay 10

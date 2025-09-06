@@ -13,7 +13,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - hasaurastacks{n=crescentprimer;s=>1} true
+      - hasaurastacks{n=crescentprimer;s=>=1} true
     onFail:
     - sendActionBar:
         text: <red>Not Primed

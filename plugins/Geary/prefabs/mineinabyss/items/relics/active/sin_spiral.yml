@@ -10,12 +10,6 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - EnchantingLevel{l=>1} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience
   - cooldown:
       id: sinspiral
       length: 8s #change to 50s after testing

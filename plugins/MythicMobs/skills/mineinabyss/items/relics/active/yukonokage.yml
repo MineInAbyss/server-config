@@ -8,7 +8,7 @@ yukonokage_hit_:
   Skills:
   - variableset{n=caster.yukonokage_lock_ability;val=0}
   - skill{s=yukonokage_init_vars}
-  - onAttack{oH=yukonokage_stack;cE=false;auraname=y_h_s} @self
+  - onAttack{oH=yukonokage_stack;cE=false;auraname=y_h_s}
   - pull{velocity=1} @target
   - delay 1
   - skill{s=yukonokage_soul_overload}
@@ -21,7 +21,7 @@ yukonokage_init_vars:
   - setvariable{var=caster.yukonokage_stacks;val=0}
 
 yukonokage_stack:
-  Cooldown: 0.2 # Cooldown field is in seconds, accounts for sword attack cooldown
+  Cooldown: 0.6 # Cooldown field is in seconds, accounts for sword attack cooldown
   Conditions:
   - variableisset{var=caster.yukonokage_stacks} true
   Skills:
@@ -65,8 +65,8 @@ soul_overload_freeze:
 
 soul_overload_freeze_effect:
   Skills:
-  - freeze{ticks=30} @self
-  - damage{a=4;ie=true} @self
+  - freeze{ticks=40}
+  - damage{a=4;ie=true}
 
 yukonokage_ability: # Shim for geary
   Skills:
@@ -238,7 +238,7 @@ yukonokage_soul_display_10:
 
 yukonokage_soul_tick:
   Skills:
-  - effect:particlesphere{particle=snowflake;amount=5;radius=2;hS=1;vS=0.5;s=0.2} @caster
+  - effect:particlesphere{particle=snowflake;amount=1;radius=2;hS=1;vS=0.5;s=0.2} @caster
   - effect:particles{particle=reverse_portal;amount=1;speed=0} @origin
 
 yukonokage_skull_end:

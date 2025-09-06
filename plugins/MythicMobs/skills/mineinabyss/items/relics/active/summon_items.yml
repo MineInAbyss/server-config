@@ -1,8 +1,7 @@
-vinecharm:
+wanabushi_summon:
   Cooldown: 1
   Conditions:
   Skills:
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -50";op=true} @self
     - summon{type=wanabushi;amount=1;radius=3;ctt=true;itt=true;os=true} @self
     - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
     - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self

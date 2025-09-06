@@ -1,11 +1,14 @@
-capillary_hit:
+capillary_hit: # Shim for geary
+  Skills:
+  - skill{s=capillary_hit_}
+capillary_hit_:
   Cooldown:
   Conditions:
     - holding{m=NETHERITE_SWORD} true
     - isblocking false
   Skills:
   - onAttack{oH=capillary_growth_stack;cE=false;auraname=c_g_s}
-  - skill{s=capillary_growth_kill} ~onKill
+  - onDeath{od=capillary_growth_kill} @target
   - delay 1
   - skill{s=capillary_state_1} @self
   - delay 1
@@ -21,8 +24,8 @@ capillary_growth_stack:
 capillary_growth_kill:
   Cooldown: 0.6
   Skills:
-  - heal{a=2} @self
-  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+  - heal{a=2} @caster
+  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @caster
 
 capillary_state_1:
   Cooldown: 
@@ -38,7 +41,10 @@ capillary_state_2:
   Skills:
   - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1;size=1.5} @self
 
-capillary_growth_effect:
+capillary_effect: # Shim for geary
+  Skills:
+  - skill{s=capillary_growth_effect_}
+capillary_growth_effect_:
   Cooldown:
   Conditions:
     - hasaurastacks{n=capillarygrowthstack;s=10} true

@@ -10,18 +10,12 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - EnchantingLevel{l=>1} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience
   - cooldown:
       id: wanabushi
       length: 40s
       display: <#51C947>Wanabushi
   - mythicSkills:
-    - vinecharm
+    - wanabushi_summon
 resourcepack:
   textures:
     layers:

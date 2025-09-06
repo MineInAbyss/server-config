@@ -11,15 +11,9 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - EnchantingLevel{l=>2} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience
   - cooldown:
       id: petrifying_thud
-      length: 44s #change to 44s after testing
+      length: 44s
       display: <#CCDADB>Petrifying Stone
   - mythicSkills:
     - petrifying_thud

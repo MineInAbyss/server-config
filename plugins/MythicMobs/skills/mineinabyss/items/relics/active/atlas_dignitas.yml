@@ -1,12 +1,18 @@
-atlas_trigger:
+atlas_trigger: # Shim for geary
+  Skills:
+  - skill{s=atlas_trigger_}
+atlas_trigger_:
   Cooldown: 
   TargetConditions:
-    - FoodLevel{a=>4} true
+    - FoodLevel{a=>=4} true
   Skills:
   - aura{auraName=atlastrigger;duration=4444;c=1;cod=true;cogd=true} @self
   - effect:particles{particle=crit;amount=15;hS=0.5;vS=1;speed=0;y=0.5} @self
   
-atlas_dignitas:
+atlas_dignitas: # Shim for geary
+  Skills:
+  - skill{s=atlas_dignitas_}
+atlas_dignitas_:
   Cooldown: 
   Conditions:
     - hasaurastacks{n=atlastrigger;s=1} true
@@ -23,7 +29,7 @@ atlas_dignitas_mine:
   Cooldown: 
   Conditions:
   TargetConditions:
-    - FoodLevel{a=>4} true
+    - FoodLevel{a=>=4} true
   Skills:
   - onBlockBreak{oB=atlas_break;oT=atlas_tick;cE=false;auraname=atlasskill;d=100;c=1;ms=22;cod=true;cogd=true}
 
@@ -35,7 +41,7 @@ atlas_break:
 atlas_tick:
   Cooldown:
   TargetConditions:
-    - FoodLevel{a=>4} true
+    - FoodLevel{a=>=4} true
   Skills:
   - potion{t=HASTE;d=20;l=1} @self
   - sound{s=entity.bee.loop;sc=hostile;p=0.3;v=0.2} @self
@@ -44,11 +50,11 @@ atlas_tick:
 atlas_debuff:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=atlasskill;s=>20} true
+    - hasaurastacks{n=atlasskill;s=>=20} true
   TargetConditions:
-    - FoodLevel{a=>4} true
+    - FoodLevel{a=>=4} true
   Skills:
-  - hunger{a=1} @self
+  - feed{a=-1} @self
   - auraremove{aura=atlasskill;stacks=20} @self
 
 atlas_cancel:
@@ -57,7 +63,7 @@ atlas_cancel:
     - hasaurastacks{n=atlasskill} true
     - hasaurastacks{n=atlastrigger;s=1} true
   TargetConditions:
-    - FoodLevel{a=<3} true
+    - FoodLevel{a=<=3} true
   Skills:
   - auraremove{aura=atlasskill} @self
   - auraremove{aura=atlastrigger} @self

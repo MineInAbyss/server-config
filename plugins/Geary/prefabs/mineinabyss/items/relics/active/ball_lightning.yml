@@ -19,7 +19,7 @@ observe:
         text: <red>Out of Experience
   - cooldown:
       id: lightning_ball
-      length: 8s #change to 30-40s after testing
+      length: 35s
       display: <#CCDADB>Ball Lightning
   - mythicSkills:
     - lightning_ball

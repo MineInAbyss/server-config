@@ -39,7 +39,7 @@ crescent_slash_3:
 
 crescent_slash_4:
   Conditions:
-    - hasaurastacks{n=crescentprimer;s=>7} true
+    - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
   - skill{s=crescent_debuff}
   - delay 1
@@ -50,7 +50,7 @@ crescent_slash_4:
 
 crescent_debuff:
   Conditions:
-    - hasaurastacks{n=crescentprimer;s>=7} true
+    - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
   - effect:particles{p=flash;amount=3;hS=0.3;vS=0.3;speed=0;y=0.5} @forward{f=1}
   - damage{a=30;pkb=false;hnp=false;hp=true;pi=true} @self
@@ -109,29 +109,29 @@ crescent_primer:
   - skill{s=crescent_slash_4_charged} @self
 
 crescent_slash_1_charged:
-  Cooldown: 5
+  Cooldown: 1
   Conditions:
     - hasaurastacks{n=crescentprimer;s=1to2} true
   Skills:
   - effect:particles{p=end_rod;amount=2;hS=0.5;vS=1;speed=0;y=0.5}
 
 crescent_slash_2_charged:
-  Cooldown: 5
+  Cooldown: 1
   Conditions:
     - hasaurastacks{n=crescentprimer;s=3to4} true
   Skills:
   - effect:particles{p=end_rod;amount=5;hS=0.5;vS=1;speed=0;y=0.5}
 
 crescent_slash_3_charged:
-  Cooldown: 5
+  Cooldown: 1
   Conditions:
     - hasaurastacks{n=crescentprimer;s=5to6} true
   Skills:
   - effect:particles{p=end_rod;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
 
 crescent_slash_4_charged:
-  Cooldown: 5
+  Cooldown: 1
   Conditions:
-    - hasaurastacks{n=crescentprimer;s=>7} true
+    - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
   - effect:particles{p=end_rod;amount=10;hS=0.5;vS=1;speed=0;y=0.5}
