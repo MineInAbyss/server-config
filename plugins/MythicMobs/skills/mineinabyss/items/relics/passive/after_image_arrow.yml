@@ -8,7 +8,7 @@ after_image_shot:
   Cooldown:
   Conditions:
   Skills:
-  - onShoot{auraName=afterimageshot;onShoot=after_image_bow;duration=20;c=1} @self
+  - onShoot{auraName=afterimageshot;onShoot=after_image_bow;duration=20;c=1}
 
 after_image_bow:
   Cooldown:
@@ -37,6 +37,6 @@ after_image_projectile: #skill to add to all projectile based relics made: - ski
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 10
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=10;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=30;sB=true;sE=true;v=1;hp=true;hnp=true} @targetlocation
 
 #- bowtension{value=>0.5} true

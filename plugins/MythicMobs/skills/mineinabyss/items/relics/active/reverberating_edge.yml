@@ -13,7 +13,7 @@ reverberating_edge_hit:
   - skill{s=reverberating_edge_vibrate_4}
 
 reverberating_edge_stack:
-  Cooldown: 12 #cooldown accounts for sword attack cooldown
+  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
   Conditions:
   Skills:
   - aura{auraName=reverberatingedgestack;duration=100;c=1;maxStacks=10;cotd=false;rd=true} @self
@@ -34,7 +34,7 @@ reverberating_edge_vibrate_2:
   - effect:particles{particle=ash;amount=5;hS=0.5;vS=1;speed=0;y=0.5;size=1.5} @self
 
 reverberating_edge_vibrate_3:
-  Cooldown: 12
+  Cooldown: 0.6
   Conditions:
     - hasaurastacks{n=reverberatingedgestack;s=7to8} true
   Skills:
@@ -42,7 +42,7 @@ reverberating_edge_vibrate_3:
   - damage{a=2} @target
 
 reverberating_edge_vibrate_4:
-  Cooldown: 12
+  Cooldown: 0.6
   Conditions:
     - hasaurastacks{n=reverberatingedgestack;s=9to10} true
   Skills:

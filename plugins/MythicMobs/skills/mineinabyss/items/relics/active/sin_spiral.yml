@@ -9,7 +9,7 @@ sin_spiral:
   - delay 10
   - skill{sin_spiral_effect} @self
 
-sin_spiral_effect: #isnt working
+sin_spiral_effect: #isnt working and lacks "animation"
   Skills:
   - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @forward{f=3;rot=0}
   - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @forward{f=3;rot=0}

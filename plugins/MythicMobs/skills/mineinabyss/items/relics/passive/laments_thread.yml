@@ -17,6 +17,6 @@ laments_dread:
   Cooldown:
   Conditions:
   Skills:
-  - effect:particles{particle=falling_obsidian_tear;color=#803B20;amount=1;y=1;hS=0.5;vS=0.5;speed=0.1} @self
+  - effect:particles{particle=entity_effect;color=#803B20;amount=1;y=1;hS=0.5;vS=0.5;speed=0.1} @self
   - potion{type=WEAKNESS;duration=20;p=false} @self
   - potion{type=SLOW_DIGGING;duration=40;p=false} @self

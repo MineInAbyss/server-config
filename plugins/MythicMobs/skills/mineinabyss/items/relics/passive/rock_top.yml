@@ -9,7 +9,7 @@ rock_top_spin:
   Conditions:
   Skills:
   - sound{s=weather.rain;volume=0.1;pitch=0.7} @self
-  - effect:particles{particle=firework;color=#803B20;amount=2;y=0.5;hS=0.5;vS=0.5;speed=0} @self
+  - effect:particles{particle=electric_spark;color=#803B20;amount=2;y=0.5;hS=0.5;vS=0.5;speed=0} @self
   - spin{duration=10;velocity=1.5} @self
 
 rock_top_confusion:

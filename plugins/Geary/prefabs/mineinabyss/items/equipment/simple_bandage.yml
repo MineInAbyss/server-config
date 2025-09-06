@@ -2,8 +2,8 @@ set.item:
   type: minecraft:paper
   itemName: Simple Bandage
   itemModel: mineinabyss:simple_bandage
-  consumable:
-    animation: ENDERMAN.CARRYING
+  #consumable:
+  #  animation: ENDERMAN.CARRYING
 observe:
   itemRightClick:
   - become: parent

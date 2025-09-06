@@ -2,7 +2,7 @@ charred_skeleton_curse:
   Cooldown: 1
   Conditions:
   Skills:
-    - randomskill{skills=curse_kuongatari_1, curse_kuongatari_2, curse_kuongatari_3, curse_chikyuoebi, curse_areaofeffect_harm, curse_areaofeffect_poison, curse_slow_1, curse_slow_2, curse_blindness_1, curse_blindness_2, curse_levitation_1, curse_levitation_2, curse_hunger_1, curse_hunger_2, curse_bloodyscreen_1, curse_bloodyscreen_2, curse_throw_1, curse_throw_2} 0.8
+    - randomskill{skills=curse_kuongatari_1, curse_kuongatari_2, curse_kuongatari_3, curse_chikyuoebi, curse_areaofeffect_harm, curse_areaofeffect_poison, curse_slow_1, curse_slow_2, curse_blindness_1, curse_blindness_2, curse_levitation_1, curse_levitation_2, curse_hunger_1, curse_hunger_2, curse_bloodyscreen_1, curse_bloodyscreen_2, curse_throw_1, curse_throw_2}
     - smokeswirl{duration=30;interval=30} @self
     - sound{s=minecraft:ambient.cave;p=1;v=0.8} @PIR{r=5}
 

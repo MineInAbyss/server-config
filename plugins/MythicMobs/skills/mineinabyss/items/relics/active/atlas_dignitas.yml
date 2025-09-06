@@ -13,11 +13,11 @@ atlas_dignitas:
     - holding{m=NETHERITE_PICKAXE} true
   TargetConditions:
   Skills:
-  - skill{atlas_dignitas_mine} @self
+  - skill{atlas_dignitas_mine}
   - delay 1
-  - skill{atlas_debuff} @self
+  - skill{atlas_debuff}
   - delay 1
-  - skill{atlas_cancel} @self
+  - skill{atlas_cancel}
 
 atlas_dignitas_mine:
   Cooldown: 
