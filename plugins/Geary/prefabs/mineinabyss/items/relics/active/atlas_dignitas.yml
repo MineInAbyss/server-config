@@ -20,7 +20,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - FoodLevel{a=>=4} true
+      - FoodLevel{a=>=8} true
     onFail:
     - sendActionBar:
         text: <red>Out of Food

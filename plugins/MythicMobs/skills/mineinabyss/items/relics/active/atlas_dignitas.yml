@@ -1,71 +1,59 @@
 atlas_trigger: # Shim for geary
   Skills:
-  - skill{s=atlas_trigger_}
+  - skill{s=atlas_trigger_} @self
 atlas_trigger_:
   Cooldown: 
   TargetConditions:
-    - FoodLevel{a=>=4} true
+    - FoodLevel{a=>=8} true
   Skills:
   - aura{auraName=atlastrigger;duration=4444;c=1;cod=true;cogd=true} @self
   - effect:particles{particle=crit;amount=15;hS=0.5;vS=1;speed=0;y=0.5} @self
   
 atlas_dignitas: # Shim for geary
   Skills:
-  - skill{s=atlas_dignitas_}
+  - skill{s=atlas_dignitas_} @self
 atlas_dignitas_:
   Cooldown: 
   Conditions:
     - hasaurastacks{n=atlastrigger;s=1} true
-    - holding{m=NETHERITE_PICKAXE} true
   TargetConditions:
+    - FoodLevel{a=>=8} true
   Skills:
-  - skill{atlas_dignitas_mine}
-  - delay 1
-  - skill{atlas_debuff}
-  - delay 1
-  - skill{atlas_cancel}
-
-atlas_dignitas_mine:
-  Cooldown: 
-  Conditions:
-  TargetConditions:
-    - FoodLevel{a=>=4} true
-  Skills:
-  - onBlockBreak{oB=atlas_break;oT=atlas_tick;cE=false;auraname=atlasskill;d=100;c=1;ms=22;cod=true;cogd=true}
+  - onBlockBreak{oB=atlas_break;oT=atlas_tick;cE=false;auraname=atlasskill;d=100;c=1;ms=2;cod=true;cogd=true;rd=true} @self
 
 atlas_break:
-  Cooldown: 1
+  Cooldown:
   Skills:
-  - effect:particles{particle=block_dust;amount=3;hS=0.5;vS=1;speed=0;y=0.5} @forward{f=1}
+  - effect:particles{particle=block_dust;amount=3;hS=0.5;vS=1;speed=0;y=0.5} @target
 
 atlas_tick:
   Cooldown:
   TargetConditions:
-    - FoodLevel{a=>=4} true
+    - FoodLevel{a=>=8} true
   Skills:
-  - potion{t=HASTE;d=20;l=1} @self
-  - sound{s=entity.bee.loop;sc=hostile;p=0.3;v=0.2} @self
-  - sound{s=entity.bee.loop;sc=hostile;p=0.2;v=0.2} @self
+  - potion{t=HASTE;d=20;l=1;p=false} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.3;v=0.3} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.2;v=0.25} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.15;v=0.3} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.1;v=0.25} @self
+  - aura{auraName=atlascounter;oT=atlas_debuff;i=40;onEnd=atlas_cancel;duration=50;c=1;maxStacks=1;cod=true;cogd=true;rd=true} @self
 
 atlas_debuff:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=atlasskill;s=>=20} true
   TargetConditions:
-    - FoodLevel{a=>=4} true
   Skills:
-  - feed{a=-1} @self
-  - auraremove{aura=atlasskill;stacks=20} @self
+  - feed{a=-1}
 
 atlas_cancel:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=atlasskill} true
+    - hasaurastacks{n=atlascounter} true
     - hasaurastacks{n=atlastrigger;s=1} true
   TargetConditions:
-    - FoodLevel{a=<=3} true
   Skills:
   - auraremove{aura=atlasskill} @self
   - auraremove{aura=atlastrigger} @self
-  - effect:particles{particle=large_smoke;amount=3;hS=0.5;vS=1;speed=0;y=0.5} @self
-  - effect:particles{particle=campfire_cosy_smoke;amount=3;hS=0.5;vS=1;speed=0;y=0.5} @self
+  - auraremove{aura=atlascounter} @self
+  - effect:particles{particle=large_smoke;amount=5;hS=0.8;vS=0.4;speed=0.05;y=0.5} @self
+  - effect:particles{particle=campfire_cosy_smoke;amount=4;hS=0.8;vS=0.4;speed=0.05;y=0.5} @self

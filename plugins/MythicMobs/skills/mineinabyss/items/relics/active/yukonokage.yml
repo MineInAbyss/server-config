@@ -50,7 +50,7 @@ yukonokage_soul_overload:
   - effect:particlesphere{particle=reverse_portal;amount=5;radius=3;hS=1;vS=0.5;s=10} @self
   - sound{s=entity.allay.death;p=10;v=0.3} @self
   - sound{s=entity.allay.death;p=105;v=0.2} @self
-  - sound{s=entity.allay.death;p=0.2;v=10} @self
+  - sound{s=entity.allay.death;p=0.2;v=1.8} @self
   - delay 5
   - effect:blockmask{m=SNOW_BLOCK;r=3;d=150} @self
   - effect:particlesphere{particle=poof;amount=10;radius=3;hS=1;vS=0.5;s=10} @self
@@ -68,7 +68,7 @@ soul_overload_freeze:
 
 soul_overload_freeze_effect:
   Skills:
-  - freeze{ticks=40}
+  - freeze{ticks=80}
   - damage{a=4;ie=true}
 
 yukonokage_ability: # Shim for geary
@@ -92,8 +92,6 @@ yukonokage_soul_shot:
   Skills:
   - particlelinehelix{Fo=true;db=0.4;hl=4;syo=1.8;p=scrape;hr=0.5;md=40} @Forward{f=1000} # or orbital around the projectile
   - projectile{bulletType=MOB;mob=yukonokage_soul_wisp;syo=1.8;hnp=true;oH=yukonokage_soul_collision;v=40;hR=3;vR=3} @Forward{f=1000}
-  #particles
-  #sound
   - delay 1
   - variablesubtract{var=caster.yukonokage_stacks;amount=20}
 
@@ -116,7 +114,7 @@ soul_repel_effect:
   Skills:
   #particles
   #sound
-  - freeze{ticks=30} @EIR{r=3}
+  - freeze{ticks=40} @EIR{r=4}
   - throw{velocity=20;velocityY=4} @EIR{r=3}
 
 yukonokage_soul_display: # Shim for geary
