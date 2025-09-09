@@ -1,7 +1,7 @@
 set.item:
   itemName: <#C21807>Among Us
   type: PAPER
-  itemModel: mineinabyss:amongus_cosmetic
+  itemModel: cosmetics:amongus_cosmetic
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.
@@ -29,4 +29,4 @@ set.item:
 #     when:
 #     - chance: 1
 resourcepack:
-  model: mineinabyss:item/event/red_imposter_hat
+  model: cosmetics:hats/amongus_hat

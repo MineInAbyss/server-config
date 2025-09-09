@@ -1,7 +1,7 @@
 set.item:
   itemName: <#C21807>Clown Mask
   type: PAPER
-  itemModel: mineinabyss:clown_mask
+  itemModel: cosmetics:clown_mask
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.
@@ -30,4 +30,4 @@ disableItemInteractions: {}
 #     when:
 #     - chance: 1
 resourcepack:
-  model: mineinabyss:item/event/clown_mask
+  model: cosmetics:hats/clown_mask
