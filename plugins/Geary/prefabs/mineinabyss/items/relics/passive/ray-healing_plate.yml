@@ -3,10 +3,10 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:ray-healing_plate
   lore:
-  - ':layer_1::layer_2: Special Grade Relic'
+  - ':layer_1: Grade III Relic'
   - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>When the hosts adrenaline level spikes the
-  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+  - <#D2D489><i>Passive slot ability. Slowly heals the user
+  - <#D2D489><i>when above a specific light level.
 passive:
 - match:
   - inInventory

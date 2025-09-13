@@ -6,16 +6,17 @@ set.item:
   - ':layer_2: Grade I Relic'
   - <#36526E>A bow with the mysterious ability to sense danger
   - <#36526E>supposedly utilized to combat predators in upper layers.
-  - <#23374A><i>When used it pushes the wielder out of harms way.
+  - <#23374A><i>Active ability. Shoots a barrage of arrows
+  - <#23374A><i>and lunges user backwards on left click.
   unbreakable: {}
 observe:
   itemLeftClick:
   - become: parent
   - cooldown:
-      id: Backstep
+      id: breeze_piercer
       length: 20s
       display: <#617B94>Breeze Piercer
   - mythicSkills:
-    - Backstep
+    - breeze_piercer
 resourcepack:
   model: mineinabyss:item/event/relic_bow

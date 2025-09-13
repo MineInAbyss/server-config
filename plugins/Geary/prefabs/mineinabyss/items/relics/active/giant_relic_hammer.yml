@@ -5,10 +5,15 @@ set.item:
   lore:
   - ':layer_3: Grade I Relic'
   - <#4A8781>Moulded from rocks which used to float in the Great Fault.
-  - <#31524E><i>Its core is being pulled by the depths of the abyss creating
-  - <#31524E><i>heavy downward swings with large shockwaves on impact.
+  - <#31524E><i>Active ability. Lunges the user upward on right click 
+  - <#31524E><i>followed by a large impact which poisons the surroundings.
+  - <#31524E><i>Inflicts a poison like effect on the target on left click.
   unbreakable: {}
 observe:
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - necrometallic_sledge_hit
   itemRightClick:
   - become: parent
   - cooldown:
@@ -16,6 +21,6 @@ observe:
       length: 35s
       display: <#79EDE2>Necrometallic Sledge
   - mythicSkills:
-    - hammer_smash
+    - necrometallic_sledge_ability
 resourcepack:
   model: mineinabyss:item/relics/necrometallic_sledge

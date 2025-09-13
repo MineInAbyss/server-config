@@ -1,22 +1,27 @@
 gambit_incense:
   Conditions:
   Skills:
-  - randomskill{skills=gambit_incense_1, gambit_incense_2, gambit_incense_3, gambit_incense_4, gambit_incense_5, gambit_incense_6, gambit_incense_7, gambit_incense_8, gambit_incense_9, gambit_incense_10, gambit_incense_11, gambit_incense_12, gambit_incense_13, gambit_incense_14}
+  - geyser{type=WATER;height=4;speed=5} @selflocation
+  - delay 80
+  - randomskill{skills=gambit_incense_1, gambit_incense_1_luck, gambit_incense_2, gambit_incense_3, gambit_incense_3_luck, gambit_incense_4, gambit_incense_5, gambit_incense_6, gambit_incense_7, gambit_incense_8, gambit_incense_9, gambit_incense_10, gambit_incense_11, gambit_incense_11_luck, gambit_incense_12, gambit_incense_13, gambit_incense_14}
 
 gambit_incense_1:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} #looks meh, looking for alternatives
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=REGENERATION;d=140} @EIR{r=7}
   - potion{t=REGENERATION;d=140} @self
 
+gambit_incense_1_luck:
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1;size=2}
+  - potion{t=REGENERATION;d=140;l=1} @EIR{r=7}
+  - potion{t=REGENERATION;d=140;l=1} @self
+
 gambit_incense_2:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=SATURATION;d=140} @EIR{r=7}
   - potion{t=SATURATION;d=140} @self
@@ -24,17 +29,20 @@ gambit_incense_2:
 gambit_incense_3:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=JUMP;d=140} @EIR{r=7}
   - potion{t=JUMP;d=140} @self
 
+gambit_incense_3_luck:
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1;size=2}
+  - potion{t=JUMP;d=140;l=2} @EIR{r=7}
+  - potion{t=JUMP;d=140;l=2} @self
+
 gambit_incense_4:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=NIGHT_VISION;d=140} @EIR{r=7}
   - potion{t=NIGHT_VISION;d=140} @self
@@ -42,8 +50,6 @@ gambit_incense_4:
 gambit_incense_5:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=HEALTH_BOOST;d=140} @EIR{r=7}
   - potion{t=HEALTH_BOOST;d=140} @self
@@ -51,8 +57,6 @@ gambit_incense_5:
 gambit_incense_6:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=FAST_DIGGING;d=140} @EIR{r=7}
   - potion{t=FAST_DIGGING;d=140} @self
@@ -60,8 +64,6 @@ gambit_incense_6:
 gambit_incense_7:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=CONDUIT_POWER;d=140} @EIR{r=7}
   - potion{t=CONDUIT_POWER;d=140} @self
@@ -69,8 +71,6 @@ gambit_incense_7:
 gambit_incense_8:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=GLOWING;d=140} @EIR{r=7}
   - potion{t=GLOWING;d=140} @self
@@ -78,8 +78,6 @@ gambit_incense_8:
 gambit_incense_9:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=BLINDNESS;d=140} @EIR{r=7}
   - potion{t=BLINDNESS;d=140} @self
@@ -87,8 +85,6 @@ gambit_incense_9:
 gambit_incense_10:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=CONFUSION;d=140} @EIR{r=7}
   - potion{t=CONFUSION;d=140} @self
@@ -96,17 +92,20 @@ gambit_incense_10:
 gambit_incense_11:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=HARM;d=140} @EIR{r=7}
   - potion{t=HARM;d=140} @self
 
+gambit_incense_11_luck:
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1;size=2}
+  - potion{t=HARM;d=140;l=2} @EIR{r=7}
+  - potion{t=HARM;d=140;l=2} @self
+
 gambit_incense_12:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=HUNGER;d=140} @EIR{r=7}
   - potion{t=HUNGER;d=140} @self
@@ -114,8 +113,6 @@ gambit_incense_12:
 gambit_incense_13:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=WEAKNESS;d=140} @EIR{r=7}
   - potion{t=WEAKNESS;d=140} @self
@@ -123,8 +120,6 @@ gambit_incense_13:
 gambit_incense_14:
   Conditions:
   Skills:
-  - effect:particletornado{p=sneeze;cp=largeexplode;mr=1;h=3;i=4;d=80;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2}
-  - delay 80
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
   - potion{t=POISON;d=140} @EIR{r=7}
   - potion{t=POISON;d=140} @self

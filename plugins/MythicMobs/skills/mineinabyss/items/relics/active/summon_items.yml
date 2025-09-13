@@ -4,7 +4,7 @@ wanabushi_summon:
   Skills:
     - summon{type=wanabushi;amount=1;radius=3;ctt=true;itt=true;os=true} @self
     - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
-    - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+    - sound{s=entity.evoker.prepare_summon;sc=ui;p=0.8;v=0.5} @Self
 
 
 luckybackup1:

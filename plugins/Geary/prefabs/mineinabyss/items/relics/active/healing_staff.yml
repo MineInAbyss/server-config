@@ -4,9 +4,9 @@ set.item:
   itemModel: mineinabyss:healing_staff
   lore:
   - ':layer_4: Grade III Relic'
-  - <gold>An artifact of peculiar smell adjutating cells
-  - <gold>to improve wound healing.
-  - <#D2D489><i>On use it grants life to organisms around.
+  - <gold>Doctors have failed to reach an agreement on the safety of fungi
+  - <gold>like these as medicine. Their efficacy, however, is beyond doubt.
+  - <#D2D489><i>Active ability. Heals user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

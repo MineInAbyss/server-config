@@ -4,11 +4,25 @@ set.item:
   itemModel: mineinabyss:blackhole_staff
   lore:
   - ':layer_5: Grade I Relic'
-  - <#570F01>A powerful artifact of Orthian tales rumored
-  - <#570F01>to have led to civilisations collapse.
-  - <#3B1F1A><i>On use it is able to influence the
-  - <#3B1F1A><i>gravitational pull within the force field.
+  - <#570F01>The draw of the Abyss upon those who gaze into it
+  - <#570F01>is inescapable. This Relic makes that feeling palpable.
+  - <#3B1F1A><i>Active ability. Shoots projectile on right click.
+  - <#3B1F1A><i>Projectile pulls targets and deals a large amount of damage.
 observe:
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>5} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: blackhole
+      length: 30s
+      display: <#302D2D><b>Subtle Pull
+  - mythicSkills:
+    - subtle_pull_hit
   itemRightClick:
   - become: parent
   - ensure:
@@ -23,5 +37,16 @@ observe:
       display: <#302D2D><b>Subtle Pull
   - mythicSkills:
     - subtle_pull
+passive:
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inHand:
+          item: mineinabyss:blackhole_staff  
+  - mythicSkills:
+    - subtle_pull_charge
 resourcepack:
   model: mineinabyss:item/relics/subtle_pull

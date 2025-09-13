@@ -6,7 +6,8 @@ set.item:
   - ':layer_4: Grade I Relic'
   - <#3C8C82>A spear shape object carved out of the core from
   - <#3C8C82>a Goblet of Giants containing netherworld runes.
-  - <#265c55><i>It is rumored to return to the user after being thrown.
+  - <#265c55><i>Active ability. Charges when in hand. Can be thrown
+  - <#265c55><i>on left click. Uses riptide in water on right click.
   enchantments:
     - enchant: minecraft:riptide
       level: 2
@@ -14,6 +15,7 @@ set.item:
       level: 5
     - enchant: minecraft:sharpness
       level: 5
+  itemFlags: [ HIDE_ENCHANTS ]
   unbreakable: {}
   enchantable: 0
 resourcepack:
@@ -32,15 +34,16 @@ observe:
       length: 15s
       display: <#617B94>Tranquil Pierce
   - mythicSkills:
-    - throwtrident
+    - tranquil_pierce_throw
 passive:
 - match:
-  - inHand
-  every: 1s
+  - inInventory
+  every: 0.5s
   run:
   - become: parent
   - ensure:
-      player:
-        sneaking: true  
+        inSlot:
+          slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+          item: mineinabyss:trident  
   - mythicSkills:
-    - trident_charge
+    - tranquil_pierce_charge

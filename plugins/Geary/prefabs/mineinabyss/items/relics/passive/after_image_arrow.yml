@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#88D481>After Image Arrow
+  itemName: <#88D481>After Image Shell
   type: PAPER
   itemModel: mineinabyss:after_image_arrow
   lore:
-  - ':layer_1::layer_2: Grade IV Relic'
+  - ':layer_2: Grade II Relic'
   - <gold>Stories have been passed around about a Cave Raider who used this 
   - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive ability. Grants a short speed
-  - <#D2D489><i>buff when equipped in a passive slot.
+  - <#D2D489><i>Passive slot ability. On bow and projectile based relic
+  - <#D2D489><i>use shoots an additional projectile whch deals damage.
 passive:
 - match:
   - inInventory

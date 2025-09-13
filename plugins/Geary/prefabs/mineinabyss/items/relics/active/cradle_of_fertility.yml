@@ -3,11 +3,10 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:cradle_of_fertility
   lore:
-  - ':layer_4: Grade IV Relic'
-  - <gold>A relic composed of multiple relic materials
-  - <gold>and the gills of abyssal creatures.
-  - <#D2D489><i>On use it grants the wearer
-  - <#D2D489><i>the ability to thrive in water.
+  - ':layer_2: Grade IV Relic'
+  - <gold>The mysterious humming sound this orb produces is cited
+  - <gold>as a cause of its apparent worship in ancient societies.
+  - <#D2D489><i>Active ability. Bone meals the surrounding area on right click.
 resourcepack:
   textures:
     layers:
@@ -19,13 +18,12 @@ observe:
       id: wish_of_fertility
       length: 8s #Change to 40s once testing is done
       display: <#1F88ED>Cradle of Fertility
-  # - geary:bonemeal_radius:
-  #     radius: 3
-  #     Allowed Tags:
-  #       - crops
-  #       - saplings
-  #     excludedBlocks:
-  #       - GRASS_BLOCK
-  #       - DIRT
+  - geary:bonemeal_radius:
+       radius: 5
+       AllowCrops: true
+       AllowSaplings: true
+       excludedBlocks:
+         - GRASS_BLOCK
+         - DIRT
   - mythicSkills:
     - wish_of_fertility

@@ -1,8 +1,12 @@
 
-trident_charge:
+tranquil_pierce_charge: # Shim for geary
+  Skills:
+  - skill{s=tranquil_pierce_charge_} @self
+tranquil_pierce_charge_:
   Cooldown: 
   Conditions:
   - hasaurastacks{n=tridentstop} false
+  - holding{m=TRIDENT} true
   Skills:
   - aura{auraName=trident;onStart=tridentstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
   - skill{s=tridentready} @self
@@ -20,21 +24,20 @@ tridentready:
   - hasaurastacks{n=trident;s=3} true
   Skills:
   - gcd{ticks=100}
-  - sound{s=item.trident.riptide_3;sc=master;p=1;v=1} @self
+  - sound{s=item.trident.riptide_3;sc=ui;p=1;v=1} @self
 
 
-throwtrident:
+tranquil_pierce_throw:
   Conditions:
   - hasaurastacks{n=trident;s=3} true
   Skills:
   - auraremove{aura=trident;stacks=3} @self
-  - sound{s=item.trident.throw;sc=players;p=1;v=0.6} @self
+  - sound{s=item.trident.throw;sc=ui;p=1;v=0.6} @self
   - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1.5;vR=1.5;mr=35;hnp=true;hp=true;hO=0;sE=true;sB=true;d=200;hs=false;hfs=1} @targetlocation
-  - skill{s=after_image_projectile}
-  - aura{auraName=tridentstop;duration=200;c=1;cotd=false} @self
+  - aura{auraName=tridentstop;duration=300;c=1;cotd=false} @self
 
 trident_impact:
   Skills:
-    - sound{s=item.trident.hit;sc=players;p=1;v=0.6} @self
+    - sound{s=item.trident.hit;sc=ui;p=1;v=0.6} @self
     - damage{a=40}
     - shieldbreak{duration=150}

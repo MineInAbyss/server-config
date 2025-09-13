@@ -13,9 +13,9 @@ ray-healing_heal_low:
   - hasaurastacks{n=rayhealingplate;s=10} true
   Skills:
   - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
-  - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
+  - sound{s=block.honey_block.hit;sc=ui;p=0.4;v=0.2} @self
   - heal{amount=1} @self
-  - oxygen{amount=4} @self
+  - oxygen{amount=4} @self #dont think oxygen works
   - delay 1
   - auraremove{aura=rayhealingplate} @self 
 
@@ -25,8 +25,8 @@ ray-healing_heal_high:
   - hasaurastacks{n=rayhealingplate;s=10} true   
   Skills:
   - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
-  - sound{s=block.honey_block.hit;p=0.4;v=0.2} @self
+  - sound{s=block.honey_block.hit;sc=ui;p=0.4;v=0.2} @self
   - heal{amount=2} @self
-  - oxygen{amount=8} @self
+  - oxygen{amount=8} @self #dont think oxygen works
   - delay 1
   - auraremove{aura=rayhealingplate} @self

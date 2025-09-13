@@ -1,17 +1,16 @@
 set.item:
   type: minecraft:mace
   itemModel: mineinabyss:weight_of_the_world
-  itemName: <#617B94><b>Weight of the World
+  itemName: <#617B94>Weight of the World
   lore:
-  - ':layer_4: Grade I Relic'
-  - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
-  - <#C6CC8A>which causes ongoing explosions
-  - <#C6CC8A>on whatever it is struck on.
-  - <#948E61><i>Used to create powerful explosions.
-  #enchantments:
-  #  enchantments:
-  #    - enchant: minecraft:density
-  #      level: 3
+  - ':layer_4: Grade II Relic'
+  - <#C6CC8A>The metal making up this weapon requires wielders to build up mass
+  - <#C6CC8A>amounts of kinetic energy. It bears a high risk of personal injury in use.
+  - <#948E61><i>Active ability. The longer the fall, the more damage it deals.
+  enchantments:
+    - enchant: minecraft:density
+      level: 4
+  itemFlags: [ HIDE_ENCHANTS ]
   unbreakable: {}
   enchantable: 0
 resourcepack:

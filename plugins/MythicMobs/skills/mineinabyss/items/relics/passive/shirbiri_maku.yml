@@ -1,10 +1,28 @@
-randomcritplayer:
+shirbiri_maku:
   Conditions:
   Cooldown:
   Skills:
+  - randomskill{skills=shirbiri_crit_1, shirbiri_crit_2, shirbiri_crit_3}
+
+shirbiri_crit_1:
+  Skills:
+  - delay <random.10to20>
   - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
-  - sound{s=entity.fox.bite;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
+  - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
+
+shirbiri_crit_2:
+  Skills:
+  - delay <random.21to40>
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
+
+shirbiri_crit_3:
+  Skills:
+  - delay <random.41to60>
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
+
 CritTick:
   Skills:
-  - effect:particles{particle=crit;a=16;hs=0.3;vs=0.3;speed=0.5} @origin
-  - effect:particles{particle=crit;a=4;hs=0.3;vs=0.3;speed=0.5;y=1.5} @origin
+  - effect:particles{particle=crit;a=8;hs=0.5;vs=0.5;speed=0.5;y=1} @origin
+  - effect:particles{particle=crit;a=4;hs=0.5;vs=0.3;speed=0.5;y=1.5} @origin

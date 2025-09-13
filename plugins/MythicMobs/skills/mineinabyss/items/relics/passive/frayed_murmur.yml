@@ -9,14 +9,14 @@ murmur_effect_1:
   Skills:
   - delay <random.5to10>
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
-  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.05} @self
+  - sound{s=entity.goat.screaming.ambient;sc=ui;p=0.01;v=0.05} @self
   - delay <random.10to40>
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
 
 murmur_effect_2:
   Conditions:
   Skills:
-  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.05} @self
+  - sound{s=entity.goat.screaming.ambient;sc=ui;p=0.01;v=0.05} @self
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
   - delay <random.30to80>
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
@@ -28,4 +28,4 @@ murmur_effect_3:
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
   - delay <random.10to40>
   - effect:particles{particle=end_rod;amount=1;size=<random.1to2>;hS=<random.2to6>;vS=<random.float.1to2>;y=<random.1to5>} @self
-  - sound{s=entity.goat.screaming.ambient;sc=hostile;p=0.01;v=0.05} @self
+  - sound{s=entity.goat.screaming.ambient;sc=ui;p=0.01;v=0.05} @self

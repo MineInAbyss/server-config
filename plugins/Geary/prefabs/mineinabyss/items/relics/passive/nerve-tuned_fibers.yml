@@ -3,10 +3,10 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:nerve-tuned_fibers
   lore:
-  - ':layer_1::layer_2: Special Grade Relic'
-  - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>When the hosts adrenaline level spikes the
-  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+  - ':layer_4: Grade III Relic'
+  - <gold>Bearers of this organic armor describe wearing it as disgusting,
+  - <gold>though some insist it makes them feel less alone in the vast Abyss.
+  - <#D2D489><i>Passive slot ability. Twitches and grants haste.
 passive:
 - match:
   - inInventory

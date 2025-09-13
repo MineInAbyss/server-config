@@ -4,9 +4,10 @@ set.item:
   itemName: <#15ABC2><b>Crescent Hatchet
   lore:
   - ':layer_3: Grade I Relic'
-  - <#249C9C>A weapon that can tear into the fabric of the force field.
-  - <#195959><i>It is known to create crescent shaped slashes damaging
-  - <#195959><i>all organic matter that it comes into contact with.
+  - <#249C9C>This Relic easily and effectively slices through the air, and even the
+  - <#249C9C>Abyss itself, using its surroundings’ mysterious nature to its advantage.
+  - <#195959><i>Active ability. Creates charges on right click.Takes a different
+  - <#195959><i>amounts of charges to create a slash of varying strength on left click.
   unbreakable: {}
 observe:
   itemLeftClick:

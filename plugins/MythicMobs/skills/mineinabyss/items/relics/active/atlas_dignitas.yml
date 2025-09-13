@@ -31,7 +31,7 @@ atlas_tick:
   TargetConditions:
     - FoodLevel{a=>=8} true
   Skills:
-  - potion{t=HASTE;d=20;l=1;p=false} @self
+  - potion{t=HASTE;d=20;l=4;p=false} @self
   - sound{s=entity.bee.loop;sc=ui;p=0.3;v=0.3} @self
   - sound{s=entity.bee.loop;sc=ui;p=0.2;v=0.25} @self
   - sound{s=entity.bee.loop;sc=ui;p=0.15;v=0.3} @self

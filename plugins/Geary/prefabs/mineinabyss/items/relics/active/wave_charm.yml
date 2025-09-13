@@ -4,9 +4,10 @@ set.item:
   itemModel: mineinabyss:wave_charm
   lore:
   - ':layer_4: Grade III Relic'
-  - <gold>A talisman deeply intertwined with the force fields humidity.
-  - <#D2D489><i>When used it causes droplets to combine forming
-  - <#D2D489><i>a wave pushing everything back it touches.
+  - <gold>This Relic has found use outside of the Abyss
+  - <gold>among sea captains wishing to speed up their boats.
+  - <#D2D489><i>Active ability. Generates a large wall of water
+  - <#D2D489><i>on right click which can push back entities. 
 observe:
   itemRightClick:
   - become: parent
@@ -21,7 +22,7 @@ observe:
       length: 20s
       display: <dark_aqua>Tidal Spout
   - mythicSkills:
-    - Tidal_Wave
+    - tidal_spout
 resourcepack:
   textures:
     layers:

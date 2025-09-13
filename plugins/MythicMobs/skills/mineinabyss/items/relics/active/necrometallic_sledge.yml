@@ -1,19 +1,80 @@
-hammer_smash:
+necrometallic_sledge_hit: # Shim for geary
+  Skills:
+  - shieldbreak{duration=100} @target
+  - skill{s=necrometallic_hit_}
+necrometallic_hit_:
+  Cooldown: 0.98 #to account for minecraft axe attack cooldown
   Conditions:
-  - onground true
+    - isblocking false
+  Skills:
+  - onDamaged{auraName=necrometallicdebuff;onTick=necrometallic_tick;i=20;duration=101;c=1;maxStacks=30;cotd=false;cod=true;cocd=true;rd=true} @target
+
+necrometallic_tick:
+  Cooldown:
+  Conditions:
+  Skills:
+  - skill{s=necrometallic_tick_1}
+  - delay 1
+  - skill{s=necrometallic_tick_2}
+  - delay 1
+  - skill{s=necrometallic_tick_3}
+  - delay 1
+  - skill{s=necrometallic_tick_4}
+
+necrometallic_tick_1:
+  Cooldown: 0.96
+  Conditions:
+    - hasaurastacks{n=necrometallicdebuff;s=1to9} true
+  Skills:
+  - effect:particles{particle=glow_squid_ink;amount=3;hS=1;vS=0.5;y=1} @self
+  - effect:particles{particle=sneeze;amount=1;hS=1;vS=0.5;y=1;speed=0} @self
+  - damage{a=1;pkb=true;ia=true} @self
+
+necrometallic_tick_2:
+  Cooldown: 0.96
+  Conditions:
+    - hasaurastacks{n=necrometallicdebuff;s=10to17} true
+  Skills:
+  - effect:particles{particle=glow_squid_ink;amount=4;hS=1;vS=0.5;y=1} @self
+  - effect:particles{particle=sneeze;amount=2;hS=1;vS=0.5;y=1;speed=0} @self
+  - damage{a=1.5;pkb=true;ia=true} @self
+
+necrometallic_tick_3:
+  Cooldown: 0.96
+  Conditions:
+    - hasaurastacks{n=necrometallicdebuff;s=18to22} true
+  Skills:
+  - effect:particles{particle=glow_squid_ink;amount=3;hS=1;vS=0.5;y=1} @self
+  - effect:particles{particle=sneeze;amount=2;hS=1;vS=0.5;y=1;speed=0} @self
+  - effect:particles{particle=trial_omen;amount=1;hS=1;vS=0.5;y=1;speed=0} @self
+  - damage{a=2;pkb=true;ia=true} @self
+
+necrometallic_tick_4:
+  Cooldown: 0.96
+  Conditions:
+    - hasaurastacks{n=necrometallicdebuff;s=25to30} true
+  Skills:
+  - effect:particles{particle=glow_squid_ink;amount=2;hS=1;vS=0.5;y=1} @self
+  - effect:particles{particle=sneeze;amount=3;hS=1;vS=0.5;y=1;speed=0} @self
+  - effect:particles{particle=trial_omen;amount=3;hS=1;vS=0.5;y=1;speed=0} @self
+  - damage{a=3;pkb=true;ia=true} @self
+
+necrometallic_sledge_ability:
+  Conditions:
+  #- onground true
   Cooldown: 3
   Skills:
   - effect:particles{particle=crit;a=80;hs=0.5;vs=0.5;speed=1} @origin
-  - effect:sound{s=entity.iron_golem.death;v=1;p=0.5} @PIR{r=20}
+  - effect:sound{s=entity.iron_golem.death;sc=ui;v=1;p=0.5} @PIR{r=20}
   - delay 10
   - leap{velocity=150} @forward{f=1;y=3}
-  - hunger{a=2} @self
+  - feed{a=-2} @self
   - delay 10
   #- onDamaged{auraName=landresist;d=20;damageMods="FALL 0.5"} @self 
   - leap{velocity=70} @forward{f=2;y=-5}
   - delay 12
   - skill{s=hammer_smash_damage} @self
-  - sound{s=entity.warden.attack_impact;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
+  - sound{s=entity.warden.attack_impact;sc=ui;p=<random.float.0.2to0.5>;v=0.7} @self
 hammer_smash_damage:
   TargetConditions:
   - owner{} false 

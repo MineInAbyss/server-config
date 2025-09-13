@@ -1,9 +1,10 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "mineinabyss:relics/scaled_umbrella",
-		"particle": "mineinabyss:relics/scaled_umbrella"
+		"0": "mineinabyss:item/relics/scaled_umbrella",
+		"particle": "mineinabyss:item/relics/scaled_umbrella"
 	},
 	"elements": [
 		{
@@ -1039,12 +1040,12 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-20, 30, -3],
-			"translation": [0.75, 3.75, 0],
+			"translation": [2.5, 2.75, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"firstperson_lefthand": {
 			"rotation": [-20, 30, -3],
-			"translation": [0.75, 3.75, 0],
+			"translation": [2.5, 2.75, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"ground": {
@@ -1053,12 +1054,12 @@
 			"scale": [0.7, 0.7, 0.7]
 		},
 		"gui": {
-			"rotation": [37, 143, -16],
-			"translation": [-1, 1.5, 0],
-			"scale": [0.8, 0.8, 0.8]
+			"rotation": [21, 23, -44],
+			"translation": [1.75, 1.5, 0]
 		},
 		"head": {
-			"translation": [0, -2, 0],
+			"rotation": [-17, -5, -38],
+			"translation": [3, -10.5, 8.25],
 			"scale": [2, 2, 2]
 		},
 		"fixed": {

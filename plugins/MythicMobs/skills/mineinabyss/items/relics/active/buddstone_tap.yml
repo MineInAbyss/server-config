@@ -48,7 +48,7 @@ shadowballend:
   #- damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
   - sound{s=entity.player.attack.crit;volume=0.8;pitch=0.6;cooldown=1} @origin
 
-livingcballs:
+buddstone_tap:
   Conditions:
   Cooldown: 1
   Skills:
@@ -57,26 +57,26 @@ livingcballs:
   - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
   - delay 40
   - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
-  - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
-  - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
-  - skill{s=after_image_projectile}
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
+  - skill{s=after_image_buddstone_tap} #skill from after_image_arrow
   - delay 2
-  - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
-  - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
   - delay 2
-  - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
-  - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
   - delay 2
-  - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
-  - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @Targetlocation
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
   - delay 2
-  - sound{s=block.calcite.step;;volume=1;pitch=1.2} @origin
-  - sound{s=block.calcite.step;;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;sB=true} @Targetlocation
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
+  - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;sB=true} @forward{f=1000}
 
 tpmageTick:
   Conditions:
@@ -89,23 +89,23 @@ tpmageHit:
   Cooldown:
   Skills:
   - effect:particles{p=smoke;color=#fff400;y=0;amount=25;speed=0.05;hS=1.8;vS=0.3} @Origin
-  - effect:sound{s=block.copper_bulb.break;volume=0.6;pitch=0.2} @origin
-  - effect:sound{s=block.copper_bulb.break;volume=0.8;pitch=1.9} @origin
+  - effect:sound{s=block.copper_bulb.break;sc=ui;volume=0.6;pitch=0.2} @origin
+  - effect:sound{s=block.copper_bulb.break;sc=ui;volume=0.8;pitch=1.9} @origin
   - effect:particlesphere{p=reddust;color=#FF4255;amount=60;radius=1;size=1} @origin
   - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=1.6} @origin
   - damage{a=7;preventknockback=true;pi=true} @EntitiesNearOrigin{r=2.2}
   #- damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
-  - sound{s=entity.player.attack.crit;volume=0.8;pitch=0.6;cooldown=1} @origin
+  - sound{s=entity.player.attack.crit;sc=ui;volume=0.8;pitch=0.6;cooldown=1} @origin
 
 pgcrystalHit:
   Conditions:
   Cooldown:
   Skills:
   - effect:particles{p=smoke;color=#fff400;y=0;amount=25;speed=0.05;hS=1.8;vS=0.3} @Origin
-  - effect:sound{s=block.copper_bulb.break;volume=0.6;pitch=0.2} @origin
-  - effect:sound{s=block.copper_bulb.break;volume=0.8;pitch=1.9} @origin
+  - effect:sound{s=block.copper_bulb.break;sc=ui;volume=0.6;pitch=0.2} @origin
+  - effect:sound{s=block.copper_bulb.break;sc=ui;volume=0.8;pitch=1.9} @origin
   - effect:particlesphere{p=reddust;color=#FF4255;amount=60;radius=1;size=1} @origin
-  - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=1.6} @origin
+  - sound{s=entity.dragon_fireball.explode;sc=ui;volume=0.5;pitch=1.6} @origin
   - damage{a=10;preventknockback=true;pi=true} @EntitiesNearOrigin{r=2.2}
   #- damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
-  - sound{s=entity.player.attack.crit;volume=0.8;pitch=0.6;cooldown=1} @origin
+  - sound{s=entity.player.attack.crit;sc=ui;volume=0.8;pitch=0.6;cooldown=1} @origin

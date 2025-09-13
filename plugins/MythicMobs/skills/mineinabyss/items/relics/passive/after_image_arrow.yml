@@ -11,7 +11,7 @@ after_image_shot:
   - onShoot{auraName=afterimageshot;onShoot=after_image_bow;duration=20;c=1}
 
 after_image_bow:
-  Cooldown:
+  Cooldown: 1.5
   Conditions:
     #- bowtension{value=>0.5} true
   Skills:
@@ -31,10 +31,84 @@ after_image_hit:
   Skills:
   - damage{a=10} @EIR{r=2}
 
-after_image_projectile: #skill to add to all projectile based relics made: - skill{s=after_image_projectile}
+after_image_ball_lightning: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=30;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=1.4;d=200;mr=170;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_breeze_piercer: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_buddstone_tap: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_gust-shot: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=10;d=200;mr=100;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_shiver_mist: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=30;mr=15;hR=1;vR=1;hO=0;sB=true;sE=true;hp=true;hnp=true;syo=1;tyo=1;a=0.9;repeat=29;repeatinterval=2;i=1} @forward{f=1000}
+
+after_image_soul-aiming_light: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 2
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_subtle_pull: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=7;d=37;mr=170;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_undying_wisp: #skill to add to all projectile based relics made: - skill{s=after_image_}
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=afterimagearrow;s=1} true
+  Skills:
+  - delay 14
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}

@@ -6,8 +6,7 @@ set.item:
   - ':layer_1: Grade III Relic'
   - <#A0ACAD>A foreign composer once introduced this Relic into his orchestra.
   - <#A0ACAD>Shortly after, several of his woodwinds quit.
-  - <#7B898A><i>Active ability. Right click to slow everything
-  - <#7B898A><i>within a 7 block radius.
+  - <#7B898A><i>Active ability. Slows user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

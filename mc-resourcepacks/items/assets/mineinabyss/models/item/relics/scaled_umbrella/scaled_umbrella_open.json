@@ -1,9 +1,10 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "mineinabyss:relics/scaled_umbrella",
-		"particle": "mineinabyss:relics/scaled_umbrella"
+		"0": "mineinabyss:item/relics/scaled_umbrella",
+		"particle": "mineinabyss:item/relics/scaled_umbrella"
 	},
 	"elements": [
 		{
@@ -1851,12 +1852,12 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-72, -16, -3],
-			"translation": [-1, 1, 0],
+			"translation": [2.5, -4.75, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"firstperson_lefthand": {
 			"rotation": [-72, -16, -3],
-			"translation": [-1, 1, 0],
+			"translation": [2.5, -4.75, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"ground": {

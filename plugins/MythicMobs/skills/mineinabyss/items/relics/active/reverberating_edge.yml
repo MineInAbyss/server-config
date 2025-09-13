@@ -41,7 +41,7 @@ reverberating_edge_vibrate_3:
     - hasaurastacks{n=reverberatingedgestack;s=7to8} true
   Skills:
   - effect:particles{p=falling_dust;material=STONE;amount=5;hS=0.5;vS=1;speed=0;y=0.5} @self
-  - damage{amount=2} @EIR{r=3}
+  - totem{md=2;c=1;oH=reverberating_edge_vibrate_3_damage;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
   #- sound{s=block.bone_block.step;sc=ui;p=4;v=0.4} @self #sound only if we can find a good reverb type sound
 
 reverberating_edge_vibrate_4:
@@ -50,8 +50,20 @@ reverberating_edge_vibrate_4:
     - hasaurastacks{n=reverberatingedgestack;s=9to10} true
   Skills:
   - effect:particles{p=falling_dust;material=STONE;amount=10;hS=0.5;vS=1;speed=0;y=0.5;size=1.5} @self
-  - damage{amount=3} @EIR{r=3}
-  #- sound{s=block.bone_block.step;sc=ui;p=4.5;v=0.45} @self #sound only if we can find a good reverb type sound
+  - totem{md=2;c=1;oH=reverberating_edge_vibrate_4_damage;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - sound{s=block.sculk_catalyst.place;sc=ui;p=2;v=0.55} @self #sound only if we can find a good reverb type sound
+
+reverberating_edge_vibrate_3_damage:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=2} @EIR{r=2}
+
+reverberating_edge_vibrate_4_damage:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=3} @EIR{r=2}
 
 reverberating_edge_ability:
   Cooldown: 

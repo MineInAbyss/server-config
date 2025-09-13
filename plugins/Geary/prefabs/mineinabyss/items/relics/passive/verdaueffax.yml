@@ -4,9 +4,10 @@ set.item:
   itemModel: mineinabyss:vverdaueffax
   lore:
   - ':layer_1::layer_2: Grade II Relic'
-  - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>When the hosts adrenaline level spikes the
-  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+  - <gold>Outside of the Abyss, this Relic fetches a high
+  - <gold>price for its uses in chronic pain treatment. 
+  - <#D2D489><i>Passive slot ability. Grants fast regen
+  - <#D2D489><i>when the user drops below 4 hearts.
 passive:
 - match:
   - inInventory
@@ -25,7 +26,7 @@ passive:
       length: 600s
       display: <#88D481>Gold-mending Wedge
   - mythicSkills:
-    - verdaueffax
+    - gold-mending_wedge
 resourcepack:
   textures:
     layers:

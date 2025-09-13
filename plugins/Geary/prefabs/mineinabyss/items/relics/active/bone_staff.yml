@@ -4,10 +4,10 @@ set.item:
   itemModel: mineinabyss:bone_staff
   lore:
   - ':layer_5: Grade III Relic'
-  - <gold>A staff made out of the remains of delvers
-  - <gold>who have succumbed to the curse of the abyss.
-  - <#D2D489><i>Powered by the longing of stuck souls
-  - <#D2D489><i>crystallizing them when used.
+  - <gold>The sound produced by this seemingly-primitive rattle is
+  - <gold>enough to send chills down the spine of any who hear it.  
+  - <#D2D489><i>Active ability. Shoots projectile on right click.
+  - <#D2D489><i>Projectile stuns the target it hits.
 observe:
   itemRightClick:
   - become: parent
@@ -18,11 +18,11 @@ observe:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: Bone Ball
-      length: 15s
+      id: undying_wisp
+      length: 20s
       display: <dark_aqua>Undying Wisp
   - mythicSkills:
-    - bone_ball
+    - undying_wisp
 resourcepack:
   textures:
     layers:

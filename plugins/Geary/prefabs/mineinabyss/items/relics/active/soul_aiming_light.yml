@@ -3,11 +3,11 @@ set.item:
   itemName: <#CCDADB>Soul-aiming Light
   itemModel: mineinabyss:soul-aiming_light
   lore:
-  - ':layer_5: Grade I Relic'
-  - <#A0ACAD>A long frail pole carved from one of the
-  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
-  - <#7B898A><i>It has the ability to flash-freeze air
-  - <#7B898A><i>which freezes all organic matter it touches.
+  - ':layer_5: Grade II Relic'
+  - <#A0ACAD>A prototype device once wielded by the Sovereign of Dawn,
+  - <#A0ACAD>discarded for unknown reasons.
+  - <#7B898A><i>Active ability. Shoots multiple homing
+  - <#7B898A><i>projectiles on right click.
 observe:
   itemRightClick:
   - become: parent
@@ -26,23 +26,25 @@ observe:
       duration: 10s
       amplifier: 1
       hasParticles: false
-    - type: minecraft:blindness
+    - type: minecraft:darkness
       duration: 1s
       amplifier: 1
       hasParticles: false
-  # - geary:shulker_bullet:
-  #     amount: 3
-  #     damage: 15
-  #     radius: 20
-  #     homing: true
-  #     speed: 2
-  #     duration: 40
-  #     effects:
-  #       - type: minecraft:glowing
-  #         duration: 5.0t
-  #       - type: minecraft:blindness
-  #         duration: 3.0t
-  #         amplifier: 1
+  - geary:shulker_bullet:
+      amount: 3
+      damage: 15
+      radius: 20
+      homing: true
+      speed: 2
+      duration: 40
+      effects:
+        - type: minecraft:glowing
+          duration: 5.0t
+        - type: minecraft:darkness
+          duration: 3.0t
+          amplifier: 1
+  - mythicSkills:
+    - after_image_soul-aiming_light_
 resourcepack:
   textures:
     layers:

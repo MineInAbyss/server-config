@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:paper
   itemModel: mineinabyss:sin_spiral
-  itemName: <#51C947>Sin Spiral
+  itemName: <gold>Sin Spiral
   lore:
-  - ':layer_1::layer_2: Grade III Relic'
-  - <gold>An organic talisman formed from plant parts and relics.
-  - <#D2D489><i>When used it calls upon weeds to syphon nutrients
-  - <#D2D489><i>from the force field to rapidly grow into vine binders.
+  - 'Grade II Relic'
+  - <#cdd13d>The Delver Guild has stricken this “Artifact” from its records for good reason.
+  - <#cdd13d>Why do you have this?
+  - <#D2D489><i>Active ability. Lunges user forward and creates
+  - <#D2D489><i>area of effect potions around the user on right click.
 observe:
   itemRightClick:
   - become: parent

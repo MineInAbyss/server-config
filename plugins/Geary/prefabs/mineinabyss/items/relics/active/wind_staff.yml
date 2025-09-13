@@ -4,9 +4,10 @@ set.item:
   itemModel: mineinabyss:wind_staff
   lore:
   - ':layer_3: Grade II Relic'
-  - <gold>A staff formed from a core causing thin metallic
-  - <gold>material to vibrate creating gusts of wind.
-  - <#D2D489><i>On use it shoots a projectile which explodes.
+  - <gold>A key example of nature inspiring innovation, this handmade
+  - <gold>Relic one-ups even the creature it was inspired by.  
+  - <#D2D489><i>Active ability. Shoots a projectile on right click which
+  - <#D2D489><i>explodes on hit launching entities in different directions.
 observe:
   itemRightClick:
   - become: parent
@@ -21,7 +22,7 @@ observe:
       length: 20s
       display: <#FCF5E5>Gust-Shot
   - mythicSkills:
-    - windstaff
+    - gust-shot
 resourcepack:
   textures:
     layers:

@@ -3,10 +3,10 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:tactile_roots
   lore:
-  - ':layer_1::layer_2: Special Grade Relic'
-  - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>When the hosts adrenaline level spikes the
-  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+  - ':layer_2: Grade III Relic'
+  - <gold>The perfect cave raiding boots for those with a green thumb… or toe?
+  - <#D2D489><i>Passive slot ability. Grants movement 
+  - <#D2D489><i>based on the block the user is on.
 passive:
 - match:
   - inInventory

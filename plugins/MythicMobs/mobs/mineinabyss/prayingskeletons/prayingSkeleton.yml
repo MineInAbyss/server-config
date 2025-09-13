@@ -12,12 +12,12 @@ prayingSkeleton_base:
     PreventOtherDrops: true
     Collidable: false
     KnockbackResistance: 1
-  #Model:
-  #  Id: praying_skeleton_1
-  #  ViewRadius: 100
-  #  Drive: false
-  #  DamageTint: false
-  #  Scale: 1
+  Model:
+    Id: praying_skeleton_1
+    ViewRadius: 100
+    Drive: false
+    DamageTint: false
+    Scale: 1
   # TODO switch to `model` skill when it's fixed (currently it can not disguise the entity in certain cases, ex. when teleporting)
 
   DamageModifiers:
@@ -34,5 +34,5 @@ prayingSkeleton_base:
     #  [- model{modelid=praying_skeleton_5;radius=100;damagetint=false;drive=false} @self]
     #  } @self ~onSpawn
     - skill{s=displayHealth} ~onDamaged
-    - model{modelid=praying_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
-    - randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10
+    #- model{modelid=praying_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
+    #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10

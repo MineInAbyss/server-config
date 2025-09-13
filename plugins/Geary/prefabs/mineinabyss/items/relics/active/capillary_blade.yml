@@ -3,10 +3,11 @@ set.item:
   itemModel: mineinabyss:capillary_blade
   itemName: <#15ABC2><b>Capillary Growth
   lore:
-  - ':layer_3: Grade I Relic'
-  - <#249C9C>A weapon that can tear into the fabric of the force field.
-  - <#195959><i>It is known to create crescent shaped slashes damaging
-  - <#195959><i>all organic matter that it comes into contact with.
+  - ':layer_1: Grade I Relic'
+  - <#249C9C>Rather unceremoniously cobbled together from the remains of an
+  - <#249C9C>Interference Unit, this sword carries on its user’s mysterious directives.
+  - <#195959><i>Active ability. Heals user on kill. Charges ability on right click.
+  - <#195959><i> Takes n charges to xxx on left click.
   unbreakable: {}
 observe:
   itemLeftClick:

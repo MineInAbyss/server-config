@@ -4,10 +4,10 @@ set.item:
   itemModel: mineinabyss:respiratis
   lore:
   - ':layer_4: Grade IV Relic'
-  - <gold>A relic composed of multiple relic materials
-  - <gold>and the gills of abyssal creatures.
-  - <#D2D489><i>On use it grants the wearer
-  - <#D2D489><i>the ability to thrive in water.
+  - <gold>Cave Raiders have long tried and failed to use this Relic
+  - <gold>to swim through the Sea of Corpses. Will you be the first?
+  - <#D2D489><i>Active ability. Grants dolphins
+  - <#D2D489><i>grace to the user on right click.
 resourcepack:
   model: mineinabyss:item/relics/respiratis
 observe:
@@ -17,8 +17,10 @@ observe:
       id: respiratis
       length: 35s
       display: <#1F88ED>Morinaut Shell
-  #- mythicSkills:
-  #  - sound{s=entity.panda.aggressive_ambient;sc=hostile;p=0.5;v=1} @self
+  - playSound:
+      sound: minecraft:entity.panda.aggressive_ambient
+      volume: 0.5
+      pitch: 0.3
   - applyPotionEffects:
     - type: minecraft:dolphins_grace
       duration: 8s

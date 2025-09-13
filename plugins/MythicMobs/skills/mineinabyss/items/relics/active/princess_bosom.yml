@@ -2,8 +2,8 @@ princess_bosom:
   Cooldown: 1
   Conditions:
   Skills:
-    - sound{s=block.fungus.break;p=0.2;v=0.6} @self
-    - sound{s=block.fungus.break;p=0.1;v=0.6} @self
+    - sound{s=block.fungus.break;sc=ui;p=0.2;v=0.6} @self
+    - sound{s=block.fungus.break;sc=ui;p=0.1;v=0.6} @self
     - particle{p=ash;c=#C5C6D0;amount=10;hS=0.5;vS=0.5;speed=0;y=0.5;size=2} @self
     - particle{p=crimson_spore;c=#C5C6D0;amount=5;hS=0.3;vS=0.3;speed=0;y=0.5;size=2} @self
     - delay 10

@@ -1,13 +1,12 @@
 set.item:
-  itemName: <#88D481>Mockwater Fluid
+  itemName: <gold>Mockwater Fluid
   type: PAPER
   itemModel: mineinabyss:mockwater_fluid
   lore:
-  - ':layer_1::layer_2: Grade IV Relic'
-  - <gold>Stories have been passed around about a Cave Raider who used this 
-  - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive ability. Grants a short speed
-  - <#D2D489><i>buff when equipped in a passive slot.
+  - 'Grade IV Relic'
+  - <#cdd13d>This viscous, living fluid is remarkably tedious to clean off 
+  - <#cdd13d>surfaces once applied, unless the organism wills it so.
+  - <#D2D489><i>Passive slot ability. Grants increased stamina and climb speed.
 passive:
 - match:
   - inInventory
@@ -17,14 +16,14 @@ passive:
         inSlot:
           slots: [ 9, 10 ]
           item: mineinabyss:mockwater_fluid
-  # climb:stamina_modifiers:
-  #   modifiers:
-  #     - type: STAMINA
-  #       modifier: 1.1
-  #       operation: MULTIPLY
-  #     - type: CLIMB_SPEED
-  #       modifier: 1.1
-  #       operation: MULTIPLY
+  - climb:stamina_modifiers:
+      modifiers:
+       - type: STAMINA
+         modifier: 1.1
+         operation: MULTIPLY
+       - type: CLIMB_SPEED
+         modifier: 1.1
+         operation: MULTIPLY
 resourcepack:
   textures:
     layers:

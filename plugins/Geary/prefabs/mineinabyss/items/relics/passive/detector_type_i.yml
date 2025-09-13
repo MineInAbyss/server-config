@@ -3,11 +3,11 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:detector_type_i
   lore:
-  - ':layer_1::layer_2: Grade IV Relic'
-  - <gold>Stories have been passed around about a Cave Raider who used this 
-  - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive ability. Grants a short speed
-  - <#D2D489><i>buff when equipped in a passive slot.
+  - ':layer_5: Grade II Relic'
+  - <gold>The perfect companion for the haughtiest of hunters, this mask makes
+  - <gold>sure to point out creatures it deems less valuable than the wearer.
+  - <#D2D489><i>Passive slot ability. Applies damage modifier and
+  - <#D2D489><i>glow effect to any mob the wearer is looking at.
 passive:
 - match:
   - inInventory

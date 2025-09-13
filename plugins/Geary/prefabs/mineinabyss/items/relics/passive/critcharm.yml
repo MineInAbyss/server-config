@@ -5,8 +5,8 @@ set.item:
   lore:
   - ':layer_3: Grade IV Relic'
   - <gold>A relic which was formed by the tenacity of hostile creatures.
-  - <#D2D489><i>It encompasses the will to be in control granting the
-  - <#D2D489><i>wearer an increased chance of hitting vital spots.
+  - <#D2D489><i>Passive slot ability. Grants a short
+  - <#D2D489><i>damage modifier at random intervals.
 passive:
 - match:
   - inInventory
@@ -18,7 +18,7 @@ passive:
           slots: [ 9, 10 ]
           item: mineinabyss:critcharm
   - mythicSkills:
-    - randomcritplayer
+    - shirbiri_maku
 resourcepack:
   textures:
     layers:

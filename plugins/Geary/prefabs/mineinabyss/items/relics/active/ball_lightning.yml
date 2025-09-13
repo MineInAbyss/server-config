@@ -3,11 +3,11 @@ set.item:
   itemName: <#CCDADB><b>Ball Lightning
   itemModel: mineinabyss:ball_lightning
   lore:
-  - ':layer_5: Grade I Relic'
-  - <#A0ACAD>A long frail pole carved from one of the
-  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
-  - <#7B898A><i>It has the ability to flash-freeze air
-  - <#7B898A><i>which freezes all organic matter it touches.
+  - ':layer_5: Grade II Relic'
+  - <#A0ACAD>Only the battery powering this weapon is considered a Relic.
+  - <#A0ACAD>The rest was added for unknown and certainly dangerous purposes.
+  - <#7B898A><i>Active ability. Shoots slow moving projectile on right click.
+  - <#7B898A><i>Projectile deals damage over time.
 observe:
   itemRightClick:
   - become: parent
@@ -18,7 +18,7 @@ observe:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: lightning_ball
+      id: ball_lightning
       length: 35s
       display: <#CCDADB>Ball Lightning
   - mythicSkills:

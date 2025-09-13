@@ -9,7 +9,7 @@ necrometallic_blade:
 
 necrometallic_blade_tick:
   Skills:
-    - sound{s=entity.creeper.hurt;sc=master;p=<random.float.0.2to0.5>;v=0.7} @self
+    - sound{s=entity.creeper.hurt;sc=ui;p=<random.float.0.2to0.5>;v=0.7} @self
     - damage{a=5;pi=true} @EntitiesNearOrigin{r=6;ignore=players}
     - effect:particles{particle=campfire_signal_smoke;amount=100;hS=3;vS=1;y=0.5}
     - effect:particles{particle=glow_squid_ink;amount=20;hS=3;vS=1;y=0.5}
@@ -33,4 +33,4 @@ necrometallic_blade_ready:
   Conditions:
     - hasaurastacks{n=necrometallic_blade;s=1} true
   Skills:
-    - sound{s=entity.creeper.primed;sc=master;p=1;v=1} @self
+    - sound{s=entity.creeper.primed;sc=ui;p=1;v=1} @self

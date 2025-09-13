@@ -3,11 +3,11 @@ set.item:
   type: minecraft:paper
   itemModel: mineinabyss:relic_boots
   lore:
-  - ':layer_3: Grade II Relic'
-  - <gold>Boots said to imitate the innate
-  - <gold>abilities of a famous delver.
-  - <#D2D489><i>On use they grant the wearer a short boost
-  - <#D2D489><i>in strength allowing delvers to ascend faster.
+  - ':layer_3: Grade III Relic'
+  - <gold>Researchers speculate that this Relic’s purpose was never to send
+  - <gold>oneself flying, but that never stopped anyone from using it that way.
+  - <#D2D489><i>Active ability. Propels the user upward on
+  - <#D2D489><i>right click and forward on left click.
 observe:
   itemRightClick:
   - become: parent
@@ -16,7 +16,7 @@ observe:
       length: 20s
       display: <dark_aqua>Treble Winds      
   - mythicSkills:
-    - treble_winds
+    - treble_winds_upward
   itemLeftClick:
   - become: parent
   - cooldown:

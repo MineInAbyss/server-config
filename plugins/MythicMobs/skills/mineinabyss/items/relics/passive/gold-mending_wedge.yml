@@ -1,4 +1,4 @@
-verdaueffax:
+gold-mending_wedge:
   Conditions:
   Cooldown: 10
   Skills:
@@ -9,9 +9,9 @@ verdaueffax:
 effaxfeed:
   Conditions:
   Skills:
-  - effect:sound{s=entity.shulker.ambient;p=1.3} @Self
+  - effect:sound{s=entity.shulker.ambient;sc=ui;p=1.3} @Self
   - delay 1
-  - effect:sound{s=entity.shulker.ambient;p=1.5} @Self
+  - effect:sound{s=entity.shulker.ambient;sc=ui;p=1.5} @Self
   - potion{t=REGENERATION;d=200;l=1} @self
 
 verdaudown:

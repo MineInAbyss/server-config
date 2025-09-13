@@ -4,9 +4,10 @@ set.item:
   itemName: <#51C947>Wanabushi
   lore:
   - ':layer_1::layer_2: Grade III Relic'
-  - <gold>An organic talisman formed from plant parts and relics.
-  - <#D2D489><i>When used it calls upon weeds to syphon nutrients
-  - <#D2D489><i>from the force field to rapidly grow into vine binders.
+  - <gold>Researchers speculate that this automated sentry was a
+  - <gold>precursor to the larger, more imposing Interference Unit.
+  - <#D2D489><i>Active ability. Summons a
+  - <#D2D489><i>Vine Shooter inspired automata on right click.
 observe:
   itemRightClick:
   - become: parent

@@ -1,11 +1,11 @@
 set.item:
   itemName: <#1F88ED>Necrometallic Blade
-  type: minecraft:iron_sword
+  type: minecraft:netherite_sword
   itemModel: mineinabyss:necrometallic_blade
   lore:
   - ':layer_4: Grade I Relic'
-  - <gold>A straight blade which was made from an ore 
-  - <gold>infected by a type of bacteria long ago.
+  - <gold>Researchers of the bacteria that inhabit this Relic advice
+  - <gold>wielders not to touch its blade under any circumstances. 
   - <#D2D489><i>When vibrated the ore releases bacterial 
   - <#D2D489><i>spores which poison their environment. 
   unbreakable: {}

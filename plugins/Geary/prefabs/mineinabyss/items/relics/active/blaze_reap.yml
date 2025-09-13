@@ -7,7 +7,8 @@ set.item:
   - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
   - <#C6CC8A>which causes ongoing explosions
   - <#C6CC8A>on whatever it is struck on.
-  - <#948E61><i>Used to create powerful explosions.
+  - <#948E61><i>Active ability. Charges weapon on right click.
+  - <#948E61><i>Takes 5 charges to create explosion on left click.
   enchantments:
     - enchant: minecraft:fortune
       level: 3

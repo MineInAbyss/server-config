@@ -3,18 +3,18 @@ petrifying_thud:
   Conditions:
   Skills:
     - potion{t=SLOW;d=80;l=3} @Self
-    - sound{s=entity.fox.screech;p=10;v=0.3} @Self
-    - sound{s=entity.fox.screech;p=9;v=0.3} @Self
-    - sound{s=entity.fox.screech;p=8;v=0.3} @Self
+    - sound{s=entity.fox.screech;sc=ui;p=10;v=0.3} @Self
+    - sound{s=entity.fox.screech;sc=ui;p=9;v=0.3} @Self
+    - sound{s=entity.fox.screech;sc=ui;p=8;v=0.3} @Self
     - particle{p=reddust;c=#C5C6D0;amount=20;hS=0.3;vS=0.3;speed=0;y=1} @self
     - delay 25
     - skill{s=petrify_impact} @Self
 
 petrify_impact:
   Skills:
-    - sound{s=block.note_block.basedrum;p=0.75;v=0.75} @Self
-    - sound{s=block.note_block.basedrum;p=0.5;v=0.75} @Self
-    - sound{s=block.note_block.basedrum;p=1;v=0.75} @Self
+    - sound{s=block.note_block.basedrum;sc=ui;p=0.75;v=0.75} @Self
+    - sound{s=block.note_block.basedrum;sc=ui;p=0.5;v=0.75} @Self
+    - sound{s=block.note_block.basedrum;sc=ui;p=1;v=0.75} @Self
     - delay 1
     - effect:particlering{p=mycelium;c=#C5C6D0;a=3;hS=0.5;y=0.1;r=7;points=48}
     - effect:particlering{p=mycelium;c=#C5C6D0;a=3;hS=0.5;y=0.2;r=4;points=30;size=2}

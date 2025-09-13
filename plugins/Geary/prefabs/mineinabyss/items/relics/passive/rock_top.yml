@@ -3,11 +3,9 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:rock_top
   lore:
-  - ':layer_1::layer_2: Grade IV Relic'
-  - <gold>Stories have been passed around about a Cave Raider who used this 
-  - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive ability. Grants a short speed
-  - <#D2D489><i>buff when equipped in a passive slot.
+  - ':layer_1: Grade IV Relic'
+  - <gold>It's a rock that floats and changes shape when spun.
+  - <#D2D489><i>Passive slot ability. Slowly spins the user.
 passive:
 - match:
   - inInventory

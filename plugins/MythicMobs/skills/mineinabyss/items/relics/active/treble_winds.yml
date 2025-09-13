@@ -1,11 +1,11 @@
-treble_winds:
+treble_winds_upward:
   Cooldown: 
   Conditions:
   Skills:    
-  - sound{s=item.boot.throw;sc=hostile;p=1;v=0.6} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.1;v=0.7} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.2;v=0.7} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.15;v=0.8} @self
+  - sound{s=item.boot.throw;sc=ui;p=1;v=0.6} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.1;v=0.7} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.2;v=0.7} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.15;v=0.8} @self
   - delay 4
   - particle{p=dust_plume;amount=10;r=1.5;i=1;size=2} @self
   - velocity{m=set;x=0;y=1.2;z=0} @self
@@ -13,10 +13,10 @@ treble_winds:
 treble_winds_forward:
   Conditions:
   Skills:
-  - sound{s=item.boot.throw;sc=hostile;p=1;v=0.6} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.1;v=0.7} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.2;v=0.7} @self
-  - sound{s=item.brush.brushing.sand.complete;p=0.15;v=0.8} @self
+  - sound{s=item.boot.throw;sc=ui;p=1;v=0.6} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.1;v=0.7} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.2;v=0.7} @self
+  - sound{s=item.brush.brushing.sand.complete;sc=ui;p=0.15;v=0.8} @self
   - delay 4
   - particle{p=dust_plume;amount=10;r=1.5;i=1;size=2} @self
   - lunge{velocity=1.09;velocityY=0.1} @forward{f=3;y=0.1}

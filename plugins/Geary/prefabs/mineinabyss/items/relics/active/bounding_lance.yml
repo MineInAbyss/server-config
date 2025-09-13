@@ -1,5 +1,5 @@
 set.item:
-  itemName: <#705160><b>Shining Pike
+  itemName: <#705160><b>Shifting Pike
   type: minecraft:netherite_sword
   itemModel: mineinabyss:bounding_lance
   lore:
@@ -23,15 +23,15 @@ observe:
       length: 1s
       display: <#705160><b>Change Form
   - mythicSkills:
-    - boundinglancecharge
+    - shiftingpikecharge
   itemLeftClick:
   - become: parent
   - cooldown:
-      id: boundinglance
+      id: shifting_pike
       length: 40s
-      display: <#705160><b>Proboscis
+      display: <#705160><b>Shifting Pike
   - mythicSkills:
-    - boundinglance
+    - shifting_pike
 
 resourcepack:
   model: mineinabyss:item/relics/shining_pike

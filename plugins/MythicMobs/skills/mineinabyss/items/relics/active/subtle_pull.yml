@@ -1,24 +1,63 @@
-
-subtle_pull:
+subtle_pull_hit: # Shim for geary
+  Skills:
+  - skill{s=subtle_pull_hit_}
+subtle_pull_hit_:
   Cooldown:
   Conditions:
+    - hasaurastacks{n=subtlepullcharge} true
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
-  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;repeat=3;repeatInterval=3} @self #red particles maybe with particleatom
-  - sound{s=block.bell.resonate;volume=0.75;pitch=2} @self #thinking about sound
-  - sound{s=block.bell.resonate;volume=0.75;pitch=4} @self
+  - effect:atom{po=reddust;pn=reddust;color1=#F5F5DC;color2=#ae0000;rn=0.5;r=1;o=2;d=true;dr=true;dir=1,0,0;ticks=15;y=1} @forward{f=1}
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=2} @self #thinking about sound
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=4} @self
   - delay 15
-  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=1.6} @origin #dis one unsure about
-  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=0.2} @origin
-  - sound{s=entity.ender_dragon.shoot;;volume=1;pitch=0.6} @origin
+  - sound{s=block.portal.travel;sc=ui;volume=0.4;pitch=1} @origin
+  - sound{s=block.portal.travel;sc=ui;volume=0.7;pitch=0.2} @origin
+  - sound{s=block.portal.travel;sc=ui;volume=0.75;pitch=0.3} @origin
   - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
-  - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_hit;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @targetlocation
+  - delay 10
+  - skill{s=subtle_pull_area_control}
+
+subtle_pull_area_control:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=subtlepullcharge} true
+  Skills:
+  - summon{type=subtle_pull_center_small;amount=3;radius=3to6} @origin #probs best if not random
+
+subtle_pull: # Shim for geary
+  Skills:
+  - skill{s=subtle_pull_}
+subtle_pull_:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=subtlepullcharge} true
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
+  - effect:atom{po=reddust;pn=reddust;color1=#F5F5DC;color2=#ae0000;rn=0.5;r=1;o=2;d=true;dr=true;dir=1,0,0;ticks=15;y=1} @forward{f=1}
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=2} @self #thinking about sound
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=4} @self
+  - delay 15
+  - sound{s=block.portal.travel;sc=ui;volume=0.4;pitch=1} @origin
+  - sound{s=block.portal.travel;sc=ui;volume=0.7;pitch=0.2} @origin
+  - sound{s=block.portal.travel;sc=ui;volume=0.75;pitch=0.3} @origin
+  - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
+  - delay 10
+  - skill{s=subtle_pull_projectile}
+  
+subtle_pull_projectile:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=subtlepullcharge} true
+  Skills:
+  - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_hit;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
+  - skill{s=after_image_subtle_pull} #skill from after_image_arrow
   - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
 
 subtle_pull_tick:
   Skills:
-  - effect:particles{p=smoke;y=0;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
-  - effect:particles{p=reddust;color=#000000;y=0.2;amount=8;speed=1;hS=0.7;vS=0.4;size=2} @Origin
+  - effect:particles{p=reddust;y=0;color=#ae0000;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
+  - effect:particles{p=reddust;color=#F0EAD6;y=0.2;amount=8;speed=1;hS=0.7;vS=0.4;size=2} @Origin
 
 subtle_pull_hit:
   Skills:
@@ -29,38 +68,33 @@ subtle_pull_hit:
   - damage{a=0;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players}
   - potion{type=SLOW;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=1}
   - potion{type=SLOW;duration=10;lvl=1;delay=10;p=false} @EntitiesNearOrigin{r=1}
-  - sound{s=entity.player.attack.crit;volume=1;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
+  - sound{s=entity.player.attack.crit;sc=ui;volume=0.7;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
   - effect:bloodyScreen{d=30} @EntitiesNearOrigin{r=1.6}
 
 subtle_pull_end:
   Skills:
-  - sound{s=entity.wither.ambient;volume=1;pitch=0.2} @origin
-  - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @Origin
-  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
-  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
-  - effect:sound{s=block.beacon.deactivate;volume=0.6;pitch=0.2} @origin
-  - effect:sound{s=block.beacon.deactivate;volume=0.6;pitch=0.1} @origin
-  - effect:sound{s=block.beacon.deactivate;volume=0.6;pitch=0.5} @origin
-  - effect:sound{s=block.conduit.deactivate;volume=0.8;pitch=1.9} @origin
-  - effect:sound{s=block.conduit.deactivate;volume=0.8;pitch=0.3} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=2;size=3} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3;size=18;repeat=28;repeatinterval=2;delay=6} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=2.6;delay=2;size=3} @origin
+  - sound{s=entity.wither.ambient;sc=ui;volume=1;pitch=0.2} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.2} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.1} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.5} @origin
+  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.8;pitch=1.9} @origin
+  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.8;pitch=0.3} @origin
+  - sound{s=entity.dragon_fireball.explode;sc=ui;volume=0.5;pitch=0.6} @origin
+  - sound{s=entity.player.attack.crit;sc=ui;volume=1;pitch=0.6;cooldown=1} @origin
+  - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @origin
+  - effect:particles{p=explosion_large;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=0;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=45;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=90;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=115;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particlesphere{p=reddust;color=#F0EAD6;amount=100;radius=2.6;delay=2;size=3} @origin
   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3.2;delay=4;size=3} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3.8;delay=6;size=2.7} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=4.8;delay=8;size=2.5} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=5.8;delay=10;size=2.2} @origin
-  #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.9;delay=12;size=2} @origin
-  #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=8;delay=14;size=2} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9;delay=16;size=1.7} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10;delay=18;size=1.2} @origin
-  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
-  - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.6} @origin
+  - effect:particlesphere{p=reddust;color=#F5F5DC;amount=100;radius=3.8;delay=6;size=2.7} @origin
   - damage{a=1;ignorearmor=false} @EntitiesNearOrigin{r=2.2}
   - damage{a=1;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
-  - sound{s=entity.player.attack.crit;volume=1;pitch=0.6;cooldown=1} @origin
-  - totem{charges=1;onStart=ueco}
-  - summon{type=vac2;amount=1;radius=0} @origin
+  - totem{charges=1;onStart=subtle_pull_totem}
+  - summon{type=subtle_pull_center;amount=1;radius=0} @origin
   - delay 40
   - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=100;radius=3.1;size=4;repeat=2;repeatinterval=2} @origin
   - delay 30
@@ -68,31 +102,25 @@ subtle_pull_end:
   - delay 4
   - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2} @origin
   - effect:particlesphere{p=smoke_large;amount=200;radius=3;size=7;repeat=4;repeatinterval=2;speed=0.6} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2;size=3;speed=1} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3;delay=1;size=3;speed=1} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=4;delay=2;size=3;speed=1} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=5.2;delay=3;size=2.7;speed=1} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.4;delay=4;size=2.5;speed=1} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=7.8;delay=5;size=2.2;speed=1} @origin
-  #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9.2;delay=6;size=2;speed=1} @origin
- # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10.6;delay=7;size=2;speed=1} @origin
-  #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=12;delay=8;size=1.7;speed=1} @origin
-  #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=14;delay=9;size=1.2;speed=1} @origin
-  #- effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
-  - effect:explosion @Self
+  - effect:particlesphere{p=reddust;color=#ae0000;amount=200;radius=2;size=3;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#ff3232;amount=200;radius=3;delay=1;size=3;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#ff6666;amount=200;radius=4;delay=2;size=3;speed=1} @origin
+  - effect:explosion @self
   - effect:particlering{p=cloud;color=#000000;amount=8;points=40;radius=2;size=3;speed=3;yOffset=1.2} @origin
   - effect:particlering{p=cloud;color=#000000;amount=8;points=46;radius=3;delay=1;size=3;speed=3;yOffset=0.6} @origin
   - effect:particlering{p=cloud;color=#000000;amount=7;points=52;radius=4;delay=2;size=3;speed=3;yOffset=0.6} @origin
   - effect:particlering{p=cloud;color=#000000;amount=7;points=59;radius=5.2;delay=3;size=2.7;speed=3;yOffset=0.6} @origin
   - effect:particlering{p=cloud;color=#000000;amount=6;points=68;radius=6.4;delay=4;size=2.5;speed=3;yOffset=0.6} @origin
-  #- effect:particlering{p=cloud;color=#000000;amount=6;points=80;radius=7.8;delay=5;size=2.2;speed=3;yOffset=0.6} @origin
- # - effect:particlering{p=cloud;color=#000000;amount=5;points=92;radius=9.2;delay=6;size=2;speed=3;yOffset=0.6} @origin
- # - effect:particlering{p=cloud;color=#000000;amount=5;points=106;radius=10.6;delay=7;size=2;speed=3;yOffset=0.6} @origin
-  #- effect:particlering{p=cloud;color=#000000;amount=4;points=120;radius=12;delay=8;size=1.7;speed=3;yOffset=0.6} @origin
-  #- effect:particlering{p=cloud;color=#000000;amount=4;points=48;radius=14;delay=9;size=1.2;speed=3;yOffset=0.6} @origin
-  - sound{s=entity.generic.explode;volume=1;pitch=0.6} @origin
-  - sound{s=block.end_portal.spawn;volume=1;pitch=0.6} @origin
-  - sound{s=block.end_portal.spawn;volume=1;pitch=1.6} @origin
+  - sound{s=entity.generic.explode;sc=ui;volume=0.7;pitch=0.6} @origin
+  - sound{s=block.end_portal.spawn;sc=ui;volume=0.7;pitch=0.6} @origin
+  - sound{s=block.end_portal.spawn;sc=ui;volume=0.7;pitch=1.6} @origin
+
+subtle_pull_totem:
+  Cooldown: 0
+  Skills:
+  - effect:particles{p=reddust;color=#F0EAD6;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
+  - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
+  - potion{type=SLOW;duration=10;lvl=0;p=false} @EntitiesNearOrigin{r=2}
 
 subtle_pull_damage:
   Cooldown: 0
@@ -104,7 +132,144 @@ subtle_pull_damage:
                               - playerwithin{d=2} true ]}
    - damage{a=25;pi=true} @PlayersNearOrigin{r=7}
 
+subtle_pull_center_tick:
+  Cooldown: 0
+  Skills:
+  - pull{velocity=1.1;to=true} @EntitiesNearOrigin{r=8}
+  - pull{velocity=2;to=true} @EntitiesNearOrigin{r=4}
+  - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=2}
+  - potion{type=BLINDNESS;duration=30;lvl=1;p=false} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5}
 
+subtle_pull_center_small_tick:
+  Cooldown: 0
+  Skills:
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=0;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=45;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=90;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particleorbital{r=3;points=50;t=20;i=20;vy=0;rX=90;rZ=0;rY=115;particle=reddust;color=#ae0000;size=2} @origin
+  - effect:particlesphere{p=reddust;color=#F0EAD6;amount=100;radius=2.6;delay=2;size=3} @origin
+  - pull{velocity=1.1;to=true} @EntitiesNearOrigin{r=6}
+  - pull{velocity=2;to=true} @EntitiesNearOrigin{r=4}
+  - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=2}
+  - potion{type=BLINDNESS;duration=30;lvl=1;p=false} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5}
+
+subtle_pull_charge: # Shim for geary
+  Skills:
+  - skill{s=subtle_pull_charge_}
+subtle_pull_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=subtlepullcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self
+
+
+# subtle_pull:
+#   Cooldown:
+#   Conditions:
+#   Skills:
+#   - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
+#   - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1.5;repeat=3;repeatInterval=3} @self #red particles maybe with particleatom
+#   - sound{s=block.bell.resonate;sc=ui;volume=0.75;pitch=2} @self #thinking about sound
+#   - sound{s=block.bell.resonate;sc=ui;volume=0.75;pitch=4} @self
+#   - delay 15
+#   - sound{s=entity.ender_dragon.shoot;sc=ui;volume=1;pitch=1.6} @origin #dis one unsure about
+#   - sound{s=entity.ender_dragon.shoot;sc=ui;volume=1;pitch=0.2} @origin
+#   - sound{s=entity.ender_dragon.shoot;sc=ui;volume=1;pitch=0.6} @origin
+#   - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
+#   - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_hit;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
+#   - skill{s=after_image_subtle_pull} #skill from after_image_arrow
+#   - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
+
+# subtle_pull_tick:
+#   Skills:
+#   - effect:particles{p=smoke;y=0;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
+#   - effect:particles{p=reddust;color=#000000;y=0.2;amount=8;speed=1;hS=0.7;vS=0.4;size=2} @Origin
+
+# subtle_pull_hit:
+#   Skills:
+#   - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
+#   - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
+#   - damage{a=5;ignorearmor=false} @EntitiesNearOrigin{r=1.7}
+#   - damage{a=3;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=1.7}
+#   - damage{a=0;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players}
+#   - potion{type=SLOW;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=1}
+#   - potion{type=SLOW;duration=10;lvl=1;delay=10;p=false} @EntitiesNearOrigin{r=1}
+#   - sound{s=entity.player.attack.crit;sc=ui;volume=1;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
+#   - effect:bloodyScreen{d=30} @EntitiesNearOrigin{r=1.6}
+
+# subtle_pull_end:
+#   Skills:
+#   - sound{s=entity.wither.ambient;sc=ui;volume=1;pitch=0.2} @origin
+#   - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @Origin
+#   - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
+#   - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+#   - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.2} @origin
+#   - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.1} @origin
+#   - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.5} @origin
+#   - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.8;pitch=1.9} @origin
+#   - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.8;pitch=0.3} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=2;size=3} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3;size=18;repeat=28;repeatinterval=2;delay=6} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=2.6;delay=2;size=3} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3.2;delay=4;size=3} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3.8;delay=6;size=2.7} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=4.8;delay=8;size=2.5} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=5.8;delay=10;size=2.2} @origin
+#   #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.9;delay=12;size=2} @origin
+#   #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=8;delay=14;size=2} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9;delay=16;size=1.7} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10;delay=18;size=1.2} @origin
+#   - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+#   - sound{s=entity.dragon_fireball.explode;sc=ui;volume=0.5;pitch=0.6} @origin
+#   - damage{a=1;ignorearmor=false} @EntitiesNearOrigin{r=2.2}
+#   - damage{a=1;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
+#   - sound{s=entity.player.attack.crit;sc=ui;volume=1;pitch=0.6;cooldown=1} @origin
+#   - totem{charges=1;onStart=ueco}
+#   - summon{type=vac2;amount=1;radius=0} @origin
+#   - delay 40
+#   - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=100;radius=3.1;size=4;repeat=2;repeatinterval=2} @origin
+#   - delay 30
+#   - skill{s=subtle_pull_damage} @origin
+#   - delay 4
+#   - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2} @origin
+#   - effect:particlesphere{p=smoke_large;amount=200;radius=3;size=7;repeat=4;repeatinterval=2;speed=0.6} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2;size=3;speed=1} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3;delay=1;size=3;speed=1} @origin
+#   - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=4;delay=2;size=3;speed=1} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=5.2;delay=3;size=2.7;speed=1} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.4;delay=4;size=2.5;speed=1} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=7.8;delay=5;size=2.2;speed=1} @origin
+#   #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9.2;delay=6;size=2;speed=1} @origin
+#  # - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10.6;delay=7;size=2;speed=1} @origin
+#   #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=12;delay=8;size=1.7;speed=1} @origin
+#   #- effect:particlesphere{p=reddust;color=#000000;amount=100;radius=14;delay=9;size=1.2;speed=1} @origin
+#   #- effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+#   - effect:explosion @Self
+#   - effect:particlering{p=cloud;color=#000000;amount=8;points=40;radius=2;size=3;speed=3;yOffset=1.2} @origin
+#   - effect:particlering{p=cloud;color=#000000;amount=8;points=46;radius=3;delay=1;size=3;speed=3;yOffset=0.6} @origin
+#   - effect:particlering{p=cloud;color=#000000;amount=7;points=52;radius=4;delay=2;size=3;speed=3;yOffset=0.6} @origin
+#   - effect:particlering{p=cloud;color=#000000;amount=7;points=59;radius=5.2;delay=3;size=2.7;speed=3;yOffset=0.6} @origin
+#   - effect:particlering{p=cloud;color=#000000;amount=6;points=68;radius=6.4;delay=4;size=2.5;speed=3;yOffset=0.6} @origin
+#   #- effect:particlering{p=cloud;color=#000000;amount=6;points=80;radius=7.8;delay=5;size=2.2;speed=3;yOffset=0.6} @origin
+#  # - effect:particlering{p=cloud;color=#000000;amount=5;points=92;radius=9.2;delay=6;size=2;speed=3;yOffset=0.6} @origin
+#  # - effect:particlering{p=cloud;color=#000000;amount=5;points=106;radius=10.6;delay=7;size=2;speed=3;yOffset=0.6} @origin
+#   #- effect:particlering{p=cloud;color=#000000;amount=4;points=120;radius=12;delay=8;size=1.7;speed=3;yOffset=0.6} @origin
+#   #- effect:particlering{p=cloud;color=#000000;amount=4;points=48;radius=14;delay=9;size=1.2;speed=3;yOffset=0.6} @origin
+#   - sound{s=entity.generic.explode;sc=ui;volume=1;pitch=0.6} @origin
+#   - sound{s=block.end_portal.spawn;sc=ui;volume=1;pitch=0.6} @origin
+#   - sound{s=block.end_portal.spawn;sc=ui;volume=1;pitch=1.6} @origin
+
+# subtle_pull_damage:
+#   Cooldown: 0
+#   Skills:
+#    - shieldbreak{duration=150} @EntitiesNearOrigin{r=7}
+#    - damage{a=70;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
+#    - damage{a=30;pi=true} @EntitiesNearOrigin{r=7;ignore=players}
+#    - damage{a=50;ignorearmor=false} @PlayersNearOrigin{r=2;conditions=[
+#                               - playerwithin{d=2} true ]}
+#    - damage{a=25;pi=true} @PlayersNearOrigin{r=7}
 
 ueco:
   Cooldown: 0

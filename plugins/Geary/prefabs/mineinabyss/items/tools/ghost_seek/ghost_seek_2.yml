@@ -3,13 +3,15 @@ set.item:
   type: minecraft:paper
   itemModel: mineinabyss:ghost_seek_on
   lore:
-    - 'Grade I relic'
+    - 'Grade II relic'
     - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
     - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
     - <#D2D489>guiding its wielder toward hidden relics.
-  equippable:
-    slot: HEAD
-    cameraOverlay: mineinabyss:misc/ghost_seek_overlay
+    - <#948E61><i>Passive slot ability. Plays different sounds based on
+    - <#948E61><i>distance in blocks (200 100 50 25) to a Praying Skeleton.
+  #equippable:
+  #  slot: HEAD
+  #  cameraOverlay: mineinabyss:misc/ghost_seek_overlay
 #passive:
 #  - match:
 #      - equipped

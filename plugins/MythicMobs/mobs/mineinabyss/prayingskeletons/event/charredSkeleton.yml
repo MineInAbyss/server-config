@@ -37,4 +37,4 @@ charredSkeleton:
     - skill{s=displayHealth} ~onDamaged
     #- model{modelid=charred_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
     #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10
-    - skill{charred_skeleton_curse} ~onDeath
+    - skill{s=charred_skeleton_curse} ~onDeath

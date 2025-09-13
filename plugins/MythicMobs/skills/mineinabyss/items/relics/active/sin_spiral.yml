@@ -2,19 +2,20 @@ sin_spiral:
   Skills:
   - effect:particles{particle=warped_spore;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
   - effect:particles{particle=white_smoke;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
-  - sound{s=entity.bat.takeoff;p=2;v=0.6} @self
-  - sound{s=entity.bat.takeoff;p=0.2;v=0.6} @self
+  - sound{s=entity.bat.takeoff;sc=ui;p=2;v=0.6} @self
+  - sound{s=entity.bat.takeoff;sc=ui;p=0.2;v=0.6} @self
   - lunge{velocity=1.4;velocityY=0.2} @forward{f=4;y=0.3}
   - delay 10
   - skill{sin_spiral_effect} @self
 
-sin_spiral_effect: #isnt working and lacks "animation"
+sin_spiral_effect:
   Skills:
-  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @forward{f=3;rot=0}
-  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @forward{f=3;rot=0}
-  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @forward{f=3;rot=90}
-  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @forward{f=3;rot=90}
-  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @forward{f=3;rot=180}
-  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @forward{f=3;rot=180}
-  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @forward{f=3;rot=270}
-  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @forward{f=3;rot=270}
+  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=0}
+  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=90}
+  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=180}
+  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=270}
+
+sin_spiral_area_control:
+  Skills:
+  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @origin
+  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @origin

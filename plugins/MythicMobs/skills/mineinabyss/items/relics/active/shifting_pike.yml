@@ -1,4 +1,4 @@
-boundinglancecharge:
+shiftingpikecharge:
   Cooldown: 0
   Conditions:
   - hasaurastacks{n=shiningstop;s=1} false
@@ -10,18 +10,18 @@ boundinglancecharge:
     - skill{s=boundingdamageready} @self
     - skill{s=boundingshieldready} @self
     - effect:particles{p=reddust;c=#FFD700;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
-    - sound{s=item.spyglass.use;p=0.8;v=0.8} @self
-    - sound{s=item.spyglass.use;p=0.7;v=0.75} @self
+    - sound{s=item.spyglass.use;sc=ui;p=0.8;v=0.8} @self
+    - sound{s=item.spyglass.use;sc=ui;p=0.7;v=0.75} @self
 
-boundinglance:
+shifting_pike:
   Cooldown: 1
   Conditions:
   #- stance{s=spikeless;str=true} false
   Skills:
     - potion{t=SLOW;l=7;d=35;p=false} @Self
   #  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
-    - sound{s=item.spyglass.use;p=1.3;v=0.8} @Self
-    - sound{s=item.spyglass.use;p=1.4;v=0.75} @Self
+    - sound{s=item.spyglass.use;sc=ui;p=1.3;v=0.8} @Self
+    - sound{s=item.spyglass.use;sc=ui;p=1.4;v=0.75} @Self
     - delay 30
   #  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
     - skill{s=boundingshield} @self
@@ -64,8 +64,8 @@ boundingdamage:
   Skills:
     - auraremove{aura=boundinglance;stacks=1} @self
     #- skill{s=bounding;repeat=40;repeati=5} @self
-    - sound{s=block.beacon.activate;p=0.9;v=0.9} @Self
-    - sound{s=block.beacon.activate;p=0.6;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.9;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.6;v=0.9} @Self
     - potion{t=STRENGTH;d=140;l=1} @self
     - potion{t=SWIFTNESS;d=140;l=1} @self 
     - aura{auraName=shiningstop;duration=780;c=1;cotd=false} @self
@@ -79,8 +79,8 @@ boundbuff:
     - Aura{auraName=boundingring;onTick=buffring;interval=2;duration=60} @self
     - potion{t=SLOW;l=2;d=60;p=false} @Self
     - delay 60
-    - sound{s=block.beacon.activate;p=0.9;v=0.9} @Self
-    - sound{s=block.beacon.activate;p=0.6;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.9;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.6;v=0.9} @Self
     - particle{p=happy_villager;a=30;hs=1;vs=1;y=1.5} @PIR{r=5}
     - potion{t=REGENERATION;d=90;l=1} @PIR{r=5}
     - potion{t=ABSORPTION;d=140;l=1} @PIR{r=5}
@@ -92,8 +92,8 @@ boundingshield:
     - hasaurastacks{n=boundinglance;s=5} true
   Skills:
     - auraremove{aura=boundinglance;stacks=5} @self
-    - sound{s=block.beacon.activate;p=0.9;v=0.9} @Self
-    - sound{s=block.beacon.activate;p=0.6;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.9;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.6;v=0.9} @Self
     - summon{type=bounding;amount=1;radius=0} @self
     - skill{s=bounding;repeat=40;repeati=5} @self
     - aura{auraName=shiningstop;duration=780;c=1;cotd=false} @self
@@ -106,8 +106,8 @@ buffring:
 
 
 boundingbuff:
-    - sound{s=block.beacon.activate;p=0.9;v=0.9} @Self
-    - sound{s=block.beacon.activate;p=0.6;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.9;v=0.9} @Self
+    - sound{s=block.beacon.activate;sc=ui;p=0.6;v=0.9} @Self
     - potion{t=STRENGTH;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
     - potion{t=HASTE;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}
     - potion{t=REGENERATION;d=40;l=1;repeat=40;repeati=5} @PIR{r=8}

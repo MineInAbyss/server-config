@@ -3,10 +3,10 @@ set.item:
   type: PAPER
   itemModel: mineinabyss:frayed_murmur
   lore:
-  - ':layer_1::layer_2: Special Grade Relic'
-  - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>When the hosts adrenaline level spikes the
-  - <#D2D489><i>relic consumes energy reserves to heal its habitat.
+  - ':layer_3: Grade III relic'
+  - <gold>Derived from technology recovered from Interference Units, this
+  - <gold>mask bends light around its wearer, but inexplicably not itself.
+  - <#D2D489><i>Passive slot ability. Turns the user invisible.
 passive:
 - match:
   - inInventory

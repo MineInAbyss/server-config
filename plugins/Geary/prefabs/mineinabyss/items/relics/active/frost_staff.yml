@@ -4,10 +4,10 @@ set.item:
   itemModel: mineinabyss:frost_staff
   lore:
   - ':layer_5: Grade I Relic'
-  - <#A0ACAD>A long frail pole carved from one of the
-  - <#A0ACAD>crystallized sections surrounding the Sea of Corpses.
-  - <#7B898A><i>It has the ability to flash-freeze air
-  - <#7B898A><i>which freezes all organic matter it touches.
+  - <#A0ACAD>The chemicals produced by this Relic maintain a cold enough
+  - <#A0ACAD>temperature to freeze one solid, even in the hottest of climates.
+  - <#7B898A><i>Active ability. Shoots a bunch of inaccurate projectiles
+  - <#7B898A><i>on right click. Projectiles freeze and slow the target on hit.
 observe:
   itemRightClick:
   - become: parent
@@ -18,10 +18,10 @@ observe:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: Frost_Beam
+      id: shiver_mist
       length: 38s
       display: <#CCDADB>Shiver Mist
   - mythicSkills:
-    - Frost_Beam
+    - shiver_mist
 resourcepack:
-  model: mineinabyss:item/relics/glacia_scepter
+  model: mineinabyss:item/relics/shiver_mist

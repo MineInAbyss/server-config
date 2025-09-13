@@ -3,10 +3,11 @@ set.item:
   itemModel: mineinabyss:reverberating_edge
   itemName: <#15ABC2><b>Reverberating Edge
   lore:
-  - ':layer_3: Grade I Relic'
-  - <#249C9C>A weapon that can tear into the fabric of the force field.
-  - <#195959><i>It is known to create crescent shaped slashes damaging
-  - <#195959><i>all organic matter that it comes into contact with.
+  - ':layer_4: Grade I Relic'
+  - <#249C9C>The innate abilities carried by this dagger might make its use
+  - <#249C9C>look effortless, but it’s actually taxing on the wielder.
+  - <#195959><i>Active ability. Each hit creates charges and deals additional
+  - <#195959><i>damage at 7 charges. Takes 10 charges to stun surroundings on right click.
   unbreakable: {}
 observe:
   itemLeftClick:
