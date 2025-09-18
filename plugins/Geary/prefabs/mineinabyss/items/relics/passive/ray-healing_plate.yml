@@ -1,12 +1,13 @@
 set.item:
-  itemName: <#88D481>Ray-healing Plate
+  itemName: <#808000>Ray-healing Plate
   type: PAPER
   itemModel: mineinabyss:ray-healing_plate
   lore:
   - ':layer_1: Grade III Relic'
-  - <gold>An organic object that symbiotically attaches like a parasite.
-  - <#D2D489><i>Passive slot ability. Slowly heals the user
-  - <#D2D489><i>when above a specific light level.
+  - <#A3A300>Holders of this Relic report that it feels warm
+  - <#A3A300>and comfortable to the touch, even in cold climates.
+  - <#D1D100><i>Passive slot ability. Slowly heals the user
+  - <#D1D100><i>when above a specific light level.
 passive:
 - match:
   - inInventory

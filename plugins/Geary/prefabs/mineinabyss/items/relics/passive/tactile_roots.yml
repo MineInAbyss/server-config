@@ -1,12 +1,12 @@
 set.item:
-  itemName: <#88D481>Tactile Roots
+  itemName: <#808000>Tactile Roots
   type: PAPER
   itemModel: mineinabyss:tactile_roots
   lore:
   - ':layer_2: Grade III Relic'
-  - <gold>The perfect cave raiding boots for those with a green thumb… or toe?
-  - <#D2D489><i>Passive slot ability. Grants movement 
-  - <#D2D489><i>based on the block the user is on.
+  - <#A3A300>The perfect cave raiding boots for those with a green thumb… or toe?
+  - <#D1D100><i>Passive slot ability. Grants movement 
+  - <#D1D100><i>based on the block the user is on.
 passive:
 - match:
   - inInventory

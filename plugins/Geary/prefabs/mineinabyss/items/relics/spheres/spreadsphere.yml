@@ -1,15 +1,15 @@
 set.item:
   type: minecraft:paper
-  itemName: <#7D9472>Spread Sphere
+  itemName: <#AC8053>Spread Sphere
   itemModel: mineinabyss:l2_sunsphere
   lore:
   - ':layer_2: Grade IV Relic'
-  - <gold>It is an egg-shaped relic with
-  - <gold>grey patterns on its surface.
-  - <gold>It has a rigrid texture and has a cracking
-  - <gold>noise like eggs if pressure is applied to it.
-  - <#B07E3E><i>Shoots multiple projectiles
-  - <#B07E3E><i>after being thrown.
+  - <#BB9672>It is an egg-shaped relic with
+  - <#BB9672>grey patterns on its surface.
+  - <#BB9672>It has a rigrid texture and has a cracking
+  - <#BB9672>noise like eggs if pressure is applied to it.
+  - <#C4A484><i>Shoots multiple projectiles
+  - <#C4A484><i>after being thrown.
 observe:
   itemRightClick:
   - become: parent

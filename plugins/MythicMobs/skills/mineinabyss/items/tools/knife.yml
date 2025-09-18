@@ -4,11 +4,11 @@ knifethrow:
     - offgcd true
   Skills:
     - gcd{ticks=50}
-    - projectile{bulletType=ITEM;material=iron_ingot;onTick=knifetick;onHit=knifeimpact;v=25;g=0.5;i=1;hR=1;vR=1;hnp=true;hp=true;syo=1.5;vO=0.1} @targetlocation
+    - projectile{bulletType=ITEM;material=iron_ingot;onTick=knifetick;onHit=knifeimpact;v=25;g=0.5;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;syo=1.5;vO=0.1} @forward{f=1000}
 
 knifeimpact:
   Skills:
-    - effect:particles{particle=Electric_Spark;amount=20;hS=1.5;vS=1.5;y=.5}
+    - effect:particles{particle=Electric_Spark;amount=10;hS=1;vS=1;y=.5}
     - damage{a=5}
     - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}    
 

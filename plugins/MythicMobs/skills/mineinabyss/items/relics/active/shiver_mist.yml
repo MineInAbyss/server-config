@@ -1,4 +1,75 @@
-shiver_mist:
+shiver_mist_hit: # Shim for geary
+  Skills:
+  - skill{s=shiver_mist_hit_}
+shiver_mist_hit_:
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -80";op=true}
+  - potion{t=SLOW;l=2;d=20;p=false} @Self
+  - delay 10
+  - spin{duration=40;velocity=0.2} @self
+  - skill{s=shiver_mist_area_projectile;delay=0}
+  - skill{s=shiver_mist_area_projectile;delay=20}
+  - skill{s=shiver_mist_area_projectile;delay=40}
+  - sound{s=entity.ender_dragon.flap;sc=ui;volume=0.3;pitch=1.6;repeat=2;repeatinterval=3} @self
+  - sound{s=entity.wither.shoot;sc=ui;volume=0.1;pitch=1.5;repeat=2;repeatinterval=2} @self
+  - delay 4
+  - freeze{ticks=100} @self #might not work without aura, to be changed to skill on chance its broken after testing
+  - potion{t=SLOW;l=2;d=20;p=false} @self
+  - extinguish{delay=0} @self
+
+shiver_mist_area_projectile:
+  Skills:
+  - projectile{onTick=shiver_mist_area_projectile_tick;onEnd=shiver_mist_area_projectile_end;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=1;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-1;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=6;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-6;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=4;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-4;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=3;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-3;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=8;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-8;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_area_projectile_tick;v=8;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.239;hn=1;vn=1;a=0.8;g=0.9;pi=true} @Forward{f=1000}
+
+shiver_mist_area_projectile_tick:
+  Skills:
+  - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
+  - extinguish{delay=0} @EntitiesNearOrigin{r=1}
+
+shiver_mist_area_projectile_end:
+  TargetConditions:
+  Skills:
+  - effect:particles{particle=snowflake;amount=4;hS=1;vS=1;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - totem{charges=20;i=10;md=200;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true}
+
+shiver_mist_area_totem:
+  TargetConditions:
+  Skills:
+  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=4}
+  - damage{a=5;pkb=false} @EntitiesNearOrigin{r=4}
+  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @EntitiesNearOrigin{r=4}
+  - extinguish{delay=0} @EntitiesNearOrigin{r=4}
+
+shiver_mist: # Shim for geary
+  Skills:
+  - skill{s=shiver_mist_}
+shiver_mist_:
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -80";op=true}
   - potion{t=SLOW;l=2;d=20;p=false} @Self
@@ -6,47 +77,54 @@ shiver_mist:
   - sound{s=block.enchantment_table.use;sc=ui;volume=0.5;pitch=0.8;repeat=2;repeatinterval=6} @self
   - orbital{bulletType=MOB;mob=Frost_Beam;r=0;points=1;i=1;duration=2000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
   - delay 10
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=0;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=1;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=-1;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=6;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=-6;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=4;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=-4;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=3;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=-3;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=8;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=-8;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_hit;onEnd=shiver_mist_projectile_end;v=30;i=1;mr=15;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=0.5;vR=0.5;hO=0;vO=0.839;hn=1;vn=1;a=0.8;g=0.6} @Forward{f=1000}
-  - skill{s=after_image_shiver_mist} #skill from after_image_arrow
+  - throw{velocity=9;velocityY=4} @Cone{r=1;a=45}
+  - throw{velocity=7;velocityY=3;delay=1} @Cone{r=1to2;a=45}
+  - throw{velocity=5;velocityY=2;delay=2} @Cone{r=2to3;a=45}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=1;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-1;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=6;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-6;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=4;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-4;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=3;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-3;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=8;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-8;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.299;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=1;vO=0.299;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-1;vO=0.2;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=6;vO=0.279;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-6;vO=0.2;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=4;vO=0.279;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-4;vO=0.2;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=3;vO=0.299;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-3;vO=0.2;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=8;vO=0.269;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-8;vO=0.269;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
+  - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.2;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
   - sound{s=entity.ender_dragon.flap;sc=ui;volume=0.3;pitch=1.6;repeat=2;repeatinterval=3} @self
   - sound{s=entity.wither.shoot;sc=ui;volume=0.1;pitch=1.5;repeat=2;repeatinterval=2} @self
-  - throw{velocity=9;velocityY=4} @EntitiesInCone{r=1;a=45}
-  - throw{velocity=7;velocityY=3;delay=5} @EntitiesInCone{r=1to2;a=45}
-  - throw{velocity=5;velocityY=2;delay=10} @EntitiesInCone{r=2to3;a=45}
   - delay 4
-  - freeze{ticks=80} @self #might not work without aura, to be changed to skill on chance its broken after testing
+  - freeze{ticks=100} @self #might not work without aura, to be changed to skill on chance its broken after testing
   - potion{t=SLOW;l=2;d=20;p=false} @self
-  - extinguish{delay=0} @self @cone
+  - extinguish{delay=0} @self
 
 shiver_mist_projectile_tick:
   Skills:
   - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=1}
+  - damage{a=1;pkb=true} @EntitiesNearOrigin{r=1}
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
+  - extinguish{delay=0} @EntitiesNearOrigin{r=1}
 
 shiver_mist_projectile_end:
   TargetConditions:
   Skills:
   - effect:particles{particle=snowflake;amount=2;hS=1;vS=1;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-
-shiver_mist_projectile_hit:
-  TargetConditions:
-  Skills:
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=40;cotd=false;cod=true;rd=true} @EIR{r=1}
-  - damage{a=3;pkb=true} @EntitiesNearOrigin{r=1}
-  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
-  - extinguish{delay=1} @EIR{r=2}
 
 shiver_mist_projectile_hit_fx:
   Skills:
@@ -59,52 +137,49 @@ shiver_mist_freeze_effect:
   Skills:
   - effect:particles{particle=block_crack;m=ICE;amount=5;hS=0.35;vS=0.35;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @origin
   - skill{s=shiver_mist_freeze_effect_1}
-  - delay 1
   - skill{s=shiver_mist_freeze_effect_2}
-  - delay 1
   - skill{s=shiver_mist_freeze_effect_3}
-  - delay 1
   - skill{s=shiver_mist_freeze_effect_4}
 
 shiver_mist_freeze_effect_1:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=shivermistfreeze;s=1to10} true
+    - hasaurastacks{n=shivermistfreeze;s=1to8} true
   Skills:
+  - effect:particles{particle=item_snowball;amount=1;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=2;hasParticles=false} @self
 
 shiver_mist_freeze_effect_2:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=shivermistfreeze;s=11to20} true
+    - hasaurastacks{n=shivermistfreeze;s=9to15} true
   Skills:
   - effect:particles{particle=item_snowball;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=3;hasParticles=false} @self
   - freeze{ticks=40} @self
-  - damage{a=0.5;ia=false;pkb=true} @self
+  - damage{a=1;ia=false;pkb=true} @self
 
 shiver_mist_freeze_effect_3:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=shivermistfreeze;s=21to30} true
+    - hasaurastacks{n=shivermistfreeze;s=16to24} true
   Skills:
   - effect:particles{particle=item_snowball;amount=3;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - effect:particles{particle=snowflake;amount=1;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=3;hasParticles=false} @self
   - freeze{ticks=40} @self
-  - damage{a=0.5;ia=true;pkb=true} @self
+  - damage{a=1;ia=true;pkb=true} @self
 
 shiver_mist_freeze_effect_4:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=shivermistfreeze;s=31to40} true
+    - hasaurastacks{n=shivermistfreeze;s=25to30} true
   Skills:
   - effect:particles{particle=item_snowball;amount=3;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - effect:particles{particle=snowflake;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=4;hasParticles=false} @self
   - freeze{ticks=40} @self
-  - damage{a=1;ia=true;pkb=true} @self
-
+  - damage{a=1.5;ia=true;pkb=true} @self
 
 
 # shiver_mist:

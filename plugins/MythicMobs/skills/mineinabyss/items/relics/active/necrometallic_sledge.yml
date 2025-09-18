@@ -7,7 +7,7 @@ necrometallic_hit_:
   Conditions:
     - isblocking false
   Skills:
-  - onDamaged{auraName=necrometallicdebuff;onTick=necrometallic_tick;i=20;duration=101;c=1;maxStacks=30;cotd=false;cod=true;cocd=true;rd=true} @target
+  - onAttack{auraName=necrometallicdebuff;onTick=necrometallic_tick;i=20;duration=101;c=1;maxStacks=30;cotd=false;cod=true;cocd=true;rd=true} @target
 
 necrometallic_tick:
   Cooldown:

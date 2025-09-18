@@ -1,12 +1,12 @@
 set.item:
-  itemName: <#88D481>Sudden Pinch
+  itemName: <#AC8053>Sudden Pinch
   type: PAPER
   itemModel: mineinabyss:animal_totem
   lore:
   - ':layer_1::layer_2: Grade IV Relic'
-  - <gold>Stories have been passed around about a Cave Raider who used this 
-  - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive slot ability. Grants short speed buffs when equipped.
+  - <#BB9672>Stories have been passed around about a Cave Raider who used this 
+  - <#BB9672>Relic to keep himself constantly awake through his expeditions.
+  - <#C4A484><i>Passive slot ability. Grants short speed buffs when equipped.
 passive:
 - match:
   - inInventory

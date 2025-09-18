@@ -25,12 +25,6 @@ after_image_tick:
   Skills:
   - effect:particles{particle=end_rod;amount=4;hS=0.1;vS=0.1;speed=0.01}
 
-after_image_hit:
-  Cooldown:
-  Conditions:
-  Skills:
-  - damage{a=10} @EIR{r=2}
-
 after_image_ball_lightning: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
@@ -59,15 +53,15 @@ after_image_buddstone_tap: #skill to add to all projectile based relics made: - 
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_gust-shot: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
@@ -77,25 +71,17 @@ after_image_gust-shot: #skill to add to all projectile based relics made: - skil
   - delay 14
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=10;d=200;mr=100;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
-after_image_shiver_mist: #skill to add to all projectile based relics made: - skill{s=after_image_}
-  Cooldown:
-  Conditions:
-    - hasaurastacks{n=afterimagearrow;s=1} true
-  Skills:
-  - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=30;mr=15;hR=1;vR=1;hO=0;sB=true;sE=true;hp=true;hnp=true;syo=1;tyo=1;a=0.9;repeat=29;repeatinterval=2;i=1} @forward{f=1000}
-
 after_image_soul-aiming_light: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_subtle_pull: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
@@ -112,3 +98,21 @@ after_image_undying_wisp: #skill to add to all projectile based relics made: - s
   Skills:
   - delay 14
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+
+after_image_hit:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=12} @ENO{r=2}
+
+after_image_buddstone_hit:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=6} @ENO{r=2}
+
+after_image_soul-aiming_hit:
+  Cooldown:
+  Conditions:
+  Skills:
+  - damage{a=8} @ENO{r=2}

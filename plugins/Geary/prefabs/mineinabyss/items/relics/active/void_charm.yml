@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:paper
-  itemName: <#616161>Buddstone Tap
+  itemName: <#6E260E>Buddstone Tap
   itemModel: mineinabyss:void_charm
   lore:
   - ':layer_5: Grade II Relic'
-  - <gold>The crystals produced by this Relic, though
-  - <gold>visually appealing, are remarkably fragile.
-  - <#D2D489><i>Active ability. Shoots projectiles on right click.
+  - <#903213>The crystals produced by this Relic, though
+  - <#903213>visually appealing, are remarkably fragile.
+  - <#B94018><i>Active ability. Shoots projectiles on right click.
 observe:
   itemRightClick:
   - become: parent

@@ -9,6 +9,20 @@ set.item:
   - <#7B898A><i>Active ability. Shoots a bunch of inaccurate projectiles
   - <#7B898A><i>on right click. Projectiles freeze and slow the target on hit.
 observe:
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>2} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: shiver_mist_area
+      length: 30s
+      display: <#CCDADB>Shiver Mist
+  - mythicSkills:
+    - shiver_mist_hit
   itemRightClick:
   - become: parent
   - ensure:

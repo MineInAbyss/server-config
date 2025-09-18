@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:paper
-  itemName: <#454A46>AOE Sphere
+  itemName: <#AC8053>AOE Sphere
   itemModel: mineinabyss:l4_sunsphere
   lore:
   - ':layer_4: Grade IV Relic'
-  - <gold>It is an egg-shaped relic with
-  - <gold>black patterns on its surface.
-  - <gold>It has a smooth texture and has a cracking
-  - <gold>noise like eggs if pressure is applied to it.
+  - <#BB9672>It is an egg-shaped relic with
+  - <#BB9672>black patterns on its surface.
+  - <#BB9672>It has a smooth texture and has a cracking
+  - <#BB9672>noise like eggs if pressure is applied to it.
 observe:
   itemRightClick:
   - become: parent

@@ -57,13 +57,13 @@ reverberating_edge_vibrate_3_damage:
   Cooldown:
   Conditions:
   Skills:
-  - damage{a=2} @EIR{r=2}
+  - damage{a=2;pkb=false;hnp=true;hp=true;pi=true}
 
 reverberating_edge_vibrate_4_damage:
   Cooldown:
   Conditions:
   Skills:
-  - damage{a=3} @EIR{r=2}
+  - damage{a=3;pkb=false;hnp=true;hp=true;pi=true}
 
 reverberating_edge_ability:
   Cooldown: 
@@ -83,6 +83,6 @@ reverberating_edge_ability:
   - effect:particlebox{particle=ash;amount=40;hS=3;vS=1.5;speed=0;y=1;size=2;r=3} @self
   - effect:particlebox{particle=white_ash;amount=10;hS=3;vS=1.5;speed=0;y=1;size=1.2;r=3} @self
   - stun{d=80;f=true} @EIR{r=3}
-  - potion{t=SLOW;d=140;l=10} @EIR{r=3}
+  - potion{t=SLOW;d=140;l=10} @EIR{r=5}
 
 #consider anti stun aura whenever players/mobs gets stunned once

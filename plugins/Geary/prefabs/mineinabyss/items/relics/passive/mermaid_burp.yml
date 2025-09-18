@@ -1,11 +1,11 @@
 set.item:
-  itemName: <#88D481>Mermaid Burp
+  itemName: <#808000>Mermaid Burp
   type: PAPER
   itemModel: mineinabyss:mermaid_burp
   lore:
   - ':layer_3: Grade III Relic'
-  - <gold>It is an Artifact that produces gas. 
-  - <#D2D489><i>Passive slot ability. Grants water breathing.
+  - <#A3A300>The air produced by this Relic has a notably fishy smell. 
+  - <#D1D100><i>Passive slot ability. Grants water breathing.
 passive:
 - match:
   - inInventory

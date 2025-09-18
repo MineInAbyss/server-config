@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:paper
-  itemName: <dark_aqua>Dew-cress Knots
+  itemName: <#AC8053>Dew-cress Knots
   itemModel: mineinabyss:moniscelti
   lore:
   - ':layer_5: Grade IV Relic'
-  - <gold>This Relic is regarded as an illicit substance in the
-  - <gold>city of Orth, but laws tend to be overlooked in the Abyss.
-  - <#D2D489><i>Active ability. Grants strength and over time decreasing
-  - <#D2D489><i>movement buffs on right click in exchange of some health.
+  - <#BB9672>This Relic is regarded as an illicit substance in the
+  - <#BB9672>city of Orth, but laws tend to be overlooked in the Abyss.
+  - <#C4A484><i>Active ability. Grants strength and over time decreasing
+  - <#C4A484><i>movement buffs on right click in exchange of some health.
 observe:
   itemRightClick:
   - become: parent

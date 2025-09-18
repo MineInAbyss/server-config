@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#1F88ED>Morinaut Shell
+  itemName: <#AC8053>Morinaut Shell
   type: PAPER
   itemModel: mineinabyss:respiratis
   lore:
   - ':layer_4: Grade IV Relic'
-  - <gold>Cave Raiders have long tried and failed to use this Relic
-  - <gold>to swim through the Sea of Corpses. Will you be the first?
-  - <#D2D489><i>Active ability. Grants dolphins
-  - <#D2D489><i>grace to the user on right click.
+  - <#BB9672>Cave Raiders have long tried and failed to use this Relic
+  - <#BB9672>to swim through the Sea of Corpses. Will you be the first?
+  - <#C4A484><i>Active ability. Grants dolphins
+  - <#C4A484><i>grace to the user on right click.
 resourcepack:
   model: mineinabyss:item/relics/respiratis
 observe:

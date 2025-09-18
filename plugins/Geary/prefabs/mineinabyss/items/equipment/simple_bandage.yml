@@ -2,6 +2,9 @@ set.item:
   type: minecraft:paper
   itemName: Simple Bandage
   itemModel: mineinabyss:simple_bandage
+  lore:
+  - <#d4be90>A standard issue bandage. Treats most non-grievous wounds.
+  - <#dfceac><i>Active ability. On right consumes bandage healing the user.
   maxStackSize: 16
 set.recipes:
   discoverRecipes: true
@@ -40,9 +43,16 @@ observe:
       id: bandage
       length: 20s
       display: <#617B94>Simple Bandage
-  - animation: ENDERMAN.CARRYING
-  - mythicSkills:
-    - simple_bandage
+  - consumable:
+      animation: TOOT_HORN
+      consume_seconds: 3
+      sound: item.bone_meal.use
+      has_consume_particles: false
+      on_consume_effects:
+        - applyPotionEffects:
+          - type: minecraft:instant_health
+          duration: 2s
+          hasParticles: false
 
 resourcepack:
   textures:

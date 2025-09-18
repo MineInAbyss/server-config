@@ -12,9 +12,15 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=n=necrometallicbladestop;s=1} true
+    onFail:
+    - sendActionBar:
+        text: <red>In Cooldown
   - cooldown:
-      id: prime_necrometallic_blade
-      length: 8s
+      id: necrometallic_blade_primer
+      length: 3s
       display: <#1F88ED>Priming
   - mythicSkills:
     - necrometallic_blade_charge
@@ -22,13 +28,13 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - hasaurastacks{n=necrometallic_blade;s=1} true
+      - hasaurastacks{n=necrometallicbladecharge;s=3} true
     onFail:
     - sendActionBar:
         text: <red>Not Primed
   - cooldown:
       id: necrometallic_blade
-      length: 8s
+      length: 30s
       display: <#1F88ED>Necrometallic Spores
   - mythicSkills:
-    - necrometallic_blade
+    - necrometallic_blade_hit

@@ -15,7 +15,7 @@ set.item:
       level: 5
     - enchant: minecraft:sharpness
       level: 5
-  itemFlags: [ HIDE_ENCHANTS ]
+  #itemFlags: [ HIDE_ENCHANTS ]
   unbreakable: {}
   enchantable: 0
 resourcepack:

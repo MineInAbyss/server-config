@@ -4,8 +4,9 @@ set.item:
   itemModel: mineinabyss:bounding_lance
   lore:
   - ':layer_1: :layer_2: Grade I Relic'
-  - <#AB8E8A>Needle shaped spear capable of syphoning
-  - <#AB8E8A>nutrients from the force field itself.
+  - <#AB8E8A>This Relic commonly finds its use supporting
+  - <#AB8E8A>wielders of more offensively-focused relics,
+  - <#AB8E8A>but is perfectly capable on its own as well.
   - <#695654><i>When used it simulates blessings
   - <#695654><i>in its surroundings.
   unbreakable: {}
@@ -26,6 +27,12 @@ observe:
     - shiftingpikecharge
   itemLeftClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=boundinglance} false
+    onFail:
+    - sendActionBar:
+        text: <red>Not Primed
   - cooldown:
       id: shifting_pike
       length: 40s

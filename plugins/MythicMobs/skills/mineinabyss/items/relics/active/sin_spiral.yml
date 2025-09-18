@@ -10,12 +10,15 @@ sin_spiral:
 
 sin_spiral_effect:
   Skills:
-  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=0}
-  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=90}
-  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=180}
-  - totem{charges=1;onStart=sin_spiral_area_control} @forward{f=3;rot=270}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=0}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=90}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=180}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=270}
 
 sin_spiral_area_control:
   Skills:
-  - summonareaeffectcloud{p=entity_effect;d=200;r=2;rrot=0;type=HARM;l=2;pd=200} @origin
-  - summonareaeffectcloud{p=sculk_soul;d=200;r=2;rrot=0} @origin
+  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - potion{type=HARM;duration=30;level=0;hasParticles=true} @EntitiesNearOrigin{r=2}

@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:paper
-  itemName: <#CCDADB>Petrifying Stone
+  itemName: <#808000>Petrifying Stone
   itemModel: mineinabyss:petrifying_stone
   lore:
   - ':layer_1: Grade III Relic'
-  - <#A0ACAD>A foreign composer once introduced this Relic into his orchestra.
-  - <#A0ACAD>Shortly after, several of his woodwinds quit.
-  - <#7B898A><i>Active ability. Slows user and surroundings on right click.
+  - <#A3A300>A foreign composer once introduced this Relic into his orchestra.
+  - <#A3A300>Shortly after, several of his woodwinds quit.
+  - <#D1D100><i>Active ability. Slows user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#E7EBE9>Undying Wisp
+  itemName: <#808000>Undying Wisp
   type: PAPER
   itemModel: mineinabyss:bone_staff
   lore:
   - ':layer_5: Grade III Relic'
-  - <gold>The sound produced by this seemingly-primitive rattle is
-  - <gold>enough to send chills down the spine of any who hear it.  
-  - <#D2D489><i>Active ability. Shoots projectile on right click.
-  - <#D2D489><i>Projectile stuns the target it hits.
+  - <#A3A300>The sound produced by this seemingly-primitive rattle is
+  - <#A3A300>enough to send chills down the spine of any who hear it.  
+  - <#D1D100><i>Active ability. Shoots projectile on right click.
+  - <#D1D100><i>Projectile stuns the target it hits.
 observe:
   itemRightClick:
   - become: parent

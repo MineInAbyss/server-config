@@ -1,14 +1,14 @@
 set.item:
   type: minecraft:paper
-  itemName: <#BFBFBF>Damage Sphere
+  itemName: <#AC8053>Damage Sphere
   itemModel: mineinabyss:l1_sunsphere
   lore:
   - ':layer_1: Grade IV Relic'
-  - <gold>It is an egg-shaped relic with
-  - <gold>white and grey patterns on its surface.
-  - <gold>It has a smooth texture and has a cracking
-  - <gold>noise like eggs if pressure is applied to it.
-  - <#B07E3E><i>Damages creatures on contact if thrown.
+  - <#BB9672>It is an egg-shaped relic with
+  - <#BB9672>white and grey patterns on its surface.
+  - <#BB9672>It has a smooth texture and has a cracking
+  - <#BB9672>noise like eggs if pressure is applied to it.
+  - <#C4A484><i>Damages creatures on contact if thrown.
 observe:
   itemRightClick:
   - become: parent

@@ -23,7 +23,7 @@ subtle_pull_area_control:
   Conditions:
     - hasaurastacks{n=subtlepullcharge} true
   Skills:
-  - summon{type=subtle_pull_center_small;amount=3;radius=3to6} @origin #probs best if not random
+  - summon{type=subtle_pull_center_small;amount=3;radius=3} @origin #probs best if not random
 
 subtle_pull: # Shim for geary
   Skills:

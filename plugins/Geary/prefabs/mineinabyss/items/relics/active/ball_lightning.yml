@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:paper
-  itemName: <#CCDADB><b>Ball Lightning
+  itemName: <#6E260E>Ball Lightning
   itemModel: mineinabyss:ball_lightning
   lore:
   - ':layer_5: Grade II Relic'
-  - <#A0ACAD>Only the battery powering this weapon is considered a Relic.
-  - <#A0ACAD>The rest was added for unknown and certainly dangerous purposes.
-  - <#7B898A><i>Active ability. Shoots slow moving projectile on right click.
-  - <#7B898A><i>Projectile deals damage over time.
+  - <#903213>Only the battery powering this weapon is considered a Relic.
+  - <#903213>The rest was added for unknown and certainly dangerous purposes.
+  - <#B94018><i>Active ability. Shoots slow moving projectile on right click.
+  - <#B94018><i>Projectile deals damage over time.
 observe:
   itemRightClick:
   - become: parent

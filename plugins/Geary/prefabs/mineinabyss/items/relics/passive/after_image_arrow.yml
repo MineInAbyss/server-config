@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#88D481>After Image Shell
+  itemName: <#6E260E>After Image Shell
   type: PAPER
   itemModel: mineinabyss:after_image_arrow
   lore:
   - ':layer_2: Grade II Relic'
-  - <gold>Stories have been passed around about a Cave Raider who used this 
-  - <gold>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive slot ability. On bow and projectile based relic
-  - <#D2D489><i>use shoots an additional projectile whch deals damage.
+  - <#903213>The hard-light copies of projectiles produced 
+  - <#903213>by this Relic still hurt as though they were real. 
+  - <#B94018><i>Passive slot ability. On bow and projectile based relic
+  - <#B94018><i>use shoots an additional projectile which deals damage.
 passive:
 - match:
   - inInventory

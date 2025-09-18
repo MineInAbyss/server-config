@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#88D481>Detector type I
+  itemName: <#6E260E>Detector type I
   type: PAPER
   itemModel: mineinabyss:detector_type_i
   lore:
   - ':layer_5: Grade II Relic'
-  - <gold>The perfect companion for the haughtiest of hunters, this mask makes
-  - <gold>sure to point out creatures it deems less valuable than the wearer.
-  - <#D2D489><i>Passive slot ability. Applies damage modifier and
-  - <#D2D489><i>glow effect to any mob the wearer is looking at.
+  - <#903213>The perfect companion for the haughtiest of hunters, this mask makes
+  - <#903213>sure to point out creatures it deems less valuable than the wearer.
+  - <#B94018><i>Passive slot ability. Applies damage modifier and
+  - <#B94018><i>glow effect to any mob the wearer is looking at.
 passive:
 - match:
   - inInventory

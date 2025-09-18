@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:paper
-  itemName: <#BF2CB1>Symbiotic Water-shrooms
+  itemName: <#808000>Symbiotic Water-shrooms
   itemModel: mineinabyss:healing_staff
   lore:
   - ':layer_4: Grade III Relic'
-  - <gold>Doctors have failed to reach an agreement on the safety of fungi
-  - <gold>like these as medicine. Their efficacy, however, is beyond doubt.
-  - <#D2D489><i>Active ability. Heals user and surroundings on right click.
+  - <#A3A300>Doctors have failed to reach an agreement on the safety of fungi
+  - <#A3A300>like these as medicine. Their efficacy, however, is beyond doubt.
+  - <#D1D100><i>Active ability. Heals user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

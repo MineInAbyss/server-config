@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:netherite_pickaxe
   itemModel: mineinabyss:atlas_dignitas
-  itemName: <#617B94><b>Atlas Dignitas
+  itemName: <#c9ae74><b>Atlas Dignitas
   lore:
   - ':layer_3: Grade I Relic'
-  - <#C6CC8A>This Relic has found success in the mining, construction
-  - <#C6CC8A>and physical therapy industries, strangely enough.
-  - <#948E61><i>Active ability. On right click starts to consume
-  - <#948E61><i> food in exchange of a mining speed buff.
+  - <#d4be90>This Relic has found success in the mining, construction
+  - <#d4be90>and physical therapy industries, strangely enough.
+  - <#dfceac><i>Active ability. On right click starts to consume
+  - <#dfceac><i> food in exchange of a mining speed buff.
   enchantments:
     - enchant: minecraft:silk_touch
       level: 1

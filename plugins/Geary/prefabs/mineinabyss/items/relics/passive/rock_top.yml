@@ -1,11 +1,12 @@
 set.item:
-  itemName: <#88D481>Rock Top
+  itemName: <#AC8053>Rock Top
   type: PAPER
   itemModel: mineinabyss:rock_top
   lore:
   - ':layer_1: Grade IV Relic'
-  - <gold>It's a rock that floats and changes shape when spun.
-  - <#D2D489><i>Passive slot ability. Slowly spins the user.
+  - <#BB9672>Fanatics posture that even if the world itself
+  - <#BB9672>were to stop spinning, Rock Top would not. 
+  - <#C4A484><i>Passive slot ability. Slowly spins the user.
 passive:
 - match:
   - inInventory

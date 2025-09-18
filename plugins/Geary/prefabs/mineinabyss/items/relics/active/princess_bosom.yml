@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#C13523>Princess Bosom
+  itemName: <#808000>Princess Bosom
   type: minecraft:paper
   itemModel: mineinabyss:princess_bosom
   lore:
   - ':layer_2: Grade III Relic'
-  - <#D2D489>It is an egg-shaped Relic with patterns on its surface and has
-  - <#D2D489>a soft texture that squishes when pressure is applied to it.
-  - <#EDEEB9><i>Active ability. Grants absorption to the user
-  - <#EDEEB9><i>and confusion to the surroundings on right click.
+  - <#A3A300>After decades of speculation, the Princess
+  - <#A3A300>Bosom’s purpose has finally been found!
+  - <#D1D100><i>Active ability. Grants absorption to the user
+  - <#D1D100><i>and confusion to the surroundings on right click.
 resourcepack:
   model: mineinabyss:item/relics/princess_bosom
 observe:

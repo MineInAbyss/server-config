@@ -1,13 +1,39 @@
-necrometallic_blade:
+necrometallic_blade_hit: # Shim for geary
+  Skills:
+  - skill{s=necrometallic_hit__}
+  - delay 1
+  - skill{s=necrometallic_chipping_spores}
+necrometallic_hit__:
+  Cooldown: 0.6 #to account for minecraft sword attack cooldown
+  Conditions:
+    - isblocking false
+  Skills:
+  - onAttack{auraName=necrometallicdebuff;onTick=necrometallic_tick;i=20;duration=101;c=1;maxStacks=30;cotd=false;cod=true;cocd=true;rd=true} @target #aura skills in necrometallic_sledge
+  - skill{s=necrometallic_blade_effect_main} @self #skill does smth smth
+
+necrometallic_chipping_spores:
+  Cooldown: 0.6 #to account for minecraft sword attack cooldown
+  Conditions:
+    - chance{chance=0.1} true
+  Skills:
+  - summonareaeffectcloud{p=glow_squid_ink;d=60;r=1;type=POISON;l=0;pd=60} @self
+
+necrometallic_blade_effect_main:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=3} true
+  Skills:
+  #potion cloud type particle and poison dmg
+
+necrometallic_blade: #dunno yet, probs to be deleted
   Conditions:
     - hasaurastacks{n=necrometallic_blade;s=1} true
   Cooldown: 1
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -100";op=true}
   - auraremove{aura=necrometallic_blade} @self
   - aura{auraName=necrometallic_blade_poison;oT=necrometallic_blade_tick;duration=200;maxStacks=1;interval=25} @self
 
-necrometallic_blade_tick:
+necrometallic_blade_tick: #dunno yet, probs to be deleted
   Skills:
     - sound{s=entity.creeper.hurt;sc=ui;p=<random.float.0.2to0.5>;v=0.7} @self
     - damage{a=5;pi=true} @EntitiesNearOrigin{r=6;ignore=players}
@@ -18,19 +44,49 @@ necrometallic_blade_tick:
     - effect:particles{particle=spore_blossom_air;amount=20;hS=3;vS=1;y=0.5}
     - effect:particles{particle=trial_omen;amount=75;hS=3;vS=1;y=1}
 
-necrometallic_blade_charge:
+necrometallic_blade_charge: # Shim for geary
   Skills:
-    - aura{auraName=necrometallic_blade;onStart=necrometallic_blade_start;duration=200;maxStacks=1;cotd=false} @self
-    - skill{s=necrometallic_blade_ready} @self
-
-necrometallic_blade_start:
+  - skill{s=necrometallic_blade_charge_}
+necrometallic_blade_charge_:
+  Conditions:
+    - hasaurastacks{n=necrometallicbladestop;s=1} true
   Skills:
-  - effect:particles{particle=sneeze;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
-  - effect:particles{particle=trial_omen;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+    - skill{s=necrometallic_blade_effect_sub} @self #skill does smth smth
+    - delay 1
+    - aura{auraName=necrometallicbladecharge;duration=200;maxStacks=3;cotd=false;cod=true;rd=true} @self
+    - skill{s=necrometallic_blade_1} @self
+    - delay 1
+    - skill{s=necrometallic_blade_2} @self
+    - delay
+    - skill{s=necrometallic_blade_3} @self
 
-necrometallic_blade_ready:
-  Cooldown: 5
+necrometallic_blade_effect_sub:
+  Cooldown: 1 #to account for minecraft sword attack cooldown
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=3} true
+  Skills:
+  #passive built aura explosion in EIR
+
+necrometallic_blade_1:
+  Cooldown: 3
   Conditions:
     - hasaurastacks{n=necrometallic_blade;s=1} true
   Skills:
+    - sound{s=entity.creeper.primed;sc=ui;p=1;v=1} @self #probs needs better sound, smth vibrating?
+    #particles
+
+necrometallic_blade_2:
+  Cooldown: 3
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=2} true
+  Skills:
     - sound{s=entity.creeper.primed;sc=ui;p=1;v=1} @self
+    #particles
+
+necrometallic_blade_3:
+  Cooldown: 3
+  Conditions:
+    - hasaurastacks{n=necrometallic_blade;s=3} true
+  Skills:
+    - sound{s=entity.creeper.primed;sc=ui;p=1;v=1} @self
+    #particles

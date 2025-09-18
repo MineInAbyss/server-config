@@ -1,12 +1,13 @@
 set.item:
-  itemName: <#808504>Shirbiri Maku
+  itemName: <#AC8053>Shirbiri Maku
   type: PAPER
   itemModel: mineinabyss:critcharm
   lore:
   - ':layer_3: Grade IV Relic'
-  - <gold>A relic which was formed by the tenacity of hostile creatures.
-  - <#D2D489><i>Passive slot ability. Grants a short
-  - <#D2D489><i>damage modifier at random intervals.
+  - <#BB9672>It is not recommended to attach this implement to
+  - <#BB9672>any other part of one’s body than the arm or hand.
+  - <#C4A484><i>Passive slot ability. Grants a short
+  - <#C4A484><i>damage modifier at random intervals.
 passive:
 - match:
   - inInventory

@@ -39,13 +39,10 @@ observe:
     - subtle_pull
 passive:
 - match:
-  - inInventory
+  - inHand
   every: 0.1s
   run:
   - become: parent
-  - ensure:
-        inHand:
-          item: mineinabyss:blackhole_staff  
   - mythicSkills:
     - subtle_pull_charge
 resourcepack:

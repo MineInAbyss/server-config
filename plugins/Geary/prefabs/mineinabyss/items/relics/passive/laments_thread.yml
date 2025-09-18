@@ -4,10 +4,10 @@ set.item:
   itemModel: mineinabyss:laments_thread
   lore:
   - 'Grade III Relic'
-  - <#cdd13d>Stories have been passed around about a Cave Raider who used this 
-  - <#cdd13d>Relic to keep himself constantly awake through his expeditions.
-  - <#D2D489><i>Passive slot ability. Causes weakness and
-  - <#D2D489><i>mining fatigue to the user and the surroundings.
+  - <#cdd13d>It’s unclear why Delvers carry Laments Thread with them, given 
+  - <#cdd13d>its effects. Nonetheless, it finds its use with certain groups.
+  - <#D1D100><i>Passive slot ability. Causes weakness and
+  - <#D1D100><i>mining fatigue to the user and the surroundings.
 passive:
 - match:
   - inInventory

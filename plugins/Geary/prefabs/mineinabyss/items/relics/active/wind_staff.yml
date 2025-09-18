@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#FCF5E5>Gust-Shot
+  itemName: <#6E260E>Gust-Shot
   type: PAPER
   itemModel: mineinabyss:wind_staff
   lore:
   - ':layer_3: Grade II Relic'
-  - <gold>A key example of nature inspiring innovation, this handmade
-  - <gold>Relic one-ups even the creature it was inspired by.  
-  - <#D2D489><i>Active ability. Shoots a projectile on right click which
-  - <#D2D489><i>explodes on hit launching entities in different directions.
+  - <#903213>A key example of nature inspiring innovation, this handmade
+  - <#903213>Relic one-ups even the creature it was inspired by.  
+  - <#B94018><i>Active ability. Shoots a projectile on right click which
+  - <#B94018><i>explodes on hit launching entities in different directions.
 observe:
   itemRightClick:
   - become: parent
