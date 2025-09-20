@@ -16,7 +16,7 @@ observe:
   - cooldown:
       id: respiratis
       length: 35s
-      display: <#1F88ED>Morinaut Shell
+      display: <#AC8053>Morinaut Shell
   - playSound:
       sound: minecraft:entity.panda.aggressive_ambient
       volume: 0.5

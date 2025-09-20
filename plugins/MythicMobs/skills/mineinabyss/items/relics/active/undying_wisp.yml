@@ -10,19 +10,26 @@ undying_wisp:
     #- delay 5
     #- sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.3;v=0.6} @Self
     - delay 20
-    - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
-    - projectile{onTick=BB_tick;onHit=bone_impact;v=20;i=1;hR=1;vR=1;hnp=true;syo=1.5;hp=true} @forward{f=1000}
-    - skill{s=after_image_undying_wisp} #skill from after_image_arrow
+    - skill{s=undying_wisp_projectile}
+
+undying_wisp_projectile:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=undyingwispcharge} true
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
+  - projectile{onTick=BB_tick;onHit=bone_impact;v=20;i=1;hR=1;vR=1;hnp=true;syo=1.5;hp=true} @forward{f=1000}
+  - skill{s=after_image_undying_wisp} #skill from after_image_arrow
 
 bone_impact: 
   Skills:
     - shieldbreak{duration=150} 
     - delay 1
-    #- blackscreen{d=40} @EntitiesNearOrigin{r=2}
+    #- blackscreen{d=40} @EntitiesNearOrigin{r=2} #too annoying
     - spin{duration=50;velocity=0} @PlayersNearOrigin{r=2} #functions like a stun
-    #- stun{duration=40;f=true} @PlayersNearOrigin{r=2}
+    #- stun{duration=40;f=true} @PlayersNearOrigin{r=2} #stun skill interacting weirdly with blindness/darkness
     - potion{t=DARKNESS;d=80;l=1} @EntitiesNearOrigin{r=2}
-    - potion{t=SLOWNESS;d=80;l=2} @EntitiesNearOrigin{r=2;ignore=players}
+    - potion{t=SLOWNESS;d=80;l=2} @EntitiesNearOrigin{r=2}
     - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
     - damage{a=15;ignorearmor=false} @EntitiesNearOrigin{r=2;ignore=players}
 
@@ -32,3 +39,12 @@ BB_tick:
     - sound{s=entity.pufferfish.death;sc=ui;p=0.2;v=0.4} @origin
     - effect:particlebox{p=bubble;a=5;s=0.1;r=0.5}
     - effect:particlebox{p=bubble_pop;a=9;s=0.1;r=0.2}
+
+undying_wisp_charge: # Shim for geary
+  Skills:
+  - skill{s=undying_wisp_charge_}
+undying_wisp_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=undyingwispcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

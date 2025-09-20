@@ -11,12 +11,26 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=sinspiralcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
   - cooldown:
       id: sinspiral
       length: 8s #change to 50s after testing
-      display: <#51C947>Sin Spiral
+      display: <gold>Sin Spiral
   - mythicSkills:
     - sin_spiral
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - sin_spiral_charge
 resourcepack:
   textures:
     layers:

@@ -2,10 +2,17 @@ lightning_ball:
   Cooldown:
   Conditions:
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
   - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.2;speed=0.05;y=1;repeat=3;repeatInterval=3} @origin
   - sound{s=item.flintandsteel.use;sc=ui;p=2.0;v=0.5;repeat=4;repeatInterval=4} @origin
   - delay 20
+  - skill{s=lightning_ball_projectile}
+
+lightning_ball_projectile:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=balllightningcharge} true
+  Skills:
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
   - projectile{oT=lightning_tick;mr=170;v=1.4;i=1;vN=1;hN=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=200;syo=1.2;g=0;sE=false;hp=false;HitSelf=true} @forward{f=1000}
   - skill{s=after_image_ball_lightning} #skill from after_image_arrow
 
@@ -39,3 +46,12 @@ lightning_tick:
     - damage{a=1.5;pi=true;pk=true;repeat=1;repeatInterval=3;delay=1} @EntitiesNearOrigin{r=1}
     - potion{t=CONFUSION;l=1;force=true;p=false;d=<random.80to150>} @EntitiesNearOrigin{r=2}
     - potion{t=SLOW_DIGGING;l=1;force=true;p=false;d=<random.80to150>} @EntitiesNearOrigin{r=2}
+
+ball_lightning_charge: # Shim for geary
+  Skills:
+  - skill{s=ball_lightning_charge_}
+ball_lightning_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=balllightningcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

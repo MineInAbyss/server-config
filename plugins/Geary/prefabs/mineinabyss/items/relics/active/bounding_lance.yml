@@ -29,7 +29,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - hasaurastacks{n=boundinglance} false
+      - hasaurastacks{n=boundinglance} true
     onFail:
     - sendActionBar:
         text: <red>Not Primed

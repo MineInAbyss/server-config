@@ -1,20 +1,24 @@
 gust-shot:
   Cooldown: 1
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
-
   - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
   - effect:particles{particle=dust_plume;amount=9;y=0.5;size=2}
   - sound{s=block.roots.break;sc=ui;p=0.5;v=0.8;repeat=4;repeatInterval=3} @self
   - delay 20
+  - skill{s=gust-shot_projectile}
+
+gust-shot_projectile:
+  Cooldown:
+  Conditions:
+    - hasaurastacks{n=gustshotcharge} true
+  Skills:
   - sound{s=entity.blaze.shoot;sc=ui;p=1.1;v=0.7} @self
   - sound{s=entity.ender_dragon.flap;sc=ui;p=0.6;v=0.7} @self
   - sound{s=entity.ghast.shoot;sc=ui;p=<random.float.0.8to1.0>;v=0.8} @self
   - sound{s=block.metal.break;sc=ui;p=1.3;v=0.6} @self
-
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
   - projectile{onTick=windstaff_tick;onHit=wind_impact;onEnd=wind_impact;v=10;i=1;hR=1;vR=1;hnp=true;tyo=0.5;syo=1.5} @forward{f=1000}
   - skill{s=after_image_gust-shot} #skill from after_image_arrow
-  - delay 20 
 
 windstaff_tick:
   Skills:
@@ -33,3 +37,12 @@ wind_impact_effect:
   - damage{a=20} @EIR{r=4}
   - damage{a=30} @EIR{r=2;conditions=[
                               - entitywithin{d=2} true     ]}
+
+gust-shot_charge: # Shim for geary
+  Skills:
+  - skill{s=gust-shot_charge_}
+gust-shot_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=gustshotcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

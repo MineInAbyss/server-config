@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: tidalwave
       length: 20s
-      display: <dark_aqua>Tidal Spout
+      display: <#808000>Tidal Spout
   - mythicSkills:
     - tidal_spout
 resourcepack:

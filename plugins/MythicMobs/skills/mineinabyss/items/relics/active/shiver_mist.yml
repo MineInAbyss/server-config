@@ -6,7 +6,7 @@ shiver_mist_hit_:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -80";op=true}
   - potion{t=SLOW;l=2;d=20;p=false} @Self
   - delay 10
-  - spin{duration=60;velocity=0.5} @self
+  - spin{duration=40;velocity=0.5} @self
   - skill{s=shiver_mist_area_projectile;delay=0}
   - skill{s=shiver_mist_area_projectile;delay=20}
   - skill{s=shiver_mist_area_projectile;delay=40}
@@ -44,24 +44,24 @@ shiver_mist_area_projectile_end:
   TargetConditions:
   Skills:
   - effect:particles{particle=snowflake;amount=4;hS=1;vS=1;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - totem{charges=20;i=10;md=200;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true}
+  - totem{charges=40;i=5;md=200;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hfs=0.1;hp=true;hnp=true}
 
 shiver_mist_area_totem:
   TargetConditions:
   Skills:
-  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=4}
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=3.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=3.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=3.5;p=20;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=2;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=4}
   - damage{a=3;pkb=false} @EntitiesInRadius{r=4}
   - potion{type=SLOW;duration=30;level=4;hasParticles=false} @EntitiesInRadius{r=4}
   - extinguish{delay=0} @EntitiesInRadius{r=4}
@@ -77,9 +77,7 @@ shiver_mist_:
   - sound{s=block.enchantment_table.use;sc=ui;volume=0.5;pitch=0.8;repeat=2;repeatinterval=6} @self
   - orbital{bulletType=MOB;mob=Frost_Beam;r=0;points=1;i=1;duration=2000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
   - delay 10
-  - throw{velocity=9;velocityY=4} @Cone{r=1;a=45}
-  - throw{velocity=7;velocityY=3;delay=1} @Cone{r=1to2;a=45}
-  - throw{velocity=5;velocityY=2;delay=2} @Cone{r=2to3;a=45}
+  - skill{s=shiver_mist_throw}
   - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=0;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=1;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=shiver_mist_projectile_tick;onHit=shiver_mist_projectile_end;onEnd=shiver_mist_projectile_end;v=20;i=1;mr=30;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1;vR=1;hO=-1;vO=0.239;hn=1;vn=1;a=0.8;g=0.7;pi=true} @Forward{f=1000}
@@ -111,15 +109,23 @@ shiver_mist_:
   - potion{t=SLOW;l=2;d=20;p=false} @self
   - extinguish{delay=0} @self
 
+shiver_mist_throw:
+  TargetConditions:
+    - lineofsight true
+  Skills:
+  - throw{velocity=9;velocityY=4} @EIR{r=1}
+  - throw{velocity=7;velocityY=3;delay=1} @EIR{r=2}
+  - throw{velocity=5;velocityY=2;delay=2} @EIR{r=3}
+
 shiver_mist_projectile_tick:
   Skills:
   - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesInRadius{r=1.5}
-  - damage{a=1;pkb=true} @EntitiesInRadius{r=1}
-  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesInRadius{r=1}
-  - extinguish{delay=0} @EntitiesInRadius{r=1}
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=4;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesInRadius{r=2}
+  - damage{a=3;pkb=true} @EntitiesInRadius{r=2}
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesInRadius{r=2}
+  - extinguish{delay=0} @EntitiesInRadius{r=2}
 
 shiver_mist_projectile_end:
   TargetConditions:

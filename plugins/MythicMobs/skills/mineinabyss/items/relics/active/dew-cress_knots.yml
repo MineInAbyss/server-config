@@ -6,12 +6,12 @@ dew-cress_knots:
     - effect:particles{particle=totem_of_undying;speed=0.4;amount=40;hs=.2;vs=1;y=4} @Self
     - damagepercent{percent=0.1;pkb=true;ie=true;ia=true} @self
     - delay 30
-    - damagepercent{percent=0.1;pkb=true;ie=true;ia=true} @self
+    - damagepercent{percent=0.2;pkb=true;ie=true;ia=true} @self
     - potion{t=STRENGTH;d=200;l=1} @self
     - potion{t=SPEED;d=20;l=2} @self
     - potion{t=JUMP_BOOST;d=20;l=2} @self
     - delay 20
-    - damagepercent{percent=0.1;pkb=true;ie=true;ia=true} @self
+    - damagepercent{percent=0.15;pkb=true;ie=true;ia=true} @self
     - potion{t=SPEED;d=60;l=1} @self
     - potion{t=JUMP_BOOST;d=60;l=1} @self
     - delay 60

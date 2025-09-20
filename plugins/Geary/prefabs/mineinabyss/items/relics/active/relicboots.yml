@@ -14,7 +14,7 @@ observe:
   - cooldown:
       id: treble_winds
       length: 20s
-      display: <dark_aqua>Treble Winds      
+      display: <#808000>Treble Winds      
   - mythicSkills:
     - treble_winds_upward
   itemLeftClick:
@@ -22,7 +22,7 @@ observe:
   - cooldown:
       id: treble_winds
       length: 30s
-      display: <dark_aqua>Treble Winds      
+      display: <#808000>Treble Winds      
   - mythicSkills:
     - treble_winds_forward
 resourcepack:

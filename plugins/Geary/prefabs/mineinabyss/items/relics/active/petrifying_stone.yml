@@ -10,12 +10,26 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=petrifyingstonecharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
   - cooldown:
       id: petrifying_thud
       length: 44s
-      display: <#CCDADB>Petrifying Stone
+      display: <#808000>Petrifying Stone
   - mythicSkills:
     - petrifying_thud
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - petrifying_stone_charge
 resourcepack:
   textures:
     layers:

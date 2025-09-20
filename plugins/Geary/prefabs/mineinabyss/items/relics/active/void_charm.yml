@@ -13,15 +13,24 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>1} true
+      - hasaurastacks{n=buddstonetapcharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
       id: shadowball
       length: 18s
-      display: <#616161>Buddstone Tap
+      display: <#6E260E>Buddstone Tap
   - mythicSkills:
     - buddstone_tap
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - buddstone_tap_charge
 resourcepack:
   textures:
     layers:

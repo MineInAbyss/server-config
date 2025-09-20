@@ -14,15 +14,24 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>1} true
+      - hasaurastacks{n=gustshotcharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
       id: gust-shot
       length: 20s
-      display: <#FCF5E5>Gust-Shot
+      display: <#6E260E>Gust-Shot
   - mythicSkills:
     - gust-shot
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - gust-shot_charge
 resourcepack:
   textures:
     layers:

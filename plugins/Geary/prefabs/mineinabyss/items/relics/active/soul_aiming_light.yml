@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: aiming_light
       length: 8s #change to 30-40s after testing
-      display: <#CCDADB>Aiming Light
+      display: <#6E260E>Aiming Light
   - applyPotionEffects:
     - type: minecraft:glowing
       duration: 10s

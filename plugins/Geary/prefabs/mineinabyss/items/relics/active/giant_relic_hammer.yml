@@ -17,11 +17,25 @@ observe:
     - necrometallic_sledge_hit
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=necrometallicsledgecharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
   - cooldown:
       id: hammer_smash
       length: 35s
       display: <#79EDE2>Necrometallic Sledge
   - mythicSkills:
     - necrometallic_sledge_ability
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - necrometallic_sledge_charge
 resourcepack:
   model: mineinabyss:item/relics/necrometallic_sledge

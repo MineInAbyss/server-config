@@ -75,7 +75,10 @@ necrometallic_sledge_ability:
   - delay 12
   - skill{s=hammer_smash_damage} @self
   - sound{s=entity.warden.attack_impact;sc=ui;p=<random.float.0.2to0.5>;v=0.7} @self
+
 hammer_smash_damage:
+  Conditions:
+    - hasaurastacks{n=necrometallicsledgecharge} true
   TargetConditions:
   - owner{} false 
   Skills:
@@ -101,3 +104,12 @@ hammer_smash_damage:
   - delay 2
   - effect:particlering{particle=BLOCKCRACK;material=PRISMARINE;radius=5;points=20;amount=60;hS=1;vS=0.5} @self
   - effect:particles{particle=trial_omen;amount=25;hS=3;vS=1;y=1}
+
+necrometallic_sledge_charge: # Shim for geary
+  Skills:
+  - skill{s=necrometallic_sledge_charge_}
+necrometallic_sledge_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=necrometallicsledgecharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

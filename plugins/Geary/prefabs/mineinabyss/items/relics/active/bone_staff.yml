@@ -14,15 +14,24 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>1} true
+      - hasaurastacks{n=undyingwispcharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
       id: undying_wisp
       length: 20s
-      display: <dark_aqua>Undying Wisp
+      display: <#808000>Undying Wisp
   - mythicSkills:
     - undying_wisp
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - undying_wisp_charge
 resourcepack:
   textures:
     layers:

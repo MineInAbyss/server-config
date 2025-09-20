@@ -7,6 +7,7 @@ set.item:
   - <#3d59ab>A relic born from decades of Orthian research.
   - <#3d59ab>Flamethrowers are vastly considered inhumane in use.
   - <#6666ff><i>Active ability. Projects flames on right click.
+  - <#6666ff><i>Requires Flamethrower Fuel within the inventory to work.
 resourcepack:
   model: mineinabyss:item/relics/flamethrower
 set.recipes:
@@ -46,4 +47,4 @@ observe:
   - consumeItem:
       type: mineinabyss:flamethrower_fuel
     when:
-    - chance: 0.2
+    - chance: 0.35

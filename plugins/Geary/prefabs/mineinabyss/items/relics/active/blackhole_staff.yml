@@ -21,7 +21,7 @@ observe:
   - cooldown:
       id: subtle_pull_sub
       length: 30s
-      display: <#302D2D><b>Subtle Pull
+      display: <#302D2D>Subtle Pull
   - mythicSkills:
     - subtle_pull_hit
   itemRightClick:
@@ -36,7 +36,7 @@ observe:
   - cooldown:
       id: subtle_pull_main
       length: 100s
-      display: <#302D2D><b>Subtle Pull
+      display: <#302D2D>Subtle Pull
   - mythicSkills:
     - subtle_pull
 passive:

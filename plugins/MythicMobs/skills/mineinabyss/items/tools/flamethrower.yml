@@ -69,6 +69,7 @@ Flame-Torrent:
       onHit=[
       - damage{amount=5;element=FIRE}
       - ignite{ticks=100}
+      - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}
     - delay 10
     - projectile{
@@ -80,6 +81,7 @@ Flame-Torrent:
       onHit=[
       - damage{amount=5;element=FIRE}
       - ignite{ticks=100}
+      - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}
     - delay 10
     - projectile{
@@ -91,4 +93,5 @@ Flame-Torrent:
       onHit=[
       - damage{amount=5;element=FIRE}
       - ignite{ticks=100}
+      - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}

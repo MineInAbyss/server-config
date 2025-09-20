@@ -5,7 +5,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/materials/flamethrower_fuel  
+    - mineinabyss:item/materials/flamethrower_barrel  
 set.recipes:
  result:
    prefab: mineinabyss:flamethrower_barrel

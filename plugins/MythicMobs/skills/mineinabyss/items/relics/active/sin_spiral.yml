@@ -11,6 +11,8 @@ sin_spiral:
   - skill{sin_spiral_effect} @self
 
 sin_spiral_effect:
+  Conditions:
+    - hasaurastacks{n=sinspiralcharge} true
   Skills:
   - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=3,y=0,z=0}
   - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=-3,y=0,z=0}
@@ -24,3 +26,12 @@ sin_spiral_area_control:
   - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1} 
   - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1} 
   - potion{type=HARM;duration=30;level=0;hasParticles=true} @EntitiesInRadius{r=2}
+
+sin_spiral_charge: # Shim for geary
+  Skills:
+  - skill{s=sin_spiral_charge_}
+sin_spiral_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=sinspiralcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

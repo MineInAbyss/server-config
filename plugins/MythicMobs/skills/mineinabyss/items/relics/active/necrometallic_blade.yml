@@ -23,6 +23,10 @@ necrometallic_blade_effect_main:
   Conditions:
     - hasaurastacks{n=necrometallic_blade;s=3} true
   Skills:
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.7;v=1;repeat=3;repeatInterval=10} @self
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.8;v=1;repeat=3;repeatInterval=10} @self
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.9;v=0.9;repeat=3;repeatInterval=10} @self
+  - delay 10
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=4;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=0;vO=0.339;a=0.6;g=0.9;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=3;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=4;vO=0.339;a=0.6;g=0.9;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=5;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=-4;vO=0.339;a=0.6;g=0.9;pi=true} @Forward{f=1000}
@@ -38,10 +42,6 @@ necrometallic_blade_effect_main:
 
 necrometallic_blade_effect_main_tick:
   Skills:
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.7;v=1;repeat=3;repeatInterval=10} @self
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.8;v=1;repeat=3;repeatInterval=10} @self
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.9;v=0.9;repeat=3;repeatInterval=10} @self
-  - delay 10
   - effect:particles{particle=sneeze;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=spore_blossom_air;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=trial_omen;color=#edfaff;amount=1;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin

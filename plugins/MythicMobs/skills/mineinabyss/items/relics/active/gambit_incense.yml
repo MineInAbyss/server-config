@@ -1,8 +1,10 @@
 gambit_incense:
   Conditions:
   Skills:
-  - geyser{type=WATER;height=4;speed=5} @selflocation
-  - delay 80
+  - effect:particlesphere{p=dripping_honey;r=1;a=60;hS=1;vS=1}
+  - delay 20
+  - effect:particlesphere{p=dripping_honey;r=2;a=60;hS=1;vS=1}
+  - delay 60
   - randomskill{skills=gambit_incense_1, gambit_incense_1_luck, gambit_incense_2, gambit_incense_3, gambit_incense_3_luck, gambit_incense_4, gambit_incense_5, gambit_incense_6, gambit_incense_7, gambit_incense_8, gambit_incense_9, gambit_incense_10, gambit_incense_11, gambit_incense_11_luck, gambit_incense_12, gambit_incense_13, gambit_incense_14}
 
 gambit_incense_1:

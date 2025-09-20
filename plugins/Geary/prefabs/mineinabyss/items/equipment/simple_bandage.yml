@@ -6,6 +6,16 @@ set.item:
   - <#d4be90>A standard issue bandage. Treats most non-grievous wounds.
   - <#dfceac><i>Active ability. On right consumes bandage healing the user.
   maxStackSize: 16
+  consumable:
+      animation: TOOT_HORN
+      consume_seconds: 4
+      sound: item.bone_meal.use
+      has_consume_particles: false
+      on_consume_effects:
+        - applyPotionEffects:
+          - type: minecraft:instant_health
+          duration: 2s
+          hasParticles: false
 set.recipes:
   discoverRecipes: true
   result:
@@ -28,31 +38,21 @@ set.recipes:
         | P |
         |SPM|
         | P |
-observe:
-  itemRightClick:
-  - become: parent
-  - ensure:
-      player:
-        sneaking: true
-      mythicConditions:
-      - incombat false
-    onFail:
-    - sendActionBar:
-        text: <red>Not Sneaking / In Combat
-  - cooldown:
-      id: bandage
-      length: 20s
-      display: <#617B94>Simple Bandage
-  - consumable:
-      animation: TOOT_HORN
-      consume_seconds: 3
-      sound: item.bone_meal.use
-      has_consume_particles: false
-      on_consume_effects:
-        - applyPotionEffects:
-          - type: minecraft:instant_health
-          duration: 2s
-          hasParticles: false
+# observe:
+#   itemRightClick:
+#   - become: parent
+#   - ensure:
+#       player:
+#         sneaking: true
+#       mythicConditions:
+#       - incombat false
+#     onFail:
+#     - sendActionBar:
+#         text: <red>Not Sneaking / In Combat
+#   - cooldown:
+#       id: bandage
+#       length: 20s
+#       display: <#617B94>Simple Bandage
 
 resourcepack:
   textures:

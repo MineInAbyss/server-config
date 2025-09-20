@@ -11,6 +11,8 @@ petrifying_thud:
     - skill{s=petrify_impact} @Self
 
 petrify_impact:
+  Conditions:
+    - hasaurastacks{n=petrifyingstonecharge} true
   Skills:
     - sound{s=block.note_block.basedrum;sc=ui;p=0.75;v=0.75} @Self
     - sound{s=block.note_block.basedrum;sc=ui;p=0.5;v=0.75} @Self
@@ -24,3 +26,12 @@ petrify_impact:
     - potion{t=SLOW;d=100;l=2} @PIR{r=7}
     - potion{t=SLOW;d=100;l=2} @self
     - potion{t=SLOW;d=100;l=2} @EntitiesNearOrigin{r=7}
+
+petrifying_stone_charge: # Shim for geary
+  Skills:
+  - skill{s=petrifying_stone_charge_}
+petrifying_stone_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=petrifyingstonecharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self
