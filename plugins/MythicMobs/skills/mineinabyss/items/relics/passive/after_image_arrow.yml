@@ -15,7 +15,7 @@ after_image_bow:
   Conditions:
     #- bowtension{value=>0.5} true
   Skills:
-  - delay 14
+  - delay 20
   #- shoot{type=ARROW;oT=after_image_tick;velocity=0.5;damage=10;pl=2} @targetlocation
   - projectile{bulletType=ARROW;arrowType=NORMAL;oT=after_image_tick;oH=after_image_hit;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
@@ -30,7 +30,7 @@ after_image_ball_lightning: #skill to add to all projectile based relics made: -
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
+  - delay 20
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=1.4;d=200;mr=170;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_breeze_piercer: #skill to add to all projectile based relics made: - skill{s=after_image_}
@@ -38,37 +38,37 @@ after_image_breeze_piercer: #skill to add to all projectile based relics made: -
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 20
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
 
 after_image_buddstone_tap: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 20
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=14;d=200;mr=20;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
 
 after_image_gust-shot: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
+  - delay 20
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=10;d=200;mr=100;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_soul-aiming_light: #skill to add to all projectile based relics made: - skill{s=after_image_}
@@ -76,19 +76,19 @@ after_image_soul-aiming_light: #skill to add to all projectile based relics made
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
-  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - delay 20
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=truez;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_soul-aiming_hit;v=24;d=200;mr=50;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
 
 after_image_subtle_pull: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
+  - delay 20
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=7;d=37;mr=170;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_undying_wisp: #skill to add to all projectile based relics made: - skill{s=after_image_}
@@ -96,7 +96,7 @@ after_image_undying_wisp: #skill to add to all projectile based relics made: - s
   Conditions:
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
-  - delay 14
+  - delay 20
   - projectile{onTick=after_image_tick;onHit=after_image_hit;v=20;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
 
 after_image_hit:

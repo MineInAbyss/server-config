@@ -6,7 +6,7 @@ shiver_mist_hit_:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -80";op=true}
   - potion{t=SLOW;l=2;d=20;p=false} @Self
   - delay 10
-  - spin{duration=40;velocity=0.2} @self
+  - spin{duration=60;velocity=0.5} @self
   - skill{s=shiver_mist_area_projectile;delay=0}
   - skill{s=shiver_mist_area_projectile;delay=20}
   - skill{s=shiver_mist_area_projectile;delay=40}
@@ -38,7 +38,7 @@ shiver_mist_area_projectile_tick:
   - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
   - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
-  - extinguish{delay=0} @EntitiesNearOrigin{r=1}
+  - extinguish{delay=0} @EntitiesInRadius{r=1}
 
 shiver_mist_area_projectile_end:
   TargetConditions:
@@ -49,22 +49,22 @@ shiver_mist_area_projectile_end:
 shiver_mist_area_totem:
   TargetConditions:
   Skills:
-  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=snowflake;color=#edfaff;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.2;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=4;p=30;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=3;p=20;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=snowflake;color=#edfaff;y=0.15;amount=2;r=1;p=6;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;dir=0,1,0} @origin
   - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=4}
-  - damage{a=5;pkb=false} @EntitiesNearOrigin{r=4}
-  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @EntitiesNearOrigin{r=4}
-  - extinguish{delay=0} @EntitiesNearOrigin{r=4}
+  - damage{a=3;pkb=false} @EntitiesInRadius{r=4}
+  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @EntitiesInRadius{r=4}
+  - extinguish{delay=0} @EntitiesInRadius{r=4}
 
 shiver_mist: # Shim for geary
   Skills:
@@ -116,10 +116,10 @@ shiver_mist_projectile_tick:
   - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=1}
-  - damage{a=1;pkb=true} @EntitiesNearOrigin{r=1}
-  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
-  - extinguish{delay=0} @EntitiesNearOrigin{r=1}
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=10;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesInRadius{r=1.5}
+  - damage{a=1;pkb=true} @EntitiesInRadius{r=1}
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesInRadius{r=1}
+  - extinguish{delay=0} @EntitiesInRadius{r=1}
 
 shiver_mist_projectile_end:
   TargetConditions:

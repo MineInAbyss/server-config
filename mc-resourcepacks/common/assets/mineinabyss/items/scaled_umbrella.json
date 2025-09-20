@@ -1,34 +1,14 @@
 {
   "model": {
-    "type": "condition",
-    "property": "minecraft:using_item",
+    "type": "minecraft:condition",
     "on_false": {
-        {
-          "model": {
-            "type": "minecraft:model",
-            "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_closed"
-          }
-        },
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_closed"
-      }
-    },
-    "on_true": {
-        {
-          "model": {
-            "type": "minecraft:model",
-            "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_open"
-          }
-        },
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_open"
-      }
-    },
-    "fallback": {
       "type": "minecraft:model",
       "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_closed"
-    }
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "mineinabyss:item/relics/scaled_umbrella/scaled_umbrella_open"
+    },
+    "property": "minecraft:using_item"
   }
 }

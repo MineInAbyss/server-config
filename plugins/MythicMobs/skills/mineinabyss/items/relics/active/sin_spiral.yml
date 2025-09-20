@@ -5,20 +5,22 @@ sin_spiral:
   - sound{s=entity.bat.takeoff;sc=ui;p=2;v=0.6} @self
   - sound{s=entity.bat.takeoff;sc=ui;p=0.2;v=0.6} @self
   - lunge{velocity=1.4;velocityY=0.2} @forward{f=4;y=0.3}
-  - delay 10
+  - delay 1
+  - effect:particlelinehelix{db=0.4;hl=3;syo=0;p=smoke;hr=2.5;md=30;rot=90;y=0.1;fo=true}
+  - delay 14
   - skill{sin_spiral_effect} @self
 
 sin_spiral_effect:
   Skills:
-  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=0}
-  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=90}
-  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=180}
-  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @forward{f=3;rot=270}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=3,y=0,z=0}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=-3,y=0,z=0}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=0,y=0,z=3}
+  - totem{charges=20;i=5;md=150;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hp=true;hnp=true} @origin{x=0,y=0,z=-3}
 
 sin_spiral_area_control:
   Skills:
-  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - potion{type=HARM;duration=30;level=0;hasParticles=true} @EntitiesNearOrigin{r=2}
+  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1}
+  - effect:particlering{particle=entity_effect;amount=2;r=2;p=15;hS=0.12;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1} 
+  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1} 
+  - effect:particlering{particle=entity_effect;amount=2;r=1;p=6;hS=0.5;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;y=0.1} 
+  - potion{type=HARM;duration=30;level=0;hasParticles=true} @EntitiesInRadius{r=2}

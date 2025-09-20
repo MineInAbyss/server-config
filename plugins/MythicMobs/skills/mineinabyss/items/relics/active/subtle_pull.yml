@@ -6,10 +6,10 @@ subtle_pull_hit_:
   Conditions:
     - hasaurastacks{n=subtlepullcharge} true
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
-  - effect:atom{po=reddust;pn=reddust;color1=#F5F5DC;color2=#ae0000;rn=0.5;r=1;o=2;d=true;dr=true;dir=1,0,0;ticks=15;y=1} @forward{f=1}
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=2} @self #thinking about sound
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=4} @self
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -50";op=true}
+  - atom{po=reddust;pn=reddust;color1=#F5F5DC;color2=#ae0000;rn=0.5;r=1;o=2;d=true;dr=true;dir=1,0,0;ticks=100;y=1}
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.6} @self #thinking about sound
+  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.8} @self
   - delay 15
   - sound{s=block.portal.travel;sc=ui;volume=0.4;pitch=1} @origin
   - sound{s=block.portal.travel;sc=ui;volume=0.7;pitch=0.2} @origin
@@ -23,7 +23,7 @@ subtle_pull_area_control:
   Conditions:
     - hasaurastacks{n=subtlepullcharge} true
   Skills:
-  - summon{type=subtle_pull_center_small;amount=3;radius=3} @origin #probs best if not random
+  - summon{type=subtle_pull_center_small;amount=1} @RandomLocationsNearCaster{a=3;r=4}
 
 subtle_pull: # Shim for geary
   Skills:

@@ -14,7 +14,7 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - hasaurastacks{n=n=necrometallicbladestop;s=1} true
+      - hasaurastacks{n=necrometallicbladestop;s=1} false
     onFail:
     - sendActionBar:
         text: <red>In Cooldown
@@ -38,3 +38,5 @@ observe:
       display: <#1F88ED>Necrometallic Spores
   - mythicSkills:
     - necrometallic_blade_hit
+resourcepack:
+  model: mineinabyss:item/relics/necrometallic_blade

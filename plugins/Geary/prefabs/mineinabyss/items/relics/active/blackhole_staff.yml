@@ -13,12 +13,13 @@ observe:
   - become: parent
   - ensure:
       mythicConditions:
-      - EnchantingLevel{l=>5} true
+      - EnchantingLevel{l=>3} true
+      - hasaurastacks{n=subtlepullcharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: blackhole
+      id: subtle_pull_sub
       length: 30s
       display: <#302D2D><b>Subtle Pull
   - mythicSkills:
@@ -28,11 +29,12 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>5} true
+      - hasaurastacks{n=subtlepullcharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: blackhole
+      id: subtle_pull_main
       length: 100s
       display: <#302D2D><b>Subtle Pull
   - mythicSkills:

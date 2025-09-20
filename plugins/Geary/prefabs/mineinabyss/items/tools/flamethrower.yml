@@ -1,10 +1,33 @@
 set.item:
   type: minecraft:paper
-  itemName: <dark_aqua>Flamethrower
+  itemName: <#0047AB>Flamethrower
   itemModel: mineinabyss:flamethrower
-disableItemInteractions: {}
+  lore:
+  - 'Grade II Relic'
+  - <#3d59ab>A relic born from decades of Orthian research.
+  - <#3d59ab>Flamethrowers are vastly considered inhumane in use.
+  - <#6666ff><i>Active ability. Projects flames on right click.
 resourcepack:
   model: mineinabyss:item/relics/flamethrower
+set.recipes:
+ result:
+   prefab: mineinabyss:flamethrower
+ discoverRecipes: true
+ recipes:
+ - type: shaped
+   items:
+     H:
+       prefab: mineinabyss:himushi_core
+     C:
+       prefab: mineinabyss:charcoal_sand_ingot
+     F:
+       prefab: mineinabyss:flamethrower_fuel
+     B:
+       prefab: mineinabyss:flamethrower_barrel 
+   configuration: |-
+     |CCF|
+     |BHC|
+     |CCC|
 observe:
   itemRightClick:
   - become: parent

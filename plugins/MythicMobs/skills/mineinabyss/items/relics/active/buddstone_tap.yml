@@ -59,24 +59,24 @@ buddstone_tap:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;pi=true} @forward{f=1000}
   - skill{s=after_image_buddstone_tap} #skill from after_image_arrow
   - delay 2
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;pi=true} @forward{f=1000}
   - delay 2
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;pi=true} @forward{f=1000}
   - delay 2
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=false} @forward{f=1000}
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;pi=true} @forward{f=1000}
   - delay 2
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
-  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;sB=true} @forward{f=1000}
+  - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onEnd=tpmageEnd;i=1;v=14;mr=20;hnp=true;pi=true} @forward{f=1000}
 
 tpmageTick:
   Conditions:
