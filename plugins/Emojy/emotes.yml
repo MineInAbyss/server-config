@@ -234,6 +234,12 @@ emotes:
   - id: pww
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/pww.png
+  - id: orfachw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/orfachw.png
+  - id: royw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/royw.png
   - id: adventure
     template: role_template
     texture: mineinabyss:ui/prefixes/server/adventure.png
