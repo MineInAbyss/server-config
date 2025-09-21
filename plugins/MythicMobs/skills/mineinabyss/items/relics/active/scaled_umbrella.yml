@@ -3,7 +3,7 @@ scaled_umbrella:
   - sound{s=entity.shield.block;sc=ui;p=0.9;v=0.8} @Self
   - sound{s=entity.player.attack.knockback;sc=ui;p=1.1;v=0.7} @Self
   - sound{s=entity.zombie.attack_iron_door;sc=ui;p=1.2;v=0.6} @Self
-  - lunge{velocity=1.1;velocityY=0.3} @forward{f=-2;y=-1.5}
+  - lunge{velocity=1.1;velocityY=0.2} @forward{f=-2;y=-1.5}
   - potion{type=SLOW;duration=80;level=2;hasParticles=false;repeat=5;repeatinterval=4} @EIR{r=3}
   - effect:particles{particle=crit;amount=15;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self
   - effect:particles{particle=dust;amount=10;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self

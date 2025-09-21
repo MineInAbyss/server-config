@@ -67,7 +67,7 @@ Flame-Torrent:
       - sound{s=entity.generic.ignite;p=1.7}
       ];
       onHit=[
-      - damage{amount=5;element=FIRE}
+      - damage{amount=5;element=FIRE;pkb=true}
       - ignite{ticks=100}
       - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}
@@ -79,7 +79,7 @@ Flame-Torrent:
       - sound{s=entity.generic.ignite;p=1.7}
       ];
       onHit=[
-      - damage{amount=5;element=FIRE}
+      - damage{amount=5;element=FIRE;pkb=true}
       - ignite{ticks=100}
       - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}
@@ -91,7 +91,7 @@ Flame-Torrent:
       - sound{s=entity.generic.ignite;p=1.7}
       ];
       onHit=[
-      - damage{amount=5;element=FIRE}
+      - damage{amount=5;element=FIRE;pkb=true}
       - ignite{ticks=100}
       - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
       ]} @forward{f=1000}

@@ -16,7 +16,7 @@ observe:
   - become: parent
   - cooldown:
       id: wish_of_fertility
-      length: 8s #Change to 40s once testing is done
+      length: 30s
       display: <#AC8053>Cradle of Fertility
   - geary:bonemeal_radius:
        radius: 5

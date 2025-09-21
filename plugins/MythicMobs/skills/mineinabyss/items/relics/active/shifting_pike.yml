@@ -1,10 +1,9 @@
 shiftingpikecharge:
   Cooldown: 0
   Conditions:
-  - hasaurastacks{n=shiningstop;s=1} false
   #- stance{s=spikeless;str=true} false
   Skills:
-    - aura{auraName=boundinglance;onStart=blazereapstack;duration=200;c=1;maxStacks=5;cotd=true} @self
+    - aura{auraName=boundinglance;duration=200;c=1;maxStacks=5;cotd=true} @self
     - potion{t=SLOW;l=1;d=20;p=false} @Self
     - skill{s=boundinghealready} @self
     - skill{s=boundingdamageready} @self

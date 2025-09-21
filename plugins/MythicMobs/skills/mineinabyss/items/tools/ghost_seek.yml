@@ -4,23 +4,23 @@
 # with increasing saturation at each step.
 ghost_seek_effect_1:
   Skills:
-    - sound{s=mineinabyss:item.ghost_seek_1;sc=ui;volume=1.5} @self
+    - sound{s=mineinabyss:item.ghost_seek_1;sc=ui;volume=1.3} @self
     - effect:particles{particle=redstone;color=#9F294C;amount=6;hS=0.5;vS=0.5;y=1.5} @forward{f=1.5}
 ghost_seek_effect_2:
   Skills:
-    - sound{s=mineinabyss:item.ghost_seek_2;sc=ui;volume=1.5} @self
+    - sound{s=mineinabyss:item.ghost_seek_2;sc=ui;volume=1.3} @self
     - effect:particles{particle=redstone;color=#D86631;amount=8;hS=0.5;vS=0.5;y=1.5} @forward{f=1.5}
 ghost_seek_effect_3:
   Skills:
-    - sound{s=mineinabyss:item.ghost_seek_3;sc=ui;volume=1.5} @self
+    - sound{s=mineinabyss:item.ghost_seek_3;sc=ui;volume=1.3} @self
     - effect:particles{particle=redstone;color=#F3CB2D;amount=10;hS=0.5;vS=0.5;y=1.5} @forward{f=1.5}
 ghost_seek_effect_4:
   Skills:
-    - sound{s=mineinabyss:item.ghost_seek_4;sc=ui;volume=1.5} @self
+    - sound{s=mineinabyss:item.ghost_seek_4;sc=ui;volume=1.3} @self
     - effect:particles{particle=redstone;color=#65C756;amount=15;hS=0.5;vS=0.5;y=1.5} @forward{f=1.5}
 ghost_seek_effect_5:
   Skills:
-    - sound{s=mineinabyss:item.ghost_seek_5;sc=ui;volume=1.5} @self
+    - sound{s=mineinabyss:item.ghost_seek_5;sc=ui;volume=1.3} @self
     - effect:particles{particle=redstone;color=#17D8C5;amount=20;hS=0.5;vS=0.5;y=1.5} @forward{f=1.5}
 
 # This effect is meant for the enhanced ghost seek,

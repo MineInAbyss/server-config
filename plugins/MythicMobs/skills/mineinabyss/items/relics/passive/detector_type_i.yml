@@ -3,6 +3,7 @@ detector_type_i:
   Conditions:
   TargetConditions:
     - lineofsight true
+    - isPlayer false
   Skills:
   - aura{auraName=detectortypeiscan;onTick=detector_scan;duration=40;c=1;maxStacks=1;cotd=false} @self
   - onDamaged{auraName=detectortypeidebuff;onTick=detector_type_i_debuff;duration=40;c=1;maxStacks=1;cotd=false;multiplier=1.2} @target

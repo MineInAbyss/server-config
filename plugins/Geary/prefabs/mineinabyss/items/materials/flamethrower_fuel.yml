@@ -1,7 +1,10 @@
 set.item:
-  itemName: <gray>Flamethrower Fuel
+  itemName: <#0047AB>Flamethrower Fuel
   type: PAPER
   itemModel: mineinabyss:flamethrower_fuel
+  lore:
+  - <#3d59ab>A rectangular capsule containing burnable materials.
+  - <#6666ff><i>Consumable. Fuel used by the <#0047AB>Flamethrower.
 resourcepack:
   textures:
     layers:
@@ -10,6 +13,7 @@ set.recipes:
   result:
     prefab: mineinabyss:flamethrower_fuel
   discoverRecipes: true
+  group: mineinabyss:flamethrower_fuel
   recipes:
   - type: shaped
     items:

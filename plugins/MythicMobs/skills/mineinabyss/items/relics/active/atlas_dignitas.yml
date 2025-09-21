@@ -32,10 +32,10 @@ atlas_tick:
     - FoodLevel{a=>=8} true
   Skills:
   - potion{t=HASTE;d=20;l=4;p=false} @self
-  - sound{s=entity.bee.loop;sc=ui;p=0.3;v=0.3} @self
-  - sound{s=entity.bee.loop;sc=ui;p=0.2;v=0.25} @self
-  - sound{s=entity.bee.loop;sc=ui;p=0.15;v=0.3} @self
-  - sound{s=entity.bee.loop;sc=ui;p=0.1;v=0.25} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.3;v=0.25} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.2;v=0.2} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.15;v=0.25} @self
+  - sound{s=entity.bee.loop;sc=ui;p=0.1;v=0.2} @self
   - aura{auraName=atlascounter;oT=atlas_debuff;i=40;onEnd=atlas_cancel;duration=50;c=1;maxStacks=1;cod=true;cogd=true;rd=true} @self
 
 atlas_debuff:

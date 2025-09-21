@@ -1,0 +1,17 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: TIPPED_ARROW.EFFECT.HARMING
+    amount: 8
+  group: "looty:tipped_arrow.effect.harming"
+  recipes:
+    - type: shaped
+      items:
+        B:
+          prefab: mineinabyss:black_flask
+        A:
+          type: ARROW
+      configuration: |-
+        |AAA|
+        |ABA|
+        |AAA|

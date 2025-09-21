@@ -19,7 +19,7 @@ observe:
         text: <red>Out of Experience
   - cooldown:
       id: aiming_light
-      length: 8s #change to 30-40s after testing
+      length: 35s
       display: <#6E260E>Aiming Light
   - applyPotionEffects:
     - type: minecraft:glowing
@@ -27,7 +27,7 @@ observe:
       amplifier: 1
       hasParticles: false
     - type: minecraft:darkness
-      duration: 1s
+      duration: 2s
       amplifier: 1
       hasParticles: false
   - geary:shulker_bullet:
@@ -39,9 +39,9 @@ observe:
       duration: 40
       effects:
         - type: minecraft:glowing
-          duration: 5.0t
+          duration: 100.0t
         - type: minecraft:darkness
-          duration: 3.0t
+          duration: 60.0t
           amplifier: 1
   - mythicSkills:
     - after_image_soul-aiming_light_

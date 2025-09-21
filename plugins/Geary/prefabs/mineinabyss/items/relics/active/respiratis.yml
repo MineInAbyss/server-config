@@ -9,7 +9,9 @@ set.item:
   - <#C4A484><i>Active ability. Grants dolphins
   - <#C4A484><i>grace to the user on right click.
 resourcepack:
-  model: mineinabyss:item/relics/morinaut_shell
+  textures:
+    layers:
+    - mineinabyss:item/relics/morinaut_shell
 observe:
   itemRightClick:
   - become: parent

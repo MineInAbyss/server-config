@@ -33,7 +33,7 @@ tranquil_pierce_throw:
   Skills:
   - auraremove{aura=trident;stacks=3} @self
   - sound{s=item.trident.throw;sc=ui;p=1;v=0.6} @self
-  - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1;vR=1;mr=35;hnp=true;hp=true;hO=0;sE=true;sB=true;d=200;hs=false;hfs=1} @targetlocation
+  - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1;vR=1;mr=35;hnp=true;hp=true;hO=0;sE=true;sB=true;d=200;hs=false;hfs=1;syo=2} @forward{f=1000}
   - aura{auraName=tridentstop;duration=300;c=1;cotd=false} @self
 
 trident_impact:

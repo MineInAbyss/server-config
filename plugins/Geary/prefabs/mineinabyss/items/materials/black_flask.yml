@@ -1,0 +1,43 @@
+set.item:
+  type: minecraft:potion
+  itemName: <#0047AB>Black Flask
+  itemModel: mineinabyss:black_flask
+  lore:
+  - <#3d59ab>A fleshy bottle filled with a black, oily substance.
+  - <#3d59ab>Drinking it causes a strange reaction within the body.
+  - <#6666ff><i>Consumable. Grants effects when drunk.
+set.recipes:
+  result:
+    prefab: mineinabyss:black_flask
+    amount: 4
+  discoverRecipes: true
+  group: mineinabyss:black_flask
+  recipes:
+  - type: shaped
+    items:
+      H:
+        prefab: mineinabyss:hashofu_body
+      C:
+        prefab: mineinabyss:charcoal_sand_ingot
+      Y:
+        prefab: mineinabyss:yomotsubi_abdomen_cooked
+      S:
+        prefab: mineinabyss:stingerhead_eye
+    configuration: |-
+      | H |
+      |YSY|
+      |YCY|
+observe:
+  itemConsumed:
+  - become: parent
+  - applyPotionEffects:
+    - type: minecraft:speed
+      duration: 2s
+      amplifier: 10
+    - type: minecraft:instant_damage
+      duration: 2s
+      amplifier: 1
+resourcepack:
+  textures:
+    layers:
+      - mineinabyss:item/relics/consumables/black_flask

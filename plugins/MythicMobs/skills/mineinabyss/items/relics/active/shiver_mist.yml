@@ -175,7 +175,7 @@ shiver_mist_freeze_effect_2:
   - effect:particles{particle=item_snowball;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=3;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
-  - damage{a=1;ia=false;pkb=true} @targetedtarget
+  - damage{a=1;ia=false;pkb=true;is=true} @targetedtarget
 
 shiver_mist_freeze_effect_3:
   Cooldown:
@@ -187,7 +187,7 @@ shiver_mist_freeze_effect_3:
   - effect:particles{particle=snowflake;amount=1;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=3;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
-  - damage{a=1;ia=true;pkb=true} @targetedtarget
+  - damage{a=1;ia=true;pkb=true;is=true} @targetedtarget
 
 shiver_mist_freeze_effect_4:
   Cooldown:
@@ -199,7 +199,7 @@ shiver_mist_freeze_effect_4:
   - effect:particles{particle=snowflake;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - potion{type=SLOW;duration=40;level=4;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
-  - damage{a=1.5;ia=true;pkb=true} @targetedtarget
+  - damage{a=1.5;ia=true;pkb=true;is=true} @targetedtarget
   - sound{s=block.glass.break;sc=ui;volume=0.1;pitch=1.5} @targetedtarget
 
 shiver_mist_charger: # Shim for geary

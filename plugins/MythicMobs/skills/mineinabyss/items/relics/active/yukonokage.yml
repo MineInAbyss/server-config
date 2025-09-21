@@ -55,7 +55,7 @@ yukonokage_soul_overload:
   - effect:blockmask{m=SNOW_BLOCK;r=3;d=150} @self
   - effect:particlesphere{particle=poof;amount=10;radius=3;hS=1;vS=0.5;s=10} @self
   - skill{s=soul_overload_freeze}
-  - throw{velocity=30;velocityY=5} @EIR{r=3}
+  - throw{velocity=30;velocityY=5} @EIR{r=3.5}
   - delay 5
   - effect:blockmask{m=SNOW_BLOCK;r=4;d=150} @self
   - effect:particlesphere{particle=poof;amount=15;radius=4;hS=1;vS=0.5;s=10} @self
@@ -68,8 +68,12 @@ soul_overload_freeze:
 
 soul_overload_freeze_effect:
   Skills:
-  - freeze{ticks=80}
-  - damage{a=4;ie=true}
+  - effect:particles{particle=item_snowball;amount=3;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
+  - sound{s=block.glass.break;sc=ui;volume=0.1;pitch=1.5} @origin
+  - freeze{ticks=80} @targetedtarget
+  - damage{a=4;ie=true;is=true} @targetedtarget
+  - freeze{ticks=80} @self
+  - damage{a=4;ie=true;is=true} @self
 
 yukonokage_ability: # Shim for geary
   Skills:
@@ -98,7 +102,7 @@ yukonokage_soul_shot:
 yukonokage_soul_collision:
   Skills:
   - sound{s=ambient.cave;sc=ui;p=1;v=0.6} @self
-  - damage{a=clamp(<target.mhp> * 0.35,10,50);ie=true;ia=true} # Kinda OP, can 3 shot anything. Need to revise this for bosses.
+  - damage{a=clamp(<target.mhp> * 0.15,10,50);ie=true;ia=true} # Kinda OP, can 3 shot anything. Need to revise this for bosses.
   - fakeexplosion
 
 yukonokage_soul_repel:
