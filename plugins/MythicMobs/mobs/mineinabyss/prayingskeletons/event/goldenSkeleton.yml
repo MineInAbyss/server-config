@@ -33,6 +33,6 @@ goldenSkeleton:
   Skills:
     - skill{s=displayHealth} ~onDamaged
     #- model{modelid=golden_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
-    - randomskill {skills= relicDropLaments, relicDropSin, relicDropMockwater, relicDropGambit} ~onDeath 
+    - randomskill {skills= relicDropLaments, relicDropSin, relicDropMockwater, relicDropGambit} ~onDeath
     - skill{s=golden_skeleton_death} ~onDeath
     #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10

@@ -28,14 +28,14 @@ wind_impact:
   Skills:
   - effect:particles{p=gust_emitter_large;a=1;vs=0.2;hs=0.2;s=0;y=1;size=1.5}
   - fakeexplosion
-  - totem{md=2;c=1;oT=wind_impact_effect;hnp=true;hp=true;hR=2;vR=2;i=1;hitSelf=true} @origin
+  - totem{md=2;c=1;oT=wind_impact_effect;hnp=true;hp=true;hR=2;vR=2;i=1;hitSelf=true}
   - shieldbreak{duration=150}
 
 wind_impact_effect:
   Skills:
-  - throw{velocity=14;velocityY=7} @EIR{r=4}
-  - damage{a=20} @EIR{r=4}
-  - damage{a=30} @EIR{r=2;conditions=[
+  - throw{velocity=14;velocityY=7} @ENO{r=4}
+  - damage{a=20} @ENO{r=4}
+  - damage{a=30} @ENO{r=2;conditions=[
                               - entitywithin{d=2} true     ]}
 
 gust-shot_charge: # Shim for geary

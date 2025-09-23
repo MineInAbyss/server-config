@@ -95,15 +95,15 @@ gambit_incense_11:
   Conditions:
   Skills:
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1}
-  - potion{t=HARM;d=140} @EIR{r=7}
-  - potion{t=HARM;d=140} @self
+  - potion{t=WITHER;d=140} @EIR{r=7}
+  - potion{t=WITHER;d=140} @self
 
 gambit_incense_11_luck:
   Conditions:
   Skills:
   - effect:particlesphere{p=dripping_honey;r=6;a=60;hS=1;vS=1;size=2}
-  - potion{t=HARM;d=140;l=2} @EIR{r=7}
-  - potion{t=HARM;d=140;l=2} @self
+  - potion{t=WITHER;d=140;l=2} @EIR{r=7}
+  - potion{t=WITHER;d=140;l=2} @self
 
 gambit_incense_12:
   Conditions:

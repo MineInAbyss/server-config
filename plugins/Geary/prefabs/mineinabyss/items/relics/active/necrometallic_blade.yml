@@ -6,36 +6,21 @@ set.item:
   - ':layer_4: Grade I Relic'
   - <gold>Researchers of the bacteria that inhabit this Relic advice
   - <gold>wielders not to touch its blade under any circumstances. 
-  - <#D2D489><i>When vibrated the ore releases bacterial 
-  - <#D2D489><i>spores which poison their environment. 
+  - <#D2D489><i>Active ability. Builds poison stacks on left click.
+  - <#D2D489><i>Charges on right click. Requires 3 charges to create
+  - <#D2D489><i>poison cloud on left click. Makes stacks explode on 4th charge.
   unbreakable: {}
 observe:
   itemRightClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=necrometallicbladestop;s=1} false
-    onFail:
-    - sendActionBar:
-        text: <red>In Cooldown
   - cooldown:
       id: necrometallic_blade_primer
-      length: 3s
+      length: 5s
       display: <#1F88ED>Priming
   - mythicSkills:
     - necrometallic_blade_charge
   itemLeftClick:
   - become: parent
-  - ensure:
-      mythicConditions:
-      - hasaurastacks{n=necrometallicbladecharge;s=3} true
-    onFail:
-    - sendActionBar:
-        text: <red>Not Primed
-  - cooldown:
-      id: necrometallic_blade
-      length: 30s
-      display: <#1F88ED>Necrometallic Spores
   - mythicSkills:
     - necrometallic_blade_hit
 resourcepack:

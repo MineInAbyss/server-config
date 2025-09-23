@@ -3,13 +3,14 @@ set.item:
   itemName: <#0047AB>Black Flask
   itemModel: mineinabyss:black_flask
   lore:
+  - Grade IV relic <#0047AB>Black Flask
   - <#3d59ab>A fleshy bottle filled with a black, oily substance.
   - <#3d59ab>Drinking it causes a strange reaction within the body.
   - <#6666ff><i>Consumable. Grants effects when drunk.
 set.recipes:
   result:
     prefab: mineinabyss:black_flask
-    amount: 4
+    amount: 1
   discoverRecipes: true
   group: mineinabyss:black_flask
   recipes:
@@ -35,8 +36,7 @@ observe:
       duration: 2s
       amplifier: 10
     - type: minecraft:instant_damage
-      duration: 2s
-      amplifier: 1
+      duration: 1s
 resourcepack:
   textures:
     layers:

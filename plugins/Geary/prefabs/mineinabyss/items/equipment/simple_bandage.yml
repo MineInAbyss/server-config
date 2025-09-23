@@ -8,54 +8,71 @@ set.item:
   maxStackSize: 16
   consumable:
       animation: TOOT_HORN
-      duration: 4s
+      duration: 9999s
       sound: item.bone_meal.use
       particles: false
-      consumeEffects:
-        - type: APPLY
-          effects:
-          - type: minecraft:instant_health
-            duration: 2s
-            hasParticles: false
+      # consumeEffects:
+      #   - type: APPLY
+      #     effects:
+      #     - type: minecraft:instant_health
+      #       duration: 2s
+      #       hasParticles: false
 resourcepack:
   textures:
     layers:
     - mineinabyss:item/other/bandages
 
-# set.recipes:
-#   discoverRecipes: true
-#   result:
-#     prefab: mineinabyss:simple_bandage
-#     amount: 2
-#   group: mineinabyss:simple_bandage
-#   recipes:
-#     - type: shaped
-#       items:
-#         M:
-#           prefab: mineinabyss:mantoyer_horns
-#         P:
-#           prefab: mineinabyss:plant_matter
-#         S:
-#           type: SWEET_BERRIES
-#         A: 
-#           type: PAPER
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:bandages
+    amount: 2
+  group: mineinabyss:bandages
+  recipes:
+    - type: shaped
+      items:
+        M:
+          prefab: mineinabyss:mantoyer_horns
+        A:
+          prefab: mineinabyss:plant_matter
+        S:
+          type: SWEET_BERRIES
+        P: 
+          type: PAPER
           
-#       configuration: |-
-#         | P |
-#         |SAM|
-#         | P |
-# observe:
-#   itemRightClick:
-#   - become: parent
-#   - ensure:
-#       player:
-#         sneaking: true
-#       mythicConditions:
-#       - incombat false
-#     onFail:
-#     - sendActionBar:
-#         text: <red>Not Sneaking / In Combat
-#   - cooldown:
-#       id: bandage
-#       length: 20s
-#       display: <#617B94>Simple Bandage
+      configuration: |-
+        | P |
+        |SAM|
+        | P |
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - incombat false
+    onFail:
+    - sendActionBar:
+        text: <red>Not Sneaking / In Combat
+  - cooldown:
+      id: bandage
+      length: 20s
+      display: <#617B94>Simple Bandage
+  - mythicSkills:
+    - simple_bandage
+passive:
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+      hasConsumable:
+        type: mineinabyss:bandages
+      mythicConditions:
+      - variableisset{var=caster.simple_bandage_consume} true 
+  - consumeItem:
+      type: mineinabyss:bandages
+  - mythicSkills:
+    - simple_bandage_consume

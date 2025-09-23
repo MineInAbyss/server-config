@@ -40,7 +40,7 @@ observe:
         text: <red>Out of fuel
   - cooldown:
       id: flamethrower
-      length: 2s
+      length: 3s
       display: <dark_aqua>Flamethrower
   - mythicSkills:
     - Flame-Torrent

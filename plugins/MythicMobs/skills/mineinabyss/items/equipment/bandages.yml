@@ -2,12 +2,26 @@ simple_bandage:
   Cooldown:
   Conditions:
   Skills:
-  - aura{auraName=simplebandageheal;oE=simple_bandage_heal;duration=60;c=1;maxStacks=1;cotd=true;cod=true} @self
+  - aura{auraName=simplebandageheal;oT=bandage_windup;oE=simple_bandage_heal;duration=60;i=20;c=1;maxStacks=1;cotd=true;cod=true} @self
 
-simple_bandage_heal:
+simple_bandage_heal: #if oE triggers on cod or cotd then move heal to oT, change oE to be "canceled skill particles"
   Cooldown:
   Conditions:
   - sneaking true
   Skills:
-  #particles
+  - effect:particles{particle=totem_of_undying;amount=1;hS=0.5;vS=0.1;y=1} @self
   - heal{a=3} @self
+  - setvariable{var=caster.simple_bandage_consume;val=0} #if heal is oT use setvariable onStart and use variableadd oT, then check for variableinrange
+
+bandage_windup: 
+  Cooldown:
+  Conditions:
+  - sneaking true
+  Skills:
+  - effect:particles{particle=instant_effect;amount=3;hS=0.7;vS=0.1;y=1} @self
+  - effect:sound{s=item.bone_meal.use;sc=ui;v=0.6;p=0.2} @self #supporting sound to consumable within geary
+
+simple_bandage_consume:
+  Conditions:
+  Skills:
+  - variableunset{n=caster.simple_bandage_consume}

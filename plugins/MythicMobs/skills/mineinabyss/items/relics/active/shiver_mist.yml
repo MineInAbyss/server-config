@@ -13,7 +13,11 @@ shiver_mist_hit_:
   - sound{s=entity.ender_dragon.flap;sc=ui;volume=0.3;pitch=1.6;repeat=2;repeatinterval=3} @self
   - sound{s=entity.wither.shoot;sc=ui;volume=0.1;pitch=1.5;repeat=2;repeatinterval=2} @self
   - delay 4
-  - freeze{ticks=100} @self #might not work without aura, to be changed to skill on chance its broken after testing
+  - freeze{ticks=21} @self #might not work without aura, to be changed to skill on chance its broken after testing
+  - freeze{ticks=21;delay=19} @self
+  - freeze{ticks=21;delay=39} @self
+  - freeze{ticks=21;delay=59} @self
+  - freeze{ticks=21;delay=79} @self
   - potion{t=SLOW;l=2;d=20;p=false} @self
   - extinguish{delay=0} @self
 
@@ -34,9 +38,9 @@ shiver_mist_area_projectile:
 
 shiver_mist_area_projectile_tick:
   Skills:
-  - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
-  - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
-  - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#94d4ff;amount=2;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#edfaff;amount=2;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=small_gust;color=#edfaff;amount=1;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
   - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=2}
   - extinguish{delay=0} @ENO{r=1}
 
@@ -44,23 +48,21 @@ shiver_mist_area_projectile_end:
   TargetConditions:
   Skills:
   - effect:particles{particle=snowflake;amount=4;hS=1;vS=1;speed=0;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - totem{charges=40;i=5;md=200;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hfs=0.1;hp=true;hnp=true}
+  - totem{charges=40;i=5;md=200;onTick=shiver_mist_area_totem;hs=true;hugwater=true;hfs=0.1;hp=true;hnp=true;hitSelf=true}
 
 shiver_mist_area_totem:
   TargetConditions:
   Skills:
-  - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=3.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=3.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=20;c=2;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=4}
-  - damage{a=3;pkb=false} @ENO{r=4}
-  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @ENO{r=4}
-  - extinguish{delay=0} @ENO{r=4}
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=20;c=2;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=3}
+  - damage{a=3;pkb=false} @ENO{r=2}
+  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @ENO{r=3}
+  - extinguish{delay=0} @ENO{r=3}
 
 shiver_mist: # Shim for geary
   Skills:
@@ -124,8 +126,8 @@ shiver_mist_throw:
 
 shiver_mist_projectile_tick:
   Skills:
-  - effect:particles{particle=redstone;color=#94d4ff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
-  - effect:particles{particle=redstone;color=#edfaff;amount=10;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#94d4ff;amount=7;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#edfaff;amount=7;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0} @origin
   - effect:particles{particle=small_gust;color=#edfaff;amount=2;hS=0.25;vS=0.25;speed=0;forwardOffset=0;sideOffset=0} @origin
 
 shiver_mist_projectile_tick_damage:
@@ -164,7 +166,7 @@ shiver_mist_freeze_effect_1:
   Skills:
   # - message{m=freeze 1} @self
   - effect:particles{particle=item_snowball;amount=1;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @targetedtarget
+  - potion{type=SLOW;duration=40;level=0;hasParticles=false} @targetedtarget
 
 shiver_mist_freeze_effect_2:
   Cooldown:
@@ -173,7 +175,7 @@ shiver_mist_freeze_effect_2:
   Skills:
   # - message{m=freeze 2} @self
   - effect:particles{particle=item_snowball;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - potion{type=SLOW;duration=40;level=3;hasParticles=false} @targetedtarget
+  - potion{type=SLOW;duration=40;level=1;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
   - damage{a=1;ia=false;pkb=true;is=true} @targetedtarget
 
@@ -185,7 +187,7 @@ shiver_mist_freeze_effect_3:
   # - message{m=freeze 3} @self
   - effect:particles{particle=item_snowball;amount=3;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - effect:particles{particle=snowflake;amount=1;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - potion{type=SLOW;duration=40;level=3;hasParticles=false} @targetedtarget
+  - potion{type=SLOW;duration=40;level=1;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
   - damage{a=1;ia=true;pkb=true;is=true} @targetedtarget
 
@@ -197,7 +199,7 @@ shiver_mist_freeze_effect_4:
   # - message{m=freeze 4} @self
   - effect:particles{particle=item_snowball;amount=3;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
   - effect:particles{particle=snowflake;amount=2;hS=0.35;vS=0.35;y=0.5;speed=0.1;forwardOffset=0;sideOffset=0;dir=0,-1,0} @origin
-  - potion{type=SLOW;duration=40;level=4;hasParticles=false} @targetedtarget
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @targetedtarget
   - freeze{ticks=40} @targetedtarget
   - damage{a=1.5;ia=true;pkb=true;is=true} @targetedtarget
   - sound{s=block.glass.break;sc=ui;volume=0.1;pitch=1.5} @targetedtarget

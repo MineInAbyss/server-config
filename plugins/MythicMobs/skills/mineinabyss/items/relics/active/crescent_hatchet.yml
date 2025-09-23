@@ -25,7 +25,7 @@ crescent_slash_2:
   Skills:
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_2;v=12;i=1;hR=1.5;vR=1.5;mr=5;hnp=true;hp=true;hO=0;sE=false;sB=true;d=60;hs=false;hfs=1} @forward{f=1000}
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_2;v=12;i=1;hR=1.5;vR=1.5;mr=3;hnp=true;hp=true;hO=0;sE=false;sB=true;d=60;hs=false} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=3} @self
 
 crescent_slash_3:
@@ -34,7 +34,7 @@ crescent_slash_3:
   Skills:
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=14;i=1;hR=1.5;vR=1.5;mr=15;hnp=true;hp=true;hO=0;sE=false;sB=true;d=80;hs=false;hfs=1} @forward{f=1000}
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=14;i=1;hR=1.5;vR=1.5;mr=6;hnp=true;hp=true;hO=0;sE=false;sB=true;d=80;hs=false} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=5} @self
 
 crescent_slash_4:
@@ -45,7 +45,7 @@ crescent_slash_4:
   - delay 1
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
   - delay 4
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=crescent_hit_3;v=16;i=1;hR=1.5;vR=1.5;mr=25;hnp=true;hp=true;hO=0;sE=false;sB=true;d=150;hs=false;hfs=1} @forward{f=1000}
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=16;i=1;hR=1.5;vR=1.5;mr=12;hnp=true;hp=true;hO=0;sE=false;sB=true;d=150;hs=false} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=10} @self
 
 crescent_debuff:
@@ -55,7 +55,7 @@ crescent_debuff:
   - effect:particles{p=flash;amount=3;hS=0.3;vS=0.3;speed=0;y=0.5} @forward{f=1}
   - damage{a=30;pkb=false;hnp=false;hp=true;pi=true} @self
   - delay 4
-  - lunge{velocity=1.25;velocityY=0.5} @forward{f=-4;y=-2} @self
+  - throw{velocity=5;velocityY=2} @self
   - delay 1
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
 
@@ -127,11 +127,11 @@ crescent_slash_3_charged:
   Conditions:
     - hasaurastacks{n=crescentprimer;s=5to6} true
   Skills:
-  - effect:particles{p=end_rod;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=ominous_spawning;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
 
 crescent_slash_4_charged:
   Cooldown: 1
   Conditions:
     - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
-  - effect:particles{p=end_rod;amount=10;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=ominous_spawning;amount=10;hS=0.5;vS=1;speed=0;y=0.5}

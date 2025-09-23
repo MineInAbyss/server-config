@@ -20,7 +20,7 @@ necrometallic_vulnerable:
               cotd=false;
               cod=true;
               cocd=true;
-              rd=true} @target
+              rd=true;cE=false;pi=false} @target
 
 necrometallic_tick:
   Skills:
@@ -93,6 +93,9 @@ hammer_smash_damage:
   TargetConditions:
   - owner{} false 
   Skills:
+  - shieldbreak{duration=100} @PIR{r=2}
+  - shieldbreak{duration=40} @PIR{r=4}
+  - delay 1
   - damage{a=30;ignorearmor=false} @PIR{r=2;conditions=[
                               - playerwithin{d=2} true     ]}
   - potion{t=POISON;d=100;l=2} @PIR{r=2;conditions=[

@@ -1,7 +1,7 @@
 tidal_spout:
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -40";op=true}
-  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1;hugwater=true} @targetlocation
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1.5;vR=1.5;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1;hugwater=true} @forward{f=1000}
   - skill{s=after_image_projectile}
   - lunge{velocity=-1.02;velocityY=0.1} @forward{f=-2;y=0.1}
   - sound{s=block.water.ambient;sc=ui;volume=0.6;pitch=0.8} @self       # Background water presence  

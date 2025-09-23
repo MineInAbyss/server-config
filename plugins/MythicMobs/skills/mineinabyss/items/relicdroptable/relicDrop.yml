@@ -15,24 +15,24 @@ relicDrop:
 
 relicDropLaments:
   Conditions:
-    - chance{c=0.25} true
+    #- chance{c=0.25} true
   Skills:
   - skill{s=relicDrop;item=LamentsThreadDrop;grade=3}
 
 relicDropSin:
   Conditions:
-    - chance{c=0.1} true
+    #- chance{c=0.1} true
   Skills:
   - skill{s=relicDrop;item=SinSpiral;grade=2}
 
 relicDropMockwater:
   Conditions:
-    - chance{c=0.4} true
+    #- chance{c=0.4} true
   Skills:
   - skill{s=relicDrop;item=MockwaterFluid;grade=4}
 
 relicDropGambit:
   Conditions:
-    - chance{c=0.25} true
+    #- chance{c=0.25} true
   Skills:
   - skill{s=relicDrop;item=GambitIncense;grade=3}
