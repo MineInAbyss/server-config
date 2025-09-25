@@ -7,7 +7,7 @@ set.item:
   - <#dfceac><i>Active ability. On right consumes bandage healing the user.
   maxStackSize: 16
   consumable:
-      animation: TOOT_HORN
+      animation: BRUSH
       duration: 9999s
       sound: item.bone_meal.use
       particles: false
@@ -21,6 +21,7 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:item/other/bandages
+  parentModel: item/handheld
 
 set.recipes:
   discoverRecipes: true

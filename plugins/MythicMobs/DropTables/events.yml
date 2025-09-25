@@ -1,23 +1,23 @@
 CharredSkelPlayerHeads:
   MaxItems: 1
   Drops:
-  - blackskull 0.01
-  - flawedonyx 0.01
-  - goldenmask 0.01
-  - inkycore 0.01
-  - lightorb 0.01
-  - oldfossildust 0.01
+  - blackskull 1 0.01
+  - flawedonyx 1 0.01
+  - goldenmask 1 0.01
+  - inkycore 1 0.01
+  - lightorb 1 0.01
+  - oldfossildust 1 0.01
 
 GoldenSkelPlayerHeads:
   MaxItems: 1
   MinItems: 1
   Drops:
-  - golddustjar 0.1
-  - golddustpouch 0.1
-  - goldenlantern 0.1
-  - goldenskeletonskull 0.1
-  - goldenthread 0.1
-  - stonewithflowers 0.1
+  - golddustjar 1 0.1
+  - golddustpouch 1 0.1
+  - goldenlantern 1 0.1
+  - goldenskeletonskull 1 0.1
+  - goldenthread 1 0.1
+  - stonewithflowers 1 0.1
 
 LamentsThreadDrop:
   Conditions:

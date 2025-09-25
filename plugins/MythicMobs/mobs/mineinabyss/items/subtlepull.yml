@@ -25,6 +25,28 @@ subtle_pull_center:
   Skills:
   #  - projectile{bulletType=MYTHICITEM;material=va7;onTick=subtle_pull_center_tick;mr=170;v=0;i=1;hR=3;hp=true;hnp=true;vR=1;sE=true;hs=false;d=73;syo=0;g=0;tyo=0;onEnd=bam;sE=false;sB=false;hp=true;hnp=false} @origin ~onSpawn
    - projectile{bulletType=TEXT;onTick=subtle_pull_center_tick;mr=170;v=0;i=1;hR=3;hp=true;hnp=true;vR=1;sE=true;hs=false;d=73;syo=0;g=0;tyo=0;onEnd=bam;sE=false;sB=false;hp=true;hnp=false} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=90;rZ=0;rY=0;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.3;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=0;rZ=90;rY=0;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.3;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=45;rZ=0;rY=0;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.3;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=45;rZ=45;rY=0;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.3;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=90;rZ=0;rY=0;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=0;rZ=90;rY=0;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=45;rZ=0;rY=0;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1;speed=0.2} @origin ~onSpawn
+   - effect:particleorbital{r=5;points=40;t=80;i=1;rX=45;rZ=45;rY=0;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1;speed=0.2} @origin ~onSpawn
+   - effect:particle{p=reddust;color=#ae0000;amount=20;delay=2;hS=0.7;vS=0.7;size=2;repeat=30;repeatInterval=2;speed=0} @origin ~onSpawn
+   - effect:particle{p=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#ae0000;amount=30;delay=2;hS=0.9;vS=0.9;size=2;repeat=30;repeatInterval=2;speed=0} @origin ~onSpawn
+   - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=100;radius=3.1;size=4;repeat=2;repeatinterval=2;delay=40} @origin ~onSpawn
+   - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2;delay=74} @origin ~onSpawn
+   - effect:particlesphere{p=smoke_large;amount=100;radius=3;size=7;repeat=4;repeatinterval=2;speed=0.6;delay=74} @origin ~onSpawn
+   - effect:particlesphere{p=reddust;color=#ae0000;amount=200;radius=2;size=3;speed=1;delay=74} @origin ~onSpawn
+   - effect:particlesphere{p=reddust;color=#ff3232;amount=200;radius=3;size=3;speed=1;delay=75} @origin ~onSpawn
+   - effect:particlesphere{p=reddust;color=#ff6666;amount=200;radius=4;size=3;speed=1;delay=76} @origin ~onSpawn
+   - effect:particlesphere{p=explosion;color=#ff6666;amount=20;radius=4;size=3;speed=1;delay=76} @origin ~onSpawn
+   - effect:particlering{p=cloud;color=#000000;amount=4;points=40;radius=2;size=3;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=cloud;color=#000000;amount=5;points=46;radius=3;delay=1;size=3;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=cloud;color=#000000;amount=3;points=52;radius=4;delay=2;size=3;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=cloud;color=#000000;amount=3;points=59;radius=5.2;delay=3;size=2.7;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=cloud;color=#000000;amount=3;points=68;radius=6.4;delay=4;size=2.5;speed=3;delay=74} @origin ~onSpawn
    - potion{type=INVISIBILITY;duration=99999;level=1;p=false} @self ~onSpawn
    - signal{s=NULLSAVE;repeat=37;repeatInterval=2} @EntitiesNearOrigin{r=16} ~onSpawn
    - potion{type=SLOW;duration=99999;level=100;p=false} @self ~onSpawn
@@ -72,13 +94,18 @@ subtle_pull_center_small:
    - projectile{bulletType=TEXT;onTick=subtle_pull_center_small_tick;mr=170;v=0;i=1;hR=3;hp=true;hnp=true;vR=1;sE=true;hs=false;d=60;syo=0;g=0;tyo=0;onEnd=bam;sE=false;sB=false;hp=true;hnp=false} @origin ~onSpawn
   #  - projectile{bulletType=TEXT;onTick=subtle_pull_center_small_tick;i=1;d=200;mr=170;syo=0;g=0;tyo=0;v=0;hp=true;hnp=true;hs=false;hR=3;vR=1;sE=true;sB=false} @origin ~onSpawn
    
-   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=90;rZ=0;rY=0;y=2;particle=reddust;color=#faf5f5;size=1.5} @origin ~onSpawn
-   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=0;rZ=90;rY=0;y=2;particle=reddust;color=#faf5f5;size=1.5} @origin ~onSpawn
-   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=0;rY=0;y=2;particle=reddust;color=#faf5f5;size=1.5} @origin ~onSpawn
-   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=45;rY=0;y=2;particle=reddust;color=#faf5f5;size=1.5} @origin ~onSpawn
-   - effect:particle{p=reddust;color=#ae0000;amount=20;delay=2;hS=0.5;vS=0.5;y=2;size=3;repeat=30;repeatInterval=2;speed=0} @origin ~onSpawn
-   - sound{s=block.beacon.ambient;sc=ui;volume=2.5;pitch=0.4} @self ~onSpawn
-   - sound{s=block.beacon.ambient;sc=ui;volume=2.5;pitch=0.5} @self ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=90;rZ=0;rY=0;y=2;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=0;rZ=90;rY=0;y=2;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=0;rY=0;y=2;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=45;rY=0;y=2;particle=block_dust;material=WHITE_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=90;rZ=0;rY=0;y=2;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=0;rZ=90;rY=0;y=2;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=0;rY=0;y=2;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particleorbital{r=2.5;points=20;t=60;i=1;rX=45;rZ=45;rY=0;y=2;particle=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#faf5f5;size=1.2} @origin ~onSpawn
+   - effect:particle{p=reddust;color=#ae0000;amount=20;delay=2;hS=0.5;vS=0.5;y=2;size=2;repeat=27;repeatInterval=2;speed=0} @origin ~onSpawn
+   - effect:particle{p=block_dust;material=WHITE_TERRACOTTA;color=#ae0000;amount=6;delay=2;hS=1;vS=0.5;y=2;size=2.2;repeat=27;repeatInterval=2;speed=0} @origin ~onSpawn
+   - sound{s=block.beacon.ambient;sc=ui;volume=2.2;pitch=0.4} @self ~onSpawn
+   - sound{s=block.beacon.ambient;sc=ui;volume=2.2;pitch=0.5} @self ~onSpawn
    - sound{s=block.beacon.ambient;sc=ui;volume=2;pitch=1.6} @self ~onSpawn
   #  - particlesphere{p=Entity_Effect;color=#ffdede;repeat=30;repeatInterval=2;r=1.5} @origin ~onSpawn
    - potion{type=INVISIBILITY;duration=99999;level=1;p=false} @self ~onSpawn

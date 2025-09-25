@@ -27,9 +27,9 @@ PSSherdDrops:
   - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
 
 
-tosubachi_drop:
-  MaxItems: 1
-  TargetConditions:
-    - variableisset{var=caster.flamethrower-used} false
+TosubachiDrop:
+  TotalItems: 1
+  TriggerConditions:
+    - variableisset{var=caster.flamethrower-used} true
   Drops:
   - geary mineinabyss:tosubachi 1-1 1 nolooting

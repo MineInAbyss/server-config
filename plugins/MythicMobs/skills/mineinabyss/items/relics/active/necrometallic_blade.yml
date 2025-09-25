@@ -1,8 +1,12 @@
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
 necrometallic_blade_hit: # Shim for geary
   Skills:
   - skill{s=necrometallic_blade_hit_}
   - delay 1
-  #- skill{s=necrometallic_chipping_spores} #needs to be moved from totem to mob
+  - skill{s=necrometallic_chipping_spores} #needs to be moved from totem to mob
   - delay 1
   - skill{s=necrometallic_blade_effect_main}
 necrometallic_blade_hit_:
@@ -17,7 +21,7 @@ necrometallic_chipping_spores:
   Conditions:
     - chance{chance=0.1} true
   Skills:
-  - totem{charges=3;i=10;md=60;onTick=necrometallic_chipping_spores_effect;hs=true;hugwater=true;hfs=0.1;hp=true;hnp=true;hitSelf=true} @self
+  - totem{charges=3;i=20;md=60;onTick=necrometallic_chipping_spores_effect;hs=true;hugwater=true;hfs=0.1;hp=true;hnp=true;hitSelf=true} @self
 
 necrometallic_chipping_spores_effect:
   TargetConditions:
@@ -26,7 +30,7 @@ necrometallic_chipping_spores_effect:
   - effect:particlering{particle=reddust;color=#FDE55D;y=-0.5;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.4} @origin
   - effect:particlering{particle=reddust;color=#FF5C5C;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.4} @origin
   - effect:particlering{particle=reddust;color=#FDE55D;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.4} @origin
-  - damage{a=6;pkb=true;ia=false;is=true} @ENO{r=2}
+  - damage{a=3;pkb=true;ia=false;is=true} @ENO{r=2}
 
 necrometallic_blade_vulnerable:
   TargetConditions:
@@ -117,6 +121,8 @@ necrometallic_blade_effect_main:
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=8;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=14;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=6;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=-14;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=8;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=0;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
+  - delay 1
+  - auraremove{aura=necrometallicbladecharge} @self
 
 necrometallic_blade_effect_main_tick:
   Skills:
@@ -132,6 +138,10 @@ necrometallic_blade_effect_main_tick:
 necrometallic_blade_effect_main_hit:
   Skills:
   - damage{a=5;ia=true;is=true} @ENO{r=2}
+
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
 
 necrometallic_blade_charge: # Shim for geary
   Skills:
@@ -162,6 +172,7 @@ necrometallic_blade_effect_sub:
   - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @self
   - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @self
   - potion{type=POISON;duration=100;level=1;hasParticles=false} @self
+  - auraremove{aura=necrometallicbladecharge} @self
   - delay 5
   - skill{s=necrometallic_blade_effect_1} @EIR{r=6}
   - delay 1

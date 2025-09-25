@@ -1,3 +1,7 @@
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
 shiver_mist_hit: # Shim for geary
   Skills:
   - skill{s=shiver_mist_hit_}
@@ -64,6 +68,10 @@ shiver_mist_area_totem:
   - damage{a=3;pkb=false} @ENO{r=2}
   - potion{type=SLOW;duration=30;level=4;hasParticles=false} @ENO{r=3}
   - extinguish{delay=0} @ENO{r=3}
+
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
 
 shiver_mist: # Shim for geary
   Skills:
@@ -210,6 +218,10 @@ shiver_mist_freeze_effect_4:
   - freeze{ticks=40} @targetedtarget
   - damage{a=1.5;ia=true;pkb=true;is=true} @targetedtarget
   - sound{s=block.glass.break;sc=ui;volume=0.1;pitch=1.5} @targetedtarget
+
+####################################################################
+##################### Passive Ability ##############################
+####################################################################
 
 shiver_mist_charger: # Shim for geary
   Skills:

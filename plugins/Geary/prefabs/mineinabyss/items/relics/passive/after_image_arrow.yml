@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#6E260E>After Image Arrow
+  itemName: <#6E260E>Whisper Image
   type: minecraft:paper
   itemModel: mineinabyss:after_image_arrow
   lore:
   - ':layer_2: Grade II Relic'
   - <#903213>The hard-light copies of projectiles produced 
   - <#903213>by this Relic still hurt as though they were real. 
-  - <#B94018><i>Passive slot ability. On bow and projectile based relic
-  - <#B94018><i>use shoots an additional projectile which deals damage.
+  - <#B94018><i>Passive slot ability. On bow and crossbow use
+  - <#B94018><i>shoots an additional projectile which deals damage.
 passive:
 - match:
   - inInventory

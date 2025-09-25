@@ -1,3 +1,7 @@
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
 reverberating_edge_hit: # Shim for geary
   Skills:
   - skill{s=reverberating_edge_hit_}
@@ -64,6 +68,10 @@ reverberating_edge_vibrate_4_damage:
   Conditions:
   Skills:
   - damage{a=3;pkb=false;hnp=true;hp=true;pi=true}
+
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
 
 reverberating_edge_ability:
   Cooldown: 

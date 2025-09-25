@@ -21,8 +21,8 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Charge
-  - mythicSkills:
-    - arc_laser
+  #- mythicSkills:
+  #  - arc_laser
 passive:
 - match:
   - inInventory

@@ -14,7 +14,6 @@ lightning_ball_projectile:
   Skills:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
   - projectile{oT=lightning_tick;mr=170;v=1.4;i=1;vN=1;hN=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=200;syo=1.2;g=0;sE=false;hp=false;HitSelf=true} @forward{f=1000}
-  - skill{s=after_image_ball_lightning} #skill from after_image_arrow
 
 lightning_tick:
   Cooldown: 1

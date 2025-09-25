@@ -10,8 +10,11 @@ golden_skeleton_death:
   Cooldown: 1
   Conditions:
   Skills:
-    - effect:particlebox{particle=ominous_spawning;amount=30;hS=3;vS=1.5;speed=0;y=1;size=2;r=3} @self
-    - sound{s=minecraft:ambient.cave;p=1;v=0.8} @PIR{r=5}
+    - fakelightning{l=true} @self
+    - delay 10
+    - sound{s=entity.lightning_bolt.thunder;p=1;v=0.6} @PIR{r=5}
+    - sound{s=entity.lightning_bolt.thunder;p=0.2;v=0.4} @PIR{r=5}
+    - effect:particlebox{particle=ominous_spawning;amount=20;hS=3;vS=1.5;speed=0;y=1;size=2;r=3} @self
 
 curse_kuongatari_1:
   Skills:

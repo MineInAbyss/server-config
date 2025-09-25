@@ -17,7 +17,7 @@ after_image_bow:
   Skills:
   - delay 20
   #- shoot{type=ARROW;oT=after_image_tick;velocity=0.5;damage=10;pl=2} @targetlocation
-  - projectile{bulletType=ARROW;arrowType=NORMAL;oT=after_image_tick;oH=after_image_hit;sB=true;sE=true;hp=true;hnp=true} @forward{f=1000}
+  - projectile{bulletType=ARROW;arrowType=NORMAL;oT=after_image_tick;oH=after_image_hit;sB=true;sE=true;hp=true;hnp=true;g=0.3;v=20} @forward{f=1000}
 
 after_image_tick:
   Cooldown:
@@ -39,13 +39,13 @@ after_image_breeze_piercer: #skill to add to all projectile based relics made: -
     - hasaurastacks{n=afterimagearrow;s=1} true
   Skills:
   - delay 20
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
   - delay 2
-  - projectile{onTick=after_image_tick;onHit=after_image_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
+  - projectile{onTick=after_image_tick;onHit=after_image_buddstone_hit;v=35;d=200;mr=40;sB=true;sE=true;hp=true;hnp=true;pi=true} @forward{f=1000}
 
 after_image_buddstone_tap: #skill to add to all projectile based relics made: - skill{s=after_image_}
   Cooldown:

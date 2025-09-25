@@ -1,3 +1,7 @@
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
+
 shiftingpikecharge:
   Cooldown: 0
   Conditions:
@@ -11,6 +15,10 @@ shiftingpikecharge:
     - effect:particles{p=reddust;c=#FFD700;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
     - sound{s=item.spyglass.use;sc=ui;p=0.8;v=1} @self
     - sound{s=item.spyglass.use;sc=ui;p=0.7;v=1} @self
+
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
 
 shifting_pike:
   Cooldown: 1

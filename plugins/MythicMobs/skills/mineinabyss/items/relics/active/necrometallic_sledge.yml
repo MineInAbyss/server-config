@@ -1,3 +1,7 @@
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
 necrometallic_sledge_hit: # Shim for geary
   Skills:
   - shieldbreak{duration=100} @target
@@ -75,6 +79,10 @@ necrometallic_tick_4:
   #- damage{a=3;pkb=true;ia=true;preventimmunity=true;ignoreinvulnerability=true} @targetedtarget #interacts with main swing (cancels crit)
   - potion{t=POISON;d=30;l=1} @targetedtarget
   - potion{t=WITHER;d=30;l=0} @targetedtarget
+
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
 
 necrometallic_sledge_ability:
   Conditions:

@@ -17,10 +17,10 @@ observe:
       - hasaurastacks{n=subtlepullcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: subtle_pull_sub
-      length: 30s
+      length: 25s
       display: <#302D2D>Subtle Pull
   - mythicSkills:
     - subtle_pull_hit
@@ -32,10 +32,10 @@ observe:
       - hasaurastacks{n=subtlepullcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: subtle_pull_main
-      length: 100s
+      length: 80s
       display: <#302D2D>Subtle Pull
   - mythicSkills:
     - subtle_pull

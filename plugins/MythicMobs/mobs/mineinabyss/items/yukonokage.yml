@@ -2,3 +2,32 @@ yukonokage_soul_wisp:
   Type: ALLAY
   Collidable: false
   Interactable: false
+
+yukonokage_soul_wisp_1:
+  MobType: vex
+  Display: '&bsoulwisp'
+  Collidable: false
+  Interactable: false
+  Health: 9999
+  Damage: 0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  Skills:
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    NoAI: true
+  Model:
+    Id: yuko_soul_wisp_1
+    ViewRadius: 48

@@ -1,3 +1,7 @@
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
 subtle_pull_hit: # Shim for geary
   Skills:
   - skill{s=subtle_pull_hit_}
@@ -6,8 +10,8 @@ subtle_pull_hit_:
   Conditions:
   Skills:
   - effect:particleorbital{r=2;points=50;t=40;i=10;vy=0;rX=90;rZ=0;rY=0;particle=reddust;color=#ae0000} @self
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.6} @self #thinking about sound
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.8} @self
+  - sound{s=block.bell.resonate;sc=ui;volume=0.7;pitch=1.6} @self #thinking about sound
+  - sound{s=block.bell.resonate;sc=ui;volume=0.7;pitch=1.8} @self
   - delay 15
   - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @origin
   - delay 10
@@ -27,6 +31,10 @@ subtle_pull_area_control:
   # - summon{type=subtle_pull_center_small;amount=1;r=0;yRadius=0} @forward{f=8;rot=90}
   # - summon{type=subtle_pull_center_small;amount=1;r=0;yRadius=0} @forward{f=8;rot=90}
 
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
+
 subtle_pull: # Shim for geary
   Skills:
   - skill{s=subtle_pull_}
@@ -34,12 +42,9 @@ subtle_pull_:
   Cooldown:
   Conditions:
   Skills:
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.6} @self #thinking about sound
-  - sound{s=block.bell.resonate;sc=ui;volume=0.55;pitch=1.8} @self
+  - sound{s=block.bell.resonate;sc=ui;volume=0.7;pitch=1.6} @self #thinking about sound
+  - sound{s=block.bell.resonate;sc=ui;volume=0.7;pitch=1.8} @self
   - delay 15
-  # - sound{s=block.portal.travel;sc=ui;volume=0.4;pitch=1} @origin
-  # - sound{s=block.portal.travel;sc=ui;volume=0.5;pitch=0.2} @origin
-  # - sound{s=block.portal.travel;sc=ui;volume=0.5;pitch=0.3} @origin
   - sound{s=block.conduit.ambient;sc=ui;volume=2.5;pitch=0.4} @self
   - sound{s=block.conduit.ambient;sc=ui;volume=2.5;pitch=0.5} @self
   - sound{s=block.conduit.ambient;sc=ui;volume=2;pitch=1.6} @self
@@ -55,18 +60,19 @@ subtle_pull_projectile:
   - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
   # - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_collision;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
   - projectile{bulletType=TEXT;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_collision;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
-  - skill{s=after_image_subtle_pull} #skill from after_image_arrow
   - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
 
 subtle_pull_tick:
   Skills:
-  - effect:particles{p=reddust;y=0;color=#ae0000;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
-  - effect:particles{p=reddust;color=#F0EAD6;y=0.2;amount=8;speed=1;hS=0.7;vS=0.4;size=2} @Origin
+  - effect:particles{p=reddust;y=0;color=#ae0000;amount=3;speed=0.02;hS=0.2;vS=0.2;size=1.2} @Origin
+  - effect:particles{p=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#F0EAD6;y=0.2;amount=3;speed=0.1;hS=0.5;vS=0.5;size=1.5} @Origin
+  - effect:particles{p=block_dust;material=WHITE_TERRACOTTA;color=#F0EAD6;y=0.2;amount=3;speed=0.1;hS=0.5;vS=0.5;size=1.5} @Origin
 
 subtle_pull_collision:
   Skills:
-  - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
-  - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
+  - effect:particles{p=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#000000;y=0.5;amount=20;speed=0.1;hS=0.6;vS=0.3} @Origin
+  - effect:particles{p=block_dust;material=WHITE_TERRACOTTA;color=#000000;y=0.5;amount=10;speed=0.1;hS=0.7;vS=0.3} @Origin
+  - effect:particles{p=smoke;y=0.5;amount=30;speed=0.1;hS=0.8;vS=0.2} @Origin
   - damage{a=5;ignorearmor=false} @EntitiesNearOrigin{r=1.7}
   - damage{a=3;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=1.7}
   - damage{a=0;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players}
@@ -77,49 +83,26 @@ subtle_pull_collision:
 
 subtle_pull_end:
   Skills:
-  # - sound{s=entity.wither.ambient;sc=ui;volume=1;pitch=0.2} @origin
-  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.2} @origin
-  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.1} @origin
-  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.6;pitch=0.5} @origin
-  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.6;pitch=1.9} @origin
-  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.6;pitch=0.3} @origin
-  # - sound{s=entity.dragon_fireball.explode;sc=ui;volume=0.5;pitch=0.6} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.9;pitch=0.2} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.8;pitch=0.1} @origin
+  - effect:sound{s=block.beacon.deactivate;sc=ui;volume=0.7;pitch=0.5} @origin
+  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.8;pitch=1.9} @origin
+  - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.9;pitch=0.3} @origin
   - sound{s=entity.player.attack.crit;sc=ui;volume=0.5;pitch=0.6;cooldown=1} @origin
   - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @origin
-  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=30;speed=0.05;hS=1.8;vS=0.3} @origin
   - effect:particles{p=explosion_large;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @origin
-  - effect:particleorbital{r=3;points=50;t=60;i=10;vy=0;rX=90;rZ=0;rY=0;particle=reddust;color=#ae0000;size=1.9} @origin
-  - effect:particleorbital{r=3;points=50;t=60;i=10;vy=0;rX=90;rZ=0;rY=45;particle=reddust;color=#ae0000;size=1.9} @origin
-  - effect:particleorbital{r=3;points=50;t=60;i=10;vy=0;rX=90;rZ=0;rY=90;particle=reddust;color=#ae0000;size=1.9} @origin
-  - effect:particleorbital{r=3;points=50;t=60;i=10;vy=0;rX=90;rZ=0;rY=115;particle=reddust;color=#ae0000;size=1.9} @origin
-  - effect:particlesphere{p=reddust;color=#F0EAD6;amount=100;radius=2.6;delay=2;size=3} @origin
-  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=3.2;delay=4;size=3} @origin
-  - effect:particlesphere{p=reddust;color=#F5F5DC;amount=100;radius=3.8;delay=6;size=2.7} @origin
+  - effect:particlesphere{p=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#F0EAD6;amount=80;radius=2.6;delay=2;size=2;speed=0.1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=80;radius=3.2;delay=4;size=2.5} @origin
+  - effect:particlesphere{p=block_dust;material=WHITE_TERRACOTTA;color=#F5F5DC;amount=80;radius=3.8;delay=6;size=2;speed=0.1} @origin
   - damage{a=1;ignorearmor=false} @EntitiesNearOrigin{r=2.2}
   - damage{a=1;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
   - totem{charges=1;onStart=subtle_pull_totem}
   - summon{type=subtle_pull_center;amount=1;radius=0} @origin
-  - delay 40
-  - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=100;radius=3.1;size=4;repeat=2;repeatinterval=2} @origin
-  - delay 30
+  - delay 70
   - skill{s=subtle_pull_damage} @origin
   - delay 4
-  - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2} @origin
-  - effect:particlesphere{p=smoke_large;amount=200;radius=3;size=7;repeat=4;repeatinterval=2;speed=0.6} @origin
-  - effect:particlesphere{p=reddust;color=#ae0000;amount=200;radius=2;size=3;speed=1} @origin
-  - effect:particlesphere{p=reddust;color=#ff3232;amount=200;radius=3;delay=1;size=3;speed=1} @origin
-  - effect:particlesphere{p=reddust;color=#ff6666;amount=200;radius=4;delay=2;size=3;speed=1} @origin
-  # - effect:explosion @self
-  - effect:particlesphere{p=explosion;color=#ff6666;amount=20;radius=4;delay=2;size=3;speed=1} @origin
-  - effect:particlering{p=cloud;color=#000000;amount=4;points=40;radius=2;size=3;speed=3;yOffset=1.2} @origin
-  - effect:particlering{p=cloud;color=#000000;amount=5;points=46;radius=3;delay=1;size=3;speed=3;yOffset=0.6} @origin
-  - effect:particlering{p=cloud;color=#000000;amount=3;points=52;radius=4;delay=2;size=3;speed=3;yOffset=0.6} @origin
-  - effect:particlering{p=cloud;color=#000000;amount=3;points=59;radius=5.2;delay=3;size=2.7;speed=3;yOffset=0.6} @origin
-  - effect:particlering{p=cloud;color=#000000;amount=3;points=68;radius=6.4;delay=4;size=2.5;speed=3;yOffset=0.6} @origin
-  # - sound{s=entity.generic.explode;sc=ui;volume=0.5;pitch=0.6} @origin
   - sound{s=block.conduit.deactivate;sc=ui;volume=2;pitch=0.4} @self
-  # - sound{s=block.end_portal.spawn;sc=ui;volume=0.2;pitch=0.6} @origin
-  # - sound{s=block.end_portal.spawn;sc=ui;volume=0.2;pitch=1.6} @origin
 
 subtle_pull_totem:
   Cooldown: 0
@@ -132,11 +115,11 @@ subtle_pull_damage:
   Cooldown: 0
   Skills:
    - shieldbreak{duration=150} @EntitiesNearOrigin{r=7}
-   - damage{a=70;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
-   - damage{a=30;pi=true} @EntitiesNearOrigin{r=7;ignore=players}
-   - damage{a=50;ignorearmor=false} @PlayersNearOrigin{r=2;conditions=[
+   - damage{a=60;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
+   - damage{a=25;pi=true} @EntitiesNearOrigin{r=7;ignore=players}
+   - damage{a=42;ignorearmor=false} @PlayersNearOrigin{r=2;conditions=[
                               - playerwithin{d=2} true ]}
-   - damage{a=25;pi=true} @PlayersNearOrigin{r=7}
+   - damage{a=22;pi=true} @PlayersNearOrigin{r=7}
 
 subtle_pull_center_tick:
   Cooldown: 0
@@ -155,6 +138,10 @@ subtle_pull_center_small_tick:
   - pull{velocity=2;to=true} @EntitiesNearOrigin{r=4}
   - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=2}
   - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5}
+
+####################################################################
+##################### Passive Ability ##############################
+####################################################################
 
 subtle_pull_charge: # Shim for geary
   Skills:

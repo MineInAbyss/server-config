@@ -43,8 +43,6 @@ observe:
         - type: minecraft:darkness
           duration: 60.0t
           amplifier: 1
-  - mythicSkills:
-    - after_image_soul-aiming_light_
 resourcepack:
   textures:
     layers:

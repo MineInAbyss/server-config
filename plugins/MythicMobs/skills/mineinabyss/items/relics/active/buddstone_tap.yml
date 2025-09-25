@@ -67,7 +67,6 @@ buddstone_tap_projectile:
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin
   - projectile{onTick=tpmageTick;onHit=pgcrystalHit;onHitBlock=tpmageHit;i=1;v=14;mr=20;hnp=true;pi=true;sB=true;sE=true} @forward{f=1000}
-  - skill{s=after_image_buddstone_tap} #skill from after_image_arrow
   - delay 2
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.2} @origin
   - sound{s=block.calcite.step;sc=ui;volume=1;pitch=1.6} @origin

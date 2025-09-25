@@ -13,26 +13,26 @@ relicDrop:
     - message{m='<#D2D489>You hear whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has obtained a</#D2D489><#AA00AA> Grade III</#AA00AA><#D2D489> relic.'} @World ?stringequals{val1=<skill.grade>;val2="3"}
     - message{m='<#D2D489>You hear whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has obtained a</#D2D489><#AA00AA> Grade IV</#AA00AA><#D2D489> relic.'} @World ?stringequals{val1=<skill.grade>;val2="4"}
 
-relicDropLaments:
-  Conditions:
+relicDropLamentsThread:
+  TriggerConditions:
     #- chance{c=0.25} true
   Skills:
   - skill{s=relicDrop;item=LamentsThreadDrop;grade=3}
 
-relicDropSin:
-  Conditions:
+relicDropSinSpiral:
+  TriggerConditions:
     #- chance{c=0.1} true
   Skills:
-  - skill{s=relicDrop;item=SinSpiral;grade=2}
+  - skill{s=relicDrop;item=SinSpiralDrop;grade=2}
 
-relicDropMockwater:
-  Conditions:
+relicDropMockwaterFluid:
+  TriggerConditions:
     #- chance{c=0.4} true
   Skills:
-  - skill{s=relicDrop;item=MockwaterFluid;grade=4}
+  - skill{s=relicDrop;item=MockwaterFluidDrop;grade=4}
 
-relicDropGambit:
-  Conditions:
+relicDropGambitIncense:
+  TriggerConditions:
     #- chance{c=0.25} true
   Skills:
-  - skill{s=relicDrop;item=GambitIncense;grade=3}
+  - skill{s=relicDrop;item=GambitIncenseDrop;grade=3}
