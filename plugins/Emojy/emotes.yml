@@ -240,6 +240,12 @@ emotes:
   - id: royw
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/royw.png
+  - id: autumnw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/autumnw.png
+  - id: miuw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/miuw.png
   - id: adventure
     template: role_template
     texture: mineinabyss:ui/prefixes/server/adventure.png
