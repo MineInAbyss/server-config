@@ -147,7 +147,8 @@ viricircle:
 virishock1:
   Skills:
     - throw{velocity=20;velocityY=5} @PlayersInRadius{r=7}
-    - damage{amount=30;ignoreArmor=false} @PlayersInRadius{r=7}
+    - damage{amount=30;ignoreArmor=false;pi=true} @PlayersInRadius{r=7}
+    - damage{amount=5;ignoreArmor=true;ie=true;pi=true} @PlayersInRadius{r=7}
     - delay 1
     - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @Self
     - effect:sound{s=entity.ghast.shoot;volume=0.7;pitch=1.2} @Self

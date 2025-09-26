@@ -3,7 +3,7 @@ set.item:
   lore:
   - <yellow>Useful in order to steer an <#2597D9>Ashimite<yellow>.
   - <yellow>That is if you can manage to sneak up on one
-  type: CARROT_ON_A_STICK
+  type: minecraft:carrot_on_a_stick
   itemModel: mineinabyss:demonfish_on_a_stick
 disableItemInteractions: {}
 set.recipes:
@@ -14,7 +14,7 @@ set.recipes:
   - type: shapeless
     items:
     - prefab: mineinabyss:demonfish_raw
-    - type: FISHING_ROD
+    - type: minecraft:fishing_rod
 resourcepack:
   textures:
     layers:

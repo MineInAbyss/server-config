@@ -2,7 +2,7 @@ set.item:
   itemName: <#262626>Ozen's Hat
   lore:
   - '<gray>:ozensmug:'
-  type: PAPER
+  type: minecraft:paper
   itemModel: mineinabyss:ozen_hat
   dyedColor: '#FFFFFF'
   equippable:

@@ -1,0 +1,49 @@
+####################################################################
+##################### Passive Ability ##############################
+####################################################################
+
+tranquil_pierce_charge: # Shim for geary
+  Skills:
+  - skill{s=tranquil_pierce_charge_} @self
+tranquil_pierce_charge_:
+  Cooldown: 
+  Conditions:
+  - hasaurastacks{n=tridentstop} false
+  - holding{m=TRIDENT} true
+  Skills:
+  - aura{auraName=trident;onStart=tridentstack;duration=9999;c=1;maxStacks=3;cotd=false} @self
+  - skill{s=tridentready} @self
+  - effect:particles{particle=reddust;color=#362624;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
+
+tridentstack:
+  Conditions:
+  Skills:
+ # - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+
+tridentready:
+  Cooldown: 6
+  Conditions:
+  - offgcd true
+  - hasaurastacks{n=trident;s=3} true
+  Skills:
+  - gcd{ticks=100}
+  - sound{s=item.trident.riptide_3;sc=ui;p=1;v=1} @self
+
+####################################################################
+##################### Left Click Ability ###########################
+####################################################################
+
+tranquil_pierce_throw:
+  Conditions:
+  - hasaurastacks{n=trident;s=3} true
+  Skills:
+  - auraremove{aura=trident;stacks=3} @self
+  - sound{s=item.trident.throw;sc=ui;p=1;v=0.6} @self
+  - projectile{bulletType=MOB;mob=tranquil_pierce_projectile;onHit=trident_impact;v=14;i=1;hR=1;vR=1;mr=35;hnp=true;hp=true;hO=0;sE=true;sB=true;d=200;hs=false;hfs=1;syo=2} @forward{f=1000}
+  - aura{auraName=tridentstop;duration=300;c=1;cotd=false} @self
+
+trident_impact:
+  Skills:
+    - sound{s=item.trident.hit;sc=ui;p=1;v=0.6} @self
+    - damage{a=40}
+    - shieldbreak{duration=150}

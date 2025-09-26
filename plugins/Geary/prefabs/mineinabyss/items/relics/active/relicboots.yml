@@ -1,0 +1,31 @@
+set.item:
+  itemName: <#808000>Treble Winds
+  type: minecraft:paper
+  itemModel: mineinabyss:relic_boots
+  lore:
+  - ':layer_3: Grade III Relic'
+  - <#A3A300>Researchers speculate that this Relic’s purpose was never to send
+  - <#A3A300>oneself flying, but that never stopped anyone from using it that way.
+  - <#D1D100><i>Active ability. Propels the user upward on
+  - <#D1D100><i>right click and forward on left click.
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: treble_winds
+      length: 20s
+      display: <#808000>Treble Winds      
+  - mythicSkills:
+    - treble_winds_upward
+  itemLeftClick:
+  - become: parent
+  - cooldown:
+      id: treble_winds
+      length: 30s
+      display: <#808000>Treble Winds      
+  - mythicSkills:
+    - treble_winds_forward
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/treble_winds

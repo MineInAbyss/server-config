@@ -1,0 +1,54 @@
+
+laser_charge: 
+  Cooldown: 
+  Conditions:
+  Skills:
+    - command{c="execute at <caster.uuid> run xp add <caster.name> -20";op=true}
+    - aura{auraName=laser;onStart=laserstack;duration=9999;c=3;maxStacks=3;cotd=false} @self
+    - skill{s=laserready} @self
+    - effect:particles{particle=splash;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
+laserstack:
+  Conditions:
+  Skills:
+
+laserready:
+  Cooldown: 10
+  Conditions:
+    - offgcd true
+    - hasaurastacks{n=laser;s=3} true
+  Skills:
+    - gcd{ticks=190}
+    - sound{s=block.respawn_anchor.charge;sc=players;p=1;v=0.8} @self
+
+
+arc_laser:
+  Skills:
+    - skill{s=arc_laser_targeter} @target
+ 
+arc_laser_targeter:
+  Conditions:
+    - targets{a=0} castinstead arc_laser_projectile_no_target
+  Skills:
+    - skill{s=arc_laser_projectile;sync=true} @target
+ 
+arc_laser_projectile:
+  Skills:
+    - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self
+    - chain{bounces=3;bounceRadius=50;bounceDelay=1;hitSelf=false;hitPlayers=false;hitNonPlayers=true;hitTarget=true;
+            onBounce=[ - effect:particleline{particle=redstone;#2ce8f5;amount=1;fromOrigin=true;ys=1.5;yt=1.5;hS=0;vS=0;c=#ff0019}
+                       - damage{amount=8.0;pi=true,pk=true} ]} @target
+arc_laser_projectile_no_target:
+  Skills:
+    - effect:particleline{particle=redstone;c=#2ce8f5;amount=1;fromOrigin=true;hS=0;vS=0;c=#ff0019} @targetlocation
+    - effect:sound{s=entity.iron_golem.death;v=2;p=2} @self
+
+
+ChainMissile:
+  Skills:
+    - ChainMissile{bounces=10;r=10;in=1.25;oT=CM_oT;oH=CM_oH;i=1;md=200;mr=30;v=5;hnp=true;hp=true;hR=1;vR=1;sB=False;sE=false;tyo=1;hs=true;hfs=1}
+CM_oT:
+  Skills:
+    - effect:particles{particle=flame;a=1;hs=0;vs=0;s=0;y=0} @origin
+CM_oH:
+  Skills:
+    - damage{a=5;pkb=true}

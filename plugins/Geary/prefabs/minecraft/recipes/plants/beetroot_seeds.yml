@@ -1,8 +1,8 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BEETROOT_SEEDS
+    type: minecraft:beetroot_seeds
   recipes:
     - type: shapeless
       items:
-        - type: BEETROOT
+        - type: minecraft:beetroot

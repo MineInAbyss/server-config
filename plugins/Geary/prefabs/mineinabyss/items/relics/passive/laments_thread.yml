@@ -1,0 +1,26 @@
+set.item:
+  itemName: <gold>Laments Thread
+  type: minecraft:paper
+  itemModel: mineinabyss:laments_thread
+  lore:
+  - 'Grade III Relic'
+  - <#cdd13d>It’s unclear why Delvers carry Laments Thread with them, given 
+  - <#cdd13d>its effects. Nonetheless, it finds its use with certain groups.
+  - <#D1D100><i>Passive slot ability. Causes weakness and
+  - <#D1D100><i>mining fatigue to the user and the surroundings.
+passive:
+- match:
+  - inInventory
+  every: 2s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:laments_thread
+  - mythicSkills:
+    - laments_thread
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/laments_thread

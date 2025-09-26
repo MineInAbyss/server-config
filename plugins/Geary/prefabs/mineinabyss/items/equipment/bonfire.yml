@@ -1,29 +1,29 @@
 set.item:
   itemName: <#FF9D26>Bonfire
-  type: PAPER
+  type: minecraft:paper
   itemModel: mineinabyss:bonfire
   maxStackSize: 16
 set.recipes:
   discoverRecipes: true
   recipes:
-  - type: shaped
-    items:
-      S:
-        type: STICK
-      C:
-        type: CAMPFIRE
-      F:
-        type: FLINT_AND_STEEL
-    configuration: |-
-      |SSS|
-      |SFS|
-      |SCS|
+    - type: shaped
+      items:
+        S:
+          type: minecraft:stick
+        C:
+          type: minecraft:campfire
+        F:
+          type: minecraft:flint_and_steel
+      configuration: |-
+        |SSS|
+        |SFS|
+        |SCS|
 blocky:furniture:
   interactionHitbox:
-  - width: 1.0
-    height: 1.6
-    offset:
-      y: -0.5
+    - width: 1.0
+      height: 1.6
+      offset:
+        y: -0.5
 blocky:preventItemstackUpdate:
   forceWhenDifferentMaterial: true
 blocky:placableOn:
@@ -32,7 +32,7 @@ blocky:placableOn:
   wall: false
 blocky:drops:
   drops:
-  - item: mineinabyss:bonfire
+    - item: mineinabyss:bonfire
 copyToInstances:
   persisting:
-    bonfire:bonfire: {}
+    bonfire:bonfire: { }

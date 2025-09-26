@@ -3,18 +3,18 @@ set.recipes:
   removeRecipes:
     - "minecraft:spyglass"
   result:
-    type: SPYGLASS
+    type: minecraft:spyglass
   recipes:
     - type: shaped
       items:
         E:
           prefab: mineinabyss:corpse_weeper_eye
         I:
-          type: iron_ingot
+          type: minecraft:iron_ingot
         B:
           tag: buttons
         C:
-          type: cyan_terracotta
+          type: minecraft:cyan_terracotta
       configuration: |-
         | BE|
         | IB|

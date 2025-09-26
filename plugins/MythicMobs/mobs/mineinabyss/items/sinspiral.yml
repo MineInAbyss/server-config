@@ -1,0 +1,33 @@
+sin_spiral:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+    Interactable: false
+    NoGravity: true
+  Skills:
+  - effect:particlering{particle=reddust;color=#000000;amount=1;r=2;pts=96;forwardOffset=0;sideOffset=0} @self ~onTimer:5
+  - effect:particlering{particle=reddust;color=#444444;amount=1;r=1.5;pts=48;forwardOffset=0;sideOffset=0} @self ~onTimer:5
+  - effect:particlering{particle=reddust;color=#888888;amount=1;r=1;pts=24;forwardOffset=0;sideOffset=0} @self ~onTimer:5
+  - effect:particlering{particle=reddust;color=#cccccc;amount=1;r=0.5;pts=12;forwardOffset=0;sideOffset=0} @self ~onTimer:5
+  - effect:particleline{particle=reddust;color=#ff0000;amount=1;syo=0.3;tyo=1} @EIR{r=3} ~onTimer:2
+  - potion{type=POISON;duration=15;level=5;hasParticles=false} @EIR{r=2} ~onTimer:1
+  - remove{delay=50} @self ~onSpawn
+
+sin_spiral_center:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+    Interactable: false
+    NoGravity: true
+  Skills:
+  - particlelinehelix{p=reddust;color=#5c0f22;amount=1;db=0.03;hl=1.5;hr=2;md=30;rot=90;syo=0;tyo=2.5} @self ~onTimer:5
+  - particlelinehelix{p=reddust;color=#de6552;amount=1;db=0.03;hl=1.5;hr=2;md=30;rot=90;syo=1;tyo=2.5;rotation=180} @self ~onTimer:5
+  - effect:particleline{particle=reddust;color=#ff0000;amount=1;syo=0.3;tyo=1} @EIR{r=3} ~onTimer:5
+  - damage{a=0.5;ia=true;ie=true;is=true;pk=true} @EIR{r=2} ~onTimer:10 # tiny amount of damage in the center
+  - remove{delay=50} @self ~onSpawn

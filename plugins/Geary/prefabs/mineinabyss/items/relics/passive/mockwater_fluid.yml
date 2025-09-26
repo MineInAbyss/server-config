@@ -1,0 +1,30 @@
+set.item:
+  itemName: <gold>Mockwater Fluid
+  type: minecraft:paper
+  itemModel: mineinabyss:mockwater_fluid
+  lore:
+  - 'Grade IV Relic'
+  - <#cdd13d>This viscous, living fluid is remarkably tedious to clean off 
+  - <#cdd13d>surfaces once applied, unless the organism wills it so.
+  - <#D2D489><i>Passive slot ability. Grants increased stamina and climb speed.
+passive:
+- match:
+  - inInventory
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:mockwater_fluid
+  - climb:stamina_modifiers:
+      modifiers:
+       - type: STAMINA
+         modifier: 1.1
+         operation: MULTIPLY
+       - type: CLIMB_SPEED
+         modifier: 1.1
+         operation: MULTIPLY
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/mockwater_fluid

@@ -1,0 +1,168 @@
+dungeonvinebinder:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Display: "<green>Vinebinder"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - randomlookaround
+    - meleeattack
+    - lookatplayers
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 20 # change this
+  Damage: 5 # keep this 0
+  Options:
+    PreventSunburn: true
+    Collidable: false
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    Silent: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+  Model:
+    Id: vinebinder
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 1
+
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
+
+
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+
+
+    - skill{s=vbATTACK} @Self ~onAttack
+  #- skill{s=vinebinderwave} @target ~onTimer:20
+
+dungeonvineblaster:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Modules:
+    ThreatTable: true
+  Display: "<green>Vineblaster"
+  AIGoalSelectors:
+    - clear
+    #- randomlookaround
+    - lookatplayers
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 16 # change this
+  Damage: 0 # keep this 0
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+    Collidable: false
+  Model:
+    Id: vineblaster
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
+
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+
+    - skill:vineblasterattack @Self ~onTimer:40
+    # - skill{s=vineblastermortar} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack
+
+allyvineblaster:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Modules:
+    ThreatTable: true
+  Display: "<green>Vineblaster"
+  Faction: ally
+  AIGoalSelectors:
+    #- randomlookaround
+    - LookAtTarget
+    - clear
+  AITargetSelectors:
+    - OwnerTarget
+    - monsters
+    - OwnerAttacker
+  Health: 20 # change this
+  Damage: 0 # keep this 0
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+    Collidable: false
+  Model:
+    Id: vineblaster
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Drops:
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+    - skill:allyvineblasterattack @Self ~onTimer:10
+    # - skill{s=vineblastermortar} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack
+    - remove{delay=280} @self ~onSpawn
+
+dungeonvinepoofer:
+  Type: ZOMBIE
+  SpawnCategory: hostile
+  Display: "<green>Vinepoofer"
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - clear
+    - randomlookaround
+    - lookatplayers
+  AITargetSelectors:
+    - clear
+    - players
+  Health: 20 # change this
+  Damage: 0 # keep this 0
+  Options:
+    PreventSunburn: true
+    Silent: true
+    PreventOtherDrops: true
+    FollowRange: 15
+    MovementSpeed: 0   # replaced with skills
+    KnockbackResistance: 1.0
+    Collidable: false
+  Model:
+    Id: vinepoofer
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:plant_matter 1-2 0.6
+
+  Skills:
+    ####### Misc
+    - skill{s=displayHealth} ~onDamaged
+
+    - skill:vinepooferattack @Self ~onTimer:30
+    # - skill{s=vinebinderwave} @target ~onTimer:20
+    - cancelevent{sync=true} @Self ~onAttack
+
+

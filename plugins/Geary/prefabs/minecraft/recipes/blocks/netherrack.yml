@@ -1,10 +1,10 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: NETHERRACK
+    type: minecraft:netherrack
   recipes:
     - type: blasting
       input:
-        type: DIRT
+        type: minecraft:dirt
       experience: 1
       cookingTime: 100

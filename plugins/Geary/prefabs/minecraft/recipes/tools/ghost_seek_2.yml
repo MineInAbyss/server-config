@@ -13,7 +13,7 @@ set.recipes:
         P:
           prefab: mineinabyss:swarmshocker_charged_powder  
         D:
-          type: DIAMOND
+          type: minecraft:diamond
         L: 
           prefab: mineinabyss:tier_1_lens
           

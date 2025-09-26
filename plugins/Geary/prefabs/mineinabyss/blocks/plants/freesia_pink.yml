@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Freesia Pink
-    customModelData: 3014
+  customModelData: { floats: [ 3014 ] }
 set.block:
   blockType: WIRE
   blockId: 14

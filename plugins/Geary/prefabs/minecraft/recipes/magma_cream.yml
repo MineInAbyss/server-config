@@ -3,7 +3,7 @@ set.recipes:
   removeRecipes:
     - "minecraft:magma_cream"
   result:
-    type: MAGMA_CREAM
+    type: minecraft:magma_cream
   group: "looty:magma_cream"
   recipes:
     - type: shapeless

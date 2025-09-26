@@ -1,0 +1,50 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#0047AB>Flamethrower
+  itemModel: mineinabyss:flamethrower
+  lore:
+  - 'Grade II Relic'
+  - <#3d59ab>A relic born from decades of Orthian research.
+  - <#3d59ab>Flamethrowers are vastly considered inhumane in use.
+  - <#6666ff><i>Active ability. Projects flames on right click.
+  - <#6666ff><i>Requires Flamethrower Fuel within the inventory to work.
+resourcepack:
+  model: mineinabyss:item/relics/flamethrower
+set.recipes:
+ result:
+   prefab: mineinabyss:flamethrower
+ discoverRecipes: true
+ recipes:
+ - type: shaped
+   items:
+     H:
+       prefab: mineinabyss:himushi_core
+     C:
+       prefab: mineinabyss:charcoal_sand_ingot
+     F:
+       prefab: mineinabyss:flamethrower_fuel
+     B:
+       prefab: mineinabyss:flamethrower_barrel 
+   configuration: |-
+     |CCF|
+     |BHC|
+     |CCC|
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      hasConsumable:
+        type: mineinabyss:flamethrower_fuel
+    onFail:
+    - sendActionBar:
+        text: <red>Out of fuel
+  - cooldown:
+      id: flamethrower
+      length: 3s
+      display: <dark_aqua>Flamethrower
+  - mythicSkills:
+    - Flame-Torrent
+  - consumeItem:
+      type: mineinabyss:flamethrower_fuel
+    when:
+    - chance: 0.35

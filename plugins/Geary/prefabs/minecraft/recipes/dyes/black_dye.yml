@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BLACK_DYE
+    type: minecraft:black_dye
   group: "black_dye"
   recipes:
     - type: shapeless
@@ -12,7 +12,7 @@ set.recipes:
         - prefab: mineinabyss:inbyo_fur
     - type: shapeless
       items:
-        - type: COAL
+        - type: minecraft:coal
     - type: shapeless
       items:
-        - type: CHARCOAL
+        - type: minecraft:charcoal

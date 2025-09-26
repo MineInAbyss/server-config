@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Twinspur Orange
-    customModelData: 3018
+  customModelData: { floats: [ 3018 ] }
 set.block:
   blockType: WIRE
   blockId: 17

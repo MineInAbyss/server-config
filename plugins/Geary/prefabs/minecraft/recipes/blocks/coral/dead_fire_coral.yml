@@ -1,14 +1,14 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: DEAD_FIRE_CORAL
+    type: minecraft:dead_fire_coral
     amount: 8
   group: "looty:dead_fire_coral"
   recipes:
     - type: shaped
       items:
         S: { type: minecraft:fire_coral }
-        B: { type: COBWEB }
+        B: { type: minecraft:cobweb }
       configuration: |-
         |SSS|
         |SBS|

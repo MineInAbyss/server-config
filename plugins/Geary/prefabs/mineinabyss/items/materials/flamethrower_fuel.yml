@@ -1,4 +1,73 @@
 set.item:
-  itemName: <gray>Flamethrower Fuel
-  type: PAPER
+  itemName: <#0047AB>Flamethrower Fuel
+  type: minecraft:paper
   itemModel: mineinabyss:flamethrower_fuel
+  lore:
+  - <#3d59ab>A rectangular capsule containing burnable materials.
+  - <#6666ff><i>Consumable. Fuel used by the <#0047AB>Flamethrower.
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/materials/flamethrower_fuel  
+set.recipes:
+  result:
+    prefab: mineinabyss:flamethrower_fuel
+  discoverRecipes: true
+  group: mineinabyss:flamethrower_fuel
+  recipes:
+  - type: shaped
+    items:
+      H:
+        prefab: mineinabyss:himushi_core
+      C:
+        prefab: mineinabyss:charcoal_sand_ingot
+      F:
+        prefab: mineinabyss:hammerbeak_feather
+      I:
+        type: minecraft:iron_ingot
+    configuration: |-
+      |IHI|
+      |FFF|
+      |ICI|
+  - type: shaped
+    items:
+      H:
+        prefab: mineinabyss:himushi_core
+      C:
+        prefab: mineinabyss:charcoal_sand_ingot
+      F:
+        prefab: mineinabyss:onitsuchi_feather
+      I:
+        type: minecraft:iron_ingot
+    configuration: |-
+      |IHI|
+      |FFF|
+      |ICI|
+  - type: shaped
+    items:
+      H:
+        prefab: mineinabyss:himushi_core
+      C:
+        prefab: mineinabyss:charcoal_sand_ingot
+      F:
+        prefab: mineinabyss:cyatoria_feather
+      I:
+        type: minecraft:iron_ingot
+    configuration: |-
+      |IHI|
+      |FFF|
+      |ICI|
+  - type: shaped
+    items:
+      H:
+        prefab: mineinabyss:himushi_core
+      C:
+        prefab: mineinabyss:charcoal_sand_ingot
+      F:
+        prefab: mineinabyss:corpse_weeper_feather
+      I:
+         type: minecraft:iron_ingot
+    configuration: |-
+      |IHI|
+      |FFF|
+      |ICI|

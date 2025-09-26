@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: SOUL_SOIL
+    type: minecraft:soul_soil
   group: "looty:soul_soil"
   recipes:
     - type: shapeless

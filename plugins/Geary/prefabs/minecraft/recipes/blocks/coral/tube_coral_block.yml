@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: TUBE_CORAL_BLOCK
+    type: minecraft:tube_coral_block
   group: "looty:tube_coral_block"
   recipes:
     - type: shaped
@@ -9,7 +9,7 @@ set.recipes:
         A:
           prefab: mineinabyss:ashimite_antlers
         B:
-          type: BLUE_DYE
+          type: minecraft:blue_dye
       configuration: |-
         | A |
         |ABA|
@@ -19,7 +19,7 @@ set.recipes:
         A:
           prefab: mineinabyss:ashimite_antlers
         C:
-          type: CYAN_DYE
+          type: minecraft:cyan_dye
       configuration: |-
         | A |
         |ACA|

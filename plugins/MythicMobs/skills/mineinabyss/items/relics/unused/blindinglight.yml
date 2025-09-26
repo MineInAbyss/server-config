@@ -1,0 +1,41 @@
+BlindingLight:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{t=500}
+  - sound{s=block.beacon.activate;p=2} @PIR{r=50}
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=10;hS=0;vS=0;y=0.5;speed=10} @self
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=10;hS=0;vS=0;y=1;speed=10} @self
+  - sound{s=block.campfire.crackle;p=1} @PIR{r=50}
+  - delay 20
+  - sound{s=block.fire.extinguish;p=0.5} @PIR{r=50}
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=15;hS=0;vS=0;y=0.5;speed=10} @self
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=15;hS=0;vS=0;y=1;speed=10} @self
+  - delay 20
+  - sound{s=block.campfire.crackle;p=1} @PIR{r=50}
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=10;hS=0;vS=0;y=0.5;speed=10} @self
+  - effect:particlering{p=reddust;color=#ffffff;r=1;points=10;hS=0;vS=0;y=1;speed=10} @self
+  - delay 20
+  - sound{s=block.beacon.activate;p=2} @PIR{r=50}
+  - projectile{oT=BlindingLight-Projectile-onTick;oE=BlindingLight-Projectile-onEnd;hR=0;vR=0;i=1;mr=10;hp=false;hnp=false;g=-1;v=2} @PIR{r=4}
+  - delay 60
+  - throw{v=40;vy=4} @PIR{r=30}
+  - delay 10
+  - effect:sound{s=block.note_block.pling;p=2;v=2} @self
+  - message{m="<mob.name>&7>> &eBlinded by the light!"} @PlayersInRadius{r=50}
+  - sound{s=block.beacon.deactivate;p=2} @PIR{r=50}
+  - potion{type=NIGHT_VISION;d=80;hp=false} @PIR{r=50}
+  - potion{type=BLINDNESS;d=80;hp=false} @PIR{r=50}
+  
+BlindingLight-Projectile-onTick:
+  Skills:
+  - effect:particles{p=end_rod;a=1;hS=0.1;vS=0.1} @origin
+  - effect:particles{p=flash;a=1;hS=0;vS=0} @origin
+
+BlindingLight-Projectile-onEnd:
+  Skills:
+  - sound{s=block.beacon.ambient;p=2} @PIR{r=50}
+  - delay 10
+  - sound{s=block.beacon.ambient;p=2} @PIR{r=50}
+  - effect:particles{p=flash;a=20;hS=10;vS=1;repeat=5;repeatInterval=5} @origin

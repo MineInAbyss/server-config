@@ -6,7 +6,7 @@
 
 ozen:
   Type: ZOMBIE
-  Display: '<#FFFFFF>Ozen, the Unmoveable Sovereign <caster.hp>/<caster.mhp>' 
+  Display: '<#FFFFFF>Ozen, the Unmoveable Sovereign' 
   Health: 500
   Modules:
     ThreatTable: true
@@ -53,7 +53,6 @@ ozen:
   - skill{s=ozen_slap} @self ~onDamaged 0.15
  # - skill{s=ozen_grab_sync} @self ~oninteract
 
-  - skill{s=ozen_bossbar_damage} @self ~onDamaged
   - model{mid=capelessozen;d=false;i=true;step=1;ride=true} @self ~onSpawn
   - model{mid=capelessozen;d=false;i=true;step=1;ride=true} @self ~onLoad  
   - remove{delay=30000} @self ~onSpawn

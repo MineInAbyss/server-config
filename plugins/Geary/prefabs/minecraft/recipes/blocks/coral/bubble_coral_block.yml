@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BUBBLE_CORAL_BLOCK
+    type: minecraft:bubble_coral_block
   group: "looty:bubble_coral_block"
   recipes:
     - type: shaped
@@ -9,7 +9,7 @@ set.recipes:
         A:
           prefab: mineinabyss:ashimite_antlers
         P:
-          type: PURPLE_DYE
+          type: minecraft:purple_dye
       configuration: |-
         | A |
         |APA|
@@ -19,7 +19,7 @@ set.recipes:
         A:
           prefab: mineinabyss:ashimite_antlers
         M:
-          type: MAGENTA_DYE
+          type: minecraft:magenta_dye
       configuration: |-
         | A |
         |AMA|

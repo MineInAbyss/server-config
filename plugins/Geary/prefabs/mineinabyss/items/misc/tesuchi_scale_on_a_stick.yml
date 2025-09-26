@@ -13,7 +13,7 @@ set.recipes:
   - type: shapeless
     items:
     - prefab: mineinabyss:tesuchi_scales
-    - type: FISHING_ROD
+    - type: minecraft:fishing_rod
 resourcepack:
   textures:
     layers:

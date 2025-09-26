@@ -1,0 +1,32 @@
+ray-healing_heal:
+  Conditions:
+  - lightlevel{l=>12} true
+  Skills:
+  - aura{auraName=rayhealingplate;duration=1111;c=1;ms=10} @self
+  - skill{s=ray-healing_heal_low} @self
+  - delay 1
+  - skill{s=ray-healing_heal_high} @self
+  
+ray-healing_heal_low:
+  Conditions:
+  - lightlevel{l=12to14} true
+  - hasaurastacks{n=rayhealingplate;s=10} true
+  Skills:
+  - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
+  - sound{s=block.honey_block.hit;sc=ui;p=0.4;v=0.2} @self
+  - heal{amount=1} @self
+  - oxygen{amount=4} @self #dont think oxygen works
+  - delay 1
+  - auraremove{aura=rayhealingplate} @self 
+
+ray-healing_heal_high:
+  Conditions:
+  - lightlevel{l=15} true
+  - hasaurastacks{n=rayhealingplate;s=10} true   
+  Skills:
+  - effect:particles{particle=reddust;color=#7CFC00;amount=3;r=1;i=1;vs=1} @self
+  - sound{s=block.honey_block.hit;sc=ui;p=0.4;v=0.2} @self
+  - heal{amount=2} @self
+  - oxygen{amount=8} @self #dont think oxygen works
+  - delay 1
+  - auraremove{aura=rayhealingplate} @self

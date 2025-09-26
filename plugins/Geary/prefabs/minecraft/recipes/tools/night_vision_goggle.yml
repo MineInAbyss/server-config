@@ -13,7 +13,7 @@ set.recipes:
         S:
           prefab: mineinabyss:swarmshocker_jelly
         L: 
-          type: IRON_BLOCK
+          type: minecraft:iron_block
           
       configuration: |-
         |JSJ|

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Foxgloves Pink
-    customModelData: 3013
+  customModelData: { floats: [ 3013 ] }
 set.block:
   blockType: WIRE
   blockId: 13

@@ -1,0 +1,34 @@
+simple_bandage:
+  Skills:
+  - aura{auraName=simplebandageheal;oT=simple_bandage_windup;oE=simple_bandage_heal;duration=80;i=20;c=1;maxStacks=1;cotd=true;cod=true} @self
+  - aura{auraName=simplebandagechecker;oT=simple_bandage_stopped;duration=80;i=1;c=1;maxStacks=1;cotd=true;cod=true} @self
+  # 80 ticks is 3 seconds somehow? unless I'm going crazy and miscounting in game
+
+simple_bandage_heal:
+  Conditions:
+  - hasaurastacks{n=simplebandagefail} castinstead simple_bandage_fail
+  - sneaking orElseCast simple_bandage_fail
+  Skills:
+  - effect:particles{particle=totem_of_undying;amount=1;hS=0.5;vS=0.1;y=1} @self
+  - heal{a=3} @self
+  - aura{n=consumedbandage;duration=1000;cotd=false;coq=false} @self # Not 100% foolproof, might not always deduct
+
+# Failure to crouch through whole bandage cancels heal
+simple_bandage_fail:
+  Skills:
+  - sound{sound=entity.villager.no;v=1.5}
+  - SendActionMessage{msg="<#fa4150>You must hold crouch during the entire bandage application!"}
+simple_bandage_stopped:
+  Conditions:
+  - sneaking false
+  Skills:
+  - aura{n=simplebandagefail;duration=100} @self
+ 
+simple_bandage_windup: 
+  Skills:
+  - effect:particles{particle=instant_effect;amount=3;hS=0.7;vS=0.1;y=1} @self
+  - effect:sound{s=item.bone_meal.use;sc=ui;v=0.6;p=0.2} @self #supporting sound to consumable within geary
+
+simple_bandage_consume:
+  Skills:
+  - auraremove{n=consumedbandage} @self  

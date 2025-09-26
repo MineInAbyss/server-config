@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#AC8053>Dew-cress Knots
+  itemModel: mineinabyss:moniscelti
+  lore:
+  - ':layer_5: Grade IV Relic'
+  - <#BB9672>This Relic is regarded as an illicit substance in the
+  - <#BB9672>city of Orth, but laws tend to be overlooked in the Abyss.
+  - <#C4A484><i>Active ability. Grants strength and over time decreasing
+  - <#C4A484><i>movement buffs on right click in exchange of some health.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - health{h=>15}
+    onFail:
+    - sendActionBar:
+        text: <red>Not Enough Health
+  - cooldown:
+      id: dew-cress_knots
+      length: 44s
+      display: <#AC8053>Dew-cress Knots
+  - mythicSkills:
+    - dew-cress_knots
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/dew-cress_knots

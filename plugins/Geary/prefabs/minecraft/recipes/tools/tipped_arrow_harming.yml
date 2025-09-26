@@ -1,0 +1,19 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:tipped_arrow
+    potionContents:
+      potionType: minecraft:harming
+    amount: 8
+  group: "looty:tipped_arrow.effect.harming"
+  recipes:
+    - type: shaped
+      items:
+        B:
+          prefab: mineinabyss:black_flask
+        A:
+          type: minecraft:arrow
+      configuration: |-
+        |AAA|
+        |ABA|
+        |AAA|

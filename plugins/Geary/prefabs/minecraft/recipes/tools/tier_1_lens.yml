@@ -9,7 +9,7 @@ set.recipes:
         G:
           prefab: mineinabyss:splitjaw_gunk
         T:
-          type: TINTED_GLASS
+          type: minecraft:tinted_glass
         C: 
           prefab: mineinabyss:charcoal_sand_ingot
 

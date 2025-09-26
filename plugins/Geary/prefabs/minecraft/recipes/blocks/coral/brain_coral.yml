@@ -1,10 +1,10 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BRAIN_CORAL
+    type: minecraft:brain_coral
   group: "looty:brain_coral"
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: PINK_DYE
+        - type: minecraft:pink_dye

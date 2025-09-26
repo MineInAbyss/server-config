@@ -1,0 +1,21 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:scaled_umbrella
+  group: mineinabyss:scaled_umbrella
+  recipes:
+    - type: shaped
+      items:
+        D:
+          type: minecraft:shield
+        S:
+          type: minecraft:stick
+        I:
+          type: minecraft:iron_ingot
+        L: 
+          prefab: mineinabyss:charcoal_sand_ingot
+          
+      configuration: |-
+        |LLL|
+        |LDL|
+        |ISI|

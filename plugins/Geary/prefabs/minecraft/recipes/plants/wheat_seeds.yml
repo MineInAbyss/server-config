@@ -1,8 +1,8 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: WHEAT_SEEDS
+    type: minecraft:wheat_seeds
   recipes:
     - type: shapeless
       items:
-        - type: WHEAT
+        - type: minecraft:wheat

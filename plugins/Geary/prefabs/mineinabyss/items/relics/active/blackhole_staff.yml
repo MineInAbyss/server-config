@@ -1,0 +1,51 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#302D2D><b>Subtle Pull
+  itemModel: mineinabyss:blackhole_staff
+  lore:
+  - ':layer_5: Grade I Relic'
+  - <#570F01>The draw of the Abyss upon those who gaze into it
+  - <#570F01>is inescapable. This Relic makes that feeling palpable.
+  - <#3B1F1A><i>Active ability. Shoots projectile on right click.
+  - <#3B1F1A><i>Projectile pulls targets and deals a large amount of damage.
+observe:
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>3} true
+      - hasaurastacks{n=subtlepullcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience / Out of Charge
+  - cooldown:
+      id: subtle_pull_sub
+      length: 25s
+      display: <#302D2D>Subtle Pull
+  - mythicSkills:
+    - subtle_pull_hit
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>5} true
+      - hasaurastacks{n=subtlepullcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience / Out of Charge
+  - cooldown:
+      id: subtle_pull_main
+      length: 80s
+      display: <#302D2D>Subtle Pull
+  - mythicSkills:
+    - subtle_pull
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - subtle_pull_charge
+resourcepack:
+  model: mineinabyss:item/relics/subtle_pull

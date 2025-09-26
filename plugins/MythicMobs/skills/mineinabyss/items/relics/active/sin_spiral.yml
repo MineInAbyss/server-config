@@ -1,0 +1,40 @@
+sin_spiral:
+  Skills:
+  - effect:particles{particle=warped_spore;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
+  - effect:particles{particle=white_smoke;amount=7;hS=0.4;vS=0.3;speed=0.3;y=0.5} @self
+  # - sound{s=entity.bat.takeoff;sc=ui;p=2;v=0.4} @self
+  # - sound{s=entity.bat.takeoff;sc=ui;p=0.2;v=0.4} @self
+  # - lunge{velocity=1.4;velocityY=0.2} @forward{f=4;y=0.3}
+  - lunge{velocity=1.8;velocityY=0.2} @forward{f=4;y=0.3}
+  - delay 2
+  - sound{s=entity.phantom.flap;sc=ui;p=1;v=2.5} @self
+  - delay 2
+  - sound{s=entity.phantom.flap;sc=ui;p=1;v=2.5} @self
+  - delay 2
+  - sound{s=entity.phantom.flap;sc=ui;p=1;v=2.5} @self
+  - delay 10
+  - skill{s=sin_spiral_effect}
+
+sin_spiral_effect:
+  Conditions:
+    - hasaurastacks{n=sinspiralcharge} true
+  Skills:
+  - sound{s=entity.sniffer.sniffing;sc=ui;volume=0.8;pitch=0.8} @self
+  - sound{s=entity.breeze.charge;sc=ui;volume=0.7;pitch=1.6;repeat=2;repeati=6} @self 
+  - sound{s=entity.breeze.charge;sc=ui;volume=0.7;pitch=1;repeat=1;repeati=7} @self 
+  - sound{s=entity.breeze.charge;sc=ui;volume=0.7;pitch=0.8;repeat=1;repeati=10} @self 
+  - summon{m=sin_spiral_center} @SelfLocation
+  - summon{m=sin_spiral} @SelfLocation{x=4;z=0}
+  - summon{m=sin_spiral} @SelfLocation{x=1.24;z=-3.8}
+  - summon{m=sin_spiral} @SelfLocation{x=-3.24;z=-2.35}
+  - summon{m=sin_spiral} @SelfLocation{x=-3.24;z=2.35}
+  - summon{m=sin_spiral} @SelfLocation{x=1.24;z=3.8}
+
+sin_spiral_charge: # Shim for geary
+  Skills:
+  - skill{s=sin_spiral_charge_}
+sin_spiral_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=sinspiralcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

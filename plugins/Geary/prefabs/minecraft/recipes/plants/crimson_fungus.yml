@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: CRIMSON_FUNGUS
+    type: minecraft:crimson_fungus
   group: "looty:crimson_fungus"
   recipes:
     - type: shapeless

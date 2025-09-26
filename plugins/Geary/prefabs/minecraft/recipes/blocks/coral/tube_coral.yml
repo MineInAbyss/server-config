@@ -1,14 +1,14 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: TUBE_CORAL
+    type: minecraft:tube_coral
   group: "looty:tube_coral"
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: BLUE_DYE
+        - type: minecraft:blue_dye
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: CYAN_DYE
+        - type: minecraft:cyan_dye

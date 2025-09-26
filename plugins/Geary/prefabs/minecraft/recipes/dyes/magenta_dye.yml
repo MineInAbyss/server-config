@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: MAGENTA_DYE
+    type: minecraft:magenta_dye
   group: "magenta_dye"
   recipes:
     - type: shapeless

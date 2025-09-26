@@ -3,7 +3,7 @@ himushi:
   SpawnCategory: hostile
   Display: 'Himushi'
   Health: 60
-  Damage: 7
+  Damage: 10
   AIGoalSelectors:
     - 0 clear
     - 1 meleeattack

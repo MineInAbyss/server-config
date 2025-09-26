@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: LEAD
+    type: minecraft:lead
     amount: 2
   removeRecipes:
     - minecraft:lead

@@ -11,9 +11,9 @@ set.recipes:
         K:
           prefab: mineinabyss:kakatsumuri_glowing_tip
         T:
-          type: TINTED_GLASS
+          type: minecraft:tinted_glass
         G: 
-          type: GOLD_INGOT
+          type: minecraft:gold_ingot
 
       configuration: |-
         |G G|

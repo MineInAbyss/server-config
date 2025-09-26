@@ -1,0 +1,26 @@
+grapplehook_shoot:
+  Skills:
+  - projectile{bulletType=ARROW;onTick=GrappleHook_TICK;onHit=GrappleHook_HIT;onHitBlockSkill=GrappleHook_END;v=25;i=1;hR=1;vR=1;g=0.5;doEndSkillOnHit=false;hnp=true;dd=20} @forward{f=1000}
+
+GrappleHook_END:
+  Skills:
+  - lunge{v=2;vy=1} @origin
+  - delay 5
+  - propel{v=1} @origin
+  - potion{type=JUMP_BOOST;duration=18;l=1} @self
+
+GrappleHook_HIT:
+  Skills:
+  - sound{s=block.chain.hit;sc=ui;volume=1} @self
+  - sound{s=block.chain.break;sc=ui;volume=0.55;repeat=10;repeati=1} @self
+  - pull{v=10} @targetedtarget{ignore=player} 
+  # - stun{duration=20} @targetedtarget{ignore=animal,creature,monster} # Maybe
+GrappleHook_TICK:
+  Skills:
+  - sound{s=block.chain.break;sc=ui;volume=0.25} @self
+  - sound{s=block.chain.break;sc=ui;volume=0.5} @origin
+  - effect:particle{p=ash}
+# Ideas:
+# consume stamina
+# wind back up
+# grapple air

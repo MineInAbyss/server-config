@@ -1,0 +1,33 @@
+detector_type_i:
+  Skills:
+  - skill{s=detector_type_i_}
+
+detector_type_i_:
+  Cooldown:
+  Conditions:
+  TargetConditions:
+    - lineofsight true
+    # - isPlayer false
+  Skills:
+  - aura{auraName=detectortypeiscan;onTick=detector_scan;duration=40;c=1;maxStacks=1;cotd=false} @self
+  - onDamaged{auraName=detectortypeidebuff;onTick=detector_type_i_debuff;duration=40;c=1;maxStacks=1;cotd=false;multiplier=1.2} @target{ignore=players}
+
+detector_scan:
+  Cooldown:
+  Conditions:
+  Skills:
+  - onAttack{oH=detector_type_i_damage;cE=false;auraname=d_t_i}
+
+detector_type_i_debuff:
+  Cooldown:
+  Conditions:
+  TargetConditions:
+  Skills:
+  - potion{type=GLOWING;duration=40}
+
+detector_type_i_damage:
+  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
+  Conditions:
+  Skills:
+  #- damage{a=10} @target{conditions=[  - hasaura{aura=detectortypeidebuff} true ]}
+  - effect:particles{p=enchanted_hit;amount=5;hS=0.3;vS=0.3;speed=0;y=1} @target{conditions=[  - hasaura{aura=detectortypeidebuff} true ]}

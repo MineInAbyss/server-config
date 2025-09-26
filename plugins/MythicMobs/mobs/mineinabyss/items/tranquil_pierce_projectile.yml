@@ -1,0 +1,14 @@
+tranquil_pierce_projectile:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Invisible: true
+    Invincible: true
+    HasGravity: false
+    Small: true
+ 
+  Skills:
+  - model{mid=tranquil_pierce_projectile;n=false} @self ~onSpawn
+  - state{mid=idle;s=attack} @self ~onSpawn

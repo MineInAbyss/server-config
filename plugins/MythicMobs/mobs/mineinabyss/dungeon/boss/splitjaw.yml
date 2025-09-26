@@ -1,0 +1,57 @@
+bosssplitjaw:
+  Type: ALLAY
+  Prefabs: [ mineinabyss:custom_allay ]
+  SpawnCategory: miniboss
+  Display: "<#9A1CAD>Crimson Splitjaw"
+  Health: 500
+  Damage: 15
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomFly
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    KnockbackResistance: 1
+    Collidable: true
+    DigOutOfGround: true
+    FollowRange: 32
+    MaxCombatDistance: 128
+    LockPitch: true
+    Interactable: true
+    # MovementSpeed: 0.6
+    PreventSunburn: true
+    PreventOtherDrops: true
+    Silent: true
+  Model:
+    Id: splitjaw
+    ViewRadius: 64
+    Scale: 2
+    Drive: false
+    DamageTint: true
+  DamageModifiers:
+    - PROJECTILE 0.3
+  Drops:
+  Skills:
+    - barCreate{name="splitjaw";display="<caster.name> <caster.hp> <&fs> <caster.mhp>";value=1.0;color=PURPLE;style=SEGMENTED_6} @self ~onSpawn
+    - skill{s=ozen_bossbar_damage} @self ~onDamaged
+    # - CancelEvent{sync=true} ~onAttack
+    - bodyclamp{m=splitjaw;c=15} @self ~onSpawnOrLoad
+    - setspeed{type=flying;speed=1.7} @self ~onSpawnOrLoad
+    - state{mid=splitjaw;s=attack} @self ~onAttack
+    - DefaultState{m=splitjaw;t=walk;s=walk_aggro} @self ~onEnterCombat
+    - DefaultState{m=splitjaw;t=walk;s=walk} @self ~onDropCombat
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=Dsj_roar} @target ~oncombat
+    - skill{s=Dsj_roar} @target ~onTimer:60
+    - skill{s=DBSJ_dash} @target ~onTimer:10
+    - skill{s=DBSJ_Attack} @self ~onAttack
+
+    - skill{s=splitjawHurt} @self ~onHurt
+    - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=1.5;p=0.8} @self ~onAmbient 0.6
+    - effect:sound{s=mineinabyss:entity.splitjaw.death;v=1.5;p=0.8} @self ~onDeath
+    - skill{s=displayHealth} ~onDamaged

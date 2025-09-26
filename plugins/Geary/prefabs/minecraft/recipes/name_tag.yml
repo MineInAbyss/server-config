@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: NAME_TAG
+    type: minecraft:name_tag
   group: "looty:name_tag"
   recipes:
     - type: shaped
@@ -11,7 +11,7 @@ set.recipes:
         I:
           prefab: mineinabyss:makihige_ink_sac
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         | SS|
         |PIP|
@@ -23,7 +23,7 @@ set.recipes:
         I:
           prefab: mineinabyss:kazura_squid_ink_sac
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         | SS|
         |PIP|
@@ -35,7 +35,7 @@ set.recipes:
         I:
           prefab: mineinabyss:makihige_ink_sac
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         | KK|
         |PIP|
@@ -47,7 +47,7 @@ set.recipes:
         I:
           prefab: mineinabyss:kazura_squid_ink_sac
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         | KK|
         |PIP|

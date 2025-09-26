@@ -1,0 +1,91 @@
+Flame-Torrent:
+  Skills:
+    # - setvariable{var=caster.flamethrower-used;val=0}
+    - variableunset{var=caster.flamethrower-used}
+    - gcd{ticks=80} @self
+    - potion{type=SLOW;level=5;d=50} @self
+    - gcd{ticks=40} @self
+    - delay 8
+
+    # Visible fire
+    - projectile{
+      i=1;repeat=20;repeati=2;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hp=true;hitself=false;se=false;
+      bullet=BLOCK;material=FIRE;sfo=1.5;
+      onHit=flamethrower-hit-visible;
+      onStart=flamethrower-start} @forward{f=1000}
+
+    # Shield damage
+    - projectile{
+      i=1;repeat=1;repeati=40;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-shield} @forward{f=1000}
+
+    # Other damage
+    - projectile{
+      i=1;repeat=2;repeati=20;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-damage} @forward{f=1000}
+
+    - delay 10
+    # Visible fire
+    - projectile{
+      i=1;repeat=20;repeati=2;syo=0.7;tyo=1;hnp=true;hp=true;v=18;ho=0;hitself=false;se=false;
+      bullet=BLOCK;material=FIRE;sfo=1.5;
+      onHit=flamethrower-hit-visible;
+      onStart=flamethrower-start} @forward{f=1000}
+
+    # Shield damage
+    - projectile{
+      i=1;repeat=1;repeati=40;syo=0.7;tyo=1;hnp=true;v=18;ho=0;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-shield} @forward{f=1000}
+
+    # Other damage
+    - projectile{
+      i=1;repeat=2;repeati=20;syo=0.7;tyo=1;hnp=true;v=18;ho=0;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-damage} @forward{f=1000}
+
+
+    - delay 10
+    # Visible fire
+    - projectile{
+      i=1;repeat=20;repeati=2;syo=0.7;tyo=1;hnp=true;hp=true;v=18;ho=10;hitself=false;se=false;
+      bullet=BLOCK;material=FIRE;sfo=1.5;
+      onHit=flamethrower-hit-visible;
+      onStart=flamethrower-start} @forward{f=1000}
+
+    # Shield damage
+    - projectile{
+      i=1;repeat=1;repeati=40;syo=0.7;tyo=1;hnp=true;v=18;ho=10;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-shield} @forward{f=1000}
+
+    # Other damage
+    - projectile{
+      i=1;repeat=2;repeati=20;syo=0.7;tyo=1;hnp=true;v=18;ho=10;hitself=false;se=false;
+      bullet=TEXT;sfo=1.5;
+      onHit=flamethrower-hit-damage} @forward{f=1000}
+
+    - delay 200
+    # - variableunset{var=caster.flamethrower-used}
+
+flamethrower-start:
+  Conditions:
+  - chance{chance=0.3} true
+  Skills:
+  - sound{s=entity.blaze.burn;p=1}
+
+flamethrower-hit-visible:
+  Skills:
+  - ignite{ticks=150}
+  - aura{auraName=flamethrowerroast;duration=200;i=1;c=1;maxStacks=1;cotd=false;rd=true}
+  
+flamethrower-hit-shield:
+  Skills:
+  - damage{amount=3;pkb=true;ii=true;pi=true}
+
+flamethrower-hit-damage:
+  Skills:
+  - damage{amount=0.25;pkb=true;ii=true;pi=true}
+  - damage{amount=0.25;pkb=true;ii=true;pi=true;ignorearmor=true}

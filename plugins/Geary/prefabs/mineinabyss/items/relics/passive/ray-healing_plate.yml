@@ -1,0 +1,27 @@
+set.item:
+  itemName: <#808000>Ray-healing Plate
+  type: minecraft:paper
+  itemModel: mineinabyss:ray-healing_plate
+  lore:
+  - ':layer_1: Grade III Relic'
+  - <#A3A300>Holders of this Relic report that it feels warm
+  - <#A3A300>and comfortable to the touch, even in cold climates.
+  - <#D1D100><i>Passive slot ability. Slowly heals the user
+  - <#D1D100><i>when above a specific light level.
+passive:
+- match:
+  - inInventory
+  every: 1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:ray-healing_plate
+  - mythicSkills:
+    - ray-healing_heal
+
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/ray-healing_plate

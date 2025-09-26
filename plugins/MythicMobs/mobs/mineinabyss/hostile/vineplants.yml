@@ -84,33 +84,34 @@ vineblaster:
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
 
-allyvineblaster:
-  Type: ZOMBIE
-  SpawnCategory: hostile
+wanabushi:
+  Type: SILVERFISH
   Modules:
     ThreatTable: true
-  Display: "<green>Vineblaster"
+  Display: "<green>Wanabushi"
   Faction: ally
   AIGoalSelectors:
-    #- randomlookaround
-    - LookAtTarget
-    - clear
+  - LookAtTarget{h=true}
+  - randomstroll
   AITargetSelectors:
-    - OwnerTarget
-    - monsters
-    - OwnerAttacker
-  Health: 20 # change this
+  - 0 clear
+  - 1 monsters
+  - 2 nearestConditionalTarget{conditions=[
+        - entitytype PLAYER false
+      ]} 
+  Health: 60 # change this
   Damage: 0 # keep this 0
   Options:
     PreventSunburn: true
-    Silent: true
+    AlwaysShowName: false
+    Silent: false
+    MovementSpeed: 0.35
+    MaxCombatDistance: 25
     PreventOtherDrops: true
-    FollowRange: 15
-    MovementSpeed: 0   # replaced with skills
-    KnockbackResistance: 1.0
-    Collidable: false
+    PreventBlockInfection: true
+    FollowRange: 25
   Model:
-    Id: vineblaster
+    Id: wanabushi
     ViewRadius: 48
     Drive: false
     DamageTint: true
@@ -121,7 +122,7 @@ allyvineblaster:
     - skill:allyvineblasterattack @Self ~onTimer:10
     # - skill{s=vineblastermortar} @target ~onTimer:20
     - cancelevent{sync=true} @Self ~onAttack
-    - remove{delay=280} @self ~onSpawn
+    - remove{delay=500} @self ~onSpawn
 
 vinepoofer:
   Type: ZOMBIE

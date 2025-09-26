@@ -1,16 +1,16 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BELL
+    type: minecraft:bell
   recipes:
     - type: shaped
       items:
         G:
-          type: GOLD_BLOCK
+          type: minecraft:gold_block
         S:
           tag: wooden_fences
         I:
-          type: IRON_NUGGET
+          type: minecraft:iron_nugget
         O:
           tag: wooden_slabs
       configuration: |-

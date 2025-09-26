@@ -2,7 +2,7 @@
     "yaml.schemas": {
         "https://raw.githubusercontent.com/MineInAbyss/plugin-schemas/refs/heads/master/generated/mythicmobs.json": "**/MythicMobs/mobs/**/*.yml",
         "https://raw.githubusercontent.com/MineInAbyss/plugin-schemas/refs/heads/master/generated/mythicmobs-skill.json": "**/MythicMobs/skills/**/*.yml",
-        "https://raw.githubusercontent.com/MineInAbyss/plugin-schemas/refs/heads/master/generated/geary.json": "**/Geary/prefabs/**/*.yml"
+        ".idea/schemas/geary.json": "**/Geary/prefabs/**/*.yml"
     },
     "githubPullRequests.ignoredPullRequestBranches": [
         "develop"

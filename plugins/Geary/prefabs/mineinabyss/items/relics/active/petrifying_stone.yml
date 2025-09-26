@@ -1,0 +1,36 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#808000>Petrifying Stone
+  itemModel: mineinabyss:petrifying_stone
+  lore:
+  - ':layer_1: Grade III Relic'
+  - <#A3A300>A foreign composer once introduced this Relic into his orchestra.
+  - <#A3A300>Shortly after, several of his woodwinds quit.
+  - <#D1D100><i>Active ability. Slows user and surroundings on right click.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=petrifyingstonecharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
+  - cooldown:
+      id: petrifying_thud
+      length: 44s
+      display: <#808000>Petrifying Stone
+  - mythicSkills:
+    - petrifying_thud
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - petrifying_stone_charge
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/petrifying_stone

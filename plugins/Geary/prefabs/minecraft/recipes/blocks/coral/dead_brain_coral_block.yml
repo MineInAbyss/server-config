@@ -1,14 +1,14 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: DEAD_BRAIN_CORAL_BLOCK
+    type: minecraft:dead_brain_coral_block
     amount: 8
   group: "looty:dead_brain_coral_block"
   recipes:
     - type: shaped
       items:
         S: { type: minecraft:brain_coral_block }
-        B: { type: COBWEB }
+        B: { type: minecraft:cobweb }
       configuration: |-
         |SSS|
         |SBS|

@@ -1,0 +1,32 @@
+dungeondaikonchu:
+  Type: SPIDER
+  SpawnCategory: hostile
+  Display: "<#c26d23>Daikonchu"
+  Health: 80
+  Damage: 0
+  Options:
+    PreventOtherDrops: true
+    Silent: true
+  AIGoalSelectors:
+    - clear
+    - spiderattack
+    - float
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - players1
+  Model:
+    Id: daikonchu
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  Drops:
+    - exp 15-25
+    - geary mineinabyss:daikonchu_carapace 1 0.4
+    - geary mineinabyss:daikonchu_wing 1-2 0.3
+    
+  Skills:
+    - cancelevent{sync=true} @Self ~onAttack
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill:DaikonchuAttack @Self ~onAttack

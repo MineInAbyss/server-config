@@ -1,6 +1,6 @@
 set.recipes:
   result:
-    type: GRAY_SHULKER_BOX
+    type: minecraft:gray_shulker_box
   discoverRecipes: true
   group: "looty:backpack"
   removeRecipes:

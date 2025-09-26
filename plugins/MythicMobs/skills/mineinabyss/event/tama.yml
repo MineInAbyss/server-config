@@ -1,0 +1,255 @@
+tamachimedrop:
+  Conditions:
+  Skills:
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Tama Chime</#AA00AA><#D2D489>.'} @World
+  - dropitem{i=TamaChimeDrops} @trigger
+
+tamahatdrop:
+  Conditions:
+  Skills:
+  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Tama hat</#AA00AA><#D2D489> relic.'} @World
+  - dropitem{i=TamaHatDrops} @trigger
+meteorONSPAWN:
+  Skills:
+    - delay 1
+    - potion{type=INVISIBILITY;duration=480;level=1;p=false} @self
+
+#debug skills ^
+
+tamaATTACK:
+  Conditions:
+    - offgcd true
+    - targetwithin{d=5} true
+  Skills:
+    - CancelEvent
+    - skill{s=tamaATTACKskill} @self
+
+tamaATTACKskill:
+  Cooldown: 1
+  Skills:
+    - state{s=attack;li=3;lo=2} @self
+    - delay 10
+    - totem{ch=3;onStart=tamaATTACKDamage;hnp=true;hp=true;hR=3;vR=4;i=1} @PIR{r=4}
+    - delay 30
+
+tamaATTACKDamage:
+  Skills:
+    - shieldbreak{duration=50} @target
+    - damage{amount=10} @target
+    - effect:particles{particle=block_crack;m=redstone_block;amount=45;hS=.25;vS=1;speed=.01} @target
+    #- skill{s=Bleeding} @target
+    - throw{v=4;vy=1} @target
+
+
+
+
+
+
+
+
+
+###tama projectiles
+tamaspear:
+  Conditions:
+    - offgcd true
+    - stance{s=spikeless;str=true} false
+    - targetinlineofsight
+  Cooldown: 5
+  Skills:
+    - state{mid=tama;s=normal_shot;li=0;lo=0;r=false} @self
+    - delay 5
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5} @Target
+    - delay 8
+    - state{mid=tama;s=normal_shot;r=true} @self
+tamaspear2:
+  Conditions:
+    - offgcd true
+    - targetinlineofsight
+  Cooldown: 3
+  Skills:
+    - state{mid=tama;s=normal_shot;li=0;lo=0;r=false} @self
+    - delay 5
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.4} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.4} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.5} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=2;v=13;mr=20;hO=0;sE=true;syo=1.5;tyo=1;hR=0.5,vR=0.5;a=.5} @Target
+    - delay 8
+    - state{mid=tama;s=normal_shot;r=true} @self
+tamat:
+  Skills:
+    - effect:particles{particle=FALLING_SPORE_BLOSSOM;amount=5;hS=.1;vS=.1;speed=1.25}
+
+tamahit:
+  Skills:
+    - shieldbreak{duration=50} @target
+    - damage{amount=10} @target
+    - potion{type=POISON;duration=60;level=5}
+    - potion{type=WITHER;duration=60;level=5}
+    - skill{s=Bleeding} @target
+
+tamaend:
+  Skills:
+    - damage{amount=10} @target
+    - potion{type=POISON;duration=60;level=5}
+    - potion{type=WITHER;duration=50;level=5}
+    - skill{s=Bleeding} @target
+###### tama shout
+
+tama_shout:
+  Conditions:
+    - offgcd true
+    - stance{s=spikeless;str=true} false
+  Cooldown: 25
+  Skills:
+    - gcd{ticks=300} @self
+    - setAI{ai=false} @self
+    - state{s=roar;li=0;lo=0} @self
+    - potion{type=SLOW;duration=40;level=5} @PIR{r=20}
+    - potion{type=RESISTANCE;duration=480;level=1;p=false} @self
+    - delay 10
+    - skill{s=tama_knockback} @PIR{r=10}
+    - skill{s=tama_screenshake} @pir{r=20}
+    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=tama;part=torso}
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=2} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.7} @self
+    - delay 1
+    - potion{t=WEAKNESS;d=200;l=1} @PIR{r=30}
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=2} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.9} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.8} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.7} @self
+    - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
+    - delay 41
+    - state{s=roar;remove=true} @self
+    - setAI{ai=true} @self
+tama_knockback:
+  Skills:
+    - delay 1
+    - throw{v=23;vy=3} @pir{r=8}
+tama_screenshake:
+  Skills:
+    - recoil{r=15;pitch=-0.2}
+    - delay 2
+    - recoil{r=15;pitch=.1}
+    - delay 2
+    - recoil{r=15;pitch=-0.1}
+    - delay 2
+    - recoil{r=15;pitch=0.1}
+tama_knockback2:
+  Skills:
+    - delay 1
+    - throw{v=0.80;vy=5} @pir{r=12}
+
+### tama spike eject
+tama_spike_eject:
+  Cooldown: 500
+  Conditions:
+    - offgcd true
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - setAI{ai=false} @self
+    - state{s=roar;li=0;lo=0} @self
+    - delay 10
+    - potion{type=SLOW;duration=40;level=5} @PIR{r=20}
+    - skill{s=tama_knockback2} @PIR{r=10}
+    - skill{s=tama_screenshake} @pir{r=20}
+    - particles{p=crit_magic;a=50;speed=2;hs=1;vs=1;repeat=6;repeatInterval=3} @ModelPart{mid=tama;part=torso}
+    - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=2} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.9} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.8} @self
+    - effect:sound{s=entity.polar_bear.warning;v=0.8;p=1.7} @self
+    - delay 1
+    - delay 2
+    - skill{s=tamaspikespin} @target
+    - effect:particlesphere{p=reddust;y=0.5;r=1;a=60;color=#00d63a} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=2} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.9} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.8} @self
+    - effect:sound{s=entity.ender_dragon.growl;v=0.8;p=1.7} @self
+    - delay 2
+    - skill{s=tamaspikespin} @target
+    - state{s=spikeless_state;li=0;lo=0} @self
+    - setstance{stance=spikeless} @self
+    - particlering{p=dustColorTransition;color1=#49DEEA;color2=#A559F7;size=2;a=10;r=8;points=16;hs=1;vs=1;repeat=1;repeatInterval=5} @self
+    - delay 41
+    - state{s=roar;remove=true} @self
+    - setAI{ai=true} @self
+
+tamaSpikesSingle:
+  Skills:
+    - sound{s=entity.creeper.death;v=1;p=1.9} @PIR{r=30}
+    - sound{s=entity.creeper.death;v=1;p=1.9} @PIR{r=30}
+    - sound{s=entity.creeper.death;v=1;p=1.9} @PIR{r=30}
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=0;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=20;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=40;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=60;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=80;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=100;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=120;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=140;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=160;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=180;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=200;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=220;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=240;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=260;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=280;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=300;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=320;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=340;sE=true;syo=2;tyo=1.5;hR=2} @Target
+    - projectile{bulletType=MOB;mob=orbpiercer_projectile;onTick=tamat;onHit=tamahit;onEnd=tamaend;i=1;v=8;mr=20;hO=360;sE=true;syo=2;tyo=1.5;hR=2} @Target
+
+tamaspikespin:
+  Cooldown: 15
+  Skills:
+    - skill{s=tamaSpikesSingle}
+    - delay 20
+    - skill{s=tamaSpikesSingle}
+    - delay 20
+    - skill{s=tamaSpikesSingle}
+
+tama_impale:
+  Cooldown: 10
+  Conditions:
+    - offgcd true
+    - targetinlineofsight
+    - heightabove{h=10} false
+  #- stance{s=spikeless;str=true} false
+  Skills:
+    - gcd{ticks=150}
+    - effect:particlering{particle=BLOCKCRACK;material=DIRT;radius=1;points=10;amount=30;hS=1;vS=1} @Self
+    # - setai{ai=false}
+    - state{s=dash_charge;li=0;lo=0} @self
+    #- look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - delay 15
+    - leap{velocity=450} @Target
+    - state{s=dash_charge;r=true} @self
+    - state{s=dash_land_and_impale;li=0;lo=0} @self
+    - delay 3
+    # - look{headOnly=false;immediately=false;repeat=100;repeatinterval=1} @target
+    - totem{md=2;c=1;oH=tama_leapa;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=20;repeatinterval=1} @forward{f=5}
+    - delay 34
+    - state{s=dash_land_and_impale;remove=true} @self
+    # - setai{ai=true}
+tama_leapa:
+  Cooldown: 3
+  Conditions:
+    - targetwithin 5
+  Skills:
+    - shieldbreak{duration=300} @target
+    - sound{s=item.trident.thunder;p=2} @PIR{r=30}
+    - stun{d=60;f=true} @PIR{r=4}
+    - damage{a=14;ia=true;ie=true} @PIR{r=4}
+    - potion{type=POISON;duration=100;level=5} @PIR{r=3}
+    - potion{type=WITHER;duration=30;level=1} @PIR{r=3}
+    #- potion{t=SLOWNESS;d=100;l=2} @PIR{r=3}
+    - potion{t=BLINDNESS;d=50;l=2} @PIR{r=3}
+    - skill{s=Bleeding} @target

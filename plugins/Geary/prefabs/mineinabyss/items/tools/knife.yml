@@ -13,8 +13,8 @@ set.recipes:
   recipes:
     - type: shapeless
       items:
-        - type: STICK
-        - type: IRON_INGOT
+        - type: minecraft:stick
+        - type: minecraft:iron_ingot
 
 observe:
   itemRightClick:

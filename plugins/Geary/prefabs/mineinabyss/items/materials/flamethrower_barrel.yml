@@ -1,0 +1,23 @@
+set.item:
+  itemName: <#0047AB>Flamethrower Barrel
+  type: minecraft:paper
+  itemModel: mineinabyss:flamethrower_barrel
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/materials/flamethrower_barrel  
+set.recipes:
+ result:
+   prefab: mineinabyss:flamethrower_barrel
+ discoverRecipes: true
+ recipes:
+ - type: shaped
+   items:
+     C:
+       prefab: mineinabyss:charcoal_sand_ingot
+     I:
+       type: minecraft:iron_ingot
+   configuration: |-
+     |CCC|
+     |III|
+     |CCC|

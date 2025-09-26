@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#7a4e48>Foliage 4
-    customModelData: 3004
+  customModelData: { floats: [ 3004 ] }
 set.block:
   blockType: WIRE
   blockId: 4

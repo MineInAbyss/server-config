@@ -11,7 +11,7 @@ set.item:
 set.potionMixes:
   potionmixes:
   - input:
-      type: POTION
+      type: minecraft:potion
       potionContents:
         potionType: minecraft:water
     ingredient:

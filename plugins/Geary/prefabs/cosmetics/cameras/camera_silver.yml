@@ -1,6 +1,6 @@
 set.item:
   itemName: "Silver Camera"
-  type: PAPER
+  type: minecraft:paper
   itemModel: event:camera_silver
 resourcepack:
   model: event:item/camera_silver

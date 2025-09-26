@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: GREEN_DYE
+    type: minecraft:green_dye
   group: "green_dye"
   recipes:
     - type: shapeless

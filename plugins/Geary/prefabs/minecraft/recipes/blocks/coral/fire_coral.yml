@@ -1,9 +1,9 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: FIRE_CORAL
+    type: minecraft:fire_coral
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: RED_DYE
+        - type: minecraft:red_dye

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Cosmos Pink
-    customModelData: 3011
+  customModelData: { floats: [ 3011 ] }
 set.block:
   blockType: WIRE
   blockId: 11

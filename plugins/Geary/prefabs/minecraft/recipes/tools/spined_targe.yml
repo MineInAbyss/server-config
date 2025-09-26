@@ -7,7 +7,7 @@ set.recipes:
     - type: shaped
       items:
         D:
-          type: SHIELD
+          type: minecraft:shield
         L: 
           prefab: mineinabyss:charcoal_sand_ingot
           

@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: GLOW_INK_SAC
+    type: minecraft:glow_ink_sac
   group: "glow_ink_sac"
   recipes:
     - type: shapeless

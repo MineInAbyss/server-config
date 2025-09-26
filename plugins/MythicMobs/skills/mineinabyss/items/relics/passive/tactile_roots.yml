@@ -1,0 +1,29 @@
+tactile_roots_trigger:
+  Conditions:
+  - inInventory
+  Skills:
+  - skill{s=tactile_roots_speed} @self
+  - skill{s=tactile_roots_slow} @self
+  - skill{s=tactile_roots_pain} @self
+
+tactile_roots_speed:
+  TargetConditions:
+    - onblock{m=DIRT,GRASS_BLOCK,MOSS,FARMLAND,GRAVEL,DIRT_PATH,SAND} true
+  Skills:
+    - potion{t=SPEED;d=60;p=false} @self
+    - effect:particles{particle=reddust;color=#696112;amount=1;r=1;i=1} @Self
+
+tactile_roots_slow:
+  TargetConditions:
+    - onblock{m=STONE,GRANITE,DIORITE,POLISHED_GRANITE,POLISHED_DIORITE,ANDESITE,POLISHED_ANDESITE,COBBLESTONE} true
+  Skills:
+    - potion{t=SLOWNESS;d=60;p=false} @self
+    - effect:particles{particle=reddust;color=#7F7053;amount=1;r=1;i=1} @Self
+
+tactile_roots_pain:
+  TargetConditions:
+    - onblock{m=OBSIDIAN,CRYING_OBSIDIAN} true
+  Skills:
+    - damage{a=5;tags=StoneInShoe} @self
+    - potion{t=SLOWNESS;d=60;l=2;p=false} @self
+    - effect:particles{particle=reddust;color=#202020;amount=1;r=1;i=1} @Self

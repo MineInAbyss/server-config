@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BOOK
+    type: minecraft:book
   group: "looty:book"
   recipes:
     - type: shaped
@@ -9,7 +9,7 @@ set.recipes:
         S:
           prefab: mineinabyss:silkfang_silk
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         |SP |
         |SP |
@@ -19,7 +19,7 @@ set.recipes:
         S:
           prefab: mineinabyss:kuongatari_silk
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         |SP |
         |SP |
@@ -29,7 +29,7 @@ set.recipes:
         S:
           prefab: mineinabyss:stinger_wing
         P:
-          type: PAPER
+          type: minecraft:paper
       configuration: |-
         |SP |
         |SP |

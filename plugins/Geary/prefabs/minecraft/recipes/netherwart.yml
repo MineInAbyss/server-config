@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: NETHER_WART
+    type: minecraft:nether_wart
   group: "nether_wart"
   recipes:
     - type: shapeless

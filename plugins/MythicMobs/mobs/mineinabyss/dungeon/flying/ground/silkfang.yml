@@ -1,0 +1,48 @@
+dungeonsilkfang:
+  Type: CAVE_SPIDER
+  SpawnCategory: hostile
+  Display: '<#696112>Silkfang'
+  Health: 22
+  Damage: 4
+  Options:
+    MovementSpeed: 0.36
+    MaxCombatDistance: 30
+    DigOutOfGround: true
+    PreventOtherDrops: true
+    Silent: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+    - 2 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+  DamageModifiers:
+    - ENTITY_ATTACK 1
+    - PROJECTILE 0.7
+    - DROWNING 0
+    - CONTACT 0
+    - FALLING 0
+  Model:
+    Id: silkfang
+    ViewRadius: 48
+    Drive: false
+    DamageTint: true
+  Drops:
+    - exp 10-15
+    - geary mineinabyss:silkfang_eye 1-2 0.6
+    - geary mineinabyss:silkfang_silk 1-2 0.6
+    - geary mineinabyss:bundle_of_silkfang_silk 1 0.2
+
+  Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=silkfangWeb;delay=<random.0to20>} @self ~onDamaged 0.65
+
+    - skill{s=sfSpiderWebShot} @Target ~onTimer:220
+    - state{mid=silkfang;s=attack;li=3;lo=3} @self ~onAttack
+    - state{mid=silkfang;s=hurt;li=3;lo=3} @self ~onDamaged
+    - dismount ~onDamaged
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=silkfangAmbient;delay=<random.0to10>} @self ~onTimer:110 0.33
+    - skill{s=silkfangHurt} @self ~onHurt
+    - skill{s=silkfangDeath} @self ~onDeath

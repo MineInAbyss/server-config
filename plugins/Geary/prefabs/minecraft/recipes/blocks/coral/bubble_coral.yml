@@ -1,14 +1,14 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: BUBBLE_CORAL
+    type: minecraft:bubble_coral
   group: "looty:bubble_coral"
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: PURPLE_DYE
+        - type: minecraft:purple_dye
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: MAGENTA_DYE
+        - type: minecraft:magenta_dye

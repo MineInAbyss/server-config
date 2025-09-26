@@ -1,0 +1,86 @@
+#################
+# Passive skill #
+#################
+capillary_growth_onattack:
+  Skills:
+  - onAttack{oH=capillary_growth_stack;cE=false;auraname=c_g_s;duration=100}
+
+####################
+# Left-click skill #
+####################
+capillary_hit: # Shim for geary
+  Skills:
+  - skill{s=capillary_hit_}
+capillary_hit_:
+  Conditions:
+    - holding{m=NETHERITE_SWORD} true
+    - isblocking false
+  Skills:
+  - onDeath{od=capillary_growth_kill} @target
+  - delay 1
+  - skill{s=capillary_state_1} 
+  - delay 1
+  - skill{s=capillary_state_2}
+  - particlesphere{particle=reddust;r=0.15;amount=25;y=1} @target
+
+capillary_growth_stack:
+  Cooldown: 0.6 #cooldown accounts for sword attack cooldown
+  Skills:
+  - aura{auraName=capillarygrowthstack;duration=1200;c=1;maxStacks=10;cotd=false;rd=true} @self
+  - aura{auraName=capillarysyphonstack;oT=capillary_syphon_target;duration=400;cotd=false;rd=true;i=5} @target
+  - effect:particles{particle=reddust;amount=4;speed=0;y=1} @target
+
+capillary_syphon_target:
+  Skills:
+  # - effect:particles{particle=damage_indicator;amount=5;speed=0;hS=0.5;vS=1;y=1;size=1} @targetedtarget
+  - particlesphere{particle=reddust;r=0.5;amount=25;y=1} @targetedtarget
+  
+capillary_growth_kill:
+  Cooldown: 0.6
+  Skills:
+  - heal{a=2} @self
+  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+
+capillary_state_1:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=1to9} true
+  Skills:
+  - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1} @self
+
+capillary_state_2:
+  Cooldown: 
+  Conditions:
+    - hasaurastacks{n=capillarygrowthstack;s=10} true
+  Skills:
+  - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1;size=1.5} @self
+  - effect:bloodyScreen{d=60} @self
+
+#####################
+# Right-click skill #
+#####################
+capillary_growth_effect: # Shim for geary
+  Skills:
+  - skill{s=capillary_growth_effect_}
+capillary_growth_effect_:
+  Skills:
+  - particleline{particle=dust_color_transition;color=#A52A2A;color2=#880808;amount=1;size=0.5;syo=1;db=0.1} @EIR{r=4}
+  - skill{s=capillary_growth_heal}
+  - delay 1
+  - skill{s=capillary_growth_syphon}
+
+capillary_growth_heal:
+  Skills:
+  - auraremove{aura=capillarygrowthstack} @self
+  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+  - potion{t=HEALTH_BOOST;d=40} @self
+  - heal{a=1} @self
+
+capillary_growth_syphon:
+  Skills:
+  - auraremove{aura=capillarysyphonstack} @EIR{r=4}
+  - effect:particles{particle=damage_indicator;amount=5;speed=0;hS=0.5;vS=1;y=1;size=1} @EIR{r=4}
+  - potion{t=WITHER;d=50;l=2} @EIR{r=4}
+  - spin{duration=50;velocity=20} @EIR{r=4;ignore=players}
+
+

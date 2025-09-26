@@ -1,9 +1,9 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: HORN_CORAL
+    type: minecraft:horn_coral
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:ashimite_antlers
-        - type: YELLOW_DYE
+        - type: minecraft:yellow_dye

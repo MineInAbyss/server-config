@@ -1,0 +1,37 @@
+set.item:
+  type: minecraft:paper
+  itemModel: mineinabyss:sin_spiral
+  itemName: <gold>Sin Spiral
+  lore:
+  - 'Grade II Relic'
+  - <#cdd13d>The Delver Guild has stricken this “Artifact” from its
+  - <#cdd13d>records for good reason. Why do you have this?
+  - <#D2D489><i>Active ability. Lunges user forward and creates
+  - <#D2D489><i>area of effect potions around the user on right click.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=sinspiralcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
+  - cooldown:
+      id: sinspiral
+      length: 8s #change to 50s after testing
+      display: <gold>Sin Spiral
+  - mythicSkills:
+    - sin_spiral
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - sin_spiral_charge
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/sin_spiral

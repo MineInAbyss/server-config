@@ -16,7 +16,7 @@ set.recipes:
   recipes:
   - type: smithing_transform
     template:
-      type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+      type: minecraft:netherite_upgrade_smithing_template
     input: mineinabyss:diamond_sickle
     addition: minecraft:netherite_ingot
 observe:

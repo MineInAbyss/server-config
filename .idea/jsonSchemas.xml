@@ -65,8 +65,8 @@
             <SchemaInfo>
               <option name="generatedName" value="New Schema" />
               <option name="name" value="geary" />
-              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/MineInAbyss/plugin-schemas/refs/heads/master/generated/geary.json" />
-              <option name="schemaVersion" value="JSON Schema 7" />
+              <option name="relativePathToSchema" value=".idea/schemas/geary.json" />
+              <option name="schemaVersion" value="JSON Schema 202,012" />
               <option name="patterns">
                 <list>
                   <Item>

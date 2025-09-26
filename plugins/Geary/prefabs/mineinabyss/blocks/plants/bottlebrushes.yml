@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: bottlebrushes
-  customModelData: 3009
+  customModelData: { floats: [ 3009 ] }
 set.block:
   blockType: WIRE
   blockId: 9

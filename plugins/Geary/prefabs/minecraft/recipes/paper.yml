@@ -1,7 +1,7 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: PAPER
+    type: minecraft:paper
   group: "paper"
   recipes:
     - type: shapeless

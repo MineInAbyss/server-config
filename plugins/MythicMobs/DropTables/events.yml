@@ -1,0 +1,40 @@
+CharredSkelPlayerHeads:
+  MaxItems: 1
+  Drops:
+  - blackskull 1 0.01
+  - flawedonyx 1 0.01
+  - goldenmask 1 0.01
+  - inkycore 1 0.01
+  - lightorb 1 0.01
+  - oldfossildust 1 0.01
+
+GoldenSkelPlayerHeads:
+  MaxItems: 1
+  MinItems: 1
+  Drops:
+  - golddustjar 1 0.1
+  - golddustpouch 1 0.1
+  - goldenlantern 1 0.1
+  - goldenskeletonskull 1 0.1
+  - goldenthread 1 0.1
+  - stonewithflowers 1 0.1
+
+LamentsThreadDrop:
+  Conditions:
+  Drops:
+  - geary mineinabyss:laments_thread 1-1 1 nolooting  
+
+SinSpiralDrop:
+  Conditions:
+  Drops:
+  - geary mineinabyss:sin_spiral 1-1 1 nolooting  
+
+MockwaterFluidDrop:
+  Conditions:
+  Drops:
+  - geary mineinabyss:mockwater_fluid 1-1 1 nolooting   
+
+GambitIncenseDrop:
+  Conditions:
+  Drops:
+  - geary mineinabyss:gambit_incense 1-1 1 nolooting    

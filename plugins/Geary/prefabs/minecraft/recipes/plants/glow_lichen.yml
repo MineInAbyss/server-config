@@ -1,9 +1,9 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: GLOW_LICHEN
+    type: minecraft:glow_lichen
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:kakatsumuri_glowing_tip
-        - type: VINE
+        - type: minecraft:vine

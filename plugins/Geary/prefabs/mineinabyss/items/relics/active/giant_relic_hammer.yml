@@ -1,0 +1,41 @@
+set.item:
+  type: minecraft:netherite_axe
+  itemModel: mineinabyss:giant_relic_hammer
+  itemName: <#79EDE2><b>Necrometallic Sledge
+  lore:
+  - ':layer_3: Grade I Relic'
+  - <#4A8781>The bacteria inside the head of this hammer is so densely
+  - <#4A8781>populated that it leaves a visible cloud when released. 
+  - <#31524E><i>Active ability. Lunges the user upward on right click 
+  - <#31524E><i>followed by a large impact which poisons the surroundings.
+  - <#31524E><i>Inflicts a poison like effect on the target on left click.
+  unbreakable: {}
+observe:
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - necrometallic_sledge_hit
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=necrometallicsledgecharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Lacks Charge
+  - cooldown:
+      id: hammer_smash
+      length: 35s
+      display: <#79EDE2>Necrometallic Sledge
+  - mythicSkills:
+    - necrometallic_sledge_ability
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - necrometallic_sledge_charge
+resourcepack:
+  model: mineinabyss:item/relics/necrometallic_sledge
