@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#808000>Tidal Spout
+  itemName: <#f7e7ce>Tidal Spout
   type: minecraft:paper
   itemModel: mineinabyss:wave_charm
   lore:
   - ':layer_4: Grade III Relic'
-  - <#A3A300>This Relic has found use outside of the Abyss
-  - <#A3A300>among sea captains wishing to speed up their boats.
-  - <#D1D100><i>Active ability. Generates a large wall of water
-  - <#D1D100><i>on right click which can push back entities. 
+  - <#d7c9b3>This Relic has found use outside of the Abyss
+  - <#d7c9b3>among sea captains wishing to speed up their boats.
+  - <#ebdcc6><i>Active ability. Generates a large wall of water
+  - <#ebdcc6><i>on right click which can push back entities. 
 observe:
   itemRightClick:
   - become: parent
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: tidalwave
       length: 20s
-      display: <#808000>Tidal Spout
+      display: <#f7e7ce>Tidal Spout
   - mythicSkills:
     - tidal_spout
 resourcepack:

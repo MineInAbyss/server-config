@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#6E260E>Gold-mending Wedge
+  itemName: <#4c6444>Gold-mending Wedge
   type: minecraft:paper
   itemModel: mineinabyss:vverdaueffax
   lore:
   - ':layer_1::layer_2: Grade II Relic'
-  - <#903213>Outside of the Abyss, this Relic fetches a high
-  - <#903213>price for its uses in chronic pain treatment. 
-  - <#B94018><i>Passive slot ability. Grants fast regen
-  - <#B94018><i>when the user drops below 4 hearts.
+  - <#43583c>Outside of the Abyss, this Relic fetches a high
+  - <#43583c>price for its uses in chronic pain treatment. 
+  - <#5e7b54><i>Passive slot ability. Grants fast regen
+  - <#5e7b54><i>when the user drops below 4 hearts.
 passive:
 - match:
   - inInventory

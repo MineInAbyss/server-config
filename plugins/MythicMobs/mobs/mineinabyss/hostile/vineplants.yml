@@ -33,6 +33,7 @@ vinebinder:
   Drops:
     - exp 10-15
     - geary mineinabyss:plant_matter 1-2 0.6
+    - RareSaplingDrops
 
 
   Skills:
@@ -75,6 +76,7 @@ vineblaster:
   Drops:
     - exp 10-15
     - geary mineinabyss:plant_matter 1-2 0.6
+    - RareSaplingDrops
 
   Skills:
     ####### Misc
@@ -157,6 +159,7 @@ vinepoofer:
   Drops:
     - exp 10-15
     - geary mineinabyss:plant_matter 1-2 0.6
+    - RareSaplingDrops
 
   Skills:
     ####### Misc

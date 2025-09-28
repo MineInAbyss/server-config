@@ -25,9 +25,9 @@ set.recipes:
       S:
         prefab: mineinabyss:stingerhead_eye
     configuration: |-
-      | H |
+      | Y |
       |YSY|
-      |YCY|
+      |HCH|
 observe:
   itemConsumed:
   - become: parent

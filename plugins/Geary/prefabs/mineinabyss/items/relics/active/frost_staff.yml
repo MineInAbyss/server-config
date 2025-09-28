@@ -19,7 +19,7 @@ observe:
         text: <red>Out of Experience
   - cooldown:
       id: shiver_mist_area
-      length: 35s
+      length: 45s
       display: <#CCDADB>Shiver Mist
   - mythicSkills:
     - shiver_mist_hit

@@ -7,8 +7,6 @@ necrometallic_blade_hit: # Shim for geary
   - skill{s=necrometallic_blade_hit_}
   - delay 1
   - skill{s=necrometallic_chipping_spores} #needs to be moved from totem to mob
-  - delay 1
-  - skill{s=necrometallic_blade_effect_main}
 necrometallic_blade_hit_:
   Cooldown: 0.6 #to account for minecraft sword attack cooldown
   TargetConditions:
@@ -37,8 +35,8 @@ necrometallic_blade_vulnerable:
   Skills:
   - aura{auraName=necrometallicbladedebuff;
               onTick=necrometallic_blade_tick;
-              i=20;
-              duration=101;
+              i=30;
+              duration=151;
               c=1;
               maxStacks=30;
               cotd=false;
@@ -49,66 +47,96 @@ necrometallic_blade_vulnerable:
 necrometallic_blade_tick:
   Skills:
   - skill{s=necrometallic_blade_tick_1}
-  - delay 1
   - skill{s=necrometallic_blade_tick_2}
-  - delay 1
   - skill{s=necrometallic_blade_tick_3}
-  - delay 1
   - skill{s=necrometallic_blade_tick_4}
+  - skill{s=necrometallic_blade_tick_5}
 
 necrometallic_blade_tick_1:
-  Cooldown: 0.96
+  Cooldown: 0.1
   TargetConditions:
     - hasaurastacks{n=necrometallicbladedebuff;s=1to9} true
   Skills:
   - effect:particles{particle=glow_squid_ink;amount=3;hS=1;vS=0.5;y=1} @targetedtarget
   - effect:particles{particle=sneeze;amount=1;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  #- damage{a=1;pkb=true;ia=true;is=true} @targetedtarget
-  #- damage{a=2;pkb=true} @targetedtarget{ignore=players}
-  - potion{t=POISON;d=30;l=0} @targetedtarget
+  - damage{a=1;pkb=true;ia=true;is=true} @targetedtarget
+  - damage{a=2;pkb=true} @targetedtarget{ignore=players}
+  #- potion{t=POISON;d=30;l=0} @targetedtarget
 
 necrometallic_blade_tick_2:
-  Cooldown: 0.96
+  Cooldown: 0.1
   TargetConditions:
     - hasaurastacks{n=necrometallicbladedebuff;s=10to17} true
   Skills:
   - effect:particles{particle=glow_squid_ink;amount=4;hS=1;vS=0.5;y=1} @targetedtarget
   - effect:particles{particle=sneeze;amount=2;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  #- damage{a=1.5;pkb=true;ia=true;is=true} @targetedtarget
-  #- damage{a=2.5;pkb=true} @targetedtarget{ignore=players}
-  - potion{t=POISON;d=30;l=0} @targetedtarget
-  - potion{t=WITHER;d=30;l=0} @targetedtarget
+  - damage{a=1.5;pkb=true;ia=true;is=true} @targetedtarget
+  - damage{a=2.5;pkb=true} @targetedtarget{ignore=players}
+  #- potion{t=POISON;d=30;l=0} @targetedtarget
+  #- potion{t=WITHER;d=30;l=0} @targetedtarget
 
 necrometallic_blade_tick_3:
-  Cooldown: 0.96
+  Cooldown: 0.1
   TargetConditions:
     - hasaurastacks{n=necrometallicbladedebuff;s=18to22} true
   Skills:
   - effect:particles{particle=glow_squid_ink;amount=3;hS=1;vS=0.5;y=1} @targetedtarget
   - effect:particles{particle=sneeze;amount=2;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
   - effect:particles{particle=trial_omen;amount=1;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  #- damage{a=2;pkb=true;ia=true;is=true} @targetedtarget
-  #- damage{a=3;pkb=true} @targetedtarget{ignore=players}
-  - potion{t=POISON;d=30;l=1} @targetedtarget
+  - damage{a=2;pkb=true;ia=true;is=true} @targetedtarget
+  - damage{a=3;pkb=true} @targetedtarget{ignore=players}
+  #- potion{t=POISON;d=30;l=1} @targetedtarget
 
 necrometallic_blade_tick_4:
-  Cooldown: 0.96
+  Cooldown: 0.1
   TargetConditions:
     - hasaurastacks{n=necrometallicbladedebuff;s=25to30} true
   Skills:
   - effect:particles{particle=glow_squid_ink;amount=2;hS=1;vS=0.5;y=1} @targetedtarget
   - effect:particles{particle=sneeze;amount=3;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
   - effect:particles{particle=trial_omen;amount=3;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  #- damage{a=3;pkb=true;ia=true;is=true} @targetedtarget
-  #- damage{a=4;pkb=true} @targetedtarget{ignore=players}
-  - potion{t=POISON;d=30;l=1} @targetedtarget
-  - potion{t=WITHER;d=30;l=0} @targetedtarget
+  - damage{a=3;pkb=true;ia=true;is=true} @targetedtarget
+  - damage{a=4;pkb=true} @targetedtarget{ignore=players}
+  #- potion{t=POISON;d=30;l=1} @targetedtarget
+  #- potion{t=WITHER;d=30;l=0} @targetedtarget
+
+necrometallic_blade_tick_5:
+  Cooldown: 0.1
+  TargetConditions:
+    - hasaurastacks{n=necrometallicbladedebuff;s=30} true
+  Skills:
+  - effect:particles{particle=glow_squid_ink;amount=2;hS=1;vS=0.5;y=1} @targetedtarget
+  - effect:particles{particle=sneeze;amount=3;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
+  - effect:particles{particle=trial_omen;amount=3;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
+  - effect:particles{particle=spore_blossom_air;amount=10;hS=2;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;size=1.5} @targetedtarget
+  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @targetedtarget
+  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @targetedtarget
+  - damage{a=10;pkb=true;ia=true;is=true} @targetedtarget
+  - damage{a=25;pkb=true} @targetedtarget{ignore=players}
+  - potion{t=WITHER;d=100;l=2} @targetedtarget
+  - auraremove{aura=necrometallicbladedebuff} @targetedtarget
+
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
+
+necrometallic_blade_effect: # Shim for geary
+  Skills:
+  - skill{s=necrometallic_blade_effect_}
+necrometallic_blade_effect_:
+  Conditions:
+  Skills:
+    - skill{s=necrometallic_blade_effect_main}
 
 necrometallic_blade_effect_main:
   Cooldown:
   Conditions:
     - hasaurastacks{n=necrometallicbladecharge;s=3} true
   Skills:
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.7;v=1;repeat=3;repeatInterval=10} @self
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.8;v=1;repeat=3;repeatInterval=10} @self
+  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.9;v=0.9;repeat=3;repeatInterval=10} @self
+  - delay 3
   - projectile{onTick=necrometallic_blade_effect_main_tick;onHit=necrometallic_blade_effect_main_hit;v=7;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=0;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=6;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=5;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
   - projectile{onTick=necrometallic_blade_effect_main_tick;v=8;i=1;mr=20;hnp=true;sE=false;sB=true;hs=false;hfs=0;syo=0.5;hR=1.3;vR=1.3;hO=-5;vO=0.339;a=0.6;g=0.7;pi=true} @Forward{f=1000}
@@ -129,139 +157,43 @@ necrometallic_blade_effect_main_tick:
   - effect:particles{particle=sneeze;amount=2;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.4} @origin
   - effect:particles{particle=reddust;color=#FF5C5C;amount=1;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.7} @origin
   - effect:particles{particle=reddust;color=#FDE55D;amount=1;hS=0.12;vS=0.12;speed=0;forwardOffset=0;sideOffset=0;size=0.6} @origin
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @self
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.5} @self
+  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.25} @self
+  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.35} @self
   - aura{auraName=necrometallicbladedebuff;onTick=necrometallic_blade_tick;i=20;duration=101;c=2;maxStacks=30;cotd=false;cod=true;cocd=true;rd=true} @EntitiesNearOrigin{r=2}
   - potion{type=POISON;duration=100;level=0;hasParticles=false} @EntitiesNearOrigin{r=2}
   - potion{type=POISON;duration=100;level=1;hasParticles=false} @EntitiesNearOrigin{r=1}
 
 necrometallic_blade_effect_main_hit:
   Skills:
-  - damage{a=5;ia=true;is=true} @ENO{r=2}
+  - damage{a=15;ia=true;is=true} @ENO{r=2}
 
-####################################################################
-##################### Right Click Ability ##########################
-####################################################################
+# necrometallic_blade_charge_1:
+#   Cooldown: 3
+#   Conditions:
+#     - hasaurastacks{n=necrometallicbladecharge;s=1} true
+#   Skills:
+#     - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=1;repeat=2;repeatInterval=10} @self
+#     - effect:particles{particle=glow_squid_ink;amount=2;hS=1;vS=0.2;y=0.5} @self
+#     - effect:particles{particle=smoke;amount=2;hS=1;vS=0.5;y=0.2;speed=0} @self
 
-necrometallic_blade_charge: # Shim for geary
-  Skills:
-  - skill{s=necrometallic_blade_charge_}
-necrometallic_blade_charge_:
-  Conditions:
-  Skills:
-    - skill{s=necrometallic_blade_effect_sub} @self
-    - delay 1
-    - aura{auraName=necrometallicbladecharge;duration=200;maxStacks=3;cotd=false;cod=true;rd=true} @self
-    - skill{s=necrometallic_blade_charge_1} @self
-    - delay 1
-    - skill{s=necrometallic_blade_charge_2} @self
-    - delay
-    - skill{s=necrometallic_blade_charge_3} @self
+# necrometallic_blade_charge_2:
+#   Cooldown: 3
+#   Conditions:
+#     - hasaurastacks{n=necrometallicbladecharge;s=2} true
+#   Skills:
+#     - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=1;repeat=2;repeatInterval=10} @self
+#     - effect:particles{particle=glow_squid_ink;amount=4;hS=1;vS=0.2;y=0.5} @self
+#     - effect:particles{particle=smoke;amount=2;hS=1;vS=0.5;y=0.2;speed=0} @self
 
-necrometallic_blade_effect_sub:
-  Cooldown: 0.6 #to account for minecraft sword attack cooldown
-  Conditions:
-    - hasaurastacks{n=necrometallicbladecharge;s=3} true
-  Skills:
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.7;v=1;repeat=3;repeatInterval=10} @self
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.8;v=1;repeat=3;repeatInterval=10} @self
-  - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.9;v=0.9;repeat=3;repeatInterval=10} @self
-  - delay 10
-  - effect:particles{particle=sneeze;amount=10;hS=2;vS=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
-  - effect:particles{particle=spore_blossom_air;amount=10;hS=2;vS=0.5;speed=0.5;forwardOffset=0;sideOffset=0;size=1.5} @self
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @self
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @self
-  - potion{type=POISON;duration=100;level=1;hasParticles=false} @self
-  - auraremove{aura=necrometallicbladecharge} @self
-  - delay 5
-  - skill{s=necrometallic_blade_effect_1} @EIR{r=6}
-  - delay 1
-  - skill{s=necrometallic_blade_effect_2} @EIR{r=6}
-  - delay 1
-  - skill{s=necrometallic_blade_effect_3} @EIR{r=6}
-  - delay 1
-  - skill{s=necrometallic_blade_effect_4} @EIR{r=6}
-
-necrometallic_blade_effect_1:
-  Cooldown: 1
-  TargetConditions:
-    - hasaurastacks{n=necrometallicbladedebuff;s=1to9} true
-  Skills:
-  - effect:particles{particle=glow_squid_ink;amount=6;hS=1;vS=0.5;y=1} @targetedtarget
-  - effect:particles{particle=sneeze;amount=2;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @targetedtarget
-  - damage{a=4;pkb=true;ia=true;is=true} @targetedtarget
-  - damage{a=10;pkb=true} @targetedtarget{ignore=players}
-
-necrometallic_blade_effect_2:
-  Cooldown: 1
-  TargetConditions:
-    - hasaurastacks{n=necrometallicbladedebuff;s=10to17} true
-  Skills:
-  - effect:particles{particle=glow_squid_ink;amount=8;hS=1;vS=0.5;y=1} @targetedtarget
-  - effect:particles{particle=sneeze;amount=4;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @targetedtarget
-  - damage{a=6;pkb=true;ia=true;is=true} @targetedtarget
-  - damage{a=10;pkb=true} @targetedtarget{ignore=players}
-  - potion{type=POISON;duration=80;level=0;hasParticles=false}
-
-necrometallic_blade_effect_3:
-  Cooldown: 1
-  TargetConditions:
-    - hasaurastacks{n=necrometallicbladedebuff;s=18to22} true
-  Skills:
-  - effect:particles{particle=glow_squid_ink;amount=6;hS=1;vS=0.5;y=1} @targetedtarget
-  - effect:particles{particle=sneeze;amount=4;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - effect:particles{particle=trial_omen;amount=2;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @targetedtarget
-  - damage{a=8;pkb=true;ia=true;is=true} @targetedtarget
-  - damage{a=10;pkb=true} @targetedtarget{ignore=players}
-  - potion{type=POISON;duration=100;level=1;hasParticles=false}
-
-necrometallic_blade_effect_4:
-  Cooldown: 1
-  TargetConditions:
-    - hasaurastacks{n=necrometallicbladedebuff;s=25to30} true
-  Skills:
-  - effect:particles{particle=glow_squid_ink;amount=4;hS=1;vS=0.5;y=1} @targetedtarget
-  - effect:particles{particle=sneeze;amount=6;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - effect:particles{particle=trial_omen;amount=6;hS=1;vS=0.5;y=1;speed=0} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.3;v=0.4} @targetedtarget
-  - sound{s=block.fungus.break;sc=ui;p=0.4;v=0.7} @targetedtarget
-  - damage{a=10;pkb=true;ia=true;is=true} @targetedtarget
-  - damage{a=10;pkb=true} @targetedtarget{ignore=players}
-  - potion{type=POISON;duration=120;level=1;hasParticles=false}
-
-necrometallic_blade_charge_1:
-  Cooldown: 3
-  Conditions:
-    - hasaurastacks{n=necrometallicbladecharge;s=1} true
-  Skills:
-    - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=1;repeat=2;repeatInterval=10} @self
-    - effect:particles{particle=glow_squid_ink;amount=2;hS=1;vS=0.2;y=0.5} @self
-    - effect:particles{particle=smoke;amount=2;hS=1;vS=0.5;y=0.2;speed=0} @self
-
-necrometallic_blade_charge_2:
-  Cooldown: 3
-  Conditions:
-    - hasaurastacks{n=necrometallicbladecharge;s=2} true
-  Skills:
-    - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=1;repeat=2;repeatInterval=10} @self
-    - effect:particles{particle=glow_squid_ink;amount=4;hS=1;vS=0.2;y=0.5} @self
-    - effect:particles{particle=smoke;amount=2;hS=1;vS=0.5;y=0.2;speed=0} @self
-
-necrometallic_blade_charge_3:
-  Cooldown: 3
-  Conditions:
-    - hasaurastacks{n=necrometallicbladecharge;s=3} true
-  Skills:
-    - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=0.9;repeat=3;repeatInterval=10} @self
-    - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=0.9;repeat=3;repeatInterval=10} @self
-    - sound{s=entity.puffer_fish.death;sc=ui;p=0.2;v=0.7} @self
-    - sound{s=entity.puffer_fish.death;sc=ui;p=0.1;v=0.5} @self
-    - effect:particles{particle=glow_squid_ink;amount=6;hS=1;vS=0.2;y=0.5} @self
-    - effect:particles{particle=sneeze;amount=3;hS=1;vS=0.2;y=0.5} @self
-    - effect:particles{particle=smoke;amount=3;hS=1;vS=0.5;y=0.2;speed=0} @self
+# necrometallic_blade_charge_3:
+#   Cooldown: 3
+#   Conditions:
+#     - hasaurastacks{n=necrometallicbladecharge;s=3} true
+#   Skills:
+#     - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=0.9;repeat=3;repeatInterval=10} @self
+#     - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.6;v=0.9;repeat=3;repeatInterval=10} @self
+#     - sound{s=entity.puffer_fish.death;sc=ui;p=0.2;v=0.7} @self
+#     - sound{s=entity.puffer_fish.death;sc=ui;p=0.1;v=0.5} @self
+#     - effect:particles{particle=glow_squid_ink;amount=6;hS=1;vS=0.2;y=0.5} @self
+#     - effect:particles{particle=sneeze;amount=3;hS=1;vS=0.2;y=0.5} @self
+#     - effect:particles{particle=smoke;amount=3;hS=1;vS=0.5;y=0.2;speed=0} @self

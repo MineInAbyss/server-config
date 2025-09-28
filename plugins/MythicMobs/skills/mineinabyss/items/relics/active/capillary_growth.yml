@@ -21,7 +21,8 @@ capillary_hit_:
   - skill{s=capillary_state_1} 
   - delay 1
   - skill{s=capillary_state_2}
-  - particlesphere{particle=reddust;r=0.15;amount=25;y=1} @target
+  - particlesphere{particle=reddust;r=0.5;amount=25;y=1} @target{ignore=players}
+  - particlesphere{particle=reddust;r=0.5;amount=25;y=2} @target{ignore=mobs}
 
 capillary_growth_stack:
   Cooldown: 0.6 #cooldown accounts for sword attack cooldown
@@ -33,13 +34,14 @@ capillary_growth_stack:
 capillary_syphon_target:
   Skills:
   # - effect:particles{particle=damage_indicator;amount=5;speed=0;hS=0.5;vS=1;y=1;size=1} @targetedtarget
-  - particlesphere{particle=reddust;r=0.5;amount=25;y=1} @targetedtarget
+  - particlesphere{particle=reddust;r=0.5;amount=25;y=1} @targetedtarget{ignore=players}
+  - particlesphere{particle=reddust;r=0.5;amount=25;y=2} @targetedtarget{ignore=mobs}
   
 capillary_growth_kill:
   Cooldown: 0.6
   Skills:
   - heal{a=2} @self
-  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+  - effect:particles{particle=heart;amount=1;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
 
 capillary_state_1:
   Cooldown: 
@@ -54,7 +56,7 @@ capillary_state_2:
     - hasaurastacks{n=capillarygrowthstack;s=10} true
   Skills:
   - effect:particles{p=dust_color_transition;color=#A52A2A;color2=#880808;amount=5;hS=0.5;vS=1;speed=0;y=1;size=1.5} @self
-  - effect:bloodyScreen{d=60} @self
+  - effect:bloodyScreen{d=80} @self
 
 #####################
 # Right-click skill #
@@ -72,15 +74,18 @@ capillary_growth_effect_:
 capillary_growth_heal:
   Skills:
   - auraremove{aura=capillarygrowthstack} @self
-  - effect:particles{particle=heart;amount=2;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
-  - potion{t=HEALTH_BOOST;d=40} @self
-  - heal{a=1} @self
+  - effect:particles{particle=heart;amount=1;speed=0;hS=0.3;vS=0.3;y=1;size=0.5} @self
+  - potion{t=HEALTH_BOOST;d=60} @self
+  - heal{a=1;repeat=3;repeatInterval=30} @self
 
 capillary_growth_syphon:
+  TargetConditions:
+    - hasaurastacks{n=capillarysyphonstack} true
   Skills:
   - auraremove{aura=capillarysyphonstack} @EIR{r=4}
   - effect:particles{particle=damage_indicator;amount=5;speed=0;hS=0.5;vS=1;y=1;size=1} @EIR{r=4}
   - potion{t=WITHER;d=50;l=2} @EIR{r=4}
-  - spin{duration=50;velocity=20} @EIR{r=4;ignore=players}
+  - damage{a=5;is=true;ia=true;repeat=3;repeatInterval=30} @EIR{r=4;ignore=players}
+  - damage{a=4;is=true;ia=true;repeat=3;repeatInterval=30} @EIR{r=4}
 
 

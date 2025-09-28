@@ -22,7 +22,7 @@ subtle_pull_area_control:
   Conditions:
     - hasaurastacks{n=subtlepullcharge} true
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -50";op=true}
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -35";op=true}
   # - totem{charges=1;onStart=subtle_pull_totem} @RandomLocationsNearCaster{a=3;r=4}
   - summon{type=subtle_pull_center_small;amount=1;r=0;yRadius=0} @SelfLocation{z=6;x=0}
   - summon{type=subtle_pull_center_small;amount=1;r=0;yRadius=0} @SelfLocation{z=-1.5;x=-5.2}
@@ -57,7 +57,7 @@ subtle_pull_projectile:
   Conditions:
     - hasaurastacks{n=subtlepullcharge} true
   Skills:
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -150";op=true}
+  - command{c="execute at <caster.uuid> run xp add <caster.name> -100";op=true}
   # - projectile{bulletType=MYTHICITEM;material=va5;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_collision;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
   - projectile{bulletType=TEXT;bulletSpin=150;onTick=subtle_pull_tick;onHit=subtle_pull_collision;mr=170;v=7;i=1;hR=1;hp=true;hnp=true;vR=1;sE=true;hs=false;d=37;syo=1.2;g=0;onEnd=subtle_pull_end;sE=false;hp=true} @forward{f=1000}
   - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @origin
@@ -115,7 +115,7 @@ subtle_pull_damage:
   Cooldown: 0
   Skills:
    - shieldbreak{duration=150} @EntitiesNearOrigin{r=7}
-   - damage{a=60;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
+   - damage{a=70;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
    - damage{a=25;pi=true} @EntitiesNearOrigin{r=7;ignore=players}
    - damage{a=42;ignorearmor=false} @PlayersNearOrigin{r=2;conditions=[
                               - playerwithin{d=2} true ]}

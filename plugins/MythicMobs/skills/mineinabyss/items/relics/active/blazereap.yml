@@ -7,7 +7,7 @@ blazereap_charge:
   Conditions:
     - hasaurastacks{n=primerstop} false
   Skills:
-    - aura{auraName=blazereap;onStart=blazereapstack;duration=200;c=1;maxStacks=5;cotd=false} @self
+    - aura{auraName=blazereap;onStart=blazereapstack;duration=300;c=1;maxStacks=5;cotd=false;rd=true} @self
     - skill{s=blazereapready} @self
     - effect:particles{particle=crit;amount=20;hS=0.5;vS=1;speed=0;y=0.5}
 
@@ -39,7 +39,7 @@ BlazeReap:
     - effect:particles{p=hugeexplode;a=2;vs=0.2;hs=0.2;s=0;y=1} @self
     - sound{s=entity.warden.sonic_boom;sc=ui;p=<random.float.0.5to1.0>;v=1.5} @PIR{r=30}
     - throw{velocity=30;velocityY=5} @EntitiesInRadius{r=12;ignore=players}
-    - damage{a=40;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
+    - damage{a=55;ignorearmor=false} @EntitiesNearOrigin{r=3;ignore=players}
     - damage{a=30;pi=true} @EntitiesNearOrigin{r=6;ignore=players}
     - damage{a=10;pi=true} @EntitiesNearOrigin{r=12;ignore=players}
     - damage{a=35;ignorearmor=false} @PlayersNearOrigin{r=4;conditions=[

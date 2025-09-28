@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#808000>Undying Wisp
+  itemName: <#f7e7ce>Undying Wisp
   type: minecraft:paper
   itemModel: mineinabyss:bone_staff
   lore:
   - ':layer_5: Grade III Relic'
-  - <#A3A300>The sound produced by this seemingly-primitive rattle is
-  - <#A3A300>enough to send chills down the spine of any who hear it.  
-  - <#D1D100><i>Active ability. Shoots projectile on right click.
-  - <#D1D100><i>Projectile stuns the target it hits.
+  - <#d7c9b3>The sound produced by this seemingly-primitive rattle is
+  - <#d7c9b3>enough to send chills down the spine of any who hear it.  
+  - <#ebdcc6><i>Active ability. Shoots projectile on right click.
+  - <#ebdcc6><i>Projectile stuns the target it hits.
 observe:
   itemRightClick:
   - become: parent
@@ -21,7 +21,7 @@ observe:
   - cooldown:
       id: undying_wisp
       length: 20s
-      display: <#808000>Undying Wisp
+      display: <#f7e7ce>Undying Wisp
   - mythicSkills:
     - undying_wisp
 passive:

@@ -1,12 +1,12 @@
 set.item:
-  itemName: <#808000>Frayed Murmur
+  itemName: <#f7e7ce>Frayed Murmur
   type: minecraft:paper
   itemModel: mineinabyss:frayed_murmur
   lore:
   - ':layer_3: Grade III relic'
-  - <#A3A300>Derived from technology recovered from Interference Units, this
-  - <#A3A300>mask bends light around its wearer, but inexplicably not itself.
-  - <#D1D100><i>Passive slot ability. Turns the user invisible.
+  - <#d7c9b3>Derived from technology recovered from Interference Units, this
+  - <#d7c9b3>mask bends light around its wearer, but inexplicably not itself.
+  - <#ebdcc6><i>Passive slot ability. Turns the user invisible.
 passive:
 - match:
   - inInventory

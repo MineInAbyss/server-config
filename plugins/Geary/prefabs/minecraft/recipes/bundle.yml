@@ -2,7 +2,7 @@ set.recipes:
   discoverRecipes: true
   result:
     type: minecraft:bundle
-  group: "bundle"
+  group: "looty:bundle"
   recipes:
     - type: shapeless
       items:

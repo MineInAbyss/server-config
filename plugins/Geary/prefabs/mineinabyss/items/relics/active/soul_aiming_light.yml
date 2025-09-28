@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:paper
-  itemName: <#6E260E>Soul-aiming Light
+  itemName: <#4c6444>Soul-aiming Light
   itemModel: mineinabyss:soul-aiming_light
   lore:
   - ':layer_5: Grade II Relic'
-  - <#903213>A prototype device once wielded by the Sovereign of Dawn,
-  - <#903213>discarded for unknown reasons.
-  - <#B94018><i>Active ability. Shoots multiple homing
-  - <#B94018><i>projectiles on right click.
+  - <#43583c>A prototype device once wielded by the Sovereign of Dawn,
+  - <#43583c>discarded for unknown reasons.
+  - <#5e7b54><i>Active ability. Shoots multiple homing
+  - <#5e7b54><i>projectiles on right click.
 observe:
   itemRightClick:
   - become: parent
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: aiming_light
       length: 35s
-      display: <#6E260E>Aiming Light
+      display: <#4c6444>Aiming Light
   - applyPotionEffects:
     - type: minecraft:glowing
       duration: 10s
@@ -32,7 +32,7 @@ observe:
       hasParticles: false
   - geary:shulker_bullet:
       amount: 3
-      damage: 15
+      damage: 17
       radius: 20
       homing: true
       speed: 2
