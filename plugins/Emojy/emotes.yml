@@ -246,6 +246,9 @@ emotes:
   - id: miuw
     font: mineinabyss:whistles
     texture: mineinabyss:whistles/miuw.png
+  - id: azuw
+    font: mineinabyss:whistles
+    texture: mineinabyss:whistles/azuw.png
   - id: adventure
     template: role_template
     texture: mineinabyss:ui/prefixes/server/adventure.png
