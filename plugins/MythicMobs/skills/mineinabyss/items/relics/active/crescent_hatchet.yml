@@ -28,8 +28,10 @@ crescent_slash_2:
     - hasaurastacks{n=crescentprimer;s=3to4} true
   Skills:
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
-  - delay 4
-  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_2;v=12;i=1;hR=1.5;vR=1.5;mr=3;hnp=true;hp=true;hO=0;sE=false;sB=true;d=60;hs=false} @forward{f=1000}
+  - delay 1
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_2;v=12;i=1;hR=1.5;vR=1.5;mr=3;hnp=true;hp=true;hO=0;sE=false;sB=true;d=60;hs=false;syo=2} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=3} @self
 
 crescent_slash_3:
@@ -37,8 +39,10 @@ crescent_slash_3:
     - hasaurastacks{n=crescentprimer;s=5to6} true
   Skills:
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
-  - delay 4
-  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=14;i=1;hR=1.5;vR=1.5;mr=6;hnp=true;hp=true;hO=0;sE=false;sB=true;d=80;hs=false} @forward{f=1000}
+  - delay 1
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=14;i=1;hR=1.5;vR=1.5;mr=6;hnp=true;hp=true;hO=0;sE=false;sB=true;d=80;hs=false;syo=2} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=5} @self
 
 crescent_slash_4:
@@ -48,8 +52,10 @@ crescent_slash_4:
   - skill{s=crescent_debuff}
   - delay 1
   - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
-  - delay 4
-  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=16;i=1;hR=1.5;vR=1.5;mr=12;hnp=true;hp=true;hO=0;sE=false;sB=true;d=150;hs=false} @forward{f=1000}
+  - delay 1
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - sound{s=block.trial_spawner.ominous_activate;sc=ui;p=1.5;v=1.1} @self
+  - projectile{bulletType=MOB;mob=crescent_projectile;onHit=crescent_hit_3;v=16;i=1;hR=1.5;vR=1.5;mr=12;hnp=true;hp=true;hO=0;sE=false;sB=true;d=150;hs=false;syo=2} @forward{f=1000}
   - auraremove{aura=crescentprimer;stacks=10} @self
 
 crescent_debuff:
@@ -57,11 +63,9 @@ crescent_debuff:
     - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
   - effect:particles{p=flash;amount=3;hS=0.3;vS=0.3;speed=0;y=0.5} @forward{f=1}
-  - damage{a=30;pkb=false;hnp=false;hp=true;pi=true} @self
-  - delay 4
-  - throw{velocity=5;velocityY=2} @self
+  - damage{a=25;pkb=false;hnp=false;hp=true;pi=true} @self
   - delay 1
-  - aura{auraName=crescentstop;duration=200;c=1;cotd=false} @self
+  - lunge{velocity=1;velocityY=0.4} @forward{f=-3;y=-1}
 
 slash_1:
   Conditions:
@@ -81,19 +85,19 @@ slash_2:
 
 slash_damage:
   Skills:
-  - damage{a=20;pkb=false;hnp=true;hp=true;pi=true}
+  - damage{a=17;pkb=false;hnp=true;hp=true;pi=true}
 
 crescent_hit_2:
   Skills:
-  - damage{a=25;pkb=false;hnp=true;hp=true;pi=true}
+  - damage{a=22;pkb=false;hnp=true;hp=true;pi=true}
 
 crescent_hit_3:
   Skills:
-  - damage{a=30;pkb=false;hnp=true;hp=true;pi=true}
+  - damage{a=28;pkb=false;hnp=true;hp=true;pi=true}
 
 crescent_hit_4:
   Skills:
-  - damage{a=40;pkb=false;hnp=true;hp=true;pi=true}
+  - damage{a=35;pkb=false;hnp=true;hp=true;pi=true}
 
 ####################################################################
 ##################### Right Click Ability ##########################
@@ -105,9 +109,9 @@ crescent_primer:
     - hasaurastacks{n=crescentstop;s=1} false
   Skills:
   - aura{auraName=crescentprimer;onStart=crescent_start;duration=120;c=1;maxStacks=10;cotd=false;cod=true;rd=true} @self
-  - sound{s=entity.leash_knot.place;sc=ui;p=0.3;v=0.6} @self
-  - sound{s=entity.leash_knot.place;sc=ui;p=0.15;v=0.5} @self
-  - effect:particles{p=enchant;amount=10;hS=0.3;vS=0.3;speed=0;y=0.5} @self
+  - sound{s=block.lodestone.place;sc=ui;p=1.5;v=1} @self
+  - sound{s=block.lodestone.place;sc=ui;p=1.6;v=1} @self
+  - effect:particles{p=enchant;amount=10;hS=0.5;vS=0.4;speed=0;y=1.3} @self
   - skill{s=crescent_slash_1_charged} @self
   - delay 1
   - skill{s=crescent_slash_2_charged} @self
@@ -117,29 +121,34 @@ crescent_primer:
   - skill{s=crescent_slash_4_charged} @self
 
 crescent_slash_1_charged:
-  Cooldown: 1
+  Cooldown: 0.9
   Conditions:
     - hasaurastacks{n=crescentprimer;s=1to2} true
   Skills:
-  - effect:particles{p=end_rod;amount=2;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=end_rod;amount=3;hS=1;vS=0.2;speed=0;y=1.3}
 
 crescent_slash_2_charged:
-  Cooldown: 1
+  Cooldown: 0.9
   Conditions:
     - hasaurastacks{n=crescentprimer;s=3to4} true
   Skills:
-  - effect:particles{p=end_rod;amount=5;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=end_rod;amount=5;hS=1;vS=0.2;speed=0;y=1.3}
+  - sound{s=block.trial_spawner.detect_player;sc=ui;p=0.3;v=0.9} @self
 
 crescent_slash_3_charged:
-  Cooldown: 1
+  Cooldown: 0.9
   Conditions:
     - hasaurastacks{n=crescentprimer;s=5to6} true
   Skills:
-  - effect:particles{p=ominous_spawning;amount=7;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=ominous_spawning;amount=7;hS=1;vS=0.2;speed=0;y=1.3}
+  - sound{s=block.trial_spawner.detect_player;sc=ui;p=0.3;v=0.9} @self
+  - sound{s=block.trial_spawner.detect_player;sc=ui;p=0.2;v=0.9} @self
 
 crescent_slash_4_charged:
-  Cooldown: 1
+  Cooldown: 0.9
   Conditions:
     - hasaurastacks{n=crescentprimer;s=>=7} true
   Skills:
-  - effect:particles{p=ominous_spawning;amount=10;hS=0.5;vS=1;speed=0;y=0.5}
+  - effect:particles{p=ominous_spawning;amount=10;hS=1;vS=0.2;speed=0;y=1.3}
+  - sound{s=block.trial_spawner.detect_player;sc=ui;p=0.3;v=0.9} @self
+  - sound{s=block.trial_spawner.detect_player;sc=ui;p=0.2;v=0.9} @self

@@ -6,8 +6,8 @@ set.item:
   - 'Grade III Relic'
   - <#cdd13d>It’s unclear why Delvers carry Laments Thread with them, given 
   - <#cdd13d>its effects. Nonetheless, it finds its use with certain groups.
-  - <#D1D100><i>Passive slot ability. Causes weakness and
-  - <#D1D100><i>mining fatigue to the user and the surroundings.
+  - <#ebdcc6><i>Passive slot ability. Causes weakness and
+  - <#ebdcc6><i>mining fatigue to the user and the surroundings.
 passive:
 - match:
   - inInventory

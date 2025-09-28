@@ -6,8 +6,8 @@ set.item:
   - ':layer_3: Grade I Relic'
   - <#249C9C>This Relic easily and effectively slices through the air, and even the
   - <#249C9C>Abyss itself, using its surroundings’ mysterious nature to its advantage.
-  - <#195959><i>Active ability. Creates charges on right click.Takes a different
-  - <#195959><i>amounts of charges to create a slash of varying strength on left click.
+  - <#195959><i>Active ability. Creates charges on right click.Takes increasing amounts
+  - <#195959><i>of charges to create a slash of varying strength on left click.
   unbreakable: {}
 observe:
   itemLeftClick:

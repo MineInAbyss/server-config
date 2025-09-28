@@ -4,10 +4,11 @@ set.item:
   itemName: <#a30711><b>Capillary Growth
   lore:
   - ':layer_1: Grade I Relic'
-  - <#c7000e>Rather unceremoniously cobbled together from the remains of an
-  - <#c7000e>Interference Unit, this sword carries on its user's mysterious directives.
-  - <#781219><i>Heals the user on kill. After 10 kills, right click to 
-  - <#781219><i>siphon health from nearby mobs.
+  - <#c7000e>Rather unceremoniously cobbled together from the
+  - <#c7000e>remains of an Interference Unit, this sword carries
+  - <#c7000e>carries on its user's mysterious directives.
+  - <#781219><i>Active ability. Heals the user on kill. After 10 
+  - <#781219><i>hits, right click to siphon health from nearby targets.
   unbreakable: {}
 observe:
   itemLeftClick:
@@ -24,14 +25,14 @@ observe:
         text: <red>More blood is required...  
   - cooldown:
       id: capillary_growth
-      length: 15s
+      length: 30s
       display: <#617B94>Capillary Growth
   - mythicSkills:
     - capillary_growth_effect
 passive:
   - match:
-    - inInventory
-    every: 4s
+    - inHand
+    every: 1s
     run:
     - become: parent
     - mythicSkills:

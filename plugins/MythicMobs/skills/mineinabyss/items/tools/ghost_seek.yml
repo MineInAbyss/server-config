@@ -27,4 +27,4 @@ ghost_seek_effect_5:
 # which makes nearby skeletons glow.
 ghost_seek_glow_nearby:
   Skills:
-    - potion{type=GLOWING;duration=300;level=1} @MobsInRadius{types=prayingSkeleton_l1,prayingSkeleton_l2,prayingSkeleton_l3,prayingSkeleton_l4,prayingSkeleton_l5;amount=1to99;radius=25}
+    - potion{type=GLOWING;duration=300;level=1} @MobsInRadius{types=prayingSkeleton_l1,prayingSkeleton_l2,prayingSkeleton_l3,prayingSkeleton_l4,prayingSkeleton_l5,goldenSkeleton;amount=1to99;radius=25}

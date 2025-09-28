@@ -1,12 +1,12 @@
 set.item:
-  itemName: <#808000>Nerve-tuned Fibers
+  itemName: <#f7e7ce>Nerve-tuned Fibers
   type: minecraft:paper
   itemModel: mineinabyss:nerve-tuned_fibers
   lore:
   - ':layer_4: Grade III Relic'
-  - <#A3A300>Bearers of this organic armor describe wearing it as disgusting,
-  - <#A3A300>though some insist it makes them feel less alone in the vast Abyss.
-  - <#D1D100><i>Passive slot ability. Twitches and grants haste.
+  - <#d7c9b3>Bearers of this organic armor describe wearing it as disgusting,
+  - <#d7c9b3>though some insist it makes them feel less alone in the vast Abyss.
+  - <#ebdcc6><i>Passive slot ability. Twitches and grants haste.
 passive:
 - match:
   - inInventory

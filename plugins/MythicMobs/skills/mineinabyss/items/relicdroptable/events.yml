@@ -66,3 +66,23 @@
 #  - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @trigger
 #  - message{m='<#D2D489>A mail balloon whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has discovered a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World
 #  - giveitem{i=BoundingLanceDrop} @trigger
+
+relicDropLamentsThread:
+  Conditions:
+  Skills:
+  - skill{s=relicDrop;item=LamentsThreadDrop;grade=3}
+
+relicDropSinSpiral:
+  Conditions:
+  Skills:
+  - skill{s=relicDrop;item=SinSpiralDrop;grade=2}
+
+relicDropMockwaterFluid:
+  Conditions:
+  Skills:
+  - skill{s=relicDrop;item=MockwaterFluidDrop;grade=4}
+
+relicDropGambitIncense:
+  Conditions:
+  Skills:
+  - skill{s=relicDrop;item=GambitIncenseDrop;grade=3}

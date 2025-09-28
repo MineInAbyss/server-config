@@ -42,11 +42,11 @@ subtle_pull_center:
    - effect:particlesphere{p=reddust;color=#ff3232;amount=200;radius=3;size=3;speed=1;delay=75} @origin ~onSpawn
    - effect:particlesphere{p=reddust;color=#ff6666;amount=200;radius=4;size=3;speed=1;delay=76} @origin ~onSpawn
    - effect:particlesphere{p=explosion;color=#ff6666;amount=20;radius=4;size=3;speed=1;delay=76} @origin ~onSpawn
-   - effect:particlering{p=cloud;color=#000000;amount=4;points=40;radius=2;size=3;speed=3;delay=74} @origin ~onSpawn
-   - effect:particlering{p=cloud;color=#000000;amount=5;points=46;radius=3;delay=1;size=3;speed=3;delay=74} @origin ~onSpawn
-   - effect:particlering{p=cloud;color=#000000;amount=3;points=52;radius=4;delay=2;size=3;speed=3;delay=74} @origin ~onSpawn
-   - effect:particlering{p=cloud;color=#000000;amount=3;points=59;radius=5.2;delay=3;size=2.7;speed=3;delay=74} @origin ~onSpawn
-   - effect:particlering{p=cloud;color=#000000;amount=3;points=68;radius=6.4;delay=4;size=2.5;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=poof;color=#000000;amount=1;points=40;radius=2;size=3;speed=3;delay=74} @origin ~onSpawn
+   - effect:particlering{p=poof;color=#000000;amount=1;points=46;radius=3;size=3;speed=3;delay=75} @origin ~onSpawn
+   - effect:particlering{p=poof;color=#000000;amount=1;points=52;radius=4;size=3;speed=3;delay=76} @origin ~onSpawn
+   - effect:particlering{p=poof;color=#000000;amount=1;points=59;radius=5.2;size=2.7;speed=3;delay=77} @origin ~onSpawn
+   - effect:particlering{p=poof;color=#000000;amount=1;points=68;radius=6.4;size=2.5;speed=3;delay=78} @origin ~onSpawn
    - potion{type=INVISIBILITY;duration=99999;level=1;p=false} @self ~onSpawn
    - signal{s=NULLSAVE;repeat=37;repeatInterval=2} @EntitiesNearOrigin{r=16} ~onSpawn
    - potion{type=SLOW;duration=99999;level=100;p=false} @self ~onSpawn

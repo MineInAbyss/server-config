@@ -12,10 +12,25 @@ set.recipes:
           prefab: mineinabyss:charcoal_sand_ingot
         S:
           prefab: mineinabyss:swarmshocker_jelly
-        L: 
-          type: minecraft:iron_block
+        I: 
+          type: minecraft:iron_ingot
           
       configuration: |-
         |JSJ|
-        |LDL|
-        |D D|
+        |IDI|
+        |I I|
+    - type: shaped
+      items:
+        J:
+          prefab: mineinabyss:buroguro_lantern
+        D:
+          prefab: mineinabyss:charcoal_sand_ingot
+        S:
+          prefab: mineinabyss:corpse_weeper_eye
+        I: 
+          type: minecraft:iron_ingot
+          
+      configuration: |-
+        |JSJ|
+        |IDI|
+        |I I|

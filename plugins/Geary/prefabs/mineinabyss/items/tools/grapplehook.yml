@@ -1,14 +1,14 @@
 set.item:
   type: minecraft:paper
-  itemName: <#8c7ebd>Grapple Hook
+  itemName: <#0047AB>Grapple Hook
   itemModel: mineinabyss:grapplehook
   lore:
   - 'Grade II Relic'
-  - <#7259c9>Getting around the Abyss can be quite tough. Thankfully 
-  - <#7259c9>entrepreneurial delvers came up with this contraption.
-  - <#7259c9>Use at your own risk.
-  - <#544e69><i>Right click to launch yourself towards your target or
-  - <#544e69><i>pull mobs towards you.
+  - <#3d59ab>Getting around the Abyss can be quite tough. Thankfully 
+  - <#3d59ab>entrepreneurial delvers came up with this contraption.
+  - <#3d59ab>Use at your own risk.
+  - <#6666ff><i>Active ability. Right click to launch yourself
+  - <#6666ff><i>towards your target or pull mobs towards you.
 set.recipes:
  result:
    prefab: mineinabyss:grapplehook

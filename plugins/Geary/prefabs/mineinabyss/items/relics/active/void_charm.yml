@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:paper
-  itemName: <#6E260E>Buddstone Tap
+  itemName: <#4c6444>Buddstone Tap
   itemModel: mineinabyss:void_charm
   lore:
   - ':layer_5: Grade II Relic'
-  - <#903213>The crystals produced by this Relic, though
-  - <#903213>visually appealing, are remarkably fragile.
-  - <#B94018><i>Active ability. Shoots projectiles on right click.
+  - <#43583c>The crystals produced by this Relic, though
+  - <#43583c>visually appealing, are remarkably fragile.
+  - <#5e7b54><i>Active ability. Shoots projectiles on right click.
 observe:
   itemRightClick:
   - become: parent
@@ -20,7 +20,7 @@ observe:
   - cooldown:
       id: shadowball
       length: 18s
-      display: <#6E260E>Buddstone Tap
+      display: <#4c6444>Buddstone Tap
   - mythicSkills:
     - buddstone_tap
 passive:

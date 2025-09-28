@@ -33,3 +33,12 @@ TosubachiDrop:
     - variableisset{var=caster.flamethrower-used} true
   Drops:
   - geary mineinabyss:tosubachi 1-1 1 nolooting
+
+RareSaplingDrops:
+  MaxItems: 1
+  Drops:
+  - oak_sapling 1-1 0.035 nolooting
+  - spruce_sapling 1-1 0.035 nolooting
+  - jungle_sapling 1-1 0.035 nolooting
+  - acacia_sapling 1-1 0.035 nolooting
+  - dark_oak_sapling 1-1 0.035 nolooting

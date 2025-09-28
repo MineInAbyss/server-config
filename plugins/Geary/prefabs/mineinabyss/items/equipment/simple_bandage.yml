@@ -45,17 +45,60 @@ set.recipes:
         | P |
         |SAM|
         | P |
+    - type: shaped
+      items:
+        M:
+          prefab: mineinabyss:chimokami_fang
+        A:
+          prefab: mineinabyss:plant_matter
+        S:
+          type: minecraft:sweet_berries
+        P: 
+          type: minecraft:paper
+          
+      configuration: |-
+        | P |
+        |SAM|
+        | P |
+    - type: shaped
+      items:
+        M:
+          prefab: mineinabyss:yomotsubi_abdomen_raw
+        A:
+          prefab: mineinabyss:plant_matter
+        S:
+          type: minecraft:sweet_berries
+        P: 
+          type: minecraft:paper
+          
+      configuration: |-
+        | P |
+        |SAM|
+        | P |
+    - type: shaped
+      items:
+        M:
+          prefab: mineinabyss:yomotsubi_abdomen_cooked
+        A:
+          prefab: mineinabyss:plant_matter
+        S:
+          type: minecraft:sweet_berries
+        P: 
+          type: minecraft:paper
+          
+      configuration: |-
+        | P |
+        |SAM|
+        | P |
 observe:
   itemRightClick:
   - become: parent
   - ensure:
       player:
         sneaking: true
-      mythicConditions:
-      - incombat false
     onFail:
     - sendActionBar:
-        text: <red>Not Sneaking / In Combat
+        text: <red>Not Sneaking
   - cooldown:
       id: bandage
       length: 20s

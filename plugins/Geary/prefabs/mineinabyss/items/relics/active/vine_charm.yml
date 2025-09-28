@@ -1,20 +1,20 @@
 set.item:
   type: minecraft:paper
   itemModel: mineinabyss:vine_charm
-  itemName: <#808000>Wanabushi
+  itemName: <#f7e7ce>Wanabushi
   lore:
   - ':layer_1::layer_2: Grade III Relic'
-  - <#A3A300>Researchers speculate that this automated sentry was a
-  - <#A3A300>precursor to the larger, more imposing Interference Unit.
-  - <#D1D100><i>Active ability. Summons a
-  - <#D1D100><i>Vine Shooter inspired automata on right click.
+  - <#d7c9b3>Researchers speculate that this automated sentry was a
+  - <#d7c9b3>precursor to the larger, more imposing Interference Unit.
+  - <#ebdcc6><i>Active ability. Summons a
+  - <#ebdcc6><i>Vine Shooter inspired automata on right click.
 observe:
   itemRightClick:
   - become: parent
   - cooldown:
       id: wanabushi
       length: 40s
-      display: <#808000>Wanabushi
+      display: <#f7e7ce>Wanabushi
   - mythicSkills:
     - wanabushi_summon
 resourcepack:

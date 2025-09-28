@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:mace
   itemModel: mineinabyss:weight_of_the_world
-  itemName: <#6E260E>Weight of the World
+  itemName: <#4c6444>Weight of the World
   lore:
   - ':layer_4: Grade II Relic'
-  - <#903213>The metal making up this weapon requires wielders to build up mass
-  - <#903213>amounts of kinetic energy. It bears a high risk of personal injury in use.
-  - <#B94018><i>Active ability. The longer the fall, the more damage it deals.
+  - <#43583c>The metal making up this weapon requires wielders to build up mass
+  - <#43583c>amounts of kinetic energy. It bears a high risk of personal injury in use.
+  - <#5e7b54><i>Active ability. The longer the fall, the more damage it deals.
   enchantments:
     - enchant: minecraft:density
       level: 4

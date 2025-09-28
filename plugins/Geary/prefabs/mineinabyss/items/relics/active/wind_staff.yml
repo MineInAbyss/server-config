@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#6E260E>Gust-Shot
+  itemName: <#4c6444>Gust-Shot
   type: minecraft:paper
   itemModel: mineinabyss:wind_staff
   lore:
   - ':layer_3: Grade II Relic'
-  - <#903213>A key example of nature inspiring innovation, this handmade
-  - <#903213>Relic one-ups even the creature it was inspired by.  
-  - <#B94018><i>Active ability. Shoots a projectile on right click which
-  - <#B94018><i>explodes on hit launching entities in different directions.
+  - <#43583c>A key example of nature inspiring innovation, this handmade
+  - <#43583c>Relic one-ups even the creature it was inspired by.  
+  - <#5e7b54><i>Active ability. Shoots a projectile on right click which
+  - <#5e7b54><i>explodes on hit launching entities in different directions.
 observe:
   itemRightClick:
   - become: parent
@@ -21,7 +21,7 @@ observe:
   - cooldown:
       id: gust-shot
       length: 20s
-      display: <#6E260E>Gust-Shot
+      display: <#4c6444>Gust-Shot
   - mythicSkills:
     - gust-shot
 passive:

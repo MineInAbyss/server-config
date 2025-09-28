@@ -1,13 +1,13 @@
 set.item:
-  itemName: <#808000>Princess Bosom
+  itemName: <#f7e7ce>Princess Bosom
   type: minecraft:paper
   itemModel: mineinabyss:princess_bosom
   lore:
   - ':layer_2: Grade III Relic'
-  - <#A3A300>After decades of speculation, the Princess
-  - <#A3A300>Bosom’s purpose has finally been found!
-  - <#D1D100><i>Active ability. Grants absorption to the user
-  - <#D1D100><i>and confusion to the surroundings on right click.
+  - <#d7c9b3>After decades of speculation, the Princess
+  - <#d7c9b3>Bosom’s purpose has finally been found!
+  - <#ebdcc6><i>Active ability. Grants absorption to the user
+  - <#ebdcc6><i>and confusion to the surroundings on right click.
 resourcepack:
   model: mineinabyss:item/relics/princess_bosom
 observe:
@@ -16,6 +16,6 @@ observe:
   - cooldown:
       id: princess_bosom
       length: 30s
-      display: <#808000>Princess Bosom
+      display: <#f7e7ce>Princess Bosom
   - mythicSkills:
     - princess_bosom

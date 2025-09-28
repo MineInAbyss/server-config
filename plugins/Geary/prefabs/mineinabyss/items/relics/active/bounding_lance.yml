@@ -7,8 +7,8 @@ set.item:
   - <#AB8E8A>This Relic commonly finds its use supporting
   - <#AB8E8A>wielders of more offensively-focused relics,
   - <#AB8E8A>but is perfectly capable on its own as well.
-  - <#695654><i>When used it simulates blessings
-  - <#695654><i>in its surroundings.
+  - <#695654><i>Active ability. Charges on right click. Has
+  - <#695654><i>3 different buff modes based on the users charges on left click.
   unbreakable: {}
 observe:
   itemRightClick:
