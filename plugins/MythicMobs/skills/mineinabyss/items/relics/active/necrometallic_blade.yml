@@ -131,7 +131,6 @@ necrometallic_blade_effect_:
 necrometallic_blade_effect_main:
   Cooldown:
   Conditions:
-    - hasaurastacks{n=necrometallicbladecharge;s=3} true
   Skills:
   - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.7;v=1;repeat=3;repeatInterval=10} @self
   - sound{s=entity.fishing_bobber.retrieve;sc=ui;p=0.8;v=1;repeat=3;repeatInterval=10} @self

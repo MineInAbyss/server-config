@@ -5,7 +5,7 @@ relicDrop:
     # Aura used to prevent multiple items from dropping currently, as well as particle effect
     - hasaura{aura=relicdrop} false
   Skills:
-    - Aura{auraName=relicdrop;onTick=celebrate;duration=30} @trigger
+    - Aura{auraName=relicdrop;onTick=celebrate;duration=50} @trigger
     - dropitem{i=<skill.item>} @self
     # Send a message based on a grade parameter
     - message{m='<#D2D489>You hear whispers that</#D2D489><#f15d47> <trigger.name></#f15d47><#D2D489> has obtained a</#D2D489><#AA00AA> Grade I</#AA00AA><#D2D489> relic.'} @World ?stringequals{val1=<skill.grade>;val2="1"}

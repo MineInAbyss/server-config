@@ -14,7 +14,13 @@
       { "threshold": 9, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs2" } },
       { "threshold": 10, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs3" } },
       { "threshold": 11, "model": {"type": "model", "model": "mineinabyss:item/projectiles/cs4" } },
-      { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:item/event/amongus_cookie" } }
+      { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:item/event/amongus_cookie" } },
+      { "threshold": 13, "model": {"type": "model", "model": "mineinabyss:item/projectiles/knife" } },
+      { "threshold": 14, "model": {"type": "model", "model": "mineinabyss:item/projectiles/aoesphere" } },
+      { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:item/projectiles/damagesphere" } },
+      { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:item/projectiles/luresphere" } },
+      { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:item/projectiles/spreadsphere" } },
+      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:item/projectiles/sunsphere" } }
     ],
     "fallback": {
       "type": "model",
