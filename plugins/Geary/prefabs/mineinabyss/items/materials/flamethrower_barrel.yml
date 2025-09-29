@@ -17,7 +17,9 @@ set.recipes:
        prefab: mineinabyss:charcoal_sand_ingot
      I:
        type: minecraft:iron_ingot
+     P:
+       prefab: mineinabyss:ikonia_plate
    configuration: |-
      |CCC|
-     |III|
+     |IIP|
      |CCC|

@@ -18,8 +18,8 @@ observe:
     - sendActionBar:
         text: <red>Out of Experience
   - cooldown:
-      id: shadowball
-      length: 18s
+      id: buddstone_tap
+      length: 25s
       display: <#4c6444>Buddstone Tap
   - mythicSkills:
     - buddstone_tap

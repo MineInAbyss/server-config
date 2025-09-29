@@ -95,7 +95,7 @@ crescent_projectile:
   Skills:
   - model{mid=crescent_blade_slash;n=false} @self ~onSpawn
   - state{mid=idle;s=spawn} @self ~onSpawn
-  - effect:particles{particle=ominous_spawning;amount=1;hS=1.2;vS=0.7;speed=0;y=1;forwardOffset=0.6} @self ~onTimer:2
+  - effect:particles{particle=ominous_spawning;amount=2;hS=1.2;vS=0.8;speed=0;y=0;forwardOffset=0.6} @self ~onTimer:2
 
 Blood_Slash:
   Type: ARMOR_STAND

@@ -24,9 +24,11 @@ set.recipes:
      F:
        prefab: mineinabyss:flamethrower_fuel
      B:
-       prefab: mineinabyss:flamethrower_barrel 
+       prefab: mineinabyss:flamethrower_barrel
+     I:
+       prefab: mineinabyss:ikonia_plate
    configuration: |-
-     |CCF|
+     |CIF|
      |BHC|
      |CCC|
 observe:

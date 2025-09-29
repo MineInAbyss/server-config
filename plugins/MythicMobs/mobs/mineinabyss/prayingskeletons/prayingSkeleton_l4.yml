@@ -11,7 +11,10 @@ prayingSkeleton_l4:
     - geary mineinabyss:luresphere 1-1 0.15 nolooting
   Skills:
     - skill{s=relicDrop;item=BlazeReapDrop;grade=1} ~onDeath 0.001
-    - skill{s=relicDrop;delay=5;item=TridentDrop;grade=1} ~onDeath 0.004
-    - skill{s=relicDrop;delay=10;item=HealingStaffDrop;grade=3} ~onDeath 0.025
-    - skill{s=relicDrop;delay=15;item=WaveCharmDrop;grade=3} ~onDeath 0.025
-    - skill{s=relicDrop;delay=5;item=RespiratisDrop;grade=4} ~onDeath 0.05
+    - skill{s=relicDrop;delay=5;item=ReverberatingEdgeDrop;grade=1} ~onDeath 0.001
+    - skill{s=relicDrop;delay=10;item=TridentDrop;grade=1} ~onDeath 0.001
+    - skill{s=relicDrop;delay=15;item=WeightOfTheWorldDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;delay=20;item=BallLightningDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;delay=25;item=HealingStaffDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=30;item=WaveCharmDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=35;item=RespiratisDrop;grade=4} ~onDeath 0.05

@@ -12,5 +12,27 @@ VerdauEffaxDrop:
 
 AnimalTotemDrop:
   Drops:
-  - geary mineinabyss:animal_totem 1-1 1 nolooting    
+  - geary mineinabyss:animal_totem 1-1 1 nolooting
+
+CapillaryBladeDrop:
+  Drops:
+  - geary mineinabyss:capillary_blade 1-1 1 nolooting
+
+RayHealingPlateDrop:
+  Drops:
+  - geary mineinabyss:ray-healing_plate 1-1 1 nolooting
+
+PetrifyingStoneDrop:
+  Drops:
+  - geary mineinabyss:petrifying_stone 1-1 1 nolooting
+
+RockTopDrop:
+  Drops:
+  - geary mineinabyss:rock_top 1-1 1 nolooting
+
+CradleOfFertilityDrop:
+  Drops:
+  - geary mineinabyss:cradle_of_fertility 1-1 1 nolooting
+
+
 

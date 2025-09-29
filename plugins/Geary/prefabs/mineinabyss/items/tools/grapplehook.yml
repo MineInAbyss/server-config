@@ -36,6 +36,4 @@ observe:
   - mythicSkills:
     - grapplehook_shoot
 resourcepack:
-  textures:
-    layers:
-    - mineinabyss:item/tools/grapplehook
+  model: mineinabyss:item/relics/grapple_hook/grapplinghookretracted

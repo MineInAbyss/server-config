@@ -4,7 +4,7 @@ knifethrow:
     - offgcd true
   Skills:
     - gcd{ticks=50}
-    - projectile{bulletType=ITEM;material=iron_ingot;onTick=knifetick;onHit=knifeimpact;v=25;g=0.5;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;syo=1.5;vO=0.1} @forward{f=1000}
+    - projectile{bulletType=ITEM;material=knife;onTick=knifetick;onHit=knifeimpact;v=25;g=0.5;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;syo=1.5;vO=0.1} @forward{f=1000}
 
 knifeimpact:
   Skills:

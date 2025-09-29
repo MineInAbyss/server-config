@@ -1,0 +1,19 @@
+gust-shot_center:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+    Interactable: false
+    NoGravity: true
+  Skills:
+  - effect:particles{p=gust_emitter_large;a=1;vs=0.2;hs=0.2;s=0;y=1;size=1.5} @self ~onSpawn
+  - fakeexplosion @self ~onSpawn
+  - shieldbreak{duration=150} @EntitiesInRadius{r=1} ~onSpawn
+  - throw{velocity=14;velocityY=7;delay=1} @EntitiesInRadius{r=4} ~onSpawn
+  - damage{a=20} @EntitiesInRadius{r=4} ~onSpawn
+  - damage{a=5} @EntitiesInRadius{r=4;ignore=players} ~onSpawn
+  - damage{a=30} @EntitiesInRadius{r=2;conditions=[
+                              - entitywithin{d=2} true     ]} ~onSpawn
+  - remove{delay=5} @self ~onSpawn

@@ -10,8 +10,11 @@ prayingSkeleton_l3:
     - PSSherdDrops
     - geary mineinabyss:aoesphere 1 0.15 nolooting
   Skills:
-    - skill{s=relicDrop;item=GiantRelicSwordDrop;grade=1} ~onDeath 0.0015
-    - skill{s=relicDrop;item=GiantRelicHammerDrop;grade=1} ~onDeath 0.0015
-    - skill{s=relicDrop;delay=10;item=WindStaffDrop;grade=2} ~onDeath 0.01
-    - skill{s=relicDrop;delay=15;item=RelicBootsDrop;grade=2} ~onDeath 0.01
-    - skill{s=relicDrop;delay=20;item=CritCharmDrop;grade=4} ~onDeath 0.025
+    - skill{s=relicDrop;item=AtlasDignitasDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;delay=5;item=GiantRelicSwordDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;delay=10;item=GiantRelicHammerDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;delay=15;item=WindStaffDrop;grade=2} ~onDeath 0.01
+    - skill{s=relicDrop;delay=20;item=RelicBootsDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=25;item=FrayedMurmurDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=30;item=MermaidBurpDrop;grade=3} ~onDeath 0.025
+    - skill{s=relicDrop;delay=35;item=CritCharmDrop;grade=4} ~onDeath 0.025
