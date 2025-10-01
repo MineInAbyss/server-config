@@ -17,7 +17,7 @@ observe:
       - hasaurastacks{n=balllightningcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: ball_lightning
       length: 35s
@@ -30,6 +30,17 @@ passive:
   every: 0.1s
   run:
   - become: parent
+  - mythicSkills:
+    - ball_lightning_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:ball_lightning
   - mythicSkills:
     - ball_lightning_charge
 resourcepack:

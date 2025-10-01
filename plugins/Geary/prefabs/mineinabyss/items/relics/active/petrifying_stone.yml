@@ -30,6 +30,17 @@ passive:
   - become: parent
   - mythicSkills:
     - petrifying_stone_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:petrifying_stone
+  - mythicSkills:
+    - petrifying_stone_charge
 resourcepack:
   textures:
     layers:

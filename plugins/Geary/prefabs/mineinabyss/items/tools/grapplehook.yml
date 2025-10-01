@@ -29,11 +29,36 @@ set.recipes:
 observe:
   itemRightClick:
   - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=gapplehookcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Charge
   - cooldown:
       id: grapplehook
       length: 7s
-      display: <#8c7ebd>Grapple Hook
+      display: <#0047AB>Grapple Hook
   - mythicSkills:
     - grapplehook_shoot
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - grapplehook_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:grapplehook
+  - mythicSkills:
+    - grapplehook_charge
 resourcepack:
   model: mineinabyss:item/relics/grapple_hook/grapplinghookretracted

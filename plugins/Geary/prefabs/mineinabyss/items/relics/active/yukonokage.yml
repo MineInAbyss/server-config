@@ -39,5 +39,16 @@ passive:
   - become: parent 
   - mythicSkills:
     - yukonokage_soul_display
+- match:
+  - inInventory
+  every: 1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:yukonokage
+  - mythicSkills:
+    - yukonokage_soul_display
 resourcepack:
   model: mineinabyss:item/relics/yukonokage

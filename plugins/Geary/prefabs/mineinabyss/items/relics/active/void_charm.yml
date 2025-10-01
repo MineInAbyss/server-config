@@ -16,7 +16,7 @@ observe:
       - hasaurastacks{n=buddstonetapcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: buddstone_tap
       length: 25s
@@ -29,6 +29,17 @@ passive:
   every: 0.1s
   run:
   - become: parent
+  - mythicSkills:
+    - buddstone_tap_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:void_charm
   - mythicSkills:
     - buddstone_tap_charge
 resourcepack:

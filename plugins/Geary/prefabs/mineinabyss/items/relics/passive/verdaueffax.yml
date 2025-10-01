@@ -7,20 +7,19 @@ set.item:
   - <#43583c>Outside of the Abyss, this Relic fetches a high
   - <#43583c>price for its uses in chronic pain treatment. 
   - <#5e7b54><i>Passive slot ability. Grants fast regen
-  - <#5e7b54><i>when the user drops below 4 hearts.
+  - <#5e7b54><i>when the user drops below 3 hearts.
 passive:
 - match:
   - inInventory
-  every: 1s
+  every: 0.1s
   run:
   - become: parent
   - ensure:
-      mythicConditions:
-      - health{h=<5}
-      - health{h=>1}
       inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:vverdaueffax
+          item: mineinabyss:verdaueffax
+      mythicConditions:
+      - health{h=1to5} true
   - cooldown:
       id: gold-mending_wedge
       length: 600s

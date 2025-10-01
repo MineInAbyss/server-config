@@ -27,7 +27,7 @@ tridentready:
   - hasaurastacks{n=trident;s=3} true
   Skills:
   - gcd{ticks=100}
-  - sound{s=item.trident.riptide_3;sc=ui;p=1;v=1} @self
+  - sound{s=item.trident.riptide_3;sc=ui;p=1;v=0.8} @self
 
 ####################################################################
 ##################### Left Click Ability ###########################

@@ -17,7 +17,7 @@ observe:
       - hasaurastacks{n=undyingwispcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: undying_wisp
       length: 20s
@@ -30,6 +30,17 @@ passive:
   every: 0.1s
   run:
   - become: parent
+  - mythicSkills:
+    - undying_wisp_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:bone_staff
   - mythicSkills:
     - undying_wisp_charge
 resourcepack:

@@ -17,7 +17,7 @@ observe:
       - hasaurastacks{n=gustshotcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: gust-shot
       length: 20s
@@ -30,6 +30,17 @@ passive:
   every: 0.1s
   run:
   - become: parent
+  - mythicSkills:
+    - gust-shot_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:wind_staff
   - mythicSkills:
     - gust-shot_charge
 resourcepack:
