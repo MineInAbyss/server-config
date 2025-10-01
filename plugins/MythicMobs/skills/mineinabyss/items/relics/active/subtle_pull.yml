@@ -90,7 +90,7 @@ subtle_pull_end:
   - effect:sound{s=block.conduit.deactivate;sc=ui;volume=0.9;pitch=0.3} @origin
   - sound{s=entity.player.attack.crit;sc=ui;volume=0.5;pitch=0.6;cooldown=1} @origin
   - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @origin
-  - effect:particles{p=smoke;color=#fff400;y=0;amount=30;speed=0.05;hS=1.8;vS=0.3} @origin
+  - effect:particles{p=smoke;y=0;amount=30;speed=0.05;hS=1.8;vS=0.3} @origin
   - effect:particles{p=explosion_large;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @origin
   - effect:particlesphere{p=block_dust;material=BLACK_GLAZED_TERRACOTTA;color=#F0EAD6;amount=80;radius=2.6;delay=2;size=2;speed=0.1} @origin
   - effect:particlesphere{p=reddust;color=#000000;amount=80;radius=3.2;delay=4;size=2.5} @origin

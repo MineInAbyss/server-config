@@ -16,7 +16,7 @@ observe:
       - EnchantingLevel{l=>2} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: shiver_mist_area
       length: 45s
@@ -31,7 +31,7 @@ observe:
       - hasaurastacks{n=shivermistcharge} true
     onFail:
     - sendActionBar:
-        text: <red>Out of Experience
+        text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: shiver_mist
       length: 40s
@@ -44,6 +44,17 @@ passive:
   every: 0.1s
   run:
   - become: parent
+  - mythicSkills:
+    - shiver_mist_charger
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:frost_staff
   - mythicSkills:
     - shiver_mist_charger
 resourcepack:

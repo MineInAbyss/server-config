@@ -11,7 +11,7 @@ shiver_mist_hit_:
   - potion{t=SLOW;l=2;d=20;p=false} @Self
   - delay 10
   - spin{duration=40;velocity=0.5} @self
-  - skill{s=shiver_mist_area_projectile;delay=0}
+  #- skill{s=shiver_mist_area_projectile;delay=0}
   - skill{s=shiver_mist_area_projectile;delay=20}
   - skill{s=shiver_mist_area_projectile;delay=40}
   - sound{s=entity.ender_dragon.flap;sc=ui;volume=0.3;pitch=1.6;repeat=2;repeatinterval=3} @self
@@ -58,16 +58,16 @@ shiver_mist_area_projectile_end:
 shiver_mist_area_totem:
   TargetConditions:
   Skills:
-  - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=2.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=1.5;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=1;r=1.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=1;r=1.5;p=20;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=1;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
+  - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=1;p=15;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#94d4ff;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
   - effect:particlering{particle=redstone;color=#edfaff;y=-0.5;amount=2;r=0.5;p=6;hS=1;vS=0.12;speed=0.5;forwardOffset=0;sideOffset=0} @origin
-  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=20;c=2;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=3}
-  - damage{a=3;pkb=false} @ENO{r=2}
-  - potion{type=SLOW;duration=30;level=4;hasParticles=false} @ENO{r=3}
-  - extinguish{delay=0} @ENO{r=3}
+  - aura{auraName=shivermistfreeze;onStart=shiver_mist_projectile_hit_fx;onTick=shiver_mist_freeze_effect;duration=40;i=20;c=1;maxStacks=30;cotd=false;cod=true;rd=true} @EntitiesNearOrigin{r=3}
+  - damage{a=3;pkb=false} @ENO{r=1.5}
+  - potion{type=SLOW;duration=30;level=2;hasParticles=false} @ENO{r=2}
+  - extinguish{delay=0} @ENO{r=2}
 
 ####################################################################
 ##################### Right Click Ability ##########################

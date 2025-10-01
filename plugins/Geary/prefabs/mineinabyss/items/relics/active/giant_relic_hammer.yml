@@ -37,5 +37,16 @@ passive:
   - become: parent
   - mythicSkills:
     - necrometallic_sledge_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:giant_relic_hammer
+  - mythicSkills:
+    - necrometallic_sledge_charge
 resourcepack:
   model: mineinabyss:item/relics/necrometallic_sledge

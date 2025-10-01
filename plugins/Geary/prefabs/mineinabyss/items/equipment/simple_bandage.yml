@@ -96,9 +96,11 @@ observe:
   - ensure:
       player:
         sneaking: true
+      mythicConditions:
+      - health{h=1to19} true
     onFail:
     - sendActionBar:
-        text: <red>Not Sneaking
+        text: <red>Not Sneaking / Full Health
   - cooldown:
       id: bandage
       length: 20s

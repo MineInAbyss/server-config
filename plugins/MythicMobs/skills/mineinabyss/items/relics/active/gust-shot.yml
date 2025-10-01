@@ -3,7 +3,7 @@ gust-shot:
   Skills:
   - potion{type=SLOW;duration=35;level=2;p=false;force=true} @Self
   - effect:particles{particle=dust_plume;amount=9;y=0.5;size=2}
-  - sound{s=block.roots.break;sc=ui;p=0.5;v=0.8;repeat=4;repeatInterval=3} @self
+  - sound{s=block.roots.break;sc=ui;p=0.5;v=0.9;repeat=4;repeatInterval=3} @self
   - delay 20
   - skill{s=gust-shot_projectile}
 

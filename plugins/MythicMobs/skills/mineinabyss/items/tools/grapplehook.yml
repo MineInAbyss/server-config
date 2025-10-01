@@ -3,6 +3,8 @@ grapplehook_shoot:
   - projectile{bulletType=ARROW;onTick=GrappleHook_TICK;onHit=GrappleHook_HIT;onHitBlockSkill=GrappleHook_END;v=25;i=1;hR=1;vR=1;g=0.5;doEndSkillOnHit=false;hnp=true;dd=20} @forward{f=1000}
 
 GrappleHook_END:
+  Conditions:
+    - hasaurastacks{n=gapplehookcharge} true
   Skills:
   - lunge{v=2;vy=1} @origin
   - delay 5
@@ -10,12 +12,16 @@ GrappleHook_END:
   - potion{type=JUMP_BOOST;duration=18;l=1} @self
 
 GrappleHook_HIT:
+  Conditions:
+    - hasaurastacks{n=gapplehookcharge} true
   Skills:
   - sound{s=block.chain.hit;sc=ui;volume=1} @self
   - sound{s=block.chain.break;sc=ui;volume=0.55;repeat=10;repeati=1} @self
   - pull{v=10} @targetedtarget{ignore=player} 
   # - stun{duration=20} @targetedtarget{ignore=animal,creature,monster} # Maybe
 GrappleHook_TICK:
+  Conditions:
+    - hasaurastacks{n=gapplehookcharge} true
   Skills:
   - sound{s=block.chain.break;sc=ui;volume=0.25} @self
   - sound{s=block.chain.break;sc=ui;volume=0.5} @origin
@@ -24,3 +30,12 @@ GrappleHook_TICK:
 # consume stamina
 # wind back up
 # grapple air
+
+grapplehook_charge: # Shim for geary
+  Skills:
+  - skill{s=grapplehook_charge_}
+grapplehook_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=gapplehookcharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self

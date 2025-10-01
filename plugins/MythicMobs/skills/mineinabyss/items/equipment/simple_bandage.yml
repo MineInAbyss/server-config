@@ -8,6 +8,7 @@ simple_bandage_heal:
   Conditions:
   - hasaurastacks{n=simplebandagefail} castinstead simple_bandage_fail
   - sneaking orElseCast simple_bandage_fail
+  - health{h=1to19} orElseCast simple_bandage_fail
   Skills:
   - effect:particles{particle=totem_of_undying;amount=1;hS=0.5;vS=0.1;y=1} @self
   - heal{a=3} @self
@@ -17,7 +18,7 @@ simple_bandage_heal:
 simple_bandage_fail:
   Skills:
   - sound{sound=entity.villager.no;v=1.5}
-  - SendActionMessage{msg="<#fa4150>You must hold crouch during the entire bandage application!"}
+  - SendActionMessage{msg="<#fa4150>You must hold crouch and be below max health during the entire bandage application!"}
 simple_bandage_stopped:
   Conditions:
   - sneaking false

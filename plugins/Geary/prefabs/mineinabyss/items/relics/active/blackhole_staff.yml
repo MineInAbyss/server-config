@@ -47,5 +47,16 @@ passive:
   - become: parent
   - mythicSkills:
     - subtle_pull_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:blackhole_staff
+  - mythicSkills:
+    - subtle_pull_charge
 resourcepack:
   model: mineinabyss:item/relics/subtle_pull

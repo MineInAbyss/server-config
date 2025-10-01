@@ -2,11 +2,11 @@ undying_wisp:
   Cooldown: 1
   Conditions:
   Skills:
-    - sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.5;v=0.8} @Self
-    - delay 5
-    - sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.4;v=1.0} @Self
+    - sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.5;v=1} @Self
     - delay 5
     - sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.4;v=1.2} @Self
+    - delay 5
+    - sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.4;v=1.3} @Self
     #- delay 5
     #- sound{s=item.crossbow.quick_charge_1;sc=ui;p=0.3;v=0.6} @Self
     - delay 25
