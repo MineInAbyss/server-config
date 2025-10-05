@@ -13,6 +13,55 @@ MiscPSDrops:
   # - geary made bundle 1 0.05
   # - relic shards
 
+L1MiscPSDrops:
+
+  MaxItems: 3
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - bundle 1 0.1
+  - experience_bottle 1-2 0.01
+  - geary mineinabyss:charcoal_sand_raw 1-1 0.04 nolooting
+
+L2MiscPSDrops:
+
+  MaxItems: 3
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - bundle 1 0.1
+  - experience_bottle 1-2 0.015
+  - geary mineinabyss:charcoal_sand_raw 1-1 0.06 nolooting
+
+L3MiscPSDrops:
+
+  MaxItems: 3
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - bundle 1 0.1
+  - experience_bottle 1-2 0.01
+  - geary mineinabyss:charcoal_sand_raw 1-1 0.08 nolooting
+
+L4MiscPSDrops:
+
+  MaxItems: 3
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - bundle 1 0.05
+  - experience_bottle 1-2 0.1
+  - geary mineinabyss:charcoal_sand_raw 1-1 0.15 nolooting
+
+L5MiscPSDrops:
+
+  MaxItems: 3
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - bundle 1 0.05
+  - experience_bottle 1-2 0.1
+  - geary mineinabyss:charcoal_sand_raw 1-1 0.18 nolooting
 
 PSSherdDrops: 
   
@@ -25,6 +74,66 @@ PSSherdDrops:
   - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
   - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
   - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.02
+
+L1PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+
+L2PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.01
+
+L3PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.014
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.014
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.014
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.014
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.014
+
+L4PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.025
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.025
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.025
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.025
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.025
+
+L5PSSherdDrops: 
+  
+  MaxItems: 1
+  Conditions:
+  - playerwithin 32
+  Drops:
+  - skull_pottery_sherd{name="<#818380>Skull Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.028
+  - archer_pottery_sherd{name="<#818380>Archer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.028
+  - miner_pottery_sherd{name="<#818380>Miner Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.028
+  - explorer_pottery_sherd{name="<#818380>Explorer Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.028
+  - blade_pottery_sherd{name="<#818380>Blade Pottery Sherd";lore=":layer_1::layer_2::layer_3::layer_4::layer_5:"} 1 0.028
 
 
 TosubachiDrop:

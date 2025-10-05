@@ -2,7 +2,7 @@ stingerhead:
   Type: SPIDER
   SpawnCategory: miniboss
   Display: "<#9C0F2C>Stingerhead"
-  Health: 300
+  Health: 260
   Damage: 13
   AIGoalSelectors:
     - clear

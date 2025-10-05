@@ -313,8 +313,37 @@ items:
     currency: orth_coin
     cost: 100
     cosmetic: detchuanga_hat
-  ghost_seek_cosmetic:
+  hunter_hat:
     slots: 11
+    item:
+      material: hmccosmetics:hunter_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:hunter_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:hunter_hat
+      lore:
+        - ""
+        - "<gold>60:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:hunter_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 60
+    cosmetic: hunter_hat
+  ghost_seek_cosmetic:
+    slots: 12
     item:
       material: hmccosmetics:ghost_seek_cosmetic
       lore:
@@ -330,7 +359,7 @@ items:
       material: hmccosmetics:ghost_seek_cosmetic
       lore:
         - ""
-        - "<gold>100:cosmetic_orth_coin:"
+        - "<gold>10:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Unequip</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
@@ -340,10 +369,10 @@ items:
         - "<red>Locked"
     type: cosmetic
     currency: orth_coin
-    cost: 50
+    cost: 10
     cosmetic: ghost_seek_cosmetic
   zephyr_disk_cosmetic:
-    slots: 12
+    slots: 13
     item:
       material: hmccosmetics:zephyr_disk_cosmetic
       lore:
@@ -359,7 +388,7 @@ items:
       material: hmccosmetics:zephyr_disk_cosmetic
       lore:
         - ""
-        - "<gold>100:cosmetic_orth_coin:"
+        - "<gold>10:cosmetic_orth_coin:"
         - "<yellow>[Left Click - <i>Unequip</i>]"
         - "<red>[Right Click - <i>Buy</i>]"
     locked-item:
