@@ -8,7 +8,7 @@ set.item:
     - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
     - <#D2D489>guiding its wielder toward hidden relics.
     - <#948E61><i>Passive slot ability. Plays different sounds based on
-    - <#948E61><i>distance in blocks (150 75 25) to a Praying Skeleton.
+    - <#948E61><i>distance in blocks (150 100 50 25) to a Praying Skeleton.
   #equippable:
   #  slot: HEAD
   #  cameraOverlay: mineinabyss:misc/ghost_seek_overlay
@@ -41,10 +41,12 @@ passive:
         radii:
           150:
             - mythicSkills: [ ghost_seek_effect_1 ]
-          75:
+          100:
             - mythicSkills: [ ghost_seek_effect_2 ]
-          25:
+          50:
             - mythicSkills: [ ghost_seek_effect_3 ]
+          25:
+            - mythicSkills: [ ghost_seek_effect_4 ]
 
 resourcepack:
   model: mineinabyss:item/relics/ghost_seek_on

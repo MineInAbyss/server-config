@@ -14,7 +14,7 @@ observe:
   - cooldown:
       id: treble_winds
       length: 20s
-      display: <#808000>Treble Winds      
+      display: <#f7e7ce>Treble Winds      
   - mythicSkills:
     - treble_winds_upward
   itemLeftClick:

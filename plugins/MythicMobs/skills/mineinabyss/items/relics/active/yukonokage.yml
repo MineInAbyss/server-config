@@ -201,95 +201,95 @@ yukonokage_soul_display_1:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=20to39} true
   Skills:
-  - orbital{auraName=yukonokageskull1;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=1.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull1;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=1.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 yukonokage_soul_display_2:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=40to59} true
   Skills:
-  - orbital{auraName=yukonokageskull2a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull2b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull2a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull2b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 yukonokage_soul_display_3:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=60to79} true
   Skills:
-  - orbital{auraName=yukonokageskull3a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull3b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull3c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;ry=4.2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull3a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull3b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull3c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=2.5;ry=4.2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 
 yukonokage_soul_display_4:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=80to99} true
   Skills:
-  - orbital{auraName=yukonokageskull4a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull4b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.57;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull4c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull4d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.71;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull4a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull4b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.57;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull4c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull4d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.71;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 
 yukonokage_soul_display_5:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=100to119} true
   Skills:
-  - orbital{auraName=yukonokageskull5a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull5b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.26;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull5c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.52;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull5d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.78;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull5e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.04;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull5a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull5b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.26;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull5c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.52;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull5d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.78;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull5e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.04;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 
 yukonokage_soul_display_6:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=120to139} true
   Skills:
-  - orbital{auraName=yukonokageskull6a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull6b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.05;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull6c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull6d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull6e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.19;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull6f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.24;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull6a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull6b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.05;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull6c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull6d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull6e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.19;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull6f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.24;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 yukonokage_soul_display_7:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=140to159} true
   Skills:
-  - orbital{auraName=yukonokageskull7a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.9;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.8;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.7;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.6;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull7g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.4;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull7a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.9;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.8;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.7;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.6;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull7g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.4;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 yukonokage_soul_display_8:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=160to179} true
   Skills:
-  - orbital{auraName=yukonokageskull8a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.79;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.57;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.36;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.93;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.72;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull8h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.51;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull8a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.79;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.57;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.36;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.14;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.93;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.72;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull8h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.51;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
 
 
 yukonokage_soul_display_9:
   Conditions:
   - variableinrange{var=caster.yukonokage_stacks;value=180to199} true
   Skills:
-  - orbital{auraName=yukonokageskull9a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.7;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.4;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.8;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.9;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull9i;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.6;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull9a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.7;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.4;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.1;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.8;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.5;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.2;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.9;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull9i;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.6;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
   - freeze{ticks=30} @EIR{r=3}
 
 yukonokage_soul_display_10:
@@ -297,16 +297,16 @@ yukonokage_soul_display_10:
   - variableinrange{var=caster.yukonokage_stacks;value=200to220} true
   Skills:
   - aura{auraName=yukonokage_souls;duration=9999} @self
-  - orbital{auraName=yukonokageskull10a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.63;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.26;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.89;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.52;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.15;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.78;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.41;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10i;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.04;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
-  - orbital{auraName=yukonokageskull10j;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.67;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false} @self
+  - orbital{auraName=yukonokageskull10a;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10b;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=0.63;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10c;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.26;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10d;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=1.89;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10e;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=2.52;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10f;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.15;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10g;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=3.78;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10h;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=4.41;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10i;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.04;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
+  - orbital{auraName=yukonokageskull10j;oT=yukonokage_soul_tick;hp=false;p=120;bullet=MOB;mm=yukonokage_soul_wisp_1;byo=0.1;bmd=true;i=1;duration=9999;oy=1;scale=1,1,1;maxStacks=1;radius=3;ry=5.67;onEnd=yukonokage_skull_end;cao=True;hE=false;interactable=false;cod=false} @self
   - freeze{ticks=30} @EIR{r=3}
 
 yukonokage_soul_tick:

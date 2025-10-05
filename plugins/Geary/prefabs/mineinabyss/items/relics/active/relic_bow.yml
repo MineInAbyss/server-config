@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:bow
-  itemModel: mineinabyss:relic_bow
+  itemModel: mineinabyss:breeze_piercer
   itemName: <#617B94><b>Breeze Piercer
   lore:
   - ':layer_2: Grade I Relic'
@@ -19,5 +19,3 @@ observe:
       display: <#617B94>Breeze Piercer
   - mythicSkills:
     - breeze_piercer
-resourcepack:
-  model: mineinabyss:item/event/relic_bow

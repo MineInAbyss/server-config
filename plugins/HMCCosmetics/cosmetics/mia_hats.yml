@@ -88,6 +88,12 @@ detchuanga_hat:
   dyeable: false
   item:
     material: geary:cosmetics:detchuanga_hat
+hunter_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.hunter_hat"
+  dyeable: false
+  item:
+    material: geary:cosmetics:hunter_hat
 ghost_seek_cosmetic:
   slot: HELMET
   permission: "hmccosmetics.hat.ghost_seek_cosmetic"

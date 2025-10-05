@@ -2,7 +2,7 @@ tachikatana:
   Type: ZOMBIE
   SpawnCategory: miniboss
   Display: "<#00FFFF>Tachikatana"
-  Health: 200
+  Health: 180
   Damage: 0
   AIGoalSelectors:
     - clear
