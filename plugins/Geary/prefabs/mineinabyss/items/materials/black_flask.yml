@@ -1,12 +1,17 @@
 set.item:
-  type: minecraft:potion
+  type: minecraft:paper
   itemName: <#0047AB>Black Flask
   itemModel: mineinabyss:black_flask
   lore:
-  - Grade IV relic <#0047AB>Black Flask
+  - Grade IV relic
   - <#3d59ab>A fleshy bottle filled with a black, oily substance.
   - <#3d59ab>Drinking it causes a strange reaction within the body.
   - <#6666ff><i>Consumable. Grants effects when drunk.
+  consumable:
+      animation: DRINK
+      duration: 1.6s
+      sound: item.honey_bottle.drink
+      particles: false
 set.recipes:
   result:
     prefab: mineinabyss:black_flask
@@ -25,9 +30,9 @@ set.recipes:
       S:
         prefab: mineinabyss:stingerhead_eye
     configuration: |-
-      | Y |
+      | H |
       |YSY|
-      |HCH|
+      |YCY|
 observe:
   itemConsumed:
   - become: parent
