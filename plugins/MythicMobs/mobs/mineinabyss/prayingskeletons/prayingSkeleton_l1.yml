@@ -10,9 +10,10 @@ prayingSkeleton_l1:
     - geary mineinabyss:damagesphere 1-1 0.1 nolooting
 
   Skills:
-    - skill{s=relicDrop;delay=40;item=AnimalTotemDrop;grade=4} ~onDeath 0.03
-    - skill{s=relicDrop;delay=35;item=RockTopDrop;grade=4} ~onDeath 0.03
-    - skill{s=relicDrop;delay=30;item=CradleOfFertilityDrop;grade=4} ~onDeath 0.03
+    - skill{s=relicDrop;delay=45;item=AnimalTotemDrop;grade=4} ~onDeath 0.025
+    - skill{s=relicDrop;delay=40;item=NilSpoutDrop;grade=4} ~onDeath 0.025
+    - skill{s=relicDrop;delay=35;item=RockTopDrop;grade=4} ~onDeath 0.025
+    - skill{s=relicDrop;delay=30;item=CradleOfFertilityDrop;grade=4} ~onDeath 0.025
     - skill{s=relicDrop;delay=10;item=VineCharmDrop;grade=3} ~onDeath 0.02
     - skill{s=relicDrop;delay=20;item=RayHealingPlateDrop;grade=3} ~onDeath 0.02
     - skill{s=relicDrop;delay=15;item=PetrifyingStoneDrop;grade=3} ~onDeath 0.02

@@ -16,6 +16,6 @@ prayingSkeleton_l2:
     - skill{s=relicDrop;delay=25;item=TactileRootsDrop;grade=3} ~onDeath 0.02
     - skill{s=relicDrop;delay=20;item=AfterImageArrowDrop;grade=2} ~onDeath 0.01
     - skill{s=relicDrop;delay=15;item=VerdauEffaxDrop;grade=2} ~onDeath 0.01
-    - skill{s=relicDrop;delay=10;item=RelicBowDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;delay=10;item=RelicBowDrop;grade=1} ~onDeath 0.0018
     - skill{s=relicDrop;delay=5;item=BoundingLanceDrop;grade=1} ~onDeath 0.0005
-    - skill{s=relicDrop;item=NecrometallicBladeDrop;grade=1} ~onDeath 0.0015
+    - skill{s=relicDrop;item=NecrometallicBladeDrop;grade=1} ~onDeath 0.0018

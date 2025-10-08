@@ -106,3 +106,9 @@ zephyr_disk_cosmetic:
   dyeable: false
   item:
     material: geary:cosmetics:zephyr_disk_cosmetic
+bone_helmet:
+  slot: HELMET
+  permission: "hmccosmetics.hat.bone_helmet"
+  dyeable: false
+  item:
+    material: geary:cosmetics:bone_helmet

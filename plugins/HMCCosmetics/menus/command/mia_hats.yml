@@ -342,8 +342,37 @@ items:
     currency: orth_coin
     cost: 60
     cosmetic: hunter_hat
-  ghost_seek_cosmetic:
+  bone_helmet:
     slots: 12
+    item:
+      material: hmccosmetics:bone_helmet
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:bone_helmet
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bone_helmet
+      lore:
+        - ""
+        - "<gold>60:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: cosmetics:question_mark_button
+      material: hmccosmetics:bone_helmet
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 60
+    cosmetic: bone_helmet
+  ghost_seek_cosmetic:
+    slots: 13
     item:
       material: hmccosmetics:ghost_seek_cosmetic
       lore:
@@ -372,7 +401,7 @@ items:
     cost: 10
     cosmetic: ghost_seek_cosmetic
   zephyr_disk_cosmetic:
-    slots: 13
+    slots: 14
     item:
       material: hmccosmetics:zephyr_disk_cosmetic
       lore:

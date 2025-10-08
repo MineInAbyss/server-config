@@ -18,4 +18,4 @@ dew-cress_knots:
     - damagepercent{percent=0.1;pkb=true;ie=true;ia=true} @self
     - potion{t=SPEED;d=100} @self
     - potion{t=JUMP_BOOST;d=100} @self
-    - hunger{a=2} @self
+    - feed{a=-2} @self
