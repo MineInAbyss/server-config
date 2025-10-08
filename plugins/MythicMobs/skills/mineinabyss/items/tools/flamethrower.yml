@@ -1,9 +1,13 @@
+####################################################################
+##################### Right Click Ability ##########################
+####################################################################
+
 Flame-Torrent:
   Skills:
     # - setvariable{var=caster.flamethrower-used;val=0}
     - variableunset{var=caster.flamethrower-used}
     - gcd{ticks=80} @self
-    - potion{type=SLOW;level=5;d=50} @self
+    - potion{type=SLOW;level=5;d=80} @self
     - gcd{ticks=40} @self
     - delay 8
 
@@ -89,3 +93,16 @@ flamethrower-hit-damage:
   Skills:
   - damage{amount=0.25;pkb=true;ii=true;pi=true}
   - damage{amount=0.25;pkb=true;ii=true;pi=true;ignorearmor=true}
+
+####################################################################
+######################### Passive Ability ##########################
+####################################################################
+
+flamethrower_charge: # Shim for geary
+  Skills:
+  - skill{s=flamethrower_charge_}
+flamethrower_charge_:
+  Cooldown:
+  Conditions:
+  Skills:
+  - aura{auraName=flamethrowercharge;duration=3;c=1;maxStacks=1;cotd=false;rd=true} @self
