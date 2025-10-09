@@ -9,6 +9,8 @@ set.item:
   - <#265c55><i>It is rumored to return to the user after being thrown.
   enchantmentGlintOverride: true
   unbreakable: {}
+  weapon:
+    damagePerAttack: 0
   enchantable: 0
 resourcepack:
   model: mineinabyss:item/relics/arc_staff

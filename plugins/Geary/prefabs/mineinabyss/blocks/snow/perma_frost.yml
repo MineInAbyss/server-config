@@ -6,6 +6,7 @@ set.item:
   itemModel: mineinabyss:perma_frost
 resourcepack:
   parentModel: block/cube_all
+  model: "mineinabyss:block/snow/perma_frost"
   textures:
     variables:
       all: mineinabyss:block/snow/perma_frost

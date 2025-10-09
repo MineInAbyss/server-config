@@ -118,7 +118,6 @@ wanabushi:
     Drive: false
     DamageTint: true
     Scale: 1
-  Drops:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged

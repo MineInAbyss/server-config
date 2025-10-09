@@ -148,6 +148,8 @@ survival:
     chatty:
       enableHover: true
       serverPrefix: ":survival:"
+    geary:
+      spawning: true
   include:
     - minecraft
     - feat/items
@@ -188,6 +190,9 @@ dev:
     chatty:
       serverPrefix: ":test:"
       localChatRadius: 0
+    geary:
+      spawning: true
+      logLevel: Debug
   include:
     - minecraft
     - feat/blocks

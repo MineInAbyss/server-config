@@ -5,6 +5,7 @@ set.item:
   itemModel: mineinabyss:ice_bricks
 resourcepack:
   parentModel: block/cube_all
+  model: "mineinabyss:block/snow/ice_bricks"
   textures:
     variables:
       all: mineinabyss:block/snow/ice_bricks

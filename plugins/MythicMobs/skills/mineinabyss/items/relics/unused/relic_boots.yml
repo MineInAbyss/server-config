@@ -37,6 +37,6 @@ boot_fly_forward:
   - hasaurastacks{n=boot;s=3} true
   Skills:
   - auraremove{aura=boot;stacks=3} @self
-  - command{c="execute at <caster.uuid> run xp add <caster.name> -10";op=true}
+  - command{c="exp add <caster.name> -10"}
   - sound{s=item.boot.throw;sc=hostile;p=1;v=0.6} @self
   - lunge{velocity=1.09;velocityY=0.1} @forward{f=3;y=0.1}

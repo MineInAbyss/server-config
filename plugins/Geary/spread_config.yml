@@ -58,7 +58,7 @@ sectionsConfig:
     spreadRadius: 55
     spawnCap: 10
     sectionMinY: -220
-    sectionMaxY: 50
+    sectionMaxY: 0
     spawnNoise: 5
     splitSize: 55
     spawnAttempts: 500
@@ -92,7 +92,7 @@ sectionsConfig:
       conditions:
         - isOpenArea: { range: 3 }
     spreadRadius: 75
-    spawnCap: 3
+    spawnCap: 1
     sectionMinY: -220
     sectionMaxY: -100
     spawnNoise: 5
@@ -138,9 +138,9 @@ sectionsConfig:
     entry:
       type: "mm:prayingSkeleton_l4"
       conditions:
-        - isOpenArea: { range: 3 }
+        - isOpenArea: { range: 5 }
     spreadRadius: 400
-    spawnCap: 8
+    spawnCap: 4
     sectionMinY: -220
     sectionMaxY: -60
     spawnNoise: 5
@@ -150,7 +150,7 @@ sectionsConfig:
     entry:
       type: "mm:prayingSkeleton_l4"
       conditions:
-        - isOpenArea: { range: 3 }
+        - isOpenArea: { range: 5 }
     spreadRadius: 400
     spawnCap: 8
     sectionMinY: -220
@@ -162,7 +162,7 @@ sectionsConfig:
     entry:
       type: "mm:prayingSkeleton_l4"
       conditions:
-        - isOpenArea: { range: 3 }
+        - isOpenArea: { range: 5 }
     spreadRadius: 400
     spawnCap: 8
     sectionMinY: -220
@@ -174,7 +174,7 @@ sectionsConfig:
     entry:
       type: "mm:prayingSkeleton_l4"
       conditions:
-        - isOpenArea: { range: 3 }
+        - isOpenArea: { range: 5 }
     spreadRadius: 400
     spawnCap: 8
     sectionMinY: -220
@@ -188,7 +188,7 @@ sectionsConfig:
       conditions:
         - isOpenArea: { range: 5 }
     spreadRadius: 500
-    spawnCap: 8
+    spawnCap: 3
     sectionMinY: 140
     sectionMaxY: 220
     spawnNoise: 5

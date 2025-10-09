@@ -8,7 +8,7 @@ l5_passive:
   ySpread: 1
   conditions:
     - blockBelow:
-        allow: [ "#dirt", "moss_carpet", "green_terracotta", "green_concrete", "green_concrete_powder", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
+        allow: [ "#dirt", "moss_carpet", "green_terracotta", "lime_terracotta", "lime_concrete", "lime_concrete_powder" ]
     - maxNearby:
         amount: 5
 

@@ -10,24 +10,24 @@ set.item:
   - <gold>THIS WILL CONSUME YOUR ITEM
   enchantable: 0
 disableItemInteractions: {}
-observe:
-  itemRightClick:
-  - become: parent
-  - ensure:
-      mythicConditions:
-      - haspermission{p=hmccosmetics.hat.tama_hat} true
-    onFail:
-    - sendActionBar:
-        text: <#454A46>You already have this cosmetic
-  - cooldown:
-      id: cosmetic
-      length: 10s
-      display: <#454A46>You already have this cosmetic
-  - mythicSkills:
-    - hmc_tama_hat
-  - consumeItem:
-      type: mineinabyss:tama_hat
-    when:
-    - chance: 1
+# observe:
+#   itemRightClick:
+#   - become: parent
+#   - ensure:
+#       mythicConditions:
+#       - haspermission{p=hmccosmetics.hat.tama_hat} false
+#     onFail:
+#     - sendActionBar:
+#         text: <#454A46>You already have this cosmetic
+#   - cooldown:
+#       id: cosmetic
+#       length: 10s
+#       display: <#454A46>You already have this cosmetic
+#   - mythicSkills:
+#     - hmc_tama_hat
+#   - consumeItem:
+#       type: mineinabyss:tama_hat
+#     when:
+#     - chance: 1
 resourcepack:
   model: mineinabyss:item/event/tama_hat

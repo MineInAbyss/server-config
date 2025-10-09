@@ -16,6 +16,8 @@ set.item:
       level: 5
   enchantable: 0
   unbreakable: {}
+  weapon:
+    damagePerAttack: 0
 observe:
   itemLeftClick:
   - become: parent

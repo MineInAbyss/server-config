@@ -1,7 +1,7 @@
 set.item:
   itemName: <#C21807>Among Us
   type: minecraft:paper
-  itemModel: mineinabyss:amongus_cosmetic
+  itemModel: cosmetics:amongus_cosmetic
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.
@@ -9,24 +9,24 @@ set.item:
   - <gold>RIGHT CLICK TO OBTAIN WARDROBE COSMETIC
   - <gold>THIS WILL CONSUME YOUR ITEM
   enchantable: 0
-observe:
-  itemRightClick:
-  - become: parent
-  - ensure:
-      mythicConditions:
-      - haspermission{p=hmccosmetics.hat.amongus_cosmetic} true
-    onFail:
-    - sendActionBar:
-        text: <#454A46>You already have this cosmetic
-  - cooldown:
-      id: cosmetic
-      length: 10s
-      display: <#454A46>You already have this cosmetic
-  - mythicSkills:
-    - hmc_amongus_cosmetic
-  - consumeItem:
-      type: mineinabyss:amongus_cosmetic_new
-    when:
-    - chance: 1
+# observe:
+#   itemRightClick:
+#   - become: parent
+#   - ensure:
+#       mythicConditions:
+#       - haspermission{p=hmccosmetics.hat.amongus_cosmetic} false
+#     onFail:
+#     - sendActionBar:
+#         text: <#454A46>You already have this cosmetic
+#   - cooldown:
+#       id: cosmetic
+#       length: 10s
+#       display: <#454A46>You already have this cosmetic
+#   - mythicSkills:
+#     - hmc_amongus_cosmetic
+#   - consumeItem:
+#       type: mineinabyss:amongus_cosmetic_new
+#     when:
+#     - chance: 1
 resourcepack:
-  model: mineinabyss:item/event/red_imposter_hat
+  model: cosmetics:hats/amongus_hat
