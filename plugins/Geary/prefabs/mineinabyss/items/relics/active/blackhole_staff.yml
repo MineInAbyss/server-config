@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <#302D2D><b>Subtle Pull
   itemModel: mineinabyss:blackhole_staff
+  maxStackSize: 1
   lore:
   - ':layer_5: Grade I Relic'
   - <#570F01>The draw of the Abyss upon those who gaze into it

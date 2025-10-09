@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
@@ -1511,7 +1512,7 @@
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"head": {
-			"translation": [0, 3.5, 0],
+			"translation": [0, 3.75, 0],
 			"scale": [2.5, 2.5, 2.5]
 		},
 		"fixed": {

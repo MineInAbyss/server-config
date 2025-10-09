@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <#0047AB>Grapple Hook
   itemModel: mineinabyss:grapplehook
+  maxStackSize: 1
   lore:
   - 'Grade II Relic'
   - <#3d59ab>Getting around the Abyss can be quite tough. Thankfully 

@@ -1,0 +1,28 @@
+DamageDrops:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:damagesphere 1 0.975 nolooting
+
+AoeDrops:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:aoesphere 1 0.975 nolooting
+SunDrops:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:sunsphere 1 0.975 nolooting
+
+LureDrops:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:luresphere 1 0.975 nolooting
+
+SpreadDrops:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:spreadsphere 1 0.975 nolooting
+
+LavaDrops:
+  MaxItems: 1
+  Drops:
+ # - geary mineinabyss:heatstone 1 0.975

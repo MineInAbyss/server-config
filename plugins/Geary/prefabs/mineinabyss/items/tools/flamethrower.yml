@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <#0047AB>Flamethrower
   itemModel: mineinabyss:flamethrower
+  maxStackSize: 1
   lore:
   - 'Grade II Relic'
   - <#3d59ab>A relic born from decades of Orthian research.
@@ -37,6 +38,8 @@ observe:
   - ensure:
       hasConsumable:
         type: mineinabyss:flamethrower_fuel
+      mythicConditions:
+      - hasaurastacks{n=flamethrowercharge} true
     onFail:
     - sendActionBar:
         text: <red>Out of fuel
@@ -45,7 +48,7 @@ observe:
       length: 5s
       display: <dark_aqua>Flamethrower
   - mythicSkills:
-    - Flame-Torrent
+    - flamethrower_torrent
   - consumeItem:
       type: mineinabyss:flamethrower_fuel
     when:

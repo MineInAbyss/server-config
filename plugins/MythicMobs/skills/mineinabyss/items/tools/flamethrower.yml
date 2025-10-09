@@ -2,77 +2,54 @@
 ##################### Right Click Ability ##########################
 ####################################################################
 
-Flame-Torrent:
+flamethrower_torrent:
   Skills:
-    # - setvariable{var=caster.flamethrower-used;val=0}
-    - variableunset{var=caster.flamethrower-used}
     - gcd{ticks=80} @self
     - potion{type=SLOW;level=5;d=80} @self
     - gcd{ticks=40} @self
     - delay 8
 
-    # Visible fire
+    - skill{s=flamethrower_torrent_projectile_fire}
+    - skill{s=flamethrower_torrent_projectile_shield_damage}
+    - skill{s=flamethrower_torrent_projectile_damage}
+    - delay 10
+
+    - skill{s=flamethrower_torrent_projectile_fire}
+    - skill{s=flamethrower_torrent_projectile_shield_damage}
+    - skill{s=flamethrower_torrent_projectile_damage}
+    - delay 10
+
+    - skill{s=flamethrower_torrent_projectile_fire}
+    - skill{s=flamethrower_torrent_projectile_shield_damage}
+    - skill{s=flamethrower_torrent_projectile_damage}
+
+flamethrower_torrent_projectile_fire: # Visible fire
+  Conditions:
+    - hasaurastacks{n=flamethrowercharge} true
+  Skills:
     - projectile{
       i=1;repeat=20;repeati=2;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hp=true;hitself=false;se=false;
       bullet=BLOCK;material=FIRE;sfo=1.5;
       onHit=flamethrower-hit-visible;
       onStart=flamethrower-start} @forward{f=1000}
 
-    # Shield damage
+flamethrower_torrent_projectile_shield_damage: # Shield damage
+  Conditions:
+    - hasaurastacks{n=flamethrowercharge} true
+  Skills:
     - projectile{
       i=1;repeat=1;repeati=40;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hitself=false;se=false;
       bullet=TEXT;sfo=1.5;
       onHit=flamethrower-hit-shield} @forward{f=1000}
 
-    # Other damage
+flamethrower_torrent_projectile_damage: # Other damage
+  Conditions:
+    - hasaurastacks{n=flamethrowercharge} true
+  Skills:
     - projectile{
       i=1;repeat=2;repeati=20;syo=0.7;tyo=1;v=18;ho=-10;hnp=true;hitself=false;se=false;
       bullet=TEXT;sfo=1.5;
       onHit=flamethrower-hit-damage} @forward{f=1000}
-
-    - delay 10
-    # Visible fire
-    - projectile{
-      i=1;repeat=20;repeati=2;syo=0.7;tyo=1;hnp=true;hp=true;v=18;ho=0;hitself=false;se=false;
-      bullet=BLOCK;material=FIRE;sfo=1.5;
-      onHit=flamethrower-hit-visible;
-      onStart=flamethrower-start} @forward{f=1000}
-
-    # Shield damage
-    - projectile{
-      i=1;repeat=1;repeati=40;syo=0.7;tyo=1;hnp=true;v=18;ho=0;hitself=false;se=false;
-      bullet=TEXT;sfo=1.5;
-      onHit=flamethrower-hit-shield} @forward{f=1000}
-
-    # Other damage
-    - projectile{
-      i=1;repeat=2;repeati=20;syo=0.7;tyo=1;hnp=true;v=18;ho=0;hitself=false;se=false;
-      bullet=TEXT;sfo=1.5;
-      onHit=flamethrower-hit-damage} @forward{f=1000}
-
-
-    - delay 10
-    # Visible fire
-    - projectile{
-      i=1;repeat=20;repeati=2;syo=0.7;tyo=1;hnp=true;hp=true;v=18;ho=10;hitself=false;se=false;
-      bullet=BLOCK;material=FIRE;sfo=1.5;
-      onHit=flamethrower-hit-visible;
-      onStart=flamethrower-start} @forward{f=1000}
-
-    # Shield damage
-    - projectile{
-      i=1;repeat=1;repeati=40;syo=0.7;tyo=1;hnp=true;v=18;ho=10;hitself=false;se=false;
-      bullet=TEXT;sfo=1.5;
-      onHit=flamethrower-hit-shield} @forward{f=1000}
-
-    # Other damage
-    - projectile{
-      i=1;repeat=2;repeati=20;syo=0.7;tyo=1;hnp=true;v=18;ho=10;hitself=false;se=false;
-      bullet=TEXT;sfo=1.5;
-      onHit=flamethrower-hit-damage} @forward{f=1000}
-
-    - delay 200
-    # - variableunset{var=caster.flamethrower-used}
 
 flamethrower-start:
   Conditions:

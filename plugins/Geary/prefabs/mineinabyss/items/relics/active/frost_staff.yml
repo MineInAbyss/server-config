@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <#CCDADB><b>Shiver Mist
   itemModel: mineinabyss:frost_staff
+  maxStackSize: 1
   lore:
   - ':layer_5: Grade I Relic'
   - <#A0ACAD>The chemicals produced by this Relic maintain a cold enough
