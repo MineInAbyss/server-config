@@ -1,0 +1,21 @@
+set.item:
+  itemName: <#AC8053>Nil Spout
+  type: minecraft:paper
+  itemModel: mineinabyss:nil_spout
+  lore:
+  - ':layer_1: Grade IV Relic'
+  - <#BB9672>Some collectors consider this Relic lesser
+  - <#BB9672>than its peers for producing ‘Too much water.’
+  - <#C4A484><i>Active ability. Adds water to cauldrons on right click.
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:item/relics/nil_spout
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: nil_spout
+      length: 0.1s
+      display: <#AC8053>Nil Spout
+  - geary:water_bottle: {}
