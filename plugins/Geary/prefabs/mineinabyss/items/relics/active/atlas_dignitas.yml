@@ -1,5 +1,5 @@
 set.item:
-  type: minecraft:netherite_pickaxe
+  type: minecraft:paper
   itemModel: mineinabyss:atlas_dignitas
   itemName: <#c9ae74><b>Atlas Dignitas
   lore:
@@ -11,10 +11,19 @@ set.item:
   enchantments:
     - enchant: minecraft:silk_touch
       level: 1
-    - enchant: minecraft:efficiency
-      level: 6
   enchantable: 0
-  unbreakable: {}
+  tooltipDisplay:
+    hiddenComponents:
+      - enchantments
+  enchantmentGlintOverride: false
+  tool:
+    defaultMiningSpeed: 1.0
+    damagePerBlock: 0
+    rules:
+      - correctForDrops: true
+        speed: 46
+        blockTypes:
+          - mineable/pickaxe
 observe:
   itemRightClick:
   - become: parent
