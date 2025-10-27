@@ -6,8 +6,8 @@ set.item:
   - ':layer_5: Grade II Relic'
   - <#43583c>A prototype device once wielded by the Sovereign of Dawn,
   - <#43583c>discarded for unknown reasons.
-  - <#5e7b54><i>Active ability. Shoots multiple homing
-  - <#5e7b54><i>projectiles on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots multiple homing
+  - <font:small_text><gray><shadow:#00000000>projectiles on right click.
 observe:
   itemRightClick:
   - become: parent

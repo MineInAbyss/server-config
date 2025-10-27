@@ -6,8 +6,8 @@ set.item:
   - 'Grade III Relic'
   - <#cdd13d>The aromas that emanate from this capsule have been described
   - <#cdd13d>as ranging from pleasant and soothing to downright sickening.
-  - <#D2D489><i>Active ability. Grants a random potion effect in
-  - <#D2D489><i>a surrounding area on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Grants a random potion effect in
+  - <font:small_text><gray><shadow:#00000000>a surrounding area on right click.
 observe:
   itemRightClick:
   - become: parent

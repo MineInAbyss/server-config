@@ -6,8 +6,8 @@ set.item:
   - ':layer_3: Grade II Relic'
   - <#43583c>A key example of nature inspiring innovation, this handmade
   - <#43583c>Relic one-ups even the creature it was inspired by.  
-  - <#5e7b54><i>Active ability. Shoots a projectile on right click which
-  - <#5e7b54><i>explodes on hit launching entities in different directions.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots a projectile on right click which
+  - <font:small_text><gray><shadow:#00000000>explodes on hit launching entities in different directions.
 observe:
   itemRightClick:
   - become: parent

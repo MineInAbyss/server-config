@@ -6,8 +6,8 @@ set.item:
   - ':layer_3: Grade III Relic'
   - <#d7c9b3>Researchers speculate that this Relic’s purpose was never to send
   - <#d7c9b3>oneself flying, but that never stopped anyone from using it that way.
-  - <#ebdcc6><i>Active ability. Propels the user upward on
-  - <#ebdcc6><i>right click and forward on left click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Propels the user upward on
+  - <font:small_text><gray><shadow:#00000000>right click and forward on left click.
 observe:
   itemRightClick:
   - become: parent

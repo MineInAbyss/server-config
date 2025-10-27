@@ -1,14 +1,21 @@
 set.item:
-  type: minecraft:netherite_sword
+  type: minecraft:clock
   itemModel: mineinabyss:giant_relic_sword
   itemName: <#15ABC2><b>Crescent Hatchet
   lore:
   - ':layer_3: Grade I Relic'
   - <#249C9C>This Relic easily and effectively slices through the air, and even the
   - <#249C9C>Abyss itself, using its surroundings’ mysterious nature to its advantage.
-  - <#195959><i>Active ability. Creates charges on right click.Takes increasing amounts
-  - <#195959><i>of charges to create a slash of varying strength on left click.
-  unbreakable: {}
+  - <font:small_text><gray><shadow:#00000000>Active ability. Creates charges on right click.Takes increasing amounts
+  - <font:small_text><gray><shadow:#00000000>of charges to create a slash of varying strength on left click.
+  tool:
+    defaultMiningSpeed: 1.0
+    damagePerBlock: 0
+    rules:
+      - correctForDrops: true
+        speed: 9
+        blockTypes:
+          - mineable/axe
 observe:
   itemLeftClick:
   - become: parent

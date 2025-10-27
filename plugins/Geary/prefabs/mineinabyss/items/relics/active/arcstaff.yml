@@ -1,6 +1,6 @@
 set.item:
   itemName: <#68CCBF><b>Arc Staff
-  type: minecraft:netherite_hoe
+  type: minecraft:clock
   itemModel: mineinabyss:arc_staff
   lore:
   - ':layer_4: Grade I Relic'
@@ -8,10 +8,8 @@ set.item:
   - <#3C8C82>a Goblet of Giants containing netherworld runes.
   - <#265c55><i>It is rumored to return to the user after being thrown.
   enchantmentGlintOverride: true
-  unbreakable: {}
   weapon:
     damagePerAttack: 0
-  enchantable: 0
 resourcepack:
   model: mineinabyss:item/relics/arc_staff
 observe:

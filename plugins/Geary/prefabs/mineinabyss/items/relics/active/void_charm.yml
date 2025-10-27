@@ -6,7 +6,7 @@ set.item:
   - ':layer_5: Grade II Relic'
   - <#43583c>The crystals produced by this Relic, though
   - <#43583c>visually appealing, are remarkably fragile.
-  - <#5e7b54><i>Active ability. Shoots projectiles on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots projectiles on right click.
 observe:
   itemRightClick:
   - become: parent
