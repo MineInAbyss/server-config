@@ -1,15 +1,16 @@
 set.item:
   itemName: <#705160><b>Shifting Pike
-  type: minecraft:netherite_sword
+  type: minecraft:clock
   itemModel: mineinabyss:bounding_lance
   lore:
   - ':layer_1: :layer_2: Grade I Relic'
   - <#AB8E8A>This Relic commonly finds its use supporting
   - <#AB8E8A>wielders of more offensively-focused relics,
   - <#AB8E8A>but is perfectly capable on its own as well.
-  - <#695654><i>Active ability. Charges on right click. Has
-  - <#695654><i>3 different buff modes based on the users charges on left click.
-  unbreakable: {}
+  - <font:small_text><gray><shadow:#00000000>Active ability. Charges on right click. Has
+  - <font:small_text><gray><shadow:#00000000>3 different buff modes based on the users charges on left click.
+  weapon:
+    damagePerAttack: 0
 observe:
   itemRightClick:
   - become: parent

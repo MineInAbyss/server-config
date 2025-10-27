@@ -6,7 +6,7 @@ set.item:
   - ':layer_1: Grade III Relic'
   - <#d7c9b3>A foreign composer once introduced this Relic into his orchestra.
   - <#d7c9b3>Shortly after, several of his woodwinds quit.
-  - <#ebdcc6><i>Active ability. Slows user and surroundings on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Slows user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

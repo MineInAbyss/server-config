@@ -1,5 +1,5 @@
 set.item:
-  type: minecraft:netherite_pickaxe
+  type: minecraft:clock
   itemModel: mineinabyss:blaze_reap
   itemName: <#617B94><b>Blaze Reap
   lore:
@@ -7,15 +7,20 @@ set.item:
   - <#C6CC8A>Contains <white>Everlasting Gunpowder<#C6CC8A>,
   - <#C6CC8A>which causes ongoing explosions
   - <#C6CC8A>on whatever it is struck on.
-  - <#948E61><i>Active ability. Charges weapon on right click.
-  - <#948E61><i>Takes 5 charges to create explosion on left click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Charges weapon on right click.
+  - <font:small_text><gray><shadow:#00000000>Takes 5 charges to create explosion on left click.
   enchantments:
     - enchant: minecraft:fortune
       level: 3
-    - enchant: minecraft:efficiency
-      level: 5
   enchantable: 0
-  unbreakable: {}
+  tool:
+    defaultMiningSpeed: 1.0
+    damagePerBlock: 0
+    rules:
+      - correctForDrops: true
+        speed: 38
+        blockTypes:
+          - mineable/pickaxe
   weapon:
     damagePerAttack: 0
 observe:

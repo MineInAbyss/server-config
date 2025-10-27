@@ -6,7 +6,7 @@ set.item:
   - ':layer_4: Grade III Relic'
   - <#d7c9b3>Doctors have failed to reach an agreement on the safety of fungi
   - <#d7c9b3>like these as medicine. Their efficacy, however, is beyond doubt.
-  - <#ebdcc6><i>Active ability. Heals user and surroundings on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Heals user and surroundings on right click.
 observe:
   itemRightClick:
   - become: parent

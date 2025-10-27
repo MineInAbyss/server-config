@@ -6,8 +6,8 @@ set.item:
   - ':layer_1::layer_2: Grade III Relic'
   - <#d7c9b3>Researchers speculate that this automated sentry was a
   - <#d7c9b3>precursor to the larger, more imposing Interference Unit.
-  - <#ebdcc6><i>Active ability. Summons a
-  - <#ebdcc6><i>Vine Shooter inspired automata on right click.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Summons a
+  - <font:small_text><gray><shadow:#00000000>Vine Shooter inspired automata on right click.
 observe:
   itemRightClick:
   - become: parent

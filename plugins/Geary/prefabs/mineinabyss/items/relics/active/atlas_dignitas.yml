@@ -1,13 +1,12 @@
 set.item:
-  type: minecraft:paper
+  type: minecraft:clock
   itemModel: mineinabyss:atlas_dignitas
   itemName: <#c9ae74><b>Atlas Dignitas
   lore:
   - ':layer_3: Grade I Relic'
   - <#d4be90>This Relic has found success in the mining, construction
   - <#d4be90>and physical therapy industries, strangely enough.
-  - <#dfceac><i>Active ability. On right click starts to consume
-  - <#dfceac><i> food in exchange of a mining speed buff.
+  - <font:small_text><gray><shadow:#00000000>Active ability. On right click starts to consume food in exchange of a mining speed buff.
   enchantments:
     - enchant: minecraft:silk_touch
       level: 1
