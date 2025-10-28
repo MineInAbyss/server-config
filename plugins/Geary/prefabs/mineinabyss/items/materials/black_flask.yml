@@ -6,7 +6,7 @@ set.item:
   - Grade IV relic
   - <#3d59ab>A fleshy bottle filled with a black, oily substance.
   - <#3d59ab>Drinking it causes a strange reaction within the body.
-  - <#6666ff><i>Consumable. Grants effects when drunk.
+  - <font:small_text><gray><shadow:#00000000>Consumable. Grants effects when drunk.
   consumable:
       animation: DRINK
       duration: 1.6s
