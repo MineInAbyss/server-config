@@ -8,8 +8,8 @@ set.item:
   - <#3d59ab>Getting around the Abyss can be quite tough. Thankfully 
   - <#3d59ab>entrepreneurial delvers came up with this contraption.
   - <#3d59ab>Use at your own risk.
-  - <#6666ff><i>Active ability. Right click to launch yourself
-  - <#6666ff><i>towards your target or pull mobs towards you.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Right click to launch yourself
+  - <font:small_text><gray><shadow:#00000000>towards your target or pull mobs towards you.
 set.recipes:
  result:
    prefab: mineinabyss:grapplehook
