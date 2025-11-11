@@ -58,11 +58,11 @@ feat/chat:
 
 feat/cosmetics:
   copyPaths:
-    - source: mc-resourcepacks/cosmetics
+    - source: packs_assets/cosmetics
       dest: plugins/Geary/template_pack
     - source: plugins/Geary/prefabs/cosmetics
       dest: plugins/Geary/prefabs/cosmetics
-    - source: mc-resourcepacks/cosmetics
+    - source: packs_assets/cosmetics
       dest: plugins/Packy/resourcepacks/cosmetics
     - source: plugins/HMCCosmetics
       dest: plugins/HMCCosmetics
@@ -100,16 +100,16 @@ feat/items:
       dest: plugins/Geary/prefabs/mineinabyss/items
     - source: plugins/Geary/prefabs/minecraft/recipes
       dest: plugins/Geary/prefabs/minecraft/recipes
-    - source: mc-resourcepacks/items
+    - source: packs_assets/items
       dest: plugins/Geary/template_pack
-    - source: mc-resourcepacks/tools_2d
-      dest: plugins/Packy/resourcepacks/tools_2d
-    - source: mc-resourcepacks/tools_3d
-      dest: plugins/Packy/resourcepacks/tools_3d
-    - source: mc-resourcepacks/armor_new
-      dest: plugins/Packy/resourcepacks/armor_new
-    - source: mc-resourcepacks/armor_old
-      dest: plugins/Packy/resourcepacks/armor_old
+    - source: packs_assets/option_tools_2d
+      dest: plugins/Packy/resourcepacks/option_tools_2d
+    - source: packs_assets/option_tools_3d
+      dest: plugins/Packy/resourcepacks/option_tools_3d
+    - source: packs_assets/option_armor_new
+      dest: plugins/Packy/resourcepacks/option_armor_new
+    - source: packs_assets/option_armor_old
+      dest: plugins/Packy/resourcepacks/option_armor_old
 
 feat/hud:
   copyPaths:
@@ -140,7 +140,7 @@ feat/deeperworld:
 
 feat/resourcepack-common:
   copyPaths:
-    - source: mc-resourcepacks/common
+    - source: packs_assets/common
       dest: plugins/Packy/resourcepacks/common
 
 # Servers

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/backpacks/default_backpack",
+  "textures": {
+    "6": "minecraft:block/backpacks/lime_backpack",
+    "particle": "minecraft:block/backpacks/lime_backpack"
+  }
+}

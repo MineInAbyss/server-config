@@ -23,7 +23,7 @@ subMenus:
     button:
       type: minecraft:paper
       itemName: <gold>Music
-      itemModel: packy:music_toggle
+      itemModel: mineinabyss:packy/music_toggle
     modifiers:
       offset:
         x: 4
@@ -39,7 +39,7 @@ subMenus:
     height: 6
     button:
       type: minecraft:paper
-      itemModel: packy:armor
+      itemModel: mineinabyss:packy/armor
     modifiers:
       offset:
         x: 1
@@ -67,7 +67,7 @@ subMenus:
     height: 6
     button:
       type: minecraft:paper
-      itemModel: packy:sword
+      itemModel: mineinabyss:packy/tools
     modifiers:
       offset:
         x: 6

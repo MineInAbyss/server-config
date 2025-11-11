@@ -1,0 +1,29 @@
+{
+  "oversized_in_gui": true,
+  "model": {
+    "type": "condition",
+    "property": "custom_model_data",
+    "index": 0,
+    "on_true": {
+      "type": "composite",
+      "models": [
+        {
+          "type": "model",
+          "model": "minecraft:block/jukebox"
+        },
+        {
+          "type": "model",
+          "model": "mineinabyss:music_disc"
+        }
+      ]
+    },
+    "on_false": {
+      "type": "model",
+      "model": "minecraft:block/jukebox"
+    }
+  },
+  "fallback": {
+    "type": "model",
+    "model": "minecraft:block/jukebox"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "oversized_in_gui": true,
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "model",
+          "model": "mineinabyss:packy/tools_2d"
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "mineinabyss:packy/tools_3d"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "mia_gui:packy/tools_vanilla"
+        }
+      }
+    ]
+  }
+}

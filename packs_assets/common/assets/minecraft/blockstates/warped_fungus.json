@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/water_shroom"},
+      { "model": "minecraft:block/water_shroom2", "weight": 3 },
+      { "model": "minecraft:block/water_shroom4", "weight": 2 }
+    ]
+  }
+}
