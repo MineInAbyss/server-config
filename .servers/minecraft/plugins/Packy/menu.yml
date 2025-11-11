@@ -50,15 +50,15 @@ subMenus:
     type: CYCLING
     allSlotsEmptyExceptFirst: true
     packs:
-      armor_new:
+      option_armor_new:
         button:
           type: minecraft:paper
           itemName: <gold>New Armor
-      armor_old:
+      option_armor_old:
         button:
           type: minecraft:paper
           itemName: <gold>Old Armor
-      vanilla_armor:
+      option_vanilla_armor:
         button:
           type: minecraft:paper
           itemName: <gold>Vanilla
@@ -77,15 +77,15 @@ subMenus:
         height: 4
     type: CYCLING
     packs:
-      tools_2d:
+      option_tools_2d:
         button:
           type: minecraft:paper
           itemName: <gold>2D Tools
-      tools_3d:
+      option_tools_3d:
         button:
           type: minecraft:paper
           itemName: <gold>3D Tools
-      vanilla_tools:
+      option_vanilla_tools:
         button:
           type: minecraft:paper
           itemName: <gold>Vanilla Tools

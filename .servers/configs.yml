@@ -133,6 +133,11 @@ feat/ost:
     - source: mc-datapacks/music_discs
       dest: worlds/world/datapacks/music_discs
 
+feat/uis:
+  copyPaths:
+    - source: packs_assets/feat_uis
+      dest: plugins/Packy/resourcepacks/feat_uis
+
 feat/deeperworld:
   copyPaths:
     - source: mc-datapacks/deeper_world
@@ -216,6 +221,7 @@ dev:
     - minecraft
     - feat/blocks
     - feat/items
+    - feat/uis
     - feat/loot_chests
     - feat/cosmetics
     - feat/mobs
