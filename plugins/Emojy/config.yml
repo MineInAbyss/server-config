@@ -1,6 +1,6 @@
-defaultNamespace: emotes
-defaultFolder: emotes
-defaultFont: emotes:emotes
+defaultNamespace: emojy
+defaultFolder: emojy
+defaultFont: emojy:emotes
 defaultHeight: 8
 defaultAscent: 8
 defaultGifType: SHADER
@@ -12,17 +12,18 @@ emojyList:
   ignoredEmoteIds: []
   ignoredGifIds: []
   ignoredFonts:
-    - mineinabyss:guilds
-    - mineinabyss:blocky
-    - mineinabyss:hud
-    - mineinabyss:pvp
-    - minecraft:uniform
-    - mineinabyss:orthbanking
-    - mineinabyss:cosmetics
-    - mineinabyss:orth_map
-    - mineinabyss:playerprofile
-    - mineinabyss:roles
     - minecraft:default
+    - minecraft:uniform
+    - mineinabyss:blocky
+    - mineinabyss:hmccosmetics
+    - mineinabyss:mia_guilds
+    - mineinabyss:mia_okibotravel
+    - mineinabyss:mia_orthbanking
+    - mineinabyss:mia_playerprofile
+    - mineinabyss:mia_playerprofile_background
+    - mineinabyss:mia_pvp
+    - mineinabyss:hud
+    - mineinabyss:roles
 supportedLanguages:
   - en_US
   - ru_RU
