@@ -731,13 +731,14 @@ emotes:
     height: 17
     ascent: -96
 # gui: mineinabyss okibotravel feature
-  - id: icon_okibo
-    font: mineinabyss:orth_map
+  - id: okibo_icon
+    font: mineinabyss:mia_okibotravel
+    texture: mineinabyss:mia_okibotravel/okibo_icon.png
     height: 7
     ascent: 7
-  - id: orthmap
-    font: mineinabyss:orth_map
-    texture: mineinabyss:ui/orth_map.png
+  - id: okibo_map
+    font: mineinabyss:mia_okibotravel
+    texture: mineinabyss:mia_okibotravel/okibo_map.png
     height: 30
     ascent: 30
     bitmapWidth: 2
