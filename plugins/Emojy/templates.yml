@@ -1,4 +1,4 @@
-role_template:
+roles:
   font: mineinabyss:roles
   height: 8
   ascent: 7
@@ -15,14 +15,14 @@ mia_playerprofile:
   height: 8
   ascent: 7
 mia_playerprofile_background:
-  font: mineinabyss:mia_playerprofile
+  font: mineinabyss:mia_playerprofile_background
   height: 72
   ascent: -2
 cosmetic_shade:
-  texture: mineinabyss:hmccosmetics/shade.png
-  font: mineinabyss:cosmetics
+  texture: mineinabyss:gui/plugins/hmccosmetics/shade.png
+  font: mineinabyss:hmccosmetics
   height: 16
 cosmetic_clear:
-  texture: mineinabyss:hmccosmetics/clear_image.png
-  font: mineinabyss:cosmetics
+  texture: mineinabyss:gui/plugins/hmccosmetics/clear_image.png
+  font: mineinabyss:hmccosmetics
   height: 16
