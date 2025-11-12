@@ -709,26 +709,28 @@ emotes:
     texture: mineinabyss:ui/orthbanking/mittytoken.png
     height: 12
     ascent: -11
+# gui: blocky menu
   - id: blocky_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_menu.png
+    texture: mineinabyss:blocky/blocky_menu.png
     height: 256
     ascent: 14
   - id: blocky_grid_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_grid_menu.png
+    texture: mineinabyss:blocky/blocky_grid_menu.png
     height: 256
     ascent: 14
   - id: blocky_scrolling_up
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_scrolling_up.png
+    texture: mineinabyss:blocky/blocky_scrolling_up.png
     height: 17
     ascent: -96
   - id: blocky_scrolling_down
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
+    texture: mineinabyss:blocky/blocky_scrolling_down.png
     height: 17
     ascent: -96
+# gui: mineinabyss okibotravel feature
   - id: icon_okibo
     font: mineinabyss:orth_map
     height: 7
