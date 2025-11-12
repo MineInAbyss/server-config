@@ -2,9 +2,9 @@ set.item:
   itemName: <#FF9D26>Satchel
   type: minecraft:paper
   dyedColor: "#DCC069"
-  itemModel: cosmetics:satchel
+  itemModel: mineinabyss:satchel
 resourcepack:
-  model: cosmetics:backpacks/satchel
+  model: mineinabyss:cosmetics/backpacks/satchel
   tintSources:
     - type: DYE
       defaultColor: "#DCC069"

@@ -618,6 +618,7 @@ emotes:
   - id: guild_lookup_members3
     template: guilds
     texture: mineinabyss:ui/guilds/menus/guild_lookup_members3.png
+# ui: hmccosmetics
   - id: cosmetic_orth_coin
     font: mineinabyss:cosmetics
     texture: mineinabyss:ui/orthbanking/orthcoin.png
@@ -630,44 +631,34 @@ emotes:
     ascent: 10
   - id: cosmetic_dye_menu
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/menus/cosmetic_dye_menu.png
+    texture: mineinabyss:hmccosmetics/menus/cosmetic_dye_menu.png
     height: 256
     ascent: 14
   - id: cosmetic_main_menu
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/menus/cosmetic_main_menu.png
+    texture: mineinabyss:hmccosmetics/menus/cosmetic_main_menu.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_1
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/menus/cosmetic_grid_menu_1.png
+    texture: mineinabyss:hmccosmetics/menus/cosmetic_grid_menu_1.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_2
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/menus/cosmetic_grid_menu_2.png
+    texture: mineinabyss:hmccosmetics/menus/cosmetic_grid_menu_2.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_3
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/menus/cosmetic_grid_menu_3.png
+    texture: mineinabyss:hmccosmetics/cosmetic_grid_menu_3.png
     height: 256
     ascent: 14
   - id: wardrobe_transition
     font: mineinabyss:cosmetics
-    texture: cosmetics:ui/wardrobe_transition.png
+    texture: mineinabyss:hmccosmetics/wardrobe_transition.png
     height: 256
     ascent: 50
-  - id: bank_orthcoin
-    font: mineinabyss:orthbanking
-    texture: mineinabyss:ui/orthbanking/orthcoin.png
-    height: 10
-    ascent: -12
-  - id: bank_mittytoken
-    font: mineinabyss:orthbanking
-    texture: mineinabyss:ui/orthbanking/mittytoken.png
-    height: 12
-    ascent: -11
   - id: shade_row_1
     template: cosmetic_shade
     ascent: -4
@@ -704,6 +695,17 @@ emotes:
   - id: clear_row_6
     template: cosmetic_clear
     ascent: -94
+# 
+  - id: bank_orthcoin
+    font: mineinabyss:orthbanking
+    texture: mineinabyss:ui/orthbanking/orthcoin.png
+    height: 10
+    ascent: -12
+  - id: bank_mittytoken
+    font: mineinabyss:orthbanking
+    texture: mineinabyss:ui/orthbanking/mittytoken.png
+    height: 12
+    ascent: -11
   - id: blocky_menu
     font: mineinabyss:blocky
     texture: mineinabyss:ui/blocky/blocky_menu.png

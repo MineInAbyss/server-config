@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "mineinabyss:hmccosmetics/paintbrush",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": 16777215
+      }
+    ]
+  }
+}

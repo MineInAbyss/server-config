@@ -1,9 +1,9 @@
 set.item:
   type: minecraft:paper
   dyedColor: "#DCC069"
-  itemModel: cosmetics:miner_backpack_fp
+  itemModel: mineinabyss:miner_backpack_fp
 resourcepack:
-  model: cosmetics:backpacks/miner_backpack_fp
+  model: mineinabyss:cosmetics/backpacks/miner_backpack_fp
   tintSources:
     - type: DYE
       defaultColor: "#DCC069"

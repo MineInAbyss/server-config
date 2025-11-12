@@ -3,6 +3,6 @@ set.item:
   lore:
   - '<gold>Exclusive Relic 2.0 update cosmetic.'
   type: minecraft:paper
-  itemModel: cosmetics:zephyr_disk_cosmetic
+  itemModel: mineinabyss:zephyr_disk_cosmetic
 resourcepack:
-  model: cosmetics:hats/zephyr_disk_cosmetic
+  model: mineinabyss:cosmetics/hats/zephyr_disk_cosmetic

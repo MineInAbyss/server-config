@@ -162,7 +162,7 @@ wardrobe:
   # Bossbar that shows when a player is in a wardrobe.
   bossbar:
     enabled: true
-    text: <font:cosmetics:cosmetics><b>Left-Click</b> to open the menu! <b>Sneak</b> to exit wardrobe!
+    text: <font:mineinabyss:cosmetics><b>Left-Click</b> to open the menu! <b>Sneak</b> to exit wardrobe!
     progress: 1.0
     overlay: PROGRESS
     color: WHITE

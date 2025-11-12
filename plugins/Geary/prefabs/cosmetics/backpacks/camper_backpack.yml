@@ -2,9 +2,9 @@ set.item:
   itemName: <#FF9D26>Camper Backpack
   type: minecraft:paper
   dyedColor: "#62A8FF"
-  itemModel: cosmetics:camper_backpack
+  itemModel: mineinabyss:camper_backpack
 resourcepack:
-  model: cosmetics:backpacks/camper_backpack
+  model: mineinabyss:cosmetics/backpacks/camper_backpack
   tintSources:
     - type: DYE
       defaultColor: "#62A8FF"

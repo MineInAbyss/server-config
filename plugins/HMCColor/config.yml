@@ -18,7 +18,7 @@ buttons:
       - attribute_modifiers
     dyedColor: "#FFFFFF"
     attributeModifiers: []
-    itemModel: cosmetics:paintbrush
+    itemModel: mineinabyss:hmccosmetics/paintbrush
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:
@@ -57,7 +57,7 @@ buttons:
     # subColorItem can be specified, null defaults to Buttons.item
     subColorItem:
       type: minecraft:leather_horse_armor
-      itemModel: cosmetics:paintbrush
+      itemModel: mineinabyss:hmccosmetics/paintbrush
       tooltipDisplay:
         hideTooltip: true
   effectButton: 31

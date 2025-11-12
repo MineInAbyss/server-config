@@ -10,7 +10,7 @@ set.item:
     slot: HEAD
 disableItemInteractions: {}
 resourcepack:
-  model: cosmetics:hats/bondrewd_helmet
+  model: mineinabyss:cosmetics/hats/bondrewd_helmet
   tintSources:
     - type: DYE
       defaultColor: "#FFFFFF"

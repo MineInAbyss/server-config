@@ -9,7 +9,7 @@ set.item:
     slot: HEAD
 disableItemInteractions: {}
 resourcepack:
-  model: cosmetics:hats/ozen_hat
+  model: mineinabyss:cosmetics/hats/ozen_hat
   tintSources:
     - type: DYE
       defaultColor: "#FFFFFF"

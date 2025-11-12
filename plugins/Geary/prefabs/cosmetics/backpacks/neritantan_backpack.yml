@@ -2,9 +2,9 @@ set.item:
   itemName: <gray>Neritantan Backpack
   type: minecraft:paper
   dyedColor: "#FFFFFF"
-  itemModel: cosmetics:neritantan_backpack
+  itemModel: mineinabyss:neritantan_backpack
 resourcepack:
-  model: cosmetics:backpacks/neritantan_backpack
+  model: mineinabyss:cosmetics/backpacks/neritantan_backpack
   tintSources:
     - type: DYE
       defaultColor: "#FFFFFF"

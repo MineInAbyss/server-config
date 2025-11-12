@@ -3,6 +3,14 @@ common:
   default: true
   required: true
   filePath: Packy/resourcepacks/common
+feat_blocks:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_blocks
+feat_items:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_items
 feat_uis:
   default: true
   required: true

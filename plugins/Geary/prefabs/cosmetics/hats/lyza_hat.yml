@@ -10,7 +10,7 @@ set.item:
     slot: HEAD
 disableItemInteractions: {}
 resourcepack:
-  model: cosmetics:hats/lyza_hat
+  model: mineinabyss:cosmetics/hats/lyza_hat
   tintSources:
     - type: DYE
       defaultColor: "#FFFFFF"

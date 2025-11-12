@@ -48,6 +48,8 @@ feat/blocks:
   copyPaths:
     - source: plugins/Blocky
       dest: plugins/Blocky
+    - source: packs_assets/feat_blocks
+      dest: plugins/Packy/resourcepacks/feat_blocks
     - source: plugins/Geary/prefabs/mineinabyss/blocks
       dest: plugins/Geary/prefabs/mineinabyss/blocks
 
@@ -88,6 +90,10 @@ feat/events:
       dest: plugins/Geary/template_pack
     - source: "{{ privateSettingsDest }}/mc-resourcepacks/cosmetics"
       dest: plugins/Packy/resourcepacks/cosmetics
+    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
+      dest: plugins/MineInAbyss
+    - source: packs_assets/events
+      dest: plugins/Packy/resourcepacks/events
 
 feat/loot_chests:
   copyPaths:
@@ -100,7 +106,7 @@ feat/items:
       dest: plugins/Geary/prefabs/mineinabyss/items
     - source: plugins/Geary/prefabs/minecraft/recipes
       dest: plugins/Geary/prefabs/minecraft/recipes
-    - source: packs_assets/items
+    - source: packs_assets/feat_items
       dest: plugins/Geary/template_pack
     - source: packs_assets/option_tools_2d
       dest: plugins/Packy/resourcepacks/option_tools_2d
