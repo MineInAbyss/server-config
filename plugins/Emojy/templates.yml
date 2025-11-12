@@ -6,15 +6,15 @@ starcompass:
   font: mineinabyss:hud
   height: 24
   ascent: 8
-guilds:
+mia_guilds:
   font: mineinabyss:mia_guilds
   height: 224
   ascent: 16
-playerprofile:
+mia_playerprofile:
   font: mineinabyss:mia_playerprofile
   height: 8
   ascent: 7
-playerprofile_background:
+mia_playerprofile_background:
   font: mineinabyss:mia_playerprofile
   height: 72
   ascent: -2
