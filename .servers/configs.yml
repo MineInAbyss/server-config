@@ -108,6 +108,8 @@ feat/items:
       dest: plugins/Geary/prefabs/minecraft/recipes
     - source: packs_assets/feat_items
       dest: plugins/Geary/template_pack
+    - source: packs_assets/feat_items
+      dest: plugins/Packy/resourcepacks/feat_items
     - source: packs_assets/option_tools_2d
       dest: plugins/Packy/resourcepacks/option_tools_2d
     - source: packs_assets/option_tools_3d
