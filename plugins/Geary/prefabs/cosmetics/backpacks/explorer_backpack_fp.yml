@@ -1,9 +1,0 @@
-set.item:
-  type: minecraft:paper
-  dyedColor: "#62A8FF"
-  itemModel: mineinabyss:explorer_backpack_fp
-resourcepack:
-  model: mineinabyss:cosmetics/backpacks/explorer_backpack_fp
-  tintSources:
-    - type: DYE
-      defaultColor: "#62A8FF"

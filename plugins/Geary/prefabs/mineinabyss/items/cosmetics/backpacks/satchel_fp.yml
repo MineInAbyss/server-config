@@ -1,0 +1,9 @@
+set.item:
+  type: minecraft:paper
+  dyedColor: "#DCC069"
+  itemModel: mineinabyss:cosmetics/backpacks/satchel_fp
+resourcepack:
+  model: mineinabyss:cosmetics/backpacks/satchel_fp
+  tintSources:
+    - type: DYE
+      defaultColor: "#DCC069"

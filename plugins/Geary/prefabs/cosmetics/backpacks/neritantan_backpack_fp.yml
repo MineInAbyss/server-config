@@ -1,9 +1,0 @@
-set.item:
-  type: minecraft:paper
-  dyedColor: "#FFFFFF"
-  itemModel: mineinabyss:neritantan_backpack_fp
-resourcepack:
-  model: mineinabyss:cosmetics/backpacks/neritantan_backpack_fp
-  tintSources:
-    - type: DYE
-      defaultColor: "#FFFFFF"

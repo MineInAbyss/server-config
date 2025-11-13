@@ -1,0 +1,8 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#008211>Prushka's Hat
+  itemModel: mineinabyss:cosmetics/hats/prushka_hat
+  equippable:
+    slot: HEAD
+resourcepack:
+  model: mineinabyss:cosmetics/hats/prushka_hat

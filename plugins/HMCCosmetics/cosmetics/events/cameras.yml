@@ -2,27 +2,27 @@ camera:
   slot: BACKPACK
   permission: "hmccosmetics.camera.normal"
   item:
-    material: geary:cosmetics:camera
+    material: geary:mineinabyss:camera
   firstperson-item:
-    material: geary:cosmetics:camera_fp
+    material: geary:mineinabyss:camera_fp
 camera_bronze:
   slot: BACKPACK
   permission: "hmccosmetics.camera.bronze"
   item:
-    material: geary:cosmetics:camera_bronze
+    material: geary:mineinabyss:camera_bronze
   firstperson-item:
-    material: geary:cosmetics:camera_bronze_fp
+    material: geary:mineinabyss:camera_bronze_fp
 camera_silver:
   slot: BACKPACK
   permission: "hmccosmetics.camera.silver"
   item:
-    material: geary:cosmetics:camera_silver
+    material: geary:mineinabyss:camera_silver
   firstperson-item:
-    material: geary:cosmetics:camera_silver_fp
+    material: geary:mineinabyss:camera_silver_fp
 camera_gold:
   slot: BACKPACK
   permission: "hmccosmetics.camera.gold"
   item:
-    material: geary:cosmetics:camera_gold
+    material: geary:mineinabyss:camera_gold
   firstperson-item:
-    material: geary:cosmetics:camera_gold_fp
+    material: geary:mineinabyss:camera_gold_fp

@@ -1,0 +1,12 @@
+set.item:
+  itemName: <#2D2B4F>Reg's Helmet
+  lore:
+  - ""
+  - <#46437A><i>Best Robotboi
+  type: minecraft:paper
+  itemModel: mineinabyss:cosmetics/hats/reg_helmet
+  equippable:
+    slot: HEAD
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:cosmetics/hats/reg_helmet
