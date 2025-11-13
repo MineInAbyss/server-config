@@ -2,45 +2,48 @@ amongus_cosmetic:
   slot: HELMET
   permission: "hmccosmetics.hat.amongus_cosmetic"
   item:
+    name: Amongus Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/amongus_hat
 tama_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.tama_hat"
   item:
+    name: Tama Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/tama_hat
 clown_mask:
   slot: HELMET
   permission: "hmccosmetics.hat.clown_mask"
   item:
+    name: Clown Mask
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/clown_mask
 pumpkin_hat_1:
   slot: HELMET
   permission: "hmccosmetics.hat.pumpkin_hat_1"
   item:
+    name: Pumpkin Hat
     material: PAPER
-    name: "Pumpkin Hat"
     model-id: mineinabyss:cosmetics/hats/pumpkin_hat_1
 witch_hat_1:
   slot: HELMET
   permission: "hmccosmetics.hat.witch_hat_1"
   item:
-    name: "Witch Hat"
+    name: Witch Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/witch_hat_1
 skull_gasmask:
   slot: HELMET
   permission: "hmccosmetics.hat.skull_gasmask"
   item:
-    name: "Skull Gasmask"
+    name: Skull Gasmask
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/skull_gasmask
 pumpkin_face:
   slot: HELMET
   permission: "hmccosmetics.hat.pumpkin_face"
   item:
-    name: "Pumpkin Face"
+    name: Pumpkin Face
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/pumpkin_face
