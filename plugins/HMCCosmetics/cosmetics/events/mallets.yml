@@ -2,6 +2,7 @@ mallet_chisel:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.normal"
   item:
+    name: Regular Mallet
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/mallet_chisel
   firstperson-item:
@@ -11,6 +12,7 @@ mallet_chisel_bronze:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.bronze"
   item:
+    name: Bronze Mallet
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_bronze
   firstperson-item:
@@ -20,6 +22,7 @@ mallet_chisel_silver:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.silver"
   item:
+    name: Silver Mallet
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_silver
   firstperson-item:
@@ -29,6 +32,7 @@ mallet_chisel_gold:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.gold"
   item:
+    name: Golden Mallet
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_gold
   firstperson-item:

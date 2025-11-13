@@ -4,21 +4,21 @@ amongus_cosmetic:
   item:
     name: Amongus Hat
     material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/amongus_hat
+    model-id: mineinabyss:cosmetics/hats/amongus_hat
 tama_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.tama_hat"
   item:
     name: Tama Hat
     material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/tama_hat
+    model-id: mineinabyss:cosmetics/hats/tama_hat
 clown_mask:
   slot: HELMET
   permission: "hmccosmetics.hat.clown_mask"
   item:
     name: Clown Mask
     material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/clown_mask
+    model-id: mineinabyss:cosmetics/hats/clown_mask
 pumpkin_hat_1:
   slot: HELMET
   permission: "hmccosmetics.hat.pumpkin_hat_1"

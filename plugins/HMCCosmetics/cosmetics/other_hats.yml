@@ -3,42 +3,49 @@ adventurer_hat:
   permission: "hmccosmetics.hat.adventurer_hat"
   dyeable: true
   item:
+    name: Adventurer's Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/adventurer_hat
 fantasy_straw_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_straw_hat"
   item:
+    name: Straw Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/fantasy_straw_hat
 fantasy_explorer_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_explorer_hat"
   item:
+    name: Explorer's Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/fantasy_explorer_hat
 fantasy_cook_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_cook_hat"
   item:
+    name: Cook's Toque
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/fantasy_cook_hat
 mechanic_glasses:
   slot: HELMET
   permission: "hmccosmetics.hat.mechanic_glasses"
   item:
+    name: Mechanic's Glasses
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/mechanic_glasses
 fantasy_fisher_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_fisher_hat"
   item:
+    name: Fisherman's Hat
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/fantasy_fisher_hat
 fantasy_mining_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_mining_helmet"
   item:
+    name: Mining Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/fantasy_mining_helmet
 
@@ -46,11 +53,13 @@ dooby_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.dooby_helmet"
   item:
+    name: Dooby's Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/dooby_helmet
 henya_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.henya_helmet"
   item:
+    name: Henya's Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/henya_helmet

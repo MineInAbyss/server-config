@@ -2,6 +2,7 @@ camera:
   slot: BACKPACK
   permission: "hmccosmetics.camera.normal"
   item:
+    name: Regular Camera
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camera
   firstperson-item:
@@ -11,6 +12,7 @@ camera_bronze:
   slot: BACKPACK
   permission: "hmccosmetics.camera.bronze"
   item:
+    name: Bronze Camera
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camera_bronze
   firstperson-item:
@@ -20,6 +22,7 @@ camera_silver:
   slot: BACKPACK
   permission: "hmccosmetics.camera.silver"
   item:
+    name: Silver Camera
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camera_silver
   firstperson-item:
@@ -29,6 +32,7 @@ camera_gold:
   slot: BACKPACK
   permission: "hmccosmetics.camera.gold"
   item:
+    name: Gold Camera
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camera_gold
   firstperson-item:

@@ -3,7 +3,7 @@ backpack:
   permission: "hmccosmetics.backpack.backpack"
   dyeable: false
   item:
-    name: "<#7e481d>Backpack"
+    name: "<#7e481d>Regular Backpack"
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/default_backpack
   firstperson-item:
@@ -14,6 +14,7 @@ satchel:
   permission: "hmccosmetics.backpack.satchel"
   dyeable: true
   item:
+    name: Satchel
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/satchel
   firstperson-item:
@@ -24,6 +25,7 @@ neritantan_backpack:
   slot: BACKPACK
   dyeable: false
   item:
+    name: Neritantan Backpack
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/neritantan_backpack
   firstperson-item:
@@ -34,6 +36,7 @@ bondrewd_backpack:
   slot: BACKPACK
   dyeable: false
   item:
+    name: Bondrewd's Backpack
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/bondrewd_backpack
   firstperson-item:
