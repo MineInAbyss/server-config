@@ -3,78 +3,78 @@ miner_backpack:
   slot: BACKPACK
   dyeable: true
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/miner_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/miner_backpack_fp
 camper_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.camper_backpack"
   dyeable: true
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camper_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/camper_backpack_fp
 explorer_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.explorer_backpack"
   dyeable: true
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/explorer_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/explorer_backpack_fp
 adventurer_backpack:
   slot: BACKPACK
   dyeable: true
   permission: "hmccosmetics.backpack.adventurer_backpack"
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/adventurer_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/adventurer_backpack_fp
 fantasy_mining_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_mining_backpack"
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_mining_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_mining_backpack_fp
 fantasy_explorer_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_explorer_backpack"
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_explorer_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_explorer_backpack_fp
 fantasy_fishing_rod:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.fantasy_fishing_rod"
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_fishing_rod
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/fantasy_fishing_rod_fp
 cauldron_backpack:
   slot: BACKPACK
   dyeable: false
   permission: "hmccosmetics.backpack.cauldron_backpack"
   item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/cauldron_backpack
   firstperson-item:
-    material: minecraft:paper
+    material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/cauldron_backpack_fp

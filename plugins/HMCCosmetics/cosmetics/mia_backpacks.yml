@@ -4,30 +4,38 @@ backpack:
   dyeable: false
   item:
     name: "<#7e481d>Backpack"
-    material: geary:mineinabyss:default_backpack
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/default_backpack
   firstperson-item:
-    material: geary:mineinabyss:default_backpack_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/default_backpack_fp
 satchel:
   slot: BACKPACK
   permission: "hmccosmetics.backpack.satchel"
   dyeable: true
   item:
-    material: geary:mineinabyss:satchel
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/satchel
   firstperson-item:
-    material: geary:mineinabyss:satchel_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/satchel_fp
 neritantan_backpack:
   permission: "hmccosmetics.backpack.neritantan_backpack"
   slot: BACKPACK
   dyeable: false
   item:
-    material: geary:mineinabyss:neritantan_backpack
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/neritantan_backpack
   firstperson-item:
-    material: geary:mineinabyss:neritantan_backpack_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/neritantan_backpack_fp
 bondrewd_backpack:
   permission: "hmccosmetics.backpack.bondrewd_backpack"
   slot: BACKPACK
   dyeable: false
   item:
-    material: geary:mineinabyss:bondrewd_backpack
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/bondrewd_backpack
   firstperson-item:
-    material: geary:mineinabyss:bondrewd_backpack_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/bondrewd_backpack_fp

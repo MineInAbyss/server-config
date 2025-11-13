@@ -2,27 +2,35 @@ mallet_chisel:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.normal"
   item:
-    material: geary:mineinabyss:mallet_chisel
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel
   firstperson-item:
-    material: geary:mineinabyss:mallet_chisel_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_fp
 mallet_chisel_bronze:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.bronze"
   item:
-    material: geary:mineinabyss:mallet_chisel_bronze
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_bronze
   firstperson-item:
-    material: geary:mineinabyss:mallet_chisel_bronze_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_bronze_fp
 mallet_chisel_silver:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.silver"
   item:
-    material: geary:mineinabyss:mallet_chisel_silver
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_silver
   firstperson-item:
-    material: geary:mineinabyss:mallet_chisel_silver_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_silver_fp
 mallet_chisel_gold:
   slot: BACKPACK
   permission: "hmccosmetics.mallet_chisel.gold"
   item:
-    material: geary:mineinabyss:mallet_chisel_gold
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_gold
   firstperson-item:
-    material: geary:mineinabyss:mallet_chisel_gold_fp
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/mallet_chisel_gold_fp

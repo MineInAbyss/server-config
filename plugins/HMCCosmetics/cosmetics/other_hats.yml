@@ -3,45 +3,54 @@ adventurer_hat:
   permission: "hmccosmetics.hat.adventurer_hat"
   dyeable: true
   item:
-    material: geary:mineinabyss:adventurer_hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/adventurer_hat
 fantasy_straw_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_straw_hat"
   item:
-    material: geary:mineinabyss:fantasy_straw_hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/fantasy_straw_hat
 fantasy_explorer_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_explorer_hat"
   item:
-    material: geary:mineinabyss:fantasy_explorer_hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/fantasy_explorer_hat
 fantasy_cook_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_cook_hat"
   item:
-    material: geary:mineinabyss:fantasy_cook_hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/fantasy_cook_hat
 mechanic_glasses:
   slot: HELMET
   permission: "hmccosmetics.hat.mechanic_glasses"
   item:
-    material: geary:mineinabyss:mechanic_glasses
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/mechanic_glasses
 fantasy_fisher_hat:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_fisher_hat"
   item:
-    material: geary:mineinabyss:fantasy_fisher_hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/fantasy_fisher_hat
 fantasy_mining_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.fantasy_mining_helmet"
   item:
-    material: geary:mineinabyss:fantasy_mining_helmet
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/fantasy_mining_helmet
 
 dooby_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.dooby_helmet"
   item:
-    material: geary:mineinabyss:dooby_helmet
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/dooby_helmet
 henya_helmet:
   slot: HELMET
   permission: "hmccosmetics.hat.henya_helmet"
   item:
-    material: geary:mineinabyss:henya_helmet
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/henya_helmet
