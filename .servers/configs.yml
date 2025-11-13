@@ -59,13 +59,9 @@ feat/chat:
       dest: plugins/Chatty
 
 feat/cosmetics:
+  include:
+    - feat/items
   copyPaths:
-    - source: packs_assets/cosmetics
-      dest: plugins/Geary/template_pack
-    - source: plugins/Geary/prefabs/cosmetics
-      dest: plugins/Geary/prefabs/cosmetics
-    - source: packs_assets/cosmetics
-      dest: plugins/Packy/resourcepacks/cosmetics
     - source: plugins/HMCCosmetics
       dest: plugins/HMCCosmetics
     - source: plugins/HMCColor
@@ -77,23 +73,24 @@ feat/bosses:
       dest: plugins/MythicMobs/packs/bosses
 
 feat/events:
+  include:
+    - feat/items
   copyPaths:
-    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
-      dest: plugins/MythicMobs/packs/halloween
-    - source: "{{ privateSettingsDest }}/plugins/Geary/prefabs/mineinabyss/items"
-      dest: plugins/Geary/prefabs/mineinabyss/items
-    - source: "{{ privateSettingsDest }}/plugins/Geary/prefabs/cosmetics"
-      dest: plugins/Geary/prefabs/cosmetics
-    - source: "{{ privateSettingsDest }}/mc-resourcepacks/common"
-      dest: plugins/Packy/resourcepacks/common
-    - source: "{{ privateSettingsDest }}/mc-resourcepacks/cosmetics"
-      dest: plugins/Geary/template_pack
-    - source: "{{ privateSettingsDest }}/mc-resourcepacks/cosmetics"
-      dest: plugins/Packy/resourcepacks/cosmetics
-    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
-      dest: plugins/MineInAbyss
+    # Packy
     - source: packs_assets/events
       dest: plugins/Packy/resourcepacks/events
+    - source: "{{ privateSettingsDest }}/packs_assets/events"
+      dest: plugins/Packy/resourcepacks/events_private
+    # Geary
+    - source: packs_assets/events
+      dest: plugins/Geary/template_pack
+    - source: "{{ privateSettingsDest }}/packs_assets/events"
+      dest: plugins/Geary/template_pack
+    # Other
+    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
+      dest: plugins/MythicMobs/packs/halloween
+    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
+      dest: plugins/MineInAbyss
 
 feat/loot_chests:
   copyPaths:
@@ -102,14 +99,11 @@ feat/loot_chests:
 
 feat/items:
   copyPaths:
-    - source: plugins/Geary/prefabs/mineinabyss/items
-      dest: plugins/Geary/prefabs/mineinabyss/items
-    - source: plugins/Geary/prefabs/minecraft/recipes
-      dest: plugins/Geary/prefabs/minecraft/recipes
-    - source: packs_assets/feat_items
-      dest: plugins/Geary/template_pack
+    # Packy
     - source: packs_assets/feat_items
       dest: plugins/Packy/resourcepacks/feat_items
+    - source: "{{ privateSettingsDest }}/packs_assets/feat_items"
+      dest: plugins/Packy/resourcepacks/feat_items_private
     - source: packs_assets/option_tools_2d
       dest: plugins/Packy/resourcepacks/option_tools_2d
     - source: packs_assets/option_tools_3d
@@ -118,6 +112,15 @@ feat/items:
       dest: plugins/Packy/resourcepacks/option_armor_new
     - source: packs_assets/option_armor_old
       dest: plugins/Packy/resourcepacks/option_armor_old
+    # Geary
+    - source: plugins/Geary/prefabs/mineinabyss/items
+      dest: plugins/Geary/prefabs/mineinabyss/items
+    - source: plugins/Geary/prefabs/minecraft/recipes
+      dest: plugins/Geary/prefabs/minecraft/recipes
+    - source: packs_assets/feat_items
+      dest: plugins/Geary/template_pack
+    - source: "{{ privateSettingsDest }}/packs_assets/feat_items"
+      dest: plugins/Geary/template_pack
 
 feat/hud:
   copyPaths:
