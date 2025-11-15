@@ -5,7 +5,7 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <white>Charcoal Sand Ore
-  itemModel: mineinabyss:blocks/block/frost
+  itemModel: mineinabyss:blocks/block/charcoal_sand_ore
 set.block:
   blockType: NOTEBLOCK
   blockId: 1
