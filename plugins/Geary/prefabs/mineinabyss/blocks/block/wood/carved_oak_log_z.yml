@@ -1,0 +1,8 @@
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 22
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_oak_log
+blocky:directional:
+  parentBlock: mineinabyss:carved_oak_log

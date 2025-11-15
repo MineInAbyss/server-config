@@ -1,0 +1,29 @@
+inherit:
+  - mineinabyss:category_snow
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Snow Pillar
+  itemModel: mineinabyss:blocks/block/snow_pillar
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 47
+
+resourcepack:
+  parentModel: block/cube_column
+  model: mineinabyss:blocks/block/snow_pillar
+  textures:
+    variables:
+      side: mineinabyss:blocks/block/snow_pillar
+      end: mineinabyss:blocks/block/snow_pillar_top
+
+blocky:pack:
+  model: mineinabyss:blocks/block/snow_pillar
+blocky:directional:
+  yBlock: mineinabyss:snow_pillar_y
+  xBlock: mineinabyss:snow_pillar_x
+  zBlock: mineinabyss:snow_pillar_z
+blocky:drops:
+  drops:
+    - item: mineinabyss:snow_pillar
+

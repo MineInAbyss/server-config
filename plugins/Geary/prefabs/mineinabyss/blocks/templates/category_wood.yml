@@ -1,0 +1,23 @@
+blocky:sound:
+  placeSound: minecraft:block.wood.place
+  breakSound: minecraft:block.wood.break
+  stepSound: minecraft:block.wood.step
+  hitSound: minecraft:block.wood.hit
+  fallSound: minecraft:block.wood.fall
+blocky:burnable: {}
+blocky:breaking:
+  hardness: 0.8
+  modifiers:
+    heldItems:
+      - item:
+          type: NETHERITE_AXE
+        value: 0.8
+      - item:
+          type: DIAMOND_AXE
+        value: 0.7
+      - item:
+          type: IRON_AXE
+        value: 10
+    heldTypes:
+      - toolType: AXE
+        value: 0.2

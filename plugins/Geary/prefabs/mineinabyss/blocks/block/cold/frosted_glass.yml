@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_ice
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Frosted Glass
+  itemModel: mineinabyss:blocks/block/frosted_glass
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 52
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/frosted_glass
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/frosted_glass
+
+blocky:pack:
+  model: mineinabyss:blocks/block/frosted_glass
+blocky:drops:
+  drops:
+    - item: mineinabyss:frosted_glass

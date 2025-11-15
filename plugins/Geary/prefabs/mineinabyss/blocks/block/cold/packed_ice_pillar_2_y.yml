@@ -1,0 +1,8 @@
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 37
+
+blocky:pack:
+  model: mineinabyss:blocks/block/packed_ice_pillar_2
+blocky:directional:
+  parentBlock: mineinabyss:packed_ice_pillar_2

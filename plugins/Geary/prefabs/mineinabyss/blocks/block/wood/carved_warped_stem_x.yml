@@ -1,0 +1,8 @@
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 27
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_warped_stem
+blocky:directional:
+  parentBlock: mineinabyss:carved_warped_stem

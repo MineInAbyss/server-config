@@ -1,0 +1,28 @@
+inherit:
+  - mineinabyss:category_wood
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Carved Birch Log
+  itemModel: mineinabyss:blocks/block/carved_birch_log
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 5
+
+resourcepack:
+  parentModel: block/cube_column
+  model: mineinabyss:blocks/block/carved_birch_log
+  textures:
+    variables:
+      side: mineinabyss:blocks/block/carved_birch_log
+      end: mineinabyss:blocks/block/carved_birch_log_top
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_birch_log
+blocky:directional:
+  xBlock: mineinabyss:carved_birch_log_x
+  yBlock: mineinabyss:carved_birch_log_y
+  zBlock: mineinabyss:carved_birch_log_z
+blocky:drops:
+  drops:
+    - item: mineinabyss:carved_birch_log

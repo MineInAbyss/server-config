@@ -1,0 +1,9 @@
+blocky:sound:
+  placeSound: minecraft:block.stone.place
+  breakSound: minecraft:block.stone.break
+  stepSound: minecraft:block.stone.step
+  hitSound: minecraft:block.stone.hit
+  fallSound: minecraft:block.stone.fall
+blocky:breaking:
+  hardness: 0.1
+

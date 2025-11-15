@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_ice
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Packed Ice Bricks 1
+  itemModel: mineinabyss:blocks/block/packed_ice_bricks_1
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 36
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/packed_ice_bricks_1
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/packed_ice_bricks_1
+
+blocky:pack:
+  model: mineinabyss:blocks/block/packed_ice_bricks_1
+blocky:drops:
+  drops:
+    - item: mineinabyss:packed_ice_bricks_1

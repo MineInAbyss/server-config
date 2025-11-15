@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_ice
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Polished Packed Ice
+  itemModel: mineinabyss:blocks/block/packed_ice_polished
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 45
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/packed_ice_polished
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/packed_ice_polished
+
+blocky:pack:
+  model: mineinabyss:blocks/block/packed_ice_polished
+blocky:drops:
+  drops:
+    - item: mineinabyss:packed_ice_polished

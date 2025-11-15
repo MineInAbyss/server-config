@@ -1,0 +1,28 @@
+inherit:
+  - mineinabyss:wood
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Packed Ice Pillar 2
+  itemModel: mineinabyss:blocks/block/packed_ice_pillar_2
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 37
+
+resourcepack:
+  parentModel: block/cube_column
+  model: mineinabyss:blocks/block/packed_ice_pillar_2
+  textures:
+    variables:
+      side: mineinabyss:blocks/block/packed_ice_pillar_2
+      end: mineinabyss:blocks/block/packed_ice_pillar_2_top
+
+blocky:pack:
+  model: mineinabyss:blocks/block/packed_ice_pillar_2
+blocky:directional:
+  xBlock: mineinabyss:packed_ice_pillar_2_x
+  yBlock: mineinabyss:packed_ice_pillar_2_y
+  zBlock: mineinabyss:packed_ice_pillar_2_z
+blocky:drops:
+  drops:
+    - item: mineinabyss:packed_ice_pillar_2

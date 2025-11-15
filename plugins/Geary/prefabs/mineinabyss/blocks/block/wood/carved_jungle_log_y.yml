@@ -1,0 +1,8 @@
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 14
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_jungle_log
+blocky:directional:
+  parentBlock: mineinabyss:carved_jungle_log

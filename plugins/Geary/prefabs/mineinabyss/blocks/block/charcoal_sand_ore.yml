@@ -1,29 +1,24 @@
 inherit:
-- mineinabyss:stone
-- mineinabyss:ore
+  - mineinabyss:category_stone
+  - mineinabyss:category_ore
+
 set.item:
   type: minecraft:paper
   itemName: <white>Charcoal Sand Ore
-  itemModel: mineinabyss:charcoal_sand_ore
-resourcepack:
-  parentModel: block/cube_all
-  model: mineinabyss:block/ores/charcoal_sand_ore
-  textures:
-    variables:
-      all: mineinabyss:block/ores/charcoal_sand_ore
+  itemModel: mineinabyss:blocks/block/frost
 set.block:
   blockType: NOTEBLOCK
   blockId: 1
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/charcoal_sand_ore
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/charcoal_sand_ore
+
 blocky:pack:
-  model: mineinabyss:block/ores/charcoal_sand_ore
-blocky:sound:
-  placeSound: minecraft:block.amethyst_block.place
-  breakSound: minecraft:block.amethyst_block.break
-  stepSound: minecraft:block.amethyst_block.step
-  hitSound: minecraft:block.amethyst_block.hit
-  fallSound: minecraft:block.amethyst_block.fall
-blocky:instrument:
-  instrument: minecraft:block.amethyst_block.break
+  model: mineinabyss:blocks/block/charcoal_sand_ore
 blocky:drops:
   acceptedToolTypes:
   - PICKAXE

@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_wood
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Crate 1
+  itemModel: mineinabyss:blocks/block/crate_1
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 32
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/crate_1
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/crate_1
+
+blocky:pack:
+  model: mineinabyss:blocks/block/crate_1
+blocky:drops:
+  drops:
+    - item: mineinabyss:crate_1

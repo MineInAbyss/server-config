@@ -1,0 +1,24 @@
+inherit:
+  - mineinabyss:category_snow
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Snow Tiles
+  itemModel: mineinabyss:blocks/block/snow_tiles
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 50
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/snow_tiles
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/snow_tiles
+
+blocky:pack:
+  model: mineinabyss:blocks/block/snow_tiles
+blocky:drops:
+  drops:
+    - item: mineinabyss:snow_tiles
+

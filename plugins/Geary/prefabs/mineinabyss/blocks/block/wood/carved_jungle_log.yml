@@ -1,0 +1,28 @@
+inherit:
+  - mineinabyss:category_wood
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Carved Jungle Log
+  itemModel: mineinabyss:blocks/block/carved_jungle_log
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 14
+
+resourcepack:
+  parentModel: block/cube_column
+  model: mineinabyss:blocks/block/carved_jungle_log
+  textures:
+    variables:
+      side: mineinabyss:blocks/block/carved_jungle_log
+      end: mineinabyss:blocks/block/carved_jungle_log_top
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_jungle_log
+blocky:directional:
+  xBlock: mineinabyss:carved_jungle_log_x
+  yBlock: mineinabyss:carved_jungle_log_y
+  zBlock: mineinabyss:carved_jungle_log_z
+blocky:drops:
+  drops:
+    - item: mineinabyss:carved_jungle_log

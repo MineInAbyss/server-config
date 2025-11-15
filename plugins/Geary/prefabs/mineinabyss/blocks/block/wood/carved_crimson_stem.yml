@@ -1,0 +1,28 @@
+inherit:
+  - mineinabyss:category_wood
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Carved Crimson Stem
+  itemModel: mineinabyss:blocks/block/carved_crimson_stem
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 8
+
+resourcepack:
+  parentModel: block/cube_column
+  model: mineinabyss:blocks/block/carved_crimson_stem
+  textures:
+    variables:
+      side: mineinabyss:blocks/block/carved_crimson_stem
+      end: mineinabyss:blocks/block/carved_crimson_stem_top
+
+blocky:pack:
+  model: mineinabyss:blocks/block/carved_crimson_stem
+blocky:directional:
+  xBlock: mineinabyss:carved_crimson_stem_x
+  yBlock: mineinabyss:carved_crimson_stem_y
+  zBlock: mineinabyss:carved_crimson_stem_z
+blocky:drops:
+  drops:
+    - item: mineinabyss:carved_crimson_stem

@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_ice
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Frost
+  itemModel: mineinabyss:blocks/block/frost
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 51
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/frost
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/frost
+
+blocky:pack:
+  model: mineinabyss:blocks/block/frost
+blocky:drops:
+  drops:
+    - item: mineinabyss:frost

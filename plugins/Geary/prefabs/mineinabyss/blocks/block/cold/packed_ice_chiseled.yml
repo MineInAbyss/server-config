@@ -1,0 +1,23 @@
+inherit:
+  - mineinabyss:category_ice
+
+set.item:
+  type: minecraft:paper
+  itemName: <white>Chiseled Packed Ice
+  itemModel: mineinabyss:blocks/block/packed_ice_chiseled
+set.block:
+  blockType: NOTEBLOCK
+  blockId: 34
+
+resourcepack:
+  parentModel: block/cube_all
+  model: mineinabyss:blocks/block/packed_ice_chiseled
+  textures:
+    variables:
+      all: mineinabyss:blocks/block/packed_ice_chiseled
+
+blocky:pack:
+  model: mineinabyss:blocks/block/packed_ice_chiseled
+blocky:drops:
+  drops:
+    - item: mineinabyss:packed_ice_chiseled

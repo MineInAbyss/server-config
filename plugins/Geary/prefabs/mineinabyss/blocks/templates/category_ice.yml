@@ -1,0 +1,9 @@
+blocky:sound:
+  placeSound: minecraft:block.glass.place
+  breakSound: minecraft:block.glass.break
+  stepSound: minecraft:block.glass.step
+  hitSound: minecraft:block.glass.hit
+  fallSound: minecraft:block.glass.fall
+blocky:breaking:
+  hardness: 0.1
+
