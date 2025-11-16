@@ -1,7 +1,7 @@
 set.item:
   itemName: Golden Sickle
   type: minecraft:golden_hoe
-  itemModel: "mineinabyss:golden_sickle"
+  itemModel: "mineinabyss:equipment_base/tools/golden_sickle"
   maxDamage: 32
   tool:
     rules:

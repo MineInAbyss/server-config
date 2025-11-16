@@ -1,7 +1,7 @@
 set.item:
   itemName: Wooden Sickle
   type: minecraft:wooden_hoe
-  itemModel: "mineinabyss:wooden_sickle"
+  itemModel: "mineinabyss:equipment_base/tools/wooden_sickle"
   maxDamage: 59
   tool:
     rules:
