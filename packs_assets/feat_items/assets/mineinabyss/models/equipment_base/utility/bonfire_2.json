@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"3": "mineinabyss:block/bonfire/meat",
-		"6": "cosmetics:backpacks/default_backpack/yellow_backpack",
-		"particle": "mineinabyss:item/tools/iron_tools"
+		"3": "mineinabyss:equipment_base/utility/bonfire_meat",
+		"6": "minecraft:item/backpacks/yellow_backpack",
+		"particle": "mineinabyss:equipment_base/utility/bonfire_log"
 	},
 	"elements": [
 		{

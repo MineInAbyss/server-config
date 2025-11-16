@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"3": "mineinabyss:block/bonfire/meat",
-		"particle": "mineinabyss:item/tools/iron_tools"
+		"3": "mineinabyss:equipment_base/utility/bonfire_meat",
+		"particle": "mineinabyss:equipment_base/utility/bonfire_log"
 	},
 	"elements": [
 		{
