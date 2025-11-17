@@ -1,7 +1,10 @@
 set.item:
   itemName: <#ffbb1c><b>Orth Coin
   type: minecraft:emerald
-  itemModel: mineinabyss:orth_coin
+  itemModel: mineinabyss:misc/orth_coin
 mineinabyss:orthcoin: {}
 resourcepack:
-  model: mineinabyss:item/other/orth_coin
+  model: mineinabyss:misc/orth_coin
+  textures:
+    layers:
+    - mineinabyss:misc/orth_coin

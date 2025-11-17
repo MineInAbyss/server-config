@@ -6,8 +6,11 @@ set.item:
   - <#ff686b>who fund the server
   - <#ff686b>to buy random shit
   type: minecraft:emerald
-  itemModel: mineinabyss:mitty_token
+  itemModel: mineinabyss:misc/mitty_token
 disableItemInteractions: {}
 mineinabyss:mittytoken: {}
 resourcepack:
-  model: mineinabyss:item/other/mitty_token
+  model: mineinabyss:misc/mitty_token
+  textures:
+    layers:
+    - mineinabyss:misc/mitty_token
