@@ -11,7 +11,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/creature_drops/horncrier_horn
+    - mineinabyss:materials_mobs/horncrier_horn
 observe:
   itemRightClick:
   - become: parent

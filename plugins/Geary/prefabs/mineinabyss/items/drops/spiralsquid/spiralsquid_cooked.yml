@@ -13,7 +13,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/food/creatures/spiralsquid_cooked
+    - mineinabyss:materials_mobs/spiralsquid_cooked
 set.recipes:
   discoverRecipes: true
   recipes:

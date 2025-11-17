@@ -16,6 +16,6 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/food/creatures/cyatoria_drumstick_raw
+    - mineinabyss:materials_mobs/cyatoria_drumstick_raw
 replaceBurnedDrop:
   prefab: mineinabyss:cyatoria_drumstick_cooked
