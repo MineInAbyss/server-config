@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#3DDFFF>Cooked Cyatoria Drumstick
-  itemModel: mineinabyss:cyatoria_drumstick_cooked
+  itemModel: mineinabyss:materials_mobs/cyatoria_drumstick_cooked
   lore:
   - ':layer_1::layer_2:'
   - <yellow>Said to be the offspring of a
@@ -25,6 +25,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/cyatoria_drumstick_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/cyatoria_drumstick_cooked

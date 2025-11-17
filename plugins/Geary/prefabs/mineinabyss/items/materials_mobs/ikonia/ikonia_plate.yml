@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:iron_block
   itemName: <#9ff3f3>Ikonia Plate
-  itemModel: mineinabyss:ikonia_plate
+  itemModel: mineinabyss:materials_mobs/ikonia_plate
   lore:
   - ':layer_5:'
   - <#edfeff>The skin is tough, but the meat... Yum!
 disableItemInteractions: {}
 resourcepack:
+  model: mineinabyss:materials_mobs/ikonia_plate
   textures:
     layers:
     - mineinabyss:materials_mobs/ikonia_plate

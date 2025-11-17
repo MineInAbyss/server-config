@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1FB53D>Kuongatari Abdomen
-  itemModel: mineinabyss:kuongatari_abdomen
+  itemModel: mineinabyss:materials_mobs/kuongatari_abdomen
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#167D2A>Only the desperate eat this raw...
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:kuongatari_abdomen_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/kuongatari_abdomen_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/kuongatari_abdomen

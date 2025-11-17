@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:paper
   itemName: <#755237>Spikewalker Meat
-  itemModel: mineinabyss:spikewalker_meat
+  itemModel: mineinabyss:materials_mobs/spikewalker_meat
   lore:
   - ':layer_5::cosmetic_orth_coin:'
   - <#ccbd99><i>Inedible, hard, rough,
   - <#ccbd99><i>and gamey...
 resourcepack:
+  model: mineinabyss:materials_mobs/spikewalker_meat
   textures:
     layers:
     - mineinabyss:materials_mobs/spikewalker_meat

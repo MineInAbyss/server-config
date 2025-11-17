@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:glowstone_dust
   itemName: <#6C19BF>Rohana Powder
-  itemModel: mineinabyss:rohana_powder
+  itemModel: mineinabyss:materials_mobs/rohana_powder
   lore:
   - ':layer_2::layer_4::cosmetic_orth_coin:'
   - <#FF1FB4><i>The closest thing to magical
   - <#FF1FB4><i>fairy dust.
 resourcepack:
+  model: mineinabyss:materials_mobs/rohana_powder
   textures:
     layers:
     - mineinabyss:materials_mobs/rohana_powder

@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:bone
   itemName: <#1C439E>Madokajack Bone
-  itemModel: mineinabyss:madokajack_bone
+  itemModel: mineinabyss:materials_mobs/madokajack_bone
   lore:
   - ':layer_3::cosmetic_orth_coin:'
   - <#369AFF><i>Even their bones smell rancid.
 resourcepack:
+  model: mineinabyss:materials_mobs/madokajack_bone
   textures:
     layers:
     - mineinabyss:materials_mobs/madokajack_bone

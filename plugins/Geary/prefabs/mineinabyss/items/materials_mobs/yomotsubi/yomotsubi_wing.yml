@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:copper_ingot
   itemName: <#9C0F2C>Yomotsubi Wing
-  itemModel: mineinabyss:yomotsubi_wing
+  itemModel: mineinabyss:materials_mobs/yomotsubi_wing
   lore:
   - ':layer_3::layer_5:'
   - <#9c5d2c>A sturdy, metallic wing.
   - <#9c5d2c><i>Perhaps i can mold this into something...
 resourcepack:
+  model: mineinabyss:materials_mobs/yomotsubi_wing
   textures:
     layers:
     - mineinabyss:materials_mobs/yomotsubi_wing

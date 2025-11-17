@@ -1,13 +1,14 @@
 set.item:
   type: minecraft:bone
   itemName: <#c7bcad>Hisomukuro Rib
-  itemModel: mineinabyss:hisomukuro_rib
+  itemModel: mineinabyss:materials_mobs/hisomukuro_rib
   lore:
   - ':layer_5:'
   - <#524D47><i>Its bony on the outside but
   - <#524D47><i>Metallic on the inside!
   - <#524D47><i>prehaps i can use this to launch something...
 resourcepack:
+  model: mineinabyss:materials_mobs/hisomukuro_rib
   textures:
     layers:
     - mineinabyss:materials_mobs/hisomukuro_rib

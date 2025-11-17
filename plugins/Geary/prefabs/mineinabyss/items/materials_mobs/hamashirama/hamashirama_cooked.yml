@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1B91B5>Cooked Hamashirama
-  itemModel: mineinabyss:hamashirama_cooked
+  itemModel: mineinabyss:materials_mobs/hamashirama_cooked
   lore:
   - <yellow>Can be obtained by finding and
   - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
@@ -24,6 +24,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/hamashirama_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/hamashirama_cooked

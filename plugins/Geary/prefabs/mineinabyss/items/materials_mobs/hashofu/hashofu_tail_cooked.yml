@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#454545>Cooked Hashofu Tail
-  itemModel: mineinabyss:hashofu_tail_cooked
+  itemModel: mineinabyss:materials_mobs/hashofu_tail_cooked
   lore:
   - ':layer_4::layer_5:'
   - <#595959><i>It is said it tastes like sushi.
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/hashofu_tail_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/hashofu_tail_cooked

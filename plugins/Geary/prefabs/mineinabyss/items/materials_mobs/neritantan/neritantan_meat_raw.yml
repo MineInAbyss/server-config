@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#BDBDBD>Raw Neritantan Meat
-  itemModel: mineinabyss:neritantan_meat_raw
+  itemModel: mineinabyss:materials_mobs/neritantan_meat_raw
   lore:
   - ':layer_2::layer_3:'
   - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:neritantan_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/neritantan_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/neritantan_meat_raw

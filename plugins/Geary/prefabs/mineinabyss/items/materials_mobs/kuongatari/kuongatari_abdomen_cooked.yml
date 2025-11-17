@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1FB53D>Cooked Kuongatari Abdomen
-  itemModel: mineinabyss:kuongatari_abdomen_cooked
+  itemModel: mineinabyss:materials_mobs/kuongatari_abdomen_cooked
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#167D2A>Suprisingly tasty for such a small bug..
@@ -22,6 +22,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/kuongatari_abdomen_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/kuongatari_abdomen_cooked

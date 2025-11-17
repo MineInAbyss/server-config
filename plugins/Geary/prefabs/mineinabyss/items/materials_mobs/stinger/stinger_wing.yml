@@ -1,13 +1,14 @@
 set.item:
   type: minecraft:string
   itemName: <#03AC13>Stinger Wing
-  itemModel: mineinabyss:stinger_wing
+  itemModel: mineinabyss:materials_mobs/stinger_wing
   lore:
   - ':layer_2::layer_4::layer_5:'
   - <#167D2A><i>A very thin, yet surprisingly
   - <#167D2A><i>flexible piece of flesh
 disableItemInteractions: {}
 resourcepack:
+  model: mineinabyss:materials_mobs/stinger_wing
   textures:
     layers:
     - mineinabyss:materials_mobs/stinger_wing

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#257BEB>Raw Demonfish
-  itemModel: mineinabyss:demonfish_raw
+  itemModel: mineinabyss:materials_mobs/demonfish_raw
   lore:
   - ':layer_5:'
   - <#1B5BAD>Imagine the shame of getting flopped
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:demonfish_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/demonfish_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/demonfish_raw

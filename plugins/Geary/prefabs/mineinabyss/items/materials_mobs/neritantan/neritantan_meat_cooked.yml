@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#BDBDBD>Cooked Neritantan Meat
-  itemModel: mineinabyss:neritantan_meat_cooked
+  itemModel: mineinabyss:materials_mobs/neritantan_meat_cooked
   lore:
   - ':layer_2::layer_3:'
   - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/neritantan_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/neritantan_meat_cooked

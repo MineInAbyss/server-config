@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:leather
   itemName: <#6C19BF>Spore Manta Wing
-  itemModel: mineinabyss:sporemanta_wing
+  itemModel: mineinabyss:materials_mobs/sporemanta_wing
   lore:
   - ':layer_5::cosmetic_orth_coin:'
   - <#f1b259>Leathery wing laced in a poisonous powder
@@ -23,6 +23,7 @@ observe:
       amplifier: 3
 
 resourcepack:
+  model: mineinabyss:materials_mobs/sporemanta_wing
   textures:
     layers:
     - mineinabyss:materials_mobs/sporemanta_wing

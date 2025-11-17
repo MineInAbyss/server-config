@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:cod
   itemName: <#9ff3f3>Cooked Ikenosuke
-  itemModel: mineinabyss:ikenosuke_cooked
+  itemModel: mineinabyss:materials_mobs/ikenosuke_cooked
   lore:
   - ':layer_2::layer_3::layer_4:'
   - <#edfeff>The skin is tough, but the meat... Yum!
@@ -22,6 +22,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/ikenosuke_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/ikenosuke_cooked

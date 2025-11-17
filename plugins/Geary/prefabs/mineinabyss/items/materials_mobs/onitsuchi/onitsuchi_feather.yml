@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:feather
   itemName: <#5C471D>Onitsuchi Feather
-  itemModel: mineinabyss:onitsuchi_feather
+  itemModel: mineinabyss:materials_mobs/onitsuchi_feather
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#A9CCCA>Just a feather, innit?
 resourcepack:
+  model: mineinabyss:materials_mobs/onitsuchi_feather
   textures:
     layers:
     - mineinabyss:materials_mobs/onitsuchi_feather

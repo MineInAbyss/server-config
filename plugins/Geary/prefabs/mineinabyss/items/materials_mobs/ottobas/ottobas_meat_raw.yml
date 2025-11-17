@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#D8D8D8>Raw Ottobas Meat
-  itemModel: mineinabyss:ottobas_meat_raw
+  itemModel: mineinabyss:materials_mobs/ottobas_meat_raw
   lore:
   - ':layer_2:'
   - <white><i>A thick layer of fat clings to the meat.
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ottobas_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/ottobas_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/ottobas_meat_raw

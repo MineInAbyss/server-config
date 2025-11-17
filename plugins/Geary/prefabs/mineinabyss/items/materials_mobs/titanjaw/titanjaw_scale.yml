@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:turtle_scute
   itemName: <#3C3B4A>Titanjaw Scale
-  itemModel: mineinabyss:titanjaw_scale
+  itemModel: mineinabyss:materials_mobs/titanjaw_scale
   lore:
   - ':layer_5::cosmetic_orth_coin:'
   - <#0C7787><i>Might be useful to craft gear
   - <#0C7787><i>with if I collect enough.
 resourcepack:
+  model: mineinabyss:materials_mobs/titanjaw_scale
   textures:
     layers:
     - mineinabyss:materials_mobs/titanjaw_scale

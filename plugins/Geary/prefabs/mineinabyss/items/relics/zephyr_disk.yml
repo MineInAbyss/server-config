@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Zephyr Disk
-  itemModel: mineinabyss:zephyr_disk
+  itemModel: mineinabyss:relics/zephyr_disk
 disableItemInteractions: {}
 resourcepack:
   model: mineinabyss:relics/zephyr_disk

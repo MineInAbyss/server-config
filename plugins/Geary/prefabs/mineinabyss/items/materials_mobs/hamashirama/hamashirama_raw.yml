@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#1B91B5>Raw Hamashirama
-  itemModel: mineinabyss:hamashirama_raw
+  itemModel: mineinabyss:materials_mobs/hamashirama_raw
   lore:
   - <yellow>Can be obtained by finding and
   - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
@@ -15,6 +15,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:hamashirama_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/hamashirama_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/hamashirama_raw

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#6CE5F5>Raw Spiralsquid
-  itemModel: mineinabyss:spiralsquid_raw
+  itemModel: mineinabyss:materials_mobs/spiralsquid_raw
   lore:
   - ':layer_1::layer_4:'
   - <#35ADBD><i>Seems like a great source of food!
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:spiralsquid_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/spiralsquid_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/spiralsquid_raw

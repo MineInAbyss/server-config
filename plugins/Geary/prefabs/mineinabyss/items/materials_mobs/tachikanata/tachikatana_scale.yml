@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:prismarine_shard
-  itemModel: mineinabyss:tachikatana_scale
+  itemModel: mineinabyss:materials_mobs/tachikatana_scale
   itemName: <#00FFFF>Tachikatana Scale
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
@@ -8,6 +8,7 @@ set.item:
   - <#1B5BAD><i>They're rumored to be one of the most waterproof
   - <#1B5BAD><i>materials in the <green>Abyss<#1B5BAD>.
 resourcepack:
+  model: mineinabyss:materials_mobs/tachikatana_scale
   textures:
     layers:
     - mineinabyss:materials_mobs/tachikatana_scale

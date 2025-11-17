@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:feather
   itemName: <#613F0C>Hammerbeak Feather
-  itemModel: mineinabyss:hammerbeak_feather
+  itemModel: mineinabyss:materials_mobs/hammerbeak_feather
   lore:
   - ':layer_1::layer_2::layer_4::cosmetic_orth_coin:'
   - <#A9CCCA>Just a feather, innit?
 resourcepack:
+  model: mineinabyss:materials_mobs/hammerbeak_feather
   textures:
     layers:
     - mineinabyss:materials_mobs/hammerbeak_feather

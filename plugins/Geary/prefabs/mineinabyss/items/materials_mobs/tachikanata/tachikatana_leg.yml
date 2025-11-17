@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:apple
   itemName: <#00FFFF>Tachikatana Leg
-  itemModel: mineinabyss:tachikatana_leg
+  itemModel: mineinabyss:materials_mobs/tachikatana_leg
   lore:
   - ':layer_4::layer_5:'
   - <#1B5BAD><i>Tastes like crab!
@@ -12,6 +12,7 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
+  model: mineinabyss:materials_mobs/tachikatana_leg
   textures:
     layers:
     - mineinabyss:materials_mobs/tachikatana_leg

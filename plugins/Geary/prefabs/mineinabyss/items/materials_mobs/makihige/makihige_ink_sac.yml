@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:ink_sac
   itemName: <#FF771C>Makihige Ink Sac
-  itemModel: mineinabyss:makihige_ink_sac
+  itemModel: mineinabyss:materials_mobs/makihige_ink_sac
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#5221A6><i>With this you might be able to
   - <#5221A6><i>do something. Probably not though
 resourcepack:
+  model: mineinabyss:materials_mobs/makihige_ink_sac
   textures:
     layers:
     - mineinabyss:materials_mobs/makihige_ink_sac

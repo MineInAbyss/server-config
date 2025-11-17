@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:leather
   itemName: <#59ac7a>Dosetori Wing
-  itemModel: mineinabyss:dosetori_wing
+  itemModel: mineinabyss:materials_mobs/dosetori_wing
   lore:
   - ':layer_2::layer_3::cosmetic_orth_coin:'
   - <#d6b12c><i>Its texture feels otherworldly.
 resourcepack:
+  model: mineinabyss:materials_mobs/dosetori_wing
   textures:
     layers:
     - mineinabyss:materials_mobs/dosetori_wing

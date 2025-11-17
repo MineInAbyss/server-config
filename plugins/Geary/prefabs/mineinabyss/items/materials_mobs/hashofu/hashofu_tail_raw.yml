@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#454545>Hashofu Tail
-  itemModel: mineinabyss:hashofu_tail_raw
+  itemModel: mineinabyss:materials_mobs/hashofu_tail_raw
   lore:
   - ':layer_4::layer_5:'
   - <#595959><i>It is said it tastes like sushi.
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:hashofu_tail_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/hashofu_tail_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/hashofu_tail_raw

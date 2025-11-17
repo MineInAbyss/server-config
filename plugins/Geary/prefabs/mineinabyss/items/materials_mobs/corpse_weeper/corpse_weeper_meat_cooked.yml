@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#D12B26>Cooked Corpse-Weeper Meat
-  itemModel: mineinabyss:corpse_weeper_meat_cooked
+  itemModel: mineinabyss:materials_mobs/corpse_weeper_meat_cooked
   lore:
   - ':layer_2:'
   - <red><i>The stench is awful but it tastes so good...
@@ -22,6 +22,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/corpse_weeper_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/corpse_weeper_meat_cooked

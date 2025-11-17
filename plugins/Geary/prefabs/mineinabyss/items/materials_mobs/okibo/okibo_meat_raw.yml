@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#10DEA7>Raw Okibo Meat
-  itemModel: mineinabyss:okibo_meat_raw
+  itemModel: mineinabyss:materials_mobs/okibo_meat_raw
   lore:
   - ':layer_orth::layer_1:'
   - <yellow>Usually found in <green>Orth as a source of
@@ -16,6 +16,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:okibo_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/okibo_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/okibo_meat_raw

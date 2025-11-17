@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0B6623>Cooked Hagamizukin
-  itemModel: mineinabyss:hagamizukin_cooked
+  itemModel: mineinabyss:materials_mobs/hagamizukin_cooked
   lore:
   - ':layer_4::layer_5:'
   - <#A759FF>The meat still feels angry with me,
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/hagamizukin_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/hagamizukin_cooked

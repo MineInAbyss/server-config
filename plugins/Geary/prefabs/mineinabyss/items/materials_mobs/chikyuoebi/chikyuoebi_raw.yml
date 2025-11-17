@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#649984>Raw Chikyuoebi
-  itemModel: mineinabyss:chikyuoebi_raw
+  itemModel: mineinabyss:materials_mobs/chikyuoebi_raw
   lore:
   - ':layer_5:'
   - <#943e27><i>Not that tasty raw...
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:chikyuoebi_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/chikyuoebi_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/chikyuoebi_raw

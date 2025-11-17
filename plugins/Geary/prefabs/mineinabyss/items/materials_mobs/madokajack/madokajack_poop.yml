@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:brown_dye
   itemName: <#1C439E>Madokajack Poop
-  itemModel: mineinabyss:madokajack_poop
+  itemModel: mineinabyss:materials_mobs/madokajack_poop
   lore:
   - ':layer_3::cosmetic_orth_coin:'
   - <#369AFF>Did I scare it so much that
   - <#369AFF>it pooped itself on death?
 resourcepack:
+  model: mineinabyss:materials_mobs/madokajack_poop
   textures:
     layers:
     - mineinabyss:materials_mobs/madokajack_poop

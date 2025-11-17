@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#3D3D3D>Raw Inbyo Meat
-  itemModel: mineinabyss:inbyo_meat_raw
+  itemModel: mineinabyss:materials_mobs/inbyo_meat_raw
   lore:
   - ':layer_2:'
   - <#B5B5B5><i>Doesn't look very tasty...
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:inbyo_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/inbyo_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/inbyo_meat_raw

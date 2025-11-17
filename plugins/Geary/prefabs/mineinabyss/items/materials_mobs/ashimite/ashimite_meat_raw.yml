@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#2597D9>Raw Ashimite Meat
-  itemModel: mineinabyss:ashimite_meat_raw
+  itemModel: mineinabyss:materials_mobs/ashimite_meat_raw
   lore:
   - ':layer_5:'
   - <#824E21><i>Seems like a great source of food.
@@ -24,6 +24,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ashimite_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/ashimite_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/ashimite_meat_raw

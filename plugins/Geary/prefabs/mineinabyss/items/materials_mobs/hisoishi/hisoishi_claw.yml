@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:amethyst_shard
   itemName: <#303e77>Crystal Hisoishi Claw
-  itemModel: mineinabyss:hisoishi_claw
+  itemModel: mineinabyss:materials_mobs/hisoishi_claw
   lore:
   - ':layer_2::layer_3::cosmetic_orth_coin:'
   - <#649378><i>This sharp claw can dig through stone
   - <#649378><i>with ease.
 resourcepack:
+  model: mineinabyss:materials_mobs/hisoishi_claw
   textures:
     layers:
     - mineinabyss:materials_mobs/hisoishi_claw

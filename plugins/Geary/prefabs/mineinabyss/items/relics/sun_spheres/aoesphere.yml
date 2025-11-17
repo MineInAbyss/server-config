@@ -1,28 +1,27 @@
 set.item:
   type: minecraft:paper
-  itemName: <#AC8053>Damage Sphere
-  itemModel: mineinabyss:l1_sunsphere
+  itemName: <#AC8053>AOE Sphere
+  itemModel: mineinabyss:relics/l4_sunsphere
   lore:
-  - ':layer_1: Grade IV Relic'
+  - ':layer_4: Grade IV Relic'
   - <#BB9672>It is an egg-shaped relic with
-  - <#BB9672>white and grey patterns on its surface.
+  - <#BB9672>black patterns on its surface.
   - <#BB9672>It has a smooth texture and has a cracking
   - <#BB9672>noise like eggs if pressure is applied to it.
-  - <#C4A484><i>Damages creatures on contact if thrown.
 observe:
   itemRightClick:
   - become: parent
   - cooldown:
-      id: damagesphere
+      id: aoesphere
       length: 5s
-      display: <#BFBFBF>Damage Sphere
+      display: <#454A46>Aoe Sphere
   - mythicSkills:
-    - damagethrow
+    - aoethrow
   - consumeItem:
-      type: mineinabyss:damagesphere
+      type: mineinabyss:aoesphere
     when:
     - chance: 1
 resourcepack:
   textures:
     layers:
-    - mineinabyss:relics/spheres/l1_sunsphere
+    - mineinabyss:relics/spheres/l4_sunsphere

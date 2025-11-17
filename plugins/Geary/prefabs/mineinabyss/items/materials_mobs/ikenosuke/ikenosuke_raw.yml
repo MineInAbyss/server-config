@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:cooked_cod
   itemName: <#9ff3f3>Raw Ikenosuke
-  itemModel: mineinabyss:ikenosuke_raw
+  itemModel: mineinabyss:materials_mobs/ikenosuke_raw
   lore:
   - ':layer_2::layer_3::layer_4:'
   - <#edfeff>The skin was tough, but the meat... Yum!
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:ikenosuke_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/ikenosuke_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/ikenosuke_raw

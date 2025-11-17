@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#c4fcf2>Horncrier Horn
-  itemModel: mineinabyss:horncrier_horn
+  itemModel: mineinabyss:materials_mobs/horncrier_horn
   lore:
   - ':layer_4::layer_5:'
   - <#fbfc92><i>These colors are unlike anything
@@ -9,6 +9,7 @@ set.item:
   - <#fbfc92><i>Feel
   maxStackSize: 1
 resourcepack:
+  model: mineinabyss:materials_mobs/horncrier_horn_3
   textures:
     layers:
     - mineinabyss:materials_mobs/horncrier_horn

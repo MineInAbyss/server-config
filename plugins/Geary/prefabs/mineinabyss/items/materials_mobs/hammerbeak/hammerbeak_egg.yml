@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:egg
   itemName: <#613F0C>Hammerbeak Egg
-  itemModel: mineinabyss:hammerbeak_egg
+  itemModel: mineinabyss:materials_mobs/hammerbeak_egg
   lore:
   - ':layer_1::layer_2::layer_4:'
   - <yellow>Can be used as a cooking ingredient
@@ -9,6 +9,7 @@ set.item:
   - <#A9CCCA><i>Mother Hammerbeak does
   - <#A9CCCA><i>not look to happy...
 resourcepack:
+  model: mineinabyss:materials_mobs/hammerbeak_egg
   textures:
     layers:
     - mineinabyss:materials_mobs/hammerbeak_egg

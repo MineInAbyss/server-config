@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:bone
   itemName: <#8F2222>Uibuta Tooth
-  itemModel: mineinabyss:uibuta_tooth
+  itemModel: mineinabyss:materials_mobs/uibuta_tooth
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>It is fairly big, but suprisingly blunt...
 resourcepack:
+  model: mineinabyss:materials_mobs/uibuta_tooth
   textures:
     layers:
     - mineinabyss:materials_mobs/uibuta_tooth

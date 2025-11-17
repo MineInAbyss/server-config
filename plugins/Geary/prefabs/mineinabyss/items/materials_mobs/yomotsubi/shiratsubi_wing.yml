@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:iron_ingot
   itemName: <#9C0F2C>Shiratsubi Wing
-  itemModel: mineinabyss:shiratsubi_wing
+  itemModel: mineinabyss:materials_mobs/shiratsubi_wing
   lore:
   - ':layer_5::cosmetic_orth_coin:'
   - <#9c5d2c>A sturdy, metallic wing.
   - <#9c5d2c><i>Perhaps i can mold this into something...
 resourcepack:
+  model: mineinabyss:materials_mobs/shiratsubi_wing
   textures:
     layers:
     - mineinabyss:materials_mobs/shiratsubi_wing

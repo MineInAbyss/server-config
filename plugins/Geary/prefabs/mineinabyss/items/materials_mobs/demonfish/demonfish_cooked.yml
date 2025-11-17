@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#257BEB>Cooked Demonfish
-  itemModel: mineinabyss:demonfish_cooked
+  itemModel: mineinabyss:materials_mobs/demonfish_cooked
   lore:
   - ':layer_5:'
   - <#1B5BAD>A staple food among delvers.
@@ -22,6 +22,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/demonfish_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/demonfish_cooked

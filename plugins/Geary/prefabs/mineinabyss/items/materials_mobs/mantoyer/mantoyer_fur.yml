@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:brown_wool
   itemName: <#BDA55D>Man-toyer Fur
-  itemModel: mineinabyss:mantoyer_fur
+  itemModel: mineinabyss:materials_mobs/mantoyer_fur
   lore:
   - ':layer_1::layer_4:'
   - <#A68348>Thickly furred, and very sturdy...
 resourcepack:
+  model: mineinabyss:materials_mobs/mantoyer_fur
   textures:
     layers:
     - mineinabyss:materials_mobs/mantoyer_fur

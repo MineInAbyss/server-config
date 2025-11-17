@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:feather
   itemName: <#3DDFFF>Cyatoria Feather
-  itemModel: mineinabyss:cyatoria_feather
+  itemModel: mineinabyss:materials_mobs/cyatoria_feather
   lore:
   - ':layer_1::layer_2::cosmetic_orth_coin:'
   - <#54FFA4><i>It resembles the feathers
   - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
 resourcepack:
+  model: mineinabyss:materials_mobs/cyatoria_feather
   textures:
     layers:
     - mineinabyss:materials_mobs/cyatoria_feather

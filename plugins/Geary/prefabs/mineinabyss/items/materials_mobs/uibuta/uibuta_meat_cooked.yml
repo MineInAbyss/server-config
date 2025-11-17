@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#8F2222>Cooked Uibuta Meat
-  itemModel: mineinabyss:uibuta_meat_cooked
+  itemModel: mineinabyss:materials_mobs/uibuta_meat_cooked
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>This should be enough food
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/uibuta_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/uibuta_meat_cooked

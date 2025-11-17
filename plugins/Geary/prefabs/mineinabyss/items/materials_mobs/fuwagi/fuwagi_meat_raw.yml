@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:rabbit
   itemName: <#E0E0E0>Raw Fuwagi Meat
-  itemModel: mineinabyss:fuwagi_meat_raw
+  itemModel: mineinabyss:materials_mobs/fuwagi_meat_raw
   lore:
   - ':layer_1::layer_2:'
   - <#FF3A24><i>Gamey with a hint of carrot and
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:fuwagi_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/fuwagi_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/fuwagi_meat_raw

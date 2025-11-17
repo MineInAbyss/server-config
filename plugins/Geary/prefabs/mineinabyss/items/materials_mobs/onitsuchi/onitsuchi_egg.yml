@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:egg
   itemName: <#5C471D>Onitsuchi Egg
-  itemModel: mineinabyss:onitsuchi_egg
+  itemModel: mineinabyss:materials_mobs/onitsuchi_egg
   lore:
   - ':layer_4::layer_5:'
   - <yellow>Can be used as a cooking ingredient
@@ -9,6 +9,7 @@ set.item:
   - <#A9CCCA><i>Mother Onitsuchi does
   - <#A9CCCA><i>not look to happy...
 resourcepack:
+  model: mineinabyss:materials_mobs/onitsuchi_egg
   textures:
     layers:
     - mineinabyss:materials_mobs/onitsuchi_egg

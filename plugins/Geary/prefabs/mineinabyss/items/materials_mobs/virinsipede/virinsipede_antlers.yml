@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:blaze_rod
   itemName: <#C42D2D>Virinsipede Antlers
-  itemModel: mineinabyss:virinsipede_antlers
+  itemModel: mineinabyss:materials_mobs/virinsipede_antlers
   lore:
   - ':layer_5:'
   - <#FFC847><i>Blazing hot, just like
   - <#FFC847><i>the Virinsipede's rage.
 resourcepack:
+  model: mineinabyss:materials_mobs/virinsipede_antlers
   textures:
     layers:
     - mineinabyss:materials_mobs/virinsipede_antlers

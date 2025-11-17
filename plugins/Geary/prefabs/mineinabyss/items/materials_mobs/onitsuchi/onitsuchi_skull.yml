@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:flint
   itemName: <#5C471D>Onitsuchi Skull
-  itemModel: mineinabyss:onitsuchi_skull
+  itemModel: mineinabyss:materials_mobs/onitsuchi_skull
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <yellow>Can be used as a fire starter
@@ -9,6 +9,7 @@ set.item:
   - <#A9CCCA><i>It seems sharp enough
   - <#A9CCCA><i>to put an eye out.
 resourcepack:
+  model: mineinabyss:materials_mobs/onitsuchi_skull
   textures:
     layers:
     - mineinabyss:materials_mobs/onitsuchi_skull

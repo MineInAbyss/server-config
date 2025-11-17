@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:netherite_scrap
   itemName: <#9C0F2C>Stingerhead Scale
-  itemModel: mineinabyss:stingerhead_scale
+  itemModel: mineinabyss:materials_mobs/stingerhead_scale
   lore:
   - ':layer_5:'
   - <yellow>It is said to be the toughest known
@@ -9,6 +9,7 @@ set.item:
   - <#EB1742><i>Perhaps I can upgrade my
   - <#EB1742><i>armour with this?
 resourcepack:
+  model: mineinabyss:materials_mobs/stingerhead_scale
   textures:
     layers:
     - mineinabyss:materials_mobs/stingerhead_scale

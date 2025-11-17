@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:gunpowder
   itemName: <#257BEB>Swarmshocker Charged Powder
-  itemModel: mineinabyss:swarmshocker_charged_powder
+  itemModel: mineinabyss:materials_mobs/swarmshocker_charged_powder
   lore:
   - ':layer_4::layer_5:'
   - <#1B5BAD><i>This stores an impressive amount of energy!
 disableItemInteractions: {}
 resourcepack:
+  model: mineinabyss:materials_mobs/swarmshocker_charged_powder
   textures:
     layers:
     - mineinabyss:materials_mobs/swarmshocker_charged_powder

@@ -1,13 +1,14 @@
 set.item:
   type: minecraft:slime_ball
   itemName: <#257BEB>Swarmhoarder Jelly
-  itemModel: mineinabyss:swarmshocker_jelly
+  itemModel: mineinabyss:materials_mobs/swarmshocker_jelly
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#1B5BAD><i>Very sticky, almost like some sort of resin.
   - <#1B5BAD><i>Tastes very watery...
 disableItemInteractions: {}
 resourcepack:
+  model: mineinabyss:materials_mobs/swarmshocker_jelly
   textures:
     layers:
     - mineinabyss:materials_mobs/swarmshocker_jelly

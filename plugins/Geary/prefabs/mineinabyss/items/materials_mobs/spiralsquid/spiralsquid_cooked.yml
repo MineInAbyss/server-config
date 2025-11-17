@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#6CE5F5>Cooked Spiralsquid
-  itemModel: mineinabyss:spiralsquid_cooked
+  itemModel: mineinabyss:materials_mobs/spiralsquid_cooked
   lore:
   - ':layer_1::layer_4:'
   - <#35ADBD><i>Seems like a great source of food!
@@ -11,6 +11,7 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
+  model: mineinabyss:materials_mobs/spiralsquid_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/spiralsquid_cooked

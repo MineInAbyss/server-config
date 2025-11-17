@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#5C471D>Cooked Onitsuchi Wing
-  itemModel: mineinabyss:onitsuchi_wing_cooked
+  itemModel: mineinabyss:materials_mobs/onitsuchi_wing_cooked
   lore:
   - ':layer_4::layer_5:'
   - <yellow>Can also be acquired from cooking
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/onitsuchi_wing_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/onitsuchi_wing_cooked

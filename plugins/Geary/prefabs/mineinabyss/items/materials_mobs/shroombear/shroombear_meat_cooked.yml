@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#85562D>Cooked Shroombear Meat
-  itemModel: mineinabyss:shroombear_meat_raw
+  itemModel: mineinabyss:materials_mobs/shroombear_meat_raw
   lore:
   - ':layer_4:'
   - <yellow>It's edible and dark in colour.
@@ -24,6 +24,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/shroombear_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/shroombear_meat_cooked

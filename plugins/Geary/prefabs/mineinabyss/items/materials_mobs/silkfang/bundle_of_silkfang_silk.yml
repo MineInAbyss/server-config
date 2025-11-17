@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:cobweb
   itemName: <#116AAD>Bundle of Silkfang Silk
-  itemModel: mineinabyss:bundle_of_silkfang_silk
+  itemModel: mineinabyss:materials_mobs/bundle_of_silkfang_silk
   lore:
   - ':layer_1::layer_2:'
   - <#ED4C4C>Most people don't enjoy getting
   - <#ED4C4C>stuck in this.
 resourcepack:
+  model: mineinabyss:materials_mobs/bundle_of_silkfang_silk
   textures:
     layers:
     - mineinabyss:materials_mobs/bundle_of_silkfang_silk

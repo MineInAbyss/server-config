@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_green>Tesuchi Scales
-  itemModel: mineinabyss:tesuchi_scales
+  itemModel: mineinabyss:materials_mobs/tesuchi_scales
   lore:
   - ':layer_2::cosmetic_orth_coin:'
   - <green><i>Crispy
@@ -11,6 +11,7 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
+  model: mineinabyss:materials_mobs/tesuchi_scales
   textures:
     layers:
     - mineinabyss:materials_mobs/tesuchi_scales

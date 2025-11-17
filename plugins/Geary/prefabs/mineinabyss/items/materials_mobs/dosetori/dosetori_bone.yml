@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:bone
   itemName: <#59ac7a>Dosetori Bone
-  itemModel: mineinabyss:dosetori_bone
+  itemModel: mineinabyss:materials_mobs/dosetori_bone
   lore:
   - ':layer_2::layer_3::cosmetic_orth_coin:'
   - <#d6b12c><i>This thing sounds... hollow.
 resourcepack:
+  model: mineinabyss:materials_mobs/dosetori_bone
   textures:
     layers:
     - mineinabyss:materials_mobs/dosetori_bone

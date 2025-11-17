@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:blaze_rod
   itemName: <#6C19BF>Rohana Tail
-  itemModel: mineinabyss:rohana_tail
+  itemModel: mineinabyss:materials_mobs/rohana_tail
   lore:
   - ':layer_2::layer_4::cosmetic_orth_coin:'
   - <#FF1FB4><i>Can be used to make brewing stands
   - <#FF1FB4><i>or other useful relics...
 resourcepack:
+  model: mineinabyss:materials_mobs/rohana_tail
   textures:
     layers:
     - mineinabyss:materials_mobs/rohana_tail

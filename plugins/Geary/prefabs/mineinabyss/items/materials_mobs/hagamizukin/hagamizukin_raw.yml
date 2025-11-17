@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0B6623>Raw Hagamizukin
-  itemModel: mineinabyss:hagamizukin_raw
+  itemModel: mineinabyss:materials_mobs/hagamizukin_raw
   lore:
   - ':layer_4::layer_5:'
   - <#A759FF>The meat still feels angry with me.
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:hagamizukin_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/hagamizukin_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/hagamizukin_raw

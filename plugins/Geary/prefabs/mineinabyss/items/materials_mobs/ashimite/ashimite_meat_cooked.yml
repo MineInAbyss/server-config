@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#2597D9>Cooked Ashimite Meat
-  itemModel: mineinabyss:ashimite_meat_cooked
+  itemModel: mineinabyss:materials_mobs/ashimite_meat_cooked
   lore:
   - ':layer_5:'
   - <#824E21><i>Very tasty and rich in nutrients!
@@ -24,6 +24,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/ashimite_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/ashimite_meat_cooked

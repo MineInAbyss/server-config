@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:red_wool
   itemName: <#eeffff>Chimokami Tail
-  itemModel: mineinabyss:chimokami_tail
+  itemModel: mineinabyss:materials_mobs/chimokami_tail
   lore:
   - ':layer_2::cosmetic_orth_coin:'
   - <#7a243f><i>These critters like darkness.
 disableItemInteractions: {}
 resourcepack:
+  model: mineinabyss:materials_mobs/chimokami_tail
   textures:
     layers:
     - mineinabyss:materials_mobs/chimokami_tail

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#D12B26>Raw Corpse-Weeper Meat
-  itemModel: mineinabyss:corpse_weeper_meat_raw
+  itemModel: mineinabyss:materials_mobs/corpse_weeper_meat_raw
   lore:
   - ':layer_2:'
   - <red><i>It both smells and tastes horrible...
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:corpse_weeper_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/corpse_weeper_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/corpse_weeper_meat_raw

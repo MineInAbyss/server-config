@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:popped_chorus_fruit
   itemName: <#9A1CAD>Splitjaw Scales
-  itemModel: mineinabyss:splitjaw_scales
+  itemModel: mineinabyss:materials_mobs/splitjaw_scales
   lore:
   - ':layer_1::layer_2::layer_3::cosmetic_orth_coin:'
   - <reset><light_purple><i>Can be used to
   - <reset><light_purple><i>make certain blocks.
 resourcepack:
+  model: mineinabyss:materials_mobs/splitjaw_scales
   textures:
     layers:
     - mineinabyss:materials_mobs/splitjaw_scales

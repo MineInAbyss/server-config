@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:ghast_tear
   itemName: <#3C3B4A>Titanjaw Pearl
-  itemModel: mineinabyss:titanjaw_pearl
+  itemModel: mineinabyss:materials_mobs/titanjaw_pearl
   lore:
   - ':layer_5::cosmetic_orth_coin:'
   - <#0C7787><i>Why do I feel like I am haunted...
 resourcepack:
+  model: mineinabyss:materials_mobs/titanjaw_pearl
   textures:
     layers:
     - mineinabyss:materials_mobs/titanjaw_pearl

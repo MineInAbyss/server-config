@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:fermented_spider_eye
   itemName: <#9C0F2C>Stingerhead Eye
-  itemModel: mineinabyss:stingerhead_eye
+  itemModel: mineinabyss:materials_mobs/stingerhead_eye
   lore:
   - ':layer_5:'
   - <yellow>Its eye was almost fused into its armor.
 resourcepack:
+  model: mineinabyss:materials_mobs/stingerhead_eye
   textures:
     layers:
     - mineinabyss:materials_mobs/stingerhead_eye

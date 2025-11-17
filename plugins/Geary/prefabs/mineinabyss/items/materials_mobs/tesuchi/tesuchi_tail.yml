@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_green>Tesuchi Tail
-  itemModel: mineinabyss:tesuchi_tail
+  itemModel: mineinabyss:materials_mobs/tesuchi_tail
   lore:
   - ':layer_2:'
   - <green><i>Yummy
@@ -11,6 +11,7 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
+  model: mineinabyss:materials_mobs/tesuchi_tail
   textures:
     layers:
     - mineinabyss:materials_mobs/tesuchi_tail

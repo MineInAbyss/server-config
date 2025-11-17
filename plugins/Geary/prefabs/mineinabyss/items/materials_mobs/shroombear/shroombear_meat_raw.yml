@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#85562D>Shroombear Meat
-  itemModel: mineinabyss:shroombear_meat_raw
+  itemModel: mineinabyss:materials_mobs/shroombear_meat_raw
   lore:
   - ':layer_4:'
   - <yellow>It's edible and dark in colour.
@@ -15,6 +15,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:shroombear_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/shroombear_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/shroombear_meat_raw

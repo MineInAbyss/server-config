@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:cooked_rabbit
   itemName: <#E0E0E0>Cooked Fuwagi Meat
-  itemModel: mineinabyss:fuwagi_meat_cooked
+  itemModel: mineinabyss:materials_mobs/fuwagi_meat_cooked
   lore:
   - ':layer_1::layer_2:'
   - <#FF3A24><i>Gamey with a hint of carrot and
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/fuwagi_meat_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/fuwagi_meat_cooked

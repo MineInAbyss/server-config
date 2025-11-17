@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:prismarine_crystals
   itemName: <#00FFFF>Tachikatana Claw
-  itemModel: mineinabyss:tachikatana_claw
+  itemModel: mineinabyss:materials_mobs/tachikatana_claw
   lore:
   - ':layer_4::layer_5::cosmetic_orth_coin:'
   - <#1B5BAD><i>Striking it in a particular way emits
   - <#1B5BAD><i>a shockwave..
 resourcepack:
+  model: mineinabyss:materials_mobs/tachikatana_claw
   textures:
     layers:
     - mineinabyss:materials_mobs/tachikatana_claw

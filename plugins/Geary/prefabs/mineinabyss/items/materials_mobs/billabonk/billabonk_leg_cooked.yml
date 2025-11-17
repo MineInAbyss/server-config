@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#b754c2>Cooked Billabonk Leg
-  itemModel: mineinabyss:billabonk_leg_cooked
+  itemModel: mineinabyss:materials_mobs/billabonk_leg_cooked
   lore:
   - ':layer_2:'
   - <#0357AB><i>Moves when you apply electricity.
@@ -22,6 +22,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials_mobs/billabonk_leg_cooked
   textures:
     layers:
     - mineinabyss:materials_mobs/billabonk_leg_cooked

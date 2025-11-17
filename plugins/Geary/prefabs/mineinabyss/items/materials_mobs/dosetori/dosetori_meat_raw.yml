@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#59ac7a>Raw Dosetori Meat
-  itemModel: mineinabyss:dosetori_meat_raw
+  itemModel: mineinabyss:materials_mobs/dosetori_meat_raw
   lore:
   - ':layer_2::layer_3:'
   - <#d6b12c><i>Tastes like chicken.
@@ -13,6 +13,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:dosetori_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/dosetori_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/dosetori_meat_raw

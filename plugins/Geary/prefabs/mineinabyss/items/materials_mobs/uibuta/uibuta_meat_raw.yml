@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#8F2222>Raw Uibuta Meat
-  itemModel: mineinabyss:uibuta_meat_raw
+  itemModel: mineinabyss:materials_mobs/uibuta_meat_raw
   lore:
   - ':layer_4::layer_5:'
   - <#C42F2F><i>A thick layer of fat clings to the meat.
@@ -14,6 +14,7 @@ set.item:
 replaceBurnedDrop:
   prefab: mineinabyss:uibuta_meat_cooked
 resourcepack:
+  model: mineinabyss:materials_mobs/uibuta_meat_raw
   textures:
     layers:
     - mineinabyss:materials_mobs/uibuta_meat_raw

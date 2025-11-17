@@ -1,12 +1,13 @@
 set.item:
   type: minecraft:hanging_roots
   itemName: <#696112>Spittleshrub Root
-  itemModel: mineinabyss:spittleshrub_root
+  itemModel: mineinabyss:materials_mobs/spittleshrub_root
   lore:
   - ':layer_1::layer_2::layer_4::cosmetic_orth_coin:'
   - <#A68348><i>This looks like a pretty vital ingredient
   - <#A68348><i>for some plants.
 resourcepack:
+  model: mineinabyss:materials_mobs/spittleshrub_root
   textures:
     layers:
     - mineinabyss:materials_mobs/spittleshrub_root

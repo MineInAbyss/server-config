@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:slime_ball
   itemName: <#38E016>Splitjaw Gunk
-  itemModel: mineinabyss:splitjaw_gunk
+  itemModel: mineinabyss:materials_mobs/splitjaw_gunk
   lore:
   - ':layer_1::layer_2::layer_3::cosmetic_orth_coin:'
   - <#40FF19>Yucky.
 resourcepack:
+  model: mineinabyss:materials_mobs/splitjaw_gunk
   textures:
     layers:
     - mineinabyss:materials_mobs/splitjaw_gunk
