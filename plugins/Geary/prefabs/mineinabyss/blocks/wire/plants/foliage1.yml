@@ -2,15 +2,20 @@ set.item:
   type: minecraft:paper
   itemName: <#7a4e48>Foliage 1
   customModelData: { floats: [ 3001 ] }
+set.block:
+  blockType: WIRE
+  blockId: 1
+
+resourcepack:
+  model: mineinabyss:blocks/wire/foliage1
+
 blocky:placableOn:
   floor: true
   ceiling: true
   wall: false
   blocks:
     - STONE
-set.block:
-  blockType: WIRE
-  blockId: 1
+
 blocky:pack:
   model: mineinabyss:block/nature/foliage1
 blocky:tallWire: {}

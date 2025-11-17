@@ -11,7 +11,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/relics/respiratis
+    - mineinabyss:relics/respiratis
 observe:
   itemRightClick:
   - become: parent

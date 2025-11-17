@@ -11,7 +11,7 @@ set.item:
   weapon:
     damagePerAttack: 0
 resourcepack:
-  model: mineinabyss:item/relics/arc_staff
+  model: mineinabyss:relics/arc_staff
 observe:
   itemRightClick:
   - become: parent

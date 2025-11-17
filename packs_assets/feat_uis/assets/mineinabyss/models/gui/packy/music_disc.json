@@ -1,0 +1,14 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "mineinabyss:gui/packy/music_disc"
+	},
+	"display": {
+		"gui": {
+			"rotation": [0, -43, 90],
+			"translation": [-0.5, 4.75, 4],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	}
+}

@@ -12,7 +12,7 @@ set.item:
   enchantable: 0
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:item/relics/arc_staff
+  model: mineinabyss:relics/arc_staff
 observe:
   itemRightClick:
   - become: parent

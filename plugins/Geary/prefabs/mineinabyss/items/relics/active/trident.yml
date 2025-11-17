@@ -19,7 +19,7 @@ set.item:
   unbreakable: {}
   enchantable: 0
 resourcepack:
-  model: mineinabyss:item/relics/tranquil_pierce
+  model: mineinabyss:relics/tranquil_pierce
 observe:
   itemLeftClick:
   - become: parent

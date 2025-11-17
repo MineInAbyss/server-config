@@ -4,7 +4,7 @@ set.item:
   itemModel: mineinabyss:zephyr_disk
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:item/relics/zephyr_disk
+  model: mineinabyss:relics/zephyr_disk
 #observe:
 #  itemRightClick:
 #  - become: parent

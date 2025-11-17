@@ -10,7 +10,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/relics/cradle_of_fertility
+    - mineinabyss:relics/cradle_of_fertility
 observe:
   itemRightClick:
   - become: parent

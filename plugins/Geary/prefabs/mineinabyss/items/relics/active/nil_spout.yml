@@ -10,7 +10,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/relics/nil_spout
+    - mineinabyss:relics/nil_spout
 observe:
   itemRightClick:
   - become: parent

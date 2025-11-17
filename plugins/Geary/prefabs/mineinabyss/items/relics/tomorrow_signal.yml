@@ -3,7 +3,7 @@ set.item:
   itemName: <dark_gray>Tomorrow Signal
   itemModel: mineinabyss:tommorow_signal
 resourcepack:
-  model: mineinabyss:item/relics/tommorow_signal
+  model: mineinabyss:relics/tommorow_signal
 observe:
   itemLeftClick:
   - become: parent

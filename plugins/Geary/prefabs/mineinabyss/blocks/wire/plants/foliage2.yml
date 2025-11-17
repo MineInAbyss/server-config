@@ -6,6 +6,9 @@ set.block:
   blockType: WIRE
   blockId: 2
 
+resourcepack:
+  model: mineinabyss:blocks/wire/foliage2
+
 blocky:pack:
   model: mineinabyss:block/nature/foliage2
 blocky:drops:

@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:clock
-  itemModel: mineinabyss:giant_relic_sword
+  itemModel: mineinabyss:relics/crescent_blade
   itemName: <#15ABC2><b>Crescent Hatchet
   lore:
   - ':layer_3: Grade I Relic'
@@ -46,4 +46,4 @@ observe:
   - mythicSkills:
     - crescent_primer
 resourcepack:
-  model: mineinabyss:item/relics/crescent_blade
+  model: mineinabyss:relics/crescent_blade

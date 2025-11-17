@@ -1,0 +1,26 @@
+set.item:
+  itemName: Netherite Sickle
+  type: minecraft:netherite_hoe
+  itemModel: "mineinabyss:equipment/tools/netherite_sickle"
+  maxDamage: 2031
+  tool:
+    rules:
+    - blockTypes:
+      - minecraft:leaves
+      speed: 8.0
+      correctForDrops: true
+set.recipes:
+  result:
+    prefab: mineinabyss:netherite_sickle
+  discoverRecipes: true
+  recipes:
+  - type: smithing_transform
+    template:
+      type: minecraft:netherite_upgrade_smithing_template
+    input: mineinabyss:diamond_sickle
+    addition: minecraft:netherite_ingot
+observe:
+  itemRightClick:
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 4

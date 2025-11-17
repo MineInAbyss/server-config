@@ -5,6 +5,10 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 4
+
+resourcepack:
+  model: mineinabyss:blocks/wire/foliage4
+
 blocky:pack:
   model: mineinabyss:block/nature/foliage4
 blocky:drops:
