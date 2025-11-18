@@ -1,7 +1,7 @@
 set.item:
   itemName: Charcoal Sand Hoe
   type: minecraft:diamond_hoe
-  itemModel: mineinabyss:charcoal_sand_hoe
+  itemModel: mineinabyss:equipment/tools/charcoal_sand_hoe
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true
@@ -15,7 +15,8 @@ set.recipes:
       | S|
       | S|
 resourcepack:
+  model: mineinabyss:equipment/tools/charcoal_sand_hoe
   textures:
     layers:
-    - mineinabyss:item/tools/charcoal_sand_hoe
+    - mineinabyss:equipment/tools/charcoal_sand_hoe
   parentModel: item/handheld

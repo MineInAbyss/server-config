@@ -1,7 +1,7 @@
 set.item:
   itemName: <#03AC13>Fools Cradle
   type: minecraft:paper
-  itemModel: mineinabyss:fools_cradle
+  itemModel: mineinabyss:event_items/fools_cradle
   lore:
   - ':troll: Grade IV Relic'
   - <gold>Found during April Fools 2025.
@@ -21,6 +21,7 @@ observe:
     when:
     - chance: 1
 resourcepack:
+  model: mineinabyss:event_items/fools_cradle
   textures:
     layers:
-    - mineinabyss:item/event/fools_cradle
+    - mineinabyss:event_items/fools_cradle

@@ -1,8 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Relic Shard
-  itemModel: mineinabyss:relic_shard
+  itemModel: mineinabyss:event_items/relic_shard
 resourcepack:
+  model: mineinabyss:event_items/relic_shard
   textures:
     layers:
-    - mineinabyss:item/event/relic_shard
+    - mineinabyss:event_items/relic_shard

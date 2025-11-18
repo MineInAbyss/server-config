@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:paper
   itemName: Music Disc
-  itemModel: mineinabyss:flat_kazura
+  itemModel: mineinabyss:misc/music_disc_the_flat_kazura
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_the_flat_kazura
 resourcepack:
+  model: mineinabyss:misc/music_disc_the_flat_kazura
   textures:
     layers:
-    - mineinabyss:item/other/music_discs/flat_kazura
+    - mineinabyss:misc/music_disc_green

@@ -1,7 +1,7 @@
 set.item:
   itemName: <#AB8AE6>Hyalos Manifest
   type: minecraft:blue_stained_glass
-  itemModel: mineinabyss:hyalos_manifest
+  itemModel: mineinabyss:materials/hyalos_manifest
   lore:
   - ':layer_5: Tier 2 Lens'
   - <#D2D489>A luminous material is crafted from
@@ -9,6 +9,7 @@ set.item:
   - <#D2D489>The lens seem to sparkling with colours
   - <#D2D489>that seem to reflect light from the force field.
 resourcepack:
+  model: mineinabyss:materials/hyalos_manifest
   textures:
     layers:
-      - mineinabyss:item/materials/hyalos_manifest
+      - mineinabyss:materials/hyalos_manifest

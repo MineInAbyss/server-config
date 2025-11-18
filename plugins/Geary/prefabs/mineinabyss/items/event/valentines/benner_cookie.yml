@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#EBEBEB><b>Benner Cookie
-  itemModel: mineinabyss:benner_cookie
+  itemModel: mineinabyss:event_items/benner_cookie
   lore:
   - <#DB8888>Has a strong taste
   - <#DB8888>Of peace and love
@@ -11,4 +11,4 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
-  model: mineinabyss:item/event/benner_cookie
+  model: mineinabyss:event_items/benner_cookie

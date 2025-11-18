@@ -1,7 +1,7 @@
 set.item:
   itemName: <#C21807>Suspicious Dagger
   type: minecraft:netherite_sword
-  itemModel: mineinabyss:amongus_knife
+  itemModel: mineinabyss:event_items/amongus_knife
   lore:
   - ':troll:'
   - <gold>Found during April Fools 2025.
@@ -15,5 +15,5 @@ passive:
   - mythicSkills:
     - amongusknife
 resourcepack:
-  model: mineinabyss:item/event/amongus_knife
+  model: mineinabyss:event_items/amongus_knife
   parentModel: item/handheld

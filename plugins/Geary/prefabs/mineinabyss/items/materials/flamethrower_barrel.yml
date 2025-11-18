@@ -1,11 +1,12 @@
 set.item:
   itemName: <#0047AB>Flamethrower Barrel
   type: minecraft:paper
-  itemModel: mineinabyss:flamethrower_barrel
+  itemModel: mineinabyss:materials/flamethrower_barrel
 resourcepack:
+  model: mineinabyss:materials/flamethrower_barrel  
   textures:
     layers:
-    - mineinabyss:item/materials/flamethrower_barrel  
+    - mineinabyss:materials/flamethrower_barrel  
 set.recipes:
  result:
    prefab: mineinabyss:flamethrower_barrel

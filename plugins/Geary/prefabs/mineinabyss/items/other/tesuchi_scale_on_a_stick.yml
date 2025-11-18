@@ -3,7 +3,7 @@ set.item:
   itemName: Tesuchi Scale on a Stick
   lore:
   - <yellow>Useful in order to steer an <#785F34>Abyssal Snail<yellow>.
-  itemModel: mineinabyss:tesuchi_scale_on_a_stick
+  itemModel: mineinabyss:misc/tesuchi_scale_on_a_stick
 disableItemInteractions: {}
 set.recipes:
   discoverRecipes: true
@@ -15,6 +15,7 @@ set.recipes:
     - prefab: mineinabyss:tesuchi_scales
     - type: minecraft:fishing_rod
 resourcepack:
+  model: mineinabyss:misc/tesuchi_scale_on_a_stick
   textures:
     layers:
-    - mineinabyss:item/other/tesuchi_scale_on_a_stick
+    - mineinabyss:misc/tesuchi_scale_on_a_stick

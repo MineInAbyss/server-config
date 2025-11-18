@@ -1,8 +1,9 @@
 set.item:
   itemName: <dark_aqua>Raw Charcoal Sand
   type: minecraft:paper
-  itemModel: mineinabyss:charcoal_sand_raw
+  itemModel: mineinabyss:materials/charcoal_sand_raw
 resourcepack:
+  model: mineinabyss:materials/charcoal_sand_raw
   textures:
     layers:
-    - mineinabyss:item/materials/charcoal_sand_raw
+    - mineinabyss:materials/charcoal_sand_raw

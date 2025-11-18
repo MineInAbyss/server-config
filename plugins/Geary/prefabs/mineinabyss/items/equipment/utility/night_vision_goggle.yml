@@ -1,7 +1,7 @@
 set.item:
   itemName: <#C13523><b>Night Vision Goggle
   type: minecraft:paper
-  itemModel: mineinabyss:night_vision_goggle
+  itemModel: mineinabyss:equipment/utility/night_vision_goggle
   lore:
   - <#D2D489>A pair of Relic-grade night vision goggles,
   - <#D2D489>crafted with an intricate, almost organic design.
@@ -24,4 +24,4 @@ passive:
       duration: 22s
       hasParticles: false
 resourcepack:
-  model: mineinabyss:item/relics/night_vision_goggles
+  model: mineinabyss:equipment/utility/night_vision_goggles

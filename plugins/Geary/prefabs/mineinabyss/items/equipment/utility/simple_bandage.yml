@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Simple Bandage
-  itemModel: mineinabyss:bandages
+  itemModel: mineinabyss:equipment/utility/simple_bandage
   lore:
   - <#d4be90>A standard issue bandage. Treats most non-grievous wounds.
   - <#dfceac><i>Active ability. On right consumes bandage healing the user.
@@ -18,10 +18,11 @@ set.item:
       #       duration: 2s
       #       hasParticles: false
 resourcepack:
+  parentModel: item/handheld
+  model: mineinabyss:equipment/utility/simple_bandage
   textures:
     layers:
-    - mineinabyss:item/other/bandages
-  parentModel: item/handheld
+    - mineinabyss:equipment/utility/simple_bandage
 
 set.recipes:
   discoverRecipes: true

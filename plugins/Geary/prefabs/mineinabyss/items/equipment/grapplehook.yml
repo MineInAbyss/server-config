@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0047AB>Grapple Hook
-  itemModel: mineinabyss:grapplehook
+  itemModel: mineinabyss:relics/grapplehook
   maxStackSize: 1
   lore:
   - 'Grade II Relic'
@@ -62,4 +62,4 @@ passive:
   - mythicSkills:
     - grapplehook_charge
 resourcepack:
-  model: mineinabyss:item/relics/grapple_hook/grapplinghookretracted
+  model: mineinabyss:relics/grapple_hook/grapplinghookretracted

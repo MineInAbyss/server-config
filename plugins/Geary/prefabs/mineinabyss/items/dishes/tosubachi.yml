@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#50C878>Tosubachi
-  itemModel: mineinabyss:tosubachi
+  itemModel: mineinabyss:recipes/tosubachi
   lore:
   - ':layer_2:'
   - <green>A dried Tesuchi. Seen as a delicacy, its
@@ -20,6 +20,7 @@ set.item:
             duration: 20s
             hasParticles: false
 resourcepack:
+  model: mineinabyss:recipes/tosubachi
   textures:
     layers:
-    - mineinabyss:item/food/creatures/tosubachi
+    - mineinabyss:recipes/tosubachi

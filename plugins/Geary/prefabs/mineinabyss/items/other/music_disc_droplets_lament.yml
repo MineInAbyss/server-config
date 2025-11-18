@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:paper
   itemName: Music Disc
-  itemModel: mineinabyss:droplets_lament
+  itemModel: mineinabyss:misc/music_disc_droplets_lament
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_droplets_lament
 resourcepack:
+  model: mineinabyss:misc/music_disc_droplets_lament
   textures:
     layers:
-    - mineinabyss:item/other/music_discs/droplets_lament
+    - mineinabyss:misc/music_disc_blue

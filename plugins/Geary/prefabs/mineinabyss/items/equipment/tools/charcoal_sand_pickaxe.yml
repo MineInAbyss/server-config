@@ -1,7 +1,7 @@
 set.item:
   itemName: Charcoal Sand Pickaxe
   type: minecraft:diamond_pickaxe
-  itemModel: mineinabyss:charcoal_sand_pickaxe
+  itemModel: mineinabyss:equipment/tools/charcoal_sand_pickaxe
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true
@@ -15,7 +15,8 @@ set.recipes:
       | S |
       | S |
 resourcepack:
+  model: mineinabyss:equipment/tools/charcoal_sand_pickaxe
   textures:
     layers:
-    - mineinabyss:item/tools/charcoal_sand_pickaxe
+    - mineinabyss:equipment/tools/charcoal_sand_pickaxe
   parentModel: item/handheld

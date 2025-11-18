@@ -1,7 +1,7 @@
 set.item:
   itemName: Charcoal Sand Sickle
   type: minecraft:wooden_hoe
-  itemModel: mineinabyss:charcoal_sand_sickle
+  itemModel: mineinabyss:equipment/tools/charcoal_sand_sickle
   maxDamage: 3000
   tool:
     rules:
@@ -26,6 +26,7 @@ observe:
   - mineinabyss:sickle:
       radius: 2
 resourcepack:
+  model: mineinabyss:equipment/tools/charcoal_sand_sickle
   textures:
     layers:
     - mineinabyss:equipment/tools/charcoal_sand_sickle

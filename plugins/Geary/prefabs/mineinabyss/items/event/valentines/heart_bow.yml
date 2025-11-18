@@ -1,10 +1,10 @@
 set.item:
   type: minecraft:bow
-  itemModel: mineinabyss:heart_bow
+  itemModel: mineinabyss:event_items/heart_bow
   itemName: <#FFC0CB><b>Heart Bow
   lore:
   - <#C6CC8A>In the Abyss, our hearts entwine,
   - <#C6CC8A>Depths of love, like relics, shine,
   - <#C6CC8A>Bound by courage, your soul is mine.
 resourcepack:
-  model: mineinabyss:item/event/heart_bow
+  model: mineinabyss:event_items/heart_bow

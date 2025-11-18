@@ -1,7 +1,7 @@
 set.item:
   itemName: <gold>God Seek
   type: minecraft:paper
-  itemModel: mineinabyss:ghost_seek_on
+  itemModel: mineinabyss:equipment/utility/ghost_seek_on
   lore:
     - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
     - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
@@ -27,4 +27,4 @@ observe:
                 - ghost_seek_effect_5
                 - ghost_seek_glow_nearby
 resourcepack:
-  model: mineinabyss:item/relics/ghost_seek_on
+  model: mineinabyss:equipment/utility/ghost_seek_on

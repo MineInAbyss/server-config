@@ -1,7 +1,7 @@
 set.item:
   itemName: Relic Core
   type: minecraft:paper
-  itemModel: mineinabyss:relic_core
+  itemModel: mineinabyss:materials/relic_core
 #set.recipes:
 #  discoverRecipes: true
 #  result:
@@ -23,6 +23,7 @@ set.item:
 #      |HCH|
 #      |GPG|
 resourcepack:
+  model: mineinabyss:materials/core_fluid_charged
   textures:
     layers:
-    - mineinabyss:item/materials/core_fluid_charged
+    - mineinabyss:materials/core_fluid_charged

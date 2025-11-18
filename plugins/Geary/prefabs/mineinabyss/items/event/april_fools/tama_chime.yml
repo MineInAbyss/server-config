@@ -1,16 +1,17 @@
 set.item:
   itemName: <#C21807>Tama Chime
   type: minecraft:paper
-  itemModel: mineinabyss:tama_chime
+  itemModel: mineinabyss:event_items/tama_chime
   lore:
   - ':troll: Grade IV Relic'
   - <gold>Found during April Fools 2025.
   - <gold>A relic able to replicate specific sounds.
   - <#D2D489><i>On use it sounds Tamas cries.
 resourcepack:
+  models: mineinabyss:event_items/tama_chime
   textures:
     layers:
-    - mineinabyss:item/event/tama_chime
+    - mineinabyss:event_items/tama_chime
 observe:
   itemRightClick:
   - become: parent

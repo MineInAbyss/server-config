@@ -1,7 +1,7 @@
 set.item:
   itemName: Blank Template Rune
   type: minecraft:paper
-  itemModel: mineinabyss:blank_template_rune
+  itemModel: mineinabyss:materials/blank_template_rune
 set.recipes:
   result:
     prefab: mineinabyss:blank_template_rune
@@ -18,6 +18,7 @@ set.recipes:
       |M M|
       |TMT|
 resourcepack:
+  model: mineinabyss:materials/blank_template_rune
   textures:
     layers:
-    - mineinabyss:item/materials/blank_template_rune
+    - mineinabyss:materials/blank_template_rune

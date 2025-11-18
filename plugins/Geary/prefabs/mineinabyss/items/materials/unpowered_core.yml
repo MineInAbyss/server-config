@@ -1,7 +1,7 @@
 set.item:
   itemName: Unpowered Core
   type: minecraft:paper
-  itemModel: mineinabyss:unpowered_core
+  itemModel: mineinabyss:materials/unpowered_core
 #set.recipes:
 #  discoverRecipes: true
 #  result:
@@ -21,6 +21,7 @@ set.item:
 #      |CPC|
 #      |GGG|
 resourcepack:
+  model: mineinabyss:materials/core_fluid
   textures:
     layers:
-    - mineinabyss:item/materials/core_fluid
+    - mineinabyss:materials/core_fluid

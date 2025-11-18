@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Depth Meter
-  itemModel: mineinabyss:depth_meter
+  itemModel: mineinabyss:equipment/utility/depth_meter
   lore:
   - <aqua>Used by delvers to keep
   - <aqua>track of their depth.
@@ -50,6 +50,7 @@ observe:
       display: <#02A9bF>Depth Meter
   - mineinabyss:showDepth: {}
 resourcepack:
+  model: mineinabyss:equipment/utility/depth_meter
   textures:
     layers:
-    - mineinabyss:item/tools/depth_meter
+    - mineinabyss:equipment/utility/depth_meter

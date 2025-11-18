@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0047AB>Black Flask
-  itemModel: mineinabyss:black_flask
+  itemModel: mineinabyss:relics/black_flask
   lore:
   - Grade IV relic
   - <#3d59ab>A fleshy bottle filled with a black, oily substance.
@@ -43,6 +43,7 @@ observe:
     - type: minecraft:instant_damage
       duration: 1s
 resourcepack:
+  model: mineinabyss:relics/black_flask
   textures:
     layers:
-      - mineinabyss:item/relics/consumables/black_flask
+      - mineinabyss:relics/black_flask

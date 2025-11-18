@@ -1,10 +1,10 @@
 set.item:
   type: minecraft:netherite_sword
-  itemModel: mineinabyss:relic_sword
+  itemModel: mineinabyss:event_items/relic_sword
   itemName: <#FFC0CB><b>Relic Sword
   lore:
   - <#C6CC8A>A shield forged deep, unyielding, strong,
   - <#C6CC8A>Your love, my guard, through light and shade,
   - <#C6CC8A>In every trial, our vow is made.
 resourcepack:
-  model: mineinabyss:item/event/relic_sword
+  model: mineinabyss:event_items/relic_sword

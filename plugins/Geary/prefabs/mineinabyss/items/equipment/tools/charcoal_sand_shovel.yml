@@ -1,7 +1,7 @@
 set.item:
   itemName: Charcoal Sand Shovel
   type: minecraft:diamond_shovel
-  itemModel: mineinabyss:charcoal_sand_shovel
+  itemModel: mineinabyss:equipment/tools/charcoal_sand_shovel
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true
@@ -15,7 +15,8 @@ set.recipes:
       |S|
       |S|
 resourcepack:
+  model: mineinabyss:equipment/tools/charcoal_sand_shovel
   textures:
     layers:
-    - mineinabyss:item/tools/charcoal_sand_shovel
+    - mineinabyss:equipment/tools/charcoal_sand_shovel
   parentModel: item/handheld

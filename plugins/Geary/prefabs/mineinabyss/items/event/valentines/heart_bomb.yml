@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Love Bomb
-  itemModel: mineinabyss:heart_bomb
+  itemModel: mineinabyss:event_items/heart_bomb
 observe:
   itemRightClick:
   - become: parent
@@ -16,6 +16,7 @@ observe:
     when:
     - chance: 0.2
 resourcepack:
+  model: mineinabyss:event_items/love_potion
   textures:
     layers:
-    - mineinabyss:item/event/love_potion
+    - mineinabyss:event_items/love_potion

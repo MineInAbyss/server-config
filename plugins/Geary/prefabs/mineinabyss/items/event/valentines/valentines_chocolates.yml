@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#E83A3A><b>Valentine Chocolate
-  itemModel: mineinabyss:valentines_chocolates
+  itemModel: mineinabyss:event_items/valentines_chocolates
   lore:
   - <#DB8888>Life is full of joy,
   - <#DB8888>In the Abyss, there lies hope
@@ -12,4 +12,4 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
-  model: mineinabyss:item/event/valentines_chocolates
+  model: mineinabyss:event_items/valentines_chocolates

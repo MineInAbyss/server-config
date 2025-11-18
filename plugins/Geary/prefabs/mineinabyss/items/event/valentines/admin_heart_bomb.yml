@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#FFC0CB><b>Love Potion
-  itemModel: mineinabyss:love_potion
+  itemModel: mineinabyss:event_items/love_potion
 observe:
   itemRightClick:
   - become: parent
@@ -12,6 +12,7 @@ observe:
   - mythicSkills:
     - heartthrow
 resourcepack:
+  model: mineinabyss:event_items/love_potion
   textures:
     layers:
-    - mineinabyss:item/event/love_potion
+    - mineinabyss:event_items/love_potion

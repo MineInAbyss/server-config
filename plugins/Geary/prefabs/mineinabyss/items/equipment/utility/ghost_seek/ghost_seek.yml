@@ -1,7 +1,7 @@
 set.item:
   itemName: <gold>Makeshift Ghost Seek
   type: minecraft:paper
-  itemModel: mineinabyss:ghost_seek_on
+  itemModel: mineinabyss:equipment/utility/ghost_seek_on
   lore:
     - 'Grade III relic'
     - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
@@ -49,4 +49,4 @@ passive:
             - mythicSkills: [ ghost_seek_effect_4 ]
 
 resourcepack:
-  model: mineinabyss:item/relics/ghost_seek_on
+  model: mineinabyss:equipment/utility/ghost_seek_on

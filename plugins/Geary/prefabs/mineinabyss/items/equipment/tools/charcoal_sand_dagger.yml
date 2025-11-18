@@ -1,7 +1,7 @@
 set.item:
   itemName: Charcoal Sand Dagger
   type: minecraft:diamond_sword
-  itemModel: mineinabyss:charcoal_sand_dagger
+  itemModel: mineinabyss:equipment/tools/charcoal_sand_dagger
   maxDamage: 3000
 set.recipes:
   discoverRecipes: true
@@ -15,7 +15,8 @@ set.recipes:
       |M|
       |S|
 resourcepack:
+  models: mineinabyss:equipment/tools/charcoal_sand_dagger
   textures:
     layers:
-    - mineinabyss:item/tools/charcoal_sand_dagger
+    - mineinabyss:equipment/tools/charcoal_sand_dagger
   parentModel: item/handheld

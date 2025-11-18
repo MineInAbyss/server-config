@@ -1,11 +1,12 @@
 set.item:
   type: minecraft:paper
   itemName: Music Disc
-  itemModel: mineinabyss:uncertain_surroundings
+  itemModel: mineinabyss:misc/music_disc_uncertain_surroundings
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_uncertain_surroundings
 resourcepack:
+  model: mineinabyss:misc/music_disc/uncertain_surroundings
   textures:
     layers:
-    - mineinabyss:item/other/music_discs/uncertain_surroundings
+    - mineinabyss:misc/music_disc_light_blue

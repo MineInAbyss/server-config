@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#0047AB>Flamethrower
-  itemModel: mineinabyss:flamethrower
+  itemModel: mineinabyss:relics/flamethrower
   maxStackSize: 1
   lore:
   - 'Grade II Relic'
@@ -10,7 +10,7 @@ set.item:
   - <font:small_text><gray><shadow:#00000000>Active ability. Projects flames on right click.
   - <font:small_text><gray><shadow:#00000000>Requires Flamethrower Fuel within the inventory to work.
 resourcepack:
-  model: mineinabyss:item/relics/flamethrower
+  model: mineinabyss:relics/flamethrower
 set.recipes:
  result:
    prefab: mineinabyss:flamethrower

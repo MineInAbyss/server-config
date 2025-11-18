@@ -1,7 +1,7 @@
 set.item:
   itemName: <dark_aqua>Charcoal Sand Ingot
   type: minecraft:paper
-  itemModel: mineinabyss:charcoal_sand_ingot
+  itemModel: mineinabyss:materials/charcoal_sand_ingot
 set.recipes:
   discoverRecipes: true
   group: charcoal_sand_ingot
@@ -23,6 +23,7 @@ set.recipes:
     experience: 2
     cookingTime: 50
 resourcepack:
+  model: mineinabyss:materials/charcoal_sand_ingot
   textures:
     layers:
-    - mineinabyss:item/materials/charcoal_sand_ingot
+    - mineinabyss:materials/charcoal_sand_ingot
