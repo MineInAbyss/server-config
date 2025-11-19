@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#7a4e48>Foliage 1
+  itemModel: mineinabyss:blocks/wire/foliage1
   customModelData: { floats: [ 3001 ] }
 set.block:
   blockType: WIRE
@@ -20,7 +21,7 @@ blocky:placableOn:
     - STONE
 
 blocky:pack:
-  model: mineinabyss:block/foliage1
+  model: mineinabyss:blocks/wire/foliage1
 blocky:tallWire: {}
 blocky:drops:
   drops:

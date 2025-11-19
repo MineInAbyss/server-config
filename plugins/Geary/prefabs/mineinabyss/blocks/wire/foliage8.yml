@@ -1,6 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#7a4e48>Foliage 8
+  itemModel: mineinabyss:blocks/wire/foliage8
   customModelData: { floats: [ 3008 ] }
 set.block:
   blockType: WIRE
@@ -13,7 +14,7 @@ resourcepack:
       - mineinabyss:blocks/wire/foliage8
 
 blocky:pack:
-  model: mineinabyss:block/foliage8
+  model: mineinabyss:blocks/wire/foliage8
 blocky:drops:
   drops:
     - item: mineinabyss:foliage8
