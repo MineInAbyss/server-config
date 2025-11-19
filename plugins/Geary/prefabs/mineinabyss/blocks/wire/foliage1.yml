@@ -8,6 +8,9 @@ set.block:
 
 resourcepack:
   model: mineinabyss:blocks/wire/foliage1
+  textures:
+    layers:
+      - mineinabyss:blocks/wire/foliage1
 
 blocky:placableOn:
   floor: true

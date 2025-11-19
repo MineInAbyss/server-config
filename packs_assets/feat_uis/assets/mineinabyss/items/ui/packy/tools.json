@@ -8,21 +8,21 @@
         "threshold": 0,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/tools_2d"
+          "model": "mineinabyss:ui/packy/tools_2d"
         }
       },
       {
         "threshold": 1,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/tools_3d"
+          "model": "mineinabyss:ui/packy/tools_3d"
         }
       },
       {
         "threshold": 2,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/tools_vanilla"
+          "model": "mineinabyss:ui/packy/tools_vanilla"
         }
       }
     ]

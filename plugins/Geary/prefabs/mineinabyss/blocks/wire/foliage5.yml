@@ -8,6 +8,9 @@ set.block:
 
 resourcepack:
   model: mineinabyss:blocks/wire/foliage5
+  textures:
+    layers:
+      - mineinabyss:blocks/wire/foliage5
 
 blocky:pack:
   model: mineinabyss:block/foliage5

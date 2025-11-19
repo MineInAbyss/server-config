@@ -19,10 +19,10 @@ mia_playerprofile_background:
   height: 72
   ascent: -2
 cosmetic_shade:
-  texture: mineinabyss:gui/plugins/hmccosmetics/shade.png
+  texture: mineinabyss:ui/plugins/hmccosmetics/shade.png
   font: mineinabyss:hmccosmetics
   height: 16
 cosmetic_clear:
-  texture: mineinabyss:gui/plugins/hmccosmetics/clear_image.png
+  texture: mineinabyss:ui/plugins/hmccosmetics/clear_image.png
   font: mineinabyss:hmccosmetics
   height: 16

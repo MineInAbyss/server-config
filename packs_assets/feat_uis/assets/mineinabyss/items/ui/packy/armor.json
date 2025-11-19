@@ -8,21 +8,21 @@
         "threshold": 0,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/armor_new"
+          "model": "mineinabyss:ui/packy/armor_new"
         }
       },
       {
         "threshold": 1,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/armor_old"
+          "model": "mineinabyss:ui/packy/armor_old"
         }
       },
       {
         "threshold": 2,
         "model": {
           "type": "model",
-          "model": "mineinabyss:gui/packy/armor_vanilla"
+          "model": "mineinabyss:ui/packy/armor_vanilla"
         }
       }
     ]
