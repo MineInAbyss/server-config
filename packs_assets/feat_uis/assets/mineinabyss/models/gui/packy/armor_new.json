@@ -1,13 +1,15 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "mineinabyss:gui/packy/armor_new"
-  },
-  "gui_light": "front",
-  "display": {
-    "gui": {
-      "translation": [9, -25, 0],
-      "scale": [2, 4, 1]
-    }
-  }
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "mineinabyss:gui/packy/armor_new"
+	},
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"translation": [9, -25, 0],
+			"scale": [4, 4, 4]
+		}
+	}
 }
