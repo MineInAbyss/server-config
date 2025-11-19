@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: Cooked Cut Meat
-  itemModel: mineinabyss:recipes/cut_meat_cooked
+  itemModel: mineinabyss:dishes/cut_meat_cooked
   food:
     saturation: 12.8
     nutrition: 6

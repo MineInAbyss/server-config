@@ -1,14 +1,14 @@
 set.item:
   type: minecraft:paper
   itemName: Raw Cut Meat
-  itemModel: mineinabyss:recipes/cut_meat_raw
+  itemModel: mineinabyss:dishes/cut_meat_raw
   food:
     saturation: 1.8
     nutrition: 3
   consumable:
     animation: EAT
 resourcepack:
-  model: mineinabyss:recipes/cut_meat_raw
+  model: mineinabyss:dishes/cut_meat_raw
   textures:
     layers:
-    - mineinabyss:recipes/cut_meat_raw
+    - mineinabyss:dishes/cut_meat_raw
