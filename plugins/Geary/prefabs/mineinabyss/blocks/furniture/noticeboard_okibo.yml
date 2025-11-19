@@ -1,9 +1,9 @@
 set.item:
   type: minecraft:paper
   itemName: <#33404d>Noticeboard Okibo
-  itemModel: mineinabyss:noticeboard_okibo
+  itemModel: mineinabyss:blocks/furniture/noticeboard_okibo
 resourcepack:
-  model: mineinabyss:furniture/noticeboard_okibo
+  model: mineinabyss:blocks/furniture/noticeboard_okibo
 blocky:sound:
   placeSound: block.wood.place
   breakSound: block.wood.break

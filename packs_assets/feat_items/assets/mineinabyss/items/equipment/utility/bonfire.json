@@ -12,11 +12,11 @@
           "index": 1,
           "on_true": {
             "type": "model",
-            "model": "mineinabyss:block/bonfire/bonfire_self_lit"
+            "model": "mineinabyss:equipment/utility/bonfire_self_lit"
           },
           "on_false": {
             "type": "model",
-            "model": "mineinabyss:block/bonfire/bonfire_lit"
+            "model": "mineinabyss:equipment/utility/bonfire_lit"
           }
         },
         {
@@ -28,45 +28,45 @@
               "threshold": 1.0,
               "model": {
                 "type": "model",
-                "model": "mineinabyss:block/bonfire/bonfire_1"
+                "model": "mineinabyss:equipment/utility/bonfire_1"
               }
             },
             {
               "threshold": 2.0,
               "model": {
                 "type": "model",
-                "model": "mineinabyss:block/bonfire/bonfire_2"
+                "model": "mineinabyss:equipment/utility/bonfire_2"
               }
             },
             {
               "threshold": 3.0,
               "model": {
                 "type": "model",
-                "model": "mineinabyss:block/bonfire/bonfire_3"
+                "model": "mineinabyss:equipment/utility/bonfire_3"
               }
             },
             {
               "threshold": 4.0,
               "model": {
                 "type": "model",
-                "model": "mineinabyss:block/bonfire/bonfire_4"
+                "model": "mineinabyss:equipment/utility/bonfire_4"
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "mineinabyss:block/bonfire/bonfire_1"
+            "model": "mineinabyss:equipment/utility/bonfire_1"
           }
         }
       ]
     },
     "on_false": {
       "type": "model",
-      "model": "mineinabyss:block/bonfire/bonfire"
+      "model": "mineinabyss:equipment/utility/bonfire"
     },
     "fallback": {
       "type": "model",
-      "model": "mineinabyss:block/bonfire/bonfire"
+      "model": "mineinabyss:equipment/utility/bonfire"
     }
   }
 }

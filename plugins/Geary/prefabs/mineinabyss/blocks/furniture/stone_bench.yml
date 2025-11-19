@@ -3,9 +3,9 @@ inherit:
 set.item:
   type: minecraft:paper
   itemName: <#33404d>Stone Bench
-  itemModel: mineinabyss:stone_bench
+  itemModel: mineinabyss:blocks/furniture/stone_bench
 resourcepack:
-  model: mineinabyss:furniture/stone_bench
+  model: mineinabyss:blocks/furniture/stone_bench
 blocky:seats:
 - y: 0.5
 blocky:sound:

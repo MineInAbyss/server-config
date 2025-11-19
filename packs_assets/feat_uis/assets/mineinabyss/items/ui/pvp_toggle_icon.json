@@ -5,11 +5,11 @@
     "index": 0,
     "on_true": {
       "type": "model",
-      "model":"mineinabyss:ui/pvp/pvp_toggle_enabled"
+      "model":"mineinabyss:ui/mia_pvp/pvp_toggle_enabled"
     },
     "on_false": {
       "type": "model",
-      "model":"mineinabyss:ui/pvp/pvp_toggle_disabled"
+      "model":"mineinabyss:ui/mia_pvp/pvp_toggle_disabled"
     }
   }
 }

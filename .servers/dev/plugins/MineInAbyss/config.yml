@@ -69,7 +69,7 @@ playerProfile:
     - "seeker_camp"
     - "funeral_plaque"
 pvp:
-  enabled: false
+  enabled: true
 relics:
   enabled: true
 tools:
