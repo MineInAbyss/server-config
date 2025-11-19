@@ -8,7 +8,7 @@
         "threshold": 1,
         "model": {
           "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/flat",
+          "base": "mineinabyss:gui/playerheads/flat",
           "model": {
             "type": "minecraft:player_head"
           }
@@ -18,7 +18,7 @@
         "threshold": 2,
         "model": {
           "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/large_flat",
+          "base": "mineinabyss:gui/playerheads/large_flat",
           "model": {
             "type": "minecraft:player_head"
           }
@@ -28,7 +28,7 @@
         "threshold": 3,
         "model": {
           "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/centered_flat",
+          "base": "mineinabyss:gui/playerheads/centered_flat",
           "model": {
             "type": "minecraft:player_head"
           }
@@ -38,7 +38,7 @@
         "threshold": 4,
         "model": {
           "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/centered_large_flat",
+          "base": "mineinabyss:gui/playerheads/centered_large_flat",
           "model": {
             "type": "minecraft:player_head"
           }
