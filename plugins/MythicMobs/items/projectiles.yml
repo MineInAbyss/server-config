@@ -1,31 +1,27 @@
-va1:
+crescent_blade_swing_1:
   Id: clay_ball
-  Model: 1
-  Display: '&5Darkness (DEV)'
-va2:
+  Display: "&6"
+  Model: 8
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_2:
   Id: clay_ball
-  Model: 2
-  Display: '&5Darkness (DEV)'
-va3:
+  Display: "&6"
+  Model: 9
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_3:
   Id: clay_ball
-  Model: 3
-  Display: '&5Darkness (DEV)'
-va4:
+  Display: "&6"
+  Model: 10
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_4:
   Id: clay_ball
-  Model: 4
-  Display: '&5Darkness (DEV)'
-va5:
-  Id: clay_ball
-  Model: 5
-  Display: '&5Darkness (DEV)'
-va6:
-  Id: clay_ball
-  Model: 6
-  Display: '&5Darkness (DEV)'
-va7:
-  Id: clay_ball
-  Model: 7
-  Display: '&5Darkness (DEV)'
+  Display: "&6"
+  Model: 11
+  Hide:
+  - ATTRIBUTES
 knife:
   Id: clay_ball
   Model: 13
