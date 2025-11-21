@@ -15,6 +15,10 @@ feat_items_private:
   default: true
   required: true
   filePath: Packy/resourcepacks/feat_items_private
+feat_mobs:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_mobs
 feat_uis:
   default: true
   required: true

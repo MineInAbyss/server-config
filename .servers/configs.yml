@@ -14,6 +14,10 @@ global:
 
 feat/mobs:
   copyPaths:
+    # Packy
+    - source: packs_assets/feat_mobs
+      dest: plugins/Packy/resourcepacks/feat_mobs
+    # Geary
     - source: plugins/Geary/prefabs/mineinabyss/mobs
       dest: plugins/Geary/prefabs/mineinabyss/mobs
     - source: plugins/Geary/spawns
@@ -22,6 +26,7 @@ feat/mobs:
       dest: plugins/Geary/
     - source: plugins/Geary/spread_config.yml
       dest: plugins/Geary/
+    # MM
     - source: plugins/MythicMobs
       dest: plugins/MythicMobs
     - source: .servers/disable_mythic_examples

@@ -19,8 +19,8 @@ disableInCombat: false
 defaultName: "<blue>Shulker Pack"
 shiftClickToOpen: false
 shulkerVolume: 1              #0.1 is quiet, 1 is loud
-shulkerOpenSound: "mineinabyss:equipment.backpack.open"
-shulkerCloseSound: "mineinabyss:equipment.backpack.close"
+shulkerOpenSound: "mineinabyss:item.backpack.open"
+shulkerCloseSound: "mineinabyss:item.backpack.close"
 #shift click to open applies to both ingame and in inventory
 
 open-previous-inventory: false

@@ -1,22 +1,57 @@
 {
-    "whistle.red_whistle": {
+    "item.backpack.close": {
         "sounds": [
-            "mineinabyss:gear/whistles/red_whistle"
+            "mineinabyss:equipment/backpack/close"
         ]
     },
-    "whistle.blue_whistle": {
+    "item.backpack.open": {
         "sounds": [
-            "mineinabyss:gear/whistles/blue_whistle"
+            "mineinabyss:equipment/backpack/open"
         ]
     },
-    "whistle.moon_whistle": {
+    "item.ghost_seek.ping1": {
         "sounds": [
-            "mineinabyss:gear/whistles/moon_whistle"
+            "mineinabyss:equipment/ghost_seek/ping1"
         ]
     },
-    "whistle.black_whistle": {
+    "item.ghost_seek.ping2": {
         "sounds": [
-            "mineinabyss:gear/whistles/black_whistle"
+            "mineinabyss:equipment/ghost_seek/ping2"
+        ]
+    },
+    "item.ghost_seek.ping3": {
+        "sounds": [
+            "mineinabyss:equipment/ghost_seek/ping3"
+        ]
+    },
+    "item.ghost_seek.ping4": {
+        "sounds": [
+            "mineinabyss:equipment/ghost_seek/ping4"
+        ]
+    },
+    "item.ghost_seek.ping5": {
+        "sounds": [
+            "mineinabyss:equipment/ghost_seek/ping5"
+        ]
+    },
+    "item.whistle.red": {
+        "sounds": [
+            "mineinabyss:equipment/whistle/red"
+        ]
+    },
+    "item.whistle.blue": {
+        "sounds": [
+            "mineinabyss:equipment/whistle/blue"
+        ]
+    },
+    "item.whistle.moon": {
+        "sounds": [
+            "mineinabyss:equipment/whistle/moon"
+        ]
+    },
+    "item.whistle.black": {
+        "sounds": [
+            "mineinabyss:equipment/whistle/black"
         ]
     }
 }
