@@ -4,9 +4,9 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"fire": "minecraft:block/campfire_fire",
-		"particle": "mineinabyss:equipment/utility/bonfire_log",
 		"log": "mineinabyss:equipment/utility/bonfire_log",
-		"sticks": "mineinabyss:equipment/utility/bonfire_sticks"
+		"sticks": "mineinabyss:equipment/utility/bonfire_sticks",
+		"particle": "mineinabyss:equipment/utility/bonfire_log"
 	},
 	"elements": [
 		{

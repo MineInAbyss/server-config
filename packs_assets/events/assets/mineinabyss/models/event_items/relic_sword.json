@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "mineinabyss:event_items/relic_sword"
+		"1": "mineinabyss:event_items/relic_sword",
+		"particle": "mineinabyss:event_items/relic_sword"
 	},
 	"elements": [
 		{

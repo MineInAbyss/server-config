@@ -3,7 +3,8 @@
 	"ambientocclusion": false,
 	"texture_size": [48, 48],
 	"textures": {
-		"0": "mineinabyss:event_items/heart_bow"
+		"0": "mineinabyss:event_items/heart_bow",
+		"particle": "mineinabyss:event_items/heart_bow"
 	},
 	"elements": [
 		{

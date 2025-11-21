@@ -1,7 +1,8 @@
 {
   "parent": "mineinabyss:cosmetics/backpacks/camera",
   "textures": {
-    "1": "mineinabyss:cosmetics/backpacks/camera_gold"
+    "1": "mineinabyss:cosmetics/backpacks/camera_gold",
+    "particle": "mineinabyss:cosmetics/backpacks/camera_gold"
   },
   "elements": [
     {
