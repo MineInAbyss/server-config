@@ -15,13 +15,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_mining_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_mining_backpack
       lore:
         - "<red>Locked"
@@ -47,13 +47,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:cauldron_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:cauldron_backpack
       lore:
         - "<red>Locked"
@@ -79,13 +79,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_explorer_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_explorer_backpack
       lore:
         - "<red>Locked"
@@ -111,13 +111,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_fishing_rod
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:fantasy_fishing_rod
       lore:
         - "<red>Locked"
@@ -145,13 +145,13 @@ items:
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:adventurer_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:adventurer_backpack
       lore:
         - "<red>Locked"
@@ -179,13 +179,13 @@ items:
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:miner_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:miner_backpack
       lore:
         - "<red>Locked"
@@ -213,7 +213,7 @@ items:
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:explorer_backpack
       lore:
         - "<red>Locked"
@@ -242,13 +242,13 @@ items:
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camper_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camper_backpack
       lore:
         - "<red>Locked"

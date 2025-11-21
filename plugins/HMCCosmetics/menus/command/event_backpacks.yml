@@ -16,7 +16,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:mallet_chisel_wooden
       lore:
         - "<red>Locked"
@@ -41,7 +41,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:mallet_chisel_bronze
       lore:
         - "<red>Locked"
@@ -66,7 +66,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:mallet_chisel_silver
       lore:
         - "<red>Locked"
@@ -91,7 +91,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:mallet_chisel_gold
       lore:
         - "<red>Locked"
@@ -117,7 +117,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camera_normal
       lore:
         - "<red>Locked"
@@ -142,7 +142,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camera_bronze
       lore:
         - "<red>Locked"
@@ -167,7 +167,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camera_silver
       lore:
         - "<red>Locked"
@@ -192,7 +192,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:camera_gold
       lore:
         - "<red>Locked"

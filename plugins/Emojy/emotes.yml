@@ -365,48 +365,48 @@ emotes:
   # gui: mineinabyss player profile feature
   - id: player_profile_armor_visible
     font: mineinabyss:mia_playerprofile
-    texture: mineinabyss:ui/plugins/mia_playerprofile/player_profile_armor_visible.png
+    texture: mineinabyss:ui/mia_playerprofile/player_profile_armor_visible.png
     height: 224
     ascent: 15
   - id: player_profile_patreon_armor_visible
     font: mineinabyss:mia_playerprofile
-    texture: mineinabyss:ui/plugins/mia_playerprofile/player_profile_patreon_armor_visible.png
+    texture: mineinabyss:ui/mia_playerprofile/player_profile_patreon_armor_visible.png
     height: 224
     ascent: 15
   - id: player_profile_armor_hidden
     font: mineinabyss:mia_playerprofile
-    texture: mineinabyss:ui/plugins/mia_playerprofile/player_profile_armor_hidden.png
+    texture: mineinabyss:ui/mia_playerprofile/player_profile_armor_hidden.png
     height: 224
     ascent: 15
   - id: player_profile_patreon_armor_hidden
     font: mineinabyss:mia_playerprofile
-    texture: mineinabyss:ui/plugins/mia_playerprofile/player_profile_patreon_armor_hidden.png
+    texture: mineinabyss:ui/mia_playerprofile/player_profile_patreon_armor_hidden.png
     height: 224
     ascent: 15
   - id: orth_background
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/orth_background.png
+    texture: mineinabyss:ui/mia_playerprofile/orth_background.png
   - id: funeral_plaque
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/funeral_plaque.png
+    texture: mineinabyss:ui/mia_playerprofile/funeral_plaque.png
   - id: ancient_ship
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/ancient_ship.png
+    texture: mineinabyss:ui/mia_playerprofile/ancient_ship.png
   - id: nanachi_hut
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/nanachi_hut.png
+    texture: mineinabyss:ui/mia_playerprofile/nanachi_hut.png
   - id: golden_bridge
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/golden_bridge.png
+    texture: mineinabyss:ui/mia_playerprofile/golden_bridge.png
   - id: layer2_windmills
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/layer2_windmills.png
+    texture: mineinabyss:ui/mia_playerprofile/layer2_windmills.png
   - id: layer6
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/layer6.png
+    texture: mineinabyss:ui/mia_playerprofile/layer6.png
   - id: seeker_camp
     template: mia_playerprofile_background
-    texture: mineinabyss:ui/plugins/mia_playerprofile/seeker_camp.png
+    texture: mineinabyss:ui/mia_playerprofile/seeker_camp.png
   - id: player_profile_rank_admin
     template: mia_playerprofile
     texture: mineinabyss:ui/prefixes/role/admin.png
@@ -519,156 +519,156 @@ emotes:
   # gui: mineinabyss pvp feature
   - id: pvp_menu
     font: mineinabyss:mia_pvp
-    texture: mineinabyss:ui/plugins/mia_pvp/pvp_menu.png
+    texture: mineinabyss:ui/mia_pvp/pvp_menu.png
     height: 196
     ascent: 23
   - id: pvp_menu_toggle
     font: mineinabyss:mia_pvp
-    texture: mineinabyss:ui/plugins/mia_pvp/pvp_menu_toggle.png
+    texture: mineinabyss:ui/mia_pvp/pvp_menu_toggle.png
     height: 196
     ascent: 23
   # gui: mineinabyss guild feature
   - id: guild_main_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_main_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_main_menu.png
   - id: guild_main_menu_create
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_main_menu_create.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_main_menu_create.png
     height: 36
     ascent: -22
   - id: guild_main_menu_info
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_main_menu_info.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_main_menu_info.png
     height: 36
     ascent: -22
   - id: guild_disband_or_leave_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_disband_or_leave_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_disband_or_leave_menu.png
   - id: guild_info_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_info_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_info_menu.png
   - id: guild_level_up_button
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_level_up_button.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_level_up_button.png
     height: 17
     ascent: -5
   - id: guild_disband_button
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_disband_button.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_disband_button.png
     height: 17
     ascent: -94
   - id: guild_leave_button
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_leave_button.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_leave_button.png
     height: 17
     ascent: -94
   - id: guild_inbox_list_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_inbox_list_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_inbox_list_menu.png
   - id: guild_inbox_handle_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_inbox_handle_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_inbox_handle_menu.png
   - id: guild_member_action_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_action_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_action_menu.png
   - id: guild_member_management_menu_1
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_menu_1.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_menu_1.png
   - id: guild_member_management_menu_2
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_menu_2.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_menu_2.png
   - id: guild_member_management_menu_3
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_menu_3.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_menu_3.png
   - id: guild_member_management_menu_4
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_menu_4.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_menu_4.png
   - id: guild_member_management_jointype_any
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_jointype_any.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_jointype_any.png
     height: 17
     ascent: -5
   - id: guild_member_management_jointype_invite
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_jointype_invite.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_jointype_invite.png
     height: 17
     ascent: -5
   - id: guild_member_management_jointype_request
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_member_management_jointype_request.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_member_management_jointype_request.png
     height: 17
     ascent: -5
   - id: guild_inbox_read
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_inbox_read.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_inbox_read.png
     height: 17
     ascent: -5
   - id: guild_inbox_unread
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_inbox_unread.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_inbox_unread.png
     height: 17
     ascent: -5
   - id: guild_search_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_search_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_search_menu.png
     height: 256
     ascent: -32
   - id: guild_name_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_name_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_name_menu.png
     height: 256
     ascent: -32
   - id: guild_list_menu
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_list_menu.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_list_menu.png
   - id: guild_lookup_members1
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_lookup_members1.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_lookup_members1.png
   - id: guild_lookup_members2
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_lookup_members2.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_lookup_members2.png
   - id: guild_lookup_members3
     template: mia_guilds
-    texture: mineinabyss:ui/plugins/mia_guild/menus/guild_lookup_members3.png
+    texture: mineinabyss:ui/mia_guild/menus/guild_lookup_members3.png
 # gui: hmccosmetics
   - id: cosmetic_orth_coin
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/mia_orthbanking/orthcoin.png
+    texture: mineinabyss:ui/mia_orthbanking/orthcoin.png
     height: 10
     ascent: 10
   - id: cosmetic_mitty_token
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/mia_orthbanking/mittytoken.png
+    texture: mineinabyss:ui/mia_orthbanking/mittytoken.png
     height: 10
     ascent: 10
   - id: cosmetic_dye_menu
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/menus/cosmetic_dye_menu.png
+    texture: mineinabyss:ui/hmccosmetics/menus/cosmetic_dye_menu.png
     height: 256
     ascent: 14
   - id: cosmetic_main_menu
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/menus/cosmetic_main_menu.png
+    texture: mineinabyss:ui/hmccosmetics/menus/cosmetic_main_menu.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_1
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/menus/cosmetic_grid_menu_1.png
+    texture: mineinabyss:ui/hmccosmetics/menus/cosmetic_grid_menu_1.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_2
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/menus/cosmetic_grid_menu_2.png
+    texture: mineinabyss:ui/hmccosmetics/menus/cosmetic_grid_menu_2.png
     height: 256
     ascent: 14
   - id: cosmetic_grid_menu_3
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/menus/cosmetic_grid_menu_3.png
+    texture: mineinabyss:ui/hmccosmetics/menus/cosmetic_grid_menu_3.png
     height: 256
     ascent: 14
   - id: wardrobe_transition
     font: mineinabyss:hmccosmetics
-    texture: mineinabyss:ui/plugins/hmccosmetics/wardrobe_transition.png
+    texture: mineinabyss:ui/hmccosmetics/wardrobe_transition.png
     height: 256
     ascent: 50
   - id: shade_row_1
@@ -710,44 +710,44 @@ emotes:
 # gui: mineinabyss orth banking feature
   - id: bank_orthcoin
     font: mineinabyss:mia_orthbanking
-    texture: mineinabyss:ui/plugins/mia_orthbanking/orthcoin.png
+    texture: mineinabyss:ui/mia_orthbanking/orthcoin.png
     height: 10
     ascent: -12
   - id: bank_mittytoken
     font: mineinabyss:mia_orthbanking
-    texture: mineinabyss:ui/plugins/mia_orthbanking/mittytoken.png
+    texture: mineinabyss:ui/mia_orthbanking/mittytoken.png
     height: 12
     ascent: -11
 # gui: blocky menu
   - id: blocky_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/plugins/blocky/blocky_menu.png
+    texture: mineinabyss:ui/blocky/blocky_menu.png
     height: 256
     ascent: 14
   - id: blocky_grid_menu
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/plugins/blocky/blocky_grid_menu.png
+    texture: mineinabyss:ui/blocky/blocky_grid_menu.png
     height: 256
     ascent: 14
   - id: blocky_scrolling_up
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/plugins/blocky/blocky_scrolling_up.png
+    texture: mineinabyss:ui/blocky/blocky_scrolling_up.png
     height: 17
     ascent: -96
   - id: blocky_scrolling_down
     font: mineinabyss:blocky
-    texture: mineinabyss:ui/plugins/blocky/blocky_scrolling_down.png
+    texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
     height: 17
     ascent: -96
 # gui: mineinabyss okibotravel feature
   - id: okibo_icon
     font: mineinabyss:mia_okibotravel
-    texture: mineinabyss:ui/plugins/mia_okibotravel/okibo_icon.png
+    texture: mineinabyss:ui/mia_okibotravel/okibo_icon.png
     height: 7
     ascent: 7
   - id: orthmap
     font: mineinabyss:mia_okibotravel
-    texture: mineinabyss:ui/plugins/mia_okibotravel/okibo_map.png
+    texture: mineinabyss:ui/mia_okibotravel/okibo_map.png
     height: 30
     ascent: 30
     bitmapWidth: 2

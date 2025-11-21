@@ -15,7 +15,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:backpack
       lore:
         - "<red>Locked"
@@ -43,13 +43,13 @@ items:
         - "<red>[Left Click - <i>Unequip</i>]"
         - "<rainbow>[Right Click - <i>Dye</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:satchel
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:satchel
       lore:
         - "<red>Locked"
@@ -76,7 +76,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:bondrewd_backpack
       lore:
         - "<red>Locked"
@@ -102,13 +102,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:neritantan_backpack
       lore:
         - "<red>Locked"
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:neritantan_backpack
       lore:
         - "<red>Locked"

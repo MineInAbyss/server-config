@@ -16,13 +16,13 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-equipped-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:tama_hat
       lore:
         - ""
         - "<yellow>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:tama_hat
       lore:
         - "<red>Locked"
@@ -43,7 +43,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:amongus_cosmetic
       lore:
         - "<red>Locked"
@@ -64,7 +64,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:clown_mask
       lore:
         - "<red>Locked"
@@ -85,7 +85,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:pumpkin_hat_1
       lore:
         - "<red>Locked"
@@ -106,7 +106,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:witch_hat_1
       lore:
         - "<red>Locked"
@@ -127,7 +127,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:skull_gasmask
       lore:
         - "<red>Locked"
@@ -148,7 +148,7 @@ items:
         - ""
         - "<red>[Left Click - <i>Unequip</i>]"
     locked-item:
-      model-id: cosmetics:question_mark_button
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
       material: hmccosmetics:pumpkin_face
       lore:
         - "<red>Locked"

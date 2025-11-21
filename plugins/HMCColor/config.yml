@@ -18,7 +18,7 @@ buttons:
       - attribute_modifiers
     dyedColor: "#FFFFFF"
     attributeModifiers: []
-    itemModel: mineinabyss:hmccosmetics/paintbrush
+    itemModel: mineinabyss:ui/hmccolor/paintbrush
   inputSlot: 10
   outputSlot: 16
   baseColorGrid:
@@ -33,9 +33,15 @@ buttons:
       backwardSlot: 18
       forwardSlot: 26
       backwardsItem:
-        prefab: cosmetics:scrollable_prev
+        type: minecraft:leather_horse_armor
+        itemModel: mineinabyss:ui/hmccolor/scrollable_prev
+        tooltipDisplay:
+          hideTooltip: true
       forwardsItem:
-        prefab: cosmetics:scrollable_next
+        type: minecraft:leather_horse_armor
+        itemModel: mineinabyss:ui/hmccolor/scrollable_next
+        tooltipDisplay:
+          hideTooltip: true
     # baseColorItem can be specified, null defaults to Buttons.item
     baseColorItem: null
   subColorGrid:
@@ -51,13 +57,19 @@ buttons:
       backwardsSlot: 45
       forwardsSlot: 53
       backwardsItem:
-        prefab: cosmetics:scrollable_prev
+        type: minecraft:leather_horse_armor
+        itemModel: mineinabyss:ui/hmccolor/scrollable_prev
+        tooltipDisplay:
+          hideTooltip: true
       forwardsItem:
-        prefab: cosmetics:scrollable_next
+        type: minecraft:leather_horse_armor
+        itemModel: mineinabyss:ui/hmccolor/scrollable_next
+        tooltipDisplay:
+          hideTooltip: true
     # subColorItem can be specified, null defaults to Buttons.item
     subColorItem:
       type: minecraft:leather_horse_armor
-      itemModel: mineinabyss:hmccosmetics/paintbrush
+      itemModel: mineinabyss:ui/hmccolor/paintbrush
       tooltipDisplay:
         hideTooltip: true
   effectButton: 31
