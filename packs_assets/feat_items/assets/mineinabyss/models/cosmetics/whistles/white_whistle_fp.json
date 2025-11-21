@@ -1,1 +1,7 @@
-{"parent":"mineinabyss:equipment/cosmetics/whistles/base_whistle_fp","textures":{"particle":"mineinabyss:equipment/whistles/white_whistle","0":"mineinabyss:equipment/whistles/white_whistle"}}
+{
+  "parent": "mineinabyss:cosmetics/whistles/base_whistle_fp",
+  "textures": {
+    "0": "mineinabyss:equipment/whistles/white_whistle",
+    "particle": "mineinabyss:equipment/whistles/white_whistle"
+  }
+}

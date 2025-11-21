@@ -3,17 +3,17 @@
     "type": "range_dispatch",
     "property": "custom_model_data",
     "entries": [
-      { "threshold": 8, "model": {"type": "model", "model": "mineinabyss:item/projectiles/crescent_slash_1" } },
-      { "threshold": 9, "model": {"type": "model", "model": "mineinabyss:item/projectiles/crescent_slash_2" } },
-      { "threshold": 10, "model": {"type": "model", "model": "mineinabyss:item/projectiles/crescent_slash_3" } },
-      { "threshold": 11, "model": {"type": "model", "model": "mineinabyss:item/projectiles/crescent_slash_4" } },
-      { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:item/event/amongus_cookie" } },
-      { "threshold": 13, "model": {"type": "model", "model": "mineinabyss:item/projectiles/knife" } },
-      { "threshold": 14, "model": {"type": "model", "model": "mineinabyss:item/projectiles/aoesphere" } },
-      { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:item/projectiles/damagesphere" } },
-      { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:item/projectiles/luresphere" } },
-      { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:item/projectiles/spreadsphere" } },
-      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:item/projectiles/sunsphere" } }
+      { "threshold": 8, "model": {"type": "model", "model": "mineinabyss:projectiles/crescent_slash_1" } },
+      { "threshold": 9, "model": {"type": "model", "model": "mineinabyss:projectiles/crescent_slash_2" } },
+      { "threshold": 10, "model": {"type": "model", "model": "mineinabyss:projectiles/crescent_slash_3" } },
+      { "threshold": 11, "model": {"type": "model", "model": "mineinabyss:projectiles/crescent_slash_4" } },
+      { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:event_items/amongus_cookie" } },
+      { "threshold": 13, "model": {"type": "model", "model": "mineinabyss:projectiles/knife" } },
+      { "threshold": 14, "model": {"type": "model", "model": "mineinabyss:projectiles/l1_sunsphere" } },
+      { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:projectiles/l2_sunsphere" } },
+      { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:projectiles/l3_sunsphere" } },
+      { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:projectiles/l4_sunsphere" } },
+      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:projectiles/l5_sunsphere" } }
     ],
     "fallback": {
       "type": "model",
