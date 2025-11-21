@@ -63,7 +63,6 @@ feat/mobs:
       dest: plugins/Geary/
     - source: plugins/Geary/spread_config.yml
       dest: plugins/Geary/
-
   files:
     plugins/MythicMobs:
       deleteUntracked: true
@@ -138,12 +137,15 @@ feat/hiddenore:
     - source: plugins/HiddenOre
       dest: plugins/HiddenOre
 
-feat/ost:
+feat/music:
   copyPaths:
     - source: "{{ privateSettingsDest }}/packs_assets/feat_music"
       dest: plugins/Packy/resourcepacks/feat_music
     - source: packs_data/music_discs
       dest: worlds/world/datapacks/music_discs
+  files:
+    worlds/world/data_packs/music_discs:
+      deleteUntracked: true
 
 feat/deeperworld:
   copyPaths:
@@ -200,7 +202,7 @@ survival:
     - feat/mobs
     - feat/hud
     - feat/hiddenore
-    - feat/ost
+    - feat/music
     - feat/events
 
 build:
@@ -246,7 +248,7 @@ dev:
     - feat/delvers
     - feat/bosses
     - feat/hud
-    - feat/ost
+    - feat/music
     - feat/events
 
 # Used for local development, where as few plugins as possible are auto downloaded

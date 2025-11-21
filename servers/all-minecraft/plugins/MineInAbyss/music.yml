@@ -13,31 +13,35 @@ maxWaitTimeOnLogin: 4m
 # pitch: The pitch of the song (default is 1)
 # regions: Layers & sections this song can play in (can play anywhere if empty)
 songs:
-  - key: mineinabyss:music.custom.orth.orth_waltz
+  - key: mineinabyss:music.orth.orth_waltz
     duration: 1m 41s
     regions:
       - orth
-  - key: mineinabyss:music.custom.orth.deep_in_abyss
-    duration: 1m 30s
-    regions:
-      - orth
-  - key: mineinabyss:music.custom.layer2.inverted_forest
+  # - key: mineinabyss:music.orth.deep_in_abyss
+  #   duration: 1m 30s
+  #   regions:
+  #     - orth
+  - key: mineinabyss:music.droplets_lament
     duration: 3m 54s
     regions:
       - layertwo
-  - key: mineinabyss:music.custom.layer3.the_great_fault
+  - key: mineinabyss:music.the_great_fault
     duration: 3m 45s
     regions:
       - layerthree
-  - key: mineinabyss:music.custom.layer5.beneath_the_ice
+  - key: mineinabyss:music.the_flat_kazura
+    duration: 4m 9s
+    regions:
+      - layerfour
+  - key: mineinabyss:music.beneath_the_ice
     duration: 4m
     regions:
       - layerfive
-  - key: mineinabyss:music.custom.layer5.blizzard_theme
+  - key: mineinabyss:music.blizzard_theme
     duration: 3m 38s
     regions:
       - layerfive
-  - key: mineinabyss:music.custom.layer5.uncertain_surroundings
+  - key: mineinabyss:music.uncertain_surroundings
     duration: 4m 13s
     regions:
       - layerfive
