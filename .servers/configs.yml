@@ -12,43 +12,6 @@ global:
     plugins/Packy/resourcepacks:
       deleteUntracked: true
 
-feat/mobs:
-  copyPaths:
-    # Packy
-    - source: packs_assets/feat_mobs
-      dest: plugins/Packy/resourcepacks/feat_mobs
-    # Geary
-    - source: plugins/Geary/prefabs/mineinabyss/mobs
-      dest: plugins/Geary/prefabs/mineinabyss/mobs
-    - source: plugins/Geary/spawns
-      dest: plugins/Geary/spawns
-    - source: plugins/Geary/spawning.yml
-      dest: plugins/Geary/
-    - source: plugins/Geary/spread_config.yml
-      dest: plugins/Geary/
-    # MM
-    - source: plugins/MythicMobs
-      dest: plugins/MythicMobs
-    - source: .servers/disable_mythic_examples
-      dest: plugins/MythicMobs
-  files:
-    plugins/MythicMobs:
-      deleteUntracked: true
-      keep:
-        - config/
-        - data/
-        - stats.yml
-feat/emotes:
-  copyPaths:
-    - source: plugins/Emojy
-      dest: plugins/Emojy
-  files:
-    plugins/Emojy:
-      deleteUntracked: true
-      keep:
-        - gifs/ # Image sequences get generated in here
-        - fonts/
-        - pack.zip
 feat/blocks:
   copyPaths:
     - source: plugins/Blocky
@@ -57,50 +20,6 @@ feat/blocks:
       dest: plugins/Packy/resourcepacks/feat_blocks
     - source: plugins/Geary/prefabs/mineinabyss/blocks
       dest: plugins/Geary/prefabs/mineinabyss/blocks
-
-feat/chat:
-  copyPaths:
-    - source: plugins/Chatty
-      dest: plugins/Chatty
-
-feat/cosmetics:
-  include:
-    - feat/items
-  copyPaths:
-    - source: plugins/HMCCosmetics
-      dest: plugins/HMCCosmetics
-    - source: plugins/HMCColor
-      dest: plugins/HMCColor
-
-feat/bosses:
-  copyPaths:
-    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/bosses"
-      dest: plugins/MythicMobs/packs/bosses
-
-feat/events:
-  include:
-    - feat/items
-  copyPaths:
-    # Packy
-    - source: packs_assets/events
-      dest: plugins/Packy/resourcepacks/events
-    - source: "{{ privateSettingsDest }}/packs_assets/events"
-      dest: plugins/Packy/resourcepacks/events_private
-    # Geary
-    - source: packs_assets/events
-      dest: plugins/Geary/template_pack
-    - source: "{{ privateSettingsDest }}/packs_assets/events"
-      dest: plugins/Geary/template_pack
-    # Other
-    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
-      dest: plugins/MythicMobs/packs/halloween
-    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
-      dest: plugins/MineInAbyss
-
-feat/loot_chests:
-  copyPaths:
-    - source: plugins/Geary/prefabs/mia-loot
-      dest: plugins/Geary/prefabs/mia-loot
 
 feat/items:
   copyPaths:
@@ -127,15 +46,92 @@ feat/items:
     - source: "{{ privateSettingsDest }}/packs_assets/feat_items"
       dest: plugins/Geary/template_pack
 
+feat/mobs:
+  copyPaths:
+    # Packy
+    - source: packs_assets/feat_mobs
+      dest: plugins/Packy/resourcepacks/feat_mobs
+    # MM
+    - source: plugins/MythicMobs
+      dest: plugins/MythicMobs
+    # Geary
+    - source: plugins/Geary/prefabs/mineinabyss/mobs
+      dest: plugins/Geary/prefabs/mineinabyss/mobs
+    - source: plugins/Geary/spawns
+      dest: plugins/Geary/spawns
+    - source: plugins/Geary/spawning.yml
+      dest: plugins/Geary/
+    - source: plugins/Geary/spread_config.yml
+      dest: plugins/Geary/
+
+  files:
+    plugins/MythicMobs:
+      deleteUntracked: true
+      keep:
+        - config/
+        - data/
+        - stats.yml
+
+feat/uis:
+  copyPaths:
+    - source: packs_assets/feat_uis
+      dest: plugins/Packy/resourcepacks/feat_uis
+
+feat/chat:
+  copyPaths:
+    - source: plugins/Chatty
+      dest: plugins/Chatty
+
+feat/emotes:
+  copyPaths:
+    - source: plugins/Emojy
+      dest: plugins/Emojy
+  files:
+    plugins/Emojy:
+      deleteUntracked: true
+      keep:
+        - gifs/ # Image sequences get generated in here
+        - fonts/
+        - pack.zip
+
+feat/cosmetics:
+  include:
+    - feat/items
+  copyPaths:
+    - source: plugins/HMCCosmetics
+      dest: plugins/HMCCosmetics
+    - source: plugins/HMCColor
+      dest: plugins/HMCColor
+
+feat/events:
+  include:
+    - feat/items
+  copyPaths:
+    # Packy
+    - source: packs_assets/events
+      dest: plugins/Packy/resourcepacks/events
+    - source: "{{ privateSettingsDest }}/packs_assets/events"
+      dest: plugins/Packy/resourcepacks/events_private
+    # Geary
+    - source: packs_assets/events
+      dest: plugins/Geary/template_pack
+    - source: "{{ privateSettingsDest }}/packs_assets/events"
+      dest: plugins/Geary/template_pack
+    # Other
+    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
+      dest: plugins/MythicMobs/packs/halloween
+    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
+      dest: plugins/MineInAbyss
+
 feat/hud:
   copyPaths:
       - source: plugins/MythicHUD
         dest: plugins/MythicHUD
 
-feat/delvers:
+feat/loot_chests:
   copyPaths:
-    - source: plugins/MythicMobs/packs/delvers
-      dest: plugins/MythicMobs/packs/delvers
+    - source: plugins/Geary/prefabs/mia-loot
+      dest: plugins/Geary/prefabs/mia-loot
 
 feat/hiddenore:
   copyPaths:
@@ -149,11 +145,6 @@ feat/ost:
     - source: mc-datapacks/music_discs
       dest: worlds/world/datapacks/music_discs
 
-feat/uis:
-  copyPaths:
-    - source: packs_assets/feat_uis
-      dest: plugins/Packy/resourcepacks/feat_uis
-
 feat/deeperworld:
   copyPaths:
     - source: mc-datapacks/deeper_world
@@ -163,6 +154,17 @@ feat/resourcepack-common:
   copyPaths:
     - source: packs_assets/common
       dest: plugins/Packy/resourcepacks/common
+
+# Experimental
+feat/bosses:
+  copyPaths:
+    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/bosses"
+      dest: plugins/MythicMobs/packs/bosses
+
+feat/delvers:
+  copyPaths:
+    - source: plugins/MythicMobs/packs/delvers
+      dest: plugins/MythicMobs/packs/delvers
 
 # Servers
 minecraft:
