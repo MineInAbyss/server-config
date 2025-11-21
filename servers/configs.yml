@@ -120,7 +120,7 @@ feat/events:
     # Other
     - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
       dest: plugins/MythicMobs/packs/halloween
-    - source: "{{ privateSettingsDest }}/.servers/survival/plugins/MineInAbyss"
+    - source: "{{ privateSettingsDest }}/servers/survival/plugins/MineInAbyss"
       dest: plugins/MineInAbyss
 
 feat/hud:
@@ -167,8 +167,8 @@ feat/delvers:
       dest: plugins/MythicMobs/packs/delvers
 
 # Servers
-minecraft:
-  copyPaths: [ .servers/minecraft ]
+all-minecraft:
+  copyPaths: [ servers/all-minecraft ]
   variables:
     env:
       PRIVATE_PLUGINS_TOKEN: "{{ PRIVATE_PLUGINS_TOKEN | default('') }}"
@@ -184,7 +184,7 @@ minecraft:
     - feat/deeperworld
 
 survival:
-  copyPaths: [ .servers/survival ]
+  copyPaths: [ servers/survival ]
   variables:
     chatty:
       enableHover: true
@@ -192,7 +192,7 @@ survival:
     geary:
       spawning: true
   include:
-    - minecraft
+    - all-minecraft
     - feat/items
     - feat/loot_chests
     - feat/cosmetics
@@ -209,9 +209,9 @@ build:
       enableHover: true
       serverPrefix: ":build:"
       localChatRadius: 0
-  copyPaths: [ .servers/build ]
+  copyPaths: [ servers/build ]
   include:
-    - minecraft
+    - all-minecraft
     - feat/blocks
     - feat/items
     - feat/loot_chests
@@ -227,7 +227,7 @@ staging:
     - survival
 
 dev:
-  copyPaths: [ .servers/dev ]
+  copyPaths: [ servers/dev ]
   variables:
     chatty:
       serverPrefix: ":test:"
@@ -236,7 +236,7 @@ dev:
       spawning: true
       logLevel: Debug
   include:
-    - minecraft
+    - all-minecraft
     - feat/blocks
     - feat/items
     - feat/uis
@@ -250,7 +250,7 @@ dev:
     - feat/events
 
 dev-alpha:
-  copyPaths: [ .servers/dev-alpha ]
+  copyPaths: [ servers/dev-alpha ]
   include:
     - dev
 
@@ -260,17 +260,17 @@ dev-basic:
     - dev
 
 archive:
-  copyPaths: [ .servers/archive ]
+  copyPaths: [ servers/archive ]
   variables:
     chatty:
       serverPrefix: ":adventure:"
       localChatRadius: 0
   include:
-    - minecraft
+    - all-minecraft
 
 # Proxy
 velocity:
-  copyPaths: [ .servers/proxy ]
+  copyPaths: [ servers/proxy ]
   variables:
     velocityForwardingSecret: "{{ VELOCITY_FORWARDING_SECRET | default('') }}"
     spicord:
