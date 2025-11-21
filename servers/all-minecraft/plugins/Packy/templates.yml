@@ -19,6 +19,10 @@ feat_mobs:
   default: true
   required: true
   filePath: Packy/resourcepacks/feat_mobs
+feat_music:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_music
 feat_uis:
   default: true
   required: true

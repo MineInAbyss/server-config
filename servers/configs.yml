@@ -140,14 +140,14 @@ feat/hiddenore:
 
 feat/ost:
   copyPaths:
-    - source: "{{ privateSettingsDest }}/mc-resourcepacks/ost"
-      dest: plugins/Packy/resourcepacks/ost
-    - source: mc-datapacks/music_discs
+    - source: "{{ privateSettingsDest }}/packs_assets/feat_music"
+      dest: plugins/Packy/resourcepacks/feat_music
+    - source: packs_data/music_discs
       dest: worlds/world/datapacks/music_discs
 
 feat/deeperworld:
   copyPaths:
-    - source: mc-datapacks/deeper_world
+    - source: packs_data/deeper_world
       dest: worlds/world/datapacks/deeper_world
 
 feat/resourcepack-common:
