@@ -249,11 +249,6 @@ dev:
     - feat/ost
     - feat/events
 
-dev-alpha:
-  copyPaths: [ servers/dev-alpha ]
-  include:
-    - dev
-
 # Used for local development, where as few plugins as possible are auto downloaded
 dev-basic:
   include:
