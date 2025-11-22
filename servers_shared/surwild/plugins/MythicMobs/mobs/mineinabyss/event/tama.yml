@@ -1,0 +1,68 @@
+tama:
+  Type: ZOMBIE
+  SpawnCategory: event
+  Display: "<#C74040>Tama-chan"
+  Health: 250
+  Damage: 10
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - float
+    - randomstroll
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+    - players
+  Options:
+    KnockbackResistance: 1
+    DigOutOfGround: true
+    Collidable: true
+    Silent: true
+    FollowRange: 48
+    MovementSpeed: 0.38
+    MaxCombatDistance: 35
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Equipment:
+    - DIAMOND_BOOTS{enchants=DEPTH_STRIDER:3} FEET
+    - TORCH HAND
+  Drops:
+    - exp 100-250
+   # - amogus_token 10-20 1
+    - geary mineinabyss:orb_piercer_face_fragments 1-1 1 nolooting
+    - geary mineinabyss:orb_piercer_spike 2-6 1
+    #- geary mineinabyss:tama_hat 1 0.015 nolooting
+    #- geary mineinabyss:tama_chime 1 0.025 nolooting
+   # - goldslime 1 0.08
+  Model:
+    Id: tama
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+    Scale: 1
+  DamageModifiers:
+    - DROWNING 0
+    - PROJECTILE 0.25
+    - SUFFOCATION 0
+  Skills:
+    - skill{s=Changetarget} ~onTimer:160 <99%
+    - skill{s=displayHealth} ~onDamaged
+    - skill:MIAPetExpNearby{exp=1} ~onDeath
+    - bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
+    #    - skill{s=orbpiercer_speed} @self ~onSpawnOrLoad
+    #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged
+    - sound{s=mineinabyss:entity.orbpiercer.death;v=1;p=2;sc=HOSTILE} @self ~onDeath
+    - sound{s=mineinabyss:entity.orbpiercer.ambient;v=1;p=2;sc=HOSTILE} @self ~onTimer:400
+    - skill{s=tamaATTACK} @self ~onAttack
+    #- skill{s=Changetarget} ~onTimer:160 <99%
+    - dismount ~onDamaged
+    - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>10}
+    - state{mid=orbpiercer;s=attack;li=3;lo=3} @self ~onAttack
+    - skill{s=tamaspear2} @target ~onTimer:20 <50%
+    - skill{s=tamaspear} @target ~onTimer:20 >50%
+    - skill{s=tama_impale} @target ~onTimer:20
+    - skill{s=tama_shout} @target ~oncombat
+    - skill{s=tama_shout} @target ~onDamaged 0.1
+    - skill{s=tama_spike_eject} @target ~onDamaged <60%

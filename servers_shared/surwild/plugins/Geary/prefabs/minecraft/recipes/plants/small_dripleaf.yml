@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:small_dripleaf
+    amount: 8
+  recipes:
+    - type: shaped
+      items:
+        S: 
+          prefab: mineinabyss:plant_matter
+        R:
+          prefab: mineinabyss:spittleshrub_root
+      configuration: |-
+        |   |
+        |SSS|
+        |R  |

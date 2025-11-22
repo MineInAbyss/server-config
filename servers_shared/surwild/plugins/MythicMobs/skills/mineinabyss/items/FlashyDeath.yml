@@ -1,0 +1,64 @@
+MithraSummonDeath:
+  Skills:
+  - effect:particles{p=lava;a=10;hS=0.5;vS=1} @self
+  - effect:particles{p=flame;a=100;hS=0.5;vS=1} @self
+  - sound{s=block.fire.extinguish} @self
+  - effect:geyser{t=lava;h=3;s=3} @self
+
+MithraDeathAnimation:
+  Skills:
+  - sound{s=music.dragon;p=2} @PIR{r=50}
+  - potion{t=SLOW;d=300;l=1} @self
+  - potion{t=LEVITATION;d=300;l=1} @self
+  - skill{s=MithraDeathSounds} @self
+  - effect:particles{p=end_rod;a=30;hS=15;vS=5;repeat=130;repeatInterval=2} @origin
+  - effect:particles{p=flash;a=1;hS=0;vS=0;repeat=5;repeatInterval=20;y=2} @self
+  - delay 100
+  - orbital{oT=MithraOrbital-onTick;points=20;interval=1;duration=160;charges=1} @self
+  - sound{s=block.fire.extinguish;v=1;p=2} @PIR{r=50}
+  - effect:particles{p=flash;a=3;hS=0;vS=0;repeat=4;repeatInterval=20;y=2} @self
+  - effect:particles{p=flash;a=10;hS=5;vS=3;repeat=4;repeatInterval=20;y=2} @self
+  - delay 20
+  - orbital{oT=MithraOrbital-onTick;points=20;interval=1;duration=140;charges=1;rx=1} @self
+  - sound{s=block.fire.extinguish;v=1;p=2} @PIR{r=50}
+  - effect:particles{p=flash;a=20;hS=10;vS=3;repeat=4;repeatInterval=20;y=2} @self
+  - effect:particles{p=flash;a=5;hS=0;vS=0;repeat=6;repeatInterval=10;y=1.5} @self
+  - delay 20
+  - orbital{oT=MithraOrbital-onTick;points=20;interval=1;duration=120;charges=1;rx=-1} @self
+  - sound{s=block.fire.extinguish;v=1;p=2} @PIR{r=50}
+  - effect:particles{p=flash;a=40;hS=15;vS=3;repeat=4;repeatInterval=20;y=2} @self
+  - effect:particles{p=flash;a=7;hS=0;vS=0;repeat=25;repeatInterval=5;y=1} @self
+  - delay 20
+  - orbital{oT=MithraOrbital-onTick;points=20;interval=1;duration=100;charges=1;rx=1} @self
+  - effect:particles{p=flash;a=50;hS=20;vS=3;repeat=5;repeatInterval=20;y=2} @self
+  - effect:particles{p=flash;a=10;hS=0;vS=0;repeat=25;repeatInterval=4;y=0} @self
+  - delay 100
+  - skill{s=MithraDeathSounds} @self
+  - sound{s=block.fire.extinguish;v=1;p=0.1} @PIR{r=50}
+  - effect:particles{p=smoke_large;a=30;hS=0.5;vS=0.5;repeat=2;repeatInterval=10} @self
+  - effect:particles{p=smoke_large;a=90;hS=2;vS=2;repeat=2;repeatInterval=10} @self
+  - effect:particles{p=smoke_large;a=60;hS=1.5;vS=1.5;y=1;repeat=3;repeatInterval=10} @self
+  - effect:particles{p=smoke_large;a=30;hS=1;vS=1;y=2;repeat=4;repeatInterval=10} @self
+  - effect:particles{p=smoke_large;a=30;hS=0.5;vS=0.5;y=3;repeat=5;repeatInterval=10} @self
+  - suicide
+
+MithraDeathAnimation-onTick:
+  Skills:
+  - effect:particles{p=flame;a=1;hS=0;vS=0} @origin
+
+MithraDeathSounds:
+  Skills:
+  - sound{s=entity.blaze.death;p=0.1} @self
+
+MithraOrbital-onTick:
+  Skills:
+  - effect:particles{p=flame;a=10;speed=0;hS=0.1;vS=0.1} @origin
+
+MithraDeathCommand:
+  Skills:
+  - delay 50
+  - sound{s=entity.wither.death;p=0.1} @PIR{r=50}
+  - potion{t=BLINDNESS;d=140;particles=false;icon=false}
+  - potion{t=NIGHT_VISION;d=140;particles=false;icon=false}
+  - effect:sound{s=block.end_portal.spawn;v=100;p=0.1} @PIR{r=50}
+  - delay 80

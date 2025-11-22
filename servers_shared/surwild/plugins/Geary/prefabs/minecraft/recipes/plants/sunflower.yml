@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:sunflower
+    amount: 2
+  recipes:
+    - type: shaped
+      items:
+        S: 
+          prefab: mineinabyss:plant_matter
+        C: 
+          prefab: mineinabyss:swarmshocker_charged_powder
+      configuration: |-
+        | C |
+        | S |
+        | S |

@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:dead_bush
+    amount: 6
+  recipes:
+    - type: shaped
+      items:
+        S: 
+          prefab: mineinabyss:plant_matter
+        D:
+          type: minecraft:sand        
+      configuration: |-
+        |D D|
+        |DSD|
+        | D |

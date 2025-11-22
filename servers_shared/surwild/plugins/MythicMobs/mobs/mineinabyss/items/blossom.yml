@@ -1,0 +1,16 @@
+blossom_of_greed:
+  Type: ARMOR_STAND
+  Health: 50
+  Damage: 0
+  Model:
+    Id: blossom_of_greed
+  Options:
+    Silent: true
+    NoAI: true
+    HasGravity: false
+  Skills:
+  - CancelEvent{sync=true} @self ~onDamaged
+
+  - effect:particles{particle=spell_witch;speed=0;Size=1;a=45;hS=1;vS=1;y=0.5} @self ~onSpawn
+  - effect:particles{particle=spell_witch;speed=0;Size=1;a=45;hS=1;vS=1;delay=99;y=0.5} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn

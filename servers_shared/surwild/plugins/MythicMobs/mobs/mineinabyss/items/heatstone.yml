@@ -1,0 +1,14 @@
+
+heat_stone:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,180
+  ItemHead: CyanSwings
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=lavaspin;cooldown=1;delay=70} @self ~onSpawn
+  - remove{delay=150} @self ~onSpawn

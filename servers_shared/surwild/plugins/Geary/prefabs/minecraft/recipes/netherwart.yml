@@ -1,0 +1,8 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:nether_wart
+  group: "nether_wart"
+  recipes:
+    - type: shapeless
+      items: [ mineinabyss:splitjaw_scales ]

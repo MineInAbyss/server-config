@@ -1,0 +1,26 @@
+grapplehook:
+  MobType: silverfish
+  Display: '&bgrapplehook'
+  Health: 9999
+  Damage: 0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  Skills:
+  - skill{s=GrappleHook_pull} @owner ~onspawn
+  - skill{s=GrappleHook_pull} @owner ~onTimer:1
+  - skill{s=MaxInvis} @self ~onSpawn
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    NoAI: true

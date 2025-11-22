@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  result:
+    type: minecraft:melon
+    amount: 1
+  recipes:
+    - type: shaped
+      items:
+        S: 
+          prefab: mineinabyss:plant_matter
+        D:
+          type: minecraft:wheat_seeds        
+      configuration: |-
+        |DDD|
+        |DSD|
+        |DDD|

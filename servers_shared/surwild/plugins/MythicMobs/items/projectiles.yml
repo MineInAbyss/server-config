@@ -1,0 +1,48 @@
+crescent_blade_swing_1:
+  Id: clay_ball
+  Display: "&6"
+  Model: 8
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_2:
+  Id: clay_ball
+  Display: "&6"
+  Model: 9
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_3:
+  Id: clay_ball
+  Display: "&6"
+  Model: 10
+  Hide:
+  - ATTRIBUTES
+crescent_blade_swing_4:
+  Id: clay_ball
+  Display: "&6"
+  Model: 11
+  Hide:
+  - ATTRIBUTES
+knife:
+  Id: clay_ball
+  Model: 13
+  Display: 'Knife'
+aoesphere:
+  Id: clay_ball
+  Model: 14
+  Display: 'Aoe Sphere'
+damagesphere:
+  Id: clay_ball
+  Model: 15
+  Display: 'Damage Sphere'
+luresphere:
+  Id: clay_ball
+  Model: 16
+  Display: 'Lure Sphere'
+spreadsphere:
+  Id: clay_ball
+  Model: 17
+  Display: 'Spread Sphere'
+sunsphere:
+  Id: clay_ball
+  Model: 18
+  Display: 'Sun Sphere'

@@ -1,0 +1,17 @@
+i_retreat:
+  Cooldown: 0
+  Conditions:
+  Skills:
+    - setstance{s=running} @self
+    - runaigoalselector{goal=fleeplayers} @self
+    - state{s=run;li=0;lo=0} @Self
+    - delay 160
+    - state{s=run;r=true} @Self
+    - setstance{s=clear} @self
+    - runaigoalselector{goal=randomstroll} @self
+i_hurt:
+  Cooldown: 0.0
+  Conditions:
+    - stance{s=running} true
+  Skills:
+    - potion{t=SPEED;l=5;force=true;p=false;d=30} @self
