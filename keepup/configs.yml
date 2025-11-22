@@ -123,6 +123,8 @@ feat/mobs-survival:
   include:
     - feat/mobs
   copyPaths:
+    - source: servers/survival/plugins/MythicMobs
+      dest:   plugins/MythicMobs
     - source: servers/survival/plugins/Geary/spawns
       dest:   plugins/Geary/spawns
     - source: servers/survival/plugins/Geary/spawning.yml
