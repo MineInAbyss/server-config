@@ -12,14 +12,52 @@ global:
     plugins/Packy/resourcepacks:
       deleteUntracked: true
 
+########################################
+# Shared between ALL servers
+########################################
+
+feat/chat:
+  copyPaths:
+    - source: servers_shared/common/plugins/Chatty
+      dest:   plugins/Chatty
+
+feat/deeperworld:
+  copyPaths:
+    - source: packs_data/deeper_world
+      dest:   worlds/world/datapacks/deeper_world
+
+feat/emotes:
+  copyPaths:
+    - source: servers_shared/survwild/plugins/Emojy
+      dest:   plugins/Emojy
+  files:
+    plugins/Emojy:
+      deleteUntracked: true
+      keep:
+        - gifs/ # Image sequences get generated in here
+        - fonts/
+        - pack.zip
+
+feat/resourcepack-common:
+  copyPaths:
+    - source: packs_assets/common
+      dest:   plugins/Packy/resourcepacks/common
+
+########################################
+# Shared between BUILD, SURV & WILD
+########################################
+
 feat/blocks:
   copyPaths:
-    - source: servers_shared/surwild/plugins/Blocky
-      dest:   plugins/Blocky
     - source: packs_assets/feat_blocks
       dest:   plugins/Packy/resourcepacks/feat_blocks
-    - source: servers_shared/surwild/plugins/Geary/prefabs/mineinabyss/blocks
+    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/blocks
       dest:   plugins/Geary/prefabs/mineinabyss/blocks
+
+feat/hud:
+  copyPaths:
+    - source: servers_shared/survwild/plugins/MythicHUD
+      dest:   plugins/MythicHUD
 
 feat/items:
   copyPaths:
@@ -37,9 +75,9 @@ feat/items:
     - source: packs_assets/option_armor_old
       dest:   plugins/Packy/resourcepacks/option_armor_old
     # Geary
-    - source: servers_shared/surwild/plugins/Geary/prefabs/mineinabyss/items
+    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/items
       dest:   plugins/Geary/prefabs/mineinabyss/items
-    - source: servers_shared/surwild/plugins/Geary/prefabs/minecraft/recipes
+    - source: servers_shared/survwild/plugins/Geary/prefabs/minecraft/recipes
       dest:   plugins/Geary/prefabs/minecraft/recipes
     - source: packs_assets/feat_items
       dest:   plugins/Geary/template_pack
@@ -48,21 +86,12 @@ feat/items:
 
 feat/mobs:
   copyPaths:
-    # Packy
     - source: packs_assets/feat_mobs
       dest:   plugins/Packy/resourcepacks/feat_mobs
-    # MM
-    - source: servers_shared/surwild/plugins/MythicMobs
+    - source: servers_shared/survwild/plugins/MythicMobs
       dest:   plugins/MythicMobs
-    # Geary
-    - source: servers_shared/surwild/plugins/Geary/prefabs/mineinabyss/mobs
+    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/mobs
       dest:   plugins/Geary/prefabs/mineinabyss/mobs
-    - source: servers_shared/surwild/plugins/Geary/spawns
-      dest:   plugins/Geary/spawns
-    - source: servers_shared/surwild/plugins/Geary/spawning.yml
-      dest:   plugins/Geary/
-    - source: servers_shared/surwild/plugins/Geary/spread_config.yml
-      dest:   plugins/Geary/
   files:
     plugins/MythicMobs:
       deleteUntracked: true
@@ -71,36 +100,54 @@ feat/mobs:
         - data/
         - stats.yml
 
+feat/music:
+  copyPaths:
+    - source: "{{ privateSettingsDest }}/packs_assets/feat_music"
+      dest:   plugins/Packy/resourcepacks/feat_music
+    - source: packs_data/music_discs
+      dest:   worlds/world/datapacks/music_discs
+  files:
+    worlds/world/data_packs/music_discs:
+      deleteUntracked: true
+
 feat/uis:
   copyPaths:
     - source: packs_assets/feat_uis
       dest:   plugins/Packy/resourcepacks/feat_uis
 
-feat/chat:
-  copyPaths:
-    - source: servers_shared/surwild/plugins/Chatty
-      dest:   plugins/Chatty
+########################################
+# Only for Survival
+########################################
 
-feat/emotes:
+feat/mobs-survival:
+  include:
+    - feat/mobs
   copyPaths:
-    - source: servers_shared/surwild/plugins/Emojy
-      dest:   plugins/Emojy
-  files:
-    plugins/Emojy:
-      deleteUntracked: true
-      keep:
-        - gifs/ # Image sequences get generated in here
-        - fonts/
-        - pack.zip
+    - source: servers/survival/plugins/Geary/spawns
+      dest:   plugins/Geary/spawns
+    - source: servers/survival/plugins/Geary/spawning.yml
+      dest:   plugins/Geary/
+    - source: servers/survival/plugins/Geary/spread_config.yml
+      dest:   plugins/Geary/
 
 feat/cosmetics:
   include:
     - feat/items
   copyPaths:
-    - source: servers_shared/surwild/plugins/HMCCosmetics
-      dest:   plugins/HMCCosmetics
-    - source: servers_shared/surwild/plugins/HMCColor
+    - source: servers/survival/plugins/HMCColor
       dest:   plugins/HMCColor
+    - source: servers/survival/plugins/HMCCosmetics
+      dest:   plugins/HMCCosmetics
+
+feat/hiddenore:
+  copyPaths:
+    - source: servers/survival/plugins/HiddenOre
+      dest:   plugins/HiddenOre
+
+# feat/loot_chests:
+#   copyPaths:
+#     - source: servers_shared/survwild/plugins/Geary/prefabs/mia-loot
+#       dest:   plugins/Geary/prefabs/mia-loot
 
 feat/events:
   include:
@@ -122,42 +169,15 @@ feat/events:
     - source: "{{ privateSettingsDest }}/servers/survival/plugins/MineInAbyss"
       dest:   plugins/MineInAbyss
 
-feat/hud:
-  copyPaths:
-      - source: servers_shared/surwild/plugins/MythicHUD
-        dest:   plugins/MythicHUD
+########################################
+# Only for Wild
+########################################
 
-feat/loot_chests:
-  copyPaths:
-    - source: servers_shared/surwild/plugins/Geary/prefabs/mia-loot
-      dest:   plugins/Geary/prefabs/mia-loot
 
-feat/hiddenore:
-  copyPaths:
-    - source: servers_shared/surwild/plugins/HiddenOre
-      dest:   plugins/HiddenOre
-
-feat/music:
-  copyPaths:
-    - source: "{{ privateSettingsDest }}/packs_assets/feat_music"
-      dest:   plugins/Packy/resourcepacks/feat_music
-    - source: packs_data/music_discs
-      dest:   worlds/world/datapacks/music_discs
-  files:
-    worlds/world/data_packs/music_discs:
-      deleteUntracked: true
-
-feat/deeperworld:
-  copyPaths:
-    - source: packs_data/deeper_world
-      dest:   worlds/world/datapacks/deeper_world
-
-feat/resourcepack-common:
-  copyPaths:
-    - source: packs_assets/common
-      dest:   plugins/Packy/resourcepacks/common
-
+########################################
 # Experimental
+########################################
+
 feat/bosses:
   copyPaths:
     - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/bosses"
@@ -165,10 +185,13 @@ feat/bosses:
 
 feat/delvers:
   copyPaths:
-    - source: servers_shared/surwild/plugins/MythicMobs/packs/delvers
+    - source: servers_shared/survwild/plugins/MythicMobs/packs/delvers
       dest:   plugins/MythicMobs/packs/delvers
 
+########################################
 # Servers
+########################################
+
 minecraft-common:
   copyPaths: [ servers_shared/common ]
   variables:
@@ -181,29 +204,20 @@ minecraft-common:
     velocity_forward_secret: "{{ VELOCITY_FORWARDING_SECRET  | default('') }}"
   include:
     - feat/chat
+    - feat/deeperworld
     - feat/emotes
     - feat/resourcepack-common
-    - feat/deeperworld
 
-survival:
-  copyPaths: [ servers/survival ]
+# Servers that are live
+
+archive:
+  copyPaths: [ servers/archive ]
   variables:
     chatty:
-      enableHover: true
-      serverPrefix: ":survival:"
-    geary:
-      spawning: true
+      serverPrefix: ":adventure:"
+      localChatRadius: 0
   include:
     - minecraft-common
-    - feat/items
-    - feat/loot_chests
-    - feat/cosmetics
-    - feat/blocks
-    - feat/mobs
-    - feat/hud
-    - feat/hiddenore
-    - feat/music
-    - feat/events
 
 build:
   variables:
@@ -215,18 +229,31 @@ build:
   include:
     - minecraft-common
     - feat/blocks
-    - feat/items
+    - feat/uis
     - feat/loot_chests
 
-staging:
-  copyPaths: [ ] # Staging should mimic another server as closely as possible, use `include` below instead
+survival:
+  copyPaths: [ servers/survival ]
   variables:
     chatty:
       enableHover: true
-      serverPrefix: ":survival::test:"
-      localChatRadius: 0
+      serverPrefix: ":survival:"
+    geary:
+      spawning: true
   include:
-    - survival
+    - minecraft-common
+    - feat/blocks
+    - feat/hud
+    - feat/items
+    - feat/mobs-survival
+    - feat/music
+    - feat/uis
+    - feat/cosmetics
+    - feat/hiddenore
+    - feat/events
+    - feat/loot_chests
+
+# Servers for development
 
 dev:
   copyPaths: [ servers/dev ]
@@ -240,30 +267,32 @@ dev:
   include:
     - minecraft-common
     - feat/blocks
+    - feat/hud
     - feat/items
+    - feat/mobs-survival
+    - feat/music
     - feat/uis
-    - feat/loot_chests
     - feat/cosmetics
-    - feat/mobs
+    - feat/hiddenore
+    - feat/events
+    - feat/loot_chests
     - feat/delvers
     - feat/bosses
-    - feat/hud
-    - feat/music
-    - feat/events
+
+staging:
+  copyPaths: [ ] # Staging should mimic another server as closely as possible, use `include` below instead
+  variables:
+    chatty:
+      enableHover: true
+      serverPrefix: ":survival::test:"
+      localChatRadius: 0
+  include:
+    - survival
 
 # Used for local development, where as few plugins as possible are auto downloaded
 dev-basic:
   include:
     - dev
-
-archive:
-  copyPaths: [ servers/archive ]
-  variables:
-    chatty:
-      serverPrefix: ":adventure:"
-      localChatRadius: 0
-  include:
-    - minecraft-common
 
 # Proxy
 velocity:
