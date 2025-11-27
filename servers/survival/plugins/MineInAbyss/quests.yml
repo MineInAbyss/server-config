@@ -1,0 +1,16 @@
+visitQuests:
+  dummy:
+    questId: dummy
+    displayName: Dummy
+    locations:
+      - name: dummy_1
+        locationCenter:
+          x: 0
+          y: 0
+          z: 0
+        radius: 50
+    gearyRewards: {}
+    vanillaRewards: {}
+    perms: []
+fetchQuests: {}
+killQuests: {}

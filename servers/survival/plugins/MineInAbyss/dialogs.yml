@@ -1,0 +1,41 @@
+configs:
+  gondola_unlock_ww:
+    characterName: Warka
+    answers:
+      - text: Yes
+        replyMessage: Awesome, happy delving!
+        npc: null
+        action:
+          name: gondolaAction
+      - text: No
+        replyMessage: No problem, see you around!
+        npc: null
+    pages:
+      - lines:
+          - Hello there delver!
+      - lines:
+          - I can give you permanent access
+          - to this gondola route for 32
+          - Orth Coins.
+      - lines:
+          - Would you like to purchase access?
+  gondola_unlock_gp:
+    characterName: Guin
+    answers:
+      - text: Yes
+        replyMessage: Awesome, happy delving!
+        npc: null
+        action:
+          name: gondolaAction
+      - text: No
+        replyMessage: No problem, see you around!
+        npc: null
+    pages:
+      - lines:
+          - Hello there delver!
+      - lines:
+          - I can give you permanent access
+          - to this gondola route for 50
+          - Orth Coins.
+      - lines:
+          - Would you like to purchase access?
