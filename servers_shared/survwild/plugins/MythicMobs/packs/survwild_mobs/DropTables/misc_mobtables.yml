@@ -1,0 +1,20 @@
+TosubachiDrop:
+  TotalItems: 1
+  Conditions:
+    - hasaura{n=flamethrowerroast} true
+  Drops:
+  - geary mineinabyss:tosubachi 1-1 1 nolooting
+
+RareSaplingDrops:
+  MaxItems: 1
+  Drops:
+  - oak_sapling 1-1 0.035 nolooting
+  - spruce_sapling 1-1 0.035 nolooting
+  - jungle_sapling 1-1 0.035 nolooting
+  - acacia_sapling 1-1 0.035 nolooting
+  - dark_oak_sapling 1-1 0.035 nolooting
+
+# MilkBucketDrop:
+#   MaxItems: 1
+#   Drops:
+#   - geary mineinabyss:milk_bucket 1-1 1 nolooting
