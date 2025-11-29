@@ -146,10 +146,10 @@ feat/hiddenore:
     - source: servers/survival/plugins/HiddenOre
       dest:   plugins/HiddenOre
 
-# feat/loot_chests:
-#   copyPaths:
-#     - source: servers_shared/survwild/plugins/Geary/prefabs/mia-loot
-#       dest:   plugins/Geary/prefabs/mia-loot
+feat/loot_chests:
+  copyPaths:
+    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/loot
+      dest:   plugins/Geary/prefabs/mineinabyss/loot
 
 feat/events:
   include:
