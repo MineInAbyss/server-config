@@ -110,6 +110,11 @@ feat/music:
     worlds/world/data_packs/music_discs:
       deleteUntracked: true
 
+feat/loot_chests:
+  copyPaths:
+    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/loot
+      dest:   plugins/Geary/prefabs/mineinabyss/loot
+
 feat/uis:
   copyPaths:
     - source: packs_assets/feat_uis
@@ -146,11 +151,6 @@ feat/hiddenore:
     - source: servers/survival/plugins/HiddenOre
       dest:   plugins/HiddenOre
 
-feat/loot_chests:
-  copyPaths:
-    - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/loot
-      dest:   plugins/Geary/prefabs/mineinabyss/loot
-
 feat/events:
   include:
     - feat/items
@@ -166,7 +166,7 @@ feat/events:
     - source: "{{ privateSettingsDest }}/packs_assets/events"
       dest:   plugins/Geary/template_pack
     # Other
-    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/halloween"
+    - source: "{{ privateSettingsDest }}/servers_shared/plugins/MythicMobs/packs/halloween"
       dest:   plugins/MythicMobs/packs/halloween
     - source: "{{ privateSettingsDest }}/servers/survival/plugins/MineInAbyss"
       dest:   plugins/MineInAbyss
@@ -182,7 +182,7 @@ feat/events:
 
 feat/bosses:
   copyPaths:
-    - source: "{{ privateSettingsDest }}/plugins/MythicMobs/packs/bosses"
+    - source: "{{ privateSettingsDest }}/servers_shared/plugins/MythicMobs/packs/bosses"
       dest:   plugins/MythicMobs/packs/bosses
 
 feat/delvers:
