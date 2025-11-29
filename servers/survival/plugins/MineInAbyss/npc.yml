@@ -1,16 +1,17 @@
 npcs:
   gondola_assistant_gb:
     id: gondola_assistant_gb
-    displayName: Guin
+    displayName: Belze
     location:
-      x: -560.0
+      x: -397.0
       y: 128.0
-      z: -23.0
+      z: -35.0
+      yaw: 45
     scale:
       - 1.0
       - 1.0
       - 1.0
-    bbModel: bondrewd
+    bbModel: npcgondola_variant3
     tradeTable:
       id: test_table
       trades: []
@@ -26,11 +27,12 @@ npcs:
       x: -295.0
       y: -58.0
       z: 376.0
+      yaw: 330
     scale:
       - 1.0
       - 1.0
       - 1.0
-    bbModel: bondrewd
+    bbModel: npcgondola_variant1
     tradeTable:
       id: test_table
       trades: []

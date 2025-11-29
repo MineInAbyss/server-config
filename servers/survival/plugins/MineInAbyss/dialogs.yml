@@ -3,7 +3,7 @@ configs:
     characterName: Warka
     answers:
       - text: Yes
-        replyMessage: Awesome, happy delving!
+        replyMessage: Awesome, step onto the gondola and I'll send you down!
         npc: null
         action:
           name: gondolaAction
@@ -20,10 +20,10 @@ configs:
       - lines:
           - Would you like to purchase access?
   gondola_unlock_gp:
-    characterName: Guin
+    characterName: Belze
     answers:
       - text: Yes
-        replyMessage: Awesome, happy delving!
+        replyMessage: Awesome, step onto the gondola and I'll send you down!
         npc: null
         action:
           name: gondolaAction
