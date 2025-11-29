@@ -1,0 +1,19 @@
+Settings:
+  lang: en
+  interaction: LeftClick # LeftClick / LeftClickEntity / LeftClickPlayer / RightClick / RightClickEntity / RightClickPlayer / SwapHand
+  exit: Sneak # Sneak / None
+  hide-chat: true
+  scroll-cooldown: 5
+  command-cooldown: 5 # Don't touch if you don't know what you're doing
+
+Zip-Output: # It'll still be created in the LuxDialogues/Output folder.
+  enabled: false
+  file-name: LuxDialoguesOutput # Name of the ZIP
+  directory: ''
+
+Hooks:
+  CustomNameplates: false
+  MMOCore: false
+
+First-Install: false # Don't touch if you don't know what you're doing
+# d90f5d423aba4d22657d47137223212c

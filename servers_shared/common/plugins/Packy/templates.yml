@@ -27,6 +27,10 @@ feat_uis:
   default: true
   required: true
   filePath: Packy/resourcepacks/feat_uis
+feat_uis_private:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_uis_private
 option_tools_2d:
   default: true
   required: false

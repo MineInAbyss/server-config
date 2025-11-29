@@ -119,6 +119,8 @@ feat/uis:
   copyPaths:
     - source: packs_assets/feat_uis
       dest:   plugins/Packy/resourcepacks/feat_uis
+    - source: "{{ privateSettingsDest }}/packs_assets/feat_uis"
+      dest:   plugins/Packy/resourcepacks/feat_uis_private
 
 ########################################
 # Only for Survival
