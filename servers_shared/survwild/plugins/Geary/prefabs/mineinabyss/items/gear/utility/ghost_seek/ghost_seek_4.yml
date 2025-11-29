@@ -1,0 +1,30 @@
+set.item:
+  itemName: <gold>God Seek
+  type: minecraft:clock
+  itemModel: mineinabyss:gear/utility/ghost_seek_on
+  lore:
+    - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
+    - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
+    - <#D2D489>guiding its wielder toward hidden relics.
+  equippable:
+    slot: HEAD
+    cameraOverlay: mineinabyss:gear/utility/ghost_seek_overlay
+observe:
+  itemRightClick:
+    - become: parent
+    - geary:ghost_seek:
+        radii:
+          250:
+            - mythicSkills: [ ghost_seek_effect_1 ]
+          150:
+            - mythicSkills: [ ghost_seek_effect_2 ]
+          100:
+            - mythicSkills: [ ghost_seek_effect_3 ]
+          50:
+            - mythicSkills: [ ghost_seek_effect_4 ]
+          25:
+            - mythicSkills:
+                - ghost_seek_effect_5
+                - ghost_seek_glow_nearby
+resourcepack:
+  model: mineinabyss:gear/utility/ghost_seek_on

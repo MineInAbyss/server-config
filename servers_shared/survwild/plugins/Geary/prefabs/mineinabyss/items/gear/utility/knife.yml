@@ -1,0 +1,35 @@
+set.item:
+  type: minecraft:clock
+  itemName: Knife
+  itemModel: mineinabyss:gear/utility/knife
+  maxStackSize: 64
+  lore:
+  - <yellow>Used to cut meat into smaller pieces.
+set.recipes: 
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:knife
+    amount: 8
+  recipes:
+    - type: shapeless
+      items:
+        - type: minecraft:stick
+        - type: minecraft:iron_ingot
+
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: knife
+      length: 7s
+      display: <#BFBFBF>Knife
+  - mythicSkills:
+    - knifethrow
+  - consumeItem:
+      type: mineinabyss:knife
+    
+resourcepack:
+  model: mineinabyss:gear/utility/knife
+  textures:
+    layers:
+    - mineinabyss:gear/utility/knife

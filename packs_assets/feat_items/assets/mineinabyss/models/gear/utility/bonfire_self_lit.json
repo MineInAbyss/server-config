@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "mineinabyss:gear/utility/bonfire_lit",
+	"texture_size": [64, 64],
+	"textures": {
+		"fire": "minecraft:block/soul_campfire_fire",
+		"particle": "minecraft:block/soul_campfire_fire"
+	}
+}

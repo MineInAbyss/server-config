@@ -13,7 +13,7 @@ set.recipes:
     - mineinabyss:kakatsumuri_glowing_tip
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:equipment/utility/star_compass_needle
+  model: mineinabyss:gear/utility/star_compass_needle
   textures:
     layers:
-    - mineinabyss:equipment/utility/star_compass/star_compass_needle
+    - mineinabyss:gear/utility/star_compass/star_compass_needle

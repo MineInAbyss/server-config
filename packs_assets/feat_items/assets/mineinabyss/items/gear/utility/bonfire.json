@@ -1,0 +1,72 @@
+{
+  "model": {
+    "type": "condition",
+    "property": "custom_model_data",
+    "index": 0,
+    "on_true": {
+      "type": "composite",
+      "models": [
+        {
+          "type": "condition",
+          "property": "custom_model_data",
+          "index": 1,
+          "on_true": {
+            "type": "model",
+            "model": "mineinabyss:gear/utility/bonfire_self_lit"
+          },
+          "on_false": {
+            "type": "model",
+            "model": "mineinabyss:gear/utility/bonfire_lit"
+          }
+        },
+        {
+          "type": "range_dispatch",
+          "property": "custom_model_data",
+          "scale": 1.0,
+          "entries": [
+            {
+              "threshold": 1.0,
+              "model": {
+                "type": "model",
+                "model": "mineinabyss:gear/utility/bonfire_1"
+              }
+            },
+            {
+              "threshold": 2.0,
+              "model": {
+                "type": "model",
+                "model": "mineinabyss:gear/utility/bonfire_2"
+              }
+            },
+            {
+              "threshold": 3.0,
+              "model": {
+                "type": "model",
+                "model": "mineinabyss:gear/utility/bonfire_3"
+              }
+            },
+            {
+              "threshold": 4.0,
+              "model": {
+                "type": "model",
+                "model": "mineinabyss:gear/utility/bonfire_4"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "mineinabyss:gear/utility/bonfire_1"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "model",
+      "model": "mineinabyss:gear/utility/bonfire"
+    },
+    "fallback": {
+      "type": "model",
+      "model": "mineinabyss:gear/utility/bonfire"
+    }
+  }
+}

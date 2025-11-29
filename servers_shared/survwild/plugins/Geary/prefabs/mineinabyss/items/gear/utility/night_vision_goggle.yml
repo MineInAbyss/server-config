@@ -1,0 +1,27 @@
+set.item:
+  itemName: <#C13523><b>Night Vision Goggle
+  type: minecraft:clock
+  itemModel: mineinabyss:gear/utility/night_vision_goggle
+  lore:
+  - <#D2D489>A pair of Relic-grade night vision goggles,
+  - <#D2D489>crafted with an intricate, almost organic design.
+  - <#D2D489>The lenses shimmer faintly, adjusting seamlessly
+  - <#D2D489>to darkness, revealing what the abyss hides.
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants nightvision.
+
+passive:
+- match:
+  - inInventory
+  every: 10s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:night_vision_goggle
+  - applyPotionEffects:
+    - type: minecraft:night_vision
+      duration: 22s
+      hasParticles: false
+resourcepack:
+  model: mineinabyss:gear/utility/night_vision_goggles

@@ -1,0 +1,56 @@
+set.item:
+  type: minecraft:paper
+  itemName: <dark_aqua>Depth Meter
+  itemModel: mineinabyss:gear/utility/depth_meter
+  lore:
+  - <aqua>Used by delvers to keep
+  - <aqua>track of their depth.
+  - <#3f536c><i>Show depth with left-click
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: shaped
+    items:
+      A:
+        type: minecraft:cobblestone
+      B:
+        type: minecraft:cobblestone_slab
+      L:
+        type: minecraft:lever
+      R:
+        type: minecraft:raw_iron
+      S:
+        prefab: mineinabyss:silkfang_silk
+    configuration: |-
+      |BSB|
+      |LRL|
+      |ABA|
+  - type: shaped
+    items:
+      A:
+        type: minecraft:cobblestone
+      B:
+        type: minecraft:cobblestone_slab
+      L:
+        type: minecraft:lever
+      R:
+        type: minecraft:raw_iron
+      S:
+        prefab: mineinabyss:kuongatari_silk
+    configuration: |-
+      |BSB|
+      |LRL|
+      |ABA|
+observe:
+  itemLeftClick:
+  - become: parent
+  - cooldown:
+      id: depth_meter
+      length: 5s
+      display: <#02A9bF>Depth Meter
+  - mineinabyss:showDepth: {}
+resourcepack:
+  model: mineinabyss:gear/utility/depth_meter
+  textures:
+    layers:
+    - mineinabyss:gear/utility/depth_meter
