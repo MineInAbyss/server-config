@@ -173,6 +173,11 @@ feat/events:
     - source: "{{ privateSettingsDest }}/servers/survival/plugins/MineInAbyss"
       dest:   plugins/MineInAbyss
 
+feat/npcs:
+  copyPaths:
+    - source: servers/survival/plugins/MineInAbyss
+      dest:   plugins/MineInAbyss
+
 ########################################
 # Only for Wild
 ########################################
@@ -275,6 +280,7 @@ dev:
     - feat/items
     - feat/mobs-survival
     - feat/music
+    - feat/npcs
     - feat/uis
     - feat/cosmetics
     - feat/hiddenore
