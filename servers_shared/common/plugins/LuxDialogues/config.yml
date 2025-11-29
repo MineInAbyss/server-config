@@ -1,6 +1,6 @@
 Settings:
   lang: en
-  interaction: LeftClick # LeftClick / LeftClickEntity / LeftClickPlayer / RightClick / RightClickEntity / RightClickPlayer / SwapHand
+  interaction: RightClick # LeftClick / LeftClickEntity / LeftClickPlayer / RightClick / RightClickEntity / RightClickPlayer / SwapHand
   exit: Sneak # Sneak / None
   hide-chat: true
   scroll-cooldown: 5
