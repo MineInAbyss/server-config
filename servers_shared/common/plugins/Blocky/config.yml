@@ -53,4 +53,4 @@ grateBlocks:
   isEnabled: true
 # If you wish to use vanilla sounds, set this to true
 # Keep in mind it disables all custom sounds from place/break/hit etc
-disableCustomSounds: false
+disableCustomSounds: true
