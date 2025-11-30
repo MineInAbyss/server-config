@@ -65,14 +65,15 @@ okiboMaps:
       - WharfEast
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: Residential
     location:
       x: -326.5
-      y: -492.0
-      z: 183.0
+      y: 184.5
+      z: -492.0
+      yaw: 90
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
@@ -83,7 +84,7 @@ okiboMaps:
       - WharfEast
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: GrandPier
@@ -101,7 +102,7 @@ okiboMaps:
       - WharfEast
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: NetherworldGate
@@ -120,7 +121,7 @@ okiboMaps:
       - WharfEast
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: BlackMarket
@@ -139,7 +140,7 @@ okiboMaps:
       - WharfEast
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: WharfEast
@@ -158,7 +159,7 @@ okiboMaps:
       - BlackMarket
       - TowerDistrict
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
   - station: TowerDistrict
@@ -177,7 +178,7 @@ okiboMaps:
       - BlackMarket
       - WharfEast
     icon:
-      text: ':orthmap_icon:'
+      text: ':okibo_icon:'
       offset: 0.0,-0.08,0.01
       scale: 1,1,1
 costPerKM: 0.0
