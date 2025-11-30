@@ -2,7 +2,6 @@ gold-mending_wedge:
   Conditions:
   Cooldown: 10
   Skills:
-  - command{c="execute at <caster.uuid> run extracommands:exp add <caster.name> -250";op=true}
   - Aura{auraName=verdaudown;onTick=verdaudown;interval=60;duration=120000} @self
   - skill{s=effaxfeed} @self
 
@@ -12,7 +11,7 @@ effaxfeed:
   - effect:sound{s=entity.shulker.ambient;sc=ui;p=1.3} @Self
   - delay 1
   - effect:sound{s=entity.shulker.ambient;sc=ui;p=1.5} @Self
-  - potion{t=REGENERATION;d=240;l=1} @self
+  - potion{t=REGENERATION;d=240;l=2} @self
 
 verdaudown:
   Conditions:

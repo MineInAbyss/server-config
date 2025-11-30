@@ -1,7 +1,5 @@
 set.recipes:
   discoverRecipes: true
-  removeRecipes:
-    - "minecraft:resin_block"
   result:
     type: minecraft:resin_block
     amount: 2

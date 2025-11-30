@@ -1,7 +1,7 @@
 set.item:
-  type: minecraft:resin_clump
+  type: minecraft:paper
   itemName: <#9C0F2C>Yomotsubi Abdomen
-  itemModel: mineinabyss:materials_mobs/yomotsubi_abdomen_raw
+  itemModel: mineinabyss:yomotsubi_abdomen_raw
   lore:
   - ':layer_3::layer_5:'
   - <#9c5d2c><i>Perhaps this could be cooked...
@@ -10,11 +10,9 @@ set.item:
     nutrition: 1
   consumable:
     animation: EAT
-disableItemInteractions: {}
 replaceBurnedDrop:
   prefab: mineinabyss:yomotsubi_abdomen_cooked
 resourcepack:
-  model: mineinabyss:materials_mobs/yomotsubi_abdomen_raw
   textures:
     layers:
-    - mineinabyss:materials_mobs/yomotsubi_abdomen_raw
+    - mineinabyss:item/food/creatures/yomotsubi_abdomen_raw

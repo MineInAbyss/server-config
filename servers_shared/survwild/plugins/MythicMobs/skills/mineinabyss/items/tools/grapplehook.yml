@@ -4,7 +4,7 @@
 
 grapplehook_shoot:
   Skills:
-  - projectile{bulletType=ARROW;onTick=GrappleHook_TICK;onHit=GrappleHook_HIT;onHitBlockSkill=GrappleHook_END;v=25;i=1;hR=1;vR=1;g=0.5;doEndSkillOnHit=false;hnp=true;dd=20} @forward{f=1000}
+  - projectile{bulletType=MOB;mm=grapple_hook_hook;onTick=GrappleHook_TICK;onHit=GrappleHook_HIT;onHitBlockSkill=GrappleHook_END;v=25;i=1;hR=1;vR=1;g=0.5;doEndSkillOnHit=false;hnp=true;dd=20} @forward{f=1000}
 
 GrappleHook_END:
   Conditions:
@@ -19,7 +19,7 @@ GrappleHook_HIT:
   Conditions:
     - hasaurastacks{n=gapplehookcharge} true
   TargetConditions:
-    - mythicmobtype{t=prayingSkeleton_base,prayingSkeleton_l1,prayingSkeleton_l2,prayingSkeleton_l3,prayingSkeleton_l4,prayingSkeleton_l5,goldenSkeleton,charredSkeleton,stingerhead,orbpiercer,tachikatana,virinsipede,splitjaw} false
+    - mythicmobtype{type=prayingSkeleton_base,prayingSkeleton_l1,prayingSkeleton_l2,prayingSkeleton_l3,prayingSkeleton_l4,prayingSkeleton_l5,goldenSkeleton,charredSkeleton,stingerhead,orbpiercer,tachikatana,virinsipede,splitjaw} false
   Skills:
   - sound{s=block.chain.hit;sc=ui;volume=1} @self
   - sound{s=block.chain.break;sc=ui;volume=0.55;repeat=10;repeati=1} @self

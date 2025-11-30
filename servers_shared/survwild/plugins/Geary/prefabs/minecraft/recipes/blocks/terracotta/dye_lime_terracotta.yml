@@ -15,3 +15,13 @@ set.recipes:
         |TTT|
         |TDT|
         |TTT|
+    - type: shaped
+      items:
+        T:
+          tag: terracotta
+        D:
+          prefab: mineinabyss:kuongatari_juice
+      configuration: |-
+        |TTT|
+        |TDT|
+        |TTT|

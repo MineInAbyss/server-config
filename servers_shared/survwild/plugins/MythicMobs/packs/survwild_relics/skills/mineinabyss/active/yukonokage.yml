@@ -119,7 +119,7 @@ yukonokage_soul_collision:
   - sound{s=entity.allay.hurt;sc=ui;p=1;v=0.6} @targetedtarget
   - sound{s=entity.allay.hurt;sc=ui;p=1.5;v=0.6} @targetedtarget
   - sound{s=entity.allay.hurt;sc=ui;p=0.2;v=0.6} @targetedtarget
-  - damage{a=7;ie=true;ia=true;is=true} @targetedtarget{ignore=animal,creature,monster} 
+  - damage{a=4;ie=true;ia=true;is=true} @targetedtarget{ignore=animal,creature,monster} 
   - damage{a=clamp(<target.mhp> * 0.15,10,50);ie=true;ia=true} @targetedtarget{ignore=player} 
 
 yukonokage_soul_repel:

@@ -16,7 +16,7 @@ set.recipes:
     - type: shaped
       items:
         S: { type: minecraft:dirt }
-        D: { prefab: mineinabyss:sprittleshrub_root }
+        D: { prefab: mineinabyss:spittleshrub_root }
       configuration: |-
         |SSS|
         |SDS|

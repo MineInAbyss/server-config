@@ -12,12 +12,12 @@ goldenSkeleton:
     PreventOtherDrops: true
     Collidable: false
     KnockbackResistance: 1
-  Model:
-    Id: golden_skeleton_1
-    ViewRadius: 100
-    Drive: false
-    DamageTint: false
-    Scale: 1
+  # Model:
+  #   Id: golden_skeleton_1
+  #   ViewRadius: 100
+  #   Drive: false
+  #   DamageTint: false
+  #   Scale: 1
   # TODO switch to `model` skill when it's fixed (currently it can not disguise the entity in certain cases, ex. when teleporting)
 
   DamageModifiers:
@@ -32,7 +32,8 @@ goldenSkeleton:
     #- geary mineinabyss:spreadsphere 1-1 0.15 nolooting
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    #- model{modelid=golden_skeleton_1;radius=100;damagetint=false;drive=false} @self ~onSpawnOrLoad
+    - randomskill{skills=
+     [- model{modelid=golden_skeleton_1;radius=100;damagetint=false;drive=false}] 0.6,
+     [- model{modelid=golden_skeleton_2;radius=100;damagetint=false;drive=false}] 0.4 } @self ~onSpawnOrLoad
     - randomskill{skills= relicDropLamentsThread 0.45, relicDropSinSpiral 0.1, relicDropGambitIncense 0.45} ~onDeath 1
     - skill{s=golden_skeleton_death} ~onDeath
-    #- randomskill{prayskelmodel1, prayskelmodel2, prayskelmodel3, prayskelmodel4, prayskelmodel5} @self ~onTimer:10

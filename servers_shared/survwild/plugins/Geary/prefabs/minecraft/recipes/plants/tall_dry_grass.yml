@@ -6,11 +6,9 @@ set.recipes:
   recipes:
     - type: shaped
       items:
-        K: 
-          prefab: mineinabyss:kuongatari_juice
-        G:
-          type: minecraft:grass
+        S: { prefab: mineinabyss:kuongatari_juice}
+        E: { type: minecraft:short_grass}
       configuration: |-
-        |GGG|
-        |GKG|
-        |GGG|
+        |EEE|
+        |ESE|
+        |EEE|

@@ -7,19 +7,19 @@ shirbiri_maku:
 shirbiri_crit_1:
   Skills:
   - delay <random.10to20>
-  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.2;i=4} @self
   - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
 
 shirbiri_crit_2:
   Skills:
   - delay <random.21to40>
-  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.2;i=4} @self
   - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
 
 shirbiri_crit_3:
   Skills:
   - delay <random.41to60>
-  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.5;i=4} @self
+  - onAttack{auraName=Crit;onTick=CritTick;duration=25;charges=5;multiplier=1.2;i=4} @self
   - sound{s=entity.fox.bite;sc=ui;p=2;v=0.1} @self #not happy with the sound yet, will be removed if we dont find a good option
 
 CritTick:

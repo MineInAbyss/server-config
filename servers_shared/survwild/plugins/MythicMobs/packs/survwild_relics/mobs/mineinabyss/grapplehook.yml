@@ -24,3 +24,18 @@ grapplehook:
     KnockbackResistance: 1
     Silent: true
     NoAI: true
+
+grapple_hook_hook:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Invisible: true
+    Invincible: true
+    HasGravity: false
+    Small: true
+ 
+  Skills:
+  - model{mid=grapple_hook_hook;n=false} @self ~onSpawnOrLoad
+  - state{mid=idle} @self ~onSpawnOrLoad
