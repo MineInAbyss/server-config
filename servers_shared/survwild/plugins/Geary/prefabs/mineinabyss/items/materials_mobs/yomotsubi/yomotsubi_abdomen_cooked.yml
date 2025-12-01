@@ -13,7 +13,7 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:item/food/creatures/yomotsubi_abdomen_cooked
+    - mineinabyss:materials_mobs/yomotsubi_abdomen_cooked
 set.recipes:
   discoverRecipes: true
   recipes:
