@@ -6,7 +6,7 @@ set.item:
   - <#3d59ab>A rectangular capsule containing burnable materials.
   - <font:small_text><gray><shadow:#00000000>Consumable. Fuel used by the <#0047AB>Flamethrower.
 resourcepack:
-  models: mineinabyss:relics/flamethrower_fuel  
+  model: mineinabyss:relics/flamethrower_fuel  
   textures:
     layers:
     - mineinabyss:relics/flamethrower_fuel  
