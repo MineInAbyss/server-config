@@ -429,6 +429,122 @@ items:
     currency: orth_coin
     cost: 10
     cosmetic: zephyr_disk_cosmetic
+  cook_hat:
+    slots: 15
+    item:
+      material: hmccosmetics:cook_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:cook_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:cook_hat
+      lore:
+        - ""
+        - "<gold>60:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:cook_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 60
+    cosmetic: cook_hat
+  patchwork_hat:
+    slots: 16
+    item:
+      material: hmccosmetics:patchwork_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:patchwork_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:patchwork_hat
+      lore:
+        - ""
+        - "<gold>35:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:patchwork_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 35
+    cosmetic: patchwork_hat
+  purple_bucket_hat:
+    slots: 17
+    item:
+      material: hmccosmetics:purple_bucket_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:purple_bucket_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:purple_bucket_hat
+      lore:
+        - ""
+        - "<gold>50:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:purple_bucket_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 50
+    cosmetic: purple_bucket_hat
+  traveler_hat_2:
+    slots: 18
+    item:
+      material: hmccosmetics:traveler_hat_2
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:traveler_hat_2
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:traveler_hat_2
+      lore:
+        - ""
+        - "<gold>60:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:traveler_hat_2
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: orth_coin
+    cost: 60
+    cosmetic: traveler_hat_2
 
 
 

@@ -150,3 +150,35 @@ bone_helmet:
     name: Bone Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/bone_helmet
+cook_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.cook_hat"
+  dyeable: false
+  item:
+    name: Cook Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/cook_hat
+patchwork_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.patchwork_hat"
+  dyeable: false
+  item:
+    name: Patchwork Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/patchwork_hat
+purple_bucket_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.purple_bucket_hat"
+  dyeable: false
+  item:
+    name: Purple Bucket Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/purple_bucket_hat
+traveler_hat_2:
+  slot: HELMET
+  permission: "hmccosmetics.hat.traveler_hat_2"
+  dyeable: false
+  item:
+    name: Traveler Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/traveler_hat_2
