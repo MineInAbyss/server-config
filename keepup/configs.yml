@@ -79,6 +79,10 @@ feat/items:
       dest:   plugins/Geary/prefabs/mineinabyss/items
     - source: servers_shared/survwild/plugins/Geary/prefabs/minecraft/recipes
       dest:   plugins/Geary/prefabs/minecraft/recipes
+    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/items"
+      dest:   plugins/Geary/prefabs/mineinabyss/items
+    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/minecraft/recipes"
+      dest:   plugins/Geary/prefabs/minecraft/recipes
     - source: packs_assets/feat_items
       dest:   plugins/Geary/template_pack
     - source: "{{ privateSettingsDest }}/packs_assets/feat_items"
