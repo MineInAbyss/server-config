@@ -39,6 +39,24 @@ configs:
           - Orth Coins.
       - lines:
           - Would you like to purchase access?
+  gondola_unlock_sc:
+    characterName: Yelme
+    answers:
+      - text: Yes, please!
+        replyMessage: Alright, step inside.
+        npc: null
+        action:
+          name: gondolaAction
+      - text: No
+        replyMessage: Are you sure?
+        npc: null
+    pages:
+      - lines:
+          - What do we have here? New faces!?
+          - Welcome to Seeker Camp!
+      - lines:
+          - Do you want to use this gondola
+          - to go up?
   orth_station_npc:
     characterName: Traveling Merchant
     pages:

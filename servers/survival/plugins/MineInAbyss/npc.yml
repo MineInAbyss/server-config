@@ -35,6 +35,24 @@ npcs:
     dialogId: gondola_unlock_ww
     ticketId: route_l1_wwgondola
     questEndId: null
+  gondola_assistant_sc:
+    id: gondola_assistant_sc
+    displayName: Yelme
+    location:
+      x: 82633.5
+      y: 104.0
+      z: -93.5
+      yaw: 135
+    scale: [1, 1, 1]
+    bbModel: yelme
+    tradeTable:
+      id: test_table
+      trades: []
+    tradeTableId: ""
+    type: gondola_unlocker
+    dialogId: gondola_unlock_sc
+    ticketId: route_l2_seekercamp
+    questEndId: null
   station_guildhq_npc:
     id: station_guildhq_npc
     displayName: Traveling Merchant

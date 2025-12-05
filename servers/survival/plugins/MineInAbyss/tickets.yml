@@ -3,7 +3,7 @@ tickets:
     gondolasInRoute:
       - l1_wwgondola_a
       - l1_wwgondola_b
-    ticketName: Waterwheel Gondola Route Ticket
+    ticketName: Waterwheel Gondola Ticket
     ticketPrice: 32
     consumeWhenUsed: false
   route_l1_grandpier:
@@ -11,6 +11,12 @@ tickets:
       - l1_grandpier_a
       - l1_grandpier_b
       - l1_grandpier_c
-    ticketName: Grand Pier Gondola Route Ticket
+    ticketName: Grand Pier Gondola Ticket
     ticketPrice: 50
+    consumeWhenUsed: false
+  route_l2_seekercamp:
+    gondolasInRoute:
+      - l2_seekercamp_a
+    ticketName: Seeker Camp Gondola Ticket
+    ticketPrice: 0
     consumeWhenUsed: false
