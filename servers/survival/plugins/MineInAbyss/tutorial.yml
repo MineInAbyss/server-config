@@ -149,6 +149,11 @@ tutorialEntities:
     leftRotation:
       y: 0.26723838
       w: 0.96363044
+  - location:
+      x: -504.0
+      y: 111.5
+      z: 362.0
+    text: <lang:mineinabyss.poi.orth_netherworldgate></lang>
 start:
   region:
     start: -158,118,-565

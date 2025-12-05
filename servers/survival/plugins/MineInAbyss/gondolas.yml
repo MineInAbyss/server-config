@@ -84,3 +84,19 @@ gondolas:
       Pier in Orth.
     warpCooldown: 5000
     consumeTicket: false
+  l2_seekercamp_a:
+    upperLoc:
+      x: 82630.5
+      y: 167.0
+      z: -88.5
+    lowerLoc:
+      x: 82630.5
+      y: 104.0
+      z: -88.5
+    displayItem:
+      type: minecraft:stone
+    displayName: SC A
+    warpZoneRange: 3.0
+    no_access_message: This gondola is broken. Please report this bug in \#bug-reports on Discord.
+    warpCooldown: 5000
+    consumeTicket: false
