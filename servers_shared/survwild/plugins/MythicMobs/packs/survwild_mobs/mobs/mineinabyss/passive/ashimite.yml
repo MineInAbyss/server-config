@@ -21,7 +21,7 @@ ashimite:
     FollowRange: 48
     Interactable: true
     PreventOtherDrops: true
-    #MovementSpeed: 0.25
+    MovementSpeed: 0.45
   Drops:
     - exp 5-10
     - geary mineinabyss:ashimite_meat_raw 1-2 0.6
@@ -42,7 +42,7 @@ ashimite:
     - skill{s=displayHealth} ~onDamaged
 
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
-    - setspeed{type=walking;speed=2.0} @self ~onSpawnOrLoad
+    #- setspeed{type=walking;speed=2.0} @self ~onSpawnOrLoad
     - skill{s=deerAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=deerHurt} @self ~onHurt
     - skill{s=deerDeath} @self ~onDeath
