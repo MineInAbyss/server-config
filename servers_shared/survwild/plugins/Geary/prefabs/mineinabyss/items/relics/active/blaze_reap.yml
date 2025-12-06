@@ -1,5 +1,5 @@
 set.item:
-  type: minecraft:clock
+  type: minecraft:netherite_pickaxe
   itemModel: mineinabyss:relics/blaze_reap
   itemName: <#617B94><b>Blaze Reap
   lore:
@@ -12,17 +12,20 @@ set.item:
   enchantments:
     - enchant: minecraft:fortune
       level: 3
+    - enchant: minecraft:efficiency
+      level: 5
   enchantable: 0
-  tool:
-    defaultMiningSpeed: 1.0
-    damagePerBlock: 0
-    rules:
-      - correctForDrops: true
-        speed: 38
-        blockTypes:
-          - mineable/pickaxe
-  weapon:
-    damagePerAttack: 0
+  # tool:
+  #   defaultMiningSpeed: 1.0
+  #   damagePerBlock: 0
+  #   rules:
+  #     - correctForDrops: true
+  #       speed: 38
+  #       blockTypes:
+  #         - mineable/pickaxe
+  # weapon:
+  #   damagePerAttack: 0
+  unbreakable: {}
 observe:
   itemLeftClick:
   - become: parent

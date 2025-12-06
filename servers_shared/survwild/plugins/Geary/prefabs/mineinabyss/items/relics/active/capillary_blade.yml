@@ -1,5 +1,5 @@
 set.item:
-  type: minecraft:clock
+  type: minecraft:netherite_sword
   itemModel: mineinabyss:relics/capillary_blade
   itemName: <#a30711><b>Capillary Growth
   lore:
@@ -9,8 +9,9 @@ set.item:
   - <#c7000e>carries on its user's mysterious directives.
   - <font:small_text><gray><shadow:#00000000>Active ability. Heals the user on kill. After 10
   - <font:small_text><gray><shadow:#00000000>hits, right click to siphon health from nearby targets.
-  weapon:
-    damagePerAttack: 0
+  # weapon:
+  #   damagePerAttack: 0
+  unbreakable: {}
 observe:
   itemLeftClick:
   - become: parent

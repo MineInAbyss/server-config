@@ -1,5 +1,5 @@
 set.item:
-  type: minecraft:clock
+  type: minecraft:netherite_sword
   itemModel: mineinabyss:relics/crescent_blade
   itemName: <#15ABC2><b>Crescent Hatchet
   lore:
@@ -8,14 +8,15 @@ set.item:
   - <#249C9C>Abyss itself, using its surroundings’ mysterious nature to its advantage.
   - <font:small_text><gray><shadow:#00000000>Active ability. Creates charges on right click.Takes increasing amounts
   - <font:small_text><gray><shadow:#00000000>of charges to create a slash of varying strength on left click.
-  tool:
-    defaultMiningSpeed: 1.0
-    damagePerBlock: 0
-    rules:
-      - correctForDrops: true
-        speed: 9
-        blockTypes:
-          - mineable/axe
+  # tool:
+  #   defaultMiningSpeed: 1.0
+  #   damagePerBlock: 0
+  #   rules:
+  #     - correctForDrops: true
+  #       speed: 9
+  #       blockTypes:
+  #         - mineable/axe
+  unbreakable: {}
 observe:
   itemLeftClick:
   - become: parent
