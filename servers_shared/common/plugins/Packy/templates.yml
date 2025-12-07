@@ -20,8 +20,8 @@ feat_mobs:
   required: true
   filePath: Packy/resourcepacks/feat_mobs
 feat_music:
-  default: false
-  required: false
+  default: true
+  required: true
   filePath: Packy/resourcepacks/feat_music
 feat_uis:
   default: true
