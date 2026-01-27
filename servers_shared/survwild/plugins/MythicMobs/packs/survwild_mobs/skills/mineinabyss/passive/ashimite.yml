@@ -20,3 +20,10 @@ deerDeath:
     - sound{s=entity.iron_golem.death;sc=neutral;p=0.9;v=1.4} @self
     - sound{s=particle.soul_escape;sc=neutral;p=2.0;v=2.0;delay=5;repeat=5;repeatInterval=1} @self
     - sound{s=block.grass.break;p=1.2;v=0.6;sc=neutral;sync=true} @self
+
+milk_ashimite:
+  Skills:
+    - consumeslot @trigger
+    - giveitem{i=MilkBucketDrop;delay=1} @trigger
+    - playanimation{a=0} @trigger
+    - sound{s=entity.goat.milk} @self

@@ -1,0 +1,6 @@
+milk_okibo:
+  Skills:
+    - consumeslot @trigger
+    - giveitem{i=MilkBucketDrop;delay=1} @trigger
+    - playanimation{a=0} @trigger
+    - sound{s=entity.goat.milk;p=0.5} @self
