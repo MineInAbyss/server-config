@@ -14,7 +14,7 @@ RareSaplingDrops:
   - acacia_sapling 1-1 0.035 nolooting
   - dark_oak_sapling 1-1 0.035 nolooting
 
-# MilkBucketDrop:
-#   MaxItems: 1
-#   Drops:
-#   - geary mineinabyss:milk_bucket 1-1 1 nolooting
+MilkBucketDrop:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:milk_bucket 1-1 1 nolooting

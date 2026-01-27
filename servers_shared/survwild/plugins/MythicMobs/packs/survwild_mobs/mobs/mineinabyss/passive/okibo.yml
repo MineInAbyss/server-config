@@ -31,3 +31,4 @@ okibo:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=milk_okibo} ~onInteract ?~holding{m=bucket}
