@@ -1,4 +1,4 @@
-milk_okibo:
+milk_mob:
   Skills:
     - consumeslot @trigger
     - giveitem{i=MilkBucketDrop;delay=1} @trigger
