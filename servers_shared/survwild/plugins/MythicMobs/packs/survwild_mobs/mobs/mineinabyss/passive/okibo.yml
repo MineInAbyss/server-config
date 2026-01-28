@@ -31,4 +31,5 @@ okibo:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill{s=milk_okibo} ~onInteract ?~holding{m=bucket}
+    - skill{s=milk_mob} ~onInteract ?~holding{m=bucket}
+    #- sound{s=entity.goat.milk;p=0.5} @self ~onInteract ?~holding{m=bucket} # if you want sounds to be mob specific remove them from the milk skill and move them into mob skills

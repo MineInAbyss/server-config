@@ -46,7 +46,8 @@ ashimite:
     - skill{s=deerAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=deerHurt} @self ~onHurt
     - skill{s=deerDeath} @self ~onDeath
-    - skill{s=milk_ashimite} ~onInteract ?~holding{m=bucket}
+    - skill{s=milk_mob} ~onInteract ?~holding{m=bucket}
+    #- sound{s=entity.goat.milk;p=0.5} @self ~onInteract ?~holding{m=bucket} # if you want sounds to be mob specific remove them from the milk skill and move them into mob skills
 baby_ashimite:
   Type: SHEEP
   Health: 12
