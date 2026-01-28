@@ -1,0 +1,34 @@
+set.item:
+  type: minecraft:potion
+  customName: <#9C0F2C>Stingerhead Poison
+  itemModel: mineinabyss:materials/stingerhead_poison
+  lore:
+  - ":layer_5:"
+  - <dark_red>Poison from a Stingerhead
+  consumable:
+    animation: DRINK
+    sound: entity.generic.drink
+    duration: 4.3s
+    particles: false
+    consumeEffects:
+        - type: APPLY
+          effects:
+          - type: minecraft:blindness
+            amplifier: 2
+            duration: 10s
+          - type: minecraft:poison
+            amplifier: 2
+            duration: 12s
+          - type: minecraft:wither
+            amplifier: 2
+            duration: 12s
+  useRemainder:
+    type: minecraft:glass_bottle
+  tooltipDisplay:
+    hiddenComponents:
+      - potion_contents
+resourcepack:
+  model: mineinabyss:materials/stingerhead_poison
+  textures:
+    layers:
+    - mineinabyss:materials/stingerhead_poison
