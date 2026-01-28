@@ -13,7 +13,8 @@
       { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:projectiles/l2_sunsphere" } },
       { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:projectiles/l3_sunsphere" } },
       { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:projectiles/l4_sunsphere" } },
-      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:projectiles/l5_sunsphere" } }
+      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:projectiles/l5_sunsphere" } },
+      { "threshold": 19, "model": {"type": "model", "model": "mineinabyss:projectiles/pebble" } }
     ],
     "fallback": {
       "type": "model",
