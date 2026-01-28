@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:potion
+  customName: <#03AC13>Stinger Poison
+  itemModel: mineinabyss:materials/stinger_poison
+  lore:
+  - ":layer_2::layer_4::layer_5:"
+  - <green>Poison from a Stinger
+  consumable:
+    animation: DRINK
+    sound: entity.generic.drink
+    particles: false
+    consumeEffects:
+        - type: APPLY
+          effects:
+          - type: minecraft:poison
+            amplifier: 2
+            duration: 5s
+  useRemainder:
+    type: minecraft:glass_bottle
+  tooltipDisplay:
+    hiddenComponents:
+      - potion_contents
+resourcepack:
+  model: mineinabyss:materials/stinger_poison
+  textures:
+    layers:
+    - mineinabyss:materials/stinger_poison
