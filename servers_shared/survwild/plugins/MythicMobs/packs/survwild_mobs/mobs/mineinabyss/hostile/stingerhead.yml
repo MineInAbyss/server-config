@@ -158,3 +158,4 @@ Stingerhead_Stinger_Detached:
     - skill{s=stingerhead_stinger_detached_spawn} @self ~onSpawnOrLoad
     - skill{s=stingerhead_stinger_detached_death} @self ~onDeath
     - remove{delay=400} @self ~onSpawn #Removes the stinger if it is detached for too long
+    - skill{s=milk_stingerhead} ~onInteract ?~holding{m=glass_bottle} ?!hasaura{auraName=unmilkable}
