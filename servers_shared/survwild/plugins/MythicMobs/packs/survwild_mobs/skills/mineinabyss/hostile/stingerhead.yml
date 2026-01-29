@@ -313,3 +313,11 @@ stingerdigout:
     - particles{p=blockcrack;amount=10;hS=2;vS=2;material=DIRT} @Self
     - particles{p=explosion_emitter;amount=10;hS=2;vS=2} @Self
     - particles{p=blockdust;amount=10;material=SAND;hS=2;vS=2} @Self
+
+milk_stingerhead:
+  Skills:
+    - aura{auraName=unmilkable} @self
+    - consumeslot @trigger
+    - giveitem{i=StingerheadPoison} @trigger
+    - playanimation{a=0} @trigger
+    - sound{s=item.bottle.fill;p=0.69} @self
