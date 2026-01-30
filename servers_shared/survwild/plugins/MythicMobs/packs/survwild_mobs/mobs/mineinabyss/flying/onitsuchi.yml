@@ -41,3 +41,4 @@ onitsuchi:
     #- setspeed{type=flying;speed=1.2} @self ~onSpawnOrLoad
     - state{mid=onitsuchi;s=attack} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}

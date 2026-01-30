@@ -10,7 +10,8 @@ pebbleimpact:
   Skills:
     - effect:particles{particle=Electric_Spark;amount=10;hS=1;vS=1;y=.5}
     - damage{a=3}
-    - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6} 
+    - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}
+    - aura{auraName=pebblehit;duration=10;cotd=false;i=5;cod=true} @targetedtarget #for mobs to check what they have been hit by
 
 pebbletick:
   Skills:

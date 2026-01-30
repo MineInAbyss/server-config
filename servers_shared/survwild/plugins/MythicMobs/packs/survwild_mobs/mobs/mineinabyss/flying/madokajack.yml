@@ -46,3 +46,4 @@ madokajack:
     - effect:sound{s=mineinabyss:entity.madokajack.death;v=4;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.madokajack.hurt;v=4;p=0.8} @self ~onDamaged
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}
