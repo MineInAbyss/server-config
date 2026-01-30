@@ -1,0 +1,16 @@
+headshot_pebble_impact:
+  Cooldown: 10
+  Conditions:
+  Skills:
+    - aura{auraName=headshotstun;duration=9999;c=1;ms=3;cotd=false;i=5;cod=true;rd=true;mergeAll=true} @Self
+    - skill{s=headshot_stun_weak;delay=1} #skill applying the stun effect
+
+headshot_stun_weak:
+  Cooldown: 2
+  Conditions:
+    - hasaurastacks{n=headshotstun;s=2} false #ensures mob has only been stunned n amount of times to avoid abuse
+  Skills:
+    - setAI{ai=false} @self
+    - potion{t=SLOW_FALLING;d=60;p=false} @self
+    - delay 60
+    - setAI{ai=true} @self

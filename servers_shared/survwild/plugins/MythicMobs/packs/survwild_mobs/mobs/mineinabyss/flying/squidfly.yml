@@ -39,3 +39,4 @@ squidfly:
     #- setspeed{type=flying;speed=1.5} @self ~onSpawnOrLoad
     - state{mid=squidfly;s=attack} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}

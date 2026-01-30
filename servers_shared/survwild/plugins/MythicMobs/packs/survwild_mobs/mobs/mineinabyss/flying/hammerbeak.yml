@@ -60,6 +60,7 @@ hammerbeak:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}
 
 
 
@@ -124,3 +125,4 @@ hammerbeakLarge:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}
