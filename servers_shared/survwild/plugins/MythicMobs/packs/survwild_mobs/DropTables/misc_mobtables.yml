@@ -22,3 +22,13 @@ MilkBucketDrop:
 StingerheadPoison:
   Drops:
   - geary mineinabyss:stingerhead_poison
+
+YomotsubiWingDrop:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:yomotsubi_wing 1-1 1 nolooting
+
+ShiratsubiWingDrop:
+  MaxItems: 1
+  Drops:
+  - geary mineinabyss:shiratsubi_wing 1-1 1 nolooting
