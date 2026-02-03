@@ -33,3 +33,6 @@ okibo:
     - skill{s=displayHealth} ~onDamaged
     - skill{s=milk_mob} ~onInteract ?~holding{m=bucket}
     #- sound{s=entity.goat.milk;p=0.5} @self ~onInteract ?~holding{m=bucket} # if you want sounds to be mob specific remove them from the milk skill and move them into mob skills
+    - skill{s=shear_okibo} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - skill{s=shear_mob} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - onDeath{onDeathSkill=okibo_death_drop} @self ?!hasaura{auraName=unshearable}
