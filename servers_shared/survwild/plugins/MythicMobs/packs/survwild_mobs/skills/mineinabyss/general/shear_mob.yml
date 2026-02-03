@@ -1,0 +1,5 @@
+shear_mob:
+  Skills:
+    - aura{auraName=unshearable;duration=1200} @self
+    - playanimation{a=0} @trigger
+    - sound{s=item.shears.snip} @self

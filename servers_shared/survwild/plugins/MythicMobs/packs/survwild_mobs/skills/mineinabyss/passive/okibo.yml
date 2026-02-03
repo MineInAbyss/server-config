@@ -1,0 +1,9 @@
+shear_okibo:
+  Skills:
+    - dropitem{i=gray_wool 3-5.999} @self
+
+okibo_death_drop:
+  Conditions:
+  - chance{chance=0.6}
+  Skills:
+    - dropitem{i=gray_wool 3-5.999} ?!hasaura{auraName=unshearable}

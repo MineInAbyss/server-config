@@ -1,5 +1,5 @@
 ashimite:
-  Type: SHEEP
+  Type: SHEEP #change this :tuh:
   SpawnCategory: passive
   Health: 35
   Display: "<#2597D9>Ashimite"
@@ -27,9 +27,6 @@ ashimite:
     - geary mineinabyss:ashimite_meat_raw 1-2 0.6
     - geary mineinabyss:ashimite_hoof 1-2 0.3
     - geary mineinabyss:ashimite_antlers 1 0.3
-    - LIGHT_BLUE_WOOL 1-2 0.6
-
-
   Model:
     Id: ashimite
     ViewRadius: 48
@@ -48,6 +45,9 @@ ashimite:
     - skill{s=deerDeath} @self ~onDeath
     - skill{s=milk_mob} ~onInteract ?~holding{m=bucket}
     #- sound{s=entity.goat.milk;p=0.5} @self ~onInteract ?~holding{m=bucket} # if you want sounds to be mob specific remove them from the milk skill and move them into mob skills
+    - skill{s=shear_ashimite} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - skill{s=shear_mob} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - onDeath{onDeathSkill=ashimite_death_drop} @self ?!hasaura{auraName=unshearable}
 baby_ashimite:
   Type: SHEEP
   Health: 12
