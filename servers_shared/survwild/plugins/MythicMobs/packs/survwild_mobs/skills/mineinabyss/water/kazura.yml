@@ -1,0 +1,8 @@
+kazura_squirt:
+  Cooldown: 60
+  Skills:
+    - blackscreen{duration=20;delay=20} @PlayersInRadius{r=3}
+    - potion{type=blindness;d=100;delay=20} @PlayersInRadius{r=5}
+    - potion{type=darkness;d=200;delay=20} @PlayersInRadius{r=5}
+    - fear{delay=20} @self
+    - sound{s=entity.glow_squid.squirt;p=1.8;delay=20} @self
