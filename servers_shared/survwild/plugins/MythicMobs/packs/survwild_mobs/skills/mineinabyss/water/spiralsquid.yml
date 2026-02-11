@@ -1,0 +1,6 @@
+spiral_squirt:
+  Cooldown: 20
+  Skills:
+    - potion{type=blindness;d=60;delay=20} @PlayersInRadius{r=5}
+    - fear{speed=0.2;delay=20} @self
+    - sound{s=entity.squid.squirt;p=0.8;delay=20} @self

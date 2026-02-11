@@ -29,3 +29,5 @@ spiralsquid:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=spiral_squirt} ~onDamaged
+    - sound{s=entity.squid.hurt;p=0.75} @self ~onDamaged
