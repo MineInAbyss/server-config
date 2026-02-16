@@ -1,0 +1,18 @@
+generic_shell_damaged:
+  Skills:
+    - aura{auraName=genericshelldamaged;ms=4;c=<skill.stacks>;d=9999;cotd=false;rd=true;mergeAll=true} @self
+    # insert sound
+    # insert particle effect
+    - skill{s=generic_shell_break}
+
+generic_shell_break:
+  Conditions:
+    - hasaurastacks{n=genericshelldamaged;s=4} true
+  Skills:
+    - submodel{mid=<skill.mob>;subpart=stone;remove=true}
+    #- submodel{mid=<skill.mob>;subpart=b_stone;remove=true}
+    - delay 2
+    # insert sound
+    # insert particle effect
+    - damage{a=10} @self
+    - fear{speed=0.35f;directionchangeinterval=20;feardistance=10.0f;rotationticks=5} @self

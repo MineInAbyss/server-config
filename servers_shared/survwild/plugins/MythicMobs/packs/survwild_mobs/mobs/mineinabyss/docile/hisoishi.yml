@@ -42,6 +42,7 @@ hisoishi:
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged
+    - skill{s=generic_shell_damaged;stacks=1;mob=hisoishi} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXE}
 
     - skill{s=hs_backup} @self ~ondamaged
     - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
