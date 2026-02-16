@@ -34,5 +34,6 @@ abyssal_snail:
     - effect:sound{s=mineinabyss:axolotl.idle_air;v=4;p=0.2} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.axolotl.death;v=4;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.axolotl.hurt;v=4;p=0.2} @self ~onDamaged
+    - skill{s=generic_shell_damaged;stacks=2;mob=abyssal_snail} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXE}
     - skill{s=displayHealth} ~onDamaged
     - skill{s=breathe} @self ~onSpawnOrLoad
