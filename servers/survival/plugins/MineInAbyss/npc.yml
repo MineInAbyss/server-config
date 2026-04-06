@@ -1,191 +1,289 @@
 npcs:
-  gondola_assistant_gb:
-    id: gondola_assistant_gb
-    customName: Belze
-    location: -397.0,128.0,-35.0 45,0
+  orth_trader_01:
+    id: orth_trader_01
+    customName: <b><#AA00AA>Odroy, The Apothecary
+    type: TRADER
+    location: -546.0,110.0,315.0 159.41418,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant3
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: GONDOLA
-    dialogId: gondola_unlock_gp
-    ticketId: route_l1_grandpier
-  gondola_assistant_ww:
-    id: gondola_assistant_ww
-    customName: Warka
-    location: -295.0,-58.0,376.0 330,0
+    bbModel: npc_male01
+    tradeTableId: orth_trader_01
+  orth_trader_02:
+    id: orth_trader_02
+    customName: <b><#AA0000>Underworld Merchant, Nereth
+    type: TRADER
+    location: -573.0,111.0,287.0 139.92558,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant1
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: GONDOLA
-    dialogId: gondola_unlock_ww
-    ticketId: route_l1_wwgondola
-  gondola_assistant_sc:
-    id: gondola_assistant_sc
-    customName: Yelme
-    location: 82633.5,104.0,-93.5 135,0
+    bbModel: npc_male02
+    tradeTableId: orth_trader_02
+  orth_trader_03:
+    id: orth_trader_03
+    customName: <b><#FF5555>Norah The Warped
+    type: TRADER
+    location: -567.0,121.0,307.0 190.95528,0.0
     scale: 1,1,1
-    bbModel: yelme
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: GONDOLA
-    dialogId: gondola_unlock_sc
-    ticketId: route_l2_seekercamp
-  station_guildhq_npc:
-    id: station_guildhq_npc
-    customName: Traveling Merchant
-    location: -154.5,135.0,-535.5 315,0
+    bbModel: npc_male03
+    tradeTableId: orth_trader_03
+  orth_trader_04:
+    id: orth_trader_04
+    customName: <#C6C6C6>Sculk Lord Larry
+    type: TRADER
+    location: -541.0,111.0,307.0 104.35303,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_guildhq_okibo:
-    id: station_guildhq_okibo
-    customName: Okibo
-    location: -149.0,135.0,-537.0 45,0
-    type: DIALOG
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    dialogId: orth_station_okibo
-  station_residential_npc:
-    id: station_residential_npc
-    customName: Traveling Merchant
-    location: -329.5,183.0,-491.5 315,0
+    bbModel: npc_male04
+    tradeTableId: orth_trader_04
+  orth_trader_05:
+    id: orth_trader_05
+    customName: <b><#FFFF55>Wheat Dealer John
+    type: TRADER
+    location: -565.0,110.0,285.0 316.68835,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_residential_okibo:
-    id: station_residential_okibo
-    customName: Okibo
-    location: -326.0,183.0,-493.0 270,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
-  station_grandpier_npc:
-    id: station_grandpier_npc
-    customName: Traveling Merchant
-    location: -564.5,128.0,-20.5 270,0
+    bbModel: npc_male04
+    tradeTableId: orth_trader_05
+  orth_trader_06:
+    id: orth_trader_06
+    customName: <b><#FFAA00>Bee Keeper Bill
+    type: TRADER
+    location: 131.0,91.0,629.0 0.0,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_grandpier_okibo:
-    id: station_grandpier_okibo
-    customName: Okibo
-    location: -566.5,128.0,-23.0 315,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
-  station_netherwgate_npc:
-    id: station_netherwgate_npc
-    customName: Traveling Merchant
-    location: -506.5,112.0,358.5 90,0
+    bbModel: npc_male06
+    tradeTableId: orth_trader_06
+  orth_trader_07:
+    id: orth_trader_07
+    customName: <b><#FF5555>Meat Slinger John
+    type: TRADER
+    location: -340.0,151.0,-532.0 0.0,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_netherwgate_okibo:
-    id: station_netherwgate_okibo
-    customName: Okibo
-    location: -508.5,112.0,354.5 315,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
-  station_wharfeast_npc:
-    id: station_wharfeast_npc
-    customName: Traveling Merchant
-    location: 105.5,82.0,610.5 315,0
+    bbModel: npc_male07
+    tradeTableId: orth_trader_07
+  orth_trader_08:
+    id: orth_trader_08
+    customName: <b><#55FF55>Pothead Pete
+    type: TRADER
+    location: -323.0,151.0,-533.0 0.0,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_wharfeast_okibo:
-    id: station_wharfeast_okibo
-    customName: Okibo
-    location: 101.0,82.0,613.0 225,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
-  station_blackmarket_npc:
-    id: station_blackmarket_npc
-    customName: Traveling Merchant
-    location: 14.5,135.0,683.5 180,0
+    bbModel: npc_male08
+    tradeTableId: orth_trader_08
+  orth_trader_09:
+    id: orth_trader_09
+    customName: <b><#AA00AA>Bucket Bill
+    type: TRADER
+    location: -311.0,151.0,-536.0 0.0,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_blackmarket_okibo:
-    id: station_blackmarket_okibo
-    customName: Okibo
-    location: 16.5,135.0,685.5 135,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
-  station_towerdist_npc:
-    id: station_towerdist_npc
-    customName: Traveling Merchant
-    location: 487.5,126.0,-177.5 225,0
+    bbModel: npc_male08
+    tradeTableId: orth_trader_09
+  orth_trader_10:
+    id: orth_trader_10
+    customName: <b><#DEB12D>Storage Dayne
+    type: TRADER
+    location: -345.0,177.0,-574.0 0.0,0.0
     scale: 1,1,1
-    bbModel: npcgondola_variant2
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_npc
-  station_towerdist_okibo:
-    id: station_towerdist_okibo
-    customName: Okibo
-    location: 484.5,126.0,-178.0 315,0
-    scale: 1.8,1.8,1.8
-    bbModel: okibo
-    tradeTable:
-      id: test_table
-    tradeTableId: ""
-    type: DIALOG
-    dialogId: orth_station_okibo
+    bbModel: npc_male10
+    tradeTableId: orth_trader_10
+  orth_trader_11:
+    id: orth_trader_11
+    customName: <b><#FFAA00>Geomancy Enjoyer Alistair
+    type: TRADER
+    location: -338.0,183.0,-486.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male11
+    tradeTableId: orth_trader_11
+  orth_trader_12:
+    id: orth_trader_12
+    customName: <b><#AA0000>Boy<#FF5555>, Lord of Currency
+    type: TRADER
+    location: -558.0,128.0,-20.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: habo
+    tradeTableId: orth_trader_12
+  orth_trader_13:
+    id: orth_trader_13
+    customName: <b><#55FF55>Plant Lover Cress
+    type: TRADER
+    location: -319.0,183.0,-489.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male12
+    tradeTableId: orth_trader_13
+  orth_trader_14:
+    id: orth_trader_14
+    customName: <b><#AA00AA>Gem Lover Veris
+    type: TRADER
+    location: -341.0,183.0,-512.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male14
+    tradeTableId: orth_trader_14
+  orth_trader_15:
+    id: orth_trader_15
+    customName: <b><#555555>Stone Man Heath
+    type: TRADER
+    location: -311.0,183.0,-508.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male15
+    tradeTableId: orth_trader_15
+  orth_trader_16:
+    id: orth_trader_16
+    customName: <b><#55FFFF>Handyman Bob
+    type: TRADER
+    location: -345.0,183.0,-509.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male16
+    tradeTableId: orth_trader_16
+  orth_trader_17:
+    id: orth_trader_17
+    customName: <b><#55FFFF>Keen Weaver, Quentin
+    type: TRADER
+    location: 198.0,110.0,578.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female01
+    tradeTableId: orth_trader_17
+  orth_trader_18:
+    id: orth_trader_18
+    customName: <b><#FF55FF>Issac, the Intricate Glazer
+    type: TRADER
+    location: 205.0,110.0,574.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female02
+    tradeTableId: orth_trader_18
+  orth_trader_19:
+    id: orth_trader_19
+    customName: <b><#00AAAA>Tags
+    type: TRADER
+    location: 528.0,126.0,-164.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female03
+    tradeTableId: orth_trader_19
+  orth_trader_20:
+    id: orth_trader_20
+    customName: <b><#FFFF55>Jacob
+    type: TRADER
+    location: 493.0,127.0,-172.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female04
+    tradeTableId: orth_trader_20
+  orth_trader_21:
+    id: orth_trader_21
+    customName: ":siggy:"
+    type: TRADER
+    location: 529.0,126.0,-146.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female05
+    tradeTableId: orth_trader_21
+  orth_trader_22:
+    id: orth_trader_22
+    customName: <b><#00AA00>Bilton
+    type: TRADER
+    location: 528.0,126.0,-135.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female06
+    tradeTableId: orth_trader_22
+  orth_trader_23:
+    id: orth_trader_23
+    customName: <b><#55FF55>Berney
+    type: TRADER
+    location: 537.0,126.0,-135.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female07
+    tradeTableId: orth_trader_23
+  orth_trader_24:
+    id: orth_trader_24
+    customName: <b><#AA0000>Mark
+    type: TRADER
+    location: 533.0,126.0,-143.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female08
+    tradeTableId: orth_trader_24
+  orth_trader_25:
+    id: orth_trader_25
+    customName: <b><#FFFF55>Jeff
+    type: TRADER
+    location: 564.0,133.0,-137.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female09
+    tradeTableId: orth_trader_25
+  orth_trader_26:
+    id: orth_trader_26
+    customName: <b><#FF5555>Hamilton
+    type: TRADER
+    location: 570.0,133.0,-137.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female10
+    tradeTableId: orth_trader_26
+  orth_trader_27:
+    id: orth_trader_27
+    customName: <b><#FFFF55>Robert
+    type: TRADER
+    location: 512.0,126.0,-156.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_female11
+    tradeTableId: orth_trader_27
+  orth_trader_28:
+    id: orth_trader_28
+    customName: <b><#00AAAA>Ocean Fanatic Frank
+    type: TRADER
+    location: -545.0,110.0,282.0 50.124084,0.0
+    scale: 1,1,1
+    bbModel: npc_female12
+    tradeTableId: orth_trader_28
+  orth_trader_29:
+    id: orth_trader_29
+    customName: <b><#AA00AA>Jag
+    type: TRADER
+    location: 512.0,127.0,-171.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male01
+    tradeTableId: orth_trader_29
+  orth_trader_30:
+    id: orth_trader_30
+    customName: <b><#AA00AA>Void Seeker Evril
+    type: TRADER
+    location: -331.0,183.0,-522.0 0.0,0.0
+    scale: 1,1,1
+    bbModel: npc_male02
+    tradeTableId: orth_trader_30
+  orth_trader_31:
+    id: orth_trader_31
+    customName: <b><#00AAAA>Glass Master Gael
+    type: TRADER
+    location: -582.0,110.0,278.0 292.53986,0.0
+    scale: 1,1,1
+    bbModel: npc_male03
+    tradeTableId: orth_trader_31
+  orth_trader_32:
+    id: orth_trader_32
+    customName: <b><#FF5555>Cementer Cedric
+    type: TRADER
+    location: -567.0,111.0,277.0 217.33171,0.0
+    scale: 1,1,1
+    bbModel: npc_male04
+    tradeTableId: orth_trader_32
+  orth_trader_33:
+    id: orth_trader_33
+    customName: Mudboy Murdock
+    type: TRADER
+    location: -570.0,111.0,278.0 270.19498,0.0
+    scale: 1,1,1
+    bbModel: npc_male04
+    tradeTableId: orth_trader_33
+  orth_trader_34:
+    id: orth_trader_34
+    customName: <#FF5555>DJ Rutrix
+    type: TRADER
+    location: -557.0,110.0,283.0 14.129052,0.0
+    scale: 1,1,1
+    bbModel: npc_male06
+    tradeTableId: orth_trader_34
+  orth_trader_35:
+    id: orth_trader_35
+    customName: The Headmaster
+    type: TRADER
+    location: -572.0,121.0,297.0 108.673004,0.0
+    scale: 1,1,1
+    bbModel: npc_male07
+    tradeTableId: orth_trader_35
+  orth_trader_36:
+    id: orth_trader_36
+    customName: <b><#00AA00>Benner<#55FF55>, Also Lord Of Currency
+    type: TRADER
+    location: -559.0,128.0,-20.0 160.00804,0.0
+    scale: 1,1,1
+    bbModel: npc_female02
+    tradeTableId: orth_trader_36
