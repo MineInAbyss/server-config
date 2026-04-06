@@ -1,0 +1,635 @@
+tradeTables:
+  orth_trader_01:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:magma_cream, amount: 4 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:fuwagi_foot, amount: 5 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:glistering_melon_slice, amount: 10 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:silkfang_eye, amount: 2 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:madokajack_eye, amount: 2 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:billabonk_sac, amount: 2 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:titanjaw_pearl, amount: 3 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:sakuranbo_dust, amount: 2 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 64 }
+          output: { prefab: minecraft:dragon_breath, amount: 1 }
+  orth_trader_02:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:netherrack, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:soul_sand, amount: 6 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:soul_soil, amount: 6 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:nether_quartz_ore, amount: 10 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:magma_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:nether_gold_ore, amount: 29 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:bone_block, amount: 7 }
+  orth_trader_03:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:warped_stem, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:crimson_stem, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:basalt, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:blackstone, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:gilded_blackstone, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:crying_obsidian, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:shroomlight, amount: 48 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:warped_nylium, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:crimson_nylium, amount: 16 }
+  orth_trader_04:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:sculk, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:sculk_catalyst, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:sculk_vein, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:sculk_sensor, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:sculk_shrieker, amount: 4 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:ochre_froglight, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:verdant_froglight, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:pearlescent_froglight, amount: 64 }
+  orth_trader_05:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:wheat, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 14 }
+          output: { prefab: minecraft:hay_block, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:wheat_seeds, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pumpkin_seeds, amount: 6 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:melon_seeds, amount: 8 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:beetroot_seeds, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:bone_meal, amount: 64 }
+  orth_trader_06:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 5 }
+          output: { prefab: minecraft:bee_nest, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 6 }
+          output: { prefab: minecraft:beehive, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:honey_bottle, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:honeycomb, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 5 }
+          output: { prefab: minecraft:honey_block, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:honeycomb_block, amount: 64 }
+  orth_trader_07:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cooked_chicken, amount: 10 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cooked_beef, amount: 12 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:bread, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:golden_apple, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 16 }
+          output: { prefab: minecraft:enchanted_golden_apple, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:golden_carrot, amount: 8 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cake, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:billabonk_leg_raw, amount: 11 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: mineinabyss:corpse_weeper_meat_raw, amount: 17 }
+  orth_trader_08:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+  orth_trader_09:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:powder_snow_bucket, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:axolotl_bucket, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 6 }
+          output: { prefab: minecraft:pufferfish_bucket, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 6 }
+          output: { prefab: minecraft:tropical_fish_bucket, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:salmon_bucket, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:cod_bucket, amount: 1 }
+  orth_trader_10:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:brown_shulker_box, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:light_blue_shulker_box, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:yellow_shulker_box, amount: 1 }
+  orth_trader_11:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:pointed_dripstone, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 5 }
+          output: { prefab: minecraft:dripstone_block, amount: 64 }
+  orth_trader_12:
+    trades:
+        - input:  { prefab: mineinabyss:orb_piercer_spike, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:orb_piercer_face_fragments, amount: 4 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:splitjaw_scales, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:splitjaw_gunk, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:tesuchi_scales, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:silkfang_eye, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:silkfang_silk, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:cyatoria_feather, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:rohana_tail, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:rohana_powder, amount: 14 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:dosetori_wing, amount: 12 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:dosetori_bone, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:corpse_weeper_eye, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:corpse_weeper_feather, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:hammerbeak_beak, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:hammerbeak_feather, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:onitsuchi_skull, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:onitsuchi_feather, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kuongatari_abdomen, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kuongatari_abdomen_cooked, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kuongatari_juice, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:madokajack_scales, amount: 12 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:madokajack_bone, amount: 11 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:madokajack_poop, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:parasitic_watershrooms, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:chimokami_tail, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:chimokami_fang, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:ashimite_antlers, amount: 8 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:ashimite_hoof, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:hashofu_body, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:hashofu_eye, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:abyssal_snail_gunk, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:abyssal_snail_shell, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kakatsumuri_shell, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kagi_tachikiri_pincer, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:titanjaw_pearl, amount: 5 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:titanjaw_scale, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:makihige_tentacle, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:makihige_ink_sac, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:kazura_squid_ink_sac, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:sakuranbo_dust, amount: 5 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+  orth_trader_13:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:moss_block, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:moss_carpet, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:azalea_leaves, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:flowering_azalea_leaves, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:azalea, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:flowering_azalea, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:big_dripleaf, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:small_dripleaf, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:hanging_roots, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:glow_lichen, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:glow_berries, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:large_fern, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:tall_grass, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pale_hanging_moss, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pale_moss_block, amount: 32 }
+  orth_trader_14:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:amethyst_shard, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:amethyst_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:budding_amethyst, amount: 8 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:sea_lantern, amount: 32 }
+  orth_trader_15:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:deepslate, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cobbled_deepslate, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:tuff, amount: 64 }
+  orth_trader_16:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:spyglass, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:compass, amount: 4 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:clock, amount: 4 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:flint_and_steel, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:shears, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:lead, amount: 8 }
+  orth_trader_17:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:skull_banner_pattern, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:creeper_banner_pattern, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:flower_banner_pattern, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:piglin_banner_pattern, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:globe_banner_pattern, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:mojang_banner_pattern, amount: 1 }
+  orth_trader_18:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:gray_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:black_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:red_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:orange_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:yellow_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:lime_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:green_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:white_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_gray_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_blue_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:brown_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cyan_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:blue_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:purple_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:magenta_glazed_terracotta, amount: 32 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pink_glazed_terracotta, amount: 32 }
+  orth_trader_19:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 9 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 9 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_20:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 13 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 9 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_21:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_22:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_23:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 16 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_24:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 8 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_25:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_26:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 13 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 11 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_27:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 16 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 14 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 13 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 14 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_28:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 2 }
+          output: { prefab: minecraft:prismarine, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:prismarine_bricks, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 6 }
+          output: { prefab: minecraft:dark_prismarine, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:brain_coral_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:brain_coral, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:brain_coral_fan, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:bubble_coral_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:bubble_coral, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:bubble_coral_fan, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:fire_coral_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:fire_coral, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:fire_coral_fan, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:tube_coral_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:tube_coral, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:tube_coral_fan, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:horn_coral_block, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:horn_coral, amount: 16 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 4 }
+          output: { prefab: minecraft:horn_coral_fan, amount: 16 }
+  orth_trader_29:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 16 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:enchanted_book, amount: 1 }
+  orth_trader_30:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:end_stone, amount: 8 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:end_stone_bricks, amount: 12 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 3 }
+          output: { prefab: minecraft:ender_pearl, amount: 16 }
+  orth_trader_31:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:tinted_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:white_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:orange_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:magenta_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_blue_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:yellow_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:lime_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pink_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:gray_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_gray_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cyan_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:purple_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:blue_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:brown_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:green_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:red_stained_glass, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:black_stained_glass, amount: 64 }
+  orth_trader_32:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:white_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_gray_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:gray_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:black_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:red_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:orange_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:yellow_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:lime_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:green_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:cyan_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:light_blue_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:blue_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:purple_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:magenta_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:pink_concrete_powder, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:brown_concrete_powder, amount: 64 }
+  orth_trader_33:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:mud, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:muddy_mangrove_roots, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:packed_mud, amount: 64 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 1 }
+          output: { prefab: minecraft:mud_bricks, amount: 64 }
+  orth_trader_34:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_pigstep, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_5, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_otherside, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_relic, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_ward, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_strad, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_13, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_stal, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_mellohi, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_mall, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_chirp, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_far, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_blocks, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_cat, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_wait, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 10 }
+          output: { prefab: minecraft:music_disc_11, amount: 1 }
+  orth_trader_35:
+    trades:
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+        - input:  { prefab: mineinabyss:orth_coin, amount: 12 }
+          output: { prefab: minecraft:player_head, amount: 1 }
+  orth_trader_36:
+    trades:
+        - input:  { prefab: mineinabyss:mantoyer_horns, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:woodcrier_horn, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:rockwalker_mandible, amount: 14 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:hisoishi_claw, amount: 16 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:buroguro_stinger, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:daikonchu_carapace, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:stinger_horn, amount: 9 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:spittleshrub_root, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:edusan_whisker, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:swarmshocker_jelly, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:tachikatana_scale, amount: 7 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:tachikatana_claw, amount: 6 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:shiratsubi_wing, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
+        - input:  { prefab: mineinabyss:spikewalker_meat, amount: 10 }
+          output: { prefab: mineinabyss:orth_coin, amount: 1 }
