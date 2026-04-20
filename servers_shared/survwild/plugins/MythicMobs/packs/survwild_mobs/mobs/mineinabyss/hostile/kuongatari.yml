@@ -2,7 +2,7 @@ kuongatari:
   Type: CAVE_SPIDER
   SpawnCategory: hostile
   Display: "<#1FB53D>Kuongatari"
-  Health: 30
+  Health: 50
   Damage: 7
   AIGoalSelectors:
     - clear
@@ -19,9 +19,9 @@ kuongatari:
     #DigOutOfGround: true
     Collidable: true
     #Silent: false
-    FollowRange: 20
-    MovementSpeed: 0.32
-    MaxCombatDistance: 20
+    FollowRange: 30
+    MovementSpeed: 0.27
+    MaxCombatDistance: 30
     DigOutOfGround: true
     PreventOtherDrops: true
   Model:
@@ -29,7 +29,7 @@ kuongatari:
     ViewRadius: 48
     Drive: false
     DamageTint: true
-    Scale: 1.2
+    Scale: 0.5
   DamageModifiers:
     - DROWNING 0
     - FIRE 15
@@ -42,11 +42,16 @@ kuongatari:
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - state{mid=kuongatari;s=attack} @self ~onAttack
-    - skill{s=Kuon_Summon} @target ~onDamaged 0.13
-    - skill{s=Changetarget} ~onTimer:160 <99%
-    - shieldbreak{duration=100} @target ~onattack 0.35
+    - skill{s=Changetarget} ~onTimer:180 <99%
     - dismount ~onTimer:20
+    - state{mid=kuongatari;s=attack} @self ~onAttack
+    #add onAttack poison effect and Kuon egg effect
+
+    - aura{auraName=kuongatariflower;duration=100000;onStart=kuongatari_flower_start;onTick=kuongatari_player_detect;c=1;maxStacks=1;cotd=false;rd=true} @self ~onTimer:10 ?blocktype{type=white_tulip} ?!incombat
+    - skill{s=kuongatari_aggro_engage} ~onTimer:10
+
+    - potion{type=SLOW_FALLING;duration=120;level=1;p=false} @self ~onTimer:100
+    - shieldbreak{duration=100} @target ~onAttack 0.35
 kuongatari_summon:
   Type: SPIDER
   Display: "<#1FB53D>Baby Kuongatari"
@@ -64,8 +69,8 @@ kuongatari_summon:
     Collidable: true
     # Silent: true
     FollowRange: 30
-    MovementSpeed: 0.4
-    MaxCombatDistance: 20
+    MovementSpeed: 0.35
+    MaxCombatDistance: 30
   Equipment:
     - TORCH HAND
   Drops:
@@ -78,13 +83,20 @@ kuongatari_summon:
     ViewRadius: 48
     Drive: false
     DamageTint: true
-    Scale: 1
+    Scale: 0.35
   DamageModifiers:
     - DROWNING 0
     - FIRE 15
     - FIRE_TICK 3
   Skills:
+    - skill{s=displayHealth} ~onDamaged
+    - skill{s=Changetarget} ~onTimer:180 <99%
     - dismount ~onTimer:20
-    - shieldbreak{duration=100} @target ~onattack 0.35
-    - skill{s=Kuon_Summon} @target ~onDamaged 0.01
-    - skill{s=Changetarget} ~onTimer:160 <99%
+    - state{mid=kuongatari;s=attack} @self ~onAttack
+    #add onAttack poison effect and Kuon egg effect
+
+    - aura{auraName=kuongatariflower;duration=100000;onStart=kuongatari_flower_start;onTick=kuongatari_player_detect;c=1;maxStacks=1;cotd=false;rd=true} @self ~onTimer:10 ?blocktype{type=white_tulip} ?!incombat
+    - skill{s=kuongatari_aggro_engage} ~onTimer:10
+
+    - potion{type=SLOW_FALLING;duration=120;level=1;p=false} @self ~onTimer:100
+    - shieldbreak{duration=100} @target ~onAttack 0.35

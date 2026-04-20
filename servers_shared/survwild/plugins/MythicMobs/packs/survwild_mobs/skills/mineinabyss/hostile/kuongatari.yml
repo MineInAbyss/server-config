@@ -1,4 +1,75 @@
-Kuon_Summon:
+kuongatari_flower_start:
+  Cooldown: 5
+  Skills:
+    - setai{ai=false} @self
+    - state{s=decoy;r=false} @self
+
+kuongatari_player_detect:
+  Cooldown: 5
+  Conditions:
+    - playerwithin{d=3} true
+  Skills:
+    - auraremove{aura=kuongatariflower} @self
+    - setai{ai=true} @self
+    - state{s=decoy;r=true} @self
+    - aura{auraName=kuongatariaggro;duration=100;i=1;c=2;maxStacks=1;cotd=false;rd=true} @self
+    - aura{auraName=kuongatariaggro;duration=100;i=1;c=2;maxStacks=1;cotd=false;rd=true;delay=<random.1to40>} @EIR{r=10;types=kuongatari, kuongatari_summon}
+  
+kuongatari_jump:
+  Cooldown: 1
+  Conditions:
+    - gliding false
+  Skills:
+    - cancelevent{sync=true} @self
+    - state{s=jump;r=false} @self
+    - delay 10
+    - velocity{m=set;x=0;y=0.7;z=0} @self
+    - state{s=jump;r=true} @self
+    - delay 5
+    - state{s=walk;r=false} @self
+
+kuongatari_fly:
+  Cooldown: 5
+  Conditions:
+  Skills:
+    - state{s=flight;r=false} @self
+    - state{s=walk;r=true} @self
+    - effect:sound{s=entity.bee.loop_aggressive;sc=hostile;p=0.8;v=0.75} @self
+    - potion{type=SLOW_FALLING;duration=100;level=5;p=false;force=true} @self
+    - aura{auraName=kuongatarifly;onTick=kuongatari_fly_tick;onEnd=kuongatari_fly_end;duration=100;i=1;c=1;maxStacks=1;cotd=false} @self
+    - delay 100
+    - setstance{stance=walking} @self
+
+kuongatari_fly_tick:
+  Cooldown:
+  Conditions:
+  Skills:
+    - velocity{m=add;x=0;y=0;z=0.035;r=true} @self
+    - velocity{m=add;x=0;y=0.015;z=0} @self
+
+kuongatari_fly_end:
+  Cooldown:
+  Conditions:
+  Skills:
+    - state{s=flight;r=true} @self
+    - state{s=walk;r=false} @self
+
+kuongatari_aggro_engage:
+  Cooldown: 5
+  Conditions:
+    - hasaura{n=kuongatariaggro} true
+  Skills:
+    - skill{s=kuongatari_jump}
+    - delay 15
+    - skill{s=kuongatari_fly}
+
+kuongatari_fly_remove:
+  Cooldown: 20
+  Conditions:
+  Skills:
+    - auraremove{aura=kuongatarifly} @self
+
+kuongatari_summon:
   Cooldown: 1
   Conditions:
     - offgcd true
