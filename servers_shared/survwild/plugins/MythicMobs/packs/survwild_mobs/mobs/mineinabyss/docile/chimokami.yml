@@ -6,13 +6,14 @@ chimokami:
   Damage: 4
   AIGoalSelectors:
     - clear
+    - meleeattack
     - randomstroll
     - lookatplayers
     - randomlookaround
     # - fleeplayers{d=15;s=2;ss=1}
   AITargetSelectors:
     - clear
-    - attackers
+    - attacker
   Options:
     KnockbackResistance: 0.08
     Collidable: true

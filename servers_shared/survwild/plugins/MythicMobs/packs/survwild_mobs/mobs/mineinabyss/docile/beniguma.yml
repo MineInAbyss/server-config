@@ -6,6 +6,7 @@ beniguma:
   Damage: 3
   AIGoalSelectors:
     - clear
+    - meleeattack
     - randomstroll
     - lookatplayers
     - randomlookaround
