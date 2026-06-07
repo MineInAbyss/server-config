@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:bone
+  itemName: <#c7bcad>Hisomukuro Rib
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hisomukuro_rib
+  lore:
+  - '<emojy:layer_5>'
+  - <#524D47><i>Its bony on the outside but
+  - <#524D47><i>Metallic on the inside!
+  - <#524D47><i>prehaps i can use this to launch something...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/hisomukuro_rib
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/hisomukuro_rib

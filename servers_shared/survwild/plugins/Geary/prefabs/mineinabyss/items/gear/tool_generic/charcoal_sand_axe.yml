@@ -1,0 +1,21 @@
+set.item:
+  itemName: Charcoal Sand Axe
+  type: minecraft:diamond_axe
+  itemModel: mineinabyss:gear/tools_regular/charcoal_sand_axe
+  maxDamage: 3000
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: shaped
+    items:
+      M: mineinabyss:charcoal_sand_ingot
+      S: minecraft:stick
+    configuration: |-
+      |MM|
+      |MS|
+      | S|
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/charcoal_sand_axe
+  parentModel: item/handheld

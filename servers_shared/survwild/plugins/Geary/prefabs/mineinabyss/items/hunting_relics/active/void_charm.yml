@@ -1,0 +1,49 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#4c6444>Buddstone Tap
+  itemModel: mineinabyss:hunting_relics/void_charm
+  lore:
+  - '<emojy:layer_5> Grade II Relic'
+  - <#43583c>The crystals produced by this Relic, though
+  - <#43583c>visually appealing, are remarkably fragile.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots projectiles on right click.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+      - hasaurastacks{n=buddstonetapcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience / Out of Charge
+  - cooldown:
+      id: buddstone_tap
+      length: 25s
+      display: <#4c6444>Buddstone Tap
+  - mythicSkills:
+    - buddstone_tap
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - buddstone_tap_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:void_charm
+  - mythicSkills:
+    - buddstone_tap_charge
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/buddstone_tap
+  parentModel: item/handheld

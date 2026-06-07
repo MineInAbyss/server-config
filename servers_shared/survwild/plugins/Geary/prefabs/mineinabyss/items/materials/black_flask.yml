@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#0047AB>Black Flask
-  itemModel: mineinabyss:relics/black_flask
+  itemModel: mineinabyss:hunting_relics/black_flask
   lore:
   - Grade IV relic
   - <#3d59ab>A fleshy bottle filled with a black, oily substance.
@@ -43,7 +43,7 @@ observe:
     - type: minecraft:instant_damage
       duration: 1s
 resourcepack:
-  model: mineinabyss:relics/black_flask
+  model: mineinabyss:hunting_relics/black_flask
   textures:
     layers:
-      - mineinabyss:relics/black_flask
+      - mineinabyss:hunting_relics/black_flask

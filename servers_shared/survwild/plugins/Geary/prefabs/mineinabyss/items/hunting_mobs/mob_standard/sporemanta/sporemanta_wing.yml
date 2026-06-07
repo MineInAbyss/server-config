@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:leather
+  itemName: <#6C19BF>Spore Manta Wing
+  itemModel: mineinabyss:hunting_mobs/mob_standard/sporemanta_wing
+  lore:
+  - '<emojy:layer_5>'
+  - <#f1b259>Leathery wing laced in a poisonous powder
+  food:
+    saturation: 0.8
+    nutrition: 2
+  consumable:
+    animation: EAT
+
+observe:
+  itemConsumed:
+  - become: parent
+  - applyPotionEffects:
+    - type: minecraft:poison
+      duration: 10s
+      amplifier: 1
+    - type: minecraft:hunger
+      duration: 10s
+      amplifier: 3
+
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/sporemanta_wing
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/sporemanta_wing

@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:quartz
+  itemName: <#A63535>Orb Piercer Spike
+  itemModel: mineinabyss:hunting_mobs/mob_standard/orb_piercer_spike
+  lore:
+  - '<emojy:layer_4>:cosmetic_orth_coin:'
+  - <#D9D9D9>Drops from the fiercely territorial
+  - <#D9D9D9>Orb Piercer. Handle carefully!
+  - <#D9D9D9>Its venom is very lethal.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/orb_piercer_spike
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/orb_piercer_spike

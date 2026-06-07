@@ -1,0 +1,26 @@
+set.item:
+  itemName: <#f7e7ce>Tactile Roots
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/tactile_roots
+  lore:
+  - '<emojy:layer_2> Grade III Relic'
+  - <#d7c9b3>The perfect cave raiding boots for those with a green thumb… or toe?
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants movement 
+  - <font:small_text><gray><shadow:#00000000>based on the block the user is on.
+passive:
+- match:
+  - inInventory
+  every: 1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:tactile_roots
+  - mythicSkills:
+    - tactile_roots_trigger
+
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/tactile_roots

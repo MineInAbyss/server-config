@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#755237>Spikewalker Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/spikewalker_meat
+  lore:
+  - '<emojy:layer_5>:cosmetic_orth_coin:'
+  - <#ccbd99><i>Inedible, hard, rough,
+  - <#ccbd99><i>and gamey...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/spikewalker_meat
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/spikewalker_meat

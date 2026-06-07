@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:leather
+  itemName: <#FF771C>Makihige Tentacle
+  itemModel: mineinabyss:hunting_mobs/mob_standard/makihige_tentacle
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#5221A6>Seems useful. I better keep this...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/makihige_tentacle
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/makihige_tentacle

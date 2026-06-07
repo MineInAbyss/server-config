@@ -1,0 +1,25 @@
+set.item:
+  itemName: <#AC8053>Rock Top
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/rock_top
+  lore:
+  - '<emojy:layer_1> Grade IV Relic'
+  - <#BB9672>Fanatics posture that even if the world itself
+  - <#BB9672>were to stop spinning, Rock Top would not. 
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Slowly spins the user.
+passive:
+- match:
+  - inInventory
+  every: 2s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:rock_top
+  - mythicSkills:
+    - rock_top
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/rock_top

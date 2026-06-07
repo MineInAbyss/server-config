@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:ink_sac
+  itemName: <#A9CCCA>Kazura Squid Ink Sac
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kazura_squid_ink_sac
+  lore:
+  - '<emojy:layer_4>:cosmetic_orth_coin:'
+  - <#807E78>The sac is white, but its ink is black.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kazura_squid_ink_sac
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kazura_squid_ink_sac

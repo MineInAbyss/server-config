@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:red_wool
+  itemName: <#eeffff>Chimokami Tail
+  itemModel: mineinabyss:hunting_mobs/mob_standard/chimokami_tail
+  lore:
+  - '<emojy:layer_2>:cosmetic_orth_coin:'
+  - <#7a243f><i>These critters like darkness.
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/chimokami_tail
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/chimokami_tail

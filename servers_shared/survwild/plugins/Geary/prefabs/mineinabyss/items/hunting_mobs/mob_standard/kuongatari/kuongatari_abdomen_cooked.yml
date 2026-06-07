@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#1FB53D>Cooked Kuongatari Abdomen
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_cooked
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#167D2A>Suprisingly tasty for such a small bug..
+  food:
+    saturation: 0.6
+    nutrition: 1
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:kuongatari_abdomen_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:kuongatari_abdomen_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_cooked

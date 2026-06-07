@@ -1,0 +1,24 @@
+set.item:
+  itemName: Blank Template Rune
+  type: minecraft:clock
+  itemModel: mineinabyss:intermediate/smithing_template/blank_template_rune
+set.recipes:
+  result:
+    prefab: mineinabyss:blank_template_rune
+  discoverRecipes: true
+  recipes:
+  - type: shaped
+    items:
+      T:
+        prefab: mineinabyss:tesuchi_scales
+      M:
+        prefab: mineinabyss:makihige_shell
+    configuration: |-
+      |TMT|
+      |M M|
+      |TMT|
+resourcepack:
+  model: mineinabyss:intermediate/smithing_template/blank_template_rune
+  textures:
+    layers:
+    - mineinabyss:intermediate/smithing_template/blank_template_rune

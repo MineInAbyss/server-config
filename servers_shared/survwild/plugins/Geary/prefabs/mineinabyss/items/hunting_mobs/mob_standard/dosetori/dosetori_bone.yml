@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:bone
+  itemName: <#59ac7a>Dosetori Bone
+  itemModel: mineinabyss:hunting_mobs/mob_standard/dosetori_bone
+  lore:
+  - '<emojy:layer_2><emojy:layer_3>:cosmetic_orth_coin:'
+  - <#d6b12c><i>This thing sounds... hollow.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/dosetori_bone
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/dosetori_bone

@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:quartz
+  itemName: <#755237>Spikewalker Spike
+  itemModel: mineinabyss:hunting_mobs/mob_standard/spikewalker_spike
+  lore:
+  - '<emojy:layer_5>'
+  - <#ccbd99><i>It may not look pointy,
+  - <#ccbd99><i>but don't let it poke ya!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/spikewalker_spike
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/spikewalker_spike

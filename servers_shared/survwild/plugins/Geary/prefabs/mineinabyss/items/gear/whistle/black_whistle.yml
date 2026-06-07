@@ -1,0 +1,15 @@
+set.item:
+  type: minecraft:clock
+  itemModel: mineinabyss:gear/whistle/black_whistle
+  itemName: Black Whistle
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/whistle/black_whistle
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      length: 5s
+      id: whistle
+  - playSound:
+      sound: mineinabyss:item.whistle.black

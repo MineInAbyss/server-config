@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:leather
+  itemName: <#c26d23>Daikonchu Wing
+  itemModel: mineinabyss:hunting_mobs/mob_standard/daikonchu_wing
+  lore:
+  - '<emojy:layer_3>'
+  - <#f1b259>They're still buzzing...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/daikonchu_wing
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/daikonchu_wing

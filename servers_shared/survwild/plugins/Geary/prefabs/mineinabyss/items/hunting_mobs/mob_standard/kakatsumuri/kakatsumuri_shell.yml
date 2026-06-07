@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:prismarine_crystals
+  itemName: <#7D93FF>Kakatsumuri Shell
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kakatsumuri_shell
+  lore:
+  - '<emojy:layer_3>:cosmetic_orth_coin:'
+  - <#B8FFBA><i>Even after death the shell
+  - <#B8FFBA><i>still keeps it bright glow.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kakatsumuri_shell
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kakatsumuri_shell

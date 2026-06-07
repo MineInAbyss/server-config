@@ -1,0 +1,22 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#454545>Tesuchi Tail
+  itemModel: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+  lore:
+  - '<emojy:layer_2>'
+  - <yellow>Obtained by cutting of the <#616161>Tail</#616161> in the
+  - <green>Forest of Temptation<yellow>.
+  - <#595959><i>It is said it tastes like rubber.
+  - <#595959><i>is strangely very squishy!...
+  food:
+    saturation: 0.4
+    nutrition: 2
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:tesuchi_tail_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/tesuchi_tail

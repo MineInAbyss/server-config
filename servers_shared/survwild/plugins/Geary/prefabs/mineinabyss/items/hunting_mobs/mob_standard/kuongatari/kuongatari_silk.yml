@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:string
+  itemName: <#1FB53D>Kuongatari Silk
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kuongatari_silk
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>'
+  - <#167D2A><i>A very thin, yet surprisingly
+  - <#167D2A><i>tensile strand of silk.
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kuongatari_silk
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kuongatari_silk

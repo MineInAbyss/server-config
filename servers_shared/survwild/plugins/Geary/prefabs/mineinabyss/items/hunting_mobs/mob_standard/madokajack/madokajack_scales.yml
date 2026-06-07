@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:prismarine_shard
+  itemName: <#1C439E>Madokajack Scales
+  itemModel: mineinabyss:hunting_mobs/mob_standard/madokajack_scales
+  lore:
+  - '<emojy:layer_3>:cosmetic_orth_coin:'
+  - <#369AFF>Though hard, these scales are
+  - <#369AFF>slimy and smell of feces!?
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/madokajack_scales
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/madokajack_scales

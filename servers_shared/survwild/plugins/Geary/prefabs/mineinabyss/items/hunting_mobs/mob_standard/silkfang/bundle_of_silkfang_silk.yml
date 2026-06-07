@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:cobweb
+  itemName: <#116AAD>Bundle of Silkfang Silk
+  itemModel: mineinabyss:hunting_mobs/mob_standard/bundle_of_silkfang_silk
+  lore:
+  - '<emojy:layer_1><emojy:layer_2>'
+  - <#ED4C4C>Most people don't enjoy getting
+  - <#ED4C4C>stuck in this.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/bundle_of_silkfang_silk
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/bundle_of_silkfang_silk

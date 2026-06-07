@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:slime_ball
+  itemName: <reset><#785F34>Abyssal Snail Gunk
+  itemModel: mineinabyss:hunting_mobs/mob_standard/abyssal_snail_gunk
+  lore:
+  - '<emojy:layer_5>:cosmetic_orth_coin:'
+  - <#A68348><i>Many delvers feel strangely compelled
+  - <#A68348><i>to lick slime such as this. Well, <b>DON'T</b>!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/abyssal_snail_gunk
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/abyssal_snail_gunk

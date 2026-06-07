@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:pointed_dripstone
+  itemName: <#a3f7a2>Buroguro Stinger
+  itemModel: mineinabyss:hunting_mobs/mob_standard/buroguro_stinger
+  lore:
+  - '<emojy:layer_3>:cosmetic_orth_coin:'
+  - <#38896d><i>It's still drippin'!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/buroguro_stinger
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/buroguro_stinger

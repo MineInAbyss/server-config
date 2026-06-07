@@ -1,0 +1,19 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#1FB53D>Kuongatari Abdomen
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#167D2A>Only the desperate eat this raw...
+  food:
+    saturation: 0.2
+    nutrition: 1
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:kuongatari_abdomen_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen

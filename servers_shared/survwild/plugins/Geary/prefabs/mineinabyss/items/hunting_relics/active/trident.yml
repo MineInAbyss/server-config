@@ -1,0 +1,50 @@
+set.item:
+  itemName: <#68CCBF><b>Tranquil Pierce
+  itemModel: mineinabyss:hunting_relics/trident
+  type: minecraft:trident
+  lore:
+  - '<emojy:layer_4> Grade I Relic'
+  - <#3C8C82>A spear shape object carved out of the core from
+  - <#3C8C82>a Goblet of Giants containing netherworld runes.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Charges when in hand. Can be thrown
+  - <font:small_text><gray><shadow:#00000000>on left click. Uses riptide in water on right click.
+  enchantments:
+    - enchant: minecraft:riptide
+      level: 2
+    - enchant: minecraft:impaling
+      level: 5
+    - enchant: minecraft:sharpness
+      level: 5
+  #itemFlags: [ HIDE_ENCHANTS ]
+  unbreakable: {}
+  enchantmentGlintOverride: false
+  enchantable: 0
+resourcepack:
+  model: mineinabyss:hunting_relics/tranquil_pierce
+observe:
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=trident;s=3} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Charge
+  - cooldown:
+      id: tranquilpierce
+      length: 22s
+      display: <#68CCBF>Tranquil Pierce
+  - mythicSkills:
+    - tranquil_pierce_throw
+passive:
+- match:
+  - inInventory
+  every: 0.5s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+          item: mineinabyss:trident  
+  - mythicSkills:
+    - tranquil_pierce_charge

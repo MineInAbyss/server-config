@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#BDBDBD>Cooked Neritantan Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/neritantan_meat_cooked
+  lore:
+  - '<emojy:layer_2><emojy:layer_3>'
+  - <white><i>Very tasty as they mostly eat <#B82DEB><i>Baracocha fruit.
+  - <white><i>Do not get in between a Neritantan and a Baracocha fruit!
+  food:
+    saturation: 9.6
+    nutrition: 6
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:neritantan_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:neritantan_meat_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/neritantan_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/neritantan_meat_cooked

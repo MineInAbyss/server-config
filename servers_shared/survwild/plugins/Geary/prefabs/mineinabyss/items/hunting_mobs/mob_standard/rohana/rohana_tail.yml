@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:blaze_rod
+  itemName: <#6C19BF>Rohana Tail
+  itemModel: mineinabyss:hunting_mobs/mob_standard/rohana_tail
+  lore:
+  - '<emojy:layer_2><emojy:layer_4>:cosmetic_orth_coin:'
+  - <#FF1FB4><i>Can be used to make brewing stands
+  - <#FF1FB4><i>or other useful relics...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/rohana_tail
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/rohana_tail

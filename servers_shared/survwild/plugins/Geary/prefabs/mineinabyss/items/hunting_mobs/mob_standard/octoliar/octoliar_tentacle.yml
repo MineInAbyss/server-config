@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:twisting_vines
+  itemName: <#ADD8E6>Octoliar Tentacle
+  itemModel: mineinabyss:hunting_mobs/mob_standard/octoliar_tentacle
+  lore:
+  - '<emojy:layer_5>'
+  - <#B8FFBA><i>Although a little wet, it's
+  - <#B8FFBA><i>as tough as a rock!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/octoliar_tentacle
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/octoliar_tentacle

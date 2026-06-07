@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:crimson_roots
+  itemName: <dark_purple>Amakagame Whiskers
+  itemModel: mineinabyss:hunting_mobs/mob_standard/amakagame_whiskers
+  lore:
+  - <light_purple>An <dark_purple>Amakagame <light_purple>is almost all stomach,
+  - <light_purple>so they have few salvageable body parts
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/amakagame_whiskers
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/amakagame_whiskers

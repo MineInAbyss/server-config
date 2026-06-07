@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:quartz
+  itemName: <#03AC13>Stinger Horn
+  itemModel: mineinabyss:hunting_mobs/mob_standard/stinger_horn
+  lore:
+  - '<emojy:layer_2><emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#167D2A><i>The beak of a Stinger sharp enough to pierce flesh.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/stinger_horn
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/stinger_horn

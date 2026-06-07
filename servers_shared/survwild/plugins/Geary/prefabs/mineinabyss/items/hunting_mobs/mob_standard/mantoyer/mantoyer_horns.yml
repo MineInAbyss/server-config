@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:flint
+  itemName: <#BDA55D>Man-toyer Horns
+  itemModel: mineinabyss:hunting_mobs/mob_standard/mantoyer_horns
+  lore:
+  - '<emojy:layer_1>:cosmetic_orth_coin:'
+  - <#A68348><i>I could cut myself on these
+  - <#A68348><i>if I'm not careful.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/mantoyer_horns
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/mantoyer_horns

@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:string
+  itemName: <#116AAD>Silkfang Silk
+  itemModel: mineinabyss:hunting_mobs/mob_standard/silkfang_silk
+  lore:
+  - '<emojy:layer_1><emojy:layer_2>:cosmetic_orth_coin:'
+  - <#ED4C4C><i>Somewhat fine silk with a
+  - <#ED4C4C><i>large amount of tensile strength.
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/silkfang_silk
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/silkfang_silk

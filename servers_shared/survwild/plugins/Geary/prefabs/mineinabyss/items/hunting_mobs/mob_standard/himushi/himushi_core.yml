@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:magma_cream
+  itemName: <#FFA904>Himushi Core
+  itemModel: mineinabyss:hunting_mobs/mob_standard/himushi_core
+  lore:
+  - '<emojy:layer_3>'
+  - <#DB5807><i>A powerful magma core.
+  - <#DB5807><i>Could be useful in powerful relics...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/himushi_core
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/himushi_core

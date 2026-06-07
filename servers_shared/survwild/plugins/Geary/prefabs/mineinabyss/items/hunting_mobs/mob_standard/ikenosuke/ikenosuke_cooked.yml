@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:cod
+  itemName: <#9ff3f3>Cooked Ikenosuke
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked
+  lore:
+  - '<emojy:layer_2><emojy:layer_3><emojy:layer_4>'
+  - <#edfeff>The skin is tough, but the meat... Yum!
+  food:
+    saturation: 7
+    nutrition: 4
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:ikenosuke_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:ikenosuke_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked

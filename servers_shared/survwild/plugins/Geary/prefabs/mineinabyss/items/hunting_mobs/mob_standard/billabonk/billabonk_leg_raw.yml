@@ -1,0 +1,19 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#b754c2>Raw Billabonk Leg
+  itemModel: mineinabyss:hunting_mobs/mob_standard/billabonk_leg_raw
+  lore:
+  - '<emojy:layer_2>'
+  - <#0357AB><i>Do the stanky leg
+  food:
+    saturation: 0.4
+    nutrition: 2
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:billabonk_leg_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/billabonk_leg_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/billabonk_leg_raw

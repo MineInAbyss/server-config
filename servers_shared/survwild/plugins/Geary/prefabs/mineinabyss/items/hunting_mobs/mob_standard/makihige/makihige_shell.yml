@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:obsidian
+  itemName: <#FF771C>Makihige Shell
+  itemModel: mineinabyss:hunting_mobs/mob_standard/makihige_shell
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>'
+  - <#5221A6>I hope I can make armor from this
+  - <#5221A6>some day. But how?
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/makihige_shell
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/makihige_shell

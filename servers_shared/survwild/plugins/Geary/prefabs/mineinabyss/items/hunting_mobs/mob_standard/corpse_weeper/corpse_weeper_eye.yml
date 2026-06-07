@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:ender_eye
+  itemName: <#D12B26>Corpse-Weeper Eye
+  itemModel: mineinabyss:hunting_mobs/mob_standard/corpse_weeper_eye
+  lore:
+  - '<emojy:layer_2>:cosmetic_orth_coin:'
+  - <red><i>It feels like it's staring into your soul...
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/corpse_weeper_eye
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/corpse_weeper_eye

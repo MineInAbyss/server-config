@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#D12B26>Cooked Corpse-Weeper Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/corpse_weeper_meat_cooked
+  lore:
+  - '<emojy:layer_2>'
+  - <red><i>The stench is awful but it tastes so good...
+  food:
+    saturation: 12.8
+    nutrition: 8
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:corpse_weeper_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:corpse_weeper_meat_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/corpse_weeper_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/corpse_weeper_meat_cooked

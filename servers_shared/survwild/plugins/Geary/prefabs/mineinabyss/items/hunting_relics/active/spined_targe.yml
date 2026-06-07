@@ -1,0 +1,19 @@
+set.item:
+  type: minecraft:shield
+  itemModel: mineinabyss:hunting_relics/spined_targe
+  itemName: <#0047AB>Spined Targe
+  maxDamage: 556
+  lore:
+  - 'Grade III Relic'
+  - <#3d59ab>A relic born from decades of Orthian research. A shield which
+  - <#3d59ab>is made from a rare ore found in the depths of the abyss.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Lunges the user forward on left click.
+observe:
+  itemLeftClick:
+  - become: parent
+  - cooldown:
+      id: shieldbash
+      length: 20s
+      display: <#0047AB>Spined Targe
+  - mythicSkills:
+    - shieldbash

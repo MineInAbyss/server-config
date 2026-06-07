@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:iron_block
+  itemName: <#9ff3f3>Ikonia Plate
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ikonia_plate
+  lore:
+  - '<emojy:layer_5>'
+  - <#edfeff>The skin is tough, but the meat... Yum!
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ikonia_plate
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ikonia_plate

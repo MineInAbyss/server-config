@@ -1,0 +1,42 @@
+set.item:
+  itemName: <#68CCBF><b>Chain Missile
+  type: minecraft:netherite_hoe
+  itemModel: mineinabyss:hunting_relics/arc_staff
+  lore:
+  - '<emojy:layer_4> Grade I Relic'
+  - <#3C8C82>A spear shape object carved out of the core from
+  - <#3C8C82>a Goblet of Giants containing netherworld runes.
+  - <#265c55><i>It is rumored to return to the user after being thrown.
+  enchantmentGlintOverride: true
+  unbreakable: {}
+  enchantable: 0
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_relics/arc_staff
+observe:
+  itemRightClick:
+  - become: parent
+ # - ensure:
+ #     mythicConditions:
+  #    - hasaurastacks{n=A;s=3} true
+ #   onFail:
+  #  - sendActionBar:
+ #       text: <red>Out of Charge
+  - mythicSkills:
+    - arc_laser
+  itemLeftClick:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - cooldown:
+      id: ChainMissiles
+      length: 12s
+      display: <#617B94>Chain Missiles
+  - mythicSkills:
+    - ChainMissile

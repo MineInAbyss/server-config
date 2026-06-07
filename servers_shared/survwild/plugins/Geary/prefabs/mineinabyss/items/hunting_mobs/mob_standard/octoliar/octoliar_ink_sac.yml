@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:glow_ink_sac
+  itemName: <#ADD8E6>Octoliar Ink Sac
+  itemModel: mineinabyss:hunting_mobs/mob_standard/octoliar_ink_sac
+  lore:
+  - '<emojy:layer_5>'
+  - <#B8FFBA><i>Dark at first, but after
+  - <#B8FFBA><i>mixing it with the air it
+  - <#B8FFBA><i>starts to glow!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/octoliar_ink_sac
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/octoliar_ink_sac

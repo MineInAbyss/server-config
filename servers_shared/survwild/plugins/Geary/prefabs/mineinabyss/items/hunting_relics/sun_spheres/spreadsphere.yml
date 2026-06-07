@@ -1,0 +1,30 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#AC8053>Spread Sphere
+  itemModel: mineinabyss:hunting_relics/l2_sunsphere
+  lore:
+  - '<emojy:layer_2> Grade IV Relic'
+  - <#BB9672>It is an egg-shaped relic with
+  - <#BB9672>grey patterns on its surface.
+  - <#BB9672>It has a rigrid texture and has a cracking
+  - <#BB9672>noise like eggs if pressure is applied to it.
+  - <#C4A484><i>Shoots multiple projectiles
+  - <#C4A484><i>after being thrown.
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: spreadsphere
+      length: 5s
+      display: <#7D9472>Spread Sphere
+  - mythicSkills:
+    - spreadthrow
+  - consumeItem:
+      type: mineinabyss:spreadsphere
+    when:
+    - chance: 1
+resourcepack:
+  model: mineinabyss:hunting_relics/l2_sunsphere
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/l2_sunsphere

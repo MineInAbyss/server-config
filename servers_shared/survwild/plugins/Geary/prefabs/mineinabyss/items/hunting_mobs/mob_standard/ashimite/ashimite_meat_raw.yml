@@ -1,0 +1,30 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#2597D9>Raw Ashimite Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw
+  lore:
+  - '<emojy:layer_5>'
+  - <#824E21><i>Seems like a great source of food.
+  food:
+    saturation: 1.8
+    nutrition: 3
+  consumable:
+    consumeEffects:
+      - type: APPLY
+        probability: 0.35
+        effects:
+          - type: minecraft:hunger
+            duration: 10s
+            amplifier: 2
+            isAmbient: true
+            hasParticles: true
+            hasIcon: true
+  useRemainder:
+    prefab: mineinabyss:ashimite_meat_bone
+replaceBurnedDrop:
+  prefab: mineinabyss:ashimite_meat_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw

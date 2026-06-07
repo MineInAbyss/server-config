@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:dead_horn_coral
+  itemName: <#2597D9>Ashimite Antlers
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_antlers
+  lore:
+  - '<emojy:layer_5>:cosmetic_orth_coin:'
+  - <#824E21><i>They use these to assert dominance.
+  - <#824E21><i>Yet they run off when you get close...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ashimite_antlers
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ashimite_antlers
