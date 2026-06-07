@@ -47,8 +47,8 @@ kuongatari:
     - state{mid=kuongatari;s=attack} @self ~onAttack
     #add onAttack poison effect and Kuon egg effect
 
-    - aura{auraName=kuongatariflower;duration=100000;onStart=kuongatari_flower_start;onTick=kuongatari_player_detect;c=1;maxStacks=1;cotd=false;rd=true} @self ~onTimer:10 ?blocktype{type=white_tulip} ?!incombat
-    - skill{s=kuongatari_aggro_engage} ~onTimer:10
+    - aura{auraName=kuongatariflower;duration=100000;onStart=kuongatari_flower_start;onTick=kuongatari_player_detect;c=1;maxStacks=1;cotd=false;rd=true} @self ~onTimer:10 ?!incombat
+    - skill{s=kuongatari_aggro_engage} ~onTimer:10 ?hasaura{n=kuongatariaggro}
 
     - potion{type=SLOW_FALLING;duration=120;level=1;p=false} @self ~onTimer:100
     - shieldbreak{duration=100} @target ~onAttack 0.35
@@ -83,7 +83,7 @@ kuongatari_summon:
     ViewRadius: 48
     Drive: false
     DamageTint: true
-    Scale: 0.35
+    Scale: 0.42
   DamageModifiers:
     - DROWNING 0
     - FIRE 15

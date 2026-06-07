@@ -7,7 +7,7 @@ kuongatari_flower_start:
 kuongatari_player_detect:
   Cooldown: 5
   Conditions:
-    - playerwithin{d=3} true
+    - (playerwithin{d=5} true || incombat true) true
   Skills:
     - auraremove{aura=kuongatariflower} @self
     - setai{ai=true} @self
@@ -57,7 +57,6 @@ kuongatari_fly_end:
 kuongatari_aggro_engage:
   Cooldown: 5
   Conditions:
-    - hasaura{n=kuongatariaggro} true
   Skills:
     - skill{s=kuongatari_jump}
     - delay 15
