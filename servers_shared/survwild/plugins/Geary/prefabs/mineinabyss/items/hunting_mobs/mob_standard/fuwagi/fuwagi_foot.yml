@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:rabbit_foot
+  itemName: <#E0E0E0>Fuwagi Foot
+  itemModel: mineinabyss:hunting_mobs/mob_standard/fuwagi_foot
+  lore:
+  - '<emojy:layer_1><emojy:layer_2>'
+  - <#FF3A24><i>Rumor has it if you have a fuwagi
+  - <#FF3A24><i>foot in your inventory, you will
+  - <#FF3A24><i>have good luck.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/fuwagi_foot
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/fuwagi_foot

@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:warped_fungus
+  itemModel: mineinabyss:hunting_mobs/mob_standard/parasitic_watershrooms
+  itemName: <#913188>Parasitic Watershrooms
+  lore:
+  - '<emojy:layer_4>:cosmetic_orth_coin:'
+  - <yellow>Sucks nutrients from its host, releasing
+  - <yellow>them back when the host is near death.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/parasitic_watershrooms
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/parasitic_watershrooms

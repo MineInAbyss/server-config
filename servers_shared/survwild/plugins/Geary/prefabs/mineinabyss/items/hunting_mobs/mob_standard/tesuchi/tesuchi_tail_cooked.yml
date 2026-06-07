@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#454545>Cooked Tesuchi Tail
+  itemModel: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+  lore:
+  - '<emojy:layer_2>'
+  - <yellow>Obtained by cutting of the <#616161>Tail</#616161> in the
+  - <green>Forest of Temptation<yellow>.
+  - <#595959><i>tastes more like chicken now.
+  - <#595959><i>it's not so squishy anymore...
+  food:
+    saturation: 6
+    nutrition: 5
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input:
+      prefab: mineinabyss:tesuchi_tail
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input:
+      prefab: mineinabyss:tesuchi_tail
+    experience: 2
+    cookingTime: 50

@@ -1,0 +1,18 @@
+set.item:
+  type: minecraft:paper
+  itemName: <#9C0F2C>Yomotsubi Abdomen
+  itemModel: mineinabyss:yomotsubi_abdomen_raw
+  lore:
+  - '<emojy:layer_3><emojy:layer_5>'
+  - <#9c5d2c><i>Perhaps this could be cooked...
+  food:
+    saturation: 0.2
+    nutrition: 1
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:yomotsubi_abdomen_cooked
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/yomotsubi_abdomen_raw

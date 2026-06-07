@@ -1,0 +1,22 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#10DEA7>Raw Okibo Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw
+  lore:
+  - '<emojy:layer_orth><emojy:layer_1>'
+  - <yellow>Usually found in <green>Orth as a source of
+  - <yellow>transportation of goods, <#11E8AF>Okibos
+  - <yellow>are also a great source of food
+  - <yellow>due to their large size.
+  food:
+    saturation: 1.8
+    nutrition: 3
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:okibo_meat_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw

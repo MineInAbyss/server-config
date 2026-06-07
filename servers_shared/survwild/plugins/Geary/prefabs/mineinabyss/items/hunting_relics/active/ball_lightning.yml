@@ -1,0 +1,50 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#4c6444>Ball Lightning
+  itemModel: mineinabyss:hunting_relics/ball_lightning
+  lore:
+  - '<emojy:layer_4> Grade II Relic'
+  - <#43583c>Only the battery powering this weapon is considered a Relic.
+  - <#43583c>The rest was added for unknown and certainly dangerous purposes.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots slow moving projectile on right click.
+  - <font:small_text><gray><shadow:#00000000>Projectile deals damage over time.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>2} true
+      - hasaurastacks{n=balllightningcharge} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience / Out of Charge
+  - cooldown:
+      id: ball_lightning
+      length: 35s
+      display: <#4c6444>Ball Lightning
+  - mythicSkills:
+    - lightning_ball
+passive:
+- match:
+  - inHand
+  every: 0.1s
+  run:
+  - become: parent
+  - mythicSkills:
+    - ball_lightning_charge
+- match:
+  - inInventory
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 40 ]
+          item: mineinabyss:ball_lightning
+  - mythicSkills:
+    - ball_lightning_charge
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/ball_lightning
+  parentModel: item/handheld

@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#257BEB>Cooked Demonfish
+  itemModel: mineinabyss:hunting_mobs/mob_standard/demonfish_cooked
+  lore:
+  - '<emojy:layer_5>'
+  - <#1B5BAD>A staple food among delvers.
+  food:
+    saturation: 9.6
+    nutrition: 6
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:demonfish_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:demonfish_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/demonfish_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/demonfish_cooked

@@ -1,0 +1,33 @@
+set.item:
+  itemName: <#68CCBF><b>Arc Staff
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/arc_staff
+  lore:
+  - '<emojy:layer_4> Grade I Relic'
+  - <#3C8C82>A spear shape object carved out of the core from
+  - <#3C8C82>a Goblet of Giants containing netherworld runes.
+  - <#265c55><i>It is rumored to return to the user after being thrown.
+  enchantmentGlintOverride: true
+  weapon:
+    damagePerAttack: 0
+resourcepack:
+  model: mineinabyss:hunting_relics/arc_staff
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=laser;s=>0} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Charge
+  #- mythicSkills:
+  #  - arc_laser
+passive:
+- match:
+  - inInventory
+  every: 10s
+  run:
+  - become: parent
+  - mythicSkills:
+    - laser_charge

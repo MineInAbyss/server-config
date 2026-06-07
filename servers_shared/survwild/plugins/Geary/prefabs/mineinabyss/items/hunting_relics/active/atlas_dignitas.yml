@@ -1,0 +1,50 @@
+set.item:
+  type: minecraft:netherite_pickaxe
+  itemModel: mineinabyss:hunting_relics/atlas_dignitas
+  itemName: <#c9ae74><b>Atlas Dignitas
+  lore:
+  - '<emojy:layer_3> Grade I Relic'
+  - <#d4be90>This Relic has found success in the mining, construction
+  - <#d4be90>and physical therapy industries, strangely enough.
+  - <font:small_text><gray><shadow:#00000000>Active ability. On right click starts to consume food in exchange of a mining speed buff.
+  enchantments:
+    - enchant: minecraft:silk_touch
+      level: 1
+    - enchant: minecraft:efficiency
+      level: 6
+  enchantable: 0
+  # tooltipDisplay:
+  #   hiddenComponents:
+  #     - enchantments
+  enchantmentGlintOverride: false
+  # tool:
+  #   defaultMiningSpeed: 1.0
+  #   damagePerBlock: 0
+  #   rules:
+  #     - correctForDrops: true
+  #       speed: 46
+  #       blockTypes:
+  #         - mineable/pickaxe
+  unbreakable: {}
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - FoodLevel{a=>=8} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Food
+  - cooldown:
+      id: AtlasDignitas
+      length: 80s
+      display: <#c9ae74>Atlas Dignitas
+  - mythicSkills:
+    - atlas_trigger
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - atlas_dignitas
+
+resourcepack:
+  model: mineinabyss:hunting_relics/atlas_dignitas

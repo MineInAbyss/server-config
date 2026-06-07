@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#649984>Cooked Chikyuoebi Claw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+  lore:
+  - '<emojy:layer_5>'
+  - <#943e27><i>Tastes like lobster!
+  food:
+    saturation: 9.6
+    nutrition: 7
+  consumable:
+    animation: EAT
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:chikyuoebi_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:chikyuoebi_raw
+    experience: 2
+    cookingTime: 50

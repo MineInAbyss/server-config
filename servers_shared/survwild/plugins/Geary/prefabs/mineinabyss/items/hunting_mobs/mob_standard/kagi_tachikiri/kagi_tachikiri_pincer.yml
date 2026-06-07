@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:flint
+  itemName: <#5468A8>Kagi Tachikiri Pincer
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kagi_tachikiri_pincer
+  lore:
+  - '<emojy:layer_5>:cosmetic_orth_coin:'
+  - <#376B36><i>Extremely sharp, watch your fingers!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kagi_tachikiri_pincer
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kagi_tachikiri_pincer

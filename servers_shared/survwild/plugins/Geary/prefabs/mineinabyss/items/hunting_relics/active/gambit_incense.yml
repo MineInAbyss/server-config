@@ -1,0 +1,23 @@
+set.item:
+  type: minecraft:clock
+  itemName: <gold>Gambit Incense
+  itemModel: mineinabyss:hunting_relics/gambit_incense
+  lore:
+  - 'Grade III Relic'
+  - <#cdd13d>The aromas that emanate from this capsule have been described
+  - <#cdd13d>as ranging from pleasant and soothing to downright sickening.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Grants a random potion effect in
+  - <font:small_text><gray><shadow:#00000000>a surrounding area on right click.
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: gambit_incense
+      length: 20s
+      display: <gold>Gambit Incense
+  - mythicSkills:
+    - gambit_incense
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/gambit_incense

@@ -1,9 +1,9 @@
 set.item:
   type: minecraft:clock
   itemName: <dark_gray>Tomorrow Signal
-  itemModel: mineinabyss:relics/tommorow_signal
+  itemModel: mineinabyss:hunting_relics/tommorow_signal
 resourcepack:
-  model: mineinabyss:relics/tommorow_signal
+  model: mineinabyss:hunting_relics/tommorow_signal
 observe:
   itemLeftClick:
   - become: parent

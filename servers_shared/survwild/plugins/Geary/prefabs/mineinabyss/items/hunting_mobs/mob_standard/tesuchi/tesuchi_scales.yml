@@ -1,0 +1,19 @@
+set.item:
+  type: minecraft:clock
+  itemName: <dark_green>Tesuchi Scales
+  itemModel: mineinabyss:hunting_mobs/mob_standard/tesuchi_scales
+  lore:
+  - '<emojy:layer_2>:cosmetic_orth_coin:'
+  - <yellow>Obtained by slaughtering a <#616161>Tesuchi <yellow>in
+  - <green>Forest of Temptation<yellow>.
+  - <#595959><i>It changes colour even in your hand.
+  food:
+    saturation: 1.2
+    nutrition: 2
+  consumable:
+    animation: EAT
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/tesuchi_scales
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/tesuchi_scales

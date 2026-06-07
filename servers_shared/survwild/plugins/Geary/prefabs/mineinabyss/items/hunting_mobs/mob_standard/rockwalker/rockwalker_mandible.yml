@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:brick
+  itemName: <#BE6400>Rock-walker Mandible
+  itemModel: mineinabyss:hunting_mobs/mob_standard/rockwalker_mandible
+  lore:
+  - '<emojy:layer_2><emojy:layer_3>:cosmetic_orth_coin:'
+  - <#A68348><i>The rockwalkers use these as their climbing
+  - <#A68348><i>gear, and its toughness sure looks the part.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/rockwalker_mandible
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/rockwalker_mandible

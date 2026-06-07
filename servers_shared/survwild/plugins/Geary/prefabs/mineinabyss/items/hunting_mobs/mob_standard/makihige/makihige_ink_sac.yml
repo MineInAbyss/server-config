@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:ink_sac
+  itemName: <#FF771C>Makihige Ink Sac
+  itemModel: mineinabyss:hunting_mobs/mob_standard/makihige_ink_sac
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#5221A6><i>With this you might be able to
+  - <#5221A6><i>do something. Probably not though
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/makihige_ink_sac
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/makihige_ink_sac

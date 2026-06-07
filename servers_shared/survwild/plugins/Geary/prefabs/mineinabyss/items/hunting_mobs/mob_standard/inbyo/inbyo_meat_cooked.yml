@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#3D3D3D>Cooked Inbyo Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked
+  lore:
+  - '<emojy:layer_2>'
+  - <#B5B5B5><i>Seems more edible now, though
+  - <#B5B5B5><i>it still smells horrid...
+  food:
+    saturation: 12.8
+    nutrition: 8
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:inbyo_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:inbyo_meat_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked

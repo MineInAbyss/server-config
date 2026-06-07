@@ -1,0 +1,20 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#D8D8D8>Raw Ottobas Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ottobas_meat_raw
+  lore:
+  - '<emojy:layer_2>'
+  - <white><i>A thick layer of fat clings to the meat.
+  - <white><i>Cooking it should help making it edible.
+  food:
+    saturation: 1.8
+    nutrition: 3
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:ottobas_meat_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ottobas_meat_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ottobas_meat_raw

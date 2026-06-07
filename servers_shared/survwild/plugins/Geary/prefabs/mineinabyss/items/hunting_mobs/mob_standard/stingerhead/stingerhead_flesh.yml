@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:rotten_flesh
+  itemModel: mineinabyss:hunting_mobs/mob_standard/stingerhead_flesh
+  itemName: <#9C0F2C>Stingerhead Flesh
+  lore:
+  - '<emojy:layer_5>'
+  - <#EB1742><i>This is definetly not edible!
+  - <#EB1742><i>It reeks of burned dried vomit, much
+  - <#EB1742><i>like Nanachi's Netherworld Stew.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/stingerhead_flesh
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/stingerhead_flesh

@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:lime_dye
+  itemName: <#1FB53D>Kuongatari Juice
+  itemModel: mineinabyss:hunting_mobs/mob_standard/kuongatari_juice
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
+  - <#167D2A>Yuck! And it's sticky too!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/kuongatari_juice
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/kuongatari_juice

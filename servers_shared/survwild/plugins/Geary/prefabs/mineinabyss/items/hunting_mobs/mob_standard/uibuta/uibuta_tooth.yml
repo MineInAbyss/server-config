@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:bone
+  itemName: <#8F2222>Uibuta Tooth
+  itemModel: mineinabyss:hunting_mobs/mob_standard/uibuta_tooth
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>'
+  - <#C42F2F><i>It is fairly big, but suprisingly blunt...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/uibuta_tooth
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/uibuta_tooth

@@ -1,0 +1,43 @@
+set.item:
+  type: minecraft:netherite_sword
+  itemModel: mineinabyss:hunting_relics/capillary_blade
+  itemName: <#a30711><b>Capillary Growth
+  lore:
+  - '<emojy:layer_1> Grade I Relic'
+  - <#c7000e>Rather unceremoniously cobbled together from the
+  - <#c7000e>remains of an Interference Unit, this sword 
+  - <#c7000e>carries on its user's mysterious directives.
+  - <font:small_text><gray><shadow:#00000000>Active ability. Heals the user on kill. After 10
+  - <font:small_text><gray><shadow:#00000000>hits, right click to siphon health from nearby targets.
+  # weapon:
+  #   damagePerAttack: 0
+  unbreakable: {}
+observe:
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - capillary_hit
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - hasaurastacks{n=capillarygrowthstack;s=10} true
+    onFail:
+    - sendActionBar:
+        text: <red>More blood is required...  
+  - cooldown:
+      id: capillary_growth
+      length: 30s
+      display: <#617B94>Capillary Growth
+  - mythicSkills:
+    - capillary_growth_effect
+passive:
+  - match:
+    - inHand
+    every: 1s
+    run:
+    - become: parent
+    - mythicSkills:
+      - capillary_growth_onattack
+resourcepack:
+  model: mineinabyss:hunting_relics/capillary_blade

@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:leather
+  itemName: <#10DEA7>Okibo Fur
+  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_fur
+  lore:
+  - '<emojy:layer_orth><emojy:layer_1>'
+  - <#BDBDBD><i>Looks like it will keep me warm
+  - <#BDBDBD><i>through the entire winter if needed.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/okibo_fur
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/okibo_fur

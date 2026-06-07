@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:chorus_fruit
+  itemName: <dark_purple>Baracocha Fruit
+  itemModel: mineinabyss:hunting_mobs/mob_standard/baracocha_fruit
+  lore:
+  - <light_purple>Neritantans love eating these. Fittingly,
+  - <dark_purple>Amakagame <light_purple>smell just like them to lure
+  - <light_purple>in their prey.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/baracocha_fruit
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/baracocha_fruit

@@ -1,0 +1,29 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#AC8053>Sun Sphere
+  itemModel: mineinabyss:hunting_relics/l5_sunsphere
+  lore:
+  - '<emojy:layer_5> Grade IV Relic'
+  - <#BB9672>It is an egg-shaped relic with
+  - <#BB9672>golden patterns on its surface.
+  - <#BB9672>It has a complicated texture and has a cracking
+  - <#BB9672>noise like eggs if pressure is applied to it.
+  - <#C4A484><i>Emits light when it is being thrown.
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: sunsphere
+      length: 5s
+      display: <#F0EB65>Sun Sphere
+  - mythicSkills:
+    - sunthrow
+  - consumeItem:
+      type: mineinabyss:sunsphere
+    when:
+    - chance: 1
+resourcepack:
+  model: mineinabyss:hunting_relics/l5_sunsphere
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/l5_sunsphere

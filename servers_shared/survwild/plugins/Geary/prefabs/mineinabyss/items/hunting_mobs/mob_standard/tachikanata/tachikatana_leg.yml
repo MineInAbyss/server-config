@@ -1,0 +1,18 @@
+set.item:
+  type: minecraft:apple
+  itemName: <#00FFFF>Tachikatana Leg
+  itemModel: mineinabyss:hunting_mobs/mob_standard/tachikatana_leg
+  lore:
+  - '<emojy:layer_4><emojy:layer_5>'
+  - <#1B5BAD><i>Tastes like crab!
+  - <#1B5BAD><i>Too tough to cook!
+  food:
+    saturation: 5
+    nutrition: 5
+  consumable:
+    animation: EAT
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/tachikatana_leg
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/tachikatana_leg

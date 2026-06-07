@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:bone_meal
+  itemName: <#C42D2D>Virinsipede Segments
+  itemModel: mineinabyss:hunting_mobs/mob_standard/virinsipede_segments
+  lore:
+  - '<emojy:layer_5>'
+  - <#8F425B><i>I've heard their body makes
+  - <#8F425B><i>for a great fertiliser.
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/virinsipede_segments
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/virinsipede_segments

@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:flint
+  itemName: <#2597D9>Ashimite Hoof
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_hoof
+  lore:
+  - '<emojy:layer_5>:cosmetic_orth_coin:'
+  - <#824E21><i>Excellent for starting fires!
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ashimite_hoof
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ashimite_hoof

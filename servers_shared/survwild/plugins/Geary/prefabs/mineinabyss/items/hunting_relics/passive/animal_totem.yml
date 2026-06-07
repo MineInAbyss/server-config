@@ -1,0 +1,30 @@
+set.item:
+  itemName: <#AC8053>Sudden Pinch
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/animal_totem
+  lore:
+  - '<emojy:layer_1><emojy:layer_2> Grade IV Relic'
+  - <#BB9672>Stories have been passed around about a Cave Raider who used this 
+  - <#BB9672>Relic to keep himself constantly awake through his expeditions.
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants short speed buffs when equipped.
+passive:
+- match:
+  - inInventory
+  every: 30s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:animal_totem
+  - applyPotionEffects:
+    - type: minecraft:speed
+      duration: 3s
+      amplifier: 1
+      hasParticles: false
+  - mythicSkills:
+    - sudden_pinch_1
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/sudden_pinch

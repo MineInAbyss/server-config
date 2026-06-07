@@ -1,0 +1,13 @@
+set.item:
+  type: minecraft:clay_ball
+  itemName: <#800080>Edusan Scale
+  itemModel: mineinabyss:hunting_mobs/mob_standard/edusan_scale
+  lore:
+  - '<emojy:layer_5>'
+  - <#ee5bb8><i>Exudes a beautifully ominous aura.
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/edusan_scale
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/edusan_scale

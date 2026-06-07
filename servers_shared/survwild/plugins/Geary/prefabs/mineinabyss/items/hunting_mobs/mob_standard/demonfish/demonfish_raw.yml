@@ -1,0 +1,20 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#257BEB>Raw Demonfish
+  itemModel: mineinabyss:hunting_mobs/mob_standard/demonfish_raw
+  lore:
+  - '<emojy:layer_5>'
+  - <#1B5BAD>Imagine the shame of getting flopped
+  - <#1B5BAD>to death by one of these.
+  food:
+    saturation: 0.4
+    nutrition: 2
+  consumable:
+    animation: EAT
+replaceBurnedDrop:
+  prefab: mineinabyss:demonfish_cooked
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/demonfish_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/demonfish_raw

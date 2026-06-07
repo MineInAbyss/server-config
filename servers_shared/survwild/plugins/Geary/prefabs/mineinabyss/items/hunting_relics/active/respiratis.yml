@@ -1,0 +1,29 @@
+set.item:
+  itemName: <#AC8053>Morinaut Shell
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/respiratis
+  lore:
+  - '<emojy:layer_4> Grade IV Relic'
+  - <#BB9672>Cave Raiders have long tried and failed to use this Relic
+  - <#BB9672>to swim through the Sea of Corpses. Will you be the first?
+  - <font:small_text><gray><shadow:#00000000>Active ability. Grants dolphins
+  - <font:small_text><gray><shadow:#00000000>grace to the user on right click.
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/respiratis
+observe:
+  itemRightClick:
+  - become: parent
+  - cooldown:
+      id: respiratis
+      length: 35s
+      display: <#AC8053>Morinaut Shell
+  - playSound:
+      sound: minecraft:entity.panda.aggressive_ambient
+      volume: 0.5
+      pitch: 0.3
+  - applyPotionEffects:
+    - type: minecraft:dolphins_grace
+      duration: 8s
+      hasParticles: false

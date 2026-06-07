@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:string
+  itemName: <#03AC13>Stinger Wing
+  itemModel: mineinabyss:hunting_mobs/mob_standard/stinger_wing
+  lore:
+  - '<emojy:layer_2><emojy:layer_4><emojy:layer_5>'
+  - <#167D2A><i>A very thin, yet surprisingly
+  - <#167D2A><i>flexible piece of flesh
+disableItemInteractions: {}
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/stinger_wing
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/stinger_wing

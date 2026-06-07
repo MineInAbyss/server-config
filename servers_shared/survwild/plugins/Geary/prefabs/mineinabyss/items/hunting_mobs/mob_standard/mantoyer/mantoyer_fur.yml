@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:brown_wool
+  itemName: <#BDA55D>Man-toyer Fur
+  itemModel: mineinabyss:hunting_mobs/mob_standard/mantoyer_fur
+  lore:
+  - '<emojy:layer_1>'
+  - <#A68348>Thickly furred, and very sturdy...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/mantoyer_fur
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/mantoyer_fur

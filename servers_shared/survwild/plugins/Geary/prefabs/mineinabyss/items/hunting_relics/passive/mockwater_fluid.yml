@@ -1,0 +1,25 @@
+set.item:
+  itemName: <gold>Mockwater Fluid
+  type: minecraft:clock
+  itemModel: mineinabyss:hunting_relics/mockwater_fluid
+  lore:
+  - 'Grade IV Relic'
+  - <#cdd13d>This viscous, living fluid is remarkably tedious to clean off 
+  - <#cdd13d>surfaces once applied, unless the organism wills it so.
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Lets the slime wander outside its container.
+passive:
+- match:
+  - inInventory
+  every: 1s
+  run:
+  - become: parent
+  - ensure:
+        inSlot:
+          slots: [ 9, 10 ]
+          item: mineinabyss:mockwater_fluid
+  - mythicSkills:
+    - mockwater_fluid
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:hunting_relics/mockwater_fluid

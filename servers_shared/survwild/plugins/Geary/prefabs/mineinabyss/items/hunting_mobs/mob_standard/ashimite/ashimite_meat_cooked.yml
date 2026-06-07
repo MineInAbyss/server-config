@@ -1,0 +1,30 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#2597D9>Cooked Ashimite Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_cooked
+  lore:
+  - '<emojy:layer_5>'
+  - <#824E21><i>Very tasty and rich in nutrients!
+  food:
+    nutrition: 8
+    saturation: 12.8
+  consumable:
+    animation: EAT
+  useRemainder:
+    prefab: mineinabyss:ashimite_meat_bone
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:ashimite_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:ashimite_meat_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/ashimite_meat_cooked

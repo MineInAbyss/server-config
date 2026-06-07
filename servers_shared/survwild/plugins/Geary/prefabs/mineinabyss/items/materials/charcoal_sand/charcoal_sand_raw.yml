@@ -1,9 +1,0 @@
-set.item:
-  itemName: <dark_aqua>Raw Charcoal Sand
-  type: minecraft:clock
-  itemModel: mineinabyss:materials/charcoal_sand_raw
-resourcepack:
-  model: mineinabyss:materials/charcoal_sand_raw
-  textures:
-    layers:
-    - mineinabyss:materials/charcoal_sand_raw

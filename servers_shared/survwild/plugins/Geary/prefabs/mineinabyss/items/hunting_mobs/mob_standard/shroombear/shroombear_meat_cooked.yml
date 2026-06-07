@@ -1,0 +1,30 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#85562D>Cooked Shroombear Meat
+  itemModel: mineinabyss:hunting_mobs/mob_standard/shroombear_meat_raw
+  lore:
+  - '<emojy:layer_4>'
+  - <yellow>It's edible and dark in colour.
+  - <#694600>Might smell like excrement
+  - <#694600>if you don't clean it well...
+  food:
+    saturation: 9.6
+    nutrition: 6
+  consumable:
+    animation: EAT
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:shroombear_meat_raw
+    experience: 1
+    cookingTime: 100
+  - type: smoking
+    input: mineinabyss:shroombear_meat_raw
+    experience: 2
+    cookingTime: 50
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/shroombear_meat_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/shroombear_meat_cooked

@@ -1,0 +1,14 @@
+set.item:
+  type: minecraft:spider_eye
+  itemName: <#116AAD>Silkfang Eye
+  itemModel: mineinabyss:hunting_mobs/mob_standard/silkfang_eye
+  lore:
+  - '<emojy:layer_1><emojy:layer_2>:cosmetic_orth_coin:'
+  - <#ED4C4C><i>Rumor has it that a
+  - <#ED4C4C><i>larger arachnid can stare back
+  - <#ED4C4C><i>at you through this...
+resourcepack:
+  model: mineinabyss:hunting_mobs/mob_standard/silkfang_eye
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/mob_standard/silkfang_eye
