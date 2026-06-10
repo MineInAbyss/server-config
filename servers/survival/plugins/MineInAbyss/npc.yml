@@ -146,7 +146,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male01
     tradeTableId: orth_trader_01
-    dialogId: orth_station_okibo
   orth_trader_02:
     id: orth_trader_02
     customName: <b><#AA0000>Underworld Merchant, Nereth
@@ -155,7 +154,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female01
     tradeTableId: orth_trader_02
-    dialogId: orth_station_okibo
   orth_trader_03:
     id: orth_trader_03
     customName: <b><#FF5555>Norah The Warped
@@ -164,7 +162,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female02
     tradeTableId: orth_trader_03
-    dialogId: orth_station_okibo
   orth_trader_04:
     id: orth_trader_04
     customName: <#C6C6C6>Sculk Lord Larry
@@ -173,7 +170,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male01
     tradeTableId: orth_trader_04
-    dialogId: orth_station_okibo
   orth_trader_05:
     id: orth_trader_05
     customName: <b><#FFFF55>Wheat Dealer John
@@ -182,7 +178,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male02
     tradeTableId: orth_trader_05
-    dialogId: orth_station_okibo
   orth_trader_06:
     id: orth_trader_06
     customName: <b><#FFAA00>Bee Keeper Bill
@@ -191,7 +186,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male03
     tradeTableId: orth_trader_06
-    dialogId: orth_station_okibo
   orth_trader_07:
     id: orth_trader_07
     customName: <b><#FF5555>Meat Slinger John
@@ -200,7 +194,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male04
     tradeTableId: orth_trader_07
-    dialogId: orth_station_okibo
   orth_trader_08:
     id: orth_trader_08
     customName: <b><#55FF55>Pothead Pete
@@ -209,7 +202,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male06
     tradeTableId: orth_trader_08
-    dialogId: orth_station_okibo
   orth_trader_09:
     id: orth_trader_09
     customName: <b><#AA00AA>Bucket Bill
@@ -218,7 +210,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male07
     tradeTableId: orth_trader_09
-    dialogId: orth_station_okibo
   orth_trader_10:
     id: orth_trader_10
     customName: <b><#DEB12D>Storage Dayne
@@ -227,7 +218,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male08
     tradeTableId: orth_trader_10
-    dialogId: orth_station_okibo
   orth_trader_11:
     id: orth_trader_11
     customName: <b><#FFAA00>Geomancy Enjoyer Alistair
@@ -236,7 +226,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female12
     tradeTableId: orth_trader_11
-    dialogId: orth_station_okibo
   orth_trader_12:
     id: orth_trader_12
     customName: <b><#AA0000><#AA0000>Boy<#FF5555>, Lord of Currency
@@ -245,7 +234,6 @@ npcs:
     scale: 1,1,1
     bbModel: habo
     tradeTableId: orth_trader_12
-    dialogId: orth_station_okibo
   orth_trader_13:
     id: orth_trader_13
     customName: <b><#55FF55>Plant Lover Cress
@@ -254,7 +242,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female03
     tradeTableId: orth_trader_13
-    dialogId: orth_station_okibo
   orth_trader_14:
     id: orth_trader_14
     customName: <b><#AA00AA>Gem Lover Veris
@@ -263,7 +250,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female04
     tradeTableId: orth_trader_14
-    dialogId: orth_station_okibo
   orth_trader_15:
     id: orth_trader_15
     customName: <b><#555555>Stone Man Heath
@@ -272,7 +258,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female05
     tradeTableId: orth_trader_15
-    dialogId: orth_station_okibo
   orth_trader_16:
     id: orth_trader_16
     customName: <b><#55FFFF>Handyman Bob
@@ -281,7 +266,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male11
     tradeTableId: orth_trader_16
-    dialogId: orth_station_okibo
   orth_trader_17:
     id: orth_trader_17
     customName: <b><#55FFFF>Keen Weaver, Quentin
@@ -290,7 +274,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male12
     tradeTableId: orth_trader_17
-    dialogId: orth_station_okibo
   orth_trader_18:
     id: orth_trader_18
     customName: <b><#FF55FF>Issac, the Intricate Glazer
@@ -299,7 +282,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male14
     tradeTableId: orth_trader_18
-    dialogId: orth_station_okibo
   orth_trader_19:
     id: orth_trader_19
     customName: <b><#00AAAA>Tags
@@ -308,7 +290,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female06
     tradeTableId: orth_trader_19
-    dialogId: orth_station_okibo
   orth_trader_20:
     id: orth_trader_20
     customName: <b><#FFFF55>Jacob
@@ -317,7 +298,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male15
     tradeTableId: orth_trader_20
-    dialogId: orth_station_okibo
   orth_trader_21:
     id: orth_trader_21
     customName: ":siggy:"
@@ -326,7 +306,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female07
     tradeTableId: orth_trader_21
-    dialogId: orth_station_okibo
   orth_trader_22:
     id: orth_trader_22
     customName: <b><#00AA00>Bilton
@@ -335,7 +314,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male16
     tradeTableId: orth_trader_22
-    dialogId: orth_station_okibo
   orth_trader_23:
     id: orth_trader_23
     customName: <b><#55FF55>Berney
@@ -344,7 +322,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male01
     tradeTableId: orth_trader_23
-    dialogId: orth_station_okibo
   orth_trader_24:
     id: orth_trader_24
     customName: <b><#AA0000>Mark
@@ -353,7 +330,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male02
     tradeTableId: orth_trader_24
-    dialogId: orth_station_okibo
   orth_trader_25:
     id: orth_trader_25
     customName: <b><#FFFF55>Jeff
@@ -362,7 +338,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male03
     tradeTableId: orth_trader_25
-    dialogId: orth_station_okibo
   orth_trader_26:
     id: orth_trader_26
     customName: <b><#FF5555>Hamilton
@@ -371,7 +346,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male04
     tradeTableId: orth_trader_26
-    dialogId: orth_station_okibo
   orth_trader_27:
     id: orth_trader_27
     customName: <b><#FFFF55>Robert
@@ -380,7 +354,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male06
     tradeTableId: orth_trader_27
-    dialogId: orth_station_okibo
   orth_trader_28:
     id: orth_trader_28
     customName: <b><#00AAAA>Ocean Fanatic Frank
@@ -389,7 +362,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male07
     tradeTableId: orth_trader_28
-    dialogId: orth_station_okibo
   orth_trader_29:
     id: orth_trader_29
     customName: <b><#AA00AA>Jag
@@ -398,7 +370,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male08
     tradeTableId: orth_trader_29
-    dialogId: orth_station_okibo
   orth_trader_30:
     id: orth_trader_30
     customName: <b><#AA00AA>Void Seeker Evril
@@ -407,7 +378,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female08
     tradeTableId: orth_trader_30
-    dialogId: orth_station_okibo
   orth_trader_31:
     id: orth_trader_31
     customName: <b><#00AAAA>Glass Master Gael
@@ -416,7 +386,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female09
     tradeTableId: orth_trader_31
-    dialogId: orth_station_okibo
   orth_trader_32:
     id: orth_trader_32
     customName: <b><#FF5555>Cementer Cedric
@@ -425,7 +394,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male10
     tradeTableId: orth_trader_32
-    dialogId: orth_station_okibo
   orth_trader_33:
     id: orth_trader_33
     customName: <#00AA00 >Mudboy Murdock
@@ -434,7 +402,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female10
     tradeTableId: orth_trader_33
-    dialogId: orth_station_okibo
   orth_trader_34:
     id: orth_trader_34
     customName: <#FF5555>DJ Rutrix
@@ -443,7 +410,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_male11
     tradeTableId: orth_trader_34
-    dialogId: orth_station_okibo
   orth_trader_35:
     id: orth_trader_35
     customName: The Headmaster
@@ -452,7 +418,6 @@ npcs:
     scale: 1,1,1
     bbModel: npc_female11
     tradeTableId: orth_trader_35
-    dialogId: orth_station_okibo
   orth_trader_36:
     id: orth_trader_36
     customName: <b><#00AA00><#00AA00>Benner<#55FF55>, Also Lord Of Currency
@@ -461,4 +426,3 @@ npcs:
     scale: 1,1,1
     bbModel: laffi
     tradeTableId: orth_trader_36
-    dialogId: orth_station_okibo
