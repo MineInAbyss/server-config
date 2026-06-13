@@ -1,9 +1,11 @@
 inbyo:
-  Type: SPIDER
-  SpawnCategory: swarm
-  Display: "<#3D3D3D>Inbyo"
-  Health: 25
-  Damage: 4
+  Type: VINDICATOR #will likely have to go back to using spiders, mc doesnt allow other mobs to climb........
+  SpawnCategory: hostile
+  Display: "<#c3cb6e>Inbyo"
+  Health: 30
+  Modules:
+    ThreatTable: true
+  Damage: 0
   AIGoalSelectors:
     - clear
     - meleeattack
@@ -19,28 +21,36 @@ inbyo:
     KnockbackResistance: 0.12
     Collidable: true
     Silent: true
-    FollowRange: 50
+    FollowRange: 40
     Interactable: true
     MovementSpeed: 0.25
     PreventSunburn: true
     PreventOtherDrops: true
     PreventJockeyMounts: true
+  DamageModifiers:
+    - PROJECTILE 0.8
+    - FALL 0.2
+    - DROWNING 0.001
+    - SUFFOCATE 0.001
   Model:
     Id: inbyo
     ViewRadius: 48
     DamageTint: true
   Drops:
-    - exp 35-45
+    - exp 25-35
     - geary mineinabyss:inbyo_meat_raw 1-2 0.6
     - geary mineinabyss:inbyo_fur 1-3 0.6
 
-
   Skills:
     - skill{s=displayHealth} ~onDamaged
-
-    - state{mid=inbyo;s=attack} @self ~onAttack
-    - skill{s=inbyopoop} @target ~onTimer:20
-    - effect:sound{s=mineinabyss:entity.inbyo.ambient;v=4;p=0.8} @self ~onAmbient
-    - effect:sound{s=mineinabyss:entity.inbyo.death;v=4;p=0.8} @self ~onDeath
-    - effect:sound{s=mineinabyss:entity.inbyo.hurt;v=4;p=0.8} @self ~onDamaged
-    - skill{s=Changetarget} ~onTimer:160 <99%
+    - cancelevent{sync=true} @self ~onAttack
+    - skill{s=inbyo_attack} ~onAttack ?targetwithin{d=2}
+    - skill{s=inbyo_throw} ~onTimer:50 ?!targetwithin{d=4}
+    #- effect:sound{s=mineinabyss:entity.inbyo.ambient;sc=hostile;v=0.67;p=0.8} @self ~onTimer:170 0.35 #terrible ambient sound
+    - effect:sound{s=mineinabyss:entity.inbyo.death;sc=hostile;v=3;p=0.8} @self ~onDeath
+    - effect:sound{s=mineinabyss:entity.inbyo.hurt;sc=hostile;v=3;p=0.8} @self ~onDamaged
+    - skill{s=Changetarget} ~onTimer:200 <99%
+    - auraremove{n=inbyothrow} @self ~onDropCombat
+    - setai{ai=true} @self ~onDropCombat
+    - auraremove{n=inbyothrow} @self ~onDamaged ?lastdamagecause{c=ENTITY_ATTACK}
+    - setai{ai=true} @self ~onDamaged ?lastdamagecause{c=ENTITY_ATTACK}

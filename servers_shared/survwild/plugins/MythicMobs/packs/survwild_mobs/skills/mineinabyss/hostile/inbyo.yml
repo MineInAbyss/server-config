@@ -1,26 +1,76 @@
-inbyopoop:
+inbyo_attack:
+  Cooldown: 1
+  Conditions:
+    - incombat true
+  Skills:
+    - setspeed{speed=0.05;type=walking} @self
+    - state{s=walk;remove=true} @self
+    - cancelevent{sync=true} @self
+    - delay 5
+    - state{s=attack;sync=true} @self
+    - look{headOnly=false;immediately=false;repeat=4;repeatinterval=1} @targetlocation
+    - delay 6
+    - totem{ch=1;md=2;oH=inbyo_attack_damage;hS=2;vS=1} @forward{f=1}
+    - delay 10
+    - totem{ch=1;md=2;oH=inbyo_attack_damage;hS=2;vS=1} @forward{f=1.5}
+    - delay 10
+    - setspeed{speed=1;type=walking} @self
+    - state{s=walk;remove=false} @self
+
+inbyo_attack_damage:
+  Skills:
+    - damage{a=6}
+    - throw{v=2;vy=0.8}
+    - shieldbreak{duration=50}
+
+inbyo_throw:
   Cooldown: 15
   Conditions:
     - incombat true
     - offgcd true
-    - targetwithin{d=10} true
-    #- targetinlineofsight{} true
+    - targetwithin{d=4} false
+    - targetwithin{d=11} true
   Skills:
-    - gcd{ticks=50}
+    - gcd{ticks=250}
+    - look{headOnly=false;immediately=true;repeat=5;repeatInterval=5} @targetlocation
+    - aura{auraName=inbyothrow;onTick=inbyo_throw_tick;duration=1200;i=65;c=1;maxStacks=1;cotd=false;cod=true} @self
+
+inbyo_throw_tick:
+  Cooldown: 1
+  Skills:
+    - skill{s=inbyo_throw_tick_}
+inbyo_throw_tick_:
+  Cooldown: 1
+  Conditions:
+    - targetwithin{d=4} OrElseCast inbyo_poop
+  Skills:
+    - auraremove{n=inbyothrow} @self
+    - setai{ai=true} @self
+
+inbyo_poop:
+  Cooldown: 1
+  Conditions:
+  Skills:
     - state{s=poopthrow} @self
-    - potion{type=SLOW;duration=15;level=2;p=false;force=true} @Self
+    #- stun{d=40;ai=false} @self
+    - setai{ai=false} @self
+    - look{headOnly=false;immediately=true;repeat=5;repeatInterval=5} @targetlocation
+    - effect:sound{s=entity.piglin.jealous;sc=hostile;v=1.5;p=1.4;delay=11} @self
     - delay 20
-    - projectile{bulletType=ITEM;material=brown_dye;onTick=inbyopoop_tick;onHit=inbyopoop_impact;v=20;g=0.6;i=1;hR=1;vR=1;hnp=false;a=.6;tyo=1;syo=1.5} @target
-    - delay 20
+    - projectile{bulletType=ITEM;material=brown_dye;onTick=inbyo_poop_tick;onHit=inbyo_poop_impact;v=25;g=0.65;i=1;hnp=false;a=1;syo=1.5;vO=0.639;hn=10} @forward{f=1000}
 
-
-inbyopoop_tick:
+inbyo_poop_tick:
   Skills:
     - effect:particles{particle=item_slime;amount=5;hS=.1;vS=.1;speed=1.25}
 
-inbyopoop_impact:
+inbyo_poop_impact:
   Skills:
     - effect:particles{particle=falling_obsidian_tear;amount=2;hS=.25;vS=.5;y=.5;repeat=30;repeatInterval=2}
-    - potion{type=POISON;duration=40;level=1}
-    - potion{type=HUNGER;duration=40;level=1}
-    - damage{a=6} @target
+    - effect:sound{s=block.muddy_mangrove_roots.break;sc=hostile;v=0.6;p=0.6} @origin
+    - effect:sound{s=entity.slime.jump;sc=hostile;v=0.2;p=0.55} @origin
+    - effect:sound{s=block.muddy_mangrove_roots.step;sc=hostile;v=0.5;p=0.55} @origin
+    - effect:sound{s=block.mud.step;sc=hostile;v=0.5;p=0.8} @origin
+    - potion{type=POISON;duration=60;level=1} @targetedtarget
+    - potion{type=SLOWNESS;duration=60;level=1} @targetedtarget
+    - damage{a=1;ie=true}
+    - skill{s=inbyo_poop_impact_damage} @targetedtarget
