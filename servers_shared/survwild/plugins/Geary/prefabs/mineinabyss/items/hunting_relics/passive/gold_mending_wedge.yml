@@ -1,7 +1,7 @@
 set.item:
   itemName: <#4c6444>Gold-mending Wedge
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/vverdaueffax
+  itemModel: mineinabyss:hunting_relics/gold-mending_wedge
   lore:
   - '<emojy:layer_1><emojy:layer_2> Grade II Relic'
   - <#43583c>Outside of the Abyss, this Relic fetches a high
@@ -17,7 +17,7 @@ passive:
   - ensure:
       inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:verdaueffax
+          item: mineinabyss:gold_mending_wedge
       mythicConditions:
       - health{h=1to5} true
   - cooldown:
