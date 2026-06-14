@@ -162,6 +162,21 @@ hcHurt:
 shear_woodcrier:
   Skills:
     - dropitem{i=brown_wool 1-3.999} @self
+    - partvisibility{m=woodcrier;p=torso_fluff;visible=false} @self
+    - partvisibility{m=woodcrier;p=front_fluff;visible=false} @self
+    - partvisibility{m=woodcrier;p=right_bottom_fluff;visible=false} @self
+    - partvisibility{m=woodcrier;p=left_bottom_fluff;visible=false} @self
+    - partvisibility{m=woodcrier;p=right_back_fluff;visible=false} @self
+    - partvisibility{m=woodcrier;p=left_back_fluff;visible=false} @self
+
+horncrier_shear_revert:
+  Skills:
+    - partvisibility{m=woodcrier;p=torso_fluff;visible=true} @self
+    - partvisibility{m=woodcrier;p=front_fluff;visible=true} @self
+    - partvisibility{m=woodcrier;p=right_bottom_fluff;visible=true} @self
+    - partvisibility{m=woodcrier;p=left_bottom_fluff;visible=true} @self
+    - partvisibility{m=woodcrier;p=right_back_fluff;visible=true} @self
+    - partvisibility{m=woodcrier;p=left_back_fluff;visible=true} @self
 
 woodcrier_death_drop:
   Conditions:
@@ -172,6 +187,22 @@ woodcrier_death_drop:
 shear_horncrier:
   Skills:
     - dropitem{i=white_wool 1-3.999} @self
+    - partvisibility{m=horncrier;p=torso_fluff;visible=false} @self
+    - partvisibility{m=horncrier;p=front_fluff;visible=false} @self
+    - partvisibility{m=horncrier;p=right_bottom_fluff;visible=false} @self
+    - partvisibility{m=horncrier;p=left_bottom_fluff;visible=false} @self
+    - partvisibility{m=horncrier;p=right_back_fluff;visible=false} @self
+    - partvisibility{m=horncrier;p=left_back_fluff;visible=false} @self
+
+horncrier_shear_revert:
+  Skills:
+    - partvisibility{m=horncrier;p=torso_fluff;visible=true} @self
+    - partvisibility{m=horncrier;p=front_fluff;visible=true} @self
+    - partvisibility{m=horncrier;p=right_bottom_fluff;visible=true} @self
+    - partvisibility{m=horncrier;p=left_bottom_fluff;visible=true} @self
+    - partvisibility{m=horncrier;p=right_back_fluff;visible=true} @self
+    - partvisibility{m=horncrier;p=left_back_fluff;visible=true} @self
+
 
 horncrier_death_drop:
   Conditions:
