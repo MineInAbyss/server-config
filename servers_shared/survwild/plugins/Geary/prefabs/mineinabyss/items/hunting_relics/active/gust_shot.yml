@@ -1,7 +1,7 @@
 set.item:
   itemName: <#4c6444>Gust-Shot
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/wind_staff
+  itemModel: mineinabyss:hunting_relics/gust-shot
   lore:
   - '<emojy:layer_3> Grade II Relic'
   - <#43583c>A key example of nature inspiring innovation, this handmade
@@ -40,7 +40,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:wind_staff
+          item: mineinabyss:gust_shot
   - mythicSkills:
     - gust-shot_charge
 resourcepack:

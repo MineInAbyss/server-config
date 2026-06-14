@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#302D2D><b>Subtle Pull
-  itemModel: mineinabyss:hunting_relics/blackhole_staff
+  itemModel: mineinabyss:hunting_relics/subtle_pull
   maxStackSize: 1
   lore:
   - '<emojy:layer_5> Grade I Relic'
@@ -56,7 +56,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:blackhole_staff
+          item: mineinabyss:subtle_pull
   - mythicSkills:
     - subtle_pull_charge
 resourcepack:

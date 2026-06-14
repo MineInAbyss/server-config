@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#CCDADB><b>Shiver Mist
-  itemModel: mineinabyss:hunting_relics/frost_staff
+  itemModel: mineinabyss:hunting_relics/shiver_mist
   maxStackSize: 1
   lore:
   - '<emojy:layer_5> Grade I Relic'
@@ -55,7 +55,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:frost_staff
+          item: mineinabyss:shiver_mist
   - mythicSkills:
     - shiver_mist_charger
 resourcepack:

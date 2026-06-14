@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:netherite_axe
-  itemModel: mineinabyss:hunting_relics/giant_relic_hammer
+  itemModel: mineinabyss:hunting_relics/necrometallic_sledge
   itemName: <#79EDE2><b>Necrometallic Sledge
   lore:
   - '<emojy:layer_3> Grade I Relic'
@@ -25,7 +25,7 @@ observe:
     - sendActionBar:
         text: <red>Lacks Charge
   - cooldown:
-      id: hammer_smash
+      id: necrometallicsledge
       length: 32s
       display: <#79EDE2>Necrometallic Sledge
   - mythicSkills:
@@ -46,7 +46,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:giant_relic_hammer
+          item: mineinabyss:necrometallic_sledge
   - mythicSkills:
     - necrometallic_sledge_charge
 resourcepack:

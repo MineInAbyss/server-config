@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#4c6444>Buddstone Tap
-  itemModel: mineinabyss:hunting_relics/void_charm
+  itemModel: mineinabyss:hunting_relics/buddstone_tap
   lore:
   - '<emojy:layer_5> Grade II Relic'
   - <#43583c>The crystals produced by this Relic, though
@@ -39,7 +39,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:void_charm
+          item: mineinabyss:buddstone_tap
   - mythicSkills:
     - buddstone_tap_charge
 resourcepack:

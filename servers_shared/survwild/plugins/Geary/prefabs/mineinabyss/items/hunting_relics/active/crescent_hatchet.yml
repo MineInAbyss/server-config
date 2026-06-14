@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:netherite_sword
-  itemModel: mineinabyss:hunting_relics/crescent_blade
+  itemModel: mineinabyss:hunting_relics/crescent_hatchet
   itemName: <#15ABC2><b>Crescent Hatchet
   lore:
   - '<emojy:layer_3> Grade I Relic'
@@ -27,7 +27,7 @@ observe:
     - sendActionBar:
         text: <red>Not Primed
   - cooldown:
-      id: cyanslash
+      id: crescentslash
       length: 10s
       display: <#15ABC2>Crescent Hatchet
   - mythicSkills:
@@ -47,4 +47,4 @@ observe:
   - mythicSkills:
     - crescent_primer
 resourcepack:
-  model: mineinabyss:hunting_relics/crescent_blade
+  model: mineinabyss:hunting_relics/crescent_hatchet

@@ -1,7 +1,7 @@
 set.item:
   itemName: <#AC8053>Shirbiri Maku
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/critcharm
+  itemModel: mineinabyss:hunting_relics/shirbiri_maku
   lore:
   - '<emojy:layer_3> Grade IV Relic'
   - <#BB9672>It is not recommended to attach this implement to
@@ -17,7 +17,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:critcharm
+          item: mineinabyss:shirbiri_maku
   - mythicSkills:
     - shirbiri_maku
 resourcepack:

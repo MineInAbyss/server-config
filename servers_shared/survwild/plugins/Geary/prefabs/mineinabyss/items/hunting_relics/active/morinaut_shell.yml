@@ -1,7 +1,7 @@
 set.item:
   itemName: <#AC8053>Morinaut Shell
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/respiratis
+  itemModel: mineinabyss:hunting_relics/morinaut_shell
   lore:
   - '<emojy:layer_4> Grade IV Relic'
   - <#BB9672>Cave Raiders have long tried and failed to use this Relic
@@ -11,12 +11,12 @@ set.item:
 resourcepack:
   textures:
     layers:
-    - mineinabyss:hunting_relics/respiratis
+    - mineinabyss:hunting_relics/morinaut_shell
 observe:
   itemRightClick:
   - become: parent
   - cooldown:
-      id: respiratis
+      id: morinautshell
       length: 35s
       display: <#AC8053>Morinaut Shell
   - playSound:

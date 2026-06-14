@@ -1,7 +1,7 @@
 set.item:
   itemName: <#AC8053>Sudden Pinch
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/animal_totem
+  itemModel: mineinabyss:hunting_relics/sudden_pinch
   lore:
   - '<emojy:layer_1><emojy:layer_2> Grade IV Relic'
   - <#BB9672>Stories have been passed around about a Cave Raider who used this 
@@ -16,7 +16,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 9, 10 ]
-          item: mineinabyss:animal_totem
+          item: mineinabyss:sudden_pinch
   - applyPotionEffects:
     - type: minecraft:speed
       duration: 3s

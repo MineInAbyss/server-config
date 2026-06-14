@@ -1,7 +1,7 @@
 set.item:
   itemName: <#f7e7ce>Undying Wisp
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/bone_staff
+  itemModel: mineinabyss:hunting_relics/undying_wisp
   lore:
   - '<emojy:layer_5> Grade III Relic'
   - <#d7c9b3>The sound produced by this seemingly-primitive rattle is
@@ -40,7 +40,7 @@ passive:
   - ensure:
         inSlot:
           slots: [ 40 ]
-          item: mineinabyss:bone_staff
+          item: mineinabyss:undying_wisp
   - mythicSkills:
     - undying_wisp_charge
 resourcepack:
