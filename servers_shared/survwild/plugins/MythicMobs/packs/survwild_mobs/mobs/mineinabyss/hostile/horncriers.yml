@@ -27,7 +27,7 @@ woodcrier:
     PreventOtherDrops: true
     PreventJockeyMounts: true
   Model:
-    Id: horncrier_easy
+    Id: woodcrier
     ViewRadius: 48
     Drive: false
     DamageTint: true
@@ -55,6 +55,7 @@ woodcrier:
 
     - skill{s=displayHealth} ~onDamaged
     - skill{s=shear_woodcrier} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - skill{s=woodcrier_shear_revert} ~onTimer:40 ?!hasaura{auraName=unshearable} #ideally swap to a onEnd aura skill
     - skill{s=shear_mob} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
     - onDeath{onDeathSkill=woodcrier_death_drop} @self ?!hasaura{auraName=unshearable}
 
@@ -133,5 +134,6 @@ horncrier:
 
     - skill{s=displayHealth} ~onDamaged
     - skill{s=shear_horncrier} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
+    - skill{s=horncrier_shear_revert} ~onTimer:40 ?!hasaura{auraName=unshearable} #ideally swap to a onEnd aura skill
     - skill{s=shear_mob} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}
     - onDeath{onDeathSkill=horncrier_death_drop} @self ?!hasaura{auraName=unshearable}
