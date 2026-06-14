@@ -140,6 +140,7 @@ SpittleshrubBurrow:
   Conditions:
     - stance attacking
     - burning false
+    - hasaura{auraName=uncuttable} false
   Skills:
     - delay 30
     - state{s=burrow}
@@ -160,15 +161,55 @@ SpittleshrubPlantedAura:
     - aura{auraname=planted;duration=20;maxstacks=1;ma=true;rd=true;r=0.5;y=0.4;i=1;
       damageMods=ENTITY_ATTACK 0.01,ENTITY_SWEEP_ATTACK 0.01,PROJECTILE 0.01}
 
-SpittleshrubInteract:
-  TriggerConditions:
-    - holding FLINT_AND_STEEL
-  Skills:
-    - sound{s=item.flintandsteel.use}
-    - ignite{ticks=300} @self
-    - skill:SpittleshrubScan_AIAggro @self
-    - skill:SpittleshrubBurned
+# SpittleshrubInteract:
+#   TriggerConditions:
+#     - holding FLINT_AND_STEEL
+#   Skills:
+#     - sound{s=item.flintandsteel.use}
+#     - ignite{ticks=300} @self
+#     - skill:SpittleshrubScan_AIAggro @self
+#     - skill:SpittleshrubBurned
 
-SpittleshrubBurned:
+# SpittleshrubBurned:
+#   Skills:
+#     - setspeed{speed=1} @self
+
+shear_spittleshrub:
+  Conditions:
+    - hasaura{auraName=uncuttable} false
   Skills:
-    - setspeed{speed=1} @self
+    - aura{auraName=unshearable;ms=1;c=1;d=400;cotd=false;rd=false;onEnd=spittleshrub_State_revert} @self
+    - aura{auraName=unshearable;ShowBarTimer=true} @trigger
+    - dropitem{i=glow_berries 1-2} @self
+    - playanimation{a=0} @trigger
+    - sound{s=item.shears.snip} @self
+    - partvisibility{m=spittleshrub;p=bone4;visible=true} @self
+    - partvisibility{m=spittleshrub;p=bone3;visible=false} @self
+
+spittleshrub_State_revert:
+  Conditions:
+    - hasaura{auraName=uncuttable} false
+  Skills:
+    - partvisibility{m=spittleshrub;p=bone4;visible=false} @self
+    - partvisibility{m=spittleshrub;p=bone3;visible=true} @self
+
+cut_spittleshrub:
+  Conditions:
+    - hasaura{auraName=unshearable} true
+    - hasaura{auraName=uncuttable} false
+  Skills:
+    - aura{auraName=uncuttable;ms=1;c=1;d=9999;cotd=false;rd=false} @self
+    - aura{auraName=uncuttable;ShowBarTimer=true} @trigger
+    - playanimation{a=0} @trigger
+    - sound{s=block.bamboo.break} @self
+    - partvisibility{m=spittleshrub;p=bone4;visible=false} @self
+    - partvisibility{m=spittleshrub;p=bone3;visible=false} @self
+    - CancelEvent
+    - skill:SpittleshrubScan_AIAggro @self
+    # add Aggro++ skill (exta speed, aggressively flaps around, deals small amount of damage if it collides with player/mob, particles on ground looking like dug up dirt when it hits floor, some good fitting anger sound, maybe screech)
+
+spittleshrub_death_drop:
+  Conditions:
+  - chance{chance=0.6}
+  Skills:
+    - dropitem{i=glow_berries 1-2.999} ?!hasaura{auraName=unshearable}
