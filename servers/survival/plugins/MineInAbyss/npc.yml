@@ -6,6 +6,8 @@ npcs:
     location: -396.5,128.0,-34.5 45.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant3
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: gondola_unlock_gp
     ticketId: route_l1_grandpier
   gondola_assistant_ww:
@@ -15,6 +17,8 @@ npcs:
     location: -294.5,-58.0,376.5 315.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant1
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: gondola_unlock_ww
     ticketId: route_l1_wwgondola
   gondola_assistant_sc:
@@ -24,6 +28,8 @@ npcs:
     location: 82633.5,104.0,-93.5 135.0,0
     scale: 1,1,1
     bbModel: yelme
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: gondola_unlock_sc
     ticketId: route_l2_seekercamp
   station_guildhq_npc:
@@ -33,6 +39,8 @@ npcs:
     location: -154.5,135.0,-535.5 315.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_guildhq_okibo:
     id: station_guildhq_okibo
@@ -49,6 +57,8 @@ npcs:
     location: -329.5,183.0,-491.5 315.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_residential_okibo:
     id: station_residential_okibo
@@ -65,6 +75,8 @@ npcs:
     location: -564.5,128.0,-20.5 270.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_grandpier_okibo:
     id: station_grandpier_okibo
@@ -78,15 +90,17 @@ npcs:
     id: station_netherwgate_npc
     customName: Traveling Merchant
     type: DIALOG
-    location: -506.5,112.0,358.5 90.0,0
+    location: -506.5,111.0,358.5 90.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_netherwgate_okibo:
     id: station_netherwgate_okibo
     customName: Okibo
     type: DIALOG
-    location: -508.5,112.0,354.5 315.0,0
+    location: -508.5,111.0,354.5 315.0,0
     scale: 1.8,1.8,1.8
     bbModel: okibo
     dialogId: orth_station_okibo
@@ -97,6 +111,8 @@ npcs:
     location: 105.5,82.0,610.5 315.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_wharfeast_okibo:
     id: station_wharfeast_okibo
@@ -113,6 +129,8 @@ npcs:
     location: 14.5,135.0,683.5 180.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_blackmarket_okibo:
     id: station_blackmarket_okibo
@@ -129,6 +147,8 @@ npcs:
     location: 487.5,126.0,-177.5 225.0,0
     scale: 1,1,1
     bbModel: npcgondola_variant2
+    shouldDisplayName: True
+    nametagHeight: 2.3
     dialogId: orth_station_npc
   station_towerdist_okibo:
     id: station_towerdist_okibo
@@ -145,6 +165,8 @@ npcs:
     location: -545.5,110.00,315.5 180.0,0
     scale: 1,1,1
     bbModel: npc_male01
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_01
   orth_trader_02:
     id: orth_trader_02
@@ -153,6 +175,8 @@ npcs:
     location: -572.5,111.00,287.5 855.0,0
     scale: 1,1,1
     bbModel: npc_female01
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_02
   orth_trader_03:
     id: orth_trader_03
@@ -161,6 +185,8 @@ npcs:
     location: -566.5,120.06,307.5 675.0,0
     scale: 1,1,1
     bbModel: npc_female02
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_03
   orth_trader_04:
     id: orth_trader_04
@@ -169,6 +195,8 @@ npcs:
     location: -540.5,110.06,307.5 315.0,0
     scale: 1,1,1
     bbModel: npc_male01
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_04
   orth_trader_05:
     id: orth_trader_05
@@ -177,6 +205,8 @@ npcs:
     location: -564.5,110.00,285.5 270.0,0
     scale: 1,1,1
     bbModel: npc_male02
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_05
   orth_trader_06:
     id: orth_trader_06
@@ -185,6 +215,8 @@ npcs:
     location: 131.5,91.00,629.5 270.0,0
     scale: 1,1,1
     bbModel: npc_male03
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_06
   orth_trader_07:
     id: orth_trader_07
@@ -193,6 +225,8 @@ npcs:
     location: -339.5,151.00,-531.5 180.0,0
     scale: 1,1,1
     bbModel: npc_male04
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_07
   orth_trader_08:
     id: orth_trader_08
@@ -201,6 +235,8 @@ npcs:
     location: -322.5,151.00,-532.5 -180.0,0
     scale: 1,1,1
     bbModel: npc_male06
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_08
   orth_trader_09:
     id: orth_trader_09
@@ -209,6 +245,8 @@ npcs:
     location: -310.5,151.00,-535.5 -180.0,0
     scale: 1,1,1
     bbModel: npc_male07
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_09
   orth_trader_10:
     id: orth_trader_10
@@ -217,6 +255,8 @@ npcs:
     location: -344.5,177.00,-573.5 450.0,0
     scale: 1,1,1
     bbModel: npc_male08
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_10
   orth_trader_11:
     id: orth_trader_11
@@ -225,6 +265,8 @@ npcs:
     location: -337.5,183.00,-485.5 270.0,0
     scale: 1,1,1
     bbModel: npc_female12
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_11
   orth_trader_12:
     id: orth_trader_12
@@ -233,6 +275,8 @@ npcs:
     location: -556.5,128.00,-19.5 135.0,0
     scale: 1,1,1
     bbModel: habo
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_12
   orth_trader_13:
     id: orth_trader_13
@@ -241,6 +285,8 @@ npcs:
     location: -318.5,183.00,-488.5 135.0,0
     scale: 1,1,1
     bbModel: npc_female03
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_13
   orth_trader_14:
     id: orth_trader_14
@@ -249,6 +295,8 @@ npcs:
     location: -340.5,183.00,-511.5 0.0,0
     scale: 1,1,1
     bbModel: npc_female04
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_14
   orth_trader_15:
     id: orth_trader_15
@@ -257,6 +305,8 @@ npcs:
     location: -310.5,183.00,-507.5 -315.0,0
     scale: 1,1,1
     bbModel: npc_female05
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_15
   orth_trader_16:
     id: orth_trader_16
@@ -265,6 +315,8 @@ npcs:
     location: -344.5,183.00,-508.5 -45.0,0
     scale: 1,1,1
     bbModel: npc_male11
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_16
   orth_trader_17:
     id: orth_trader_17
@@ -273,6 +325,8 @@ npcs:
     location: 198.5,110.00,578.5 -45.0,0
     scale: 1,1,1
     bbModel: npc_male12
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_17
   orth_trader_18:
     id: orth_trader_18
@@ -281,6 +335,8 @@ npcs:
     location: 205.5,110.00,574.5 -360.0,0
     scale: 1,1,1
     bbModel: npc_male14
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_18
   orth_trader_19:
     id: orth_trader_19
@@ -289,6 +345,8 @@ npcs:
     location: 528.5,126.00,-163.5 45.0,0
     scale: 1,1,1
     bbModel: npc_female06
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_19
   orth_trader_20:
     id: orth_trader_20
@@ -297,6 +355,8 @@ npcs:
     location: 493.5,126.06,-171.5 225.0,0
     scale: 1,1,1
     bbModel: npc_male15
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_20
   orth_trader_21:
     id: orth_trader_21
@@ -305,6 +365,8 @@ npcs:
     location: 529.5,126.00,-145.5 90.0,0
     scale: 1,1,1
     bbModel: npc_female07
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_21
   orth_trader_22:
     id: orth_trader_22
@@ -313,6 +375,8 @@ npcs:
     location: 528.5,126.00,-134.5 -135.0,0
     scale: 1,1,1
     bbModel: npc_male16
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_22
   orth_trader_23:
     id: orth_trader_23
@@ -321,6 +385,8 @@ npcs:
     location: 537.5,126.00,-134.5 -540.0,0
     scale: 1,1,1
     bbModel: npc_male01
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_23
   orth_trader_24:
     id: orth_trader_24
@@ -329,6 +395,8 @@ npcs:
     location: 533.5,126.00,-142.5 0.0,0
     scale: 1,1,1
     bbModel: npc_male02
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_24
   orth_trader_25:
     id: orth_trader_25
@@ -337,6 +405,8 @@ npcs:
     location: 564.5,132.50,-136.5 -675.0,0
     scale: 1,1,1
     bbModel: npc_male03
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_25
   orth_trader_26:
     id: orth_trader_26
@@ -345,6 +415,8 @@ npcs:
     location: 570.5,133.00,-136.5 -720.0,0
     scale: 1,1,1
     bbModel: npc_male04
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_26
   orth_trader_27:
     id: orth_trader_27
@@ -353,6 +425,8 @@ npcs:
     location: 512.5,126.00,-155.5 180.0,0
     scale: 1,1,1
     bbModel: npc_male06
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_27
   orth_trader_28:
     id: orth_trader_28
@@ -361,6 +435,8 @@ npcs:
     location: -544.5,110.00,282.5 765.0,0
     scale: 1,1,1
     bbModel: npc_male07
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_28
   orth_trader_29:
     id: orth_trader_29
@@ -369,6 +445,8 @@ npcs:
     location: 512.5,126.06,-170.5 360.0,0
     scale: 1,1,1
     bbModel: npc_male08
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_29
   orth_trader_30:
     id: orth_trader_30
@@ -377,6 +455,8 @@ npcs:
     location: -330.5,183.00,-521.5 990.0,0
     scale: 1,1,1
     bbModel: npc_female08
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_30
   orth_trader_31:
     id: orth_trader_31
@@ -385,6 +465,8 @@ npcs:
     location: -581.5,110.00,278.5 630.0,0
     scale: 1,1,1
     bbModel: npc_female09
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_31
   orth_trader_32:
     id: orth_trader_32
@@ -393,14 +475,18 @@ npcs:
     location: -566.5,111.00,277.5 225.0,0
     scale: 1,1,1
     bbModel: npc_male10
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_32
   orth_trader_33:
     id: orth_trader_33
-    customName: <#00AA00 >Mudboy Murdock
+    customName: <#00AA00>Mudboy Murdock
     type: TRADER
     location: -569.5,111.00,278.5 45.0,0
     scale: 1,1,1
     bbModel: npc_female10
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_33
   orth_trader_34:
     id: orth_trader_34
@@ -409,6 +495,8 @@ npcs:
     location: -556.5,110.00,283.5 855.0,0
     scale: 1,1,1
     bbModel: npc_male11
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_34
   orth_trader_35:
     id: orth_trader_35
@@ -417,12 +505,16 @@ npcs:
     location: -571.5,120.06,297.5 585.0,0
     scale: 1,1,1
     bbModel: npc_female11
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_35
   orth_trader_36:
     id: orth_trader_36
-    customName: <b><#00AA00><#00AA00>Benner<#55FF55>, Also Lord Of Currency
+    customName: <b><#00AA00>Benner<#55FF55>, Also Lord Of Currency
     type: TRADER
     location: -558.5,128.00,-18.5 -180.0,0
     scale: 1,1,1
     bbModel: laffi
+    shouldDisplayName: True
+    nametagHeight: 2.3
     tradeTableId: orth_trader_36
