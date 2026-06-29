@@ -1,35 +1,43 @@
 okiboStations:
-  - id: GuildHQ
-    displayName: Guild HQ
-    location: -149,135,-534
-    iconHitboxOffset: 0.01,0.25,-0.25
-  - id: Residential
-    displayName: Residential District
-    location: -325,183,-489
-    iconHitboxOffset: 0.01,0.30,0
+  - id: CliffDistrict
+    displayName: Cliff District
+    location: 515,126,377
+    iconHitboxOffset: 0.01,0.03,-0.35
   - id: GrandPier
     displayName: Grand Pier
     location: -563,128,-19
     iconHitboxOffset: 0.01,0.22,0.22
+  - id: GuildHQ
+    displayName: Guild HQ
+    location: -265,167,-535
+    iconHitboxOffset: 0.01,0.25,-0.25
   - id: NetherworldGate
     displayName: Gate to the Netherworld
-    location: -512,111,356
+    location: -510,111,361
     iconHitboxOffset: 0.01,-0.00,0.33
-  - id: BlackMarket
-    displayName: Black Market
-    location: 10,135,682
-    iconHitboxOffset: 0.01,-0.30,0.18
-  - id: WharfEast
-    displayName: Wharf District East
-    location: 105,82,613
-    iconHitboxOffset: 0.01,-0.15,0.08
+  - id: Orphanage
+    displayName: Belchero Orphanage
+    location: -641,145,174
+    iconHitboxOffset: 0.01,-0.00,0.33
   - id: TowerDistrict
     displayName: Tower District
     location: 490,126,-180
     iconHitboxOffset: 0.01,0.03,-0.35
+  - id: WaterWheelGondola
+    displayName: Water Wheel Gondola
+    location: -357,-46,408
+    iconHitboxOffset: 0.01,-0.15,0.08
+  - id: WharfWest
+    displayName: Wharf District East
+    location: -139,109,627
+    iconHitboxOffset: 0.01,-0.15,0.08
+  - id: WharfEast
+    displayName: Wharf District East
+    location: 105,82,613
+    iconHitboxOffset: 0.01,-0.15,0.08
 okiboMaps:
-  - station: GuildHQ
-    location: -152.5,137.0,-536.5 90,0
+  - station: CliffDistrict
+    location: 512.5,126.0,371.5 0,0
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
@@ -51,8 +59,8 @@ okiboMaps:
       - GuildHQ
       - GrandPier
       - NetherworldGate
-      - BlackMarket
-      - WharfEast
+      - Orphanage
+      - WharfWest
       - TowerDistrict
     icon:
       text: ':okibo_icon:'
@@ -63,11 +71,26 @@ okiboMaps:
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
+      - CliffDistrict
       - GuildHQ
-      - Residential
       - NetherworldGate
-      - BlackMarket
-      - WharfEast
+      - Orphanage
+      - WharfWest
+      - TowerDistrict
+    icon:
+      text: ':okibo_icon:'
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: GuildHQ
+    location: -262.5,168.5,-536.0 90,0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - CliffDistrict
+      - GrandPier
+      - NetherworldGate
+      - Orphanage
+      - WharfWest
       - TowerDistrict
     icon:
       text: ':okibo_icon:'
@@ -78,26 +101,26 @@ okiboMaps:
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
-      - GuildHQ
-      - Residential
+      - CliffDistrict
       - GrandPier
-      - BlackMarket
-      - WharfEast
+      - GuildHQ
+      - Orphanage
+      - WharfWest
       - TowerDistrict
     icon:
       text: ':okibo_icon:'
       offset: 0.01,-0.08,0.0
       scale: 1,1,1
-  - station: BlackMarket
-    location: 13.0,136.0,684.0 -135.0,0
+  - station: WharfWest
+    location: -135.0,110.0,627.0 135,0
     scale: 1.3,1.3,1.3
-    offset: 0,-1,0
+    offset: 0,1,0
     hitboxes:
-      - GuildHQ
-      - Residential
+      - CliffDistrict
       - GrandPier
+      - GuildHQ
       - NetherworldGate
-      - WharfEast
+      - Orphanage
       - TowerDistrict
     icon:
       text: ':okibo_icon:'
@@ -108,11 +131,11 @@ okiboMaps:
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
+      - CliffDistrict
       - GuildHQ
-      - Residential
       - GrandPier
       - NetherworldGate
-      - BlackMarket
+      - Orphanage
       - TowerDistrict
     icon:
       text: ':okibo_icon:'
@@ -123,12 +146,27 @@ okiboMaps:
     scale: 1.3,1.3,1.3
     offset: 0,-1,0
     hitboxes:
-      - GuildHQ
-      - Residential
+      - CliffDistrict
       - GrandPier
+      - GuildHQ
       - NetherworldGate
-      - BlackMarket
-      - WharfEast
+      - Orphanage
+      - WharfWest
+    icon:
+      text: ':okibo_icon:'
+      offset: 0.0,-0.08,0.01
+      scale: 1,1,1
+  - station: WaterWheelGondola
+    location: -356.5,-44.5,411.0 270,0
+    scale: 1.3,1.3,1.3
+    offset: 0,-1,0
+    hitboxes:
+      - CliffDistrict
+      - GrandPier
+      - GuildHQ
+      - NetherworldGate
+      - Orphanage
+      - WharfWest
     icon:
       text: ':okibo_icon:'
       offset: 0.01,-0.08,0.0
