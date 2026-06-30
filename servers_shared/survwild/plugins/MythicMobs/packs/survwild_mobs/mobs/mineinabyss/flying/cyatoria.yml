@@ -41,4 +41,7 @@ cyatoria:
     #- setspeed{type=flying;speed=1.1} @self ~onSpawnOrLoad
     - state{mid=cyatoria;s=attack} @self ~onAttack
     - skill{s=displayHealth} ~onDamaged
-    - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}
+    
+    # HeadshotStun #
+    - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}
+    - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=ob_head}
