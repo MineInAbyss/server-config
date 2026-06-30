@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_4> Grade I Relic'
   - <#393C39>The innate abilities carried by this dagger might make its use
   - <#393C39>look effortless, but it’s actually taxing on the wielder.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Each hit creates charges and deals additional
-  - <font:small_text><gray><shadow:#00000000>damage at 7 charges. Takes 10 charges to stun surroundings on sneak / right click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Each hit creates charges and deals additional
+  - <font:small_bottom><gray><shadow:#00000000>damage at 7 charges. Takes 10 charges to stun surroundings on sneak / right click.
   unbreakable: {}
   enchantmentGlintOverride: false
 observe:

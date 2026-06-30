@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_5> Grade II Relic'
   - <#43583c>The perfect companion for the haughtiest of hunters, this mask makes
   - <#43583c>sure to point out creatures it deems less valuable than the wearer.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Applies damage modifier and
-  - <font:small_text><gray><shadow:#00000000>glow effect to any mob the wearer is looking at.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Applies damage modifier and
+  - <font:small_bottom><gray><shadow:#00000000>glow effect to any mob the wearer is looking at.
 passive:
 - match:
   - inInventory

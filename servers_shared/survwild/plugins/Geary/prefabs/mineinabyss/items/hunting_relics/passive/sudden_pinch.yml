@@ -6,7 +6,7 @@ set.item:
   - '<emojy:layer_1><emojy:layer_2> Grade IV Relic'
   - <#BB9672>Stories have been passed around about a Cave Raider who used this 
   - <#BB9672>Relic to keep himself constantly awake through his expeditions.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants short speed buffs when equipped.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants short speed buffs when equipped.
 passive:
 - match:
   - inInventory

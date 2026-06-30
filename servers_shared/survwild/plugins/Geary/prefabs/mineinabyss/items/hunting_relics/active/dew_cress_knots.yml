@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_5> Grade IV Relic'
   - <#BB9672>This Relic is regarded as an illicit substance in the
   - <#BB9672>city of Orth, but laws tend to be overlooked in the Abyss.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Grants strength and over time decreasing
-  - <font:small_text><gray><shadow:#00000000>movement buffs on right click in exchange of some health.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Grants strength and over time decreasing
+  - <font:small_bottom><gray><shadow:#00000000>movement buffs on right click in exchange of some health.
 observe:
   itemRightClick:
   - become: parent

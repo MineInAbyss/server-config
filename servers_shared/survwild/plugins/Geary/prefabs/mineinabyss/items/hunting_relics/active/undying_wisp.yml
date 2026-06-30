@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_5> Grade III Relic'
   - <#d7c9b3>The sound produced by this seemingly-primitive rattle is
   - <#d7c9b3>enough to send chills down the spine of any who hear it.  
-  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots projectile on right click.
-  - <font:small_text><gray><shadow:#00000000>Projectile stuns the target it hits.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Shoots projectile on right click.
+  - <font:small_bottom><gray><shadow:#00000000>Projectile stuns the target it hits.
 observe:
   itemRightClick:
   - become: parent

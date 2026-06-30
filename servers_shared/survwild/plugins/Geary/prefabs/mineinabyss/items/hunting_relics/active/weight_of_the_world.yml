@@ -6,7 +6,7 @@ set.item:
     - '<emojy:layer_4> Grade II Relic'
     - <#43583c>The metal making up this weapon requires wielders to build up mass
     - <#43583c>amounts of kinetic energy. It bears a high risk of personal injury in use.
-    - <font:small_text><gray><shadow:#00000000>Active ability. The longer the fall, the more damage it deals.
+    - <font:small_bottom><gray><shadow:#00000000>Active ability. The longer the fall, the more damage it deals.
   enchantmentGlintOverride: false
   enchantments:
     - enchant: minecraft:density

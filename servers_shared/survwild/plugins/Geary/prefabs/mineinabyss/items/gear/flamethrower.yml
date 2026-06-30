@@ -7,8 +7,8 @@ set.item:
   - 'Grade II Relic'
   - <#3d59ab>A relic born from decades of Orthian research.
   - <#3d59ab>Flamethrowers are vastly considered inhumane in use.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Projects flames on right click.
-  - <font:small_text><gray><shadow:#00000000>Requires Flamethrower Fuel within the inventory to work.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Projects flames on right click.
+  - <font:small_bottom><gray><shadow:#00000000>Requires Flamethrower Fuel within the inventory to work.
 resourcepack:
   model: mineinabyss:hunting_relics/flamethrower
 set.recipes:

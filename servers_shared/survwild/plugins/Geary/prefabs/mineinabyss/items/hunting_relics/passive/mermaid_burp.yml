@@ -5,7 +5,7 @@ set.item:
   lore:
   - '<emojy:layer_3> Grade III Relic'
   - <#d7c9b3>The air produced by this Relic has a notably fishy smell. 
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants water breathing.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants water breathing.
 passive:
 - match:
   - inInventory

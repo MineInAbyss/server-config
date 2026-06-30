@@ -6,7 +6,7 @@ set.item:
   - '<emojy:layer_3> Grade III Relic'
   - <#d7c9b3>Derived from technology recovered from Interference Units, this
   - <#d7c9b3>mask bends light around its wearer, but inexplicably not itself.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Turns the user invisible.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Turns the user invisible.
 passive:
 - match:
   - inInventory

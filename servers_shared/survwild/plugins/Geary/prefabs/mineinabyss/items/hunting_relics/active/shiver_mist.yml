@@ -7,8 +7,8 @@ set.item:
   - '<emojy:layer_5> Grade I Relic'
   - <#A0ACAD>The chemicals produced by this Relic maintain a cold enough
   - <#A0ACAD>temperature to freeze one solid, even in the hottest of climates.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots a bunch of inaccurate projectiles
-  - <font:small_text><gray><shadow:#00000000>on right click. Projectiles freeze and slow the target on hit.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Shoots a bunch of inaccurate projectiles
+  - <font:small_bottom><gray><shadow:#00000000>on right click. Projectiles freeze and slow the target on hit.
 observe:
   itemLeftClick:
   - become: parent

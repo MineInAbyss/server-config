@@ -7,8 +7,8 @@ set.item:
   - <#36526E>The air-storing implements along the shaft
   - <#36526E>of this bow are capable of propelling
   - <#36526E>an arrow surprisingly long distances.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots a barrage of arrows
-  - <font:small_text><gray><shadow:#00000000>and lunges user backwards on left click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Shoots a barrage of arrows
+  - <font:small_bottom><gray><shadow:#00000000>and lunges user backwards on left click.
   unbreakable: {}
   enchantmentGlintOverride: false
 observe:

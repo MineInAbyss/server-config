@@ -7,8 +7,8 @@ set.item:
   - <#AB8E8A>This Relic commonly finds its use supporting
   - <#AB8E8A>wielders of more offensively-focused relics,
   - <#AB8E8A>but is perfectly capable on its own as well.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Charges on right click. Has
-  - <font:small_text><gray><shadow:#00000000>3 different buff modes based on the users charges on left click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Charges on right click. Has
+  - <font:small_bottom><gray><shadow:#00000000>3 different buff modes based on the users charges on left click.
   # weapon:
   #   damagePerAttack: 0
   unbreakable: {}

@@ -7,8 +7,8 @@ set.item:
     - <#D2D489>A mysterious device attuned to the lingering souls of the Abyss.
     - <#D2D489>Its ethereal hum grows louder as it nears a praying skeleton,
     - <#D2D489>guiding its wielder toward hidden relics.
-    - <font:small_text><gray><shadow:#00000000>Passive slot ability. Plays different sounds based on
-    - <font:small_text><gray><shadow:#00000000>distance in blocks (200 150 100 50 25) to a Praying Skeleton.
+    - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Plays different sounds based on
+    - <font:small_bottom><gray><shadow:#00000000>distance in blocks (200 150 100 50 25) to a Praying Skeleton.
   #equippable:
   #  slot: HEAD
   #  cameraOverlay: mineinabyss:gear/utility/ghost_seek_overlay
