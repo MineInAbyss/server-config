@@ -1,18 +1,12 @@
 pebble_throw:
-  Cooldown: 0
-  Conditions:
-    - offgcd true
+  Cooldown: 1
   Skills:
-    - gcd{ticks=50}
-    - projectile{bulletType=ITEM;material=pebble;onTick=pebbletick;onHit=pebbleimpact;v=25;g=0.5;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;syo=1.5;vO=0.1} @forward{f=1000}
+    - playanimation{a=0;audience=World} @self
+    - projectile{bulletType=ITEM;material=pebble;onHit=pebbleimpact;v=12;g=0.65;i=1;hR=0.5;vR=0.5;hnp=true;hp=true;syo=1.5;vO=0.1;bmd=true} @forward{f=1000}
 
 pebbleimpact:
   Skills:
     - effect:particles{particle=Electric_Spark;amount=10;hS=1;vS=1;y=.5}
     - damage{a=3}
     - sound{s=entity.snow_golem.hurt;sc=hostile;p=1;v=0.6}
-    - aura{auraName=pebblehit;duration=10;cotd=false;i=5;cod=true} @targetedtarget #for mobs to check what they have been hit by
-
-pebbletick:
-  Skills:
-    - effect:particles{particle=Crit;amount=1;hS=.1;vS=.1;speed=0}
+    - aura{auraName=pebblehit;duration=20;cotd=false;i=5;cod=true} @ENO{r=2} #for mobs to check what they have been hit by
