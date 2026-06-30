@@ -6,9 +6,9 @@ set.item:
   - '<emojy:layer_3> Grade I Relic'
   - <#4A8781>The bacteria inside the head of this hammer is so densely
   - <#4A8781>populated that it leaves a visible cloud when released. 
-  - <font:small_text><gray><shadow:#00000000>Active ability. Lunges the user upward on right click
-  - <font:small_text><gray><shadow:#00000000>followed by a large impact which poisons the surroundings.
-  - <font:small_text><gray><shadow:#00000000>Inflicts a poison like effect on the target on left click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Lunges the user upward on right click
+  - <font:small_bottom><gray><shadow:#00000000>followed by a large impact which poisons the surroundings.
+  - <font:small_bottom><gray><shadow:#00000000>Inflicts a poison like effect on the target on left click.
   unbreakable: {}
   enchantmentGlintOverride: false
 observe:

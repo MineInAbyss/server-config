@@ -7,8 +7,8 @@ set.item:
   - <#c7000e>Rather unceremoniously cobbled together from the
   - <#c7000e>remains of an Interference Unit, this sword 
   - <#c7000e>carries on its user's mysterious directives.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Heals the user on kill. After 10
-  - <font:small_text><gray><shadow:#00000000>hits, right click to siphon health from nearby targets.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Heals the user on kill. After 10
+  - <font:small_bottom><gray><shadow:#00000000>hits, right click to siphon health from nearby targets.
   # weapon:
   #   damagePerAttack: 0
   unbreakable: {}

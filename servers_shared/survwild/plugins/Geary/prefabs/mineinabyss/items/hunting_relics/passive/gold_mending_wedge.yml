@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_1><emojy:layer_2> Grade II Relic'
   - <#43583c>Outside of the Abyss, this Relic fetches a high
   - <#43583c>price for its uses in chronic pain treatment. 
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants fast regen
-  - <font:small_text><gray><shadow:#00000000>when the user drops below 3 hearts.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants fast regen
+  - <font:small_bottom><gray><shadow:#00000000>when the user drops below 3 hearts.
 passive:
 - match:
   - inInventory

@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_2> Grade II Relic'
   - <#43583c>The hard-light copies of projectiles produced 
   - <#43583c>by this Relic still hurt as though they were real. 
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. On bow and crossbow use
-  - <font:small_text><gray><shadow:#00000000>shoots an additional projectile which deals damage.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. On bow and crossbow use
+  - <font:small_bottom><gray><shadow:#00000000>shoots an additional projectile which deals damage.
 passive:
 - match:
   - inInventory

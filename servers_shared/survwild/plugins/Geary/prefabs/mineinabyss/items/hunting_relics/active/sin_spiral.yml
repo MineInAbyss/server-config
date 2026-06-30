@@ -6,8 +6,8 @@ set.item:
   - 'Grade II Relic'
   - <#cdd13d>The Delver Guild has stricken this “Artifact” from its
   - <#cdd13d>records for good reason. Why do you have this?
-  - <font:small_text><gray><shadow:#00000000>Active ability. Lunges user forward and creates
-  - <font:small_text><gray><shadow:#00000000>area of effect potions around the user on right click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Lunges user forward and creates
+  - <font:small_bottom><gray><shadow:#00000000>area of effect potions around the user on right click.
 observe:
   itemRightClick:
   - become: parent

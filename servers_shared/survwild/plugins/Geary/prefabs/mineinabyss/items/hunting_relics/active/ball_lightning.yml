@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_4> Grade II Relic'
   - <#43583c>Only the battery powering this weapon is considered a Relic.
   - <#43583c>The rest was added for unknown and certainly dangerous purposes.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Shoots slow moving projectile on right click.
-  - <font:small_text><gray><shadow:#00000000>Projectile deals damage over time.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Shoots slow moving projectile on right click.
+  - <font:small_bottom><gray><shadow:#00000000>Projectile deals damage over time.
 observe:
   itemRightClick:
   - become: parent

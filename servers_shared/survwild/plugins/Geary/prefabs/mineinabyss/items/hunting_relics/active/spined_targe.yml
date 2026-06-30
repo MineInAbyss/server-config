@@ -7,7 +7,7 @@ set.item:
   - 'Grade III Relic'
   - <#3d59ab>A relic born from decades of Orthian research. A shield which
   - <#3d59ab>is made from a rare ore found in the depths of the abyss.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Lunges the user forward on left click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Lunges the user forward on left click.
 observe:
   itemLeftClick:
   - become: parent

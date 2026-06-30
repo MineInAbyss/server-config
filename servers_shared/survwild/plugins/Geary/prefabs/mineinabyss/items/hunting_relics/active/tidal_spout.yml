@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_4> Grade III Relic'
   - <#d7c9b3>This Relic has found use outside of the Abyss
   - <#d7c9b3>among sea captains wishing to speed up their boats.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Generates a large wall of water
-  - <font:small_text><gray><shadow:#00000000>on right click which can push back entities.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Generates a large wall of water
+  - <font:small_bottom><gray><shadow:#00000000>on right click which can push back entities.
 observe:
   itemRightClick:
   - become: parent

@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_4> Grade I Relic'
   - <#3C8C82>A spear shape object carved out of the core from
   - <#3C8C82>a Goblet of Giants containing netherworld runes.
-  - <font:small_text><gray><shadow:#00000000>Active ability. Charges when in hand. Can be thrown
-  - <font:small_text><gray><shadow:#00000000>on left click. Uses riptide in water on right click.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Charges when in hand. Can be thrown
+  - <font:small_bottom><gray><shadow:#00000000>on left click. Uses riptide in water on right click.
   enchantments:
     - enchant: minecraft:riptide
       level: 2

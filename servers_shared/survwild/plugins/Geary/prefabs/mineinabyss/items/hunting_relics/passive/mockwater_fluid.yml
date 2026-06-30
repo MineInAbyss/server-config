@@ -6,7 +6,7 @@ set.item:
   - 'Grade IV Relic'
   - <#cdd13d>This viscous, living fluid is remarkably tedious to clean off 
   - <#cdd13d>surfaces once applied, unless the organism wills it so.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Lets the slime wander outside its container.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Lets the slime wander outside its container.
 passive:
 - match:
   - inInventory

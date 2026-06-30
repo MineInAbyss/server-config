@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_1> Grade III Relic'
   - <#d7c9b3>Holders of this Relic report that it feels warm
   - <#d7c9b3>and comfortable to the touch, even in cold climates.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Slowly heals the user
-  - <font:small_text><gray><shadow:#00000000>when above a specific light level.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Slowly heals the user
+  - <font:small_bottom><gray><shadow:#00000000>when above a specific light level.
 passive:
 - match:
   - inInventory

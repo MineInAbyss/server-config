@@ -6,8 +6,8 @@ set.item:
   - '<emojy:layer_3> Grade IV Relic'
   - <#BB9672>It is not recommended to attach this implement to
   - <#BB9672>any other part of one’s body than the arm or hand.
-  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Grants a short
-  - <font:small_text><gray><shadow:#00000000>damage modifier at random intervals.
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants a short
+  - <font:small_bottom><gray><shadow:#00000000>damage modifier at random intervals.
 passive:
 - match:
   - inInventory
