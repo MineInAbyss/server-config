@@ -169,21 +169,13 @@ feat/survival-events:
     - source: "{{ privateSettingsDest }}/packs_assets/events"
       dest:   plugins/Packy/resourcepacks/events_private
     # Geary
-    - source: packs_assets/events
-      dest:   plugins/Geary/template_pack
-    - source: "{{ privateSettingsDest }}/packs_assets/events"
-      dest:   plugins/Geary/template_pack
+    # - source: packs_assets/events
+    #   dest:   plugins/Geary/template_pack
+    # - source: "{{ privateSettingsDest }}/packs_assets/events"
+    #   dest:   plugins/Geary/template_pack
     # Other
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/halloween"
-      dest:   plugins/MythicMobs/packs/halloween
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/christmas"
-      dest:   plugins/MythicMobs/packs/christmas
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/april_fools"
-      dest:   plugins/MythicMobs/packs/april_fools
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/april_fools_2"
-      dest:   plugins/MythicMobs/packs/april_fools
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/valentines_day"
-      dest:   plugins/MythicMobs/packs/valentines_day
+    # - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/halloween"
+    #   dest:   plugins/MythicMobs/packs/halloween
     - source: "{{ privateSettingsDest }}/servers/survival/plugins/MineInAbyss"
       dest:   plugins/MineInAbyss
 
