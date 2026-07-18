@@ -24,7 +24,7 @@ himushi:
     KnockbackResistance: 1
     PreventJockeyMounts: true
   Model:
-    Id: magma_snail
+    Id: himushi
     ViewRadius: 48
     Drive: false
   Drops:
@@ -33,8 +33,8 @@ himushi:
     - geary mineinabyss:himushi_core 1 1 nolooting
   Skills:
     - skill{s=displayHealth} ~onDamaged
-    - skill{s=generic_shell_damaged;stacks=1;mob=magma_snail} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXE}
-    - bodyclamp{m=magma_snail;c=0} @self ~onSpawnOrLoad
+    - skill{s=generic_shell_damaged;stacks=1;mob=himushi} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXE}
+    - bodyclamp{m=himushi;c=0} @self ~onSpawnOrLoad
     - CancelEvent{sync=true} @self ~onAttack
     - effect:sound{s=item.armor.equip_leather;v=2;p=1} @self ~onDamaged
     - skill{s=magma_snail_defence} @self ~onTimer:40 0.8
