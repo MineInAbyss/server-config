@@ -33,8 +33,8 @@ magma_snail_defence:
     - distance{d=0to10} true
   Skills:
     - state{s=defence} @self
-    - defaultstate{m=magma_snail;t=idle;s=defence_idle} @self
-    - defaultstate{m=magma_snail;t=walk;s=defence_idle} @self
+    - defaultstate{m=himushi;t=idle;s=defence_idle} @self
+    - defaultstate{m=himushi;t=walk;s=defence_idle} @self
     - setAI{ai=false} @self
     - delay 20
     - setstance{stance=defence} @self
@@ -42,8 +42,8 @@ magma_snail_defence:
     - skill{s=magma_snail_denfence-1;repeat=7;repeatInterval=15}
    # - potion{t=DAMAGE_RESISTANCE;d=160;l=2;p=false} @self
     - delay 160
-    - defaultstate{m=magma_snail;t=idle;s=idle} @self
-    - defaultstate{m=magma_snail;t=walk;s=walk} @self
+    - defaultstate{m=himushi;t=idle;s=idle} @self
+    - defaultstate{m=himushi;t=walk;s=walk} @self
     - setAI{ai=true} @self
     - setstance{stance=normal} @self
 

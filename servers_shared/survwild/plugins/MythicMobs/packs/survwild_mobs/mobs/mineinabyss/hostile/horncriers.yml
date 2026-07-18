@@ -99,7 +99,7 @@ horncrier:
     PreventSunburn: true
     PreventOtherDrops: true
   Model:
-    Id: horncrier_hard
+    Id: horncrier
     ViewRadius: 48
     Drive: false
     DamageTint: true
@@ -119,9 +119,9 @@ horncrier:
     - geary mineinabyss:horncrier_horn_7 1 0.001 nolooting
   Skills:
     # - CancelEvent{sync=true} ~onAttack
-    - DefaultState{m=horncrier_hard;t=walk;s=not_in_combat} @self ~onSpawnOrLoad
-    - DefaultState{m=horncrier_hard;t=walk;s=walk} @self ~onEnterCombat
-    - DefaultState{m=horncrier_hard;t=walk;s=not_in_combat} @self ~onDropCombat
+    - DefaultState{m=horncrier;t=walk;s=not_in_combat} @self ~onSpawnOrLoad
+    - DefaultState{m=horncrier;t=walk;s=walk} @self ~onEnterCombat
+    - DefaultState{m=horncrier;t=walk;s=not_in_combat} @self ~onDropCombat
     - skill{s=Changetarget} ~onTimer:160 <99%
 
     - skill{s=hc_dash} @target ~onTimer:200
