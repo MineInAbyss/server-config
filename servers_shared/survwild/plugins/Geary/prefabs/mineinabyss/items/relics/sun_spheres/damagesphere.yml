@@ -20,8 +20,8 @@ observe:
     - damagethrow
   - consumeItem:
       type: mineinabyss:damagesphere
-    when:
-    - chance: 1
+      when:
+      - chance: 1
 resourcepack:
   model: mineinabyss:relics/l1_sunsphere
   textures:

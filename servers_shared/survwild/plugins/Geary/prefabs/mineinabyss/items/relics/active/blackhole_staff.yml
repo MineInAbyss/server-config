@@ -16,9 +16,9 @@ observe:
       mythicConditions:
       - EnchantingLevel{l=>3} true
       - hasaurastacks{n=subtlepullcharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience / Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: subtle_pull_sub
       length: 25s
@@ -31,9 +31,9 @@ observe:
       mythicConditions:
       - EnchantingLevel{l=>5} true
       - hasaurastacks{n=subtlepullcharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience / Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: subtle_pull_main
       length: 80s

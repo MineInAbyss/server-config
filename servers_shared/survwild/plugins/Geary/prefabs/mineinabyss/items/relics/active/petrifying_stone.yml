@@ -13,9 +13,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=petrifyingstonecharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Lacks Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Lacks Charge
   - cooldown:
       id: petrifying_thud
       length: 44s

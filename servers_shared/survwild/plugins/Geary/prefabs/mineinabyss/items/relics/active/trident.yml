@@ -27,9 +27,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=trident;s=3} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Charge
   - cooldown:
       id: tranquilpierce
       length: 22s

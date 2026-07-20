@@ -14,9 +14,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=sinspiralcharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Lacks Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Lacks Charge
   - cooldown:
       id: sinspiral
       length: 30s

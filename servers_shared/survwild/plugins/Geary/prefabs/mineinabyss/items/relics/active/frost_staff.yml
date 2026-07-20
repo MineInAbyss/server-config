@@ -15,9 +15,9 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>2} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience / Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: shiver_mist_area
       length: 45s
@@ -30,9 +30,9 @@ observe:
       mythicConditions:
       - EnchantingLevel{l=>2} true
       - hasaurastacks{n=shivermistcharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience / Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: shiver_mist
       length: 40s

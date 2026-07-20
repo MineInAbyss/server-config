@@ -18,9 +18,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=shiningstop;s=1} false
-    onFail:
-    - sendActionBar:
-        text: <red>In Cooldown  
+      onFail:
+      - sendActionBar:
+          text: <red>In Cooldown  
   - cooldown:
       id: changestance
       length: 1s
@@ -32,9 +32,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=boundinglance;s=>=1} true
-    onFail:
-    - sendActionBar:
-        text: <red>Not Primed
+      onFail:
+      - sendActionBar:
+          text: <red>Not Primed
   - cooldown:
       id: shifting_pike
       length: 40s

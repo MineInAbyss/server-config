@@ -32,9 +32,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=blazereap;s=5} true
-    onFail:
-    - sendActionBar:
-        text: <red>Not Primed
+      onFail:
+      - sendActionBar:
+          text: <red>Not Primed
   - cooldown:
       id: BlazeReap
       length: 50s
@@ -46,9 +46,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=primerstop} false
-    onFail:
-    - sendActionBar:
-        text: <red>In Cooldown  
+      onFail:
+      - sendActionBar:
+          text: <red>In Cooldown  
   - cooldown:
       id: Primer
       length: 1s

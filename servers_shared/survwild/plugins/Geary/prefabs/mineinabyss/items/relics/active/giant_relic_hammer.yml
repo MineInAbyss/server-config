@@ -21,9 +21,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=necrometallicsledgecharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Lacks Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Lacks Charge
   - cooldown:
       id: hammer_smash
       length: 32s

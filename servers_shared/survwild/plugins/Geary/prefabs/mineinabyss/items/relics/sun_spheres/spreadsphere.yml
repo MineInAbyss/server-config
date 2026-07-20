@@ -21,8 +21,8 @@ observe:
     - spreadthrow
   - consumeItem:
       type: mineinabyss:spreadsphere
-    when:
-    - chance: 1
+      when:
+      - chance: 1
 resourcepack:
   model: mineinabyss:relics/l2_sunsphere
   textures:

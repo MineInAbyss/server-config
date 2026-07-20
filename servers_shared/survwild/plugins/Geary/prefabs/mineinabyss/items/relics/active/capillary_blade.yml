@@ -22,9 +22,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=capillarygrowthstack;s=10} true
-    onFail:
-    - sendActionBar:
-        text: <red>More blood is required...  
+      onFail:
+      - sendActionBar:
+          text: <red>More blood is required...  
   - cooldown:
       id: capillary_growth
       length: 30s

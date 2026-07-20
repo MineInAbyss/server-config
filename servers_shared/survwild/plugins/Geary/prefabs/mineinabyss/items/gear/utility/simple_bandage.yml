@@ -97,9 +97,9 @@ observe:
   - ensure:
       mythicConditions:
       - health{h=1to19} true
-    onFail:
-    - sendActionBar:
-        text: <red>Full Health
+      onFail:
+      - sendActionBar:
+          text: <red>Full Health
   - cooldown:
       id: bandage
       length: 15s

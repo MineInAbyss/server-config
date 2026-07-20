@@ -23,9 +23,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=crescentprimer;s=>=1} true
-    onFail:
-    - sendActionBar:
-        text: <red>Not Primed
+      onFail:
+      - sendActionBar:
+          text: <red>Not Primed
   - cooldown:
       id: cyanslash
       length: 10s
@@ -37,9 +37,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=crescentstop} false
-    onFail:
-    - sendActionBar:
-        text: <red>In Cooldown  
+      onFail:
+      - sendActionBar:
+          text: <red>In Cooldown  
   - cooldown:
       id: crescentprimer
       length: 1s

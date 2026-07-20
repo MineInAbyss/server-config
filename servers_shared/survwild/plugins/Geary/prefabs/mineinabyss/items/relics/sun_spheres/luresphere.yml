@@ -20,8 +20,8 @@ observe:
     - lurethrow
   - consumeItem:
       type: mineinabyss:luresphere
-    when:
-    - chance: 1
+      when:
+      - chance: 1
 resourcepack:
   model: mineinabyss:relics/l3_sunsphere
   textures:

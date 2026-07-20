@@ -40,9 +40,9 @@ observe:
         type: mineinabyss:flamethrower_fuel
       mythicConditions:
       - hasaurastacks{n=flamethrowercharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of fuel
+      onFail:
+      - sendActionBar:
+          text: <red>Out of fuel
   - cooldown:
       id: flamethrower
       length: 5s
@@ -51,8 +51,8 @@ observe:
     - flamethrower_torrent
   - consumeItem:
       type: mineinabyss:flamethrower_fuel
-    when:
-    - chance: 0.3
+      when:
+      - chance: 0.3
 passive:
 - match:
   - inHand

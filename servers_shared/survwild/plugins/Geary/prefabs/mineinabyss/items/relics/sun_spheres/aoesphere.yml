@@ -19,8 +19,8 @@ observe:
     - aoethrow
   - consumeItem:
       type: mineinabyss:aoesphere
-    when:
-    - chance: 1
+      when:
+      - chance: 1
 resourcepack:
   model: mineinabyss:relics/l4_sunsphere
   textures:

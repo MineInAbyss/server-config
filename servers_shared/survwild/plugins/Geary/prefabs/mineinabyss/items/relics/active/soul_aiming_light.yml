@@ -14,9 +14,9 @@ observe:
   - ensure:
       mythicConditions:
       - EnchantingLevel{l=>2} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience
   - cooldown:
       id: aiming_light
       length: 35s

@@ -20,8 +20,8 @@ observe:
     - sunthrow
   - consumeItem:
       type: mineinabyss:sunsphere
-    when:
-    - chance: 1
+      when:
+      - chance: 1
 resourcepack:
   model: mineinabyss:relics/l5_sunsphere
   textures:

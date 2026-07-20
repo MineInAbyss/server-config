@@ -32,9 +32,9 @@ observe:
   - ensure:
       mythicConditions:
       - FoodLevel{a=>=8} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Food
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Food
   - cooldown:
       id: AtlasDignitas
       length: 80s

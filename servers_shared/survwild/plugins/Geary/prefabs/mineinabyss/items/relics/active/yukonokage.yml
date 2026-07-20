@@ -23,9 +23,9 @@ observe:
   - ensure:
       mythicConditions:
       - hasaurastacks{n=yukonokage_souls} true
-    onFail:
-    - sendActionBar:
-        text: <red>You have insufficient souls
+      onFail:
+      - sendActionBar:
+          text: <red>You have insufficient souls
   - cooldown:
       id: yukonokage
       length: 5s

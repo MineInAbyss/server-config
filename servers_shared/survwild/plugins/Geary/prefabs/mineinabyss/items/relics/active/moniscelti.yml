@@ -14,9 +14,9 @@ observe:
   - ensure:
       mythicConditions:
       - health{h=>15}
-    onFail:
-    - sendActionBar:
-        text: <red>Not Enough Health
+      onFail:
+      - sendActionBar:
+          text: <red>Not Enough Health
   - cooldown:
       id: dew-cress_knots
       length: 44s

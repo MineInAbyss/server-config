@@ -15,9 +15,9 @@ observe:
       mythicConditions:
       - EnchantingLevel{l=>1} true
       - hasaurastacks{n=undyingwispcharge} true
-    onFail:
-    - sendActionBar:
-        text: <red>Out of Experience / Out of Charge
+      onFail:
+      - sendActionBar:
+          text: <red>Out of Experience / Out of Charge
   - cooldown:
       id: undying_wisp
       length: 20s

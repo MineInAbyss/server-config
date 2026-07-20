@@ -22,9 +22,9 @@ observe:
         sneaking: true
       mythicConditions:
       - hasaurastacks{n=reverberatingedgestack;s=10} true
-    onFail:
-    - sendActionBar:
-        text: <red>Sword is not charged / Not sneaking
+      onFail:
+      - sendActionBar:
+          text: <red>Sword is not charged / Not sneaking
   - cooldown:
       id: reverberating_edge
       length: 50s
