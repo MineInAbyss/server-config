@@ -24,6 +24,8 @@
     "gameplay/fast_lava": false
   },
   "coordinate_scale": 1.0,
+  "default_clock": "minecraft:overworld",
+  "has_ender_dragon_fight": false,
   "has_ceiling": false,
   "has_skylight": true,
   "height": 512,
