@@ -18,24 +18,16 @@ set.recipes:
         |SSS|
         |SFS|
         |SCS|
-blocky:furniture:
-  interactionHitbox:
-    - width: 1.0
-      height: 1.6
-      offset: 0,-0.5,0
+nexo:furniture:
+  hitbox:
+    # "<offset> <width>,<height>", was blocky's interactionHitbox
+    interaction: 0,-0.5,0 1,1.6
+  limited_placing:
+    floor: true
+    roof: false
+    wall: false
   properties:
     translation: 0,0.5,0
-blocky:preventItemstackUpdate:
-  forceWhenDifferentMaterial: true
-blocky:placableOn:
-  floor: true
-  ceiling: false
-  wall: false
-blocky:drops:
-  drops:
-    - item: mineinabyss:bonfire
-      silkTouchedDrop:
-        prefab: mineinabyss:bonfire
 copyToInstances:
   persisting:
     bonfire:bonfire: { }

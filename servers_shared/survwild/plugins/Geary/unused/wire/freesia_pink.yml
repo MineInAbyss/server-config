@@ -5,8 +5,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 14
-blocky:pack:
+
+nexo:custom_block:
+  type: STRINGBLOCK
+  custom_variation: 14
   model: hmcmodels:block/nature/freesia_pink
-blocky:drops:
-  drops:
-    - item: mineinabyss:freesia_pink

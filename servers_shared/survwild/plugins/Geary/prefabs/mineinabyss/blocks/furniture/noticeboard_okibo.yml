@@ -4,23 +4,19 @@ set.item:
   itemModel: mineinabyss:blocks/furniture/noticeboard_okibo
 resourcepack:
   model: mineinabyss:blocks/furniture/noticeboard_okibo
-blocky:sound:
-  placeSound: block.wood.place
-  breakSound: block.wood.break
-  stepSound: block.wood.step
-  hitSound: block.wood.hit
-  fallSound: block.wood.fall
-blocky:furniture:
+nexo:furniture:
+  restricted_rotation: VERY_STRICT
+  hitbox:
+    # "<offset> <width>,<height>", was blocky's interactionHitbox
+    interaction: 0,2,0 2,0.5
   properties:
     brightness:
-      blockLight: 15
-    displayTransform: NONE
+      block_light: 15
+    display_transform: NONE
     scale: 2.5,2.5,2.5
-  rotationType: VERY_STRICT
-  interactionHitbox:
-  - offset: 0,2,0
-    width: 2
-    height: 0.5
-blocky:drops:
-  drops:
-  - item: mineinabyss:noticeboard_okibo
+  block_sounds:
+    place_sound: block.wood.place
+    break_sound: block.wood.break
+    step_sound: block.wood.step
+    hit_sound: block.wood.hit
+    fall_sound: block.wood.fall

@@ -2,7 +2,10 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 47
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 47
   model: mineinabyss:blocks/block/snow_pillar
-blocky:directional:
-  parentBlock: mineinabyss:snow_pillar
+  directional:
+    type: LOG
+    parent_block: mineinabyss_snow_pillar

@@ -2,7 +2,10 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 12
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 12
   model: mineinabyss:blocks/block/carved_dark_oak_log
-blocky:directional:
-  parentBlock: mineinabyss:carved_dark_oak_log
+  directional:
+    type: LOG
+    parent_block: mineinabyss_carved_dark_oak_log

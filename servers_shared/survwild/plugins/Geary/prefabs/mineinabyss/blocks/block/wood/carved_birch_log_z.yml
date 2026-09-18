@@ -2,7 +2,10 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 7
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 7
   model: mineinabyss:blocks/block/carved_birch_log
-blocky:directional:
-  parentBlock: mineinabyss:carved_birch_log
+  directional:
+    type: LOG
+    parent_block: mineinabyss_carved_birch_log

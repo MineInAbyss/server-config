@@ -5,8 +5,8 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 9
-blocky:pack:
+
+nexo:custom_block:
+  type: STRINGBLOCK
+  custom_variation: 9
   model: hmcmodels:block/nature/bottlebrushes
-blocky:drops:
-  drops:
-    - item: mineinabyss:bottlebrushes

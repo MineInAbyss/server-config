@@ -6,19 +6,17 @@ set.item:
   itemModel: mineinabyss:blocks/furniture/stone_bench
 resourcepack:
   model: mineinabyss:blocks/furniture/stone_bench
-blocky:seats:
-- y: 0.5
-blocky:sound:
-  placeSound: block.amethyst_cluster.place
-  breakSound: block.amethyst_cluster.break
-  stepSound: block.amethyst_cluster.step
-  hitSound: block.amethyst_cluster.hit
-  fallSound: block.amethyst_cluster.fall
-blocky:furniture:
-  rotationType: VERY_STRICT
-  collisionHitbox:
-  - x: 0
-  - x: 1
-blocky:drops:
-  drops:
-  - item: mineinabyss:stone_bench
+nexo:furniture:
+  restricted_rotation: VERY_STRICT
+  hitbox:
+    # "x,y,z", was blocky's collisionHitbox
+    barrier:
+      - 0,0,0
+      - 1,0,0
+  seats: 0,0.5,0
+  block_sounds:
+    place_sound: block.amethyst_cluster.place
+    break_sound: block.amethyst_cluster.break
+    step_sound: block.amethyst_cluster.step
+    hit_sound: block.amethyst_cluster.hit
+    fall_sound: block.amethyst_cluster.fall

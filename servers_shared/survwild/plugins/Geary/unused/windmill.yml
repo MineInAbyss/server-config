@@ -5,8 +5,8 @@ set.item:
     floats:
     - 1002
 disableItemInteractions: {}
-blocky:modelengine:
-  modelId: windmill
-blocky:furniture:
-  collisionHitbox:
-  - x: 0
+nexo:furniture:
+  modelengine_id: windmill
+  hitbox:
+    # "x,y,z", was blocky's collisionHitbox
+    barrier: 0,0,0
