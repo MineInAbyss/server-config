@@ -2,7 +2,10 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 9
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 9
   model: mineinabyss:blocks/block/carved_crimson_stem
-blocky:directional:
-  parentBlock: mineinabyss:carved_crimson_stem
+  directional:
+    type: LOG
+    parent_block: mineinabyss_carved_crimson_stem

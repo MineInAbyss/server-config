@@ -13,16 +13,17 @@ resourcepack:
     layers:
       - mineinabyss:blocks/wire/foliage1
 
-blocky:placableOn:
-  floor: true
-  ceiling: true
-  wall: false
-  blocks:
-    - STONE
-
-blocky:pack:
+nexo:custom_block:
+  type: STRINGBLOCK
+  custom_variation: 1
   model: mineinabyss:blocks/wire/foliage1
-blocky:tallWire: {}
-blocky:drops:
-  drops:
-    - item: mineinabyss:foliage1
+  is_tall: true
+  # Nexo breaks an unsupported stringblock, which would drop this the moment it is hung from a roof
+  require_supporting: false
+  limited_placing:
+    type: ALLOW
+    floor: true
+    roof: true
+    wall: false
+    block_types:
+      - STONE

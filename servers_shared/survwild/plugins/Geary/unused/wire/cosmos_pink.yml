@@ -5,8 +5,10 @@ set.item:
 set.block:
   blockType: WIRE
   blockId: 11
-blocky:pack:
+
+nexo:custom_block:
+  type: STRINGBLOCK
+  # Nexo numbers the tripwire face bits in a different order than geary's set.block,
+  # so the value differs while the blockdata stays the one already placed in the world
+  custom_variation: 13
   model: hmcmodels:block/nature/cosmos_pink
-blocky:drops:
-  drops:
-    - item: mineinabyss:cosmos_pink

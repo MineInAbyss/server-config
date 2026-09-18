@@ -1,6 +1,3 @@
-inherit:
-  - mineinabyss:category_ice
-
 set.item:
   type: minecraft:paper
   itemName: <white>Packed Ice Bricks 2
@@ -16,8 +13,14 @@ resourcepack:
     variables:
       all: mineinabyss:blocks/block/packed_ice_bricks_2
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 40
   model: mineinabyss:blocks/block/packed_ice_bricks_2
-blocky:drops:
-  drops:
-    - item: mineinabyss:packed_ice_bricks_2
+  hardness: 0.1
+  block_sounds:
+    place_sound: minecraft:block.glass.place
+    break_sound: minecraft:block.glass.break
+    step_sound: minecraft:block.glass.step
+    hit_sound: minecraft:block.glass.hit
+    fall_sound: minecraft:block.glass.fall

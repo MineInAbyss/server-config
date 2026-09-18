@@ -2,7 +2,10 @@ set.block:
   blockType: NOTEBLOCK
   blockId: 27
 
-blocky:pack:
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 27
   model: mineinabyss:blocks/block/carved_warped_stem
-blocky:directional:
-  parentBlock: mineinabyss:carved_warped_stem
+  directional:
+    type: LOG
+    parent_block: mineinabyss_carved_warped_stem

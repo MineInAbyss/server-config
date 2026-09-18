@@ -13,8 +13,7 @@ resourcepack:
     layers:
       - mineinabyss:blocks/wire/foliage7
 
-blocky:pack:
+nexo:custom_block:
+  type: STRINGBLOCK
+  custom_variation: 7
   model: mineinabyss:blocks/wire/foliage7
-blocky:drops:
-  drops:
-    - item: mineinabyss:foliage7
