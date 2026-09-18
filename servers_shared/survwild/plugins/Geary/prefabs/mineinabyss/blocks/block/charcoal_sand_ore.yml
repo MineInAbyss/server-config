@@ -31,7 +31,6 @@ nexo:custom_block:
     best_tool: PICKAXE
     silktouch: true
     loots:
-      # Nexo resolves loot by nexo-id, so this only drops once charcoal_sand_raw is registered with Nexo
-      - nexo_item: mineinabyss_charcoal_sand_raw
+      - geary_item: mineinabyss:charcoal_sand_raw
         min_amount: 1
         max_amount: 3

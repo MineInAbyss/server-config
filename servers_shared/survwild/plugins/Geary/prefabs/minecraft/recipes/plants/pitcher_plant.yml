@@ -8,7 +8,7 @@ set.recipes:
       items:
         S: { prefab: mineinabyss:plant_matter}
         T: { prefab: mineinabyss:tachikatana_claw}
-        R: { prefab: mineinabyss:sprittleshrub_root}
+        R: { prefab: mineinabyss:spittleshrub_root}
       configuration: |-
         | T |
         | S |
