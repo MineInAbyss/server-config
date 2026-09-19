@@ -152,8 +152,8 @@ feat/survival-mobs:
 
 feat/survival-orespawns:
   copyPaths:
-    - source: servers/survival/plugins/HiddenOre
-      dest:   plugins/HiddenOre
+    - source: servers/survival/plugins/Orey
+      dest:   plugins/Orey
 
 feat/survival-events:
   include:
