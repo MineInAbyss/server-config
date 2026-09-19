@@ -6,7 +6,7 @@ boti_toast_cooldown:
 boti_sound_cooldown:
   Cooldown: 20
   Skills:
-    - effect:sound{s=entity.vindicator.celebrate;sc=passive;v=0.55;p=1.45}
+    - effect:sound{s=entity.vindicator.celebrate;sc=hostile;v=0.55;p=1.45}
 
 boti_weakness_cooldown:
   Cooldown: 10

@@ -1,5 +1,3 @@
-inherit:
-- mineinabyss:ground_furniture
 set.item:
   type: minecraft:paper
   itemName: <#33404d>Stone Bench
@@ -8,6 +6,11 @@ resourcepack:
   model: mineinabyss:blocks/furniture/stone_bench
 nexo:furniture:
   restricted_rotation: VERY_STRICT
+  limited_placing:
+    type: ALLOW
+    floor: true
+    roof: false
+    wall: false
   hitbox:
     # "x,y,z", was blocky's collisionHitbox
     barrier:
