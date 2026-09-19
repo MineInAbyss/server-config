@@ -1,0 +1,422 @@
+alerts:
+  enabled: true
+  prefix: "<gold>You found a hidden vein!"
+
+tables:
+  layerone_default:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:coal_ore
+        chance: 0.01
+        amount: 3..10
+        place: true
+      - item: minecraft:iron_ore
+        chance: 0.015
+        amount: 1..4
+        place: true
+      - item: minecraft:gravel
+        chance: 0.005
+        amount: 3..12
+  layerone_deepslate:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:deepslate_coal_ore
+        chance: 0.01
+        amount: 3..10
+        place: true
+      - item: minecraft:deepslate_iron_ore
+        chance: 0.015
+        amount: 1..4
+        place: true
+  layertwo_default:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:coal_ore
+        chance: 0.01
+        amount: 3..10
+        place: true
+      - item: minecraft:iron_ore
+        chance: 0.01
+        amount: 1..7
+        place: true
+      - item: minecraft:gold_ore
+        chance: 0.001
+        amount: 1..3
+        place: true
+      - item: minecraft:emerald_ore
+        chance: 0.004
+        amount: 1..4
+        place: true
+      - item: minecraft:copper_ore
+        chance: 0.015
+        amount: 1..6
+        place: true
+      - item: minecraft:gravel
+        chance: 0.005
+        amount: 3..12
+      - item: minecraft:sand
+        chance: 0.005
+        amount: 3..12
+  layertwo_deepslate:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:deepslate_coal_ore
+        chance: 0.01
+        amount: 3..10
+        place: true
+      - item: minecraft:deepslate_iron_ore
+        chance: 0.01
+        amount: 1..7
+        place: true
+      - item: minecraft:deepslate_gold_ore
+        chance: 0.001
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_emerald_ore
+        chance: 0.004
+        amount: 1..4
+        place: true
+      - item: minecraft:deepslate_copper_ore
+        chance: 0.015
+        amount: 1..6
+        place: true
+  layertwo_blackstone:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:gilded_blackstone
+        chance: 0.001
+        amount: 1..3
+        place: true
+  layertwo_netherrack:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:nether_gold_ore
+        chance: 0.001
+        amount: 1..3
+        place: true
+  layerthree_default:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:coal_ore
+        chance: 0.02
+        amount: 3..10
+        place: true
+      - item: minecraft:iron_ore
+        chance: 0.02
+        amount: 1..7
+        place: true
+      - item: minecraft:gold_ore
+        chance: 0.002
+        amount: 1..3
+        place: true
+      - item: minecraft:diamond_ore
+        chance: 0.0005
+        amount: 1..3
+        place: true
+      - item: minecraft:redstone_ore
+        chance: 0.001
+        amount: 1..4
+        place: true
+      - item: minecraft:lapis_ore
+        chance: 0.006
+        amount: 1..3
+        place: true
+      - item: minecraft:amethyst_shard
+        chance: 0.005
+        amount: 2..5
+        place: true
+      - item: minecraft:quartz
+        chance: 0.0015
+        amount: 1..4
+        place: true
+      - item: minecraft:gravel
+        chance: 0.005
+        amount: 3..12
+  layerthree_deepslate:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:deepslate_coal_ore
+        chance: 0.02
+        amount: 3..10
+        place: true
+      - item: minecraft:deepslate_iron_ore
+        chance: 0.02
+        amount: 1..7
+        place: true
+      - item: minecraft:deepslate_gold_ore
+        chance: 0.002
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_diamond_ore
+        chance: 0.0005
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_redstone_ore
+        chance: 0.001
+        amount: 1..4
+        place: true
+      - item: minecraft:deepslate_lapis_ore
+        chance: 0.006
+        amount: 1..3
+        place: true
+  layerthree_blackstone:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:gilded_blackstone
+        chance: 0.002
+        amount: 1..3
+        place: true
+  layerthree_netherrack:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:nether_gold_ore
+        chance: 0.002
+        amount: 1..3
+        place: true
+      - item: minecraft:nether_quartz_ore
+        chance: 0.0015
+        amount: 1..4
+        place: true
+  layerfour_default:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:coal_ore
+        chance: 0.02
+        amount: 3..10
+        place: true
+      - item: minecraft:iron_ore
+        chance: 0.03
+        amount: 1..7
+        place: true
+      - item: minecraft:gold_ore
+        chance: 0.003
+        amount: 1..3
+        place: true
+      - item: minecraft:diamond_ore
+        chance: 0.0015
+        amount: 1..3
+        place: true
+      - item: minecraft:redstone_ore
+        chance: 0.002
+        amount: 1..4
+        place: true
+      - item: minecraft:lapis_ore
+        chance: 0.008
+        amount: 1..3
+        place: true
+      - item: minecraft:quartz
+        chance: 0.002
+        amount: 1..4
+        place: true
+      - item: minecraft:gravel
+        chance: 0.0075
+        amount: 3..12
+      - item: minecraft:sand
+        chance: 0.0075
+        amount: 3..12
+  layerfour_deepslate:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:deepslate_coal_ore
+        chance: 0.02
+        amount: 3..10
+        place: true
+      - item: minecraft:deepslate_iron_ore
+        chance: 0.03
+        amount: 1..7
+        place: true
+      - item: minecraft:deepslate_gold_ore
+        chance: 0.003
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_diamond_ore
+        chance: 0.0015
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_redstone_ore
+        chance: 0.002
+        amount: 1..4
+        place: true
+      - item: minecraft:deepslate_lapis_ore
+        chance: 0.008
+        amount: 1..3
+        place: true
+  layerfour_blackstone:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:gilded_blackstone
+        chance: 0.003
+        amount: 1..3
+        place: true
+  layerfour_netherrack:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:nether_gold_ore
+        chance: 0.003
+        amount: 1..3
+        place: true
+      - item: minecraft:nether_quartz_ore
+        chance: 0.002
+        amount: 1..4
+        place: true
+  layerfive_ice:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:ender_pearl
+        chance: 0.01
+        amount: 1
+  layerfive_default:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:coal_ore
+        chance: 0.015
+        amount: 3..10
+        place: true
+      - item: minecraft:iron_ore
+        chance: 0.02
+        amount: 1..7
+        place: true
+      - item: minecraft:gold_ore
+        chance: 0.0015
+        amount: 1..3
+        place: true
+      - item: minecraft:diamond_ore
+        chance: 0.003
+        amount: 1..4
+        place: true
+      - item: minecraft:emerald_ore
+        chance: 0.001
+        amount: 1..4
+        place: true
+      - item: minecraft:redstone_ore
+        chance: 0.003
+        amount: 1..4
+        place: true
+      - item: minecraft:lapis_ore
+        chance: 0.004
+        amount: 1..3
+        place: true
+      - item: minecraft:copper_ore
+        chance: 0.0025
+        amount: 1..6
+        place: true
+      - item: minecraft:amethyst_shard
+        chance: 0.0015
+        amount: 2..5
+        place: true
+      - item: minecraft:quartz
+        chance: 0.0015
+        amount: 1..4
+        place: true
+      - item: minecraft:gravel
+        chance: 0.01
+        amount: 3..12
+      - item: minecraft:sand
+        chance: 0.01
+        amount: 3..12
+      - item: minecraft:soul_sand
+        chance: 0.0001
+        amount: 3..6
+  layerfive_deepslate:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:deepslate_coal_ore
+        chance: 0.015
+        amount: 3..10
+        place: true
+      - item: minecraft:deepslate_iron_ore
+        chance: 0.02
+        amount: 1..7
+        place: true
+      - item: minecraft:deepslate_gold_ore
+        chance: 0.0015
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_diamond_ore
+        chance: 0.003
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_emerald_ore
+        chance: 0.001
+        amount: 1..4
+        place: true
+      - item: minecraft:deepslate_redstone_ore
+        chance: 0.003
+        amount: 1..4
+        place: true
+      - item: minecraft:deepslate_lapis_ore
+        chance: 0.004
+        amount: 1..3
+        place: true
+      - item: minecraft:deepslate_copper_ore
+        chance: 0.0025
+        amount: 1..6
+        place: true
+      - item: minecraft:amethyst_shard
+        chance: 0.0015
+        amount: 2..5
+        place: true
+  layerfive_blackstone:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:gilded_blackstone
+        chance: 0.0015
+        amount: 1..3
+        place: true
+  layerfive_netherrack:
+    mode: WEIGHTED
+    drops:
+      - item: minecraft:nether_gold_ore
+        chance: 0.0015
+        amount: 1..3
+        place: true
+      - item: minecraft:nether_quartz_ore
+        chance: 0.0015
+        amount: 1..4
+        place: true
+
+regions:
+  layers:
+    layerone:
+      - blocks: [ minecraft:stone, minecraft:cyan_terracotta ]
+        table: layerone_default
+      - blocks: [ minecraft:deepslate, minecraft:cobbled_deepslate ]
+        table: layerone_deepslate
+    layertwo:
+      - blocks: [ minecraft:stone, minecraft:cyan_terracotta, minecraft:white_concrete, minecraft:diorite, minecraft:calcite ]
+        table: layertwo_default
+      - blocks: [ minecraft:deepslate, minecraft:cobbled_deepslate ]
+        table: layertwo_deepslate
+      - blocks: [ minecraft:blackstone ]
+        table: layertwo_blackstone
+      - blocks: [ minecraft:netherrack ]
+        table: layertwo_netherrack
+    layerthree:
+      - blocks: [ minecraft:stone, minecraft:cyan_terracotta, minecraft:diorite, minecraft:white_concrete, minecraft:calcite ]
+        table: layerthree_default
+      - blocks: [ minecraft:deepslate, minecraft:cobbled_deepslate ]
+        table: layerthree_deepslate
+      - blocks: [ minecraft:blackstone ]
+        table: layerthree_blackstone
+      - blocks: [ minecraft:netherrack ]
+        table: layerthree_netherrack
+    layerfour:
+      - blocks: [ minecraft:stone, minecraft:cyan_terracotta, minecraft:diorite, minecraft:white_concrete, minecraft:calcite ]
+        table: layerfour_default
+      - blocks: [ minecraft:deepslate, minecraft:cobbled_deepslate ]
+        table: layerfour_deepslate
+      - blocks: [ minecraft:blackstone ]
+        table: layerfour_blackstone
+      - blocks: [ minecraft:netherrack ]
+        table: layerfour_netherrack
+    layerfive:
+      - blocks: [ minecraft:ice, minecraft:packed_ice, minecraft:blue_ice ]
+        table: layerfive_ice
+      - blocks: [ minecraft:stone, minecraft:cyan_terracotta, minecraft:blue_terracotta, minecraft:green_terracotta ]
+        table: layerfive_default
+      - blocks: [ minecraft:deepslate, minecraft:cobbled_deepslate ]
+        table: layerfive_deepslate
+      - blocks: [ minecraft:blackstone ]
+        table: layerfive_blackstone
+      - blocks: [ minecraft:netherrack ]
+        table: layerfive_netherrack
