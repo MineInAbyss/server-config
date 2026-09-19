@@ -2,7 +2,7 @@ set.item:
   type: minecraft:potion
   potionContents:
     potionType: minecraft:regeneration
-set.potionMixes:
-  potionmixes:
+set.brewingRecipes:
+  recipes:
   - ingredient:
       prefab: mineinabyss:parasitic_watershrooms

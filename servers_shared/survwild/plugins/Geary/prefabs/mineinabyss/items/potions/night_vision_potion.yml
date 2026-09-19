@@ -2,8 +2,8 @@ set.item:
   type: minecraft:potion
   potionContents:
     potionType: minecraft:night_vision
-set.potionMixes:
-  potionmixes:
+set.brewingRecipes:
+  recipes:
   - ingredient:
       prefab: mineinabyss:hashofu_eye
   - ingredient:

@@ -8,8 +8,8 @@ set.item:
     - type: minecraft:haste
       duration: 3m
   dyedColor: 233,177,21
-set.potionMixes:
-  potionmixes:
+set.brewingRecipes:
+  recipes:
   - input:
       type: minecraft:potion
       potionContents:

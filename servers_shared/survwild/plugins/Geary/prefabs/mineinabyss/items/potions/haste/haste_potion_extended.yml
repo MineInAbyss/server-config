@@ -8,7 +8,7 @@ set.item:
     - type: minecraft:haste
       duration: 8m
   dyedColor: 233,177,21
-set.potionMixes:
-  potionmixes:
+set.brewingRecipes:
+  recipes:
   - ingredient: minecraft:redstone
     input: mineinabyss:haste_potion
