@@ -124,11 +124,11 @@ tables:
       - item: minecraft:amethyst_shard
         chance: 0.005
         amount: 2..5
-        place: true
+        place: false
       - item: minecraft:quartz
         chance: 0.0015
         amount: 1..4
-        place: true
+        place: false
       - item: minecraft:gravel
         chance: 0.005
         amount: 3..12
@@ -207,7 +207,7 @@ tables:
       - item: minecraft:quartz
         chance: 0.002
         amount: 1..4
-        place: true
+        place: false
       - item: minecraft:gravel
         chance: 0.0075
         amount: 3..12
@@ -303,11 +303,11 @@ tables:
       - item: minecraft:amethyst_shard
         chance: 0.0015
         amount: 2..5
-        place: true
+        place: false
       - item: minecraft:quartz
         chance: 0.0015
         amount: 1..4
-        place: true
+        place: false
       - item: minecraft:gravel
         chance: 0.01
         amount: 3..12
@@ -355,7 +355,7 @@ tables:
       - item: minecraft:amethyst_shard
         chance: 0.0015
         amount: 2..5
-        place: true
+        place: false
   layerfive_blackstone:
     mode: WEIGHTED
     drops:
