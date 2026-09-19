@@ -6,7 +6,7 @@ tactile_roots_trigger:
 
 tactile_roots_speed:
   TargetConditions:
-    - onblock{m=DIRT,GRASS_BLOCK,MOSS,FARMLAND,GRAVEL,DIRT_PATH,SAND} true
+    - onblock{m=DIRT,GRASS_BLOCK,MOSS_BLOCK,FARMLAND,GRAVEL,DIRT_PATH,SAND} true
   Skills:
     - potion{t=SPEED;d=60;p=false} @self
     - effect:particles{particle=reddust;color=#696112;amount=1;r=1;i=1} @Self
