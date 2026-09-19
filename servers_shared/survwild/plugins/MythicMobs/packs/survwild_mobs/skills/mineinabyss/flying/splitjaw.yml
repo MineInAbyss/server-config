@@ -63,17 +63,6 @@ SJ_dash:
     - skill{s=SJ_dashmiss} @self
     - delay 50
     - setai{ai=true}
-SJ_dashhit:
-  Cooldown: 3
-  Conditions:
-    - targetwithin 5
-  Skills:
-    - setstance{stance=dashhit} @self
-    # - shieldbreak{duration=200} @target
-    - damage{a=10;ia=true} @PIR{r=3}
-
-    - delay 100
-
 DSJ_dash:
   Cooldown: 5
   Conditions:
@@ -109,16 +98,6 @@ DSJ_dashhit:
     - damage{a=16;ia=true} @PIR{r=3}
 
     - delay 100
-  
-SJ_dashmiss:
-  Conditions:
-    - stance{s=dashhit} false
-  Skills:
-    - stun{d=80;f=true} @self
-    - state{s=dash_ground_slam;li=0;lo=0} @self
-    - delay 60
-    - state{s=dash_ground_slam;remove=true} @self
-    - setstance{stance=normal} @self
 
 sj_roar:
   Conditions:
