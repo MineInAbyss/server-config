@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Frosted Glass
   itemModel: mineinabyss:blocks/block/frosted_glass
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 52
 
 resourcepack:
   parentModel: block/cube_all

@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Carved Birch Log
   itemModel: mineinabyss:blocks/block/carved_birch_log
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 5
 
 resourcepack:
   parentModel: block/cube_column

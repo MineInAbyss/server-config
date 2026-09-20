@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Packed Ice Pillar 2
   itemModel: mineinabyss:blocks/block/packed_ice_pillar_2
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 37
 
 resourcepack:
   parentModel: block/cube_column

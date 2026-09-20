@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Packed Snow
   itemModel: mineinabyss:blocks/block/snow_packed
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 35
 
 resourcepack:
   parentModel: block/cube_all

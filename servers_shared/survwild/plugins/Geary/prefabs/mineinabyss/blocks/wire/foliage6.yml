@@ -3,9 +3,6 @@ set.item:
   itemName: <#7a4e48>Foliage 6
   itemModel: mineinabyss:blocks/wire/foliage6
   customModelData: { floats: [ 3006 ] }
-set.block:
-  blockType: WIRE
-  blockId: 6
 
 resourcepack:
   model: mineinabyss:blocks/wire/foliage6

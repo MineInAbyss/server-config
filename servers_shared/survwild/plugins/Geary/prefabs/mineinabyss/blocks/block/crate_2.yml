@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Crate 2
   itemModel: mineinabyss:blocks/block/crate_2
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 33
 
 resourcepack:
   parentModel: block/cube_all

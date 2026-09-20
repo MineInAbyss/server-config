@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Chiseled Packed Ice
   itemModel: mineinabyss:blocks/block/packed_ice_chiseled
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 34
 
 resourcepack:
   parentModel: block/cube_all

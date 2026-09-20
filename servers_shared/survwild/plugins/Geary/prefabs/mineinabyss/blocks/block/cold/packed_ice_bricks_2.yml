@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Packed Ice Bricks 2
   itemModel: mineinabyss:blocks/block/packed_ice_bricks_2
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 40
 
 resourcepack:
   parentModel: block/cube_all
