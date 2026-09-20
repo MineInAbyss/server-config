@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Snow Pillar
   itemModel: mineinabyss:blocks/block/snow_pillar
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 47
 
 resourcepack:
   parentModel: block/cube_column

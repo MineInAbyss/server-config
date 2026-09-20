@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Carved Spruce Log
   itemModel: mineinabyss:blocks/block/carved_spruce_log
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 23
 
 resourcepack:
   parentModel: block/cube_column

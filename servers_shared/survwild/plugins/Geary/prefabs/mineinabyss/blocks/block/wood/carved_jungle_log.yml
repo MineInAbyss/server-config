@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Carved Jungle Log
   itemModel: mineinabyss:blocks/block/carved_jungle_log
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 14
 
 resourcepack:
   parentModel: block/cube_column

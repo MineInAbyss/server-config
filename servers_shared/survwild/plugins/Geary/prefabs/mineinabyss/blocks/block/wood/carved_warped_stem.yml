@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Carved Warped Stem
   itemModel: mineinabyss:blocks/block/carved_warped_stem
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 26
 
 resourcepack:
   parentModel: block/cube_column

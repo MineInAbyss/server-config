@@ -2,9 +2,6 @@ set.item:
   type: minecraft:paper
   itemName: <white>Frosted Snow
   itemModel: mineinabyss:blocks/block/snow_frosted
-set.block:
-  blockType: NOTEBLOCK
-  blockId: 44
 
 resourcepack:
   parentModel: block/cube_all
