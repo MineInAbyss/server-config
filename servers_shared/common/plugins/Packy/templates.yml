@@ -87,6 +87,11 @@ modelengine:
   required: true
   loadTrigger:
     type: ModelEngine
+nexo:
+  default: true
+  required: true
+  loadTrigger:
+    type: Nexo
 emotes:
   default: true
   required: true
