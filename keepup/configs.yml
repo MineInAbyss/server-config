@@ -56,8 +56,8 @@ feat/shared-blocks:
       dest:   plugins/Packy/resourcepacks/feat_blocks_private
     - source: servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/blocks
       dest:   plugins/Geary/prefabs/mineinabyss/blocks
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/blocks"
-      dest:   plugins/Geary/prefabs/mineinabyss/blocks
+    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/nexo"
+      dest:   plugins/Geary/prefabs/nexo
 
 feat/shared-hud:
   copyPaths:
