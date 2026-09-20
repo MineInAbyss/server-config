@@ -6,7 +6,7 @@ set.item:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
   - <#A9CCCA>Just a feather, innit?
   cookingFuel:
-    burnTime: 3200
+    burnTime: 160s
     speedMultiplier: 2.0
 resourcepack:
   model: mineinabyss:materials_mobs/onitsuchi_feather
