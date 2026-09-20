@@ -2,7 +2,7 @@ set.item:
   type: minecraft:potion
   customName: <#b5955f>Haste Potion
   lore:
-  - <light_purple>Haste</light_purple> <blue>(6:00)</blue>
+  - <light_purple>Haste</light_purple> <blue>(8:00)</blue>
   potionContents:
     customEffects:
     - type: minecraft:haste
