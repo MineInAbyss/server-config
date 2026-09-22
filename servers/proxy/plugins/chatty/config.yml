@@ -1,10 +1,10 @@
 join:
-  message: ""
-  otherServerMessage: ""
-  firstJoinMessage: ""
+  message: "<green>+<white> ┃ <aqua><player>"
+  otherServerMessage: "<green>+<white> ┃ <aqua><player> <gray>(<aqua><server><gray>)"
+  firstJoinMessage: "<#058330>W<#22862a>e<#338834>l<#418a1d>c<#4d8d14>o<#598f08>m<#659000>e <dark_purple><i><player></i> <#719200>t<#7c9400>o <#889500>M<#949600>i<#9f9600>n<#ab9700>e <#b79700>i<#c39700>n <#cf9700>A<#db9600>b<#e79500>y<#f39400>s<#ff9200>s"
 leave:
-  message: ""
-  otherServerMessage: ""
+  message: "<red>-<white> ┃ <aqua><player>"
+  otherServerMessage: "<red>-<white> ┃ <aqua><player> <gray>(<aqua><server><gray>)"
 switch:
-  toMessage: ""
-  fromMessage: ""
+  toMessage: "<gray>↑<white> ┃ <aqua><player> <gray>left to <aqua><to_server> server."
+  fromMessage: "<gray>↓<white> ┃ <aqua><player> <gray>joined from <aqua><from_server> server."
