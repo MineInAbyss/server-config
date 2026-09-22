@@ -730,25 +730,30 @@ emotes:
     texture: mineinabyss:ui/mia_orthbanking/mittytoken.png
     height: 12
     ascent: -11
-# gui: blocky menu
-  - id: blocky_menu
-    font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_menu.png
+# gui: geary menu
+  - id: geary_menu
+    font: mineinabyss:geary
+    texture: mineinabyss:ui/geary/geary_menu.png
     height: 256
     ascent: 14
-  - id: blocky_grid_menu
-    font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_grid_menu.png
+  - id: geary_grid_menu
+    font: mineinabyss:geary
+    texture: mineinabyss:ui/geary/geary_grid_menu.png
     height: 256
     ascent: 14
-  - id: blocky_scrolling_up
-    font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_scrolling_up.png
+  - id: geary_search_menu
+    font: mineinabyss:geary
+    texture: mineinabyss:ui/geary/geary_search_menu.png
+    height: 256
+    ascent: -17
+  - id: geary_scrolling_up
+    font: mineinabyss:geary
+    texture: mineinabyss:ui/geary/geary_scrolling_up.png
     height: 17
     ascent: -96
-  - id: blocky_scrolling_down
-    font: mineinabyss:blocky
-    texture: mineinabyss:ui/blocky/blocky_scrolling_down.png
+  - id: geary_scrolling_down
+    font: mineinabyss:geary
+    texture: mineinabyss:ui/geary/geary_scrolling_down.png
     height: 17
     ascent: -96
 # gui: mineinabyss okibotravel feature
