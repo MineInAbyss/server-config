@@ -1,11 +1,11 @@
 set.recipes:
   discoverRecipes: true
   result:
-    type: minecraft:tube_coral_fan
+    type: minecraft:horn_coral_fan
     amount: 4
-  group: "looty:tube_coral_fan"
+  group: "looty:horn_coral_fan"
   recipes:
     - type: shapeless
       items:
         - prefab: mineinabyss:knife
-        - type: minecraft:tube_coral
+        - type: minecraft:horn_coral
