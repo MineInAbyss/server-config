@@ -1,0 +1,15 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#0047AB>Netherite Chestplate
+  itemModel: mineinabyss:gear/armor/netherite_chestplate
+  equippable:
+    slot: CHEST
+    asset_id: mineinabyss:armor_netherite
+  maxStackSize: 1
+  maxDamage: 50
+  enchantable: 0
+  enchantmentGlintOverride: false
+  lore:
+  - 'Erm, dis do be armor.'
+resourcepack:
+  model: mineinabyss:gear/armor/netherite_chestplate
