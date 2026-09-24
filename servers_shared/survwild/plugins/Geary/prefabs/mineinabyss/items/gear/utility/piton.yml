@@ -1,13 +1,21 @@
 set.item:
-  type: minecraft:clock
   itemName: Piton
+  type: minecraft:clock
   itemModel: mineinabyss:gear/utility/piton
   maxStackSize: 16
-resourcepack:
-  model: mineinabyss:gear/utility/piton
-  textures:
-    layers:
-    - mineinabyss:gear/utility/piton
+climb:piton: {}
+itemModel:
+  model:
+    type: select
+    property: display_context
+    cases:
+      - when: fixed
+        model:
+          type: reference
+          model: mineinabyss:gear/utility/piton
+    fallback:
+      type: texture
+      texture: mineinabyss:gear/utility/piton_icon
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities
