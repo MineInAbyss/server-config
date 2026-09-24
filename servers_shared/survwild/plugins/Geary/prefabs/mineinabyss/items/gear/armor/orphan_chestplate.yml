@@ -1,0 +1,15 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#0047AB>Orphanage Issued Chestplate
+  itemModel: mineinabyss:gear/armor/orphan_chestplate
+  equippable:
+    slot: CHEST
+    asset_id: mineinabyss:armor_orphan
+  maxStackSize: 1
+  maxDamage: 50
+  enchantable: 0
+  enchantmentGlintOverride: false
+  lore:
+  - 'Erm, dis do be armor.'
+resourcepack:
+  model: mineinabyss:gear/armor/orphan_chestplate
