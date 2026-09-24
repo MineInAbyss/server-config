@@ -1,0 +1,80 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "pickaxe_wooden_ver1",
+		"particle": "pickaxe_wooden_ver1"
+	},
+	"elements": [
+		{
+			"from": [7.5, 3, 1],
+			"to": [8.5, 14, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 3, 0]},
+			"faces": {
+				"north": {"uv": [2, 4, 2.5, 9.5], "texture": "#0"},
+				"east": {"uv": [2.5, 4, 3, 9.5], "texture": "#0"},
+				"south": {"uv": [3, 4, 3.5, 9.5], "texture": "#0"},
+				"west": {"uv": [3.5, 4, 4, 9.5], "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 4, 4], "texture": "#0"},
+				"down": {"uv": [4.5, 4.5, 4, 5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 10, -5],
+			"to": [8, 14, 1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 7, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 2], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"west": {"uv": [0, 2, 3, 4], "texture": "#0"},
+				"up": {"uv": [0, 3, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 10, 2],
+			"to": [8, 14, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 7, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"east": {"uv": [3, 0, 6, 2], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"west": {"uv": [3, 2, 6, 4], "texture": "#0"},
+				"up": {"uv": [0, 3, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.5, 2, 2],
+			"to": [8.5, 8, 4],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.5, 5.5, 2]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 3], "texture": "#0"},
+				"east": {"uv": [0, 4, 1, 7], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 3], "texture": "#0"},
+				"west": {"uv": [1, 4, 2, 7], "texture": "#0"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, 9]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 0, 9]
+		}
+	},
+	"groups": [
+		{
+			"name": "pickaxe_wooden_ver1",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
