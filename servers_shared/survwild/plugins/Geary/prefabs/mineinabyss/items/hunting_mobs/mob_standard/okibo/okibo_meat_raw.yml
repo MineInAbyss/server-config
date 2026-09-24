@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#10DEA7>Raw Okibo Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_meat
   lore:
   - '<emojy:layer_orth><emojy:layer_1>'
   - <yellow>Usually found in <green>Orth as a source of
@@ -13,10 +13,19 @@ set.item:
     nutrition: 3
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:okibo_meat_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/okibo_meat
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/okibo_meat_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/okibo_meat_raw

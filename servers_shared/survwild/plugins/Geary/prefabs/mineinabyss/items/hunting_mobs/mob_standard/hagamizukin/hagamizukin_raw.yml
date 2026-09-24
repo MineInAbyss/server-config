@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#0B6623>Raw Hagamizukin
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hagamizukin_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hagamizukin
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#A759FF>The meat still feels angry with me.
@@ -10,10 +10,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:hagamizukin_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hagamizukin_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hagamizukin_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/hagamizukin
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hagamizukin_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hagamizukin_raw

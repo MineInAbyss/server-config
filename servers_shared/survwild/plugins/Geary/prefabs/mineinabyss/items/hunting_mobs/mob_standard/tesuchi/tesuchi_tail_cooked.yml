@@ -13,6 +13,9 @@ set.item:
     nutrition: 5
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#8F2222>Raw Uibuta Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/uibuta_meat_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/uibuta_meat
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#C42F2F><i>A thick layer of fat clings to the meat.
@@ -11,10 +11,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:uibuta_meat_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/uibuta_meat_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/uibuta_meat_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/uibuta_meat
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/uibuta_meat_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/uibuta_meat_raw

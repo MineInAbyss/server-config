@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#649984>Cooked Chikyuoebi Claw
-  itemModel: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/chikyuoebi
   lore:
   - '<emojy:layer_5>'
   - <#943e27><i>Tastes like lobster!
@@ -10,11 +10,9 @@ set.item:
     nutrition: 7
   consumable:
     animation: EAT
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:

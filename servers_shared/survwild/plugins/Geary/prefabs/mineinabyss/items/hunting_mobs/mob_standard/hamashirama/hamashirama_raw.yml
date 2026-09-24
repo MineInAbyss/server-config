@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#1B91B5>Raw Hamashirama
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hamashirama_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hamashirama
   lore:
   - <yellow>Can be obtained by finding and
   - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
@@ -12,10 +12,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:hamashirama_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hamashirama_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hamashirama_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/hamashirama
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hamashirama_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hamashirama_raw

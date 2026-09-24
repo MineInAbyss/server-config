@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#454545>Hashofu Tail
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hashofu_tail
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#595959><i>It is said it tastes like sushi.
@@ -11,10 +11,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:hashofu_tail_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hashofu_tail_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/hashofu_tail
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_raw

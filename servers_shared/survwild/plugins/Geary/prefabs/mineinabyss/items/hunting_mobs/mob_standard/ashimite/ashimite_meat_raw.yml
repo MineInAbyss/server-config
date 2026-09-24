@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#2597D9>Raw Ashimite Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ashimite_meat
   lore:
   - '<emojy:layer_5>'
   - <#824E21><i>Seems like a great source of food.
@@ -21,10 +21,19 @@ set.item:
             hasIcon: true
   useRemainder:
     prefab: mineinabyss:ashimite_meat_bone
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:ashimite_meat_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/ashimite_meat
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/ashimite_meat_raw

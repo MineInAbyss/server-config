@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:paper
   itemName: <#9C0F2C>Cooked Yomotsubi Abdomen
-  itemModel: mineinabyss:yomotsubi_abdomen_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/yomotsubi_abdomen
   lore:
   - '<emojy:layer_3><emojy:layer_5>'
   - <#9c5d2c><i>Tastes suprisingly good.
@@ -10,10 +10,9 @@ set.item:
     nutrition: 1
   consumable:
     animation: EAT
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/yomotsubi_abdomen_cooked
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:

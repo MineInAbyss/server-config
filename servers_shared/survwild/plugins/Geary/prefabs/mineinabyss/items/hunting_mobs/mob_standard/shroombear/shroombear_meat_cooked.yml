@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#85562D>Cooked Shroombear Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/shroombear_meat_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/shroombear_meat
   lore:
   - '<emojy:layer_4>'
   - <yellow>It's edible and dark in colour.
@@ -12,6 +12,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -23,8 +26,3 @@ set.recipes:
     input: mineinabyss:shroombear_meat_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/shroombear_meat_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/shroombear_meat_cooked

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#3DDFFF>Cooked Cyatoria Drumstick
-  itemModel: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick
   lore:
   - '<emojy:layer_1><emojy:layer_2>'
   - <yellow>Said to be the offspring of a
@@ -13,6 +13,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -24,8 +27,3 @@ set.recipes:
     input: mineinabyss:cyatoria_drumstick_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_cooked

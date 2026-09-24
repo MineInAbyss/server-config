@@ -5,6 +5,7 @@ set.item:
   maxStackSize: 64
   lore:
   - <yellow>Used to cut meat into smaller pieces.
+  - <font:small_text><gray><shadow:#00000000>Passive slot ability. Meat you pick up is cut for you.
 set.recipes: 
   discoverRecipes: true
   result:
@@ -27,7 +28,33 @@ observe:
     - knifethrow
   - consumeItem:
       type: mineinabyss:knife
-    
+
+transformOnPickup:
+- conditions:
+  - check.item:
+      customModelData:
+        flags: false
+        strings: shred
+  output:
+    prefab: mineinabyss:cut_meat_raw
+  actions:
+  - playSound:
+      sound: minecraft:entity.player.attack.sweep
+      volume: 0.6
+      pitch: 1.4
+- conditions:
+  - check.item:
+      customModelData:
+        flags: true
+        strings: shred
+  output:
+    prefab: mineinabyss:cut_meat_cooked
+  actions:
+  - playSound:
+      sound: minecraft:entity.player.attack.sweep
+      volume: 0.6
+      pitch: 1.2
+
 resourcepack:
   model: mineinabyss:gear/utility/knife
   textures:
