@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#85512E>Squidfly Brain
-  itemModel: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/squidfly_brain
   lore:
   - '<emojy:layer_3>'
   - <#C27643><i>Eating it raw might not
@@ -12,10 +12,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:squidfly_brain_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/squidfly_brain_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/squidfly_brain
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_raw

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:cod
   itemName: <#9ff3f3>Cooked Ikenosuke
-  itemModel: mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ikenosuke
   lore:
   - '<emojy:layer_2><emojy:layer_3><emojy:layer_4>'
   - <#edfeff>The skin is tough, but the meat... Yum!
@@ -10,6 +10,9 @@ set.item:
     nutrition: 4
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -21,8 +24,3 @@ set.recipes:
     input: mineinabyss:ikenosuke_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/ikenosuke_cooked

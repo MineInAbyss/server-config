@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#5C471D>Cooked Onitsuchi Wing
-  itemModel: mineinabyss:hunting_mobs/mob_standard/onitsuchi_wing_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/onitsuchi_wing
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <yellow>Can also be acquired from cooking
@@ -11,6 +11,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:onitsuchi_wing_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/onitsuchi_wing_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/onitsuchi_wing_cooked

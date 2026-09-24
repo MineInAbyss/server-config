@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#0B6623>Cooked Hagamizukin
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hagamizukin_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hagamizukin
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#A759FF>The meat still feels angry with me,
@@ -11,6 +11,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:hagamizukin_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hagamizukin_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hagamizukin_cooked

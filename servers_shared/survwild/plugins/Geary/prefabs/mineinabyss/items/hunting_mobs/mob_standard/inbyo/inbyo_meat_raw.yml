@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#3D3D3D>Raw Inbyo Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/inbyo_meat
   lore:
   - '<emojy:layer_2>'
   - <#B5B5B5><i>Doesn't look very tasty...
@@ -10,10 +10,19 @@ set.item:
     nutrition: 3
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:inbyo_meat_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/inbyo_meat_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/inbyo_meat
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_raw

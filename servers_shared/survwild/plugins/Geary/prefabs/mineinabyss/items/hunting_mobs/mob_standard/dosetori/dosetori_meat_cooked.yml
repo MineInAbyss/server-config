@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#59ac7a>Cooked Dosetori Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/dosetori_meat_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/dosetori_meat
   lore:
   - '<emojy:layer_2><emojy:layer_3>'
   - <#d6b12c><i>Tastes like fried chicken.
@@ -10,6 +10,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -21,8 +24,3 @@ set.recipes:
     input: mineinabyss:dosetori_meat_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/dosetori_meat_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/dosetori_meat_cooked

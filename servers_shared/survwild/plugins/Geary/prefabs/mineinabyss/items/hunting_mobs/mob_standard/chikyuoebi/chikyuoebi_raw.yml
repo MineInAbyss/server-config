@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#649984>Raw Chikyuoebi
-  itemModel: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/chikyuoebi
   lore:
   - '<emojy:layer_5>'
   - <#943e27><i>Not that tasty raw...
@@ -10,10 +10,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:chikyuoebi_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/chikyuoebi_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/chikyuoebi
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/chikyuoebi_raw

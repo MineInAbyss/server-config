@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#454545>Cooked Hashofu Tail
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hashofu_tail
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#595959><i>It is said it tastes like sushi.
@@ -11,6 +11,9 @@ set.item:
     nutrition: 5
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:hashofu_tail_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hashofu_tail_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hashofu_tail_cooked

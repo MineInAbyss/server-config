@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#3DDFFF>Raw Cyatoria Drumstick
-  itemModel: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick
   lore:
   - '<emojy:layer_1><emojy:layer_2>'
   - <yellow>Said to be the offspring of a
@@ -13,10 +13,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_raw
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:cyatoria_drumstick_cooked
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/cyatoria_drumstick_raw

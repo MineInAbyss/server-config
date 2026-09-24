@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#10DEA7>Cooked Okibo Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_meat_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/okibo_meat
   lore:
   - '<emojy:layer_orth><emojy:layer_1>'
   - <yellow>There is a ritual in <green>Orth<yellow>, for whenever
@@ -15,6 +15,9 @@ set.item:
     nutrition: 8
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -26,8 +29,3 @@ set.recipes:
     input: mineinabyss:okibo_meat_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/okibo_meat_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/okibo_meat_cooked

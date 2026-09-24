@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#85512E>Cooked Squidfly Brain
-  itemModel: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/squidfly_brain
   lore:
   - '<emojy:layer_3>'
   - <#C27643><i>Perhaps I will become smarter
@@ -11,6 +11,9 @@ set.item:
     nutrition: 5
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:squidfly_brain_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/squidfly_brain_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/squidfly_brain_cooked

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#D8D8D8>Cooked Ottobas Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/ottobas_meat_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/ottobas_meat
   lore:
   - '<emojy:layer_2>'
   - <white><i>This should be enough food
@@ -11,6 +11,9 @@ set.item:
     nutrition: 8
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:ottobas_meat_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/ottobas_meat_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/ottobas_meat_cooked

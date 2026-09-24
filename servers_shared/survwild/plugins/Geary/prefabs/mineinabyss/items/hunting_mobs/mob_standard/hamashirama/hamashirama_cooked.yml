@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#1B91B5>Cooked Hamashirama
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hamashirama_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hamashirama
   lore:
   - <yellow>Can be obtained by finding and
   - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
@@ -12,6 +12,9 @@ set.item:
     nutrition: 6
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -23,8 +26,3 @@ set.recipes:
     input: mineinabyss:hamashirama_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hamashirama_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hamashirama_cooked

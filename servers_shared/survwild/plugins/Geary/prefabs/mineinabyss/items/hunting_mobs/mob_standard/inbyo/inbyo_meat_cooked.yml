@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#3D3D3D>Cooked Inbyo Meat
-  itemModel: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/inbyo_meat
   lore:
   - '<emojy:layer_2>'
   - <#B5B5B5><i>Seems more edible now, though
@@ -11,6 +11,9 @@ set.item:
     nutrition: 8
   consumable:
     animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -22,8 +25,3 @@ set.recipes:
     input: mineinabyss:inbyo_meat_raw
     experience: 2
     cookingTime: 50
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/inbyo_meat_cooked

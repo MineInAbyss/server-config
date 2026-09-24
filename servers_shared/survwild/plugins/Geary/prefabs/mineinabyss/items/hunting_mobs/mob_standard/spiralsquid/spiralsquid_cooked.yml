@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#6CE5F5>Cooked Spiralsquid
-  itemModel: mineinabyss:hunting_mobs/mob_standard/spiralsquid_cooked
+  itemModel: mineinabyss:hunting_mobs/mob_standard/spiralsquid
   lore:
   - '<emojy:layer_1><emojy:layer_4>'
   - <#35ADBD><i>Seems like a great source of food!
@@ -10,11 +10,9 @@ set.item:
     nutrition: 5
   consumable:
     animation: EAT
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/spiralsquid_cooked
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/spiralsquid_cooked
+  customModelData:
+    flags: true
+    strings: shred
 set.recipes:
   discoverRecipes: true
   recipes:

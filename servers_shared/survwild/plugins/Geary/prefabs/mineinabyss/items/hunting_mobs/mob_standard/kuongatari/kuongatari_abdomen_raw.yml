@@ -10,10 +10,19 @@ set.item:
     nutrition: 1
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:kuongatari_abdomen_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/kuongatari_abdomen

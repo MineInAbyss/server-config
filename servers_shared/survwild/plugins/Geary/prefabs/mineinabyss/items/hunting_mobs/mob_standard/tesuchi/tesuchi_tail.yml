@@ -13,10 +13,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:tesuchi_tail_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/tesuchi_tail

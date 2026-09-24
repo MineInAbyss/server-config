@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#613F0C>Raw Hammerbeak Wing
-  itemModel: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing_raw
+  itemModel: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing
   lore:
   - '<emojy:layer_1><emojy:layer_2><emojy:layer_4>'
   - <#A9CCCA><i>This meat seems delicious
@@ -11,10 +11,19 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
 replaceBurnedDrop:
   prefab: mineinabyss:hammerbeak_wing_cooked
-resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing_raw
-  textures:
-    layers:
-    - mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing_raw
+itemModel:
+  key: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:hunting_mobs/mob_standard/hammerbeak_wing_raw
