@@ -1,10 +1,10 @@
 set.item:
   type: minecraft:clock
-  itemName: <#0047AB>Orphanage Issued Leggings
-  itemModel: mineinabyss:gear/armor/orphan_helmet
+  itemName: <#0047AB>Charcoal Sand Helmet
+  itemModel: mineinabyss:gear/armor/charcoal_sand_helmet
   equippable:
     slot: HEAD
-    asset_id: mineinabyss:armor_orphan
+    asset_id: mineinabyss:armor_charcoal_sand
   maxStackSize: 1
   maxDamage: 50
   enchantable: 0
@@ -12,4 +12,4 @@ set.item:
   lore:
   - 'Erm, dis do be armor.'
 resourcepack:
-  model: mineinabyss:gear/armor/orphan_helmet
+  model: mineinabyss:gear/armor/charcoal_sand_helmet

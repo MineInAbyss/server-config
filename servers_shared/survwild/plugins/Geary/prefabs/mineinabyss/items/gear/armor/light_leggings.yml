@@ -1,0 +1,15 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#0047AB>Light Delving Leggings
+  itemModel: mineinabyss:gear/armor/light_leggings
+  equippable:
+    slot: LEGS
+    asset_id: mineinabyss:armor_light
+  maxStackSize: 1
+  maxDamage: 50
+  enchantable: 0
+  enchantmentGlintOverride: false
+  lore:
+  - 'Erm, dis do be armor.'
+resourcepack:
+  model: mineinabyss:gear/armor/light_leggings
