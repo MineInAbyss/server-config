@@ -1,0 +1,22 @@
+set.item:
+  itemName: Fusing Piton
+  type: minecraft:clock
+  itemModel: mineinabyss:gear/utility/fusing_piton
+  maxStackSize: 16
+climb:piton:
+  fusing: true
+itemModel:
+  model:
+    type: select
+    property: display_context
+    cases:
+      - when: fixed
+        model:
+          type: reference
+          model: mineinabyss:gear/utility/fusing_piton
+    fallback:
+      type: texture
+      texture: mineinabyss:gear/utility/piton_icon
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

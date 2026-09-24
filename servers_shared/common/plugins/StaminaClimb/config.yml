@@ -78,3 +78,43 @@ climbDifficultyGeneral:
   FENCE: 0.5
   DOOR: -1.0
   GLASS: -1.0
+rope:
+  ropeModel: mineinabyss:gear/utility/rope
+  ropeOffset: 0.2
+  drill:
+    distance: 0.2
+    steps: 10
+    ticksPerStep: 2
+  sounds:
+    placePiton:
+      sound: block.chain.place
+      volume: 0.8
+      pitch: 1.4
+    breakPiton:
+      sound: block.chain.break
+      volume: 0.8
+      pitch: 1.2
+    attachRope:
+      sound: item.lead.tied
+      volume: 1.0
+      pitch: 0.9
+    detachRope:
+      sound: item.lead.untied
+      volume: 1.0
+      pitch: 0.9
+    grabRope:
+      sound: block.wool.step
+      volume: 1.0
+      pitch: 0.8
+    climbStep:
+      sound: block.wool.step
+      volume: 0.6
+      pitch: 1.1
+    throwPiton:
+      sound: entity.snowball.throw
+      volume: 1.0
+      pitch: 0.7
+    kickWall:
+      sound: block.stone.step
+      volume: 1.0
+      pitch: 0.7
