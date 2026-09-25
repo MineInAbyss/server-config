@@ -11,9 +11,9 @@ set.item:
       correctForDrops: true
 observe:
   itemRightClick:
-  - become: parent
-  - mineinabyss:sickle:
-      radius: 2
+    - become: parent
+    - mineinabyss:sickle:
+        radius: 1
 resourcepack:
   textures:
     layers:
