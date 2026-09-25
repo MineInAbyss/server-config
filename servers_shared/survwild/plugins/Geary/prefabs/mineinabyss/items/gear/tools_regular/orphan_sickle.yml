@@ -1,0 +1,32 @@
+set.item:
+  itemName: Orphan Delving Sickle
+  type: minecraft:wooden_hoe
+  itemModel: mineinabyss:gear/tools_regular/orphan_sickle
+  maxDamage: 3000
+  tool:
+    rules:
+    - blockTypes:
+      - minecraft:leaves
+      speed: 10.0
+      correctForDrops: true
+observe:
+  itemRightClick:
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 2
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/orphan_sickle
+  parentModel: item/handheld
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: shaped
+    items:
+      M: mineinabyss:charcoal_sand_ingot
+      S: minecraft:stick
+    configuration: |-
+      | MM|
+      | SM|
+      |S  |

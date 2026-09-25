@@ -1,8 +1,13 @@
 set.item:
-  itemName: Charcoal Sand Axe
+  itemName: Orphan Delving Axe
   type: minecraft:diamond_axe
-  itemModel: mineinabyss:gear/tools_regular/charcoal_sand_axe
+  itemModel: mineinabyss:gear/tools_regular/orphan_axe
   maxDamage: 3000
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/orphan_axe
+  parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -14,8 +19,3 @@ set.recipes:
       |MM|
       |MS|
       | S|
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_axe
-  parentModel: item/handheld

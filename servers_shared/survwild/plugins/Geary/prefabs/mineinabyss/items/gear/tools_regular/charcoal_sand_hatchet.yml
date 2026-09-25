@@ -1,8 +1,13 @@
 set.item:
-  itemName: Charcoal Sand Dagger
+  itemName: Charcoal Sand Hatchet
   type: minecraft:diamond_sword
-  itemModel: mineinabyss:gear/tools_regular/charcoal_sand_dagger
+  itemModel: mineinabyss:gear/tools_regular/charcoal_sand_hatchet
   maxDamage: 3000
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/charcoal_sand_hatchet
+  parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -14,8 +19,3 @@ set.recipes:
       |M|
       |M|
       |S|
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_dagger
-  parentModel: item/handheld
