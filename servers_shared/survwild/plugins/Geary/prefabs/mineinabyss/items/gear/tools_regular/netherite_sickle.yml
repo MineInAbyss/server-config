@@ -9,6 +9,11 @@ set.item:
       - minecraft:leaves
       speed: 8.0
       correctForDrops: true
+observe:
+  itemRightClick:
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 4
 set.recipes:
   result:
     prefab: mineinabyss:netherite_sickle
@@ -19,8 +24,3 @@ set.recipes:
       type: minecraft:netherite_upgrade_smithing_template
     input: mineinabyss:diamond_sickle
     addition: minecraft:netherite_ingot
-observe:
-  itemRightClick:
-  - become: parent
-  - mineinabyss:sickle:
-      radius: 4

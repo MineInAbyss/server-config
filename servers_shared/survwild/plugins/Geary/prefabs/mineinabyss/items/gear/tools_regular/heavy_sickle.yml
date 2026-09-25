@@ -1,7 +1,7 @@
 set.item:
-  itemName: Orphan Delving Sickle
+  itemName: Heavy Delving Sickle
   type: minecraft:wooden_hoe
-  itemModel: mineinabyss:gear/tools_regular/orphan_sickle
+  itemModel: mineinabyss:gear/tools_regular/heavy_sickle
   maxDamage: 3000
   tool:
     rules:
@@ -11,13 +11,13 @@ set.item:
       correctForDrops: true
 observe:
   itemRightClick:
-    - become: parent
-    - mineinabyss:sickle:
-        radius: 1
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 2
 resourcepack:
   textures:
     layers:
-    - mineinabyss:gear/tools_regular/orphan_sickle
+    - mineinabyss:gear/tools_regular/heavy_sickle
   parentModel: item/handheld
 set.recipes:
   discoverRecipes: true

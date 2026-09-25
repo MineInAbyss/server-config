@@ -1,7 +1,7 @@
 set.item:
-  itemName: Orphan Delving Sickle
+  itemName: Stingerhead Sickle
   type: minecraft:wooden_hoe
-  itemModel: mineinabyss:gear/tools_regular/orphan_sickle
+  itemModel: mineinabyss:gear/tools_regular/stingerhead_sickle
   maxDamage: 3000
   tool:
     rules:
@@ -9,16 +9,16 @@ set.item:
       - minecraft:leaves
       speed: 10.0
       correctForDrops: true
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/stingerhead_sickle
+  parentModel: item/handheld
 observe:
   itemRightClick:
     - become: parent
     - mineinabyss:sickle:
         radius: 1
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/orphan_sickle
-  parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
   recipes:
