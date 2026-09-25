@@ -1,8 +1,13 @@
 set.item:
-  itemName: Charcoal Sand Shovel
+  itemName: Orphan Delving Shovel
   type: minecraft:diamond_shovel
-  itemModel: mineinabyss:gear/tools_regular/charcoal_sand_shovel
+  itemModel: mineinabyss:gear/tools_regular/orphan_shovel
   maxDamage: 3000
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/orphan_shovel
+  parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -14,8 +19,3 @@ set.recipes:
       |M|
       |S|
       |S|
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_shovel
-  parentModel: item/handheld

@@ -9,6 +9,16 @@ set.item:
       - minecraft:leaves
       speed: 10.0
       correctForDrops: true
+observe:
+  itemRightClick:
+  - become: parent
+  - mineinabyss:sickle:
+      radius: 2
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:gear/tools_regular/charcoal_sand_sickle
+  parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
   recipes:
@@ -20,13 +30,3 @@ set.recipes:
       | MM|
       | SM|
       |S  |
-observe:
-  itemRightClick:
-  - become: parent
-  - mineinabyss:sickle:
-      radius: 2
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_sickle
-  parentModel: item/handheld
