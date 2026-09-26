@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:feather
+  itemName: Feather
+  itemModel: mineinabyss:hunting_mobs/generic/feather
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/feather
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/feather

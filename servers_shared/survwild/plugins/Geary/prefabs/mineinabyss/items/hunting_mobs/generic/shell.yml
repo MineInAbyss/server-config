@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Shell
+  itemModel: mineinabyss:hunting_mobs/generic/shell
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/shell
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/shell

@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:string
+  itemName: Silk
+  itemModel: mineinabyss:hunting_mobs/generic/silk
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/silk
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/silk

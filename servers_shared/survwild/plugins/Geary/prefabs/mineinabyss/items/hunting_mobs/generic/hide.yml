@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Hide
+  itemModel: mineinabyss:hunting_mobs/generic/hide
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/hide
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/hide
