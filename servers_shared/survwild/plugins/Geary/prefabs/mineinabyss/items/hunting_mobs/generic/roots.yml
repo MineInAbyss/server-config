@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Roots
+  itemModel: mineinabyss:hunting_mobs/generic/roots
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/roots
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/roots

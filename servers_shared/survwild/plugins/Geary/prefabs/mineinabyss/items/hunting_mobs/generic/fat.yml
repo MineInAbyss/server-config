@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fat
+  itemModel: mineinabyss:hunting_mobs/generic/fat
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/fat
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/fat

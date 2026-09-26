@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fibers
+  itemModel: mineinabyss:hunting_mobs/generic/fibers
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/fibers
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/fibers

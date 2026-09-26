@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Parasite
+  itemModel: mineinabyss:hunting_mobs/generic/parasite
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/parasite
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/parasite

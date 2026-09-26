@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fur
+  itemModel: mineinabyss:hunting_mobs/generic/fur
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/fur
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/fur

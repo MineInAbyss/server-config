@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Undye
+  itemModel: mineinabyss:hunting_mobs/generic/undye
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/undye
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/undye

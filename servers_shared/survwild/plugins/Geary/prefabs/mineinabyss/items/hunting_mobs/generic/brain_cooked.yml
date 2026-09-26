@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Cooked Brain
+  itemModel: mineinabyss:hunting_mobs/generic/brain_cooked
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/brain_cooked
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/brain_cooked

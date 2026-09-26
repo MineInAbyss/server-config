@@ -1,0 +1,11 @@
+set.item:
+  type: minecraft:clock
+  itemName: Raw Brain
+  itemModel: mineinabyss:hunting_mobs/generic/brain_raw
+  lore:
+  - ''
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/brain_raw
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/brain_raw
