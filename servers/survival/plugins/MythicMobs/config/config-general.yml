@@ -20,7 +20,9 @@ Configuration:
     DebugMode: false
     DebugSpawners: false
     ErrorLogging: true
-    
+    # Don't regenerate Example*.yml files (ExampleDialogs etc.) when they're missing
+    LoadExampleConfigs: false
+
     # Tries to match mobs by their display name and turn them into Mythic Mobs when
     # spawned by a different plugin, for plugins that don't support Mythic
     CompatibilityMode: false

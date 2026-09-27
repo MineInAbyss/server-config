@@ -200,7 +200,7 @@ feat/survival-npcs:
 
 feat/experimental-bosses:
   copyPaths:
-    - source: "{{ privateSettingsDest }}/servers_shared/plugins/MythicMobs/packs/bosses"
+    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/MythicMobs/packs/bosses"
       dest:   plugins/MythicMobs/packs/bosses
 
 feat/experimental-delvers:
