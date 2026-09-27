@@ -15,12 +15,13 @@ observe:
   - mineinabyss:sickle:
       radius: 4
 set.recipes:
-  result:
-    prefab: mineinabyss:netherite_sickle
   discoverRecipes: true
   recipes:
-  - type: smithing_transform
-    template:
-      type: minecraft:netherite_upgrade_smithing_template
-    input: mineinabyss:diamond_sickle
-    addition: minecraft:netherite_ingot
+  - type: shaped
+    items:
+      M: mineinabyss:charcoal_sand_ingot
+      S: minecraft:stick
+    configuration: |-
+      | MM|
+      | SM|
+      |S  |
