@@ -1,13 +1,13 @@
 Messages:
-  already-error: '#e52b2bYou are already in a dialogue.'
-  permission-error: '#e52b2bYou don''t have permission to do that.'
-  console-error: '#e52b2bThis command can''t be used by the console'
-  player-error: '#ff4d4d{TargetPH}#e52b2bisn''t online.'
-  unknown-dialogue: '#ff4d4d{DialogueName} #e52b2bdoesn''t exists.'
-  unknown-command: '#e52b2bUnknown command.'
-  dialogue-sent: '#82d850The dialogue #a3fa70{DialogueName} #82d850is shown to #a3fa70{TargetPH}#82d850.'
-  dialogue-started: '#a3fa70The dialogue {DialogueName}#82d850 started.'
-  reload: '#82d850Reload successful.'
+  already-error: '<#e52b2b>You are already in a dialogue.'
+  permission-error: '<#e52b2b>You don''t have permission to do that.'
+  console-error: '<#e52b2b>This command can''t be used by the console'
+  player-error: '<#ff4d4d>{TargetPH}<#e52b2b>isn''t online.'
+  unknown-dialogue: '<#ff4d4d>{DialogueName} <#e52b2b>doesn''t exists.'
+  unknown-command: '<#e52b2b>Unknown command.'
+  dialogue-sent: '<#82d850>The dialogue <#a3fa70>{DialogueName} <#82d850>is shown to <#a3fa70>{TargetPH}<#82d850>.'
+  dialogue-started: '<#a3fa70>The dialogue {DialogueName}<#82d850> started.'
+  reload: '<#82d850>Reload successful.'
 
 Answer-Numbers:
   1: '1. '
