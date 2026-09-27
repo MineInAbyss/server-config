@@ -1,0 +1,16 @@
+set.item:
+  itemName: <#b74b4d><b>Mitty Token
+  lore:
+  - <#ff686b>
+  - <#ff686b>Bestowed upon those
+  - <#ff686b>who fund the server
+  - <#ff686b>to buy random shit
+  type: minecraft:emerald
+  itemModel: mineinabyss:trade/mitty_token
+disableItemInteractions: {}
+mineinabyss:mittytoken: {}
+resourcepack:
+  model: mineinabyss:trade/mitty_token
+  textures:
+    layers:
+    - mineinabyss:trade/mitty_token

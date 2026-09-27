@@ -1,22 +1,22 @@
 respawns:
-  - id: depth_1000
-    depth: 1000
-    location: 0,0,0
-  - id: depth_2000
-    depth: 2000
-    location: 0,0,0
-  - id: depth_3000
-    depth: 3000
-    location: 0,0,0
-  - id: depth_4000
+  - id: l1_gondola_camp
+    depth: 40
+    location: -423,-42,284 -120,0
+  - id: l1_basecamp
+    depth: 1400
+    location: 49252,147,184.5 -210,0
+  - id: l2_seekercamp_top
+    depth: 2300
+    location: 82638.5,166.25,-62.5 -270,0
+  - id: l2_seekercamp_bottom
+    depth: 2400
+    location: 82638.5,166.25,-62.5 -270,0
+  - id: l4_nanachi_hut
     depth: 4000
-    location: 0,0,0
-  - id: depth_5000
+    location: 130685.5,-104.5,-415 45,0
+  - id: l4_lower
     depth: 5000
-    location: 0,0,0
-  - id: depth_6000
-    depth: 6000
-    location: 0,0,0
-  - id: depth_7000
-    depth: 7000
-    location: 0,0,0
+    location: 163852.5,-221,-307 -15,0
+  - id: l5_umbra_outpost
+    depth: 6500
+    location: 213377,-196,975.5 165,0
