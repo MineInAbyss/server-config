@@ -27,6 +27,10 @@ feat_music:
   default: true
   required: false
   filePath: Packy/resourcepacks/feat_music
+feat_shaders:
+  default: true
+  required: true
+  filePath: Packy/resourcepacks/feat_shaders
 feat_uis:
   default: true
   required: true

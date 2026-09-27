@@ -43,6 +43,8 @@ feat/common-resourcepack:
   copyPaths:
     - source: packs_assets/common
       dest:   plugins/Packy/resourcepacks/common
+    - source: packs_assets/feat_shaders
+      dest:   plugins/Packy/resourcepacks/feat_shaders
 
 ########################################
 # Shared between BUILD, SURV & WILD
