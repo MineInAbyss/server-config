@@ -14,7 +14,7 @@ set.recipes:
   recipes:
     - type: shapeless
       items:
-        - type: minecraft:cobble_stone
+        - type: minecraft:cobblestone
 
 observe:
   itemRightClick:

@@ -73,4 +73,3 @@ inbyo_poop_impact:
     - potion{type=POISON;duration=60;level=1} @targetedtarget
     - potion{type=SLOWNESS;duration=60;level=1} @targetedtarget
     - damage{a=1;ie=true}
-    - skill{s=inbyo_poop_impact_damage} @targetedtarget

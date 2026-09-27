@@ -39,7 +39,7 @@ dungeonkuongatari:
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - state{mid=kuongatari;s=attack} @self ~onAttack
-    - skill{s=Kuon_Summon} @target ~onDamaged 0.8
+    - skill{s=kuongatari_summon} @target ~onDamaged 0.8
     - skill{s=Changetarget} ~onTimer:160 <99%
     - shieldbreak{duration=100} @target ~onattack 0.35
     - dismount ~onTimer:20
@@ -82,5 +82,5 @@ kuongatari_summon:
   Skills:
     - dismount ~onTimer:20
     - shieldbreak{duration=100} @target ~onattack 0.35
-    - skill{s=Kuon_Summon} @target ~onDamaged 0.01
+    - skill{s=kuongatari_summon} @target ~onDamaged 0.01
     - skill{s=Changetarget} ~onTimer:160 <99%

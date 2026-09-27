@@ -169,7 +169,7 @@ shear_woodcrier:
     - partvisibility{m=woodcrier;p=right_back_fluff;visible=false} @self
     - partvisibility{m=woodcrier;p=left_back_fluff;visible=false} @self
 
-horncrier_shear_revert:
+woodcrier_shear_revert:
   Skills:
     - partvisibility{m=woodcrier;p=torso_fluff;visible=true} @self
     - partvisibility{m=woodcrier;p=front_fluff;visible=true} @self
