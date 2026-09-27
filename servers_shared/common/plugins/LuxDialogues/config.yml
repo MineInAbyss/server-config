@@ -1,8 +1,9 @@
 Settings:
   lang: en
-  interaction: LeftClickEntity # LeftClick / LeftClickEntity / LeftClickPlayer / RightClick / RightClickEntity / RightClickPlayer / SwapHand
-  exit: Sneak # Sneak / None
+  interaction: LeftClickEntity # LeftClick / LeftClickAny / LeftClickEntity / LeftClickPlayer / RightClick / RightClickEntity / RightClickPlayer / SwapHand / Sneak / Jump, comma separated. Jump does not work with the Freeze effect, which blocks jumping
+  exit: Sneak # Sneak / None, ignored when interaction includes Sneak since one key cannot both advance and close
   hide-chat: true
+  empty-hand-right-click: true # For RightClick with both hands empty, which the client otherwise never reports on air. Shows a client side paper in the offhand during the dialogue, the real inventory is untouched. Needs a 1.21.4+ client
   scroll-cooldown: 5
   command-cooldown: 5 # Don't touch if you don't know what you're doing
 
