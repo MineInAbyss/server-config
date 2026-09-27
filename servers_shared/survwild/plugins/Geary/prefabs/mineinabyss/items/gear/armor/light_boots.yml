@@ -4,7 +4,7 @@ set.item:
   itemModel: mineinabyss:gear/armor/light_boots
   equippable:
     slot: FEET
-    asset_id: mineinabyss:armor_light
+    model: mineinabyss:armor_light
   maxStackSize: 1
   maxDamage: 50
   enchantable: 0

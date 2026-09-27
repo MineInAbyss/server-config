@@ -4,7 +4,7 @@ set.item:
   itemModel: mineinabyss:gear/armor/stingerhead_helmet
   equippable:
     slot: HEAD
-    asset_id: mineinabyss:armor_stingerhead
+    model: mineinabyss:armor_stingerhead
   maxStackSize: 1
   maxDamage: 50
   enchantable: 0
