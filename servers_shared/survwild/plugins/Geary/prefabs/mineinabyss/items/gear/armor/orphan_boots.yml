@@ -4,7 +4,7 @@ set.item:
   itemModel: mineinabyss:gear/armor/orphan_boots
   equippable:
     slot: FEET
-    asset_id: mineinabyss:armor_orphan
+    model: mineinabyss:armor_orphan
   maxStackSize: 1
   maxDamage: 50
   enchantable: 0

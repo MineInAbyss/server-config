@@ -4,7 +4,7 @@ set.item:
   itemModel: mineinabyss:gear/armor/heavy_chestplate
   equippable:
     slot: CHEST
-    asset_id: mineinabyss:armor_heavy
+    model: mineinabyss:armor_heavy
   maxStackSize: 1
   maxDamage: 50
   enchantable: 0
