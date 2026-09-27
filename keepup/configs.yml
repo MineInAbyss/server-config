@@ -299,7 +299,6 @@ dev:
     - feat/survival-orespawns
     - feat/survival-events
     - feat/experimental-delvers
-    - feat/experimental-bosses
 
 staging:
   copyPaths: [ ] # Staging should mimic another server as closely as possible, use `include` below instead
