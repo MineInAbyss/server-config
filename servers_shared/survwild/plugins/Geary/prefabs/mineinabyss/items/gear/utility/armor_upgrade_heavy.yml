@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: "Armor Upgrade: Heavy Gear"
+  itemModel: mineinabyss:gear/utility/armor_upgrade_heavy
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/armor_upgrade_heavy
+  textures:
+    layers:
+    - mineinabyss:gear/utility/armor_upgrade_heavy

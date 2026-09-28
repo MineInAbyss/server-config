@@ -1,12 +1,12 @@
 set.item:
   type: minecraft:clock
-  itemName: Repair Kit
+  itemName: Armor Repair Kit
   itemModel: minecraft:brush
   maxStackSize: 1
   maxDamage: 250
   enchantable: 0
   lore:
-  - <yellow>Used to mend damaged gear.
+  - <yellow>Used to mend damaged armor pieces.
   - <font:small_text><gray><shadow:#00000000>Right click it onto a damaged item in your inventory.
 
 repairKit:

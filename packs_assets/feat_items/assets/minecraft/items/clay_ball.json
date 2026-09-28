@@ -9,11 +9,11 @@
       { "threshold": 11, "model": {"type": "model", "model": "mineinabyss:projectiles/crescent_slash_4" } },
       { "threshold": 12, "model": {"type": "model", "model": "mineinabyss:event_items/amongus_cookie" } },
       { "threshold": 13, "model": {"type": "model", "model": "mineinabyss:projectiles/knife" } },
-      { "threshold": 14, "model": {"type": "model", "model": "mineinabyss:projectiles/l1_sunsphere" } },
-      { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:projectiles/l2_sunsphere" } },
-      { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:projectiles/l3_sunsphere" } },
-      { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:projectiles/l4_sunsphere" } },
-      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:projectiles/l5_sunsphere" } },
+      { "threshold": 14, "model": {"type": "model", "model": "mineinabyss:projectiles/sunsphere_l1" } },
+      { "threshold": 15, "model": {"type": "model", "model": "mineinabyss:projectiles/sunsphere_l2" } },
+      { "threshold": 16, "model": {"type": "model", "model": "mineinabyss:projectiles/sunsphere_l3" } },
+      { "threshold": 17, "model": {"type": "model", "model": "mineinabyss:projectiles/sunsphere_l4" } },
+      { "threshold": 18, "model": {"type": "model", "model": "mineinabyss:projectiles/sunsphere_l5" } },
       { "threshold": 19, "model": {"type": "model", "model": "mineinabyss:projectiles/pebble" } }
     ],
     "fallback": {

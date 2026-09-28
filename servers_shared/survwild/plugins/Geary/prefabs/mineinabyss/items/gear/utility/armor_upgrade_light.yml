@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: "Armor Upgrade: Light Gear"
+  itemModel: mineinabyss:gear/utility/armor_upgrade_light
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/armor_upgrade_light
+  textures:
+    layers:
+    - mineinabyss:gear/utility/armor_upgrade_light

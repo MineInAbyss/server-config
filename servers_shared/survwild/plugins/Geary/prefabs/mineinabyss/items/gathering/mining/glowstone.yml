@@ -1,0 +1,9 @@
+set.item:
+  itemName: <dark_aqua>Glowstone
+  type: minecraft:clock
+  itemModel: mineinabyss:gathering/mining/glowstone
+resourcepack:
+  model: mineinabyss:gathering/mining/glowstone
+  textures:
+    layers:
+    - mineinabyss:gathering/mining/glowstone

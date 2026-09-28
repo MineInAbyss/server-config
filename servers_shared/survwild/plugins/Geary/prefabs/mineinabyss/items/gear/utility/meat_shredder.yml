@@ -1,21 +1,16 @@
 set.item:
   type: minecraft:clock
-  itemName: Knife
-  itemModel: mineinabyss:gear/utility/knife
+  itemName: Meat Shredder
+  itemModel: mineinabyss:gear/utility/meat_shredder
   maxStackSize: 64
   lore:
   - <yellow>Used to cut meat into smaller pieces.
   - <font:small_text><gray><shadow:#00000000>Passive slot ability. Meat you pick up is cut for you.
-set.recipes: 
-  discoverRecipes: true
-  result:
-    prefab: mineinabyss:knife
-    amount: 8
-  recipes:
-    - type: shapeless
-      items:
-        - type: minecraft:stick
-        - type: minecraft:iron_ingot
+resourcepack:
+  model: mineinabyss:gear/utility/knife
+  textures:
+    layers:
+    - mineinabyss:gear/utility/knife
 
 observe:
   itemRightClick:
@@ -55,8 +50,13 @@ transformOnPickup:
       volume: 0.6
       pitch: 1.2
 
-resourcepack:
-  model: mineinabyss:gear/utility/knife
-  textures:
-    layers:
-    - mineinabyss:gear/utility/knife
+set.recipes: 
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:knife
+    amount: 8
+  recipes:
+    - type: shapeless
+      items:
+        - type: minecraft:stick
+        - type: minecraft:iron_ingot

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
-  itemName: Pebble
-  itemModel: mineinabyss:gathering_spawned/pebble
+  itemName: Sainona
+  itemModel: mineinabyss:gathering/cooking/sainona
   maxStackSize: 32
   lore:
   - <yellow>Smooth rock.
@@ -19,16 +19,17 @@ set.recipes:
 observe:
   itemRightClick:
   - become: parent
-  - itemCooldown:
-      group: mineinabyss:pebble
-      duration: 2s
+  - cooldown:
+      id: pebble
+      length: 2s
+      display: <#BFBFBF>Pebble
   - mythicSkills:
     - pebble_throw
   - consumeItem:
       type: mineinabyss:pebble
     
 resourcepack:
-  model: mineinabyss:gathering_spawned/pebble
+  model: mineinabyss:gathering/cooking/sainona
   textures:
     layers:
-    - mineinabyss:gathering_spawned/pebble
+    - mineinabyss:gathering/cooking/sainona

@@ -1,0 +1,9 @@
+set.item:
+  itemName: <dark_aqua>Rock Salt
+  type: minecraft:clock
+  itemModel: mineinabyss:gathering/mining/rock_salt
+resourcepack:
+  model: mineinabyss:gathering/mining/rock_salt
+  textures:
+    layers:
+    - mineinabyss:gathering/mining/rock_salt

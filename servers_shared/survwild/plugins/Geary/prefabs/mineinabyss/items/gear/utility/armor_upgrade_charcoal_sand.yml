@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: "Armor Upgrade: Charcoal Sand"
+  itemModel: mineinabyss:gear/utility/armor_upgrade_charcoal_sand
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/armor_upgrade_charcoal_sand
+  textures:
+    layers:
+    - mineinabyss:gear/utility/armor_upgrade_charcoal_sand

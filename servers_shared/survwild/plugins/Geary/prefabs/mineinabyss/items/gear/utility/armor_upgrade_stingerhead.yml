@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: "Armor Upgrade: Stingerhead"
+  itemModel: mineinabyss:gear/utility/armor_upgrade_stingerhead
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/armor_upgrade_stingerhead
+  textures:
+    layers:
+    - mineinabyss:gear/utility/armor_upgrade_stingerhead
