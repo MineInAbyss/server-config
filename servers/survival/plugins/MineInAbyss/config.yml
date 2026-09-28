@@ -38,6 +38,14 @@ lootCrates:
   enabled: true
 misc:
   enabled: true
+  grassBonemeal:
+    replaceChance: 0.7
+    #prefabs:
+    #  namespace:key: 0.1 #weight
+    vanilla:
+      spore_blossom: 0.05
+      wither_rose: 0.05
+      white_tulip: 0.7
 music:
   enabled: true
 shopkeeping:
