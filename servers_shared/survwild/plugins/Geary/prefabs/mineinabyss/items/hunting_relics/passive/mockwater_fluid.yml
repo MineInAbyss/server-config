@@ -7,16 +7,13 @@ set.item:
   - <#cdd13d>This viscous, living fluid is remarkably tedious to clean off 
   - <#cdd13d>surfaces once applied, unless the organism wills it so.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Lets the slime wander outside its container.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 1s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:mockwater_fluid
   - mythicSkills:
     - mockwater_fluid
 resourcepack:

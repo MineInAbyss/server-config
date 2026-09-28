@@ -33,16 +33,13 @@ set.item:
 #                  - ghost_seek_effect_5
 #                  - ghost_seek_glow_nearby
 
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 15s
   run:
     - become: parent
-    - ensure:
-          inSlot:
-            slots: [ 9, 10 ]
-            item: mineinabyss:ghost_seek_3
     - geary:ghost_seek:
         radii:
           250:

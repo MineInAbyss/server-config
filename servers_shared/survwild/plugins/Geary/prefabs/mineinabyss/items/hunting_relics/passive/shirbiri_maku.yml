@@ -8,16 +8,13 @@ set.item:
   - <#BB9672>any other part of one’s body than the arm or hand.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants a short
   - <font:small_bottom><gray><shadow:#00000000>damage modifier at random intervals.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 10s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:shirbiri_maku
   - mythicSkills:
     - shirbiri_maku
 resourcepack:

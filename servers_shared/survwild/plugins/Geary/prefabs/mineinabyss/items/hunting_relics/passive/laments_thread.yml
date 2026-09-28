@@ -8,16 +8,13 @@ set.item:
   - <#cdd13d>its effects. Nonetheless, it finds its use with certain groups.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Causes weakness and
   - <font:small_bottom><gray><shadow:#00000000>mining fatigue to the user and the surroundings.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 2s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:laments_thread
   - mythicSkills:
     - laments_thread
 resourcepack:

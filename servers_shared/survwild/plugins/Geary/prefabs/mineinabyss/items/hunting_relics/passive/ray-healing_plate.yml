@@ -8,18 +8,16 @@ set.item:
   - <#d7c9b3>and comfortable to the touch, even in cold climates.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Slowly heals the user
   - <font:small_bottom><gray><shadow:#00000000>when above a specific light level.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 1s
   run:
   - become: parent
   - ensure:
         mythicConditions:
           - hasaura{n=reliceffectcancel} false
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:ray-healing_plate
   - mythicSkills:
     - ray-healing_heal
 
