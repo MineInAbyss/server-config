@@ -7,16 +7,13 @@ set.item:
   - <#BB9672>Stories have been passed around about a Cave Raider who used this 
   - <#BB9672>Relic to keep himself constantly awake through his expeditions.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants short speed buffs when equipped.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 30s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:sudden_pinch
   - applyPotionEffects:
     - type: minecraft:speed
       duration: 3s

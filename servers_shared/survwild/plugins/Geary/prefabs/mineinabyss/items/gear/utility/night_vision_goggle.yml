@@ -9,16 +9,13 @@ set.item:
   - <#D2D489>to darkness, revealing what the abyss hides.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants nightvision.
 
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 10s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:night_vision_goggle
   - applyPotionEffects:
     - type: minecraft:night_vision
       duration: 22s

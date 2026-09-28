@@ -7,18 +7,16 @@ set.item:
   - <#d7c9b3>Derived from technology recovered from Interference Units, this
   - <#d7c9b3>mask bends light around its wearer, but inexplicably not itself.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Turns the user invisible.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 4s
   run:
   - become: parent
   - ensure:
         mythicConditions:
           - hasaura{n=reliceffectcancel} false
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:frayed_murmur
   - applyPotionEffects:
     - type: minecraft:invisibility
       duration: 8s

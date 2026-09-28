@@ -27,16 +27,13 @@ set.item:
 #            25:
 #              - mythicSkills: [ ghost_seek_effect_3 ]
 
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 20s
   run:
     - become: parent
-    - ensure:
-          inSlot:
-            slots: [ 9, 10 ]
-            item: mineinabyss:ghost_seek
     - geary:ghost_seek:
         radii:
           150:

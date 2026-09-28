@@ -8,18 +8,16 @@ set.item:
   - <#43583c>sure to point out creatures it deems less valuable than the wearer.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Applies damage modifier and
   - <font:small_bottom><gray><shadow:#00000000>glow effect to any mob the wearer is looking at.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 1s
   run:
   - become: parent
   - ensure:
         mythicConditions:
           - hasaura{n=reliceffectcancel} false
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:detector_type_i
   - mythicSkills:
     - detector_type_i
 resourcepack:

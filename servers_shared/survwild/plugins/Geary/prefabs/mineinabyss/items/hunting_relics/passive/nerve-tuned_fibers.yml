@@ -7,16 +7,13 @@ set.item:
   - <#d7c9b3>Bearers of this organic armor describe wearing it as disgusting,
   - <#d7c9b3>though some insist it makes them feel less alone in the vast Abyss.
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Twitches and grants haste.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 4s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:nerve-tuned_fibers 
   - applyPotionEffects:
     - type: minecraft:haste
       duration: 8s

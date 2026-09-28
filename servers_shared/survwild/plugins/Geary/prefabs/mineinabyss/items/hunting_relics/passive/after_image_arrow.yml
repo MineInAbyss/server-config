@@ -8,16 +8,13 @@ set.item:
   - <#43583c>by this Relic still hurt as though they were real. 
   - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. On bow and crossbow use
   - <font:small_bottom><gray><shadow:#00000000>shoots an additional projectile which deals damage.
+passiveItem: {}
 passive:
 - match:
-  - inInventory
+  - inPassive
   every: 1s
   run:
   - become: parent
-  - ensure:
-        inSlot:
-          slots: [ 9, 10 ]
-          item: mineinabyss:after_image_arrow
   - mythicSkills:
     - after_image_arrow
 resourcepack:

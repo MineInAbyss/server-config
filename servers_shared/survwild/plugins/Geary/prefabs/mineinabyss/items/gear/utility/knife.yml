@@ -29,6 +29,7 @@ observe:
   - consumeItem:
       type: mineinabyss:knife
 
+passiveItem: {}
 transformOnPickup:
 - conditions:
   - check.item:
