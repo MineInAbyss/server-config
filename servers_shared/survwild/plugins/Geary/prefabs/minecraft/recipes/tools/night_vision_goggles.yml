@@ -1,8 +1,8 @@
 set.recipes:
   discoverRecipes: true
   result:
-    prefab: mineinabyss:night_vision_goggle
-  group: mineinabyss:night_vision_goggle
+    prefab: mineinabyss:night_vision_goggles
+  group: mineinabyss:night_vision_goggles
   recipes:
     - type: shaped
       items:

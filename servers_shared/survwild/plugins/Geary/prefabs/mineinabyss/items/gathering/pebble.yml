@@ -1,0 +1,34 @@
+set.item:
+  type: minecraft:clock
+  itemName: Pebble
+  itemModel: mineinabyss:gathering/pebble
+  maxStackSize: 32
+  lore:
+  - <yellow>Smooth rock.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Right click to throw.
+set.recipes: 
+  discoverRecipes: true
+  result:
+    prefab: mineinabyss:knife
+    amount: 4
+  recipes:
+    - type: shapeless
+      items:
+        - type: minecraft:cobblestone
+
+observe:
+  itemRightClick:
+  - become: parent
+  - itemCooldown:
+      group: mineinabyss:pebble
+      duration: 2s
+  - mythicSkills:
+    - pebble_throw
+  - consumeItem:
+      type: mineinabyss:pebble
+    
+resourcepack:
+  model: mineinabyss:gathering/pebble
+  textures:
+    layers:
+    - mineinabyss:gathering/pebble

@@ -1,0 +1,17 @@
+set.item:
+  type: minecraft:clock
+  itemName: Tool Repair Kit
+  itemModel: minecraft:brush
+  maxStackSize: 1
+  maxDamage: 250
+  enchantable: 0
+  lore:
+  - <yellow>Used to mend damaged tools.
+  - <font:small_text><gray><shadow:#00000000>Right click it onto a damaged item in your inventory.
+
+repairKit:
+  actions:
+  - playSound:
+      sound: minecraft:block.anvil.use
+      volume: 0.5
+      pitch: 1.4

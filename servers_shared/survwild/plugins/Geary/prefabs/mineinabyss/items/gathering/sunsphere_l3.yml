@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#AC8053>Magnet Sphere
-  itemModel: mineinabyss:hunting_relics/l3_sunsphere
+  itemModel: mineinabyss:gathering/sunsphere_l3
   lore:
   - '<emojy:layer_3> Grade IV Relic'
   - <#BB9672>It is an egg-shaped relic with
@@ -22,7 +22,7 @@ observe:
     when:
     - chance: 1
 resourcepack:
-  model: mineinabyss:hunting_relics/l3_sunsphere
+  model: mineinabyss:gathering/sunsphere_l3
   textures:
     layers:
-    - mineinabyss:hunting_relics/l3_sunsphere
+    - mineinabyss:gathering/sunsphere_l3

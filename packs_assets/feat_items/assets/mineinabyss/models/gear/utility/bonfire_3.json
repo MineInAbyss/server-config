@@ -3,9 +3,9 @@
 	"texture_size": [128, 128],
 	"textures": {
 		"6": "mineinabyss:gear/utility/bonfire",
-		"8": "mineinabyss:gear/utility/cave_raider_pickaxe",
-		"9": "mineinabyss:gear/utility/backpack",
-		"particle": "mineinabyss:gear/utility/campfire_log"
+		"8": "mineinabyss:gear/utility/bonfire_pickaxe",
+		"9": "mineinabyss:gear/utility/bonfire_backpack",
+		"particle": "mineinabyss:gear/utility/bonfire"
 	},
 	"elements": [
 		{

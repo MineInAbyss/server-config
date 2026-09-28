@@ -5,9 +5,9 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"6": "mineinabyss:gear/utility/bonfire",
-		"particle": "mineinabyss:gear/utility/campfire_log",
-		"log": "mineinabyss:gear/utility/campfire_log",
-		"lit_log": "mineinabyss:gear/utility/campfire_log_lit"
+		"particle": "mineinabyss:gear/utility/bonfire_log",
+		"log": "mineinabyss:gear/utility/bonfire_log",
+		"lit_log": "mineinabyss:gear/utility/bonfire_log_lit"
 	},
 	"elements": [
 		{
