@@ -86,3 +86,25 @@ cauldron_backpack:
   firstperson-item:
     material: PAPER
     model-id: mineinabyss:cosmetics/backpacks/cauldron_backpack_fp
+ghast_rider_backpack:
+  slot: BACKPACK
+  dyeable: false
+  permission: "hmccosmetics.backpack.ghast_rider_backpack"
+  item:
+    name: Ghast Rider Backpack
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/ghast_rider_backpack
+  firstperson-item:
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/ghast_rider_backpack_fp
+polar_explorer_backpack:
+  slot: BACKPACK
+  dyeable: true
+  permission: "hmccosmetics.backpack.polar_explorer_backpack"
+  item:
+    name: Polar Explorer Backpack
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/polar_explorer_backpack
+  firstperson-item:
+    material: PAPER
+    model-id: mineinabyss:cosmetics/backpacks/polar_explorer_backpack_fp

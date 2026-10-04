@@ -96,3 +96,10 @@ gas_mask_3:
     name: Gasmask with Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/gas_mask_3
+witch_hat_2:
+  slot: HELMET
+  permission: "hmccosmetics.hat.witch_hat_2"
+  item:
+    name: Witch Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/witch_hat_2

@@ -63,3 +63,18 @@ henya_helmet:
     name: Henya's Helmet
     material: PAPER
     model-id: mineinabyss:cosmetics/hats/henya_helmet
+ghast_rider_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.ghast_rider_hat"
+  item:
+    name: Ghast Rider Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/ghast_rider_hat
+polar_explorer_hat:
+  slot: HELMET
+  permission: "hmccosmetics.hat.polar_explorer_hat"
+  dyeable: true
+  item:
+    name: Polar Explorer Hat
+    material: PAPER
+    model-id: mineinabyss:cosmetics/hats/polar_explorer_hat

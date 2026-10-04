@@ -255,6 +255,24 @@ items:
         - "<red>Locked</red>"
     type: cosmetic
     cosmetic: gas_mask_3
+  witch_hat_2:
+    slots: 14
+    item:
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - "<red>Locked</red>"
+    type: cosmetic
+    cosmetic: witch_hat_2
 
   home_button:
     slots: 49

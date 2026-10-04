@@ -151,6 +151,56 @@ items:
     currency: mitty_token
     cost: 1
     cosmetic: mechanic_glasses
+  ghast_rider_hat:
+    slots: 7
+    item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - "<red>Locked"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: ghast_rider_hat
+  polar_explorer_hat:
+    slots: 8
+    item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: polar_explorer_hat
 
 
   dooby_helmet:
