@@ -237,6 +237,74 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  ghast_rider_backpack:
+    slots: 7
+    item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 80
+    cosmetic: ghast_rider_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  polar_explorer_backpack:
+    slots: 8
+    item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 80
+    cosmetic: polar_explorer_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
   camper_backpack:
     slots: 36

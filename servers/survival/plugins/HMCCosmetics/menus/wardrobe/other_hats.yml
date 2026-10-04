@@ -200,6 +200,64 @@ items:
     currency: orth_coin
     cost: 80
     cosmetic: mechanic_glasses
+  ghast_rider_hat:
+    slots: 7
+    item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:ghast_rider_hat
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 80
+    cosmetic: ghast_rider_hat
+  polar_explorer_hat:
+    slots: 8
+    item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    locked-item:
+      material: hmccosmetics:polar_explorer_hat
+      lore:
+        - "<red>Locked</red> <white>|</white> <gold>80:cosmetic_orth_coin:"
+        - "<yellow>[Left Click - <i>Try</i>]"
+        - "<red>[Right Click - <i>Buy</i>]"
+    type: mia_cosmetic
+    currency: orth_coin
+    cost: 80
+    cosmetic: polar_explorer_hat
 
 
   dooby_helmet:

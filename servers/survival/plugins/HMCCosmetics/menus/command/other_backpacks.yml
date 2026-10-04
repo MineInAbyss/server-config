@@ -226,6 +226,66 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  ghast_rider_backpack:
+    slots: 7
+    item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - "<red>Locked"
+        - "<yellow>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:ghast_rider_backpack
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: ghast_rider_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
+  polar_explorer_backpack:
+    slots: 8
+    item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    equipped-item:
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+        - "<rainbow>[Right Click - <i>Dye</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:polar_explorer_backpack
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: polar_explorer_backpack
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
   camper_backpack:
     slots: 36

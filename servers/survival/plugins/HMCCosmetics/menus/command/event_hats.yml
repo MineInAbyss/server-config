@@ -303,6 +303,27 @@ items:
     currency: mitty_token
     cost: 1
     cosmetic: gas_mask_3
+  witch_hat_2:
+    slots: 14
+    item:
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-item:
+      model-id: mineinabyss:ui/hmccosmetics/question_mark_button
+      material: hmccosmetics:witch_hat_2
+      lore:
+        - "<red>Locked"
+    type: cosmetic
+    currency: mitty_token
+    cost: 1
+    cosmetic: witch_hat_2
 
   home_button:
     slots: 49

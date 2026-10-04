@@ -243,6 +243,35 @@ items:
         - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
       on-unequip:
         - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"      
+  witch_broom_stick:
+    slots: 11
+    item:
+      material: hmccosmetics:witch_broom_stick
+      lore:
+        - ""
+        - "<yellow>[Left Click - <i>Equip</i>]"
+    equipped-item:
+      material: hmccosmetics:witch_broom_stick
+      lore:
+        - ""
+        - "<red>[Left Click - <i>Unequip</i>]"
+    locked-equipped-item:
+      material: hmccosmetics:witch_broom_stick
+      lore:
+        - "<red>Locked</red>"
+        - "<yellow>[Left Click - <i>Try</i>]"
+    locked-item:
+      material: hmccosmetics:witch_broom_stick
+      lore:
+        - "<red>Locked</red>"
+        - "<yellow>[Left Click - <i>Try</i>]"
+    type: mia_cosmetic
+    cosmetic: witch_broom_stick
+    actions:
+      on-equip:
+        - "[SOUND] minecraft:item.armor.equip_generic 1.0 1.0"
+      on-unequip:
+        - "[SOUND] minecraft:item.armor.unequip_generic 1.0 1.0"
 
   home_button:
     slots: 49
