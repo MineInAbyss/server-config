@@ -1,0 +1,170 @@
+{
+  "targets": {
+    "swap": {},
+    "blurred": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "mineinabyss:post/okibo_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:main",
+          "bilinear": true
+        },
+        {
+          "sampler_name": "Depth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        }
+      ],
+      "output": "swap",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "BlurDir",
+            "type": "vec2",
+            "value": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Radius",
+            "type": "float",
+            "value": 4.0
+          },
+          {
+            "name": "Near",
+            "type": "float",
+            "value": 0.05
+          },
+          {
+            "name": "Cutoff",
+            "type": "float",
+            "value": 3.6
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "mineinabyss:post/okibo_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap",
+          "bilinear": true
+        },
+        {
+          "sampler_name": "Depth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        }
+      ],
+      "output": "blurred",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "BlurDir",
+            "type": "vec2",
+            "value": [
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Radius",
+            "type": "float",
+            "value": 4.0
+          },
+          {
+            "name": "Near",
+            "type": "float",
+            "value": 0.05
+          },
+          {
+            "name": "Cutoff",
+            "type": "float",
+            "value": 3.6
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "mineinabyss:post/okibo_board",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:main"
+        },
+        {
+          "sampler_name": "Depth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        },
+        {
+          "sampler_name": "Blur",
+          "target": "blurred"
+        }
+      ],
+      "output": "swap",
+      "uniforms": {
+        "BoardConfig": [
+          {
+            "name": "Near",
+            "type": "float",
+            "value": 0.05
+          },
+          {
+            "name": "Cutoff",
+            "type": "float",
+            "value": 3.6
+          },
+          {
+            "name": "Dim",
+            "type": "float",
+            "value": 0.55
+          },
+          {
+            "name": "Desaturate",
+            "type": "float",
+            "value": 0.4
+          },
+          {
+            "name": "Fade",
+            "type": "float",
+            "value": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/blit",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap"
+        }
+      ],
+      "output": "minecraft:main",
+      "uniforms": {
+        "BlitConfig": [
+          {
+            "name": "ColorModulate",
+            "type": "vec4",
+            "value": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
