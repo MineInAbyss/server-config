@@ -758,14 +758,17 @@ emotes:
     ascent: -96
 # gui: mineinabyss okibotravel feature
   - id: okibo_icon
-    font: mineinabyss:mia_okibotravel
+    template: mia_okibotravel
     texture: mineinabyss:ui/mia_okibotravel/okibo_icon.png
-    height: 7
-    ascent: 7
-  - id: orthmap
-    font: mineinabyss:mia_okibotravel
-    texture: mineinabyss:ui/mia_okibotravel/okibo_map.png
-    height: 30
-    ascent: 30
-    bitmapWidth: 2
-    bitmapHeight: 2
+  - id: okibo_icon_here
+    template: mia_okibotravel
+    texture: mineinabyss:ui/mia_okibotravel/okibo_icon_here.png
+  - id: okibo_icon_selected
+    template: mia_okibotravel
+    texture: mineinabyss:ui/mia_okibotravel/okibo_icon_selected.png
+# gui: mineinabyss overlay feature
+  - id: overlay_cursor
+    font: mineinabyss:overlay
+    texture: mineinabyss:ui/overlay/overlay_cursor.png
+    height: 16
+    ascent: 15
