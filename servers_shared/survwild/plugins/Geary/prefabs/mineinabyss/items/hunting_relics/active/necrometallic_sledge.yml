@@ -24,10 +24,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Lacks Charge
-  - cooldown:
-      id: necrometallicsledge
-      length: 32s
-      display: <#79EDE2>Necrometallic Sledge
+  - itemCooldown:
+      group: mineinabyss:necrometallicsledge
+      duration: 32s
   - mythicSkills:
     - necrometallic_sledge_ability
 passive:

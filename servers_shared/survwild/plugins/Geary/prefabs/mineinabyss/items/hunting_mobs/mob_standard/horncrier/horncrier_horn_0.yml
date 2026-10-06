@@ -16,8 +16,8 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      length: 10s
-      id: sound_goat_horn
+  - itemCooldown:
+      group: mineinabyss:sound_goat_horn
+      duration: 10s
   - playSound:
       sound: minecraft:item.goat_horn.sound.0

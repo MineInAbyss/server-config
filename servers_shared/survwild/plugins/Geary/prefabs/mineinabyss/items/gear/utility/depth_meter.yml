@@ -44,10 +44,9 @@ set.recipes:
 observe:
   itemLeftClick:
   - become: parent
-  - cooldown:
-      id: depth_meter
-      length: 5s
-      display: <#02A9bF>Depth Meter
+  - itemCooldown:
+      group: mineinabyss:depth_meter
+      duration: 5s
   - mineinabyss:showDepth: {}
 resourcepack:
   model: mineinabyss:gear/utility/depth_meter

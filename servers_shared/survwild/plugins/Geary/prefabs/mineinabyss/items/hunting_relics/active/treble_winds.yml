@@ -11,18 +11,16 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: treble_winds
-      length: 20s
-      display: <#f7e7ce>Treble Winds      
+  - itemCooldown:
+      group: mineinabyss:treble_winds
+      duration: 20s
   - mythicSkills:
     - treble_winds_upward
   itemLeftClick:
   - become: parent
-  - cooldown:
-      id: treble_winds
-      length: 30s
-      display: <#f7e7ce>Treble Winds      
+  - itemCooldown:
+      group: mineinabyss:treble_winds
+      duration: 30s
   - mythicSkills:
     - treble_winds_forward
 resourcepack:

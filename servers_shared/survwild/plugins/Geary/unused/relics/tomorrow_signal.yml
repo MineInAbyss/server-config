@@ -7,10 +7,9 @@ resourcepack:
 observe:
   itemLeftClick:
   - become: parent
-  - cooldown:
-      id: lightning_strike
-      length: 2s
-      display: <dark_gray>Tomorrow Signal
+  - itemCooldown:
+      group: mineinabyss:lightning_strike
+      duration: 2s
   - eval: 'entity.getTargetBlock { maxDistance: 15 }'
     register: targetBlock
   - smite: {}

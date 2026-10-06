@@ -30,10 +30,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Charge
-  - cooldown:
-      id: tranquilpierce
-      length: 22s
-      display: <#68CCBF>Tranquil Pierce
+  - itemCooldown:
+      group: mineinabyss:tranquilpierce
+      duration: 22s
   - mythicSkills:
     - tranquil_pierce_throw
 passive:

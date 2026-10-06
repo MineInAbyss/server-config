@@ -18,10 +18,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: ball_lightning
-      length: 35s
-      display: <#4c6444>Ball Lightning
+  - itemCooldown:
+      group: mineinabyss:ball_lightning
+      duration: 35s
   - mythicSkills:
     - lightning_ball
 passive:

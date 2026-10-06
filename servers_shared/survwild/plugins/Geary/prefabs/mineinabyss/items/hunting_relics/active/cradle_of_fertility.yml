@@ -14,10 +14,9 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: wish_of_fertility
-      length: 30s
-      display: <#AC8053>Cradle of Fertility
+  - itemCooldown:
+      group: mineinabyss:wish_of_fertility
+      duration: 30s
   - geary:bonemeal_radius:
        radius: 5
        allowCrops: true

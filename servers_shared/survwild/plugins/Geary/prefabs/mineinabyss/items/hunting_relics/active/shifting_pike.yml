@@ -21,10 +21,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>In Cooldown  
-  - cooldown:
-      id: changestance
-      length: 1s
-      display: <#705160><b>Change Form
+  - itemCooldown:
+      group: mineinabyss:changestance
+      duration: 1s
   - mythicSkills:
     - shiftingpikecharge
   itemLeftClick:
@@ -35,10 +34,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Not Primed
-  - cooldown:
-      id: shifting_pike
-      length: 40s
-      display: <#705160><b>Shifting Pike
+  - itemCooldown:
+      group: mineinabyss:shifting_pike
+      duration: 40s
   - mythicSkills:
     - shifting_pike
 

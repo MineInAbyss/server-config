@@ -17,10 +17,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Lacks Charge
-  - cooldown:
-      id: sinspiral
-      length: 30s
-      display: <gold>Sin Spiral
+  - itemCooldown:
+      group: mineinabyss:sinspiral
+      duration: 30s
   - mythicSkills:
     - sin_spiral
 passive:

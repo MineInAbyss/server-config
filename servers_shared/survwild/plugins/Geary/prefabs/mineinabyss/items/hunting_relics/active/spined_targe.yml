@@ -11,9 +11,8 @@ set.item:
 observe:
   itemLeftClick:
   - become: parent
-  - cooldown:
-      id: shieldbash
-      length: 20s
-      display: <#0047AB>Spined Targe
+  - itemCooldown:
+      group: mineinabyss:shieldbash
+      duration: 20s
   - mythicSkills:
     - shieldbash

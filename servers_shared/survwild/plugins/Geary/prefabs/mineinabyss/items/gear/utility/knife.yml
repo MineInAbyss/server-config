@@ -20,10 +20,9 @@ set.recipes:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: knife
-      length: 7s
-      display: <#BFBFBF>Knife
+  - itemCooldown:
+      group: mineinabyss:knife
+      duration: 7s
   - mythicSkills:
     - knifethrow
   - consumeItem:

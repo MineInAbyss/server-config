@@ -11,10 +11,9 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: wanabushi
-      length: 40s
-      display: <#f7e7ce>Wanabushi
+  - itemCooldown:
+      group: mineinabyss:wanabushi
+      duration: 40s
   - mythicSkills:
     - wanabushi_summon
 resourcepack:

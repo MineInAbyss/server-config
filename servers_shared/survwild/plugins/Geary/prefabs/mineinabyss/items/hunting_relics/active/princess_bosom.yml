@@ -13,9 +13,8 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: princess_bosom
-      length: 30s
-      display: <#f7e7ce>Princess Bosom
+  - itemCooldown:
+      group: mineinabyss:princess_bosom
+      duration: 30s
   - mythicSkills:
     - princess_bosom

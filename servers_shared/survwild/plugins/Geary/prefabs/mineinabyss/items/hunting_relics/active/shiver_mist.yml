@@ -18,10 +18,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: shiver_mist_area
-      length: 45s
-      display: <#CCDADB>Shiver Mist
+  - itemCooldown:
+      group: mineinabyss:shiver_mist_area
+      duration: 45s
   - mythicSkills:
     - shiver_mist_hit
   itemRightClick:
@@ -33,10 +32,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: shiver_mist
-      length: 40s
-      display: <#CCDADB>Shiver Mist
+  - itemCooldown:
+      group: mineinabyss:shiver_mist
+      duration: 40s
   - mythicSkills:
     - shiver_mist
 passive:

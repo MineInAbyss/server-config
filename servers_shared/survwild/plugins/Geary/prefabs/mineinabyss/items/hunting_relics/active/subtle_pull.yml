@@ -19,10 +19,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: subtle_pull_sub
-      length: 25s
-      display: <#302D2D>Subtle Pull
+  - itemCooldown:
+      group: mineinabyss:subtle_pull_sub
+      duration: 25s
   - mythicSkills:
     - subtle_pull_hit
   itemRightClick:
@@ -34,10 +33,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: subtle_pull_main
-      length: 80s
-      display: <#302D2D>Subtle Pull
+  - itemCooldown:
+      group: mineinabyss:subtle_pull_main
+      duration: 80s
   - mythicSkills:
     - subtle_pull
 passive:

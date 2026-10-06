@@ -17,10 +17,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Not Enough Health
-  - cooldown:
-      id: dew-cress_knots
-      length: 44s
-      display: <#AC8053>Dew-cress Knots
+  - itemCooldown:
+      group: mineinabyss:dew-cress_knots
+      duration: 44s
   - mythicSkills:
     - dew-cress_knots
 resourcepack:
