@@ -16,10 +16,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Lacks Charge
-  - cooldown:
-      id: petrifying_thud
-      length: 44s
-      display: <#f7e7ce>Petrifying Stone
+  - itemCooldown:
+      group: mineinabyss:petrifying_thud
+      duration: 44s
   - mythicSkills:
     - petrifying_thud
 passive:

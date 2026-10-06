@@ -17,10 +17,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
-  - cooldown:
-      id: tidalwave
-      length: 20s
-      display: <#f7e7ce>Tidal Spout
+  - itemCooldown:
+      group: mineinabyss:tidalwave
+      duration: 20s
   - mythicSkills:
     - tidal_spout
 resourcepack:

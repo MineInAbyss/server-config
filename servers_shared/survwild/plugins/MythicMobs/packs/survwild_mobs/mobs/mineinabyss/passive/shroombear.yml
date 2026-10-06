@@ -30,9 +30,11 @@ shroombear:
     Scale: 0.8
   Observe:
     onSheared:
-      - cooldown:
-          id: shroombear_shear
-          length: 120s
+      - ensure:
+          mythicConditions:
+            - hasaura{auraName=shroombear_shear} false
+      - mythicSkills:
+          - shroombearShearCooldown
       - dropItems:
           - prefab: mineinabyss:parasitic_watershrooms
             amount: 2

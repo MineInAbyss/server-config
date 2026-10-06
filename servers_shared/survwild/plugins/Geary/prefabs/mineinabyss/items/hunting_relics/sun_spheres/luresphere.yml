@@ -12,10 +12,9 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: luresphere
-      length: 5s
-      display: <#28D42B>Magnet Sphere
+  - itemCooldown:
+      group: mineinabyss:luresphere
+      duration: 5s
   - mythicSkills:
     - lurethrow
   - consumeItem:

@@ -18,10 +18,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: undying_wisp
-      length: 20s
-      display: <#f7e7ce>Undying Wisp
+  - itemCooldown:
+      group: mineinabyss:undying_wisp
+      duration: 20s
   - mythicSkills:
     - undying_wisp
 passive:

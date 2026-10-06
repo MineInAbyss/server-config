@@ -34,9 +34,8 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
-  - cooldown:
-      id: ChainMissiles
-      length: 12s
-      display: <#617B94>Chain Missiles
+  - itemCooldown:
+      group: mineinabyss:chainmissiles
+      duration: 12s
   - mythicSkills:
     - ChainMissile

@@ -19,10 +19,9 @@ set.recipes:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: pebble
-      length: 2s
-      display: <#BFBFBF>Pebble
+  - itemCooldown:
+      group: mineinabyss:pebble
+      duration: 2s
   - mythicSkills:
     - pebble_throw
   - consumeItem:

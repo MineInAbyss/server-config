@@ -8,8 +8,8 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      length: 5s
-      id: whistle
+  - itemCooldown:
+      group: mineinabyss:whistle
+      duration: 5s
   - playSound:
       sound: mineinabyss:item.whistle.red

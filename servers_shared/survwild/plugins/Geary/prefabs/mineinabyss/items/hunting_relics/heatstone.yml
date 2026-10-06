@@ -8,10 +8,9 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: heatstone
-      length: 30s
-      display: <dark_aqua>heat stone
+  - itemCooldown:
+      group: mineinabyss:heatstone
+      duration: 30s
   - mythicSkills:
     - heatthrow
   - consumeItem:

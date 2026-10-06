@@ -25,10 +25,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>More blood is required...  
-  - cooldown:
-      id: capillary_growth
-      length: 30s
-      display: <#617B94>Capillary Growth
+  - itemCooldown:
+      group: mineinabyss:capillary_growth
+      duration: 30s
   - mythicSkills:
     - capillary_growth_effect
 passive:

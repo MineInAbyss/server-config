@@ -15,10 +15,9 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: morinautshell
-      length: 35s
-      display: <#AC8053>Morinaut Shell
+  - itemCooldown:
+      group: mineinabyss:morinautshell
+      duration: 35s
   - playSound:
       sound: minecraft:entity.panda.aggressive_ambient
       volume: 0.5

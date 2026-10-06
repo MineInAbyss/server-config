@@ -35,10 +35,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Food
-  - cooldown:
-      id: AtlasDignitas
-      length: 80s
-      display: <#c9ae74>Atlas Dignitas
+  - itemCooldown:
+      group: mineinabyss:atlasdignitas
+      duration: 80s
   - mythicSkills:
     - atlas_trigger
   itemLeftClick:

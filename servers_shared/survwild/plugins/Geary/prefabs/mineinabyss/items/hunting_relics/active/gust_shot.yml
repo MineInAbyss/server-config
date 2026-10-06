@@ -18,10 +18,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: gust-shot
-      length: 20s
-      display: <#4c6444>Gust-Shot
+  - itemCooldown:
+      group: mineinabyss:gust-shot
+      duration: 20s
   - mythicSkills:
     - gust-shot
 passive:

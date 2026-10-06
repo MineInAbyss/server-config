@@ -26,10 +26,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Not Primed
-  - cooldown:
-      id: crescentslash
-      length: 10s
-      display: <#15ABC2>Crescent Hatchet
+  - itemCooldown:
+      group: mineinabyss:crescentslash
+      duration: 10s
   - mythicSkills:
     - crescent_slash
   itemRightClick:
@@ -40,10 +39,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>In Cooldown  
-  - cooldown:
-      id: crescentprimer
-      length: 1s
-      display: <#617B94>Primer
+  - itemCooldown:
+      group: mineinabyss:crescentprimer
+      duration: 1s
   - mythicSkills:
     - crescent_primer
 resourcepack:

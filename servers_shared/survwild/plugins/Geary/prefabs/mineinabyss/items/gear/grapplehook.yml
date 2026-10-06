@@ -37,10 +37,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Charge
-  - cooldown:
-      id: grapplehook
-      length: 7s
-      display: <#0047AB>Grapple Hook
+  - itemCooldown:
+      group: mineinabyss:grapplehook
+      duration: 7s
   - mythicSkills:
     - grapplehook_shoot
 passive:

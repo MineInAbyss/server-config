@@ -11,9 +11,8 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: shieldretreat
-      length: 25s
-      display: <#0047AB>Scaled Umbrella
+  - itemCooldown:
+      group: mineinabyss:shieldretreat
+      duration: 25s
   - mythicSkills:
     - scaled_umbrella

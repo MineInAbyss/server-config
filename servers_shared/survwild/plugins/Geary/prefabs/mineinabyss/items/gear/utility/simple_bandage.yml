@@ -100,10 +100,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Full Health
-  - cooldown:
-      id: bandage
-      length: 15s
-      display: <#617B94>Simple Bandage
+  - itemCooldown:
+      group: mineinabyss:bandage
+      duration: 15s
   - mythicSkills:
     - simple_bandage
 passive:

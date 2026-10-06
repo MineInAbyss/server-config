@@ -35,10 +35,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Not Primed
-  - cooldown:
-      id: BlazeReap
-      length: 50s
-      display: <#617B94>Blaze Reap
+  - itemCooldown:
+      group: mineinabyss:blazereap
+      duration: 50s
   - mythicSkills:
     - BlazeReap
   itemRightClick:
@@ -49,10 +48,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>In Cooldown  
-  - cooldown:
-      id: Primer
-      length: 1s
-      display: <#617B94>Primer
+  - itemCooldown:
+      group: mineinabyss:primer
+      duration: 1s
   - mythicSkills:
     - blazereap_charge
 resourcepack:

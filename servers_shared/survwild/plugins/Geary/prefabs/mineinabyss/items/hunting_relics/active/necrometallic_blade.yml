@@ -14,10 +14,9 @@ set.item:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: necrometallic_blade_effect
-      length: 20s
-      display: <#4e5563>Necrometallic Blade
+  - itemCooldown:
+      group: mineinabyss:necrometallic_blade_effect
+      duration: 20s
   - mythicSkills:
     - necrometallic_blade_effect
   itemLeftClick:

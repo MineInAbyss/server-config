@@ -16,10 +16,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
-  - cooldown:
-      id: symbioticwatershrooms
-      length: 35s
-      display: <#f7e7ce>Symbiotic Water-shrooms
+  - itemCooldown:
+      group: mineinabyss:symbioticwatershrooms
+      duration: 35s
   - mythicSkills:
     - symbiotic_water_shrooms_heal
 resourcepack:

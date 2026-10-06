@@ -18,10 +18,9 @@ passive:
   - ensure:
       mythicConditions:
       - health{h=1to5} true
-  - cooldown:
-      id: gold-mending_wedge
-      length: 400s
-      display: <#88D481>Gold-mending Wedge
+  - itemCooldown:
+      group: mineinabyss:gold-mending_wedge
+      duration: 400s
   - mythicSkills:
     - gold-mending_wedge
 resourcepack:

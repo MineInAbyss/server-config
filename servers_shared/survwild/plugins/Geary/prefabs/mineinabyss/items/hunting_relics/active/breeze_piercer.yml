@@ -14,10 +14,9 @@ set.item:
 observe:
   itemLeftClick:
   - become: parent
-  - cooldown:
-      id: breeze_piercer
-      length: 20s
-      display: <#617B94>Breeze Piercer
+  - itemCooldown:
+      group: mineinabyss:breeze_piercer
+      duration: 20s
   - mythicSkills:
     - breeze_piercer
 resourcepack:

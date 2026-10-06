@@ -14,8 +14,7 @@ resourcepack:
 observe:
   itemRightClick:
   - become: parent
-  - cooldown:
-      id: nil_spout
-      length: 0.1s
-      display: <#AC8053>Nil Spout
+  - itemCooldown:
+      group: mineinabyss:nil_spout
+      duration: 0.1s
   - geary:water_bottle: {}

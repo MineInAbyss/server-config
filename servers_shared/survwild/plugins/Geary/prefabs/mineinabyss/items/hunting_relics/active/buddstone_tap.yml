@@ -17,10 +17,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience / Out of Charge
-  - cooldown:
-      id: buddstone_tap
-      length: 25s
-      display: <#4c6444>Buddstone Tap
+  - itemCooldown:
+      group: mineinabyss:buddstone_tap
+      duration: 25s
   - mythicSkills:
     - buddstone_tap
 passive:

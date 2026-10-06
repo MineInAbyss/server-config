@@ -17,10 +17,9 @@ observe:
     onFail:
     - sendActionBar:
         text: <red>Out of Experience
-  - cooldown:
-      id: aiming_light
-      length: 35s
-      display: <#4c6444>Aiming Light
+  - itemCooldown:
+      group: mineinabyss:aiming_light
+      duration: 35s
   - applyPotionEffects:
     - type: minecraft:glowing
       duration: 10s
