@@ -13,3 +13,6 @@ set.item:
   - 'Erm, dis do be armor.'
 resourcepack:
   model: mineinabyss:gear/armor/charcoal_sand_leggings
+  textures:
+    layers:
+    - mineinabyss:gear/armor/charcoal_sand_leggings

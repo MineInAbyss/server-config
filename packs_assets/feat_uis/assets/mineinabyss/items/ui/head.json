@@ -1,64 +1,97 @@
 {
   "oversized_in_gui": true,
   "model": {
-    "type": "condition",
-    "property": "custom_model_data",
-    "index": 0,
-    "on_true": {
-      "type": "condition",
-      "property": "custom_model_data",
-      "index": 1,
-      "on_true": {
-        "type": "condition",
-        "property": "custom_model_data",
-        "index": 2,
-        "on_true": {
-          "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/centered_large_flat",
-          "model": {
-            "type": "minecraft:player_head"
-          }
-        },
-        "on_false": {
-          "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/large_flat",
-          "model": {
-            "type": "minecraft:player_head"
-          }
-        }
-      },
-      "on_false": {
-        "type": "condition",
-        "property": "custom_model_data",
-        "index": 2,
-        "on_true": {
-          "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/centered_flat",
-          "model": {
-            "type": "minecraft:player_head"
-          }
-        },
-        "on_false": {
-          "type": "minecraft:special",
-          "base": "mineinabyss:ui/playerheads/flat",
-          "model": {
-            "type": "minecraft:player_head"
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:custom_model_data",
+          "index": 0,
+          "on_true": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 1,
+            "on_true": {
+              "type": "minecraft:condition",
+              "property": "minecraft:custom_model_data",
+              "index": 2,
+              "on_true": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/paper",
+                "model": {"type": "minecraft:player_head"},
+                "transformation": {
+                  "translation": [0.5, -8.0, 0.5],
+                  "left_rotation": [1.0, 0.0, 0.0, 0.0],
+                  "scale": [20.0, 20.0, 20.0],
+                  "right_rotation": [0.0, 0.0, 0.0, 1.0]
+                }
+              },
+              "on_false": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/paper",
+                "model": {"type": "minecraft:player_head"},
+                "transformation": {
+                  "translation": [1.0625, -9.0625, 0.5],
+                  "left_rotation": [1.0, 0.0, 0.0, 0.0],
+                  "scale": [20.0, 20.0, 20.0],
+                  "right_rotation": [0.0, 0.0, 0.0, 1.0]
+                }
+              }
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:custom_model_data",
+              "index": 2,
+              "on_true": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/paper",
+                "model": {"type": "minecraft:player_head"},
+                "transformation": {
+                  "translation": [1.125, 0.0875, 0.5],
+                  "left_rotation": [1.0, 0.0, 0.0, 0.0],
+                  "scale": [1.7, 1.7, 1.7],
+                  "right_rotation": [0.0, 0.0, 0.0, 1.0]
+                }
+              },
+              "on_false": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/paper",
+                "model": {"type": "minecraft:player_head"},
+                "transformation": {
+                  "translation": [0.5, 0.0875, 0.5],
+                  "left_rotation": [1.0, 0.0, 0.0, 0.0],
+                  "scale": [1.7, 1.7, 1.7],
+                  "right_rotation": [0.0, 0.0, 0.0, 1.0]
+                }
+              }
+            }
+          },
+          "on_false": {
+            "type": "minecraft:special",
+            "base": "minecraft:item/template_skull",
+            "model": {"type": "minecraft:player_head"},
+            "transformation": {
+              "left_rotation": [1.0, 0.0, 0.0, -0.0],
+              "right_rotation": [0.0, 0.0, 0.0, 1.0],
+              "scale": [1.0, 1.0, 1.0],
+              "translation": [0.5, 0.0, 0.5]
+            }
           }
         }
       }
-    },
-    "on_false": {
-      "type": "minecraft:special",
-      "base": "minecraft:item/template_skull",
-      "model": {
-        "type": "minecraft:player_head"
-      }
-    },
+    ],
     "fallback": {
       "type": "minecraft:special",
       "base": "minecraft:item/template_skull",
-      "model": {
-        "type": "minecraft:player_head"
+      "model": {"type": "minecraft:player_head"},
+      "transformation": {
+        "left_rotation": [1.0, 0.0, 0.0, -0.0],
+        "right_rotation": [0.0, 0.0, 0.0, 1.0],
+        "scale": [1.0, 1.0, 1.0],
+        "translation": [0.5, 0.0, 0.5]
       }
     }
   }

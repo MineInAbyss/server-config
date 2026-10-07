@@ -12,4 +12,7 @@ set.item:
   lore:
   - 'Erm, dis do be armor.'
 resourcepack:
-  model: mineinabyss:gear/armor/orphan_boots 
+  model: mineinabyss:gear/armor/orphan_boots
+  textures:
+    layers:
+    - mineinabyss:gear/armor/orphan_boots

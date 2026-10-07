@@ -13,3 +13,6 @@ set.item:
   - 'Erm, dis do be armor.'
 resourcepack:
   model: mineinabyss:gear/armor/heavy_leggings
+  textures:
+    layers:
+    - mineinabyss:gear/armor/heavy_leggings
