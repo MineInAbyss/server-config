@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "minecraft:block/water_shroom",
-		"particle": "minecraft:block/water_shroom"
+		"0": "mineinabyss:block/water_shroom",
+		"particle": "mineinabyss:block/water_shroom"
 	},
 	"elements": [
 		{
@@ -32,41 +32,15 @@
 				"up": {"uv": [8.5, 10.5, 6.5, 8.5], "texture": "#0"},
 				"down": {"uv": [8.5, 8.5, 6.5, 10.5], "texture": "#0"}
 			}
-		},
-		{
-			"from": [13.3, -0.5, 12.1],
-			"to": [15.3, 2.5, 14.1],
-			"rotation": {"angle": 45, "axis": "y", "origin": [14.3, 1.05, 13.0625]},
-			"faces": {
-				"north": {"uv": [7.5, 2.5, 8.5, 4], "texture": "#0"},
-				"east": {"uv": [7.5, 2.5, 8.5, 4], "texture": "#0"},
-				"south": {"uv": [7.5, 2.5, 8.5, 4], "texture": "#0"},
-				"west": {"uv": [7.5, 2.5, 8.5, 4], "texture": "#0"},
-				"up": {"uv": [7.5, 1.5, 8.5, 2.5], "texture": "#0"},
-				"down": {"uv": [7.5, 1.5, 8.5, 2.5], "texture": "#0"}
-			}
-		},
-		{
-			"from": [10.9, 2.3, 11.1],
-			"to": [16.9, 4.3, 17.1],
-			"rotation": {"angle": 45, "axis": "y", "origin": [12.9, 2.3, 13.1]},
-			"faces": {
-				"north": {"uv": [4.5, 4.5, 7.5, 5.5], "texture": "#0"},
-				"east": {"uv": [4.5, 4.5, 7.5, 5.5], "texture": "#0"},
-				"south": {"uv": [4.5, 4.5, 7.5, 5.5], "texture": "#0"},
-				"west": {"uv": [4.5, 4.5, 7.5, 5.5], "texture": "#0"},
-				"up": {"uv": [8.5, 1.5, 11.5, 4.5], "texture": "#0"},
-				"down": {"uv": [4.5, 1.5, 7.5, 4.5], "texture": "#0"}
-			}
 		}
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 4, 0],
+			"translation": [0, 3, 0],
 			"scale": [0.6, 0.6, 0.6]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 4, 0],
+			"translation": [0, 3, 0],
 			"scale": [0.6, 0.6, 0.6]
 		},
 		"firstperson_righthand": {
@@ -76,15 +50,22 @@
 			"translation": [0, 4.25, 0]
 		},
 		"ground": {
-			"translation": [0, 2.75, 0],
+			"rotation": [28, 24, 32],
+			"translation": [-1, 2.5, 1],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"gui": {
 			"rotation": [13, -39, 0],
 			"translation": [0, 2, 0]
 		},
+		"head": {
+			"translation": [0, 10, 0],
+			"scale": [2, 2, 2]
+		},
 		"fixed": {
-			"translation": [0, 1.5, 0]
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -4],
+			"scale": [2, 2, 2]
 		}
 	},
 	"groups": [
@@ -94,13 +75,6 @@
 			"scope": 0,
 			"color": 0,
 			"children": [0, 1]
-		},
-		{
-			"name": "model2",
-			"origin": [8, 8, 8],
-			"scope": 0,
-			"color": 0,
-			"children": [2, 3]
 		}
 	]
 }
