@@ -1,17 +1,1 @@
-okibo_wuv_backpack:
-  slot: BACKPACK
-  permission: "hmccosmetics.backpack.okibo_wuv_backpack"
-  item:
-    name: Okibo Plush Backpack
-    material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/okibo_wuv_backpack
-  firstperson-item:
-    material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/okibo_wuv_backpack_fp
-witch_broom_stick:
-  slot: BACKPACK
-  permission: "hmccosmetics.backpack.witch_broom_stick"
-  item:
-    name: Witch Broom Stick
-    material: PAPER
-    model-id: mineinabyss:cosmetics/backpacks/witch_broom_stick
+
