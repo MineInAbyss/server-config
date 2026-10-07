@@ -51,7 +51,7 @@ hammerbeakHurt:
   - sound{s=block.composter.ready;p=2.0;v=0.16;sc=hostile;sync=true} @self
   - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=hostile;sync=true} @self
   - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=hostile;sync=true} @self
-  - effect:itemspray{item=FEATHER;amount=<random.0to5>;velocity=<random.float.0.3to0.7>;yo=1.0;yv=0.4;d=<random.10to16>} @self
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_feather;amount=<random.0to5>;velocity=<random.float.0.3to0.7>;yo=1.0;yv=0.4;d=<random.10to16>} @self
 
 hammerbeakDeath:
   Cooldown: 0.3
@@ -101,7 +101,7 @@ hammerbeakHurtSmall:
   - sound{s=block.composter.ready;p=2.0;v=0.16;sc=hostile;sync=true} @self
   - sound{s=block.coral_block.break;p=2.0;v=0.26;sc=hostile;sync=true} @self
   - sound{s=block.frogspawn.hatch;p=2.0;v=0.82;sc=hostile;sync=true} @self
-  - effect:itemspray{item=FEATHER;amount=<random.0to3>;velocity=<random.float.0.3to0.7>;yo=1.0;yv=0.4;d=<random.10to16>} @self
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_feather;amount=<random.0to3>;velocity=<random.float.0.3to0.7>;yo=1.0;yv=0.4;d=<random.10to16>} @self
 
 hammerbeakDeathSmall:
   Cooldown: 0.3
@@ -118,8 +118,8 @@ hammerbeakHarvest: # for harvesting the mob's corpse
   - effect:particles{particle=block;m=red_nether_bricks;a=6;hs=0.55;vs=0.1;s=0;repeat=4;repeatInterval=10}    # Simple blood effect
   - effect:particles{particle=block;m=nether_wart_block;a=8;hs=0.55;vs=0.1;s=0;repeat=4;repeatInterval=10}    # Remove if there are
   - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.55;vs=0.15;s=0;repeat=4;repeatInterval=10}       # children or otherwise.
-  - effect:itemspray{item=CHICKEN;ap=true;amount=1;velocity=0.5;vy=0.5;d=200;repeat=<random.2to4>;repeatInterval=10} @self # change this to whatever drops you want
-  - effect:itemspray{item=FEATHER;ap=true;amount=1;velocity=0.5;vy=0.5;d=200;delay=2;repeat=<random.2to4>;repeatInterval=10} @self # change this to whatever drops you want
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_wing_raw;ap=true;amount=1;velocity=0.5;vy=0.5;d=200;repeat=<random.2to4>;repeatInterval=10} @self # change this to whatever drops you want
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_feather;ap=true;amount=1;velocity=0.5;vy=0.5;d=200;delay=2;repeat=<random.2to4>;repeatInterval=10} @self # change this to whatever drops you want
   - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=hostile;repeat=4;repeatInterval=10} @self
   - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=hostile;repeat=4;repeatInterval=10} @self
   - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=hostile;repeat=4;repeatInterval=10} @self
@@ -140,8 +140,8 @@ hammerbeakHarvestSmall: # for harvesting the mob's corpse
   - effect:particles{particle=block;m=red_nether_bricks;a=6;hs=0.35;vs=0.1;s=0;repeat=2;repeatInterval=10}    # Simple blood effect
   - effect:particles{particle=block;m=nether_wart_block;a=8;hs=0.35;vs=0.1;s=0;repeat=2;repeatInterval=10}    # Remove if there are
   - effect:particles{particle=block;m=weeping_vines;a=12;hs=0.35;vs=0.15;s=0;repeat=2;repeatInterval=10}       # children or otherwise.
-  - effect:itemspray{item=CHICKEN;ap=true;amount=1;velocity=0.5;vy=0.1;d=200;repeat=<random.0to2>;repeatInterval=10} @self # change this to whatever drops you want
-  - effect:itemspray{item=FEATHER;ap=true;amount=1;velocity=0.5;vy=0.1;d=200;delay=2;repeat=<random.1to3>;repeatInterval=10} @self # change this to whatever drops you want
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_wing_raw;ap=true;amount=1;velocity=0.5;vy=0.1;d=200;repeat=<random.0to2>;repeatInterval=10} @self # change this to whatever drops you want
+  - effect:itemspray{item=geary mineinabyss:hammerbeak_feather;ap=true;amount=1;velocity=0.5;vy=0.1;d=200;delay=2;repeat=<random.1to3>;repeatInterval=10} @self # change this to whatever drops you want
   - sound{s=block.honey_block.place;p=2.0;v=0.46;sc=hostile;repeat=2;repeatInterval=10} @self
   - sound{s=item.honeycomb.wax_on;p=1.2;v=1.46;sc=hostile;repeat=2;repeatInterval=10} @self
   - sound{s=block.honey_block.slide;p=1.0;v=0.46;sc=hostile;repeat=2;repeatInterval=10} @self
