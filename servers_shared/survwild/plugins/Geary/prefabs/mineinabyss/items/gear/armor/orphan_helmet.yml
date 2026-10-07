@@ -13,3 +13,6 @@ set.item:
   - 'Erm, dis do be armor.'
 resourcepack:
   model: mineinabyss:gear/armor/orphan_helmet
+  textures:
+    layers:
+    - mineinabyss:gear/armor/orphan_helmet

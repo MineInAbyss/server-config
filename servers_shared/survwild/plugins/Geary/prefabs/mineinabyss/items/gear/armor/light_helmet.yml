@@ -13,3 +13,6 @@ set.item:
   - 'Erm, dis do be armor.'
 resourcepack:
   model: mineinabyss:gear/armor/light_helmet
+  textures:
+    layers:
+    - mineinabyss:gear/armor/light_helmet
