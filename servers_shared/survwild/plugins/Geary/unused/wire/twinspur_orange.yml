@@ -8,7 +8,5 @@ set.block:
 
 nexo:custom_block:
   type: STRINGBLOCK
-  # Nexo numbers the tripwire face bits in a different order than geary's set.block,
-  # so the value differs while the blockdata stays the one already placed in the world
   custom_variation: 65
   model: hmcmodels:block/nature/twinspur_orange

@@ -1,0 +1,18 @@
+set.item:
+  type: minecraft:clock
+  itemModel: mineinabyss:item/eternal_fortune
+  itemName: Eternal Fortune
+resourcepack:
+  model: mineinabyss:item/eternal_fortune
+  textures:
+    layers:
+      - mineinabyss:item/eternal_fortune
+nexo:custom_block:
+  type: STRINGBLOCK
+  model: mineinabyss:block/eternal_fortune/eternal_fortune
+  custom_variation: 20
+  stackable:
+    - model: mineinabyss:block/eternal_fortune/eternal_fortune5
+      custom_variation: 21
+    - model: mineinabyss:block/eternal_fortune/eternal_fortune8
+      custom_variation: 22
