@@ -5,22 +5,17 @@ set.item:
 resourcepack:
   model: mineinabyss:blocks/furniture/noticeboard_okibo
 nexo:furniture:
-  restricted_rotation: VERY_STRICT
+  restricted_rotation: STRICT
   hitbox:
-    # Nexo adds translation.y to interaction offsets when spawning them, but its space check does not.
-    # Offsets below y=-0.5 land the check in the floor block and placement fails with "not enough space"
     interaction:
-      - -1.124,-0.5,-0.64 0.94,3.04
-      - -0.184,-0.5,-0.64 0.94,3.04
-      - 0.753,-0.5,-0.64 0.94,3.04
-      - 1.54,0.55,-0.64 0.7,1.33
-      - 2.235,0.55,-0.64 0.7,1.33
+      - -0.8,0,-0.64 0.8,3
+      - 0,0,-0.64 0.8,3
+      - 0.8,0,-0.64 0.8,3
   properties:
     brightness:
       block_light: 15
     display_transform: NONE
     scale: 2.5,2.5,2.5
-    # NONE renders model y=8 at the block centre, so y=0 sits 0.5*2.5 below it
     translation: 0,0.75,0
   block_sounds:
     place_sound: block.wood.place
