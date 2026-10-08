@@ -7,16 +7,34 @@ set.item:
   - <yellow>Sucks nutrients from its host, releasing
   - <yellow>them back when the host is near death.
 resourcepack:
-  model: mineinabyss:hunting_mobs/mob_standard/parasitic_watershrooms
+  model: mineinabyss:item/parasitic_watershrooms
   textures:
     layers:
-    - mineinabyss:hunting_mobs/mob_standard/parasitic_watershrooms
+    - mineinabyss:item/parasitic_watershrooms
 nexo:custom_block:
   type: STRINGBLOCK
   model: mineinabyss:block/water_shroom/water_shroom
   custom_variation: 87
+  variants:
+    - offset: 0.2,0,0
+    - offset: 0.4,0,0
+    - offset: 0,0,0.2
+    - offset: 0,0,0.3
+    - offset: 0.1,0,0.1
   stackable:
     - model: mineinabyss:block/water_shroom/water_shroom2
       custom_variation: 88
+      variants:
+      - offset: 0.2,0,0
+      - offset: 0.4,0,0
+      - offset: 0,0,0.2
+      - offset: 0,0,0.3
+      - offset: 0.1,0,0.1
     - model: mineinabyss:block/water_shroom/water_shroom4
       custom_variation: 89
+      variants:
+      - offset: 0.2,0,0
+      - offset: 0.4,0,0
+      - offset: 0,0,0.2
+      - offset: 0,0,0.3
+      - offset: 0.1,0,0.1
