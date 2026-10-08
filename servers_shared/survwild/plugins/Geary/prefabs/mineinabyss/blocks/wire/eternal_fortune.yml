@@ -10,9 +10,9 @@ resourcepack:
 nexo:custom_block:
   type: STRINGBLOCK
   model: mineinabyss:block/eternal_fortune/eternal_fortune
-  custom_variation: 20
+  custom_variation: 90
   stackable:
     - model: mineinabyss:block/eternal_fortune/eternal_fortune5
-      custom_variation: 21
+      custom_variation: 91
     - model: mineinabyss:block/eternal_fortune/eternal_fortune8
-      custom_variation: 22
+      custom_variation: 92

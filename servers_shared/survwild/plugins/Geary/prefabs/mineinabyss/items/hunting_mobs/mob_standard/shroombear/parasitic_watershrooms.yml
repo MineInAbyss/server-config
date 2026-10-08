@@ -14,9 +14,9 @@ resourcepack:
 nexo:custom_block:
   type: STRINGBLOCK
   model: mineinabyss:block/water_shroom/water_shroom
-  custom_variation: 17
+  custom_variation: 87
   stackable:
     - model: mineinabyss:block/water_shroom/water_shroom2
-      custom_variation: 18
+      custom_variation: 88
     - model: mineinabyss:block/water_shroom/water_shroom4
-      custom_variation: 19
+      custom_variation: 89
