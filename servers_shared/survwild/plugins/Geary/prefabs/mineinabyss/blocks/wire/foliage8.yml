@@ -6,6 +6,7 @@ set.item:
 
 resourcepack:
   model: mineinabyss:blocks/wire/foliage8
+  parentModel: minecraft:block/cross
   textures:
     layers:
       - mineinabyss:blocks/wire/foliage8

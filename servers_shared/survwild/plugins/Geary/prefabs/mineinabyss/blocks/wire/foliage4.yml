@@ -6,13 +6,12 @@ set.item:
 
 resourcepack:
   model: mineinabyss:blocks/wire/foliage4
+  parentModel: minecraft:block/cross
   textures:
     layers:
       - mineinabyss:blocks/wire/foliage4
 
 nexo:custom_block:
   type: STRINGBLOCK
-  # Nexo numbers the tripwire face bits in a different order than geary's set.block,
-  # so the value differs while the blockdata stays the one already placed in the world
   custom_variation: 2
   model: mineinabyss:blocks/wire/foliage4
