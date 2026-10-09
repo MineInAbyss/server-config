@@ -1,0 +1,23 @@
+set.item:
+  type: minecraft:paper
+  itemName: <white>Build-Server Marker Block Gray
+  itemModel: mineinabyss:blocks/builder_marker_block/gray_builder_marker_block
+
+resourcepack:
+  parentModel: mineinabyss:blocks/builder_marker_block_base
+  model: mineinabyss:blocks/builder_marker_block/gray_builder_marker_block
+  textures:
+    variables:
+      all: mineinabyss:blocks/builder_marker_block/gray_builder_marker_block
+
+nexo:custom_block:
+  type: NOTEBLOCK
+  custom_variation: 1302
+  model: mineinabyss:blocks/builder_marker_block/gray_builder_marker_block
+  hardness: 0.3
+  block_sounds:
+    place_sound: minecraft:block.glass.place
+    break_sound: minecraft:block.glass.break
+    step_sound: minecraft:block.glass.step
+    hit_sound: minecraft:block.glass.hit
+    fall_sound: minecraft:block.glass.fall
