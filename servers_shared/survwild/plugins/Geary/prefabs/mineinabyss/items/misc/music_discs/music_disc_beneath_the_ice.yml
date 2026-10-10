@@ -1,0 +1,12 @@
+set.item:
+  type: minecraft:clock
+  itemName: Music Disc
+  itemModel: mineinabyss:misc/music_disc_beneath_the_ice
+  maxStackSize: 1
+  itemRarity: RARE
+  jukeboxPlayable: mineinabyss:beneath_the_ice
+resourcepack:
+  model: mineinabyss:misc/music_disc_beneath_the_ice
+  textures:
+    layers:
+      - mineinabyss:misc/music_disc_blue
