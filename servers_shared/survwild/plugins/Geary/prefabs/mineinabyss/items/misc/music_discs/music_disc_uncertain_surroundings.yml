@@ -3,7 +3,7 @@ set.item:
   itemName: Music Disc
   itemModel: mineinabyss:misc/music_disc_uncertain_surroundings
   maxStackSize: 1
-  rarity: RARE
+  itemRarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_uncertain_surroundings
 resourcepack:
   model: mineinabyss:misc/music_disc/uncertain_surroundings

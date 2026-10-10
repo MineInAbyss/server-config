@@ -3,7 +3,7 @@ set.item:
   itemName: Music Disc
   itemModel: mineinabyss:misc/music_disc_the_flat_kazura
   maxStackSize: 1
-  rarity: RARE
+  itemRarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_the_flat_kazura
 resourcepack:
   model: mineinabyss:misc/music_disc_the_flat_kazura
