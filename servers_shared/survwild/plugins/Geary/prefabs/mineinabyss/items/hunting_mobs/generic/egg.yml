@@ -2,8 +2,6 @@ set.item:
   type: minecraft:egg
   itemName: Egg
   itemModel: mineinabyss:hunting_mobs/generic/egg
-  lore:
-  - ''
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/egg
   textures:

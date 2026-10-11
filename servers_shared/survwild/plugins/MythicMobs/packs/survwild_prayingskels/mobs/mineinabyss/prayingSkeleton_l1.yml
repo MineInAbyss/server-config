@@ -7,7 +7,7 @@ prayingSkeleton_l1:
     - L1PSOreDrops
     - L1MiscPSDrops
     - L1PSSherdDrops
-    - geary mineinabyss:damagesphere 1-1 0.1 nolooting
+    - geary mineinabyss:sunsphere_l1 1-1 0.1 nolooting
 
   Skills:
     - skill{s=relicDrop;delay=45;item=AnimalTotemDrop;grade=4} ~onDeath 0.025

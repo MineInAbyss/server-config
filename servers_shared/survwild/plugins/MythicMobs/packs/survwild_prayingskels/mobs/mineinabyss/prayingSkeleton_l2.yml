@@ -7,7 +7,7 @@ prayingSkeleton_l2:
     - L2PSOreDrops
     - L2MiscPSDrops
     - L2PSSherdDrops
-    - geary mineinabyss:spreadsphere 1-1 0.1 nolooting
+    - geary mineinabyss:sunsphere_l2 1-1 0.1 nolooting
   Skills:
     - skill{s=relicDrop;delay=45;item=AnimalTotemDrop;grade=4} ~onDeath 0.03
     - skill{s=relicDrop;delay=40;item=CradleOfFertilityDrop;grade=4} ~onDeath 0.03
