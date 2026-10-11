@@ -7,7 +7,7 @@ prayingSkeleton_l5:
     - L5PSOreDrops
     - L5MiscPSDrops
     - L5PSSherdDrops
-    - geary mineinabyss:sunsphere 1-1 0.15 nolooting
+    - geary mineinabyss:sunsphere_l5 1-1 0.15 nolooting
   Skills:
     - skill{s=relicDrop;item=YukonokageDrop;grade=1} ~onDeath 0.0013
     - skill{s=relicDrop;delay=5;item=BlackholeStaffDrop;grade=1} ~onDeath 0.0013

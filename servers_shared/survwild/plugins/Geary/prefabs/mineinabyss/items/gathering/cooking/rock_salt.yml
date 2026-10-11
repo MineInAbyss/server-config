@@ -1,0 +1,9 @@
+set.item:
+  itemName: <dark_aqua>Rock Salt
+  type: minecraft:clock
+  itemModel: mineinabyss:gathering/cooking/rock_salt
+resourcepack:
+  model: mineinabyss:gathering/cooking/rock_salt
+  textures:
+    layers:
+    - mineinabyss:gathering/cooking/rock_salt

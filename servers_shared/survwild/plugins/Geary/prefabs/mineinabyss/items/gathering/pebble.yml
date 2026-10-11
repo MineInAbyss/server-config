@@ -9,7 +9,7 @@ set.item:
 set.recipes: 
   discoverRecipes: true
   result:
-    prefab: mineinabyss:knife
+    prefab: mineinabyss:pebble
     amount: 4
   recipes:
     - type: shapeless

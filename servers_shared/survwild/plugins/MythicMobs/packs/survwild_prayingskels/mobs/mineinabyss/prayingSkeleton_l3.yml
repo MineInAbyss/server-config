@@ -7,7 +7,7 @@ prayingSkeleton_l3:
     - L3PSOreDrops
     - L3MiscPSDrops
     - L3PSSherdDrops
-    - geary mineinabyss:luresphere 1 0.12 nolooting
+    - geary mineinabyss:sunsphere_l3 1 0.12 nolooting
   Skills:
     - skill{s=relicDrop;item=AtlasDignitasDrop;grade=1} ~onDeath 0.001
     - skill{s=relicDrop;delay=5;item=GiantRelicSwordDrop;grade=1} ~onDeath 0.001

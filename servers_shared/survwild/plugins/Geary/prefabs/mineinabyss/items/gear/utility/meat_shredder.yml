@@ -7,21 +7,10 @@ set.item:
   - <yellow>Used to cut meat into smaller pieces.
   - <font:small_text><gray><shadow:#00000000>Passive slot ability. Meat you pick up is cut for you.
 resourcepack:
-  model: mineinabyss:gear/utility/knife
+  model: mineinabyss:gear/utility/meat_shredder
   textures:
     layers:
     - mineinabyss:gear/utility/knife
-
-observe:
-  itemRightClick:
-  - become: parent
-  - itemCooldown:
-      group: mineinabyss:knife
-      duration: 7s
-  - mythicSkills:
-    - knifethrow
-  - consumeItem:
-      type: mineinabyss:knife
 
 passiveItem: {}
 transformOnPickup:
@@ -53,8 +42,7 @@ transformOnPickup:
 set.recipes: 
   discoverRecipes: true
   result:
-    prefab: mineinabyss:knife
-    amount: 8
+    prefab: mineinabyss:meat_shredder
   recipes:
     - type: shapeless
       items:

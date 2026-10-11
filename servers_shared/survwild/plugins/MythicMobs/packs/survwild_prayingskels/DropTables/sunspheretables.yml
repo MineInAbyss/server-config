@@ -1,26 +1,26 @@
 DamageDrops:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:damagesphere 1 0.975 nolooting
+  - geary mineinabyss:sunsphere_l1 1 0.975 nolooting
 
 AoeDrops:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:aoesphere 1 0.975 nolooting
+  - geary mineinabyss:sunsphere_l4 1 0.975 nolooting
 SunDrops:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:sunsphere 1 0.975 nolooting
+  - geary mineinabyss:sunsphere_l5 1 0.975 nolooting
 
 LureDrops:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:luresphere 1 0.975 nolooting
+  - geary mineinabyss:sunsphere_l3 1 0.975 nolooting
 
 SpreadDrops:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:spreadsphere 1 0.975 nolooting
+  - geary mineinabyss:sunsphere_l2 1 0.975 nolooting
 
 LavaDrops:
   MaxItems: 1
