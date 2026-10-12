@@ -1,0 +1,14 @@
+name: "<b><#AA00AA>Gem Lover Veris"
+location: -340.5,183.00,-511.5 0.0,0
+model: npc_female04
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:amethyst_shard 32"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:amethyst_block 16"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:budding_amethyst 8"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:sea_lantern 32"

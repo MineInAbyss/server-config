@@ -1,0 +1,8 @@
+title: ":screen_fade:"
+loopSound: minecraft:entity.horse.gallop
+loopSoundInterval: 0.35s
+arriveSound: minecraft:entity.horse.breathe
+volume: 0.8
+fadeIn: 1s
+travelTime: 4s
+fadeOut: 1s

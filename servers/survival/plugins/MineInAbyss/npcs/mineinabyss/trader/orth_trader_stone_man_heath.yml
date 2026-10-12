@@ -1,0 +1,12 @@
+name: "<b><#555555>Stone Man Heath"
+location: -310.5,183.00,-507.5 -315.0,0
+model: npc_female05
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:deepslate 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:cobbled_deepslate 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:tuff 64"

@@ -1,0 +1,12 @@
+name: "<b><#DEB12D>Storage Dayne"
+location: -344.5,177.00,-573.5 450.0,0
+model: npc_male08
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:brown_shulker_box 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:light_blue_shulker_box 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:yellow_shulker_box 1"

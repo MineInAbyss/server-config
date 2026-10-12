@@ -1,0 +1,5 @@
+name: "<b><#AA00AA>Odroy, The Apothecary"
+location: -545.5,110.00,315.5 180.0,0
+model: npc_male01
+onInteract:
+- mineinabyss:open_trades: mineinabyss:orth_trader_odroy_the_apothecary

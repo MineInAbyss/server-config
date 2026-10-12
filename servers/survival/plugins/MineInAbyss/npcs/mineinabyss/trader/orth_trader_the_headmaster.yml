@@ -1,0 +1,14 @@
+name: "The Headmaster"
+location: -571.5,120.06,297.5 585.0,0
+model: npc_female11
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:player_head 1"
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:player_head 1"
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:player_head 1"
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:player_head 1"

@@ -1,0 +1,18 @@
+name: "<b><#55FFFF>Keen Weaver, Quentin"
+location: 198.5,110.00,578.5 -45.0,0
+model: npc_male12
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:skull_banner_pattern 1"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:creeper_banner_pattern 1"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:flower_banner_pattern 1"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:piglin_banner_pattern 1"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:globe_banner_pattern 1"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:mojang_banner_pattern 1"

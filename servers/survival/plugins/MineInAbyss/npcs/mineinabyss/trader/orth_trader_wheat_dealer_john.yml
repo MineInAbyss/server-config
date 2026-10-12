@@ -1,0 +1,20 @@
+name: "<b><#FFFF55>Wheat Dealer John"
+location: -564.5,110.00,285.5 270.0,0
+model: npc_male02
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:wheat 32"
+      - input: "mineinabyss:orth_coin 14"
+        output: "minecraft:hay_block 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:wheat_seeds 32"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:pumpkin_seeds 6"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:melon_seeds 8"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:beetroot_seeds 64"
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:bone_meal 64"

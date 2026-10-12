@@ -1,0 +1,6 @@
+inherit: mineinabyss:sc_gondola_ride
+speaker: Seeker Camp Gondola A
+variables:
+  ride_name: Seeker Camp Gondola A
+  destination: mineinabyss:l2_seekercamp_a_top
+  destination_name: top

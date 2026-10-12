@@ -1,0 +1,5 @@
+# Base for the Seeker Camp gondola rides, each direction copies it with its own destination
+template: true
+inherit: mineinabyss:warp_ride
+variables:
+  transition: mineinabyss:gondola

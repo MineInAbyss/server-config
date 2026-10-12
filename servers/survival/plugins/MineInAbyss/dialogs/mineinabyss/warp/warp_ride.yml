@@ -1,0 +1,46 @@
+# Base for ride dialogs, a copy fills in the variables below for one direction of a ride
+# onFalse is shown when the ride's conditions do not pass
+template: true
+variables:
+  ride_name: the ride
+  destination: mineinabyss:none
+  destination_name: the other end
+  transition: mineinabyss:default
+  conditions: []
+  price: {}
+  price_name: free
+type: CONDITIONAL
+conditions: <conditions>
+onTrue:
+  type: CONDITIONAL
+  conditions:
+    - mineinabyss:can_afford: <price>
+  onTrue:
+    type: REPLY
+    lines:
+      - "Ride the <ride_name>"
+      - "to the <destination_name>?"
+    answers:
+      - text: "Yes"
+        next:
+          type: PAGE
+          line: "Hold on tight!"
+          next:
+            type: ACTION
+            # pay stops the actions after it when the player cannot pay
+            actions:
+              - mineinabyss:pay: <price>
+              - mineinabyss:warp_to:
+                  to: <destination>
+                  transition: <transition>
+      - text: "No"
+  onFalse:
+    type: PAGE
+    lines:
+      - "You cannot afford this ride,"
+      - "it costs <price_name>."
+onFalse:
+  type: PAGE
+  lines:
+    - "You cannot ride this"
+    - "right now."

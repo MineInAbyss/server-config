@@ -1,0 +1,9 @@
+defaultStyle: default
+denySound: minecraft:entity.villager.no
+styles:
+  default:
+    typingSpeed: 1
+    range: 3.0
+    effect: Slowness
+    textColor: "#4f4a3e"
+    backgroundFog: true

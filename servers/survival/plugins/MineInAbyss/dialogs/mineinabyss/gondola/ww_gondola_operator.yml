@@ -1,0 +1,33 @@
+type: CONDITIONAL
+conditions:
+  - unlocked: l1_wwgondola
+onTrue:
+  type: ACTION
+  actions:
+    - mineinabyss:open_dialog: mineinabyss:l1_wwgondola_a_down
+onFalse:
+  type: PAGE
+  line: "Hello there delver!"
+  next:
+    type: REPLY
+    lines:
+      - "I can give you permanent access"
+      - "to this gondola for 32 Orth Coins."
+    answers:
+      - text: "Buy access"
+        conditions:
+          - mineinabyss:can_afford:
+              orthCoins: 32
+        lockedText: "Need 32 Orth Coins"
+        next:
+          type: ACTION
+          # pay stops the actions after it when the player cannot pay
+          actions:
+            - mineinabyss:pay:
+                orthCoins: 32
+            - mineinabyss:unlock: l1_wwgondola
+            - mineinabyss:open_dialog: mineinabyss:l1_wwgondola_a_down
+      - text: "No thanks"
+        next:
+          type: PAGE
+          line: "No problem, see you around!"

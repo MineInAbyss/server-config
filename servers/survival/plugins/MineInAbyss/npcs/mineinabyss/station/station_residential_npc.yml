@@ -1,0 +1,5 @@
+name: "Traveling Merchant"
+location: -329.5,183.0,-491.5 315.0,0
+model: npcgondola_variant2
+onInteract:
+- mineinabyss:open_dialog: mineinabyss:orth_station_npc

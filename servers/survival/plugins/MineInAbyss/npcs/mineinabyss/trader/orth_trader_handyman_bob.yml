@@ -1,0 +1,18 @@
+name: "<b><#55FFFF>Handyman Bob"
+location: -344.5,183.00,-508.5 -45.0,0
+model: npc_male11
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:spyglass 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:compass 4"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:clock 4"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:flint_and_steel 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:shears 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:lead 8"

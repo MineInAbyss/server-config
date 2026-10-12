@@ -1,0 +1,18 @@
+name: "<b><#FFAA00>Bee Keeper Bill"
+location: 131.5,91.00,629.5 270.0,0
+model: npc_male03
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 5"
+        output: "minecraft:bee_nest 1"
+      - input: "mineinabyss:orth_coin 6"
+        output: "minecraft:beehive 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:honey_bottle 16"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:honeycomb 64"
+      - input: "mineinabyss:orth_coin 5"
+        output: "minecraft:honey_block 64"
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:honeycomb_block 64"

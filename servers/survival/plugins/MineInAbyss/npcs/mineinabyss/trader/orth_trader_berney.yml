@@ -1,0 +1,12 @@
+name: "<b><#55FF55>Berney"
+location: 537.5,126.00,-134.5 -540.0,0
+model: npc_male01
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 16"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:enchanted_book 1"

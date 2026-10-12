@@ -1,0 +1,32 @@
+type: CONDITIONAL
+conditions:
+  - unlocked: l1_grandpier
+onTrue:
+  type: ACTION
+  actions:
+    - mineinabyss:open_dialog: mineinabyss:l1_grandpier_a_down
+onFalse:
+  type: PAGE
+  line: "Hello there delver!"
+  next:
+    type: REPLY
+    lines:
+      - "I can give you permanent access"
+      - "to these gondolas for 50 Orth Coins."
+    answers:
+      - text: "Buy access"
+        conditions:
+          - mineinabyss:can_afford:
+              orthCoins: 50
+        lockedText: "Need 50 Orth Coins"
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:pay:
+                orthCoins: 50
+            - mineinabyss:unlock: l1_grandpier
+            - mineinabyss:open_dialog: mineinabyss:l1_grandpier_a_down
+      - text: "No thanks"
+        next:
+          type: PAGE
+          line: "No problem, see you around!"

@@ -1,0 +1,6 @@
+inherit: mineinabyss:gp_gondola_ride
+speaker: Grand Pier Gondola B
+variables:
+  ride_name: Grand Pier Gondola B
+  destination: mineinabyss:l1_grandpier_b_top
+  destination_name: top

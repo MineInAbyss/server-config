@@ -1,0 +1,24 @@
+type: PAGE
+lines:
+  - "What do we have here? New faces!?"
+  - "Welcome to Seeker Camp!"
+next:
+  type: REPLY
+  lines:
+    - "Do you want to use this gondola"
+    - "to go up?"
+  answers:
+    - text: "Yes, please!"
+      next:
+        type: PAGE
+        line: "Alright, step inside."
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:warp_to:
+                to: mineinabyss:l2_seekercamp_a_top
+                transition: mineinabyss:gondola
+    - text: "No"
+      next:
+        type: PAGE
+        line: "Are you sure?"

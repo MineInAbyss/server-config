@@ -1,0 +1,14 @@
+name: "<b><#00AA00>Bilton"
+location: 528.5,126.00,-134.5 -135.0,0
+model: npc_male16
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"

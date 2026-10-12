@@ -1,0 +1,5 @@
+inherit: mineinabyss:gondola_template
+variables:
+  location: mineinabyss:l1_grandpier_a_top
+  npc: mineinabyss:gondola_assistant_gb
+  dialog: mineinabyss:l1_grandpier_a_down

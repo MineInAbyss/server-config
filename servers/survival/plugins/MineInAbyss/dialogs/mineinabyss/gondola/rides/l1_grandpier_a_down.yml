@@ -1,0 +1,6 @@
+inherit: mineinabyss:gp_gondola_ride
+speaker: Belze
+variables:
+  ride_name: Grand Pier Gondola A
+  destination: mineinabyss:l1_grandpier_a_bottom
+  destination_name: bottom

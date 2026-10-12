@@ -1,0 +1,5 @@
+inherit: mineinabyss:gondola_template
+variables:
+  location: mineinabyss:l1_wwgondola_a_top
+  npc: mineinabyss:ww_gondola_operator
+  dialog: mineinabyss:l1_wwgondola_a_down

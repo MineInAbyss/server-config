@@ -1,0 +1,8 @@
+set.item:
+  type: minecraft:paper
+  itemName: <aqua>Gondola Trigger
+
+nexo:custom_block:
+  custom_variation: 127
+  type: STRINGBLOCK
+  model: block/barrier

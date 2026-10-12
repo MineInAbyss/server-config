@@ -1,0 +1,10 @@
+name: "<b><#FFAA00>Geomancy Enjoyer Alistair"
+location: -337.5,183.00,-485.5 270.0,0
+model: npc_female12
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:pointed_dripstone 64"
+      - input: "mineinabyss:orth_coin 5"
+        output: "minecraft:dripstone_block 64"

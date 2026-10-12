@@ -1,0 +1,12 @@
+template: true
+variables:
+  location: null
+  offset: -1..1,0,-1..1
+  npc: null
+  dialog: null
+type: BLOCK
+location: <location>
+offset: <offset>
+actions:
+  - mineinabyss:target_npc: <npc>
+  - mineinabyss:open_dialog: <dialog>
