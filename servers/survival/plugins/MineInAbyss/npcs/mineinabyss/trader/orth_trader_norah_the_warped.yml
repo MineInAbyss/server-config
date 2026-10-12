@@ -1,0 +1,24 @@
+name: "<b><#FF5555>Norah The Warped"
+location: -566.5,120.06,307.5 675.0,0
+model: npc_female02
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:warped_stem 64"
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:crimson_stem 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:basalt 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:blackstone 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:gilded_blackstone 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:crying_obsidian 32"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:shroomlight 48"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:warped_nylium 16"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:crimson_nylium 16"

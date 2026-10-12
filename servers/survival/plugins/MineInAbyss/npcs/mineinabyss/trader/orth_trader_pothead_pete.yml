@@ -1,0 +1,10 @@
+name: "<b><#55FF55>Pothead Pete"
+location: -322.5,151.00,-532.5 -180.0,0
+model: npc_male06
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:player_head 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:player_head 1"

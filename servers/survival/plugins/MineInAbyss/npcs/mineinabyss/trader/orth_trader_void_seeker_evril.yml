@@ -1,0 +1,12 @@
+name: "<b><#AA00AA>Void Seeker Evril"
+location: -330.5,183.00,-521.5 990.0,0
+model: npc_female08
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:end_stone 8"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:end_stone_bricks 12"
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:ender_pearl 16"

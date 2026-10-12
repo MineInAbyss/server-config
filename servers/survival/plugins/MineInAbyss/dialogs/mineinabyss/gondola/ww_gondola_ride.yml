@@ -1,0 +1,13 @@
+# Base for the Waterwheel gondola rides, each direction copies it with its own destination
+template: true
+inherit: mineinabyss:warp_ride
+variables:
+  transition: mineinabyss:gondola
+  conditions:
+    - mineinabyss:unlocked: l1_wwgondola
+onFalse:
+  type: PAGE
+  lines:
+    - "Buy access to this gondola from"
+    - "operator Warka at the"
+    - "Waterwheel Gondola in Orth."

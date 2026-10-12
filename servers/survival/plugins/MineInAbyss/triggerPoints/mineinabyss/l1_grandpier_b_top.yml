@@ -1,0 +1,6 @@
+inherit: mineinabyss:gondola_template
+variables:
+  location: mineinabyss:l1_grandpier_b_top
+  dialog: mineinabyss:l1_grandpier_b_down
+actions:
+  - mineinabyss:open_dialog: <dialog>

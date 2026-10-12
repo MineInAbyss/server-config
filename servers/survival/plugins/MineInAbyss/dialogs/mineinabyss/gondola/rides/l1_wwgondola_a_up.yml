@@ -1,0 +1,6 @@
+inherit: mineinabyss:ww_gondola_ride
+speaker: Waterwheel Gondola A
+variables:
+  ride_name: Waterwheel Gondola A
+  destination: mineinabyss:l1_wwgondola_a_top
+  destination_name: top

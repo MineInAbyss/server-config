@@ -34,6 +34,8 @@ block-updates:
   disable-mushroom-block-updates: false
   disable-noteblock-updates: true
   disable-tripwire-updates: true
+  tripwire-inside-event-states:
+  - minecraft:tripwire[north=true,south=true,east=true,west=true,attached=true,disarmed=true,powered=true]
 chunk-loading-advanced:
   auto-config-send-distance: true
   player-max-concurrent-chunk-generates: 0

@@ -1,0 +1,10 @@
+# A full-screen black Emojy glyph shown as a title, it fades smoothly and covers the HUD
+title: ":screen_fade:"
+# Sounds from packs_assets/common/assets/mineinabyss/sounds.json
+loopSound: mineinabyss:warps.gondola.lowered
+loopSoundInterval: 0.5s
+arriveSound: mineinabyss:warps.gondola.landing
+volume: 0.6
+fadeIn: 1s
+travelTime: 3s
+fadeOut: 1s

@@ -2,8 +2,12 @@
 enableAll: false
 ansiblePull:
   enabled: true
+achievements:
+  enabled: false
 # Choose which features to enable with true/false
 antiCheese:
+  enabled: true
+cinematics:
   enabled: true
 core:
   enabled: true
@@ -21,9 +25,9 @@ customHud:
   enabled: true
 descent:
   enabled: false
-displayLocker:
+dialogs:
   enabled: true
-gondolas:
+displayLocker:
   enabled: true
 guilds:
   enabled: true
@@ -34,19 +38,25 @@ keepInventory:
   keepInvInVoid: true
 layers:
   enabled: true
+locationPoints:
+  enabled: true
 lootCrates:
   enabled: true
 misc:
   enabled: true
   grassBonemeal:
+    # Chance for each plant bonemeal grows on grass to be swapped for one of the blocks below
     replaceChance: 0.7
-    #prefabs:
-    #  namespace:key: 0.1 #weight
+    # Geary prefabs with a nexo:custom_block component, mapped to their weight
+    prefabs: {}
+    # Vanilla block data like minecraft:poppy, mapped to their weight
     vanilla:
-      spore_blossom: 0.05
-      wither_rose: 0.05
-      white_tulip: 0.7
+      "spore_blossom": 0.05
+      "wither_rose": 0.05
+      "white_tulip": 0.7
 music:
+  enabled: true
+npcs:
   enabled: true
 shopkeeping:
   enabled: true
@@ -82,9 +92,17 @@ regionContexts:
   enabled: true
 relics:
   enabled: true
-respawn:
-  enabled: true
 tools:
   enabled: true
+transitions:
+  enabled: true
+triggerPoints:
+  enabled: true
 tutorial:
+  enabled: true
+quests:
+  enabled: false
+goals:
+  enabled: false
+respawn:
   enabled: true

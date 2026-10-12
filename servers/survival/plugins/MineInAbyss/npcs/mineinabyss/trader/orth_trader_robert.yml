@@ -1,0 +1,14 @@
+name: "<b><#FFFF55>Robert"
+location: 512.5,126.00,-155.5 180.0,0
+model: npc_male06
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 16"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 14"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 13"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 14"
+        output: "minecraft:enchanted_book 1"

@@ -1,0 +1,5 @@
+name: "Belze"
+location: -396.5,128.0,-34.5 45.0,0
+model: npcgondola_variant3
+onInteract:
+  - mineinabyss:open_dialog: mineinabyss:gp_gondola_operator

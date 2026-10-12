@@ -1,0 +1,5 @@
+name: "Yelme"
+location: 82633.5,104.0,-93.5 135.0,0
+model: yelme
+onInteract:
+- mineinabyss:open_dialog: mineinabyss:gondola_sc

@@ -9,6 +9,13 @@ emotes:
     height: 30
     ascent: 30
     bitmapWidth: 3
+# Full-screen black for warp fades, sent as a title which is drawn at 4x scale.
+# 600 tall covers a 4K screen at GUI scale 1, and an ascent of 297 centres it on the title's baseline
+  - id: screen_fade
+    font: mineinabyss:screen_fade
+    texture: mineinabyss:ui/screen_fade.png
+    height: 600
+    ascent: 297
 # chat emotes
   - id: caught
   - id: bonegun

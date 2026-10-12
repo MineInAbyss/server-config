@@ -1,0 +1,12 @@
+name: "<b><#FFFF55>Jacob"
+location: 493.5,126.06,-171.5 225.0,0
+model: npc_male15
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 13"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 9"
+        output: "minecraft:enchanted_book 1"

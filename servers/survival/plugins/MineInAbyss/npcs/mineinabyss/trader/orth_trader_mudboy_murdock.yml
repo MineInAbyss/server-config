@@ -1,0 +1,14 @@
+name: "<#00AA00>Mudboy Murdock"
+location: -569.5,111.00,278.5 45.0,0
+model: npc_female10
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:mud 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:muddy_mangrove_roots 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:packed_mud 64"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:mud_bricks 64"

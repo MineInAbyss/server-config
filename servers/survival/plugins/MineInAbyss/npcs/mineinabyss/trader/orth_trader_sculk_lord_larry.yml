@@ -1,0 +1,22 @@
+name: "<#C6C6C6>Sculk Lord Larry"
+location: -540.5,110.06,307.5 315.0,0
+model: npc_male01
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:sculk 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:sculk_catalyst 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:sculk_vein 64"
+      - input: "mineinabyss:orth_coin 8"
+        output: "minecraft:sculk_sensor 32"
+      - input: "mineinabyss:orth_coin 8"
+        output: "minecraft:sculk_shrieker 4"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:ochre_froglight 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:verdant_froglight 64"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:pearlescent_froglight 64"

@@ -1,0 +1,6 @@
+name: "Okibo"
+location: -566.5,128.0,-22.5 315.0,0
+scale: 1.8,1.8,1.8
+model: okibo
+onInteract:
+- mineinabyss:open_dialog: mineinabyss:orth_station_okibo

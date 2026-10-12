@@ -1,0 +1,6 @@
+inherit: mineinabyss:gondola_template
+variables:
+  location: mineinabyss:l2_seekercamp_a_top
+  dialog: mineinabyss:l2_seekercamp_a_down
+actions:
+  - mineinabyss:open_dialog: <dialog>

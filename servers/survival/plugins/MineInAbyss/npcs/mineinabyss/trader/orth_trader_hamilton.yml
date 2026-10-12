@@ -1,0 +1,10 @@
+name: "<b><#FF5555>Hamilton"
+location: 570.5,133.00,-136.5 -720.0,0
+model: npc_male04
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 13"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 11"
+        output: "minecraft:enchanted_book 1"

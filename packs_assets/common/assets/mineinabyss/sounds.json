@@ -1,0 +1,23 @@
+{
+  "warps.gondola.lowered": {
+    "sounds": [
+      {
+        "name": "minecraft:block.chain.step",
+        "type": "event"
+      }
+    ]
+  },
+  "warps.gondola.landing": {
+    "sounds": [
+      {
+        "name": "minecraft:ambient/cave/cave16"
+      },
+      {
+        "name": "minecraft:ambient/cave/cave17"
+      },
+      {
+        "name": "minecraft:ambient/cave/cave18"
+      }
+    ]
+  }
+}

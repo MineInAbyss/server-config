@@ -1,0 +1,14 @@
+name: "<b><#AA0000>Mark"
+location: 533.5,126.00,-142.5 0.0,0
+model: npc_male02
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 12"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 8"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 10"
+        output: "minecraft:enchanted_book 1"

@@ -1,0 +1,24 @@
+name: "<b><#FF5555>Meat Slinger John"
+location: -339.5,151.00,-531.5 180.0,0
+model: npc_male04
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:cooked_chicken 10"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:cooked_beef 12"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:bread 32"
+      - input: "mineinabyss:orth_coin 3"
+        output: "minecraft:golden_apple 1"
+      - input: "mineinabyss:orth_coin 16"
+        output: "minecraft:enchanted_golden_apple 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:golden_carrot 8"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:cake 1"
+      - input: "mineinabyss:orth_coin 1"
+        output: "mineinabyss:billabonk_leg_raw 11"
+      - input: "mineinabyss:orth_coin 1"
+        output: "mineinabyss:corpse_weeper_meat_raw 17"

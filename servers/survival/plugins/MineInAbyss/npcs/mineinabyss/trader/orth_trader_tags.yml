@@ -1,0 +1,12 @@
+name: "<b><#00AAAA>Tags"
+location: 528.5,126.00,-163.5 45.0,0
+model: npc_female06
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 9"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 8"
+        output: "minecraft:enchanted_book 1"
+      - input: "mineinabyss:orth_coin 9"
+        output: "minecraft:enchanted_book 1"

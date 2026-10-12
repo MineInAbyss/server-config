@@ -1,0 +1,20 @@
+name: "<b><#AA0000>Underworld Merchant, Nereth"
+location: -572.5,111.00,287.5 855.0,0
+model: npc_female01
+onInteract:
+- mineinabyss:open_trades:
+    trades:
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:netherrack 32"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:soul_sand 6"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:soul_soil 6"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:nether_quartz_ore 10"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:magma_block 16"
+      - input: "mineinabyss:orth_coin 4"
+        output: "minecraft:nether_gold_ore 29"
+      - input: "mineinabyss:orth_coin 1"
+        output: "minecraft:bone_block 7"
