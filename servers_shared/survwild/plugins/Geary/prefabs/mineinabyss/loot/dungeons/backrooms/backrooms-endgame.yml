@@ -1,11 +1,5 @@
 mineinabyss:lootTable:
   pools:
-    - rolls: { type: minecraft:uniform, min: 5, max: 5 }
-      entries:
-        - type: mineinabyss:item
-          item: mineinabyss:mail_balloon_scraps
-      conditions:
-        - { type: minecraft:random_chance, chance: 1 }
     - entries:
         - type: mineinabyss:item
           item: mineinabyss:charcoal_sand_ingot

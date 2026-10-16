@@ -86,10 +86,6 @@ feat/shared-items:
       dest:   plugins/Geary/prefabs/mineinabyss/items
     - source: servers_shared/survwild/plugins/Geary/prefabs/minecraft/recipes
       dest:   plugins/Geary/prefabs/minecraft/recipes
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/mineinabyss/items"
-      dest:   plugins/Geary/prefabs/mineinabyss/items
-    - source: "{{ privateSettingsDest }}/servers_shared/survwild/plugins/Geary/prefabs/minecraft/recipes"
-      dest:   plugins/Geary/prefabs/minecraft/recipes
     - source: packs_assets/feat_items
       dest:   plugins/Geary/template_pack
     - source: "{{ privateSettingsDest }}/packs_assets/feat_items"
@@ -118,7 +114,7 @@ feat/shared-music:
     - source: packs_data/music_discs
       dest:   worlds/world/datapacks/music_discs
   files:
-    worlds/world/data_packs/music_discs:
+    worlds/world/datapacks/music_discs:
       deleteUntracked: true
 
 feat/shared-uis:
@@ -168,8 +164,6 @@ feat/survival-events:
     # Packy
     - source: packs_assets/events
       dest:   plugins/Packy/resourcepacks/events
-    - source: "{{ privateSettingsDest }}/packs_assets/events"
-      dest:   plugins/Packy/resourcepacks/events_private
     # Geary
     # - source: packs_assets/events
     #   dest:   plugins/Geary/template_pack

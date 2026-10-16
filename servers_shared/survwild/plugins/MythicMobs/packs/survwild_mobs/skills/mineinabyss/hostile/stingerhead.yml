@@ -1,14 +1,3 @@
-Changetarget:
-  Cooldown: 0
-  Skills:
-    - runaitargetselector{target=clear}
-    - runaitargetselector{target=players}
-
-Cancelattack:
-  Skills:
-    - CancelEvent
-
-
 stingerhead_unstuck:
   Cooldown: 16
   Conditions:

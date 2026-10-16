@@ -8,14 +8,6 @@ mineinabyss:lootTable:
         - { type: minecraft:random_chance, chance: 0.5 }
     - entries:
         - type: mineinabyss:item
-          item: mineinabyss:mail_balloon_scraps
-      conditions:
-        - { type: minecraft:random_chance, chance: 1 }
-      functions:
-        - type: minecraft:set_count
-          count: { type: minecraft:uniform, min: 1, max: 2 }
-    - entries:
-        - type: mineinabyss:item
           item: mineinabyss:charcoal_sand_ingot
       conditions:
         - { type: minecraft:random_chance, chance: 0.2 }
