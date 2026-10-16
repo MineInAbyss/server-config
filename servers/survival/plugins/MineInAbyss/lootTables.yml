@@ -1,8 +1,16 @@
 messages:
   tableNotFound: Could not find loot table %s. Please let an administrator know!
-  alreadyLooted: You already looted this chest on %s
   noPermissionToEdit: You don't have permission to edit loot crates
   noPermissionToOpen: You don't have permission to open loot crates
   noPermissionToBreak: You don't have permission to break loot crates, ask a member
     of staff if you need one removed.
+  editModeRequired: Enable edit mode with /mia lootcrates edit to change loot crates
+  editModeEnabled: Loot crate edit mode enabled
+  editModeDisabled: Loot crate edit mode disabled
+  notLookingAtCrate: You are not looking at a loot crate
+  customLootSaved: Saved custom loot
+  customLootNotSaved: The crate was removed while editing, its items were given back to you
+  lootNotLoaded: Your looted crates could not be loaded, rejoin or let an administrator know!
+  resetForEveryone: Reset this crate for everyone
+  resetForPlayer: Reset this crate for %s
   lootTableItemTitle: '<green>Loot Crate: <gold>%s<yellow>:%s'
