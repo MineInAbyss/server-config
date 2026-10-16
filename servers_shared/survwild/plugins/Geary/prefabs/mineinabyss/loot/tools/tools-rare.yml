@@ -6,8 +6,6 @@ mineinabyss:lootTable:
         - type: minecraft:group
           weight: 3
           children:
-            - type: mineinabyss:item
-              item: mineinabyss:iron_sickle
             - type: minecraft:item
               name: minecraft:iron_axe
             - type: minecraft:item
@@ -16,8 +14,6 @@ mineinabyss:lootTable:
         - type: minecraft:group
           weight: 1
           children:
-            - type: mineinabyss:item
-              item: mineinabyss:diamond_sickle
             - type: minecraft:item
               name: minecraft:diamond_axe
             - type: minecraft:item

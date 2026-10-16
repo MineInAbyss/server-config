@@ -32,7 +32,6 @@ mineinabyss:lootTable:
           children:
             - { type: minecraft:item,  name: minecraft:wheat_seeds }
             - { type: minecraft:item,  name: minecraft:beetroot_seeds }
-            - { type: minecraft:item,  name: minecraft:carrot_seeds }
           functions:
             - type: minecraft:set_count
               count: { type: minecraft:uniform, min: 1, max: 4 }

@@ -14,7 +14,7 @@ bloodEffectSmall:
 HammerbeakFlap: # wing flap sfx                    - replace with custom if you want
   Cooldown: 0.1
   Skills:
-  - velocity{m=add;x=0;y=0.3;z=0} @self ?!stance{s=approach} ?!stance{s=landing} !stance{s=swoop}
+  - velocity{m=add;x=0;y=0.3;z=0} @self ?!stance{s=approach} ?!stance{s=landing} ?!stance{s=swoop}
   - sound{s=entity.phantom.flap;sc=hostile;p=1.75;v=1.15} @self
   - sound{s=block.snow.break;sc=hostile;p=1.55;v=0.35;delay=5} @self
   - leap{v=85} @target ?stance{s=approach} ?targetnotwithin{d=5}
@@ -64,7 +64,7 @@ hammerbeakDeath:
 HammerbeakFlapSmall: # wing flap sfx                    - replace with custom if you want
   Cooldown: 0.1
   Skills:
-  - velocity{m=add;x=0;y=0.2;z=0} @self ?!stance{s=approach} ?!stance{s=landing} !stance{s=swoop}
+  - velocity{m=add;x=0;y=0.2;z=0} @self ?!stance{s=approach} ?!stance{s=landing} ?!stance{s=swoop}
   - sound{s=entity.phantom.flap;sc=hostile;p=1.95;v=1.15} @self
   - sound{s=block.snow.break;sc=hostile;p=1.55;v=0.35;delay=5} @self
   - leap{v=55} @target ?stance{s=approach} ?targetnotwithin{d=5}

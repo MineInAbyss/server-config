@@ -190,7 +190,7 @@ DiscordConsoleChannelBlockBots: false
 # DiscordChatChannelConsoleCommandExpiration: time in seconds until a sent command output is automatically removed by the bot. set to 0 to disable expiration.
 # DiscordChatChannelConsoleCommandExpirationDeleteRequest: whether to delete the message of the person that originally issued the command
 #
-DiscordChatChannelConsoleCommandEnabled: true
+DiscordChatChannelConsoleCommandEnabled: false
 DiscordChatChannelConsoleCommandNotifyErrors: true
 DiscordChatChannelConsoleCommandPrefix: "!c"
 DiscordChatChannelConsoleCommandRolesAllowed: ["Developer", "Owner"]

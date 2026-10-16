@@ -6,10 +6,11 @@
   },
   "overlays": {
     "entries": [
-      "min_format": [97, 0],
-      "max_format": [199, 0],
-       "directory": "mythichud-26_3"
-     }
+      {
+        "min_format": [97, 0],
+        "max_format": [199, 0],
+        "directory": "mythichud-26_3"
+      }
     ]
   }
 }
