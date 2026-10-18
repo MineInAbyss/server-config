@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Tooth
+  itemModel: mineinabyss:hunting_mobs/generic/tooth
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:hunting_mobs/generic/tooth
+  textures:
+    layers:
+    - mineinabyss:hunting_mobs/generic/tooth

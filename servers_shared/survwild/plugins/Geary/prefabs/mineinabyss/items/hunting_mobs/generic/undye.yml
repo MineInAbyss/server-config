@@ -2,6 +2,7 @@ set.item:
   type: minecraft:clock
   itemName: Undye
   itemModel: mineinabyss:hunting_mobs/generic/undye
+  maxStackSize: 64
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/undye
   textures:

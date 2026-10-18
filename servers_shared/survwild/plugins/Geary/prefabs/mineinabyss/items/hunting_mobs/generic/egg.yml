@@ -2,6 +2,7 @@ set.item:
   type: minecraft:egg
   itemName: Egg
   itemModel: mineinabyss:hunting_mobs/generic/egg
+  maxStackSize: 64
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/egg
   textures:

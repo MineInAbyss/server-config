@@ -2,6 +2,7 @@ set.item:
   type: minecraft:clock
   itemName: Parasite
   itemModel: mineinabyss:hunting_mobs/generic/parasite
+  maxStackSize: 64
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/parasite
   textures:

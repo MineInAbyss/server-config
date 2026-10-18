@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fusing Piton
+  itemModel: mineinabyss:gear/utility/piton_fusing
+  maxStackSize: 16
+resourcepack:
+  model: mineinabyss:gear/utility/piton_fusing
+  textures:
+    layers:
+    - mineinabyss:gear/utility/piton_fusing

@@ -6,18 +6,6 @@ set.item:
   lore:
   - <yellow>Smooth rock.
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Right click to throw.
-
-observe:
-  itemRightClick:
-  - become: parent
-  - itemCooldown:
-      group: mineinabyss:pebble
-      duration: 2s
-  - mythicSkills:
-    - pebble_throw
-  - consumeItem:
-      type: mineinabyss:pebble
-    
 resourcepack:
   model: mineinabyss:gathering/cooking/ouba
   textures:

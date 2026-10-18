@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Magotato
+  itemModel: mineinabyss:gathering/cooking/magotato
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:gathering/cooking/magotato
+  textures:
+    layers:
+    - mineinabyss:gathering/cooking/magotato
