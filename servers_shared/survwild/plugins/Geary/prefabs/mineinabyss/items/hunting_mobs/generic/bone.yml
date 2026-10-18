@@ -2,6 +2,7 @@ set.item:
   type: minecraft:bone
   itemName: Bone
   itemModel: mineinabyss:hunting_mobs/generic/bone
+  maxStackSize: 64
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/bone
   textures:

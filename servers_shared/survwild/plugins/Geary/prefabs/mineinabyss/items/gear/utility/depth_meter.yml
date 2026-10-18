@@ -2,6 +2,7 @@ set.item:
   type: minecraft:paper
   itemName: <dark_aqua>Depth Meter
   itemModel: mineinabyss:gear/utility/depth_meter
+  maxStackSize: 1
   lore:
   - <aqua>Used by delvers to keep
   - <aqua>track of their depth.

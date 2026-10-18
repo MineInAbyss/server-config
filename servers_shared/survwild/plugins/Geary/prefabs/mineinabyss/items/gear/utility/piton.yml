@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Piton
+  itemModel: mineinabyss:gear/utility/piton
+  maxStackSize: 16
+resourcepack:
+  model: mineinabyss:gear/utility/piton
+  textures:
+    layers:
+    - mineinabyss:gear/utility/piton

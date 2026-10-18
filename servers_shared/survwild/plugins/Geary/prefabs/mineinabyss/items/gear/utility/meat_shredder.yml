@@ -2,7 +2,7 @@ set.item:
   type: minecraft:clock
   itemName: Meat Shredder
   itemModel: mineinabyss:gear/utility/meat_shredder
-  maxStackSize: 64
+  maxStackSize: 1
   lore:
   - <yellow>Used to cut meat into smaller pieces.
   - <font:small_text><gray><shadow:#00000000>Passive slot ability. Meat you pick up is cut for you.

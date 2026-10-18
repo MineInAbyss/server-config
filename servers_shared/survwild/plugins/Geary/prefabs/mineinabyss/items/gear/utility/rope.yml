@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Rope
+  itemModel: mineinabyss:gear/utility/rope
+  maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/rope
+  textures:
+    layers:
+    - mineinabyss:gear/utility/rope

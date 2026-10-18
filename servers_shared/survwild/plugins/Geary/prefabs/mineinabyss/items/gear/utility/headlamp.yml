@@ -2,6 +2,7 @@ set.item:
   itemName: <#D9C48A>Headlamp
   type: minecraft:clock
   itemModel: mineinabyss:gear/utility/headlamp
+  maxStackSize: 1
   lore:
   - <#D2D489>A caver's lamp strapped to a battered helmet.
   - <font:small_text><gray><shadow:#00000000>Passive slot ability. Lights the way ahead of you.

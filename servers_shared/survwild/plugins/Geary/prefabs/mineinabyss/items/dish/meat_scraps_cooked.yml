@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Cooked Meat Scraps
+  itemModel: mineinabyss:dish/meat_scraps_cooked
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:dish/meat_scraps_cooked
+  textures:
+    layers:
+    - mineinabyss:dish/meat_scraps_cooked

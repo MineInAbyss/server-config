@@ -2,6 +2,7 @@ set.item:
   type: minecraft:string
   itemName: Silk
   itemModel: mineinabyss:hunting_mobs/generic/silk
+  maxStackSize: 64
 resourcepack:
   model: mineinabyss:hunting_mobs/generic/silk
   textures:

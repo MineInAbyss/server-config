@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Raw Meat Scraps
+  itemModel: mineinabyss:gear/utility/meat_scraps_raw
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:gear/utility/meat_scraps_raw
+  textures:
+    layers:
+    - mineinabyss:gear/utility/meat_scraps_raw
