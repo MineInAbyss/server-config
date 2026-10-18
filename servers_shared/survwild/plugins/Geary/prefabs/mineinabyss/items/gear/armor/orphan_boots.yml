@@ -11,8 +11,37 @@ set.item:
   enchantmentGlintOverride: false
   lore:
   - 'Erm, dis do be armor.'
-resourcepack:
-  model: mineinabyss:gear/armor/orphan_boots
-  textures:
-    layers:
-    - mineinabyss:gear/armor/orphan_boots
+itemModel:
+  model:
+    type: composite
+    models:
+      - type: condition
+        property: has_component
+        component: dyed_color
+        onTrue:
+          type: composite
+          models:
+            - type: texture
+              texture: mineinabyss:gear/armor/orphan_boots_dyeable
+              tints:
+                - type: dye
+                  default: 16777215
+            - type: texture
+              texture: mineinabyss:gear/armor/orphan_boots_dyeable_overlay
+        onFalse:
+          type: composite
+          models:
+            - type: texture
+              texture: mineinabyss:gear/armor/orphan_boots
+      - type: select
+        property: display_context
+        fallback:
+          type: empty
+        cases:
+          - when: gui
+            model:
+              type: texture
+              texture: mineinabyss:gear/armor/rarity_marker
+              tints:
+                - type: constant
+                  value: 16737369
