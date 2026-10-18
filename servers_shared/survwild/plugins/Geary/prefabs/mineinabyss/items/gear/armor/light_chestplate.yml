@@ -11,8 +11,21 @@ set.item:
   enchantmentGlintOverride: false
   lore:
   - 'Erm, dis do be armor.'
-resourcepack:
-  model: mineinabyss:gear/armor/light_chestplate
-  textures:
-    layers:
-    - mineinabyss:gear/armor/light_chestplate
+itemModel:
+  model:
+    type: composite
+    models:
+      - type: texture
+        texture: mineinabyss:gear/armor/light_chestplate
+      - type: select
+        property: display_context
+        fallback:
+          type: empty
+        cases:
+          - when: gui
+            model:
+              type: texture
+              texture: mineinabyss:gear/armor/rarity_marker
+              tints:
+                - type: constant
+                  value: 8597944

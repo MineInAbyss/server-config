@@ -16,3 +16,22 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/armor/charcoal_sand_boots
+
+itemModel:
+  model:
+    type: composite
+    models:
+      - type: texture
+        texture: mineinabyss:gear/armor/charcoal_sand_boots
+      - type: select
+        property: display_context
+        fallback:
+          type: empty
+        cases:
+          - when: gui
+            model:
+              type: texture
+              texture: mineinabyss:gear/armor/rarity_marker
+              tints:
+                - type: constant
+                  value: 16108584
