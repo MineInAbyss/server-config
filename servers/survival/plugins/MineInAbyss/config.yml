@@ -78,6 +78,8 @@ playerProfile:
   - "funeral_plaque"
 pvp:
   enabled: true
+regionContexts:
+  enabled: true
 relics:
   enabled: true
 respawn:
