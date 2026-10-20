@@ -22,10 +22,10 @@ set.recipes:
         type: minecraft:raw_iron
       S:
         prefab: mineinabyss:silkfang_silk
-    configuration: |-
-      |BSB|
-      |LRL|
-      |ABA|
+    shape:
+      - "BSB"
+      - "LRL"
+      - "ABA"
   - type: shaped
     items:
       A:
@@ -38,10 +38,10 @@ set.recipes:
         type: minecraft:raw_iron
       S:
         prefab: mineinabyss:kuongatari_silk
-    configuration: |-
-      |BSB|
-      |LRL|
-      |ABA|
+    shape:
+      - "BSB"
+      - "LRL"
+      - "ABA"
 observe:
   itemLeftClick:
   - become: parent

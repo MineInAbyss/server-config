@@ -8,7 +8,7 @@ set.recipes:
       items:
         S: { prefab: mineinabyss:kuongatari_juice}
         E: { type: minecraft:short_grass}
-      configuration: |-
-        |EEE|
-        |ESE|
-        |EEE|
+      shape:
+        - "EEE"
+        - "ESE"
+        - "EEE"

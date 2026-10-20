@@ -11,7 +11,7 @@ set.recipes:
         C: 
           prefab: mineinabyss:charcoal_sand_ingot
 
-      configuration: |-
-        |CCC|
-        |CLC|
-        |CCC|
+      shape:
+        - "CCC"
+        - "CLC"
+        - "CCC"

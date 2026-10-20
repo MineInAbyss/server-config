@@ -12,10 +12,10 @@ set.recipes:
           prefab: mineinabyss:makihige_ink_sac
         P:
           type: minecraft:paper
-      configuration: |-
-        | SS|
-        |PIP|
-        |PPP|
+      shape:
+        - " SS"
+        - "PIP"
+        - "PPP"
     - type: shaped
       items:
         S:
@@ -24,10 +24,10 @@ set.recipes:
           prefab: mineinabyss:kazura_squid_ink_sac
         P:
           type: minecraft:paper
-      configuration: |-
-        | SS|
-        |PIP|
-        |PPP|
+      shape:
+        - " SS"
+        - "PIP"
+        - "PPP"
     - type: shaped
       items:
         K:
@@ -36,10 +36,10 @@ set.recipes:
           prefab: mineinabyss:makihige_ink_sac
         P:
           type: minecraft:paper
-      configuration: |-
-        | KK|
-        |PIP|
-        |PPP|
+      shape:
+        - " KK"
+        - "PIP"
+        - "PPP"
     - type: shaped
       items:
         K:
@@ -48,7 +48,7 @@ set.recipes:
           prefab: mineinabyss:kazura_squid_ink_sac
         P:
           type: minecraft:paper
-      configuration: |-
-        | KK|
-        |PIP|
-        |PPP|
+      shape:
+        - " KK"
+        - "PIP"
+        - "PPP"

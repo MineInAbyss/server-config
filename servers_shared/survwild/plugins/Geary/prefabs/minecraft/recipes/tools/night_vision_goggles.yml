@@ -15,10 +15,10 @@ set.recipes:
         I: 
           type: minecraft:iron_ingot
           
-      configuration: |-
-        |JSJ|
-        |IDI|
-        |I I|
+      shape:
+        - "JSJ"
+        - "IDI"
+        - "I I"
     - type: shaped
       items:
         J:
@@ -30,7 +30,7 @@ set.recipes:
         I: 
           type: minecraft:iron_ingot
           
-      configuration: |-
-        |JSJ|
-        |IDI|
-        |I I|
+      shape:
+        - "JSJ"
+        - "IDI"
+        - "I I"

@@ -17,7 +17,7 @@ set.recipes:
         I: 
           prefab: mineinabyss:tier_2_lens
 
-      configuration: |-
-        |HBH|
-        |LGI|
-        |HBH|
+      shape:
+        - "HBH"
+        - "LGI"
+        - "HBH"

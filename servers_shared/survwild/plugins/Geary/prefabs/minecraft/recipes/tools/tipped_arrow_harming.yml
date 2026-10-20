@@ -13,7 +13,7 @@ set.recipes:
           prefab: mineinabyss:black_flask
         A:
           type: minecraft:arrow
-      configuration: |-
-        |AAA|
-        |ABA|
-        |AAA|
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"

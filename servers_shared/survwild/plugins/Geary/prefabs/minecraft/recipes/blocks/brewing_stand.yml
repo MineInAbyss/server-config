@@ -11,15 +11,15 @@ set.recipes:
       items:
         S: { prefab: mineinabyss:hisoishi_shell}
         R: { prefab: mineinabyss:rohana_tail}
-      configuration: |-
-        |   |
-        | R |
-        |SSS|
+      shape:
+        - "   "
+        - " R "
+        - "SSS"
     - type: shaped
       items:
         S: { prefab: mineinabyss:hagamizukin_tooth}
         R: { prefab: mineinabyss:rohana_tail}
-      configuration: |-
-        |   |
-        | R |
-        |SSS|
+      shape:
+        - "   "
+        - " R "
+        - "SSS"

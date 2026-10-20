@@ -7,4 +7,4 @@ set.recipes:
       input:
         type: minecraft:dirt
       experience: 1
-      cookingTime: 100
+      cookingTime: 5s

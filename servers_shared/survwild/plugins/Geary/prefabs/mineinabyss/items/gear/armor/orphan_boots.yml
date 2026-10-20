@@ -11,6 +11,11 @@ set.item:
   enchantmentGlintOverride: false
   lore:
   - 'Erm, dis do be armor.'
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - type: dye
+      target: { item: { prefab: mineinabyss:orphan_boots } }
 itemModel:
   model:
     type: composite

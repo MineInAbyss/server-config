@@ -12,11 +12,11 @@ set.recipes:
   - type: furnace
     input: mineinabyss:madokajack_eye
     experience: 1
-    cookingTime: 100
+    cookingTime: 5s
   - type: smoking
     input: mineinabyss:madokajack_eye
     experience: 2
-    cookingTime: 50
+    cookingTime: 2.5s
 resourcepack:
   model: mineinabyss:hunting_mobs/mob_standard/madokajack_eye_roasted
   textures:

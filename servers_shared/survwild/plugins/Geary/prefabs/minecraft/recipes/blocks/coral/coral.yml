@@ -1,0 +1,180 @@
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:brain_coral }
+      items:
+        - prefab: mineinabyss:ashimite_antlers
+        - type: minecraft:pink_dye
+    - type: shaped
+      result: { type: minecraft:brain_coral_block }
+      items:
+        A: { prefab: mineinabyss:ashimite_antlers }
+        P: { type: minecraft:pink_dye }
+      shape:
+        - " A "
+        - "APA"
+        - " A "
+    - type: shapeless
+      result: { type: minecraft:fire_coral }
+      items:
+        - prefab: mineinabyss:ashimite_antlers
+        - type: minecraft:red_dye
+    - type: shaped
+      result: { type: minecraft:fire_coral_block }
+      items:
+        A: { prefab: mineinabyss:ashimite_antlers }
+        R: { type: minecraft:red_dye }
+      shape:
+        - " A "
+        - "ARA"
+        - " A "
+    - type: shapeless
+      result: { type: minecraft:horn_coral }
+      items:
+        - prefab: mineinabyss:ashimite_antlers
+        - type: minecraft:yellow_dye
+    - type: shaped
+      result: { type: minecraft:horn_coral_block }
+      items:
+        A: { prefab: mineinabyss:ashimite_antlers }
+        Y: { type: minecraft:yellow_dye }
+      shape:
+        - " A "
+        - "AYA"
+        - " A "
+    - type: shaped
+      result: { type: minecraft:dead_brain_coral, amount: 8 }
+      items:
+        S: { type: minecraft:brain_coral }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_brain_coral_block, amount: 8 }
+      items:
+        S: { type: minecraft:brain_coral_block }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_brain_coral_fan, amount: 8 }
+      items:
+        S: { type: minecraft:brain_coral_fan }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_bubble_coral, amount: 8 }
+      items:
+        S: { type: minecraft:bubble_coral }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_bubble_coral_block, amount: 8 }
+      items:
+        S: { type: minecraft:bubble_coral_block }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_bubble_coral_fan, amount: 8 }
+      items:
+        S: { type: minecraft:bubble_coral_fan }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_fire_coral, amount: 8 }
+      items:
+        S: { type: minecraft:fire_coral }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_fire_coral_block, amount: 8 }
+      items:
+        S: { type: minecraft:fire_coral_block }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_fire_coral_fan, amount: 8 }
+      items:
+        S: { type: minecraft:fire_coral_fan }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_horn_coral, amount: 8 }
+      items:
+        S: { type: minecraft:horn_coral }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_horn_coral_block, amount: 8 }
+      items:
+        S: { type: minecraft:horn_coral_block }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_horn_coral_fan, amount: 8 }
+      items:
+        S: { type: minecraft:horn_coral_fan }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_tube_coral, amount: 8 }
+      items:
+        S: { type: minecraft:tube_coral }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_tube_coral_block, amount: 8 }
+      items:
+        S: { type: minecraft:tube_coral_block }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"
+    - type: shaped
+      result: { type: minecraft:dead_tube_coral_fan, amount: 8 }
+      items:
+        S: { type: minecraft:tube_coral_fan }
+        B: { type: minecraft:cobweb }
+      shape:
+        - "SSS"
+        - "SBS"
+        - "SSS"

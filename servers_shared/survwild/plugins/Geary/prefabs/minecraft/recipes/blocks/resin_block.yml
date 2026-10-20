@@ -8,14 +8,14 @@ set.recipes:
     - type: shaped
       items:
         Y: { prefab: mineinabyss:yomotsubi_abdomen_cooked }
-      configuration: |-
-        |YYY|
-        |YYY|
-        |YYY|
+      shape:
+        - "YYY"
+        - "YYY"
+        - "YYY"
     - type: shaped
       items:
         Y: { prefab: mineinabyss:yomotsubi_abdomen_raw }
-      configuration: |-
-        |YYY|
-        |YYY|
-        |YYY|
+      shape:
+        - "YYY"
+        - "YYY"
+        - "YYY"

@@ -14,7 +14,7 @@ set.recipes:
           prefab: mineinabyss:orb_piercer_face_fragments
         M:
           prefab: mineinabyss:makihige_tentacle
-      configuration: |-
-        |MTM|
-        |TOT|
-        |TTT|
+      shape:
+        - "MTM"
+        - "TOT"
+        - "TTT"

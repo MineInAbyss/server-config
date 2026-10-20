@@ -2,9 +2,11 @@ set.item:
   type: minecraft:potion
   potionContents:
     potionType: minecraft:slowness
-set.brewingRecipes:
+set.recipes:
   recipes:
-  - ingredient:
+  - type: brewing
+    ingredient:
       prefab: mineinabyss:splitjaw_gunk
-  - ingredient:
+  - type: brewing
+    ingredient:
       prefab: mineinabyss:abyssal_snail_gunk

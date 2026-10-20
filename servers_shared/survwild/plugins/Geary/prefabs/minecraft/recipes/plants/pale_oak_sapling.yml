@@ -8,7 +8,7 @@ set.recipes:
       items:
         S: { prefab: mineinabyss:plant_matter}
         O: { prefab: mineinabyss:octoliar_tentacle}
-      configuration: |-
-        |OOO|
-        |OSO|
-        |OOO|
+      shape:
+        - "OOO"
+        - "OSO"
+        - "OOO"

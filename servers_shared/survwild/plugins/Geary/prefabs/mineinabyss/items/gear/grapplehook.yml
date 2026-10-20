@@ -23,10 +23,10 @@ set.recipes:
        prefab: mineinabyss:treble_winds
      S:
        prefab: mineinabyss:spikewalker_spike
-   configuration: |-
-     |CCC|
-     |CCP|
-     | CS|
+   shape:
+     - "CCC"
+     - "CCP"
+     - " CS"
 observe:
   itemRightClick:
   - become: parent

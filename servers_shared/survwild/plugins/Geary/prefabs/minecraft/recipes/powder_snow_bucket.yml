@@ -9,7 +9,7 @@ set.recipes:
         S: { prefab: mineinabyss:octoliar_tentacle}
         B: { type: minecraft:bucket}
         A: { type: minecraft:snowball}
-      configuration: |-
-        |ASA|
-        |SBS|
-        |ASA|
+      shape:
+        - "ASA"
+        - "SBS"
+        - "ASA"

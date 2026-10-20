@@ -11,7 +11,7 @@ set.recipes:
         L: 
           prefab: mineinabyss:charcoal_sand_ingot
           
-      configuration: |-
-        |LLL|
-        |LDL|
-        |LLL|
+      shape:
+        - "LLL"
+        - "LDL"
+        - "LLL"

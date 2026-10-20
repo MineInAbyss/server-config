@@ -20,8 +20,8 @@ set.recipes:
   - type: furnace
     input: mineinabyss:hagamizukin_raw
     experience: 1
-    cookingTime: 100
+    cookingTime: 5s
   - type: smoking
     input: mineinabyss:hagamizukin_raw
     experience: 2
-    cookingTime: 50
+    cookingTime: 2.5s

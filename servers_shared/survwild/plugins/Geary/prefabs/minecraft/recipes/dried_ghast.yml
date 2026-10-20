@@ -2,7 +2,4 @@ set.recipes:
   discoverRecipes: true
   removeRecipes:
     - "minecraft:dried_ghast"
-  result:
-    type: minecraft:dried_ghast
-    amount: 1
   recipes: []

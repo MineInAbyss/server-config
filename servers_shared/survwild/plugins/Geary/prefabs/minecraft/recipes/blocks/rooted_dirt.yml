@@ -9,15 +9,15 @@ set.recipes:
       items:
         S: { type: minecraft:dirt }
         D: { type: minecraft:hanging_roots }
-      configuration: |-
-        |SSS|
-        |SDS|
-        |SSS|
+      shape:
+        - "SSS"
+        - "SDS"
+        - "SSS"
     - type: shaped
       items:
         S: { type: minecraft:dirt }
         D: { prefab: mineinabyss:spittleshrub_root }
-      configuration: |-
-        |SSS|
-        |SDS|
-        |SSS|
+      shape:
+        - "SSS"
+        - "SDS"
+        - "SSS"

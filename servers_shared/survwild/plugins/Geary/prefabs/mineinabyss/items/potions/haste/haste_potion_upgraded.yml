@@ -9,7 +9,8 @@ set.item:
       duration: 3m
       amplifier: 1
   dyedColor: 233,177,21
-set.brewingRecipes:
+set.recipes:
   recipes:
-  - ingredient: minecraft:glowstone_dust
+  - type: brewing
+    ingredient: minecraft:glowstone_dust
     input: mineinabyss:haste_potion

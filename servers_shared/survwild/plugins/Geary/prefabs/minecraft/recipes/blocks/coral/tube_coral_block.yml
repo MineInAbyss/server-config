@@ -10,17 +10,17 @@ set.recipes:
           prefab: mineinabyss:ashimite_antlers
         B:
           type: minecraft:blue_dye
-      configuration: |-
-        | A |
-        |ABA|
-        | A |
+      shape:
+        - " A "
+        - "ABA"
+        - " A "
     - type: shaped
       items:
         A:
           prefab: mineinabyss:ashimite_antlers
         C:
           type: minecraft:cyan_dye
-      configuration: |-
-        | A |
-        |ACA|
-        | A |
+      shape:
+        - " A "
+        - "ACA"
+        - " A "

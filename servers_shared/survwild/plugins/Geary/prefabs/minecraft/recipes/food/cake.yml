@@ -13,7 +13,7 @@ set.recipes:
           type: minecraft:wheat
         E:
           tag: minecraft:eggs
-      configuration: |-
-        |AAA|
-        |BEB|
-        |CCC|
+      shape:
+        - "AAA"
+        - "BEB"
+        - "CCC"
