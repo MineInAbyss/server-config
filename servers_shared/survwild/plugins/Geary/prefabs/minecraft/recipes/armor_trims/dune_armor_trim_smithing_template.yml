@@ -2,7 +2,4 @@ set.recipes:
   discoverRecipes: true
   removeRecipes:
     - "minecraft:dune_armor_trim_smithing_template"
-  result:
-    type: minecraft:dune_armor_trim_smithing_template
-    amount: 1
   recipes: []

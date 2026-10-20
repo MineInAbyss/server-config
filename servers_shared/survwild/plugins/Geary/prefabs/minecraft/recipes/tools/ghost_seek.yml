@@ -15,7 +15,7 @@ set.recipes:
         G: 
           type: minecraft:gold_ingot
 
-      configuration: |-
-        |G G|
-        |KTK|
-        | H |
+      shape:
+        - "G G"
+        - "KTK"
+        - " H "

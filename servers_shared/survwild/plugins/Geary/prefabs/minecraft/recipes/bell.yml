@@ -13,7 +13,7 @@ set.recipes:
           type: minecraft:iron_nugget
         O:
           tag: wooden_slabs
-      configuration: |-
-        |OOO|
-        |SGS|
-        |SIS|
+      shape:
+        - "OOO"
+        - "SGS"
+        - "SIS"

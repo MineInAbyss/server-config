@@ -10,7 +10,7 @@ set.recipes:
           prefab: mineinabyss:plant_matter
         D:
           type: minecraft:wheat_seeds        
-      configuration: |-
-        |DDD|
-        |DSD|
-        |DDD|
+      shape:
+        - "DDD"
+        - "DSD"
+        - "DDD"

@@ -9,7 +9,7 @@ set.recipes:
         S: { prefab: mineinabyss:plant_matter}
         E: { prefab: mineinabyss:stingerhead_eye}
         R: { prefab: mineinabyss:spittleshrub_root}
-      configuration: |-
-        | E |
-        |ESE|
-        | R |
+      shape:
+        - " E "
+        - "ESE"
+        - " R "

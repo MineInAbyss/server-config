@@ -9,7 +9,7 @@ set.recipes:
         S: { prefab: mineinabyss:plant_matter}
         T: { prefab: mineinabyss:tachikatana_claw}
         R: { prefab: mineinabyss:spittleshrub_root}
-      configuration: |-
-        | T |
-        | S |
-        | R |
+      shape:
+        - " T "
+        - " S "
+        - " R "

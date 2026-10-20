@@ -15,7 +15,7 @@ set.recipes:
           tag: buttons
         C:
           type: minecraft:cyan_terracotta
-      configuration: |-
-        | BE|
-        | IB|
-        |C  |
+      shape:
+        - " BE"
+        - " IB"
+        - "C  "

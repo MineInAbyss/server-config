@@ -14,10 +14,10 @@ set.recipes:
           type: minecraft:campfire
         F:
           type: minecraft:flint_and_steel
-      configuration: |-
-        |SSS|
-        |SFS|
-        |SCS|
+      shape:
+        - "SSS"
+        - "SFS"
+        - "SCS"
 nexo:furniture:
   hitbox:
     # "<offset> <width>,<height>", was blocky's interactionHitbox

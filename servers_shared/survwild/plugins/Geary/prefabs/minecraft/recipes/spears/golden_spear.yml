@@ -2,7 +2,4 @@ set.recipes:
   discoverRecipes: true
   removeRecipes:
     - "minecraft:golden_spear"
-  result:
-    type: minecraft:golden_spear
-    amount: 1
   recipes: []

@@ -10,7 +10,7 @@ set.recipes:
           prefab: mineinabyss:plant_matter
         D:
           type: minecraft:sand        
-      configuration: |-
-        |D D|
-        |DSD|
-        | D |
+      shape:
+        - "D D"
+        - "DSD"
+        - " D "

@@ -10,7 +10,7 @@ set.recipes:
           type: minecraft:sand
         D:
           type: minecraft:decorated_pot
-      configuration: |-
-        | S |
-        |SDS|
-        | S |
+      shape:
+        - " S "
+        - "SDS"
+        - " S "

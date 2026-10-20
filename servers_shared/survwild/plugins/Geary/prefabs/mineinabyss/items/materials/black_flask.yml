@@ -29,10 +29,10 @@ set.recipes:
         prefab: mineinabyss:yomotsubi_abdomen_cooked
       S:
         prefab: mineinabyss:stingerhead_eye
-    configuration: |-
-      | H |
-      |YSY|
-      |YCY|
+    shape:
+      - " H "
+      - "YSY"
+      - "YCY"
 observe:
   itemConsumed:
   - become: parent

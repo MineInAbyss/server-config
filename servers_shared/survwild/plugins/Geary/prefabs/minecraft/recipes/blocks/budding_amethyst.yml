@@ -9,7 +9,7 @@ set.recipes:
         S: { prefab: mineinabyss:hisoishi_shell}
         C: { prefab: mineinabyss:hisoishi_claw}
         M: { prefab: mineinabyss:madokajack_poop}
-      configuration: |-
-        | C |
-        |CSC|
-        | M |
+      shape:
+        - " C "
+        - "CSC"
+        - " M "

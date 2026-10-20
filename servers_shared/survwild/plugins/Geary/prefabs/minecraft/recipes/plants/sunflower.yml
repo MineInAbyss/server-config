@@ -10,7 +10,7 @@ set.recipes:
           prefab: mineinabyss:plant_matter
         C: 
           prefab: mineinabyss:swarmshocker_charged_powder
-      configuration: |-
-        | C |
-        | S |
-        | S |
+      shape:
+        - " C "
+        - " S "
+        - " S "

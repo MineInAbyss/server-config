@@ -20,7 +20,7 @@ set.recipes:
        type: minecraft:iron_ingot
      P:
        prefab: mineinabyss:ikonia_plate
-   configuration: |-
-     |CCC|
-     |IIP|
-     |CCC|
+   shape:
+     - "CCC"
+     - "IIP"
+     - "CCC"

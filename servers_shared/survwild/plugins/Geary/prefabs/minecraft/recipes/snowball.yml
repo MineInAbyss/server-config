@@ -7,7 +7,7 @@ set.recipes:
     - type: shaped
       items:
         S: { prefab: mineinabyss:octoliar_tentacle}
-      configuration: |-
-        | S |
-        |S S|
-        | S |
+      shape:
+        - " S "
+        - "S S"
+        - " S "

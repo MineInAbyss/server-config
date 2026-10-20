@@ -12,7 +12,7 @@ set.recipes:
         M: { prefab: mineinabyss:makihige_shell}
         D: { type: minecraft:diamond}
         B: { type: minecraft:book}
-      configuration: |-
-        | B |
-        |DMD|
-        |MMM|
+      shape:
+        - " B "
+        - "DMD"
+        - "MMM"

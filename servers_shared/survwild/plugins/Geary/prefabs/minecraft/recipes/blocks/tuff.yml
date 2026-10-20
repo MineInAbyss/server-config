@@ -15,7 +15,7 @@ set.recipes:
           type: minecraft:raw_iron
         B:
           type: minecraft:bone_meal
-      configuration: |-
-        |BS |
-        |DID|
-        | SB|
+      shape:
+        - "BS "
+        - "DID"
+        - " SB"

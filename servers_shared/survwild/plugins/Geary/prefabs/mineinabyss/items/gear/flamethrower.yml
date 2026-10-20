@@ -28,10 +28,10 @@ set.recipes:
        prefab: mineinabyss:flamethrower_barrel
      I:
        prefab: mineinabyss:ikonia_plate
-   configuration: |-
-     |CIF|
-     |BHC|
-     |CCC|
+   shape:
+     - "CIF"
+     - "BHC"
+     - "CCC"
 observe:
   itemRightClick:
   - become: parent

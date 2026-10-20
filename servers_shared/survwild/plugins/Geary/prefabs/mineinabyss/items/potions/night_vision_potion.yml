@@ -2,9 +2,11 @@ set.item:
   type: minecraft:potion
   potionContents:
     potionType: minecraft:night_vision
-set.brewingRecipes:
+set.recipes:
   recipes:
-  - ingredient:
+  - type: brewing
+    ingredient:
       prefab: mineinabyss:hashofu_eye
-  - ingredient:
+  - type: brewing
+    ingredient:
       prefab: mineinabyss:kakatsumuri_glowing_tip

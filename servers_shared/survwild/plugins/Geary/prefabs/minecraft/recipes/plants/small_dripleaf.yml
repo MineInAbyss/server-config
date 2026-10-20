@@ -10,7 +10,7 @@ set.recipes:
           prefab: mineinabyss:plant_matter
         R:
           prefab: mineinabyss:spittleshrub_root
-      configuration: |-
-        |   |
-        |SSS|
-        |R  |
+      shape:
+        - "   "
+        - "SSS"
+        - "R  "

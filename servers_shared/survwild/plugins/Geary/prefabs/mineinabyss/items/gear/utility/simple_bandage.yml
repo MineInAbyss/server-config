@@ -42,10 +42,10 @@ set.recipes:
         P: 
           type: minecraft:paper
           
-      configuration: |-
-        | P |
-        |SAM|
-        | P |
+      shape:
+        - " P "
+        - "SAM"
+        - " P "
     - type: shaped
       items:
         M:
@@ -57,10 +57,10 @@ set.recipes:
         P: 
           type: minecraft:paper
           
-      configuration: |-
-        | P |
-        |SAM|
-        | P |
+      shape:
+        - " P "
+        - "SAM"
+        - " P "
     - type: shaped
       items:
         M:
@@ -72,10 +72,10 @@ set.recipes:
         P: 
           type: minecraft:paper
           
-      configuration: |-
-        | P |
-        |SAM|
-        | P |
+      shape:
+        - " P "
+        - "SAM"
+        - " P "
     - type: shaped
       items:
         M:
@@ -87,10 +87,10 @@ set.recipes:
         P: 
           type: minecraft:paper
           
-      configuration: |-
-        | P |
-        |SAM|
-        | P |
+      shape:
+        - " P "
+        - "SAM"
+        - " P "
 observe:
   itemRightClick:
   - become: parent

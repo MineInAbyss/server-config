@@ -15,7 +15,7 @@ set.recipes:
     items:
       M: mineinabyss:charcoal_sand_ingot
       S: minecraft:stick
-    configuration: |-
-      |M|
-      |S|
-      |S|
+    shape:
+      - "M"
+      - "S"
+      - "S"

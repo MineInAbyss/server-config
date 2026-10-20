@@ -10,27 +10,27 @@ set.recipes:
           prefab: mineinabyss:silkfang_silk
         P:
           type: minecraft:paper
-      configuration: |-
-        |SP |
-        |SP |
-        |SP |
+      shape:
+        - "SP "
+        - "SP "
+        - "SP "
     - type: shaped
       items:
         S:
           prefab: mineinabyss:kuongatari_silk
         P:
           type: minecraft:paper
-      configuration: |-
-        |SP |
-        |SP |
-        |SP |
+      shape:
+        - "SP "
+        - "SP "
+        - "SP "
     - type: shaped
       items:
         S:
           prefab: mineinabyss:stinger_wing
         P:
           type: minecraft:paper
-      configuration: |-
-        |SP |
-        |SP |
-        |SP |
+      shape:
+        - "SP "
+        - "SP "
+        - "SP "

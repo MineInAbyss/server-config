@@ -18,7 +18,7 @@ set.recipes:
           prefab: mineinabyss:tachikatana_claw
         R:
           prefab: mineinabyss:blank_template_rune
-      configuration: |-
-        | S |
-        |HRC|
-        | Z |
+      shape:
+        - " S "
+        - "HRC"
+        - " Z "

@@ -10,7 +10,7 @@ set.recipes:
           type: minecraft:gravel
         D:
           type: minecraft:decorated_pot
-      configuration: |-
-        | G |
-        |GDG|
-        | G |
+      shape:
+        - " G "
+        - "GDG"
+        - " G "

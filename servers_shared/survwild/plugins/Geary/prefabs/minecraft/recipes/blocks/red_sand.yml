@@ -9,7 +9,7 @@ set.recipes:
       items:
         S: { type: minecraft:sand }
         D: { type: minecraft:red_dye }
-      configuration: |-
-        |SSS|
-        |SDS|
-        |SSS|
+      shape:
+        - "SSS"
+        - "SDS"
+        - "SSS"

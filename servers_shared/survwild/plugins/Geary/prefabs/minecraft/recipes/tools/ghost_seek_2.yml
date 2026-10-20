@@ -17,7 +17,7 @@ set.recipes:
         L: 
           prefab: mineinabyss:tier_1_lens
           
-      configuration: |-
-        |DLD|
-        |JGJ|
-        |PDP|
+      shape:
+        - "DLD"
+        - "JGJ"
+        - "PDP"

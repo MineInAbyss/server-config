@@ -8,7 +8,7 @@ set.recipes:
       items:
         S: { prefab: mineinabyss:plant_matter}
         R: { prefab: mineinabyss:spittleshrub_root}
-      configuration: |-
-        |S S|
-        |SRS|
-        |S S|
+      shape:
+        - "S S"
+        - "SRS"
+        - "S S"

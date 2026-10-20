@@ -2,7 +2,4 @@ set.recipes:
   discoverRecipes: true
   removeRecipes:
     - "minecraft:iron_spear"
-  result:
-    type: minecraft:iron_spear
-    amount: 1
   recipes: []

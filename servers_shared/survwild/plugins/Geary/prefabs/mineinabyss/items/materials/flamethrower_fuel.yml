@@ -25,10 +25,10 @@ set.recipes:
         prefab: mineinabyss:hammerbeak_feather
       I:
         type: minecraft:iron_ingot
-    configuration: |-
-      |IHI|
-      |FFF|
-      |III|
+    shape:
+      - "IHI"
+      - "FFF"
+      - "III"
   - type: shaped
     items:
       H:
@@ -37,10 +37,10 @@ set.recipes:
         prefab: mineinabyss:onitsuchi_feather
       I:
         type: minecraft:iron_ingot
-    configuration: |-
-      |IHI|
-      |FFF|
-      |III|
+    shape:
+      - "IHI"
+      - "FFF"
+      - "III"
   - type: shaped
     items:
       H:
@@ -49,10 +49,10 @@ set.recipes:
         prefab: mineinabyss:cyatoria_feather
       I:
         type: minecraft:iron_ingot
-    configuration: |-
-      |IHI|
-      |FFF|
-      |III|
+    shape:
+      - "IHI"
+      - "FFF"
+      - "III"
   - type: shaped
     items:
       H:
@@ -61,7 +61,7 @@ set.recipes:
         prefab: mineinabyss:corpse_weeper_feather
       I:
          type: minecraft:iron_ingot
-    configuration: |-
-      |IHI|
-      |FFF|
-      |III|
+    shape:
+      - "IHI"
+      - "FFF"
+      - "III"
