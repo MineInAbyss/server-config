@@ -29,7 +29,7 @@ goldenSkeleton:
     - golden_carrot 8-16 1
     - raw_gold_block 1-1 1
     - GoldenSkelPlayerHeads
-    #- geary mineinabyss:sunsphere_l2 1-1 0.15 nolooting
+    #- geary mineinabyss:sunsphere_l2 1-1 0.15
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - randomskill{skills=

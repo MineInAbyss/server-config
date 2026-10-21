@@ -23,7 +23,7 @@ ikonia:
     Scale: 1
   Drops:
     - exp 20-25
-    - geary mineinabyss:ikonia_plate 1-1 0.5 nolooting
+    - geary mineinabyss:ikonia_plate 1-1 0.5
   Skills:
     ####### Misc
     - skill{s=displayHealth} ~onDamaged

@@ -35,7 +35,7 @@ virinsipede:
   Drops:
     - exp 15-25
     - geary mineinabyss:virinsipede_segments 4-10 0.8
-    - geary mineinabyss:virinsipede_antlers 1-2 0.3 nolooting
+    - geary mineinabyss:virinsipede_antlers 1-2 0.3
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
