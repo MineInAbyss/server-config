@@ -32,7 +32,7 @@ charredSkeleton:
     - snort_pottery_sherd 2-3 0.05
     - prize_pottery_sherd 2-3 0.05
     - CharredSkelPlayerHeads
-    #- geary mineinabyss:sunsphere_l2 1-1 0.15 nolooting
+    #- geary mineinabyss:sunsphere_l2 1-1 0.15
   Skills:
     - skill{s=displayHealth} ~onDamaged
     - randomskill{skills=

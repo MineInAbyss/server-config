@@ -21,19 +21,19 @@ GoldenSkelPlayerHeads:
 LamentsThreadDrop:
   Conditions:
   Drops:
-  - geary mineinabyss:laments_thread 1-1 1 nolooting  
+  - geary mineinabyss:laments_thread 1-1 1  
 
 SinSpiralDrop:
   Conditions:
   Drops:
-  - geary mineinabyss:sin_spiral 1-1 1 nolooting  
+  - geary mineinabyss:sin_spiral 1-1 1  
 
 MockwaterFluidDrop:
   Conditions:
   Drops:
-  - geary mineinabyss:mockwater_fluid 1-1 1 nolooting   
+  - geary mineinabyss:mockwater_fluid 1-1 1   
 
 GambitIncenseDrop:
   Conditions:
   Drops:
-  - geary mineinabyss:gambit_incense 1-1 1 nolooting    
+  - geary mineinabyss:gambit_incense 1-1 1    

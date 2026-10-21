@@ -31,8 +31,8 @@ sporemanta:
     DamageTint: true
   Drops:
     - exp 5-15
-    - geary mineinabyss:sporemanta_wing 1-2 0.5 nolooting
-    - geary mineinabyss:sporemanta_powder 1-2 0.7 nolooting
+    - geary mineinabyss:sporemanta_wing 1-2 0.5
+    - geary mineinabyss:sporemanta_powder 1-2 0.7
 
 
   Skills:

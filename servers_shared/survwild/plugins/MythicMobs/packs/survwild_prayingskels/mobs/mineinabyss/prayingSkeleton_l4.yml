@@ -7,7 +7,7 @@ prayingSkeleton_l4:
     - L4PSOreDrops
     - L4MiscPSDrops
     - L4PSSherdDrops
-    - geary mineinabyss:sunsphere_l4 1-1 0.15 nolooting
+    - geary mineinabyss:sunsphere_l4 1-1 0.15
   Skills:
     - skill{s=relicDrop;item=BlazeReapDrop;grade=1} ~onDeath 0.001
     - skill{s=relicDrop;delay=5;item=ReverberatingEdgeDrop;grade=1} ~onDeath 0.002

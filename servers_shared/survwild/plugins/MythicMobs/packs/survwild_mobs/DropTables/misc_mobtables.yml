@@ -3,21 +3,21 @@ TosubachiDrop:
   Conditions:
     - hasaura{n=flamethrowerroast} true
   Drops:
-  - geary mineinabyss:tosubachi 1-1 1 nolooting
+  - geary mineinabyss:tosubachi 1-1 1
 
 RareSaplingDrops:
   MaxItems: 1
   Drops:
-  - oak_sapling 1-1 0.035 nolooting
-  - spruce_sapling 1-1 0.035 nolooting
-  - jungle_sapling 1-1 0.035 nolooting
-  - acacia_sapling 1-1 0.035 nolooting
-  - dark_oak_sapling 1-1 0.035 nolooting
+  - oak_sapling 1-1 0.035
+  - spruce_sapling 1-1 0.035
+  - jungle_sapling 1-1 0.035
+  - acacia_sapling 1-1 0.035
+  - dark_oak_sapling 1-1 0.035
 
 MilkBucketDrop:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:milk_bucket 1-1 1 nolooting
+  - geary mineinabyss:milk_bucket 1-1 1
 
 StingerheadPoison:
   Drops:
@@ -26,9 +26,9 @@ StingerheadPoison:
 YomotsubiWingDrop:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:yomotsubi_wing 1-1 1 nolooting
+  - geary mineinabyss:yomotsubi_wing 1-1 1
 
 ShiratsubiWingDrop:
   MaxItems: 1
   Drops:
-  - geary mineinabyss:shiratsubi_wing 1-1 1 nolooting
+  - geary mineinabyss:shiratsubi_wing 1-1 1

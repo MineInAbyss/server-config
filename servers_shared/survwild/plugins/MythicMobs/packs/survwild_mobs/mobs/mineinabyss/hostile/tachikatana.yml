@@ -40,8 +40,8 @@ tachikatana:
   Drops:
     - exp 100-250
     - geary mineinabyss:tachikatana_leg 1-2 0.8
-    - geary mineinabyss:tachikatana_claw 1-1 0.8 nolooting
-    - geary mineinabyss:tachikatana_scale 1-4 0.8 nolooting
+    - geary mineinabyss:tachikatana_claw 1-1 0.8
+    - geary mineinabyss:tachikatana_scale 1-4 0.8
 
   Skills:
     - skill{s=displayHealth} ~onDamaged
