@@ -254,6 +254,7 @@ survival:
     chatty:
       enableHover: true
       serverPrefix: ":survival:"
+      patreonEmote: "%mineinabyss_patreon_emote%"
     geary:
       spawning: true
   include:
@@ -277,6 +278,7 @@ dev:
   variables:
     chatty:
       serverPrefix: ":test:"
+      patreonEmote: "%mineinabyss_patreon_emote%"
       localChatRadius: 0
     geary:
       spawning: true

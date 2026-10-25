@@ -68,13 +68,9 @@ orthBanking:
   balanceHudOffhandId: "balance_offhand"
 patreon:
   enabled: true
-  patreonRoles:
-    "patreon":
-      roleId: "672296677864112128"
-      patreonTier: 1
-    "patreonplus":
-      roleId: "894216646623895573"
-      patreonTier: 2
+  groupTiers:
+    patreon: 1
+    patreonplus: 2
 playerProfile:
   enabled: true
   validBackgroundIds:

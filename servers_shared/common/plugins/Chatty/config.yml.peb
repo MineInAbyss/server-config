@@ -88,7 +88,7 @@ channels:
       position: SUFFIX
       format: "{{ deleteMessageText }}"
       notifyStaff: true
-    format: "{{ chatty.serverPrefix }}%luckperms_prefix%:space_2:{{ hoverableNickname }}<chatty_nickname>: "
+    format: "{{ chatty.serverPrefix }}%luckperms_prefix%{{ chatty.patreonEmote | default('') }}:space_2:{{ hoverableNickname }}<chatty_nickname>: "
     messageColor: "#fafafa"
     channelAliases: [ "g" ]
 
