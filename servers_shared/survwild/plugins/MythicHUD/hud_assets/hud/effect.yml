@@ -6,7 +6,7 @@ effect-bleeding:
   layers:
     fill:
       texture:
-        path: bleeding_bar.png
+        path: effects/bleeding_bar.png
       color: "#FFFFFF"
       offset:
         x: 17
@@ -17,7 +17,7 @@ effect-bleeding:
         orientation: horizontal
     icon:
       texture:
-        path: bleeding_icon.png
+        path: effects/bleeding_icon.png
 effect-poison:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
@@ -26,7 +26,7 @@ effect-poison:
   layers:
     fill:
       texture:
-        path: poison_bar.png
+        path: effects/poison_bar.png
       color: "#FFFFFF"
       offset:
         x: 17
@@ -37,35 +37,28 @@ effect-poison:
         orientation: horizontal
     icon:
       texture:
-        path: poison_icon.png
-#effect-freezing:
-#  conditions:
-#    - gamemode{gm=survival,adventure;v=false} true hide
-#    #- effect{e=freezing;v=false} true hide
-#  layers:
-#    fill:
-#      texture:
-#        path: freezing_bar.png
-#      color: "#FFFFFF"
-#      offset:
-#        x: 8
-#        y: -2
-#      function:
-#        listener: health
-#        increment: 20
-#        orientation: horizontal
-#    icon:
-#      texture:
-#        path: freezing_icon.png
-#      offset:
-#        x: -10
-#        y: 0
-#    outline:
-#      texture:
-#        path: bar_outline.png
-#      offset:
-#        x: 8
-#        y: -2
+        path: effects/poison_icon.png
+effect-freezing:
+  conditions:
+    - gamemode{gm=survival,adventure;v=false} true hide
+    - frozen{} true hide
+    - effect{e=poison,wither} false hide
+    - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
+  layers:
+    fill:
+      texture:
+        path: effects/freezing_bar.png
+      color: "#FFFFFF"
+      offset:
+        x: 17
+        y: 1
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+    icon:
+      texture:
+        path: effects/freezing_icon.png
 effect-absorption:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
@@ -74,7 +67,7 @@ effect-absorption:
   layers:
     fill:
       texture:
-        path: absorption_bar.png
+        path: effects/absorption_bar.png
       color: "#FFFFFF"
       offset:
         x: 17
@@ -85,7 +78,7 @@ effect-absorption:
         orientation: horizontal
     icon:
       texture:
-        path: absorption_icon.png
+        path: effects/absorption_icon.png
 effect-hunger:
   conditions:
     - gamemode{gm=survival,adventure;v=false} true hide
@@ -94,7 +87,7 @@ effect-hunger:
   layers:
     fill:
       texture:
-        path: hunger_bar.png
+        path: effects/hunger_bar.png
       color: "#FFFFFF"
       offset:
         x: 17
@@ -105,4 +98,4 @@ effect-hunger:
         orientation: horizontal
     icon:
       texture:
-        path: hunger_icon.png
+        path: effects/hunger_icon.png

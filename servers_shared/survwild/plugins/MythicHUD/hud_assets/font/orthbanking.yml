@@ -5,13 +5,13 @@ orthbanking:
   # Define characters and textures.
   providers:
     orthcoin:
-      texture: orthcoin.png
+      texture: misc/orthcoin.png
       height: 9
       ascent: 2
       chars:
         - ""
     mittytoken:
-      texture: mittytoken.png
+      texture: misc/mittytoken.png
       height: 11
       ascent: 3
       chars:
@@ -193,12 +193,12 @@ orthbanking-outline:
   # Define characters and textures.
   providers:
     orthcoin:
-      texture: orthcoin.png
+      texture: misc/orthcoin.png
       height: 10
       chars:
         - ""
     mittytoken:
-      texture: mittytoken.png
+      texture: misc/mittytoken.png
       height: 12
       chars:
         - ""
@@ -379,12 +379,12 @@ orthbanking-drop-shadow:
   # Define characters and textures.
   providers:
     orthcoin:
-      texture: orthcoin.png
+      texture: misc/orthcoin.png
       height: 10
       chars:
         - ""
     mittytoken:
-      texture: mittytoken.png
+      texture: misc/mittytoken.png
       height: 12
       chars:
         - ""

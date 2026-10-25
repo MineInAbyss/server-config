@@ -4,6 +4,7 @@ vanilla-health:
     - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
     - gamemode{gm=survival,adventure} true hide
     - effect{e=poison,wither} false hide
+    - frozen{} false hide
     #- placeholder{ph=%player_absorption%;v=0;o=>} false hide
   layers:
     fill:
