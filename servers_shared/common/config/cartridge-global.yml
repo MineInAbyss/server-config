@@ -1,0 +1,12 @@
+# Cartridge server settings, reload with /cartridge reload
+
+# Closes doors opened by hand after a delay
+# The autoCloseDoors region flag overrides enabled, allow turns it on and deny turns it off inside a region
+door-auto-close:
+  enabled: true
+  close-after-ticks: 40
+  ignore-creative: false
+  ignore-sneaking: false
+double-doors:
+  # Opening or closing one door of a double door by hand does the same to the other
+  synchronize: true
