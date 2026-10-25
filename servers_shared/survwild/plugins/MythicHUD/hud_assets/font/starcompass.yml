@@ -5,87 +5,87 @@ starcompass:
   # Define characters and textures.
   providers:
     arrow_s:
-      texture: arrow_s.png
+      texture: arrow/arrow_s.png
       height: 20
       chars:
         - ""
     arrow_sse:
-      texture: arrow_sse.png
+      texture: arrow/arrow_sse.png
       height: 20
       chars:
         - ""
     arrow_se:
-      texture: arrow_se.png
+      texture: arrow/arrow_se.png
       height: 20
       chars:
         - ""
     arrow_ese:
-      texture: arrow_ese.png
+      texture: arrow/arrow_ese.png
       height: 20
       chars:
         - ""
     arrow_e:
-      texture: arrow_e.png
+      texture: arrow/arrow_e.png
       height: 20
       chars:
         - ""
     arrow_ene:
-      texture: arrow_ene.png
+      texture: arrow/arrow_ene.png
       height: 20
       chars:
         - ""
     arrow_ne:
-      texture: arrow_ne.png
+      texture: arrow/arrow_ne.png
       height: 20
       chars:
         - ""
     arrow_nne:
-      texture: arrow_nne.png
+      texture: arrow/arrow_nne.png
       height: 20
       chars:
         - ""
     arrow_n:
-      texture: arrow_n.png
+      texture: arrow/arrow_n.png
       height: 20
       chars:
         - ""
     arrow_nnw:
-      texture: arrow_nnw.png
+      texture: arrow/arrow_nnw.png
       height: 20
       chars:
         - ""
     arrow_nw:
-      texture: arrow_nw.png
+      texture: arrow/arrow_nw.png
       height: 20
       chars:
         - ""
     arrow_wnw:
-      texture: arrow_wnw.png
+      texture: arrow/arrow_wnw.png
       height: 20
       chars:
         - ""
     arrow_w:
-      texture: arrow_w.png
+      texture: arrow/arrow_w.png
       height: 20
       chars:
         - ""
     arrow_wsw:
-      texture: arrow_wsw.png
+      texture: arrow/arrow_wsw.png
       height: 20
       chars:
         - ""
     arrow_sw:
-      texture: arrow_sw.png
+      texture: arrow/arrow_sw.png
       height: 20
       chars:
         - ""
     arrow_ssw:
-      texture: arrow_ssw.png
+      texture: arrow/arrow_ssw.png
       height: 20
       chars:
         - ""
     arrow_null:
-      texture: arrow_null.png
+      texture: arrow/arrow_null.png
       height: 20
       chars:
         - ""

@@ -5,27 +5,27 @@ mineinabyss:
   # Define characters and textures.
   providers:
     bell:
-      texture: bell.png
+      texture: whistles/bell.png
       height: 9
       chars:
         - ""
     redw:
-      texture: redw.png
+      texture: whistles/redw.png
       height: 9
       chars:
         - ""
     bluew:
-      texture: bluew.png
+      texture: whistles/bluew.png
       height: 9
       chars:
         - ""
     moonw:
-      texture: moonw.png
+      texture: whistles/moonw.png
       height: 9
       chars:
         - ""
     blackw:
-      texture: blackw.png
+      texture: whistles/blackw.png
       height: 9
       chars:
         - ""
@@ -206,27 +206,27 @@ mineinabyss-outline:
   # Define characters and textures.
   providers:
     bell:
-      texture: bell.png
+      texture: whistles/bell.png
       height: 9
       chars:
         - ""
     redw:
-      texture: redw.png
+      texture: whistles/redw.png
       height: 9
       chars:
         - ""
     bluew:
-      texture: bluew.png
+      texture: whistles/bluew.png
       height: 9
       chars:
         - ""
     moonw:
-      texture: moonw.png
+      texture: whistles/moonw.png
       height: 9
       chars:
         - ""
     blackw:
-      texture: blackw.png
+      texture: whistles/blackw.png
       height: 9
       chars:
         - ""
@@ -407,27 +407,27 @@ mineinabyss-drop-shadow:
   # Define characters and textures.
   providers:
     bell:
-      texture: bell.png
+      texture: whistles/bell.png
       height: 9
       chars:
         - ""
     redw:
-      texture: redw.png
+      texture: whistles/redw.png
       height: 9
       chars:
         - ""
     bluew:
-      texture: bluew.png
+      texture: whistles/bluew.png
       height: 9
       chars:
         - ""
     moonw:
-      texture: moonw.png
+      texture: whistles/moonw.png
       height: 9
       chars:
         - ""
     blackw:
-      texture: blackw.png
+      texture: whistles/blackw.png
       height: 9
       chars:
         - ""

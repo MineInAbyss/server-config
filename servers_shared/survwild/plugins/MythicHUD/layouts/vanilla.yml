@@ -27,15 +27,15 @@ vanilla:
       offset:
         x: -50.0
         y: 41.0
-    #    freezing:
-    #      align: center
-    #      asset: 'effect-freezing'
-    #      position:
-    #        x: 50.0
-    #        y: 0.0
-    #      offset:
-    #        x: -50.0
-    #        y: 41.0
+    freezing:
+      align: center
+      asset: 'effect-freezing'
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: -50.0
+        y: 41.0
     absorption:
       align: center
       asset: 'effect-absorption'
@@ -63,6 +63,15 @@ vanilla:
       offset:
         x: 34
         y: 41
+    stamina:
+      asset: 'stamina'
+      align: center
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 2.0
+        y: 61
     exp:
       asset: 'vanilla-exp'
       align: center

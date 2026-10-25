@@ -64,7 +64,7 @@ mineinabyss-orth:
         y: 0
     icon:
       texture:
-        path: bell.png
+        path: whistles/bell.png
       offset:
         x: 0
         y: 6
@@ -83,7 +83,7 @@ mineinabyss-edge_of_the_abyss:
         y: 0
     icon:
       texture:
-        path: redw.png
+        path: whistles/redw.png
       offset:
         x: 0
         y: 6
@@ -99,7 +99,7 @@ mineinabyss-forest_of_temptation:
       font: "default-outline"
     icon:
       texture:
-        path: bluew.png
+        path: whistles/bluew.png
       offset:
         x: 0
         y: 6
@@ -115,7 +115,7 @@ mineinabyss-great_fault:
       font: "default-outline"
     icon:
       texture:
-        path: moonw.png
+        path: whistles/moonw.png
       offset:
         x: 0
         y: 6
@@ -131,7 +131,7 @@ mineinabyss-goblets_of_giants:
       font: "default-outline"
     icon:
       texture:
-        path: moonw.png
+        path: whistles/moonw.png
       offset:
         x: 0
         y: 6
@@ -150,7 +150,7 @@ mineinabyss-sea_of_corpses:
         y: 0
     icon:
       texture:
-        path: blackw.png
+        path: whistles/blackw.png
       offset:
         x: 0
         y: 6
@@ -161,7 +161,7 @@ top_background:
   layers:
     icon:
       texture:
-        path: top_background.png
+        path: background/top_background.png
       color: "#FFFFFF"
 
 
@@ -175,7 +175,7 @@ mineinabyss-depth:
       font: "default-drop-shadow"
     icon:
       texture:
-        path: depth_meter.png
+        path: misc/depth_meter.png
       offset:
         x: -20
         y: 6
@@ -204,7 +204,7 @@ mineinabyss-starcompass:
   layers:
     #compass:
     #  texture:
-    #    path: arrow_null.png
+    #    path: arrow/arrow_null.png
     #    color: white
     #  scale: 1.5
     #  offset:
