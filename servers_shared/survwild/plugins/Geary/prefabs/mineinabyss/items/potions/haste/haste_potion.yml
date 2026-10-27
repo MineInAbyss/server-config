@@ -17,3 +17,6 @@ set.recipes:
         potionType: minecraft:water
     ingredient:
       prefab: mineinabyss:haste_paste
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

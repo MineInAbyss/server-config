@@ -21,3 +21,6 @@ observe:
       duration: 10s
   - playSound:
       sound: minecraft:item.goat_horn.sound.2
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

@@ -59,3 +59,6 @@ passive:
     - subtle_pull_charge
 resourcepack:
   model: mineinabyss:relic/subtle_pull
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

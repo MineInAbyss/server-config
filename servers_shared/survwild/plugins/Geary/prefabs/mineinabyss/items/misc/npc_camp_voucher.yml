@@ -4,3 +4,6 @@ set.item:
   lore:
     - "<gray>Trade it at an NPC camp"
     - "<gray>for a spot in their party"
+creative_tab:
+  category: Other
+  vanilla_tab: minecraft:tools_and_utilities

@@ -52,3 +52,6 @@ passive:
     - yukonokage_soul_display
 resourcepack:
   model: mineinabyss:relic/yukonokage
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

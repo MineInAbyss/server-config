@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:mobdrop/generic/fat
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

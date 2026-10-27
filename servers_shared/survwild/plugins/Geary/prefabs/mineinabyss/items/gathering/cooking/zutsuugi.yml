@@ -23,3 +23,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gathering/cooking/zutsuugi
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

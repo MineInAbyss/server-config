@@ -54,3 +54,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/utility/depth_meter
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

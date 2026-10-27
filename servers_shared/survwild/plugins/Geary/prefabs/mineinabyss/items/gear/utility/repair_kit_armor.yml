@@ -15,3 +15,6 @@ repairKit:
       sound: minecraft:block.anvil.use
       volume: 0.5
       pitch: 1.4
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

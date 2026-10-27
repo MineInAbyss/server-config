@@ -24,3 +24,6 @@ set.recipes:
     input: mineinabyss:corpse_weeper_meat_raw
     experience: 2
     cookingTime: 2.5s
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

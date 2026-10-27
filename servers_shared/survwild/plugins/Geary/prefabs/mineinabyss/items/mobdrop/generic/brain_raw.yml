@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:mobdrop/generic/brain_raw
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

@@ -47,3 +47,6 @@ resourcepack:
   textures:
     layers:
       - mineinabyss:relic/black_flask
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

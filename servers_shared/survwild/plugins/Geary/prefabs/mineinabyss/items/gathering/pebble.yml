@@ -32,3 +32,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gathering/pebble
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

@@ -31,3 +31,6 @@ passive:
   - become: parent
   - mythicSkills:
     - laser_charge
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

@@ -58,3 +58,6 @@ passive:
     - shiver_mist_charger
 resourcepack:
   model: mineinabyss:relic/shiver_mist
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

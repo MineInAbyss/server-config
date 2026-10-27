@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/utility/piton_fusing
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

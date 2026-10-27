@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:misc/orth_coin
+creative_tab:
+  category: Other
+  vanilla_tab: minecraft:tools_and_utilities

@@ -17,3 +17,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/utility/headlamp
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

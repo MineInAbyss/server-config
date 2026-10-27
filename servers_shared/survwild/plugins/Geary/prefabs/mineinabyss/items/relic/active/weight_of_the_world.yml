@@ -24,3 +24,6 @@ resourcepack:
     layers:
       - mineinabyss:relic/weight_of_the_world
   parentModel: item/handheld
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

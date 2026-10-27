@@ -25,3 +25,6 @@ observe:
     - necrometallic_blade_hit
 resourcepack:
   model: mineinabyss:relic/necrometallic_blade
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

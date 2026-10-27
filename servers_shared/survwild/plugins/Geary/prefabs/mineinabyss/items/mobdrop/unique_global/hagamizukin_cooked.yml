@@ -25,3 +25,6 @@ set.recipes:
     input: mineinabyss:hagamizukin_raw
     experience: 2
     cookingTime: 2.5s
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

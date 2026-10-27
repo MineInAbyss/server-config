@@ -25,3 +25,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:materials/stinger_poison
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

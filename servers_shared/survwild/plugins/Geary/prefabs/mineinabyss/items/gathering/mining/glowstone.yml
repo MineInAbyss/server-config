@@ -7,3 +7,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gathering/mining/glowstone
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients
