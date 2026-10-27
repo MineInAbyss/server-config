@@ -21,3 +21,6 @@ nexo:custom_block:
     step_sound: block.snow.step
     hit_sound: block.snow.hit
     fall_sound: block.snow.fall
+creative_tab:
+  category: Ice & Snow
+  vanilla_tab: minecraft:building_blocks

@@ -22,3 +22,6 @@ nexo:custom_block:
     step_sound: minecraft:block.wood.step
     hit_sound: minecraft:block.wood.hit
     fall_sound: minecraft:block.wood.fall
+creative_tab:
+  category: Wood
+  vanilla_tab: minecraft:building_blocks
