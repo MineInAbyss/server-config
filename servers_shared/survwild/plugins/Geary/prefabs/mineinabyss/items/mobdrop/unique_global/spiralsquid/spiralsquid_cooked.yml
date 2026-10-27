@@ -1,0 +1,26 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#6CE5F5>Cooked Spiralsquid
+  itemModel: mineinabyss:mobdrop/mob_standard/spiralsquid
+  lore:
+  - '<emojy:layer_1><emojy:layer_4>'
+  - <#35ADBD><i>Seems like a great source of food!
+  food:
+    saturation: 6
+    nutrition: 5
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:spiralsquid_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:spiralsquid_raw
+    experience: 2
+    cookingTime: 2.5s

@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Raw Brain
+  itemModel: mineinabyss:mobdrop/generic/brain_raw
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/brain_raw
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/brain_raw

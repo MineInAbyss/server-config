@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Parasite
+  itemModel: mineinabyss:mobdrop/generic/parasite
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/parasite
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/parasite

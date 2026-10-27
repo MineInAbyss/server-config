@@ -1,7 +1,7 @@
 set.item:
   itemName: <#88D481>Blossom
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/vverdaueffax
+  itemModel: mineinabyss:relic/vverdaueffax
   lore:
   - '<emojy:layer_1><emojy:layer_2> Grade II Relic'
   - <gold>An organic object that symbiotically attaches like a parasite.
@@ -23,4 +23,4 @@ passive:
   - mythicSkills:
     - blooming
 resourcepack:
-  model: mineinabyss:hunting_relics/verdau_effax
+  model: mineinabyss:relic/verdau_effax

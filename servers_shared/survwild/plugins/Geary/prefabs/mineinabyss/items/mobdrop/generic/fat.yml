@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fat
+  itemModel: mineinabyss:mobdrop/generic/fat
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/fat
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/fat

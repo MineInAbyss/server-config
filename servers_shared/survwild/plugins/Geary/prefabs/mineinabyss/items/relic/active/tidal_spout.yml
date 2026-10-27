@@ -1,0 +1,29 @@
+set.item:
+  itemName: <#f7e7ce>Tidal Spout
+  type: minecraft:clock
+  itemModel: mineinabyss:relic/tidal_spout
+  lore:
+  - '<emojy:layer_4> Grade III Relic'
+  - <#d7c9b3>This Relic has found use outside of the Abyss
+  - <#d7c9b3>among sea captains wishing to speed up their boats.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Generates a large wall of water
+  - <font:small_bottom><gray><shadow:#00000000>on right click which can push back entities.
+observe:
+  itemRightClick:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - EnchantingLevel{l=>1} true
+    onFail:
+    - sendActionBar:
+        text: <red>Out of Experience
+  - itemCooldown:
+      group: mineinabyss:tidalwave
+      duration: 20s
+  - mythicSkills:
+    - tidal_spout
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:relic/tidal_spout
+  parentModel: item/handheld  

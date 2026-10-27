@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:string
+  itemName: Silk
+  itemModel: mineinabyss:mobdrop/generic/silk
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/silk
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/silk

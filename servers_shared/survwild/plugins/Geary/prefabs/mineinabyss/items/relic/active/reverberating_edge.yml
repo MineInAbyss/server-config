@@ -1,0 +1,34 @@
+set.item:
+  type: minecraft:netherite_sword
+  itemModel: mineinabyss:relic/reverberating_edge
+  itemName: <#232423><b>Reverberating Edge
+  lore:
+  - '<emojy:layer_4> Grade I Relic'
+  - <#393C39>The innate abilities carried by this dagger might make its use
+  - <#393C39>look effortless, but it’s actually taxing on the wielder.
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Each hit creates charges and deals additional
+  - <font:small_bottom><gray><shadow:#00000000>damage at 7 charges. Takes 10 charges to stun surroundings on sneak / right click.
+  unbreakable: {}
+  enchantmentGlintOverride: false
+observe:
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - reverberating_edge_hit
+  itemRightClick:
+  - become: parent
+  - ensure:
+      player:
+        sneaking: true
+      mythicConditions:
+      - hasaurastacks{n=reverberatingedgestack;s=10} true
+    onFail:
+    - sendActionBar:
+        text: <red>Sword is not charged / Not sneaking
+  - itemCooldown:
+      group: mineinabyss:reverberating_edge
+      duration: 50s
+  - mythicSkills:
+    - reverberating_edge_ability
+resourcepack:
+  model: mineinabyss:relic/reverberating_edge

@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:cooked_rabbit
+  itemName: <#E0E0E0>Cooked Fuwagi Meat
+  itemModel: mineinabyss:mobdrop/mob_standard/fuwagi_meat
+  lore:
+  - '<emojy:layer_1><emojy:layer_2>'
+  - <#FF3A24><i>Gamey with a hint of carrot and
+  - <#FF3A24><i>apple. Mostly carrot though.
+  food:
+    saturation: 6
+    nutrition: 5
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:fuwagi_meat_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:fuwagi_meat_raw
+    experience: 2
+    cookingTime: 2.5s

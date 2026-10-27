@@ -5,7 +5,7 @@
     "on_false": {
       "type": "minecraft:model",
 
-      "model": "mineinabyss:hunting_relics/breeze_piercer/breeze_piercer"
+      "model": "mineinabyss:relic/breeze_piercer/breeze_piercer"
     },
 
     "on_true": {
@@ -16,7 +16,7 @@
           "model": {
             "type": "minecraft:model",
 
-            "model": "mineinabyss:hunting_relics/breeze_piercer/breeze_piercer_pulling_1"
+            "model": "mineinabyss:relic/breeze_piercer/breeze_piercer_pulling_1"
           },
 
           "threshold": 0.65
@@ -26,7 +26,7 @@
           "model": {
             "type": "minecraft:model",
 
-            "model": "mineinabyss:hunting_relics/breeze_piercer/breeze_piercer_pulling_2"
+            "model": "mineinabyss:relic/breeze_piercer/breeze_piercer_pulling_2"
           },
 
           "threshold": 0.9
@@ -36,7 +36,7 @@
       "fallback": {
         "type": "minecraft:model",
 
-        "model": "mineinabyss:hunting_relics/breeze_piercer/breeze_piercer_pulling_0"
+        "model": "mineinabyss:relic/breeze_piercer/breeze_piercer_pulling_0"
       },
 
       "property": "minecraft:use_duration",

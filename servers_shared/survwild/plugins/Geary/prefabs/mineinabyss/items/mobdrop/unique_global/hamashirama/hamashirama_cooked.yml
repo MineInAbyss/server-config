@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#1B91B5>Cooked Hamashirama
+  itemModel: mineinabyss:mobdrop/mob_standard/hamashirama
+  lore:
+  - <yellow>Can be obtained by finding and
+  - <yellow>catching a <#1B91B5>Hamashirama <yellow>in the
+  - <yellow>waters of the <green>Sea of Corpses<yellow>.
+  - <#A759FF>Seems like a great source for food!
+  food:
+    saturation: 9.6
+    nutrition: 6
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:hamashirama_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:hamashirama_raw
+    experience: 2
+    cookingTime: 2.5s

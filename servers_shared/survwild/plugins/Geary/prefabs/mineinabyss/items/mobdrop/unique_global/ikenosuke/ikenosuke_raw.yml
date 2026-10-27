@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:cooked_cod
+  itemName: <#9ff3f3>Raw Ikenosuke
+  itemModel: mineinabyss:mobdrop/mob_standard/ikenosuke
+  lore:
+  - '<emojy:layer_2><emojy:layer_3><emojy:layer_4>'
+  - <#edfeff>The skin was tough, but the meat... Yum!
+  food:
+    saturation: 0.4
+    nutrition: 2
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
+replaceBurnedDrop:
+  prefab: mineinabyss:ikenosuke_cooked
+itemModel:
+  key: mineinabyss:mobdrop/mob_standard/ikenosuke
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/ikenosuke_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/ikenosuke_raw

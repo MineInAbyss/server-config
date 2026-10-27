@@ -1,0 +1,23 @@
+set.item:
+  itemName: <#f7e7ce>Mermaid Burp
+  type: minecraft:clock
+  itemModel: mineinabyss:relic/mermaid_burp
+  lore:
+  - '<emojy:layer_3> Grade III Relic'
+  - <#d7c9b3>The air produced by this Relic has a notably fishy smell. 
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants water breathing.
+passiveItem: {}
+passive:
+- match:
+  - inPassive
+  every: 4s
+  run:
+  - become: parent
+  - applyPotionEffects:
+    - type: minecraft:water_breathing
+      duration: 6s
+      hasParticles: false
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:relic/mermaid_burp

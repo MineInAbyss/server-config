@@ -1,0 +1,26 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#59ac7a>Cooked Dosetori Meat
+  itemModel: mineinabyss:mobdrop/mob_standard/dosetori_meat
+  lore:
+  - '<emojy:layer_2><emojy:layer_3>'
+  - <#d6b12c><i>Tastes like fried chicken.
+  food:
+    saturation: 7.2
+    nutrition: 6
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:dosetori_meat_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:dosetori_meat_raw
+    experience: 2
+    cookingTime: 2.5s

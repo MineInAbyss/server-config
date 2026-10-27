@@ -1,0 +1,24 @@
+set.item:
+  type: minecraft:fermented_spider_eye
+  itemName: <#1C439E>Roasted Madokajack Eye
+  itemModel: mineinabyss:mobdrop/mob_standard/madokajack_eye_roasted
+  lore:
+  - '<emojy:layer_3>'
+  - <yellow>I wonder how many people in Orth
+  - <yellow>would like to eat this...
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:madokajack_eye
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:madokajack_eye
+    experience: 2
+    cookingTime: 2.5s
+resourcepack:
+  model: mineinabyss:mobdrop/mob_standard/madokajack_eye_roasted
+  textures:
+    layers:
+    - mineinabyss:mobdrop/mob_standard/madokajack_eye_roasted

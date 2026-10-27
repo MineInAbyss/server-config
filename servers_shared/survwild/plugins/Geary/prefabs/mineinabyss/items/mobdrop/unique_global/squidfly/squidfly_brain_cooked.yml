@@ -1,0 +1,27 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#85512E>Cooked Squidfly Brain
+  itemModel: mineinabyss:mobdrop/mob_standard/squidfly_brain
+  lore:
+  - '<emojy:layer_3>'
+  - <#C27643><i>Perhaps I will become smarter
+  - <#C27643><i>if I consume this brain?
+  food:
+    saturation: 6
+    nutrition: 5
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:squidfly_brain_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:squidfly_brain_raw
+    experience: 2
+    cookingTime: 2.5s

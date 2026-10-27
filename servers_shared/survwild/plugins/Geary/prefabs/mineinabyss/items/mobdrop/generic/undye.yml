@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Undye
+  itemModel: mineinabyss:mobdrop/generic/undye
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/undye
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/undye
