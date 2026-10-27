@@ -1,0 +1,6 @@
+# The end portal pit by the to2021world sign
+type: BOX
+pointA: 29,47,14 selector
+pointB: 33,48,18 selector
+actions:
+  - mineinabyss:warp_to: mineinabyss:archive_2021

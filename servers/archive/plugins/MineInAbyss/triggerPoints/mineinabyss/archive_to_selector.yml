@@ -1,0 +1,6 @@
+# The end portal under the world spawn, players spawning in world fall into it
+type: BOX
+pointA: -561,111,-30 world
+pointB: -561,113,-30 world
+actions:
+  - mineinabyss:warp_to: mineinabyss:archive_selector

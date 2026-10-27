@@ -32,6 +32,8 @@ keepInventory:
   keepInvInVoid: true
 layers:
   enabled: true
+locationPoints:
+  enabled: true
 lootCrates:
   enabled: false
 misc:
@@ -67,5 +69,7 @@ relics:
   enabled: false
 tools:
   enabled: false
+triggerPoints:
+  enabled: true
 tutorial:
   enabled: true
