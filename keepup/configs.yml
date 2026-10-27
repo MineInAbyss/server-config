@@ -230,7 +230,9 @@ archive:
   copyPaths: [ servers/archive ]
   variables:
     chatty:
+      enableHover: false
       serverPrefix: ":adventure:"
+      patreonEmote: ""
       localChatRadius: 0
   include:
     - minecraft-common
