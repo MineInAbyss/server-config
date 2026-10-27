@@ -21,3 +21,6 @@ nexo:custom_block:
     step_sound: minecraft:block.glass.step
     hit_sound: minecraft:block.glass.hit
     fall_sound: minecraft:block.glass.fall
+creative_tab:
+  category: Builder Tools
+  vanilla_tab: minecraft:functional_blocks

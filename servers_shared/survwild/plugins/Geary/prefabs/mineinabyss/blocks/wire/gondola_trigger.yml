@@ -6,3 +6,6 @@ nexo:custom_block:
   custom_variation: 127
   type: STRINGBLOCK
   model: block/barrier
+creative_tab:
+  category: Builder Tools
+  vanilla_tab: minecraft:functional_blocks

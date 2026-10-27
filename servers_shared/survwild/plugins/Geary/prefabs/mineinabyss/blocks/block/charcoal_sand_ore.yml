@@ -31,3 +31,6 @@ nexo:custom_block:
       - geary_item: mineinabyss:charcoal_sand_raw
         min_amount: 1
         max_amount: 3
+creative_tab:
+  category: Canyon & Sand
+  vanilla_tab: minecraft:natural_blocks
