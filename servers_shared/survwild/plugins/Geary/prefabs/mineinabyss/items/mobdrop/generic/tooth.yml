@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Tooth
+  itemModel: mineinabyss:mobdrop/generic/tooth
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/tooth
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/tooth

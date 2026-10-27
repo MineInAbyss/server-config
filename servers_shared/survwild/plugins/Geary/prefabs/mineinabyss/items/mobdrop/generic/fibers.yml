@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fibers
+  itemModel: mineinabyss:mobdrop/generic/fibers
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/fibers
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/fibers

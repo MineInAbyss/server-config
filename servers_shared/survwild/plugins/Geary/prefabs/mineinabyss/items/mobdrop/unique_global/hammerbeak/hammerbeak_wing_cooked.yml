@@ -1,0 +1,26 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#613F0C>Cooked Hammerbeak Wing
+  itemModel: mineinabyss:mobdrop/mob_standard/hammerbeak_wing
+  lore:
+  - '<emojy:layer_1><emojy:layer_2><emojy:layer_4>'
+  - <yellow>A staple food among delvers.
+  food:
+    saturation: 7.2
+    nutrition: 6
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: true
+    strings: shred
+set.recipes:
+  discoverRecipes: true
+  recipes:
+  - type: furnace
+    input: mineinabyss:hammerbeak_wing_raw
+    experience: 1
+    cookingTime: 5s
+  - type: smoking
+    input: mineinabyss:hammerbeak_wing_raw
+    experience: 2
+    cookingTime: 2.5s

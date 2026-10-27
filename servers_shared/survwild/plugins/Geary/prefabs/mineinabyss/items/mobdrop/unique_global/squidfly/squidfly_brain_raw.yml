@@ -1,0 +1,30 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#85512E>Squidfly Brain
+  itemModel: mineinabyss:mobdrop/mob_standard/squidfly_brain
+  lore:
+  - '<emojy:layer_3>'
+  - <#C27643><i>Eating it raw might not
+  - <#C27643><i>be the brighest idea
+  - <#C27643><i>I've come up with...
+  food:
+    saturation: 1.2
+    nutrition: 2
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
+replaceBurnedDrop:
+  prefab: mineinabyss:squidfly_brain_cooked
+itemModel:
+  key: mineinabyss:mobdrop/mob_standard/squidfly_brain
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/squidfly_brain_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/squidfly_brain_raw

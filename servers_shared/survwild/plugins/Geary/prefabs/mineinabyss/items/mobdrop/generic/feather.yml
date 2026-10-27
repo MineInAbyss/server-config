@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:feather
+  itemName: Feather
+  itemModel: mineinabyss:mobdrop/generic/feather
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/feather
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/feather

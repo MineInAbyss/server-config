@@ -1,0 +1,21 @@
+set.item:
+  type: minecraft:potion
+  customName: <gold>Heat Stone
+  itemModel: mineinabyss:relic/heatstone
+  lore:
+  - <yellow>A fleshy bottle filled with a thick, black, oily substance.
+  - <yellow>Drinking it gives the user a jolt of energy, at a price...
+observe:
+  itemRightClick:
+  - become: parent
+  - itemCooldown:
+      group: mineinabyss:heatstone
+      duration: 30s
+  - mythicSkills:
+    - heatthrow
+  - consumeItem:
+      type: mineinabyss:heatstone
+    when:
+    - chance: 1
+resourcepack:
+  model: mineinabyss:gathering/sunsphere_l2

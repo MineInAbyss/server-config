@@ -1,0 +1,28 @@
+set.item:
+  type: minecraft:clock
+  itemName: <#6CE5F5>Raw Spiralsquid
+  itemModel: mineinabyss:mobdrop/mob_standard/spiralsquid
+  lore:
+  - '<emojy:layer_1><emojy:layer_4>'
+  - <#35ADBD><i>Seems like a great source of food!
+  food:
+    saturation: 0.4
+    nutrition: 2
+  consumable:
+    animation: EAT
+  customModelData:
+    flags: false
+    strings: shred
+replaceBurnedDrop:
+  prefab: mineinabyss:spiralsquid_cooked
+itemModel:
+  key: mineinabyss:mobdrop/mob_standard/spiralsquid
+  model:
+    type: condition
+    property: custom_model_data
+    onTrue:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/spiralsquid_cooked
+    onFalse:
+      type: texture
+      texture: mineinabyss:mobdrop/mob_standard/spiralsquid_raw

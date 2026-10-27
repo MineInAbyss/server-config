@@ -1,15 +1,15 @@
 set.item:
   itemName: <#0047AB>Flamethrower Fuel
   type: minecraft:clock
-  itemModel: mineinabyss:hunting_relics/flamethrower_fuel
+  itemModel: mineinabyss:relic/flamethrower_fuel
   lore:
   - <#3d59ab>A rectangular capsule containing burnable materials.
   - <font:small_bottom><gray><shadow:#00000000>Consumable. Fuel used by the <#0047AB>Flamethrower.
 resourcepack:
-  model: mineinabyss:hunting_relics/flamethrower_fuel  
+  model: mineinabyss:relic/flamethrower_fuel  
   textures:
     layers:
-    - mineinabyss:hunting_relics/flamethrower_fuel  
+    - mineinabyss:relic/flamethrower_fuel  
 set.recipes:
   result:
     prefab: mineinabyss:flamethrower_fuel

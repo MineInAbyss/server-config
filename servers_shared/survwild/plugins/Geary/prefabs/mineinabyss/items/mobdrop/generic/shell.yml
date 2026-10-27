@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Shell
+  itemModel: mineinabyss:mobdrop/generic/shell
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/shell
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/shell

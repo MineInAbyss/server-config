@@ -1,0 +1,29 @@
+set.item:
+  itemName: <#4c6444>Gold-mending Wedge
+  type: minecraft:clock
+  itemModel: mineinabyss:relic/gold-mending_wedge
+  lore:
+  - '<emojy:layer_1><emojy:layer_2> Grade II Relic'
+  - <#43583c>Outside of the Abyss, this Relic fetches a high
+  - <#43583c>price for its uses in chronic pain treatment. 
+  - <font:small_bottom><gray><shadow:#00000000>Passive slot ability. Grants fast regen
+  - <font:small_bottom><gray><shadow:#00000000>when the user drops below 3 hearts.
+passiveItem: {}
+passive:
+- match:
+  - inPassive
+  every: 0.1s
+  run:
+  - become: parent
+  - ensure:
+      mythicConditions:
+      - health{h=1to5} true
+  - itemCooldown:
+      group: mineinabyss:gold-mending_wedge
+      duration: 400s
+  - mythicSkills:
+    - gold-mending_wedge
+resourcepack:
+  textures:
+    layers:
+    - mineinabyss:relic/gold-mending_wedge

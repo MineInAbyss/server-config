@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#0047AB>Flamethrower
-  itemModel: mineinabyss:hunting_relics/flamethrower
+  itemModel: mineinabyss:relic/flamethrower
   maxStackSize: 1
   lore:
   - 'Grade II Relic'
@@ -10,7 +10,7 @@ set.item:
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Projects flames on right click.
   - <font:small_bottom><gray><shadow:#00000000>Requires Flamethrower Fuel within the inventory to work.
 resourcepack:
-  model: mineinabyss:hunting_relics/flamethrower
+  model: mineinabyss:relic/flamethrower
 set.recipes:
  result:
    prefab: mineinabyss:flamethrower

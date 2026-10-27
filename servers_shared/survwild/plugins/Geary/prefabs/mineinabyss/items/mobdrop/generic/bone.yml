@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:bone
+  itemName: Bone
+  itemModel: mineinabyss:mobdrop/generic/bone
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/bone
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/bone

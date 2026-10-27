@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Hide
+  itemModel: mineinabyss:mobdrop/generic/hide
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/hide
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/hide

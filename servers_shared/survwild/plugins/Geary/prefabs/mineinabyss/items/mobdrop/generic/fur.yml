@@ -1,0 +1,10 @@
+set.item:
+  type: minecraft:clock
+  itemName: Fur
+  itemModel: mineinabyss:mobdrop/generic/fur
+  maxStackSize: 64
+resourcepack:
+  model: mineinabyss:mobdrop/generic/fur
+  textures:
+    layers:
+    - mineinabyss:mobdrop/generic/fur

@@ -1,0 +1,27 @@
+set.item:
+  itemName: <#4e5563><b>Necrometallic Blade
+  type: minecraft:netherite_sword
+  itemModel: mineinabyss:relic/necrometallic_blade
+  lore:
+  - '<emojy:layer_2> Grade I Relic'
+  - <#575757>Researchers of the bacteria that inhabit this Relic advice
+  - <#575757>wielders not to touch its blade under any circumstances. 
+  - <font:small_bottom><gray><shadow:#00000000>Active ability. Builds poison stacks on target on
+  - <font:small_bottom><gray><shadow:#00000000>left click. Creates poison cloud on right click.
+  # weapon:
+  #   damagePerAttack: 0
+  unbreakable: {}
+observe:
+  itemRightClick:
+  - become: parent
+  - itemCooldown:
+      group: mineinabyss:necrometallic_blade_effect
+      duration: 20s
+  - mythicSkills:
+    - necrometallic_blade_effect
+  itemLeftClick:
+  - become: parent
+  - mythicSkills:
+    - necrometallic_blade_hit
+resourcepack:
+  model: mineinabyss:relic/necrometallic_blade

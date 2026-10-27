@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#0047AB>Grapple Hook
-  itemModel: mineinabyss:hunting_relics/grapplehook
+  itemModel: mineinabyss:relic/grapplehook
   maxStackSize: 1
   lore:
   - 'Grade II Relic'
@@ -62,4 +62,4 @@ passive:
   - mythicSkills:
     - grapplehook_charge
 resourcepack:
-  model: mineinabyss:hunting_relics/grapple_hook/grapplinghookretracted
+  model: mineinabyss:relic/grapple_hook/grapplinghookretracted

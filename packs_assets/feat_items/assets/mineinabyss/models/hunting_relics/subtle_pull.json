@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "mineinabyss:hunting_relics/subtle_pull_animation",
-		"3": "mineinabyss:hunting_relics/subtle_pull",
-		"particle": "mineinabyss:hunting_relics/subtle_pull_animation"
+		"1": "mineinabyss:relic/subtle_pull_animation",
+		"3": "mineinabyss:relic/subtle_pull",
+		"particle": "mineinabyss:relic/subtle_pull_animation"
 	},
 	"elements": [
 		{
