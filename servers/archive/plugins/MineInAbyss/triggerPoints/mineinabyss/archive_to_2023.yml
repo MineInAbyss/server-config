@@ -1,0 +1,6 @@
+# The end portal pit by the to2023world sign, Cartridge end portals do not teleport so MyWorlds never sees players enter it
+type: BOX
+pointA: 52,49,-38 selector
+pointB: 56,50,-34 selector
+actions:
+  - mineinabyss:warp_to: mineinabyss:archive_2023
