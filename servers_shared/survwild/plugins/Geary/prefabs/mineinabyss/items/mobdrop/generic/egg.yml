@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:mobdrop/generic/egg
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

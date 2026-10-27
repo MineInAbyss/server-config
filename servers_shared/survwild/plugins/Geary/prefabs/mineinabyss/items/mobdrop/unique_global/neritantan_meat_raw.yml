@@ -27,3 +27,6 @@ itemModel:
     onFalse:
       type: texture
       texture: mineinabyss:mobdrop/mob_standard/neritantan_meat_raw
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

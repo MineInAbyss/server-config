@@ -26,3 +26,6 @@ observe:
     - type: minecraft:dolphins_grace
       duration: 8s
       hasParticles: false
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

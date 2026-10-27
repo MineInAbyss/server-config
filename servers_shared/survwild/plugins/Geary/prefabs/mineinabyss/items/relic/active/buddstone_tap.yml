@@ -46,3 +46,6 @@ resourcepack:
     layers:
     - mineinabyss:relic/buddstone_tap
   parentModel: item/handheld
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

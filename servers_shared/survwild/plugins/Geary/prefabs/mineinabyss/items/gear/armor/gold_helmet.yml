@@ -16,3 +16,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/armor/gold_helmet
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:combat

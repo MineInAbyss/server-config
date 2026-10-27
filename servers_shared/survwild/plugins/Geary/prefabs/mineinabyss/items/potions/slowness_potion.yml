@@ -10,3 +10,6 @@ set.recipes:
   - type: brewing
     ingredient:
       prefab: mineinabyss:abyssal_snail_gunk
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

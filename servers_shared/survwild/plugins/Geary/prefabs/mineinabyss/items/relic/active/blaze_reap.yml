@@ -55,3 +55,6 @@ observe:
     - blazereap_charge
 resourcepack:
   model: mineinabyss:relic/blaze_reap
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

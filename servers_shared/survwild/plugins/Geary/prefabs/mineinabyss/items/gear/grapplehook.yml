@@ -63,3 +63,6 @@ passive:
     - grapplehook_charge
 resourcepack:
   model: mineinabyss:relic/grapple_hook/grapplinghookretracted
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

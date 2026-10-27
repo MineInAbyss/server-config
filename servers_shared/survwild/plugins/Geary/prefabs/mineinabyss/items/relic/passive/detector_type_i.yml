@@ -24,3 +24,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:relic/detector_type_i
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

@@ -22,3 +22,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:intermediate/smithing_template/blank_template_rune
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients

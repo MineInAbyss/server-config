@@ -14,3 +14,6 @@ set.recipes:
   - type: brewing
     ingredient: minecraft:glowstone_dust
     input: mineinabyss:haste_potion
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

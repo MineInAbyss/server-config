@@ -46,3 +46,6 @@ observe:
     - crescent_primer
 resourcepack:
   model: mineinabyss:relic/crescent_hatchet
+creative_tab:
+  category: Relics
+  vanilla_tab: minecraft:tools_and_utilities

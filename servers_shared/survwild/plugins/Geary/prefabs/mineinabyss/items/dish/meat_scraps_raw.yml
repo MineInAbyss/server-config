@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/utility/meat_scraps_raw
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

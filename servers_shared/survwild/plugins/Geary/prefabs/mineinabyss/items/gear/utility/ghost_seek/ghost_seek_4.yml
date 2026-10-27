@@ -28,3 +28,6 @@ observe:
                 - ghost_seek_glow_nearby
 resourcepack:
   model: mineinabyss:gear/utility/ghost_seek_on
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

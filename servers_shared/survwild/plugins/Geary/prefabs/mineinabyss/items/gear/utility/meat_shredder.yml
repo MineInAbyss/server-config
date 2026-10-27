@@ -48,3 +48,6 @@ set.recipes:
       items:
         - type: minecraft:stick
         - type: minecraft:iron_ingot
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

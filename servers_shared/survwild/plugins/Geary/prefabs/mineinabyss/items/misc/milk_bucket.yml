@@ -15,3 +15,6 @@ resourcepack:
   textures:
     layers:
     - minecraft:item/milk_bucket
+creative_tab:
+  category: Food
+  vanilla_tab: minecraft:food_and_drinks

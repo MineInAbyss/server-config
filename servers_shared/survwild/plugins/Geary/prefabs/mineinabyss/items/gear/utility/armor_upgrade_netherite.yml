@@ -8,3 +8,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:gear/utility/armor_upgrade_netherite
+creative_tab:
+  category: Gear
+  vanilla_tab: minecraft:tools_and_utilities

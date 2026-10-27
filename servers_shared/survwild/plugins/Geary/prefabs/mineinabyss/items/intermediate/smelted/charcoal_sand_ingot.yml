@@ -27,3 +27,6 @@ resourcepack:
   textures:
     layers:
     - mineinabyss:intermediate/smelted/charcoal_sand_ingot
+creative_tab:
+  category: Materials
+  vanilla_tab: minecraft:ingredients
