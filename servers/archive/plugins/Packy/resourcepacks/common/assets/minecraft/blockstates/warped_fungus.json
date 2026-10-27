@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      { "model": "mineinabyss:block/water_shroom/water_shroom" },
+      { "model": "mineinabyss:block/water_shroom/water_shroom2", "weight": 3 },
+      { "model": "mineinabyss:block/water_shroom/water_shroom4", "weight": 2 }
+    ]
+  }
+}
