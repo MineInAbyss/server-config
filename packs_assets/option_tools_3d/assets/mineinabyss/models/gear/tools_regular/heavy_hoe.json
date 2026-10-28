@@ -1,0 +1,106 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "mineinabyss:gear/tools_regular/heavy_hoe",
+		"particle": "mineinabyss:gear/tools_regular/heavy_hoe"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 6],
+			"to": [8, 2, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1], "texture": "#0"},
+				"east": {"uv": [10, 1.5, 12, 2.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 1], "texture": "#0"},
+				"west": {"uv": [10, 2.5, 12, 3.5], "texture": "#0"},
+				"up": {"uv": [0, 2, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 5, 7],
+			"to": [9, 23, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3, 7]},
+			"faces": {
+				"north": {"uv": [5.5, 0, 6.5, 9], "texture": "#0"},
+				"east": {"uv": [6.5, 0, 7.5, 9], "texture": "#0"},
+				"south": {"uv": [0, 7, 1, 16], "texture": "#0"},
+				"west": {"uv": [1, 7, 2, 16], "texture": "#0"},
+				"up": {"uv": [11, 4.5, 10, 3.5], "texture": "#0"},
+				"down": {"uv": [3, 10.5, 2, 11.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 16, 5],
+			"to": [9, 21, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3, 7]},
+			"faces": {
+				"north": {"uv": [7.5, 7, 8.5, 9.5], "texture": "#0"},
+				"east": {"uv": [8.5, 7, 9.5, 9.5], "texture": "#0"},
+				"south": {"uv": [9, 0, 10, 2.5], "texture": "#0"},
+				"west": {"uv": [9, 2.5, 10, 5], "texture": "#0"},
+				"up": {"uv": [4, 11.5, 3, 10.5], "texture": "#0"},
+				"down": {"uv": [5, 10.5, 4, 11.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 15, -4],
+			"to": [8, 22, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 3.5], "texture": "#0"},
+				"east": {"uv": [0, 0, 5.5, 3.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 3.5], "texture": "#0"},
+				"west": {"uv": [0, 3.5, 5.5, 7], "texture": "#0"},
+				"up": {"uv": [0, 5.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 2, 6.5],
+			"to": [9.5, 5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 3, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 9, 6.5, 10.5], "texture": "#0"},
+				"east": {"uv": [9, 5, 10.5, 6.5], "texture": "#0"},
+				"south": {"uv": [6.5, 9.5, 8, 11], "texture": "#0"},
+				"west": {"uv": [9.5, 6.5, 11, 8], "texture": "#0"},
+				"up": {"uv": [9.5, 11, 8, 9.5], "texture": "#0"},
+				"down": {"uv": [11, 8, 9.5, 9.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 15, 6.5],
+			"to": [9.5, 22, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 15, 7.5]},
+			"faces": {
+				"north": {"uv": [2, 7, 3.5, 10.5], "texture": "#0"},
+				"east": {"uv": [3.5, 7, 5, 10.5], "texture": "#0"},
+				"south": {"uv": [7.5, 0, 9, 3.5], "texture": "#0"},
+				"west": {"uv": [7.5, 3.5, 9, 7], "texture": "#0"},
+				"up": {"uv": [11, 11, 9.5, 9.5], "texture": "#0"},
+				"down": {"uv": [11.5, 0, 10, 1.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, 1.75]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 0, 1.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "bluewhistle_hoe1_ver1",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}
