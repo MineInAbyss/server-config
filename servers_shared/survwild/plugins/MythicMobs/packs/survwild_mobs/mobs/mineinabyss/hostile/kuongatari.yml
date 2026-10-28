@@ -40,8 +40,9 @@ kuongatari:
     - geary mineinabyss:kuongatari_silk 1 0.3
     - geary mineinabyss:kuongatari_abdomen_raw 1-2 0.35
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:180 <99%
     - dismount ~onTimer:20
     - state{mid=kuongatari;s=attack} @self ~onAttack
@@ -88,8 +89,9 @@ kuongatari_summon:
     - DROWNING 0
     - FIRE 15
     - FIRE_TICK 3
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:180 <99%
     - dismount ~onTimer:20
     - state{mid=kuongatari;s=attack} @self ~onAttack

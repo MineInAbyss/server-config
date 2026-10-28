@@ -33,8 +33,9 @@ mantoyer:
     - geary mineinabyss:mantoyer_fur 1-2 0.6
     - geary mineinabyss:mantoyer_horns 1-2 0.6
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - skill{s=Changetarget} ~onTimer:160 <99%
-    - skill{s=displayHealth} ~onDamaged
 
     - state{mid=mantoyer;s=attack} @self ~onAttack

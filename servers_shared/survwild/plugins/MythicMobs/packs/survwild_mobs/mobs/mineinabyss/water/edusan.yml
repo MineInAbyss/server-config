@@ -20,6 +20,7 @@ edusan:
     MovementSpeed: 0.3
     PreventOtherDrops: true
   Geary:
+    mineinabyss:show_health_bar: default
     pathfinders:
       - type: RandomSwimmingGoal
         priority: 8
@@ -33,6 +34,3 @@ edusan:
     - exp 35-50
     - geary mineinabyss:edusan_scale 4-8 1
     - geary mineinabyss:edusan_whisker 1 0.2
-
-  Skills:
-    - skill{s=displayHealth} ~onDamaged

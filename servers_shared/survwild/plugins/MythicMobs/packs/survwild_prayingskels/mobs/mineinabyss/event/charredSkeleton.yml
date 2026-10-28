@@ -33,8 +33,9 @@ charredSkeleton:
     - prize_pottery_sherd 2-3 0.05
     - CharredSkelPlayerHeads
     #- geary mineinabyss:sunsphere_l2 1-1 0.15
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - randomskill{skills=
      [- model{modelid=charred_skeleton_1;radius=100;damagetint=false;drive=false}] 0.6,
      [- model{modelid=charred_skeleton_2;radius=100;damagetint=false;drive=false}] 0.4 } @self ~onSpawnOrLoad

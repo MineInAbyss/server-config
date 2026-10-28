@@ -30,6 +30,7 @@ sakuranbo:
     - geary mineinabyss:sakuranbo_dust 1-3 0.9
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - particle{p=instant_effect;color=#BEA233;power=1;delay=20} @self ~onDeath

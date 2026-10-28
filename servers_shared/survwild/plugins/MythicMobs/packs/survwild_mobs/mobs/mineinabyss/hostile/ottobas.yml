@@ -32,8 +32,9 @@ ottobas:
     - exp 55-90
     - geary mineinabyss:ottobas_meat_raw 4-15
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - effect:sound{s=mineinabyss:entity.ottobas.ambient;v=1;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.ottobas.death;v=1;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.ottobas.hurt;v=1;p=0.8} @self ~onDamaged

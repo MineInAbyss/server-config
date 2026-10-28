@@ -31,8 +31,9 @@ fuwagi:
     - geary mineinabyss:fuwagi_hide 1 0.7
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - effect:sound{s=mineinabyss:fuwagi;v=1;p=0.2} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.fuwagi.death;v=1;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.fuwagi.hurt;v=1;p=0.2} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged

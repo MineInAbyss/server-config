@@ -41,8 +41,9 @@ inbyo:
     - geary mineinabyss:inbyo_meat_raw 1-2 0.6
     - geary mineinabyss:inbyo_fur 1-3 0.6
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - cancelevent{sync=true} @self ~onAttack
     - skill{s=inbyo_attack} ~onAttack ?targetwithin{d=2}
     - skill{s=inbyo_throw} ~onTimer:50 ?!targetwithin{d=4}

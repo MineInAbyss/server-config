@@ -19,6 +19,7 @@ hisomukuro:
     MovementSpeed: 0.9
     PreventOtherDrops: true
   Geary:
+    mineinabyss:show_health_bar: default
     pathfinders:
       - type: RandomSwimmingGoal
         priority: 8
@@ -34,7 +35,6 @@ hisomukuro:
     - geary mineinabyss:hisomukuro_rib 2-6 0.7
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=HS_ball} @target ~onTimer:10
     - skill{s=HS_charge} @self ~onTimer:1
     - skill{s=HSAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

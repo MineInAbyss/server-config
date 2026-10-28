@@ -30,8 +30,9 @@ goldenSkeleton:
     - raw_gold_block 1-1 1
     - GoldenSkelPlayerHeads
     #- geary mineinabyss:sunsphere_l2 1-1 0.15
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - randomskill{skills=
      [- model{modelid=golden_skeleton_1;radius=100;damagetint=false;drive=false}] 0.6,
      [- model{modelid=golden_skeleton_2;radius=100;damagetint=false;drive=false}] 0.4 } @self ~onSpawnOrLoad

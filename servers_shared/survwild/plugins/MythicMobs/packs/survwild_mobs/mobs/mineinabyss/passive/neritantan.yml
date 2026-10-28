@@ -33,8 +33,9 @@ neritantan:
     - sweet_berries 1-2 0.3
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - effect:sound{s=mineinabyss:neritantan;v=4;p=0.2} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.neritantan.death;v=4;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.neritantan.hurt;v=4;p=0.2} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged

@@ -34,9 +34,10 @@ titanjaw:
     - exp 20-25
     - geary mineinabyss:titanjaw_pearl 1 0.2
     - geary mineinabyss:titanjaw_scale 1-2 0.6
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=tj_backup} @self ~ondamaged
     - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=tjHurt} @self ~onHurt
@@ -74,12 +75,13 @@ baby_titanjaw:
     Drive: false
     DamageTint: true
     Scale: 1
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
     - CancelEvent{sync=true} @self ~onAttack
     - CancelEvent{sync=true} @self ~onInteract
     - skill{s=tj_backup} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
     - skill{s=tjHurt} @self ~onHurt
     - skill{s=tjDeath} @self ~onDeath

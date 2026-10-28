@@ -23,6 +23,5 @@ hamashirama:
   Drops:
     - exp 20-25
     - geary mineinabyss:hamashirama_raw 1-2 0.6
-
-  Skills:
-    - skill{s=displayHealth} ~onDamaged
+  Geary:
+    mineinabyss:show_health_bar: default

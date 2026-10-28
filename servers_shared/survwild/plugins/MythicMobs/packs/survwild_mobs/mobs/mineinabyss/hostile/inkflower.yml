@@ -32,10 +32,11 @@ inkflower:
     ViewRadius: 48
     Drive: false
     DamageTint: true
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_8} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
 
 
     - bodyclamp{m=inkflower;c=15} @self ~onSpawnOrLoad

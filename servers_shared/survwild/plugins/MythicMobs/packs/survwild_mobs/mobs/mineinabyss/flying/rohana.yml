@@ -31,9 +31,10 @@ rohana:
     - geary mineinabyss:rohana_powder 2 0.8
     - geary mineinabyss:rohana_tail 2 0.4
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - bodyclamp{m=rohana;c=15} @self ~onSpawnOrLoad
     #- setspeed{type=flying;speed=1} @self ~onSpawnOrLoad
     - state{mid=rohana;s=attack} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     - particle{p=effect;color=#EF44ED;power=1;delay=30} @self ~onDeath

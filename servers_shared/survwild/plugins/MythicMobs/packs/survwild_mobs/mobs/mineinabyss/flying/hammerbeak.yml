@@ -37,6 +37,8 @@ hammerbeak:
     - geary mineinabyss:hammerbeak_wing_raw 1-2
     - geary mineinabyss:hammerbeak_beak 1 0.6
     - geary mineinabyss:hammerbeak_feather 1-2 0.5
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # Misc
     - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
@@ -59,7 +61,6 @@ hammerbeak:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-    - skill{s=displayHealth} ~onDamaged
     
     # HeadshotStun #
     - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}
@@ -105,6 +106,8 @@ hammerbeakLarge:
   Model:
     Id: hammerbeak
     Scale: 1
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # Misc
     - potion{t=SLOW_FALLING;l=250;force=true;p=true;d=12} @self ~onTimer:10
@@ -127,5 +130,4 @@ hammerbeakLarge:
     - skill{s=bloodEffectSmall} @self ~onHurt 0.65 >50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.9 =50%
     - skill{s=bloodEffectSmall} @self ~onHurt 0.85 <50%
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=headshot_pebble_impact} ~onDamaged{bones=b_head} ?hasaura{n=pebblehit}

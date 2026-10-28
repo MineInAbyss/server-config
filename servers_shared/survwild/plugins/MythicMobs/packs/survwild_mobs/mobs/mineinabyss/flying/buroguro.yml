@@ -31,10 +31,11 @@ buroguro:
     ViewRadius: 48
     Drive: false
     DamageTint: true
+  Geary:
+    mineinabyss:show_health_bar: default
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     #  - skill{s=buroguroDamaged} @self ~onDamaged
     #  - skill{s=buroguroTick} @self ~onTimer:20
     - skill{s=buroguroMelee} @trigger ~onAttack
-    - skill{s=displayHealth} ~onDamaged
   

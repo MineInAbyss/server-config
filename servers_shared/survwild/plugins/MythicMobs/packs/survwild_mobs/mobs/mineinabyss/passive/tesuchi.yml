@@ -32,9 +32,10 @@ tesuchi:
     ViewRadius: 48
     Drive: false
     DamageTint: true
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
 
     - look{} @target ~onTimer:20
     - defaultstate{t=walk;s=walk;sp=2.2} @self ~onSpawnOrLoad

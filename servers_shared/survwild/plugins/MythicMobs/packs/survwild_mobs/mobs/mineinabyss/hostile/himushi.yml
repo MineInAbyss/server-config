@@ -31,8 +31,9 @@ himushi:
     - SOUL_SAND 1-2 0.6
     - MAGMA_BLOCK 1-2 0.6
     - geary mineinabyss:himushi_core 1 1
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=generic_shell_damaged;stacks=1;mob=himushi} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXES}
     - bodyclamp{m=himushi;c=0} @self ~onSpawnOrLoad
     - CancelEvent{sync=true} @self ~onAttack

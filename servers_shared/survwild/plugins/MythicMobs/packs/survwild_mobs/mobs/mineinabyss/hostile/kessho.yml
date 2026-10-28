@@ -12,7 +12,8 @@ kessho:
   Model:
     Id: amethyst_golem
     ViewRadius: 48
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - skill:AmethystGolemAttack{sync=true} @Self ~onAttack
     - skill:AmethystGolemAttackSlam @Self ~onTimer:100 0.5
-    - skill{s=displayHealth} ~onDamaged

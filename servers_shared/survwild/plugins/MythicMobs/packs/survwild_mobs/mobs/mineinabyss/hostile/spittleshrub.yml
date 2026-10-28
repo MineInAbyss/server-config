@@ -36,8 +36,9 @@ spittleshrub:
     Id: spittleshrub
     Step: 1
     ViewRadius: 48
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill:SpittleshrubSpawn @self ~onSpawnOrLoad
     - partvisibility{m=spittleshrub;p=bone4;visible=false} @self ~onSpawn
     - skill:SpittleshrubDamaged @self ~onDamaged

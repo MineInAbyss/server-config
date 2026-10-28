@@ -37,10 +37,11 @@ yomotsubi:
     - geary mineinabyss:yomotsubi_wing 1-2 0.6
     - geary mineinabyss:yomotsubi_abdomen_raw 1-2 0.6
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_8} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     - bodyclamp{m=yomotsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=yomotsubi;s=attack} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%
@@ -87,10 +88,11 @@ shiratsubi:
     - exp 25-35
     - geary mineinabyss:shiratsubi_wing 1-2 0.6
     - geary mineinabyss:yomotsubi_abdomen_raw 1-2 0.7
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_8} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     - bodyclamp{m=shiratsubi;c=15} @self ~onSpawnOrLoad
     - state{mid=shiratsubi;s=attack} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%
