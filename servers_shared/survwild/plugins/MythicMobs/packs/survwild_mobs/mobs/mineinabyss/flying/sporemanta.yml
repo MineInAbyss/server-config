@@ -35,6 +35,8 @@ sporemanta:
     - geary mineinabyss:sporemanta_powder 1-2 0.7
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
     - potion{t=LEVITATION;l=4;force=true;p=true;d=5} @self ~onTimer:1 ?onground{}
@@ -44,5 +46,4 @@ sporemanta:
     - skill{s=sporemantaHurt} @self ~onHurt
     - skill{s=sporemantaDeath} @self ~onDeath
     - skill{s=sporemantaAmbient} @self ~onDeath
-    - skill{s=displayHealth} ~onDamaged
 

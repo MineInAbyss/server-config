@@ -29,8 +29,9 @@ billabonk:
     ViewRadius: 48
     Drive: false
     DamageTint: true
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - effect:sound{s=mineinabyss:entity.billabonk.death;v=4;p=0.2} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.billabonk.hurt;v=4;p=0.2} @self ~onDamaged
     - skill{s=breathe} @self ~onSpawnOrLoad

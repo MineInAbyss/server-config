@@ -24,6 +24,8 @@ prayingSkeleton_base:
     - FALL 0.001
     - DROWNING 0.001
     - ENTITY_SWEEP_ATTACK 0.001
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # Choose a random model for this skeleton
     - randomskill{skills=
@@ -32,4 +34,3 @@ prayingSkeleton_base:
      [- model{modelid=praying_skeleton_3;radius=100;damagetint=false;drive=false}] 0.15,
      [- model{modelid=praying_skeleton_4;radius=100;damagetint=false;drive=false}] 0.2,
      [- model{modelid=praying_skeleton_5;radius=100;damagetint=false;drive=false}] 0.15 } @self ~onSpawnOrLoad
-    - skill{s=displayHealth} ~onDamaged

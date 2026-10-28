@@ -32,13 +32,14 @@ squidfly:
     - exp 12-18
     - geary mineinabyss:squidfly_brain_raw 1 0.8
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_5} @self ~onAttack
     - bodyclamp{m=squidfly;c=15} @self ~onSpawnOrLoad
     #- setspeed{type=flying;speed=1.5} @self ~onSpawnOrLoad
     - state{mid=squidfly;s=attack} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     
     # HeadshotStun #
     - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}

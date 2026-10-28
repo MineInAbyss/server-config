@@ -25,8 +25,9 @@ daikonchu:
     - geary mineinabyss:daikonchu_carapace 1 0.4
     - geary mineinabyss:daikonchu_wing 1-2 0.3
     
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - cancelevent{sync=true} @Self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill:DaikonchuAttack @Self ~onAttack

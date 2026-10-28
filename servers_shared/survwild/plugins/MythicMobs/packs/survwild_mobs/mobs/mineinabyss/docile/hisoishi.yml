@@ -39,9 +39,10 @@ hisoishi:
     - geary mineinabyss:hisoishi_shell 1 0.2
 
     
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=generic_shell_damaged;stacks=1;mob=hisoishi} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXES}
 
     - skill{s=hs_backup} @self ~ondamaged

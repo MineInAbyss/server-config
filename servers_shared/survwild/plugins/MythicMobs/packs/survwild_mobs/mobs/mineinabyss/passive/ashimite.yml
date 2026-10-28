@@ -35,8 +35,9 @@ ashimite:
   DamageModifiers:
     - PROJECTILE 5.0
     - SUFFOCATION 0.05
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
 
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
     #- setspeed{type=walking;speed=2.0} @self ~onSpawnOrLoad
@@ -83,8 +84,9 @@ baby_ashimite:
     #Drive: true
     DamageTint: true
     Scale: 0.5
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     #- bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
     - setspeed{type=walking;speed=1.8} @self ~onSpawn 0.2
     - skill{s=deerAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

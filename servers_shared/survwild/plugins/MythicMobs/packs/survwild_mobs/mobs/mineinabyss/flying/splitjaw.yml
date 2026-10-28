@@ -43,6 +43,8 @@ splitjaw:
     - GOLD_INGOT 1 0.15
     - EMERALD 1 0.1
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     - bodyclamp{m=splitjaw;c=15} @self ~onSpawnOrLoad
@@ -60,4 +62,3 @@ splitjaw:
     - skill{s=splitjawHurt} @self ~onHurt
     - effect:sound{s=mineinabyss:entity.splitjaw.ambient;v=1.5;p=0.8} @self ~onAmbient 0.6
     - effect:sound{s=mineinabyss:entity.splitjaw.death;v=1.5;p=0.8} @self ~onDeath
-    - skill{s=displayHealth} ~onDamaged

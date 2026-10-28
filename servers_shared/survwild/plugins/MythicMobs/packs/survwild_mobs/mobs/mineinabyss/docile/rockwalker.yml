@@ -33,9 +33,10 @@ rockwalker:
     - geary mineinabyss:rockwalker_mandible 1-4 0.8
 
     
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:160 <99%
     - skill{s=hs_backup} @self ~ondamaged
     - skill{s=hsAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
@@ -77,9 +78,10 @@ faputa:
     - exp 10-15
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:160 <99%
 
 nanachi:
@@ -115,7 +117,8 @@ nanachi:
     - exp 10-15
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=Changetarget} ~onTimer:160 <99%

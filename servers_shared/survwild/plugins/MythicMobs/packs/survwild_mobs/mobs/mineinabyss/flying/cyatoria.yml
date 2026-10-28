@@ -34,13 +34,14 @@ cyatoria:
     - geary mineinabyss:cyatoria_drumstick_raw 1-2
     - geary mineinabyss:cyatoria_feather 1-4 0.7
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_3} @self ~onAttack
     - bodyclamp{m=cyatoria;c=15} @self ~onSpawnOrLoad
     #- setspeed{type=flying;speed=1.1} @self ~onSpawnOrLoad
     - state{mid=cyatoria;s=attack} @self ~onAttack
-    - skill{s=displayHealth} ~onDamaged
     
     # HeadshotStun #
     - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}

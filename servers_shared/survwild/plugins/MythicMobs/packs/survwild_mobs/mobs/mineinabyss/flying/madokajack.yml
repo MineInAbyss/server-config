@@ -36,6 +36,8 @@ madokajack:
     - geary mineinabyss:madokajack_eye 2 0.3
     - geary mineinabyss:madokajack_poop 1 0.3
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_5} @self ~onAttack
@@ -45,7 +47,6 @@ madokajack:
     - effect:sound{s=mineinabyss:entity.madokajack.ambient;v=4;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.madokajack.death;v=4;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.madokajack.hurt;v=4;p=0.8} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged
     
     # HeadshotStun #
     - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}

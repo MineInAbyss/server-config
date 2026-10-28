@@ -37,6 +37,8 @@ stinger:
     - geary mineinabyss:stinger_horn 1 0.2
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
     - look{} @target ~onTimer:20
@@ -50,7 +52,6 @@ stinger:
     - sound{s=entity.bee.pollinate;sc=master;p=<random.float.1.5to1.6>;v=0.25} @self ~onTimer:1
     - skill{s=stingerHurt} @self ~onHurt
     - skill{s=stingerDeath} @self ~onDeath
-    - skill{s=displayHealth} ~onDamaged
 
 
 stinger2:
@@ -90,6 +91,8 @@ stinger2:
     - exp 5-15
     - geary mineinabyss:stinger_wing 1 0.5
     - geary mineinabyss:stinger_horn 1 0.2
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
     - look{} @target ~onTimer:20
@@ -105,4 +108,3 @@ stinger2:
     - sound{s=entity.bee.pollinate;sc=master;p=<random.float.1.5to1.6>;v=0.25} @self ~onTimer:1
     - skill{s=stingerHurt} @self ~onHurt
     - skill{s=stingerDeath} @self ~onDeath
-    - skill{s=displayHealth} ~onDamaged

@@ -35,9 +35,10 @@ rinsipede:
     - geary mineinabyss:rinsipede_segments 1-2 0.8
 
     
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     ####### Misc
-    - skill{s=displayHealth} ~onDamaged
     - state{mid=rinsipede;s=attack} @self ~onAttack
     #- skill{s=tj_backup} @self ~ondamaged
     # - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33

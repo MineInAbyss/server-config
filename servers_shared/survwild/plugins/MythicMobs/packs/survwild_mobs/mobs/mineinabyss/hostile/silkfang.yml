@@ -34,8 +34,9 @@ silkfang:
     - geary mineinabyss:silkfang_silk 1-2 0.6
     - geary mineinabyss:bundle_of_silkfang_silk 1 0.2
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=silkfangWeb;delay=<random.0to20>} @self ~onDamaged 0.65
 
     - skill{s=sfSpiderWebShot} @Target ~onTimer:220

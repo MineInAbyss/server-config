@@ -34,6 +34,8 @@ dosetori:
     - geary mineinabyss:dosetori_meat_raw 1-2
     - geary mineinabyss:dosetori_wing 1-3 0.7
     - geary mineinabyss:dosetori_bone 1-3 0.8
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     # - CancelEvent{sync=true} ~onAttack
     # - skill{s=Damage_3} @self ~onAttack
@@ -43,7 +45,6 @@ dosetori:
     - effect:sound{s=mineinabyss:entity.dosetori.ambient;v=4;p=0.8} @self ~onAmbient
     - effect:sound{s=mineinabyss:entity.dosetori.death;v=4;p=0.8} @self ~onDeath
     - effect:sound{s=mineinabyss:entity.dosetori.hurt;v=4;p=0.8} @self ~onDamaged
-    - skill{s=displayHealth} ~onDamaged
     
     # HeadshotStun #
     - skill{s=headshot_pebble_impact;delay=2} ~onDamaged ?hitbox{h=b_head}

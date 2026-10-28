@@ -28,5 +28,5 @@ amakagame:
     - exp 20-25
     - geary mineinabyss:amakagame_whiskers 1-2
     - geary mineinabyss:baracocha_fruit 1-5
-  Skills:
-    - skill{s=displayHealth} ~onDamaged
+  Geary:
+    mineinabyss:show_health_bar: default

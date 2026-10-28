@@ -29,8 +29,9 @@ okibo:
     - geary mineinabyss:okibo_meat_raw 1-2 0.6
     - geary mineinabyss:okibo_fur 1-2 0.7
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=milk_mob} ~onInteract ?~holding{m=bucket}
     #- sound{s=entity.goat.milk;p=0.5} @self ~onInteract ?~holding{m=bucket} # if you want sounds to be mob specific remove them from the milk skill and move them into mob skills
     - skill{s=shear_okibo} ~onInteract ?~holding{m=shears} ?!hasaura{auraName=unshearable}

@@ -28,6 +28,7 @@ makihige:
     - FALL 0.01
     - DROWNING 0.01
   Geary:
+    mineinabyss:show_health_bar: default
     pathfinders:
       - type: RandomSwimmingGoal
         priority: 8
@@ -44,5 +45,4 @@ makihige:
     - geary mineinabyss:makihige_tentacle 1-2 0.4
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=generic_shell_damaged;stacks=1;mob=makihige} @self ~onDamaged{bones=b_stone} ?~holding{m=#PICKAXES}

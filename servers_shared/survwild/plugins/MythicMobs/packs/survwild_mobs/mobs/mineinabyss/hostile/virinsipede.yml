@@ -37,8 +37,9 @@ virinsipede:
     - geary mineinabyss:virinsipede_segments 4-10 0.8
     - geary mineinabyss:virinsipede_antlers 1-2 0.3
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=virinburrow} @Self ~onTimer:60
     - state{mid=virinsipede;s=attack} @self ~onAttack
     - skill{s=Changetarget} ~onTimer:160 <99%

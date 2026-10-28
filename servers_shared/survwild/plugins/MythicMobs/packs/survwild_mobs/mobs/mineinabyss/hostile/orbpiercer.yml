@@ -44,9 +44,10 @@ orbpiercer:
     - DROWNING 0
     - PROJECTILE 0.25
     - SUFFOCATION 0
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
     - skill{s=Changetarget} ~onTimer:160 <99%
-    - skill{s=displayHealth} ~onDamaged
     - bodyclamp{m=orbpiercer;c=15} @self ~onSpawnOrLoad
     #    - skill{s=orbpiercer_speed} @self ~onSpawnOrLoad
     #- sound{s=mineinabyss:entity.orbpiercer.hurt;v=1;sc=HOSTILE} @self ~onDamaged

@@ -26,7 +26,8 @@ kazura:
     - geary mineinabyss:kazura_squid_ink_sac 1-2 0.8
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=kazura_squirt} ~onDamaged
     - sound{s=entity.ghast.scream;p=2} @self ~onDamaged

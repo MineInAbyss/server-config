@@ -27,7 +27,8 @@ spiralsquid:
     - geary mineinabyss:spiralsquid_raw 1-2 0.6
 
 
+  Geary:
+    mineinabyss:show_health_bar: default
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - skill{s=spiral_squirt} ~onDamaged
     - sound{s=entity.squid.hurt;p=0.75} @self ~onDamaged

@@ -24,6 +24,7 @@ hagamizukin:
     Interactable: true
     PreventOtherDrops: true
   Geary:
+    mineinabyss:show_health_bar: default
     pathfinders:
       - type: RandomSwimmingGoal
         priority: 8
@@ -36,7 +37,6 @@ hagamizukin:
     - geary mineinabyss:hagamizukin_raw 1-2 0.6
 
   Skills:
-    - skill{s=displayHealth} ~onDamaged
     - state{mid=hagamizukin;s=attack} @self ~onAttack
     ####### Misc
     - look{immediately=true} @targetLocation ~onTimer:10

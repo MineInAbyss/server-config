@@ -42,6 +42,8 @@ locationPoints:
   enabled: true
 lootCrates:
   enabled: true
+mobHealth:
+  enabled: true
 misc:
   enabled: true
   grassBonemeal:
@@ -69,8 +71,8 @@ orthBanking:
 patreon:
   enabled: true
   groupTiers:
-    patreon: 1
-    patreonplus: 2
+    "patreon": 1
+    "patreonplus": 2
 playerProfile:
   enabled: true
   validBackgroundIds:

@@ -779,3 +779,22 @@ emotes:
     texture: mineinabyss:ui/overlay/overlay_cursor.png
     height: 16
     ascent: 15
+# mineinabyss mob health bar feature
+# Fill and trail are sheets with one row per pixel of health, and each sheet needs its own font since Emojy only reserves one codepoint per emote within a font
+  - id: mob_health_frame
+    font: mineinabyss:mob_health_frame
+    texture: mineinabyss:ui/mob_health/mob_health_frame.png
+    height: 11
+    ascent: 7
+  - id: mob_health_fill
+    font: mineinabyss:mob_health_fill
+    texture: mineinabyss:ui/mob_health/mob_health_fill.png
+    height: 5
+    ascent: 4
+    bitmapHeight: 155
+  - id: mob_health_trail
+    font: mineinabyss:mob_health_trail
+    texture: mineinabyss:ui/mob_health/mob_health_trail.png
+    height: 5
+    ascent: 4
+    bitmapHeight: 155
