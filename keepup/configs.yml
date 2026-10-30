@@ -27,6 +27,11 @@ feat/common-deeperworld:
     - source: packs_data/deeper_world
       dest:   worlds/world/datapacks/deeper_world
 
+feat/common-armortrims:
+  copyPaths:
+    - source: packs_data/armor_trims
+      dest:   worlds/world/datapacks/armor_trims
+
 feat/common-emotes:
   copyPaths:
     - source: servers_shared/survwild/plugins/Emojy

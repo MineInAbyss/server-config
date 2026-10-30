@@ -2,6 +2,7 @@ set.item:
   type: minecraft:clock
   itemName: <#b5955f>Haste Paste
   itemModel: mineinabyss:materials/haste_paste
+  providesTrimMaterial: mineinabyss:haste
   lore:
   - <yellow>Compact with nutrients fit for a miner,
   - <yellow>but odours a vile raw smell and has

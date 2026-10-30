@@ -1,0 +1,10 @@
+set.recipes:
+  discoverRecipes: true
+  recipes:
+    - type: smithing_transform
+      template:
+        prefab: mineinabyss:blank_template_rune
+      input:
+        item:
+          tag: minecraft:trimmable_armor
+        remove: minecraft:trim
