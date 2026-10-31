@@ -17,20 +17,25 @@ global:
 # Shared between ALL servers
 ########################################
 
-feat/common-chat:
-  copyPaths:
-    - source: servers_shared/common/plugins/Chatty
-      dest:   plugins/Chatty
-
-feat/common-deeperworld:
+datapack/common-deeperworld:
   copyPaths:
     - source: packs_data/deeper_world
       dest:   worlds/world/datapacks/deeper_world
 
-feat/common-armortrims:
+datapack/common-armortrims:
   copyPaths:
     - source: packs_data/armor_trims
       dest:   worlds/world/datapacks/armor_trims
+
+datapack/common-paintings:
+  copyPaths:
+    - source: packs_data/paintings
+      dest:   worlds/world/datapacks/paintings
+
+feat/common-chat:
+  copyPaths:
+    - source: servers_shared/common/plugins/Chatty
+      dest:   plugins/Chatty
 
 feat/common-emotes:
   copyPaths:
@@ -225,7 +230,9 @@ minecraft-common:
     velocity_forward_secret: "{{ VELOCITY_FORWARDING_SECRET  | default('') }}"
   include:
     - feat/common-chat
-    - feat/common-deeperworld
+    - datapack/common-deeperworld
+    - datapack/common-armortrims
+    - datapack/common-paintings
     - feat/common-emotes
     - feat/common-resourcepack
 
