@@ -5,11 +5,14 @@ set.item:
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable: mineinabyss:the_lilypad_uncertain_surroundings
-resourcepack:
-  model: mineinabyss:misc/music_disc/uncertain_surroundings
-  textures:
-    layers:
-    - mineinabyss:misc/music_disc_light_blue
+itemModel:
+  type: composite
+  models:
+    - texture: mineinabyss:misc/music_disc
+    - texture: mineinabyss:misc/music_disc_overlay
+      tints:
+        type: constant
+        value: 8681164
 creative_tab:
   category: Other
   vanilla_tab: minecraft:tools_and_utilities

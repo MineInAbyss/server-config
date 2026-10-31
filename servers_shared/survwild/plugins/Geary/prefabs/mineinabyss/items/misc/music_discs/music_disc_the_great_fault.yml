@@ -1,0 +1,18 @@
+set.item:
+  type: minecraft:clock
+  itemName: Music Disc
+  itemModel: mineinabyss:misc/music_disc_the_great_fault
+  maxStackSize: 1
+  rarity: RARE
+  jukeboxPlayable: mineinabyss:the_great_fault
+itemModel:
+  type: composite
+  models:
+    - texture: mineinabyss:misc/music_disc
+    - texture: mineinabyss:misc/music_disc_overlay
+      tints:
+        type: constant
+        value: 13421766
+creative_tab:
+  category: Other
+  vanilla_tab: minecraft:tools_and_utilities

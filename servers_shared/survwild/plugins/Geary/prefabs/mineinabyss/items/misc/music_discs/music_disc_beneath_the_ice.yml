@@ -5,11 +5,14 @@ set.item:
   maxStackSize: 1
   rarity: RARE
   jukeboxPlayable: mineinabyss:beneath_the_ice
-resourcepack:
-  model: mineinabyss:misc/music_disc_beneath_the_ice
-  textures:
-    layers:
-      - mineinabyss:misc/music_disc_blue
+itemModel:
+  type: composite
+  models:
+    - texture: mineinabyss:misc/music_disc
+    - texture: mineinabyss:misc/music_disc_overlay
+      tints:
+        type: constant
+        value: 9883886
 creative_tab:
   category: Other
   vanilla_tab: minecraft:tools_and_utilities
