@@ -9,7 +9,6 @@ set.recipes:
     - minecraft:gray_terracotta
     - minecraft:light_blue_terracotta
     - minecraft:light_gray_terracotta
-    - minecraft:light_green_terracotta
     - minecraft:lime_terracotta
     - minecraft:magenta_terracotta
     - minecraft:orange_terracotta
@@ -78,15 +77,6 @@ set.recipes:
       items:
         T: { tag: terracotta }
         D: { type: minecraft:light_gray_dye }
-      shape:
-        - "TTT"
-        - "TDT"
-        - "TTT"
-    - type: shaped
-      result: { type: minecraft:light_green_terracotta, amount: 8 }
-      items:
-        T: { tag: terracotta }
-        D: { type: minecraft:light_green_dye }
       shape:
         - "TTT"
         - "TDT"
