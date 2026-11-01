@@ -24,7 +24,7 @@
     },
     "com.mineinabyss.DurationSerializer": {
       "type": "string",
-      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "pattern": "^\\d+(\\.\\d+)?(ms|t|s|m|h|d|w|mo)$",
       "title": "Duration"
     }
   }

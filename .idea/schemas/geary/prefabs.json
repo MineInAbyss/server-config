@@ -70,26 +70,6 @@
         }
       }
     },
-    "ModelTextures": {
-      "type": "object",
-      "properties": {
-        "layers": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "particle": {
-          "type": "string"
-        },
-        "variables": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        }
-      }
-    },
     "PotionEffect": {
       "type": "object",
       "required": [
@@ -163,21 +143,6 @@
         },
         "tradeAction": {
           "$ref": "#/$defs/ShopTrade"
-        }
-      }
-    },
-    "TintSource": {
-      "type": "object",
-      "required": [
-        "type",
-        "defaultColor"
-      ],
-      "properties": {
-        "type": {
-          "$ref": "#/$defs/com.mineinabyss.idofront.serialization.TintSourceType"
-        },
-        "defaultColor": {
-          "$ref": "#/$defs/Color"
         }
       }
     },
@@ -383,17 +348,6 @@
         }
       ]
     },
-    "com.mineinabyss.DoubleRange": {
-      "anyOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "string",
-          "pattern": "^-?\\d+(\\.\\d+)?((\\.\\.| to )-?\\d+(\\.\\d+)?)?$|^\\d+(\\.\\d+)?-\\d+(\\.\\d+)?$"
-        }
-      ]
-    },
     "com.mineinabyss.DurationSerializer": {
       "type": "string",
       "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
@@ -451,28 +405,6 @@
         {
           "type": "string",
           "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"
-        }
-      ]
-    },
-    "com.mineinabyss.FloatRange": {
-      "anyOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "string",
-          "pattern": "^-?\\d+(\\.\\d+)?((\\.\\.| to )-?\\d+(\\.\\d+)?)?$|^\\d+(\\.\\d+)?-\\d+(\\.\\d+)?$"
-        }
-      ]
-    },
-    "com.mineinabyss.IntRange": {
-      "anyOf": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "string",
-          "pattern": "^-?\\d+((\\.\\.| to )-?\\d+)?$|^\\d+-\\d+$"
         }
       ]
     },
@@ -2449,32 +2381,6 @@
         }
       ]
     },
-    "com.mineinabyss.SingleOrList<Color?>": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      ]
-    },
-    "com.mineinabyss.SingleOrList<com.mineinabyss.FloatRange?>": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/com.mineinabyss.FloatRange"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/com.mineinabyss.FloatRange"
-          }
-        }
-      ]
-    },
     "com.mineinabyss.SingleOrList<kotlin.Boolean>": {
       "anyOf": [
         {
@@ -2510,19 +2416,6 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
-        }
-      ]
-    },
-    "com.mineinabyss.SingleOrList<net.kyori.adventure.util.TriState>": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/net.kyori.adventure.util.TriState"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/net.kyori.adventure.util.TriState"
           }
         }
       ]
@@ -2633,16 +2526,16 @@
       "type": "object",
       "properties": {
         "strings": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<kotlin.String>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         },
         "flags": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<net.kyori.adventure.util.TriState>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         },
         "floats": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<com.mineinabyss.FloatRange?>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         },
         "colors": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<Color?>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         }
       }
     },
@@ -2717,191 +2610,6 @@
               "$ref": "#/$defs/geary:run"
             }
           ]
-        }
-      }
-    },
-    "com.mineinabyss.geary.papermc.features.resourcepacks.ResourcePackContent.ItemPredicates": {
-      "type": "object",
-      "properties": {
-        "customModelData": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "integer"
-            }
-          ]
-        },
-        "blockingModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "blockingTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "brokenModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "brokenTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "castModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "castTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "chargedModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "chargedTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "fireworkModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "fireworkTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "lefthandedModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "lefthandedTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "throwingModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "throwingTexture": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "angleModels": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "angleTextures": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "cooldownModels": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "cooldownTextures": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "damageModels": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "damageTextures": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "pullingModels": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "pullingTextures": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "timeModels": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
-        },
-        "timeTextures": {
-          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
         }
       }
     },
@@ -4437,18 +4145,6 @@
         }
       }
     },
-    "com.mineinabyss.idofront.serialization.TintSourceType": {
-      "enum": [
-        "CONSTANT",
-        "DYE",
-        "FIREWORK",
-        "GRASS",
-        "MAP_COLOR",
-        "POTION",
-        "TEAM",
-        "CUSTOM_MODEL_DATA"
-      ]
-    },
     "com.mineinabyss.staminaclimb.component.StaminaModifier": {
       "type": "object",
       "required": [
@@ -4498,10 +4194,7 @@
       "description": "An action, condition or component, along with options for how it runs",
       "properties": {
         "applyPotionEffects": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/PotionEffect"
-          }
+          "description": "No schema available for geary:apply_potion_effects"
         },
         "become": {
           "type": "string"
@@ -5025,7 +4718,7 @@
           "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<BaseSerializableItemStack>"
         },
         "resourcepack": {
-          "$ref": "#/$defs/geary:resourcepack"
+          "description": "No schema available for geary:resourcepack"
         },
         "set.entityType": {
           "type": "string"
@@ -5391,7 +5084,7 @@
               "type": "null"
             },
             {
-              "$ref": "#/$defs/com.mineinabyss.DoubleRange"
+              "type": "string"
             }
           ]
         }
@@ -5433,10 +5126,7 @@
       "description": "Components on this prefab, by component name",
       "properties": {
         "applyPotionEffects": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/PotionEffect"
-          }
+          "description": "No schema available for geary:apply_potion_effects"
         },
         "become": {
           "type": "string"
@@ -5987,7 +5677,7 @@
           "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<BaseSerializableItemStack>"
         },
         "resourcepack": {
-          "$ref": "#/$defs/geary:resourcepack"
+          "description": "No schema available for geary:resourcepack"
         },
         "run": {
           "$ref": "#/$defs/geary:run"
@@ -6550,7 +6240,7 @@
           "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<BaseSerializableItemStack>"
         },
         "resourcepack": {
-          "$ref": "#/$defs/geary:resourcepack"
+          "description": "No schema available for geary:resourcepack"
         },
         "set.entityType": {
           "type": "string"
@@ -8206,7 +7896,7 @@
               "type": "null"
             },
             {
-              "$ref": "#/$defs/com.mineinabyss.IntRange"
+              "type": "string"
             }
           ]
         },
@@ -8216,7 +7906,7 @@
               "type": "null"
             },
             {
-              "$ref": "#/$defs/com.mineinabyss.FloatRange"
+              "type": "string"
             }
           ]
         }
@@ -8284,56 +7974,6 @@
               "$ref": "#/$defs/geary:run"
             }
           ]
-        }
-      }
-    },
-    "geary:resourcepack": {
-      "type": "object",
-      "properties": {
-        "baseMaterial": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "$ref": "#/$defs/com.mineinabyss.Material"
-            }
-          ]
-        },
-        "itemModel": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "model": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "parentModel": {
-          "type": "string"
-        },
-        "textures": {
-          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<ModelTexturesSurrogate>"
-        },
-        "tintSources": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/TintSource"
-          }
-        },
-        "itemPredicates": {
-          "$ref": "#/$defs/com.mineinabyss.geary.papermc.features.resourcepacks.ResourcePackContent.ItemPredicates"
         }
       }
     },
@@ -8432,12 +8072,7 @@
         "duration": {
           "type": "integer"
         },
-        "effects": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/PotionEffect"
-          }
-        }
+        "effects": {}
       }
     },
     "geary:smite": {
@@ -8715,22 +8350,6 @@
         },
         {
           "$ref": "#/$defs/Location"
-        }
-      ]
-    },
-    "kotlinx.serialization.ContextualSerializer<ModelTexturesSurrogate>": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "$ref": "#/$defs/ModelTextures"
         }
       ]
     },
@@ -9412,7 +9031,7 @@
           "type": "integer"
         },
         "preserve": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<kotlin.String>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         }
       }
     },
@@ -9713,7 +9332,7 @@
           "type": "boolean"
         },
         "preserve": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<kotlin.String>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         }
       }
     },
@@ -9857,7 +9476,7 @@
           "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<SerializableRecipeIngredient>"
         },
         "preserve": {
-          "$ref": "#/$defs/com.mineinabyss.SingleOrList<kotlin.String>"
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Any>"
         }
       }
     },
