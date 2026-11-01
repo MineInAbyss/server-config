@@ -1,9 +1,0 @@
-set.recipes:
-  discoverRecipes: true
-  group: "minecraft:glass"
-  recipes:
-    - type: shaped
-      result: { type: minecraft:glass, amount: 1 }
-      items:
-        - tag: glass
-        - prefab: mineinabyss:undye

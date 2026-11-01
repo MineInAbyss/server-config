@@ -1,0 +1,165 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:stained_terracotta"
+  removeRecipes:
+    - minecraft:black_terracotta
+    - minecraft:blue_terracotta
+    - minecraft:brown_terracotta
+    - minecraft:cyan_terracotta
+    - minecraft:gray_terracotta
+    - minecraft:light_blue_terracotta
+    - minecraft:light_gray_terracotta
+    - minecraft:light_green_terracotta
+    - minecraft:lime_terracotta
+    - minecraft:magenta_terracotta
+    - minecraft:orange_terracotta
+    - minecraft:pink_terracotta
+    - minecraft:purple_terracotta
+    - minecraft:red_terracotta
+    - minecraft:white_terracotta
+    - minecraft:yellow_terracotta
+  recipes:
+    - type: shaped
+      result: { type: minecraft:black_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:black_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:blue_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:blue_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:brown_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:brown_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:cyan_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:cyan_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:gray_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:gray_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_blue_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:light_blue_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_gray_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:light_gray_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_green_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:light_green_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:lime_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:lime_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:magenta_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:magenta_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:orange_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:orange_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:pink_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:pink_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:purple_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:purple_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:red_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:red_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:white_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:white_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:yellow_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { type: minecraft:yellow_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"

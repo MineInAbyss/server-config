@@ -1,0 +1,165 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:stained_glass"
+  removeRecipes:
+    - minecraft:black_stained_glass
+    - minecraft:blue_stained_glass
+    - minecraft:brown_stained_glass
+    - minecraft:cyan_stained_glass
+    - minecraft:gray_stained_glass
+    - minecraft:light_blue_stained_glass
+    - minecraft:light_gray_stained_glass
+    - minecraft:light_green_stained_glass
+    - minecraft:lime_stained_glass
+    - minecraft:magenta_stained_glass
+    - minecraft:orange_stained_glass
+    - minecraft:pink_stained_glass
+    - minecraft:purple_stained_glass
+    - minecraft:red_stained_glass
+    - minecraft:white_stained_glass
+    - minecraft:yellow_stained_glass
+  recipes:
+    - type: shaped
+      result: { type: minecraft:black_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:black_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:blue_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:blue_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:brown_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:brown_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:cyan_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:cyan_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:gray_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:gray_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_blue_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:light_blue_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_gray_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:light_gray_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:light_green_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:light_green_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:lime_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:lime_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:magenta_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:magenta_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:orange_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:orange_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:pink_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:pink_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:purple_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:purple_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:red_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:red_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:white_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:white_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
+    - type: shaped
+      result: { type: minecraft:yellow_stained_glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:yellow_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"

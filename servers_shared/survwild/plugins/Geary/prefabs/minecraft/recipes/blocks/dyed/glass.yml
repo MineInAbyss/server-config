@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:glass"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:glass, amount: 8 }
+      items:
+        T: { tag: glass }
+        D: { prefab: mineinabyss:undye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
