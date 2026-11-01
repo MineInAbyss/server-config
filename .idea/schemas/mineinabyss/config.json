@@ -210,6 +210,10 @@
         "visibleDuration": {
           "$ref": "#/$defs/com.mineinabyss.DurationSerializer",
           "description": "How long a player keeps seeing the bar after their last hit"
+        },
+        "anchorBone": {
+          "type": "string",
+          "description": "ModelEngine bone the bar sits on, falling back to above the head bone for models without one"
         }
       }
     },
