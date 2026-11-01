@@ -1,0 +1,11 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:purple_wool"
+  removeRecipes:
+    - minecraft:purple_wool
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:purple_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:purple_dye

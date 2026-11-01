@@ -1,7 +1,0 @@
-set.recipes:
-  discoverRecipes: true
-  result:
-    type: minecraft:brown_wool
-  recipes:
-    - type: shapeless
-      items: [ mineinabyss:mantoyer_fur ]

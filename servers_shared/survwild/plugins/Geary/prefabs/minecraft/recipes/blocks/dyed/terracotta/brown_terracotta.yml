@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  group: "mineinabyss:dye_terracotta"
+  removeRecipes:
+    - minecraft:brown_terracotta
+  recipes:
+    - type: shaped
+      result: { type: minecraft:brown_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { prefab: minecraft:brown_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"

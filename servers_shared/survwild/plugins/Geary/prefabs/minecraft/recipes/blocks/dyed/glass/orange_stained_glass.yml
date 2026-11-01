@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:orange_stained_glass"
+  removeRecipes:
+    - minecraft:orange_stained_glass
+  recipes:
+    - type: shaped
+      result: { type: minecraft:orange_stained_glass, amount: 1 }
+      items:
+        T: { tag: glass }
+        D: { type: minecraft:orange_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"
