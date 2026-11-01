@@ -1,0 +1,96 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:wool"
+  removeRecipes:
+    - minecraft:dye_black_wool
+    - minecraft:dye_blue_wool
+    - minecraft:dye_brown_wool
+    - minecraft:dye_cyan_wool
+    - minecraft:dye_gray_wool
+    - minecraft:dye_light_blue_wool
+    - minecraft:dye_light_gray_wool
+    - minecraft:dye_light_green_wool
+    - minecraft:dye_lime_wool
+    - minecraft:dye_magenta_wool
+    - minecraft:dye_orange_wool
+    - minecraft:dye_pink_wool
+    - minecraft:dye_purple_wool
+    - minecraft:dye_red_wool
+    - minecraft:dye_white_wool
+    - minecraft:dye_yellow_wool
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:black_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:black_dye
+    - type: shapeless
+      result: { type: minecraft:blue_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:blue_dye
+    - type: shapeless
+      result: { type: minecraft:brown_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:brown_dye
+    - type: shapeless
+      result: { type: minecraft:cyan_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:cyan_dye
+    - type: shapeless
+      result: { type: minecraft:gray_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:gray_dye
+    - type: shapeless
+      result: { type: minecraft:light_blue_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:light_blue_dye
+    - type: shapeless
+      result: { type: minecraft:light_gray_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:light_gray_dye
+    - type: shapeless
+      result: { type: minecraft:lime_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:lime_dye
+    - type: shapeless
+      result: { type: minecraft:magenta_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:magenta_dye
+    - type: shapeless
+      result: { type: minecraft:orange_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:orange_dye
+    - type: shapeless
+      result: { type: minecraft:pink_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:pink_dye
+    - type: shapeless
+      result: { type: minecraft:purple_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:purple_dye
+    - type: shapeless
+      result: { type: minecraft:red_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:red_dye
+    - type: shapeless
+      result: { type: minecraft:white_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:white_dye
+    - type: shapeless
+      result: { type: minecraft:yellow_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:yellow_dye
