@@ -23,9 +23,9 @@
                 "base": "minecraft:item/paper",
                 "model": {"type": "minecraft:player_head"},
                 "transformation": {
-                  "translation": [0.5, -8.0, 0.5],
+                  "translation": [0.5, -0.0890625, 0.5],
                   "left_rotation": [1.0, 0.0, 0.0, 0.0],
-                  "scale": [20.0, 20.0, 20.0],
+                  "scale": [3.6125, 3.6125, 3.6125],
                   "right_rotation": [0.0, 0.0, 0.0, 1.0]
                 }
               },
@@ -34,9 +34,9 @@
                 "base": "minecraft:item/paper",
                 "model": {"type": "minecraft:player_head"},
                 "transformation": {
-                  "translation": [1.0625, -9.0625, 0.5],
+                  "translation": [1.0625, -0.9390625, 0.5],
                   "left_rotation": [1.0, 0.0, 0.0, 0.0],
-                  "scale": [20.0, 20.0, 20.0],
+                  "scale": [3.6125, 3.6125, 3.6125],
                   "right_rotation": [0.0, 0.0, 0.0, 1.0]
                 }
               }
