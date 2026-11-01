@@ -1,0 +1,94 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.dialogs.DialogsConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.dialogs.DialogsConfig": {
+      "type": "object",
+      "properties": {
+        "linesPerPage": {
+          "type": "integer"
+        },
+        "defaultStyle": {
+          "type": "string"
+        },
+        "styles": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/com.mineinabyss.features.dialogs.DialogStyle"
+          }
+        },
+        "denySound": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.features.dialogs.DialogStyle": {
+      "type": "object",
+      "properties": {
+        "typingSpeed": {
+          "type": "integer"
+        },
+        "typingSound": {
+          "type": "string"
+        },
+        "selectionSound": {
+          "type": "string"
+        },
+        "range": {
+          "type": "number"
+        },
+        "effect": {
+          "type": "string"
+        },
+        "answerNumbers": {
+          "type": "boolean"
+        },
+        "npcFocus": {
+          "type": "boolean"
+        },
+        "textColor": {
+          "type": "string"
+        },
+        "lockedTextColor": {
+          "type": "string"
+        },
+        "backgroundFog": {
+          "type": "boolean"
+        },
+        "characterNameColor": {
+          "type": "string"
+        },
+        "characterImage": {
+          "type": "string"
+        },
+        "nameStartImage": {
+          "type": "string"
+        },
+        "nameMidImage": {
+          "type": "string"
+        },
+        "nameEndImage": {
+          "type": "string"
+        },
+        "nameBackgroundColor": {
+          "type": "string"
+        },
+        "answerBackgroundImage": {
+          "type": "string"
+        },
+        "dialogueBackgroundImage": {
+          "type": "string"
+        },
+        "dialogueBackgroundColor": {
+          "type": "string"
+        },
+        "answerBackgroundColor": {
+          "type": "string"
+        },
+        "cursorIconImage": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

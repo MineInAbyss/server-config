@@ -1,0 +1,127 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.tutorial.Tutorial",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.tutorial.Tutorial": {
+      "type": "object",
+      "properties": {
+        "firstJoinLocation": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "tutorialEntities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mineinabyss:tutorial_entity"
+          }
+        },
+        "start": {
+          "$ref": "#/$defs/com.mineinabyss.features.tutorial.TutorialRegion"
+        },
+        "end": {
+          "$ref": "#/$defs/com.mineinabyss.features.tutorial.TutorialRegion"
+        }
+      }
+    },
+    "mineinabyss:tutorial_entity": {
+      "type": "object",
+      "required": [
+        "location",
+        "text"
+      ],
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "textOpacity": {
+          "type": "integer"
+        },
+        "lineWidth": {
+          "type": "integer"
+        },
+        "backgroundColor": {
+          "$ref": "#/$defs/Color"
+        },
+        "shadow": {
+          "type": "boolean"
+        },
+        "alignment": {
+          "$ref": "#/$defs/org.bukkit.entity.TextDisplay.TextAlignment"
+        },
+        "billboard": {
+          "$ref": "#/$defs/org.bukkit.entity.Display.Billboard"
+        },
+        "scale": {
+          "type": "string"
+        },
+        "leftRotation": {
+          "type": "string"
+        },
+        "rightRotation": {
+          "type": "string"
+        },
+        "seeThrough": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Color": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$|^#[0-9a-fA-F]{8}$|^0x[0-9a-fA-F]{6}$|^0x[0-9a-fA-F]{8}$|^\\d{1,8}, *\\d{1,8}, *\\d{1,8}$|^\\d{1,8}, *\\d{1,8}, *\\d{1,8}, *\\d{1,8}$",
+      "title": "Color"
+    },
+    "org.bukkit.entity.TextDisplay.TextAlignment": {
+      "enum": [
+        "CENTER",
+        "LEFT",
+        "RIGHT"
+      ]
+    },
+    "org.bukkit.entity.Display.Billboard": {
+      "enum": [
+        "FIXED",
+        "VERTICAL",
+        "HORIZONTAL",
+        "CENTER"
+      ]
+    },
+    "com.mineinabyss.features.tutorial.TutorialRegion": {
+      "type": "object",
+      "properties": {
+        "region": {
+          "$ref": "#/$defs/com.mineinabyss.deeperworld.datastructures.Region"
+        },
+        "target": {
+          "type": "string"
+        },
+        "targetYaw": {
+          "type": "number"
+        }
+      }
+    },
+    "com.mineinabyss.deeperworld.datastructures.Region": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

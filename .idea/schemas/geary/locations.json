@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "namespaces": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string",
+            "pattern": "^\\$(inherit|remove )"
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": {
+    "allOf": [
+      {
+        "$ref": "#/$defs/com.mineinabyss.geary.papermc.spawning.config.SpawnLocationsConfig"
+      },
+      {
+        "type": "object",
+        "properties": {
+          "inherit": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^\\$(inherit|remove )"
+                    }
+                  ]
+                }
+              }
+            ],
+            "description": "Names of entries to inherit properties from"
+          }
+        }
+      }
+    ]
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.geary.papermc.spawning.config.SpawnLocationsConfig": {
+      "type": "object",
+      "properties": {
+        "Locations": {
+          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
+        }
+      }
+    },
+    "kotlin.collections.LinkedHashMap": {
+      "type": "object"
+    }
+  }
+}

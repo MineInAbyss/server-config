@@ -1,0 +1,320 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.AbyssFeatureConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.AbyssFeatureConfig": {
+      "type": "object",
+      "properties": {
+        "enableAll": {
+          "type": "boolean",
+          "description": "Ignore following options, enable all features"
+        },
+        "ansiblePull": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "achievements": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "antiCheese": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle",
+          "description": "Choose which features to enable with true/false"
+        },
+        "cinematics": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "core": {
+          "$ref": "#/$defs/com.mineinabyss.features.core.CoreFeatureConfig"
+        },
+        "cosmetics": {
+          "$ref": "#/$defs/com.mineinabyss.features.cosmetics.CosmeticsConfig"
+        },
+        "curse": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "customHud": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "descent": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "dialogs": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "displayLocker": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "guilds": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "hubstorage": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "keepInventory": {
+          "$ref": "#/$defs/com.mineinabyss.features.keepinventory.KeepInvConfig"
+        },
+        "layers": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "locationPoints": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "lootCrates": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "mobHealth": {
+          "$ref": "#/$defs/com.mineinabyss.features.mobhealth.MobHealthConfig"
+        },
+        "misc": {
+          "$ref": "#/$defs/com.mineinabyss.features.misc.MiscConfig"
+        },
+        "music": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "npcs": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "shopkeeping": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "okiboTravel": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "orthBanking": {
+          "$ref": "#/$defs/com.mineinabyss.features.orthbanking.OrthBankConfig"
+        },
+        "patreon": {
+          "$ref": "#/$defs/com.mineinabyss.features.patreons.PatreonConfig"
+        },
+        "playerProfile": {
+          "$ref": "#/$defs/com.mineinabyss.features.playerprofile.PlayerProfileConfig"
+        },
+        "pvp": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "regionContexts": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "relics": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "tools": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "transitions": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "triggerPoints": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "tutorial": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "quests": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "goals": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        },
+        "respawn": {
+          "$ref": "#/$defs/com.mineinabyss.features.Toggle"
+        }
+      }
+    },
+    "com.mineinabyss.features.Toggle": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.features.core.CoreFeatureConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "waterfallDamageMultiplier": {
+          "type": "number"
+        },
+        "waterfallMoveMultiplier": {
+          "type": "number"
+        },
+        "bubbleColumnDamageMultiplier": {
+          "type": "number"
+        },
+        "bubbleColumnBreathMultiplier": {
+          "type": "integer"
+        },
+        "serverLinks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.features.core.CoreFeatureConfig.ServerLink"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.features.core.CoreFeatureConfig.ServerLink": {
+      "type": "object",
+      "required": [
+        "displayName",
+        "url"
+      ],
+      "properties": {
+        "displayName": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.features.cosmetics.CosmeticsConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "equipWhistleCosmetic": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.features.keepinventory.KeepInvConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "keepInvInVoid": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.features.mobhealth.MobHealthConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "defaultStyle": {
+          "type": "string",
+          "description": "Style for mobs whose mineinabyss:show_health_bar names a style that is not defined below"
+        },
+        "styles": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/com.mineinabyss.features.mobhealth.HealthBarStyle"
+          }
+        },
+        "visibleDuration": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer",
+          "description": "How long a player keeps seeing the bar after their last hit"
+        }
+      }
+    },
+    "com.mineinabyss.features.mobhealth.HealthBarStyle": {
+      "type": "object",
+      "properties": {
+        "frameEmote": {
+          "type": "string",
+          "description": "Emojy emotes the bar is drawn with\nFill and trail are sheets with one row per pixel of health, from empty to full"
+        },
+        "fillEmote": {
+          "type": "string"
+        },
+        "trailEmote": {
+          "type": "string"
+        },
+        "fillInset": {
+          "type": "integer",
+          "description": "Pixels between the left edge of the frame and the fill, and between the fill and the right edge"
+        },
+        "fillPadding": {
+          "type": "integer"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "com.mineinabyss.features.misc.MiscConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "grassBonemeal": {
+          "$ref": "#/$defs/com.mineinabyss.features.misc.GrassBonemealConfig"
+        }
+      }
+    },
+    "com.mineinabyss.features.misc.GrassBonemealConfig": {
+      "type": "object",
+      "properties": {
+        "replaceChance": {
+          "type": "number",
+          "description": "Chance for each plant bonemeal grows on grass to be swapped for one of the blocks below"
+        },
+        "prefabs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "Geary prefabs with a nexo:custom_block component, mapped to their weight"
+        },
+        "vanilla": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "Vanilla block data like minecraft:poppy, mapped to their weight"
+        }
+      }
+    },
+    "com.mineinabyss.features.orthbanking.OrthBankConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "balanceHudId": {
+          "type": "string"
+        },
+        "balanceHudOffhandId": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.features.patreons.PatreonConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "groupTiers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.features.playerprofile.PlayerProfileConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "validBackgroundIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

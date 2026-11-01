@@ -1,0 +1,117 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.guilds.GuildsConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.guilds.GuildsConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "guildChannelTemplate": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel"
+        },
+        "guildNameMaxLength": {
+          "type": "integer"
+        },
+        "guildNameBannedWords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "canOpenGuildMemberGraves": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyChannel": {
+      "type": "object",
+      "required": [
+        "channelType"
+      ],
+      "properties": {
+        "channelType": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.components.ChannelType"
+        },
+        "permission": {
+          "type": "string"
+        },
+        "logToConsole": {
+          "type": "boolean"
+        },
+        "proxy": {
+          "type": "boolean"
+        },
+        "discordsrv": {
+          "type": "boolean"
+        },
+        "messageDeletion": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel.MessageDeletion"
+        },
+        "isDefaultChannel": {
+          "type": "boolean"
+        },
+        "isStaffChannel": {
+          "type": "boolean"
+        },
+        "format": {
+          "type": "string"
+        },
+        "messageColor": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "channelRadius": {
+          "type": "integer"
+        },
+        "channelAliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.chatty.components.ChannelType": {
+      "enum": [
+        "GLOBAL",
+        "RADIUS",
+        "PERMISSION",
+        "CUSTOM"
+      ]
+    },
+    "com.mineinabyss.chatty.ChattyChannel.MessageDeletion": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "position": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel.MessageDeletion.MessageDeletionPosition"
+        },
+        "format": {
+          "type": "string"
+        },
+        "notifyStaff": {
+          "type": "boolean"
+        },
+        "logDeletedMessages": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyChannel.MessageDeletion.MessageDeletionPosition": {
+      "enum": [
+        "PREFIX",
+        "SUFFIX"
+      ]
+    }
+  }
+}

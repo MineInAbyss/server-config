@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/$defs/com.mineinabyss.packy.config.PackyTemplate"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.packy.config.PackyTemplate": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "conflictsWith": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "githubDownload": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/com.mineinabyss.packy.config.PackyTemplate.GithubDownload"
+            }
+          ]
+        },
+        "loadTrigger": {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<LoadTrigger>"
+        },
+        "filePath": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "com.mineinabyss.packy.config.PackyTemplate.GithubDownload": {
+      "type": "object",
+      "required": [
+        "org",
+        "repo",
+        "branch"
+      ],
+      "properties": {
+        "org": {
+          "type": "string"
+        },
+        "repo": {
+          "type": "string"
+        },
+        "branch": {
+          "type": "string"
+        },
+        "subFolder": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<LoadTrigger>": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<LoadTrigger>.ModelEngine"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<LoadTrigger>.Nexo"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<LoadTrigger>.None"
+        }
+      ]
+    },
+    "kotlinx.serialization.Sealed<LoadTrigger>.ModelEngine": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "ModelEngine"
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<LoadTrigger>.Nexo": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Nexo"
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<LoadTrigger>.None": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "None"
+        }
+      }
+    }
+  }
+}

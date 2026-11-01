@@ -1,0 +1,315 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.chatty.ChattyConfig": {
+      "type": "object",
+      "properties": {
+        "nicknames": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Nickname"
+        },
+        "chat": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Chat"
+        },
+        "ping": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Ping"
+        },
+        "join": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Join"
+        },
+        "leave": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Leave"
+        },
+        "proxy": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Proxy"
+        },
+        "privateMessages": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.PrivateMessages"
+        },
+        "channels": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Nickname": {
+      "type": "object",
+      "properties": {
+        "useDisplayName": {
+          "type": "boolean"
+        },
+        "maxLength": {
+          "type": "integer"
+        },
+        "countTagsInLength": {
+          "type": "boolean"
+        },
+        "nickNameOtherPrefix": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Chat": {
+      "type": "object",
+      "properties": {
+        "disableChatSigning": {
+          "type": "boolean"
+        },
+        "commandSpyFormat": {
+          "type": "string"
+        },
+        "filters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Chat.Filter"
+          },
+          "description": "Valid formats: STRIKETHROUGH, CENSOR, DELETE, BLOCK\nSTRIKETHROUGH: Replaces filtered words with a strikethrough\nCENSOR: Replaces filtered words with a censor\nDELETE: Deletes filtered words\nBLOCK: Blocks filtered words from being sent"
+        },
+        "formatURLs": {
+          "type": "boolean"
+        },
+        "urlReplacements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Chat.UrlReplacements"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Chat.Filter": {
+      "type": "object",
+      "required": [
+        "pattern",
+        "format"
+      ],
+      "properties": {
+        "pattern": {
+          "type": "string"
+        },
+        "format": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.Chat.FilterFormat"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Chat.FilterFormat": {
+      "enum": [
+        "STRIKETHROUGH",
+        "CENSOR",
+        "DELETE",
+        "BLOCK"
+      ]
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Chat.UrlReplacements": {
+      "type": "object",
+      "required": [
+        "pattern",
+        "replacement"
+      ],
+      "properties": {
+        "pattern": {
+          "type": "string"
+        },
+        "replacement": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Ping": {
+      "type": "object",
+      "properties": {
+        "enabledChannels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "defaultPingSound": {
+          "type": "string"
+        },
+        "alternativePingSounds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pingVolume": {
+          "type": "number"
+        },
+        "pingPitch": {
+          "type": "number"
+        },
+        "pingPrefix": {
+          "type": "string"
+        },
+        "clickToReply": {
+          "type": "boolean"
+        },
+        "pingReceiveFormat": {
+          "type": "string"
+        },
+        "pingSendFormat": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Join": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "firstJoin": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyConfig.FirstJoin"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.FirstJoin": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Leave": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.Proxy": {
+      "type": "object",
+      "properties": {
+        "discordSrvChannelID": {
+          "type": "string"
+        },
+        "proxyToDiscord": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyConfig.PrivateMessages": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "proxy": {
+          "type": "boolean"
+        },
+        "messageReplyTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "messageSendFormat": {
+          "type": "string"
+        },
+        "messageReceiveFormat": {
+          "type": "string"
+        },
+        "messageSendSound": {
+          "type": "string"
+        },
+        "messageReceivedSound": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "com.mineinabyss.chatty.ChattyChannel": {
+      "type": "object",
+      "required": [
+        "channelType"
+      ],
+      "properties": {
+        "channelType": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.components.ChannelType"
+        },
+        "permission": {
+          "type": "string"
+        },
+        "logToConsole": {
+          "type": "boolean"
+        },
+        "proxy": {
+          "type": "boolean"
+        },
+        "discordsrv": {
+          "type": "boolean"
+        },
+        "messageDeletion": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel.MessageDeletion"
+        },
+        "isDefaultChannel": {
+          "type": "boolean"
+        },
+        "isStaffChannel": {
+          "type": "boolean"
+        },
+        "format": {
+          "type": "string"
+        },
+        "messageColor": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "channelRadius": {
+          "type": "integer"
+        },
+        "channelAliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.chatty.components.ChannelType": {
+      "enum": [
+        "GLOBAL",
+        "RADIUS",
+        "PERMISSION",
+        "CUSTOM"
+      ]
+    },
+    "com.mineinabyss.chatty.ChattyChannel.MessageDeletion": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "position": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyChannel.MessageDeletion.MessageDeletionPosition"
+        },
+        "format": {
+          "type": "string"
+        },
+        "notifyStaff": {
+          "type": "boolean"
+        },
+        "logDeletedMessages": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyChannel.MessageDeletion.MessageDeletionPosition": {
+      "enum": [
+        "PREFIX",
+        "SUFFIX"
+      ]
+    }
+  }
+}

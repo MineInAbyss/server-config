@@ -1,0 +1,157 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "object",
+      "properties": {
+        "bonfire:bonfire": {
+          "$ref": "#/$defs/bonfire:bonfire"
+        },
+        "bonfire:bonfireDebug": {
+          "$ref": "#/$defs/bonfire:bonfire_debug"
+        },
+        "bonfire:bonfireRemoved": {
+          "$ref": "#/$defs/bonfire:bonfire_removed"
+        },
+        "bonfire:bonfireRespawn": {
+          "$ref": "#/$defs/bonfire:bonfire_respawn"
+        },
+        "bonfire:effectArea": {
+          "$ref": "#/$defs/bonfire:effect_area"
+        },
+        "bonfire:expirationTime": {
+          "$ref": "#/$defs/bonfire:expiration_time"
+        }
+      }
+    },
+    "actions": {
+      "type": "object"
+    },
+    "conditions": {
+      "type": "object"
+    },
+    "events": {
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "bonfire:bonfire": {
+      "type": "object",
+      "properties": {
+        "bonfireOwner": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "bonfirePlayers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maxPlayerCount": {
+          "type": "integer"
+        },
+        "bonfireExpirationTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "bonfire:bonfire_debug": {
+      "type": "object"
+    },
+    "bonfire:bonfire_removed": {
+      "type": "object"
+    },
+    "bonfire:bonfire_respawn": {
+      "type": "object",
+      "required": [
+        "bonfireUuid",
+        "bonfireLocation"
+      ],
+      "properties": {
+        "bonfireUuid": {
+          "type": "string"
+        },
+        "bonfireLocation": {
+          "$ref": "#/$defs/kotlinx.serialization.ContextualSerializer<Location>"
+        }
+      }
+    },
+    "kotlinx.serialization.ContextualSerializer<Location>": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "#/$defs/Location"
+        }
+      ]
+    },
+    "Location": {
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "properties": {
+        "world": {
+          "type": "string"
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        },
+        "yaw": {
+          "type": "number"
+        },
+        "pitch": {
+          "type": "number"
+        }
+      }
+    },
+    "bonfire:effect_area": {
+      "type": "object",
+      "required": [
+        "uuid"
+      ],
+      "properties": {
+        "uuid": {
+          "type": "string"
+        }
+      }
+    },
+    "bonfire:expiration_time": {
+      "type": "object",
+      "required": [
+        "totalUnlitTime",
+        "lastUnlitTimeStamp"
+      ],
+      "properties": {
+        "totalUnlitTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "lastUnlitTimeStamp": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

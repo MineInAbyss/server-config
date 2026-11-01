@@ -1,0 +1,65 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.geary.papermc.spawning.config.SpawnConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.geary.papermc.spawning.config.SpawnConfig": {
+      "type": "object",
+      "properties": {
+        "defaultCap": {
+          "type": "integer",
+          "description": "Default per player spawn cap limit when not explicitly set in playerCaps"
+        },
+        "playerCaps": {
+          "$ref": "#/$defs/kotlin.collections.LinkedHashMap",
+          "description": "The maximum number of mobs around each palyer per spawn category."
+        },
+        "range": {
+          "$ref": "#/$defs/com.mineinabyss.geary.papermc.spawning.config.SpawnConfig.Range",
+          "description": "Options about the spawn range of mobs around each player"
+        },
+        "spawnDelay": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer",
+          "description": "The delay between each spawning-task run"
+        },
+        "runTimes": {
+          "$ref": "#/$defs/kotlin.collections.LinkedHashMap",
+          "description": "How often should each spawn category, attempt spawns. The higher a value, the more time between spawn attempts."
+        },
+        "maxSpawnAttemptsPerPlayer": {
+          "type": "integer",
+          "description": "How many times to try and find a valid spawn position around a player before giving up."
+        }
+      }
+    },
+    "kotlin.collections.LinkedHashMap": {
+      "type": "object"
+    },
+    "com.mineinabyss.geary.papermc.spawning.config.SpawnConfig.Range": {
+      "type": "object",
+      "properties": {
+        "maxDistance": {
+          "type": "integer"
+        },
+        "minDistance": {
+          "type": "integer"
+        },
+        "maxVerticalDistance": {
+          "type": "integer"
+        },
+        "playerCapRadius": {
+          "type": "integer",
+          "description": "Radius around the player to count mob categories for spawn caps."
+        },
+        "defaultNearbyRange": {
+          "type": "number",
+          "description": "Radius to count nearby mobs for the maxNearby condition."
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    }
+  }
+}

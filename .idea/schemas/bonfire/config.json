@@ -1,0 +1,98 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.bonfire.BonfireConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.bonfire.BonfireConfig": {
+      "type": "object",
+      "properties": {
+        "maxPlayerCount": {
+          "type": "integer"
+        },
+        "nexoFurnitureId": {
+          "type": "string"
+        },
+        "bonfireExpirationTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "bonfireInteractCooldown": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "respawnSetSound": {
+          "$ref": "#/$defs/com.mineinabyss.bonfire.BonfireConfig.BonfireSound"
+        },
+        "respawnUnsetSound": {
+          "$ref": "#/$defs/com.mineinabyss.bonfire.BonfireConfig.BonfireSound"
+        },
+        "effectRadius": {
+          "type": "number"
+        },
+        "effectStrength": {
+          "type": "number"
+        },
+        "effectRegenRate": {
+          "type": "integer"
+        },
+        "allowSettingBedRespawns": {
+          "type": "boolean"
+        },
+        "debugTextOffset": {
+          "$ref": "#/$defs/Vector"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "com.mineinabyss.bonfire.BonfireConfig.BonfireSound": {
+      "type": "object",
+      "required": [
+        "sound"
+      ],
+      "properties": {
+        "sound": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "number"
+        },
+        "pitch": {
+          "type": "number"
+        },
+        "category": {
+          "$ref": "#/$defs/org.bukkit.SoundCategory"
+        }
+      }
+    },
+    "org.bukkit.SoundCategory": {
+      "enum": [
+        "MASTER",
+        "MUSIC",
+        "RECORDS",
+        "WEATHER",
+        "BLOCKS",
+        "HOSTILE",
+        "NEUTRAL",
+        "PLAYERS",
+        "AMBIENT",
+        "VOICE",
+        "UI"
+      ]
+    },
+    "Vector": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$ref": "#/$defs/geary:spread_entities_types",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "geary:spread_entities_types": {
+      "type": "object",
+      "properties": {
+        "types": {
+          "$ref": "#/$defs/kotlin.collections.LinkedHashMap"
+        },
+        "spawnDelay": {
+          "type": "integer"
+        },
+        "worldName": {
+          "type": "string"
+        },
+        "clearSpawnsOlderThan": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        }
+      }
+    },
+    "kotlin.collections.LinkedHashMap": {
+      "type": "object"
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    }
+  }
+}

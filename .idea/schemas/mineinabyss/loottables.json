@@ -1,0 +1,61 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.lootcrates.LootCratesConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.lootcrates.LootCratesConfig": {
+      "type": "object",
+      "properties": {
+        "messages": {
+          "$ref": "#/$defs/com.mineinabyss.features.lootcrates.LootCratesConfig.Messages"
+        }
+      }
+    },
+    "com.mineinabyss.features.lootcrates.LootCratesConfig.Messages": {
+      "type": "object",
+      "properties": {
+        "tableNotFound": {
+          "type": "string"
+        },
+        "noPermissionToEdit": {
+          "type": "string"
+        },
+        "noPermissionToOpen": {
+          "type": "string"
+        },
+        "noPermissionToBreak": {
+          "type": "string"
+        },
+        "editModeRequired": {
+          "type": "string"
+        },
+        "editModeEnabled": {
+          "type": "string"
+        },
+        "editModeDisabled": {
+          "type": "string"
+        },
+        "notLookingAtCrate": {
+          "type": "string"
+        },
+        "customLootSaved": {
+          "type": "string"
+        },
+        "customLootNotSaved": {
+          "type": "string"
+        },
+        "lootNotLoaded": {
+          "type": "string"
+        },
+        "resetForEveryone": {
+          "type": "string"
+        },
+        "resetForPlayer": {
+          "type": "string"
+        },
+        "lootTableItemTitle": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

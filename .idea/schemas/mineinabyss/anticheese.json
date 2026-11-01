@@ -1,0 +1,14 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.anticheese.AntiCheeseConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.anticheese.AntiCheeseConfig": {
+      "type": "object",
+      "properties": {
+        "allowAllHubFishing": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

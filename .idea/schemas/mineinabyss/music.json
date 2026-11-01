@@ -1,0 +1,84 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.music.MusicConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.music.MusicConfig": {
+      "type": "object",
+      "properties": {
+        "songWaitTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationRange",
+          "description": "The min/max amount of time to wait before playing a song after once finishes\nDefault is 10..20 minutes in Minecraft."
+        },
+        "waitTimeOnLogin": {
+          "$ref": "#/$defs/com.mineinabyss.DurationRange",
+          "description": "How long to wait before playing a song after a player logs in"
+        },
+        "songs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.components.music.Song"
+          },
+          "description": "A list of song definitions, options are:\nkey: The resourcepack key for this song\nduration: How long the song lasts\ncategory: The sound category to play the song in (default is MUSIC)\nvolume: The volume of the song (default is 1)\npitch: The pitch of the song (default is 1)\nregions: Layers & sections this song can play in (can play anywhere if empty)"
+        },
+        "debug": {
+          "type": "boolean"
+        }
+      }
+    },
+    "com.mineinabyss.DurationRange": {
+      "type": "string",
+      "pattern": "^\\d+(\\.\\d+)?(ms|t|s|m|h|d|w|mo)((\\.\\.| to |-)\\d+(\\.\\d+)?(ms|t|s|m|h|d|w|mo))?$"
+    },
+    "com.mineinabyss.components.music.Song": {
+      "type": "object",
+      "required": [
+        "key",
+        "duration",
+        "regions"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "duration": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "category": {
+          "$ref": "#/$defs/org.bukkit.SoundCategory"
+        },
+        "volume": {
+          "type": "number"
+        },
+        "pitch": {
+          "type": "number"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "org.bukkit.SoundCategory": {
+      "enum": [
+        "MASTER",
+        "MUSIC",
+        "RECORDS",
+        "WEATHER",
+        "BLOCKS",
+        "HOSTILE",
+        "NEUTRAL",
+        "PLAYERS",
+        "AMBIENT",
+        "VOICE",
+        "UI"
+      ]
+    }
+  }
+}

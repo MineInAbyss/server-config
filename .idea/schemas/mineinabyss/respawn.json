@@ -1,0 +1,36 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.respawn.RespawnConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.respawn.RespawnConfig": {
+      "type": "object",
+      "properties": {
+        "respawns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.features.respawn.RespawnEntry"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.features.respawn.RespawnEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "depth",
+        "location"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "depth": {
+          "type": "integer"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

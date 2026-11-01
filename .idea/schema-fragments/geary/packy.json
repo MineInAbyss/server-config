@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "object",
+      "properties": {
+        "packy:packyData": {
+          "$ref": "#/$defs/packy:packy_data"
+        }
+      }
+    },
+    "actions": {
+      "type": "object"
+    },
+    "conditions": {
+      "type": "object"
+    },
+    "events": {
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "packy:packy_data": {
+      "type": "object",
+      "properties": {
+        "templates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "bypassForced": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
