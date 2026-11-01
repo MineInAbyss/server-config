@@ -24,13 +24,13 @@ datapack/common-deeperworld:
 
 datapack/common-armortrims:
   copyPaths:
-    - source: packs_data/armor_trims
-      dest:   worlds/world/datapacks/armor_trims
+    - source: packs_data/custom_recipes
+      dest:   worlds/world/datapacks/custom_recipes
 
 datapack/common-paintings:
   copyPaths:
-    - source: packs_data/paintings
-      dest:   worlds/world/datapacks/paintings
+    - source: packs_data/custom_paintings
+      dest:   worlds/world/datapacks/custom_paintings
 
 feat/common-chat:
   copyPaths:
@@ -121,10 +121,10 @@ feat/shared-music:
   copyPaths:
     - source: "{{ privateSettingsDest }}/packs_assets/feat_music"
       dest:   plugins/Packy/resourcepacks/feat_music
-    - source: packs_data/music_discs
-      dest:   worlds/world/datapacks/music_discs
+    - source: packs_data/custom_music_discs
+      dest:   worlds/world/datapacks/custom_music_discs
   files:
-    worlds/world/datapacks/music_discs:
+    worlds/world/datapacks/custom_music_discs:
       deleteUntracked: true
 
 feat/shared-uis:
