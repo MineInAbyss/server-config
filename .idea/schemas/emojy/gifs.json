@@ -1,0 +1,88 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.emojy.config.Gifs",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.emojy.config.Gifs": {
+      "type": "object",
+      "properties": {
+        "gifs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.emojy.config.GifConfig"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.emojy.config.GifConfig": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "frameCount": {
+          "type": "integer"
+        },
+        "framePath": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "ascent": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "type": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/com.mineinabyss.emojy.config.Gif.GifType"
+            }
+          ]
+        }
+      }
+    },
+    "com.mineinabyss.emojy.config.Gif.GifType": {
+      "enum": [
+        "SHADER",
+        "OBFUSCATION",
+        "SPRITE"
+      ]
+    }
+  }
+}

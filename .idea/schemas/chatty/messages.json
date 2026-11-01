@@ -1,0 +1,209 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.chatty.ChattyMessages": {
+      "type": "object",
+      "properties": {
+        "nicknames": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.Nicknames"
+        },
+        "privateMessages": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.PrivateMessages"
+        },
+        "spying": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.Spying"
+        },
+        "ping": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.Pings"
+        },
+        "messageDeletion": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.MessageDeletion"
+        },
+        "chatFilter": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.ChatFilter"
+        },
+        "channels": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.Channels"
+        },
+        "joinLeave": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.JoinLeave"
+        },
+        "other": {
+          "$ref": "#/$defs/com.mineinabyss.chatty.ChattyMessages.Other"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.Nicknames": {
+      "type": "object",
+      "properties": {
+        "selfSuccess": {
+          "type": "string"
+        },
+        "selfDenied": {
+          "type": "string"
+        },
+        "selfEmpty": {
+          "type": "string"
+        },
+        "otherSuccess": {
+          "type": "string"
+        },
+        "otherDenied": {
+          "type": "string"
+        },
+        "otherEmpty": {
+          "type": "string"
+        },
+        "invalidPlayer": {
+          "type": "string"
+        },
+        "consoleNicknameSelf": {
+          "type": "string"
+        },
+        "tooLong": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.PrivateMessages": {
+      "type": "object",
+      "properties": {
+        "disabled": {
+          "type": "string"
+        },
+        "invalidPlayer": {
+          "type": "string"
+        },
+        "emptyReply": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.Spying": {
+      "type": "object",
+      "properties": {
+        "commandSpyOn": {
+          "type": "string"
+        },
+        "commandSpyOff": {
+          "type": "string"
+        },
+        "startSpyingOnChannel": {
+          "type": "string"
+        },
+        "stopSpyingOnChannel": {
+          "type": "string"
+        },
+        "cannotSpyOnChannel": {
+          "type": "string"
+        },
+        "noChannelWithName": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.Pings": {
+      "type": "object",
+      "properties": {
+        "toggledPingSound": {
+          "type": "string"
+        },
+        "changedPingSound": {
+          "type": "string"
+        },
+        "invalidPingSound": {
+          "type": "string"
+        },
+        "replyMessage": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.MessageDeletion": {
+      "type": "object",
+      "properties": {
+        "hoverText": {
+          "type": "string"
+        },
+        "notifyStaff": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "deletionSuccess": {
+          "type": "string"
+        },
+        "deletionFailed": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.ChatFilter": {
+      "type": "object",
+      "properties": {
+        "blockMessage": {
+          "type": "string"
+        },
+        "deleteWordsEmptyMessage": {
+          "type": "string"
+        },
+        "notifyStaff": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.Channels": {
+      "type": "object",
+      "properties": {
+        "availableChannels": {
+          "type": "string"
+        },
+        "channelChanged": {
+          "type": "string"
+        },
+        "noChannelWithName": {
+          "type": "string"
+        },
+        "missingChannelPermission": {
+          "type": "string"
+        },
+        "emptyChannelMessage": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.JoinLeave": {
+      "type": "object",
+      "properties": {
+        "firstJoinMessage": {
+          "type": "string"
+        },
+        "joinMessage": {
+          "type": "string"
+        },
+        "leaveMessage": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.chatty.ChattyMessages.Other": {
+      "type": "object",
+      "properties": {
+        "disallowedStyling": {
+          "type": "string"
+        },
+        "configReloaded": {
+          "type": "string"
+        },
+        "messagesReloaded": {
+          "type": "string"
+        },
+        "nickNameChanged": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

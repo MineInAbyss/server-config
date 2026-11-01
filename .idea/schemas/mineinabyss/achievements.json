@@ -1,0 +1,157 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.achievements.AchievementsConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.achievements.AchievementsConfig": {
+      "type": "object",
+      "properties": {
+        "achievements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.features.achievements.Achievement"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.features.achievements.Achievement": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "requires": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>"
+          }
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>.climb"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>.craft"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>.kill"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>.pickup"
+        },
+        {
+          "$ref": "#/$defs/kotlinx.serialization.Sealed<GoalCondition>.visit"
+        }
+      ]
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>.climb": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "climb"
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>.craft": {
+      "type": "object",
+      "required": [
+        "type",
+        "items"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "craft"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>.kill": {
+      "type": "object",
+      "required": [
+        "type",
+        "mob"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "kill"
+        },
+        "mob": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>.pickup": {
+      "type": "object",
+      "required": [
+        "type",
+        "item"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "pickup"
+        },
+        "item": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      }
+    },
+    "kotlinx.serialization.Sealed<GoalCondition>.visit": {
+      "type": "object",
+      "required": [
+        "type",
+        "regions"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "visit"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

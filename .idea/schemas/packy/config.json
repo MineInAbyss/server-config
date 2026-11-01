@@ -1,0 +1,115 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.packy.config.PackyConfig": {
+      "type": "object",
+      "properties": {
+        "mcmeta": {
+          "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig.PackyMcMeta"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "server": {
+          "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig.PackyServer"
+        },
+        "prompt": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "force": {
+          "type": "boolean"
+        },
+        "sendOnReload": {
+          "type": "boolean"
+        },
+        "reconfigureOnReload": {
+          "type": "boolean"
+        },
+        "obfuscation": {
+          "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig.ObfuscationType",
+          "description": "What ObfuscationType to use, valid options are FULL, SIMPLE & NONE"
+        },
+        "packSquash": {
+          "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig.PackSquash",
+          "description": "This will use PackSquash to automatically squash all templates"
+        },
+        "loadTriggers": {
+          "$ref": "#/$defs/com.mineinabyss.packy.config.PackyConfig.LoadTriggers",
+          "description": "Toggles for the loadTriggers a template can use\nA disabled trigger is never registered, even if a template specifies it"
+        },
+        "cachedPackAmount": {
+          "type": "integer",
+          "description": "The amount of TemplateID combinations Packy should cache the ResourcePack off\nIf your ResourcePack is large it is recommended to lower this value"
+        }
+      }
+    },
+    "com.mineinabyss.packy.config.PackyConfig.PackyMcMeta": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.packy.config.PackyConfig.PackyServer": {
+      "type": "object",
+      "properties": {
+        "ip": {
+          "type": "string",
+          "description": "Change this to your server's actual IP, unless on localhost"
+        },
+        "port": {
+          "type": "integer"
+        },
+        "publicAddress": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.packy.config.PackyConfig.ObfuscationType": {
+      "enum": [
+        "FULL",
+        "SIMPLE",
+        "NONE"
+      ]
+    },
+    "com.mineinabyss.packy.config.PackyConfig.PackSquash": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exePath": {
+          "type": "string",
+          "description": "Path to the PackSquash executable"
+        },
+        "settingsPath": {
+          "type": "string",
+          "description": "Path to the settings file for PackSquash"
+        }
+      }
+    },
+    "com.mineinabyss.packy.config.PackyConfig.LoadTriggers": {
+      "type": "object",
+      "properties": {
+        "modelEngine": {
+          "type": "boolean"
+        },
+        "nexo": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

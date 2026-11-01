@@ -1,0 +1,32 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.bonfire.extensions.BonfireMessages",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.bonfire.extensions.BonfireMessages": {
+      "type": "object",
+      "properties": {
+        "BONFIRE_REMOVED": {
+          "type": "string"
+        },
+        "BONFIRE_BREAK_DENIED": {
+          "type": "string"
+        },
+        "BONFIRE_BREAK": {
+          "type": "string"
+        },
+        "BONFIRE_FULL": {
+          "type": "string"
+        },
+        "BONFIRE_EXPIRED": {
+          "type": "string"
+        },
+        "BONFIRE_NOT_FOUND": {
+          "type": "string"
+        },
+        "BONFIRE_RESPAWNING": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

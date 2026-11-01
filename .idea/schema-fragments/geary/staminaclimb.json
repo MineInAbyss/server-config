@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "object",
+      "properties": {
+        "climb:staminaModifiers": {
+          "$ref": "#/$defs/climb:stamina_modifiers"
+        }
+      }
+    },
+    "actions": {
+      "type": "object"
+    },
+    "conditions": {
+      "type": "object"
+    },
+    "events": {
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "climb:stamina_modifiers": {
+      "type": "object",
+      "required": [
+        "modifiers"
+      ],
+      "properties": {
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/com.mineinabyss.staminaclimb.component.StaminaModifier"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.component.StaminaModifier": {
+      "type": "object",
+      "required": [
+        "modifier",
+        "operation",
+        "type"
+      ],
+      "properties": {
+        "modifier": {
+          "type": "number"
+        },
+        "operation": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.component.StaminaModifier.ModifierOperation"
+        },
+        "type": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.component.StaminaModifier.ModifierType"
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.component.StaminaModifier.ModifierOperation": {
+      "enum": [
+        "ADD",
+        "MULTIPLY_BASE",
+        "MULTIPLY"
+      ]
+    },
+    "com.mineinabyss.staminaclimb.component.StaminaModifier.ModifierType": {
+      "enum": [
+        "STAMINA",
+        "CLIMB_SPEED",
+        "REGENERATE"
+      ]
+    }
+  }
+}

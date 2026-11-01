@@ -1,0 +1,60 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.extracommands.ExtraConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.extracommands.ExtraConfig": {
+      "type": "object",
+      "properties": {
+        "afk": {
+          "$ref": "#/$defs/com.mineinabyss.extracommands.ExtraConfig.AfkConfig"
+        },
+        "dailyRestarts": {
+          "$ref": "#/$defs/com.mineinabyss.extracommands.dailyrestarts.DailyRestartsConfig"
+        }
+      }
+    },
+    "com.mineinabyss.extracommands.ExtraConfig.AfkConfig": {
+      "type": "object",
+      "properties": {
+        "idleTime": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "com.mineinabyss.extracommands.dailyrestarts.DailyRestartsConfig": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "skipIfUptimeLessThan": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "hour": {
+          "type": "integer"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "timeZone": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

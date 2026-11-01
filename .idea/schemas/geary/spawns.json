@@ -1,0 +1,141 @@
+{
+  "type": "object",
+  "properties": {
+    "namespaces": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string",
+            "pattern": "^\\$(inherit|remove )"
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": {
+    "allOf": [
+      {
+        "$ref": "#/$defs/com.mineinabyss.geary.papermc.spawning.config.SpawnEntry"
+      },
+      {
+        "type": "object",
+        "properties": {
+          "inherit": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^\\$(inherit|remove )"
+                    }
+                  ]
+                }
+              }
+            ],
+            "description": "Names of entries to inherit properties from"
+          }
+        }
+      }
+    ]
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.geary.papermc.spawning.config.SpawnEntry": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/$defs/com.mineinabyss.geary.papermc.spawning.config.SpawnPosition"
+        },
+        "type": {
+          "type": "string"
+        },
+        "spread": {
+          "$ref": "#/$defs/com.mineinabyss.IntRange"
+        },
+        "ySpread": {
+          "$ref": "#/$defs/com.mineinabyss.IntRange"
+        },
+        "amount": {
+          "$ref": "#/$defs/com.mineinabyss.IntRange"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "pattern": "^\\$(inherit|remove )"
+              }
+            ]
+          }
+        },
+        "priority": {
+          "type": "number"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": {}
+              },
+              {
+                "type": "string",
+                "pattern": "^\\$(inherit|remove )"
+              }
+            ]
+          }
+        },
+        "spawnTag": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "com.mineinabyss.geary.papermc.spawning.config.SpawnPosition": {
+      "enum": [
+        "GROUND",
+        "IN_BLOCK",
+        "AIR",
+        "WATER",
+        "LAVA"
+      ]
+    },
+    "com.mineinabyss.IntRange": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "pattern": "^-?\\d+((\\.\\.| to )-?\\d+)?$|^\\d+-\\d+$"
+        }
+      ]
+    }
+  }
+}

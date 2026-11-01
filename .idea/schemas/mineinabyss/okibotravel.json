@@ -1,0 +1,116 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.features.okibotravel.OkiboTravelConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.features.okibotravel.OkiboTravelConfig": {
+      "type": "object",
+      "properties": {
+        "okiboStations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mineinabyss:okibo_line_station"
+          }
+        },
+        "costPerKM": {
+          "type": "number"
+        },
+        "noticeboards": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "boardRange": {
+          "type": "number"
+        },
+        "okiboModel": {
+          "$ref": "#/$defs/com.mineinabyss.features.okibotravel.OkiboModelConfig"
+        },
+        "mapFace": {
+          "$ref": "#/$defs/com.mineinabyss.features.okibotravel.MapFaceConfig"
+        },
+        "stationsById": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/mineinabyss:okibo_line_station"
+          }
+        }
+      }
+    },
+    "mineinabyss:okibo_line_station": {
+      "type": "object",
+      "required": [
+        "id",
+        "displayName",
+        "location"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "map": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "com.mineinabyss.features.okibotravel.OkiboModelConfig": {
+      "type": "object",
+      "properties": {
+        "blueprint": {
+          "type": "string"
+        },
+        "walkAnimation": {
+          "type": "string"
+        },
+        "bodyBone": {
+          "type": "string"
+        },
+        "length": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "riderTop": {
+          "type": "number"
+        },
+        "bodyPivot": {
+          "type": "number"
+        },
+        "saddle": {
+          "type": "number"
+        }
+      }
+    },
+    "com.mineinabyss.features.okibotravel.MapFaceConfig": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "to": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

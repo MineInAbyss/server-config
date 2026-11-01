@@ -1,0 +1,106 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.emojy.config.EmojyConfig",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.emojy.config.EmojyConfig": {
+      "type": "object",
+      "properties": {
+        "defaultPackFormat": {
+          "type": "integer"
+        },
+        "defaultNamespace": {
+          "type": "string"
+        },
+        "defaultFolder": {
+          "type": "string"
+        },
+        "defaultFont": {
+          "type": "string"
+        },
+        "defaultAtlas": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "defaultHeight": {
+          "type": "integer"
+        },
+        "defaultAscent": {
+          "type": "integer"
+        },
+        "defaultGifType": {
+          "$ref": "#/$defs/com.mineinabyss.emojy.config.Gif.GifType"
+        },
+        "generateShader": {
+          "type": "boolean"
+        },
+        "spaceFont": {
+          "type": "string"
+        },
+        "requirePermissions": {
+          "type": "boolean"
+        },
+        "supportForceUnicode": {
+          "type": "boolean"
+        },
+        "logLevel": {
+          "$ref": "#/$defs/co.touchlab.kermit.Severity"
+        },
+        "emojyList": {
+          "$ref": "#/$defs/com.mineinabyss.emojy.config.EmojyConfig.EmojyList"
+        },
+        "supportedLanguages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "com.mineinabyss.emojy.config.Gif.GifType": {
+      "enum": [
+        "SHADER",
+        "OBFUSCATION",
+        "SPRITE"
+      ]
+    },
+    "co.touchlab.kermit.Severity": {
+      "enum": [
+        "Verbose",
+        "Debug",
+        "Info",
+        "Warn",
+        "Error",
+        "Assert"
+      ]
+    },
+    "com.mineinabyss.emojy.config.EmojyConfig.EmojyList": {
+      "type": "object",
+      "properties": {
+        "ignoredEmoteIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignoredGifIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignoredFonts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,7 @@
-.idea
+.idea/*
+!.idea/schemas/
+!.idea/schema-fragments/
+!.idea/jsonSchemas.xml
 .servers/minecraft/plugins/Quill/resource-pack.zip
 /.servers/survival/plugins/MineInAbyss/player/
 /.servers/survival/plugins/MineInAbyss/bosses_camelot.yml

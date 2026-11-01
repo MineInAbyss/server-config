@@ -1,0 +1,17 @@
+{
+  "$ref": "#/$defs/com.mineinabyss.chatty.helpers.DiscordEmoteFixer",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "com.mineinabyss.chatty.helpers.DiscordEmoteFixer": {
+      "type": "object",
+      "properties": {
+        "emotes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

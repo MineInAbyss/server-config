@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "object",
+      "properties": {
+        "chatty:chattyData": {
+          "$ref": "#/$defs/chatty:chatty_data"
+        },
+        "chatty:commandSpy": {
+          "$ref": "#/$defs/chatty:command_spy"
+        },
+        "chatty:hideJoinLeave": {
+          "$ref": "#/$defs/chatty:hide_join_leave"
+        },
+        "chatty:nickname": {
+          "$ref": "#/$defs/chatty:nickname"
+        },
+        "chatty:spyOnChannels": {
+          "$ref": "#/$defs/chatty:spy_on_channels"
+        }
+      }
+    },
+    "actions": {
+      "type": "object"
+    },
+    "conditions": {
+      "type": "object"
+    },
+    "events": {
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "chatty:chatty_data": {
+      "type": "object",
+      "properties": {
+        "channelId": {
+          "type": "string"
+        },
+        "lastChannelUsedId": {
+          "type": "string"
+        },
+        "disablePingSound": {
+          "type": "boolean"
+        },
+        "pingSound": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "lastMessager": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "chatty:command_spy": {
+      "type": "object"
+    },
+    "chatty:hide_join_leave": {
+      "type": "object"
+    },
+    "chatty:nickname": {
+      "type": "object",
+      "required": [
+        "nickname"
+      ],
+      "properties": {
+        "nickname": {
+          "type": "string"
+        }
+      }
+    },
+    "chatty:spy_on_channels": {
+      "type": "object",
+      "properties": {
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
