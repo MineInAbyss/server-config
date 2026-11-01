@@ -62,13 +62,13 @@
           "type": "string"
         },
         "spread": {
-          "$ref": "#/$defs/com.mineinabyss.IntRange"
+          "type": "string"
         },
         "ySpread": {
-          "$ref": "#/$defs/com.mineinabyss.IntRange"
+          "type": "string"
         },
         "amount": {
-          "$ref": "#/$defs/com.mineinabyss.IntRange"
+          "type": "string"
         },
         "regions": {
           "type": "array",
@@ -124,17 +124,6 @@
         "AIR",
         "WATER",
         "LAVA"
-      ]
-    },
-    "com.mineinabyss.IntRange": {
-      "anyOf": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "string",
-          "pattern": "^-?\\d+((\\.\\.| to )-?\\d+)?$|^\\d+-\\d+$"
-        }
       ]
     }
   }
