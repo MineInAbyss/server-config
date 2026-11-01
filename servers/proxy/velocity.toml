@@ -58,13 +58,12 @@ ping-passthrough = "DISABLED"
 # Configure your servers here. Each key represents the server's name, and the value
 # represents the IP address of the server to connect to.
 dev = "minecraft-dev:25565"
-dev-alpha = "minecraft-dev-alpha:25565"
-dev-beta = "minecraft-dev-beta:25565"
-dev-gamma = "minecraft-dev-gamma:25565"
 staging = "minecraft-staging:25565"
 build = "minecraft-build:25565"
 survival = "minecraft-survival:25565"
 archive = "minecraft-archive:25565"
+test = "minecraft-test:25565"
+bedrock = "minecraft-bedrock:25565"
 # In what order we should try servers when a player logs in or is kicked from aserver.
 try = ["survival", "build" ]
 
@@ -75,9 +74,8 @@ try = ["survival", "build" ]
 "build.mineinabyss.com" = ["build"]
 "dev.mineinabyss.com" = ["dev"]
 "staging.mineinabyss.com" = ["staging"]
-"alpha.dev.mineinabyss.com" = ["dev-alpha"]
-"beta.dev.mineinabyss.com" = ["dev-beta"]
-"gamma.dev.mineinabyss.com" = ["dev-gamma"]
+"test.mineinabyss.com" = ["test"]
+"bedrock.mineinabyss.com" = ["bedrock"]
 
 [advanced]
 # Specify a custom timeout for connection timeouts here. The default is five seconds.
