@@ -1,0 +1,11 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:black_wool"
+  removeRecipes:
+    - minecraft:black_wool
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:black_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:black_dye

@@ -1,0 +1,9 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:cobweb"
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:cobweb, amount: 1 }
+      items:
+        - tag: wool
+        - prefab: mineinabyss:undye

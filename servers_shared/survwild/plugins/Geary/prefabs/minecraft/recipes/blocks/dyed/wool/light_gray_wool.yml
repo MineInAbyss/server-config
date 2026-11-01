@@ -1,0 +1,11 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:light_gray_wool"
+  removeRecipes:
+    - minecraft:light_gray_wool
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:light_gray_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:light_gray_dye

@@ -1,0 +1,11 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:white_wool"
+  removeRecipes:
+    - minecraft:white_wool
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:white_wool, amount: 1 }
+      items:
+        - tag: wool
+        - type: minecraft:white_dye

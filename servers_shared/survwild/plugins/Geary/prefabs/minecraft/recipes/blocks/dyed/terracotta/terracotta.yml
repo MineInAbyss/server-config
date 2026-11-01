@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:terracotta"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { prefab: mineinabyss:undye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"

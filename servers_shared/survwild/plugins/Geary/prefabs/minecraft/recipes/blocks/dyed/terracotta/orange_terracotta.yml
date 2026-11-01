@@ -1,0 +1,15 @@
+set.recipes:
+  discoverRecipes: true
+  group: "mineinabyss:dye_terracotta"
+  removeRecipes:
+    - minecraft:orange_terracotta
+  recipes:
+    - type: shaped
+      result: { type: minecraft:orange_terracotta, amount: 8 }
+      items:
+        T: { tag: terracotta }
+        D: { prefab: minecraft:orange_dye }
+      shape:
+        - "TTT"
+        - "TDT"
+        - "TTT"

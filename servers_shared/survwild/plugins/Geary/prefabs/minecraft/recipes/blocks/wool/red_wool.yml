@@ -1,7 +1,0 @@
-set.recipes:
-  discoverRecipes: true
-  result:
-    type: minecraft:red_wool
-  recipes:
-    - type: shapeless
-      items: [ mineinabyss:chimokami_tail ]
