@@ -9,7 +9,6 @@ set.recipes:
     - minecraft:gray_stained_glass
     - minecraft:light_blue_stained_glass
     - minecraft:light_gray_stained_glass
-    - minecraft:light_green_stained_glass
     - minecraft:lime_stained_glass
     - minecraft:magenta_stained_glass
     - minecraft:orange_stained_glass
@@ -78,15 +77,6 @@ set.recipes:
       items:
         T: { tag: glass }
         D: { type: minecraft:light_gray_dye }
-      shape:
-        - "TTT"
-        - "TDT"
-        - "TTT"
-    - type: shaped
-      result: { type: minecraft:light_green_stained_glass, amount: 8 }
-      items:
-        T: { tag: glass }
-        D: { type: minecraft:light_green_dye }
       shape:
         - "TTT"
         - "TDT"
