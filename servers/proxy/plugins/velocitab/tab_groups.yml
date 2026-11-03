@@ -17,7 +17,7 @@ groups:
       - '&3Players&f: &b%players_online%&f/&3250 &f| &6Ping&f: &e%ping%ms &f| %server_tps_5_colored%'
     format: '%server%%prefix%&#fafafa&%username%'
     nametag:
-      prefix: ''
+      prefix: '&f'
       suffix: ''
     servers:
       - dev
