@@ -127,7 +127,7 @@ extra_background:
 offhand_background:
   conditions:
     - gamemode{gm=survival,adventure} true hide
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} false hide
     - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     padding_1:
@@ -165,7 +165,7 @@ offhand_background:
 empty_offhand_background:
   conditions:
     - gamemode{gm=survival,adventure} true hide
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} true hide
     - placeholder{ph=%hmccosmetics_wardrobe-enabled%} false hide
   layers:
     padding_1:

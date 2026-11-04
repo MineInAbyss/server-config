@@ -1,7 +1,7 @@
 ## OrthBanking
 mineinabyss-orthcoins:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} true hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     text:
@@ -13,7 +13,7 @@ mineinabyss-orthcoins:
         y: 9
 mineinabyss-orthcoins-offhand:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     text:
@@ -25,7 +25,7 @@ mineinabyss-orthcoins-offhand:
         y: 9
 mineinabyss-tokens:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} false hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} true hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     text:
@@ -37,7 +37,7 @@ mineinabyss-tokens:
         y: 22
 mineinabyss-tokens-offhand:
   conditions:
-    - placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    - placeholder{ph=%player_item_in_offhand%;v=AIR} false hide
     - gamemode{gm=survival,adventure} true hide
   layers:
     text:
@@ -182,7 +182,7 @@ mineinabyss-depth:
 
 mineinabyss-starcompass:
   conditions:
-    #- placeholder{ph=%checkitem_inhand:off%;v=yes} true hide
+    #- placeholder{ph=%player_item_in_offhand%;v=AIR} false hide
     - placeholder{ph=%mineinabyss_hud_starcompass%} false hide
     - placeholder{ph=%mineinabyss_starcompass_angle%;v=null} false hide
     #- placeholder{ph=%mineinabyss_starcompass_angle%;v=N} true texture arrow_n.png
