@@ -18,6 +18,11 @@ We use ansible to download and update config files on server startup, running `l
 
 `plugin-versions.conf` stores plugin versions which don't get installed by this playbook, but using Keepup.
 
+### JSON schemas
+
+Plugins attach a `schemas.zip` to their GitHub releases. After bumping versions in `keepup/plugins.conf`, run `./gradlew updateSchemas` to pull the matching schemas into `.idea`, `.vscode` and `.zed`, then commit them with the bump.
+Pass `-PschemaOutput=../server-config-private` to update the private repo too.
+
 ### Per-server config
 
 Each server subfolder contains subfolders that get treated differently.
