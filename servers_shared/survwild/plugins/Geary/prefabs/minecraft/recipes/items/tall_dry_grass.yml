@@ -1,0 +1,12 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:tall_dry_grass"
+  recipes:
+    - type: furnace
+      input: { type: mineinabyss:tall_grass }
+      experience: 0.1
+      cookingTime: 10s
+    - type: smoking
+      input: { type: mineinabyss:tall_grass }
+      experience: 0.1
+      cookingTime: 5s

@@ -1,10 +1,13 @@
 set.recipes:
   discoverRecipes: true
-  result:
-    type: minecraft:soul_soil
-  group: "looty:soul_soil"
+  group: "minecraft:soul_soil"
   recipes:
-    - type: shapeless
+    - type: shaped
+      result: { type: minecraft:soul_soil, amount: 4 }
       items:
-        - type: minecraft:soul_sand
-        - type: minecraft:dirt
+        D: { type: minecraft:dirt }
+        A: { prefab: mineinabyss:amber }
+      shape:
+        - " D "
+        - "DAD"
+        - " D "

@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:pale_oak_sapling"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:pale_oak_sapling, amount: 1 }
+      items:
+        S: { tag: minecraft:saplings }
+        U: { prefab: mineinabyss:undye }
+      shape:
+        - " U "
+        - "USU"
+        - " U "

@@ -1,0 +1,16 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:comparator"
+  removeRecipes:
+    - minecraft:comparator
+  recipes:
+    - type: shaped
+      result: { type: minecraft:comparator, amount: 1 }
+      items:
+        T: { type: minecraft:redstone_torch }
+        S: { type: minecraft:stone }
+        A: { prefab: mineinabyss:amber}
+      shape:
+        - " T "
+        - "TAT"
+        - "SSS"

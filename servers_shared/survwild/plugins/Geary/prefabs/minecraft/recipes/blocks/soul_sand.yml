@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:soul_sand"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:soul_sand, amount: 4 }
+      items:
+        D: { type: minecraft:sand }
+        A: { prefab: mineinabyss:amber }
+      shape:
+        - " D "
+        - "DAD"
+        - " D "

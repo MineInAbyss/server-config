@@ -1,15 +1,13 @@
 set.recipes:
   discoverRecipes: true
-  result:
-    type: minecraft:budding_amethyst
-    amount: 1
+  group: "minecraft:budding_amethyst"
   recipes:
     - type: shaped
+      result: { type: minecraft:budding_amethyst, amount: 4 }
       items:
-        S: { prefab: mineinabyss:hisoishi_shell}
-        C: { prefab: mineinabyss:hisoishi_claw}
-        M: { prefab: mineinabyss:madokajack_poop}
+        D: { type: minecraft:amethyst_block }
+        A: { prefab: mineinabyss:amber }
       shape:
-        - " C "
-        - "CSC"
-        - " M "
+        - " D "
+        - "DAD"
+        - " D "

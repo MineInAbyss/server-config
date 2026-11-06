@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:warped_nylium"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:warped_nylium, amount: 8 }
+      items:
+        D: { type: minecraft:dirt }
+        F: { type: minecraft:warped_fungus }
+      shape:
+        - " F "
+        - "FDF"
+        - " F "

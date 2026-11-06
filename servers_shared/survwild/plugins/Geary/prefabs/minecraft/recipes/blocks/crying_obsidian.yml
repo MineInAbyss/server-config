@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:crying_obsidian"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:crying_obsidian, amount: 4 }
+      items:
+        D: { type: minecraft:crying_obsidian }
+        A: { prefab: mineinabyss:amber }
+      shape:
+        - " D "
+        - "DAD"
+        - " D "

@@ -1,0 +1,14 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:mycelium"
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:mycelium, amount: 1 }
+      items:
+        - type: minecraft:dirt
+        - type: minecraft:red_mushroom
+    - type: shapeless
+      result: { type: minecraft:mycelium, amount: 1 }
+      items:
+        - type: minecraft:dirt
+        - type: minecraft:brown_mushroom

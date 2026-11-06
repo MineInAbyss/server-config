@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:vine"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:vine, amount: 8 }
+      items:
+        F: { prefab: mineinabyss:fibers }
+        A: { prefab: mineinabyss:amber }
+      shape:
+        - "FFF"
+        - "FAF"
+        - "FFF"
