@@ -4,6 +4,18 @@
     "components": {
       "type": "object",
       "properties": {
+        "climb:hangingRope": {
+          "$ref": "#/$defs/climb:hanging_rope"
+        },
+        "climb:piton": {
+          "$ref": "#/$defs/climb:piton"
+        },
+        "climb:placedPiton": {
+          "$ref": "#/$defs/climb:placed_piton"
+        },
+        "climb:rope": {
+          "$ref": "#/$defs/climb:rope"
+        },
         "climb:staminaModifiers": {
           "$ref": "#/$defs/climb:stamina_modifiers"
         }
@@ -21,6 +33,102 @@
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$defs": {
+    "climb:hanging_rope": {
+      "type": "object",
+      "required": [
+        "owner",
+        "item",
+        "length"
+      ],
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "item": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "length": {
+          "type": "integer"
+        }
+      }
+    },
+    "climb:piton": {
+      "type": "object",
+      "properties": {
+        "fusing": {
+          "type": "boolean"
+        }
+      }
+    },
+    "climb:placed_piton": {
+      "type": "object",
+      "required": [
+        "owner",
+        "face",
+        "blockX",
+        "blockY",
+        "blockZ"
+      ],
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "face": {
+          "$ref": "#/$defs/org.bukkit.block.BlockFace"
+        },
+        "blockX": {
+          "type": "integer"
+        },
+        "blockY": {
+          "type": "integer"
+        },
+        "blockZ": {
+          "type": "integer"
+        },
+        "fusing": {
+          "type": "boolean"
+        },
+        "expiresAt": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      }
+    },
+    "org.bukkit.block.BlockFace": {
+      "enum": [
+        "NORTH",
+        "EAST",
+        "SOUTH",
+        "WEST",
+        "UP",
+        "DOWN",
+        "NORTH_EAST",
+        "NORTH_WEST",
+        "SOUTH_EAST",
+        "SOUTH_WEST",
+        "WEST_NORTH_WEST",
+        "NORTH_NORTH_WEST",
+        "NORTH_NORTH_EAST",
+        "EAST_NORTH_EAST",
+        "EAST_SOUTH_EAST",
+        "SOUTH_SOUTH_EAST",
+        "SOUTH_SOUTH_WEST",
+        "WEST_SOUTH_WEST",
+        "SELF"
+      ]
+    },
+    "climb:rope": {
+      "type": "object"
+    },
     "climb:stamina_modifiers": {
       "type": "object",
       "required": [

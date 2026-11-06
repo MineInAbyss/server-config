@@ -59,6 +59,9 @@
         "roofClimbDifficulty": {
           "type": "number"
         },
+        "rope": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeConfig"
+        },
         "climbBlacklist": {
           "type": "array",
           "items": {
@@ -2386,6 +2389,222 @@
         "NOTCHED_12",
         "NOTCHED_20"
       ]
+    },
+    "com.mineinabyss.staminaclimb.config.RopeConfig": {
+      "type": "object",
+      "properties": {
+        "maxRopeLength": {
+          "type": "integer"
+        },
+        "pitonDespawn": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer"
+        },
+        "climbSpeed": {
+          "type": "number"
+        },
+        "pitonFaceOffset": {
+          "type": "number"
+        },
+        "pitonHitboxSize": {
+          "type": "number"
+        },
+        "ropeOffset": {
+          "type": "number"
+        },
+        "holdDistance": {
+          "type": "number"
+        },
+        "ropeHitboxWidth": {
+          "type": "number"
+        },
+        "ropeHitboxHeight": {
+          "type": "integer"
+        },
+        "groundDismountBuffer": {
+          "type": "integer"
+        },
+        "slideDeceleration": {
+          "type": "number"
+        },
+        "slideStaminaPerBlock": {
+          "type": "number"
+        },
+        "fastClimbMultiplier": {
+          "type": "number"
+        },
+        "fastClimbStaminaPerBlock": {
+          "type": "number"
+        },
+        "ropeModel": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "dropAnimationTicksPerSegment": {
+          "type": "integer"
+        },
+        "fusingThrowVelocity": {
+          "type": "number"
+        },
+        "drill": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.DrillConfig"
+        },
+        "swing": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.SwingConfig"
+        },
+        "sounds": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSounds"
+        },
+        "messages": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeMessages"
+        }
+      }
+    },
+    "com.mineinabyss.DurationSerializer": {
+      "type": "string",
+      "pattern": "^(-?\\(?(\\d+(\\.\\d+)?(ns|us|ms|t|s|m|h|d|w|mo) ?)+\\)?|-?P[0-9DTHMS.,-]+|-?Infinity)$",
+      "title": "Duration"
+    },
+    "com.mineinabyss.staminaclimb.config.DrillConfig": {
+      "type": "object",
+      "properties": {
+        "distance": {
+          "type": "number"
+        },
+        "steps": {
+          "type": "integer"
+        },
+        "ticksPerStep": {
+          "type": "integer"
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.config.SwingConfig": {
+      "type": "object",
+      "properties": {
+        "gravity": {
+          "type": "number"
+        },
+        "damping": {
+          "type": "number"
+        },
+        "pumpAcceleration": {
+          "type": "number"
+        },
+        "steerAngle": {
+          "type": "number"
+        },
+        "brakeDamping": {
+          "type": "number"
+        },
+        "maxAngle": {
+          "type": "number"
+        },
+        "restAngle": {
+          "type": "number"
+        },
+        "restSpeed": {
+          "type": "number"
+        },
+        "releaseDashBelow": {
+          "type": "number"
+        },
+        "kickDoubleTapTicks": {
+          "type": "integer"
+        },
+        "kickProbe": {
+          "type": "number"
+        },
+        "kickStrength": {
+          "type": "number"
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.config.RopeSounds": {
+      "type": "object",
+      "properties": {
+        "placePiton": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "drillPiton": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "breakPiton": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "attachRope": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "detachRope": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "grabRope": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "climbStep": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "throwPiton": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        },
+        "kickWall": {
+          "$ref": "#/$defs/com.mineinabyss.staminaclimb.config.RopeSound"
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.config.RopeSound": {
+      "type": "object",
+      "required": [
+        "sound"
+      ],
+      "properties": {
+        "sound": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "number"
+        },
+        "pitch": {
+          "type": "number"
+        }
+      }
+    },
+    "com.mineinabyss.staminaclimb.config.RopeMessages": {
+      "type": "object",
+      "properties": {
+        "pitonTopFace": {
+          "type": "string"
+        },
+        "pitonNotSolid": {
+          "type": "string"
+        },
+        "pitonOccupied": {
+          "type": "string"
+        },
+        "pitonInTransition": {
+          "type": "string"
+        },
+        "pitonNotYours": {
+          "type": "string"
+        },
+        "pitonFull": {
+          "type": "string"
+        },
+        "noSpaceBelow": {
+          "type": "string"
+        },
+        "ropeNotYours": {
+          "type": "string"
+        },
+        "fusingNoRope": {
+          "type": "string"
+        }
+      }
     },
     "org.bukkit.Material": {
       "enum": [
