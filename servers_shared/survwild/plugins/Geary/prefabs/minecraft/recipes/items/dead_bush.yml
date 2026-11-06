@@ -1,0 +1,9 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:dead_bush"
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:dead_bush, amount: 1 }
+      items:
+        - type: minecraft:bush
+        - prefab: mineinabyss:undye

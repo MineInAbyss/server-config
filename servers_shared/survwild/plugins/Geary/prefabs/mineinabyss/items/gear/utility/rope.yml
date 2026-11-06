@@ -1,8 +1,13 @@
 set.item:
   itemName: Rope
   type: minecraft:clock
-  itemModel: mineinabyss:gear/utility/rope
+  itemModel: mineinabyss:gear/utility/rope_icon
   maxStackSize: 1
+resourcepack:
+  model: mineinabyss:gear/utility/rope_icon
+  textures:
+    layers:
+    - mineinabyss:gear/utility/rope_icon
 climb:rope: {}
 creative_tab:
   category: Gear

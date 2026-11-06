@@ -1,0 +1,13 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:crimson_nylium"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:crimson_nylium, amount: 8 }
+      items:
+        D: { type: minecraft:dirt }
+        F: { type: minecraft:crimson_fungus }
+      shape:
+        - " F "
+        - "FDF"
+        - " F "

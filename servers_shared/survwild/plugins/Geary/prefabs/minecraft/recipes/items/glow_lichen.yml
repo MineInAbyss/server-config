@@ -1,0 +1,24 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:glow_lichen"
+  recipes:
+    - type: shaped
+      result: { type: minecraft:glow_lichen, amount: 1 }
+      items:
+        V: { type: minecraft:vine }
+        A: { prefab: mineinabyss:amber }
+        G: { prefab: mineinabyss:kakatsumuri_glowing_tip }
+      shape:
+        - " V "
+        - "GAG"
+        - " V "
+    - type: shaped
+      result: { type: minecraft:glow_lichen, amount: 1 }
+      items:
+        V: { type: minecraft:vine }
+        A: { prefab: mineinabyss:amber }
+        G: { prefab: mineinabyss:octoliar_ink_sac }
+      shape:
+        - " V "
+        - "GAG"
+        - " V "

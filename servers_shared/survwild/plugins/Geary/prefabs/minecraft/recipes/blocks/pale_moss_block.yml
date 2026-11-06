@@ -1,0 +1,9 @@
+set.recipes:
+  discoverRecipes: true
+  group: "minecraft:pale_moss_block"
+  recipes:
+    - type: shapeless
+      result: { type: minecraft:pale_moss_block, amount: 1 }
+      items:
+        - type: minecraft:moss_block
+        - prefab: mineinabyss:undye
