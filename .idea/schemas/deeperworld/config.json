@@ -28,6 +28,9 @@
         "time": {
           "$ref": "#/$defs/com.mineinabyss.deeperworld.DeeperWorldConfig.TimeConfig"
         },
+        "sync": {
+          "$ref": "#/$defs/com.mineinabyss.deeperworld.DeeperWorldConfig.SyncConfig"
+        },
         "bedrockBlockingInvalidTeleport": {
           "type": "boolean"
         },
@@ -141,6 +144,29 @@
           "description": "The worlds where time should be synchronized with the mainWorld. Optionally specify a time offset (leave 0 if no offset is desired)"
         }
       }
+    },
+    "com.mineinabyss.deeperworld.DeeperWorldConfig.SyncConfig": {
+      "type": "object",
+      "properties": {
+        "defaultMode": {
+          "$ref": "#/$defs/com.mineinabyss.deeperworld.DeeperWorldConfig.SyncMode",
+          "description": "Mode used by /dw sync when none is given. NATIVE needs no other plugins, FAWE requires FastAsyncWorldEdit"
+        },
+        "confirmAboveBlocks": {
+          "type": "integer",
+          "description": "Native syncs copying more blocks than this must be confirmed with /dw sync confirm"
+        },
+        "nativeTimePerTick": {
+          "$ref": "#/$defs/com.mineinabyss.DurationSerializer",
+          "description": "Main thread time native syncs may spend copying blocks each tick"
+        }
+      }
+    },
+    "com.mineinabyss.deeperworld.DeeperWorldConfig.SyncMode": {
+      "enum": [
+        "NATIVE",
+        "FAWE"
+      ]
     }
   }
 }
