@@ -16,7 +16,7 @@ itemModel:
           model: mineinabyss:gear/utility/fusing_piton
     fallback:
       type: texture
-      texture: mineinabyss:gear/utility/piton_icon
+      texture: mineinabyss:gear/utility/fusing_piton_icon
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities
