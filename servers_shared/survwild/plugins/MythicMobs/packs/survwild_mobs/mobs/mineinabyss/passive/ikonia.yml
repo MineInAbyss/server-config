@@ -26,6 +26,7 @@ ikonia:
     - geary mineinabyss:ikonia_plate 1-1 0.5
   Geary:
     mineinabyss:show_health_bar: default
+    geary:prevent.breeding: {}
   Skills:
     ####### Misc
     - skill{s=tjAmbient;delay=<random.0to10>} @self ~onTimer:95 0.33
