@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:bone_meal
   itemName: <#6e2e3c>Rinsipede Segments
-  itemModel: mineinabyss:mobdrop/mob_standard/rinsipede_segments
+  itemModel: mineinabyss:mobdrop/unique_global/rinsipede_segments
   lore:
   - '<emojy:layer_3>'
   - <#a39039><i>I've heard their body makes
   - <#a39039><i>for a great fertiliser.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/rinsipede_segments
+  model: mineinabyss:mobdrop/unique_global/rinsipede_segments
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/rinsipede_segments
+    - mineinabyss:mobdrop/unique_global/rinsipede_segments
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

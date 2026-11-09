@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:fire_charge
   itemName: <#454545>Hashofu Eye
-  itemModel: mineinabyss:mobdrop/mob_standard/hashofu_eye
+  itemModel: mineinabyss:mobdrop/unique_global/hashofu_eye
   lore:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
   - <#595959><i>There is a fire in its eyes.
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/hashofu_eye
+  model: mineinabyss:mobdrop/unique_global/hashofu_eye
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/hashofu_eye
+    - mineinabyss:mobdrop/unique_global/hashofu_eye
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

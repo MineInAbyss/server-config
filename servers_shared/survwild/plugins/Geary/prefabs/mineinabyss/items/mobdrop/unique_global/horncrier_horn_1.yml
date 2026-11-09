@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:clock
   itemName: <#c4fcf2>Horncrier Horn
-  itemModel: mineinabyss:mobdrop/mob_standard/horncrier_horn
+  itemModel: mineinabyss:mobdrop/unique_global/horncrier_horn
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#fbfc92><i>These colors are unlike anything
@@ -12,7 +12,7 @@ resourcepack:
   model: mineinabyss:mobdrop/mob_standard/horncrier_horn_1
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/horncrier_horn
+    - mineinabyss:mobdrop/unique_global/horncrier_horn
 observe:
   itemRightClick:
   - become: parent

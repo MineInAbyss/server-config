@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:glowstone_dust
   itemName: <#6C19BF>Spore Manta Powder
-  itemModel: mineinabyss:mobdrop/mob_standard/sporemanta_powder
+  itemModel: mineinabyss:mobdrop/unique_regional/sporemanta_powder
   lore:
   - '<emojy:layer_5>'
   - <#FF1FB4><i>The furthest thing to magical
   - <#FF1FB4><i>fairy dust.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/sporemanta_powder
+  model: mineinabyss:mobdrop/unique_regional/sporemanta_powder
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/sporemanta_powder
+    - mineinabyss:mobdrop/unique_regional/sporemanta_powder
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

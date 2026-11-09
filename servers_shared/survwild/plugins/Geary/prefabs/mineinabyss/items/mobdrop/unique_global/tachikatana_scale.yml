@@ -1,6 +1,6 @@
 set.item:
   type: minecraft:prismarine_shard
-  itemModel: mineinabyss:mobdrop/mob_standard/tachikatana_scale
+  itemModel: mineinabyss:mobdrop/unique_global/tachikatana_scale
   itemName: <#00FFFF>Tachikatana Scale
   lore:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
@@ -8,10 +8,10 @@ set.item:
   - <#1B5BAD><i>They're rumored to be one of the most waterproof
   - <#1B5BAD><i>materials in the <green>Abyss<#1B5BAD>.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/tachikatana_scale
+  model: mineinabyss:mobdrop/unique_global/tachikatana_scale
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/tachikatana_scale
+    - mineinabyss:mobdrop/unique_global/tachikatana_scale
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients
