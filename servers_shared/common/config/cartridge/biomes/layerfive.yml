@@ -1,0 +1,17 @@
+mineinabyss:sea_of_corpses:
+  parent: plains
+
+mineinabyss:idofront:
+  parent: mineinabyss:sea_of_corpses
+
+mineinabyss:red_sky_desert:
+  parent: mineinabyss:sea_of_corpses
+
+mineinabyss:sea_of_glass:
+  parent: mineinabyss:sea_of_corpses
+
+mineinabyss:snowy_ruins:
+  parent: mineinabyss:sea_of_corpses
+
+mineinabyss:quartz_ruins:
+  parent: mineinabyss:sea_of_corpses

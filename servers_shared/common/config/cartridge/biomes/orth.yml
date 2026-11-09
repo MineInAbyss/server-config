@@ -1,0 +1,17 @@
+mineinabyss:orth:
+  parent: plains
+
+mineinabyss:tower_district:
+  parent: mineinabyss:orth
+mineinabyss:cliff_district:
+  parent: mineinabyss:orth
+mineinabyss:village_district:
+  parent: mineinabyss:orth
+mineinabyss:abandoned_district:
+  parent: mineinabyss:orth
+mineinabyss:delving_district:
+  parent: mineinabyss:orth
+mineinabyss:manor_district:
+  parent: mineinabyss:orth
+mineinabyss:wharf_district:
+  parent: mineinabyss:orth

@@ -1,0 +1,8 @@
+mineinabyss:forest_of_temptation:
+  parent: plains
+
+mineinabyss:inverted_forest:
+  parent: mineinabyss:forest_of_temptation
+
+mineinabyss:seeker_camp:
+  parent: mineinabyss:inverted_forest
