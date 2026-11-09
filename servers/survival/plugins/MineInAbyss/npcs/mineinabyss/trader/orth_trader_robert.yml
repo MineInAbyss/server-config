@@ -5,10 +5,26 @@ onInteract:
 - mineinabyss:open_trades:
     trades:
       - input: "mineinabyss:orth_coin 16"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:mending
+              level: 1
       - input: "mineinabyss:orth_coin 14"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:fortune
+              level: 3
       - input: "mineinabyss:orth_coin 13"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:soul_speed
+              level: 3
       - input: "mineinabyss:orth_coin 14"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:swift_sneak
+              level: 3

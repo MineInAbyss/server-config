@@ -5,10 +5,26 @@ onInteract:
 - mineinabyss:open_trades:
     trades:
       - input: "mineinabyss:orth_coin 12"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:sharpness
+              level: 5
       - input: "mineinabyss:orth_coin 8"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:smite
+              level: 5
       - input: "mineinabyss:orth_coin 10"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:fire_aspect
+              level: 2
       - input: "mineinabyss:orth_coin 10"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:looting
+              level: 3
