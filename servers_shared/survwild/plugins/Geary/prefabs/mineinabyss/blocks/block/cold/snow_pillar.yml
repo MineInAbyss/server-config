@@ -3,13 +3,12 @@ set.item:
   itemName: <white>Snow Pillar
   itemModel: mineinabyss:blocks/block/snow_pillar
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_column
-  model: mineinabyss:blocks/block/snow_pillar
-  textures:
-    variables:
-      side: mineinabyss:blocks/block/snow_pillar
-      end: mineinabyss:blocks/block/snow_pillar_top
+  texture:
+    side: mineinabyss:blocks/block/snow_pillar
+    end: mineinabyss:blocks/block/snow_pillar_top
 
 nexo:custom_block:
   type: NOTEBLOCK

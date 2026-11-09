@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
   - <#1B5BAD><i>Striking it in a particular way emits
   - <#1B5BAD><i>a shockwave..
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/tachikatana_claw
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/tachikatana_claw
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/tachikatana_claw
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

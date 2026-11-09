@@ -2,7 +2,8 @@ set.item:
   type: minecraft:paper
   itemName: <#33404d>Noticeboard Okibo
   itemModel: mineinabyss:blocks/furniture/noticeboard_okibo
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:blocks/furniture/noticeboard_okibo
 nexo:furniture:
   restricted_rotation: STRICT

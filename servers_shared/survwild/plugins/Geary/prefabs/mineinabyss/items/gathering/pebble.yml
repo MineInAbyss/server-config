@@ -27,11 +27,8 @@ observe:
   - consumeItem:
       type: mineinabyss:pebble
     
-resourcepack:
-  model: mineinabyss:gathering/pebble
-  textures:
-    layers:
-    - mineinabyss:gathering/pebble
+itemModel:
+  texture: mineinabyss:gathering/pebble
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

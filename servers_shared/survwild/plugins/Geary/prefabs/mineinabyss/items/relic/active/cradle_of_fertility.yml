@@ -7,10 +7,8 @@ set.item:
   - <#BB9672>The mysterious humming sound this orb produces is cited
   - <#BB9672>as a cause of its apparent worship in ancient societies.
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Bone meals the surrounding area on right click.
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/cradle_of_fertility
+itemModel:
+  texture: mineinabyss:relic/cradle_of_fertility
 observe:
   itemRightClick:
   - become: parent

@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_2>:cosmetic_orth_coin:'
   - <red><i>It feels like it's staring into your soul...
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/corpse_weeper_eye
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/corpse_weeper_eye
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/corpse_weeper_eye
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -22,10 +22,8 @@ observe:
       duration: 44s
   - mythicSkills:
     - dew-cress_knots
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/dew-cress_knots
+itemModel:
+  texture: mineinabyss:relic/dew-cress_knots
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

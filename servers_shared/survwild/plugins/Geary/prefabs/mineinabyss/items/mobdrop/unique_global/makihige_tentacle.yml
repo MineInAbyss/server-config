@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
   - <#5221A6>Seems useful. I better keep this...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/makihige_tentacle
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/makihige_tentacle
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/makihige_tentacle
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

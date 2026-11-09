@@ -2,7 +2,8 @@ set.item:
   type: minecraft:paper
   itemName: <#33404d>Stone Bench
   itemModel: mineinabyss:blocks/furniture/stone_bench
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:blocks/furniture/stone_bench
 nexo:furniture:
   restricted_rotation: VERY_STRICT

@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>'
   - <#edfeff>The skin is tough, but the meat... Yum!
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/ikonia_plate
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/ikonia_plate
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/ikonia_plate
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

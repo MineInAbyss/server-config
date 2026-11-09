@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_2><emojy:layer_3>:cosmetic_orth_coin:'
   - <#A68348><i>The rockwalkers use these as their climbing
   - <#A68348><i>gear, and its toughness sure looks the part.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/rockwalker_mandible
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/rockwalker_mandible
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/rockwalker_mandible
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

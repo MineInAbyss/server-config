@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#1B5BAD><i>This stores an impressive amount of energy!
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/swarmshocker_charged_powder
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/swarmshocker_charged_powder
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/swarmshocker_charged_powder
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

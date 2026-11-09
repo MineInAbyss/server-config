@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_2><emojy:layer_4>:cosmetic_orth_coin:'
   - <#FF1FB4><i>The closest thing to magical
   - <#FF1FB4><i>fairy dust.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/rohana_powder
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/rohana_powder
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/rohana_powder
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

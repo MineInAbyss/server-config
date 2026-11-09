@@ -19,10 +19,9 @@ set.item:
     - max_damage
     - damage
     - repairable
-resourcepack:
-  textures:
-    layers:
-      - mineinabyss:relic/weight_of_the_world
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/weight_of_the_world
   parentModel: item/handheld
 creative_tab:
   category: Relics

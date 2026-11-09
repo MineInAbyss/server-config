@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_4>:cosmetic_orth_coin:'
   - <yellow>Sucks nutrients from its host, releasing
   - <yellow>them back when the host is near death.
-resourcepack:
-  model: mineinabyss:item/parasitic_watershrooms
-  textures:
-    layers:
-    - mineinabyss:item/parasitic_watershrooms
+itemModel:
+  texture: mineinabyss:item/parasitic_watershrooms
 nexo:custom_block:
   type: STRINGBLOCK
   model: mineinabyss:block/water_shroom/water_shroom

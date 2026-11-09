@@ -3,13 +3,12 @@ set.item:
   itemName: <white>Carved Oak Log
   itemModel: mineinabyss:blocks/block/carved_oak_log
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_column
-  model: mineinabyss:blocks/block/carved_oak_log
-  textures:
-    variables:
-      side: mineinabyss:blocks/block/carved_oak_log
-      end: mineinabyss:blocks/block/carved_oak_log_top
+  texture:
+    side: mineinabyss:blocks/block/carved_oak_log
+    end: mineinabyss:blocks/block/carved_oak_log_top
 
 nexo:custom_block:
   type: NOTEBLOCK

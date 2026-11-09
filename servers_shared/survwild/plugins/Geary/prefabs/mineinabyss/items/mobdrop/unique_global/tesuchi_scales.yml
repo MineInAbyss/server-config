@@ -12,11 +12,8 @@ set.item:
     nutrition: 2
   consumable:
     animation: EAT
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/tesuchi_scales
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/tesuchi_scales
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/tesuchi_scales
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

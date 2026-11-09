@@ -19,11 +19,8 @@ set.item:
           - type: minecraft:invisibility
             duration: 20s
             hasParticles: false
-resourcepack:
-  model: mineinabyss:dish/tosubachi
-  textures:
-    layers:
-    - mineinabyss:dish/tosubachi
+itemModel:
+  texture: mineinabyss:dish/tosubachi
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

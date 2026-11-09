@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_3>'
   - <#38896d><i>Seems to be poisonous.
   - <#38896d><i>I best not eat it...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/buroguro_lantern
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/buroguro_lantern
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/buroguro_lantern
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

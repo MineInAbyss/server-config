@@ -8,10 +8,8 @@ set.item:
   - <#BB9672>to swim through the Sea of Corpses. Will you be the first?
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Grants dolphins
   - <font:small_bottom><gray><shadow:#00000000>grace to the user on right click.
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/morinaut_shell
+itemModel:
+  texture: mineinabyss:relic/morinaut_shell
 observe:
   itemRightClick:
   - become: parent

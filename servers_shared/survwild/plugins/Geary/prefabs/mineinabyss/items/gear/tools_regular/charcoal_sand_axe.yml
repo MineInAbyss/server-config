@@ -3,10 +3,9 @@ set.item:
   type: minecraft:diamond_axe
   itemModel: mineinabyss:gear/tools_regular/charcoal_sand_axe
   maxDamage: 3000
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_axe
+itemModel:
+  type: texture
+  texture: mineinabyss:gear/tools_regular/charcoal_sand_axe
   parentModel: item/handheld
 set.recipes:
   discoverRecipes: true

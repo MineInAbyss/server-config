@@ -7,11 +7,8 @@ set.item:
   - <#524D47><i>Its bony on the outside but
   - <#524D47><i>Metallic on the inside!
   - <#524D47><i>prehaps i can use this to launch something...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/hisomukuro_rib
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/hisomukuro_rib
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/hisomukuro_rib
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

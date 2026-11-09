@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Build-Server Marker Block Magenta
   itemModel: mineinabyss:blocks/builder_marker_block/magenta_builder_marker_block
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: mineinabyss:blocks/builder_marker_block_base
-  model: mineinabyss:blocks/builder_marker_block/magenta_builder_marker_block
-  textures:
-    variables:
-      all: mineinabyss:blocks/builder_marker_block/magenta_builder_marker_block
+  texture:
+    all: mineinabyss:blocks/builder_marker_block/magenta_builder_marker_block
 
 nexo:custom_block:
   type: NOTEBLOCK

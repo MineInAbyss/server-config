@@ -21,10 +21,8 @@ passive:
       hasParticles: false
   - mythicSkills:
     - sudden_pinch_1
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/sudden_pinch
+itemModel:
+  texture: mineinabyss:relic/sudden_pinch
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

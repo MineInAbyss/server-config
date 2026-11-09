@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#824E21><i>They use these to assert dominance.
   - <#824E21><i>Yet they run off when you get close...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/ashimite_antlers
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/ashimite_antlers
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/ashimite_antlers
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

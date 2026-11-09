@@ -3,13 +3,12 @@ set.item:
   itemName: <white>Packed Ice Pillar 1
   itemModel: mineinabyss:blocks/block/packed_ice_pillar_1
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_column
-  model: mineinabyss:blocks/block/packed_ice_pillar_1
-  textures:
-    variables:
-      side: mineinabyss:blocks/block/packed_ice_pillar_1
-      end: mineinabyss:blocks/block/packed_ice_pillar_1_top
+  texture:
+    side: mineinabyss:blocks/block/packed_ice_pillar_1
+    end: mineinabyss:blocks/block/packed_ice_pillar_1_top
 
 nexo:custom_block:
   type: NOTEBLOCK

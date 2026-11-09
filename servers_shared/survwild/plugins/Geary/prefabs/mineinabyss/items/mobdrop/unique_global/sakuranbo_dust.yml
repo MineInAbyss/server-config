@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_3>:cosmetic_orth_coin:'
   - <gold><i>Careful! Ignites easily.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/sakuranbo_dust
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/sakuranbo_dust
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/sakuranbo_dust
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

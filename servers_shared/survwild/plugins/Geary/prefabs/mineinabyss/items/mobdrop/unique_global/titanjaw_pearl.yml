@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#0C7787><i>Why do I feel like I am haunted...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/titanjaw_pearl
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/titanjaw_pearl
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/titanjaw_pearl
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

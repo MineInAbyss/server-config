@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_1><emojy:layer_2><emojy:layer_3>:cosmetic_orth_coin:'
   - <#40FF19>Yucky.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/splitjaw_gunk
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/splitjaw_gunk
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/splitjaw_gunk
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

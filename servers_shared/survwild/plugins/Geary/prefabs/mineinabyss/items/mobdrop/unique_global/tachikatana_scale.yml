@@ -7,11 +7,8 @@ set.item:
   - <#1B5BAD><i>A shiny scale knocked off the Tachikatana!
   - <#1B5BAD><i>They're rumored to be one of the most waterproof
   - <#1B5BAD><i>materials in the <green>Abyss<#1B5BAD>.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/tachikatana_scale
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/tachikatana_scale
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/tachikatana_scale
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

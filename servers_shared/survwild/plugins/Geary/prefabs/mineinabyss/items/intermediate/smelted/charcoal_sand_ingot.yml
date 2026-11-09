@@ -22,11 +22,8 @@ set.recipes:
     input: mineinabyss:charcoal_sand_ore
     experience: 2
     cookingTime: 2.5s
-resourcepack:
-  model: mineinabyss:intermediate/smelted
-  textures:
-    layers:
-    - mineinabyss:intermediate/smelted/charcoal_sand_ingot
+itemModel:
+  texture: mineinabyss:intermediate/smelted/charcoal_sand_ingot
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

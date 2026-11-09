@@ -3,13 +3,12 @@ set.item:
   itemName: <white>Carved Crimson Stem
   itemModel: mineinabyss:blocks/block/carved_crimson_stem
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_column
-  model: mineinabyss:blocks/block/carved_crimson_stem
-  textures:
-    variables:
-      side: mineinabyss:blocks/block/carved_crimson_stem
-      end: mineinabyss:blocks/block/carved_crimson_stem_top
+  texture:
+    side: mineinabyss:blocks/block/carved_crimson_stem
+    end: mineinabyss:blocks/block/carved_crimson_stem_top
 
 nexo:custom_block:
   type: NOTEBLOCK

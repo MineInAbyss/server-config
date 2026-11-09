@@ -20,11 +20,8 @@ observe:
       type: mineinabyss:aoesphere
     when:
     - chance: 1
-resourcepack:
-  model: mineinabyss:gathering/sunsphere_l4
-  textures:
-    layers:
-    - mineinabyss:gathering/sunsphere_l4
+itemModel:
+  texture: mineinabyss:gathering/sunsphere_l4
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

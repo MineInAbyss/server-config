@@ -41,10 +41,8 @@ passive:
           item: mineinabyss:sin_spiral
   - mythicSkills:
     - sin_spiral_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/sin_spiral
+itemModel:
+  texture: mineinabyss:relic/sin_spiral
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

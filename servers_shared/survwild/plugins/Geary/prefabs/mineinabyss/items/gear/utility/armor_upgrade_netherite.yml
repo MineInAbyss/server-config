@@ -3,11 +3,8 @@ set.item:
   itemName: "Armor Upgrade: Netherite"
   itemModel: mineinabyss:gear/utility/armor_upgrade_netherite
   maxStackSize: 1
-resourcepack:
-  model: mineinabyss:gear/utility/armor_upgrade_netherite
-  textures:
-    layers:
-    - mineinabyss:gear/utility/armor_upgrade_netherite
+itemModel:
+  texture: mineinabyss:gear/utility/armor_upgrade_netherite
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities

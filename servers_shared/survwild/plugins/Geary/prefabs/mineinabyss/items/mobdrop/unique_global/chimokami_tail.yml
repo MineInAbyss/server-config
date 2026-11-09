@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_2>:cosmetic_orth_coin:'
   - <#7a243f><i>These critters like darkness.
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/chimokami_tail
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/chimokami_tail
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/chimokami_tail
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

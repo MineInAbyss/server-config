@@ -23,10 +23,8 @@ passive:
       duration: 400s
   - mythicSkills:
     - gold-mending_wedge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/gold-mending_wedge
+itemModel:
+  texture: mineinabyss:relic/gold-mending_wedge
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

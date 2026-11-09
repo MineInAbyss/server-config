@@ -7,11 +7,8 @@ set.item:
   - <#167D2A><i>A very thin, yet surprisingly
   - <#167D2A><i>tensile strand of silk.
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/kuongatari_silk
-  textures:
-    layers:
-    - mineinabyss:mobdrop/mob_standard/kuongatari_silk
+itemModel:
+  texture: mineinabyss:mobdrop/mob_standard/kuongatari_silk
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

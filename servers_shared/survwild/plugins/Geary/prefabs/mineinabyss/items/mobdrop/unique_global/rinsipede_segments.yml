@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_3>'
   - <#a39039><i>I've heard their body makes
   - <#a39039><i>for a great fertiliser.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/rinsipede_segments
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/rinsipede_segments
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/rinsipede_segments
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

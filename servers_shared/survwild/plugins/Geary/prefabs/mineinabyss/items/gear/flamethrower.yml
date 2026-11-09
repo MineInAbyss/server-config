@@ -9,7 +9,8 @@ set.item:
   - <#3d59ab>Flamethrowers are vastly considered inhumane in use.
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Projects flames on right click.
   - <font:small_bottom><gray><shadow:#00000000>Requires Flamethrower Fuel within the inventory to work.
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/flamethrower
 set.recipes:
  result:

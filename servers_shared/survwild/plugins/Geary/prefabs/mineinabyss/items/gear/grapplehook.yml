@@ -61,7 +61,8 @@ passive:
           item: mineinabyss:grapplehook
   - mythicSkills:
     - grapplehook_charge
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/grapple_hook/grapplinghookretracted
 creative_tab:
   category: Gear

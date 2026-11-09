@@ -7,11 +7,8 @@ set.item:
   - <#EB1742><i>This is definetly not edible!
   - <#EB1742><i>It reeks of burned dried vomit, much
   - <#EB1742><i>like Nanachi's Netherworld Stew.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/stingerhead_flesh
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/stingerhead_flesh
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/stingerhead_flesh
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

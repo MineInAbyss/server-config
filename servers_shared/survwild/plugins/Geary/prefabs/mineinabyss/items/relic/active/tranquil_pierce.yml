@@ -19,7 +19,8 @@ set.item:
   unbreakable: {}
   enchantmentGlintOverride: false
   enchantable: 0
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/tranquil_pierce
 observe:
   itemLeftClick:

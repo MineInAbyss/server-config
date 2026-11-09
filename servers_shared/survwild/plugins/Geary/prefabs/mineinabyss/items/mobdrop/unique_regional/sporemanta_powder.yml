@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>'
   - <#FF1FB4><i>The furthest thing to magical
   - <#FF1FB4><i>fairy dust.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/sporemanta_powder
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/sporemanta_powder
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/sporemanta_powder
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

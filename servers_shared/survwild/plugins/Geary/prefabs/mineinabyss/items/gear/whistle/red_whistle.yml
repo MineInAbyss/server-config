@@ -3,7 +3,8 @@ set.item:
   itemModel: mineinabyss:gear/whistle/red_whistle
   itemName: Red Whistle
   maxStackSize: 1
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:gear/whistle/red_whistle
 observe:
   itemRightClick:

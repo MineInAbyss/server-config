@@ -10,7 +10,8 @@ set.item:
   enchantmentGlintOverride: true
   weapon:
     damagePerAttack: 0
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/arc_staff
 observe:
   itemRightClick:

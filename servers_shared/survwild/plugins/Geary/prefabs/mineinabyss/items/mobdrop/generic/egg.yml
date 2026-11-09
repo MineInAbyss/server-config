@@ -3,11 +3,8 @@ set.item:
   itemName: Egg
   itemModel: mineinabyss:mobdrop/generic/egg
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/egg
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/egg
+itemModel:
+  texture: mineinabyss:mobdrop/generic/egg
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

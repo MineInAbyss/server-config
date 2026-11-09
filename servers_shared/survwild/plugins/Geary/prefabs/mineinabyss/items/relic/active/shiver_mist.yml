@@ -56,7 +56,8 @@ passive:
           item: mineinabyss:shiver_mist
   - mythicSkills:
     - shiver_mist_charger
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/shiver_mist
 creative_tab:
   category: Relics

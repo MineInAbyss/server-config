@@ -49,11 +49,8 @@ observe:
       group: mineinabyss:depth_meter
       duration: 5s
   - mineinabyss:showDepth: {}
-resourcepack:
-  model: mineinabyss:gear/utility/depth_meter
-  textures:
-    layers:
-    - mineinabyss:gear/utility/depth_meter
+itemModel:
+  texture: mineinabyss:gear/utility/depth_meter
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities

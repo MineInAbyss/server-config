@@ -48,7 +48,8 @@ passive:
           item: mineinabyss:necrometallic_sledge
   - mythicSkills:
     - necrometallic_sledge_charge
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/necrometallic_sledge
 creative_tab:
   category: Relics

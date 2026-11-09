@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#376B36><i>Extremely sharp, watch your fingers!
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/kagi_tachikiri_pincer
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/kagi_tachikiri_pincer
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/kagi_tachikiri_pincer
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

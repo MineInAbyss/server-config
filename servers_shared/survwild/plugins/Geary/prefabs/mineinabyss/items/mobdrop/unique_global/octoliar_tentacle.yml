@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>'
   - <#B8FFBA><i>Although a little wet, it's
   - <#B8FFBA><i>as tough as a rock!
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/octoliar_tentacle
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/octoliar_tentacle
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/octoliar_tentacle
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -20,11 +20,8 @@ set.item:
   tooltipDisplay:
     hiddenComponents:
       - potion_contents
-resourcepack:
-  model: mineinabyss:materials/stinger_poison
-  textures:
-    layers:
-    - mineinabyss:materials/stinger_poison
+itemModel:
+  texture: mineinabyss:materials/stinger_poison
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

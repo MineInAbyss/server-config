@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#0C7787><i>Might be useful to craft gear
   - <#0C7787><i>with if I collect enough.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/titanjaw_scale
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/titanjaw_scale
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/titanjaw_scale
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

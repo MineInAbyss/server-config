@@ -17,12 +17,10 @@ set.item:
       #     - type: minecraft:instant_health
       #       duration: 2s
       #       hasParticles: false
-resourcepack:
+itemModel:
+  type: texture
+  texture: mineinabyss:gear/utility/simple_bandage
   parentModel: item/handheld
-  model: mineinabyss:gear/utility/simple_bandage
-  textures:
-    layers:
-    - mineinabyss:gear/utility/simple_bandage
 
 set.recipes:
   discoverRecipes: true

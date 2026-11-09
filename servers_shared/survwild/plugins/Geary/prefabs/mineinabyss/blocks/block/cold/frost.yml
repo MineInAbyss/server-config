@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Frost
   itemModel: mineinabyss:blocks/block/frost
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/frost
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/frost
+  texture:
+    all: mineinabyss:blocks/block/frost
 
 nexo:custom_block:
   type: NOTEBLOCK

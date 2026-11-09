@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#824E21><i>Excellent for starting fires!
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/ashimite_hoof
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/ashimite_hoof
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/ashimite_hoof
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

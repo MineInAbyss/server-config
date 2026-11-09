@@ -11,7 +11,8 @@ set.item:
   unbreakable: {}
   enchantable: 0
 disableItemInteractions: {}
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/arc_staff
 observe:
   itemRightClick:

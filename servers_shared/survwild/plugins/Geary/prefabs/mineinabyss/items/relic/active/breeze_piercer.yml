@@ -19,7 +19,8 @@ observe:
       duration: 20s
   - mythicSkills:
     - breeze_piercer
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/breeze_piercer
 creative_tab:
   category: Relics

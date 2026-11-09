@@ -11,11 +11,8 @@ set.item:
     nutrition: 5
   consumable:
     animation: EAT
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/tachikatana_leg
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/tachikatana_leg
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/tachikatana_leg
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

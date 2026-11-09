@@ -21,11 +21,8 @@ observe:
       type: mineinabyss:damagesphere
     when:
     - chance: 1
-resourcepack:
-  model: mineinabyss:gathering/sunsphere_l1
-  textures:
-    layers:
-    - mineinabyss:gathering/sunsphere_l1
+itemModel:
+  texture: mineinabyss:gathering/sunsphere_l1
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

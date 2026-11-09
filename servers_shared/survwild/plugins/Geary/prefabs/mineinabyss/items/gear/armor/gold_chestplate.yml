@@ -11,11 +11,8 @@ set.item:
   enchantmentGlintOverride: false
   lore:
   - 'Erm, dis do be armor.'
-resourcepack:
-  model: mineinabyss:gear/armor/gold_chestplate
-  textures:
-    layers:
-    - mineinabyss:gear/armor/gold_chestplate
+itemModel:
+  texture: mineinabyss:gear/armor/gold_chestplate
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:combat

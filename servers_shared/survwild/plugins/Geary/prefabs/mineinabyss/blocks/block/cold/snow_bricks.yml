@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Snow Bricks
   itemModel: mineinabyss:blocks/block/snow_bricks
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/snow_bricks
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/snow_bricks
+  texture:
+    all: mineinabyss:blocks/block/snow_bricks
 
 nexo:custom_block:
   type: NOTEBLOCK

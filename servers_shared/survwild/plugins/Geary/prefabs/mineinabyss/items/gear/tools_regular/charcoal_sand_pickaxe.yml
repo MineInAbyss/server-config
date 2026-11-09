@@ -3,10 +3,9 @@ set.item:
   type: minecraft:diamond_pickaxe
   itemModel: mineinabyss:gear/tools_regular/charcoal_sand_pickaxe
   maxDamage: 3000
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/charcoal_sand_pickaxe
+itemModel:
+  type: texture
+  texture: mineinabyss:gear/tools_regular/charcoal_sand_pickaxe
   parentModel: item/handheld
 set.recipes:
   discoverRecipes: true

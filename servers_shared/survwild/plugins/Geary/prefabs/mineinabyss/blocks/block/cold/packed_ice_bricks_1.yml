@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Packed Ice Bricks 1
   itemModel: mineinabyss:blocks/block/packed_ice_bricks_1
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/packed_ice_bricks_1
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/packed_ice_bricks_1
+  texture:
+    all: mineinabyss:blocks/block/packed_ice_bricks_1
 
 nexo:custom_block:
   type: NOTEBLOCK

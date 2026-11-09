@@ -8,11 +8,8 @@ set.item:
   - <#D9D9D9><i>be able to see it as well?
   - <#D9D9D9><i>Probably just wishful thinking...
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/orb_piercer_face_fragments
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/orb_piercer_face_fragments
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/orb_piercer_face_fragments
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -42,10 +42,9 @@ passive:
           item: mineinabyss:ball_lightning
   - mythicSkills:
     - ball_lightning_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/ball_lightning
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/ball_lightning
   parentModel: item/handheld
 creative_tab:
   category: Relics

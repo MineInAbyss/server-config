@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_4><emojy:layer_5>:cosmetic_orth_coin:'
   - <#595959><i>There is a fire in its eyes.
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/hashofu_eye
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/hashofu_eye
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/hashofu_eye
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

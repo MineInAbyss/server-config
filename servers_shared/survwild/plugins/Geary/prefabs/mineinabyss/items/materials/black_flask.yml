@@ -42,11 +42,8 @@ observe:
       amplifier: 10
     - type: minecraft:instant_damage
       duration: 1s
-resourcepack:
-  model: mineinabyss:relic/black_flask
-  textures:
-    layers:
-      - mineinabyss:relic/black_flask
+itemModel:
+  texture: mineinabyss:relic/black_flask
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

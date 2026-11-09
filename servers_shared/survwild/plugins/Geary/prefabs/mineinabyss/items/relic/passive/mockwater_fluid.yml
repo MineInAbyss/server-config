@@ -16,10 +16,8 @@ passive:
   - become: parent
   - mythicSkills:
     - mockwater_fluid
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/mockwater_fluid
+itemModel:
+  texture: mineinabyss:relic/mockwater_fluid
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

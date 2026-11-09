@@ -16,10 +16,8 @@ passive:
   - become: parent
   - mythicSkills:
     - rock_top
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/rock_top
+itemModel:
+  texture: mineinabyss:relic/rock_top
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

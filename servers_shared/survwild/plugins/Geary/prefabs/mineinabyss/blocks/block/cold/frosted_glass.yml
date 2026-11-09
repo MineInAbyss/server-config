@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Frosted Glass
   itemModel: mineinabyss:blocks/block/frosted_glass
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/frosted_glass
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/frosted_glass
+  texture:
+    all: mineinabyss:blocks/block/frosted_glass
 
 nexo:custom_block:
   type: NOTEBLOCK
