@@ -5,6 +5,14 @@ onInteract:
 - mineinabyss:open_trades:
     trades:
       - input: "mineinabyss:orth_coin 16"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:thorns
+              level: 3
       - input: "mineinabyss:orth_coin 12"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:silk_touch
+              level: 1

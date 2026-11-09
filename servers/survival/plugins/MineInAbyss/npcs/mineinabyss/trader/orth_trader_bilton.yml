@@ -5,10 +5,26 @@ onInteract:
 - mineinabyss:open_trades:
     trades:
       - input: "mineinabyss:orth_coin 12"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:protection
+              level: 4
       - input: "mineinabyss:orth_coin 10"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:fire_protection
+              level: 4
       - input: "mineinabyss:orth_coin 10"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:blast_protection
+              level: 4
       - input: "mineinabyss:orth_coin 10"
-        output: "minecraft:enchanted_book 1"
+        output:
+          type: minecraft:enchanted_book
+          storedEnchantments:
+            - enchant: minecraft:projectile_protection
+              level: 4
