@@ -242,12 +242,21 @@ hammerbeakTakeoff:
   - defaultstate{t=idle;s=idlefly;li=5;lo=5} @Self
   - skill{s=hammerbeakAirHoverS} @self
 
+hammerbeakSpawnAirborne:
+  Skills:
+  - delay 1
+  - stance{s=idleAir} @self
+  - defaultstate{t=walk;s=walkfly;li=5;lo=5} @Self
+  - defaultstate{t=idle;s=idlefly;li=5;lo=5} @Self
+  - skill{s=hammerbeakAirHoverS} @self
+
 hammerbeakLand:
   Cooldown: 5
   Conditions:
   - incombat false
   - stance{s=idleAir} true
   - targetnotwithin{d=20}
+  - altitude{a=<8} true
   Skills:
   - delay <random.0to20>
   - stance{s=landing} @self
