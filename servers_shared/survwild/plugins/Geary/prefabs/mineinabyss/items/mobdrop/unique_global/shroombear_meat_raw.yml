@@ -24,10 +24,10 @@ itemModel:
     property: custom_model_data
     onTrue:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/shroombear_meat_cooked
+      texture: mineinabyss:mobdrop/unique_global/shroombear_meat_cooked
     onFalse:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/shroombear_meat_raw
+      texture: mineinabyss:mobdrop/unique_global/shroombear_meat_raw
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

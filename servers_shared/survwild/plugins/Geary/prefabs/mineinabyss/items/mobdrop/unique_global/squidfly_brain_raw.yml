@@ -24,10 +24,10 @@ itemModel:
     property: custom_model_data
     onTrue:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/squidfly_brain_cooked
+      texture: mineinabyss:mobdrop/unique_global/squidfly_brain_cooked
     onFalse:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/squidfly_brain_raw
+      texture: mineinabyss:mobdrop/unique_global/squidfly_brain_raw
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

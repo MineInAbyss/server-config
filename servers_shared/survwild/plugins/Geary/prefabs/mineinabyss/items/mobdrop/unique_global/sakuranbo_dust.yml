@@ -1,15 +1,15 @@
 set.item:
   type: minecraft:gunpowder
   itemName: <gold>Sakuranbo Dust
-  itemModel: mineinabyss:mobdrop/mob_standard/sakuranbo_dust
+  itemModel: mineinabyss:mobdrop/unique_global/sakuranbo_dust
   lore:
   - '<emojy:layer_3>:cosmetic_orth_coin:'
   - <gold><i>Careful! Ignites easily.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/sakuranbo_dust
+  model: mineinabyss:mobdrop/unique_global/sakuranbo_dust
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/sakuranbo_dust
+    - mineinabyss:mobdrop/unique_global/sakuranbo_dust
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:apple
   itemName: <#00FFFF>Tachikatana Leg
-  itemModel: mineinabyss:mobdrop/mob_standard/tachikatana_leg
+  itemModel: mineinabyss:mobdrop/unique_global/tachikatana_leg
   lore:
   - '<emojy:layer_4><emojy:layer_5>'
   - <#1B5BAD><i>Tastes like crab!
@@ -12,10 +12,10 @@ set.item:
   consumable:
     animation: EAT
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/tachikatana_leg
+  model: mineinabyss:mobdrop/unique_global/tachikatana_leg
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/tachikatana_leg
+    - mineinabyss:mobdrop/unique_global/tachikatana_leg
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

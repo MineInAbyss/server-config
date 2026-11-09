@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:clay_ball
   itemName: <#800080>Edusan Scale
-  itemModel: mineinabyss:mobdrop/mob_standard/edusan_scale
+  itemModel: mineinabyss:mobdrop/unique_global/edusan_scale
   lore:
   - '<emojy:layer_5>'
   - <#ee5bb8><i>Exudes a beautifully ominous aura.
 disableItemInteractions: {}
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/edusan_scale
+  model: mineinabyss:mobdrop/unique_global/edusan_scale
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/edusan_scale
+    - mineinabyss:mobdrop/unique_global/edusan_scale
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

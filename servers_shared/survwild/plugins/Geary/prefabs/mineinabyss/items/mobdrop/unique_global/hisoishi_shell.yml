@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:amethyst_block
   itemName: <#303e77>Hisoishi Shell
-  itemModel: mineinabyss:mobdrop/mob_standard/hisoishi_shell
+  itemModel: mineinabyss:mobdrop/unique_global/hisoishi_shell
   lore:
   - '<emojy:layer_2><emojy:layer_3>'
   - <#649378><i>The shell is hard as amethyst
   - <#649378><i>to keep out predators.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/hisoishi_shell
+  model: mineinabyss:mobdrop/unique_global/hisoishi_shell
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/hisoishi_shell
+    - mineinabyss:mobdrop/unique_global/hisoishi_shell
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:quartz
   itemName: <#755237>Spikewalker Spike
-  itemModel: mineinabyss:mobdrop/mob_standard/spikewalker_spike
+  itemModel: mineinabyss:mobdrop/unique_global/spikewalker_spike
   lore:
   - '<emojy:layer_5>'
   - <#ccbd99><i>It may not look pointy,
   - <#ccbd99><i>but don't let it poke ya!
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/spikewalker_spike
+  model: mineinabyss:mobdrop/unique_global/spikewalker_spike
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/spikewalker_spike
+    - mineinabyss:mobdrop/unique_global/spikewalker_spike
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

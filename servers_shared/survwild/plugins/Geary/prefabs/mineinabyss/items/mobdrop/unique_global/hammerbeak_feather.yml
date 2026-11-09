@@ -1,7 +1,7 @@
 set.item:
   type: minecraft:feather
   itemName: <#613F0C>Hammerbeak Feather
-  itemModel: mineinabyss:mobdrop/mob_standard/hammerbeak_feather
+  itemModel: mineinabyss:mobdrop/unique_global/hammerbeak_feather
   lore:
   - '<emojy:layer_1><emojy:layer_2><emojy:layer_4>:cosmetic_orth_coin:'
   - <#A9CCCA>Just a feather, innit?
@@ -9,10 +9,10 @@ set.item:
     burnTime: 160s
     speedMultiplier: 1.5
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/hammerbeak_feather
+  model: mineinabyss:mobdrop/unique_global/hammerbeak_feather
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/hammerbeak_feather
+    - mineinabyss:mobdrop/unique_global/hammerbeak_feather
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

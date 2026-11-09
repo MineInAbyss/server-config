@@ -1,15 +1,15 @@
 set.item:
   type: minecraft:feather
   itemName: <#D12B26>Corpse-Weeper Feather
-  itemModel: mineinabyss:mobdrop/mob_standard/corpse_weeper_feather
+  itemModel: mineinabyss:mobdrop/unique_global/corpse_weeper_feather
   lore:
   - '<emojy:layer_2>:cosmetic_orth_coin:'
   - <red>A quill for writing in blood.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/corpse_weeper_feather
+  model: mineinabyss:mobdrop/unique_global/corpse_weeper_feather
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/corpse_weeper_feather
+    - mineinabyss:mobdrop/unique_global/corpse_weeper_feather
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

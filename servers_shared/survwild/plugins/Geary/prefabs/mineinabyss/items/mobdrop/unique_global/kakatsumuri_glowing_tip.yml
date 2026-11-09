@@ -1,16 +1,16 @@
 set.item:
   type: minecraft:glow_ink_sac
   itemName: <#7D93FF>Kakatsumuri Glowing Tip
-  itemModel: mineinabyss:mobdrop/mob_standard/kakatsumuri_glowing_tip
+  itemModel: mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
   lore:
   - '<emojy:layer_3>'
   - <#B8FFBA><i>The very tip of the shell, it seems
   - <#B8FFBA><i>to leak a glowing sticky substance.
 resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/kakatsumuri_glowing_tip
+  model: mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
   textures:
     layers:
-    - mineinabyss:mobdrop/mob_standard/kakatsumuri_glowing_tip
+    - mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

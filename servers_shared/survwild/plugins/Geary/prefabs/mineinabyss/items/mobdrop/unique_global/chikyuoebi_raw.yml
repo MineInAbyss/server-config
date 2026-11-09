@@ -22,10 +22,10 @@ itemModel:
     property: custom_model_data
     onTrue:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/chikyuoebi_cooked
+      texture: mineinabyss:mobdrop/unique_global/chikyuoebi_cooked
     onFalse:
       type: texture
-      texture: mineinabyss:mobdrop/mob_standard/chikyuoebi_raw
+      texture: mineinabyss:mobdrop/unique_global/chikyuoebi_raw
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks
