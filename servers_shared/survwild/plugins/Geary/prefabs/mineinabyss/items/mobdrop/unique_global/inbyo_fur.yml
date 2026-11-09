@@ -1,13 +1,13 @@
 set.item:
   type: minecraft:black_wool
   itemName: <#3D3D3D>Inbyo Fur
-  itemModel: mineinabyss:mobdrop/mob_standard/inbyo_fur
+  itemModel: mineinabyss:mobdrop/unique_global/inbyo_fur
   lore:
   - '<emojy:layer_2>'
   - <#B5B5B5><i>This stench is nauseating...
 disableItemInteractions: {}
 itemModel:
-  texture: mineinabyss:mobdrop/mob_standard/inbyo_fur
+  texture: mineinabyss:mobdrop/unique_global/inbyo_fur
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients
