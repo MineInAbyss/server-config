@@ -48,7 +48,8 @@ hammerbeak:
     #  - summon{type=hammerbeakSmallCorpse;amount=1;radius=0;delay=42} @self ~onDeath
     - velocity{m=add;x=0;y=-0.4;z=0;repeat=120;repeatInterval=1} @self ~onDeath
     # Stances/AI
-    - stance{s=landed} @self ~onSpawnOrLoad
+    - stance{s=landed} @self ~onSpawnOrLoad ?onGround{}
+    - skill{s=hammerbeakSpawnAirborne} @self ~onSpawnOrLoad ?!onGround{}
     - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=10}
     - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
     - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
@@ -117,7 +118,8 @@ hammerbeakLarge:
     #- summon{type=hammerbeakCorpse;amount=1;radius=0;delay=46} @self ~onDeath
     - velocity{m=add;x=0;y=-0.8;z=0;repeat=120;repeatInterval=1} @self ~onDeath
     # Stances/AI
-    - stance{s=landed} @self ~onSpawnOrLoad
+    - stance{s=landed} @self ~onSpawnOrLoad ?onGround{}
+    - skill{s=hammerbeakSpawnAirborne} @self ~onSpawnOrLoad ?!onGround{}
     - skill{s=hammerbeakTakeoff} @self ~onTimer:100 ?targetwithin{d=14}
     - skill{s=hammerbeakTakeoff} @self ~onSignal:danger
     - skill{s=hammerbeakTakeoff} @self ~onHurt ?onGround{}
