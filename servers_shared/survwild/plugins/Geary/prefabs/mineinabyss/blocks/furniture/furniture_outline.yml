@@ -2,12 +2,11 @@ set.item:
   type: minecraft:structure_void
   itemName: Furniture Outline
   itemModel: mineinabyss:ui/blocky/furniture_outline
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:ui/blocky/furniture_outline
-  textures:
-    variables:
-      all: mineinabyss:ui/blocky/furniture_outline
+  texture:
+    all: mineinabyss:ui/blocky/furniture_outline
 creative_tab:
   category: Other
   vanilla_tab: minecraft:tools_and_utilities

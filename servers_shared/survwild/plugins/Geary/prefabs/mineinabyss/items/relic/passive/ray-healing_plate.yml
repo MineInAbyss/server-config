@@ -21,10 +21,8 @@ passive:
   - mythicSkills:
     - ray-healing_heal
 
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/ray-healing_plate
+itemModel:
+  texture: mineinabyss:relic/ray-healing_plate
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

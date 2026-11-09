@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Crate 1
   itemModel: mineinabyss:blocks/block/crate_1
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/crate_1
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/crate_1
+  texture:
+    all: mineinabyss:blocks/block/crate_1
 
 nexo:custom_block:
   type: NOTEBLOCK

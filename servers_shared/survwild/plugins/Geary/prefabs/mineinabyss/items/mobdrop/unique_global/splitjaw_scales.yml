@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_1><emojy:layer_2><emojy:layer_3>:cosmetic_orth_coin:'
   - <reset><light_purple><i>Can be used to
   - <reset><light_purple><i>make certain blocks.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/splitjaw_scales
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/splitjaw_scales
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/splitjaw_scales
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

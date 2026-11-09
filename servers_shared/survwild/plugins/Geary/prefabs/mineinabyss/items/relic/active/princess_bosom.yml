@@ -8,7 +8,8 @@ set.item:
   - <#d7c9b3>Bosom’s purpose has finally been found!
   - <font:small_bottom><gray><shadow:#00000000>Active ability. Grants absorption to the user
   - <font:small_bottom><gray><shadow:#00000000>and confusion to the surroundings on right click.
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/princess_bosom
 observe:
   itemRightClick:

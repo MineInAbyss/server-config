@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_3>'
   - <#DB5807><i>A powerful magma core.
   - <#DB5807><i>Could be useful in powerful relics...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/himushi_core
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/himushi_core
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/himushi_core
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

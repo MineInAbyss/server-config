@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_1><emojy:layer_2>:cosmetic_orth_coin:'
   - <#54FFA4><i>It resembles the feathers
   - <#54FFA4><i>of a <#3DDFFF>Sakawatari<#54FFA4><i>...
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/cyatoria_feather
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/cyatoria_feather
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/cyatoria_feather
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

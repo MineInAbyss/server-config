@@ -17,10 +17,8 @@ passive:
   - become: parent
   - mythicSkills:
     - after_image_arrow
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/after_image_arrow
+itemModel:
+  texture: mineinabyss:relic/after_image_arrow
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

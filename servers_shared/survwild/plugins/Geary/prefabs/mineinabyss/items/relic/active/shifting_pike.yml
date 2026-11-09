@@ -40,7 +40,8 @@ observe:
   - mythicSkills:
     - shifting_pike
 
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/shining_pike
 creative_tab:
   category: Relics

@@ -2,11 +2,8 @@ set.item:
   itemName: <#0047AB>Flamethrower Barrel
   type: minecraft:clock
   itemModel: mineinabyss:materials/flamethrower_barrel
-resourcepack:
-  model: mineinabyss:materials/flamethrower_barrel  
-  textures:
-    layers:
-    - mineinabyss:materials/flamethrower_barrel  
+itemModel:
+  texture: mineinabyss:materials/flamethrower_barrel
 set.recipes:
  result:
    prefab: mineinabyss:flamethrower_barrel

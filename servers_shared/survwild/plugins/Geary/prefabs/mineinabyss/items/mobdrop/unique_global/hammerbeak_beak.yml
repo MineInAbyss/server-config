@@ -8,11 +8,8 @@ set.item:
   - <yellow>when combined with a little steel.
   - <#A9CCCA><i>It seems sharp enough
   - <#A9CCCA><i>to put an eye out.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/hammerbeak_beak
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/hammerbeak_beak
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/hammerbeak_beak
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

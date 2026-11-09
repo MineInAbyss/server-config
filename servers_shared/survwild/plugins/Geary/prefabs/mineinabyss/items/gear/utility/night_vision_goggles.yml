@@ -21,7 +21,8 @@ passive:
     - type: minecraft:night_vision
       duration: 22s
       hasParticles: false
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:gear/utility/night_vision_goggles
 creative_tab:
   category: Gear

@@ -45,7 +45,8 @@ observe:
   - mythicSkills:
     - atlas_dignitas
 
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/atlas_dignitas
 creative_tab:
   category: Relics

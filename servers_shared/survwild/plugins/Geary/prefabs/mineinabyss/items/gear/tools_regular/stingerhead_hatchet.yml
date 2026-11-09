@@ -3,10 +3,9 @@ set.item:
   type: minecraft:diamond_sword
   itemModel: mineinabyss:gear/tools_regular/stingerhead_hatchet
   maxDamage: 3000
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/stingerhead_hatchet
+itemModel:
+  type: texture
+  texture: mineinabyss:gear/tools_regular/stingerhead_hatchet
   parentModel: item/handheld
 set.recipes:
   discoverRecipes: true

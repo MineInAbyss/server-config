@@ -3,11 +3,8 @@ set.item:
   itemName: Tooth
   itemModel: mineinabyss:mobdrop/generic/tooth
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/tooth
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/tooth
+itemModel:
+  texture: mineinabyss:mobdrop/generic/tooth
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

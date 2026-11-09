@@ -3,11 +3,8 @@ set.item:
   type: minecraft:emerald
   itemModel: mineinabyss:misc/orth_coin
 mineinabyss:orthcoin: {}
-resourcepack:
-  model: mineinabyss:misc/orth_coin
-  textures:
-    layers:
-    - mineinabyss:misc/orth_coin
+itemModel:
+  texture: mineinabyss:misc/orth_coin
 creative_tab:
   category: Other
   vanilla_tab: minecraft:tools_and_utilities

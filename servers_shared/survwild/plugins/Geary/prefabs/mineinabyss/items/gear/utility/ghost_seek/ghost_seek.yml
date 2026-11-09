@@ -45,7 +45,8 @@ passive:
           25:
             - mythicSkills: [ ghost_seek_effect_4 ]
 
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:gear/utility/ghost_seek_on
 creative_tab:
   category: Gear

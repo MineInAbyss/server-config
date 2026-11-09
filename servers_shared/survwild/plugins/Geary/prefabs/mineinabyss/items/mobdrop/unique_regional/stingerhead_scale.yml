@@ -8,11 +8,8 @@ set.item:
   - <yellow>material in the <green>Abyss<yellow>.
   - <#EB1742><i>Perhaps I can upgrade my
   - <#EB1742><i>armour with this?
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/stingerhead_scale
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/stingerhead_scale
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/stingerhead_scale
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

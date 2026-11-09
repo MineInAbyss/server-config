@@ -40,10 +40,8 @@ passive:
           item: mineinabyss:petrifying_stone
   - mythicSkills:
     - petrifying_stone_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/petrifying_stone
+itemModel:
+  texture: mineinabyss:relic/petrifying_stone
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

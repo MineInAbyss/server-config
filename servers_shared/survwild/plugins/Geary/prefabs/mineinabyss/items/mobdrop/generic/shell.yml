@@ -3,11 +3,8 @@ set.item:
   itemName: Shell
   itemModel: mineinabyss:mobdrop/generic/shell
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/shell
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/shell
+itemModel:
+  texture: mineinabyss:mobdrop/generic/shell
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

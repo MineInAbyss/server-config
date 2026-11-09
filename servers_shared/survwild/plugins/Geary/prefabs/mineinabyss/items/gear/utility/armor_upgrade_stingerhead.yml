@@ -3,11 +3,8 @@ set.item:
   itemName: "Armor Upgrade: Stingerhead"
   itemModel: mineinabyss:gear/utility/armor_upgrade_stingerhead
   maxStackSize: 1
-resourcepack:
-  model: mineinabyss:gear/utility/armor_upgrade_stingerhead
-  textures:
-    layers:
-    - mineinabyss:gear/utility/armor_upgrade_stingerhead
+itemModel:
+  texture: mineinabyss:gear/utility/armor_upgrade_stingerhead
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities

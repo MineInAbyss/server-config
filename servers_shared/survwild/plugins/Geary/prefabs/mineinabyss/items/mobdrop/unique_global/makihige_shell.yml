@@ -7,11 +7,8 @@ set.item:
   - <#5221A6>I hope I can make armor from this
   - <#5221A6>some day. But how?
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/makihige_shell
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/makihige_shell
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/makihige_shell
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

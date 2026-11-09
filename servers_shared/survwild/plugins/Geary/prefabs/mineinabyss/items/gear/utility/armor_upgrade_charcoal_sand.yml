@@ -3,11 +3,8 @@ set.item:
   itemName: "Armor Upgrade: Charcoal Sand"
   itemModel: mineinabyss:gear/utility/armor_upgrade_charcoal_sand
   maxStackSize: 1
-resourcepack:
-  model: mineinabyss:gear/utility/armor_upgrade_charcoal_sand
-  textures:
-    layers:
-    - mineinabyss:gear/utility/armor_upgrade_charcoal_sand
+itemModel:
+  texture: mineinabyss:gear/utility/armor_upgrade_charcoal_sand
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities

@@ -3,11 +3,8 @@ set.item:
   itemName: Baked Magotato
   itemModel: mineinabyss:gathering/cooking/magotato_baked
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:gathering/cooking/magotato_baked
-  textures:
-    layers:
-    - mineinabyss:gathering/cooking/magotato_baked
+itemModel:
+  texture: mineinabyss:gathering/cooking/magotato_baked
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Frosted Snow
   itemModel: mineinabyss:blocks/block/snow_frosted
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/snow_frosted
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/snow_frosted
+  texture:
+    all: mineinabyss:blocks/block/snow_frosted
 
 nexo:custom_block:
   type: NOTEBLOCK

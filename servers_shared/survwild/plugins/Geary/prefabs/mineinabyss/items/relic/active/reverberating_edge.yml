@@ -30,7 +30,8 @@ observe:
       duration: 50s
   - mythicSkills:
     - reverberating_edge_ability
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/reverberating_edge
 creative_tab:
   category: Relics

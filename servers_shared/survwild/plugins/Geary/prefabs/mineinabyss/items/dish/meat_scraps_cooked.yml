@@ -3,11 +3,8 @@ set.item:
   itemName: Cooked Meat Scraps
   itemModel: mineinabyss:dish/meat_scraps_cooked
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:dish/meat_scraps_cooked
-  textures:
-    layers:
-    - mineinabyss:dish/meat_scraps_cooked
+itemModel:
+  texture: mineinabyss:dish/meat_scraps_cooked
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

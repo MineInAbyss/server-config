@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>'
   - <#FFC847><i>Blazing hot, just like
   - <#FFC847><i>the Virinsipede's rage.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_regional/virinsipede_antlers
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_regional/virinsipede_antlers
+itemModel:
+  texture: mineinabyss:mobdrop/unique_regional/virinsipede_antlers
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

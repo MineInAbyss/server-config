@@ -3,12 +3,11 @@ set.item:
   itemName: <white>Charcoal Sand Ore
   itemModel: mineinabyss:blocks/block/charcoal_sand_ore
 
-resourcepack:
+itemModel:
+  type: texture
   parentModel: block/cube_all
-  model: mineinabyss:blocks/block/charcoal_sand_ore
-  textures:
-    variables:
-      all: mineinabyss:blocks/block/charcoal_sand_ore
+  texture:
+    all: mineinabyss:blocks/block/charcoal_sand_ore
 
 nexo:custom_block:
   type: NOTEBLOCK

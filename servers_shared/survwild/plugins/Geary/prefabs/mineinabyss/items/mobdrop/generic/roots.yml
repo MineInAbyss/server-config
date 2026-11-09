@@ -3,11 +3,8 @@ set.item:
   itemName: Roots
   itemModel: mineinabyss:mobdrop/generic/roots
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/roots
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/roots
+itemModel:
+  texture: mineinabyss:mobdrop/generic/roots
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -23,10 +23,8 @@ observe:
       duration: 30s
   - mythicSkills:
     - treble_winds_forward
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/treble_winds
+itemModel:
+  texture: mineinabyss:relic/treble_winds
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

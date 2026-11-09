@@ -5,11 +5,8 @@ set.item:
   lore:
   - '<emojy:layer_2>:cosmetic_orth_coin:'
   - <red>A quill for writing in blood.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/corpse_weeper_feather
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/corpse_weeper_feather
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/corpse_weeper_feather
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

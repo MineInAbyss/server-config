@@ -8,11 +8,8 @@ set.item:
   cookingFuel:
     burnTime: 160s
     speedMultiplier: 2.0
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/onitsuchi_feather
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/onitsuchi_feather
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/onitsuchi_feather
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

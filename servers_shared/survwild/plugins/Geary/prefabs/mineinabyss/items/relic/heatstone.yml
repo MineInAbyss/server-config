@@ -17,7 +17,8 @@ observe:
       type: mineinabyss:heatstone
     when:
     - chance: 1
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:gathering/sunsphere_l2
 creative_tab:
   category: Relics

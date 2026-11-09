@@ -42,10 +42,9 @@ passive:
           item: mineinabyss:gust_shot
   - mythicSkills:
     - gust-shot_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/gust-shot
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/gust-shot
   parentModel: item/handheld
 creative_tab:
   category: Relics

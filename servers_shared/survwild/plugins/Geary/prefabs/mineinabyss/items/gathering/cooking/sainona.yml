@@ -18,11 +18,8 @@ observe:
   - consumeItem:
       type: mineinabyss:pebble
     
-resourcepack:
-  model: mineinabyss:gathering/cooking/sainona
-  textures:
-    layers:
-    - mineinabyss:gathering/cooking/sainona
+itemModel:
+  texture: mineinabyss:gathering/cooking/sainona
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

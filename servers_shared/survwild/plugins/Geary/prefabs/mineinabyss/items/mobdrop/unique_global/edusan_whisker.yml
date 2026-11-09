@@ -7,11 +7,8 @@ set.item:
   - <#ee5bb8><i>When I touch this I start
   - <#ee5bb8><i>hearing voices...
 disableItemInteractions: {}
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/edusan_whisker
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/edusan_whisker
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/edusan_whisker
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

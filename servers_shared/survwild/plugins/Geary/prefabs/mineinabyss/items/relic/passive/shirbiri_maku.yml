@@ -17,10 +17,8 @@ passive:
   - become: parent
   - mythicSkills:
     - shirbiri_maku
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/shirbiri_maku
+itemModel:
+  texture: mineinabyss:relic/shirbiri_maku
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

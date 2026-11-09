@@ -9,11 +9,8 @@ set.item:
   itemModel: mineinabyss:misc/mitty_token
 disableItemInteractions: {}
 mineinabyss:mittytoken: {}
-resourcepack:
-  model: mineinabyss:misc/mitty_token
-  textures:
-    layers:
-    - mineinabyss:misc/mitty_token
+itemModel:
+  texture: mineinabyss:misc/mitty_token
 creative_tab:
   category: Other
   vanilla_tab: minecraft:tools_and_utilities

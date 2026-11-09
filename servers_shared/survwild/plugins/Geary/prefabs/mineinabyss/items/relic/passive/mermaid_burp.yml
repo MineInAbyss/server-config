@@ -17,10 +17,8 @@ passive:
     - type: minecraft:water_breathing
       duration: 6s
       hasParticles: false
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/mermaid_burp
+itemModel:
+  texture: mineinabyss:relic/mermaid_burp
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

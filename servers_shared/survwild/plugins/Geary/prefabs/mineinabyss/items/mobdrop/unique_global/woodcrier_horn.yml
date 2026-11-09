@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_1><emojy:layer_2>:cosmetic_orth_coin:'
   - <#A68348><i>Its hard and solid...
   - <#A68348><i>I can build structures with this.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/woodcrier_horn
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/woodcrier_horn
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/woodcrier_horn
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

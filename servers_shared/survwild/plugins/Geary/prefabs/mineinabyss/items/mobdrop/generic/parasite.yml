@@ -3,11 +3,8 @@ set.item:
   itemName: Parasite
   itemModel: mineinabyss:mobdrop/generic/parasite
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/parasite
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/parasite
+itemModel:
+  texture: mineinabyss:mobdrop/generic/parasite
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

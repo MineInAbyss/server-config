@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_5>:cosmetic_orth_coin:'
   - <#ccbd99><i>Inedible, hard, rough,
   - <#ccbd99><i>and gamey...
-resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/spikewalker_meat
-  textures:
-    layers:
-    - mineinabyss:mobdrop/mob_standard/spikewalker_meat
+itemModel:
+  texture: mineinabyss:mobdrop/mob_standard/spikewalker_meat
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

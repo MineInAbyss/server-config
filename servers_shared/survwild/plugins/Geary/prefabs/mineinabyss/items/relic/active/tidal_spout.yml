@@ -22,10 +22,9 @@ observe:
       duration: 20s
   - mythicSkills:
     - tidal_spout
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/tidal_spout
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/tidal_spout
   parentModel: item/handheld  
 creative_tab:
   category: Relics

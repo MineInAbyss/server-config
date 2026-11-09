@@ -3,11 +3,8 @@ set.item:
   itemName: Mourning Amber
   itemModel: mineinabyss:mobdrop/generic/silk
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/silk
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/silk
+itemModel:
+  texture: mineinabyss:mobdrop/generic/silk
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

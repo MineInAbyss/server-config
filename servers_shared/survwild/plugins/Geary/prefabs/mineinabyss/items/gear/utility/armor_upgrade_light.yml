@@ -3,11 +3,8 @@ set.item:
   itemName: "Armor Upgrade: Light Gear"
   itemModel: mineinabyss:gear/utility/armor_upgrade_light
   maxStackSize: 1
-resourcepack:
-  model: mineinabyss:gear/utility/armor_upgrade_light
-  textures:
-    layers:
-    - mineinabyss:gear/utility/armor_upgrade_light
+itemModel:
+  texture: mineinabyss:gear/utility/armor_upgrade_light
 creative_tab:
   category: Gear
   vanilla_tab: minecraft:tools_and_utilities

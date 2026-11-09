@@ -23,7 +23,8 @@ observe:
   - become: parent
   - mythicSkills:
     - necrometallic_blade_hit
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/necrometallic_blade
 creative_tab:
   category: Relics

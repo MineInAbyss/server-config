@@ -3,11 +3,8 @@ set.item:
   itemName: Small Hide
   itemModel: mineinabyss:mobdrop/generic/hide_small
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/hide_small
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/hide_small
+itemModel:
+  texture: mineinabyss:mobdrop/generic/hide_small
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

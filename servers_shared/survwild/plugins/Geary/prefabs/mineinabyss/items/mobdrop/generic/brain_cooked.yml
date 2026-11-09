@@ -3,11 +3,8 @@ set.item:
   itemName: Cooked Brain
   itemModel: mineinabyss:mobdrop/generic/brain_cooked
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/brain_cooked
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/brain_cooked
+itemModel:
+  texture: mineinabyss:mobdrop/generic/brain_cooked
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

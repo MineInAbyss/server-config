@@ -42,10 +42,9 @@ observe:
         - type: minecraft:darkness
           duration: 60.0t
           amplifier: 1
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/soul-aiming_light
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/soul-aiming_light
   parentModel: item/handheld
 creative_tab:
   category: Relics

@@ -44,7 +44,8 @@ observe:
       duration: 1s
   - mythicSkills:
     - crescent_primer
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/crescent_hatchet
 creative_tab:
   category: Relics

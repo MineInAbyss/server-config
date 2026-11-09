@@ -38,7 +38,8 @@ passive:
     - become: parent
     - mythicSkills:
       - capillary_growth_onattack
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/capillary_blade
 creative_tab:
   category: Relics

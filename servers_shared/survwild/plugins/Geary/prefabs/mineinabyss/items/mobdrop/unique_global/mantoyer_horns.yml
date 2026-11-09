@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_1>:cosmetic_orth_coin:'
   - <#A68348><i>I could cut myself on these
   - <#A68348><i>if I'm not careful.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/mantoyer_horns
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/mantoyer_horns
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/mantoyer_horns
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

@@ -4,12 +4,10 @@ set.item:
   itemModel: mineinabyss:blocks/wire/foliage8
   customModelData: { floats: [ 3008 ] }
 
-resourcepack:
-  model: mineinabyss:blocks/wire/foliage8
+itemModel:
+  type: texture
+  texture: mineinabyss:blocks/wire/foliage8
   parentModel: minecraft:block/cross
-  textures:
-    layers:
-      - mineinabyss:blocks/wire/foliage8
 
 nexo:custom_block:
   type: STRINGBLOCK

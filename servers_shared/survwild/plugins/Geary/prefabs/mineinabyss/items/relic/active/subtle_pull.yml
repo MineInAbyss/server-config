@@ -57,7 +57,8 @@ passive:
           item: mineinabyss:subtle_pull
   - mythicSkills:
     - subtle_pull_charge
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/subtle_pull
 creative_tab:
   category: Relics

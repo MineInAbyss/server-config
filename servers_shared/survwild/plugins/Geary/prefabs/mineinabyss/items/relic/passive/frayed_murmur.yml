@@ -24,10 +24,8 @@ passive:
   - mythicSkills:
     - frayed_murmur
 
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/frayed_murmur
+itemModel:
+  texture: mineinabyss:relic/frayed_murmur
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

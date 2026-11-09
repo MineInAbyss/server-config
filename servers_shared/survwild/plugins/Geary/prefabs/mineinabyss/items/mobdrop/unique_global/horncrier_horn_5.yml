@@ -8,11 +8,8 @@ set.item:
   - <#fbfc92><i>I've encountered before.
   - <#fbfc92><i>Call
   maxStackSize: 1
-resourcepack:
-  model: mineinabyss:mobdrop/mob_standard/horncrier_horn_5
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/horncrier_horn
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/horncrier_horn
 observe:
   itemRightClick:
   - become: parent

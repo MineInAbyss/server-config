@@ -6,11 +6,8 @@ set.item:
   lore:
   - <yellow>Used to cut meat into smaller pieces.
   - <font:small_text><gray><shadow:#00000000>Passive slot ability. Meat you pick up is cut for you.
-resourcepack:
-  model: mineinabyss:gear/utility/meat_shredder
-  textures:
-    layers:
-    - mineinabyss:gear/utility/knife
+itemModel:
+  texture: mineinabyss:gear/utility/knife
 
 passiveItem: {}
 transformOnPickup:

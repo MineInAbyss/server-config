@@ -6,11 +6,8 @@ set.item:
   - '<emojy:layer_3>'
   - <#B8FFBA><i>The very tip of the shell, it seems
   - <#B8FFBA><i>to leak a glowing sticky substance.
-resourcepack:
-  model: mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
-  textures:
-    layers:
-    - mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
+itemModel:
+  texture: mineinabyss:mobdrop/unique_global/kakatsumuri_glowing_tip
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

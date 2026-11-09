@@ -26,11 +26,8 @@ set.recipes:
       - prefab: mineinabyss:kagi_tachikiri_pincer
       - prefab: mineinabyss:squidfly_brain_cooked
       - prefab: mineinabyss:sakuranbo_dust
-resourcepack:
-  model: mineinabyss:materials/haste_paste
-  textures:
-    layers:
-    - mineinabyss:materials/haste_paste
+itemModel:
+  texture: mineinabyss:materials/haste_paste
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

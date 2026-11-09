@@ -18,11 +18,8 @@ observe:
   - consumeItem:
       type: mineinabyss:pebble
     
-resourcepack:
-  model: mineinabyss:gathering/cooking/yellow_grass
-  textures:
-    layers:
-    - mineinabyss:gathering/cooking/yellow_grass
+itemModel:
+  texture: mineinabyss:gathering/cooking/yellow_grass
 creative_tab:
   category: Food
   vanilla_tab: minecraft:food_and_drinks

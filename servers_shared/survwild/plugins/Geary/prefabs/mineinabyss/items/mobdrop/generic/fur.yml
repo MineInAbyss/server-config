@@ -3,11 +3,8 @@ set.item:
   itemName: Fur
   itemModel: mineinabyss:mobdrop/generic/fur
   maxStackSize: 64
-resourcepack:
-  model: mineinabyss:mobdrop/generic/fur
-  textures:
-    layers:
-    - mineinabyss:mobdrop/generic/fur
+itemModel:
+  texture: mineinabyss:mobdrop/generic/fur
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

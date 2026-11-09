@@ -41,10 +41,9 @@ passive:
           item: mineinabyss:buddstone_tap
   - mythicSkills:
     - buddstone_tap_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/buddstone_tap
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/buddstone_tap
   parentModel: item/handheld
 creative_tab:
   category: Relics

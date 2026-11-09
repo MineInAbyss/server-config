@@ -42,10 +42,9 @@ passive:
           item: mineinabyss:undying_wisp
   - mythicSkills:
     - undying_wisp_charge
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/undying_wisp
+itemModel:
+  type: texture
+  texture: mineinabyss:relic/undying_wisp
   parentModel: item/handheld
 creative_tab:
   category: Relics

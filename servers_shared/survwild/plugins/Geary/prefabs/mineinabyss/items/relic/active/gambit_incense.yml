@@ -16,10 +16,8 @@ observe:
       duration: 20s
   - mythicSkills:
     - gambit_incense
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/gambit_incense
+itemModel:
+  texture: mineinabyss:relic/gambit_incense
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

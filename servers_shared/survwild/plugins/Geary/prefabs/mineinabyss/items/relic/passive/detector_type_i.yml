@@ -20,10 +20,8 @@ passive:
           - hasaura{n=reliceffectcancel} false
   - mythicSkills:
     - detector_type_i
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/detector_type_i
+itemModel:
+  texture: mineinabyss:relic/detector_type_i
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

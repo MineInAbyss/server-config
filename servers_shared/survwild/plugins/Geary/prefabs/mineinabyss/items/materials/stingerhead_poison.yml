@@ -27,11 +27,8 @@ set.item:
   tooltipDisplay:
     hiddenComponents:
       - potion_contents
-resourcepack:
-  model: mineinabyss:materials/stingerhead_poison
-  textures:
-    layers:
-    - mineinabyss:materials/stingerhead_poison
+itemModel:
+  texture: mineinabyss:materials/stingerhead_poison
 creative_tab:
   category: Materials
   vanilla_tab: minecraft:ingredients

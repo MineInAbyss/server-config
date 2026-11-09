@@ -17,10 +17,8 @@ passive:
   - mythicSkills:
     - tactile_roots_trigger
 
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:relic/tactile_roots
+itemModel:
+  texture: mineinabyss:relic/tactile_roots
 creative_tab:
   category: Relics
   vanilla_tab: minecraft:tools_and_utilities

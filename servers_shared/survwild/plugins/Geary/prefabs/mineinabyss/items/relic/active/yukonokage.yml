@@ -50,7 +50,8 @@ passive:
           item: mineinabyss:yukonokage
   - mythicSkills:
     - yukonokage_soul_display
-resourcepack:
+itemModel:
+  type: model
   model: mineinabyss:relic/yukonokage
 creative_tab:
   category: Relics

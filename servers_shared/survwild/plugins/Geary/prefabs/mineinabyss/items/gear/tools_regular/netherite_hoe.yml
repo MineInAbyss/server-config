@@ -3,10 +3,9 @@ set.item:
   type: minecraft:diamond_hoe
   itemModel: mineinabyss:gear/tools_regular/netherite_hoe
   maxDamage: 3000
-resourcepack:
-  textures:
-    layers:
-    - mineinabyss:gear/tools_regular/netherite_hoe
+itemModel:
+  type: texture
+  texture: mineinabyss:gear/tools_regular/netherite_hoe
   parentModel: item/handheld
 set.recipes:
   discoverRecipes: true
