@@ -29,6 +29,12 @@
         "mapFace": {
           "$ref": "#/$defs/com.mineinabyss.features.okibotravel.MapFaceConfig"
         },
+        "maxCameraDistance": {
+          "type": "number"
+        },
+        "cameraDistanceStep": {
+          "type": "number"
+        },
         "stationsById": {
           "type": "object",
           "additionalProperties": {
