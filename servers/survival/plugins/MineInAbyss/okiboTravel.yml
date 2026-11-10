@@ -36,3 +36,6 @@ okiboStations:
     location: 105,82,613
     map: 0.486,0.65
 costPerKM: 0.0
+camera:
+  maxDistance: 12.0
+  distanceStep: 0.5
