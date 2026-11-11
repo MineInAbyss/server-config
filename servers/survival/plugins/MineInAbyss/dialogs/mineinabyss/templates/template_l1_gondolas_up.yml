@@ -1,0 +1,50 @@
+template: true
+variables:
+  destination: mineinabyss:none
+  destination_name: ""
+  transition: mineinabyss:default
+type: CONDITIONAL
+conditions:
+  - whistle_rank: BLUE
+onTrue:
+  type: REPLY
+  lines:
+    - "Do you want to ride this gondola up"
+    - "to <destination_name>?"
+  answers:
+    - text: "Yes, please!"
+      next:
+        type: PAGE
+        line: "Alright, hold on tight!"
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:warp_to:
+                to: <destination>
+                transition: <transition>
+    - text: "Nah"
+      next:
+        type: PAGE
+        line: "Good luck delving!"
+onFalse:
+  type: REPLY
+  lines:
+    - "Aye, what is a red whistle doing at this depth?"
+    - "Do you have a death wish? Let me pull you up."
+  answers:
+    - text: "Yes, please!"
+      next:
+        type: PAGE
+        lines:
+          - "Bear with the curse, okay? This is gonna"
+          - "be rough..."
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:warp_to:
+                to: <destination>
+                transition: <transition>
+    - text: "Nah"
+      next:
+        type: PAGE
+        line: "???"

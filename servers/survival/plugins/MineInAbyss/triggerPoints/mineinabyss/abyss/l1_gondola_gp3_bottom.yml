@@ -1,0 +1,5 @@
+inherit: mineinabyss:template_gondolas
+variables:
+  location: mineinabyss:l1_gondola_gp3_bottom
+  dialog: mineinabyss:l1_gondola_gp3_bottom_operator
+  npc: mineinabyss:l1_gondola_gp3_bottom_operator

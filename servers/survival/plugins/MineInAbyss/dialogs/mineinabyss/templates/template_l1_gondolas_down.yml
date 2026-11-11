@@ -1,0 +1,35 @@
+template: true
+variables:
+  destination: mineinabyss:none
+  destination_name: ""
+  transition: mineinabyss:default
+type: CONDITIONAL
+conditions:
+  - whistle_rank: BLUE
+onTrue:
+  type: REPLY
+  lines:
+    - "Do you want to ride this gondola down"
+    - "to <destination_name>?"
+  answers:
+    - text: "Yes, please!"
+      next:
+        type: PAGE
+        lines:
+          - "Alright, hold on tight and good luck"
+          - "out there!"
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:warp_to:
+                to: <destination>
+                transition: <transition>
+    - text: "Nah"
+      next:
+        type: PAGE
+        line: "See you around."
+onFalse:
+  type: REPLY
+  lines:
+    - "We can't take red whistles down. Getting back up"
+    - "from there would simply be too much on your body."
