@@ -1,0 +1,6 @@
+inherit: mineinabyss:template_gondolas
+variables:
+  location: mineinabyss:l2_gondola_sc1_bottom
+  dialog: mineinabyss:l2_gondola_sc1_bottom_operator
+actions:
+  - mineinabyss:open_dialog: <dialog>

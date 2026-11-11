@@ -1,0 +1,5 @@
+inherit: mineinabyss:template_l1_gondolas_down
+speaker: Gondola Operator
+variables:
+  destination: mineinabyss:l1_gondola_gp3_bottom
+  destination_name: "a depth of 1150 blocks"

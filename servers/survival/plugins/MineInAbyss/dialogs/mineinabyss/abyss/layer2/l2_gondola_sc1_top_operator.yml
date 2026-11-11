@@ -1,0 +1,12 @@
+speaker: "???"
+type: REPLY
+line: "<i>Do you want to be taken down?"
+answers:
+  - text: "Yes"
+    next:
+      type: ACTION
+      actions:
+        - mineinabyss:warp_to:
+            to: mineinabyss:l2_gondola_sc1_bottom
+            transition: mineinabyss:gondola
+  - text: "No"

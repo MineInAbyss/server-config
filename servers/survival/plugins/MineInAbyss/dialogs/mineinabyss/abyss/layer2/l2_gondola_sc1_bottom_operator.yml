@@ -1,0 +1,21 @@
+speaker: "???"
+type: PAGE
+lines:
+  - "Master! Master!"
+  - "Someone is approaching..."
+  - "Shall I prepare the gondola?"
+next:
+  type: PAGE
+  line: "..."
+  next:
+    type: REPLY
+    line: "<i>Do you want to be taken up?"
+    answers:
+      - text: "Yes"
+        next:
+          type: ACTION
+          actions:
+            - mineinabyss:warp_to:
+                to: mineinabyss:l2_gondola_sc1_top
+                transition: mineinabyss:gondola
+      - text: "No"
