@@ -160,12 +160,12 @@ sections:
     # refBottom should connect to the refTop of the next section.
     refBottom: 229376,-256,0
 # The damage players will take when outside a managed section.
-damageOutsideSections: 3.5
+damageOutsideSections: 0
 # Worlds which shouldn't damage players when outside of a section.
 damageExcludedWorlds: []
 fall:
   # The maximum safe falling distance, after which players will start taking damage. Set to -1 to disable falling damage
-  maxSafeDist: 40.0
+  maxSafeDist: -1.0
   # The multiplier for damage taken while falling. Set to 0 to deal consistent damage.
   fallDistanceDamageScaler: 0.02
   # The minimum damage to deal.
