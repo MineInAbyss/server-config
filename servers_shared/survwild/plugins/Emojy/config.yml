@@ -24,12 +24,13 @@ emojyList:
     - mineinabyss:mia_playerprofile
     - mineinabyss:mia_playerprofile_background
     - mineinabyss:mia_pvp
+    - mineinabyss:hud
+    - mineinabyss:roles
     - mineinabyss:mob_health_fill
     - mineinabyss:mob_health_frame
     - mineinabyss:mob_health_trail
     - mineinabyss:overlay
-    - mineinabyss:hud
-    - mineinabyss:roles
+    - mineinabyss:screen_fade
 supportedLanguages:
   - en_US
   - ru_RU

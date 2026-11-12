@@ -9,13 +9,6 @@ emotes:
     height: 30
     ascent: 30
     bitmapWidth: 3
-# Full-screen black for warp fades, sent as a title which is drawn at 4x scale.
-# 600 tall covers a 4K screen at GUI scale 1, and an ascent of 297 centres it on the title's baseline
-  - id: screen_fade
-    font: mineinabyss:screen_fade
-    texture: mineinabyss:ui/screen_fade.png
-    height: 600
-    ascent: 297
 # chat emotes
   - id: caught
   - id: bonegun
@@ -780,7 +773,6 @@ emotes:
     height: 16
     ascent: 15
 # mineinabyss mob health bar feature
-# Fill and trail are sheets with one row per pixel of health, and each sheet needs its own font since Emojy only reserves one codepoint per emote within a font
   - id: mob_health_frame
     font: mineinabyss:mob_health_frame
     texture: mineinabyss:ui/mob_health/mob_health_frame.png
@@ -798,3 +790,9 @@ emotes:
     height: 5
     ascent: 4
     bitmapHeight: 155
+# Full-screen black for warp fades, sent as a title which is drawn at 4x scale
+  - id: screen_fade
+    font: mineinabyss:screen_fade
+    texture: mineinabyss:ui/screen_fade.png
+    height: 600
+    ascent: 297
