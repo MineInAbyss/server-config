@@ -2,7 +2,7 @@ template: true
 variables:
   destination: mineinabyss:none
   destination_name: ""
-  transition: mineinabyss:default
+  transition: mineinabyss:gondola
 type: CONDITIONAL
 conditions:
   - whistle_rank: BLUE
