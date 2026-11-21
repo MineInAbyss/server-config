@@ -2,31 +2,31 @@ okiboStations:
   - id: CliffDistrict
     displayName: Cliff District
     location: 499,165,529
-    map: 0.545,0.622
+    map: 0.670,0.562
   - id: GrandPier
     displayName: Grand Pier
     location: -607,138,-19
-    map: 0.386,0.381
+    map: 0.386,0.361
   - id: GuildHQ
     displayName: Guild HQ
     location: -265,167,-535
-    map: 0.621,0.364
+    map: 0.561,0.344
   - id: WestMarket
     displayName: West Orth Market
     location: -554,109,285
-    map: 0.621,0.364
+    map: 0.270,0.431
   - id: WwGondola
     displayName: Water Wheel Gondola
     location: -317,-58,407
-    map: 0.378,0.531
+    map: 0.345,0.511
   - id: WharfWest
     displayName: Wharf District West
     location: -140,109,634
-    map: 0.452,0.571
+    map: 0.382,0.610
   - id: WharfEast
     displayName: Wharf District East
     location: 99,79,605
-    map: 0.486,0.65
+    map: 0.486,0.635
 costPerKM: 0.0
 camera:
   maxDistance: 12.0
