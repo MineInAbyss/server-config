@@ -1,39 +1,31 @@
 okiboStations:
   - id: CliffDistrict
     displayName: Cliff District
-    location: 515,126,377
+    location: 499,165,529
     map: 0.545,0.622
   - id: GrandPier
     displayName: Grand Pier
-    location: -563,128,-19
+    location: -607,138,-19
     map: 0.386,0.381
   - id: GuildHQ
     displayName: Guild HQ
     location: -265,167,-535
     map: 0.621,0.364
-  - id: NetherworldGate
-    displayName: Gate to the Netherworld
-    location: -510,111,361
-    map: 0.324,0.496
-  - id: Orphanage
-    displayName: Belchero Orphanage
-    location: -641,145,174
-    map: 0.288,0.393
-  - id: TowerDistrict
-    displayName: Tower District
-    location: 490,126,-180
-    map: 0.676,0.479
-  - id: WaterWheelGondola
+  - id: WestMarket
+    displayName: West Orth Market
+    location: -554,109,285
+    map: 0.621,0.364
+  - id: WwGondola
     displayName: Water Wheel Gondola
-    location: -357,-46,408
+    location: -317,-58,407
     map: 0.378,0.531
   - id: WharfWest
     displayName: Wharf District West
-    location: -139,109,627
+    location: -140,109,634
     map: 0.452,0.571
   - id: WharfEast
     displayName: Wharf District East
-    location: 105,82,613
+    location: 99,79,605
     map: 0.486,0.65
 costPerKM: 0.0
 camera:
