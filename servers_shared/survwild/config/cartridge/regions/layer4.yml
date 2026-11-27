@@ -1,0 +1,45 @@
+regions:
+  template_protected:
+    flags:
+      build: deny
+      interact: deny
+      chestAccess: deny
+      useAnvil: deny
+      itemFrameRotation: deny
+      entityPaintingDestroy: deny
+      entityItemFrameDestroy: deny
+      mobSpawning: deny
+      pistons: deny
+      leafDecay: deny
+      grassGrowth: deny
+      myceliumSpread: deny
+      rockGrowth: deny
+      cropGrowth: deny
+      moistureChange: deny
+  layerfour:
+    flags:
+      pvp: allow
+      lavaFlow: deny
+      vineGrowth: deny
+      waterFlow: deny
+    children:
+      l4s1:
+        from: "130177, -256, -895"
+        to: "131966, 6, 894"
+        children:
+          l4_nanachi_hut:
+            from: "130746,-64,-388"
+            to: "130639,-130,-468"
+            inherit: template_protected
+      l4s2:
+        from: "146560, -256, -896"
+        to: "148350, 256, 895"
+      l4s3:
+        from: "162944, -256, -896"
+        to: "164735, 256, 895"
+      l4s4:
+        from: "178688, -256, -1536"
+        to: "181759, 256, 1535"
+      l4s5:
+        from: "193921, 132, -2687"
+        to: "199422, 255, 2814"

@@ -1,0 +1,11 @@
+mineinabyss:l2_default:
+  parent: plains
+
+mineinabyss:l2_invforest_default:
+  parent: mineinabyss:l2_default
+
+mineinabyss:l2_invforest_pinkwater:
+  parent: mineinabyss:l2_invforest_default
+
+mineinabyss:l2_seeker_camp:
+  parent: mineinabyss:l2_invforest_default

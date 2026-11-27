@@ -1,0 +1,37 @@
+regions:
+  template_protected:
+    flags:
+      build: deny
+      interact: deny
+      chestAccess: deny
+      useAnvil: deny
+      itemFrameRotation: deny
+      entityPaintingDestroy: deny
+      entityItemFrameDestroy: deny
+      mobSpawning: deny
+      pistons: deny
+      leafDecay: deny
+      grassGrowth: deny
+      myceliumSpread: deny
+      rockGrowth: deny
+      cropGrowth: deny
+      moistureChange: deny
+  layerthree:
+    flags:
+      pvp: allow
+      lavaFlow: deny
+      vineGrowth: deny
+      waterFlow: deny
+    children:
+      l3s0:
+        from: "81537, -256, -383"
+        to: "82301, -22, 382"
+      l3s1:
+        from: "97920, -256, -384"
+        to: "98687, 256, 383"
+      l3s2:
+        from: "114304, -256, -384"
+        to: "115071, 255, 383"
+      l3s3:
+        from: "130688, 7, -384"
+        to: "131454, 255, 383"

@@ -1,0 +1,60 @@
+regions:
+  template_protected:
+    flags:
+      build: deny
+      interact: deny
+      chestAccess: deny
+      useAnvil: deny
+      itemFrameRotation: deny
+      entityPaintingDestroy: deny
+      entityItemFrameDestroy: deny
+      mobSpawning: deny
+      pistons: deny
+      leafDecay: deny
+      grassGrowth: deny
+      myceliumSpread: deny
+      rockGrowth: deny
+      cropGrowth: deny
+      moistureChange: deny
+  layerfive:
+    flags:
+      pvp: allow
+      lavaFlow: deny
+      vineGrowth: deny
+      waterFlow: deny
+    children:
+      l5s1:
+        from: "193921, -256, -2687"
+        to: "199422, 131, 2814"
+      l5s2:
+        from: "210304, -256, -2432"
+        to: "215935, 256, 2815"
+        children:
+          naz:
+            from: "214241, -150, -372"
+            to: "214356, -40, -137"
+            inherit: template_protected
+            flags:
+              expDrops: deny
+              ride: deny
+              vehicleDestroy: deny
+              vehiclePlace: deny
+            settings:
+              greetingTitle: "§8Nazarick"
+            children:
+              naztpin:
+                from: "214287, -112, -237"
+                to: "214294, -109, -231"
+                settings:
+                  consoleCommandOnEntry: ["/warp nazin %username%"]
+      l5s3:
+        from: "227328, -256, -2176"
+        to: "232319, 256, 2559"
+        children:
+          idofront:
+            from: "229312, -195, -406"
+            to: "230254, 229, 654"
+            inherit: template_protected
+            settings:
+              greetingTitle: "§5§lIdofront"
+              spawnOverride: true

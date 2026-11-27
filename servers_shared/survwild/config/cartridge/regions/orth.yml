@@ -1,0 +1,106 @@
+regions:
+  orth:
+    from: "-1537, 10, -1537"
+    to: "1536, 255, 1536"
+    bypassPermission: cartridge.region.member.orth
+    bypassFlags: [use, blockBreak, blockPlace]
+    flags:
+      blockBreak: deny
+      blockPlace: deny
+      chestAccess: deny
+      coralFade: deny
+      enderdragonBlockDamage: deny
+      endermanGrief: deny
+      entityItemFrameDestroy: deny
+      entityPaintingDestroy: deny
+      fireSpread: deny
+      frostedIceForm: deny
+      frostedIceMelt: deny
+      ghastFireball: deny
+      iceForm: deny
+      iceMelt: deny
+      interact: allow
+      itemFrameRotation: deny
+      lavaFlow: deny
+      lightning: deny
+      mobDamage: deny
+      otherExplosion: deny
+      pistons: allow
+      ravagerGrief: deny
+      ride: allow
+      snowMelt: deny
+      snowmanTrails: deny
+      tnt: deny
+      use: deny
+      vehicleDestroy: allow
+      vehiclePlace: deny
+      vineGrowth: deny
+      witherDamage: deny
+      denySpawn: [chicken]
+    children:
+      oob1:
+        from: "-768, -1, 768"
+        to: "767, 255, 1536"
+      oob2:
+        from: "-768, -1, -1537"
+        to: "767, 255, -768"
+      oob3:
+        from: "768, -1, -768"
+        to: "1536, 255, 767"
+      oob4:
+        from: "-1537, -1, -768"
+        to: "-768, 255, 767"
+      guildhq_wardrobe1:
+        from: "-3, 139, -516"
+        to: "6, 144, -509"
+        settings:
+          cosmeticWardrobe: guildhq1
+      guildhq_wardrobe2:
+        from: "-3, 139, -528"
+        to: "6, 144, -521"
+        settings:
+          cosmeticWardrobe: guildhq2
+      boti_event:
+        priority: 10
+        from: "-473, 43, -548"
+        to: "-386, 115, -417"
+        flags:
+          blockBreak: deny
+          blockPlace: deny
+          blockTrampling: deny
+          chestAccess: allow
+          chorusFruitTeleport: deny
+          coralFade: deny
+          cropGrowth: deny
+          damageAnimals: deny
+          enderpearl: deny
+          fireworkDamage: deny
+          frostedIceForm: deny
+          frostedIceMelt: deny
+          iceForm: deny
+          iceMelt: deny
+          interact: allow
+          itemDrop: allow
+          itemFrameRotation: deny
+          itemPickup: allow
+          lighter: deny
+          mobSpawning: allow
+          myceliumSpread: deny
+          naturalHungerDrain: deny
+          pistons: allow
+          potionSplash: allow
+          pvp: deny
+          respawnAnchors: deny
+          ride: deny
+          sculkGrowth: deny
+          tnt: deny
+          use: allow
+          useAnvil: deny
+          useDripleaf: deny
+          vehicleDestroy: allow
+          vehiclePlace: allow
+          vineGrowth: deny
+          windChargeBurst: deny
+        settings:
+          greetingTitle: "Battle On The Ice"
+          farewellTitle: "Do not slip on your way out!"

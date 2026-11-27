@@ -1,0 +1,121 @@
+regions:
+  template_protected:
+    flags:
+      build: deny
+      interact: deny
+      chestAccess: deny
+      useAnvil: deny
+      itemFrameRotation: deny
+      entityPaintingDestroy: deny
+      entityItemFrameDestroy: deny
+      mobSpawning: deny
+      pistons: deny
+      leafDecay: deny
+      grassGrowth: deny
+      myceliumSpread: deny
+      rockGrowth: deny
+      cropGrowth: deny
+      moistureChange: deny
+  layerone:
+    flags:
+      pvp: deny
+      lavaFlow: deny
+      vineGrowth: deny
+      waterFlow: deny
+    children:
+      l1s0:
+        from: "-768, -256, -768"
+        to: "767, 9, 767"
+        children:
+          l1_gondola_gp_a:
+            from: "-379,0,-21"
+            to: "-399,-256,-41"
+            inherit: template_protected
+          l1_gondola_ww_a:
+            from: "-495,0,248"
+            to: "-342,-111,426"
+            inherit: template_protected
+          l1_gondola_ww_b:
+            from: "-342,0,338"
+            to: "-342,0,338"
+            inherit: template_protected
+          l1_gondola_ww_c:
+            from: "-267,-111,388"
+            to: "-307,-256,348"
+            inherit: template_protected
+      l1s1:
+        from: "15617, -256, -767"
+        to: "17150, 255, 766"
+        children:
+          l1_gondola_gp_b:
+            from: "16005,255,-21"
+            to: "15985,29,-41"
+            inherit: template_protected
+          l1_gondola_gp_c:
+            from: "15922,57,-106"
+            to: "15922,57,-106"
+            inherit: template_protected
+          l1_gondola_gp_d:
+            from: "16065,-85,-36"
+            to: "16035,-163,-66"
+            inherit: template_protected
+          l1_gondola_gp_e:
+            from: "16035,-153,-72"
+            to: "16226,-256,26"
+            inherit: template_protected
+          l1_gondola_ww_d:
+            from: "16117,255,388"
+            to: "16077,-179,348"
+            inherit: template_protected
+          l1_gondola_ww_e:
+            from: "16041,-179,335"
+            to: "16210,-256,421"
+            inherit: template_protected
+      l1s2:
+        from: "32001, -256, -767"
+        to: "33534, 255, 766"
+        children:
+          l1_gondola_gp_f:
+            from: "32419,255,-72"
+            to: "32610,224,26"
+            inherit: template_protected
+          l1_gondola_gp_g:
+            from: "32604,224,4"
+            to: "32584,-152,-16"
+            inherit: template_protected
+          l1_gondola_gp_h:
+            from: "32605,-149,-32"
+            to: "32546,-182,4"
+            inherit: template_protected
+          l1_gondola_ww_f:
+            from: "32473,255,383"
+            to: "32742,91,286"
+            inherit: template_protected
+          l1_gondola_ww_g:
+            from: "32742,153,328"
+            to: "32855,91,150"
+            inherit: template_protected
+          l1_gondola_ww_h:
+            from: "32776,91,225"
+            to: "32841,-13,165"
+            inherit: template_protected
+          l1_gondola_ww_i:
+            from: "32831,-13,185"
+            to: "32811,-256,165"
+            inherit: template_protected
+      l1s3:
+        from: "48385, 73, -767"
+        to: "49918, 255, 766"
+        children:
+          l1_gondola_ww_j:
+            from: "49215,255,185"
+            to: "49195,173,165"
+            inherit: template_protected
+          l1_gondola_ww_k:
+            from: "49195,173,165"
+            to: "49248,129,218"
+            inherit: template_protected
+          l1_basecamp:
+            from: "49293,192,279"
+            to: "49214,130,197"
+            inherit: template_protected
